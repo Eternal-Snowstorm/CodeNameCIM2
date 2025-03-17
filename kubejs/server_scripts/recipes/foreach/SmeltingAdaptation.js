@@ -21,14 +21,19 @@ ServerEvents.recipes((event) => {
 		}).id(`${recipe.getId()}_kubejs_tconstruct_melting`)
 	})
 
-	// event.custom({//定义安山合金在炉子里融化
+	// event.custom({ 
+	//		// 定义安山合金在炉子里融化
 	//     "type": "tconstruct:melting",
-	//     "ingredient": {//所需物品
+	//     "ingredient": {
+	// 			// 所需物品
 	//         "item": "create:andesite_alloy"
 	//     },
-	//     "result": {//结果
+	//     "result": {
+	// 			// 结果
 	//         "amount": 810,//900mb
-	//         "fluid": "createbigcannons:molten_nethersteel"//你定义的流体
+	// 			//  你定义的流体
+	//         "fluid": "createbigcannons:molten_nethersteel"
+	// 			
 	//     },
 	//     "temperature": 800,//温度 800是常规燃料 1000是岩浆 1500是烈焰血
 	//     "time": 100//时间 100是25秒
