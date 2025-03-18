@@ -35,8 +35,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguaue("wood_type.createdieselgenerators.chip_wood", "木屑")
 
 	addAloneLanguaue(`message.${global.namespace}.debug.getHardness`, "这个方块的硬度是: %s")
-	addAloneLanguaue(`text.${global.namespace}.dev`, "开发中画面, 实际内容请以正式版为准")
-	addAloneLanguaue(`text.${global.namespace}.player`, "测试中版本, 不代表最终品质")
+	addAloneLanguaue(`text.${global.namespace}.dev`, "§0开发中画面, 实际内容请以正式版为准")
+	addAloneLanguaue(`text.${global.namespace}.player`, "§0测试中版本, 不代表最终品质")
 
 	let materialGroup = [
 		["nature", "自然"],
@@ -66,6 +66,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["coil", "线圈"],
 		["sculk", "幽匿"],
 		["colorful", "多彩"],
+		["pigiron", "生铁"],
 		["creative", "创造"]
 	]
 	materialGroup.forEach(([material, name]) => {

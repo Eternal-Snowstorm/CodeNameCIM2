@@ -7,17 +7,16 @@ Ponder.registry((event) => {
 	])
 		.tag("ue_addons:tconstruct")
 		.scene("ue_addons:smeltery", "Smeltery", "ue_addons:tconstruct/smeltery", (scene) => {
-			// 显示底盘
 			scene.showBasePlate()
 			scene.idle(20)
 			scene.scaleSceneView(0.7)
-			// 显示炉子底部
+
 			scene.world.showSection([5, 1, 3, 3, 1, 5], Direction.DOWN)
 			scene.idle(20)
 			scene.text(60, "The bottom consists of a maximum of 11x11\nRectangular Seared Bricks composition", [3, 3, 3])
 			scene.overlay.showOutline("green", {}, [5, 1, 3, 3, 1, 5], 60)
 			scene.idle(60)
-			// 显示三个部件
+
 			scene.world.showSection([5, 2, 2, 3, 2, 2], Direction.SOUTH)
 			scene.text(35, "Put the second layer in any direction\nFuel Tank\nSmeltery Controller\nSeared Drain")
 				.attachKeyFrame()
@@ -37,7 +36,7 @@ Ponder.registry((event) => {
 
 			scene.text(30, "The rest of the surface we fill with bricks\nAt the same time, put faucet in front of drain.")
 				.attachKeyFrame()
-			// 显示各砖块
+
 			let bricks = [
 				[2, 2, 3], [2, 2, 4], [2, 2, 5],
 				[3, 2, 6], [4, 2, 6], [5, 2, 6],
@@ -49,7 +48,6 @@ Ponder.registry((event) => {
 			}
 			scene.idle(20)
 
-			// 显示浇筑口等
 			scene.world.showSection([2, 2, 2], Direction.EAST)
 			scene.world.showSection([3, 2, 1], Direction.SOUTH)
 			scene.idle(10)
@@ -57,10 +55,9 @@ Ponder.registry((event) => {
 			scene.world.showSection([3, 1, 1], Direction.DOWN)
 			scene.idle(40)
 
-			//加高
 			scene.text(30, "In addition, we can also use bricks to continue to build high.")
 				.attachKeyFrame()
-			// 显示各砖块
+
 			let brick_1 = [
 				[2, 3, 3], [2, 3, 4], [2, 3, 5],
 				[3, 3, 6], [4, 3, 6], [5, 3, 6],
@@ -102,7 +99,7 @@ Ponder.registry((event) => {
 				scene.idle(1)
 			}
 			scene.idle(20)
-			// 提示
+
 			scene.addKeyframe()
 			scene.overlay.showOutline("red", {}, [5, 2, 2], 60)
 			scene.text(40, "Finally, remember to import fuel to Fuel Tank", [4, 4.5, 0])

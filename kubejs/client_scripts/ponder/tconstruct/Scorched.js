@@ -7,32 +7,31 @@ Ponder.registry((event) => {
 	])
 		.tag("ue_addons:tconstruct")
 		.scene("ue_addons:scorched", "Foundry", "ue_addons:tconstruct/scorched", (scene) => {
-			// 显示场景底盘
 			scene.showBasePlate()
 			scene.idle(20)
 			scene.scaleSceneView(0.7)
-			// 显示底部
+
 			scene.world.showSection([6, 1, 2, 2, 1, 6], Direction.DOWN)
 			scene.idle(20)
 			scene.text(50, "The bottom consists of a maximum of 16x16\nRectangular Scorched Bricks composition", [3, 3, 3])
 			scene.overlay.showOutline("red", {}, [6, 1, 2, 2, 1, 6], 60)
 			scene.idle(60)
-			// 显示三部件
+
 			scene.world.showSection([4, 2, 2, 2, 2, 2], Direction.DOWN)
 			scene.text(35, "Put the second layer in any direction\nFoundry Controller\nFuel Tank\nScorched Drain")
 				.attachKeyFrame()
 			scene.idle(30)
-			// 控制器
+
 			scene.overlay.showOutline("red", {}, [4, 2, 2], 30)
 			scene.text(20, "Foundry Controller", [4.5, 2.5, 2])
 				.placeNearTarget()
 			scene.idle(30)
-			// 燃料储罐
+
 			scene.overlay.showOutline("red", {}, [3, 2, 2], 30)
 			scene.text(20, "Fuel Tank", [3.5, 2.5, 2])
 				.placeNearTarget()
 			scene.idle(30)
-			// 排液口
+
 			scene.overlay.showOutline("red", {}, [2, 2, 2], 30)
 			scene.text(20, "Scorched Drain", [2.5, 2.5, 2])
 				.placeNearTarget()
@@ -41,7 +40,6 @@ Ponder.registry((event) => {
 			scene.text(30, "The rest of the surface we fill with bricks\nAt the same time, put faucet in front of drain.")
 				.attachKeyFrame()
 
-			// 显示各砖块
 			let bricks_1 = [
 				[2, 2, 3], [2, 2, 4], [2, 2, 5], [2, 2, 6],
 				[3, 2, 6], [4, 2, 6], [5, 2, 6], [6, 2, 6],
@@ -52,7 +50,7 @@ Ponder.registry((event) => {
 				scene.idle(2)
 			}
 			scene.idle(20)
-			// 浇筑口和工作方块
+
 			scene.addKeyframe()
 			scene.world.showSection([1, 2, 2], Direction.EAST)
 			scene.world.showSection([2, 2, 1], Direction.SOUTH)
@@ -60,10 +58,10 @@ Ponder.registry((event) => {
 			scene.world.showSection([1, 1, 2], Direction.DOWN)
 			scene.world.showSection([2, 1, 1], Direction.DOWN)
 			scene.idle(40)
-			// 增高
+
 			scene.text(30, "In addition, we can also use bricks to continue to build high.")
 				.attachKeyFrame()
-			// 显示各砖块
+
 			let brick_1 = [
 				[6, 3, 2], [5, 3, 2], [4, 3, 2], [3, 3, 2], [2, 3, 2],
 				[2, 3, 3], [2, 3, 4], [2, 3, 5], [2, 3, 6],

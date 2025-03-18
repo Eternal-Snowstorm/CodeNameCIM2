@@ -38,6 +38,27 @@ StartupEvents.registry("item", (event) => {
 			.tag("create:incomplete_mechanisms")
 	})
 
+	// 生铁构件
+	event.create(`${global.namespace}:pigiron_mechanism`)
+		.texture(`${global.namespace}:item/mechanism/complete/pigiron_mechanism`)
+		.food((food) => {
+			food.hunger(8)
+				.saturation(1)
+				.alwaysEdible()
+				.eaten((event) => {
+					let { player, item } = event
+
+					if (!player.isCreative()) {
+						item.grow(1)
+					}
+				})
+		})
+		.tag("create:mechanisms")
+
+	event.create(`${global.namespace}:incomplete_pigiron_mechanism`, "create:sequenced_assembly")
+		.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_pigiron_mechanism`)
+		.tag("create:incomplete_mechanisms")
+
 	let partsRegisters = [
 		"basic",
 		"mechanical",

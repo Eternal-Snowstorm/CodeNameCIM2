@@ -1,5 +1,6 @@
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
+	let modPackVersion = "§0CMI Dev Alpha-1.6.8"
 
 	global.debugUserName.forEach((debugUser) => {
 		if (player.username === debugUser) {
@@ -32,7 +33,7 @@ PlayerEvents.loggedIn((event) => {
 					x: 10,
 					y: "$screenH - 20",
 					alignX: "left",
-					text: "CMI Dev Alpha-1.6.6",
+					text: modPackVersion,
 					scale: 1.0
 				}
 			})

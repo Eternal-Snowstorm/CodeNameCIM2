@@ -49,18 +49,6 @@ ServerEvents.recipes((event) => {
 		"ue_addons:mechanical_mechanism_part"
 	]).damageIngredient("immersiveengineering:hammer", 1)
 
-	kubejs.shapeless("ue_addons:mechanism_sand_cast", [
-		"tconstruct:blank_sand_cast", "ue_addons:wooden_mechanism"
-	]).keepIngredient({ item: "ue_addons:wooden_mechanism" })
-
-	kubejs.shapeless("ue_addons:mechanism_red_sand_cast", [
-		"tconstruct:blank_red_sand_cast", "ue_addons:wooden_mechanism"
-	]).keepIngredient({ item: "ue_addons:wooden_mechanism" })
-
-	kubejs.shapeless("ue_addons:mechanism_sand_cast", [
-		"tconstruct:blank_sand_cast", "ue_addons:wooden_mechanism"
-	]).keepIngredient({ item: "ue_addons:wooden_mechanism" })
-
 	kubejs.shapeless("tconstruct:blank_red_sand_cast", [
 		"ue_addons:mechanism_red_sand_cast"
 	])
