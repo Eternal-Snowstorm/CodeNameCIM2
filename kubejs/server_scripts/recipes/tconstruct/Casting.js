@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "tconstruct:casting_table",
 		"cast": {
-			"tag": "minecraft:logs"
+			"tag": "tconstruct:casts/multi_use/mechanism"
 		},
 		"cast_consumed": true,
 		"cooling_time": 50,
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "tconstruct:casting_table",
 		"cast": {
-			"tag": "minecraft:logs"
+			"tag": "tconstruct:casts/multi_use/mechanism"
 		},
 		"cast_consumed": true,
 		"cooling_time": 50,
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "tconstruct:casting_table",
 		"cast": {
-			"tag": "minecraft:logs"
+			"tag": "tconstruct:casts/multi_use/mechanism"
 		},
 		"cast_consumed": true,
 		"cooling_time": 50,
@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "tconstruct:casting_table",
 		"cast": {
-			"item": "ue_addons:wooden_mechanism"
+			"tag": "create:mechanisms"
 		},
 		"cast_consumed": true,
 		"cooling_time": 57,

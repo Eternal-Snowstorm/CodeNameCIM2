@@ -85,8 +85,8 @@
     "coordinates.rel": false,
     "distance": false,
     "block_face": false,
-    "coordinates": false,
-    "registry_name": "OFF",
+    "coordinates": true,
+    "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
   "corpse": {

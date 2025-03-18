@@ -32,7 +32,7 @@ PlayerEvents.loggedIn((event) => {
 					x: 10,
 					y: "$screenH - 20",
 					alignX: "left",
-					text: "CMI Dev Alpha-1.6.3",
+					text: "CMI Dev Alpha-1.6.6",
 					scale: 1.0
 				}
 			})

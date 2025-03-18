@@ -31,8 +31,26 @@ StartupEvents.registry("item", (event) => {
 	]
 	mechanismRegister.forEach((material) => {
 		event.create(`${global.namespace}:${material}_mechanism`)
+			.texture(`${global.namespace}:item/mechanism/complete/${material}_mechanism`)
 			.tag("create:mechanisms")
 		event.create(`${global.namespace}:incomplete_${material}_mechanism`, "create:sequenced_assembly")
+			.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_${material}_mechanism`)
 			.tag("create:incomplete_mechanisms")
+	})
+
+	let partsRegisters = [
+		"basic",
+		"mechanical",
+		"engineering",
+		"flux",
+		"magical",
+		"quantum",
+		"mekanism",
+		"final"
+	]
+	partsRegisters.forEach((material) => {
+		event.create(`${global.namespace}:${material}_mechanism_part`)
+			.texture(`${global.namespace}:item/mechanism/part/${material}_mechanism_part`)
+			.tag(`${global.namespace}:mechanism_parts`)
 	})
 })

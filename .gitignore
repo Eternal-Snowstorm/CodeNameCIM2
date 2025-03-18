@@ -7,7 +7,7 @@
 /logs/
 /patchouli_books/
 /screenshots/
-/saves/
+/saves/新的世界
 /versions/
 /mods/
 /crash-reports/
@@ -134,3 +134,4 @@ IconRendererOutput/
 saves_old/
 chorda.client.dat.old
 chorda.client.dat
+schematics/

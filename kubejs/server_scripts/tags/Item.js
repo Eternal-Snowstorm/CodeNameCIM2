@@ -21,4 +21,9 @@ ServerEvents.tags("item", (event) => {
 		event.get(`forge:dyes/${color}`)
 			.add("ue_addons:colorful_mechanism")
 	})
+
+	event.get("create:mechanisms")
+		.add("create:precision_mechanism")
+	event.get("create:incomplete_mechanisms")
+		.add("create:incomplete_precision_mechanism")
 })
