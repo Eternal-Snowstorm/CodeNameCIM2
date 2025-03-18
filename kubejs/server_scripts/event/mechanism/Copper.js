@@ -67,8 +67,6 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", r => {
             }
 
         }
-        //使玩家挥动手持物品
-        r.getPlayer().swing()
         //给进行操作的玩家播放提示音
         player.playNotifySound('create:crafter_craft', 'voice', 2, 1)
         //检测玩家是否创造模式
@@ -120,10 +118,11 @@ BlockEvents.rightClicked(r => {
 
 //铜构件的普通右键
 ItemEvents.rightClicked('ue_addons:copper_mechanism', r => {
-    //获取所指向的目标
-    let target = r.target.block
-    //判定目标是否为催生器
-    if (target === "ue_addons:the_accelerator_of_mechanism_power") return
+    //与构件催生器互动时不执行后续逻辑
+    if(r.player.rayTrace(5,false).block!=null && r.player.rayTrace(5,false).block.id === "ue_addons:the_accelerator_of_mechanism_power") {
+        r.player.swing()
+        return;
+    }
     else {
         //设定生成的实体类型为药水
         let spawnbottle = r.getLevel().createEntity("minecraft:potion")
