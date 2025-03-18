@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs, create } = event.recipes
 
 	//wood
 	kubejs.shapeless("ue_addons:wooden_mechanism", [
@@ -93,12 +93,8 @@ ServerEvents.recipes((event) => {
 		"minecraft:flint",
 		"minecraft:clay_ball"
 	])
-	kubejs.shapeless("4x ue_addons:magical_mechanism_part", [
-		"thermal:lapis_gear",
-		"create_sa:heap_of_experience"
-	])
 	kubejs.shapeless("4x ue_addons:quantum_mechanism_part", [
-		"mekanism:pellet_polonium",
-		"ae2:quantum_entangled_singularity"
+		"ae2:quantum_entangled_singularity",
+		"mekanism:pellet_polonium"
 	])
 })
