@@ -20,6 +20,7 @@ ServerEvents.recipes((event) => {
 			"#tconstruct:casts/single_use/mechanism"
 		).cooling_time(50).cast_consumed(true)
 	})
+
 	tconstruct.casting_table(
 		"ue_addons:mechanism_cast",
 		Fluid.of("tconstruct:molten_gold", 90),
@@ -28,20 +29,34 @@ ServerEvents.recipes((event) => {
 
 	tconstruct.casting_basin(
 		"create:andesite_alloy",
-		Fluid.of("tconstruct:molten_iron",30),
+		Fluid.of("tconstruct:molten_iron", 30),
 		"minecraft:andesite"
 	).cooling_time(20).cast_consumed(true).id("tconstruct:compat/create/andesite_alloy_iron")
+
 	tconstruct.casting_basin(
 		"create:andesite_alloy",
-		Fluid.of("tconstruct:molten_zinc",30),
+		Fluid.of("tconstruct:molten_zinc", 30),
 		"minecraft:andesite"
 	).cooling_time(0).cast_consumed(true).id("tconstruct:compat/create/andesite_alloy_zinc")
+
+	tconstruct.casting_table(
+		"create:andesite_alloy",
+		Fluid.of("ue_addons:molten_andesite_alloy", 90),
+		"#tconstruct:casts/multi_use/ingot"
+	).cooling_time(30).cast_consumed(false)
+
+	tconstruct.casting_table(
+		"create:andesite_alloy",
+		Fluid.of("ue_addons:molten_andesite_alloy", 90),
+		"#tconstruct:casts/single_use/ingot"
+	).cooling_time(30).cast_consumed(true)
 
 	tconstruct.molding_table(
 		"ue_addons:mechanism_sand_cast",
 		"#create:mechanisms",
 		"#tconstruct:casts/sand"
 	)
+
 	tconstruct.molding_table(
 		"ue_addons:mechanism_red_sand_cast",
 		"#create:mechanisms",
