@@ -27,6 +27,7 @@ ServerEvents.recipes((event) => {
 	let iatm = "ue_addons:incomplete_antimatter_mechanism"
 	let iclm = "ue_addons:incomplete_colorful_mechanism"
 	let iscm = "ue_addons:incomplete_sculk_mechanism"
+	let iprm = "create:incomplete_precision_mechanism"
 
 	// wooden
 	create.sequenced_assembly("ue_addons:wooden_mechanism", "#forge:stripped_logs", [
@@ -78,6 +79,15 @@ ServerEvents.recipes((event) => {
 		create.deploying(igm, [igm, "#forge:nuggets/gold"]),
 		create.deploying(iam, [igm, "ue_addons:basic_mechanism_part"])
 	]).transitionalItem(igm).loops(1)
+
+	//precision
+	create.sequenced_assembly("create:precision_mechanism", "#forge:plates/brass", [
+		create.cutting(iprm, iprm),
+		create.pressing(iprm, iprm),
+		create.deploying(iprm, [iprm, 'create:cogwheel']),
+		create.deploying(iprm, [iprm, 'create:electron_tube']),
+		create.deploying(iprm, [iprm, 'ue_addons:mechanical_mechanism_part'])
+	]).transitionalItem(iprm).loops(1).id('create:sequenced_assembly/precision_mechanism')
 
 	// photosensitive
 	create.sequenced_assembly("ue_addons:photosensitive_mechanism", "minecraft:quartz_slab", [

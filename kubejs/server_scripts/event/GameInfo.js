@@ -1,6 +1,6 @@
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
-	let modPackVersion = "§0CMI Dev Alpha-1.6.8"
+	let modPackVersion = "§0CMI Dev Alpha-1.7.1"
 
 	global.debugUserName.forEach((debugUser) => {
 		if (player.username === debugUser) {

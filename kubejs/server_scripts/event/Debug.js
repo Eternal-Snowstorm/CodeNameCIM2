@@ -78,6 +78,9 @@ BlockEvents.rightClicked((event) => {
 	let blockHardness = blockState.getDestroySpeed(event.getLevel(), pos)
 
 	for (let i = 0; i < global.debugUserName.length; i++) {
+		if (event.hand == "OFF_HAND") {
+			return
+		}
 		if (player.mainHandItem === getItem &&
 			player.crouching &&
 			player.username === global.debugUserName[i]) {
