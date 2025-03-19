@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create } = event.recipes
+	let { kubejs } = event.recipes
 
 	//wood
 	kubejs.shapeless("ue_addons:wooden_mechanism", [
