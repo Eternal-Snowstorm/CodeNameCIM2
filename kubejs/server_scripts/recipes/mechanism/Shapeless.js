@@ -77,10 +77,6 @@ ServerEvents.recipes((event) => {
 		"#forge:ingots/steel",
 		"mekanism:basic_control_circuit"
 	])
-	kubejs.shapeless("4x ue_addons:basic_mechanism_part", [
-		"minecraft:flint",
-		"minecraft:clay_ball"
-	])
 	kubejs.shapeless("4x ue_addons:quantum_mechanism_part", [
 		"ae2:quantum_entangled_singularity",
 		"mekanism:pellet_polonium"
