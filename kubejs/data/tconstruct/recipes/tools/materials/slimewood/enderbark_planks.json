@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "tconstruct:enderbark_planks"
-  },
-  "material": "tconstruct:slimewood#enderbark",
-  "needed": 1,
-  "value": 1
-}

@@ -1,7 +1,0 @@
-{
-  "type": "tconstruct:severing",
-  "entity": {
-    "type": "minecraft:stray"
-  },
-  "result": "tconstruct:stray_head"
-}

@@ -1,7 +1,0 @@
-{
-  "type": "tconstruct:severing",
-  "entity": {
-    "type": "tconstruct:sky_slime"
-  },
-  "result": "tconstruct:sky_slime_ball"
-}

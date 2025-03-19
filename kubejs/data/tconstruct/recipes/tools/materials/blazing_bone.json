@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "tconstruct:blazing_bone"
-  },
-  "material": "tconstruct:blazing_bone",
-  "needed": 1,
-  "value": 1
-}

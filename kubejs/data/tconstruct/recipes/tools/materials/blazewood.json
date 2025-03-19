@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "tconstruct:blazewood"
-  },
-  "material": "tconstruct:blazewood",
-  "needed": 1,
-  "value": 1
-}

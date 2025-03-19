@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material_melting",
-  "input": "tconstruct:ender_pearl",
-  "result": {
-    "amount": 250,
-    "tag": "forge:ender"
-  },
-  "temperature": 477
-}

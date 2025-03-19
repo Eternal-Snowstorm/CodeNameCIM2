@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "tag": "forge:ingots/gold"
-  },
-  "material": "tconstruct:gold",
-  "needed": 1,
-  "value": 1
-}

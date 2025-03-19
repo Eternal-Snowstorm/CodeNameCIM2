@@ -1,8 +1,0 @@
-{
-  "type": "tconstruct:item_part_builder",
-  "pattern": "tconstruct:pick_head",
-  "pattern_item": {
-    "tag": "tconstruct:casts/sand"
-  },
-  "result": "tconstruct:pick_head_sand_cast"
-}

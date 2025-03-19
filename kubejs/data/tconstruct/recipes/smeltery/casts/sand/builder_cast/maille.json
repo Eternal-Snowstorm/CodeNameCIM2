@@ -1,8 +1,0 @@
-{
-  "type": "tconstruct:item_part_builder",
-  "pattern": "tconstruct:maille",
-  "pattern_item": {
-    "tag": "tconstruct:casts/sand"
-  },
-  "result": "tconstruct:maille_sand_cast"
-}

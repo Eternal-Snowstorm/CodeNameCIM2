@@ -1,8 +1,0 @@
-{
-  "type": "tconstruct:item_part_builder",
-  "pattern": "tconstruct:nugget",
-  "pattern_item": {
-    "tag": "tconstruct:casts/sand"
-  },
-  "result": "tconstruct:nugget_sand_cast"
-}

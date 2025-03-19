@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "tag": "forge:ingots/pig_iron"
-  },
-  "material": "tconstruct:pig_iron",
-  "needed": 1,
-  "value": 1
-}

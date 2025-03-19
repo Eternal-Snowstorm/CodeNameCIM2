@@ -1,8 +1,0 @@
-{
-  "type": "tconstruct:item_part_builder",
-  "pattern": "tconstruct:small_blade",
-  "pattern_item": {
-    "tag": "tconstruct:casts/red_sand"
-  },
-  "result": "tconstruct:small_blade_red_sand_cast"
-}

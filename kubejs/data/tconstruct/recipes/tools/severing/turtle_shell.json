@@ -1,8 +1,0 @@
-{
-  "type": "tconstruct:ageable_severing",
-  "adult_result": "minecraft:turtle_helmet",
-  "child_result": "minecraft:scute",
-  "entity": {
-    "type": "minecraft:turtle"
-  }
-}

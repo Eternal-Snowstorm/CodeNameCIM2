@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:casting_basin",
-  "cooling_time": 6000,
-  "fluid": {
-    "amount": 1000,
-    "fluid": "minecraft:milk"
-  },
-  "result": "tconstruct:cheese_block"
-}
