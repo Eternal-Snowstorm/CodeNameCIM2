@@ -69,7 +69,9 @@ ItemEvents.tooltip((event) => {
 		}
 	})
 
-	function addTooltip(item) {
+	function addCommonTooltip(item) {
 		event.add(item, Component.translate(`tooltip.${item}`.replace(":", ".")))
 	}
+
+	addCommonTooltip("ue_addons:pigiron_mechanism")
 })
