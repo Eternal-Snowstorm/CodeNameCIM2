@@ -10,13 +10,13 @@ ServerEvents.recipes((event) => {
 	castingMechanicalMaterials.forEach(([input, output]) => {
 		tconstruct.casting_table(
 			output,
-			Fluid.of(input, 180),
+			Fluid.of(input, 90),
 			"#tconstruct:casts/multi_use/mechanism"
 		).cooling_time(50)
 
 		tconstruct.casting_table(
 			output,
-			Fluid.of(input, 180),
+			Fluid.of(input, 90),
 			"#tconstruct:casts/single_use/mechanism"
 		).cooling_time(50).cast_consumed(true)
 	})
