@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "tconstruct:skyroot_planks"
-  },
-  "material": "tconstruct:slimewood#skyroot",
-  "needed": 1,
-  "value": 1
-}

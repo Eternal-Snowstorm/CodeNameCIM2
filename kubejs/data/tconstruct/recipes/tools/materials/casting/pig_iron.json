@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material_fluid",
-  "fluid": {
-    "amount": 90,
-    "tag": "tconstruct:molten_pig_iron"
-  },
-  "output": "tconstruct:pig_iron",
-  "temperature": 811
-}

@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "tag": "forge:wither_bones"
-  },
-  "material": "tconstruct:necrotic_bone",
-  "needed": 1,
-  "value": 1
-}

@@ -1,7 +1,0 @@
-{
-  "type": "tconstruct:severing",
-  "entity": {
-    "type": "minecraft:magma_cube"
-  },
-  "result": "minecraft:magma_cream"
-}

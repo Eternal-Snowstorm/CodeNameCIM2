@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:casting_basin",
-  "cooling_time": 115,
-  "fluid": {
-    "amount": 400,
-    "tag": "tconstruct:molten_quartz"
-  },
-  "result": "minecraft:quartz_block"
-}

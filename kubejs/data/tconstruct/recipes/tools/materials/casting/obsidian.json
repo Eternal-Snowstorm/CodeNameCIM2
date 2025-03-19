@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material_fluid",
-  "fluid": {
-    "amount": 1000,
-    "tag": "tconstruct:molten_obsidian"
-  },
-  "output": "tconstruct:obsidian",
-  "temperature": 1000
-}

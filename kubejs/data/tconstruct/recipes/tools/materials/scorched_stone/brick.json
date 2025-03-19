@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "tconstruct:scorched_brick"
-  },
-  "material": "tconstruct:scorched_stone",
-  "needed": 2,
-  "value": 1
-}

@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material_fluid",
-  "fluid": {
-    "amount": 90,
-    "tag": "forge:molten_hepatizon"
-  },
-  "output": "tconstruct:hepatizon",
-  "temperature": 1400
-}

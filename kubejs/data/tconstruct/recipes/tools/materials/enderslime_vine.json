@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "tconstruct:ender_slime_vine"
-  },
-  "material": "tconstruct:enderslime_vine",
-  "needed": 1,
-  "value": 1
-}

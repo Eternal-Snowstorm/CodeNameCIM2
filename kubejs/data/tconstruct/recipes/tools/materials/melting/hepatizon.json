@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material_melting",
-  "input": "tconstruct:hepatizon",
-  "result": {
-    "amount": 90,
-    "tag": "forge:molten_hepatizon"
-  },
-  "temperature": 1400
-}

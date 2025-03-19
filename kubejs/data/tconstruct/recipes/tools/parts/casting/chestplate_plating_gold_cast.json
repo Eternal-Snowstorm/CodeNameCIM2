@@ -1,8 +1,0 @@
-{
-  "type": "tconstruct:table_casting_material",
-  "cast": {
-    "tag": "tconstruct:casts/multi_use/chestplate_plating"
-  },
-  "item_cost": 6,
-  "result": "tconstruct:chestplate_plating"
-}

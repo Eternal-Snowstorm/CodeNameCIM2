@@ -1,8 +1,0 @@
-{
-  "type": "tconstruct:item_part_builder",
-  "pattern": "tconstruct:gem",
-  "pattern_item": {
-    "tag": "tconstruct:casts/sand"
-  },
-  "result": "tconstruct:gem_sand_cast"
-}

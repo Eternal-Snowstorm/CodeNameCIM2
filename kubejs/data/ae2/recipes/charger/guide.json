@@ -1,9 +1,0 @@
-{
-  "type": "ae2:charger",
-  "ingredient": {
-    "item": "minecraft:book"
-  },
-  "result": {
-    "item": "ae2:guide"
-  }
-}

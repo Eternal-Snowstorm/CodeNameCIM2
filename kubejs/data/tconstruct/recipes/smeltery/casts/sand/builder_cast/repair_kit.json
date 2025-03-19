@@ -1,8 +1,0 @@
-{
-  "type": "tconstruct:item_part_builder",
-  "pattern": "tconstruct:repair_kit",
-  "pattern_item": {
-    "tag": "tconstruct:casts/sand"
-  },
-  "result": "tconstruct:repair_kit_sand_cast"
-}
