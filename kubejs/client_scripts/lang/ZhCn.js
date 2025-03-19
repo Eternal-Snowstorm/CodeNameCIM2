@@ -38,6 +38,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguaue(`text.${global.namespace}.dev`, "§0开发中画面, 实际内容请以正式版为准")
 	addAloneLanguaue(`text.${global.namespace}.player`, "§0测试中版本, 不代表最终品质")
 
+	addCommonTooltipLanguage("ue_addons:pigiron_mechanism", "可无限次食用")
+
+	addHeatedLanguaue("grilled", "炙烤")
+
 	let materialGroup = [
 		["nature", "自然"],
 		["wooden", "木质"],
@@ -102,12 +106,16 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_bucket`, `${value}桶`)
 	}
 
-	function addTooltipLanguage(key, value) {
+	function addCommonTooltipLanguage(key, value) {
 		event.add(`tooltip.${key}`.replace(":", "."), `§b${value}`)
 	}
 
 	function addJEIInfoLanguage(key, value) {
 		event.add(`jei.info.${key}`.replace(":", "."), `§b${value}`)
+	}
+
+	function addHeatedLanguaue(key, value) {
+		event.add(`create.recipe.heat_requirement.${key}`, value)
 	}
 
 	function addAloneLanguaue(key, value) {
