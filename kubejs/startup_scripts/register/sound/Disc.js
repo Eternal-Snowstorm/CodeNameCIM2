@@ -1,9 +1,18 @@
+let addMusicDisc = [
+	["lan_huo", 157],
+	["monody", 290]
+]
 StartupEvents.registry("sound_event", (event) => {
-	event.create(`${global.namespace}:lan_huo`)
+	addMusicDisc.forEach(([name]) => {
+		event.create(`${global.namespace}:${name}`)
+	})
 })
 
 StartupEvents.registry("item", (event) => {
-	event.create(`${global.namespace}:lan_huo`, "music_disc")
-		.song(`${global.namespace}:lan_huo`, 157)
-		.tag("minecraft:music_discs")
+	addMusicDisc.forEach(([name, seconds]) => {
+		event.create(`${global.namespace}:${name}`, "music_disc")
+			.texture(`${global.namespace}:item/discs/${name}`)
+			.song(`${global.namespace}:${name}`, seconds)
+			.tag("minecraft:music_discs")
+	})
 })

@@ -2,7 +2,15 @@
 	"lan_huo": {
 		"sounds": [
 			{
-				"name": "ue_addons:lan_huo",
+				"name": "ue_addons:discs/lan_huo",
+				"stream": true
+			}
+		]
+	},
+	"monody": {
+		"sounds": [
+			{
+				"name": "ue_addons:discs/monody",
 				"stream": true
 			}
 		]

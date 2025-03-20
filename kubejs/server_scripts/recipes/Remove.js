@@ -8,12 +8,14 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeItemRecipes = [
+
 	]
 	removeItemRecipes.forEach((item) => {
 		event.remove({ output: item })
 	})
 
 	let removeRecipeType = [
+
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({ type: type })

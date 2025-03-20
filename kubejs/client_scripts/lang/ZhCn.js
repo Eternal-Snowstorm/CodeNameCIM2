@@ -44,6 +44,9 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addHeatedLanguaue("grilled", "炙烤")
 
+	addMusicDiscLanguaue("lan_huo", "烂活", "霜落落落霜")
+	addMusicDiscLanguaue("monody", "Monody", "TheFatRat")
+
 	let materialGroup = [
 		["nature", "自然"],
 		["wooden", "木质"],
@@ -118,6 +121,11 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addHeatedLanguaue(key, value) {
 		event.add(`create.recipe.heat_requirement.${key}`, value)
+	}
+
+	function addMusicDiscLanguaue(key, value, author) {
+		event.add(`item.${global.namespace}.${key}`, value)
+		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
 	}
 
 	function addAloneLanguaue(key, value) {
