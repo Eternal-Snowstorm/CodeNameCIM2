@@ -28,11 +28,11 @@
 
 <div align="left">
 
-### `Create: Mechanisms and Innovations`(下文称`CMI`)版本号协议
+### `Create: Mechanism and Innovation`(下文称`CMI`)版本号协议
 
 - `CMI`版本号码由大中小版本号组成
 
-- `CMI`大、中版本号码由主创`Unknown_Entity`进行规定。
+- `CMI`大、中版本号码由主创`Unknown_Entity_`进行规定。
 
 - 技术人员每次上传涉及游戏内代码的更新时，须相对当前小版本号进一位再上传。
 
@@ -56,9 +56,9 @@
 
 ### 版本更新与todo协议
 
-- 主创`Unknown_Entity`拥有所有版本号的最终解释权，并且拥有下一个版本更新内容的决定权。
+- 主创`Unknown_Entity_`拥有所有版本号的最终解释权，并且拥有下一个版本更新内容的决定权。
 
-- 每个版本完成后，`Unknown_Entity`将会汇总下一个版本的计划更新内容并由`Dev Team`成员上传GitHub的`Projects/CMI development follow-up`。
+- 每个版本完成后，`Unknown_Entity_`将会汇总下一个版本的计划更新内容并由`Dev Team`成员上传GitHub的`Projects/CMI development follow-up`。
 
 - todo list全部完成并优化完毕后，GitHub仓库将会提升一位版本号并等待主创的下一个todo list
 
