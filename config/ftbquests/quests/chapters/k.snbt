@@ -1,0 +1,335 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "k"
+	group: ""
+	id: "16BF65FE8553A6F6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "136F20B0869B90F6"
+			tasks: [{
+				id: "6BB1A5898061E906"
+				item: "ue_addons:wooden_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["136F20B0869B90F6"]
+			id: "30B8A752461496DD"
+			tasks: [{
+				id: "2185828B8AD01CD9"
+				item: "ue_addons:stone_mechanism"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["30B8A752461496DD"]
+			id: "4083E533701242D1"
+			tasks: [{
+				id: "5AD679254A483442"
+				item: "ue_addons:iron_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30B8A752461496DD"]
+			id: "69C00F817438C355"
+			tasks: [{
+				id: "2F4565283385D493"
+				item: "ue_addons:gold_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30B8A752461496DD"]
+			id: "17888283D819AB51"
+			tasks: [{
+				id: "657E105AB2B3D75C"
+				item: "ue_addons:andesite_mechanism"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17888283D819AB51"]
+			id: "56DB23E9AE579DAD"
+			tasks: [{
+				id: "5F63F0125F291916"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17888283D819AB51"]
+			id: "65AD80AEAA062CEE"
+			tasks: [{
+				id: "3F95424115CCADEB"
+				item: "ue_addons:copper_mechanism"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			id: "08D012AB26459401"
+			tasks: [{
+				id: "78DBDA88A6FB64A4"
+				item: "ue_addons:nature_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["56DB23E9AE579DAD"]
+			id: "591080AC719E09DB"
+			tasks: [{
+				id: "588D3A4D61770E04"
+				item: "ue_addons:railway_mechanism"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			id: "3A7FB41E29F092EA"
+			tasks: [{
+				id: "67B6B054699EE7B1"
+				item: "ue_addons:ender_mechanism"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["17888283D819AB51"]
+			id: "42519082C3C86B41"
+			tasks: [{
+				id: "779E1A300018E96F"
+				item: "ue_addons:photosensitive_mechanism"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["56DB23E9AE579DAD"]
+			id: "0DE8D693A94C5A6D"
+			tasks: [{
+				id: "0FC6596A6B689280"
+				item: "ue_addons:thermal_mechanism"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["56DB23E9AE579DAD"]
+			id: "767B33B7921C4E6A"
+			tasks: [{
+				id: "2B1F467B5898721D"
+				item: "ue_addons:smart_mechanism"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["56DB23E9AE579DAD"]
+			id: "3D7BCA289055601D"
+			tasks: [{
+				id: "2C6B5D460EA6A7A8"
+				item: "ue_addons:light_engineering_mechanism"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D7BCA289055601D"]
+			id: "0D63B72859D8D3D2"
+			tasks: [{
+				id: "258647244F9946F7"
+				item: "ue_addons:heavy_engineering_mechanism"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D7BCA289055601D"]
+			id: "086476EBD5AD934E"
+			tasks: [{
+				id: "1DA714150AE6B827"
+				item: "ue_addons:coil_mechanism"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DE8D693A94C5A6D"]
+			id: "6D6905E6A6E7A153"
+			tasks: [{
+				id: "36891FDD5DDE4833"
+				item: "ue_addons:feinforced_mechanism"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6D6905E6A6E7A153"]
+			id: "71F81E8F67C3A8BE"
+			tasks: [{
+				id: "19127FF6F2243BF5"
+				item: "ue_addons:resonant_mechanism"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0D63B72859D8D3D2"
+				"767B33B7921C4E6A"
+				"71F81E8F67C3A8BE"
+			]
+			id: "315BE76178E4D7F7"
+			tasks: [{
+				id: "72D29B51D5F8C096"
+				item: "ue_addons:basic_mekanism_mechanism"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["315BE76178E4D7F7"]
+			id: "41AAC35C55192CC1"
+			tasks: [{
+				id: "65375F6156A5EBFC"
+				item: "ue_addons:advanced_mekanism_mechanism"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["41AAC35C55192CC1"]
+			id: "0B04AEDFB54ACD72"
+			tasks: [{
+				id: "0D3884BDC8C8940D"
+				item: "ue_addons:elite_mekanism_mechanism"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0B04AEDFB54ACD72"]
+			id: "7F8CA0DAB7770DCA"
+			tasks: [{
+				id: "574961A59A899ED5"
+				item: "ue_addons:ultimate_mekanism_mechanism"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["315BE76178E4D7F7"]
+			id: "3CBE5B0B56CB75A4"
+			tasks: [{
+				id: "7DA1893078B8FCF9"
+				item: "ue_addons:structure_mechanism"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3CBE5B0B56CB75A4"
+				"7F8CA0DAB7770DCA"
+			]
+			id: "0C258EEC3A28101E"
+			tasks: [{
+				id: "637C87972E33585B"
+				item: "ue_addons:nuclear_mechanism"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3CBE5B0B56CB75A4"
+				"0C258EEC3A28101E"
+			]
+			id: "5379DA9E302283E7"
+			tasks: [{
+				id: "20A2AE527CB22C52"
+				item: "ue_addons:antimatter_mechanism"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			id: "41D1483BFF793103"
+			tasks: [{
+				id: "105B9AE2D7540EC0"
+				item: "ue_addons:enchanted_mechanism"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			id: "409D81C491430D8B"
+			tasks: [{
+				id: "5980F108D9715C76"
+				item: "ue_addons:sculk_mechanism"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "2023FCCA77518EF8"
+			tasks: [{
+				id: "2475148614D71807"
+				item: "ue_addons:colorful_mechanism"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			id: "44114C64DEF272E1"
+			size: 5.0d
+			tasks: [{
+				id: "107B7BB8BBC1F0B8"
+				item: "ue_addons:creative_mechanism"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.0d
+		}
+	]
+	title: "tech tree"
+}
