@@ -60,7 +60,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["andesite", "安山"],
 		["photosensitive", "感光"],
 		["gold", "金质"],
-		["cobalt", "钴"],
+		["cobalt", "钴质"],
 		["thermal", "热力"],
 		["feinforced", "强化"],
 		["resonant", "谐振"],

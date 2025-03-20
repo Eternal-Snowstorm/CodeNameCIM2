@@ -62,7 +62,7 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_pigiron_mechanism`)
 		.tag("create:incomplete_mechanisms")
 
-		// 批量注册构件零件类型
+	// 批量注册构件零件类型
 	let partsRegisters = [
 		"basic",
 		"mechanical",

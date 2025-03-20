@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { create } = event.recipes
+	
 	create.deploying("minecraft:sculk_sensor", [
 		"minecraft:sculk",
 		"minecraft:redstone_block"
