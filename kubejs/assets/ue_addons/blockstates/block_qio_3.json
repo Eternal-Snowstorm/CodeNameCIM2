@@ -1,0 +1,7 @@
+{
+    "variants":{
+        "":{
+            "model": "ue_addons:block/block_qio_3"
+        }
+    }
+}
