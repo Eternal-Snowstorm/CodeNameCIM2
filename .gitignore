@@ -23,6 +23,8 @@
 /shaderpacks/
 /usercache.json
 /usernamecache.json
+/saves/新的世界
+/temp
 
 # config
 config/ae2/
@@ -72,18 +74,14 @@ config/immersiveengineering-client.toml
 config/immersiveengineering-common.toml
 config/inventoryprofilesnext
 config/invtweaks-client.toml
-config/jade/
 config/jecharacters.toml
-config/jei/
 config/konkrete/
 config/mantle-client.toml
 config/Mekanism/
 config/modelfix-client.toml
 config/modernfix-common.toml
-config/modernfix-mixins.properties
 config/moonlight-client.toml
 config/moonlight-common.toml
-config/MouseTweaks.cfg
 config/oculus.properties
 config/patchouli-client.toml
 config/PickUpTorchesConfig.json
