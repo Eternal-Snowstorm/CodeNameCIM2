@@ -37,6 +37,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguaue(`message.${global.namespace}.debug.getHardness`, "这个方块的硬度是: %s")
 	addAloneLanguaue(`text.${global.namespace}.dev`, "§0开发中画面, 实际内容请以正式版为准")
 	addAloneLanguaue(`text.${global.namespace}.player`, "§0测试中版本, 不代表最终品质")
+	addAloneLanguaue(`message.${global.namespace}.checkCheating`, "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?")
+	addAloneLanguaue(`message.${global.namespace}.checkMultipleCheating`, "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?")
 
 	addCommonTooltipLanguage("ue_addons:pigiron_mechanism", "可无限次食用")
 
