@@ -52,7 +52,6 @@ config/cupboard.json
 config/curios-client.toml
 config/curios-common.toml
 de/
-config/drippyloadingscreen
 config/dynamic_fps.json
 config/embeddium-fingerprint.json
 config/embeddium-mixins.properties
