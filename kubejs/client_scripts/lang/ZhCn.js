@@ -1,6 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
 	addCastItemLanguaue("mechanism", "构件")
 
+	addItemLanguaue("geological_hammer", "地质锤")
+
 	addMechanismPartLanguaue("basic", "基础")
 	addMechanismPartLanguaue("mechanical", "机械")
 	addMechanismPartLanguaue("flux", "通量")
@@ -17,6 +19,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("deepslate_quartz_ore", "深层石英矿石")
 
 	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
+	addAloneLanguaue("curios.identifier.mechanisms", "构件")
 	addAloneLanguaue(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")
 	addAloneLanguaue(`message.${global.namespace}.debug.getHardness`, "这个方块的硬度是: %s")
 	addAloneLanguaue(`text.${global.namespace}.dev`, "§0开发中画面, 实际内容请以正式版为准")
@@ -31,6 +34,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage('ue_addons:ender_mechanism', "§d手持右键随机传送，手持潜行右键记录当前坐标")
 	addCommonTooltipLanguage('ue_addons:enchanted_mechanism', "§9手持右键方块可生成经验")
 	addCommonTooltipLanguage('ue_addons:nature_mechanism', "§a手持右键方块可以替代骨粉的功能")
+	addCommonTooltipLanguage('ue_addons:geographycal_hammer.developer1', "手持右键方块获取方块硬度")
+	addCommonTooltipLanguage('ue_addons:geographycal_hammer.developer2', "副手手持右键获取主手物品ID")
+	addCommonTooltipLanguage('ue_addons:geographycal_hammer.not_developer', "似乎有一种神秘的力量阻止了你使用这个物品")
 
 	addAccelerateTooltipLanguage('ue_addons:stone_mechanism', "§e转化石头\n10%安山岩\n10%闪长岩\n10%花岗岩\n10%石灰岩\n10%焦黑石头\n§2转化深板岩\n10%焦黑石头\n10%凝灰岩\n10%熔渣\n10%滴水石块\n10%平滑玄武岩")
 	addAccelerateTooltipLanguage('ue_addons:andesite_mechanism', "§e转化石头\n20%安山岩\n5%铁矿石\n5%石头\n§2转化深板岩\n15%安山岩\n10%深层铁矿石\n10%深板岩")
@@ -43,6 +49,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addMusicDiscLanguaue("lan_huo", "烂活", "霜落落落霜")
 	addMusicDiscLanguaue("monody", "Monody", "TheFatRat")
+	addMusicDiscLanguaue("life", "Life", "Neuro Sama")
 
 	let materialGroup = [
 		["nature", "自然"],
@@ -53,6 +60,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["andesite", "安山"],
 		["photosensitive", "感光"],
 		["gold", "金质"],
+		["cobalt", "钴"],
 		["thermal", "热力"],
 		["feinforced", "强化"],
 		["resonant", "谐振"],
@@ -126,7 +134,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addMusicDiscLanguaue(key, value, author) {
 		event.add(`item.${global.namespace}.${key}`, value)
-		event.add(`item.${global.namespace}.${key}.tooltip`, `${value} - ${author}`)
+		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
 	}
 
 	function addAloneLanguaue(key, value) {

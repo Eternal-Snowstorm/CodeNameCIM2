@@ -26,4 +26,6 @@ ServerEvents.tags("item", (event) => {
 		.add("create:precision_mechanism")
 	event.get("create:incomplete_mechanisms")
 		.add("create:incomplete_precision_mechanism")
+	event.add("curios:mechanisms", ["ue_addons:photosensitive_mechanism", "ue_addons:cobalt_mechanism"])
 })
+

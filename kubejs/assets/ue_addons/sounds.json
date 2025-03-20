@@ -14,5 +14,13 @@
 				"stream": true
 			}
 		]
+	},
+	"life": {
+		"sounds": [
+			{
+				"name": "ue_addons:discs/life",
+				"stream": true
+			}
+		]
 	}
 }

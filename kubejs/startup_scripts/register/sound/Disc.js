@@ -1,6 +1,7 @@
 let addMusicDisc = [
 	["lan_huo", 157],
-	["monody", 290]
+	["monody", 290],
+	["life", 215]
 ]
 StartupEvents.registry("sound_event", (event) => {
 	addMusicDisc.forEach(([name]) => {

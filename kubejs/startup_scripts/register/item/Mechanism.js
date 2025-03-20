@@ -9,6 +9,7 @@ StartupEvents.registry("item", (event) => {
 		"andesite",
 		"photosensitive",
 		"gold",
+		"cobalt",
 		"thermal",
 		"feinforced",
 		"resonant",

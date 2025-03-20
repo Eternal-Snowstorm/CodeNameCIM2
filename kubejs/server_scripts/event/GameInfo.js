@@ -1,8 +1,18 @@
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
-	let modPackVersion = "§0CMI Dev Alpha-1.7.2"
+	let modPackVersion = "§0CMI Dev Alpha-1.7.3"
+
+	// 初始化isDeveloper的boolean
+	global.isDeveloper = false
 
 	global.debugUserName.forEach((debugUser) => {
+
+
+		//设置isDeveloper的boolean
+		if (player.username === debugUser) {
+			global.isDeveloper = true
+		}
+
 		if (player.username === debugUser) {
 			let devInfo = Component.translate(`text.${global.namespace}.dev`).getString()
 			player.paint({

@@ -1,0 +1,5 @@
+{
+  "conditions": [],
+  "entities":["minecraft:player"],
+  "slots":["mechanisms"]
+}

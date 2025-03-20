@@ -17,10 +17,10 @@ ItemEvents.tooltip((event) => {
 		event.add(item, Component.translate(`tooltip.${item}`.replace(`:`, `.`)))
 	}
 
-	function addAccelerateTooltip(item) {
-		event.addAdvanced(`${item}`, (text) => {
+	function addAccelerateTooltip(key) {
+		event.addAdvanced(key, (item, advanced, text) => {
 			if (event.shift) {
-				text.add(Component.translate(`tooltip.${item}.accelerate`.replace(`:`, `.`)))
+				text.add(Component.translate(`tooltip.${key}.accelerate`.replace(`:`, `.`)))
 			}
 			else {
 				text.add(Component.translate(`tooltip.${global.namespace}.acceleratable`))
@@ -28,4 +28,16 @@ ItemEvents.tooltip((event) => {
 			}
 		})
 	}
+
+	// 地质锤的tooltip
+
+	event.addAdvanced('ue_addons:geological_hammer', (item, advanced, text) => {
+		if (global.isDeveloper) {
+			text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer1`))
+			text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer2`))
+		}
+		else {
+			text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.not_developer`))
+		}
+	})
 })

@@ -1,15 +1,14 @@
 // priorty: 0
 
-ItemEvents.rightClicked((event) => {
-	let { item, player } = event
-
-	for (let i = 0; i < global.debugUserName.length; i++) {
-		// 潜行+右键获取物品ID
-		if (player.mainHandItem === item.id &&
-			player.crouching &&
-			player.mainHandItem !== "minecraft:air" &&
-			player.username === global.debugUserName[i]) {
-			player.runCommandSilent("kjs hand")
+ItemEvents.rightClicked('ue_addons:geological_hammer', (event) => {
+	let { player } = event
+	if (event.hand == "OFF_HAND") {
+		for (let i = 0; i < global.debugUserName.length; i++) {
+			// 副手持地质锤右键获取物品ID
+			if (player.mainHandItem !== "minecraft:air" &&
+				player.username === global.debugUserName[i]) {
+				player.runCommandSilent("kjs hand")
+			}
 		}
 	}
 })
@@ -68,10 +67,10 @@ PlayerEvents.loggedIn((event) => {
 	}
 })
 
-// 查看方块硬度(潜行+右键方块)
+// 查看方块硬度(地质锤右键方块)
 BlockEvents.rightClicked((event) => {
 	let { player } = event
-	let getItem = "minecraft:diamond"
+	let getItem = 'ue_addons:geological_hammer'
 
 	let blockState = event.getBlock().getBlockState()
 	let pos = event.getBlock().getPos()
@@ -82,9 +81,10 @@ BlockEvents.rightClicked((event) => {
 			return
 		}
 		if (player.mainHandItem === getItem &&
-			player.crouching &&
 			player.username === global.debugUserName[i]) {
+			event.getPlayer().swing()
 			player.tell(Component.translate(`message.${global.namespace}.debug.getHardness`, [blockHardness]))
+			event.cancel()
 		}
 	}
 })
