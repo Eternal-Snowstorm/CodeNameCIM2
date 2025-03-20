@@ -16,7 +16,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("quartz_ore", "石英矿石")
 	addBlockLanguaue("deepslate_quartz_ore", "深层石英矿石")
 
-	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 无限构件")
+	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
 	addAloneLanguaue(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")
 	addAloneLanguaue(`desc.${global.namespace}.acceleratable`, "§b按住Shift查看构件之力催生器用途")
 	addAloneLanguaue(`desc.${global.namespace}.stone_mechanism`, "§c手持右键圆石可将其转换为石头")
