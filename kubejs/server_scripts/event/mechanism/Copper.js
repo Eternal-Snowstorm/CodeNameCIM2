@@ -106,9 +106,9 @@ BlockEvents.rightClicked(r => {
 			}
 		}
 	}
-	//若数量小于等于5则停止该程序
+	// 若数量小于等于5则停止该程序
 	if (count <= 5) return
-	//若数量大于5则召唤效果粒子
+	// 若数量大于5则召唤效果粒子
 	let { block, item, player, level } = r;
 	if (item.id !== 'ue_addons:copper_mechanism' || block.id !== 'ue_addons:the_accelerator_of_mechanism_power') return;
 	level.server.runCommandSilent(

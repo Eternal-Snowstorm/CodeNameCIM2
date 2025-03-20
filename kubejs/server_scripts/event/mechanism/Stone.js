@@ -1,19 +1,19 @@
-//将圆石熔炼为石头
+// 将圆石转化为石头
 BlockEvents.rightClicked('minecraft:cobblestone', event => {
 	let { player, item, block } = event;
 	if (item.id === 'ue_addons:stone_mechanism') {
 		block.set('minecraft:stone');
 	}
 });
-//构件力量发生
+// 催生器转化石头
 BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", r => {
-	//判定是否主手手持石质构件
+	// 判定是否主手手持石质构件
 	if (r.hand == "OFF_HAND") return
 	let player = r.getPlayer()
 	if (player == null) return
 	if (r.getItem().is('ue_addons:stone_mechanism')) {
 		let { x, y, z } = r.block.pos
-		//设定扫描所用变量
+		// 设定扫描所用变量
 		let numx = x
 		let numz = z
 		let outx
@@ -22,7 +22,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", r => {
 		let rand
 		let num = [-2, -1, 0, 1, 2]
 		let count = 0
-		//判定周围的石头/深板岩是否足够
+		// 判定周围的石头/深板岩是否足够
 		for (let m = 0; m <= 4; m++) {
 			outx = numx + num[m]
 			for (let n = 0; n <= 4; n++) {
@@ -39,9 +39,9 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", r => {
 				}
 			}
 		}
-		//若数量小于等于5则停止该程序
+		// 若数量小于等于5则停止该程序
 		if (count <= 5) return
-		//若数量大于5则开始抽随机数转化方块
+		// 若数量大于5则开始抽随机数转化方块
 		for (let m = 0; m <= 4; m++) {
 			outx = numx + num[m]
 			for (let n = 0; n <= 4; n++) {
@@ -82,22 +82,22 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", r => {
 			}
 
 		}
-		//使玩家挥动手持物品
+		// 使玩家挥动手持物品
 		r.getPlayer().swing()
-		//给进行操作的玩家播放提示音
+		// 给进行操作的玩家播放提示音
 		player.playNotifySound('create:crafter_craft', 'voice', 2, 1)
-		//检测玩家是否创造模式
+		// 检测玩家是否创造模式
 		if (r.player.isCreative()) { }
-		//若是生存模式则减少一个石质构件
+		// 若是生存模式则减少一个石质构件
 		else {
 			r.getItem().shrink(1)
 		}
 	}
 })
 
-//构件力量发生器的粒子效果
+// 构件力量发生器的粒子效果
 BlockEvents.rightClicked(r => {
-	//设置扫描所用变量
+	// 设置扫描所用变量
 	let { x, y, z } = r.block.pos
 	let numx = x
 	let numz = z
@@ -106,7 +106,7 @@ BlockEvents.rightClicked(r => {
 	let pos
 	let num = [-2, -1, 0, 1, 2]
 	let count = 0
-	//扫描周围方块的石头/深板岩数量
+	// 扫描周围方块的石头/深板岩数量
 	for (let m = 0; m <= 4; m++) {
 		outx = numx + num[m]
 		for (let n = 0; n <= 4; n++) {
@@ -123,9 +123,9 @@ BlockEvents.rightClicked(r => {
 			}
 		}
 	}
-	//若数量小于等于5则停止该程序
+	// 若数量小于等于5则停止该程序
 	if (count <= 5) return
-	//若数量大于5则召唤效果粒子
+	// 若数量大于5则召唤效果粒子
 	let { block, item, player, level } = r;
 	if (item.id !== 'ue_addons:stone_mechanism' || block.id !== 'ue_addons:the_accelerator_of_mechanism_power') return;
 	level.server.runCommandSilent(

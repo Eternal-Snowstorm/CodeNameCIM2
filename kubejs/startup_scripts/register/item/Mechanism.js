@@ -1,4 +1,5 @@
 StartupEvents.registry("item", (event) => {
+	// 批量注册构件类型
 	let mechanismRegister = [
 		"nature",
 		"wooden",
@@ -45,6 +46,7 @@ StartupEvents.registry("item", (event) => {
 			food.hunger(8)
 				.saturation(1)
 				.alwaysEdible()
+				.fastToEat()
 				.eaten((event) => {
 					let { player, item } = event
 
@@ -59,6 +61,7 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_pigiron_mechanism`)
 		.tag("create:incomplete_mechanisms")
 
+		// 批量注册构件零件类型
 	let partsRegisters = [
 		"basic",
 		"mechanical",
