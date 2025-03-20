@@ -18,7 +18,6 @@
 /patchouli_books/
 /patchouli_data.json
 /PCL/
-/resourcepacks/
 /rhino.local.properties
 /schematics/
 /shaderpacks/
@@ -109,3 +108,8 @@ config/thermal-common.toml
 config/titanium/
 config/vintageimprovements-client.toml
 config/vintageimprovements-common.toml
+
+#resourcepacks
+/resourcepacks/*
+!/resourcepacks/NewAE2.zip
+!/resourcepacks/中微子的多用途汉化材质包.zip
