@@ -1,5 +1,9 @@
 {
-  "conditions": [],
-  "entities":["minecraft:player"],
-  "slots":["mechanisms"]
+	"conditions": [],
+	"entities": [
+		"minecraft:player"
+	],
+	"slots": [
+		"mechanisms"
+	]
 }
