@@ -24,7 +24,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguaue(`message.${global.namespace}.checkCheating`, "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?")
 	addAloneLanguaue(`message.${global.namespace}.checkMultipleCheating`, "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?")
 
-	addCommonTooltipLanguage("ue_addons:pigiron_mechanism", "§f可无限次食用")
+	addCommonTooltipLanguage("ue_addons:pigiron_mechanism", "可无限次食用")
 	addCommonTooltipLanguage('ue_addons:acceleratable', "§b按住Shift查看构件之力催生器用途")
 	addCommonTooltipLanguage('ue_addons:stone_mechanism', "§c手持右键圆石可将其转换为石头")
 	addCommonTooltipLanguage('ue_addons:copper_mechanism', "§6手持右键可以投掷出水瓶")
