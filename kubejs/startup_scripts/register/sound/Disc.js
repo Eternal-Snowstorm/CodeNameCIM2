@@ -1,7 +1,11 @@
 let addMusicDisc = [
 	["lan_huo", 157],
 	["monody", 290],
-	["life", 215]
+	["life", 215],
+	["soul", 160],
+	["cylinder", 186],
+	["but", 144],
+	["dirt", 149]
 ]
 StartupEvents.registry("sound_event", (event) => {
 	addMusicDisc.forEach(([name]) => {

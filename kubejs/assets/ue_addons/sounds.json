@@ -22,5 +22,37 @@
 				"stream": true
 			}
 		]
+	},
+	"soul": {
+		"sounds": [
+			{
+				"name": "ue_addons:discs/soul",
+				"stream": true
+			}
+		]
+	},
+	"cylinder": {
+		"sounds": [
+			{
+				"name": "ue_addons:discs/cylinder",
+				"stream": true
+			}
+		]
+	},
+	"but": {
+		"sounds": [
+			{
+				"name": "ue_addons:discs/but",
+				"stream": true
+			}
+		]
+	},
+	"dirt": {
+		"sounds": [
+			{
+				"name": "ue_addons:discs/dirt",
+				"stream": true
+			}
+		]
 	}
 }

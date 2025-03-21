@@ -50,6 +50,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMusicDiscLanguaue("lan_huo", "烂活", "霜落落落霜")
 	addMusicDiscLanguaue("monody", "Monody", "TheFatRat")
 	addMusicDiscLanguaue("life", "Life", "Neuro Sama")
+	addMusicDiscLanguaue("soul", "鬼", "草东没有派对")
+	addMusicDiscLanguaue("cylinder", "缸", "草东没有派对")
+	addMusicDiscLanguaue("but", "但", "草东没有派对")
+	addMusicDiscLanguaue("dirt", "烂泥", "草东没有派对")
 
 	let materialGroup = [
 		["nature", "自然"],
