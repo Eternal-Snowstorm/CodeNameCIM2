@@ -83,23 +83,23 @@ ClientEvents.lang("zh_cn", (event) => {
 		["pigiron", "生铁"],
 		["creative", "创造"]
 	]
+	materialGroup.forEach(([material, name]) => {
+		addMechanismLanguaue(material, name)
+	})
+	
 	let completeMaterialGroup = [
-		["basic_random", "基础随机"]
-		["mechanical_random", "机械随机"]
-		["engineering_random", "工程随机"]
-		["flux_random", "通量随机"]
-		["magical_random", "魔力随机"]
-		["quantum_random", "量子随机"]
-		["mekanism_random", "通用随机"]
+		["basic_random", "基础随机"],
+		["mechanical_random", "机械随机"],
+		["engineering_random", "工程随机"],
+		["flux_random", "通量随机"],
+		["magical_random", "魔力随机"],
+		["quantum_random", "量子随机"],
+		["mekanism_random", "通用随机"],
 		["final_random", "最终随机"]
 	]
 	completeMaterialGroup.forEach(([material, name]) =>{
 		addCompleteMechanismLanguaue(material, name)
 	})
-	materialGroup.forEach(([material, name]) => {
-		addMechanismLanguaue(material, name)
-	})
-
 	function addItemLanguaue(key, value) {
 		event.add(`item.${global.namespace}.${key}`, value)
 	}
