@@ -65,7 +65,6 @@ config/farmersdelight-client.toml
 config/farmersdelight-common.toml
 config/ferritecore-mixin.toml
 config/flywheel-client.toml
-config/fml.toml
 config/forge-client.toml
 config/ftbbackups2.json
 config/ftbxmodcompat.snbt
@@ -107,6 +106,7 @@ config/thermal-common.toml
 config/titanium/
 config/vintageimprovements-client.toml
 config/vintageimprovements-common.toml
+config/smoothboot.json
 
 #resourcepacks
 /resourcepacks/*

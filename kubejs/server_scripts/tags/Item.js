@@ -1,4 +1,9 @@
 ServerEvents.tags("item", (event) => {
+	event.get("create:mechanisms")
+		.add("create:precision_mechanism")
+	event.get("create:incomplete_mechanisms")
+		.add("create:incomplete_precision_mechanism")
+
 	let colorGroup = [
 		"black",
 		"blue",
@@ -22,10 +27,7 @@ ServerEvents.tags("item", (event) => {
 			.add("ue_addons:colorful_mechanism")
 	})
 
-	event.get("create:mechanisms")
-		.add("create:precision_mechanism")
-	event.get("create:incomplete_mechanisms")
-		.add("create:incomplete_precision_mechanism")
-	event.add("curios:mechanisms", ["ue_addons:photosensitive_mechanism", "ue_addons:cobalt_mechanism"])
+	event.get("curios:mechanisms")
+		.add("ue_addons:cobalt_mechanism")
+		.add("ue_addons:photosensitive_mechanism")
 })
-
