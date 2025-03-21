@@ -29,7 +29,18 @@ StartupEvents.registry("item", (event) => {
 		"coil",
 		"sculk",
 		"colorful",
-		"creative",
+		"creative"
+	]
+	//仅注册完成状态的构件
+	let completeMechanismRegister = [
+		"basic_random",
+		"mechanical_random",
+		"engineering_random",
+		"flux_random",
+		"magical_random",
+		"quantum_random",
+		"mekanism_random",
+		"final_random"
 	]
 	mechanismRegister.forEach((material) => {
 		event.create(`${global.namespace}:${material}_mechanism`)
@@ -39,7 +50,11 @@ StartupEvents.registry("item", (event) => {
 			.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_${material}_mechanism`)
 			.tag("create:incomplete_mechanisms")
 	})
-
+	completeMechanismRegister.forEach((material) => {
+		event.create(`${global.namespace}:${material}_mechanism`)
+			.texture(`${global.namespace}:item/mechanism/complete/${material}_mechanism`)
+			.tag("create:mechanisms")
+	})
 	// 生铁构件
 	event.create(`${global.namespace}:pigiron_mechanism`)
 		.texture(`${global.namespace}:item/mechanism/complete/pigiron_mechanism`)

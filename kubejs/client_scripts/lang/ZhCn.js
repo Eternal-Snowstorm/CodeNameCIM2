@@ -83,8 +83,21 @@ ClientEvents.lang("zh_cn", (event) => {
 		["pigiron", "生铁"],
 		["creative", "创造"]
 	]
+	let completeMaterialGroup = [
+		["basic_random", "基础随机"]
+		["mechanical_random", "机械随机"]
+		["engineering_random", "工程随机"]
+		["flux_random", "通量随机"]
+		["magical_random", "魔力随机"]
+		["quantum_random", "量子随机"]
+		["mekanism_random", "通用随机"]
+		["final_random", "最终随机"]
+	]
+	completeMaterialGroup.forEach(([material, name]) =>{
+		addCompleteMechanismLanguaue(material, name)
+	})
 	materialGroup.forEach(([material, name]) => {
-		addMachanismLanguaue(material, name)
+		addMechanismLanguaue(material, name)
 	})
 
 	function addItemLanguaue(key, value) {
@@ -97,9 +110,13 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_red_sand_cast`, `${value}红沙铸模`)
 	}
 
-	function addMachanismLanguaue(material, value) {
+	function addMechanismLanguaue(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism`, `${value}构件`)
 		event.add(`item.${global.namespace}.incomplete_${material}_mechanism`, `${value}构件(半成品)`)
+	}
+
+	function addCompleteMechanismLanguaue(material, value) {
+		event.add(`item.${global.namespace}.${material}_mechanism`, `${value}构件`)
 	}
 
 	function addMechanismPartLanguaue(material, value) {

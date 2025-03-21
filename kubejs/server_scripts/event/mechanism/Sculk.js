@@ -6,16 +6,16 @@ const PI = 3.1415926535
 const SONIC_BOOM_RANGE = 10;
 const SONIC_BOOM_ANGLE = PI / 13;
 const SONIC_BOOM_COOLDOWN = 100;
-const ITEM_ID = 'ue_addons:sculk_mechanism'
+const SCULK_MECHANISM_ID = 'ue_addons:sculk_mechanism'
 
 // 在不会触发实体交互时直接发射音波尖啸
-ItemEvents.rightClicked(ITEM_ID, e => {
+ItemEvents.rightClicked(SCULK_MECHANISM_ID, e => {
     if (e.level.isClientSide()) return;
     fireSonicBoom(e.level, e.player)
 })
 
 // 在可能触发实体交互时取消实体交互并发射音波尖啸
-ItemEvents.entityInteracted(ITEM_ID, e => {
+ItemEvents.entityInteracted(SCULK_MECHANISM_ID, e => {
     if (e.level.isClientSide()) return;
     fireSonicBoom(e.level, e.player)
     e.cancel()
@@ -29,7 +29,7 @@ ItemEvents.entityInteracted(ITEM_ID, e => {
 // 设定发出音爆粒子并伤害实体的功能
 function fireSonicBoom(level, player) {
     // 判定物品是否在冷却
-    if (player.cooldowns.isOnCooldown(ITEM_ID)) return;
+    if (player.cooldowns.isOnCooldown(SCULK_MECHANISM_ID)) return;
     // 设置音爆传播方向（玩家面向坐标）与传播起点（可优化）
     let rotation = player.getRotationVector();
     let sight = Vec3d(Math.sin(-rotation.y / 180 * PI) * Math.cos(-rotation.x / 180 * PI), -Math.sin(rotation.x / 180 * PI), Math.cos(rotation.y / 180 * PI) * Math.cos(-rotation.x / 180 * PI)).normalize()
@@ -58,5 +58,5 @@ function fireSonicBoom(level, player) {
         }
     })
     // 使幽匿构件进入冷却
-    player.cooldowns.addCooldown(ITEM_ID, SONIC_BOOM_COOLDOWN)
+    player.cooldowns.addCooldown(SCULK_MECHANISM_ID, SONIC_BOOM_COOLDOWN)
 }
