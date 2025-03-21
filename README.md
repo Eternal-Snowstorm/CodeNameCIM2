@@ -23,8 +23,4 @@
 [![Star 历史](https://starchart.cc/VechniMetel/CodeNameCIM2.svg?variant=adaptive)](https://starchart.cc/VechniMetel/CodeNameCIM2)
 
 
-- 每个版本完成后，`Unknown_Entity_`将会汇总下一个版本的计划更新内容并由`Dev Team`成员上传GitHub的`Projects/CMI development follow-up`。
 
-- todo list全部完成并优化完毕后，GitHub仓库将会提升一位版本号并等待主创的下一个todo list
-
-</div>
