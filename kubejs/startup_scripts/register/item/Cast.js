@@ -19,6 +19,6 @@ StartupEvents.registry("item", (event) => {
 			.tag("tconstruct:casts/single_use")
 			.tag(`tconstruct:casts/single_use/${name}`)
 	}
-	
+
 	addCastItem("mechanism")
 })

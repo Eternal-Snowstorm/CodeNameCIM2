@@ -2,6 +2,11 @@ StartupEvents.registry("block", (event) => {
 
 	let pickaxe = "minecraft:mineable/pickaxe"
 
+	/**
+	 * 
+	 * @param {String} 注册名称 
+	 * @param {miningLevel} 挖掘等级 
+	 */
 	function addAloneOreBlock(name, level) {
 		event.create(`${global.namespace}:${name}_ore`)
 			.textureAll(`${global.namespace}:block/ore/${name}/ore`)
