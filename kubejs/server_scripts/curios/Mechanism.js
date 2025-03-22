@@ -10,7 +10,7 @@ PlayerEvents.tick((event) => {
 		player.potionEffects.add("minecraft:night_vision", 30 * 20, 0)
 	}
 	if (CURIOS.includes("ue_addons:cobalt_mechanism") && !CURIOS.includes("display")) {
-		player.potionEffects.add("minecraft:haste", 10 * 20, 1)
-		player.potionEffects.add("minecraft:speed", 10 * 20, 1)
+		player.potionEffects.add("minecraft:haste", 20 * 20, 1)
+		player.potionEffects.add("minecraft:speed", 20 * 20, 0)
 	}
 })

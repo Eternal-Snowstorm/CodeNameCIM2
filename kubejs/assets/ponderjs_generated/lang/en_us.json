@@ -1,4 +1,6 @@
 {
+  "ue_addons.ponder.tag.ponder": "Modpack",
+  "ue_addons.ponder.tag.ponder.description": "Ponder Index",
   "ue_addons.ponder.tag.tconstruct": "TConstruct",
   "ue_addons.ponder.tag.tconstruct.description": "Ponder Index",
   "ue_addons.ponder.melter.header": "Melter",
