@@ -31,7 +31,8 @@
 /CodeNameCIM2.json
 /CIM2 Dev.jar
 /CIM2 Dev.json
-
+/CIM2 Dev-natives/
+/saves/
 # config
 config/ae2/
 config/appleskin-client.toml
