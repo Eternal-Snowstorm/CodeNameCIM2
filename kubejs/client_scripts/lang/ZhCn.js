@@ -55,12 +55,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMusicDiscLanguaue("but", "但", "草东没有派对")
 	addMusicDiscLanguaue("dirt", "烂泥", "草东没有派对")
 
-	addBlockLanguaue("qio_empty", "空的QIO驱动器盒")
-	addBlockLanguaue("qio_one", "QIO驱动器盒")
-	addBlockLanguaue("qio_two", "超密集QIO驱动器盒")
-	addBlockLanguaue("qio_three", "时间膨胀QIO驱动器盒")
-	addBlockLanguaue("qio_four", "超质量QIO驱动器盒")
-	
 	let materialGroup = [
 		["nature", "自然"],
 		["wooden", "木质"],
@@ -167,7 +161,4 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addAloneLanguaue(key, value) {
 		event.add(key, value)
 	}
-});
-ItemEvents.tooltip(event =>{
-	event.add('ue_addons:nuclear_mechanism',"右键QIO驱动器盒以将其升级（无需消耗！）")
-});
+})
