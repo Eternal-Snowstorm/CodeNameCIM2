@@ -2,6 +2,6 @@ type = last_world
 
 last_world {
   is_server = false
-  world = D:/.minecraft/PrismLauncher/instances/CIM2 Dev/.minecraft/saves/Debug
+  world = E:/启动器/PCL2/.minecraft/versions/CIM2 Dev/saves/Debug
 }
 
