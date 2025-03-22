@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 	create.deploying("minecraft:sculk", [
 		"create:experience_nugget",
 		"minecraft:sculk_catalyst"
-	]).keepHeldItem(true)
+	]).keepHeldItem()
 
 	create.mixing("2x ae2:quantum_entangled_singularity", [
 		"ae2:singularity",

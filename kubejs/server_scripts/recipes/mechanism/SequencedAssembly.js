@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
 	let iscm = "ue_addons:incomplete_sculk_mechanism"
 	let iprm = "create:incomplete_precision_mechanism"
 
-	// wooden
+	// 木质
 	create.sequenced_assembly("ue_addons:wooden_mechanism", "#forge:stripped_logs", [
 		create.pressing(iwm, iwm),
 		create.deploying(iwm, [iwm, "minecraft:stick"]),
@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iwm, [iwm, "ue_addons:basic_mechanism_part"])
 	]).transitionalItem(iwm).loops(1)
 
-	// stone
+	// 石质
 	create.sequenced_assembly("ue_addons:stone_mechanism", "minecraft:cobblestone", [
 		create.pressing(ism, ism),
 		create.deploying(ism, [ism, "minecraft:flint"]),
@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ism, [ism, "ue_addons:basic_mechanism_part"])
 	]).transitionalItem(ism).loops(1)
 
-	// iron
+	// 铁质
 	create.sequenced_assembly("ue_addons:iron_mechanism", "#forge:plates/iron", [
 		create.cutting(iim, iim),
 		create.pressing(iim, iim),
@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iim, [iim, "ue_addons:basic_mechanism_part"])
 	]).transitionalItem(iim).loops(1)
 
-	// copper
+	// 铜质
 	create.sequenced_assembly("ue_addons:copper_mechanism", "#forge:plates/copper", [
 		create.cutting(icm, icm),
 		create.pressing(icm, icm),
@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(icm, [icm, "ue_addons:mechanical_mechanism_part"])
 	]).transitionalItem(icm).loops(1)
 
-	// andesite
+	// 安山
 	create.sequenced_assembly("ue_addons:andesite_mechanism", "#forge:plates/andesite", [
 		create.cutting(iam, iam),
 		create.pressing(iam, iam),
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iam, [iam, "ue_addons:mechanical_mechanism_part"])
 	]).transitionalItem(iam).loops(1)
 
-	// gold
+	// 金质
 	create.sequenced_assembly("ue_addons:gold_mechanism", "#forge:plates/gold", [
 		create.cutting(igm, igm),
 		create.pressing(igm, igm),
@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iam, [igm, "ue_addons:basic_mechanism_part"])
 	]).transitionalItem(igm).loops(1)
 
-	//precision
+	// 精密
 	create.sequenced_assembly("create:precision_mechanism", "#forge:plates/brass", [
 		create.cutting(iprm, iprm),
 		create.pressing(iprm, iprm),
@@ -89,7 +89,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iprm, [iprm, 'ue_addons:mechanical_mechanism_part'])
 	]).transitionalItem(iprm).loops(1).id('create:sequenced_assembly/precision_mechanism')
 
-	// photosensitive
+	// 感光
 	create.sequenced_assembly("ue_addons:photosensitive_mechanism", "minecraft:quartz_slab", [
 		create.pressing(ipm, ipm),
 		create.deploying(ipm, [ipm, "minecraft:amethyst_shard"]),
@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ipm, [ipm, "ue_addons:mechanical_mechanism_part"])
 	]).transitionalItem(ipm).loops(1)
 
-	// thermal
+	// 热力
 	create.sequenced_assembly("ue_addons:thermal_mechanism", "#forge:plates/invar", [
 		create.cutting(itm, itm),
 		create.pressing(itm, itm),
@@ -106,7 +106,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(itm, [itm, "ue_addons:flux_mechanism_part"])
 	]).transitionalItem(itm).loops(1)
 
-	// feinforced
+	// 强化
 	create.sequenced_assembly("ue_addons:feinforced_mechanism", "#forge:plates/electrum", [
 		create.cutting(ifm, ifm),
 		create.pressing(ifm, ifm),
@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ifm, [ifm, "ue_addons:flux_mechanism_part"])
 	]).transitionalItem(ifm).loops(1)
 
-	// resonant
+	// 谐振
 	create.sequenced_assembly("ue_addons:resonant_mechanism", "#forge:plates/enderium", [
 		create.cutting(irm, irm),
 		create.pressing(irm, irm),
@@ -124,7 +124,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(irm, [irm, "ue_addons:flux_mechanism_part"])
 	]).transitionalItem(irm).loops(1)
 
-	// nature
+	// 自然
 	create.sequenced_assembly("ue_addons:nature_mechanism", "minecraft:grass_block", [
 		create.pressing(inm, inm),
 		create.deploying(inm, [inm, "#minecraft:flowers"]),
@@ -132,14 +132,14 @@ ServerEvents.recipes((event) => {
 		create.deploying(inm, [inm, "ue_addons:magical_mechanism_part"])
 	]).transitionalItem(inm).loops(1)
 
-	// railway
+	// 铁路
 	create.sequenced_assembly("ue_addons:railway_mechanism", "create:precision_mechanism", [
 		create.deploying(itrm, [itrm, "#forge:plates/obsidian"]),
 		create.cutting(itrm, itrm),
 		create.pressing(itrm, itrm),
 	]).transitionalItem(itrm).loops(1)
 
-	// ender
+	// 末影
 	create.sequenced_assembly("ue_addons:ender_mechanism", "#forge:dusts/obsidian", [
 		create.pressing(iem, iem),
 		create.deploying(iem, [iem, "minecraft:ender_pearl"]),
@@ -147,7 +147,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iem, [iem, "ue_addons:magical_mechanism_part"]),
 	]).transitionalItem(iem).loops(1)
 
-	// light_engineering
+	// 轻型工程
 	create.sequenced_assembly("ue_addons:light_engineering_mechanism", "#forge:sheetmetals/iron", [
 		create.pressing(ilem, ilem),
 		create.deploying(ilem, [ilem, "immersiveengineering:component_iron"]),
@@ -155,7 +155,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ilem, [ilem, "ue_addons:engineering_mechanism_part"]),
 	]).transitionalItem(ilem).loops(1)
 
-	// heavy_engineering
+	// 重型工程
 	create.sequenced_assembly("ue_addons:heavy_engineering_mechanism", "#forge:sheetmetals/steel", [
 		create.pressing(ihem, ihem),
 		create.deploying(ihem, [ihem, "immersiveengineering:component_steel"]),
@@ -163,7 +163,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ihem, [ihem, "ue_addons:engineering_mechanism_part"]),
 	]).transitionalItem(ihem).loops(1)
 
-	// coil
+	// 线圈
 	create.sequenced_assembly("ue_addons:coil_mechanism", "ue_addons:light_engineering_mechanism", [
 		create.pressing(icom, icom),
 		create.deploying(icom, [icom, "#forge:wires/copper"]),
@@ -172,7 +172,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(icom, [icom, "#forge:wires/steel"]),
 	]).transitionalItem(icom).loops(1)
 
-	// enchanted
+	// 附魔
 	create.sequenced_assembly("ue_addons:enchanted_mechanism", "#forge:storage_blocks/lapis", [
 		create.pressing(ienm, ienm),
 		create.filling(ienm, [ienm, Fluid.of("create_enchantment_industry:experience", 500)]),
@@ -181,7 +181,7 @@ ServerEvents.recipes((event) => {
 
 	// TODO
 	// RS的富集石英铁游戏内不存在
-	// smart
+	// 智能
 	create.sequenced_assembly("ue_addons:smart_mechanism", "#forge:ingots/iron", [
 		create.pressing(ismm, ismm),
 		create.deploying(ismm, [ismm, "ae2:logic_processor"]),
@@ -190,7 +190,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ismm, [ismm, "ue_addons:engineering_mechanism_part"]),
 	]).transitionalItem(ismm).loops(1)
 
-	// basic_mek
+	// 基础通用
 	create.sequenced_assembly("ue_addons:basic_mekanism_mechanism", "#forge:plates/steel", [
 		create.cutting(ibmm, ibmm),
 		create.pressing(ibmm, ibmm),
@@ -200,7 +200,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ibmm, [ibmm, "ue_addons:mekanism_mechanism_part"]),
 	]).transitionalItem(ibmm).loops(1)
 
-	// advanced_mek
+	// 高级通用
 	create.sequenced_assembly("ue_addons:advanced_mekanism_mechanism", "ue_addons:basic_mekanism_mechanism", [
 		create.pressing(iamm, iamm),
 		create.deploying(iamm, [iamm, "mekanism:advanced_control_circuit"]),
@@ -208,7 +208,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iamm, [iamm, "#forge:ingots/osmium"]),
 	]).transitionalItem(iamm).loops(1)
 
-	// elite_mek
+	// 精英通用
 	create.sequenced_assembly("ue_addons:elite_mekanism_mechanism", "ue_addons:advanced_mekanism_mechanism", [
 		create.pressing(iemm, iemm),
 		create.deploying(iemm, [iemm, "mekanism:elite_control_circuit"]),
@@ -216,7 +216,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iemm, [iemm, "#forge:ingots/gold"]),
 	]).transitionalItem(iemm).loops(1)
 
-	// ultimate_mek
+	// 终极通用
 	create.sequenced_assembly("ue_addons:ultimate_mekanism_mechanism", "ue_addons:elite_mekanism_mechanism", [
 		create.pressing(iumm, iumm),
 		create.deploying(iumm, [iumm, "mekanism:ultimate_control_circuit"]),
@@ -224,7 +224,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iumm, [iumm, "#forge:gems/diamond"]),
 	]).transitionalItem(iumm).loops(1)
 
-	// structure
+	// 结构
 	create.sequenced_assembly("ue_addons:structure_mechanism", "#forge:plates/steel", [
 		create.cutting(istm, istm),
 		create.pressing(istm, istm),
@@ -236,7 +236,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(istm, [istm, "ue_addons:mekanism_mechanism_part"]),
 	]).transitionalItem(istm).loops(1)
 
-	// nuclear
+	// 核
 	create.sequenced_assembly("ue_addons:nuclear_mechanism", "#forge:plates/lead", [
 		create.cutting(ium, ium),
 		create.pressing(ium, ium),
@@ -245,14 +245,14 @@ ServerEvents.recipes((event) => {
 		create.deploying(ium, [ium, 'ue_addons:quantum_mechanism_part']),
 	]).transitionalItem(ium).loops(1)
 
-	// antimatter
+	// 反物质
 	create.sequenced_assembly("ue_addons:antimatter_mechanism", "ae2:singularity", [
 		create.pressing(iatm, iatm),
 		create.deploying(iatm, [iatm, 'mekanism:pellet_antimatter']),
 		create.deploying(iatm, [iatm, 'ue_addons:quantum_mechanism_part']),
 	]).transitionalItem(iatm).loops(1)
 
-	// colorful
+	// 多彩
 	create.sequenced_assembly("ue_addons:colorful_mechanism", "mekanism:dye_base", [
 		create.deploying(iclm, [iclm, "ae2:black_lumen_paint_ball"]),
 		create.deploying(iclm, [iclm, "ae2:red_lumen_paint_ball"]),
@@ -262,7 +262,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iclm, [iclm, "ue_addons:magical_mechanism_part"])
 	]).transitionalItem(iclm).loops(1)
 
-	// sculk
+	// 幽匿
 	create.sequenced_assembly("ue_addons:sculk_mechanism", "minecraft:netherite_ingot", [
 		create.deploying(iscm, [iscm, "minecraft:sculk_sensor"]),
 		create.deploying(iscm, [iscm, "minecraft:sculk_shrieker"]),

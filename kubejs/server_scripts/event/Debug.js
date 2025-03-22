@@ -6,6 +6,7 @@ ItemEvents.rightClicked('ue_addons:geological_hammer', (event) => {
 		for (let i = 0; i < global.debugUserName.length; i++) {
 			// 副手持地质锤右键获取物品ID
 			if (player.mainHandItem !== "minecraft:air" &&
+				player.crouching &&
 				player.username === global.debugUserName[i]) {
 				player.runCommandSilent("kjs hand")
 			}

@@ -30,4 +30,7 @@ ServerEvents.tags("item", (event) => {
 	event.get("curios:mechanisms")
 		.add("ue_addons:cobalt_mechanism")
 		.add("ue_addons:photosensitive_mechanism")
+
+	event.get("forge:sand")
+		.add("#forge:sand")
 })

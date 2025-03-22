@@ -26,6 +26,7 @@
 /saves/新的世界
 /temp
 /icon.png
+/screenshots
 
 # config
 config/ae2/
@@ -70,7 +71,6 @@ config/ftbbackups2.json
 config/ftbxmodcompat.snbt
 config/functionalstorage/
 config/imblocker-client.toml
-config/immersiveengineering-client.toml
 config/immersiveengineering-common.toml
 config/inventoryprofilesnext
 config/invtweaks-client.toml

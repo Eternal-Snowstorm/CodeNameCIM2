@@ -62,7 +62,6 @@ StartupEvents.registry("item", (event) => {
 			food.hunger(8)
 				.saturation(1)
 				.alwaysEdible()
-				.fastToEat()
 				.eaten((event) => {
 					let { player, item } = event
 
