@@ -30,9 +30,8 @@ ItemEvents.entityInteracted(SCULK_MECHANISM_ID, e => {
 function fireSonicBoom(level, player) {
     // 判定物品是否在冷却
     if (player.cooldowns.isOnCooldown(SCULK_MECHANISM_ID)) return;
-    // 设置音爆传播方向（玩家面向坐标）与传播起点（可优化）
-    let rotation = player.getRotationVector();
-    let sight = Vec3d(Math.sin(-rotation.y / 180 * PI) * Math.cos(-rotation.x / 180 * PI), -Math.sin(rotation.x / 180 * PI), Math.cos(rotation.y / 180 * PI) * Math.cos(-rotation.x / 180 * PI)).normalize()
+    // 设置音爆传播方向（玩家面向坐标）与传播起点
+    let sight = player.getViewVector(1.0).normalize()
     let startingPosition = player.getEyePosition();
     // 播放音爆声音
     level.playSound(
