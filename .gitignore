@@ -23,7 +23,7 @@
 /shaderpacks/
 /usercache.json
 /usernamecache.json
-/saves/新的世界
+/saves/新的世界/
 /temp
 /icon.png
 /screenshots
@@ -32,7 +32,7 @@
 /CIM2 Dev.jar
 /CIM2 Dev.json
 /CIM2 Dev-natives/
-/saves/
+/saves/Debug/
 # config
 config/ae2/
 config/appleskin-client.toml
@@ -112,6 +112,7 @@ config/titanium/
 config/vintageimprovements-client.toml
 config/vintageimprovements-common.toml
 config/smoothboot.json
+config/fmi.toml
 
 #resourcepacks
 /resourcepacks/*
