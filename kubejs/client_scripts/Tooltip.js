@@ -1,45 +1,39 @@
 ItemEvents.tooltip((event) => {
-	addCommonTooltip('ue_addons:stone_mechanism')
-	addCommonTooltip('ue_addons:copper_mechanism')
-	addCommonTooltip('ue_addons:nature_mechanism')
-	addCommonTooltip('ue_addons:ender_mechanism')
-	addCommonTooltip('ue_addons:pigiron_mechanism')
-	addCommonTooltip('ue_addons:enchanted_mechanism')
-	addCommonTooltip('ue_addons:nuclear_mechanism')
+	addCommonTooltip("ue_addons:stone_mechanism")
+	addCommonTooltip("ue_addons:copper_mechanism")
+	addCommonTooltip("ue_addons:nature_mechanism")
+	addCommonTooltip("ue_addons:ender_mechanism")
+	addCommonTooltip("ue_addons:pigiron_mechanism")
+	addCommonTooltip("ue_addons:enchanted_mechanism")
+	addCommonTooltip("ue_addons:nuclear_mechanism")
 
-	addAccelerateTooltip('ue_addons:stone_mechanism')
-	addAccelerateTooltip('ue_addons:andesite_mechanism')
-	addAccelerateTooltip('ue_addons:copper_mechanism')
-	addAccelerateTooltip('ue_addons:iron_mechanism')
-	addAccelerateTooltip('ue_addons:gold_mechanism')
-	addAccelerateTooltip('ue_addons:ender_mechanism')
+	addAccelerateTooltip("ue_addons:stone_mechanism")
+	addAccelerateTooltip("ue_addons:andesite_mechanism")
+	addAccelerateTooltip("ue_addons:copper_mechanism")
+	addAccelerateTooltip("ue_addons:iron_mechanism")
+	addAccelerateTooltip("ue_addons:gold_mechanism")
+	addAccelerateTooltip("ue_addons:ender_mechanism")
 
 	function addCommonTooltip(item) {
-		event.addAdvanced(key, (item, advanced, text) => {
-			text.add(item, Component.translate(`tooltip.${item}`.replace(`:`, `.`)))
-		})
+		event.add(item, Component.translate(`tooltip.${item}`.replace(`:`, `.`)))
 	}
 
 	function addAccelerateTooltip(key) {
-		event.addAdvanced(key, (item, advanced, text) => {
+		event.addAdvanced(key, (text) => {
 			if (event.shift) {
 				text.add(Component.translate(`tooltip.${key}.accelerate`.replace(`:`, `.`)))
-			}
-			else {
+			} else {
 				text.add(Component.translate(`tooltip.${global.namespace}.acceleratable`))
-
 			}
 		})
 	}
 
 	// 地质锤的tooltip
-
-	event.addAdvanced('ue_addons:geological_hammer', (item, advanced, text) => {
+	event.addAdvanced("ue_addons:geological_hammer", (text) => {
 		if (global.isDeveloper) {
 			text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer1`))
 			text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer2`))
-		}
-		else {
+		} else {
 			text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.not_developer`))
 		}
 	})
