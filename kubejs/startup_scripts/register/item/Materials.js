@@ -1,5 +1,5 @@
 StartupEvents.registry("item", (event) => {
-	function addColorIngotMaterialsItem(name, color) {
+	function addColorIngotMaterials(name, color) {
 		event.create(`${global.namespace}:${name}_ingot`)
 			.color(color)
 			.texture(`${global.namespace}:item/material/color/ingot`)
@@ -7,7 +7,7 @@ StartupEvents.registry("item", (event) => {
 			.tag("forge:ingots")
 	}
 
-	function addColorPlateMaterialsItem(name, color) {
+	function addColorPlateMaterials(name, color) {
 		event.create(`${global.namespace}:${name}_plate`)
 			.color(color)
 			.texture(`${global.namespace}:item/material/color/plate`)
@@ -15,7 +15,7 @@ StartupEvents.registry("item", (event) => {
 			.tag("forge:plates")
 	}
 
-	function addColorCrystalMaterialsItem(name, color) {
+	function addColorCrystalMaterials(name, color) {
 		event.create(`${global.namespace}:${name}_crystal`)
 			.color(color)
 			.texture(`${global.namespace}:item/material/color/crystal`)
@@ -23,21 +23,21 @@ StartupEvents.registry("item", (event) => {
 			.tag("forge:gems")
 	}
 
-	function addAloneIngotMaterialsItem(name) {
+	function addAloneIngotMaterials(name) {
 		event.create(`${global.namespace}:${name}_ingot`)
 			.texture(`${global.namespace}:item/material/alone/${name}/ingot`)
 			.tag(`forge:ingots/${name}`)
 			.tag("forge:ingots")
 	}
 
-	function addAlonePlateMaterialsItem(name) {
+	function addAlonePlateMaterials(name) {
 		event.create(`${global.namespace}:${name}_plate`)
 			.texture(`${global.namespace}:item/material/alone/${name}/plate`)
 			.tag(`forge:plates/${name}`)
 			.tag("forge:plates")
 	}
 
-	function addAloneCrystalMaterialsItem(name) {
+	function addAloneCrystalMaterials(name) {
 		event.create(`${global.namespace}:${name}_crystal`)
 			.texture(`${global.namespace}:item/material/alone/${name}/crystal`)
 			.tag(`forge:gems/${name}`)
