@@ -1,5 +1,6 @@
 Ponder.registry((event) => {
 	event.create("ue_addons:the_accelerator_of_mechanism_power")
+		.tag("ue_addons:ponder")
 		.scene("ue_addons:the_accelerator_of_mechanism_power", "How to use the accelerator", "ue_addons:mechanism/stone", (scene) => {
 			scene.showBasePlate()
 			scene.idle(10)

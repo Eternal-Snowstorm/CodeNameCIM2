@@ -1,5 +1,4 @@
 ClientEvents.lang("en_us", (event) => {
-
 	addCastItemLanguaue("mechanism", "mechanism")
 
 	addItemLanguaue("geological_hammer", "Geological hammer")
@@ -163,5 +162,4 @@ ClientEvents.lang("en_us", (event) => {
 	function addAloneLanguaue(key, value) {
 		event.add(key, value)
 	}
-});
-
+})
