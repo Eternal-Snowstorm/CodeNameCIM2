@@ -27,7 +27,8 @@
 /temp
 /icon.png
 /screenshots
-
+CodeNameCIM2.jar
+CodeNameCIM2.json
 # config
 config/ae2/
 config/appleskin-client.toml
