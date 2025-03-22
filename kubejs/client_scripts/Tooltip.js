@@ -5,6 +5,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip('ue_addons:ender_mechanism')
 	addCommonTooltip('ue_addons:pigiron_mechanism')
 	addCommonTooltip('ue_addons:enchanted_mechanism')
+	addCommonTooltip('ue_addons:nuclear_mechanism')
 
 	addAccelerateTooltip('ue_addons:stone_mechanism')
 	addAccelerateTooltip('ue_addons:andesite_mechanism')
@@ -14,7 +15,9 @@ ItemEvents.tooltip((event) => {
 	addAccelerateTooltip('ue_addons:ender_mechanism')
 
 	function addCommonTooltip(item) {
-		event.add(item, Component.translate(`tooltip.${item}`.replace(`:`, `.`)))
+		event.addAdvanced(key, (item, advanced, text) => {
+			text.add(item, Component.translate(`tooltip.${item}`.replace(`:`, `.`)))
+		})
 	}
 
 	function addAccelerateTooltip(key) {

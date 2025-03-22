@@ -34,6 +34,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:ender_mechanism", "§d手持右键随机传送，手持潜行右键记录当前坐标")
 	addCommonTooltipLanguage("ue_addons:enchanted_mechanism", "§9手持右键方块可生成经验")
 	addCommonTooltipLanguage("ue_addons:nature_mechanism", "§a手持右键方块可以替代骨粉的功能")
+	addCommonTooltipLanguage("ue_addons:nuclear_mechanism", "§3右键QIO驱动器盒以将其升级（无需消耗！）")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer1", "手持右键方块获取方块硬度")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
@@ -54,6 +55,12 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMusicDiscLanguaue("cylinder", "缸", "草东没有派对")
 	addMusicDiscLanguaue("but", "但", "草东没有派对")
 	addMusicDiscLanguaue("dirt", "烂泥", "草东没有派对")
+
+	addBlockLanguaue("qio_empty", "空的QIO驱动器盒")
+	addBlockLanguaue("qio_one", "QIO驱动器盒")
+	addBlockLanguaue("qio_two", "超密集QIO驱动器盒")
+	addBlockLanguaue("qio_three", "时间膨胀QIO驱动器盒")
+	addBlockLanguaue("qio_four", "超质量QIO驱动器盒")
 
 	let materialGroup = [
 		["nature", "自然"],
@@ -90,7 +97,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	materialGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
 	})
-	
+
 	let completeMaterialGroup = [
 		["basic_random", "基础随机"],
 		["mechanical_random", "机械随机"],
@@ -101,7 +108,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["mekanism_random", "通用随机"],
 		["final_random", "最终随机"]
 	]
-	completeMaterialGroup.forEach(([material, name]) =>{
+	completeMaterialGroup.forEach(([material, name]) => {
 		addCompleteMechanismLanguaue(material, name)
 	})
 	function addItemLanguaue(key, value) {
@@ -161,4 +168,5 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addAloneLanguaue(key, value) {
 		event.add(key, value)
 	}
-})
+});
+
