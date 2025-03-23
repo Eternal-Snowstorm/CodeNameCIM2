@@ -18,7 +18,7 @@ jobs:
           mv config temp/overrides/
           mv fancymenu_data temp/overrides/
           mv kubejs temp/overrides/
-          mv music temp/overrides/
+          mv musics temp/overrides/
           mv resourcepacks temp/overrides/
           mv saves temp/overrides/
           mv scripts temp/overrides/
