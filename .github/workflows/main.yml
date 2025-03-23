@@ -15,13 +15,7 @@ jobs:
       - name: 基本文件操作
         run: |
           mkdir -p temp/overrides
-          mv config temp/overrides/
-          mv fancymenu_data temp/overrides/
-          mv kubejs temp/overrides/
-          mv musics temp/overrides/
-          mv resourcepacks temp/overrides/
-          mv saves temp/overrides/
-          mv scripts temp/overrides/
+          mv {config,fancymenu_data,kubejs,musics,resourcepacks,saves,scripts} temp/overrides/
           mv modrinth.index.json temp/
 
       - name: 压缩文件
