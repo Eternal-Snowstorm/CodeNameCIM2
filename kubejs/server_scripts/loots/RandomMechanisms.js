@@ -106,7 +106,7 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(4, 8)
 		})
 	})
-	event.addGeneric("ue_addons:gameplay/random_mechanisms/quantum", (loot) => {
+	event.addGeneric("ue_addons:gameplay/random_mechanisms/mekanism", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x mekanism:alloy_infused").randomChance(0.25)
 			pool.addItem("4x mekanism:alloy_reinforced").randomChance(0.125)
