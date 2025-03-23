@@ -1,0 +1,34 @@
+name: Build
+
+on: [ push, pull_request ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: 基本文件操作
+      - run: |
+              mkdir temp
+              mkdir overrides
+              mv config temp/ovderides
+              mv fancymenu_data temp/overrides
+              mv kubejs temp/overrides
+              mv music temp/overrides
+              mv resourcepacks temp/overrides
+              mv saves temp/overrides
+              mv scripts temp/overrides
+              mv modrinth.index.json temp
+              
+
+
+      - name: 压缩文件
+        run: zip -r ./modpack.zip ./temp
+
+      - name: Upload  file
+        uses: actions/upload-artifact@v4
+        with:
+          name: Artifacts
+          path: ./modpack.zip
