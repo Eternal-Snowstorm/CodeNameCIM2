@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:casting_table",
+    "cast": {
+      "tag": "tconstruct:casts/multi_use/ingot"
+    },
+    "cooling_time": 60,
+    "fluid": {
+      "amount": 90,
+      "fluid": "ue_addons:brass"
+    },
+    "result": "create:brass_ingot"
+  }

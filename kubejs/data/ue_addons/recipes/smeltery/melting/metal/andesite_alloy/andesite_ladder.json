@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "create:andesite_ladder"
+    },
+    "result": {
+      "amount": 45,
+      "fluid": "ue_addons:molten_andesite_alloy"
+    },
+    "temperature": 800,
+    "time": 15
+  }

@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cooling_time": 180,
+  "fluid": {
+    "amount": 810,
+    "fluid": "tconstruct:molten_brass"
+  },
+  "result": "create:brass_block"
+}

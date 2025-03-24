@@ -13,6 +13,31 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMechanismPartLanguaue("mekanism", "通用")
 	addMechanismPartLanguaue("final", "终章")
 
+	addTConLanguage(
+		"amethyst",
+		"紫水晶",
+		"优秀的魔导体与媒质",
+		"紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源",
+		"紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源",
+		"紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源"
+	)
+	addTConLanguage(
+		"andesite_alloy",
+		"安山合金",
+		"岩石和金属居然能变成合金？",
+		"岩石的能力，铁器的数值",
+		"岩石的能力，铁器的数值",
+		"岩石的能力，铁器的数值"
+	)
+	addTConLanguage(
+		"brass",
+		"黄铜",
+		"魔法与电流都能在其中受控流动",
+		"黄铜给工具注入了智慧，使得工具可以自动进行微小的调整",
+		"黄铜给工具注入了智慧，使得工具可以自动进行微小的调整",
+		"黄铜给工具注入了智慧，使得工具可以自动进行微小的调整"
+	)
+
 	addFluidLanguaue("molten_andesite_alloy", "熔融安山合金")
 
 	addBlockLanguaue("the_accelerator_of_mechanism_power", "构件之力催生器")
@@ -173,6 +198,14 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addAloneLanguaue(key, value) {
 		event.add(key, value)
+	}
+
+	function addTConLanguage(key, name, flavour, encyclopedia, ranged, armor) {
+		event.add(`material.${global.namespace}.${key}`, name)
+		event.add(`material.${global.namespace}.${key}.flavor`, flavour)
+		event.add(`material.${global.namespace}.${key}.encyclopedia`, encyclopedia)
+		event.add(`material.${global.namespace}.${key}.ranged`, ranged)
+		event.add(`material.${global.namespace}.${key}.armor`, armor)
 	}
 });
 

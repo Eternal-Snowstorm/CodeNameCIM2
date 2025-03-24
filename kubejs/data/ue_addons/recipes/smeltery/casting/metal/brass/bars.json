@@ -1,0 +1,9 @@
+{
+    "type": "tconstruct:casting_table",
+    "cooling_time": 35,
+    "fluid": {
+      "amount": 30,
+      "fluid": "tconstruct:molten_brass"
+    },
+    "result": "create:brass_bars"
+  }

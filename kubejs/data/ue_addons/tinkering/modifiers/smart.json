@@ -1,0 +1,13 @@
+{
+    "level_display": "tconstruct:default",
+    "modules": [
+        {
+            "type": "tconstruct:conditional_stat",
+            "entity": "tconstruct:airborne",
+            "flat": 1.0,
+            "percent": false,
+            "stat": "tconstruct:accuracy"
+        }
+    ],
+    "tooltip_display": "always"
+}
