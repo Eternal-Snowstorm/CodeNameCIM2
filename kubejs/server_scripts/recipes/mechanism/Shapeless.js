@@ -41,8 +41,7 @@ ServerEvents.recipes((event) => {
 
 	//andesite
 	kubejs.shapeless("ue_addons:andesite_mechanism", [
-		"create:andesite_alloy",
-		"create:andesite_alloy",
+		"2x #forge:ingots/andesite_alloy",
 		"immersiveengineering:hammer",
 		"create:cogwheel",
 		"create:cogwheel",
@@ -63,7 +62,7 @@ ServerEvents.recipes((event) => {
 	])
 	kubejs.shapeless("4x ue_addons:mechanical_mechanism_part", [
 		"create:cogwheel",
-		"create:andesite_alloy"
+		"#forge:ingots/andesite_alloy"
 	])
 	kubejs.shapeless("4x ue_addons:engineering_mechanism_part", [
 		"#forge:plates/copper",

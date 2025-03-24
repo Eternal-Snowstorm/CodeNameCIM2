@@ -1,6 +1,6 @@
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
-	let modPackVersion = "§0CMI Dev Alpha-1.7.3"
+	let modPackVersion = "§0CMI Dev Alpha-1.7.6"
 
 	// 初始化isDeveloper的boolean
 	global.isDeveloper = false

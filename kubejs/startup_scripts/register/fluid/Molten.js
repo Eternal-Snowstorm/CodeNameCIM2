@@ -2,7 +2,7 @@ StartupEvents.registry("fluid", (event) => {
 	let path = "block/fluid/"
 	let fluidRegisters = `${global.namespace}:${path}`
 
-	addColorMaterialFluid("andesite_alloy", 0xA7AD9F)
+	addColorMaterialFluid("andesite_alloy", 0xC7C8B8)
 
 	function addColorMaterialFluid(name, color) {
 		event.create(`${global.namespace}:molten_${name}`)

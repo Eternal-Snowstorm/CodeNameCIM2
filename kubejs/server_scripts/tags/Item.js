@@ -33,4 +33,7 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:sand")
 		.add("#forge:sand")
+
+	event.get("forge:stone")
+		.add("#forge:cobblestone")
 })

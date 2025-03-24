@@ -32,6 +32,7 @@
 /CIM2 Dev.json
 /CIM2 Dev-natives/
 /saves/Debug/
+/.idea
 # config
 config/ae2/
 config/appleskin-client.toml
@@ -58,6 +59,7 @@ config/ctm.toml
 config/cupboard.json
 config/curios-client.toml
 config/curios-common.toml
+config/sci4me
 de/
 config/dynamic_fps.json
 config/embeddium-fingerprint.json

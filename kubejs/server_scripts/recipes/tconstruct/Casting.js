@@ -28,25 +28,25 @@ ServerEvents.recipes((event) => {
 	).switch_slots(true).cooling_time(57).cast_consumed(true)
 
 	tconstruct.casting_basin(
-		"create:andesite_alloy",
+		"ue_addons:andesite_alloy_ingot",
 		Fluid.of("tconstruct:molten_iron", 30),
 		"minecraft:andesite"
 	).cooling_time(20).cast_consumed(true).id("tconstruct:compat/create/andesite_alloy_iron")
 
 	tconstruct.casting_basin(
-		"create:andesite_alloy",
+		"ue_addons:andesite_alloy_ingot",
 		Fluid.of("tconstruct:molten_zinc", 30),
 		"minecraft:andesite"
 	).cooling_time(0).cast_consumed(true).id("tconstruct:compat/create/andesite_alloy_zinc")
 
 	tconstruct.casting_table(
-		"create:andesite_alloy",
+		"ue_addons:andesite_alloy_ingot",
 		Fluid.of("ue_addons:molten_andesite_alloy", 90),
 		"#tconstruct:casts/multi_use/ingot"
 	).cooling_time(30).cast_consumed(false)
 
 	tconstruct.casting_table(
-		"create:andesite_alloy",
+		"ue_addons:andesite_alloy_ingot",
 		Fluid.of("ue_addons:molten_andesite_alloy", 90),
 		"#tconstruct:casts/single_use/ingot"
 	).cooling_time(30).cast_consumed(true)

@@ -1,9 +1,9 @@
 ClientEvents.lang("zh_cn", (event) => {
 	addCastItemLanguaue("mechanism", "构件")
 
-	addItemLanguaue("geological_hammer", "地质锤")
+	addItemLanguaue("geological_hammer", "地质锤(调试工具)")
 	addItemLanguaue("empty_exe", "空程序.exe")
-	addItemLanguaue("unknown_ingot","可编程的可扩展的格式化的损坏的可加工的集成的复杂的感光的多功能的 锭")
+	addItemLanguaue("unknown_ingot", "可编程的可扩展的格式化的损坏的可加工的集成的复杂的感光的多功能的锭")
 
 	addMechanismPartLanguaue("basic", "基础")
 	addMechanismPartLanguaue("mechanical", "机械")
@@ -13,6 +13,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMechanismPartLanguaue("engineering", "工程")
 	addMechanismPartLanguaue("mekanism", "通用")
 	addMechanismPartLanguaue("final", "终章")
+	
+	addMaterialLanguaue("andesite_alloy", "安山合金")
+	addMaterialLanguaue("cobalt", "钴")
 
 	addTConLanguage(
 		"amethyst",
@@ -62,7 +65,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:enchanted_mechanism", "§9手持右键方块可生成经验")
 	addCommonTooltipLanguage("ue_addons:nature_mechanism", "§a手持右键方块可以替代骨粉的功能")
 	addCommonTooltipLanguage("ue_addons:nuclear_mechanism", "§3右键QIO驱动器盒以将其升级（无需消耗！）")
-	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer1", "手持右键方块获取方块硬度")
+	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer1", "手持右键潜行方块获取方块硬度")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 
@@ -163,7 +166,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addForceLanguage(material, value) {
-		event.add(`item.${global.namespace}.${material}_force_exe`,`${value}驱动.exe`)
+		event.add(`item.${global.namespace}.${material}_force_exe`, `${value}驱动.exe`)
 	}
 
 	function addBlockLanguaue(key, value) {
@@ -174,6 +177,18 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`fluid.${global.namespace}.${key}`, value)
 		event.add(`block.${global.namespace}.${key}`, value)
 		event.add(`item.${global.namespace}.${key}_bucket`, `${value}桶`)
+	}
+
+	function addMaterialLanguaue(key, value) {
+		event.add(`item.${global.namespace}.${key}_ingot`, `${value}锭`)
+		event.add(`item.${global.namespace}.${key}_nugget`, `${value}粒`)
+		event.add(`item.${global.namespace}.${key}_plate`, `${value}板`)
+
+		event.add(`block.${global.namespace}.${key}_block`, `${value}块`)
+
+		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
+		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
+		event.add(`block.${global.namespace}.molten_${key}_bucket`, `熔融${value}桶`)
 	}
 
 	function addCommonTooltipLanguage(key, value) {

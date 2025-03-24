@@ -34,6 +34,7 @@
 		"forge:storage_blocks/raw_{material}"
 	],
 	"materials": [
+		"andesite_alloy",
 		"aeternium",
 		"aluminum",
 		"amber",

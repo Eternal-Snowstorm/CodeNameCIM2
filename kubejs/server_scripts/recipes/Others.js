@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create, kubejs } = event.recipes
 
 	create.deploying("minecraft:sculk_sensor", [
 		"minecraft:sculk",
@@ -30,4 +30,26 @@ ServerEvents.recipes((event) => {
 		"ae2:singularity",
 		"#forge:dusts/ender_pearl"
 	])
+
+	kubejs.shaped("createaddition:straw", [
+		" AA",
+		"A A",
+		" A"
+	], {
+		A: "#forge:rods/wooden"
+	})
+
+	create.mechanical_crafting("81x minecraft:rotten_flesh", [
+		"AAAAAAAAA",
+		"AAAAAAAAA",
+		"AAAAAAAAA",
+		"AAAAAAAAA",
+		"AAAAAAAAA",
+		"AAAAAAAAA",
+		"AAAAAAAAA",
+		"AAAAAAAAA",
+		"AAAAAAAAA"
+	], {
+		A: "minecraft:rotten_flesh"
+	}).id(`${global.namespace}:what_is_this`)
 })

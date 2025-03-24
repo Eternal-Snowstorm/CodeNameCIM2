@@ -1,6 +1,4 @@
-// priorty: 0
-
-ItemEvents.rightClicked('ue_addons:geological_hammer', (event) => {
+ItemEvents.rightClicked("ue_addons:geological_hammer", (event) => {
 	let { player } = event
 	if (event.hand == "OFF_HAND") {
 		for (let i = 0; i < global.debugUserName.length; i++) {
@@ -21,7 +19,7 @@ PlayerEvents.chat((event) => {
 		// 输入-ki删除所有掉落物
 		if (message.trim().equalsIgnoreCase("-ki") && player.username === global.debugUserName[i]) {
 			server.runCommandSilent("kill @e[type=item]")
-			server.runCommandSilent("tellraw @a '掉落物已清除'")
+			server.runCommandSilent(`tellraw @a "掉落物已清除"`)
 			event.cancel()
 		}
 
@@ -68,10 +66,10 @@ PlayerEvents.loggedIn((event) => {
 	}
 })
 
-// 查看方块硬度(地质锤右键方块)
+// 查看方块硬度(地质锤潜行右键方块)
 BlockEvents.rightClicked((event) => {
 	let { player } = event
-	let getItem = 'ue_addons:geological_hammer'
+	let getItem = "ue_addons:geological_hammer"
 
 	let blockState = event.getBlock().getBlockState()
 	let pos = event.getBlock().getPos()
@@ -82,6 +80,7 @@ BlockEvents.rightClicked((event) => {
 			return
 		}
 		if (player.mainHandItem === getItem &&
+			player.crouching &&
 			player.username === global.debugUserName[i]) {
 			event.getPlayer().swing()
 			player.tell(Component.translate(`message.${global.namespace}.debug.getHardness`, [blockHardness]))

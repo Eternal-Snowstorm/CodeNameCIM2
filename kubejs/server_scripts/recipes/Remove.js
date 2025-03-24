@@ -1,7 +1,10 @@
 ServerEvents.recipes((event) => {
 	let removeRecipeIds = [
 		"create:mixing/andesite_alloy_from_zinc",
-		"create:mixing/andesite_alloy"
+		"create:mixing/andesite_alloy",
+		"create:item_application/andesite_casing_from_wood",
+		"create:item_application/copper_casing_from_wood",
+		"create:item_application/brass_casing_from_wood"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({ id: id })
@@ -12,10 +15,18 @@ ServerEvents.recipes((event) => {
 		"ae2:white_lumen_paint_ball",
 		"ae2:red_lumen_paint_ball",
 		"ae2:blue_lumen_paint_ball",
-		"ae2:green_lumen_paint_ball"
+		"ae2:green_lumen_paint_ball",
+		"create:andesite_alloy"
 	]
 	removeItemRecipes.forEach((item) => {
 		event.remove({ output: item })
+	})
+
+	let removeItemInputRecipes = [
+		"create:andesite_alloy"
+	]
+	removeItemInputRecipes.forEach((item) => {
+		event.remove({ input: item })
 	})
 
 	let removeRecipeType = [

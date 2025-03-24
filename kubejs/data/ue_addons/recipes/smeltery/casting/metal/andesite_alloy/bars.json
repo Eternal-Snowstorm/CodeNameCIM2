@@ -1,9 +1,9 @@
 {
-  "type": "tconstruct:casting_table",
-  "cooling_time": 35,
-  "fluid": {
-    "amount": 30,
-    "fluid": "ue_addons:molten_andesite_alloy"
-  },
-  "result": "create:andesite_bars"
+	"type": "tconstruct:casting_table",
+	"cooling_time": 35,
+	"fluid": {
+		"amount": 30,
+		"fluid": "ue_addons:molten_andesite_alloy"
+	},
+	"result": "create:andesite_bars"
 }

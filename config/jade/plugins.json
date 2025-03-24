@@ -5,8 +5,8 @@
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage": true,
     "item_storage.normal_amount": 9,
+    "item_storage": true,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -70,6 +70,14 @@
   "immersiveengineering": {
     "multiblock_icon": true
   },
+  "jade": {
+    "coordinates.rel": false,
+    "distance": false,
+    "block_face": false,
+    "coordinates": true,
+    "registry_name": "ADVANCED_TOOLTIPS",
+    "mod_name": true
+  },
   "create": {
     "filter": true,
     "backtank_capacity": true,
@@ -80,17 +88,6 @@
     "crafting_blueprint": true,
     "goggles.detailed": false,
     "placard": true
-  },
-  "jade": {
-    "coordinates.rel": false,
-    "distance": false,
-    "block_face": false,
-    "coordinates": true,
-    "registry_name": "ADVANCED_TOOLTIPS",
-    "mod_name": true
-  },
-  "corpse": {
-    "corpse": true
   },
   "cookingforblockheads": {
     "fridge": true,
@@ -114,11 +111,5 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
-  },
-  "storagedrawers": {
-    "display.stacklimit": true,
-    "main": true,
-    "display.content": true,
-    "display.status": true
   }
 }
