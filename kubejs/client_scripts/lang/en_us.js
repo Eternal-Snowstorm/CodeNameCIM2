@@ -2,6 +2,7 @@ ClientEvents.lang("en_us", (event) => {
 	addCastItemLanguaue("mechanism", "mechanism")
 
 	addItemLanguaue("geological_hammer", "Geological hammer")
+	addItemLanguaue("empty_exe", "Empty program.exe")
 	addItemLanguaue("unknown_ingot","Programmable extensible formatted damaged processable integrated complex photosensitive multifunctional ingot")
 
 	addMechanismPartLanguaue("basic", "Basic")

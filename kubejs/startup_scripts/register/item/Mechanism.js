@@ -32,6 +32,7 @@ StartupEvents.registry("item", (event) => {
 		"creative"
 	]
 	//仅注册完成状态的构件
+	global.mechanismList = mechanismRegister.concat("pigiron")
 	let completeMechanismRegister = [
 		"basic_random",
 		"mechanical_random",
