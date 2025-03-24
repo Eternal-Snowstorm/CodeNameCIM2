@@ -1,7 +1,0 @@
-type = last_world
-
-last_world {
-  is_server = false
-  world = E:/启动器/PCL2/.minecraft/versions/CIM2 Dev/saves/新的世界
-}
-
