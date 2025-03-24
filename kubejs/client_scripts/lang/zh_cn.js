@@ -2,6 +2,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCastItemLanguaue("mechanism", "构件")
 
 	addItemLanguaue("geological_hammer", "地质锤")
+	addItemLanguaue("unknown_ingot","可编程的可扩展的格式化的损坏的可加工的集成的复杂的感光的多功能的 锭")
 
 	addMechanismPartLanguaue("basic", "基础")
 	addMechanismPartLanguaue("mechanical", "机械")
@@ -96,6 +97,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	]
 	materialGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
+		addForceLanguage(material, name)
 	})
 
 	let completeMaterialGroup = [
@@ -132,6 +134,10 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addMechanismPartLanguaue(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism_part`, `${value}构件零件`)
+	}
+
+	function addForceLanguage(material, value) {
+		event.add(`item.${global.namespace}.${material}_force_exe`,`${value}驱动.exe`)
 	}
 
 	function addBlockLanguaue(key, value) {

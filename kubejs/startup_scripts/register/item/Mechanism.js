@@ -49,6 +49,14 @@ StartupEvents.registry("item", (event) => {
 		event.create(`${global.namespace}:incomplete_${material}_mechanism`, "create:sequenced_assembly")
 			.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_${material}_mechanism`)
 			.tag("create:incomplete_mechanisms")
+		event.create(`${global.namespace}:${material}_force_exe`)
+			.modelJson({
+				"parent": "minecraft:item/generated",
+				"textures": {
+					"layer0": `${global.namespace}:item/mechanism_force_base`,
+					"layer1": `${global.namespace}:item/mechanism/complete/${material}_mechanism`
+				}
+			})
 	})
 	completeMechanismRegister.forEach((material) => {
 		event.create(`${global.namespace}:${material}_mechanism`)
@@ -76,6 +84,15 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_pigiron_mechanism`)
 		.tag("create:incomplete_mechanisms")
 
+	event.create(`${global.namespace}:pigiron_force_exe`)
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `${global.namespace}:item/mechanism_force_base`,
+				"layer1": `${global.namespace}:item/mechanism/complete/pigiron_mechanism`
+			}
+		})
+	
 	// 批量注册构件零件类型
 	let partsRegisters = [
 		"basic",

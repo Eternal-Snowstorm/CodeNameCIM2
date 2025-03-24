@@ -2,6 +2,7 @@ ClientEvents.lang("en_us", (event) => {
 	addCastItemLanguaue("mechanism", "mechanism")
 
 	addItemLanguaue("geological_hammer", "Geological hammer")
+	addItemLanguaue("unknown_ingot","Programmable extensible formatted damaged processable integrated complex photosensitive multifunctional ingot")
 
 	addMechanismPartLanguaue("basic", "Basic")
 	addMechanismPartLanguaue("mechanical", "Mechanical")
@@ -90,6 +91,7 @@ ClientEvents.lang("en_us", (event) => {
 	]
 	materialGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
+		addForceLanguage(material, name)
 	})
 
 	let completeMaterialGroup = [
@@ -126,6 +128,10 @@ ClientEvents.lang("en_us", (event) => {
 
 	function addMechanismPartLanguaue(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism_part`, `${value} mechanism part`)
+	}
+
+	function addForceLanguage(material, value) {
+		event.add(`item.${global.namespace}.${material}_force_exe`,`${value} force.exe`)
 	}
 
 	function addBlockLanguaue(key, value) {
