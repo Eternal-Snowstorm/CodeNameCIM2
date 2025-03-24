@@ -119,3 +119,4 @@ config/fmi.toml
 /resourcepacks/*
 !/resourcepacks/NewAE2.zip
 !/resourcepacks/中微子的多用途汉化材质包.zip
+!/resourcepacks/字体包
