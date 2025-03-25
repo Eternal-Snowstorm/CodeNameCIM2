@@ -10,6 +10,7 @@ StartupEvents.registry("item", (event) => {
 		"photosensitive",
 		"gold",
 		"cobalt",
+		"nether",
 		"thermal",
 		"feinforced",
 		"resonant",
