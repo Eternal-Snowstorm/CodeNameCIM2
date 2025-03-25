@@ -1,8 +1,7 @@
 {
 	"modPriorities": [
-		"alltheores",
-		"minecraft",
 		"ue_addons",
+		"minecraft",
 		"kubejs",
 		"crafttweaker",
 		"create",
