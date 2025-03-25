@@ -4,11 +4,9 @@ let addColorMaterial = [
 	// 铝
 	["aluminum", 0xD6DEE5, "stone"],
 	// 黄铜
-	["brass", 0xFBCC68, "stone"],
+	["brass", 0xFBCC68, "iron"],
 	// 青铜
 	["bronze", 0xFF8C00, "stone"],
-	// 铬
-	["chrome", 0xF8F8FF, "diamond"],
 	// 钴
 	["cobalt", 0x2376DD, "iron"],
 	// 康铜
@@ -26,25 +24,21 @@ let addColorMaterial = [
 	// 铅
 	["lead", 0x5D5975, "iron"],
 	// 流明
-	["lumium", 0xFCEEA8, "iron"],
+	["lumium", 0xFCEEA8, "stone"],
 	// 下界合金
 	["netherite", 0x474447, "diamond"],
-	// 捏
+	// 镍
 	["nickel", 0xB19E75, "stone"],
 	// 锇
-	["osmium", 0xB0BEC9, "iron"],
-	// 铂
-	["platinum", 0xB3D9EB, "diamond"],
+	["osmium", 0xB0BEC9, "stone"],
 	// 信素 
-	["signalum", 0xEC3606, "iron"],
+	["signalum", 0xEC3606, "stone"],
 	// 银
 	["silver", 0xE1FFFF, "iron"],
 	// 钢
 	["steel", 0x808080, "iron"],
 	// 锡
 	["tin", 0xE1FFFF, "stone"],
-	// 钨
-	["tungsten", 0x939393, "diamond"],
 	// 锌
 	["zinc", 0xB9E9C1, "iron"],
 	// 玫瑰金
@@ -54,10 +48,19 @@ let addColorMaterial = [
 	// 玛玉灵
 	["manyullyn", 0x9261CC, "diamond"],
 	// 紫水晶青铜
-	["amethyst_bronze", 0xDFA8CF, "iron"]
+	["amethyst_bronze", 0xDFA8CF, "iron"],
+	// 钒
+	["vanadium", 0xF0FFFF, "iron"]
 ]
 
 let addAloneMaterial = []
+
+let addMoltenFluid = [
+	["andesite_alloy", 0xA9AFA1],
+	["vanadium", 0xF0FFFF]
+]
+
+let addAloneMoltenFluid = []
 StartupEvents.registry("item", (event) => {
 	addColorMaterial.forEach(([name, color]) => {
 		event.create(`${global.namespace}:${name}_ingot`)
@@ -146,7 +149,7 @@ StartupEvents.registry("block", (event) => {
 })
 
 StartupEvents.registry("fluid", (event) => {
-	addColorMaterial.forEach(([name, color]) => {
+	addMoltenFluid.forEach(([name, color]) => {
 		event.create(`${global.namespace}:molten_${name}`)
 			.thinTexture(color)
 			.bucketColor(color)
@@ -164,7 +167,7 @@ StartupEvents.registry("fluid", (event) => {
 		})
 	})
 
-	addAloneMaterial.forEach(([name]) => {
+	addAloneMoltenFluid.forEach(([name]) => {
 		event.create(`${global.namespace}:molten_${name}`)
 			.flowingTexture(`${global.namespace}:block/fluid/alone/${name}/flowing`)
 			.stillTexture(`${global.namespace}:block/fluid/alone/${name}/still`)

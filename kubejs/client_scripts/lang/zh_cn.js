@@ -13,36 +13,37 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMechanismPartLanguaue("engineering", "工程")
 	addMechanismPartLanguaue("mekanism", "通用")
 	addMechanismPartLanguaue("final", "终章")
-	
-	addMaterialLanguaue("andesite_alloy", "安山合金")
-	addMaterialLanguaue("cobalt", "钴")
 
+	let amethystEncyclopedia = "紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源"
 	addTConLanguage(
 		"amethyst",
 		"紫水晶",
 		"优秀的魔导体与媒质",
-		"紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源",
-		"紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源",
-		"紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源"
+		amethystEncyclopedia,
+		amethystEncyclopedia,
+		amethystEncyclopedia
 	)
+	let andesiteAlloyEncyclopedia = "岩石的能力，铁器的数值"
 	addTConLanguage(
 		"andesite_alloy",
 		"安山合金",
 		"岩石和金属居然能变成合金？",
-		"岩石的能力，铁器的数值",
-		"岩石的能力，铁器的数值",
-		"岩石的能力，铁器的数值"
+		andesiteAlloyEncyclopedia,
+		andesiteAlloyEncyclopedia,
+		andesiteAlloyEncyclopedia
 	)
+	let brassEncyclopedia = "黄铜给工具注入了智慧，使得工具可以自动进行微小的调整"
 	addTConLanguage(
 		"brass",
 		"黄铜",
 		"魔法与电流都能在其中受控流动",
-		"黄铜给工具注入了智慧，使得工具可以自动进行微小的调整",
-		"黄铜给工具注入了智慧，使得工具可以自动进行微小的调整",
-		"黄铜给工具注入了智慧，使得工具可以自动进行微小的调整"
+		brassEncyclopedia,
+		brassEncyclopedia,
+		brassEncyclopedia
 	)
 
 	addFluidLanguaue("molten_andesite_alloy", "熔融安山合金")
+	addFluidLanguaue("molten_vanadium", "熔融钒")
 
 	addBlockLanguaue("the_accelerator_of_mechanism_power", "构件之力催生器")
 	addBlockLanguaue("quartz_ore", "石英矿石")
@@ -92,7 +93,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("qio_three", "时间膨胀QIO驱动器盒")
 	addBlockLanguaue("qio_four", "超质量QIO驱动器盒")
 
-	let materialGroup = [
+	let mechanismGroup = [
 		["nature", "自然"],
 		["wooden", "木质"],
 		["stone", "石质"],
@@ -124,12 +125,12 @@ ClientEvents.lang("zh_cn", (event) => {
 		["pigiron", "生铁"],
 		["creative", "创造"]
 	]
-	materialGroup.forEach(([material, name]) => {
+	mechanismGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
 		addForceLanguage(material, name)
 	})
 
-	let completeMaterialGroup = [
+	let completeMechanismGroup = [
 		["basic_random", "基础随机"],
 		["mechanical_random", "机械随机"],
 		["engineering_random", "工程随机"],
@@ -139,9 +140,44 @@ ClientEvents.lang("zh_cn", (event) => {
 		["mekanism_random", "通用随机"],
 		["final_random", "最终随机"]
 	]
-	completeMaterialGroup.forEach(([material, name]) => {
+
+	completeMechanismGroup.forEach(([material, name]) => {
 		addCompleteMechanismLanguaue(material, name)
 	})
+
+	let materialGroup = [
+		["andesite_alloy", "安山合金"],
+		["aluminum", "铝"],
+		["brass", "黄铜"],
+		["bronze", "青铜"],
+		["cobalt", "钴"],
+		["constantan", "康铜"],
+		["copper", "铜"],
+		["electrum", "琥珀金"],
+		["gold", "金"],
+		["invar", "殷钢"],
+		["iron", "铁"],
+		["lead", "铅"],
+		["lumium", "流明"],
+		["netherite", "下界合金"],
+		["nickel", "镍"],
+		["osmium", "锇"],
+		["signalum", "信素"],
+		["silver", "银"],
+		["steel", "钢"],
+		["tin", "锡"],
+		["zinc", "锌"],
+		["rose_gold", "玫瑰金"],
+		["hepatizon", "黑色科斯林青铜"],
+		["manyullyn", "玛玉灵"],
+		["amethyst_bronze", "紫水晶青铜"],
+		["vanadium", "钒"]
+	]
+
+	materialGroup.forEach( ([material,name]) => {
+		addMaterialLanguaue(material,name)
+	})
+
 	function addItemLanguaue(key, value) {
 		event.add(`item.${global.namespace}.${key}`, value)
 	}
@@ -185,10 +221,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_plate`, `${value}板`)
 
 		event.add(`block.${global.namespace}.${key}_block`, `${value}块`)
-
-		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
-		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
-		event.add(`block.${global.namespace}.molten_${key}_bucket`, `熔融${value}桶`)
 	}
 
 	function addCommonTooltipLanguage(key, value) {

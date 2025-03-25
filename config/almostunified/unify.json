@@ -72,6 +72,7 @@
 		"peridot",
 		"platinum",
 		"potassium_nitrate",
+		"rose_gold",
 		"ruby",
 		"sapphire",
 		"signalum",
@@ -81,6 +82,7 @@
 		"tin",
 		"tungsten",
 		"uranium",
+		"vanadium",
 		"zinc"
 	],
 	"priorityOverrides": {},

@@ -36,4 +36,7 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:stone")
 		.add("#forge:cobblestone")
+
+	event.get("forge:ingots/andesite_alloy")
+		.add("create:andesite_alloy")
 })
