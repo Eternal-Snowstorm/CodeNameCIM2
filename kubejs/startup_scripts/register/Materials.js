@@ -1,6 +1,60 @@
 let addColorMaterial = [
-	["andesite_alloy", 0xC7C8B8, "wooden"],
-	["cobalt", 0x2375DA, "iron"]
+	// 安山合金
+	["andesite_alloy", 0xA9AFA1, "wooden"],
+	// 铝
+	["aluminum", 0xD6DEE5, "stone"],
+	// 黄铜
+	["brass", 0xFBCC68, "stone"],
+	// 青铜
+	["bronze", 0xFF8C00, "stone"],
+	// 铬
+	["chrome", 0xF8F8FF, "diamond"],
+	// 钴
+	["cobalt", 0x2376DD, "iron"],
+	// 康铜
+	["constantan", 0xC19042, "stone"],
+	// 铜
+	["copper", 0xE0805E, "stone"],
+	// 琥珀金
+	["electrum", 0xEAD76E, "iron"],
+	// 金
+	["gold", 0xFAF25E, "iron"],
+	// 殷钢
+	["invar", 0xA1AFA6, "iron"],
+	// 铁
+	["iron", 0xFFFFFF, "stone"],
+	// 铅
+	["lead", 0x5D5975, "iron"],
+	// 流明
+	["lumium", 0xFCEEA8, "iron"],
+	// 下界合金
+	["netherite", 0x474447, "diamond"],
+	// 捏
+	["nickel", 0xB19E75, "stone"],
+	// 锇
+	["osmium", 0xB0BEC9, "iron"],
+	// 铂
+	["platinum", 0xB3D9EB, "diamond"],
+	// 信素 
+	["signalum", 0xEC3606, "iron"],
+	// 银
+	["silver", 0xE1FFFF, "iron"],
+	// 钢
+	["steel", 0x808080, "iron"],
+	// 锡
+	["tin", 0xE1FFFF, "stone"],
+	// 钨
+	["tungsten", 0x939393, "diamond"],
+	// 锌
+	["zinc", 0xB9E9C1, "iron"],
+	// 玫瑰金
+	["rose_gold", 0xFFE7DB, "iron"],
+	// 黑色科斯林青铜
+	["hepatizon", 0x5F486A, "diamond"],
+	// 玛玉灵
+	["manyullyn", 0x9261CC, "diamond"],
+	// 紫水晶青铜
+	["amethyst_bronze", 0xDFA8CF, "iron"]
 ]
 
 let addAloneMaterial = []
@@ -91,7 +145,6 @@ StartupEvents.registry("block", (event) => {
 	})
 })
 
-/* 未启用(如果需要直接取消注释便是)
 StartupEvents.registry("fluid", (event) => {
 	addColorMaterial.forEach(([name, color]) => {
 		event.create(`${global.namespace}:molten_${name}`)
@@ -113,8 +166,8 @@ StartupEvents.registry("fluid", (event) => {
 
 	addAloneMaterial.forEach(([name]) => {
 		event.create(`${global.namespace}:molten_${name}`)
-			.flowingTexture(`${global.namespace}:block/fluid/alone/${name}_flowing`)
-			.stillTexture(`${global.namespace}:block/fluid/alone/${name}_still`)
+			.flowingTexture(`${global.namespace}:block/fluid/alone/${name}/flowing`)
+			.stillTexture(`${global.namespace}:block/fluid/alone/${name}/still`)
 			.tag("forge:molten_materials")
 			.tag(`forge:molten_${name}`)
 			.tag(`tconstruct:molten_${name}`)
@@ -126,4 +179,3 @@ StartupEvents.registry("fluid", (event) => {
 		})
 	})
 })
-*/
