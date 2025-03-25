@@ -55,7 +55,7 @@ let addColorMaterial = [
 
 let addAloneMaterial = []
 
-let addMoltenFluid = [
+let addColorMoltenFluid = [
 	["andesite_alloy", 0xA9AFA1],
 	["vanadium", 0xF0FFFF]
 ]
@@ -149,7 +149,7 @@ StartupEvents.registry("block", (event) => {
 })
 
 StartupEvents.registry("fluid", (event) => {
-	addMoltenFluid.forEach(([name, color]) => {
+	addColorMoltenFluid.forEach(([name, color]) => {
 		event.create(`${global.namespace}:molten_${name}`)
 			.thinTexture(color)
 			.bucketColor(color)

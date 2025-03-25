@@ -1,4 +1,4 @@
-ue_addonsServerEvents.genericLootTables((event) => {
+ServerEvents.genericLootTables((event) => {
 	event.addGeneric("ue_addons:gameplay/random_mechanisms/basic", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x ue_addons:iron_ingot").randomChance(0.125)

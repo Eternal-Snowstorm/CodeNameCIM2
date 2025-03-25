@@ -221,6 +221,10 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_plate`, `${value}板`)
 
 		event.add(`block.${global.namespace}.${key}_block`, `${value}块`)
+
+		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
+		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
+		event.add(`block.${global.namespace}.molten_${key}_bucket`, `熔融${value}桶`)
 	}
 
 	function addCommonTooltipLanguage(key, value) {
