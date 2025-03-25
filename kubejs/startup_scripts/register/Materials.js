@@ -23,16 +23,12 @@ let addColorMaterial = [
 	["iron", 0xFFFFFF, "stone"],
 	// 铅
 	["lead", 0x5D5975, "iron"],
-	// 流明
-	["lumium", 0xFCEEA8, "stone"],
 	// 下界合金
 	["netherite", 0x474447, "diamond"],
 	// 镍
 	["nickel", 0xB19E75, "stone"],
 	// 锇
 	["osmium", 0xB0BEC9, "stone"],
-	// 信素 
-	["signalum", 0xEC3606, "stone"],
 	// 银
 	["silver", 0xE1FFFF, "iron"],
 	// 钢
@@ -55,7 +51,17 @@ let addColorMaterial = [
 
 let addAloneMaterial = []
 
-let addColorMoltenFluid = [
+let addPlate = [
+	// 流明
+	["lumium", 0xFCEEA8],
+	// 信素 
+	["signalum", 0xF86014],
+	// 末影
+	["enderium", 0x1D7D8A]
+]
+let addAlonePlate = []
+
+let addMoltenFluid = [
 	["andesite_alloy", 0xA9AFA1],
 	["vanadium", 0xF0FFFF]
 ]
@@ -110,6 +116,23 @@ StartupEvents.registry("item", (event) => {
 			.tag("forge:plates/metal")
 			.tag(`forge:plates/metal/${name}`)
 	})
+	addPlate.forEach(([name,color])=>{
+		event.create(`${global.namespace}:${name}_plate`)
+			.color(color)
+			.texture(`${global.namespace}:item/material/color/plate`)
+			.tag("forge:plates")
+			.tag(`forge:plates/${name}`)
+			.tag("forge:plates/metal")
+			.tag(`forge:plates/metal/${name}`)
+	})
+	addAlonePlate.forEach(([name])=>{
+		event.create(`${global.namespace}:${name}_plate`)
+			.texture(`${global.namespace}:item/material/alone/${name}/plate`)
+			.tag("forge:plates")
+			.tag(`forge:plates/${name}`)
+			.tag("forge:plates/metal")
+			.tag(`forge:plates/metal/${name}`)
+	})
 })
 
 StartupEvents.registry("block", (event) => {
@@ -149,7 +172,7 @@ StartupEvents.registry("block", (event) => {
 })
 
 StartupEvents.registry("fluid", (event) => {
-	addColorMoltenFluid.forEach(([name, color]) => {
+	addMoltenFluid.forEach(([name, color]) => {
 		event.create(`${global.namespace}:molten_${name}`)
 			.thinTexture(color)
 			.bucketColor(color)

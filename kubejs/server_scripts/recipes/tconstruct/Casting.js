@@ -66,12 +66,6 @@ ServerEvents.recipes((event) => {
 			Fluid.of(`ue_addons:molten_${material}`, 90),
 			"#tconstruct:casts/single_use/plate"
 		).cooling_time(time).cast_consumed(true)
-
-		tconstruct.casting_basin(
-			`ue_addons:${material}_block`,
-			Fluid.of(`ue_addons:molten_${material}`, 810),
-			"minecraft:air"
-		).cooling_time(3*time)
 	})
 	tconstruct.molding_table(
 		"ue_addons:mechanism_sand_cast",
