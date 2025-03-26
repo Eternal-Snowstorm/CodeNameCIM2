@@ -123,6 +123,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["sculk", "幽匿"],
 		["colorful", "多彩"],
 		["pigiron", "生铁"],
+		["nether", "下界"],
 		["creative", "创造"]
 	]
 	mechanismGroup.forEach(([material, name]) => {

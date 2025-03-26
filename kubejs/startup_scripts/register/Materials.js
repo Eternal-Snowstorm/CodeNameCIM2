@@ -16,7 +16,7 @@ let addColorMaterial = [
 	// 琥珀金
 	["electrum", 0xFCCE50, "iron"],
 	// 金
-	["gold", 0xFAF25E, "iron"],
+	["gold", 0xFFFF40, "iron"],
 	// 殷钢
 	["invar", 0xD4DBD6, "iron"],
 	// 铁
