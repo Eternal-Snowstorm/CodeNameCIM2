@@ -4,31 +4,31 @@ let addColorMaterial = [
 	// 铝
 	["aluminum", 0xD6DEE5, "stone"],
 	// 黄铜
-	["brass", 0xFBCC68, "iron"],
+	["brass", 0xFCE892, "iron"],
 	// 青铜
-	["bronze", 0xFF8C00, "stone"],
+	["bronze", 0xF1A82D, "stone"],
 	// 钴
-	["cobalt", 0x2376DD, "iron"],
+	["cobalt", 0x2375DA, "iron"],
 	// 康铜
-	["constantan", 0xC19042, "stone"],
+	["constantan", 0xECBF62, "stone"],
 	// 铜
-	["copper", 0xE0805E, "stone"],
+	["copper", 0xFAD384, "stone"],
 	// 琥珀金
-	["electrum", 0xEAD76E, "iron"],
+	["electrum", 0xFCCE50, "iron"],
 	// 金
 	["gold", 0xFAF25E, "iron"],
 	// 殷钢
-	["invar", 0xA1AFA6, "iron"],
+	["invar", 0xD4DBD6, "iron"],
 	// 铁
 	["iron", 0xFFFFFF, "stone"],
 	// 铅
 	["lead", 0x5D5975, "iron"],
 	// 下界合金
-	["netherite", 0x474447, "diamond"],
+	["netherite", 0x595659, "diamond"],
 	// 镍
-	["nickel", 0xB19E75, "stone"],
+	["nickel", 0xE4D196, "stone"],
 	// 锇
-	["osmium", 0xB0BEC9, "stone"],
+	["osmium", 0xD6F0F9, "stone"],
 	// 银
 	["silver", 0xE1FFFF, "iron"],
 	// 钢
@@ -38,13 +38,13 @@ let addColorMaterial = [
 	// 锌
 	["zinc", 0xB9E9C1, "iron"],
 	// 玫瑰金
-	["rose_gold", 0xFFE7DB, "iron"],
+	["rose_gold", 0xFDD3C1, "iron"],
 	// 黑色科斯林青铜
 	["hepatizon", 0x5F486A, "diamond"],
 	// 玛玉灵
-	["manyullyn", 0x9261CC, "diamond"],
+	["manyullyn", 0x9060CA, "diamond"],
 	// 紫水晶青铜
-	["amethyst_bronze", 0xDFA8CF, "iron"],
+	["amethyst_bronze", 0xEBC4DB, "iron"],
 	// 钒
 	["vanadium", 0xF0FFFF, "iron"]
 ]
