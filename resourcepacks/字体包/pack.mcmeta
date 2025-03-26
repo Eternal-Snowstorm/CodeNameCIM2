@@ -1,6 +1,6 @@
 {
 	"pack": {
 		"pack_format": 15,
-		"description": "§b请确保置于资源包第一"
+		"description": "§b请确保置于资源包最上层\n§bBe sure to be placed at the top of the resourcepack"
 	}
 }

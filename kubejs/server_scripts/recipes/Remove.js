@@ -22,6 +22,17 @@ ServerEvents.recipes((event) => {
 		event.remove({ output: item })
 	})
 
+
+	let removeTagsRecipes = [
+		"#forge:ingots/metal",
+		"#forge:storage_blocks/metal",
+		"#forge:nuggets/metal"
+	]
+	removeTagsRecipes.forEach((tag) => {
+		event.remove({ input: tag, type: "minecraft:crafting_shaped" })
+		event.remove({ input: tag, type: "minecraft:crafting_shapeless" })
+	})
+
 	let removeItemInputRecipes = [
 		"create:andesite_alloy"
 	]

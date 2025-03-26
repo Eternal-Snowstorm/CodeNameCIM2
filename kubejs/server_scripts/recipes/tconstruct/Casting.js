@@ -8,71 +8,51 @@ ServerEvents.recipes((event) => {
 		["ue_addons:molten_andesite_alloy", "ue_addons:incomplete_andesite_mechanism"]
 	]
 	castingMechanismMaterials.forEach(([input, output]) => {
-		tconstruct.casting_table(
-			output,
-			Fluid.of(input, 90),
-			50,
-			"#tconstruct:casts/multi_use/mechanism"
-		)
+		tconstruct.casting_table(output, Fluid.of(input, 90))
+			.cast("#tconstruct:casts/multi_use/mechanism")
+			.cooling_time(50)
 
-		tconstruct.casting_table(
-			output,
-			Fluid.of(input, 90),
-			50,
-			"#tconstruct:casts/single_use/mechanism",
-			true
-		)
+		tconstruct.casting_table(output, Fluid.of(input, 90))
+			.cast("#tconstruct:casts/single_use/mechanism")
+			.cooling_time(50)
+			.cast_consumed(true)
 	})
 
-	tconstruct.casting_table(
-		"ue_addons:mechanism_cast",
-		Fluid.of("tconstruct:molten_gold", 90),
-		57,
-		"#create:mechanisms",
-		true,
-		true
-	)
+	tconstruct.casting_table("ue_addons:mechanism_cast", Fluid.of("tconstruct:molten_gold", 90))
+		.cast("#create:mechanisms")
+		.cooling_time(57)
+		.cast_consumed(true)
 
 	let castingMetarialGroup = [
-		["andesite_alloy",30],
-		["vanadium",50]
+		["andesite_alloy", 30],
+		["vanadium", 50]
 	]
-	castingMetarialGroup.forEach(([material,time])=>{
+	castingMetarialGroup.forEach(([material, time]) => {
 		tconstruct.casting_table(
 			`ue_addons:${material}_ingot`,
-			Fluid.of(`ue_addons:molten_${material}`, 90),
-			time,
-			"#tconstruct:casts/multi_use/ingot"
-		)
+			Fluid.of(`ue_addons:molten_${material}`, 90)
+		).cast("#tconstruct:casts/multi_use/ingot").cooling_time(time)
 
-		tconstruct.casting_table(
-			`ue_addons:${material}_ingot`,
-			Fluid.of(`ue_addons:molten_${material}`, 90),
-			time,
-			"#tconstruct:casts/single_use/ingot",
-			true
-		)
-		tconstruct.casting_table(
-			`ue_addons:${material}_plate`,
-			Fluid.of(`ue_addons:molten_${material}`, 90),
-			time,
-			"#tconstruct:casts/multi_use/plate"
-		)
+		tconstruct.casting_table(`ue_addons:${material}_ingot`,
+			Fluid.of(`ue_addons:molten_${material}`, 90)
+		).cast("#tconstruct:casts/single_use/ingot").cooling_time(time).cast_consumed(true)
 
 		tconstruct.casting_table(
 			`ue_addons:${material}_plate`,
-			Fluid.of(`ue_addons:molten_${material}`, 90),
-			time,
-			"#tconstruct:casts/single_use/plate",
-			true
-		)
+			Fluid.of(`ue_addons:molten_${material}`, 90)
+		).cast("#tconstruct:casts/multi_use/plate").cooling_time(time)
+
+		tconstruct.casting_table(
+			`ue_addons:${material}_plate`,
+			Fluid.of(`ue_addons:molten_${material}`, 90)
+		).cast("#tconstruct:casts/single_use/plate").cooling_time(time).cast_consumed(true)
 
 		tconstruct.casting_basin(
 			`ue_addons:${material}_block`,
-			Fluid.of(`ue_addons:molten_${material}`, 810),
-			3*time
-		)
+			Fluid.of(`ue_addons:molten_${material}`, 810)
+		).cooling_time(3 * time)
 	})
+
 	tconstruct.molding_table(
 		"ue_addons:mechanism_sand_cast",
 		"#create:mechanisms",

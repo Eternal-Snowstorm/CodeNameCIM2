@@ -32,7 +32,7 @@ ServerEvents.tags("item", (event) => {
 		.add("ue_addons:photosensitive_mechanism")
 		.add('ue_addons:nether_mechanism')
 
-	event.get("forge:sand")
+	event.get("minecraft:sand")
 		.add("#forge:sand")
 
 	event.get("forge:stone")
