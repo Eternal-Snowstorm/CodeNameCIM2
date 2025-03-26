@@ -1,0 +1,45 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "test"
+	group: ""
+	id: "704D7D37AE3B1385"
+	images: [
+		{
+			height: 1.0d
+			image: "ftbquests:textures/misc/belt.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.2448979591836604d
+			y: -2.897959183673464d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/misc/belt.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.6122448979591795d
+			y: -2.6938775510204067d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/misc/belt.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "ftbquests:textures/misc/belt.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.448979591836732d
+			y: -2.2653061224489797d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "test"
+}
