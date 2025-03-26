@@ -13,9 +13,9 @@ PlayerEvents.loggedIn((event) => {
 
 	let detectedMods = []
 
-	modGroup.forEach((modId) => {
-		if (Platform.isLoaded(modId)) {
-			detectedMods.push(modId)
+	modGroup.forEach((modID) => {
+		if (Platform.isLoaded(modID)) {
+			detectedMods.push(modID)
 		}
 	})
 

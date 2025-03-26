@@ -1,13 +1,10 @@
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
-	let modPackVersion = "§0CMI Dev Alpha-1.7.6"
 
 	// 初始化isDeveloper的boolean
 	global.isDeveloper = false
 
 	global.debugUserName.forEach((debugUser) => {
-
-
 		//设置isDeveloper的boolean
 		if (player.username === debugUser) {
 			global.isDeveloper = true
@@ -43,7 +40,7 @@ PlayerEvents.loggedIn((event) => {
 					x: 10,
 					y: "$screenH - 20",
 					alignX: "left",
-					text: modPackVersion,
+					text: global.modPackVersion,
 					scale: 1.0
 				}
 			})
