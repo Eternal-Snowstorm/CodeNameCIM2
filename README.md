@@ -2,8 +2,8 @@
 
 <div align="center">
 
-# Create:Mechanisms and Innovations(CMI)
-由Unknown_Entity_领头的Minecraft Forge 1.20.1机械动力整合包，CIM的续作/改良 目前处于Alpha阶段
+# Create: Mechanisms and Innovations(CMI)
+由`Unknown_Entity_`领头的`Minecraft Forge 1.20.1`机械动力整合包，`CIM`的续作/改良 目前处于Alpha阶段
 
 </div>
 
