@@ -33,7 +33,7 @@
 /CIM2 Dev-natives/
 /saves/Debug/
 /.idea
-mods.zip
+*.zip
 # config
 config/ae2/
 config/appleskin-client.toml
