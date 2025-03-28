@@ -33,4 +33,20 @@ ServerEvents.recipes((event) => {
 		"create:brass_casing",
 		true
 	)
+
+	tconstruct.casting_basin(
+		"create:andesite_alloy",
+		Fluid.of("tconstruct:molten_iron", 30),
+		20,
+		"minecraft:andesite",
+		true
+	)
+
+	tconstruct.casting_basin(
+		"create:andesite_alloy",
+		Fluid.of("tconstruct:molten_zinc", 10),
+		0,
+		"minecraft:andesite",
+		true
+	)
 })
