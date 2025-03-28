@@ -10,31 +10,26 @@ ServerEvents.recipes((event) => {
 		event.remove({ id: id })
 	})
 
-	let removeItemRecipes = [
+	let removeItemOutputRecipes = [
 		"ae2:black_lumen_paint_ball",
 		"ae2:white_lumen_paint_ball",
 		"ae2:red_lumen_paint_ball",
 		"ae2:blue_lumen_paint_ball",
 		"ae2:green_lumen_paint_ball",
-		"create:andesite_alloy"
 	]
-	removeItemRecipes.forEach((item) => {
+	removeItemOutputRecipes.forEach((item) => {
 		event.remove({ output: item })
 	})
 
 
 	let removeTagsRecipes = [
-		"#forge:ingots/metal",
-		"#forge:storage_blocks/metal",
-		"#forge:nuggets/metal"
+
 	]
 	removeTagsRecipes.forEach((tag) => {
-		event.remove({ input: tag, type: "minecraft:crafting_shaped" })
-		event.remove({ input: tag, type: "minecraft:crafting_shapeless" })
+		event.remove({ output: tag })
 	})
 
 	let removeItemInputRecipes = [
-		"create:andesite_alloy"
 	]
 	removeItemInputRecipes.forEach((item) => {
 		event.remove({ input: item })
