@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs, create } = event.recipes
 
 	// 空烈焰人燃烧室
 	kubejs.shaped("create:empty_blaze_burner", [
@@ -23,4 +23,10 @@ ServerEvents.recipes((event) => {
 		C: "#forge:netherrack",
 		D: "tconstruct:blaze_head"
 	}).id("create:crafting/kinetics/blaze_burner")
+
+	// 烈焰蛋糕
+	create.filling("create:blaze_cake", [
+		"create:blaze_cake_base",
+		Fluid.of("tconstruct:blazing_blood", 500)
+	]).id("create:filling/blaze_cake")
 })
