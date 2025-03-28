@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v4  # 升级到 v4 版本
+        uses: actions/checkout@v4 
 
       - name: 安装 ZIP
         run: sudo apt-get install -y zip
@@ -15,7 +15,7 @@ jobs:
       - name: 基本文件操作
         run: |
           mkdir -p temp/overrides
-          mv {config,fancymenu_data,kubejs,musics,resourcepacks,saves,scripts} temp/overrides/
+          mv {config,fancymenu_data,kubejs,resourcepacks,saves,scripts} temp/overrides/
           mv modrinth.index.json temp/
 
       - name: 压缩文件
