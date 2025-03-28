@@ -1,6 +1,6 @@
 StartupEvents.registry("item", (event) => {
 	addColorNuggetMaterials("andesite_alloy", 0xC7C8B8)
-	addColorPlateMaterials("cinderslime", 0xFF4040)
+	addColorPlateMaterials("cinderslime", 0xFF6060)
 
 	function addColorIngotMaterials(name, color) {
 		event.create(`${global.namespace}:${name}_ingot`)
