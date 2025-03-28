@@ -29,6 +29,8 @@ ServerEvents.recipes((event) => {
 	let iscm = "ue_addons:incomplete_sculk_mechanism"
 	let iprm = "create:incomplete_precision_mechanism"
 	let inem = "ue_addons:incomplete_nether_mechanism"
+	let ipim = "ue_addons:incomplete_pigiron_mechanism"
+	let iCom = "ue_addons:incomplete_cobalt_mechanism"
 
 	// 木质
 	create.sequenced_assembly("ue_addons:wooden_mechanism", [
@@ -99,10 +101,10 @@ ServerEvents.recipes((event) => {
 	], [
 		create.cutting(iprm, iprm),
 		create.pressing(iprm, iprm),
-		create.deploying(iprm, [iprm, 'create:cogwheel']),
-		create.deploying(iprm, [iprm, 'create:electron_tube']),
-		create.deploying(iprm, [iprm, 'ue_addons:mechanical_mechanism_part'])
-	]).transitionalItem(iprm).loops(1).id('create:sequenced_assembly/precision_mechanism')
+		create.deploying(iprm, [iprm, "create:cogwheel"]),
+		create.deploying(iprm, [iprm, "create:electron_tube"]),
+		create.deploying(iprm, [iprm, "ue_addons:mechanical_mechanism_part"])
+	]).transitionalItem(iprm).loops(1).id("create:sequenced_assembly/precision_mechanism")
 
 	// 感光
 	create.sequenced_assembly("ue_addons:photosensitive_mechanism", [
@@ -288,9 +290,9 @@ ServerEvents.recipes((event) => {
 	], [
 		create.cutting(ium, ium),
 		create.pressing(ium, ium),
-		create.deploying(ium, [ium, 'mekanism:pellet_polonium']),
-		create.deploying(ium, [ium, 'mekanism:pellet_plutonium']),
-		create.deploying(ium, [ium, 'ue_addons:quantum_mechanism_part']),
+		create.deploying(ium, [ium, "mekanism:pellet_polonium"]),
+		create.deploying(ium, [ium, "mekanism:pellet_plutonium"]),
+		create.deploying(ium, [ium, "ue_addons:quantum_mechanism_part"]),
 	]).transitionalItem(ium).loops(1)
 
 	// 反物质
@@ -298,8 +300,8 @@ ServerEvents.recipes((event) => {
 		"ae2:singularity"
 	], [
 		create.pressing(iatm, iatm),
-		create.deploying(iatm, [iatm, 'mekanism:pellet_antimatter']),
-		create.deploying(iatm, [iatm, 'ue_addons:quantum_mechanism_part']),
+		create.deploying(iatm, [iatm, "mekanism:pellet_antimatter"]),
+		create.deploying(iatm, [iatm, "ue_addons:quantum_mechanism_part"]),
 	]).transitionalItem(iatm).loops(1)
 
 	// 多彩
@@ -332,4 +334,23 @@ ServerEvents.recipes((event) => {
 		create.deploying(inem, [inem, "#forge:nuggets/gold"]),
 		create.deploying(inem, [inem, "ue_addons:magical_mechanism_part"]),
 	]).transitionalItem(inem).loops(1)
+
+	// 生铁
+	create.sequenced_assembly("ue_addons:pigiron_mechanism",[
+		"#forge:plates/pig_iron"
+	],[
+		create.filling(ipim,[ipim,Fluid.of("tconstruct:molten_pig_iron",90)]),
+		create.pressing(ipim,ipim),
+		create.deploying(ipim,[ipim,"#forge:nuggets/pig_iron"]),
+		create.deploying(ipim,[ipim,"ue_addons:basic_mechanism_part"])
+	]).transitionalItem(ipim).loops(1)
+
+	// 钴质
+	create.sequenced_assembly('ue_addons:cobalt_mechanism',[
+		'#forge:plates/cobalt'
+	],[
+		create.deploying(iCom,[iCom,'vintageimprovements:cobalt_spring']),
+		create.deploying(iCom,[iCom,'thermal:rf_coil']),
+		create.deploying(iCom,[iCom,'ue_addons:engineering_mechanism_part'])
+	]).transitionalItem(iCom).loops(1)
 })

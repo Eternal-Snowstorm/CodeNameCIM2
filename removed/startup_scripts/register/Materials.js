@@ -1,4 +1,4 @@
-let addColorMaterial = [
+ let addColorMaterial = [
 	// 安山合金
 	["andesite_alloy", 0xA9AFA1, "wooden"],
 	// 铝

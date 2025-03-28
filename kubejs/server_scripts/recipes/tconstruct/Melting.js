@@ -6,10 +6,7 @@ ServerEvents.recipes((event) => {
 		"#forge:obsidian"
 	).time(660).temperature(800)
 	.id("tconstruct:smeltery/melting/obsidian/block")
-	let moltenMaterialGroup = [
-		["andesite_alloy",30],
-		["vanadium",50]
-	]
+	let moltenMaterialGroup = []
 	moltenMaterialGroup.forEach(([material,moltingTime])=>{
 		tconstruct.melting(
 			Fluid.of(`ue_addons:molten_${material}`, 90),

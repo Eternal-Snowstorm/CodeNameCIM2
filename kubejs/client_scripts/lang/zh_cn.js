@@ -65,7 +65,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:ender_mechanism", "§d手持右键随机传送，手持潜行右键记录当前坐标")
 	addCommonTooltipLanguage("ue_addons:enchanted_mechanism", "§9手持右键方块可生成经验")
 	addCommonTooltipLanguage("ue_addons:nature_mechanism", "§a手持右键方块可以替代骨粉的功能")
-	addCommonTooltipLanguage("ue_addons:nuclear_mechanism", "§3右键QIO驱动器盒以将其升级（无需消耗！）")
+	addCommonTooltipLanguage("ue_addons:nuclear_mechanism", "§3右键以清除身上残留的辐射")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer1", "手持右键潜行方块获取方块硬度")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")

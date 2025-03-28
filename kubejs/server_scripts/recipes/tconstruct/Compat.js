@@ -33,21 +33,4 @@ ServerEvents.recipes((event) => {
 		"create:brass_casing",
 		true
 	)
-	// 安山合金
-	tconstruct.casting_basin(
-		"ue_addons:andesite_alloy_ingot",
-		Fluid.of("tconstruct:molten_iron", 30),
-		20,
-		"minecraft:andesite",
-		true
-	).id("tconstruct:compat/create/andesite_alloy_iron")
-
-	tconstruct.casting_basin(
-		"ue_addons:andesite_alloy_ingot",
-		Fluid.of("tconstruct:molten_zinc", 30),
-		0,
-		"minecraft:andesite",
-		true
-	).id("tconstruct:compat/create/andesite_alloy_zinc")
-
 })

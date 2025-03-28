@@ -36,7 +36,7 @@ ClientEvents.lang("en_us", (event) => {
 	addCommonTooltipLanguage("ue_addons:ender_mechanism", "§dRight click with this in hand to teleport randomly\n§dsneak and right click to store your current position")
 	addCommonTooltipLanguage("ue_addons:enchanted_mechanism", "§9Right click a block with this to generate experience orbs")
 	addCommonTooltipLanguage("ue_addons:nature_mechanism", "§aReplace functions of bone meals when right clicking blocks")
-	addCommonTooltipLanguage("ue_addons:nuclear_mechanism", "§3Right click a QIO driver to upgrade (without consumption!)")
+	addCommonTooltipLanguage("ue_addons:nuclear_mechanism", "§3Right click to clear all the radiation remain on your body")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer1", "Right click a block to get it's hardness")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "Right click with this in off hand to get id of your main hand item")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "It seems that a mysterious power has stopped you from using this tool")
