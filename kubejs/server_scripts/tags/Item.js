@@ -40,4 +40,11 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:ingots/andesite_alloy")
 		.add("create:andesite_alloy")
+
+	event.get("forge:plates/andesite_alloy")
+		.add("vintageimprovements:andesite_sheet")
+		.add("createdeco:andesite_sheet")
+
+	event.get("forge:plates/andesite")
+		.removeAll()
 })
