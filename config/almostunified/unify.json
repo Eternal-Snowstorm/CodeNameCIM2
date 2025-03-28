@@ -9,7 +9,9 @@
 		"thermal",
 		"tconstruct",
 		"immersiveengineering",
-		"mekanism"
+		"mekanism",
+		"vintageimprovements",
+		"thermal_extra"
 	],
 	"stoneStrata": [
 		"stone",

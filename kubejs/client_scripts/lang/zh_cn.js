@@ -4,6 +4,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("geological_hammer", "地质锤(调试工具)")
 	addItemLanguaue("empty_exe", "空程序.exe")
 	addItemLanguaue("unknown_ingot", "可编程的可扩展的格式化的损坏的可加工的集成的复杂的感光的多功能的锭")
+	addItemLanguaue("andesite_alloy_nugget", "安山合金粒")
+	addItemLanguaue("cinderslime_plate", "余烬史莱姆板")
 
 	addMechanismPartLanguaue("basic", "基础")
 	addMechanismPartLanguaue("mechanical", "机械")
@@ -43,7 +45,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	)
 
 	addFluidLanguaue("molten_andesite_alloy", "熔融安山合金")
-	addFluidLanguaue("molten_vanadium", "熔融钒")
 
 	addBlockLanguaue("the_accelerator_of_mechanism_power", "构件之力催生器")
 	addBlockLanguaue("quartz_ore", "石英矿石")
@@ -144,40 +145,6 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	completeMechanismGroup.forEach(([material, name]) => {
 		addCompleteMechanismLanguaue(material, name)
-	})
-
-	let materialGroup = [
-		["andesite_alloy", "安山合金"],
-		["aluminum", "铝"],
-		["brass", "黄铜"],
-		["bronze", "青铜"],
-		["cobalt", "钴"],
-		["constantan", "康铜"],
-		["copper", "铜"],
-		["electrum", "琥珀金"],
-		["enderium", "末影"],
-		["gold", "金"],
-		["invar", "殷钢"],
-		["iron", "铁"],
-		["lead", "铅"],
-		["lumium", "流明"],
-		["netherite", "下界合金"],
-		["nickel", "镍"],
-		["osmium", "锇"],
-		["signalum", "信素"],
-		["silver", "银"],
-		["steel", "钢"],
-		["tin", "锡"],
-		["zinc", "锌"],
-		["rose_gold", "玫瑰金"],
-		["hepatizon", "黑色科斯林青铜"],
-		["manyullyn", "玛玉灵"],
-		["amethyst_bronze", "紫水晶青铜"],
-		["vanadium", "钒"]
-	]
-
-	materialGroup.forEach( ([material,name]) => {
-		addMaterialLanguaue(material,name)
 	})
 
 	function addItemLanguaue(key, value) {
