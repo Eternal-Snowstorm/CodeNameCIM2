@@ -27,6 +27,8 @@
   "create:goggles": null,
   "create:hide_boiler_tanks": null,
   "create:placard": null,
+  "custommachinery:machine_component_provider": null,
+  "custommachinery:machine_server_data_provider": null,
   "immersiveengineering:multiblock_icon": null,
   "immersiveengineering:multiblock_inventory": null,
   "immersiveengineering:multiblock_tank": null,

@@ -1,0 +1,6 @@
+
+["StructureCraft Config"]
+	#Select Rendering Mode: OUTLINE Render only the periphery, FULL Render all lines
+	#Allowed Values: OUTLINE, FULL
+	renderMode = "FULL"
+
