@@ -4,10 +4,26 @@ ServerEvents.recipes((event) => {
 		"create:mixing/andesite_alloy",
 		"create:item_application/andesite_casing_from_wood",
 		"create:item_application/copper_casing_from_wood",
-		"create:item_application/brass_casing_from_wood"
+		"create:item_application/brass_casing_from_wood",
+		"vintageimprovements:grinder_polishing/rose_quartz"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({ id: id })
+	})
+
+	let removeRecipeExtraIds = [
+		"copper","iron","gold",
+		"tin","lead","silver",
+		"nickel","aluminum","uranium",
+		"osmium","zinc"]
+	removeRecipeExtraIds.forEach((id) =>{
+		event.remove({id:`thermal_extra:machine/nitratic_igniter/raw_${id}`})
+		event.remove({id:`thermal_extra:machine/crucible/raw_${id}_from_chunk`})
+		event.remove({id:`thermal_extra:machine/crucible/raw_${id}`})
+		event.remove({id:`thermal_extra:machine/endothermic_dehydrator/raw_${id}`})
+		event.remove({id:`thermal_extra:machine/chiller/raw_${id}`})
+		event.remove({id:`thermal_extra:compat/machine/chiller/raw_${id}`})
+		event.remove({id:`thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`})
 	})
 
 	let removeItemOutputRecipes = [
@@ -20,7 +36,6 @@ ServerEvents.recipes((event) => {
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({ output: item })
 	})
-
 
 	let removeTagsRecipes = [
 
