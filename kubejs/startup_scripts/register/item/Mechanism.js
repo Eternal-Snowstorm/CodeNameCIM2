@@ -124,9 +124,9 @@ StartupEvents.registry("item", (event) => {
 		"mekanism",
 		"final"
 	]
-	partsRegisters.forEach((material) => {
-		event.create(`${global.namespace}:${material}_mechanism_part`)
-			.texture(`${global.namespace}:item/mechanism/part/${material}_mechanism_part`)
+	partsRegisters.forEach((name) => {
+		event.create(`${global.namespace}:${name}_mechanism_part`)
+			.texture(`${global.namespace}:item/mechanism/part/${name}_mechanism_part`)
 			.tag(`${global.namespace}:mechanism_parts`)
 	})
 })
