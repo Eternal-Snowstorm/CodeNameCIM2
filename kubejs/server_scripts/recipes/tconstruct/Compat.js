@@ -5,32 +5,21 @@ ServerEvents.recipes((event) => {
 	tconstruct.casting_basin(
 		"create:andesite_casing",
 		Fluid.of("ue_addons:molten_andesite_alloy", 90),
-		40,
-		"#minecraft:logs",
-		true
-	)
+		40
+	).cast("#minecraft:logs").cooling_time(40).cast_consumed(true)
 
 	tconstruct.casting_basin(
 		"create:copper_casing",
-		Fluid.of("tconstruct:molten_copper", 90),
-		40,
-		"#minecraft:logs",
-		true
-	)
+		Fluid.of("tconstruct:molten_copper", 90)
+	).cast("#minecraft:logs").cooling_time(40).cast_consumed(true)
 
 	tconstruct.casting_basin(
 		"create:brass_casing",
-		Fluid.of("tconstruct:molten_brass", 90),
-		40,
-		"#minecraft:logs",
-		true
-	)
+		Fluid.of("tconstruct:molten_brass", 90)
+	).cast("#minecraft:logs").cooling_time(40).cast_consumed(true)
 
 	tconstruct.casting_basin(
 		"create:railway_casing",
-		Fluid.of("tconstruct:molten_obsidian", 90),
-		40,
-		"create:brass_casing",
-		true
-	)
+		Fluid.of("tconstruct:molten_obsidian", 90)
+	).cast("create:brass_casing").cooling_time(40).cast_consumed(true)
 })
