@@ -116,6 +116,7 @@ config/vintageimprovements-client.toml
 config/vintageimprovements-common.toml
 config/smoothboot.json
 config/fmi.toml
+config/packetfixer.properties
 
 #resourcepacks
 /resourcepacks/*

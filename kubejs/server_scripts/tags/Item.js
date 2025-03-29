@@ -1,6 +1,7 @@
 ServerEvents.tags("item", (event) => {
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
+		.add(`${global.namespace}:nature_mechanism`)
 	event.get("create:incomplete_mechanisms")
 		.add("create:incomplete_precision_mechanism")
 
