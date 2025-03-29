@@ -50,6 +50,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("quartz_ore", "石英矿石")
 	addBlockLanguaue("deepslate_quartz_ore", "深层石英矿石")
 
+	addAloneLanguaue(`message.${global.namespace}.41msg`, "你好，欢迎来到CIM，\nhttps://www.bilibili.com/video/BV1UT42167xb 获取更多信息")
 	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
 	addAloneLanguaue("curios.identifier.mechanisms", "构件")
 	addAloneLanguaue(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")

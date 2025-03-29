@@ -22,7 +22,6 @@ global.miningLevel = {
 	diamond: "minecraft:needs_diamond_tool",
 	nether: "forge:needs_netherite_tool"
 }
-
 // 挖掘工具类型
 global.toolType = {
 	"sword": "minecraft:mineable/sword",

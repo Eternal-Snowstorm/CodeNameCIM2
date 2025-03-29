@@ -20,6 +20,7 @@ ClientEvents.lang("en_us", (event) => {
 	addBlockLanguaue("quartz_ore", "Quartz ore")
 	addBlockLanguaue("deepslate_quartz_ore", "Deepslate quarz ore")
 
+	addAloneLanguaue(`message.${global.namespace}.41msg`, "Hi welcome to Create:Infinity Mechanism\nhttps://www.bilibili.com/video/BV1UT42167xb For more info")
 	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "Create: Mechanism and Innovation")
 	addAloneLanguaue("curios.identifier.mechanisms", "Mechanism")
 	addAloneLanguaue(`promp.${global.namespace}.ender_mechanism.location_stored`, "Current position stored")
