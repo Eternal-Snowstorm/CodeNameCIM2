@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 	let iprm = "create:incomplete_precision_mechanism"
 	let inem = "ue_addons:incomplete_nether_mechanism"
 	let ipim = "ue_addons:incomplete_pigiron_mechanism"
-	let iCom = "ue_addons:incomplete_cobalt_mechanism"
+	let icbm = "ue_addons:incomplete_cobalt_mechanism"
 
 	// 木质
 	create.sequenced_assembly("ue_addons:wooden_mechanism", [
@@ -336,21 +336,21 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem(inem).loops(1)
 
 	// 生铁
-	create.sequenced_assembly("ue_addons:pigiron_mechanism",[
+	create.sequenced_assembly("ue_addons:pigiron_mechanism", [
 		"#forge:plates/pig_iron"
-	],[
-		create.filling(ipim,[ipim,Fluid.of("tconstruct:molten_pig_iron",90)]),
-		create.pressing(ipim,ipim),
-		create.deploying(ipim,[ipim,"#forge:nuggets/pig_iron"]),
-		create.deploying(ipim,[ipim,"ue_addons:basic_mechanism_part"])
+	], [
+		create.filling(ipim, [ipim, Fluid.of("tconstruct:molten_pig_iron", 90)]),
+		create.pressing(ipim, ipim),
+		create.deploying(ipim, [ipim, "#forge:nuggets/pig_iron"]),
+		create.deploying(ipim, [ipim, "ue_addons:basic_mechanism_part"])
 	]).transitionalItem(ipim).loops(1)
 
 	// 钴质
-	create.sequenced_assembly('ue_addons:cobalt_mechanism',[
-		'#forge:plates/cobalt'
-	],[
-		create.deploying(iCom,[iCom,'vintageimprovements:cobalt_spring']),
-		create.deploying(iCom,[iCom,'thermal:rf_coil']),
-		create.deploying(iCom,[iCom,'ue_addons:engineering_mechanism_part'])
-	]).transitionalItem(iCom).loops(1)
+	create.sequenced_assembly("ue_addons:cobalt_mechanism", [
+		"#forge:plates/cobalt"
+	], [
+		create.deploying(icbm, [icbm, "vintageimprovements:cobalt_spring"]),
+		create.deploying(icbm, [icbm, "thermal:rf_coil"]),
+		create.deploying(icbm, [icbm, "ue_addons:engineering_mechanism_part"])
+	]).transitionalItem(icbm).loops(1)
 })
