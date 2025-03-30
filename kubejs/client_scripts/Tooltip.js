@@ -6,7 +6,6 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("ue_addons:pigiron_mechanism")
 	addCommonTooltip("ue_addons:enchanted_mechanism")
 	addCommonTooltip("ue_addons:nuclear_mechanism")
-	addCommonTooltip("pipez:filter_destination_tool")
 
 	addAccelerateTooltip("ue_addons:stone_mechanism")
 	addAccelerateTooltip("ue_addons:andesite_mechanism")
