@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "ue_addons:item/mechanism/complete/wooden_mechanism"
+	}
+}

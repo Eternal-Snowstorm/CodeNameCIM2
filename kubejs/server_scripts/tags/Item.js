@@ -1,7 +1,6 @@
 ServerEvents.tags("item", (event) => {
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
-		.add(`${global.namespace}:nature_mechanism`)
 	event.get("create:incomplete_mechanisms")
 		.add("create:incomplete_precision_mechanism")
 
@@ -31,7 +30,7 @@ ServerEvents.tags("item", (event) => {
 	event.get("curios:mechanisms")
 		.add("ue_addons:cobalt_mechanism")
 		.add("ue_addons:photosensitive_mechanism")
-		.add('ue_addons:nether_mechanism')
+		.add("ue_addons:nether_mechanism")
 
 	event.get("minecraft:sand")
 		.add("#forge:sand")
