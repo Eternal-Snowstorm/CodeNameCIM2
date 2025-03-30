@@ -26,3 +26,15 @@ Create
 
 金质构件：可以用于催生器生成金
 
+## 中前期发展方式 ##
+
+主要mod：
+
+Create
+
+Thermal
+
+Immersive Engineering
+
+所用构件
+

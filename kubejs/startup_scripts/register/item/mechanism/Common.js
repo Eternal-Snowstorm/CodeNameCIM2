@@ -1,6 +1,8 @@
 StartupEvents.registry("item", (event) => {
 	// 批量注册构件类型
 	let mechanismRegister = [
+		"nature",
+		"wooden",
 		"stone",
 		"iron",
 		"copper",

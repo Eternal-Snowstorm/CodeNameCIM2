@@ -1,0 +1,9 @@
+{
+    "type": "tconstruct:material",
+    "ingredient": {
+        "item": "minecraft:amethyst_shard"
+    },
+    "material": "ue_addons:amethyst",
+    "needed": 1,
+    "value": 1
+}
