@@ -5,7 +5,10 @@ ServerEvents.recipes((event) => {
 		"create:item_application/andesite_casing_from_wood",
 		"create:item_application/copper_casing_from_wood",
 		"create:item_application/brass_casing_from_wood",
-		"vintageimprovements:grinder_polishing/rose_quartz"
+		"vintageimprovements:grinder_polishing/rose_quartz",
+		"tconstruct:smeltery/seared/drain_retextured",
+		"tconstruct:smeltery/seared/duct_retextured",
+		"tconstruct:smeltery/seared/chute_retextured"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({ id: id })

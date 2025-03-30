@@ -47,4 +47,8 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:plates/andesite")
 		.removeAll()
+
+	event.get("tconstruct:gauge")
+		.add('tconstruct:seared_fuel_gauge')
+		.add('tconstruct:seared_ingot_gauge')
 })
