@@ -90,11 +90,6 @@
         "version": "0.5.1.j"
     },
     {
-        "filename": "CreateCasing-1.20.1-1.6.2-fix3.jar",
-        "name": "Create : Encased",
-        "version": "1.20.1-1.6.2-fix3"
-    },
-    {
         "filename": "createaddition-1.20.1-1.2.5.jar",
         "name": "Create Crafts & Additions",
         "version": "1.20.1-1.2.5"
@@ -153,11 +148,6 @@
         "filename": "create_jetpack_curios-1.2.0-forge-1.20.1.jar",
         "name": "Create: Jetpack Curios",
         "version": "1.2.0"
-    },
-    {
-        "filename": "create_power_loader-1.5.0-mc1.20.1.jar",
-        "name": "Create: Power Loader",
-        "version": "1.5.0-mc1.20.1"
     },
     {
         "filename": "Steam_Rails-1.6.7+forge-mc1.20.1.jar",
