@@ -105,7 +105,7 @@ Schema.prototype = {
 	 */
 	register(event) {
 		// In case if the recipe serializer is not loaded, skip the registration
-		let serializers = probejs$$RegistryInfo.RECIPE_SERIALIZER.vanillaRegistry.keySet().map(v => v.toString())
+		let serializers = probejs$$RegistryInfo.RECIPE_SERIALIZER.vanillaRegistry.keySet().map((v) => v.toString())
 		if (serializers.indexOf(this.recipeId) === -1) return
 		let keys = []
 		let components = event.components
