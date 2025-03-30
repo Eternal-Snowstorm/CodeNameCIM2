@@ -12,18 +12,26 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeRecipeExtraIds = [
-		"copper","iron","gold",
-		"tin","lead","silver",
-		"nickel","aluminum","uranium",
-		"osmium","zinc"]
-	removeRecipeExtraIds.forEach((id) =>{
-		event.remove({id:`thermal_extra:machine/nitratic_igniter/raw_${id}`})
-		event.remove({id:`thermal_extra:machine/crucible/raw_${id}_from_chunk`})
-		event.remove({id:`thermal_extra:machine/crucible/raw_${id}`})
-		event.remove({id:`thermal_extra:machine/endothermic_dehydrator/raw_${id}`})
-		event.remove({id:`thermal_extra:machine/chiller/raw_${id}`})
-		event.remove({id:`thermal_extra:compat/machine/chiller/raw_${id}`})
-		event.remove({id:`thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`})
+		"copper",
+		"iron",
+		"gold",
+		"tin",
+		"lead",
+		"silver",
+		"nickel",
+		"aluminum",
+		"uranium",
+		"osmium",
+		"zinc"
+	]
+	removeRecipeExtraIds.forEach((id) => {
+		event.remove({ id: `thermal_extra:machine/nitratic_igniter/raw_${id}` })
+		event.remove({ id: `thermal_extra:machine/crucible/raw_${id}_from_chunk` })
+		event.remove({ id: `thermal_extra:machine/crucible/raw_${id}` })
+		event.remove({ id: `thermal_extra:machine/endothermic_dehydrator/raw_${id}` })
+		event.remove({ id: `thermal_extra:machine/chiller/raw_${id}` })
+		event.remove({ id: `thermal_extra:compat/machine/chiller/raw_${id}` })
+		event.remove({ id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}` })
 	})
 
 	let removeItemOutputRecipes = [
@@ -32,6 +40,7 @@ ServerEvents.recipes((event) => {
 		"ae2:red_lumen_paint_ball",
 		"ae2:blue_lumen_paint_ball",
 		"ae2:green_lumen_paint_ball",
+		"pipez:filter_destination_tool"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({ output: item })

@@ -71,6 +71,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer1", "手持右键潜行方块获取方块硬度")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
+	addCommonTooltipLanguage("pipez:filter_destination_tool", "由于会过度引起卡顿, 因此禁用该物品")
 
 	addAccelerateTooltipLanguage("ue_addons:stone_mechanism", "§e转化石头\n10%安山岩\n10%闪长岩\n10%花岗岩\n10%石灰岩\n10%焦黑石头\n§2转化深板岩\n10%焦黑石头\n10%凝灰岩\n10%熔渣\n10%滴水石块\n10%平滑玄武岩")
 	addAccelerateTooltipLanguage("ue_addons:andesite_mechanism", "§e转化石头\n20%安山岩\n5%铁矿石\n5%石头\n§2转化深板岩\n15%安山岩\n10%深层铁矿石\n10%深板岩")

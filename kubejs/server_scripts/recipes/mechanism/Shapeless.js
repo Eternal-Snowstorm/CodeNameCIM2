@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
-	//wood
+	// 木质
 	kubejs.shapeless("ue_addons:wooden_mechanism", [
 		"#forge:stripped_logs",
 		"#minecraft:planks",
@@ -10,16 +10,16 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:hammer"
 	])
 
-	//stone
+	// 石质
 	kubejs.shapeless("ue_addons:stone_mechanism", [
 		"ue_addons:wooden_mechanism",
-		"minecraft:cobblestone",
+		"#forge:stone",
 		"minecraft:flint",
 		"immersiveengineering:hammer",
 		"tconstruct:seared_brick",
 	]).damageIngredient("immersiveengineering:hammer", 1)
 
-	//iron_shapeless
+	// 铁质
 	kubejs.shapeless("ue_addons:iron_mechanism", [
 		"ue_addons:incomplete_iron_mechanism",
 		"immersiveengineering:hammer",
@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 		"ue_addons:basic_mechanism_part"
 	]).damageIngredient("immersiveengineering:hammer", 1)
 
-	//copper_shapeless
+	// 铜质
 	kubejs.shapeless("ue_addons:copper_mechanism", [
 		"ue_addons:incomplete_copper_mechanism",
 		"immersiveengineering:hammer",
@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
 		"minecraft:water_bucket"
 	]).damageIngredient("immersiveengineering:hammer", 1)
 
-	//andesite
+	// 安山
 	kubejs.shapeless("ue_addons:andesite_mechanism", [
 		"2x #forge:ingots/andesite_alloy",
 		"immersiveengineering:hammer",

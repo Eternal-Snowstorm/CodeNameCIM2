@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
 
 	// 石质
 	create.sequenced_assembly("ue_addons:stone_mechanism", [
-		"minecraft:cobblestone"
+		"#forge:stone"
 	], [
 		create.pressing(ism, ism),
 		create.deploying(ism, [ism, "minecraft:flint"]),
@@ -77,7 +77,7 @@ ServerEvents.recipes((event) => {
 
 	// 安山
 	create.sequenced_assembly("ue_addons:andesite_mechanism", [
-		"#forge:plates/andesite"
+		"#forge:plates/andesite_alloy"
 	], [
 		create.cutting(iam, iam),
 		create.pressing(iam, iam),

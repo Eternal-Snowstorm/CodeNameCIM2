@@ -1,23 +1,7 @@
-let $ItemProperties = Java.loadClass("net.minecraft.world.item.Item$Properties")
+let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties")
 let $BoneMealItem = Java.loadClass("net.minecraft.world.item.BoneMealItem")
 
 StartupEvents.registry("item", (event) => {
-	// 自然构件
-	event.createCustom(`${global.namespace}:nature_mechanism`, () => {
-		let item = new $BoneMealItem(new $ItemProperties)
-		item.setMaxStackSize(64)
-		return item
-	})
-	JsonIO.write(`kubejs/assets/${global.namespace}/models/item/nature_mechanism.json`, {
-		"parent": "minecraft:item/generated",
-		"textures": {
-			"layer0": `${global.namespace}:item/mechanism/complete/nature_mechanism`
-		}
-	})
-	event.create(`${global.namespace}:incomplete_nature_mechanism`, "create:sequenced_assembly")
-		.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_nature_mechanism`)
-		.tag("create:incomplete_mechanisms")
-
 	// 批量注册构件类型
 	let mechanismRegister = [
 		"wooden",
@@ -112,6 +96,17 @@ StartupEvents.registry("item", (event) => {
 				"layer1": `${global.namespace}:item/mechanism/complete/pigiron_mechanism`
 			}
 		})
+
+	// 自然构件
+	event.createCustom(`${global.namespace}:nature_mechanism`, () => {
+		let item = new $BoneMealItem(new $Item$Properties)
+		item.setMaxStackSize(64)
+		return item
+	})
+
+	event.create(`${global.namespace}:incomplete_nature_mechanism`, "create:sequenced_assembly")
+		.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_nature_mechanism`)
+		.tag("create:incomplete_mechanisms")
 
 	// 批量注册构件零件类型
 	let partsRegisters = [
