@@ -3,6 +3,16 @@ ServerEvents.recipes((event) => {
 	let mech = "ue_addons:copper_mechanism"
 	let casing = "create:copper_casing"
 
+	//祛魔池
+	kubejs.shaped("create_enchantment_industry:disenchanter",[
+		" C ",
+		" B ",
+		" A "
+	],{
+		A:mech,
+		B:casing,
+		C:"#create:sandpaper"
+	}).id("create_enchantment_industry:crafting/disenchanter")
 	// 分液池(传送带青春再青春版)
 	kubejs.shaped("create:item_drain", [
 		"A",

@@ -213,7 +213,7 @@ ServerEvents.recipes((event) => {
 		"#forge:storage_blocks/lapis"
 	], [
 		create.pressing(ienm, ienm),
-		create.filling(ienm, [ienm, Fluid.of("create_enchantment_industry:experience", 500)]),
+		create.filling(ienm, [ienm, Fluid.of("create_enchantment_industry:hyper_experience", 20)]),
 		create.deploying(ienm, [ienm, "ue_addons:magical_mechanism_part"]),
 	]).transitionalItem(ienm).loops(1)
 
