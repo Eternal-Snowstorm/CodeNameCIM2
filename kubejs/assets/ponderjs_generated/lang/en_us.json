@@ -34,5 +34,11 @@
   "ue_addons.ponder.the_accelerator_of_mechanism_power.text_2": "Rightclick it with an iron mechanism in hand...",
   "ue_addons.ponder.the_accelerator_of_mechanism_power.text_3": "...and the stone around it changes into ore!",
   "ue_addons.ponder.the_accelerator_of_mechanism_power.text_4": "The accelerator also supports other mechanisms",
-  "ue_addons.ponder.the_accelerator_of_mechanism_power.text_5": "But attention, only blocks in 5x5 zone around it can be transformed!"
+  "ue_addons.ponder.the_accelerator_of_mechanism_power.text_5": "But attention, only blocks in 5x5 zone around it can be transformed!",
+  "ue_addons.ponder.water_pump.header": "Water Pump",
+  "ue_addons.ponder.water_pump.text_1": "If you want to use the water pump",
+  "ue_addons.ponder.water_pump.text_2": "You need to build a complete structure first",
+  "ue_addons.ponder.water_pump.text_3": "4 inward facing stairs",
+  "ue_addons.ponder.water_pump.text_4": "Finally, put on the machine body",
+  "ue_addons.ponder.water_pump.text_5": "After the structure is built, the pipeline can be used to pump water"
 }

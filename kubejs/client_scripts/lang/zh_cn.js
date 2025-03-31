@@ -7,6 +7,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("andesite_alloy_nugget", "安山合金粒")
 	addItemLanguaue("cinderslime_plate", "余烬史莱姆板")
 
+	addMachineLanguaue("water_pump", "水泵")
+
 	addMechanismPartLanguaue("basic", "基础")
 	addMechanismPartLanguaue("mechanical", "机械")
 	addMechanismPartLanguaue("flux", "通量")
@@ -177,6 +179,11 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addBlockLanguaue(key, value) {
 		event.add(`block.${global.namespace}.${key}`, value)
+	}
+
+	function addMachineLanguaue(key, value) {
+		event.add(`block.${global.namespace}.${key}`, value)
+		event.add(`machine.${global.namespace}.${key}`, value)
 	}
 
 	function addFluidLanguaue(key, value) {

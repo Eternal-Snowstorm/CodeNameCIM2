@@ -34,5 +34,11 @@
 	"ue_addons.ponder.the_accelerator_of_mechanism_power.text_2": "使用铁质构件右键...",
 	"ue_addons.ponder.the_accelerator_of_mechanism_power.text_3": "...会把周边的石头替换为矿石！",
 	"ue_addons.ponder.the_accelerator_of_mechanism_power.text_4": "同样的，还支持其他构件",
-	"ue_addons.ponder.the_accelerator_of_mechanism_power.text_5": "需要注意的是，只有周边5x5的区域才能被转化！"
+	"ue_addons.ponder.the_accelerator_of_mechanism_power.text_5": "需要注意的是，只有周边5x5的区域才能被转化！",
+	"ue_addons.ponder.water_pump.header": "水泵",
+	"ue_addons.ponder.water_pump.text_1": "如果想要使用水泵",
+	"ue_addons.ponder.water_pump.text_2": "你需要先搭建一个完整的结构",
+	"ue_addons.ponder.water_pump.text_3": "四个朝内的楼梯",
+	"ue_addons.ponder.water_pump.text_4": "最后放上机器本体",
+	"ue_addons.ponder.water_pump.text_5": "在结构搭建好后便可以用管道抽水了"
 }
