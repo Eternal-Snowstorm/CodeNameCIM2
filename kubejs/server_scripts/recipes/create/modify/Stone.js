@@ -1,6 +1,8 @@
 ServerEvents.recipes((event) =>{
   let { kubejs } = event.recipes
 	let mech = "ue_addons:stone_mechanism"
+	//焦炉砖
+	event.replaceInput({input:'#forge:sandstone',output:'immersiveengineering:cokebrick'})
   //焦黑排液孔
   kubejs.shaped("tconstruct:seared_drain", [
 		"B B",

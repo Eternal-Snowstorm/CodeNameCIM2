@@ -1,16 +1,6 @@
 ServerEvents.recipes((event) =>{
   let { kubejs,create } = event.recipes
   let mech = "ue_addons:enchanted_mechanism"
-  //祛魔池
-  kubejs.shaped("create_enchantment_industry:disenchanter",[
-    " C ",
-    " B ",
-    " A "
-  ],{
-    A:mech,
-    B:"create:item_drain",
-    C:"#create:sandpaper"
-  }).id("create_enchantment_industry:crafting/disenchanter")
   //打印机
   kubejs.shaped("create_enchantment_industry:printer",[
     " C ",
