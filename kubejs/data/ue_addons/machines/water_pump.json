@@ -22,7 +22,7 @@
 			"type": "custommachinery:fluid",
 			"id": "output",
 			"mode": "output",
-			"capacity": 1000000
+			"capacity": 2147483647
 		}
 	],
 	"gui": [
