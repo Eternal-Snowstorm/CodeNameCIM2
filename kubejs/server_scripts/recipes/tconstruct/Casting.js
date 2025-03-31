@@ -40,4 +40,21 @@ ServerEvents.recipes((event) => {
 		"#create:mechanisms",
 		"#tconstruct:casts/red_sand"
 	)
+
+	tconstruct.casting_table(
+		"create:andesite_alloy",
+		Fluid.of("ue_addons:molten_andesite_alloy",90)
+	).cast("tconstruct:ingot_cast").cooling_time(40).cast_consumed(false)
+
+	tconstruct.casting_table(
+		"create:andesite_alloy",
+		Fluid.of("ue_addons:molten_andesite_alloy",90)
+	).cast("tconstruct:ingot_sand_cast").cooling_time(40).cast_consumed(true)
+
+
+	tconstruct.casting_table(
+		"create:andesite_alloy",
+		Fluid.of("ue_addons:molten_andesite_alloy",90)
+	).cast("tconstruct:ingot_sand_cast").cooling_time(40).cast_consumed(true)
+
 })
