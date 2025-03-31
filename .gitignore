@@ -62,7 +62,6 @@ config/cupboard.json
 config/curios-client.toml
 config/curios-common.toml
 config/sci4me
-de/
 config/dynamic_fps.json
 config/embeddium-fingerprint.json
 config/embeddium-mixins.properties
@@ -80,7 +79,6 @@ config/ftbxmodcompat.snbt
 config/functionalstorage/
 config/imblocker-client.toml
 config/immersiveengineering-common.toml
-config/inventoryprofilesnext
 config/invtweaks-client.toml
 config/jecharacters.toml
 config/konkrete/
