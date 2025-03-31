@@ -18,11 +18,17 @@ ServerEvents.recipes((event) => {
 			.cast_consumed(true)
 	})
 
+	tconstruct.casting_basin("tconstruct:smeltery_controller",Fluid.of("tconstruct:molten_copper",360))
+		.cast("tconstruct:seared_melter")
+		.cast_consumed(true)
+		.cooling_time(100)
+		.id("tconstruct:smeltery/casting/seared/smeltery_controller")
+
 	tconstruct.casting_table("ue_addons:mechanism_cast", Fluid.of("tconstruct:molten_gold", 90))
 		.cast("#create:mechanisms")
 		.cooling_time(57)
 		.cast_consumed(true)
-
+	
 	tconstruct.molding_table(
 		"ue_addons:mechanism_sand_cast",
 		"#create:mechanisms",

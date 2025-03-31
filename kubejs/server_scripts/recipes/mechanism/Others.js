@@ -13,7 +13,6 @@ ServerEvents.recipes((event) => {
 		E: "#forge:stone"
 	})
 
-	create.haunting("ue_addons:magical_mechanism_part", [
-		"ue_addons:basic_mechanism_part"
-	])
+	create.filling('2x ue_addons:magical_mechanism_part',
+		[Fluid.of("create_enchantment_industry:hyper_experience",1),'ue_addons:basic_mechanism_part'])
 })

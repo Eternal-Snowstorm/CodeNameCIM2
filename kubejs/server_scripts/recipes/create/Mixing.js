@@ -20,4 +20,10 @@ ServerEvents.recipes((event) => {
 		"minecraft:andesite",
 		"#forge:nuggets/zinc"
 	]).heatLevel("grilled")
+
+	create.mixing([Fluid.of("create_enchantment_industry:experience",3),'create_enchantment_industry:experience_rotor'],
+  ['create:experience_nugget','create_enchantment_industry:experience_rotor']).heated()
+
+  create.mixing([Fluid.of("create_enchantment_industry:experience",27),'create_enchantment_industry:experience_rotor'],
+  ['create:experience_block','create_enchantment_industry:experience_rotor']).heated()
 })

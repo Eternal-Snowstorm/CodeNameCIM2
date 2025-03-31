@@ -68,7 +68,18 @@ ServerEvents.recipes((event) =>{
 		B: 'tconstruct:seared_brick',
 		C: '#tconstruct:gauge'
 	}).id("tconstruct:smeltery/seared/melter")
-  //炉灶
+  //铸模箱
+	kubejs.shaped("tconstruct:cast_chest", [
+		" C ",
+		"DBD",
+		"DAD"
+	], {
+		A: mech,
+		B: '#forge:chests/wooden',
+		C: '#tconstruct:casts/gold',
+		D: 'tconstruct:seared_brick'
+	}).id("tconstruct:tables/cast_chest")
+	//炉灶
   kubejs.shaped("farmersdelight:stove", [
 		"BBB",
 		"DAD",

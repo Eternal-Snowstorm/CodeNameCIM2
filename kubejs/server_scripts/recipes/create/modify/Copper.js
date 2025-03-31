@@ -3,17 +3,6 @@ ServerEvents.recipes((event) => {
 	let mech = "ue_addons:copper_mechanism"
 	let casing = "create:copper_casing"
 
-	// 驱魔池(你只管开车, 办法由老爹来想~)
-	kubejs.shaped("create_enchantment_industry:disenchanter", [
-		"A",
-		"B",
-		"C"
-	], {
-		A: "#create:sandpaper",
-		B: casing,
-		C: mech
-	}).id("create_enchantment_industry:crafting/disenchanter")
-
 	// 分液池(传送带青春再青春版)
 	kubejs.shaped("create:item_drain", [
 		"A",
@@ -67,16 +56,4 @@ ServerEvents.recipes((event) => {
 		B: casing,
 		C: "minecraft:dried_kelp"
 	}).id("create:crafting/kinetics/spout")
-
-	// 打印器( System.out.print("Hello World!"); )
-	kubejs.shaped("create_enchantment_industry:printer", [
-		" A ",
-		"BCB",
-		" D "
-	], {
-		A: casing,
-		B: "minecraft:dried_kelp",
-		C: mech,
-		D: "#forge:storage_blocks/iron"
-	}).id("create_enchantment_industry:crafting/printer")
 })
