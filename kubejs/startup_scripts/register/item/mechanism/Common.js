@@ -74,4 +74,12 @@ StartupEvents.registry("item", (event) => {
 				"layer1": `${global.namespace}:item/mechanism/complete/pigiron_mechanism`
 			}
 		})
+	event.create(`${global.namespace}:precision_force_exe`)
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `${global.namespace}:item/mechanism_force_base`,
+				"layer1": `create:item/precision_mechanism`
+			}
+		})
 })
