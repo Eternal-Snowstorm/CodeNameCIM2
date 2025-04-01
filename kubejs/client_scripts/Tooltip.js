@@ -1,4 +1,5 @@
 ItemEvents.tooltip((event) => {
+	addCommonTooltip("ue_addons:wooden_mechanism")
 	addCommonTooltip("ue_addons:stone_mechanism")
 	addCommonTooltip("ue_addons:copper_mechanism")
 	addCommonTooltip("ue_addons:nature_mechanism")
@@ -7,7 +8,6 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("ue_addons:enchanted_mechanism")
 	addCommonTooltip("ue_addons:nuclear_mechanism")
 
-	addAccelerateTooltip("ue_addons:wooden_mechanism")
 	addAccelerateTooltip("ue_addons:stone_mechanism")
 	addAccelerateTooltip("ue_addons:andesite_mechanism")
 	addAccelerateTooltip("ue_addons:copper_mechanism")
