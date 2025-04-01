@@ -21,7 +21,7 @@ ItemEvents.tooltip((event) => {
 	function addAccelerateTooltip(item) {
 		event.addAdvanced(item, (item, advanced, text) => {
 			if (event.shift) {
-				text.add(Component.translate(`tooltip.${key}.accelerate`.replace(`:`, `.`)))
+				text.add(Component.translate(`tooltip.${item.getId()}.accelerate`.replace(`:`, `.`)))
 			} else {
 				text.add(Component.translate(`tooltip.${global.namespace}.acceleratable`))
 			}
