@@ -17,7 +17,7 @@ ItemEvents.rightClicked((event) => {
 			}
 			let lootTable = `ue_addons:gameplay/random_mechanisms/${material}`
 			let { x, y, z } = player
-			server.runCommandSilent("loot give " + player.username + " loot " + lootTable)
+			server.runCommandSilent(`loot give ${x} ${y} ${z} loot ${lootTable}`)
 			player.swing()
 			player.playNotifySound("create:crafter_craft", "voice", 2, 1)
 			let R = Math.random()
