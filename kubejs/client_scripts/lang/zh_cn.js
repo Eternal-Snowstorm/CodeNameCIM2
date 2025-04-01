@@ -3,6 +3,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addItemLanguaue("geological_hammer", "地质锤(调试工具)")
 	addItemLanguaue("empty_exe", "空程序.exe")
+	addItemLanguaue("precision_force_exe", "精密驱动.exe")
 	addItemLanguaue("unknown_ingot", "可编程的可扩展的格式化的损坏的可加工的集成的复杂的感光的多功能的锭")
 	addItemLanguaue("andesite_alloy_nugget", "安山合金粒")
 	addItemLanguaue("cinderslime_plate", "余烬史莱姆板")
