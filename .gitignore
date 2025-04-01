@@ -43,7 +43,6 @@ config/betterfpsdist.json
 config/caxton.json
 config/cofh_core-client.toml
 config/cofh_core-common.toml
-config/cookingforblockheads-common.toml
 config/copycats-client.toml
 config/copycats-common.toml
 config/craftingtweaks-common.toml
