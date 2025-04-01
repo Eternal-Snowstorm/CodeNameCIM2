@@ -1,6 +1,9 @@
 ServerEvents.recipes((event) => {
 	let { create, vintageimprovements } = event.recipes
-	create.sequenced_assembly("ue_addons:empty_exe", "ue_addons:unknown_ingot", [
+
+	create.sequenced_assembly("ue_addons:empty_exe", [
+		"ue_addons:unknown_ingot"
+	], [
 		create.pressing("ue_addons:unknown_ingot", [
 			"ue_addons:unknown_ingot"
 		]),
@@ -13,14 +16,18 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem("ue_addons:unknown_ingot").loops(1)
 
 	global.mechanismList.forEach((material) => {
-		create.sequenced_assembly(`ue_addons:${material}_force_exe`, "ue_addons:empty_exe", [
+		create.sequenced_assembly(`ue_addons:${material}_force_exe`, [
+			"ue_addons:empty_exe"
+		], [
 			create.deploying(`ue_addons:empty_exe`, [
 				"ue_addons:empty_exe",
 				`ue_addons:${material}_mechanism`
 			])
 		]).transitionalItem("ue_addons:empty_exe").loops(128)
 	})
-	create.sequenced_assembly("ue_addons:precision_force_exe", "ue_addons:empty_exe", [
+	create.sequenced_assembly("ue_addons:precision_force_exe", [
+		"ue_addons:empty_exe"
+	], [
 		create.deploying("ue_addons:empty_exe", [
 			"ue_addons:empty_exe",
 			"create:precision_mechanism"

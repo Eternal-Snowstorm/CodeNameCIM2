@@ -114,6 +114,7 @@ config/vintageimprovements-common.toml
 config/smoothboot.json
 config/fmi.toml
 config/packetfixer.properties
+config/megatimestop-client.toml
 
 #resourcepacks
 /resourcepacks/*

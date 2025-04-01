@@ -4,5 +4,6 @@ StartupEvents.registry("item", (event) => {
 		.maxStackSize(1)
 		.tag("forge:tools")
 		.tag("forge:tools/wrench")
+		.tag("mekanism:configurators")
 		.tag("forge:wrenches")
 })
