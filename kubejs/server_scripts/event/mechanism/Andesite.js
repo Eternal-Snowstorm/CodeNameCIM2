@@ -49,7 +49,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", r => {
 					} else if (rand <= 0.25) {
 						r.level.getBlock(pos).set('minecraft:iron_ore')
 					} else if (rand <= 0.3) {
-						r.level.getBlock(pos).set('minecraft:stone')
+						r.level.getBlock(pos).set('create:zinc_ore')
 					}
 				}
 				else if (block === 'minecraft:deepslate') {
@@ -59,7 +59,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", r => {
 					} else if (rand <= 0.25) {
 						r.level.getBlock(pos).set('minecraft:deepslate_iron_ore')
 					} else if (rand <= 0.35) {
-						r.level.getBlock(pos).set('minecraft:deepslate')
+						r.level.getBlock(pos).set('create:deepslate_zinc_ore')
 					}
 
 				}
