@@ -3,10 +3,11 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addItemLanguaue("geological_hammer", "地质锤(调试工具)")
 	addItemLanguaue("empty_exe", "空程序.exe")
-	addItemLanguaue("precision_force_exe", "精密驱动.exe")
 	addItemLanguaue("unknown_ingot", "可编程的可扩展的格式化的损坏的可加工的集成的复杂的感光的多功能的锭")
 	addItemLanguaue("andesite_alloy_nugget", "安山合金粒")
 	addItemLanguaue("cinderslime_plate", "余烬史莱姆板")
+	
+	addForceLanguage("precision", "精密")
 
 	addMachineLanguaue("water_pump", "水泵")
 
@@ -72,6 +73,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:nature_mechanism", "§a手持右键方块可以替代骨粉的功能")
 	addCommonTooltipLanguage("ue_addons:nuclear_mechanism", "§3右键以清除身上残留的辐射")
 	addCommonTooltipLanguage("ue_addons:wooden_mechanism", "§a手持右键方块可以替代树木肥料的功能")
+	addCommonTooltipLanguage("ue_addons:photosensitive_mechanism", "§f装备于构件饰品栏可获得夜视效果")
+	addCommonTooltipLanguage("ue_addons:cobalt_mechanism", "§9装备于构件饰品栏可获得急迫与速度效果")
+	addCommonTooltipLanguage("ue_addons:nether_mechanism", "§4装备于构件饰品栏可获得抗火效果")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer1", "手持右键潜行方块获取方块硬度")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
