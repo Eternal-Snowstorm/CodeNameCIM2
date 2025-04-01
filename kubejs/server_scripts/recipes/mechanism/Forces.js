@@ -20,4 +20,10 @@ ServerEvents.recipes((event) => {
 			])
 		]).transitionalItem("ue_addons:empty_exe").loops(128)
 	})
+	create.sequenced_assembly("ue_addons:precision_force_exe", "ue_addons:empty_exe", [
+		create.deploying("ue_addons:empty_exe", [
+			"ue_addons:empty_exe",
+			"create:precision_mechanism"
+		])
+	]).transitionalItem("ue_addons:empty_exe").loops(128)
 })
