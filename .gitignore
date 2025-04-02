@@ -120,6 +120,7 @@ config/megatimestop-client.toml
 /resourcepacks/*
 !/resourcepacks/NewAE2.zip
 !/resourcepacks/中微子的多用途汉化材质包.zip
-!/resourcepacks/字体包
+!/resourcepacks/等距更纱黑体包
+!/resourcepacks/Maple Mono字体包
 !/resourcepacks/PackResource
 !/resourcepacks/Pretty X Smart Pipez.zip

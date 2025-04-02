@@ -216,7 +216,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addJEIInfoLanguage(key, value) {
-		event.add(`jei.info.${key}`.replace(":", "."), `§b${value}`)
+		event.add(`jei.info.${key}`.replace(":", "."), value)
 	}
 
 	function addHeatedLanguaue(key, value) {
