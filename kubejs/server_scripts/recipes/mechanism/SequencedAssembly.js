@@ -318,7 +318,7 @@ ServerEvents.recipes((event) => {
 
 	// 幽匿
 	create.sequenced_assembly("ue_addons:sculk_mechanism", [
-		"minecraft:netherite_ingot"
+		'minecraft:sculk_catalyst'
 	], [
 		create.deploying(iscm, [iscm, "minecraft:sculk_sensor"]),
 		create.deploying(iscm, [iscm, "minecraft:sculk_shrieker"]),

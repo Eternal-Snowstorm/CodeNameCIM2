@@ -47,6 +47,11 @@ ClientEvents.lang("en_us", (event) => {
 	addAccelerateTooltipLanguage("ue_addons:copper_mechanism", "§eStone transforming\n20%Copper ore\n5%Gold ore\n5%Clay\n§2Deepslate transforming\n15%Deepslate copper ore\n10%Deepslate gold ore\n10%Clay")
 	addAccelerateTooltipLanguage("ue_addons:iron_mechanism", "§eStone transforming\n20%Iron ore\n5%Redstone ore\n5%Nickel ore\n§2Deepslate transforming\n15%Deepslate iron ore\n10%Deepslate redstone ore\n10%Deepslate nickel ore")
 	addAccelerateTooltipLanguage("ue_addons:gold_mechanism", "§eStone transforming\n20%Gold ore\n5%Cinnabar ore\n5%Quartz ore\n§2Deepslate transforming\n15%Deepslate gold ore\n10%Deepslate cinnabar ore\n10%Deepslate quartz ore")
+	addAccelerateTooltipLanguage('vintageimprovements:redstone_module', "§eConverts Stone\n20% Redstone Ore\n§2Converts Deepslate\n25% Deep Redstone Ore")
+	addAccelerateTooltipLanguage('ue_addons:enchanted_mechanism', "§eConverts Stone\n20% Lapis Lazuli Ore\n1% Experience Block\n§2Converts Deepslate\n15% Deep Lapis Lazuli Ore\n1% Experience Block")
+	addAccelerateTooltipLanguage('ue_addons:nether_mechanism', "§eConverts Stone/§2Converts Deepslate\n10% Netherrack\n5% Magma Block\n3% Nether Quartz Ore\n3% Nether Gold Ore\n1% Ancient Debris")
+	addAccelerateTooltipLanguage('ue_addons:cobalt_mechanism', "§eConverts Netherrack\n10% Cobalt Ore")
+	addAccelerateTooltipLanguage('ue_addons:wooden_mechanism', "§eConverts Stone\n20% Coal Ore\n§2Converts Deepslate\n15% Deep Coal Ore\n1% Deep Diamond Ore")
 	addAccelerateTooltipLanguage("ue_addons:ender_mechanism", "§5Teleporting player to stored location")
 
 	addHeatedLanguaue("grilled", "grilling")

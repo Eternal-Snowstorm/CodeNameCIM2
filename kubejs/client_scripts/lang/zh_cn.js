@@ -86,6 +86,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("ue_addons:copper_mechanism", "§e转化石头\n20%铜矿石\n5%金矿石\n5%粘土块\n§2转化深板岩\n15%深层铜矿石\n10%深层金矿石\n10%粘土块")
 	addAccelerateTooltipLanguage("ue_addons:iron_mechanism", "§e转化石头\n20%铁矿石\n5%红石矿石\n5%镍矿石\n§2转化深板岩\n15%深层铁矿石\n10%深层红石矿\n10%深层镍矿石")
 	addAccelerateTooltipLanguage("ue_addons:gold_mechanism", "§e转化石头\n20%金矿石\n5%朱砂矿石\n5%石英矿石\n§2转化深板岩\n15%深层金矿石\n10%深层朱砂矿\n10%深层石英矿")
+	addAccelerateTooltipLanguage('vintageimprovements:redstone_module', "§e转化石头\n20%红石矿石\n§2转化深板岩\n25%深层红石矿石")
+	addAccelerateTooltipLanguage('ue_addons:enchanted_mechanism', "§e转化石头\n20%青金石矿石\n1%经验块\n§2转化深板岩\n15%深层青金石矿石\n1%经验块")
+	addAccelerateTooltipLanguage('ue_addons:nether_mechanism', "§e转化石头/§2转化深板岩\n10%下界岩\n5%岩浆块\n3%下界石英矿\n3%下界金矿石\n1%远古残骸")
+	addAccelerateTooltipLanguage('ue_addons:cobalt_mechanism', "§e转化下界岩\n10%钴矿石")
+	addAccelerateTooltipLanguage('ue_addons:wooden_mechanism', "§e转化石头\n20%煤矿石\n§2转化深板岩\n15%深层煤矿石\n1%深层钻石矿石")
 	addAccelerateTooltipLanguage("ue_addons:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 
 	addHeatedLanguaue("grilled", "炙烤")
