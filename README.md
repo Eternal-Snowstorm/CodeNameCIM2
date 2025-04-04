@@ -14,8 +14,8 @@
 
 
 
-[![Stars](https://img.shields.io/GitHub/stars/VechniMetel/CodeNameCIM2?label=Stars)](https://GitHub.com/VechniMetel/CodeNameCIM2)
-[![下载量](https://img.shields.io/GitHub/downloads/VechniMetel/CodeNameCIM2/total?style=social&label=下载量&logo=GitHub)](https://GitHub.com/VechniMetel/CodeNameCIM2/releases/latest)
+[![Stars](https://img.shields.io/github/stars/VechniMetel/CodeNameCIM2?label=Stars)](https://GitHub.com/VechniMetel/CodeNameCIM2)
+[![下载量](]https://img.shields.io/github/downloads/VechniMetel/CodeNameCIM2/total?style=social&label=%E4%B8%8B%E8%BD%BD%E9%87%8F&logo=github)](https://GitHub.com/VechniMetel/CodeNameCIM2/releases/latest)
 
 
 ## Stars 历史
