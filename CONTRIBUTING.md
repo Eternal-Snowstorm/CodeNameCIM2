@@ -10,7 +10,7 @@
 
 - 技术人员每次上传涉及游戏内代码的更新时，须相对当前小版本号进一位再上传。
 
-- 版本号在[**GameInfo.js**](kubejs/server_scripts/event/GameInfo.js)与[**client.properties**](kubejs/config/client.properties)中撰写与修改。
+- 版本号在[**Global.js**](kubejs/startup_scripts/Global.js)中撰写与修改。
 
 ### GitHub仓库修改注释协议
 
