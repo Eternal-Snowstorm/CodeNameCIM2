@@ -27,3 +27,9 @@ body:
   validations:
     required: true
 - type: textarea
+  id: "yml-4"  
+  attributes:
+    label: "其他补充信息（可选）"
+    description: "如有其他需要说明的内容，请在此补充。"
+  validations:
+    required: false  
