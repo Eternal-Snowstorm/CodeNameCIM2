@@ -18,7 +18,11 @@
 
 - 自本协议生效开始，所有修改的`summary`统一为版本号码。
 
-- 技术人员在上传的`description`中需使用中文或英语概述该次修改的内容。
+- 技术人员在上传的`description`中需使用中文或英语概述该次修改的内容
+
+### `Code`编码规范
+
+- 所有的类名和Java一样, 大驼峰命名法(单词搜字母大写), 例如`GetDateModifyTitle`, `recipesshcheam`除外
 
 ### `Code`公有化协议
 
