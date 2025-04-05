@@ -20,9 +20,13 @@
 
 - 技术人员在上传的`description`中需使用中文或英语概述该次修改的内容
 
-### `Code`编码规范
+### 开发规范规范
 
-- 所有的类名和Java一样, 大驼峰命名法(单词搜字母大写), 例如`GetDateModifyTitle`, `RecipeScheam`除外
+- 所有的类名和Java一样, 大驼峰命名法(单词搜字母大写), 例如`GetDateModifyTitle`, `RecipeSchema`除外
+
+- 所有的函数名与变量名与Java一样, 小驼峰命名法(单词搜字母小写), 例如`getDateModifyTitle`, `recipeSchema`除外
+
+- 在每次进行Dev之前先同步一下仓库, 避免改动覆盖或被覆盖
 
 ### `Code`公有化协议
 
