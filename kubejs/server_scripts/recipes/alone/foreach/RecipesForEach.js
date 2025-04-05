@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { minecraft } = event.recipes
+	let { kubejs } = event.recipes
 
 	// 木板批量处理
 	event.forEachRecipe({
@@ -10,19 +10,6 @@ ServerEvents.recipes((event) => {
 		let outputItem = recipes.getOriginalRecipeResult().getId()
 		let inputItem = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 
-		event.custom({
-			"type": "farmersdelight:cutting",
-			"ingredients": [{ "item": inputItem }],
-			"result": [
-				{ "item": outputItem, "count": 2, "chance": 1.0 },
-				{ "item": outputItem, "count": 1, "chance": 0.3 }
-			],
-			"tool": {
-				"type": "farmersdelight:tool_action",
-				"action": "axe_dig"
-			}
-		})
-
-		minecraft.stonecutting(Item.of(outputItem, 4), inputItem)
+		kubejs.shapeless(Item.of(outputItem, 4), inputItem)
 	})
 })

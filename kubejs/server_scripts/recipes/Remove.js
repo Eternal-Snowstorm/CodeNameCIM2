@@ -43,7 +43,8 @@ ServerEvents.recipes((event) => {
 		"ae2:red_lumen_paint_ball",
 		"ae2:blue_lumen_paint_ball",
 		"ae2:green_lumen_paint_ball",
-		"pipez:filter_destination_tool"
+		"pipez:filter_destination_tool",
+
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({ output: item })
@@ -67,5 +68,10 @@ ServerEvents.recipes((event) => {
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({ type: type })
+	})
+
+	event.remove({
+		type: "minecraft:crafting_shapeless",
+		output: "#minecraft:planks"
 	})
 })
