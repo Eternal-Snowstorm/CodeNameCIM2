@@ -22,7 +22,7 @@
 
 ### `Code`编码规范
 
-- 所有的类名和Java一样, 大驼峰命名法(单词搜字母大写), 例如`GetDateModifyTitle`, `recipesshcheam`除外
+- 所有的类名和Java一样, 大驼峰命名法(单词搜字母大写), 例如`GetDateModifyTitle`, `RecipeScheam`除外
 
 ### `Code`公有化协议
 
