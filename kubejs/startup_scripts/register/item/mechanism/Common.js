@@ -30,7 +30,8 @@ StartupEvents.registry("item", (event) => {
 		"coil",
 		"sculk",
 		"colorful",
-		"creative"
+		"creative",
+		"computing"
 	]
 	//仅注册完成状态的构件
 	global.mechanismList = mechanismRegister.concat("pigiron")
