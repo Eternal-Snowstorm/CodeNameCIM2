@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create,vintageimprovements } = event.recipes
+	let { create, vintageimprovements } = event.recipes
 
 	// 坚固板
 	create.sequenced_assembly([
@@ -12,5 +12,7 @@ ServerEvents.recipes((event) => {
 			"#forge:dusts/obsidian"
 		])
 	]).loops(10).transitionalItem("create:unprocessed_obsidian_sheet")
-	vintageimprovements.polishing('create:polished_rose_quartz','create:rose_quartz')
+
+	// 玫瑰石英
+	vintageimprovements.polishing("create:polished_rose_quartz", "create:rose_quartz")
 })

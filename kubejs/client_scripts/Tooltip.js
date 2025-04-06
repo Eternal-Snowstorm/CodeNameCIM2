@@ -17,11 +17,11 @@ ItemEvents.tooltip((event) => {
 	addAccelerateTooltip("ue_addons:iron_mechanism")
 	addAccelerateTooltip("ue_addons:gold_mechanism")
 	addAccelerateTooltip("ue_addons:ender_mechanism")
-	addAccelerateTooltip('vintageimprovements:redstone_module')
-	addAccelerateTooltip('ue_addons:enchanted_mechanism')
-	addAccelerateTooltip('ue_addons:nether_mechanism')
-	addAccelerateTooltip('ue_addons:cobalt_mechanism')
-	addAccelerateTooltip('ue_addons:wooden_mechanism')
+	addAccelerateTooltip("vintageimprovements:redstone_module")
+	addAccelerateTooltip("ue_addons:enchanted_mechanism")
+	addAccelerateTooltip("ue_addons:nether_mechanism")
+	addAccelerateTooltip("ue_addons:cobalt_mechanism")
+	addAccelerateTooltip("ue_addons:wooden_mechanism")
 
 	function addCommonTooltip(item) {
 		event.add(item, Component.translate(`tooltip.${item}`.replace(`:`, `.`)))
