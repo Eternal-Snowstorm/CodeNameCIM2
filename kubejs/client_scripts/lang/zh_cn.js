@@ -5,6 +5,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("empty_exe", "空程序.exe")
 	addItemLanguaue("andesite_alloy_nugget", "安山合金粒")
 	addItemLanguaue("cinderslime_plate", "余烬史莱姆板")
+	addItemLanguaue("single_crystal_silicon", "单晶硅")
+	addItemLanguaue("computer_component", "计算机组件")
 
 	addForceLanguage("precision", "精密")
 

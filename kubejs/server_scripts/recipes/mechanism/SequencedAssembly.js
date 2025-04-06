@@ -31,6 +31,7 @@ ServerEvents.recipes((event) => {
 	let inem = "ue_addons:incomplete_nether_mechanism"
 	let ipim = "ue_addons:incomplete_pigiron_mechanism"
 	let icbm = "ue_addons:incomplete_cobalt_mechanism"
+	let icpm = "ue_addons:incomplete_computing_mechanism"
 
 	// 木质
 	create.sequenced_assembly("ue_addons:wooden_mechanism", [
@@ -353,4 +354,14 @@ ServerEvents.recipes((event) => {
 		create.deploying(icbm, [icbm, "thermal:rf_coil"]),
 		create.deploying(icbm, [icbm, "ue_addons:engineering_mechanism_part"])
 	]).transitionalItem(icbm).loops(1)
+
+	// 计算
+	create.sequenced_assembly("ue_addons:cobalt_mechanism", [
+		"ue_addons:single_crystal_silicon"
+	], [
+		create.pressing(icpm,icpm),
+		create.deploying(icpm, [icpm, "ue_addons:computer_component"]),
+		create.deploying(icpm, [icpm, "ue_addons:empty_exe"]),
+		create.deploying(icpm, [icpm, "ue_addons:mekanism_mechanism_part"])
+	]).transitionalItem(icpm).loops(1)
 })
