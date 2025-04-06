@@ -140,7 +140,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["colorful", "多彩"],
 		["pigiron", "生铁"],
 		["nether", "下界"],
-		["creative", "创造"]
+		["creative", "创造"],
+		["computing", "计算"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)

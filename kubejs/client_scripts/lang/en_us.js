@@ -94,7 +94,8 @@ ClientEvents.lang("en_us", (event) => {
 		["sculk", "Sculk"],
 		["colorful", "Colorful"],
 		["pigiron", "Pigiron"],
-		["creative", "Creative"]
+		["creative", "Creative"],
+		["computing", "Computing"]
 	]
 	materialGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
