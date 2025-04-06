@@ -5,6 +5,7 @@ ClientEvents.lang("en_us", (event) => {
 	addItemLanguaue("empty_exe", "Empty program.exe")
 	addItemLanguaue("unknown_ingot", "Programmable extensible formatted damaged processable integrated complex photosensitive multifunctional ingot")
 	addItemLanguaue("single_crystal_silicon", "Single Crystal Silicon")
+	addItemLanguaue("computer_component", "Computer Component")
 
 	addMechanismPartLanguaue("basic", "Basic")
 	addMechanismPartLanguaue("mechanical", "Mechanical")
