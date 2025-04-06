@@ -31,14 +31,14 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/ender_pearl"
 	])
 
-	kubejs.shapeless("create:andesite_alloy",[
+	kubejs.shapeless("create:andesite_alloy", [
 		"9x ue_addons:andesite_alloy_nugget"
 	])
-	kubejs.shapeless("9x ue_addons:andesite_alloy_nugget",[
+	kubejs.shapeless("9x ue_addons:andesite_alloy_nugget", [
 		"create:andesite_alloy"
 	])
 
-	create.pressing("ue_addons:cinderslime_plate","tconstruct:cinderslime_ingot")
+	create.pressing("ue_addons:cinderslime_plate", "tconstruct:cinderslime_ingot")
 
 	kubejs.shaped("createaddition:straw", [
 		" AA",
@@ -61,4 +61,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "minecraft:rotten_flesh"
 	}).id(`${global.namespace}:what_is_this`)
+
+	kubejs.shapeless("ue_addons:bucket", [
+		"minecraft:bucket"
+	])
 })
