@@ -30,10 +30,9 @@ StartupEvents.registry("item", (event) => {
 		"coil",
 		"sculk",
 		"colorful",
-		"creative",
 		"computing"
 	]
-	//仅注册完成状态的构件
+	//仅注册完成状态的构件 没有驱动
 	global.mechanismList = mechanismRegister.concat("pigiron")
 	let completeMechanismRegister = [
 		"basic_random",
@@ -57,30 +56,23 @@ StartupEvents.registry("item", (event) => {
 				"parent": "minecraft:item/generated",
 				"textures": {
 					"layer0": `${global.namespace}:item/mechanism_force_base`,
-					"layer1": `${global.namespace}:item/mechanism/complete/${material}_mechanism`
+					"layer1": `${global.namespace}:item/mechanism/complete/${material}_mechanism`,
+					"layer2": `${global.namespace}:item/mechanism_force_overlay`
 				}
 			})
+		event.create(`${global.namespace}:beta_${material}_force_exe`)
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `${global.namespace}:item/beta_mechanism_force_base`,
+				"layer1": `${global.namespace}:item/mechanism/incomplete/incomplete_${material}_mechanism`,
+				"layer2": `${global.namespace}:item/beta_mechanism_force_overlay`
+			}
+		})
 	})
 	completeMechanismRegister.forEach((material) => {
 		event.create(`${global.namespace}:${material}_mechanism`)
 			.texture(`${global.namespace}:item/mechanism/complete/${material}_mechanism`)
 			.tag("create:mechanisms")
 	})
-
-	event.create(`${global.namespace}:pigiron_force_exe`)
-		.modelJson({
-			"parent": "minecraft:item/generated",
-			"textures": {
-				"layer0": `${global.namespace}:item/mechanism_force_base`,
-				"layer1": `${global.namespace}:item/mechanism/complete/pigiron_mechanism`
-			}
-		})
-	event.create(`${global.namespace}:precision_force_exe`)
-		.modelJson({
-			"parent": "minecraft:item/generated",
-			"textures": {
-				"layer0": `${global.namespace}:item/mechanism_force_base`,
-				"layer1": `create:item/precision_mechanism`
-			}
-		})
 })
