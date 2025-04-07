@@ -22,7 +22,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMechanismPartLanguaue("final", "终章")
 
 	let amethystEncyclopedia = "紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源"
-	addTConLanguage(
+	addTConMaterialLanguage(
 		"amethyst",
 		"紫水晶",
 		"优秀的魔导体与媒质",
@@ -31,7 +31,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		amethystEncyclopedia
 	)
 	let andesiteAlloyEncyclopedia = "岩石的能力，铁器的数值"
-	addTConLanguage(
+	addTConMaterialLanguage(
 		"andesite_alloy",
 		"安山合金",
 		"岩石和金属居然能变成合金？",
@@ -40,7 +40,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		andesiteAlloyEncyclopedia
 	)
 	let brassEncyclopedia = "黄铜给工具注入了智慧，使得工具可以自动进行微小的调整"
-	addTConLanguage(
+	addTConMaterialLanguage(
 		"brass",
 		"黄铜",
 		"魔法与电流都能在其中受控流动",
@@ -97,20 +97,6 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addHeatedLanguaue("grilled", "炙烤")
 
-	addMusicDiscLanguaue("lan_huo", "烂活", "霜落落落霜")
-	addMusicDiscLanguaue("monody", "Monody", "TheFatRat")
-	addMusicDiscLanguaue("life", "Life", "Neuro Sama")
-	addMusicDiscLanguaue("soul", "鬼", "草东没有派对")
-	addMusicDiscLanguaue("cylinder", "缸", "草东没有派对")
-	addMusicDiscLanguaue("but", "但", "草东没有派对")
-	addMusicDiscLanguaue("dirt", "烂泥", "草东没有派对")
-
-	addBlockLanguaue("qio_empty", "空的QIO驱动器盒")
-	addBlockLanguaue("qio_one", "QIO驱动器盒")
-	addBlockLanguaue("qio_two", "超密集QIO驱动器盒")
-	addBlockLanguaue("qio_three", "时间膨胀QIO驱动器盒")
-	addBlockLanguaue("qio_four", "超质量QIO驱动器盒")
-
 	let mechanismGroup = [
 		["nature", "自然"],
 		["wooden", "木质"],
@@ -142,14 +128,13 @@ ClientEvents.lang("zh_cn", (event) => {
 		["colorful", "多彩"],
 		["pigiron", "生铁"],
 		["nether", "下界"],
+		["creative", "创造"]
 		["computing", "计算"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
 		addForceLanguage(material, name)
 	})
-
-	addMechanismLanguaue("creative", "创造")
 
 	let completeMechanismGroup = [
 		["basic_random", "基础随机"],
@@ -242,7 +227,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(key, value)
 	}
 
-	function addTConLanguage(key, name, flavour, encyclopedia, ranged, armor) {
+	function addTConMaterialLanguage(key, name, flavour, encyclopedia, ranged, armor) {
 		event.add(`material.${global.namespace}.${key}`, name)
 		event.add(`material.${global.namespace}.${key}.flavor`, flavour)
 		event.add(`material.${global.namespace}.${key}.encyclopedia`, encyclopedia)

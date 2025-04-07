@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements } = event.recipes
+	let { create, vintageimprovements, kubejs } = event.recipes
 
 	// 砖块
 	create.mixing(Fluid.of("tconstruct:seared_stone", 250), [
@@ -23,6 +23,12 @@ ServerEvents.recipes((event) => {
 		"tconstruct:soul_glass_pane"
 	]).processingTime(150).heatLevel("grilled")
 
+	create.mixing(Fluid.of("tconstruct:liquid_soul", 1000), [
+		"4x minecraft:weeping_vines",
+		"4x minecraft:twisting_vines",
+		Fluid.of("minecraft:lava", 250)
+	]).heated()
+
 	// 灵魂沙碎末
 	vintageimprovements.vibrating([
 		Item.of("thermal_extra:soul_sand_dust").withChance(0.33),
@@ -32,4 +38,12 @@ ServerEvents.recipes((event) => {
 	], [
 		"#minecraft:soul_fire_base_blocks"
 	]).processingTime(150)
+
+	// 传送带
+	kubejs.shaped("4x create:belt_connector", [
+		"AAA",
+		"AAA"
+	], {
+		A: "thermal:cured_rubber"
+	})
 })	
