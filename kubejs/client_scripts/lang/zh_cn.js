@@ -142,13 +142,14 @@ ClientEvents.lang("zh_cn", (event) => {
 		["colorful", "多彩"],
 		["pigiron", "生铁"],
 		["nether", "下界"],
-		["creative", "创造"],
 		["computing", "计算"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
 		addForceLanguage(material, name)
 	})
+
+	addMechanismLanguaue("creative", "创造")
 
 	let completeMechanismGroup = [
 		["basic_random", "基础随机"],
@@ -190,6 +191,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addForceLanguage(material, value) {
 		event.add(`item.${global.namespace}.${material}_force_exe`, `${value}驱动.exe`)
+		event.add(`item.${global.namespace}.beta_${material}_force_exe`, `${value}驱动(Beta).exe`)
 	}
 
 	function addBlockLanguaue(key, value) {

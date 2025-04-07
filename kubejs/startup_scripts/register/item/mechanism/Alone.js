@@ -41,4 +41,54 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:incomplete_pigiron_mechanism`, "create:sequenced_assembly")
 		.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_pigiron_mechanism`)
 		.tag("create:incomplete_mechanisms")
+
+	// 创造构件
+	event.create(`${global.namespace}:creative_mechanism`)
+		.texture(`${global.namespace}:item/mechanism/complete/creative_mechanism`)
+		.tag("create:mechanisms")
+
+	event.create(`${global.namespace}:incomplete_creative_mechanism`, "create:sequenced_assembly")
+		.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_creative_mechanism`)
+		.tag("create:incomplete_mechanisms")
+
+	// 生铁与精密驱动
+	event.create(`${global.namespace}:pigiron_force_exe`)
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `${global.namespace}:item/mechanism_force_base`,
+				"layer1": `${global.namespace}:item/mechanism/complete/pigiron_mechanism`,
+				"layer2": `${global.namespace}:item/mechanism_force_overlay`
+			}
+		})
+
+	event.create(`${global.namespace}:beta_pigiron_force_exe`)
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `${global.namespace}:item/beta_mechanism_force_base`,
+				"layer1": `${global.namespace}:item/mechanism/incomplete/incomplete_pigiron_mechanism`,
+				"layer2": `${global.namespace}:item/beta_mechanism_force_overlay`
+			}
+		})
+
+	event.create(`${global.namespace}:precision_force_exe`)
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `${global.namespace}:item/mechanism_force_base`,
+				"layer1": `create:item/precision_mechanism`,
+				"layer2": `${global.namespace}:item/mechanism_force_overlay`
+			}
+		})
+
+	event.create(`${global.namespace}:beta_precision_force_exe`)
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `${global.namespace}:item/beta_mechanism_force_base`,
+				"layer1": `create:item/incomplete_precision_mechanism`,
+				"layer2": `${global.namespace}:item/beta_mechanism_force_overlay`
+			}
+		})
 })
