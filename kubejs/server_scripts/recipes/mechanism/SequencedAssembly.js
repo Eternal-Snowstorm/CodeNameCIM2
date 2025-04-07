@@ -356,7 +356,7 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem(icbm).loops(1)
 
 	// 计算
-	create.sequenced_assembly("ue_addons:cobalt_mechanism", [
+	create.sequenced_assembly("ue_addons:computing_mechanism", [
 		"ue_addons:single_crystal_silicon"
 	], [
 		create.pressing(icpm,icpm),
