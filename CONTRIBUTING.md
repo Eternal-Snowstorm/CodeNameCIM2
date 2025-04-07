@@ -28,6 +28,27 @@
 
  - 在每次进行Dev之前先同步一下仓库, 避免改动覆盖或被覆盖
 
+ - 每一个和配方相关的脚本必须进行一次解构, 结构完后才可以进行配方的编写
+
+```js
+ServerEvents.recipes((event) => {
+	let { create, kubejs, minecraft, namespace... } = event.recipes
+})
+```
+
+ - 在进行所有的有序配方, 包括`kubejs:shaped`, `minecraft:crafting_shaped`, `create:mechanical_crafting`等一系列包括了`pattern`的配方类型时, 必须按照下方的格式进行修改, 以此除外的所有格式均不接受
+```js
+kubejs.shaped("minecraft:stone", [
+	"AAA",
+	"BBB",
+	"CCC"
+], {
+	A: "minecraft:sand",
+	B: "minecraft:gravel",
+	C: "#forge:ingots/copper"
+})
+```
+
 ### `Code`公有化协议
 
  - 所有Code在上传至GitHub仓库后，将会视为由`CMI Dev Team`所有成员共同拥有。
