@@ -65,6 +65,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguaue(`message.${global.namespace}.checkCheating`, "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?")
 	addAloneLanguaue(`message.${global.namespace}.checkMultipleCheating`, "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?")
 
+	addCommonTooltipLanguage("ue_addons:water_pump", "")
 	addCommonTooltipLanguage("ue_addons:pigiron_mechanism", "可无限次食用")
 	addCommonTooltipLanguage("ue_addons:acceleratable", "§b按住Shift查看构件之力催生器用途")
 	addCommonTooltipLanguage("ue_addons:stone_mechanism", "§c手持右键圆石可将其转换为石头")
@@ -82,6 +83,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 
 	addJEIInfoLanguage("cookingforblockheads:sink", `"去用我的后辈多方块水泵吧"水槽如是说道`)
+	addJEIInfoLanguage("ue_addons:water_pump", "机器内如果一次产出的量如果高于剩余空间, 机器则会停止工作\n所以不需要担心水量会减少的问题, 在水量少于50%的时候会重新生产一次")
 
 	addAccelerateTooltipLanguage("ue_addons:stone_mechanism", "§e转化石头\n10%安山岩\n10%闪长岩\n10%花岗岩\n10%石灰岩\n10%焦黑石头\n§2转化深板岩\n10%焦黑石头\n10%凝灰岩\n10%熔渣\n10%滴水石块\n10%平滑玄武岩")
 	addAccelerateTooltipLanguage("ue_addons:andesite_mechanism", "§e转化石头\n20%安山岩\n5%铁矿石\n5%锌矿石\n§2转化深板岩\n15%安山岩\n10%深层铁矿石\n10%深层锌矿石")

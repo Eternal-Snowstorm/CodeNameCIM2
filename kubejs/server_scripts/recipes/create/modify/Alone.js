@@ -29,4 +29,11 @@ ServerEvents.recipes((event) => {
 		"create:blaze_cake_base",
 		Fluid.of("tconstruct:blazing_blood", 500)
 	]).id("create:filling/blaze_cake")
+
+	// 烈焰蛋糕胚
+	create.compacting("create:blaze_cake_base", [
+		Fluid.of("minecraft:milk", 250),
+		"create:cinder_flour",
+		"minecraft:sugar"
+	]).id("create:compacting/blaze_cake")
 })

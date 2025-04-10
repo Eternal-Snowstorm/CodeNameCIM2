@@ -4,4 +4,5 @@ JEIEvents.information((event) => {
 	}
 
 	addJEIInfo("cookingforblockheads:sink")
+	addJEIInfo("ue_addons:water_pump")
 })

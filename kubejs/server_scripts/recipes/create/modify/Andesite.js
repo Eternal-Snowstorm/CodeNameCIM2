@@ -74,7 +74,7 @@ ServerEvents.recipes((event) => {
 		" D "
 	], {
 		A: casing,
-		B: "#forge:leather",
+		B: "#minecraft:wool",
 		C: mech,
 		D: "#forge:plates/iron"
 	}).id("create:crafting/kinetics/rope_pulley")
@@ -90,29 +90,30 @@ ServerEvents.recipes((event) => {
 		C: mech,
 		D: "#forge:stone"
 	}).id("create:crafting/kinetics/millstone")
-	//动力辊压机
+
+	// 动力辊压机
 	kubejs.shaped("create:mechanical_press", [
-		" B ",
-		"CAC",
-		" D "
+		"B",
+		"A",
+		"C"
 	], {
 		A: casing,
 		B: mech,
-		C: "create:shaft",
-		D: "iron_block"
+		C: "#forge:storage_blocks/iron"
 	}).id("create:crafting/kinetics/mechanical_press")
-	//动力搅拌机
+
+	// 动力搅拌机
 	kubejs.shaped("create:mechanical_mixer", [
-		" B ",
-		"CAC",
-		" D "
+		"B",
+		"A",
+		"C"
 	], {
 		A: casing,
 		B: mech,
-		C: "create:cogwheel",
-		D: "create:whisk"
+		C: "create:whisk"
 	}).id("create:crafting/kinetics/mechanical_mixer")
-	//鼓风机
+
+	// 鼓风机
 	kubejs.shaped("create:encased_fan", [
 		"EAE",
 		"CBD",
@@ -124,18 +125,19 @@ ServerEvents.recipes((event) => {
 		D: "create:propeller",
 		E: "#minecraft:planks"
 	}).id("create:crafting/kinetics/encased_fan")
-	//砂带磨床
+
+	// 砂带磨床
 	kubejs.shaped("vintageimprovements:belt_grinder", [
-		" C ",
-		" B ",
-		"DAD"
+		"C",
+		"B",
+		"A"
 	], {
 		A: casing,
 		B: mech,
 		C: "vintageimprovements:grinder_belt",
-		D: "create:shaft",
 	}).id("vintageimprovements:craft/belt_grinder")
-	//轧机
+
+	// 轧机
 	kubejs.shaped("createaddition:rolling_mill", [
 		"EDE",
 		"CDC",
@@ -147,11 +149,12 @@ ServerEvents.recipes((event) => {
 		D: "create:shaft",
 		E: "#forge:plates/iron"
 	}).id("createaddition:crafting/rolling_mill")
-	//卷簧机
+
+	// 卷簧机
 	kubejs.shaped("vintageimprovements:spring_coiling_machine", [
-		"EA",
+		"EA ",
 		"CBD",
-		"EA"
+		"EA "
 	], {
 		A: casing,
 		B: mech,
@@ -159,7 +162,8 @@ ServerEvents.recipes((event) => {
 		D: "create:shaft",
 		E: "iron_ingot"
 	}).id("vintageimprovements:craft/spring_coiling_machine")
-	//振动台
+
+	// 振动台
 	kubejs.shaped("vintageimprovements:vibrating_table", [
 		"EBE",
 		"DCD",
@@ -171,17 +175,18 @@ ServerEvents.recipes((event) => {
 		D: "vintageimprovements:iron_spring",
 		E: "create:andesite_alloy"
 	}).id("vintageimprovements:craft/vibrating_table")
-	//冲压机
+
+	// 冲压机
 	kubejs.shaped("vintageimprovements:curving_press", [
 		" A ",
 		"CBC",
-		"   "
 	], {
 		A: mech,
 		B: casing,
 		C: "vintageimprovements:iron_spring"
 	}).id("vintageimprovements:craft/curving_press")
-	//离心机
+
+	// 离心机
 	kubejs.shaped("vintageimprovements:centrifuge", [
 		"DAD",
 		"ECE",
@@ -194,4 +199,3 @@ ServerEvents.recipes((event) => {
 		E: "create:shaft"
 	}).id("vintageimprovements:craft/centrifuge")
 })
-
