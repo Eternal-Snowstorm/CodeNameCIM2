@@ -1,8 +1,9 @@
-const materials = []
+let materials = []
 
-function addMaterial(name) {
-	const material = {
+function addMaterial(name, color) {
+	let material = {
 		name: name,
+		color: color,
 		types: [],
 		ingot: function () {
 			this.types.push("ingot")
@@ -26,11 +27,14 @@ StartupEvents.registry("item", (event) => {
 	materials.forEach((material) => {
 		material.types.forEach((type) => {
 			event.create(`${global.namespace}:${material.name}_${type}`)
+				.texture(`${global.namespace}:item/material/color/${type}`)
+				.color(0, material.color)
+				.tag(`forge:${type}s/${material.name}`)
 		})
 	})
 })
 /* Example
-addMaterial("iron")
+addMaterial("iron", 0xFFFFFF)
 	.ingot()
 	.dust()
 	.plate()
