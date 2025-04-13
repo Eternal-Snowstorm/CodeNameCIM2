@@ -35,6 +35,16 @@ schematics/uploaded/
 /.idea
 *.zip
 fancymenu_data
+
+#resourcepacks
+/resourcepacks/*
+!/resourcepacks/NewAE2.zip
+!/resourcepacks/中微子的多用途汉化材质包.zip
+!/resourcepacks/等距更纱黑体包
+!/resourcepacks/Maple Mono字体包
+!/resourcepacks/PackResource
+!/resourcepacks/Pretty X Smart Pipez.zip
+
 # config
 config/ae2/
 config/appleskin-client.toml
@@ -115,12 +125,6 @@ config/smoothboot.json
 config/fmi.toml
 config/packetfixer.properties
 config/megatimestop-client.toml
-
-#resourcepacks
-/resourcepacks/*
-!/resourcepacks/NewAE2.zip
-!/resourcepacks/中微子的多用途汉化材质包.zip
-!/resourcepacks/等距更纱黑体包
-!/resourcepacks/Maple Mono字体包
-!/resourcepacks/PackResource
-!/resourcepacks/Pretty X Smart Pipez.zip
+config/resourceful-config-web.json
+config/titanium/
+config/ad_astra.jsonc
