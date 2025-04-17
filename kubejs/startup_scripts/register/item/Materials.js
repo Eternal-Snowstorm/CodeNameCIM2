@@ -49,19 +49,25 @@ StartupEvents.registry("item", (event) => {
 })
 StartupEvents.registry("block", (event) => {
 	materials.forEach((material) => {
-		event.create(`${global.namespace}:${material.name}_block`)
-			.textureAll(`${global.namespace}:block/material/color/storage_blocks`)
-			.soundType(SoundType.METAL)
-			.color(0, material.color)
-			.hardness(5)
-			.resistance(5)
-			.item((item) => {
-				item.color(0, material.color)
-			})
-			.tagBlock(global.toolType["pickaxe"])
-			.tagBlock(global.miningLevel[material.level])
-			.tag(`forge:storage_blocks`)
-			.tag(`forge:storage_blocks/${material.name}`)
+		material.types.forEach((type) => {
+			if (type === "block") {
+				event.create(`${global.namespace}:${material.name}_block`)
+					.textureAll(`${global.namespace}:block/material/color/storage_blocks`)
+					.soundType(SoundType.METAL)
+					.color(0, material.color)
+					.hardness(5)
+					.resistance(5)
+					.item((item) => {
+						item.color(0, material.color)
+					})
+					.tagBlock(global.toolType["pickaxe"])
+					.tagBlock(global.miningLevel[material.level])
+					.tag(`forge:storage_blocks`)
+					.tag(`forge:storage_blocks/${material.name}`)
+			} else {
+				return
+			}
+		})
 	})
 })
 

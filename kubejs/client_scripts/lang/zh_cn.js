@@ -7,6 +7,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("cinderslime_plate", "余烬史莱姆板")
 	addItemLanguaue("single_crystal_silicon", "单晶硅")
 	addItemLanguaue("computer_component", "计算机组件")
+	addItemLanguaue("bucket", "桶(?)")
+	addItemLanguaue("crushed_desh", "粉碎戴斯矿石")
+	addItemLanguaue("crushed_ostrum", "粉碎紫金矿石")
+	addItemLanguaue("crushed_calorite", "粉碎耐热金属矿石")
 
 	addForceLanguage("precision", "精密")
 
@@ -82,6 +86,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 
+	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 甚至低到1块冰只能产1mB! 或许我需要想办法进行大批量的生产")
 	addJEIInfoLanguage("cookingforblockheads:sink", `"去用我的后辈多方块水泵吧"水槽如是说道`)
 	addJEIInfoLanguage("ue_addons:water_pump", "机器内如果一次产出的量如果高于剩余空间, 机器则会停止工作\n所以不需要担心水量会减少的问题, 在水量少于50%的时候会重新生产一次")
 
@@ -130,7 +135,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["colorful", "多彩"],
 		["pigiron", "生铁"],
 		["nether", "下界"],
-		["creative", "创造"]
+		["creative", "创造"],
 		["computing", "计算"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
@@ -148,7 +153,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["mekanism_random", "通用随机"],
 		["final_random", "最终随机"]
 	]
-
 	completeMechanismGroup.forEach(([material, name]) => {
 		addCompleteMechanismLanguaue(material, name)
 	})

@@ -35,6 +35,7 @@ schematics/uploaded/
 /.idea
 *.zip
 fancymenu_data
+saves/*/session.lock
 
 #resourcepacks
 /resourcepacks/*

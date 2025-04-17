@@ -5,4 +5,5 @@ JEIEvents.information((event) => {
 
 	addJEIInfo("cookingforblockheads:sink")
 	addJEIInfo("ue_addons:water_pump")
+	addJEIInfo("ad_astra:cryo_fuel_bucket")
 })

@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 		" BA",
 		"B  "
 	], {
-		"A": "minecraft:flint",
-		"B": "minecraft:stick"
+		A: "minecraft:flint",
+		B: "minecraft:stick"
 	}).id("immersiveengineering:crafting/hammer")
 })

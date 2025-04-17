@@ -74,4 +74,9 @@ ServerEvents.recipes((event) => {
 		type: "minecraft:crafting_shapeless",
 		output: "#minecraft:planks"
 	})
+
+	event.remove({
+		type: "minecraft:crafting_shaped",
+		output: "#forge:rods"
+	})
 })

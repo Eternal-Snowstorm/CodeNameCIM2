@@ -35,6 +35,10 @@ ServerEvents.tags("item", (event) => {
 	event.get("minecraft:sand")
 		.add("#forge:sand")
 
+	event.get("tconstruct:gauge")
+		.add("tconstruct:seared_fuel_gauge")
+		.add("tconstruct:seared_ingot_gauge")
+
 	event.get("forge:stone")
 		.add("#forge:cobblestone")
 
@@ -47,8 +51,4 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:plates/andesite")
 		.removeAll()
-
-	event.get("tconstruct:gauge")
-		.add('tconstruct:seared_fuel_gauge')
-		.add('tconstruct:seared_ingot_gauge')
 })
