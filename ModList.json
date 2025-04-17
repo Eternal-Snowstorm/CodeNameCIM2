@@ -450,6 +450,11 @@
 		"version": "1.8.0"
 	},
 	{
+		"filename": "oculus-flywheel-compat-forge1.20.1+1.1.4.jar",
+		"name": "Oculus Flywheel Compat",
+		"version": "1.1.4"
+	},
+	{
 		"filename": "packetfixer-forge-2.0.0-1.19-to-1.20.1.jar",
 		"name": "Packet Fixer",
 		"version": "2.0.0"

@@ -48,8 +48,10 @@
  - 添加了构件驱动(Beta)
  - 添加了一个桶..???
  - 添加了传送带的橡胶配方
- - 添加了`Ad astra`Mod
+ - 添加了`Ad astra` Mod
  - 添加了`Ad astra`流体燃料的匠魂兼容
+ - 添加了`Wi Zoom` Mod
+ - 添加了`Oculus Flywheel Compat` Mod
 
 ### 修改(调整)内容
  - 修改了构件驱动的贴图
