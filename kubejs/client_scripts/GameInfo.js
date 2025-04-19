@@ -5,7 +5,7 @@ ClientEvents.loggedIn((event) => {
 	global.isDeveloper = false
 
 	global.debugUserName.forEach((debugUser) => {
-		//设置isDeveloper的boolean
+		// 设置isDeveloper的boolean
 		if (player.username === debugUser) {
 			global.isDeveloper = true
 		}
