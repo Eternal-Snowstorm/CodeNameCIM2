@@ -9,7 +9,7 @@ ClientEvents.loggedIn((event) => {
 		if (player.username === debugUser) {
 			global.isDeveloper = true
 		}
-
+    
 		if (player.username === debugUser) {
 			let devInfo = Component.translate(`text.${global.namespace}.dev`).getString()
 			player.paint({
