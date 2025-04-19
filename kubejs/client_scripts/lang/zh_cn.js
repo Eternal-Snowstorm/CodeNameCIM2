@@ -34,7 +34,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		amethystEncyclopedia,
 		amethystEncyclopedia
 	)
-	let andesiteAlloyEncyclopedia = "岩石的能力，铁器的数值"
+	let andesiteAlloyEncyclopedia = "岩石的能力, 铁器的数值"
 	addTConMaterialLanguage(
 		"andesite_alloy",
 		"安山合金",
@@ -43,7 +43,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		andesiteAlloyEncyclopedia,
 		andesiteAlloyEncyclopedia
 	)
-	let brassEncyclopedia = "黄铜给工具注入了智慧，使得工具可以自动进行微小的调整"
+	let brassEncyclopedia = "黄铜给工具注入了智慧, 使得工具可以自动进行微小的调整"
 	addTConMaterialLanguage(
 		"brass",
 		"黄铜",
@@ -59,7 +59,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("quartz_ore", "石英矿石")
 	addBlockLanguaue("deepslate_quartz_ore", "深层石英矿石")
 
-	addAloneLanguaue(`message.${global.namespace}.41msg`, "你好，欢迎来到CIM，\nhttps://www.bilibili.com/video/BV1UT42167xb 获取更多信息")
+	addAloneLanguaue(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
 	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
 	addAloneLanguaue("curios.identifier.mechanisms", "构件")
 	addAloneLanguaue(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")
@@ -75,7 +75,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:acceleratable", "§b按住Shift查看构件之力催生器用途")
 	addCommonTooltipLanguage("ue_addons:stone_mechanism", "§c手持右键圆石可将其转换为石头")
 	addCommonTooltipLanguage("ue_addons:copper_mechanism", "§6手持右键可以投掷出水瓶")
-	addCommonTooltipLanguage("ue_addons:ender_mechanism", "§d手持右键随机传送，手持潜行右键记录当前坐标")
+	addCommonTooltipLanguage("ue_addons:ender_mechanism", "§d手持右键随机传送, 手持潜行右键记录当前坐标")
 	addCommonTooltipLanguage("ue_addons:enchanted_mechanism", "§9手持右键方块可生成经验")
 	addCommonTooltipLanguage("ue_addons:nature_mechanism", "§a手持右键方块可以替代骨粉的功能")
 	addCommonTooltipLanguage("ue_addons:nuclear_mechanism", "§3右键以清除身上残留的辐射")
