@@ -65,4 +65,15 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("ue_addons:bucket", [
 		"minecraft:bucket"
 	])
+	create.mixing('2x ue_addons:blood_slimeball',['minecraft:redstone','minecraft:bone_meal']).heated()
+	let Incomplete = 'immersiveengineering:treated_wood_horizontal'
+    create.sequenced_assembly('ue_addons:water_pump',[
+        '#forge:treated_wood'],[
+            create.pressing(Incomplete,Incomplete),
+            create.deploying(Incomplete,[Incomplete,'ue_addons:copper_mechanism']),
+            create.cutting(Incomplete,Incomplete),
+            create.deploying(Incomplete,[Incomplete,'thermal:iron_gear']),
+            create.deploying(Incomplete,[Incomplete,'tconstruct:seared_brick']),
+        ]
+    ).loops(1).transitionalItem(Incomplete);
 })

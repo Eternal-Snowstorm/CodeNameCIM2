@@ -105,6 +105,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addHeatedLanguaue("grilled", "炙烤")
 
+	addItemLanguaue('blood_slimeball', '血粘液球')
+
 	let mechanismGroup = [
 		["nature", "自然"],
 		["wooden", "木质"],

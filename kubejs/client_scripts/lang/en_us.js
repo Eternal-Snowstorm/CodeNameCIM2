@@ -66,6 +66,8 @@ ClientEvents.lang("en_us", (event) => {
 	addMusicDiscLanguaue("but", "But", "草东没有派对")
 	addMusicDiscLanguaue("dirt", "Dirt", "草东没有派对")
 
+	addItemLanguaue('blood_slimeball', 'Blood Slimeball')
+
 	let materialGroup = [
 		["nature", "Natural"],
 		["wooden", "Wooden"],
