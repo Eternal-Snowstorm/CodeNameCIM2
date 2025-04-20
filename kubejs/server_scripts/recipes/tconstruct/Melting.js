@@ -5,6 +5,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("tconstruct:molten_obsidian", 1000),
 		"#forge:obsidian"
 	).time(660).temperature(800).id("tconstruct:smeltery/melting/obsidian/block")
+
 	let moltenMaterialGroup = [
 		["andesite_alloy", 30]
 	]
@@ -24,4 +25,10 @@ ServerEvents.recipes((event) => {
 			`#forge:plates/${material}`
 		).time(moltingTime).temperature(800)
 	})
+
+	// 血液
+	tconstruct.melting(
+		Fluid.of("ue_addons:blood", 50),
+		"minecraft:rotten_flesh"
+	).time(30).temperature(36)
 })

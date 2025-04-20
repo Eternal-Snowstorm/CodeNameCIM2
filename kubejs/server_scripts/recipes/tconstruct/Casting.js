@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 			.cast_consumed(true)
 	})
 
-	tconstruct.casting_basin("tconstruct:smeltery_controller",Fluid.of("tconstruct:molten_copper",360))
+	tconstruct.casting_basin("tconstruct:smeltery_controller", Fluid.of("tconstruct:molten_copper", 360))
 		.cast("tconstruct:seared_melter")
 		.cast_consumed(true)
 		.cooling_time(100)
@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 		.cast("#create:mechanisms")
 		.cooling_time(57)
 		.cast_consumed(true)
-	
+
 	tconstruct.molding_table(
 		"ue_addons:mechanism_sand_cast",
 		"#create:mechanisms",
@@ -43,18 +43,23 @@ ServerEvents.recipes((event) => {
 
 	tconstruct.casting_table(
 		"create:andesite_alloy",
-		Fluid.of("ue_addons:molten_andesite_alloy",90)
+		Fluid.of("ue_addons:molten_andesite_alloy", 90)
 	).cast("tconstruct:ingot_cast").cooling_time(40).cast_consumed(false)
 
 	tconstruct.casting_table(
 		"create:andesite_alloy",
-		Fluid.of("ue_addons:molten_andesite_alloy",90)
+		Fluid.of("ue_addons:molten_andesite_alloy", 90)
 	).cast("tconstruct:ingot_sand_cast").cooling_time(40).cast_consumed(true)
 
 
 	tconstruct.casting_table(
 		"create:andesite_alloy",
-		Fluid.of("ue_addons:molten_andesite_alloy",90)
+		Fluid.of("ue_addons:molten_andesite_alloy", 90)
 	).cast("tconstruct:ingot_sand_cast").cooling_time(40).cast_consumed(true)
 
+	// 黏血球
+	tconstruct.casting_table(
+		"ue_addons:blood_slime_ball",
+		Fluid.of("ue_addons:blood", 250)
+	).cooling_time(20)
 })

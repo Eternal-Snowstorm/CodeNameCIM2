@@ -8,7 +8,8 @@ ServerEvents.recipes((event) => {
 		"vintageimprovements:grinder_polishing/rose_quartz",
 		"tconstruct:smeltery/seared/drain_retextured",
 		"tconstruct:smeltery/seared/duct_retextured",
-		"tconstruct:smeltery/seared/chute_retextured"
+		"tconstruct:smeltery/seared/chute_retextured",
+		"tconstruct:__default"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({ id: id })

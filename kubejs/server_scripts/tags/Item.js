@@ -4,25 +4,7 @@ ServerEvents.tags("item", (event) => {
 	event.get("create:incomplete_mechanisms")
 		.add("create:incomplete_precision_mechanism")
 
-	let colorGroup = [
-		"black",
-		"blue",
-		"brown",
-		"cyan",
-		"gray",
-		"green",
-		"light_blue",
-		"light_gray",
-		"lime",
-		"magenta",
-		"orange",
-		"pink",
-		"purple",
-		"red",
-		"white",
-		"yellow"
-	]
-	colorGroup.forEach((color) => {
+	global.dyeColorGroup.forEach((color) => {
 		event.get(`forge:dyes/${color}`)
 			.add("ue_addons:colorful_mechanism")
 	})
@@ -50,5 +32,5 @@ ServerEvents.tags("item", (event) => {
 		.add("createdeco:andesite_sheet")
 
 	event.get("forge:plates/andesite")
-		.removeAll()
+		.add("#forge:plates/andesite_alloy")
 })

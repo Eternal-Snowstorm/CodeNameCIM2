@@ -8,9 +8,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("single_crystal_silicon", "单晶硅")
 	addItemLanguaue("computer_component", "计算机组件")
 	addItemLanguaue("bucket", "桶(?)")
-	addItemLanguaue("crushed_desh", "粉碎戴斯矿石")
-	addItemLanguaue("crushed_ostrum", "粉碎紫金矿石")
-	addItemLanguaue("crushed_calorite", "粉碎耐热金属矿石")
+	addItemLanguaue("blood_slime_ball", "黏血球")
 
 	addForceLanguage("precision", "精密")
 
@@ -54,6 +52,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	)
 
 	addFluidLanguaue("molten_andesite_alloy", "熔融安山合金")
+	addFluidLanguaue("blood", "血液")
 
 	addBlockLanguaue("the_accelerator_of_mechanism_power", "构件之力催生器")
 	addBlockLanguaue("quartz_ore", "石英矿石")
@@ -68,7 +67,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguaue(`text.${global.namespace}.player`, "§0测试中版本, 不代表最终品质")
 	addAloneLanguaue(`message.${global.namespace}.checkCheating`, "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?")
 	addAloneLanguaue(`message.${global.namespace}.checkMultipleCheating`, "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?")
-	addAloneLanguaue(`sea.${global.namespace}.search`,"§b正在使用对海搜索!")
+	addAloneLanguaue(`sea.${global.namespace}.search`, "§b正在使用对海搜索!")
 
 	addCommonTooltipLanguage("ue_addons:water_pump", "")
 	addCommonTooltipLanguage("ue_addons:pigiron_mechanism", "可无限次食用")
@@ -87,25 +86,24 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 
-	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 甚至低到1块冰只能产1mB! 或许我需要想办法进行大批量的生产")
+	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产, 热力膨胀中有个机器叫")
 	addJEIInfoLanguage("cookingforblockheads:sink", `"去用我的后辈多方块水泵吧"水槽如是说道`)
 	addJEIInfoLanguage("ue_addons:water_pump", "机器内如果一次产出的量如果高于剩余空间, 机器则会停止工作\n所以不需要担心水量会减少的问题, 在水量少于50%的时候会重新生产一次")
+	addJEIInfoLanguage("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
 
 	addAccelerateTooltipLanguage("ue_addons:stone_mechanism", "§e转化石头\n10%安山岩\n10%闪长岩\n10%花岗岩\n10%石灰岩\n10%焦黑石头\n§2转化深板岩\n10%焦黑石头\n10%凝灰岩\n10%熔渣\n10%滴水石块\n10%平滑玄武岩")
 	addAccelerateTooltipLanguage("ue_addons:andesite_mechanism", "§e转化石头\n20%安山岩\n5%铁矿石\n5%锌矿石\n§2转化深板岩\n15%安山岩\n10%深层铁矿石\n10%深层锌矿石")
 	addAccelerateTooltipLanguage("ue_addons:copper_mechanism", "§e转化石头\n20%铜矿石\n5%金矿石\n5%粘土块\n§2转化深板岩\n15%深层铜矿石\n10%深层金矿石\n10%粘土块")
 	addAccelerateTooltipLanguage("ue_addons:iron_mechanism", "§e转化石头\n20%铁矿石\n5%红石矿石\n5%镍矿石\n§2转化深板岩\n15%深层铁矿石\n10%深层红石矿\n10%深层镍矿石")
 	addAccelerateTooltipLanguage("ue_addons:gold_mechanism", "§e转化石头\n20%金矿石\n5%朱砂矿石\n5%石英矿石\n§2转化深板岩\n15%深层金矿石\n10%深层朱砂矿\n10%深层石英矿")
-	addAccelerateTooltipLanguage('vintageimprovements:redstone_module', "§e转化石头\n20%红石矿石\n§2转化深板岩\n25%深层红石矿石")
-	addAccelerateTooltipLanguage('ue_addons:enchanted_mechanism', "§e转化石头\n20%青金石矿石\n1%经验块\n§2转化深板岩\n15%深层青金石矿石\n1%经验块")
-	addAccelerateTooltipLanguage('ue_addons:nether_mechanism', "§e转化石头/§2转化深板岩\n10%下界岩\n5%岩浆块\n3%下界石英矿\n3%下界金矿石\n1%远古残骸")
-	addAccelerateTooltipLanguage('ue_addons:cobalt_mechanism', "§e转化下界岩\n10%钴矿石")
-	addAccelerateTooltipLanguage('ue_addons:wooden_mechanism', "§e转化石头\n20%煤矿石\n§2转化深板岩\n15%深层煤矿石\n1%深层钻石矿石")
+	addAccelerateTooltipLanguage("vintageimprovements:redstone_module", "§e转化石头\n20%红石矿石\n§2转化深板岩\n25%深层红石矿石")
+	addAccelerateTooltipLanguage("ue_addons:enchanted_mechanism", "§e转化石头\n20%青金石矿石\n1%经验块\n§2转化深板岩\n15%深层青金石矿石\n1%经验块")
+	addAccelerateTooltipLanguage("ue_addons:nether_mechanism", "§e转化石头/§2转化深板岩\n10%下界岩\n5%岩浆块\n3%下界石英矿\n3%下界金矿石\n1%远古残骸")
+	addAccelerateTooltipLanguage("ue_addons:cobalt_mechanism", "§e转化下界岩\n10%钴矿石")
+	addAccelerateTooltipLanguage("ue_addons:wooden_mechanism", "§e转化石头\n20%煤矿石\n§2转化深板岩\n15%深层煤矿石\n1%深层钻石矿石")
 	addAccelerateTooltipLanguage("ue_addons:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 
 	addHeatedLanguaue("grilled", "炙烤")
-
-	addItemLanguaue('blood_slimeball', '血粘液球')
 
 	let mechanismGroup = [
 		["nature", "自然"],
@@ -243,5 +241,4 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`material.${global.namespace}.${key}.ranged`, ranged)
 		event.add(`material.${global.namespace}.${key}.armor`, armor)
 	}
-});
-
+})

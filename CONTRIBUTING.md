@@ -37,6 +37,7 @@ ServerEvents.recipes((event) => {
 ```
 
  - 在进行所有的有序配方, 包括`kubejs:shaped`, `minecraft:crafting_shaped`, `create:mechanical_crafting`等一系列包括了`pattern`的配方类型时, 必须按照下方的格式进行修改, 以此除外的所有格式均不接受
+
 ```js
 kubejs.shaped("minecraft:stone", [
 	"AAA",
@@ -47,6 +48,14 @@ kubejs.shaped("minecraft:stone", [
 	B: "minecraft:gravel",
 	C: "#forge:ingots/copper"
 })
+```
+
+- 在注册东西的时候, 统一使用下方格式, 并且链式方法必须换行使用
+
+```js
+event.create(`${global.namespace}:id`)
+	.tag()
+	.texture()
 ```
 
 ### `Code`公有化协议

@@ -30,3 +30,22 @@ global.toolType = {
 	"shovel": "minecraft:mineable/shovel",
 	"hoe": "minecraft:mineable/hoe"
 }
+// 所有燃料颜色
+global.dyeColorGroup = [
+	"black",
+	"blue",
+	"brown",
+	"cyan",
+	"gray",
+	"green",
+	"light_blue",
+	"light_gray",
+	"lime",
+	"magenta",
+	"orange",
+	"pink",
+	"purple",
+	"red",
+	"white",
+	"yellow"
+]

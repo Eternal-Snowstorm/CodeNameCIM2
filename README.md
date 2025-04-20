@@ -16,6 +16,3 @@
 ## Stars 历史
 
 [![Star 历史](https://starchart.cc/VechniMetel/CodeNameCIM2.svg?variant=adaptive)](https://starchart.cc/VechniMetel/CodeNameCIM2)
-
-
-
