@@ -21,7 +21,7 @@ StartupEvents.registry("block", (event) => {
 		event.create(`${global.namespace}:deepslate_${name}_ore`)
 			.textureAll(`${global.namespace}:block/ore/${name}/deepslate`)
 			.soundType(SoundType.DEEPSLATE)
-			.hardness(4.4)
+			.hardness(4.5)
 			.resistance(4.5)
 			.tag("forge:ores")
 			.tag(`forge:ores/${name}`)
@@ -32,4 +32,16 @@ StartupEvents.registry("block", (event) => {
 	}
 
 	addAloneOreBlock("quartz", "iron")
+
+	// 月球钴
+	event.create(`${global.namespace}:moon_cobalt_ore`)
+		.textureAll(`${global.namespace}:block/ore/cobalt/moon_cobalt_ore`)
+		.soundType(SoundType.STONE)
+		.hardness(10)
+		.resistance(10)
+		.tag("forge:ores")
+		.tag(`forge:ores/cobalt`)
+		.tagBlock(pickaxe)
+		.tagBlock(global.miningLevel["iron"])
+		.requiresTool(true)
 })

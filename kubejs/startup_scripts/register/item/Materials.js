@@ -64,8 +64,6 @@ StartupEvents.registry("block", (event) => {
 					.tagBlock(global.miningLevel[material.level])
 					.tag(`forge:storage_blocks`)
 					.tag(`forge:storage_blocks/${material.name}`)
-			} else {
-				return
 			}
 		})
 	})

@@ -57,6 +57,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("the_accelerator_of_mechanism_power", "构件之力催生器")
 	addBlockLanguaue("quartz_ore", "石英矿石")
 	addBlockLanguaue("deepslate_quartz_ore", "深层石英矿石")
+	addBlockLanguaue("moon_cobalt_ore", "月球钴矿石")
 
 	addAloneLanguaue(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
 	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
@@ -86,7 +87,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 
-	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产, 热力膨胀中有个机器叫")
+	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产才能确保需求量自由")
 	addJEIInfoLanguage("cookingforblockheads:sink", `"去用我的后辈多方块水泵吧"水槽如是说道`)
 	addJEIInfoLanguage("ue_addons:water_pump", "机器内如果一次产出的量如果高于剩余空间, 机器则会停止工作\n所以不需要担心水量会减少的问题, 在水量少于50%的时候会重新生产一次")
 	addJEIInfoLanguage("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
