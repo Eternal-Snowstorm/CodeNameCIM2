@@ -60,6 +60,11 @@
 		"version": "2.3.4"
 	},
 	{
+		"filename": "Capsule-1.20.1-8.0.105.jar",
+		"name": "Capsule",
+		"version": "1.20.1-8.0.105"
+	},
+	{
 		"filename": "catalogue-forge-1.20.1-1.8.0.jar",
 		"name": "Catalogue",
 		"version": "1.8.0"
@@ -113,11 +118,6 @@
 		"filename": "createdeco-2.0.2-1.20.1-forge.jar",
 		"name": "Create Deco",
 		"version": "2.0.2-1.20.1-forge"
-	},
-	{
-		"filename": "createdieselgenerators-1.20.1-1.2i.jar",
-		"name": "Create Diesel Generators",
-		"version": "1.20.1-1.2i"
 	},
 	{
 		"filename": "create_enchantment_industry-1.20.1-for-create-0.5.1.f-1.2.9.d.jar",
@@ -265,6 +265,11 @@
 		"version": "2001.3.1"
 	},
 	{
+		"filename": "ftb-ultimine-forge-2001.1.5.jar",
+		"name": "FTB Ultimine",
+		"version": "2001.1.5"
+	},
+	{
 		"filename": "ftb-xmod-compat-forge-2.1.2.jar",
 		"name": "FTB XMod Compat",
 		"version": "2.1.2"
@@ -323,6 +328,11 @@
 		"filename": "ImmersiveEngineering-1.20.1-10.2.0-183.jar",
 		"name": "Immersive Engineering",
 		"version": "1.20.1-10.2.0-183"
+	},
+	{
+		"filename": "ImmersivePetroleum-1.20.1-4.2.0-30.jar",
+		"name": "Immersive Petroleum",
+		"version": "4.2.0-30"
 	},
 	{
 		"filename": "InventoryProfilesNext-forge-1.20-1.10.14.jar",

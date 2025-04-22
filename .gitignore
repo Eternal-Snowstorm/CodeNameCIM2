@@ -129,3 +129,5 @@ config/megatimestop-client.toml
 config/resourceful-config-web.json
 config/titanium/
 config/ad_astra.jsonc
+config/capsule*
+config/immersivepetroleum-client.toml
