@@ -44,6 +44,12 @@ ClientEvents.lang("en_us", (event) => {
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.developer2", "Right click with this in off hand to get id of your main hand item")
 	addCommonTooltipLanguage("ue_addons:geographycal_hammer.not_developer", "It seems that a mysterious power has stopped you from using this tool")
 
+	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "Water and ice can be used as rocket fuel after processed by alien tech...\nThen can I use it in other ways? \nI need to gain a large amount in case I run out of electricity...")
+	addJEIInfoLanguage("cookingforblockheads:sink", `"Use multiblock well, I need a rest." says the sink`)
+	addJEIInfoLanguage("ue_addons:water_pump", "machines will stop working if the space left cannot contain the next output\nSo never worry about the amount of water, it will fill itself when it's half empty.")
+	addJEIInfoLanguage("ad_astra:ice_shard", "Can be gained by breaking ice block, fortune will affect the output.")
+	addJEIInfoLanguage("ue_addons:bucket", "Seems like a weird creation of an extremely strong power\nIt has a comfortably familiar shape, but in a thrilling upside_down direction\nThis power is enormous, blazing and deadly\nAngels corrupt because of it\nWhile villains get more strength form it\nThe container turns into a solid and terrifying capsid\nBut luckily it's fully harmless")
+
 	addAccelerateTooltipLanguage("ue_addons:stone_mechanism", "§eStone transforming\n10%Andesite\n10%Diorite\n10%Granite\n10%Limestone\n10%Seared stone\n§2Deepslate transforming\n10%Seared stone\n10%Tuff\n10%Scoria\n10%Dripstone block\n10%Smooth basalt")
 	addAccelerateTooltipLanguage("ue_addons:andesite_mechanism", "§eStone transforming\n20%Andesite\n5%Iron ore\n5%Stone\n§2Deepslate transforming\n15%Andesite\n10%Deepslate iron ore\n10%Deepslate")
 	addAccelerateTooltipLanguage("ue_addons:copper_mechanism", "§eStone transforming\n20%Copper ore\n5%Gold ore\n5%Clay\n§2Deepslate transforming\n15%Deepslate copper ore\n10%Deepslate gold ore\n10%Clay")
