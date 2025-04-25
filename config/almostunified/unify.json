@@ -1,6 +1,5 @@
 {
 	"modPriorities": [
-		"ue_addons",
 		"minecraft",
 		"kubejs",
 		"crafttweaker",
@@ -89,7 +88,9 @@
 		"sulfur",
 		"tungsten",
 		"uranium",
-		"quartz"
+		"quartz",
+		"chromium",
+		"stainless_steel"
 	],
 	"priorityOverrides": {},
 	"customTags": {},

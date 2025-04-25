@@ -19,7 +19,7 @@
 /patchouli_data.json
 /PCL/
 /rhino.local.properties
-/schematics/
+schematics/uploaded/
 /shaderpacks/
 /usercache.json
 /usernamecache.json
@@ -35,6 +35,17 @@
 /.idea
 *.zip
 fancymenu_data
+saves/*/session.lock
+
+#resourcepacks
+/resourcepacks/*
+!/resourcepacks/NewAE2.zip
+!/resourcepacks/中微子的多用途汉化材质包.zip
+!/resourcepacks/等距更纱黑体包
+!/resourcepacks/Maple Mono字体包
+!/resourcepacks/PackResource
+!/resourcepacks/Pretty X Smart Pipez.zip
+
 # config
 config/ae2/
 config/appleskin-client.toml
@@ -115,12 +126,8 @@ config/smoothboot.json
 config/fmi.toml
 config/packetfixer.properties
 config/megatimestop-client.toml
-
-#resourcepacks
-/resourcepacks/*
-!/resourcepacks/NewAE2.zip
-!/resourcepacks/中微子的多用途汉化材质包.zip
-!/resourcepacks/等距更纱黑体包
-!/resourcepacks/Maple Mono字体包
-!/resourcepacks/PackResource
-!/resourcepacks/Pretty X Smart Pipez.zip
+config/resourceful-config-web.json
+config/titanium/
+config/ad_astra.jsonc
+config/capsule*
+config/immersivepetroleum-client.toml

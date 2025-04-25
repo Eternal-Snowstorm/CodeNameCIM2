@@ -20,7 +20,7 @@
     "previewOverlay": true
   },
   "overlay": {
-    "alpha": 1.0,
+    "alpha": 0.0,
     "iconMode": "CENTERED",
     "animation": true,
     "disappearingDelay": 0.0,
@@ -31,7 +31,7 @@
     "overlayScale": 1.0,
     "overlayAnchorX": 0.5,
     "overlayAnchorY": 0.0,
-    "activeTheme": "jade:top",
+    "activeTheme": "jade:create",
     "themesHash": -328442023,
     "overlayPosX": 0.5
   },

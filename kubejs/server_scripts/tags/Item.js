@@ -4,28 +4,24 @@ ServerEvents.tags("item", (event) => {
 	event.get("create:incomplete_mechanisms")
 		.add("create:incomplete_precision_mechanism")
 
-	let colorGroup = [
-		"black",
-		"blue",
-		"brown",
-		"cyan",
-		"gray",
-		"green",
-		"light_blue",
-		"light_gray",
-		"lime",
-		"magenta",
-		"orange",
-		"pink",
-		"purple",
-		"red",
-		"white",
-		"yellow"
-	]
-	colorGroup.forEach((color) => {
+	global.dyeColorGroup.forEach((color) => {
 		event.get(`forge:dyes/${color}`)
 			.add("ue_addons:colorful_mechanism")
 	})
+
+	event.get("functionalstorage:upgrades")
+		.add("functionalstorage:copper_upgrade")
+		.add("functionalstorage:gold_upgrade")
+		.add("functionalstorage:diamond_upgrade")
+		.add("functionalstorage:netherite_upgrade")
+		.add("functionalstorage:iron_downgrade")
+		.add("functionalstorage:max_storage_upgrade")
+		.add("functionalstorage:collector_upgrade")
+		.add("functionalstorage:puller_upgrade")
+		.add("functionalstorage:pusher_upgrade")
+		.add("functionalstorage:creative_vending_upgrade")
+		.add("functionalstorage:void_upgrade")
+		.add("functionalstorage:redstone_upgrade")
 
 	event.get("curios:mechanisms")
 		.add("ue_addons:cobalt_mechanism")
@@ -34,6 +30,10 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("minecraft:sand")
 		.add("#forge:sand")
+
+	event.get("tconstruct:gauge")
+		.add("tconstruct:seared_fuel_gauge")
+		.add("tconstruct:seared_ingot_gauge")
 
 	event.get("forge:stone")
 		.add("#forge:cobblestone")
@@ -46,9 +46,5 @@ ServerEvents.tags("item", (event) => {
 		.add("createdeco:andesite_sheet")
 
 	event.get("forge:plates/andesite")
-		.removeAll()
-
-	event.get("tconstruct:gauge")
-		.add('tconstruct:seared_fuel_gauge')
-		.add('tconstruct:seared_ingot_gauge')
+		.add("#forge:plates/andesite_alloy")
 })

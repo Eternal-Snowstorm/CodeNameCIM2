@@ -16,4 +16,3 @@ ServerEvents.recipes((event) => {
 		"ae2:black_lumen_paint_ball"
 	]).processingTime(40)
 })
-//这段不需要暂时——UE

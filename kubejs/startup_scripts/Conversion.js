@@ -12,6 +12,9 @@ StartupEvents.postInit((event) => {
 	// 暗影钢
 	addConversionRecipes("create:shadow_steel", "create:chromatic_compound")
 
+	// 桶
+	addConversionRecipes("ue_addons:bucket", "minecraft:bucket")
+
 	// 矿石
 	let oreGroup = [
 		"minecraft:coal_ore",

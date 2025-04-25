@@ -8,7 +8,9 @@ ServerEvents.recipes((event) => {
 		"vintageimprovements:grinder_polishing/rose_quartz",
 		"tconstruct:smeltery/seared/drain_retextured",
 		"tconstruct:smeltery/seared/duct_retextured",
-		"tconstruct:smeltery/seared/chute_retextured"
+		"tconstruct:smeltery/seared/chute_retextured",
+		"tconstruct:__default",
+		"functionalstorage:void_upgrade"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({ id: id })
@@ -73,5 +75,10 @@ ServerEvents.recipes((event) => {
 	event.remove({
 		type: "minecraft:crafting_shapeless",
 		output: "#minecraft:planks"
+	})
+
+	event.remove({
+		type: "minecraft:crafting_shaped",
+		output: "#forge:rods"
 	})
 })

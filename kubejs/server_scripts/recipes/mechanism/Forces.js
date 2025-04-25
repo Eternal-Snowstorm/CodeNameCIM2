@@ -11,6 +11,7 @@ ServerEvents.recipes((event) => {
 			])
 		]).transitionalItem(`ue_addons:beta_${material}_force_exe`).loops(256)
 	})
+
 	create.sequenced_assembly("ue_addons:precision_force_exe", [
 		"ue_addons:empty_exe"
 	], [

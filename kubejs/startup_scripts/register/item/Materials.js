@@ -1,71 +1,127 @@
+let materials = []
+let registrationCompleted = console.log("注册已完成!")
+function addMaterial(name, color, level) {
+	let material = {
+		name: name,
+		color: color,
+		level: level,
+		types: [],
+		ingot: function () {
+			this.types.push("ingot")
+			return this
+		},
+		plate: function () {
+			this.types.push("plate")
+			return this
+		},
+		nugget: function () {
+			this.types.push("nugget")
+			return this
+		},
+		dust: function () {
+			this.types.push("dust")
+			return this
+		},
+		block: function () {
+			this.types.push("block")
+			return this
+		},
+		molten: function () {
+			this.types.push("molten")
+			return this
+		},
+	}
+
+	materials.push(material)
+	return material
+}
+
 StartupEvents.registry("item", (event) => {
-	addColorNuggetMaterials("andesite_alloy", 0xC7C8B8)
-	addColorPlateMaterials("cinderslime", 0xFF6060)
+	materials.forEach((material) => {
+		material.types.forEach((type) => {
+			if (type === "block") {
+				return
+			}
 
-	function addColorIngotMaterials(name, color) {
-		event.create(`${global.namespace}:${name}_ingot`)
-			.color(color)
-			.texture(`${global.namespace}:item/material/color/ingot`)
-			.tag(`forge:ingots/${name}`)
-			.tag("forge:ingots")
-	}
+			event.create(`${global.namespace}:${material.name}_${type}`)
+				.texture(`${global.namespace}:item/material/color/${type}`)
+				.color(0, material.color)
+				.tag(`forge:${type}s`)
+				.tag(`forge:${type}s/${material.name}`)
 
-	function addColorNuggetMaterials(name, color) {
-		event.create(`${global.namespace}:${name}_nugget`)
-			.color(color)
-			.texture(`${global.namespace}:item/material/color/nugget`)
-			.tag(`forge:nuggets/${name}`)
-			.tag("forge:nuggets")
-	}
-
-	function addColorPlateMaterials(name, color) {
-		event.create(`${global.namespace}:${name}_plate`)
-			.color(color)
-			.texture(`${global.namespace}:item/material/color/plate`)
-			.tag(`forge:plates/${name}`)
-			.tag("forge:plates")
-	}
-
-	function addColorCrystalMaterials(name, color) {
-		event.create(`${global.namespace}:${name}_crystal`)
-			.color(color)
-			.texture(`${global.namespace}:item/material/color/crystal`)
-			.tag(`forge:gems/${name}`)
-			.tag("forge:gems")
-	}
-
-	function addAloneIngotMaterials(name) {
-		event.create(`${global.namespace}:${name}_ingot`)
-			.texture(`${global.namespace}:item/material/alone/${name}/ingot`)
-			.tag(`forge:ingots/${name}`)
-			.tag("forge:ingots")
-	}
-
-	function addAlonePlateMaterials(name) {
-		event.create(`${global.namespace}:${name}_plate`)
-			.texture(`${global.namespace}:item/material/alone/${name}/plate`)
-			.tag(`forge:plates/${name}`)
-			.tag("forge:plates")
-	}
-
-	function addAloneCrystalMaterials(name) {
-		event.create(`${global.namespace}:${name}_crystal`)
-			.texture(`${global.namespace}:item/material/alone/${name}/crystal`)
-			.tag(`forge:gems/${name}`)
-			.tag("forge:gems")
-	}
+			registrationCompleted
+		})
+	})
 })
-
 StartupEvents.registry("block", (event) => {
+	materials.forEach((material) => {
+		material.types.forEach((type) => {
+			if (type === "block") {
+				event.create(`${global.namespace}:${material.name}_block`)
+					.textureAll(`${global.namespace}:block/material/color/storage_blocks`)
+					.soundType(SoundType.METAL)
+					.color(0, material.color)
+					.hardness(5)
+					.resistance(5)
+					.item((item) => {
+						item.color(0, material.color)
+					})
+					.tagBlock(global.toolType["pickaxe"])
+					.tagBlock(global.miningLevel[material.level])
+					.tag(`forge:storage_blocks`)
+					.tag(`forge:storage_blocks/${material.name}`)
 
-
-
-	function addColorBlockMaterials(name, color) {
-		event.create(`${global.namespace}:${name}_block`)
-			.color(color)
-			.texture(`${global.namespace}:item/material/color/block`)
-			.tag(`forge:storage_blocks/${name}`)
-			.tag("forge:storage_blocks")
-	}
-
+				registrationCompleted
+			}
+		})
+	})
 })
+StartupEvents.registry("fluid", (event) => {
+	materials.forEach((material) => {
+		material.types.forEach((type) => {
+			if (type === "molten") {
+				event.create(`${global.namespace}:molten_${material.name}`)
+					.thinTexture(material.color)
+					.bucketColor(material.color)
+					.flowingTexture(`${global.namespace}:block/fluid/flowing`)
+					.stillTexture(`${global.namespace}:block/fluid/still`)
+					.tag("forge:molten_materials")
+					.tag(`forge:molten_${material.name}`)
+
+				let file = `kubejs/assets/${global.namespace}/models/item/molten_${material.name}_bucket.json`
+				JsonIO.write(file, {
+					"parent": "forge:item/bucket_drip",
+					"loader": "forge:fluid_container",
+					"fluid": `${global.namespace}:molten_${material.name}`
+				})
+
+				registrationCompleted
+			}
+		})
+	})
+})
+
+// 安山合金
+addMaterial("andesite_alloy", 0xA9AFA1, "wooden")
+	.nugget()
+	.molten()
+
+// 余烬史莱姆
+addMaterial("cinderslime", 0xFF6060, "wooden")
+	.plate()
+
+// 不锈钢
+addMaterial("stainless_steel", 0x708090, "diamond")
+	.ingot()
+	.plate()
+	.nugget()
+	.block()
+	.molten()
+
+// 铬
+addMaterial("chromium", 0xA0522D, "iron")
+	.ingot()
+	.plate()
+	.nugget()
+	.block()
+	.molten()

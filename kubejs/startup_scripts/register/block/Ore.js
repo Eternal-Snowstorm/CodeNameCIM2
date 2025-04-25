@@ -5,7 +5,7 @@ StartupEvents.registry("block", (event) => {
 	 * @param {String} name 注册名称 
 	 * @param {miningLevel} level 挖掘等级 
 	 */
-	function addAloneOreBlock(name, level) {
+	function addCommonOreBlock(name, level) {
 		event.create(`${global.namespace}:${name}_ore`)
 			.textureAll(`${global.namespace}:block/ore/${name}/ore`)
 			.soundType(SoundType.STONE)
@@ -13,7 +13,6 @@ StartupEvents.registry("block", (event) => {
 			.resistance(3)
 			.tag("forge:ores")
 			.tag(`forge:ores/${name}`)
-			.tag("forge:ore_rates/dense")
 			.tagBlock(pickaxe)
 			.tagBlock(global.miningLevel[level])
 			.requiresTool(true)
@@ -21,15 +20,26 @@ StartupEvents.registry("block", (event) => {
 		event.create(`${global.namespace}:deepslate_${name}_ore`)
 			.textureAll(`${global.namespace}:block/ore/${name}/deepslate`)
 			.soundType(SoundType.DEEPSLATE)
-			.hardness(4.4)
+			.hardness(4.5)
 			.resistance(4.5)
 			.tag("forge:ores")
 			.tag(`forge:ores/${name}`)
-			.tag("forge:ore_rates/deepslate")
 			.tagBlock(pickaxe)
 			.tagBlock(global.miningLevel[level])
 			.requiresTool(true)
 	}
 
-	addAloneOreBlock("quartz", "iron")
+	addCommonOreBlock("quartz", "iron")
+
+	// 月球钴
+	event.create(`${global.namespace}:moon_cobalt_ore`)
+		.textureAll(`${global.namespace}:block/ore/cobalt/moon_cobalt_ore`)
+		.soundType(SoundType.STONE)
+		.hardness(10)
+		.resistance(10)
+		.tag("forge:ores")
+		.tag(`forge:ores/cobalt`)
+		.tagBlock(pickaxe)
+		.tagBlock(global.miningLevel["iron"])
+		.requiresTool(true)
 })

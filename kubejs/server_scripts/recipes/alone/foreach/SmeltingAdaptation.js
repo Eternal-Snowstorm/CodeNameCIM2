@@ -9,13 +9,8 @@ ServerEvents.recipes((event) => {
 		let time = Math.floor(recipe.json.get("processingTime") / 5)
 		event.custom({
 			"type": "tconstruct:melting",
-			"ingredient": {
-				"tag": tag
-			},
-			"result": {
-				"amount": amount,
-				"fluid": fluid
-			},
+			"ingredient": { "tag": tag },
+			"result": { "amount": amount, "fluid": fluid },
 			"temperature": 1000,
 			"time": time
 		}).id(`${recipe.getId()}_kubejs_tconstruct_melting`)
@@ -33,7 +28,6 @@ ServerEvents.recipes((event) => {
 	//         "amount": 810,//900mb
 	// 			//  你定义的流体
 	//         "fluid": "createbigcannons:molten_nethersteel"
-	// 			
 	//     },
 	//     "temperature": 800,//温度 800是常规燃料 1000是岩浆 1500是烈焰血
 	//     "time": 100//时间 100是25秒

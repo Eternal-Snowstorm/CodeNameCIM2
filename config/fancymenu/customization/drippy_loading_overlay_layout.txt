@@ -3,17 +3,17 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1740382282133
+  last_edited_time = 1745234829358
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:aad4e735-0270-4a71-9fb8-adb5a6507ba7-1740382195740] = [groups:][instances:]
+  [loading_requirement_container_meta:040b8d1c-d5cc-4b08-86b0-23222c65968a-1745234698116] = [groups:][instances:]
 }
 
 menu_background {
-  color = #008080
+  color = #3a6ea5
   background_type = drippy_color_background
 }
 
@@ -37,14 +37,14 @@ layout_action_executable_blocks {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/cim2.png
+  source = [source:local]/config/fancymenu/assets/cmi_flat.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
   image_tint = #FFFFFF
   element_type = image
-  instance_identifier = 29da01ae-e3b5-42fb-9f9f-400bac2cf9cb-1740201004420
+  instance_identifier = aad93678-fb53-4773-a116-21d5e254acd3-1745159426348
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -53,75 +53,19 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1012
+  auto_sizing_base_screen_width = 1856
+  auto_sizing_base_screen_height = 1056
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -75
-  y = -75
-  width = 150
-  height = 150
+  x = -65
+  y = -83
+  width = 128
+  height = 128
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
-  element_loading_requirement_container_identifier = 00c86b8d-97e4-4d8a-96ce-d9152a4f0515-1740201004420
-  [loading_requirement_container_meta:00c86b8d-97e4-4d8a-96ce-d9152a4f0515-1740201004420] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-}
-
-element {
-  interactable = true
-  source = 仅供测试%n%Alpha版本请勿泄露
-  source_mode = direct
-  shadow = true
-  scale = 1.0
-  base_color = #FFFFFFFF
-  text_border = 2
-  line_spacing = 2
-  enable_scrolling = true
-  auto_line_wrapping = true
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  quote_color = #818181FF
-  quote_indent = 8.0
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
-  parse_markdown = true
-  element_type = text_v2
-  instance_identifier = 8a0e4303-b8bd-4a0e-a283-124402de7cc3-1740382226044
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1012
-  sticky_anchor = false
-  anchor_point = bottom-left
-  x = -182
-  y = 100
-  width = 200
-  height = 40
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 22f78573-4d95-44a7-bb43-7bd89b8fd99b-1740382226044
-  [loading_requirement_container_meta:22f78573-4d95-44a7-bb43-7bd89b8fd99b-1740382226044] = [groups:][instances:]
+  element_loading_requirement_container_identifier = 4a3f7789-eb44-4d16-8ed3-da382e72e98b-1745159426348
+  [loading_requirement_container_meta:4a3f7789-eb44-4d16-8ed3-da382e72e98b-1745159426348] = [groups:][instances:]
   enable_parallax = false
   parallax_intensity = 0.5
   invert_parallax = false
@@ -156,10 +100,10 @@ vanilla_button {
   auto_sizing_base_screen_height = 1012
   sticky_anchor = false
   anchor_point = vanilla
-  x = 114
-  y = 95
-  width = 252
-  height = 62
+  x = 100
+  y = 99
+  width = 264
+  height = 66
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -204,9 +148,9 @@ vanilla_button {
   auto_sizing_base_screen_height = 1012
   sticky_anchor = false
   anchor_point = vanilla
-  x = 114
-  y = 205
-  width = 252
+  x = 100
+  y = 214
+  width = 264
   height = 10
   stretch_x = false
   stretch_y = false

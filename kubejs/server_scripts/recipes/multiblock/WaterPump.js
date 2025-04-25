@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 				"type": "custommachinery:fluid",
 				"mode": "output",
 				"fluid": "minecraft:water",
-				"amount": 2147483647
+				"amount": 1073741823
 			},
 			{
 				"type": "custommachinery:structure",

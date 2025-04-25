@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs } = event.recipes
+	let { create, kubejs, tconstruct } = event.recipes
 
 	create.deploying("minecraft:sculk_sensor", [
 		"minecraft:sculk",
@@ -62,7 +62,14 @@ ServerEvents.recipes((event) => {
 		A: "minecraft:rotten_flesh"
 	}).id(`${global.namespace}:what_is_this`)
 
-	kubejs.shapeless("ue_addons:bucket", [
-		"minecraft:bucket"
-	])
+	// 虚空升级
+	tconstruct.casting_basin(
+		"functionalstorage:void_upgrade",
+		Fluid.of("tconstruct:molten_obsidian", 4000)
+	).cast("#functionalstorage:drawer").cast_consumed(true).cooling_time(40)
+
+	tconstruct.casting_table(
+		"functionalstorage:void_upgrade",
+		Fluid.of("tconstruct:molten_obsidian", 4000)
+	).cast("#functionalstorage:upgrades").cast_consumed(true).cooling_time(40)
 })

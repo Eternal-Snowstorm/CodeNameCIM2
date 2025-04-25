@@ -20,6 +20,10 @@ StartupEvents.registry("item", (event) => {
 		"heavy_engineering",
 		"enchanted",
 		"smart",
+		"computing",
+		"desh",
+		"ostrum",
+		"calorite",
 		"basic_mekanism",
 		"advanced_mekanism",
 		"elite_mekanism",
@@ -29,8 +33,7 @@ StartupEvents.registry("item", (event) => {
 		"antimatter",
 		"coil",
 		"sculk",
-		"colorful",
-		"computing"
+		"colorful"
 	]
 	//仅注册完成状态的构件 没有驱动
 	global.mechanismList = mechanismRegister.concat("pigiron")
