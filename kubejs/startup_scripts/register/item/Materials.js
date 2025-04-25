@@ -81,8 +81,8 @@ StartupEvents.registry("fluid", (event) => {
 		material.types.forEach((type) => {
 			if (type === "molten") {
 				event.create(`${global.namespace}:molten_${material.name}`)
-					.thinTexture(color)
-					.bucketColor(color)
+					.thinTexture(material.color)
+					.bucketColor(material.color)
 					.flowingTexture(`${global.namespace}:block/fluid/flowing`)
 					.stillTexture(`${global.namespace}:block/fluid/still`)
 					.tag("forge:molten_materials")
