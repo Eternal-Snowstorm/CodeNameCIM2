@@ -5,10 +5,16 @@ ServerEvents.recipes((event) => {
 	const IRON_MECH = "ue_addons:iron_mechanism"
 	const THERMAL_MECH = "ue_addons:thermal_mechanism"
 
+	const REDSTONE_MOD = "vintageimprovements:redstone_module"
+
 	const COPPER_INGOT = "#forge:ingots/copper"
 	const IRON_INGOT = "#forge:ingots/iron"
+	const SILVER_INGOT = "#forge:ingots/silver"
 
 	const GLASS = "#forge:glass"
+	const PLANK = "#minecraft:planks"
+
+	const FRAME = "thermal:machine_frame"
 
 	// 流体单元框架
 	kubejs.shaped("thermal:fluid_cell_frame", [
@@ -34,109 +40,235 @@ ServerEvents.recipes((event) => {
 		D: IRON_INGOT
 	}).id("thermal:machine_frame")
 
+	// 
 	kubejs.shaped("thermal:device_potion_diffuser", [
-		["#forge:ingots/silver", "ue_addons:thermal_mechanism", "#forge:ingots/silver"],
-		["#forge:glass", "minecraft:glass_bottle", "#forge:glass"],
-		["#forge:ingots/silver", "vintageimprovements:redstone_module", "#forge:ingots/silver"]
-	])
+		"ABA",
+		"CDC",
+		"AEA"
+	], {
+		A: SILVER_INGOT,
+		B: THERMAL_MECH,
+		C: GLASS,
+		D: "minecraft:glass_bottle",
+		E: REDSTONE_MOD
+	}).id("thermal:device_potion_diffuser")
+
+	// 
 	kubejs.shaped("thermal:device_nullifier", [
-		["#forge:ingots/silver", "vintageimprovements:redstone_module", "#forge:ingots/silver"],
-		["#forge:glass", "minecraft:lava_bucket", "#forge:glass"],
-		["#forge:ingots/silver", "ue_addons:thermal_mechanism", "#forge:ingots/silver"]
-	])
+		"ABA",
+		"CDC",
+		"AEA"
+	], {
+		A: SILVER_INGOT,
+		B: REDSTONE_MOD,
+		C: GLASS,
+		D: "minecraft:lava_bucket",
+		E: THERMAL_MECH
+	}).id("thermal:device_nullifier")
+
+	// 
 	kubejs.shaped("thermal:device_xp_condenser", [
-		["#forge:ingots/silver", "ue_addons:enchanted_mechanism", "#forge:ingots/silver"],
-		["#forge:glass", "thermal:xp_crystal", "#forge:glass"],
-		["#forge:ingots/silver", "ue_addons:thermal_mechanism", "#forge:ingots/silver"]
-	])
+		"ABA",
+		"CDC",
+		"AEA"
+	], {
+		A: SILVER_INGOT,
+		B: "ue_addons:enchanted_mechanism",
+		C: GLASS,
+		D: "thermal:xp_crystal",
+		E: THERMAL_MECH
+	})
+
+	// 
 	kubejs.shaped("thermal:device_collector", [
-		["#forge:ingots/tin", "", "#forge:ingots/tin"],
-		["#forge:glass", "minecraft:hopper", "#forge:glass"],
-		["#forge:ingots/tin", "ue_addons:thermal_mechanism", "#forge:ingots/tin"]
-	])
+		"A A",
+		"BCB",
+		"ADA"
+	], {
+		A: "#forge:ingots/tin",
+		B: GLASS,
+		C: "minecraft:hopper",
+		D: THERMAL_MECH
+	})
+
+	// 
 	kubejs.shaped("thermal:redstone_servo", [
-		["vintageimprovements:redstone_module", "", ""],
-		["", "#forge:ingots/iron", ""],
-		["", "", "minecraft:redstone"]
-	])
+		"A  ",
+		" B ",
+		"  C"
+	], {
+		A: REDSTONE_MOD,
+		B: IRON_INGOT,
+		C: "minecraft:redstone"
+	})
+
+	// 
 	kubejs.shaped("thermal:device_composter", [
-		["ue_addons:wooden_mechanism", "ue_addons:iron_mechanism", "#minecraft:planks"],
-		["#forge:glass", "minecraft:composter", "#forge:glass"],
-		["#minecraft:planks", "vintageimprovements:redstone_module", "#minecraft:planks"]
-	])
+		"ABC",
+		"DED",
+		"CFC"
+	], {
+		A: "ue_addons:wooden_mechanism",
+		B: IRON_MECH,
+		C: PLANK,
+		D: GLASS,
+		E: "minecraft:composter",
+		F: REDSTONE_MOD
+	})
+
+	// 
 	kubejs.shaped("thermal:device_fisher", [
-		["#minecraft:planks", "ue_addons:copper_mechanism", "#minecraft:planks"],
-		["#forge:glass", "minecraft:fishing_rod", "#forge:glass"],
-		["#minecraft:planks", "ue_addons:thermal_mechanism", "#minecraft:planks"]
-	])
+		"ABA",
+		"CDC",
+		"AEA"
+	], {
+		A: PLANK,
+		B: COPPER_MECH,
+		C: GLASS,
+		D: "minecraft:fishing_rod",
+		E: THERMAL_MECH
+	})
+
+	// 
 	kubejs.shaped("16x thermal:rf_coil", [
-		["ue_addons:gold_mechanism", "", ""],
-		["", "minecraft:redstone", ""],
-		["", "", "ue_addons:gold_mechanism"]
-	])
+		"A  ",
+		" B ",
+		"  A"
+	], {
+		A: "ue_addons:gold_mechanism",
+		B: "minecraft:redstone"
+	})
+
+	// 
 	kubejs.shaped("thermal:dynamo_stirling", [
-		["", "minecraft:redstone", ""],
-		["minecraft:stone", "", "minecraft:stone"],
-		["ue_addons:stone_mechanism", "minecraft:flint", "ue_addons:stone_mechanism"]
-	])
+		" A ",
+		"B B",
+		"CDC"
+	], {
+		A: "minecraft:redstone",
+		B: "minecraft:stone",
+		C: "ue_addons:stone_mechanism",
+		D: "minecraft:flint"
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_pulverizer", [
+		" A ",
+		" B ",
+		" C "
+	], {
+		A: "create:chute",
+		B: FRAME,
+		C: IRON_MECH
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_sawmill", [
+		" A ",
+		" B ",
+		" C "
+	],{
+		A: "create:mechanical_saw",
+		B: FRAME,
+		C: THERMAL_MECH
+	})
+
+	// 
+	kubejs.shaped("thermal:dynamo_gourmand", [
+		"   ",
+		" A ",
+		"BCB"
+	],{
+		A: "ue_addons:pigiron_mechanism",
+		B: "minecraft:bone",
+		C: "thermal:dynamo_compression"
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_crafter", [
+		" A ",
+		" B ",
+		"CDC"
+	],{
+		A: "minecraft:crafting_table",
+		B: FRAME,
+		C: "#forge:ingots/tin",
+		D: COPPER_MECH
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_bottler", [
+		" A ",
+		" B ",
+		" C "
+	],{
+		A: FRAME,
+		B: "create:spout",
+		C: THERMAL_MECH
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_press", [
+		"   ",
+		"ABC",
+		" D "
+	],{
+		A: FRAME,
+		B: "create:mechanical_press",
+		C: "createaddition:electric_motor",
+		D: THERMAL_MECH
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_centrifuge", [
+		" A ",
+		" B ",
+		" C "
+	],{
+		A: "ue_addons:coil_mechanism",
+		B: "vintageimprovements:centrifuge",
+		C: FRAME
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_furnace", [
+		" A ",
+		" B ",
+		" C "
+	],{
+		A: REDSTONE_MOD,
+		B: FRAME,
+		C: "minecraft:furnace"
+	})
+
+	// 
 	create.item_application("thermal:dynamo_compression", [
 		"thermal:dynamo_stirling",
 		"ue_addons:thermal_mechanism"
 	])
+
+	// 
 	create.item_application("thermal:dynamo_disenchantment", [
 		"thermal:dynamo_compression",
 		"ue_addons:enchanted_mechanism"
 	])
+
+	// 
 	create.item_application("thermal:dynamo_magmatic", [
 		"thermal:dynamo_compression",
 		"ue_addons:feinforced_mechanism"
 	])
-	kubejs.shaped("thermal:dynamo_gourmand", [
-		["", "", ""],
-		["", "ue_addons:pigiron_mechanism", ""],
-		["minecraft:bone", "thermal:dynamo_compression", "minecraft:bone"]
-	])
-	kubejs.shaped("thermal:machine_crafter", [
-		["", "minecraft:crafting_table", ""],
-		["", "thermal:machine_frame", ""],
-		["#forge:ingots/tin", "ue_addons:copper_mechanism", "#forge:ingots/tin"]
-	])
-	kubejs.shaped("thermal:machine_bottler", [
-		["", "thermal:machine_frame", ""],
-		["", "create:spout", ""],
-		["", "ue_addons:thermal_mechanism", ""]
-	])
+
+	// 
 	create.item_application("thermal:machine_crucible", [
 		"thermal:machine_frame",
 		"ue_addons:nether_mechanism"
 	])
-	kubejs.shaped("thermal:machine_press", [
-		["", "", ""],
-		["thermal:machine_frame", "create:mechanical_press", "createaddition:electric_motor"],
-		["", "ue_addons:thermal_mechanism", ""]
-	])
-	kubejs.shaped("thermal:machine_centrifuge", [
-		["", "ue_addons:coil_mechanism", ""],
-		["", "vintageimprovements:centrifuge", ""],
-		["", "thermal:machine_frame", ""]
-	])
-	kubejs.shaped("thermal:machine_furnace", [
-		["", "vintageimprovements:redstone_module", ""],
-		["", "thermal:machine_frame", ""],
-		["", "minecraft:furnace", ""]
-	])
+
+	// 
 	create.item_application("thermal:machine_pyrolyzer", [
 		"thermal:machine_crucible",
 		"ue_addons:feinforced_mechanism"
 	])
-	kubejs.shaped("thermal:machine_pulverizer", [
-		["", "create:chute", ""],
-		["", "thermal:machine_frame", ""],
-		["", "ue_addons:iron_mechanism", ""]
-	])
-	kubejs.shaped("thermal:machine_sawmill", [
-		["", "create:mechanical_saw", ""],
-		["", "thermal:machine_frame", ""],
-		["", "ue_addons:thermal_mechanism", ""]
-	])
+
 })

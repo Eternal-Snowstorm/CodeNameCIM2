@@ -129,6 +129,10 @@ ClientEvents.lang("zh_cn", (event) => {
 		["heavy_engineering", "重型工程"],
 		["enchanted", "附魔"],
 		["smart", "智能"],
+		["computing", "计算"],
+		["desh","戴斯"],
+		["ostrum","紫金"],
+		["calorite","耐热金属"],
 		["basic_mekanism", "基础通用"],
 		["advanced_mekanism", "高级通用"],
 		["elite_mekanism", "精英通用"],
@@ -141,8 +145,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["colorful", "多彩"],
 		["pigiron", "生铁"],
 		["nether", "下界"],
-		["creative", "创造"],
-		["computing", "计算"]
+		["creative", "创造"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
