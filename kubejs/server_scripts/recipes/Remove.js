@@ -9,7 +9,8 @@ ServerEvents.recipes((event) => {
 		"tconstruct:smeltery/seared/drain_retextured",
 		"tconstruct:smeltery/seared/duct_retextured",
 		"tconstruct:smeltery/seared/chute_retextured",
-		"tconstruct:__default"
+		"tconstruct:__default",
+		"functionalstorage:void_upgrade"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({ id: id })

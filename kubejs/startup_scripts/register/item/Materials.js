@@ -1,5 +1,5 @@
 let materials = []
-
+let registrationCompleted = console.log("注册已完成!")
 function addMaterial(name, color, level) {
 	let material = {
 		name: name,
@@ -25,7 +25,11 @@ function addMaterial(name, color, level) {
 		block: function () {
 			this.types.push("block")
 			return this
-		}
+		},
+		molten: function () {
+			this.types.push("molten")
+			return this
+		},
 	}
 
 	materials.push(material)
@@ -44,6 +48,8 @@ StartupEvents.registry("item", (event) => {
 				.color(0, material.color)
 				.tag(`forge:${type}s`)
 				.tag(`forge:${type}s/${material.name}`)
+
+			registrationCompleted
 		})
 	})
 })
@@ -64,13 +70,58 @@ StartupEvents.registry("block", (event) => {
 					.tagBlock(global.miningLevel[material.level])
 					.tag(`forge:storage_blocks`)
 					.tag(`forge:storage_blocks/${material.name}`)
+
+				registrationCompleted
+			}
+		})
+	})
+})
+StartupEvents.registry("fluid", (event) => {
+	materials.forEach((material) => {
+		material.types.forEach((type) => {
+			if (type === "molten") {
+				event.create(`${global.namespace}:molten_${material.name}`)
+					.thinTexture(color)
+					.bucketColor(color)
+					.flowingTexture(`${global.namespace}:block/fluid/flowing`)
+					.stillTexture(`${global.namespace}:block/fluid/still`)
+					.tag("forge:molten_materials")
+					.tag(`forge:molten_${name}`)
+
+				let file = `kubejs/assets/${global.namespace}/models/item/molten_${name}_bucket.json`
+				JsonIO.write(file, {
+					"parent": "forge:item/bucket_drip",
+					"loader": "forge:fluid_container",
+					"fluid": `${global.namespace}:molten_${name}`
+				})
+
+				registrationCompleted
 			}
 		})
 	})
 })
 
-addMaterial("andesite_alloy", 0xC7C8B8, "wooden")
+// 安山合金
+addMaterial("andesite_alloy", 0xA9AFA1, "wooden")
 	.nugget()
+	.molten()
 
+// 余烬史莱姆
 addMaterial("cinderslime", 0xFF6060, "wooden")
 	.plate()
+
+// 不锈钢
+addMaterial("stainless_steel", 0x708090, "diamond")
+	.ingot()
+	.plate()
+	.nugget()
+	.block()
+	.molten()
+
+// 铬
+addMaterial("chromium", 0xA0522D, "iron")
+	.ingot()
+	.plate()
+	.nugget()
+	.block()
+	.molten()

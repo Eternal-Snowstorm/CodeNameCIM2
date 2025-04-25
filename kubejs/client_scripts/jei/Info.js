@@ -7,4 +7,5 @@ JEIEvents.information((event) => {
 	addJEIInfo("ue_addons:water_pump")
 	addJEIInfo("ad_astra:cryo_fuel_bucket")
 	addJEIInfo("ad_astra:ice_shard")
+	addJEIInfo("ue_addons:bucket")
 })

@@ -5,6 +5,6 @@
 		"amount": 50,
 		"fluid": "ad_astra:cryo_fuel"
 	},
-	"rate": 15,
-	"temperature": 1500
+	"rate": 20,
+	"temperature": 2000
 }

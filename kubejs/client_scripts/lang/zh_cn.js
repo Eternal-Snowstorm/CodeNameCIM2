@@ -3,12 +3,15 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addItemLanguaue("geological_hammer", "地质锤(调试工具)")
 	addItemLanguaue("empty_exe", "空程序.exe")
-	addItemLanguaue("andesite_alloy_nugget", "安山合金粒")
-	addItemLanguaue("cinderslime_plate", "余烬史莱姆板")
 	addItemLanguaue("single_crystal_silicon", "单晶硅")
 	addItemLanguaue("computer_component", "计算机组件")
 	addItemLanguaue("bucket", "桶(?)")
 	addItemLanguaue("blood_slime_ball", "黏血球")
+
+	addMaterialLanguaue("andesite", "安山合金")
+	addMaterialLanguaue("cinderslime", "余烬史莱姆")
+	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
+	addMaterialLanguaue("chromium", "铬")
 
 	addForceLanguage("precision", "精密")
 
@@ -91,6 +94,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLanguage("cookingforblockheads:sink", `"去用我的后辈多方块水泵吧"水槽如是说道`)
 	addJEIInfoLanguage("ue_addons:water_pump", "机器内如果一次产出的量如果高于剩余空间, 机器则会停止工作\n所以不需要担心水量会减少的问题, 在水量少于50%的时候会重新生产一次")
 	addJEIInfoLanguage("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
+	addJEIInfoLanguage("ue_addons:bucket", "当云层深处第十三次电荷震颤的须臾\n苍白枝桠贯穿天地脊椎\n某种逆鳞在强光中沸腾汽化\n百万伏特的笔锋正改写造物法则\n残留的晶簇表面\n游走着尚未冷却的辉光纹路\n那是雷霆签署在元素周期表边缘的\n一则暴烈而私密的注脚")
 
 	addAccelerateTooltipLanguage("ue_addons:stone_mechanism", "§e转化石头\n10%安山岩\n10%闪长岩\n10%花岗岩\n10%石灰岩\n10%焦黑石头\n§2转化深板岩\n10%焦黑石头\n10%凝灰岩\n10%熔渣\n10%滴水石块\n10%平滑玄武岩")
 	addAccelerateTooltipLanguage("ue_addons:andesite_mechanism", "§e转化石头\n20%安山岩\n5%铁矿石\n5%锌矿石\n§2转化深板岩\n15%安山岩\n10%深层铁矿石\n10%深层锌矿石")
@@ -206,8 +210,13 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_ingot`, `${value}锭`)
 		event.add(`item.${global.namespace}.${key}_nugget`, `${value}粒`)
 		event.add(`item.${global.namespace}.${key}_plate`, `${value}板`)
+		event.add(`item.${global.namespace}.${key}_dust`, `${value}粉`)
 
 		event.add(`block.${global.namespace}.${key}_block`, `${value}块`)
+
+		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
+		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
+		event.add(`block.${global.namespace}.molten_${key}_bucket`, `熔融${value}桶`)
 	}
 
 	function addCommonTooltipLanguage(key, value) {
