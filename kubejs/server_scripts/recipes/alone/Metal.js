@@ -76,8 +76,8 @@ Metals.forEach((metal) => {
 
 	if(!(Ingredient.of(`#forge:plates/${metal}`).itemIds.length === 0))
 	{
-		create.pressing(`#forge:ingots/${metal}`,`#forge:plates/${metal}`)
-		thermal.press(`#forge:ingots/${metal}`,`#forge:plates/${metal}`)
+		create.pressing(`#forge:plates/${metal}`,`#forge:ingots/${metal}`)
+		thermal.press(`#forge:plates/${metal}`,`#forge:ingots/${metal}`)
 	}else{
 		console.warn(`No plate found of ${metal}!`)
 	}
