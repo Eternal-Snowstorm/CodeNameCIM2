@@ -1,5 +1,4 @@
 let materials = []
-let registrationCompleted = console.log("注册已完成!")
 function addMaterial(name, color, level) {
 	let material = {
 		name: name,
@@ -39,7 +38,7 @@ function addMaterial(name, color, level) {
 StartupEvents.registry("item", (event) => {
 	materials.forEach((material) => {
 		material.types.forEach((type) => {
-			if (type === "block") {
+			if (type === "block" || type === "molten") {
 				return
 			}
 
@@ -47,9 +46,10 @@ StartupEvents.registry("item", (event) => {
 				.texture(`${global.namespace}:item/material/color/${type}`)
 				.color(0, material.color)
 				.tag(`forge:${type}s`)
+				.tag(`forge:${type}s/metal`)
 				.tag(`forge:${type}s/${material.name}`)
 
-			registrationCompleted
+			console.log("Item注册完毕!")
 		})
 	})
 })
@@ -69,9 +69,10 @@ StartupEvents.registry("block", (event) => {
 					.tagBlock(global.toolType["pickaxe"])
 					.tagBlock(global.miningLevel[material.level])
 					.tag(`forge:storage_blocks`)
+					.tag(`forge:storage_blocks/metal`)
 					.tag(`forge:storage_blocks/${material.name}`)
 
-				registrationCompleted
+					console.log("Block注册完毕!")
 			}
 		})
 	})
@@ -95,7 +96,7 @@ StartupEvents.registry("fluid", (event) => {
 					"fluid": `${global.namespace}:molten_${material.name}`
 				})
 
-				registrationCompleted
+				console.log("Fluid注册完毕!")
 			}
 		})
 	})

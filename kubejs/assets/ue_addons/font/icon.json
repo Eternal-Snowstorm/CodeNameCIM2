@@ -2,7 +2,7 @@
 	"providers": [
 		{
 			"type": "bitmap",
-			"file": "ue_addons:font/packicon.png",
+			"file": "ue_addons:font/icon.png",
 			"ascent": 10,
 			"height": 12,
 			"chars": [

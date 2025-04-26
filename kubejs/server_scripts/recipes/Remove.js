@@ -81,4 +81,16 @@ ServerEvents.recipes((event) => {
 		type: "minecraft:crafting_shaped",
 		output: "#forge:rods"
 	})
+
+	event.remove({
+		output: "#forge:ingots/metal",
+		output: "#forge:storage_blocks/metal",
+		output: "#forge:nuggets/metal",
+		output: "#forge:plates/metal",
+
+		type: "minecraft:crafting_shaped",
+		type: "minecraft:crafting_shapeless",
+		type: "create:pressing",
+		type: "thermal:press"
+	})
 })

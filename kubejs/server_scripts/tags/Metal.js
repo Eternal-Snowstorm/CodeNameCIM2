@@ -1,0 +1,71 @@
+ServerEvents.tags("item", (event) => {
+	let metalGroup = [
+		"andesite_alloy",
+		"aluminum",
+		"brass",
+		"bronze",
+		"cobalt",
+		"constantan",
+		"copper",
+		"electrum",
+		"gold",
+		"invar",
+		"iron",
+		"lead",
+		"lumium",
+		"netherite",
+		"nickel",
+		"osmium",
+		"signalum",
+		"silver",
+		"steel",
+		"tin",
+		"zinc",
+		"rose_gold",
+		"hepatizon",
+		"manyullyn",
+		"amethyst_bronze",
+		"vanadium",
+		"chrome",
+		"enderium",
+		"iridium",
+		"mithril",
+		"platinum",
+		"tungsten",
+		"uranium",
+		"chromium",
+		"stainless_steel",
+		"desh",
+		"ostrum",
+		"calorite",
+		"prismalium",
+		"melodium",
+		"stellarium",
+		"soul_infused",
+		"shellite",
+		"twinite",
+		"dragonsteel",
+		"abyssal"
+	]
+	metalGroup.forEach((material) => {
+		event.get(`forge:ingots/metal/${material}`)
+			.add(`#forge:ingots/${material}`)
+		event.get(`forge:ingots/metal`)
+			.add(`#forge:ingots/${material}`)
+
+		event.get(`forge:plates/metal/${material}`)
+			.add(`#forge:plates/${material}`)
+		event.get(`forge:plates/metal`)
+			.add(`#forge:plates/${material}`)
+
+		event.get(`forge:nuggets/metal/${material}`)
+			.add(`#forge:nuggets/${material}`)
+		event.get(`forge:nuggets/metal`)
+			.add(`#forge:nuggets/${material}`)
+
+		event.get(`forge:storage_blocks/metal/${material}`)
+			.add(`#forge:storage_blocks/${material}`)
+		event.get(`forge:storage_blocks/metal`)
+			.add(`#forge:storage_blocks/${material}`)
+	})
+})
