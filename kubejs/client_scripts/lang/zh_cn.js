@@ -63,6 +63,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("moon_cobalt_ore", "月球钴矿石")
 
 	addAloneLanguaue(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
+	addAloneLanguaue(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
 	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
 	addAloneLanguaue("curios.identifier.mechanisms", "构件")
 	addAloneLanguaue(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")
@@ -178,7 +179,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addCastItemLanguaue(key, value) {
-		event.add(`item.${global.namespace}.${key}_cast`, `${value}铸模`)
+		event.add(`item.${global.namespace}.${key}_cast`, `${value}金质铸模`)
 		event.add(`item.${global.namespace}.${key}_sand_cast`, `${value}沙子铸模`)
 		event.add(`item.${global.namespace}.${key}_red_sand_cast`, `${value}红沙铸模`)
 	}

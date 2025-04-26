@@ -48,10 +48,9 @@ StartupEvents.registry("item", (event) => {
 				.tag(`forge:${type}s`)
 				.tag(`forge:${type}s/metal`)
 				.tag(`forge:${type}s/${material.name}`)
-
-			console.log("Item注册完毕!")
 		})
 	})
+	console.log("Item注册完毕!")
 })
 StartupEvents.registry("block", (event) => {
 	materials.forEach((material) => {
@@ -71,11 +70,10 @@ StartupEvents.registry("block", (event) => {
 					.tag(`forge:storage_blocks`)
 					.tag(`forge:storage_blocks/metal`)
 					.tag(`forge:storage_blocks/${material.name}`)
-
-					console.log("Block注册完毕!")
 			}
 		})
 	})
+	console.log("Block注册完毕!")
 })
 StartupEvents.registry("fluid", (event) => {
 	materials.forEach((material) => {
@@ -95,11 +93,10 @@ StartupEvents.registry("fluid", (event) => {
 					"loader": "forge:fluid_container",
 					"fluid": `${global.namespace}:molten_${material.name}`
 				})
-
-				console.log("Fluid注册完毕!")
 			}
 		})
 	})
+	console.log("Fluid注册完毕!")
 })
 
 // 安山合金
@@ -120,7 +117,7 @@ addMaterial("stainless_steel", 0x708090, "diamond")
 	.molten()
 
 // 铬
-addMaterial("chromium", 0xA0522D, "iron")
+addMaterial("chromium", 0xF1EFEF, "iron")
 	.ingot()
 	.plate()
 	.nugget()

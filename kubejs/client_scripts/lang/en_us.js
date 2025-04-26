@@ -74,7 +74,7 @@ ClientEvents.lang("en_us", (event) => {
 
 	addItemLanguaue('blood_slimeball', 'Blood Slimeball')
 
-	let materialGroup = [
+	let mechanismGroup = [
 		["nature", "Natural"],
 		["wooden", "Wooden"],
 		["stone", "Stone"],
@@ -110,7 +110,7 @@ ClientEvents.lang("en_us", (event) => {
 	mechanismGroup.forEach(([material, name]) => {
 		addFlashdriveLanguaue(material,name)
 	})
-	materialGroup.forEach(([material, name]) => {
+	mechanismGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
 		addForceLanguage(material, name)
 	})

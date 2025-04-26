@@ -1,0 +1,41 @@
+StartupEvents.registry("block", (event) => {
+	let blockIO = [
+		"ponder_thermal_input",
+		"ponder_thermal_output",
+		"ponder_thermal_output_on",
+		"ponder_thermal_input_on",
+		"ponder_thermal_fluid",
+		"ponder_thermal_fluid_blue",
+		"ponder_thermal_fluid_orange",
+		"ponder_thermal_slot",
+		"ponder_thermal_slot_blue",
+		"ponder_thermal_slot_orange",
+		"ponder_thermal_energy",
+		"ponder_thermal_gui",
+		"ponder_thermal_gui_blue",
+		"ponder_thermal_gui_green",
+		"ponder_thermal_gui_red",
+		"ponder_thermal_machine_front",
+		"ponder_thermal_machine_side",
+		"ponder_thermal_machine_side_blue",
+		"ponder_thermal_machine_side_orange",
+		"ponder_thermal_machine_side_mix",
+		"ponder_thermal_machine_side_disabled",
+		"ponder_thermal_machine_top",
+		"ponder_thermal_machine_bottom",
+		"ponder_thermal_rs1_off",
+		"ponder_thermal_rs2_off",
+		"ponder_thermal_rs3_off",
+		"ponder_thermal_rs1_on",
+		"ponder_thermal_rs2_on",
+		"ponder_thermal_rs3_on",
+		"ponder_thermal_lava",
+		"ponder_thermal_water",
+		"ponder_thermal_arrow"
+	]
+	blockIO.forEach((block) => {
+		event.create(`${global.namespace}:${block}`)
+			.textureAll(`${global.namespace}:block/io_debug/${block}`)
+			.soundType(SoundType.METAL)
+	})
+})
