@@ -1,56 +1,85 @@
-// ServerEvents.recipes((event) => {
-// 	let { kubejs, create } = event.recipes
+let Metals = [
+	"andesite_alloy",
+	"aluminum",
+	"brass",
+	"bronze",
+	"cobalt",
+	"constantan",
+	"copper",
+	"electrum",
+	"gold",
+	"invar",
+	"iron",
+	"lead",
+	"lumium",
+	"netherite",
+	"nickel",
+	"osmium",
+	"signalum",
+	"silver",
+	"steel",
+	"tin",
+	"zinc",
+	"rose_gold",
+	"hepatizon",
+	"manyullyn",
+	"amethyst_bronze",
+	"vanadium",
+	"chromium",
+	"enderium",
+	"platinum",
+	"uranium",
+	"desh",
+	"ostrum",
+	"calorite",
+	"prismalium",
+	"melodium",
+	"stellarium",
+	"soul_infused",
+	"shellite",
+	"twinite",
+	"dragonsteel",
+	"abyssal",
+	"stainless_steel"
+]
+ServerEvents.recipes((event) => {
+let { kubejs, create, thermal } = event.recipes
+Metals.forEach((metal) => {
+	if(!Ingredient.of(`#forge:storage_blocks/${metal}`).isEmpty())
+	{
+		kubejs.shapeless(`9x #forge:ingots/${metal}`,[`#forge:storage_blocks/${metal}`])
+		kubejs.shapeless(`#forge:storage_blocks/${metal}`,[`9x #forge:ingots/${metal}`])
+	}else{
+		console.warn(`No storage block found of ${metal}!`)
+	}
 
-// 	let tags = {
-// 		ingots: "#forge:ingots/metal",
-// 		blocks: "#forge:storage_blocks/metal",
-// 		nuggets: "#forge:nuggets/metal"
-// 	}
+	if(!Ingredient.of(`#forge:nuggets/${metal}`).isEmpty())
+	{
+		kubejs.shapeless(`9x #forge:nuggets/${metal}`,[`#forge:ingots/${metal}`])
+		kubejs.shapeless(`#forge:ingots/${metal}`,[`9x #forge:nuggets/${metal}`])
+	}else{
+		console.warn(`No nugget found of ${metal}!`)
+	}
 
-// 	Object.keys(tags).forEach((key) => {
-// 		let itemIds = Ingredient.of(tags[key]).getItemIds()
+	if(!Ingredient.of(`#forge:raw_materials/${metal}`).isEmpty())
+	{
+		if(!Ingredient.of(`#forge:storage_blocks/raw_${metal}`).isEmpty())
+		{
+			kubejs.shapeless(`9x #forge:raw_materials/${materials}`,[`#forge:storage_blocks/raw_${metal}`])
+			kubejs.shapeless(`#forge:storage_blocks/raw_${metal}`,[`9x #forge:raw_materials/${metal}`])
+		}else{
+			console.warn(`No storage block found of raw ${metal}!`)
+		}
+	}else{
+		console.warn(`No raw material found of ${metal}!`)
+	}
 
-// 		if (!itemIds || itemIds.length === 0) {
-// 			console.error(`No items found for tag: ${tags[key]}`)
-// 			return 0
-// 		}
-
-// 		itemIds.forEach((itemId) => {
-// 			if (key === "blocks") {
-// 				// 块 => 9 锭
-// 				let ingotId = itemId.replace("block", "ingot")
-// 				if (Item.exists(ingotId)) {
-// 					kubejs.shapeless(Item.of(ingotId, 9), itemId)
-// 				} else {
-// 					console.warn(`Skipping: No ingot found for block: ${itemId}`)
-// 				}
-// 			} else if (key === "ingots") {
-// 				// 锭 => 9 粒
-// 				let nuggetId = itemId.replace("ingot", "nugget")
-// 				if (Item.exists(nuggetId)) {
-// 					kubejs.shapeless(Item.of(nuggetId, 9), itemId)
-// 					// 9 粒 => 锭
-// 					kubejs.shapeless(Item.of(itemId, 1), Array(9).fill(nuggetId))
-// 				} else {
-// 					console.warn(`Skipping: No nugget found for ingot: ${itemId}`)
-// 				}
-
-// 				// 9 锭 => 块
-// 				let blockId = itemId.replace("ingot", "block")
-// 				if (Item.exists(blockId)) {
-// 					kubejs.shapeless(Item.of(blockId, 1), Array(9).fill(itemId))
-// 				} else {
-// 					console.warn(`Skipping: No block found for ingot: ${itemId}`)
-// 				}
-
-// 				// 锭 => 板
-// 				let plateId = itemId.replace("ingot", "plate")
-// 				if (Item.exists(plateId)) {
-// 					create.pressing(Item.of(plateId, 1), Array(1).fill(itemId))
-// 				} else {
-// 					console.warn(`Skipping: No plate found for ingot: ${itemId}`)
-// 				}
-// 			}
-// 		})
-// 	})
-// })
+	if(!Ingredient.of(`#forge:plates/${metal}`).isEmpty())
+	{
+		create.pressing(`#forge:ingots/${metal}`,`#forge:plates/${metal}`)
+		thermal.press(`#forge:ingots/${metal}`,`#forge:plates/${metal}`)
+	}else{
+		console.warn(`No plate found of ${metal}!`)
+	}
+})
+})
