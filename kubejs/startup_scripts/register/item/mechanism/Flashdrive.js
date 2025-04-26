@@ -1,0 +1,40 @@
+StartupEvents.registry("item", (event) => {
+    let mechanismRegister = [
+		"nature",
+		"wooden",
+		"stone",
+		"iron",
+		"copper",
+		"andesite",
+		"photosensitive",
+		"gold",
+		"cobalt",
+		"nether",
+		"thermal",
+		"feinforced",
+		"resonant",
+		"railway",
+		"ender",
+		"light_engineering",
+		"heavy_engineering",
+		"enchanted",
+		"smart",
+		"computing",
+		"desh",
+		"ostrum",
+		"calorite",
+		"basic_mekanism",
+		"advanced_mekanism",
+		"elite_mekanism",
+		"ultimate_mekanism",
+		"structure",
+		"nuclear",
+		"antimatter",
+		"coil",
+		"sculk",
+		"colorful"
+	]
+    mechanismRegister.forEach((material) => {
+        event.create(`${global.namespace}:${material}_mechanism_flashdrive`,"basic").texture(`${global.namespace}:item/boot_medium`)
+    })
+})

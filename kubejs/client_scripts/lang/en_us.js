@@ -107,6 +107,9 @@ ClientEvents.lang("en_us", (event) => {
 		["creative", "Creative"],
 		["computing", "Computing"]
 	]
+	mechanismGroup.forEach(([material, name]) => {
+		addFlashdriveLanguaue(material,name)
+	})
 	materialGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
 		addForceLanguage(material, name)
@@ -127,6 +130,10 @@ ClientEvents.lang("en_us", (event) => {
 	})
 	function addItemLanguaue(key, value) {
 		event.add(`item.${global.namespace}.${key}`, value)
+	}
+
+	function addFlashdriveLanguaue(key, value) {
+		event.add(`item.${global.namespace}.${key}_mechanism_flashdrive`, `${value}force flash drive`)
 	}
 
 	function addCastItemLanguaue(key, value) {
