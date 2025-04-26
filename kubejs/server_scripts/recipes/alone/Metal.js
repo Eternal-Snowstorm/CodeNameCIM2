@@ -65,7 +65,7 @@ Metals.forEach((metal) => {
 	{
 		if(!Ingredient.of(`#forge:storage_blocks/raw_${metal}`).isEmpty())
 		{
-			kubejs.shapeless(`9x #forge:raw_materials/${materials}`,[`#forge:storage_blocks/raw_${metal}`])
+			kubejs.shapeless(`9x #forge:raw_materials/${metal}`,[`#forge:storage_blocks/raw_${metal}`])
 			kubejs.shapeless(`#forge:storage_blocks/raw_${metal}`,[`9x #forge:raw_materials/${metal}`])
 		}else{
 			console.warn(`No storage block found of raw ${metal}!`)
