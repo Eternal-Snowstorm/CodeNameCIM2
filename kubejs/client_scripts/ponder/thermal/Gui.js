@@ -1,0 +1,141 @@
+Ponder.registry((event) => {
+	event.create("#thermal:machines")
+		.scene(
+			"ue_addons:thermal_gui", 
+			"热力系列 机器界面", 
+			"ue_addons:thermal/thermal_gui",
+			(scene, utils) => {
+                scene.scaleSceneView(0.5)
+                scene.showBasePlate()
+                scene.idle(20)
+                scene.world.setBlocks([7,1,7], "thermal:machine_furnace")
+                scene.world.showSection([7,1,7], Direction.DOWN)
+                scene.text(40, "这是一个普通的热力机器", [7.5, 1.5, 7])
+
+                scene.idle(50)
+                scene.addKeyframe()
+                scene.text(30, "当我们右键它，会弹出一个界面", [7.5, 1.5, 7])
+                scene.rotateCameraY(0)
+                scene.idle(50)
+                scene.showControls(30, [7,1,7], "left") 
+	            .rightClick() 
+                
+                scene.world.setBlocks([13,1,13,7,4,13], "ue_addons:ponder_thermal_gui")
+                scene.world.showSection([13,1,13,7,4,13], Direction.DOWN)
+                scene.world.setBlocks([12,1,13], "ue_addons:ponder_thermal_slot")
+                scene.world.setBlocks([10,2,13], "ue_addons:ponder_thermal_slot")
+                scene.world.setBlocks([8,2,13], "ue_addons:ponder_thermal_slot")
+
+                scene.world.setBlocks([12,2,13], "ue_addons:ponder_thermal_energy")
+                scene.world.setBlocks([12,3,13], "ue_addons:ponder_thermal_energy")
+                
+                scene.world.setBlocks([9,2,13], "ue_addons:ponder_thermal_arrow")
+
+                scene.world.setBlocks([6,4,13], "ue_addons:ponder_thermal_gui_green")
+                scene.world.setBlocks([6,3,13], "ue_addons:ponder_thermal_gui_red")
+                scene.world.setBlocks([6,2,13], "ue_addons:ponder_thermal_gui_blue")
+                scene.world.showSection([6,1,13,6,4,13], Direction.EAST)
+                scene.addKeyframe()
+
+                scene.idle(40)
+                scene.overlay.showOutline("red", {}, [12,2,13,12,3,13], 30)
+                scene.text(30, "此处为能量槽，用于储存红石通量RF（电能）", [12,2.5,13])
+                scene.idle(40)
+                scene.overlay.showOutline("red", {}, [12,1,13], 30)
+                scene.text(30, "在此处放入电池也可以供电", [12,1,13])
+                scene.addKeyframe()
+
+                scene.idle(40)
+                scene.overlay.showOutline("blue", {}, [10,2,13], 30)
+                scene.text(30, "在此处放入物品", [10,2,13])
+                scene.idle(40)
+                scene.showControls(30, [10,2,13], "left") 
+	            .leftClick() 
+                .withItem("minecraft:sand")
+                scene.idle(40)
+
+                scene.overlay.showOutline("white", {}, [9,2,13], 30)
+                scene.text(30, "当进度条完成时，输入的物品将被消耗，然后输出", [9,2,13])
+                scene.idle(40)
+
+                scene.overlay.showOutline("blue", {}, [8,2,13], 30)
+                scene.showControls(30, [8,2,13], "left") 
+                .withItem("minecraft:glass")
+                scene.idle(20)
+			})
+
+            event.create("#thermal:machines")
+		.scene(
+			"ue_addons:thermal_gui2", 
+			"热力系列 机器自动化", 
+			"ue_addons:thermal/thermal_gui",
+			(scene, utils) => {
+                scene.scaleSceneView(0.5)
+                scene.showBasePlate()
+                scene.idle(20)
+                scene.world.setBlocks([7,1,7], "thermal:machine_furnace")
+                scene.world.showSection([7,1,7], Direction.DOWN)
+                scene.text(40, "这是一个只含物品槽的热力机器", [7.5, 1.5, 7])
+
+                scene.idle(40)
+                scene.world.setBlocks([13,4,13,7,7,13], "ue_addons:ponder_thermal_gui")
+                scene.world.showSection([13,4,13,7,7,13], Direction.DOWN)
+                scene.world.setBlocks([12,4,13], "ue_addons:ponder_thermal_slot")
+                scene.world.setBlocks([10,5,13], "ue_addons:ponder_thermal_slot")
+                scene.world.setBlocks([8,5,13], "ue_addons:ponder_thermal_slot")
+
+                scene.world.setBlocks([12,5,13], "ue_addons:ponder_thermal_energy")
+                scene.world.setBlocks([12,6,13], "ue_addons:ponder_thermal_energy")
+                
+                scene.world.setBlocks([9,5,13], "ue_addons:ponder_thermal_arrow")
+
+                scene.world.setBlocks([6,7,13], "ue_addons:ponder_thermal_gui_green")
+                scene.world.setBlocks([6,6,13], "ue_addons:ponder_thermal_gui_red")
+                scene.world.setBlocks([6,5,13], "ue_addons:ponder_thermal_gui_blue")
+                scene.world.showSection([6,4,13,6,7,13], Direction.EAST)
+                scene.addKeyframe()
+                scene.idle(40)
+
+                scene.overlay.showOutline("blue", {}, [6,5,13], 30)
+                scene.text(30, "点击此处打开配置页面", [6,5,13])
+                scene.showControls(30, [6,5,13], "right") 
+	            .leftClick() 
+                scene.addKeyframe()
+                scene.idle(40)
+                scene.world.hideSection([6,5,13], Direction.WEST)
+                scene.idle(20)
+                scene.world.setBlocks([6,5,13,1,2,13], "ue_addons:ponder_thermal_gui_blue")
+                scene.world.showSection([6,5,13,1,2,13], Direction.UP)
+                scene.world.setBlocks([6,4,13], "ue_addons:ponder_thermal_input")
+                scene.world.setBlocks([6,3,13], "ue_addons:ponder_thermal_output")
+                scene.world.setBlocks([3,4,13], "ue_addons:ponder_thermal_machine_top")
+                scene.world.setBlocks([3,2,13], "ue_addons:ponder_thermal_machine_bottom")
+                scene.world.setBlocks([4,3,13], "ue_addons:ponder_thermal_machine_side")
+                scene.world.setBlocks([2,3,13], "ue_addons:ponder_thermal_machine_side")
+                scene.world.setBlocks([2,2,13], "ue_addons:ponder_thermal_machine_side")
+                scene.world.setBlocks([3,3,13], "ue_addons:ponder_thermal_machine_front")
+
+                scene.addKeyframe()
+                scene.world.setBlocks([8,1,7], "thermal:machine_furnace")
+
+
+
+
+                scene.overlay.showOutline("blue", {}, [10,2,13], 30)
+                scene.text(30, "在此处放入物品", [10,2,13])
+                scene.idle(40)
+                scene.showControls(30, [10,2,13], "left") 
+	            .leftClick() 
+                .withItem("minecraft:sand")
+                scene.idle(40)
+
+                scene.overlay.showOutline("white", {}, [9,2,13], 30)
+                scene.text(30, "当进度条完成时，输入的物品将被消耗，然后输出", [9,2,13])
+                scene.idle(40)
+
+                scene.overlay.showOutline("blue", {}, [8,2,13], 30)
+                scene.showControls(30, [8,2,13], "left") 
+                .withItem("minecraft:glass")
+                scene.idle(20)
+			})
+})
