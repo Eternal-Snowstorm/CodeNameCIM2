@@ -45,7 +45,7 @@ let Metals = [
 ServerEvents.recipes((event) => {
 let { kubejs, create, thermal } = event.recipes
 Metals.forEach((metal) => {
-	if(!Ingredient.of(`#forge:storage_blocks/${metal}`).isEmpty())
+	if(!(Ingredient.of(`#forge:storage_blocks/${metal}`).itemIds.length === 0))
 	{
 		kubejs.shapeless(`9x #forge:ingots/${metal}`,[`#forge:storage_blocks/${metal}`])
 		kubejs.shapeless(`#forge:storage_blocks/${metal}`,[`9x #forge:ingots/${metal}`])
@@ -53,7 +53,7 @@ Metals.forEach((metal) => {
 		console.warn(`No storage block found of ${metal}!`)
 	}
 
-	if(!Ingredient.of(`#forge:nuggets/${metal}`).isEmpty())
+	if(!(Ingredient.of(`#forge:nuggets/${metal}`).itemIds.length === 0))
 	{
 		kubejs.shapeless(`9x #forge:nuggets/${metal}`,[`#forge:ingots/${metal}`])
 		kubejs.shapeless(`#forge:ingots/${metal}`,[`9x #forge:nuggets/${metal}`])
@@ -61,9 +61,9 @@ Metals.forEach((metal) => {
 		console.warn(`No nugget found of ${metal}!`)
 	}
 
-	if(!Ingredient.of(`#forge:raw_materials/${metal}`).isEmpty())
+	if(!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0))
 	{
-		if(!Ingredient.of(`#forge:storage_blocks/raw_${metal}`).isEmpty())
+		if(!(Ingredient.of(`#forge:storage_blocks/raw_${metal}`).itemIds.length === 0))
 		{
 			kubejs.shapeless(`9x #forge:raw_materials/${metal}`,[`#forge:storage_blocks/raw_${metal}`])
 			kubejs.shapeless(`#forge:storage_blocks/raw_${metal}`,[`9x #forge:raw_materials/${metal}`])
@@ -74,7 +74,7 @@ Metals.forEach((metal) => {
 		console.warn(`No raw material found of ${metal}!`)
 	}
 
-	if(!Ingredient.of(`#forge:plates/${metal}`).isEmpty())
+	if(!(Ingredient.of(`#forge:plates/${metal}`).itemIds.length === 0))
 	{
 		create.pressing(`#forge:ingots/${metal}`,`#forge:plates/${metal}`)
 		thermal.press(`#forge:ingots/${metal}`,`#forge:plates/${metal}`)
