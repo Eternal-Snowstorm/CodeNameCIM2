@@ -8,7 +8,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("bucket", "桶(?)")
 	addItemLanguaue("blood_slime_ball", "黏血球")
 
-	addMaterialLanguaue("andesite", "安山合金")
+	addMaterialLanguaue("andesite_alloy", "安山合金")
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")
 	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
 	addMaterialLanguaue("chromium", "铬")

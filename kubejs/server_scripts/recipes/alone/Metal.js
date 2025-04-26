@@ -40,7 +40,11 @@ let Metals = [
 	"twinite",
 	"dragonsteel",
 	"abyssal",
-	"stainless_steel"
+	"stainless_steel",
+	"slimesteel",
+	"pig_iron",
+	"cinderslime",
+	"queens_slime"
 ]
 ServerEvents.recipes((event) => {
 let { kubejs, create, thermal } = event.recipes
@@ -48,7 +52,8 @@ Metals.forEach((metal) => {
 	if(!(Ingredient.of(`#forge:storage_blocks/${metal}`).itemIds.length === 0))
 	{
 		kubejs.shapeless(`9x #forge:ingots/${metal}`,[`#forge:storage_blocks/${metal}`])
-		kubejs.shapeless(`#forge:storage_blocks/${metal}`,[`9x #forge:ingots/${metal}`])
+		kubejs.shaped(`#forge:storage_blocks/${metal}`,
+			Array(3).fill(Array(3).fill(`#forge:ingots/${metal}`)))
 	}else{
 		console.warn(`No storage block found of ${metal}!`)
 	}
@@ -56,7 +61,8 @@ Metals.forEach((metal) => {
 	if(!(Ingredient.of(`#forge:nuggets/${metal}`).itemIds.length === 0))
 	{
 		kubejs.shapeless(`9x #forge:nuggets/${metal}`,[`#forge:ingots/${metal}`])
-		kubejs.shapeless(`#forge:ingots/${metal}`,[`9x #forge:nuggets/${metal}`])
+		kubejs.shaped(`#forge:ingots/${metal}`,
+			Array(3).fill(Array(3).fill(`#forge:nuggets/${metal}`)))
 	}else{
 		console.warn(`No nugget found of ${metal}!`)
 	}
@@ -66,7 +72,8 @@ Metals.forEach((metal) => {
 		if(!(Ingredient.of(`#forge:storage_blocks/raw_${metal}`).itemIds.length === 0))
 		{
 			kubejs.shapeless(`9x #forge:raw_materials/${metal}`,[`#forge:storage_blocks/raw_${metal}`])
-			kubejs.shapeless(`#forge:storage_blocks/raw_${metal}`,[`9x #forge:raw_materials/${metal}`])
+			kubejs.shaped(`#forge:storage_blocks/raw_${metal}`,
+				Array(3).fill(Array(3).fill(`#forge:raw_materials/${metal}`)))
 		}else{
 			console.warn(`No storage block found of raw ${metal}!`)
 		}
@@ -76,8 +83,8 @@ Metals.forEach((metal) => {
 
 	if(!(Ingredient.of(`#forge:plates/${metal}`).itemIds.length === 0))
 	{
-		create.pressing(`#forge:ingots/${metal}`,`#forge:plates/${metal}`)
-		thermal.press(`#forge:ingots/${metal}`,`#forge:plates/${metal}`)
+		create.pressing(`#forge:plates/${metal}`,`#forge:ingots/${metal}`)
+		thermal.press(`#forge:plates/${metal}`,`#forge:ingots/${metal}`)
 	}else{
 		console.warn(`No plate found of ${metal}!`)
 	}
