@@ -40,7 +40,11 @@ let Metals = [
 	"twinite",
 	"dragonsteel",
 	"abyssal",
-	"stainless_steel"
+	"stainless_steel",
+	"slimesteel",
+	"pig_iron",
+	"cinderslime",
+	"queens_slime"
 ]
 ServerEvents.recipes((event) => {
 let { kubejs, create, thermal } = event.recipes
