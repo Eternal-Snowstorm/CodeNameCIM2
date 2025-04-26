@@ -72,6 +72,88 @@ ServerEvents.recipes((event) => {
 		event.remove({ type: type })
 	})
 
+	let removeMetalRecipe = [
+		"andesite_alloy",
+		"aluminum",
+		"brass",
+		"bronze",
+		"cobalt",
+		"constantan",
+		"copper",
+		"electrum",
+		"gold",
+		"invar",
+		"iron",
+		"lead",
+		"lumium",
+		"netherite",
+		"nickel",
+		"osmium",
+		"signalum",
+		"silver",
+		"steel",
+		"tin",
+		"zinc",
+		"rose_gold",
+		"hepatizon",
+		"manyullyn",
+		"amethyst_bronze",
+		"vanadium",
+		"chromium",
+		"enderium",
+		"platinum",
+		"uranium",
+		"desh",
+		"ostrum",
+		"calorite",
+		"prismalium",
+		"melodium",
+		"stellarium",
+		"soul_infused",
+		"shellite",
+		"twinite",
+		"dragonsteel",
+		"abyssal",
+		"stainless_steel",
+		"slimesteel",
+		"pig_iron",
+		"cinderslime",
+		"queens_slime"
+	]
+	removeMetalRecipe.forEach((metal)=>{
+		event.remove([{
+			type: "minecraft:crafting_shapeless",
+			output: `#forge:ingots/${metal}`
+		},{
+			type: "minecraft:crafting_shaped",
+			output: `#forge:ingots/${metal}`
+		},{
+			type: "minecraft:crafting_shapeless",
+			output: `#forge:nuggets/${metal}`
+		},{
+			type: "minecraft:crafting_shapeless",
+			output: `#forge:storage_blocks/${metal}`
+		},{
+			type: "minecraft:crafting_shaped",
+			output: `#forge:storage_blocks/${metal}`
+		},{
+			type: "minecraft:crafting_shapeless",
+			output: `#forge:raw_materials/${metal}`
+		},{
+			type: "minecraft:crafting_shapeless",
+			output: `#forge:storage_blocks/raw_${metal}`
+		},{
+			type: "minecraft:crafting_shaped",
+			output: `#forge:storage_blocks/raw_${metal}`
+		},{
+			type: "create:pressing",
+			output: `#forge:plates/${metal}`
+		},{
+			type: "thermal:press",
+			output: `#forge:platets/${metal}`
+		}])
+	})
+	
 	event.remove({
 		type: "minecraft:crafting_shapeless",
 		output: "#minecraft:planks"
