@@ -131,3 +131,4 @@ config/titanium/
 config/ad_astra.jsonc
 config/capsule*
 config/immersivepetroleum-client.toml
+config/buildcraft*
