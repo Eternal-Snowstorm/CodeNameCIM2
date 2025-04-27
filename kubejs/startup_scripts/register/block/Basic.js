@@ -13,10 +13,11 @@ StartupEvents.registry("block", (event) => {
 		"mekanism"
 	]
 	machineBlockRegister.forEach((type)=>{
-		event.create(`${global.namespace}:${type}_machine`)
+		event.create(`${global.namespace}:${type}_machine`, "cardinal")
 		.soundType(SoundType.METAL)
 		.tagBlock("minecraft:mineable/pickaxe")
 		.tagBlock(global.miningLevel["wooden"])
 		.requiresTool(true)
+		.notSolid()
 	})
 })
