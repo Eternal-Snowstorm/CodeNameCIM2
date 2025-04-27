@@ -3,6 +3,7 @@
   "textures": {
     "all": "ue_addons:block/me_machine",
     "particle": "ae2:block/controller",
-    "1": "ue_addons:block/me_machine"  },
-  "render_type": "solid"
+    "1": "ue_addons:block/me_machine"
+  },
+  "render_type":"cutout"
 }
