@@ -1,0 +1,8 @@
+{
+  "parent": "ue_addons:custom/bm",
+  "textures": {
+    "all": "ue_addons:block/brass_machine",
+    "particle": "create:block/brass_casing",
+    "2": "ue_addons:block/brass_machine"  },
+  "render_type": "solid"
+}

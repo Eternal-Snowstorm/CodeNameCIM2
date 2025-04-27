@@ -1,0 +1,9 @@
+{
+  "parent": "ue_addons:custom/mm",
+  "textures": {
+    "all": "ue_addons:block/mekanism_machine",
+    "particle": "mekanism:block/steel_casing",
+    "1": "ue_addons:block/mekanism_machine"
+  },
+  "render_type": "solid"
+}

@@ -62,6 +62,12 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("deepslate_quartz_ore", "深层石英矿石")
 	addBlockLanguaue("moon_cobalt_ore", "月球钴矿石")
 
+	addBlockLanguaue("andesite_machine", "安山机械方块")
+	addBlockLanguaue("brass_machine", "黄铜机械方块")
+	addBlockLanguaue("copper_machine", "铜制机械方块")
+	addBlockLanguaue("me_machine", "智能机械方块")
+	addBlockLanguaue("mekanism_machine", "通用机械方块")
+
 	addAloneLanguaue(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
 	addAloneLanguaue(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
 	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
