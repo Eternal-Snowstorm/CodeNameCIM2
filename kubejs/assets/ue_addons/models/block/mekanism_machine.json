@@ -5,5 +5,5 @@
     "particle": "mekanism:block/steel_casing",
     "1": "ue_addons:block/mekanism_machine"
   },
-  "render_type": "solid"
+  "render_type":"cutout"
 }

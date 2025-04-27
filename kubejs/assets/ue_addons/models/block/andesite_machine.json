@@ -4,6 +4,4 @@
     "all": "ue_addons:block/andesite_machine",
     "particle": "create:block/andesite_casing",
     "6": "ue_addons:block/andesite_machine"
-  },
-  "render_type": "solid"
-}
+  }}

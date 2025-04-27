@@ -5,5 +5,5 @@
     "particle": "create:block/copper_casing",
     "1": "ue_addons:block/copper_machine"
   },
-  "render_type": "solid"
+  "render_type":"cutout"
 }
