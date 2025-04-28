@@ -10,7 +10,8 @@ ServerEvents.recipes((event) => {
 		"tconstruct:smeltery/seared/duct_retextured",
 		"tconstruct:smeltery/seared/chute_retextured",
 		"tconstruct:__default",
-		"functionalstorage:void_upgrade"
+		"functionalstorage:void_upgrade",
+		"ad_astra:recipes/iron_rod"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({ id: id })
