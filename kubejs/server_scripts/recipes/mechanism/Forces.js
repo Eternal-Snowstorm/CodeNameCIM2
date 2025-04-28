@@ -20,4 +20,13 @@ ServerEvents.recipes((event) => {
 			"create:precision_mechanism"
 		])
 	]).transitionalItem("ue_addons:beta_precision_force_exe").loops(256)
+
+	create.sequenced_assembly("ue_addons:redstone_force_exe", [
+		"ue_addons:empty_exe"
+	], [
+		create.deploying("ue_addons:beta_redstone_force_exe", [
+			"ue_addons:beta_redstone_force_exe",
+			"vintageimprovements:redstone_module"
+		])
+	]).transitionalItem("ue_addons:beta_redstone_force_exe").loops(256)
 })
