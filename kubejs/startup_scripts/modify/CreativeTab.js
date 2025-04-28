@@ -1,6 +1,11 @@
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setIcon("ue_addons:creative_mechanism")
 	event.setDisplayName(Component.translate(`itemGroup.${global.namespace}.all`))
+
+	event.add([
+		"create:precision_mechanism",
+		"vintageimprovements:redstone_module"
+
 	event.remove([
 		"ue_addons:ponder_thermal_input",
 		"ue_addons:ponder_thermal_output",
@@ -34,6 +39,7 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 		"ue_addons:ponder_thermal_lava",
 		"ue_addons:ponder_thermal_water",
 		"ue_addons:ponder_thermal_arrow"
+    
 	])
 })
 

@@ -51,7 +51,7 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/mechanism/incomplete/incomplete_creative_mechanism`)
 		.tag("create:incomplete_mechanisms")
 
-	// 生铁与精密驱动
+	// 生铁驱动
 	event.create(`${global.namespace}:pigiron_force_exe`)
 		.modelJson({
 			"parent": "minecraft:item/generated",
@@ -71,7 +71,7 @@ StartupEvents.registry("item", (event) => {
 				"layer2": `${global.namespace}:item/beta_mechanism_force_overlay`
 			}
 		})
-
+	// 精密驱动
 	event.create(`${global.namespace}:precision_force_exe`)
 		.modelJson({
 			"parent": "minecraft:item/generated",
@@ -88,6 +88,26 @@ StartupEvents.registry("item", (event) => {
 			"textures": {
 				"layer0": `${global.namespace}:item/beta_mechanism_force_base`,
 				"layer1": `create:item/incomplete_precision_mechanism`,
+				"layer2": `${global.namespace}:item/beta_mechanism_force_overlay`
+			}
+		})
+	// 红石驱动
+	event.create(`${global.namespace}:redstone_force_exe`)
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `${global.namespace}:item/mechanism_force_base`,
+				"layer1": `vintageimprovements:item/redstone_module`,
+				"layer2": `${global.namespace}:item/mechanism_force_overlay`
+			}
+		})
+
+	event.create(`${global.namespace}:beta_redstone_force_exe`)
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `${global.namespace}:item/beta_mechanism_force_base`,
+				"layer1": `vintageimprovements:item/incomplete_redstone_module`,
 				"layer2": `${global.namespace}:item/beta_mechanism_force_overlay`
 			}
 		})
