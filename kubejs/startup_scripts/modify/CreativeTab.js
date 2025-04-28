@@ -1,6 +1,10 @@
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setIcon("ue_addons:creative_mechanism")
 	event.setDisplayName(Component.translate(`itemGroup.${global.namespace}.all`))
+	event.add([
+		"create:precision_mechanism",
+		"vintageimprovements:redstone_module"
+	])
 })
 
 StartupEvents.modifyCreativeTab("create:base", (event) => {

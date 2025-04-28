@@ -14,6 +14,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguaue("chromium", "铬")
 
 	addForceLanguage("precision", "精密")
+	addForceLanguage("redstone", "红石")
 
 	addMachineLanguaue("water_pump", "水泵")
 
