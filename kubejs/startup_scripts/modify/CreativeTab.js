@@ -5,7 +5,7 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.add([
 		"create:precision_mechanism",
 		"vintageimprovements:redstone_module"
-
+	])
 	event.remove([
 		"ue_addons:ponder_thermal_input",
 		"ue_addons:ponder_thermal_output",
