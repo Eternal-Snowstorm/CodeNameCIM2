@@ -161,6 +161,7 @@ ServerEvents.recipes((event) => {
 
 	event.remove({
 		type: "minecraft:crafting_shaped",
+		input: "#forge:ingots",
 		output: "#forge:rods"
 	})
 })
