@@ -8,7 +8,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("bucket", "桶(?)")
 	addItemLanguaue("blood_slime_ball", "黏血球")
 
-	addMaterialLanguaue("andesite_alloy", "安山合金")
+	addMaterialLanguaue("andesite", "安山合金")
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")
 	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
 	addMaterialLanguaue("chromium", "铬")
@@ -70,6 +70,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("mekanism_machine", "通用机械方块")
 
 	addAloneLanguaue(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
+	addAloneLanguaue(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
 	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
 	addAloneLanguaue("curios.identifier.mechanisms", "构件")
 	addAloneLanguaue(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")
@@ -155,6 +156,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		["creative", "创造"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
+		addFlashdriveLanguaue(material,name)
+	})
+	mechanismGroup.forEach(([material, name]) => {
 		addMechanismLanguaue(material, name)
 		addForceLanguage(material, name)
 	})
@@ -177,8 +181,12 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}`, value)
 	}
 
+	function addFlashdriveLanguaue(key, value) {
+		event.add(`item.${global.namespace}.${key}_mechanism_flashdrive`, `${value}驱动U盘`)
+	}
+
 	function addCastItemLanguaue(key, value) {
-		event.add(`item.${global.namespace}.${key}_cast`, `${value}铸模`)
+		event.add(`item.${global.namespace}.${key}_cast`, `${value}金质铸模`)
 		event.add(`item.${global.namespace}.${key}_sand_cast`, `${value}沙子铸模`)
 		event.add(`item.${global.namespace}.${key}_red_sand_cast`, `${value}红沙铸模`)
 	}

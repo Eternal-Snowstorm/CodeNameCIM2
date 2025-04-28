@@ -120,40 +120,40 @@ ServerEvents.recipes((event) => {
 		"cinderslime",
 		"queens_slime"
 	]
-	removeMetalRecipe.forEach((metal)=>{
+	removeMetalRecipe.forEach((metal) => {
 		event.remove([{
 			type: "minecraft:crafting_shapeless",
 			output: `#forge:ingots/${metal}`
-		},{
+		}, {
 			type: "minecraft:crafting_shaped",
 			output: `#forge:ingots/${metal}`
-		},{
+		}, {
 			type: "minecraft:crafting_shapeless",
 			output: `#forge:nuggets/${metal}`
-		},{
+		}, {
 			type: "minecraft:crafting_shapeless",
 			output: `#forge:storage_blocks/${metal}`
-		},{
+		}, {
 			type: "minecraft:crafting_shaped",
 			output: `#forge:storage_blocks/${metal}`
-		},{
+		}, {
 			type: "minecraft:crafting_shapeless",
 			output: `#forge:raw_materials/${metal}`
-		},{
+		}, {
 			type: "minecraft:crafting_shapeless",
 			output: `#forge:storage_blocks/raw_${metal}`
-		},{
+		}, {
 			type: "minecraft:crafting_shaped",
 			output: `#forge:storage_blocks/raw_${metal}`
-		},{
+		}, {
 			type: "create:pressing",
 			output: `#forge:plates/${metal}`
-		},{
+		}, {
 			type: "thermal:press",
 			output: `#forge:platets/${metal}`
 		}])
 	})
-	
+
 	event.remove({
 		type: "minecraft:crafting_shapeless",
 		output: "#minecraft:planks"
@@ -162,17 +162,5 @@ ServerEvents.recipes((event) => {
 	event.remove({
 		type: "minecraft:crafting_shaped",
 		output: "#forge:rods"
-	})
-
-	event.remove({
-		output: "#forge:ingots/metal",
-		output: "#forge:storage_blocks/metal",
-		output: "#forge:nuggets/metal",
-		output: "#forge:plates/metal",
-
-		type: "minecraft:crafting_shaped",
-		type: "minecraft:crafting_shapeless",
-		type: "create:pressing",
-		type: "thermal:press"
 	})
 })
