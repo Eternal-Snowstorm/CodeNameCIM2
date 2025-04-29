@@ -47,4 +47,8 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:plates/andesite")
 		.add("#forge:plates/andesite_alloy")
+
+	event.get("forge:rods")
+		.add("immersiveengineering:stick_steel")
+		.add("immersiveengineering:stick_aluminum")
 })
