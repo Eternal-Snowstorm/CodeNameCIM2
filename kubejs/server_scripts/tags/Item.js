@@ -23,6 +23,16 @@ ServerEvents.tags("item", (event) => {
 		.add("functionalstorage:void_upgrade")
 		.add("functionalstorage:redstone_upgrade")
 
+	event.get("thermal:dynamos")
+		.add("thermal:dynamo_stirling")
+		.add("thermal:dynamo_magmatic")
+		.add("thermal:dynamo_compression")
+		.add("thermal_extra:dynamo_frost")
+		.add("thermal:dynamo_numismatic")
+		.add("thermal:dynamo_lapidary")
+		.add("thermal:dynamo_disenchantment")
+		.add("thermal:dynamo_gourmand")
+
 	event.get("curios:mechanisms")
 		.add("ue_addons:cobalt_mechanism")
 		.add("ue_addons:photosensitive_mechanism")

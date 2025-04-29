@@ -51,8 +51,7 @@ ServerEvents.recipes((event) => {
 	metal.forEach((metal) => {
 		if (!(Ingredient.of(`#forge:storage_blocks/${metal}`).itemIds.length === 0)) {
 			kubejs.shapeless(`9x #forge:ingots/${metal}`, [`#forge:storage_blocks/${metal}`])
-			kubejs.shaped(`#forge:storage_blocks/${metal}`,
-				Array(3).fill(Array(3).fill(`#forge:ingots/${metal}`)))
+			kubejs.shaped(`#forge:storage_blocks/${metal}`, Array(3).fill(Array(3).fill(`#forge:ingots/${metal}`)))
 		} else {
 			console.warn(`No storage block found of ${metal}!`)
 		}

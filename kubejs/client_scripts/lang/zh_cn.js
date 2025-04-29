@@ -8,7 +8,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("bucket", "桶(?)")
 	addItemLanguaue("blood_slime_ball", "黏血球")
 
-	addMaterialLanguaue("andesite", "安山合金")
+	addMaterialLanguaue("andesite_allay", "安山合金")
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")
 	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
 	addMaterialLanguaue("chromium", "铬")
@@ -182,7 +182,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addFlashdriveLanguaue(key, value) {
-		event.add(`item.${global.namespace}.${key}_mechanism_flashdrive`, `${value}驱动U盘`)
+		event.add(`item.${global.namespace}.${key}_mechanism_flashdrive`, `${value}闪存盘`)
 	}
 
 	function addCastItemLanguaue(key, value) {
@@ -233,7 +233,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${global.namespace}.${key}_block`, `${value}块`)
 
 		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
-		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
+		event.add(`fluid.${global.namespace}.molten_${key}`, `熔融${value}`)
 		event.add(`item.${global.namespace}.molten_${key}_bucket`, `熔融${value}桶`)
 	}
 
