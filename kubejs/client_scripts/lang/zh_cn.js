@@ -7,14 +7,12 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("computer_component", "计算机组件")
 	addItemLanguaue("bucket", "桶(?)")
 	addItemLanguaue("blood_slime_ball", "黏血球")
+	addItemLanguaue("null_flash_drive", "空白闪存盘")
 
 	addMaterialLanguaue("andesite_allay", "安山合金")
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")
 	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
 	addMaterialLanguaue("chromium", "铬")
-
-	addForceLanguage("precision", "精密")
-	addForceLanguage("redstone", "红石")
 
 	addMachineLanguaue("water_pump", "水泵")
 
@@ -138,10 +136,10 @@ ClientEvents.lang("zh_cn", (event) => {
 		["enchanted", "附魔"],
 		["smart", "智能"],
 		["computing", "计算"],
-		["steel","钢"],
-		["desh","戴斯"],
-		["ostrum","紫金"],
-		["calorite","耐热金属"],
+		["tier_1_aviation", "壹级科技航天"],
+		["tier_2_aviation", "贰级科技航天"],
+		["tier_3_aviation", "叁级科技航天"],
+		["tier_4_aviation", "肆级科技航天"],
 		["basic_mekanism", "基础通用"],
 		["advanced_mekanism", "高级通用"],
 		["elite_mekanism", "精英通用"],
@@ -154,14 +152,13 @@ ClientEvents.lang("zh_cn", (event) => {
 		["colorful", "多彩"],
 		["pigiron", "生铁"],
 		["nether", "下界"],
-		["creative", "创造"]
+		["creative", "创造"],
+		["precision", "精密"],
+		["redstone", "红石"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
-		addFlashdriveLanguaue(material,name)
-	})
-	mechanismGroup.forEach(([material, name]) => {
+		addFlashDriveLanguaue(material, name)
 		addMechanismLanguaue(material, name)
-		addForceLanguage(material, name)
 	})
 
 	let completeMechanismGroup = [
@@ -182,8 +179,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}`, value)
 	}
 
-	function addFlashdriveLanguaue(key, value) {
-		event.add(`item.${global.namespace}.${key}_mechanism_flashdrive`, `${value}闪存盘`)
+	function addFlashDriveLanguaue(key, value) {
+		event.add(`item.${global.namespace}.${key}_mechanism_flash_drive`, `${value}构件闪存盘`)
 	}
 
 	function addCastItemLanguaue(key, value) {
@@ -203,11 +200,6 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addMechanismPartLanguaue(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism_part`, `${value}构件零件`)
-	}
-
-	function addForceLanguage(material, value) {
-		event.add(`item.${global.namespace}.${material}_force_exe`, `${value}驱动.exe`)
-		event.add(`item.${global.namespace}.beta_${material}_force_exe`, `${value}驱动(Beta).exe`)
 	}
 
 	function addBlockLanguaue(key, value) {
