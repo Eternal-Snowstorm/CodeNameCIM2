@@ -138,6 +138,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["enchanted", "附魔"],
 		["smart", "智能"],
 		["computing", "计算"],
+		["steel","钢"],
 		["desh","戴斯"],
 		["ostrum","紫金"],
 		["calorite","耐热金属"],

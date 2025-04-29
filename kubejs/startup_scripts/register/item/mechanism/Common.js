@@ -21,6 +21,7 @@ StartupEvents.registry("item", (event) => {
 		"enchanted",
 		"smart",
 		"computing",
+		"steel",
 		"desh",
 		"ostrum",
 		"calorite",
