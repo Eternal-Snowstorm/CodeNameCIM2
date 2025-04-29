@@ -22,6 +22,14 @@ function addMaterial(name, color, level) {
 			this.types.push("dust")
 			return this
 		},
+		rod: function () {
+			this.types.push("rod")
+			return this
+		},
+		gear: function () {
+			this.types.push("gear")
+			return this
+		},
 		block: function () {
 			this.types.push("block")
 			return this
