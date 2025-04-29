@@ -37,5 +37,6 @@ StartupEvents.registry("block", (event) => {
 		event.create(`${global.namespace}:${block}`)
 			.textureAll(`${global.namespace}:block/io_debug/${block}`)
 			.soundType(SoundType.METAL)
+			.tag(`${global.namespace}:io_debug_block`)
 	})
 })

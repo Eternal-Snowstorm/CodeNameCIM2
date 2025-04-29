@@ -62,4 +62,4 @@ ServerEvents.recipes((event) => {
 		"#minecraft:planks",
 		{ fluidTag: "forge:creosote", amount: 125 }
 	]).id("createaddition:filling/treated_wood_planks")
-})	
+})
