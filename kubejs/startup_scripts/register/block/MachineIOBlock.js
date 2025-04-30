@@ -10,6 +10,7 @@ StartupEvents.registry("block", (event) => {
 		"ponder_thermal_slot",
 		"ponder_thermal_slot_blue",
 		"ponder_thermal_slot_orange",
+		"ponder_thermal_slot_energy",
 		"ponder_thermal_energy",
 		"ponder_thermal_energy_empty",
 		"ponder_thermal_gui",
