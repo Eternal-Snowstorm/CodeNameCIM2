@@ -38,7 +38,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addTConMaterialLanguage(
 		"andesite_alloy",
 		"安山合金",
-		"岩石和金属居然能变成合金？",
+		"岩石和金属居然能变成合金? ",
 		andesiteAlloyEncyclopedia,
 		andesiteAlloyEncyclopedia,
 		andesiteAlloyEncyclopedia
