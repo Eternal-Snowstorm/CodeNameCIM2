@@ -11,10 +11,18 @@ StartupEvents.registry("block", (event) => {
 		"ponder_thermal_slot_blue",
 		"ponder_thermal_slot_orange",
 		"ponder_thermal_energy",
+		"ponder_thermal_energy_empty",
 		"ponder_thermal_gui",
 		"ponder_thermal_gui_blue",
+		"ponder_thermal_gui_blue_icon",
 		"ponder_thermal_gui_green",
+		"ponder_thermal_gui_green_icon",
 		"ponder_thermal_gui_red",
+		"ponder_thermal_gui_red_icon",
+		"ponder_thermal_gui_gray",
+		"ponder_thermal_gui_gray_icon",
+		"ponder_thermal_gui_lightblue",
+		"ponder_thermal_gui_lightblue_icon",
 		"ponder_thermal_machine_front",
 		"ponder_thermal_machine_side",
 		"ponder_thermal_machine_side_blue",
@@ -31,7 +39,12 @@ StartupEvents.registry("block", (event) => {
 		"ponder_thermal_rs3_on",
 		"ponder_thermal_lava",
 		"ponder_thermal_water",
-		"ponder_thermal_arrow"
+		"ponder_thermal_arrow",
+		"ponder_thermal_arrow_active",
+		"ponder_thermal_fire",
+		"ponder_thermal_fire_active",
+		"ponder_thermal_sand",
+		"ponder_thermal_glass"
 	]
 	blockIO.forEach((block) => {
 		event.create(`${global.namespace}:${block}`)

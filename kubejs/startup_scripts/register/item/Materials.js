@@ -122,8 +122,6 @@ addMaterial("stainless_steel", 0x708090, "diamond")
 	.ingot()
 	.plate()
 	.nugget()
-	.gear()
-	.rod()
 	.block()
 	.molten()
 
