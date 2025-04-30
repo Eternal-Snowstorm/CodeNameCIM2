@@ -1,4 +1,12 @@
 let materials = []
+
+/**
+ * 函数封装
+ * @param {string} name 注册ID
+ * @param {Internal.ItemTintFunction_} color 颜色
+ * @param {ResourceLocation_} level 挖掘等级
+ * @returns 
+ */
 function addMaterial(name, color, level) {
 	let material = {
 		name: name,
