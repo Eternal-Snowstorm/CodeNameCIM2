@@ -222,6 +222,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_nugget`, `${value}粒`)
 		event.add(`item.${global.namespace}.${key}_plate`, `${value}板`)
 		event.add(`item.${global.namespace}.${key}_dust`, `${value}粉`)
+		event.add(`item.${global.namespace}.${key}_gear`, `${value}齿轮`)
+		event.add(`item.${global.namespace}.${key}_rod`, `${value}杆`)
 
 		event.add(`block.${global.namespace}.${key}_block`, `${value}块`)
 

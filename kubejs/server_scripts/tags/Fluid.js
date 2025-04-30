@@ -14,4 +14,8 @@ ServerEvents.tags("fluid", (event) => {
 	// ad氧气
 	event.get("ad_astra:oxygen")
 		.add("minecraft:lava")
+
+	event.get("minecraft:water")
+		.removeAll()
+		.add("minecraft:water")
 })
