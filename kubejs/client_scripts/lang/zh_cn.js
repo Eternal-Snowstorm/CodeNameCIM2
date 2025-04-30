@@ -9,7 +9,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("blood_slime_ball", "黏血球")
 	addItemLanguaue("null_flash_drive", "空白闪存盘")
 
-	addMaterialLanguaue("andesite_allay", "安山合金")
+	addMaterialLanguaue("andesite_alloy", "安山合金")
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")
 	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
 	addMaterialLanguaue("chromium", "铬")
@@ -222,6 +222,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_nugget`, `${value}粒`)
 		event.add(`item.${global.namespace}.${key}_plate`, `${value}板`)
 		event.add(`item.${global.namespace}.${key}_dust`, `${value}粉`)
+		event.add(`item.${global.namespace}.${key}_gear`, `${value}齿轮`)
+		event.add(`item.${global.namespace}.${key}_rod`, `${value}杆`)
 
 		event.add(`block.${global.namespace}.${key}_block`, `${value}块`)
 
