@@ -111,17 +111,22 @@ StartupEvents.registry("fluid", (event) => {
 // 安山合金
 addMaterial("andesite_alloy", 0xA9AFA1, "wooden")
 	.nugget()
+	.gear()
 	.molten()
 
 // 余烬史莱姆
 addMaterial("cinderslime", 0xFF6060, "wooden")
 	.plate()
+	.rod()
+	.gear()
 
 // 不锈钢
 addMaterial("stainless_steel", 0x708090, "diamond")
 	.ingot()
 	.plate()
 	.nugget()
+	.rod()
+	.gear()
 	.block()
 	.molten()
 
@@ -131,5 +136,7 @@ addMaterial("chromium", 0xE4DBDC, "iron")
 	.plate()
 	.dust()
 	.nugget()
+	.rod()
+	.gear()
 	.block()
 	.molten()

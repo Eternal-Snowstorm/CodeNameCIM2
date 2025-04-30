@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
 
 		if (!(Ingredient.of(`#forge:nuggets/${metal}`).itemIds.length === 0)) {
 			kubejs.shapeless(`9x #forge:nuggets/${metal}`, [`#forge:ingots/${metal}`])
-			kubejs.shaped(`#forge:storage_blocks/${metal}`, [
+			kubejs.shaped(`#forge:ingots/${metal}`, [
 				"AAA",
 				"AAA",
 				"AAA"
@@ -90,7 +90,7 @@ ServerEvents.recipes((event) => {
 			}
 			thermal.smelter([
 				`#forge:ingots/${metal}`,
-				Ingredient.of(`#forge:ingots/${metal}`).withChance(0.5)
+				Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5)
 			], `#forge:raw_materials/${metal}`)
 		} else {
 			console.warn(`No raw material found for ${metal}!`)
@@ -112,7 +112,7 @@ ServerEvents.recipes((event) => {
 			if (!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
 				thermal.pulverizer([
 					`#forge:dusts/${metal}`,
-					Ingredient.of(`#forge:dusts/${metal}`).withChance(0.25)
+					Item.of(Ingredient.of(`#forge:dusts/${metal}`).itemIds[0]).withChance(0.25)
 				], `#forge:raw_materials/${metal}`)
 			} else {
 				console.warn(`No raw material found for ${metal}!`)
@@ -139,13 +139,15 @@ ServerEvents.recipes((event) => {
 				"A A",
 				" A "
 			], {
-				A: `forge:ingots/${metal}`
+				A: `#forge:ingots/${metal}`
 			})
 			thermal.press(`#forge:gears/${metal}`, [
-				`4x #forge:ingots/iron`,
+				`4x #forge:ingots/${metal}`,
 				"thermal:press_gear_die"
 			])
-			thermal.smelter(`4x #forge:ingots/${metal}`, `#forge:gears/metal`)
+			thermal.smelter(`4x #forge:ingots/${metal}`, `#forge:gears/${metal}`)
+		} else {
+			console.warn(`No gear found for ${metal}!`)
 		}
 	})
 })
