@@ -1,4 +1,14 @@
 StartupEvents.registry("item", (event) => {
+	// 空白闪存盘
+	event.create(`${global.namespace}:empty_flash_drive`)
+		.texture(`${global.namespace}:item/mechanism/flash_drive/empty`)
+		.tag(`${global.namespace}:mechanism_flash_drives`)
+
+	// 已编程闪存盘
+	event.create(`${global.namespace}:programmed_flash_drive`)
+		.texture(`${global.namespace}:item/mechanism/flash_drive/programmed`)
+		.tag(`${global.namespace}:mechanism_flash_drives`)
+
 	let mechanismRegister = [
 		"nature",
 		"wooden",
@@ -42,9 +52,4 @@ StartupEvents.registry("item", (event) => {
 			.texture(`${global.namespace}:item/mechanism/flash_drive/${material}`)
 			.tag(`${global.namespace}:mechanism_flash_drives`)
 	})
-
-	// 空白闪存盘
-	event.create(`${global.namespace}:null_flash_drive`)
-		.texture(`${global.namespace}:item/mechanism/flash_drive/null`)
-		.tag(`${global.namespace}:mechanism_flash_drives`)
 })
