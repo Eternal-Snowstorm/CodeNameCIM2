@@ -11,7 +11,9 @@ ServerEvents.recipes((event) => {
 		"tconstruct:smeltery/seared/chute_retextured",
 		"tconstruct:__default",
 		"functionalstorage:void_upgrade",
-		"ad_astra:recipes/iron_rod"
+		"ad_astra:recipes/iron_rod",
+		"create:milling/compat/ae2/sky_stone_block",
+		"ae2:blasting/sky_stone_block"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({ id: id })

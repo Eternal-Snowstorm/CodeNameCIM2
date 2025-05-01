@@ -19,6 +19,15 @@
 	},
 	"components": [
 		{
+			"type": "custommachinery:energy",
+			"id": "energy_input",
+			"mode": "input",
+			"capacity": 2000000,
+			"config": {
+				"default": "both"
+			}
+		},
+		{
 			"type": "custommachinery:item",
 			"mode": "input",
 			"id": "mechanism_1"
@@ -112,6 +121,12 @@
 			"id": "output",
 			"x": 140,
 			"y": 44
+		},
+		{
+			"type": "custommachinery:energy",
+			"id": "energy_input",
+			"x": 165,
+			"y": 30
 		}
 	],
 	"jei": [
@@ -177,6 +192,12 @@
 			"id": "output",
 			"x": 140,
 			"y": 44
+		},
+		{
+			"type": "custommachinery:energy",
+			"id": "energy_input",
+			"x": 165,
+			"y": 30
 		}
 	]
 }

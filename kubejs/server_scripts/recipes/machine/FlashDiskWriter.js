@@ -41,6 +41,11 @@ ServerEvents.recipes((event) => {
 					"mode": "output",
 					"item": `ue_addons:${material}_mechanism_flash_drive`,
 					"amount": 1
+				},
+				{
+					"type": "custommachinery:energy",
+					"mode": "input",
+					"amount": 2000000
 				}
 			]
 		})

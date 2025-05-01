@@ -35,7 +35,9 @@ ServerEvents.recipes((event) => {
 		"9x ue_addons:andesite_alloy_nugget"
 	])
 
-	create.pressing("ue_addons:cinderslime_plate", "tconstruct:cinderslime_ingot")
+	create.pressing("ue_addons:cinderslime_plate", [
+		"tconstruct:cinderslime_ingot"
+	])
 
 	kubejs.shaped("createaddition:straw", [
 		" AA",

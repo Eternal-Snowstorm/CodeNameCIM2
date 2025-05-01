@@ -33,6 +33,13 @@ ServerEvents.tags("item", (event) => {
 		.add("thermal:dynamo_disenchantment")
 		.add("thermal:dynamo_gourmand")
 
+	event.get("thermal:machines")
+		.add("thermal_extra:advanced_refinery")
+		.add("thermal_extra:nitratic_igniter")
+		.add("thermal_extra:fluid_mixer")
+		.add("thermal_extra:component_assembly")
+		.add("thermal_extra:endothermic_dehydrator")
+
 	event.get("curios:mechanisms")
 		.add("ue_addons:cobalt_mechanism")
 		.add("ue_addons:photosensitive_mechanism")
