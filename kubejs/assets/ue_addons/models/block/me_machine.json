@@ -1,9 +1,9 @@
 {
-  "parent": "ue_addons:custom/em",
-  "textures": {
-    "all": "ue_addons:block/me_machine",
-    "particle": "ae2:block/controller",
-    "1": "ue_addons:block/me_machine"
-  },
-  "render_type":"cutout"
+	"parent": "ue_addons:custom/em",
+	"textures": {
+		"all": "ue_addons:block/machine/ue/me_machine",
+		"particle": "ae2:block/machine/ue/controller",
+		"1": "ue_addons:block/machine/ue/me_machine"
+	},
+	"render_type": "cutout"
 }

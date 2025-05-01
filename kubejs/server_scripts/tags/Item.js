@@ -55,6 +55,9 @@ ServerEvents.tags("item", (event) => {
 		.add("vintageimprovements:andesite_sheet")
 		.add("createdeco:andesite_sheet")
 
+	event.get("forge:plates/polyolefin")
+		.add("thermal_extra:polyolefin_plate")
+
 	event.get("forge:plates/andesite")
 		.add("#forge:plates/andesite_alloy")
 

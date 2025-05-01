@@ -7,7 +7,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("computer_component", "计算机组件")
 	addItemLanguaue("bucket", "桶(?)")
 	addItemLanguaue("blood_slime_ball", "黏血球")
-	addItemLanguaue("null_flash_drive", "空白闪存盘")
+	addItemLanguaue("empty_flash_drive", "空白闪存盘")
+	addItemLanguaue("programmed_flash_drive", "已编程闪存盘")
 
 	addMaterialLanguaue("andesite_alloy", "安山合金")
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")
@@ -15,6 +16,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguaue("chromium", "铬")
 
 	addMachineLanguaue("water_pump", "水泵")
+	addMachineLanguaue("flash_disk_writer", "闪存盘写入器")
 
 	addMechanismPartLanguaue("basic", "基础")
 	addMechanismPartLanguaue("mechanical", "机械")
@@ -60,6 +62,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("quartz_ore", "石英矿石")
 	addBlockLanguaue("deepslate_quartz_ore", "深层石英矿石")
 	addBlockLanguaue("moon_cobalt_ore", "月球钴矿石")
+	addBlockLanguaue("osmium_tile", "锇砖瓦")
 
 	addBlockLanguaue("andesite_machine", "安山机械方块")
 	addBlockLanguaue("brass_machine", "黄铜机械方块")

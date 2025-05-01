@@ -3,7 +3,7 @@ let materials = []
 /**
  * 函数封装
  * @param {string} name 注册ID
- * @param {Internal.ItemTintFunction_} color 颜色
+ * @param {Internal.ItemTintFunction_ || Internal.BlockTintFunction_} color 颜色
  * @param {ResourceLocation_} level 挖掘等级
  * @returns 
  */
@@ -63,7 +63,6 @@ StartupEvents.registry("item", (event) => {
 				.texture(`${global.namespace}:item/material/color/${type}`)
 				.color(0, material.color)
 				.tag(`forge:${type}s`)
-				.tag(`forge:${type}s/metal`)
 				.tag(`forge:${type}s/${material.name}`)
 		})
 	})
@@ -85,7 +84,6 @@ StartupEvents.registry("block", (event) => {
 					.tagBlock(global.toolType["pickaxe"])
 					.tagBlock(global.miningLevel[material.level])
 					.tag(`forge:storage_blocks`)
-					.tag(`forge:storage_blocks/metal`)
 					.tag(`forge:storage_blocks/${material.name}`)
 			}
 		})
