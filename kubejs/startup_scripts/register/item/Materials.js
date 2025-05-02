@@ -97,8 +97,8 @@ StartupEvents.registry("fluid", (event) => {
 				event.create(`${global.namespace}:molten_${material.name}`)
 					.thinTexture(material.color)
 					.bucketColor(material.color)
-					.flowingTexture(`${global.namespace}:block/fluid/flowing`)
-					.stillTexture(`${global.namespace}:block/fluid/still`)
+					.flowingTexture(`${global.namespace}:block/fluid/metal/flowing`)
+					.stillTexture(`${global.namespace}:block/fluid/metal/still`)
 					.tag("forge:molten_materials")
 					.tag(`forge:molten_${material.name}`)
 

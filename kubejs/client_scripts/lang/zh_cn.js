@@ -27,6 +27,41 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMechanismPartLanguaue("mekanism", "通用")
 	addMechanismPartLanguaue("final", "终章")
 
+	addSolutionLanguage("feso4", "硫酸亚铁")
+	addSolutionLanguage("fecl2", "氯化亚铁")
+	addSolutionLanguage("cuso4", "硫酸铜")
+	addSolutionLanguage("cucl2", "氯化铜")
+	addSolutionLanguage("al2so43", "硫酸铝")
+	addSolutionLanguage("alcl3", "氯化铝")
+	addSolutionLanguage("pbcl2", "氯化铅")
+	addSolutionLanguage("pbso4", "硫酸铅")
+	addSolutionLanguage("sncl2", "氯化亚锡")
+	addSolutionLanguage("snso4", "硫酸亚锡")
+	addSolutionLanguage("zncl2", "氯化锌")
+	addSolutionLanguage("znso4", "硫酸锡")
+	addSolutionLanguage("aucl3", "氯化金")
+	addSolutionLanguage("au2so43", "硫酸金")
+	addSolutionLanguage("agcl", "氯化银")
+	addSolutionLanguage("ag2so4", "硫酸银")
+	addSolutionLanguage("crcl3", "氯化铬")
+	addSolutionLanguage("cr2so43", "硫酸铬")
+	addSolutionLanguage("vocl2", "二氯氧钒")
+	addSolutionLanguage("voso4", "硫酸氧钒")
+	addSolutionLanguage("uo2cl2", "氯化铀酰")
+	addSolutionLanguage("uo2so4", "硫酸铀酰")
+	addSolutionLanguage("nicl2", "氯化镍")
+	addSolutionLanguage("niso4", "硫酸镍")
+	addSolutionLanguage("cocl2", "氯化钴")
+	addSolutionLanguage("coso4", "硫酸钴")
+	addSolutionLanguage("oscl3", "氯化锇")
+	addSolutionLanguage("os2so43", "硫酸锇")
+	addSolutionLanguage("kcl", "氯化钾")
+	addSolutionLanguage("k2so4", "硫酸钾")
+	addSolutionLanguage("cacl2", "氯化钙")
+	addSolutionLanguage("caso4", "硫酸钙")
+	addSolutionLanguage("nacl", "氯化钠")
+	addSolutionLanguage("na2so4", "硫酸钠")
+
 	let amethystEncyclopedia = "紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源"
 	addTConMaterialLanguage(
 		"amethyst",
@@ -276,5 +311,12 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`material.${global.namespace}.${key}.encyclopedia`, encyclopedia)
 		event.add(`material.${global.namespace}.${key}.ranged`, ranged)
 		event.add(`material.${global.namespace}.${key}.armor`, armor)
+	}
+
+	function addSolutionLanguage(key, value) {
+		event.add(`item.${global.namespace}.${key}`, value)
+		event.add(`item.${global.namespace}.${key}_solution_bucket`, `${value}溶液桶`)
+		event.add(`block.${global.namespace}.${key}_solution`, `${value}溶液`)
+		event.add(`fluid.${global.namespace}.${key}_solution`, `${value}溶液`)
 	}
 })

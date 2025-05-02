@@ -1,6 +1,5 @@
 StartupEvents.registry("fluid", (event) => {
-	let path = "block/fluid/"
-	let fluidRegisters = `${global.namespace}:${path}`
+	let fluidRegisters = `${global.namespace}:block/fluid/metal/`
 
 	function addAloneMaterialFluid(name) {
 		event.create(`${global.namespace}:molten_${name}`)
