@@ -74,6 +74,16 @@ ClientEvents.lang("en_us", (event) => {
 
 	addItemLanguaue('blood_slimeball', 'Blood Slimeball')
 
+	addFluidLanguaue("molten_source_sapphire", "Molten Source Sapphire")  
+	addFluidLanguaue("eletriced_source_emeraid", "Electrified Source Emerald")  
+
+	addItemLanguaue("blockstone_source_alpha", "Alpha Blockstone Source")  
+	addItemLanguaue("blockstone_source_beta", "Beta Blockstone Source")  
+	addItemLanguaue("blockstone_source_gamma", "Gamma Blockstone Source")  
+	addItemLanguaue("crystal_ruby", "Amethyst-Infused Ruby")  
+	addItemLanguaue("source_sapphire", "Source Sapphire")  
+	addItemLanguaue("bombed_source_emeraid", "Explosive Source Emerald")
+
 	let mechanismGroup = [
 		["nature", "Natural"],
 		["wooden", "Wooden"],
