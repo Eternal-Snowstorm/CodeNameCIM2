@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1745636665703
+  last_edited_time = 1746168791418
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:4a1a521b-bee7-4342-a06e-a4744591d5c1-1745636612834] = [groups:][instances:]
+  [loading_requirement_container_meta:2413601f-c852-4c67-a475-097b3de1561c-1746167638075] = [groups:][instances:]
 }
 
 menu_background {
@@ -116,7 +116,7 @@ element {
 
 element {
   interactable = true
-  source = CMI States：%n% √Alpha%n%→Beta%n%  Playable Preview%n%  Release
+  source = ╭────────────────────────────────%n%│ CMI States               ─□×%n%│  ┌──┬──────────────────────────%n%│  │✔│Alpha                     %n%│  │→│Beta Development          %n%│  │..│Beta Playable             %n%│  │..│Release                   %n%│  └──┴──────────────────────────%n%╰────────────────────────────────
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -151,11 +151,11 @@ element {
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1012
   sticky_anchor = false
-  anchor_point = bottom-right
-  x = -80
-  y = -61
-  width = 92
-  height = 61
+  anchor_point = top-right
+  x = -38
+  y = -8
+  width = 152
+  height = 100
   stretch_x = false
   stretch_y = false
   stay_on_screen = true

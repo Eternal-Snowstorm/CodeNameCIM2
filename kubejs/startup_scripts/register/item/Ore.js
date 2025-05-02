@@ -8,7 +8,7 @@ StartupEvents.registry("item", (event) => {
 })
 StartupEvents.registry("fluid", (event) => {
 	event.create(`${global.namespace}:molten_source_sapphire`)
-		.thinTexture(0X866249)
+		.thinTexture(0X0257F5)
 	event.create(`${global.namespace}:eletriced_source_emeraid`)
 		.thinTexture(0X117458)
 })
