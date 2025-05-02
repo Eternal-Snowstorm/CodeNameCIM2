@@ -212,7 +212,7 @@ Ponder.registry((event) => {
 		scene.world.setBlocks([4, 3, 13], "ue_addons:ponder_thermal_machine_side_orange")
 		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_slot")
 		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot_orange")
-		// 橙色代表输出
+		// 橙色则代表输出
 		scene.text(40, "Orange represents output", [4, 3, 13])
 		scene.idle(50)
 
@@ -246,7 +246,7 @@ Ponder.registry((event) => {
 
 		scene.idle(40)
 		// 在箱子中放入物品
-		scene.text(40, "Put items in the box", [8, 1, 7])
+		scene.text(40, "Put items in the chest", [8, 1, 7])
 		scene.idle(60)
 
 		// 机器会自动抽取物品
@@ -262,8 +262,8 @@ Ponder.registry((event) => {
 		scene.world.setBlocks([12, 6, 13], "ue_addons:ponder_thermal_energy_empty")
 		scene.idle(40)
 
-		// Automatically output after completion
-		scene.text(40, "", [8, 5, 13])
+		// 完成后会自动输出
+		scene.text(40, "Automatically output after completion", [8, 5, 13])
 		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot_orange")
 		scene.world.createItemOnBeltLike([6, 1, 7], Direction.EAST, "minecraft:glass")
 		scene.idle(70)
@@ -290,7 +290,7 @@ Ponder.registry((event) => {
 		scene.idle(50)
 
 		// 使用红图复制配置, 为你的机械大展宏图
-		scene.text(40, "Use the red map to copy the configuration to expand the grand plan for your machinery.")
+		scene.text(40, "Use the redprint to copy the configuration to expand the grand plan for your machinery.")
 		scene.idle(50)
 	})
 })

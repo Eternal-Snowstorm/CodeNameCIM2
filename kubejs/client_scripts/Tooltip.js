@@ -24,13 +24,13 @@ ItemEvents.tooltip((event) => {
 	addAccelerateTooltip("ue_addons:wooden_mechanism")
 
 	function addCommonTooltip(item) {
-		event.add(item, Component.translate(`tooltip.${item}`.replace(`:`, `.`)))
+		event.add(item, Component.translate(`tooltip.${item}`.replace(":", ".")))
 	}
 
 	function addAccelerateTooltip(item) {
 		event.addAdvanced(item, (item, advanced, text) => {
 			if (event.shift) {
-				text.add(Component.translate(`tooltip.${item.getId()}.accelerate`.replace(`:`, `.`)))
+				text.add(Component.translate(`tooltip.${item.getId()}.accelerate`.replace(":", ".")))
 			} else {
 				text.add(Component.translate(`tooltip.${global.namespace}.acceleratable`))
 			}
@@ -38,12 +38,13 @@ ItemEvents.tooltip((event) => {
 	}
 
 	// 地质锤的tooltip
-	event.addAdvanced("ue_addons:geological_hammer", (item, advanced, text) => {
-		if (global.isDeveloper) {
-			text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer1`))
-			text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer2`))
-		} else {
-			text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.not_developer`))
-		}
-	})
+	event.addAdvanced("ue_addons:geological_hammer",
+		(item, advanced, text) => {
+			if (global.isDeveloper) {
+				text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer1`))
+				text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer2`))
+			} else {
+				text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.not_developer`))
+			}
+		})
 })
