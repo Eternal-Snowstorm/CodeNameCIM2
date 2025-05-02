@@ -70,6 +70,5 @@
   "ue_addons.ponder.water_pump.text_2": "You need to build a complete structure first",
   "ue_addons.ponder.water_pump.text_3": "4 inward facing stairs",
   "ue_addons.ponder.water_pump.text_4": "Finally, put on the machine body",
-  "ue_addons.ponder.water_pump.text_5": "After the structure is built, the pipeline can be used to pump water",
-  "kubejs.ponder.use_faucet.header": "Use faucet"
+  "ue_addons.ponder.water_pump.text_5": "After the structure is built, the pipeline can be used to pump water"
 }

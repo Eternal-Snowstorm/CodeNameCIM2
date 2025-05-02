@@ -193,4 +193,48 @@ ClientEvents.lang("en_us", (event) => {
 	function addAloneLanguaue(key, value) {
 		event.add(key, value)
 	}
+
+
+
+
+
+
+
+
+	//化合物
+	
+	addItemLanguaue("feso4", "硫酸亚铁")
+	addItemLanguaue("fecl2", "氯化亚铁")
+	addItemLanguaue("cuso4", "硫酸铜")
+	addItemLanguaue("cucl2", "氯化铜")
+	addItemLanguaue("al2so43", "硫酸铝")
+	addItemLanguaue("alcl3", "氯化铝")
+	addItemLanguaue("pbcl2", "氯化铅")
+	addItemLanguaue("pbso4", "硫酸铅")
+	addItemLanguaue("sncl2", "氯化亚锡")
+	addItemLanguaue("snso4", "硫酸亚锡")
+	addItemLanguaue("zncl2", "氯化锌")
+	addItemLanguaue("znso4", "硫酸锡")
+	addItemLanguaue("aucl3", "氯化金")
+	addItemLanguaue("au2so43", "硫酸金")
+	addItemLanguaue("agcl", "氯化银")
+	addItemLanguaue("ag2so4", "硫酸银")
+	addItemLanguaue("crcl3", "氯化铬")
+	addItemLanguaue("cr2so43", "硫酸铬")
+	addItemLanguaue("vocl2", "二氯氧钒")
+	addItemLanguaue("voso4", "硫酸氧钒")
+	addItemLanguaue("uo2cl2", "氯化铀酰")
+	addItemLanguaue("uo2so4", "硫酸铀酰")
+	addItemLanguaue("nicl2", "氯化镍")
+	addItemLanguaue("niso4", "硫酸镍")
+	addItemLanguaue("cocl2", "氯化钴")
+	addItemLanguaue("coso4", "硫酸钴")
+	addItemLanguaue("voso4", "硫酸氧钒")
+	addItemLanguaue("voso4", "硫酸氧钒")
+	addItemLanguaue("voso4", "硫酸氧钒")
+	addItemLanguaue("voso4", "硫酸氧钒")
+	addItemLanguaue("voso4", "硫酸氧钒")
+	addItemLanguaue("voso4", "硫酸氧钒")
+	addItemLanguaue("voso4", "硫酸氧钒")
+	addItemLanguaue("voso4", "硫酸氧钒")
 })
