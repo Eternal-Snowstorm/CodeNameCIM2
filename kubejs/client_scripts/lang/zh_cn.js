@@ -119,6 +119,16 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addHeatedLanguaue("grilled", "炙烤")
 
+	addFluidLanguaue("molten_source_sapphire", "熔融蓝源晶")
+	addFluidLanguaue("eletriced_source_emeraid", "电解源质")
+
+	addItemLanguaue("blockstone_source_alpha", "alpha型黑石源质")
+	addItemLanguaue("blockstone_source_beta", "beta型黑石源质")
+	addItemLanguaue("blockstone_source_gamma", "gamma型黑石源质")
+	addItemLanguaue("crystal_ruby", "晶射红宝石")
+	addItemLanguaue("source_sapphire", "蓝源晶")
+	addItemLanguaue("bombed_source_emeraid", "爆裂源质")
+
 	let mechanismGroup = [
 		["nature", "自然"],
 		["wooden", "木质"],
