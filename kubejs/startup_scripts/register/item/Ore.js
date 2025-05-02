@@ -1,0 +1,12 @@
+StartupEvents.registry("item",event=>{
+    event.create(`${global.namespace}:blockstone_source_alpha`)
+    event.create(`${global.namespace}:blockstone_source_beta`)
+    event.create(`${global.namespace}:blockstone_source_gamma`)
+    event.create(`${global.namespace}:crystal_ruby`)
+    event.create(`${global.namespace}:source_sapphire`)
+    event.create(`${global.namespace}:bombed_source_emeraid`)
+})
+StartupEvents.registry("fluid",event=>{
+    event.create(`${global.namespace}:molten_source_sapphire`).thinTexture(0X866249)
+    event.create(`${global.namespace}:eletriced_source_emeraid`).thinTexture(0X117458)
+})
