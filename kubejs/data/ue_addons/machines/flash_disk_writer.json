@@ -88,30 +88,35 @@
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/mechanism_slot.png",
 			"id": "mechanism_1",
 			"x": 69,
 			"y": 34
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/mechanism_slot.png",
 			"id": "mechanism_2",
 			"x": 89,
 			"y": 34
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/mechanism_slot.png",
 			"id": "mechanism_3",
 			"x": 69,
 			"y": 54
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/mechanism_slot.png",
 			"id": "mechanism_4",
 			"x": 89,
 			"y": 54
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/flash_drive_slot.png",
 			"id": "flash_drive",
 			"x": 79,
 			"y": 14
@@ -159,30 +164,35 @@
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/mechanism_slot.png",
 			"id": "mechanism_1",
 			"x": 69,
 			"y": 34
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/mechanism_slot.png",
 			"id": "mechanism_2",
 			"x": 89,
 			"y": 34
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/mechanism_slot.png",
 			"id": "mechanism_3",
 			"x": 69,
 			"y": 54
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/mechanism_slot.png",
 			"id": "mechanism_4",
 			"x": 89,
 			"y": 54
 		},
 		{
 			"type": "custommachinery:slot",
+			"texture": "ue_addons:textures/gui/flash_drive_slot.png",
 			"id": "flash_drive",
 			"x": 79,
 			"y": 14
