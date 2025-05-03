@@ -32,6 +32,7 @@ ServerEvents.recipes((event) => {
 	let ipim = "ue_addons:incomplete_pigiron_mechanism"
 	let icbm = "ue_addons:incomplete_cobalt_mechanism"
 	let icpm = "ue_addons:incomplete_computing_mechanism"
+	let iram = "ue_addons:incomplete_railway_mechanism"
 
 	// 木质
 	create.sequenced_assembly("ue_addons:wooden_mechanism", [
@@ -105,7 +106,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iprm, [iprm, "create:cogwheel"]),
 		create.deploying(iprm, [iprm, "create:electron_tube"]),
 		create.deploying(iprm, [iprm, "ue_addons:mechanical_mechanism_part"])
-	]).transitionalItem(iprm).loops(1).id("create:sequenced_assembly/precision_mechanism")
+	]).transitionalItem(iprm).loops(1)
 
 	// 感光
 	create.sequenced_assembly("ue_addons:photosensitive_mechanism", [
@@ -156,18 +157,20 @@ ServerEvents.recipes((event) => {
 	], [
 		create.pressing(inm, inm),
 		create.deploying(inm, [inm, "#minecraft:flowers"]),
-		create.filling(inm, [inm, Fluid.water(500)]),
+		create.filling(inm, [inm, Fluid.of("minecraft:water", 500)]),
 		create.deploying(inm, [inm, "ue_addons:magical_mechanism_part"])
 	]).transitionalItem(inm).loops(1)
 
 	// 铁路
 	create.sequenced_assembly("ue_addons:railway_mechanism", [
-		"create:precision_mechanism"
+		"ue_addons:dense_sturdy_sheet"
 	], [
-		create.deploying(itrm, [itrm, "#forge:plates/obsidian"]),
-		create.cutting(itrm, itrm),
-		create.pressing(itrm, itrm),
-	]).transitionalItem(itrm).loops(1)
+		create.pressing(iram, [iram, "#forge:plates/obsidian"]),
+		create.deploying(iram, [iram, "ue_addons:mechanical_mechanism_part"]),
+		create.deploying(iram, [iram, "#forge:nuggets/brass"]),
+		create.deploying(iram, [iram, "#forge:nuggets/brass"]),
+		create.deploying(iram, [iram, "#forge:nuggets/brass"])
+	]).transitionalItem(iram).loops(1)
 
 	// 末影
 	create.sequenced_assembly("ue_addons:ender_mechanism", [
@@ -359,7 +362,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("ue_addons:computing_mechanism", [
 		"ue_addons:single_crystal_silicon"
 	], [
-		create.pressing(icpm,icpm),
+		create.pressing(icpm, icpm),
 		create.deploying(icpm, [icpm, "ue_addons:computer_component"]),
 		create.deploying(icpm, [icpm, "ue_addons:empty_exe"]),
 		create.deploying(icpm, [icpm, "ue_addons:mekanism_mechanism_part"])

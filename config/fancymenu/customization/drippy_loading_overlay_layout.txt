@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1746168791418
+  last_edited_time = 1746235420178
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:2413601f-c852-4c67-a475-097b3de1561c-1746167638075] = [groups:][instances:]
+  [loading_requirement_container_meta:42f39a9b-4743-4f93-b607-80739cad762d-1746235398310] = [groups:][instances:]
 }
 
 menu_background {
@@ -116,7 +116,7 @@ element {
 
 element {
   interactable = true
-  source = ╭────────────────────────────────%n%│ CMI States               ─□×%n%│  ┌──┬──────────────────────────%n%│  │✔│Alpha                     %n%│  │→│Beta Development          %n%│  │..│Beta Playable             %n%│  │..│Release                   %n%│  └──┴──────────────────────────%n%╰────────────────────────────────
+  source = ╭────────────────────────────────%n%│ CMI States             ─ □ ×%n%│  ┌──┬──────────────────────────%n%│  │✔│Alpha                     %n%│  │→│Beta Development          %n%│  │..│Beta Playable             %n%│  │..│Release                   %n%│  └──┴──────────────────────────%n%╰────────────────────────────────
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -148,8 +148,8 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1012
+  auto_sizing_base_screen_width = 1856
+  auto_sizing_base_screen_height = 1056
   sticky_anchor = false
   anchor_point = top-right
   x = -38
@@ -195,9 +195,9 @@ vanilla_button {
   auto_sizing_base_screen_height = 1012
   sticky_anchor = false
   anchor_point = vanilla
-  x = 114
-  y = 205
-  width = 252
+  x = 100
+  y = 214
+  width = 264
   height = 10
   stretch_x = false
   stretch_y = false
@@ -243,10 +243,10 @@ vanilla_button {
   auto_sizing_base_screen_height = 1012
   sticky_anchor = false
   anchor_point = vanilla
-  x = 114
-  y = 95
-  width = 252
-  height = 62
+  x = 100
+  y = 99
+  width = 264
+  height = 66
   stretch_x = false
   stretch_y = false
   stay_on_screen = true

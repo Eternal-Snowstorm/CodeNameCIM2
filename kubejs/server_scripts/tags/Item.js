@@ -1,8 +1,10 @@
 ServerEvents.tags("item", (event) => {
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
+		.add("vintageimprovements:redstone_module")
 	event.get("create:incomplete_mechanisms")
 		.add("create:incomplete_precision_mechanism")
+		.add("vintageimprovements:incomplete_redstone_module")
 
 	global.dyeColorGroup.forEach((color) => {
 		event.get(`forge:dyes/${color}`)

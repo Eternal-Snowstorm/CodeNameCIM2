@@ -9,6 +9,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("blood_slime_ball", "黏血球")
 	addItemLanguaue("empty_flash_drive", "空白闪存盘")
 	addItemLanguaue("programmed_flash_drive", "已编程闪存盘")
+	addItemLanguaue("dense_sturdy_sheet", "致密坚固板")
 
 	addMaterialLanguaue("andesite_alloy", "安山合金")
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")

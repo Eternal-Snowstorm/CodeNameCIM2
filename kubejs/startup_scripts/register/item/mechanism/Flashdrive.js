@@ -9,6 +9,16 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/mechanism/flash_drive/programmed`)
 		.tag(`${global.namespace}:mechanism_flash_drives`)
 
+	// 精密
+	event.create(`${global.namespace}:precision_mechanism_flash_drive`)
+		.texture(`${global.namespace}:item/mechanism/flash_drive/precision`)
+		.tag(`${global.namespace}:mechanism_flash_drives`)
+
+	// 红石
+	event.create(`${global.namespace}:redstone_mechanism_flash_drive`)
+		.texture(`${global.namespace}:item/mechanism/flash_drive/redstone`)
+		.tag(`${global.namespace}:mechanism_flash_drives`)
+
 	let mechanismRegister = [
 		"nature",
 		"wooden",

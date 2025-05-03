@@ -13,7 +13,8 @@ ServerEvents.recipes((event) => {
 		"functionalstorage:void_upgrade",
 		"ad_astra:recipes/iron_rod",
 		"create:milling/compat/ae2/sky_stone_block",
-		"ae2:blasting/sky_stone_block"
+		"ae2:blasting/sky_stone_block",
+		"create:sequenced_assembly/precision_mechanism"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({ id: id })
