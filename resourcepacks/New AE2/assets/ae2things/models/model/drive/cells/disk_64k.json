@@ -1,0 +1,7 @@
+{
+  "parent": "ae2:block/drive/cells/64k_item_cell",
+  "textures": {
+    "particle": "ae2things:block/drive/drive_cells",
+    "cell": "ae2things:block/drive/drive_cells"
+  }
+}

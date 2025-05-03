@@ -1,0 +1,53 @@
+{
+  "ambientocclusion": false,
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "cullface": "north",
+          "texture": "#cell",
+          "uv": [
+            6.0,
+            0.0,
+            0.0,
+            2.0
+          ]
+        },
+        "north": {
+          "cullface": "north",
+          "texture": "#cell",
+          "uv": [
+            0.0,
+            0.0,
+            6.0,
+            2.0
+          ]
+        },
+        "up": {
+          "cullface": "north",
+          "texture": "#cell",
+          "uv": [
+            6.0,
+            0.0,
+            0.0,
+            2.0
+          ]
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        6,
+        2,
+        2
+      ]
+    }
+  ],
+  "textures": {
+    "cell": "ae2_mega_things:block/drive/cells/mega_item",
+    "particle": "ae2_mega_things:block/drive/cells/mega_item"
+  }
+}

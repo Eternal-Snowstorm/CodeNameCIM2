@@ -1,0 +1,87 @@
+{
+	"credit": "Made with Blockbench by Almost Reliable",
+	"parent": "block/orientable",
+	"textures": {
+		"face": "merequester:block/requester",
+		"top": "ae2:block/generics/top",
+		"back": "ae2:block/generics/back",
+		"bottom": "ae2:block/generics/bottom",
+		"side": "ae2:block/generics/side",
+		"particle": "merequester:block/requester"
+	},
+	"elements": [
+		{
+			"name": "machine_frame",
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"east": {"uv": [16, 0, 0, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#back"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 4, 1],
+			"faces": {
+				"north": {"uv": [0, 12, 16, 16], "texture": "#face"},
+				"up": {"uv": [16, 12, 0, 13], "texture": "#face"}
+			}
+		},
+		{
+			"from": [3, 3, 1],
+			"to": [13, 13, 2],
+			"faces": {
+				"north": {"uv": [3, 3, 13, 13], "texture": "#face"}
+			}
+		},
+		{
+			"from": [0, 4, 0],
+			"to": [4, 16, 1],
+			"faces": {
+				"north": {"uv": [12, 0, 16, 12], "texture": "#face"},
+				"east": {"uv": [12, 0, 13, 12], "texture": "#face"}
+			}
+		},
+		{
+			"from": [12, 4, 0],
+			"to": [16, 16, 1],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 12], "texture": "#face"},
+				"west": {"uv": [3, 0, 4, 12], "texture": "#face"}
+			}
+		},
+		{
+			"from": [4, 12, 0],
+			"to": [12, 16, 1],
+			"faces": {
+				"north": {"uv": [4, 0, 12, 4], "texture": "#face"},
+				"down": {"uv": [12, 3, 4, 4], "texture": "#face"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-10, 117, -2],
+			"translation": [0, 1, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-10, 117, -2],
+			"translation": [0, 1, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"rotation": [-10, 117, -2],
+			"translation": [0, 1, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-10, 117, -2],
+			"translation": [0, 1, 0],
+			"scale": [0.4, 0.4, 0.4]
+		}
+	}
+}
