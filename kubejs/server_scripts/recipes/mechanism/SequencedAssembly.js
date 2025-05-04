@@ -217,7 +217,7 @@ ServerEvents.recipes((event) => {
 		"#forge:storage_blocks/lapis"
 	], [
 		create.pressing(ienm, ienm),
-		create.filling(ienm, [ienm, Fluid.of("create_enchantment_industry:hyper_experience", 20)]),
+		create.filling(ienm, [ienm, Fluid.of("create_enchantment_industry:experience", 20)]),
 		create.deploying(ienm, [ienm, "ue_addons:magical_mechanism_part"]),
 	]).transitionalItem(ienm).loops(1)
 
@@ -234,44 +234,44 @@ ServerEvents.recipes((event) => {
 
 	// 基础通用
 	create.sequenced_assembly("ue_addons:basic_mekanism_mechanism", [
-		"#forge:plates/steel"
+		"#forge:plates/stainless_steel"
 	], [
 		create.cutting(ibmm, ibmm),
 		create.pressing(ibmm, ibmm),
 		create.deploying(ibmm, [ibmm, "mekanism:basic_control_circuit"]),
-		create.deploying(ibmm, [ibmm, "minecraft:redstone"]),
-		create.deploying(ibmm, [ibmm, "#forge:ingots/iron"]),
+		create.deploying(ibmm, [ibmm, "#forge:gears/ruby"]),
 		create.deploying(ibmm, [ibmm, "ue_addons:mekanism_mechanism_part"]),
 	]).transitionalItem(ibmm).loops(1)
 
 	// 高级通用
 	create.sequenced_assembly("ue_addons:advanced_mekanism_mechanism", [
-		"ue_addons:basic_mekanism_mechanism"
+		"#forge:plates/stainless_steel"
 	], [
 		create.pressing(iamm, iamm),
 		create.deploying(iamm, [iamm, "mekanism:advanced_control_circuit"]),
 		create.deploying(iamm, [iamm, "mekanism:alloy_infused"]),
-		create.deploying(iamm, [iamm, "#forge:ingots/osmium"]),
+		create.deploying(iamm, [iamm, "#forge:small_springs/osmium"]),
+		create.deploying(ibmm, [ibmm, "ue_addons:mekanism_mechanism_part"]),
 	]).transitionalItem(iamm).loops(1)
 
 	// 精英通用
 	create.sequenced_assembly("ue_addons:elite_mekanism_mechanism", [
-		"ue_addons:advanced_mekanism_mechanism"
+		"#forge:plates/stainless_steel"
 	], [
 		create.pressing(iemm, iemm),
 		create.deploying(iemm, [iemm, "mekanism:elite_control_circuit"]),
 		create.deploying(iemm, [iemm, "mekanism:alloy_reinforced"]),
-		create.deploying(iemm, [iemm, "#forge:ingots/gold"]),
+		create.deploying(iemm, [iemm, "#forge:platess/gold"]),
 	]).transitionalItem(iemm).loops(1)
 
 	// 终极通用
 	create.sequenced_assembly("ue_addons:ultimate_mekanism_mechanism", [
-		"ue_addons:elite_mekanism_mechanism"
+		"#forge:plates/stainless_steel"
 	], [
 		create.pressing(iumm, iumm),
 		create.deploying(iumm, [iumm, "mekanism:ultimate_control_circuit"]),
 		create.deploying(iumm, [iumm, "mekanism:alloy_atomic"]),
-		create.deploying(iumm, [iumm, "#forge:gems/diamond"]),
+		create.deploying(iumm, [iumm, 'buildcraftsilicon:chipset_diamond']),
 	]).transitionalItem(iumm).loops(1)
 
 	// 结构
@@ -326,7 +326,6 @@ ServerEvents.recipes((event) => {
 	], [
 		create.deploying(iscm, [iscm, "minecraft:sculk_sensor"]),
 		create.deploying(iscm, [iscm, "minecraft:sculk_shrieker"]),
-		create.deploying(iscm, [iscm, "minecraft:sculk_catalyst"]),
 		create.deploying(iscm, [iscm, "ue_addons:magical_mechanism_part"])
 	]).transitionalItem(iscm).loops(1)
 
