@@ -11,6 +11,16 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("programmed_flash_drive", "已编程闪存盘")
 	addItemLanguaue("dense_sturdy_sheet", "致密坚固板")
 
+	addItemLanguaue("blockstone_source_alpha", "Alpha型黑石源质")
+	addItemLanguaue("blockstone_source_beta", "Beta型黑石源质")
+	addItemLanguaue("blockstone_source_gamma", "Gamma型黑石源质")
+	addItemLanguaue("crystal_ruby", "晶射红宝石")
+	addItemLanguaue("source_sapphire", "蓝源晶")
+	addItemLanguaue("bombed_source_emeraid", "爆裂源质")
+
+	addFluidLanguaue("molten_source_sapphire", "熔融蓝源晶")
+	addFluidLanguaue("eletriced_source_emeraid", "电解源质")
+
 	addMaterialLanguaue("andesite_alloy", "安山合金")
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")
 	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
@@ -154,16 +164,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("ue_addons:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 
 	addHeatedLanguaue("grilled", "炙烤")
-
-	addFluidLanguaue("molten_source_sapphire", "熔融蓝源晶")
-	addFluidLanguaue("eletriced_source_emeraid", "电解源质")
-
-	addItemLanguaue("blockstone_source_alpha", "alpha型黑石源质")
-	addItemLanguaue("blockstone_source_beta", "beta型黑石源质")
-	addItemLanguaue("blockstone_source_gamma", "gamma型黑石源质")
-	addItemLanguaue("crystal_ruby", "晶射红宝石")
-	addItemLanguaue("source_sapphire", "蓝源晶")
-	addItemLanguaue("bombed_source_emeraid", "爆裂源质")
 
 	let mechanismGroup = [
 		["nature", "自然"],

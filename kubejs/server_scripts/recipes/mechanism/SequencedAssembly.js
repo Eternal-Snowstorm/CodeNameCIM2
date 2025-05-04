@@ -166,10 +166,10 @@ ServerEvents.recipes((event) => {
 		"ue_addons:dense_sturdy_sheet"
 	], [
 		create.pressing(iram, [iram, "#forge:plates/obsidian"]),
-		create.deploying(iram, [iram, "ue_addons:mechanical_mechanism_part"]),
 		create.deploying(iram, [iram, "#forge:nuggets/brass"]),
 		create.deploying(iram, [iram, "#forge:nuggets/brass"]),
-		create.deploying(iram, [iram, "#forge:nuggets/brass"])
+		create.deploying(iram, [iram, "#forge:nuggets/brass"]),
+		create.deploying(iram, [iram, "ue_addons:mechanical_mechanism_part"])
 	]).transitionalItem(iram).loops(1)
 
 	// 末影

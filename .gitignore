@@ -1,9 +1,8 @@
-# common side
+# Common
 /.cache/
 /.vscode/
 /backups/
-/caxton_cache/
-/caxton_impl.dll
+/caxton*
 /CMI_alpha_dev_vers-natives/
 /CMI_alpha_dev_vers.jar
 /CMI_alpha_dev_vers.json
@@ -20,11 +19,10 @@
 /PCL/
 /rhino.local.properties
 schematics/uploaded/
-/shaderpacks/
 /usercache.json
 /usernamecache.json
 /saves/新的世界/
-/temp
+/temp/
 /screenshots
 /CodeNameCIM2.jar
 /CodeNameCIM2.json
@@ -37,16 +35,20 @@ schematics/uploaded/
 fancymenu_data
 saves/*/session.lock
 
-#resourcepacks
+# ResourcePacks
 /resourcepacks/*
-!/resourcepacks/New AE2/
+!/resourcepacks/New AE2
 !/resourcepacks/中微子的多用途汉化材质包.zip
 !/resourcepacks/等距更纱黑体包
 !/resourcepacks/Maple Mono字体包
 !/resourcepacks/PackResource
 !/resourcepacks/Pretty X Smart Pipez.zip
 
-# config
+# ShaderPacks
+/shaderpacks/*
+!shaderpacks/§r§lAstra§4§lLex§r§l_(§4§lBSL§r§l_Edit)_By_LexBoosT_§4§lV54.0§r§l.zip
+
+# Config
 config/ae2/
 config/appleskin-client.toml
 config/balm-common.toml
@@ -132,3 +134,7 @@ config/ad_astra.jsonc
 config/capsule*
 config/immersivepetroleum-client.toml
 config/buildcraft*
+config/presencefootsteps
+config/entity_texture_features.json
+config/etf_warnings.json
+config/paintings-client.toml

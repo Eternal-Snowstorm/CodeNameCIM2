@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeRecipeType = [
-
+		"vintageimprovements:laser_cutting"
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({ type: type })
