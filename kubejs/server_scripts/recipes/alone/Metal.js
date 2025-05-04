@@ -1,4 +1,4 @@
-let metal = [
+let metalGroup = [
 	"andesite_alloy",
 	"aluminum",
 	"brass",
@@ -48,7 +48,8 @@ let metal = [
 ]
 ServerEvents.recipes((event) => {
 	let { minecraft, kubejs, create, createaddition, thermal } = event.recipes
-	metal.forEach((metal) => {
+
+	metalGroup.forEach((metal) => {
 		if (!(Ingredient.of(`#forge:storage_blocks/${metal}`).itemIds.length === 0)) {
 			kubejs.shapeless(`9x #forge:ingots/${metal}`, [`#forge:storage_blocks/${metal}`])
 			kubejs.shaped(`#forge:storage_blocks/${metal}`, [
@@ -136,10 +137,11 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:gears/${metal}`).itemIds.length === 0)) {
 			kubejs.shaped(`#forge:gears/${metal}`, [
 				" A ",
-				"A A",
+				"ABA",
 				" A "
 			], {
-				A: `#forge:ingots/${metal}`
+				A: `#forge:ingots/${metal}`,
+				B: "#forge:nuggets/iron"
 			})
 			thermal.press(`#forge:gears/${metal}`, [
 				`4x #forge:ingots/${metal}`,

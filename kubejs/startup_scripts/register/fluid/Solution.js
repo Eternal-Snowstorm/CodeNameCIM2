@@ -14,54 +14,54 @@ StartupEvents.registry("fluid", (event) => {
 		})
 	}
 
-	addSolution("fecl2", 0xFFFFFF)
-	addSolution("feso4", 0xFFFFFF)
+	addSolution("fecl2", 0x5BBD7F)
+	addSolution("feso4", 0x6EB49C)
 
-	addSolution("cucl2", 0xFFFFFF)
-	addSolution("cuso4", 0xFFFFFF)
+	addSolution("cucl2", 0x00A889)
+	addSolution("cuso4", 0x3D67CA)
 
-	addSolution("zncl2", 0xFFFFFF)
-	addSolution("znso4", 0xFFFFFF)
+	addSolution("zncl2", 0xC8C8C8)
+	addSolution("znso4", 0xE7E2E2)
 
-	addSolution("alcl3", 0xFFFFFF)
-	addSolution("al2so43", 0xFFFFFF)
+	addSolution("alcl3", 0xD2CE2F)
+	addSolution("al2so43", 0xAAAAAA)
 
-	addSolution("aucl3", 0xFFFFFF)
-	addSolution("au2so43", 0xFFFFFF)
+	addSolution("aucl3", 0xFFC800)
+	addSolution("au2so43", 0x979B9E)
 
-	addSolution("agcl", 0xFFFFFF)
-	addSolution("ag2so4", 0xFFFFFF)
+	addSolution("agcl", 0x838383)
+	addSolution("ag2so4", 0xC2F2F2)
 
-	addSolution("pbcl2", 0xFFFFFF)
-	addSolution("pbso4", 0xFFFFFF)
+	addSolution("pbcl2", 0xADEDF)
+	addSolution("pbso4", 0xDADEDF)
 
-	addSolution("crcl3", 0xFFFFFF)
-	addSolution("cr2so43", 0xFFFFFF)
+	addSolution("crcl3", 0x9300FF)
+	addSolution("cr2so43", 0x00D468)
 
-	addSolution("sncl2", 0xFFFFFF)
-	addSolution("snso4", 0xFFFFFF)
+	addSolution("sncl2", 0xFFFBBF)
+	addSolution("snso4", 0xEDE9AD)
 
-	addSolution("vocl2", 0xFFFFFF)
-	addSolution("voso4", 0xFFFFFF)
+	addSolution("vocl2", 0xE2EAB0)
+	addSolution("voso4", 0x007FFF)
 
-	addSolution("uo2cl2", 0xFFFFFF)
-	addSolution("uo2so4", 0xFFFFFF)
+	addSolution("uo2cl2", 0xDAFF00)
+	addSolution("uo2so4", 0xDAFF00)
 
-	addSolution("nicl2", 0xFFFFFF)
-	addSolution("niso4", 0xFFFFFF)
+	addSolution("nicl2", 0x59FFD7)
+	addSolution("niso4", 0x59FFD7)
 
 	addSolution("cocl2", 0xFFFFFF)
 	addSolution("coso4", 0xFFFFFF)
 
-	addSolution("oscl3", 0xFFFFFF)
-	addSolution("os2so43", 0xFFFFFF)
+	addSolution("oscl3", 0xFF74F3)
+	addSolution("os2so43", 0x001AE3)
 
-	addSolution("na2so4", 0xFFFFFF)
-	addSolution("nacl", 0xFFFFFF)
+	addSolution("na2so4", 0xD7DDDD)
+	addSolution("nacl", 0xDADEDF)
 
-	addSolution("caso4", 0xFFFFFF)
-	addSolution("cacl2", 0xFFFFFF)
+	addSolution("caso4", 0xE0DDC3)
+	addSolution("cacl2", 0xE0DDC3)
 
-	addSolution("k2so4", 0xFFFFFF)
-	addSolution("kcl", 0xFFFFFF)
+	addSolution("k2so4", 0xB8BDBD)
+	addSolution("kcl", 0xB8BDBD)
 })
