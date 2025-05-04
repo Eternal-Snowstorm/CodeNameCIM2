@@ -250,7 +250,7 @@ ServerEvents.recipes((event) => {
 		create.pressing(iamm, iamm),
 		create.deploying(iamm, [iamm, "mekanism:advanced_control_circuit"]),
 		create.deploying(iamm, [iamm, "mekanism:alloy_infused"]),
-		create.deploying(iamm, [iamm, "#forge:small_springs/osmium"]),
+		create.deploying(iamm, [iamm, '#vintageimprovements:small_springs/osmium']),
 		create.deploying(ibmm, [ibmm, "ue_addons:mekanism_mechanism_part"]),
 	]).transitionalItem(iamm).loops(1)
 
@@ -261,7 +261,7 @@ ServerEvents.recipes((event) => {
 		create.pressing(iemm, iemm),
 		create.deploying(iemm, [iemm, "mekanism:elite_control_circuit"]),
 		create.deploying(iemm, [iemm, "mekanism:alloy_reinforced"]),
-		create.deploying(iemm, [iemm, "#forge:platess/gold"]),
+		create.deploying(iemm, [iemm, "#forge:plates/gold"]),
 	]).transitionalItem(iemm).loops(1)
 
 	// 终极通用
@@ -310,13 +310,13 @@ ServerEvents.recipes((event) => {
 
 	// 多彩
 	create.sequenced_assembly("ue_addons:colorful_mechanism", [
-		"mekanism:dye_base"
+		"#minecraft:wooden_slab"
 	], [
-		create.deploying(iclm, [iclm, "ae2:black_lumen_paint_ball"]),
-		create.deploying(iclm, [iclm, "ae2:red_lumen_paint_ball"]),
-		create.deploying(iclm, [iclm, "ae2:green_lumen_paint_ball"]),
-		create.deploying(iclm, [iclm, "ae2:blue_lumen_paint_ball"]),
-		create.deploying(iclm, [iclm, "ae2:white_lumen_paint_ball"]),
+		create.deploying(iclm, [iclm, "minecraft:red_dye"]),
+		create.deploying(iclm, [iclm, "minecraft:yellow_dye"]),
+		create.deploying(iclm, [iclm, "minecraft:blue_dye"]),
+		create.deploying(iclm, [iclm, "minecraft:white_dye"]),
+		create.deploying(iclm, [iclm, "minecraft:black_dye"]),
 		create.deploying(iclm, [iclm, "ue_addons:magical_mechanism_part"])
 	]).transitionalItem(iclm).loops(1)
 
@@ -363,7 +363,6 @@ ServerEvents.recipes((event) => {
 	], [
 		create.pressing(icpm, icpm),
 		create.deploying(icpm, [icpm, "ue_addons:computer_component"]),
-		create.deploying(icpm, [icpm, "ue_addons:empty_exe"]),
 		create.deploying(icpm, [icpm, "ue_addons:mekanism_mechanism_part"])
 	]).transitionalItem(icpm).loops(1)
 })

@@ -265,6 +265,7 @@
 			dependencies: [
 				"3CBE5B0B56CB75A4"
 				"7F8CA0DAB7770DCA"
+				"67FAE1DA4D9C2F87"
 			]
 			id: "0C258EEC3A28101E"
 			tasks: [{
@@ -329,6 +330,82 @@
 			}]
 			x: 6.0d
 			y: -9.0d
+		}
+		{
+			id: "0719552A0E065A18"
+			tasks: [{
+				id: "3F9C0D8E4A81E5B6"
+				item: "ue_addons:nether_mechanism"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0DE8D693A94C5A6D"]
+			id: "616EE72DEF1337EB"
+			tasks: [{
+				id: "3CB13F838D601C86"
+				item: "ue_addons:cobalt_mechanism"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["315BE76178E4D7F7"]
+			id: "21A34B9886AEF0AD"
+			tasks: [{
+				id: "384CCE262D6434B0"
+				item: "ue_addons:computing_mechanism"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["315BE76178E4D7F7"]
+			id: "5DACA4599CFCBB11"
+			tasks: [{
+				id: "3582807B32DEB498"
+				item: "ue_addons:tier_1_aviation_mechanism"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DACA4599CFCBB11"]
+			id: "44A58231092EABA1"
+			tasks: [{
+				id: "2E5E1FE50C16F5A4"
+				item: "ue_addons:tier_2_aviation_mechanism"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44A58231092EABA1"]
+			id: "01DFFFFD4CD9DD74"
+			tasks: [{
+				id: "0B0C47ED9BD661BE"
+				item: "ue_addons:tier_3_aviation_mechanism"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01DFFFFD4CD9DD74"]
+			id: "67FAE1DA4D9C2F87"
+			tasks: [{
+				id: "41B784A5762E1861"
+				item: "ue_addons:tier_4_aviation_mechanism"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
 		}
 	]
 	title: "tech tree"
