@@ -18,51 +18,49 @@ ServerEvents.recipes((event) => {
 
 	// 流体单元框架
 	kubejs.shaped("thermal:fluid_cell_frame", [
-		"ABA",
-		"C C",
-		"CDC"
+		"ACA",
+		"CDC",
+		"ACA"
 	], {
 		A: COPPER_INGOT,
-		B: COPPER_MECH,
 		C: GLASS,
-		D: THERMAL_MECH
+		D: COPPER_MECH
 	}).id("thermal:fluid_cell_frame")
 
 	// 机器框架
 	kubejs.shaped("thermal:machine_frame", [
 		"ABA",
 		"BCB",
-		"DBD"
+		"ABA"
 	], {
-		A: IRON_MECH,
 		B: GLASS,
-		C: "#forge:gears/tin",
-		D: IRON_INGOT
+		C: "ue_addons:thermal_mechanism",
+		A: "#forge:ingots/invar",
 	}).id("thermal:machine_frame")
 
 	// 
 	kubejs.shaped("thermal:device_potion_diffuser", [
 		"ABA",
-		"CDC",
-		"AEA"
+		"CMC",
+		"ADA"
 	], {
 		A: SILVER_INGOT,
 		B: THERMAL_MECH,
 		C: GLASS,
 		D: "minecraft:glass_bottle",
-		E: REDSTONE_MOD
+		M: "thermal:machine_frame"
 	}).id("thermal:device_potion_diffuser")
 
 	// 
 	kubejs.shaped("thermal:device_nullifier", [
-		"ABA",
-		"CDC",
-		"AEA"
+		"AEA",
+		"CMC",
+		"ADA"
 	], {
 		A: SILVER_INGOT,
-		B: REDSTONE_MOD,
 		C: GLASS,
 		D: "minecraft:lava_bucket",
+		M: "thermal:machine_frame",
 		E: THERMAL_MECH
 	}).id("thermal:device_nullifier")
 
@@ -76,40 +74,38 @@ ServerEvents.recipes((event) => {
 		B: "ue_addons:enchanted_mechanism",
 		C: GLASS,
 		D: "thermal:xp_crystal",
-		E: THERMAL_MECH
+		M: "thermal:machine_frame"
 	})
 
 	// 
 	kubejs.shaped("thermal:device_collector", [
-		"A A",
+		"ADA",
 		"BCB",
-		"ADA"
+		"AMA"
 	], {
 		A: "#forge:ingots/tin",
 		B: GLASS,
 		C: "minecraft:hopper",
-		D: THERMAL_MECH
+		D: THERMAL_MECH,
+		M: "thermal:machine_frame"
 	})
 
 	// 
 	kubejs.shaped("thermal:redstone_servo", [
-		"A  ",
-		" B ",
-		"  C"
+		"A",
+		"B",
 	], {
 		A: REDSTONE_MOD,
-		B: IRON_INGOT,
-		C: "minecraft:redstone"
+		B: "#forge:rods/iron",
 	})
 
 	// 
 	kubejs.shaped("thermal:device_composter", [
-		"ABC",
+		"CAC",
 		"DED",
 		"CFC"
 	], {
-		A: "ue_addons:wooden_mechanism",
-		B: IRON_MECH,
+		A: "ue_addons:andesite_mechanism",
 		C: PLANK,
 		D: GLASS,
 		E: "minecraft:composter",
@@ -126,40 +122,38 @@ ServerEvents.recipes((event) => {
 		B: COPPER_MECH,
 		C: GLASS,
 		D: "minecraft:fishing_rod",
-		E: THERMAL_MECH
+		E: "ue_addons:andesite_mechanism",
 	})
 
 	// 
-	kubejs.shaped("16x thermal:rf_coil", [
-		"A  ",
-		" B ",
-		"  A"
-	], {
-		A: "ue_addons:gold_mechanism",
-		B: "minecraft:redstone"
-	})
+//	create.mixing("thermal:rf_coil"), [
+//		"#forge:rods/gold",
+//		"minecraft:redstone"
+//	]
 
 	// 
 	kubejs.shaped("thermal:dynamo_stirling", [
 		" A ",
-		"B B",
+		"BMB",
 		"CDC"
 	], {
-		A: "minecraft:redstone",
-		B: "minecraft:stone",
+		A: "thermal:rf_coil",
+		B: "#forge:stone",
 		C: "ue_addons:stone_mechanism",
-		D: "minecraft:flint"
+		D: "minecraft:flint",
+		M: "ue_addons:thermal_mechanism"
 	})
 
 	// 
 	kubejs.shaped("thermal:machine_pulverizer", [
 		" A ",
-		" B ",
-		" C "
+		"CBC",
+		" M "
 	], {
-		A: "create:chute",
+		A: "thermal:rf_coil",
 		B: FRAME,
-		C: IRON_MECH
+		M: "ue_addons:thermal_mechanism",
+		C: "create:crushing_wheel"
 	})
 
 	// 
@@ -175,31 +169,32 @@ ServerEvents.recipes((event) => {
 
 	// 
 	kubejs.shaped("thermal:dynamo_gourmand", [
-		"   ",
 		" A ",
-		"BCB"
-	],{
-		A: "ue_addons:pigiron_mechanism",
-		B: "minecraft:bone",
-		C: "thermal:dynamo_compression"
+		"BMB",
+		"CDC"
+	], {
+		A: "thermal:rf_coil",
+		B: "#forge:ingots/invar",
+		C: "ue_addons:pigiron_mechanism",
+		D: "minecraft:flint",
+		M: "ue_addons:thermal_mechanism"
 	})
 
 	// 
 	kubejs.shaped("thermal:machine_crafter", [
 		" A ",
 		" B ",
-		"CDC"
+		" M "
 	],{
 		A: "minecraft:crafting_table",
 		B: FRAME,
-		C: "#forge:ingots/tin",
-		D: COPPER_MECH
+		M: "ue_addons:thermal_mechanism"
 	})
 
 	// 
 	kubejs.shaped("thermal:machine_bottler", [
-		" A ",
 		" B ",
+		" A ",
 		" C "
 	],{
 		A: FRAME,
@@ -209,34 +204,33 @@ ServerEvents.recipes((event) => {
 
 	// 
 	kubejs.shaped("thermal:machine_press", [
-		"   ",
-		"ABC",
+		" B ",
+		" A ",
 		" D "
 	],{
 		A: FRAME,
 		B: "create:mechanical_press",
-		C: "createaddition:electric_motor",
 		D: THERMAL_MECH
 	})
 
 	// 
 	kubejs.shaped("thermal:machine_centrifuge", [
-		" A ",
 		" B ",
-		" C "
+		" C ",
+		" M "
 	],{
-		A: "ue_addons:coil_mechanism",
+		M: THERMAL_MECH,
 		B: "vintageimprovements:centrifuge",
 		C: FRAME
 	})
 
 	// 
 	kubejs.shaped("thermal:machine_furnace", [
-		" A ",
+		" C ",
 		" B ",
-		" C "
+		" A "
 	],{
-		A: REDSTONE_MOD,
+		A: THERMAL_MECH,
 		B: FRAME,
 		C: "minecraft:furnace"
 	})
@@ -249,7 +243,7 @@ ServerEvents.recipes((event) => {
 
 	// 
 	create.item_application("thermal:dynamo_disenchantment", [
-		"thermal:dynamo_compression",
+		"thermal:dynamo_stirling",
 		"ue_addons:enchanted_mechanism"
 	])
 
@@ -260,15 +254,25 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 
-	create.item_application("thermal:machine_crucible", [
-		"thermal:machine_frame",
-		"ue_addons:nether_mechanism"
-	])
+	kubejs.shaped("thermal:machine_crucible", [
+		" C ",
+		" B ",
+		" A "
+	],{
+		A: THERMAL_MECH,
+		B: FRAME,
+		C: "ue_addons:nether_mechanism"
+	})
 
 	// 
-	create.item_application("thermal:machine_pyrolyzer", [
-		"thermal:machine_crucible",
-		"ue_addons:feinforced_mechanism"
-	])
+	kubejs.shaped("thermal:machine_pyrolyzer", [
+		" C ",
+		" B ",
+		" A "
+	],{
+		A: THERMAL_MECH,
+		B: FRAME,
+		C: 'create:blaze_burner'
+	})
 
 })
