@@ -60,6 +60,11 @@
 		"version": "2.3.4"
 	},
 	{
+		"filename": "buildcraft-7.99.24.9-1.20.1-2025-04-24T20-05-00 0800-all.jar",
+		"name": "BuildCraft Lib",
+		"version": "7.99.24.9"
+	},
+	{
 		"filename": "Capsule-1.20.1-8.0.105.jar",
 		"name": "Capsule",
 		"version": "1.20.1-8.0.105"
@@ -330,6 +335,11 @@
 		"version": "1.20.1-10.2.0-183"
 	},
 	{
+		"filename": "ImmersiveIndustry-1.20.1-0.2.0.jar",
+		"name": "Immersive Industry",
+		"version": "1.20.1-0.2.0"
+	},
+	{
 		"filename": "ImmersivePetroleum-1.20.1-4.2.0-30.jar",
 		"name": "Immersive Petroleum",
 		"version": "4.2.0-30"
@@ -390,6 +400,11 @@
 		"version": "2001.1.10-build.2"
 	},
 	{
+		"filename": "lmft-1.0.4+1.20.1-forge.jar",
+		"name": "Load My F***ing Tags",
+		"version": "1.0.4+1.20.1"
+	},
+	{
 		"filename": "ldlib-forge-1.20.1-1.0.35.jar",
 		"name": "LowDragLib",
 		"version": "1.0.35"
@@ -435,9 +450,9 @@
 		"version": "1.15"
 	},
 	{
-		"filename": "modernfix-forge-5.20.2+mc1.20.1.jar",
+		"filename": "modernfix-forge-5.21.0+mc1.20.1.jar",
 		"name": "ModernFix",
-		"version": "5.20.2+mc1.20.1"
+		"version": "5.21.0+mc1.20.1"
 	},
 	{
 		"filename": "moonlight-1.20-2.13.75-forge.jar",
@@ -455,6 +470,11 @@
 		"version": "1.0.23"
 	},
 	{
+		"filename": "notenoughcrashes-4.4.7+1.20.1-forge.jar",
+		"name": "Not Enough Crashes",
+		"version": "4.4.7+1.20.1"
+	},
+	{
 		"filename": "oculus-mc1.20.1-1.8.0.jar",
 		"name": "Oculus",
 		"version": "1.8.0"
@@ -468,6 +488,11 @@
 		"filename": "packetfixer-forge-2.0.0-1.19-to-1.20.1.jar",
 		"name": "Packet Fixer",
 		"version": "2.0.0"
+	},
+	{
+		"filename": "Paintings-forge-1.20.1-11.0.0.2.jar",
+		"name": "Paintings ++",
+		"version": "11.0.0.2"
 	},
 	{
 		"filename": "Patchouli-1.20.1-84.1-FORGE.jar",
@@ -508,6 +533,11 @@
 		"filename": "ponderjs-1.20.1-1.4.0.jar",
 		"name": "PonderJS",
 		"version": "1.4.0"
+	},
+	{
+		"filename": "PresenceFootsteps-1.20.1-1.9.1-beta.1.jar",
+		"name": "Presence Footsteps (Forge)",
+		"version": "1.20.1-1.9.1-beta.1"
 	},
 	{
 		"filename": "probejs-6.0.1-forge.jar",
