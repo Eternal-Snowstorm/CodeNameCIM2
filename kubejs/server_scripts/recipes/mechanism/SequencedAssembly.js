@@ -113,7 +113,7 @@ ServerEvents.recipes((event) => {
 		"minecraft:quartz_slab"
 	], [
 		create.pressing(ipm, ipm),
-		create.deploying(ipm, [ipm, "minecraft:amethyst_shard"]),
+		create.deploying(ipm, [ipm, "ue_addons:charged_amethyst"]),
 		create.deploying(ipm, [ipm, "minecraft:glowstone_dust"]),
 		create.deploying(ipm, [ipm, "ue_addons:mechanical_mechanism_part"])
 	]).transitionalItem(ipm).loops(1)
