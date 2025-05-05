@@ -109,5 +109,7 @@ Ponder.registry((event) => {
 			scene.text(40, "Finally, remember to import fuel to Fuel Tank", [3.5, 2.5, 2])
 				.placeNearTarget()
 			scene.idle(20)
+
+			scene.add
 		})
 })
