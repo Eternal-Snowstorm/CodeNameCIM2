@@ -1,13 +1,13 @@
 {
-  "type": "tconstruct:material",
-  "ingredient": {
-    "tag": "forge:storage_blocks/andesite_alloy"
-  },
-  "leftover": {
-    "count": 1,
-    "item": "ue_addons:andesite_alloy_ingot"
-  },
-  "material": "ue_addons:andesite_alloy",
-  "needed": 1,
-  "value": 9
+	"type": "tconstruct:material",
+	"ingredient": {
+		"tag": "forge:storage_blocks/andesite_alloy"
+	},
+	"leftover": {
+		"count": 1,
+		"item": "ue_addons:andesite_alloy_ingot"
+	},
+	"material": "ue_addons:andesite_alloy",
+	"needed": 1,
+	"value": 9
 }
