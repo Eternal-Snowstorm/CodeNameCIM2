@@ -138,3 +138,5 @@ config/presencefootsteps
 config/entity_texture_features.json
 config/etf_warnings.json
 config/paintings-client.toml
+config/supplementaries*
+config/amendments*
