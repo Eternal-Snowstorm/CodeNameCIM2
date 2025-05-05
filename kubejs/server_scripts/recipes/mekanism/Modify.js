@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs, thermal_extra } = event.recipes
 
 	kubejs.shaped("mekanism:cardboard_box", [
 		"AAA",
@@ -19,4 +19,9 @@ ServerEvents.recipes((event) => {
 		B: "#forge:plates/polyolefin",
 		C: "ue_addons:osmium_tile"
 	}).id("mekanism:steel_casing")
+
+	thermal_extra.component_assembly("mekanism:basic_control_circuit", [
+		"#forge:dusts/emerald",
+		"thermal_extra:polyolefin_plate"
+	])
 })

@@ -119,6 +119,9 @@
     "goggles.detailed": false,
     "placard": true
   },
+  "supplementaries": {
+    "hat_stand": true
+  },
   "buildcraftcore": {
     "mj_storage_client_data": true
   },
