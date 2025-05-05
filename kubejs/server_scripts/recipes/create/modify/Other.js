@@ -41,4 +41,18 @@ ServerEvents.recipes((event) => {
 		"create:cinder_flour",
 		"minecraft:sugar"
 	]).id("create:compacting/blaze_cake")
+
+	// 激光发射器
+	create.mechanical_crafting("vintageimprovements:laser_item", [
+		" A ",
+		"BCB",
+		"BDB",
+		" E "
+	], {
+		A: "#forge:dusts/redstone",
+		B: "#forge:plates/copper",
+		C: "create:electron_tube",
+		D: "createaddition:capacitor",
+		E: "#forge:gems/charged_amethyst"
+	}).id("vintageimprovements:mechanical_crafting/laser")
 })

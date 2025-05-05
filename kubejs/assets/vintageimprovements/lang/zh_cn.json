@@ -296,7 +296,7 @@
 	"vintageimprovements.recipe.turning": "车削",
 	"vintageimprovements.lathe.item_slot": "当前配料",
 	"block.vintageimprovements.laser": "激光加工机",
-	"item.vintageimprovements.laser_item": "激光器",
+	"item.vintageimprovements.laser_item": "激光发射器",
 	"vintageimprovements.recipe.assembly.laser_cutting": "激光加工",
 	"vintageimprovements.recipe.laser_cutting": "激光加工",
 	"vintageimprovements.recipe.assembly.with": "与",

@@ -4,11 +4,18 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:computer_component`)
 
 	event.create(`${global.namespace}:blockstone_source_alpha`)
+		.texture(`${global.namespace}:item/material/blockstone_source_alpha`)
 	event.create(`${global.namespace}:blockstone_source_beta`)
+		.texture(`${global.namespace}:item/material/blockstone_source_beta`)
 	event.create(`${global.namespace}:blockstone_source_gamma`)
+		.texture(`${global.namespace}:item/material/blockstone_source_gamma`)
+
 	event.create(`${global.namespace}:crystal_ruby`)
+		.texture(`${global.namespace}:item/material/crystal_ruby`)
 	event.create(`${global.namespace}:source_sapphire`)
+		.texture(`${global.namespace}:item/material/source_sapphire`)
 	event.create(`${global.namespace}:bombed_source_emeraid`)
+		.texture(`${global.namespace}:item/material/bombed_source_emeraid`)
 
 	event.create(`${global.namespace}:blood_slime_ball`)
 		.tag("forge:slimeball")
@@ -18,4 +25,14 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/dense_sturdy_sheet`)
 		.tag("forge:plates")
 		.tag("forge:plates/refined_obsidian")
+
+	event.create(`${global.namespace}:plasma_ingot`)
+		.texture(`${global.namespace}:item/material/ingot/plasma_ingot`)
+		.tag("forge:ingots")
+		.tag("forge:ingots/plasma")
+
+	event.create(`${global.namespace}:charged_amethyst`)
+		.texture(`${global.namespace}:item/material/charged_amethyst`)
+		.tag("forge:gems")
+		.tag("forge:gems/charged_amethyst")
 })

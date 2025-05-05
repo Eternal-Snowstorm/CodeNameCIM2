@@ -10,6 +10,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("empty_flash_drive", "空白闪存盘")
 	addItemLanguaue("programmed_flash_drive", "已编程闪存盘")
 	addItemLanguaue("dense_sturdy_sheet", "致密坚固板")
+	addItemLanguaue("charged_amethyst", "充能紫水晶")
+	addItemLanguaue("plasma_ingot", "等离子锭")
 
 	addItemLanguaue("blockstone_source_alpha", "Alpha型黑石源质")
 	addItemLanguaue("blockstone_source_beta", "Beta型黑石源质")
