@@ -52,6 +52,29 @@ kubejs.shaped("minecraft:stone", [
 })
 ```
 
+3. 撰写物品逻辑时必须注释逻辑实现的功能并分步注释该步骤实现的内容
+
+```js
+// 自然构件右键运行骨粉逻辑
+BlockEvents.rightClicked((event) => {
+    let { level, item, player, facing, block, hand } = event
+    // 取消无效右键事件
+    if (level.clientSide) {
+        return
+    }
+    // 判断玩家手持物品为自然构件
+    if (item === "ue_addons:nature_mechanism") {
+        // 获取所点击的方块位置并调用MC原版骨粉逻辑
+        let blockHitResult = new $BlockHitResult(player.pos, facing, block.pos, false)
+        let useOnContext = new $UseOnContext(level, player, hand, "minecraft:bone_meal", blockHitResult)
+        // 在指定方块上运行骨粉的逻辑
+        Items.BONE_MEAL.useOn(useOnContext)
+        // 玩家挥动手持的自然构件
+        player.swing()
+    }
+})
+```
+
 **第六条** 注册规范:
 在调用链式方法是`必须`换行
 `严格禁止`使用`.displayName()`方法对物品进行命名, 请前往[**lang**](kubejs/client_scripts/lang)文件夹下的语言文件内进行命名与修改
