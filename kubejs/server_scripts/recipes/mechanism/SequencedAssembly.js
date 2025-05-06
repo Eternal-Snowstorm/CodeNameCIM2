@@ -310,7 +310,7 @@ ServerEvents.recipes((event) => {
 
 	// 多彩
 	create.sequenced_assembly("ue_addons:colorful_mechanism", [
-		"#minecraft:wooden_slab"
+		"#minecraft:wooden_slabs"
 	], [
 		create.deploying(iclm, [iclm, "minecraft:red_dye"]),
 		create.deploying(iclm, [iclm, "minecraft:yellow_dye"]),
