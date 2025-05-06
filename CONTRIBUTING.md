@@ -18,9 +18,7 @@
 
  - GitHub每次进行修改上传(即`push origin`)需要输入该次修改的注释, 包含`summary`与`description`
 
- - 自本协议生效开始, 所有修改的`summary`统一为版本号码
-
- - 技术人员在上传的`description`中需使用中文(不限简繁体)或英语概述该次修改的内容
+ - 技术人员在上传的`commits message`中需使用中文(不限简繁体)或英语概述该次修改的内容
 
 ## 第三章 开发规范
 
@@ -76,8 +74,10 @@ BlockEvents.rightClicked((event) => {
 ```
 
 **第六条** 注册规范:
-在调用链式方法是`必须`换行
-`严格禁止`使用`.displayName()`方法对物品进行命名, 请前往[**lang**](kubejs/client_scripts/lang)文件夹下的语言文件内进行命名与修改
+
+在调用链式方法时`必须`换行
+
+`严格禁止`使用`.displayName()`方法对其进行命名, 请前往[**lang**](kubejs/client_scripts/lang)文件夹下的语言文件内进行命名与修改
 
 ```js
 event.create(`${global.namespace}:smart_gear`)
@@ -88,36 +88,40 @@ event.create(`${global.namespace}:smart_gear`)
 ## 第四章 代码管理
 
 **第七条** 知识产权条款:
+
 1. 贡献者保留其提交代码的著作权
+
 2. 项目核心团队拥有代码架构的最终优化权
 
 ## 第五章 贡献流程
 
-**第八条** Pull Request要求:
-1. 须包含至少1张有效运行截图
+**第八条** **Pull Request**要求:
+
+1. 必须包含至少1张有效运行截图
+
 2. 必须通过基础测试套件验证
+
 3. 禁止包含以下内容:
    - 二进制文件(`.jar/.zip`)
 
-**第九条** Issue管理:
+**第九条** **Issues**管理:
+
 1. BUG报告必须包含:
    - 环境配置详情
    - 复现步骤
    - 错误日志片段
+   - 确保没有加入任何影响到游戏性能与内容的Mod
 
 ## 第六章 版本控制
 
-**第十条** 迭代流程:
-1. 主理人于每个版本周期发布Roadmap
-2. 开发团队应在[**Project Board**](https://github.com/users/VechniMetel/projects/1)跟踪进度
-
-**第十一条** 更新日志规范:
+**第十条** 更新日志规范:
 每次做出一个修改(看情况区分)需要在[**UpdateLogs.md**](UpdateLogs.md)中写上记录, 格式如下(每一行的`-`前后请记得空一个空格):
 
 ```markdown
 ## Beta 1.1.0
 
 ### 删除内容
+ - 删除了XXX的Tags
 
 ### 添加内容
  - 新增钛合金冶炼配方体系
