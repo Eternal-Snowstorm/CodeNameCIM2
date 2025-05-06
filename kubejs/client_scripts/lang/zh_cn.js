@@ -31,10 +31,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMachineLanguaue("water_pump", "水泵")
 	addMachineLanguaue("flash_disk_writer", "闪存盘写入器")
 
-	addMBDMachineLanguaue("accelerator_energy_input", "大型构件催生器能量输入口")
-	addMBDMachineLanguaue("accelerator_item_input", "大型构件催生器物品输入口")
-	addMBDMachineLanguaue("accelerator_item_output", "大型构件催生器物品输出口")
-	addMBDMachineLanguaue("accelerator", "大型构件催生器控制器")
+	addMBDMachineLanguage("proxy_part_block", "多方块机器部件方块")
+	addMBDMachineLanguage("accelerator_energy_input", "大型构件催生器能量输入口")
+	addMBDMachineLanguage("accelerator_item_input", "大型构件催生器物品输入口")
+	addMBDMachineLanguage("accelerator_item_output", "大型构件催生器物品输出口")
+	addMBDMachineLanguage("accelerator", "大型构件催生器控制器")
 	addMBDMachineGUILanguage("accelerator","大型构件催生器")
 
 	addMechanismPartLanguaue("basic", "基础")
@@ -57,7 +58,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addSolutionLanguage("sncl2", "氯化亚锡")
 	addSolutionLanguage("snso4", "硫酸亚锡")
 	addSolutionLanguage("zncl2", "氯化锌")
-	addSolutionLanguage("znso4", "硫酸锡")
+	addSolutionLanguage("znso4", "硫酸锌")
 	addSolutionLanguage("aucl3", "氯化金")
 	addSolutionLanguage("au2so43", "硫酸金")
 	addSolutionLanguage("agcl", "氯化银")
@@ -269,7 +270,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`machine.${global.namespace}.${key}`, value)
 	}
 
-	function addMBDMachineLanguaue(key, value) {
+	function addMBDMachineLanguage(key, value) {
 		event.add(`block.mbd2.${key}`, value)
 	}
 	function addMBDMachineGUILanguage(key, value) {
