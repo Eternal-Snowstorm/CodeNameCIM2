@@ -1,30 +1,4 @@
 Ponder.registry((event) => {
-<<<<<<< Updated upstream
-	event.create("ae2:fluix_glass_cable")
-		.tag("ue_addons:ae2")
-		.scene("ae2:cable", "线缆", "ue_addons:ae2/standard_floor", (scene) => {
-			scene.showBasePlate()
-			scene.idle(20)
-
-			scene.world.setBlocks([2, 1, 1], "ae2:fluix_covered_dense_cable")
-			scene.world.showSection([2, 1, 1], Direction.DOWN)
-			scene.world.setBlocks([2, 3, 1], "ae2:fluix_smart_dense_cable")
-			scene.world.showSection([2, 3, 1], Direction.DOWN)
-			scene.world.setBlocks([4, 1, 1], "ae2:fluix_glass_cable")
-			scene.world.showSection([4, 1, 1], Direction.DOWN)
-			scene.world.setBlocks([4, 3, 1], "ae2:fluix_covered_cable")
-			scene.world.showSection([4, 3, 1], Direction.DOWN)
-			scene.world.setBlocks([4, 5, 1], "ae2:fluix_smart_cable")
-			scene.world.showSection([4, 5, 1], Direction.DOWN)
-			scene.idle(20)
-			scene.text(40, "根据线缆粗细可以分为粗线缆和细线缆", [4, 2, 2])
-			scene.idle(60)
-			scene.text(40, "粗线缆有me致密线缆，me致密包层线缆，有32个频道数", [2, 1, 1])
-			scene.idle(60)
-			scene.text(40, "细线缆有me玻璃线缆，me包层线缆，me智能线缆，只有8个频道数", [4, 2, 2])
-			scene.idle(60)
-		})
-=======
     event.create("ae2:fluix_glass_cable")
         .tag("ue_addons:ae2")
         .scene("ae2:cable", "Cables", "ue_addons:ae2/cables", (scene) => {
@@ -82,5 +56,4 @@ Ponder.registry((event) => {
                 .withItem("minecraft:barrier")
             scene.idle(60)
         })
->>>>>>> Stashed changes
 })

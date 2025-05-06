@@ -88,18 +88,6 @@
   "ae.ponder.drive.text_2": "It provides storage space for the ME system",
   "ae.ponder.drive.text_3": "Place Storage Cells into the drive to provide storage space",
   "ae.ponder.drive.text_4": "ME Drives should be connected to ME network to function",
-<<<<<<< Updated upstream
-  "ae2.ponder.cable.header": "线缆",
-  "ae2.ponder.cable.text_1": "根据线缆粗细可以分为粗线缆和细线缆",
-  "ae2.ponder.cable.text_2": "粗线缆有me致密线缆，me致密包层线缆，有32个频道数",
-  "ae2.ponder.cable.text_3": "细线缆有me玻璃线缆，me包层线缆，me智能线缆，只有8个频道数",
-  "ae2.ponder.channel.header": "频道",
-  "ae2.ponder.channel.text_1": "ae中频道是一个很重要的东西",
-  "ae2.ponder.channel.text_2": "如果频道达到上限了，那么接下来放置的设备将无法接入me网络，无法实现自动化处理",
-  "ae2.ponder.channel.text_3": "如果频道达到上限了，那么接下来放置的设备将无法接入me网络，无法实现自动化处理",
-  "ae2.ponder.channel.text_4": "那么该如何避免这种情况呢？",
-  "ae2.ponder.channel.text_5": "粗线缆有32个频道数，细线缆只有8个频道数",
-=======
   "ae2.ponder.cable.header": "Cables",
   "ae2.ponder.cable.text_1": "Except the thick and thin cables",
   "ae2.ponder.cable.text_2": "There are 3 more types of cable bus in AE2",
@@ -111,11 +99,10 @@
   "ae2.ponder.channel.header": "Channels",
   "ae2.ponder.channel.text_1": "Channels are essential to ME Networks",
   "ae2.ponder.channel.text_2": "Thick cables could transmit 32 channels",
-  "ae2.ponder.channel.text_3": "while thin cables transmit only 8 channels",
+  "ae2.ponder.channel.text_3": "While thin cables transmit only 8 channels",
   "ae2.ponder.channel.text_4": "If a cable is overloaded",
-  "ae2.ponder.channel.text_5": "no more channels can go through this cable",
+  "ae2.ponder.channel.text_5": "No more channels can go through this cable",
   "ae2.ponder.channel.text_6": "This may cause some devices go offline",
->>>>>>> Stashed changes
   "ae2.ponder.controller.header": "ME Controller",
   "ae2.ponder.controller.text_1": "This is an ME controller",
   "ae2.ponder.controller.text_2": "It provides energy source and info transmission of the ME system",
@@ -123,7 +110,7 @@
   "ae2.ponder.controller.text_4": "The controller should be powered to work",
   "ae2.ponder.controller.text_5": "Every side of a single ME controller block provides at most 32 channels",
   "ae2.ponder.controller.text_6": "ME controllers could be connected to provide more channels",
-  "ae2.ponder.controller.text_7": "AE devices can be placed besides the controller or connected with wires",
-  "ae2.ponder.controller.text_8": "Thick wires could transmit 32 channels",
-  "ae2.ponder.controller.text_9": "while thin wires transmit only 8 channels"
+  "ae2.ponder.controller.text_7": "AE devices can be placed besides the controller or connected with cables",
+  "ae2.ponder.controller.text_8": "Thick cables could transmit 32 channels",
+  "ae2.ponder.controller.text_9": "While thin cables transmit only 8 channels"
 }
