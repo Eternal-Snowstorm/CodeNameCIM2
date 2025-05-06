@@ -82,5 +82,20 @@
   "ue_addons.ponder.water_pump.text_2": "You need to build a complete structure first",
   "ue_addons.ponder.water_pump.text_3": "4 inward facing stairs",
   "ue_addons.ponder.water_pump.text_4": "Finally, put on the machine body",
-  "ue_addons.ponder.water_pump.text_5": "After the structure is built, the pipeline can be used to pump water"
+  "ue_addons.ponder.water_pump.text_5": "After the structure is built, the pipeline can be used to pump water",
+  "ae.ponder.drive.header": "ME Drive",
+  "ae.ponder.drive.text_1": "This is an ME Drive",
+  "ae.ponder.drive.text_2": "It provides storage space for the ME system",
+  "ae.ponder.drive.text_3": "Place Storage Cells into the drive to provide storage space",
+  "ae.ponder.drive.text_4": "ME Drives should be connected to ME network to function",
+  "ae2.ponder.controller.header": "ME Controller",
+  "ae2.ponder.controller.text_1": "This is an ME controller",
+  "ae2.ponder.controller.text_2": "It provides energy source and info transmission of the ME system",
+  "ae2.ponder.controller.text_3": "By storing AE energy and providing channels",
+  "ae2.ponder.controller.text_4": "The controller should be powered to work",
+  "ae2.ponder.controller.text_5": "Every side of a single ME controller block provides at most 32 channels",
+  "ae2.ponder.controller.text_6": "ME controllers could be connected to provide more channels",
+  "ae2.ponder.controller.text_7": "AE devices can be placed besides the controller or connected with wires",
+  "ae2.ponder.controller.text_8": "Thick wires could transmit 32 channels",
+  "ae2.ponder.controller.text_9": "while thin wires transmit only 8 channels"
 }
