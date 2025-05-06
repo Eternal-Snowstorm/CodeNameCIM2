@@ -30,27 +30,42 @@
 		{
 			"type": "custommachinery:item",
 			"mode": "input",
-			"id": "mechanism_1"
+			"id": "mechanism_1",
+			"filter": [
+				"ue_addons:programmed_flash_drive"
+			]
 		},
 		{
 			"type": "custommachinery:item",
 			"mode": "input",
-			"id": "mechanism_2"
+			"id": "mechanism_2",
+			"filter": [
+				"ue_addons:programmed_flash_drive"
+			]
 		},
 		{
 			"type": "custommachinery:item",
 			"mode": "input",
-			"id": "mechanism_3"
+			"id": "mechanism_3",
+			"filter": [
+				"ue_addons:programmed_flash_drive"
+			]
 		},
 		{
 			"type": "custommachinery:item",
 			"mode": "input",
-			"id": "mechanism_4"
+			"id": "mechanism_4",
+			"filter": [
+				"ue_addons:programmed_flash_drive"
+			]
 		},
 		{
 			"type": "custommachinery:item",
 			"mode": "input",
-			"id": "flash_drive"
+			"id": "flash_drive",
+			"filter": [
+				"#create:mechanisms"
+			]
 		},
 		{
 			"type": "custommachinery:item",

@@ -1,7 +1,9 @@
 Ponder.registry((event) => {
 	event.create("supplementaries:faucet")
+		.tag("ue_addons:other")
 		.scene("ue_addons:faucet", "Use of faucets", "ue_addons:other/faucet", (scene) => {
 			scene.showBasePlate()
+			scene.idle(20)
 			scene.scaleSceneView(0.8)
 
 			scene.addKeyframe()
@@ -21,15 +23,15 @@ Ponder.registry((event) => {
 			scene.text(40, "It can transfer fluid from the block it is attached to to the block below it")
 			scene.idle(60)
 			// 它能传输容器中的流体
-			scene.text(120, "It can transfer the fluid in the container", [5, 2, 1])
+			scene.text(120, "It can transfer the fluid in the container", [5.5, 2.5, 1])
 			scene.overlay.showOutline("green", { "glue": true }, [5, 2, 1, 5, 2, 1], 120)
 			scene.idle(40)
 			// 含水方块中的水
-			scene.text(80, "The water within the water-containing block", [5, 2, 4])
+			scene.text(80, "The water within the water-containing block", [5.5, 2.5, 4])
 			scene.overlay.showOutline("green", { "glue": true }, [5, 2, 4, 5, 2, 4], 80)
 			scene.idle(40)
 			// 甚至是世界上的流体!
-			scene.text(40, "Even the fluid in the world!", [5, 4, 7])
+			scene.text(40, "Even the fluid in the world!", [5.5, 4.5, 7])
 			scene.overlay.showOutline("green", { "glue": true }, [5, 4, 7, 5, 4, 7], 40)
 			scene.idle(30)
 			scene.addKeyframe()

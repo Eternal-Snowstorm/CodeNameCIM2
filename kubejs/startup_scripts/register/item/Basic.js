@@ -33,6 +33,7 @@ StartupEvents.registry("item", (event) => {
 
 	event.create(`${global.namespace}:charged_amethyst`)
 		.texture(`${global.namespace}:item/material/charged_amethyst`)
+		.rarity("epic")
 		.tag("forge:gems")
 		.tag("forge:gems/charged_amethyst")
 })
