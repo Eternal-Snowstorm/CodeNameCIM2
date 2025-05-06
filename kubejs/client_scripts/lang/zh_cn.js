@@ -31,6 +31,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMachineLanguaue("water_pump", "水泵")
 	addMachineLanguaue("flash_disk_writer", "闪存盘写入器")
 
+	addMBDMachineLanguaue("accelerator_energy_input", "大型构件催生器能量输入口", "")
+	addMBDMachineLanguaue("accelerator_item_input", "大型构件催生器物品输入口", "")
+	addMBDMachineLanguaue("accelerator_item_output", "大型构件催生器物品输出口", "")
+	addMBDMachineLanguaue("accelerator", "大型构件催生器控制器", "大型构件催生器")
+
 	addMechanismPartLanguaue("basic", "基础")
 	addMechanismPartLanguaue("mechanical", "机械")
 	addMechanismPartLanguaue("flux", "通量")
@@ -261,6 +266,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addMachineLanguaue(key, value) {
 		event.add(`block.${global.namespace}.${key}`, value)
 		event.add(`machine.${global.namespace}.${key}`, value)
+	}
+
+	function addMBDMachineLanguaue(key, machine, recipe) {
+		event.add(`block.mbd2.${key}`, machine)
+		event.add(`mbd2.${key}`, recipe)
 	}
 
 	function addFluidLanguaue(key, value) {
