@@ -1,6 +1,10 @@
 Ponder.tags((event) => {
-	const PI = "Ponder Index"
+	function addPonderTag(tag, icon, name) {
+		event.createTag(`${global.namespace}:tag`, icon, name, "Ponder Index")
+	}
 
-	event.createTag("ue_addons:tconstruct", "tconstruct:smeltery_controller", "TConstruct", PI)
-	event.createTag("ue_addons:ponder", "ue_addons:creative_mechanism", "Modpack", PI)
+	addPonderTag("tconstruct", "tconstruct:smeltery_controller", "TConstruct")
+	addPonderTag("ponder", "ue_addons:creative_mechanism", "Modpack")
+	addPonderTag("other", "supplementaries:faucet", "Other")
+	addPonderTag("ae2", "ae2:controller", "Applied Energistics 2")
 })
