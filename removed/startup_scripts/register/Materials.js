@@ -176,7 +176,7 @@ StartupEvents.registry("fluid", (event) => {
 		event.create(`${global.namespace}:molten_${name}`)
 			.thinTexture(color)
 			.bucketColor(color)
-			.flowingTexture(`${global.namespace}:block/fluid/flowing`)
+			.Texture(`${global.namespace}:block/fluid/`)
 			.stillTexture(`${global.namespace}:block/fluid/still`)
 			.tag("forge:molten_materials")
 			.tag(`forge:molten_${name}`)
@@ -192,7 +192,7 @@ StartupEvents.registry("fluid", (event) => {
 
 	addAloneMoltenFluid.forEach(([name]) => {
 		event.create(`${global.namespace}:molten_${name}`)
-			.flowingTexture(`${global.namespace}:block/fluid/alone/${name}/flowing`)
+			.Texture(`${global.namespace}:block/fluid/alone/${name}/`)
 			.stillTexture(`${global.namespace}:block/fluid/alone/${name}/still`)
 			.tag("forge:molten_materials")
 			.tag(`forge:molten_${name}`)

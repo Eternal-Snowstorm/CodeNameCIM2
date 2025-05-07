@@ -18,4 +18,13 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("minecraft:water")
 		.removeAll()
 		.add("minecraft:water")
+
+	event.get("ue_addons:delta_unstable_solution")
+		.add("ue_addons:delta_unstable_solution")
+
+	event.get("ue_addons:turbid_waste_liquid")
+		.add("ue_addons:turbid_waste_liquid")
+
+	event.get("ue_addons:platinum_solution")
+		.add("ue_addons:platinum_solution")
 })

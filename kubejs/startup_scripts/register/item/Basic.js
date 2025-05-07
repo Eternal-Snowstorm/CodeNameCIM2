@@ -37,4 +37,11 @@ StartupEvents.registry("item", (event) => {
 		.rarity("epic")
 		.tag("forge:gems")
 		.tag("forge:gems/charged_amethyst")
+
+	// 铂系列
+	event.create(`${global.namespace}:raw_aluminum_particles`)
+		.texture(`${global.namespace}:item/material/aluminum/raw_particles`)
+
+	event.create(`${global.namespace}:aluminum_crystal_nucleus`)
+		.texture(`${global.namespace}:item/material/aluminum/crystal_nucleus`)
 })

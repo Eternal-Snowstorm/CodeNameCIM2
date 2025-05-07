@@ -169,7 +169,7 @@ Ponder.registry((event) => {
 			scene.addKeyframe()
 			scene.idle(20)
 			// 特别的, 你还可以用它来运输容器中的物品! 不过这种方式的运输效率并算特别高, 但是在一些特殊场合却非常好用!
-			scene.text(120, "In particular, you can also use it to transport items in containers! However, the transportation efficiency of this method is not very high, but it is very useful in some special occasions!")
+			scene.text(120, "You can also use it to transport items in containers! However, the transportation efficiency of this method is not very high, but it is very useful in some special occasions!")
 			scene.overlay.showOutline("green", { "glue": true }, [1, 1, 3, 1, 2, 5], 60)
 		})
 })

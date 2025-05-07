@@ -29,4 +29,12 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.miningLevel["iron"])
 		.requiresTool(true)
+
+	event.create(`${global.namespace}:compression_end_stone_dust_block`)
+		.soundType(SoundType.SAND)
+		.hardness(6)
+		.resistance(6)
+		.tagBlock(global.toolType["pickaxe"])
+		.tagBlock(global.miningLevel["wooden"])
+		.requiresTool(true)
 })

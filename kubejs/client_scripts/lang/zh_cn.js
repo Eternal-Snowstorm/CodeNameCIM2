@@ -12,22 +12,27 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("dense_sturdy_sheet", "致密坚固板")
 	addItemLanguaue("charged_amethyst", "充能紫水晶")
 	addItemLanguaue("plasma_ingot", "等离子锭")
+	addItemLanguaue("raw_aluminum_particles","粗制铂微粒")
+	addItemLanguaue("aluminum_crystal_nucleus", "铂晶核")
 
-	addItemLanguaue("blockstone_source_alpha", "Alpha型黑石源质")
-	addItemLanguaue("blockstone_source_beta", "Beta型黑石源质")
-	addItemLanguaue("blockstone_source_gamma", "Gamma型黑石源质")
+	addItemLanguaue("blockstone_source_alpha", "Α(Alpha)型黑石源质")
+	addItemLanguaue("blockstone_source_beta", "Β(Beta)型黑石源质")
+	addItemLanguaue("blockstone_source_gamma", "Γ(Gamma)型黑石源质")
 	addItemLanguaue("crystal_ruby", "晶射红宝石")
 	addItemLanguaue("source_sapphire", "蓝源晶")
 	addItemLanguaue("bombed_source_emeraid", "爆裂源质")
 
 	addFluidLanguaue("molten_source_sapphire", "熔融蓝源晶")
 	addFluidLanguaue("eletriced_source_emeraid", "电解源质")
+	addFluidLanguaue("delta_unstable_solution", "Δ(Delta)型不稳定源质溶液")
+	addFluidLanguaue("turbid_waste_liquid", "浑浊废液")
 
 	addMaterialLanguaue("andesite_alloy", "安山合金")
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")
 	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
 	addMaterialLanguaue("chromium", "铬")
 	addMaterialLanguaue("platinum", "铂")
+	addMaterialLanguaue("end_stone", "末地石")
 
 	addMachineLanguaue("water_pump", "水泵")
 	addMachineLanguaue("flash_disk_writer", "闪存盘写入器")
@@ -82,34 +87,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addSolutionLanguage("caso4", "硫酸钙")
 	addSolutionLanguage("nacl", "氯化钠")
 	addSolutionLanguage("na2so4", "硫酸钠")
-
-	let amethystEncyclopedia = "紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源"
-	addTConMaterialLanguage(
-		"amethyst",
-		"紫水晶",
-		"优秀的魔导体与媒质",
-		amethystEncyclopedia,
-		amethystEncyclopedia,
-		amethystEncyclopedia
-	)
-	let andesiteAlloyEncyclopedia = "岩石的能力, 铁器的数值"
-	addTConMaterialLanguage(
-		"andesite_alloy",
-		"安山合金",
-		"岩石和金属居然能变成合金? ",
-		andesiteAlloyEncyclopedia,
-		andesiteAlloyEncyclopedia,
-		andesiteAlloyEncyclopedia
-	)
-	let brassEncyclopedia = "黄铜给工具注入了智慧, 使得工具可以自动进行微小的调整"
-	addTConMaterialLanguage(
-		"brass",
-		"黄铜",
-		"魔法与电流都能在其中受控流动",
-		brassEncyclopedia,
-		brassEncyclopedia,
-		brassEncyclopedia
-	)
+	addSolutionLanguage("platinum", "铂")
 
 	addFluidLanguaue("molten_andesite_alloy", "熔融安山合金")
 	addFluidLanguaue("blood", "血液")
@@ -119,6 +97,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("deepslate_quartz_ore", "深层石英矿石")
 	addBlockLanguaue("moon_cobalt_ore", "月球钴矿石")
 	addBlockLanguaue("osmium_tile", "锇砖瓦")
+	addBlockLanguaue("compression_end_stone_dust_block", "压缩末地石粉块")
 
 	addBlockLanguaue("andesite_machine", "安山机械方块")
 	addBlockLanguaue("brass_machine", "黄铜机械方块")
@@ -175,6 +154,34 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("ue_addons:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 
 	addHeatedLanguaue("grilled", "炙烤")
+
+	let amethystEncyclopedia = "紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源"
+	addTConMaterialLanguage(
+		"amethyst",
+		"紫水晶",
+		"优秀的魔导体与媒质",
+		amethystEncyclopedia,
+		amethystEncyclopedia,
+		amethystEncyclopedia
+	)
+	let andesiteAlloyEncyclopedia = "岩石的能力, 铁器的数值"
+	addTConMaterialLanguage(
+		"andesite_alloy",
+		"安山合金",
+		"岩石和金属居然能变成合金? ",
+		andesiteAlloyEncyclopedia,
+		andesiteAlloyEncyclopedia,
+		andesiteAlloyEncyclopedia
+	)
+	let brassEncyclopedia = "黄铜给工具注入了智慧, 使得工具可以自动进行微小的调整"
+	addTConMaterialLanguage(
+		"brass",
+		"黄铜",
+		"魔法与电流都能在其中受控流动",
+		brassEncyclopedia,
+		brassEncyclopedia,
+		brassEncyclopedia
+	)
 
 	let mechanismGroup = [
 		["nature", "自然"],
