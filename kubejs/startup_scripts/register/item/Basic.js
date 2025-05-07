@@ -24,10 +24,11 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:dense_sturdy_sheet`)
 		.texture(`${global.namespace}:item/material/dense_sturdy_sheet`)
 		.tag("forge:plates")
-		.tag("forge:plates/refined_obsidian")
+		.tag("forge:plates/dense_obsidian")
 
 	event.create(`${global.namespace}:plasma_ingot`)
 		.texture(`${global.namespace}:item/material/ingot/plasma_ingot`)
+		.rarity("epic")
 		.tag("forge:ingots")
 		.tag("forge:ingots/plasma")
 
