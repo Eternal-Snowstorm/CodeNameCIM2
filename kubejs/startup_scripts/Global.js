@@ -135,6 +135,5 @@ global.metalGroup = [
 	"slimesteel",
 	"pig_iron",
 	"cinderslime",
-	"queens_slime",
-	"platinum"
+	"queens_slime"
 ]
