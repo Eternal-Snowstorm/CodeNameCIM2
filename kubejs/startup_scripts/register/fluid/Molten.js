@@ -3,7 +3,7 @@ StartupEvents.registry("fluid", (event) => {
 
 	function addAloneMaterialFluid(name) {
 		event.create(`${global.namespace}:molten_${name}`)
-			.flowingTexture(`${fluidRegisters + name}_flowing`)
+			.flowingTexture(`${fluidRegisters + name}_flow`)
 			.stillTexture(`${fluidRegisters + name}_still`)
 			.tag("forge:molten_materials")
 			.tag(`forge:molten_${name}`)

@@ -26,6 +26,17 @@ ServerEvents.recipes((event) => {
 		).time(moltingTime).temperature(800)
 	})
 
+	// 充能萤石
+	tconstruct.melting(
+		Fluid.of("thermal:glowstone", 250),
+		"#forge:dusts/glowstone"
+	).time(200).temperature(1000)
+
+	tconstruct.melting(
+		Fluid.of("thermal:glowstone", 1000),
+		"#forge:storage_blocks/glowstone"
+	).time(300).temperature(1000)
+
 	// 血液
 	tconstruct.melting(
 		Fluid.of("ue_addons:blood", 50),

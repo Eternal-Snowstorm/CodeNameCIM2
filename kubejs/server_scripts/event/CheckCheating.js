@@ -1,3 +1,4 @@
+/*
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
 
@@ -29,3 +30,4 @@ PlayerEvents.loggedIn((event) => {
 		player.stages.add("first_login")
 	}
 })
+*/

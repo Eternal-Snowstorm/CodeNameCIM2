@@ -1,7 +1,7 @@
 Ponder.registry((event) => {
     event.create("ae2:drive")
         .tag("ue_addons:ae2")
-        .scene("ae:drive", "ME Drive", "ue_addons:ae2/standard_floor", (scene) => {
+        .scene("ae2:drive", "ME Drive", "ue_addons:ae2/standard_floor", (scene) => {
             scene.showBasePlate()
             scene.idle(20)
             scene.world.setBlocks([4, 1, 4], "ae2:drive")

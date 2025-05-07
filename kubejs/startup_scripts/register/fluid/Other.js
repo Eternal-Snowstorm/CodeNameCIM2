@@ -1,7 +1,7 @@
 StartupEvents.registry("fluid", (event) => {
 	function addAloneFluid(name) {
 		event.create(`${global.namespace}:${name}`)
-			.flowingTexture(`${global.namespace}:block/fluid/${name}/flowing`)
+			.flowingTexture(`${global.namespace}:block/fluid/${name}/flow`)
 			.stillTexture(`${global.namespace}:block/fluid/${name}/still`)
 
 		let file = `kubejs/assets/${global.namespace}/models/item/${name}_bucket.json`
@@ -18,7 +18,7 @@ StartupEvents.registry("fluid", (event) => {
 		event.create(`${global.namespace}:${name}`)
 			.thinTexture(color)
 			.bucketColor(color)
-			.flowingTexture(`${global.namespace}:block/fluid/solution/flowing`)
+			.flowingTexture(`${global.namespace}:block/fluid/solution/flow`)
 			.stillTexture(`${global.namespace}:block/fluid/solution/still`)
 
 		let file = `kubejs/assets/${global.namespace}/models/item/${name}_bucket.json`
@@ -32,4 +32,6 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("eletriced_source_emeraid", 0X117458)
 
 	addAloneFluid("blood")
+	addAloneFluid("delta_unstable_solution")
+	addAloneFluid("turbid_waste_liquid")
 })
