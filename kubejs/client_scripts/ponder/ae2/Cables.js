@@ -21,6 +21,7 @@ Ponder.registry((event) => {
             // 石英纤维可以在ME网络之间传输能量，不会干扰网络频道
             scene.showControls(80, [4.5, 2, 4.5], "down")
                 .withItem("ae2:quartz_fiber")
+            scene.overlay.showOutline("red", {}, [4, 1, 4], 60)
             scene.text(80, "Quartz fiber can transmit energy between ME networks without impacting channels", [4.5, 1.5, 4.5])
             scene.idle(100)
             scene.addKeyframe()
@@ -28,8 +29,10 @@ Ponder.registry((event) => {
             // 触发总线和反向触发总线可以调节设备在线状态
             scene.showControls(80, [6.5, 2, 3.5], "down")
                 .withItem("ae2:toggle_bus")
+            scene.overlay.showOutline("red", {}, [6, 1, 3], 60)
             scene.showControls(80, [6.5, 2, 5.5], "down")
                 .withItem("ae2:inverted_toggle_bus")
+            scene.overlay.showOutline("green", {}, [6, 1, 5], 60)
             scene.text(80, "Toggle Bus and Inverted Toggle Bus can switch connection of devices to ME system", [4.5, 1.5, 4.5])
             scene.idle(100)
 
