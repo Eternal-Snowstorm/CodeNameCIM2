@@ -27,6 +27,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguaue("cinderslime", "余烬史莱姆")
 	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
 	addMaterialLanguaue("chromium", "铬")
+	addMaterialLanguaue("platinum", "铂")
 
 	addMachineLanguaue("water_pump", "水泵")
 	addMachineLanguaue("flash_disk_writer", "闪存盘写入器")
@@ -36,7 +37,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMBDMachineLanguage("accelerator_item_input", "大型构件催生器物品输入口")
 	addMBDMachineLanguage("accelerator_item_output", "大型构件催生器物品输出口")
 	addMBDMachineLanguage("accelerator", "大型构件催生器控制器")
-	addMBDMachineGUILanguage("accelerator","大型构件催生器")
+	addMBDMachineGUILanguage("accelerator", "大型构件催生器")
 
 	addMechanismPartLanguaue("basic", "基础")
 	addMechanismPartLanguaue("mechanical", "机械")

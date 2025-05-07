@@ -1,6 +1,6 @@
-let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties")
-let $BoneMealItem = Java.loadClass("net.minecraft.world.item.BoneMealItem")
-let $TreeFertilizerItem = Java.loadClass("com.simibubi.create.content.equipment.TreeFertilizerItem")
+// let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties")
+// let $BoneMealItem = Java.loadClass("net.minecraft.world.item.BoneMealItem")
+// let $TreeFertilizerItem = Java.loadClass("com.simibubi.create.content.equipment.TreeFertilizerItem")
 
 StartupEvents.registry("item", (event) => {
 	// 自然构件

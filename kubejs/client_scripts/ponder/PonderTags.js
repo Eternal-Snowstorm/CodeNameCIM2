@@ -1,6 +1,6 @@
 Ponder.tags((event) => {
 	function addPonderTag(tag, icon, name) {
-		event.createTag(`${global.namespace}:${tag}`, icon, name, "Ponder Index")
+		event.createTag(`${global.namespace}:${tag}`, icon, name, "Index")
 	}
 
 	addPonderTag("tconstruct", "tconstruct:smeltery_controller", "TConstruct")

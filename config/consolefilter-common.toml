@@ -1,0 +1,9 @@
+
+[general]
+	#Any console messages containing any of these strings will be hidden.
+	basicFilters = [
+		"java.lang.NullPointerException"
+	]
+	#Any console messages that match any of these regular expressions will be hidden. Uses Java style regex. Backslashes must be escaped, for example use \\s instead of \s to match whitespace.
+	regexFilters = []
+

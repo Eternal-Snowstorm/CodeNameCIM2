@@ -71,4 +71,14 @@ ServerEvents.recipes((event) => {
 		"functionalstorage:void_upgrade",
 		Fluid.of("tconstruct:molten_obsidian", 4000)
 	).cast("#functionalstorage:upgrades").cast_consumed(true).cooling_time(40)
+
+	// 水龙头
+	kubejs.shaped("supplementaries:faucet", [
+		" A ",
+		"BBB",
+		"  B"
+	], {
+		A: "#minecraft:planks",
+		B: "#forge:plates/iron"
+	}).id("supplementaries:faucet")
 })

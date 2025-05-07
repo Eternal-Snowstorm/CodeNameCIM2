@@ -143,11 +143,6 @@ addMaterial("chromium", 0xE4DBDC, "iron")
 // 铂
 addMaterial("platinum", 0xE1FFFF, "iron")
 	.ingot()
-	.plate()
-	.dust()
-	.nugget()
-	.block()
-	.molten()
 
 // 蓝源晶
 addMaterial("source_sapphire", 0X0257F5, "iron")

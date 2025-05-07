@@ -34,6 +34,7 @@ schematics/uploaded/
 *.zip
 fancymenu_data
 saves/*/session.lock
+/schematics
 
 # ResourcePacks
 /resourcepacks/*
