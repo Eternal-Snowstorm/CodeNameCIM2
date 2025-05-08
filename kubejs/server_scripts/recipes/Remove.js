@@ -44,13 +44,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeItemOutputRecipes = [
-		"ae2:black_lumen_paint_ball",
-		"ae2:white_lumen_paint_ball",
-		"ae2:red_lumen_paint_ball",
-		"ae2:blue_lumen_paint_ball",
-		"ae2:green_lumen_paint_ball",
-		"pipez:filter_destination_tool",
-
+		"pipez:filter_destination_tool"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({ output: item })
