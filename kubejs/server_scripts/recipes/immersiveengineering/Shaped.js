@@ -7,6 +7,6 @@ ServerEvents.recipes((event) => {
 		"B  "
 	], {
 		A: "minecraft:flint",
-		B: "minecraft:stick"
+		B: "#forge:rods/wooden"
 	})
 })
