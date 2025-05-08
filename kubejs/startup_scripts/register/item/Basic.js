@@ -44,4 +44,7 @@ StartupEvents.registry("item", (event) => {
 
 	event.create(`${global.namespace}:aluminum_crystal_nucleus`)
 		.texture(`${global.namespace}:item/material/aluminum/crystal_nucleus`)
+
+	event.create(`${global.namespace}:aluminum_shard`)
+		.texture(`${global.namespace}:item/material/aluminum/shard`)
 })

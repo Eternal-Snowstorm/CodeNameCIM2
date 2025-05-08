@@ -14,6 +14,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("plasma_ingot", "等离子锭")
 	addItemLanguaue("raw_aluminum_particles","粗制铂微粒")
 	addItemLanguaue("aluminum_crystal_nucleus", "铂晶核")
+	addItemLanguaue("aluminum_shard", "铂碎片")
 
 	addItemLanguaue("blockstone_source_alpha", "Α(Alpha)型黑石源质")
 	addItemLanguaue("blockstone_source_beta", "Β(Beta)型黑石源质")

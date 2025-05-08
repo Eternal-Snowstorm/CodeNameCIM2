@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 	// 充能紫水晶
 	createaddition.charging("ue_addons:charged_amethyst", [
 		"#forge:gems/amethyst"
-	]).energy(20000).maxChargeRate(5000)
+	]).energy(4000).maxChargeRate(1000)
 
 	// 末地石粉块
 	create.compacting("ue_addons:compression_end_stone_dust_block", [

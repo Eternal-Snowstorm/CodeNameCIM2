@@ -143,7 +143,6 @@ addMaterial("chromium", 0xE4DBDC, "iron")
 // 铂
 addMaterial("platinum", 0xE1FFFF, "iron")
 	.ingot()
-	.plate()
 	.block()
 
 // 蓝源晶
