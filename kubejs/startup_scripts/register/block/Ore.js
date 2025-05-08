@@ -1,5 +1,5 @@
 StartupEvents.registry("block", (event) => {
-	let pickaxe = "minecraft:mineable/pickaxe"
+	let pickaxe = global.toolType["pickaxe"]
 
 	/**
 	 * @param {String} name 注册名称 
