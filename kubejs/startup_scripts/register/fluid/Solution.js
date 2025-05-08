@@ -1,5 +1,5 @@
-StartupEvents.registry("fluid", (event) => {
-	function addSolution(name, color) {
+function addSolution(name, color) {
+	StartupEvents.registry("fluid", (event) => {
 		event.create(`${global.namespace}:${name}_solution`)
 			.flowingTexture(`${global.namespace}:block/fluid/solution/flow`)
 			.stillTexture(`${global.namespace}:block/fluid/solution/still`)
@@ -12,58 +12,65 @@ StartupEvents.registry("fluid", (event) => {
 			"loader": "forge:fluid_container",
 			"fluid": `${global.namespace}:${name}`
 		})
-	}
+	})
 
-	addSolution("fecl2", 0x5BBD7F)
-	addSolution("feso4", 0x6EB49C)
+	StartupEvents.modifyCreativeTab(`${global.namespace}:salts_and_solutions`, (event) => {
+		event.add(`${global.namespace}:${name}_solution_bucket`)
+	})
 
-	addSolution("cucl2", 0x00A889)
-	addSolution("cuso4", 0x3D67CA)
+	StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
+		event.remove(`${global.namespace}:${name}_solution_bucket`)
+	})
+}
+addSolution("fecl2", 0x5BBD7F)
+addSolution("feso4", 0x6EB49C)
 
-	addSolution("zncl2", 0xC8C8C8)
-	addSolution("znso4", 0xE7E2E2)
+addSolution("cucl2", 0x00A889)
+addSolution("cuso4", 0x3D67CA)
 
-	addSolution("alcl3", 0xD2CE2F)
-	addSolution("al2so43", 0xAAAAAA)
+addSolution("zncl2", 0xC8C8C8)
+addSolution("znso4", 0xE7E2E2)
 
-	addSolution("aucl3", 0xFFC800)
-	addSolution("au2so43", 0x979B9E)
+addSolution("alcl3", 0xD2CE2F)
+addSolution("al2so43", 0xAAAAAA)
 
-	addSolution("agcl", 0x838383)
-	addSolution("ag2so4", 0xC2F2F2)
+addSolution("aucl3", 0xFFC800)
+addSolution("au2so43", 0x979B9E)
 
-	addSolution("pbcl2", 0xADEDF)
-	addSolution("pbso4", 0xDADEDF)
+addSolution("agcl", 0x838383)
+addSolution("ag2so4", 0xC2F2F2)
 
-	addSolution("crcl3", 0x9300FF)
-	addSolution("cr2so43", 0x00D468)
+addSolution("pbcl2", 0xADEDF)
+addSolution("pbso4", 0xDADEDF)
 
-	addSolution("sncl2", 0xFFFBBF)
-	addSolution("snso4", 0xEDE9AD)
+addSolution("crcl3", 0x9300FF)
+addSolution("cr2so43", 0x00D468)
 
-	addSolution("vocl2", 0xE2EAB0)
-	addSolution("voso4", 0x007FFF)
+addSolution("sncl2", 0xFFFBBF)
+addSolution("snso4", 0xEDE9AD)
 
-	addSolution("uo2cl2", 0xDAFF00)
-	addSolution("uo2so4", 0xDAFF00)
+addSolution("vocl2", 0xE2EAB0)
+addSolution("voso4", 0x007FFF)
 
-	addSolution("nicl2", 0x59FFD7)
-	addSolution("niso4", 0x59FFD7)
+addSolution("uo2cl2", 0xDAFF00)
+addSolution("uo2so4", 0xDAFF00)
 
-	addSolution("cocl2", 0xFFFFFF)
-	addSolution("coso4", 0xFFFFFF)
+addSolution("nicl2", 0x59FFD7)
+addSolution("niso4", 0x59FFD7)
 
-	addSolution("oscl3", 0xFF74F3)
-	addSolution("os2so43", 0x001AE3)
+addSolution("cocl2", 0xFFFFFF)
+addSolution("coso4", 0xFFFFFF)
 
-	addSolution("na2so4", 0xD7DDDD)
-	addSolution("nacl", 0xDADEDF)
+addSolution("oscl3", 0xFF74F3)
+addSolution("os2so43", 0x001AE3)
 
-	addSolution("caso4", 0xE0DDC3)
-	addSolution("cacl2", 0xE0DDC3)
+addSolution("na2so4", 0xD7DDDD)
+addSolution("nacl", 0xDADEDF)
 
-	addSolution("k2so4", 0xB8BDBD)
-	addSolution("kcl", 0xB8BDBD)
+addSolution("caso4", 0xE0DDC3)
+addSolution("cacl2", 0xE0DDC3)
 
-	addSolution("platinum", 0xE1FFFF)
-})
+addSolution("k2so4", 0xB8BDBD)
+addSolution("kcl", 0xB8BDBD)
+
+addSolution("platinum", 0xE1FFFF)

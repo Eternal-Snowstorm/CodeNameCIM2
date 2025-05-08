@@ -3,6 +3,7 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setDisplayName(Component.translate(`itemGroup.${global.namespace}.all`))
 
 	event.remove(`#${global.namespace}:io_debug_block`)
+	event.remove("#forge:chem_salts")
 	event.add([
 		"create:precision_mechanism",
 		"vintageimprovements:redstone_module"
