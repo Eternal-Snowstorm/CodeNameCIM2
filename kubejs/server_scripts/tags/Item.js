@@ -56,6 +56,24 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:stone")
 		.add("#forge:cobblestone")
+	
+	event.get("forge:plates")
+		.add("createdeco:zinc_sheet")
+		.add("createdeco:netherite_sheet")
+		.add("createdeco:andesite_sheet")
+		.add("createdeco:industrial_iron_sheet")
+
+	event.get("forge:ingots")
+		.add("createdeco:industrial_iron_ingot")
+
+	event.get("forge:nuggets")
+		.add("createdeco:industrial_iron_nugget")
+
+	event.get("forge:storage_blocks")
+		.add("create:industrial_iron_block")
+
+	event.get("forge:plates/andesite")
+		.removeAll()
 
 	event.get("forge:ingots/andesite_alloy")
 		.add("create:andesite_alloy")
@@ -73,7 +91,7 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:plates/industrial_iron")
 		.add("createdeco:industrial_iron_sheet")
 
-	event.get("forge:blocks/industrial_iron")
+	event.get("forge:storage_blocks/industrial_iron")
 		.add("create:industrial_iron_block")
 
 	event.get("forge:ingots/industrial_iron")
