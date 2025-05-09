@@ -133,8 +133,8 @@ Ponder.registry((event) => {
 		scene.world.showSection([13, 4, 13, 7, 7, 13], Direction.DOWN)
 		scene.world.setBlocks([12, 4, 13], "ue_addons:ponder_thermal_slot_energy")
 		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_slot")
+		scene.world.setBlocks([10, 4, 13], "ue_addons:ponder_thermal_fire")
 		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot")
-		scene.world.setBlocks([8, 4, 13], "ue_addons:ponder_thermal_fire")
 
 		scene.world.setBlocks([12, 5, 13], "ue_addons:ponder_thermal_energy_empty")
 		scene.world.setBlocks([12, 6, 13], "ue_addons:ponder_thermal_energy_empty")
@@ -258,7 +258,7 @@ Ponder.registry((event) => {
 		// 机器会自动抽取物品
 		scene.text(40, "The machine will automatically extract items", [10, 5, 13])
 		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_sand")
-		scene.world.setBlocks([8, 4, 13], "ue_addons:ponder_thermal_fire_active")
+		scene.world.setBlocks([10, 4, 13], "ue_addons:ponder_thermal_fire_active")
 
 		scene.idle(40)
 		scene.world.setBlocks([9, 5, 13], "ue_addons:ponder_thermal_arrow_active")
@@ -272,7 +272,7 @@ Ponder.registry((event) => {
 		// 完成后会自动输出
 		scene.text(40, "Automatically output after completion", [8, 5, 13])
 		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot_orange")
-		scene.world.setBlocks([8, 4, 13], "ue_addons:ponder_thermal_fire")
+		scene.world.setBlocks([10, 4, 13], "ue_addons:ponder_thermal_fire")
 		scene.world.createItemOnBeltLike([6, 1, 7], Direction.EAST, "minecraft:glass")
 		scene.idle(70)
 
@@ -281,7 +281,7 @@ Ponder.registry((event) => {
 		scene.text(40, "Fluid is the same")
 		scene.world.setBlocks([8, 1, 7], "create:fluid_tank")
 		scene.world.setBlocks([6, 1, 7], "create:fluid_tank")
-		scene.world.setBlocks([8, 4, 13], "ue_addons:ponder_thermal_gui")
+		scene.world.setBlocks([10, 4, 13], "ue_addons:ponder_thermal_gui")
 		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_lava")
 		scene.world.setBlocks([10, 6, 13], "ue_addons:ponder_thermal_fluid")
 		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_water")
