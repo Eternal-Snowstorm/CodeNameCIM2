@@ -43,12 +43,12 @@ Ponder.registry((event) => {
 			scene.world.modifyBlock([4, 2, 1], (state) => state.with("enabled", "true"), false)
 
 			scene.idle(10)
-			scene.world.modifyTileNBT([4, 1, 1], (nbt) => {
+			scene.world.modifyBlockEntityNBT([4, 1, 1], (nbt) => {
 				nbt.InputTanks = [{
 					Level: {
 						Speed: 0.25,
-						Target: 0.25
-						, Value: 0.0
+						Target: 0.25,
+						Value: 0.0
 					},
 					TankContent: {
 						Amount: 250,
@@ -68,7 +68,7 @@ Ponder.registry((event) => {
 				}]
 			})
 			scene.idle(10)
-			scene.world.modifyTileNBT([4, 1, 1], (nbt) => {
+			scene.world.modifyBlockEntityNBT([4, 1, 1], (nbt) => {
 				nbt.InputTanks = [{
 					Level: {
 						Speed: 0.25,
@@ -98,7 +98,7 @@ Ponder.registry((event) => {
 
 			scene.world.modifyBlock([4, 2, 4], (state) => state.with("enabled", "true"), false)
 			scene.idle(10)
-			scene.world.modifyTileNBT([4, 1, 1], (nbt) => {
+			scene.world.modifyBlockEntityNBT([4, 1, 1], (nbt) => {
 				nbt.InputTanks = [{
 					Level: {
 						Speed: 0.25,
@@ -125,7 +125,7 @@ Ponder.registry((event) => {
 			scene.world.setBlock([4, 1, 4], "minecraft:water_cauldron", false)
 			scene.world.modifyBlock([4, 1, 4], (state) => state.with("level", "3"), false)
 			scene.idle(10)
-			scene.world.modifyTileNBT([4, 1, 1], (nbt) => {
+			scene.world.modifyBlockEntityNBT([4, 1, 1], (nbt) => {
 				nbt.InputTanks = [{
 					Level: {
 						Speed: 0.25,
@@ -153,13 +153,14 @@ Ponder.registry((event) => {
 				.rightClick()
 			scene.world.modifyBlock([4, 4, 7], (state) => state.with("enabled", "true"), false)
 			scene.world.setBlock([5, 4, 7], "air", true)
-			scene.world.modifyTileNBT([4, 3, 7], (nbt) => {
+			scene.world.modifyBlockEntityNBT([4, 3, 7], (nbt) => {
 				nbt.Tanks = [{
 					Level: {
 						Speed: 0.25,
 						Target: 1.0,
 						Value: 1.0
-					}, TankContent: {
+					},
+					TankContent: {
 						Amount: 1000,
 						FluidName: "createaddition:seed_oil"
 					}
