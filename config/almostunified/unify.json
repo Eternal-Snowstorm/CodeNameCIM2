@@ -9,6 +9,7 @@
 		"ad_astra",
 		"mekanism",
 		"vintageimprovements",
+		"createdeco",
 		"thermal_extra",
 		"ue_addons"
 	],
@@ -90,7 +91,8 @@
 		"uranium",
 		"quartz",
 		"chromium",
-		"stainless_steel"
+		"stainless_steel",
+		"industrial_iron"
 	],
 	"priorityOverrides": {},
 	"customTags": {},

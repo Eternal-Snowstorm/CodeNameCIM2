@@ -64,6 +64,24 @@ ServerEvents.tags("item", (event) => {
 		.add("vintageimprovements:andesite_sheet")
 		.add("createdeco:andesite_sheet")
 
+	event.get("forge:plates/zinc")
+		.add("createdeco:zinc_sheet")
+		
+	event.get("forge:plates/netherite")
+		.add("createdeco:netherite_sheet")
+	
+	event.get("forge:plates/industrial_iron")
+		.add("createdeco:industrial_iron_sheet")
+
+	event.get("forge:blocks/industrial_iron")
+		.add("create:industrial_iron_block")
+
+	event.get("forge:ingots/industrial_iron")
+		.add("createdeco:industrial_iron_ingot")
+
+	event.get("forge:nuggets/industrial_iron")
+		.add("createdeco:industrial_iron_nugget")
+
 	event.get("forge:plates/polyolefin")
 		.add("thermal_extra:polyolefin_plate")
 
