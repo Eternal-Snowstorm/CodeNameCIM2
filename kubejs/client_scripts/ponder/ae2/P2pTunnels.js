@@ -119,17 +119,15 @@ Ponder.registry((event) => {
                 .rightClick()
                 .withItem("minecraft:lava_bucket")
             scene.world.hideIndependentSectionImmediately(itemSection)
+            scene.world.modifyBlock([3, 1, 3], (state) => state.with("shape", "plain"), false)
             let fluidSection = scene.world.showIndependentSectionImmediately([1, 5, 2, 3, 5, 2])
             scene.world.moveSection(fluidSection, [0, -4, 0], 0)
             scene.idle(20)
             let pumpSection = scene.world.showIndependentSection([3, 1, 3, 4, 2, 4], Direction.DOWN)
             scene.world.moveSection(pumpSection, [0, 0, -3], 0)
             scene.world.setBlocks([0, 1, 2], "create:fluid_tank", false)
+            scene.world.modifyBlock([0, 1, 2], (state) => state.with("shape", "plain"), false)
             scene.world.showSection([0, 1, 2], Direction.DOWN)
-            scene.idle(20)
-
-            // 这种P2P通道很明显是用于传输液体的
-            scene.text(40, "This Tunnel apparently transmits fluid", [1.5, 1.5, 2.5])
             scene.idle(60)
             scene.addKeyframe()
 
