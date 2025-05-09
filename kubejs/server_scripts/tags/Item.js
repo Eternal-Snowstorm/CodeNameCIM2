@@ -72,9 +72,6 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:storage_blocks")
 		.add("create:industrial_iron_block")
 
-	event.get("forge:plates/andesite")
-		.removeAll()
-
 	event.get("forge:ingots/andesite_alloy")
 		.add("create:andesite_alloy")
 
