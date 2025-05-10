@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 		"A A",
 		"AAA"
 	], {
-		A: "#forge:plates/obsidian"
+		A: "#forge:plates/dense_obsidian"
 	}).id("mekanism:cardboard_box")
 
 	// 钢制外壳

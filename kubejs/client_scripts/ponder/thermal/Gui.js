@@ -24,7 +24,7 @@ Ponder.registry((event) => {
 	havePonderSceneBlock.scene("ue_addons:thermal_gui", "Machine UI", "ue_addons:thermal/thermal_gui", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
-		scene.scaleSceneView(0.5)
+		scene.scaleSceneView(0.6)
 
 		scene.world.setBlocks([7, 1, 7], "thermal:machine_furnace")
 		scene.world.showSection([7, 1, 7], Direction.DOWN)

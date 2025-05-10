@@ -142,5 +142,16 @@
   "ae2.ponder.quantum_ring.text_5": "Only the Quantum Rings right beside the Quantum Link can transmit channels",
   "ae2.ponder.quantum_ring.text_6": "And now this ME Drive is connected",
   "ae2.ponder.quantum_ring.text_7": "To the ME Network of this ME Controller",
-  "ae2.ponder.quantum_ring.text_8": "Quantum Ring support inter-dimentional channel transmission, which means it can be used for the transportation between dimentions"
+  "ae2.ponder.quantum_ring.text_8": "Quantum Ring support inter-dimentional channel transmission, which means it can be used for the transportation between dimentions",
+  "ae2.ponder.spatial_storage_cell_128.header": "Spatial Storage",
+  "ae2.ponder.spatial_storage_cell_128.text_1": "Spatial Pylons and Spatial IO Port are devices on spatial storage and transportation",
+  "ae2.ponder.spatial_storage_cell_128.text_10": "Spatial Storage is extremely powerful, you can even transport End Portal with it!",
+  "ae2.ponder.spatial_storage_cell_128.text_2": "Spatial Pylons must be placed in rows and columns, connect each row or column with Cables",
+  "ae2.ponder.spatial_storage_cell_128.text_3": "Build a rectangle with Spatial Pylons to select a zone in world",
+  "ae2.ponder.spatial_storage_cell_128.text_4": "And connect a Spatial IO Port to the ME network",
+  "ae2.ponder.spatial_storage_cell_128.text_5": "Ensure all Spatial Pylons are inside the green rectangle while outside the purple",
+  "ae2.ponder.spatial_storage_cell_128.text_6": "Name of the Spatial Storage Cell marks its maximum storage space",
+  "ae2.ponder.spatial_storage_cell_128.text_7": "Put a Spatial Storage Cell into the Spatial IO Port",
+  "ae2.ponder.spatial_storage_cell_128.text_8": "Input a redstone signal!",
+  "ae2.ponder.spatial_storage_cell_128.text_9": "Inputing Spatial Storage Cells with stored space will release the space"
 }

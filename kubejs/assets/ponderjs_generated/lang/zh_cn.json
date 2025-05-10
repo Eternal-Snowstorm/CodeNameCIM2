@@ -141,5 +141,16 @@
 	"ae2.ponder.quantum_ring.text_5": "只有与量子链接仓紧邻的四个量子环可以传输频道",
 	"ae2.ponder.quantum_ring.text_6": "现在这个ME驱动器",
 	"ae2.ponder.quantum_ring.text_7": "就连接到了这个控制器的ME网络里",
-	"ae2.ponder.quantum_ring.text_8": "量子环支持跨维度传输频道，也就是说可以使用量子环实现不同维度之间的物流"
+	"ae2.ponder.quantum_ring.text_8": "量子环支持跨维度传输频道，也就是说可以使用量子环实现不同维度之间的物流",
+	"ae2.ponder.spatial_storage_cell_128.header": "空间存储",
+	"ae2.ponder.spatial_storage_cell_128.text_1": "空间塔与空间IO端口是用于存储与搬运空间的设备",
+	"ae2.ponder.spatial_storage_cell_128.text_2": "空间塔必须成列相连，不同的空间塔多方块结构之间用线缆连接",
+	"ae2.ponder.spatial_storage_cell_128.text_3": "用空间塔搭建出一个矩形空间以选取世界中的一个区域",
+	"ae2.ponder.spatial_storage_cell_128.text_4": "并在这个ME网络中接入一个空间IO端口",
+	"ae2.ponder.spatial_storage_cell_128.text_5": "需要保证所有空间塔都在绿框以内，紫框以外才能选取紫框内的所有空间",
+	"ae2.ponder.spatial_storage_cell_128.text_6": "空间存储元件名称标注了其可以存储的最大空间",
+	"ae2.ponder.spatial_storage_cell_128.text_7": "将空间存储元件放入IO端口",
+	"ae2.ponder.spatial_storage_cell_128.text_8": "输入一个红石信号！",
+	"ae2.ponder.spatial_storage_cell_128.text_9": "存储了空间的存储元件放入空间IO端口激活则会释放其中的空间",
+	"ae2.ponder.spatial_storage_cell_128.text_10": "空间存储非常强大，你甚至可以使用它搬运末地门！"
 }
