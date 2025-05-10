@@ -1,0 +1,7 @@
+{
+	"parent": "glow:block/cube",
+	"textures": {
+		"all": "ue_addons:block/ore/cobalt/moon_cobalt_ore",
+		"overlay": "ue_addons:block/ore/cobalt/glow"
+	}
+}

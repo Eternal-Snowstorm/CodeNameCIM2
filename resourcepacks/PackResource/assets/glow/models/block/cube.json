@@ -1,0 +1,48 @@
+{
+    "parent": "minecraft:block/cube",
+    "ambientocclusion": false,
+    "render_type": "cutout_mipped",
+    "textures": {
+        "particle": "#all"
+    },
+    "elements": [
+        {
+            "from": [0, 0, 0],
+            "to": [16, 16, 16],
+            "faces": {
+                "north": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "north"},
+                "east": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "east"},
+                "south": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "south"},
+                "west": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "west"},
+                "up": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "up"},
+                "down": {"uv": [0, 0, 16, 16], "texture": "#all", "cullface": "down"}
+            }
+        },
+        {
+            "from": [0, 0, 0],
+            "to": [16, 16, 16],
+            "faces": {
+                "north": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "north"},
+                "east": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "east"},
+                "south": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "south"},
+                "west": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "west"},
+                "up": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "up"},
+                "down": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "down"}
+            }
+        }
+    ],
+    "groups": [
+        {
+            "name": "solid",
+            "origin": [0, 0, 0],
+            "color": 0,
+            "children": [0]
+        },
+        {
+            "name": "cutout",
+            "origin": [0, 0, 0],
+            "color": 0,
+            "children": [1]
+        }
+    ]
+}
