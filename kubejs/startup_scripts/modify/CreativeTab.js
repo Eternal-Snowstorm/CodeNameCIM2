@@ -31,7 +31,9 @@ StartupEvents.modifyCreativeTab(`${global.namespace}:mechanisms`, (event) => {
 })
 
 StartupEvents.modifyCreativeTab("tconstruct:smeltery", (event) => {
-	event.add(["ue_addons:mechanism_cast",
+	event.add([
+		"ue_addons:mechanism_cast",
 		"ue_addons:mechanism_sand_cast",
-		"ue_addons:mechanism_red_sand_cast"])
+		"ue_addons:mechanism_red_sand_cast"
+	])
 })
