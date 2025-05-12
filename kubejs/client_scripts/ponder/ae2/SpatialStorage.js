@@ -4,7 +4,7 @@ Ponder.registry((event) => {
         "ae2:spatial_pylon"
     ])
         .tag("ue_addons:ae2")
-        .scene("ae2:spatial_storage_cell_128", "Spatial Storage", "ue_addons:ae2/spatial_storage", (scene) => {
+        .scene("ae2:spatial_storage", "Spatial Storage", "ue_addons:ae2/spatial_storage", (scene) => {
             scene.showBasePlate()
             scene.scaleSceneView(0.7)
             scene.idle(20)
