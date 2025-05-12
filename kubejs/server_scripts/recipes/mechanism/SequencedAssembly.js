@@ -262,6 +262,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iemm, [iemm, "mekanism:elite_control_circuit"]),
 		create.deploying(iemm, [iemm, "mekanism:alloy_reinforced"]),
 		create.deploying(iemm, [iemm, "#forge:plates/gold"]),
+		create.deploying(ibmm, [ibmm, "ue_addons:mekanism_mechanism_part"]),
 	]).transitionalItem(iemm).loops(1)
 
 	// 终极通用
@@ -272,6 +273,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iumm, [iumm, "mekanism:ultimate_control_circuit"]),
 		create.deploying(iumm, [iumm, "mekanism:alloy_atomic"]),
 		create.deploying(iumm, [iumm, 'buildcraftsilicon:chipset_diamond']),
+		create.deploying(ibmm, [ibmm, "ue_addons:mekanism_mechanism_part"]),
 	]).transitionalItem(iumm).loops(1)
 
 	// 结构
