@@ -5,7 +5,7 @@ let ores = []
  * @param {string} name 注册ID
  * @param {ResourceLocation_} level 挖掘等级
  * @param {number} hardness 硬度
- * @returns 
+ * @returns 矿石注册
  */
 function addOre(name, level, hardness) {
 	let ore = {
