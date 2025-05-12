@@ -15,35 +15,35 @@ function addOre(name, level, hardness) {
 		types: [],
 
 		stone: function () {
-			this.types.push(["stone", 1.5])
+			this.types.push("stone")
 			return this
 		},
 		deepslate: function () {
-			this.types.push(["deepslate", 3])
+			this.types.push("deepslate")
 			return this
 		},
 		nether: function () {
-			this.types.push(["nether", 1.5])
+			this.types.push("nether")
 			return this
 		},
 		moon: function () {
-			this.types.push(["moon", 1.5])
+			this.types.push("moon")
 			return this
 		},
 		mars: function () {
-			this.types.push(["mars", 1.5])
+			this.types.push("mars")
 			return this
 		},
 		venus: function () {
-			this.types.push(["venus", 1.5])
+			this.types.push("venus")
 			return this
 		},
 		mercury: function () {
-			this.types.push(["mercury", 1.5])
+			this.types.push("mercury")
 			return this
 		},
 		glacio: function () {
-			this.types.push(["glacio", 1.5])
+			this.types.push("glacio")
 			return this
 		}
 	}
@@ -54,13 +54,24 @@ function addOre(name, level, hardness) {
 StartupEvents.registry("block", (event) => {
 	let pickaxe = global.toolType["pickaxe"]
 	ores.forEach((ore) => {
-		ore.types.forEach(([type,hardness]) => {
-			if(type!=="stone") {
+		ore.types.forEach(([type, hardness]) => {
+			if (type !== "stone" && type !== "deepslate") {
 				event.create(`${global.namespace}:${type}_${name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${type}_${name}_ore`)
 					.soundType(SoundType.STONE)
-					.hardness(ore.hardness + hardness)
-					.resistance(ore.hardness + hardness)
+					.hardness(ore.hardness)
+					.resistance(ore.hardness)
+					.tag("forge:ores")
+					.tag(`forge:ores/${name}`)
+					.tagBlock(pickaxe)
+					.tagBlock(global.miningLevel[ore.level])
+					.requiresTool(true)
+			} else if (type === "deepslate") {
+				event.create(`${global.namespace}:${type}_${name}_ore`)
+					.textureAll(`${global.namespace}:block/ore/${type}_${name}_ore`)
+					.soundType(SoundType.STONE)
+					.hardness(ore.hardness + 1.5)
+					.resistance(ore.hardness + 1.5)
 					.tag("forge:ores")
 					.tag(`forge:ores/${name}`)
 					.tagBlock(pickaxe)
@@ -70,23 +81,23 @@ StartupEvents.registry("block", (event) => {
 				event.create(`${global.namespace}:${name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${name}_ore`)
 					.soundType(SoundType.STONE)
-					.hardness(ore.hardness + hardness)
-					.resistance(ore.hardness + hardness)
+					.hardness(ore.hardness)
+					.resistance(ore.hardness)
 					.tag("forge:ores")
 					.tag(`forge:ores/${name}`)
 					.tagBlock(pickaxe)
 					.tagBlock(global.miningLevel[ore.level])
 					.requiresTool(true)
 			}
-		});
+		})
 	})
+})
 
-	// 石英
-	addOre("quartz", "iron", 1.5)
+// 石英
+addOre("quartz", "iron", 3)
 	.stone()
 	.deepslate()
-	
-	// 钴
-	addOre("cobalt", "iron", 8.5)
+
+// 钴
+addOre("cobalt", "iron", 10)
 	.moon()
-})
