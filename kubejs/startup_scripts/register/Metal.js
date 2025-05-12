@@ -5,7 +5,7 @@ let materials = []
  * @param {string} name 注册ID
  * @param {Internal.ItemTintFunction_ || Internal.BlockTintFunction_ || Color_} color 颜色
  * @param {ResourceLocation_} level 挖掘等级
- * @returns 
+ * @returns 金属材料注册
  */
 function addMaterial(name, color, level) {
 	let material = {
