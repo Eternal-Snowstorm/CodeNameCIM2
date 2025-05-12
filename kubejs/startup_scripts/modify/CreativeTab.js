@@ -6,8 +6,8 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.remove("#forge:chem_salts")
 	event.remove("#create:mechanisms")
 	event.remove("#create:incomplete_mechanisms")
-	event.remove("#ue_addons:mechanism_parts")
-	event.remove("#ue_addons:mechanism_flash_drives")
+	event.remove(`#${global.namespace}:mechanism_parts`)
+	event.remove(`#${global.namespace}:mechanism_flash_drives`)
 	event.remove("#tconstruct:casts")
 })
 
