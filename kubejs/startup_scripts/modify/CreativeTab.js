@@ -6,6 +6,7 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.remove("#forge:chem_salts")
 	event.remove("#create:mechanisms")
 	event.remove("#create:incomplete_mechanisms")
+	event.remove("#ue_addons:mechanism_parts")
 	event.remove("#ue_addons:mechanism_flash_drives")
 	event.remove("#tconstruct:casts")
 })
@@ -24,10 +25,6 @@ StartupEvents.modifyCreativeTab("thermal_extra:resources", (event) => {
 	event.add([
 		"thermal_extra:polyolefin_plate"
 	])
-})
-
-StartupEvents.modifyCreativeTab(`${global.namespace}:mechanisms`, (event) => {
-	event.add(Ingredient.of("#ue_addons:mechanism_flash_drives").itemIds)
 })
 
 StartupEvents.modifyCreativeTab("tconstruct:smeltery", (event) => {
