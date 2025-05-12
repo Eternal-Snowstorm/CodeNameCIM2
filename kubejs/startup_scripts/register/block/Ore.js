@@ -54,7 +54,7 @@ function addOre(name, level, hardness) {
 StartupEvents.registry("block", (event) => {
 	let pickaxe = global.toolType["pickaxe"]
 	ores.forEach((ore) => {
-		ore.types.forEach(([type, hardness]) => {
+		ore.types.forEach(([type]) => {
 			if (type !== "stone" && type !== "deepslate") {
 				event.create(`${global.namespace}:${type}_${name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${type}_${name}_ore`)
