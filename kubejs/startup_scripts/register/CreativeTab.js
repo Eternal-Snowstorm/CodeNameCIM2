@@ -11,6 +11,10 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 
 	event.create(`${global.namespace}:mechanisms`)
 		.icon(() => "ue_addons:creative_mechanism")
-		.content(() => Ingredient.of("#create:mechanisms").itemIds)
+		.content(() => Ingredient.of("#create:mechanisms").itemIds
+			.concat(Ingredient.of("#create:incomplete_mechanisms").itemIds)
+			.concat(Ingredient.of("#ue_addons:mechanism_parts").itemIds)
+			.concat(Ingredient.of("#ue_addons:mechanism_flash_drives").itemIds)
+		)
 		.displayName(Component.translate(`itemGroup.${global.namespace}.mechanisms`))
 })
