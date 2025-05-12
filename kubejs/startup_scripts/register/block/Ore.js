@@ -7,7 +7,7 @@ let ores = []
  * @param {number} hardness 硬度
  * @returns 矿石注册
  */
-function addOre(name, level, hardness) {
+function addOreBlock(name, level, hardness) {
 	let ore = {
 		name: name,
 		level: level,
@@ -94,10 +94,10 @@ StartupEvents.registry("block", (event) => {
 })
 
 // 石英
-addOre("quartz", "iron", 3)
+addOreBlock("quartz", "iron", 3)
 	.stone()
 	.deepslate()
 
 // 钴
-addOre("cobalt", "iron", 10)
+addOreBlock("cobalt", "iron", 10)
 	.moon()
