@@ -43,7 +43,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMBDMachineLanguage("accelerator_item_input", "大型构件催生器物品输入口")
 	addMBDMachineLanguage("accelerator_item_output", "大型构件催生器物品输出口")
 	addMBDMachineLanguage("accelerator", "大型构件催生器控制器")
-	addMBDMachineGUILanguage("accelerator", "大型构件催生器")
+	addMBDMachineRecipeLanguage("accelerator", "大型构件催生器")
 
 	addMechanismPartLanguaue("basic", "基础")
 	addMechanismPartLanguaue("mechanical", "机械")
@@ -105,6 +105,15 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("copper_machine", "铜制机械方块")
 	addBlockLanguaue("me_machine", "智能机械方块")
 	addBlockLanguaue("mekanism_machine", "通用机械方块")
+
+	
+	for (let index = 0; index < 14; index++) {
+		addPaintingLanguage(
+			`rr${index}`, `Aleegos(${index})`, "Aleegos Reality Redemption")
+	}
+	addPaintingLanguage("bug_is_right", "有Bug是对的", "古镇天")
+	addPaintingLanguage("it_must_be_optifine", "一定是OptiFine干的", "XeKr")
+	addPaintingLanguage("createdeco", "随机构件", "随机构件")
 
 	addAloneLanguaue(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
 	addAloneLanguaue(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
@@ -285,7 +294,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addMBDMachineLanguage(key, value) {
 		event.add(`block.mbd2.${key}`, value)
 	}
-	function addMBDMachineGUILanguage(key, value) {
+	function addMBDMachineRecipeLanguage(key, value) {
 		event.add(`mbd2.${key}`, value)
 	}
 
@@ -329,6 +338,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addMusicDiscLanguaue(key, value, author) {
 		event.add(`item.${global.namespace}.${key}`, value)
 		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
+	}
+
+	function addPaintingLanguage(key, title, author) {
+		event.add(`painting.${global.namespace}.${key}.title`, title)
+		event.add(`painting.${global.namespace}.${key}.author`, author)
 	}
 
 	function addAloneLanguaue(key, value) {

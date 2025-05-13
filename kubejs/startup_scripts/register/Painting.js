@@ -13,8 +13,8 @@ StartupEvents.registry("painting_variant", (event) => {
 	addPainting("rr10", 16, 16)
 	addPainting("rr11", 16, 16)
 	addPainting("rr12", 16, 16)
+	addPainting("rr13", 16, 16)
 	addPainting("rr14", 16, 16)
-	addPainting("rr15", 16, 16)
 
 	// Vechni_Metel
 	addPainting("bug_is_right", 32, 16)
@@ -22,7 +22,7 @@ StartupEvents.registry("painting_variant", (event) => {
 
 	// createdeco(随机构件)
 	addPainting("createdeco", 32, 32)
-	
+
 	function addPainting(name, width, height) {
 		event.create(`${global.namespace}:${name}`)
 			.width(width)
