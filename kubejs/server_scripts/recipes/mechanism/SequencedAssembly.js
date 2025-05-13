@@ -272,7 +272,7 @@ ServerEvents.recipes((event) => {
 		create.pressing(iumm, iumm),
 		create.deploying(iumm, [iumm, "mekanism:ultimate_control_circuit"]),
 		create.deploying(iumm, [iumm, "mekanism:alloy_atomic"]),
-		create.deploying(iumm, [iumm, 'buildcraftsilicon:chipset_diamond']),
+		create.deploying(iumm, [iumm, "ae2:engineering_processor"]),
 		create.deploying(ibmm, [ibmm, "ue_addons:mekanism_mechanism_part"]),
 	]).transitionalItem(iumm).loops(1)
 

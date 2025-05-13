@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create, vintageimprovements } = event.recipes
 
 	create.mechanical_crafting("ue_addons:the_accelerator_of_mechanism_power", [
 		"A B",
@@ -21,4 +21,8 @@ ServerEvents.recipes((event) => {
 	create.haunting("ue_addons:magical_mechanism_part", [
 		"ue_addons:basic_mechanism_part"
 	])
+
+	vintageimprovements.laser_cutting("ue_addons:programmed_flash_drive", [
+		"ue_addons:empty_flash_drive"
+	]).energy(10000)
 })
