@@ -54,13 +54,14 @@ function addOreBlock(name, level, hardness) {
 StartupEvents.registry("block", (event) => {
 	let pickaxe = global.toolType["pickaxe"]
 	ores.forEach((ore) => {
-		ore.types.forEach(([type]) => {
+		ore.types.forEach((type) => {
 			if (type !== "stone" && type !== "deepslate") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
+					.tag(`${global.namespace}:ores`)
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
 					.tagBlock(pickaxe)
@@ -72,6 +73,7 @@ StartupEvents.registry("block", (event) => {
 					.soundType(SoundType.DEEPSLATE)
 					.hardness(ore.hardness + 1.5)
 					.resistance(ore.hardness + 1.5)
+					.tag(`${global.namespace}:ores`)
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
 					.tagBlock(pickaxe)
@@ -83,6 +85,7 @@ StartupEvents.registry("block", (event) => {
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
+					.tag(`${global.namespace}:ores`)
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
 					.tagBlock(pickaxe)

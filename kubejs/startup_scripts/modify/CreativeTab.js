@@ -9,6 +9,15 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.remove(`#${global.namespace}:mechanism_parts`)
 	event.remove(`#${global.namespace}:mechanism_flash_drives`)
 	event.remove("#tconstruct:casts")
+	event.remove("#forge:plates")
+	event.remove("#forge:nuggets")
+	event.remove("#forge:ingots")
+	event.remove("#forge:dusts")
+	event.remove("#forge:rods")
+	event.remove("#forge:gear")
+	event.remove("#forge:storage_blocks")
+	event.remove("#forge:molten_materials")
+	event.remove("#forge:ores")
 })
 
 StartupEvents.modifyCreativeTab("create:base", (event) => {
