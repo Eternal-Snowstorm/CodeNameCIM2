@@ -20,6 +20,9 @@ StartupEvents.registry("painting_variant", (event) => {
 	addPainting("bug_is_right", 32, 16)
 	addPainting("it_must_be_optifine", 16, 32)
 
+	// createdeco(随机构件)
+	addPainting("createdeco", 32, 32)
+	
 	function addPainting(name, width, height) {
 		event.create(`${global.namespace}:${name}`)
 			.width(width)
