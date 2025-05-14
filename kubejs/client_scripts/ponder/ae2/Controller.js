@@ -5,8 +5,8 @@ Ponder.registry((event) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
-			scene.world().modifyBlock([3, 1, 3], (state) => state.with("state", "offline"), false)
-			scene.world().showSection([3, 1, 3], Direction.DOWN)
+			scene.world.modifyBlock([3, 1, 3], (state) => state.with("state", "offline"), false)
+			scene.world.showSection([3, 1, 3], Direction.DOWN)
 
 			// 这是一个ME控制器
 			scene.text(40, "This is an ME controller", [3.5, 1.5, 3.5])
@@ -24,9 +24,9 @@ Ponder.registry((event) => {
 			// 控制器需要充能才能使用
 			scene.text(40, "The controller should be powered to work", [3.5, 1.5, 3.5])
 			scene.idle(40)
-			scene.world().showSection([2, 1, 3], Direction.EAST)
+			scene.world.showSection([2, 1, 3], Direction.EAST)
 			scene.idle(30)
-			scene.world().modifyBlock([3, 1, 3], (state) => state.with("state", "online"), false)
+			scene.world.modifyBlock([3, 1, 3], (state) => state.with("state", "online"), false)
 			scene.idle(20)
 			scene.addKeyframe()
 
@@ -37,22 +37,22 @@ Ponder.registry((event) => {
 			// 可以连接多个ME控制器来提供更多频道
 			scene.text(40, "ME controllers could be connected to provide more channels", [3.5, 1.5, 3.5])
 			scene.idle(60)
-			scene.world().hideSection([3, 1, 3], Direction.UP)
+			scene.world.hideSection([3, 1, 3], Direction.UP)
 			scene.idle(40)
-			scene.world().showSection([3, 1, 3, 5, 3, 5], Direction.DOWN)
+			scene.world.showSection([3, 1, 3, 5, 3, 5], Direction.DOWN)
 			scene.idle(20)
-			scene.world().showSection([3, 1, 2, 3, 3, 2], Direction.SOUTH)
+			scene.world.showSection([3, 1, 2, 3, 3, 2], Direction.SOUTH)
 			scene.idle(30)
 			scene.addKeyframe()
 
 			// AE设备可以紧邻ME控制器摆放或使用线缆连接到控制器
 			scene.text(40, "AE devices can be placed besides the controller or connected with cables", [3.5, 1.5, 3.5])
 			scene.idle(60)
-			scene.world().setBlocks([2, 1, 2], "ae2:drive")
-			scene.world().showSection([2, 1, 2], Direction.DOWN)
+			scene.world.setBlocks([2, 1, 2], "ae2:drive")
+			scene.world.showSection([2, 1, 2], Direction.DOWN)
 			scene.idle(10)
-			scene.world().setBlocks([5, 1, 2], "ae2:inscriber")
-			scene.world().showSection([5, 1, 2], Direction.DOWN)
+			scene.world.setBlocks([5, 1, 2], "ae2:inscriber")
+			scene.world.showSection([5, 1, 2], Direction.DOWN)
 			scene.idle(40)
 
 			// 致密线缆可以传输32个频道

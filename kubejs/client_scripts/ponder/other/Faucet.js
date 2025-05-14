@@ -6,15 +6,15 @@ Ponder.registry((event) => {
 			scene.scaleSceneView(0.8)
 
 			scene.addKeyframe()
-			scene.world().setBlocks([3, 1, 4], "supplementaries:faucet")
-			scene.world().showSection([3, 1, 4], Direction.DOWN)
+			scene.world.setBlocks([3, 1, 4], "supplementaries:faucet")
+			scene.world.showSection([3, 1, 4], Direction.DOWN)
 			// 水龙头是一种特殊的物流物品
 			scene.text(40, "Faucet is a special kind of logistics item", [3, 2, 4])
 			scene.idle(60)
-			scene.world().setBlocks([3, 1, 4], "minecraft:air", true)
+			scene.world.setBlocks([3, 1, 4], "minecraft:air", true)
 			scene.idle(40)
 
-			scene.world().showSection([0, 1, 0, 9, 6, 9], Direction.DOWN)
+			scene.world.showSection([0, 1, 0, 9, 6, 9], Direction.DOWN)
 			scene.idle(40)
 			scene.addKeyframe()
 
@@ -39,10 +39,10 @@ Ponder.registry((event) => {
 			scene.text(60, "You can R-Click it to turn the output on or off")
 			scene.showControls(20, [4.5, 3, 1], "down")
 				.rightClick()
-			scene.world().modifyBlock([4, 2, 1], (state) => state.with("enabled", "true"), false)
+			scene.world.modifyBlock([4, 2, 1], (state) => state.with("enabled", "true"), false)
 
 			scene.idle(10)
-			scene.world().modifyBlockEntityNBT([4, 1, 1], (nbt) => {
+			scene.world.modifyBlockEntityNBT([4, 1, 1], (nbt) => {
 				nbt.InputTanks = [{
 					Level: {
 						Speed: 0.25,
@@ -67,7 +67,7 @@ Ponder.registry((event) => {
 				}]
 			})
 			scene.idle(10)
-			scene.world().modifyBlockEntityNBT([4, 1, 1], (nbt) => {
+			scene.world.modifyBlockEntityNBT([4, 1, 1], (nbt) => {
 				nbt.InputTanks = [{
 					Level: {
 						Speed: 0.25,
@@ -95,9 +95,9 @@ Ponder.registry((event) => {
 			scene.showControls(20, [4.5, 3, 4], "down")
 				.rightClick()
 
-			scene.world().modifyBlock([4, 2, 4], (state) => state.with("enabled", "true"), false)
+			scene.world.modifyBlock([4, 2, 4], (state) => state.with("enabled", "true"), false)
 			scene.idle(10)
-			scene.world().modifyBlockEntityNBT([4, 1, 1], (nbt) => {
+			scene.world.modifyBlockEntityNBT([4, 1, 1], (nbt) => {
 				nbt.InputTanks = [{
 					Level: {
 						Speed: 0.25,
@@ -121,10 +121,10 @@ Ponder.registry((event) => {
 					}
 				}]
 			})
-			scene.world().setBlock([4, 1, 4], "minecraft:water_cauldron", false)
-			scene.world().modifyBlock([4, 1, 4], (state) => state.with("level", "3"), false)
+			scene.world.setBlock([4, 1, 4], "minecraft:water_cauldron", false)
+			scene.world.modifyBlock([4, 1, 4], (state) => state.with("level", "3"), false)
 			scene.idle(10)
-			scene.world().modifyBlockEntityNBT([4, 1, 1], (nbt) => {
+			scene.world.modifyBlockEntityNBT([4, 1, 1], (nbt) => {
 				nbt.InputTanks = [{
 					Level: {
 						Speed: 0.25,
@@ -150,9 +150,9 @@ Ponder.registry((event) => {
 
 			scene.showControls(20, [4.5, 5, 7], "down")
 				.rightClick()
-			scene.world().modifyBlock([4, 4, 7], (state) => state.with("enabled", "true"), false)
-			scene.world().setBlock([5, 4, 7], "air", true)
-			scene.world().modifyBlockEntityNBT([4, 3, 7], (nbt) => {
+			scene.world.modifyBlock([4, 4, 7], (state) => state.with("enabled", "true"), false)
+			scene.world.setBlock([5, 4, 7], "air", true)
+			scene.world.modifyBlockEntityNBT([4, 3, 7], (nbt) => {
 				nbt.Tanks = [{
 					Level: {
 						Speed: 0.25,

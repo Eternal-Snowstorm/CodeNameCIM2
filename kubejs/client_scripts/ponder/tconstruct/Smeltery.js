@@ -9,13 +9,13 @@ Ponder.registry((event) => {
 		scene.idle(20)
 		scene.scaleSceneView(0.7)
 
-		scene.world().showSection([5, 1, 3, 3, 1, 5], Direction.DOWN)
+		scene.world.showSection([5, 1, 3, 3, 1, 5], Direction.DOWN)
 		scene.idle(20)
 		scene.text(60, "The bottom consists of a maximum of 11x11\nRectangular Seared Bricks composition", [3, 3, 3])
 		scene.overlay.showOutline("green", {}, [5, 1, 3, 3, 1, 5], 60)
 		scene.idle(60)
 
-		scene.world().showSection([5, 2, 2, 3, 2, 2], Direction.SOUTH)
+		scene.world.showSection([5, 2, 2, 3, 2, 2], Direction.SOUTH)
 		scene.text(35, "Put the second layer in any direction\nFuel Tank\nSmeltery Controller\nSeared Drain")
 			.attachKeyFrame()
 		scene.idle(30)
@@ -41,16 +41,16 @@ Ponder.registry((event) => {
 			[6, 2, 5], [6, 2, 4], [6, 2, 3]
 		]
 		for (let block of bricks) {
-			scene.world().showSection(block, Direction.DOWN)
+			scene.world.showSection(block, Direction.DOWN)
 			scene.idle(2)
 		}
 		scene.idle(20)
 
-		scene.world().showSection([2, 2, 2], Direction.EAST)
-		scene.world().showSection([3, 2, 1], Direction.SOUTH)
+		scene.world.showSection([2, 2, 2], Direction.EAST)
+		scene.world.showSection([3, 2, 1], Direction.SOUTH)
 		scene.idle(10)
-		scene.world().showSection([2, 1, 2], Direction.DOWN)
-		scene.world().showSection([3, 1, 1], Direction.DOWN)
+		scene.world.showSection([2, 1, 2], Direction.DOWN)
+		scene.world.showSection([3, 1, 1], Direction.DOWN)
 		scene.idle(40)
 
 		scene.text(30, "In addition, we can also use bricks to continue to build high.")
@@ -93,7 +93,7 @@ Ponder.registry((event) => {
 			[5, 9, 2], [4, 9, 2], [3, 9, 2]
 		]
 		for (let block of brick_1) {
-			scene.world().showSection(block, Direction.DOWN)
+			scene.world.showSection(block, Direction.DOWN)
 			scene.idle(1)
 		}
 		scene.idle(20)

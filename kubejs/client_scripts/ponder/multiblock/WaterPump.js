@@ -8,8 +8,8 @@ Ponder.registry((event) => {
 		scene.scaleSceneView(0.8)
 
 		scene.addKeyframe()
-		let move0 = scene.world().showIndependentSection([4, 1, 2], Direction.WEST)
-		scene.world().moveSection(move0, [-2, 0, 0], 0)
+		let move0 = scene.world.showIndependentSection([4, 1, 2], Direction.WEST)
+		scene.world.moveSection(move0, [-2, 0, 0], 0)
 		scene.idle(20)
 		scene.overlay.showOutline("blue", {}, [2, 1, 2], 90)
 		// 如果想要使用水泵
@@ -18,7 +18,7 @@ Ponder.registry((event) => {
 		// 你需要先搭建一个完整的结构
 		scene.text(40, "You need to build a complete structure first", [2, 1.5, 2])
 		scene.idle(50)
-		scene.world().hideIndependentSection(move0, Direction.UP)
+		scene.world.hideIndependentSection(move0, Direction.UP)
 		scene.idle(20)
 
 		scene.addKeyframe()
@@ -28,7 +28,7 @@ Ponder.registry((event) => {
 			[3, 1, 1], [2, 1, 1], [1, 1, 1]
 		]
 		block1.forEach((pos) => {
-			scene.world().showSection(pos, Direction.DOWN)
+			scene.world.showSection(pos, Direction.DOWN)
 			scene.idle(2)
 		})
 		scene.idle(20)
@@ -42,7 +42,7 @@ Ponder.registry((event) => {
 			[3, 3, 1], [1, 3, 1]
 		]
 		block2.forEach((pos) => {
-			scene.world().showSection(pos, Direction.DOWN)
+			scene.world.showSection(pos, Direction.DOWN)
 			scene.idle(2)
 		})
 		scene.idle(20)
@@ -54,7 +54,7 @@ Ponder.registry((event) => {
 			[3, 4, 1], [2, 4, 1], [1, 4, 1]
 		]
 		block3.forEach((pos) => {
-			scene.world().showSection(pos, Direction.DOWN)
+			scene.world.showSection(pos, Direction.DOWN)
 			scene.idle(2)
 		})
 		scene.idle(20)
@@ -72,7 +72,7 @@ Ponder.registry((event) => {
 		scene.idle(50)
 		// 最后放上机器本体
 		scene.text(40, "Finally, put on the machine body")
-		scene.world().showSection([2, 1, 2], Direction.DOWN)
+		scene.world.showSection([2, 1, 2], Direction.DOWN)
 		scene.idle(40)
 
 		scene.addKeyframe()
@@ -86,7 +86,7 @@ Ponder.registry((event) => {
 			[3, 4, 1], [2, 4, 1], [1, 4, 1]
 		]
 		move1.forEach((pos) => {
-			scene.world().hideSection(pos, Direction.UP)
+			scene.world.hideSection(pos, Direction.UP)
 		})
 		scene.idle(20)
 
@@ -99,10 +99,10 @@ Ponder.registry((event) => {
 			[3, 5, 1, 1, 8, 3]
 		]
 		block4.forEach((pos) => {
-			scene.world().showSection(pos, Direction.DOWN)
+			scene.world.showSection(pos, Direction.DOWN)
 			scene.idle(5)
 		})
-		scene.world().showSection([3, 4, 1, 1, 4, 3], Direction.UP)
+		scene.world.showSection([3, 4, 1, 1, 4, 3], Direction.UP)
 		scene.idle(20)
 	})
 })

@@ -9,13 +9,13 @@ Ponder.registry((event) => {
 		scene.idle(20)
 
 		// 这是一个合成存储器
-		scene.world().showSection([1, 1, 2], Direction.DOWN)
+		scene.world.showSection([1, 1, 2], Direction.DOWN)
 		scene.idle(20)
 		scene.text(40, "This is a Crafting Storage", [1.5, 1.5, 2.5])
 		scene.idle(60)
 
 		// 而这是一个样板供应器
-		scene.world().showSection([2, 1, 2], Direction.DOWN)
+		scene.world.showSection([2, 1, 2], Direction.DOWN)
 		scene.idle(20)
 		scene.text(40, "While this is a Pattern Provider", [2.5, 1.5, 2.5])
 		scene.idle(60)
@@ -23,8 +23,8 @@ Ponder.registry((event) => {
 
 		// 将它们接入一个ME网络，并提供一个分子装配室
 		scene.text(40, "Connect them into a ME network with a Molecular Assembler", [2, 1.5, 2.5])
-		scene.world().showSection([3, 1, 2, 4, 1, 2], Direction.DOWN)
-		scene.world().showSection([2, 1, 1], Direction.DOWN)
+		scene.world.showSection([3, 1, 2, 4, 1, 2], Direction.DOWN)
+		scene.world.showSection([2, 1, 1], Direction.DOWN)
 		scene.idle(60)
 
 		// 这就是一个最简单的合成自动化网络
@@ -34,7 +34,7 @@ Ponder.registry((event) => {
 
 		// 使用样板编码终端编写合成配方样板，例如两个安山合金制作八个传动杆
 		scene.text(60, "Create a Pattern with a Pattern Encoding Terminal, for example, 2 Andesite Alloy => 8 Shaft", [3.5, 2.5, 2.5])
-		scene.world().showSection([3, 2, 2], Direction.DOWN)
+		scene.world.showSection([3, 2, 2], Direction.DOWN)
 		scene.idle(20)
 		scene.showControls(20, [3.5, 3, 2.5], "down")
 			.withItem("ae2:blank_pattern")
@@ -65,8 +65,8 @@ Ponder.registry((event) => {
 
 		// 构成合成CPU的方块总共有8种，分为4类
 		scene.text(40, "Crafting CPU consists of 8 types of blocks divided into 4 groups")
-		let firstLayerSection = scene.world().showIndependentSection([1, 1, 2, 7, 1, 2], Direction.DOWN)
-		let craftingUnitSection = scene.world().showIndependentSection([1, 2, 2], Direction.DOWN)
+		let firstLayerSection = scene.world.showIndependentSection([1, 1, 2, 7, 1, 2], Direction.DOWN)
+		let craftingUnitSection = scene.world.showIndependentSection([1, 2, 2], Direction.DOWN)
 		scene.idle(60)
 		scene.addKeyframe()
 
@@ -100,38 +100,38 @@ Ponder.registry((event) => {
 
 		// 这些方块需要摆放成一个矩形结构才能组装起来运行
 		scene.text(60, "These blocks must be placed as a rectangle to form and work", [4.5, 2, 1.5])
-		scene.world().setBlocks([7, 2, 2], "ae2:crafting_unit")
-		let secondLayerSection = scene.world().showIndependentSection([2, 2, 2, 7, 2, 2], Direction.DOWN)
+		scene.world.setBlocks([7, 2, 2], "ae2:crafting_unit")
+		let secondLayerSection = scene.world.showIndependentSection([2, 2, 2, 7, 2, 2], Direction.DOWN)
 		scene.idle(20)
 
-		scene.world().hideIndependentSectionImmediately(firstLayerSection)
-		scene.world().hideIndependentSectionImmediately(craftingUnitSection)
-		scene.world().hideIndependentSectionImmediately(secondLayerSection)
-		let fullCpuSection = scene.world().showIndependentSectionImmediately([1, 1, 4, 7, 2, 4])
-		scene.world().moveSection(fullCpuSection, [0, 0, -2], 0)
+		scene.world.hideIndependentSectionImmediately(firstLayerSection)
+		scene.world.hideIndependentSectionImmediately(craftingUnitSection)
+		scene.world.hideIndependentSectionImmediately(secondLayerSection)
+		let fullCpuSection = scene.world.showIndependentSectionImmediately([1, 1, 4, 7, 2, 4])
+		scene.world.moveSection(fullCpuSection, [0, 0, -2], 0)
 		scene.idle(60)
 
 		// 一个合成处理器多方快结构每次只能处理一个来自终端的合成请求
 		scene.text(60, "One Crafting CPU can only process one crafting request from terminal")
 		scene.idle(40)
-		scene.world().hideIndependentSection(fullCpuSection, Direction.UP)
+		scene.world.hideIndependentSection(fullCpuSection, Direction.UP)
 		scene.idle(20)
 		scene.addKeyframe()
 
 		// 对于需要频繁进行多个合成请求的玩家建议修建小型处理器组
 		scene.text(80, "It's best to build multiple small CPUs for those who will make frequent simple crafting requests")
-		let smallCpuSection = scene.world().showIndependentSection([1, 3, 6, 7, 4, 8], Direction.DOWN)
-		scene.world().moveSection(smallCpuSection, [0, -2, 0], 0)
+		let smallCpuSection = scene.world.showIndependentSection([1, 3, 6, 7, 4, 8], Direction.DOWN)
+		scene.world.moveSection(smallCpuSection, [0, -2, 0], 0)
 		scene.idle(60)
-		scene.world().hideIndependentSection(smallCpuSection, Direction.UP)
+		scene.world.hideIndependentSection(smallCpuSection, Direction.UP)
 		scene.idle(40)
 
 		// 若玩家希望可以以单个请求执行一个极为复杂的配方，单个大型合成处理器则是一个更好的选择
 		scene.text(80, "While for those who want to enjoy automating an entire complex recipe, a large CPU is better choice")
-		let largeCpuSection = scene.world().showIndependentSection([3, 6, 3, 4, 8, 7], Direction.DOWN)
-		scene.world().moveSection(largeCpuSection, [0, -5, 0], 0)
+		let largeCpuSection = scene.world.showIndependentSection([3, 6, 3, 4, 8, 7], Direction.DOWN)
+		scene.world.moveSection(largeCpuSection, [0, -5, 0], 0)
 		scene.idle(60)
-		scene.world().hideIndependentSection(largeCpuSection, Direction.UP)
+		scene.world.hideIndependentSection(largeCpuSection, Direction.UP)
 		scene.idle(40)
 	})
 
