@@ -1,0 +1,11 @@
+
+#Inventory sorter
+[sortingRules]
+	#Sort order
+	#Allowed Values: QUARK, CREATIVE, ITEM_ID, ITEM_NAME, DISPLAY_NAME
+	sortOrder = "QUARK"
+	#Sort by count first
+	sortByCountFirst = false
+	#Exclude hotbar from sorting
+	excludeHotbar = true
+

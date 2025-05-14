@@ -51,6 +51,16 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
   },
@@ -65,10 +75,6 @@
   "expatternprovider": {
     "jade_chamber": true,
     "jade_wireless": true
-  },
-  "buildcraftsilicon": {
-    "assembly_client_data": true,
-    "laser_target_client_data": true
   },
   "balm": {
     "jade": true
@@ -108,28 +114,8 @@
   "pipez": {
     "pipe": true
   },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": true,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
-  },
   "supplementaries": {
     "hat_stand": true
-  },
-  "buildcraftcore": {
-    "mj_storage_client_data": true
-  },
-  "buildcraftrobotics": {
-    "robot_power_client_data": true
-  },
-  "buildcraftfactory": {
-    "autocraft_client_data": true
   },
   "cookingforblockheads": {
     "fridge": true,

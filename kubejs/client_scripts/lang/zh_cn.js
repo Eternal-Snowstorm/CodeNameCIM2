@@ -12,7 +12,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguaue("dense_sturdy_sheet", "致密坚固板")
 	addItemLanguaue("charged_amethyst", "充能紫水晶")
 	addItemLanguaue("plasma_ingot", "等离子锭")
-	addItemLanguaue("raw_aluminum_particles","粗制铂微粒")
+	addItemLanguaue("raw_aluminum_particles", "粗制铂微粒")
 	addItemLanguaue("aluminum_crystal_nucleus", "铂晶核")
 	addItemLanguaue("aluminum_shard", "铂碎片")
 
@@ -106,10 +106,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguaue("me_machine", "智能机械方块")
 	addBlockLanguaue("mekanism_machine", "通用机械方块")
 
-	
 	for (let index = 0; index < 14; index++) {
-		addPaintingLanguage(
-			`rr${index}`, `Aleegos(${index})`, "Aleegos Reality Redemption")
+		addPaintingLanguage(`rr${index}`, `Aleegos(${index})`, "Aleegos Reality Redemption")
 	}
 	addPaintingLanguage("bug_is_right", "有Bug是对的", "古镇天")
 	addPaintingLanguage("it_must_be_optifine", "一定是OptiFine干的", "XeKr")
@@ -153,6 +151,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLanguage("ue_addons:water_pump", "机器内如果一次产出的量如果高于剩余空间, 机器则会停止工作\n所以不需要担心水量会减少的问题, 在水量少于50%的时候会重新生产一次")
 	addJEIInfoLanguage("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
 	addJEIInfoLanguage("ue_addons:bucket", "似是一种巨大的力量塑造的诡异造物\n它有着令人倍感亲切的形状, 却处于一种令人不寒而栗的陌生角度\n这巨大的力量, 炽热, 强大又致命\n善良者受其腐化\n卑鄙者因其强大\n收容之器受其影响, 转为包覆之具, 幸于并无灵魂, 于我没有危害")
+	addJEIInfoLanguage("#ad_astra:power_consumption_machines", "该Mod的机器每个面都有能量输入的上限\n如果想要不会断电确保产量你可能需要给每个面都连接一根电线")
 
 	addAccelerateTooltipLanguage("ue_addons:stone_mechanism", "§e转化石头\n10%安山岩\n10%闪长岩\n10%花岗岩\n10%石灰岩\n10%焦黑石头\n§2转化深板岩\n10%焦黑石头\n10%凝灰岩\n10%熔渣\n10%滴水石块\n10%平滑玄武岩")
 	addAccelerateTooltipLanguage("ue_addons:andesite_mechanism", "§e转化石头\n20%安山岩\n5%铁矿石\n5%锌矿石\n§2转化深板岩\n15%安山岩\n10%深层铁矿石\n10%深层锌矿石")

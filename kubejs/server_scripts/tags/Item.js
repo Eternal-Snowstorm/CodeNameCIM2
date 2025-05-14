@@ -11,6 +11,18 @@ ServerEvents.tags("item", (event) => {
 			.add("ue_addons:colorful_mechanism")
 	})
 
+	event.get("ad_astra:power_consumption_machines")
+		.add("ad_astra:oxygen_distributor")
+		.add("ad_astra:gravity_normalizer")
+		.add("ad_astra:energizer")
+		.add("ad_astra:compressor")
+		.add("ad_astra:oxygen_loader")
+		.add("ad_astra:fuel_refinery")
+		.add("ad_astra:etrionic_blast_furnace")
+		.add("ad_astra:cryo_freezer")
+		.add("ad_astra:oxygen_sensor")
+		.add("ad_astra:water_pump")
+
 	event.get("functionalstorage:upgrades")
 		.add("functionalstorage:copper_upgrade")
 		.add("functionalstorage:gold_upgrade")
