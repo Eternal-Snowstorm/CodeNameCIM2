@@ -1,12 +1,11 @@
 Ponder.registry((event) => {
 	event.create("ae2:drive")
-		.tag("ue_addons:ae2")
 		.scene("ae2:drive", "ME Drive", "ue_addons:ae2/standard_floor", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
-			scene.world.setBlocks([4, 1, 4], "ae2:drive")
-			scene.world.showSection([4, 1, 4], Direction.DOWN)
+			scene.world().setBlocks([4, 1, 4], "ae2:drive")
+			scene.world().showSection([4, 1, 4], Direction.DOWN)
 			scene.idle(20)
 
 			// 这是一个ME驱动器
@@ -37,13 +36,13 @@ Ponder.registry((event) => {
 			// ME驱动器需要接入ME网络才能工作
 			scene.text(40, "ME Drives should be connected to ME network to function", [4.5, 1.5, 4.5])
 			scene.idle(60)
-			scene.world.hideSection([4, 1, 4], Direction.UP)
+			scene.world().hideSection([4, 1, 4], Direction.UP)
 			scene.idle(20)
-			scene.world.setBlocks([4, 1, 4], "ae2:controller", false)
-			scene.world.setBlocks([4, 2, 4], "ae2:drive", false)
-			scene.world.setBlocks([3, 1, 4], "ae2:creative_energy_cell", false)
-			scene.world.showSection([3, 1, 4, 4, 2, 4], Direction.DOWN)
+			scene.world().setBlocks([4, 1, 4], "ae2:controller", false)
+			scene.world().setBlocks([4, 2, 4], "ae2:drive", false)
+			scene.world().setBlocks([3, 1, 4], "ae2:creative_energy_cell", false)
+			scene.world().showSection([3, 1, 4, 4, 2, 4], Direction.DOWN)
 			scene.idle(40)
-			scene.world.modifyBlock([4, 1, 4], (state) => state.with("state", "online"), false)
+			scene.world().modifyBlock([4, 1, 4], (state) => state.with("state", "online"), false)
 		})
 })

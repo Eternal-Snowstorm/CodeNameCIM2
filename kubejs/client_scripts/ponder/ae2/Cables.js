@@ -1,15 +1,13 @@
 Ponder.registry((event) => {
-
 	// 频道
 	event.create("ae2:fluix_glass_cable")
-		.tag("ue_addons:ae2")
 		.scene("ae2:cable", "Cables", "ue_addons:ae2/cables", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
-			scene.world.showSection([1, 1, 3, 7, 1, 3], Direction.DOWN)
-			scene.world.showSection([2, 1, 5, 7, 1, 5], Direction.DOWN)
-			scene.world.showSection([4, 1, 4], Direction.DOWN)
+			scene.world().showSection([1, 1, 3, 7, 1, 3], Direction.DOWN)
+			scene.world().showSection([2, 1, 5, 7, 1, 5], Direction.DOWN)
+			scene.world().showSection([4, 1, 4], Direction.DOWN)
 			scene.idle(20)
 
 			// 除了粗线缆和细线缆以外
@@ -50,8 +48,8 @@ Ponder.registry((event) => {
 			// 如果在这里放一个红石信号……
 			scene.text(40, "If a redstone signal comes here...", [6.5, 2, 4.5])
 			scene.idle(60)
-			scene.world.setBlocks([6, 1, 4], "minecraft:redstone_block")
-			scene.world.showSection([6, 1, 4], Direction.DOWN)
+			scene.world().setBlocks([6, 1, 4], "minecraft:redstone_block")
+			scene.world().showSection([6, 1, 4], Direction.DOWN)
 			scene.idle(40)
 
 			// 那么上面的设备就下线了，而下面的设备就上线了
@@ -63,14 +61,13 @@ Ponder.registry((event) => {
 			scene.idle(60)
 		})
 
-		// AE2特殊线缆
-		event.create("ae2:fluix_glass_cable")
-		.tag("ue_addons:ae2")
+	// AE2特殊线缆
+	event.create("ae2:fluix_glass_cable")
 		.scene("ae2:channel", "Channels", "ue_addons:ae2/channels", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
-			scene.world.showSection([1, 1, 2, 7, 1, 5], Direction.DOWN)
+			scene.world().showSection([1, 1, 2, 7, 1, 5], Direction.DOWN)
 
 			// 频道对于ME网络非常重要
 			scene.text(40, "Channels are essential to ME Networks")
@@ -85,8 +82,8 @@ Ponder.registry((event) => {
 			scene.text(40, "While thin cables transmit only 8 channels", [3.5, 1.5, 3.5])
 			scene.idle(60)
 			scene.addKeyframe()
-			scene.world.setBlocks([7, 2, 3], "ae2:drive")
-			scene.world.showSection([7, 2, 3], Direction.DOWN)
+			scene.world().setBlocks([7, 2, 3], "ae2:drive")
+			scene.world().showSection([7, 2, 3], Direction.DOWN)
 
 			// 如果一段线缆频道数达到上限
 			scene.text(40, "If a cable is overloaded", [3.5, 1.5, 3.5])

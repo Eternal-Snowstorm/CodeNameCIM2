@@ -1,19 +1,18 @@
 Ponder.registry((event) => {
 	event.create("ae2:condenser")
-		.tag("ue_addons:ae2")
 		.scene("ae2:condenser", "Condenser", "ue_addons:ae2/condenser", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
-			scene.world.showSection([1, 1, 2], Direction.DOWN)
+			scene.world().showSection([1, 1, 2], Direction.DOWN)
 			scene.idle(20)
 
 			// 物质聚合器是一种用于销毁多余物品或流体与制造新物品的设备
 			scene.text(60, "Condenser is a device to consume extra stuffs/fluids and create new items", [1.5, 1.5, 2.5])
 			scene.addKeyframe()
 			scene.idle(80)
-			scene.world.setBlocks([3, 2, 3], "minecraft:air", false)
-			scene.world.showSection([2, 1, 2, 3, 2, 3], Direction.DOWN)
+			scene.world().setBlocks([3, 2, 3], "minecraft:air", false)
+			scene.world().showSection([2, 1, 2, 3, 2, 3], Direction.DOWN)
 			scene.idle(20)
 
 			// 在大多数情况下，建议向聚合器内泵水
