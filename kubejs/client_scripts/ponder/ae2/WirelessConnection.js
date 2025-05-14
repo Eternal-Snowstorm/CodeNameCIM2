@@ -66,7 +66,7 @@ Ponder.registry((event) => {
             scene.idle(100)
 
             // 以获取无限距离与跨维度的网络访问
-            scene.text(60,"To gain access of infinity distance and inter-dimentions")
+            scene.text(60, "To gain access of infinity distance and inter-dimentions")
             scene.idle(80)
         })
 })

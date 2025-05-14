@@ -8,6 +8,7 @@ Ponder.registry((event) => {
 			scene.world().setBlocks([2, 3, 2, 2, 7, 2], "minecraft:air", false)
 			scene.idle(20)
 
+
 			// ME P2P通道是利用ME网络传输另一个ME网络频道的设备
 			scene.text(60, "Me P2P Tunnels are devices to transmit channels via another ME network", [3.5, 1.5, 2.5])
 			scene.idle(80)

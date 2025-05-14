@@ -8,6 +8,7 @@ Ponder.registry((event) => {
 			scene.world().showSection([4, 1, 4], Direction.DOWN)
 			scene.idle(20)
 
+
 			// 这是一个ME驱动器
 			scene.text(30, "This is an ME Drive", [4.5, 1.5, 4.5])
 			scene.idle(50)
@@ -45,4 +46,5 @@ Ponder.registry((event) => {
 			scene.idle(40)
 			scene.world().modifyBlock([4, 1, 4], (state) => state.with("state", "online"), false)
 		})
+
 })
