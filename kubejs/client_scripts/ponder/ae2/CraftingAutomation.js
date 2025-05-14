@@ -104,9 +104,12 @@ Ponder.registry((event) => {
 		let secondLayerSection = scene.world.showIndependentSection([2, 2, 2, 7, 2, 2], Direction.DOWN)
 		scene.idle(20)
 
-		scene.world.hideIndependentSectionImmediately(firstLayerSection)
-		scene.world.hideIndependentSectionImmediately(craftingUnitSection)
-		scene.world.hideIndependentSectionImmediately(secondLayerSection)
+		scene.world.setBlocks([1, 1, 2, 7, 1, 2], "minecraft:air", false)
+		scene.world.hideIndependentSection(firstLayerSection, Direction.UP)
+		scene.world.setBlocks([1, 2, 2], "minecraft:air", false)
+		scene.world.hideIndependentSection(craftingUnitSection, Direction.UP)
+		scene.world.setBlocks([2, 2, 2, 7, 2, 2], "minecraft:air", false)
+		scene.world.hideIndependentSection(secondLayerSection, Direction.UP)
 		let fullCpuSection = scene.world.showIndependentSectionImmediately([1, 1, 4, 7, 2, 4])
 		scene.world.moveSection(fullCpuSection, [0, 0, -2], 0)
 		scene.idle(60)
@@ -128,7 +131,7 @@ Ponder.registry((event) => {
 
 		// 若玩家希望可以以单个请求执行一个极为复杂的配方，单个大型合成处理器则是一个更好的选择
 		scene.text(80, "While for those who want to enjoy automating an entire complex recipe, a large CPU is better choice")
-		let largeCpuSection = scene.world.showIndependentSection([3, 6, 3, 4, 8, 7], Direction.DOWN)
+		let largeCpuSection = scene.world.showIndependentSection([3, 6, 3, 5, 8, 7], Direction.DOWN)
 		scene.world.moveSection(largeCpuSection, [0, -5, 0], 0)
 		scene.idle(60)
 		scene.world.hideIndependentSection(largeCpuSection, Direction.UP)

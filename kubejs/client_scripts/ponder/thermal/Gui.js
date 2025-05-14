@@ -273,7 +273,8 @@ Ponder.registry((event) => {
 		scene.text(40, "Automatically output after completion", [8, 5, 13])
 		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot_orange")
 		scene.world.setBlocks([10, 4, 13], "ue_addons:ponder_thermal_fire")
-		scene.world.createItemOnBeltLike([6, 1, 7], Direction.EAST, "minecraft:glass")
+		scene.showControls(40, [6.5, 2, 7.5], "down")
+			.withItem("minecraft:glass")
 		scene.idle(70)
 
 		scene.addKeyframe()
