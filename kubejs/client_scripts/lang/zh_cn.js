@@ -1,42 +1,43 @@
 ClientEvents.lang("zh_cn", (event) => {
-	addCastItemLanguaue("mechanism", "构件")
+	addCastItemLanguage("mechanism", "构件")
 
-	addItemLanguaue("geological_hammer", "地质锤(调试工具)")
-	addItemLanguaue("empty_exe", "空程序.exe")
-	addItemLanguaue("single_crystal_silicon", "单晶硅")
-	addItemLanguaue("computer_component", "计算机组件")
-	addItemLanguaue("bucket", "桶(?)")
-	addItemLanguaue("blood_slime_ball", "黏血球")
-	addItemLanguaue("empty_flash_drive", "空白闪存盘")
-	addItemLanguaue("programmed_flash_drive", "已编程闪存盘")
-	addItemLanguaue("dense_sturdy_sheet", "致密坚固板")
-	addItemLanguaue("charged_amethyst", "充能紫水晶")
-	addItemLanguaue("plasma_ingot", "等离子锭")
-	addItemLanguaue("raw_aluminum_particles", "粗制铂微粒")
-	addItemLanguaue("aluminum_crystal_nucleus", "铂晶核")
-	addItemLanguaue("aluminum_shard", "铂碎片")
+	addItemLanguage("geological_hammer", "地质锤(调试工具)")
+	addItemLanguage("empty_exe", "空程序.exe")
+	addItemLanguage("single_crystal_silicon", "单晶硅")
+	addItemLanguage("computer_component", "计算机组件")
+	addItemLanguage("bucket", "桶(?)")
+	addItemLanguage("blood_slime_ball", "黏血球")
+	addItemLanguage("empty_flash_drive", "空白闪存盘")
+	addItemLanguage("programmed_flash_drive", "已编程闪存盘")
+	addItemLanguage("dense_sturdy_sheet", "致密坚固板")
+	addItemLanguage("charged_amethyst", "充能紫水晶")
+	addItemLanguage("plasma_ingot", "等离子锭")
+	addItemLanguage("raw_aluminum_particles", "粗制铂微粒")
+	addItemLanguage("aluminum_crystal_nucleus", "铂晶核")
+	addItemLanguage("aluminum_shard", "铂碎片")
 
-	addItemLanguaue("blockstone_source_alpha", "Α(Alpha)型黑石源质")
-	addItemLanguaue("blockstone_source_beta", "Β(Beta)型黑石源质")
-	addItemLanguaue("blockstone_source_gamma", "Γ(Gamma)型黑石源质")
-	addItemLanguaue("crystal_ruby", "晶射红宝石")
-	addItemLanguaue("source_sapphire", "蓝源晶")
-	addItemLanguaue("bombed_source_emeraid", "爆裂源质")
+	addItemLanguage("blockstone_source_alpha", "Α(Alpha)型黑石源质")
+	addItemLanguage("blockstone_source_beta", "Β(Beta)型黑石源质")
+	addItemLanguage("blockstone_source_gamma", "Γ(Gamma)型黑石源质")
+	addItemLanguage("crystal_ruby", "晶射红宝石")
+	addItemLanguage("source_sapphire", "蓝源晶")
+	addItemLanguage("bombed_source_emeraid", "爆裂源质")
 
-	addFluidLanguaue("molten_source_sapphire", "熔融蓝源晶")
-	addFluidLanguaue("eletriced_source_emeraid", "电解源质")
-	addFluidLanguaue("delta_unstable_solution", "Δ(Delta)型不稳定源质溶液")
-	addFluidLanguaue("turbid_waste_liquid", "浑浊废液")
+	addFluidLanguage("molten_source_sapphire", "熔融蓝源晶")
+	addFluidLanguage("eletriced_source_emeraid", "电解源质")
+	addFluidLanguage("delta_unstable_solution", "Δ(Delta)型不稳定源质溶液")
+	addFluidLanguage("turbid_waste_liquid", "浑浊废液")
+	addFluidLanguage("platinum_solution", "铂溶液")
 
-	addMaterialLanguaue("andesite_alloy", "安山合金")
-	addMaterialLanguaue("cinderslime", "余烬史莱姆")
-	addMaterialLanguaue("stainless_steel", "不锈耐酸钢")
-	addMaterialLanguaue("chromium", "铬")
-	addMaterialLanguaue("platinum", "铂")
-	addMaterialLanguaue("end_stone", "末地石")
+	addMaterialLanguage("andesite_alloy", "安山合金")
+	addMaterialLanguage("cinderslime", "余烬史莱姆")
+	addMaterialLanguage("stainless_steel", "不锈耐酸钢")
+	addMaterialLanguage("chromium", "铬")
+	addMaterialLanguage("platinum", "铂")
+	addMaterialLanguage("end_stone", "末地石")
 
-	addMachineLanguaue("water_pump", "水泵")
-	addMachineLanguaue("flash_disk_writer", "闪存盘写入器")
+	addMachineLanguage("water_pump", "水泵")
+	addMachineLanguage("flash_disk_writer", "闪存盘写入器")
 
 	addMBDMachineLanguage("proxy_part_block", "多方块机器部件方块")
 	addMBDMachineLanguage("accelerator_energy_input", "大型构件催生器能量输入口")
@@ -45,66 +46,65 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMBDMachineLanguage("accelerator", "大型构件催生器控制器")
 	addMBDMachineRecipeLanguage("accelerator", "大型构件催生器")
 
-	addMechanismPartLanguaue("basic", "基础")
-	addMechanismPartLanguaue("mechanical", "机械")
-	addMechanismPartLanguaue("flux", "通量")
-	addMechanismPartLanguaue("magical", "魔力")
-	addMechanismPartLanguaue("quantum", "量子")
-	addMechanismPartLanguaue("engineering", "工程")
-	addMechanismPartLanguaue("mekanism", "通用")
-	addMechanismPartLanguaue("final", "终章")
+	addMechanismPartLanguage("basic", "基础")
+	addMechanismPartLanguage("mechanical", "机械")
+	addMechanismPartLanguage("flux", "通量")
+	addMechanismPartLanguage("magical", "魔力")
+	addMechanismPartLanguage("quantum", "量子")
+	addMechanismPartLanguage("engineering", "工程")
+	addMechanismPartLanguage("mekanism", "通用")
+	addMechanismPartLanguage("final", "终章")
 
-	addSolutionLanguage("feso4", "硫酸亚铁")
-	addSolutionLanguage("fecl2", "氯化亚铁")
-	addSolutionLanguage("cuso4", "硫酸铜")
-	addSolutionLanguage("cucl2", "氯化铜")
-	addSolutionLanguage("al2so43", "硫酸铝")
-	addSolutionLanguage("alcl3", "氯化铝")
-	addSolutionLanguage("pbcl2", "氯化铅")
-	addSolutionLanguage("pbso4", "硫酸铅")
-	addSolutionLanguage("sncl2", "氯化亚锡")
-	addSolutionLanguage("snso4", "硫酸亚锡")
-	addSolutionLanguage("zncl2", "氯化锌")
-	addSolutionLanguage("znso4", "硫酸锌")
-	addSolutionLanguage("aucl3", "氯化金")
-	addSolutionLanguage("au2so43", "硫酸金")
-	addSolutionLanguage("agcl", "氯化银")
-	addSolutionLanguage("ag2so4", "硫酸银")
-	addSolutionLanguage("crcl3", "氯化铬")
-	addSolutionLanguage("cr2so43", "硫酸铬")
-	addSolutionLanguage("vocl2", "二氯氧钒")
-	addSolutionLanguage("voso4", "硫酸氧钒")
-	addSolutionLanguage("uo2cl2", "氯化铀酰")
-	addSolutionLanguage("uo2so4", "硫酸铀酰")
-	addSolutionLanguage("nicl2", "氯化镍")
-	addSolutionLanguage("niso4", "硫酸镍")
-	addSolutionLanguage("cocl2", "氯化钴")
-	addSolutionLanguage("coso4", "硫酸钴")
-	addSolutionLanguage("oscl3", "氯化锇")
-	addSolutionLanguage("os2so43", "硫酸锇")
-	addSolutionLanguage("kcl", "氯化钾")
-	addSolutionLanguage("k2so4", "硫酸钾")
-	addSolutionLanguage("cacl2", "氯化钙")
-	addSolutionLanguage("caso4", "硫酸钙")
-	addSolutionLanguage("nacl", "氯化钠")
-	addSolutionLanguage("na2so4", "硫酸钠")
-	addSolutionLanguage("platinum", "铂")
+	addSolutionLanguage("feso4", "硫酸亚铁", "FeSO₄")
+	addSolutionLanguage("fecl2", "氯化亚铁", "FeCl₂")
+	addSolutionLanguage("cuso4", "硫酸铜", "CuSO₄")
+	addSolutionLanguage("cucl2", "氯化铜", "CuCl₂")
+	addSolutionLanguage("al2so43", "硫酸铝", "Al₂(SO₄)₃")
+	addSolutionLanguage("alcl3", "氯化铝", "AlCl₃")
+	addSolutionLanguage("pbcl2", "氯化铅", "PbCl₂")
+	addSolutionLanguage("pbso4", "硫酸铅", "PbSO₄")
+	addSolutionLanguage("sncl2", "氯化亚锡", "SnCl₂")
+	addSolutionLanguage("snso4", "硫酸亚锡", "SnSO₄")
+	addSolutionLanguage("zncl2", "氯化锌", "ZnCl₂")
+	addSolutionLanguage("znso4", "硫酸锌", "ZnSO₄")
+	addSolutionLanguage("aucl3", "氯化金", "AuCl₃")
+	addSolutionLanguage("au2so43", "硫酸金", "Au₂(SO₄)₃")
+	addSolutionLanguage("agcl", "氯化银", "AgCl")
+	addSolutionLanguage("ag2so4", "硫酸银", "Ag₂SO₄")
+	addSolutionLanguage("crcl3", "氯化铬", "CrCl₃")
+	addSolutionLanguage("cr2so43", "硫酸铬", "Cr₂(SO₄)₃")
+	addSolutionLanguage("vocl2", "二氯氧钒", "VOCl₂")
+	addSolutionLanguage("voso4", "硫酸氧钒", "VOSO₄")
+	addSolutionLanguage("uo2cl2", "氯化铀酰", "UO₂Cl₂")
+	addSolutionLanguage("uo2so4", "硫酸铀酰", "UO₂SO₄")
+	addSolutionLanguage("nicl2", "氯化镍", "NiCl₂")
+	addSolutionLanguage("niso4", "硫酸镍", "NiSO₄")
+	addSolutionLanguage("cocl2", "氯化钴", "CoCl₂")
+	addSolutionLanguage("coso4", "硫酸钴", "CoSO₄")
+	addSolutionLanguage("oscl3", "氯化锇", "OsCl₃")
+	addSolutionLanguage("os2so43", "硫酸锇", "Os₂(SO₄)₃")
+	addSolutionLanguage("kcl", "氯化钾", "KCl")
+	addSolutionLanguage("k2so4", "硫酸钾", "K₂SO₄")
+	addSolutionLanguage("cacl2", "氯化钙", "CaCl₂")
+	addSolutionLanguage("caso4", "硫酸钙", "CaSO₄")
+	addSolutionLanguage("nacl", "氯化钠", "NaCl")
+	addSolutionLanguage("na2so4", "硫酸钠", "Na₂SO₄")
 
-	addFluidLanguaue("molten_andesite_alloy", "熔融安山合金")
-	addFluidLanguaue("blood", "血液")
+	addFluidLanguage("molten_andesite_alloy", "熔融安山合金")
+	addFluidLanguage("blood", "血液")
 
-	addBlockLanguaue("the_accelerator_of_mechanism_power", "构件之力催生器")
-	addBlockLanguaue("quartz_ore", "石英矿石")
-	addBlockLanguaue("deepslate_quartz_ore", "深层石英矿石")
-	addBlockLanguaue("moon_cobalt_ore", "月球钴矿石")
-	addBlockLanguaue("osmium_tile", "锇砖瓦")
-	addBlockLanguaue("compression_end_stone_dust_block", "压缩末地石粉块")
+	addBlockLanguage("the_accelerator_of_mechanism_power", "构件之力催生器")
+	addBlockLanguage("quartz_ore", "石英矿石")
+	addBlockLanguage("deepslate_quartz_ore", "深层石英矿石")
+	addBlockLanguage("moon_cobalt_ore", "月球钴矿石")
+	addBlockLanguage("osmium_tile", "锇砖瓦")
+	addBlockLanguage("compression_end_stone_dust_block", "压缩末地石粉块")
 
-	addBlockLanguaue("andesite_machine", "安山机械方块")
-	addBlockLanguaue("brass_machine", "黄铜机械方块")
-	addBlockLanguaue("copper_machine", "铜制机械方块")
-	addBlockLanguaue("me_machine", "智能机械方块")
-	addBlockLanguaue("mekanism_machine", "通用机械方块")
+	addBlockLanguage("andesite_machine", "安山机械方块")
+	addBlockLanguage("brass_machine", "黄铜机械方块")
+	addBlockLanguage("copper_machine", "铜制机械方块")
+	addBlockLanguage("me_machine", "智能机械方块")
+	addBlockLanguage("mekanism_machine", "通用机械方块")
 
 	for (let index = 0; index < 14; index++) {
 		addPaintingLanguage(`rr${index}`, `Aleegos(${index})`, "Aleegos Reality Redemption")
@@ -113,20 +113,20 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("it_must_be_optifine", "一定是OptiFine干的", "XeKr")
 	addPaintingLanguage("createdeco", "随机构件", "随机构件")
 
-	addAloneLanguaue(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
-	addAloneLanguaue(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
-	addAloneLanguaue(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
-	addAloneLanguaue(`itemGroup.${global.namespace}.salts_and_solutions`, "构件与革新: 金属盐")
-	addAloneLanguaue(`itemGroup.${global.namespace}.mechanisms`, "构件与革新: 构件")
-	addAloneLanguaue(`itemGroup.${global.namespace}.metals`, "构件与革新: 金属")
-	addAloneLanguaue("curios.identifier.mechanisms", "构件")
-	addAloneLanguaue(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")
-	addAloneLanguaue(`message.${global.namespace}.debug.getHardness`, "这个方块的硬度是: %s")
-	addAloneLanguaue(`text.${global.namespace}.dev`, "§0开发中画面, 实际内容请以正式版为准")
-	addAloneLanguaue(`text.${global.namespace}.player`, "§0测试中版本, 不代表最终品质")
-	addAloneLanguaue(`message.${global.namespace}.checkCheating`, "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?")
-	addAloneLanguaue(`message.${global.namespace}.checkMultipleCheating`, "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?")
-	addAloneLanguaue(`sea.${global.namespace}.search`, "§b正在使用对海搜索!")
+	addAloneLanguage(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
+	addAloneLanguage(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
+	addAloneLanguage(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
+	addAloneLanguage(`itemGroup.${global.namespace}.salts_and_solutions`, "构件与革新: 金属盐")
+	addAloneLanguage(`itemGroup.${global.namespace}.mechanisms`, "构件与革新: 构件")
+	addAloneLanguage(`itemGroup.${global.namespace}.metals`, "构件与革新: 金属")
+	addAloneLanguage("curios.identifier.mechanisms", "构件")
+	addAloneLanguage(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")
+	addAloneLanguage(`message.${global.namespace}.debug.getHardness`, "这个方块的硬度是: %s")
+	addAloneLanguage(`text.${global.namespace}.dev`, "§0开发中画面, 实际内容请以正式版为准")
+	addAloneLanguage(`text.${global.namespace}.player`, "§0测试中版本, 不代表最终品质")
+	addAloneLanguage(`message.${global.namespace}.checkCheating`, "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?")
+	addAloneLanguage(`message.${global.namespace}.checkMultipleCheating`, "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?")
+	addAloneLanguage(`sea.${global.namespace}.search`, "§b正在使用对海搜索!")
 
 	addCommonTooltipLanguage("ue_addons:water_pump", "")
 	addCommonTooltipLanguage("ue_addons:pigiron_mechanism", "可无限次食用")
@@ -165,7 +165,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("ue_addons:wooden_mechanism", "§e转化石头\n20%煤矿石\n§2转化深板岩\n15%深层煤矿石\n1%深层钻石矿石")
 	addAccelerateTooltipLanguage("ue_addons:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 
-	addHeatedLanguaue("grilled", "炙烤")
+	addHeatedLanguage("grilled", "炙烤")
 
 	let amethystEncyclopedia = "紫水晶中流动的魔力会竭尽全力获取方块中蕴含的资源"
 	addTConMaterialLanguage(
@@ -236,8 +236,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["redstone", "红石"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
-		addFlashDriveLanguaue(material, name)
-		addMechanismLanguaue(material, name)
+		addFlashDriveLanguage(material, name)
+		addMechanismLanguage(material, name)
 	})
 
 	let completeMechanismGroup = [
@@ -251,41 +251,41 @@ ClientEvents.lang("zh_cn", (event) => {
 		["final_random", "最终随机"]
 	]
 	completeMechanismGroup.forEach(([material, name]) => {
-		addCompleteMechanismLanguaue(material, name)
+		addCompleteMechanismLanguage(material, name)
 	})
 
-	function addItemLanguaue(key, value) {
+	function addItemLanguage(key, value) {
 		event.add(`item.${global.namespace}.${key}`, value)
 	}
 
-	function addFlashDriveLanguaue(key, value) {
+	function addFlashDriveLanguage(key, value) {
 		event.add(`item.${global.namespace}.${key}_mechanism_flash_drive`, `${value}构件闪存盘`)
 	}
 
-	function addCastItemLanguaue(key, value) {
+	function addCastItemLanguage(key, value) {
 		event.add(`item.${global.namespace}.${key}_cast`, `${value}金质铸模`)
 		event.add(`item.${global.namespace}.${key}_sand_cast`, `${value}沙子铸模`)
 		event.add(`item.${global.namespace}.${key}_red_sand_cast`, `${value}红沙铸模`)
 	}
 
-	function addMechanismLanguaue(material, value) {
+	function addMechanismLanguage(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism`, `${value}构件`)
 		event.add(`item.${global.namespace}.incomplete_${material}_mechanism`, `${value}构件(半成品)`)
 	}
 
-	function addCompleteMechanismLanguaue(material, value) {
+	function addCompleteMechanismLanguage(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism`, `${value}构件`)
 	}
 
-	function addMechanismPartLanguaue(material, value) {
+	function addMechanismPartLanguage(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism_part`, `${value}构件零件`)
 	}
 
-	function addBlockLanguaue(key, value) {
+	function addBlockLanguage(key, value) {
 		event.add(`block.${global.namespace}.${key}`, value)
 	}
 
-	function addMachineLanguaue(key, value) {
+	function addMachineLanguage(key, value) {
 		event.add(`block.${global.namespace}.${key}`, value)
 		event.add(`machine.${global.namespace}.${key}`, value)
 	}
@@ -297,13 +297,13 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`mbd2.${key}`, value)
 	}
 
-	function addFluidLanguaue(key, value) {
+	function addFluidLanguage(key, value) {
 		event.add(`fluid.${global.namespace}.${key}`, value)
 		event.add(`block.${global.namespace}.${key}`, value)
 		event.add(`item.${global.namespace}.${key}_bucket`, `${value}桶`)
 	}
 
-	function addMaterialLanguaue(key, value) {
+	function addMaterialLanguage(key, value) {
 		event.add(`item.${global.namespace}.${key}_ingot`, `${value}锭`)
 		event.add(`item.${global.namespace}.${key}_nugget`, `${value}粒`)
 		event.add(`item.${global.namespace}.${key}_plate`, `${value}板`)
@@ -330,11 +330,11 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`jei.info.${key}`.replace(":", "."), value)
 	}
 
-	function addHeatedLanguaue(key, value) {
+	function addHeatedLanguage(key, value) {
 		event.add(`create.recipe.heat_requirement.${key}`, value)
 	}
 
-	function addMusicDiscLanguaue(key, value, author) {
+	function addMusicDiscLanguage(key, value, author) {
 		event.add(`item.${global.namespace}.${key}`, value)
 		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
 	}
@@ -344,7 +344,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`painting.${global.namespace}.${key}.author`, author)
 	}
 
-	function addAloneLanguaue(key, value) {
+	function addAloneLanguage(key, value) {
 		event.add(key, value)
 	}
 
@@ -356,9 +356,11 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`material.${global.namespace}.${key}.armor`, armor)
 	}
 
-	function addSolutionLanguage(key, value) {
+	function addSolutionLanguage(key, value, tooltip) {
 		event.add(`item.${global.namespace}.${key}`, value)
 		event.add(`item.${global.namespace}.${key}_solution_bucket`, `${value}溶液桶`)
+		event.add(`tooltip.${global.namespace}.${key}`, tooltip)
+		event.add(`tooltip.${global.namespace}.${key}_solution_bucket`, tooltip)
 		event.add(`block.${global.namespace}.${key}_solution`, `${value}溶液`)
 		event.add(`fluid.${global.namespace}.${key}_solution`, `${value}溶液`)
 	}
