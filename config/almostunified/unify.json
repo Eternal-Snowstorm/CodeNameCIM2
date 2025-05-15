@@ -1,11 +1,11 @@
 {
 	"modPriorities": [
 		"minecraft",
+		"ad_astra",
 		"thermal",
 		"create",
 		"tconstruct",
 		"immersiveengineering",
-		"ad_astra",
 		"mekanism",
 		"vintageimprovements",
 		"createaddition",

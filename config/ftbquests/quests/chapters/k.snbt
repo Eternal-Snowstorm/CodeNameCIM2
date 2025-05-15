@@ -273,8 +273,8 @@
 				item: "ue_addons:nuclear_mechanism"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -2.0d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -287,8 +287,8 @@
 				item: "ue_addons:antimatter_mechanism"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -2.0d
+			x: 12.0d
+			y: -5.0d
 		}
 		{
 			id: "41D1483BFF793103"

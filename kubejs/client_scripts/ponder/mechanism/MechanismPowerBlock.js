@@ -32,4 +32,4 @@ Ponder.registry((event) => {
 			scene.overlay.showOutline("red", {}, [1, 0, 1, 5, 0, 5], 45)
 			scene.text(45, "But attention, only blocks in 5x5 zone around it can be transformed!")
 		})
-});
+})
