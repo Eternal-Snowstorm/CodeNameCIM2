@@ -147,36 +147,97 @@ Ponder.registry((event) => {
 		scene.idle(20)
 
 		// 样板供应器中的处理配方样板只关注输出与返回的物品
+		scene.text(60, "Patterns in the Pattern Provider only detects the input and output of the recipe")
+		scene.idle(80)
 
 		// 因此处理配方的自由度非常大，可以囊括整合包中所有的配方
+		scene.text(60, "As a consequence, it's free to edit any type of recipy, almost all recipes in this modpack")
+		scene.idle(80)
+		scene.addKeyframe()
 
 		// 熔炉对于这种自动化就是一个绝佳的范例
+		scene.world.setBlocks([2, 2, 1], "minecraft:furnace", false)
+		scene.world.showSection([2, 2, 1], Direction.DOWN)
+		scene.idle(20)
+		scene.text(40, "Furnace is a perfect example", [2.5, 2.5, 1.5])
+		scene.idle(60)
 
 		// 它对于输入面与输出面有着较高的要求
+		scene.text(60, "It has a high requirement of input and output direction", [2.5, 2.5, 1.5])
+		scene.idle(80)
 
 		// 熔炉只能从顶部输入材料
+		scene.world.setBlocks([2, 3, 1], "minecraft:hopper", false)
+		scene.world.showSection([2, 3, 1], Direction.DOWN)
+		scene.idle(20)
+		scene.text(40, "Materials can only be put in from the top", [2.5, 3.5, 1.5])
+		scene.idle(60)
 
 		// 只能从侧面输入燃料
+		scene.world.setBlocks([3, 2, 1], "minecraft:hopper", false)
+		scene.world.modifyBlock([3, 2, 1], (state) => state.with("facing", "west"), false)
+		scene.world.showSection([3, 2, 1], Direction.DOWN)
+		scene.idle(20)
+		scene.text(40, "Fuels can only be put in from side", [3.5, 2.5, 1.5])
+		scene.idle(60)
 
 		// 只能从底部取走产物
+		scene.world.setBlocks([2, 1, 1], "minecraft:hopper", false)
+		scene.world.showSection([2, 1, 1], Direction.WEST)
+		scene.idle(20)
+		scene.text(40, "Results can only be suck out from the bottom", [2.5, 1.5, 1.5])
+		scene.idle(60)
 
 		// 因此对于熔炉的自动化就需要将样板供应器的统一输出转为对两个面的分别输出
+		scene.world.hideSection([2, 1, 1, 3, 3, 1], Direction.UP)
+		scene.world.showSection([1, 1, 2, 4, 3, 2], Direction.DOWN)
+		scene.idle(20)
+		scene.text(80, "So the only 1 output from the Pattern Provider should be seperated into output in 2 directions", [1.5, 2.5, 2.5])
+		scene.idle(100)
 
 		// 这时候AE子网络就会非常有用
+		scene.text(40, "Where Sub-Network would be extremerly useful", [1.5, 2.5, 2.5])
+		scene.idle(60)
+		scene.addKeyframe()
 
 		// 样板供应器使用扳手设置为仅向上输出
+		scene.text(40, "Set the Pattern Provider to up direction with a wrench", [2.5, 1.5, 2.5])
+		scene.showControls(40, [2.5, 2, 2.5], "down")
+			.withItem("ae2:certus_quartz_wrench")
+			.rightClick()
+		scene.idle(60)
 
 		// 然后将子网的ME接口正对供应器的输出端
+		scene.text(40, "And place the ME Interface right onto the Pattern Provider", [2.5, 2, 2.5])
+		scene.idle(60)
 
-		// 使用石英线缆即可从主网获取能量
+		// 使用石英线缆从主网获取能量
+		scene.text(40, "Use a Quartz Fiber to gain energy from the Main Network", [3, 2.5, 2.5])
+		scene.idle(60)
 
 		// 使用存储总线即可将输入子网的物品立即输出到熔炉中
+		scene.rotateCameraY(90)
+		scene.idle(20)
+		scene.text(60, "Use a Storage Bus to input things from the main net into the furnace", [2, 2.5, 2.5])
+		scene.idle(80)
 
 		// 侧面的存储总线设置仅燃料可通过
+		scene.text(60, "The Storage Bus on the side set filter as fuels only", [2, 2.5, 2.5])
+		scene.showControls(40, [2, 2.5, 2.5], "left")
+			.withItem("minecraft:coal")
+		scene.idle(60)
 
 		// 顶部的存储总线则加入反相卡设置仅燃料不可通过
+		scene.text(60, "While the one on top set filter as no fuels with an Inverter Card", [1.5, 3, 2.5])
+		scene.showControls(40, [1.5, 3, 2.5], "left")
+			.withItem("minecraft:coal")
+		scene.showControls(40, [1.5, 3, 2.5], "right")
+			.withItem("ae2:inverter_card")
+		scene.idle(60)
 
 		// 最后使用漏斗将产物取回到样板供应器
+		scene.text(60, "And finally suck the result back into the Pattern Provider with a Hopper", [1.5, 1.5, 2.5])
+		scene.idle(60)
 
 	})
 })
