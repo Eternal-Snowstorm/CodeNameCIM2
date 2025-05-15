@@ -1,8 +1,6 @@
 Ponder.registry((event) => {
-	
 	event.create("ae2:condenser")
 		.scene("ae2:condenser", "Condenser", "ue_addons:ae2/condenser", (scene) => {
-
 			scene.showBasePlate()
 			scene.idle(20)
 
