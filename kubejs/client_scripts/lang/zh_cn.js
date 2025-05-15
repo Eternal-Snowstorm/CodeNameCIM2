@@ -27,7 +27,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("eletriced_source_emeraid", "电解源质")
 	addFluidLanguage("delta_unstable_solution", "Δ(Delta)型不稳定源质溶液")
 	addFluidLanguage("turbid_waste_liquid", "浑浊废液")
-	addFluidLanguage("platinum_solution", "铂")
+	addFluidLanguage("platinum_solution", "铂溶液")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")

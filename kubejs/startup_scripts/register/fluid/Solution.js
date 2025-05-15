@@ -72,5 +72,3 @@ addSolution("cacl2", 0xE0DDC3)
 
 addSolution("k2so4", 0xB8BDBD)
 addSolution("kcl", 0xB8BDBD)
-
-addSolution("platinum", 0xE1FFFF)

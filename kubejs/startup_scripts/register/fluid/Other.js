@@ -30,6 +30,7 @@ StartupEvents.registry("fluid", (event) => {
 	}
 
 	addColorFluid("eletriced_source_emeraid", 0X117458)
+	addColorFluid("platinum_solution", 0xE1FFFF)
 
 	addAloneFluid("blood")
 	addAloneFluid("delta_unstable_solution")
