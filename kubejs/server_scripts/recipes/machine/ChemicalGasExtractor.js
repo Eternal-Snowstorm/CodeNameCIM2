@@ -8,8 +8,8 @@ ServerEvents.recipes((event) => {
 			{
 				"type": "custommachinery:gas",
 				"mode": "output",
-				"chemical": "mekanism:antimatter",
-				"amount": 500
+				"chemical": "ue_addons:sulfide_gas_mixture",
+				"amount": 2
 			},
 			{
 				"type": "custommachinery:dimension",

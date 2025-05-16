@@ -38,6 +38,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addMachineLanguage("water_pump", "水泵")
 	addMachineLanguage("flash_disk_writer", "闪存盘写入器")
+	addMachineLanguage("chemical_gas_extractor", "化学气体抽取器")
 
 	addMBDMachineLanguage("proxy_part_block", "多方块机器部件方块")
 	addMBDMachineLanguage("accelerator_energy_input", "大型构件催生器能量输入口")
@@ -54,6 +55,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMechanismPartLanguage("engineering", "工程")
 	addMechanismPartLanguage("mekanism", "通用")
 	addMechanismPartLanguage("final", "终章")
+
+	addMekanismLanguage("sulfide_gas_mixture", "硫化物混合气")
 
 	addSolutionLanguage("feso4", "硫酸亚铁", "FeSO₄")
 	addSolutionLanguage("fecl2", "氯化亚铁", "FeCl₂")
@@ -283,6 +286,10 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addBlockLanguage(key, value) {
 		event.add(`block.${global.namespace}.${key}`, value)
+	}
+
+	function addMekanismLanguage(key, value) {
+		event.add(`gas.${global.namespace}.${key}`, value)
 	}
 
 	function addMachineLanguage(key, value) {

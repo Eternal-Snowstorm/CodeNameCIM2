@@ -19,7 +19,7 @@
 	},
 	"components": [
 		{
-			"type": "custommachinery:chemical",
+			"type": "custommachinery:gas",
 			"mode": "output",
 			"capacity": 100000,
 			"id": "output",
@@ -49,7 +49,7 @@
 			"y": 80
 		},
 		{
-			"type": "custommachinery:fluid",
+			"type": "custommachinery:gas",
 			"id": "output",
 			"x": 119,
 			"y": 30
@@ -74,7 +74,7 @@
 			"y": 80
 		},
 		{
-			"type": "custommachinery:fluid",
+			"type": "custommachinery:gas",
 			"id": "output",
 			"x": 119,
 			"y": 30
