@@ -14,7 +14,7 @@ Ponder.tags((event) => {
 
 	addPonderTag("other", "supplementaries:faucet", "Other", "supplementaries:faucet")
 
-	addPonderTag("tconstruct", "tconstruct:smeltery_controller", "TConstruct", [
+	addPonderTag("tconstruct", "tconstruct:smeltery_controller", "Tinkers' Construct", [
 		"tconstruct:seared_faucet",
 		"tconstruct:scorched_faucet",
 		"tconstruct:seared_melter",
