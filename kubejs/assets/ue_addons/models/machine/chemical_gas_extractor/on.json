@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"front": "ue_addons:block/machine/example/on",
+		"side": "ue_addons:block/machine/example/side",
+		"top": "ue_addons:block/machine/example/top"
+	}
+}
