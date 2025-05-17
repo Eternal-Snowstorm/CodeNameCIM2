@@ -19,7 +19,6 @@
 	}
 	pause_game: false
 	progression_mode: "linear"
-	show_lock_icons: true
 	title: "构件与革新"
 	version: 13
 }

@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wooden"
+	group: ""
+	id: "483ED71BA6E3A7E3"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "27CBCE900DBF7D34"
+		shape: "hexagon"
+		size: 2.0d
+		tasks: [{
+			id: "4D66E3FD678120CF"
+			item: "ue_addons:wooden_mechanism"
+			type: "item"
+		}]
+		x: 0.0d
+		y: -1.0d
+	}]
+	title: "wooden"
+}
