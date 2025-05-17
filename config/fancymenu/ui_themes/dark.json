@@ -68,10 +68,10 @@
     "hex": "#2B2B2BFF"
   },
   "edit_box_border_color_normal": {
-    "hex": "#5D6164FF"
+    "hex": "#D1C2D1FF"
   },
   "edit_box_border_color_focused": {
-    "hex": "#5D6164FF"
+    "hex": "#E3D3E3FF"
   },
   "list_entry_color_selected_hovered": {
     "hex": "#323232FF"
