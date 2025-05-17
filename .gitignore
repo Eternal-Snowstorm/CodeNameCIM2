@@ -35,6 +35,8 @@ schematics/uploaded/
 fancymenu_data
 saves/*/session.lock
 /schematics
+hs_err*
+fabric*
 
 # ResourcePacks
 /resourcepacks/*
@@ -55,3 +57,4 @@ saves/*/session.lock
 !/congig/drippyloadingscreen/
 !/config/fancymenu/
 !/config/ftbquests/
+
