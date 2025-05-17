@@ -44,7 +44,11 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeItemOutputRecipes = [
-		"pipez:filter_destination_tool"
+		"pipez:filter_destination_tool",
+		"create:schedule",
+		"create:track_signal",
+		"create:track_observer",
+		"create:controls"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({ output: item })
