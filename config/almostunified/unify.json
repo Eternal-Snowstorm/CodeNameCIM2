@@ -1,7 +1,6 @@
 {
 	"modPriorities": [
 		"minecraft",
-		"ad_astra",
 		"thermal",
 		"create",
 		"tconstruct",
@@ -10,6 +9,7 @@
 		"vintageimprovements",
 		"createaddition",
 		"createdeco",
+		"ad_astra",
 		"thermal_extra",
 		"ue_addons"
 	],
