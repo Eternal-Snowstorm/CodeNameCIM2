@@ -36,11 +36,11 @@ ServerEvents.recipes((event) => {
 		"type": "immersiveindustry:electrolyzer",
 		"fluid": {
 			"tag": "ue_addons:delta_unstable_solution",
-			"amount": 500
+			"amount": 1000
 		},
 		"result_fluid": {
 			"fluid": "ue_addons:turbid_waste_liquid",
-			"amount": 500
+			"amount": 1000
 		},
 		"input": {
 			"item": "ue_addons:compression_end_stone_dust_block"
@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
 			"count": 2
 		},
 		"large_only": true,
-		"time": 300
+		"time": 600
 	})
 
 	// 铂溶液
