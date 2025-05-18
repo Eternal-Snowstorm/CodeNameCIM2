@@ -65,6 +65,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["5CC8DC12E5D4EE34"]
 			id: "647F5A5319C8F1E5"
 			tasks: [{
 				id: "2A8070165362CF9A"
@@ -81,8 +82,8 @@
 				title: "tree"
 				type: "checkmark"
 			}]
-			x: -13.5d
-			y: -2.0d
+			x: -15.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["647F5A5319C8F1E5"]
@@ -93,6 +94,17 @@
 				type: "checkmark"
 			}]
 			x: -8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["23A0F4379BBCE11F"]
+			id: "5CC8DC12E5D4EE34"
+			tasks: [{
+				id: "1AD4EFD08D1DAA34"
+				title: "cut"
+				type: "checkmark"
+			}]
+			x: -12.5d
 			y: -1.0d
 		}
 	]
