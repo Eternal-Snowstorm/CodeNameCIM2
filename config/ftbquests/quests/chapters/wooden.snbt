@@ -6,95 +6,17 @@
 	id: "483ED71BA6E3A7E3"
 	order_index: 2
 	quest_links: [ ]
-	quests: [
-		{
-			dependencies: ["1B1FC345BDD1CABE"]
-			id: "27CBCE900DBF7D34"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "4D66E3FD678120CF"
-				item: "ue_addons:wooden_mechanism"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -1.0d
-		}
-		{
-			icon: "ue_addons:incomplete_wooden_mechanism"
-			id: "4BFB33A31A2DAB00"
-			tasks: [{
-				id: "292EBAC567C8C83B"
-				title: " "
-				type: "checkmark"
-			}]
-			x: 2.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["413A09943CAFD256"]
-			id: "112ADB6868B6D5D1"
-			tasks: [{
-				id: "67924967920D0E41"
-				item: "minecraft:stick"
-				type: "item"
-			}]
-			x: -6.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B100192F217C9A2"]
-			id: "1B1FC345BDD1CABE"
-			tasks: [{
-				id: "5DC6E2A3FBC27A05"
-				item: "ue_addons:basic_mechanism_part"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["112ADB6868B6D5D1"]
-			id: "2B100192F217C9A2"
-			tasks: [{
-				id: "3D97BBA0A978E514"
-				title: "cut"
-				type: "checkmark"
-			}]
-			x: -4.5d
-			y: 1.0d
-		}
-		{
-			id: "647F5A5319C8F1E5"
-			tasks: [{
-				id: "2A8070165362CF9A"
-				item: "minecraft:stripped_oak_log"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -2.0d
-		}
-		{
-			id: "23A0F4379BBCE11F"
-			tasks: [{
-				id: "13708DE1D8A766C0"
-				title: "tree"
-				type: "checkmark"
-			}]
-			x: -13.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["647F5A5319C8F1E5"]
-			id: "413A09943CAFD256"
-			tasks: [{
-				id: "1B87D63DF8DC9BCA"
-				title: "pRess"
-				type: "checkmark"
-			}]
-			x: -8.5d
-			y: -1.0d
-		}
-	]
+	quests: [{
+		id: "27CBCE900DBF7D34"
+		shape: "hexagon"
+		size: 2.0d
+		tasks: [{
+			id: "4D66E3FD678120CF"
+			item: "ue_addons:wooden_mechanism"
+			type: "item"
+		}]
+		x: 0.0d
+		y: -1.0d
+	}]
 	title: "wooden"
 }

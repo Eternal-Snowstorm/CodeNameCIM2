@@ -12,7 +12,15 @@ Ponder.tags((event) => {
 		"minecraft:water_bucket"
 	])
 
-	addPonderTag("other", "supplementaries:faucet", "Other", "supplementaries:faucet")
+	addPonderTag("other", "supplementaries:faucet", "Other", [
+		"supplementaries:faucet",
+		"portality:controller",
+		"portality:frame",
+		"portality:module_items",
+		"portality:module_fluids",
+		"portality:module_energy",
+		"portality:module_interdimensional"
+	])
 
 	addPonderTag("tconstruct", "tconstruct:smeltery_controller", "Tinkers' Construct", [
 		"tconstruct:seared_faucet",
