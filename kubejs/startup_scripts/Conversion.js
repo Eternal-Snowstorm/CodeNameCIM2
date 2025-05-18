@@ -59,6 +59,7 @@ StartupEvents.postInit((event) => {
 	addConversionRecipes("minecraft:redstone_ore", "vintageimprovements:redstone_module")
 	addConversionRecipes("minecraft:deepslate_redstone_ore", "vintageimprovements:redstone_module")
 
+	
 	addConversionRecipes("minecraft:andesite", "ue_addons:stone_mechanism")
 	addConversionRecipes("minecraft:diorite", "ue_addons:stone_mechanism")
 	addConversionRecipes("minecraft:granite", "ue_addons:stone_mechanism")

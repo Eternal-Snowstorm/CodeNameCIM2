@@ -29,6 +29,16 @@ ServerEvents.recipes((event) => {
 		Fluid.of("minecraft:lava", 250)
 	]).heated()
 
+	// 灵魂沙碎末
+	vintageimprovements.vibrating([
+		Item.of("thermal_extra:soul_sand_dust").withChance(0.33),
+		Item.of("minecraft:gold_nugget").withChance(0.15),
+		Item.of("thermal:netherite_nugget").withChance(0.012),
+		Item.of("thermal:quartz_dust").withChance(0.23)
+	], [
+		"#minecraft:soul_fire_base_blocks"
+	]).processingTime(150)
+
 	// 传送带
 	kubejs.shaped("4x create:belt_connector", [
 		"AAA",
