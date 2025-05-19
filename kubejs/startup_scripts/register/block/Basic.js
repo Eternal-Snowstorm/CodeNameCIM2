@@ -30,6 +30,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.miningLevel["iron"])
 		.requiresTool(true)
 
+	// 压缩末地粉块
 	event.create(`${global.namespace}:compression_end_stone_dust_block`)
 		.soundType(SoundType.SAND)
 		.hardness(6)
