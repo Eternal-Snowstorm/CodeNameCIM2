@@ -39,12 +39,12 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:gems/charged_amethyst")
 
 	// 铂系列
-	event.create(`${global.namespace}:raw_aluminum_particles`)
-		.texture(`${global.namespace}:item/material/aluminum/raw_particles`)
+	event.create(`${global.namespace}:raw_platinum_particles`)
+		.texture(`${global.namespace}:item/material/platinum/raw_particles`)
 
-	event.create(`${global.namespace}:aluminum_crystal_nucleus`)
-		.texture(`${global.namespace}:item/material/aluminum/crystal_nucleus`)
+	event.create(`${global.namespace}:platinum_crystal_nucleus`)
+		.texture(`${global.namespace}:item/material/platinum/crystal_nucleus`)
 
-	event.create(`${global.namespace}:aluminum_shard`)
-		.texture(`${global.namespace}:item/material/aluminum/shard`)
+	event.create(`${global.namespace}:platinum_shard`)
+		.texture(`${global.namespace}:item/material/platinum/shard`)
 })

@@ -12,9 +12,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("dense_sturdy_sheet", "致密坚固板")
 	addItemLanguage("charged_amethyst", "充能紫水晶")
 	addItemLanguage("plasma_ingot", "等离子锭")
-	addItemLanguage("raw_aluminum_particles", "粗制铂微粒")
-	addItemLanguage("aluminum_crystal_nucleus", "铂晶核")
-	addItemLanguage("aluminum_shard", "铂碎片")
+	addItemLanguage("raw_platinum_particles", "粗制铂微粒")
+	addItemLanguage("platinum_crystal_nucleus", "铂晶核")
+	addItemLanguage("platinum_shard", "铂碎片")
 
 	addItemLanguage("blockstone_source_alpha", "Α(Alpha)型黑石源质")
 	addItemLanguage("blockstone_source_beta", "Β(Beta)型黑石源质")
