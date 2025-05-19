@@ -1,7 +1,7 @@
-const NUCLEAR_MECHANISM_ID = 'ue_addons:nuclear_mechanism'
-
-ItemEvents.rightClicked(NUCLEAR_MECHANISM_ID, e => {
-    if(e.level.isClientSide()) return;
-    e.player.mergeNbt({ForgeCaps:{'mekanism:radiation':{radiation:0}}})
-    e.player.swing()
+ItemEvents.rightClicked("ue_addons:nuclear_mechanism", (event) => {
+	if (event.level.isClientSide()) {
+		return
+	}
+	event.player.mergeNbt({ ForgeCaps: { "mekanism:radiation": { radiation: 0 } } })
+	event.player.swing()
 })

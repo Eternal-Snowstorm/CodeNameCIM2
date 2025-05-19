@@ -23,7 +23,8 @@ ItemEvents.rightClicked((event) => {
 			let R = Math.random()
 			let G = Math.random()
 			let B = Math.random()
-			server.runCommandSilent(`particle minecraft:dust ${R} ${G} ${B} 1 ${x} ${y + 1.5} ${z} 0.5 0.5 0.5 0.1 30`)
+			let command = `particle minecraft:dust ${R} ${G} ${B} 1 ${x} ${y + 1.5} ${z} 0.5 0.5 0.5 0.1 30`
+			server.runCommandSilent(command)
 			if (!player.isCreative()) {
 				item.shrink(1)
 			}
