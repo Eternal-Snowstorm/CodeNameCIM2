@@ -63,7 +63,7 @@ Ponder.registry((event) => {
 			nbt.tank = {
 				capacity: 0
 			}
-		});
+		})
 		scene.world.modifyBlockEntityNBT([2, 1, 2], (nbt) => {
 			nbt.Items = [{
 				Count: 1,
