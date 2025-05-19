@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
 			"item": "ue_addons:compression_end_stone_dust_block"
 		},
 		"result": {
-			"item": "ue_addons:raw_aluminum_particles",
+			"item": "ue_addons:raw_platinum_particles",
 			"count": 2
 		},
 		"large_only": true,
@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
 		"inputs": [
 			{
 				"base_ingredient": {
-					"item": "ue_addons:aluminum_crystal_nucleus"
+					"item": "ue_addons:platinum_crystal_nucleus"
 				},
 				"count": 4
 			},
