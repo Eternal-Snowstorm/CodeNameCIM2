@@ -114,7 +114,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 	addPaintingLanguage("bug_is_right", "有Bug是对的", "古镇天")
 	addPaintingLanguage("it_must_be_optifine", "一定是OptiFine干的", "XeKr")
-	addPaintingLanguage("createdeco", "随机构件", "随机构件")
+	addPaintingLanguage("random_mechanism", "随机构件", "随机构件")
 
 	addAloneLanguage(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
 	addAloneLanguage(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
