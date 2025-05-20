@@ -40,7 +40,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2B100192F217C9A2"]
@@ -72,8 +72,8 @@
 				item: "minecraft:stripped_oak_log"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -2.0d
+			x: -10.0d
+			y: 2.0d
 		}
 		{
 			id: "23A0F4379BBCE11F"
@@ -94,7 +94,7 @@
 				type: "checkmark"
 			}]
 			x: -8.5d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["23A0F4379BBCE11F"]
@@ -105,7 +105,7 @@
 				type: "checkmark"
 			}]
 			x: -12.5d
-			y: -1.0d
+			y: 0.5d
 		}
 	]
 	title: "wooden"

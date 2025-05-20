@@ -1,0 +1,23 @@
+{
+	"language": "Chinese",
+	"language.code": "zh_cn",
+	"language.region": "China",
+	"block.engineered_schematics.schematic_table_block": "工程制图台",
+	"desc.engineered_schematics.schematic_table": "结构蓝图工作台",
+	"itemGroup.engineered_schematics": "工程蓝图",
+	"engineered_schematics.gui.schematic_table.mirror": "镜像模式",
+	"item.engineered_schematics.multiblock_schematic": "空白蓝图",
+	"item.engineered_schematics.multiblock_schematic.specific": "%s 结构图",
+	"item.engineered_schematics.multiblock_schematic.specific.mirrored": "%s 镜像蓝图",
+	"desc.engineered_schematics.info.schematic.size": "规模：%s",
+	"desc.engineered_schematics.info.schematic.block_info": "按住 [%s] 显示建材清单",
+	"desc.engineered_schematics.info.schematic.no_multiblock": "空白蓝图",
+	"desc.engineered_schematics.info.schematic.moved": "蓝图位移更新",
+	"desc.engineered_schematics.info.schematic.rotated": "蓝图方位校准",
+	"desc.engineered_schematics.info.schematic.placed": "(创造模式)蓝图实体化",
+	"desc.engineered_schematics.info.schematic.tier": "需配合 %s 搭建",
+	"desc.engineered_schematics.info.schematic.ie_tier": "工程师之锤",
+	"item.engineered_schematics.multiblock_schematic.formed": "结构就绪",
+	"item.engineered_schematics.multiblock_schematic.error": "架构冲突",
+	"manual.engineered_schematics.main": "结构工程指南"
+}

@@ -80,4 +80,30 @@ ServerEvents.recipes((event) => {
 			"fluid": "ue_addons:platinum_solution"
 		}
 	})
+
+	// 熔融铂
+	event.custom({
+		"type": "immersiveindustry:chemical",
+		"input_fluids": [
+			{
+				"tag": "forge:redstone_acid",
+				"amount": 500
+			},
+			{
+				"tag": "ue_addons:platinum_solution",
+				"amount": 500
+			},
+			{
+				"tag": "ue_addons:delta_unstable_solution",
+				"amount": 500
+			}
+		],
+		"result_fluids": [
+			{
+				"fluid": "tconstruct:molten_platinum",
+				"amount": 1500
+			}
+		],
+		"time": 300
+	})
 })

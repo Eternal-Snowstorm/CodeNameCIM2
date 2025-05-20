@@ -8,5 +8,6 @@ JEIEvents.information((event) => {
 	addJEIInfo("ad_astra:cryo_fuel_bucket")
 	addJEIInfo("ad_astra:ice_shard")
 	addJEIInfo("ue_addons:bucket")
-	// addJEIInfo("#ad_astra:power_consumption_machines")
+	addJEIInfo("#ad_astra:power_consumption_machines")
+	addJEIInfo("engineered_schematics:multiblock_schematic")
 })
