@@ -146,4 +146,41 @@ ServerEvents.recipes((event) => {
 		input: "#forge:ingots",
 		output: "#forge:rods"
 	})
+	const DeleteRecipes = [
+        "thermal:fluid_cell_frame",
+        "thermal:machine_frame",
+        "thermal:device_potion_diffuser",
+        "thermal:device_nullifier",
+        "thermal:device_xp_condenser",
+        "thermal:device_collector",
+        "thermal:redstone_servo",
+        "thermal:device_composter",
+        "thermal:device_fisher",
+        "thermal:rf_coil",
+        "thermal:dynamo_stirling",
+        "thermal:dynamo_compression",
+        "thermal:dynamo_disenchantment",
+        "thermal:dynamo_magmatic",
+        "thermal:dynamo_gourmand",
+        "thermal:machine_crafter",
+        "thermal:machine_bottler",
+        "thermal:machine_crucible",
+        "thermal:machine_press",
+        "thermal:machine_centrifuge",
+        "thermal:machine_furnace",
+        "thermal:machine_pyrolyzer",
+        "thermal:machine_pulverizer",
+        "thermal:machine_sawmill",
+		"thermal:dynamo_numismatic",
+		"thermal:dynamo_lapidary",
+		"thermal_extra:dynamo_frost",
+		"immersiveengineering:dynamo",
+		"immersiveengineering:thermoelectric_generator",
+		"immersiveengineering:generator",
+		"portality:generator"
+    ]
+    for (let num = 0; num < 31; num++) {
+        let WillDelete = DeleteRecipes[num]
+        event.remove({output:WillDelete})
+    }
 })

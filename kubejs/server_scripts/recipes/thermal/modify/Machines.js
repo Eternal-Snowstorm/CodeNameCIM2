@@ -139,8 +139,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "thermal:rf_coil",
 		B: "#forge:stone",
-		C: "ue_addons:stone_mechanism",
-		D: "minecraft:flint",
+		C: "createaddition:capacitor",
+		D: "ue_addons:stone_mechanism",
 		M: "ue_addons:thermal_mechanism"
 	})
 
@@ -175,8 +175,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "thermal:rf_coil",
 		B: "#forge:ingots/invar",
-		C: "ue_addons:pigiron_mechanism",
-		D: "minecraft:flint",
+		C: "createaddition:capacitor",
+		D: "ue_addons:pigiron_mechanism",
 		M: "ue_addons:thermal_mechanism"
 	})
 
@@ -272,7 +272,25 @@ ServerEvents.recipes((event) => {
 	],{
 		A: THERMAL_MECH,
 		B: FRAME,
-		C: 'create:blaze_burner'
+		C: "create:blaze_burner"
 	})
+
+	// 
+	create.item_application("thermal_extra:dynamo_frost", [
+		"thermal:dynamo_stirling",
+		"ue_addons:cobalt_mechanism"
+	])
+
+	// 
+	create.item_application("thermal:dynamo_numismatic", [
+		"thermal:dynamo_stirling",
+		"ue_addons:light_engineering_mechanism"
+	])
+
+	// 
+	create.item_application("thermal:dynamo_lapidary", [
+		"thermal:dynamo_stirling",
+		"ue_addons:heavy_engineering_mechanism"
+	])
 
 })
