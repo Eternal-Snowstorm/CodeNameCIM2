@@ -30,6 +30,8 @@ ServerEvents.recipes((event) => {
 		"coso4",
 		"oscl3",
 		"os2so43",
+		"ptcl4",
+		"ptso42",
 		"na2so4",
 		"nacl",
 		"caso4",

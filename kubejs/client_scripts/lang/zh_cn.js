@@ -86,6 +86,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addSolutionLanguage("coso4", "硫酸钴", "CoSO₄")
 	addSolutionLanguage("oscl3", "氯化锇", "OsCl₃")
 	addSolutionLanguage("os2so43", "硫酸锇", "Os₂(SO₄)₃")
+	addSolutionLanguage("ptcl4", "氯化铂", "PtCl₄")
+	addSolutionLanguage("ptso42", "硫酸铂", "Pt(SO₄)₂")
 	addSolutionLanguage("kcl", "氯化钾", "KCl")
 	addSolutionLanguage("k2so4", "硫酸钾", "K₂SO₄")
 	addSolutionLanguage("cacl2", "氯化钙", "CaCl₂")
