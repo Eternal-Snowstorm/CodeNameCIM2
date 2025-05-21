@@ -115,10 +115,20 @@ ItemEvents.tooltip((event) => {
 	event.addAdvanced("ue_addons:geological_hammer",
 		(item, advanced, text) => {
 			if (global.isDeveloper) {
-				text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer1`))
-				text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.developer2`))
+				text.add(Component.translate("tooltip.ue_addons.geographycal_hammer.developer1"))
+				text.add(Component.translate("tooltip.ue_addons.geographycal_hammer.developer2"))
 			} else {
-				text.add(Component.translate(`tooltip.ue_addons.geographycal_hammer.not_developer`))
+				text.add(Component.translate("tooltip.ue_addons.geographycal_hammer.not_developer"))
+			}
+		})
+
+	// 初始套件的Tooltip
+	event.addAdvanced("ue_addons:initial_item_kit",
+		(item, advanced, text) => {
+			if (event.shift) {
+				text.add(Component.translate("tooltip.ue_addons.initial_item_kit.shift"))
+			} else {
+				text.add(Component.translate("tooltip.ue_addons.initial_item_kit.tip"))
 			}
 		})
 })

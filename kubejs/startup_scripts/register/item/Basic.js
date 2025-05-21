@@ -38,6 +38,10 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:gems")
 		.tag("forge:gems/charged_amethyst")
 
+	// 初始套件
+	event.create(`${global.namespace}:initial_item_kit`)
+		.glow(true)
+
 	// 铂系列
 	event.create(`${global.namespace}:raw_platinum_particles`)
 		.texture(`${global.namespace}:item/material/platinum/raw_particles`)

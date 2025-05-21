@@ -15,6 +15,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("raw_platinum_particles", "粗制铂微粒")
 	addItemLanguage("platinum_crystal_nucleus", "铂晶核")
 	addItemLanguage("platinum_shard", "铂碎片")
+	addItemLanguage("initial_item_kit", "初始套件箱")
 
 	addItemLanguage("blockstone_source_alpha", "Α(Alpha)型黑石源质")
 	addItemLanguage("blockstone_source_beta", "Β(Beta)型黑石源质")
@@ -132,6 +133,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguage(`message.${global.namespace}.checkCheating`, "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?")
 	addAloneLanguage(`message.${global.namespace}.checkMultipleCheating`, "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?")
 	addAloneLanguage(`sea.${global.namespace}.search`, "§b正在使用对海搜索!")
+	addAloneLanguage(`tooltip.${global.namespace}.initial_item_kit.tip`, "按住Shift查看详情")
+	addAloneLanguage(`tooltip.${global.namespace}.initial_item_kit.shift`, "潜行 + 右键打开, 将会获得以下物品:\n§b扳手\n§b工程师护目镜\n§b强力胶")
+	addAloneLanguage(`message.${global.namespace}.initial_item_kit`, "欢迎游玩整合包! 物品已发放!")
 
 	addCommonTooltipLanguage("ue_addons:water_pump", "")
 	addCommonTooltipLanguage("ue_addons:pigiron_mechanism", "可无限次食用")
