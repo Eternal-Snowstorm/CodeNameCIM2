@@ -56,10 +56,4 @@ ServerEvents.recipes((event) => {
 		"create:andesite_alloy",
 		Fluid.of("ue_addons:molten_andesite_alloy", 90)
 	).cast("tconstruct:ingot_sand_cast").cooling_time(40).cast_consumed(true)
-
-	// 黏血球
-	tconstruct.casting_table(
-		"ue_addons:blood_slime_ball",
-		Fluid.of("ue_addons:blood", 250)
-	).cooling_time(20)
 })
