@@ -23,9 +23,10 @@
 ## 第三章 开发规范
 
 **第四条** 命名规则:
-1. 类名采用大驼峰式(**PascalCase**), 例:`RecipeSchema`
-2. 函数/变量采用小驼峰式(**camelCase**), 例:`getMaterialList`
+1. 类名采用大驼峰式(**PascalCase**), 例: `RecipeSchema`
+2. 函数/变量采用小驼峰式(**camelCase**), 例: `getMaterialList`
 3. 常量采用全大写蛇形命名(**SNAKE_CASE**)
+4. 不允许使用`var`来声明变量
 
 **第五条** 脚本开发规范:
 1. 配方脚本必须进行结构解构

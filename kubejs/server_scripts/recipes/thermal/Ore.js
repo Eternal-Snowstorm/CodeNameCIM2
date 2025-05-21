@@ -5,8 +5,9 @@ ServerEvents.recipes((event) => {
 		"ue_addons:blockstone_source_alpha",
 		"ue_addons:blockstone_source_beta",
 		"ue_addons:blockstone_source_gamma"
-	], "minecraft:blackstone")
-		.superheated()
+	], [
+		"minecraft:blackstone"
+	]).superheated()
 
 	create.mixing([
 		"ue_addons:enchanted_mechanism",

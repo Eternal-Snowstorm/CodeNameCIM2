@@ -126,10 +126,10 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 
-//	create.mixing("thermal:rf_coil"), [
-//		"#forge:rods/gold",
-//		"minecraft:redstone"
-//	]
+	//	create.mixing("thermal:rf_coil"), [
+	//		"#forge:rods/gold",
+	//		"minecraft:redstone"
+	//	]
 
 	// 
 	kubejs.shaped("thermal:dynamo_stirling", [
@@ -161,7 +161,7 @@ ServerEvents.recipes((event) => {
 		" A ",
 		" B ",
 		" C "
-	],{
+	], {
 		A: "create:mechanical_saw",
 		B: FRAME,
 		C: THERMAL_MECH
@@ -185,7 +185,7 @@ ServerEvents.recipes((event) => {
 		" A ",
 		" B ",
 		" M "
-	],{
+	], {
 		A: "minecraft:crafting_table",
 		B: FRAME,
 		M: "ue_addons:thermal_mechanism"
@@ -196,7 +196,7 @@ ServerEvents.recipes((event) => {
 		" B ",
 		" A ",
 		" C "
-	],{
+	], {
 		A: FRAME,
 		B: "create:spout",
 		C: THERMAL_MECH
@@ -207,7 +207,7 @@ ServerEvents.recipes((event) => {
 		" B ",
 		" A ",
 		" D "
-	],{
+	], {
 		A: FRAME,
 		B: "create:mechanical_press",
 		D: THERMAL_MECH
@@ -218,7 +218,7 @@ ServerEvents.recipes((event) => {
 		" B ",
 		" C ",
 		" M "
-	],{
+	], {
 		M: THERMAL_MECH,
 		B: "vintageimprovements:centrifuge",
 		C: FRAME
@@ -229,7 +229,7 @@ ServerEvents.recipes((event) => {
 		" C ",
 		" B ",
 		" A "
-	],{
+	], {
 		A: THERMAL_MECH,
 		B: FRAME,
 		C: "minecraft:furnace"
@@ -258,7 +258,7 @@ ServerEvents.recipes((event) => {
 		" C ",
 		" B ",
 		" A "
-	],{
+	], {
 		A: THERMAL_MECH,
 		B: FRAME,
 		C: "ue_addons:nether_mechanism"
@@ -269,7 +269,7 @@ ServerEvents.recipes((event) => {
 		" C ",
 		" B ",
 		" A "
-	],{
+	], {
 		A: THERMAL_MECH,
 		B: FRAME,
 		C: "create:blaze_burner"
@@ -292,5 +292,4 @@ ServerEvents.recipes((event) => {
 		"thermal:dynamo_stirling",
 		"ue_addons:heavy_engineering_mechanism"
 	])
-
 })
