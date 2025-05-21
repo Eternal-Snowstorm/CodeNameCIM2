@@ -35,7 +35,9 @@ ServerEvents.recipes((event) => {
 		"caso4",
 		"cacl2",
 		"k2so4",
-		"kcl"
+		"kcl",
+		"ptcl4",
+		"ptso42"
 	]
 	solutionRecipes.forEach((name) => {
 		create.mixing(Fluid.of(`ue_addons:${name}_solution`, 500), [

@@ -92,6 +92,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addSolutionLanguage("caso4", "硫酸钙", "CaSO₄")
 	addSolutionLanguage("nacl", "氯化钠", "NaCl")
 	addSolutionLanguage("na2so4", "硫酸钠", "Na₂SO₄")
+	addSolutionLanguage("nacl", "氯化铂", "PtCl₄")
+	addSolutionLanguage("na2so4", "硫酸铂", "Pt(SO₄)₂")
 
 	addFluidLanguage("molten_andesite_alloy", "熔融安山合金")
 	addFluidLanguage("blood", "血液")

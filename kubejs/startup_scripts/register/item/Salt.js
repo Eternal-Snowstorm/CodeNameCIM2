@@ -151,4 +151,13 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/salt/kcl`)
 		.tag("forge:chem_salts/potassium")
 		.tag("forge:chem_salts")
+
+	event.create(`${global.namespace}:ptcl4`)
+		.texture(`${global.namespace}:item/material/salt/ptcl4`)
+		.tag("forge:chem_salts/platinum")
+		.tag("forge:chem_salts")
+	event.create(`${global.namespace}:ptso42`)
+		.texture(`${global.namespace}:item/material/salt/ptso42`)
+		.tag("forge:chem_salts/platinum")
+		.tag("forge:chem_salts")
 })

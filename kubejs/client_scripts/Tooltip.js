@@ -59,6 +59,8 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("ue_addons:cacl2")
 	addCommonTooltip("ue_addons:k2so4")
 	addCommonTooltip("ue_addons:kcl")
+	addCommonTooltip("ue_addons:ptcl4")
+	addCommonTooltip("ue_addons:ptso42")
 
 	addCommonTooltip("ue_addons:fecl2_solution_bucket")
 	addCommonTooltip("ue_addons:feso4_solution_bucket")
