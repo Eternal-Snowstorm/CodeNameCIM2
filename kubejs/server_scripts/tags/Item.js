@@ -1,3 +1,16 @@
+let crushedMaterialGroup = [
+	"iron",
+	"gold",
+	"copper",
+	"zinc",
+	"osmium",
+	"silver",
+	"tin",
+	"lead",
+	"aluminum",
+	"uranium",
+	"nickel"
+]
 ServerEvents.tags("item", (event) => {
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
@@ -118,4 +131,9 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:rods")
 		.add("immersiveengineering:stick_steel")
 		.add("immersiveengineering:stick_aluminum")
+
+	crushedMaterialGroup.forEach((material)=>{
+		event.get(`create:crushed_raw_materials/${material}`)
+			.add(`create:crushed_raw_${material}`)
+	})
 })

@@ -1,4 +1,5 @@
 let ores = []
+let pickaxe = global.toolType["pickaxe"]
 
 /**
  * 函数封装
@@ -24,6 +25,10 @@ function addOreBlock(name, level, hardness) {
 		},
 		nether: function () {
 			this.types.push("nether")
+			return this
+		},
+		end: function() {
+			this.types.push("end")
 			return this
 		},
 		moon: function () {
@@ -52,7 +57,6 @@ function addOreBlock(name, level, hardness) {
 	return ore
 }
 StartupEvents.registry("block", (event) => {
-	let pickaxe = global.toolType["pickaxe"]
 	ores.forEach((ore) => {
 		ore.types.forEach((type) => {
 			if (type !== "stone" && type !== "deepslate") {
@@ -104,3 +108,15 @@ addOreBlock("quartz", "iron", 3)
 // 钴
 addOreBlock("cobalt", "iron", 10)
 	.moon()
+
+// 铬
+addOreBlock("chromium", "iron", 5)
+	.end()
+
+// 铂
+addOreBlock("platinum", "iron", 8)
+	.moon()
+
+// 钒
+addOreBlock("vanadium", "iron", 5)
+	.nether()
