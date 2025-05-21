@@ -64,6 +64,9 @@ addSolution("coso4", 0xFFFFFF)
 addSolution("oscl3", 0xFF74F3)
 addSolution("os2so43", 0x001AE3)
 
+addSolution("ptcl4", 0xa81c07)
+addSolution("ptso42", 0xFFFFD0)
+
 addSolution("na2so4", 0xD7DDDD)
 addSolution("nacl", 0xDADEDF)
 
