@@ -102,6 +102,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addSolutionLanguage("nacl", "氯化钠", "NaCl")
 	addSolutionLanguage("na2so4", "硫酸钠", "Na₂SO₄")
 
+	addOreNodeLanguaue("uranium", "铀")
+
 	addFluidLanguage("molten_andesite_alloy", "熔融安山合金")
 	addFluidLanguage("blood", "血液")
 
@@ -140,7 +142,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguage(`tooltip.${global.namespace}.initial_item_kit.shift`, "潜行 + 右键打开, 将会获得以下物品:\n§b扳手\n§b工程师护目镜\n§b强力胶")
 	addAloneLanguage(`message.${global.namespace}.initial_item_kit`, "欢迎游玩整合包! 物品已发放!")
 
-	addCommonTooltipLanguage("cmi:water_pump", "")
 	addCommonTooltipLanguage("cmi:pigiron_mechanism", "可无限次食用")
 	addCommonTooltipLanguage("cmi:acceleratable", "§b按住Shift查看构件之力催生器用途")
 	addCommonTooltipLanguage("cmi:stone_mechanism", "§c手持右键圆石可将其转换为石头")
@@ -158,6 +159,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("cmi:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("cmi:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 	addCommonTooltipLanguage("cmi:charged_amethyst", "拿到耳边能听到它一直在发出嗡嗡嗡的声音")
+	addCommonTooltipLanguage("#minecraft:pickaxes", "右键可破坏矿物节点")
 
 	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产才能确保需求量自由")
 	addJEIInfoLanguage("cookingforblockheads:sink", `"去用我的后辈多方块水泵吧"水槽如是说道`)
@@ -394,5 +396,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`tooltip.${global.namespace}.${key}_solution_bucket`, tooltip)
 		event.add(`block.${global.namespace}.${key}_solution`, `${value}溶液`)
 		event.add(`fluid.${global.namespace}.${key}_solution`, `${value}溶液`)
+	}
+
+	function addOreNodeLanguaue(key, value) {
+		event.add(`block.${global.namespace}.${key}_ore_node`, `${value}矿物节点`)
 	}
 })

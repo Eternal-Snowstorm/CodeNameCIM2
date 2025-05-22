@@ -96,6 +96,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:cacl2_solution_bucket")
 	addCommonTooltip("cmi:k2so4_solution_bucket")
 	addCommonTooltip("cmi:kcl_solution_bucket")
+	addCommonTooltip("#minecraft:pickaxes")
 
 	function addCommonTooltip(item) {
 		event.add(item, Component.translate(`tooltip.${item}`.replace(":", ".")))

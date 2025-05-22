@@ -11,6 +11,12 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	event.get("deepdrilling:ore_nodes")
+		.add("deepdrilling:crimsite_node")
+		.add("deepdrilling:asurine_node")
+		.add("deepdrilling:ochrum_node")
+		.add("deepdrilling:veridium_node")
+
 	event.get("ad_astra:power_consumption_machines")
 		.add("ad_astra:oxygen_distributor")
 		.add("ad_astra:gravity_normalizer")
