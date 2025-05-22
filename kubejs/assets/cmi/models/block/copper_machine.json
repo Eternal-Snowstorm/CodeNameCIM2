@@ -1,0 +1,9 @@
+{
+	"parent": "cmi:custom/cm",
+	"textures": {
+		"all": "cmi:block/machine/ue/copper_machine",
+		"particle": "create:block/machine/ue/copper_casing",
+		"1": "cmi:block/machine/ue/copper_machine"
+	},
+	"render_type": "cutout"
+}

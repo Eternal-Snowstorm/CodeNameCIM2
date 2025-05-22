@@ -6,7 +6,7 @@ Ponder.registry((event) => {
 		"portality:module_fluids",
 		"portality:module_energy",
 		"portality:module_interdimensional"
-	]).scene("ue_addons:portal_controller", "Setting Up a Portal", "ue_addons:other/portal", (scene) => {
+	]).scene("cmi:portal_controller", "Setting Up a Portal", "cmi:other/portal", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 

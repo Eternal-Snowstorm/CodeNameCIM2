@@ -40,14 +40,14 @@ ServerEvents.recipes((event) => {
 		"kcl"
 	]
 	solutionRecipes.forEach((name) => {
-		create.mixing(Fluid.of(`ue_addons:${name}_solution`, 500), [
-			`ue_addons:${name}`,
+		create.mixing(Fluid.of(`cmi:${name}_solution`, 500), [
+			`cmi:${name}`,
 			Fluid.of("minecraft:water", 500)
 		])
 
 		tconstruct.casting_table(
-			`ue_addons:${name}`,
-			Fluid.of(`ue_addons:${name}_solution`, 500)
+			`cmi:${name}`,
+			Fluid.of(`cmi:${name}_solution`, 500)
 		).cooling_time(20)
 	})
 })

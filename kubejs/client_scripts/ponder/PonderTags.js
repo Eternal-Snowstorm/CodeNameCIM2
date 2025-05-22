@@ -6,9 +6,9 @@ Ponder.tags((event) => {
 		event.createTag(`${global.namespace}:${tag}`, icon, name, index, ITEMS)
 	}
 
-	addPonderTag("ponder", "ue_addons:creative_mechanism", "Modpack", [
-		"ue_addons:the_accelerator_of_mechanism_power",
-		"ue_addons:water_pump",
+	addPonderTag("ponder", "cmi:creative_mechanism", "Modpack", [
+		"cmi:the_accelerator_of_mechanism_power",
+		"cmi:water_pump",
 		"minecraft:water_bucket"
 	])
 

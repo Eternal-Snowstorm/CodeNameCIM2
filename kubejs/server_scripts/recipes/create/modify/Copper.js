@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let mech = "ue_addons:copper_mechanism"
+	let mech = "cmi:copper_mechanism"
 	let casing = "create:copper_casing"
 
 	//祛魔池

@@ -2,7 +2,7 @@ EntityEvents.spawned("minecraft:lightning_bolt", (event) => {
 	let lightning = event.entity
 	let level = event.level
 
-	addLightningCraft("ue_addons:bucket", "minecraft:bucket")
+	addLightningCraft("cmi:bucket", "minecraft:bucket")
 
 	/**
 	 * 函数封装

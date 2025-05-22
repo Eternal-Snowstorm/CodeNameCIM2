@@ -4,7 +4,7 @@ Ponder.registry((event) => {
 		"tconstruct:seared_fuel_tank",
 		"tconstruct:seared_drain",
 		"tconstruct:seared_bricks"
-	]).scene("ue_addons:smeltery", "Smeltery", "ue_addons:tconstruct/smeltery", (scene) => {
+	]).scene("cmi:smeltery", "Smeltery", "cmi:tconstruct/smeltery", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 		scene.scaleSceneView(0.7)

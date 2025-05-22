@@ -1,4 +1,4 @@
-ItemEvents.rightClicked("ue_addons:nuclear_mechanism", (event) => {
+ItemEvents.rightClicked("cmi:nuclear_mechanism", (event) => {
 	if (event.level.isClientSide()) {
 		return
 	}

@@ -9,37 +9,37 @@ ServerEvents.recipes((event) => {
 				{
 					"type": "custommachinery:item",
 					"mode": "input",
-					"item": `ue_addons:${material}_mechanism`,
+					"item": `cmi:${material}_mechanism`,
 					"amount": 64
 				},
 				{
 					"type": "custommachinery:item",
 					"mode": "input",
-					"item": `ue_addons:${material}_mechanism`,
+					"item": `cmi:${material}_mechanism`,
 					"amount": 64
 				},
 				{
 					"type": "custommachinery:item",
 					"mode": "input",
-					"item": `ue_addons:${material}_mechanism`,
+					"item": `cmi:${material}_mechanism`,
 					"amount": 64
 				},
 				{
 					"type": "custommachinery:item",
 					"mode": "input",
-					"item": `ue_addons:${material}_mechanism`,
+					"item": `cmi:${material}_mechanism`,
 					"amount": 64
 				},
 				{
 					"type": "custommachinery:item",
 					"mode": "input",
-					"item": "ue_addons:programmed_flash_drive",
+					"item": "cmi:programmed_flash_drive",
 					"amount": 1
 				},
 				{
 					"type": "custommachinery:item",
 					"mode": "output",
-					"item": `ue_addons:${material}_mechanism_flash_drive`,
+					"item": `cmi:${material}_mechanism_flash_drive`,
 					"amount": 1
 				},
 				{
@@ -85,13 +85,13 @@ ServerEvents.recipes((event) => {
 			{
 				"type": "custommachinery:item",
 				"mode": "input",
-				"item": "ue_addons:programmed_flash_drive",
+				"item": "cmi:programmed_flash_drive",
 				"amount": 1
 			},
 			{
 				"type": "custommachinery:item",
 				"mode": "output",
-				"item": "ue_addons:redstone_mechanism_flash_drive",
+				"item": "cmi:redstone_mechanism_flash_drive",
 				"amount": 1
 			},
 			{
@@ -135,13 +135,13 @@ ServerEvents.recipes((event) => {
 			{
 				"type": "custommachinery:item",
 				"mode": "input",
-				"item": "ue_addons:programmed_flash_drive",
+				"item": "cmi:programmed_flash_drive",
 				"amount": 1
 			},
 			{
 				"type": "custommachinery:item",
 				"mode": "output",
-				"item": "ue_addons:precision_mechanism_flash_drive",
+				"item": "cmi:precision_mechanism_flash_drive",
 				"amount": 1
 			},
 			{

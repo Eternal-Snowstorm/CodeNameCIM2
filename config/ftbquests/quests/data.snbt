@@ -10,7 +10,7 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	icon: "ue_addons:creative_mechanism"
+	icon: "cmi:creative_mechanism"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0

@@ -1,5 +1,5 @@
 ServerEvents.blockLootTables((event) => {
-	event.addBlock("ue_addons:nether_vanadium_ore", (loot) => {
+	event.addBlock("cmi:nether_vanadium_ore", (loot) => {
 		loot.addPool((pool) => {
 			pool.addEntry({
 				"type": "minecraft:alternatives",
@@ -21,7 +21,7 @@ ServerEvents.blockLootTables((event) => {
 								}
 							}
 						],
-						"name": "ue_addons:nether_vanadium_ore"
+						"name": "cmi:nether_vanadium_ore"
 					},
 					{
 						"type": "minecraft:item",
@@ -35,7 +35,7 @@ ServerEvents.blockLootTables((event) => {
 								"function": "minecraft:explosion_decay"
 							}
 						],
-						"name": "ue_addons:raw_vanadium"
+						"name": "cmi:raw_vanadium"
 					}
 				]
 			})

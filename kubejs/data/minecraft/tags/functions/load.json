@@ -1,5 +1,5 @@
 {
 	"values": [
-		"ue_addons:load"
+		"cmi:load"
 	]
 }

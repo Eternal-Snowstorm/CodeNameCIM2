@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
 			"AAAAAAAAA",
 			"AAAAAAAAA"
 		], {
-			A: "ue_addons:creative_mechanism",
+			A: "cmi:creative_mechanism",
 			B: "minecraft:torch"
 		}).id("torcherino:torcherino")
 
@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 			"AAAAAAAAA",
 			"AAAAAAAAA"
 		], {
-			A: "ue_addons:creative_mechanism",
+			A: "cmi:creative_mechanism",
 			B: "minecraft:lantern"
 		}).id("torcherino:lantern")
 
@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
 			"AAAAAAAAA",
 			"AAAAAAAAA"
 		], {
-			A: "ue_addons:creative_mechanism",
+			A: "cmi:creative_mechanism",
 			B: "minecraft:jack_o_lantern"
 		}).id("torcherino:lanterino")
 	}

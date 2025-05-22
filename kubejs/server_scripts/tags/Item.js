@@ -1,16 +1,3 @@
-let crushedMaterialGroup = [
-	"iron",
-	"gold",
-	"copper",
-	"zinc",
-	"osmium",
-	"silver",
-	"tin",
-	"lead",
-	"aluminum",
-	"uranium",
-	"nickel"
-]
 ServerEvents.tags("item", (event) => {
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
@@ -21,7 +8,7 @@ ServerEvents.tags("item", (event) => {
 
 	global.dyeColorGroup.forEach((color) => {
 		event.get(`forge:dyes/${color}`)
-			.add("ue_addons:colorful_mechanism")
+			.add("cmi:colorful_mechanism")
 	})
 
 	event.get("ad_astra:power_consumption_machines")
@@ -68,9 +55,9 @@ ServerEvents.tags("item", (event) => {
 		.add("thermal_extra:endothermic_dehydrator")
 
 	event.get("curios:mechanisms")
-		.add("ue_addons:cobalt_mechanism")
-		.add("ue_addons:photosensitive_mechanism")
-		.add("ue_addons:nether_mechanism")
+		.add("cmi:cobalt_mechanism")
+		.add("cmi:photosensitive_mechanism")
+		.add("cmi:nether_mechanism")
 
 	event.get("minecraft:sand")
 		.add("#forge:sand")
@@ -81,7 +68,7 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:stone")
 		.add("#forge:cobblestone")
-	
+
 	event.get("forge:plates")
 		.add("createdeco:zinc_sheet")
 		.add("createdeco:netherite_sheet")
@@ -106,10 +93,10 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:plates/zinc")
 		.add("createdeco:zinc_sheet")
-		
+
 	event.get("forge:plates/netherite")
 		.add("createdeco:netherite_sheet")
-	
+
 	event.get("forge:plates/industrial_iron")
 		.add("createdeco:industrial_iron_sheet")
 
@@ -132,7 +119,20 @@ ServerEvents.tags("item", (event) => {
 		.add("immersiveengineering:stick_steel")
 		.add("immersiveengineering:stick_aluminum")
 
-	crushedMaterialGroup.forEach((material)=>{
+	let crushedMaterialGroup = [
+		"iron",
+		"gold",
+		"copper",
+		"zinc",
+		"osmium",
+		"silver",
+		"tin",
+		"lead",
+		"aluminum",
+		"uranium",
+		"nickel"
+	]
+	crushedMaterialGroup.forEach((material) => {
 		event.get(`create:crushed_raw_materials/${material}`)
 			.add(`create:crushed_raw_${material}`)
 	})

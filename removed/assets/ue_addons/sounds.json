@@ -2,7 +2,7 @@
 	"lan_huo": {
 		"sounds": [
 			{
-				"name": "ue_addons:discs/lan_huo",
+				"name": "cmi:discs/lan_huo",
 				"stream": true
 			}
 		]
@@ -10,7 +10,7 @@
 	"monody": {
 		"sounds": [
 			{
-				"name": "ue_addons:discs/monody",
+				"name": "cmi:discs/monody",
 				"stream": true
 			}
 		]
@@ -18,7 +18,7 @@
 	"life": {
 		"sounds": [
 			{
-				"name": "ue_addons:discs/life",
+				"name": "cmi:discs/life",
 				"stream": true
 			}
 		]
@@ -26,7 +26,7 @@
 	"soul": {
 		"sounds": [
 			{
-				"name": "ue_addons:discs/soul",
+				"name": "cmi:discs/soul",
 				"stream": true
 			}
 		]
@@ -34,7 +34,7 @@
 	"cylinder": {
 		"sounds": [
 			{
-				"name": "ue_addons:discs/cylinder",
+				"name": "cmi:discs/cylinder",
 				"stream": true
 			}
 		]
@@ -42,7 +42,7 @@
 	"but": {
 		"sounds": [
 			{
-				"name": "ue_addons:discs/but",
+				"name": "cmi:discs/but",
 				"stream": true
 			}
 		]
@@ -50,7 +50,7 @@
 	"dirt": {
 		"sounds": [
 			{
-				"name": "ue_addons:discs/dirt",
+				"name": "cmi:discs/dirt",
 				"stream": true
 			}
 		]

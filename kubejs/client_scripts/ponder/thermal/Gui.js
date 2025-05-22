@@ -21,7 +21,7 @@ Ponder.registry((event) => {
 		"thermal_extra:component_assembly",
 		"thermal_extra:endothermic_dehydrator"
 	])
-	havePonderSceneBlock.scene("ue_addons:thermal_gui", "Machine UI", "ue_addons:thermal/thermal_gui", (scene) => {
+	havePonderSceneBlock.scene("cmi:thermal_gui", "Machine UI", "cmi:thermal/thermal_gui", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 		scene.scaleSceneView(0.6)
@@ -40,25 +40,25 @@ Ponder.registry((event) => {
 		scene.showControls(30, [7, 1, 7], "left")
 			.rightClick()
 
-		scene.world.setBlocks([13, 1, 13, 7, 4, 13], "ue_addons:ponder_thermal_gui")
+		scene.world.setBlocks([13, 1, 13, 7, 4, 13], "cmi:ponder_thermal_gui")
 		scene.world.showSection([13, 1, 13, 7, 4, 13], Direction.DOWN)
-		scene.world.setBlocks([12, 1, 13], "ue_addons:ponder_thermal_slot_energy")
-		scene.world.setBlocks([10, 2, 13], "ue_addons:ponder_thermal_slot")
-		scene.world.setBlocks([8, 2, 13], "ue_addons:ponder_thermal_slot")
-		scene.world.setBlocks([10, 1, 13], "ue_addons:ponder_thermal_fire")
+		scene.world.setBlocks([12, 1, 13], "cmi:ponder_thermal_slot_energy")
+		scene.world.setBlocks([10, 2, 13], "cmi:ponder_thermal_slot")
+		scene.world.setBlocks([8, 2, 13], "cmi:ponder_thermal_slot")
+		scene.world.setBlocks([10, 1, 13], "cmi:ponder_thermal_fire")
 
-		scene.world.setBlocks([12, 2, 13], "ue_addons:ponder_thermal_energy")
-		scene.world.setBlocks([12, 3, 13], "ue_addons:ponder_thermal_energy")
+		scene.world.setBlocks([12, 2, 13], "cmi:ponder_thermal_energy")
+		scene.world.setBlocks([12, 3, 13], "cmi:ponder_thermal_energy")
 
-		scene.world.setBlocks([9, 2, 13], "ue_addons:ponder_thermal_arrow")
+		scene.world.setBlocks([9, 2, 13], "cmi:ponder_thermal_arrow")
 
-		scene.world.setBlocks([6, 4, 13], "ue_addons:ponder_thermal_gui_green_icon")
-		scene.world.setBlocks([6, 3, 13], "ue_addons:ponder_thermal_gui_red_icon")
-		scene.world.setBlocks([6, 2, 13], "ue_addons:ponder_thermal_gui_blue_icon")
+		scene.world.setBlocks([6, 4, 13], "cmi:ponder_thermal_gui_green_icon")
+		scene.world.setBlocks([6, 3, 13], "cmi:ponder_thermal_gui_red_icon")
+		scene.world.setBlocks([6, 2, 13], "cmi:ponder_thermal_gui_blue_icon")
 		scene.world.showSection([6, 1, 13, 6, 4, 13], Direction.EAST)
 
-		scene.world.setBlocks([14, 4, 13], "ue_addons:ponder_thermal_gui_gray_icon")
-		scene.world.setBlocks([14, 3, 13], "ue_addons:ponder_thermal_gui_lightblue_icon")
+		scene.world.setBlocks([14, 4, 13], "cmi:ponder_thermal_gui_gray_icon")
+		scene.world.setBlocks([14, 3, 13], "cmi:ponder_thermal_gui_lightblue_icon")
 		scene.world.showSection([14, 1, 13, 13, 4, 13], Direction.WEST)
 
 
@@ -91,23 +91,23 @@ Ponder.registry((event) => {
 		// 在此处放入物品
 		scene.text(30, "Put items here", [10, 2, 13])
 		scene.idle(40)
-		scene.world.setBlocks([10, 2, 13], "ue_addons:ponder_thermal_sand")
-		scene.world.setBlocks([10, 1, 13], "ue_addons:ponder_thermal_fire_active")
+		scene.world.setBlocks([10, 2, 13], "cmi:ponder_thermal_sand")
+		scene.world.setBlocks([10, 1, 13], "cmi:ponder_thermal_fire_active")
 		scene.idle(40)
 
 		scene.overlay.showOutline("white", {}, [9, 2, 13], 30)
 		// 当进度条完成时, 输入的物品将被消耗, 然后输出
 		scene.text(30, "When the progress bar is completed, the input items will be consumed and then output", [9, 2, 13])
 		scene.idle(40)
-		scene.world.setBlocks([9, 2, 13], "ue_addons:ponder_thermal_arrow_active")
+		scene.world.setBlocks([9, 2, 13], "cmi:ponder_thermal_arrow_active")
 
 		scene.idle(40)
 		scene.overlay.showOutline("blue", {}, [8, 2, 13], 30)
-		scene.world.setBlocks([8, 2, 13], "ue_addons:ponder_thermal_glass")
-		scene.world.setBlocks([10, 2, 13], "ue_addons:ponder_thermal_slot")
-		scene.world.setBlocks([10, 1, 13], "ue_addons:ponder_thermal_fire")
-		scene.world.setBlocks([12, 3, 13], "ue_addons:ponder_thermal_energy_empty")
-		scene.world.setBlocks([9, 2, 13], "ue_addons:ponder_thermal_arrow")
+		scene.world.setBlocks([8, 2, 13], "cmi:ponder_thermal_glass")
+		scene.world.setBlocks([10, 2, 13], "cmi:ponder_thermal_slot")
+		scene.world.setBlocks([10, 1, 13], "cmi:ponder_thermal_fire")
+		scene.world.setBlocks([12, 3, 13], "cmi:ponder_thermal_energy_empty")
+		scene.world.setBlocks([9, 2, 13], "cmi:ponder_thermal_arrow")
 		scene.addKeyframe()
 
 
@@ -118,7 +118,7 @@ Ponder.registry((event) => {
 		scene.idle(50)
 	})
 
-	havePonderSceneBlock.scene("ue_addons:thermal_gui2", "Machine Automation", "ue_addons:thermal/thermal_gui2", (scene) => {
+	havePonderSceneBlock.scene("cmi:thermal_gui2", "Machine Automation", "cmi:thermal/thermal_gui2", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 		scene.scaleSceneView(0.5)
@@ -129,25 +129,25 @@ Ponder.registry((event) => {
 		scene.text(40, "This is a thermal machine with a trough of items only.", [7.5, 1.5, 7])
 
 		scene.idle(40)
-		scene.world.setBlocks([13, 4, 13, 7, 7, 13], "ue_addons:ponder_thermal_gui")
+		scene.world.setBlocks([13, 4, 13, 7, 7, 13], "cmi:ponder_thermal_gui")
 		scene.world.showSection([13, 4, 13, 7, 7, 13], Direction.DOWN)
-		scene.world.setBlocks([12, 4, 13], "ue_addons:ponder_thermal_slot_energy")
-		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_slot")
-		scene.world.setBlocks([10, 4, 13], "ue_addons:ponder_thermal_fire")
-		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot")
+		scene.world.setBlocks([12, 4, 13], "cmi:ponder_thermal_slot_energy")
+		scene.world.setBlocks([10, 5, 13], "cmi:ponder_thermal_slot")
+		scene.world.setBlocks([10, 4, 13], "cmi:ponder_thermal_fire")
+		scene.world.setBlocks([8, 5, 13], "cmi:ponder_thermal_slot")
 
-		scene.world.setBlocks([12, 5, 13], "ue_addons:ponder_thermal_energy_empty")
-		scene.world.setBlocks([12, 6, 13], "ue_addons:ponder_thermal_energy_empty")
+		scene.world.setBlocks([12, 5, 13], "cmi:ponder_thermal_energy_empty")
+		scene.world.setBlocks([12, 6, 13], "cmi:ponder_thermal_energy_empty")
 
-		scene.world.setBlocks([9, 5, 13], "ue_addons:ponder_thermal_arrow")
+		scene.world.setBlocks([9, 5, 13], "cmi:ponder_thermal_arrow")
 
-		scene.world.setBlocks([6, 7, 13], "ue_addons:ponder_thermal_gui_green_icon")
-		scene.world.setBlocks([6, 6, 13], "ue_addons:ponder_thermal_gui_red_icon")
-		scene.world.setBlocks([6, 5, 13], "ue_addons:ponder_thermal_gui_blue_icon")
+		scene.world.setBlocks([6, 7, 13], "cmi:ponder_thermal_gui_green_icon")
+		scene.world.setBlocks([6, 6, 13], "cmi:ponder_thermal_gui_red_icon")
+		scene.world.setBlocks([6, 5, 13], "cmi:ponder_thermal_gui_blue_icon")
 		scene.world.showSection([6, 4, 13, 6, 7, 13], Direction.EAST)
 
-		scene.world.setBlocks([14, 7, 13], "ue_addons:ponder_thermal_gui_gray_icon")
-		scene.world.setBlocks([14, 6, 13], "ue_addons:ponder_thermal_gui_lightblue_icon")
+		scene.world.setBlocks([14, 7, 13], "cmi:ponder_thermal_gui_gray_icon")
+		scene.world.setBlocks([14, 6, 13], "cmi:ponder_thermal_gui_lightblue_icon")
 		scene.world.showSection([14, 1, 13, 13, 4, 13], Direction.WEST)
 		scene.addKeyframe()
 		scene.idle(40)
@@ -161,17 +161,17 @@ Ponder.registry((event) => {
 		scene.idle(40)
 		scene.world.hideSection([6, 5, 13], Direction.WEST)
 		scene.idle(20)
-		scene.world.setBlocks([6, 5, 13, 1, 2, 13], "ue_addons:ponder_thermal_gui_blue")
+		scene.world.setBlocks([6, 5, 13, 1, 2, 13], "cmi:ponder_thermal_gui_blue")
 		scene.world.showSection([6, 5, 13, 1, 2, 13], Direction.UP)
-		scene.world.setBlocks([6, 5, 13], "ue_addons:ponder_thermal_gui_blue_icon")
-		scene.world.setBlocks([6, 4, 13], "ue_addons:ponder_thermal_input")
-		scene.world.setBlocks([6, 3, 13], "ue_addons:ponder_thermal_output")
-		scene.world.setBlocks([3, 4, 13], "ue_addons:ponder_thermal_machine_top")
-		scene.world.setBlocks([3, 2, 13], "ue_addons:ponder_thermal_machine_bottom")
-		scene.world.setBlocks([4, 3, 13], "ue_addons:ponder_thermal_machine_side")
-		scene.world.setBlocks([2, 3, 13], "ue_addons:ponder_thermal_machine_side")
-		scene.world.setBlocks([2, 2, 13], "ue_addons:ponder_thermal_machine_side")
-		scene.world.setBlocks([3, 3, 13], "ue_addons:ponder_thermal_machine_front")
+		scene.world.setBlocks([6, 5, 13], "cmi:ponder_thermal_gui_blue_icon")
+		scene.world.setBlocks([6, 4, 13], "cmi:ponder_thermal_input")
+		scene.world.setBlocks([6, 3, 13], "cmi:ponder_thermal_output")
+		scene.world.setBlocks([3, 4, 13], "cmi:ponder_thermal_machine_top")
+		scene.world.setBlocks([3, 2, 13], "cmi:ponder_thermal_machine_bottom")
+		scene.world.setBlocks([4, 3, 13], "cmi:ponder_thermal_machine_side")
+		scene.world.setBlocks([2, 3, 13], "cmi:ponder_thermal_machine_side")
+		scene.world.setBlocks([2, 2, 13], "cmi:ponder_thermal_machine_side")
+		scene.world.setBlocks([3, 3, 13], "cmi:ponder_thermal_machine_front")
 
 		scene.addKeyframe()
 
@@ -184,9 +184,9 @@ Ponder.registry((event) => {
 		scene.world.showSection([6, 2, 7], Direction.UP)
 		scene.world.showSection([6, 1, 7], Direction.UP)
 		scene.idle(40)
-		scene.world.setBlocks([12, 5, 13], "ue_addons:ponder_thermal_energy")
+		scene.world.setBlocks([12, 5, 13], "cmi:ponder_thermal_energy")
 		scene.idle(20)
-		scene.world.setBlocks([12, 6, 13], "ue_addons:ponder_thermal_energy")
+		scene.world.setBlocks([12, 6, 13], "cmi:ponder_thermal_energy")
 		scene.idle(20)
 		scene.world.hideSection([8, 1, 7], Direction.UP)
 		scene.world.hideSection([8, 2, 7], Direction.UP)
@@ -200,8 +200,8 @@ Ponder.registry((event) => {
 		// 在此处开启自动输入输出
 		scene.text(40, "Turn on automatic input and output here.", [6, 3.5, 13])
 		scene.idle(40)
-		scene.world.setBlocks([6, 4, 13], "ue_addons:ponder_thermal_input_on")
-		scene.world.setBlocks([6, 3, 13], "ue_addons:ponder_thermal_output_on")
+		scene.world.setBlocks([6, 4, 13], "cmi:ponder_thermal_input_on")
+		scene.world.setBlocks([6, 3, 13], "cmi:ponder_thermal_output_on")
 
 
 		scene.idle(40)
@@ -209,29 +209,29 @@ Ponder.registry((event) => {
 		scene.text(40, "and set the input and output of each face")
 		scene.idle(50)
 
-		scene.world.setBlocks([4, 3, 13], "ue_addons:ponder_thermal_machine_side_blue")
-		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_slot_blue")
+		scene.world.setBlocks([4, 3, 13], "cmi:ponder_thermal_machine_side_blue")
+		scene.world.setBlocks([10, 5, 13], "cmi:ponder_thermal_slot_blue")
 		// 通常情况下, 蓝色代表输入
 		scene.text(40, "Normally, blue represents input", [4, 3, 13])
 		scene.idle(50)
 
-		scene.world.setBlocks([4, 3, 13], "ue_addons:ponder_thermal_machine_side_orange")
-		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_slot")
-		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot_orange")
+		scene.world.setBlocks([4, 3, 13], "cmi:ponder_thermal_machine_side_orange")
+		scene.world.setBlocks([10, 5, 13], "cmi:ponder_thermal_slot")
+		scene.world.setBlocks([8, 5, 13], "cmi:ponder_thermal_slot_orange")
 		// 橙色则代表输出
 		scene.text(40, "Orange represents output", [4, 3, 13])
 		scene.idle(50)
 
-		scene.world.setBlocks([4, 3, 13], "ue_addons:ponder_thermal_machine_side_mix")
-		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_slot_blue")
-		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot_orange")
+		scene.world.setBlocks([4, 3, 13], "cmi:ponder_thermal_machine_side_mix")
+		scene.world.setBlocks([10, 5, 13], "cmi:ponder_thermal_slot_blue")
+		scene.world.setBlocks([8, 5, 13], "cmi:ponder_thermal_slot_orange")
 		// 混合代表既可以输入又可以输出
 		scene.text(40, "The hybrid represents both input and output", [4, 3, 13])
 		scene.idle(50)
 
-		scene.world.setBlocks([4, 3, 13], "ue_addons:ponder_thermal_machine_side_disabled")
-		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_slot")
-		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot")
+		scene.world.setBlocks([4, 3, 13], "cmi:ponder_thermal_machine_side_disabled")
+		scene.world.setBlocks([10, 5, 13], "cmi:ponder_thermal_slot")
+		scene.world.setBlocks([8, 5, 13], "cmi:ponder_thermal_slot")
 		// 黑色代表禁用
 		scene.text(40, "Black represents disabled", [4, 3, 13])
 		scene.idle(50)
@@ -241,10 +241,10 @@ Ponder.registry((event) => {
 
 		scene.idle(70)
 		scene.addKeyframe()
-		scene.world.setBlocks([4, 3, 13], "ue_addons:ponder_thermal_machine_side_blue")
-		scene.world.setBlocks([2, 3, 13], "ue_addons:ponder_thermal_machine_side_orange")
-		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_slot_blue")
-		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot_orange")
+		scene.world.setBlocks([4, 3, 13], "cmi:ponder_thermal_machine_side_blue")
+		scene.world.setBlocks([2, 3, 13], "cmi:ponder_thermal_machine_side_orange")
+		scene.world.setBlocks([10, 5, 13], "cmi:ponder_thermal_slot_blue")
+		scene.world.setBlocks([8, 5, 13], "cmi:ponder_thermal_slot_orange")
 		scene.world.setBlocks([8, 1, 7], "minecraft:chest")
 		scene.world.setBlocks([6, 1, 7], "create:depot")
 		scene.world.showSection([8, 1, 7], Direction.DOWN)
@@ -257,22 +257,22 @@ Ponder.registry((event) => {
 
 		// 机器会自动抽取物品
 		scene.text(40, "The machine will automatically extract items", [10, 5, 13])
-		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_sand")
-		scene.world.setBlocks([10, 4, 13], "ue_addons:ponder_thermal_fire_active")
+		scene.world.setBlocks([10, 5, 13], "cmi:ponder_thermal_sand")
+		scene.world.setBlocks([10, 4, 13], "cmi:ponder_thermal_fire_active")
 
 		scene.idle(40)
-		scene.world.setBlocks([9, 5, 13], "ue_addons:ponder_thermal_arrow_active")
+		scene.world.setBlocks([9, 5, 13], "cmi:ponder_thermal_arrow_active")
 		scene.idle(40)
-		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_glass")
-		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_slot_blue")
-		scene.world.setBlocks([9, 5, 13], "ue_addons:ponder_thermal_arrow")
-		scene.world.setBlocks([12, 6, 13], "ue_addons:ponder_thermal_energy_empty")
+		scene.world.setBlocks([8, 5, 13], "cmi:ponder_thermal_glass")
+		scene.world.setBlocks([10, 5, 13], "cmi:ponder_thermal_slot_blue")
+		scene.world.setBlocks([9, 5, 13], "cmi:ponder_thermal_arrow")
+		scene.world.setBlocks([12, 6, 13], "cmi:ponder_thermal_energy_empty")
 		scene.idle(40)
 
 		// 完成后会自动输出
 		scene.text(40, "Automatically output after completion", [8, 5, 13])
-		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_slot_orange")
-		scene.world.setBlocks([10, 4, 13], "ue_addons:ponder_thermal_fire")
+		scene.world.setBlocks([8, 5, 13], "cmi:ponder_thermal_slot_orange")
+		scene.world.setBlocks([10, 4, 13], "cmi:ponder_thermal_fire")
 		scene.showControls(40, [6.5, 2, 7.5], "down")
 			.withItem("minecraft:glass")
 		scene.idle(70)
@@ -282,11 +282,11 @@ Ponder.registry((event) => {
 		scene.text(40, "Fluid is the same")
 		scene.world.setBlocks([8, 1, 7], "create:fluid_tank")
 		scene.world.setBlocks([6, 1, 7], "create:fluid_tank")
-		scene.world.setBlocks([10, 4, 13], "ue_addons:ponder_thermal_gui")
-		scene.world.setBlocks([10, 5, 13], "ue_addons:ponder_thermal_lava")
-		scene.world.setBlocks([10, 6, 13], "ue_addons:ponder_thermal_fluid")
-		scene.world.setBlocks([8, 5, 13], "ue_addons:ponder_thermal_water")
-		scene.world.setBlocks([8, 6, 13], "ue_addons:ponder_thermal_fluid")
+		scene.world.setBlocks([10, 4, 13], "cmi:ponder_thermal_gui")
+		scene.world.setBlocks([10, 5, 13], "cmi:ponder_thermal_lava")
+		scene.world.setBlocks([10, 6, 13], "cmi:ponder_thermal_fluid")
+		scene.world.setBlocks([8, 5, 13], "cmi:ponder_thermal_water")
+		scene.world.setBlocks([8, 6, 13], "cmi:ponder_thermal_fluid")
 
 		scene.addKeyframe()
 		scene.idle(50)

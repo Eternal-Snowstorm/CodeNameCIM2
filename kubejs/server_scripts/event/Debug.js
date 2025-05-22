@@ -1,4 +1,4 @@
-ItemEvents.rightClicked("ue_addons:geological_hammer", (event) => {
+ItemEvents.rightClicked("cmi:geological_hammer", (event) => {
 	let { player } = event
 	if (event.hand == "OFF_HAND") {
 		for (let i = 0; i < global.debugUserName.length; i++) {
@@ -69,7 +69,7 @@ PlayerEvents.loggedIn((event) => {
 // 查看方块硬度(地质锤潜行右键方块)
 BlockEvents.rightClicked((event) => {
 	let { player } = event
-	let getItem = "ue_addons:geological_hammer"
+	let getItem = "cmi:geological_hammer"
 
 	let blockState = event.getBlock().getBlockState()
 	let pos = event.getBlock().getPos()

@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
 	// 锇砖瓦
-	kubejs.shaped("ue_addons:osmium_tile", [
+	kubejs.shaped("cmi:osmium_tile", [
 		" A ",
 		"ABA",
 		" A "

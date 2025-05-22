@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let mech = "ue_addons:stone_mechanism"
+	let mech = "cmi:stone_mechanism"
 
 	//焦炉砖
 	event.replaceInput({

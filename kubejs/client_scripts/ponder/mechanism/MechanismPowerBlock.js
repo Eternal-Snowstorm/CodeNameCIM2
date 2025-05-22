@@ -1,10 +1,10 @@
 Ponder.registry((event) => {
-	event.create("ue_addons:the_accelerator_of_mechanism_power")
-		.scene("ue_addons:the_accelerator_of_mechanism_power", "How to use the accelerator", "ue_addons:mechanism/stone", (scene) => {
+	event.create("cmi:the_accelerator_of_mechanism_power")
+		.scene("cmi:the_accelerator_of_mechanism_power", "How to use the accelerator", "cmi:mechanism/stone", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
-			scene.world.setBlocks([3, 0, 3], "ue_addons:the_accelerator_of_mechanism_power")
+			scene.world.setBlocks([3, 0, 3], "cmi:the_accelerator_of_mechanism_power")
 			scene.idle(10)
 			scene.overlay.showOutline("blue", {}, [3, 0, 3], 35)
 			scene.text(30, "This is an accelerator", [3, 1.5, 3])
@@ -13,7 +13,7 @@ Ponder.registry((event) => {
 			scene.idle(40)
 			scene.showControls(30, [3, 1.5, 3], "up")
 				.rightClick()
-				.withItem("ue_addons:iron_mechanism")
+				.withItem("cmi:iron_mechanism")
 			scene.idle(40)
 			scene.world.setBlocks([3, 0, 4], "minecraft:iron_ore")
 			scene.world.setBlocks([4, 0, 3], "minecraft:iron_ore")
@@ -24,10 +24,10 @@ Ponder.registry((event) => {
 			scene.text(30, "...and the stone around it changes into ore!", [3, 1.5, 3])
 			scene.idle(40)
 			scene.text(30, "The accelerator also supports other mechanisms")
-			scene.world.createItemEntity([2, 1, 2], Direction.DOWN, "ue_addons:stone_mechanism")
-			scene.world.createItemEntity([3, 1, 2], Direction.DOWN, "ue_addons:copper_mechanism")
-			scene.world.createItemEntity([4, 1, 2], Direction.DOWN, "ue_addons:andesite_mechanism")
-			scene.world.createItemEntity([5, 1, 2], Direction.DOWN, "ue_addons:gold_mechanism")
+			scene.world.createItemEntity([2, 1, 2], Direction.DOWN, "cmi:stone_mechanism")
+			scene.world.createItemEntity([3, 1, 2], Direction.DOWN, "cmi:copper_mechanism")
+			scene.world.createItemEntity([4, 1, 2], Direction.DOWN, "cmi:andesite_mechanism")
+			scene.world.createItemEntity([5, 1, 2], Direction.DOWN, "cmi:gold_mechanism")
 			scene.idle(40)
 			scene.overlay.showOutline("red", {}, [1, 0, 1, 5, 0, 5], 45)
 			scene.text(45, "But attention, only blocks in 5x5 zone around it can be transformed!")

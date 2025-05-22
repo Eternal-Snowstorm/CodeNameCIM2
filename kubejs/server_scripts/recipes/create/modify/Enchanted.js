@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let mech = "ue_addons:enchanted_mechanism"
+	let mech = "cmi:enchanted_mechanism"
 	//打印机
 	kubejs.shaped("create_enchantment_industry:printer", [
 		" C ",

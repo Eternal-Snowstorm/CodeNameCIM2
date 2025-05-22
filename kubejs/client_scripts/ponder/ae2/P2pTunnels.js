@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
 	event.create("ae2:me_p2p_tunnel")
-		.scene("ae2:p2p_tunnel", "P2P tunnels", "ue_addons:ae2/p2p_tunnels", (scene) => {
+		.scene("ae2:p2p_tunnel", "P2P tunnels", "cmi:ae2/p2p_tunnels", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 

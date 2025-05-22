@@ -1,5 +1,5 @@
 ServerEvents.genericLootTables((event) => {
-	event.addGeneric("ue_addons:gameplay/random_mechanisms/basic", (loot) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/basic", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x minecraft:iron_ingot").randomChance(0.125)
 			pool.addItem("4x minecraft:copper_ingot").randomChance(0.25)
@@ -19,7 +19,7 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(2, 4)
 		})
 	})
-	event.addGeneric("ue_addons:gameplay/random_mechanisms/mechanical", (loot) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/mechanical", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x create_andesite_alloy").randomChance(0.25)
 			pool.addItem("4x create:zinc_ingot").randomChance(0.125)
@@ -34,7 +34,7 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(3, 6)
 		})
 	})
-	event.addGeneric("ue_addons:gameplay/random_mechanisms/engineering", (loot) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/engineering", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x immersiveengineering:ingot_aluminum").randomChance(0.25)
 			pool.addItem("4x thermal:nickel_ingot").randomChance(0.125)
@@ -51,7 +51,7 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(3, 6)
 		})
 	})
-	event.addGeneric("ue_addons:gameplay/random_mechanisms/flux", (loot) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/flux", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x thermal:tin_ingot").randomChance(0.25)
 			pool.addItem("4x thermal:lead_ingot").randomChance(0.125)
@@ -77,7 +77,7 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(2, 4)
 		})
 	})
-	event.addGeneric("ue_addons:gameplay/random_mechanisms/magical", (loot) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/magical", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x minecraft:lapis_lazuli").randomChance(0.25)
 			pool.addItem("4x create:experience_nugget").randomChance(0.25)
@@ -94,7 +94,7 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(4, 8)
 		})
 	})
-	event.addGeneric("ue_addons:gameplay/random_mechanisms/quantum", (loot) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/quantum", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x ae2:singularity").randomChance(0.125)
 			pool.addItem("4x ae2:quantum_entangled_singularity").randomChance(0.125)
@@ -110,7 +110,7 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(4, 8)
 		})
 	})
-	event.addGeneric("ue_addons:gameplay/random_mechanisms/mekanism", (loot) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/mekanism", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x mekanism:alloy_infused").randomChance(0.25)
 			pool.addItem("4x mekanism:alloy_reinforced").randomChance(0.125)

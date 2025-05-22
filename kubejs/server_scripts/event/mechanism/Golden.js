@@ -1,5 +1,5 @@
 // 石头转化
-BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event) => {
+BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 	// 判定是否主手手持金质构件
 	if (event.hand == "OFF_HAND") {
 		return
@@ -8,7 +8,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event)
 	if (player == null) {
 		return
 	}
-	if (event.getItem().is("ue_addons:gold_mechanism")) {
+	if (event.getItem().is("cmi:gold_mechanism")) {
 		let { x, y, z } = event.block.pos
 		// 设定扫描所用变量
 		let numx = x
@@ -54,7 +54,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event)
 					} else if (rand <= 0.25) {
 						event.level.getBlock(pos).set("thermal:cinnabar_ore")
 					} else if (rand <= 0.3) {
-						event.level.getBlock(pos).set("ue_addons:quartz_ore")
+						event.level.getBlock(pos).set("cmi:quartz_ore")
 					}
 				} else if (block === "minecraft:deepslate") {
 					rand = Math.random()
@@ -63,7 +63,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event)
 					} else if (rand <= 0.25) {
 						event.level.getBlock(pos).set("thermal:deepslate_cinnabar_ore")
 					} else if (rand <= 0.35) {
-						event.level.getBlock(pos).set("ue_addons:deepslate_quartz_ore")
+						event.level.getBlock(pos).set("cmi:deepslate_quartz_ore")
 					}
 				}
 			}
@@ -114,7 +114,7 @@ BlockEvents.rightClicked((event) => {
 	}
 	// 若数量大于5则召唤效果粒子
 	let { block, item, player, level } = event
-	if (item.id !== "ue_addons:gold_mechanism" || block.id !== "ue_addons:the_accelerator_of_mechanism_power") {
+	if (item.id !== "cmi:gold_mechanism" || block.id !== "cmi:the_accelerator_of_mechanism_power") {
 		return
 	}
 	let command = `particle minecraft:dust 1 1 0 1 ${block.x + 0.5} ${block.y + 1} ${block.z + 0.5} 0.5 0.5 0.5 0.1 30`

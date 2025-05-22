@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
 	//     "type": "tconstruct:melting",
 	//     "ingredient": {
 	// 			// 所需物品
-	//         "item": "ue_addons:andesite_alloy_ingot
+	//         "item": "cmi:andesite_alloy_ingot
 	//     },
 	//     "result": {
 	// 			// 结果

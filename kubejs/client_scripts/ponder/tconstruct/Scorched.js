@@ -4,7 +4,7 @@ Ponder.registry((event) => {
 		"tconstruct:scorched_bricks",
 		"tconstruct:scorched_drain",
 		"tconstruct:scorched_fuel_tank"
-	]).scene("ue_addons:scorched", "Foundry", "ue_addons:tconstruct/scorched", (scene) => {
+	]).scene("cmi:scorched", "Foundry", "cmi:tconstruct/scorched", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 		scene.scaleSceneView(0.7)

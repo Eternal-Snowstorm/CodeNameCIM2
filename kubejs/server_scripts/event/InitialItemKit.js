@@ -1,6 +1,6 @@
 ItemEvents.rightClicked((event) => {
 	let { player, item } = event
-	const KIT = "ue_addons:initial_item_kit"
+	const KIT = "cmi:initial_item_kit"
 
 	if (player.mainHandItem === KIT && player.offHandItem !== KIT && player.crouching) {
 		let key = `message.${global.namespace}.initial_item_kit`

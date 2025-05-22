@@ -1,5 +1,5 @@
 // 石头转化
-BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event) => {
+BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 	// 判定是否主手手持铁质构件
 	if (event.hand == "OFF_HAND") {
 		return
@@ -8,7 +8,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event)
 	if (player == null) {
 		return
 	}
-	if (event.getItem().is("ue_addons:iron_mechanism")) {
+	if (event.getItem().is("cmi:iron_mechanism")) {
 		let { x, y, z } = event.block.pos
 		// 设定扫描所用变量
 		let numx = x
@@ -114,7 +114,7 @@ BlockEvents.rightClicked((event) => {
 	}
 	// 若数量大于5则召唤效果粒子
 	let { block, item, player, level } = event
-	if (item.id !== "ue_addons:iron_mechanism" || block.id !== "ue_addons:the_accelerator_of_mechanism_power") {
+	if (item.id !== "cmi:iron_mechanism" || block.id !== "cmi:the_accelerator_of_mechanism_power") {
 		return
 	}
 	let command = `particle minecraft:dust 1 1 1 1 ${block.x + 0.5} ${block.y + 1} ${block.z + 0.5} 0.5 0.5 0.5 0.1 30`

@@ -1,0 +1,13 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "cmi:font/icon.png",
+			"ascent": 10,
+			"height": 12,
+			"chars": [
+				"A"
+			]
+		}
+	]
+}

@@ -2,7 +2,7 @@ Ponder.registry((event) => {
 	event.create([
 		"tconstruct:seared_faucet",
 		"tconstruct:scorched_faucet"
-	]).scene("ue_addons:use_faucet", "Use faucet", "ue_addons:tconstruct/faucet", (scene) => {
+	]).scene("cmi:use_faucet", "Use faucet", "cmi:tconstruct/faucet", (scene) => {
 		scene.showStructure(5)
 		scene.idle(20)
 

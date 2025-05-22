@@ -1,5 +1,5 @@
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
-	event.setIcon("ue_addons:charged_amethyst")
+	event.setIcon("cmi:charged_amethyst")
 	event.setDisplayName(Component.translate(`itemGroup.${global.namespace}.all`))
 
 	event.remove(`#${global.namespace}:io_debug_block`)
@@ -38,8 +38,8 @@ StartupEvents.modifyCreativeTab("thermal_extra:resources", (event) => {
 
 StartupEvents.modifyCreativeTab("tconstruct:smeltery", (event) => {
 	event.add([
-		"ue_addons:mechanism_cast",
-		"ue_addons:mechanism_sand_cast",
-		"ue_addons:mechanism_red_sand_cast"
+		"cmi:mechanism_cast",
+		"cmi:mechanism_sand_cast",
+		"cmi:mechanism_red_sand_cast"
 	])
 })

@@ -6,7 +6,7 @@ ItemEvents.rightClicked((event) => {
 		player.tell(Component.translate(`sea.${global.namespace}.search`))
 		player.runCommandSilent(`effect give @e minecraft:glowing 30 255 false`)
 		player.runCommandSilent(`effect clear ${player.username} minecraft:glowing`)
-		player.runCommandSilent(`playsound ue_addons:for_sea player ${player.username} ~ ~ ~`)
+		player.runCommandSilent(`playsound cmi:for_sea player ${player.username} ~ ~ ~`)
 		player.cooldowns.addCooldown(canTriggerItem, 100)
 	}
 })

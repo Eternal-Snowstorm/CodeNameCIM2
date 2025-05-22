@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 	], {
 		S: "ae2:smooth_sky_stone_block",
 		C: "ae2:fluix_crystal",
-		M: "ue_addons:smart_mechanism"
+		M: "cmi:smart_mechanism"
 	}).id("ae2:network/blocks/controller")
 
 	kubejs.shaped("ae2:inscriber", [

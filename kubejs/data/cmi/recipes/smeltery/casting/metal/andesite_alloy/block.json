@@ -1,0 +1,13 @@
+{
+    "type": "tconstruct:material",
+    "ingredient": {
+        "item": "create:andesite_alloy_block"
+    },
+    "leftover": {
+        "count": 1,
+        "item": "create:andesite_alloy"
+    },
+    "material": "cmi:andesite_alloy",
+    "needed": 1,
+    "value": 9
+}

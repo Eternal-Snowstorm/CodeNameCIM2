@@ -62,7 +62,7 @@ BlockEvents.rightClicked((event) => {
         return
     }
     // 判断玩家手持物品为自然构件
-    if (item === "ue_addons:nature_mechanism") {
+    if (item === "cmi:nature_mechanism") {
         // 获取所点击的方块位置并调用MC原版骨粉逻辑
         let blockHitResult = new $BlockHitResult(player.pos, facing, block.pos, false)
         let useOnContext = new $UseOnContext(level, player, hand, "minecraft:bone_meal", blockHitResult)

@@ -4,10 +4,10 @@ JEIEvents.information((event) => {
 	}
 
 	addJEIInfo("cookingforblockheads:sink")
-	addJEIInfo("ue_addons:water_pump")
+	addJEIInfo("cmi:water_pump")
 	addJEIInfo("ad_astra:cryo_fuel_bucket")
 	addJEIInfo("ad_astra:ice_shard")
-	addJEIInfo("ue_addons:bucket")
+	addJEIInfo("cmi:bucket")
 	addJEIInfo("#ad_astra:power_consumption_machines")
 	addJEIInfo("engineered_schematics:multiblock_schematic")
 })

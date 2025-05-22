@@ -1,5 +1,5 @@
 // 石头转化
-BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event) => {
+BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 	// 判定是否主手手持铜质构件
 	if (event.hand == "OFF_HAND") {
 		return
@@ -8,7 +8,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event)
 	if (player == null) {
 		return
 	}
-	if (event.getItem().is("ue_addons:copper_mechanism")) {
+	if (event.getItem().is("cmi:copper_mechanism")) {
 		let { x, y, z } = event.block.pos
 		// 设定扫描所用变量
 		let numx = x
@@ -112,7 +112,7 @@ BlockEvents.rightClicked((event) => {
 	}
 	// 若数量大于5则召唤效果粒子
 	let { block, item, player, level } = event
-	if (item.id !== "ue_addons:copper_mechanism" || block.id !== "ue_addons:the_accelerator_of_mechanism_power") {
+	if (item.id !== "cmi:copper_mechanism" || block.id !== "cmi:the_accelerator_of_mechanism_power") {
 		return
 	}
 	let command = `particle minecraft:dust 1 0.5 0 1 ${block.x + 0.5} ${block.y + 1} ${block.z + 0.5} 0.5 0.5 0.5 0.1 30`
@@ -120,9 +120,9 @@ BlockEvents.rightClicked((event) => {
 })
 
 // 铜构件的普通右键
-ItemEvents.rightClicked("ue_addons:copper_mechanism", event => {
+ItemEvents.rightClicked("cmi:copper_mechanism", event => {
 	// 与构件催生器互动时不执行后续逻辑
-	if (event.player.rayTrace(5, false).block != null && event.player.rayTrace(5, false).block.id === "ue_addons:the_accelerator_of_mechanism_power") {
+	if (event.player.rayTrace(5, false).block != null && event.player.rayTrace(5, false).block.id === "cmi:the_accelerator_of_mechanism_power") {
 		event.player.swing()
 		return
 	} else {

@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: BATTERY,
 		B: "immersiveengineering:sheetmetal_steel",
-		C: "ue_addons:heavy_engineering_mechanism",
+		C: "cmi:heavy_engineering_mechanism",
 		D: "immersiveengineering:component_iron"
 	})
 
@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
 		A: "portality:frame",
 		B: BATTERY,
 		C: "minecraft:blast_furnace",
-		D: "ue_addons:stone_mechanism"
+		D: "cmi:stone_mechanism"
 	})
 
 	let incGoldRod = "createaddition:gold_rod"

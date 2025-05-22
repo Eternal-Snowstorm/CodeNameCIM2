@@ -10,5 +10,5 @@ JEIEvents.addItems((event) => {
 	addItemToJEI("create:refined_radiance_casing")
 	addItemToJEI("createdieselgenerators:pumpjack_hole")
 	addItemToJEI("thermal:rf_coil")
-	addItemToJEI("ue_addons:moon_cobalt_ore")
+	addItemToJEI("cmi:moon_cobalt_ore")
 })

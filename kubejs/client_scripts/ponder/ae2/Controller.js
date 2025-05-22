@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
 	event.create("ae2:controller")
-		.scene("ae2:controller", "ME Controller", "ue_addons:ae2/controller", (scene) => {
+		.scene("ae2:controller", "ME Controller", "cmi:ae2/controller", (scene) => {
 
 			scene.showBasePlate()
 			scene.idle(20)

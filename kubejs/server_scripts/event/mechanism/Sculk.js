@@ -5,7 +5,7 @@ const PI = 3.1415926535
 const SONIC_BOOM_RANGE = 10
 const SONIC_BOOM_ANGLE = PI / 13
 const SONIC_BOOM_COOLDOWN = 100
-const SCULK_MECHANISM_ID = "ue_addons:sculk_mechanism"
+const SCULK_MECHANISM_ID = "cmi:sculk_mechanism"
 
 // 在不会触发实体交互时直接发射音波尖啸
 ItemEvents.rightClicked(SCULK_MECHANISM_ID, (event) => {

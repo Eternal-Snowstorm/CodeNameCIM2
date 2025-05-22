@@ -1,4 +1,4 @@
-BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event) => {
+BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 	if (event.hand == "OFF_HAND") {
 		return
 	}
@@ -6,7 +6,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event)
 	if (player == null) {
 		return
 	}
-	if (event.getItem().is("ue_addons:enchanted_mechanism")) {
+	if (event.getItem().is("cmi:enchanted_mechanism")) {
 		let { x, y, z } = event.block.pos
 		let numx = x
 		let numz = z
@@ -94,7 +94,7 @@ BlockEvents.rightClicked((event) => {
 		return
 	}
 	let { block, item, player, level } = event
-	if (item.id !== "ue_addons:enchanted_mechanism" || block.id !== "ue_addons:the_accelerator_of_mechanism_power") {
+	if (item.id !== "cmi:enchanted_mechanism" || block.id !== "cmi:the_accelerator_of_mechanism_power") {
 		return
 	}
 	let command = `particle minecraft:dust 0 0.4 0.3 1 ${block.x + 0.5} ${block.y + 1} ${block.z + 0.5} 0.5 0.5 0.5 0.1 30`

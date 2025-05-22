@@ -21,5 +21,5 @@ JEIEvents.hideItems((event) => {
 		hideItemFromJEI(bucket)
 	})
 
-	hideItemFromJEI("#ue_addons:io_debug_block")
+	hideItemFromJEI("#cmi:io_debug_block")
 })

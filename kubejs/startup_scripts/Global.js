@@ -1,7 +1,7 @@
 // priorty: 0
 
 // 设定全局注册物品命名空间
-global.namespace = "ue_addons"
+global.namespace = "cmi"
 // Modpack版本
 global.modPackVersion = "§0CMI Beta-1.4.0"
 // 设定全局开发人员名单

@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:ingots/stainless_steel",
 		B: "#forge:plates/polyolefin",
-		C: "ue_addons:osmium_tile"
+		C: "cmi:osmium_tile"
 	}).id("mekanism:steel_casing")
 
 	thermal_extra.component_assembly("mekanism:basic_control_circuit", [

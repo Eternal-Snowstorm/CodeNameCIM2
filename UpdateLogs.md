@@ -155,6 +155,7 @@
  - 为`#create:crushed_raw_materials`标签添加了子标签
  - 扩充了金属类材料的配方代码
  - 向金属列表中加入了`强化黑曜石`和`强化萤石`
+ - 将namespace从`ue_addons`改为`cmi`, 方便与核心Mod同步
 
 ### 仓库整理
  - 清理了`/config`中不会修改的mod配置文件

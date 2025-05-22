@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
 	event.create("supplementaries:faucet")
-		.scene("ue_addons:faucet", "Use of faucets", "ue_addons:other/faucet", (scene) => {
+		.scene("cmi:faucet", "Use of faucets", "cmi:other/faucet", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 			scene.scaleSceneView(0.8)

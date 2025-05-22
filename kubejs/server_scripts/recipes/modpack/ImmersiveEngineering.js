@@ -5,26 +5,26 @@ ServerEvents.recipes((event) => {
 		"inputs": [
 			{
 				"base_ingredient": {
-					"item": "ue_addons:blockstone_source_alpha"
+					"item": "cmi:blockstone_source_alpha"
 				},
 				"count": 1
 			},
 			{
 				"base_ingredient": {
-					"item": "ue_addons:blockstone_source_beta"
+					"item": "cmi:blockstone_source_beta"
 				},
 				"count": 1
 			},
 			{
 				"base_ingredient": {
-					"item": "ue_addons:blockstone_source_gamma"
+					"item": "cmi:blockstone_source_gamma"
 				},
 				"count": 1
 			}
 		],
 		"result_fluids": [
 			{
-				"fluid": "ue_addons:delta_unstable_solution",
+				"fluid": "cmi:delta_unstable_solution",
 				"amount": 500
 			},
 		],
@@ -35,18 +35,18 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "immersiveindustry:electrolyzer",
 		"fluid": {
-			"tag": "ue_addons:delta_unstable_solution",
+			"tag": "cmi:delta_unstable_solution",
 			"amount": 1000
 		},
 		"result_fluid": {
-			"fluid": "ue_addons:turbid_waste_liquid",
+			"fluid": "cmi:turbid_waste_liquid",
 			"amount": 1000
 		},
 		"input": {
-			"item": "ue_addons:compression_end_stone_dust_block"
+			"item": "cmi:compression_end_stone_dust_block"
 		},
 		"result": {
-			"item": "ue_addons:raw_platinum_particles",
+			"item": "cmi:raw_platinum_particles",
 			"count": 2
 		},
 		"large_only": true,
@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
 		"inputs": [
 			{
 				"base_ingredient": {
-					"item": "ue_addons:platinum_crystal_nucleus"
+					"item": "cmi:platinum_crystal_nucleus"
 				},
 				"count": 4
 			},
@@ -77,7 +77,7 @@ ServerEvents.recipes((event) => {
 		],
 		"result": {
 			"amount": 500,
-			"fluid": "ue_addons:platinum_solution"
+			"fluid": "cmi:platinum_solution"
 		}
 	})
 
@@ -90,11 +90,11 @@ ServerEvents.recipes((event) => {
 				"amount": 500
 			},
 			{
-				"tag": "ue_addons:platinum_solution",
+				"tag": "cmi:platinum_solution",
 				"amount": 500
 			},
 			{
-				"tag": "ue_addons:delta_unstable_solution",
+				"tag": "cmi:delta_unstable_solution",
 				"amount": 500
 			}
 		],

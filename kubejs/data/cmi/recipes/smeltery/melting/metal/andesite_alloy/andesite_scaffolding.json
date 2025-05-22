@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "create:andesite_scaffolding"
+    },
+    "result": {
+      "amount": 45,
+      "fluid": "cmi:molten_andesite_alloy"
+    },
+    "temperature": 800,
+    "time": 15
+  }

@@ -1,5 +1,5 @@
 //末影构件随机传送
-ItemEvents.rightClicked("ue_addons:ender_mechanism", (event) => {
+ItemEvents.rightClicked("cmi:ender_mechanism", (event) => {
 	let { player, item } = event
 
 	// 检测玩家潜行或物品具有NBT
@@ -33,11 +33,11 @@ ItemEvents.rightClicked("ue_addons:ender_mechanism", (event) => {
 	player.level.server.runCommandSilent(particleCommand)
 
 	// 添加冷却时间（1秒）
-	player.cooldowns.addCooldown("ue_addons:ender_mechanism", 20)
+	player.cooldowns.addCooldown("cmi:ender_mechanism", 20)
 })
 
 // 存储坐标
-ItemEvents.rightClicked("ue_addons:ender_mechanism", (event) => {
+ItemEvents.rightClicked("cmi:ender_mechanism", (event) => {
 	if (!event.getPlayer().crouching || event.getPlayer().mainHandItem.hasNBT()) {
 		return
 	}
@@ -50,10 +50,10 @@ ItemEvents.rightClicked("ue_addons:ender_mechanism", (event) => {
 	// 以X、Y、Z形式存入3个NBT
 	event.getPlayer().mainHandItem.setNbt({ x: locationX, y: locationY, z: locationZ })
 	// 提示玩家已存储坐标
-	player.tell(Text.translatable("promp.ue_addons.ender_mechanism.location_stored"))
+	player.tell(Text.translatable("promp.cmi.ender_mechanism.location_stored"))
 })
 
-BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event) => {
+BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 	if (event.hand == "OFF_HAND") {
 		return
 	}
@@ -62,7 +62,7 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event)
 		return
 	}
 	// 确认玩家手持带有NBT的末影构件右键催生器
-	if (event.getItem().is("ue_addons:ender_mechanism") && event.getItem().hasNBT()) {
+	if (event.getItem().is("cmi:ender_mechanism") && event.getItem().hasNBT()) {
 		// 获取构件中的NBT数据
 		let nbt = event.getItem().getNbt()
 		// 将目标点重置为目标方块中心位置
@@ -80,6 +80,6 @@ BlockEvents.rightClicked("ue_addons:the_accelerator_of_mechanism_power", (event)
 		// 清除物品NBT
 		event.getItem().setNbt({})
 		// 添加冷却时间(5s)
-		player.cooldowns.addCooldown("ue_addons:ender_mechanism", 100)
+		player.cooldowns.addCooldown("cmi:ender_mechanism", 100)
 	}
 })

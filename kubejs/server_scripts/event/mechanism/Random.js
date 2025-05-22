@@ -11,11 +11,11 @@ ItemEvents.rightClicked((event) => {
 		"mekanism"
 	]
 	randomMechanisms.forEach((material) => {
-		if (player.mainHandItem === `ue_addons:${material}_random_mechanism`) {
+		if (player.mainHandItem === `cmi:${material}_random_mechanism`) {
 			if (player === null) {
 				return
 			}
-			let lootTable = `ue_addons:gameplay/random_mechanisms/${material}`
+			let lootTable = `cmi:gameplay/random_mechanisms/${material}`
 			let { x, y, z } = player
 			server.runCommandSilent(`loot spawn ${x} ${y} ${z} loot ${lootTable}`)
 			player.swing()

@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
 	event.create("ae2:drive")
-		.scene("ae2:drive", "ME Drive", "ue_addons:ae2/standard_floor", (scene) => {
+		.scene("ae2:drive", "ME Drive", "cmi:ae2/standard_floor", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 

@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
     event.create("ae2:wireless_access_point")
-        .scene("ae2:wireless_connection", "Wireless Connection", "ue_addons:ae2/standard_floor", (scene) => {
+        .scene("ae2:wireless_connection", "Wireless Connection", "cmi:ae2/standard_floor", (scene) => {
             scene.showBasePlate()
             scene.idle(20)
 

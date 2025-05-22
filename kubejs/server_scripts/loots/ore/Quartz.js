@@ -1,5 +1,5 @@
 ServerEvents.blockLootTables((event) => {
-	event.addBlock("ue_addons:quartz_ore", (loot) => {
+	event.addBlock("cmi:quartz_ore", (loot) => {
 		loot.addPool((pool) => {
 			pool.addEntry({
 				"type": "minecraft:alternatives",
@@ -21,7 +21,7 @@ ServerEvents.blockLootTables((event) => {
 								}
 							}
 						],
-						"name": "ue_addons:quartz_ore"
+						"name": "cmi:quartz_ore"
 					},
 					{
 						"type": "minecraft:item",
@@ -42,7 +42,7 @@ ServerEvents.blockLootTables((event) => {
 		})
 	})
 
-	event.addBlock("ue_addons:deepslate_quartz_ore", (loot) => {
+	event.addBlock("cmi:deepslate_quartz_ore", (loot) => {
 		loot.addPool((pool) => {
 			pool.addEntry({
 				"type": "minecraft:alternatives",
@@ -64,7 +64,7 @@ ServerEvents.blockLootTables((event) => {
 								}
 							}
 						],
-						"name": "ue_addons:deepslate_quartz_ore"
+						"name": "cmi:deepslate_quartz_ore"
 					},
 					{
 						"type": "minecraft:item",

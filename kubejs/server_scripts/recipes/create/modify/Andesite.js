@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 	let casing = "create:andesite_casing"
-	let mech = "ue_addons:andesite_mechanism"
+	let mech = "cmi:andesite_mechanism"
 	let tube = "create:electron_tube"
 
 	// 动态结构控制器(你知道我在0.5没有你的日子是怎么过的吗!(揪着衣领))

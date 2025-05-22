@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
 	// 机壳
 	tconstruct.casting_basin(
 		"create:andesite_casing",
-		Fluid.of("ue_addons:molten_andesite_alloy", 90)
+		Fluid.of("cmi:molten_andesite_alloy", 90)
 	).cast("#minecraft:logs").cooling_time(40).cast_consumed(true)
 
 	tconstruct.casting_basin(

@@ -8,7 +8,7 @@ BlockEvents.rightClicked((event) => {
 	if (level.clientSide) {
 		return
 	}
-	if (item === "ue_addons:wooden_mechanism") {
+	if (item === "cmi:wooden_mechanism") {
 		let blockHitResult = new $BlockHitResult(player.pos, facing, block.pos, false)
 		let useOnContext = new $UseOnContext(level, player, hand, "create:tree_fertilizer", blockHitResult)
 		let treeFertilizer = $AllItems.TREE_FERTILIZER.get()

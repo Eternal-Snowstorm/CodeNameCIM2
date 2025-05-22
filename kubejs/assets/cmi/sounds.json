@@ -1,0 +1,10 @@
+{
+	"for_sea": {
+		"sounds": [
+			{
+				"name": "cmi:event/for_sea",
+				"stream": true
+			}
+		]
+	}
+}

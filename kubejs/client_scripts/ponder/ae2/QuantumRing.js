@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
 	event.create("ae2:quantum_ring")
-		.scene("ae2:quantum_ring", "Quantum Connection", "ue_addons:ae2/quantum_ring", (scene) => {
+		.scene("ae2:quantum_ring", "Quantum Connection", "cmi:ae2/quantum_ring", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 

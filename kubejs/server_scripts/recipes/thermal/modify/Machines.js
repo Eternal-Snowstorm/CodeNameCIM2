@@ -1,9 +1,9 @@
 ServerEvents.recipes((event) => {
 	let { create, kubejs } = event.recipes
 
-	const COPPER_MECH = "ue_addons:copper_mechanism"
-	const IRON_MECH = "ue_addons:iron_mechanism"
-	const THERMAL_MECH = "ue_addons:thermal_mechanism"
+	const COPPER_MECH = "cmi:copper_mechanism"
+	const IRON_MECH = "cmi:iron_mechanism"
+	const THERMAL_MECH = "cmi:thermal_mechanism"
 
 	const REDSTONE_MOD = "vintageimprovements:redstone_module"
 
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		B: GLASS,
-		C: "ue_addons:thermal_mechanism",
+		C: "cmi:thermal_mechanism",
 		A: "#forge:ingots/invar",
 	}).id("thermal:machine_frame")
 
@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
 		"AEA"
 	], {
 		A: SILVER_INGOT,
-		B: "ue_addons:enchanted_mechanism",
+		B: "cmi:enchanted_mechanism",
 		C: GLASS,
 		D: "thermal:xp_crystal",
 		M: "thermal:machine_frame"
@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
 		"DED",
 		"CFC"
 	], {
-		A: "ue_addons:andesite_mechanism",
+		A: "cmi:andesite_mechanism",
 		C: PLANK,
 		D: GLASS,
 		E: "minecraft:composter",
@@ -122,7 +122,7 @@ ServerEvents.recipes((event) => {
 		B: COPPER_MECH,
 		C: GLASS,
 		D: "minecraft:fishing_rod",
-		E: "ue_addons:andesite_mechanism",
+		E: "cmi:andesite_mechanism",
 	})
 
 	// 
@@ -140,8 +140,8 @@ ServerEvents.recipes((event) => {
 		A: "thermal:rf_coil",
 		B: "#forge:stone",
 		C: "createaddition:capacitor",
-		D: "ue_addons:stone_mechanism",
-		M: "ue_addons:thermal_mechanism"
+		D: "cmi:stone_mechanism",
+		M: "cmi:thermal_mechanism"
 	})
 
 	// 
@@ -152,7 +152,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "thermal:rf_coil",
 		B: FRAME,
-		M: "ue_addons:thermal_mechanism",
+		M: "cmi:thermal_mechanism",
 		C: "create:crushing_wheel"
 	})
 
@@ -176,8 +176,8 @@ ServerEvents.recipes((event) => {
 		A: "thermal:rf_coil",
 		B: "#forge:ingots/invar",
 		C: "createaddition:capacitor",
-		D: "ue_addons:pigiron_mechanism",
-		M: "ue_addons:thermal_mechanism"
+		D: "cmi:pigiron_mechanism",
+		M: "cmi:thermal_mechanism"
 	})
 
 	// 
@@ -188,7 +188,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "minecraft:crafting_table",
 		B: FRAME,
-		M: "ue_addons:thermal_mechanism"
+		M: "cmi:thermal_mechanism"
 	})
 
 	// 
@@ -238,19 +238,19 @@ ServerEvents.recipes((event) => {
 	// 
 	create.item_application("thermal:dynamo_compression", [
 		"thermal:dynamo_stirling",
-		"ue_addons:thermal_mechanism"
+		"cmi:thermal_mechanism"
 	])
 
 	// 
 	create.item_application("thermal:dynamo_disenchantment", [
 		"thermal:dynamo_stirling",
-		"ue_addons:enchanted_mechanism"
+		"cmi:enchanted_mechanism"
 	])
 
 	// 
 	create.item_application("thermal:dynamo_magmatic", [
 		"thermal:dynamo_compression",
-		"ue_addons:feinforced_mechanism"
+		"cmi:feinforced_mechanism"
 	])
 
 	// 
@@ -261,7 +261,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: THERMAL_MECH,
 		B: FRAME,
-		C: "ue_addons:nether_mechanism"
+		C: "cmi:nether_mechanism"
 	})
 
 	// 
@@ -278,18 +278,18 @@ ServerEvents.recipes((event) => {
 	// 
 	create.item_application("thermal_extra:dynamo_frost", [
 		"thermal:dynamo_stirling",
-		"ue_addons:cobalt_mechanism"
+		"cmi:cobalt_mechanism"
 	])
 
 	// 
 	create.item_application("thermal:dynamo_numismatic", [
 		"thermal:dynamo_stirling",
-		"ue_addons:light_engineering_mechanism"
+		"cmi:light_engineering_mechanism"
 	])
 
 	// 
 	create.item_application("thermal:dynamo_lapidary", [
 		"thermal:dynamo_stirling",
-		"ue_addons:heavy_engineering_mechanism"
+		"cmi:heavy_engineering_mechanism"
 	])
 })

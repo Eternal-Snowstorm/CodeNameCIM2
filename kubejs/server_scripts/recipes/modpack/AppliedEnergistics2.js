@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 			"tag": "forge:gems/amethyst"
 		},
 		"result": {
-			"item": "ue_addons:charged_amethyst"
+			"item": "cmi:charged_amethyst"
 		}
 	})
 })

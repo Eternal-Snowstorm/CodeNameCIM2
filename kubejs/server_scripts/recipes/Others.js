@@ -32,10 +32,10 @@ ServerEvents.recipes((event) => {
 	])
 
 	kubejs.shapeless("create:andesite_alloy", [
-		"9x ue_addons:andesite_alloy_nugget"
+		"9x cmi:andesite_alloy_nugget"
 	])
 
-	create.pressing("ue_addons:cinderslime_plate", [
+	create.pressing("cmi:cinderslime_plate", [
 		"tconstruct:cinderslime_ingot"
 	])
 

@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 水泵
-	create.sequenced_assembly("ue_addons:water_pump", [
+	create.sequenced_assembly("cmi:water_pump", [
 		"#forge:treated_wood"
 	], [
 		create.pressing("immersiveengineering:treated_wood_horizontal", [
@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
 		]),
 		create.deploying("immersiveengineering:treated_wood_horizontal", [
 			"immersiveengineering:treated_wood_horizontal",
-			"ue_addons:copper_mechanism"
+			"cmi:copper_mechanism"
 		]),
 		create.cutting("immersiveengineering:treated_wood_horizontal", [
 			"immersiveengineering:treated_wood_horizontal"

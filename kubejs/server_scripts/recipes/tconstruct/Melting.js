@@ -11,17 +11,17 @@ ServerEvents.recipes((event) => {
 	]
 	moltenMaterialGroup.forEach(([material, moltingTime]) => {
 		tconstruct.melting(
-			Fluid.of(`ue_addons:molten_${material}`, 90),
+			Fluid.of(`cmi:molten_${material}`, 90),
 			`#forge:ingots/${material}`
 		).time(moltingTime).temperature(800)
 
 		tconstruct.melting(
-			Fluid.of(`ue_addons:molten_${material}`, 810),
+			Fluid.of(`cmi:molten_${material}`, 810),
 			`#forge:storage_blocks/${material}`
 		).time(3 * moltingTime).temperature(800)
 
 		tconstruct.melting(
-			Fluid.of(`ue_addons:molten_${material}`, 90),
+			Fluid.of(`cmi:molten_${material}`, 90),
 			`#forge:plates/${material}`
 		).time(moltingTime).temperature(800)
 	})
@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
 
 	// 血液
 	tconstruct.melting(
-		Fluid.of("ue_addons:blood", 50),
+		Fluid.of("cmi:blood", 50),
 		"minecraft:rotten_flesh"
 	).time(30).temperature(36)
 })

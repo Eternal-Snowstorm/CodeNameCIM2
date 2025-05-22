@@ -1,5 +1,5 @@
 ServerEvents.blockLootTables((event) => {
-	event.addBlock("ue_addons:end_chromium_ore", (loot) => {
+	event.addBlock("cmi:end_chromium_ore", (loot) => {
 		loot.addPool((pool) => {
 			pool.addEntry({
 				"type": "minecraft:alternatives",
@@ -21,7 +21,7 @@ ServerEvents.blockLootTables((event) => {
 								}
 							}
 						],
-						"name": "ue_addons:end_chromium_ore"
+						"name": "cmi:end_chromium_ore"
 					},
 					{
 						"type": "minecraft:item",
@@ -35,7 +35,7 @@ ServerEvents.blockLootTables((event) => {
 								"function": "minecraft:explosion_decay"
 							}
 						],
-						"name": "ue_addons:raw_chromium"
+						"name": "cmi:raw_chromium"
 					}
 				]
 			})

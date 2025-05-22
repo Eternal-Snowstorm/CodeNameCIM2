@@ -1,8 +1,8 @@
 Ponder.registry((event) => {
 	event.create([
-		"ue_addons:water_pump",
+		"cmi:water_pump",
 		"minecraft:water_bucket"
-	]).scene("ue_addons:water_pump", "Water Pump", "ue_addons:multiblock/water_pump", (scene) => {
+	]).scene("cmi:water_pump", "Water Pump", "cmi:multiblock/water_pump", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 		scene.scaleSceneView(0.8)

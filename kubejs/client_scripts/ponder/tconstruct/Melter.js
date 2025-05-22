@@ -5,7 +5,7 @@ Ponder.registry((event) => {
 		"tconstruct:seared_fuel_tank",
 		"tconstruct:seared_drain",
 		"tconstruct:seared_bricks"
-	]).scene("ue_addons:melter", "Melter", "ue_addons:tconstruct/melter", (scene) => {
+	]).scene("cmi:melter", "Melter", "cmi:tconstruct/melter", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 

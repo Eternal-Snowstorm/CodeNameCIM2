@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 		"CCC"
 	], {
 		A: "#forge:plates/iron",
-		B: "ue_addons:iron_mechanism",
+		B: "cmi:iron_mechanism",
 		C: "#forge:netherrack"
 	}).id("create:crafting/kinetics/empty_blaze_burner")
 
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 		"CCC"
 	], {
 		A: "#forge:plates/iron",
-		B: "ue_addons:iron_mechanism",
+		B: "cmi:iron_mechanism",
 		C: "#forge:netherrack",
 		D: "tconstruct:blaze_head"
 	}).id("create:crafting/kinetics/blaze_burner")

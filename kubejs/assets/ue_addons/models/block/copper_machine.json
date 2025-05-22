@@ -1,9 +1,0 @@
-{
-	"parent": "ue_addons:custom/cm",
-	"textures": {
-		"all": "ue_addons:block/machine/ue/copper_machine",
-		"particle": "create:block/machine/ue/copper_casing",
-		"1": "ue_addons:block/machine/ue/copper_machine"
-	},
-	"render_type": "cutout"
-}

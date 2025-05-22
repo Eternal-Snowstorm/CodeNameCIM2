@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 			{
 				"type": "custommachinery:gas",
 				"mode": "output",
-				"chemical": "ue_addons:sulfide_gas_mixture",
+				"chemical": "cmi:sulfide_gas_mixture",
 				"amount": 2
 			},
 			{

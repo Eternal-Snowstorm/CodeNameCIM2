@@ -4,7 +4,7 @@ Ponder.registry((event) => {
 	event.create([
 		"ae2:pattern_provider",
 		"ae2:crafting_unit"
-	]).scene("ae2:simple_crafting_automation", "Simple Crafting Automation", "ue_addons:ae2/simple_crafting_automation", (scene) => {
+	]).scene("ae2:simple_crafting_automation", "Simple Crafting Automation", "cmi:ae2/simple_crafting_automation", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 
@@ -55,7 +55,7 @@ Ponder.registry((event) => {
 	event.create([
 		"ae2:pattern_provider",
 		"ae2:crafting_unit"
-	]).scene("ae2:crafting_cpu_structure", "Structure of Crafting CPU", "ue_addons:ae2/crafting_cpu", (scene) => {
+	]).scene("ae2:crafting_cpu_structure", "Structure of Crafting CPU", "cmi:ae2/crafting_cpu", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 
@@ -142,7 +142,7 @@ Ponder.registry((event) => {
 	event.create([
 		"ae2:pattern_provider",
 		"ae2:crafting_unit"
-	]).scene("ae2:furnace_automation", "Automating Furnace with SubNet", "ue_addons:ae2/furnace_automation", (scene) => {
+	]).scene("ae2:furnace_automation", "Automating Furnace with SubNet", "cmi:ae2/furnace_automation", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 

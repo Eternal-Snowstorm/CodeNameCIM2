@@ -1,5 +1,5 @@
 ServerEvents.blockLootTables((event) => {
-	event.addBlock("ue_addons:moon_cobalt_ore", (loot) => {
+	event.addBlock("cmi:moon_cobalt_ore", (loot) => {
 		loot.addPool((pool) => {
 			pool.addEntry({
 				"type": "minecraft:alternatives",
@@ -21,7 +21,7 @@ ServerEvents.blockLootTables((event) => {
 								}
 							}
 						],
-						"name": "ue_addons:moon_cobalt_ore"
+						"name": "cmi:moon_cobalt_ore"
 					},
 					{
 						"type": "minecraft:item",

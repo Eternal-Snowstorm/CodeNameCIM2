@@ -14,14 +14,14 @@
 			size: 2.0d
 			tasks: [{
 				id: "4D66E3FD678120CF"
-				item: "ue_addons:wooden_mechanism"
+				item: "cmi:wooden_mechanism"
 				type: "item"
 			}]
 			x: 0.0d
 			y: -1.0d
 		}
 		{
-			icon: "ue_addons:incomplete_wooden_mechanism"
+			icon: "cmi:incomplete_wooden_mechanism"
 			id: "4BFB33A31A2DAB00"
 			tasks: [{
 				id: "292EBAC567C8C83B"
@@ -47,7 +47,7 @@
 			id: "1B1FC345BDD1CABE"
 			tasks: [{
 				id: "5DC6E2A3FBC27A05"
-				item: "ue_addons:basic_mechanism_part"
+				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
 			x: -2.5d
