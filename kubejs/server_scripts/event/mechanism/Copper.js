@@ -111,7 +111,7 @@ BlockEvents.rightClicked((event) => {
 		return
 	}
 	// 若数量大于5则召唤效果粒子
-	let { block, item, player, level } = event
+	let { block, item, level } = event
 	if (item.id !== "cmi:copper_mechanism" || block.id !== "cmi:the_accelerator_of_mechanism_power") {
 		return
 	}

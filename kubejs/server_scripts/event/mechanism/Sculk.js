@@ -38,29 +38,27 @@ function fireSonicBoom(level, player) {
 	// 设置音爆传播方向（玩家面向坐标）与传播起点
 	let sight = player.getViewVector(1.0).normalize()
 	let startingPosition = player.getEyePosition()
+
 	// 播放音爆声音
-	level.playSound(
-		null,
-		startingPosition.x(),
-		startingPosition.y(),
-		startingPosition.z(),
-		"minecraft:entity.warden.sonic_boom",
-		"hostile",
-		3,
-		1
-	)
+	let x = startingPosition.x()
+	let y = startingPosition.y()
+	let z = startingPosition.z()
+
+	let sonicBoomSound = "minecraft:entity.warden.sonic_boom"
+	level.playSound(null, x, y, z, sonicBoomSound, "hostile", 3, 1)
 	// 生成音爆粒子
 	for (let i = 1; i <= SONIC_BOOM_RANGE; i++) {
 		let pos = startingPosition.add(sight.scale(i))
 		level.sendParticles($ParticleTypes.SONIC_BOOM, pos.x(), pos.y(), pos.z(), 1, 0, 0, 0, 0)
 	}
 	// 识别音爆范围内的实体并造成伤害
-	level.getEntitiesWithin(player.boundingBox.inflate(SONIC_BOOM_RANGE)).forEach(entity => {
-		let direction = entity.getEyePosition().subtract(startingPosition).normalize()
-		if (Math.acos(direction.dot(sight)) <= SONIC_BOOM_ANGLE && entity.isLiving()) {
-			entity.attack(level.damageSources().sonicBoom(player), 10)
-		}
-	})
+	level.getEntitiesWithin(player.boundingBox.inflate(SONIC_BOOM_RANGE))
+		.forEach((entity) => {
+			let direction = entity.getEyePosition().subtract(startingPosition).normalize()
+			if (Math.acos(direction.dot(sight)) <= SONIC_BOOM_ANGLE && entity.isLiving()) {
+				entity.attack(level.damageSources().sonicBoom(player), 10)
+			}
+		})
 	// 使幽匿构件进入冷却
 	player.cooldowns.addCooldown(SCULK_MECHANISM_ID, SONIC_BOOM_COOLDOWN)
 }
