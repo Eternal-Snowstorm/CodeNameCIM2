@@ -59,7 +59,7 @@ function addOreBlock(name, level, hardness) {
 StartupEvents.registry("block", (event) => {
 	ores.forEach((ore) => {
 		ore.types.forEach((type) => {
-			if (type !== "stone" && type !== "deepslate") {
+			if (type !== "stone" && type !== "deepslate" && type !== "nether") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
 					.soundType(SoundType.STONE)
@@ -75,6 +75,18 @@ StartupEvents.registry("block", (event) => {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
 					.soundType(SoundType.DEEPSLATE)
+					.hardness(ore.hardness + 1.5)
+					.resistance(ore.hardness + 1.5)
+					.tag(`${global.namespace}:ores`)
+					.tag("forge:ores")
+					.tag(`forge:ores/${ore.name}`)
+					.tagBlock(pickaxe)
+					.tagBlock(global.miningLevel[ore.level])
+					.requiresTool(true)
+			} else if (type === "nether") {
+				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
+					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
+					.soundType(SoundType.NETHER_ORE)
 					.hardness(ore.hardness + 1.5)
 					.resistance(ore.hardness + 1.5)
 					.tag(`${global.namespace}:ores`)

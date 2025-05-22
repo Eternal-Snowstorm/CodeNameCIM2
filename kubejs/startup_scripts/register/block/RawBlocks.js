@@ -5,8 +5,10 @@ StartupEvents.registry("block", (event)=>{
             .textureAll(`${global.namespace}:block/material/raw/raw_${name}_block`)
             .tagBlock(pickaxe)
             .tagBlock(global.miningLevel[level])
+            .tagItem(`${global.namespace}:raw_metals`)
             .tag("forge:storage_blocks")
             .tag(`forge:storage_blocks/raw_${name}`)
+            
     }
 
     addAloneRawMaterialBlock("vanadium", "iron")

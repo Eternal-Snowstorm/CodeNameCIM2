@@ -28,6 +28,11 @@ ServerEvents.recipes((event) => {
 			console.warn(`No nugget found for ${metal}!`)
 		}
 
+		if (!(Ingredient.of(`#forge:ores/${metal}`).itemIds.length === 0)) {
+			minecraft.smelting(`#forge:ingots/${metal}`, `#forge:ores/${metal}`)
+			minecraft.blasting(`#forge:ingots/${metal}`, `#forge:ores/${metal}`)
+		}
+
 		if (!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
 			if (!(Ingredient.of(`#forge:storage_blocks/raw_${metal}`).itemIds.length === 0)) {
 				kubejs.shapeless(`9x #forge:raw_materials/${metal}`, [`#forge:storage_blocks/raw_${metal}`])
@@ -41,12 +46,48 @@ ServerEvents.recipes((event) => {
 			} else {
 				console.warn(`No storage block found for raw ${metal}!`)
 			}
+			minecraft.smelting(`#forge:ingots/${metal}`, `#forge:raw_materials/${metal}`)
+			minecraft.blasting(`#forge:ingots/${metal}`, `#forge:raw_materials/${metal}`)
 			thermal.smelter([
 				`#forge:ingots/${metal}`,
 				Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5)
 			], `#forge:raw_materials/${metal}`)
 		} else {
 			console.warn(`No raw material found for ${metal}!`)
+		}
+
+		if (!(Ingredient.of(`#create:crushed_raw_materials/${metal}`).itemIds.length === 0)) {
+			if(!(Ingredient.of(`#forge:storage_blocks/raw_${metal}`).itemIds.length === 0)) {
+				create.crushing([
+					`9x #create:crushed_raw_materials/${metal}`,
+					Item.of("9x create:experience_nugget").withChance(0.75)],
+				`#forge:storage_blocks/raw_${metal}`)
+			} else {
+				console.warn(`No storage block found for raw ${metal}!`)
+			}
+			if(!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
+				create.crushing([
+					`#create:crushed_raw_materials/${metal}`,
+					Item.of("create:experience_nugget").withChance(0.75)],
+				`#forge:raw_materials/${metal}`)
+			} else {
+				console.warn(`No raw material found for ${metal}!`)
+			}
+			if(!(Ingredient.of(`#forge:ores/${metal}`).itemIds.length === 0)) {
+				create.crushing([
+					`#create:crushed_raw_materials/${metal}`,
+					Item.of(Ingredient.of(`#create:crushed_raw_materials/${metal}`).itemIds[0])
+						.withChance(0.75),
+					Item.of("create:experience_nugget").withChance(0.75),
+					Item.of("minecraft:cobblestone").withChance(0.125)],
+				`#forge:ores/${metal}`)
+			} else {
+				console.warn(`No ore found for ${metal}!`)
+			}
+			minecraft.smelting(`#forge:ingots/${metal}`, `#create:crushed_raw_materials/${metal}`)
+			minecraft.blasting(`#forge:ingots/${metal}`, `#create:crushed_raw_materials/${metal}`)
+		} else {
+			console.warn(`No crushed raw material found for ${metal}!`)
 		}
 
 		if (!(Ingredient.of(`#forge:plates/${metal}`).itemIds.length === 0)) {
