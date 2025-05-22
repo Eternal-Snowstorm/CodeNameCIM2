@@ -152,10 +152,10 @@ ServerEvents.recipes((event) => {
 			output: `#forge:gears/${metal}`
 		}, {
 			type: "minecraft:smelting",
-			input: `#forge:dusts/${metal}`
+			output: `#forge:ingots/${metal}`
 		}, {
 			type: "minecraft:blasting",
-			input: `#forge:dusts/${metal}`
+			output: `#forge:ingots/${metal}`
 		}, {
 			type: "thermal:smelter",
 			input: `#forge:dusts/${metal}`,
@@ -164,6 +164,15 @@ ServerEvents.recipes((event) => {
 			type: "thermal:smelter",
 			input: `#forge:plates/${metal}`,
 			output: `#forge:ingots/${metal}`
+		}, {
+			type: "create:crushing",
+			input: `#forge:ores/${metal}`
+		}, {
+			type: "create:crushing",
+			input: `#forge:raw_materials/${metal}`
+		}, {
+			type: "create:crushing",
+			input: `#forge:storage_blocks/raw_${metal}`
 		}])
 	})
 

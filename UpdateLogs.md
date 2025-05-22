@@ -153,6 +153,7 @@
  - 更新了`Ad Astra` Mod的版本
  - 更新了`应用能源2` Mod的版本
  - 为`#create:crushed_raw_materials`标签添加了子标签
+ - 扩充了金属类材料的配方代码
 
 ### 仓库整理
  - 清理了`/config`中不会修改的mod配置文件

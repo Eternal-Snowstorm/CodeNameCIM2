@@ -33,8 +33,14 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
 	addMaterialLanguage("stainless_steel", "不锈耐酸钢")
+	addMaterialLanguage("quartz", "石英")
+	addMaterialLanguage("cobalt", "钴")
+	addMaterialLanguage("vanadium", "钒")
 	addMaterialLanguage("chromium", "铬")
 	addMaterialLanguage("platinum", "铂")
+	addMaterialLanguage("desh", "戴斯")
+    addMaterialLanguage("ostrum", "紫金")
+    addMaterialLanguage("calorite", "耐热金属")
 	addMaterialLanguage("end_stone", "末地石")
 
 	addMachineLanguage("water_pump", "水泵")
@@ -57,7 +63,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMechanismPartLanguage("mekanism", "通用")
 	addMechanismPartLanguage("final", "终章")
 
-	addMekanismLanguage("sulfide_gas_mixture", "硫化物混合气")
+	addGasLanguage("sulfide_gas_mixture", "硫化物混合气")
 
 	addSolutionLanguage("feso4", "硫酸亚铁", "FeSO₄")
 	addSolutionLanguage("fecl2", "氯化亚铁", "FeCl₂")
@@ -100,9 +106,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("blood", "血液")
 
 	addBlockLanguage("the_accelerator_of_mechanism_power", "构件之力催生器")
-	addBlockLanguage("quartz_ore", "石英矿石")
-	addBlockLanguage("deepslate_quartz_ore", "深层石英矿石")
-	addBlockLanguage("moon_cobalt_ore", "月球钴矿石")
 	addBlockLanguage("osmium_tile", "锇砖瓦")
 	addBlockLanguage("compression_end_stone_dust_block", "压缩末地石粉块")
 
@@ -296,7 +299,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${global.namespace}.${key}`, value)
 	}
 
-	function addMekanismLanguage(key, value) {
+	function addGasLanguage(key, value) {
 		event.add(`gas.${global.namespace}.${key}`, value)
 	}
 
@@ -331,6 +334,19 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${global.namespace}.molten_${key}`, `熔融${value}`)
 		event.add(`fluid.${global.namespace}.molten_${key}`, `熔融${value}`)
 		event.add(`item.${global.namespace}.molten_${key}_bucket`, `熔融${value}桶`)
+
+		event.add(`item.${global.namespace}.raw_${key}`, `粗${value}`)
+		event.add(`block.${global.namespace}.raw_${key}_block`, `粗${value}块`)
+		event.add(`item.${global.namespace}.crushed_raw_${key}`, `粉碎${value}矿石`)
+
+		event.add(`block.${global.namespace}.${key}_ore`, `${value}矿石`)
+		event.add(`block.${global.namespace}.deepslate_${key}_ore`, `深层${value}矿石`)
+		event.add(`block.${global.namespace}.nether_${key}_ore`, `下界${value}矿石`)
+		event.add(`block.${global.namespace}.end_${key}_ore`, `末地${value}矿石`)
+		event.add(`block.${global.namespace}.moon_${key}_ore`, `月球${value}矿石`)
+		event.add(`block.${global.namespace}.mars_${key}_ore`, `火星${value}矿石`)
+		event.add(`block.${global.namespace}.venus_${key}_ore`, `金星${value}矿石`)
+		event.add(`block.${global.namespace}.glacio_${key}_ore`, `霜原${value}矿石`)
 	}
 
 	function addCommonTooltipLanguage(key, value) {

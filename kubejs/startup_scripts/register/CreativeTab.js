@@ -22,6 +22,7 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 		.icon(() => Item.of("ue_addons:platinum_ingot"))
 		.content(() => Ingredient.of("#ue_addons:metals").itemIds
 			.concat(Ingredient.of("#ue_addons:ores").itemIds)
+			.concat(Ingredient.of("#ue_addons:raw_metals").itemIds)
 		)
 		.displayName(Component.translate(`itemGroup.${global.namespace}.metals`))
 })
