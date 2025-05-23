@@ -1,0 +1,58 @@
+{
+	"type": "minecraft:empty",
+	"pools": [
+		{
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "minecraft:gunpowder",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "create:crushed_raw_zinc",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "create:zinc_nugget",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 5,
+								"max": 11
+							}
+						}
+					]
+				}
+			],
+			"rolls": {
+				"min": 1,
+				"max": 2
+			}
+		}
+	]
+}

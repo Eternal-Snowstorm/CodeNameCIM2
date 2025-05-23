@@ -1,0 +1,8 @@
+{
+	"block": "minecraft:bedrock",
+	"loot_tables": {
+		"earth": "deepdrilling:ore_nodes/bedrock/earth",
+		"common": "deepdrilling:ore_nodes/bedrock/common",
+		"rare": "deepdrilling:ore_nodes/bedrock/rare"
+	}
+}

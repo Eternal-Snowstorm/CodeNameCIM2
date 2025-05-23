@@ -39,8 +39,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("chromium", "铬")
 	addMaterialLanguage("platinum", "铂")
 	addMaterialLanguage("desh", "戴斯")
-    addMaterialLanguage("ostrum", "紫金")
-    addMaterialLanguage("calorite", "耐热金属")
+	addMaterialLanguage("ostrum", "紫金")
+	addMaterialLanguage("calorite", "耐热金属")
 	addMaterialLanguage("end_stone", "末地石")
 
 	addMachineLanguage("water_pump", "水泵")
@@ -103,6 +103,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addSolutionLanguage("na2so4", "硫酸钠", "Na₂SO₄")
 
 	addOreNodeLanguaue("uranium", "铀")
+	addOreNodeLanguaue("copper", "铜")
+	addOreNodeLanguaue("zinc", "锌")
+	addOreNodeLanguaue("iron", "铁")
+	addOreNodeLanguaue("gold", "金")
 
 	addFluidLanguage("molten_andesite_alloy", "熔融安山合金")
 	addFluidLanguage("blood", "血液")
@@ -133,8 +137,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguage("curios.identifier.mechanisms", "构件")
 	addAloneLanguage(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")
 	addAloneLanguage(`message.${global.namespace}.debug.getHardness`, "这个方块的硬度是: %s")
-	addAloneLanguage(`text.${global.namespace}.dev`, "§0开发中画面, 实际内容请以正式版为准")
-	addAloneLanguage(`text.${global.namespace}.player`, "§0测试中版本, 不代表最终品质")
+	addAloneLanguage(`text.${global.namespace}.dev`, "§0● 开发中画面, 实际内容请以正式版为准")
+	addAloneLanguage(`text.${global.namespace}.player`, "§0● 测试中版本, 不代表最终品质")
 	addAloneLanguage(`message.${global.namespace}.checkCheating`, "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?")
 	addAloneLanguage(`message.${global.namespace}.checkMultipleCheating`, "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?")
 	addAloneLanguage(`sea.${global.namespace}.search`, "§b正在使用对海搜索!")
@@ -167,7 +171,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLanguage("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
 	addJEIInfoLanguage("cmi:bucket", "似是一种巨大的力量塑造的诡异造物\n它有着令人倍感亲切的形状, 却处于一种令人不寒而栗的陌生角度\n这巨大的力量, 炽热, 强大又致命\n善良者受其腐化\n卑鄙者因其强大\n收容之器受其影响, 转为包覆之具, 幸于并无灵魂, 于我没有危害")
 	addJEIInfoLanguage("#ad_astra:power_consumption_machines", "该Mod的机器每个面都有能量输入的上限\n如果想要不会断电确保产量你可能需要给每个面都连接一根电线")
-	addJEIInfoLanguage("engineered_schematics:multiblock_schematic","手持原理图右键地面以放置投影网格, 将原理图放置于副手可以查看方块的具体位置")
+	addJEIInfoLanguage("engineered_schematics:multiblock_schematic", "手持原理图右键地面以放置投影网格, 将原理图放置于副手可以查看方块的具体位置")
 
 	addAccelerateTooltipLanguage("cmi:stone_mechanism", "§e转化石头\n10%安山岩\n10%闪长岩\n10%花岗岩\n10%石灰岩\n10%焦黑石头\n§2转化深板岩\n10%焦黑石头\n10%凝灰岩\n10%熔渣\n10%滴水石块\n10%平滑玄武岩")
 	addAccelerateTooltipLanguage("cmi:andesite_mechanism", "§e转化石头\n20%安山岩\n5%铁矿石\n5%锌矿石\n§2转化深板岩\n15%安山岩\n10%深层铁矿石\n10%深层锌矿石")
@@ -399,6 +403,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addOreNodeLanguaue(key, value) {
-		event.add(`block.${global.namespace}.${key}_ore_node`, `${value}矿物节点`)
+		event.add(`block.${global.namespace}.stone_${key}_ore_node`, `浅层${value}矿物节点`)
+		event.add(`block.${global.namespace}.deepslate_${key}_ore_node`, `深层${value}矿物节点`)
+		event.add(`block.${global.namespace}.nether_${key}_ore_node`, `下界${value}矿物节点`)
 	}
 })
