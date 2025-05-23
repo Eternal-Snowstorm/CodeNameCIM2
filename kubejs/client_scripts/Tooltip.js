@@ -63,8 +63,8 @@ ItemEvents.tooltip((event) => {
 	"ptso42"]
 
 	chemSalts.forEach((salt)=>{
-		addCommonTooltip(`ue_addons:${salt}`)
-		addCommonTooltip(`ue_addons:${salt}_solution_bucket`)
+		addCommonTooltip(`cmi:${salt}`)
+		addCommonTooltip(`cmi:${salt}_solution_bucket`)
 	})
 	addCommonTooltip("#minecraft:pickaxes")
 
