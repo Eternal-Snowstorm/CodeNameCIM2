@@ -1,0 +1,17 @@
+{
+	"type": "deepdrilling:ore_node",
+	"biomes": "#deepdrilling:ochrum_node",
+	"step": "underground_decoration",
+	"spawn_overrides": {},
+	"ore_node": {
+		"nodeID": "deepdrilling:gold_node",
+		"ores": [
+			"minecraft:gold_ore"
+		],
+		"layers": [
+			"create:ochrum",
+			"minecraft:tuff",
+			"minecraft:dripstone_block"
+		]
+	}
+}

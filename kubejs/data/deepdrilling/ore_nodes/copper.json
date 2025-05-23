@@ -1,0 +1,8 @@
+{
+	"block": "cmi:deepslate_copper_ore_node",
+	"loot_tables": {
+		"earth": "deepdrilling:ore_nodes/copper/earth",
+		"common": "deepdrilling:ore_nodes/copper/common",
+		"rare": "deepdrilling:ore_nodes/copper/rare"
+	}
+}

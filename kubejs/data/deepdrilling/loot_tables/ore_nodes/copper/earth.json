@@ -1,0 +1,73 @@
+{
+	"type": "minecraft:empty",
+	"pools": [
+		{
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "create:veridium",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 2,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:tuff",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 3,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:andesite",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 3,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "minecraft:smooth_basalt",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 3,
+								"max": 4
+							}
+						}
+					]
+				}
+			],
+			"rolls": {
+				"min": 2,
+				"max": 3
+			}
+		}
+	]
+}

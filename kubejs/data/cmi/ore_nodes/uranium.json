@@ -1,5 +1,5 @@
 {
-	"block": "cmi:uranium_ore_node",
+	"block": "cmi:nether_uranium_ore_node",
 	"loot_tables": {
 		"earth": "cmi:ore_nodes/uranium/earth",
 		"common": "cmi:ore_nodes/uranium/common",

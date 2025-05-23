@@ -1,0 +1,17 @@
+{
+	"type": "deepdrilling:ore_node",
+	"biomes": "#deepdrilling:crimsite_node",
+	"step": "underground_decoration",
+	"spawn_overrides": {},
+	"ore_node": {
+		"nodeID": "deepdrilling:iron_node",
+		"ores": [
+			"minecraft:iron_ore"
+		],
+		"layers": [
+			"create:crimsite",
+			"minecraft:tuff",
+			"create:limestone"
+		]
+	}
+}

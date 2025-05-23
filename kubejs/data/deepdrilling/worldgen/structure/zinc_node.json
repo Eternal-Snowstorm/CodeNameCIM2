@@ -1,0 +1,17 @@
+{
+	"type": "deepdrilling:ore_node",
+	"biomes": "#deepdrilling:asurine_node",
+	"step": "underground_decoration",
+	"spawn_overrides": {},
+	"ore_node": {
+		"nodeID": "deepdrilling:asurine_node",
+		"ores": [
+			"create:zinc_ore"
+		],
+		"layers": [
+			"create:asurine",
+			"minecraft:tuff",
+			"minecraft:calcite"
+		]
+	}
+}
