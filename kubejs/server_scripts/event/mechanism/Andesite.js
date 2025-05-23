@@ -73,8 +73,7 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 		// 给进行操作的玩家播放提示音
 		player.playNotifySound("create:crafter_craft", "voice", 2, 1)
 		// 检测玩家是否创造模式
-		if (event.player.isCreative()) {
-		} else {
+		if (!event.player.isCreative()) {
 			// 若是生存模式则减少一个安山构件
 			event.getItem().shrink(1)
 		}
