@@ -105,7 +105,11 @@ ItemEvents.tooltip((event) => {
 	function addAccelerateTooltip(item) {
 		event.addAdvanced(item, (item, advanced, text) => {
 			if (event.shift) {
-				text.add(Component.translate(`tooltip.${item.getId()}.accelerate`.replace(":", ".")))
+				let lines = Component.translate(`tooltip.${item.getId()}.accelerate`.replace(":", "."))
+					.string.split("\n")
+				lines.forEach((line) => {
+					text.add(line)
+				})
 			} else {
 				text.add(Component.translate(`tooltip.${global.namespace}.acceleratable`))
 			}
@@ -127,7 +131,11 @@ ItemEvents.tooltip((event) => {
 	event.addAdvanced("cmi:initial_item_kit",
 		(item, advanced, text) => {
 			if (event.shift) {
-				text.add(Component.translate("tooltip.cmi.initial_item_kit.shift"))
+				let lines = Component.translate("tooltip.cmi.initial_item_kit.shift")
+					.string.split("\n")
+				lines.forEach((line) => {
+					text.add(line)
+				})
 			} else {
 				text.add(Component.translate("tooltip.cmi.initial_item_kit.tip"))
 			}
