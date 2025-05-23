@@ -6,7 +6,7 @@ StartupEvents.registry("block", (event) => {
 				.hardness(-1)
 				.resistance(100)
 				.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
-				.tagBlock("deepdrilling:ore_nodes")
+				.tagItem(`${global.namespace}:ore_nodes`)
 				.tag("deepdrilling:ore_nodes")
 		} else if (type === "deepslate") {
 			event.create(`${global.namespace}:${type}_${name}_ore_node`)
@@ -14,7 +14,7 @@ StartupEvents.registry("block", (event) => {
 				.hardness(-1)
 				.resistance(100)
 				.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
-				.tagBlock("deepdrilling:ore_nodes")
+				.tagItem(`${global.namespace}:ore_nodes`)
 				.tag("deepdrilling:ore_nodes")
 		} else if (type === "nether") {
 			event.create(`${global.namespace}:${type}_${name}_ore_node`)
@@ -22,7 +22,7 @@ StartupEvents.registry("block", (event) => {
 				.hardness(-1)
 				.resistance(100)
 				.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
-				.tagBlock("deepdrilling:ore_nodes")
+				.tagItem(`${global.namespace}:ore_nodes`)
 				.tag("deepdrilling:ore_nodes")
 		}
 	}
