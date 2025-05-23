@@ -23,6 +23,7 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 		.content(() => Ingredient.of("#cmi:metals").itemIds
 			.concat(Ingredient.of("#cmi:ores").itemIds)
 			.concat(Ingredient.of("#cmi:raw_metals").itemIds)
+			.concat(Ingredient.of("#cmi:ore_nodes").itemIds)
 		)
 		.displayName(Component.translate(`itemGroup.${global.namespace}.metals`))
 })
