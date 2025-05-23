@@ -12,7 +12,7 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.remove(`#${global.namespace}:metals`)
 	event.remove(`#${global.namespace}:ores`)
 	event.remove(`#${global.namespace}:raw_metals`)
-	event.remove(`#${global.namespace}:nodes`)
+	event.remove(`#${global.namespace}:ore_nodes`)
 })
 
 StartupEvents.modifyCreativeTab("create:base", (event) => {
