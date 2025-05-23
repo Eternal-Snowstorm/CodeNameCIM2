@@ -1,6 +1,6 @@
 StartupEvents.registry("block", (event) => {
 	function addOreNode(name, type) {
-		if (type !== "nether" || type !== "deepslate") {
+		if (type !== "nether" && type !== "deepslate") {
 			event.create(`${global.namespace}:${type}_${name}_ore_node`)
 				.soundType(SoundType.STONE)
 				.hardness(-1)
