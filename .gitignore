@@ -62,3 +62,4 @@ fabric*
 !/config/jei/
 !/config/inventoryprofilesnext/inventoryprofiles.json
 !/config/cmi*
+!/config/immersiveengineering-client.toml
