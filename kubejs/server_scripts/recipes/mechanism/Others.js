@@ -1,17 +1,26 @@
 ServerEvents.recipes((event) => {
 	let { create, vintageimprovements } = event.recipes
 
-	create.mechanical_crafting("cmi:the_accelerator_of_mechanism_power", [
-		"A B",
-		"DCD",
-		"EEE"
+	event.shaped("cmi:the_accelerator_of_mechanism_power", [
+		"ABC",
+		"DEF",
+		"GHI"
 	], {
-		A: "#forge:gears/iron",
-		B: "#forge:gears/gold",
-		C: "#forge:gears/copper",
+		A: "cmi:wooden_mechanism",
+		B: "cmi:stone_mechanism",
+		C: "cmi:iron_mechanism",
 		D: "cmi:andesite_mechanism",
-		E: "#forge:stone"
+		F: "cmi:copper_mechanism",
+		G: 'cmi:photosensitive_mechanism',
+		H: "cmi:gold_mechanism",
+		I: "cmi:nature_mechanism",
+		E: "cmi:stone_casing"
 	})
+	event.shapeless("cmi:stone_casing", [
+		 "minecraft:chiseled_stone_bricks",
+		 "create:polished_cut_deepslate",
+		 'immersiveengineering:hammer'
+	])
 
 	create.filling("4x cmi:magical_mechanism_part", [
 		Fluid.of("create_enchantment_industry:hyper_experience", 10),

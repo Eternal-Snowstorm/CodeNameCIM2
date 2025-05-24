@@ -114,6 +114,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("the_accelerator_of_mechanism_power", "构件之力催生器")
 	addBlockLanguage("osmium_tile", "锇砖瓦")
 	addBlockLanguage("compression_end_stone_dust_block", "压缩末地石粉块")
+	addBlockLanguage("stone_casing", "石质机壳")
 
 	addBlockLanguage("andesite_machine", "安山机械方块")
 	addBlockLanguage("brass_machine", "黄铜机械方块")

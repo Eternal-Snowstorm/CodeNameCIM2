@@ -19,6 +19,8 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 水泵
+	/*
+	//deleted by ue
 	create.sequenced_assembly("cmi:water_pump", [
 		"#forge:treated_wood"
 	], [
@@ -41,4 +43,6 @@ ServerEvents.recipes((event) => {
 			"tconstruct:seared_brick"
 		])
 	]).loops(1).transitionalItem("immersiveengineering:treated_wood_horizontal")
+
+*/
 })

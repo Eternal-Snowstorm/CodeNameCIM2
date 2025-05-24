@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
 		"BBB",
 		"  B"
 	], {
-		A: "#minecraft:planks",
+		A: "iron_mechanism",
 		B: "#forge:plates/iron"
 	}).id("supplementaries:faucet")
 })
