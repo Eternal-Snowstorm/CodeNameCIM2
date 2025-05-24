@@ -26,7 +26,7 @@ Ponder.registry((event) => {
 
 		scene.addKeyframe()
 		scene.showControls(30, [2, 2, 2], "left")
-			.rightClick() // 在框内显示 鼠标右键 的图示
+			.rightClick()
 		scene.world.modifyBlockEntityNBT([2, 1.5, 2], (nbt) => {
 			nbt.recipe = "tconstruct:smeltery/casting/metal/pig_iron/block"
 		})

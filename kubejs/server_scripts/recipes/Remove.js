@@ -16,7 +16,9 @@ ServerEvents.recipes((event) => {
 		"create:sequenced_assembly/precision_mechanism"
 	]
 	removeRecipeIds.forEach((id) => {
-		event.remove({ id: id })
+		event.remove({
+			id: id
+		})
 	})
 
 	let removeRecipeExtraIds = [
@@ -33,13 +35,27 @@ ServerEvents.recipes((event) => {
 		"zinc"
 	]
 	removeRecipeExtraIds.forEach((id) => {
-		event.remove({ id: `thermal_extra:machine/nitratic_igniter/raw_${id}` })
-		event.remove({ id: `thermal_extra:machine/crucible/raw_${id}_from_chunk` })
-		event.remove({ id: `thermal_extra:machine/crucible/raw_${id}` })
-		event.remove({ id: `thermal_extra:machine/endothermic_dehydrator/raw_${id}` })
-		event.remove({ id: `thermal_extra:machine/chiller/raw_${id}` })
-		event.remove({ id: `thermal_extra:compat/machine/chiller/raw_${id}` })
-		event.remove({ id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}` })
+		event.remove({
+			id: `thermal_extra:machine/nitratic_igniter/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:machine/crucible/raw_${id}_from_chunk`
+		})
+		event.remove({
+			id: `thermal_extra:machine/crucible/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:machine/endothermic_dehydrator/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:machine/chiller/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:compat/machine/chiller/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`
+		})
 	})
 
 	let removeItemOutputRecipes = [
@@ -81,27 +97,35 @@ ServerEvents.recipes((event) => {
 		"portality:generator"
 	]
 	removeItemOutputRecipes.forEach((item) => {
-		event.remove({ output: item })
+		event.remove({
+			output: item
+		})
 	})
 
 	let removeTagsRecipes = [
 
 	]
 	removeTagsRecipes.forEach((tag) => {
-		event.remove({ output: tag })
+		event.remove({
+			output: tag
+		})
 	})
 
 	let removeItemInputRecipes = [
 	]
 	removeItemInputRecipes.forEach((item) => {
-		event.remove({ input: item })
+		event.remove({
+			input: item
+		})
 	})
 
 	let removeRecipeType = [
 		"vintageimprovements:laser_cutting"
 	]
 	removeRecipeType.forEach((type) => {
-		event.remove({ type: type })
+		event.remove({
+			type: type
+		})
 	})
 
 	global.metalGroup.forEach((metal) => {
@@ -185,5 +209,10 @@ ServerEvents.recipes((event) => {
 		type: "minecraft:crafting_shaped",
 		input: "#forge:ingots",
 		output: "#forge:rods"
+	})
+
+	event.remove({
+		type: "thermal:smelter",
+		input: "#forge:dusts",
 	})
 })
