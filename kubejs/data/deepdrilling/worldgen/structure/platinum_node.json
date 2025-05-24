@@ -1,0 +1,17 @@
+{
+	"type": "deepdrilling:ore_node",
+	"biomes": "ad_astra:lunar_wastelands",
+	"step": "underground_decoration",
+	"spawn_overrides": {},
+	"ore_node": {
+		"nodeID": "cmi:moon_platinum_ore_node",
+		"ores": [
+			"cmi:moon_platinum_ore"
+		],
+		"layers": [
+			"cmi:raw_platinum_block",
+			"minecraft:cobbled_deepslate",
+			"minecraft:cobblestone"
+		]
+	}
+}
