@@ -1,0 +1,43 @@
+{
+	"type": "minecraft:empty",
+	"pools": [
+		{
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "cmi:platinum_shard",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "ad_astra:moon_stone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 2,
+								"max": 4
+							}
+						}
+					]
+				}
+			],
+			"rolls": {
+				"min": 2,
+				"max": 3
+			}
+		}
+	]
+}

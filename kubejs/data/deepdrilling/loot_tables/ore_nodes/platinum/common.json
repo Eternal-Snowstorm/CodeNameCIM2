@@ -1,0 +1,43 @@
+{
+	"type": "minecraft:empty",
+	"pools": [
+		{
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "cmi:platinum_shard",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 6,
+								"max": 7
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "cmi:crushed_raw_platinum",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 2,
+								"max": 8
+							}
+						}
+					]
+				}
+			],
+			"rolls": {
+				"min": 1,
+				"max": 2
+			}
+		}
+	]
+}
