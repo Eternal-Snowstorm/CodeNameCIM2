@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { tconstruct } = event.recipes
 
 	let castingMechanismMaterials = [
-		["tconstruct:molten_iron", "cmi:incomplete_iron_mechanism"],
+		//["tconstruct:molten_iron", "cmi:incomplete_iron_mechanism"],
 		["tconstruct:molten_gold", "cmi:incomplete_gold_mechanism"],
 		["tconstruct:molten_copper", "cmi:incomplete_copper_mechanism"],
 		["cmi:molten_andesite_alloy", "cmi:incomplete_andesite_mechanism"]
