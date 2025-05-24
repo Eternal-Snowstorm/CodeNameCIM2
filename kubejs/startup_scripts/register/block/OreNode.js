@@ -32,4 +32,5 @@ StartupEvents.registry("block", (event) => {
 	addOreNode("iron", "deepslate")
 	addOreNode("zinc", "deepslate")
 	addOreNode("gold", "deepslate")
+	addOreNode("platinum", "moon")
 })
