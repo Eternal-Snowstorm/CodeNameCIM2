@@ -26,7 +26,7 @@ StartupEvents.postInit((event) => {
 	
 	addConversionRecipes("tconstruct:cobalt_ore", "cmi:cobalt_mechanism")
 	
-	addConversionRecipes("cmi:copper_mechanism", "cmi:copper_mechanism")
+	addConversionRecipes("minecraft:copper_ore", "cmi:copper_mechanism")
 	addConversionRecipes("minecraft:gold_ore", "cmi:copper_mechanism")
 	addConversionRecipes("minecraft:clay", "cmi:copper_mechanism")
 	addConversionRecipes("minecraft:deepslate_copper_ore", "cmi:copper_mechanism")
