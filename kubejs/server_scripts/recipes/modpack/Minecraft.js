@@ -10,4 +10,14 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/osmium",
 		B: "#forge:ingots/vanadium"
 	})
+
+	kubejs.shaped("cmi:water_pump", [
+		"ACA",
+		"ABA",
+		"AAA"
+	], {
+		A: "#forge:treated_wood",
+		B: "cmi:copper_mechanism",
+		C: "#forge:plates/iron"
+	})
 })

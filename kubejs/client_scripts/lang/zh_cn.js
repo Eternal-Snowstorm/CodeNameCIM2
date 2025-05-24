@@ -408,5 +408,10 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${global.namespace}.stone_${key}_ore_node`, `浅层${value}矿物节点`)
 		event.add(`block.${global.namespace}.deepslate_${key}_ore_node`, `深层${value}矿物节点`)
 		event.add(`block.${global.namespace}.nether_${key}_ore_node`, `下界${value}矿物节点`)
+		event.add(`block.${global.namespace}.end_${key}_ore_node`, `末地${value}矿物节点`)
+		event.add(`block.${global.namespace}.moon_${key}_ore_node`, `月球${value}矿物节点`)
+		event.add(`block.${global.namespace}.mars_${key}_ore_node`, `火星${value}矿物节点`)
+		event.add(`block.${global.namespace}.venus_${key}_ore_node`, `金星${value}矿物节点`)
+		event.add(`block.${global.namespace}.glacio_${key}_ore_node`, `霜原${value}矿物节点`)
 	}
 })

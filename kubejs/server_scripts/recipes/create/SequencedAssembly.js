@@ -17,32 +17,4 @@ ServerEvents.recipes((event) => {
 	vintageimprovements.polishing("create:polished_rose_quartz", [
 		"create:rose_quartz"
 	])
-
-	// 水泵
-	/*
-	//deleted by ue
-	create.sequenced_assembly("cmi:water_pump", [
-		"#forge:treated_wood"
-	], [
-		create.pressing("immersiveengineering:treated_wood_horizontal", [
-			"immersiveengineering:treated_wood_horizontal"
-		]),
-		create.deploying("immersiveengineering:treated_wood_horizontal", [
-			"immersiveengineering:treated_wood_horizontal",
-			"cmi:copper_mechanism"
-		]),
-		create.cutting("immersiveengineering:treated_wood_horizontal", [
-			"immersiveengineering:treated_wood_horizontal"
-		]),
-		create.deploying("immersiveengineering:treated_wood_horizontal", [
-			"immersiveengineering:treated_wood_horizontal",
-			"thermal:iron_gear"
-		]),
-		create.deploying("immersiveengineering:treated_wood_horizontal", [
-			"immersiveengineering:treated_wood_horizontal",
-			"tconstruct:seared_brick"
-		])
-	]).loops(1).transitionalItem("immersiveengineering:treated_wood_horizontal")
-
-*/
 })

@@ -128,6 +128,9 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:plates/hdpe")
 		.add("mekanism:hdpe_sheet")
 
+	event.get("minecraft:pickaxes")
+		.add("#forge:tools/paxels")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",

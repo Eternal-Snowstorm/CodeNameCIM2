@@ -1,6 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { vintageimprovements, create } = event.recipes
 
+	// 陨石刮痧
 	vintageimprovements.polishing([
 		"ae2:sky_dust",
 		Item.of("ae2:sky_dust").withChance(0.5),
