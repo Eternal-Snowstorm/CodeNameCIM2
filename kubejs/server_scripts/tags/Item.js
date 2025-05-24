@@ -125,6 +125,9 @@ ServerEvents.tags("item", (event) => {
 		.add("immersiveengineering:stick_steel")
 		.add("immersiveengineering:stick_aluminum")
 
+	event.get("forge:plates/hdpe")
+		.add("mekanism:hdpe_sheet")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",

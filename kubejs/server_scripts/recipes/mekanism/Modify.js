@@ -20,8 +20,20 @@ ServerEvents.recipes((event) => {
 		C: "cmi:osmium_tile"
 	}).id("mekanism:steel_casing")
 
+	// 基础控制电路
 	thermal_extra.component_assembly("mekanism:basic_control_circuit", [
 		"#forge:dusts/emerald",
 		"thermal_extra:polyolefin_plate"
 	])
+
+	// 太阳能替换
+	event.replaceInput({
+		input: "mekanismgenerators:solar_panel",
+		output: "mekanismgenerators:solar_generator"
+	}, "mekanismgenerators:solar_panel", "ad_astra:photovoltaic_etrium_cell")
+
+	event.replaceInput({
+		input: "#forge:plates/hdpe",
+		output: "mekanism:solar_neutron_activator"
+	}, "#forge:plates/hdpe", "ad_astra:photovoltaic_etrium_cell")
 })

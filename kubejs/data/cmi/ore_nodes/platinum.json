@@ -1,0 +1,8 @@
+{
+    "block": "cmi:moon_platinum_ore_node",
+    "loot_tables": {
+		"earth": "cmi:ore_nodes/platinum/earth",
+		"common": "cmi:ore_nodes/platinum/common",
+		"rare": "cmi:ore_nodes/platinum/rare"
+	}
+}

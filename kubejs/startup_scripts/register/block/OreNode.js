@@ -1,30 +1,34 @@
 StartupEvents.registry("block", (event) => {
-	function addOreNode(name, type) {
-		if (type !== "nether" && type !== "deepslate") {
-			event.create(`${global.namespace}:${type}_${name}_ore_node`)
-				.soundType(SoundType.STONE)
-				.hardness(-1)
-				.resistance(100)
-				.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
-				.tagItem(`${global.namespace}:ore_nodes`)
-				.tag("deepdrilling:ore_nodes")
-		} else if (type === "deepslate") {
-			event.create(`${global.namespace}:${type}_${name}_ore_node`)
-				.soundType(SoundType.DEEPSLATE)
-				.hardness(-1)
-				.resistance(100)
-				.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
-				.tagItem(`${global.namespace}:ore_nodes`)
-				.tag("deepdrilling:ore_nodes")
-		} else if (type === "nether") {
-			event.create(`${global.namespace}:${type}_${name}_ore_node`)
-				.soundType(SoundType.NETHER_ORE)
-				.hardness(-1)
-				.resistance(100)
-				.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
-				.tagItem(`${global.namespace}:ore_nodes`)
-				.tag("deepdrilling:ore_nodes")
-		}
+	function addOreNode(name, types) {
+		const TYPE_LIST = Array.isArray(types) ? types : [types]
+
+		TYPE_LIST.forEach((type) => {
+			if (type !== "nether" && type !== "deepslate") {
+				event.create(`${global.namespace}:${type}_${name}_ore_node`)
+					.soundType(SoundType.STONE)
+					.hardness(-1)
+					.resistance(100)
+					.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
+					.tagItem(`${global.namespace}:ore_nodes`)
+					.tag("deepdrilling:ore_nodes")
+			} else if (type === "deepslate") {
+				event.create(`${global.namespace}:${type}_${name}_ore_node`)
+					.soundType(SoundType.DEEPSLATE)
+					.hardness(-1)
+					.resistance(100)
+					.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
+					.tagItem(`${global.namespace}:ore_nodes`)
+					.tag("deepdrilling:ore_nodes")
+			} else if (type === "nether") {
+				event.create(`${global.namespace}:${type}_${name}_ore_node`)
+					.soundType(SoundType.NETHER_ORE)
+					.hardness(-1)
+					.resistance(100)
+					.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
+					.tagItem(`${global.namespace}:ore_nodes`)
+					.tag("deepdrilling:ore_nodes")
+			}
+		})
 	}
 
 	addOreNode("uranium", "nether")
@@ -33,4 +37,8 @@ StartupEvents.registry("block", (event) => {
 	addOreNode("zinc", "deepslate")
 	addOreNode("gold", "deepslate")
 	addOreNode("platinum", "moon")
+
+	// 新支持的数组调用方式示例
+	// addOreNode("diamond", ["deepslate", "nether"])
+	// addOreNode("emerald", ["stone", "deepslate"])
 })

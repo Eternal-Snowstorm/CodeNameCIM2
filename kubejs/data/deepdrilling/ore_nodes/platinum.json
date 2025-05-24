@@ -1,8 +1,0 @@
-{
-    "block": "cmi:moon_platinum_ore_node",
-    "loot_tables": {
-		"earth": "deepdrilling:ore_nodes/platinum/earth",
-		"common": "deepdrilling:ore_nodes/platinum/common",
-		"rare": "deepdrilling:ore_nodes/platinum/rare"
-	}
-}
