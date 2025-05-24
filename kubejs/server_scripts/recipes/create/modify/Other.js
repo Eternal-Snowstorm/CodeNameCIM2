@@ -53,6 +53,6 @@ ServerEvents.recipes((event) => {
 		B: "#forge:plates/copper",
 		C: "create:electron_tube",
 		D: "createaddition:capacitor",
-		E: "#forge:gems/charged_amethyst"
+		E: 'cmi:photosensitive_mechanism'
 	}).id("vintageimprovements:mechanical_crafting/laser")
 })
