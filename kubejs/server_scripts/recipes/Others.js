@@ -30,19 +30,11 @@ ServerEvents.recipes((event) => {
 		"ae2:singularity",
 		"#forge:dusts/ender_pearl"
 	])
-
-	kubejs.shapeless("create:andesite_alloy", [
-		"9x cmi:andesite_alloy_nugget"
-	])
-
-	create.pressing("cmi:cinderslime_plate", [
-		"tconstruct:cinderslime_ingot"
-	])
-
+	
 	kubejs.shaped("createaddition:straw", [
 		" AA",
 		"A A",
-		" A"
+		" A "
 	], {
 		A: "#forge:rods/wooden"
 	})
