@@ -405,7 +405,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addOreNodeLanguaue(key, value) {
-		event.add(`block.${global.namespace}.stone_${key}_ore_node`, `浅层${value}矿物节点`)
+		event.add(`block.${global.namespace}.stone_${key}_ore_node`, `${value}矿物节点`)
 		event.add(`block.${global.namespace}.deepslate_${key}_ore_node`, `深层${value}矿物节点`)
 		event.add(`block.${global.namespace}.nether_${key}_ore_node`, `下界${value}矿物节点`)
 		event.add(`block.${global.namespace}.end_${key}_ore_node`, `末地${value}矿物节点`)
