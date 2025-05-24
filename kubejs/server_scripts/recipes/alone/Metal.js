@@ -66,7 +66,6 @@ ServerEvents.recipes((event) => {
 			immersiveengineering.arc_furnace(`#forge:ingots/${metal}`)
 			.secondaries([Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5)])
 			.input(`#forge:raw_materials/${metal}`)
-			.slag("immersiveengineering:slag")
 			.time(900)
 			.energy(230400)
 			.additives([])
