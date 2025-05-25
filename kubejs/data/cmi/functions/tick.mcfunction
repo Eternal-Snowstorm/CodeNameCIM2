@@ -1,1 +1,1 @@
-execute unless data storage initial spawnpoint_structure run execute as @p at @s run function initial:summon
+execute unless data storage initial spawnpoint_structure run execute as @p at @s run function cmi:summon

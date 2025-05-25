@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements } = event.recipes
+	let { create, vintageimprovements, kubejs } = event.recipes
 
-	event.shaped("cmi:the_accelerator_of_mechanism_power", [
+	kubejs.shaped("cmi:the_accelerator_of_mechanism_power", [
 		"ABC",
 		"DEF",
 		"GHI"
@@ -11,15 +11,16 @@ ServerEvents.recipes((event) => {
 		C: "cmi:iron_mechanism",
 		D: "cmi:andesite_mechanism",
 		F: "cmi:copper_mechanism",
-		G: 'cmi:photosensitive_mechanism',
+		G: "cmi:photosensitive_mechanism",
 		H: "cmi:gold_mechanism",
 		I: "cmi:nature_mechanism",
-		E: "cmi:stone_casing"
+		E: "cmi:stone_plate"
 	})
-	event.shapeless("cmi:stone_casing", [
-		 "minecraft:chiseled_stone_bricks",
-		 "create:polished_cut_deepslate",
-		 'immersiveengineering:hammer'
+
+	kubejs.shapeless("cmi:stone_plate", [
+		"minecraft:chiseled_stone_bricks",
+		"create:polished_cut_deepslate",
+		"immersiveengineering:hammer"
 	])
 
 	create.filling("4x cmi:magical_mechanism_part", [

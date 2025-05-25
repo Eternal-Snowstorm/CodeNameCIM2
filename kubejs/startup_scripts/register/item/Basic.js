@@ -42,6 +42,11 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:initial_item_kit`)
 		.glow(true)
 
+	event.create(`${global.namespace}:stone_plate`)
+		.texture(`${global.namespace}:item/material/stone_plate`)
+		.tag("forge:plates")
+		.tag("forge:plates/stone")
+
 	// 铂系列
 	event.create(`${global.namespace}:raw_platinum_particles`)
 		.texture(`${global.namespace}:item/material/platinum/raw_particles`)

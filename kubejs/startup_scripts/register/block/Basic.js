@@ -38,13 +38,4 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.miningLevel["wooden"])
 		.requiresTool(true)
-
-	// 石质外壳
-	event.create(`${global.namespace}:stone_casing`)
-		.soundType(SoundType.STONE)
-		.hardness(6)
-		.resistance(6)
-		.tagBlock(global.toolType["pickaxe"])
-		.tagBlock(global.miningLevel["wooden"])
-		.requiresTool(true)
 })
