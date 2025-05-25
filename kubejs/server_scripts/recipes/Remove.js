@@ -189,14 +189,34 @@ ServerEvents.recipes((event) => {
 			input: `#forge:plates/${metal}`,
 			output: `#forge:ingots/${metal}`
 		}, {
+			type: "thermal:smelter",
+			input: `#forge:ores/${metal}`,
+			output: `#forge:ingots/${metal}`
+		}, {
+			type: "thermal:smelter",
+			input: `#forge:raw_materials/${metal}`,
+			output: `#forge:ingots/${metal}`
+		}, {
 			type: "create:crushing",
+			output: `#create:crushed_raw_materials/${metal}`
+		}, {
+			type: "create:crushing",
+			output: `#forge:raw_materials/${metal}`
+		}, {
+			type: "immersiveengineering:arc_furnace",
 			input: `#forge:ores/${metal}`
 		}, {
-			type: "create:crushing",
+			type: "immersiveengineering:arc_furnace",
 			input: `#forge:raw_materials/${metal}`
 		}, {
-			type: "create:crushing",
+			type: "immersiveengineering:arc_furnace",
 			input: `#forge:storage_blocks/raw_${metal}`
+		}, {
+			type: "immersiveengineering:arc_furnace",
+			input: `#forge:dusts/${metal}`
+		}, {
+			type: "immersiveengineering:crusher",
+			output: `#forge:dusts/${metal}`
 		}])
 	})
 
