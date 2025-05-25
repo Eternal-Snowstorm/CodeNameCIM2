@@ -9,11 +9,11 @@ ServerEvents.recipes((event) => {
 
 	vintageimprovements.polishing([
 		Item.of("minecraft:redstone").withChance(0.25),
-		'minecraft:amethyst_shard'
-	], 'cmi:charged_amethyst')
+		"minecraft:amethyst_shard"
+	], "cmi:charged_amethyst")
 
 	create.deploying("create:electron_tube", [
-		"create:polished_rose_quartz",
-		"#forge:plates/iron"
+		"#forge:plates/iron",
+		"create:polished_rose_quartz"
 	])
 })
