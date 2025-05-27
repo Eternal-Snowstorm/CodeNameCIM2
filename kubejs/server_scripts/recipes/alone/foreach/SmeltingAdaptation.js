@@ -1,20 +1,20 @@
 ServerEvents.recipes((event) => {
-	event.recipeStream({
-		type: "createbigcannons:melting"
-	}).forEach((recipe) => {
-		let tag = recipe.json.get("ingredients").get(0).get("tag")
-		let result = recipe.json.get("results").get(0)
-		let fluid = result.get("fluid")
-		let amount = result.get("amount")
-		let time = Math.floor(recipe.json.get("processingTime") / 5)
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": { "tag": tag },
-			"result": { "amount": amount, "fluid": fluid },
-			"temperature": 1000,
-			"time": time
-		}).id(`${recipe.getId()}_kubejs_tconstruct_melting`)
-	})
+	// event.recipeStream({
+	// 	type: "createbigcannons:melting"
+	// }).forEach((recipe) => {
+	// 	let tag = recipe.json.get("ingredients").get(0).get("tag")
+	// 	let result = recipe.json.get("results").get(0)
+	// 	let fluid = result.get("fluid")
+	// 	let amount = result.get("amount")
+	// 	let time = Math.floor(recipe.json.get("processingTime") / 5)
+	// 	event.custom({
+	// 		"type": "tconstruct:melting",
+	// 		"ingredient": { "tag": tag },
+	// 		"result": { "amount": amount, "fluid": fluid },
+	// 		"temperature": 1000,
+	// 		"time": time
+	// 	}).id(`${recipe.getId()}_kubejs_tconstruct_melting`)
+	// })
 
 	// event.custom({ 
 	//		// 定义安山合金在炉子里融化

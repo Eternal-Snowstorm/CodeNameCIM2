@@ -17,12 +17,6 @@ ServerEvents.recipes((event) => {
 		E: "cmi:stone_plate"
 	})
 
-	kubejs.shapeless("cmi:stone_plate", [
-		"minecraft:chiseled_stone_bricks",
-		"create:polished_cut_deepslate",
-		"immersiveengineering:hammer"
-	])
-
 	create.filling("4x cmi:magical_mechanism_part", [
 		Fluid.of("create_enchantment_industry:hyper_experience", 10),
 		"cmi:basic_mechanism_part"

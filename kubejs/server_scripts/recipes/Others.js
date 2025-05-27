@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 		"ae2:singularity",
 		"#forge:dusts/ender_pearl"
 	])
-	
+
 	kubejs.shaped("createaddition:straw", [
 		" AA",
 		"A A",
@@ -54,15 +54,17 @@ ServerEvents.recipes((event) => {
 	}).id(`${global.namespace}:what_is_this`)
 
 	// 虚空升级
-	tconstruct.casting_basin(
-		"functionalstorage:void_upgrade",
-		Fluid.of("tconstruct:molten_obsidian", 4000)
-	).cast("#functionalstorage:drawer").cast_consumed(true).cooling_time(40)
+	tconstruct.casting_basin("functionalstorage:void_upgrade")
+		.fluid(Fluid.of("tconstruct:molten_obsidian", 4000))
+		.cast("#functionalstorage:drawer")
+		.cast_consumed(true)
+		.cooling_time(40)
 
-	tconstruct.casting_table(
-		"functionalstorage:void_upgrade",
-		Fluid.of("tconstruct:molten_obsidian", 4000)
-	).cast("#functionalstorage:upgrades").cast_consumed(true).cooling_time(40)
+	tconstruct.casting_basin("functionalstorage:void_upgrade")
+		.fluid(Fluid.of("tconstruct:molten_obsidian", 4000))
+		.cast("#functionalstorage:upgrades")
+		.cast_consumed(true)
+		.cooling_time(40)
 
 	// 水龙头
 	kubejs.shaped("supplementaries:faucet", [

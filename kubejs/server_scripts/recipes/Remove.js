@@ -102,15 +102,6 @@ ServerEvents.recipes((event) => {
 		})
 	})
 
-	let removeTagsRecipes = [
-
-	]
-	removeTagsRecipes.forEach((tag) => {
-		event.remove({
-			output: tag
-		})
-	})
-
 	let removeItemInputRecipes = [
 	]
 	removeItemInputRecipes.forEach((item) => {
@@ -129,95 +120,97 @@ ServerEvents.recipes((event) => {
 	})
 
 	global.metalGroup.forEach((metal) => {
-		event.remove([{
-			type: "minecraft:crafting_shapeless",
-			output: `#forge:ingots/${metal}`
-		}, {
-			type: "minecraft:crafting_shaped",
-			output: `#forge:ingots/${metal}`
-		}, {
-			type: "minecraft:crafting_shapeless",
-			output: `#forge:nuggets/${metal}`
-		}, {
-			type: "minecraft:crafting_shapeless",
-			output: `#forge:storage_blocks/${metal}`
-		}, {
-			type: "minecraft:crafting_shaped",
-			output: `#forge:storage_blocks/${metal}`
-		}, {
-			type: "minecraft:crafting_shapeless",
-			output: `#forge:raw_materials/${metal}`
-		}, {
-			type: "minecraft:crafting_shapeless",
-			output: `#forge:storage_blocks/raw_${metal}`
-		}, {
-			type: "minecraft:crafting_shaped",
-			output: `#forge:storage_blocks/raw_${metal}`
-		}, {
-			type: "create:pressing",
-			output: `#forge:plates/${metal}`
-		}, {
-			type: "thermal:press",
-			output: `#forge:plates/${metal}`
-		}, {
-			type: "thermal:pulverizer",
-			output: `#forge:dusts/${metal}`
-		}, {
-			type: "createaddition:rolling",
-			output: `#forge:rods/${metal}`
-		}, {
-			type: "thermal:press",
-			output: `#forge:rods/${metal}`
-		}, {
-			type: "thermal:press",
-			output: `#forge:gears/${metal}`
-		}, {
-			type: "minecraft:crafting_shaped",
-			output: `#forge:gears/${metal}`
-		}, {
-			type: "minecraft:smelting",
-			output: `#forge:ingots/${metal}`
-		}, {
-			type: "minecraft:blasting",
-			output: `#forge:ingots/${metal}`
-		}, {
-			type: "thermal:smelter",
-			input: `#forge:dusts/${metal}`,
-			output: `#forge:ingots/${metal}`
-		}, {
-			type: "thermal:smelter",
-			input: `#forge:plates/${metal}`,
-			output: `#forge:ingots/${metal}`
-		}, {
-			type: "thermal:smelter",
-			input: `#forge:ores/${metal}`,
-			output: `#forge:ingots/${metal}`
-		}, {
-			type: "thermal:smelter",
-			input: `#forge:raw_materials/${metal}`,
-			output: `#forge:ingots/${metal}`
-		}, {
-			type: "create:crushing",
-			output: `#create:crushed_raw_materials/${metal}`
-		}, {
-			type: "create:crushing",
-			output: `#forge:raw_materials/${metal}`
-		}, {
-			type: "immersiveengineering:arc_furnace",
-			input: `#forge:ores/${metal}`
-		}, {
-			type: "immersiveengineering:arc_furnace",
-			input: `#forge:raw_materials/${metal}`
-		}, {
-			type: "immersiveengineering:arc_furnace",
-			input: `#forge:storage_blocks/raw_${metal}`
-		}, {
-			type: "immersiveengineering:arc_furnace",
-			input: `#forge:dusts/${metal}`
-		}, {
-			type: "immersiveengineering:crusher",
-			output: `#forge:dusts/${metal}`
-		}])
+		event.remove([
+			{
+				type: "minecraft:crafting_shapeless",
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "minecraft:crafting_shaped",
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "minecraft:crafting_shapeless",
+				output: `#forge:nuggets/${metal}`
+			}, {
+				type: "minecraft:crafting_shapeless",
+				output: `#forge:storage_blocks/${metal}`
+			}, {
+				type: "minecraft:crafting_shaped",
+				output: `#forge:storage_blocks/${metal}`
+			}, {
+				type: "minecraft:crafting_shapeless",
+				output: `#forge:raw_materials/${metal}`
+			}, {
+				type: "minecraft:crafting_shapeless",
+				output: `#forge:storage_blocks/raw_${metal}`
+			}, {
+				type: "minecraft:crafting_shaped",
+				output: `#forge:storage_blocks/raw_${metal}`
+			}, {
+				type: "create:pressing",
+				output: `#forge:plates/${metal}`
+			}, {
+				type: "thermal:press",
+				output: `#forge:plates/${metal}`
+			}, {
+				type: "thermal:pulverizer",
+				output: `#forge:dusts/${metal}`
+			}, {
+				type: "createaddition:rolling",
+				output: `#forge:rods/${metal}`
+			}, {
+				type: "thermal:press",
+				output: `#forge:rods/${metal}`
+			}, {
+				type: "thermal:press",
+				output: `#forge:gears/${metal}`
+			}, {
+				type: "minecraft:crafting_shaped",
+				output: `#forge:gears/${metal}`
+			}, {
+				type: "minecraft:smelting",
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "minecraft:blasting",
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "thermal:smelter",
+				input: `#forge:dusts/${metal}`,
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "thermal:smelter",
+				input: `#forge:plates/${metal}`,
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "thermal:smelter",
+				input: `#forge:ores/${metal}`,
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "thermal:smelter",
+				input: `#forge:raw_materials/${metal}`,
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "create:crushing",
+				output: `#create:crushed_raw_materials/${metal}`
+			}, {
+				type: "create:crushing",
+				output: `#forge:raw_materials/${metal}`
+			}, {
+				type: "immersiveengineering:arc_furnace",
+				input: `#forge:ores/${metal}`
+			}, {
+				type: "immersiveengineering:arc_furnace",
+				input: `#forge:raw_materials/${metal}`
+			}, {
+				type: "immersiveengineering:arc_furnace",
+				input: `#forge:storage_blocks/raw_${metal}`
+			}, {
+				type: "immersiveengineering:arc_furnace",
+				input: `#forge:dusts/${metal}`
+			}, {
+				type: "immersiveengineering:crusher",
+				output: `#forge:dusts/${metal}`
+			}
+		])
 	})
 
 	event.remove({

@@ -12,9 +12,4 @@ ServerEvents.recipes((event) => {
 			"#forge:dusts/obsidian"
 		])
 	]).transitionalItem("create:unprocessed_obsidian_sheet").loops(10)
-
-	// 玫瑰石英
-	vintageimprovements.polishing("create:polished_rose_quartz", [
-		"create:rose_quartz"
-	])
 })

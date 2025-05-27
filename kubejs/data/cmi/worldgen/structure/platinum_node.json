@@ -10,8 +10,9 @@
 		],
 		"layers": [
 			"cmi:raw_platinum_block",
-			"minecraft:cobbled_deepslate",
-			"minecraft:cobblestone"
+			"ad_astra:moon_cobblestone",
+			"ad_astra:moon_sand",
+			"ad_astra:moon_stone"
 		]
 	}
 }

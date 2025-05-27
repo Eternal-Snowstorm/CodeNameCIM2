@@ -37,7 +37,7 @@ saves/*/session.lock
 /schematics
 hs_err*
 fabric*
-/icon-exports-x64
+/icon-exports-*
 
 # ResourcePacks
 /resourcepacks/*
@@ -63,3 +63,4 @@ fabric*
 !/config/inventoryprofilesnext/inventoryprofiles.json
 !/config/cmi*
 !/config/immersiveengineering-client.toml
+!/config/ad_astra.jsonc

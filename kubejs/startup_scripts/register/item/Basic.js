@@ -42,6 +42,7 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:initial_item_kit`)
 		.glow(true)
 
+	// 石板
 	event.create(`${global.namespace}:stone_plate`)
 		.texture(`${global.namespace}:item/material/stone_plate`)
 		.tag("forge:plates")
