@@ -66,3 +66,4 @@ fabric*
 !/config/ad_astra.jsonc
 !/config/fml.toml
 !/config/portality
+!/config/scannable*

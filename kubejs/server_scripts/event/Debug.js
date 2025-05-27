@@ -57,7 +57,7 @@ PlayerEvents.loggedIn((event) => {
 	for (let i = 0; i < global.debugUserName.length; i++) {
 		if (player.username === global.debugUserName[i]) {
 			// 遍历Tag
-			Ingredient.of("#thermal:machines")
+			Ingredient.of("#cmi:ore_nodes")
 				.getItemIds()
 				.forEach((print) => {
 					console.log(print)
