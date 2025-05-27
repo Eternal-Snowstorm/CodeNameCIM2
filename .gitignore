@@ -64,3 +64,5 @@ fabric*
 !/config/cmi*
 !/config/immersiveengineering-client.toml
 !/config/ad_astra.jsonc
+!/config/fml.toml
+!/config/portality
