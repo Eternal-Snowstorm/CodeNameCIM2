@@ -1,4 +1,4 @@
-
+#This mod detects Block Tag, not Item Tag
 [energy]
 	#Whether to consume energy when performing a scan. Will make the scanner a chargeable item.
 	useEnergy = true

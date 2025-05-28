@@ -11,6 +11,18 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	event.get("create:shaft")
+		.add("create:shaft")
+		.add("copycats:copycat_shaft")
+
+	event.get("create:cogwheel")
+		.add("create:cogwheel")
+		.add("copycats:copycat_cogwheel")
+
+	event.get("create:large_cogwheel")
+		.add("create:large_cogwheel")
+		.add("copycats:copycat_large_cogwheel")
+
 	event.get("forge:ores")
 		.add("ad_astra:moon_cheese_ore")
 

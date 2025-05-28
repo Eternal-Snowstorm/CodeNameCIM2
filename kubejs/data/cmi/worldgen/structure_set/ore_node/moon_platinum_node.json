@@ -1,7 +1,7 @@
 {
 	"structures": [
 		{
-			"structure": "cmi:moon_platinum_node",
+			"structure": "cmi:ore_node/moon_platinum_node",
 			"weight": 1
 		}
 	],

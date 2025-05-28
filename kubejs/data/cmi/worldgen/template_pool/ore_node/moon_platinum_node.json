@@ -5,7 +5,7 @@
 		{
 			"weight": 1,
 			"element": {
-				"location": "cmi:moon_platinum_node",
+				"location": "cmi:ore_node/moon_platinum_node",
 				"element_type": "minecraft:single_pool_element",
 				"processors": "minecraft:empty",
 				"projection": "rigid"

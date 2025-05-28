@@ -1,14 +1,14 @@
 {
-  "structures": [
-    {
-      "structure": "structure_ue_addon:saw_1",
-      "weight": 1
-    }
-  ],
-  "placement": {
-    "type": "minecraft:random_spread",
-    "spacing": 51,
-    "separation": 50,
-    "salt": 1376345692
-  }
+	"structures": [
+		{
+			"structure": "cmi:saw_1",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 51,
+		"separation": 50,
+		"salt": 1376345692
+	}
 }
