@@ -43,6 +43,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("ostrum", "紫金")
 	addMaterialLanguage("calorite", "耐热金属")
 	addMaterialLanguage("end_stone", "末地石")
+	addMaterialLanguage("uranium", "铀")
 
 	addMachineLanguage("water_pump", "水泵")
 	addMachineLanguage("flash_disk_writer", "闪存盘写入器")
@@ -353,6 +354,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${global.namespace}.end_${key}_ore`, `末地${value}矿石`)
 		event.add(`block.${global.namespace}.moon_${key}_ore`, `月球${value}矿石`)
 		event.add(`block.${global.namespace}.mars_${key}_ore`, `火星${value}矿石`)
+		event.add(`block.${global.namespace}.mercury_${key}_ore`, `水星${value}矿石`)
 		event.add(`block.${global.namespace}.venus_${key}_ore`, `金星${value}矿石`)
 		event.add(`block.${global.namespace}.glacio_${key}_ore`, `霜原${value}矿石`)
 	}

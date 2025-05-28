@@ -132,3 +132,7 @@ addOreBlock("platinum", "iron", 8)
 // 钒
 addOreBlock("vanadium", "iron", 5)
 	.nether()
+
+// 铀
+addOreBlock("uranium", "iron", 5)
+	.nether()

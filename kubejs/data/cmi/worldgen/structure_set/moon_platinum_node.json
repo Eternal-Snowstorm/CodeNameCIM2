@@ -1,14 +1,14 @@
 {
 	"structures": [
 		{
-			"structure": "cmi:platinum_node",
+			"structure": "cmi:moon_platinum_node",
 			"weight": 1
 		}
 	],
 	"placement": {
 		"type": "minecraft:random_spread",
-		"spacing": 16,
-		"separation": 8,
-		"salt": 114514
+		"salt": 376345692,
+		"spacing": 51,
+		"separation": 30
 	}
 }

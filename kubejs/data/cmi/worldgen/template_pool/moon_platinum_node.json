@@ -1,0 +1,15 @@
+{
+	"name": "cmi:moon_platinum_node",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"location": "cmi:moon_platinum_node",
+				"element_type": "minecraft:single_pool_element",
+				"processors": "minecraft:empty",
+				"projection": "rigid"
+			}
+		}
+	]
+}
