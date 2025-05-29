@@ -13,7 +13,9 @@ ServerEvents.recipes((event) => {
 		"functionalstorage:void_upgrade",
 		"create:milling/compat/ae2/sky_stone_block",
 		"ae2:blasting/sky_stone_block",
-		"create:sequenced_assembly/precision_mechanism"
+		"create:sequenced_assembly/precision_mechanism",
+		"immersiveengineering:crafting/gunpowder_from_dusts",
+		"thermal:gunpowder_4"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
