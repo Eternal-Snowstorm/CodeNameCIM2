@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering } = event.recipes
+	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism } = event.recipes
 
 	global.metalGroup.forEach((metal) => {
 		if (!(Ingredient.of(`#forge:storage_blocks/${metal}`).itemIds.length === 0)) {
@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
 				Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(1.5)
 			, `#forge:raw_materials/${metal}`)
 			immersiveengineering.arc_furnace(`#forge:ingots/${metal}`)
-			.secondaries([Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5)])
+			.secondaries(Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5))
 			.input(`#forge:raw_materials/${metal}`)
 			.time(900)
 			.energy(230400)
@@ -125,10 +125,11 @@ ServerEvents.recipes((event) => {
 			immersiveengineering.crusher(`#forge:dusts/${metal}`)
 				.secondaries([])
 				.input(`#forge:ingots/${metal}`)
-			immersiveengineering.arc_furnace(`forge:ingots/${metal}`)
+			immersiveengineering.arc_furnace(`#forge:ingots/${metal}`)
 				.secondaries([])
 				.input(`#forge:dusts/${metal}`)
 				.additives([])
+			mekanism.crushing(`#forge:dusts/${metal}`,`#forge:ingots/${metal}`)
 			if (!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
 				thermal.pulverizer(
 					Item.of(Ingredient.of(`#forge:dusts/${metal}`).itemIds[0]).withChance(1.25)
@@ -136,6 +137,7 @@ ServerEvents.recipes((event) => {
 				)
 				immersiveengineering.crusher(`#forge:dusts/${metal}`, `#forge:raw_materials/${metal}`)
 					.secondaries(Item.of(Ingredient.of(`#forge:dusts/${metal}`).itemIds[0]).withChance(1/3))
+				mekanism.enriching(`4x #forge:dusts/${metal}`, `3x #forge:raw_materials/${metal}`)
 			} else {
 				console.warn(`No raw material found for ${metal}!`)
 			}
@@ -144,6 +146,7 @@ ServerEvents.recipes((event) => {
 				immersiveengineering.crusher(`2x #forge:dusts/${metal}`)
 					.secondaries([])
 					.input(`#forge:ores/${metal}`)
+				mekanism.enriching(`2x #forge:dusts/${metal}`, `#forge:ores/${metal}`)
 			} else {
 				console.warn(`No ore found for ${metal}!`)
 			}
@@ -151,6 +154,7 @@ ServerEvents.recipes((event) => {
 				immersiveengineering.crusher(`12x #forge:dusts/${metal}`)
 					.secondaries([])
 					.input(`#forge:storage_blocks/raw_${metal}`)
+				mekanism.enriching(`12x #forge:dusts/${metal}`, `#forge:storage_blocks/raw_${metal}`)
 			} else {
 				console.warn(`No storage block found for raw ${metal}!`)
 			}
@@ -162,6 +166,9 @@ ServerEvents.recipes((event) => {
 			create.pressing(`#forge:plates/${metal}`, `#forge:ingots/${metal}`)
 			thermal.press(`#forge:plates/${metal}`, `#forge:ingots/${metal}`)
 			thermal.smelter(`#forge:ingots/${metal}`, `#forge:plates/${metal}`).energy(1600)
+			immersiveengineering.metal_press(`#forge:plates/${metal}`)
+				.input(`#forge:ingots/${metal}`)
+				.mold("immersiveengineering:mold_plate")
 		} else {
 			console.warn(`No plate found for ${metal}!`)
 		}
@@ -169,6 +176,9 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:rods/${metal}`).itemIds.length === 0)) {
 			createaddition.rolling(`2x #forge:rods/${metal}`, `#forge:ingots/${metal}`)
 			thermal.press(`2x #forge:rods/${metal}`, [`#forge:ingots/${metal}`, "thermal_extra:press_rod_die"])
+			immersiveengineering.metal_press(`2x #forge:rods/${metal}`)
+				.input(`#forge:ingots/${metal}`)
+				.mold("immersiveengineering:mold_rod")
 		} else {
 			console.warn(`No rod found for ${metal}!`)
 		}
@@ -176,17 +186,19 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:gears/${metal}`).itemIds.length === 0)) {
 			kubejs.shaped(`#forge:gears/${metal}`, [
 				" A ",
-				"ABA",
+				"A A",
 				" A "
 			], {
-				A: `#forge:ingots/${metal}`,
-				B: "#forge:nuggets/iron"
+				A: `#forge:ingots/${metal}`
 			})
 			thermal.press(`#forge:gears/${metal}`, [
 				`4x #forge:ingots/${metal}`,
 				"thermal:press_gear_die"
 			])
 			thermal.smelter(`4x #forge:ingots/${metal}`, `#forge:gears/${metal}`)
+			immersiveengineering.metal_press(`#forge:gears/${metal}`)
+				.input(`4x #forge:ingots/${metal}`)
+				.mold("immersiveengineering:mold_gear")
 		} else {
 			console.warn(`No gear found for ${metal}!`)
 		}

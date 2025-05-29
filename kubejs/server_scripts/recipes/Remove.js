@@ -151,14 +151,14 @@ ServerEvents.recipes((event) => {
 				type: "create:pressing",
 				output: `#forge:plates/${metal}`
 			}, {
-				type: "thermal:press",
-				output: `#forge:plates/${metal}`
+				type: "createaddition:rolling",
+				output: `#forge:rods/${metal}`
 			}, {
 				type: "thermal:pulverizer",
 				output: `#forge:dusts/${metal}`
 			}, {
-				type: "createaddition:rolling",
-				output: `#forge:rods/${metal}`
+				type: "thermal:press",
+				output: `#forge:plates/${metal}`
 			}, {
 				type: "thermal:press",
 				output: `#forge:rods/${metal}`
@@ -211,6 +211,27 @@ ServerEvents.recipes((event) => {
 			}, {
 				type: "immersiveengineering:crusher",
 				output: `#forge:dusts/${metal}`
+			}, {
+				type: "immersiveengineering:metal_press",
+				output: `#forge:plates/${metal}`
+			}, {
+				type: "immersiveengineering:metal_press",
+				output: `#forge:rods/${metal}`
+			}, {
+				type: "immersiveengineering:metal_press",
+				output: `#forge:gears/${metal}`
+			}, {
+				type: "mekanism:crushing",
+				output: `#forge:dusts/${metal}`
+			}, {
+				type: "mekanism:enriching",
+				input: `#forge:raw_materials/${metal}`
+			}, {
+				type: "mekanism:enriching",
+				input: `#forge:ores/${metal}`
+			}, {
+				type: "mekanism:enriching",
+				input: `#forge:storage_blocks/raw_${metal}`
 			}
 		])
 	})
