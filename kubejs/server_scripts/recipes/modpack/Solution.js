@@ -41,13 +41,12 @@ ServerEvents.recipes((event) => {
 	]
 	solutionRecipes.forEach((name) => {
 		create.mixing(Fluid.of(`cmi:${name}_solution`, 500), [
-			`cmi:${name}`,
+			`${global.namespace}:${name}`,
 			Fluid.of("minecraft:water", 500)
 		])
 
-		tconstruct.casting_table(
-			`cmi:${name}`,
-			Fluid.of(`cmi:${name}_solution`, 500)
-		).cooling_time(20)
+		tconstruct.casting_table(`${global.namespace}:${name}`)
+			.fluid(Fluid.of(`cmi:${name}_solution`, 500))
+			.cooling_time(20)
 	})
 })

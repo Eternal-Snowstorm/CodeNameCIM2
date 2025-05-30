@@ -1,6 +1,4 @@
 ClientEvents.lang("zh_cn", (event) => {
-	addCastItemLanguage("mechanism", "构件")
-
 	addItemLanguage("geological_hammer", "地质锤(调试工具)")
 	addItemLanguage("empty_exe", "空程序.exe")
 	addItemLanguage("single_crystal_silicon", "单晶硅")
@@ -17,13 +15,15 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("platinum_shard", "铂碎片")
 	addItemLanguage("initial_item_kit", "初始套件箱")
 	addItemLanguage("stone_plate", "石板")
-
 	addItemLanguage("blockstone_source_alpha", "Α(Alpha)型黑石源质")
 	addItemLanguage("blockstone_source_beta", "Β(Beta)型黑石源质")
 	addItemLanguage("blockstone_source_gamma", "Γ(Gamma)型黑石源质")
 	addItemLanguage("crystal_ruby", "晶射红宝石")
 	addItemLanguage("source_sapphire", "蓝源晶")
 	addItemLanguage("bombed_source_emeraid", "爆裂源质")
+	addItemLanguage("sludge_extract", "淤泥提取物")
+
+	addCastItemLanguage("mechanism", "构件")
 
 	addFluidLanguage("molten_source_sapphire", "熔融蓝源晶")
 	addFluidLanguage("eletriced_source_emeraid", "电解源质")
@@ -44,6 +44,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("calorite", "耐热金属")
 	addMaterialLanguage("end_stone", "末地石")
 	addMaterialLanguage("uranium", "铀")
+	addMaterialLanguage("siltsteel", "泓钢")
 
 	addMachineLanguage("water_pump", "水泵")
 	addMachineLanguage("flash_disk_writer", "闪存盘写入器")
@@ -175,6 +176,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLanguage("cmi:bucket", "似是一种巨大的力量塑造的诡异造物\n它有着令人倍感亲切的形状, 却处于一种令人不寒而栗的陌生角度\n这巨大的力量, 炽热, 强大又致命\n善良者受其腐化\n卑鄙者因其强大\n收容之器受其影响, 转为包覆之具, 幸于并无灵魂, 于我没有危害")
 	addJEIInfoLanguage("#ad_astra:power_consumption_machines", "该Mod的机器每个面都有能量输入的上限\n如果想要不会断电确保产量你可能需要给每个面都连接一根电线")
 	addJEIInfoLanguage("engineered_schematics:multiblock_schematic", "手持原理图右键地面以放置投影网格, 将原理图放置于副手可以查看方块的具体位置")
+	addJEIInfoLanguage("cmi:siltsteel_ingot", "自浑浊淤泥中升华, 历经繁复萃取与催化精炼, 终获此一泓清冽碧波")
 
 	addAccelerateTooltipLanguage("cmi:stone_mechanism", "§e转化石头\n§e10%安山岩\n§e10%闪长岩\n§e10%花岗岩\n§e10%石灰岩\n§e10%焦黑石头\n§2转化深板岩\n§210%焦黑石头\n§210%凝灰岩\n§210%熔渣\n§210%滴水石块\n§210%平滑玄武岩")
 	addAccelerateTooltipLanguage("cmi:andesite_mechanism", "§e转化石头\n§e20%安山岩\n§e5%铁矿石\n§e5%锌矿石\n§2转化深板岩\n§215%安山岩\n§210%深层铁矿石\n§210%深层锌矿石")

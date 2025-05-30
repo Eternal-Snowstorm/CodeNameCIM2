@@ -11,6 +11,22 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	event.get(`${global.namespace}:batteries`)
+		.add("mekanism:basic_energy_cube")
+		.add("mekanism:advanced_energy_cube")
+		.add("mekanism:elite_energy_cube")
+		.add("mekanism:ultimate_energy_cube")
+		.add("mekanism:creative_energy_cube")
+		.add("createaddition:modular_accumulator")
+		.add("immersiveengineering:capacitor_lv")
+		.add("immersiveengineering:capacitor_mv")
+		.add("immersiveengineering:capacitor_hv")
+		.add("thermal:energy_cell")
+
+	event.get("tconstruct:tinkers_anvil")
+		.add("tconstruct:tinkers_anvil")
+		.add("tconstruct:scorched_anvil")
+
 	event.get("create:shaft")
 		.add("create:shaft")
 		.add("copycats:copycat_shaft")

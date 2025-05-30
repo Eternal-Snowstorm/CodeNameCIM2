@@ -62,52 +62,52 @@ ServerEvents.recipes((event) => {
 			minecraft.blasting(`#forge:ingots/${metal}`, `#forge:raw_materials/${metal}`)
 			thermal.smelter(
 				Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(1.5)
-			, `#forge:raw_materials/${metal}`)
+				, `#forge:raw_materials/${metal}`)
 			immersiveengineering.arc_furnace(`#forge:ingots/${metal}`)
-			.secondaries(Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5))
-			.input(`#forge:raw_materials/${metal}`)
-			.time(900)
-			.energy(230400)
-			.additives([])
+				.secondaries(Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5))
+				.input(`#forge:raw_materials/${metal}`)
+				.time(900)
+				.energy(230400)
+				.additives([])
 		} else {
 			console.warn(`No raw material found for ${metal}!`)
 		}
 
 		if (!(Ingredient.of(`#forge:storage_blocks/raw_${metal}`).itemIds.length === 0)) {
 			immersiveengineering.arc_furnace(`13x #forge:ingots/${metal}`)
-			.secondaries(Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5))
-			.input(`#forge:storage_blocks/raw_${metal}`)
-			.energy(25600)
-			.additives([])
+				.secondaries(Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5))
+				.input(`#forge:storage_blocks/raw_${metal}`)
+				.energy(25600)
+				.additives([])
 		} else {
 			console.warn(`No storage block found for raw ${metal}!`)
 		}
 
 		if (!(Ingredient.of(`#create:crushed_raw_materials/${metal}`).itemIds.length === 0)) {
-			if(!(Ingredient.of(`#forge:storage_blocks/raw_${metal}`).itemIds.length === 0)) {
+			if (!(Ingredient.of(`#forge:storage_blocks/raw_${metal}`).itemIds.length === 0)) {
 				create.crushing([
 					`9x #create:crushed_raw_materials/${metal}`,
 					Item.of("9x create:experience_nugget").withChance(0.75)],
-				`#forge:storage_blocks/raw_${metal}`)
+					`#forge:storage_blocks/raw_${metal}`)
 			} else {
 				console.warn(`No storage block found for raw ${metal}!`)
 			}
-			if(!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
+			if (!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
 				create.crushing([
 					`#create:crushed_raw_materials/${metal}`,
 					Item.of("create:experience_nugget").withChance(0.75)],
-				`#forge:raw_materials/${metal}`)
+					`#forge:raw_materials/${metal}`)
 			} else {
 				console.warn(`No raw material found for ${metal}!`)
 			}
-			if(!(Ingredient.of(`#forge:ores/${metal}`).itemIds.length === 0)) {
+			if (!(Ingredient.of(`#forge:ores/${metal}`).itemIds.length === 0)) {
 				create.crushing([
 					`#create:crushed_raw_materials/${metal}`,
 					Item.of(Ingredient.of(`#create:crushed_raw_materials/${metal}`).itemIds[0])
 						.withChance(0.75),
 					Item.of("create:experience_nugget").withChance(0.75),
 					Item.of("minecraft:cobblestone").withChance(0.125)],
-				`#forge:ores/${metal}`)
+					`#forge:ores/${metal}`)
 			} else {
 				console.warn(`No ore found for ${metal}!`)
 			}
@@ -129,14 +129,14 @@ ServerEvents.recipes((event) => {
 				.secondaries([])
 				.input(`#forge:dusts/${metal}`)
 				.additives([])
-			mekanism.crushing(`#forge:dusts/${metal}`,`#forge:ingots/${metal}`)
+			mekanism.crushing(`#forge:dusts/${metal}`, `#forge:ingots/${metal}`)
 			if (!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
 				thermal.pulverizer(
 					Item.of(Ingredient.of(`#forge:dusts/${metal}`).itemIds[0]).withChance(1.25)
 					, `#forge:raw_materials/${metal}`
 				)
 				immersiveengineering.crusher(`#forge:dusts/${metal}`, `#forge:raw_materials/${metal}`)
-					.secondaries(Item.of(Ingredient.of(`#forge:dusts/${metal}`).itemIds[0]).withChance(1/3))
+					.secondaries(Item.of(Ingredient.of(`#forge:dusts/${metal}`).itemIds[0]).withChance(1 / 3))
 				mekanism.enriching(`4x #forge:dusts/${metal}`, `3x #forge:raw_materials/${metal}`)
 			} else {
 				console.warn(`No raw material found for ${metal}!`)
@@ -165,7 +165,8 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:plates/${metal}`).itemIds.length === 0)) {
 			create.pressing(`#forge:plates/${metal}`, `#forge:ingots/${metal}`)
 			thermal.press(`#forge:plates/${metal}`, `#forge:ingots/${metal}`)
-			thermal.smelter(`#forge:ingots/${metal}`, `#forge:plates/${metal}`).energy(1600)
+			thermal.smelter(`#forge:ingots/${metal}`, `#forge:plates/${metal}`)
+				.energy(1600)
 			immersiveengineering.metal_press(`#forge:plates/${metal}`)
 				.input(`#forge:ingots/${metal}`)
 				.mold("immersiveengineering:mold_plate")
@@ -175,7 +176,10 @@ ServerEvents.recipes((event) => {
 
 		if (!(Ingredient.of(`#forge:rods/${metal}`).itemIds.length === 0)) {
 			createaddition.rolling(`2x #forge:rods/${metal}`, `#forge:ingots/${metal}`)
-			thermal.press(`2x #forge:rods/${metal}`, [`#forge:ingots/${metal}`, "thermal_extra:press_rod_die"])
+			thermal.press(`2x #forge:rods/${metal}`, [
+				`#forge:ingots/${metal}`,
+				"thermal_extra:press_rod_die"
+			])
 			immersiveengineering.metal_press(`2x #forge:rods/${metal}`)
 				.input(`#forge:ingots/${metal}`)
 				.mold("immersiveengineering:mold_rod")

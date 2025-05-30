@@ -1,0 +1,214 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wooden"
+	group: ""
+	icon: "cmi:wooden_mechanism"
+	id: "2186545C72D0DC09"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0A7F2C2B8569C9DD"
+			rewards: [{
+				id: "60FD3FB9D844A4A4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "252436B2B6A4A4C2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["398DEA460A41DD59"]
+			icon: "create:mechanical_saw"
+			id: "10DAC450B0F9CCAE"
+			rewards: [{
+				id: "2ACB4C52AA2A71F3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2831401805A85956"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["487F98DBE123B686"]
+			id: "7D58DDE4A1BB3885"
+			rewards: [{
+				id: "49136416849E08C8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4B5452E2DB2E6C0C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:stripped_logs"
+					}
+				}
+				title: "Any #forge:stripped_logs"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0EE294B13A83748F"]
+			icon: "create:mechanical_press"
+			id: "4AC9427638019CD0"
+			rewards: [{
+				id: "16A26038AAD677BE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4BF9EBF096B2EFCB"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["74D56B4F3D8A2F1E"]
+			id: "5EBDE6610CC6534F"
+			rewards: [{
+				id: "38459A948C858303"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "343624AC7C461863"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["28C0BE2971F958F9"]
+			id: "0B89C94EF71D2E48"
+			rewards: [{
+				id: "1764A6481AA4C014"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "28FE689D9C54E695"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/wooden"
+					}
+				}
+				title: "Any #forge:rods/wooden"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["28C0BE2971F958F9"]
+			id: "1B47D93680662BFD"
+			rewards: [{
+				id: "21F48265B7DB9353"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "27CD92D0E7B458A5"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6DB9C01632B86000"]
+			id: "2F5A4970D77277A0"
+			rewards: [{
+				id: "0CEB124F7CA23A89"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1665FD647A8EF8C1"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["232B7650C6F1800C"]
+			id: "5A538E54B9EFF298"
+			rewards: [{
+				id: "10C18E39392969B2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "12FAB620C589B8B9"
+				item: "cmi:basic_mechanism_part"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["232B7650C6F1800C"]
+			icon: "minecraft:clock"
+			id: "50EF262B2025804E"
+			rewards: [{
+				id: "57CF7ECBD956EB1D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "387B2DFE2E2FC9BF"
+				title: "3"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["75D08B77D3F46522"]
+			id: "5ABF3BB8E54A13B8"
+			rewards: [{
+				id: "76B12C2E3CC523E3"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "783857FBF7BCD747"
+				item: "cmi:wooden_mechanism"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 3.0d
+		}
+	]
+	title: "wooden"
+}

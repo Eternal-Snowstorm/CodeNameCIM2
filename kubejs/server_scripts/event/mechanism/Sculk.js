@@ -35,7 +35,7 @@ function fireSonicBoom(level, player) {
 	if (player.cooldowns.isOnCooldown(SCULK_MECHANISM_ID)) {
 		return
 	}
-	// 设置音爆传播方向（玩家面向坐标）与传播起点
+	// 设置音爆传播方向(玩家面向坐标)与传播起点
 	let sight = player.getViewVector(1.0).normalize()
 	let startingPosition = player.getEyePosition()
 

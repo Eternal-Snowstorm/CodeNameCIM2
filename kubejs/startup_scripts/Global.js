@@ -101,6 +101,7 @@ global.metalGroup = [
 	"gold",
 	"invar",
 	"iron",
+	"siltsteel",
 	"lead",
 	"lumium",
 	"netherite",

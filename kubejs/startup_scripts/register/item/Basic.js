@@ -17,26 +17,34 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:bombed_source_emeraid`)
 		.texture(`${global.namespace}:item/material/bombed_source_emeraid`)
 
+	// 黏血球
 	event.create(`${global.namespace}:blood_slime_ball`)
 		.tag("forge:slimeball")
 		.tag("forge:slimeball/blood")
 
+	// 致密坚固板
 	event.create(`${global.namespace}:dense_sturdy_sheet`)
 		.texture(`${global.namespace}:item/material/dense_sturdy_sheet`)
 		.tag("forge:plates")
 		.tag("forge:plates/dense_obsidian")
 
+	// 等离子锭
 	event.create(`${global.namespace}:plasma_ingot`)
 		.texture(`${global.namespace}:item/material/ingot/plasma_ingot`)
 		.rarity("epic")
 		.tag("forge:ingots")
 		.tag("forge:ingots/plasma")
 
+	// 充能紫水晶
 	event.create(`${global.namespace}:charged_amethyst`)
 		.texture(`${global.namespace}:item/material/charged_amethyst`)
 		.rarity("epic")
 		.tag("forge:gems")
 		.tag("forge:gems/charged_amethyst")
+
+	// 淤泥提取物
+	event.create(`${global.namespace}:sludge_extract`)
+		.texture(`${global.namespace}:item/material/sludge_extract`)
 
 	// 初始套件
 	event.create(`${global.namespace}:initial_item_kit`)

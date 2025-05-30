@@ -1343,5 +1343,7 @@
 	"ie.manual.entry.mineralsDimAny": "§l%1$s§r是可在任何维度找到的矿脉。",
 	"immersiveengineering.optifinePoseStackWarning": "沉浸工程检测到一个不兼容的Optifine版本。由于Optifine的补丁程序, 这个版本的Optifine删除了Forge添加的方法, 这些方法直接或间接地被沉浸工程和许多其他模组使用。因此, 你可能随时遇到崩溃, 例如, 当搜索匹配某些物品时。在解决这个问题之前, 建议你不要使用Optifine。",
 	"config.jade.plugin_immersiveengineering.hemp": "工业大麻作物生长",
-	"config.jade.plugin_immersiveengineering.multiblock_icon": "多方块结构图标"
+	"config.jade.plugin_immersiveengineering.multiblock_icon": "多方块结构图标",
+	"desc.immersiveengineering.jei.category.fertilizer": "园艺玻璃罩-肥料",
+	"desc.immersiveengineering.jei.cloche_modifier": "生长倍率: %1$s"
 }

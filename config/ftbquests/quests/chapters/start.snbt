@@ -1,0 +1,254 @@
+{
+	autofocus_id: "219A962B82333395"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "start"
+	group: ""
+	id: "7CF1214F39DD4E53"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "18237D913486FE33"
+			rewards: [{
+				id: "06636288EE5A0CF9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5B1C9F698CB8E5CC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18237D913486FE33"]
+			id: "77E939643ECBC35D"
+			rewards: [{
+				id: "66001D2A2D7F63F7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "71825456C60860A5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				title: "Any #minecraft:planks"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["77E939643ECBC35D"]
+			id: "219A962B82333395"
+			rewards: [{
+				id: "71225F6C3EA4BCEB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F9158854E4B0E49"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/wooden"
+					}
+				}
+				title: "Any #forge:rods/wooden"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77E939643ECBC35D"]
+			id: "0950E73B864090F0"
+			rewards: [{
+				id: "4E86B94E0C604702"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6F95F79F0C6650AB"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["219A962B82333395"]
+			id: "29624F942DC7CC08"
+			rewards: [{
+				id: "593610C7A7A10CC1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6F090051AAF62190"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["29624F942DC7CC08"]
+			id: "005CD7BF1218DD20"
+			rewards: [
+				{
+					id: "1BB11B7F0D821C8A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "6676F4719CF054DC"
+					item: "tconstruct:encyclopedia"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0AEA63CD739ED93A"
+					item: "tconstruct:crafting_station"
+					type: "item"
+				}
+				{
+					id: "51B80491226B5764"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					id: "4ECA1B92FA92EB90"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["005CD7BF1218DD20"]
+			icon: "tconstruct:encyclopedia"
+			id: "5D0FEBD3FC3443C6"
+			rewards: [
+				{
+					advancement: "tconstruct:world/tinkers_gadgetry"
+					criterion: ""
+					id: "38AE6723616811F0"
+					type: "advancement"
+				}
+				{
+					advancement: "tconstruct:smeltery/puny_smelting"
+					criterion: ""
+					id: "702C4D9F27FA5D05"
+					type: "advancement"
+				}
+				{
+					advancement: "tconstruct:smeltery/mighty_smelting"
+					criterion: ""
+					id: "625DD53EACF288DD"
+					type: "advancement"
+				}
+				{
+					advancement: "tconstruct:foundry/fantastic_foundry"
+					criterion: ""
+					id: "63E9B4ED78A7CE49"
+					type: "advancement"
+				}
+			]
+			tasks: [{
+				id: "726B99C8AA64D96B"
+				item: "tconstruct:encyclopedia"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["005CD7BF1218DD20"]
+			id: "40A061BF2F7536BD"
+			rewards: [{
+				id: "370D5B3FD3613F42"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "4FC5824A5883C0AA"
+					item: "tconstruct:modifier_worktable"
+					type: "item"
+				}
+				{
+					id: "2729620BE9B87B2E"
+					item: "tconstruct:tinkers_chest"
+					type: "item"
+				}
+				{
+					id: "76D0B167E17CE104"
+					item: "tconstruct:part_chest"
+					type: "item"
+				}
+				{
+					id: "4D545CF5E3EF0CB6"
+					item: "tconstruct:cast_chest"
+					type: "item"
+				}
+				{
+					id: "7610F5E7191D5545"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:tinkers_anvil"
+						}
+					}
+					title: "Any #tconstruct:tinkers_anvil"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0950E73B864090F0"]
+			id: "45A06F9E9EF93882"
+			rewards: [{
+				id: "74E9B5D3AAF2CB6F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2F6D33C8A8714E58"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:stone"
+					}
+				}
+				title: "Any #forge:stone"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+	]
+	title: "Start"
+}

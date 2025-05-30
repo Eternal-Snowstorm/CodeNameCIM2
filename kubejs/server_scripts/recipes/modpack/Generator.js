@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { create, kubejs } = event.recipes
 
-	const BATTERY = "createaddition:capacitor"
+	const BATTERY = `#${global.namespace}:batteries`
 
 	kubejs.shaped("immersiveengineering:dynamo", [
 		"EDE",
