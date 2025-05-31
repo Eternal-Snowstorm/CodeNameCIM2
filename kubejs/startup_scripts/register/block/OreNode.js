@@ -37,6 +37,7 @@ StartupEvents.registry("block", (event) => {
 	addOreNode("zinc", "deepslate")
 	addOreNode("gold", "deepslate")
 	addOreNode("platinum", "moon")
+	addOreNode("cheese", "moon")
 
 	// 新支持的数组调用方式示例
 	// addOreNode("diamond", ["deepslate", "nether"])

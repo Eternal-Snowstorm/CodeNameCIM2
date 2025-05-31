@@ -1,0 +1,8 @@
+{
+    "block": "cmi:moon_cheese_ore_node",
+    "loot_tables": {
+		"earth": "cmi:ore_nodes/cheese/earth",
+		"common": "cmi:ore_nodes/cheese/common",
+		"rare": "cmi:ore_nodes/cheese/rare"
+	}
+}
