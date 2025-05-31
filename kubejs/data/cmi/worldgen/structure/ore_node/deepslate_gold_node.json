@@ -1,8 +1,15 @@
 {
 	"type": "minecraft:jigsaw",
-	"biomes": "ad_astra:lunar_wastelands",
+	"biomes": [
+		"minecraft:desert",
+		"minecraft:badlands",
+    "minecraft:eroded_badlands",
+    "minecraft:wooded_badlands",    
+		"minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:windswept_savanna"],
 	"size": 1,
-	"start_pool": "cmi:moon_platinum_node",
+	"start_pool": "cmi:ore_node/deepslate_gold_node",
 	"step": "surface_structures",
 	"start_height": {
 		"absolute": 0
