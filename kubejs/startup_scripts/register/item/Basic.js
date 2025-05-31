@@ -65,4 +65,8 @@ StartupEvents.registry("item", (event) => {
 
 	event.create(`${global.namespace}:platinum_shard`)
 		.texture(`${global.namespace}:item/material/platinum/shard`)
+
+	// 铸铁
+	event.create(`${global.namespace}:foundry_iron`)
+		.texture(`${global.namespace}:item/material/foundry_iron`)
 })
