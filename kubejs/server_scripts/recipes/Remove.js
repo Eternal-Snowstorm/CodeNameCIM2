@@ -58,6 +58,12 @@ ServerEvents.recipes((event) => {
 		event.remove({
 			id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`
 		})
+		event.remove({
+			id: `immersiveengineering:blastfurnace`
+		})
+		event.remove({
+			id: `immersiveengineering:arcfurnace/steel`
+		})
 	})
 
 	let removeItemOutputRecipes = [
