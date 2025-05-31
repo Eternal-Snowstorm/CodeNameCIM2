@@ -149,6 +149,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguage(`tooltip.${global.namespace}.initial_item_kit.tip`, "按住Shift查看详情")
 	addAloneLanguage(`tooltip.${global.namespace}.initial_item_kit.shift`, "潜行 + 右键打开, 将会获得以下物品:\n§b扳手\n§b工程师护目镜\n§b强力胶")
 	addAloneLanguage(`message.${global.namespace}.initial_item_kit`, "欢迎游玩整合包! 物品已发放!")
+	
+	addAloneLanguage(`message.${global.namespace}.modrinth_warning0`, "你正在游玩从Modrinth渠道下载的CMI")
+	addAloneLanguage(`message.${global.namespace}.modrinth_warning1`, "因Modrinth的政策限制，本版本删除了部分内容，可能造成如无法多人游戏、无法进入服务器等问题\n您可以通过下方按钮在Curseforge或BBSMC下载本整合包游玩完整内容")
 
 	addCommonTooltipLanguage("cmi:pigiron_mechanism", "可无限次食用")
 	addCommonTooltipLanguage("cmi:acceleratable", "§b按住Shift查看构件之力催生器用途")
