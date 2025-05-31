@@ -97,6 +97,7 @@ global.metalGroup = [
 	"cobalt",
 	"constantan",
 	"copper",
+	"cast_iron",
 	"electrum",
 	"gold",
 	"invar",

@@ -38,3 +38,7 @@ StartupEvents.modifyCreativeTab("tconstruct:smeltery", (event) => {
 		"cmi:mechanism_red_sand_cast"
 	])
 })
+
+StartupEvents.modifyCreativeTab("functionalstorage:main", (event) => {
+	event.setIcon("functionalstorage:cherry_1")
+})
