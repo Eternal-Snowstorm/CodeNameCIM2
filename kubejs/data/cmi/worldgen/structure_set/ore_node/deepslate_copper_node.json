@@ -1,13 +1,13 @@
 {
 	"structures": [
 		{
-			"structure": "cmi:ore_node/moon_platinum_node",
+			"structure": "cmi:ore_node/deepslate_copper_node",
 			"weight": 1
 		}
 	],
 	"placement": {
 		"type": "minecraft:random_spread",
-		"salt": 376345692,
+		"salt": 963456928,
 		"spacing": 70,
 		"separation": 50
 	}
