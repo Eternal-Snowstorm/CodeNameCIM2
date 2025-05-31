@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+	let { immersiveengineering } = event.recipes
 	// 德尔塔溶液
 	event.custom({
 		"type": "immersiveindustry:chemical",
@@ -106,4 +107,18 @@ ServerEvents.recipes((event) => {
 		],
 		"time": 300
 	})
+
+	// 钢锭
+	immersiveengineering.arc_furnace("#forge:ingots/steel")
+		.input("#forge:ingots/iron")
+		.energy(10240)
+		.slag("#forge:slag")
+		.time(20)
+
+	// 钢块
+	immersiveengineering.arc_furnace("#forge:storage_blocks/steel")
+		.input("#forge:storage_blocks/iron")
+		.energy(10240)
+		.slag("#forge:slag")
+		.time(100)
 })
