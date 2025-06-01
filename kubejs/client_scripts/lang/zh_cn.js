@@ -22,6 +22,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("source_sapphire", "蓝源晶")
 	addItemLanguage("bombed_source_emeraid", "爆裂源质")
 	addItemLanguage("sludge_extract", "淤泥提取物")
+	addItemLanguage("crafting_incomplete_iron_mechanism", "铁构件底座")
+	addItemLanguage("crafting_incomplete_copper_mechanism", "铜构件底座")
 
 	addCastItemLanguage("mechanism", "构件")
 

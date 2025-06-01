@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
 
 	// 铁质
 	kubejs.shapeless("cmi:iron_mechanism", [
-		"cmi:incomplete_iron_mechanism",
+		"cmi:crafting_incomplete_iron_mechanism",
 		"immersiveengineering:hammer",
 		"#forge:nuggets/iron",
 		"#forge:nuggets/iron",
@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 
 	// 铜质
 	kubejs.shapeless("cmi:copper_mechanism", [
-		"cmi:incomplete_copper_mechanism",
+		"cmi:crafting_incomplete_copper_mechanism",
 		"immersiveengineering:hammer",
 		"#forge:nuggets/copper",
 		"create:fluid_pipe",
