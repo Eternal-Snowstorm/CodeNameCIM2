@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "name": "Anchor 0",
+    "Radius": 0,
+    "muffledSounds": {}
+  },
+  {
+    "id": 1,
+    "name": "Anchor 1",
+    "Radius": 0,
+    "muffledSounds": {}
+  },
+  {
+    "id": 2,
+    "name": "Anchor 2",
+    "Radius": 0,
+    "muffledSounds": {}
+  },
+  {
+    "id": 3,
+    "name": "Anchor 3",
+    "Radius": 0,
+    "muffledSounds": {}
+  },
+  {
+    "id": 4,
+    "name": "Anchor 4",
+    "Radius": 0,
+    "muffledSounds": {}
+  },
+  {
+    "id": 5,
+    "name": "Anchor 5",
+    "Radius": 0,
+    "muffledSounds": {}
+  },
+  {
+    "id": 6,
+    "name": "Anchor 6",
+    "Radius": 0,
+    "muffledSounds": {}
+  },
+  {
+    "id": 7,
+    "name": "Anchor 7",
+    "Radius": 0,
+    "muffledSounds": {}
+  },
+  {
+    "id": 8,
+    "name": "Anchor 8",
+    "Radius": 0,
+    "muffledSounds": {}
+  },
+  {
+    "id": 9,
+    "name": "Anchor 9",
+    "Radius": 0,
+    "muffledSounds": {}
+  }
+]

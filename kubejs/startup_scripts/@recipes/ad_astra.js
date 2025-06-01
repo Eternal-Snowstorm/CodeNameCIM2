@@ -1,8 +1,8 @@
-new Schema("ad_astra:alloying")
-	.simpleKey("result", "outputItem")
-	.simpleKey("ingredients", "inputItemArray")
-	.simpleKey("cookingtime", "intNumber", 100)
-	.simpleKey("energy", "intNumber", 100)
+// new Schema("ad_astra:alloying")
+// 	.simpleKey("result", "outputItem")
+// 	.simpleKey("ingredients", "inputItemArray")
+// 	.simpleKey("cookingtime", "intNumber", 100)
+// 	.simpleKey("energy", "intNumber", 100)
 
 new Schema("ad_astra:compressing")
 	.simpleKey("result", "outputItem")
