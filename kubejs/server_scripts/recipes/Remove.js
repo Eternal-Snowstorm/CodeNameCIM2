@@ -64,6 +64,9 @@ ServerEvents.recipes((event) => {
 		event.remove({
 			id: `immersiveengineering:arcfurnace/steel`
 		})
+		event.remove({
+			id: `create:crushing/netherrack`
+		})
 	})
 
 	let removeItemOutputRecipes = [
