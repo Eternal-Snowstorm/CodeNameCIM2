@@ -15,7 +15,8 @@ ServerEvents.recipes((event) => {
 		"ae2:blasting/sky_stone_block",
 		"create:sequenced_assembly/precision_mechanism",
 		"immersiveengineering:crafting/gunpowder_from_dusts",
-		"thermal:gunpowder_4"
+		"thermal:gunpowder_4",
+		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

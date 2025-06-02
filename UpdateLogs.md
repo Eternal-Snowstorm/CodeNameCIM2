@@ -195,6 +195,9 @@
  - 添加了`配方性能优化` Mod
  - 添加了`钢`处理
  - 添加了`坩埚`的Ponder
+ - 矿点添加了纸箱黑名单Tag
+ - 添加了`Extreme Sound Muffler` Mod
+ - 添加了`My Nether's Delight` Mod
 
 ### 修改(调整)内容
  - 调整了月球铂矿点的产物

@@ -8,24 +8,27 @@ StartupEvents.registry("block", (event) => {
 					.soundType(SoundType.STONE)
 					.hardness(-1)
 					.resistance(100)
-					.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
+					.textureAll(`${global.namespace}:block/ore/node/${name}/${type}`)
 					.tagItem(`${global.namespace}:ore_nodes`)
+					.tagBlock("mekanism:cardboard_blacklist")
 					.tag("deepdrilling:ore_nodes")
 			} else if (type === "deepslate") {
 				event.create(`${global.namespace}:${type}_${name}_ore_node`)
 					.soundType(SoundType.DEEPSLATE)
 					.hardness(-1)
 					.resistance(100)
-					.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
+					.textureAll(`${global.namespace}:block/ore/node/${name}/${type}`)
 					.tagItem(`${global.namespace}:ore_nodes`)
+					.tagBlock("mekanism:cardboard_blacklist")
 					.tag("deepdrilling:ore_nodes")
 			} else if (type === "nether") {
 				event.create(`${global.namespace}:${type}_${name}_ore_node`)
 					.soundType(SoundType.NETHER_ORE)
 					.hardness(-1)
 					.resistance(100)
-					.textureAll(`${global.namespace}:block/ore_node/${name}/${type}`)
+					.textureAll(`${global.namespace}:block/ore/node/${name}/${type}`)
 					.tagItem(`${global.namespace}:ore_nodes`)
+					.tagBlock("mekanism:cardboard_blacklist")
 					.tag("deepdrilling:ore_nodes")
 			}
 		})
@@ -38,8 +41,9 @@ StartupEvents.registry("block", (event) => {
 	addOreNode("gold", "deepslate")
 	addOreNode("platinum", "moon")
 	addOreNode("cheese", "moon")
+	addOreNode("coal", "deepslate")
 
-	// 新支持的数组调用方式示例
+	// Array Example
 	// addOreNode("diamond", ["deepslate", "nether"])
 	// addOreNode("emerald", ["stone", "deepslate"])
 })
