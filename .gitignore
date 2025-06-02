@@ -38,6 +38,7 @@ saves/*/session.lock
 hs_err*
 fabric*
 /icon-exports-*
+ESM
 
 # ResourcePacks
 /resourcepacks/*
@@ -68,3 +69,4 @@ fabric*
 !/config/fml.toml
 !/config/portality
 !/config/scannable*
+!/config/carryon-common.toml

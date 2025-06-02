@@ -4,14 +4,14 @@
 		"thermal",
 		"create",
 		"tconstruct",
+		"ad_astra",
 		"immersiveengineering",
 		"mekanism",
+		"cmi",
 		"vintageimprovements",
 		"createaddition",
 		"createdeco",
-		"ad_astra",
-		"thermal_extra",
-		"cmi"
+		"thermal_extra"
 	],
 	"stoneStrata": [
 		"stone",
