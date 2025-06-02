@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 			id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`
 		})
 		event.remove({
-			id: `immersiveengineering:blastfurnace`
+			id: `immersiveengineering:blastfurnace/steel`
 		})
 		event.remove({
 			id: `immersiveengineering:arcfurnace/steel`
