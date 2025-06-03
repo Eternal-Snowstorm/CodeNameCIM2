@@ -52,4 +52,20 @@ ServerEvents.recipes((event) => {
 		"#minecraft:planks",
 		{ fluidTag: "forge:creosote", amount: 125 }
 	]).id("createaddition:filling/treated_wood_planks")
+
+	// 橡胶
+	create.mixing("2x thermal:rubber", [
+		Fluid.of("thermal:latex", 500)
+	])
+
+	create.compacting("2x thermal:rubber", [
+		Fluid.of("thermal:latex", 500)
+	])
+
+	create.compacting([
+		Fluid.of("thermal:latex", 40),
+		"2x createdieselgenerators:wood_chip"
+	], [
+		"2x #minecraft:logs"
+	])
 })
