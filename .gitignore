@@ -70,3 +70,4 @@ ESM
 !/config/portality
 !/config/scannable*
 !/config/carryon-common.toml
+!/config/cookingforblockheads-common.toml
