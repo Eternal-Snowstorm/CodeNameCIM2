@@ -1,7 +1,7 @@
 BlockEvents.rightClicked((event) => {
 	let { item, level, block, player } = event
 
-	if (block.id === "create:encased_fluid_pipe", item.id !== "minecraft:air" || event.hand !== "MAIN_HAND") {
+	if (block.id === "create:encased_fluid_pipe" && item.id !== "minecraft:air" || event.hand !== "MAIN_HAND") {
 		return
 	}
 	let currentBlockState = block.properties[event.facing] === "true"

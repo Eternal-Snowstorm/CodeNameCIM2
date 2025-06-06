@@ -11,6 +11,15 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	event.get(`${global.namespace}:nether_crops`)
+		.add("minecraft:nether_sprouts")
+		.add("minecraft:nether_wart")
+		.add("minecraft:weeping_vines")
+		.add("minecraft:twisting_vines")
+		.add("mynethersdelight:crimson_fungus_colony")
+		.add("mynethersdelight:warped_fungus_colony")
+		.add("mynethersdelight:powdery_cannon")
+
 	event.get(`${global.namespace}:batteries`)
 		.add("mekanism:basic_energy_cube")
 		.add("mekanism:advanced_energy_cube")
