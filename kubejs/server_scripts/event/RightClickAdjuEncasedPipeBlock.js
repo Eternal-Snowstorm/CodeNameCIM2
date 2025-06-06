@@ -1,20 +1,30 @@
 BlockEvents.rightClicked((event) => {
-	let { item, level, block, player } = event
+    let { item, level, block, player } = event
 
-	if (block.id === "create:encased_fluid_pipe" && item.id !== "minecraft:air" || event.hand !== "MAIN_HAND") {
-		return
-	}
-	let currentBlockState = block.properties[event.facing] === "true"
+    if (block.id !== "create:encased_fluid_pipe" || item.id !== "minecraft:air" || event.hand !== "MAIN_HAND") {
+        return
+    }
 
-	let $Boolean = Java.loadClass("java.lang.Boolean")[currentBlockState ? "FALSE" : "TRUE"]
+    let facingProperty = event.facing.toString().toLowerCase()
+    if (!block.properties.hasOwnProperty(facingProperty)) {
+        return
+    }
 
-	let blockProperties = BlockProperties[event.facing.toString().toUpperCase()]
-	let setBlockStateValue = block.blockState.setValue(blockProperties, $Boolean)
+    let currentBlockState = block.properties[facingProperty] === "true"
 
-	level.setBlockAndUpdate(block.pos, setBlockStateValue)
+    let $Boolean = Java.loadClass("java.lang.Boolean")[currentBlockState ? "FALSE" : "TRUE"]
 
-	let command = `playsound minecraft:block.copper_trapdoor.${currentBlockState ? "close" : "open"} master @a ${block.x} ${block.y} ${block.z} 0.5 1`
-	event.server.runCommandSilent(command)
+    let blockProperties = BlockProperties[event.facing.toString().toUpperCase()]
 
-	player.swing()
+    if (!blockProperties) {
+        return
+    }
+
+    let setBlockStateValue = block.blockState.setValue(blockProperties, $Boolean)
+    level.setBlockAndUpdate(block.pos, setBlockStateValue)
+
+    let soundEvent = currentBlockState ? "minecraft:block.iron_trapdoor.close" : "minecraft:block.iron_trapdoor.open"
+    player.playNotifySound(soundEvent, "blocks", 0.5, 1.0)
+
+    player.swing()
 })

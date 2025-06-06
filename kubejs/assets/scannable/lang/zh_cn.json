@@ -1,5 +1,5 @@
 {
-	"itemGroup.scannable.common": "Scannable",
+	"itemGroup.scannable.common": "扫描器",
 	"item.scannable.scanner": "扫描器",
 	"item.scannable.scanner.desc": "用于扫描附近有趣的东西",
 	"item.scannable.scanner.energy": "能量: %s/%s",
@@ -26,9 +26,9 @@
 	"item.scannable.chest_module.desc": "检测储物方块(例如: 箱子, 木桶, 潜影盒等)",
 	"tooltip.scannable.module.energy_cost": "能量消耗: %s",
 	"tooltip.scannable.list_item": "§7- §f%s§r",
-	"gui.scannable.scanner.active_modules": "模块",
+	"gui.scannable.scanner.active_modules": "已激活模块",
 	"gui.scannable.scanner.active_modules.desc": "这些是激活的模块, 会在执行扫描时使用",
-	"gui.scannable.scanner.inactive_modules": "未激活",
+	"gui.scannable.scanner.inactive_modules": "未激活模块",
 	"gui.scannable.scanner.inactive_modules.desc": "这些是用于存放额外模块的便捷槽位, 扫描时不会使用",
 	"gui.scannable.scanner.progress": "充能中...%s%%",
 	"gui.scannable.block_module.list": "方块",

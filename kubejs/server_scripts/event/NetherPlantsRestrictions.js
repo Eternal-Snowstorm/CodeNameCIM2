@@ -1,23 +1,19 @@
 BlockEvents.rightClicked((event) => {
-	let { block, player } = event
+	let { item, block, player } = event
 
-	// 获取维度
-	let getDimension = block.level.getDimension()
+	if (event.hand !== "MAIN_HAND") {
+		return
+	}
 
-	// 方块列表
-	let blockList = [
-		"minecraft:soul_sand",
-		"minecraft:soul_soil",
-		"mynethersdelight:resurgent_soil",
-		"mynethersdelight:resurgent_soil_farmland"
-	]
-	blockList.forEach((id) => {
-		if (block.id === id) {
-			player.tell("aaa")
-		}
-	})
+	if (!item.hasTag(`${global.namespace}:nether_crops`)) {
+		return
+	}
 
-	// if (player.mainHandItem.hasTag("cmi:nether_crops") && getDimension !== "minecraft:the_nether" && block.hasTag(`${global.namespace}:nether_farmland`)) {
-	// 	event.cancel()
-	// }
+	let getDimension = block.level.getDimension().toString()
+
+	if (getDimension !== "minecraft:the_nether" || !block.hasTag(`${global.namespace}:nether_farmland`)) {
+		player.displayClientMessage(Component.translate(`display.${global.namespace}.nether_crops`), true)
+		event.cancel()
+		return
+	}
 })
