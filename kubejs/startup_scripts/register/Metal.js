@@ -149,6 +149,7 @@ addMaterial("platinum", 0XA4D4DA, "iron")
 	.block()
 	.dust()
 
+// 泓钢
 addMaterial("siltsteel", 0x48D1CC, "diamond")
 	.ingot()
 	.plate()
