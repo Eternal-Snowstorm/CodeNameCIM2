@@ -5,7 +5,7 @@
 	filename: "start"
 	group: ""
 	id: "7CF1214F39DD4E53"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -248,6 +248,684 @@
 			}]
 			x: 6.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["005CD7BF1218DD20"]
+			id: "3DB805F9D13B67E8"
+			tasks: [{
+				id: "11980AAF376761D6"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3DB805F9D13B67E8"]
+			id: "49B70C43E78A7AD2"
+			tasks: [{
+				id: "197B0D7CCE98E1FD"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			id: "402C1FBF781261AB"
+			tasks: [{
+				id: "3E1A55E9A8E95CC7"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			id: "2C87A57EF28732AC"
+			tasks: [{
+				id: "075E319AAD59F7A3"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"2C87A57EF28732AC"
+				"402C1FBF781261AB"
+			]
+			id: "12696E4294894053"
+			tasks: [{
+				id: "453163005F1B004A"
+				item: "cmi:basic_mechanism_part"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.5d
+		}
+		{
+			id: "70DBB589695C3CEA"
+			tasks: [{
+				id: "7D2B3FEE681F69A7"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"12696E4294894053"
+				"70DBB589695C3CEA"
+				"49B70C43E78A7AD2"
+			]
+			id: "2EAFE4330211A3E5"
+			tasks: [{
+				id: "6F31283B62191730"
+				item: "cmi:wooden_mechanism"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 14.0d
+		}
+		{
+			id: "414EEE72A59CEE7E"
+			tasks: [{
+				id: "220DAA4A983F78AB"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["414EEE72A59CEE7E"]
+			id: "2AEF0BF597FF0E36"
+			tasks: [{
+				id: "73A17049198BEC5E"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"2AEF0BF597FF0E36"
+				"2EAFE4330211A3E5"
+				"414EEE72A59CEE7E"
+			]
+			id: "5080AD4A92076C63"
+			tasks: [{
+				id: "60BBAE1D75A64388"
+				item: "cmi:stone_mechanism"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5080AD4A92076C63"]
+			id: "749E2F97A546138F"
+			tasks: [{
+				id: "2768A6B87D06FAE1"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 17.5d
+		}
+		{
+			id: "5207B60478479507"
+			tasks: [{
+				id: "2278E4425E23E67F"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"749E2F97A546138F"
+				"5207B60478479507"
+			]
+			id: "7CAF5D1A43F60C94"
+			tasks: [{
+				id: "0CD4252658F4104D"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["749E2F97A546138F"]
+			id: "1CF1EC031E96F463"
+			tasks: [{
+				id: "505910423D472A68"
+				item: "cmi:crafting_incomplete_iron_mechanism"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["1CF1EC031E96F463"]
+			id: "62332D989B47A2AC"
+			tasks: [{
+				id: "70A1166D2848ECE5"
+				item: "cmi:iron_mechanism"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["749E2F97A546138F"]
+			id: "3986B9022EE49478"
+			tasks: [{
+				id: "4551154E9FF9A688"
+				item: "tconstruct:molten_iron_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 20.5d
+		}
+		{
+			id: "2C07E11F375519A5"
+			tasks: [{
+				id: "2E3234620B5D4BCB"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 20.5d
+		}
+		{
+			dependencies: [
+				"3986B9022EE49478"
+				"2C07E11F375519A5"
+			]
+			id: "092E52D589251DDD"
+			tasks: [{
+				id: "390818A8FEA1AA2A"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["092E52D589251DDD"]
+			id: "12ED57298B8E5160"
+			tasks: [{
+				id: "27F3E71D5A5EFF9E"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 23.5d
+		}
+		{
+			dependencies: ["12ED57298B8E5160"]
+			id: "7A6B442C02FC2417"
+			tasks: [{
+				id: "7D27D65BA330CD5D"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["7A6B442C02FC2417"]
+			id: "2A510C012BBD36CE"
+			tasks: [{
+				id: "721627B0714E5715"
+				item: "cmi:mechanical_mechanism_part"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 26.0d
+		}
+		{
+			dependencies: [
+				"2A510C012BBD36CE"
+				"092E52D589251DDD"
+				"7A6B442C02FC2417"
+			]
+			id: "30CC934FC72B01AA"
+			tasks: [{
+				id: "72DEAE7817AA4532"
+				item: "cmi:andesite_mechanism"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["749E2F97A546138F"]
+			id: "71A20ADAD19D659C"
+			tasks: [{
+				id: "22DA110604A3EFA6"
+				item: "cmi:crafting_incomplete_copper_mechanism"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["1FD1D5E6377442B1"]
+			id: "11166BE018364FAF"
+			tasks: [{
+				id: "04347728C6E9B62B"
+				item: "thermal:copper_plate"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["30CC934FC72B01AA"]
+			id: "1FD1D5E6377442B1"
+			tasks: [{
+				id: "41E1DBD247514614"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["11166BE018364FAF"]
+			id: "43C54F22E842C0C6"
+			tasks: [{
+				id: "43B25531F3ECB84D"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["30CC934FC72B01AA"]
+			id: "1820C3D119893ECB"
+			tasks: [{
+				id: "20EEA81C7035C09B"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["1820C3D119893ECB"]
+			id: "69C59845863F79DD"
+			tasks: [{
+				id: "6B6A46475C8A1EA0"
+				item: "thermal:latex_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["69C59845863F79DD"]
+			id: "0902233AD63B74D5"
+			tasks: [{
+				id: "4B1B0226E491D6F7"
+				item: "thermal:rubber"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["0902233AD63B74D5"]
+			id: "1C251FB6B7719FC8"
+			tasks: [{
+				id: "53BA6C8957D6709E"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["7CAF5D1A43F60C94"]
+			id: "3CB2DC46C5029116"
+			tasks: [{
+				id: "67ED9E8DECDE975A"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["3CB2DC46C5029116"]
+			id: "4C8C894576DDE1FA"
+			tasks: [{
+				id: "09ED1DB566143B59"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 25.0d
+		}
+		{
+			dependencies: [
+				"43C54F22E842C0C6"
+				"71A20ADAD19D659C"
+				"1C251FB6B7719FC8"
+				"4C8C894576DDE1FA"
+			]
+			id: "68FA9B58D7B89A6B"
+			tasks: [{
+				id: "41C868EE61DCB1B2"
+				item: "cmi:copper_mechanism"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 25.5d
+		}
+		{
+			dependencies: [
+				"30CC934FC72B01AA"
+				"18A89F1382188225"
+			]
+			id: "3311EF044900CFBC"
+			tasks: [{
+				id: "78ABC8490EF721A9"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["749E2F97A546138F"]
+			id: "4A58565C4394E5A9"
+			tasks: [{
+				id: "42A7D4CCE55F8A00"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["4A58565C4394E5A9"]
+			id: "429AC683E7225422"
+			tasks: [{
+				id: "41BF389F4FB16511"
+				item: "create:brass_sheet"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["429AC683E7225422"]
+			id: "18A89F1382188225"
+			tasks: [{
+				id: "5E3189ECEA9FD926"
+				item: "create:brass_hand"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 26.5d
+		}
+		{
+			id: "767AABB1E0BF1C70"
+			tasks: [{
+				id: "5212F86BB2308F44"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 39.5d
+		}
+		{
+			dependencies: ["767AABB1E0BF1C70"]
+			id: "25A851630622C019"
+			tasks: [{
+				id: "6842F09729DB26CF"
+				item: "minecraft:quartz_slab"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 39.5d
+		}
+		{
+			id: "5BF51E42F8B5CB9D"
+			tasks: [{
+				id: "3C681C564AD71106"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 36.5d
+		}
+		{
+			dependencies: ["3311EF044900CFBC"]
+			id: "6ACBCD669F81BC6C"
+			tasks: [{
+				id: "4D580B26A98DFB80"
+				item: "cmi:gold_mechanism"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["30CC934FC72B01AA"]
+			id: "474F72EDB4700F5C"
+			tasks: [{
+				id: "12DF20153F5FC251"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 29.0d
+		}
+		{
+			id: "39517645F3324E4C"
+			tasks: [{
+				id: "7F1ACB1C5C4D66C1"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 29.0d
+		}
+		{
+			id: "07A05C5E7682C672"
+			tasks: [{
+				id: "48C6202CB5372836"
+				item: "immersiveengineering:redstone_acid_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 29.0d
+		}
+		{
+			dependencies: [
+				"39517645F3324E4C"
+				"07A05C5E7682C672"
+				"474F72EDB4700F5C"
+			]
+			id: "5C03A8FB1BB871A6"
+			tasks: [{
+				id: "1EBDAA529612DF7A"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["30CC934FC72B01AA"]
+			id: "24955C19A5FAAFBB"
+			tasks: [{
+				id: "0720CF194B582103"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 31.0d
+		}
+		{
+			dependencies: [
+				"5C03A8FB1BB871A6"
+				"24955C19A5FAAFBB"
+			]
+			id: "3C6DFF784EB6E6C4"
+			tasks: [{
+				id: "5DD0877C19D770D4"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 32.5d
+		}
+		{
+			id: "703ADB7AE3874438"
+			tasks: [{
+				id: "527092C891514078"
+				item: "thermal:iron_plate"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 32.5d
+		}
+		{
+			dependencies: [
+				"3C6DFF784EB6E6C4"
+				"703ADB7AE3874438"
+			]
+			id: "3BAFE91FF8DD8F04"
+			tasks: [{
+				id: "72744B9252DE9A5E"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 34.0d
+		}
+		{
+			dependencies: [
+				"429AC683E7225422"
+				"3BAFE91FF8DD8F04"
+			]
+			id: "43408EDDCD5F66C3"
+			tasks: [{
+				id: "161081EDB04AF67A"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 33.5d
+		}
+		{
+			dependencies: ["43408EDDCD5F66C3"]
+			id: "69BD3897DB655E61"
+			tasks: [{
+				id: "21001E468DC8318F"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 35.0d
+		}
+		{
+			dependencies: [
+				"69BD3897DB655E61"
+				"68A9825266B19AC4"
+			]
+			id: "0279064B10FF7BAF"
+			tasks: [{
+				id: "1CE8DE4021C42F95"
+				item: "vintageimprovements:laser_item"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 39.5d
+		}
+		{
+			dependencies: [
+				"5BF51E42F8B5CB9D"
+				"47D2FD89EF5A0C9D"
+			]
+			id: "2908DB9838AE89BD"
+			tasks: [{
+				id: "55286B0D8B0CF982"
+				item: "cmi:charged_amethyst"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 38.0d
+		}
+		{
+			dependencies: ["69BD3897DB655E61"]
+			id: "47D2FD89EF5A0C9D"
+			tasks: [{
+				id: "18F5FD8B4920E61A"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 36.5d
+		}
+		{
+			id: "7A33560B6334473A"
+			tasks: [{
+				id: "35734531B24FD63C"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 38.0d
+		}
+		{
+			dependencies: [
+				"25A851630622C019"
+				"2908DB9838AE89BD"
+				"7A33560B6334473A"
+			]
+			id: "68A9825266B19AC4"
+			tasks: [{
+				id: "014B20688E8BD419"
+				item: "cmi:photosensitive_mechanism"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 39.5d
+		}
+		{
+			id: "2B86B7A219F47261"
+			tasks: [{
+				id: "0ABC8796F15465D2"
+				item: "vintageimprovements:laser_item"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 39.5d
 		}
 	]
 	title: "Start"
