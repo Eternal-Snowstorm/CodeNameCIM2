@@ -5,6 +5,14 @@
 	filename: "start"
 	group: ""
 	id: "7CF1214F39DD4E53"
+	images: [{
+		height: 5.5d
+		image: "cmi:textures/images/unfinished.png"
+		rotation: 0.0d
+		width: 15.4d
+		x: 1.5d
+		y: -5.0d
+	}]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
