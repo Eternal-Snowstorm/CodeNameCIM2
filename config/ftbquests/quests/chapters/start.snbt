@@ -5,7 +5,7 @@
 	filename: "start"
 	group: ""
 	id: "7CF1214F39DD4E53"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -275,7 +275,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 10.5d
+			y: 9.5d
 		}
 		{
 			id: "402C1FBF781261AB"

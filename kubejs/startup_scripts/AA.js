@@ -1,5 +1,6 @@
 // This script can be hot reloaded with "kjs reload starup_scripts"
 // 这个脚本可以用"kjs reload starup_scripts"进行热重载
+/*
 IEEvents.multiblockForm((event) => {
 	let { player, multiblock } = event
 
@@ -11,3 +12,4 @@ IEEvents.multiblockForm((event) => {
 		player.tell("bbb")
 	}
 })
+*/

@@ -200,12 +200,11 @@
 	"ae2.ponder.wireless_connection.text_7": "如果已经建造了一个量子环",
 	"ae2.ponder.wireless_connection.text_8": "可以将量子桥卡与配对缠绕态奇点插入一个无线通用终端",
 	"ae2.ponder.wireless_connection.text_9": "以获取无限距离与跨维度的网络访问",
-	"kubejs.ponder.usage.header": "坩埚使用",
-	"kubejs.ponder.usage.text_1": "预热器安装在这里",
-	"kubejs.ponder.usage.text_2": "同时必须提供能量",
-	"kubejs.ponder.usage.text_3": "你可以使用GUI或使用自动输入",
-	"kubejs.ponder.usage.text_4": "原料可以扔进坩埚",
-	"kubejs.ponder.usage.text_5": "也可以从顶部输入进坩埚",
-	"kubejs.ponder.usage.text_6": "焦炭可以输入燃烧室",
-	"kubejs.ponder.usage.text_7": "产物可以从坩埚侧面输出"
+	"cmi.ponder.usage.header": "坩埚使用",
+	"cmi.ponder.usage.text_1": "预热器安装在这里",
+	"cmi.ponder.usage.text_2": "并且要提供能量",
+	"cmi.ponder.usage.text_3": "你可以使用GUI输入原料, 也可以使用自动化的方式",
+	"cmi.ponder.usage.text_4": "原料可以从顶部输入",
+	"cmi.ponder.usage.text_5": "焦煤可以输入进燃烧室",
+	"cmi.ponder.usage.text_6": "而产物可以从侧边输出"
 }

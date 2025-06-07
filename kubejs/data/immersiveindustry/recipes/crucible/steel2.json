@@ -1,0 +1,16 @@
+{
+	"type": "immersiveindustry:crucible",
+	"inputs": [
+		{
+			"tag": "forge:dusts/iron"
+		},
+		{
+			"item": "create:limestone"
+		}
+	],
+	"result": {
+		"item": "tconstruct:steel_ingot"
+	},
+	"time": 600,
+	"temperature": 1500
+}

@@ -6,6 +6,7 @@ ServerEvents.tags("block", (event) => {
 		.add("ad_astra:moon_cheese_ore")
 
 	event.get(`${global.namespace}:nether_farmland`)
+		.add("minecraft:netherrack")
 		.add("minecraft:soul_sand")
 		.add("minecraft:soul_soil")
 		.add("mynethersdelight:resurgent_soil")

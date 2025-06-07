@@ -18,7 +18,7 @@ ServerEvents.tags("item", (event) => {
 		.add("minecraft:twisting_vines")
 		.add("mynethersdelight:crimson_fungus_colony")
 		.add("mynethersdelight:warped_fungus_colony")
-		.add("mynethersdelight:powdery_cannon")
+		.add("mynethersdelight:powder_cannon")
 
 	event.get(`${global.namespace}:batteries`)
 		.add("mekanism:basic_energy_cube")
