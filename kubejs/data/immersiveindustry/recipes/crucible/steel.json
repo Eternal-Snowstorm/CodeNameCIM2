@@ -5,7 +5,7 @@
 			"tag": "forge:ingots/cast_iron"
 		},
 		{
-			"item": "minecraft:calcite"
+			"tag": "cmi:steelmaking_raw_materials"
 		}
 	],
 	"result": {

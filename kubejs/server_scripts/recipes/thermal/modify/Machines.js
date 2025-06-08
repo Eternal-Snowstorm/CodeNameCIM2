@@ -137,7 +137,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 
-	kubejs.shaped("thermal:device_extractor", [
+	kubejs.shaped("thermal:device_tree_extractor", [
 		"D",
 		"C",
 		"E"

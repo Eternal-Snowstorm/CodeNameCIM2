@@ -11,6 +11,10 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	event.get(`${global.namespace}:steelmaking_raw_materials`)
+		.add("minecraft:calcite")
+		.add("create:limestone")
+
 	event.get(`${global.namespace}:nether_crops`)
 		.add("minecraft:nether_sprouts")
 		.add("minecraft:nether_wart")

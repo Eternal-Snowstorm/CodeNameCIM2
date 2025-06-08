@@ -32,28 +32,34 @@ ServerEvents.recipes((event) => {
 	], [
 		"4x #create:crushed_raw_materials/iron",
 		"#forge:coal_coke",
-		"create:limestone"
+		"#cmi:steelmaking_raw_materials"
 	]).processingTime(200).superheated()
-
-	vintageimprovements.pressurizing([
-		"cmi:cast_iron_ingot",
-		"thermal:slag"
-	], [
-		"4x #create:crushed_raw_materials/iron",
-		"#forge:coal_coke",
-		"minecraft:calcite"
-	]).processingTime(200).superheated()
-
-	// 钢锭
-	create.sequenced_assembly("tconstruct:steel_ingot", [
-		"#forge:plates/cast_iron"
-	], [
-		create.pressing("immersiveengineering:dust_iron", ["immersiveengineering:dust_iron"])
-	]).transitionalItem("immersiveengineering:dust_iron").loops(10)
 
 	// 木棍
 	create.cutting([
 		Item.of("minecraft:stick", 4).withChance(1),
 		Item.of("minecraft:stick", 2).withChance(0.25)
 	], "#minecraft:planks")
+
+	// 木屑
+	create.compacting("cmi:wood_chip_briquette", [
+		"4x createdieselgenerators:wood_chip"
+	])
+
+	create.compacting("cmi:compressed_wood_chip_briquette", [
+		"4x cmi:wood_chip_briquette"
+	])
+
+	create.compacting("cmi:compressed_wood_chip_briquette", [
+		"4x cmi:wood_chip_briquette"
+	])
+
+	create.compacting("cmi:densely_packed_wood_chip_briquette", [
+		"4x cmi:compressed_wood_chip_briquette"
+	])
+
+	create.compacting("cmi:creosote_wood_chip_briquette", [
+		"cmi:densely_packed_wood_chip_briquette",
+		{ fluidTag: "forge:creosote", amount: 250 }
+	])
 })

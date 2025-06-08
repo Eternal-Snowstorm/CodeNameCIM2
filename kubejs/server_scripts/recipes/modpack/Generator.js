@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs } = event.recipes
+	let { create, kubejs, vintageimprovements } = event.recipes
 
 	const BATTERY = `#${global.namespace}:batteries`
 
@@ -53,7 +53,6 @@ ServerEvents.recipes((event) => {
 		"#forge:rods/gold"
 	], [
 		create.deploying(incGoldRod, [incGoldRod, "#forge:dusts/redstone"]),
-		create.deploying(incGoldRod, [incGoldRod, "#forge:wires/copper"]),
-		create.deploying(incGoldRod, [incGoldRod, "#forge:dusts/redstone"]),
+		vintageimprovements.laser_cutting(incGoldRod, [incGoldRod]).energy(1000),
 	]).transitionalItem(incGoldRod).loops(1)
 })

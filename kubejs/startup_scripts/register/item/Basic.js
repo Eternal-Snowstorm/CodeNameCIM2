@@ -65,4 +65,21 @@ StartupEvents.registry("item", (event) => {
 
 	event.create(`${global.namespace}:platinum_shard`)
 		.texture(`${global.namespace}:item/material/platinum/shard`)
+
+	// 木屑加工系列
+	event.create(`${global.namespace}:wood_chip_briquette`)
+		.texture(`${global.namespace}:item/material/wood_chip/stage_1`)
+		.burnTime(800)
+
+	event.create(`${global.namespace}:compressed_wood_chip_briquette`)
+		.texture(`${global.namespace}:item/material/wood_chip/stage_2`)
+		.burnTime(3600)
+
+	event.create(`${global.namespace}:densely_packed_wood_chip_briquette`)
+		.texture(`${global.namespace}:item/material/wood_chip/stage_3`)
+		.burnTime(9200)
+
+	event.create(`${global.namespace}:creosote_wood_chip_briquette`)
+		.texture(`${global.namespace}:item/material/wood_chip/done`)
+		.burnTime(16000)
 })

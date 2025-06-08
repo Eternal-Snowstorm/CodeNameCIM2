@@ -24,6 +24,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("sludge_extract", "淤泥提取物")
 	addItemLanguage("crafting_incomplete_iron_mechanism", "铁构件底座")
 	addItemLanguage("crafting_incomplete_copper_mechanism", "铜构件底座")
+	addItemLanguage("wood_chip_briquette", "木屑块")
+	addItemLanguage("compressed_wood_chip_briquette", "压缩木屑块")
+	addItemLanguage("densely_packed_wood_chip_briquette", "致密压缩木屑块")
+	addItemLanguage("creosote_wood_chip_briquette", "浸油致密压缩木屑块")
 
 	addCastItemLanguage("mechanism", "构件")
 

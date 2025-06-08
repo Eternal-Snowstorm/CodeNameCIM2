@@ -8,6 +8,7 @@ ServerEvents.recipes((event) => {
 		"vintageimprovements:grinder_polishing/rose_quartz",
 		"tconstruct:smeltery/seared/drain_retextured",
 		"tconstruct:smeltery/seared/duct_retextured",
+		"createdieselgenerators:crafting/chip_wood_beam",
 		"tconstruct:smeltery/seared/chute_retextured",
 		"tconstruct:__default",
 		"functionalstorage:void_upgrade",
@@ -72,6 +73,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeItemOutputRecipes = [
+		"createdieselgenerators:chip_wood_block",
 		"pipez:filter_destination_tool",
 		"create:schedule",
 		"create:track_signal",

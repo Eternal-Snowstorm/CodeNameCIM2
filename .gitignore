@@ -71,3 +71,4 @@ ESM
 !/config/scannable*
 !/config/carryon-common.toml
 !/config/cookingforblockheads-common.toml
+!/config/capsule-common.toml

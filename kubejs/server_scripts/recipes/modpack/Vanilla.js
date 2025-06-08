@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
 	]).damageIngredient("immersiveengineering:hammer")
 
 	// 坩埚底座
-	kubejs.shaped("cmi:crucible_base", [
+	kubejs.shaped("3x cmi:crucible_base", [
 		"AAA",
 		"A A",
 		"AAA"
