@@ -106,8 +106,21 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:dynamo",
 		"immersiveengineering:thermoelectric_generator",
 		"immersiveengineering:generator",
-		"portality:generator"
+		"portality:generator",
+		"#thermal:machines",
+		' thermal:device_tree_extractor',
+		' thermal:device_fisher',
+		' thermal:device_composter',
+		' thermal:device_water_gen',
+		' thermal:device_rock_gen',
+		' thermal:device_collector',
+		' thermal:device_xp_condenser',
+		' thermal:device_nullifier',
+		' thermal:device_potion_diffuser'
 	]
+
+
+
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({
 			output: item

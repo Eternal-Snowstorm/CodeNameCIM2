@@ -7,10 +7,6 @@ ServerEvents.recipes(event => {
     //空示例 addMekUpdate(, )
 
     function addMekUpdate(name, lowestid) {
-        create.item_application(`mekanism:basic_${name}`, [lowestid, "cmi:basic_mekanism_mechanism"])
-        create.item_application(`mekanism:advanced_${name}`, [`mekanism:basic_${name}`, "cmi:advanced_mekanism_mechanism"])
-        create.item_application(`mekanism:elite_${name}`, [`mekanism:advanced_${name}`, "cmi:elite_mekanism_mechanism"])
-        create.item_application(`mekanism:ultimate_${name}`, [`mekanism:elite_${name}`, "cmi:ultimate_mekanism_mechanism"])
 
         //为开发方便，remove配方只好放这里面，真心对不起=(
 
@@ -32,4 +28,28 @@ ServerEvents.recipes(event => {
     addMekUpdate("energy_cube", "immersiveengineering:capacitor_mv")
     addMekUpdate("fluid_tank", "create:fluid_tank")
     addMekUpdate("chemical_tank", "cmi:osmium_tile")
+
+
+
+
+
+    kubejs.shapeless('mekanism:basic_tier_installer', [
+		"#minecraft:planks",
+		"cmi:basic_mekanism_mechanism"
+    ])
+
+    kubejs.shapeless('mekanism:advanced_tier_installer', [
+		"#minecraft:planks",
+		"cmi:advanced_mekanism_mechanism"
+    ])
+
+    kubejs.shapeless('mekanism:elite_tier_installer', [
+		"#minecraft:planks",
+		"cmi:elite_mekanism_mechanism"
+    ])
+
+    kubejs.shapeless('mekanism:ultimate_tier_installer', [
+		"#minecraft:planks",
+		"cmi:ultimate_mekanism_mechanism"
+    ])
 })

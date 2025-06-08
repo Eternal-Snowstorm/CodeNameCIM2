@@ -1,5 +1,5 @@
 StartupEvents.registry("painting_variant", (event) => {
-	// Unknown_Entity_
+	// Aleegos
 	addPainting("rr1", 16, 16)
 	addPainting("rr2", 16, 16)
 	addPainting("rr3", 16, 16)
