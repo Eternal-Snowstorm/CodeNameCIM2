@@ -50,4 +50,10 @@ ServerEvents.recipes((event) => {
 	], [
 		create.pressing("immersiveengineering:dust_iron", ["immersiveengineering:dust_iron"])
 	]).transitionalItem("immersiveengineering:dust_iron").loops(10)
+
+	// 木棍
+	create.cutting([
+		Item.of("minecraft:stick", 4).withChance(1),
+		Item.of("minecraft:stick", 2).withChance(0.25)
+	], "#minecraft:planks")
 })

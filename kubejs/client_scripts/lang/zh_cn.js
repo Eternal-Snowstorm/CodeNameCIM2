@@ -117,12 +117,13 @@ ClientEvents.lang("zh_cn", (event) => {
 	addOreNodeLanguaue("cheese", "奶酪")
 	addOreNodeLanguaue("coal", "煤炭")
 
-	addFluidLanguage("molten_andesite_alloy", "熔融安山合金")
 	addFluidLanguage("blood", "血液")
 
 	addBlockLanguage("the_accelerator_of_mechanism_power", "构件之力催生器")
 	addBlockLanguage("osmium_tile", "锇砖瓦")
 	addBlockLanguage("compression_end_stone_dust_block", "压缩末地石粉块")
+	addBlockLanguage("crucible_base", "底座")
+	addBlockLanguage("crucible_tuyere", "风口")
 
 	addBlockLanguage("andesite_machine", "安山机械方块")
 	addBlockLanguage("brass_machine", "黄铜机械方块")

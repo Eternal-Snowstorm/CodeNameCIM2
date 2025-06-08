@@ -21,8 +21,11 @@ Ponder.tags((event) => {
 		"portality:module_energy",
 		"portality:module_interdimensional",
 		"immersiveindustry:crucible",
-        "immersiveindustry:burning_chamber",
-        "immersiveengineering:blastfurnace_preheater"
+		"immersiveindustry:burning_chamber",
+		"immersiveengineering:blastfurnace_preheater",
+		"immersiveengineering:blastbrick",
+		"cmi:crucible_base",
+		"cmi:crucible_tuyere"
 	])
 
 	addPonderTag("tconstruct", "tconstruct:smeltery_controller", "Tinkers' Construct", [

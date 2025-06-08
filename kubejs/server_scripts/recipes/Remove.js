@@ -16,7 +16,8 @@ ServerEvents.recipes((event) => {
 		"create:sequenced_assembly/precision_mechanism",
 		"immersiveengineering:crafting/gunpowder_from_dusts",
 		"thermal:gunpowder_4",
-		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals"
+		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals",
+		"minecraft:stick_from_bamboo_item"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -108,19 +109,16 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:generator",
 		"portality:generator",
 		"#thermal:machines",
-		' thermal:device_tree_extractor',
-		' thermal:device_fisher',
-		' thermal:device_composter',
-		' thermal:device_water_gen',
-		' thermal:device_rock_gen',
-		' thermal:device_collector',
-		' thermal:device_xp_condenser',
-		' thermal:device_nullifier',
-		' thermal:device_potion_diffuser'
+		"thermal:device_tree_extractor",
+		"thermal:device_fisher",
+		"thermal:device_composter",
+		"thermal:device_water_gen",
+		"thermal:device_rock_gen",
+		"thermal:device_collector",
+		"thermal:device_xp_condenser",
+		"thermal:device_nullifier",
+		"thermal:device_potion_diffuser"
 	]
-
-
-
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({
 			output: item

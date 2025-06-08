@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:ingots/lead",
 		C: GLASS,
 		D: "cmi:feinforced_mechanism"
-	}).id("thermal:fluid_cell_frame")
+	}).id("thermal:energy_cell_frame")
 
 	// 机器框架
 	kubejs.shaped("thermal:machine_frame", [

@@ -27,4 +27,34 @@ ServerEvents.recipes((event) => {
 		"2x #forge:stone",
 		"immersiveengineering:hammer"
 	]).damageIngredient("immersiveengineering:hammer")
+
+	// 坩埚底座
+	kubejs.shaped("cmi:crucible_base", [
+		"AAA",
+		"A A",
+		"AAA"
+	], {
+		A: "#forge:plates/cast_iron"
+	})
+
+	// 坩埚风口
+	kubejs.shaped("cmi:crucible_tuyere", [
+		"ABA",
+		"B B",
+		"ABA"
+	], {
+		A: "#forge:ingots/cast_iron",
+		B: "#forge:plates/cast_iron"
+	})
+
+	// 坩埚燃烧室
+	kubejs.shaped("immersiveindustry:burning_chamber", [
+		"AAA",
+		"BCB",
+		"AAA"
+	], {
+		A: "#forge:ingots/cast_iron",
+		B: "#forge:plates/cast_iron",
+		C: "minecraft:blast_furnace"
+	}).id("immersiveindustry:crafting/burning_chamber")
 })

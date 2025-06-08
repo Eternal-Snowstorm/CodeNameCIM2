@@ -38,4 +38,23 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.miningLevel["wooden"])
 		.requiresTool(true)
+
+	// 坩埚底座
+	event.create(`${global.namespace}:crucible_base`)
+		.textureAll(`${global.namespace}:block/crucible/top`)
+		.soundType(SoundType.METAL)
+		.hardness(6)
+		.resistance(6)
+		.tagBlock(global.toolType["pickaxe"])
+		.tagBlock(global.miningLevel["iron"])
+		.requiresTool(true)
+
+	// 坩埚风口
+	event.create(`${global.namespace}:crucible_tuyere`)
+		.soundType(SoundType.METAL)
+		.hardness(6)
+		.resistance(6)
+		.tagBlock(global.toolType["pickaxe"])
+		.tagBlock(global.miningLevel["iron"])
+		.requiresTool(true)
 })

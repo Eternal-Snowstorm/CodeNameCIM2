@@ -3,7 +3,9 @@ Ponder.registry((event) => {
 		"immersiveindustry:crucible",
 		"immersiveindustry:burning_chamber",
 		"immersiveengineering:blastfurnace_preheater",
-		"immersiveengineering:blastbrick"
+		"immersiveengineering:blastbrick",
+		"cmi:crucible_base",
+		"cmi:crucible_tuyere"
 	]).scene("cmi:usage", "Crucible Usage", "cmi:multiblock/crucible_usage", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
