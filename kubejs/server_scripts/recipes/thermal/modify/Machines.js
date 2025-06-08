@@ -136,6 +136,45 @@ ServerEvents.recipes((event) => {
 		E: "cmi:andesite_mechanism",
 	})
 
+	// 
+	kubejs.shaped("thermal:device_extractor", [
+		"D",
+		"C",
+		"E"
+	], {
+		A: PLANK,
+		B: COPPER_MECH,
+		C: "create:andesite_casing",
+		D: "minecraft:bucket",
+		E: "cmi:andesite_mechanism",
+	})
+
+	// 
+	kubejs.shaped("thermal:device_rock_gen", [
+		"D",
+		"C",
+		"E"
+	], {
+		A: PLANK,
+		B: COPPER_MECH,
+		C: "thermal:machine_frame",
+		D: "minecraft:piston",
+		E: THERMAL_MECH,
+	})
+
+	// 
+	kubejs.shaped("thermal:device_water_gen", [
+		"D",
+		"C",
+		"E"
+	], {
+		A: PLANK,
+		B: COPPER_MECH,
+		C: "thermal:fluid_cell_frame",
+		D: "minecraft:bucket",
+		E: COPPER_MECH,
+	})
+
 	kubejs.shaped("thermal:dynamo_stirling", [
 		" A ",
 		"BMB",
