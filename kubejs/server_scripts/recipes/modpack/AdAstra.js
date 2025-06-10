@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
 				const COUNT = parseInt(MATCH[1])
 				const ITEM = MATCH[2]
 				const ARRAY = []
-				for (let I = 0; I < COUNT; I++) {
+				for (let i = 0; i < COUNT; i++) {
 					ARRAY.push(ITEM.startsWith("#")
 						? { "tag": ITEM.substring(1) }
 						: { "item": ITEM }
@@ -27,8 +27,8 @@ ServerEvents.recipes((event) => {
 
 		let ingredients = []
 		if (Array.isArray(input)) {
-			input.forEach((ING) => {
-				if (typeof ING === "string") {
+			input.forEach((ing) => {
+				if (typeof ing === "string") {
 					const PARSED = parseInput(ING)
 					if (Array.isArray(PARSED)) {
 						ingredients = ingredients.concat(PARSED)
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 						ingredients.push(PARSED)
 					}
 				} else {
-					ingredients.push(ING)
+					ingredients.push(ing)
 				}
 			})
 		} else if (typeof input === "string") {
