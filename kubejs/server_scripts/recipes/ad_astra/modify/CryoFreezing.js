@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { ad_astra } = event.recipes
 
-	// 寒冰碎片
+	// 寒冰碎片(按理说一个寒冰碎片应该是2.5mb...但是很明显写小数不太好, 所以只能四舍五入了)
 	ad_astra.cryo_freezing(Fluid.of("ad_astra:cryo_fuel", 3), [
 		"ad_astra:ice_shard"
 	]).energy(125).cookingtime(25).id("ad_astra:cryo_freezing/cryo_fuel_from_cryo_freezing_ice_shard")
