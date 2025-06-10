@@ -16,6 +16,7 @@ ServerEvents.recipes((event) => {
 		"minecraft:blue_ice"
 	]).energy(2500).cookingtime(100).id("ad_astra:cryo_freezing/cryo_fuel_from_cryo_freezing_blue_ice")
 
+ // 冰
 	ad_astra.cryo_freezing(Fluid.of("ad_astra:cryo_fuel", 10), [
 		"minecraft:ice"
 	]).energy(500).cookingtime(100).id("ad_astra:cryo_freezing/cryo_fuel_from_cryo_freezing_ice")
