@@ -369,15 +369,13 @@ ServerEvents.highPriorityData((event) => {
 			let ingredient = makeIngredient(itemId)
 			let fluidAmount = units * factor;
 			event.addJson(
-				`tletruct:recipes/kjs/melting/${itemId.replace(":", "_").replace("#", "")}`,
-				{
-					type: "tletruct:melting",
-					ingredient: ingredient,
-					result: { fluid: fluid, amount: fluidAmount },
-					temperature: temperature,
-					time: time
-				}
-			)
+				`tletruct:recipes/kjs/melting/${itemId.replace(":", "_").replace("#", "")}`, {
+				type: "tletruct:melting",
+				ingredient: ingredient,
+				result: { fluid: fluid, amount: fluidAmount },
+				temperature: temperature,
+				time: time
+			})
 		}
 
 		// 加工台合成
@@ -391,10 +389,7 @@ ServerEvents.highPriorityData((event) => {
 				value: value
 			}
 			if (leftover) json.leftover = leftover
-			event.addJson(
-				`tletruct:recipes/kjs/material/${itemId.replace(":", "_").replace("#", "")}`,
-				json
-			);
+			event.addJson(`tletruct:recipes/kjs/material/${itemId.replace(":", "_").replace("#", "")}`, json)
 		}
 
 		// 如果需要, 为锭生成 熔炼 => 流体 配方
@@ -408,14 +403,12 @@ ServerEvents.highPriorityData((event) => {
 		// 流体 => 部件
 		if (fluid) {
 			event.addJson(
-				`tletruct:recipes/kjs/material_fluid/${fluid.replace(":", "_")}`,
-				{
-					type: "tletruct:material_fluid",
-					fluid: { fluid: fluid, amount: units },
-					temperature: time,
-					output: material
-				}
-			)
+				`tletruct:recipes/kjs/material_fluid/${fluid.replace(":", "_")}`, {
+				type: "tletruct:material_fluid",
+				fluid: { fluid: fluid, amount: units },
+				temperature: time,
+				output: material
+			})
 		}
 	}
 
