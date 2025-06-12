@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
 		if (Array.isArray(input)) {
 			input.forEach((ing) => {
 				if (typeof ing === "string") {
-					const PARSED = parseInput(ING)
+					const PARSED = parseInput(ing)
 					if (Array.isArray(PARSED)) {
 						ingredients = ingredients.concat(PARSED)
 					} else {

@@ -27,4 +27,7 @@ ServerEvents.tags("fluid", (event) => {
 
 	event.get("cmi:platinum_solution")
 		.add("cmi:platinum_solution")
+
+	event.get("forge:oil")
+		.add("#forge:crude_oil")
 })

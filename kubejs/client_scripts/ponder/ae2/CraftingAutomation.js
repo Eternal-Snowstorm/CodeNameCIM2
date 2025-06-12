@@ -1,6 +1,4 @@
 Ponder.registry((event) => {
-
-	// 简单的合成自动化
 	event.create([
 		"ae2:pattern_provider",
 		"ae2:crafting_unit"
@@ -238,6 +236,5 @@ Ponder.registry((event) => {
 		// 最后使用漏斗将产物取回到样板供应器
 		scene.text(60, "And finally suck the result back into the Pattern Provider with a Hopper", [1.5, 1.5, 2.5])
 		scene.idle(60)
-
 	})
 })

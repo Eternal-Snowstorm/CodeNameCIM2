@@ -1,7 +1,6 @@
 Ponder.registry((event) => {
 	event.create("ae2:controller")
 		.scene("ae2:controller", "ME Controller", "cmi:ae2/controller", (scene) => {
-
 			scene.showBasePlate()
 			scene.idle(20)
 
@@ -62,6 +61,5 @@ Ponder.registry((event) => {
 			// 而普通线缆只能传输8个频道
 			scene.text(40, "While thin cables transmit only 8 channels", [3.5, 3.5, 2.5])
 			scene.idle(60)
-
 		})
 })

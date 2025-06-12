@@ -199,6 +199,7 @@
  - 添加了`Extreme Sound Muffler` Mod
  - 添加了`My Nether's Delight` Mod
  - 添加了相当恐怖的木屑处理燃料线
+ - 添加了更多的流体燃料
 
 ### 修改(调整)内容
  - 调整了月球铂矿点的产物

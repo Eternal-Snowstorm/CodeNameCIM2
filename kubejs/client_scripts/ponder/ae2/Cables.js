@@ -1,9 +1,7 @@
 Ponder.registry((event) => {
-
 	// 频道
 	event.create("ae2:fluix_glass_cable")
 		.scene("ae2:cable", "Cables", "cmi:ae2/cables", (scene) => {
-
 			scene.showBasePlate()
 			scene.idle(20)
 
@@ -66,7 +64,6 @@ Ponder.registry((event) => {
 	// AE2特殊线缆
 	event.create("ae2:fluix_glass_cable")
 		.scene("ae2:channel", "Channels", "cmi:ae2/channels", (scene) => {
-
 			scene.showBasePlate()
 			scene.idle(20)
 

@@ -67,7 +67,7 @@ StartupEvents.registry("item", (event) => {
 				.tag(`forge:${type}s/${material.name}`)
 		})
 	})
-	console.log("Item已注册完毕!")
+	console.log("Items已注册完毕!")
 })
 StartupEvents.registry("block", (event) => {
 	materials.forEach((material) => {
@@ -90,7 +90,7 @@ StartupEvents.registry("block", (event) => {
 			}
 		})
 	})
-	console.log("Block已注册完毕!")
+	console.log("Blocks已注册完毕!")
 })
 StartupEvents.registry("fluid", (event) => {
 	materials.forEach((material) => {

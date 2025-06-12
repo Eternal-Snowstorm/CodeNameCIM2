@@ -46,5 +46,4 @@ Ponder.registry((event) => {
 			scene.idle(40)
 			scene.world.modifyBlock([4, 1, 4], (state) => state.with("state", "online"), false)
 		})
-
 })
