@@ -1,0 +1,18 @@
+{
+	"type": "create:crushing",
+	"ingredients": [
+		{
+			"tag": "minecraft:logs"
+		}
+	],
+	"results": [
+		{
+			"item": "createdieselgenerators:wood_chip",
+			"count": 21
+		},
+		{
+			"item": "createdieselgenerators:wood_chip",
+			"chance": 0.5
+		}
+	]
+}
