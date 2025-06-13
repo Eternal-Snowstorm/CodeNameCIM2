@@ -18,9 +18,7 @@ EntityEvents.spawned("minecraft:lightning_bolt", (event) => {
 		})
 
 		targets.forEach((entity) => {
-			let posX = entity.x
-			let posY = entity.y
-			let posZ = entity.z
+			let { x, y, z } = entity
 
 			let count = entity.item.count || 1
 
@@ -30,9 +28,9 @@ EntityEvents.spawned("minecraft:lightning_bolt", (event) => {
 				let itemEntity = level.createEntity("minecraft:item")
 				itemEntity.item = Item.of(output)
 
-				itemEntity.x = posX + (Math.random() * 0.4 - 0.2)
-				itemEntity.y = posY + (Math.random() * 0.4 - 0.2)
-				itemEntity.z = posZ + (Math.random() * 0.4 - 0.2)
+				itemEntity.x = x + (Math.random() * 0.4 - 0.2)
+				itemEntity.y = y + (Math.random() * 0.4 - 0.2)
+				itemEntity.z = z + (Math.random() * 0.4 - 0.2)
 				itemEntity.mergeNbt({ Invulnerable: 1 })
 				itemEntity.spawn()
 			}

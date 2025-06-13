@@ -405,7 +405,10 @@ ServerEvents.highPriorityData((event) => {
 			event.addJson(
 				`tletruct:recipes/kjs/material_fluid/${fluid.replace(":", "_")}`, {
 				type: "tletruct:material_fluid",
-				fluid: { fluid: fluid, amount: units },
+				fluid: {
+					fluid: fluid,
+					amount: units
+				},
 				temperature: time,
 				output: material
 			})
