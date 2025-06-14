@@ -272,7 +272,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["nether", "下界"],
 		["creative", "创造"],
 		["precision", "精密"],
-		["redstone", "红石"]
+		["redstone", "红石"],
+		["potion", "秘药"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
 		addFlashDriveLanguage(material, name)
