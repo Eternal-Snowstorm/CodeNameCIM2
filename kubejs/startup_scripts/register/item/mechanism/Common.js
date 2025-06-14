@@ -35,7 +35,8 @@ StartupEvents.registry("item", (event) => {
 		"coil",
 		"sculk",
 		"colorful",
-		"creative"
+		"creative",
+		"potion"
 	]
 	//仅注册完成状态的构件 没有驱动
 	global.mechanismList = mechanismRegister.concat("pigiron")
