@@ -1,9 +1,9 @@
 ServerEvents.recipes((event) => {
 	function addAlloyingRecipes(output, input, energy, time) {
-		if (energy === null) {
+		if (energy === undefined) {
 			energy = 1000
 		}
-		if (time === null) {
+		if (time === undefined) {
 			time = 100
 		}
 		function parseInput(string) {

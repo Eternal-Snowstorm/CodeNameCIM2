@@ -1,6 +1,23 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
+	// 催生器
+	kubejs.shaped("cmi:the_accelerator_of_mechanism_power", [
+		"ABC",
+		"DEF",
+		"GHI"
+	], {
+		A: "cmi:wooden_mechanism",
+		B: "cmi:stone_mechanism",
+		C: "cmi:iron_mechanism",
+		D: "cmi:andesite_mechanism",
+		F: "cmi:copper_mechanism",
+		G: "cmi:photosensitive_mechanism",
+		H: "cmi:gold_mechanism",
+		I: "cmi:nature_mechanism",
+		E: "cmi:stone_plate"
+	})
+
 	// 锇砖瓦
 	kubejs.shaped("cmi:osmium_tile", [
 		" A ",

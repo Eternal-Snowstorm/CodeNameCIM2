@@ -142,6 +142,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("it_must_be_optifine", "一定是OptiFine干的", "XeKr")
 	addPaintingLanguage("random_mechanism", "随机构件", "随机构件")
 
+	addAloneLanguage(`message.${global.namespace}.reload`, "已重载全部脚本!")
 	addAloneLanguage(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
 	addAloneLanguage(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
 	addAloneLanguage(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")

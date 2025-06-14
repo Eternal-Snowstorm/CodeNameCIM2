@@ -33,3 +33,21 @@ ServerEvents.recipes((event) => {
 	//     "time": 100//时间 100是25秒
 	// }).id("kubejs:test")
 })
+/*
+ServerEvents.recipes((event) => {
+	const { create } = event.recipes
+
+	event.forEachRecipe({ type: "tfc:heating" }, (recipe) => {
+		const { json } = recipe
+
+		if (!json.has("result_fluid")) return
+		const ingredient = json.get("ingredient")
+		const result_fluid = json.get("result_fluid")
+
+		create.mixing(
+			[Fluid.of(result_fluid.get("fluid"), result_fluid.get("amount"))],
+			[ingredient.get("item")]
+		).heated()
+	})
+})
+*/

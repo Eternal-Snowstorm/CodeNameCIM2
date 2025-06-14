@@ -331,8 +331,7 @@ ServerEvents.highPriorityData((event) => {
 				}
 			}
 		}
-
-		return builder;
+		return builder
 	}
 
 	/**

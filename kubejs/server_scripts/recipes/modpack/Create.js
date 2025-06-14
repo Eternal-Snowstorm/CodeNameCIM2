@@ -62,4 +62,13 @@ ServerEvents.recipes((event) => {
 		"cmi:densely_packed_wood_chip_briquette",
 		{ fluidTag: "forge:creosote", amount: 1000 }
 	])
+
+	create.filling("4x cmi:magical_mechanism_part", [
+		Fluid.of("create_enchantment_industry:hyper_experience", 10),
+		"cmi:basic_mechanism_part"
+	])
+
+	create.haunting("cmi:magical_mechanism_part", [
+		"cmi:basic_mechanism_part"
+	])
 })

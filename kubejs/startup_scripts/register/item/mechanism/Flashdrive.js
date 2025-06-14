@@ -1,9 +1,4 @@
 StartupEvents.registry("item", (event) => {
-	// 空白闪存盘
-	event.create(`${global.namespace}:empty_flash_drive`)
-		.texture(`${global.namespace}:item/mechanism/flash_drive/empty`)
-		.tag(`${global.namespace}:mechanism_flash_drives`)
-
 	// 已编程闪存盘
 	event.create(`${global.namespace}:programmed_flash_drive`)
 		.texture(`${global.namespace}:item/mechanism/flash_drive/programmed`)

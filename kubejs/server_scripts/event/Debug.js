@@ -13,16 +13,9 @@ ItemEvents.rightClicked("cmi:geological_hammer", (event) => {
 })
 
 PlayerEvents.chat((event) => {
-	let { player, message, server } = event
+	let { player, message } = event
 
 	for (let i = 0; i < global.debugUserName.length; i++) {
-		// 输入-ki删除所有掉落物
-		if (message.trim().equalsIgnoreCase("-ki") && player.username === global.debugUserName[i]) {
-			server.runCommandSilent("kill @e[type=item]")
-			server.runCommandSilent(`tellraw @a "掉落物已清除"`)
-			event.cancel()
-		}
-
 		// 输入-kf获得[夜视 力量 抗性]buff
 		if (message.trim().equalsIgnoreCase("-kf") && player.username === global.debugUserName[i]) {
 			player.runCommandSilent("effect give @s minecraft:night_vision infinite 255 true")
@@ -37,9 +30,21 @@ PlayerEvents.chat((event) => {
 			event.cancel()
 		}
 
-		// 输入-kla清除玩家之外的所有实体
-		if (message.trim().equalsIgnoreCase("-kla") && player.username === global.debugUserName[i]) {
-			server.runCommandSilent("kill @e[type=!player]")
+		// 重载(这个重载不能用于配方和Tags等数据包脚本)
+		let commandList = [
+			"client_scripts",
+			"config",
+			"lang",
+			"server_scripts",
+			"startup_scripts",
+			"textures",
+		]
+		if (message.trim().equalsIgnoreCase("re") && player.username === global.debugUserName[i]) {
+			commandList.forEach((common) => {
+				player.runCommandSilent(`kjs reload ${common}`)
+			})
+			// Reloaded All Scripts!
+			player.tell(Component.translate(`message.${global.namespace}.reload`).green())
 			event.cancel()
 		}
 	}
