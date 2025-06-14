@@ -12,6 +12,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:nuclear_mechanism")
 	addCommonTooltip("cmi:sculk_mechanism")
 	addCommonTooltip("cmi:charged_amethyst")
+	addCommonTooltip("cmi:potion_mechanism")
 
 	addAccelerateTooltip("cmi:stone_mechanism")
 	addAccelerateTooltip("cmi:andesite_mechanism")
