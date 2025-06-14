@@ -182,6 +182,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("cmi:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 	addCommonTooltipLanguage("cmi:charged_amethyst", "拿到耳边能听到它一直在发出嗡嗡嗡的声音")
 	addCommonTooltipLanguage("#minecraft:pickaxes", "右键可破坏矿物节点")
+	addCommonTooltipLanguage("cmi:potion_mechanism", "右键获取大多数正面buff")
 
 	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产才能确保需求量自由")
 	addJEIInfoLanguage("cookingforblockheads:sink", `"去用我的后辈多方块水泵吧"水槽如是说道`)
