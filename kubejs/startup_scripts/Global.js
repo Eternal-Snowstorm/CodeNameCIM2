@@ -19,13 +19,13 @@ global.miningLevel = {
 	"wooden": "minecraft:needs_wooden_tool",
 	"stone": "minecraft:needs_stone_tool",
 	"iron": "minecraft:needs_iron_tool",
-	"gold": "minecraft:needs_gold_tool",
+	"gold": "forge:needs_gold_tool",
 	"diamond": "minecraft:needs_diamond_tool",
 	"nether": "forge:needs_netherite_tool"
 }
 // 挖掘工具类型
 global.toolType = {
-	"sword": "minecraft:mineable/sword",
+	"sword": "forge:mineable/sword",
 	"pickaxe": "minecraft:mineable/pickaxe",
 	"axe": "minecraft:mineable/axe",
 	"shovel": "minecraft:mineable/shovel",
