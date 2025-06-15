@@ -1,74 +1,80 @@
-ServerEvents.recipes((event) => {
-	function addAlloyingRecipes(output, input, energy, time) {
-		if (energy === undefined) {
-			energy = 1000
+ServerEvents.recipes(event => {
+	function AlloyingRecipe() {
+		this.recipe = {
+			type: "ad_astra:alloying",
+			cookingtime: 100,
+			energy: 1000,
+			ingredients: [],
+			result: {}
 		}
-		if (time === undefined) {
-			time = 100
-		}
-		function parseInput(string) {
-			const MATCH = string.match(/^(\d+)x\s*(.+)$/)
-			if (MATCH) {
-				const COUNT = parseInt(MATCH[1])
-				const ITEM = MATCH[2]
-				const ARRAY = []
-				for (let i = 0; i < COUNT; i++) {
-					ARRAY.push(ITEM.startsWith("#")
-						? { "tag": ITEM.substring(1) }
-						: { "item": ITEM }
-					)
-				}
-				return ARRAY
-			}
-			return string.startsWith("#")
-				? { "tag": string.substring(1) }
-				: { "item": string }
-		}
-
-		let ingredients = []
-		if (Array.isArray(input)) {
-			input.forEach((ing) => {
-				if (typeof ing === "string") {
-					const PARSED = parseInput(ing)
-					if (Array.isArray(PARSED)) {
-						ingredients = ingredients.concat(PARSED)
-					} else {
-						ingredients.push(PARSED)
-					}
-				} else {
-					ingredients.push(ing)
-				}
-			})
-		} else if (typeof input === "string") {
-			const PARSED = parseInput(input)
-			if (Array.isArray(PARSED)) {
-				ingredients = ingredients.concat(PARSED)
-			} else {
-				ingredients.push(PARSED)
-			}
-		}
-
-		function parseOutput(string) {
-			const MATCH = string.match(/^(\d+)x\s*(.+)$/)
-			return MATCH
-				? { "id": MATCH[2], "count": parseInt(MATCH[1]) }
-				: { "id": string, "count": 1 }
-		}
-
-		const RESULT = typeof output === "string" ? parseOutput(output) : output
-
-		// 创建配方
-		event.custom({
-			"type": "ad_astra:alloying",
-			"cookingtime": time,
-			"energy": energy,
-			"ingredients": ingredients,
-			"result": RESULT
-		})
 	}
 
-	addAlloyingRecipes("tconstruct:steel_block", [
-		"#forge:storage_blocks/iron",
-		"#forge:coal_coke"
-	])
+	AlloyingRecipe.prototype = {
+		// 设置输出物品
+		setOutput: function (output) {
+			if (typeof output === "string") {
+				const MATCH = output.match(/^(\d+)x\s*(.+)$/)
+				this.recipe.result = MATCH
+					? { id: MATCH[2], count: parseInt(MATCH[1]) }
+					: { id: output, count: 1 }
+			} else {
+				this.recipe.result = output
+			}
+			return this
+		},
+
+		// 添加输入材料
+		addIngredient: function (ingredient) {
+			if (typeof ingredient === "string") {
+				const MATCH = ingredient.match(/^(\d+)x\s*(.+)$/)
+				if (MATCH) {
+					const count = parseInt(MATCH[1])
+					const item = MATCH[2]
+					for (let i = 0; i < count; i++) {
+						this.recipe.ingredients.push(item.startsWith("#")
+							? { tag: item.substring(1) }
+							: { item: item })
+					}
+				} else {
+					this.recipe.ingredients.push(ingredient.startsWith("#")
+						? { tag: ingredient.substring(1) }
+						: { item: ingredient })
+				}
+			} else {
+				this.recipe.ingredients.push(ingredient)
+			}
+			return this
+		},
+
+		// 设置能量消耗
+		setEnergy: function (energy) {
+			this.recipe.energy = energy
+			return this
+		},
+
+		// 设置冶炼时间
+		setTime: function (time) {
+			this.recipe.cookingtime = time
+			return this
+		},
+
+		// 构建配方
+		build: function (recipename) {
+			event.custom(this.recipe)
+				.id(recipename)
+		},
+		// 替换配方
+		replaceRecipe: function (recipeid) {
+			event.remove({ id: recipeid })
+			let recipename = recipeid.split(":").pop()
+			this.build(recipename)
+		}
+	}
+
+	// 使用构建器创建配方
+	new AlloyingRecipe()
+		.setOutput("tconstruct:steel_block")
+		.addIngredient("#forge:storage_blocks/iron")
+		.addIngredient("#forge:coal_coke")
+		.build("aaa:aaa")
 })

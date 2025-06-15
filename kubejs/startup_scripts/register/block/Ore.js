@@ -121,10 +121,6 @@ addOreBlock("quartz", "iron", 3)
 addOreBlock("cobalt", "iron", 10)
 	.moon()
 
-// 铬
-addOreBlock("chromium", "iron", 5)
-	.end()
-
 // 铂
 addOreBlock("platinum", "iron", 8)
 	.moon()
