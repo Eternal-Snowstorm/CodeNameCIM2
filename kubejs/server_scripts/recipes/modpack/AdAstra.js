@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
 	function AlloyingRecipe() {
 		this.recipe = {
 			type: "ad_astra:alloying",
