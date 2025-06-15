@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 		},
 
 		// 构建配方
-		build: function (recipename) {
+		recipeId: function (recipename) {
 			event.custom(this.recipe)
 				.id(recipename)
 		},
@@ -71,10 +71,9 @@ ServerEvents.recipes((event) => {
 		}
 	}
 
-	// 使用构建器创建配方
 	new AlloyingRecipe()
 		.setOutput("tconstruct:steel_block")
 		.addIngredient("#forge:storage_blocks/iron")
 		.addIngredient("#forge:coal_coke")
-		.build("aaa:aaa")
+		.recipeId("aaa:aaa")
 })

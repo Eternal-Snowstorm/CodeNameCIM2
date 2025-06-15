@@ -20,13 +20,15 @@
 
  - 技术人员在上传的`commits message`中需使用中文(不限简繁体)或英语概述该次修改的内容
 
+ - 开发人员上传之前请确保Debug后并且没有问题, 确保没有问题后才能上传到GitHub, 如果自己解决不了请先全部注释掉并在开发群里或`commits message`内说明有什么错误, 卡在哪里, 什么解决不了
+
 ## 第三章 开发规范
 
 **第四条** 命名规则:
 1. 类名采用大驼峰式(**PascalCase**), 例: `RecipeSchema`
 2. 函数/变量采用小驼峰式(**camelCase**), 例: `getMaterialList`
-3. 常量采用全大写蛇形命名(**SNAKE_CASE**)
-4. 不允许使用`var`来声明变量
+3. 常量采用全大写蛇形命名(**SNAKE_CASE**), 例: `GET_TAGS_ITEM`
+4. **严格禁止**使用`var`来声明变量与常量, 只能使用`let`或`const`
 
 **第五条** 脚本开发规范:
 1. 配方脚本必须进行结构解构
@@ -51,7 +53,149 @@ kubejs.shaped("minecraft:stone", [
 })
 ```
 
-3. 撰写物品逻辑时必须注释逻辑实现的功能并分步注释该步骤实现的内容
+3. 无序配方或**Create**和**Thermal**等Mod的配方必须使用标准模板, 以下提供的几个模板请任选一个(但是无序合成请严格遵守前两个)
+
+```js
+// 无序
+kubejs.shapeless("minecraft:stone", [
+	"minecraft:sand"
+])
+
+kubejs.shapeless("minecraft:stone", [
+	"minecraft:sand",
+	"#forge:ingots/iron"
+])
+
+// Create
+create.mixing("minecraft:stone", [
+	"minecraft:sand"
+])
+
+create.mixing("minecraft:stone", [
+	"minecraft:sand",
+	Fluid.of("minecraft:water", 1000)
+])
+
+create.mixing([
+	"2x minecraft:stone",
+	Item.of("minecraft:sand", 2).withChance(0.5)
+], [
+	"minecraft:sand",
+	Fluid.of("minecraft:water", 1000)
+]).heated()
+
+create.mixing([
+	"2x minecraft:stone",
+	Item.of("minecraft:sand", 2).withChance(0.5)
+], "minecraft:sand").superheated()
+
+// Thermal
+thermal.centrifuge("minecraft:stone", [
+	"minecraft:sand"
+])
+
+thermal.centrifuge("minecraft:stone", [
+	"minecraft:sand",
+	Fluid.of("minecraft:water", 1000)
+])
+
+thermal.centrifuge([
+	"2x minecraft:stone",
+	Item.of("minecraft:sand", 2).withChance(0.5)
+], [
+	"minecraft:sand",
+	Fluid.of("minecraft:water", 1000)
+]).energy(1000)
+
+thermal.centrifuge([
+	"2x minecraft:stone",
+	Item.of("minecraft:sand", 2).withChance(0.5)
+], "minecraft:sand").energy(1000)
+```
+
+4. **Create**序列合成规范
+```js
+create.sequenced_assembly([
+	Item.of("create:sturdy_sheet").withChance(0.7),
+	Item.of("create:powdered_obsidian").withChance(0.15),
+	Item.of("minecraft:gravel").withChance(0.15)
+], "#forge:dusts/obsidian", [
+	create.pressing("#forge:dusts/obsidian", [
+		"#forge:dusts/obsidian",
+		"#forge:dusts/obsidian"
+	])
+]).transitionalItem("create:unprocessed_obsidian_sheet").loops(10)
+
+create.sequenced_assembly(Item.of("create:sturdy_sheet").withChance(0.7), [
+	"#forge:dusts/obsidian"
+], [
+	create.pressing("#forge:dusts/obsidian", [
+		"#forge:dusts/obsidian",
+		"#forge:dusts/obsidian"
+	])
+]).transitionalItem("create:unprocessed_obsidian_sheet").loops(10)
+```
+
+5. 在非必要时刻禁止写分号`;`在代码行末
+
+6. `if`或`else`语句禁止单行结束, 或者单行`return`
+
+```js
+if (a === b) return // X
+
+if (a === b) {
+	return
+} // √
+```
+
+7. 所有条件判断只能使用三等号强等于判断`===`, 禁止使用双等号弱等于判断`==`
+
+8. `KubeJS`的各种`event`中的`handler`必须使用`event`这个单词
+
+```js
+ServerEvents.recipes((event) => {})
+```
+
+9. 所有的箭头函数必须加上小括号`()`, 不管是`forEach`还是`event`
+
+```js
+xxx.forEach((value) => {})
+
+ServerEvents.recipes((event) => {})
+```
+
+11. 所有的箭头函数括号必须在末尾加上大括号(花括号)`{}`, 不能直接传参
+
+12. 所有的对象`{}`和数组`[]`内必须换行(数组内的数组随意)
+
+```js
+{
+	"key": "value",
+	"key1": "value1"
+},
+[
+	"value",
+	"value1"
+],
+[
+	["value", "value1"],
+	["value", "value1"]
+],
+[
+	[
+		"value", 
+		"value1"
+	],
+	[
+		"value",
+		"value1"
+	]
+]
+```
+
+13. 禁止使用单引号`''`, 只能使用反引号` `` `或双引号`""`
+
+14. 撰写物品逻辑时必须注释逻辑实现的功能并分步注释该步骤实现的内容
 
 ```js
 // 自然构件右键运行骨粉逻辑
@@ -78,7 +222,7 @@ BlockEvents.rightClicked((event) => {
 
 在调用链式方法时`必须`换行
 
-`严格禁止`使用`.displayName()`方法对其进行命名, 请前往[**lang**](kubejs/client_scripts/lang)文件夹下的语言文件内进行命名与修改
+**严格禁止**使用`.displayName()`方法对其进行命名, 请前往[**lang**](kubejs/client_scripts/lang)文件夹下的语言文件内进行命名与修改
 
 ```js
 event.create(`${global.namespace}:smart_gear`)
