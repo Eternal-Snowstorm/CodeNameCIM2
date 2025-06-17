@@ -27,10 +27,11 @@ EntityEvents.spawned("minecraft:lightning_bolt", (event) => {
 			for (let i = 0; i < count; i++) {
 				let itemEntity = level.createEntity("minecraft:item")
 				itemEntity.item = Item.of(output)
+				let random = Math.random() * 0.4 - 0.2
 
-				itemEntity.x = x + (Math.random() * 0.4 - 0.2)
-				itemEntity.y = y + (Math.random() * 0.4 - 0.2)
-				itemEntity.z = z + (Math.random() * 0.4 - 0.2)
+				itemEntity.x = x + (random)
+				itemEntity.y = y + (random)
+				itemEntity.z = z + (random)
 				itemEntity.mergeNbt({ Invulnerable: 1 })
 				itemEntity.spawn()
 			}

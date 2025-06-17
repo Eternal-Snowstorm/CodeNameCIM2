@@ -26,44 +26,45 @@ ItemEvents.tooltip((event) => {
 	addAccelerateTooltip("cmi:cobalt_mechanism")
 	addAccelerateTooltip("cmi:wooden_mechanism")
 
-	let chemSalts = ["fecl2",
-	"feso4",
-	"cucl2",
-	"cuso4",
-	"zncl2",
-	"znso4",
-	"alcl3",
-	"al2so43",
-	"aucl3",
-	"au2so43",
-	"agcl",
-	"ag2so4",
-	"pbcl2",
-	"pbso4",
-	"crcl3",
-	"cr2so43",
-	"sncl2",
-	"snso4",
-	"vocl2",
-	"voso4",
-	"uo2cl2",
-	"uo2so4",
-	"nicl2",
-	"niso4",
-	"cocl2",
-	"coso4",
-	"oscl3",
-	"os2so43",
-	"na2so4",
-	"nacl",
-	"caso4",
-	"cacl2",
-	"k2so4",
-	"kcl",
-	"ptcl4",
-	"ptso42"]
-
-	chemSalts.forEach((salt)=>{
+	let chemSalts = [
+		"fecl2",
+		"feso4",
+		"cucl2",
+		"cuso4",
+		"zncl2",
+		"znso4",
+		"alcl3",
+		"al2so43",
+		"aucl3",
+		"au2so43",
+		"agcl",
+		"ag2so4",
+		"pbcl2",
+		"pbso4",
+		"crcl3",
+		"cr2so43",
+		"sncl2",
+		"snso4",
+		"vocl2",
+		"voso4",
+		"uo2cl2",
+		"uo2so4",
+		"nicl2",
+		"niso4",
+		"cocl2",
+		"coso4",
+		"oscl3",
+		"os2so43",
+		"na2so4",
+		"nacl",
+		"caso4",
+		"cacl2",
+		"k2so4",
+		"kcl",
+		"ptcl4",
+		"ptso42"
+	]
+	chemSalts.forEach((salt) => {
 		addCommonTooltip(`cmi:${salt}`)
 		addCommonTooltip(`cmi:${salt}_solution_bucket`)
 	})
@@ -88,27 +89,33 @@ ItemEvents.tooltip((event) => {
 	}
 
 	// 地质锤的tooltip
-	event.addAdvanced("cmi:geological_hammer",
-		(item, advanced, text) => {
-			if (global.isDeveloper) {
-				text.add(Component.translate("tooltip.cmi.geographycal_hammer.developer1"))
-				text.add(Component.translate("tooltip.cmi.geographycal_hammer.developer2"))
-			} else {
-				text.add(Component.translate("tooltip.cmi.geographycal_hammer.not_developer"))
-			}
-		})
+	event.addAdvanced("cmi:geological_hammer", (item, advanced, text) => {
+		if (global.isDeveloper) {
+			text.add(Component.translate("tooltip.cmi.geographycal_hammer.developer1"))
+			text.add(Component.translate("tooltip.cmi.geographycal_hammer.developer2"))
+		} else {
+			text.add(Component.translate("tooltip.cmi.geographycal_hammer.not_developer"))
+		}
+	})
 
 	// 初始套件的Tooltip
-	event.addAdvanced("cmi:initial_item_kit",
-		(item, advanced, text) => {
-			if (event.shift) {
-				let lines = Component.translate("tooltip.cmi.initial_item_kit.shift")
-					.string.split("\n")
-				lines.forEach((line) => {
-					text.add(line)
-				})
-			} else {
-				text.add(Component.translate("tooltip.cmi.initial_item_kit.tip"))
-			}
-		})
+	event.addAdvanced("cmi:initial_item_kit", (item, advanced, text) => {
+		if (event.shift) {
+			let lines = Component.translate("tooltip.cmi.initial_item_kit.shift")
+				.string.split("\n")
+			lines.forEach((line) => {
+				text.add(line)
+			})
+		} else {
+			text.add(Component.translate("tooltip.cmi.initial_item_kit.tip"))
+		}
+	})
+
+	// 愚人节
+	let month = Java.loadClass("java.time.LocalDateTime").now().getMonthValue()
+	let day = Java.loadClass("java.time.LocalDateTime").now().getDayOfMonth()
+
+	if (month === 4 && day === 1) {
+		event.add("minecraft:dirt", Component.translate(`tooltip.${global.namespace}.41dirt`))
+	}
 })

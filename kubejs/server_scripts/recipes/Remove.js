@@ -259,11 +259,17 @@ ServerEvents.recipes((event) => {
 		])
 	})
 
-	event.remove({
-		type: "minecraft:crafting_shapeless",
-		input: "#minecraft:logs",
-		output: "#minecraft:planks"
-	})
+	event.remove([
+		{
+			type: "minecraft:crafting_shapeless",
+			input: "#minecraft:logs",
+			output: "#minecraft:planks"
+		}, {
+			type: "create:cutting",
+			input: "#minecraft:logs",
+			output: "#minecraft:planks"
+		}
+	])
 
 	event.remove({
 		type: "minecraft:crafting_shaped",

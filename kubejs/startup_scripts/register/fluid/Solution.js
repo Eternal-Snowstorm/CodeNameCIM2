@@ -14,11 +14,13 @@ function addSolution(name, color) {
 		})
 	})
 
-	StartupEvents.modifyCreativeTab(`${global.namespace}:salts_and_solutions`, (event) => {
+	let customCreativeTab = `${global.namespace}:salts_and_solutions`
+	StartupEvents.modifyCreativeTab(customCreativeTab, (event) => {
 		event.add(`${global.namespace}:${name}_solution_bucket`)
 	})
 
-	StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
+	let kjsCreativeTab = "kubejs:tab"
+	StartupEvents.modifyCreativeTab(kjsCreativeTab, (event) => {
 		event.remove(`${global.namespace}:${name}_solution_bucket`)
 	})
 }

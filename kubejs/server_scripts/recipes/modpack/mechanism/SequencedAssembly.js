@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 
 	// 木质
 	create.sequenced_assembly("cmi:wooden_mechanism", [
-		"#forge:stripped_logs"
+		"#minecraft:planks"
 	], [
 		create.pressing(iwm, iwm),
 		create.deploying(iwm, [iwm, "minecraft:stick"]),
