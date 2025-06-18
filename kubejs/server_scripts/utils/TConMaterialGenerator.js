@@ -1,419 +1,541 @@
-// 源代码By Tonywww, 初始代码链接(https://www.mcmod.cn/post/5166.html)
 ServerEvents.highPriorityData((event) => {
 	/**
-	  * @param {string} id       材料的唯一标识, 用作生成 JSON 文件名
-	  * @returns {object}        返回一个链式调用的 builder 对象
-	*/
-	function createMaterialBuilder(id) {
-		let definition = {
-			craftable: false,
-			hidden: false,
-			sortOrder: 0,
-			tier: 0
-		}
-		let stats = {}
-		let traits = {
-			default: [],
-			perStat: {}
-		}
-
-		let hasStats = false
-		let hasTraits = false
-
-		let namespace = "tconstruct"
+	 * @param {string} id
+	 * @param {number} tier
+	 * @param {boolean} hidden
+	 */
+	function addTConMaterial(id, tier, hidden) {
+		let [namespace, materialId] = id.split(":", 2)
 
 		let builder = {
-			/** 
-			 * 设置该材料是否可合成
-			 * @param {boolean} bool  
-			 * @returns {object} builder
-			 */
-			setCraftable(bool) {
-				definition.craftable = bool
-				return builder
+			namespace: namespace,
+			id: materialId,
+
+			definition: {
+				craftable: true,
+				tier: tier,
+				sortOrder: 26,
+				hidden: hidden
 			},
+
+			stats: {
+				stats: {}
+			},
+
+			traits: {},
+
+			materialRecipes: [],
+
+			materialFluidRecipes: [],
+
+			materialMeltingRecipes: [],
 
 			/** 
-			 * 设置该材料是否隐藏
-			 * @param {boolean} bool  
-			 * @returns {object} builder
-			 */
-			setHidden(bool) {
-				definition.hidden = bool
-				return builder
-			},
-
-			/** 
-			 * 设置材料的排序
-			 * @param {number} n  
-			 * @returns {object} builder
-			 */
-			setSortOrder(n) {
-				definition.sortOrder = n
-				return builder
-			},
-
-			/** 
-			 * 设置材料的阶段
-			 * @param {number} n  
-			 * @returns {object} builder
-			 */
-			setTier(n) {
-				definition.tier = n
-				return builder
+			* @param {boolean} craftable
+			*/
+			craftable(craftable) {
+				this.definition.craftable = craftable
+				return this
 			},
 
 			/**
-			 * 设置命名空间
-			 */
-			setNamespace(str) {
-				namespace = str
-				return builder
-			},
-
-			addStats() {
-				hasStats = true
-				return builder
-			},
-			addTraits() {
-				hasTraits = true
-				return builder
+			* @param {number} sortOrder 
+			*/
+			sortOrder(sortOrder) {
+				this.definition.sortOrder = sortOrder
+				return this
 			},
 
 			/**
-			 * 添加头部(Head)属性
-			 * @param {number} durability
-			 * @param {number} melee_attack
-			 * @param {number} mining_speed
-			 * @param {string} mining_tier
-			 * @returns {object} builder
+			 * @param {number} durability 
+			 * @param {number} meleeAttack 
+			 * @param {number} miningSpeed 
+			 * @param {string} miningTier 
 			 */
-			addHead(durability, melee_attack, mining_speed, mining_tier) {
-				stats["tletruct:head"] = {
+			head(durability, meleeAttack, miningSpeed, miningTier) {
+				this.stats.stats["tconstruct:head"] = {
 					durability: durability,
-					melee_attack: melee_attack,
-					mining_speed: mining_speed,
-					mining_tier: mining_tier
+					melee_attack: meleeAttack,
+					mining_speed: miningSpeed,
+					mining_tier: miningTier
 				}
-				return builder
+				return this
 			},
 
 			/**
-			 * 添加手柄(Handle)属性
-			 * @param {number} durability
-			 * @param {number} melee_damage
-			 * @param {number} melee_speed
-			 * @param {number} mining_speed
-			 * @returns {object} builder
+			 * @param {number} durability 
+			 * @param {number} meleeDamage 
+			 * @param {number} meleeSpeed 
+			 * @param {number} miningSpeed 
 			 */
-			addHandle(durability, melee_damage, melee_speed, mining_speed) {
-				stats["tletruct:handle"] = {
+			handle(durability, meleeDamage, meleeSpeed, miningSpeed) {
+				this.stats.stats["tconstruct:handle"] = {
 					durability: durability,
-					melee_damage: melee_damage,
-					melee_speed: melee_speed,
-					mining_speed: mining_speed
+					melee_damage: meleeDamage,
+					melee_speed: meleeSpeed,
+					mining_speed: miningSpeed
 				}
-				return builder
+				return this
+			},
+
+			binding() {
+				this.stats.stats["tconstruct:binding"] = {}
+				return this
 			},
 
 			/**
-			 * 添加头盔(Plating Helmet)属性
-			 * @param {number} armor
-			 * @param {number} durability
-			 * @param {number} knockback_resistance
-			 * @param {number} toughness
-			 * @returns {object} builder
+			 * @param {number} accuracy 
+			 * @param {number} drawSpeed 
+			 * @param {number} durability 
+			 * @param {number} velocity 
 			 */
-			addPlatingHelmet(armor, durability, knockback_resistance, toughness) {
-				stats["tletruct:plating_helmet"] = {
-					armor: armor,
-					durability: durability,
-					knockback_resistance: knockback_resistance,
-					toughness: toughness
-				}
-				return builder
-			},
-
-			/**
-			 * 添加胸甲(Plating Chestplate)属性
-			 * @param {number} armor
-			 * @param {number} durability
-			 * @param {number} knockback_resistance
-			 * @param {number} toughness
-			 * @returns {object} builder
-			 */
-			addPlatingChestplate(armor, durability, knockback_resistance, toughness) {
-				stats["tletruct:plating_chestplate"] = {
-					armor: armor,
-					durability: durability,
-					knockback_resistance: knockback_resistance,
-					toughness: toughness
-				}
-				return builder
-			},
-
-			/**
-			 * 添加护腿(Plating Leggings)属性
-			 * @param {number} armor
-			 * @param {number} durability
-			 * @param {number} knockback_resistance
-			 * @param {number} toughness
-			 * @returns {object} builder
-			 */
-			addPlatingLeggings(armor, durability, knockback_resistance, toughness) {
-				stats["tletruct:plating_leggings"] = {
-					armor: armor,
-					durability: durability,
-					knockback_resistance: knockback_resistance,
-					toughness: toughness
-				}
-				return builder
-			},
-
-			/**
-			 * 添加靴子(Plating Boots)属性
-			 * @param {number} armor
-			 * @param {number} durability
-			 * @param {number} knockback_resistance
-			 * @param {number} toughness
-			 * @returns {object} builder
-			 */
-			addPlatingBoots(armor, durability, knockback_resistance, toughness) {
-				stats["tletruct:plating_boots"] = {
-					armor: armor,
-					durability: durability,
-					knockback_resistance: knockback_resistance,
-					toughness: toughness
-				}
-				return builder
-			},
-
-			/**
-			 * 添加盾牌(Plating Shield)属性
-			 * @param {number} durability
-			 * @param {number} knockback_resistance
-			 * @param {number} toughness
-			 * @returns {object} builder
-			 */
-			addPlatingShield(durability, knockback_resistance, toughness) {
-				stats["tletruct:plating_shield"] = {
-					durability: durability,
-					knockback_resistance: knockback_resistance,
-					toughness: toughness
-				}
-				return builder
-			},
-
-			/**
-			 * 添加弓把(Grip)属性
-			 * @param {number} accuracy
-			 * @param {number} durability
-			 * @param {number} melee_damage
-			 * @returns {object} builder
-			 */
-			addGrip(accuracy, durability, melee_damage) {
-				stats["tletruct:grip"] = {
+			limb(accuracy, drawSpeed, durability, velocity) {
+				this.stats.stats["tconstruct:limb"] = {
 					accuracy: accuracy,
-					durability: durability,
-					melee_damage: melee_damage
-				}
-				return builder
-			},
-
-			/**
-			 * 添加弩机(Limb)属性
-			 * @param {number} accuracy
-			 * @param {number} draw_speed
-			 * @param {number} durability
-			 * @param {number} velocity
-			 * @returns {object} builder
-			 */
-			addLimb(accuracy, draw_speed, durability, velocity) {
-				stats["tletruct:limb"] = {
-					accuracy: accuracy,
-					draw_speed: draw_speed,
+					draw_speed: drawSpeed,
 					durability: durability,
 					velocity: velocity
 				}
-				return builder
+				return this
 			},
 
 			/**
-			 * 添加绑定节(Binding), 无属性
-			 * @returns {object} builder
+			 * @param {number} accuracy 
+			 * @param {number} durability 
+			 * @param {number} meleeDamage 
 			 */
-			addBinding() {
-				stats["tletruct:binding"] = {}
-				return builder
-			},
-
-			/**
-			 * 添加锁链基底(Maille), 无属性
-			 * @returns {object} builder
-			 */
-			addMaille() {
-				stats["tletruct:maille"] = {}
-				return builder
-			},
-
-			/**
-			 * 添加弓弦(Bowstring), 无属性
-			 * @returns {object} builder
-			 */
-			addBowstring() {
-				stats["tletruct:bowstring"] = {}
-				return builder
-			},
-
-			/**
-			 * 添加盾牌衬板(Shield Core), 无属性
-			 * @returns {object} builder
-			 */
-			addShieldCore() {
-				stats["tletruct:shield_core"] = {}
-				return builder
-			},
-
-			/**
-			 * 添加能量核心(Flux Core)属性
-			 * @param {number} capacity
-			 * @param {number} generate
-			 * @returns {object} builder
-			 */
-			addFluxCore(capacity, generate) {
-				stats["tinkers_advanced:flux_core"] = {
-					capacity: capacity,
-					generate: generate
+			grip(accuracy, durability, meleeDamage) {
+				this.stats.stats["tconstruct:grip"] = {
+					accuracy: accuracy,
+					durability: durability,
+					melee_damage: meleeDamage
 				}
-				return builder
+				return this
+			},
+
+			bowstring() {
+				this.stats.stats["tconstruct:bowstring"] = {}
+				return this
 			},
 
 			/**
-			 * 添加默认材料词条
-			 * @param {number} level
-			 * @param {string} name
-			 * @returns {object} builder
+			 * @param {number} armor 
+			 * @param {number} durability 
+			 * @param {number} knockbackResistance 
+			 * @param {number} toughness 
 			 */
-			addDefaultTrait(level, name) {
-				traits.default.push({ level: level, name: name })
-				return builder
+			platingHelmet(armor, durability, knockbackResistance, toughness) {
+				this.stats.stats["tconstruct:plating_helmet"] = {
+					armor: armor,
+					durability: durability,
+					knockback_resistance: knockbackResistance,
+					toughness: toughness
+				}
+				return this
 			},
 
 			/**
-			 * 添加针对单个 stat 的词条
-			 * @param {string} statId   stat 标识, 如 "tletruct:armor"
-			 * @param {number} level
-			 * @param {string} name
-			 * @returns {object} builder
+			 * @param {number} armor 
+			 * @param {number} durability 
+			 * @param {number} knockbackResistance 
+			 * @param {number} toughness 
 			 */
-			addPerStatTrait(statId, level, name) {
-				if (!traits.perStat[statId]) traits.perStat[statId] = []
-				traits.perStat[statId].push({
-					level: level,
-					name: name
-				})
-				return builder
+			platingChestplate(armor, durability, knockbackResistance, toughness) {
+				this.stats.stats["tconstruct:plating_chestplate"] = {
+					armor: armor,
+					durability: durability,
+					knockback_resistance: knockbackResistance,
+					toughness: toughness
+				}
+				return this
 			},
 
 			/**
-			 * 最终生成所有 JSON 文件：definition、stats、traits
-			 * @returns {void}
+			 * @param {number} armor 
+			 * @param {number} durability 
+			 * @param {number} knockbackResistance 
+			 * @param {number} toughness 
 			 */
+			platingLeggings(armor, durability, knockbackResistance, toughness) {
+				this.stats.stats["tconstruct:plating_leggings"] = {
+					armor: armor,
+					durability: durability,
+					knockback_resistance: knockbackResistance,
+					toughness: toughness
+				}
+				return this
+			},
+
+			/**
+			 * @param {number} armor 
+			 * @param {number} durability 
+			 * @param {number} knockbackResistance 
+			 * @param {number} toughness 
+			 */
+			platingBoots(armor, durability, knockbackResistance, toughness) {
+				this.stats.stats["tconstruct:plating_boots"] = {
+					armor: armor,
+					durability: durability,
+					knockback_resistance: knockbackResistance,
+					toughness: toughness
+				}
+				return this
+			},
+
+			/**
+			 * @param {number} durability 
+			 * @param {number} knockbackResistance 
+			 * @param {number} toughness 
+			 */
+			platingShield(durability, knockbackResistance, toughness) {
+				this.stats.stats["tconstruct:plating_shield"] = {
+					durability: durability,
+					knockback_resistance: knockbackResistance,
+					toughness: toughness
+				}
+				return this
+			},
+
+			maille() {
+				this.stats.stats["tconstruct:maille"] = {}
+				return this
+			},
+
+			shieldCore() {
+				this.stats.stats["tconstruct:shield_core"] = {}
+				return this
+			},
+
+			/**
+			 * @param {function} func
+			 */
+			setTraits(func) {
+				let traitsBuilder = {
+					traits: {
+						default: [],
+						perStat: {
+							"tconstruct:armor": [],
+							"tconstruct:head": [],
+							"tconstruct:handle": [],
+							"tconstruct:binding": [],
+							"tconstruct:limb": [],
+							"tconstruct:grip": [],
+							"tconstruct:bowstring": [],
+							"tconstruct:melee_harvest": [],
+							"tconstruct:ranged": []
+						},
+					},
+
+					/**
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addDefault(name, level) {
+						this.traits.default.push({
+							name: name,
+							level: level
+						})
+						return this
+					},
+
+					/**
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addArmor(name, level) {
+						this.traits.perStat["tconstruct:armor"].push({
+							name: name,
+							level: level
+						})
+						return this
+					},
+
+					/**
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addHead(name, level) {
+						this.traits.perStat["tconstruct:head"].push({
+							name: name,
+							level: level
+						})
+						return this
+					},
+
+					/**
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addHandle(name, level) {
+						this.traits.perStat["tconstruct:handle"].push({
+							name: name,
+							level: level
+						})
+						return this
+					},
+
+					/**
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addBinding(name, level) {
+						this.traits.perStat["tconstruct:binding"].push({
+							name: name,
+							level: level
+						})
+						return this
+					},
+
+					/**
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addLimb(name, level) {
+						this.traits.perStat["tconstruct:limb"].push({
+							name: name,
+							level: level
+						})
+						return this
+					},
+
+					/**
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addGrip(name, level) {
+						this.traits.perStat["tconstruct:grip"].push({
+							name: name,
+							level: level
+						})
+						return this
+					},
+
+					/**
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addBowstring(name, level) {
+						this.traits.perStat["tconstruct:bowstring"].push({
+							name: name,
+							level: level
+						})
+						return this
+					},
+					
+					/**
+					 * 新增: 添加melee_harvest特性
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addMeleeHarvest(name, level) {
+						this.traits.perStat["tconstruct:melee_harvest"].push({
+							name: name,
+							level: level
+						})
+						return this
+					},
+					
+					/**
+					 * 新增: 添加ranged特性
+					 * @param {string} name
+					 * @param {number} level
+					 */
+					addRanged(name, level) {
+						this.traits.perStat["tconstruct:ranged"].push({
+							name: name,
+							level: level
+						})
+						return this
+					}
+				}
+				traitsBuilder = func(traitsBuilder)
+				this.traits = traitsBuilder.traits
+				return this
+			},
+
+			/**
+			 * @param {string} ingredient
+			 * @param {function} func
+			 */
+			addMaterialRecipe(ingredient, func) {
+				let recipeBuilder = {
+					recipe: {
+						type: "tconstruct:material",
+						ingredient: Ingredient.of(ingredient).toJson(),
+						needed: 1,
+						value: 1
+					},
+
+					/**
+					 * @param {number} needed
+					 */
+					needed(needed) {
+						this.recipe.needed = needed
+						return this
+					},
+
+					/**
+					 * @param {number} value
+					 */
+					value(value) {
+						this.recipe.value = value
+						return this
+					},
+
+					/**
+					 * @param {Internal.ItemStack} itemStack
+					 */
+					leftover(itemStack) {
+						this.recipe.leftover = itemStack.toJson()
+						return this
+					}
+				}
+				recipeBuilder.recipe.material = `${this.namespace}:${this.id}`
+				recipeBuilder = func(recipeBuilder)
+				this.materialRecipes.push(recipeBuilder.recipe)
+				return this
+			},
+
+			/**
+			 * @param {string} fluid
+			 * @param {function} func
+			 */
+			addMaterialFluidRecipe(fluid, func) {
+				let recipeBuilder = {
+					recipe: {
+						type: "tconstruct:material_fluid",
+						fluid: {
+							amount: 1000
+						},
+						temperature: 1000
+					},
+
+					/**
+					 * @param {number} amount
+					 */
+					amount(amount) {
+						this.recipe.fluid.amount = amount
+						return this
+					},
+
+					/**
+					 * @param {number} temperature
+					 */
+					temperature(temperature) {
+						this.recipe.temperature = temperature
+						return this
+					},
+
+					/**
+					 * @param {string} input
+					 */
+					input(input) {
+						this.recipe.input = input
+						return this
+					}
+				}
+				if (fluid.charAt(0) == "#")
+					recipeBuilder.recipe.fluid.tag = fluid.slice(1)
+				else
+					recipeBuilder.recipe.fluid.name = fluid
+				recipeBuilder.recipe.output = `${this.namespace}:${this.id}`
+				recipeBuilder = func(recipeBuilder)
+				this.materialFluidRecipes.push(recipeBuilder.recipe)
+				return this
+			},
+
+			/**
+			 * @param {string} fluid
+			 * @param {function} func
+			 */
+			addMaterialMeltingRecipe(fluid, func) {
+				let recipeBuilder = {
+					recipe: {
+						type: "tconstruct:material_melting",
+						result: {
+							amount: 1000,
+							fluid: fluid
+						},
+						temperature: 1000
+					},
+
+					/**
+					 * @param {number} amount
+					 */
+					amount(amount) {
+						this.recipe.result.amount = amount
+						return this
+					},
+
+					/**
+					 * @param {number} temperature
+					 */
+					temperature(temperature) {
+						this.recipe.temperature = temperature
+						return this
+					}
+				}
+				recipeBuilder.recipe.input = `${this.namespace}:${this.id}`
+				recipeBuilder = func(recipeBuilder)
+				this.materialMeltingRecipes.push(recipeBuilder.recipe)
+				return this
+			},
+
 			build() {
-				event.addJson(`${namespace}:tinkering/materials/definition/${id}.json`, definition)
-				if (hasStats) {
-					event.addJson(`${namespace}:tinkering/materials/stats/${id}.json`, {
-						stats: stats
-					})
+				event.addJson(`${this.namespace}:tinkering/materials/definition/${this.id}.json`, this.definition)
+				event.addJson(`${this.namespace}:tinkering/materials/stats/${this.id}.json`, this.stats)
+				event.addJson(`${this.namespace}:tinkering/materials/traits/${this.id}.json`, this.traits)
+
+				for (let i = 0; i < this.materialRecipes.length; i++) {
+					event.addJson(`${this.namespace}:recipes/materials/material/${this.id}/${i}.json`, this.materialRecipes[i])
 				}
-				if (hasTraits) {
-					event.addJson(`${namespace}:tinkering/materials/traits/${id}.json`, traits)
+
+				for (let i = 0; i < this.materialFluidRecipes.length; i++) {
+					event.addJson(`${this.namespace}:recipes/materials/material_fluid/${this.id}/${i}.json`, this.materialFluidRecipes[i]);
 				}
+				for (let i = 0; i < this.materialMeltingRecipes.length; i++) {
+					event.addJson(`${this.namespace}:recipes/materials/material_melting/${this.id}/${i}.json`, this.materialMeltingRecipes[i]);
+				}
+				return this
 			}
 		}
+
 		return builder
 	}
 
-	/**
-	   * @param {Object} opts
-	   * @param {string} opts.fluid        熔化后得到的流体 ID
-	   * @param {string} opts.material     最终材料 ID
-	   * @param {string} opts.ingot        锭物品 ID
-	   * @param {string} opts.leftover     多余物品
-	   * @param {number} opts.units        锭对应多少毫桶(mb)
-	   * @param {number} opts.temperature  熔炼温度
-	   * @param {number} opts.time         熔炼/冷却时间
-	   * @param {boolean} [opts.meltIngot] 是否生成 锭=>流体 配方
-	   */
-	function registerMaterialProcess({
-		fluid,
-		material,
-		ingot,
-		leftover,
-		units,
-		temperature,
-		time,
-		meltIngot
-	}) {
-		function makeIngredient(itemId) {
-			if (itemId.startsWith("#")) {
-				return { tag: itemId.slice(1) }
-			} else {
-				return { item: itemId }
-			}
-		}
-
-		// 物品 => 流体
-		function melting(itemId, factor) {
-			let ingredient = makeIngredient(itemId)
-			let fluidAmount = units * factor;
-			event.addJson(
-				`tletruct:recipes/kjs/melting/${itemId.replace(":", "_").replace("#", "")}`, {
-				type: "tletruct:melting",
-				ingredient: ingredient,
-				result: { fluid: fluid, amount: fluidAmount },
-				temperature: temperature,
-				time: time
-			})
-		}
-
-		// 加工台合成
-		function materialPart(itemId, needed, value, leftover) {
-			let ingredient = makeIngredient(itemId)
-			let json = {
-				type: "tletruct:material",
-				ingredient: ingredient,
-				material: material,
-				needed: needed,
-				value: value
-			}
-			if (leftover) json.leftover = leftover
-			event.addJson(`tletruct:recipes/kjs/material/${itemId.replace(":", "_").replace("#", "")}`, json)
-		}
-
-		// 如果需要, 为锭生成 熔炼 => 流体 配方
-		if (meltIngot) {
-			melting(ingot, 1)
-		}
-
-		// 锭 => 部件
-		materialPart(ingot, 1, 1, leftover)
-
-		// 流体 => 部件
-		if (fluid) {
-			event.addJson(
-				`tletruct:recipes/kjs/material_fluid/${fluid.replace(":", "_")}`, {
-				type: "tletruct:material_fluid",
-				fluid: {
-					fluid: fluid,
-					amount: units
-				},
-				temperature: time,
-				output: material
-			})
-		}
-	}
-
-	// 正式定义
-	// *** 
+	// 使用示例
+	addTConMaterial("test:material", 2, false)
+		.craftable(true)
+		.sortOrder(26)
+		.head(320, 1.5, 5.5, "minecraft:diamond")
+		.handle(1.5, 1.5, 1.5, 1.5)
+		.binding()
+		.limb(1.0, 1.0, 1.0, 1.0)
+		.grip(1.0, 1.0, 1.0)
+		.bowstring()
+		.platingHelmet(1.0, 1.0, 1.0, 1.0)
+		.platingChestplate(1.0, 1.0, 1.0, 1.0)
+		.platingLeggings(1.0, 1.0, 1.0, 1.0)
+		.platingBoots(1.0, 1.0, 1.0, 1.0)
+		.platingShield(1.0, 1.0, 1.0, 1.0)
+		.maille()
+		.shieldCore()
+		.setTraits((builder) => builder
+			.addArmor("tconstruct:projectile_protection", 1)
+			.addBowstring("tconstruct:magnetic", 1)
+			.addMeleeHarvest("tconstruct:experienced", 1)
+			.addRanged("cmi:smart", 1)
+			.addArmor("cmi:magical_shield", 2))
+		.addMaterialRecipe("minecraft:dirt", (builder) => builder
+			.needed(2)
+			.value(3)
+			.leftover(Item.of("minecraft:oak_planks", 1)))
+		.addMaterialFluidRecipe("minecraft:water", (builder) => builder
+			.amount(200)
+			.temperature(1200)
+			.input("tconstruct:iron"))
+		.addMaterialMeltingRecipe("create:chocolate", (builder) => builder
+			.amount(200)
+			.temperature(800))
+		.build()
 })
