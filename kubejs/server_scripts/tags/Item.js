@@ -124,6 +124,7 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:ingots")
 		.add("createdeco:industrial_iron_ingot")
+		.add("#forge:plates/andesite_alloy")
 
 	event.get("forge:nuggets")
 		.add("createdeco:industrial_iron_nugget")

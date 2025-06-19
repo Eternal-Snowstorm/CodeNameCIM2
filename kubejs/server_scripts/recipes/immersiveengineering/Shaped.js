@@ -2,11 +2,12 @@ ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
 	kubejs.shaped(Item.of("immersiveengineering:hammer", "{Damage:75}"), [
-		" A ",
-		" BA",
-		"B  "
+		" AB",
+		" CA",
+		"C  "
 	], {
 		A: "minecraft:flint",
-		B: "#forge:rods/wooden"
+		B: "#forge:string",
+		C: "#forge:rods/wooden"
 	})
 })

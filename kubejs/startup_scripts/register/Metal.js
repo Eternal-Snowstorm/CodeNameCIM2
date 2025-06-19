@@ -161,6 +161,7 @@ addMaterial("siltsteel", 0x48D1CC, "diamond")
 // 铸铁
 addMaterial("cast_iron", 0x4D4D4D, "iron")
 	.ingot()
+	.dust()
 	.nugget()
 	.block()
 	.molten()

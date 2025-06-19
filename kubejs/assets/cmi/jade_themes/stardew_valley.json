@@ -1,0 +1,40 @@
+{
+	"backgroundImage": [
+		"cmi:textures/gui/jade/stardew_valley.png",
+		4,
+		4,
+		4,
+		4,
+		64,
+		64,
+		0,
+		0
+	],
+	"titleColor": "#000000",
+	"normalColor": "#444444",
+	"infoColor": "#000000",
+	"successColor": "#198754",
+	"warningColor": "#9C5C03",
+	"dangerColor": "#DC3545",
+	"failureColor": "#AB296A",
+	"boxBorderColor": "#913E00",
+	"textShadow": false,
+	"padding": [
+		6,
+		4,
+		0,
+		5
+	],
+	"opacity": 1,
+	"squareBorder": false,
+	"autoEnable": true,
+	"bottomProgressOffset": [
+		-1,
+		-2,
+		-1,
+		2
+	],
+	"bottomProgressNormalColor": "#FFFFFF",
+	"bottomProgressFailureColor": "#FF4444",
+	"lightColorScheme": true
+}

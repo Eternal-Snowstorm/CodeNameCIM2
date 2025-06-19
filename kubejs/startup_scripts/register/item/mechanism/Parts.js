@@ -8,11 +8,12 @@ StartupEvents.registry("item", (event) => {
 		"magical",
 		"quantum",
 		"mekanism",
-		"final"
+		"final",
+		"space"
 	]
 	partsRegisters.forEach((name) => {
 		event.create(`${global.namespace}:${name}_mechanism_part`)
-			.texture(`${global.namespace}:item/mechanism/part/${name}_mechanism_part`)
+			.texture(`${global.namespace}:item/mechanism/part/${name}`)
 			.tag(`${global.namespace}:mechanism_parts`)
 	})
 })

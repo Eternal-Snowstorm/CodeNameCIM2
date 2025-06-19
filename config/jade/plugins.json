@@ -104,6 +104,9 @@
   "pipez": {
     "pipe": true
   },
+  "supplementaries": {
+    "hat_stand": true
+  },
   "create": {
     "filter": true,
     "backtank_capacity": true,
@@ -114,9 +117,6 @@
     "crafting_blueprint": true,
     "goggles.detailed": false,
     "placard": true
-  },
-  "supplementaries": {
-    "hat_stand": true
   },
   "cookingforblockheads": {
     "fridge": true,

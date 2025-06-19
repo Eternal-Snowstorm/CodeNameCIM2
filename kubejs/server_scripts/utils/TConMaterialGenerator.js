@@ -321,7 +321,7 @@ ServerEvents.highPriorityData((event) => {
 						})
 						return this
 					},
-					
+
 					/**
 					 * 新增: 添加melee_harvest特性
 					 * @param {string} name
@@ -334,7 +334,7 @@ ServerEvents.highPriorityData((event) => {
 						})
 						return this
 					},
-					
+
 					/**
 					 * 新增: 添加ranged特性
 					 * @param {string} name
@@ -434,13 +434,14 @@ ServerEvents.highPriorityData((event) => {
 						return this
 					}
 				}
-				if (fluid.charAt(0) == "#")
+				if (fluid.charAt(0) == "#") {
 					recipeBuilder.recipe.fluid.tag = fluid.slice(1)
-				else
+				} else {
 					recipeBuilder.recipe.fluid.name = fluid
-				recipeBuilder.recipe.output = `${this.namespace}:${this.id}`
-				recipeBuilder = func(recipeBuilder)
-				this.materialFluidRecipes.push(recipeBuilder.recipe)
+					recipeBuilder.recipe.output = `${this.namespace}:${this.id}`
+					recipeBuilder = func(recipeBuilder)
+					this.materialFluidRecipes.push(recipeBuilder.recipe)
+				}
 				return this
 			},
 
@@ -491,10 +492,10 @@ ServerEvents.highPriorityData((event) => {
 				}
 
 				for (let i = 0; i < this.materialFluidRecipes.length; i++) {
-					event.addJson(`${this.namespace}:recipes/materials/material_fluid/${this.id}/${i}.json`, this.materialFluidRecipes[i]);
+					event.addJson(`${this.namespace}:recipes/materials/material_fluid/${this.id}/${i}.json`, this.materialFluidRecipes[i])
 				}
 				for (let i = 0; i < this.materialMeltingRecipes.length; i++) {
-					event.addJson(`${this.namespace}:recipes/materials/material_melting/${this.id}/${i}.json`, this.materialMeltingRecipes[i]);
+					event.addJson(`${this.namespace}:recipes/materials/material_melting/${this.id}/${i}.json`, this.materialMeltingRecipes[i])
 				}
 				return this
 			}
