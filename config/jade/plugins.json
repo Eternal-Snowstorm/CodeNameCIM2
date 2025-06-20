@@ -58,7 +58,7 @@
     "coordinates.rel": false,
     "distance": false,
     "block_face": false,
-    "coordinates": true,
+    "coordinates": false,
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },

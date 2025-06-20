@@ -2,14 +2,24 @@ ServerEvents.tags("item", (event) => {
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
 		.add("vintageimprovements:redstone_module")
+		.add("cmi:nuclear_mechanism")
 	event.get("create:incomplete_mechanisms")
 		.add("create:incomplete_precision_mechanism")
 		.add("vintageimprovements:incomplete_redstone_module")
+		.add("cmi:incomplete_nuclear_mechanism")
 
 	global.dyeColorGroup.forEach((color) => {
 		event.get(`forge:dyes/${color}`)
 			.add("cmi:colorful_mechanism")
 	})
+
+	event.get(`${global.namespace}:tables`)
+		.add("#forge:workbenches")
+		.add("tconstruct:tinkers_anvil")
+		.add("tconstruct:scorched_anvil")
+		.add("tconstruct:part_builder")
+		.add("tconstruct:tinker_station")
+		.add("tconstruct:modifier_worktable")
 
 	event.get(`${global.namespace}:steelmaking_raw_materials`)
 		.add("minecraft:calcite")
@@ -105,6 +115,9 @@ ServerEvents.tags("item", (event) => {
 		.add("cmi:cobalt_mechanism")
 		.add("cmi:photosensitive_mechanism")
 		.add("cmi:nether_mechanism")
+
+	event.get("forge:chests")
+		.add("ae2:smooth_sky_stone_chest")
 
 	event.get("minecraft:sand")
 		.add("#forge:sand")

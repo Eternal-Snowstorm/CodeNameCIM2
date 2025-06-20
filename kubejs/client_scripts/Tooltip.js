@@ -13,6 +13,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:sculk_mechanism")
 	addCommonTooltip("cmi:charged_amethyst")
 	addCommonTooltip("cmi:potion_mechanism")
+	addCommonTooltip("#minecraft:pickaxes")
 
 	addAccelerateTooltip("cmi:stone_mechanism")
 	addAccelerateTooltip("cmi:andesite_mechanism")
@@ -68,10 +69,9 @@ ItemEvents.tooltip((event) => {
 		addCommonTooltip(`cmi:${salt}`)
 		addCommonTooltip(`cmi:${salt}_solution_bucket`)
 	})
-	addCommonTooltip("#minecraft:pickaxes")
-
 	function addCommonTooltip(item) {
-		event.add(item, Component.translate(`tooltip.${item}`.replace(":", ".")))
+		let itemTooltipTranslateKey = `tooltip.${item}`.replace(":", ".")
+		event.add(item, Component.translate(itemTooltipTranslateKey))
 	}
 
 	function addAccelerateTooltip(item) {

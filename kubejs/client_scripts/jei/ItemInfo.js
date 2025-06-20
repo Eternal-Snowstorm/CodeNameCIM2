@@ -1,6 +1,7 @@
 JEIEvents.information((event) => {
 	function addJEIInfo(name) {
-		event.addItem(name, Component.translate(`jei.info.${name}`.replace(":", ".")))
+		let itemInfoTranslateKey = `jei.info.${name}`.replace(":", ".")
+		event.addItem(name, Component.translate(itemInfoTranslateKey))
 	}
 
 	addJEIInfo("cookingforblockheads:sink")

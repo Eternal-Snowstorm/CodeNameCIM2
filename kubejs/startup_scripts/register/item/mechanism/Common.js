@@ -30,7 +30,6 @@ StartupEvents.registry("item", (event) => {
 		"elite_mekanism",
 		"ultimate_mekanism",
 		"structure",
-		"nuclear",
 		"antimatter",
 		"coil",
 		"sculk",

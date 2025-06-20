@@ -51,7 +51,7 @@ ServerEvents.recipes((event) => {
 		"AAAAAAAAA"
 	], {
 		A: "minecraft:rotten_flesh"
-	}).id(`${global.namespace}:what_is_this`)
+	}).id(`${global.namespace}:what_the_fuck_is_this`)
 
 	// 虚空升级
 	tconstruct.casting_basin("functionalstorage:void_upgrade")

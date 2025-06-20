@@ -29,16 +29,20 @@ StartupEvents.registry("item", (event) => {
 			food.saturation(1)
 			food.alwaysEdible()
 			food.eaten((event) => {
-					let { player, item } = event
+				let { player, item } = event
 
-					if (!player.isCreative()) {
-						item.grow(1)
-					}
-				})
+				if (!player.isCreative()) {
+					item.grow(1)
+				}
+			})
 		})
 		.tag("create:mechanisms")
 
 	event.create(`${global.namespace}:incomplete_pigiron_mechanism`, "create:sequenced_assembly")
 		.texture(`${global.namespace}:item/mechanism/incomplete/pigiron`)
+		.tag("create:incomplete_mechanisms")
+
+	event.create(`${global.namespace}:incomplete_nuclear_mechanism`, "create:sequenced_assembly")
+		.texture(`${global.namespace}:item/mechanism/incomplete/nuclear`)
 		.tag("create:incomplete_mechanisms")
 })
