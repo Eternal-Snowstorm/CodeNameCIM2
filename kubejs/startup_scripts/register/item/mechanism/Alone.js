@@ -26,9 +26,9 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/mechanism/complete/pigiron`)
 		.food((food) => {
 			food.hunger(8)
-				.saturation(1)
-				.alwaysEdible()
-				.eaten((event) => {
+			food.saturation(1)
+			food.alwaysEdible()
+			food.eaten((event) => {
 					let { player, item } = event
 
 					if (!player.isCreative()) {

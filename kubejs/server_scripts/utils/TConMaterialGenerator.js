@@ -504,8 +504,8 @@ ServerEvents.highPriorityData((event) => {
 		return builder
 	}
 
-	// 使用示例
-	addTConMaterial("test:material", 2, false)
+	// Example
+	addTConMaterial("cmi:material", 2, false)
 		.craftable(true)
 		.sortOrder(26)
 		.head(320, 1.5, 5.5, "minecraft:diamond")

@@ -240,11 +240,6 @@
 		"version": "3.0.12"
 	},
 	{
-		"filename": "dynamic-fps-3.9.4+minecraft-1.20.0-forge.jar",
-		"name": "Dynamic FPS",
-		"version": "3.9.4"
-	},
-	{
 		"filename": "embeddium-0.3.31+mc1.20.1.jar",
 		"name": "Embeddium",
 		"version": "0.3.31+mc1.20.1"
@@ -255,7 +250,7 @@
 		"version": "0.5.4.4+mc1.20.1-build.131"
 	},
 	{
-		"filename": "EngineeredSchematics-1.2.2.jar",
+		"filename": "EngineeredSchematics-1.2.2.jar.disabled",
 		"name": "Engineered Schematics",
 		"version": "1.2.2"
 	},
@@ -263,6 +258,16 @@
 		"filename": "ExtendedAE-1.20-1.4.2-forge.jar",
 		"name": "ExtendedAE",
 		"version": "1.20-1.4.2-forge"
+	},
+	{
+		"filename": "ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
+		"name": "Extreme Sound Muffler",
+		"version": "3.48"
+	},
+	{
+		"filename": "FpsReducer2-forge-1.20-2.5.jar",
+		"name": "FPS Reducer",
+		"version": "1.20-2.5"
 	},
 	{
 		"filename": "ftbbackups2-forge-1.20-1.0.23.jar",
@@ -310,6 +315,11 @@
 		"version": "1.20.1-1.2.7"
 	},
 	{
+		"filename": "FastSuite-1.20.1-5.1.0.jar",
+		"name": "Fast Suite",
+		"version": "5.1.0"
+	},
+	{
 		"filename": "ferritecore-6.0.1-forge.jar",
 		"name": "Ferrite Core",
 		"version": "6.0.1"
@@ -355,9 +365,9 @@
 		"version": "1.20.1-10.2.0-183"
 	},
 	{
-		"filename": "ImmersiveIndustry-1.20.1-0.2.1.jar",
+		"filename": "ImmersiveIndustry-1.20.1-0.2.3.jar",
 		"name": "Immersive Industry",
-		"version": "1.20.1-0.2.1"
+		"version": "1.20.1-0.2.3"
 	},
 	{
 		"filename": "item-filters-forge-2001.1.0-build.59.jar",
@@ -415,6 +425,11 @@
 		"version": "2001.5.29-build.23"
 	},
 	{
+		"filename": "kubejs-immersive-engineering-2001.6.7-build.24.jar",
+		"name": "KubeJS Immersive Engineering",
+		"version": "2001.6.7-build.24"
+	},
+	{
 		"filename": "kubejs-mekanism-forge-2001.1.5.1-build.2.jar",
 		"name": "KubeJS Mekanism",
 		"version": "2001.1.5.1-build.2"
@@ -435,9 +450,9 @@
 		"version": "1.0.35"
 	},
 	{
-		"filename": "Mantle-1.20.1-1.11.44.jar",
+		"filename": "Mantle-1.20.1-1.11.61.jar",
 		"name": "Mantle",
-		"version": "1.11.44"
+		"version": "1.11.61"
 	},
 	{
 		"filename": "MegaTimeStopClock-1.20.x-1.3.jar",
@@ -495,6 +510,11 @@
 		"version": "1.0.23"
 	},
 	{
+		"filename": "MyNethersDelight-1.20.1-0.1.8.jar",
+		"name": "My Nether's Delight",
+		"version": "1.20.1-1.7.5"
+	},
+	{
 		"filename": "Neruina-2.1.2-forge+1.20.1.jar",
 		"name": "Neruina",
 		"version": "2.1.2"
@@ -518,6 +538,16 @@
 		"filename": "notenoughcrashes-4.4.7+1.20.1-forge.jar",
 		"name": "Not Enough Crashes",
 		"version": "4.4.7+1.20.1"
+	},
+	{
+		"filename": "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
+		"name": "Not Enough Recipe Book",
+		"version": "0.4.1"
+	},
+	{
+		"filename": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+		"name": "OctoLib",
+		"version": "0.5.0.1"
 	},
 	{
 		"filename": "oculus-mc1.20.1-1.8.0.jar",
@@ -553,6 +583,11 @@
 		"filename": "pipez-forge-1.20.1-1.2.21.jar",
 		"name": "Pipez",
 		"version": "1.20.1-1.2.21"
+	},
+	{
+		"filename": "Placebo-1.20.1-8.6.3.jar",
+		"name": "Placebo",
+		"version": "8.6.3"
 	},
 	{
 		"filename": "player-animation-lib-forge-1.0.2-rc1+1.20.jar",
@@ -660,6 +695,16 @@
 		"version": "2.1.0"
 	},
 	{
+		"filename": "sophisticatedbackpacks-1.20.1-3.23.19.1251.jar",
+		"name": "Sophisticated Backpacks",
+		"version": "3.23.19.1251"
+	},
+	{
+		"filename": "sophisticatedcore-1.20.1-1.2.69.1005.jar",
+		"name": "Sophisticated Core",
+		"version": "1.2.69.1005"
+	},
+	{
 		"filename": "structurecraft-1.0.0.jar",
 		"name": "StructureCraft",
 		"version": "1.0.0"
@@ -687,12 +732,7 @@
 	{
 		"filename": "tconstruct_js-1.0.3.jar",
 		"name": "TConstruct JS",
-		"version": "1.0.2"
-	},
-	{
-		"filename": "thermal_dynamics-1.20.1-11.0.1.23.jar",
-		"name": "Thermal Dynamics",
-		"version": "11.0.1"
+		"version": "1.0.3"
 	},
 	{
 		"filename": "thermalendergy-1.20.1-1.0.0.jar",
@@ -743,6 +783,11 @@
 		"filename": "WI-Zoom-1.5-MC1.20.1-Forge.jar",
 		"name": "WI Zoom",
 		"version": "1.5-MC1.20.1-Forge"
+	},
+	{
+		"filename": "worldedit-mod-7.2.15.jar",
+		"name": "WorldEdit",
+		"version": "7.2.15+6463-5ca4dff"
 	},
 	{
 		"filename": "YeetusExperimentus-Forge-2.3.0-build.4+mc1.20.1.jar",
