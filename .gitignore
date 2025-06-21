@@ -53,6 +53,10 @@ ESM
 # ShaderPacks
 /shaderpacks/*
 
+# Docs
+/kubejs/probe/*
+!/kubejs/probe/docs
+
 # Config
 /config/*
 !/config/almostunified/
