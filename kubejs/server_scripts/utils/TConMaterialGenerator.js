@@ -27,12 +27,8 @@ function addTConMaterial(event, name, handler) {
 			return this
 		},
 		visibility(tier, hidden) {
-			if (tier !== undefined) {
-				this.definition.tier = tier
-			}
-			if (hidden !== undefined) {
-				this.definition.hidden = hidden
-			}
+			this.definition.tier = tier
+			this.definition.hidden = hidden
 			return this
 		},
 		tier(tier) {
@@ -272,16 +268,16 @@ function addTConMaterial(event, name, handler) {
 	let traitsFile = `${builder.namespace}:tinkering/materials/traits/${builder.id}.json`
 	event.addJson(traitsFile, builder.traits)
 
-	for (let i = 0; i < builder.addMaterialRecipe.length; i++) {
+	for (let i = 0; i < builder.addMaterialRecipes.length; i++) {
 		let materialRecipesFile = `${builder.namespace}:recipes/materials/material/${builder.id}/${i}.json`
-		event.addJson(materialRecipesFile, builder.addMaterialRecipe[i])
+		event.addJson(materialRecipesFile, builder.addMaterialRecipes[i])
 	}
-	for (let i = 0; i < builder.addMaterialFluidRecipe.length; i++) {
+	for (let i = 0; i < builder.addMaterialFluidRecipes.length; i++) {
 		let materialFluidRecipesFile = `${builder.namespace}:recipes/materials/material_fluid/${builder.id}/${i}.json`
-		event.addJson(materialFluidRecipesFile, builder.addMaterialFluidRecipe[i])
+		event.addJson(materialFluidRecipesFile, builder.addMaterialFluidRecipes[i])
 	}
-	for (let i = 0; i < builder.addMaterialMeltingRecipe.length; i++) {
+	for (let i = 0; i < builder.addMaterialMeltingRecipes.length; i++) {
 		let materialMeltingRecipesFile = `${builder.namespace}:recipes/materials/material_melting/${builder.id}/${i}.json`
-		event.addJson(materialMeltingRecipesFile, builder.addMaterialMeltingRecipe[i])
+		event.addJson(materialMeltingRecipesFile, builder.addMaterialMeltingRecipes[i])
 	}
 }
