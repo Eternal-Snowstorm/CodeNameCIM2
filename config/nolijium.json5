@@ -51,7 +51,7 @@
 	"minimumSkyLightLevel": 0.2,
 	// If enabled, a HUD will be drawn on the screen showing useful performance statistics.
 	// DEFAULT: `false`
-	"hudEnabled": false,
+	"hudEnabled": true,
 	// The horizontal alignment of the HUD.
 	// OPTIONS: `LEFT`, `RIGHT`
 	// DEFAULT: `LEFT`
@@ -149,7 +149,7 @@
 	"hideParticlesByID": [  ],
 	// Higher values cycle faster. Lower values cycle slower.
 	// DEFAULT: `0.5`
-	"chromaSpeed": 0.5,
+	"chromaSpeed": 3.0,
 	// Enable Chroma on block outlines.
 	// DEFAULT: `false`
 	"enableChromaBlockOutlines": false,
@@ -163,7 +163,7 @@
 	"enableChromaToolTips": true,
 	// Enable Chroma on HUD text.
 	// DEFAULT: `false`
-	"enableChromaHUD": false,
+	"enableChromaHUD": true,
 	// Removes darkness and all client-side lighting calculations, resulting in a decent performance boost on some systems.
 	// May cause issues with shaders, dynamic lighting, and light level overlays (the light level overlay in Nolijium has some mitigations for this, but still expect some weird behaviour).
 	// DEFAULT: `false`

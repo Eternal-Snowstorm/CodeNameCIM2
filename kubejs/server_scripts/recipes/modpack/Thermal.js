@@ -10,4 +10,9 @@ ServerEvents.recipes((event) => {
 	], [
 		"4x cmi:raw_platinum_particles"
 	]).energy(12000)
+
+	// 安山岩
+	thermal.rock_gen("minecraft:andesite")
+		.below("create:andesite_alloy_block")
+		.adjacent("minecraft:water")
 })
