@@ -1,0 +1,8 @@
+{
+    "block": "cmi:deepslate_tin_ore_node",
+    "loot_tables": {
+		"earth": "cmi:ore_nodes/tin/earth",
+		"common": "cmi:ore_nodes/tin/common",
+		"rare": "cmi:ore_nodes/tin/rare"
+	}
+}
