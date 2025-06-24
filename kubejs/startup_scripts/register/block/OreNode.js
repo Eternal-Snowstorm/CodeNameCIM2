@@ -42,6 +42,7 @@ StartupEvents.registry("block", (event) => {
 	addOreNode("platinum", "moon")
 	addOreNode("cheese", "moon")
 	addOreNode("coal", "deepslate")
+	addOreNode("tin", "deepslate")
 
 	// Array Example
 	// addOreNode("diamond", ["deepslate", "nether"])
