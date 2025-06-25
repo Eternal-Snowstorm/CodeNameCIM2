@@ -121,6 +121,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addOreNodeLanguaue("platinum", "铂")
 	addOreNodeLanguaue("cheese", "奶酪")
 	addOreNodeLanguaue("coal", "煤炭")
+	addOreNodeLanguaue("tin", "锡")
 
 	addFluidLanguage("blood", "血液")
 
