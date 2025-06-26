@@ -72,7 +72,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMechanismPartLanguage("engineering", "工程")
 	addMechanismPartLanguage("mekanism", "通用")
 	addMechanismPartLanguage("final", "终章")
-	addMechanismPartLanguage("space", "太空")
 
 	addGasLanguage("sulfide_gas_mixture", "硫化物混合气")
 
@@ -121,7 +120,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addOreNodeLanguaue("platinum", "铂")
 	addOreNodeLanguaue("cheese", "奶酪")
 	addOreNodeLanguaue("coal", "煤炭")
-	addOreNodeLanguaue("tin", "锡")
 
 	addFluidLanguage("blood", "血液")
 
@@ -144,9 +142,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("it_must_be_optifine", "一定是OptiFine干的", "XeKr")
 	addPaintingLanguage("random_mechanism", "随机构件", "随机构件")
 
-	addAloneLanguage(`jade.theme.${global.namespace}.stardew_valley`, "星露谷物语")
-	addAloneLanguage(`tooltip.${global.namespace}.41dirt`, "按下Alt+F4可以获得创造模式能量立方")
-	addAloneLanguage(`message.${global.namespace}.reload`, "已重载全部脚本!")
 	addAloneLanguage(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
 	addAloneLanguage(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
 	addAloneLanguage(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
@@ -165,6 +160,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAloneLanguage(`tooltip.${global.namespace}.initial_item_kit.shift`, "潜行 + 右键打开, 将会获得以下物品:\n§b扳手\n§b工程师护目镜\n§b强力胶")
 	addAloneLanguage(`message.${global.namespace}.initial_item_kit`, "欢迎游玩整合包! 物品已发放!")
 	addAloneLanguage(`display.${global.namespace}.nether_crops`, "§c下界作物只能种植在位于下界的下界农田方块上!")
+	addAloneLanguage(`jade.theme.${global.namespace}.war_thunder`, "胜败乃兵家常事，但是下一次，我们会赢回来的！")
 
 	addAloneLanguage(`message.${global.namespace}.modrinth_warning0`, "你正在游玩从Modrinth渠道下载的CMI")
 	addAloneLanguage(`message.${global.namespace}.modrinth_warning1`, "因Modrinth的政策限制，本版本删除了部分内容，可能造成如无法多人游戏、无法进入服务器等问题\n您可以通过下方按钮在Curseforge或BBSMC下载本整合包游玩完整内容")
