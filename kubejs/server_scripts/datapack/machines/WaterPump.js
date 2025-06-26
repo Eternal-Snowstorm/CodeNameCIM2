@@ -1,3 +1,4 @@
+/*
 ServerEvents.highPriorityData((event) => {
 	event.addJson(`${global.namespace}:machines/water_pump.json`, {
 		"name": "block.cmi.water_pump",
@@ -78,3 +79,4 @@ ServerEvents.highPriorityData((event) => {
 		]
 	})
 })
+*/

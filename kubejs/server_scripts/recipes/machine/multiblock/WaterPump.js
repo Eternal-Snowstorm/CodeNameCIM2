@@ -1,3 +1,4 @@
+/*
 ServerEvents.recipes((event) => {
 	// CM的KubeJS配方并不好用, 还不如custom
 	event.custom({
@@ -50,3 +51,4 @@ ServerEvents.recipes((event) => {
 		]
 	})
 })
+*/
