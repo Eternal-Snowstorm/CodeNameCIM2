@@ -60,12 +60,11 @@ ESM
 # Config
 /config/*
 !/config/almostunified/
-!/congig/drippyloadingscreen/
+!/config/drippyloadingscreen/
 !/config/fancymenu/
 !/config/ftbquests/
 !/config/jade/
 !/config/jei/
-!/config/inventoryprofilesnext/inventoryprofiles.json
 !/config/cmi*
 !/config/immersiveengineering-client.toml
 !/config/ad_astra.jsonc
@@ -76,3 +75,4 @@ ESM
 !/config/cookingforblockheads-common.toml
 !/config/capsule-common.toml
 !/config/nolijium.json5
+!/config/Mekanism/
