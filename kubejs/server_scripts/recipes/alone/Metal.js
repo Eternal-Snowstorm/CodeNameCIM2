@@ -2,20 +2,26 @@ ServerEvents.recipes((event) => {
 	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism } = event.recipes
 
 	function moltenMetalRecipeWithCondition(metal) {
+		let spaces=["cmi","thermalendergy","tconstruct"]
+		let fluid=""
+
+		spaces.forEach((s)=>{
+			if(Fluid.exists(`forge:molten_${metal}`)) {
+				fluid = `${s}:molten_${metal}`
+			}
+		})
+		if (fluid === "") {
+			console.warn(`No molten metal found for ${metal}!`)
+			return
+		}
+
 		event.custom({
 			"type": "tconstruct:melting",
-			"conditions": [
-				{
-					"type":"mantle:tag_filled",
-					"registry": "minecraft:fluid",
-					"tag": `#forge:molten_${metal}`
-				}
-			],
 			"ingredient": {
-				"tag": `#forge:ingots/${metal}`
+				"tag": `forge:ingots/${metal}`
 			},
 			"result": {
-				"tag": `forge:molten_${metal}`,
+				"fluid": fluid,
 				"amount": 90
 			},
 			"temperature": 800,
@@ -25,18 +31,11 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:nuggets/${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:melting",
-				"conditions": [
-					{
-						"type":"mantle:tag_filled",
-						"registry": "minecraft:fluid",
-						"tag": `#forge:molten_${metal}`
-					}
-				],
 				"ingredient": {
-					"tag": `#forge:nuggets/${metal}`
+					"tag": `forge:nuggets/${metal}`
 				},
 				"result": {
-					"tag": `forge:molten_${metal}`,
+					"fluid": fluid,
 					"amount": 10
 				},
 				"temperature": 800,
@@ -49,18 +48,11 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:storage_blocks/${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:melting",
-				"conditions": [
-					{
-						"type":"mantle:tag_filled",
-						"registry": "minecraft:fluid",
-						"tag": `#forge:molten_${metal}`
-					}
-				],
 				"ingredient": {
 					"tag": `#forge:storage_blocks/${metal}`
 				},
 				"result": {
-					"tag": `forge:molten_${metal}`,
+					"fluid": fluid,
 					"amount": 810
 				},
 				"temperature": 800,
@@ -73,18 +65,11 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:plates/${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:melting",
-				"conditions": [
-					{
-						"type":"mantle:tag_filled",
-						"registry": "minecraft:fluid",
-						"tag": `#forge:molten_${metal}`
-					}
-				],
 				"ingredient": {
 					"tag": `#forge:plates/${metal}`
 				},
 				"result": {
-					"tag": `forge:molten_${metal}`,
+					"fluid": fluid,
 					"amount": 90
 				},
 				"temperature": 800,
@@ -97,18 +82,11 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:dusts/${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:melting",
-				"conditions": [
-					{
-						"type":"mantle:tag_filled",
-						"registry": "minecraft:fluid",
-						"tag": `#forge:molten_${metal}`
-					}
-				],
 				"ingredient": {
 					"tag": `#forge:dusts/${metal}`
 				},
 				"result": {
-					"tag": `forge:molten_${metal}`,
+					"fluid": fluid,
 					"amount": 90
 				},
 				"temperature": 800,
@@ -121,18 +99,11 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:rods/${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:melting",
-				"conditions": [
-					{
-						"type":"mantle:tag_filled",
-						"registry": "minecraft:fluid",
-						"tag": `#forge:molten_${metal}`
-					}
-				],
 				"ingredient": {
 					"tag": `#forge:rods/${metal}`
 				},
 				"result": {
-					"tag": `forge:molten_${metal}`,
+					"fluid": fluid,
 					"amount": 45
 				},
 				"temperature": 800,
@@ -145,18 +116,11 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:gears/${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:melting",
-				"conditions": [
-					{
-						"type":"mantle:tag_filled",
-						"registry": "minecraft:fluid",
-						"tag": `#forge:molten_${metal}`
-					}
-				],
 				"ingredient": {
 					"tag": `#forge:gears/${metal}`
 				},
 				"result": {
-					"tag": `forge:molten_${metal}`,
+					"fluid": fluid,
 					"amount": 90
 				},
 				"temperature": 800,
@@ -169,13 +133,6 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:ore_melting",
-				"conditions": [
-					{
-						"type":"mantle:tag_filled",
-						"registry": "minecraft:fluid",
-						"tag": `#forge:molten_${metal}`
-					}
-				],
 				"ingredient": {
 					"tag": `forge:raw_materials/${metal}`
 				},
@@ -194,13 +151,6 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:storage_blocks/raw_${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:ore_melting",
-				"conditions": [
-					{
-						"type":"mantle:tag_filled",
-						"registry": "minecraft:fluid",
-						"tag": `#forge:molten_${metal}`
-					}
-				],
 				"ingredient": {
 					"tag": `forge:storage_blocks/raw_${metal}`
 				},
@@ -219,13 +169,6 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:ores/${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:ore_melting",
-				"conditions": [
-					{
-						"type":"mantle:tag_filled",
-						"registry": "minecraft:fluid",
-						"tag": `#forge:molten_${metal}`
-					}
-				],
 				"ingredient": {
 					"tag": `forge:ores/${metal}`
 				},
