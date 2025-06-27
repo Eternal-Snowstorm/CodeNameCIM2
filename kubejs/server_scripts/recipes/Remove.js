@@ -18,8 +18,7 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:crafting/gunpowder_from_dusts",
 		"thermal:gunpowder_4",
 		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals",
-		"minecraft:stick_from_bamboo_item",
-		"create:milling/andesite"
+		"minecraft:stick_from_bamboo_item"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -278,13 +277,13 @@ ServerEvents.recipes((event) => {
 				type: "tconstruct:melting",
 				input: `#forge:gears/${metal}`,
 			}, {
-				type: "tconstruct:melting",
+				type: "tconstruct:ore_melting",
 				input: `#forge:raw_materials/${metal}`,
 			}, {
-				type: "tconstruct:melting",
+				type: "tconstruct:ore_melting",
 				input: `#forge:storage_blocks/raw_${metal}`,
 			}, {
-				type: "tconstruct:melting",
+				type: "tconstruct:ore_melting",
 				input: `#forge:ores/${metal}`,
 			}
 		])
