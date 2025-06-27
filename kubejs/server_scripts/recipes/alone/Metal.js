@@ -2,14 +2,19 @@ ServerEvents.recipes((event) => {
 	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism } = event.recipes
 
 	function moltenMetalRecipeWithCondition(metal) {
-		let spaces=["cmi","thermalendergy","tconstruct"]
+		let spaces=["cmi","tconstruct"]
 		let fluid=""
 
 		spaces.forEach((s)=>{
-			if(Fluid.exists(`forge:molten_${metal}`)) {
+			if(Fluid.exists(`${s}:molten_${metal}`)) {
 				fluid = `${s}:molten_${metal}`
 			}
 		})
+
+		if(Fluid.exists(`thermal_extra:${metal}`)) {
+			fluid = `thermal_extra:${metal}`
+		}
+
 		if (fluid === "") {
 			console.warn(`No molten metal found for ${metal}!`)
 			return
@@ -49,7 +54,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:storage_blocks/${metal}`
+					"tag": `forge:storage_blocks/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
@@ -66,7 +71,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:plates/${metal}`
+					"tag": `forge:plates/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
@@ -83,7 +88,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:dusts/${metal}`
+					"tag": `forge:dusts/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
@@ -100,7 +105,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:rods/${metal}`
+					"tag": `forge:rods/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
@@ -117,7 +122,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:gears/${metal}`
+					"tag": `forge:gears/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
