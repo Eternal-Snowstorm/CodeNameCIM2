@@ -2,16 +2,16 @@ ServerEvents.recipes((event) => {
 	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism } = event.recipes
 
 	function moltenMetalRecipeWithCondition(metal) {
-		let spaces=["cmi","tconstruct"]
-		let fluid=""
+		let namespace = ["cmi", "tconstruct"]
+		let fluid = ""
 
-		spaces.forEach((s)=>{
-			if(Fluid.exists(`${s}:molten_${metal}`)) {
-				fluid = `${s}:molten_${metal}`
+		namespace.forEach((modid) => {
+			if (Fluid.exists(`${modid}:molten_${metal}`)) {
+				fluid = `${modid}:molten_${metal}`
 			}
 		})
 
-		if(Fluid.exists(`thermal_extra:${metal}`)) {
+		if (Fluid.exists(`thermal_extra:${metal}`)) {
 			fluid = `thermal_extra:${metal}`
 		}
 
@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
 			"temperature": 800,
 			"time": 60
 		})
-		
+
 		if (!(Ingredient.of(`#forge:nuggets/${metal}`).itemIds.length === 0)) {
 			event.custom({
 				"type": "tconstruct:melting",
@@ -396,7 +396,7 @@ ServerEvents.recipes((event) => {
 		} else {
 			console.warn(`No gear found for ${metal}!`)
 		}
-		
+
 		moltenMetalRecipeWithCondition(metal)
 	})
 })
