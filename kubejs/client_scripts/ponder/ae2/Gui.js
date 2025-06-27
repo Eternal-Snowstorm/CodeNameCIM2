@@ -100,4 +100,11 @@ Ponder.registry((event) => {
 
 
         })
+        event.create(['ae2:pattern_provider',
+        'ae2:pattern_access_terminal',
+        'ae2:pattern_encoding_terminal',
+        'ae2:blank_pattern'])
+        .scene("cmi:ae2_gui2", "自动化配置案例——“燃料”类配方", "cmi:ae2/ae2_gui2", (scene) => {
+
+        })
 })
