@@ -43,3 +43,81 @@
     4. 如果您想使用本产品的代码或资源文件
         1. 您必须将本产品的功劳归功于我们, 如果您做出任何改动, 您必须提供一个返回原发布地址的链接.
         2. 未经特殊许可, 您的项目必须是开源的. 
+
+---
+
+# CMI User Terms 1.1
+
+### Definitions:
+
+* **We**
+  Refers to the development team of "CMI".
+
+* **This Product**
+  Refers to the modpack developed by us.
+
+* **These Terms**
+  Refers to the document you are currently reading.
+
+* **User**
+  Refers to the individual using this product or reading these terms.
+
+* **Violator**
+  Refers to any user who violates these terms.
+
+* **Open Source**
+  The source code must be publicly visible and allow redistribution and modification.
+
+Before using this product developed by us, please read and fully understand this statement carefully.
+
+You may choose not to use this product. However, once you use it, you are deemed to have fully acknowledged and accepted all contents of this agreement.
+
+---
+
+## 1. Disclaimer
+
+1. This product does not possess any functions related to internet access, online data storage, communication transmission, or the collection of user privacy.
+
+2. You agree to use this product legally and reasonably, and not for any illegal, malicious, or harmful purposes, nor to perform any operations that violate the laws and regulations of the People’s Republic of China.
+
+3. We are not legally liable for any accidents, negligence, breaches of contract, defamation, intellectual property infringement, or any resulting losses (including but not limited to direct, indirect, incidental, or consequential losses) caused by individuals or organizations downloading or using this product.
+
+4. You explicitly agree to all contents listed in these terms, and acknowledge that you bear full responsibility for any risks and consequences associated with using this product. We bear no legal responsibility.
+
+5. Any individual or organization should use this product lawfully within the scope permitted by law. If any violation of these terms or laws results in legal liability (including but not limited to civil compensation or criminal responsibility), the violator shall bear full responsibility.
+
+6. No individual or organization may apply for intellectual property rights related to this product without our authorization.
+
+7. If any part of this statement is deemed invalid or unenforceable, it shall be interpreted in a way that reflects our original intention, and the remaining parts shall remain fully effective. The unenforceability of any part does not constitute a waiver of our right to enforce that part.
+
+8. We reserve the right to unilaterally modify these terms and any attachments at any time. Updates will be published via push notifications or website announcements and will take effect immediately upon publication without further notice. Continued use of this product after such changes indicates that you have read, understood, and accepted the modified terms.
+
+---
+
+## 2. General Terms
+
+### 2.1 Personal License Terms
+
+1. We rarely grant personal licenses, as doing so implies endorsement. Requests for personal licenses are unlikely to be approved, and you are expected to continue following these terms.
+
+2. If granted a personal license, unless otherwise specified, you may ignore the restrictive general clauses. Please review the above terms.
+
+3. If granted a personal license, unless otherwise specified, the license applies to related products such as this product’s official website, resource files, etc.
+
+### 2.2 Distribution
+
+1. You must credit us for the original product. If you make any modifications, you must provide a link back to the original release page.
+
+2. You may not charge any fees for distributing this product.
+
+3. You may not charge for access to this product, including but not limited to placing online ads, restricting download speed or quantity.
+
+### 2.3 Presentation
+
+1. You are welcome to create and publish videos about this product. However, you may not claim to be the developer. If you do not wish to make such content, you are not required to.
+
+### 2.4 If You Want to Use Code or Resources from This Product
+
+1. You must credit us for the original product. If you make any modifications, you must provide a link back to the original release page.
+
+2. Unless specifically permitted, your project must be open source.
