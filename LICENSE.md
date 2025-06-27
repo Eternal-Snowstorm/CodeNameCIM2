@@ -1,26 +1,27 @@
-用户使用条款1.1
+## CMI用户使用条款2.0
 
-术语定义:
+### 术语定义:
 
-* 我们
+* **我们**
     * "CMI"开发团队
-* 本产品
+* **本产品**
     * 整合包
-* 本条款
+* **本条款**
     * 您现在正在浏览的文件
-* 用户
+* **用户**
     * 使用者
     * 正在阅读条款的您
-* 违约者
+* **违约者**
     * 违反本条款的用户
-* 开源
+* **开源**
     * 其源码必须可见, 并允许重新分发和修改
 
-任何用户在使用由我们研发的本产品前, 请您仔细阅读并透彻理解本声明.
+**任何用户在使用由我们研发的本产品前, 请您仔细阅读并透彻理解本声明.**
 
-您可以选择不使用本产品, 若您一旦使用本产品, 默认为您对本协议全部内容的认可和接受.
+**您可以选择不使用本产品, 若您一旦使用本产品, 默认为您对本协议全部内容的认可和接受.**
 
-1. 免责声明
+## 免责声明
+
     1. 本产品并不具备"接入互联网, 网络数据存储, 通讯传输, 窃取用户隐私"中任何一项与用户数据等信息相关的功能.
     2. 您承诺以合法, 合理的原则使用本产品, 不利用本产品进行任何违法, 侵害他人合法利益等恶意的行为, 亦不将本产品运用于任何违反我国法律法规的操作上.
     3. 任何单位或个人因下载使用本产品而产生的任何意外, 疏忽, 毁约, 诽谤, 知识产权侵犯及其造成的损失(包括但不限于直接, 间接, 附带或衍生的损失等), 我们不承担任何法律责任.
@@ -29,7 +30,11 @@
     6. 任何单位或个人不得在未经我们授权的情况下对本产品本身申请相关的知识产权.
     7. 如果本声明的任何部分被认为无效或不可执行, 则该部分将被解释为反映我们的初衷, 其余部分仍具有完全效力.不可执行的部分声明, 并不构成我们放弃执行该声明的权利.
     8. 我们有权随时对本条款及附件内容进行单方面的变更, 并以消息推送, 网页公告等方式予以公布, 公布后立即自动生效, 无需另行单独通知;若您在本声明内容公告变更后继续使用本产品, 表示您已充分阅读, 理解并接受修改后的声明内容.
-2. 一般条款
+
+---
+
+## 一般条款
+
     1. 个人许可条款
         1. 我们几乎不会给予个人许可, 因为给予个人许可意味着认可.向我们请求个人许可大概率不会通过, 并要求您继续遵守本条款.
         2. 经个人许可, 如无特殊声明, 本条款中带限制性的一般条款均可忽略.请阅读上述条款.
@@ -46,7 +51,7 @@
 
 ---
 
-# CMI User Terms 1.1
+# CMI User Terms 2.0
 
 ### Definitions:
 
@@ -76,21 +81,14 @@ You may choose not to use this product. However, once you use it, you are deemed
 
 ## 1. Disclaimer
 
-1. This product does not possess any functions related to internet access, online data storage, communication transmission, or the collection of user privacy.
-
-2. You agree to use this product legally and reasonably, and not for any illegal, malicious, or harmful purposes, nor to perform any operations that violate the laws and regulations of the People’s Republic of China.
-
-3. We are not legally liable for any accidents, negligence, breaches of contract, defamation, intellectual property infringement, or any resulting losses (including but not limited to direct, indirect, incidental, or consequential losses) caused by individuals or organizations downloading or using this product.
-
-4. You explicitly agree to all contents listed in these terms, and acknowledge that you bear full responsibility for any risks and consequences associated with using this product. We bear no legal responsibility.
-
-5. Any individual or organization should use this product lawfully within the scope permitted by law. If any violation of these terms or laws results in legal liability (including but not limited to civil compensation or criminal responsibility), the violator shall bear full responsibility.
-
-6. No individual or organization may apply for intellectual property rights related to this product without our authorization.
-
-7. If any part of this statement is deemed invalid or unenforceable, it shall be interpreted in a way that reflects our original intention, and the remaining parts shall remain fully effective. The unenforceability of any part does not constitute a waiver of our right to enforce that part.
-
-8. We reserve the right to unilaterally modify these terms and any attachments at any time. Updates will be published via push notifications or website announcements and will take effect immediately upon publication without further notice. Continued use of this product after such changes indicates that you have read, understood, and accepted the modified terms.
+	1. This product does not possess any functions related to internet access, online data storage, communication transmission, or the collection of user privacy.
+	2. You agree to use this product legally and reasonably, and not for any illegal, malicious, or harmful purposes, nor to perform any operations that violate the laws and regulations of the People’s Republic of China.
+	3. We are not legally liable for any accidents, negligence, breaches of contract, defamation, intellectual property infringement, or any resulting losses (including but not limited to direct, indirect, incidental, or consequential losses) caused by individuals or organizations downloading or using this product.
+	4. You explicitly agree to all contents listed in these terms, and acknowledge that you bear full responsibility for any risks and consequences associated with using this product. We bear no legal responsibility.
+	5. Any individual or organization should use this product lawfully within the scope permitted by law. If any violation of these terms or laws results in legal liability (including but not limited to civil compensation or criminal responsibility), the violator shall bear full responsibility.
+	6. No individual or organization may apply for intellectual property rights related to this product without our authorization.
+	7. If any part of this statement is deemed invalid or unenforceable, it shall be interpreted in a way that reflects our original intention, and the remaining parts shall remain fully effective. The unenforceability of any part does not constitute a waiver of our right to enforce that part.
+	8. We reserve the right to unilaterally modify these terms and any attachments at any time. Updates will be published via push notifications or website announcements and will take effect immediately upon publication without further notice. Continued use of this product after such changes indicates that you have read, understood, and accepted the modified terms.
 
 ---
 
@@ -98,26 +96,21 @@ You may choose not to use this product. However, once you use it, you are deemed
 
 ### 2.1 Personal License Terms
 
-1. We rarely grant personal licenses, as doing so implies endorsement. Requests for personal licenses are unlikely to be approved, and you are expected to continue following these terms.
-
-2. If granted a personal license, unless otherwise specified, you may ignore the restrictive general clauses. Please review the above terms.
-
-3. If granted a personal license, unless otherwise specified, the license applies to related products such as this product’s official website, resource files, etc.
+	1. We rarely grant personal licenses, as doing so implies endorsement. Requests for personal licenses are unlikely to be approved, and you are expected to continue following these terms.
+	2. If granted a personal license, unless otherwise specified, you may ignore the restrictive general clauses. Please review the above terms.
+	3. If granted a personal license, unless otherwise specified, the license applies to related products such as this product’s official website, resource files, etc.
 
 ### 2.2 Distribution
 
-1. You must credit us for the original product. If you make any modifications, you must provide a link back to the original release page.
-
-2. You may not charge any fees for distributing this product.
-
-3. You may not charge for access to this product, including but not limited to placing online ads, restricting download speed or quantity.
+	1. You must credit us for the original product. If you make any modifications, you must provide a link back to the original release page.
+	2. You may not charge any fees for distributing this product.
+	3. You may not charge for access to this product, including but not limited to placing online ads, restricting download speed or quantity.
 
 ### 2.3 Presentation
 
-1. You are welcome to create and publish videos about this product. However, you may not claim to be the developer. If you do not wish to make such content, you are not required to.
+	1. You are welcome to create and publish videos about this product. However, you may not claim to be the developer. If you do not wish to make such content, you are not required to.
 
 ### 2.4 If You Want to Use Code or Resources from This Product
 
-1. You must credit us for the original product. If you make any modifications, you must provide a link back to the original release page.
-
-2. Unless specifically permitted, your project must be open source.
+	1. You must credit us for the original product. If you make any modifications, you must provide a link back to the original release page.
+	2. Unless specifically permitted, your project must be open source.
