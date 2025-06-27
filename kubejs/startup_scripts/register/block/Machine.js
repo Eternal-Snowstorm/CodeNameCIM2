@@ -5,7 +5,7 @@ StartupEvents.registry("block", (event) => {
 			.tag("create:wrench_pickup")
 	}
 
-	addCustomMachine("water_pump")
+	// addCustomMachine("water_pump")
 	addCustomMachine("flash_disk_writer")
 	addCustomMachine("chemical_gas_extractor")
 })
