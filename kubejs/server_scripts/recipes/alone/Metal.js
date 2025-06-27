@@ -391,5 +391,7 @@ ServerEvents.recipes((event) => {
 		} else {
 			console.warn(`No gear found for ${metal}!`)
 		}
+		
+		moltenMetalRecipeWithCondition(metal)
 	})
 })
