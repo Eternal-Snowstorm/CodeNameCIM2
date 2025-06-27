@@ -121,10 +121,6 @@ addMaterial("andesite_alloy", 0xA9AFA1, "wooden")
 	.nugget()
 	.molten()
 
-// 余烬史莱姆
-addMaterial("cinderslime", 0xFF6060, "wooden")
-	.plate()
-
 // 不锈钢
 addMaterial("stainless_steel", 0x708090, "diamond")
 	.ingot()

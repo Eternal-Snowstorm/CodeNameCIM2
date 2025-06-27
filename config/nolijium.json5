@@ -149,7 +149,7 @@
 	"hideParticlesByID": [  ],
 	// Higher values cycle faster. Lower values cycle slower.
 	// DEFAULT: `0.5`
-	"chromaSpeed": 3.0,
+	"chromaSpeed": 1.0,
 	// Enable Chroma on block outlines.
 	// DEFAULT: `false`
 	"enableChromaBlockOutlines": false,
