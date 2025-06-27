@@ -49,7 +49,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:storage_blocks/${metal}`
+					"tag": `forge:storage_blocks/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
@@ -66,7 +66,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:plates/${metal}`
+					"tag": `forge:plates/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:dusts/${metal}`
+					"tag": `forge:dusts/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
@@ -100,7 +100,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:rods/${metal}`
+					"tag": `forge:rods/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
@@ -117,7 +117,7 @@ ServerEvents.recipes((event) => {
 			event.custom({
 				"type": "tconstruct:melting",
 				"ingredient": {
-					"tag": `#forge:gears/${metal}`
+					"tag": `forge:gears/${metal}`
 				},
 				"result": {
 					"fluid": fluid,
