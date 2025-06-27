@@ -78,4 +78,19 @@ ServerEvents.recipes((event) => {
 	create.haunting("cmi:magical_mechanism_part", [
 		"cmi:basic_mechanism_part"
 	])
+
+	create.milling([
+		"2x cmi:andesite_dust",
+		Item.of("cmi:andesite_dust", 2).withChance(0.5)
+	], "#create:stone_types/andesite")
+
+	create.crushing("4x cmi:andesite_dust", [
+		"#create:stone_types/andesite"
+	])
+
+	create.mixing("4x cmi:andesite_aggregate", [
+		Fluid.of("minecraft:water", 250),
+		"#forge:dusts/andesite",
+		"#forge:clay"
+	])
 })

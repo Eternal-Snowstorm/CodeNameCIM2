@@ -81,4 +81,14 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:creosote_wood_chip_briquette`)
 		.texture(`${global.namespace}:item/material/wood_chip/done`)
 		.burnTime(16000)
+
+	// 安山岩
+	event.create(`${global.namespace}:andesite_dust`)
+		.texture(`${global.namespace}:item/material/andesite/dust`)
+		.tag("forge:dusts")
+		.tag(`forge:dusts/andesite`)
+
+	event.create(`${global.namespace}:andesite_aggregate`)
+		.texture(`${global.namespace}:item/material/andesite/aggregate`)
+		.tag("forge:bricks")
 })

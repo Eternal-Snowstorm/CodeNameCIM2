@@ -28,6 +28,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("compressed_wood_chip_briquette", "压缩木屑块")
 	addItemLanguage("densely_packed_wood_chip_briquette", "致密压缩木屑块")
 	addItemLanguage("creosote_wood_chip_briquette", "浸油致密压缩木屑块")
+	addItemLanguage("andesite_dust", "安山岩粉")
+	addItemLanguage("andesite_aggregate", "安山混合物")
 
 	addCastItemLanguage("mechanism", "构件")
 
@@ -191,8 +193,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("cmi:potion_mechanism", "右键获取大多数正面buff")
 
 	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产才能确保需求量自由")
-	addJEIInfoLanguage("cookingforblockheads:sink", `"去用我的后辈多方块水泵吧"水槽如是说道`)
-	addJEIInfoLanguage("cmi:water_pump", "机器内如果一次产出的量如果高于剩余空间, 机器则会停止工作\n所以不需要担心水量会减少的问题, 在水量少于50%的时候会重新生产一次")
 	addJEIInfoLanguage("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
 	addJEIInfoLanguage("cmi:bucket", "似是一种巨大的力量塑造的诡异造物\n它有着令人倍感亲切的形状, 却处于一种令人不寒而栗的陌生角度\n这巨大的力量, 炽热, 强大又致命\n善良者受其腐化\n卑鄙者因其强大\n收容之器受其影响, 转为包覆之具, 幸于并无灵魂, 于我没有危害")
 	addJEIInfoLanguage("#ad_astra:power_consumption_machines", "该Mod的机器每个面都有能量输入的上限\n如果想要不会断电确保产量你可能需要给每个面都连接一根电线")

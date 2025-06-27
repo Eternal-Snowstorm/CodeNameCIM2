@@ -8,3 +8,11 @@ function aeCharger(output, input) {
 		}
 	}
 }
+
+function addSmeltingRecipe(event, output, input) {
+	event.recipes.minecraft.blasting(output, input)
+		.cookingTime(100)
+
+	event.recipes.minecraft.smelting(output, input)
+		.cookingTime(200)
+}
