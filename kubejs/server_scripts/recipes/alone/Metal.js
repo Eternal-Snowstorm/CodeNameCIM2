@@ -2,11 +2,11 @@ ServerEvents.recipes((event) => {
 	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism } = event.recipes
 
 	function moltenMetalRecipeWithCondition(metal) {
-		let spaces=["cmi","thermalendergy","tconstruct"]
+		let spaces=["cmi","thermal_extra","tconstruct"]
 		let fluid=""
 
 		spaces.forEach((s)=>{
-			if(Fluid.exists(`forge:molten_${metal}`)) {
+			if(Fluid.exists(`${s}:molten_${metal}`)) {
 				fluid = `${s}:molten_${metal}`
 			}
 		})
