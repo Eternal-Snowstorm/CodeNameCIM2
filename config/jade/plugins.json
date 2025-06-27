@@ -5,8 +5,8 @@
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage": true,
     "item_storage.normal_amount": 9,
+    "item_storage": true,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -117,13 +117,5 @@
     "crafting_blueprint": true,
     "goggles.detailed": false,
     "placard": true
-  },
-  "cookingforblockheads": {
-    "fridge": true,
-    "oven": true,
-    "sink": true,
-    "preservation_chamber": true,
-    "milk_jar": true,
-    "toaster": true
   }
 }

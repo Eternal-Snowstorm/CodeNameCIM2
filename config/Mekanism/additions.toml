@@ -19,7 +19,7 @@
 		#Config options regarding baby creeper.
 		[additions.spawning.baby-creeper]
 			#Enable the spawning of baby creeper. Think baby zombies.
-			shouldSpawn = false
+			shouldSpawn = true
 			#The multiplier for weight of baby creeper spawns, compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5
