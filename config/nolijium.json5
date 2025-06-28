@@ -51,7 +51,7 @@
 	"minimumSkyLightLevel": 0.2,
 	// If enabled, a HUD will be drawn on the screen showing useful performance statistics.
 	// DEFAULT: `false`
-	"hudEnabled": true,
+	"hudEnabled": false,
 	// The horizontal alignment of the HUD.
 	// OPTIONS: `LEFT`, `RIGHT`
 	// DEFAULT: `LEFT`

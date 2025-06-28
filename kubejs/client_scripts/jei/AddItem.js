@@ -11,4 +11,5 @@ JEIEvents.addItems((event) => {
 	addItemToJEI("createdieselgenerators:pumpjack_hole")
 	addItemToJEI("thermal:rf_coil")
 	addItemToJEI("cmi:moon_cobalt_ore")
+	addItemToJEI("cmi:gui_block")
 })
