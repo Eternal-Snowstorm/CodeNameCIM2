@@ -57,10 +57,6 @@ ServerEvents.recipes((event) => {
 		"4x cmi:wood_chip_briquette"
 	])
 
-	create.compacting("cmi:compressed_wood_chip_briquette", [
-		"4x cmi:wood_chip_briquette"
-	])
-
 	create.compacting("cmi:densely_packed_wood_chip_briquette", [
 		"4x cmi:compressed_wood_chip_briquette"
 	])
