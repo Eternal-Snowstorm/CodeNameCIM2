@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism } = event.recipes
+	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism, tconstruct } = event.recipes
 
 	function moltenMetalRecipeWithCondition(metal) {
 		let spaces=["cmi","tconstruct"]
@@ -20,117 +20,109 @@ ServerEvents.recipes((event) => {
 			return
 		}
 
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": {
-				"tag": `forge:ingots/${metal}`
-			},
-			"result": {
-				"fluid": fluid,
-				"amount": 90
-			},
-			"temperature": 800,
-			"time": 60
-		})
-		
+		tconstruct.melting(Fluid.of(fluid,90))
+		.ingredient(`#forge:ingots/${metal}`)
+		.temperature(800)
+		.time(60)
+		tconstruct.casting_table(`#forge:ingots/${metal}`)
+		.cast("tconstruct:casts/multi_use/ingot")
+		.fluid(Fluid.of(fluid,90))
+		.cooling_time(60)
+		tconstruct.casting_table(`#forge:ingots/${metal}`)
+		.cast("tconstruct:casts/single_use/ingot")
+		.fluid(Fluid.of(fluid,90))
+		.cooling_time(60)
+		.cast_consumed(true)
+
 		if (!(Ingredient.of(`#forge:nuggets/${metal}`).itemIds.length === 0)) {
-			event.custom({
-				"type": "tconstruct:melting",
-				"ingredient": {
-					"tag": `forge:nuggets/${metal}`
-				},
-				"result": {
-					"fluid": fluid,
-					"amount": 10
-				},
-				"temperature": 800,
-				"time": 20
-			})
+			tconstruct.melting(Fluid.of(fluid,10))
+			.ingredient(`#forge:nuggets/${metal}`)
+			.temperature(800)
+			.time(20)
+			tconstruct.casting_table(`#forge:nuggets/${metal}`)
+			.cast("tconstruct:casts/multi_use/nugget")
+			.fluid(Fluid.of(fluid,10))
+			.cooling_time(20)
+			tconstruct.casting_table(`#forge:nuggets/${metal}`)
+			.cast("tconstruct:casts/single_use/nugget")
+			.fluid(Fluid.of(fluid,10))
+			.cooling_time(20)
+			.cast_consumed(true)
 		} else {
 			console.warn(`No nugget found for ${metal}!`)
 		}
 
 		if (!(Ingredient.of(`#forge:storage_blocks/${metal}`).itemIds.length === 0)) {
-			event.custom({
-				"type": "tconstruct:melting",
-				"ingredient": {
-					"tag": `forge:storage_blocks/${metal}`
-				},
-				"result": {
-					"fluid": fluid,
-					"amount": 810
-				},
-				"temperature": 800,
-				"time": 180
-			})
+			tconstruct.melting(Fluid.of(fluid,810))
+			.ingredient(`#forge:storage_blocks/${metal}`)
+			.temperature(800)
+			.time(180)
+			tconstruct.casting_basin(`#forge:storage_blocks/${metal}`)
+			.fluid(Fluid.of(fluid,810))
+			.cooling_time(180)
 		} else {
 			console.warn(`No storage block found for ${metal}!`)
 		}
 
 		if (!(Ingredient.of(`#forge:plates/${metal}`).itemIds.length === 0)) {
-			event.custom({
-				"type": "tconstruct:melting",
-				"ingredient": {
-					"tag": `forge:plates/${metal}`
-				},
-				"result": {
-					"fluid": fluid,
-					"amount": 90
-				},
-				"temperature": 800,
-				"time": 60
-			})
+			tconstruct.melting(Fluid.of(fluid,90))
+			.ingredient(`#forge:plates/${metal}`)
+			.temperature(800)
+			.time(60)
+			tconstruct.casting_table(`#forge:plates/${metal}`)
+			.cast("tconstruct:casts/multi_use/plate")
+			.fluid(Fluid.of(fluid,90))
+			.cooling_time(60)
+			tconstruct.casting_table(`#forge:plates/${metal}`)
+			.cast("tconstruct:casts/single_use/plate")
+			.fluid(Fluid.of(fluid,90))
+			.cooling_time(60)
+			.cast_consumed(true)
 		} else {
 			console.warn(`No plate found for ${metal}!`)
 		}
 
 		if (!(Ingredient.of(`#forge:dusts/${metal}`).itemIds.length === 0)) {
-			event.custom({
-				"type": "tconstruct:melting",
-				"ingredient": {
-					"tag": `forge:dusts/${metal}`
-				},
-				"result": {
-					"fluid": fluid,
-					"amount": 90
-				},
-				"temperature": 800,
-				"time": 60
-			})
+			tconstruct.melting(Fluid.of(fluid,90))
+			.ingredient(`#forge:dusts/${metal}`)
+			.temperature(800)
+			.time(60)
 		} else {
 			console.warn(`No dust found for ${metal}!`)
 		}
 
 		if (!(Ingredient.of(`#forge:rods/${metal}`).itemIds.length === 0)) {
-			event.custom({
-				"type": "tconstruct:melting",
-				"ingredient": {
-					"tag": `forge:rods/${metal}`
-				},
-				"result": {
-					"fluid": fluid,
-					"amount": 45
-				},
-				"temperature": 800,
-				"time": 30
-			})
+			tconstruct.melting(Fluid.of(fluid,45))
+			.ingredient(`#forge:rods/${metal}`)
+			.temperature(800)
+			.time(30)
+			tconstruct.casting_table(`#forge:rods/${metal}`)
+			.cast("tconstruct:casts/multi_use/rod")
+			.fluid(Fluid.of(fluid,45))
+			.cooling_time(30)
+			tconstruct.casting_table(`#forge:rods/${metal}`)
+			.cast("tconstruct:casts/single_use/rod")
+			.fluid(Fluid.of(fluid,45))
+			.cooling_time(30)
+			.cast_consumed(true)
 		} else {
 			console.warn(`No rod found for ${metal}!`)
 		}
 
 		if (!(Ingredient.of(`#forge:gears/${metal}`).itemIds.length === 0)) {
-			event.custom({
-				"type": "tconstruct:melting",
-				"ingredient": {
-					"tag": `forge:gears/${metal}`
-				},
-				"result": {
-					"fluid": fluid,
-					"amount": 90
-				},
-				"temperature": 800,
-				"time": 150
-			})
+			tconstruct.melting(Fluid.of(fluid,360))
+			.ingredient(`#forge:gears/${metal}`)
+			.temperature(800)
+			.time(150)
+			tconstruct.casting_table(`#forge:gears/${metal}`)
+			.cast("tconstruct:casts/multi_use/gear")
+			.fluid(Fluid.of(fluid,360))
+			.cooling_time(150)
+			tconstruct.casting_table(`#forge:gears/${metal}`)
+			.cast("tconstruct:casts/single_use/gear")
+			.fluid(Fluid.of(fluid,360))
+			.cooling_time(150)
+			.cast_consumed(true)
 		} else {
 			console.warn(`No gear found for ${metal}!`)
 		}
