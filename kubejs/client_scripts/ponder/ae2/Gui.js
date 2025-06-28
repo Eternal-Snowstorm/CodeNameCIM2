@@ -64,9 +64,8 @@ Ponder.registry((event) => {
 
 		scene.addKeyframe()
 		scene.idle(30)
-		scene.showControls(40, [4, 2, 10], "LEFT")
+		scene.showControls(40, [4, 2, 10], "left")
 			.withItem("ae2:crafting_pattern")
-
 
 		scene.idle(60)
 		scene.text(60, "我们将其取走，放入紧贴“分子装配室”的“ME样板供应器”", [6, 1.5, 6])
@@ -214,7 +213,6 @@ Ponder.registry((event) => {
 		scene.addKeyframe()
 		scene.text(100, "这种把“消耗品”与“原料”分开的思路仍可在其他地方使用，比如...")
 		scene.idle(110)
-
 
 		scene.world.setBlocks([14, 1, 2], "create:depot")
 		scene.world.setBlocks([14, 3, 2], "create:spout")
