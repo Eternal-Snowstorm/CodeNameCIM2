@@ -285,6 +285,24 @@ ServerEvents.recipes((event) => {
 			}, {
 				type: "tconstruct:ore_melting",
 				input: `#forge:ores/${metal}`,
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:ingots/${metal}`,
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:nuggets/${metal}`,
+			}, {
+				type: "tconstruct:casting_basin",
+				output: `#forge:storage_blocks/${metal}`
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:plates/${metal}`
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:rods/${metal}`
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:gears/${metal}`
 			}
 		])
 	})
