@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/iron",
 		B: "cmi:iron_mechanism",
 		C: "#forge:netherrack",
-		D: "tconstruct:blaze_head"
+		D: "cmi:nether_mechanism"
 	}).id("create:crafting/kinetics/blaze_burner")
 
 	// 烈焰蛋糕
