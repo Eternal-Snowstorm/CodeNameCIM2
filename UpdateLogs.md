@@ -205,6 +205,7 @@
  - 添加了`钢`处理
  - 添加了`坩埚`的Ponder
  - 矿点添加了纸箱黑名单Tag
+ - 添加了三种外星金属的熔融形式
  - 添加了`Extreme Sound Muffler` Mod
  - 添加了`My Nether's Delight` Mod
  - 添加了相当恐怖的木屑处理燃料线

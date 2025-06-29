@@ -54,6 +54,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("uranium", "铀")
 	addMaterialLanguage("siltsteel", "泓钢")
 	addMaterialLanguage("cast_iron", "铸铁")
+	addMaterialLanguage("desh", "戴斯")
+	addMaterialLanguage("ostrum", "紫金")
+	addMaterialLanguage("calorite", "耐热金属")
 
 	addMachineLanguage("water_pump", "水泵")
 	addMachineLanguage("flash_disk_writer", "闪存盘写入器")

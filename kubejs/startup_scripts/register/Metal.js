@@ -4,7 +4,8 @@ let materials = []
  * 函数封装
  * @param {string} name 注册ID
  * @param {Internal.ItemTintFunction_ || Internal.BlockTintFunction_ || Color_} color 颜色
- * @param {ResourceLocation_} level 挖掘等级
+ * @param {MiningLevel} level 挖掘等级
+ * @type {RegisterMetalMaterial}
  * @returns 金属材料注册
  */
 function addMaterial(name, color, level) {
@@ -160,4 +161,16 @@ addMaterial("cast_iron", 0x4D4D4D, "iron")
 	.dust()
 	.nugget()
 	.block()
+	.molten()
+
+// 戴斯
+addMaterial("desh", 0xD38B4C, "wooden")
+	.molten()
+
+// 紫金
+addMaterial("ostrum", 0xA66B72, "wooden")
+	.molten()
+
+// 耐热金属
+addMaterial("calorite", 0xC94D4E, "wood")
 	.molten()

@@ -19,10 +19,11 @@ ServerEvents.recipes((event) => {
 			console.warn(`No molten metal found for ${metal}!`)
 			return
 		}
+		const TEMPERATURE = 1000
 
 		tconstruct.melting(Fluid.of(fluid, 90))
 			.ingredient(`#forge:ingots/${metal}`)
-			.temperature(800)
+			.temperature(TEMPERATURE)
 			.time(60)
 		tconstruct.casting_table(`#forge:ingots/${metal}`)
 			.cast("#tconstruct:casts/multi_use/ingot")
@@ -37,7 +38,7 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:nuggets/${metal}`).itemIds.length === 0)) {
 			tconstruct.melting(Fluid.of(fluid, 10))
 				.ingredient(`#forge:nuggets/${metal}`)
-				.temperature(800)
+				.temperature(TEMPERATURE)
 				.time(20)
 			tconstruct.casting_table(`#forge:nuggets/${metal}`)
 				.cast("#tconstruct:casts/multi_use/nugget")
@@ -55,7 +56,7 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:storage_blocks/${metal}`).itemIds.length === 0)) {
 			tconstruct.melting(Fluid.of(fluid, 810))
 				.ingredient(`#forge:storage_blocks/${metal}`)
-				.temperature(800)
+				.temperature(TEMPERATURE)
 				.time(180)
 			tconstruct.casting_basin(`#forge:storage_blocks/${metal}`)
 				.fluid(Fluid.of(fluid, 810))
@@ -67,7 +68,7 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:plates/${metal}`).itemIds.length === 0)) {
 			tconstruct.melting(Fluid.of(fluid, 90))
 				.ingredient(`#forge:plates/${metal}`)
-				.temperature(800)
+				.temperature(TEMPERATURE)
 				.time(60)
 			tconstruct.casting_table(`#forge:plates/${metal}`)
 				.cast("#tconstruct:casts/multi_use/plate")
@@ -85,7 +86,7 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:dusts/${metal}`).itemIds.length === 0)) {
 			tconstruct.melting(Fluid.of(fluid, 90))
 				.ingredient(`#forge:dusts/${metal}`)
-				.temperature(800)
+				.temperature(TEMPERATURE)
 				.time(60)
 		} else {
 			console.warn(`No dust found for ${metal}!`)
@@ -94,7 +95,7 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:rods/${metal}`).itemIds.length === 0)) {
 			tconstruct.melting(Fluid.of(fluid, 45))
 				.ingredient(`#forge:rods/${metal}`)
-				.temperature(800)
+				.temperature(TEMPERATURE)
 				.time(30)
 			tconstruct.casting_table(`#forge:rods/${metal}`)
 				.cast("#tconstruct:casts/multi_use/rod")
@@ -112,7 +113,7 @@ ServerEvents.recipes((event) => {
 		if (!(Ingredient.of(`#forge:gears/${metal}`).itemIds.length === 0)) {
 			tconstruct.melting(Fluid.of(fluid, 360))
 				.ingredient(`#forge:gears/${metal}`)
-				.temperature(800)
+				.temperature(TEMPERATURE)
 				.time(150)
 			tconstruct.casting_table(`#forge:gears/${metal}`)
 				.cast("#tconstruct:casts/multi_use/gear")
@@ -242,9 +243,9 @@ ServerEvents.recipes((event) => {
 			}
 			minecraft.smelting(`#forge:ingots/${metal}`, `#forge:raw_materials/${metal}`)
 			minecraft.blasting(`#forge:ingots/${metal}`, `#forge:raw_materials/${metal}`)
-			thermal.smelter(
-				Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(1.5)
-				, `#forge:raw_materials/${metal}`)
+			thermal.smelter(Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(1.5), [
+				`#forge:raw_materials/${metal}`
+			])
 			immersiveengineering.arc_furnace(`#forge:ingots/${metal}`)
 				.secondaries(Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(0.5))
 				.input(`#forge:raw_materials/${metal}`)
@@ -269,16 +270,16 @@ ServerEvents.recipes((event) => {
 			if (!(Ingredient.of(`#forge:storage_blocks/raw_${metal}`).itemIds.length === 0)) {
 				create.crushing([
 					`9x #create:crushed_raw_materials/${metal}`,
-					Item.of("9x create:experience_nugget").withChance(0.75)],
-					`#forge:storage_blocks/raw_${metal}`)
+					Item.of("9x create:experience_nugget").withChance(0.75)
+				], `#forge:storage_blocks/raw_${metal}`)
 			} else {
 				console.warn(`No storage block found for raw ${metal}!`)
 			}
 			if (!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
 				create.crushing([
 					`#create:crushed_raw_materials/${metal}`,
-					Item.of("create:experience_nugget").withChance(0.75)],
-					`#forge:raw_materials/${metal}`)
+					Item.of("create:experience_nugget").withChance(0.75)
+				], `#forge:raw_materials/${metal}`)
 			} else {
 				console.warn(`No raw material found for ${metal}!`)
 			}
@@ -288,8 +289,8 @@ ServerEvents.recipes((event) => {
 					Item.of(Ingredient.of(`#create:crushed_raw_materials/${metal}`).itemIds[0])
 						.withChance(0.75),
 					Item.of("create:experience_nugget").withChance(0.75),
-					Item.of("minecraft:cobblestone").withChance(0.125)],
-					`#forge:ores/${metal}`)
+					Item.of("minecraft:cobblestone").withChance(0.125)
+				], `#forge:ores/${metal}`)
 			} else {
 				console.warn(`No ore found for ${metal}!`)
 			}
@@ -313,8 +314,7 @@ ServerEvents.recipes((event) => {
 				.additives([])
 			mekanism.crushing(`#forge:dusts/${metal}`, `#forge:ingots/${metal}`)
 			if (!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
-				thermal.pulverizer(
-					Item.of(Ingredient.of(`#forge:dusts/${metal}`).itemIds[0]).withChance(1.25)
+				thermal.pulverizer(Item.of(Ingredient.of(`#forge:dusts/${metal}`).itemIds[0]).withChance(1.25)
 					, `#forge:raw_materials/${metal}`
 				)
 				immersiveengineering.crusher(`#forge:dusts/${metal}`, `#forge:raw_materials/${metal}`)
