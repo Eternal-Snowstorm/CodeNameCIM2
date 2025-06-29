@@ -235,30 +235,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["0950E73B864090F0"]
-			id: "45A06F9E9EF93882"
-			rewards: [{
-				id: "74E9B5D3AAF2CB6F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2F6D33C8A8714E58"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:stone"
-					}
-				}
-				title: "Any #forge:stone"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["005CD7BF1218DD20"]
 			id: "3DB805F9D13B67E8"
 			tasks: [{
 				id: "11980AAF376761D6"
@@ -934,6 +910,29 @@
 			}]
 			x: -1.5d
 			y: 39.5d
+		}
+		{
+			dependencies: ["0950E73B864090F0"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "305AFBFBD09A7132"
+			rewards: [{
+				id: "080F76BB4BF4143B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4ECDC2AC1D651E6F"
+				title: "斧子"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 3.0d
 		}
 	]
 	title: "Start"

@@ -72,7 +72,7 @@ StartupEvents.registry("item", (event) => {
 })
 StartupEvents.registry("block", (event) => {
 	materials.forEach((material) => {
-		material.types.forEach((type) => {
+		material.types.forEach((type) => { 
 			if (type === "block") {
 				event.create(`${global.namespace}:${material.name}_block`)
 					.textureAll(`${global.namespace}:block/material/color/storage_blocks`)

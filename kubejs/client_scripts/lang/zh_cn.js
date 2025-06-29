@@ -58,9 +58,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("ostrum", "紫金")
 	addMaterialLanguage("calorite", "耐热金属")
 
-	addMachineLanguage("water_pump", "水泵")
+	// addMachineLanguage("water_pump", "水泵")
 	addMachineLanguage("flash_disk_writer", "闪存盘写入器")
 	addMachineLanguage("chemical_gas_extractor", "化学气体抽取器")
+	addMachineLanguage("simple_centrifuge", "丐版离心机")
 
 	addMBDMachineLanguage("proxy_part_block", "多方块机器部件方块")
 	addMBDMachineLanguage("accelerator_energy_input", "大型构件催生器能量输入口")

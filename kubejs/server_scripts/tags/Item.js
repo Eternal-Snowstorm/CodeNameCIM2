@@ -119,6 +119,9 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:chests")
 		.add("ae2:smooth_sky_stone_chest")
 
+	event.get("forge:sand")
+		.add("#minecraft:sand")
+
 	event.get("minecraft:sand")
 		.add("#forge:sand")
 
