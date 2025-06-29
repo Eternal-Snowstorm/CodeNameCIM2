@@ -59,6 +59,7 @@ ESM
 
 # Config
 /config/*
+!/config/openloader
 !/config/almostunified/
 !/config/drippyloadingscreen/
 !/config/fancymenu/
