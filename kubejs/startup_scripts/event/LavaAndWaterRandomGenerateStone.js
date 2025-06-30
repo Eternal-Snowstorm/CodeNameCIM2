@@ -11,10 +11,10 @@ let replaceBlocks = [
 	"minecraft:granite",
 	"minecraft:diorite",
 	"minecraft:andesite",
-	"minecraft:stone",
-	"minecraft:deepslate"
+	"minecraft:cobblestone",
+	"minecraft:cobbled_deepslate"
 ]
-RegisterNativeEvents($BlockEvent$FluidPlaceBlockEvent, (event) => {
+RegisterNativeEvents.onJavaClassEvent($BlockEvent$FluidPlaceBlockEvent, (event) => {
 	let block = event.getNewState().getBlock()
 
 	if (block.id === "minecraft:cobblestone") {
@@ -30,7 +30,7 @@ RegisterNativeEvents($BlockEvent$FluidPlaceBlockEvent, (event) => {
 	}
 })
 
-RegisterNativeEvents($PipeCollisionEvent$Spill, (event) => {
+RegisterNativeEvents.onJavaClassEvent($PipeCollisionEvent$Spill, (event) => {
 	let block = event.getState().block
 
 	if (block.id === "minecraft:stone") {
