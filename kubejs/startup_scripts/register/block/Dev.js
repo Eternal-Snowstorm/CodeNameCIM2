@@ -7,5 +7,5 @@ StartupEvents.registry("block", (event) => {
 		.requiresTool(true)
 		.model(`${global.namespace}:block/skinmodel`)
 		.textureAll(`${global.namespace}:block/dev/unknown_entity_`)
-			.notSolid()
+		.notSolid()
 })

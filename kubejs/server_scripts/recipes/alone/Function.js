@@ -8,7 +8,6 @@ function aeCharger(output, input) {
 		}
 	}
 }
-
 function addSmeltingRecipe(event, output, input) {
 	event.recipes.minecraft.blasting(output, input)
 		.cookingTime(100)
