@@ -225,7 +225,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:smart_mechanism", [
 		"#forge:plates/silver"
 	], [
-		create.pressing(ismm, ismm),
+		create.cutting(ismm, ismm),
 		create.deploying(ismm, [ismm, "ae2:logic_processor"]),
 		create.deploying(ismm, [ismm, "ae2:calculation_processor"]),
 		create.deploying(ismm, [ismm, "ae2:engineering_processor"]),

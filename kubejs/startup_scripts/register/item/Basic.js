@@ -91,4 +91,11 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:andesite_aggregate`)
 		.texture(`${global.namespace}:item/material/andesite/aggregate`)
 		.tag("forge:bricks")
+
+	//硅处理
+	event.create(`${global.namespace}:small_coal_coke`)
+		.texture(`${global.namespace}:item/material/andesite/small_coal_coke`)
+
+	event.create(`${global.namespace}:silicon_mixure`)
+		.texture(`${global.namespace}:item/material/andesite/silicon_mixure`)
 })

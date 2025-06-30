@@ -330,4 +330,11 @@ ServerEvents.recipes((event) => {
 		type: "thermal:smelter",
 		input: "#forge:dusts",
 	})
+
+	event.remove({
+		id:"ae2:blasting/silicon_from_certus_quartz_dust"
+	})
+	event.remove({
+		id:"ae2:smelting/silicon_from_certus_quartz_dust"
+	})
 })

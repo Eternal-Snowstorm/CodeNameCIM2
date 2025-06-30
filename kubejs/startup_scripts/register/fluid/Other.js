@@ -35,4 +35,5 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("blood")
 	addAloneFluid("delta_unstable_solution")
 	addAloneFluid("turbid_waste_liquid")
+	addAloneFluid("pure_sand")
 })
