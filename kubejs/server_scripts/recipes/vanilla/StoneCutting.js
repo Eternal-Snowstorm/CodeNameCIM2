@@ -31,9 +31,6 @@ ServerEvents.recipes((event) => {
 	minecraft.stonecutting("immersiveengineering:sheetmetal_electrum", "#forge:plates/electrum")
 	minecraft.stonecutting("#forge:plates/electrum", "immersiveengineering:sheetmetal_electrum")
 
-	minecraft.stonecutting("immersiveengineering:sheetmetal_steel", "#forge:plates/steel")
-	minecraft.stonecutting("#forge:plates/steel", "immersiveengineering:sheetmetal_steel")
-
 	minecraft.stonecutting("immersiveengineering:sheetmetal_gold", "#forge:plates/gold")
 	minecraft.stonecutting("#forge:plates/gold", "immersiveengineering:sheetmetal_gold")
 })
