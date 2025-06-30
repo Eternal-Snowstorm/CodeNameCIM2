@@ -1,7 +1,8 @@
-// This script can be hot reloaded with "kjs reload starup_scripts"
-// 这个脚本可以用"kjs reload starup_scripts"进行热重载
+
 /*
 IEEvents.multiblockForm((event) => {
+// This script can be hot reloaded with "kjs reload starup_scripts"
+// 这个脚本可以用"kjs reload starup_scripts"进行热重载
 	let { player, multiblock } = event
 
 	let alloySmelter = "immersiveengineering:multiblocks/alloy_smelter"

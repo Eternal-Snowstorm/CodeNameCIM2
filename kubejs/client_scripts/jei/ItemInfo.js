@@ -4,6 +4,7 @@ JEIEvents.information((event) => {
 		event.addItem(name, Component.translate(itemInfoTranslateKey))
 	}
 
+	addJEIInfo("minecraft:andesite")
 	addJEIInfo("cookingforblockheads:sink")
 	addJEIInfo("ad_astra:cryo_fuel_bucket")
 	addJEIInfo("ad_astra:ice_shard")
