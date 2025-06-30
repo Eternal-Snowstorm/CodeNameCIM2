@@ -37,44 +37,9 @@ interface Material {
 	molten(): this;
 }
 
-// 注册事件接口
-interface RegistryEvent {
-	create(id: string): ItemBuilder;
-}
-
-interface ItemBuilder {
-	texture(texture: string): ItemBuilder;
-	color(index: number, color: Color): ItemBuilder;
-	tag(...tags: string[]): ItemBuilder;
-}
-
-interface BlockBuilder extends ItemBuilder {
-	textureAll(texture: string): BlockBuilder;
-	soundType(soundType: SoundType): BlockBuilder;
-	hardness(value: number): BlockBuilder;
-	resistance(value: number): BlockBuilder;
-	item(callback: (item: ItemBuilder) => void): BlockBuilder;
-	tagBlock(tag: Tag): BlockBuilder;
-}
-
-interface FluidBuilder {
-	thinTexture(color: Color): FluidBuilder;
-	bucketColor(color: Color): FluidBuilder;
-	flowingTexture(texture: string): FluidBuilder;
-	stillTexture(texture: string): FluidBuilder;
-	tag(...tags: string[]): FluidBuilder;
-}
-
 // 文件操作接口
 interface JsonIO {
 	write(filePath: string, data: object): void;
-}
-
-// 事件系统声明
-declare const StartupEvents: {
-	registry(type: "item", handler: (event: RegistryEvent) => void): void;
-	registry(type: "block", handler: (event: RegistryEvent) => void): void;
-	registry(type: "fluid", handler: (event: RegistryEvent) => void): void;
 }
 
 declare const JsonIO: JsonIO
