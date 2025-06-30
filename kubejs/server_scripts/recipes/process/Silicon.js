@@ -4,13 +4,12 @@ ServerEvents.recipes((event) => {
 	create.mixing("cmi:silicon_mixure", [
 		"cmi:small_coal_coke",
 		Fluid.of("cmi:pure_sand", 100)
-	]).heatLevel("superheated")
+	]).superheated()
 
-    //bug lives here!
-	create.emptying("cmi:andesite_dust",
-		Fluid.of("cmi:pure_sand", 100) [
-		"minecraft:sand"
-	])
+	create.emptying([
+		"cmi:andesite_dust",
+		Fluid.of("cmi:pure_sand", 100)
+	], "#forge:sand")
 
 	vintageimprovements.laser_cutting("ae2:silicon", [
 		"cmi:silicon_mixure"
@@ -19,5 +18,4 @@ ServerEvents.recipes((event) => {
 	create.cutting("8x cmi:small_coal_coke", [
 		"#forge:coal_coke"
 	])
-
 })

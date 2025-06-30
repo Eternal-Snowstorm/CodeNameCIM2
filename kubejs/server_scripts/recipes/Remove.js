@@ -15,6 +15,8 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:crafting/treated_wood_horizontal",
 		"create:milling/compat/ae2/sky_stone_block",
 		"ae2:blasting/sky_stone_block",
+		"ae2:blasting/silicon_from_certus_quartz_dust",
+		"ae2:smelting/silicon_from_certus_quartz_dust",
 		"create:sequenced_assembly/precision_mechanism",
 		"immersiveengineering:crafting/gunpowder_from_dusts",
 		"thermal:gunpowder_4",
@@ -329,12 +331,5 @@ ServerEvents.recipes((event) => {
 	event.remove({
 		type: "thermal:smelter",
 		input: "#forge:dusts",
-	})
-
-	event.remove({
-		id:"ae2:blasting/silicon_from_certus_quartz_dust"
-	})
-	event.remove({
-		id:"ae2:smelting/silicon_from_certus_quartz_dust"
 	})
 })
