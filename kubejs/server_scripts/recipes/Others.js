@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
 		"BBB",
 		"  B"
 	], {
-		A: "iron_mechanism",
+		A: "cmi:iron_mechanism",
 		B: "#forge:plates/iron"
 	}).id("supplementaries:faucet")
 })

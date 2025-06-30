@@ -20,4 +20,20 @@ ServerEvents.recipes((event) => {
 		"minecraft:andesite",
 		"#forge:nuggets/zinc"
 	]).heatLevel("grilled")
+
+
+
+	//殷钢
+	create.mixing(Fluid.of("tconstruct:molten_invar", 270), [
+		"2x #forge:ingots/iron",
+		"#forge:ingots/nickel"
+	]).heatLevel("heated")
+
+	//末影
+	create.mixing(Fluid.of("thermal:ender", 1000), [
+		Fluid.of("thermal:ender", 250),
+		'minecraft:chorus_fruit'
+	]).heatLevel("heated")
+
+
 })

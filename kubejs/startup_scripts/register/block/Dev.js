@@ -1,7 +1,7 @@
 StartupEvents.registry("block", (event) => {
 
 	//UE
-	event.create(`${global.namespace}:unknown_entity_block`)
+	event.create(`${global.namespace}:unknown_entity_`)
 		.soundType(SoundType.METAL)
 		.hardness(0)
 		.resistance(1)
