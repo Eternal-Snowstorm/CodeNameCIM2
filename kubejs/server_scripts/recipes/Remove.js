@@ -21,7 +21,8 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:crafting/gunpowder_from_dusts",
 		"thermal:gunpowder_4",
 		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals",
-		"minecraft:stick_from_bamboo_item"
+		"minecraft:stick_from_bamboo_item",
+		"immersiveengineering:crafting/coal_coke_to_coke"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
