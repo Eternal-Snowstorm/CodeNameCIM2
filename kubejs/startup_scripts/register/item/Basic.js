@@ -94,8 +94,9 @@ StartupEvents.registry("item", (event) => {
 
 	//硅处理
 	event.create(`${global.namespace}:small_coal_coke`)
+		.burnTime(400)
 		.texture(`${global.namespace}:item/material/small_coal_coke`)
 
 	event.create(`${global.namespace}:silicon_mixure`)
-		.texture(`${global.namespace}:item/material/silicon_mixure`)
+		.texture(`${global.namespace}:item/material/silicon/silicon_mixure`)
 })
