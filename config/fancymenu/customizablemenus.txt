@@ -9,9 +9,6 @@ net.minecraft.client.gui.screens.ChatScreen {
 net.minecraft.client.gui.screens.TitleScreen {
 }
 
-net.minecraft.client.gui.screens.DeathScreen {
-}
-
 net.minecraft.client.gui.screens.DeathScreen$TitleConfirmScreen {
 }
 
