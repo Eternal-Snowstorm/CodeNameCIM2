@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 	]).superheated()
 
 	create.emptying([
-		"cmi:andesite_dust",
+		Item.of("cmi:andesite_dust").withChance(0.05),
 		Fluid.of("cmi:pure_sand", 100)
 	], "#forge:sand")
 

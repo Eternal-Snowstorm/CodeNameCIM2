@@ -33,6 +33,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addCastItemLanguage("mechanism", "构件")
 
+	addFluidLanguage("blood", "血液")
+	addFluidLanguage("pure_sand", "纯净沙")
 	addFluidLanguage("molten_source_sapphire", "熔融蓝源晶")
 	addFluidLanguage("eletriced_source_emeraid", "电解源质")
 	addFluidLanguage("delta_unstable_solution", "Δ(Delta)型不稳定源质溶液")
@@ -128,8 +130,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addOreNodeLanguaue("cheese", "奶酪")
 	addOreNodeLanguaue("coal", "煤炭")
 	addOreNodeLanguaue("tin", "锡")
-
-	addFluidLanguage("blood", "血液")
 
 	addBlockLanguage("the_accelerator_of_mechanism_power", "构件之力催生器")
 	addBlockLanguage("osmium_tile", "锇砖瓦")
