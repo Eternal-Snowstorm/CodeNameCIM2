@@ -30,8 +30,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("creosote_wood_chip_briquette", "浸油致密压缩木屑块")
 	addItemLanguage("andesite_dust", "安山岩粉")
 	addItemLanguage("andesite_aggregate", "安山混合物")
-	addItemLanguage("small_coal_coke", "小块焦煤")
-	addItemLanguage("silicon_mixure", "硅混合物")
 
 	addCastItemLanguage("mechanism", "构件")
 

@@ -62,6 +62,12 @@ ServerEvents.recipes((event) => {
 		recipeId: function (recipename) {
 			event.custom(this.recipe)
 				.id(recipename)
+		},
+		// 替换配方
+		replaceRecipe: function (recipeid) {
+			event.remove({ id: recipeid })
+			let recipename = recipeid.split(":").pop()
+			this.build(recipename)
 		}
 	}
 
