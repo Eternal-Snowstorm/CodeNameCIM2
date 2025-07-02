@@ -30,6 +30,6 @@ ServerEvents.recipes((event) => {
 	//末影
 	create.mixing(Fluid.of("thermal:ender", 1000), [
 		Fluid.of("thermal:ender", 250),
-		'minecraft:chorus_fruit'
+		"minecraft:chorus_fruit"
 	]).heated()
 })

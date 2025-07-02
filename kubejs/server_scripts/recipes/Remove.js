@@ -27,7 +27,8 @@ ServerEvents.recipes((event) => {
 		"thermal:devices/tree_extractor/tree_extractor_jungle",
 		"thermal:machines/press/press_vine_to_latex",
 		"thermal:machines/press/press_dandelion_to_latex",
-		"immersiveengineering:blastfurnace/steel_block"
+		"immersiveengineering:blastfurnace/steel_block",
+		"mekanism:control_circuit/basic"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -133,10 +134,7 @@ ServerEvents.recipes((event) => {
 		})
 		event.remove({
 			id: `create:crushing/netherrack`
-		}) 
-		event.remove({
-            id: `mekanism:control_circuit/basic`
-        })
+		})
 	})
 
 	let removeItemInputRecipes = [
