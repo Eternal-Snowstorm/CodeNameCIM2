@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, mekanism, thermal } = event.recipes
+	let { create, mekanism, thermal, immersiveengineering } = event.recipes
 
 	create.crushing([
 		Item.of("4x cmi:end_stone_dust"),
@@ -31,24 +31,10 @@ ServerEvents.recipes((event) => {
 		"#forge:end_stones"
 	])
 
-	event.custom({
-		"type": "immersiveengineering:crusher",
-		"energy": 1600,
-		"input": {
-			"tag": "forge:end_stones"
-		},
-		"result": {
-			"count": 6,
-			"item": "cmi:end_stone_dust"
-		},
-		"secondaries": [
-			{
-				"chance": 0.5,
-				"output": {
-					"count": 3,
-					"item": "cmi:end_stone_dust"
-				}
-			}
-		]
-	})
+	immersiveengineering.crusher("6x cmi:end_stone_dust")
+		.input("#forge:end_stones")
+		.secondaries([
+			Item.of("cmi:end_stone_dust", 3).withChance(0.5)
+		])
+		.energy(1600)
 })

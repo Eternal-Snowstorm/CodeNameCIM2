@@ -10,16 +10,17 @@ let replaceBlocks = [
 	"minecraft:dripstone_block",
 	"minecraft:granite",
 	"minecraft:diorite",
-	"minecraft:andesite",
 	"minecraft:cobblestone",
 	"minecraft:cobbled_deepslate"
 ]
+// 概率
+const CHANCE = 0.25
 RegisterNativeEvents.onJavaClassEvent($BlockEvent$FluidPlaceBlockEvent, (event) => {
 	let block = event.getNewState().getBlock()
 
 	if (block.id === "minecraft:cobblestone") {
 		// 50%概率生成安山岩
-		if (Math.random() < 0.5) {
+		if (Math.random() < CHANCE) {
 			event.setNewState(Block.getBlock("minecraft:andesite").defaultBlockState())
 		} else {
 			// 剩余50%概率随机选择列表中的方块
@@ -35,7 +36,7 @@ RegisterNativeEvents.onJavaClassEvent($PipeCollisionEvent$Spill, (event) => {
 
 	if (block.id === "minecraft:stone") {
 		// 50%概率生成安山岩
-		if (Math.random() < 0.5) {
+		if (Math.random() < CHANCE) {
 			event.setState(Block.getBlock("minecraft:andesite").defaultBlockState())
 		} else {
 			// 剩余50%概率随机选择列表中的方块

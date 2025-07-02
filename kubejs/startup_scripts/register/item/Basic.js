@@ -1,5 +1,6 @@
 StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:single_crystal_silicon`)
+		.texture(`${global.namespace}:item/material/single_crystal_silicon`)
 	event.create(`${global.namespace}:computer_component`)
 
 	event.create(`${global.namespace}:blockstone_source_alpha`)
@@ -18,6 +19,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 黏血球
 	event.create(`${global.namespace}:blood_slime_ball`)
+		.texture(`${global.namespace}:item/material/blood_slime_ball`)
 		.tag("forge:slimeball")
 		.tag("forge:slimeball/blood")
 
@@ -99,4 +101,9 @@ StartupEvents.registry("item", (event) => {
 
 	event.create(`${global.namespace}:silicon_mixure`)
 		.texture(`${global.namespace}:item/material/silicon/silicon_mixure`)
+
+	// 橡胶板
+	event.create(`${global.namespace}:rubber_plate`)
+		.tag("forge:plates")
+		.tag("forge:plates/rubber")
 })

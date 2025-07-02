@@ -6,7 +6,7 @@
 				{
 					"type": "minecraft:item",
 					"weight": 2,
-					"name": "immersiveengineering:deepslate_ore_uranium",
+					"name": "immersiveengineering:dust_uranium",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

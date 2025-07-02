@@ -30,6 +30,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("creosote_wood_chip_briquette", "浸油致密压缩木屑块")
 	addItemLanguage("andesite_dust", "安山岩粉")
 	addItemLanguage("andesite_aggregate", "安山混合物")
+	addItemLanguage("small_coal_coke", "小块焦炭")
+	addItemLanguage("silicon_mixure", "硅混合物")
+	addItemLanguage("rubber_plate", "橡胶板")
 
 	addCastItemLanguage("mechanism", "构件")
 
@@ -40,6 +43,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("delta_unstable_solution", "Δ(Delta)型不稳定源质溶液")
 	addFluidLanguage("turbid_waste_liquid", "浑浊废液")
 	addFluidLanguage("platinum_solution", "铂溶液")
+	addFluidLanguage("cured_rubber", "熔融硫化橡胶")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
@@ -196,7 +200,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("#minecraft:pickaxes", "右键可破坏矿物节点")
 	addCommonTooltipLanguage("cmi:potion_mechanism", "右键获取大多数正面buff")
 
-	addJEIInfoLanguage("minecraft:andesite", "在本包, 安山岩生产主要方式有4种\n一种是通过造石机\n一种是通过安山岩磨成粉后加工的增值线\n一种是刷石机, 有50%的概率刷出安山岩\n最后一种是通过构件催生器")
+	addJEIInfoLanguage("minecraft:andesite", "在本包, 安山岩生产主要方式有4种\n一种是通过造石机\n一种是通过安山岩磨成粉后加工的增值线\n一种是刷石机, 有25%的概率刷出安山岩\n最后一种是通过构件催生器")
 	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产才能确保需求量自由")
 	addJEIInfoLanguage("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
 	addJEIInfoLanguage("cmi:bucket", "似是一种巨大的力量塑造的诡异造物\n它有着令人倍感亲切的形状, 却处于一种令人不寒而栗的陌生角度\n这巨大的力量, 炽热, 强大又致命\n善良者受其腐化\n卑鄙者因其强大\n收容之器受其影响, 转为包覆之具, 幸于并无灵魂, 于我没有危害")

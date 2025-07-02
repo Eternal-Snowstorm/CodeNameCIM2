@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "cmi:item/material/rubber/rubber_plate_3"
+	}
+}

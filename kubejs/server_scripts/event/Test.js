@@ -34,8 +34,6 @@ BlockEvents.rightClicked((event) => {
 
 		if (MATCH !== null) {
 			player.tell(Component.literal("哇袄!!!"))
-		} else {
-			player.tell(Component.literal("!!!袄哇"))
 		}
 	}
 })

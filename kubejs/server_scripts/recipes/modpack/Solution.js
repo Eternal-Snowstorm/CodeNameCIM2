@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { create, tconstruct } = event.recipes
 
-	let solutionRecipes = [
+	let solutionGroup = [
 		"fecl2",
 		"feso4",
 		"cucl2",
@@ -39,13 +39,21 @@ ServerEvents.recipes((event) => {
 		"k2so4",
 		"kcl"
 	]
-	solutionRecipes.forEach((name) => {
+	solutionGroup.forEach((name) => {
 		create.mixing(Fluid.of(`cmi:${name}_solution`, 500), [
 			`${global.namespace}:${name}`,
 			Fluid.of("minecraft:water", 500)
 		])
 
 		tconstruct.casting_table(`${global.namespace}:${name}`)
+			.cast("#tconstruct:casts/multi_use/gem")
+			.cast_consumed(false)
+			.fluid(Fluid.of(`cmi:${name}_solution`, 500))
+			.cooling_time(20)
+
+		tconstruct.casting_table(`${global.namespace}:${name}`)
+			.cast("#tconstruct:casts/single_use/gem")
+			.cast_consumed(true)
 			.fluid(Fluid.of(`cmi:${name}_solution`, 500))
 			.cooling_time(20)
 	})

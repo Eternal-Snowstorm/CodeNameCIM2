@@ -21,57 +21,17 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:crafting/gunpowder_from_dusts",
 		"thermal:gunpowder_4",
 		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals",
-		"minecraft:stick_from_bamboo_item"
+		"minecraft:stick_from_bamboo_item",
+		"immersiveengineering:crafting/coal_coke_to_coke",
+		"thermal:devices/tree_extractor/tree_extractor_rubberwood",
+		"thermal:devices/tree_extractor/tree_extractor_jungle",
+		"thermal:machines/press/press_vine_to_latex",
+		"thermal:machines/press/press_dandelion_to_latex",
+		"immersiveengineering:blastfurnace/steel_block"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
 			id: id
-		})
-	})
-
-	let removeRecipeExtraIds = [
-		"copper",
-		"iron",
-		"gold",
-		"tin",
-		"lead",
-		"silver",
-		"nickel",
-		"aluminum",
-		"uranium",
-		"osmium",
-		"zinc"
-	]
-	removeRecipeExtraIds.forEach((id) => {
-		event.remove({
-			id: `thermal_extra:machine/nitratic_igniter/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:machine/crucible/raw_${id}_from_chunk`
-		})
-		event.remove({
-			id: `thermal_extra:machine/crucible/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:machine/endothermic_dehydrator/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:machine/chiller/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:compat/machine/chiller/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`
-		})
-		event.remove({
-			id: `immersiveengineering:blastfurnace/steel`
-		})
-		event.remove({
-			id: `immersiveengineering:arcfurnace/steel`
-		})
-		event.remove({
-			id: `create:crushing/netherrack`
 		})
 	})
 
@@ -127,6 +87,52 @@ ServerEvents.recipes((event) => {
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({
 			output: item
+		})
+	})
+
+	let removeRecipeExtraIds = [
+		"copper",
+		"iron",
+		"gold",
+		"tin",
+		"lead",
+		"silver",
+		"nickel",
+		"aluminum",
+		"uranium",
+		"osmium",
+		"zinc"
+	]
+	removeRecipeExtraIds.forEach((id) => {
+		event.remove({
+			id: `thermal_extra:machine/nitratic_igniter/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:machine/crucible/raw_${id}_from_chunk`
+		})
+		event.remove({
+			id: `thermal_extra:machine/crucible/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:machine/endothermic_dehydrator/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:machine/chiller/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:compat/machine/chiller/raw_${id}`
+		})
+		event.remove({
+			id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`
+		})
+		event.remove({
+			id: `immersiveengineering:blastfurnace/steel`
+		})
+		event.remove({
+			id: `immersiveengineering:arcfurnace/steel`
+		})
+		event.remove({
+			id: `create:crushing/netherrack`
 		})
 	})
 

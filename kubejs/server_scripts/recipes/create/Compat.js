@@ -62,10 +62,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("thermal:latex", 500)
 	])
 
-	create.compacting([
-		Fluid.of("thermal:latex", 40),
-		"2x createdieselgenerators:wood_chip"
-	], [
+	create.compacting("2x createdieselgenerators:wood_chip", [
 		"2x #minecraft:logs"
 	])
 })
