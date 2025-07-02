@@ -247,9 +247,9 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:advanced_mekanism_mechanism", [
 		"#forge:plates/stainless_steel"
 	], [
+		create.cutting(iamm, iamm),
 		create.pressing(iamm, iamm),
 		create.deploying(iamm, [iamm, "mekanism:advanced_control_circuit"]),
-		create.deploying(iamm, [iamm, "mekanism:alloy_infused"]),
 		create.deploying(iamm, [iamm, '#vintageimprovements:small_springs/osmium']),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(iamm).loops(1)
@@ -258,9 +258,9 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:elite_mekanism_mechanism", [
 		"#forge:plates/stainless_steel"
 	], [
+		create.cutting(iemm, iemm),
 		create.pressing(iemm, iemm),
 		create.deploying(iemm, [iemm, "mekanism:elite_control_circuit"]),
-		create.deploying(iemm, [iemm, "mekanism:alloy_reinforced"]),
 		create.deploying(iemm, [iemm, "#forge:plates/gold"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(iemm).loops(1)
@@ -269,10 +269,10 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:ultimate_mekanism_mechanism", [
 		"#forge:plates/stainless_steel"
 	], [
+		create.cutting(iumm, iumm),
 		create.pressing(iumm, iumm),
 		create.deploying(iumm, [iumm, "mekanism:ultimate_control_circuit"]),
-		create.deploying(iumm, [iumm, "mekanism:alloy_atomic"]),
-		create.deploying(iumm, [iumm, "ae2:engineering_processor"]),
+		create.deploying(iumm, [iumm, "minecraft:diamond"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(iumm).loops(1)
 
@@ -347,7 +347,7 @@ ServerEvents.recipes((event) => {
 		create.filling(ipim, [ipim, Fluid.of("tconstruct:molten_pig_iron", 90)]),
 		create.pressing(ipim, ipim),
 		create.deploying(ipim, [ipim, "#forge:nuggets/pig_iron"]),
-		create.deploying(ipim, [ipim, "cmi:basic_mechanism_part"])
+		create.deploying(ipim, [ipim, "cmi:magical_mechanism_part"])
 	]).transitionalItem(ipim).loops(1)
 
 	// 钴质

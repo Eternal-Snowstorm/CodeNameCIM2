@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, thermal_extra } = event.recipes
+	let { kubejs, thermal_extra, mekanism } = event.recipes
 
 	kubejs.shaped("mekanism:cardboard_box", [
 		"AAA",
@@ -36,4 +36,21 @@ ServerEvents.recipes((event) => {
 		input: "#forge:plates/hdpe",
 		output: "mekanism:solar_neutron_activator"
 	}, "#forge:plates/hdpe", "ad_astra:photovoltaic_etrium_cell")
+
+	event.custom(
+		{
+			"type": "mekanism:metallurgic_infusing",
+			"chemicalInput": {
+				"amount": 20, "tag": "mekanism:redstone"
+			},
+			"itemInput": {
+				"ingredient": { "tag": "forge:plates/polyolefin" }
+			},
+			"output": {
+				"item": "mekanism:basic_control_circuit"
+			}
+		}
+	)
+
+
 })
