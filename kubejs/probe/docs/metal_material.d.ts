@@ -12,7 +12,6 @@ type Tag = string;
 type ItemStack = any;
 type Fluid = string;
 type FluidTag = string;
-type Ingredient = any;
 type SoundType = string;
 
 // 材料类型定义
