@@ -133,7 +133,10 @@ ServerEvents.recipes((event) => {
 		})
 		event.remove({
 			id: `create:crushing/netherrack`
-		})
+		}) 
+		event.remove({
+            id: `mekanism:control_circuit/basic`
+        })
 	})
 
 	let removeItemInputRecipes = [
