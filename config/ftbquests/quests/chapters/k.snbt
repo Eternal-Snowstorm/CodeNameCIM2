@@ -218,77 +218,70 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["315BE76178E4D7F7"]
+			dependencies: ["5DACA4599CFCBB11"]
 			id: "41AAC35C55192CC1"
 			tasks: [{
 				id: "65375F6156A5EBFC"
 				item: "cmi:advanced_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 9.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["41AAC35C55192CC1"]
+			dependencies: ["44A58231092EABA1"]
 			id: "0B04AEDFB54ACD72"
 			tasks: [{
 				id: "0D3884BDC8C8940D"
 				item: "cmi:elite_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["0B04AEDFB54ACD72"]
+			dependencies: ["01DFFFFD4CD9DD74"]
 			id: "7F8CA0DAB7770DCA"
 			tasks: [{
 				id: "574961A59A899ED5"
 				item: "cmi:ultimate_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["315BE76178E4D7F7"]
+			dependencies: ["67FAE1DA4D9C2F87"]
 			id: "3CBE5B0B56CB75A4"
 			tasks: [{
 				id: "7DA1893078B8FCF9"
 				item: "cmi:structure_mechanism"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -3.0d
+			x: 15.5d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"3CBE5B0B56CB75A4"
-				"7F8CA0DAB7770DCA"
-				"67FAE1DA4D9C2F87"
-			]
+			dependencies: ["3CBE5B0B56CB75A4"]
 			id: "0C258EEC3A28101E"
 			tasks: [{
 				id: "637C87972E33585B"
 				item: "cmi:nuclear_mechanism"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -3.0d
+			x: 17.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"3CBE5B0B56CB75A4"
-				"0C258EEC3A28101E"
-			]
+			dependencies: ["0C258EEC3A28101E"]
 			id: "5379DA9E302283E7"
 			tasks: [{
 				id: "20A2AE527CB22C52"
 				item: "cmi:antimatter_mechanism"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -5.0d
+			x: 18.5d
+			y: -2.0d
 		}
 		{
 			id: "41D1483BFF793103"
@@ -361,7 +354,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["315BE76178E4D7F7"]
@@ -371,41 +364,51 @@
 				item: "cmi:tier_1_aviation_mechanism"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["5DACA4599CFCBB11"]
+			dependencies: ["41AAC35C55192CC1"]
 			id: "44A58231092EABA1"
 			tasks: [{
 				id: "2E5E1FE50C16F5A4"
 				item: "cmi:tier_2_aviation_mechanism"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["44A58231092EABA1"]
+			dependencies: ["0B04AEDFB54ACD72"]
 			id: "01DFFFFD4CD9DD74"
 			tasks: [{
 				id: "0B0C47ED9BD661BE"
 				item: "cmi:tier_3_aviation_mechanism"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 0.0d
+			x: 12.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["01DFFFFD4CD9DD74"]
+			dependencies: ["7F8CA0DAB7770DCA"]
 			id: "67FAE1DA4D9C2F87"
 			tasks: [{
 				id: "41B784A5762E1861"
 				item: "cmi:tier_4_aviation_mechanism"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.0d
+			x: 14.5d
+			y: -3.0d
+		}
+		{
+			id: "4B1899C4014F38E5"
+			tasks: [{
+				id: "4A84E3B0984A4514"
+				item: "cmi:potion_mechanism"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
 		}
 	]
 	title: "Tech Tree"
