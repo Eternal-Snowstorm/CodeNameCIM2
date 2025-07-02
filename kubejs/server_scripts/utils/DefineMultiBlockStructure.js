@@ -4,6 +4,7 @@ let $Character = Java.loadClass("java.lang.Character")
 
 /**
  * @param {string[][]} structure
+ * @type {DefineMultiBlockStructure}
  */
 function defineMultiBlockStructure(structure) {
 	/**

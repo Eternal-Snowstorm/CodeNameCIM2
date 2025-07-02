@@ -5,13 +5,6 @@ declare const global: {
 	miningLevel: Record<string, Tag>;
 }
 
-// 基础类型定义
-type Color = number;
-type ResourceLocation = string;
-type Tag = string;
-type ItemStack = any;
-type SoundType = string;
-
 // 材料类型定义
 type MaterialType = "ingot" | "plate" | "nugget" | "dust" | "rod" | "gear" | "block" | "molten";
 // 挖掘等级列表
