@@ -83,7 +83,10 @@ ServerEvents.recipes((event) => {
 		"thermal:device_collector",
 		"thermal:device_xp_condenser",
 		"thermal:device_nullifier",
-		"thermal:device_potion_diffuser"
+		"thermal:device_potion_diffuser",
+		"mekanism:advanced_control_circuit",
+		"mekanism:elite_control_circuit",
+		"mekanism:ultimate_control_circuit"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({
