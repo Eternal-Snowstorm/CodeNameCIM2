@@ -22,6 +22,9 @@ StartupEvents.registry("painting_variant", (event) => {
 	// RandomMechanism(随机构件)
 	addPainting("random_mechanism", 32, 32)
 
+	// 柒
+	addPainting("qi_month", 64, 64)
+
 	function addPainting(name, width, height) {
 		event.create(`${global.namespace}:${name}`)
 			.width(width)

@@ -28,17 +28,13 @@ ServerEvents.recipes((event) => {
 		"processingTime": 400
 	}).id("vintageimprovements:pressurizing/sulfur_dioxide")
 
-	// 植物胶乳
-	tconstruct.melting(Fluid.of("thermal:latex", 250))
-		.ingredient("#forge:plates/rubber")
-		.time(60)
-		.temperature(800)
-
+	// 硫化
 	vintageimprovements.pressurizing(Fluid.of("cmi:cured_rubber", 500), [
 		Fluid.of("mekanism:sulfur_dioxide", 250),
-		Fluid.of("thermal:latex", 250)
+		"#forge:plates/rubber"
 	]).heated()
 
+	// 冷却
 	tconstruct.casting_table("thermal:cured_rubber")
 		.fluid(Fluid.of("cmi:cured_rubber", 250))
 		.cooling_time(20)

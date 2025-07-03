@@ -1,13 +1,13 @@
 {
-  "backgroundImage": [
-    "cmi:textures/gui/jade/winxp.png",
-    4,
-    4,
-    4,
-    4,
-    64,
-    64,
-    0,
-    0
-  ]
+	"backgroundImage": [
+		"cmi:textures/gui/sprites/winxp.png",
+		4,
+		4,
+		4,
+		4,
+		64,
+		64,
+		0,
+		0
+	]
 }

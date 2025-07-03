@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No molten metal found for ${metal}!`)
 			return
 		}
-		const TEMPERATURE = 1000
+		const TEMPERATURE = 800
 
 		tconstruct.melting(Fluid.of(fluid, 90))
 			.ingredient(`#forge:ingots/${metal}`)

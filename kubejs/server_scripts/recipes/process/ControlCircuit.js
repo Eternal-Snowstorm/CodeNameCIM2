@@ -1,206 +1,54 @@
 ServerEvents.recipes((event) => {
-    let { vintageimprovements, create } = event.recipes
-//我还没写完！！！！！！！！！！！！！！！
+	let { create } = event.recipes
 
-//advanced
-    event.custom(
-        {
-            "type": "create:sequenced_assembly",
-            "ingredient": {
-                "item": "mekanism:alloy_infused"
-            },
-            "loops": 1,
-            "results": [
-                {
-                    "item": "mekanism:advanced_control_circuit"
-                }
-            ],
-            "sequence": [
-                {
-                    "type": "create:deploying",
-                    "ingredients": [
-                        {
-                            "item": "cmi:incomplete_advanced_control_circuit"
-                        },
-                        {
-                            "item": "mekanism:basic_control_circuit"
-                        }
-                    ],
-                    "results": [
-                        {
-                            "item": "cmi:incomplete_advanced_control_circuit"
-                        }
-                    ]
-                },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [
-                        {
-                            "item": "cmi:incomplete_advanced_control_circuit"
-                        },
-                        {
-                            "tag": "forge:plates/platinum"
-                        }
-                    ],
-                    "results": [
-                        {
-                            "item": "cmi:incomplete_advanced_control_circuit"
-                        }
-                    ]
-                },
-                {
-                    "type": "create:pressing", 
-                    "ingredients": [
-                        {
-                            "item": "cmi:incomplete_advanced_control_circuit"
-                        }
-                    ],
-                    "results": [
-                        {
-                            "item": "cmi:incomplete_advanced_control_circuit"
-                        }
-                    ]
+	// 高级
+	create.sequenced_assembly("mekanism:advanced_control_circuit", [
+		"mekanism:alloy_infused"
+	], [
+		create.deploying("cmi:incomplete_advanced_control_circuit", [
+			"cmi:incomplete_advanced_control_circuit",
+			"mekanism:basic_control_circuit"
+		]),
+		create.deploying("cmi:incomplete_advanced_control_circuit", [
+			"cmi:incomplete_advanced_control_circuit",
+			"#forge:plates/platinum"
+		]),
+		create.pressing("cmi:incomplete_advanced_control_circuit", [
+			"cmi:incomplete_advanced_control_circuit"
+		])
+	]).loops(1).transitionalItem("cmi:incomplete_advanced_control_circuit")
 
-                }
+	// 精英
+	create.sequenced_assembly("mekanism:elite_control_circuit", [
+		"mekanism:alloy_reinforced"
+	], [
+		create.deploying("cmi:incomplete_elite_control_circuit", [
+			"cmi:incomplete_elite_control_circuit",
+			"mekanism:advanced_control_circuit"
+		]),
+		create.deploying("cmi:incomplete_elite_control_circuit", [
+			"cmi:incomplete_elite_control_circuit",
+			"#forge:plates/ostrum"
+		]),
+		create.pressing("cmi:incomplete_elite_control_circuit", [
+			"cmi:incomplete_elite_control_circuit"
+		])
+	]).loops(1).transitionalItem("cmi:incomplete_elite_control_circuit")
 
-            ],
-            "transitionalItem": {
-                "item": "cmi:incomplete_advanced_control_circuit"
-            }
-        }
-    )
-    //elite
-        event.custom(
-        {
-            "type": "create:sequenced_assembly",
-            "ingredient": {
-                "item": "mekanism:alloy_reinforced"
-            },
-            "loops": 1,
-            "results": [
-                {
-                    "item": "mekanism:elite_control_circuit"
-                }
-            ],
-            "sequence": [
-                {
-                    "type": "create:deploying",
-                    "ingredients": [
-                        {
-                            "item": "cmi:incomplete_elite_control_circuit"
-                        },
-                        {
-                            "item": "mekanism:advanced_control_circuit"
-                        }
-                    ],
-                    "results": [
-                        {
-                            "item": "cmi:incomplete_elite_control_circuit"
-                        }
-                    ]
-                },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [
-                        {
-                            "item": "cmi:incomplete_elite_control_circuit"
-                        },
-                        {
-                            "tag": "forge:plates/ostrum"
-                        }
-                    ],
-                    "results": [
-                        {
-                            "item": "cmi:incomplete_elite_control_circuit"
-                        }
-                    ]
-                },
-                {
-                    "type": "create:pressing", 
-                    "ingredients": [
-                        {
-                            "item": "cmi:incomplete_elite_control_circuit"
-                        }
-                    ],
-                    "results": [
-                        {
-                            "item": "cmi:incomplete_elite_control_circuit"
-                        }
-                    ]
-
-                }
-
-            ],
-            "transitionalItem": {
-                "item": "cmi:incomplete_elite_control_circuit"
-            }
-        }
-    )
-//ultimate
-    event.custom(
-        {
-            "type": "create:sequenced_assembly",
-            "ingredient": {
-                "item": "mekanism:alloy_atomic"
-            },
-            "loops": 1,
-            "results": [
-                {
-                    "item": "mekanism:ultimate_control_circuit"
-                }
-            ],
-            "sequence": [
-                {
-                    "type": "create:deploying",
-                    "ingredients": [
-                        {
-                            "item": "cmi:incomplete_ultimate_control_circuit"
-                        },
-                        {
-                            "item": "mekanism:elite_control_circuit"
-                        }
-                    ],
-                    "results": [
-                        {
-                            "item": "cmi:incomplete_ultimate_control_circuit"
-                        }
-                    ]
-                },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [
-                        {
-                            "item": "cmi:incomplete_ultimate_control_circuit"
-                        },
-                        {
-                            "tag": "forge:plates/calorite"
-                        }
-                    ],
-                    "results": [
-                        {
-                            "item": "cmi:incomplete_ultimate_control_circuit"
-                        }
-                    ]
-                },
-                {
-                    "type": "create:pressing", 
-                    "ingredients": [
-                        {
-                            "item": "cmi:incomplete_ultimate_control_circuit"
-                        }
-                    ],
-                    "results": [
-                        {
-                            "item": "cmi:incomplete_ultimate_control_circuit"
-                        }
-                    ]
-
-                }
-
-            ],
-            "transitionalItem": {
-                "item": "cmi:incomplete_ultimate_control_circuit"
-            }
-        }
-    )
+	// 终极
+	create.sequenced_assembly("mekanism:ultimate_control_circuit", [
+		"mekanism:alloy_atomic"
+	], [
+		create.deploying("cmi:incomplete_ultimate_control_circuit", [
+			"cmi:incomplete_ultimate_control_circuit",
+			"mekanism:elite_control_circuit"
+		]),
+		create.deploying("cmi:incomplete_ultimate_control_circuit", [
+			"cmi:incomplete_ultimate_control_circuit",
+			"#forge:plates/calorite"
+		]),
+		create.pressing("cmi:incomplete_ultimate_control_circuit", [
+			"cmi:incomplete_ultimate_control_circuit"
+		])
+	]).loops(1).transitionalItem("cmi:incomplete_ultimate_control_circuit")
 })

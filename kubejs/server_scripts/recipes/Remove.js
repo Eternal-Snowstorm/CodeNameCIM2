@@ -23,10 +23,6 @@ ServerEvents.recipes((event) => {
 		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals",
 		"minecraft:stick_from_bamboo_item",
 		"immersiveengineering:crafting/coal_coke_to_coke",
-		"thermal:devices/tree_extractor/tree_extractor_rubberwood",
-		"thermal:devices/tree_extractor/tree_extractor_jungle",
-		"thermal:machines/press/press_vine_to_latex",
-		"thermal:machines/press/press_dandelion_to_latex",
 		"immersiveengineering:blastfurnace/steel_block",
 		"mekanism:control_circuit/basic"
 	]

@@ -1,13 +1,13 @@
 {
-  "backgroundImage": [
-    "cmi:textures/gui/jade/winaerolite.png",
-    4,
-    4,
-    4,
-    4,
-    64,
-    64,
-    0,
-    0
-  ]
+	"backgroundImage": [
+		"cmi:textures/gui/sprites/winaerolite.png",
+		4,
+		4,
+		4,
+		4,
+		64,
+		64,
+		0,
+		0
+	]
 }

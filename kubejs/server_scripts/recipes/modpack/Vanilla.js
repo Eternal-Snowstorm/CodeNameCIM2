@@ -101,5 +101,6 @@ ServerEvents.recipes((event) => {
 		.getItemIds()
 		.forEach((id) => {
 			minecraft.stonecutting(id, "cmi:gui_block")
+			minecraft.stonecutting(id, "#cmi:io_debug_block")
 		})
 })
