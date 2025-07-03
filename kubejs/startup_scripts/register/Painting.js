@@ -25,6 +25,9 @@ StartupEvents.registry("painting_variant", (event) => {
 	// 柒
 	addPainting("qi_month", 64, 64)
 
+	// ⑨Dropper_QWQ⑨
+	addPainting("sacabambaspis", 16, 16)
+
 	function addPainting(name, width, height) {
 		event.create(`${global.namespace}:${name}`)
 			.width(width)

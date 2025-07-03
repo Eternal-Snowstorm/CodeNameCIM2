@@ -154,6 +154,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("it_must_be_optifine", "一定是OptiFine干的", "XeKr")
 	addPaintingLanguage("random_mechanism", "随机构件", "随机构件")
 	addPaintingLanguage("qi_month", "榛名柒月", "榛名柒月")
+	addPaintingLanguage("sacabambaspis", "萨卡班甲鱼", "⑨Dropper_QWQ⑨")
 
 	addAloneLanguage(`jade.theme.${global.namespace}.stardew_valley`, "星露谷物语")
 	addAloneLanguage(`jade.theme.${global.namespace}.war_thunder`, "战争雷霆")
