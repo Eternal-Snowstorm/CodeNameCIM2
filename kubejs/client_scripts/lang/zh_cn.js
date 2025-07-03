@@ -156,6 +156,13 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addAloneLanguage(`jade.theme.${global.namespace}.stardew_valley`, "星露谷物语")
 	addAloneLanguage(`jade.theme.${global.namespace}.war_thunder`, "战争雷霆")
+	addAloneLanguage(`jade.theme.${global.namespace}.windows_aero_lite`, "Windows Aero Lite")
+	addAloneLanguage(`jade.theme.${global.namespace}.windows_aero`, "Windows Aero")
+	addAloneLanguage(`jade.theme.${global.namespace}.windows_basic`, "Windows Basic")
+	addAloneLanguage(`jade.theme.${global.namespace}.windows_classic`, "Windows Classic")
+	addAloneLanguage(`jade.theme.${global.namespace}.windows_plex`, "Windows Plex")
+	addAloneLanguage(`jade.theme.${global.namespace}.windows_xp_luna`, "Windows XP Luna")
+	addAloneLanguage(`jade.theme.${global.namespace}.windows10`, "Windows 10")
 	addAloneLanguage(`tooltip.${global.namespace}.41dirt`, "按下Alt+F4可以获得创造模式能量立方")
 	addAloneLanguage(`message.${global.namespace}.reload`, "已重载全部脚本!")
 	addAloneLanguage(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
