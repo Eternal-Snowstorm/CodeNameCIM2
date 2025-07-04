@@ -24,7 +24,8 @@ ServerEvents.recipes((event) => {
 		"minecraft:stick_from_bamboo_item",
 		"immersiveengineering:crafting/coal_coke_to_coke",
 		"immersiveengineering:blastfurnace/steel_block",
-		"mekanism:control_circuit/basic"
+		"mekanism:control_circuit/basic",
+		"thermal:smelting/cured_rubber_from_smelting"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
