@@ -29,8 +29,8 @@ ServerEvents.recipes((event) => {
 	}).id("vintageimprovements:pressurizing/sulfur_dioxide")
 
 	// 硫化
-	vintageimprovements.pressurizing(Fluid.of("cmi:cured_rubber", 500), [
-		Fluid.of("mekanism:sulfur_dioxide", 250),
+	create.mixing(Fluid.of("cured_rubber", 1000), [
+		"#forge:dusts/sulfur",
 		"#forge:plates/rubber"
 	]).heated()
 
