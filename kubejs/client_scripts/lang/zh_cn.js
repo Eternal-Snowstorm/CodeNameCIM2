@@ -147,7 +147,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("me_machine", "智能机械方块")
 	addBlockLanguage("mekanism_machine", "通用机械方块")
 
-	for (let i = 0; i < 14; i++) {
+	for (let i = 1; i <= 14; i++) {
 		addPaintingLanguage(`rr${i}`, `Aleegos(${i})`, "Aleegos Reality Redemption")
 	}
 	addPaintingLanguage("bug_is_right", "有Bug是对的", "古镇天")

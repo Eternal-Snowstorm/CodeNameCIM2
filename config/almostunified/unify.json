@@ -2,8 +2,10 @@
 	"modPriorities": [
 		"minecraft",
 		"thermal",
-		"create",
 		"tconstruct",
+		"immersiveengineering",
+		"mekanism",
+		"create",
 		"vintageimprovements",
 		"createaddition",
 		"createdeco",
