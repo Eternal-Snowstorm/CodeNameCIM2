@@ -10,7 +10,7 @@
 	"cmi.ponder.faucet.text_4": "含水方块中的水",
 	"cmi.ponder.faucet.text_5": "甚至是世界上的流体!",
 	"cmi.ponder.faucet.text_6": "你可以右键它来开启或关闭输出",
-	"cmi.ponder.faucet.text_7": "特别的, 你还可以用它来运输容器中的物品! 不过这种方式的运输效率并算特别高, 但是在一些特殊场合却非常好用!",
+	"cmi.ponder.faucet.text_7": "特别的, 你还可以用它来运输容器中的物品! 不过这种方式的运输效率并不算特别高, 但是在一些特殊场合却非常好用!",
 	"cmi.ponder.melter.header": "焦黑熔化炉",
 	"cmi.ponder.melter.text_1": "要使用焦黑熔化炉，你需要先放置一个焦黑加热器。",
 	"cmi.ponder.melter.text_2": "随后在焦黑加热器上方放置一个焦黑熔化炉",
