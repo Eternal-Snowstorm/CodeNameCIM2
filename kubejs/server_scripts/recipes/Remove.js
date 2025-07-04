@@ -25,10 +25,6 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:crafting/coal_coke_to_coke",
 		"immersiveengineering:blastfurnace/steel_block",
 		"mekanism:control_circuit/basic",
-
-		"thermal:smelting/cured_rubber_from_smelting",
-
-
 		"mekanism:control_circuit/advanced",
 		"mekanism:control_circuit/elite",
 		"mekanism:control_circuit/ultimate"

@@ -1,5 +1,5 @@
 function aeCharger(output, input) {
-	const INPUT = inJson(input)
+	const INPUT = Ingredient.of(input).toJson()
 	return {
 		"type": "ae2:charger",
 		"ingredient": INPUT,

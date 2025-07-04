@@ -31,6 +31,7 @@ schematics/uploaded/
 /CIM2 Dev-natives/
 /saves/Debug/
 /.idea
+*.zip
 fancymenu_data
 saves/*/session.lock
 /schematics
@@ -58,7 +59,7 @@ ESM
 
 # Config
 /config/*
-!/config/openloader/
+!/config/openloader
 !/config/almostunified/
 !/config/drippyloadingscreen/
 !/config/fancymenu/

@@ -235,14 +235,31 @@
 			y: 7.0d
 		}
 		{
+			id: "3DB805F9D13B67E8"
+			tasks: [{
+				id: "11980AAF376761D6"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3DB805F9D13B67E8"]
 			id: "49B70C43E78A7AD2"
 			tasks: [{
 				id: "197B0D7CCE98E1FD"
 				item: "minecraft:stripped_oak_log"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.0d
+			x: 3.0d
+			y: 9.5d
 		}
 		{
 			id: "402C1FBF781261AB"
@@ -251,8 +268,8 @@
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 7.0d
+			x: 0.5d
+			y: 11.0d
 		}
 		{
 			id: "2C87A57EF28732AC"
@@ -261,8 +278,8 @@
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 9.0d
+			x: 0.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -275,8 +292,8 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 8.0d
+			x: 2.5d
+			y: 12.5d
 		}
 		{
 			id: "70DBB589695C3CEA"
@@ -291,8 +308,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.5d
+			x: 5.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -306,8 +323,8 @@
 				item: "cmi:wooden_mechanism"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 5.5d
+			x: 3.5d
+			y: 14.0d
 		}
 		{
 			id: "414EEE72A59CEE7E"
@@ -316,8 +333,8 @@
 				item: "tconstruct:grout"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 9.0d
+			x: 0.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["414EEE72A59CEE7E"]
@@ -327,8 +344,8 @@
 				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 9.5d
+			x: 2.0d
+			y: 15.5d
 		}
 		{
 			dependencies: [
@@ -342,8 +359,8 @@
 				item: "cmi:stone_mechanism"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 7.0d
+			x: 4.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["5080AD4A92076C63"]
@@ -353,8 +370,8 @@
 				item: "tconstruct:seared_melter"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 8.5d
+			x: 2.5d
+			y: 17.5d
 		}
 		{
 			id: "5207B60478479507"

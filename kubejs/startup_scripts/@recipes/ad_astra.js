@@ -16,9 +16,9 @@ new Schema("ad_astra:cryo_freezing")
 	.simpleKey("cookingtime", "intNumber", 100)
 	.simpleKey("energy", "intNumber", 100)
 
-// new Schema("ad_astra:nasa_workbench")
-// 	.simpleKey("result", "outputItem")
-// 	.simpleKey("ingredients", "inputItemArray")
+new Schema("ad_astra:nasa_workbench")
+	.simpleKey("result", "outputItem")
+	.simpleKey("ingredients", "inputItemArray")
 
 new Schema("ad_astra:oxygen_loading")
 	.simpleKey("result", "outputFluid")
