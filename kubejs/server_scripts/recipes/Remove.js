@@ -82,7 +82,10 @@ ServerEvents.recipes((event) => {
 		"thermal:device_potion_diffuser",
 		"mekanism:advanced_control_circuit",
 		"mekanism:elite_control_circuit",
-		"mekanism:ultimate_control_circuit"
+		"ad_astra:tier_1_rocket",
+		"ad_astra:tier_2_rocket",
+		"ad_astra:tier_3_rocket",
+		"ad_astra:tier_4_rocket"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({
@@ -145,7 +148,8 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeRecipeType = [
-		"vintageimprovements:laser_cutting"
+		"vintageimprovements:laser_cutting",
+		"ad_astra:nasa_workbench"
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({

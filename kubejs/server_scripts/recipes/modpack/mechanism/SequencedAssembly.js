@@ -353,7 +353,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ir1m, [ir1m, "cmi:computer_component"]),
 		create.deploying(ir1m, [ir1m, "ad_astra:steel_cable"]),
 		create.deploying(ir1m, [ir1m, "ad_astra:steel_tank"]),
-		create.deploying(ir1m, [ir1m, "cmi:aviation_mechanism_part"]),
+		create.deploying(ir1m, [ir1m, "cmi:space_mechanism_part"]),
 	]).transitionalItem(ir1m).loops(1)
 
 	// 2航天
@@ -363,7 +363,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ir2m, [ir2m, "cmi:computer_component"]),
 		create.deploying(ir2m, [ir2m, "ad_astra:desh_cable"]),
 		create.deploying(ir2m, [ir2m, "ad_astra:desh_tank"]),
-		create.deploying(ir2m, [ir2m, "cmi:aviation_mechanism_part"]),
+		create.deploying(ir2m, [ir2m, "cmi:space_mechanism_part"]),
 	]).transitionalItem(ir2m).loops(1)
 
 	// 3航天
@@ -373,7 +373,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(ir3m, [ir3m, "cmi:computer_component"]),
 		create.deploying(ir3m, [ir3m, "ad_astra:desh_fluid_pipe"]),
 		create.deploying(ir3m, [ir3m, "ad_astra:ostrum_tank"]),
-		create.deploying(ir3m, [ir3m, "cmi:aviation_mechanism_part"]),
+		create.deploying(ir3m, [ir3m, "cmi:space_mechanism_part"]),
 	]).transitionalItem(ir3m).loops(1)
 
 	// 4航天
@@ -383,6 +383,6 @@ ServerEvents.recipes((event) => {
 		create.deploying(ir4m, [ir4m, "cmi:computer_component"]),
 		create.deploying(ir4m, [ir4m, "ad_astra:ostrum_fluid_pipe"]),
 		create.deploying(ir4m, [ir4m, "ad_astra:calorite_tank"]),
-		create.deploying(ir4m, [ir4m, "cmi:aviation_mechanism_part"]),
+		create.deploying(ir4m, [ir4m, "cmi:space_mechanism_part"]),
 	]).transitionalItem(ir4m).loops(1)
 })

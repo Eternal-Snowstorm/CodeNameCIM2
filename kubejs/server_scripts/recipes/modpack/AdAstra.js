@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 		this.recipe = {
 			type: "ad_astra:alloying",
 			cookingtime: 100,
-			energy: 1000,
+			energy: 100,
 			ingredients: [],
 			result: {}
 		}
@@ -74,6 +74,5 @@ ServerEvents.recipes((event) => {
 	new AlloyingRecipe()
 		.setOutput("tconstruct:steel_block")
 		.addIngredient("#forge:storage_blocks/iron")
-		.addIngredient("#forge:coal_coke")
 		.recipeId("aaa:aaa")
 })
