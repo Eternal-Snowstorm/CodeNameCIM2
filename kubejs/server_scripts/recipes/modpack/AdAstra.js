@@ -1,250 +1,78 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements } = event.recipes
+	function AlloyingRecipe() {
+		this.recipe = {
+			type: "ad_astra:alloying",
+			cookingtime: 100,
+			energy: 100,
+			ingredients: [],
+			result: {}
+		}
+	}
 
-	event.custom({
-		"type": "ad_astra:alloying",
-		"cookingtime": 100,
-		"energy": 20,
-		"ingredients": [
-			{
-				"tag": "forge:ingots/iron"
-			},
-			{
-				"tag": "forge:coal_coke"
+	AlloyingRecipe.prototype = {
+		// 设置输出物品
+		setOutput: function (output) {
+			if (typeof output === "string") {
+				const MATCH = output.match(/^(\d+)x\s*(.+)$/)
+				this.recipe.result = MATCH
+					? { id: MATCH[2], count: parseInt(MATCH[1]) }
+					: { id: output, count: 1 }
+			} else {
+				this.recipe.result = output
 			}
-		],
-		"result": {
-			"count": 1,
-			"id": "tconstruct:steel_ingot"
+			return this
+		},
+
+		// 添加输入材料
+		addIngredient: function (ingredient) {
+			if (typeof ingredient === "string") {
+				const MATCH = ingredient.match(/^(\d+)x\s*(.+)$/)
+				if (MATCH) {
+					const count = parseInt(MATCH[1])
+					const item = MATCH[2]
+					for (let i = 0; i < count; i++) {
+						this.recipe.ingredients.push(item.startsWith("#")
+							? { tag: item.substring(1) }
+							: { item: item })
+					}
+				} else {
+					this.recipe.ingredients.push(ingredient.startsWith("#")
+						? { tag: ingredient.substring(1) }
+						: { item: ingredient })
+				}
+			} else {
+				this.recipe.ingredients.push(ingredient)
+			}
+			return this
+		},
+
+		// 设置能量消耗
+		setEnergy: function (energy) {
+			this.recipe.energy = energy
+			return this
+		},
+
+		// 设置冶炼时间
+		setTime: function (time) {
+			this.recipe.cookingtime = time
+			return this
+		},
+
+		// 构建配方
+		recipeId: function (recipename) {
+			event.custom(this.recipe)
+				.id(recipename)
+		},
+		// 替换配方
+		replaceRecipe: function (recipeid) {
+			event.remove({ id: recipeid })
+			let recipename = recipeid.split(":").pop()
+			this.build(recipename)
 		}
-	})
+	}
 
-	// Tier1
-	create.sequenced_assembly("cmi:tier_1_rocket_frame", [
-		"cmi:rocket_patten"
-	], [
-		create.deploying("cmi:incomplete_tier_1_rocket_frame", [
-			"cmi:incomplete_tier_1_rocket_frame",
-			"#forge:storage_blocks/steel"
-		]),
-		create.deploying("cmi:incomplete_tier_1_rocket_frame", [
-			"cmi:incomplete_tier_1_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_1_rocket_frame", [
-			"cmi:incomplete_tier_1_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_1_rocket_frame", [
-			"cmi:incomplete_tier_1_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_1_rocket_frame", [
-			"cmi:incomplete_tier_1_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_1_rocket_frame", [
-			"cmi:incomplete_tier_1_rocket_frame",
-			"#forge:storage_blocks/steel"
-		]),
-		create.deploying("cmi:incomplete_tier_1_rocket_frame", [
-			"cmi:incomplete_tier_1_rocket_frame",
-			"ad_astra:rocket_nose_cone"
-		]),
-	]).loops(1).transitionalItem("cmi:incomplete_tier_1_rocket_frame")
-
-	// Tier2
-	create.sequenced_assembly("cmi:tier_2_rocket_frame", [
-		"cmi:rocket_patten"
-	], [
-		create.deploying("cmi:incomplete_tier_2_rocket_frame", [
-			"cmi:incomplete_tier_2_rocket_frame",
-			"#forge:storage_blocks/desh"
-		]),
-		create.deploying("cmi:incomplete_tier_2_rocket_frame", [
-			"cmi:incomplete_tier_2_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_2_rocket_frame", [
-			"cmi:incomplete_tier_2_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_2_rocket_frame", [
-			"cmi:incomplete_tier_2_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_2_rocket_frame", [
-			"cmi:incomplete_tier_2_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_2_rocket_frame", [
-			"cmi:incomplete_tier_2_rocket_frame",
-			"#forge:storage_blocks/desh"
-		]),
-		create.deploying("cmi:incomplete_tier_2_rocket_frame", [
-			"cmi:incomplete_tier_2_rocket_frame",
-			"ad_astra:rocket_nose_cone"
-		]),
-	]).loops(1).transitionalItem("cmi:incomplete_tier_2_rocket_frame")
-
-	// Tier3
-	create.sequenced_assembly("cmi:tier_3_rocket_frame", [
-		"cmi:rocket_patten"
-	], [
-		create.deploying("cmi:incomplete_tier_3_rocket_frame", [
-			"cmi:incomplete_tier_3_rocket_frame",
-			"#forge:storage_blocks/ostrum"
-		]),
-		create.deploying("cmi:incomplete_tier_3_rocket_frame", [
-			"cmi:incomplete_tier_3_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_3_rocket_frame", [
-			"cmi:incomplete_tier_3_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_3_rocket_frame", [
-			"cmi:incomplete_tier_3_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_3_rocket_frame", [
-			"cmi:incomplete_tier_3_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_3_rocket_frame", [
-			"cmi:incomplete_tier_3_rocket_frame",
-			"#forge:storage_blocks/ostrum"
-		]),
-		create.deploying("cmi:incomplete_tier_3_rocket_frame", [
-			"cmi:incomplete_tier_3_rocket_frame",
-			"ad_astra:rocket_nose_cone"
-		]),
-	]).loops(1).transitionalItem("cmi:incomplete_tier_3_rocket_frame")
-
-	// Tier4
-	create.sequenced_assembly("cmi:tier_4_rocket_frame", [
-		"cmi:rocket_patten"
-	], [
-		create.deploying("cmi:incomplete_tier_4_rocket_frame", [
-			"cmi:incomplete_tier_4_rocket_frame",
-			"#forge:storage_blocks/calorite"
-		]),
-		create.deploying("cmi:incomplete_tier_4_rocket_frame", [
-			"cmi:incomplete_tier_4_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_4_rocket_frame", [
-			"cmi:incomplete_tier_4_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_4_rocket_frame", [
-			"cmi:incomplete_tier_4_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_4_rocket_frame", [
-			"cmi:incomplete_tier_4_rocket_frame",
-			"ad_astra:rocket_fin"
-		]),
-		create.deploying("cmi:incomplete_tier_4_rocket_frame", [
-			"cmi:incomplete_tier_4_rocket_frame",
-			"#forge:storage_blocks/calorite"
-		]),
-		create.deploying("cmi:incomplete_tier_4_rocket_frame", [
-			"cmi:incomplete_tier_4_rocket_frame",
-			"ad_astra:rocket_nose_cone"
-		]),
-	]).loops(1).transitionalItem("cmi:incomplete_tier_4_rocket_frame")
-
-
-	// Tier1 r
-	create.sequenced_assembly("ad_astra:tier_1_rocket", [
-		"cmi:tier_1_rocket_frame"
-	], [
-		create.deploying("cmi:incomplete_tier_1_rocket", [
-			"cmi:incomplete_tier_1_rocket",
-			"cmi:tier_1_aviation_mechanism"
-		]),
-		create.deploying("cmi:incomplete_tier_1_rocket", [
-			"cmi:incomplete_tier_1_rocket",
-			"ad_astra:steel_engine"
-		]),
-		vintageimprovements.laser_cutting("cmi:incomplete_tier_1_rocket", [
-			"cmi:incomplete_tier_1_rocket"
-		]).energy(100)
-	]).loops(1).transitionalItem("cmi:incomplete_tier_1_rocket")
-
-	// Tier2 r
-	create.sequenced_assembly("ad_astra:tier_2_rocket", [
-		"cmi:tier_2_rocket_frame"
-	], [
-		create.deploying("cmi:incomplete_tier_2_rocket", [
-			"cmi:incomplete_tier_2_rocket",
-			"cmi:tier_2_aviation_mechanism"
-		]),
-		create.deploying("cmi:incomplete_tier_2_rocket", [
-			"cmi:incomplete_tier_2_rocket",
-			"ad_astra:desh_engine"
-		]),
-		vintageimprovements.laser_cutting("cmi:incomplete_tier_2_rocket", [
-			"cmi:incomplete_tier_2_rocket"
-		]).energy(100)
-	]).loops(1).transitionalItem("cmi:incomplete_tier_2_rocket")
-
-	// Tier3 r
-	create.sequenced_assembly("ad_astra:tier_3_rocket", [
-		"cmi:tier_3_rocket_frame"
-	], [
-		create.deploying("cmi:incomplete_tier_3_rocket", [
-			"cmi:incomplete_tier_3_rocket",
-			"cmi:tier_3_aviation_mechanism"
-		]),
-		create.deploying("cmi:incomplete_tier_3_rocket", [
-			"cmi:incomplete_tier_3_rocket",
-			"ad_astra:ostrum_engine"
-		]),
-		vintageimprovements.laser_cutting("cmi:incomplete_tier_3_rocket", [
-			"cmi:incomplete_tier_3_rocket"
-		]).energy(100)
-	]).loops(1).transitionalItem("cmi:incomplete_tier_3_rocket")
-
-	// Tier4 r
-	create.sequenced_assembly("ad_astra:tier_4_rocket", [
-		"cmi:tier_4_rocket_frame"
-	], [
-		create.deploying("cmi:incomplete_tier_4_rocket", [
-			"cmi:incomplete_tier_4_rocket",
-			"cmi:tier_4_aviation_mechanism"
-		]),
-		create.deploying("cmi:incomplete_tier_4_rocket", [
-			"cmi:incomplete_tier_4_rocket",
-			"ad_astra:calorite_engine"
-		]),
-		vintageimprovements.laser_cutting("cmi:incomplete_tier_4_rocket", [
-			"cmi:incomplete_tier_4_rocket"
-		]).energy(100)
-	]).loops(1).transitionalItem("cmi:incomplete_tier_4_rocket")
-
-	event.custom({
-		"type": "ad_astra:nasa_workbench",
-		"ingredients": [
-			Ingredient.of("#forge:treated_wood").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_fence").toJson(),
-			Ingredient.of("immersiveengineering:wooden_barrel").toJson(),
-			Ingredient.of("immersiveengineering:wooden_barrel").toJson(),
-			Ingredient.of("immersiveengineering:treated_fence").toJson(),
-			Ingredient.of("immersiveengineering:treated_fence").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_fence").toJson()
-		],
-		"result": {
-			"count": 1,
-			"id": "cmi:rocket_patten"
-		}
-	})
+	new AlloyingRecipe()
+		.setOutput("tconstruct:steel_block")
+		.addIngredient("#forge:storage_blocks/iron")
+		.recipeId("aaa:aaa")
 })

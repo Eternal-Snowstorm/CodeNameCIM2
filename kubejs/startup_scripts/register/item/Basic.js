@@ -131,4 +131,24 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:incomplete_tier_2_rocket`)
 	event.create(`${global.namespace}:incomplete_tier_3_rocket`)
 	event.create(`${global.namespace}:incomplete_tier_4_rocket`)
+
+
+
+	//mek-ae2 cpu
+	//固态灌注
+	event.create(`${global.namespace}:solid_perfusion_processor`)
+
+	//晶体增生
+	event.create(`${global.namespace}:crystal_hyperplasia_processor`)
+
+	//磨制分化
+	event.create(`${global.namespace}:grinding_differentiation_processor`)
+
+	//通用
+	event.create(`${global.namespace}:mekanism_processor`)
+
+	//计算机组件半成品
+	event.create(`${global.namespace}:incomplete_computer_component`)
+
+
 })
