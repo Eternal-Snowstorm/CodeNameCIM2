@@ -213,18 +213,18 @@ ServerEvents.recipes((event) => {
         ]).energy(100)
     ]).loops(1).transitionalItem("cmi:incomplete_tier_4_rocket")
 
-
+/*
     event.custom(
         {
   "type": "ad_astra:nasa_workbench",
   "ingredients": [
     {"item": "#forge:treated_wood"
-    },{"tag": 'immersiveengineering:treated_scaffold'
-    },{"tag": 'immersiveengineering:treated_scaffold'
-    },{"tag": 'immersiveengineering:treated_scaffold'
-    },{"tag": 'immersiveengineering:treated_scaffold'
-    },{"tag": 'immersiveengineering:treated_scaffold'
-    },{"tag": 'immersiveengineering:treated_scaffold'
+    },{"item": 'immersiveengineering:treated_scaffold'
+    },{"item": 'immersiveengineering:treated_scaffold'
+    },{"item": 'immersiveengineering:treated_scaffold'
+    },{"item": 'immersiveengineering:treated_scaffold'
+    },{"item": 'immersiveengineering:treated_scaffold'
+    },{"item": 'immersiveengineering:treated_scaffold'
     },{"item": 'immersiveengineering:treated_fence'
     },{"item": 'immersiveengineering:wooden_barrel'
     },{"item": 'immersiveengineering:wooden_barrel'
@@ -240,6 +240,6 @@ ServerEvents.recipes((event) => {
 }
     )
 
-
+*/
 
 })
