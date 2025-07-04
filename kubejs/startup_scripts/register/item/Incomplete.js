@@ -4,15 +4,9 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:incomplete_advanced_control_circuit`)
 		.texture(`${global.namespace}:item/advanced_control_circuit`)
 
-        
 	event.create(`${global.namespace}:incomplete_elite_control_circuit`)
 		.texture(`${global.namespace}:item/elite_control_circuit`)
 
-
 	event.create(`${global.namespace}:incomplete_ultimate_control_circuit`)
 		.texture(`${global.namespace}:item/ultimate_control_circuit`)
-
-
-
-
 })
