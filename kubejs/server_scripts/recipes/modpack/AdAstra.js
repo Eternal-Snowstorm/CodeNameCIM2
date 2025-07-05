@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
 
 	// Tier1
 	create.sequenced_assembly("cmi:tier_1_rocket_frame", [
-		"cmi:rocket_patten"
+		"cmi:rocket_pattern"
 	], [
 		create.deploying("cmi:incomplete_tier_1_rocket_frame", [
 			"cmi:incomplete_tier_1_rocket_frame",
@@ -51,7 +51,7 @@ ServerEvents.recipes((event) => {
 
 	// Tier2
 	create.sequenced_assembly("cmi:tier_2_rocket_frame", [
-		"cmi:rocket_patten"
+		"cmi:rocket_pattern"
 	], [
 		create.deploying("cmi:incomplete_tier_2_rocket_frame", [
 			"cmi:incomplete_tier_2_rocket_frame",
@@ -85,7 +85,7 @@ ServerEvents.recipes((event) => {
 
 	// Tier3
 	create.sequenced_assembly("cmi:tier_3_rocket_frame", [
-		"cmi:rocket_patten"
+		"cmi:rocket_pattern"
 	], [
 		create.deploying("cmi:incomplete_tier_3_rocket_frame", [
 			"cmi:incomplete_tier_3_rocket_frame",
@@ -119,7 +119,7 @@ ServerEvents.recipes((event) => {
 
 	// Tier4
 	create.sequenced_assembly("cmi:tier_4_rocket_frame", [
-		"cmi:rocket_patten"
+		"cmi:rocket_pattern"
 	], [
 		create.deploying("cmi:incomplete_tier_4_rocket_frame", [
 			"cmi:incomplete_tier_4_rocket_frame",
