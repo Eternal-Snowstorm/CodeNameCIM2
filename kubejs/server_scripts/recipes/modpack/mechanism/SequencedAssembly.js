@@ -37,6 +37,7 @@ ServerEvents.recipes((event) => {
 	let ir2m = "cmi:incomplete_tier_2_aviation_mechanism"
 	let ir3m = "cmi:incomplete_tier_3_aviation_mechanism"
 	let ir4m = "cmi:incomplete_tier_4_aviation_mechanism"
+	let ipom = "cmi:incomplete_potion_mechanism"
 
 	// 木质
 	create.sequenced_assembly("cmi:wooden_mechanism", [
@@ -385,4 +386,11 @@ ServerEvents.recipes((event) => {
 		create.deploying(ir4m, [ir4m, "ad_astra:calorite_tank"]),
 		create.deploying(ir4m, [ir4m, "cmi:space_mechanism_part"]),
 	]).transitionalItem(ir4m).loops(1)
+
+	create.sequenced_assembly("cmi:potion_mechanism", [
+		"#forge:glass"
+	], [
+		create.filling(ipom, [ipom, Fluid.of("create:potion", 500)]),
+		create.deploying(ipom, [ipom, "cmi:magical_mechanism_part"])
+	]).transitionalItem(ipom).loops(1)
 })
