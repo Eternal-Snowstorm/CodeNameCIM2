@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create, mekanism, vintageimprovements } = event.recipes
 
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
 		"minecraft:andesite",
@@ -33,9 +33,34 @@ ServerEvents.recipes((event) => {
 		"minecraft:chorus_fruit"
 	]).heated()
 
-	//盐水
+	// 盐水
 	create.mixing(Fluid.of("mekanism:brine", 50), [
 		Fluid.of("minecraft:water", 50),
 		"#forge:dusts/salt"
 	])
+
+
+
+
+	// SiCl4
+	vintageimprovements.pressurizing(Fluid.of("cmi:tetrachlorosilane", 500), [
+		Fluid.of("mekanism:chlorine", 500),
+		"#forge:silicon"
+	]).processingTime(200).superheated()
+
+	// Si
+	event.custom(
+		{
+			"type": "mekanism:reaction", "duration": 400,
+			"energyRequired": 200,
+			"fluidInput": { "amount": 500, "fluid": "cmi:tetrachlorosilane" },
+			"gasInput": { "amount": 250, "gas": "mekanism:hydrogen" },
+			"gasOutput": { "amount": 500, "gas": "mekanism:hydrogen_chloride" },
+			"itemInput": { "ingredient": { "tag": "forge:glass" } },
+			"itemOutput": { "count": 1, "item": "cmi:single_crystal_silicon" }
+		}
+	)
+
 })
+
+

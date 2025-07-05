@@ -67,6 +67,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("turbid_waste_liquid", "浑浊废液")
 	addFluidLanguage("platinum_solution", "铂溶液")
 	addFluidLanguage("cured_rubber", "熔融硫化橡胶")
+	addFluidLanguage("tetrachlorosilane", "四氯化硅")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
