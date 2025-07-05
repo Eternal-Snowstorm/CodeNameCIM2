@@ -109,7 +109,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 火箭模版
 	// 模型待定
-	event.create(`${global.namespace}:rocket_patten`)
+	event.create(`${global.namespace}:rocket_pattern`)
 
 	//火箭框架1-4
 	// 模型待定
@@ -133,20 +133,21 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:incomplete_tier_4_rocket`)
 
 
-
 	//mek-ae2 cpu
-	//固态灌注
-	event.create(`${global.namespace}:solid_perfusion_processor`)
+	//灌注
+	event.create(`${global.namespace}:infusion_treated_processor`)
 
-	//晶体增生
-	event.create(`${global.namespace}:crystal_hyperplasia_processor`)
+	//富集
+	event.create(`${global.namespace}:enrichment_treated_processor`)
 
-	//磨制分化
-	event.create(`${global.namespace}:grinding_differentiation_processor`)
+	//粉碎
+	event.create(`${global.namespace}:ground_treated_processor`)
 
 	//通用
 	event.create(`${global.namespace}:mekanism_processor`)
 
 	//计算机组件半成品
 	event.create(`${global.namespace}:incomplete_computer_component`)
+
+
 })
