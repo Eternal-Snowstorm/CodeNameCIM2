@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create } = event.recipes
+	let { kubejs, create, vintageimprovements } = event.recipes
 
 	// 空烈焰人燃烧室
 	kubejs.shaped("create:empty_blaze_burner", [
@@ -69,4 +69,11 @@ ServerEvents.recipes((event) => {
 		Item.of("ae2:sky_dust", 2).withChance(0.25),
 		Item.of("ae2:sky_stone_block").withChance(0.5)
 	], "ae2:sky_stone_block")
+
+
+	vintageimprovements.curving("create:fluid_pipe","#forge:plates/copper")
+	vintageimprovements.curving("ad_astra:rocket_fin","#forge:plates/steel",4)
+
+
+	
 })

@@ -72,4 +72,8 @@ ServerEvents.recipes((event) => {
 		"ae2:quantum_entangled_singularity",
 		"mekanism:pellet_polonium"
 	])
+	kubejs.shapeless("4x cmi:space_mechanism_part", [
+		"ae2:sky_dust",
+		"ae2:matter_ball"
+	])
 })

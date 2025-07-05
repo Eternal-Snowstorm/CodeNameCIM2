@@ -239,7 +239,7 @@ ServerEvents.recipes((event) => {
 		],
 		"result": {
 			"count": 1,
-			"id": "cmi:rocket_patten"
+			"id": "cmi:rocket_pattern"
 		}
 	})
 })
