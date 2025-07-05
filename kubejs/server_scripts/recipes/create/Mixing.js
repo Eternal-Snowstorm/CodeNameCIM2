@@ -32,4 +32,10 @@ ServerEvents.recipes((event) => {
 		Fluid.of("thermal:ender", 250),
 		"minecraft:chorus_fruit"
 	]).heated()
+
+	//盐水
+	create.mixing(Fluid.of("mekanism:brine", 50), [
+		Fluid.of("minecraft:water", 50),
+		"#forge:dusts/salt"
+	])
 })
