@@ -38,6 +38,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:rods/wooden"
 	})
+	
+	/*
 
 	create.mechanical_crafting("81x minecraft:rotten_flesh", [
 		"AAAAAAAAA",
@@ -53,6 +55,8 @@ ServerEvents.recipes((event) => {
 		A: "minecraft:rotten_flesh"
 	}).id(`${global.namespace}:what_the_fuck_is_this`)
 
+	*/
+
 	// 虚空升级
 	tconstruct.casting_basin("functionalstorage:void_upgrade")
 		.fluid(Fluid.of("tconstruct:molten_obsidian", 4000))
@@ -66,6 +70,9 @@ ServerEvents.recipes((event) => {
 		.cast_consumed(true)
 		.cooling_time(40)
 
+
+	/*
+
 	// 水龙头
 	kubejs.shaped("supplementaries:faucet", [
 		" A ",
@@ -75,4 +82,7 @@ ServerEvents.recipes((event) => {
 		A: "cmi:iron_mechanism",
 		B: "#forge:plates/iron"
 	}).id("supplementaries:faucet")
+
+	*/
+
 })
