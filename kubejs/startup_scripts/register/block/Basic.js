@@ -45,12 +45,13 @@ StartupEvents.registry("block", (event) => {
 		"redstone"
 	]
 	machineBlockRegister.forEach((type) => {
-		event.create(`${global.namespace}:${type}_machine`,"cardinal")
+		event.create(`${global.namespace}:${type}_machine`, "cardinal")
 			.soundType(SoundType.METAL)
 			.tagBlock(global.toolType["pickaxe"])
 			.tagBlock(global.miningLevel["wooden"])
 			.requiresTool(true)
 			.notSolid()
+			.defaultCutout()
 	})
 
 	// 锇砖瓦
