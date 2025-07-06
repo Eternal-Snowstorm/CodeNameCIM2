@@ -1,5 +1,5 @@
 StartupEvents.registry("block", (event) => {
-	//UE
+	// UE
 	event.create(`${global.namespace}:unknown_entity_`, "cardinal")
 		.soundType(SoundType.WOOL)
 		.hardness(0)
@@ -11,7 +11,8 @@ StartupEvents.registry("block", (event) => {
 		.defaultCutout()
 		.notSolid()
 		.noCollision()
-	//柒月
+
+	// 柒月
 	event.create(`${global.namespace}:qi_month`, "cardinal")
 		.soundType(SoundType.WOOL)
 		.hardness(0)
@@ -22,7 +23,8 @@ StartupEvents.registry("block", (event) => {
 		.notSolid()
 		.defaultCutout()
 		.noCollision()
-	//牢微
+
+	// 牢微
 	event.create(`${global.namespace}:vechni_metel`, "cardinal")
 		.soundType(SoundType.WOOL)
 		.hardness(0)
@@ -33,7 +35,8 @@ StartupEvents.registry("block", (event) => {
 		.notSolid()
 		.defaultCutout()
 		.noCollision()
-	//1174
+
+	// 1174
 	event.create(`${global.namespace}:117458866249`, "cardinal")
 		.soundType(SoundType.WOOL)
 		.hardness(0)
@@ -44,7 +47,8 @@ StartupEvents.registry("block", (event) => {
 		.notSolid()
 		.defaultCutout()
 		.noCollision()
-	//Aleegos
+
+	// Aleegos
 	event.create(`${global.namespace}:aleegos`, "cardinal")
 		.soundType(SoundType.WOOL)
 		.hardness(0)
@@ -55,7 +59,8 @@ StartupEvents.registry("block", (event) => {
 		.notSolid()
 		.defaultCutout()
 		.noCollision()
-	//FiberOptics
+
+	// FiberOptics
 	event.create(`${global.namespace}:fiber_optics`, "cardinal")
 		.soundType(SoundType.WOOL)
 		.hardness(0)
