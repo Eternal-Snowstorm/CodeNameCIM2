@@ -390,7 +390,13 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:potion_mechanism", [
 		"#forge:glass"
 	], [
-		create.filling(ipom, [ipom, Fluid.of("create:potion", 500)]),
+		create.filling(ipom, [
+			ipom,
+			Fluid.of("create:potion", 500, {
+				Bottle: "REGULAR",
+				Potion: "minecraft:strength"
+			})
+		]),
 		create.deploying(ipom, [ipom, "cmi:magical_mechanism_part"])
 	]).transitionalItem(ipom).loops(1)
 })

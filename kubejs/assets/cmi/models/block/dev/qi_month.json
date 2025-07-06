@@ -1,8 +1,10 @@
 {
     "format_version": "1.21.6",
+    "render_type": "cutout",
     "texture_size": [64, 64],
     "textures": {
-        "0": "cmi:block/dev/qi_month"
+        "0": "cmi:block/dev/qi_month",
+        "particle": "cmi:block/dev/qi_month"
     },
     "elements": [
         {
@@ -243,6 +245,5 @@
             "color": 0,
             "children": [10, 11]
         }
-    ],
-    "render_type": "cutout"
+    ]
 }
