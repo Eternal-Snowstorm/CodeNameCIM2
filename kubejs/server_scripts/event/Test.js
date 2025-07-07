@@ -1,3 +1,4 @@
+/*
 let $BlockPattern =
 	Java.loadClass("net.minecraft.world.level.block.state.pattern.BlockPattern")
 let $BlockPatternBuilder =
@@ -47,7 +48,7 @@ let $Character = Java.loadClass("java.lang.Character")
 // 	C: Block.getBlock("minecraft:obsidian")
 // }
 
-// // 定义结构(0代表中心方块, 所以是必须的)
+// 定义结构(0代表中心方块, 所以是必须的)
 // function TestMultiblock() {
 // 	return $PatchouliAPI.get().makeMultiblock([
 // 		["   ", "   ", "   "],
@@ -79,3 +80,4 @@ BlockEvents.rightClicked("minecraft:sculk_shrieker", (event) => {
 
 	player.tell(Component.literal("哇袄!!!"))
 })
+*/

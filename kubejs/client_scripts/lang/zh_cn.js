@@ -54,11 +54,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")//不是粉碎？（doge）
 	addItemLanguage("mekanism_processor", "通用处理器")
 
-
-
 	addCastItemLanguage("mechanism", "构件")
-
-
 
 	addFluidLanguage("blood", "血液")
 	addFluidLanguage("pure_sand", "纯净沙")
