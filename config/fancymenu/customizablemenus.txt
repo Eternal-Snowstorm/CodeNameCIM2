@@ -72,9 +72,6 @@ net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 net.minecraft.client.gui.screens.worldselection.EditWorldScreen {
 }
 
-net.minecraft.client.gui.screens.ConfirmScreen {
-}
-
 net.minecraft.client.gui.screens.achievement.StatsScreen {
 }
 
