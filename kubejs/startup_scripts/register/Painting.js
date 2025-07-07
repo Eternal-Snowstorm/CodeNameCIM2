@@ -14,6 +14,7 @@ StartupEvents.registry("painting_variant", (event) => {
 	addPainting("rr12", 16, 16)
 	addPainting("rr13", 16, 16)
 	addPainting("rr14", 16, 16)
+	addPainting("girl_of_cmi", 64, 64)
 
 	// Vechni_Metel
 	addPainting("bug_is_right", 32, 16)
