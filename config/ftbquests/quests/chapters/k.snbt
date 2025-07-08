@@ -4,6 +4,14 @@
 	filename: "k"
 	group: ""
 	id: "16BF65FE8553A6F6"
+	images: [{
+		height: 16.0d
+		image: "cmi:block/machine/ue/thermal_machine"
+		rotation: 0.0d
+		width: 16.0d
+		x: -5.5d
+		y: -10.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
