@@ -47,7 +47,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_tier_2_rocket", "二阶火箭(半成品)")
 	addItemLanguage("incomplete_tier_3_rocket", "三阶火箭(半成品)")
 	addItemLanguage("incomplete_tier_4_rocket", "四阶火箭(半成品)")
-	
+
 	addItemLanguage("infusion_treated_processor", "经灌注处理的逻辑处理器")
 	addItemLanguage("enrichment_treated_processor", "经富集处理的运算处理器")
 	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")
