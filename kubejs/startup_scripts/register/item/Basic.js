@@ -149,4 +149,5 @@ StartupEvents.registry("item", (event) => {
 	//计算机组件半成品
 	event.create(`${global.namespace}:incomplete_computer_component`)
 
+	event.create("test_item")
 })
