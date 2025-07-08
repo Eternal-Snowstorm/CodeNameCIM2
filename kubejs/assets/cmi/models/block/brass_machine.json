@@ -1,0 +1,9 @@
+{
+	"parent": "cmi:custom/bm",
+	"textures": {
+		"all": "cmi:block/machine/ue/brass_machine",
+		"particle": "create:block/brass_casing",
+		"2": "cmi:block/machine/ue/brass_machine"
+	},
+	"render_type": "translucent"
+}

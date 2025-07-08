@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 
 	tconstruct.casting_basin("create:copper_casing")
 		.fluid(Fluid.of("tconstruct:molten_copper", 90))
-		.cast("#minecraft:logs")
+		.cast("#forge:treated_wood")
 		.cooling_time(40)
 		.cast_consumed(true)
 

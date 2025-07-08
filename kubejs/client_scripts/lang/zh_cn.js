@@ -33,6 +33,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("small_coal_coke", "小块焦炭")
 	addItemLanguage("silicon_mixure", "硅混合物")
 	addItemLanguage("rubber_plate", "橡胶板")
+	addItemLanguage("lime", "生石灰")
 
 	addItemLanguage("rocket_pattern", "火箭模版")
 	addItemLanguage("tier_1_rocket_frame", "一阶火箭框架")
@@ -50,10 +51,14 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addItemLanguage("infusion_treated_processor", "经灌注处理的逻辑处理器")
 	addItemLanguage("enrichment_treated_processor", "经富集处理的运算处理器")
-	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")
+	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")//不是粉碎？（doge）
 	addItemLanguage("mekanism_processor", "通用处理器")
 
+
+
 	addCastItemLanguage("mechanism", "构件")
+
+
 
 	addFluidLanguage("blood", "血液")
 	addFluidLanguage("pure_sand", "纯净沙")

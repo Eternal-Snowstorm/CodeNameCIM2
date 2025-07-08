@@ -121,4 +121,9 @@ ServerEvents.recipes((event) => {
 		.energy(10240)
 		.slag("#forge:slag")
 		.time(100)
+
+	// 生石灰
+	immersiveengineering.blast_furnace("cmi:lime")
+		.input("create:limestone")
+		.time(300)
 })

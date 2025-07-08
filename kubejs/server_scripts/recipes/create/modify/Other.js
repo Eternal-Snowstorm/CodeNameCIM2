@@ -71,10 +71,9 @@ ServerEvents.recipes((event) => {
 	], "ae2:sky_stone_block")
 
 
-	vintageimprovements.curving("create:fluid_pipe", [
-		"#forge:plates/copper"
-	])
-	vintageimprovements.curving("ad_astra:rocket_fin", [
-		"#forge:plates/steel"
-	]).mode(4)
+	vintageimprovements.curving("create:fluid_pipe","#forge:plates/copper")
+	vintageimprovements.curving("ad_astra:rocket_fin","#forge:plates/steel",4)
+
+
+	
 })
