@@ -39,4 +39,5 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("cured_rubber")
 	addAloneFluid("pure_sand")
 	addAloneFluid("test_ue_202507081853")
+	addAloneFluid("test_ue_202507081905")
 })

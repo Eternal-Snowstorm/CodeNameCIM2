@@ -90,4 +90,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.miningLevel["iron"])
 		.requiresTool(true)
+
+	// ??
+	event.create(`${global.namespace}:ue_test_1907`)
 })
