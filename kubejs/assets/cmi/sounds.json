@@ -6,5 +6,13 @@
 				"stream": true
 			}
 		]
+	},
+	"meme.starup": {
+		"sounds": [
+			{
+				"name": "cmi:meme/starup",
+				"stream": true
+			}
+		]
 	}
 }

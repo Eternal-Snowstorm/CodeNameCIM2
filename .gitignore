@@ -77,3 +77,4 @@ ESM
 !/config/capsule-common.toml
 !/config/nolijium.json5
 !/config/Mekanism/
+!/config/ding.toml

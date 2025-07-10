@@ -11,7 +11,6 @@ ServerEvents.recipes((event) => {
 
 	mekanism.crushing("cmi:ground_treated_processor", "ae2:engineering_processor")
 
-
 	create.mechanical_crafting("cmi:mekanism_processor", [
 		"A",
 		"B",
