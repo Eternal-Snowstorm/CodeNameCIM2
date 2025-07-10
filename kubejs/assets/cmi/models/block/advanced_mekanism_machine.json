@@ -1,0 +1,9 @@
+{
+	"parent": "cmi:custom/mm",
+	"textures": {
+		"all": "cmi:block/machine/ue/advanced_mekanism_machine",
+		"particle": "mekanism:block/steel_casing",
+		"1": "cmi:block/machine/ue/advanced_mekanism_machine"
+	},
+	"render_type": "cutout"
+}
