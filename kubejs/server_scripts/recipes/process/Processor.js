@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { vintageimprovements, create, mekanism } = event.recipes
+	let { create, mekanism } = event.recipes
 
 	mekanism.metallurgic_infusing(
 		"cmi:infusion_treated_processor",

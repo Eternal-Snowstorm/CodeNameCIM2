@@ -1,0 +1,39 @@
+{
+	"providers": [
+		{
+			"type": "caxton",
+			"regular": {
+				"file": "minecraft:font.ttf",
+				"shadow_offset": 0.5,
+				"scale_factor": 1.2
+			},
+			"bold": {
+				"file": "minecraft:font.ttf",
+				"shadow_offset": 0.5,
+				"scale_factor": 1.2
+			},
+			"italic": {
+				"file": "minecraft:font.ttf",
+				"shadow_offset": 0.5,
+				"scale_factor": 1.2
+			},
+			"bold_italic": {
+				"file": "minecraft:font.ttf",
+				"shadow_offset": 0.5,
+				"scale_factor": 1.2
+			}
+		},
+		{
+			"type": "reference",
+			"id": "minecraft:include/space"
+		},
+		{
+			"type": "reference",
+			"id": "minecraft:include/default"
+		},
+		{
+			"type": "reference",
+			"id": "minecraft:include/unifont"
+		}
+	]
+}

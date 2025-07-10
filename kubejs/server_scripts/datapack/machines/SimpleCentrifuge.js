@@ -112,7 +112,7 @@ ServerEvents.highPriorityData((event) => {
 				"type": "custommachinery:fluid",
 				"id": "output0",
 				"x": 160,
-				"y": 30
+				"y": 31
 			}
 		],
 		"jei": [
@@ -171,7 +171,7 @@ ServerEvents.highPriorityData((event) => {
 				"type": "custommachinery:fluid",
 				"id": "output0",
 				"x": 160,
-				"y": 30
+				"y": 31
 			}
 		]
 	})
