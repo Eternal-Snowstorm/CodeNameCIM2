@@ -65,4 +65,15 @@ ServerEvents.recipes((event) => {
 	create.compacting("2x createdieselgenerators:wood_chip", [
 		"2x #minecraft:logs"
 	])
+
+	// 墨水一套
+	create.filling("supplementaries:antique_ink", [
+		"minecraft:glass_bottle",
+		Fluid.of("create_enchantment_industry:ink", 250)
+	])
+
+	create.emptying([
+		Fluid.of("create_enchantment_industry:ink", 250),
+		"minecraft:glass_bottle"
+	], "supplementaries:antique_ink")
 })
