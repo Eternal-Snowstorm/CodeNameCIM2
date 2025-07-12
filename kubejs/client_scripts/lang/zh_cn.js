@@ -34,6 +34,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("silicon_mixure", "硅混合物")
 	addItemLanguage("rubber_plate", "橡胶板")
 	addItemLanguage("lime", "生石灰")
+	addItemLanguage("andesite_alloy_noodle_stage0", "安山合金刀削面(阶段1)")
+	addItemLanguage("andesite_alloy_noodle_stage1", "安山合金刀削面(阶段2)")
+	addItemLanguage("andesite_alloy_noodle_stage2", "安山合金刀削面(阶段3)")
+	addItemLanguage("andesite_alloy_noodle", "安山合金刀削面")
 
 	addItemLanguage("rocket_pattern", "火箭模版")
 	addItemLanguage("tier_1_rocket_frame", "一阶火箭框架")

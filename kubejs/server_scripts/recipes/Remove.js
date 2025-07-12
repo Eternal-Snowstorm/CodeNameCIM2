@@ -27,7 +27,8 @@ ServerEvents.recipes((event) => {
 		"mekanism:control_circuit/basic",
 		"mekanism:control_circuit/advanced",
 		"mekanism:control_circuit/elite",
-		"mekanism:control_circuit/ultimate"
+		"mekanism:control_circuit/ultimate",
+		"thermal:smelting/cured_rubber_from_smelting"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

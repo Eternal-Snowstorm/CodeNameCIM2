@@ -13,6 +13,14 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	// 农夫乐事刀子
+	event.get("farmersdelight:tools/knives")
+		.add("#forge:tools/knives")
+		.add("tconstruct:dagger")
+
+	event.get("forge:tools/knives")
+		.add("tconstruct:dagger")
+
 	event.get(`${global.namespace}:tables`)
 		.add("#forge:workbenches")
 		.add("tconstruct:tinkers_anvil")

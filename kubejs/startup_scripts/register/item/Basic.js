@@ -114,16 +114,21 @@ StartupEvents.registry("item", (event) => {
 	// mek-ae2 cpu
 	// 灌注
 	event.create(`${global.namespace}:infusion_treated_processor`)
+		.texture(`${global.namespace}:item/material/infusion_treated_processor`)
 
 	// 富集
 	event.create(`${global.namespace}:enrichment_treated_processor`)
+		.texture(`${global.namespace}:item/material/enrichment_treated_processor`)
 
 	// 粉碎
 	event.create(`${global.namespace}:ground_treated_processor`)
+		.texture(`${global.namespace}:item/material/ground_treated_processor`)
 
 	// 通用
 	event.create(`${global.namespace}:mekanism_processor`)
+		.texture(`${global.namespace}:item/material/mekanism_processor`)
 
 	// 计算机组件半成品
 	event.create(`${global.namespace}:incomplete_computer_component`)
+		.texture(`${global.namespace}:item/material/incomplete_computer_component`)
 })

@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "cmi:item/geological_hammer"
+        "layer0": "cmi:item/tool/geological_hammer"
     }
 }

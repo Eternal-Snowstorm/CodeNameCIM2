@@ -5,7 +5,6 @@ JEIEvents.information((event) => {
 	}
 
 	addJEIInfo("minecraft:andesite")
-	addJEIInfo("cookingforblockheads:sink")
 	addJEIInfo("ad_astra:cryo_fuel_bucket")
 	addJEIInfo("ad_astra:ice_shard")
 	addJEIInfo("cmi:bucket")
