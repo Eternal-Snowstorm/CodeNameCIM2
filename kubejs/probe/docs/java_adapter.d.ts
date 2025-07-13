@@ -1,0 +1,1 @@
+declare function JavaAdapter<T>(JavaClass: JavaClass<T> | T, overrides: Partial<T>, ...args: any[]): T

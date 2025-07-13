@@ -56,7 +56,7 @@ ESM
 
 # Docs
 /kubejs/probe/*
-!/kubejs/probe/docs/*
+!/kubejs/probe/docs/
 
 # Config
 /config/*
