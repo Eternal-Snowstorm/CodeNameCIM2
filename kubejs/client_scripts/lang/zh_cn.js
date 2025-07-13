@@ -486,4 +486,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${global.namespace}.venus_${key}_ore_node`, `金星${value}矿物节点`)
 		event.add(`block.${global.namespace}.glacio_${key}_ore_node`, `霜原${value}矿物节点`)
 	}
+
+	function addAdvancementLanguaue(key, title, desc) {
+		event.add(`advancements.${global.namespace}.${key}`, value)
+		event.add(`advancements.${global.namespace}.${key}`, desc)
+	}
 })
