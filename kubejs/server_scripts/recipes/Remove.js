@@ -333,6 +333,9 @@ ServerEvents.recipes((event) => {
 			type: "create:cutting",
 			input: "#minecraft:logs",
 			output: "#minecraft:planks"
+		}, {
+			type: "create:cutting",
+			output: "#forge:stripped_logs"
 		}
 	])
 

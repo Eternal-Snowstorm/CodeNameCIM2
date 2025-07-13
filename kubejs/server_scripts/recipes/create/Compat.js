@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs } = event.recipes
+	let { create, kubejs, ratatouille } = event.recipes
 
 	// 砖块
 	create.mixing(Fluid.of("tconstruct:seared_stone", 250), [
@@ -54,14 +54,11 @@ ServerEvents.recipes((event) => {
 	]).id("createaddition:filling/treated_wood_planks")
 
 	// 橡胶
-	create.mixing("2x thermal:rubber", [
+	ratatouille.squeezing("2x thermal:rubber", [
 		Fluid.of("thermal:latex", 500)
 	])
 
-	create.compacting("2x thermal:rubber", [
-		Fluid.of("thermal:latex", 500)
-	])
-
+	// 木屑
 	create.compacting("2x createdieselgenerators:wood_chip", [
 		"2x #minecraft:logs"
 	])

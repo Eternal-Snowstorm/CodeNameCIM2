@@ -19,7 +19,7 @@ RegisterNativeEvents.onJavaClassEvent($BlockEvent$FluidPlaceBlockEvent, (event) 
 	let block = event.getNewState().getBlock()
 
 	if (block.id === "minecraft:cobblestone") {
-		// 50%概率生成安山岩
+		// 25%概率生成安山岩
 		if (Math.random() < CHANCE) {
 			event.setNewState(Block.getBlock("minecraft:andesite").defaultBlockState())
 		} else {
@@ -35,7 +35,7 @@ RegisterNativeEvents.onJavaClassEvent($PipeCollisionEvent$Spill, (event) => {
 	let block = event.getState().block
 
 	if (block.id === "minecraft:stone") {
-		// 50%概率生成安山岩
+		// 25%概率生成安山岩
 		if (Math.random() < CHANCE) {
 			event.setState(Block.getBlock("minecraft:andesite").defaultBlockState())
 		} else {

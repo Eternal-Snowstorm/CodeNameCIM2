@@ -11,4 +11,5 @@ JEIEvents.information((event) => {
 	addJEIInfo("#ad_astra:power_consumption_machines")
 	addJEIInfo("engineered_schematics:multiblock_schematic")
 	addJEIInfo("cmi:siltsteel_ingot")
+	addJEIInfo("cmi:andesite_alloy_noodle")
 })

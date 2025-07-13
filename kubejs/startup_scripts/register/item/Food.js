@@ -13,10 +13,14 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/food/andesite_alloy_noodle/stage3`)
 		.food((food) => {
 			food.hunger(20)
+				.saturation(1)
 				.eaten((event) => {
-					let { player } = event
+					let { player, level } = event
+					let key = `message.${global.namespace}.food.andesite_alloy_noodle`
 
-					player.tell(Component.translate(`message.${global.namespace}.andesite_alloy_noodle`))
+					if (event.hand !== "MAIN_HAND" && !level.isClientSide()) {
+						player.tell(Component.translate(key).blue())
+					}
 				})
 		})
 })
