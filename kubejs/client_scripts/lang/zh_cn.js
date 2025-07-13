@@ -488,7 +488,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addAdvancementLanguaue(key, title, desc) {
-		event.add(`advancements.${global.namespace}.${key}`, value)
+		event.add(`advancements.${global.namespace}.${key}`, title)
 		event.add(`advancements.${global.namespace}.${key}`, desc)
 	}
 })
