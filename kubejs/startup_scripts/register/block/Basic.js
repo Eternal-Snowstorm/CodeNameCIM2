@@ -5,6 +5,13 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.miningLevel["wooden"])
 		.requiresTool(true)
 
+	// 背景
+	event.create(`${global.namespace}:blue_screen`)
+		.lightLevel(15)
+
+	event.create(`${global.namespace}:green_screen`)
+		.lightLevel(15)
+
 	let machineBlockRegister = [
 		"nature",
 		"wooden",
