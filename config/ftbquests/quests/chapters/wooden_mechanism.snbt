@@ -26,6 +26,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["01AE65C1634E3194"]
 			id: "6887A37B72AA97FA"
 			tasks: [{
 				id: "2C4C611879412CCE"
@@ -46,6 +47,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["6887A37B72AA97FA"]
 			id: "07E74FB0730F6F2A"
 			tasks: [{
 				id: "75FA176DB4C6E19E"
@@ -57,6 +59,10 @@
 			y: 4.5d
 		}
 		{
+			dependencies: [
+				"07E74FB0730F6F2A"
+				"6887A37B72AA97FA"
+			]
 			id: "558AB1EEAEE4FF10"
 			tasks: [{
 				id: "33DE674DAF16C182"
@@ -68,6 +74,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["558AB1EEAEE4FF10"]
 			id: "77DE8AABD50A1BA5"
 			tasks: [{
 				id: "060FA62D17060F9B"
@@ -79,6 +86,7 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["77DE8AABD50A1BA5"]
 			id: "4DDD4AE7B3C5B57A"
 			tasks: [{
 				id: "626FD3B961AD76FE"
@@ -90,12 +98,14 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["4DDD4AE7B3C5B57A"]
 			id: "1ADECAB6440F54A3"
 			tasks: [{
 				id: "6123E9C81D6324EE"
 				title: "plank"
 				type: "checkmark"
 			}]
+			title: "wooden_mechanism"
 			x: 11.5d
 			y: 1.5d
 		}
