@@ -1,0 +1,104 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wooden_mechanism"
+	group: ""
+	id: "2CDF2947F7A9E98F"
+	images: [{
+		height: 25.0d
+		image: "cmi:textures/quests/wooden.png"
+		rotation: 0.0d
+		width: 50.0d
+		x: -2.0d
+		y: -2.0d
+	}]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "01AE65C1634E3194"
+			tasks: [{
+				id: "481A5C5A52126F44"
+				title: "log"
+				type: "checkmark"
+			}]
+			x: -13.5d
+			y: -1.0d
+		}
+		{
+			id: "6887A37B72AA97FA"
+			tasks: [{
+				id: "2C4C611879412CCE"
+				title: "plank"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			id: "3ED5E985472EF9D2"
+			tasks: [{
+				id: "1B9A407534A38A7B"
+				title: "plank"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			id: "07E74FB0730F6F2A"
+			tasks: [{
+				id: "75FA176DB4C6E19E"
+				title: "plank"
+				type: "checkmark"
+			}]
+			title: "press"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			id: "558AB1EEAEE4FF10"
+			tasks: [{
+				id: "33DE674DAF16C182"
+				title: "plank"
+				type: "checkmark"
+			}]
+			title: "stick"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			id: "77DE8AABD50A1BA5"
+			tasks: [{
+				id: "060FA62D17060F9B"
+				title: "plank"
+				type: "checkmark"
+			}]
+			title: "cut"
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			id: "4DDD4AE7B3C5B57A"
+			tasks: [{
+				id: "626FD3B961AD76FE"
+				title: "plank"
+				type: "checkmark"
+			}]
+			title: "part"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			id: "1ADECAB6440F54A3"
+			tasks: [{
+				id: "6123E9C81D6324EE"
+				title: "plank"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+	]
+	title: "wooden_mechanism"
+}
