@@ -1,5 +1,5 @@
 {
-    "ldlib": {
-        "connection": "gtceu:block/casings/solid/machine_casing_inert_ptfe_ctm"
-    }
+	"ldlib": {
+		"connection": "cmi:block/machine/chemical_gas_extractor/side_ctm"
+	}
 }
