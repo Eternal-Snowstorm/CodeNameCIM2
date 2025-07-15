@@ -1,6 +1,6 @@
 {
-  "type": "forge:add_features",
-  "biomes": "#is_nether",
-  "features": "cmi:nether_uranium_ore",
-  "step": "underground_ores"
+	"type": "forge:add_features",
+	"biomes": "#minecraft:is_nether",
+	"features": "cmi:nether_uranium_ore",
+	"step": "underground_ores"
 }
