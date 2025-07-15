@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { tconstruct, farmersdelight, create, vintageimprovements } = event.recipes
+	let { tconstruct, farmersdelight, create, ratatouille } = event.recipes
 
 	// 橡胶板
 	create.pressing("cmi:rubber_plate", [
