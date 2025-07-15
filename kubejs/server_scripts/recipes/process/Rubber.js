@@ -44,4 +44,7 @@ ServerEvents.recipes((event) => {
 	tconstruct.casting_table("thermal:cured_rubber")
 		.fluid(Fluid.of("cmi:cured_rubber", 250))
 		.cooling_time(20)
+
+	//硫粉
+	create.milling("thermal:sulfur_dust","#forge:gems/sulfur")
 })
