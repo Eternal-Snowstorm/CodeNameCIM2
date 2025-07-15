@@ -13,6 +13,12 @@ ServerEvents.recipes((event) => {
 		"thermal:rubber"
 	], "#forge:tools/knives")
 
+	// 橡胶
+	ratatouille.squeezing("2x thermal:rubber", [
+		Fluid.of("thermal:latex", 500),
+		"ratatouille:sausage_casing"
+	])
+
 	// 二氧化硫(硫化剂)
 	event.custom({
 		"type": "vintageimprovements:pressurizing",

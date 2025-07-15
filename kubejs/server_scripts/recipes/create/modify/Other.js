@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create, vintageimprovements } = event.recipes
+	let { kubejs, create, createdieselgenerators, vintageimprovements } = event.recipes
 
 	// 空烈焰人燃烧室
 	kubejs.shaped("create:empty_blaze_burner", [
@@ -76,4 +76,17 @@ ServerEvents.recipes((event) => {
 	vintageimprovements.curving("ad_astra:rocket_fin", [
 		"#forge:plates/steel"
 	]).mode(4)
+
+	// 烤箱
+	kubejs.shaped("ratatouille:oven", [
+		"A",
+		"B",
+		"A"
+	], {
+		A: [
+			"#forge:ingots/industrial_iron",
+			"#forge:plates/industrial_iron"
+		],
+		B: "create:fluid_tank"
+	}).id("ratatouille:oven")
 })
