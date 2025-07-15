@@ -20,7 +20,7 @@
     "previewOverlay": true
   },
   "overlay": {
-    "alpha": 1.0,
+    "alpha": 0.5,
     "iconMode": "CENTERED",
     "animation": true,
     "disappearingDelay": 0.0,
@@ -31,7 +31,7 @@
     "overlayScale": 1.0,
     "overlayAnchorX": 0.5,
     "overlayAnchorY": 0.0,
-    "activeTheme": "cmi:stardew_valley",
+    "activeTheme": "cmi:windows_aero_lite",
     "themesHash": -1255227012,
     "overlayPosX": 0.5
   },

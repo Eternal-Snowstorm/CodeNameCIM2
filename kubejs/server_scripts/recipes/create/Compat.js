@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
 		"4x minecraft:weeping_vines",
 		"4x minecraft:twisting_vines",
 		Fluid.of("minecraft:lava", 250)
-	]).heated()
+	])
 
 	// 传送带
 	kubejs.shaped("4x create:belt_connector", [
