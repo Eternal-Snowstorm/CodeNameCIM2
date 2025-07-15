@@ -25,7 +25,8 @@ Ponder.tags((event) => {
 		"immersiveengineering:blastfurnace_preheater",
 		"immersiveengineering:blastbrick",
 		"cmi:crucible_base",
-		"cmi:crucible_tuyere"
+		"cmi:crucible_tuyere",
+		"mekanism:cardboard_box"
 	])
 
 	addPonderTag("tconstruct", "tconstruct:smeltery_controller", "Tinkers' Construct", [
