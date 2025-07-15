@@ -14,9 +14,8 @@ ServerEvents.recipes((event) => {
 	], "#forge:tools/knives")
 
 	// 橡胶
-	ratatouille.squeezing("2x thermal:rubber", [
-		Fluid.of("thermal:latex", 500),
-		"ratatouille:sausage_casing"
+	create.compacting("2x thermal:rubber", [
+		Fluid.of("thermal:latex", 500)
 	])
 
 	// 二氧化硫(硫化剂)

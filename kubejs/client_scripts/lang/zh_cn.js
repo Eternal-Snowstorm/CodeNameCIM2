@@ -233,6 +233,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("cmi:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 	addCommonTooltipLanguage("cmi:charged_amethyst", "拿到耳边能听到它一直在发出嗡嗡嗡的声音")
 	addCommonTooltipLanguage("#minecraft:pickaxes", "右键可破坏矿物节点")
+	addCommonTooltipLanguage("#minecraft:infiniburn_all", "上方的火焰可以无限燃烧")
 	addCommonTooltipLanguage("cmi:potion_mechanism", "右键获取大多数正面buff")
 
 	addJEIInfoLanguage("cmi:andesite_alloy_noodle", `"意大利面就应该拌42号混凝土. 因为这个螺丝钉的长度, 它很容易会直接影响到挖掘机的扭距, 你往里砸的时候, 一瞬间它就会产生大量的高能蛋白, 俗称UFO. 会严重影响经济的发展. 照你这么说, 炸鸡块要用92#汽油, 毕竟我们无法用光学透镜探测苏格拉底, 如果二氧化氢持续侵蚀这个机床组件, 那么我们早晚要在斐波那契曲线上安装一个胶原蛋白, 否则我们将无法改变蜜雪冰城与阿尔别克的叠加状态, 因为众所周知爱吃鸡摩人在捕鲲的时候往往需要用氢的同位素当做诱饵, 但是原子弹的新鲜程度又会直接影响到我国东南部的季风和洋流, 所以说在西伯利亚地区开设农学院显然是不合理的. \n

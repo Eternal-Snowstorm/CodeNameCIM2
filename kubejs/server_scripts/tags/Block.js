@@ -1,4 +1,8 @@
 ServerEvents.tags("block", (event) => {
+	event.get("minecraft:infiniburn_all")
+		.add("#forge:storage_blocks/charcoal")
+		.add("#forge:storage_blocks/coal")
+
 	event.get("forge:ores")
 		.add("ad_astra:moon_cheese_ore")
 

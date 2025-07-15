@@ -79,3 +79,4 @@ ESM
 !/config/nolijium.json5
 !/config/Mekanism/
 !/config/ding.toml
+!/config/supplementaries-common.toml

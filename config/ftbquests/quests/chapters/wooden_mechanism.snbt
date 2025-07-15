@@ -23,7 +23,7 @@
 				type: "checkmark"
 			}]
 			x: -13.5d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["01AE65C1634E3194"]
@@ -34,17 +34,7 @@
 				type: "checkmark"
 			}]
 			x: -9.0d
-			y: 1.0d
-		}
-		{
-			id: "3ED5E985472EF9D2"
-			tasks: [{
-				id: "1B9A407534A38A7B"
-				title: "plank"
-				type: "checkmark"
-			}]
-			x: -9.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6887A37B72AA97FA"]
@@ -56,13 +46,10 @@
 			}]
 			title: "press"
 			x: -1.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
-			dependencies: [
-				"07E74FB0730F6F2A"
-				"6887A37B72AA97FA"
-			]
+			dependencies: ["07E74FB0730F6F2A"]
 			id: "558AB1EEAEE4FF10"
 			tasks: [{
 				id: "33DE674DAF16C182"
@@ -83,7 +70,7 @@
 			}]
 			title: "cut"
 			x: 5.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["77DE8AABD50A1BA5"]
@@ -95,7 +82,7 @@
 			}]
 			title: "part"
 			x: 7.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4DDD4AE7B3C5B57A"]
@@ -106,8 +93,8 @@
 				type: "checkmark"
 			}]
 			title: "wooden_mechanism"
-			x: 11.5d
-			y: 1.5d
+			x: 11.0d
+			y: 2.0d
 		}
 	]
 	title: "wooden_mechanism"
