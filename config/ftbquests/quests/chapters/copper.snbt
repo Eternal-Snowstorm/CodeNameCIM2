@@ -1,0 +1,296 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "copper"
+	group: ""
+	id: "6E65D9A7DA7B3404"
+	images: [{
+		height: 24.0d
+		image: "cmi:textures/images/background/copper.png"
+		rotation: 0.0d
+		width: 52.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "58A8B52FAFFECD9E"
+			rewards: [{
+				id: "339CA4037C90D0F2"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "5762E8143D7C4D63"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/sulfur"
+					}
+				}
+				title: "Any #forge:gems/sulfur"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["58A8B52FAFFECD9E"]
+			hide_dependency_lines: true
+			id: "20F96D71B2750581"
+			size: 1.5d
+			tasks: [{
+				id: "452D1F3D2EC21B1D"
+				title: "milling"
+				type: "checkmark"
+			}]
+			x: -3.3214285714285694d
+			y: 7.285714285714292d
+		}
+		{
+			dependencies: ["20F96D71B2750581"]
+			hide_dependency_lines: true
+			id: "1378F4CE0C36AA2C"
+			rewards: [{
+				id: "0DABCA037272E733"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "7AB2579C225576FA"
+				item: "cmi:cured_rubber_bucket"
+				type: "item"
+			}]
+			x: -0.9642857142857224d
+			y: 5.285714285714299d
+		}
+		{
+			dependencies: ["70C97B8E5FA22F33"]
+			hide_dependency_lines: true
+			id: "4BBEC03C245EBD95"
+			rewards: [{
+				id: "38DA6920FCC12005"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "778BD2DF9BCE7180"
+				item: "cmi:rubber_plate"
+				type: "item"
+			}]
+			x: -4.357142857142847d
+			y: 4.428571428571445d
+		}
+		{
+			id: "60EC905E5B65496D"
+			rewards: [{
+				id: "6D857E2ACD5742CB"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0B4C52827C61977C"
+				item: "thermal:latex_bucket"
+				type: "item"
+			}]
+			x: -14.07142857142857d
+			y: -1.7857142857142705d
+		}
+		{
+			dependencies: ["60EC905E5B65496D"]
+			hide_dependency_lines: true
+			id: "70C97B8E5FA22F33"
+			rewards: [{
+				id: "49949755CA3E562D"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "76F5E94626BB4F90"
+				item: "thermal:rubber"
+				type: "item"
+			}]
+			x: -9.071428571428577d
+			y: -0.8214285714285694d
+		}
+		{
+			dependencies: ["1378F4CE0C36AA2C"]
+			hide_dependency_lines: true
+			id: "660239BFB83F4F56"
+			rewards: [{
+				id: "019740B61C29A586"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "520DFF481E2A88B5"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			x: 6.392857142857139d
+			y: 0.9285714285714306d
+		}
+		{
+			id: "3C46C64ACB32CC36"
+			rewards: [{
+				id: "02CEB8B848C76B4D"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "6EB377B547B1E4A2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/copper"
+					}
+				}
+				title: "Any #forge:plates/copper"
+				type: "item"
+			}]
+			x: -14.607142857142861d
+			y: 1.857142857142854d
+		}
+		{
+			dependencies: ["3C46C64ACB32CC36"]
+			hide_dependency_lines: true
+			id: "6B4BF166BA668546"
+			rewards: [{
+				id: "5433E5B23CC0A8F6"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "054E57CA80AC5F78"
+				title: "cutting"
+				type: "checkmark"
+			}]
+			x: -9.821428571428577d
+			y: 3.7857142857142847d
+		}
+		{
+			dependencies: ["6B4BF166BA668546"]
+			hide_dependency_lines: true
+			id: "627A68B48C6D99D3"
+			rewards: [{
+				id: "0F905C04F3F2B909"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "04D41FB175AF13AB"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:nuggets/copper"
+					}
+				}
+				title: "Any #forge:nuggets/copper"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7985E9CF35FE2DE3"
+				"627A68B48C6D99D3"
+			]
+			hide_dependency_lines: true
+			id: "477771D9702F6FC9"
+			rewards: [{
+				id: "1EFBF7E11346FEBF"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "339E5F8CA578BCAE"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: 2.75d
+			y: 3.7142857142857153d
+		}
+		{
+			dependencies: ["660239BFB83F4F56"]
+			hide_dependency_lines: true
+			id: "00F8EF8F51301823"
+			rewards: [{
+				id: "48B3B568F4083CF3"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "68BE0A609AFF4C01"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:buckets/water"
+					}
+				}
+				title: "Any #forge:buckets/water"
+				type: "item"
+			}]
+			x: 11.535714285714278d
+			y: 2.9285714285714306d
+		}
+		{
+			dependencies: ["00F8EF8F51301823"]
+			hide_dependency_lines: true
+			id: "535B0B3CBC4056DA"
+			rewards: [{
+				id: "02CFDD22F142AAF9"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0E95959F9DDFC902"
+				item: "cmi:mechanical_mechanism_part"
+				type: "item"
+			}]
+			x: 15.607142857142861d
+			y: -0.5d
+		}
+		{
+			id: "7985E9CF35FE2DE3"
+			rewards: [{
+				id: "7A4CF0281543AEAF"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "38CAD11C3E7CB2D5"
+				item: {
+					Count: 1
+					id: "vintageimprovements:convex_curving_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.1071428571428541d
+		}
+	]
+	title: "Copper"
+}

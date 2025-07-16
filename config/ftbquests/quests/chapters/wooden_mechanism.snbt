@@ -12,7 +12,7 @@
 		x: -2.0d
 		y: -2.0d
 	}]
-	order_index: 5
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -27,6 +27,7 @@
 		}
 		{
 			dependencies: ["01AE65C1634E3194"]
+			hide_dependency_lines: true
 			id: "6887A37B72AA97FA"
 			tasks: [{
 				id: "2C4C611879412CCE"
@@ -38,6 +39,7 @@
 		}
 		{
 			dependencies: ["6887A37B72AA97FA"]
+			hide_dependency_lines: true
 			id: "07E74FB0730F6F2A"
 			tasks: [{
 				id: "75FA176DB4C6E19E"
@@ -50,6 +52,7 @@
 		}
 		{
 			dependencies: ["07E74FB0730F6F2A"]
+			hide_dependency_lines: true
 			id: "558AB1EEAEE4FF10"
 			tasks: [{
 				id: "33DE674DAF16C182"
@@ -62,6 +65,7 @@
 		}
 		{
 			dependencies: ["558AB1EEAEE4FF10"]
+			hide_dependency_lines: true
 			id: "77DE8AABD50A1BA5"
 			tasks: [{
 				id: "060FA62D17060F9B"
@@ -74,6 +78,7 @@
 		}
 		{
 			dependencies: ["77DE8AABD50A1BA5"]
+			hide_dependency_lines: true
 			id: "4DDD4AE7B3C5B57A"
 			tasks: [{
 				id: "626FD3B961AD76FE"
@@ -86,6 +91,7 @@
 		}
 		{
 			dependencies: ["4DDD4AE7B3C5B57A"]
+			hide_dependency_lines: true
 			id: "1ADECAB6440F54A3"
 			tasks: [{
 				id: "6123E9C81D6324EE"
@@ -97,5 +103,5 @@
 			y: 2.0d
 		}
 	]
-	title: "wooden_mechanism"
+	title: "Wooden"
 }
