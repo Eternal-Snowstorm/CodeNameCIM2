@@ -39,5 +39,9 @@ Ponder.registry((event) => {
 		.scene("1", "1", "cmi:dev_ftb/ftb_precision", (scene) => {
 			scene.showStructure()
 			scene.scaleSceneView(0.2)
+        })
+		.scene("1", "1", "cmi:dev_ftb/ftb_thermal", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.4)
 		})
 })
