@@ -1,63 +1,63 @@
 ServerEvents.recipes((event) => {
 	let { create } = event.recipes
-	let inc_railc = "create:railway_casing"
-	let inc_stus = "cmi:dense_sturdy_sheet"
+	let incRailc = "create:railway_casing"
+	let incStus = "cmi:dense_sturdy_sheet"
 
 	create.sequenced_assembly("2x railways:track_coupler", [
-		inc_railc
+		incRailc
 	], [
-		create.cutting(inc_railc, inc_railc),
-		create.deploying(inc_railc, [inc_railc, "cmi:railway_mechanism"]),
-		create.deploying(inc_railc, [inc_railc, "create:belt_connector"]),
-		create.deploying(inc_railc, [inc_railc, "minecraft:redstone_torch"]),
-		create.deploying(inc_railc, [inc_railc, "minecraft:heavy_weighted_pressure_plate"]),
-	]).transitionalItem(inc_railc).loops(1).id("railways:crafting/track_coupler")
+		create.cutting(incRailc, incRailc),
+		create.deploying(incRailc, [incRailc, "cmi:railway_mechanism"]),
+		create.deploying(incRailc, [incRailc, "create:belt_connector"]),
+		create.deploying(incRailc, [incRailc, "minecraft:redstone_torch"]),
+		create.deploying(incRailc, [incRailc, "minecraft:heavy_weighted_pressure_plate"]),
+	]).transitionalItem(incRailc).loops(1).id("railways:crafting/track_coupler")
 
 	create.sequenced_assembly("8x create:schedule", [
-		inc_stus
+		incStus
 	], [
-		create.cutting(inc_stus, inc_stus),
-		create.deploying(inc_stus, [inc_stus, "cmi:railway_mechanism"]),
-		create.deploying(inc_stus, [inc_stus, "minecraft:book"]),
-	]).transitionalItem(inc_stus).loops(1).id("create:crafting/kinetics/schedule")
+		create.cutting(incStus, incStus),
+		create.deploying(incStus, [incStus, "cmi:railway_mechanism"]),
+		create.deploying(incStus, [incStus, "minecraft:book"]),
+	]).transitionalItem(incStus).loops(1).id("create:crafting/kinetics/schedule")
 
 	create.sequenced_assembly("8x create:track_station", [
-		inc_railc
+		incRailc
 	], [
-		create.deploying(inc_railc, [inc_railc, "minecraft:stone_pressure_plate"]),
-		create.cutting(inc_railc, inc_railc),
-		create.deploying(inc_railc, [inc_railc, "cmi:railway_mechanism"]),
-		create.deploying(inc_railc, [inc_railc, "minecraft:redstone"]),
-		create.deploying(inc_railc, [inc_railc, "cmi:dense_sturdy_sheet"]),
-	]).transitionalItem(inc_railc).loops(1).id("create:crafting/kinetics/track_station")
+		create.deploying(incRailc, [incRailc, "minecraft:stone_pressure_plate"]),
+		create.cutting(incRailc, incRailc),
+		create.deploying(incRailc, [incRailc, "cmi:railway_mechanism"]),
+		create.deploying(incRailc, [incRailc, "minecraft:redstone"]),
+		create.deploying(incRailc, [incRailc, "cmi:dense_sturdy_sheet"]),
+	]).transitionalItem(incRailc).loops(1).id("create:crafting/kinetics/track_station")
 
 	create.sequenced_assembly("4x create:track_signal", [
-		inc_railc
+		incRailc
 	], [
-		create.pressing(inc_railc, inc_railc),
-		create.deploying(inc_railc, [inc_railc, "cmi:railway_mechanism"]),
-		create.deploying(inc_railc, [inc_railc, "create:copper_sheet"]),
-		create.deploying(inc_railc, [inc_railc, "create:electron_tube"]),
-		create.deploying(inc_railc, [inc_railc, "create:electron_tube"]),
-	]).transitionalItem(inc_railc).loops(1).id("create:crafting/kinetics/track_signal")
+		create.pressing(incRailc, incRailc),
+		create.deploying(incRailc, [incRailc, "cmi:railway_mechanism"]),
+		create.deploying(incRailc, [incRailc, "create:copper_sheet"]),
+		create.deploying(incRailc, [incRailc, "create:electron_tube"]),
+		create.deploying(incRailc, [incRailc, "create:electron_tube"]),
+	]).transitionalItem(incRailc).loops(1).id("create:crafting/kinetics/track_signal")
 
 	create.sequenced_assembly("4x create:track_observer", [
-		inc_railc
+		incRailc
 	], [
-		create.deploying(inc_railc, [inc_railc, "minecraft:observer"]),
-		create.cutting(inc_railc, inc_railc),
-		create.deploying(inc_railc, [inc_railc, "cmi:railway_mechanism"]),
-		create.deploying(inc_railc, [inc_railc, "minecraft:redstone"]),
-	]).transitionalItem(inc_railc).loops(1).id("create:crafting/kinetics/track_observer")
+		create.deploying(incRailc, [incRailc, "minecraft:observer"]),
+		create.cutting(incRailc, incRailc),
+		create.deploying(incRailc, [incRailc, "cmi:railway_mechanism"]),
+		create.deploying(incRailc, [incRailc, "minecraft:redstone"]),
+	]).transitionalItem(incRailc).loops(1).id("create:crafting/kinetics/track_observer")
 
 	create.sequenced_assembly("4x create:controls", [
-		inc_railc
+		incRailc
 	], [
-		create.deploying(inc_railc, [inc_railc, "create:cogwheel"]),
-		create.deploying(inc_railc, [inc_railc, "create:cogwheel"]),
-		create.deploying(inc_railc, [inc_railc, "cmi:railway_mechanism"]),
-		create.deploying(inc_railc, [inc_railc, "minecraft:lever"]),
-		create.deploying(inc_railc, [inc_railc, "minecraft:lever"]),
-		create.deploying(inc_railc, [inc_railc, "create:electron_tube"]),
-	]).transitionalItem(inc_railc).loops(1).id("create:crafting/kinetics/controls")
+		create.deploying(incRailc, [incRailc, "create:cogwheel"]),
+		create.deploying(incRailc, [incRailc, "create:cogwheel"]),
+		create.deploying(incRailc, [incRailc, "cmi:railway_mechanism"]),
+		create.deploying(incRailc, [incRailc, "minecraft:lever"]),
+		create.deploying(incRailc, [incRailc, "minecraft:lever"]),
+		create.deploying(incRailc, [incRailc, "create:electron_tube"]),
+	]).transitionalItem(incRailc).loops(1).id("create:crafting/kinetics/controls")
 })

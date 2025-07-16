@@ -5,9 +5,9 @@ ServerEvents.recipes((event) => {
 
 	//祛魔池
 	kubejs.shaped("create_enchantment_industry:disenchanter", [
-		" C ",
-		" B ",
-		" A "
+		"C",
+		"B",
+		"A"
 	], {
 		A: mech,
 		B: casing,
