@@ -141,6 +141,9 @@ ServerEvents.recipes((event) => {
 		event.remove({
 			id: `create:crushing/netherrack`
 		})
+		event.remove({
+			id: `create:crushing/obsidian`
+		})
 	})
 
 	let removeItemInputRecipes = [
