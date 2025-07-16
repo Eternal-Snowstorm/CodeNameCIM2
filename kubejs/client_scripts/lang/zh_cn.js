@@ -34,6 +34,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("silicon_mixure", "硅混合物")
 	addItemLanguage("rubber_plate", "橡胶板")
 	addItemLanguage("lime", "生石灰")
+	addItemLanguage("super_knife", "纯粹小刀")
 	addItemLanguage("andesite_alloy_noodle_stage0", "安山合金刀削面(阶段0)")
 	addItemLanguage("andesite_alloy_noodle_stage1", "安山合金刀削面(阶段1)")
 	addItemLanguage("andesite_alloy_noodle_stage2", "安山合金刀削面(阶段2)")
