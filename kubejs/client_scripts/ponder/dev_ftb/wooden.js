@@ -70,3 +70,11 @@ Ponder.registry((event) => {
 		scene.scaleSceneView(0.3)
 	})
 })
+Ponder.registry((event) => {
+	event.create([
+		"cmi:green_screen",
+	]).scene("1", "1", "cmi:dev_ftb/ftb_precision", (scene) => {
+		scene.showStructure()
+		scene.scaleSceneView(0.2)
+	})
+})
