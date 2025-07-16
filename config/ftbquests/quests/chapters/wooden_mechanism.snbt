@@ -6,7 +6,7 @@
 	id: "2CDF2947F7A9E98F"
 	images: [{
 		height: 25.0d
-		image: "cmi:textures/quests/wooden.png"
+		image: "cmi:textures/images/background/wooden.png"
 		rotation: 0.0d
 		width: 50.0d
 		x: -2.0d
