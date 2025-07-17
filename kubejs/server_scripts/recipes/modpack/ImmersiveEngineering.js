@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { immersiveengineering } = event.recipes
+
 	// 德尔塔溶液
 	event.custom({
 		"type": "immersiveindustry:chemical",

@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
 	event.create("cmi:the_accelerator_of_mechanism_power")
-		.scene("cmi:the_accelerator_of_mechanism_power", "How to use the accelerator", "cmi:mechanism/stone", (scene) => {
+		.scene("cmi:the_accelerator_of_mechanism_power", "How to use the accelerator", "cmi:modpack/stone", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
@@ -9,7 +9,7 @@ Ponder.registry((event) => {
 			scene.overlay.showOutline("blue", {}, [3, 0, 3], 35)
 			scene.text(30, "This is an accelerator", [3, 1.5, 3])
 			scene.idle(40)
-			scene.text(30, "Rightclick it with an iron mechanism in hand...", [3, 1.5, 3])
+			scene.text(30, "R-Click it with an iron mechanism in hand...", [3, 1.5, 3])
 			scene.idle(40)
 			scene.showControls(30, [3, 1.5, 3], "up")
 				.rightClick()
