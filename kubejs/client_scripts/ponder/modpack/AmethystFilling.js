@@ -1,5 +1,5 @@
 Ponder.registry((event) => {
-	event.create("#forge:gems/amethyst")
+	event.create("minecraft:amethyst_shard")
 		.scene(`${global.namespace}:amethyst_filling`, "Amethyst Filling", "cmi:modpack/amethyst_filling", (scene) => {
 			let amethyst0 = "minecraft:medium_amethyst_bud"
 			scene.showBasePlate()
