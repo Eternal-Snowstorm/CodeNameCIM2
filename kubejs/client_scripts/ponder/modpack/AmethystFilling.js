@@ -2,6 +2,8 @@ Ponder.registry((event) => {
 	event.create("minecraft:amethyst_shard")
 		.scene(`${global.namespace}:amethyst_filling`, "Amethyst Filling", "cmi:modpack/amethyst_filling", (scene) => {
 			let amethyst0 = "minecraft:medium_amethyst_bud"
+			let amethyst1 = "minecraft:large_amethyst_bud"
+			let amethyst2 = "minecraft:amethyst_cluster"
 			scene.showBasePlate()
 
 			scene.idle(2)
@@ -34,5 +36,16 @@ Ponder.registry((event) => {
 			scene.addKeyframe()
 			scene.world.setBlocks([1, 1, 1], amethyst0)
 			scene.world.showSection([1, 1, 1], Direction.DOWN)
+			scene.world.showSection([1, 2, 1], Direction.DOWN)
+			scene.idle(20)
+			scene.world.setBlocks([1, 2, 1], "minecraft:blue_stained_glass_pane")
+			scene.idle(20)
+			scene.world.setBlocks([1, 2, 1], "minecraft:air")
+			scene.world.setBlocks([1, 1, 1], amethyst1)
+			scene.idle(20)
+			scene.world.setBlocks([1, 2, 1], "minecraft:blue_stained_glass_pane")
+			scene.idle(20)
+			scene.world.setBlocks([1, 2, 1], "minecraft:air")
+			scene.world.setBlocks([1, 1, 1], amethyst2)
 		})
 })
