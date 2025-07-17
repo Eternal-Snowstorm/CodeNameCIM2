@@ -48,4 +48,16 @@ Ponder.registry((event) => {
 			scene.showStructure()
 			scene.scaleSceneView(0.2)
 		})
+		.scene("1", "1", "cmi:dev_ftb/ftb_pigiron", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.3)
+		})
+		.scene("1", "1", "cmi:dev_ftb/ftb_nature", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.3)
+		})
+		.scene("1", "1", "cmi:dev_ftb/ftb_enchanted", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.3)
+		})
 })
