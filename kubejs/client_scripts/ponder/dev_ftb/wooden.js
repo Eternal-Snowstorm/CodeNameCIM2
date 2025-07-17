@@ -44,4 +44,8 @@ Ponder.registry((event) => {
 			scene.showStructure()
 			scene.scaleSceneView(0.4)
 		})
+		.scene("1", "1", "cmi:dev_ftb/ftb_cobalt", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.2)
+		})
 })
