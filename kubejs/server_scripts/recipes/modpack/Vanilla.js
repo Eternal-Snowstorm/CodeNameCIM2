@@ -51,7 +51,10 @@ ServerEvents.recipes((event) => {
 		"A A",
 		"AAA"
 	], {
-		A: "#forge:plates/cast_iron"
+		A: [
+			"#forge:plates/cast_iron",
+			"#forge:plates/industrial_iron"
+		]
 	})
 
 	// 坩埚风口
@@ -60,8 +63,14 @@ ServerEvents.recipes((event) => {
 		"B B",
 		"ABA"
 	], {
-		A: "#forge:ingots/cast_iron",
-		B: "#forge:plates/cast_iron"
+		A: [
+			"#forge:ingots/cast_iron",
+			"#forge:ingots/industrial_iron"
+		],
+		B: [
+			"#forge:plates/cast_iron",
+			"#forge:plates/industrial_iron"
+		]
 	})
 
 	// 坩埚燃烧室
@@ -70,8 +79,14 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"AAA"
 	], {
-		A: "#forge:ingots/cast_iron",
-		B: "#forge:plates/cast_iron",
+		A: [
+			"#forge:ingots/cast_iron",
+			"#forge:ingots/industrial_iron"
+		],
+		B: [
+			"#forge:plates/cast_iron",
+			"#forge:plates/industrial_iron"
+		],
 		C: "minecraft:blast_furnace"
 	}).id("immersiveindustry:crafting/burning_chamber")
 

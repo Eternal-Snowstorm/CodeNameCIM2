@@ -25,6 +25,6 @@ StartupEvents.registry("item", (event) => {
 			isDamageable() {
 				return true
 			}
-		}, $Tiers.DIAMOND, 0.5, -2.0, new $Item$Properties())
+		}, $Tiers.NETHERITE, 0.5, -2.0, new $Item$Properties())
 	}).tag("forge:tools/knives")
 })

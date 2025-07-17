@@ -14,8 +14,8 @@ ServerEvents.highPriorityData((event) => {
 			"paused": {
 				"block": "cmi:machine/simple_centrifuge/off"
 			},
-			"interaction_sound": "minecraft:oak_planks",
-			"mining_level": "minecraft:needs_wooden_tool",
+			"interaction_sound": "create:andesite_casing",
+			"mining_level": "minecraft:needs_stone_tool",
 			"requires_tool": true
 		},
 		"components": [

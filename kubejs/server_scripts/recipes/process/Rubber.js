@@ -45,5 +45,7 @@ ServerEvents.recipes((event) => {
 		.cooling_time(20)
 
 	//硫粉
-	create.milling("thermal:sulfur_dust","#forge:gems/sulfur")
+	create.milling("thermal:sulfur_dust", [
+		"#forge:gems/sulfur"
+	])
 })

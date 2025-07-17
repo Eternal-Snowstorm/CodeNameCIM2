@@ -72,7 +72,7 @@ StartupEvents.registry("item", (event) => {
 })
 StartupEvents.registry("block", (event) => {
 	materials.forEach((material) => {
-		material.types.forEach((type) => { 
+		material.types.forEach((type) => {
 			if (type === "block") {
 				event.create(`${global.namespace}:${material.name}_block`)
 					.textureAll(`${global.namespace}:block/material/color/storage_blocks`)
@@ -161,6 +161,10 @@ addMaterial("cast_iron", 0x4D4D4D, "iron")
 	.dust()
 	.nugget()
 	.block()
+	.molten()
+
+// 工业铁
+addMaterial("industrial_iron", 0x4E4E4E, "iron")
 	.molten()
 
 // 戴斯

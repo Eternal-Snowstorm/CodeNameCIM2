@@ -21,7 +21,7 @@ const materialColor: Coloring = {
 	brass: 0xFFC040,
 	shadow_steel: 0x383040,
 	refined_radiance: 0xE8E8F8,
-	industrial_iron: 0x505050,
+	industrial_iron: 0x4E4E4E,
 	vanadium: 0xD0E0E8,
 	aluminum: 0xB8C0C0,
 	uranium: 0x288010,

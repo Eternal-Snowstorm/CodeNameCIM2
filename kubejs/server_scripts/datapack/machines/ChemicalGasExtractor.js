@@ -14,7 +14,7 @@ ServerEvents.highPriorityData((event) => {
 			"paused": {
 				"block": "cmi:machine/chemical_gas_extractor/off"
 			},
-			"interaction_sound": "minecraft:furnace",
+			"interaction_sound": "minecraft:netherite_block",
 			"requires_tool": true,
 			"mining_level": "minecraft:needs_diamond_tool"
 		},

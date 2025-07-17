@@ -86,6 +86,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("uranium", "铀")
 	addMaterialLanguage("siltsteel", "泓钢")
 	addMaterialLanguage("cast_iron", "铸铁")
+	addMaterialLanguage("industrial_iron", "工业铁")
 	addMaterialLanguage("desh", "戴斯")
 	addMaterialLanguage("ostrum", "紫金")
 	addMaterialLanguage("calorite", "耐热金属")
@@ -333,6 +334,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	mechanismGroup.forEach(([material, name]) => {
 		addFlashDriveLanguage(material, name)
 		addMechanismLanguage(material, name)
+		addMechanismMachineLanguage(material, name)
 	})
 
 	let completeMechanismGroup = [
@@ -366,6 +368,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addMechanismLanguage(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism`, `${value}构件`)
 		event.add(`item.${global.namespace}.incomplete_${material}_mechanism`, `${value}构件(半成品)`)
+	}
+
+	function addMechanismMachineLanguage(material, value) {
+		event.add(`block.${global.namespace}.${material}_machine`, `${value}机器`)
 	}
 
 	function addCompleteMechanismLanguage(material, value) {
@@ -445,11 +451,6 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addHeatedLanguage(key, value) {
 		event.add(`create.recipe.heat_requirement.${key}`, value)
-	}
-
-	function addMusicDiscLanguage(key, value, author) {
-		event.add(`item.${global.namespace}.${key}`, value)
-		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
 	}
 
 	function addPaintingLanguage(key, title, author) {
