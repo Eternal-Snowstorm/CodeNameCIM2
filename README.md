@@ -9,11 +9,6 @@
 
 </div>
 
-> [!TIP]
->
-> 本整合包仍在制作中
-> 由于最近临近考期, 所以整个6月的更新量将会有所下降, 还请见谅
-
 ## Stars 历史
 
 [![Star 历史](https://starchart.cc/VechniMetel/CodeNameCIM2.svg?variant=adaptive)](https://starchart.cc/VechniMetel/CodeNameCIM2)
@@ -33,12 +28,6 @@ successor/improvement of `CIM(Creare: Infinity Mechanism)`.
 Currently in Beta stage.
 
 </div>
-
-> [!TIP]
->
-> This modpack is still under development.
-> As exam season approaches, updates will slow down throughout June.
-> Thank you for your understanding.
 
 ## Star History
 
