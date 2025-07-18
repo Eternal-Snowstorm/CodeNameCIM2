@@ -1,21 +1,21 @@
 # Chinese
-## CMI用户使用条款2.0
+## CMI用户使用条款2.1
 
 ### 术语定义:
 
 * **我们**
-    * "CMI"开发团队
+    * **"CMI"开发团队**
 * **本产品**
-    * 整合包
+    * **整合包**
 * **本条款**
-    * 您现在正在浏览的文件
+    * **您现在正在浏览的文件**
 * **用户**
-    * 使用者
-    * 正在阅读条款的您
+    * **使用者**
+    * **正在阅读条款的您**
 * **违约者**
-    * 违反本条款的用户
+    * **违反本条款的用户**
 * **开源**
-    * 其源码必须可见, 并允许重新分发和修改
+    * **其源码必须可见, 并允许重新分发和修改**
 
 **任何用户在使用由我们研发的本产品前, 请您仔细阅读并透彻理解本声明.**
 
@@ -59,26 +59,26 @@
 ### Definitions:
 
 * **We**
-  Refers to the development team of "CMI".
+  **Refers to the development team of "CMI".**
 
 * **This Product**
-  Refers to the modpack developed by us.
+  **Refers to the modpack developed by us.**
 
 * **These Terms**
-  Refers to the document you are currently reading.
+  **Refers to the document you are currently reading.**
 
 * **User**
-  Refers to the individual using this product or reading these terms.
+  **Refers to the individual using this product or reading these terms.**
 
 * **Violator**
-  Refers to any user who violates these terms.
+  **Refers to any user who violates these terms.**
 
 * **Open Source**
-  The source code must be publicly visible and allow redistribution and modification.
+  **The source code must be publicly visible and allow redistribution and modification.**
 
-Before using this product developed by us, please read and fully understand this statement carefully.
+**Before using this product developed by us, please read and fully understand this statement carefully.**
 
-You may choose not to use this product. However, once you use it, you are deemed to have fully acknowledged and accepted all contents of this agreement.
+**You may choose not to use this product. However, once you use it, you are deemed to have fully acknowledged and accepted all contents of this agreement.**
 
 ---
 
