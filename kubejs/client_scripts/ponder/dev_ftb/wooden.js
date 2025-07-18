@@ -68,4 +68,20 @@ Ponder.registry((event) => {
 			scene.showStructure()
 			scene.scaleSceneView(0.3)
 		})
+		.scene("1", "1", "cmi:dev_ftb/ftb_resonant", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.3)
+		})
+		.scene("1", "1", "cmi:dev_ftb/ftb_light_ie", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.3)
+		})
+		.scene("1", "1", "cmi:dev_ftb/ftb_heavy_ie", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.3)
+		})
+		.scene("1", "1", "cmi:dev_ftb/ftb_smart", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.2)
+		})
 })

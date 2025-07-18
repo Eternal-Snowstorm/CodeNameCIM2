@@ -199,6 +199,14 @@ ServerEvents.tags("item", (event) => {
 	event.get("minecraft:pickaxes")
 		.add("#forge:tools/paxels")
 
+	event.get("forge:salt")
+		.add("ratatouille:salt")
+		.add("cmi:nacl")
+
+	event.get("forge:dusts/salt")
+		.add("ratatouille:salt")
+		.add("cmi:nacl")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",

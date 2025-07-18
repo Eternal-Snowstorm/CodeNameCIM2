@@ -2,11 +2,11 @@ ServerEvents.recipes((event) => {
 	let { create } = event.recipes
 
 	create.deploying("4x ad_astra:steel_cable", [
-		"#forge:rods/copper",
+		"#forge:rods/silver",
 		"#forge:plates/steel"
 	])
 	create.deploying("4x ad_astra:desh_cable", [
-		"#forge:rods/copper",
+		"#forge:rods/silver",
 		"#forge:plates/desh"
 	])
 	create.deploying("4x ad_astra:desh_fluid_pipe", [

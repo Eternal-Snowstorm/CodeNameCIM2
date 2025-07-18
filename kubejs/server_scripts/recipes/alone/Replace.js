@@ -8,4 +8,8 @@ ServerEvents.recipes((event) => {
 	event.replaceInput({}, "mekanism:advanced_control_circuit", "cmi:advanced_mekanism_mechanism")
 	event.replaceInput({}, "mekanism:elite_control_circuit", "cmi:elite_mekanism_mechanism")
 	event.replaceInput({}, "mekanism:ultimate_control_circuit", "cmi:ultimate_mekanism_mechanism")
+	
+	event.replaceInput({}, "mekanism:salt", "#forge:salt")
+	event.replaceInput({}, "ratatouille:salt", "#forge:salt")
+	event.replaceInput({}, "cmi:nacl", "#forge:salt")
 })

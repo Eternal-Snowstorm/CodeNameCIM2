@@ -33,6 +33,11 @@ ServerEvents.recipes((event) => {
 		"minecraft:chorus_fruit"
 	]).heated()
 
+	//石英纤维
+	create.mixing("ae2:quartz_fiber", [
+		"ae2:certus_quartz_dust","#forge:glass"
+	])
+
 	// 盐水
 	create.mixing(Fluid.of("mekanism:brine", 50), [
 		Fluid.of("minecraft:water", 50),

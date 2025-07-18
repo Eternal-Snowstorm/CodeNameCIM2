@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
 
 	mekanism.enriching("cmi:enrichment_treated_processor", "ae2:calculation_processor")
 
-	mekanism.crushing("cmi:ground_treated_processor", "ae2:engineering_processor")
+	mekanism.sawing( "ae2:engineering_processor","cmi:ground_treated_processor")
 
 	create.mechanical_crafting("cmi:mekanism_processor", [
 		"A",
