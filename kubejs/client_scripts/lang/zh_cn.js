@@ -61,6 +61,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addCastItemLanguage("mechanism", "构件")
 
+	addFluidLanguage("steam", "蒸汽")
 	addFluidLanguage("blood", "血液")
 	addFluidLanguage("pure_sand", "纯净沙")
 	addFluidLanguage("molten_source_sapphire", "熔融蓝源晶")
@@ -95,6 +96,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMachineLanguage("flash_disk_writer", "闪存盘写入器")
 	addMachineLanguage("chemical_gas_extractor", "化学气体抽取器")
 	addMachineLanguage("simple_centrifuge", "丐版离心机")
+	addMachineLanguage("steam_boiler", "青铜蒸汽锅炉")
+	addMachineLanguage("large_steam_boiler", "大型青铜蒸汽锅炉")
 
 	addMBDMachineLanguage("proxy_part_block", "多方块机器部件方块")
 	addMBDMachineLanguage("accelerator_energy_input", "大型构件催生器能量输入口")
@@ -167,12 +170,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("compression_end_stone_dust_block", "压缩末地石粉块")
 	addBlockLanguage("crucible_base", "底座")
 	addBlockLanguage("crucible_tuyere", "风口")
-
-	addBlockLanguage("andesite_machine", "安山机械方块")
-	addBlockLanguage("brass_machine", "黄铜机械方块")
-	addBlockLanguage("copper_machine", "铜制机械方块")
-	addBlockLanguage("me_machine", "智能机械方块")
-	addBlockLanguage("mekanism_machine", "通用机械方块")
+	addBlockLanguage("bronze_casing", "青铜外壳")
 
 	for (let i = 1; i <= 14; i++) {
 		addPaintingLanguage(`rr${i}`, `Aleegos(${i})`, "Aleegos Reality Redemption")

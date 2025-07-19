@@ -112,8 +112,8 @@ StartupEvents.registry("block", (event) => {
 		.model(`${global.namespace}:block/rocket_pattern/rocket_pattern`)
 		.hardness(5)
 		.resistance(5)
-		.item((item) => { 
-			item.maxStackSize(1) 
+		.item((item) => {
+			item.maxStackSize(1)
 		})
 		.notSolid()
 		.defaultTranslucent()
@@ -121,5 +121,13 @@ StartupEvents.registry("block", (event) => {
 		.box(0, 0, 0, 16, 45, 16, true)
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.toolType["axe"])
+		.tagBlock("create:wrench_pickup")
+
+	// 青铜外壳
+	event.create(`${global.namespace}:bronze_casing`)
+		.soundType(SoundType.METAL)
+		.hardness(6)
+		.resistance(6)
+		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock("create:wrench_pickup")
 })

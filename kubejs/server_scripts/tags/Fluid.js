@@ -33,4 +33,7 @@ ServerEvents.tags("fluid", (event) => {
 	
 	event.get("forge:brine")
 		.add("cmi:nacl_solution")
+
+	event.get("forge:steam")
+		.add("cmi:steam")
 })

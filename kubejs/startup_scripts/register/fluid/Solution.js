@@ -1,8 +1,8 @@
 function addSolution(name, color) {
 	StartupEvents.registry("fluid", (event) => {
 		event.create(`${global.namespace}:${name}_solution`)
-			.flowingTexture(`${global.namespace}:block/fluid/solution/flow`)
-			.stillTexture(`${global.namespace}:block/fluid/solution/still`)
+			.flowingTexture(`${global.namespace}:fluid/solution/flow`)
+			.stillTexture(`${global.namespace}:fluid/solution/still`)
 			.thinTexture(color)
 			.bucketColor(color)
 
