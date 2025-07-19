@@ -10,7 +10,7 @@
 	#EG: modname:modsound.boing
 	#
 	#If you want to use external sounds, consider looking into the mods that add resources
-	name = "cmi:meme.starup"
+	name = "minecraft:entity.experience_orb.pickup"
 	#Volume of the volume (when Minecraft loads)
 	#Range: 0.0 ~ 10.0
 	volume = 0.25
