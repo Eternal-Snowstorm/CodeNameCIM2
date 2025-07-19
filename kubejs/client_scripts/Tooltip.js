@@ -15,6 +15,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:potion_mechanism")
 	addCommonTooltip("#minecraft:pickaxes")
 	addCommonTooltip("#minecraft:infiniburn_all")
+	addCommonTooltip("cmi:super_knife")
 
 	addAccelerateTooltip("cmi:stone_mechanism")
 	addAccelerateTooltip("cmi:andesite_mechanism")
