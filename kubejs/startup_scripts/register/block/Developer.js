@@ -11,6 +11,7 @@ StartupEvents.registry("block", (event) => {
 			.defaultCutout()
 			.notSolid()
 			.noCollision()
+			.tag(`${global.namespace}:dev_doll`)
 	}
 	// UE
 	addDeveloperDoll("unknown_entity_")

@@ -112,10 +112,19 @@ ServerEvents.recipes((event) => {
 		"minecraft:dirt"
 	])
 
+	// IOBlock
 	Ingredient.of("#cmi:io_debug_block")
 		.getItemIds()
 		.forEach((id) => {
 			minecraft.stonecutting(id, "cmi:gui_block")
 			minecraft.stonecutting(id, "#cmi:io_debug_block")
+		})
+
+	// 公仔
+	Ingredient.of("#cmi:dev_doll")
+		.getItemIds()
+		.forEach((id) => {
+			minecraft.stonecutting(id, "#minecraft:wool")
+			minecraft.stonecutting(id, "#cmi:dev_doll")
 		})
 })
