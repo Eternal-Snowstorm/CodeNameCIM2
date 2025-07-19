@@ -1,0 +1,76 @@
+{
+	"loader": "forge:obj",
+	"model": "cmi:models/block/rocket_pattern/rocket_pattern.obj",
+	"flip_v": true,
+	"textures": {
+		"particle": "cmi:block/rocket_pattern"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [
+				0.4,
+				0.36,
+				0.4
+			]
+		},
+		"thirdperson_lefthand": {
+			"scale": [
+				0.4,
+				0.36,
+				0.6
+			]
+		},
+		"firstperson_righthand": {
+			"scale": [
+				0.4,
+				0.36,
+				0.4
+			]
+		},
+		"firstperson_lefthand": {
+			"scale": [
+				0.4,
+				0.36,
+				0.4
+			]
+		},
+		"ground": {
+			"scale": [
+				0.4,
+				0.36,
+				0.4
+			]
+		},
+		"gui": {
+			"rotation": [
+				15,
+				45,
+				0
+			],
+			"translation": [
+				0,
+				-4,
+				0
+			],
+			"scale": [
+				0.4,
+				0.36,
+				0.4
+			]
+		},
+		"head": {
+			"scale": [
+				0.4,
+				0.36,
+				0.4
+			]
+		},
+		"fixed": {
+			"scale": [
+				0.4,
+				0.36,
+				0.4
+			]
+		}
+	}
+}

@@ -1,8 +1,4 @@
 StartupEvents.registry("item", (event) => {
-	// 火箭模版
-	// 模型待定
-	event.create(`${global.namespace}:rocket_pattern`)
-
 	// 火箭框架1-4
 	// 模型待定
 	event.create(`${global.namespace}:tier_1_rocket_frame`)

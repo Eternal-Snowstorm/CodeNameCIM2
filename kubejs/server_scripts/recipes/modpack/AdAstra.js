@@ -218,28 +218,4 @@ ServerEvents.recipes((event) => {
 			"cmi:incomplete_tier_4_rocket"
 		]).energy(100)
 	]).loops(1).transitionalItem("cmi:incomplete_tier_4_rocket")
-
-	event.custom({
-		"type": "ad_astra:nasa_workbench",
-		"ingredients": [
-			Ingredient.of("#forge:treated_wood").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_fence").toJson(),
-			Ingredient.of("immersiveengineering:wooden_barrel").toJson(),
-			Ingredient.of("immersiveengineering:wooden_barrel").toJson(),
-			Ingredient.of("immersiveengineering:treated_fence").toJson(),
-			Ingredient.of("immersiveengineering:treated_fence").toJson(),
-			Ingredient.of("immersiveengineering:treated_scaffold").toJson(),
-			Ingredient.of("immersiveengineering:treated_fence").toJson()
-		],
-		"result": {
-			"count": 1,
-			"id": "cmi:rocket_pattern"
-		}
-	})
 })

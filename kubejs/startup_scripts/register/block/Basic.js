@@ -1,3 +1,10 @@
+let $BlockBehaviour$Properties =
+	Java.loadClass("net.minecraft.world.level.block.state.BlockBehaviour$Properties")
+let $BlockItem =
+	Java.loadClass("net.minecraft.world.item.BlockItem")
+let $Item$Properties =
+	Java.loadClass("net.minecraft.world.item.Item$Properties")
+
 StartupEvents.registry("block", (event) => {
 	event.create(`${global.namespace}:the_accelerator_of_mechanism_power`)
 		.soundType(SoundType.METAL)
@@ -98,4 +105,21 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.miningLevel["iron"])
 		.requiresTool(true)
+
+	// 火箭框架
+	event.create(`${global.namespace}:rocket_pattern`)
+		.soundType(SoundType.WOOD)
+		.model(`${global.namespace}:block/rocket_pattern/rocket_pattern`)
+		.hardness(5)
+		.resistance(5)
+		.item((item) => { 
+			item.maxStackSize(1) 
+		})
+		.notSolid()
+		.defaultTranslucent()
+		.requiresTool(false)
+		.box(0, 0, 0, 16, 45, 16, true)
+		.tagBlock(global.toolType["pickaxe"])
+		.tagBlock(global.toolType["axe"])
+		.tagBlock("create:wrench_pickup")
 })

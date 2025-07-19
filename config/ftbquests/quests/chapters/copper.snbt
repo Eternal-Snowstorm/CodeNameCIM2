@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "copper"
 	group: ""
+	icon: "cmi:copper_mechanism"
 	id: "6E65D9A7DA7B3404"
 	images: [{
 		height: 24.0d

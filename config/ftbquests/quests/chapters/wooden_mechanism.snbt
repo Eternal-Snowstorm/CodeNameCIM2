@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "wooden_mechanism"
 	group: ""
+	icon: "cmi:wooden_mechanism"
 	id: "2CDF2947F7A9E98F"
 	images: [{
 		height: 25.0d
