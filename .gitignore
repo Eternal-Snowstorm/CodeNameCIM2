@@ -44,12 +44,11 @@ XaeroWaypoints*
 
 # ResourcePacks
 /resourcepacks/*
-!/resourcepacks/New AE2
+!/resourcepacks/New AE2.zip
 !/resourcepacks/中微子的多用途汉化材质包.zip
-!/resourcepacks/等距更纱字体包
-!/resourcepacks/Maple Mono字体包
-!/resourcepacks/PvZ2 Regular字体包
-!/resourcepacks/PackResource
+!/resourcepacks/等距更纱字体包.zip
+!/resourcepacks/Maple Mono字体包.zip
+!/resourcepacks/PvZ2 Regular字体包.zip
 !/resourcepacks/Pretty X Smart Pipez.zip
 !/resourcepacks/CreateSophisticatedBackpacks.zip
 

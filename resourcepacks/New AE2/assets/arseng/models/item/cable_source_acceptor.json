@@ -1,6 +1,0 @@
-{
-  "parent": "ae2:item/cable_energy_acceptor",
-  "textures": {
-    "front": "arseng:block/source_acceptor"
-  }
-}
