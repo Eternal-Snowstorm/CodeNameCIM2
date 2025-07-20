@@ -10,5 +10,33 @@ StartupEvents.registry("block", (event) => {
 	addCustomMachine("chemical_gas_extractor")
 	addCustomMachine("simple_centrifuge")
 	addCustomMachine("steam_boiler")
-	addCustomMachine("large_steam_boiler")
+})
+
+MMEvents.registerControllers((event) => {
+	function addMMController(id) {
+		event.create(id)
+			.name("")
+			.type("mm:machine")
+	}
+
+	addMMController("large_steam_boiler")
+})
+
+MMEvents.registerPorts((event) => {
+	event.create("large_steam_boiler_fluid")
+		.name("")
+		.controllerId("mm:large_steam_boiler")
+		.config("mm:fluid", (builder) => {
+			builder.rows(1)
+				.columns(1)
+				.slotCapacity(10000)
+		})
+
+	event.create("large_steam_boiler_item")
+		.name("")
+		.controllerId("mm:large_steam_boiler")
+		.config("mm:item", (builder) => {
+			builder.rows(1)
+				.columns(1)
+		})
 })

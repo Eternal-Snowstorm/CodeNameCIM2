@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mm:block/large_steam_boiler_fluid_output"
+    }
+  }
+}

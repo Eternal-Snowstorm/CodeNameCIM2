@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "cmi:block/custom/bronze_fluid_tank"
+		}
+	}
+}

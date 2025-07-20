@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "mm:block/large_steam_boiler",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "mm:block/large_steam_boiler",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "mm:block/large_steam_boiler"
+    },
+    "facing=west": {
+      "model": "mm:block/large_steam_boiler",
+      "y": 90
+    }
+  }
+}

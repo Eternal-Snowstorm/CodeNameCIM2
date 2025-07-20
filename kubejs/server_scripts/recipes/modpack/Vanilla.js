@@ -104,6 +104,15 @@ ServerEvents.recipes((event) => {
 		F: "minecraft:bucket"
 	})
 
+	// 青铜外壳
+	kubejs.shaped("4x cmi:bronze_casing", [
+		"AAA",
+		"A A",
+		"AAA"
+	], {
+		A: "#forge:plates/bronze"
+	})
+
 	// 安山岩
 	addSmeltingRecipe(event, "2x minecraft:andesite", "cmi:andesite_aggregate")
 

@@ -1,0 +1,82 @@
+{
+  "parent": "minecraft:block/block",
+  "children": {
+    "base": {
+      "parent": "minecraft:block/cube_all",
+      "render_type": "minecraft:solid",
+      "textures": {
+        "all": "mm:block/base_block"
+      }
+    },
+    "overlay": {
+      "parent": "minecraft:block/block",
+      "elements": [
+        {
+          "faces": {
+            "north": {
+              "texture": "#overlay"
+            }
+          },
+          "from": [
+            0,
+            0,
+            0
+          ],
+          "to": [
+            16,
+            16,
+            16
+          ]
+        }
+      ],
+      "render_type": "minecraft:translucent",
+      "textures": {
+        "overlay": "mm:block/controller_cutout"
+      }
+    }
+  },
+  "display": {
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ]
+    }
+  },
+  "item_render_order": [
+    "base",
+    "overlay"
+  ],
+  "loader": "forge:composite",
+  "textures": {
+    "particle": "mm:block/controller_cutout"
+  }
+}

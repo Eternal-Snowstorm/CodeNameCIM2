@@ -99,6 +99,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMachineLanguage("steam_boiler", "青铜蒸汽锅炉")
 	addMachineLanguage("large_steam_boiler", "大型青铜蒸汽锅炉")
 
+	addMMLanguage("large_steam_bolier", "大型蒸汽锅炉")
+
 	addMBDMachineLanguage("proxy_part_block", "多方块机器部件方块")
 	addMBDMachineLanguage("accelerator_energy_input", "大型构件催生器能量输入口")
 	addMBDMachineLanguage("accelerator_item_input", "大型构件催生器物品输入口")
@@ -391,6 +393,16 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addMachineLanguage(key, value) {
 		event.add(`block.${global.namespace}.${key}`, value)
 		event.add(`machine.${global.namespace}.${key}`, value)
+	}
+
+	function addMMLanguage(key, value) {
+		event.add(`block.mm.${key}`, value)
+
+		event.add(`block.mm.${key}_fluid_input`, `${value}流体输入口`)
+		event.add(`block.mm.${key}_fluid_output`, `${value}流体输出口`)
+
+		event.add(`block.mm.${key}_item_input`, `${value}物品输入口`)
+		event.add(`block.mm.${key}_item_output`, `${value}物品输出口`)
 	}
 
 	function addMBDMachineLanguage(key, value) {

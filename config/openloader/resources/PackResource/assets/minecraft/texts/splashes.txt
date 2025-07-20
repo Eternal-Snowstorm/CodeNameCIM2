@@ -230,7 +230,7 @@ No Mcreator
 AMD, YES
 紫毛疯子
 UE乐事
-熟Unknown_Entity_, 2000点饱食度.jpg
+熟Unknown_Entity_, 2000点饱食度.png
 让我看看!
 不要!
 Cyriak
@@ -248,7 +248,6 @@ You May Need Windows9.
 做出回答!
 PR提了吗?如提!
 helicopter~helicopter~
-那这样吧, 你把老师拿手上按w
 那这样吧, 你把我们拿手上长按W
 俺寻思这个拿扳手扳一下
 我家粉碎轮能处理核废料.png
@@ -266,7 +265,7 @@ E~rika
 一米工艺CPU, 你值得拥有
 WE　WILL MISS YOU.
 呃~啊~
-(event) => {} 
+((event) => {})
 斯大林能源炉
 他家里连风车都没有, 但有蓝图炮和反物质靶丸?
 汤姆的复杂存储

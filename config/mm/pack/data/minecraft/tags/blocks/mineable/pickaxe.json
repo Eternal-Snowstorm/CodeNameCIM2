@@ -1,0 +1,9 @@
+{
+  "values": [
+    "mm:large_steam_boiler",
+    "mm:large_steam_boiler_fluid_input",
+    "mm:large_steam_boiler_fluid_output",
+    "mm:large_steam_boiler_item_input",
+    "mm:large_steam_boiler_item_output"
+  ]
+}

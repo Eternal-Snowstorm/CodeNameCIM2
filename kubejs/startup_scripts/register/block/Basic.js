@@ -125,9 +125,10 @@ StartupEvents.registry("block", (event) => {
 
 	// 青铜外壳
 	event.create(`${global.namespace}:bronze_casing`)
+		.textureAll(`${global.namespace}:block/casing/bronze/casing`)
 		.soundType(SoundType.METAL)
-		.hardness(6)
-		.resistance(6)
+		.hardness(5)
+		.resistance(5)
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock("create:wrench_pickup")
 })
