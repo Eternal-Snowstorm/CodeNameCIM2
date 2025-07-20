@@ -31,7 +31,7 @@
 			],
 			"render_type": "minecraft:translucent",
 			"textures": {
-				"overlay": "mm:block/controller_cutout"
+				"overlay": "cmi:block/machine/large_steam_bolier/on_o"
 			}
 		}
 	},
@@ -77,6 +77,6 @@
 	],
 	"loader": "forge:composite",
 	"textures": {
-		"particle": "mm:block/controller_cutout"
+		"particle": "cmi:block/machine/large_steam_bolier/off_o"
 	}
 }

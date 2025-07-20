@@ -5,7 +5,7 @@
 			"parent": "minecraft:block/cube_all",
 			"render_type": "minecraft:solid",
 			"textures": {
-				"all": "tconstruct:block/smeltery/seared/bricks"
+				"all": "tconstruct:block/foundry/scorched/bricks"
 			}
 		},
 		"overlay": {
@@ -46,7 +46,7 @@
 			],
 			"render_type": "minecraft:translucent",
 			"textures": {
-				"overlay": "mm:block/base_ports/item_output_cutout"
+				"overlay": "cmi:block/machine/large_steam_bolier/fuel_o"
 			}
 		}
 	},
@@ -93,6 +93,6 @@
 	"loader": "forge:composite",
 	"textures": {
 		"all": "mm:block/large_steam_boiler_item_output",
-		"particle": "mm:block/base_ports/item_output_cutout"
+		"particle": "cmi:block/machine/large_steam_bolier/fuel_o"
 	}
 }

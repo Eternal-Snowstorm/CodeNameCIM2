@@ -3,7 +3,9 @@
 // 设定全局注册物品命名空间
 global.namespace = "cmi"
 // Modpack版本
-global.modPackVersion = "§0CMI Beta-1.7.0"
+global.modPackVersion = "§0CMI Beta-1.7.0",
+// 桶容量
+global.BUCKET_CAPACITY = 1000
 // 设定全局开发人员名单
 global.debugUserName = [
 	"Qi_Month",

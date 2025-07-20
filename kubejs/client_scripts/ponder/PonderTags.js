@@ -9,7 +9,14 @@ Ponder.tags((event) => {
 	addPonderTag("ponder", "cmi:creative_mechanism", "Modpack", [
 		"cmi:the_accelerator_of_mechanism_power",
 		"cmi:water_pump",
-		"minecraft:water_bucket"
+		"minecraft:water_bucket",
+		"cmi:bronze_casing",
+		"cmi:steam_boiler",
+		"mm:large_steam_boiler",
+		"mm:large_steam_boiler_fluid_output",
+		"mm:large_steam_boiler_fluid_input",
+		"mm:large_steam_boiler_item_input",
+		"cmi:steam_bucket"
 	])
 
 	addPonderTag("other", "supplementaries:faucet", "Other", [

@@ -32,9 +32,6 @@ Ponder.registry((event) => {
 		scene.idle(40)
 
 		scene.addKeyframe()
-
-		scene.addKeyframe()
-
 		// 配料可以从顶部输入进坩埚
 		scene.text(40, "Ingredients can also insert into crucible on the top", [2.5, 5.5, 2.5])
 		scene.world.showSection([2, 5, 2], Direction.DOWN)

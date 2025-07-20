@@ -99,8 +99,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMachineLanguage("steam_boiler", "青铜蒸汽锅炉")
 	addMachineLanguage("large_steam_boiler", "大型青铜蒸汽锅炉")
 
-	addMMLanguage("large_steam_bolier", "大型蒸汽锅炉")
-
 	addMBDMachineLanguage("proxy_part_block", "多方块机器部件方块")
 	addMBDMachineLanguage("accelerator_energy_input", "大型构件催生器能量输入口")
 	addMBDMachineLanguage("accelerator_item_input", "大型构件催生器物品输入口")
@@ -239,6 +237,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("cmi:potion_mechanism", "右键获取大多数正面buff")
 	addCommonTooltipLanguage("cmi:super_knife", "经魔力灌注, 难以磨损")
 
+	addJEIInfoLanguage("mm:large_steam_boiler", "需要焦煤的温度才能释放足够的热能来产生蒸汽")
 	addJEIInfoLanguage("cmi:andesite_alloy_noodle", `"意大利面就应该拌42号混凝土. 因为这个螺丝钉的长度, 它很容易会直接影响到挖掘机的扭距, 你往里砸的时候, 一瞬间它就会产生大量的高能蛋白, 俗称UFO. 会严重影响经济的发展. 照你这么说, 炸鸡块要用92#汽油, 毕竟我们无法用光学透镜探测苏格拉底, 如果二氧化氢持续侵蚀这个机床组件, 那么我们早晚要在斐波那契曲线上安装一个胶原蛋白, 否则我们将无法改变蜜雪冰城与阿尔别克的叠加状态, 因为众所周知爱吃鸡摩人在捕鲲的时候往往需要用氢的同位素当做诱饵, 但是原子弹的新鲜程度又会直接影响到我国东南部的季风和洋流, 所以说在西伯利亚地区开设农学院显然是不合理的. \n我知道你一定会反驳我, 告诉我农业的底层思维是什么, 就是不用化肥农药和种子, 还包括生命之源氮气, 使甲烷分子直接转化成能够捕获放射性元素释放的β射线的单质, 并且使伽马射线在常温下就能用老虎钳折弯成78°, 否则在用望远镜观察细胞结构时, 根本发现不了时空重叠时到底要叠几层才能使潼关肉夹馍更酥脆的原因. "`)
 	addJEIInfoLanguage("minecraft:andesite", "在本包, 安山岩生产主要方式有4种\n一种是通过造石机\n一种是通过安山岩磨成粉后加工的增值线\n一种是刷石机, 有25%的概率可以刷出安山岩\n最后一种是通过构件催生器")
 	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产才能确保需求量自由")
@@ -393,16 +392,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addMachineLanguage(key, value) {
 		event.add(`block.${global.namespace}.${key}`, value)
 		event.add(`machine.${global.namespace}.${key}`, value)
-	}
-
-	function addMMLanguage(key, value) {
-		event.add(`block.mm.${key}`, value)
-
-		event.add(`block.mm.${key}_fluid_input`, `${value}流体输入口`)
-		event.add(`block.mm.${key}_fluid_output`, `${value}流体输出口`)
-
-		event.add(`block.mm.${key}_item_input`, `${value}物品输入口`)
-		event.add(`block.mm.${key}_item_output`, `${value}物品输出口`)
 	}
 
 	function addMBDMachineLanguage(key, value) {

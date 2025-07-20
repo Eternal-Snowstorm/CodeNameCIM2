@@ -104,6 +104,27 @@ ServerEvents.recipes((event) => {
 		F: "minecraft:bucket"
 	})
 
+	// 蒸汽锅炉
+	kubejs.shaped("cmi:steam_boiler", [
+		"AAA",
+		"ABA",
+		"CCC"
+	], {
+		A: [
+			"#forge:ingots/bronze",
+			"#forge:plates/bronze"
+		],
+		B: [
+			"minecraft:furnace",
+			"minecraft:blast_furnace",
+			"minecraft:smoker"
+		],
+		C: "tconstruct:seared_bricks"
+	})
+
+	// 大型蒸汽锅炉
+	
+
 	// 青铜外壳
 	kubejs.shaped("4x cmi:bronze_casing", [
 		"AAA",
