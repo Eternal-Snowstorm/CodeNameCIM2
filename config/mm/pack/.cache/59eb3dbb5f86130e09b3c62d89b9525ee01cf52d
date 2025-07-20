@@ -1,6 +1,0 @@
-// 1.20.1	2025-07-20T17:41:54.2137743	Loot Tables
-aa5bfbd8857d419217841a39a480ea90ddecf28b data/mm/loot_tables/blocks/large_steam_boiler.json
-0317e2c9232536a02bf9793dab3d1d4592c43d0e data/mm/loot_tables/blocks/large_steam_boiler_fluid_input.json
-4d5c8daaa5791a132bbc83c0e8e2bf69de64c7dc data/mm/loot_tables/blocks/large_steam_boiler_fluid_output.json
-3f5dc9f5a54d862cc75ac721e6b126dcc8bd9832 data/mm/loot_tables/blocks/large_steam_boiler_item_input.json
-2e5dbaf5c1f6b42d2788afaa6284a6329b77e845 data/mm/loot_tables/blocks/large_steam_boiler_item_output.json
