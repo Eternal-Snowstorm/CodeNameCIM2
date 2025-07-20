@@ -1,4 +1,7 @@
 {
+  "mm": {
+    "controller_progress": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
