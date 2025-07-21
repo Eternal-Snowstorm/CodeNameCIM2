@@ -173,6 +173,4 @@ Ponder.registry((event) => {
 			scene.overlay.showOutline("green", { "glue": true }, [1, 1, 3, 1, 2, 5], 60)
 		})
 })
-/**
- * By 史莱姆li
- */
+// By 史莱姆li
