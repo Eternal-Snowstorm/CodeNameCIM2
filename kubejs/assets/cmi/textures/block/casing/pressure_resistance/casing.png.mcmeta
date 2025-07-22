@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "cmi:block/casing/pressure_resistance/casing_ctm"
+    }
+}

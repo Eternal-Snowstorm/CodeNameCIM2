@@ -27,4 +27,10 @@ StartupEvents.registry("item", (event) => {
 			}
 		}, $Tiers.NETHERITE, 0.5, -2.0, new $Item$Properties())
 	}).tag("forge:tools/knives")
+
+	event.create(`${global.namespace}:wooden_faucet`)
+		.texture(`${global.namespace}:item/tool/wooden_faucet`)
+		.maxDamage(128)
+		.unstackable()
+		.tag("forge:tools")
 })

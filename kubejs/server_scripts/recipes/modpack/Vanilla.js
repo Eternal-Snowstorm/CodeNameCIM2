@@ -18,6 +18,16 @@ ServerEvents.recipes((event) => {
 		E: "cmi:stone_plate"
 	})
 
+	// 木龙头
+	kubejs.shaped("cmi:wooden_faucet", [
+		" A ",
+		"BBB",
+		"  B"
+	], {
+		A: "#forge:rods/wooden",
+		B: "#minecraft:planks"
+	})
+
 	// 锇砖瓦
 	kubejs.shaped("cmi:osmium_tile", [
 		" A ",
@@ -123,7 +133,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 大型蒸汽锅炉
-	
+
 
 	// 青铜外壳
 	kubejs.shaped("4x cmi:bronze_casing", [

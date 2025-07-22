@@ -1,4 +1,4 @@
-MMEvents.createProcesses(event => {
+MMEvents.createProcesses((event) => {
 	event.create("cmi:large_steam_boiler/steam")
 		.structureId("cmi:large_steam_boiler_structure")
 		.ticks(1200)

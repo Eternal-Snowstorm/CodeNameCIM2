@@ -131,4 +131,13 @@ StartupEvents.registry("block", (event) => {
 		.resistance(5)
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock("create:wrench_pickup")
+
+	// 耐压外壳
+	event.create(`${global.namespace}:pressure_resistance_casing`)
+		.textureAll(`${global.namespace}:block/casing/pressure_resistance/casing`)
+		.soundType(SoundType.METAL)
+		.hardness(5)
+		.resistance(5)
+		.tagBlock(global.toolType["pickaxe"])
+		.tagBlock("create:wrench_pickup")
 })

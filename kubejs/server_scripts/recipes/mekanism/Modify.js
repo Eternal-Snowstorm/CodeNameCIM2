@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 	}).id("mekanism:cardboard_box")
 
 	// 钢制外壳
-	kubejs.shaped("mekanism:steel_casing", [
+	kubejs.shaped("8x mekanism:steel_casing", [
 		"ABA",
 		"BCB",
 		"ABA"

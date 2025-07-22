@@ -53,7 +53,10 @@
 			y: 7.285714285714292d
 		}
 		{
-			dependencies: ["20F96D71B2750581"]
+			dependencies: [
+				"20F96D71B2750581"
+				"4BBEC03C245EBD95"
+			]
 			hide_dependency_lines: true
 			id: "1378F4CE0C36AA2C"
 			rewards: [{

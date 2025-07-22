@@ -32,7 +32,7 @@ schematics/uploaded/
 /CIM2 Dev-natives/
 /saves/Debug/
 /.idea
-*.zip
+# *.zip
 fancymenu_data
 saves/*/session.lock
 /schematics
@@ -81,3 +81,4 @@ XaeroWaypoints*
 !/config/Mekanism/
 !/config/ding.toml
 !/config/supplementaries-common.toml
+!/config/jeiintegration-client.toml

@@ -2,6 +2,7 @@ let langMap = {}
 const FILE_PATH = "config/openloader/resources/PackResource/assets/mm/lang/zh_cn.json"
 
 addMMLanguage("large_steam_boiler", "大型蒸汽锅炉")
+addMMLanguage("cracker", "裂解机")
 
 function addMMLanguage(key, value) {
 	langMap[`block.mm.${key}`] = value

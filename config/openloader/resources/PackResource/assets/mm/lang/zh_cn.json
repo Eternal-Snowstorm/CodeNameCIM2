@@ -2,6 +2,15 @@
 	"block.mm.large_steam_boiler": "大型蒸汽锅炉",
 	"block.mm.large_steam_boiler_fluid_input": "大型蒸汽锅炉流体输入口",
 	"block.mm.large_steam_boiler_fluid_output": "大型蒸汽锅炉流体输出口",
+	"block.mm.large_steam_boiler_energy_input": "大型蒸汽锅炉能量输入口",
+	"block.mm.large_steam_boiler_energy_output": "大型蒸汽锅炉能量输出口",
 	"block.mm.large_steam_boiler_item_input": "大型蒸汽锅炉物品输入口",
-	"block.mm.large_steam_boiler_item_output": "大型蒸汽锅炉物品输出口"
+	"block.mm.large_steam_boiler_item_output": "大型蒸汽锅炉物品输出口",
+	"block.mm.cracker": "裂解机",
+	"block.mm.cracker_fluid_input": "裂解机流体输入口",
+	"block.mm.cracker_fluid_output": "裂解机流体输出口",
+	"block.mm.cracker_energy_input": "裂解机能量输入口",
+	"block.mm.cracker_energy_output": "裂解机能量输出口",
+	"block.mm.cracker_item_input": "裂解机物品输入口",
+	"block.mm.cracker_item_output": "裂解机物品输出口"
 }

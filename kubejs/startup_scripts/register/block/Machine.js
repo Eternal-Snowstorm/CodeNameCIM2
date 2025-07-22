@@ -20,9 +20,11 @@ MMEvents.registerControllers((event) => {
 	}
 
 	addMMController("large_steam_boiler")
+	addMMController("cracker")
 })
 
 MMEvents.registerPorts((event) => {
+	// 大型锅炉
 	event.create("large_steam_boiler_fluid")
 		.name("")
 		.controllerId("mm:large_steam_boiler")
@@ -38,5 +40,24 @@ MMEvents.registerPorts((event) => {
 		.config("mm:item", (builder) => {
 			builder.rows(1)
 				.columns(1)
+		})
+
+	// 裂解机
+	event.create("cracker_fluid")
+		.name("")
+		.controllerId("mm:cracker")
+		.config("mm:fluid", (builder) => {
+			builder.rows(1)
+				.columns(3)
+				.slotCapacity(10000)
+		})
+
+	event.create("cracker_energy")
+		.name("")
+		.controllerId("mm:cracker")
+		.config("mm:energy", (builder) => {
+			builder.capacity(1000000)
+				.maxExtract(1000000)
+				.maxReceive(1000000)
 		})
 })

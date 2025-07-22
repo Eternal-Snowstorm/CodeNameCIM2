@@ -27,7 +27,7 @@ function addOreBlock(name, level, hardness) {
 			this.types.push("nether")
 			return this
 		},
-		end: function() {
+		end: function () {
 			this.types.push("end")
 			return this
 		},
@@ -132,3 +132,53 @@ addOreBlock("vanadium", "iron", 5)
 // 铀
 addOreBlock("uranium", "iron", 5)
 	.nether()
+
+// 黄铁
+addOreBlock("pyrite", "stone", 6)
+	.stone()
+	.deepslate()
+
+// 红镍
+addOreBlock("lateritic_nickel", "stone", 6)
+	.stone()
+	.deepslate()
+
+// 辉绿
+addOreBlock("veridium", "stone", 3)
+	.stone()
+	.deepslate()
+
+// 黄锡
+addOreBlock("stannine", "stone", 3)
+	.stone()
+	.deepslate()
+
+// 闪锌
+addOreBlock("sphalerite", "iron", 5)
+	.stone()
+	.deepslate()
+
+// 磷酸铝
+addOreBlock("variscite", "stone", 4)
+	.stone()
+	.deepslate()
+
+// 方铅
+addOreBlock("galena", "stone", 5)
+	.stone()
+	.deepslate()
+
+// 铱锇
+addOreBlock("osmiridium", "iron", 6)
+	.stone()
+	.deepslate()
+
+// 方铀
+addOreBlock("uraninite", "stone", 5)
+	.stone()
+	.deepslate()
+
+// 辉银
+addOreBlock("argentite", "iron", 6)
+	.stone()
+	.deepslate()
