@@ -1,13 +1,13 @@
 MMEvents.createProcesses((event) => {
 	event.create("cmi:large_steam_boiler/steam")
 		.structureId("cmi:large_steam_boiler_structure")
-		.ticks(1200)
+		.ticks(200)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {
 				type: "mm:fluid",
 				fluid: "minecraft:water",
-				amount: global.BUCKET_CAPACITY * 2
+				amount: global.BUCKET_CAPACITY * 5
 			}
 		})
 		.input({
@@ -23,7 +23,7 @@ MMEvents.createProcesses((event) => {
 			ingredient: {
 				type: "mm:fluid",
 				fluid: "cmi:steam",
-				amount: global.BUCKET_CAPACITY * 2
+				amount: global.BUCKET_CAPACITY * 5
 			}
 		})
 })

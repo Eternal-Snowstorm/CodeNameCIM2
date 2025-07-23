@@ -13,6 +13,19 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	// 特殊矿石
+	event.get(`${global.namespace}:special_ores`)
+		.add("#forge:raw_materials/galena")
+		.add("#forge:raw_materials/osmiridium")
+		.add("#forge:raw_materials/uraninite")
+		.add("#forge:raw_materials/argentite")
+		.add("#forge:raw_materials/stannine")
+		.add("#forge:raw_materials/veridium")
+		.add("#forge:raw_materials/lateritic_nickel")
+		.add("#forge:raw_materials/pyrite")
+		.add("#forge:raw_materials/sphalerite")
+		.add("#forge:raw_materials/variscite")
+
 	// 农夫乐事刀子
 	event.get("farmersdelight:tools/knives")
 		.add("#forge:tools/knives")

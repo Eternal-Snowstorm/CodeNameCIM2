@@ -134,6 +134,7 @@ ServerEvents.recipes((event) => {
 
 	// 大型蒸汽锅炉
 
+	// 蒸汽矿石处理机
 
 	// 青铜外壳
 	kubejs.shaped("4x cmi:bronze_casing", [

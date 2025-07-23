@@ -4,16 +4,16 @@
 	"normal": {
 		"speed": 48.0,
 		"strength": 1024.0,
-		"burn_rate": 10
+		"burn_rate": 50
 	},
 	"modular": {
 		"speed": 96.0,
 		"strength": 2048.0,
-		"burn_rate": 25
+		"burn_rate": 200
 	},
 	"huge": {
 		"speed": 128.0,
 		"strength": 4096.0,
-		"burn_rate": 50
+		"burn_rate": 400
 	}
 }

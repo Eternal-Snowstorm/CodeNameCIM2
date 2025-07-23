@@ -25,7 +25,7 @@ StartupEvents.registry("item", (event) => {
 			isDamageable() {
 				return true
 			}
-		}, $Tiers.NETHERITE, 0.5, -2.0, new $Item$Properties())
+		}, $Tiers.NETHERITE, 0.5, -2.0, new $Item$Properties().rarity("epic"))
 	}).tag("forge:tools/knives")
 
 	event.create(`${global.namespace}:wooden_faucet`)
