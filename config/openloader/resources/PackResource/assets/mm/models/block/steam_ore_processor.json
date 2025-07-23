@@ -1,11 +1,11 @@
 {
-	"parent": "minecraft:block/cube_all",
+	"parent": "minecraft:block/block",
 	"children": {
 		"base": {
 			"parent": "minecraft:block/cube_all",
 			"render_type": "minecraft:solid",
 			"textures": {
-				"all": "create:block/industrial_iron_block"
+				"all": "cmi:block/casing/bronze/block"
 			}
 		},
 		"overlay": {
@@ -13,22 +13,7 @@
 			"elements": [
 				{
 					"faces": {
-						"down": {
-							"texture": "#overlay"
-						},
-						"east": {
-							"texture": "#overlay"
-						},
 						"north": {
-							"texture": "#overlay"
-						},
-						"south": {
-							"texture": "#overlay"
-						},
-						"up": {
-							"texture": "#overlay"
-						},
-						"west": {
 							"texture": "#overlay"
 						}
 					},
@@ -46,7 +31,7 @@
 			],
 			"render_type": "minecraft:translucent",
 			"textures": {
-				"overlay": "cmi:block/machine/output"
+				"overlay": "cmi:block/machine/steam_ore_processor/on"
 			}
 		}
 	},
@@ -92,7 +77,6 @@
 	],
 	"loader": "forge:composite",
 	"textures": {
-		"all": "create:block/industrial_iron_block",
-		"particle": "cmi:block/machine/output"
+		"particle": "cmi:block/casing/bronze/block"
 	}
 }

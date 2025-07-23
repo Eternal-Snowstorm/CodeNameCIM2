@@ -46,7 +46,7 @@
 			],
 			"render_type": "minecraft:translucent",
 			"textures": {
-				"overlay": "mm:block/base_ports/energy_input_cutout"
+				"overlay": "cmi:block/machine/input"
 			}
 		}
 	},
@@ -93,6 +93,6 @@
 	"loader": "forge:composite",
 	"textures": {
 		"all": "create:block/industrial_iron_block",
-		"particle": "mm:block/base_ports/energy_input_cutout"
+		"particle": "cmi:block/machine/input"
 	}
 }

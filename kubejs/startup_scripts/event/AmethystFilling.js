@@ -56,5 +56,40 @@ CreateEvents.spoutHandler((event) => {
 		}
 		return 0
 	})
+
+	event.add("cmi:certus_spawn", "minecraft:budding_amethyst", (block, fluid, simulate) => {
+		for (let d of ["up", "north", "west", "south", "east", "down"]) {
+			if (block[d].id === "minecraft:air") {
+				if (fluid.id === WATER && fluid.amount >= 250) {
+					if (!simulate) {
+						block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
+						block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
+						block.level.server.runCommandSilent(`setblock ${block[d].x} ${block[d].y} ${block[d].z} minecraft:small_amethyst_bud[facing=${d}]`)
+					}
+					return 250
+				}
+				break
+			}
+		}
+		return 0
+	})
+
+	// 赛特斯
+	event.add("cmi:amethyst_spawn", "minecraft:budding_amethyst", (block, fluid, simulate) => {
+		for (let d of ["up", "north", "west", "south", "east", "down"]) {
+			if (block[d].id === "minecraft:air") {
+				if (fluid.id === WATER && fluid.amount >= 250) {
+					if (!simulate) {
+						block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
+						block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
+						block.level.server.runCommandSilent(`setblock ${block[d].x} ${block[d].y} ${block[d].z} minecraft:small_amethyst_bud[facing=${d}]`)
+					}
+					return 250
+				}
+				break
+			}
+		}
+		return 0
+	})
 })
 // By 史莱姆li

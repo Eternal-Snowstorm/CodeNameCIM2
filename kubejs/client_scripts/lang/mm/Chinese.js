@@ -3,6 +3,7 @@ const FILE_PATH = "config/openloader/resources/PackResource/assets/mm/lang/zh_cn
 
 addMMLanguage("large_steam_boiler", "大型蒸汽锅炉")
 addMMLanguage("cracker", "裂解机")
+addMMLanguage("steam_ore_processor", "蒸汽矿石处理机")
 
 function addMMLanguage(key, value) {
 	langMap[`block.mm.${key}`] = value

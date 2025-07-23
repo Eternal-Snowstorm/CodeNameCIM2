@@ -22,4 +22,5 @@ JEIEvents.hideItems((event) => {
 	})
 
 	hideItemFromJEI("#cmi:io_debug_block")
+	hideItemFromJEI("ae2:facade")
 })

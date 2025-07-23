@@ -12,5 +12,12 @@
 	"block.mm.cracker_energy_input": "裂解机能量输入口",
 	"block.mm.cracker_energy_output": "裂解机能量输出口",
 	"block.mm.cracker_item_input": "裂解机物品输入口",
-	"block.mm.cracker_item_output": "裂解机物品输出口"
+	"block.mm.cracker_item_output": "裂解机物品输出口",
+	"block.mm.steam_ore_processor": "蒸汽矿石处理机",
+	"block.mm.steam_ore_processor_fluid_input": "蒸汽矿石处理机流体输入口",
+	"block.mm.steam_ore_processor_fluid_output": "蒸汽矿石处理机流体输出口",
+	"block.mm.steam_ore_processor_energy_input": "蒸汽矿石处理机能量输入口",
+	"block.mm.steam_ore_processor_energy_output": "蒸汽矿石处理机能量输出口",
+	"block.mm.steam_ore_processor_item_input": "蒸汽矿石处理机物品输入口",
+	"block.mm.steam_ore_processor_item_output": "蒸汽矿石处理机物品输出口"
 }

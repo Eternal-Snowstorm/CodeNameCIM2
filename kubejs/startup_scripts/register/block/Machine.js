@@ -21,6 +21,7 @@ MMEvents.registerControllers((event) => {
 
 	addMMController("large_steam_boiler")
 	addMMController("cracker")
+	addMMController("steam_ore_processor")
 })
 
 MMEvents.registerPorts((event) => {
@@ -59,5 +60,23 @@ MMEvents.registerPorts((event) => {
 			builder.capacity(1000000)
 				.maxExtract(1000000)
 				.maxReceive(1000000)
+		})
+
+	// 蒸汽矿石处理机
+	event.create("steam_ore_processor_fluid")
+		.name("")
+		.controllerId("mm:steam_ore_processor")
+		.config("mm:fluid", (builder) => {
+			builder.rows(2)
+				.columns(2)
+				.slotCapacity(20000)
+		})
+
+	event.create("steam_ore_processor_item")
+		.name("")
+		.controllerId("mm:steam_ore_processor")
+		.config("mm:item", (builder) => {
+			builder.rows(3)
+				.columns(3)
 		})
 })
