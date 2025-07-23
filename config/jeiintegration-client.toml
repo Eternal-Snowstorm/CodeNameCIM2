@@ -14,11 +14,11 @@
 	# Configure tooltip for max stack size.
 	maxStackSizeTooltipMode = "enabled"
 	# Configure tooltip for NBT data.
-	nbtTooltipMode = "enabled"
+	nbtTooltipMode = "onShiftAndDebug"
 	# Configure tooltip for registry name. E.g. minecraft:stone
-	registryNameTooltipMode = "enabled"
+	registryNameTooltipMode = "onShiftAndDebug"
 	# Configure tooltip for tags. E.g. forge:ingot, minecraft:planks
-	tagsTooltipMode = "enabled"
+	tagsTooltipMode = "onShiftAndDebug"
 	# Configure tooltip for translation key. E.g. block.minecraft.stone
-	translationKeyTooltipMode = "enabled"
+	translationKeyTooltipMode = "onShiftAndDebug"
 
