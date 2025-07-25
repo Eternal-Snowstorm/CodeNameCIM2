@@ -25,10 +25,11 @@ StartupEvents.registry("item", (event) => {
 				// 这里重写的是Item.getName()方法混淆后的名称m_7626_
 				m_7626_(stack) {
 					if (Client.level) {
-						let _ = Component.translate(`item.${global.namespace}.${name}_upgrade`)
-						_.setStyle($Style.EMPTY.applyTo(_.getStyle()))
+						let modifyItemName =
+							Component.translate(`item.${global.namespace}.${name}_upgrade`)
+						modifyItemName.setStyle($Style.EMPTY.applyTo(modifyItemName.getStyle()))
 
-						return _
+						return modifyItemName
 					} else {
 						return Component.empty()
 					}

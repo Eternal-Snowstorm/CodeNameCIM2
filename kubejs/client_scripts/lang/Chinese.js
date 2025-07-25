@@ -345,7 +345,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		["creative", "创造"],
 		["precision", "精密"],
 		["redstone", "红石"],
-		["potion", "秘药"]
+		["potion", "秘药"],
+		["bronze", "青铜"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
 		addFlashDriveLanguage(material, name)
