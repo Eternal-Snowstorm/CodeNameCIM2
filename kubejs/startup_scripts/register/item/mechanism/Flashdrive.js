@@ -51,7 +51,8 @@ StartupEvents.registry("item", (event) => {
 		"colorful",
 		"creative",
 		"pigiron",
-		"potion"
+		"potion",
+		"bronze"
 	]
 	mechanismRegister.forEach((material) => {
 		event.create(`${global.namespace}:${material}_mechanism_flash_drive`)
