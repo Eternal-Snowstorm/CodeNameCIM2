@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 
 	create.deploying("4x ad_astra:steel_cable", [
 		"#forge:rods/silver",
-		"#forge:plates/steel"
+		"thermal:cured_rubber"
 	])
 	create.deploying("4x ad_astra:desh_cable", [
 		"#forge:rods/silver",

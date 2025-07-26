@@ -104,4 +104,8 @@ Ponder.registry((event) => {
 			scene.showStructure()
 			scene.scaleSceneView(0.3)
 		})
+		.scene("2", "2", "cmi:dev_ftb/ftb_tier1", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.3)
+		})
 })
