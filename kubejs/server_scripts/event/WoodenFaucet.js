@@ -19,7 +19,7 @@ BlockEvents.rightClicked((event) => {
 			return
 		}
 		item.hurtAndBreak(1, player, (entity) => {
-			return entity.broadcastBreakEvent(event.hand)
+			return entity.broadcastBreakEvent(entity.getUsedItemHand())
 		})
 		if (Math.random() < 0.25 && !player.isCreative()) {
 			player.give("thermal:rubber")
