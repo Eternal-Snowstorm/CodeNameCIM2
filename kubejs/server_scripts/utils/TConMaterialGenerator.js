@@ -259,25 +259,31 @@ function addTConMaterial(event, name, handler) {
 	}
 	handler(builder)
 
-	let definitionFile = `${builder.namespace}:tinkering/materials/definition/${builder.id}.json`
+	let definitionFile =
+		`${builder.namespace}:tinkering/materials/definition/${builder.id}.json`
 	event.addJson(definitionFile, builder.definition)
 
-	let statsFile = `${builder.namespace}:tinkering/materials/stats/${builder.id}.json`
+	let statsFile =
+		`${builder.namespace}:tinkering/materials/stats/${builder.id}.json`
 	event.addJson(statsFile, builder.stats)
 
-	let traitsFile = `${builder.namespace}:tinkering/materials/traits/${builder.id}.json`
+	let traitsFile =
+		`${builder.namespace}:tinkering/materials/traits/${builder.id}.json`
 	event.addJson(traitsFile, builder.traits)
 
 	for (let i = 0; i < builder.addMaterialRecipes.length; i++) {
-		let materialRecipesFile = `${builder.namespace}:recipes/materials/material/${builder.id}/${i}.json`
+		let materialRecipesFile =
+			`${builder.namespace}:recipes/materials/material/${builder.id}/${i}.json`
 		event.addJson(materialRecipesFile, builder.addMaterialRecipes[i])
 	}
 	for (let i = 0; i < builder.addMaterialFluidRecipes.length; i++) {
-		let materialFluidRecipesFile = `${builder.namespace}:recipes/materials/material_fluid/${builder.id}/${i}.json`
+		let materialFluidRecipesFile =
+			`${builder.namespace}:recipes/materials/material_fluid/${builder.id}/${i}.json`
 		event.addJson(materialFluidRecipesFile, builder.addMaterialFluidRecipes[i])
 	}
 	for (let i = 0; i < builder.addMaterialMeltingRecipes.length; i++) {
-		let materialMeltingRecipesFile = `${builder.namespace}:recipes/materials/material_melting/${builder.id}/${i}.json`
+		let materialMeltingRecipesFile =
+			`${builder.namespace}:recipes/materials/material_melting/${builder.id}/${i}.json`
 		event.addJson(materialMeltingRecipesFile, builder.addMaterialMeltingRecipes[i])
 	}
 }

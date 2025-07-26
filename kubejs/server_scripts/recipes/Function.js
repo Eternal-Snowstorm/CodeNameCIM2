@@ -15,10 +15,12 @@ function IEIngredient(input) {
 		let inps = []
 		for (let i of input) {
 			if (count === 0) {
-				count = Item.of(i).getCount()
+				count = Item.of(i)
+					.getCount()
 			}
 			inps.push(Item.of(i)
-				.withCount(1).toJson())
+				.withCount(1)
+				.toJson())
 		}
 		return {
 			base_ingredient: inps,
@@ -26,8 +28,11 @@ function IEIngredient(input) {
 		}
 	}
 	return {
-		base_ingredient: Item.of(input).withCount(1).toJson(),
-		count: Item.of(input).getCount()
+		base_ingredient: Item.of(input)
+			.withCount(1)
+			.toJson(),
+		count: Item.of(input)
+			.getCount()
 	}
 }
 function addSmeltingRecipe(event, output, input) {

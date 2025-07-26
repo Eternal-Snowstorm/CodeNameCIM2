@@ -29,7 +29,7 @@ StartupEvents.registry("fluid", (event) => {
 		})
 	}
 
-	addColorFluid("eletriced_source_emeraid", 0X117458)
+	addColorFluid("eletriced_source_emeraid", 0x117458)
 	addColorFluid("platinum_solution", 0xE1FFFF)
 	addColorFluid("tetrachlorosilane", 0xDDFF6E)
 

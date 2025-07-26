@@ -19,5 +19,5 @@ StartupEvents.registry("fluid", (event) => {
 		console.log(`molten_${name}已注册!`)
 	}
 
-	addColorMaterialFluid("source_sapphire", 0X0257F5)
+	addColorMaterialFluid("source_sapphire", 0x0257F5)
 })
