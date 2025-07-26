@@ -15,7 +15,7 @@ let replaceBlocks = [
 ]
 // 概率
 const CHANCE = 0.25
-RegisterNativeEvents.onJavaClassEvent($BlockEvent$FluidPlaceBlockEvent, (event) => {
+RegisterNativeEvents.onEvent($BlockEvent$FluidPlaceBlockEvent, (event) => {
 	let block = event.getNewState().getBlock()
 
 	if (block.id === "minecraft:cobblestone") {
@@ -31,7 +31,7 @@ RegisterNativeEvents.onJavaClassEvent($BlockEvent$FluidPlaceBlockEvent, (event) 
 	}
 })
 
-RegisterNativeEvents.onJavaClassEvent($PipeCollisionEvent$Spill, (event) => {
+RegisterNativeEvents.onEvent($PipeCollisionEvent$Spill, (event) => {
 	let block = event.getState().block
 
 	if (block.id === "minecraft:stone") {

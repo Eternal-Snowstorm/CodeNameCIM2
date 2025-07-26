@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create, createdieselgenerators, vintageimprovements } = event.recipes
+	let { kubejs, create, vintageimprovements } = event.recipes
 
 	// 空烈焰人燃烧室
 	kubejs.shaped("create:empty_blaze_burner", [

@@ -6,7 +6,7 @@ let RegisterNativeEvents = {
 	 * @param {(event: InstanceType<T>) => void} handler 
 	 * @returns
 	 */
-	onJavaClassEvent: function (event, handler) {
+	onEvent: function (event, handler) {
 		NativeEvents.onEvent(event, handler)
 	}
 }

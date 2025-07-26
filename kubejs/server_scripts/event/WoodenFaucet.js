@@ -1,12 +1,21 @@
 BlockEvents.rightClicked((event) => {
-	let { block, item, player } = event
+	let { block, item, player, level } = event
 	const WOODEN_FAUCET = "cmi:wooden_faucet"
 
 	if (block.id === "thermal:rubberwood_log" && item.id === WOODEN_FAUCET) {
 		player.swing()
 		if (item.getDamageValue() >= item.getMaxDamage()) {
 			player.setItemInHand(event.hand, "minecraft:air")
-			player.playSound("minecraft:entity.item.break")
+			level.playSound(
+				null,
+				player.x,
+				player.y,
+				player.z,
+				"minecraft:entity.item.break",
+				"players",
+				1.0,
+				1.0
+			)
 			return
 		}
 		item.hurtAndBreak(1, player, (entity) => {
