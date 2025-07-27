@@ -35,9 +35,6 @@ StartupEvents.registry("painting_variant", (event) => {
 	addPainting("cuo", 32, 32)
 	addPainting("win98", 128, 128)
 
-	//1174
-	addPainting("attack_the_d_point", 64, 64)
-
 	//driver
 	addPainting("driver_advanced_mek", 16, 16)
 	addPainting("driver_basic_mek", 16, 16)
