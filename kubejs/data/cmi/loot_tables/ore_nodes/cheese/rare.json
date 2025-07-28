@@ -13,7 +13,7 @@
 							"add": false,
 							"count": {
 								"min": 1,
-								"max": 4
+								"max": 2
 							}
 						}
 					]
@@ -28,7 +28,7 @@
 							"add": false,
 							"count": {
 								"min": 5,
-								"max": 16
+								"max": 6
 							}
 						}
 					]
@@ -43,15 +43,15 @@
 							"add": false,
 							"count": {
 								"min": 1,
-								"max": 3
+								"max": 2
 							}
 						}
 					]
 				}
 			],
 			"rolls": {
-				"min": 2,
-				"max": 5
+				"min": 1,
+				"max": 3
 			}
 		}
 	]
