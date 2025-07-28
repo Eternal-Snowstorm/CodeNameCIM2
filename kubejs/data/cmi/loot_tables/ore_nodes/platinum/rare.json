@@ -13,7 +13,7 @@
 							"add": false,
 							"count": {
 								"min": 1,
-								"max": 4
+								"max": 3
 							}
 						}
 					]
@@ -28,7 +28,7 @@
 							"add": false,
 							"count": {
 								"min": 5,
-								"max": 12
+								"max": 8
 							}
 						}
 					]
@@ -42,8 +42,8 @@
 							"function": "minecraft:set_count",
 							"add": false,
 							"count": {
-								"min": 14,
-								"max": 21
+								"min": 9,
+								"max": 16
 							}
 						}
 					]
@@ -66,7 +66,7 @@
 			],
 			"rolls": {
 				"min": 2,
-				"max": 5
+				"max": 4
 			}
 		}
 	]
