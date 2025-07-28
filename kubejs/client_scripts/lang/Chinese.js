@@ -40,6 +40,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("andesite_alloy_noodle_stage1", "安山合金刀削面(阶段1)")
 	addItemLanguage("andesite_alloy_noodle_stage2", "安山合金刀削面(阶段2)")
 	addItemLanguage("andesite_alloy_noodle", "安山合金刀削面")
+	addItemLanguage("paxel", "镐尖斧")
 
 	addItemLanguage("tier_1_rocket_frame", "一阶火箭框架")
 	addItemLanguage("tier_2_rocket_frame", "二阶火箭框架")

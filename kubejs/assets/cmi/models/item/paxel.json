@@ -1,0 +1,40 @@
+{
+	"loader": "tconstruct:tool",
+	"parent": "forge:item/default-tool",
+	"textures": {
+		"axe": "cmi:item/tool/tconstruct/paxel/axe",
+		"head": "cmi:item/tool/tconstruct/paxel/head",
+		"handle": "tconstruct:item/tool/pickaxe/handle"
+	},
+	"modifier_roots": [
+		"cmi:item/tool/tconstruct/paxel/modifiers/"
+	],
+	"parts": [
+		{
+			"name": "handle",
+			"index": 1
+		},
+		{
+			"name": "head",
+			"index": 0
+		},
+		{
+			"name": "axe",
+			"index": 2
+		}
+	],
+	"overrides": [
+		{
+			"predicate": {
+				"tconstruct:charging": 2
+			},
+			"model": "cmi:item/tconstruct/blocking/paxel"
+		},
+		{
+			"predicate": {
+				"tconstruct:broken": 1
+			},
+			"model": "cmi:item/tconstruct/broken/paxel"
+		}
+	]
+}

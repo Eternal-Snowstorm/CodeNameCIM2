@@ -1,0 +1,26 @@
+{
+	"loader": "tconstruct:tool",
+	"parent": "forge:item/default-tool",
+	"textures": {
+		"axe": "cmi:item/tool/tconstruct/paxel/broken_axe",
+		"head": "cmi:item/tool/tconstruct/paxel/broken_head",
+		"handle": "tconstruct:item/tool/pickaxe/handle"
+	},
+	"modifier_roots": [
+		"cmi:item/tool/tconstruct/paxel/modifiers/"
+	],
+	"parts": [
+		{
+			"name": "handle",
+			"index": 1
+		},
+		{
+			"name": "head",
+			"index": 0
+		},
+		{
+			"name": "axe",
+			"index": 2
+		}
+	]
+}
