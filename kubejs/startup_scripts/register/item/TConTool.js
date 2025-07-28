@@ -4,8 +4,6 @@ let $ModifiableItem =
 	Java.loadClass("slimeknights.tconstruct.library.tools.item.ModifiableItem")
 let $Item$Properties =
 	Java.loadClass("net.minecraft.world.item.Item$Properties")
-let $ToolBuildHandler =
-	Java.loadClass("slimeknights.tconstruct.library.tools.helper.ToolBuildHandler")
 
 StartupEvents.registry("item", (event) => {
 	const ITEM_PROPERTIES = new $Item$Properties().stacksTo(1)
