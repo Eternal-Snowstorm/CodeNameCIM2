@@ -122,11 +122,11 @@ function addTConMaterial(event, name, handler) {
 			}
 			return this
 		},
-		platingShield(durability, knockbackResistance, toughness) {
+		platingShield(durability, blockAmount, blockAngle) {
 			this.stats.stats["tconstruct:plating_shield"] = {
 				durability: durability,
-				knockback_resistance: knockbackResistance,
-				toughness: toughness
+				block_amount: blockAmount,
+				block_angle: blockAngle
 			}
 			return this
 		},

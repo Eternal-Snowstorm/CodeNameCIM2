@@ -1,9 +1,19 @@
 ServerEvents.recipes((event) => {
-	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism, tconstruct } = event.recipes
+	let {
+		minecraft,
+		kubejs,
+		create,
+		createaddition,
+		thermal,
+		immersiveengineering,
+		mekanism,
+		tconstruct
+	} = event.recipes
 
 	function moltenMetalRecipeWithCondition(metal) {
 		let namespace = ["cmi", "tconstruct"]
 		let fluid = ""
+		const TEMPERATURE = 800
 
 		namespace.forEach((modid) => {
 			if (Fluid.exists(`${modid}:molten_${metal}`)) {
@@ -19,7 +29,6 @@ ServerEvents.recipes((event) => {
 			console.warn(`No molten metal found for ${metal}!`)
 			return
 		}
-		const TEMPERATURE = 800
 
 		tconstruct.melting(Fluid.of(fluid, 90))
 			.ingredient(`#forge:ingots/${metal}`)

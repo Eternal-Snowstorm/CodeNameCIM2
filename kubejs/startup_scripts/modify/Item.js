@@ -10,7 +10,11 @@ ItemEvents.modification((event) => {
 	})
 
 	// 木屑块燃烧时间
-	event.modify("createdieselgenerators:wood_chip", (modify)  => {
+	event.modify("createdieselgenerators:wood_chip", (modify) => {
 		modify.burnTime === 200
+	})
+
+	event.modify("", (modify) => {
+		modify.addAttribute
 	})
 })

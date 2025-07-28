@@ -44,7 +44,7 @@ interface TConMaterialBuilder {
 	platingChestplate(armor: number, durability: number, knockbackResistance: number, toughness: number): this;
 	platingLeggings(armor: number, durability: number, knockbackResistance: number, toughness: number): this;
 	platingBoots(armor: number, durability: number, knockbackResistance: number, toughness: number): this;
-	platingShield(durability: number, knockbackResistance: number, toughness: number): this;
+	platingShield(durability: number, blockAmount: number, blockAngle: number): this;
 	maille(): this;
 	shieldCore(): this;
 	setTraits(handler: (builder: TConTraitsBuilder) => void): this;
