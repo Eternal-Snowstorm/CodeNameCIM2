@@ -9,8 +9,8 @@ MMEvents.createProcesses((event) => {
 			.ticks(400)
 			.input(addFluidInput("cmi:steam", STEAM_AMOUNT))
 			.input(addItemInput(`forge:raw_materials/${ore}`, 1))
-			.output(addItemOutput(`forge:nuggets/${nugget}`, 27))
-			.output(addBonusOutput(`forge:nuggets/${nugget}`, 10, 0.25))
+			.output(addItemOutput(`#forge:nuggets/${nugget}`, 27))
+			.output(addBonusOutput(`#forge:nuggets/${nugget}`, 10, 0.25))
 			.output(addFluidOutput("minecraft:water", 100))
 			.output(addFluidOutput("mekanism:sulfur_dioxide", 200))
 	}
@@ -41,11 +41,18 @@ MMEvents.createProcesses((event) => {
 
 	// 物品输出
 	function addItemOutput(tag, count) {
+		let firstItem = []
+		Ingredient.of(tag)
+			.getItemIds()
+			.forEach((item) => {
+				firstItem.push(item)
+			})
+
 		return {
 			type: "mm:output/simple",
 			ingredient: {
 				type: "mm:item",
-				tag: tag,
+				item: firstItem[0],
 				count: count
 			}
 		}
@@ -53,12 +60,19 @@ MMEvents.createProcesses((event) => {
 
 	// 副产物
 	function addBonusOutput(tag, count, chance) {
+		let firstItem = []
+		Ingredient.of(tag)
+			.getItemIds()
+			.forEach((item) => {
+				firstItem.push(item)
+			})
+
 		return {
 			type: "mm:output/simple",
 			chance: chance,
 			ingredient: {
 				type: "mm:item",
-				tag: tag,
+				item: firstItem[0],
 				count: count
 			}
 		}
