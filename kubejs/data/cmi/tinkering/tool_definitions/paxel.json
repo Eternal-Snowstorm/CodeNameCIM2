@@ -57,20 +57,8 @@
 			"type": "tconstruct:traits",
 			"traits": [
 				{
-					"name": "tconstruct:killager",
-					"level": 1
-				},
-				{
-					"name": "tconstruct:axe_scrape",
-					"level": 1
-				},
-				{
-					"name": "tconstruct:stripping",
-					"level": 1
-				},
-				{
-					"name": "tconstruct:axe_wax_off",
-					"level": 1
+					"level": 1,
+					"name": "tconstruct:stripping"
 				}
 			]
 		},
