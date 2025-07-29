@@ -94,4 +94,44 @@ ServerEvents.recipes((event) => {
 		'farmersdelight:netherite_knife',
 		Fluid.of("create_enchantment_industry:hyper_experience", 1000)
 	])
+
+	// 小引擎
+	kubejs.shaped("createdieselgenerators:diesel_engine", [
+		" A ",
+		"BCB",
+		"DED"
+	], {
+		A: 'minecraft:flint_and_steel',
+		B: 'createdieselgenerators:engine_piston',
+		C: "#forge:storage_blocks/bronze",
+		D: "minecraft:polished_blackstone_slab",
+		E: "cmi:bronze_mechanism"
+	}).id("creatediselgenerators:diesel_engine")
+
+	// 中引擎
+	kubejs.shaped("createdieselgenerators:large_diesel_engine", [
+		" A ",
+		"BCB",
+		"DED"
+	], {
+		A: 'create:andesite_alloy',
+		B: "create:precision_mechanism",
+		C: "createdieselgenerators:diesel_engine",
+		D: "minecraft:polished_blackstone_slab",
+		E: "#forge:storage_blocks/brass"
+	}).id("creatediselgenerators:large_diesel_engine")
+
+	// 大引擎
+	kubejs.shaped("createdieselgenerators:huge_diesel_engine", [
+		"ZAZ",
+		"BCB",
+		"DED"
+	], {
+		Z:"create:andesite_alloy",
+		A:'minecraft:flint_and_steel',
+		B: "cmi:light_engineering_mechanism",
+		C: "create:steam_engine",
+		D: "create:fluid_pipe",
+		E: "#forge:storage_blocks/steel"
+	}).id("creatediselgenerators:huge_diesel_engine")
 })

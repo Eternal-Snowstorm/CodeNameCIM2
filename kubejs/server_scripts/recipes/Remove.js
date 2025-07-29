@@ -151,6 +151,15 @@ ServerEvents.recipes((event) => {
 		event.remove({
 			id: `create:crushing/obsidian`
 		})
+		event.remove({
+			id: `createdieselgenerators:crafting/large_diesel_engine`
+		})
+		event.remove({
+			id: `createdieselgenerators:crafting/diesel_engine`
+		})
+		event.remove({
+			id: `createdieselgenerators:crafting/huge_diesel_engine`
+		})
 	})
 
 	let removeItemInputRecipes = [
