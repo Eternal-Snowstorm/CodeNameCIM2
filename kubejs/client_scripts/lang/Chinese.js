@@ -198,40 +198,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("qi_month", "榛名柒月", "榛名柒月")
 	addPaintingLanguage("sacabambaspis", "萨卡班甲鱼", "⑨Dropper_QWQ⑨")
 
-	addAloneLanguage(`message.${global.namespace}.food.andesite_alloy_noodle`, "不咸不淡, 味道好极了")
-	addAloneLanguage(`jade.theme.${global.namespace}.stardew_valley`, "星露谷物语")
-	addAloneLanguage(`jade.theme.${global.namespace}.war_thunder`, "战争雷霆")
-	addAloneLanguage(`jade.theme.${global.namespace}.windows_aero_lite`, "Windows Aero Lite")
-	addAloneLanguage(`jade.theme.${global.namespace}.windows_aero`, "Windows Aero")
-	addAloneLanguage(`jade.theme.${global.namespace}.windows_basic`, "Windows Basic")
-	addAloneLanguage(`jade.theme.${global.namespace}.windows_classic`, "Windows Classic")
-	addAloneLanguage(`jade.theme.${global.namespace}.windows_plex`, "Windows Plex")
-	addAloneLanguage(`jade.theme.${global.namespace}.windows_xp_luna`, "Windows XP Luna")
-	addAloneLanguage(`jade.theme.${global.namespace}.windows10`, "Windows 10")
-	addAloneLanguage(`tooltip.${global.namespace}.41dirt`, "按下Alt+F4可以获得创造模式能量立方")
-	addAloneLanguage(`message.${global.namespace}.reload`, "已重载全部脚本!")
-	addAloneLanguage(`message.${global.namespace}.41msg`, "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息")
-	addAloneLanguage(`itemGroup.${global.namespace}.io_block`, "配置面方块(调试用)")
-	addAloneLanguage(`itemGroup.${global.namespace}.all`, "机械动力: 构件与革新")
-	addAloneLanguage(`itemGroup.${global.namespace}.salts_and_solutions`, "构件与革新: 金属盐")
-	addAloneLanguage(`itemGroup.${global.namespace}.mechanisms`, "构件与革新: 构件")
-	addAloneLanguage(`itemGroup.${global.namespace}.metals`, "构件与革新: 金属")
-	addAloneLanguage("curios.identifier.mechanisms", "构件")
-	addAloneLanguage(`promp.${global.namespace}.ender_mechanism.location_stored`, "当前坐标已存入末影构件")
-	addAloneLanguage(`message.${global.namespace}.debug.getHardness`, "这个方块的硬度是: %s")
-	addAloneLanguage(`text.${global.namespace}.dev`, "§0● 开发中画面, 实际内容请以正式版为准")
-	addAloneLanguage(`text.${global.namespace}.player`, "§0● 测试中版本, 不代表最终品质")
-	addAloneLanguage(`message.${global.namespace}.checkCheating`, "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?")
-	addAloneLanguage(`message.${global.namespace}.checkMultipleCheating`, "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?")
-	addAloneLanguage(`sea.${global.namespace}.search`, "§b正在使用对海搜索!")
-	addAloneLanguage(`tooltip.${global.namespace}.initial_item_kit.tip`, "按住Shift查看详情")
-	addAloneLanguage(`tooltip.${global.namespace}.initial_item_kit.shift`, "潜行 + 右键打开, 将会获得以下物品:\n§b扳手\n§b工程师护目镜\n§b强力胶")
-	addAloneLanguage(`message.${global.namespace}.initial_item_kit`, "欢迎游玩整合包! 物品已发放!")
-	addAloneLanguage(`display.${global.namespace}.nether_crops`, "§c下界作物只能种植在位于下界的下界农田方块上!")
-
-	addAloneLanguage(`message.${global.namespace}.modrinth_warning0`, "你正在游玩从Modrinth渠道下载的CMI")
-	addAloneLanguage(`message.${global.namespace}.modrinth_warning1`, "因Modrinth的政策限制, 本版本删除了部分内容, 可能造成如无法多人游戏、无法进入服务器等问题\n您可以通过下方按钮在CurseForge或BBSMC下载本整合包游玩完整内容")
-
 	addCommonTooltipLanguage("cmi:pigiron_mechanism", "可无限次食用")
 	addCommonTooltipLanguage("cmi:acceleratable", "§b按住Shift查看构件之力催生器用途")
 	addCommonTooltipLanguage("cmi:stone_mechanism", "§c手持右键圆石可将其转换为石头")
@@ -474,10 +440,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addPaintingLanguage(key, title, author) {
 		event.add(`painting.${global.namespace}.${key}.title`, title)
 		event.add(`painting.${global.namespace}.${key}.author`, author)
-	}
-
-	function addAloneLanguage(key, value) {
-		event.add(key, value)
 	}
 
 	function addTConMaterialLanguage(key, name, flavour, encyclopedia, ranged, armor) {
