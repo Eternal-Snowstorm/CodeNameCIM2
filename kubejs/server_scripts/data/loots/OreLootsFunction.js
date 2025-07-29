@@ -1,4 +1,4 @@
-function addOreLoots(event, ore) {
+function addCommonOreLoots(event, ore) {
 	event.addBlock(`cmi:${ore}_ore`, (loot) => {
 		loot.addPool((pool) => {
 			pool.addEntry({
@@ -84,4 +84,8 @@ function addOreLoots(event, ore) {
 			})
 		})
 	})
+}
+
+function addAloneOreLoots() {
+
 }
