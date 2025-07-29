@@ -18,11 +18,24 @@
 	quests: [
 		{
 			id: "01AE65C1634E3194"
-			tasks: [{
-				id: "481A5C5A52126F44"
-				title: "log"
-				type: "checkmark"
+			rewards: [{
+				id: "5E45C53173C11845"
+				type: "xp"
+				xp: 10
 			}]
+			tasks: [{
+				id: "6C62EA861E609548"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "log"
 			x: -13.5d
 			y: 0.0d
 		}
@@ -30,11 +43,24 @@
 			dependencies: ["01AE65C1634E3194"]
 			hide_dependency_lines: true
 			id: "6887A37B72AA97FA"
-			tasks: [{
-				id: "2C4C611879412CCE"
-				title: "plank"
-				type: "checkmark"
+			rewards: [{
+				id: "2ECEC43F6CF02584"
+				type: "xp"
+				xp: 10
 			}]
+			tasks: [{
+				id: "1316954E83A06660"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				title: "Any #minecraft:planks"
+				type: "item"
+			}]
+			title: "plank"
 			x: -9.0d
 			y: 2.0d
 		}
@@ -55,10 +81,15 @@
 			dependencies: ["07E74FB0730F6F2A"]
 			hide_dependency_lines: true
 			id: "558AB1EEAEE4FF10"
+			rewards: [{
+				id: "6E918F2937771DD9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
-				id: "33DE674DAF16C182"
-				title: "plank"
-				type: "checkmark"
+				id: "1F2BEF434633AB22"
+				item: "minecraft:stick"
+				type: "item"
 			}]
 			title: "stick"
 			x: 1.5d
@@ -81,10 +112,15 @@
 			dependencies: ["77DE8AABD50A1BA5"]
 			hide_dependency_lines: true
 			id: "4DDD4AE7B3C5B57A"
+			rewards: [{
+				id: "4464672D2FCFD538"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
-				id: "626FD3B961AD76FE"
-				title: "plank"
-				type: "checkmark"
+				id: "68EEF073ECE5A02E"
+				item: "cmi:basic_mechanism_part"
+				type: "item"
 			}]
 			title: "part"
 			x: 7.5d
@@ -94,10 +130,15 @@
 			dependencies: ["4DDD4AE7B3C5B57A"]
 			hide_dependency_lines: true
 			id: "1ADECAB6440F54A3"
+			rewards: [{
+				id: "456D888F0B1ADC60"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
-				id: "6123E9C81D6324EE"
-				title: "plank"
-				type: "checkmark"
+				id: "7553903DD79BD984"
+				item: "cmi:wooden_mechanism"
+				type: "item"
 			}]
 			title: "wooden_mechanism"
 			x: 11.0d

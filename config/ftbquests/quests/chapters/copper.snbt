@@ -13,10 +13,11 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	order_index: 3
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
+			hide_dependent_lines: true
 			id: "58A8B52FAFFECD9E"
 			rewards: [{
 				id: "339CA4037C90D0F2"
@@ -42,6 +43,7 @@
 		{
 			dependencies: ["58A8B52FAFFECD9E"]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "20F96D71B2750581"
 			size: 1.5d
 			tasks: [{
@@ -58,6 +60,7 @@
 				"4BBEC03C245EBD95"
 			]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "1378F4CE0C36AA2C"
 			rewards: [{
 				id: "0DABCA037272E733"
@@ -76,6 +79,7 @@
 		{
 			dependencies: ["70C97B8E5FA22F33"]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "4BBEC03C245EBD95"
 			rewards: [{
 				id: "38DA6920FCC12005"
@@ -92,6 +96,7 @@
 			y: 4.428571428571445d
 		}
 		{
+			hide_dependent_lines: true
 			id: "60EC905E5B65496D"
 			rewards: [{
 				id: "6D857E2ACD5742CB"
@@ -110,6 +115,7 @@
 		{
 			dependencies: ["60EC905E5B65496D"]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "70C97B8E5FA22F33"
 			rewards: [{
 				id: "49949755CA3E562D"
@@ -128,6 +134,7 @@
 		{
 			dependencies: ["1378F4CE0C36AA2C"]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "660239BFB83F4F56"
 			rewards: [{
 				id: "019740B61C29A586"
@@ -144,6 +151,7 @@
 			y: 0.9285714285714306d
 		}
 		{
+			hide_dependent_lines: true
 			id: "3C46C64ACB32CC36"
 			rewards: [{
 				id: "02CEB8B848C76B4D"
@@ -169,6 +177,7 @@
 		{
 			dependencies: ["3C46C64ACB32CC36"]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "6B4BF166BA668546"
 			rewards: [{
 				id: "5433E5B23CC0A8F6"
@@ -186,7 +195,9 @@
 		}
 		{
 			dependencies: ["6B4BF166BA668546"]
+			dependency_requirement: "one_started"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "627A68B48C6D99D3"
 			rewards: [{
 				id: "0F905C04F3F2B909"
@@ -233,6 +244,7 @@
 		{
 			dependencies: ["660239BFB83F4F56"]
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "00F8EF8F51301823"
 			rewards: [{
 				id: "48B3B568F4083CF3"
@@ -274,6 +286,7 @@
 			y: -0.5d
 		}
 		{
+			hide_dependent_lines: true
 			id: "7985E9CF35FE2DE3"
 			rewards: [{
 				id: "7A4CF0281543AEAF"
