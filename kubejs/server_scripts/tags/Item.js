@@ -13,6 +13,16 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	// 奶酪
+	event.get("forge:cheese")
+		.add("ad_astra:cheese")
+		.add("tconstruct:cheese_ingot")
+
+	// 奶酪块
+	event.get("forge:cheese_block")
+		.add("ad_astra:cheese_block")
+		.add("tconstruct:cheese_block")
+
 	// 特殊矿石
 	event.get(`${global.namespace}:special_ores`)
 		.add("#forge:raw_materials/galena")

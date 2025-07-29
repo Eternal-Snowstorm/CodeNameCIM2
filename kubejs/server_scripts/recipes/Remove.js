@@ -28,7 +28,14 @@ ServerEvents.recipes((event) => {
 		"mekanism:control_circuit/advanced",
 		"mekanism:control_circuit/elite",
 		"mekanism:control_circuit/ultimate",
-		"thermal:smelting/cured_rubber_from_smelting"
+		"thermal:smelting/cured_rubber_from_smelting",
+		"tconstruct:common/cheese_block_from_ingot",
+		"tconstruct:smeltery/casting/cheese_block",
+		"tconstruct:smeltery/casting/cheese_ingot_gold_cast",
+		"tconstruct:smeltery/casting/cheese_ingot_sand_cast",
+		"tconstruct:common/cheese_ingot_from_block",
+		"thermal:gourmand_cheese_ingot",
+		"thermal:gourmand_cheese"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
