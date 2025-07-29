@@ -1,0 +1,148 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iron"
+	group: ""
+	icon: "cmi:iron_mechanism"
+	id: "21598BD6C77970EB"
+	images: [{
+		height: 16.64d
+		image: "cmi:textures/images/background/iron.png"
+		rotation: 0.0d
+		width: 41.36d
+		x: -2.0d
+		y: 0.0d
+	}]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependency_lines: true
+			id: "6B45AF976D26E391"
+			rewards: [{
+				id: "0E2C6CF4676F5D40"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1368628EE6CB7EBD"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Iron Ingot"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B45AF976D26E391"]
+			hide_dependency_lines: true
+			id: "3AAF51F4A4924343"
+			tasks: [{
+				id: "54FA863085554928"
+				title: "Press"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3AAF51F4A4924343"]
+			dependency_requirement: "all_started"
+			hide_dependency_lines: true
+			id: "7B2FB83F844D862A"
+			rewards: [{
+				id: "0C8035402BB48034"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "61D5167C8015579B"
+				item: "thermal:iron_plate"
+				type: "item"
+			}]
+			title: "Iron Plate"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7B2FB83F844D862A"]
+			hide_dependency_lines: true
+			id: "110882205EC952C3"
+			tasks: [{
+				id: "285195A9136C33FD"
+				title: "Cut"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6B45AF976D26E391"]
+			hide_dependency_lines: true
+			id: "701F589A2FF74412"
+			rewards: [{
+				id: "53BF792B8F753004"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0F399D7FA9D291EE"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			title: "Iron Nugget"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30F0B84B98781F76"]
+			hide_dependency_lines: true
+			id: "030F841D01F802A7"
+			rewards: [{
+				id: "61CD484743319D15"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "691D185FB0AE3BF4"
+				item: "cmi:basic_mechanism_part"
+				type: "item"
+			}]
+			title: "Medchanism Part"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["110882205EC952C3"]
+			hide_dependency_lines: true
+			id: "30F0B84B98781F76"
+			tasks: [{
+				id: "6E0E1F1A210104EE"
+				title: "Deploy"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["030F841D01F802A7"]
+			hide_dependency_lines: true
+			id: "65F2FFE639A215C6"
+			rewards: [{
+				id: "57228099923BB864"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6B81C23109702052"
+				item: "cmi:iron_mechanism"
+				type: "item"
+			}]
+			title: "Iron Mechanism"
+			x: 10.5d
+			y: 0.0d
+		}
+	]
+	title: "Iron"
+}
