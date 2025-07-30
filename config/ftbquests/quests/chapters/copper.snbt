@@ -37,6 +37,7 @@
 				title: "Any #forge:gems/sulfur"
 				type: "item"
 			}]
+			title: "Sulfur"
 			x: -17.0d
 			y: 2.0d
 		}
@@ -73,6 +74,7 @@
 				item: "cmi:cured_rubber_bucket"
 				type: "item"
 			}]
+			title: "Cured Rubber"
 			x: -0.9642857142857224d
 			y: 5.285714285714299d
 		}
@@ -92,6 +94,7 @@
 				item: "cmi:rubber_plate"
 				type: "item"
 			}]
+			title: "Rubber Plate"
 			x: -4.357142857142847d
 			y: 4.428571428571445d
 		}
@@ -109,6 +112,7 @@
 				item: "thermal:latex_bucket"
 				type: "item"
 			}]
+			title: "Latex"
 			x: -14.07142857142857d
 			y: -1.7857142857142705d
 		}
@@ -128,6 +132,7 @@
 				item: "thermal:rubber"
 				type: "item"
 			}]
+			title: "Rubber"
 			x: -9.071428571428577d
 			y: -0.8214285714285694d
 		}
@@ -147,6 +152,7 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
+			title: "Cured Rubber"
 			x: 6.392857142857139d
 			y: 0.9285714285714306d
 		}
@@ -171,6 +177,7 @@
 				title: "Any #forge:plates/copper"
 				type: "item"
 			}]
+			title: "Copper Plate"
 			x: -14.607142857142861d
 			y: 1.857142857142854d
 		}
@@ -187,9 +194,10 @@
 			size: 1.5d
 			tasks: [{
 				id: "054E57CA80AC5F78"
-				title: "cutting"
+				title: "Cutting"
 				type: "checkmark"
 			}]
+			title: "Cutting"
 			x: -9.821428571428577d
 			y: 3.7857142857142847d
 		}
@@ -217,6 +225,7 @@
 				title: "Any #forge:nuggets/copper"
 				type: "item"
 			}]
+			title: "Copper Nugget"
 			x: -5.5d
 			y: 0.5d
 		}
@@ -238,6 +247,7 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
+			title: "Fiuld Pipe"
 			x: 2.75d
 			y: 3.7142857142857153d
 		}
@@ -264,6 +274,7 @@
 				title: "Any #forge:buckets/water"
 				type: "item"
 			}]
+			title: "Water Bucket"
 			x: 11.535714285714278d
 			y: 2.9285714285714306d
 		}
@@ -282,6 +293,7 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
+			title: "Mechanism Part"
 			x: 15.607142857142861d
 			y: -0.5d
 		}
@@ -305,6 +317,7 @@
 				}
 				type: "item"
 			}]
+			title: "Conver Curving"
 			x: -0.5d
 			y: -0.1071428571428541d
 		}

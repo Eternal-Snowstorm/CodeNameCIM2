@@ -1,0 +1,261 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "photosensitive"
+	group: ""
+	icon: "cmi:photosensitive_mechanism"
+	id: "50E2DE0506D40242"
+	images: [{
+		height: 21.12d
+		image: "cmi:textures/images/background/photosensitive.png"
+		rotation: 0.0d
+		width: 35.0d
+		x: -3.0d
+		y: -1.0d
+	}]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "2D7C497B6DE71A6A"
+			rewards: [{
+				id: "07EB6F1A4758009A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "636621F052B386A8"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			title: "Amethyst Shard"
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7689533A731CF99F"
+				"4655CCB0F95FFEC9"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "10640F4F5D4493FC"
+			rewards: [{
+				id: "37516020B61DCC41"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2EEF4DA32A872EA9"
+				item: "cmi:charged_amethyst"
+				type: "item"
+			}]
+			title: "Charged Amethyst Shard"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2D7C497B6DE71A6A"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "7689533A731CF99F"
+			tasks: [{
+				id: "7A8F8A781AC7DDC7"
+				title: "Charge"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6BEF3191E17065E0"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "4686C401FC04122D"
+			tasks: [{
+				id: "7EEC2D37BD9DAE3B"
+				title: "Crush"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2D7C497B6DE71A6A"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "5653F0D4FEAB12B3"
+			rewards: [{
+				id: "318A7D91E05ADC51"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "590A2D2F4D628C8D"
+				item: "thermal_extra:amethyst_dust"
+				type: "item"
+			}]
+			title: "Amethyst Dust"
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5653F0D4FEAB12B3"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "04D8E7B236306B91"
+			tasks: [{
+				id: "34AA6D1E681D3032"
+				title: "Filling water *4"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["04D8E7B236306B91"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "6BEF3191E17065E0"
+			rewards: [{
+				id: "3DB25C07FE73DE50"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "38432647A57F42C1"
+				item: "minecraft:amethyst_cluster"
+				type: "item"
+			}]
+			title: "Amethyst Cluster"
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"10640F4F5D4493FC"
+				"239C8B297E65182D"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "5B09C912CC93559E"
+			rewards: [{
+				id: "55D8C52FB9FC9BC4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "51511C5F60FDAC35"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			title: "Glowstone Dust"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5653F0D4FEAB12B3"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "239C8B297E65182D"
+			tasks: [{
+				id: "08F5C25F2E184F5A"
+				title: "Lase"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5B09C912CC93559E"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "18DDE97D66E9E7BE"
+			rewards: [{
+				id: "723C90C3C2066D0F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "086E12431BE12161"
+				item: "cmi:mechanical_mechanism_part"
+				type: "item"
+			}]
+			title: "Mechanism Part"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "03A565CE4505C8FA"
+			rewards: [{
+				id: "5447AFCF7ECD433B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6C51BA7F36339E19"
+				item: "minecraft:quartz_block"
+				type: "item"
+			}]
+			title: "Quartz Block"
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3610326461B50623"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "4655CCB0F95FFEC9"
+			rewards: [{
+				id: "2232772B659C90DA"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "33EBA3FD8F768C39"
+				item: "minecraft:quartz_slab"
+				type: "item"
+			}]
+			title: "Quartz Slab"
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["03A565CE4505C8FA"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "3610326461B50623"
+			tasks: [{
+				id: "4CA80C8D3393885F"
+				title: "Cut"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["18DDE97D66E9E7BE"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "462C2FFF623F9260"
+			rewards: [{
+				id: "3C350348BFF0DF38"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5BBD071841538D06"
+				item: "cmi:photosensitive_mechanism"
+				type: "item"
+			}]
+			title: "Photosensitive Mechanism"
+			x: 6.5d
+			y: 2.0d
+		}
+	]
+	title: "Photosensitive"
+}
