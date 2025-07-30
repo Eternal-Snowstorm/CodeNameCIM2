@@ -220,8 +220,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("cmi:potion_mechanism", "右键获取大多数正面buff")
 	addCommonTooltipLanguage("cmi:super_knife", "经魔力灌注, 难以磨损")
 	addCommonTooltipLanguage("#cmi:special_ores", "该矿石只能在蒸汽矿石处理机内处理")
+	addCommonTooltipLanguage("#cmi:multiblock_machine_controller", "制作多方块接口时不消耗")
 
-	addJEIInfoLanguage("mm:large_steam_boiler", "需要焦煤的温度才能释放足够的热能来产生蒸汽\n不同于远在泛银河系的格雷科技有限公司, 我们的锅炉非常非常安全, 永远不会爆炸")
+	addJEIInfoLanguage("mm:large_steam_boiler", "需要燃烧焦煤才能释放足够的热能来产生蒸汽\n不同于远在泛银河系的格雷科技有限公司, 我们的锅炉非常非常安全, 永远不会爆炸(笑)")
 	addJEIInfoLanguage("cmi:andesite_alloy_noodle", `"意大利面就应该拌42号混凝土. 因为这个螺丝钉的长度, 它很容易会直接影响到挖掘机的扭距, 你往里砸的时候, 一瞬间它就会产生大量的高能蛋白, 俗称UFO. 会严重影响经济的发展. 照你这么说, 炸鸡块要用92#汽油, 毕竟我们无法用光学透镜探测苏格拉底, 如果二氧化氢持续侵蚀这个机床组件, 那么我们早晚要在斐波那契曲线上安装一个胶原蛋白, 否则我们将无法改变蜜雪冰城与阿尔别克的叠加状态, 因为众所周知爱吃鸡摩人在捕鲲的时候往往需要用氢的同位素当做诱饵, 但是原子弹的新鲜程度又会直接影响到我国东南部的季风和洋流, 所以说在西伯利亚地区开设农学院显然是不合理的. \n我知道你一定会反驳我, 告诉我农业的底层思维是什么, 就是不用化肥农药和种子, 还包括生命之源氮气, 使甲烷分子直接转化成能够捕获放射性元素释放的β射线的单质, 并且使伽马射线在常温下就能用老虎钳折弯成78°, 否则在用望远镜观察细胞结构时, 根本发现不了时空重叠时到底要叠几层才能使潼关肉夹馍更酥脆的原因. "`)
 	addJEIInfoLanguage("minecraft:andesite", `在本包, 安山岩生产主要方式有5种\n一种是通过造石机\n一种是通过安山岩磨成粉后加工的增值线\n一种是刷石机, 有25%的概率可以刷出安山岩\n一种是前往"安山岩洞窟"群系, 这是一个全是安山岩的洞窟\n最后一种是通过构件催生器`)
 	addJEIInfoLanguage("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产才能确保需求量自由")
@@ -230,6 +231,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLanguage("#ad_astra:power_consumption_machines", "该Mod的机器每个面都有能量输入的上限\n如果想要不会断电确保产量你可能需要给每个面都连接一根电线")
 	addJEIInfoLanguage("engineered_schematics:multiblock_schematic", "手持原理图右键地面以放置投影网格, 将原理图放置于副手可以查看方块的具体位置")
 	addJEIInfoLanguage("cmi:siltsteel_ingot", "自浑浊淤泥中升华, 历经繁复萃取与催化精炼, 终获此一泓清冽碧波")
+	addJEIInfoLanguage("cmi:wooden_faucet", `右键"橡胶原木"有25%的概率获得1个"橡胶", 有10%的概率会让"橡胶原木"变成"去皮橡胶原木", 并且每次右键"橡胶原木"都会消耗1点耐久, 耐久消耗殆尽则会损坏`)
 
 	addAccelerateTooltipLanguage("cmi:stone_mechanism", "§e转化石头\n§e10%安山岩\n§e10%闪长岩\n§e10%花岗岩\n§e10%石灰岩\n§e10%焦黑石头\n§2转化深板岩\n§210%焦黑石头\n§210%凝灰岩\n§210%熔渣\n§210%滴水石块\n§210%平滑玄武岩")
 	addAccelerateTooltipLanguage("cmi:andesite_mechanism", "§e转化石头\n§e20%安山岩\n§e5%铁矿石\n§e5%锌矿石\n§2转化深板岩\n§215%安山岩\n§210%深层铁矿石\n§210%深层锌矿石")

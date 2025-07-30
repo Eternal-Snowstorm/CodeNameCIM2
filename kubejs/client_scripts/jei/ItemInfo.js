@@ -13,4 +13,5 @@ JEIEvents.information((event) => {
 	addJEIInfo("cmi:siltsteel_ingot")
 	addJEIInfo("cmi:andesite_alloy_noodle")
 	addJEIInfo("mm:large_steam_boiler")
+	addJEIInfo("cmi:wooden_faucet")
 })
