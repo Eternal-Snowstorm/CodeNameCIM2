@@ -1,10 +1,3 @@
-let $BlockBehaviour$Properties =
-	Java.loadClass("net.minecraft.world.level.block.state.BlockBehaviour$Properties")
-let $BlockItem =
-	Java.loadClass("net.minecraft.world.item.BlockItem")
-let $Item$Properties =
-	Java.loadClass("net.minecraft.world.item.Item$Properties")
-
 StartupEvents.registry("block", (event) => {
 	event.create(`${global.namespace}:the_accelerator_of_mechanism_power`)
 		.soundType(SoundType.METAL)
