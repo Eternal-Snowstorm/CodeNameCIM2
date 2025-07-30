@@ -129,7 +129,7 @@ StartupEvents.registry("block", (event) => {
 	// 青铜外壳
 	event.create(`${global.namespace}:bronze_casing`)
 		.textureAll(`${global.namespace}:block/casing/bronze/casing`)
-		.soundType(SoundType.METAL)
+		.soundType(SoundType.NETHERITE_BLOCK)
 		.hardness(5)
 		.resistance(5)
 		.tagBlock(global.toolType["pickaxe"])
@@ -138,7 +138,7 @@ StartupEvents.registry("block", (event) => {
 	// 耐压外壳
 	event.create(`${global.namespace}:pressure_resistance_casing`)
 		.textureAll(`${global.namespace}:block/casing/pressure_resistance/casing`)
-		.soundType(SoundType.METAL)
+		.soundType(SoundType.NETHERITE_BLOCK)
 		.hardness(5)
 		.resistance(5)
 		.tagBlock(global.toolType["pickaxe"])
