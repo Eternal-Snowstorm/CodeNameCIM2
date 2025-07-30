@@ -1,14 +1,14 @@
 ServerEvents.recipes((event) => {
 	let { create, kubejs, vintageimprovements } = event.recipes
 
-	const BATTERY = `#${global.namespace}:batteries`
+	const BATTERIES = Ingredient.of(`#${global.namespace}:batteries`)
 
 	kubejs.shaped("immersiveengineering:dynamo", [
 		"EDE",
 		"ECE",
 		"ABA"
 	], {
-		A: BATTERY,
+		A: BATTERIES,
 		B: "#forge:dusts/redstone",
 		C: "immersiveengineering:component_iron",
 		D: "immersiveengineering:coil_lv",
@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
 		"BDB",
 		"AAA"
 	], {
-		A: BATTERY,
+		A: BATTERIES,
 		B: "#forge:plates/constantan",
 		C: "#forge:ingots/steel",
 		D: "immersiveengineering:coil_lv"
@@ -31,7 +31,7 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"ABA"
 	], {
-		A: BATTERY,
+		A: BATTERIES,
 		B: "immersiveengineering:sheetmetal_steel",
 		C: "cmi:heavy_engineering_mechanism",
 		D: "immersiveengineering:component_iron"
@@ -43,7 +43,7 @@ ServerEvents.recipes((event) => {
 		"DBD"
 	], {
 		A: "portality:frame",
-		B: BATTERY,
+		B: BATTERIES,
 		C: "minecraft:blast_furnace",
 		D: "cmi:stone_mechanism"
 	})

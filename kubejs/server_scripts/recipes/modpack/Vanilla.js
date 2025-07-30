@@ -100,41 +100,14 @@ ServerEvents.recipes((event) => {
 		C: "minecraft:blast_furnace"
 	}).id("immersiveindustry:crafting/burning_chamber")
 
-	// 丐版离心机
-	kubejs.shaped("cmi:simple_centrifuge", [
-		"ABA",
-		"CDC",
-		"EFE"
-	], {
-		A: "#forge:ingots/andesite_alloy",
-		B: "cmi:andesite_mechanism",
-		C: "#create:shaft",
-		D: "create:andesite_casing",
-		E: "#vintageimprovements:springs/andesite",
-		F: "minecraft:bucket"
-	})
-
-	// 蒸汽锅炉
-	kubejs.shaped("cmi:steam_boiler", [
+	// 耐压外壳
+	kubejs.shaped("4x cmi:pressure_resistance_casing", [
 		"AAA",
-		"ABA",
-		"CCC"
+		"A A",
+		"AAA"
 	], {
-		A: [
-			"#forge:ingots/bronze",
-			"#forge:plates/bronze"
-		],
-		B: [
-			"minecraft:furnace",
-			"minecraft:blast_furnace",
-			"minecraft:smoker"
-		],
-		C: "tconstruct:seared_bricks"
+		A: "#forge:plates/steel"
 	})
-
-	// 大型蒸汽锅炉
-
-	// 蒸汽矿石处理机
 
 	// 青铜外壳
 	kubejs.shaped("4x cmi:bronze_casing", [

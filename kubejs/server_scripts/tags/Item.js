@@ -13,6 +13,12 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	// 机器核心
+	event.get(`${global.namespace}:multiblock_machine_controller`)
+		.add("mm:large_steam_boiler")
+		.add("mm:steam_ore_processor")
+		.add("mm:cracker")
+
 	// 奶酪
 	event.get("forge:cheese")
 		.add("ad_astra:cheese")
@@ -65,6 +71,26 @@ ServerEvents.tags("item", (event) => {
 		.add("mynethersdelight:warped_fungus_colony")
 		.add("mynethersdelight:powder_cannon")
 
+	event.get(`${global.namespace}:item_container`)
+		.add("#forge:chests")
+		.add("#forge:barrels")
+
+	event.get(`${global.namespace}:fluid_tanks`)
+		.add("create:fluid_tank")
+		.add("create_connected:fluid_vessel")
+		.add("railways:fuel_tank")
+		.add("create:creative_fluid_tank")
+		.add("create_connected:creative_fluid_vessel")
+		.add("tconstruct:seared_fuel_tank")
+		.add("tconstruct:seared_ingot_tank")
+		.add("tconstruct:scorched_fuel_tank")
+		.add("tconstruct:scorched_ingot_tank")
+		.add("mekanism:basic_fluid_tank")
+		.add("mekanism:advanced_fluid_tank")
+		.add("mekanism:elite_fluid_tank")
+		.add("mekanism:ultimate_fluid_tank")
+		.add("mekanism:creative_fluid_tank")
+
 	event.get(`${global.namespace}:batteries`)
 		.add("mekanism:basic_energy_cube")
 		.add("mekanism:advanced_energy_cube")
@@ -72,6 +98,7 @@ ServerEvents.tags("item", (event) => {
 		.add("mekanism:ultimate_energy_cube")
 		.add("mekanism:creative_energy_cube")
 		.add("createaddition:modular_accumulator")
+		.add("createaddition:creative_energy")
 		.add("immersiveengineering:capacitor_lv")
 		.add("immersiveengineering:capacitor_mv")
 		.add("immersiveengineering:capacitor_hv")
