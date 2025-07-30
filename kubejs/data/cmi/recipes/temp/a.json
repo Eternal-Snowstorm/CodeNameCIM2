@@ -1,0 +1,14 @@
+{
+	"type": "vintageimprovements:curving",
+	"itemAsHead": "mekanism:pellet_antimatter",
+	"ingredients": [
+		{
+		  "item": "cmi:plasma_ingot"
+		}
+	],
+	"results": [
+		{
+		  "item": "mekanism:pellet_antimatter"
+		}
+	]
+}

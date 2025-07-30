@@ -1,0 +1,14 @@
+{
+	"type": "vintageimprovements:curving",
+	"itemAsHead": "mekanism:pellet_plutonium",
+	"ingredients": [
+		{
+		  "item": "mekanism:pellet_polonium"
+		}
+	],
+	"results": [
+		{
+		  "item": "mekanism:pellet_plutonium"
+		}
+	]
+}

@@ -11,7 +11,6 @@ ServerEvents.recipes((event) => {
 	let ifm = "cmi:incomplete_feinforced_mechanism"
 	let irm = "cmi:incomplete_resonant_mechanism"
 	let inm = "cmi:incomplete_nature_mechanism"
-	let itrm = "cmi:incomplete_nature_mechanism"
 	let ilem = "cmi:incomplete_light_engineering_mechanism"
 	let ihem = "cmi:incomplete_heavy_engineering_mechanism"
 	let iem = "cmi:incomplete_ender_mechanism"
@@ -38,6 +37,8 @@ ServerEvents.recipes((event) => {
 	let ir3m = "cmi:incomplete_tier_3_aviation_mechanism"
 	let ir4m = "cmi:incomplete_tier_4_aviation_mechanism"
 	let ipom = "cmi:incomplete_potion_mechanism"
+	let irsm = 'vintageimprovements:incomplete_redstone_module'
+	let ibm = 'cmi:incomplete_bronze_mechanism'
 
 	// 木质
 	create.sequenced_assembly("cmi:wooden_mechanism", [
@@ -399,4 +400,23 @@ ServerEvents.recipes((event) => {
 		]),
 		create.deploying(ipom, [ipom, "cmi:magical_mechanism_part"])
 	]).transitionalItem(ipom).loops(1)
+
+	// 红石
+	create.sequenced_assembly("vintageimprovements:redstone_module", [
+		"#create:sleepers"
+	], [
+		create.deploying(irsm, [irsm, "minecraft:redstone_torch"]),
+		create.deploying(irsm, [irsm, "cmi:basic_mechanism_part"]),
+	]).transitionalItem(irsm).loops(1)
+
+	// 青铜
+	create.sequenced_assembly("cmi:bronze_mechanism", [
+		"#forge:plates/bronze"
+	], [
+		create.cutting(ibm, ibm),
+		create.deploying(ibm, [ibm, 'vintageimprovements:bronze_spring']),
+		create.deploying(ibm, [ibm, "#forge:nuggets/bronze"]),
+		create.deploying(ibm, [ibm, "create:flywheel"]),
+		create.deploying(ibm, [ibm, "cmi:mechanical_mechanism_part"]),
+	]).transitionalItem(ibm).loops(1)
 })

@@ -160,6 +160,18 @@ ServerEvents.recipes((event) => {
 		event.remove({
 			id: `createdieselgenerators:crafting/huge_diesel_engine`
 		})
+		event.remove({
+			id: `createdieselgenerators:crafting/huge_diesel_engine`
+		})
+		event.remove({
+			id: `create:crafting/kinetics/flywheel`
+		})
+		event.remove({
+			id: `mekanism:processing/lategame/antimatter/from_pellet`
+		})
+		event.remove({
+			id: `mekanism:processing/lategame/antimatter_pellet/from_gas`
+		})
 	})
 
 	let removeItemInputRecipes = [

@@ -52,5 +52,7 @@ ServerEvents.recipes((event) => {
 		}
 	)
 
+	mekanism.crystallizing("gas","mekanism:pellet_antimatter",{ gas: "mekanism:antimatter", amount: 10 })
+	mekanism.oxidizing("mekanism:pellet_antimatter",{ gas: "mekanism:antimatter", amount: 10 })
 
 })
