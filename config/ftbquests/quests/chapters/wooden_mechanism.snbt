@@ -35,7 +35,7 @@
 				title: "Any #minecraft:logs"
 				type: "item"
 			}]
-			title: "log"
+			title: "Log"
 			x: -13.5d
 			y: 0.0d
 		}
@@ -60,7 +60,7 @@
 				title: "Any #minecraft:planks"
 				type: "item"
 			}]
-			title: "plank"
+			title: "Plank"
 			x: -9.0d
 			y: 2.0d
 		}
@@ -73,7 +73,7 @@
 				title: "plank"
 				type: "checkmark"
 			}]
-			title: "press"
+			title: "Press"
 			x: -1.5d
 			y: 5.0d
 		}
@@ -91,7 +91,7 @@
 				item: "minecraft:stick"
 				type: "item"
 			}]
-			title: "stick"
+			title: "Stick"
 			x: 1.5d
 			y: 2.5d
 		}
@@ -104,7 +104,7 @@
 				title: "plank"
 				type: "checkmark"
 			}]
-			title: "cut"
+			title: "Cut"
 			x: 5.0d
 			y: 4.0d
 		}
@@ -122,7 +122,7 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			title: "part"
+			title: "Mechanism Part"
 			x: 7.5d
 			y: 5.0d
 		}
@@ -140,7 +140,7 @@
 				item: "cmi:wooden_mechanism"
 				type: "item"
 			}]
-			title: "wooden_mechanism"
+			title: "Wooden Mechanism"
 			x: 11.0d
 			y: 2.0d
 		}

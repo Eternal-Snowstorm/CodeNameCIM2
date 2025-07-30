@@ -1,0 +1,109 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "golden"
+	group: ""
+	icon: "cmi:gold_mechanism"
+	id: "43422929E4F0DDA4"
+	images: [{
+		height: 22.84d
+		image: "cmi:textures/images/background/gold.png"
+		rotation: 0.0d
+		width: 45.32d
+		x: -2.0d
+		y: -0.5d
+	}]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "2D953C3117B4B10F"
+			rewards: [{
+				id: "3436A13F8F6B563D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6A1AC24F3C42DA69"
+				item: "thermal:gold_plate"
+				type: "item"
+			}]
+			title: "Gold Plate"
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["283EBE5A0B1C577C"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "1D3F60B7C9135A1A"
+			rewards: [{
+				id: "6DEDA10F2100CF72"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "05BDE591ACA17C13"
+				item: "minecraft:gold_nugget"
+				type: "item"
+			}]
+			title: "Gold Nugget"
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2D953C3117B4B10F"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "283EBE5A0B1C577C"
+			tasks: [{
+				id: "5F96267B9CEB5B5B"
+				title: "Cut"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1D3F60B7C9135A1A"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "6D84FA27A4DD4B8E"
+			rewards: [{
+				id: "27C63CD981149063"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "28D5FAA305EC069D"
+				item: "cmi:basic_mechanism_part"
+				type: "item"
+			}]
+			title: "Mechanism Part"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6D84FA27A4DD4B8E"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "583E2869C9280CF3"
+			rewards: [{
+				id: "3810158FBD283F5C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3743C7A475FA4F12"
+				item: "cmi:gold_mechanism"
+				type: "item"
+			}]
+			title: "Gold Mechanism"
+			x: 8.0d
+			y: 3.5d
+		}
+	]
+	title: "Gold"
+}
