@@ -25,17 +25,25 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "6A1AC24F3C42DA69"
-				item: "thermal:gold_plate"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/gold"
+					}
+				}
+				title: "Any #forge:plates/gold"
 				type: "item"
 			}]
 			title: "Gold Plate"
-			x: -11.5d
-			y: 2.0d
+			x: -12.75d
+			y: 1.5d
 		}
 		{
-			dependencies: ["283EBE5A0B1C577C"]
+			dependencies: ["2D953C3117B4B10F"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "1D3F60B7C9135A1A"
@@ -44,27 +52,22 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "05BDE591ACA17C13"
-				item: "minecraft:gold_nugget"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:nuggets/gold"
+					}
+				}
+				title: "Any #forge:nuggets/gold"
 				type: "item"
 			}]
 			title: "Gold Nugget"
 			x: -4.0d
 			y: 5.0d
-		}
-		{
-			dependencies: ["2D953C3117B4B10F"]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			id: "283EBE5A0B1C577C"
-			tasks: [{
-				id: "5F96267B9CEB5B5B"
-				title: "Cut"
-				type: "checkmark"
-			}]
-			x: -8.0d
-			y: 3.5d
 		}
 		{
 			dependencies: ["1D3F60B7C9135A1A"]
@@ -76,6 +79,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "28D5FAA305EC069D"
 				item: "cmi:basic_mechanism_part"
@@ -95,14 +99,15 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "3743C7A475FA4F12"
 				item: "cmi:gold_mechanism"
 				type: "item"
 			}]
 			title: "Gold Mechanism"
-			x: 8.0d
-			y: 3.5d
+			x: 7.5d
+			y: 4.5d
 		}
 	]
 	title: "Gold"

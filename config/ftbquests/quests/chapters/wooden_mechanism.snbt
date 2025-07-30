@@ -88,7 +88,14 @@
 			}]
 			tasks: [{
 				id: "1F2BEF434633AB22"
-				item: "minecraft:stick"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/wooden"
+					}
+				}
+				title: "Any #forge:rods/wooden"
 				type: "item"
 			}]
 			title: "Stick"

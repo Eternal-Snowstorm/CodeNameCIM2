@@ -25,14 +25,15 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "28E939114684941B"
 				item: "minecraft:andesite"
 				type: "item"
 			}]
 			title: "Andesite"
-			x: -20.0d
-			y: -2.5d
+			x: -21.75d
+			y: -3.75d
 		}
 		{
 			hide_dependency_lines: true
@@ -60,6 +61,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "0D1F7376FED3CD15"
+			size: 1.5d
 			tasks: [{
 				id: "7D3504D81DE99D6C"
 				title: "Mix"
@@ -73,6 +75,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "77C265540CB8A645"
+			size: 1.5d
 			tasks: [{
 				id: "4E4E70A2E845BC15"
 				title: "Cast"
@@ -91,6 +94,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "4B276CF4125CEC37"
 				item: "create:andesite_alloy"
@@ -105,6 +109,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "423D0363FE4F4214"
+			size: 1.5d
 			tasks: [{
 				id: "292861CD8E8999BC"
 				title: "Press"
@@ -123,6 +128,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5AC159D303B570D1"
 				item: "create:shaft"
@@ -142,6 +148,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "151D3BB5FD7BE374"
 				item: {
@@ -171,6 +178,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "551FB095DB4DC141"
 				item: "create:cogwheel"
@@ -190,14 +198,15 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "62AD8680D3245FFD"
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
 			title: "Mechanism Part"
-			x: 11.0d
-			y: 2.0d
+			x: 11.25d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5ACC868E22697931"]
@@ -208,14 +217,15 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "0522DBB2B2112B31"
 				item: "cmi:andesite_mechanism"
 				type: "item"
 			}]
 			title: "Andesite Mechanism"
-			x: 17.0d
-			y: -2.0d
+			x: 17.25d
+			y: -1.5d
 		}
 	]
 	title: "Andesite"
