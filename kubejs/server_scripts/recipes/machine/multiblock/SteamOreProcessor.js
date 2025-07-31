@@ -9,8 +9,8 @@ MMEvents.createProcesses((event) => {
 			.ticks(400)
 			.input(addFluidInput("cmi:steam", STEAM_AMOUNT))
 			.input(addItemInput(`forge:raw_materials/${ore}`, 1))
-			.output(addItemOutput(`#forge:nuggets/${nugget}`, 27))
-			.output(addBonusOutput(`#forge:nuggets/${nugget}`, 10, 0.25))
+			.output(addItemOutput(nugget, 27))
+			.output(addBonusOutput(nugget, 10, 0.25))
 			.output(addFluidOutput("minecraft:water", 100))
 			.output(addFluidOutput("mekanism:sulfur_dioxide", 200))
 	}
