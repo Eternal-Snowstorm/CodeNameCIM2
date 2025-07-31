@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "R": {
+      "item": "vintageimprovements:redstone_module"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "#R#"
+  ],
+  "result": {
+    "item": "minecraft:dropper"
+  },
+  "show_notification": true
+}

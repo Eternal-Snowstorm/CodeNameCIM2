@@ -172,6 +172,51 @@ ServerEvents.recipes((event) => {
 		event.remove({
 			id: `mekanism:processing/lategame/antimatter_pellet/from_gas`
 		})
+		event.remove({
+			id: `tconstruct:common/basalt_blast_furnace`
+		})
+		event.remove({
+			id: `tconstruct:common/glass/vanilla/daylight_detector`
+		})
+	/*	
+		event.remove({
+			id: `minecraft:kjs/iron_ingot_10`
+		})
+		event.remove({
+			id: `minecraft:kjs/iron_ingot_9`
+		})
+		event.remove({
+			id: `minecraft:kjs/iron_ingot_8`
+		})
+		event.remove({
+			id: `minecraft:kjs/iron_ingot_7`
+		})
+		event.remove({
+			id: `minecraft:kjs/copper_ingot_6`
+		})
+		event.remove({
+			id: `minecraft:kjs/copper_ingot_5`
+		})
+		event.remove({
+			id: `minecraft:kjs/copper_ingot_4`
+		})
+		event.remove({
+			id: `minecraft:kjs/copper_ingot_3`
+		})
+		event.remove({
+			id: `minecraft:kjs/gold_ingot_6`
+		})
+		event.remove({
+			id: `minecraft:kjs/gold_ingot_5`
+		})
+		event.remove({
+			id: `minecraft:kjs/gold_ingot_4`
+		})
+		event.remove({
+			id: `minecraft:kjs/gold_ingot_3`
+		})
+
+		*/
 	})
 
 	let removeItemInputRecipes = [

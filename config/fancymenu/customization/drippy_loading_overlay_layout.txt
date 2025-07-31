@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1753774079605
+  last_edited_time = 1753929028091
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:0eca8a46-f94a-4080-a66f-bea10bb5f90a-1753773854336] = [groups:][instances:]
+  [loading_requirement_container_meta:64bed7b4-4e5b-4a5e-a9a8-984fb8bfeb34-1753928639602] = [groups:][instances:]
 }
 
 menu_background {
@@ -752,6 +752,49 @@ element {
   layer_hidden_in_editor = false
 }
 
+element {
+  bar_color = #5295FFFF
+  bar_texture = [source:local]/config/fancymenu/assets/pb1.png
+  background_color = #ABC8F7FF
+  background_texture = [source:local]/config/fancymenu/assets/pb2.png
+  direction = right
+  progress_for_element_anchor = false
+  progress_source = {"placeholder":"game_loading_progress"}
+  value_mode = percentage
+  smooth_filling_animation = true
+  element_type = progress_bar
+  instance_identifier = dfcd49ce-20c5-4311-9c93-eb95e7fa0692-1753924984875
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1012
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -128
+  y = 75
+  width = 256
+  height = 8
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 67dbfa7e-bced-471d-b8fa-0d6c6e1fb585-1753924984875
+  [loading_requirement_container_meta:67dbfa7e-bced-471d-b8fa-0d6c6e1fb585-1753924984875] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+}
+
 vanilla_button {
   button_element_executable_block_identifier = f6aa593a-3d3d-4874-9f99-12febfea896d-1740200500000
   [executable_block:f6aa593a-3d3d-4874-9f99-12febfea896d-1740200500000][type:generic] = [executables:]
@@ -846,7 +889,7 @@ vanilla_button {
   sticky_anchor = false
   anchor_point = bottom-centered
   x = -122
-  y = -44
+  y = -49
   width = 244
   height = 10
   stretch_x = false
@@ -862,7 +905,7 @@ vanilla_button {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
-  is_hidden = false
+  is_hidden = true
   automated_button_clicks = 0
 }
 

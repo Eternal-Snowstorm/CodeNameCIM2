@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:string"
+    },
+    "M": {
+      "item": "cmi:wooden_mechanism"
+    }
+  },
+  "pattern": [
+    "  #",
+    " #X",
+    "M X"
+  ],
+  "result": {
+    "item": "minecraft:fishing_rod"
+  },
+  "show_notification": true
+}

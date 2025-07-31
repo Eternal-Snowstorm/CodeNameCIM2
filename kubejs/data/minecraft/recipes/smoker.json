@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "cmi:wooden_mechanism"
+    },
+    "X": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "item": "minecraft:smoker"
+  },
+  "show_notification": true
+}

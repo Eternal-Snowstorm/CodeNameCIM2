@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_torch"
+    },
+    "I": {
+      "item": "minecraft:stone"
+    },
+    "X": {
+      "item": "vintageimprovements:redstone_module"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "III"
+  ],
+  "result": {
+    "item": "minecraft:repeater"
+  },
+  "show_notification": true
+}

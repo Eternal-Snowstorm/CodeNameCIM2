@@ -12,8 +12,8 @@ ServerEvents.recipes((event) => {
 	])
 
 	create.deploying("minecraft:redstone_torch", [
-		"#forge:stick",
-		"#forge:rods/wooden"
+		"#forge:rods/wooden",
+		"#forge:dusts/redstone"
 	])
 
 	//飞轮

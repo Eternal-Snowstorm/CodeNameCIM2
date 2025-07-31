@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "cmi:iron_mechanism"
+    }
+  },
+  "pattern": [
+    "X X",
+    "M#M",
+    "X X"
+  ],
+  "result": {
+    "count": 32,
+    "item": "minecraft:rail"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:stone_crafting_materials"
+    },
+    "M": {
+      "item": "cmi:stone_mechanism"
+    }
+  },
+  "pattern": [
+    "#M#",
+    "# #",
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:furnace"
+  },
+  "show_notification": true
+}

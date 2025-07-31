@@ -212,8 +212,8 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (!(Ingredient.of(`#forge:ores/${metal}`).itemIds.length === 0)) {
-			minecraft.smelting(`#forge:ingots/${metal}`, `#forge:ores/${metal}`)
-			minecraft.blasting(`#forge:ingots/${metal}`, `#forge:ores/${metal}`)
+			// minecraft.smelting(`#forge:ingots/${metal}`, `#forge:ores/${metal}`)
+			// minecraft.blasting(`#forge:ingots/${metal}`, `#forge:ores/${metal}`)
 			thermal.smelter([
 				`2x #forge:ingots/${metal}`,
 				Item.of("thermal:rich_slag").withChance(0.2)
@@ -241,8 +241,8 @@ ServerEvents.recipes((event) => {
 			} else {
 				console.warn(`No storage block found for raw ${metal}!`)
 			}
-			minecraft.smelting(`#forge:ingots/${metal}`, `#forge:raw_materials/${metal}`)
-			minecraft.blasting(`#forge:ingots/${metal}`, `#forge:raw_materials/${metal}`)
+			// minecraft.smelting(`#forge:ingots/${metal}`, `#forge:raw_materials/${metal}`)
+			// minecraft.blasting(`#forge:ingots/${metal}`, `#forge:raw_materials/${metal}`)
 			thermal.smelter(Item.of(Ingredient.of(`#forge:ingots/${metal}`).itemIds[0]).withChance(1.5), [
 				`#forge:raw_materials/${metal}`
 			])

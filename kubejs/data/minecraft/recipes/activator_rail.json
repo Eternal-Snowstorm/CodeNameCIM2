@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vintageimprovements:redstone_module"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "cmi:iron_mechanism"
+    } 
+  },
+  "pattern": [
+    "XSX",
+    "M#M",
+    "XSX"
+  ],
+  "result": {
+    "count": 16,
+    "item": "minecraft:activator_rail"
+  },
+  "show_notification": true
+}
