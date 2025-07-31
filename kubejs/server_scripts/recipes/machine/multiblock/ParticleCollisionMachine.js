@@ -34,7 +34,7 @@ MMEvents.createProcesses((event) => {
 			}
 		})
 
-	event.create("cmi:particle_collision_machine/plasma_ingot")
+	event.create("cmi:particle_collision_machine/singularity")
 		.structureId("cmi:particle_collision_machine_structure")
 		.ticks(300)
 		.input({
