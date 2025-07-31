@@ -1,0 +1,320 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thermal"
+	group: "65AEEF30E0964DD3"
+	icon: "cmi:thermal_mechanism"
+	id: "04FDE455BFC6AD80"
+	images: [{
+		height: 24.16d
+		image: "cmi:textures/images/background/thermal.png"
+		rotation: 0.0d
+		width: 62.76d
+		x: -2.5d
+		y: -0.5d
+	}]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "639A03DBCDF1F097"
+			rewards: [{
+				id: "3533DD1F6E4602D7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1DDBAD57FC549940"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Iron Ingot"
+			x: -23.0d
+			y: -3.0d
+		}
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "0A9B090CC8BFC4BF"
+			rewards: [{
+				id: "1F12F0A4EE2143E3"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "10"
+			tasks: [{
+				id: "7E75035DE77155A2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/nickel"
+					}
+				}
+				title: "Any #forge:ingots/nickel"
+				type: "item"
+			}]
+			title: "Nickle Ingot"
+			x: -17.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"639A03DBCDF1F097"
+				"0A9B090CC8BFC4BF"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "158872F89555C2CC"
+			tasks: [{
+				id: "704D979C24EAB67E"
+				title: "Mixing"
+				type: "checkmark"
+			}]
+			x: -20.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["158872F89555C2CC"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "74E69B8EC920F145"
+			tasks: [{
+				id: "4D77CCCA9B7083CA"
+				title: "Cast"
+				type: "checkmark"
+			}]
+			x: -18.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["74E69B8EC920F145"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "0FA609162053C238"
+			rewards: [{
+				id: "4D223A42629E7D74"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "03573E52D768FB76"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/invar"
+					}
+				}
+				title: "Any #forge:ingots/invar"
+				type: "item"
+			}]
+			title: "Invar Ingot"
+			x: -14.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0FA609162053C238"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "371001287D4C8D23"
+			tasks: [{
+				id: "52FB216C01DB28FE"
+				title: "Press"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["371001287D4C8D23"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "6A9EB3BE823D8596"
+			rewards: [{
+				id: "4127D4653E8EF1AF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5D7DB54507A95698"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/invar"
+					}
+				}
+				title: "Any #forge:plates/invar"
+				type: "item"
+			}]
+			title: "Invar Plate"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "50720D765CFEA414"
+			rewards: [{
+				id: "48C90EDD51DBDE11"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "499FBDCFA7BA027C"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			title: "Gold Ingot"
+			x: -13.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["50720D765CFEA414"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "78855495E2626F93"
+			tasks: [{
+				id: "7A7B593A00B46F1F"
+				title: "Roll"
+				type: "checkmark"
+			}]
+			x: -11.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["78855495E2626F93"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "61E31DB6B71857AA"
+			rewards: [{
+				id: "0FB7F555611FDE67"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4994BF4BF537AE73"
+				item: "createaddition:gold_rod"
+				type: "item"
+			}]
+			title: "Gold Rod"
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["61E31DB6B71857AA"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "0BABF4CC718C9489"
+			rewards: [{
+				id: "331488F3C4F56770"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "501BA9F04E7BE517"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			title: "Redstone Dust"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0BABF4CC718C9489"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "11848C62B13BEC44"
+			tasks: [{
+				id: "602F39F82716CEED"
+				title: "Lase"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6A9EB3BE823D8596"
+				"11848C62B13BEC44"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "534E13CC3E0ED006"
+			rewards: [{
+				id: "7D8EBAE331A221C8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "671426A45F426846"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
+			title: "RF Coil"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["534E13CC3E0ED006"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "4E16C529904765A0"
+			rewards: [{
+				id: "48E07A358903AA5B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "00C4C797445C32A1"
+				item: "thermal:constantan_gear"
+				type: "item"
+			}]
+			title: "Constantan Gear"
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E16C529904765A0"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "2B2584692E0128C6"
+			rewards: [{
+				id: "76575B34435EE741"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "085D8F73C4E98EAE"
+				item: "cmi:flux_mechanism_part"
+				type: "item"
+			}]
+			title: "Mechanism Part"
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2B2584692E0128C6"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "2C0686AEEE84F48B"
+			rewards: [{
+				id: "0141080ABC7D05EF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "600CE0676FCA8A26"
+				item: "cmi:thermal_mechanism"
+				type: "item"
+			}]
+			title: "Thermal Mechanism"
+			x: 15.0d
+			y: -2.5d
+		}
+	]
+	title: "Thermal"
+}

@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "photosensitive"
-	group: ""
+	group: "65AEEF30E0964DD3"
 	icon: "cmi:photosensitive_mechanism"
 	id: "50E2DE0506D40242"
 	images: [{
@@ -13,7 +13,7 @@
 		x: -3.0d
 		y: -1.0d
 	}]
-	order_index: 7
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{

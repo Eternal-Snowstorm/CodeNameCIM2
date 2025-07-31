@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "iron"
-	group: ""
+	group: "65AEEF30E0964DD3"
 	icon: "cmi:iron_mechanism"
 	id: "21598BD6C77970EB"
 	images: [{
@@ -14,7 +14,7 @@
 		x: -2.0d
 		y: 0.0d
 	}]
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
