@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "golden"
-	group: ""
+	group: "65AEEF30E0964DD3"
 	icon: "cmi:gold_mechanism"
 	id: "43422929E4F0DDA4"
 	images: [{
@@ -13,7 +13,7 @@
 		x: -2.0d
 		y: -0.5d
 	}]
-	order_index: 8
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{

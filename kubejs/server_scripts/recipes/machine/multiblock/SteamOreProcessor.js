@@ -9,8 +9,8 @@ MMEvents.createProcesses((event) => {
 			.ticks(400)
 			.input(addFluidInput("cmi:steam", STEAM_AMOUNT))
 			.input(addItemInput(`forge:raw_materials/${ore}`, 1))
-			.output(addItemOutput(`#forge:nuggets/${nugget}`, 27))
-			.output(addBonusOutput(`#forge:nuggets/${nugget}`, 10, 0.25))
+			.output(addItemOutput(nugget, 27))
+			.output(addBonusOutput(nugget, 10, 0.25))
 			.output(addFluidOutput("minecraft:water", 100))
 			.output(addFluidOutput("mekanism:sulfur_dioxide", 200))
 	}
@@ -92,16 +92,16 @@ MMEvents.createProcesses((event) => {
 
 	// 列表
 	let oreProcesses = [
-		{ ore: "pyrite", nugget: "iron" },
-		{ ore: "galena", nugget: "lead" },
-		{ ore: "sphalerite", nugget: "zinc" },
-		{ ore: "lateritic_nickel", nugget: "nickel" },
-		{ ore: "veridium", nugget: "copper" },
-		{ ore: "stannine", nugget: "tin" },
-		{ ore: "variscite", nugget: "aluminum" },
-		{ ore: "argentite", nugget: "silver" },
-		{ ore: "osmiridium", nugget: "osmium" },
-		{ ore: "uraninite", nugget: "uranium" },
+		{ ore: "pyrite", nugget: "minecraft:iron_nugget" },
+		{ ore: "galena", nugget: "thermal:lead_nugget" },
+		{ ore: "sphalerite", nugget: "create:zinc_nugget" },
+		{ ore: "lateritic_nickel", nugget: "thermal:nickel_nugget" },
+		{ ore: "veridium", nugget: "thermal:copper_nugget" },
+		{ ore: "stannine", nugget: "thermal:tin_nugget" },
+		{ ore: "variscite", nugget: "immersiveengineering:nugget_aluminum" },
+		{ ore: "argentite", nugget: "thermal:silver_nugget" },
+		{ ore: "osmiridium", nugget: "mekanism:nugget_osmium" },
+		{ ore: "uraninite", nugget: "immersiveengineering:nugget_uranium" },
 	]
 
 	// 批量创建处理流程
