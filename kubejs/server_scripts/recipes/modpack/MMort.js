@@ -25,6 +25,13 @@ ServerEvents.recipes((event) => {
 		itemIO: true
 	})
 
+	// 粒子碰装机
+	addMachinePart({
+		controllerID: "mm:particle_collision_machine",
+		itemIO: true,
+		energyIO: true
+	})
+
 	/**
 	 * @returns 快捷添加机器接口配方
 	 * @param {Object} options 配置对象

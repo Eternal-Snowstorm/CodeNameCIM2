@@ -1,5 +1,5 @@
 MMEvents.createProcesses((event) => {
-	// 蒸汽输出量(1000)
+	// 蒸汽输入量(1000)
 	const STEAM_AMOUNT = global.BUCKET_CAPACITY
 
 	// 核心处理函数
@@ -40,39 +40,25 @@ MMEvents.createProcesses((event) => {
 	}
 
 	// 物品输出
-	function addItemOutput(tag, count) {
-		let firstItem = []
-		Ingredient.of(tag)
-			.getItemIds()
-			.forEach((item) => {
-				firstItem.push(item)
-			})
-
+	function addItemOutput(item, count) {
 		return {
 			type: "mm:output/simple",
 			ingredient: {
 				type: "mm:item",
-				item: firstItem[0],
+				item: item,
 				count: count
 			}
 		}
 	}
 
 	// 副产物
-	function addBonusOutput(tag, count, chance) {
-		let firstItem = []
-		Ingredient.of(tag)
-			.getItemIds()
-			.forEach((item) => {
-				firstItem.push(item)
-			})
-
+	function addBonusOutput(item, count, chance) {
 		return {
 			type: "mm:output/simple",
 			chance: chance,
 			ingredient: {
 				type: "mm:item",
-				item: firstItem[0],
+				item: item,
 				count: count
 			}
 		}
@@ -103,8 +89,6 @@ MMEvents.createProcesses((event) => {
 		{ ore: "osmiridium", nugget: "mekanism:nugget_osmium" },
 		{ ore: "uraninite", nugget: "immersiveengineering:nugget_uranium" },
 	]
-
-	// 批量创建处理流程
 	oreProcesses.forEach((process) => {
 		addSteamOreProcessingRecipe(process.ore, process.nugget)
 	})

@@ -77,7 +77,7 @@
 		},
 		{
 			"type": "tconstruct:mining_speed_modifier",
-			"modifier": -0.35,
+			"modifier": 1,
 			"predicate_type": "mantle:or",
 			"predicates": [
 				{

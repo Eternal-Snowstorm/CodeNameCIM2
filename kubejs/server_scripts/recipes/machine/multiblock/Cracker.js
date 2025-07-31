@@ -20,7 +20,7 @@ MMEvents.createProcesses((event) => {
 		})
 		.input({
 			type: "mm:input/consume",
-			"ingredient": {
+			ingredient: {
 				type: "mm:energy",
 				amount: 50000
 			}

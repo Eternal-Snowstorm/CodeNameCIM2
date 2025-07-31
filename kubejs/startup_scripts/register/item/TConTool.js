@@ -22,4 +22,5 @@ StartupEvents.registry("item", (event) => {
 		.tag("tconstruct:modifiable/small")
 		.tag("tconstruct:modifiable/melee")
 		.tag("tconstruct:modifiable/held")
+		.tag("tconstruct:modifiable/harvest")
 })
