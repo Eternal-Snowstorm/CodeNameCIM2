@@ -103,8 +103,6 @@ MMEvents.createProcesses((event) => {
 		{ ore: "osmiridium", nugget: "osmium" },
 		{ ore: "uraninite", nugget: "uranium" },
 	]
-
-	// 批量创建处理流程
 	oreProcesses.forEach((process) => {
 		addSteamOreProcessingRecipe(process.ore, process.nugget)
 	})
