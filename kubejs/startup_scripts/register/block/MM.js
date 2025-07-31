@@ -1,5 +1,8 @@
 function addMultiBlockMachine(machine) {
 	const CORLER_PATH = `config/mm/controllers/${machine}.json`
+	// 初始化目录, 避免删了机器文件还在
+	JSIO.delete("config/mm/controllers")
+	JSIO.delete("config/mm/ports")
 
 	JsonIO.writeAndCreateDirectories(CORLER_PATH, {
 		type: "mm:machine",
