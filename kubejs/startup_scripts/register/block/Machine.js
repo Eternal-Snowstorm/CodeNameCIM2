@@ -22,6 +22,7 @@ MMEvents.registerControllers((event) => {
 	addMMController("large_steam_boiler")
 	addMMController("cracker")
 	addMMController("steam_ore_processor")
+	addMMController("particle_collision_machine")
 })
 
 MMEvents.registerPorts((event) => {
@@ -78,5 +79,23 @@ MMEvents.registerPorts((event) => {
 		.config("mm:item", (builder) => {
 			builder.rows(3)
 				.columns(3)
+		})
+
+	// 粒子碰装机
+	event.create("particle_collision_machine_item")
+		.name("")
+		.controllerId("mm:particle_collision_machine")
+		.config("mm:item", (builder) => {
+			builder.rows(1)
+				.columns(2)
+		})
+
+	event.create("particle_collision_machine_energy")
+		.name("")
+		.controllerId("mm:particle_collision_machine")
+		.config("mm:energy", (builder) => {
+			builder.capacity(10000000)
+				.maxExtract(10000000)
+				.maxReceive(10000000)
 		})
 })
