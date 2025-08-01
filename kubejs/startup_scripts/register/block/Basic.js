@@ -12,58 +12,22 @@ StartupEvents.registry("block", (event) => {
 	event.create(`${global.namespace}:green_screen`)
 		.lightLevel(15)
 
-	let machineBlockRegister = [
-		"nature",
-		"wooden",
-		"stone",
-		"iron",
-		"copper",
-		"andesite",
-		"photosensitive",
-		"gold",
-		"cobalt",
-		"nether",
-		"thermal",
-		"feinforced",
-		"resonant",
-		"railway",
-		"ender",
-		"light_engineering",
-		"heavy_engineering",
-		"enchanted",
-		"smart",
-		"computing",
-		"tier_1_aviation",
-		"tier_2_aviation",
-		"tier_3_aviation",
-		"tier_4_aviation",
-		"basic_mekanism",
-		"advanced_mekanism",
-		"elite_mekanism",
-		"ultimate_mekanism",
-		"structure",
-		"nuclear",
-		"antimatter",
-		"coil",
-		"sculk",
-		"colorful",
-		"creative",
-		"potion",
-		"precision",
-		"redstone",
-		"bronze"
-	]
-	machineBlockRegister.forEach((type) => {
-		event.create(`${global.namespace}:${type}_machine`, "cardinal")
-			.soundType(SoundType.METAL)
-			.model(`${global.namespace}:block/machine_block/${type}`)
-			.tagBlock(global.toolType["pickaxe"])
-			.tagBlock(global.miningLevel["wooden"])
-			.tagBlock("create:wrench_pickup")
-			.requiresTool(true)
-			.notSolid()
-			.defaultCutout()
-	})
+	// 火箭框架
+	event.create(`${global.namespace}:rocket_pattern`)
+		.soundType(SoundType.WOOD)
+		.model(`${global.namespace}:block/rocket/pattern/rocket_pattern`)
+		.hardness(5)
+		.resistance(5)
+		.item((item) => {
+			item.maxStackSize(1)
+		})
+		.notSolid()
+		.defaultTranslucent()
+		.requiresTool(false)
+		.box(0, 0, 0, 16, 45, 16, true)
+		.tagBlock(global.toolType["pickaxe"])
+		.tagBlock(global.toolType["axe"])
+		.tagBlock("create:wrench_pickup")
 
 	// 锇砖瓦
 	event.create(`${global.namespace}:osmium_tile`)
@@ -101,23 +65,6 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.miningLevel["iron"])
 		.requiresTool(true)
-
-	// 火箭框架
-	event.create(`${global.namespace}:rocket_pattern`)
-		.soundType(SoundType.WOOD)
-		.model(`${global.namespace}:block/rocket_pattern/rocket_pattern`)
-		.hardness(5)
-		.resistance(5)
-		.item((item) => {
-			item.maxStackSize(1)
-		})
-		.notSolid()
-		.defaultTranslucent()
-		.requiresTool(false)
-		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.toolType["pickaxe"])
-		.tagBlock(global.toolType["axe"])
-		.tagBlock("create:wrench_pickup")
 
 	// 青铜外壳
 	event.create(`${global.namespace}:bronze_casing`)
