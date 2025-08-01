@@ -35,7 +35,20 @@ ServerEvents.recipes((event) => {
 		"tconstruct:smeltery/casting/cheese_ingot_sand_cast",
 		"tconstruct:common/cheese_ingot_from_block",
 		"thermal:gourmand_cheese_ingot",
-		"thermal:gourmand_cheese"
+		"thermal:gourmand_cheese",
+		"immersiveengineering:blastfurnace/steel",
+		"immersiveengineering:arcfurnace/steel",
+		"create:crushing/netherrack",
+		"create:crushing/obsidian",
+		"createdieselgenerators:crafting/large_diesel_engine",
+		"createdieselgenerators:crafting/diesel_engine",
+		"createdieselgenerators:crafting/huge_diesel_engine",
+		"createdieselgenerators:crafting/huge_diesel_engine",
+		"create:crafting/kinetics/flywheel",
+		"mekanism:processing/lategame/antimatter/from_pellet",
+		"mekanism:processing/lategame/antimatter_pellet/from_gas",
+		"tconstruct:common/basalt_blast_furnace",
+		"tconstruct:common/glass/vanilla/daylight_detector"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -139,84 +152,6 @@ ServerEvents.recipes((event) => {
 		event.remove({
 			id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`
 		})
-		event.remove({
-			id: `immersiveengineering:blastfurnace/steel`
-		})
-		event.remove({
-			id: `immersiveengineering:arcfurnace/steel`
-		})
-		event.remove({
-			id: `create:crushing/netherrack`
-		})
-		event.remove({
-			id: `create:crushing/obsidian`
-		})
-		event.remove({
-			id: `createdieselgenerators:crafting/large_diesel_engine`
-		})
-		event.remove({
-			id: `createdieselgenerators:crafting/diesel_engine`
-		})
-		event.remove({
-			id: `createdieselgenerators:crafting/huge_diesel_engine`
-		})
-		event.remove({
-			id: `createdieselgenerators:crafting/huge_diesel_engine`
-		})
-		event.remove({
-			id: `create:crafting/kinetics/flywheel`
-		})
-		event.remove({
-			id: `mekanism:processing/lategame/antimatter/from_pellet`
-		})
-		event.remove({
-			id: `mekanism:processing/lategame/antimatter_pellet/from_gas`
-		})
-		event.remove({
-			id: `tconstruct:common/basalt_blast_furnace`
-		})
-		event.remove({
-			id: `tconstruct:common/glass/vanilla/daylight_detector`
-		})
-	/*	
-		event.remove({
-			id: `minecraft:kjs/iron_ingot_10`
-		})
-		event.remove({
-			id: `minecraft:kjs/iron_ingot_9`
-		})
-		event.remove({
-			id: `minecraft:kjs/iron_ingot_8`
-		})
-		event.remove({
-			id: `minecraft:kjs/iron_ingot_7`
-		})
-		event.remove({
-			id: `minecraft:kjs/copper_ingot_6`
-		})
-		event.remove({
-			id: `minecraft:kjs/copper_ingot_5`
-		})
-		event.remove({
-			id: `minecraft:kjs/copper_ingot_4`
-		})
-		event.remove({
-			id: `minecraft:kjs/copper_ingot_3`
-		})
-		event.remove({
-			id: `minecraft:kjs/gold_ingot_6`
-		})
-		event.remove({
-			id: `minecraft:kjs/gold_ingot_5`
-		})
-		event.remove({
-			id: `minecraft:kjs/gold_ingot_4`
-		})
-		event.remove({
-			id: `minecraft:kjs/gold_ingot_3`
-		})
-
-		*/
 	})
 
 	let removeItemInputRecipes = [
