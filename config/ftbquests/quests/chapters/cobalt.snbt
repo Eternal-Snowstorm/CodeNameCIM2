@@ -32,8 +32,8 @@
 				type: "item"
 			}]
 			title: "Raw Cobalt"
-			x: -19.5d
-			y: 1.0d
+			x: -20.285714285714292d
+			y: -0.2142857142857082d
 		}
 		{
 			dependencies: ["34C0D2040A59E347"]
@@ -52,8 +52,8 @@
 				type: "item"
 			}]
 			title: "Cobalt Ingot"
-			x: -9.5d
-			y: 2.5d
+			x: -11.428571428571445d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5AD7B465C92D054A"]
@@ -66,8 +66,8 @@
 				title: "Smelting"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: 1.5d
+			x: -15.857142857142875d
+			y: 1.6428571428571388d
 		}
 		{
 			dependencies: ["46B5032D30E390C8"]
@@ -80,8 +80,8 @@
 				title: "Roll"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: -6.5d
+			x: -1.142857142857153d
+			y: -6.357142857142861d
 		}
 		{
 			dependencies: ["17F8A693FD6200E4"]
@@ -107,8 +107,8 @@
 				type: "item"
 			}]
 			title: "Cobalt Rod"
-			x: 2.5d
-			y: -3.5d
+			x: -1.4285714285714448d
+			y: -3.642857142857146d
 		}
 		{
 			dependencies: ["649B015C33D4ADDC"]
@@ -121,8 +121,8 @@
 				title: "Coiling"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: -1.5d
+			x: -4.285714285714306d
+			y: -1.642857142857146d
 		}
 		{
 			dependencies: [
@@ -151,8 +151,8 @@
 				type: "item"
 			}]
 			title: "Cobalt Spring"
-			x: 5.0d
-			y: 0.5d
+			x: 1.1428571428571246d
+			y: 4.357142857142854d
 		}
 		{
 			dependencies: ["46B5032D30E390C8"]
@@ -165,8 +165,8 @@
 				title: "Press"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 5.0d
+			x: -7.428571428571445d
+			y: 5.214285714285708d
 		}
 		{
 			dependencies: ["2E8A24D60ADCFB27"]
@@ -192,8 +192,8 @@
 				type: "item"
 			}]
 			title: "Cobalt Plate"
-			x: 1.5d
-			y: 7.0d
+			x: -1.8571428571428754d
+			y: 7.5d
 		}
 		{
 			hide_dependency_lines: true
@@ -211,8 +211,8 @@
 				type: "item"
 			}]
 			title: "Gold Ingot"
-			x: 16.5d
-			y: -9.5d
+			x: 13.428571428571402d
+			y: -10.214285714285715d
 		}
 		{
 			dependencies: ["2E5C7860E38FB347"]
@@ -225,7 +225,7 @@
 				title: "Roll"
 				type: "checkmark"
 			}]
-			x: 15.0d
+			x: 11.285714285714263d
 			y: -8.5d
 		}
 		{
@@ -252,8 +252,8 @@
 				type: "item"
 			}]
 			title: "Gold Rod"
-			x: 13.5d
-			y: -7.0d
+			x: 9.428571428571402d
+			y: -7.357142857142854d
 		}
 		{
 			dependencies: ["1081B156749D66C8"]
@@ -272,8 +272,8 @@
 				type: "item"
 			}]
 			title: "Redstone Dust"
-			x: 11.5d
-			y: -5.5d
+			x: 7.857142857142833d
+			y: -6.642857142857146d
 		}
 		{
 			dependencies: ["305DEBA8D4384D35"]
@@ -286,8 +286,8 @@
 				title: "Lase"
 				type: "checkmark"
 			}]
-			x: 17.0d
-			y: -3.5d
+			x: 13.285714285714278d
+			y: -5.357142857142861d
 		}
 		{
 			dependencies: [
@@ -309,110 +309,11 @@
 				type: "item"
 			}]
 			title: "RF Coil"
-			x: 14.0d
-			y: -1.5d
+			x: 10.571428571428555d
+			y: 3.642857142857146d
 		}
 		{
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			id: "5539E91A264DAB65"
-			rewards: [{
-				id: "78B64479B48FED43"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "73D0DFFC6F8CE954"
-				item: "minecraft:copper_ingot"
-				type: "item"
-			}]
-			title: "Copper Ingot"
-			x: 20.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["5539E91A264DAB65"]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			id: "3EDF0C8B5980B331"
-			size: 1.5d
-			tasks: [{
-				id: "6DB0C3709BE27768"
-				title: "Press"
-				type: "checkmark"
-			}]
-			x: 22.0d
-			y: -6.0d
-		}
-		{
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			id: "07E88291DA35740C"
-			rewards: [{
-				id: "21392F69B23AFAA6"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "6579A529F2EC8614"
-				item: "immersiveengineering:component_iron"
-				type: "item"
-			}]
-			title: "Component Iron"
-			x: 27.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["07E88291DA35740C"]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			id: "2D3B1E598342049A"
-			size: 1.5d
-			tasks: [{
-				id: "1FC0BD0FFEFE1296"
-				title: "Mixing(Or Shapeless)"
-				type: "checkmark"
-			}]
-			x: 24.5d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"3EDF0C8B5980B331"
-				"2D3B1E598342049A"
-			]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			id: "3971E66111537015"
-			rewards: [{
-				id: "49CF927AED134D03"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "478635B51850759D"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/copper"
-					}
-				}
-				title: "Any #forge:plates/copper"
-				type: "item"
-			}]
-			title: "Copper Plate"
-			x: 23.0d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"75CE97D84422D377"
-				"2D3B1E598342049A"
-			]
+			dependencies: ["75CE97D84422D377"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "722D55A9AF2DC06F"
@@ -423,8 +324,8 @@
 				type: "item"
 			}]
 			title: "Mechanism Part"
-			x: 26.5d
-			y: -4.0d
+			x: 22.857142857142847d
+			y: 0.6428571428571388d
 		}
 		{
 			dependencies: ["722D55A9AF2DC06F"]
@@ -438,8 +339,8 @@
 				type: "item"
 			}]
 			title: "Cobalt Mechanism"
-			x: 29.0d
-			y: -1.5d
+			x: 25.428571428571416d
+			y: -1.500000000000007d
 		}
 	]
 	title: "Cobalt"
