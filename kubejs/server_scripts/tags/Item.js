@@ -18,6 +18,7 @@ ServerEvents.tags("item", (event) => {
 		.add("mm:large_steam_boiler")
 		.add("mm:steam_ore_processor")
 		.add("mm:cracker")
+		.add("mm:particle_collision_machine")
 
 	// 奶酪
 	event.get("forge:cheese")

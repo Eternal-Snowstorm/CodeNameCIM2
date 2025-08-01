@@ -1,10 +1,10 @@
 {
 	"add_cosmetic": false,
-	"icon": "cmi:item/mechanisms",
+	"icon": "cmi:gui/curios",
 	"operation": "SET",
 	"order": 172,
 	"render_toggle": true,
-	"replace": false,
+	"replace": true,
 	"size": 1,
 	"use_native_gui": true
 }

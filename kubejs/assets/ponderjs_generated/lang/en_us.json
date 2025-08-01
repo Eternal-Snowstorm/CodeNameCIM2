@@ -93,6 +93,7 @@
   "cmi.ponder.melter.text_5": "Then you need to add fuels to Heater",
   "cmi.ponder.melter.text_6": "After adding fuels, you can add items to be smelted in Melter",
   "cmi.ponder.melter.text_7": "Wait a moment...",
+  "cmi.ponder.particle_collision_machine.header": "Particle Collision Machine",
   "cmi.ponder.portal_controller.header": "Setting Up a Portal",
   "cmi.ponder.portal_controller.text_1": "This is a Portal Controller",
   "cmi.ponder.portal_controller.text_2": "Portals are all set up based on a Controller",

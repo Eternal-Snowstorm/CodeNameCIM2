@@ -7,7 +7,7 @@
 	id: "1299FC04262673E3"
 	images: [{
 		height: 47.36d
-		image: "cmi:textures/images/background/cobalt1.png"
+		image: "cmi:textures/images/background/cobalt.png"
 		rotation: 0.0d
 		width: 92.4d
 		x: 0.0d
