@@ -1,8 +1,8 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
+	const ITEM_CONTAINER = Ingredient.of("#cmi:item_container")
 	const FLUID_TANKS = Ingredient.of("#cmi:fluid_tanks")
 	const BATTERIES = Ingredient.of("#cmi:batteries")
-	const ITEM_CONTAINER = Ingredient.of("#cmi:item_container")
 
 	// 锅炉
 	addMachinePart({
