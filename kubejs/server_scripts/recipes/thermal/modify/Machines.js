@@ -5,10 +5,12 @@ ServerEvents.recipes((event) => {
 	const COPPER_MECH = "cmi:copper_mechanism"
 	const IRON_MECH = "cmi:iron_mechanism"
 	const THERMAL_MECH = "cmi:thermal_mechanism"
+	const FEIN_MECH = "cmi:feinforced_mechanism"
 
 	const REDSTONE_MOD = "vintageimprovements:redstone_module"
 
 	const COPPER_INGOT = "#forge:ingots/copper"
+	const LEAD_INGOT = "#forge:ingots/lead"
 	const IRON_INGOT = "#forge:ingots/iron"
 	const SILVER_INGOT = "#forge:ingots/silver"
 
@@ -28,14 +30,24 @@ ServerEvents.recipes((event) => {
 		D: COPPER_MECH
 	}).id("thermal:fluid_cell_frame")
 
+	// RF单元框架
+	kubejs.shaped("thermal:energy_cell_frame", [
+		"ACA",
+		"CDC",
+		"ACA"
+	], {
+		A: LEAD_INGOT,
+		C: GLASS,
+		D: FEIN_MECH
+	}).id("thermal:energy_cell_frame")
+
 	// 机器框架
 	kubejs.shaped("thermal:machine_frame", [
 		"ABA",
-		"BCB",
+		"B B",
 		"ABA"
 	], {
 		B: GLASS,
-		C: "cmi:thermal_mechanism",
 		A: "#forge:ingots/invar",
 	}).id("thermal:machine_frame")
 
@@ -66,9 +78,9 @@ ServerEvents.recipes((event) => {
 
 	// 
 	kubejs.shaped("thermal:device_nullifier", [
-		"AEA",
+		"ADA",
 		"CMC",
-		"ADA"
+		"AEA"
 	], {
 		A: SILVER_INGOT,
 		C: GLASS,
@@ -79,9 +91,9 @@ ServerEvents.recipes((event) => {
 
 	// 
 	kubejs.shaped("thermal:device_xp_condenser", [
-		"ABA",
-		"CDC",
-		"AEA"
+		"ADA",
+		"CMC",
+		"ABA"
 	], {
 		A: SILVER_INGOT,
 		B: "cmi:enchanted_mechanism",
@@ -92,9 +104,9 @@ ServerEvents.recipes((event) => {
 
 	// 
 	kubejs.shaped("thermal:device_collector", [
-		"ADA",
-		"BCB",
-		"AMA"
+		"ACA",
+		"BMB",
+		"ADA"
 	], {
 		A: "#forge:ingots/tin",
 		B: GLASS,
@@ -123,7 +135,7 @@ ServerEvents.recipes((event) => {
 		C: PLANK,
 		D: GLASS,
 		E: "minecraft:composter",
-		F: REDSTONE_MOD
+		F: "minecraft:dirt"
 	})
 
 	// 
@@ -138,12 +150,6 @@ ServerEvents.recipes((event) => {
 		D: "minecraft:fishing_rod",
 		E: "cmi:andesite_mechanism",
 	})
-
-	// 
-	//	create.mixing("thermal:rf_coil"), [
-	//		"#forge:rods/gold",
-	//		"minecraft:redstone"
-	//	]
 
 	// 
 	kubejs.shaped("thermal:dynamo_stirling", [
@@ -182,17 +188,10 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 
-	kubejs.shaped("thermal:dynamo_gourmand", [
-		" A ",
-		"BMB",
-		"CDC"
-	], {
-		A: "thermal:rf_coil",
-		B: "#forge:ingots/invar",
-		C: "createaddition:capacitor",
-		D: "cmi:pigiron_mechanism",
-		M: "cmi:thermal_mechanism"
-	})
+	create.item_application("thermal:dynamo_gourmand", [
+		"thermal:dynamo_stirling",
+		"cmi:pigiron_mechanism"
+	])
 
 	// 
 	kubejs.shaped("thermal:machine_crafter", [
@@ -284,7 +283,7 @@ ServerEvents.recipes((event) => {
 		" B ",
 		" A "
 	], {
-		A: THERMAL_MECH,
+		A: FEIN_MECH,
 		B: FRAME,
 		C: "create:blaze_burner"
 	})
@@ -297,13 +296,159 @@ ServerEvents.recipes((event) => {
 
 	// 
 	create.item_application("thermal:dynamo_numismatic", [
-		"thermal:dynamo_stirling",
-		"cmi:light_engineering_mechanism"
+		"thermal:dynamo_magmatic",
+		"cmi:gold_mechanism"
 	])
 
 	// 
 	create.item_application("thermal:dynamo_lapidary", [
-		"thermal:dynamo_stirling",
-		"cmi:heavy_engineering_mechanism"
+		"thermal:dynamo_magmatic",
+		"cmi:resonant_mechanism"
 	])
+
+	// 
+	kubejs.shaped("thermal:machine_smelter", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: FEIN_MECH,
+		B: FRAME,
+		C: "thermal:machine_furnace"
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_insolator", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: FEIN_MECH,
+		B: FRAME,
+		C: "cmi:nature_mechanism"
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_chiller", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: THERMAL_MECH,
+		B: FRAME,
+		C: "ratatouille:frozen_block"
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_refinery", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: FEIN_MECH,
+		B: FRAME,
+		C: "createdieselgenerators:distillation_controller"
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_brewer", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: THERMAL_MECH,
+		B: FRAME,
+		C: "minecraft:brewing_stand"
+	})
+
+	// 
+	kubejs.shaped("thermal:machine_crystallizer", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: "cmi:resonant_mechanism",
+		B: FRAME,
+		C: "minecraft:diamond"
+	})
+
+	// 
+	kubejs.shaped("thermal:device_tree_extractor", [
+		"ABA",
+		"CDC",
+		"AEA"
+	], {
+		A: PLANK,
+		B: COPPER_MECH,
+		C: GLASS,
+		D: "cmi:wooden_faucet",
+		E: "cmi:andesite_mechanism",
+	})
+
+	// 
+	kubejs.shaped("thermal:device_water_gen", [
+		" A ",
+		"BCB",
+		" D "
+	], {
+		A: "create:copper_casing",
+		B: "minecraft:bucket",
+		C: COPPER_MECH,
+		D: "#forge:plates/copper"
+	})
+
+	// 
+	kubejs.shaped("thermal_extra:advanced_refinery", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: "cmi:resonant_mechanism",
+		B: "thermal:machine_refinery",
+		C: '#forge:dusts/soul_infused'
+	})
+
+	// 
+	kubejs.shaped("thermal_extra:nitratic_igniter", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: "cmi:resonant_mechanism",
+		B: "thermal:machine_pulverizer",
+		C: 'minecraft:tnt'
+	})
+
+	// 
+	kubejs.shaped("thermal_extra:fluid_mixer", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: "cmi:resonant_mechanism",
+		B: "thermal:machine_bottler",
+		C: '#forge:dusts/twinite'
+	})
+
+	// 
+	kubejs.shaped("thermal_extra:component_assembly", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: "cmi:resonant_mechanism",
+		B: "thermal:machine_crafter",
+		C: '#forge:dusts/twinite'
+	})
+
+	// 
+	kubejs.shaped("thermal_extra:endothermic_dehydrator", [
+		"C",
+		"B",
+		"A"
+	], {
+		A: "cmi:resonant_mechanism",
+		B: "thermal:machine_crucible",
+		C: '#forge:dusts/soul_infused'
+	})
 })
