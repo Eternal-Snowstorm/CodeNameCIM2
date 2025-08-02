@@ -14,7 +14,7 @@
 				item: "cmi:wooden_mechanism"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
@@ -25,7 +25,7 @@
 				item: "cmi:stone_mechanism"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: -2.0d
 		}
 		{
@@ -36,7 +36,7 @@
 				item: "cmi:iron_mechanism"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -1.0d
 		}
 		{
@@ -47,7 +47,7 @@
 				item: "cmi:gold_mechanism"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: -3.0d
 		}
 		{
@@ -409,6 +409,17 @@
 			}]
 			x: 6.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["17888283D819AB51"]
+			id: "5F2EF0F0AA5D4AB7"
+			tasks: [{
+				id: "10175B23AAA74C2D"
+				item: "cmi:bronze_mechanism"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
 		}
 	]
 	title: "Tech Tree"

@@ -75,4 +75,40 @@ ServerEvents.recipes((event) => {
 		A: "cmi:iron_mechanism",
 		B: "#forge:plates/iron"
 	}).id("supplementaries:faucet")
+
+	// 
+	kubejs.shaped('megatimestop:time_clock2', [
+		"AAA",
+		"ABA",
+		"AAA"
+	], {
+		A: "create:precision_mechanism",
+		B: "minecraft:clock"
+	}).id('megatimestop:time_clock2')
+
+	// 
+	kubejs.shaped('megatimestop:time_clock', [
+		"123",
+		"4B5",
+		"678"
+	], {
+		1: "cmi:nature_mechanism",
+		2: "cmi:enchanted_mechanism",
+		3: "cmi:sculk_mechanism",
+		4: "cmi:nether_mechanism",
+		5: "cmi:ender_mechanism",
+		6: "cmi:photosensitive_mechanism",
+		7: "create:precision_mechanism",
+		8: "cmi:cobalt_mechanism",
+		B: "minecraft:clock"
+	}).id('megatimestop:time_clock')
+
+	// 
+	kubejs.shaped('4x megatimestop:knife', [
+		"1",
+		"2"
+	], {
+		1: "#forge:plates/iron",
+		2: "#forge:rods/wooden"
+	}).id('megatimestop:knife')
 })
