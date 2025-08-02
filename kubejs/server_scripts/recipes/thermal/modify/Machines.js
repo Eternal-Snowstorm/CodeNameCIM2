@@ -82,11 +82,11 @@ ServerEvents.recipes((event) => {
 		"CMC",
 		"AEA"
 	], {
-		A: SILVER_INGOT,
+		A: PLANK,
 		C: GLASS,
 		D: "minecraft:lava_bucket",
-		M: "thermal:machine_frame",
-		E: THERMAL_MECH
+		M: "create:andesite_casing",
+		E: ANDESITE_MECH
 	}).id("thermal:device_nullifier")
 
 	// 
