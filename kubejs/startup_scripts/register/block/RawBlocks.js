@@ -1,4 +1,3 @@
-let pickaxe = global.toolType["pickaxe"]
 StartupEvents.registry("block", (event) => {
 	function addAloneRawMaterialBlock(name, level) {
 		event.create(`${global.namespace}:raw_${name}_block`)
@@ -6,7 +5,7 @@ StartupEvents.registry("block", (event) => {
 			.hardness(5)
 			.resistance(5)
 			.textureAll(`${global.namespace}:block/material/raw/${name}`)
-			.tagBlock(pickaxe)
+			.tagBlock(global.toolType["pickaxe"])
 			.tagBlock(global.miningLevel[level])
 			.tagItem(`${global.namespace}:raw_metals`)
 			.tag("forge:storage_blocks")

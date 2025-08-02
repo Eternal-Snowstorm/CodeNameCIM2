@@ -1,8 +1,11 @@
 StartupEvents.registry("block", (event) => {
 	function addCustomMachine(name) {
-		event.create(`${global.namespace}:${name}`, "custommachinery")
-			.machine(`${global.namespace}:${name}`)
-			.tag("create:wrench_pickup")
+		let registerCustomMachine =
+			event.create(`${global.namespace}:${name}`, "custommachinery")
+				.machine(`${global.namespace}:${name}`)
+				.tag("create:wrench_pickup")
+
+		return registerCustomMachine
 	}
 
 	// addCustomMachine("water_pump")

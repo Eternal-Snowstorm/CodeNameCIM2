@@ -1,5 +1,5 @@
 {
 	"parent": "forge:item/bucket_drip",
 	"loader": "forge:fluid_container",
-	"fluid": "cmi:nacl"
+	"fluid": "cmi:nacl_solution"
 }

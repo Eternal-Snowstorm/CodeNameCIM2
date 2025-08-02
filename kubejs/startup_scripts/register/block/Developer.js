@@ -1,17 +1,20 @@
 StartupEvents.registry("block", (event) => {
 	function addDeveloperDoll(name) {
-		event.create(`${global.namespace}:${name}`, "cardinal")
-			.soundType(SoundType.WOOL)
-			.hardness(0)
-			.resistance(1)
-			.requiresTool(true)
-			.model(`${global.namespace}:block/dev/${name}`)
-			.textureAll(`${global.namespace}:block/dev/${name}`)
-			.notSolid()
-			.defaultCutout()
-			.notSolid()
-			.noCollision()
-			.tag(`${global.namespace}:dev_doll`)
+		let developerDollRegister =
+			event.create(`${global.namespace}:${name}`, "cardinal")
+				.soundType(SoundType.WOOL)
+				.hardness(0)
+				.resistance(1)
+				.requiresTool(true)
+				.model(`${global.namespace}:block/dev/${name}`)
+				.textureAll(`${global.namespace}:block/dev/${name}`)
+				.notSolid()
+				.defaultCutout()
+				.notSolid()
+				.noCollision()
+				.tag(`${global.namespace}:dev_doll`)
+
+		return developerDollRegister
 	}
 	// UE
 	addDeveloperDoll("unknown_entity_")
