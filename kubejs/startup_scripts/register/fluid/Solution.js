@@ -1,12 +1,15 @@
 let solutionFluids = []
 
 function addSolution(name, color) {
-	solutionFluids.push({ name, color })
+	solutionFluids.push({
+		name: name,
+		color: color
+	})
 }
 
-// 注册所有溶液流体
 StartupEvents.registry("fluid", (event) => {
-	solutionFluids.forEach(({ name, color }) => {
+	solutionFluids.forEach((entry) => {
+		let { name, color } = entry
 		let id = `${global.namespace}:${name}_solution`
 
 		let solutionFluidRegister =
@@ -24,20 +27,21 @@ StartupEvents.registry("fluid", (event) => {
 		})
 
 		console.log(`${id} 注册成功`)
-		return solutionFluidRegister
 	})
 })
 
 let customCreativeTab = `${global.namespace}:salts_and_solutions`
 StartupEvents.modifyCreativeTab(customCreativeTab, (event) => {
-	solutionFluids.forEach(({ name }) => {
+	solutionFluids.forEach((entry) => {
+		let { name } = entry
 		event.add(`${global.namespace}:${name}_solution_bucket`)
 	})
 })
 
 let kjsCreativeTab = "kubejs:tab"
 StartupEvents.modifyCreativeTab(kjsCreativeTab, (event) => {
-	solutionFluids.forEach(({ name }) => {
+	solutionFluids.forEach((entry) => {
+		let { name } = entry
 		event.remove(`${global.namespace}:${name}_solution_bucket`)
 	})
 })
