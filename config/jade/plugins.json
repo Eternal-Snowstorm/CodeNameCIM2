@@ -37,7 +37,7 @@
     "beehive": true,
     "item_storage.detailed_amount": 54,
     "player_head": true,
-    "block_states": false,
+    "block_states": true,
     "lectern": true,
     "entity_armor": true,
     "harvest_tool.creative": false,
@@ -59,9 +59,9 @@
   },
   "jade": {
     "coordinates.rel": false,
-    "distance": false,
+    "distance": true,
     "block_face": false,
-    "coordinates": false,
+    "coordinates": true,
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },

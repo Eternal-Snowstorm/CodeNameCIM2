@@ -12,23 +12,6 @@ StartupEvents.registry("block", (event) => {
 	event.create(`${global.namespace}:green_screen`)
 		.lightLevel(15)
 
-	// 火箭框架
-	event.create(`${global.namespace}:rocket_pattern`)
-		.soundType(SoundType.WOOD)
-		.model(`${global.namespace}:block/rocket/pattern/rocket_pattern`)
-		.hardness(5)
-		.resistance(5)
-		.item((item) => {
-			item.maxStackSize(1)
-		})
-		.notSolid()
-		.defaultTranslucent()
-		.requiresTool(false)
-		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.toolType["pickaxe"])
-		.tagBlock(global.toolType["axe"])
-		.tagBlock("create:wrench_pickup")
-
 	// 锇砖瓦
 	event.create(`${global.namespace}:osmium_tile`)
 		.soundType(SoundType.METAL)

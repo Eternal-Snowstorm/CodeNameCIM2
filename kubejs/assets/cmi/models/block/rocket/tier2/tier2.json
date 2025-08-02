@@ -1,9 +1,9 @@
 {
 	"loader": "forge:obj",
-	"model": "cmi:models/block/rocket/pattern/rocket_pattern.obj",
+	"model": "cmi:models/block/rocket/tier2/tier2.obj",
 	"flip_v": true,
 	"textures": {
-		"particle": "cmi:block/rocket/pattern"
+		"particle": "cmi:block/rocket/tier2"
 	},
 	"display": {
 		"thirdperson_righthand": {
