@@ -18,7 +18,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "6B45AF976D26E391"
 			rewards: [{
 				id: "0E2C6CF4676F5D40"
@@ -44,7 +44,7 @@
 		}
 		{
 			dependencies: ["6B45AF976D26E391"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "3AAF51F4A4924343"
 			size: 1.5d
 			tasks: [{
@@ -57,7 +57,7 @@
 		}
 		{
 			dependencies: ["3AAF51F4A4924343"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "110882205EC952C3"
 			size: 1.5d
 			tasks: [{
@@ -70,7 +70,7 @@
 		}
 		{
 			dependencies: ["6B45AF976D26E391"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "701F589A2FF74412"
 			rewards: [{
 				id: "53BF792B8F753004"
@@ -96,7 +96,7 @@
 		}
 		{
 			dependencies: ["30F0B84B98781F76"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "030F841D01F802A7"
 			rewards: [{
 				id: "61CD484743319D15"
@@ -115,7 +115,7 @@
 		}
 		{
 			dependencies: ["110882205EC952C3"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "30F0B84B98781F76"
 			size: 1.5d
 			tasks: [{
@@ -128,7 +128,7 @@
 		}
 		{
 			dependencies: ["030F841D01F802A7"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "65F2FFE639A215C6"
 			rewards: [{
 				id: "57228099923BB864"

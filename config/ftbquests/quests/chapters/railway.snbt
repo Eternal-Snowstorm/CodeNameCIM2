@@ -18,7 +18,6 @@
 	quests: [
 		{
 			dependencies: ["360EAA901A674859"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "76A0B5FAB70C2CF4"
 			tasks: [{
@@ -30,7 +29,6 @@
 			y: -0.37857142857143344d
 		}
 		{
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "360EAA901A674859"
 			rewards: [{
@@ -49,7 +47,6 @@
 		}
 		{
 			dependencies: ["76A0B5FAB70C2CF4"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "1445F71D135D45AC"
 			rewards: [{
@@ -75,7 +72,6 @@
 		}
 		{
 			dependencies: ["1445F71D135D45AC"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			icon: "minecraft:lava_bucket"
 			id: "0DA999FE8A0D80D7"
@@ -89,7 +85,6 @@
 		}
 		{
 			dependencies: ["0DA999FE8A0D80D7"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "79FE17B82BB0AC09"
 			tasks: [{
@@ -102,7 +97,6 @@
 		}
 		{
 			dependencies: ["79FE17B82BB0AC09"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "2EBAE12721EE101D"
 			rewards: [{
@@ -121,7 +115,6 @@
 		}
 		{
 			dependencies: ["2EBAE12721EE101D"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "195146AD9810DA9A"
 			tasks: [{
@@ -134,7 +127,6 @@
 		}
 		{
 			dependencies: ["195146AD9810DA9A"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "1F839C620701DF10"
 			rewards: [{
@@ -152,7 +144,6 @@
 			y: 1.0714285714285694d
 		}
 		{
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "4654E674FEDEE1B0"
 			rewards: [{
@@ -174,7 +165,6 @@
 				"1F839C620701DF10"
 				"4654E674FEDEE1B0"
 			]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "545A07017D1759D1"
 			tasks: [{
@@ -187,7 +177,6 @@
 		}
 		{
 			dependencies: ["545A07017D1759D1"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "132C06A144E76AFB"
 			tasks: [{
@@ -201,7 +190,6 @@
 		}
 		{
 			dependencies: ["132C06A144E76AFB"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "4417AEF4EEA8754C"
 			tasks: [{

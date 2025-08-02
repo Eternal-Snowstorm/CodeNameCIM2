@@ -1,0 +1,292 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "light_engineering"
+	group: "65AEEF30E0964DD3"
+	icon: "cmi:light_engineering_mechanism"
+	id: "2A40BB351F55537E"
+	images: [{
+		height: 29.82d
+		image: "cmi:textures/images/background/light_ie.png"
+		rotation: 0.0d
+		width: 76.5d
+		x: -4.5d
+		y: -0.5d
+	}]
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["799EA946A3177D2B"]
+			hide_dependent_lines: true
+			id: "3BE08A14BB9BC06C"
+			rewards: [{
+				id: "39FD5B1FF3267160"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7C954E10628DFD0B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/iron"
+					}
+				}
+				title: "Any #forge:plates/iron"
+				type: "item"
+			}]
+			title: "Iron Plate"
+			x: -17.857142857142847d
+			y: -0.8042857142856974d
+		}
+		{
+			hide_dependent_lines: true
+			id: "384E68761B3D8966"
+			rewards: [{
+				id: "33DDAC247AD848E3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5EEF66D39DFECD88"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Iron Plate"
+			x: -24.857142857142847d
+			y: -3.751428571428555d
+		}
+		{
+			dependencies: ["384E68761B3D8966"]
+			hide_dependent_lines: true
+			id: "799EA946A3177D2B"
+			tasks: [{
+				id: "15A432EF7E97FC9D"
+				title: "Press"
+				type: "checkmark"
+			}]
+			x: -20.535714285714278d
+			y: -1.8942857142857008d
+		}
+		{
+			dependencies: ["3BE08A14BB9BC06C"]
+			hide_dependent_lines: true
+			id: "29285A338533C1AC"
+			tasks: [{
+				id: "22D926AC13A00C09"
+				title: "Cut"
+				type: "checkmark"
+			}]
+			x: -12.642857142857139d
+			y: 1.391428571428584d
+		}
+		{
+			dependencies: ["29285A338533C1AC"]
+			hide_dependent_lines: true
+			id: "3F4482C7F773A20A"
+			rewards: [{
+				id: "7AFEB0BBC00D12C1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3E2DA20BF713533A"
+				item: "immersiveengineering:sheetmetal_iron"
+				type: "item"
+			}]
+			title: "Iron Sheetmetal"
+			x: -3.75d
+			y: -2.608571428571409d
+		}
+		{
+			hide_dependent_lines: true
+			id: "3F9BB77FDA825AA3"
+			rewards: [{
+				id: "5129851086D7DFA5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7AABC253DA5DB893"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			title: "Copper Ingot"
+			x: -12.42857142857143d
+			y: -3.518571428571427d
+		}
+		{
+			dependencies: ["3F9BB77FDA825AA3"]
+			hide_dependent_lines: true
+			id: "2ADB0FE94E9DF4C0"
+			tasks: [{
+				id: "0BF601143A0CD4E0"
+				title: "Roll"
+				type: "checkmark"
+			}]
+			x: -13.785714285714292d
+			y: -2.2328571428571493d
+		}
+		{
+			dependencies: ["2ADB0FE94E9DF4C0"]
+			hide_dependent_lines: true
+			id: "7DCA2F2F9B91366A"
+			rewards: [{
+				id: "02365A323820FB65"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0711EE848B5741A5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/copper"
+					}
+				}
+				title: "Any #forge:rods/copper"
+				type: "item"
+			}]
+			title: "Copper Rod"
+			x: -8.357142857142861d
+			y: -0.5014285714285833d
+		}
+		{
+			dependencies: [
+				"7DCA2F2F9B91366A"
+				"3F4482C7F773A20A"
+			]
+			hide_dependent_lines: true
+			id: "07144E85CE0E0DC1"
+			tasks: [{
+				id: "49D475F7F2189F18"
+				title: "Deploy"
+				type: "checkmark"
+			}]
+			x: -7.928571428571431d
+			y: 2.962857142857125d
+		}
+		{
+			dependencies: ["07144E85CE0E0DC1"]
+			hide_dependent_lines: true
+			id: "640AADC26C6A9655"
+			rewards: [{
+				id: "0759F8F37C7D2B28"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7CB5B9DC75253EA6"
+				item: "immersiveengineering:component_iron"
+				type: "item"
+			}]
+			title: "Component Iron"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "003B4BD9E9AACAF6"
+			rewards: [{
+				id: "1F990CEDB3609A66"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3EE102A82E194537"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/copper"
+					}
+				}
+				title: "Any #forge:plates/copper"
+				type: "item"
+			}]
+			title: "Copper Plate"
+			x: -14.92857142857143d
+			y: -5.198571428571455d
+		}
+		{
+			dependencies: ["003B4BD9E9AACAF6"]
+			hide_dependent_lines: true
+			id: "19856A115C16071A"
+			tasks: [{
+				id: "66F111D029ABA1B1"
+				title: "Roll"
+				type: "checkmark"
+			}]
+			x: -7.642857142857139d
+			y: -6.217142857142882d
+		}
+		{
+			dependencies: [
+				"640AADC26C6A9655"
+				"19856A115C16071A"
+			]
+			hide_dependent_lines: true
+			id: "4B381E1FE9F4244B"
+			rewards: [{
+				id: "1F90D10626035B2D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4980A9D0FB8C0293"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:wires/copper"
+					}
+				}
+				title: "Any #forge:wires/copper"
+				type: "item"
+			}]
+			title: "Copper Wire"
+			x: 5.785714285714292d
+			y: -5.164285714285747d
+		}
+		{
+			dependencies: ["4B381E1FE9F4244B"]
+			hide_dependent_lines: true
+			id: "38BCFC662FB3ACAF"
+			rewards: [{
+				id: "55EBB4C9F16C8256"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6A5F2A5E47E2D70B"
+				item: "cmi:engineering_mechanism_part"
+				type: "item"
+			}]
+			title: "Mechanism Part"
+			x: 14.785714285714292d
+			y: -1.3257142857143265d
+		}
+		{
+			dependencies: ["38BCFC662FB3ACAF"]
+			hide_dependent_lines: true
+			id: "64F8E3F9612E0210"
+			rewards: [{
+				id: "1B6C63A18185B0F4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3100E4BC56E7DD1E"
+				item: "cmi:light_engineering_mechanism"
+				type: "item"
+			}]
+			title: "Light Engineering Mechanism"
+			x: 17.928571428571416d
+			y: -3.142857142857139d
+		}
+	]
+	title: "Light Engineering"
+}

@@ -1,0 +1,143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enchanted"
+	group: "65AEEF30E0964DD3"
+	icon: "cmi:enchanted_mechanism"
+	id: "3FAF5D1654572EA4"
+	images: [{
+		height: 27.72d
+		image: "cmi:textures/images/background/enchanted.png"
+		rotation: 0.0d
+		width: 62.94d
+		x: -2.0d
+		y: -1.5d
+	}]
+	order_index: 16
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependent_lines: true
+			id: "6E7A08C1A597A773"
+			rewards: [{
+				id: "3C2D1F21CC9D8163"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "75B7CADD6ABA3EFE"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			title: "Lapis Lazuli"
+			x: -19.815714285714286d
+			y: 1.2142857142857153d
+		}
+		{
+			dependencies: ["6E7A08C1A597A773"]
+			hide_dependent_lines: true
+			id: "3264DFDEFE1F1405"
+			tasks: [{
+				id: "6F61DF5D691A2F58"
+				title: "Compat"
+				type: "checkmark"
+			}]
+			x: -10.345714285714294d
+			y: 4.642857142857139d
+		}
+		{
+			dependencies: ["3264DFDEFE1F1405"]
+			hide_dependent_lines: true
+			id: "42B54B555EC4FA88"
+			rewards: [{
+				id: "036F87733236FA69"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6236B62A0EFE3E57"
+				item: "minecraft:lapis_block"
+				type: "item"
+			}]
+			title: "Lapis Block"
+			x: -6.447142857142865d
+			y: 2.0714285714285765d
+		}
+		{
+			dependencies: ["42B54B555EC4FA88"]
+			hide_dependent_lines: true
+			id: "3D8801175C63488E"
+			tasks: [{
+				id: "03C950BA77A0B5B8"
+				title: "Press"
+				type: "checkmark"
+			}]
+			x: -3.97714285714288d
+			y: 0.2142857142857153d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:experience_bottle"
+			id: "70EB67AB022CA57C"
+			tasks: [{
+				id: "10DD9AC2DA826C48"
+				title: "Fiuld Experience"
+				type: "checkmark"
+			}]
+			x: 2.1357142857142577d
+			y: -4.642857142857139d
+		}
+		{
+			dependencies: [
+				"3D8801175C63488E"
+				"70EB67AB022CA57C"
+			]
+			hide_dependent_lines: true
+			id: "29CA4C846BC2E898"
+			tasks: [{
+				id: "7BB49506F3AED350"
+				title: "Fill"
+				type: "checkmark"
+			}]
+			x: 5.391428571428534d
+			y: 3.499999999999993d
+		}
+		{
+			dependencies: ["29CA4C846BC2E898"]
+			hide_dependent_lines: true
+			id: "7DB92A8D55E693A0"
+			rewards: [{
+				id: "1AA13079AA80C5A4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "104F2E209276D149"
+				item: "cmi:magical_mechanism_part"
+				type: "item"
+			}]
+			title: "Mechanism Part"
+			x: 11.718571428571394d
+			y: -1.357142857142847d
+		}
+		{
+			dependencies: ["7DB92A8D55E693A0"]
+			hide_dependent_lines: true
+			id: "031DF244D321E171"
+			rewards: [{
+				id: "4EFF53FDE854A02E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "68D187DE26E53A29"
+				item: "cmi:enchanted_mechanism"
+				type: "item"
+			}]
+			title: "Enchanted Mechanism"
+			x: 18.688571428571393d
+			y: 1.2142857142857153d
+		}
+	]
+	title: "Enchanted"
+}

@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "wooden_mechanism"
+	filename: "wooden"
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:wooden_mechanism"
 	id: "2CDF2947F7A9E98F"
@@ -17,6 +17,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			hide_dependent_lines: true
 			id: "01AE65C1634E3194"
 			rewards: [{
 				id: "5E45C53173C11845"
@@ -41,7 +42,7 @@
 		}
 		{
 			dependencies: ["01AE65C1634E3194"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "6887A37B72AA97FA"
 			rewards: [{
 				id: "2ECEC43F6CF02584"
@@ -66,7 +67,7 @@
 		}
 		{
 			dependencies: ["6887A37B72AA97FA"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "07E74FB0730F6F2A"
 			tasks: [{
 				id: "75FA176DB4C6E19E"
@@ -79,7 +80,7 @@
 		}
 		{
 			dependencies: ["07E74FB0730F6F2A"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "558AB1EEAEE4FF10"
 			rewards: [{
 				id: "6E918F2937771DD9"
@@ -104,7 +105,7 @@
 		}
 		{
 			dependencies: ["558AB1EEAEE4FF10"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "77DE8AABD50A1BA5"
 			tasks: [{
 				id: "060FA62D17060F9B"
@@ -117,7 +118,7 @@
 		}
 		{
 			dependencies: ["77DE8AABD50A1BA5"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "4DDD4AE7B3C5B57A"
 			rewards: [{
 				id: "4464672D2FCFD538"
@@ -135,7 +136,7 @@
 		}
 		{
 			dependencies: ["4DDD4AE7B3C5B57A"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "1ADECAB6440F54A3"
 			rewards: [{
 				id: "456D888F0B1ADC60"
