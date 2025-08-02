@@ -1,6 +1,6 @@
 StartupEvents.registry("item", (event) => {
 	function addCastItem(name) {
-		let castItemRegister =
+		let registerCastItem =
 			event.create(`${global.namespace}:${name}_cast`)
 				.texture(`${global.namespace}:item/cast/${name}/golden`)
 				.tag("tconstruct:casts")
@@ -20,7 +20,7 @@ StartupEvents.registry("item", (event) => {
 			.tag("tconstruct:casts/single_use")
 			.tag(`tconstruct:casts/single_use/${name}`)
 
-		return castItemRegister
+		return registerCastItem
 	}
 
 	addCastItem("mechanism")

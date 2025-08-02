@@ -1,6 +1,6 @@
 StartupEvents.registry("fluid", (event) => {
 	function addColorMaterialFluid(name, color) {
-		let colorMaterialFluidRegister =
+		let registerColorMaterialFluid =
 			event.create(`${global.namespace}:molten_${name}`)
 				.flowingTexture(`${global.namespace}:fluid/metal/flow`)
 				.stillTexture(`${global.namespace}:fluid/metal/still`)
@@ -18,7 +18,7 @@ StartupEvents.registry("fluid", (event) => {
 		})
 
 		console.log(`molten_${name}已注册!`)
-		return colorMaterialFluidRegister
+		return registerColorMaterialFluid
 	}
 
 	addColorMaterialFluid("source_sapphire", 0x0257F5)

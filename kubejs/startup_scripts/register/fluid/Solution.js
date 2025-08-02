@@ -1,23 +1,15 @@
 let solutionFluids = []
 
-function addSolution(name, color) {
-	solutionFluids.push({
-		name: name,
-		color: color
-	})
-}
-
 StartupEvents.registry("fluid", (event) => {
 	solutionFluids.forEach((entry) => {
 		let { name, color } = entry
 		let id = `${global.namespace}:${name}_solution`
 
-		let solutionFluidRegister =
-			event.create(id)
-				.flowingTexture(`${global.namespace}:fluid/solution/flow`)
-				.stillTexture(`${global.namespace}:fluid/solution/still`)
-				.thinTexture(color)
-				.bucketColor(color)
+		event.create(id)
+			.flowingTexture(`${global.namespace}:fluid/solution/flow`)
+			.stillTexture(`${global.namespace}:fluid/solution/still`)
+			.thinTexture(color)
+			.bucketColor(color)
 
 		let file = `kubejs/assets/${global.namespace}/models/item/${name}_solution_bucket.json`
 		JsonIO.write(file, {
@@ -45,6 +37,13 @@ StartupEvents.modifyCreativeTab(kjsCreativeTab, (event) => {
 		event.remove(`${global.namespace}:${name}_solution_bucket`)
 	})
 })
+
+function addSolution(name, color) {
+	solutionFluids.push({
+		name: name,
+		color: color
+	})
+}
 
 addSolution("fecl2", 0x5BBD7F)
 addSolution("feso4", 0x6EB49C)

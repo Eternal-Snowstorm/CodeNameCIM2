@@ -1,6 +1,9 @@
-let $KnifeItem = Java.loadClass("vectorwing.farmersdelight.common.item.KnifeItem")
-let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties")
-let $Tiers = Java.loadClass("net.minecraft.world.item.Tiers")
+let $KnifeItem =
+	Java.loadClass("vectorwing.farmersdelight.common.item.KnifeItem")
+let $Item$Properties =
+	Java.loadClass("net.minecraft.world.item.Item$Properties")
+let $Tiers =
+	Java.loadClass("net.minecraft.world.item.Tiers")
 
 StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:geological_hammer`)

@@ -1,13 +1,13 @@
 StartupEvents.registry("item", (event) => {
 	function addAloneRawMaterial(name) {
-		let aloneRawMaterialRegister =
+		let registerAloneRawMaterial =
 			event.create(`${global.namespace}:raw_${name}`)
 				.texture(`${global.namespace}:item/material/raw/${name}`)
 				.tag(`${global.namespace}:raw_metals`)
 				.tag("forge:raw_materials")
 				.tag(`forge:raw_materials/${name}`)
 
-		return aloneRawMaterialRegister
+		return registerAloneRawMaterial
 	}
 
 	addAloneRawMaterial("vanadium")

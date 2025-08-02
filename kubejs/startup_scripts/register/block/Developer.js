@@ -1,6 +1,6 @@
 StartupEvents.registry("block", (event) => {
 	function addDeveloperDoll(name) {
-		let developerDollRegister =
+		let registerDeveloperDoll =
 			event.create(`${global.namespace}:${name}`, "cardinal")
 				.soundType(SoundType.WOOL)
 				.hardness(0)
@@ -14,7 +14,7 @@ StartupEvents.registry("block", (event) => {
 				.noCollision()
 				.tag(`${global.namespace}:dev_doll`)
 
-		return developerDollRegister
+		return registerDeveloperDoll
 	}
 	// UE
 	addDeveloperDoll("unknown_entity_")
