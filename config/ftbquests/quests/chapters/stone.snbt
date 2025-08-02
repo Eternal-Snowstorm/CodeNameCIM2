@@ -17,7 +17,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "129F9D4B54D65DC0"
 			rewards: [{
@@ -44,7 +43,6 @@
 		}
 		{
 			dependencies: ["129F9D4B54D65DC0"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "0A53DB225AE2E67A"
 			tasks: [{
@@ -57,7 +55,6 @@
 		}
 		{
 			dependencies: ["0A53DB225AE2E67A"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "24F20C2FD7E80B8A"
 			rewards: [{
@@ -77,7 +74,6 @@
 		}
 		{
 			dependencies: ["24F20C2FD7E80B8A"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "375701D6F3DFB6FA"
 			rewards: [{
@@ -97,7 +93,6 @@
 		}
 		{
 			dependencies: ["375701D6F3DFB6FA"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "367A587D2ECBABD7"
 			rewards: [{

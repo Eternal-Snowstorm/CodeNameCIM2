@@ -17,7 +17,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "522F0F1F071E7A3A"
 			rewards: [{
@@ -35,7 +34,6 @@
 			y: 8.357142857142861d
 		}
 		{
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "7996CBD8D010D793"
 			rewards: [{
@@ -54,7 +52,6 @@
 		}
 		{
 			dependencies: ["022046E00DDF637F"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			icon: "thermal:ender_bucket"
 			id: "4A7A67C25D91AF74"
@@ -68,7 +65,6 @@
 		}
 		{
 			dependencies: ["7996CBD8D010D793"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "022046E00DDF637F"
 			tasks: [{
@@ -81,7 +77,6 @@
 		}
 		{
 			dependencies: ["4A7A67C25D91AF74"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "40E404BCF340AE74"
 			tasks: [{
@@ -97,7 +92,6 @@
 				"522F0F1F071E7A3A"
 				"40E404BCF340AE74"
 			]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "1AAB7DB531785BF8"
 			rewards: [{
@@ -116,7 +110,6 @@
 		}
 		{
 			dependencies: ["1AAB7DB531785BF8"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "48038D772C0E4164"
 			rewards: [{
@@ -142,7 +135,6 @@
 		}
 		{
 			dependencies: ["48038D772C0E4164"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "6B8036545D2D0402"
 			rewards: [{
@@ -161,7 +153,6 @@
 		}
 		{
 			dependencies: ["6B8036545D2D0402"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "5012B296C63CFD77"
 			rewards: [{

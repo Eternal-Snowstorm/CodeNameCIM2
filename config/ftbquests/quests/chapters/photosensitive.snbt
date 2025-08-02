@@ -17,7 +17,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "2D7C497B6DE71A6A"
 			rewards: [{
@@ -47,7 +46,6 @@
 				"7689533A731CF99F"
 				"4655CCB0F95FFEC9"
 			]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "10640F4F5D4493FC"
 			rewards: [{
@@ -74,7 +72,6 @@
 		}
 		{
 			dependencies: ["2D7C497B6DE71A6A"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "7689533A731CF99F"
 			size: 1.5d
@@ -88,7 +85,6 @@
 		}
 		{
 			dependencies: ["6BEF3191E17065E0"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "4686C401FC04122D"
 			size: 1.5d
@@ -102,7 +98,6 @@
 		}
 		{
 			dependencies: ["2D7C497B6DE71A6A"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "5653F0D4FEAB12B3"
 			rewards: [{
@@ -122,7 +117,6 @@
 		}
 		{
 			dependencies: ["5653F0D4FEAB12B3"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "04D8E7B236306B91"
 			size: 1.5d
@@ -136,7 +130,6 @@
 		}
 		{
 			dependencies: ["04D8E7B236306B91"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "6BEF3191E17065E0"
 			rewards: [{
@@ -159,7 +152,6 @@
 				"10640F4F5D4493FC"
 				"239C8B297E65182D"
 			]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "5B09C912CC93559E"
 			rewards: [{
@@ -186,7 +178,6 @@
 		}
 		{
 			dependencies: ["5653F0D4FEAB12B3"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "239C8B297E65182D"
 			size: 1.5d
@@ -200,7 +191,6 @@
 		}
 		{
 			dependencies: ["5B09C912CC93559E"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "18DDE97D66E9E7BE"
 			rewards: [{
@@ -219,7 +209,6 @@
 			y: 3.0714285714285694d
 		}
 		{
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "03A565CE4505C8FA"
 			rewards: [{
@@ -239,7 +228,6 @@
 		}
 		{
 			dependencies: ["03A565CE4505C8FA"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "4655CCB0F95FFEC9"
 			rewards: [{
@@ -259,7 +247,6 @@
 		}
 		{
 			dependencies: ["18DDE97D66E9E7BE"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "462C2FFF623F9260"
 			rewards: [{
