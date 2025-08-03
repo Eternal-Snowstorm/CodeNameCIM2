@@ -15,7 +15,7 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:tools")
 		.tag("minecraft:pickaxes")
 		.tag("minecraft:axes")
-		.tag("forge:tools/shovels")
+		.tag("minecraft:shovels")
 		.tag("tconstruct:modifiable")
 		.tag("tconstruct:modifiable/multipart")
 		.tag("tconstruct:modifiable/durability")
