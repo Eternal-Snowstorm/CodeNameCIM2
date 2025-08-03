@@ -7,10 +7,18 @@
 			"a": 255
 		}
 	},
+	"Bloom": [
+		{
+			"block": "minecraft:redstone_torch"
+		}
+	],
 	"LightBlock": [
 		{
 			"block": "cmi:siltsteel_block",
-			"color": "#blue",
+			"r": 72,
+			"g": 209,
+			"b": 204,
+			"a": 255,
 			"radius": 15
 		},
 		{

@@ -47,6 +47,11 @@ StartupEvents.registry("item", (event) => {
 	event.create(`${global.namespace}:sludge_extract`)
 		.texture(`${global.namespace}:item/material/sludge_extract`)
 
+	// 泥炭
+	event.create(`${global.namespace}:peat`)
+		.texture(`${global.namespace}:item/material/peat`)
+		.burnTime(800)
+
 	// 初始套件
 	event.create(`${global.namespace}:initial_item_kit`)
 		.glow(true)

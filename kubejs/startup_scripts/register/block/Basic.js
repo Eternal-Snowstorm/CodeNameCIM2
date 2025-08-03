@@ -21,6 +21,17 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.miningLevel["iron"])
 		.requiresTool(true)
 
+	// 泥炭
+	event.create(`${global.namespace}:peat_block`)
+		.soundType(SoundType.MUD)
+		.hardness(1.5)
+		.resistance(1.5)
+		.item((item) => {
+			item.burnTime(3200)
+		})
+		.tagBlock(global.toolType["shovel"])
+		.tagBlock(global.miningLevel["wooden"])
+
 	// 压缩末地粉块
 	event.create(`${global.namespace}:compression_end_stone_dust_block`)
 		.soundType(SoundType.SAND)

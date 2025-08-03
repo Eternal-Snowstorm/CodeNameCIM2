@@ -40,6 +40,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("andesite_alloy_noodle_stage1", "安山合金刀削面(阶段1)")
 	addItemLanguage("andesite_alloy_noodle_stage2", "安山合金刀削面(阶段2)")
 	addItemLanguage("andesite_alloy_noodle", "安山合金刀削面")
+	addItemLanguage("peat", "泥炭")
 	addItemLanguage("paxel", "镐尖斧")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
@@ -188,6 +189,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("crucible_tuyere", "风口")
 	addBlockLanguage("bronze_casing", "青铜外壳")
 	addBlockLanguage("pressure_resistance_casing", "耐压外壳")
+	addBlockLanguage("peat_block", "泥炭块")
 
 	for (let i = 1; i <= 14; i++) {
 		addPaintingLanguage(`rr${i}`, `Aleegos(${i})`, "Aleegos Reality Redemption")

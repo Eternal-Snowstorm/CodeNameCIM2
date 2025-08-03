@@ -118,6 +118,18 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/bronze"
 	})
 
+	// 泥炭块
+	kubejs.shaped("cmi:peat_block", [
+		"AA",
+		"AA"
+	], {
+		A: "cmi:peat"
+	})
+
+	kubejs.shapeless("4x cmi:peat", [
+		"cmi:peat_block"
+	])
+
 	// 安山岩
 	addSmeltingRecipe(event, "2x minecraft:andesite", "cmi:andesite_aggregate")
 
