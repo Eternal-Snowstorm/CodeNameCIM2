@@ -46,7 +46,7 @@
 			],
 			"render_type": "minecraft:translucent",
 			"textures": {
-				"overlay": "cmi:block/machine/energy_output"
+				"overlay": "cmi:block/machine/io/energy_output"
 			}
 		}
 	},
@@ -93,6 +93,6 @@
 	"loader": "forge:composite",
 	"textures": {
 		"all": "create:block/industrial_iron_block",
-		"particle": "cmi:block/machine/energy_output"
+		"particle": "cmi:block/machine/io/energy_output"
 	}
 }

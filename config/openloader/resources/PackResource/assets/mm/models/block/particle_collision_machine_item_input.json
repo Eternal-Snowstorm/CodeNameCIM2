@@ -46,7 +46,7 @@
 			],
 			"render_type": "minecraft:translucent",
 			"textures": {
-				"overlay": "cmi:block/machine/item_input"
+				"overlay": "cmi:block/machine/io/item_input"
 			}
 		}
 	},
@@ -93,6 +93,6 @@
 	"loader": "forge:composite",
 	"textures": {
 		"all": "cmi:block/machine/particle_collision_machine/side",
-		"particle": "cmi:block/machine/item_input"
+		"particle": "cmi:block/machine/io/item_input"
 	}
 }

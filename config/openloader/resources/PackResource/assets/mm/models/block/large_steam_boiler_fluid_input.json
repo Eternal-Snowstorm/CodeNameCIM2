@@ -46,7 +46,7 @@
 			],
 			"render_type": "minecraft:translucent",
 			"textures": {
-				"overlay": "cmi:block/machine/fluid_input"
+				"overlay": "cmi:block/machine/io/fluid_input"
 			}
 		}
 	},
@@ -93,6 +93,6 @@
 	"loader": "forge:composite",
 	"textures": {
 		"all": "cmi:block/casing/bronze/block",
-		"particle": "cmi:block/machine/fluid_input"
+		"particle": "cmi:block/machine/io/fluid_input"
 	}
 }
