@@ -11,7 +11,7 @@
 		rotation: 0.0d
 		width: 15.4d
 		x: 1.5d
-		y: -5.0d
+		y: -10.0d
 	}]
 	order_index: 1
 	quest_links: [ ]
@@ -58,8 +58,8 @@
 				title: "Any #minecraft:planks"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77E939643ECBC35D"]
@@ -81,8 +81,8 @@
 				title: "Any #forge:rods/wooden"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["77E939643ECBC35D"]
@@ -97,8 +97,8 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["219A962B82333395"]
@@ -113,8 +113,8 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["29624F942DC7CC08"]
@@ -148,8 +148,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 6.0d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["005CD7BF1218DD20"]
@@ -186,7 +186,7 @@
 				item: "tconstruct:encyclopedia"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.5d
 			y: 5.0d
 		}
 		{
@@ -231,8 +231,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 7.0d
+			x: 5.0d
+			y: 7.5d
 		}
 		{
 			id: "3DB805F9D13B67E8"
@@ -292,6 +292,7 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
+			title: "aa"
 			x: 2.5d
 			y: 12.5d
 		}
@@ -912,27 +913,82 @@
 			y: 39.5d
 		}
 		{
-			dependencies: ["0950E73B864090F0"]
-			icon: {
-				Count: 1
-				id: "minecraft:iron_axe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "305AFBFBD09A7132"
+			dependencies: ["1270086FA79438E4"]
+			id: "7C14A1CC724511CB"
 			rewards: [{
-				id: "080F76BB4BF4143B"
+				id: "4C14E7D36ACC2778"
 				type: "xp"
 				xp: 10
 			}]
 			tasks: [{
-				id: "4ECDC2AC1D651E6F"
-				title: "斧子"
-				type: "checkmark"
+				id: "03C108D923131D75"
+				item: "minecraft:flint"
+				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0950E73B864090F0"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_shovel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1270086FA79438E4"
+			rewards: [{
+				id: "052C57F8E9C85D61"
+				type: "xp"
+				xp: 10
+			}]
+			title: "铲子"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1270086FA79438E4"]
+			id: "2F1D496A9B588220"
+			tasks: [{
+				id: "5E890AB67D72E70A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:clay"
+					}
+				}
+				title: "Any #forge:clay"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2F1D496A9B588220"
+				"7C14A1CC724511CB"
+			]
+			id: "79C36E5EB68E7476"
+			tasks: [{
+				id: "595EE2C9F1E377F3"
+				item: "cmi:basic_mechanism_part"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["79C36E5EB68E7476"]
+			id: "4F1185F495038BB3"
+			tasks: [{
+				id: "6E12031437BBAE52"
+				item: "cmi:wooden_mechanism"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.0d
 		}
 	]
 	title: "Start"
