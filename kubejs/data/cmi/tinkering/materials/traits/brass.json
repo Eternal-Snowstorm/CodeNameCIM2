@@ -11,12 +11,6 @@
 				"level": 1,
 				"name": "cmi:smart"
 			}
-		],
-		"tconstruct:armor": [
-			{
-				"level": 2,
-				"name": "cmi:magical_shield"
-			}
 		]
 	}
 }
