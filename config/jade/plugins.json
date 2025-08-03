@@ -5,7 +5,7 @@
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
-    "harvest_tool.show_unbreakable": false,
+    "harvest_tool.show_unbreakable": true,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
     "item_storage.normal_amount": 9,
@@ -59,7 +59,7 @@
   },
   "jade": {
     "coordinates.rel": false,
-    "distance": true,
+    "distance": false,
     "block_face": false,
     "coordinates": true,
     "registry_name": "ADVANCED_TOOLTIPS",

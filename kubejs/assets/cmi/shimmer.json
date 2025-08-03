@@ -1,0 +1,33 @@
+{
+	"ColorReference": {
+		"blue": {
+			"r": 72,
+			"g": 209,
+			"b": 204,
+			"a": 255
+		}
+	},
+	"LightBlock": [
+		{
+			"block": "cmi:siltsteel_block",
+			"color": "#blue",
+			"radius": 15
+		},
+		{
+			"block": "minecraft:redstone_lamp",
+			"state": {
+				"lit": true
+			},
+			"color": "#red",
+			"radius": 10
+		},
+		{
+			"block": "minecraft:lantern",
+			"r": 255,
+			"g": 212,
+			"b": 141,
+			"a": 255,
+			"radius": 15
+		}
+	]
+}
