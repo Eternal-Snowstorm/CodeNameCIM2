@@ -28,4 +28,4 @@ function addMMLanguage(key, value) {
 	console.log("Energy接口语言生成完成")
 }
 
-JsonIO.write(FILE_PATH, langMap)
+JsonIO.writeAndCreateDirectories(FILE_PATH, langMap)
