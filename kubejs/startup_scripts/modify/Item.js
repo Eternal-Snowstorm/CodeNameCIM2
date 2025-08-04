@@ -14,6 +14,11 @@ ItemEvents.modification((event) => {
 		modify.burnTime = 200
 	})
 
+	// 泥炭块
+	event.modify("cmi:peat_block", (modify) => {
+		modify.burnTime = 3200
+	})
+
 	// 奶酪统一处理
 	event.modify("ad_astra:cheese_block", (modify) => {
 		modify.setFoodProperties((food) => {

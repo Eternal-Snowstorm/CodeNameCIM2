@@ -1,4 +1,8 @@
 {
+	"recipe.mm.output.chance": "%s输出概率",
+	"recipe.mm.input.chance": "%s消耗概率",
+	"recipe.mm.output.tick": "每Tick输出",
+	"recipe.mm.input.tick": "每Tick消耗",
 	"block.mm.large_steam_boiler": "大型蒸汽锅炉",
 	"block.mm.large_steam_boiler_item_input": "大型蒸汽锅炉物品输入口",
 	"block.mm.large_steam_boiler_item_output": "大型蒸汽锅炉物品输出口",

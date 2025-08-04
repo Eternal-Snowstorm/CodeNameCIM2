@@ -3,14 +3,14 @@ MMEvents.createProcesses((event) => {
 	const STEAM_AMOUNT = global.BUCKET_CAPACITY
 
 	// 核心处理函数
-	function addSteamOreProcessingRecipe(ore, nugget) {
+	function addSteamOreProcessingRecipe(ore, dust) {
 		event.create(`cmi:steam_ore_processor/${ore}`)
 			.structureId("cmi:steam_ore_processor_structure")
 			.ticks(400)
 			.input(addFluidInput("cmi:steam", STEAM_AMOUNT))
 			.input(addItemInput(`forge:raw_materials/${ore}`, 1))
-			.output(addItemOutput(nugget, 27))
-			.output(addBonusOutput(nugget, 10, 0.25))
+			.output(addItemOutput(dust, 3))
+			.output(addBonusOutput(dust, 1, 0.25))
 			.output(addFluidOutput("minecraft:water", 100))
 			.output(addFluidOutput("mekanism:sulfur_dioxide", 200))
 	}
@@ -78,18 +78,18 @@ MMEvents.createProcesses((event) => {
 
 	// 列表
 	let oreProcesses = [
-		{ ore: "pyrite", nugget: "minecraft:iron_nugget" },
-		{ ore: "galena", nugget: "thermal:lead_nugget" },
-		{ ore: "sphalerite", nugget: "create:zinc_nugget" },
-		{ ore: "lateritic_nickel", nugget: "thermal:nickel_nugget" },
-		{ ore: "veridium", nugget: "thermal:copper_nugget" },
-		{ ore: "stannine", nugget: "thermal:tin_nugget" },
-		{ ore: "variscite", nugget: "immersiveengineering:nugget_aluminum" },
-		{ ore: "argentite", nugget: "thermal:silver_nugget" },
-		{ ore: "osmiridium", nugget: "mekanism:nugget_osmium" },
-		{ ore: "uraninite", nugget: "immersiveengineering:nugget_uranium" },
+		{ ore: "pyrite", dust: "thermal:iron_dust" },
+		{ ore: "galena", dust: "thermal:lead_dust" },
+		{ ore: "sphalerite", dust: "thermal_extra:zinc_dust" },
+		{ ore: "lateritic_nickel", dust: "thermal:nickel_dust" },
+		{ ore: "veridium", dust: "thermal:copper_dust" },
+		{ ore: "stannine", dust: "thermal:tin_dust" },
+		{ ore: "variscite", dust: "immersiveengineering:dust_aluminum" },
+		{ ore: "argentite", dust: "thermal:silver_dust" },
+		{ ore: "osmiridium", dust: "mekanism:dust_osmium" },
+		{ ore: "uraninite", dust: "immersiveengineering:dust_uranium" },
 	]
 	oreProcesses.forEach((process) => {
-		addSteamOreProcessingRecipe(process.ore, process.nugget)
+		addSteamOreProcessingRecipe(process.ore, process.dust)
 	})
 })

@@ -26,9 +26,6 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.MUD)
 		.hardness(1.5)
 		.resistance(1.5)
-		.item((item) => {
-			item.burnTime(3200)
-		})
 		.tagBlock(global.toolType["shovel"])
 		.tagBlock(global.miningLevel["wooden"])
 

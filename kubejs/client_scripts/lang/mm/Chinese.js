@@ -1,6 +1,11 @@
 let langMap = {}
 const FILE_PATH = "config/openloader/resources/PackResource/assets/mm/lang/zh_cn.json"
 
+langMap["recipe.mm.output.chance"] = "%s输出概率"
+langMap["recipe.mm.input.chance"] = "%s消耗概率"
+langMap["recipe.mm.output.tick"] = "每Tick输出"
+langMap["recipe.mm.input.tick"] = "每Tick消耗"
+
 addMMLanguage("large_steam_boiler", "大型蒸汽锅炉")
 addMMLanguage("cracker", "裂解机")
 addMMLanguage("steam_ore_processor", "蒸汽矿石处理机")
