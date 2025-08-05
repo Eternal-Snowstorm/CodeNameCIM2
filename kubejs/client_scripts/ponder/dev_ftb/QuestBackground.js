@@ -104,8 +104,36 @@ Ponder.registry((event) => {
 			scene.showStructure()
 			scene.scaleSceneView(0.3)
 		})
-		.scene("2", "2", "cmi:dev_ftb/ftb_tier1", (scene) => {
+		.scene("2", "2", "cmi:dev_ftb/ftb_tier_1_aviation", (scene) => {
 			scene.showStructure()
-			scene.scaleSceneView(0.3)
+			scene.scaleSceneView(0.2)
+		})
+		.scene("2", "2", "cmi:dev_ftb/ftb_tier_2_aviation", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.2)
+		})
+		.scene("2", "2", "cmi:dev_ftb/ftb_tier_3_aviation", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.2)
+		})
+		.scene("2", "2", "cmi:dev_ftb/ftb_tier_4_aviation", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.2)
+		})
+		.scene("2", "2", "cmi:dev_ftb/ftb_basic_mekanism", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.2)
+		})
+		.scene("2", "2", "cmi:dev_ftb/ftb_advanced_mekanism", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.2)
+		})
+		.scene("2", "2", "cmi:dev_ftb/ftb_elite_mekanism", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.2)
+		})
+		.scene("2", "2", "cmi:dev_ftb/ftb_ultimate_mekanism", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.2)
 		})
 })
