@@ -1,6 +1,6 @@
 StartupEvents.registry("block", (event) => {
 	function addAloneRawMaterialBlock(name, level) {
-		event.create(`${global.namespace}:raw_${name}_block`)
+		return event.create(`${global.namespace}:raw_${name}_block`)
 			.soundType(SoundType.STONE)
 			.hardness(5)
 			.resistance(5)

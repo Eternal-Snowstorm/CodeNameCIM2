@@ -28,6 +28,7 @@ StartupEvents.registry("block", (event) => {
 		.resistance(1.5)
 		.tagBlock(global.toolType["shovel"])
 		.tagBlock(global.miningLevel["wooden"])
+		.tagBlock("minecraft:dirt")
 
 	// 压缩末地粉块
 	event.create(`${global.namespace}:compression_end_stone_dust_block`)
