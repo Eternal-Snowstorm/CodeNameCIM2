@@ -35,4 +35,28 @@ kubejs.shaped("mm:steam_ore_processor", [
 		D: '#forge:glass'
 	}).id("mm:steam_ore_processor")
   
+  
+kubejs.shaped("cmi:flash_disk_writer", [
+		"ABA",
+		"CDC",
+		"AEA"
+	], {
+		A: "cmi:stone_plate",
+		B: 'cmi:computer_component',
+		C: 'cmi:plasma_ingot',
+		D: 'cmi:antimatter_mechanism',
+		E:'mekanism:ultimate_energy_cube'
+	}).id("cmi:flash_disk_writer")
+  
+  
+kubejs.shaped("cmi:programmed_flash_drive", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: '#mekanismadditions:plastic_blocks',
+		C: '#forge:ingots/plasma',
+		B: 'cmi:antimatter_mechanism',
+	}).id("cmi:programmed_flash_drive")
+  
 })

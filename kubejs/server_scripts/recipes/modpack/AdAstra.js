@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements } = event.recipes
+	let { kubejs, create, vintageimprovements } = event.recipes
 
 	event.custom({
 		"type": "ad_astra:alloying",
@@ -218,4 +218,31 @@ ServerEvents.recipes((event) => {
 			"cmi:tier_4_rocket_frame"
 		]).energy(100)
 	]).loops(1).transitionalItem("cmi:tier_4_rocket_frame")
+
+
+
+    // 机器
+	// 高炉
+	kubejs.shaped("ad_astra:etrionic_blast_furnace", [
+		"AAA",
+		"CMC",
+		"AAA"
+	], {
+		A: "#forge:plates/steel",
+		C: "cmi:tier_1_aviation_mechanism",
+		M: "minecraft:blast_furnace"
+	}).id("ad_astra:etrionic_blast_furnace")
+
+	// NASA
+	kubejs.shaped("ad_astra:nasa_workbench", [
+		"ABA",
+		"CDC",
+		"BEB"
+	], {
+		A: "#forge:rods/steel",
+		B: "cmi:tier_1_aviation_mechanism",
+		C:"vintageimprovements:laser",
+		D:'cmi:computer_component',
+		E: "#forge:storage_blocks/steel"
+	}).id("ad_astra:nasa_workbench")
 })

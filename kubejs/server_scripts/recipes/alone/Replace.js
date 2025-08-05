@@ -9,6 +9,10 @@ ServerEvents.recipes((event) => {
 	event.replaceInput({}, "mekanism:elite_control_circuit", "cmi:elite_mekanism_mechanism")
 	event.replaceInput({}, "mekanism:ultimate_control_circuit", "cmi:ultimate_mekanism_mechanism")
 
+	event.replaceInput({}, "ae2:logic_processor", "cmi:smart_mechanism")
+	event.replaceInput({}, "ae2:calculation_processor", "cmi:smart_mechanism")
+	event.replaceInput({}, "ae2:engineering_processor", "cmi:smart_mechanism")
+
 	event.replaceInput({}, "mekanism:pellet_plutonium", "cmi:nuclear_mechanism")
 	event.replaceInput({}, "mekanism:pellet_polonium", "cmi:nuclear_mechanism")
 	event.replaceInput({}, "mekanism:pellet_antimatter", "cmi:antimatter_mechanism")

@@ -18,6 +18,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:super_knife")
 	addCommonTooltip("#cmi:special_ores")
 	addCommonTooltip("#cmi:multiblock_machine_controller")
+	addCommonTooltip("cmi:stone_plate")
 
 	addAccelerateTooltip("cmi:stone_mechanism")
 	addAccelerateTooltip("cmi:andesite_mechanism")
