@@ -11,10 +11,6 @@ ServerEvents.recipes((event) => {
 			}
 		})
 
-		if (Fluid.exists(`thermal_extra:${metal}`)) {
-			fluid = `thermal_extra:${metal}`
-		}
-
 		if (fluid === "") {
 			console.warn(`No molten metal found for ${metal}!`)
 			return
