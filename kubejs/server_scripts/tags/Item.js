@@ -30,6 +30,11 @@ ServerEvents.tags("item", (event) => {
 		.add("ad_astra:cheese_block")
 		.add("tconstruct:cheese_block")
 
+	// 淤泥产出
+	event.get(`${global.namespace}:liquid_output`)
+		.add("deepdrilling:sludge_pump")
+		.add("deepdrilling:sludge_bucket")
+
 	// 特殊矿石
 	event.get(`${global.namespace}:special_ores`)
 		.add("#forge:raw_materials/galena")

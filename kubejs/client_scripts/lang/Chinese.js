@@ -20,7 +20,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("blockstone_source_gamma", "Γ(Gamma)型黑石源质")
 	addItemLanguage("crystal_ruby", "晶射红宝石")
 	addItemLanguage("source_sapphire", "蓝源晶")
-	addItemLanguage("bombed_source_emeraid", "爆裂源质")
+	addItemLanguage("bomBed_source_emeraid", "爆裂源质")
 	addItemLanguage("sludge_extract", "淤泥提取物")
 	addItemLanguage("crafting_incomplete_iron_mechanism", "铁构件底座")
 	addItemLanguage("crafting_incomplete_copper_mechanism", "铜构件底座")
@@ -198,10 +198,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("it_must_be_optifine", "一定是OptiFine干的", "XeKr")
 	addPaintingLanguage("random_mechanism", "随机构件", "随机构件")
 	addPaintingLanguage("qi_month", "榛名柒月", "榛名柒月")
-	addPaintingLanguage("sacabambaspis", "萨卡班甲鱼", "⑨Dropper_QWQ⑨")
+	addPaintingLanguage("sacabamBaspis", "萨卡班甲鱼", "⑨Dropper_QWQ⑨")
 
 	addCommonTooltipLanguage("cmi:pigiron_mechanism", "可无限次食用")
-	addCommonTooltipLanguage("cmi:acceleratable", "§b按住Shift查看构件之力催生器用途")
+	addCommonTooltipLanguage("cmi:acceleratable", "§v按住Shift查看构件之力催生器用途")
 	addCommonTooltipLanguage("cmi:stone_mechanism", "§c手持右键圆石可将其转换为石头")
 	addCommonTooltipLanguage("cmi:copper_mechanism", "§6手持右键可以投掷出水瓶")
 	addCommonTooltipLanguage("cmi:ender_mechanism", "§d手持右键随机传送, 手持潜行右键记录当前坐标")
@@ -212,7 +212,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("cmi:photosensitive_mechanism", "§f装备于构件饰品栏可获得夜视效果")
 	addCommonTooltipLanguage("cmi:cobalt_mechanism", "§9装备于构件饰品栏可获得急迫与速度效果")
 	addCommonTooltipLanguage("cmi:nether_mechanism", "§4装备于构件饰品栏可获得抗火效果")
-	addCommonTooltipLanguage("cmi:sculk_mechanism", "§b手持右键可以发射一道音波尖啸")
+	addCommonTooltipLanguage("cmi:sculk_mechanism", "§v手持右键可以发射一道音波尖啸")
 	addCommonTooltipLanguage("cmi:geographycal_hammer.developer1", "手持右键潜行方块获取方块硬度")
 	addCommonTooltipLanguage("cmi:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("cmi:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
@@ -234,7 +234,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLanguage("#ad_astra:power_consumption_machines", "该Mod的机器每个面都有能量输入的上限\n如果想要不会断电确保产量你可能需要给每个面都连接一根电线")
 	addJEIInfoLanguage("engineered_schematics:multiblock_schematic", "手持原理图右键地面以放置投影网格, 将原理图放置于副手可以查看方块的具体位置")
 	addJEIInfoLanguage("cmi:siltsteel_ingot", "自浑浊淤泥中升华, 历经繁复萃取与催化精炼, 终获此一泓清冽碧波")
-	addJEIInfoLanguage("cmi:wooden_faucet", `右键"橡胶原木"有25%的概率获得1个"橡胶", 有10%的概率会让"橡胶原木"变成"去皮橡胶原木", 并且每次右键"橡胶原木"都会消耗1点耐久, 耐久消耗殆尽则会损坏`)
+	addJEIInfoLanguage("cmi:wooden_faucet", `右键§r"§6橡胶原木§r"有§a25%§r概率获得§c1个"橡胶"§r\n有§d10%§r概率会将其变为"§7去皮橡胶原木§r"\n每次右键都会§c消耗1点耐久§r，耐久归零后§4工具损坏§r`)
+	addJEIInfoLanguage("#cmi:liquid_output", "淤泥泵在每次工作时，会产出§1100mB ~ 200mB§r的§u淤泥§r\n§d初始概率§r为§11.3%§r，有概率产出§a10000mB§r淤泥，抽中后§d概率重置§r为§11.3%§r\n若未抽中，每次启动后§d概率提升§r为当前的§11.02倍§r，最多提升至§1100%§r\n第§c499次§r未抽中时，那么在第§c500次有§a50%§r概率产出§a10000mB§r，否则产出§15000mB§r，随后§d概率重置§r为§11.3%§r\n第§c999次§r未抽中时，那么在第§c1000次§a必定产出10000mB§r，随后§d概率重置§r为§11.3%§r\n若单个淤泥泵连续§a5次§r产出§a10000mB§r，将向所有玩家发送提示信息")
 
 	addAccelerateTooltipLanguage("cmi:stone_mechanism", "§e转化石头\n§e10%安山岩\n§e10%闪长岩\n§e10%花岗岩\n§e10%石灰岩\n§e10%焦黑石头\n§2转化深板岩\n§210%焦黑石头\n§210%凝灰岩\n§210%熔渣\n§210%滴水石块\n§210%平滑玄武岩")
 	addAccelerateTooltipLanguage("cmi:andesite_mechanism", "§e转化石头\n§e20%安山岩\n§e5%铁矿石\n§e5%锌矿石\n§2转化深板岩\n§215%安山岩\n§210%深层铁矿石\n§210%深层锌矿石")
@@ -385,10 +386,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addMBDMachineLanguage(key, value) {
-		event.add(`block.mbd2.${key}`, value)
+		event.add(`block.mBd2.${key}`, value)
 	}
 	function addMBDMachineRecipeLanguage(key, value) {
-		event.add(`mbd2.${key}`, value)
+		event.add(`mBd2.${key}`, value)
 	}
 
 	function addFluidLanguage(key, value) {
@@ -427,11 +428,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addCommonTooltipLanguage(key, value) {
-		event.add(`tooltip.${key}`.replace(":", "."), `§b${value}`)
+		event.add(`tooltip.${key}`.replace(":", "."), `§v${value}`)
 	}
 
 	function addAccelerateTooltipLanguage(key, value) {
-		event.add(`tooltip.${key}.accelerate`.replace(":", "."), `§b${value}`)
+		event.add(`tooltip.${key}.accelerate`.replace(":", "."), `§v${value}`)
 	}
 
 	function addJEIInfoLanguage(key, value) {
