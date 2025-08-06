@@ -1,6 +1,6 @@
 StartupEvents.registry("block", (event) => {
 	function addAloneRawMaterialBlock(name, level) {
-		let registerAloneRawMaterial =
+		let registerAloneRawMaterialBlock =
 			event.create(`${global.namespace}:raw_${name}_block`)
 				.soundType(SoundType.STONE)
 				.hardness(5)
@@ -12,7 +12,7 @@ StartupEvents.registry("block", (event) => {
 				.tag("forge:storage_blocks")
 				.tag(`forge:storage_blocks/raw_${name}`)
 
-		return registerAloneRawMaterial
+		return registerAloneRawMaterialBlock
 	}
 
 	addAloneRawMaterialBlock("vanadium", "iron")
