@@ -28,4 +28,6 @@ StartupEvents.registry("block", (event) => {
 	addDeveloperDoll("aleegos")
 	// FiberOptics
 	addDeveloperDoll("fiber_optics")
+	// Random Mechanism
+	addDeveloperDoll("random_mechanism")
 })
