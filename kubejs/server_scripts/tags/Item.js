@@ -250,6 +250,10 @@ ServerEvents.tags("item", (event) => {
 	event.get("minecraft:pickaxes")
 		.add("#forge:tools/paxels")
 
+	event.get("vintageimprovements:curving_heads")
+		.add("mekanism:pellet_plutonium")
+		.add("mekanism:pellet_antimatter")
+
 	event.get("forge:salt")
 		.add("ratatouille:salt")
 		.add("cmi:nacl")
