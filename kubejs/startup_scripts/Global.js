@@ -1,6 +1,6 @@
-// priorty: 0
+// priority: 1000
 
-// 设定全局注册物品命名空间
+// 全局注册物品命名空间
 global.namespace = "cmi"
 // Modpack版本
 global.modPackVersion = "§0CMI Beta-2.1.0"

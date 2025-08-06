@@ -46,11 +46,13 @@ StartupEvents.registry("item", (event) => {
 			}, $StorageUpgradeItem$StorageTier.DIAMOND)
 		}).tag("functionalstorage:upgrades")
 
-		JsonIO.write(`kubejs/assets/${global.namespace}/models/item/${name}_upgrade.json`, {
-			"parent": "minecraft:item/generated",
-			"textures": {
-				"layer0": `${global.namespace}:item/upgrade/${name}`
-			}
-		})
+		if (Platform.isClientEnvironment()) {
+			JsonIO.write(`kubejs/assets/${global.namespace}/models/item/${name}_upgrade.json`, {
+				"parent": "minecraft:item/generated",
+				"textures": {
+					"layer0": `${global.namespace}:item/upgrade/${name}`
+				}
+			})
+		}
 	}
 })

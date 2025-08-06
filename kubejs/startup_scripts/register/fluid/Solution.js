@@ -11,12 +11,14 @@ StartupEvents.registry("fluid", (event) => {
 			.thinTexture(color)
 			.bucketColor(color)
 
-		let file = `kubejs/assets/${global.namespace}/models/item/${name}_solution_bucket.json`
-		JsonIO.write(file, {
-			parent: "forge:item/bucket_drip",
-			loader: "forge:fluid_container",
-			fluid: id
-		})
+		if (Platform.isClientEnvironment()) {
+			let file = `kubejs/assets/${global.namespace}/models/item/${name}_solution_bucket.json`
+			JsonIO.write(file, {
+				parent: "forge:item/bucket_drip",
+				loader: "forge:fluid_container",
+				fluid: id
+			})
+		}
 
 		console.log(`${id} 注册成功`)
 	})

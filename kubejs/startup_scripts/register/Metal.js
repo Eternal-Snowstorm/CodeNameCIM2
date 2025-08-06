@@ -105,12 +105,14 @@ StartupEvents.registry("fluid", (event) => {
 					.tag("forge:molten_materials")
 					.tag(`forge:molten_${material.name}`)
 
-				let file = `kubejs/assets/${global.namespace}/models/item/molten_${material.name}_bucket.json`
-				JsonIO.write(file, {
-					"parent": "forge:item/bucket_drip",
-					"loader": "forge:fluid_container",
-					"fluid": `${global.namespace}:molten_${material.name}`
-				})
+				if (Platform.isClientEnvironment()) {
+					let file = `kubejs/assets/${global.namespace}/models/item/molten_${material.name}_bucket.json`
+					JsonIO.write(file, {
+						"parent": "forge:item/bucket_drip",
+						"loader": "forge:fluid_container",
+						"fluid": `${global.namespace}:molten_${material.name}`
+					})
+				}
 			}
 		})
 	})
