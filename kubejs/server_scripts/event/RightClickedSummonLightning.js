@@ -1,6 +1,5 @@
 BlockEvents.rightClicked((event) => {
-	let { block, player } = event
-	let { x, y, z } = block
+	let { block: { x, y, z }, player } = event
 
 	const ACCELERATOR = "cmi:the_accelerator_of_mechanism_power"
 	const MECH = "cmi:coil_mechanism"
