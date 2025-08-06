@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism, tconstruct } = event.recipes
 
 	function moltenMetalRecipeWithCondition(metal) {
-		let namespace = ["cmi", "tconstruct"]
+		let namespace = ["cmi","thermalconstruct" , "tconstruct"]
 		let fluid = ""
 
 		namespace.forEach((modid) => {
