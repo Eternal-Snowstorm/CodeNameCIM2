@@ -3,7 +3,7 @@
 // 全局注册物品命名空间
 global.namespace = "cmi"
 // Modpack版本
-global.modPackVersion = "§0CMI Beta-2.1.0 pre1"
+global.modPackVersion = "§0CMI Beta-2.1.0"
 // 桶容量
 global.BUCKET_CAPACITY = 1000
 // 扳手Tag
@@ -35,7 +35,7 @@ global.toolType = {
 	"shovel": "minecraft:mineable/shovel",
 	"hoe": "minecraft:mineable/hoe"
 }
-// 所有燃料颜色
+// 所有染料颜色
 global.dyeColorGroup = [
 	"black",
 	"blue",
