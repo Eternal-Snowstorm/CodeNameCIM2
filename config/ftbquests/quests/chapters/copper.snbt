@@ -311,6 +311,19 @@
 			x: -0.5d
 			y: -0.1071428571428541d
 		}
+		{
+			dependencies: ["535B0B3CBC4056DA"]
+			hide_dependency_lines: true
+			id: "2E504DEECA6B7DF0"
+			size: 1.5d
+			tasks: [{
+				id: "390C4AA917D6AB41"
+				item: "cmi:copper_mechanism"
+				type: "item"
+			}]
+			x: 19.809523809523796d
+			y: 1.4166666666666714d
+		}
 	]
 	title: "Copper"
 }
