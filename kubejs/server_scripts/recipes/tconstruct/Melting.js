@@ -43,4 +43,29 @@ ServerEvents.recipes((event) => {
 		.ingredient("minecraft:rotten_flesh")
 		.time(30)
 		.temperature(36)
+
+	// 焦黑熔石
+	tconstruct.melting(Fluid.of("tconstruct:seared_stone", 250))
+		.ingredient("#forge:stone")
+		.time(20 * 10)
+		.temperature(1000)
+
+	event.custom({
+		"type": "tconstruct:melting",
+		"byproducts": [
+			{
+				"amount": 125,
+				"fluid": "tconstruct:scorched_stone"
+			}
+		],
+		"ingredient": {
+			"tag": "create:stone_types/scorchia"
+		},
+		"result": {
+			"amount": 250,
+			"fluid": "tconstruct:seared_stone"
+		},
+		"temperature": 1000,
+		"time": 20 * 10
+	})
 })

@@ -1,910 +1,920 @@
 [
-	{
-		"filename": ".connector",
-		"name": ".connector"
-	},
-	{
-		"filename": "skinlayers3d-forge-1.7.5-mc1.20.1.jar",
-		"name": "3d-Skin-Layers",
-		"version": "1.7.5"
-	},
-	{
-		"filename": "ae2wtlib-15.2.3-forge.jar",
-		"name": "AE2WTLib",
-		"version": "15.2.3-forge"
-	},
-	{
-		"filename": "AEInfinityBooster-1.20.1-1.0.0+51.jar",
-		"name": "AEInfinityBooster",
-		"version": "1.20.1-1.0.0+51"
-	},
-	{
-		"filename": "ad_astra-forge-1.20.1-1.15.19.jar",
-		"name": "Ad Astra",
-		"version": "1.15.19"
-	},
-	{
-		"filename": "alltheleaks-0.1.4-beta+1.20.1-forge.jar",
-		"name": "All The Leaks",
-		"version": "0.1.4-beta+1.20.1-forge"
-	},
-	{
-		"filename": "almostunified-forge-1.20.1-0.9.5.jar",
-		"name": "AlmostUnified",
-		"version": "1.20.1-0.9.5"
-	},
-	{
-		"filename": "amendments-1.20-1.2.19.jar",
-		"name": "Amendments",
-		"version": "1.20-1.2.19"
-	},
-	{
-		"filename": "appleskin-forge-mc1.20.1-2.5.1.jar",
-		"name": "AppleSkin",
-		"version": "2.5.1+mc1.20.1"
-	},
-	{
-		"filename": "appliedenergistics2-forge-15.4.2.jar",
-		"name": "Applied Energistics 2",
-		"version": "15.4.2"
-	},
-	{
-		"filename": "Applied-Mekanistics-1.4.2.jar",
-		"name": "Applied Mekanistics",
-		"version": "1.4.2"
-	},
-	{
-		"filename": "architectury-9.2.14-forge.jar",
-		"name": "Architectury",
-		"version": "9.2.14"
-	},
-	{
-		"filename": "athena-forge-1.20.1-3.1.2.jar",
-		"name": "Athena",
-		"version": "3.1.2"
-	},
-	{
-		"filename": "balm-forge-1.20.1-7.3.29-all.jar",
-		"name": "Balm",
-		"version": "7.3.29"
-	},
-	{
-		"filename": "botarium-forge-1.20.1-2.3.4.jar",
-		"name": "Botarium",
-		"version": "2.3.4"
-	},
-	{
-		"filename": "Capsule-1.20.1-8.0.105.jar",
-		"name": "Capsule",
-		"version": "1.20.1-8.0.105"
-	},
-	{
-		"filename": "catalogue-forge-1.20.1-1.8.0.jar",
-		"name": "Catalogue",
-		"version": "1.8.0"
-	},
-	{
-		"filename": "caxton-0.6.0-alpha.5+1.20.1-FORGE.jar",
-		"name": "Caxton",
-		"version": "0.6.0-alpha.5+1.20.1-FORGE"
-	},
-	{
-		"filename": "cloth-config-11.1.136-forge.jar",
-		"name": "Cloth Config v10 API",
-		"version": "11.1.136"
-	},
-	{
-		"filename": "cofh_core-1.20.1-11.0.2.56.jar",
-		"name": "CoFH Core",
-		"version": "11.0.2"
-	},
-	{
-		"filename": "configured-forge-1.20.1-2.2.3.jar",
-		"name": "Configured",
-		"version": "2.2.3"
-	},
-	{
-		"filename": "CTM-1.20.1-1.1.10.jar",
-		"name": "ConnectedTexturesMod",
-		"version": "1.20.1-1.1.10"
-	},
-	{
-		"filename": "constructionwand-1.20.1-2.11.jar",
-		"name": "Construction Wand",
-		"version": "1.20.1-2.11"
-	},
-	{
-		"filename": "continuity-3.0.0+1.20.1.forge.jar",
-		"name": "Continuity",
-		"version": "3.0.0+1.20.1.forge"
-	},
-	{
-		"filename": "Controlling-forge-1.20.1-12.0.2.jar",
-		"name": "Controlling",
-		"version": "12.0.2"
-	},
-	{
-		"filename": "create-1.20.1-0.5.1.j.jar",
-		"name": "Create",
-		"version": "0.5.1.j"
-	},
-	{
-		"filename": "createaddition-1.20.1-1.2.5.jar",
-		"name": "Create Crafts & Additions",
-		"version": "1.20.1-1.2.5"
-	},
-	{
-		"filename": "createdeco-2.0.2-1.20.1-forge.jar",
-		"name": "Create Deco",
-		"version": "2.0.2-1.20.1-forge"
-	},
-	{
-		"filename": "createdieselgenerators-1.20.1-1.2i.jar",
-		"name": "Create Diesel Generators",
-		"version": "1.20.1-1.2i"
-	},
-	{
-		"filename": "create_enchantment_industry-1.20.1-for-create-0.5.1.f-1.2.9.d.jar",
-		"name": "Create Enchantment Industry",
-		"version": "1.2.9.d"
-	},
-	{
-		"filename": "create_jetpack-forge-4.3.2.jar",
-		"name": "Create Jetpack",
-		"version": "4.3.2"
-	},
-	{
-		"filename": "sliceanddice-forge-3.3.0.jar",
-		"name": "Create Slice & Dice",
-		"version": "3.3.0"
-	},
-	{
-		"filename": "bigcontraptions-1.0.jar",
-		"name": "Create: Big Contraptions",
-		"version": "1.0"
-	},
-	{
-		"filename": "create_central_kitchen-1.20.1-for-create-0.5.1.f-1.3.12.jar",
-		"name": "Create: Central Kitchen",
-		"version": "1.3.12"
-	},
-	{
-		"filename": "create_connected-0.9.4-mc1.20.1-all.jar",
-		"name": "Create: Connected",
-		"version": "0.9.4-mc1.20.1"
-	},
-	{
-		"filename": "copycats-2.2.0+mc.1.20.1-forge.jar",
-		"name": "Create: Copycats+",
-		"version": "2.2.0+mc.1.20.1-forge"
-	},
-	{
-		"filename": "Crystal-Clear-2.1-Beta-forge.jar",
-		"name": "Create: Crystal Clear",
-		"version": "2.1-Beta"
-	},
-	{
-		"filename": "createframed-1.20.1-1.5.6.jar",
-		"name": "Create: Framed",
-		"version": "1.5.6"
-	},
-	{
-		"filename": "create_jetpack_curios-1.2.0-forge-1.20.1.jar",
-		"name": "Create: Jetpack Curios",
-		"version": "1.2.0"
-	},
-	{
-		"filename": "CMI Core-0.1-1.20.1-all.jar",
-		"name": "Create: Mechanism and Innovation",
-		"version": "0.1"
-	},
-	{
-		"filename": "Steam_Rails-1.6.7+forge-mc1.20.1.jar",
-		"name": "Create: Steam 'n' Rails",
-		"version": "1.6.7+forge-mc1.20.1"
-	},
-	{
-		"filename": "vintageimprovements-1.20.1-0.2.0.3.jar",
-		"name": "Create: Vintage Improvements",
-		"version": "1.20.1-0.2.0.3"
-	},
-	{
-		"filename": "CreateHeatJS-1.20.1-0.0.2.jar",
-		"name": "CreateHeatJS",
-		"version": "1.20.1-0.0.2"
-	},
-	{
-		"filename": "cupboard-1.20.1-2.7.jar",
-		"name": "Cupboard utilities",
-		"version": "1.20.1-2.7"
-	},
-	{
-		"filename": "curios-forge-5.14.1+1.20.1.jar",
-		"name": "Curios API",
-		"version": "5.14.1+1.20.1"
-	},
-	{
-		"filename": "CustomMachinery-forge-1.20.1-0.10.7.jar",
-		"name": "Custom Machinery",
-		"version": "0.10.7"
-	},
-	{
-		"filename": "CustomMachineryCreate-forge-1.20.1-1.1.3.jar",
-		"name": "Custom Machinery Create",
-		"version": "1.1.3"
-	},
-	{
-		"filename": "Custom-Machinery-Mekanism-1.3.6.jar",
-		"name": "Custom Machinery Mekanism",
-		"version": "1.3.6"
-	},
-	{
-		"filename": "CustomWindowTitle-Forge-1.20+v1.2.0.jar",
-		"name": "Custom Window Title",
-		"version": "1.2.0"
-	},
-	{
-		"filename": "deepdrilling-1.1.1+forge-1.20.1-forge.jar",
-		"name": "Deep Drilling",
-		"version": "1.1.1+forge-1.20.1"
-	},
-	{
-		"filename": "Ding-1.20.1-Forge-1.5.0.jar",
-		"name": "Ding",
-		"version": "1.5.0"
-	},
-	{
-		"filename": "drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar",
-		"name": "Drippy Loading Screen",
-		"version": "3.0.12"
-	},
-	{
-		"filename": "embeddium-0.3.31+mc1.20.1.jar",
-		"name": "Embeddium",
-		"version": "0.3.31+mc1.20.1"
-	},
-	{
-		"filename": "rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar",
-		"name": "Embeddium Extra",
-		"version": "0.5.4.4+mc1.20.1-build.131"
-	},
-	{
-		"filename": "EngineeredSchematics-1.2.2.jar",
-		"name": "Engineered Schematics",
-		"version": "1.2.2"
-	},
-	{
-		"filename": "EventJS-1.20.1-1.4.1.jar",
-		"name": "EventJS",
-		"version": "1.4.1"
-	},
-	{
-		"filename": "ExtendedAE-1.20-1.4.2-forge.jar",
-		"name": "ExtendedAE",
-		"version": "1.20-1.4.2-forge"
-	},
-	{
-		"filename": "ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
-		"name": "Extreme Sound Muffler",
-		"version": "3.48"
-	},
-	{
-		"filename": "FpsReducer2-forge-1.20-2.5.jar",
-		"name": "FPS Reducer",
-		"version": "1.20-2.5"
-	},
-	{
-		"filename": "ftbbackups2-forge-1.20-1.0.23.jar",
-		"name": "FTB Backups 2",
-		"version": "1.0.23"
-	},
-	{
-		"filename": "ftb-chunks-forge-2001.3.6.jar",
-		"name": "FTB Chunks",
-		"version": "2001.3.6"
-	},
-	{
-		"filename": "ftb-library-forge-2001.2.9.jar",
-		"name": "FTB Library",
-		"version": "2001.2.9"
-	},
-	{
-		"filename": "ftb-quests-forge-2001.4.13.jar",
-		"name": "FTB Quests",
-		"version": "2001.4.13"
-	},
-	{
-		"filename": "ftb-teams-forge-2001.3.1.jar",
-		"name": "FTB Teams",
-		"version": "2001.3.1"
-	},
-	{
-		"filename": "ftb-ultimine-forge-2001.1.5.jar",
-		"name": "FTB Ultimine",
-		"version": "2001.1.5"
-	},
-	{
-		"filename": "ftb-xmod-compat-forge-2.1.3.jar",
-		"name": "FTB XMod Compat",
-		"version": "2.1.3"
-	},
-	{
-		"filename": "fancymenu_forge_3.5.2_MC_1.20.1.jar",
-		"name": "FancyMenu",
-		"version": "3.5.2"
-	},
-	{
-		"filename": "FarmersDelight-1.20.1-1.2.7.jar",
-		"name": "Farmer's Delight",
-		"version": "1.20.1-1.2.7"
-	},
-	{
-		"filename": "FastSuite-1.20.1-5.1.0.jar",
-		"name": "Fast Suite",
-		"version": "5.1.0"
-	},
-	{
-		"filename": "ferritecore-6.0.1-forge.jar",
-		"name": "Ferrite Core",
-		"version": "6.0.1"
-	},
-	{
-		"filename": "flerovium-forge-1.20.1-1.2.13-all.jar",
-		"name": "Flerovium",
-		"version": "1.2.13"
-	},
-	{
-		"filename": "fabric-api-0.92.2+1.11.12+1.20.1.jar",
-		"name": "Forgified Fabric API",
-		"version": "0.92.2+1.11.12+1.20.1"
-	},
-	{
-		"filename": "functionalstorage-1.20.1-1.2.12.jar",
-		"name": "Functional Storage",
-		"version": "1.20.1-1.2.12"
-	},
-	{
-		"filename": "fusion-1.2.7b-forge-mc1.20.1.jar",
-		"name": "Fusion",
-		"version": "1.2.7+b"
-	},
-	{
-		"filename": "geckolib-forge-1.20.1-4.7.1.2.jar",
-		"name": "GeckoLib 4",
-		"version": "4.7.1.2"
-	},
-	{
-		"filename": "GlitchCore-forge-1.20.1-0.0.1.1.jar",
-		"name": "GlitchCore",
-		"version": "0.0.1.1"
-	},
-	{
-		"filename": "Glodium-1.20-1.5-forge.jar",
-		"name": "Glodium",
-		"version": "1.20-1.5-forge"
-	},
-	{
-		"filename": "GoProne-forge-1.20.1-3.1.1.jar",
-		"name": "GoProne",
-		"version": "3.1.1"
-	},
-	{
-		"filename": "guideme-20.1.7.jar",
-		"name": "GuideME",
-		"version": "20.1.7"
-	},
-	{
-		"filename": "ImmersiveEngineering-1.20.1-10.2.0-183.jar",
-		"name": "Immersive Engineering",
-		"version": "1.20.1-10.2.0-183"
-	},
-	{
-		"filename": "ImmersiveIndustry-1.20.1-0.2.3.jar",
-		"name": "Immersive Industry",
-		"version": "1.20.1-0.2.3"
-	},
-	{
-		"filename": "invtweaks-1.20.1-1.2.1.jar",
-		"name": "Inventory Tweaks Refoxed",
-		"version": "1.2.1"
-	},
-	{
-		"filename": "item-filters-forge-2001.1.0-build.59.jar",
-		"name": "Item Filters",
-		"version": "2001.1.0-build.59"
-	},
-	{
-		"filename": "jeiintegration_1.20.1-10.0.0.jar",
-		"name": "JEI Integration",
-		"version": "10.0.0"
-	},
-	{
-		"filename": "jackseconomy-1.3.0-all.jar",
-		"name": "Jack's Economy",
-		"version": "1.3.0"
-	},
-	{
-		"filename": "Jade-1.20.1-Forge-11.12.3.jar",
-		"name": "Jade",
-		"version": "11.12.3+forge"
-	},
-	{
-		"filename": "JadeAddons-1.20.1-Forge-5.3.1.jar",
-		"name": "Jade Addons",
-		"version": "5.3.1+forge"
-	},
-	{
-		"filename": "JavaScriptJS-2001-1.0.1.jar",
-		"name": "JavaScriptJS",
-		"version": "2001-1.0.1"
-	},
-	{
-		"filename": "jecharacters-1.20.1-forge-4.5.11.jar",
-		"name": "Just Enough Characters",
-		"version": "4.5.11"
-	},
-	{
-		"filename": "jei-1.20.1-forge-15.20.0.106.jar",
-		"name": "Just Enough Items",
-		"version": "15.20.0.106"
-	},
-	{
-		"filename": "JustEnoughResources-1.20.1-1.4.0.247.jar",
-		"name": "Just Enough Resources",
-		"version": "1.4.0.247"
-	},
-	{
-		"filename": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
-		"name": "Konkrete",
-		"version": "1.8.0"
-	},
-	{
-		"filename": "kubejs-forge-2001.6.5-build.16.jar",
-		"name": "KubeJS",
-		"version": "2001.6.5-build.16"
-	},
-	{
-		"filename": "kubejsadditions-forge-4.3.4.jar",
-		"name": "KubeJS Addditions (Forge)",
-		"version": "4.3.4"
-	},
-	{
-		"filename": "kubejs-create-forge-2001.2.5-build.2.jar",
-		"name": "KubeJS Create",
-		"version": "2001.2.5-build.2"
-	},
-	{
-		"filename": "kubejs-immersive-engineering-2001.5.29-build.23.jar",
-		"name": "KubeJS Immersive Engineering",
-		"version": "2001.5.29-build.23"
-	},
-	{
-		"filename": "kubejs-mekanism-forge-2001.1.5.1-build.2.jar",
-		"name": "KubeJS Mekanism",
-		"version": "2001.1.5.1-build.2"
-	},
-	{
-		"filename": "kubejs-thermal-2001.1.10-build.2.jar",
-		"name": "KubeJS Thermal",
-		"version": "2001.1.10-build.2"
-	},
-	{
-		"filename": "lmft-1.0.4+1.20.1-forge.jar",
-		"name": "Load My F***ing Tags",
-		"version": "1.0.4+1.20.1"
-	},
-	{
-		"filename": "ldlib-forge-1.20.1-1.0.35.jar",
-		"name": "LowDragLib",
-		"version": "1.0.35"
-	},
-	{
-		"filename": "Mantle-1.20.1-1.11.61.jar",
-		"name": "Mantle",
-		"version": "1.11.61"
-	},
-	{
-		"filename": "MasterfulMachinery-3-1.20.1-0.1.13.jar",
-		"name": "Masterful Machinery",
-		"version": "3-1.20.1-0.1.13"
-	},
-	{
-		"filename": "MegaTimeStopClock-1.20.x-1.3.jar",
-		"name": "Mega TimeStop",
-		"version": "1.0.0"
-	},
-	{
-		"filename": "Mekanism-1.20.1-10.4.15.75.jar",
-		"name": "Mekanism",
-		"version": "10.4.15"
-	},
-	{
-		"filename": "MekanismAdditions-1.20.1-10.4.15.75.jar",
-		"name": "Mekanism: Additions",
-		"version": "10.4.15"
-	},
-	{
-		"filename": "MekanismGenerators-1.20.1-10.4.15.75.jar",
-		"name": "Mekanism: Generators",
-		"version": "10.4.15"
-	},
-	{
-		"filename": "MekanismTools-1.20.1-10.4.15.75.jar",
-		"name": "Mekanism: Tools",
-		"version": "10.4.15"
-	},
-	{
-		"filename": "melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
-		"name": "Melody",
-		"version": "1.0.2"
-	},
-	{
-		"filename": "modelfix-1.15.jar",
-		"name": "Model Gap Fix",
-		"version": "1.15"
-	},
-	{
-		"filename": "modernfix-forge-5.22.0+mc1.20.1.jar",
-		"name": "ModernFix",
-		"version": "5.22.0+mc1.20.1"
-	},
-	{
-		"filename": "moonlight-1.20-2.13.75-forge.jar",
-		"name": "Moonlight Library",
-		"version": "1.20-2.13.75"
-	},
-	{
-		"filename": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
-		"name": "Mouse Tweaks",
-		"version": "2.25.1"
-	},
-	{
-		"filename": "multiblocked2-1.20.1-1.0.23.jar",
-		"name": "Multiblocked2",
-		"version": "1.0.23"
-	},
-	{
-		"filename": "MyNethersDelight-1.20.1-0.1.8.jar",
-		"name": "My Nether's Delight",
-		"version": "1.20.1-1.7.5"
-	},
-	{
-		"filename": "NaturesCompass-1.20.1-1.11.2-forge.jar",
-		"name": "Nature's Compass",
-		"version": "1.20.1-1.11.2-forge"
-	},
-	{
-		"filename": "Neruina-2.1.2-forge+1.20.1.jar",
-		"name": "Neruina",
-		"version": "2.1.2"
-	},
-	{
-		"filename": "netherportalfix-forge-1.20-13.0.1.jar",
-		"name": "NetherPortalFix",
-		"version": "13.0.1"
-	},
-	{
-		"filename": "noisium-forge-2.3.0+mc1.20-1.20.1.jar",
-		"name": "Noisium",
-		"version": "2.3.0+mc1.20-1.20.1"
-	},
-	{
-		"filename": "nolijium-0.5.6.jar",
-		"name": "Nolijium",
-		"version": "0.5.6"
-	},
-	{
-		"filename": "notenoughcrashes-4.4.7+1.20.1-forge.jar",
-		"name": "Not Enough Crashes",
-		"version": "4.4.7+1.20.1"
-	},
-	{
-		"filename": "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
-		"name": "Not Enough Recipe Book",
-		"version": "0.4.1"
-	},
-	{
-		"filename": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
-		"name": "OctoLib",
-		"version": "0.5.0.1"
-	},
-	{
-		"filename": "oculus-mc1.20.1-1.8.0.jar",
-		"name": "Oculus",
-		"version": "1.8.0"
-	},
-	{
-		"filename": "oculus-flywheel-compat-forge1.20.1+1.1.4.jar",
-		"name": "Oculus Flywheel Compat",
-		"version": "1.1.4"
-	},
-	{
-		"filename": "OneEnoughItem-1.0.2.jar",
-		"name": "OneEnoughItem",
-		"version": "1.0.2"
-	},
-	{
-		"filename": "OpenLoader-Forge-1.20.1-19.0.4.jar",
-		"name": "OpenLoader",
-		"version": "19.0.4"
-	},
-	{
-		"filename": "packetfixer-forge-2.0.0-1.19-to-1.20.1.jar",
-		"name": "Packet Fixer",
-		"version": "2.0.0"
-	},
-	{
-		"filename": "Paintings-forge-1.20.1-11.0.0.2.jar",
-		"name": "Paintings ++",
-		"version": "11.0.0.2"
-	},
-	{
-		"filename": "Patchouli-1.20.1-84.1-FORGE.jar",
-		"name": "Patchouli",
-		"version": "1.20.1-84.1-FORGE"
-	},
-	{
-		"filename": "pipez-forge-1.20.1-1.2.21.jar",
-		"name": "Pipez",
-		"version": "1.20.1-1.2.21"
-	},
-	{
-		"filename": "Placebo-1.20.1-8.6.3.jar",
-		"name": "Placebo",
-		"version": "8.6.3"
-	},
-	{
-		"filename": "player-animation-lib-forge-1.0.2-rc1+1.20.jar",
-		"name": "Player Animator",
-		"version": "1.0.2-rc1+1.20"
-	},
-	{
-		"filename": "polylib-forge-2000.0.3-build.143.jar",
-		"name": "PolyLib",
-		"version": "2000.0.3-build.143"
-	},
-	{
-		"filename": "polymorph-forge-0.49.10+1.20.1.jar",
-		"name": "Polymorph",
-		"version": "0.49.10+1.20.1"
-	},
-	{
-		"filename": "polyeng-forge-0.1.1-1.20.1.jar",
-		"name": "Polymorphic Energistics",
-		"version": "0.1.1-1.20.1"
-	},
-	{
-		"filename": "ponderjs-1.20.1-1.4.0.jar",
-		"name": "PonderJS",
-		"version": "1.4.0"
-	},
-	{
-		"filename": "RePortality-1.20.1-1.0.1.jar",
-		"name": "Portality",
-		"version": "4.0.0"
-	},
-	{
-		"filename": "powerfuljs-1.6.1.jar",
-		"name": "PowerfulJS",
-		"version": "1.6.1"
-	},
-	{
-		"filename": "PresenceFootsteps-1.10.1+1.20.1.jar",
-		"name": "Presence Footsteps",
-		"version": "1.10.1+1.20.1"
-	},
-	{
-		"filename": "probejs-6.0.1-forge.jar",
-		"name": "ProbeJS",
-		"version": "6.0.1"
-	},
-	{
-		"filename": "create_ratatouille-1.20.1-1.2.jar",
-		"name": "Ratatouille",
-		"version": "1.0"
-	},
-	{
-		"filename": "rechiseled-1.1.6-forge-mc1.20.jar",
-		"name": "Rechiseled",
-		"version": "1.1.6"
-	},
-	{
-		"filename": "rechiseledae2-forge-1.20.1-1.0.0.jar",
-		"name": "Rechiseled: AE2",
-		"version": "1.0.0"
-	},
-	{
-		"filename": "rechiseledcreate-1.0.2-forge-mc1.20.jar",
-		"name": "Rechiseled: Create",
-		"version": "1.0.2"
-	},
-	{
-		"filename": "resourcefullib-forge-1.20.1-2.1.29.jar",
-		"name": "Resourceful Lib",
-		"version": "2.1.29"
-	},
-	{
-		"filename": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
-		"name": "Resourcefulconfig",
-		"version": "2.1.3"
-	},
-	{
-		"filename": "rhino-forge-2001.2.3-build.10.jar",
-		"name": "Rhino",
-		"version": "2001.2.3-build.10"
-	},
-	{
-		"filename": "RuOK-1.7.1_1.20.1-Forge.jar",
-		"name": "RuOK Mod",
-		"version": "1.7.1"
-	},
-	{
-		"filename": "scannable-MC1.20.1-forge-1.7.12+18ccb75.jar",
-		"name": "Scannable",
-		"version": "1.7.12+18ccb75"
-	},
-	{
-		"filename": "Searchables-forge-1.20.1-1.0.3.jar",
-		"name": "Searchables",
-		"version": "1.0.3"
-	},
-	{
-		"filename": "servercore-forge-1.5.2+1.20.1.jar",
-		"name": "ServerCore",
-		"version": "1.5.2+1.20.1"
-	},
-	{
-		"filename": "inventorysorter-1.20.1-23.1.9.jar",
-		"name": "Simple Inventory Sorter (Configurable)",
-		"version": "23.1.9"
-	},
-	{
-		"filename": "Connector-1.0.0-beta.46+1.20.1.jar",
-		"name": "Sinytra Connector",
-		"version": "5761411"
-	},
-	{
-		"filename": "smoothboot(reloaded)-mc1.20.1-0.0.4.jar",
-		"name": "Smooth Boot (Reloaded)",
-		"version": "0.0.4"
-	},
-	{
-		"filename": "sneaky_link-1.20.1-2.1.0.jar",
-		"name": "Sneaky Link",
-		"version": "2.1.0"
-	},
-	{
-		"filename": "sophisticatedbackpacks-1.20.1-3.23.19.1251.jar",
-		"name": "Sophisticated Backpacks",
-		"version": "3.23.19.1251"
-	},
-	{
-		"filename": "sophisticatedcore-1.20.1-1.2.69.1005.jar",
-		"name": "Sophisticated Core",
-		"version": "1.2.69.1005"
-	},
-	{
-		"filename": "structurecraft-1.0.0.jar",
-		"name": "StructureCraft",
-		"version": "1.0.0"
-	},
-	{
-		"filename": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
-		"name": "SuperMartijn642's Config Library",
-		"version": "1.1.8"
-	},
-	{
-		"filename": "supermartijn642corelib-1.1.18-forge-mc1.20.1.jar",
-		"name": "SuperMartijn642's Core Lib",
-		"version": "1.1.18"
-	},
-	{
-		"filename": "supplementaries-1.20-3.1.11.jar",
-		"name": "Supplementaries",
-		"version": "1.20-3.1.11"
-	},
-	{
-		"filename": "tconjei-1.20.1-1.4.3.jar",
-		"name": "TConJEI",
-		"version": "1.4.3"
-	},
-	{
-		"filename": "tconstruct_js-1.0.3.jar",
-		"name": "TConstruct JS",
-		"version": "1.0.3"
-	},
-	{
-		"filename": "thermalconstruct-1.20.1-0.0.1.jar",
-		"name": "Thermal Construct",
-		"version": "1.20.1-0.0.3"
-	},
-	{
-		"filename": "thermalendergy-1.20.1-1.0.0.jar",
-		"name": "Thermal Endergy",
-		"version": "1.20.1-1.0.0"
-	},
-	{
-		"filename": "thermal_expansion-1.20.1-11.0.1.29.jar",
-		"name": "Thermal Expansion",
-		"version": "11.0.1"
-	},
-	{
-		"filename": "ThermalExtra-3.2.5-1.20.1.jar",
-		"name": "Thermal Extra",
-		"version": "3.2.5-1.20.1"
-	},
-	{
-		"filename": "thermal_foundation-1.20.1-11.0.6.70.jar",
-		"name": "Thermal Foundation",
-		"version": "11.0.6"
-	},
-	{
-		"filename": "thermal_innovation-1.20.1-11.0.1.23.jar",
-		"name": "Thermal Innovation",
-		"version": "11.0.1"
-	},
-	{
-		"filename": "thermal_integration-1.20.1-11.0.1.27.jar",
-		"name": "Thermal Integration",
-		"version": "11.0.1"
-	},
-	{
-		"filename": "ticktweaks-forge-1.2.3.3.jar",
-		"name": "Tick Tweaks",
-		"version": "1.2.3.3"
-	},
-	{
-		"filename": "tinkerleveling-0.4.0.jar",
-		"name": "Tinker Leveling",
-		"version": "0.4.0"
-	},
-	{
-		"filename": "TConstruct-1.20.1-3.10.1.76.jar",
-		"name": "Tinkers' Construct",
-		"version": "3.10.1.76"
-	},
-	{
-		"filename": "titanium-1.20.1-3.8.32.jar",
-		"name": "Titanium",
-		"version": "3.8.32"
-	},
-	{
-		"filename": "vintage_kubejs-1.20.1-1.0.0rc-2.jar",
-		"name": "Vintage KubeJS",
-		"version": "1.20.1-1.0.0rc-2"
-	},
-	{
-		"filename": "WI-Zoom-1.5-MC1.20.1-Forge.jar",
-		"name": "WI Zoom",
-		"version": "1.5-MC1.20.1-Forge"
-	},
-	{
-		"filename": "Xaeros_Minimap_25.2.6_Forge_1.20.jar",
-		"name": "Xaero's Minimap",
-		"version": "25.2.6"
-	},
-	{
-		"filename": "XaerosWorldMap_1.39.9_Forge_1.20.jar",
-		"name": "Xaero's World Map",
-		"version": "1.39.9"
-	},
-	{
-		"filename": "ae2ct-1.20.1-1.0.5.jar",
-		"name": "ae2CraftingTree",
-		"version": "1.20.1-1.0.5"
-	},
-	{
-		"filename": "betterfpsdist-1.20.1-6.0.jar",
-		"name": "betterfpsdist mod",
-		"version": "1.20.1-6.0"
-	},
-	{
-		"filename": "iChunUtil-1.20.1-Forge-1.0.3.jar",
-		"name": "iChunUtil",
-		"version": "1.0.3"
-	},
-	{
-		"filename": "kotlinforforge-4.11.0-all.jar",
-		"name": "kotlinforforge-4.11.0-all"
-	}
+    {
+        "filename": ".connector",
+        "name": ".connector"
+    },
+    {
+        "filename": "skinlayers3d-forge-1.7.5-mc1.20.1.jar",
+        "name": "3d-Skin-Layers",
+        "version": "1.7.5"
+    },
+    {
+        "filename": "ae2wtlib-15.2.3-forge.jar",
+        "name": "AE2WTLib",
+        "version": "15.2.3-forge"
+    },
+    {
+        "filename": "AEInfinityBooster-1.20.1-1.0.0+51.jar",
+        "name": "AEInfinityBooster",
+        "version": "1.20.1-1.0.0+51"
+    },
+    {
+        "filename": "ad_astra-forge-1.20.1-1.15.19.jar",
+        "name": "Ad Astra",
+        "version": "1.15.19"
+    },
+    {
+        "filename": "alltheleaks-0.1.4-beta+1.20.1-forge.jar",
+        "name": "All The Leaks",
+        "version": "0.1.4-beta+1.20.1-forge"
+    },
+    {
+        "filename": "almostunified-forge-1.20.1-0.9.5.jar",
+        "name": "AlmostUnified",
+        "version": "1.20.1-0.9.5"
+    },
+    {
+        "filename": "amendments-1.20-1.2.19.jar",
+        "name": "Amendments",
+        "version": "1.20-1.2.19"
+    },
+    {
+        "filename": "appleskin-forge-mc1.20.1-2.5.1.jar",
+        "name": "AppleSkin",
+        "version": "2.5.1+mc1.20.1"
+    },
+    {
+        "filename": "appliedenergistics2-forge-15.4.2.jar",
+        "name": "Applied Energistics 2",
+        "version": "15.4.2"
+    },
+    {
+        "filename": "Applied-Mekanistics-1.4.2.jar",
+        "name": "Applied Mekanistics",
+        "version": "1.4.2"
+    },
+    {
+        "filename": "architectury-9.2.14-forge.jar",
+        "name": "Architectury",
+        "version": "9.2.14"
+    },
+    {
+        "filename": "athena-forge-1.20.1-3.1.2.jar",
+        "name": "Athena",
+        "version": "3.1.2"
+    },
+    {
+        "filename": "balm-forge-1.20.1-7.3.29-all.jar",
+        "name": "Balm",
+        "version": "7.3.29"
+    },
+    {
+        "filename": "botarium-forge-1.20.1-2.3.4.jar",
+        "name": "Botarium",
+        "version": "2.3.4"
+    },
+    {
+        "filename": "Capsule-1.20.1-8.0.105.jar",
+        "name": "Capsule",
+        "version": "1.20.1-8.0.105"
+    },
+    {
+        "filename": "catalogue-forge-1.20.1-1.8.0.jar",
+        "name": "Catalogue",
+        "version": "1.8.0"
+    },
+    {
+        "filename": "caxton-0.6.0-alpha.5+1.20.1-FORGE.jar",
+        "name": "Caxton",
+        "version": "0.6.0-alpha.5+1.20.1-FORGE"
+    },
+    {
+        "filename": "cloth-config-11.1.136-forge.jar",
+        "name": "Cloth Config v10 API",
+        "version": "11.1.136"
+    },
+    {
+        "filename": "cofh_core-1.20.1-11.0.2.56.jar",
+        "name": "CoFH Core",
+        "version": "11.0.2"
+    },
+    {
+        "filename": "collective-1.20.1-8.3.jar",
+        "name": "Collective",
+        "version": "8.3"
+    },
+    {
+        "filename": "configured-forge-1.20.1-2.2.3.jar",
+        "name": "Configured",
+        "version": "2.2.3"
+    },
+    {
+        "filename": "CTM-1.20.1-1.1.10.jar",
+        "name": "ConnectedTexturesMod",
+        "version": "1.20.1-1.1.10"
+    },
+    {
+        "filename": "constructionwand-1.20.1-2.11.jar",
+        "name": "Construction Wand",
+        "version": "1.20.1-2.11"
+    },
+    {
+        "filename": "continuity-3.0.0+1.20.1.forge.jar",
+        "name": "Continuity",
+        "version": "3.0.0+1.20.1.forge"
+    },
+    {
+        "filename": "Controlling-forge-1.20.1-12.0.2.jar",
+        "name": "Controlling",
+        "version": "12.0.2"
+    },
+    {
+        "filename": "create-1.20.1-0.5.1.j.jar",
+        "name": "Create",
+        "version": "0.5.1.j"
+    },
+    {
+        "filename": "createaddition-1.20.1-1.2.5.jar",
+        "name": "Create Crafts & Additions",
+        "version": "1.20.1-1.2.5"
+    },
+    {
+        "filename": "createdeco-2.0.2-1.20.1-forge.jar",
+        "name": "Create Deco",
+        "version": "2.0.2-1.20.1-forge"
+    },
+    {
+        "filename": "createdieselgenerators-1.20.1-1.2i.jar",
+        "name": "Create Diesel Generators",
+        "version": "1.20.1-1.2i"
+    },
+    {
+        "filename": "create_enchantment_industry-1.20.1-for-create-0.5.1.f-1.2.9.d.jar",
+        "name": "Create Enchantment Industry",
+        "version": "1.2.9.d"
+    },
+    {
+        "filename": "create_jetpack-forge-4.3.2.jar",
+        "name": "Create Jetpack",
+        "version": "4.3.2"
+    },
+    {
+        "filename": "sliceanddice-forge-3.3.0.jar",
+        "name": "Create Slice & Dice",
+        "version": "3.3.0"
+    },
+    {
+        "filename": "bigcontraptions-1.0.jar",
+        "name": "Create: Big Contraptions",
+        "version": "1.0"
+    },
+    {
+        "filename": "create_central_kitchen-1.20.1-for-create-0.5.1.f-1.3.12.jar",
+        "name": "Create: Central Kitchen",
+        "version": "1.3.12"
+    },
+    {
+        "filename": "create_connected-0.9.4-mc1.20.1-all.jar",
+        "name": "Create: Connected",
+        "version": "0.9.4-mc1.20.1"
+    },
+    {
+        "filename": "copycats-2.2.0+mc.1.20.1-forge.jar",
+        "name": "Create: Copycats+",
+        "version": "2.2.0+mc.1.20.1-forge"
+    },
+    {
+        "filename": "Crystal-Clear-2.1-Beta-forge.jar",
+        "name": "Create: Crystal Clear",
+        "version": "2.1-Beta"
+    },
+    {
+        "filename": "createframed-1.20.1-1.5.6.jar",
+        "name": "Create: Framed",
+        "version": "1.5.6"
+    },
+    {
+        "filename": "create_jetpack_curios-1.2.0-forge-1.20.1.jar",
+        "name": "Create: Jetpack Curios",
+        "version": "1.2.0"
+    },
+    {
+        "filename": "CMI Core-0.1-1.20.1-all.jar",
+        "name": "Create: Mechanism and Innovation",
+        "version": "0.1"
+    },
+    {
+        "filename": "Steam_Rails-1.6.7+forge-mc1.20.1.jar",
+        "name": "Create: Steam 'n' Rails",
+        "version": "1.6.7+forge-mc1.20.1"
+    },
+    {
+        "filename": "vintageimprovements-1.20.1-0.2.0.3.jar",
+        "name": "Create: Vintage Improvements",
+        "version": "1.20.1-0.2.0.3"
+    },
+    {
+        "filename": "CreateHeatJS-1.20.1-0.0.2.jar",
+        "name": "CreateHeatJS",
+        "version": "1.20.1-0.0.2"
+    },
+    {
+        "filename": "cupboard-1.20.1-2.7.jar",
+        "name": "Cupboard utilities",
+        "version": "1.20.1-2.7"
+    },
+    {
+        "filename": "curios-forge-5.14.1+1.20.1.jar",
+        "name": "Curios API",
+        "version": "5.14.1+1.20.1"
+    },
+    {
+        "filename": "CustomMachinery-forge-1.20.1-0.10.7.jar",
+        "name": "Custom Machinery",
+        "version": "0.10.7"
+    },
+    {
+        "filename": "CustomMachineryCreate-forge-1.20.1-1.1.3.jar",
+        "name": "Custom Machinery Create",
+        "version": "1.1.3"
+    },
+    {
+        "filename": "Custom-Machinery-Mekanism-1.3.6.jar",
+        "name": "Custom Machinery Mekanism",
+        "version": "1.3.6"
+    },
+    {
+        "filename": "CustomWindowTitle-Forge-1.20+v1.2.0.jar",
+        "name": "Custom Window Title",
+        "version": "1.2.0"
+    },
+    {
+        "filename": "deepdrilling-1.1.1+forge-1.20.1-forge.jar",
+        "name": "Deep Drilling",
+        "version": "1.1.1+forge-1.20.1"
+    },
+    {
+        "filename": "Ding-1.20.1-Forge-1.5.0.jar",
+        "name": "Ding",
+        "version": "1.5.0"
+    },
+    {
+        "filename": "drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar",
+        "name": "Drippy Loading Screen",
+        "version": "3.0.12"
+    },
+    {
+        "filename": "embeddium-0.3.31+mc1.20.1.jar",
+        "name": "Embeddium",
+        "version": "0.3.31+mc1.20.1"
+    },
+    {
+        "filename": "rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar",
+        "name": "Embeddium Extra",
+        "version": "0.5.4.4+mc1.20.1-build.131"
+    },
+    {
+        "filename": "EngineeredSchematics-1.2.2.jar",
+        "name": "Engineered Schematics",
+        "version": "1.2.2"
+    },
+    {
+        "filename": "EventJS-1.20.1-1.4.1.jar",
+        "name": "EventJS",
+        "version": "1.4.1"
+    },
+    {
+        "filename": "ExtendedAE-1.20-1.4.2-forge.jar",
+        "name": "ExtendedAE",
+        "version": "1.20-1.4.2-forge"
+    },
+    {
+        "filename": "ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
+        "name": "Extreme Sound Muffler",
+        "version": "3.48"
+    },
+    {
+        "filename": "FpsReducer2-forge-1.20-2.5.jar",
+        "name": "FPS Reducer",
+        "version": "1.20-2.5"
+    },
+    {
+        "filename": "ftbbackups2-forge-1.20-1.0.23.jar",
+        "name": "FTB Backups 2",
+        "version": "1.0.23"
+    },
+    {
+        "filename": "ftb-chunks-forge-2001.3.6.jar",
+        "name": "FTB Chunks",
+        "version": "2001.3.6"
+    },
+    {
+        "filename": "ftb-library-forge-2001.2.9.jar",
+        "name": "FTB Library",
+        "version": "2001.2.9"
+    },
+    {
+        "filename": "ftb-quests-forge-2001.4.13.jar",
+        "name": "FTB Quests",
+        "version": "2001.4.13"
+    },
+    {
+        "filename": "ftb-teams-forge-2001.3.1.jar",
+        "name": "FTB Teams",
+        "version": "2001.3.1"
+    },
+    {
+        "filename": "ftb-ultimine-forge-2001.1.5.jar",
+        "name": "FTB Ultimine",
+        "version": "2001.1.5"
+    },
+    {
+        "filename": "ftb-xmod-compat-forge-2.1.3.jar",
+        "name": "FTB XMod Compat",
+        "version": "2.1.3"
+    },
+    {
+        "filename": "fancymenu_forge_3.5.2_MC_1.20.1.jar",
+        "name": "FancyMenu",
+        "version": "3.5.2"
+    },
+    {
+        "filename": "FarmersDelight-1.20.1-1.2.7.jar",
+        "name": "Farmer's Delight",
+        "version": "1.20.1-1.2.7"
+    },
+    {
+        "filename": "FastSuite-1.20.1-5.1.0.jar",
+        "name": "Fast Suite",
+        "version": "5.1.0"
+    },
+    {
+        "filename": "ferritecore-6.0.1-forge.jar",
+        "name": "Ferrite Core",
+        "version": "6.0.1"
+    },
+    {
+        "filename": "flerovium-forge-1.20.1-1.2.13-all.jar",
+        "name": "Flerovium",
+        "version": "1.2.13"
+    },
+    {
+        "filename": "fabric-api-0.92.2+1.11.12+1.20.1.jar",
+        "name": "Forgified Fabric API",
+        "version": "0.92.2+1.11.12+1.20.1"
+    },
+    {
+        "filename": "functionalstorage-1.20.1-1.2.12.jar",
+        "name": "Functional Storage",
+        "version": "1.20.1-1.2.12"
+    },
+    {
+        "filename": "fusion-1.2.7b-forge-mc1.20.1.jar",
+        "name": "Fusion",
+        "version": "1.2.7+b"
+    },
+    {
+        "filename": "geckolib-forge-1.20.1-4.7.1.2.jar",
+        "name": "GeckoLib 4",
+        "version": "4.7.1.2"
+    },
+    {
+        "filename": "GlitchCore-forge-1.20.1-0.0.1.1.jar",
+        "name": "GlitchCore",
+        "version": "0.0.1.1"
+    },
+    {
+        "filename": "Glodium-1.20-1.5-forge.jar",
+        "name": "Glodium",
+        "version": "1.20-1.5-forge"
+    },
+    {
+        "filename": "GoProne-forge-1.20.1-3.1.1.jar",
+        "name": "GoProne",
+        "version": "3.1.1"
+    },
+    {
+        "filename": "guideme-20.1.7.jar",
+        "name": "GuideME",
+        "version": "20.1.7"
+    },
+    {
+        "filename": "ImmersiveEngineering-1.20.1-10.2.0-183.jar",
+        "name": "Immersive Engineering",
+        "version": "1.20.1-10.2.0-183"
+    },
+    {
+        "filename": "ImmersiveIndustry-1.20.1-0.2.3.jar",
+        "name": "Immersive Industry",
+        "version": "1.20.1-0.2.3"
+    },
+    {
+        "filename": "item-filters-forge-2001.1.0-build.59.jar",
+        "name": "Item Filters",
+        "version": "2001.1.0-build.59"
+    },
+    {
+        "filename": "jeiintegration_1.20.1-10.0.0.jar",
+        "name": "JEI Integration",
+        "version": "10.0.0"
+    },
+    {
+        "filename": "jackseconomy-1.3.0-all.jar",
+        "name": "Jack's Economy",
+        "version": "1.3.0"
+    },
+    {
+        "filename": "Jade-1.20.1-Forge-11.12.3.jar",
+        "name": "Jade",
+        "version": "11.12.3+forge"
+    },
+    {
+        "filename": "JadeAddons-1.20.1-Forge-5.3.1.jar",
+        "name": "Jade Addons",
+        "version": "5.3.1+forge"
+    },
+    {
+        "filename": "JavaScriptJS-2001-1.0.1.jar",
+        "name": "JavaScriptJS",
+        "version": "2001-1.0.1"
+    },
+    {
+        "filename": "jecharacters-1.20.1-forge-4.5.11.jar",
+        "name": "Just Enough Characters",
+        "version": "4.5.11"
+    },
+    {
+        "filename": "jei-1.20.1-forge-15.20.0.106.jar",
+        "name": "Just Enough Items",
+        "version": "15.20.0.106"
+    },
+    {
+        "filename": "JustEnoughResources-1.20.1-1.4.0.247.jar",
+        "name": "Just Enough Resources",
+        "version": "1.4.0.247"
+    },
+    {
+        "filename": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+        "name": "Konkrete",
+        "version": "1.8.0"
+    },
+    {
+        "filename": "kubejs-forge-2001.6.5-build.16.jar",
+        "name": "KubeJS",
+        "version": "2001.6.5-build.16"
+    },
+    {
+        "filename": "kubejsadditions-forge-4.3.4.jar",
+        "name": "KubeJS Addditions (Forge)",
+        "version": "4.3.4"
+    },
+    {
+        "filename": "kubejs-create-forge-2001.2.5-build.2.jar",
+        "name": "KubeJS Create",
+        "version": "2001.2.5-build.2"
+    },
+    {
+        "filename": "kubejs-immersive-engineering-2001.5.29-build.23.jar",
+        "name": "KubeJS Immersive Engineering",
+        "version": "2001.5.29-build.23"
+    },
+    {
+        "filename": "kubejs-mekanism-forge-2001.1.5.1-build.2.jar",
+        "name": "KubeJS Mekanism",
+        "version": "2001.1.5.1-build.2"
+    },
+    {
+        "filename": "kubejs-thermal-2001.1.10-build.2.jar",
+        "name": "KubeJS Thermal",
+        "version": "2001.1.10-build.2"
+    },
+    {
+        "filename": "lmft-1.0.4+1.20.1-forge.jar",
+        "name": "Load My F***ing Tags",
+        "version": "1.0.4+1.20.1"
+    },
+    {
+        "filename": "ldlib-forge-1.20.1-1.0.35.jar",
+        "name": "LowDragLib",
+        "version": "1.0.35"
+    },
+    {
+        "filename": "Mantle-1.20.1-1.11.61.jar",
+        "name": "Mantle",
+        "version": "1.11.61"
+    },
+    {
+        "filename": "MasterfulMachinery-3-1.20.1-0.1.13.jar",
+        "name": "Masterful Machinery",
+        "version": "3-1.20.1-0.1.13"
+    },
+    {
+        "filename": "MegaTimeStopClock-1.20.x-1.3.jar",
+        "name": "Mega TimeStop",
+        "version": "1.0.0"
+    },
+    {
+        "filename": "Mekanism-1.20.1-10.4.15.75.jar",
+        "name": "Mekanism",
+        "version": "10.4.15"
+    },
+    {
+        "filename": "MekanismAdditions-1.20.1-10.4.15.75.jar",
+        "name": "Mekanism: Additions",
+        "version": "10.4.15"
+    },
+    {
+        "filename": "MekanismGenerators-1.20.1-10.4.15.75.jar",
+        "name": "Mekanism: Generators",
+        "version": "10.4.15"
+    },
+    {
+        "filename": "MekanismTools-1.20.1-10.4.15.75.jar",
+        "name": "Mekanism: Tools",
+        "version": "10.4.15"
+    },
+    {
+        "filename": "melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+        "name": "Melody",
+        "version": "1.0.2"
+    },
+    {
+        "filename": "modelfix-1.15.jar",
+        "name": "Model Gap Fix",
+        "version": "1.15"
+    },
+    {
+        "filename": "modernfix-forge-5.22.0+mc1.20.1.jar",
+        "name": "ModernFix",
+        "version": "5.22.0+mc1.20.1"
+    },
+    {
+        "filename": "moonlight-1.20-2.13.75-forge.jar",
+        "name": "Moonlight Library",
+        "version": "1.20-2.13.75"
+    },
+    {
+        "filename": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+        "name": "Mouse Tweaks",
+        "version": "2.25.1"
+    },
+    {
+        "filename": "multiblocked2-1.20.1-1.0.23.jar",
+        "name": "Multiblocked2",
+        "version": "1.0.23"
+    },
+    {
+        "filename": "MyNethersDelight-1.20.1-0.1.8.jar",
+        "name": "My Nether's Delight",
+        "version": "1.20.1-1.7.5"
+    },
+    {
+        "filename": "NaturesCompass-1.20.1-1.11.2-forge.jar",
+        "name": "Nature's Compass",
+        "version": "1.20.1-1.11.2-forge"
+    },
+    {
+        "filename": "Neruina-2.1.2-forge+1.20.1.jar",
+        "name": "Neruina",
+        "version": "2.1.2"
+    },
+    {
+        "filename": "netherportalfix-forge-1.20-13.0.1.jar",
+        "name": "NetherPortalFix",
+        "version": "13.0.1"
+    },
+    {
+        "filename": "noisium-forge-2.3.0+mc1.20-1.20.1.jar",
+        "name": "Noisium",
+        "version": "2.3.0+mc1.20-1.20.1"
+    },
+    {
+        "filename": "nolijium-0.5.6.jar",
+        "name": "Nolijium",
+        "version": "0.5.6"
+    },
+    {
+        "filename": "notenoughcrashes-4.4.7+1.20.1-forge.jar",
+        "name": "Not Enough Crashes",
+        "version": "4.4.7+1.20.1"
+    },
+    {
+        "filename": "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
+        "name": "Not Enough Recipe Book",
+        "version": "0.4.1"
+    },
+    {
+        "filename": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+        "name": "OctoLib",
+        "version": "0.5.0.1"
+    },
+    {
+        "filename": "oculus-mc1.20.1-1.8.0.jar",
+        "name": "Oculus",
+        "version": "1.8.0"
+    },
+    {
+        "filename": "oculus-flywheel-compat-forge1.20.1+1.1.4.jar",
+        "name": "Oculus Flywheel Compat",
+        "version": "1.1.4"
+    },
+    {
+        "filename": "OneEnoughItem-1.0.2.jar",
+        "name": "OneEnoughItem",
+        "version": "1.0.2"
+    },
+    {
+        "filename": "OpenLoader-Forge-1.20.1-19.0.4.jar",
+        "name": "OpenLoader",
+        "version": "19.0.4"
+    },
+    {
+        "filename": "packetfixer-forge-2.0.0-1.19-to-1.20.1.jar",
+        "name": "Packet Fixer",
+        "version": "2.0.0"
+    },
+    {
+        "filename": "Paintings-forge-1.20.1-11.0.0.2.jar",
+        "name": "Paintings ++",
+        "version": "11.0.0.2"
+    },
+    {
+        "filename": "Patchouli-1.20.1-84.1-FORGE.jar",
+        "name": "Patchouli",
+        "version": "1.20.1-84.1-FORGE"
+    },
+    {
+        "filename": "pipez-forge-1.20.1-1.2.21.jar",
+        "name": "Pipez",
+        "version": "1.20.1-1.2.21"
+    },
+    {
+        "filename": "Placebo-1.20.1-8.6.3.jar",
+        "name": "Placebo",
+        "version": "8.6.3"
+    },
+    {
+        "filename": "player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+        "name": "Player Animator",
+        "version": "1.0.2-rc1+1.20"
+    },
+    {
+        "filename": "polylib-forge-2000.0.3-build.143.jar",
+        "name": "PolyLib",
+        "version": "2000.0.3-build.143"
+    },
+    {
+        "filename": "polymorph-forge-0.49.10+1.20.1.jar",
+        "name": "Polymorph",
+        "version": "0.49.10+1.20.1"
+    },
+    {
+        "filename": "polyeng-forge-0.1.1-1.20.1.jar",
+        "name": "Polymorphic Energistics",
+        "version": "0.1.1-1.20.1"
+    },
+    {
+        "filename": "ponderjs-1.20.1-1.4.0.jar",
+        "name": "PonderJS",
+        "version": "1.4.0"
+    },
+    {
+        "filename": "RePortality-1.20.1-1.0.1.jar",
+        "name": "Portality",
+        "version": "4.0.0"
+    },
+    {
+        "filename": "powerfuljs-1.6.1.jar",
+        "name": "PowerfulJS",
+        "version": "1.6.1"
+    },
+    {
+        "filename": "PresenceFootsteps-1.10.1+1.20.1.jar",
+        "name": "Presence Footsteps",
+        "version": "1.10.1+1.20.1"
+    },
+    {
+        "filename": "probejs-6.0.1-forge.jar",
+        "name": "ProbeJS",
+        "version": "6.0.1"
+    },
+    {
+        "filename": "create_ratatouille-1.20.1-1.2.jar",
+        "name": "Ratatouille",
+        "version": "1.0"
+    },
+    {
+        "filename": "rechiseled-1.1.6-forge-mc1.20.jar",
+        "name": "Rechiseled",
+        "version": "1.1.6"
+    },
+    {
+        "filename": "rechiseledae2-forge-1.20.1-1.0.0.jar",
+        "name": "Rechiseled: AE2",
+        "version": "1.0.0"
+    },
+    {
+        "filename": "rechiseledcreate-1.0.2-forge-mc1.20.jar",
+        "name": "Rechiseled: Create",
+        "version": "1.0.2"
+    },
+    {
+        "filename": "resourcefullib-forge-1.20.1-2.1.29.jar",
+        "name": "Resourceful Lib",
+        "version": "2.1.29"
+    },
+    {
+        "filename": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
+        "name": "Resourcefulconfig",
+        "version": "2.1.3"
+    },
+    {
+        "filename": "rhino-forge-2001.2.3-build.10.jar",
+        "name": "Rhino",
+        "version": "2001.2.3-build.10"
+    },
+    {
+        "filename": "RuOK-1.7.1_1.20.1-Forge.jar",
+        "name": "RuOK Mod",
+        "version": "1.7.1"
+    },
+    {
+        "filename": "scannable-MC1.20.1-forge-1.7.12+18ccb75.jar",
+        "name": "Scannable",
+        "version": "1.7.12+18ccb75"
+    },
+    {
+        "filename": "Searchables-forge-1.20.1-1.0.3.jar",
+        "name": "Searchables",
+        "version": "1.0.3"
+    },
+    {
+        "filename": "servercore-forge-1.5.2+1.20.1.jar",
+        "name": "ServerCore",
+        "version": "1.5.2+1.20.1"
+    },
+    {
+        "filename": "inventorysorter-1.20.1-23.1.9.jar",
+        "name": "Simple Inventory Sorter (Configurable)",
+        "version": "23.1.9"
+    },
+    {
+        "filename": "Connector-1.0.0-beta.46+1.20.1.jar",
+        "name": "Sinytra Connector",
+        "version": "5761411"
+    },
+    {
+        "filename": "smoothboot(reloaded)-mc1.20.1-0.0.4.jar",
+        "name": "Smooth Boot (Reloaded)",
+        "version": "0.0.4"
+    },
+    {
+        "filename": "sneaky_link-1.20.1-2.1.0.jar",
+        "name": "Sneaky Link",
+        "version": "2.1.0"
+    },
+    {
+        "filename": "sophisticatedbackpacks-1.20.1-3.23.19.1251.jar",
+        "name": "Sophisticated Backpacks",
+        "version": "3.23.19.1251"
+    },
+    {
+        "filename": "sophisticatedcore-1.20.1-1.2.69.1005.jar",
+        "name": "Sophisticated Core",
+        "version": "1.2.69.1005"
+    },
+    {
+        "filename": "starterstructure-1.20.1-4.2.jar",
+        "name": "Starter Structure",
+        "version": "4.2"
+    },
+    {
+        "filename": "structurecraft-1.0.0.jar",
+        "name": "StructureCraft",
+        "version": "1.0.0"
+    },
+    {
+        "filename": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
+        "name": "SuperMartijn642's Config Library",
+        "version": "1.1.8"
+    },
+    {
+        "filename": "supermartijn642corelib-1.1.18-forge-mc1.20.1.jar",
+        "name": "SuperMartijn642's Core Lib",
+        "version": "1.1.18"
+    },
+    {
+        "filename": "supplementaries-1.20-3.1.11.jar",
+        "name": "Supplementaries",
+        "version": "1.20-3.1.11"
+    },
+    {
+        "filename": "tconjei-1.20.1-1.4.3.jar",
+        "name": "TConJEI",
+        "version": "1.4.3"
+    },
+    {
+        "filename": "tconstruct_js-1.0.3.jar",
+        "name": "TConstruct JS",
+        "version": "1.0.3"
+    },
+    {
+        "filename": "thermalconstruct-1.20.1-0.0.1.jar",
+        "name": "Thermal Construct",
+        "version": "1.20.1-0.0.3"
+    },
+    {
+        "filename": "thermalendergy-1.20.1-1.0.0.jar",
+        "name": "Thermal Endergy",
+        "version": "1.20.1-1.0.0"
+    },
+    {
+        "filename": "thermal_expansion-1.20.1-11.0.1.29.jar",
+        "name": "Thermal Expansion",
+        "version": "11.0.1"
+    },
+    {
+        "filename": "ThermalExtra-3.2.5-1.20.1.jar",
+        "name": "Thermal Extra",
+        "version": "3.2.5-1.20.1"
+    },
+    {
+        "filename": "thermal_foundation-1.20.1-11.0.6.70.jar",
+        "name": "Thermal Foundation",
+        "version": "11.0.6"
+    },
+    {
+        "filename": "thermal_innovation-1.20.1-11.0.1.23.jar",
+        "name": "Thermal Innovation",
+        "version": "11.0.1"
+    },
+    {
+        "filename": "thermal_integration-1.20.1-11.0.1.27.jar",
+        "name": "Thermal Integration",
+        "version": "11.0.1"
+    },
+    {
+        "filename": "ticktweaks-forge-1.2.3.3.jar",
+        "name": "Tick Tweaks",
+        "version": "1.2.3.3"
+    },
+    {
+        "filename": "tinkerleveling-0.4.0.jar",
+        "name": "Tinker Leveling",
+        "version": "0.4.0"
+    },
+    {
+        "filename": "TConstruct-1.20.1-3.10.1.76.jar",
+        "name": "Tinkers' Construct",
+        "version": "3.10.1.76"
+    },
+    {
+        "filename": "titanium-1.20.1-3.8.32.jar",
+        "name": "Titanium",
+        "version": "3.8.32"
+    },
+    {
+        "filename": "vintage_kubejs-1.20.1-1.0.0rc-2.jar",
+        "name": "Vintage KubeJS",
+        "version": "1.20.1-1.0.0rc-2"
+    },
+    {
+        "filename": "WI-Zoom-1.5-MC1.20.1-Forge.jar",
+        "name": "WI Zoom",
+        "version": "1.5-MC1.20.1-Forge"
+    },
+    {
+        "filename": "Xaeros_Minimap_25.2.6_Forge_1.20.jar",
+        "name": "Xaero's Minimap",
+        "version": "25.2.6"
+    },
+    {
+        "filename": "XaerosWorldMap_1.39.9_Forge_1.20.jar",
+        "name": "Xaero's World Map",
+        "version": "1.39.9"
+    },
+    {
+        "filename": "ae2ct-1.20.1-1.0.5.jar",
+        "name": "ae2CraftingTree",
+        "version": "1.20.1-1.0.5"
+    },
+    {
+        "filename": "betterfpsdist-1.20.1-6.0.jar",
+        "name": "betterfpsdist mod",
+        "version": "1.20.1-6.0"
+    },
+    {
+        "filename": "hotai-1.0.jar",
+        "name": "hotai",
+        "version": "1.0"
+    },
+    {
+        "filename": "iChunUtil-1.20.1-Forge-1.0.3.jar",
+        "name": "iChunUtil",
+        "version": "1.0.3"
+    },
+    {
+        "filename": "kotlinforforge-4.11.0-all.jar",
+        "name": "kotlinforforge-4.11.0-all"
+    }
 ]
