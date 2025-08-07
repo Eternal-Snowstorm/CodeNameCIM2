@@ -15,4 +15,5 @@ JEIEvents.information((event) => {
 	addJEIInfo("mm:large_steam_boiler")
 	addJEIInfo("cmi:wooden_faucet")
 	addJEIInfo("#cmi:liquid_output")
+	addJEIInfo("#cmi:peat_gen")
 })

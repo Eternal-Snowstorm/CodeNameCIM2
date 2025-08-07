@@ -35,6 +35,11 @@ ServerEvents.tags("item", (event) => {
 		.add("deepdrilling:sludge_pump")
 		.add("deepdrilling:sludge_bucket")
 
+	// 泥炭生成
+	event.get(`${global.namespace}:peat_gen`)
+		.add("cmi:peat_block")
+		.add("cmi:peat")
+
 	// 特殊矿石
 	event.get(`${global.namespace}:special_ores`)
 		.add("#forge:raw_materials/galena")
