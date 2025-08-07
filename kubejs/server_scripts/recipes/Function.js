@@ -1,10 +1,15 @@
+function getFirstItemId(ingredient) {
+	return Ingredient.of(ingredient).getItemIds()[0]
+}
+
 function aeCharger(output, input) {
 	const INPUT = Ingredient.of(input).toJson()
+
 	return {
 		"type": "ae2:charger",
 		"ingredient": INPUT,
 		"result": {
-			"item": output
+			"item": getFirstItemId(output)
 		}
 	}
 }
