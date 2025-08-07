@@ -39,6 +39,7 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:blastfurnace/steel",
 		"immersiveengineering:arcfurnace/steel",
 		"create:crushing/netherrack",
+		"vintageimprovements:craft/vanadium_ingot_to_nuggets",
 		"create:crushing/obsidian",
 		"createdieselgenerators:crafting/large_diesel_engine",
 		"createdieselgenerators:crafting/diesel_engine",
