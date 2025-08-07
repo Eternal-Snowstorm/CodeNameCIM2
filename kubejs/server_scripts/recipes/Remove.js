@@ -49,7 +49,8 @@ ServerEvents.recipes((event) => {
 		"mekanism:processing/lategame/antimatter/from_pellet",
 		"mekanism:processing/lategame/antimatter_pellet/from_gas",
 		"tconstruct:common/basalt_blast_furnace",
-		"tconstruct:common/glass/vanilla/daylight_detector"
+		"tconstruct:common/glass/vanilla/daylight_detector",
+		"create:crafting/palettes/scorchia"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
