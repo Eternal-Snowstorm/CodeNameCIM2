@@ -58,6 +58,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("mekanism_processor", "通用处理器")
 
 	addCastItemLanguage("mechanism", "构件")
+	addCastItemLanguage("nugget", "粒")
 
 	addFluidLanguage("steam", "蒸汽")
 	addFluidLanguage("blood", "血液")
@@ -190,6 +191,14 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("bronze_casing", "青铜外壳")
 	addBlockLanguage("pressure_resistance_casing", "耐压外壳")
 	addBlockLanguage("peat_block", "泥炭块")
+
+	addBlockLanguage("unknown_entity_", "Unknown_Entity_")
+	addBlockLanguage("aleegos", "阿列戈斯")
+	addBlockLanguage("qi_month", "柒月")
+	addBlockLanguage("vechni_metel", "逐日炎雪_中微子")
+	addBlockLanguage("fiber_optics", "FiberOptics")
+	addBlockLanguage("random_mechanism", "随机构件")
+	addBlockLanguage("dropper_qwq", "⑨Dropper_QWQ⑨")
 
 	for (let i = 1; i <= 14; i++) {
 		addPaintingLanguage(`rr${i}`, `Aleegos(${i})`, "Aleegos Reality Redemption")
@@ -354,6 +363,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_cast`, `${value}金质铸模`)
 		event.add(`item.${global.namespace}.${key}_sand_cast`, `${value}沙子铸模`)
 		event.add(`item.${global.namespace}.${key}_red_sand_cast`, `${value}红沙铸模`)
+		event.add(`item.${global.namespace}.chilling_${key}_cast`, `${value}青铜质铸模`)
 	}
 
 	function addMechanismLanguage(material, value) {
