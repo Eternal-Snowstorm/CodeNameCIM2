@@ -18,7 +18,7 @@ StartupEvents.registry("block", (event) => {
 	}
 	// Developer
 	// UE
-	addDeveloperDoll("unknown_entity_")                                                                                                                                                                                                                          
+	addDeveloperDoll("unknown_entity_")
 	// 柒月
 	addDeveloperDoll("qi_month")
 	// 中微子
@@ -33,7 +33,7 @@ StartupEvents.registry("block", (event) => {
 	addDeveloperDoll("sakura_star_cn")
 	// Dropper
 	addDeveloperDoll("dropper_qwq")
-	//燕栖
+	// 燕栖
 	addDeveloperDoll("ye_anqing")
 
 	// Other
