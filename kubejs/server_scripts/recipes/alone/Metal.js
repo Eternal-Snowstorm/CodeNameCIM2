@@ -30,6 +30,10 @@ ServerEvents.recipes((event) => {
 			.fluid(Fluid.of(fluid, 90))
 			.cooling_time(60)
 			.cast_consumed(true)
+		thermal.chiller(`#forge:ingots/${metal}`, [
+			Fluid.of(fluid, 90),
+			"thermal:chiller_ingot_cast"
+		]).energy(4800)
 
 		if (!(Ingredient.of(`#forge:nuggets/${metal}`).itemIds.length === 0)) {
 			tconstruct.melting(Fluid.of(fluid, 10))
@@ -45,6 +49,10 @@ ServerEvents.recipes((event) => {
 				.fluid(Fluid.of(fluid, 10))
 				.cooling_time(20)
 				.cast_consumed(true)
+			thermal.chiller(`#forge:plates/${metal}`, [
+				Fluid.of(fluid, 10),
+				"cmi:chiller_nugget_cast"
+			]).energy(600)
 		} else {
 			console.warn(`No nugget found for ${metal}!`)
 		}
@@ -75,6 +83,10 @@ ServerEvents.recipes((event) => {
 				.fluid(Fluid.of(fluid, 90))
 				.cooling_time(60)
 				.cast_consumed(true)
+			thermal.chiller(`#forge:plates/${metal}`, [
+				Fluid.of(fluid, 90),
+				"thermal_extra:chiller_plate_cast"
+			]).energy(4800)
 		} else {
 			console.warn(`No plate found for ${metal}!`)
 		}
@@ -102,6 +114,10 @@ ServerEvents.recipes((event) => {
 				.fluid(Fluid.of(fluid, 45))
 				.cooling_time(30)
 				.cast_consumed(true)
+			thermal.chiller(`#forge:rods/${metal}`, [
+				Fluid.of(fluid, 45),
+				"thermal:chiller_rod_cast"
+			]).energy(2400)
 		} else {
 			console.warn(`No rod found for ${metal}!`)
 		}
@@ -120,8 +136,34 @@ ServerEvents.recipes((event) => {
 				.fluid(Fluid.of(fluid, 360))
 				.cooling_time(150)
 				.cast_consumed(true)
+			thermal.chiller(`#forge:gears/${metal}`, [
+				Fluid.of(fluid, 360),
+				"thermalconstruct:chiller_gear_cast"
+			]).energy(9600)
 		} else {
 			console.warn(`No gear found for ${metal}!`)
+		}
+
+		if (!(Ingredient.of(`#forge:coins/${metal}`).itemIds.length === 0)) {
+			tconstruct.melting(Fluid.of(fluid, 30))
+				.ingredient(`#forge:coins/${metal}`)
+				.temperature(TEMPERATURE)
+				.time(30)
+			tconstruct.casting_table(`#forge:coins/${metal}`)
+				.cast("#tconstruct:casts/multi_use/coin")
+				.fluid(Fluid.of(fluid, 30))
+				.cooling_time(30)
+			tconstruct.casting_table(`#forge:coins/${metal}`)
+				.cast("#tconstruct:casts/single_use/coin")
+				.fluid(Fluid.of(fluid, 30))
+				.cooling_time(30)
+				.cast_consumed(true)
+			thermal.chiller(`#forge:coins/${metal}`, [
+				Fluid.of(fluid, 30),
+				"thermalconstruct:chiller_coin_cast"
+			]).energy(1600)
+		} else {
+			console.warn(`No coins found for ${metal}!`)
 		}
 
 		if (!(Ingredient.of(`#forge:raw_materials/${metal}`).itemIds.length === 0)) {
@@ -383,6 +425,25 @@ ServerEvents.recipes((event) => {
 				.mold("immersiveengineering:mold_gear")
 		} else {
 			console.warn(`No gear found for ${metal}!`)
+		}
+
+		if (!(Ingredient.of(`#forge:coins/${metal}`).itemIds.length === 0)) {
+			thermal.press(`3x #forge:coins/${metal}`, [
+				`#forge:ingots/${metal}`,
+				"thermal:press_coin_die"
+			])
+			if (!(Ingredient.of(`#forge:nuggets/${metal}`).itemIds.length === 0)) {
+				thermal.press(`#forge:coins/${metal}`, [
+					`3x #forge:nuggets/${metal}`,
+					"thermal:press_coin_die"
+				]).energy(800)
+				thermal.smelter(`3x #forge:nuggets/${metal}`, `#forge:coins/${metal}`)
+				.energy(800)
+			} else {
+				console.warn(`No nuggets found for ${metal}!`)
+			}
+		} else {
+			console.warn(`No coin found for ${metal}!`)
 		}
 
 		moltenMetalRecipeWithCondition(metal)
