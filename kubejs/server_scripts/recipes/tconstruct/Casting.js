@@ -56,5 +56,4 @@ ServerEvents.recipes((event) => {
 		.cast("tconstruct:ingot_red_sand_cast")
 		.cooling_time(40)
 		.cast_consumed(true)
-
 })

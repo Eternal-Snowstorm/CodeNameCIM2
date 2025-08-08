@@ -7,12 +7,14 @@ let $Item$Properties =
 
 StartupEvents.registry("item", (event) => {
 	const ITEM_BUILD = new $Item$Properties()
+	.stacksTo(1)
 	const PAXEL = $ToolDefinition.create(`${global.namespace}:paxel`)
 
 	event.createCustom(`${global.namespace}:paxel`, () => {
-		return new $ModifiableItem(ITEM_BUILD.stacksTo(1), PAXEL)
+		return new $ModifiableItem(ITEM_BUILD, PAXEL)
 	})
 		.tag("forge:tools")
+		.tag("minecraft:tools")
 		.tag("minecraft:pickaxes")
 		.tag("minecraft:axes")
 		.tag("minecraft:shovels")
@@ -23,4 +25,8 @@ StartupEvents.registry("item", (event) => {
 		.tag("tconstruct:modifiable/melee")
 		.tag("tconstruct:modifiable/held")
 		.tag("tconstruct:modifiable/harvest")
+		.tag("tconstruct:modifiable/harvest/primary")
+		.tag("tconstruct:modifiable/harvest/stone")
+		.tag("tconstruct:modifiable/interactable")
+		.tag("tconstruct:modifiable/interactable/right")
 })
