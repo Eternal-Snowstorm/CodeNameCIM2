@@ -60,6 +60,12 @@ XaeroWaypoints*
 /kubejs/probe/*
 !/kubejs/probe/docs/
 
+# Saves
+/saves/*
+!/saves/Debug
+!/saves/QBWT
+!/saves/Quest_Background
+
 # Config
 /config/*
 !/config/openloader

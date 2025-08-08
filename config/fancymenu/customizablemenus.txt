@@ -75,3 +75,6 @@ net.minecraft.client.gui.screens.worldselection.EditWorldScreen {
 net.minecraft.client.gui.screens.achievement.StatsScreen {
 }
 
+net.minecraft.client.gui.screens.LevelLoadingScreen {
+}
+

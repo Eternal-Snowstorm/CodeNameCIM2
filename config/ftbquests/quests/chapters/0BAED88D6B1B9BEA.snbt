@@ -1,0 +1,123 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0BAED88D6B1B9BEA"
+	group: ""
+	icon: "cmi:the_accelerator_of_mechanism_power"
+	id: "0BAED88D6B1B9BEA"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0B59D5F53D1C0BF9"
+				"38C5C045A5973110"
+				"12A9FFA4DE81B09D"
+				"7D7B3E610E3DBBEC"
+				"5C9DFE5BC4B726E8"
+				"0731BF74784DBDAB"
+				"01EB60D8BA557D6A"
+				"2F87AB1BE47D5754"
+			]
+			id: "31160500429DCF29"
+			size: 2.5d
+			subtitle: "造矿时间到！"
+			tasks: [{
+				id: "3F82E5BA2034F940"
+				item: "cmi:the_accelerator_of_mechanism_power"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F1185F495038BB3"]
+			id: "5C9DFE5BC4B726E8"
+			tasks: [{
+				id: "0A46A80462C2799E"
+				item: "cmi:wooden_mechanism"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5080AD4A92076C63"]
+			id: "7D7B3E610E3DBBEC"
+			tasks: [{
+				id: "12FE5647D8451060"
+				item: "cmi:stone_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["20308A3CE26E5D67"]
+			id: "0B59D5F53D1C0BF9"
+			tasks: [{
+				id: "243C96F7A8605B21"
+				item: "cmi:andesite_mechanism"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09892B803004AA1D"]
+			id: "38C5C045A5973110"
+			tasks: [{
+				id: "3A6DF73B3889B44D"
+				item: "cmi:iron_mechanism"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["42EB8C8A978CA905"]
+			id: "0731BF74784DBDAB"
+			tasks: [{
+				id: "4E89755E1895AD27"
+				item: "cmi:copper_mechanism"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C4294A9CDAF3C23"]
+			id: "12A9FFA4DE81B09D"
+			tasks: [{
+				id: "1A8B361A7209EE14"
+				item: "cmi:gold_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["47574C3F29B28A25"]
+			id: "2F87AB1BE47D5754"
+			tasks: [{
+				id: "5BA15DC137CCF180"
+				item: "cmi:photosensitive_mechanism"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["42EB8C8A978CA905"]
+			id: "01EB60D8BA557D6A"
+			tasks: [{
+				id: "79A3FE7D9BAAF95D"
+				item: "cmi:nature_mechanism"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+	title: "中场休息"
+}

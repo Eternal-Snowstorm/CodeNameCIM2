@@ -4,12 +4,12 @@ layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = false
   last_edited_time = 1751278639344
-  is_enabled = false
+  is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:c7757a34-6a6d-4737-8656-dc611213efea-1753773854371] = [groups:][instances:]
+  [loading_requirement_container_meta:36657a45-8faa-4c1b-9e4a-155e2b1eac90-1754638429509] = [groups:][instances:]
 }
 
 menu_background {

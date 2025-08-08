@@ -13,7 +13,7 @@
 		x: 1.5d
 		y: -10.0d
 	}]
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -132,11 +132,6 @@
 				}
 			]
 			tasks: [
-				{
-					id: "0AEA63CD739ED93A"
-					item: "tconstruct:crafting_station"
-					type: "item"
-				}
 				{
 					id: "51B80491226B5764"
 					item: "tconstruct:part_builder"
@@ -942,6 +937,10 @@
 				id: "052C57F8E9C85D61"
 				type: "xp"
 				xp: 10
+			}]
+			tasks: [{
+				id: "3200120229402FD2"
+				type: "checkmark"
 			}]
 			title: "铲子"
 			x: 7.5d
