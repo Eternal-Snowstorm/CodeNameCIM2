@@ -58,6 +58,12 @@ ServerEvents.tags("item", (event) => {
 		.add("#forge:tools/knives")
 		.add("tconstruct:dagger")
 
+	event.get("minecraft:pickaxes")
+		.add("#forge:tools/paxels")
+
+	event.get("minecraft:hoes")
+		.add("tconstruct:mattock")
+
 	event.get("forge:tools/knives")
 		.add("tconstruct:dagger")
 
@@ -257,9 +263,6 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:plates/hdpe")
 		.add("mekanism:hdpe_sheet")
 
-	event.get("minecraft:pickaxes")
-		.add("#forge:tools/paxels")
-
 	event.get("vintageimprovements:curving_heads")
 		.add("mekanism:pellet_plutonium")
 		.add("mekanism:pellet_antimatter")
@@ -272,12 +275,12 @@ ServerEvents.tags("item", (event) => {
 		.add("thermal:chiller_ingot_cast")
 		.add("thermal_extra:chiller_plate_cast")
 		.add("thermal:chiller_rod_cast")
-	
+
 	event.get("tconstruct:casts/multi_use")
 		.add("thermal:chiller_ingot_cast")
 		.add("thermal_extra:chiller_plate_cast")
 		.add("thermal:chiller_rod_cast")
-	
+
 	event.get("tconstruct:casts/multi_use/ingot")
 		.add("thermal:chiller_ingot_cast")
 

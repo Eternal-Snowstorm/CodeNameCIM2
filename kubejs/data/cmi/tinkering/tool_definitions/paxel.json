@@ -43,7 +43,7 @@
 			"type": "tconstruct:multiply_stats",
 			"multipliers": {
 				"tconstruct:durability": 1.25,
-				"tconstruct:mining_speed": 0.8
+				"tconstruct:mining_speed": 1.0
 			}
 		},
 		{
