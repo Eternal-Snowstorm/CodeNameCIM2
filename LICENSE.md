@@ -61,7 +61,7 @@
 * **We**
   **Refers to the development team of "CMI".**
 
-* **This Product**
+* **This Product** 
   **Refers to the modpack developed by us.**
 
 * **These Terms**

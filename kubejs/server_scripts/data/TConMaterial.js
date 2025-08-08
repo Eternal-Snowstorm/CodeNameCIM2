@@ -46,7 +46,7 @@ ServerEvents.highPriorityData((event) => {
 			.grip(0.2, -0.1, 3.2)
 			.setTraits((builder) => {
 				builder.addTrait("tconstruct:melee_harvest", "tconstruct:luck", 1)
-				builder.addTrait("tconstruct:ranged", "tconstruct:crystalshot", 1)
+					.addTrait("tconstruct:ranged", "tconstruct:crystalshot", 1)
 			})
 			.addMaterialRecipes("minecraft:amethyst_block", (builder) => {
 				builder.needed(1)
@@ -74,8 +74,8 @@ ServerEvents.highPriorityData((event) => {
 			.platingShield(1.0, 1.0, 1.0, 1.0)
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:stonebound", 1)
-				builder.addTrait("tconstruct:melee_harvest", "tconstruct:reach", 1)
-				builder.addTrait("tconstruct:armor", "tconstruct:melee_protection", 1)
+					.addTrait("tconstruct:melee_harvest", "tconstruct:reach", 1)
+					.addTrait("tconstruct:armor", "tconstruct:melee_protection", 1)
 			})
 			.addMaterialRecipes("create:andesite_alloy_block", (builder) => {
 				builder.needed(1)
@@ -107,8 +107,8 @@ ServerEvents.highPriorityData((event) => {
 			.platingShield(1.5, 1.3, 1.2, 1.0)
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:harmonious", 1)
-				builder.addTrait("tconstruct:melee_harvest", "tconstruct:expanded", 1)
-				builder.addTrait("tconstruct:ranged", "tconstruct:multishot", 1)
+					.addTrait("tconstruct:melee_harvest", "tconstruct:expanded", 1)
+					.addTrait("tconstruct:ranged", "tconstruct:multishot", 1)
 			})
 			.addMaterialFluidRecipes("tconstruct:molten_brass", (builder) => {
 				builder.amount(90)
