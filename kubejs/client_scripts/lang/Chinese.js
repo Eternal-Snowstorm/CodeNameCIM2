@@ -42,6 +42,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("andesite_alloy_noodle", "安山合金刀削面")
 	addItemLanguage("peat", "泥炭")
 	addItemLanguage("paxel", "镐尖斧")
+	addItemLanguage("rubber_tree_bark", "橡胶树皮")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")
@@ -237,6 +238,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("#cmi:multiblock_machine_controller", "制作多方块接口时不消耗")
 	addCommonTooltipLanguage("cmi:stone_plate", "把字刻在石头上")
 
+	addJEIInfoLanguage("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量职务胶乳")
 	addJEIInfoLanguage("mm:large_steam_boiler", "需要燃烧焦煤才能释放足够的热能来产生蒸汽\n不同于远在泛银河系的格雷科技有限公司, 我们的锅炉非常非常安全, 永远不会爆炸(笑)")
 	addJEIInfoLanguage("cmi:andesite_alloy_noodle", `"意大利面就应该拌42号混凝土. 因为这个螺丝钉的长度, 它很容易会直接影响到挖掘机的扭距, 你往里砸的时候, 一瞬间它就会产生大量的高能蛋白, 俗称UFO. 会严重影响经济的发展. 照你这么说, 炸鸡块要用92#汽油, 毕竟我们无法用光学透镜探测苏格拉底, 如果二氧化氢持续侵蚀这个机床组件, 那么我们早晚要在斐波那契曲线上安装一个胶原蛋白, 否则我们将无法改变蜜雪冰城与阿尔别克的叠加状态, 因为众所周知爱吃鸡摩人在捕鲲的时候往往需要用氢的同位素当做诱饵, 但是原子弹的新鲜程度又会直接影响到我国东南部的季风和洋流, 所以说在西伯利亚地区开设农学院显然是不合理的. \n我知道你一定会反驳我, 告诉我农业的底层思维是什么, 就是不用化肥农药和种子, 还包括生命之源氮气, 使甲烷分子直接转化成能够捕获放射性元素释放的β射线的单质, 并且使伽马射线在常温下就能用老虎钳折弯成78°, 否则在用望远镜观察细胞结构时, 根本发现不了时空重叠时到底要叠几层才能使潼关肉夹馍更酥脆的原因. "`)
 	addJEIInfoLanguage("minecraft:andesite", `在本包, 安山岩生产主要方式有5种\n一种是通过造石机\n一种是通过安山岩磨成粉后加工的增值线\n一种是刷石机, 有25%的概率可以刷出安山岩\n一种是前往"安山岩洞窟"群系, 这是一个全是安山岩的洞窟\n最后一种是通过构件催生器`)
@@ -442,11 +444,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 
 	function addCommonTooltipLanguage(key, value) {
-		event.add(`tooltip.${key}`.replace(":", "."), `§v${value}`)
+		event.add(`tooltip.${key}`.replace(":", "."), `§b${value}`)
 	}
 
 	function addAccelerateTooltipLanguage(key, value) {
-		event.add(`tooltip.${key}.accelerate`.replace(":", "."), `§v${value}`)
+		event.add(`tooltip.${key}.accelerate`.replace(":", "."), `§b${value}`)
 	}
 
 	function addJEIInfoLanguage(key, value) {

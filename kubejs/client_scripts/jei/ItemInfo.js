@@ -16,4 +16,5 @@ JEIEvents.information((event) => {
 	addJEIInfo("cmi:wooden_faucet")
 	addJEIInfo("#cmi:liquid_output")
 	addJEIInfo("#cmi:peat_gen")
+	addJEIInfo("thermal:rubber")
 })
