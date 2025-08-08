@@ -4,8 +4,8 @@ ServerEvents.recipes((event) => {
 	create.milling("mekanism:dust_coal", [
 		"minecraft:coal"
 	])
-	create.milling('thermal_extra:amethyst_dust', [
-		'minecraft:amethyst_shard'
+	create.milling("thermal_extra:amethyst_dust", [
+		"minecraft:amethyst_shard"
 	])
 
 	create.milling("9x mekanism:dust_coal", [

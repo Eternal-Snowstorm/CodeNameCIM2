@@ -142,7 +142,7 @@ ItemEvents.rightClicked("cmi:copper_mechanism", event => {
 		// 设定生成的实体运动方向与速度
 		spawnbottle.setMotion(vector.x, vector.y, vector.z)
 		// 设定生成的实体NBT（这里为设定对应的物品为喷践型水瓶）
-		spawnbottle.item = Item.of("minecraft:splash_potion", "{Potion:'minecraft:water'}")
+		spawnbottle.item = Item.of("minecraft:splash_potion", "{Potion:"minecraft:water"}")
 		// 给玩家播放投掷水瓶的声音
 		event.getPlayer().playNotifySound("minecraft:entity.arrow.shoot", "voice", 0.5, 0.3)
 		// 生成水瓶
