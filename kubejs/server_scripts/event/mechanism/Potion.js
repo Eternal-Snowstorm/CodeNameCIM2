@@ -1,4 +1,4 @@
-ItemEvents.rightClicked('cmi:potion_mechanism', (event) => {
+ItemEvents.rightClicked("cmi:potion_mechanism", (event) => {
 	let { player } = event
 	let potion = [
 		"saturation",

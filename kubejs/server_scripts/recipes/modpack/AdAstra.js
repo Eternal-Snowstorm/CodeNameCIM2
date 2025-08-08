@@ -242,7 +242,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:rods/steel",
 		B: "cmi:tier_1_aviation_mechanism",
 		C:"vintageimprovements:laser",
-		D:'cmi:computer_component',
+		D:"cmi:computer_component",
 		E: "#forge:storage_blocks/steel"
 	}).id("ad_astra:nasa_workbench")
 })

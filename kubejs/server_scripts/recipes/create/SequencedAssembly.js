@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 		Item.of("cmi:computer_component"),
 	], "#forge:plates/silver", [
 		create.deploying("cmi:incomplete_computer_component", ["cmi:incomplete_computer_component", "cmi:mekanism_processor"]),
-		create.deploying("cmi:incomplete_computer_component", ["cmi:incomplete_computer_component", '#ae2:glass_cable']),
-		create.deploying("cmi:incomplete_computer_component", ["cmi:incomplete_computer_component", '#ae2:illuminated_panel']),
+		create.deploying("cmi:incomplete_computer_component", ["cmi:incomplete_computer_component", "#ae2:glass_cable"]),
+		create.deploying("cmi:incomplete_computer_component", ["cmi:incomplete_computer_component", "#ae2:illuminated_panel"]),
 	]).transitionalItem("cmi:incomplete_computer_component").loops(1)
 })
