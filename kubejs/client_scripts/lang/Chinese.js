@@ -363,7 +363,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_cast`, `${value}金质铸模`)
 		event.add(`item.${global.namespace}.${key}_sand_cast`, `${value}沙子铸模`)
 		event.add(`item.${global.namespace}.${key}_red_sand_cast`, `${value}红沙铸模`)
-		event.add(`item.${global.namespace}.chilling_${key}_cast`, `${value}青铜质铸模`)
+		event.add(`item.${global.namespace}.bronze_${key}_cast`, `${value}青铜质铸模`)
 	}
 
 	function addMechanismLanguage(material, value) {

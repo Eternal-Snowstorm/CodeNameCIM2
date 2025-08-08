@@ -27,7 +27,7 @@ StartupEvents.registry("item", (event) => {
 	casts.forEach((cast) => {
 		cast.types.forEach((type) => {
 			if (type === "bronze") {
-				event.create(`${global.namespace}:chilling_${cast.name}_cast`)
+				event.create(`${global.namespace}:bronze_${cast.name}_cast`)
 					.texture(`${global.namespace}:item/cast/${cast.name}/bronze`)
 					.tag("tconstruct:casts")
 					.tag("tconstruct:casts/multi_use")
