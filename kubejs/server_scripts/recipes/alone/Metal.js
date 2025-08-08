@@ -177,7 +177,7 @@ ServerEvents.recipes((event) => {
 					"amount": 90,
 					"tag": `forge:molten_${metal}`
 				},
-				"temperature": 1000,
+				"temperature": TEMPERATURE,
 				"time": 90
 			})
 		} else {
@@ -195,7 +195,7 @@ ServerEvents.recipes((event) => {
 					"amount": 810,
 					"tag": `forge:molten_${metal}`
 				},
-				"temperature": 1000,
+				"temperature": TEMPERATURE,
 				"time": 360
 			})
 		} else {
@@ -213,7 +213,7 @@ ServerEvents.recipes((event) => {
 					"amount": 180,
 					"tag": `forge:molten_${metal}`
 				},
-				"temperature": 1000,
+				"temperature": TEMPERATURE,
 				"time": 150
 			})
 		} else {

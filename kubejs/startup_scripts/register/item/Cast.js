@@ -48,15 +48,6 @@ StartupEvents.registry("item", (event) => {
 					.tag("tconstruct:casts/single_use")
 					.tag(`tconstruct:casts/single_use/${cast.name}`)
 			}
-			/* 暂时没有作用
-			else {
-				event.create(`${global.namespace}:${cast.name}_${cast.type}_cast`)
-					.texture(`${global.namespace}:item/cast/${cast.name}/${cast.type}`)
-					.tag("tconstruct:casts")
-					.tag(`tconstruct:casts/${cast.type}`)
-					.tag("tconstruct:casts/multi_use")
-					.tag(`tconstruct:casts/multi_use/${cast.name}`)
-			}*/
 		})
 	})
 })

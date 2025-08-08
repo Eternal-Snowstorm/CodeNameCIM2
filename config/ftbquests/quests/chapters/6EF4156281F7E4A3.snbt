@@ -1,0 +1,266 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6EF4156281F7E4A3"
+	group: ""
+	icon: "minecraft:iron_ingot"
+	id: "6EF4156281F7E4A3"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["749E2F97A546138F"]
+			icon: "tconstruct:seared_melter"
+			id: "3DEE902840C6F8F2"
+			tasks: [{
+				id: "179EE80D200C5639"
+				type: "checkmark"
+			}]
+			title: "焦黑熔化炉"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "42952FF47036885B"
+			tasks: [{
+				id: "377938F2C7588945"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "325D8F9EC9B394E0"
+			tasks: [{
+				id: "024472856A8ABB2F"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "062D1D3B790AEA4B"
+			tasks: [{
+				id: "3AA93C391B15B7B5"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "2B656B7972166C08"
+			tasks: [{
+				id: "2AC5650047B24463"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			id: "625CB03D1FD2BE10"
+			tasks: [{
+				id: "320842B4A23B7532"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			id: "3EE4995C51E88CF8"
+			tasks: [{
+				id: "6553799D3914BC6C"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			id: "0167CF802B8C41BD"
+			tasks: [{
+				id: "70C82BD420F24FFF"
+				item: "thermal:constantan_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			id: "0799AA1823240100"
+			tasks: [{
+				id: "7FF8B31B7D63157F"
+				item: "thermal:electrum_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			id: "3F4BF299239521B5"
+			subtitle: "你会需要他们的"
+			tasks: [
+				{
+					id: "44320669FD6E2F02"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:tinkers_anvil"
+						}
+					}
+					title: "任意工匠砧"
+					type: "item"
+				}
+				{
+					id: "26657802A90AF54B"
+					item: "tconstruct:cast_chest"
+					type: "item"
+				}
+				{
+					id: "4B8D311B1DC6B7E9"
+					item: "tconstruct:modifier_worktable"
+					type: "item"
+				}
+			]
+			title: "匠魂套装"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			description: ["将砖泥放在熔化炉里熔化并在浇注盆中浇注来获得焦黑石，可以获得两倍的焦黑砖块"]
+			id: "43DC2A81B21001BE"
+			tasks: [{
+				id: "5180FEE802F23728"
+				item: "tconstruct:seared_stone"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "096A858F0A541622"
+			tasks: [{
+				id: "568616009EA6F8EA"
+				item: "thermal:lead_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "173CB12BC24ED51E"
+			tasks: [{
+				id: "7FBE80D4DA9AE40A"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "7069140A63443E0C"
+			tasks: [{
+				id: "50134A608F26DE7C"
+				item: "thermal:silver_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "4B55A849175426D6"
+			tasks: [{
+				id: "01BB7DB0E4C1C72B"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "672000398C6707CC"
+			tasks: [{
+				id: "14DBDCB0B9968062"
+				item: "thermal:tin_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "6B954B39F0C22CEC"
+			tasks: [{
+				id: "3A28E5B190524FBF"
+				item: "thermal:nickel_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			id: "639730C022541AB8"
+			tasks: [{
+				id: "685EAD255636E70F"
+				item: "tconstruct:amethyst_bronze_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			id: "3F0C4A0AD97615EE"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "1248BF2B77F58994"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F0C4A0AD97615EE"]
+			id: "2F14AA034A31D85F"
+			tasks: [{
+				id: "3323E4AE656E6B6A"
+				item: "vintageimprovements:vanadium_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F0C4A0AD97615EE"]
+			id: "4E766E7176D4C7C9"
+			tasks: [{
+				id: "351173DA9686D1F2"
+				item: "tconstruct:cobalt_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+	]
+	title: "直入主题"
+}
