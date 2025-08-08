@@ -12,7 +12,9 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.remove("#create:incomplete_mechanisms")
 	event.remove(`#${global.namespace}:mechanism_parts`)
 	event.remove(`#${global.namespace}:mechanism_flash_drives`)
-	event.remove("#tconstruct:casts")
+	event.remove("#tconstruct:casts/multi_use/mechanism")
+	event.remove("#tconstruct:casts/single_use/mechanism")
+	event.remove("#tconstruct:casts/multi_use/nugget")
 	event.remove(`#${global.namespace}:metals`)
 	event.remove(`#${global.namespace}:ores`)
 	event.remove(`#${global.namespace}:raw_metals`)
@@ -42,6 +44,13 @@ StartupEvents.modifyCreativeTab("tconstruct:smeltery", (event) => {
 		"cmi:mechanism_cast",
 		"cmi:mechanism_sand_cast",
 		"cmi:mechanism_red_sand_cast"
+	])
+})
+
+StartupEvents.modifyCreativeTab("thermalconstruct:thermal_construct_tab", (event) => {
+	event.add([
+		"cmi:bronze_mechanism_cast",
+		"cmi:bronze_nugget_cast"
 	])
 })
 

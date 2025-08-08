@@ -51,7 +51,7 @@ ServerEvents.recipes((event) => {
 				.cast_consumed(true)
 			thermal.chiller(`#forge:plates/${metal}`, [
 				Fluid.of(fluid, 10),
-				"cmi:chiller_nugget_cast"
+				"cmi:bronze_nugget_cast"
 			]).energy(600)
 		} else {
 			console.warn(`No nugget found for ${metal}!`)
