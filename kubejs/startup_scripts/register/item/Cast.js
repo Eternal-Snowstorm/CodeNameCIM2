@@ -41,10 +41,10 @@ StartupEvents.registry("item", (event) => {
 					.tag("tconstruct:casts/multi_use")
 					.tag(`tconstruct:casts/multi_use/${cast.name}`)
 			} else if (type === "sand" || type === "red_sand") {
-				event.create(`${global.namespace}:${cast.name}_${cast.type}_cast`)
-					.texture(`${global.namespace}:item/cast/${cast.name}/${cast.type}`)
+				event.create(`${global.namespace}:${cast.name}_${type}_cast`)
+					.texture(`${global.namespace}:item/cast/${cast.name}/${type}`)
 					.tag("tconstruct:casts")
-					.tag(`tconstruct:casts/${cast.type}`)
+					.tag(`tconstruct:casts/${type}`)
 					.tag("tconstruct:casts/single_use")
 					.tag(`tconstruct:casts/single_use/${cast.name}`)
 			}
