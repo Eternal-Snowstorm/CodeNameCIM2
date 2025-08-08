@@ -219,6 +219,9 @@ ServerEvents.recipes((event) => {
 				type: "thermal:press",
 				output: `#forge:gears/${metal}`
 			}, {
+				type: "thermal:press",
+				output: `#forge:coins/${metal}`
+			}, {
 				type: "minecraft:crafting_shaped",
 				output: `#forge:gears/${metal}`
 			}, {
@@ -333,6 +336,24 @@ ServerEvents.recipes((event) => {
 			}, {
 				type: "tconstruct:casting_table",
 				output: `#forge:gears/${metal}`
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:coins/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:plates/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:rods/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:gears/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:coins/${metal}`
 			}
 		])
 	})

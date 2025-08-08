@@ -264,6 +264,29 @@ ServerEvents.tags("item", (event) => {
 		.add("mekanism:pellet_plutonium")
 		.add("mekanism:pellet_antimatter")
 
+	event.get("thermal:crafting/casts")
+		.add("thermalconstruct:chiller_gear_cast")
+		.add("thermalconstruct:chiller_coin_cast")
+
+	event.get("tconstruct:casts")
+		.add("thermal:chiller_ingot_cast")
+		.add("thermal_extra:chiller_plate_cast")
+		.add("thermal:chiller_rod_cast")
+	
+	event.get("tconstruct:casts/multi_use")
+		.add("thermal:chiller_ingot_cast")
+		.add("thermal_extra:chiller_plate_cast")
+		.add("thermal:chiller_rod_cast")
+	
+	event.get("tconstruct:casts/multi_use/ingot")
+		.add("thermal:chiller_ingot_cast")
+
+	event.get("tconstruct:casts/multi_use/plate")
+		.add("thermal_extra:chiller_plate_cast")
+
+	event.get("tconstruct:casts/multi_use/rod")
+		.add("thermal:chiller_rod_cast")
+
 	event.get("forge:salt")
 		.add("ratatouille:salt")
 		.add("cmi:nacl")
