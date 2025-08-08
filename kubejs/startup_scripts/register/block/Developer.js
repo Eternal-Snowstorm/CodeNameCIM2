@@ -16,6 +16,7 @@ StartupEvents.registry("block", (event) => {
 
 		return registerDeveloperDoll
 	}
+	// Developer
 	// UE
 	addDeveloperDoll("unknown_entity_")                                                                                                                                                                                                                          
 	// 柒月
@@ -24,10 +25,22 @@ StartupEvents.registry("block", (event) => {
 	addDeveloperDoll("vechni_metel")
 	// 1174
 	addDeveloperDoll("117458866249")
-	// Aleegos
-	addDeveloperDoll("aleegos")
 	// FiberOptics
 	addDeveloperDoll("fiber_optics")
 	// Random Mechanism
 	addDeveloperDoll("random_mechanism")
+	// MF
+	addDeveloperDoll("sakura_star_cn")
+	// Dropper
+	addDeveloperDoll("dropper_qwq")
+	//燕栖
+	addDeveloperDoll("ye_anqing")
+
+	// Other
+	// Aleegos
+	addDeveloperDoll("aleegos")
+	// shi_xiao_bai_na
+	addDeveloperDoll("shi_xiao_bai_na")
+	// hanhan
+	addDeveloperDoll("hanhan_ovo")
 })
