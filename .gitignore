@@ -3,9 +3,9 @@
 /.vscode/
 /backups/
 /caxton*
-/CMI_alpha_dev_vers-natives/
-/CMI_alpha_dev_vers.jar
-/CMI_alpha_dev_vers.json
+/.idea
+/CMI_*.jar
+/CMI_*.json
 /crash-reports/
 /defaultconfigs/
 /hmclversion.cfg
@@ -56,7 +56,7 @@ XaeroWaypoints*
 # ShaderPacks
 /shaderpacks/*
 
-# Docs
+# Probe Docs
 /kubejs/probe/*
 !/kubejs/probe/docs/
 

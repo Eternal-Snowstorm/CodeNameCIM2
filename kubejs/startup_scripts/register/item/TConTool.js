@@ -4,14 +4,16 @@ let $ModifiableItem =
 	Java.loadClass("slimeknights.tconstruct.library.tools.item.ModifiableItem")
 let $Item$Properties =
 	Java.loadClass("net.minecraft.world.item.Item$Properties")
+let $TinkerTags$Items =
+	Java.loadClass("slimeknights.tconstruct.common.TinkerTags$Items")
 
 StartupEvents.registry("item", (event) => {
-	const ITEM_BUILD = new $Item$Properties()
-	.stacksTo(1)
+	const ITEM_PRO = new $Item$Properties()
+		.stacksTo(1)
 	const PAXEL = $ToolDefinition.create(`${global.namespace}:paxel`)
 
 	event.createCustom(`${global.namespace}:paxel`, () => {
-		return new $ModifiableItem(ITEM_BUILD, PAXEL)
+		return new $ModifiableItem(ITEM_PRO, PAXEL)
 	})
 		.tag("forge:tools")
 		.tag("minecraft:tools")
