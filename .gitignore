@@ -63,8 +63,8 @@ XaeroWaypoints*
 # Saves
 /saves/*
 !/saves/Debug
-!/saves/QBWT
-!/saves/Quest_Background
+!/saves/QBWT*
+!/saves/Quest_Background*
 
 # Config
 /config/*
