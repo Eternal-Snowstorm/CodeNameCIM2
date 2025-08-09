@@ -34,7 +34,8 @@
 		"forge:rods/{material}",
 		"forge:wires/{material}",
 		"forge:storage_blocks/{material}",
-		"forge:storage_blocks/raw_{material}"
+		"forge:storage_blocks/raw_{material}",
+		"forge:coal_coke"
 	],
 	"materials": [
 		"andesite_alloy",
