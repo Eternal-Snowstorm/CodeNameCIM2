@@ -15,12 +15,12 @@ StartupEvents.registry("item", (event) => {
 	function addTConTool(name, tool) {
 		return event.createCustom(name, () => {
 			return new $ModifiableItem(ITEM_PRO, tool)
+				.tag("forge:tools")
+				.tag("minecraft:tools")
 		})
 	}
 
 	addTConTool("paxel", PAXEL)
-		.tag("forge:tools")
-		.tag("minecraft:tools")
 		.tag("minecraft:pickaxes")
 		.tag("minecraft:axes")
 		.tag("minecraft:shovels")
