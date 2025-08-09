@@ -8,25 +8,12 @@ let $TinkerTags$Items =
 	Java.loadClass("slimeknights.tconstruct.common.TinkerTags$Items")
 
 StartupEvents.registry("item", (event) => {
-	/*
-	 * 封装TinkerItemTags
-	 * 只有在.toString()后才能被.tag()识别并调用
-	*/
-	let TinkerItemTags = {}
-	Object.keys($TinkerTags$Items)
-		.forEach((key) => {
-			let value = $TinkerTags$Items[key]
-			if (value && typeof value.location === "function") {
-				TinkerItemTags[key] = value.location().toString()
-			}
-		})
-
 	/**
 	 * 按理说这里其实不需要返回也可以
 	 * 但是我习惯了(😋)
 	 * @param {String} name 注册名称
 	 * @returns 注册匠魂工具类型
-	 */
+	*/
 	function addTConToolType(name) {
 		return $ToolDefinition.create(`${global.namespace}:${name}`)
 	}
@@ -47,15 +34,16 @@ StartupEvents.registry("item", (event) => {
 		.tag("minecraft:pickaxes")
 		.tag("minecraft:axes")
 		.tag("minecraft:shovels")
-		.tag(TinkerItemTags.MODIFIABLE)
-		.tag(TinkerItemTags.MULTIPART_TOOL)
-		.tag(TinkerItemTags.DURABILITY)
-		.tag(TinkerItemTags.SMALL_TOOLS)
-		.tag(TinkerItemTags.MELEE)
-		.tag(TinkerItemTags.HELD)
-		.tag(TinkerItemTags.HARVEST)
-		.tag(TinkerItemTags.HARVEST_PRIMARY)
-		.tag(TinkerItemTags.STONE_HARVEST)
-		.tag(TinkerItemTags.INTERACTABLE)
-		.tag(TinkerItemTags.INTERACTABLE_RIGHT)
+		.tag(TinkerTags.MODIFIABLE)
+		.tag(TinkerTags.MODIFIABLE)
+		.tag(TinkerTags.MULTIPART_TOOL)
+		.tag(TinkerTags.DURABILITY)
+		.tag(TinkerTags.SMALL_TOOLS)
+		.tag(TinkerTags.MELEE)
+		.tag(TinkerTags.HELD)
+		.tag(TinkerTags.HARVEST)
+		.tag(TinkerTags.HARVEST_PRIMARY)
+		.tag(TinkerTags.STONE_HARVEST)
+		.tag(TinkerTags.INTERACTABLE)
+		.tag(TinkerTags.INTERACTABLE_RIGHT)
 })
