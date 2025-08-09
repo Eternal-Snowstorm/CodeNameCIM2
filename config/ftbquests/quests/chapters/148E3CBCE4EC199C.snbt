@@ -37,9 +37,8 @@
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "06012DC3A4BBF58B"
 			tasks: [{
-				id: "729C03EA90D542DE"
-				item: "tconstruct:molten_iron_bucket"
-				type: "item"
+				id: "71FC685ED0624C6C"
+				type: "checkmark"
 			}]
 			x: 1.0d
 			y: -1.5d

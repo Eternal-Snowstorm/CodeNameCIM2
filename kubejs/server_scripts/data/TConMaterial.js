@@ -1,41 +1,5 @@
 ServerEvents.highPriorityData((event) => {
-	addTConMaterial(event, `${global.namespace}:test`, (builder) => {
-		builder.visibility(2, false)
-			.craftable(true)
-			.sortOrder(26)
-			.head(320, 1.5, 5.5, "minecraft:diamond")
-			.handle(1.5, 1.5, 1.5, 1.5)
-			.binding()
-			.limb(1.0, 1.0, 1.0, 1.0)
-			.grip(1.0, 1.0, 1.0)
-			.bowstring()
-			.platingHelmet(1.0, 1.0, 1.0, 1.0)
-			.platingChestplate(1.0, 1.0, 1.0, 1.0)
-			.platingLeggings(1.0, 1.0, 1.0, 1.0)
-			.platingBoots(1.0, 1.0, 1.0, 1.0)
-			.platingShield(1.0, 1.0, 1.0, 1.0)
-			.maille()
-			.shieldCore()
-			.setTraits((builder) => {
-				builder.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
-					.addTrait("tconstruct:armor", "tconstruct:flame_barrier", 1)
-					.addTrait("tconstruct:bowstring", "tconstruct:magnetic", 1)
-			})
-			.addMaterialRecipes("minecraft:dirt", (builder) => {
-				builder.needed(2)
-					.value(3)
-					.leftover(Item.of("minecraft:oak_planks", 1))
-			})
-			.addMaterialFluidRecipes("minecraft:water", (builder) => {
-				builder.amount(200)
-					.temperature(1200)
-					.input("tconstruct:iron")
-			})
-			.addMaterialMeltingRecipes("create:chocolate", (builder) => {
-				builder.amount(200)
-					.temperature(800)
-			})
-	})
+	// 紫水晶
 	addTConMaterial(event, `${global.namespace}:amethyst`, (builder) => {
 		builder.visibility(1, false)
 			.craftable(true)
@@ -62,6 +26,8 @@ ServerEvents.highPriorityData((event) => {
 					.temperature(800)
 			})
 	})
+
+	// 安山合金
 	addTConMaterial(event, `${global.namespace}:andesite_alloy`, (builder) => {
 		builder.visibility(2, false)
 			.craftable(true)
@@ -91,6 +57,8 @@ ServerEvents.highPriorityData((event) => {
 					.temperature(800)
 			})
 	})
+
+	// 黄铜
 	addTConMaterial(event, `${global.namespace}:brass`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)

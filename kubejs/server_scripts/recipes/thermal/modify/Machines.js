@@ -405,7 +405,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:resonant_mechanism",
 		B: "thermal:machine_refinery",
-		C: '#forge:dusts/soul_infused'
+		C: "#forge:dusts/soul_infused"
 	})
 
 	// 
@@ -416,7 +416,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:resonant_mechanism",
 		B: "thermal:machine_pulverizer",
-		C: 'minecraft:tnt'
+		C: "minecraft:tnt"
 	})
 
 	// 
@@ -427,7 +427,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:resonant_mechanism",
 		B: "thermal:machine_bottler",
-		C: '#forge:dusts/twinite'
+		C: "#forge:dusts/twinite"
 	})
 
 	// 
@@ -438,7 +438,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:resonant_mechanism",
 		B: "thermal:machine_crafter",
-		C: '#forge:dusts/twinite'
+		C: "#forge:dusts/twinite"
 	})
 
 	// 
@@ -449,6 +449,6 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:resonant_mechanism",
 		B: "thermal:machine_crucible",
-		C: '#forge:dusts/soul_infused'
+		C: "#forge:dusts/soul_infused"
 	})
 })

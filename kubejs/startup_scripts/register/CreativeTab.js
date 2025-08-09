@@ -15,8 +15,9 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 			.concat(Ingredient.of("#create:incomplete_mechanisms").itemIds)
 			.concat(Ingredient.of("#cmi:mechanism_parts").itemIds)
 			.concat(Ingredient.of("#cmi:mechanism_flash_drives").itemIds)
-			.concat(Ingredient.of("cmi:crafting_incomplete_iron_mechanism").itemIds)
-			.concat(Ingredient.of("cmi:crafting_incomplete_copper_mechanism").itemIds)
+			.concat(Ingredient.of("#cmi:machine_block").itemIds)
+			.concat("cmi:crafting_incomplete_iron_mechanism")
+			.concat("cmi:crafting_incomplete_copper_mechanism")
 		)
 		.displayName(Component.translate(`itemGroup.${global.namespace}.mechanisms`))
 
@@ -28,4 +29,9 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 			.concat(Ingredient.of("#cmi:ore_nodes").itemIds)
 		)
 		.displayName(Component.translate(`itemGroup.${global.namespace}.metals`))
+	
+	event.create(`${global.namespace}:developers`)
+		.icon(() => Item.of("cmi:unknown_entity_"))
+		.content(() => Ingredient.of("#cmi:dev_doll").itemIds)
+		.displayName(Component.translate(`itemGroup.${global.namespace}.developers`))
 })

@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
 		B: "#forge:plates/copper",
 		C: "create:electron_tube",
 		D: "createaddition:capacitor",
-		E: 'cmi:photosensitive_mechanism'
+		E: "cmi:photosensitive_mechanism"
 	}).id("vintageimprovements:mechanical_crafting/laser")
 
 	create.milling([
@@ -91,7 +91,7 @@ ServerEvents.recipes((event) => {
 	}).id("ratatouille:oven")
 
 	create.filling("cmi:super_knife", [
-		'farmersdelight:netherite_knife',
+		"farmersdelight:netherite_knife",
 		Fluid.of("create_enchantment_industry:hyper_experience", 1000)
 	])
 
@@ -101,8 +101,8 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"DED"
 	], {
-		A: 'minecraft:flint_and_steel',
-		B: 'createdieselgenerators:engine_piston',
+		A: "minecraft:flint_and_steel",
+		B: "createdieselgenerators:engine_piston",
 		C: "#forge:storage_blocks/bronze",
 		D: "minecraft:polished_blackstone_slab",
 		E: "cmi:bronze_mechanism"
@@ -114,7 +114,7 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"DED"
 	], {
-		A: 'create:andesite_alloy',
+		A: "create:andesite_alloy",
 		B: "create:precision_mechanism",
 		C: "createdieselgenerators:diesel_engine",
 		D: "minecraft:polished_blackstone_slab",
@@ -128,7 +128,7 @@ ServerEvents.recipes((event) => {
 		"DED"
 	], {
 		Z:"create:andesite_alloy",
-		A:'minecraft:flint_and_steel',
+		A:"minecraft:flint_and_steel",
 		B: "cmi:light_engineering_mechanism",
 		C: "create:steam_engine",
 		D: "create:fluid_pipe",

@@ -17,6 +17,7 @@
 	"itemGroup.cmi.salts_and_solutions": "构件与革新: 金属盐",
 	"itemGroup.cmi.mechanisms": "构件与革新: 构件",
 	"itemGroup.cmi.metals": "构件与革新: 金属",
+	"itemGroup.cmi.developers": "构件与革新: 开发者",
 	"curios.identifier.mechanisms": "构件",
 	"promp.cmi.ender_mechanism.location_stored": "当前坐标已存入末影构件",
 	"message.cmi.debug.getHardness": "这个方块的硬度是: %s",

@@ -1,5 +1,29 @@
 ServerEvents.recipes((event) => {
-	let { tconstruct, farmersdelight, create, ratatouille } = event.recipes
+	let { tconstruct, farmersdelight, create } = event.recipes
+
+	// 植物胶乳
+	create.compacting([
+		Fluid.of("thermal:latex", 50),
+		"farmersdelight:tree_bark"
+	], "thermal:rubberwood_log")
+
+	create.compacting([
+		Fluid.of("thermal:latex", 50),
+		"farmersdelight:tree_bark"
+	], "thermal:rubberwood_wood")
+
+	create.compacting(Fluid.of("thermal:latex", 50), [
+		"thermal:stripped_rubberwood_log"
+	])
+
+	create.compacting(Fluid.of("thermal:latex", 50), [
+		"thermal:stripped_rubberwood_wood"
+	])
+
+	create.compacting([
+		Fluid.of("thermal:latex", 50),
+		"farmersdelight:tree_bark"
+	], "cmi:rubber_tree_bark")
 
 	// 橡胶板
 	create.pressing("cmi:rubber_plate", [
@@ -12,6 +36,29 @@ ServerEvents.recipes((event) => {
 	], [
 		"thermal:rubber"
 	], "#forge:tools/knives")
+
+	// 橡胶树皮
+	farmersdelight.cutting([
+		"thermal:stripped_rubberwood_log",
+		"cmi:rubber_tree_bark"
+	], "thermal:rubberwood_log", "#minecraft:axes")
+
+	farmersdelight.cutting([
+		"thermal:stripped_rubberwood_wood",
+		"cmi:rubber_tree_bark",
+		Item.of("cmi:rubber_tree_bark").withChance(0.1)
+	], "thermal:rubberwood_wood", "#minecraft:axes")
+
+	create.cutting([
+		"thermal:stripped_rubberwood_log",
+		"cmi:rubber_tree_bark"
+	], "thermal:rubberwood_log")
+
+	create.cutting([
+		"thermal:stripped_rubberwood_wood",
+		"cmi:rubber_tree_bark",
+		Item.of("cmi:rubber_tree_bark").withChance(0.1)
+	], "thermal:rubberwood_wood")
 
 	// 橡胶
 	create.compacting("2x thermal:rubber", [

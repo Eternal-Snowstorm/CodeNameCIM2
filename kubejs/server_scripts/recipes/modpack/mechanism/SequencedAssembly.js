@@ -37,8 +37,8 @@ ServerEvents.recipes((event) => {
 	let ir3m = "cmi:incomplete_tier_3_aviation_mechanism"
 	let ir4m = "cmi:incomplete_tier_4_aviation_mechanism"
 	let ipom = "cmi:incomplete_potion_mechanism"
-	let irsm = 'vintageimprovements:incomplete_redstone_module'
-	let ibm = 'cmi:incomplete_bronze_mechanism'
+	let irsm = "vintageimprovements:incomplete_redstone_module"
+	let ibm = "cmi:incomplete_bronze_mechanism"
 
 	// 木质
 	create.sequenced_assembly("cmi:wooden_mechanism", [
@@ -233,7 +233,7 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/stainless_steel"
 	], [
 		create.deploying(iamm, [iamm, "mekanism:advanced_control_circuit"]),
-		create.deploying(iamm, [iamm, '#vintageimprovements:small_springs/osmium']),
+		create.deploying(iamm, [iamm, "#vintageimprovements:small_springs/osmium"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(iamm).loops(1)
 
@@ -414,7 +414,7 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/bronze"
 	], [
 		create.cutting(ibm, ibm),
-		create.deploying(ibm, [ibm, 'vintageimprovements:bronze_spring']),
+		create.deploying(ibm, [ibm, "vintageimprovements:bronze_spring"]),
 		create.deploying(ibm, [ibm, "#forge:nuggets/bronze"]),
 		create.deploying(ibm, [ibm, "create:flywheel"]),
 		create.deploying(ibm, [ibm, "cmi:mechanical_mechanism_part"]),

@@ -14,7 +14,7 @@ MMEvents.createProcesses((event) => {
 			type: "mm:input/consume",
 			ingredient: {
 				type: "mm:item",
-				tag: "forge:coal_coke",
+				tag: "cmi:large_boiler_fuel",
 				count: 1
 			}
 		})

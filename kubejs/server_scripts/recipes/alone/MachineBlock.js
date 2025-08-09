@@ -1,5 +1,7 @@
-StartupEvents.registry("block", (event) => {
-	let machineBlockRegister = [
+ServerEvents.recipes((event) => {
+	let { minecraft } = event.recipes
+
+	let machineBlockGroup = [
 		"nature",
 		"wooden",
 		"stone",
@@ -36,22 +38,12 @@ StartupEvents.registry("block", (event) => {
 		"colorful",
 		"creative",
 		"potion",
-		"precision",
-		"redstone",
 		"bronze",
 		"pigiron"
 	]
-	machineBlockRegister.forEach((type) => {
-		event.create(`${global.namespace}:${type}_machine`, "cardinal")
-			.soundType(SoundType.METAL)
-			.model(`${global.namespace}:block/machine_block/${type}`)
-			.tag("cmi:machine_block")
-			.tag(`cmi:machine_block/${type}`)
-			.tagBlock(global.toolType["pickaxe"])
-			.tagBlock(global.miningLevel["wooden"])
-			.tagBlock("create:wrench_pickup")
-			.requiresTool(true)
-			.notSolid()
-			.defaultCutout()
+	machineBlockGroup.forEach((type) => {
+		minecraft.stonecutting(`cmi:${type}_machine`, `cmi:${type}_mechanism`)
 	})
+	minecraft.stonecutting("cmi:precision_machine", "create:precision_mechanism")
+	minecraft.stonecutting("cmi:redstone_machine", "vintageimprovements:redstone_module")
 })

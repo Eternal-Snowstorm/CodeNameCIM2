@@ -77,17 +77,17 @@ ServerEvents.recipes((event) => {
 	}).id("supplementaries:faucet")
 
 	// 
-	kubejs.shaped('megatimestop:time_clock2', [
+	kubejs.shaped("megatimestop:time_clock2", [
 		"AAA",
 		"ABA",
 		"AAA"
 	], {
 		A: "create:precision_mechanism",
 		B: "minecraft:clock"
-	}).id('megatimestop:time_clock2')
+	}).id("megatimestop:time_clock2")
 
 	// 
-	kubejs.shaped('megatimestop:time_clock', [
+	kubejs.shaped("megatimestop:time_clock", [
 		"123",
 		"4B5",
 		"678"
@@ -101,14 +101,22 @@ ServerEvents.recipes((event) => {
 		7: "create:precision_mechanism",
 		8: "cmi:cobalt_mechanism",
 		B: "minecraft:clock"
-	}).id('megatimestop:time_clock')
+	}).id("megatimestop:time_clock")
 
 	// 
-	kubejs.shaped('4x megatimestop:knife', [
+	kubejs.shaped("4x megatimestop:knife", [
 		"1",
 		"2"
 	], {
 		1: "#forge:plates/iron",
 		2: "#forge:rods/wooden"
-	}).id('megatimestop:knife')
+	}).id("megatimestop:knife")
+
+	kubejs.shaped("2x minecraft:torch", [
+		"A",
+		"B"
+	], {
+		A: "cmi:peat",
+		B: "#forge:rods/wooden"
+	}).id("cmi:peat_torch")
 })
