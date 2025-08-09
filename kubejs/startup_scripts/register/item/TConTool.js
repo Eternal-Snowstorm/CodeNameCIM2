@@ -12,9 +12,13 @@ StartupEvents.registry("item", (event) => {
 		.stacksTo(1)
 	const PAXEL = $ToolDefinition.create(`${global.namespace}:paxel`)
 
-	event.createCustom(`${global.namespace}:paxel`, () => {
-		return new $ModifiableItem(ITEM_PRO, PAXEL)
-	})
+	function addTConTool(name, tool) {
+		return event.createCustom(name, () => {
+			return new $ModifiableItem(ITEM_PRO, tool)
+		})
+	}
+
+	addTConTool("paxel", PAXEL)
 		.tag("forge:tools")
 		.tag("minecraft:tools")
 		.tag("minecraft:pickaxes")
