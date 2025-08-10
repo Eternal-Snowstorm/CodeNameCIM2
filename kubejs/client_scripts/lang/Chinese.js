@@ -75,6 +75,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("naphtha", "石脑油")
 	addFluidLanguage("kerosene", "煤油")
 	addFluidLanguage("lubricating_oil", "润滑油")
+	addFluidLanguage("oil_shale_steam", "油页岩蒸汽")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
@@ -95,6 +96,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("desh", "戴斯")
 	addMaterialLanguage("ostrum", "紫金")
 	addMaterialLanguage("calorite", "耐热金属")
+	addMaterialLanguage("oil_shale", "油页岩")
 
 	addMaterialLanguage("pyrite", "黄铁")
 	addMaterialLanguage("lateritic_nickel", "红镍")

@@ -44,6 +44,7 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("tetrachlorosilane", 0xDDFF6E)
 
 	addAloneFluid("steam").noBlock()
+	addAloneFluid("oil_shale_steam").noBlock()
 	addAloneFluid("blood")
 	addAloneFluid("delta_unstable_solution")
 	addAloneFluid("turbid_waste_liquid")

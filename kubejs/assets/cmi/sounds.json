@@ -14,5 +14,13 @@
 				"stream": true
 			}
 		]
+	},
+	"main_menu": {
+		"sounds": [
+			{
+				"name": "cmi:music/main_menu",
+				"stream": true
+			}
+		]
 	}
 }

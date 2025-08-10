@@ -30,6 +30,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.toolType["shovel"])
 		.tagBlock(global.miningLevel["wooden"])
 		.tagBlock("minecraft:dirt")
+		.tag("minecraft:stone")
 
 	// 油页岩
 	addBlock("oil_shale")

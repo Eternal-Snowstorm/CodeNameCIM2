@@ -57,7 +57,7 @@ XaeroWaypoints*
 # ShaderPacks
 /shaderpacks/*
 
-# Probe Docs
+# ProbeDocs
 /kubejs/probe/*
 !/kubejs/probe/docs/
 
