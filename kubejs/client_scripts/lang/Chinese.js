@@ -192,6 +192,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("bronze_casing", "青铜外壳")
 	addBlockLanguage("pressure_resistance_casing", "耐压外壳")
 	addBlockLanguage("peat_block", "泥炭块")
+	addBlockLanguage("oil_shale", "油页岩")
 
 	addBlockLanguage("unknown_entity_", "Unknown_Entity_")
 	addBlockLanguage("aleegos", "阿列戈斯")

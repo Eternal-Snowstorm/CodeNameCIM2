@@ -1,6 +1,6 @@
 {
 	"add_cosmetic": false,
-	"icon": "cmi:gui/curios",
+	"icon": "cmi:item/curios",
 	"operation": "SET",
 	"order": 172,
 	"render_toggle": true,

@@ -18,7 +18,7 @@
 			"item": "mekanism:pellet_polonium"
 		},
 		{
-			"fluid": "mekanism:steam",
+			"fluid": "cmi:steam",
 			"amount": 200
 		}
 	],
