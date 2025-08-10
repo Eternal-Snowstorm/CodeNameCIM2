@@ -1,0 +1,266 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chests_free"
+	group: ""
+	icon: "ae2:controller"
+	id: "6222051868900EF4"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"34595880AAFDC69C"
+				"56E28410FE10ADDA"
+				"2E5126D23EA66A9A"
+			]
+			id: "1A821F749A38FA5E"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5B2BECA0E5459D40"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "56E28410FE10ADDA"
+			tasks: [{
+				id: "55BBB1ACE69ED49C"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"47B4857754BB9464"
+				"2E3F3D2D1ED25477"
+				"58F851E8B4299162"
+				"617F2C5A4BC6FCB0"
+			]
+			id: "2E5126D23EA66A9A"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2415D3D846CC2BB4"
+				item: "cmi:smart_mechanism"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C4867BCE9C90F18"]
+			id: "34595880AAFDC69C"
+			tasks: [{
+				id: "355D0530C783AC61"
+				item: "ae2:smooth_sky_stone_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"78696E475282669B"
+				"246798E59F8CD31D"
+			]
+			id: "617F2C5A4BC6FCB0"
+			tasks: [{
+				id: "76D05C6FE33AA386"
+				item: "ae2:logic_processor"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"29AC4601B0D54D6B"
+				"246798E59F8CD31D"
+			]
+			id: "2E3F3D2D1ED25477"
+			tasks: [{
+				id: "39CA4EBBE49ADBD7"
+				item: "ae2:calculation_processor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0852D0FF49459733"
+				"246798E59F8CD31D"
+			]
+			id: "58F851E8B4299162"
+			tasks: [{
+				id: "2B2B0A2D5379C55D"
+				item: "ae2:engineering_processor"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			id: "0852D0FF49459733"
+			tasks: [{
+				id: "717DEA57411C0C03"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5C4867BCE9C90F18"]
+			id: "29AC4601B0D54D6B"
+			tasks: [{
+				id: "5137F5571E391B1E"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			id: "78696E475282669B"
+			tasks: [{
+				id: "763067B9241F8485"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0629BAB6E8F3A2B5"]
+			id: "246798E59F8CD31D"
+			tasks: [{
+				id: "25D34A3A55DE4C5D"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			icon: "ae2:meteorite_compass"
+			id: "5C4867BCE9C90F18"
+			size: 2.0d
+			tasks: [{
+				id: "7117BA56BD405F1A"
+				observe_type: 0
+				timer: 0L
+				to_observe: "ae2:mysterious_cube"
+				type: "observation"
+			}]
+			title: "Find a meteor"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["51A6B0B7FBDAB5A0"]
+			id: "17790FC91B1E5D4A"
+			subtitle: "Perfect for carrying flwaless budding certus quartz"
+			tasks: [{
+				id: "0048299A59FCF0AE"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["56E28410FE10ADDA"]
+			id: "41F9733A27F6C40F"
+			tasks: [{
+				id: "0856BE86F7C3ACC8"
+				item: "ae2:crystal_resonance_generator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2CE11211D9B78F3B"
+				"7141333090D1D27A"
+			]
+			id: "0629BAB6E8F3A2B5"
+			tasks: [{
+				id: "131CB3CB21A35E15"
+				item: "cmi:silicon_mixure"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CB364E2B27F413F"]
+			id: "7141333090D1D27A"
+			tasks: [{
+				id: "2DF32EFE8B634CFB"
+				item: "cmi:pure_sand_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			id: "2CB364E2B27F413F"
+			tasks: [{
+				id: "0C827B0F9FDF8418"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5D2F9B6EA98A8CC6"]
+			id: "2CE11211D9B78F3B"
+			subtitle: "Both are acceptible"
+			tasks: [{
+				id: "64DE125F811BE84C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:coal_coke"
+					}
+				}
+				title: "Any #forge:coal_coke"
+				type: "item"
+			}]
+			title: "Coke"
+			x: -10.0d
+			y: 1.0d
+		}
+		{
+			id: "5D2F9B6EA98A8CC6"
+			tasks: [{
+				id: "3E70ABC622CF059B"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 1.0d
+		}
+		{
+			id: "47B4857754BB9464"
+			tasks: [{
+				id: "03077AEF5BAED165"
+				item: "cmi:engineering_mechanism_part"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+	]
+	title: "Chests-free"
+}

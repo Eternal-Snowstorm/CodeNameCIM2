@@ -17,6 +17,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "639A03DBCDF1F097"
 			rewards: [{
@@ -34,6 +35,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "0A9B090CC8BFC4BF"
 			rewards: [{
@@ -63,6 +65,7 @@
 				"639A03DBCDF1F097"
 				"0A9B090CC8BFC4BF"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "158872F89555C2CC"
 			tasks: [{
@@ -75,6 +78,7 @@
 		}
 		{
 			dependencies: ["158872F89555C2CC"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "74E69B8EC920F145"
 			tasks: [{
@@ -87,6 +91,7 @@
 		}
 		{
 			dependencies: ["74E69B8EC920F145"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "0FA609162053C238"
 			rewards: [{
@@ -112,6 +117,7 @@
 		}
 		{
 			dependencies: ["0FA609162053C238"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "371001287D4C8D23"
 			tasks: [{
@@ -124,6 +130,7 @@
 		}
 		{
 			dependencies: ["371001287D4C8D23"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "6A9EB3BE823D8596"
 			rewards: [{
@@ -148,6 +155,7 @@
 			y: 2.0d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "50720D765CFEA414"
 			rewards: [{
@@ -166,6 +174,7 @@
 		}
 		{
 			dependencies: ["50720D765CFEA414"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "78855495E2626F93"
 			tasks: [{
@@ -178,6 +187,7 @@
 		}
 		{
 			dependencies: ["78855495E2626F93"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "61E31DB6B71857AA"
 			rewards: [{
@@ -196,6 +206,7 @@
 		}
 		{
 			dependencies: ["61E31DB6B71857AA"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "0BABF4CC718C9489"
 			rewards: [{
@@ -214,6 +225,7 @@
 		}
 		{
 			dependencies: ["0BABF4CC718C9489"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "11848C62B13BEC44"
 			tasks: [{
@@ -229,6 +241,7 @@
 				"6A9EB3BE823D8596"
 				"11848C62B13BEC44"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "534E13CC3E0ED006"
 			rewards: [{
@@ -247,6 +260,7 @@
 		}
 		{
 			dependencies: ["534E13CC3E0ED006"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4E16C529904765A0"
 			rewards: [{
@@ -265,6 +279,7 @@
 		}
 		{
 			dependencies: ["4E16C529904765A0"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "2B2584692E0128C6"
 			rewards: [{
@@ -283,6 +298,7 @@
 		}
 		{
 			dependencies: ["2B2584692E0128C6"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "2C0686AEEE84F48B"
 			rewards: [{

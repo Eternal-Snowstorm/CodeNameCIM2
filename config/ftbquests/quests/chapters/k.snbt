@@ -3,45 +3,67 @@
 	default_quest_shape: ""
 	filename: "k"
 	group: ""
+	icon: "create:precision_mechanism"
 	id: "16BF65FE8553A6F6"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["4F1185F495038BB3"]
 			id: "136F20B0869B90F6"
+			rewards: [{
+				id: "77E2D8516A5C450C"
+				item: "cmi:wooden_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6BB1A5898061E906"
 				item: "cmi:wooden_mechanism"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["136F20B0869B90F6"]
+			id: "30B8A752461496DD"
+			rewards: [{
+				id: "70946E58D25716EA"
+				item: "cmi:stone_machine"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2185828B8AD01CD9"
+				item: "cmi:stone_mechanism"
 				type: "item"
 			}]
 			x: -3.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["136F20B0869B90F6"]
-			id: "30B8A752461496DD"
-			tasks: [{
-				id: "2185828B8AD01CD9"
-				item: "cmi:stone_mechanism"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -2.0d
-		}
-		{
 			dependencies: ["30B8A752461496DD"]
 			id: "4083E533701242D1"
+			rewards: [{
+				id: "2FD022E425370CB1"
+				item: "cmi:iron_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5AD679254A483442"
 				item: "cmi:iron_mechanism"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -3.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["30B8A752461496DD"]
+			dependencies: ["17888283D819AB51"]
 			id: "69C00F817438C355"
+			rewards: [{
+				id: "6EFA105B88F10522"
+				item: "cmi:gold_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2F4565283385D493"
 				item: "cmi:gold_mechanism"
@@ -52,18 +74,30 @@
 		}
 		{
 			dependencies: ["30B8A752461496DD"]
+			dependency_requirement: "one_completed"
 			id: "17888283D819AB51"
+			rewards: [{
+				id: "33B0BF3EA50529E0"
+				item: "cmi:andesite_machine"
+				type: "item"
+			}]
+			shape: "gear"
 			tasks: [{
 				id: "657E105AB2B3D75C"
 				item: "cmi:andesite_mechanism"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["17888283D819AB51"]
 			id: "56DB23E9AE579DAD"
+			rewards: [{
+				id: "4321ED00C9F2C7D1"
+				item: "cmi:precision_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5F63F0125F291916"
 				item: "create:precision_mechanism"
@@ -75,27 +109,43 @@
 		{
 			dependencies: ["17888283D819AB51"]
 			id: "65AD80AEAA062CEE"
+			rewards: [{
+				id: "65307309144CAED9"
+				item: "cmi:copper_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3F95424115CCADEB"
 				item: "cmi:copper_mechanism"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: -0.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["65AD80AEAA062CEE"]
 			id: "08D012AB26459401"
+			rewards: [{
+				id: "011BF1547CF2C383"
+				item: "cmi:nature_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "78DBDA88A6FB64A4"
 				item: "cmi:nature_mechanism"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.0d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["56DB23E9AE579DAD"]
 			id: "591080AC719E09DB"
+			rewards: [{
+				id: "2D08CC05CDFA3B33"
+				item: "cmi:railway_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "588D3A4D61770E04"
 				item: "cmi:railway_mechanism"
@@ -105,18 +155,29 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["56DB23E9AE579DAD"]
 			id: "3A7FB41E29F092EA"
+			rewards: [{
+				id: "0C31D1721DF34C4B"
+				item: "cmi:ender_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "67B6B054699EE7B1"
 				item: "cmi:ender_mechanism"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.0d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["17888283D819AB51"]
+			dependencies: ["56DB23E9AE579DAD"]
 			id: "42519082C3C86B41"
+			rewards: [{
+				id: "2489339320FD1C25"
+				item: "cmi:photosensitive_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "779E1A300018E96F"
 				item: "cmi:photosensitive_mechanism"
@@ -128,6 +189,11 @@
 		{
 			dependencies: ["56DB23E9AE579DAD"]
 			id: "0DE8D693A94C5A6D"
+			rewards: [{
+				id: "49CA29E25676CF37"
+				item: "cmi:thermal_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0FC6596A6B689280"
 				item: "cmi:thermal_mechanism"
@@ -139,50 +205,75 @@
 		{
 			dependencies: ["56DB23E9AE579DAD"]
 			id: "767B33B7921C4E6A"
+			rewards: [{
+				id: "6B1071037F2E91BD"
+				item: "cmi:smart_machine"
+				type: "item"
+			}]
+			shape: "gear"
 			tasks: [{
 				id: "2B1F467B5898721D"
 				item: "cmi:smart_mechanism"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["56DB23E9AE579DAD"]
 			id: "3D7BCA289055601D"
+			rewards: [{
+				id: "0EFAA1A6A21F2076"
+				item: "cmi:light_engineering_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C6B5D460EA6A7A8"
 				item: "cmi:light_engineering_mechanism"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3D7BCA289055601D"]
-			id: "0D63B72859D8D3D2"
-			tasks: [{
-				id: "258647244F9946F7"
-				item: "cmi:heavy_engineering_mechanism"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3D7BCA289055601D"]
-			id: "086476EBD5AD934E"
-			tasks: [{
-				id: "1DA714150AE6B827"
-				item: "cmi:coil_mechanism"
 				type: "item"
 			}]
 			x: 4.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3D7BCA289055601D"]
+			id: "0D63B72859D8D3D2"
+			rewards: [{
+				id: "51EA2A5287F3719F"
+				item: "cmi:heavy_engineering_machine"
+				type: "item"
+			}]
+			tasks: [{
+				id: "258647244F9946F7"
+				item: "cmi:heavy_engineering_mechanism"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D7BCA289055601D"]
+			id: "086476EBD5AD934E"
+			rewards: [{
+				id: "15AA58A2A8602CF6"
+				item: "cmi:coil_machine"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DA714150AE6B827"
+				item: "cmi:coil_mechanism"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
 			dependencies: ["0DE8D693A94C5A6D"]
 			id: "6D6905E6A6E7A153"
+			rewards: [{
+				id: "31C6DC82DD0202B2"
+				item: "cmi:feinforced_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "36891FDD5DDE4833"
 				item: "cmi:feinforced_mechanism"
@@ -194,6 +285,11 @@
 		{
 			dependencies: ["6D6905E6A6E7A153"]
 			id: "71F81E8F67C3A8BE"
+			rewards: [{
+				id: "718ED0159B62CC4D"
+				item: "cmi:resonant_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "19127FF6F2243BF5"
 				item: "cmi:resonant_mechanism"
@@ -203,118 +299,172 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"0D63B72859D8D3D2"
-				"767B33B7921C4E6A"
-				"71F81E8F67C3A8BE"
-			]
+			dependencies: ["71F81E8F67C3A8BE"]
 			id: "315BE76178E4D7F7"
+			rewards: [{
+				id: "36C1295CD5A51379"
+				item: "cmi:basic_mekanism_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "72D29B51D5F8C096"
 				item: "cmi:basic_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.0d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5DACA4599CFCBB11"]
 			id: "41AAC35C55192CC1"
+			rewards: [{
+				id: "12A2EFBF2BBDB159"
+				item: "cmi:advanced_mekanism_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "65375F6156A5EBFC"
 				item: "cmi:advanced_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.0d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["44A58231092EABA1"]
 			id: "0B04AEDFB54ACD72"
+			rewards: [{
+				id: "273F540E1633C79A"
+				item: "cmi:elite_mekanism_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D3884BDC8C8940D"
 				item: "cmi:elite_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -2.0d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["01DFFFFD4CD9DD74"]
 			id: "7F8CA0DAB7770DCA"
+			rewards: [{
+				id: "41597CFA50A1C4D9"
+				item: "cmi:ultimate_mekanism_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "574961A59A899ED5"
 				item: "cmi:ultimate_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -2.0d
+			x: 11.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["67FAE1DA4D9C2F87"]
+			dependencies: ["315BE76178E4D7F7"]
 			id: "3CBE5B0B56CB75A4"
+			rewards: [{
+				id: "43D18851C1626E4A"
+				item: "cmi:structure_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7DA1893078B8FCF9"
 				item: "cmi:structure_mechanism"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -2.0d
+			x: 9.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["3CBE5B0B56CB75A4"]
+			dependencies: ["67FAE1DA4D9C2F87"]
 			id: "0C258EEC3A28101E"
+			rewards: [{
+				id: "3454F69B9AEE212C"
+				item: "cmi:nuclear_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "637C87972E33585B"
 				item: "cmi:nuclear_mechanism"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 14.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["0C258EEC3A28101E"]
 			id: "5379DA9E302283E7"
+			rewards: [{
+				id: "6029B698FBF1D9DF"
+				item: "cmi:antimatter_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "20A2AE527CB22C52"
 				item: "cmi:antimatter_mechanism"
 				type: "item"
 			}]
-			x: 18.5d
+			x: 16.0d
 			y: -2.0d
 		}
 		{
+			dependencies: ["65AD80AEAA062CEE"]
 			id: "41D1483BFF793103"
+			rewards: [{
+				id: "006E56C23C9393D4"
+				item: "cmi:enchanted_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "105B9AE2D7540EC0"
 				item: "cmi:enchanted_mechanism"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["41D1483BFF793103"]
 			id: "409D81C491430D8B"
+			rewards: [{
+				id: "33F2338D2A4C6040"
+				item: "cmi:sculk_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5980F108D9715C76"
 				item: "cmi:sculk_mechanism"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
+			dependencies: ["17888283D819AB51"]
 			id: "2023FCCA77518EF8"
+			rewards: [{
+				id: "6B685BE00FC56DDD"
+				item: "cmi:colorful_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2475148614D71807"
 				item: "cmi:colorful_mechanism"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.0d
+			x: -1.5d
+			y: -1.0d
 		}
 		{
 			id: "44114C64DEF272E1"
+			rewards: [{
+				id: "73193EC22FA54B87"
+				item: "cmi:creative_machine"
+				type: "item"
+			}]
 			size: 5.0d
 			tasks: [{
 				id: "107B7BB8BBC1F0B8"
@@ -325,94 +475,141 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["56DB23E9AE579DAD"]
 			id: "0719552A0E065A18"
+			rewards: [{
+				id: "22F034108FEBF469"
+				item: "cmi:nether_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3F9C0D8E4A81E5B6"
 				item: "cmi:nether_mechanism"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.0d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0DE8D693A94C5A6D"]
 			id: "616EE72DEF1337EB"
+			rewards: [{
+				id: "383FEBA473A6AD79"
+				item: "cmi:cobalt_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3CB13F838D601C86"
 				item: "cmi:cobalt_mechanism"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["315BE76178E4D7F7"]
 			id: "21A34B9886AEF0AD"
+			rewards: [{
+				id: "2ECE3B11EB204DB2"
+				item: "cmi:computing_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "384CCE262D6434B0"
 				item: "cmi:computing_mechanism"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -3.0d
+			x: 9.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["315BE76178E4D7F7"]
+			dependencies: ["767B33B7921C4E6A"]
 			id: "5DACA4599CFCBB11"
+			rewards: [{
+				id: "561550F09261BE51"
+				item: "cmi:tier_1_aviation_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3582807B32DEB498"
 				item: "cmi:tier_1_aviation_mechanism"
 				type: "item"
 			}]
 			x: 8.5d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["41AAC35C55192CC1"]
+			dependencies: ["5DACA4599CFCBB11"]
 			id: "44A58231092EABA1"
+			rewards: [{
+				id: "268876503CADF2D8"
+				item: "cmi:tier_2_aviation_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2E5E1FE50C16F5A4"
 				item: "cmi:tier_2_aviation_mechanism"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -3.0d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["0B04AEDFB54ACD72"]
+			dependencies: ["44A58231092EABA1"]
 			id: "01DFFFFD4CD9DD74"
+			rewards: [{
+				id: "7C9BF419B0EF99E8"
+				item: "cmi:tier_3_aviation_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0B0C47ED9BD661BE"
 				item: "cmi:tier_3_aviation_mechanism"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -1.0d
+			x: 11.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["7F8CA0DAB7770DCA"]
+			dependencies: ["01DFFFFD4CD9DD74"]
 			id: "67FAE1DA4D9C2F87"
+			rewards: [{
+				id: "6D300C5D62E2114C"
+				item: "cmi:tier_4_aviation_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "41B784A5762E1861"
 				item: "cmi:tier_4_aviation_mechanism"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -3.0d
+			x: 13.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["65AD80AEAA062CEE"]
 			id: "4B1899C4014F38E5"
+			rewards: [{
+				id: "7716F7B8753604ED"
+				item: "cmi:potion_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4A84E3B0984A4514"
 				item: "cmi:potion_mechanism"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.0d
+			x: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["17888283D819AB51"]
 			id: "5F2EF0F0AA5D4AB7"
+			rewards: [{
+				id: "1DD689A6DC1D9474"
+				item: "cmi:bronze_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "10175B23AAA74C2D"
 				item: "cmi:bronze_mechanism"
@@ -422,5 +619,5 @@
 			y: -3.0d
 		}
 	]
-	title: "Tech Tree"
+	title: "The trails of mechas"
 }

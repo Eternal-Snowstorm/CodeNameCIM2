@@ -17,6 +17,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3C0E736DFE86AF6B"
 			rewards: [{
@@ -35,6 +36,7 @@
 		}
 		{
 			dependencies: ["3C0E736DFE86AF6B"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "6446DBC6D9F816BF"
 			tasks: [{
@@ -50,6 +52,7 @@
 				"5CA424539C8A6E21"
 				"6446DBC6D9F816BF"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4ED43AC44602A99C"
 			rewards: [{
@@ -63,10 +66,11 @@
 				type: "item"
 			}]
 			title: "Lumium Gear"
-			x: 3.857142857142861d
-			y: -1.099999999999973d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "68FE3754B7FD6A25"
 			rewards: [{
@@ -85,6 +89,7 @@
 		}
 		{
 			dependencies: ["68FE3754B7FD6A25"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "14052EA9F3024744"
 			tasks: [{
@@ -96,7 +101,8 @@
 			y: -0.8642857142856784d
 		}
 		{
-			dependencies: ["14052EA9F3024744"]
+			dependencies: ["51185FDAE329399B"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "5CA424539C8A6E21"
 			rewards: [{
@@ -115,6 +121,7 @@
 		}
 		{
 			dependencies: ["4ED43AC44602A99C"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "098EC7655B58032B"
 			rewards: [{
@@ -133,6 +140,7 @@
 		}
 		{
 			dependencies: ["098EC7655B58032B"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "18BFAB5AC99461B0"
 			rewards: [{
@@ -148,6 +156,17 @@
 			title: "Resonant Mechanism"
 			x: 15.57142857142857d
 			y: -1.5142857142856627d
+		}
+		{
+			dependencies: ["14052EA9F3024744"]
+			id: "51185FDAE329399B"
+			tasks: [{
+				id: "41B0806330D1C0C6"
+				item: "thermal:enderium_plate"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.5d
 		}
 	]
 	title: "Resonant"

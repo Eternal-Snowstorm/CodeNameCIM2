@@ -17,6 +17,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "129F9D4B54D65DC0"
 			rewards: [{
@@ -43,8 +44,10 @@
 		}
 		{
 			dependencies: ["129F9D4B54D65DC0"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "0A53DB225AE2E67A"
+			size: 1.0d
 			tasks: [{
 				id: "3047DC8F8345FF9A"
 				title: "Press"
@@ -55,6 +58,7 @@
 		}
 		{
 			dependencies: ["0A53DB225AE2E67A"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "24F20C2FD7E80B8A"
 			rewards: [{
@@ -74,6 +78,7 @@
 		}
 		{
 			dependencies: ["24F20C2FD7E80B8A"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "375701D6F3DFB6FA"
 			rewards: [{
@@ -93,6 +98,7 @@
 		}
 		{
 			dependencies: ["375701D6F3DFB6FA"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "367A587D2ECBABD7"
 			rewards: [{
