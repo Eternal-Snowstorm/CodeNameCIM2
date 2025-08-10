@@ -37,7 +37,7 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.DEEPSLATE)
 		.hardness(2)
 		.resistance(2)
-		.tagBlock(global.miningLevel["stone"])
+		.tagBlock(global.miningLevel["nether"])
 		.tagBlock(global.toolType["pickaxe"])
 		.requiresTool(true)
 
