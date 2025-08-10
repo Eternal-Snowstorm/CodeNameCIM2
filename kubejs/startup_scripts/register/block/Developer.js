@@ -36,6 +36,11 @@ StartupEvents.registry("block", (event) => {
 	// 燕栖
 	addDeveloperDoll("ye_anqing")
 
+	// music
+	// DontKillBelalus
+	addDeveloperDoll("dont_kill_belalus")
+
+
 	// Other
 	// Aleegos
 	addDeveloperDoll("aleegos")
