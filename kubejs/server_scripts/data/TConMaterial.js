@@ -83,4 +83,52 @@ ServerEvents.highPriorityData((event) => {
 					.temperature(810)
 			})
 	})
+
+	// 工业铁
+	addTConMaterial(event, `${global.namespace}:industrial_iron`, (builder) => {
+		builder.visibility(2, false)
+			.craftable(false)
+	})
+
+	// 铸铁
+	addTConMaterial(event, `${global.namespace}:cast_iron`, (builder) => {
+		builder.visibility(3, false)
+			.craftable(false)
+	})
+
+	// 不锈钢
+	addTConMaterial(event, `${global.namespace}:stainless_steel`, (builder) => {
+		builder.visibility(4, false)
+			.craftable(false)
+	})
+
+	// 戴斯
+	addTConMaterial(event, `${global.namespace}:desh`, (builder) => {
+		builder.visibility(4, false)
+			.craftable(false)
+	})
+
+	// 紫金
+	addTConMaterial(event, `${global.namespace}:ostrum`, (builder) => {
+		builder.visibility(4, false)
+			.craftable(false)
+	})
+
+	// 耐热金属
+	addTConMaterial(event, `${global.namespace}:calorite`, (builder) => {
+		builder.visibility(4, false)
+			.craftable(false)
+	})
+
+	// 暗影钢
+	addTConMaterial(event, `${global.namespace}:shadow_steel`, (builder) => {
+		builder.visibility(4, false)
+			.craftable(false)
+	})
+
+	// 光辉石
+	addTConMaterial(event, `${global.namespace}:refined_radiance`, (builder) => {
+		builder.visibility(4, false)
+			.craftable(false)
+	})
 })
