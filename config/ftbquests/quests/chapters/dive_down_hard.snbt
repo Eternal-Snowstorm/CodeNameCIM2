@@ -1,0 +1,538 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dive_down_hard"
+	group: ""
+	icon: "minecraft:iron_ingot"
+	id: "4081E0A1F90AD69A"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["749E2F97A546138F"]
+			dependency_requirement: "all_started"
+			icon: "tconstruct:seared_melter"
+			id: "3DEE902840C6F8F2"
+			tasks: [{
+				id: "3F1116782B63B121"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "42952FF47036885B"
+			tasks: [{
+				id: "377938F2C7588945"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/iron"
+					}
+				}
+				title: "Any #forge:ingots/iron"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "325D8F9EC9B394E0"
+			tasks: [{
+				id: "024472856A8ABB2F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
+				title: "Any #forge:ingots/copper"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "062D1D3B790AEA4B"
+			tasks: [{
+				id: "3AA93C391B15B7B5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/gold"
+					}
+				}
+				title: "Any #forge:ingots/gold"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "2B656B7972166C08"
+			rewards: [{
+				count: 64
+				id: "3CA714B1E0EAB6AD"
+				item: "tconstruct:seared_bricks"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2AC5650047B24463"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			id: "625CB03D1FD2BE10"
+			tasks: [{
+				id: "320842B4A23B7532"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/brass"
+					}
+				}
+				title: "Any #forge:ingots/brass"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			id: "3EE4995C51E88CF8"
+			tasks: [{
+				id: "6553799D3914BC6C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "Any #forge:ingots/bronze"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			disable_toast: true
+			id: "0167CF802B8C41BD"
+			tasks: [{
+				id: "70C82BD420F24FFF"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/constantan"
+					}
+				}
+				title: "Any #forge:ingots/constantan"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			disable_toast: true
+			id: "0799AA1823240100"
+			tasks: [{
+				id: "7FF8B31B7D63157F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/electrum"
+					}
+				}
+				title: "Any #forge:ingots/electrum"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			id: "3F4BF299239521B5"
+			subtitle: "You'll need them"
+			tasks: [
+				{
+					id: "44320669FD6E2F02"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:tinkers_anvil"
+						}
+					}
+					title: "Any Tinker's Anvil"
+					type: "item"
+				}
+				{
+					id: "26657802A90AF54B"
+					item: "tconstruct:cast_chest"
+					type: "item"
+				}
+				{
+					id: "4B8D311B1DC6B7E9"
+					item: "tconstruct:modifier_worktable"
+					type: "item"
+				}
+			]
+			title: "Tinker Standard Kit"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			description: ["Melt the grout to get double yield while making bricks"]
+			id: "43DC2A81B21001BE"
+			tasks: [{
+				id: "5180FEE802F23728"
+				item: "tconstruct:seared_stone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "096A858F0A541622"
+			tasks: [{
+				id: "568616009EA6F8EA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/lead"
+					}
+				}
+				title: "Any #forge:ingots/lead"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "173CB12BC24ED51E"
+			tasks: [{
+				id: "7FBE80D4DA9AE40A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/zinc"
+					}
+				}
+				title: "Any #forge:ingots/zinc"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "7069140A63443E0C"
+			tasks: [{
+				id: "50134A608F26DE7C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/silver"
+					}
+				}
+				title: "Any #forge:ingots/silver"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "4B55A849175426D6"
+			tasks: [{
+				id: "01BB7DB0E4C1C72B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/osmium"
+					}
+				}
+				title: "Any #forge:ingots/osmium"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "672000398C6707CC"
+			tasks: [{
+				id: "14DBDCB0B9968062"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/tin"
+					}
+				}
+				title: "Any #forge:ingots/tin"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3DEE902840C6F8F2"]
+			id: "6B954B39F0C22CEC"
+			tasks: [{
+				id: "3A28E5B190524FBF"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/nickel"
+					}
+				}
+				title: "Any #forge:ingots/nickel"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			id: "3F0C4A0AD97615EE"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "1248BF2B77F58994"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F0C4A0AD97615EE"]
+			id: "2F14AA034A31D85F"
+			tasks: [{
+				id: "3323E4AE656E6B6A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/vanadium"
+					}
+				}
+				title: "Any #forge:ingots/vanadium"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3F0C4A0AD97615EE"]
+			id: "4E766E7176D4C7C9"
+			tasks: [{
+				id: "351173DA9686D1F2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/cobalt"
+					}
+				}
+				title: "Any #forge:ingots/cobalt"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			disable_toast: true
+			id: "457865F53B3A7339"
+			tasks: [{
+				id: "3EBB818133F58821"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/lumium"
+					}
+				}
+				title: "Any #forge:ingots/lumium"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			disable_toast: true
+			id: "566E94FC8211FCCF"
+			tasks: [{
+				id: "3CF610129C2DDC41"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/enderium"
+					}
+				}
+				title: "Any #forge:ingots/enderium"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			disable_toast: true
+			id: "16380F8083EEC007"
+			tasks: [{
+				id: "648BC1FA1E0A117B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/signalum"
+					}
+				}
+				title: "Any #forge:ingots/signalum"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			description: ["If you can't find or process ores just look up here"]
+			icon: "minecraft:iron_block"
+			id: "1859476870D3C4DD"
+			size: 2.0d
+			tasks: [{
+				id: "6BB2EBF504F40A4C"
+				type: "checkmark"
+			}]
+			title: "Acquire Hardwire"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			icon: "minecraft:ender_pearl"
+			id: "0F3ED7C16F0BA4DA"
+			rewards: [{
+				id: "66ED857F4CEE9C51"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "In case you are fed up with villagers"
+			tasks: [{
+				consume_items: true
+				id: "061E8CC06BCB6B30"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/emerald"
+					}
+				}
+				title: "Any #forge:gems/emerald"
+				type: "item"
+			}]
+			title: "Ender Pearl Trade"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			id: "06DCEFD4BA19BC59"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "5473EA78EAC84EB1"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["06DCEFD4BA19BC59"]
+			id: "617F7065953EF463"
+			tasks: [{
+				id: "6E9E3781AB443407"
+				item: "minecraft:chorus_flower"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["617F7065953EF463"]
+			id: "27DAB5585DB71C48"
+			tasks: [{
+				id: "14244BFDDC6C04DF"
+				item: "minecraft:chorus_fruit"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["27DAB5585DB71C48"]
+			id: "37EC1447F4667214"
+			subtitle: "Mix chorus fruit with molten ender pearls to get more molten ender pearls"
+			tasks: [{
+				id: "27F9D9975674C6D6"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ender_pearls"
+					}
+				}
+				title: "Any #forge:ender_pearls"
+				type: "item"
+			}]
+			title: "Infinite Ender Pearls"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B656B7972166C08"]
+			disable_toast: true
+			id: "69B1FF11D9273022"
+			tasks: [{
+				id: "0959DBCDAC0EBB72"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/invar"
+					}
+				}
+				title: "Any #forge:ingots/invar"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+	]
+	title: "Dive Down Hard"
+}

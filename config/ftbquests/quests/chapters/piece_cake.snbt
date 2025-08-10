@@ -1,0 +1,162 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "piece_cake"
+	group: ""
+	icon: "mekanism:pellet_antimatter"
+	id: "18F1DE7F79086F03"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["03386EF94707C999"]
+			icon: "mekanismgenerators:fission_fuel_assembly"
+			id: "3BC96A9B0909BB8E"
+			shape: "square"
+			size: 2.0d
+			subtitle: "You don't need a big one"
+			tasks: [
+				{
+					id: "79019146BD8A0D92"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					id: "5F7B6B25F2E7AF2D"
+					item: "mekanismgenerators:fission_reactor_port"
+					type: "item"
+				}
+				{
+					id: "7BDA75FBCEA47B71"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					id: "25EFCF7FB673D389"
+					item: "mekanismgenerators:reactor_glass"
+					type: "item"
+				}
+				{
+					id: "44D6A938B0A41547"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+			]
+			title: "Fission Reactor"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BC96A9B0909BB8E"]
+			id: "117804AEE2EFE080"
+			tasks: [{
+				id: "34D833137CCF5271"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3BC96A9B0909BB8E"]
+			id: "7627475DF91BAE48"
+			tasks: [{
+				id: "68E9057221E1F450"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["29F86C33F70E9575"]
+			description: ["No need to thank me cus this is the exact amount of material to build an SPS"]
+			id: "27CBF88AFC0584A6"
+			shape: "square"
+			size: 2.0d
+			subtitle: "Meet The Supercritical Phase Shifter"
+			tasks: [
+				{
+					count: 60L
+					id: "72F76E0C1A28BBE7"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7F9FFF6364AE97B6"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+				{
+					count: 123L
+					id: "3DEEFD181A9881C4"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+				{
+					id: "59A792CA48048EC4"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+			]
+			title: "SPS"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7627475DF91BAE48"
+				"117804AEE2EFE080"
+			]
+			id: "29F86C33F70E9575"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "546A9B4BDD1EE8ED"
+				item: "cmi:nuclear_mechanism"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["27CBF88AFC0584A6"]
+			id: "46CB630D33D3F705"
+			tasks: [{
+				id: "335976E1273DBA9C"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46CB630D33D3F705"]
+			id: "568186541547B51C"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "03BCA8EB638B84A9"
+				item: "cmi:antimatter_mechanism"
+				type: "item"
+			}]
+			x: 6.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["5B980D972FC0A54E"]
+			dependency_requirement: "all_started"
+			disable_toast: true
+			id: "03386EF94707C999"
+			tasks: [{
+				id: "3B3C03672F656C74"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	title: "A Piece Of U-Cake"
+}

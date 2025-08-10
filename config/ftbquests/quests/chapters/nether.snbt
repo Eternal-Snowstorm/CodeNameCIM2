@@ -17,6 +17,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "5F11D8144EBC0FEE"
 			rewards: [{
@@ -36,6 +37,7 @@
 		}
 		{
 			dependencies: ["5F11D8144EBC0FEE"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1A17066E8247E64A"
 			size: 1.0d
@@ -49,6 +51,7 @@
 		}
 		{
 			dependencies: ["1A17066E8247E64A"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "341B808E312E2E20"
 			rewards: [{
@@ -72,6 +75,7 @@
 				"5CB151F91E669D1C"
 				"4E83A277F74A2462"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "37481D6C049C988F"
 			size: 1.0d
@@ -84,6 +88,7 @@
 			y: 3.0d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "minecraft:milk_bucket"
 			id: "4E83A277F74A2462"
@@ -97,6 +102,7 @@
 			y: 2.0d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "6D0520B2CE148580"
 			rewards: [{
@@ -116,6 +122,7 @@
 		}
 		{
 			dependencies: ["6D0520B2CE148580"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "5219A529E3F6041A"
 			size: 1.0d
@@ -129,6 +136,7 @@
 		}
 		{
 			dependencies: ["5219A529E3F6041A"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "5CB151F91E669D1C"
 			rewards: [{
@@ -148,6 +156,7 @@
 		}
 		{
 			dependencies: ["37481D6C049C988F"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "467B4443D949C26C"
 			rewards: [{
@@ -167,6 +176,7 @@
 		}
 		{
 			dependencies: ["467B4443D949C26C"]
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "minecraft:lava_bucket"
 			id: "62FA67263227B2BB"
@@ -184,6 +194,7 @@
 				"4F585F87D301063A"
 				"032EFAA67639B4DA"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "tconstruct:liquid_soul_bucket"
 			id: "146A740517A7F0B8"
@@ -197,6 +208,7 @@
 			y: 1.5d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "56EE6D6C0290ACCF"
 			rewards: [{
@@ -223,6 +235,7 @@
 		}
 		{
 			dependencies: ["56EE6D6C0290ACCF"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4F585F87D301063A"
 			size: 1.0d
@@ -236,6 +249,7 @@
 		}
 		{
 			dependencies: ["146A740517A7F0B8"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "7340E37954926B04"
 			rewards: [{
@@ -255,6 +269,7 @@
 		}
 		{
 			dependencies: ["7340E37954926B04"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4ED09D7FC978F936"
 			rewards: [{
@@ -274,6 +289,7 @@
 		}
 		{
 			dependencies: ["4ED09D7FC978F936"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1D1A51F1EDBF8EAA"
 			rewards: [{
@@ -293,6 +309,7 @@
 		}
 		{
 			dependencies: ["62FA67263227B2BB"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "032EFAA67639B4DA"
 			rewards: [{

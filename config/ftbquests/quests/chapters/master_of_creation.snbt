@@ -1,0 +1,159 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "master_of_creation"
+	group: ""
+	icon: "cmi:creative_mechanism_flash_drive"
+	id: "47619119D21C2664"
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5D2E38893802D455"
+			subtitle: "一会你就知道为什么要这么多了"
+			tasks: [
+				{
+					count: 78L
+					id: "3C0DE860C91A0332"
+					item: { Count: 78, id: "cmi:programmed_flash_drive" }
+					type: "item"
+				}
+				{
+					id: "3C7A3837E43BBCA6"
+					item: "cmi:flash_disk_writer"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5D2E38893802D455"]
+			id: "76B5771D01DDF6B7"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				count: 2L
+				id: "35DC21BFF97A6DBA"
+				item: "cmi:creative_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["76B5771D01DDF6B7"]
+			id: "1C12DA73C3D2EBF7"
+			shape: "square"
+			size: 1.2d
+			tasks: [{
+				id: "64593EDCC4830B44"
+				item: "create:creative_crate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "69496289CC226EAC"
+			tasks: [{
+				id: "7F2CA93CC59ED37F"
+				item: "cmi:final_mechanism_part"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "6025E8FD11984A19"
+			tasks: [{
+				id: "73D862A4093EFC65"
+				item: "cmi:ultimate_mekanism_mechanism_flash_drive"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "399AE43712409288"
+			tasks: [{
+				id: "1C85466D1B608366"
+				item: "cmi:nuclear_mechanism_flash_drive"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			id: "179711BCD1EB9FDA"
+			tasks: [{
+				id: "355593164B68A6F5"
+				item: "cmi:advanced_mekanism_mechanism_flash_drive"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			id: "2079EB86DA286242"
+			tasks: [{
+				id: "3289D9E9E232A59C"
+				item: "cmi:photosensitive_mechanism_flash_drive"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			id: "58FB3DB99F14279F"
+			tasks: [{
+				id: "5F53194C356D3C08"
+				item: "cmi:thermal_mechanism_flash_drive"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			id: "6C5BC013413F6E19"
+			tasks: [{
+				id: "374E677A04CFBCE7"
+				item: "cmi:precision_mechanism_flash_drive"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			id: "76D2A5FA10C65F68"
+			tasks: [{
+				id: "528DAE4BDBC0546A"
+				item: "cmi:copper_mechanism_flash_drive"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			id: "4CD816217AB76A92"
+			tasks: [{
+				id: "45AC73670A4344AF"
+				item: "cmi:bronze_mechanism_flash_drive"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			id: "1B5B01986FBEC954"
+			tasks: [{
+				id: "7165DF191AE89E1A"
+				item: "cmi:coil_mechanism_flash_drive"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+	]
+	title: "Master of Creation"
+}

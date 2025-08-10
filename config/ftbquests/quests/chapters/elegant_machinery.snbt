@@ -1,18 +1,19 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "1C329BE521F2DF4B"
+	filename: "elegant_machinery"
 	group: ""
 	icon: "create:precision_mechanism"
-	id: "1C329BE521F2DF4B"
+	id: "7E1852EB31247391"
 	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["45F498C68434124E"]
 			id: "6D5F23703924F441"
+			subtitle: "Don't use your hands; ues the belt grinder"
 			tasks: [{
-				id: "2D7D1A91968907BB"
+				id: "14A8E8D716B27C1E"
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
@@ -35,14 +36,22 @@
 			y: 0.5d
 		}
 		{
+			disable_toast: true
+			icon: "minecraft:quartz"
 			id: "65B6BBF87D6B8B97"
 			optional: true
 			shape: "diamond"
-			subtitle: "不建议使用，消耗比较大"
 			tasks: [
 				{
 					id: "1D7DCB92BD5622DB"
-					item: "minecraft:quartz"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/quartz"
+						}
+					}
+					title: "Any #forge:gems/quartz"
 					type: "item"
 				}
 				{
@@ -51,26 +60,26 @@
 					type: "item"
 				}
 			]
-			title: "前期配方"
+			title: "Secondary Recipe"
 			x: -2.0d
 			y: -0.5d
 		}
 		{
+			icon: "ae2:charged_certus_quartz_crystal"
 			id: "0D5DA19848AB76B1"
-			subtitle: "可以先用ae充能器将就一下"
+			subtitle: "Chargers will do"
 			tasks: [
-				{
-					id: "610D1AFF8E82C487"
-					item: "ae2:charged_certus_quartz_crystal"
-					type: "item"
-				}
 				{
 					id: "6043AE3D372D4BA5"
 					item: "immersiveengineering:redstone_acid_bucket"
 					type: "item"
 				}
+				{
+					id: "18F81E0609EEC499"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
 			]
-			title: "后期配方"
 			x: -3.0d
 			y: 0.5d
 		}
@@ -78,6 +87,7 @@
 			id: "4E2E1B22C1CEA8C1"
 			optional: true
 			shape: "diamond"
+			subtitle: "You'll have to crank it up"
 			tasks: [{
 				id: "4458BE0DB3D3EF08"
 				item: "ae2:charger"
@@ -100,6 +110,7 @@
 		{
 			dependencies: ["53D955D9B5CCC02E"]
 			id: "3B48B2AE5448F88E"
+			shape: "gear"
 			size: 2.0d
 			tasks: [{
 				id: "4E023564982FF530"
@@ -112,13 +123,16 @@
 		{
 			dependencies: ["3B48B2AE5448F88E"]
 			id: "228F544F6D51A4B7"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Processional Ore Professor"
 			tasks: [{
 				id: "4988E4DCE32C9967"
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.5d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3B48B2AE5448F88E"]
@@ -145,23 +159,25 @@
 		{
 			dependencies: ["3B48B2AE5448F88E"]
 			id: "2A6DB9B66CA8C18C"
+			subtitle: "Used to make curving heads"
 			tasks: [{
 				id: "246DFA8C4195A3F8"
 				item: "vintageimprovements:lathe"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["3B48B2AE5448F88E"]
 			id: "6035A421AC0BD9F7"
+			subtitle: "Literally useless, but saves you a lot of sturdy sheets"
 			tasks: [{
 				id: "1AF7DE7877CF0D43"
 				item: "vintageimprovements:helve_hammer"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 3.5d
 		}
 		{
@@ -178,17 +194,21 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["3B48B2AE5448F88E"]
+			dependencies: [
+				"3B48B2AE5448F88E"
+				"0CB7CA460732E67E"
+			]
 			id: "6D5697CB6C74F830"
 			optional: true
 			shape: "diamond"
+			subtitle: "In case you're a building maniac"
 			tasks: [{
 				id: "228AFD5BD452CD9B"
 				item: "create:wand_of_symmetry"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -199,7 +219,14 @@
 			subtitle: "同样也可以用ae充能器将就一下"
 			tasks: [{
 				id: "59578E87A3CB1807"
-				item: "cmi:charged_amethyst"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/charged_amethyst"
+					}
+				}
+				title: "Any #forge:gems/charged_amethyst"
 				type: "item"
 			}]
 			x: -1.5d
@@ -210,7 +237,14 @@
 			id: "1B9A79A7D2845A3B"
 			tasks: [{
 				id: "17E4F41FB0697C6A"
-				item: "minecraft:amethyst_shard"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/amethyst"
+					}
+				}
+				title: "Any #forge:gems/amethyst"
 				type: "item"
 			}]
 			x: -3.0d
@@ -239,7 +273,14 @@
 			id: "01A4036255B88FDD"
 			tasks: [{
 				id: "443B840E74F16FEC"
-				item: "minecraft:quartz"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/quartz"
+					}
+				}
+				title: "Any #forge:gems/quartz"
 				type: "item"
 			}]
 			x: -3.0d
@@ -248,7 +289,7 @@
 		{
 			dependencies: ["3F0C4A0AD97615EE"]
 			id: "461F149DB4B79436"
-			subtitle: "水洗灵魂沙以量产石英"
+			subtitle: "Haunted sand"
 			tasks: [{
 				id: "2AAA2CE342011B6C"
 				item: "minecraft:soul_sand"
@@ -265,14 +306,15 @@
 				item: "vintageimprovements:laser_item"
 				type: "item"
 			}]
-			x: 3.5d
+			title: "Laser core"
+			x: 2.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["01A4036255B88FDD"]
 			id: "7F819724F9ACC820"
 			tasks: [{
-				id: "1FBBBD9EC1090FA1"
+				id: "49F57132FB44B56E"
 				item: "minecraft:quartz_slab"
 				type: "item"
 			}]
@@ -286,6 +328,7 @@
 				"2B27BAFDEB5B567C"
 			]
 			id: "47574C3F29B28A25"
+			shape: "gear"
 			size: 2.0d
 			tasks: [{
 				id: "6E13312AB1CD6487"
@@ -297,9 +340,17 @@
 		}
 		{
 			id: "3BC2B2D48B8AED66"
+			subtitle: "Just a little bit will do"
 			tasks: [{
 				id: "756D3F4A4DB6BF3B"
-				item: "minecraft:glowstone_dust"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/glowstone"
+					}
+				}
+				title: "Any #forge:dusts/glowstone"
 				type: "item"
 			}]
 			x: -0.5d
@@ -308,7 +359,9 @@
 		{
 			dependencies: ["53D955D9B5CCC02E"]
 			id: "0CB7CA460732E67E"
+			shape: "gear"
 			size: 2.0d
+			subtitle: "Fail safe"
 			tasks: [{
 				id: "401ECEF3887585CE"
 				item: "create:precision_mechanism"
@@ -317,6 +370,146 @@
 			x: 2.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["616E469CD48DE166"]
+			id: "39B65FFFBE06F481"
+			size: 1.5d
+			tasks: [{
+				id: "4DD363014EBBD648"
+				item: "vintageimprovements:laser"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["39B65FFFBE06F481"]
+			id: "74179D016BFA23EB"
+			subtitle: "Laser crushed amethyst to get glowstone"
+			tasks: [{
+				id: "7A517A71A3823BC1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/glowstone"
+					}
+				}
+				title: "Any #forge:dusts/glowstone"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2B27BAFDEB5B567C"]
+			id: "52C1D90EEF0C79C5"
+			subtitle: "Sand charged amethyst to get redstone"
+			tasks: [{
+				id: "2FAD53986BE34317"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/redstone"
+					}
+				}
+				title: "Any #forge:dusts/redstone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["39B65FFFBE06F481"]
+			id: "2FE3E707C0A5D658"
+			shape: "gear"
+			subtitle: "To the next next chapter"
+			tasks: [{
+				id: "2790B7C5FA086FAE"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["11BE58B08BECE324"]
+			icon: "createaddition:copper_spool"
+			id: "0500572AA2764EDC"
+			tasks: [
+				{
+					count: 4L
+					id: "7F7C935854BAEE23"
+					item: { Count: 4, id: "createaddition:copper_spool" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "383AABDE329FD9EB"
+					item: { Count: 4, id: "createaddition:connector" }
+					type: "item"
+				}
+			]
+			title: "Simple power delivering"
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["228F544F6D51A4B7"]
+			id: "547983BEE84A4B9D"
+			tasks: [{
+				id: "040E7B91F1C5CBF8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/obsidian"
+					}
+				}
+				title: "Any #forge:dusts/obsidian"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["547983BEE84A4B9D"]
+			id: "486C3122D2542380"
+			tasks: [{
+				id: "49883B1DC1FE9E68"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/obsidian"
+					}
+				}
+				title: "Any #forge:plates/obsidian"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["486C3122D2542380"]
+			id: "51A6B0B7FBDAB5A0"
+			shape: "gear"
+			tasks: [{
+				id: "438E41B1547436D2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/dense_obsidian"
+					}
+				}
+				title: "Any #forge:plates/dense_obsidian"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
 	]
-	title: "精密仪器"
+	title: "Elegant Machinery"
 }

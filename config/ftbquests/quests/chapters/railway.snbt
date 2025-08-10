@@ -18,6 +18,7 @@
 	quests: [
 		{
 			dependencies: ["360EAA901A674859"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "76A0B5FAB70C2CF4"
 			tasks: [{
@@ -29,6 +30,7 @@
 			y: -0.37857142857143344d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "360EAA901A674859"
 			rewards: [{
@@ -47,6 +49,7 @@
 		}
 		{
 			dependencies: ["76A0B5FAB70C2CF4"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1445F71D135D45AC"
 			rewards: [{
@@ -72,6 +75,7 @@
 		}
 		{
 			dependencies: ["1445F71D135D45AC"]
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "minecraft:lava_bucket"
 			id: "0DA999FE8A0D80D7"
@@ -85,6 +89,7 @@
 		}
 		{
 			dependencies: ["0DA999FE8A0D80D7"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "79FE17B82BB0AC09"
 			tasks: [{
@@ -97,6 +102,7 @@
 		}
 		{
 			dependencies: ["79FE17B82BB0AC09"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "2EBAE12721EE101D"
 			rewards: [{
@@ -115,6 +121,7 @@
 		}
 		{
 			dependencies: ["2EBAE12721EE101D"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "195146AD9810DA9A"
 			tasks: [{
@@ -127,6 +134,7 @@
 		}
 		{
 			dependencies: ["195146AD9810DA9A"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1F839C620701DF10"
 			rewards: [{
@@ -140,10 +148,11 @@
 				type: "item"
 			}]
 			title: "Dense Sturdy Sheet"
-			x: -7.737142857142871d
-			y: 1.0714285714285694d
+			x: -7.5d
+			y: 1.0d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4654E674FEDEE1B0"
 			rewards: [{
@@ -165,6 +174,7 @@
 				"1F839C620701DF10"
 				"4654E674FEDEE1B0"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "545A07017D1759D1"
 			tasks: [{
@@ -177,6 +187,7 @@
 		}
 		{
 			dependencies: ["545A07017D1759D1"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "132C06A144E76AFB"
 			tasks: [{
@@ -190,6 +201,7 @@
 		}
 		{
 			dependencies: ["132C06A144E76AFB"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4417AEF4EEA8754C"
 			tasks: [{

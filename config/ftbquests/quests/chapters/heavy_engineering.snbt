@@ -17,6 +17,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "5BFFB06867926424"
 			rewards: [{
@@ -42,6 +43,7 @@
 		}
 		{
 			dependencies: ["5BFFB06867926424"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "12429DAA0F211857"
 			tasks: [{
@@ -54,6 +56,7 @@
 		}
 		{
 			dependencies: ["12429DAA0F211857"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "28F91ED583A2E111"
 			rewards: [{
@@ -79,6 +82,7 @@
 		}
 		{
 			dependencies: ["28F91ED583A2E111"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "756CC1515ADEA813"
 			tasks: [{
@@ -91,6 +95,7 @@
 		}
 		{
 			dependencies: ["756CC1515ADEA813"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "081C99BB553D5EE1"
 			rewards: [{
@@ -108,6 +113,7 @@
 			y: 2.507142857142867d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "181F917BFC990905"
 			rewards: [{
@@ -126,6 +132,7 @@
 		}
 		{
 			dependencies: ["181F917BFC990905"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4DB703243615AD7D"
 			tasks: [{
@@ -141,6 +148,7 @@
 				"4DB703243615AD7D"
 				"081C99BB553D5EE1"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "65502D2E5BB5860C"
 			rewards: [{
@@ -162,6 +170,7 @@
 				"081C99BB553D5EE1"
 				"65502D2E5BB5860C"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "22B078B56711D82C"
 			rewards: [{
@@ -179,6 +188,7 @@
 			y: -1.3778571428571382d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "58D6C75E7721570F"
 			rewards: [{
@@ -204,6 +214,7 @@
 		}
 		{
 			dependencies: ["58D6C75E7721570F"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3782AEE3395C52DD"
 			tasks: [{
@@ -219,6 +230,7 @@
 				"3782AEE3395C52DD"
 				"22B078B56711D82C"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "73F02C1F2AB47896"
 			rewards: [{
@@ -244,6 +256,7 @@
 		}
 		{
 			dependencies: ["73F02C1F2AB47896"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "03871707E6DA9511"
 			tasks: [{
@@ -257,6 +270,7 @@
 		}
 		{
 			dependencies: ["03871707E6DA9511"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "77D67EC1A1D6D321"
 			rewards: [{
@@ -270,8 +284,8 @@
 				type: "item"
 			}]
 			title: "Heavy Engineer Mechanism"
-			x: 28.785714285714278d
-			y: 1.986428571428597d
+			x: 28.5d
+			y: -2.0d
 		}
 	]
 	title: "Heavy Engineering"
