@@ -204,8 +204,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("random_mechanism", "随机构件")
 	addBlockLanguage("dropper_qwq", "⑨Dropper_QWQ⑨")
 	addBlockLanguage("ye_anqing", "燕栖")
-	addBlockLanguage("shi_xiao_bai_na", "shi_xiao_bai_na")
+	addBlockLanguage("shi_xiao_bai_na", "是小白啊")
 	addBlockLanguage("hanhan_ovo", "涵涵OVO")
+	addBlockLanguage("dont_kill_belalus", "DontKillBelalus")
 
 	for (let i = 1; i <= 14; i++) {
 		addPaintingLanguage(`rr${i}`, `Aleegos(${i})`, "Aleegos Reality Redemption")
