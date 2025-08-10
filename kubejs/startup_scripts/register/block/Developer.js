@@ -40,7 +40,6 @@ StartupEvents.registry("block", (event) => {
 	// DontKillBelalus
 	addDeveloperDoll("dont_kill_belalus")
 
-
 	// Other
 	// Aleegos
 	addDeveloperDoll("aleegos")
