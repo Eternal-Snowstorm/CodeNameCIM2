@@ -1,5 +1,6 @@
 {
 	autofocus_id: "219A962B82333395"
+	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "start"
@@ -20,8 +21,8 @@
 		{
 			dependencies: ["27A18EEBBE063B43"]
 			description: [
-				"Q: What if I'm spawned on a desert island?"
-				"A: Just create another world."
+				"Q: 我要是出生在沙漠咋办？"
+				"A: 重开吧。"
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:oak_log"
@@ -32,7 +33,7 @@
 				xp: 10
 			}]
 			size: 2.0d
-			subtitle: "Remember to plant them back"
+			subtitle: "记得种回去"
 			tasks: [
 				{
 					id: "5B1C9F698CB8E5CC"
@@ -59,7 +60,7 @@
 					type: "item"
 				}
 			]
-			title: "The Start Of Everything"
+			title: "万恶之源"
 			x: -5.5d
 			y: -1.5d
 		}
@@ -72,7 +73,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "Not Plank's"
 			tasks: [{
 				id: "71825456C60860A5"
 				item: {
@@ -85,7 +85,7 @@
 				title: "Any planks"
 				type: "item"
 			}]
-			title: "Planks"
+			title: "木板"
 			x: -3.5d
 			y: -1.5d
 		}
@@ -97,7 +97,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "Doesn't stick"
+			subtitle: "不是棍木"
 			tasks: [{
 				id: "7F9158854E4B0E49"
 				item: {
@@ -110,7 +110,7 @@
 				title: "Any #forge:rods/wooden"
 				type: "item"
 			}]
-			title: "Sticks"
+			title: "木棍"
 			x: -3.5d
 			y: -0.5d
 		}
@@ -122,13 +122,13 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "There isn't a cobblestone one"
+			subtitle: "不是圆石工作台"
 			tasks: [{
 				id: "6F95F79F0C6650AB"
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			title: "Crafting Table"
+			title: "工作台"
 			x: -2.5d
 			y: -1.5d
 		}
@@ -332,12 +332,12 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "Or you can just dig with hands"
+			subtitle: "你也可以手挖"
 			tasks: [{
 				id: "23868A918DDF3627"
 				type: "checkmark"
 			}]
-			title: "Shovel"
+			title: "铲子"
 			x: -1.5d
 			y: -2.0d
 		}
@@ -345,7 +345,7 @@
 			dependencies: ["1270086FA79438E4"]
 			icon: "minecraft:clay_ball"
 			id: "2F1D496A9B588220"
-			subtitle: "No I don't mean you, Dream"
+			subtitle: "不是指你，Dream（"
 			tasks: [{
 				id: "5E890AB67D72E70A"
 				item: {
@@ -358,7 +358,7 @@
 				title: "Clay"
 				type: "item"
 			}]
-			title: "Clay"
+			title: "黏土"
 			x: -0.5d
 			y: -1.5d
 		}
@@ -457,7 +457,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "String sources"
+			title: "线的来源"
 			x: -1.5d
 			y: -3.5d
 		}
@@ -583,7 +583,7 @@
 		{
 			dependencies: ["0950E73B864090F0"]
 			id: "136FAF419EC66A2F"
-			subtitle: "You definitely don't need me to teach you mine"
+			subtitle: "不需要我教了吧（"
 			tasks: [{
 				id: "5FE33B9B04299D33"
 				item: "minecraft:furnace"
@@ -596,7 +596,7 @@
 			dependencies: ["7C14A1CC724511CB"]
 			icon: "farmersdelight:cutting_board"
 			id: "4594936AAC131166"
-			subtitle: "Chop Chop Chop"
+			subtitle: "我切切切！"
 			tasks: [
 				{
 					id: "22BA1E6E753A44E6"
@@ -615,7 +615,7 @@
 					type: "item"
 				}
 			]
-			title: "Chopping Board"
+			title: "砧板"
 			x: 1.5d
 			y: -3.5d
 		}
@@ -649,7 +649,7 @@
 		{
 			dependencies: ["4594936AAC131166"]
 			id: "53608AA274E5E414"
-			subtitle: "Yes you can debark logs with the cutting board and axe"
+			subtitle: "你也可以用砧板切"
 			tasks: [
 				{
 					id: "62CF9CCED10DC49D"
@@ -673,5 +673,5 @@
 			y: -3.5d
 		}
 	]
-	title: "Embark"
+	title: "艰难前期"
 }

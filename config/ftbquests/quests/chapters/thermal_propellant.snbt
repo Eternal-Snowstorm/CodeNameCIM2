@@ -411,7 +411,7 @@
 		{
 			dependencies: ["42DA0B5B429DACC9"]
 			id: "51D67AF5AA21448F"
-			subtitle: "Alloyer, but more automation-friendly"
+			subtitle: "更方便自动化的合金"
 			tasks: [{
 				id: "62B73FA496AA1951"
 				item: "thermal:machine_smelter"
@@ -421,5 +421,5 @@
 			y: -1.0d
 		}
 	]
-	title: "Thermal Propellant"
+	title: "热力膨胀"
 }

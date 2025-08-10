@@ -519,10 +519,10 @@
 					type: "item"
 				}
 			]
-			title: "Particle Collider"
+			title: "粒子对撞机"
 			x: 4.0d
 			y: 0.0d
 		}
 	]
-	title: "Space Leap"
+	title: "太空之旅"
 }

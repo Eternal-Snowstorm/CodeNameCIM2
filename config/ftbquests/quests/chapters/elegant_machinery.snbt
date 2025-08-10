@@ -11,7 +11,7 @@
 		{
 			dependencies: ["45F498C68434124E"]
 			id: "6D5F23703924F441"
-			subtitle: "Don't use your hands; ues the belt grinder"
+			subtitle: "使用砂带磨床解放双手"
 			tasks: [{
 				id: "14A8E8D716B27C1E"
 				item: "create:polished_rose_quartz"
@@ -125,7 +125,7 @@
 			id: "228F544F6D51A4B7"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "Processional Ore Professor"
+			subtitle: "矿石处理砖家"
 			tasks: [{
 				id: "4988E4DCE32C9967"
 				item: "create:crushing_wheel"
@@ -159,7 +159,7 @@
 		{
 			dependencies: ["3B48B2AE5448F88E"]
 			id: "2A6DB9B66CA8C18C"
-			subtitle: "Used to make curving heads"
+			subtitle: "制作冲压模具"
 			tasks: [{
 				id: "246DFA8C4195A3F8"
 				item: "vintageimprovements:lathe"
@@ -171,7 +171,7 @@
 		{
 			dependencies: ["3B48B2AE5448F88E"]
 			id: "6035A421AC0BD9F7"
-			subtitle: "Literally useless, but saves you a lot of sturdy sheets"
+			subtitle: "有点鸡肋，但是可以帮你省坚固板（"
 			tasks: [{
 				id: "1AF7DE7877CF0D43"
 				item: "vintageimprovements:helve_hammer"
@@ -201,7 +201,7 @@
 			id: "6D5697CB6C74F830"
 			optional: true
 			shape: "diamond"
-			subtitle: "In case you're a building maniac"
+			subtitle: "如果你是个基建狂魔"
 			tasks: [{
 				id: "228AFD5BD452CD9B"
 				item: "create:wand_of_symmetry"
@@ -289,7 +289,7 @@
 		{
 			dependencies: ["3F0C4A0AD97615EE"]
 			id: "461F149DB4B79436"
-			subtitle: "Haunted sand"
+			subtitle: "缠魂的沙子"
 			tasks: [{
 				id: "2AAA2CE342011B6C"
 				item: "minecraft:soul_sand"
@@ -340,7 +340,7 @@
 		}
 		{
 			id: "3BC2B2D48B8AED66"
-			subtitle: "Just a little bit will do"
+			subtitle: "只需要一点"
 			tasks: [{
 				id: "756D3F4A4DB6BF3B"
 				item: {
@@ -385,7 +385,7 @@
 		{
 			dependencies: ["39B65FFFBE06F481"]
 			id: "74179D016BFA23EB"
-			subtitle: "Laser crushed amethyst to get glowstone"
+			subtitle: "紫水晶经高能激光处理后，可以发光"
 			tasks: [{
 				id: "7A517A71A3823BC1"
 				item: {
@@ -424,7 +424,7 @@
 			dependencies: ["39B65FFFBE06F481"]
 			id: "2FE3E707C0A5D658"
 			shape: "gear"
-			subtitle: "To the next next chapter"
+			subtitle: "下下章"
 			tasks: [{
 				id: "2790B7C5FA086FAE"
 				item: "thermal:rf_coil"
@@ -451,7 +451,7 @@
 					type: "item"
 				}
 			]
-			title: "Simple power delivering"
+			title: "简易能量传输"
 			x: -4.0d
 			y: 3.5d
 		}
@@ -511,5 +511,5 @@
 			y: 4.0d
 		}
 	]
-	title: "Elegant Machinery"
+	title: "智能机械"
 }
