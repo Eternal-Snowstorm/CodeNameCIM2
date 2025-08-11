@@ -1,0 +1,324 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "true",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "true",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "false",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "false",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "true",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "true",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "false",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "true",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "true",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "false",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "false",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "true",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "true",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "false",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "false",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "true",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "true",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "false",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "false",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "true",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "true",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "false",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "false",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "true",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "true",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "false",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "false",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "true",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "true",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered_side": "false",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:powered_latch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered_side": "false",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:powered_latch"
+	}
+]

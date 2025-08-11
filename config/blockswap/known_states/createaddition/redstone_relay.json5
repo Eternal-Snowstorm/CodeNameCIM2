@@ -1,0 +1,1604 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "none",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "none",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_180",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_180",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_counterclockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_counterclockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_180",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_180",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_counterclockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_counterclockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_180",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_180",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_counterclockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_counterclockwise_90",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "none",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_180",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_180",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_counterclockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_counterclockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_180",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_180",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_counterclockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_counterclockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_180",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_180",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_counterclockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_counterclockwise_90",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "none",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "none",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_180",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_180",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_counterclockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_counterclockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_180",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_180",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_counterclockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_counterclockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_180",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_180",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_counterclockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_counterclockwise_90",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "none",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "none",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_180",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_180",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_counterclockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_counterclockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_180",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_180",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_counterclockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_counterclockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_180",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_180",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_counterclockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_counterclockwise_90",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "none",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "none",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_180",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_180",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_counterclockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_counterclockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_180",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_180",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_counterclockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_counterclockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_180",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_180",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_counterclockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_counterclockwise_90",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "none",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "none",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_180",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_180",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_counterclockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_counterclockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_180",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_180",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_counterclockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_counterclockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_180",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_180",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_counterclockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_counterclockwise_90",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "none",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "none",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_180",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_180",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_counterclockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_counterclockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_180",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_180",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_counterclockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_counterclockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_180",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_180",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_counterclockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_counterclockwise_90",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "none",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "none",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_clockwise_180",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_clockwise_180",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "y_counterclockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "y_counterclockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_clockwise_180",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_clockwise_180",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "x_counterclockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "x_counterclockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_clockwise_180",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_clockwise_180",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "true",
+			"rotation": "z_counterclockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"vertical": "false",
+			"rotation": "z_counterclockwise_90",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createaddition:redstone_relay"
+	}
+]

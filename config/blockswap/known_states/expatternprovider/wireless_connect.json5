@@ -1,0 +1,278 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "0"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "0"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "1"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "1"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "2"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "2"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "3"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "3"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "4"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "4"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "5"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "5"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "6"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "6"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "7"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "7"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "8"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "8"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "9"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "9"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "10"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "10"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "11"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "11"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "12"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "12"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "13"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "13"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "14"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "14"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "15"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "false",
+			"color": "15"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"connected": "true",
+			"color": "16"
+		},
+		"Name": "expatternprovider:wireless_connect"
+	},
+	{
+		"Name": "expatternprovider:wireless_connect"
+	}
+]

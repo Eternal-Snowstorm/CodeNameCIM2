@@ -1,0 +1,724 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "plain",
+			"positive": "true",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top",
+			"positive": "true",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle",
+			"positive": "true",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom",
+			"positive": "true",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_single",
+			"positive": "true",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top_single",
+			"positive": "true",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle_single",
+			"positive": "true",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom_single",
+			"positive": "true",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "plain",
+			"positive": "false",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window",
+			"positive": "false",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top",
+			"positive": "false",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle",
+			"positive": "false",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom",
+			"positive": "false",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_single",
+			"positive": "false",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top_single",
+			"positive": "false",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle_single",
+			"positive": "false",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom_single",
+			"positive": "false",
+			"negative": "true",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "plain",
+			"positive": "true",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window",
+			"positive": "true",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top",
+			"positive": "true",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle",
+			"positive": "true",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom",
+			"positive": "true",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_single",
+			"positive": "true",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top_single",
+			"positive": "true",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle_single",
+			"positive": "true",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom_single",
+			"positive": "true",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "plain",
+			"positive": "false",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window",
+			"positive": "false",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top",
+			"positive": "false",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle",
+			"positive": "false",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom",
+			"positive": "false",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_single",
+			"positive": "false",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top_single",
+			"positive": "false",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle_single",
+			"positive": "false",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom_single",
+			"positive": "false",
+			"negative": "false",
+			"axis": "x"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "plain",
+			"positive": "true",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window",
+			"positive": "true",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top",
+			"positive": "true",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle",
+			"positive": "true",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom",
+			"positive": "true",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_single",
+			"positive": "true",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top_single",
+			"positive": "true",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle_single",
+			"positive": "true",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom_single",
+			"positive": "true",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "plain",
+			"positive": "false",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window",
+			"positive": "false",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top",
+			"positive": "false",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle",
+			"positive": "false",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom",
+			"positive": "false",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_single",
+			"positive": "false",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top_single",
+			"positive": "false",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle_single",
+			"positive": "false",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom_single",
+			"positive": "false",
+			"negative": "true",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "plain",
+			"positive": "true",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window",
+			"positive": "true",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top",
+			"positive": "true",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle",
+			"positive": "true",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom",
+			"positive": "true",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_single",
+			"positive": "true",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top_single",
+			"positive": "true",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle_single",
+			"positive": "true",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom_single",
+			"positive": "true",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "plain",
+			"positive": "false",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window",
+			"positive": "false",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top",
+			"positive": "false",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle",
+			"positive": "false",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom",
+			"positive": "false",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_single",
+			"positive": "false",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_top_single",
+			"positive": "false",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_middle_single",
+			"positive": "false",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shape": "window_bottom_single",
+			"positive": "false",
+			"negative": "false",
+			"axis": "z"
+		},
+		"Name": "create_connected:creative_fluid_vessel"
+	}
+]

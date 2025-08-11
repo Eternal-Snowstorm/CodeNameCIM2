@@ -1,0 +1,1538 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "true",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "true",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"open": "false",
+			"lavalogged": "false",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "supplementaries:netherite_trapdoor"
+	}
+]

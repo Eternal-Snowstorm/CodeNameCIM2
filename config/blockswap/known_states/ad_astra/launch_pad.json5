@@ -1,0 +1,329 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"part": "top_left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"part": "top_left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"part": "top_left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"part": "top_left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"part": "top"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"part": "top"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"part": "top"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"part": "top"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"part": "top_right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"part": "top_right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"part": "top_right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"part": "top_right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"part": "left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"part": "left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"part": "left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"part": "left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"part": "center"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"part": "center"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"part": "center"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"part": "right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"part": "right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"part": "right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"part": "right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"part": "bottom_left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"part": "bottom_left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"part": "bottom_left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"part": "bottom_left"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"part": "bottom"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"part": "bottom"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"part": "bottom"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"part": "bottom"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"part": "bottom_right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"part": "bottom_right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"part": "bottom_right"
+		},
+		"Name": "ad_astra:launch_pad"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"part": "bottom_right"
+		},
+		"Name": "ad_astra:launch_pad"
+	}
+]

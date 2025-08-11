@@ -1,0 +1,2054 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "0"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "1"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "2"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "3"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "4"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "5"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "6"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "7"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "8"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "9"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "10"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "11"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "12"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "13"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "14"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15",
+			"age": "15"
+		},
+		"Name": "supplementaries:lumisene"
+	}
+]

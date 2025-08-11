@@ -1,0 +1,324 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "true",
+			"packed": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "true",
+			"packed": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "false",
+			"packed": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "false",
+			"packed": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "true",
+			"packed": "false",
+			"facing": "north"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "true",
+			"packed": "false",
+			"facing": "north"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "false",
+			"packed": "false",
+			"facing": "north"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "true",
+			"packed": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "true",
+			"packed": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "false",
+			"packed": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "false",
+			"packed": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "true",
+			"packed": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "true",
+			"packed": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "false",
+			"packed": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "false",
+			"packed": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "true",
+			"packed": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "true",
+			"packed": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "false",
+			"packed": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "false",
+			"packed": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "true",
+			"packed": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "true",
+			"packed": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "false",
+			"packed": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "false",
+			"packed": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "true",
+			"packed": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "true",
+			"packed": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "false",
+			"packed": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "false",
+			"packed": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "true",
+			"packed": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "true",
+			"packed": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"triggered": "false",
+			"packed": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"triggered": "false",
+			"packed": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:trapped_present_blue"
+	}
+]

@@ -1,0 +1,3890 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "none"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "low"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "none",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "low",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "none",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "low",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "true",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "true",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "low",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "tall",
+			"waterlogged": "false",
+			"up": "false",
+			"south": "tall",
+			"north": "tall",
+			"east": "tall"
+		},
+		"Name": "minecraft:andesite_wall"
+	}
+]

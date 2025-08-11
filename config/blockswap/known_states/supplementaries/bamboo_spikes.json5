@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "false",
+			"facing": "north"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "true",
+			"facing": "up"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "true",
+			"facing": "up"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "false",
+			"facing": "up"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "false",
+			"facing": "up"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "true",
+			"facing": "down"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "true",
+			"facing": "down"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tipped": "false",
+			"facing": "down"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tipped": "false",
+			"facing": "down"
+		},
+		"Name": "supplementaries:bamboo_spikes"
+	}
+]

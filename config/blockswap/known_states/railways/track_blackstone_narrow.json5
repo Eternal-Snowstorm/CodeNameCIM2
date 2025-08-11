@@ -1,0 +1,689 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "none"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "none"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "none"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "none"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "zo"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "zo"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "zo"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "xo"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "xo"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "xo"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "xo"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "pd"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "pd"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "pd"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "pd"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "nd"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "nd"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "nd"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "nd"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "an"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "an"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "an"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "an"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "as"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "as"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "as"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "as"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "ae"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "ae"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "ae"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "ae"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "aw"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "aw"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "aw"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "aw"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "tn"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "tn"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "tn"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "tn"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "ts"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "ts"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "ts"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "ts"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "te"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "te"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "te"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "te"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "tw"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "tw"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "tw"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "tw"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_o"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_o"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_o"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_o"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_d"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_d"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_d"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_d"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_pdx"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_pdx"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_pdx"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_pdx"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_pdz"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_pdz"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_pdz"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_pdz"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_ndx"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_ndx"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_ndx"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_ndx"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_ndz"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_ndz"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_ndz"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_ndz"
+		},
+		"Name": "railways:track_blackstone_narrow"
+	}
+]

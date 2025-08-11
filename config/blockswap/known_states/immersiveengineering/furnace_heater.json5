@@ -1,0 +1,102 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "down",
+			"active": "true"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "up",
+			"active": "true"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "down",
+			"active": "false"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "up",
+			"active": "false"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "immersiveengineering:furnace_heater"
+	}
+]

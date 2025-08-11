@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "north",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "east",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "east",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "south",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "south",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "west",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "west",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "up",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "up",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "down",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "down",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "north",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "north",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "east",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "east",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "south",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "south",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "west",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "west",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "up",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "up",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "true",
+			"facing": "down",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"flipped": "false",
+			"facing": "down",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_saw"
+	}
+]

@@ -1,0 +1,70 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north"
+		},
+		"Name": "farmersdelight:blue_canvas_wall_sign"
+	},
+	{
+		"Name": "farmersdelight:blue_canvas_wall_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south"
+		},
+		"Name": "farmersdelight:blue_canvas_wall_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south"
+		},
+		"Name": "farmersdelight:blue_canvas_wall_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west"
+		},
+		"Name": "farmersdelight:blue_canvas_wall_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west"
+		},
+		"Name": "farmersdelight:blue_canvas_wall_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east"
+		},
+		"Name": "farmersdelight:blue_canvas_wall_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east"
+		},
+		"Name": "farmersdelight:blue_canvas_wall_sign"
+	}
+]

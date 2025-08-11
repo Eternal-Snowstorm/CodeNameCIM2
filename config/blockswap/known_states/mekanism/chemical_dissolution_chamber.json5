@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "north",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "north",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "mekanism:chemical_dissolution_chamber"
+	}
+]

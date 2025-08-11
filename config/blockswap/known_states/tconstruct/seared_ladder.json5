@@ -1,0 +1,149 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "true",
+			"facing": "north",
+			"bottom": "true"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "true",
+			"facing": "south",
+			"bottom": "true"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "false",
+			"facing": "south",
+			"bottom": "true"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "true",
+			"facing": "west",
+			"bottom": "true"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "false",
+			"facing": "west",
+			"bottom": "true"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "true",
+			"facing": "east",
+			"bottom": "true"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "false",
+			"facing": "east",
+			"bottom": "true"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "true",
+			"facing": "north",
+			"bottom": "false"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "false",
+			"facing": "north",
+			"bottom": "false"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "true",
+			"facing": "south",
+			"bottom": "false"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "false",
+			"facing": "south",
+			"bottom": "false"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "true",
+			"facing": "west",
+			"bottom": "false"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "false",
+			"facing": "west",
+			"bottom": "false"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "true",
+			"facing": "east",
+			"bottom": "false"
+		},
+		"Name": "tconstruct:seared_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"in_structure": "false",
+			"facing": "east",
+			"bottom": "false"
+		},
+		"Name": "tconstruct:seared_ladder"
+	}
+]

@@ -1,0 +1,422 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "0"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "1"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "1"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "2"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "2"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "3"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "3"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "4"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "4"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "5"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "5"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "6"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "6"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "7"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "7"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "8"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "8"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "9"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "9"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "10"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "10"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "11"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "11"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "12"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "12"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "13"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "13"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "14"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "14"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "15"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "15"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "16"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "16"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "17"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "17"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "18"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "18"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "19"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "19"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "20"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "20"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "21"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "21"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "22"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "22"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "23"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "23"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "24"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "24"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "true",
+			"age": "25"
+		},
+		"Name": "minecraft:cave_vines"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"berries": "false",
+			"age": "25"
+		},
+		"Name": "minecraft:cave_vines"
+	}
+]

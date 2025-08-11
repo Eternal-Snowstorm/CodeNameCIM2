@@ -1,0 +1,293 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "side_up",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "side_down",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "side_down",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "vert_down",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "vert_down",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "vert_up",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "vert_up",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "side_up",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "side_up",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "side_down",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "side_down",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "vert_down",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "vert_down",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "vert_up",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "vert_up",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "side_up",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "side_up",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "side_down",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "side_down",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "vert_down",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "vert_down",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "vert_up",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "vert_up",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "side_up",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "side_up",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "side_down",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "side_down",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "vert_down",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "vert_down",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"orientation": "vert_up",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"orientation": "vert_up",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:steel_wallmount"
+	}
+]

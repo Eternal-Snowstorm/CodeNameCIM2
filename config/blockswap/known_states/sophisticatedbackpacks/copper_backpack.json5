@@ -1,0 +1,707 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "north",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "north",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "north",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "north",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "north",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "north",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "north",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "south",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "south",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "south",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "south",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "south",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "south",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "south",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "south",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "west",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "west",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "west",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "west",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "west",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "west",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "west",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "west",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "east",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "east",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "east",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "east",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "east",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "east",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "east",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "east",
+			"battery": "true"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "north",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "north",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "north",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "north",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "north",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "north",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "north",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "north",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "south",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "south",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "south",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "south",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "south",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "south",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "south",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "south",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "west",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "west",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "west",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "west",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "west",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "west",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "west",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "west",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "east",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "true",
+			"facing": "east",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "east",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "true",
+			"facing": "east",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "east",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "true",
+			"left_tank": "false",
+			"facing": "east",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "east",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"right_tank": "false",
+			"left_tank": "false",
+			"facing": "east",
+			"battery": "false"
+		},
+		"Name": "sophisticatedbackpacks:copper_backpack"
+	}
+]

@@ -1,0 +1,198 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"blaze": "none"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"blaze": "none"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"blaze": "none"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"blaze": "smouldering"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"blaze": "smouldering"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"blaze": "smouldering"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"blaze": "smouldering"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"blaze": "fading"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"blaze": "fading"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"blaze": "fading"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"blaze": "fading"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"blaze": "kindled"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"blaze": "kindled"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"blaze": "kindled"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"blaze": "kindled"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"blaze": "seething"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"blaze": "seething"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"blaze": "seething"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"blaze": "seething"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"blaze": "grilled"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"blaze": "grilled"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"blaze": "grilled"
+		},
+		"Name": "create:blaze_burner"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"blaze": "grilled"
+		},
+		"Name": "create:blaze_burner"
+	}
+]

@@ -1,0 +1,4804 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "north"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "east"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "south"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "west"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "up"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "push",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "pull",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "none",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "none",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_clockwise_180",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "y_counterclockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_clockwise_180",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "x_counterclockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_clockwise_180",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "default",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"variant": "girder",
+			"rotation": "z_counterclockwise_90",
+			"mode": "passive",
+			"facing": "down"
+		},
+		"Name": "createaddition:large_connector"
+	}
+]

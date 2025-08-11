@@ -70,6 +70,7 @@ XaeroWaypoints*
 # Config
 /config/*
 !/config/openloader
+!/config/blockswap
 !/config/almostunified/
 !/config/drippyloadingscreen/
 !/config/fancymenu/

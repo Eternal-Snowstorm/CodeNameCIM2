@@ -1,0 +1,3699 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "railways:smokestack_diesel"
+	}
+]

@@ -1,0 +1,324 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "true",
+			"flipped": "true",
+			"facing": "north"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "true",
+			"flipped": "true",
+			"facing": "north"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "false",
+			"flipped": "true",
+			"facing": "north"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "false",
+			"flipped": "true",
+			"facing": "north"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "true",
+			"flipped": "false",
+			"facing": "north"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "true",
+			"flipped": "false",
+			"facing": "north"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "false",
+			"flipped": "false",
+			"facing": "north"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "true",
+			"flipped": "true",
+			"facing": "south"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "true",
+			"flipped": "true",
+			"facing": "south"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "false",
+			"flipped": "true",
+			"facing": "south"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "false",
+			"flipped": "true",
+			"facing": "south"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "true",
+			"flipped": "false",
+			"facing": "south"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "true",
+			"flipped": "false",
+			"facing": "south"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "false",
+			"flipped": "false",
+			"facing": "south"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "false",
+			"flipped": "false",
+			"facing": "south"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "true",
+			"flipped": "true",
+			"facing": "west"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "true",
+			"flipped": "true",
+			"facing": "west"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "false",
+			"flipped": "true",
+			"facing": "west"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "false",
+			"flipped": "true",
+			"facing": "west"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "true",
+			"flipped": "false",
+			"facing": "west"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "true",
+			"flipped": "false",
+			"facing": "west"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "false",
+			"flipped": "false",
+			"facing": "west"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "false",
+			"flipped": "false",
+			"facing": "west"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "true",
+			"flipped": "true",
+			"facing": "east"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "true",
+			"flipped": "true",
+			"facing": "east"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "false",
+			"flipped": "true",
+			"facing": "east"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "false",
+			"flipped": "true",
+			"facing": "east"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "true",
+			"flipped": "false",
+			"facing": "east"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "true",
+			"flipped": "false",
+			"facing": "east"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "true",
+			"full": "false",
+			"flipped": "false",
+			"facing": "east"
+		},
+		"Name": "railways:semaphore"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"upside_down": "false",
+			"full": "false",
+			"flipped": "false",
+			"facing": "east"
+		},
+		"Name": "railways:semaphore"
+	}
+]

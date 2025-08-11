@@ -1,0 +1,3523 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "true"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "start",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "start",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "start",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "start",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "north",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "south",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "west",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "start",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "middle",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "end",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "horizontal",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "upward",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "downward",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "vertical",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"slope": "sideways",
+			"part": "pulley",
+			"facing": "east",
+			"casing": "false"
+		},
+		"Name": "create:belt"
+	}
+]

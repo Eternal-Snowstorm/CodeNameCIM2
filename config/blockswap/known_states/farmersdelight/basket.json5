@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "up",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "down",
+			"enabled": "true"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "up",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "down",
+			"enabled": "false"
+		},
+		"Name": "farmersdelight:basket"
+	}
+]

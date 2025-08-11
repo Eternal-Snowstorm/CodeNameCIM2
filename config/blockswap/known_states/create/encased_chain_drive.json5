@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "start",
+			"axis_along_first": "true",
+			"axis": "x"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "middle",
+			"axis_along_first": "true",
+			"axis": "x"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "end",
+			"axis_along_first": "true",
+			"axis": "x"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "none",
+			"axis_along_first": "true",
+			"axis": "x"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "start",
+			"axis_along_first": "false",
+			"axis": "x"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "middle",
+			"axis_along_first": "false",
+			"axis": "x"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "end",
+			"axis_along_first": "false",
+			"axis": "x"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "none",
+			"axis_along_first": "false",
+			"axis": "x"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "start",
+			"axis_along_first": "true",
+			"axis": "y"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "middle",
+			"axis_along_first": "true",
+			"axis": "y"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "end",
+			"axis_along_first": "true",
+			"axis": "y"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "start",
+			"axis_along_first": "false",
+			"axis": "y"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "middle",
+			"axis_along_first": "false",
+			"axis": "y"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "end",
+			"axis_along_first": "false",
+			"axis": "y"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "none",
+			"axis_along_first": "false",
+			"axis": "y"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "start",
+			"axis_along_first": "true",
+			"axis": "z"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "middle",
+			"axis_along_first": "true",
+			"axis": "z"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "end",
+			"axis_along_first": "true",
+			"axis": "z"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "none",
+			"axis_along_first": "true",
+			"axis": "z"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "start",
+			"axis_along_first": "false",
+			"axis": "z"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "middle",
+			"axis_along_first": "false",
+			"axis": "z"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "end",
+			"axis_along_first": "false",
+			"axis": "z"
+		},
+		"Name": "create:encased_chain_drive"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"part": "none",
+			"axis_along_first": "false",
+			"axis": "z"
+		},
+		"Name": "create:encased_chain_drive"
+	}
+]
