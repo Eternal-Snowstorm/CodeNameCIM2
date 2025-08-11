@@ -4,8 +4,6 @@ let $ModifiableItem =
 	Java.loadClass("slimeknights.tconstruct.library.tools.item.ModifiableItem")
 let $Item$Properties =
 	Java.loadClass("net.minecraft.world.item.Item$Properties")
-let $TinkerTags$Items =
-	Java.loadClass("slimeknights.tconstruct.common.TinkerTags$Items")
 
 StartupEvents.registry("item", (event) => {
 	/**

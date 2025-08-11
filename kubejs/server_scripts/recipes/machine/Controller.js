@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create, vintageimprovements } = event.recipes
+	let { kubejs } = event.recipes
 
-kubejs.shaped("mm:particle_collision_machine", [
+	kubejs.shaped("mm:particle_collision_machine", [
 		"AEA",
 		"BCD",
 		"AAA"
@@ -12,8 +12,8 @@ kubejs.shaped("mm:particle_collision_machine", [
 		D: "#forge:ingots/refined_radiance",
 		E: "cmi:computer_component"
 	}).id("mm:particle_collision_machine")
-  
-kubejs.shaped("mm:cracker", [
+
+	kubejs.shaped("mm:cracker", [
 		"ABA",
 		"CDC",
 		"ABA"
@@ -23,8 +23,8 @@ kubejs.shaped("mm:cracker", [
 		C: "immersiveengineering:fluid_pipe",
 		D: "cmi:light_engineering_mechanism"
 	}).id("mm:cracker")
-  
-kubejs.shaped("mm:steam_ore_processor", [
+
+	kubejs.shaped("mm:steam_ore_processor", [
 		"ABA",
 		"CDC",
 		"ABA"
@@ -34,9 +34,9 @@ kubejs.shaped("mm:steam_ore_processor", [
 		C: "cmi:bronze_mechanism",
 		D: "#forge:glass"
 	}).id("mm:steam_ore_processor")
-  
-  
-kubejs.shaped("cmi:flash_disk_writer", [
+
+
+	kubejs.shaped("cmi:flash_disk_writer", [
 		"ABA",
 		"CDC",
 		"AEA"
@@ -45,11 +45,11 @@ kubejs.shaped("cmi:flash_disk_writer", [
 		B: "cmi:computer_component",
 		C: "cmi:plasma_ingot",
 		D: "cmi:antimatter_mechanism",
-		E:"mekanism:ultimate_energy_cube"
+		E: "mekanism:ultimate_energy_cube"
 	}).id("cmi:flash_disk_writer")
-  
-  
-kubejs.shaped("cmi:programmed_flash_drive", [
+
+
+	kubejs.shaped("cmi:programmed_flash_drive", [
 		"A",
 		"B",
 		"C"
@@ -58,5 +58,4 @@ kubejs.shaped("cmi:programmed_flash_drive", [
 		C: "#forge:ingots/plasma",
 		B: "cmi:antimatter_mechanism",
 	}).id("cmi:programmed_flash_drive")
-  
 })
