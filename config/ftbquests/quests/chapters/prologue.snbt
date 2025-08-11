@@ -12,11 +12,19 @@
 			disable_toast: true
 			icon: "cmi:wooden_mechanism"
 			id: "21ED583750523195"
-			rewards: [{
-				id: "63AA958CA6111497"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "63AA958CA6111497"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 64
+					id: "7921A777ABA1D383"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
 			size: 1.8d
 			tasks: [{
 				id: "22D0220F20C29089"
@@ -49,11 +57,19 @@
 			disable_toast: true
 			icon: "create:wrench"
 			id: "16E08617F49E62A9"
-			rewards: [{
-				id: "4271BF34E3F04113"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "4271BF34E3F04113"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "742154C82A2045CF"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "2F9F7E1BE7866A66"
 				type: "checkmark"
@@ -66,11 +82,19 @@
 			disable_toast: true
 			icon: "create:steam_engine"
 			id: "1970EFE7924032F0"
-			rewards: [{
-				id: "433BB8C77D51C434"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "433BB8C77D51C434"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "07F15332DAC93775"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
 			subtitle: "Now : Beta 2.0.1"
 			tasks: [{
 				id: "79D5B1959C780861"
@@ -82,26 +106,34 @@
 		}
 		{
 			description: [
-				"[主创]Unknown_Entity_"
-				"[程序]逐日炎雪_中微子"
-				"[程序]榛名柒月"
-				"[程序]随机构件"
-				"[程序]燕栖"
-				"[程序]FiberOptics"
-				"[程序]117458866249"
-				"[美工]Dropper_QWQ"
-				"[技术]MF."
-				"[技术]芒果凍布丁"
-				"[任务]Decahydroflowey"
+				"[主创] Unknown_Entity_"
+				"[程序] 逐日炎雪_中微子"
+				"[程序] 榛名柒月"
+				"[程序] 随机构件"
+				"[程序] 燕栖"
+				"[程序] FiberOptics"
+				"[程序] 117458866249"
+				"[美工] Dropper_QWQ"
+				"[技术] MF."
+				"[技术] 芒果凍布丁"
+				"[任务] Decahydroflowey"
 			]
 			disable_toast: true
-			icon: "ae2:tiny_tnt"
+			icon: "cmi:unknown_entity_"
 			id: "04615C350964977A"
-			rewards: [{
-				id: "7B2A097158E9272F"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "7B2A097158E9272F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "2C2A9E5C2CE8A725"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4AC9E70B5E11919B"
 				type: "checkmark"
@@ -109,6 +141,26 @@
 			title: "Dev Team"
 			x: 3.0d
 			y: 0.0d
+		}
+		{
+			description: [
+				"如果你是不是一位水槽包玩家, 你看到任务或许会觉得有些水槽"
+				"如果你不知道要做什么的话, 你可以按照下面的构件产线去生产构件"
+			]
+			icon: "ftbquests:book"
+			id: "79AA74F5F585BC6B"
+			rewards: [{
+				id: "37AA8EF9463A9990"
+				item: "farmersdelight:steak_and_potatoes"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BA7D8532D8DD772"
+				title: "关于任务线"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.5d
 		}
 	]
 	title: "开始"

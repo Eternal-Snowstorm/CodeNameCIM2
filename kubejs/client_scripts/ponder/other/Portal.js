@@ -43,7 +43,7 @@ Ponder.registry((event) => {
 		scene.world.showSection([2, 1, 3, 6, 5, 5], Direction.DOWN)
 		scene.idle(20)
 
-		// 向传送门输入FE电力，并在GUI中拨号另一个传送门以相连
+		// 向传送门输入FE电力, 并在GUI中拨号另一个传送门以相连
 		scene.text(40, "Provide FE energy to the Controller and link another Portal in GUI", [4.5, 1.5, 3.5])
 		scene.world.showSection([4, 1, 1, 4, 1, 2], Direction.DOWN)
 		scene.idle(60)
@@ -63,7 +63,7 @@ Ponder.registry((event) => {
 		scene.world.modifyBlock([5, 1, 3], (state) => state.with("input", "false"), false)
 		scene.idle(100)
 
-		// 要激活传送门的跨维度传输，需要在传送门内加入一个多维度交互模块
+		// 要激活传送门的跨维度传输, 需要在传送门内加入一个多维度交互模块
 		scene.text(80, "Activate interDimentional transmission of a Portal with an Interdimentional Modual", [6.5, 2.5, 3.5])
 		scene.world.setBlocks([6, 2, 3], "portality:module_interdimensional")
 		scene.idle(100)

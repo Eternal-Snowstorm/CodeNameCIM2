@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "dive_down_hard"
-	group: ""
+	group: "050255AE19A93344"
 	icon: "minecraft:iron_ingot"
 	id: "4081E0A1F90AD69A"
-	order_index: 3
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -13,6 +13,12 @@
 			dependency_requirement: "all_started"
 			icon: "tconstruct:seared_melter"
 			id: "3DEE902840C6F8F2"
+			rewards: [{
+				id: "1C263C170F0011E6"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "这个小炉子可以用固体燃料"
 			tasks: [{
 				id: "3F1116782B63B121"
 				item: "tconstruct:seared_melter"
@@ -24,6 +30,12 @@
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "42952FF47036885B"
+			rewards: [{
+				id: "656A0F02BE2B896E"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "生产安山合金必不可少的"
 			tasks: [{
 				id: "377938F2C7588945"
 				item: {
@@ -33,15 +45,22 @@
 						value: "forge:ingots/iron"
 					}
 				}
-				title: "Any #forge:ingots/iron"
+				title: "铁锭"
 				type: "item"
 			}]
+			title: "铁"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "325D8F9EC9B394E0"
+			rewards: [{
+				id: "2084D0FBDBDFC4B6"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "做青铜必不可少"
 			tasks: [{
 				id: "024472856A8ABB2F"
 				item: {
@@ -51,15 +70,22 @@
 						value: "forge:ingots/copper"
 					}
 				}
-				title: "Any #forge:ingots/copper"
+				title: "铜锭"
 				type: "item"
 			}]
+			title: "铜"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "062D1D3B790AEA4B"
+			rewards: [{
+				id: "727127373679D437"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "做铸模的好材料"
 			tasks: [{
 				id: "3AA93C391B15B7B5"
 				item: {
@@ -69,23 +95,32 @@
 						value: "forge:ingots/gold"
 					}
 				}
-				title: "Any #forge:ingots/gold"
+				title: "金锭"
 				type: "item"
 			}]
+			title: "金"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "2B656B7972166C08"
-			rewards: [{
-				count: 64
-				id: "3CA714B1E0EAB6AD"
-				item: "tconstruct:seared_bricks"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 64
+					id: "3CA714B1E0EAB6AD"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+				{
+					id: "562CFD84F7A7459A"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 1.5d
+			subtitle: "排液口放在角落"
 			tasks: [{
 				id: "2AC5650047B24463"
 				item: "tconstruct:smeltery_controller"
@@ -97,6 +132,12 @@
 		{
 			dependencies: ["2B656B7972166C08"]
 			id: "625CB03D1FD2BE10"
+			rewards: [{
+				id: "06814B930B56AB49"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "这是物流的神"
 			tasks: [{
 				id: "320842B4A23B7532"
 				item: {
@@ -106,15 +147,22 @@
 						value: "forge:ingots/brass"
 					}
 				}
-				title: "Any #forge:ingots/brass"
+				title: "黄铜锭"
 				type: "item"
 			}]
+			title: "黄铜"
 			x: 2.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["2B656B7972166C08"]
 			id: "3EE4995C51E88CF8"
+			rewards: [{
+				id: "7E02BBCC81E6BFE3"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "也是不错的匠魂材料"
 			tasks: [{
 				id: "6553799D3914BC6C"
 				item: {
@@ -124,9 +172,10 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "Any #forge:ingots/bronze"
+				title: "青铜锭"
 				type: "item"
 			}]
+			title: "青铜"
 			x: 2.0d
 			y: 3.5d
 		}
@@ -134,6 +183,12 @@
 			dependencies: ["2B656B7972166C08"]
 			disable_toast: true
 			id: "0167CF802B8C41BD"
+			rewards: [{
+				id: "2201010F86D95E75"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "这东西导热性不错"
 			tasks: [{
 				id: "70C82BD420F24FFF"
 				item: {
@@ -143,16 +198,23 @@
 						value: "forge:ingots/constantan"
 					}
 				}
-				title: "Any #forge:ingots/constantan"
+				title: "康铜锭"
 				type: "item"
 			}]
-			x: 3.5d
+			title: "康铜"
+			x: 3.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["2B656B7972166C08"]
 			disable_toast: true
 			id: "0799AA1823240100"
+			rewards: [{
+				id: "75C7A62481230211"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "金银合金, 一看就很值钱"
 			tasks: [{
 				id: "7FF8B31B7D63157F"
 				item: {
@@ -162,10 +224,11 @@
 						value: "forge:ingots/electrum"
 					}
 				}
-				title: "Any #forge:ingots/electrum"
+				title: "琥珀金"
 				type: "item"
 			}]
-			x: 4.5d
+			title: "琥珀金"
+			x: 4.0d
 			y: 2.5d
 		}
 		{
@@ -196,14 +259,20 @@
 					type: "item"
 				}
 			]
-			title: "Tinker Standard Kit"
+			title: "匠魂标准套件"
 			x: -1.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
-			description: ["Melt the grout to get double yield while making bricks"]
+			description: [""]
 			id: "43DC2A81B21001BE"
+			rewards: [{
+				id: "1C7C0BC12D4185BE"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "在炉子内融化砖泥可以获得双倍的产量"
 			tasks: [{
 				id: "5180FEE802F23728"
 				item: "tconstruct:seared_stone"
@@ -215,6 +284,12 @@
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "096A858F0A541622"
+			rewards: [{
+				id: "7E2D6704B5079BDD"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "看起来就很重..."
 			tasks: [{
 				id: "568616009EA6F8EA"
 				item: {
@@ -224,15 +299,22 @@
 						value: "forge:ingots/lead"
 					}
 				}
-				title: "Any #forge:ingots/lead"
+				title: "铅锭"
 				type: "item"
 			}]
+			title: "铅"
 			x: 2.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "173CB12BC24ED51E"
+			rewards: [{
+				id: "41820C80272E3902"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "也可以生产安山合金, 但是更便宜"
 			tasks: [{
 				id: "7FBE80D4DA9AE40A"
 				item: {
@@ -242,15 +324,22 @@
 						value: "forge:ingots/zinc"
 					}
 				}
-				title: "Any #forge:ingots/zinc"
+				title: "锌锭"
 				type: "item"
 			}]
+			title: "锌"
 			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "7069140A63443E0C"
+			rewards: [{
+				id: "43B19BEA44387369"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "可以用来做电线?"
 			tasks: [{
 				id: "50134A608F26DE7C"
 				item: {
@@ -260,15 +349,22 @@
 						value: "forge:ingots/silver"
 					}
 				}
-				title: "Any #forge:ingots/silver"
+				title: "银锭"
 				type: "item"
 			}]
+			title: "银"
 			x: 3.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "4B55A849175426D6"
+			rewards: [{
+				id: "2DC3101244E25CAE"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "看起来科技发展离不开"
 			tasks: [{
 				id: "01BB7DB0E4C1C72B"
 				item: {
@@ -278,15 +374,22 @@
 						value: "forge:ingots/osmium"
 					}
 				}
-				title: "Any #forge:ingots/osmium"
+				title: "锇锭"
 				type: "item"
 			}]
+			title: "锇"
 			x: 4.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "672000398C6707CC"
+			rewards: [{
+				id: "2B6DB1B26A8A42D7"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "做青铜必不可少"
 			tasks: [{
 				id: "14DBDCB0B9968062"
 				item: {
@@ -296,15 +399,22 @@
 						value: "forge:ingots/tin"
 					}
 				}
-				title: "Any #forge:ingots/tin"
+				title: "锡锭"
 				type: "item"
 			}]
+			title: "锡"
 			x: 5.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
 			id: "6B954B39F0C22CEC"
+			rewards: [{
+				id: "12C3EDD617FB09FF"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "做殷钢和康铜必不可少"
 			tasks: [{
 				id: "3A28E5B190524FBF"
 				item: {
@@ -314,9 +424,10 @@
 						value: "forge:ingots/nickel"
 					}
 				}
-				title: "Any #forge:ingots/nickel"
+				title: "镍锭"
 				type: "item"
 			}]
+			title: "镍"
 			x: 6.0d
 			y: 1.0d
 		}
@@ -333,6 +444,12 @@
 		{
 			dependencies: ["3F0C4A0AD97615EE"]
 			id: "2F14AA034A31D85F"
+			rewards: [{
+				id: "2B64823EDC953545"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "这东西闪亮亮的, 感觉硬度很高"
 			tasks: [{
 				id: "3323E4AE656E6B6A"
 				item: {
@@ -342,15 +459,23 @@
 						value: "forge:ingots/vanadium"
 					}
 				}
-				title: "Any #forge:ingots/vanadium"
+				title: "钒锭"
 				type: "item"
 			}]
+			title: "钒"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3F0C4A0AD97615EE"]
+			description: ["钴锭(骨钉)"]
 			id: "4E766E7176D4C7C9"
+			rewards: [{
+				id: "5F9CB3FDC406F729"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "这个材料很适合做工具, 速度很快"
 			tasks: [{
 				id: "351173DA9686D1F2"
 				item: {
@@ -360,9 +485,10 @@
 						value: "forge:ingots/cobalt"
 					}
 				}
-				title: "Any #forge:ingots/cobalt"
+				title: "钴锭"
 				type: "item"
 			}]
+			title: "钴"
 			x: 3.0d
 			y: -1.5d
 		}
@@ -370,6 +496,12 @@
 			dependencies: ["2B656B7972166C08"]
 			disable_toast: true
 			id: "457865F53B3A7339"
+			rewards: [{
+				id: "6499D70358986312"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "闪的眼睛疼..."
 			tasks: [{
 				id: "3EBB818133F58821"
 				item: {
@@ -379,16 +511,23 @@
 						value: "forge:ingots/lumium"
 					}
 				}
-				title: "Any #forge:ingots/lumium"
+				title: "流明锭"
 				type: "item"
 			}]
-			x: 3.5d
+			title: "流明"
+			x: 3.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["2B656B7972166C08"]
 			disable_toast: true
 			id: "566E94FC8211FCCF"
+			rewards: [{
+				id: "587D0152B4A7F399"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "感觉在手里蠢蠢欲动"
 			tasks: [{
 				id: "3CF610129C2DDC41"
 				item: {
@@ -398,16 +537,22 @@
 						value: "forge:ingots/enderium"
 					}
 				}
-				title: "Any #forge:ingots/enderium"
+				title: "末影锭"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["2B656B7972166C08"]
 			disable_toast: true
 			id: "16380F8083EEC007"
+			rewards: [{
+				id: "30CE27C2C9C57DC4"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "是不是有血在里面?"
 			tasks: [{
 				id: "648BC1FA1E0A117B"
 				item: {
@@ -417,22 +562,28 @@
 						value: "forge:ingots/signalum"
 					}
 				}
-				title: "Any #forge:ingots/signalum"
+				title: "信素锭"
 				type: "item"
 			}]
-			x: 5.5d
+			title: "信素"
+			x: 5.0d
 			y: 3.5d
 		}
 		{
-			description: ["If you can't find or process ores just look up here"]
+			description: ["找不到矿石或不会处理? 那就看看这里"]
 			icon: "minecraft:iron_block"
 			id: "1859476870D3C4DD"
+			rewards: [{
+				id: "11773925663929DB"
+				type: "xp"
+				xp: 100
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "6BB2EBF504F40A4C"
 				type: "checkmark"
 			}]
-			title: "Acquire Hardwire"
+			title: "来硬的"
 			x: -2.0d
 			y: -1.0d
 		}
@@ -444,7 +595,7 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
-			subtitle: "In case you are fed up with villagers"
+			subtitle: "免得你还要找村民 "
 			tasks: [{
 				consume_items: true
 				id: "061E8CC06BCB6B30"
@@ -458,12 +609,17 @@
 				title: "Any #forge:gems/emerald"
 				type: "item"
 			}]
-			title: "Ender Pearl Trade"
+			title: "交易末影珍珠"
 			x: -1.5d
 			y: -3.0d
 		}
 		{
 			id: "06DCEFD4BA19BC59"
+			rewards: [{
+				id: "579EA9F2AB9340DB"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				dimension: "minecraft:the_end"
 				id: "5473EA78EAC84EB1"
@@ -475,6 +631,11 @@
 		{
 			dependencies: ["06DCEFD4BA19BC59"]
 			id: "617F7065953EF463"
+			rewards: [{
+				id: "148CF1E140E8813E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6E9E3781AB443407"
 				item: "minecraft:chorus_flower"
@@ -486,6 +647,11 @@
 		{
 			dependencies: ["617F7065953EF463"]
 			id: "27DAB5585DB71C48"
+			rewards: [{
+				id: "121BB6E39CF63694"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "14244BFDDC6C04DF"
 				item: "minecraft:chorus_fruit"
@@ -497,7 +663,12 @@
 		{
 			dependencies: ["27DAB5585DB71C48"]
 			id: "37EC1447F4667214"
-			subtitle: "加热融化紫颂果，让它和熔融末影融为一体"
+			rewards: [{
+				id: "217A2F3F8C9FFDDD"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "加热融化紫颂果, 让它和熔融末影融为一体"
 			tasks: [{
 				id: "27F9D9975674C6D6"
 				item: {
@@ -518,6 +689,12 @@
 			dependencies: ["2B656B7972166C08"]
 			disable_toast: true
 			id: "69B1FF11D9273022"
+			rewards: [{
+				id: "569FF4ED10CCB0DA"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "做不锈钢"
 			tasks: [{
 				id: "0959DBCDAC0EBB72"
 				item: {
@@ -527,11 +704,38 @@
 						value: "forge:ingots/invar"
 					}
 				}
-				title: "Any #forge:ingots/invar"
+				title: "殷钢锭"
 				type: "item"
 			}]
-			x: 5.5d
+			title: "殷钢"
+			x: 5.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["43DC2A81B21001BE"]
+			icon: "minecraft:stone"
+			id: "4D82454BBFC2F65C"
+			rewards: [{
+				id: "0302A4D6ACC96A4D"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "融化一个石头可以获得一块砖的量"
+			tasks: [{
+				id: "600F53B957561AD3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:stone"
+					}
+				}
+				title: "Any #forge:stone"
+				type: "item"
+			}]
+			title: "融化石头也可以"
+			x: -2.5d
+			y: 0.5d
 		}
 	]
 	title: "继续向前"

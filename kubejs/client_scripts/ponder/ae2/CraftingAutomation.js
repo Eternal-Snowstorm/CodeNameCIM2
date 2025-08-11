@@ -19,7 +19,7 @@ Ponder.registry((event) => {
 		scene.idle(60)
 		scene.addKeyframe()
 
-		// 将它们接入一个ME网络，并提供一个分子装配室
+		// 将它们接入一个ME网络, 并提供一个分子装配室
 		scene.text(40, "Connect them into a ME network with a Molecular Assembler", [2, 1.5, 2.5])
 		scene.world.showSection([3, 1, 2, 4, 1, 2], Direction.DOWN)
 		scene.world.showSection([2, 1, 1], Direction.DOWN)
@@ -30,7 +30,7 @@ Ponder.registry((event) => {
 		scene.idle(80)
 		scene.addKeyframe()
 
-		// 使用样板编码终端编写合成配方样板，例如两个安山合金制作八个传动杆
+		// 使用样板编码终端编写合成配方样板, 例如两个安山合金制作八个传动杆
 		scene.text(60, "Create a Pattern with a Pattern Encoding Terminal, for example, 2 Andesite Alloy => 8 Shaft", [3.5, 2.5, 2.5])
 		scene.world.showSection([3, 2, 2], Direction.DOWN)
 		scene.idle(20)
@@ -44,7 +44,7 @@ Ponder.registry((event) => {
 			.withItem(Item.of("ae2:crafting_pattern", '{in:[{},{Count:1b,id:"create:andesite_alloy"},{},{},{Count:1b,id:"create:andesite_alloy"},{},{},{},{}],out:{Count:8b,id:"create:shaft"},recipe:"create:crafting/kinetics/shaft",substitute:0b,substituteFluids:1b}'))
 		scene.idle(80)
 
-		// 终端里就会显示支持传动杆的合成，需要时从中下单即可
+		// 终端里就会显示支持传动杆的合成, 需要时从中下单即可
 		scene.text(60, "And the terminal will show support of Shaft crafting, order them whenever they are needed", [3.5, 2.5, 2.5])
 		scene.idle(80)
 	})
@@ -57,18 +57,18 @@ Ponder.registry((event) => {
 		scene.showBasePlate()
 		scene.idle(20)
 
-		// 就像刚才展示的那样，ME网络需要有合成处理器才能将配方自动化
+		// 就像刚才展示的那样, ME网络需要有合成处理器才能将配方自动化
 		scene.text(60, "As just presented, Me networks need a Crafting CPU to automize recipes")
 		scene.idle(80)
 
-		// 构成合成CPU的方块总共有8种，分为4类
+		// 构成合成CPU的方块总共有8种, 分为4类
 		scene.text(40, "Crafting CPU consists of 8 types of blocks divided into 4 groups")
 		let firstLayerSection = scene.world.showIndependentSection([1, 1, 2, 7, 1, 2], Direction.DOWN)
 		let craftingUnitSection = scene.world.showIndependentSection([1, 2, 2], Direction.DOWN)
 		scene.idle(60)
 		scene.addKeyframe()
 
-		// 合成单元是合成处理器的基础材料，同时用于填充多余的处理器空间
+		// 合成单元是合成处理器的基础材料, 同时用于填充多余的处理器空间
 		scene.text(60, "Crafting Unit is the basic material of Crafting CPUs, while they're also user to fill extra space of CPUs", [1.5, 2.5, 2.5])
 		scene.overlay.showOutline("input", {}, [1, 2, 2], 60)
 		scene.idle(80)
@@ -90,7 +90,7 @@ Ponder.registry((event) => {
 		scene.idle(80)
 		scene.addKeyframe()
 
-		// 合成监控器上面有一个显示屏，会实时显示合成处理器正在处理的合成配方
+		// 合成监控器上面有一个显示屏, 会实时显示合成处理器正在处理的合成配方
 		scene.text(60, "Crafting Monitor has a screen on it, showing what recipe the CPU is processing", [1.5, 1.5, 2.5])
 		scene.overlay.showOutline("slow", {}, [1, 1, 2], 60)
 		scene.idle(80)
@@ -127,7 +127,7 @@ Ponder.registry((event) => {
 		scene.world.hideIndependentSection(smallCpuSection, Direction.UP)
 		scene.idle(40)
 
-		// 若玩家希望可以以单个请求执行一个极为复杂的配方，单个大型合成处理器则是一个更好的选择
+		// 若玩家希望可以以单个请求执行一个极为复杂的配方, 单个大型合成处理器则是一个更好的选择
 		scene.text(80, "While for those who want to enjoy automating an entire complex recipe, a large CPU is better choice")
 		let largeCpuSection = scene.world.showIndependentSection([3, 6, 3, 5, 8, 7], Direction.DOWN)
 		scene.world.moveSection(largeCpuSection, [0, -5, 0], 0)
@@ -148,7 +148,7 @@ Ponder.registry((event) => {
 		scene.text(60, "Patterns in the Pattern Provider only detects the input and output of the recipe")
 		scene.idle(80)
 
-		// 因此处理配方的自由度非常大，可以囊括整合包中所有的配方
+		// 因此处理配方的自由度非常大, 可以囊括整合包中所有的配方
 		scene.text(60, "As a consequence, it's free to edit any type of recipy, almost all recipes in this modpack")
 		scene.idle(80)
 		scene.addKeyframe()

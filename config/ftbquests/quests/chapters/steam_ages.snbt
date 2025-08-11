@@ -1,0 +1,295 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_ages"
+	group: "050255AE19A93344"
+	icon: "cmi:steam_boiler"
+	id: "steam_ages"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["蒸汽(Steam)得了MVP"]
+			id: "50BE6EA508B2E833"
+			rewards: [
+				{
+					id: "4148E7F8DB84EDA5"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "13E8F87C8B320D08"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "蒸汽可以处理矿石, 也可以给予引擎生产应力"
+			tasks: [{
+				id: "0663928BECC3E50F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "青铜锭"
+				type: "item"
+			}]
+			title: "蒸汽时代的开始"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50BE6EA508B2E833"]
+			description: [
+				"往里供入水后再放入燃料便可开始生产蒸气(2mB/t)"
+				"蒸汽与水的产出比例为1:2, 即1mB水产生2mB蒸汽"
+			]
+			icon: "cmi:steam_boiler"
+			id: "4405C578E1F06769"
+			rewards: [
+				{
+					count: 64
+					id: "05B4E4BF8D64C919"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "4A14B519FEC6ABEB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "这是你第一台生产蒸汽的机器"
+			tasks: [
+				{
+					id: "4366353F4F781C16"
+					item: "cmi:steam_boiler"
+					type: "item"
+				}
+				{
+					id: "12A3738B8B497DF6"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50BE6EA508B2E833"]
+			id: "68DACE13F8DA3516"
+			rewards: [{
+				id: "74B53DD1BDDD3962"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			subtitle: "青铜构件用于后面的引擎和机器的制作"
+			tasks: [{
+				id: "43F802AD08EAE9DB"
+				item: "cmi:bronze_mechanism"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4405C578E1F06769"
+				"68DACE13F8DA3516"
+				"69B6557CD9D8FE4C"
+			]
+			description: [
+				"大型蒸汽锅炉只能使用焦炭或钻石作为燃料, 但是产出的蒸汽量非常多 10秒便可以消耗5000mB和1个燃料生产5000mB蒸汽"
+				""
+				"不同于远在泛银河系格雷科技有限公司的锅炉, 我们的锅炉永远不会爆炸, 非常安全"
+			]
+			icon: "mm:large_steam_boiler"
+			id: "33794D36645F0E70"
+			rewards: [
+				{
+					id: "6E29754153667750"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 8
+					id: "0CBAB143ED8B52DE"
+					item: "thermal:coal_coke"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "产出更多的蒸汽"
+			tasks: [
+				{
+					id: "327B26F59C36B1C1"
+					item: "mm:large_steam_boiler"
+					type: "item"
+				}
+				{
+					id: "51E234A7BCC8E995"
+					item: "mm:large_steam_boiler_fluid_input"
+					type: "item"
+				}
+				{
+					id: "3733AC9D60641317"
+					item: "mm:large_steam_boiler_fluid_output"
+					type: "item"
+				}
+				{
+					id: "6134C49FD8E960C5"
+					item: "mm:large_steam_boiler_item_input"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "0D7D72F7C13B2273"
+					item: { Count: 20, id: "cmi:bronze_casing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "704396679975B550"
+					item: { Count: 8, id: "tconstruct:scorched_bricks" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50BE6EA508B2E833"]
+			id: "69B6557CD9D8FE4C"
+			rewards: [{
+				id: "60B8CCEFC7BE6EF2"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "青铜外壳一般用于搭建机器"
+			tasks: [{
+				count: 4L
+				id: "34ADE83961CD600F"
+				item: "cmi:bronze_casing"
+				type: "item"
+			}]
+			title: "青铜外壳"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4405C578E1F06769"]
+			icon: "cmi:steam_bucket"
+			id: "2E433CDEC9C53072"
+			rewards: [{
+				id: "1D5A3A262631D216"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "怎么会有那么好用的东西"
+			tasks: [{
+				id: "258E7097CC150284"
+				title: "获得蒸汽"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E433CDEC9C53072"]
+			description: ["蒸汽在小型引擎中的消耗量为100mB/s, 可以产生1024的应力"]
+			id: "18164A95D55493B4"
+			rewards: [{
+				id: "3BF181CCCFA49440"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "引擎可以使用蒸汽驱动产生应力"
+			tasks: [{
+				id: "1AC3B9D062D0BD76"
+				item: "createdieselgenerators:diesel_engine"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["2E433CDEC9C53072"]
+			description: [
+				"蒸汽矿石处理机可以消耗2000mB蒸汽处理特殊的矿石, 例如黄铁, 辉铜和黄锡等"
+				"一个粗矿可以处理3个矿粉, 有25%的概率多给一个, 但是处理后会在顶部产生100mB水和200mB液态二氧化硫, 需要手动导出处理"
+				"而处理矿石方块产出会多一点, 水和二氧化硫的产出同理"
+			]
+			icon: "mm:steam_ore_processor"
+			id: "1C6A5D1DC3365BD0"
+			rewards: [{
+				id: "56E76A6EA86A61F1"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "初步倍产"
+			tasks: [
+				{
+					id: "392C5E7C56A41A61"
+					item: "mm:steam_ore_processor"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "616784BCD4619FD2"
+					item: { Count: 16, id: "cmi:bronze_casing" }
+					type: "item"
+				}
+				{
+					id: "27BC675F5036DA7A"
+					item: "mm:steam_ore_processor_fluid_input"
+					type: "item"
+				}
+				{
+					id: "5ECED58C90110662"
+					item: "mm:steam_ore_processor_fluid_output"
+					type: "item"
+				}
+				{
+					id: "18ADE40168E509E9"
+					item: "mm:steam_ore_processor_item_input"
+					type: "item"
+				}
+				{
+					id: "6C5AF4056514B964"
+					item: "mm:steam_ore_processor_item_output"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "066E3772F58D33BA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:glass"
+						}
+					}
+					title: "玻璃"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "4A9EA17F30D65AB4"
+					item: { Count: 9, id: "immersiveengineering:treated_wood_horizontal" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.0d
+		}
+	]
+	title: "蒸汽时代"
+}

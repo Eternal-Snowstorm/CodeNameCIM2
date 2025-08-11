@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ironish_irony"
-	group: ""
+	group: "050255AE19A93344"
 	icon: "immersiveengineering:arc_furnace"
 	id: "6D70BA971FA80DD3"
-	order_index: 8
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -15,13 +15,26 @@
 				"47D11B96A16AB842"
 			]
 			id: "0608EF158049B347"
+			rewards: [{
+				id: "53EA57A337FE7B3E"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "1AC53938CA735B6F"
-				item: "thermal:steel_ingot"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+				title: "钢锭"
 				type: "item"
 			}]
+			title: "钢锭"
 			x: 3.0d
 			y: 0.0d
 		}
@@ -33,6 +46,11 @@
 				"43CDBE9E710B8AAF"
 			]
 			id: "6D5194366D20F9B9"
+			rewards: [{
+				id: "0C190D265D0690D9"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -44,9 +62,10 @@
 						value: "forge:ingots/stainless_steel"
 					}
 				}
-				title: "Any #forge:ingots/stainless_steel"
+				title: "不锈耐酸钢锭"
 				type: "item"
 			}]
+			title: "不锈耐酸钢锭"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -59,6 +78,11 @@
 				"763E30AB21E0FAAE"
 			]
 			id: "7A0E18E85CCAEE1F"
+			rewards: [{
+				id: "37EF0F3F03F13FE4"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2CA84D300926037E"
 				item: {
@@ -68,15 +92,21 @@
 						value: "forge:ingots/cast_iron"
 					}
 				}
-				title: "Any #forge:ingots/cast_iron"
+				title: "铸铁锭"
 				type: "item"
 			}]
+			title: "铸铁锭"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["23541E724E18C938"]
 			id: "738AA5C4C4167BFB"
+			rewards: [{
+				id: "13831D6888230AF6"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7C1668611B7D845B"
 				item: {
@@ -86,14 +116,20 @@
 						value: "forge:ingots/industrial_iron"
 					}
 				}
-				title: "Any #forge:ingots/industrial_iron"
+				title: "工业铁锭"
 				type: "item"
 			}]
+			title: "工业铁锭"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			id: "51E5F831D7247E8A"
+			rewards: [{
+				id: "51F6B94F2CF7FF0F"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0FE49C8BAB0CD95C"
 				item: {
@@ -103,9 +139,10 @@
 						value: "forge:ingots/chromium"
 					}
 				}
-				title: "Any #forge:ingots/chromium"
+				title: "铬锭"
 				type: "item"
 			}]
+			title: "铬锭"
 			x: 4.5d
 			y: -1.0d
 		}
@@ -113,6 +150,11 @@
 			dependencies: ["69B1FF11D9273022"]
 			dependency_requirement: "all_started"
 			id: "7DE0B55B9B4703C8"
+			rewards: [{
+				id: "68D9C51861C02403"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5D6A226DE1ADEB9B"
 				item: {
@@ -122,15 +164,21 @@
 						value: "forge:ingots/invar"
 					}
 				}
-				title: "Any #forge:ingots/invar"
+				title: "殷钢锭"
 				type: "item"
 			}]
+			title: "殷钢锭"
 			x: 6.0d
 			y: -2.0d
 		}
 		{
 			id: "319FC5833B1339C2"
-			subtitle: "Both are genetated from TAMP with stone mechanism"
+			rewards: [{
+				id: "001DC811BDED7AA5"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "他们都可以由构件催生器生成"
 			tasks: [{
 				id: "41634AB6CA683C80"
 				item: {
@@ -140,12 +188,12 @@
 						value: "cmi:steelmaking_raw_materials"
 					}
 				}
-				title: "Any #cmi:steelmaking_raw_materials"
+				title: "炼钢材料"
 				type: "item"
 			}]
-			title: "Calcite or Limestone?"
+			title: "方解石还是石灰石?"
 			x: 1.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["738AA5C4C4167BFB"]
@@ -184,7 +232,7 @@
 			]
 			title: "钢厂坩埚"
 			x: 1.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			id: "60113F54A37402B6"
@@ -197,9 +245,10 @@
 						value: "forge:coal_coke"
 					}
 				}
-				title: "Any #forge:coal_coke"
+				title: "焦煤"
 				type: "item"
 			}]
+			title: "焦煤"
 			x: -2.0d
 			y: -1.5d
 		}
@@ -207,6 +256,11 @@
 			dependencies: ["42952FF47036885B"]
 			dependency_requirement: "all_started"
 			id: "23541E724E18C938"
+			rewards: [{
+				id: "1C9D387DB728C7B0"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "2C86E81F2B2BF57A"
 				item: {
@@ -216,9 +270,10 @@
 						value: "forge:ingots/iron"
 					}
 				}
-				title: "Any #forge:ingots/iron"
+				title: "铁锭"
 				type: "item"
 			}]
+			title: "铁锭"
 			x: -3.5d
 			y: 0.0d
 		}
@@ -248,64 +303,86 @@
 			dependencies: ["0608EF158049B347"]
 			icon: "immersiveengineering:arc_furnace"
 			id: "43CDBE9E710B8AAF"
+			rewards: [
+				{
+					id: "0390661092B2E958"
+					item: "immersiveengineering:arc_furnace"
+					type: "item"
+				}
+				{
+					id: "4E859550681A2471"
+					type: "xp"
+					xp: 50
+				}
+			]
 			tasks: [
 				{
+					consume_items: true
 					count: 8L
 					id: "16D20993335925A5"
 					item: "immersiveengineering:sheetmetal_steel"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 6L
 					id: "489B8BE7868377C5"
 					item: "thermal:steel_block"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 5L
 					id: "4262EDA4151461D2"
-					item: { Count: 5, id: "immersiveengineering:heavy_engineering" }
+					item: "immersiveengineering:heavy_engineering"
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "2D0088993CA8CCC2"
 					item: "immersiveengineering:rs_engineering"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 10L
 					id: "475A71B13A93EE6B"
-					item: { Count: 10, id: "immersiveengineering:light_engineering" }
+					item: "immersiveengineering:light_engineering"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 27L
 					id: "51FBE9B766A8EE46"
-					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					item: "immersiveengineering:blastbrick_reinforced"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 14L
 					id: "062033100F4494A8"
-					item: { Count: 14, id: "immersiveengineering:slab_sheetmetal_steel" }
+					item: "immersiveengineering:slab_sheetmetal_steel"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 5L
 					id: "50A40ADEE5C4060C"
-					item: { Count: 5, id: "immersiveengineering:steel_scaffolding_standard" }
+					item: "immersiveengineering:steel_scaffolding_standard"
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "661BDBF5FED5C83C"
 					item: "minecraft:cauldron"
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 3L
 					id: "5C8084C3BC00C40E"
 					item: {
-						Count: 3
+						Count: 1
 						id: "immersiveengineering:graphite_electrode"
 						tag: {
 							graphDmg: 0

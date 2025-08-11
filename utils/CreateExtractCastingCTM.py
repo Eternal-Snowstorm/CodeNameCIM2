@@ -6,8 +6,8 @@ def open_new(types: 'bool' = True) -> str:
     说明:
         文件及目录读取
     参数说明:
-        :param types: 布尔格式（bool），是否直接选择文件，默认值true
-        :return: 字符串格式（str），目标路径或空字符串
+        :param types: 布尔格式（bool）, 是否直接选择文件, 默认值true
+        :return: 字符串格式（str）, 目标路径或空字符串
 	"""
     from tkinter import Tk, filedialog
     Tk().withdraw()
