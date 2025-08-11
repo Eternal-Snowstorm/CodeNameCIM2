@@ -76,6 +76,15 @@ ServerEvents.recipes((event) => {
 		B: "#forge:plates/iron"
 	}).id("supplementaries:faucet")
 
+	kubejs.shaped("cmi:bronze_nugget_cast", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "#forge:plates/bronze",
+		B: "#forge:nuggets/iron"
+	})
+
 	// 
 	/*kubejs.shaped("megatimestop:time_clock2", [
 		"AAA",
