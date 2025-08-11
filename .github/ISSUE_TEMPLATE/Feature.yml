@@ -7,9 +7,9 @@ body:
   id: "yml-1"
   attributes:
     label: "检查项"
-    description: "请检查以下项目，并勾选确认。"
+    description: "请检查以下项目, 并勾选确认。"
     options:
-    - label: "我已在 [Issues 页面](https://github.com/VechniMetel/CodeNameCIM2/issues) 中搜索，确认了这一建议未被提交过。"
+    - label: "我已在 [Issues 页面](https://github.com/VechniMetel/CodeNameCIM2/issues) 中搜索, 确认了这一建议未被提交过。"
       required: true
 - type: textarea
   id: "yml-2"
@@ -22,6 +22,6 @@ body:
   id: "yml-3"  
   attributes:
     label: "其他补充信息（可选）"
-    description: "如有其他需要说明的内容，请在此补充。"
+    description: "如有其他需要说明的内容, 请在此补充。"
   validations:
     required: false  

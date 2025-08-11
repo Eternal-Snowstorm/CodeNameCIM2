@@ -13,7 +13,7 @@ Ponder.registry((event) => {
 			scene.text(60, "Me P2P Tunnels are devices to transmit channels via another ME network", [3.5, 1.5, 2.5])
 			scene.idle(80)
 
-			// P2P即“点对点”，P2P通道的两端等效于设备直接接触
+			// P2P即“点对点”, P2P通道的两端等效于设备直接接触
 			scene.text(80, "P2P stands for Point to Point, edges of P2P Tunnels shows no difference from direct connection", [1.5, 1.5, 2.5])
 			scene.idle(100)
 			scene.addKeyframe()
@@ -39,7 +39,7 @@ Ponder.registry((event) => {
 			scene.idle(80)
 			scene.addKeyframe()
 
-			// P2P通道是单向传输的，但是支持多个输出
+			// P2P通道是单向传输的, 但是支持多个输出
 			scene.text(60, "P2P tunnel provides only one-way transmission, but it supports multiple outputs")
 			scene.world.showSection([2, 2, 2], Direction.DOWN)
 			scene.idle(20)
@@ -48,7 +48,7 @@ Ponder.registry((event) => {
 				.withItem("ae2:memory_card")
 			scene.idle(60)
 
-			// 但是注意，每个P2P通道都将消耗一个频道
+			// 但是注意, 每个P2P通道都将消耗一个频道
 			scene.text(60, "But attention! Every one of P2P Tunnel will consume 1 channel!")
 			scene.idle(80)
 			scene.addKeyframe()
@@ -176,7 +176,7 @@ Ponder.registry((event) => {
 			scene.world.moveSection(lightSection, [0, -6, 0], 0)
 			scene.idle(40)
 
-			// 是的，它只传播光照
+			// 是的, 它只传播光照
 			scene.text(40, "Yeah, it transmits only light", [1, 2, 2.5])
 			scene.world.setBlocks([3, 1, 1], "minecraft:glowstone", false)
 			scene.world.showSection([3, 1, 1], Direction.DOWN)

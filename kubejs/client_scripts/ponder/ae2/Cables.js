@@ -19,7 +19,7 @@ Ponder.registry((event) => {
 			scene.idle(60)
 			scene.addKeyframe()
 
-			// 石英纤维可以在ME网络之间传输能量，不会干扰网络频道
+			// 石英纤维可以在ME网络之间传输能量, 不会干扰网络频道
 			scene.showControls(80, [4.5, 2, 4.5], "down")
 				.withItem("ae2:quartz_fiber")
 			scene.overlay.showOutline("red", {}, [4, 1, 4], 60)
@@ -52,7 +52,7 @@ Ponder.registry((event) => {
 			scene.world.showSection([6, 1, 4], Direction.DOWN)
 			scene.idle(40)
 
-			// 那么上面的设备就下线了，而下面的设备就上线了
+			// 那么上面的设备就下线了, 而下面的设备就上线了
 			scene.text(40, "Now the device below is online while the device above is offline", [6.5, 2, 4.5])
 			scene.showControls(40, [7.5, 2, 3.5], "down")
 				.withItem("minecraft:redstone_torch")

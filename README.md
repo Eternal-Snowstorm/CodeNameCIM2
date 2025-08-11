@@ -5,7 +5,7 @@
 # Chinese
 
 # Create: Mechanisms and Innovations(CMI)
-由[**`Unknown_Entity_`**](https://space.bilibili.com/3461572013853145)领头的`Minecraft Forge 1.20.1-47.4.0`机械动力整合包，`CIM(Creare: Infinity Mechanism)`的续作/改良 目前处于Beta阶段
+由[**`Unknown_Entity_`**](https://space.bilibili.com/3461572013853145)领头的`Minecraft Forge 1.20.1-47.4.0`机械动力整合包, `CIM(Creare: Infinity Mechanism)`的续作/改良 目前处于Beta阶段
 
 </div>
 
