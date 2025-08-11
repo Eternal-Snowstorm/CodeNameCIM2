@@ -24,9 +24,7 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 
 				let block = event.level.getBlock(pos).getId()
 
-				if (block === "minecraft:stone") {
-					count = 1 + count
-				} else if (block === "minecraft:deepslate") {
+				if (block === "minecraft:netherrack") {
 					count = 1 + count
 				}
 			}
@@ -41,31 +39,28 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 				pos = new BlockPos(outx, y, outz)
 				let block = event.level.getBlock(pos).getId()
 
-				if (block === "minecraft:stone") {
+				if (block === "minecraft:netherrack") {
 					rand = Math.random()
 					if (rand <= 0.1) {
-						event.level.getBlock(pos).set("minecraft:netherrack")
-					} else if (rand <= 0.15) {
+						event.level.getBlock(pos).set("minecraft:blackstone")
+					} else if (rand <= 0.13) {
 						event.level.getBlock(pos).set("minecraft:magma_block")
-					} else if (rand <= 0.18) {
-						event.level.getBlock(pos).set("minecraft:nether_quartz_ore")
-					} else if (rand <= 0.21) {
-						event.level.getBlock(pos).set("minecraft:nether_gold_ore")
+					} else if (rand <= 0.16) {
+						event.level.getBlock(pos).set("minecraft:soul_sand")
+					} else if (rand <= 0.19) {
+						event.level.getBlock(pos).set("minecraft:soul_soil")
 					} else if (rand <= 0.22) {
-						event.level.getBlock(pos).set("minecraft:ancient_debris")
-					}
-				} else if (block === "minecraft:deepslate") {
-					rand = Math.random()
-					if (rand <= 0.1) {
-						event.level.getBlock(pos).set("minecraft:netherrack")
-					} else if (rand <= 0.15) {
-						event.level.getBlock(pos).set("minecraft:magma_block")
-					} else if (rand <= 0.18) {
-						event.level.getBlock(pos).set("minecraft:nether_quartz_ore")
-					} else if (rand <= 0.21) {
+						event.level.getBlock(pos).set("minecraft:gilded_blackstone")
+					} else if (rand <= 0.25) {
 						event.level.getBlock(pos).set("minecraft:nether_gold_ore")
-					} else if (rand <= 0.22) {
+					} else if (rand <= 0.28) {
 						event.level.getBlock(pos).set("minecraft:ancient_debris")
+					} else if (rand <= 0.31) {
+						event.level.getBlock(pos).set("minecraft:nether_quartz_ore")
+					} else if (rand <= 0.34) {
+						event.level.getBlock(pos).set("minecraft:glowstone")
+					} else if (rand <= 0.37) {
+						event.level.getBlock(pos).set("cmi:nether_uranium_ore")
 					}
 				}
 			}
@@ -95,9 +90,7 @@ BlockEvents.rightClicked((event) => {
 
 			let block = event.level.getBlock(pos).getId()
 
-			if (block === "minecraft:stone") {
-				count = 1 + count
-			} else if (block === "minecraft:deepslate") {
+			if (block === "minecraft:netherrack") {
 				count = 1 + count
 			}
 		}
