@@ -76,4 +76,8 @@ ServerEvents.recipes((event) => {
 		"ae2:sky_dust",
 		"ae2:matter_ball"
 	])
+	// 创造
+	kubejs.shapeless("2x cmi:creative_mechanism", [
+		"cmi:creative_mechanism"
+	])
 })

@@ -77,7 +77,7 @@ ServerEvents.recipes((event) => {
 	}).id("supplementaries:faucet")
 
 	// 
-	kubejs.shaped("megatimestop:time_clock2", [
+	/*kubejs.shaped("megatimestop:time_clock2", [
 		"AAA",
 		"ABA",
 		"AAA"
@@ -111,7 +111,8 @@ ServerEvents.recipes((event) => {
 		1: "#forge:plates/iron",
 		2: "#forge:rods/wooden"
 	}).id("megatimestop:knife")
-
+*/
+	
 	kubejs.shaped("2x minecraft:torch", [
 		"A",
 		"B"

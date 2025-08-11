@@ -51,6 +51,8 @@ ServerEvents.recipes((event) => {
 		"tconstruct:common/basalt_blast_furnace",
 		"tconstruct:common/glass/vanilla/daylight_detector",
 		"create:crafting/palettes/scorchia"
+
+
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -111,7 +113,8 @@ ServerEvents.recipes((event) => {
 		"ad_astra:tier_1_rocket",
 		"ad_astra:tier_2_rocket",
 		"ad_astra:tier_3_rocket",
-		"ad_astra:tier_4_rocket"
+		"ad_astra:tier_4_rocket",
+		"cmi:creative_mechanism_flash_drive"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({
@@ -130,7 +133,17 @@ ServerEvents.recipes((event) => {
 		"aluminum",
 		"uranium",
 		"osmium",
-		"zinc"
+		"zinc",
+		"desh",
+		"cobalt",
+		"constantan",
+		"ostrum",
+		"electrum",
+		"platinum",
+		"platinum",
+		"steel",
+		"calorite"
+
 	]
 	removeRecipeExtraIds.forEach((id) => {
 		event.remove({
@@ -153,6 +166,15 @@ ServerEvents.recipes((event) => {
 		})
 		event.remove({
 			id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`
+		})
+		event.remove({
+			id: `immersiveengineering:crafting/raw_hammercrushing_${id}`
+		})
+		event.remove({
+			id: `immersiveengineering:crafting/hammercrushing_${id}`
+		})
+		event.remove({
+			id: `immersiveengineering:crafting/plate_${id}_hammering`
 		})
 	})
 

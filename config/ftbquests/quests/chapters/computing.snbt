@@ -5,14 +5,24 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:computing_mechanism"
 	id: "359DF666EE0F0BEB"
-	images: [{
-		height: 34.8d
-		image: "cmi:textures/images/background/computing.png"
-		rotation: 0.0d
-		width: 70.06d
-		x: -1.5d
-		y: -0.5d
-	}]
+	images: [
+		{
+			height: 34.8d
+			image: "cmi:textures/images/background/computing.png"
+			rotation: 0.0d
+			width: 70.06d
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			height: 10.0d
+			image: "cmi:textures/images/unfinished.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 6.5d
+			y: -16.0d
+		}
+	]
 	order_index: 20
 	quest_links: [ ]
 	quests: [

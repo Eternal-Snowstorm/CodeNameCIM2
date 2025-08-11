@@ -345,9 +345,6 @@ ServerEvents.recipes((event) => {
 		create.deploying(icpm, [icpm, "cmi:mekanism_mechanism_part"])
 	]).transitionalItem(icpm).loops(1)
 
-
-
-	//我并不知道为什么不生效，但是不报错我就push了（
 	// 1航天
 	create.sequenced_assembly("cmi:tier_1_aviation_mechanism", [
 		"#forge:plates/steel"
@@ -388,14 +385,36 @@ ServerEvents.recipes((event) => {
 		create.deploying(ir4m, [ir4m, "cmi:space_mechanism_part"]),
 	]).transitionalItem(ir4m).loops(1)
 
+	// 秘药
 	create.sequenced_assembly("cmi:potion_mechanism", [
 		"#forge:glass"
 	], [
 		create.filling(ipom, [
 			ipom,
-			Fluid.of("create:potion", 500, {
+			Fluid.of("create:potion", 250, {
+				Bottle: "REGULAR",
+				Potion: "minecraft:night_vision"
+			})
+		]),
+		create.filling(ipom, [
+			ipom,
+			Fluid.of("create:potion", 250, {
 				Bottle: "REGULAR",
 				Potion: "minecraft:strength"
+			})
+		]),
+		create.filling(ipom, [
+			ipom,
+			Fluid.of("create:potion", 250, {
+				Bottle: "REGULAR",
+				Potion: "minecraft:swiftness"
+			})
+		]),
+		create.filling(ipom, [
+			ipom,
+			Fluid.of("create:potion", 250, {
+				Bottle: "REGULAR",
+				Potion: "minecraft:fire_resistance"
 			})
 		]),
 		create.deploying(ipom, [ipom, "cmi:magical_mechanism_part"])
