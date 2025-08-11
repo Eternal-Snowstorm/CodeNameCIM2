@@ -198,7 +198,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addBlockLanguage("unknown_entity_", "Unknown_Entity_")
 	addBlockLanguage("aleegos", "阿列戈斯")
-	addBlockLanguage("qi_month", "柒月")
+	//addBlockLanguage("qi_month", "柒月")
 	addBlockLanguage("vechni_metel", "逐日炎雪_中微子")
 	addBlockLanguage("fiber_optics", "FiberOptics")
 	addBlockLanguage("random_mechanism", "随机构件")
@@ -264,7 +264,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("cmi:gold_mechanism", "§e转化石头\n§e20%金矿石\n§e5%朱砂矿石\n§e5%石英矿石\n§2转化深板岩\n§215%深层金矿石\n§210%深层朱砂矿\n§210%深层石英矿")
 	addAccelerateTooltipLanguage("vintageimprovements:redstone_module", "§e转化石头\n§e20%红石矿石\n§2转化深板岩\n§225%深层红石矿石")
 	addAccelerateTooltipLanguage("cmi:enchanted_mechanism", "§e转化石头\n§e20%青金石矿石\n§e1%经验块\n§2转化深板岩\n§215%深层青金石矿石\n§21%经验块")
-	addAccelerateTooltipLanguage("cmi:nether_mechanism", "§e转化石头/§2转化深板岩\n§210%下界岩\n§25%岩浆块\n§23%下界石英矿\n§23%下界金矿石\n§21%远古残骸")
+	addAccelerateTooltipLanguage("cmi:nether_mechanism", "§c转换下界岩\n§c3%黑石\n§c3%岩浆块\n§c3%灵魂沙\n§c3%灵魂土\n§c3%镶金黑石\n§c3%金矿石\n§c3%远古残骸\n§c3%下界石英\n§c3%萤石\n§c3%下界铀矿石")
 	addAccelerateTooltipLanguage("cmi:cobalt_mechanism", "§e转化下界岩\n§e10%钴矿石")
 	addAccelerateTooltipLanguage("cmi:wooden_mechanism", "§e转化石头\n§e20%煤矿石\n§2转化深板岩\n§215%深层煤矿石\n§21%深层钻石矿石")
 	addAccelerateTooltipLanguage("cmi:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
