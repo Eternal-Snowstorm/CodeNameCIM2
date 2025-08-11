@@ -1,0 +1,150 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "column_x",
+			"state": "offline"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "column_y",
+			"state": "offline"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "column_z",
+			"state": "offline"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "inside_a",
+			"state": "offline"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "inside_b",
+			"state": "offline"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "block",
+			"state": "online"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "column_x",
+			"state": "online"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "column_y",
+			"state": "online"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "column_z",
+			"state": "online"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "inside_a",
+			"state": "online"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "inside_b",
+			"state": "online"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "block",
+			"state": "conflicted"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "column_x",
+			"state": "conflicted"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "column_y",
+			"state": "conflicted"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "column_z",
+			"state": "conflicted"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "inside_a",
+			"state": "conflicted"
+		},
+		"Name": "ae2:controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "inside_b",
+			"state": "conflicted"
+		},
+		"Name": "ae2:controller"
+	}
+]

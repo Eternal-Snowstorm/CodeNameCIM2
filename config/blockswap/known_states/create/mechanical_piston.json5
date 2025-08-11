@@ -1,0 +1,329 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "north",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "north",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "east",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "east",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "east",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "south",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "south",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "south",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "west",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "west",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "west",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "up",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "up",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "up",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "down",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "down",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "down",
+			"axis_along_first": "true"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "north",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "north",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "north",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "east",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "east",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "east",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "south",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "south",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "south",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "west",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "west",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "west",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "up",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "up",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "up",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "retracted",
+			"facing": "down",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "moving",
+			"facing": "down",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"state": "extended",
+			"facing": "down",
+			"axis_along_first": "false"
+		},
+		"Name": "create:mechanical_piston"
+	}
+]

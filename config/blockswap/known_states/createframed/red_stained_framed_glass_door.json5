@@ -1,0 +1,1538 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "left",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "true",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "true",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "true",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"visible": "false",
+			"powered": "false",
+			"open": "false",
+			"hinge": "right",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "createframed:red_stained_framed_glass_door"
+	}
+]

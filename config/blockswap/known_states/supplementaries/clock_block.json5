@@ -1,0 +1,3844 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "0",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "0",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "0",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "1",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "1",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "1",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "1",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "2",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "2",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "2",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "2",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "3",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "3",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "3",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "3",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "4",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "4",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "4",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "4",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "5",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "5",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "5",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "5",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "6",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "6",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "6",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "6",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "7",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "7",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "7",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "7",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "8",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "8",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "8",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "8",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "9",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "9",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "9",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "9",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "10",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "10",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "10",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "10",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "11",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "11",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "11",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "11",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "12",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "12",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "12",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "12",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "13",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "13",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "13",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "13",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "14",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "14",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "14",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "14",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "15",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "15",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "15",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "15",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "16",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "16",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "16",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "16",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "17",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "17",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "17",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "17",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "18",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "18",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "18",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "18",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "19",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "19",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "19",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "19",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "20",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "20",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "20",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "20",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "21",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "21",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "21",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "21",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "22",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "22",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "22",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "22",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "23",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "23",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "23",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "23",
+			"facing": "north"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "0",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "0",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "0",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "0",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "1",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "1",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "1",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "1",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "2",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "2",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "2",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "2",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "3",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "3",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "3",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "3",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "4",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "4",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "4",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "4",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "5",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "5",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "5",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "5",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "6",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "6",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "6",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "6",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "7",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "7",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "7",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "7",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "8",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "8",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "8",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "8",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "9",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "9",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "9",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "9",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "10",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "10",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "10",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "10",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "11",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "11",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "11",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "11",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "12",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "12",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "12",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "12",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "13",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "13",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "13",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "13",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "14",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "14",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "14",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "14",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "15",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "15",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "15",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "15",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "16",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "16",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "16",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "16",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "17",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "17",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "17",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "17",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "18",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "18",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "18",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "18",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "19",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "19",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "19",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "19",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "20",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "20",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "20",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "20",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "21",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "21",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "21",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "21",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "22",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "22",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "22",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "22",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "23",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "23",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "23",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "23",
+			"facing": "south"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "0",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "0",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "0",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "0",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "1",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "1",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "1",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "1",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "2",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "2",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "2",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "2",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "3",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "3",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "3",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "3",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "4",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "4",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "4",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "4",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "5",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "5",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "5",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "5",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "6",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "6",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "6",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "6",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "7",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "7",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "7",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "7",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "8",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "8",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "8",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "8",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "9",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "9",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "9",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "9",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "10",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "10",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "10",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "10",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "11",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "11",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "11",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "11",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "12",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "12",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "12",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "12",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "13",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "13",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "13",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "13",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "14",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "14",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "14",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "14",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "15",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "15",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "15",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "15",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "16",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "16",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "16",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "16",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "17",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "17",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "17",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "17",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "18",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "18",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "18",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "18",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "19",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "19",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "19",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "19",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "20",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "20",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "20",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "20",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "21",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "21",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "21",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "21",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "22",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "22",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "22",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "22",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "23",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "23",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "23",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "23",
+			"facing": "west"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "0",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "0",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "0",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "0",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "1",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "1",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "1",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "1",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "2",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "2",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "2",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "2",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "3",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "3",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "3",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "3",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "4",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "4",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "4",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "4",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "5",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "5",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "5",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "5",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "6",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "6",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "6",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "6",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "7",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "7",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "7",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "7",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "8",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "8",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "8",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "8",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "9",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "9",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "9",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "9",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "10",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "10",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "10",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "10",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "11",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "11",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "11",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "11",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "12",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "12",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "12",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "12",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "13",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "13",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "13",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "13",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "14",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "14",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "14",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "14",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "15",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "15",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "15",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "15",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "16",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "16",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "16",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "16",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "17",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "17",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "17",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "17",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "18",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "18",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "18",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "18",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "19",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "19",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "19",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "19",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "20",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "20",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "20",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "20",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "21",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "21",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "21",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "21",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "22",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "22",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "22",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "22",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "true",
+			"hour": "23",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "true",
+			"hour": "23",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"two_faced": "false",
+			"hour": "23",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"two_faced": "false",
+			"hour": "23",
+			"facing": "east"
+		},
+		"Name": "supplementaries:clock_block"
+	}
+]

@@ -1,0 +1,149 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"candles": "1"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"candles": "1"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"candles": "1"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"candles": "2"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"candles": "2"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"candles": "2"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"candles": "2"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"candles": "3"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"candles": "3"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"candles": "3"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"candles": "3"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"candles": "4"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"candles": "4"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"candles": "4"
+		},
+		"Name": "minecraft:magenta_candle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"candles": "4"
+		},
+		"Name": "minecraft:magenta_candle"
+	}
+]

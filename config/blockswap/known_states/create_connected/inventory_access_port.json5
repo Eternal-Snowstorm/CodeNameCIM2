@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "floor",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "wall",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "ceiling",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "floor",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "wall",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "ceiling",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "floor",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "wall",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "ceiling",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "floor",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "wall",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "ceiling",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "floor",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "ceiling",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "floor",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "wall",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "ceiling",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "floor",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "wall",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "ceiling",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "floor",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "wall",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"target": "ceiling",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "create_connected:inventory_access_port"
+	}
+]

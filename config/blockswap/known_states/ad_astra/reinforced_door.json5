@@ -1,0 +1,3171 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "north"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "south"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "west"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "true",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "true",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "top_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "top_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "left",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "left",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "center",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "center",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "right",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "right",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_left",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "bottom_right",
+			"open": "false",
+			"locked": "false",
+			"facing": "east"
+		},
+		"Name": "ad_astra:reinforced_door"
+	}
+]

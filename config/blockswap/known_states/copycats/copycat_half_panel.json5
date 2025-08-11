@@ -1,0 +1,437 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "north",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "south",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "south",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "west",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "west",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "east",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "east",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "north",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "north",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "south",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "south",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "west",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "west",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "east",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "east",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "north",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "north",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "south",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "south",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "west",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "west",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "east",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "east",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "north",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "north",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "south",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "south",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "west",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "west",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "east",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "east",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "north",
+			"facing": "up"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "north",
+			"facing": "up"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "south",
+			"facing": "up"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "south",
+			"facing": "up"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "west",
+			"facing": "up"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "west",
+			"facing": "up"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "east",
+			"facing": "up"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "east",
+			"facing": "up"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "north",
+			"facing": "down"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "north",
+			"facing": "down"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "south",
+			"facing": "down"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "south",
+			"facing": "down"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "west",
+			"facing": "down"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "west",
+			"facing": "down"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"offset": "east",
+			"facing": "down"
+		},
+		"Name": "copycats:copycat_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"offset": "east",
+			"facing": "down"
+		},
+		"Name": "copycats:copycat_half_panel"
+	}
+]

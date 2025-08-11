@@ -1,0 +1,3844 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "0",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "1",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "2",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "3",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "4",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "5",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "6",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "7",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "8",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "9",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "10",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "11",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "12",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "13",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "14",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "15",
+			"backwards": "true"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "0",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "1",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "2",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "3",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "4",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "5",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "6",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "7",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "8",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "9",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "10",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "11",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "12",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "13",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "14",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "north_south",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "north_south",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "east_west",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "east_west",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_east",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_east",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_west",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_west",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_north",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_north",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "ascending_south",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "ascending_south",
+			"power": "15",
+			"backwards": "false"
+		},
+		"Name": "create:controller_rail"
+	}
+]

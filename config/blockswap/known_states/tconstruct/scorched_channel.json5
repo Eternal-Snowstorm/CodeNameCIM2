@@ -1,0 +1,3890 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "true"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "none",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "in",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "none",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "in",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "true",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "none",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "in",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "none",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "in",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "out",
+			"south": "out",
+			"powered": "false",
+			"north": "out",
+			"east": "out",
+			"down": "false"
+		},
+		"Name": "tconstruct:scorched_channel"
+	}
+]

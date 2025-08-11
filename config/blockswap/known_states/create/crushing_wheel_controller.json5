@@ -1,0 +1,102 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "false",
+			"facing": "north"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "true",
+			"facing": "east"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "false",
+			"facing": "east"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "true",
+			"facing": "south"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "false",
+			"facing": "south"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "true",
+			"facing": "west"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "false",
+			"facing": "west"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "true",
+			"facing": "up"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "false",
+			"facing": "up"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "true",
+			"facing": "down"
+		},
+		"Name": "create:crushing_wheel_controller"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"valid": "false",
+			"facing": "down"
+		},
+		"Name": "create:crushing_wheel_controller"
+	}
+]

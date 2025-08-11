@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "north",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "up",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "up",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "down",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "down",
+			"extended": "true"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "up",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "up",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "down",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "down",
+			"extended": "false"
+		},
+		"Name": "create:sticker"
+	}
+]

@@ -1,0 +1,113 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "x",
+			"attached_positive": "true",
+			"attached_negative": "true"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "y",
+			"attached_positive": "true",
+			"attached_negative": "true"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "z",
+			"attached_positive": "true",
+			"attached_negative": "true"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "x",
+			"attached_positive": "false",
+			"attached_negative": "true"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "y",
+			"attached_positive": "false",
+			"attached_negative": "true"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "z",
+			"attached_positive": "false",
+			"attached_negative": "true"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "x",
+			"attached_positive": "true",
+			"attached_negative": "false"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "y",
+			"attached_positive": "true",
+			"attached_negative": "false"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "z",
+			"attached_positive": "true",
+			"attached_negative": "false"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "y",
+			"attached_positive": "false",
+			"attached_negative": "false"
+		},
+		"Name": "create_connected:inventory_bridge"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"axis": "z",
+			"attached_positive": "false",
+			"attached_negative": "false"
+		},
+		"Name": "create_connected:inventory_bridge"
+	}
+]

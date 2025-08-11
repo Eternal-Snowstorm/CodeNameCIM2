@@ -1,0 +1,293 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "upper",
+			"facing": "north"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "lower",
+			"facing": "north"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "upper",
+			"facing": "north_east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "upper",
+			"facing": "north_east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "lower",
+			"facing": "north_east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "lower",
+			"facing": "north_east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "upper",
+			"facing": "east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "lower",
+			"facing": "east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "upper",
+			"facing": "south_east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "upper",
+			"facing": "south_east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "lower",
+			"facing": "south_east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "lower",
+			"facing": "south_east"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "upper",
+			"facing": "south"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "lower",
+			"facing": "south"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "upper",
+			"facing": "south_west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "upper",
+			"facing": "south_west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "lower",
+			"facing": "south_west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "lower",
+			"facing": "south_west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "upper",
+			"facing": "west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "lower",
+			"facing": "west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "upper",
+			"facing": "north_west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "upper",
+			"facing": "north_west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"half": "lower",
+			"facing": "north_west"
+		},
+		"Name": "ad_astra:blue_flag"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"half": "lower",
+			"facing": "north_west"
+		},
+		"Name": "ad_astra:blue_flag"
+	}
+]

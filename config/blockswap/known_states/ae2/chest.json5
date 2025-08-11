@@ -1,0 +1,437 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "true",
+			"facing": "north"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "true",
+			"facing": "north"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "true",
+			"facing": "north"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "true",
+			"facing": "north"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "false",
+			"facing": "north"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "false",
+			"facing": "north"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "false",
+			"facing": "north"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "true",
+			"facing": "east"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "true",
+			"facing": "east"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "true",
+			"facing": "east"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "true",
+			"facing": "east"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "false",
+			"facing": "east"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "false",
+			"facing": "east"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "false",
+			"facing": "east"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "false",
+			"facing": "east"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "true",
+			"facing": "south"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "true",
+			"facing": "south"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "true",
+			"facing": "south"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "true",
+			"facing": "south"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "false",
+			"facing": "south"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "false",
+			"facing": "south"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "false",
+			"facing": "south"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "false",
+			"facing": "south"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "true",
+			"facing": "west"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "true",
+			"facing": "west"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "true",
+			"facing": "west"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "true",
+			"facing": "west"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "false",
+			"facing": "west"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "false",
+			"facing": "west"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "false",
+			"facing": "west"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "false",
+			"facing": "west"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "true",
+			"facing": "up"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "true",
+			"facing": "up"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "true",
+			"facing": "up"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "true",
+			"facing": "up"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "false",
+			"facing": "up"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "false",
+			"facing": "up"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "false",
+			"facing": "up"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "false",
+			"facing": "up"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "true",
+			"facing": "down"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "true",
+			"facing": "down"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "true",
+			"facing": "down"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "true",
+			"facing": "down"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"lights_on": "false",
+			"facing": "down"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"lights_on": "false",
+			"facing": "down"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"lights_on": "false",
+			"facing": "down"
+		},
+		"Name": "ae2:chest"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"lights_on": "false",
+			"facing": "down"
+		},
+		"Name": "ae2:chest"
+	}
+]

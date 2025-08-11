@@ -1,0 +1,2306 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "north",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "east",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "south",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "west",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "up",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "down",
+			"east": "true"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "north",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "east",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "south",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "west",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "up",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "true",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "true",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "true",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "true",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "true",
+			"north": "false",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "false",
+			"northeast": "true",
+			"north": "false",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"northwest": "true",
+			"northeast": "false",
+			"north": "false",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"northwest": "false",
+			"northeast": "false",
+			"north": "false",
+			"facing": "down",
+			"east": "false"
+		},
+		"Name": "tconstruct:punji"
+	},
+	{
+		"Name": "tconstruct:punji"
+	}
+]

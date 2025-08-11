@@ -1,0 +1,1284 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "1",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "1",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "2",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "2",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "3",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "3",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "4",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "4",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "5",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "5",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "6",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "6",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "7",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "7",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "8",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "8",
+			"half": "top",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "1",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "1",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "2",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "2",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "3",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "3",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "4",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "4",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "5",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "5",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "6",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "6",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "7",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "7",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "8",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "8",
+			"half": "bottom",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "1",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "1",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "2",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "2",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "3",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "3",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "4",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "4",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "5",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "5",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "6",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "6",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "7",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "7",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "8",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "8",
+			"half": "top",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "1",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "2",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "2",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "3",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "3",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "4",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "4",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "5",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "5",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "6",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "6",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "7",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "7",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "8",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "8",
+			"half": "bottom",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "1",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "1",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "2",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "2",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "3",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "3",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "4",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "4",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "5",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "5",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "6",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "6",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "7",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "7",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "8",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "8",
+			"half": "top",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "1",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "1",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "2",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "2",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "3",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "3",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "4",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "4",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "5",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "5",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "6",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "6",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "7",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "7",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "8",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "8",
+			"half": "bottom",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "1",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "1",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "2",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "2",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "3",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "3",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "4",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "4",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "5",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "5",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "6",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "6",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "7",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "7",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "8",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "8",
+			"half": "top",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "1",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "1",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "2",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "2",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "3",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "3",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "4",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "4",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "5",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "5",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "6",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "6",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "7",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "7",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"layers": "8",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"layers": "8",
+			"half": "bottom",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_slice"
+	}
+]

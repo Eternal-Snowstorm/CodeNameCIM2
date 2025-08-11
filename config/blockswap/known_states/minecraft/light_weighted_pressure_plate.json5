@@ -1,0 +1,119 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "1"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "2"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "3"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "4"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "5"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "6"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "7"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "8"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "9"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "10"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "11"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "12"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "13"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "14"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "15"
+		},
+		"Name": "minecraft:light_weighted_pressure_plate"
+	}
+]

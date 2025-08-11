@@ -1,0 +1,484 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "small",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "small",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "medium",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "medium",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "large",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "large",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "small",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "small",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "medium",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "large",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "large",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "small",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "small",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "medium",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "medium",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "large",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "large",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "small",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "small",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "medium",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "medium",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "large",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "large",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "small",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "small",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "medium",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "medium",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "large",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "large",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "small",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "small",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "medium",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "medium",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "large",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "large",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "small",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "small",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "medium",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "medium",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "large",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "large",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "small",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "small",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "medium",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "medium",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "true",
+			"size": "large",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wall": "false",
+			"size": "large",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "create:steam_whistle"
+	}
+]

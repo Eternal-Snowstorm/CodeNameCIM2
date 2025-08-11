@@ -1,0 +1,1059 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "water",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "water",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "true",
+			"fluid_logged": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "true",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"open": "false",
+			"in_wall": "false",
+			"fluid_logged": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:cyan_plastic_fence_gate"
+	}
+]

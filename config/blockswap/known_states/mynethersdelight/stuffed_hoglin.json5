@@ -1,0 +1,869 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "0",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "1",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "2",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "3",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "4",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "5",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "6",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "7",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "8",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "9",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "10",
+			"part": "head",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "0",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "1",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "2",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "3",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "4",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "5",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "6",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "7",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "8",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "9",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "10",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "11",
+			"part": "foot",
+			"facing": "north"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "0",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "1",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "2",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "3",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "4",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "5",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "6",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "7",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "8",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "9",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "10",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "11",
+			"part": "head",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "0",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "1",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "2",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "3",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "4",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "5",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "6",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "7",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "8",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "9",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "10",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "11",
+			"part": "foot",
+			"facing": "south"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "0",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "1",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "2",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "3",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "4",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "5",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "6",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "7",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "8",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "9",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "10",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "11",
+			"part": "head",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "0",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "1",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "2",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "3",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "4",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "5",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "6",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "7",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "8",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "9",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "10",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "11",
+			"part": "foot",
+			"facing": "west"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "0",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "1",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "2",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "3",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "4",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "5",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "6",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "7",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "8",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "9",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "10",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "11",
+			"part": "head",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "0",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "1",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "2",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "3",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "4",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "5",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "6",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "7",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "8",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "9",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "10",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"servings": "11",
+			"part": "foot",
+			"facing": "east"
+		},
+		"Name": "mynethersdelight:stuffed_hoglin"
+	}
+]

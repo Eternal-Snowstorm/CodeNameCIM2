@@ -1,0 +1,365 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "0",
+			"horizontal_offset": "none"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "1",
+			"horizontal_offset": "none"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "1",
+			"horizontal_offset": "none"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "2",
+			"horizontal_offset": "none"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "2",
+			"horizontal_offset": "none"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "3",
+			"horizontal_offset": "none"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "3",
+			"horizontal_offset": "none"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "0",
+			"horizontal_offset": "north"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "0",
+			"horizontal_offset": "north"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "1",
+			"horizontal_offset": "north"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "1",
+			"horizontal_offset": "north"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "2",
+			"horizontal_offset": "north"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "2",
+			"horizontal_offset": "north"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "3",
+			"horizontal_offset": "north"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "3",
+			"horizontal_offset": "north"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "0",
+			"horizontal_offset": "south"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "0",
+			"horizontal_offset": "south"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "1",
+			"horizontal_offset": "south"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "1",
+			"horizontal_offset": "south"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "2",
+			"horizontal_offset": "south"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "2",
+			"horizontal_offset": "south"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "3",
+			"horizontal_offset": "south"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "3",
+			"horizontal_offset": "south"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "0",
+			"horizontal_offset": "east"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "0",
+			"horizontal_offset": "east"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "1",
+			"horizontal_offset": "east"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "1",
+			"horizontal_offset": "east"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "2",
+			"horizontal_offset": "east"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "2",
+			"horizontal_offset": "east"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "3",
+			"horizontal_offset": "east"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "3",
+			"horizontal_offset": "east"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "0",
+			"horizontal_offset": "west"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "0",
+			"horizontal_offset": "west"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "1",
+			"horizontal_offset": "west"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "1",
+			"horizontal_offset": "west"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "2",
+			"horizontal_offset": "west"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "2",
+			"horizontal_offset": "west"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"post_slave": "3",
+			"horizontal_offset": "west"
+		},
+		"Name": "immersiveengineering:treated_post"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"post_slave": "3",
+			"horizontal_offset": "west"
+		},
+		"Name": "immersiveengineering:treated_post"
+	}
+]
