@@ -93,7 +93,7 @@ global.mechanismGroup = [
 	"coil",
 	"sculk",
 	"colorful",
-	"creative",
+  //"creative",
 	"pigiron",
 	"potion",
 	"bronze"

@@ -141,4 +141,8 @@ StartupEvents.registry("item", (event) => {
 	// 计算机组件半成品
 	event.create(`${global.namespace}:incomplete_computer_component`)
 		.texture(`${global.namespace}:item/material/incomplete_computer_component`)
+
+	// 计算机组件半成品
+	event.create(`${global.namespace}:creative_mechanism`)
+		.texture(`${global.namespace}:item/mechanism/complete/creative`)
 })
