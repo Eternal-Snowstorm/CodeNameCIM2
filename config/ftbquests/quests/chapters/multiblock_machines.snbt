@@ -4,7 +4,7 @@
 	filename: "multiblock_machines"
 	group: "6A6C7C5BAEF247E2"
 	icon: "immersiveengineering:arc_furnace"
-	id: "multiblock_machines"
+	id: "55DB869A8FA3F0F0"
 	order_index: 0
 	quest_links: [ ]
 	quests: [{
