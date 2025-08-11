@@ -25,5 +25,4 @@ ServerEvents.recipes((event) => {
 
 	event.replaceInput({}, "mekanism:salt", "#forge:dusts/salt")
 	event.replaceInput({}, "ratatouille:salt", "#forge:dusts/salt")
-	event.replaceInput({}, "cmi:nacl", "#forge:dusts/salt")
 })
