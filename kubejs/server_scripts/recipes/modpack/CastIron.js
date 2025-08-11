@@ -7,5 +7,4 @@ ServerEvents.recipes((event) => {
     immersiveengineering.metal_press("#forge:dusts/cast_iron","#forge:ingots/cast_iron","immersiveengineering:mold_plate")
     immersiveengineering.metal_press("#forge:dusts/cast_iron","#forge:ingots/cast_iron","immersiveengineering:mold_rod")
     thermal.press("#forge:dusts/cast_iron","#forge:ingots/cast_iron")
-    thermal.press("#forge:dusts/cast_iron","#forge:ingots/cast_iron","thermal:extra:press_rod_die")
 })
