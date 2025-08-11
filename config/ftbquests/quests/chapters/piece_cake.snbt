@@ -14,7 +14,7 @@
 			id: "3BC96A9B0909BB8E"
 			shape: "square"
 			size: 2.0d
-			subtitle: "You don't need a big one"
+			subtitle: "就一个就行，别搞太大"
 			tasks: [
 				{
 					id: "79019146BD8A0D92"
@@ -42,7 +42,7 @@
 					type: "item"
 				}
 			]
-			title: "Fission Reactor"
+			title: "裂变反应堆"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -74,7 +74,7 @@
 			id: "27CBF88AFC0584A6"
 			shape: "square"
 			size: 2.0d
-			subtitle: "Meet The Supercritical Phase Shifter"
+			subtitle: "初识超临界移相器"
 			tasks: [
 				{
 					count: 60L
@@ -100,7 +100,7 @@
 					type: "item"
 				}
 			]
-			title: "SPS"
+			title: "超临界移相器"
 			x: 3.0d
 			y: 2.0d
 		}
@@ -158,5 +158,5 @@
 			y: -2.0d
 		}
 	]
-	title: "A Piece Of U-Cake"
+	title: "美味铀饼"
 }

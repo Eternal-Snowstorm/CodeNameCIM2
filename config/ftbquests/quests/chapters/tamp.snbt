@@ -22,7 +22,7 @@
 			id: "31160500429DCF29"
 			shape: "circle"
 			size: 3.0d
-			subtitle: "Literally infinite ores"
+			subtitle: "无限矿石"
 			tasks: [{
 				id: "3F82E5BA2034F940"
 				item: "cmi:the_accelerator_of_mechanism_power"
@@ -120,5 +120,5 @@
 			y: 1.5d
 		}
 	]
-	title: "TAMP, 'The Tech Booster'"
+	title: "稍作休息"
 }

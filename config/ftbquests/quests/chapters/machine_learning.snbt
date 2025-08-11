@@ -255,7 +255,7 @@
 		}
 		{
 			id: "3DA43BDED8E5ECDC"
-			subtitle: "Currently you need just one"
+			subtitle: "当然，你可能只需要手搓1个"
 			tasks: [{
 				id: "4E6006998A8295B1"
 				item: "thermal:rubber"
@@ -342,7 +342,7 @@
 			dependencies: ["42EB8C8A978CA905"]
 			id: "621969A0F0B131A6"
 			size: 1.2d
-			subtitle: "More Rubber"
+			subtitle: "橡胶，橡胶，更多的橡胶！"
 			tasks: [{
 				id: "73AB9A0B1A4FD96D"
 				item: "thermal:device_tree_extractor"
@@ -378,7 +378,7 @@
 			dependencies: ["42EB8C8A978CA905"]
 			description: ["Literally a kitchen sink"]
 			id: "4DF9116B2357D62D"
-			subtitle: "It's a multiblock - stop asking and ponder more!"
+			subtitle: "多方块结构 - 去按[W]寻思下怎么用"
 			tasks: [{
 				id: "33A573AB9F77F2F1"
 				item: "cmi:water_pump"
@@ -498,7 +498,7 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "Just Do It"
+			subtitle: "勇敢去做"
 			tasks: [{
 				id: "6E602D46F137513C"
 				type: "checkmark"
@@ -618,5 +618,5 @@
 			y: 7.5d
 		}
 	]
-	title: "Machine Learning"
+	title: "学习机械"
 }

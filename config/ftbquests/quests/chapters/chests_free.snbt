@@ -159,14 +159,14 @@
 				to_observe: "ae2:mysterious_cube"
 				type: "observation"
 			}]
-			title: "Find a meteor"
+			title: "找个陨石"
 			x: -2.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["51A6B0B7FBDAB5A0"]
 			id: "17790FC91B1E5D4A"
-			subtitle: "Perfect for carrying flwaless budding certus quartz"
+			subtitle: "非常适合搬运无暇的赛特斯石英母岩"
 			tasks: [{
 				id: "0048299A59FCF0AE"
 				item: "mekanism:cardboard_box"
@@ -224,7 +224,6 @@
 		{
 			dependencies: ["5D2F9B6EA98A8CC6"]
 			id: "2CE11211D9B78F3B"
-			subtitle: "Both are acceptible"
 			tasks: [{
 				id: "64DE125F811BE84C"
 				item: {
@@ -237,7 +236,7 @@
 				title: "Any #forge:coal_coke"
 				type: "item"
 			}]
-			title: "Coke"
+			title: "焦煤"
 			x: -10.0d
 			y: 1.0d
 		}
@@ -262,5 +261,5 @@
 			y: -1.5d
 		}
 	]
-	title: "Chests-free"
+	title: "超大箱子"
 }

@@ -497,7 +497,7 @@
 		{
 			dependencies: ["27DAB5585DB71C48"]
 			id: "37EC1447F4667214"
-			subtitle: "Mix chorus fruit with molten ender pearls to get more molten ender pearls"
+			subtitle: "加热融化紫颂果，让它和熔融末影融为一体"
 			tasks: [{
 				id: "27F9D9975674C6D6"
 				item: {
@@ -510,7 +510,7 @@
 				title: "Any #forge:ender_pearls"
 				type: "item"
 			}]
-			title: "Infinite Ender Pearls"
+			title: "无限末影珍珠"
 			x: 4.5d
 			y: -3.0d
 		}
@@ -534,5 +534,5 @@
 			y: 2.5d
 		}
 	]
-	title: "Dive Down Hard"
+	title: "继续向前"
 }

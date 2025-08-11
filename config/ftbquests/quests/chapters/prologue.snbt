@@ -22,7 +22,7 @@
 				id: "22D0220F20C29089"
 				type: "checkmark"
 			}]
-			title: "The World of Mechanisms Awaits"
+			title: "构件世界"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -40,7 +40,7 @@
 				id: "6D6250EF55DF25ED"
 				type: "checkmark"
 			}]
-			title: "The Pack"
+			title: "整合包"
 			x: -3.0d
 			y: 0.0d
 		}
@@ -58,7 +58,7 @@
 				id: "2F9F7E1BE7866A66"
 				type: "checkmark"
 			}]
-			title: "The Tech Tree"
+			title: "科技树"
 			x: -1.5d
 			y: -2.5d
 		}
@@ -76,12 +76,24 @@
 				id: "79D5B1959C780861"
 				type: "checkmark"
 			}]
-			title: "Prerelease"
+			title: "Pre release"
 			x: 1.0d
 			y: -2.5d
 		}
 		{
-			description: [""]
+			description: [
+				"[主创]Unknown_Entity_"
+				"[程序]逐日炎雪_中微子"
+				"[程序]榛名柒月"
+				"[程序]随机构件"
+				"[程序]燕栖"
+				"[程序]FiberOptics"
+				"[程序]117458866249"
+				"[美工]Dropper_QWQ"
+				"[技术]MF."
+				"[技术]芒果凍布丁"
+				"[任务]Decahydroflowey"
+			]
 			disable_toast: true
 			icon: "ae2:tiny_tnt"
 			id: "04615C350964977A"
@@ -99,5 +111,5 @@
 			y: 0.0d
 		}
 	]
-	title: "Prologue"
+	title: "开始"
 }

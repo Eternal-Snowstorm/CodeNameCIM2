@@ -151,7 +151,7 @@
 			dependencies: ["738AA5C4C4167BFB"]
 			icon: "immersiveindustry:crucible"
 			id: "47D11B96A16AB842"
-			subtitle: "See Engineer's Manual"
+			subtitle: "瞅瞅工程师手册"
 			tasks: [
 				{
 					count: 13L
@@ -182,7 +182,7 @@
 					type: "item"
 				}
 			]
-			title: "Steel Mill Crucible"
+			title: "钢厂坩埚"
 			x: 1.5d
 			y: 1.0d
 		}
@@ -315,10 +315,10 @@
 					type: "item"
 				}
 			]
-			title: "Arc Furnace"
+			title: "电弧炉"
 			x: 4.5d
 			y: 1.0d
 		}
 	]
-	title: "Ironish Irony"
+	title: "冶金工业"
 }
