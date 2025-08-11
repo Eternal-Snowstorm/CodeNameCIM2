@@ -8,7 +8,7 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 	if (player == null) {
 		return
 	}
-	if (event.getItem().is("cmi:tier_2_aviation_mechanism")) {
+	if (event.getItem().is("cmi:tier_3_aviation_mechanism")) {
 		let { x, y, z } = event.block.pos
 		// 设定扫描所用变量
 		let numx = x
@@ -28,7 +28,7 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 
 				let block = event.level.getBlock(pos).getId()
 
-				if (block === "ad_astra:moon_stone") {
+				if (block === "ad_astra:mars_stone") {
 					count = 1 + count
 				} else if (block === "minecraft:deepslate") {
 					count = 1 + count
@@ -47,19 +47,19 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 				pos = new BlockPos(outx, y, outz)
 				let block = event.level.getBlock(pos).getId()
 
-				if (block === "ad_astra:moon_stone") {
+				if (block === "ad_astra:mars_stone") {
 					rand = Math.random()
 					if (rand <= 0.2) {
-						event.level.getBlock(pos).set("ad_astra:moon_desh_ore")
+						event.level.getBlock(pos).set("ad_astra:mars_ostrum_ore")
 					} else if (rand <= 0.25) {
-						event.level.getBlock(pos).set("ad_astra:moon_ice_shard_ore")
+						event.level.getBlock(pos).set("ad_astra:mars_ostrum_ore")
 					} else if (rand <= 0.3) {
-						event.level.getBlock(pos).set("thermal:steel_block")
+						event.level.getBlock(pos).set("ad_astra:desh_block")
 					}
 				} else if (block === "minecraft:deepslate") {
 					rand = Math.random()
 					if (rand <= 0.15) {
-						event.level.getBlock(pos).set("ad_astra:deepslate_desh_ore")
+						event.level.getBlock(pos).set("ad_astra:deepslate_ostrum_ore")
 					} else if (rand <= 0.25) {
 						event.level.getBlock(pos).set("minecraft:deepslate_iron_ore")
 					} else if (rand <= 0.35) {
@@ -100,7 +100,7 @@ BlockEvents.rightClicked((event) => {
 
 			let block = event.level.getBlock(pos).getId()
 
-			if (block === "ad_astra:moon_stone") {
+			if (block === "ad_astra:mars_stone") {
 				count = 1 + count
 			} else if (block === "minecraft:deepslate") {
 				count = 1 + count
@@ -113,9 +113,9 @@ BlockEvents.rightClicked((event) => {
 	}
 	// 若数量大于5则召唤效果粒子
 	let { block, item, level } = event
-	if (item.id !== "cmi:tier_2_aviation_mechanism" || block.id !== "cmi:the_accelerator_of_mechanism_power") {
+	if (item.id !== "cmi:tier_3_aviation_mechanism" || block.id !== "cmi:the_accelerator_of_mechanism_power") {
 		return
 	}
-	let command = `particle minecraft:dust 1 0.5 0 1 ${block.x + 0.5} ${block.y + 1} ${block.z + 0.5} 0.5 0.5 0.5 0.1 30`
+	let command = `particle minecraft:dust 0.7 0.5 0.5 1 ${block.x + 0.5} ${block.y + 1} ${block.z + 0.5} 0.5 0.5 0.5 0.1 30`
 	level.server.runCommandSilent(command)
 })
