@@ -76,7 +76,7 @@ Ponder.registry((event) => {
 			scene.idle(80)
 			scene.addKeyframe()
 
-			// 量子环支持跨维度传输频道，也就是说可以使用量子环实现不同维度之间的物流
+			// 量子环支持跨维度传输频道, 也就是说可以使用量子环实现不同维度之间的物流
 			scene.text(80, "Quantum Ring support inter-dimentional channel transmission, which means it can be used for the transportation between dimentions", [7.5, 2.5, 5.5])
 			scene.idle(100)
 		})

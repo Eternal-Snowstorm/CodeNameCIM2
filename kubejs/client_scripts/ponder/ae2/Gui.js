@@ -68,7 +68,7 @@ Ponder.registry((event) => {
 			.withItem("ae2:crafting_pattern")
 
 		scene.idle(60)
-		scene.text(60, "我们将其取走，放入紧贴“分子装配室”的“ME样板供应器”", [6, 1.5, 6])
+		scene.text(60, "我们将其取走, 放入紧贴“分子装配室”的“ME样板供应器”", [6, 1.5, 6])
 
 		scene.world.setBlocks([4, 2, 10], "cmi:slot2")
 		scene.idle(10)
@@ -81,9 +81,9 @@ Ponder.registry((event) => {
 		scene.text(40, "然后我们可以找到钻石镐的图标", [12, 6.5, 10])
 		scene.idle(50)
 
-		scene.text(100, "如果你的网络中没有钻石镐，则会在右下角显示“合成”，按“鼠标中键”或“鼠标左键”可以合成一些", [12, 6.5, 10])
+		scene.text(100, "如果你的网络中没有钻石镐, 则会在右下角显示“合成”, 按“鼠标中键”或“鼠标左键”可以合成一些", [12, 6.5, 10])
 		scene.idle(110)
-		scene.text(100, "如果你的网络中已有钻石镐，则会在右下角显示数字，按“鼠标中键”可以再合成一些", [12, 6.5, 10])
+		scene.text(100, "如果你的网络中已有钻石镐, 则会在右下角显示数字, 按“鼠标中键”可以再合成一些", [12, 6.5, 10])
 		scene.idle(110)
 
 		scene.addKeyframe()
@@ -123,7 +123,7 @@ Ponder.registry((event) => {
 		scene.idle(50)
 		scene.text(40, "且有着相对严格的输入输出分配", [11, 2.5, 6])
 		scene.idle(50)
-		scene.text(60, "即只能侧面输入燃料，顶部输入物品，底部输出物品", [11, 2.5, 6])
+		scene.text(60, "即只能侧面输入燃料, 顶部输入物品, 底部输出物品", [11, 2.5, 6])
 		scene.idle(70)
 		scene.addKeyframe()
 
@@ -149,7 +149,7 @@ Ponder.registry((event) => {
 		scene.overlay.showOutline("blue", {}, [9, 4, 7, 2, 5, 7], 40)
 		scene.text(40, "正常的ME接口有2排9列物品栏", [2, 5, 7])
 		scene.idle(50)
-		scene.text(50, "但是“俺寻思”里面并不能放不下这么多，此处省略()", [2, 5, 7])
+		scene.text(50, "但是“俺寻思”里面并不能放不下这么多, 此处省略()", [2, 5, 7])
 		scene.idle(60)
 
 		scene.addKeyframe()
@@ -157,7 +157,7 @@ Ponder.registry((event) => {
 		scene.text(50, "在此处标记 1 个煤炭", [9, 5.5, 7])
 		scene.idle(60)
 
-		scene.text(60, "ME接口会自动从网络抽取物品，使其与设定的数量保持一致", [10, 3, 6])
+		scene.text(60, "ME接口会自动从网络抽取物品, 使其与设定的数量保持一致", [10, 3, 6])
 		scene.idle(70)
 		scene.text(50, "假如此时网络共有 8 组(64x8=512)个煤炭")
 		scene.idle(60)
@@ -166,22 +166,22 @@ Ponder.registry((event) => {
 		scene.world.setBlocks([9, 4, 7], "cmi:coal")
 
 		scene.idle(50)
-		scene.text(60, "随后，漏斗会将煤炭抽取走，ME接口内煤炭耗尽", [10, 3, 6])
+		scene.text(60, "随后, 漏斗会将煤炭抽取走, ME接口内煤炭耗尽", [10, 3, 6])
 		scene.world.setBlocks([9, 4, 7], "cmi:slot1")
 		scene.idle(70)
 		scene.text(40, "ME接口将重新抽取 1 个煤炭", [10, 3, 6])
 		scene.world.setBlocks([9, 4, 7], "cmi:coal")
 		scene.idle(50)
 
-		scene.text(60, "如此循环往复，直到熔炉、漏斗、ME接口中都被填满，ME接口将停止抽取新的物品", [10, 3, 6])
+		scene.text(60, "如此循环往复, 直到熔炉、漏斗、ME接口中都被填满, ME接口将停止抽取新的物品", [10, 3, 6])
 		scene.idle(70)
 
-		scene.text(80, "最后，网络中剩余512-5x64-1x64-1=127个煤炭(填充熔炉一组，填充漏斗5组，填充ME接口1个)")
+		scene.text(80, "最后, 网络中剩余512-5x64-1x64-1=127个煤炭(填充熔炉一组, 填充漏斗5组, 填充ME接口1个)")
 		scene.idle(90)
 
 		scene.addKeyframe()
 
-		scene.text(40, "此时，在终端中合成一个熟鸡肉")
+		scene.text(40, "此时, 在终端中合成一个熟鸡肉")
 		scene.idle(50)
 
 		scene.text(60, "样板供应器向网络请求了一个生鸡肉", [11, 4.5, 6])
@@ -197,7 +197,7 @@ Ponder.registry((event) => {
 		scene.idle(40)
 
 		scene.world.setBlocks([9, 4, 7], "cmi:slot1")
-		scene.text(60, "煤炭被消耗，ME接口重新请求 1 个煤炭", [10, 3, 6])
+		scene.text(60, "煤炭被消耗, ME接口重新请求 1 个煤炭", [10, 3, 6])
 		scene.idle(70)
 		scene.world.setBlocks([9, 4, 7], "cmi:coal")
 		scene.idle(20)
@@ -208,10 +208,10 @@ Ponder.registry((event) => {
 		scene.text(60, "当合成完成后", [11, 2.5, 6])
 		scene.world.setBlocks([11, 2, 6], "minecraft:furnace")
 		scene.idle(70)
-		scene.text(60, "熟鸡肉通过漏斗回到下面的ME接口，回到网络，结束合成", [11, 1.5, 6])
+		scene.text(60, "熟鸡肉通过漏斗回到下面的ME接口, 回到网络, 结束合成", [11, 1.5, 6])
 		scene.idle(100)
 		scene.addKeyframe()
-		scene.text(100, "这种把“消耗品”与“原料”分开的思路仍可在其他地方使用，比如...")
+		scene.text(100, "这种把“消耗品”与“原料”分开的思路仍可在其他地方使用, 比如...")
 		scene.idle(110)
 
 		scene.world.setBlocks([14, 1, 2], "create:depot")

@@ -15,7 +15,7 @@ Ponder.registry((event) => {
 			scene.world.showSection([2, 1, 2, 3, 2, 3], Direction.DOWN)
 			scene.idle(20)
 
-			// 在大多数情况下，建议向聚合器内泵水
+			// 在大多数情况下, 建议向聚合器内泵水
 			scene.text(60, "In most cases, it is suggested to pump water into the condenser", [2.5, 1.5, 2.5])
 			scene.addKeyframe()
 			scene.idle(80)

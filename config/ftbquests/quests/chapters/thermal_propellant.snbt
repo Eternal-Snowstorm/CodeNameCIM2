@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "thermal_propellant"
-	group: ""
+	group: "050255AE19A93344"
 	icon: "thermal:rf_coil"
 	id: "62433C137A51E5F8"
-	order_index: 7
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -24,6 +24,11 @@
 			dependencies: ["69B1FF11D9273022"]
 			dependency_requirement: "all_started"
 			id: "2B6B38F467E0A162"
+			rewards: [{
+				id: "563CFB6522B13781"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "405E16B6AAC47090"
 				item: {
@@ -33,9 +38,10 @@
 						value: "forge:ingots/invar"
 					}
 				}
-				title: "Any #forge:ingots/invar"
+				title: "殷钢锭"
 				type: "item"
 			}]
+			title: "殷钢锭"
 			x: -3.0d
 			y: -5.0d
 		}
@@ -47,6 +53,11 @@
 			]
 			hide_dependent_lines: true
 			id: "1841501B013A8139"
+			rewards: [{
+				id: "25FC28A90A13C966"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -69,7 +80,7 @@
 						value: "forge:gears/constantan"
 					}
 				}
-				title: "Any #forge:gears/constantan"
+				title: "康铜齿轮"
 				type: "item"
 			}]
 			x: -2.0d
@@ -77,6 +88,12 @@
 		}
 		{
 			id: "1D8A1D223F15B923"
+			rewards: [{
+				id: "09A73CE4ECE905DC"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "这个东西接上电转的飞快"
 			tasks: [{
 				id: "750621601DAB2155"
 				item: "thermal:rf_coil"
@@ -99,6 +116,11 @@
 		{
 			dependencies: ["2B6B38F467E0A162"]
 			id: "6E1346FADDAC81CB"
+			rewards: [{
+				id: "5716EED4C0457CDC"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7278E3069B6EFB85"
 				item: {
@@ -108,9 +130,10 @@
 						value: "forge:plates/invar"
 					}
 				}
-				title: "Any #forge:plates/invar"
+				title: "殷钢板"
 				type: "item"
 			}]
+			title: "殷钢板"
 			x: -3.0d
 			y: -4.0d
 		}
@@ -127,7 +150,7 @@
 						value: "forge:ingots/constantan"
 					}
 				}
-				title: "Any #forge:ingots/constantan"
+				title: "康铜锭"
 				type: "item"
 			}]
 			x: -2.0d
@@ -159,6 +182,11 @@
 				"5BD6EBC1F19DB22C"
 			]
 			id: "42DA0B5B429DACC9"
+			rewards: [{
+				id: "062C092498D86976"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -176,6 +204,11 @@
 				"5BD6EBC1F19DB22C"
 			]
 			id: "0531A82CFE7311D2"
+			rewards: [{
+				id: "14ADEC480B3C2B84"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -190,6 +223,11 @@
 			dependencies: ["457865F53B3A7339"]
 			dependency_requirement: "all_started"
 			id: "7C576110450726F8"
+			rewards: [{
+				id: "75808C78A6165476"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6041BF685FC8ABF4"
 				item: {
@@ -199,9 +237,10 @@
 						value: "forge:ingots/lumium"
 					}
 				}
-				title: "Any #forge:ingots/lumium"
+				title: "流明锭"
 				type: "item"
 			}]
+			title: "流明锭"
 			x: 3.0d
 			y: -5.0d
 		}
@@ -209,6 +248,11 @@
 			dependencies: ["566E94FC8211FCCF"]
 			dependency_requirement: "all_started"
 			id: "0A1AB8A282C91166"
+			rewards: [{
+				id: "0D9A98B0C1B04E76"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4C8E1AE7469DBA27"
 				item: {
@@ -218,9 +262,10 @@
 						value: "forge:ingots/enderium"
 					}
 				}
-				title: "Any #forge:ingots/enderium"
+				title: "末影锭"
 				type: "item"
 			}]
+			title: "末影锭"
 			x: 2.0d
 			y: -5.0d
 		}
@@ -228,6 +273,11 @@
 			dependencies: ["0799AA1823240100"]
 			dependency_requirement: "all_started"
 			id: "57EC25AC52B42AC2"
+			rewards: [{
+				id: "69FDDF1ADD64D562"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5F4150F7825D30D4"
 				item: {
@@ -237,15 +287,21 @@
 						value: "forge:ingots/electrum"
 					}
 				}
-				title: "Any #forge:ingots/electrum"
+				title: "琥珀金锭"
 				type: "item"
 			}]
+			title: "琥珀金锭"
 			x: -0.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["57EC25AC52B42AC2"]
 			id: "039DA3533BE9F04F"
+			rewards: [{
+				id: "1B5F7101F08EC961"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3291A43AE3FCD96C"
 				item: {
@@ -255,9 +311,10 @@
 						value: "forge:plates/electrum"
 					}
 				}
-				title: "Any #forge:plates/electrum"
+				title: "琥珀金板"
 				type: "item"
 			}]
+			title: "琥珀金板"
 			x: -0.5d
 			y: -4.0d
 		}
@@ -273,15 +330,21 @@
 						value: "forge:gears/signalum"
 					}
 				}
-				title: "Any #forge:gears/signalum"
+				title: "信素齿轮"
 				type: "item"
 			}]
+			title: "信素齿轮"
 			x: 0.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["0A1AB8A282C91166"]
 			id: "07AA69F3389F3143"
+			rewards: [{
+				id: "4C7758125F7C55EF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "58E2BA00E5D3481C"
 				item: {
@@ -291,15 +354,21 @@
 						value: "forge:plates/enderium"
 					}
 				}
-				title: "Any #forge:plates/enderium"
+				title: "末影板"
 				type: "item"
 			}]
+			title: "末影板"
 			x: 2.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7C576110450726F8"]
 			id: "2739A5A82798001B"
+			rewards: [{
+				id: "1D9FB9C59424050B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "57BF80E2F36ECB8B"
 				item: {
@@ -309,9 +378,10 @@
 						value: "forge:gears/lumium"
 					}
 				}
-				title: "Any #forge:gears/lumium"
+				title: "流明齿轮"
 				type: "item"
 			}]
+			title: "流明齿轮"
 			x: 3.0d
 			y: -4.0d
 		}
@@ -363,6 +433,11 @@
 				"2C009ACB6368F1D5"
 			]
 			id: "6F9E16D27C6C973B"
+			rewards: [{
+				id: "4039BA750D96B28D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "279D0BF6561EF618"
 				item: "thermal_extra:fluid_mixer"
@@ -400,6 +475,7 @@
 		}
 		{
 			id: "1B1E5D3285128DF5"
+			subtitle: "好怕它飘到太空"
 			tasks: [{
 				id: "1A924CD0CE1208E1"
 				item: "thermal:glowstone_bucket"

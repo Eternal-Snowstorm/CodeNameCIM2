@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tamp"
-	group: ""
+	group: "050255AE19A93344"
 	icon: "cmi:the_accelerator_of_mechanism_power"
 	id: "057D31FCDB4D0CD8"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -87,7 +87,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C4294A9CDAF3C23"]
 			id: "12A9FFA4DE81B09D"
 			tasks: [{
 				id: "1A8B361A7209EE14"

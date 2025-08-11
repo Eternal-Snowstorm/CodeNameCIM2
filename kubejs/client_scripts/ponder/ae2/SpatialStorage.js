@@ -14,7 +14,7 @@ Ponder.registry((event) => {
         scene.world.showSection([5, 2, 1], Direction.DOWN)
         scene.idle(80)
 
-        // 空间塔必须成列相连，不同的空间塔多方块结构之间用线缆连接
+        // 空间塔必须成列相连, 不同的空间塔多方块结构之间用线缆连接
         scene.text(60, "Spatial Pylons must be placed in rows and columns, connect each row or column with Cables", [7.5, 2.5, 7.5])
         scene.idle(80)
         scene.addKeyframe()
@@ -28,7 +28,7 @@ Ponder.registry((event) => {
         scene.text(40, "And connect a Spatial IO Port to the ME network", [4.5, 1.5, 1.5])
         scene.idle(60)
 
-        // 需要保证所有空间塔都在绿框以内，紫框以外才能选取紫框内的所有空间
+        // 需要保证所有空间塔都在绿框以内, 紫框以外才能选取紫框内的所有空间
         scene.text(80, "Ensure all Spatial Pylons are inside the green rectangle while outside the purple")
         let smoothStoneSection = scene.world.showIndependentSection([2, 2, 2, 6, 6, 6], Direction.DOWN)
         scene.overlay.showOutline("fast", {}, [2, 2, 2, 6, 6, 6], 80)
@@ -74,7 +74,7 @@ Ponder.registry((event) => {
         scene.idle(30)
         scene.addKeyframe()
 
-        // 空间存储非常强大，你甚至可以使用它搬运末地门！
+        // 空间存储非常强大, 你甚至可以使用它搬运末地门！
         scene.text(80, "Spatial Storage is extremely powerful, you can even transport End Portal with it!")
         scene.world.setBlocks([2, 2, 2, 6, 6, 6], "minecraft:air", false)
         scene.world.hideIndependentSection(secondSmoothStoneSection, Direction.UP)

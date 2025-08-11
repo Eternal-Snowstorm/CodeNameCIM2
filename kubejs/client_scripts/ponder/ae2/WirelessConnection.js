@@ -22,7 +22,7 @@ Ponder.registry((event) => {
             scene.text(60, "It allows users to get access to the ME network remotely", [5.5, 2.5, 4.5])
             scene.idle(80)
 
-            // 当然，它需要一个ME无线终端配合使用
+            // 当然, 它需要一个ME无线终端配合使用
             scene.text(60, "Well, with an ME Wireless Terminal in hand", [5.5, 2.5, 4.5])
             scene.showControls(40, [5.5, 3, 4.5], "down")
                 .withItem(" ae2:wireless_terminal")
@@ -39,7 +39,7 @@ Ponder.registry((event) => {
                 .withItem(" ae2:wireless_booster")
             scene.idle(80)
 
-            // 最多插入一组增幅器，提供528格的访问距离
+            // 最多插入一组增幅器, 提供528格的访问距离
             scene.text(60, "By maximum it provides 528 blocks of distant access with a set of Wireless Booster", [5.5, 2.5, 4.5])
             scene.idle(80)
             scene.addKeyframe()

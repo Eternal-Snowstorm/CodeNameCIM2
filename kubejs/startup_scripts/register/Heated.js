@@ -9,4 +9,5 @@ CreateHeatJS.registerHeatEvent((event) => {
 	}
 
 	addHeatLevel("grilled", 1, 0xFF8C00, "minecraft:fire")
+		.setJeiTip(true)
 })

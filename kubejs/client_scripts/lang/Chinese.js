@@ -252,8 +252,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLanguage("#ad_astra:power_consumption_machines", "该Mod的机器每个面都有能量输入的上限\n如果想要不会断电确保产量你可能需要给每个面都连接一根电线")
 	addJEIInfoLanguage("engineered_schematics:multiblock_schematic", "手持原理图右键地面以放置投影网格, 将原理图放置于副手可以查看方块的具体位置")
 	addJEIInfoLanguage("cmi:siltsteel_ingot", "自浑浊淤泥中升华, 历经繁复萃取与催化精炼, 终获此一泓清冽碧波")
-	addJEIInfoLanguage("cmi:wooden_faucet", `右键"橡胶原木"有25%概率获得1个"橡胶"\n有10%概率会将其变为"去皮橡胶原木"\n每次右键都会消耗1点耐久，耐久归零后工具损坏`)
-	addJEIInfoLanguage("#cmi:liquid_output", "淤泥泵在每次工作时，会产出100mB ~ 200mB的淤泥\n初始概率为1.3%，有概率产出10000mB淤泥，如果抽中了那么概率重置为1.3%\n若未抽中，那么每次运作时概率提升为当前的1.02倍，最多提升至100%\n第499次未抽中时，那么在第500次有50%概率产出10000mB，否则产出5000mB，随后概率重置为1.3%\n第999次未抽中时，那么在第1000次必定产出10000mB，随后概率重置为1.3%\n若单个淤泥泵连续5次产出10000mB，将向所有玩家发送提示信息")
+	addJEIInfoLanguage("cmi:wooden_faucet", `右键"橡胶原木"有25%概率获得1个"橡胶"\n有10%概率会将其变为"去皮橡胶原木"\n每次右键都会消耗1点耐久, 耐久归零后工具损坏`)
+	addJEIInfoLanguage("#cmi:liquid_output", "淤泥泵在每次工作时, 会产出100mB ~ 200mB的淤泥\n初始概率为1.3%, 有概率产出10000mB淤泥, 如果抽中了那么概率重置为1.3%\n若未抽中, 那么每次运作时概率提升为当前的1.02倍, 最多提升至100%\n第499次未抽中时, 那么在第500次有50%概率产出10000mB, 否则产出5000mB, 随后概率重置为1.3%\n第999次未抽中时, 那么在第1000次必定产出10000mB, 随后概率重置为1.3%\n若单个淤泥泵连续5次产出10000mB, 将向所有玩家发送提示信息")
 	addJEIInfoLanguage("#cmi:peat_gen", `泥炭是一种上好的燃料, 单个泥炭可以烧炼4个物品\n只会在"红树林沼泽"和"沼泽"群系的地表生成\n并且挖掘泥炭块时将会受到"时运"和"精准采集"的附魔效果影响`)
 
 	addAccelerateTooltipLanguage("cmi:stone_mechanism", "§e转化石头\n§e10%安山岩\n§e10%闪长岩\n§e10%花岗岩\n§e10%石灰岩\n§e10%焦黑石头\n§2转化深板岩\n§210%焦黑石头\n§210%凝灰岩\n§210%熔渣\n§210%滴水石块\n§210%平滑玄武岩")

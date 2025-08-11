@@ -73,4 +73,10 @@ ServerEvents.recipes((event) => {
 		Fluid.of("minecraft:water", 1000),
 		"#forge:nuggets/iron"
 	]).heated()
+
+	// 烈焰血
+	create.mixing(Fluid.of("tconstruct:blazing_blood", 500), [
+		Fluid.of("cmi:blood", 500),
+		"minecraft:blaze_powder"
+	]).heated()
 })

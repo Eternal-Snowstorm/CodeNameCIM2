@@ -2,19 +2,24 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "space_leap"
-	group: ""
+	group: "050255AE19A93344"
 	icon: {
 		Count: 1
 		id: "ad_astra:tier_4_rocket"
 		tag: { }
 	}
 	id: "4B0103EA37CBBA6C"
-	order_index: 11
+	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["59DDEA7ED18F7042"]
 			id: "6F5E8BA29740F876"
+			rewards: [{
+				id: "759A46D86F4F1020"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -26,7 +31,7 @@
 						value: "forge:ingots/calorite"
 					}
 				}
-				title: "Any #forge:ingots/calorite"
+				title: "耐热金属锭"
 				type: "item"
 			}]
 			x: 0.75d
@@ -36,6 +41,11 @@
 			dependencies: ["7AF48F9D5B9702F6"]
 			icon: "ad_astra:desh_ingot"
 			id: "18BC9029C85E2018"
+			rewards: [{
+				id: "7208E115596875D5"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -47,7 +57,7 @@
 						value: "forge:ingots/desh"
 					}
 				}
-				title: "Any #forge:ingots/desh"
+				title: "戴斯锭"
 				type: "item"
 			}]
 			x: -4.5d
@@ -56,6 +66,11 @@
 		{
 			dependencies: ["219CBE63A4DBF1D4"]
 			id: "041980289F796026"
+			rewards: [{
+				id: "33AC24506A68F671"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -67,7 +82,7 @@
 						value: "forge:ingots/ostrum"
 					}
 				}
-				title: "Any #forge:ingots/ostrum"
+				title: "紫金锭"
 				type: "item"
 			}]
 			x: -2.25d
@@ -76,6 +91,11 @@
 		{
 			dependencies: ["7AF48F9D5B9702F6"]
 			id: "01E9DE433690023D"
+			rewards: [{
+				id: "2F4088A1BF51A1EF"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -87,7 +107,7 @@
 						value: "forge:ingots/platinum"
 					}
 				}
-				title: "Any #forge:ingots/platinum"
+				title: "铂锭"
 				type: "item"
 			}]
 			x: -6.0d
@@ -97,6 +117,11 @@
 			dependencies: ["2272BC074A02DEC7"]
 			icon: "ad_astra:moon_globe"
 			id: "7AF48F9D5B9702F6"
+			rewards: [{
+				id: "3D5507FDECD08E73"
+				type: "xp"
+				xp: 50
+			}]
 			size: 1.5d
 			tasks: [{
 				dimension: "ad_astra:moon"
@@ -110,6 +135,11 @@
 			dependencies: ["1F975B93EFA8A403"]
 			icon: "ad_astra:mars_globe"
 			id: "219CBE63A4DBF1D4"
+			rewards: [{
+				id: "49BB3B33D56A1729"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.5d
 			tasks: [{
 				dimension: "ad_astra:mars"
@@ -123,6 +153,11 @@
 			dependencies: ["3ADF8DB46B99CD5C"]
 			icon: "ad_astra:venus_globe"
 			id: "59DDEA7ED18F7042"
+			rewards: [{
+				id: "0A61FCEA8E255739"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.5d
 			tasks: [{
 				dimension: "ad_astra:venus"
@@ -135,6 +170,11 @@
 		{
 			dependencies: ["30D3E7AEF186F9E8"]
 			id: "1F975B93EFA8A403"
+			rewards: [{
+				id: "35A7B272B960886D"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			tasks: [{
 				id: "551658D217591424"
@@ -151,6 +191,11 @@
 		{
 			dependencies: ["4FDECC62C340F3FF"]
 			id: "3ADF8DB46B99CD5C"
+			rewards: [{
+				id: "79A3AA326FDDDB48"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			tasks: [{
 				id: "0100D0BFA32B11B3"
@@ -170,6 +215,11 @@
 				"4B141FEC9925E00F"
 			]
 			id: "78DCC038E3F05417"
+			rewards: [{
+				id: "6BC496C13EE8AC6C"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			tasks: [{
 				id: "2713649F76AFEDAC"
@@ -182,6 +232,11 @@
 		{
 			dependencies: ["18BC9029C85E2018"]
 			id: "30D3E7AEF186F9E8"
+			rewards: [{
+				id: "6A68F479FB28FA7A"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			tasks: [{
 				id: "31DB8EEB03DC1FB8"
@@ -194,6 +249,11 @@
 		{
 			dependencies: ["041980289F796026"]
 			id: "4FDECC62C340F3FF"
+			rewards: [{
+				id: "6043D13E3A0231A8"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			tasks: [{
 				id: "2C8C748FC50E9DC9"
@@ -206,6 +266,11 @@
 		{
 			dependencies: ["6F5E8BA29740F876"]
 			id: "59B89E82BBB3AC39"
+			rewards: [{
+				id: "330EBC4D0C82463B"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			tasks: [{
 				id: "32834A2895A0A16B"
@@ -218,6 +283,11 @@
 		{
 			dependencies: ["78DCC038E3F05417"]
 			id: "2272BC074A02DEC7"
+			rewards: [{
+				id: "36E02910AD8AA14E"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "square"
 			tasks: [{
 				id: "460B72DA1AFD4CFC"
@@ -234,6 +304,11 @@
 		{
 			dependencies: ["66520A7CAD224418"]
 			id: "7E69B54ACC5B2E15"
+			rewards: [{
+				id: "5AD025083D077FCF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "6611BFEC5D51AFA4"
 				item: "cmi:space_mechanism_part"
@@ -245,6 +320,11 @@
 		{
 			dependencies: ["6618A0F7087C1AFA"]
 			id: "66520A7CAD224418"
+			rewards: [{
+				id: "7557351257349A74"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "416554F3D8AE6A64"
 				item: "ae2:matter_ball"
@@ -256,6 +336,11 @@
 		{
 			icon: "ae2:condenser"
 			id: "6618A0F7087C1AFA"
+			rewards: [{
+				id: "04E8FFC1E5934BB9"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "37E4387E69369236"
@@ -278,6 +363,11 @@
 				"3F0DC92BB1C78730"
 			]
 			id: "4B141FEC9925E00F"
+			rewards: [{
+				id: "1136F2970C561336"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -291,6 +381,11 @@
 		{
 			dependencies: ["56E28410FE10ADDA"]
 			id: "360B5F6C804069EA"
+			rewards: [{
+				id: "2563C4DA6CFAEA43"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "65926C1B004F75FB"
 				item: "ae2:fluix_glass_cable"
@@ -301,6 +396,11 @@
 		}
 		{
 			id: "45BB2FD95C86EBA5"
+			rewards: [{
+				id: "57F96F47C26F8710"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1F5BA5CC71913390"
 				item: "ae2:semi_dark_monitor"
@@ -316,6 +416,11 @@
 				"7EBD914A96D93DD9"
 			]
 			id: "3F0DC92BB1C78730"
+			rewards: [{
+				id: "4EF0929450A4A81E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "4FCDB2CCD74E2A3E"
 				item: "cmi:mekanism_processor"
@@ -327,6 +432,11 @@
 		{
 			dependencies: ["0F06154E4C09A7C1"]
 			id: "10F74AE07832C30C"
+			rewards: [{
+				id: "35E700C66FC0AA00"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "48A1ACCD597DFD86"
 				item: "cmi:infusion_treated_processor"
@@ -338,6 +448,11 @@
 		{
 			dependencies: ["3C88596E166BF7F4"]
 			id: "7EBD914A96D93DD9"
+			rewards: [{
+				id: "35A60B5EA85DDCA1"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "45302CDBB7947CF2"
 				item: "cmi:enrichment_treated_processor"
@@ -349,6 +464,11 @@
 		{
 			dependencies: ["7A756DF0E843CE5A"]
 			id: "401D7D465518872C"
+			rewards: [{
+				id: "1F536BA0FA43009B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "77D9AAEBBDAE066E"
 				item: "cmi:ground_treated_processor"
@@ -360,6 +480,11 @@
 		{
 			dependencies: ["0B7A8B7B0797880A"]
 			id: "7A756DF0E843CE5A"
+			rewards: [{
+				id: "4A638ED182B16982"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "030BFC50E8223B18"
 				item: "mekanism:precision_sawmill"
@@ -371,6 +496,11 @@
 		{
 			dependencies: ["6F5E8BA29740F876"]
 			id: "154F51368A1D9C84"
+			rewards: [{
+				id: "2AA7A39B68344120"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "7F737CCDA2C350E3"
 				item: {
@@ -389,6 +519,11 @@
 		{
 			dependencies: ["041980289F796026"]
 			id: "5B980D972FC0A54E"
+			rewards: [{
+				id: "3F369C1FA4D03F83"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "20A3401CF082C8E6"
 				item: {
@@ -398,7 +533,7 @@
 						value: "forge:circuits/elite"
 					}
 				}
-				title: "Any #forge:circuits/elite"
+				title: "精英控制电路"
 				type: "item"
 			}]
 			x: -1.0d
@@ -407,6 +542,11 @@
 		{
 			dependencies: ["01E9DE433690023D"]
 			id: "779AD42F9F78D55D"
+			rewards: [{
+				id: "226E21F91780A054"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1A3AECBA6B901011"
 				item: {
@@ -416,7 +556,7 @@
 						value: "forge:circuits/advanced"
 					}
 				}
-				title: "Any #forge:circuits/advanced"
+				title: "高级控制电路"
 				type: "item"
 			}]
 			x: -4.5d
@@ -425,6 +565,11 @@
 		{
 			dependencies: ["0B7A8B7B0797880A"]
 			id: "3C88596E166BF7F4"
+			rewards: [{
+				id: "18B22BC003D7ADD8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1FE735EB6E643819"
 				item: "mekanism:enrichment_chamber"
@@ -438,6 +583,11 @@
 			dependency_requirement: "all_started"
 			disable_toast: true
 			id: "0F06154E4C09A7C1"
+			rewards: [{
+				id: "2CB5FC4949B4E288"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "729B018AA08E90FD"
 				item: "mekanism:metallurgic_infuser"
@@ -449,6 +599,11 @@
 		{
 			dependencies: ["779AD42F9F78D55D"]
 			id: "788E265501B8DC32"
+			rewards: [{
+				id: "0EE6C681C8FFEF28"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "051DF282C2FA4CF4"
 				item: "cmi:advanced_mekanism_mechanism"
@@ -460,6 +615,11 @@
 		{
 			dependencies: ["5B980D972FC0A54E"]
 			id: "738E1A1063DBCC70"
+			rewards: [{
+				id: "67094F2A94B7E5CF"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3A03279E653EA91B"
 				item: "cmi:elite_mekanism_mechanism"
@@ -471,6 +631,11 @@
 		{
 			dependencies: ["154F51368A1D9C84"]
 			id: "4FF08019341D871E"
+			rewards: [{
+				id: "4649B7CA8ACF624D"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "319754B8FF898CFD"
 				item: "cmi:ultimate_mekanism_mechanism"
@@ -483,6 +648,11 @@
 			dependencies: ["4FF08019341D871E"]
 			icon: "mm:particle_collision_machine"
 			id: "02C32F681F066C3C"
+			rewards: [{
+				id: "7EF27E5F991A472E"
+				type: "xp"
+				xp: 150
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [

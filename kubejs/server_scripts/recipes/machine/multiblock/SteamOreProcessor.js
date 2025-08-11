@@ -1,6 +1,6 @@
 MMEvents.createProcesses((event) => {
 	// 蒸汽输入量(1000)
-	const STEAM_AMOUNT = global.BUCKET_CAPACITY
+	const STEAM_AMOUNT = global.BUCKET_CAPACITY * 2
 
 	// 核心处理函数
 	function addSteamOreProcessingRecipe(ore, dust) {
@@ -13,6 +13,16 @@ MMEvents.createProcesses((event) => {
 			.output(addBonusOutput(dust, 1, 0.25))
 			.output(addFluidOutput("minecraft:water", 100))
 			.output(addFluidOutput("mekanism:sulfur_dioxide", 200))
+
+		event.create(`cmi:steam_ore_processor/${ore}_block`)
+			.structureId("cmi:steam_ore_processor_structure")
+			.ticks(400)
+			.input(addFluidInput("cmi:steam", STEAM_AMOUNT))
+			.input(addItemInput(`forge:ores/${ore}`, 1))
+			.output(addItemOutput(dust, 4))
+			.output(addBonusOutput(dust, 2, 0.25))
+			.output(addFluidOutput("minecraft:water", 200))
+			.output(addFluidOutput("mekanism:sulfur_dioxide", 400))
 	}
 
 	// 流体输入

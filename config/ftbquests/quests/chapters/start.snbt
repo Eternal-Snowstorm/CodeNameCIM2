@@ -4,7 +4,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "start"
-	group: ""
+	group: "050255AE19A93344"
 	icon: "minecraft:oak_log"
 	id: "7CF1214F39DD4E53"
 	images: [{
@@ -15,7 +15,7 @@
 		x: -1.5d
 		y: -6.5d
 	}]
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -24,7 +24,6 @@
 				"Q: 我要是出生在沙漠咋办？"
 				"A: 重开吧。"
 			]
-			hide_dependency_lines: true
 			icon: "minecraft:oak_log"
 			id: "18237D913486FE33"
 			rewards: [{
@@ -221,6 +220,11 @@
 		{
 			dependencies: ["2F1D496A9B588220"]
 			id: "414EEE72A59CEE7E"
+			rewards: [{
+				id: "7744CAAADE6B57E8"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "220DAA4A983F78AB"
 				item: "tconstruct:grout"
@@ -235,6 +239,11 @@
 				"136FAF419EC66A2F"
 			]
 			id: "2AEF0BF597FF0E36"
+			rewards: [{
+				id: "72E3D8891F99BEAD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "73A17049198BEC5E"
 				item: "tconstruct:seared_brick"
@@ -260,6 +269,11 @@
 					id: "28F4F31A0E3E0207"
 					item: "tconstruct:seared_brick"
 					type: "item"
+				}
+				{
+					id: "7BF970B01595603F"
+					type: "xp"
+					xp: 100
 				}
 			]
 			shape: "square"
@@ -290,9 +304,15 @@
 					item: "tconstruct:ingot_cast"
 					type: "item"
 				}
+				{
+					id: "0E9BF324F3C83991"
+					type: "xp"
+					xp: 100
+				}
 			]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "终于可以冶炼金属了"
 			tasks: [{
 				id: "2768A6B87D06FAE1"
 				item: "tconstruct:seared_melter"
@@ -345,7 +365,12 @@
 			dependencies: ["1270086FA79438E4"]
 			icon: "minecraft:clay_ball"
 			id: "2F1D496A9B588220"
-			subtitle: "不是指你，Dream（"
+			rewards: [{
+				id: "04FEC11008A93E6F"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "不是指你, Dream"
 			tasks: [{
 				id: "5E890AB67D72E70A"
 				item: {
@@ -368,6 +393,11 @@
 				"7C14A1CC724511CB"
 			]
 			id: "79C36E5EB68E7476"
+			rewards: [{
+				id: "0D12F5110DF2884F"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				id: "595EE2C9F1E377F3"
 				item: "cmi:basic_mechanism_part"
@@ -391,6 +421,11 @@
 					item: "cmi:wooden_machine"
 					type: "item"
 				}
+				{
+					id: "2AD5B09E43A66393"
+					type: "xp"
+					xp: 100
+				}
 			]
 			shape: "square"
 			size: 1.5d
@@ -405,6 +440,11 @@
 		{
 			dependencies: ["1270086FA79438E4"]
 			id: "0DB45287C4FF724B"
+			rewards: [{
+				id: "28861EAA34931FDE"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "720500722CBF0E76"
 				item: "minecraft:gravel"
@@ -420,6 +460,11 @@
 			]
 			description: ["Flint hammers only have 1/4 durability, but you can make four"]
 			id: "2C0C50F32F39BD3F"
+			rewards: [{
+				id: "1A0161DE002C8C21"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "23654119B083445E"
 				item: {
@@ -437,8 +482,12 @@
 		{
 			dependencies: ["27A18EEBBE063B43"]
 			description: [""]
-			hide_dependency_lines: true
 			id: "542BB1A40BC1B441"
+			rewards: [{
+				id: "5991A9D3EA6281A2"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "5D45077745461FF6"
@@ -463,18 +512,23 @@
 		}
 		{
 			description: [
-				"Just finish these *before* you crouch into your base."
-				"You need an iron pick anyway"
+				"在开始发展前下来先把下面的需求做好"
+				"你需要一把铁镐"
 			]
 			icon: "minecraft:grass_block"
 			id: "27A18EEBBE063B43"
+			rewards: [{
+				id: "128E304879444877"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
-			subtitle: "Kickstarter resources"
+			subtitle: "开始收集资源"
 			tasks: [{
 				id: "45EA37160B892F69"
 				type: "checkmark"
 			}]
-			title: "Before settling down"
+			title: "先安顿下来"
 			x: -3.5d
 			y: -3.5d
 		}
@@ -482,6 +536,11 @@
 			dependencies: ["2AEF0BF597FF0E36"]
 			hide_dependency_lines: true
 			id: "216101B16F206C60"
+			rewards: [{
+				id: "73996EE12E6E535B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "086C84A57364C4D5"
 				item: "tconstruct:seared_faucet"
@@ -494,6 +553,11 @@
 			dependencies: ["5080AD4A92076C63"]
 			hide_dependency_lines: true
 			id: "1D814C25827605EB"
+			rewards: [{
+				id: "2F0B4D0469EA5B41"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "787FD8B30555371A"
 				item: "tconstruct:seared_table"
@@ -506,6 +570,11 @@
 			dependencies: ["5080AD4A92076C63"]
 			hide_dependency_lines: true
 			id: "2155ED5D3B95A6E9"
+			rewards: [{
+				id: "2072380977139207"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "3637B74D09538A03"
 				item: "tconstruct:seared_basin"
@@ -516,10 +585,15 @@
 		}
 		{
 			dependencies: ["5080AD4A92076C63"]
-			description: ["如果你已经找到了岩浆，你就不需要这个了"]
+			description: ["如果你已经找到了岩浆, 你就不需要这个了"]
 			hide_dependency_lines: true
 			id: "7C92CB784271B4C8"
 			optional: true
+			rewards: [{
+				id: "4C0879A3C9315605"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2EEEB8AEBAE064B9"
@@ -534,6 +608,11 @@
 			hide_dependency_lines: true
 			icon: "tconstruct:seared_fuel_tank"
 			id: "13F1C5092BA578E2"
+			rewards: [{
+				id: "3AAE7918B4E76E88"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "7CE372AE3E49934A"
@@ -558,6 +637,11 @@
 		{
 			dependencies: ["1270086FA79438E4"]
 			id: "3B35EDE8B923177A"
+			rewards: [{
+				id: "75B57A428322B493"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "232BBF458E1AFF0B"
 				item: "minecraft:sand"
@@ -572,6 +656,11 @@
 				"136FAF419EC66A2F"
 			]
 			id: "21117B9D2DEA67D4"
+			rewards: [{
+				id: "369DDF117BF5CBDD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "70E9058D52101ABD"
 				item: "minecraft:glass"
@@ -583,7 +672,12 @@
 		{
 			dependencies: ["0950E73B864090F0"]
 			id: "136FAF419EC66A2F"
-			subtitle: "不需要我教了吧（"
+			rewards: [{
+				id: "1008A4D96D14E2CA"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "不需要我教了吧"
 			tasks: [{
 				id: "5FE33B9B04299D33"
 				item: "minecraft:furnace"
@@ -596,6 +690,11 @@
 			dependencies: ["7C14A1CC724511CB"]
 			icon: "farmersdelight:cutting_board"
 			id: "4594936AAC131166"
+			rewards: [{
+				id: "167503AC6078CC01"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "我切切切！"
 			tasks: [
 				{
@@ -624,6 +723,11 @@
 			hide_dependency_lines: true
 			icon: "tconstruct:seared_ingot_tank"
 			id: "15D248E218C4FAB2"
+			rewards: [{
+				id: "38B0ED4732010DA6"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "没用完的液体存起来！"
 			tasks: [
 				{
@@ -649,6 +753,11 @@
 		{
 			dependencies: ["4594936AAC131166"]
 			id: "53608AA274E5E414"
+			rewards: [{
+				id: "64E76F8819AE5989"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "你也可以用砧板切"
 			tasks: [
 				{
