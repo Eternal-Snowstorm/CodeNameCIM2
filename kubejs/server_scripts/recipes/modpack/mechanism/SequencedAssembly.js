@@ -419,18 +419,6 @@ ServerEvents.recipes((event) => {
 		]),
 		create.deploying(ipom, [ipom, "cmi:magical_mechanism_part"])
 	]).transitionalItem(ipom).loops(1)
-	
-	//存在问题！！
-	// 秘药2
-	create.sequenced_assembly("cmi:potion_mechanism", [
-		"#forge:glass"
-	], [
-		create.deploying(ipom, [ipom, Item.of('minecraft:potion', {Potion:"minecraft:night_vision"})]),
-		create.deploying(ipom, [ipom, Item.of('minecraft:potion', {Potion:"minecraft:strength"})]),
-		create.deploying(ipom, [ipom, Item.of('minecraft:potion', {Potion:"minecraft:swiftness"})]),
-		create.deploying(ipom, [ipom, Item.of('minecraft:potion', {Potion:"minecraft:fire_resistance"})]),
-		create.deploying(ipom, [ipom, "cmi:magical_mechanism_part"])
-	]).transitionalItem(ipom).loops(1)
 
 	// 红石
 	create.sequenced_assembly("vintageimprovements:redstone_module", [
