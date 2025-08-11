@@ -4,7 +4,7 @@
 	filename: "steam_ages"
 	group: "050255AE19A93344"
 	icon: "cmi:steam_boiler"
-	id: "steam_ages"
+	id: "209B1A2CAFDEB2AA"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
