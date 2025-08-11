@@ -23,15 +23,7 @@ ServerEvents.recipes((event) => {
 	event.replaceInput({ type: "minecraft:crafting_shaped" }, "mekanism:pellet_polonium", "cmi:nuclear_mechanism")
 	event.replaceInput({ type: "minecraft:crafting_shaped" }, "mekanism:pellet_antimatter", "cmi:antimatter_mechanism")
 
-	event.replaceInput({}, "mekanism:salt", "#forge:salt")
-	event.replaceInput({}, "ratatouille:salt", "#forge:salt")
-	event.replaceInput({}, "cmi:nacl", "#forge:salt")
-
-	event.replaceInput({}, Fluid.of("createdieselgenerators:crude_oil"), Fluid.of("ad_astra:oil"))
-	event.replaceInput({}, Fluid.of("thermal:crude_oil"), Fluid.of("ad_astra:oil"))
-	event.replaceInput({}, "#forge:oil", Fluid.of("ad_astra:oil"))
-	event.replaceInput({}, "#forge:crude_oil", Fluid.of("ad_astra:oil"))
-
-	event.replaceInput({}, "#forge:steam", Fluid.of("cmi:steam"))
-	event.replaceOutput({}, "#forge:steam", Fluid.of("cmi:steam"))
+	event.replaceInput({}, "mekanism:salt", "#forge:dusts/salt")
+	event.replaceInput({}, "ratatouille:salt", "#forge:dusts/salt")
+	event.replaceInput({}, "cmi:nacl", "#forge:dusts/salt")
 })
