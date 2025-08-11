@@ -56,4 +56,16 @@ ServerEvents.recipes((event) => {
 		.cast("tconstruct:ingot_red_sand_cast")
 		.cooling_time(40)
 		.cast_consumed(true)
+
+	tconstruct.casting_table("cmi:bronze_mechanism_cast")
+		.fluid(Fluid.of("tconstruct:molten_bronze", 360))
+		.cast("#create:mechanisms")
+		.cooling_time(57)
+		.cast_consumed(true)
+
+	tconstruct.casting_table("cmi:bronze_nugget_cast")
+		.fluid(Fluid.of("tconstruct:molten_bronze", 360))
+		.cast("#forge:nuggets")
+		.cooling_time(57)
+		.cast_consumed(true)
 })

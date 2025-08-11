@@ -49,9 +49,9 @@ ServerEvents.recipes((event) => {
 				.fluid(Fluid.of(fluid, 10))
 				.cooling_time(20)
 				.cast_consumed(true)
-			thermal.chiller(`#forge:plates/${metal}`, [
+			thermal.chiller(`#forge:nuggets/${metal}`, [
 				Fluid.of(fluid, 10),
-				"cmi:chiller_nugget_cast"
+				"cmi:bronze_nugget_cast"
 			]).energy(600)
 		} else {
 			console.warn(`No nugget found for ${metal}!`)
