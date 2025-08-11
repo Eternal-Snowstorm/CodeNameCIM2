@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "normal",
+			"facing": "north"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "sticky",
+			"facing": "north"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "sticky",
+			"facing": "north"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "normal",
+			"facing": "east"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "normal",
+			"facing": "east"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "sticky",
+			"facing": "east"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "sticky",
+			"facing": "east"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "normal",
+			"facing": "south"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "normal",
+			"facing": "south"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "sticky",
+			"facing": "south"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "sticky",
+			"facing": "south"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "normal",
+			"facing": "west"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "normal",
+			"facing": "west"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "sticky",
+			"facing": "west"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "sticky",
+			"facing": "west"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "normal",
+			"facing": "up"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "normal",
+			"facing": "up"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "sticky",
+			"facing": "up"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "sticky",
+			"facing": "up"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "normal",
+			"facing": "down"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "normal",
+			"facing": "down"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "sticky",
+			"facing": "down"
+		},
+		"Name": "create:mechanical_piston_head"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "sticky",
+			"facing": "down"
+		},
+		"Name": "create:mechanical_piston_head"
+	}
+]

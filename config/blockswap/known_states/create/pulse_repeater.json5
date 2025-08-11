@@ -1,0 +1,324 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "true",
+			"inverted": "true",
+			"facing": "north"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "true",
+			"inverted": "true",
+			"facing": "north"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "false",
+			"inverted": "true",
+			"facing": "north"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "false",
+			"inverted": "true",
+			"facing": "north"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "true",
+			"inverted": "false",
+			"facing": "north"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "true",
+			"inverted": "false",
+			"facing": "north"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "false",
+			"inverted": "false",
+			"facing": "north"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "true",
+			"inverted": "true",
+			"facing": "south"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "true",
+			"inverted": "true",
+			"facing": "south"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "false",
+			"inverted": "true",
+			"facing": "south"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "false",
+			"inverted": "true",
+			"facing": "south"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "true",
+			"inverted": "false",
+			"facing": "south"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "true",
+			"inverted": "false",
+			"facing": "south"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "false",
+			"inverted": "false",
+			"facing": "south"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "false",
+			"inverted": "false",
+			"facing": "south"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "true",
+			"inverted": "true",
+			"facing": "west"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "true",
+			"inverted": "true",
+			"facing": "west"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "false",
+			"inverted": "true",
+			"facing": "west"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "false",
+			"inverted": "true",
+			"facing": "west"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "true",
+			"inverted": "false",
+			"facing": "west"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "true",
+			"inverted": "false",
+			"facing": "west"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "false",
+			"inverted": "false",
+			"facing": "west"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "false",
+			"inverted": "false",
+			"facing": "west"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "true",
+			"inverted": "true",
+			"facing": "east"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "true",
+			"inverted": "true",
+			"facing": "east"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "false",
+			"inverted": "true",
+			"facing": "east"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "false",
+			"inverted": "true",
+			"facing": "east"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "true",
+			"inverted": "false",
+			"facing": "east"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "true",
+			"inverted": "false",
+			"facing": "east"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "true",
+			"powered": "false",
+			"inverted": "false",
+			"facing": "east"
+		},
+		"Name": "create:pulse_repeater"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powering": "false",
+			"powered": "false",
+			"inverted": "false",
+			"facing": "east"
+		},
+		"Name": "create:pulse_repeater"
+	}
+]

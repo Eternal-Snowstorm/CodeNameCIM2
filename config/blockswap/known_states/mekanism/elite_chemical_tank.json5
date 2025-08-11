@@ -1,0 +1,102 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "north"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "south"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "west"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "water",
+			"facing": "east"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"fluid_logged": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanism:elite_chemical_tank"
+	}
+]

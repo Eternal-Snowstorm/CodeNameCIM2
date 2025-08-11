@@ -1,0 +1,2564 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "north",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "south",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "west",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "east",
+			"attached": "true"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "north",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "south",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "west",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "east",
+			"attached": "false"
+		},
+		"Name": "supplementaries:crystal_display"
+	}
+]

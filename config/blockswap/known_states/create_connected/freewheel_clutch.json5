@@ -1,0 +1,102 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "true",
+			"facing": "north"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "true",
+			"facing": "east"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "false",
+			"facing": "east"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "true",
+			"facing": "south"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "false",
+			"facing": "south"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "true",
+			"facing": "west"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "false",
+			"facing": "west"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "true",
+			"facing": "up"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "false",
+			"facing": "up"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "true",
+			"facing": "down"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"uncoupled": "false",
+			"facing": "down"
+		},
+		"Name": "create_connected:freewheel_clutch"
+	}
+]

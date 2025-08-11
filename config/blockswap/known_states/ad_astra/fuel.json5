@@ -1,0 +1,119 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "9"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "10"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "11"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "12"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "13"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "14"
+		},
+		"Name": "ad_astra:fuel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "15"
+		},
+		"Name": "ad_astra:fuel"
+	}
+]

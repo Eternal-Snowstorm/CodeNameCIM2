@@ -1,0 +1,102 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "sticky",
+			"facing": "north"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "normal",
+			"facing": "east"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "sticky",
+			"facing": "east"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "normal",
+			"facing": "south"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "sticky",
+			"facing": "south"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "normal",
+			"facing": "west"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "sticky",
+			"facing": "west"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "normal",
+			"facing": "up"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "sticky",
+			"facing": "up"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "normal",
+			"facing": "down"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "sticky",
+			"facing": "down"
+		},
+		"Name": "supplementaries:moving_slidy_block"
+	}
+]

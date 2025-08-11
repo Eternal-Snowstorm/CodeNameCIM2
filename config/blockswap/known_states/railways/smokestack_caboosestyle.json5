@@ -1,0 +1,1235 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "x"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"enabled": "true",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "true",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_steel",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper_cap_brass",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "copper",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "copper",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"style": "brass_cap_copper",
+			"powered": "false",
+			"enabled": "false",
+			"axis": "z"
+		},
+		"Name": "railways:smokestack_caboosestyle"
+	}
+]

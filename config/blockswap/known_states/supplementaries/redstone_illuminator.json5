@@ -1,0 +1,119 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "1"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "2"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "3"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "4"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "5"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "6"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "7"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "8"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "9"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "10"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "11"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "12"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "13"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "14"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"power": "15"
+		},
+		"Name": "supplementaries:redstone_illuminator"
+	}
+]

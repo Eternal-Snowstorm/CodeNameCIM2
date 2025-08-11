@@ -1,0 +1,189 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "b"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "c"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "d"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "e"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "f"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "g"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "h"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "i"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "j"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "k"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "l"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "m"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "n"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "o"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "p"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "q"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "r"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "s"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "t"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "u"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "v"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "w"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "x"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "y"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"rune": "z"
+		},
+		"Name": "supplementaries:end_stone_lamp"
+	}
+]

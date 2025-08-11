@@ -1,0 +1,437 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "up",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "up",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "up",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "up",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "down",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "down",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "down",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "down",
+			"active": "true"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "north",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "north",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "north",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "up",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "up",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "up",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "up",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"facing": "down",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"facing": "down",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"facing": "down",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"facing": "down",
+			"active": "false"
+		},
+		"Name": "ae2:vibration_chamber"
+	}
+]

@@ -1,0 +1,70 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wind_strength": "0",
+			"waterlogged": "true"
+		},
+		"Name": "supplementaries:wind_vane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wind_strength": "1",
+			"waterlogged": "true"
+		},
+		"Name": "supplementaries:wind_vane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wind_strength": "2",
+			"waterlogged": "true"
+		},
+		"Name": "supplementaries:wind_vane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wind_strength": "3",
+			"waterlogged": "true"
+		},
+		"Name": "supplementaries:wind_vane"
+	},
+	{
+		"Name": "supplementaries:wind_vane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wind_strength": "1",
+			"waterlogged": "false"
+		},
+		"Name": "supplementaries:wind_vane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wind_strength": "2",
+			"waterlogged": "false"
+		},
+		"Name": "supplementaries:wind_vane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wind_strength": "3",
+			"waterlogged": "false"
+		},
+		"Name": "supplementaries:wind_vane"
+	}
+]

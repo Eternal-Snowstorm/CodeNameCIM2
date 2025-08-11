@@ -1,0 +1,484 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "north",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "north",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "north",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "north",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "east",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "east",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "east",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "east",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "south",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "south",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "south",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "south",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "west",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "west",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "west",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "west",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "up",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "up",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "up",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "up",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "down",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "down",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "down",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "down",
+			"extracting": "true"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "north",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "north",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "north",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "east",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "east",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "east",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "east",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "south",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "south",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "south",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "south",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "west",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "west",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "west",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "west",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "up",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "up",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "up",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "up",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "true",
+			"facing": "down",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "true",
+			"facing": "down",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"powered": "false",
+			"facing": "down",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"powered": "false",
+			"facing": "down",
+			"extracting": "false"
+		},
+		"Name": "create:brass_funnel"
+	}
+]

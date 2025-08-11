@@ -1,0 +1,795 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "none",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "small",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "large",
+			"age": "0"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "none",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "small",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "true",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "true",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "true",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "0",
+			"lit": "false",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "1",
+			"lit": "false",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "0",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"stage": "1",
+			"pressure": "2",
+			"lit": "false",
+			"leaves": "large",
+			"age": "1"
+		},
+		"Name": "mynethersdelight:powdery_cannon"
+	}
+]

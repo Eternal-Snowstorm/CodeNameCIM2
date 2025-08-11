@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"face": "floor"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "north",
+			"face": "floor"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"face": "floor"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"face": "floor"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"face": "floor"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"face": "floor"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"face": "floor"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"face": "floor"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"face": "wall"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"face": "wall"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"face": "wall"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"face": "wall"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"face": "wall"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"face": "wall"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"face": "wall"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"face": "ceiling"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "north",
+			"face": "ceiling"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"face": "ceiling"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"face": "ceiling"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"face": "ceiling"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"face": "ceiling"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"face": "ceiling"
+		},
+		"Name": "minecraft:jungle_button"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"face": "ceiling"
+		},
+		"Name": "minecraft:jungle_button"
+	}
+]

@@ -1,0 +1,1124 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "plain",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "plain",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "plain",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "plain",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "buffer",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "buffer",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "buffer",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "link",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "link",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "link",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "link",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "linkless",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "linkless",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "linkless",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "linkless",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "knuckle",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "knuckle",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "knuckle",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "knuckle",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "knuckle_split",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "knuckle_split",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "knuckle_split",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "knuckle_split",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "screwlink",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "screwlink",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "screwlink",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "screwlink",
+			"facing": "north"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "plain",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "plain",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "plain",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "plain",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "buffer",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "buffer",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "buffer",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "buffer",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "link",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "link",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "link",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "link",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "linkless",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "linkless",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "linkless",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "linkless",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "knuckle",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "knuckle",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "knuckle",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "knuckle",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "knuckle_split",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "knuckle_split",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "knuckle_split",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "knuckle_split",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "screwlink",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "screwlink",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "screwlink",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "screwlink",
+			"facing": "south"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "plain",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "plain",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "plain",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "plain",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "buffer",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "buffer",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "buffer",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "buffer",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "link",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "link",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "link",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "link",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "linkless",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "linkless",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "linkless",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "linkless",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "knuckle",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "knuckle",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "knuckle",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "knuckle",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "knuckle_split",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "knuckle_split",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "knuckle_split",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "knuckle_split",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "screwlink",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "screwlink",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "screwlink",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "screwlink",
+			"facing": "west"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "plain",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "plain",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "plain",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "plain",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "buffer",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "buffer",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "buffer",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "buffer",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "link",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "link",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "link",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "link",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "linkless",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "linkless",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "linkless",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "linkless",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "knuckle",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "knuckle",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "knuckle",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "knuckle",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "knuckle_split",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "knuckle_split",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "knuckle_split",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "knuckle_split",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "true",
+			"style": "screwlink",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "true",
+			"style": "screwlink",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"upside_down": "false",
+			"style": "screwlink",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"upside_down": "false",
+			"style": "screwlink",
+			"facing": "east"
+		},
+		"Name": "railways:headstock"
+	}
+]

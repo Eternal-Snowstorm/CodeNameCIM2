@@ -1,0 +1,150 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "0",
+			"active": "true"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"active": "true"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"active": "true"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"active": "true"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"active": "true"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"active": "true"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"active": "true"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"active": "true"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"active": "true"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "1",
+			"active": "false"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "2",
+			"active": "false"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "3",
+			"active": "false"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "4",
+			"active": "false"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "5",
+			"active": "false"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "6",
+			"active": "false"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "7",
+			"active": "false"
+		},
+		"Name": "thermal:device_composter"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"level": "8",
+			"active": "false"
+		},
+		"Name": "thermal:device_composter"
+	}
+]

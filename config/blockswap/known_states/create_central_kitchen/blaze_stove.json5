@@ -1,0 +1,437 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"blaze": "none"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "north",
+			"blaze": "none"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"blaze": "none"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"blaze": "none"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"blaze": "none"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"blaze": "none"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"blaze": "none"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"blaze": "none"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"blaze": "smouldering"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"blaze": "smouldering"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"blaze": "smouldering"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"blaze": "smouldering"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"blaze": "smouldering"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"blaze": "smouldering"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"blaze": "smouldering"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"blaze": "fading"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "north",
+			"blaze": "fading"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"blaze": "fading"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"blaze": "fading"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"blaze": "fading"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"blaze": "fading"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"blaze": "fading"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"blaze": "fading"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"blaze": "kindled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "north",
+			"blaze": "kindled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"blaze": "kindled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"blaze": "kindled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"blaze": "kindled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"blaze": "kindled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"blaze": "kindled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"blaze": "kindled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"blaze": "seething"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "north",
+			"blaze": "seething"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"blaze": "seething"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"blaze": "seething"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"blaze": "seething"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"blaze": "seething"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"blaze": "seething"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"blaze": "seething"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "north",
+			"blaze": "grilled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "north",
+			"blaze": "grilled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "south",
+			"blaze": "grilled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "south",
+			"blaze": "grilled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "west",
+			"blaze": "grilled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "west",
+			"blaze": "grilled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"facing": "east",
+			"blaze": "grilled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"facing": "east",
+			"blaze": "grilled"
+		},
+		"Name": "create_central_kitchen:blaze_stove"
+	}
+]

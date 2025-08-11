@@ -1,0 +1,102 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "1",
+			"eggs": "1"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "2",
+			"eggs": "1"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "0",
+			"eggs": "2"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "1",
+			"eggs": "2"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "2",
+			"eggs": "2"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "0",
+			"eggs": "3"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "1",
+			"eggs": "3"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "2",
+			"eggs": "3"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "0",
+			"eggs": "4"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "1",
+			"eggs": "4"
+		},
+		"Name": "minecraft:turtle_egg"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"hatch": "2",
+			"eggs": "4"
+		},
+		"Name": "minecraft:turtle_egg"
+	}
+]

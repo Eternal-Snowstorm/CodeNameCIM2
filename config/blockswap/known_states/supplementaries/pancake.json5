@@ -1,0 +1,725 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "none",
+			"pancakes": "1"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "honey",
+			"pancakes": "1"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "honey",
+			"pancakes": "1"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "syrup",
+			"pancakes": "1"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "syrup",
+			"pancakes": "1"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "chocolate",
+			"pancakes": "1"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "chocolate",
+			"pancakes": "1"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "jam",
+			"pancakes": "1"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "jam",
+			"pancakes": "1"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "none",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "none",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "honey",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "honey",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "syrup",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "syrup",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "chocolate",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "chocolate",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "jam",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "jam",
+			"pancakes": "2"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "none",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "none",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "honey",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "honey",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "syrup",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "syrup",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "chocolate",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "chocolate",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "jam",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "jam",
+			"pancakes": "3"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "none",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "none",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "honey",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "honey",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "syrup",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "syrup",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "chocolate",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "chocolate",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "jam",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "jam",
+			"pancakes": "4"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "none",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "none",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "honey",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "honey",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "syrup",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "syrup",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "chocolate",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "chocolate",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "jam",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "jam",
+			"pancakes": "5"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "none",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "none",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "honey",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "honey",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "syrup",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "syrup",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "chocolate",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "chocolate",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "jam",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "jam",
+			"pancakes": "6"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "none",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "none",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "honey",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "honey",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "syrup",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "syrup",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "chocolate",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "chocolate",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "jam",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "jam",
+			"pancakes": "7"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "none",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "none",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "honey",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "honey",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "syrup",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "syrup",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "chocolate",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "chocolate",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"topping": "jam",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"topping": "jam",
+			"pancakes": "8"
+		},
+		"Name": "supplementaries:pancake"
+	}
+]

@@ -1,0 +1,770 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"tied_to_bell": "true",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"tied_to_bell": "false",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "farmersdelight:rope"
+	},
+	{
+		"Name": "farmersdelight:rope"
+	}
+]
