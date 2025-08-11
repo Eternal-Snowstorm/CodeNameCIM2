@@ -14,10 +14,11 @@
 		x: -2.0d
 		y: 0.0d
 	}]
-	order_index: 2
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "6B45AF976D26E391"
 			rewards: [{
@@ -44,6 +45,7 @@
 		}
 		{
 			dependencies: ["6B45AF976D26E391"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3AAF51F4A4924343"
 			size: 1.5d
@@ -57,6 +59,7 @@
 		}
 		{
 			dependencies: ["3AAF51F4A4924343"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "110882205EC952C3"
 			size: 1.5d
@@ -70,6 +73,7 @@
 		}
 		{
 			dependencies: ["6B45AF976D26E391"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "701F589A2FF74412"
 			rewards: [{
@@ -96,6 +100,7 @@
 		}
 		{
 			dependencies: ["30F0B84B98781F76"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "030F841D01F802A7"
 			rewards: [{
@@ -110,11 +115,12 @@
 				type: "item"
 			}]
 			title: "Medchanism Part"
-			x: 6.75d
+			x: 7.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["110882205EC952C3"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "30F0B84B98781F76"
 			size: 1.5d
@@ -128,6 +134,7 @@
 		}
 		{
 			dependencies: ["030F841D01F802A7"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "65F2FFE639A215C6"
 			rewards: [{

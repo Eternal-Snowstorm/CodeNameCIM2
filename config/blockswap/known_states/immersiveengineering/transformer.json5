@@ -1,0 +1,324 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:transformer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:transformer"
+	}
+]

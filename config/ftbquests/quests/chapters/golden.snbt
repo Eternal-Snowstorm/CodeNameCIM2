@@ -13,10 +13,11 @@
 		x: -2.0d
 		y: -0.5d
 	}]
-	order_index: 6
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "2D953C3117B4B10F"
 			rewards: [{
@@ -43,6 +44,7 @@
 		}
 		{
 			dependencies: ["2D953C3117B4B10F"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1D3F60B7C9135A1A"
 			rewards: [{
@@ -69,6 +71,7 @@
 		}
 		{
 			dependencies: ["1D3F60B7C9135A1A"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "6D84FA27A4DD4B8E"
 			rewards: [{
@@ -88,6 +91,7 @@
 		}
 		{
 			dependencies: ["6D84FA27A4DD4B8E"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "583E2869C9280CF3"
 			rewards: [{

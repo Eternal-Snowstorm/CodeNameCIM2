@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "up",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "up",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "down",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "down",
+			"active": "true"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "up",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "up",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "down",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "down",
+			"active": "false"
+		},
+		"Name": "thermal:dynamo_numismatic"
+	}
+]

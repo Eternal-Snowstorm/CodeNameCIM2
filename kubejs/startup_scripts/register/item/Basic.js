@@ -109,8 +109,13 @@ StartupEvents.registry("item", (event) => {
 
 	// 橡胶板
 	event.create(`${global.namespace}:rubber_plate`)
+		.texture(`${global.namespace}:item/material/rubber/rubber_plate_0`)
 		.tag("forge:plates")
 		.tag("forge:plates/rubber")
+
+	// 橡胶树皮
+	event.create(`${global.namespace}:rubber_tree_bark`)
+		.texture(`${global.namespace}:item/material/rubber/tree_bark`)
 
 	// 生石灰
 	event.create(`${global.namespace}:lime`)

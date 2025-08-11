@@ -1,0 +1,1733 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "north"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "east"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "south"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "west"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "up"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "0",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "0",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "1",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "1",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "2",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "2",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "3",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "3",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "4",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "4",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "5",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "5",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "6",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "6",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "7",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "7",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "8",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "8",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "9",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "9",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "10",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "10",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "11",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "11",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "12",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "12",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "13",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "13",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "14",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "14",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"power": "15",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"power": "15",
+			"facing": "down"
+		},
+		"Name": "supplementaries:crank"
+	}
+]

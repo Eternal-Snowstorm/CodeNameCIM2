@@ -152,4 +152,8 @@ Ponder.registry((event) => {
 			scene.showStructure()
 			scene.scaleSceneView(0.15)
 		})
+		.scene("2", "2", "cmi:dev_ftb/ftb_nulacer", (scene) => {
+			scene.showStructure()
+			scene.scaleSceneView(0.15)
+		})
 })

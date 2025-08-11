@@ -1,0 +1,324 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "true",
+			"rails": "true",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "false",
+			"rails": "true",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "false",
+			"rails": "true",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "true",
+			"rails": "false",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "true",
+			"rails": "false",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "false",
+			"rails": "false",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "false",
+			"rails": "false",
+			"facing": "north"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "true",
+			"rails": "true",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "true",
+			"rails": "true",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "false",
+			"rails": "true",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "false",
+			"rails": "true",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "true",
+			"rails": "false",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "true",
+			"rails": "false",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "false",
+			"rails": "false",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "false",
+			"rails": "false",
+			"facing": "south"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "true",
+			"rails": "true",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "true",
+			"rails": "true",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "false",
+			"rails": "true",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "false",
+			"rails": "true",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "true",
+			"rails": "false",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "true",
+			"rails": "false",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "false",
+			"rails": "false",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "false",
+			"rails": "false",
+			"facing": "west"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "true",
+			"rails": "true",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "true",
+			"rails": "true",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "false",
+			"rails": "true",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "false",
+			"rails": "true",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "true",
+			"rails": "false",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "true",
+			"rails": "false",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"steps": "false",
+			"rails": "false",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_ladder"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"steps": "false",
+			"rails": "false",
+			"facing": "east"
+		},
+		"Name": "copycats:copycat_ladder"
+	}
+]

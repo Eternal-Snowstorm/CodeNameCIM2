@@ -14,7 +14,7 @@ ServerEvents.tags("item", (event) => {
 	})
 
 	// 机器核心
-	event.get(`${global.namespace}:multiblock_machine_controller`)
+	event.get("cmi:multiblock_machine_controller")
 		.add("mm:large_steam_boiler")
 		.add("mm:steam_ore_processor")
 		.add("mm:cracker")
@@ -31,17 +31,17 @@ ServerEvents.tags("item", (event) => {
 		.add("tconstruct:cheese_block")
 
 	// 淤泥产出
-	event.get(`${global.namespace}:liquid_output`)
+	event.get("cmi:liquid_output")
 		.add("deepdrilling:sludge_pump")
 		.add("deepdrilling:sludge_bucket")
 
 	// 泥炭生成
-	event.get(`${global.namespace}:peat_gen`)
+	event.get("cmi:peat_gen")
 		.add("cmi:peat_block")
 		.add("cmi:peat")
 
 	// 特殊矿石
-	event.get(`${global.namespace}:special_ores`)
+	event.get("cmi:special_ores")
 		.add("#forge:raw_materials/galena")
 		.add("#forge:raw_materials/osmiridium")
 		.add("#forge:raw_materials/uraninite")
@@ -52,6 +52,11 @@ ServerEvents.tags("item", (event) => {
 		.add("#forge:raw_materials/pyrite")
 		.add("#forge:raw_materials/sphalerite")
 		.add("#forge:raw_materials/variscite")
+
+	// 大型锅炉燃料
+	event.get("cmi:large_boiler_fuel")
+		.add("#forge:coal_coke")
+		.add("#forge:gems/diamond")
 
 	// 农夫乐事刀子
 	event.get("farmersdelight:tools/knives")
@@ -67,7 +72,7 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:tools/knives")
 		.add("tconstruct:dagger")
 
-	event.get(`${global.namespace}:tables`)
+	event.get("cmi:tables")
 		.add("#forge:workbenches")
 		.add("tconstruct:tinkers_anvil")
 		.add("tconstruct:scorched_anvil")
@@ -75,11 +80,11 @@ ServerEvents.tags("item", (event) => {
 		.add("tconstruct:tinker_station")
 		.add("tconstruct:modifier_worktable")
 
-	event.get(`${global.namespace}:steelmaking_raw_materials`)
+	event.get("cmi:steelmaking_raw_materials")
 		.add("minecraft:calcite")
 		.add("create:limestone")
 
-	event.get(`${global.namespace}:nether_crops`)
+	event.get("cmi:nether_crops")
 		.add("minecraft:nether_sprouts")
 		.add("minecraft:nether_wart")
 		.add("minecraft:weeping_vines")
@@ -88,11 +93,11 @@ ServerEvents.tags("item", (event) => {
 		.add("mynethersdelight:warped_fungus_colony")
 		.add("mynethersdelight:powder_cannon")
 
-	event.get(`${global.namespace}:item_container`)
+	event.get("cmi:item_container")
 		.add("#forge:chests")
 		.add("#forge:barrels")
 
-	event.get(`${global.namespace}:fluid_tanks`)
+	event.get("cmi:fluid_tanks")
 		.add("create:fluid_tank")
 		.add("create_connected:fluid_vessel")
 		.add("railways:fuel_tank")
@@ -108,7 +113,7 @@ ServerEvents.tags("item", (event) => {
 		.add("mekanism:ultimate_fluid_tank")
 		.add("mekanism:creative_fluid_tank")
 
-	event.get(`${global.namespace}:batteries`)
+	event.get("cmi:batteries")
 		.add("mekanism:basic_energy_cube")
 		.add("mekanism:advanced_energy_cube")
 		.add("mekanism:elite_energy_cube")

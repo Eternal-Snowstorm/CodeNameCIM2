@@ -13,10 +13,11 @@
 		x: -1.5d
 		y: -0.5d
 	}]
-	order_index: 18
+	order_index: 20
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "minecraft:water_bucket"
 			id: "0AB470E3A20E01DF"
@@ -30,6 +31,7 @@
 		}
 		{
 			dependencies: ["0AB470E3A20E01DF"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "75A405BDA18F991B"
 			tasks: [{
@@ -42,6 +44,7 @@
 		}
 		{
 			dependencies: ["75A405BDA18F991B"]
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: {
 				Count: 1
@@ -68,6 +71,7 @@
 			y: -5.7833333333333385d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "10C2067884319D2A"
 			rewards: [{
@@ -86,6 +90,7 @@
 		}
 		{
 			dependencies: ["60922F13CE0156BE"]
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "mekanism:chlorine_bucket"
 			id: "2A5E311AA2C6E26F"
@@ -102,6 +107,7 @@
 				"2A5E311AA2C6E26F"
 				"10C2067884319D2A"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "41E29862F69FA483"
 			tasks: [{
@@ -114,6 +120,7 @@
 		}
 		{
 			dependencies: ["41E29862F69FA483"]
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "cmi:tetrachlorosilane_bucket"
 			id: "73FF8AFE61EF7AFC"
@@ -127,6 +134,7 @@
 		}
 		{
 			dependencies: ["546730BE3E146C8F"]
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: {
 				Count: 1
@@ -154,6 +162,7 @@
 		}
 		{
 			dependencies: ["5C541C73D1FBFB8B"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "60922F13CE0156BE"
 			tasks: [{
@@ -166,6 +175,7 @@
 		}
 		{
 			dependencies: ["5FCEA9E62DBCE01C"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "546730BE3E146C8F"
 			tasks: [{
@@ -178,6 +188,7 @@
 		}
 		{
 			dependencies: ["75A0199420354F74"]
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "mekanism:brine_bucket"
 			id: "5FCEA9E62DBCE01C"
@@ -191,6 +202,7 @@
 		}
 		{
 			dependencies: ["1A8071F9D05BD9AB"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "21E1950FBFF57199"
 			rewards: [{
@@ -216,6 +228,7 @@
 		}
 		{
 			dependencies: ["21E1950FBFF57199"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "75A0199420354F74"
 			tasks: [{
@@ -227,6 +240,8 @@
 			y: -10.011904761904752d
 		}
 		{
+			dependencies: ["0AB470E3A20E01DF"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1A8071F9D05BD9AB"
 			tasks: [{
@@ -238,6 +253,7 @@
 			y: -12.11190476190476d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "56B14A99C5324B29"
 			rewards: [{
@@ -267,6 +283,7 @@
 				"56B14A99C5324B29"
 				"4B1F3B0B95BDE516"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "496A8EADEC2A0270"
 			tasks: [{
@@ -279,6 +296,7 @@
 		}
 		{
 			dependencies: ["496A8EADEC2A0270"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "75D8B6FE5ED1E4DD"
 			rewards: [{
@@ -297,6 +315,7 @@
 		}
 		{
 			dependencies: ["75D8B6FE5ED1E4DD"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "02E7945B5FA117DA"
 			tasks: [{
@@ -308,6 +327,7 @@
 			y: -0.9761904761904958d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "6EB5E351E198EA6C"
 			rewards: [{
@@ -333,6 +353,7 @@
 		}
 		{
 			dependencies: ["6EB5E351E198EA6C"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3BCAE92A85378AEC"
 			tasks: [{
@@ -345,6 +366,7 @@
 		}
 		{
 			dependencies: ["3BCAE92A85378AEC"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1E2372C7989848CD"
 			rewards: [{
@@ -369,6 +391,7 @@
 			y: 1.2095238095238017d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "722A0EA19903506A"
 			rewards: [{
@@ -398,6 +421,7 @@
 		}
 		{
 			dependencies: ["4C6B3731A726C4F5"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "04B2632FDDCFABC8"
 			rewards: [{
@@ -414,6 +438,7 @@
 			y: 5.609523809523786d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "13737516E62B3F57"
 			rewards: [{
@@ -443,6 +468,7 @@
 		}
 		{
 			dependencies: ["74C290EA5E34C780"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "333CEDBFFA9A51A0"
 			rewards: [{
@@ -459,6 +485,7 @@
 			y: 6.909523809523797d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "7E8998606FF5D250"
 			rewards: [{
@@ -488,6 +515,7 @@
 		}
 		{
 			dependencies: ["7E0F086F986F7B03"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "103EBCBBE2F2DDAD"
 			rewards: [{
@@ -509,6 +537,7 @@
 				"103EBCBBE2F2DDAD"
 				"04B2632FDDCFABC8"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "5CA61F74A8331383"
 			tasks: [{
@@ -524,6 +553,7 @@
 				"5CA61F74A8331383"
 				"1E2372C7989848CD"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4A9CFF02F0C03700"
 			rewards: [{
@@ -541,6 +571,7 @@
 		}
 		{
 			dependencies: ["4A9CFF02F0C03700"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "68CB60FD04333AF8"
 			rewards: [{
@@ -566,6 +597,7 @@
 		}
 		{
 			dependencies: ["68CB60FD04333AF8"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "236522EF07FA5155"
 			rewards: [{
@@ -594,6 +626,7 @@
 				"02E7945B5FA117DA"
 				"236522EF07FA5155"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4C0F9088217DB615"
 			rewards: [{
@@ -612,6 +645,7 @@
 		}
 		{
 			dependencies: ["4C0F9088217DB615"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "38EE11F1B6C58F5C"
 			rewards: [{
@@ -630,6 +664,7 @@
 		}
 		{
 			dependencies: ["38EE11F1B6C58F5C"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "29BDB3FD04B04386"
 			tasks: [{

@@ -1,0 +1,293 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "0",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "0",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "1",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "1",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "2",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "2",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "3",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "3",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "4",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "4",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "5",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "5",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "6",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "6",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "7",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "7",
+			"bottom": "true"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "0",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "0",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "1",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "1",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "2",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "2",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "3",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "3",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "4",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "4",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "5",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "5",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "6",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"distance": "6",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"distance": "7",
+			"bottom": "false"
+		},
+		"Name": "create:copper_scaffolding"
+	},
+	{
+		"Name": "create:copper_scaffolding"
+	}
+]

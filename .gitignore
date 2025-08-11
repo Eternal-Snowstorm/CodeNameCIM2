@@ -3,9 +3,9 @@
 /.vscode/
 /backups/
 /caxton*
-/CMI_alpha_dev_vers-natives/
-/CMI_alpha_dev_vers.jar
-/CMI_alpha_dev_vers.json
+/.idea
+/CMI_*.jar
+/CMI_*.json
 /crash-reports/
 /defaultconfigs/
 /hmclversion.cfg
@@ -44,31 +44,33 @@ XaeroWaypoints*
 
 # ResourcePacks
 /resourcepacks/*
-!/resourcepacks/New AE2.zip
-!/resourcepacks/中微子的多用途汉化材质包.zip
-!/resourcepacks/等距更纱字体包.zip
-!/resourcepacks/Maple Mono字体包.zip
-!/resourcepacks/PvZ2 Regular字体包.zip
-!/resourcepacks/Pretty X Smart Pipez.zip
-!/resourcepacks/CreateSophisticatedBackpacks.zip
-!/resourcepacks/矿石发光.zip
+!/resourcepacks/New AE2
+!/resourcepacks/中微子的多用途汉化材质包
+!/resourcepacks/等距更纱字体包
+!/resourcepacks/Maple Mono字体包
+!/resourcepacks/PvZ2 Regular字体包
+!/resourcepacks/Pretty X Smart Pipez
+!/resourcepacks/CreateSophisticatedBackpacks
+!/resourcepacks/矿石发光
+!/resourcepacks/彩色边框
 
 # ShaderPacks
 /shaderpacks/*
 
-# Docs
+# ProbeDocs
 /kubejs/probe/*
 !/kubejs/probe/docs/
 
 # Saves
 /saves/*
 !/saves/Debug
-!/saves/QBWT
-!/saves/Quest_Background
+!/saves/QBWT*
+!/saves/Quest_Background*
 
 # Config
 /config/*
 !/config/openloader
+!/config/blockswap
 !/config/almostunified/
 !/config/drippyloadingscreen/
 !/config/fancymenu/

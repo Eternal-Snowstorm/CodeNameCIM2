@@ -1,0 +1,484 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "north"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "north"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "north"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "north"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "north"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "north"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "north"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "north"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "east"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "east"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "east"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "east"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "east"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "east"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "east"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "east"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "south"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "south"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "south"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "south"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "south"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "south"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "south"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "south"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "west"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "west"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "west"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "west"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "west"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "west"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "west"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "west"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "up"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "up"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "up"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "up"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "up"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "up"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "up"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "down"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "true",
+			"facing": "down"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "down"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "true",
+			"facing": "down"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "down"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "true",
+			"inverted": "false",
+			"facing": "down"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "down"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"lit": "false",
+			"inverted": "false",
+			"facing": "down"
+		},
+		"Name": "createdeco:green_brass_lamp"
+	}
+]

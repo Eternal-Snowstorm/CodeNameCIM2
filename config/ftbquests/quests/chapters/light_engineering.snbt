@@ -13,11 +13,12 @@
 		x: -4.5d
 		y: -0.5d
 	}]
-	order_index: 14
+	order_index: 16
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["799EA946A3177D2B"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3BE08A14BB9BC06C"
 			rewards: [{
@@ -38,10 +39,11 @@
 				type: "item"
 			}]
 			title: "Iron Plate"
-			x: -17.857142857142847d
-			y: -0.8042857142856974d
+			x: -17.0d
+			y: -0.5d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "384E68761B3D8966"
 			rewards: [{
@@ -60,6 +62,7 @@
 		}
 		{
 			dependencies: ["384E68761B3D8966"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "799EA946A3177D2B"
 			tasks: [{
@@ -84,6 +87,7 @@
 		}
 		{
 			dependencies: ["29285A338533C1AC"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3F4482C7F773A20A"
 			rewards: [{
@@ -101,6 +105,7 @@
 			y: -2.608571428571409d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3F9BB77FDA825AA3"
 			rewards: [{
@@ -119,6 +124,7 @@
 		}
 		{
 			dependencies: ["3F9BB77FDA825AA3"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "2ADB0FE94E9DF4C0"
 			tasks: [{
@@ -131,6 +137,7 @@
 		}
 		{
 			dependencies: ["2ADB0FE94E9DF4C0"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "7DCA2F2F9B91366A"
 			rewards: [{
@@ -159,6 +166,7 @@
 				"7DCA2F2F9B91366A"
 				"3F4482C7F773A20A"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "07144E85CE0E0DC1"
 			tasks: [{
@@ -171,6 +179,7 @@
 		}
 		{
 			dependencies: ["07144E85CE0E0DC1"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "640AADC26C6A9655"
 			rewards: [{
@@ -188,6 +197,7 @@
 			y: -2.0d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "003B4BD9E9AACAF6"
 			rewards: [{
@@ -213,6 +223,7 @@
 		}
 		{
 			dependencies: ["003B4BD9E9AACAF6"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "19856A115C16071A"
 			tasks: [{
@@ -228,6 +239,7 @@
 				"640AADC26C6A9655"
 				"19856A115C16071A"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "4B381E1FE9F4244B"
 			rewards: [{
@@ -253,6 +265,7 @@
 		}
 		{
 			dependencies: ["4B381E1FE9F4244B"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "38BCFC662FB3ACAF"
 			rewards: [{
@@ -271,6 +284,7 @@
 		}
 		{
 			dependencies: ["38BCFC662FB3ACAF"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "64F8E3F9612E0210"
 			rewards: [{

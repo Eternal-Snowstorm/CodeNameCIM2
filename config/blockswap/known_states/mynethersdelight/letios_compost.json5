@@ -1,0 +1,77 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "mynethersdelight:letios_compost"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"forgoting": "1"
+		},
+		"Name": "mynethersdelight:letios_compost"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"forgoting": "2"
+		},
+		"Name": "mynethersdelight:letios_compost"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"forgoting": "3"
+		},
+		"Name": "mynethersdelight:letios_compost"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"forgoting": "4"
+		},
+		"Name": "mynethersdelight:letios_compost"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"forgoting": "5"
+		},
+		"Name": "mynethersdelight:letios_compost"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"forgoting": "6"
+		},
+		"Name": "mynethersdelight:letios_compost"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"forgoting": "7"
+		},
+		"Name": "mynethersdelight:letios_compost"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"forgoting": "8"
+		},
+		"Name": "mynethersdelight:letios_compost"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"forgoting": "9"
+		},
+		"Name": "mynethersdelight:letios_compost"
+	}
+]

@@ -10,5 +10,16 @@ StartupEvents.registry("item", (event) => {
 		return registerColorDustItem
 	}
 
+	function addAloneDustItem(name) {
+		let registerAloneDustItem =
+			event.create(`${global.namespace}:${name}_dust`)
+				.texture(`${global.namespace}:item/material/material/dust/${name}`)
+				.tag("forge:dusts")
+				.tag(`forge:dusts/${name}`)
+
+		return registerAloneDustItem
+	}
+
 	addColorDustItem("end_stone", 0xF6FABD)
+	addAloneDustItem("oil_shale")
 })

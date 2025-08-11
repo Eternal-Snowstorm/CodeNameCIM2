@@ -1,0 +1,365 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "intersection",
+			"facing": "down"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "intersection",
+			"facing": "down"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "window",
+			"facing": "down"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "window",
+			"facing": "down"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "normal",
+			"facing": "down"
+		},
+		"Name": "create:chute"
+	},
+	{
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "encased",
+			"facing": "down"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "encased",
+			"facing": "down"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "intersection",
+			"facing": "north"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "intersection",
+			"facing": "north"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "window",
+			"facing": "north"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "window",
+			"facing": "north"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "normal",
+			"facing": "north"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "normal",
+			"facing": "north"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "encased",
+			"facing": "north"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "encased",
+			"facing": "north"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "intersection",
+			"facing": "south"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "intersection",
+			"facing": "south"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "window",
+			"facing": "south"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "window",
+			"facing": "south"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "normal",
+			"facing": "south"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "normal",
+			"facing": "south"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "encased",
+			"facing": "south"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "encased",
+			"facing": "south"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "intersection",
+			"facing": "west"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "intersection",
+			"facing": "west"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "window",
+			"facing": "west"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "window",
+			"facing": "west"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "normal",
+			"facing": "west"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "normal",
+			"facing": "west"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "encased",
+			"facing": "west"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "encased",
+			"facing": "west"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "intersection",
+			"facing": "east"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "intersection",
+			"facing": "east"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "window",
+			"facing": "east"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "window",
+			"facing": "east"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "normal",
+			"facing": "east"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "normal",
+			"facing": "east"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "encased",
+			"facing": "east"
+		},
+		"Name": "create:chute"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "encased",
+			"facing": "east"
+		},
+		"Name": "create:chute"
+	}
+]

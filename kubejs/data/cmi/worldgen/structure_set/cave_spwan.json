@@ -1,0 +1,14 @@
+{
+    "placement":{
+        "type":"minecraft:random_spread",
+        "salt": 4,
+        "separation":20,
+        "spacing":120
+    },
+    "structures":[
+        {
+            "structure":"cmi:cave_spwan",
+            "weight":1
+        }
+    ]
+}

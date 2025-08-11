@@ -1,0 +1,329 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "north",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "north",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "east",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "east",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "east",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "south",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "south",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "south",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "west",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "west",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "west",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "up",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "up",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "up",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "down",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "down",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "down",
+			"axis_along_first": "true"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "north",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "north",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "north",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "east",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "east",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "east",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "south",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "south",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "south",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "west",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "west",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "west",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "up",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "up",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "up",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "pipe",
+			"facing": "down",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "cog",
+			"facing": "down",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "shaft",
+			"facing": "down",
+			"axis_along_first": "false"
+		},
+		"Name": "create:wooden_bracket"
+	}
+]

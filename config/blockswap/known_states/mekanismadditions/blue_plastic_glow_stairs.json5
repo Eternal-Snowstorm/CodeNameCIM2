@@ -1,0 +1,1763 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "north"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "south"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "west"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "empty",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "top",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "straight",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "inner_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_left",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"shape": "outer_right",
+			"half": "bottom",
+			"fluid_logged_extension": "lava",
+			"facing": "east"
+		},
+		"Name": "mekanismadditions:blue_plastic_glow_stairs"
+	}
+]

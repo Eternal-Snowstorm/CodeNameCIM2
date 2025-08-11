@@ -1,0 +1,355 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"south": "true",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"south": "false",
+			"north": "true",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"south": "true",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"south": "false",
+			"north": "false",
+			"east": "true"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"south": "true",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"south": "false",
+			"north": "true",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "false",
+			"south": "true",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "true",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "false",
+			"waterlogged": "true",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"west": "true",
+			"waterlogged": "false",
+			"south": "false",
+			"north": "false",
+			"east": "false"
+		},
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	},
+	{
+		"Name": "createframed:white_stained_tiled_glass_pane"
+	}
+]

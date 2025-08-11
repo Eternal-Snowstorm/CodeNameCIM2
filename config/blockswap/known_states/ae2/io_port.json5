@@ -1,0 +1,437 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "0",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "1",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "2",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "ae2:io_port"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"spin": "3",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "ae2:io_port"
+	}
+]

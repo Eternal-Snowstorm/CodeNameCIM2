@@ -19,66 +19,66 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:tier_1_rocket_frame", [
 		"cmi:rocket_pattern"
 	], [
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:steel_pillar", [
+			"ad_astra:steel_pillar",
 			"#forge:storage_blocks/steel"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:steel_pillar", [
+			"ad_astra:steel_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:steel_pillar", [
+			"ad_astra:steel_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:steel_pillar", [
+			"ad_astra:steel_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:steel_pillar", [
+			"ad_astra:steel_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:steel_pillar", [
+			"ad_astra:steel_pillar",
 			"#forge:storage_blocks/steel"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:steel_pillar", [
+			"ad_astra:steel_pillar",
 			"ad_astra:rocket_nose_cone"
 		]),
-	]).loops(1).transitionalItem("cmi:rocket_pattern")
+	]).loops(1).transitionalItem("ad_astra:steel_pillar")
 
 	// Tier2
 	create.sequenced_assembly("cmi:tier_2_rocket_frame", [
 		"cmi:rocket_pattern"
 	], [
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:desh_pillar", [
+			"ad_astra:desh_pillar",
 			"#forge:storage_blocks/desh"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:desh_pillar", [
+			"ad_astra:desh_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:desh_pillar", [
+			"ad_astra:desh_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:desh_pillar", [
+			"ad_astra:desh_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:desh_pillar", [
+			"ad_astra:desh_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:desh_pillar", [
+			"ad_astra:desh_pillar",
 			"#forge:storage_blocks/desh"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:desh_pillar", [
+			"ad_astra:desh_pillar",
 			"ad_astra:rocket_nose_cone"
 		]),
 	]).loops(1).transitionalItem("cmi:rocket_pattern")
@@ -87,69 +87,69 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:tier_3_rocket_frame", [
 		"cmi:rocket_pattern"
 	], [
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:ostrum_pillar", [
+			"ad_astra:ostrum_pillar",
 			"#forge:storage_blocks/ostrum"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:ostrum_pillar", [
+			"ad_astra:ostrum_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:ostrum_pillar", [
+			"ad_astra:ostrum_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:ostrum_pillar", [
+			"ad_astra:ostrum_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:ostrum_pillar", [
+			"ad_astra:ostrum_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:ostrum_pillar", [
+			"ad_astra:ostrum_pillar",
 			"#forge:storage_blocks/ostrum"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:ostrum_pillar", [
+			"ad_astra:ostrum_pillar",
 			"ad_astra:rocket_nose_cone"
 		]),
-	]).loops(1).transitionalItem("cmi:rocket_pattern")
+	]).loops(1).transitionalItem("ad_astra:ostrum_pillar")
 
 	// Tier4
 	create.sequenced_assembly("cmi:tier_4_rocket_frame", [
 		"cmi:rocket_pattern"
 	], [
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:calorite_pillar", [
+			"ad_astra:calorite_pillar",
 			"#forge:storage_blocks/calorite"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:calorite_pillar", [
+			"ad_astra:calorite_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:calorite_pillar", [
+			"ad_astra:calorite_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:calorite_pillar", [
+			"ad_astra:calorite_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:calorite_pillar", [
+			"ad_astra:calorite_pillar",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:calorite_pillar", [
+			"ad_astra:calorite_pillar",
 			"#forge:storage_blocks/calorite"
 		]),
-		create.deploying("cmi:rocket_pattern", [
-			"cmi:rocket_pattern",
+		create.deploying("ad_astra:calorite_pillar", [
+			"ad_astra:calorite_pillar",
 			"ad_astra:rocket_nose_cone"
 		]),
-	]).loops(1).transitionalItem("cmi:rocket_pattern")
+	]).loops(1).transitionalItem("ad_astra:calorite_pillar")
 
 	// Tier1 r
 	create.sequenced_assembly("ad_astra:tier_1_rocket", [

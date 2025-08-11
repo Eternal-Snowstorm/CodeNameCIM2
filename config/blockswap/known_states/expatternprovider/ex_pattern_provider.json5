@@ -1,0 +1,56 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"push_direction": "down"
+		},
+		"Name": "expatternprovider:ex_pattern_provider"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"push_direction": "up"
+		},
+		"Name": "expatternprovider:ex_pattern_provider"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"push_direction": "north"
+		},
+		"Name": "expatternprovider:ex_pattern_provider"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"push_direction": "south"
+		},
+		"Name": "expatternprovider:ex_pattern_provider"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"push_direction": "west"
+		},
+		"Name": "expatternprovider:ex_pattern_provider"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"push_direction": "east"
+		},
+		"Name": "expatternprovider:ex_pattern_provider"
+	},
+	{
+		"Name": "expatternprovider:ex_pattern_provider"
+	}
+]

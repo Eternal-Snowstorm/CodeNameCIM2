@@ -1,0 +1,689 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "none"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "none"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "none"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "none"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "zo"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "zo"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "zo"
+		},
+		"Name": "create:track"
+	},
+	{
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "xo"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "xo"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "xo"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "xo"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "pd"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "pd"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "pd"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "pd"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "nd"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "nd"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "nd"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "nd"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "an"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "an"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "an"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "an"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "as"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "as"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "as"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "as"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "ae"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "ae"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "ae"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "ae"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "aw"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "aw"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "aw"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "aw"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "tn"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "tn"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "tn"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "tn"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "ts"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "ts"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "ts"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "ts"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "te"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "te"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "te"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "te"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "tw"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "tw"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "tw"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "tw"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_o"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_o"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_o"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_o"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_d"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_d"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_d"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_d"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_pdx"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_pdx"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_pdx"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_pdx"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_pdz"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_pdz"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_pdz"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_pdz"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_ndx"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_ndx"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_ndx"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_ndx"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "true",
+			"shape": "cr_ndz"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "true",
+			"shape": "cr_ndz"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turn": "false",
+			"shape": "cr_ndz"
+		},
+		"Name": "create:track"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turn": "false",
+			"shape": "cr_ndz"
+		},
+		"Name": "create:track"
+	}
+]

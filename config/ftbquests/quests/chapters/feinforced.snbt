@@ -13,10 +13,11 @@
 		x: -1.0d
 		y: 0.0d
 	}]
-	order_index: 10
+	order_index: 12
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "5D1A23B1F7C18C5B"
 			rewards: [{
@@ -41,6 +42,7 @@
 			y: -2.827142857142867d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "5C55C5A27FD620C0"
 			rewards: [{
@@ -62,6 +64,7 @@
 				"5C55C5A27FD620C0"
 				"5D1A23B1F7C18C5B"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1E446EB15DE75BAD"
 			tasks: [{
@@ -74,6 +77,7 @@
 		}
 		{
 			dependencies: ["1E446EB15DE75BAD"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "73121B5585D69262"
 			rewards: [{
@@ -99,6 +103,7 @@
 		}
 		{
 			dependencies: ["73121B5585D69262"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "22877136228BAEC0"
 			tasks: [{
@@ -111,6 +116,7 @@
 		}
 		{
 			dependencies: ["22877136228BAEC0"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "6D62D2B44AFBD4B1"
 			rewards: [{
@@ -136,6 +142,7 @@
 		}
 		{
 			dependencies: ["6D62D2B44AFBD4B1"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3736139A32B991A4"
 			rewards: [{
@@ -153,6 +160,7 @@
 			y: -2.4342857142857284d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "56EFDD3333BB54AF"
 			rewards: [{
@@ -171,6 +179,7 @@
 		}
 		{
 			dependencies: ["56EFDD3333BB54AF"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1FC3C56F861CAEEF"
 			tasks: [{
@@ -183,6 +192,7 @@
 		}
 		{
 			dependencies: ["1FC3C56F861CAEEF"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "79390B295BEC1A2B"
 			rewards: [{
@@ -201,6 +211,7 @@
 		}
 		{
 			dependencies: ["79390B295BEC1A2B"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "0839776A23D7B685"
 			tasks: [{
@@ -216,6 +227,7 @@
 				"0839776A23D7B685"
 				"3736139A32B991A4"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "77E890753F312A53"
 			rewards: [{
@@ -234,6 +246,7 @@
 		}
 		{
 			dependencies: ["77E890753F312A53"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "0F99DFE45596681F"
 			rewards: [{
@@ -252,6 +265,7 @@
 		}
 		{
 			dependencies: ["0F99DFE45596681F"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1BFACCB25CDA31C5"
 			tasks: [{
@@ -259,10 +273,10 @@
 				item: "cmi:feinforced_mechanism"
 				type: "item"
 			}]
-			title: "Feinforced Mechanism"
+			title: "Reinforced Mechanism"
 			x: 13.657142857142901d
 			y: 0.1428571428571459d
 		}
 	]
-	title: "Feinforced"
+	title: "Reinforced"
 }

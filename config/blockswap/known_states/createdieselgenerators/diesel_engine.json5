@@ -1,0 +1,1059 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "up"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "true",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "true",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "true",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"turbocharged": "false",
+			"silenced": "false",
+			"powered": "false",
+			"facing": "down"
+		},
+		"Name": "createdieselgenerators:diesel_engine"
+	}
+]

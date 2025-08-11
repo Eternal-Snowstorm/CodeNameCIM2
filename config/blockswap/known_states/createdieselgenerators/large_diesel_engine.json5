@@ -1,0 +1,324 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "true",
+			"pipe": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "true",
+			"pipe": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "false",
+			"pipe": "true",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "true",
+			"pipe": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "true",
+			"pipe": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "false",
+			"pipe": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "false",
+			"pipe": "false",
+			"facing": "north"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "true",
+			"pipe": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "true",
+			"pipe": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "false",
+			"pipe": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "false",
+			"pipe": "true",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "true",
+			"pipe": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "true",
+			"pipe": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "false",
+			"pipe": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "false",
+			"pipe": "false",
+			"facing": "south"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "true",
+			"pipe": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "true",
+			"pipe": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "false",
+			"pipe": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "false",
+			"pipe": "true",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "true",
+			"pipe": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "true",
+			"pipe": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "false",
+			"pipe": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "false",
+			"pipe": "false",
+			"facing": "west"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "true",
+			"pipe": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "true",
+			"pipe": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "false",
+			"pipe": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "false",
+			"pipe": "true",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "true",
+			"pipe": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "true",
+			"pipe": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "true",
+			"powered": "false",
+			"pipe": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"silenced": "false",
+			"powered": "false",
+			"pipe": "false",
+			"facing": "east"
+		},
+		"Name": "createdieselgenerators:large_diesel_engine"
+	}
+]

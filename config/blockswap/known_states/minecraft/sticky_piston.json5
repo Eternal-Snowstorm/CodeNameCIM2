@@ -1,0 +1,102 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"extended": "true"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"extended": "true"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"extended": "true"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"extended": "true"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "up",
+			"extended": "true"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "down",
+			"extended": "true"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"extended": "false"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"extended": "false"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"extended": "false"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "up",
+			"extended": "false"
+		},
+		"Name": "minecraft:sticky_piston"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "down",
+			"extended": "false"
+		},
+		"Name": "minecraft:sticky_piston"
+	}
+]

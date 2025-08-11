@@ -1,0 +1,63 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "minecraft:melon_stem"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"age": "1"
+		},
+		"Name": "minecraft:melon_stem"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"age": "2"
+		},
+		"Name": "minecraft:melon_stem"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"age": "3"
+		},
+		"Name": "minecraft:melon_stem"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"age": "4"
+		},
+		"Name": "minecraft:melon_stem"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"age": "5"
+		},
+		"Name": "minecraft:melon_stem"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"age": "6"
+		},
+		"Name": "minecraft:melon_stem"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"age": "7"
+		},
+		"Name": "minecraft:melon_stem"
+	}
+]

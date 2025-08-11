@@ -1,0 +1,437 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "start",
+			"facing": "north"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "start",
+			"facing": "north"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "middle",
+			"facing": "north"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "middle",
+			"facing": "north"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "end",
+			"facing": "north"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "end",
+			"facing": "north"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "single",
+			"facing": "north"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "start",
+			"facing": "east"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "start",
+			"facing": "east"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "middle",
+			"facing": "east"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "middle",
+			"facing": "east"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "end",
+			"facing": "east"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "end",
+			"facing": "east"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "single",
+			"facing": "east"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "single",
+			"facing": "east"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "start",
+			"facing": "south"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "start",
+			"facing": "south"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "middle",
+			"facing": "south"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "middle",
+			"facing": "south"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "end",
+			"facing": "south"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "end",
+			"facing": "south"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "single",
+			"facing": "south"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "single",
+			"facing": "south"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "start",
+			"facing": "west"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "start",
+			"facing": "west"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "middle",
+			"facing": "west"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "middle",
+			"facing": "west"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "end",
+			"facing": "west"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "end",
+			"facing": "west"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "single",
+			"facing": "west"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "single",
+			"facing": "west"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "start",
+			"facing": "up"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "start",
+			"facing": "up"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "middle",
+			"facing": "up"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "middle",
+			"facing": "up"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "end",
+			"facing": "up"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "end",
+			"facing": "up"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "single",
+			"facing": "up"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "single",
+			"facing": "up"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "start",
+			"facing": "down"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "start",
+			"facing": "down"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "middle",
+			"facing": "down"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "middle",
+			"facing": "down"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "end",
+			"facing": "down"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "end",
+			"facing": "down"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"part": "single",
+			"facing": "down"
+		},
+		"Name": "create:gantry_shaft"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"part": "single",
+			"facing": "down"
+		},
+		"Name": "create:gantry_shaft"
+	}
+]

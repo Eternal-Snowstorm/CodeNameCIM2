@@ -6,17 +6,18 @@
 	icon: "cmi:enchanted_mechanism"
 	id: "3FAF5D1654572EA4"
 	images: [{
-		height: 27.72d
+		height: 9.0d
 		image: "cmi:textures/images/background/enchanted.png"
 		rotation: 0.0d
-		width: 62.94d
-		x: -2.0d
-		y: -1.5d
+		width: 20.0d
+		x: -7.5d
+		y: -0.5d
 	}]
-	order_index: 16
+	order_index: 18
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "6E7A08C1A597A773"
 			rewards: [{
@@ -30,11 +31,12 @@
 				type: "item"
 			}]
 			title: "Lapis Lazuli"
-			x: -19.815714285714286d
-			y: 1.2142857142857153d
+			x: -12.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6E7A08C1A597A773"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3264DFDEFE1F1405"
 			tasks: [{
@@ -42,11 +44,12 @@
 				title: "Compat"
 				type: "checkmark"
 			}]
-			x: -10.345714285714294d
-			y: 4.642857142857139d
+			x: -10.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3264DFDEFE1F1405"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "42B54B555EC4FA88"
 			rewards: [{
@@ -60,11 +63,12 @@
 				type: "item"
 			}]
 			title: "Lapis Block"
-			x: -6.447142857142865d
-			y: 2.0714285714285765d
+			x: -9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["42B54B555EC4FA88"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3D8801175C63488E"
 			tasks: [{
@@ -72,10 +76,11 @@
 				title: "Press"
 				type: "checkmark"
 			}]
-			x: -3.97714285714288d
-			y: 0.2142857142857153d
+			x: -8.0d
+			y: 0.5d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			icon: "minecraft:experience_bottle"
 			id: "70EB67AB022CA57C"
@@ -84,14 +89,15 @@
 				title: "Fiuld Experience"
 				type: "checkmark"
 			}]
-			x: 2.1357142857142577d
-			y: -4.642857142857139d
+			x: -6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"3D8801175C63488E"
 				"70EB67AB022CA57C"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "29CA4C846BC2E898"
 			tasks: [{
@@ -99,11 +105,11 @@
 				title: "Fill"
 				type: "checkmark"
 			}]
-			x: 5.391428571428534d
-			y: 3.499999999999993d
+			x: -5.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["29CA4C846BC2E898"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "7DB92A8D55E693A0"
 			rewards: [{
@@ -117,11 +123,15 @@
 				type: "item"
 			}]
 			title: "Mechanism Part"
-			x: 11.718571428571394d
-			y: -1.357142857142847d
+			x: -3.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["7DB92A8D55E693A0"]
+			dependencies: [
+				"7DB92A8D55E693A0"
+				"29CA4C846BC2E898"
+			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "031DF244D321E171"
 			rewards: [{
@@ -135,8 +145,8 @@
 				type: "item"
 			}]
 			title: "Enchanted Mechanism"
-			x: 18.688571428571393d
-			y: 1.2142857142857153d
+			x: -1.0d
+			y: 0.0d
 		}
 	]
 	title: "Enchanted"

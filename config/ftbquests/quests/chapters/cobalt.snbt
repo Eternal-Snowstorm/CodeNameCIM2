@@ -13,10 +13,11 @@
 		x: 0.0d
 		y: -2.0d
 	}]
-	order_index: 7
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "5AD7B465C92D054A"
 			rewards: [{
@@ -36,6 +37,7 @@
 		}
 		{
 			dependencies: ["34C0D2040A59E347"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "46B5032D30E390C8"
 			rewards: [{
@@ -55,6 +57,7 @@
 		}
 		{
 			dependencies: ["5AD7B465C92D054A"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "34C0D2040A59E347"
 			size: 1.5d
@@ -68,6 +71,7 @@
 		}
 		{
 			dependencies: ["46B5032D30E390C8"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "17F8A693FD6200E4"
 			size: 1.5d
@@ -81,6 +85,7 @@
 		}
 		{
 			dependencies: ["17F8A693FD6200E4"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "649B015C33D4ADDC"
 			rewards: [{
@@ -107,6 +112,7 @@
 		}
 		{
 			dependencies: ["649B015C33D4ADDC"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3B643257E2D339C9"
 			size: 1.5d
@@ -123,6 +129,7 @@
 				"3B643257E2D339C9"
 				"3693762697D9281D"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "0593923A4CD302A5"
 			rewards: [{
@@ -149,6 +156,7 @@
 		}
 		{
 			dependencies: ["46B5032D30E390C8"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "2E8A24D60ADCFB27"
 			size: 1.5d
@@ -162,6 +170,7 @@
 		}
 		{
 			dependencies: ["2E8A24D60ADCFB27"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "3693762697D9281D"
 			rewards: [{
@@ -187,6 +196,7 @@
 			y: 7.5d
 		}
 		{
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "2E5C7860E38FB347"
 			rewards: [{
@@ -206,6 +216,7 @@
 		}
 		{
 			dependencies: ["2E5C7860E38FB347"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "45394B6473F0D6D9"
 			size: 1.5d
@@ -219,6 +230,7 @@
 		}
 		{
 			dependencies: ["45394B6473F0D6D9"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "1081B156749D66C8"
 			rewards: [{
@@ -245,6 +257,7 @@
 		}
 		{
 			dependencies: ["1081B156749D66C8"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "305DEBA8D4384D35"
 			rewards: [{
@@ -264,6 +277,7 @@
 		}
 		{
 			dependencies: ["305DEBA8D4384D35"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "0052FBF9EC086D8E"
 			size: 1.5d
@@ -280,6 +294,7 @@
 				"0593923A4CD302A5"
 				"0052FBF9EC086D8E"
 			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "75CE97D84422D377"
 			rewards: [{
@@ -294,11 +309,12 @@
 				type: "item"
 			}]
 			title: "RF Coil"
-			x: 10.571428571428555d
-			y: 3.642857142857146d
+			x: 10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["75CE97D84422D377"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "722D55A9AF2DC06F"
 			size: 1.5d
@@ -313,6 +329,7 @@
 		}
 		{
 			dependencies: ["722D55A9AF2DC06F"]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "07E36873AC7E489E"
 			size: 1.5d

@@ -1,0 +1,262 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "0"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "1"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "1"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "2"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "2"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "3"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "3"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "4"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "4"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "5"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "5"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "6"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "6"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "7"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "7"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "8"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "8"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "9"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "9"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "10"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "10"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "11"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "11"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "12"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "12"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "13"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "13"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "14"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "14"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"rotation": "15"
+		},
+		"Name": "minecraft:crimson_sign"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"rotation": "15"
+		},
+		"Name": "minecraft:crimson_sign"
+	}
+]

@@ -1,0 +1,324 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "true",
+			"hanging": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "true",
+			"hanging": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "false",
+			"hanging": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "false",
+			"hanging": "true",
+			"facing": "north"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "true",
+			"hanging": "false",
+			"facing": "north"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "true",
+			"hanging": "false",
+			"facing": "north"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "false",
+			"hanging": "false",
+			"facing": "north"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "true",
+			"hanging": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "true",
+			"hanging": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "false",
+			"hanging": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "false",
+			"hanging": "true",
+			"facing": "south"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "true",
+			"hanging": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "true",
+			"hanging": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "false",
+			"hanging": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "false",
+			"hanging": "false",
+			"facing": "south"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "true",
+			"hanging": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "true",
+			"hanging": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "false",
+			"hanging": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "false",
+			"hanging": "true",
+			"facing": "west"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "true",
+			"hanging": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "true",
+			"hanging": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "false",
+			"hanging": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "false",
+			"hanging": "false",
+			"facing": "west"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "true",
+			"hanging": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "true",
+			"hanging": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "false",
+			"hanging": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "false",
+			"hanging": "true",
+			"facing": "east"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "true",
+			"hanging": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "true",
+			"hanging": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"open": "false",
+			"hanging": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:lunch_basket"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"open": "false",
+			"hanging": "false",
+			"facing": "east"
+		},
+		"Name": "supplementaries:lunch_basket"
+	}
+]

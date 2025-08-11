@@ -1,45 +1,72 @@
 {
 	autofocus_id: "219A962B82333395"
+	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "start"
 	group: ""
+	icon: "minecraft:oak_log"
 	id: "7CF1214F39DD4E53"
 	images: [{
-		height: 5.5d
+		height: 4.0d
 		image: "cmi:textures/images/unfinished.png"
 		rotation: 0.0d
-		width: 15.4d
-		x: 1.5d
-		y: -10.0d
+		width: 11.0d
+		x: -1.5d
+		y: -6.5d
 	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["27A18EEBBE063B43"]
+			description: [
+				"Q: 我要是出生在沙漠咋办？"
+				"A: 重开吧。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_log"
 			id: "18237D913486FE33"
 			rewards: [{
 				id: "06636288EE5A0CF9"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "5B1C9F698CB8E5CC"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
+			size: 2.0d
+			subtitle: "记得种回去"
+			tasks: [
+				{
+					id: "5B1C9F698CB8E5CC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
 					}
+					title: "原木"
+					type: "item"
 				}
-				title: "Any #minecraft:logs"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
+				{
+					id: "085A25218DA4CDA5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:saplings"
+						}
+					}
+					title: "树苗"
+					type: "item"
+				}
+			]
+			title: "万恶之源"
+			x: -5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["18237D913486FE33"]
+			icon: "minecraft:oak_planks"
 			id: "77E939643ECBC35D"
 			rewards: [{
 				id: "66001D2A2D7F63F7"
@@ -55,11 +82,12 @@
 						value: "minecraft:planks"
 					}
 				}
-				title: "Any #minecraft:planks"
+				title: "Any planks"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			title: "木板"
+			x: -3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["77E939643ECBC35D"]
@@ -69,6 +97,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "不是棍木"
 			tasks: [{
 				id: "7F9158854E4B0E49"
 				item: {
@@ -81,8 +110,9 @@
 				title: "Any #forge:rods/wooden"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			title: "木棍"
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["77E939643ECBC35D"]
@@ -92,13 +122,15 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "不是圆石工作台"
 			tasks: [{
 				id: "6F95F79F0C6650AB"
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			title: "工作台"
+			x: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["219A962B82333395"]
@@ -113,8 +145,8 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["29624F942DC7CC08"]
@@ -143,11 +175,12 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 5.0d
+			x: -3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["005CD7BF1218DD20"]
+			description: ["Just make sure you have a full one"]
 			icon: "tconstruct:encyclopedia"
 			id: "5D0FEBD3FC3443C6"
 			rewards: [
@@ -181,734 +214,95 @@
 				item: "tconstruct:encyclopedia"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.0d
+			title: "Encycolpedia Supplement Pack"
+			x: -3.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["005CD7BF1218DD20"]
-			id: "40A061BF2F7536BD"
-			rewards: [{
-				id: "370D5B3FD3613F42"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [
-				{
-					id: "4FC5824A5883C0AA"
-					item: "tconstruct:modifier_worktable"
-					type: "item"
-				}
-				{
-					id: "2729620BE9B87B2E"
-					item: "tconstruct:tinkers_chest"
-					type: "item"
-				}
-				{
-					id: "76D0B167E17CE104"
-					item: "tconstruct:part_chest"
-					type: "item"
-				}
-				{
-					id: "4D545CF5E3EF0CB6"
-					item: "tconstruct:cast_chest"
-					type: "item"
-				}
-				{
-					id: "7610F5E7191D5545"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "tconstruct:tinkers_anvil"
-						}
-					}
-					title: "Any #tconstruct:tinkers_anvil"
-					type: "item"
-				}
-			]
-			x: 5.0d
-			y: 7.5d
-		}
-		{
-			id: "3DB805F9D13B67E8"
-			tasks: [{
-				id: "11980AAF376761D6"
-				item: {
-					Count: 1
-					id: "minecraft:wooden_axe"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 1.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["3DB805F9D13B67E8"]
-			id: "49B70C43E78A7AD2"
-			tasks: [{
-				id: "197B0D7CCE98E1FD"
-				item: "minecraft:stripped_oak_log"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 9.5d
-		}
-		{
-			id: "402C1FBF781261AB"
-			tasks: [{
-				id: "3E1A55E9A8E95CC7"
-				item: "minecraft:flint"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 11.0d
-		}
-		{
-			id: "2C87A57EF28732AC"
-			tasks: [{
-				id: "075E319AAD59F7A3"
-				item: "minecraft:clay_ball"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 12.5d
-		}
-		{
-			dependencies: [
-				"2C87A57EF28732AC"
-				"402C1FBF781261AB"
-			]
-			id: "12696E4294894053"
-			tasks: [{
-				id: "453163005F1B004A"
-				item: "cmi:basic_mechanism_part"
-				type: "item"
-			}]
-			title: "aa"
-			x: 2.5d
-			y: 12.5d
-		}
-		{
-			id: "70DBB589695C3CEA"
-			tasks: [{
-				id: "7D2B3FEE681F69A7"
-				item: {
-					Count: 1
-					id: "immersiveengineering:hammer"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 5.0d
-			y: 11.0d
-		}
-		{
-			dependencies: [
-				"12696E4294894053"
-				"70DBB589695C3CEA"
-				"49B70C43E78A7AD2"
-			]
-			id: "2EAFE4330211A3E5"
-			tasks: [{
-				id: "6F31283B62191730"
-				item: "cmi:wooden_mechanism"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 14.0d
-		}
-		{
+			dependencies: ["2F1D496A9B588220"]
 			id: "414EEE72A59CEE7E"
 			tasks: [{
 				id: "220DAA4A983F78AB"
 				item: "tconstruct:grout"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 15.0d
+			x: -0.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["414EEE72A59CEE7E"]
+			dependencies: [
+				"414EEE72A59CEE7E"
+				"136FAF419EC66A2F"
+			]
 			id: "2AEF0BF597FF0E36"
 			tasks: [{
 				id: "73A17049198BEC5E"
 				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 15.5d
+			x: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
 				"2AEF0BF597FF0E36"
-				"2EAFE4330211A3E5"
-				"414EEE72A59CEE7E"
+				"4F1185F495038BB3"
 			]
 			id: "5080AD4A92076C63"
+			rewards: [
+				{
+					id: "718BD5B15ED69784"
+					item: "cmi:stone_machine"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "28F4F31A0E3E0207"
+					item: "tconstruct:seared_brick"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.5d
 			tasks: [{
 				id: "60BBAE1D75A64388"
 				item: "cmi:stone_mechanism"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 16.0d
+			x: 2.5d
+			y: 0.5d
 		}
 		{
-			dependencies: ["5080AD4A92076C63"]
+			dependencies: [
+				"5080AD4A92076C63"
+				"2AEF0BF597FF0E36"
+				"21117B9D2DEA67D4"
+			]
 			id: "749E2F97A546138F"
+			rewards: [
+				{
+					id: "7BB9D6C371524FF2"
+					item: "tconstruct:cast_chest"
+					type: "item"
+				}
+				{
+					id: "6B497AC11E7E2E69"
+					item: "tconstruct:ingot_cast"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "2768A6B87D06FAE1"
 				item: "tconstruct:seared_melter"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 17.5d
-		}
-		{
-			id: "5207B60478479507"
-			tasks: [{
-				id: "2278E4425E23E67F"
-				item: "minecraft:raw_iron"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 19.5d
-		}
-		{
-			dependencies: [
-				"749E2F97A546138F"
-				"5207B60478479507"
-			]
-			id: "7CAF5D1A43F60C94"
-			tasks: [{
-				id: "0CD4252658F4104D"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 20.5d
-		}
-		{
-			dependencies: ["749E2F97A546138F"]
-			id: "1CF1EC031E96F463"
-			tasks: [{
-				id: "505910423D472A68"
-				item: "cmi:crafting_incomplete_iron_mechanism"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 18.5d
-		}
-		{
-			dependencies: ["1CF1EC031E96F463"]
-			id: "62332D989B47A2AC"
-			tasks: [{
-				id: "70A1166D2848ECE5"
-				item: "cmi:iron_mechanism"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 19.5d
-		}
-		{
-			dependencies: ["749E2F97A546138F"]
-			id: "3986B9022EE49478"
-			tasks: [{
-				id: "4551154E9FF9A688"
-				item: "tconstruct:molten_iron_bucket"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 20.5d
-		}
-		{
-			id: "2C07E11F375519A5"
-			tasks: [{
-				id: "2E3234620B5D4BCB"
-				item: "minecraft:andesite"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 20.5d
-		}
-		{
-			dependencies: [
-				"3986B9022EE49478"
-				"2C07E11F375519A5"
-			]
-			id: "092E52D589251DDD"
-			tasks: [{
-				id: "390818A8FEA1AA2A"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 22.0d
-		}
-		{
-			dependencies: ["092E52D589251DDD"]
-			id: "12ED57298B8E5160"
-			tasks: [{
-				id: "27F3E71D5A5EFF9E"
-				item: "create:shaft"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 23.5d
-		}
-		{
-			dependencies: ["12ED57298B8E5160"]
-			id: "7A6B442C02FC2417"
-			tasks: [{
-				id: "7D27D65BA330CD5D"
-				item: "create:cogwheel"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 25.0d
-		}
-		{
-			dependencies: ["7A6B442C02FC2417"]
-			id: "2A510C012BBD36CE"
-			tasks: [{
-				id: "721627B0714E5715"
-				item: "cmi:mechanical_mechanism_part"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 26.0d
-		}
-		{
-			dependencies: [
-				"2A510C012BBD36CE"
-				"092E52D589251DDD"
-				"7A6B442C02FC2417"
-			]
-			id: "30CC934FC72B01AA"
-			tasks: [{
-				id: "72DEAE7817AA4532"
-				item: "cmi:andesite_mechanism"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 27.0d
-		}
-		{
-			dependencies: ["749E2F97A546138F"]
-			id: "71A20ADAD19D659C"
-			tasks: [{
-				id: "22DA110604A3EFA6"
-				item: "cmi:crafting_incomplete_copper_mechanism"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 24.0d
-		}
-		{
-			dependencies: ["1FD1D5E6377442B1"]
-			id: "11166BE018364FAF"
-			tasks: [{
-				id: "04347728C6E9B62B"
-				item: "thermal:copper_plate"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 27.0d
-		}
-		{
-			dependencies: ["30CC934FC72B01AA"]
-			id: "1FD1D5E6377442B1"
-			tasks: [{
-				id: "41E1DBD247514614"
-				item: "create:mechanical_press"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 27.0d
-		}
-		{
-			dependencies: ["11166BE018364FAF"]
-			id: "43C54F22E842C0C6"
-			tasks: [{
-				id: "43B25531F3ECB84D"
-				item: "create:fluid_pipe"
-				type: "item"
-			}]
-			x: 10.0d
-			y: 27.0d
-		}
-		{
-			dependencies: ["30CC934FC72B01AA"]
-			id: "1820C3D119893ECB"
-			tasks: [{
-				id: "20EEA81C7035C09B"
-				item: "thermal:device_tree_extractor"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 28.5d
-		}
-		{
-			dependencies: ["1820C3D119893ECB"]
-			id: "69C59845863F79DD"
-			tasks: [{
-				id: "6B6A46475C8A1EA0"
-				item: "thermal:latex_bucket"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 28.5d
-		}
-		{
-			dependencies: ["69C59845863F79DD"]
-			id: "0902233AD63B74D5"
-			tasks: [{
-				id: "4B1B0226E491D6F7"
-				item: "thermal:rubber"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 28.5d
-		}
-		{
-			dependencies: ["0902233AD63B74D5"]
-			id: "1C251FB6B7719FC8"
-			tasks: [{
-				id: "53BA6C8957D6709E"
-				item: "thermal:cured_rubber"
-				type: "item"
-			}]
-			x: 11.0d
-			y: 28.5d
-		}
-		{
-			dependencies: ["7CAF5D1A43F60C94"]
-			id: "3CB2DC46C5029116"
-			tasks: [{
-				id: "67ED9E8DECDE975A"
-				item: "minecraft:bucket"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 24.0d
-		}
-		{
-			dependencies: ["3CB2DC46C5029116"]
-			id: "4C8C894576DDE1FA"
-			tasks: [{
-				id: "09ED1DB566143B59"
-				item: "minecraft:water_bucket"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 25.0d
-		}
-		{
-			dependencies: [
-				"43C54F22E842C0C6"
-				"71A20ADAD19D659C"
-				"1C251FB6B7719FC8"
-				"4C8C894576DDE1FA"
-			]
-			id: "68FA9B58D7B89A6B"
-			tasks: [{
-				id: "41C868EE61DCB1B2"
-				item: "cmi:copper_mechanism"
-				type: "item"
-			}]
-			x: 13.0d
-			y: 25.5d
-		}
-		{
-			dependencies: [
-				"30CC934FC72B01AA"
-				"18A89F1382188225"
-			]
-			id: "3311EF044900CFBC"
-			tasks: [{
-				id: "78ABC8490EF721A9"
-				item: "create:deployer"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 27.5d
-		}
-		{
-			dependencies: ["749E2F97A546138F"]
-			id: "4A58565C4394E5A9"
-			tasks: [{
-				id: "42A7D4CCE55F8A00"
-				item: "create:brass_ingot"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 20.0d
-		}
-		{
-			dependencies: ["4A58565C4394E5A9"]
-			id: "429AC683E7225422"
-			tasks: [{
-				id: "41BF389F4FB16511"
-				item: "create:brass_sheet"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 26.5d
-		}
-		{
-			dependencies: ["429AC683E7225422"]
-			id: "18A89F1382188225"
-			tasks: [{
-				id: "5E3189ECEA9FD926"
-				item: "create:brass_hand"
-				type: "item"
-			}]
 			x: -0.5d
-			y: 26.5d
+			y: 2.5d
 		}
 		{
-			id: "767AABB1E0BF1C70"
-			tasks: [{
-				id: "5212F86BB2308F44"
-				item: "minecraft:quartz"
-				type: "item"
-			}]
-			x: -10.5d
-			y: 39.5d
-		}
-		{
-			dependencies: ["767AABB1E0BF1C70"]
-			id: "25A851630622C019"
-			tasks: [{
-				id: "6842F09729DB26CF"
-				item: "minecraft:quartz_slab"
-				type: "item"
-			}]
-			x: -8.5d
-			y: 39.5d
-		}
-		{
-			id: "5BF51E42F8B5CB9D"
-			tasks: [{
-				id: "3C681C564AD71106"
-				item: "minecraft:amethyst_shard"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 36.5d
-		}
-		{
-			dependencies: ["3311EF044900CFBC"]
-			id: "6ACBCD669F81BC6C"
-			tasks: [{
-				id: "4D580B26A98DFB80"
-				item: "cmi:gold_mechanism"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 29.0d
-		}
-		{
-			dependencies: ["30CC934FC72B01AA"]
-			id: "474F72EDB4700F5C"
-			tasks: [{
-				id: "12DF20153F5FC251"
-				item: "create:mechanical_mixer"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 29.0d
-		}
-		{
-			id: "39517645F3324E4C"
-			tasks: [{
-				id: "7F1ACB1C5C4D66C1"
-				item: "ae2:charged_certus_quartz_crystal"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 29.0d
-		}
-		{
-			id: "07A05C5E7682C672"
-			tasks: [{
-				id: "48C6202CB5372836"
-				item: "immersiveengineering:redstone_acid_bucket"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 29.0d
-		}
-		{
-			dependencies: [
-				"39517645F3324E4C"
-				"07A05C5E7682C672"
-				"474F72EDB4700F5C"
-			]
-			id: "5C03A8FB1BB871A6"
-			tasks: [{
-				id: "1EBDAA529612DF7A"
-				item: "create:rose_quartz"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 31.0d
-		}
-		{
-			dependencies: ["30CC934FC72B01AA"]
-			id: "24955C19A5FAAFBB"
-			tasks: [{
-				id: "0720CF194B582103"
-				item: "vintageimprovements:belt_grinder"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 31.0d
-		}
-		{
-			dependencies: [
-				"5C03A8FB1BB871A6"
-				"24955C19A5FAAFBB"
-			]
-			id: "3C6DFF784EB6E6C4"
-			tasks: [{
-				id: "5DD0877C19D770D4"
-				item: "create:polished_rose_quartz"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 32.5d
-		}
-		{
-			id: "703ADB7AE3874438"
-			tasks: [{
-				id: "527092C891514078"
-				item: "thermal:iron_plate"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 32.5d
-		}
-		{
-			dependencies: [
-				"3C6DFF784EB6E6C4"
-				"703ADB7AE3874438"
-			]
-			id: "3BAFE91FF8DD8F04"
-			tasks: [{
-				id: "72744B9252DE9A5E"
-				item: "create:electron_tube"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 34.0d
-		}
-		{
-			dependencies: [
-				"429AC683E7225422"
-				"3BAFE91FF8DD8F04"
-			]
-			id: "43408EDDCD5F66C3"
-			tasks: [{
-				id: "161081EDB04AF67A"
-				item: "create:precision_mechanism"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 33.5d
-		}
-		{
-			dependencies: ["43408EDDCD5F66C3"]
-			id: "69BD3897DB655E61"
-			tasks: [{
-				id: "21001E468DC8318F"
-				item: "create:mechanical_crafter"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 35.0d
-		}
-		{
-			dependencies: [
-				"69BD3897DB655E61"
-				"68A9825266B19AC4"
-			]
-			id: "0279064B10FF7BAF"
-			tasks: [{
-				id: "1CE8DE4021C42F95"
-				item: "vintageimprovements:laser_item"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 39.5d
-		}
-		{
-			dependencies: [
-				"5BF51E42F8B5CB9D"
-				"47D2FD89EF5A0C9D"
-			]
-			id: "2908DB9838AE89BD"
-			tasks: [{
-				id: "55286B0D8B0CF982"
-				item: "cmi:charged_amethyst"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 38.0d
-		}
-		{
-			dependencies: ["69BD3897DB655E61"]
-			id: "47D2FD89EF5A0C9D"
-			tasks: [{
-				id: "18F5FD8B4920E61A"
-				item: "createaddition:tesla_coil"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 36.5d
-		}
-		{
-			id: "7A33560B6334473A"
-			tasks: [{
-				id: "35734531B24FD63C"
-				item: "minecraft:glowstone_dust"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 38.0d
-		}
-		{
-			dependencies: [
-				"25A851630622C019"
-				"2908DB9838AE89BD"
-				"7A33560B6334473A"
-			]
-			id: "68A9825266B19AC4"
-			tasks: [{
-				id: "014B20688E8BD419"
-				item: "cmi:photosensitive_mechanism"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 39.5d
-		}
-		{
-			id: "2B86B7A219F47261"
-			tasks: [{
-				id: "0ABC8796F15465D2"
-				item: "vintageimprovements:laser_item"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 39.5d
-		}
-		{
-			dependencies: ["1270086FA79438E4"]
+			dependencies: ["0DB45287C4FF724B"]
 			id: "7C14A1CC724511CB"
 			rewards: [{
 				id: "4C14E7D36ACC2778"
@@ -920,8 +314,8 @@
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.5d
+			x: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0950E73B864090F0"]
@@ -938,17 +332,20 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "你也可以手挖"
 			tasks: [{
-				id: "3200120229402FD2"
+				id: "23868A918DDF3627"
 				type: "checkmark"
 			}]
 			title: "铲子"
-			x: 7.5d
-			y: 0.0d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1270086FA79438E4"]
+			icon: "minecraft:clay_ball"
 			id: "2F1D496A9B588220"
+			subtitle: "不是指你，Dream（"
 			tasks: [{
 				id: "5E890AB67D72E70A"
 				item: {
@@ -958,11 +355,12 @@
 						value: "forge:clay"
 					}
 				}
-				title: "Any #forge:clay"
+				title: "Clay"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			title: "黏土"
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -975,20 +373,305 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.5d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["79C36E5EB68E7476"]
 			id: "4F1185F495038BB3"
+			rewards: [
+				{
+					count: 4
+					id: "100C935C890AF593"
+					item: "cmi:wooden_mechanism"
+					type: "item"
+				}
+				{
+					id: "56F5077394C0CF5E"
+					item: "cmi:wooden_machine"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.5d
 			tasks: [{
 				id: "6E12031437BBAE52"
 				item: "cmi:wooden_mechanism"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 5.0d
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1270086FA79438E4"]
+			id: "0DB45287C4FF724B"
+			tasks: [{
+				id: "720500722CBF0E76"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7C14A1CC724511CB"
+				"542BB1A40BC1B441"
+			]
+			description: ["Flint hammers only have 1/4 durability, but you can make four"]
+			id: "2C0C50F32F39BD3F"
+			tasks: [{
+				id: "23654119B083445E"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["27A18EEBBE063B43"]
+			description: [""]
+			hide_dependency_lines: true
+			id: "542BB1A40BC1B441"
+			tasks: [
+				{
+					id: "5D45077745461FF6"
+					item: "immersiveengineering:seed"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "03BF5BE848435504"
+					item: "supplementaries:flax_seeds"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0409DDDE56372F91"
+					type: "checkmark"
+				}
+			]
+			title: "线的来源"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"Just finish these *before* you crouch into your base."
+				"You need an iron pick anyway"
+			]
+			icon: "minecraft:grass_block"
+			id: "27A18EEBBE063B43"
+			size: 2.0d
+			subtitle: "Kickstarter resources"
+			tasks: [{
+				id: "45EA37160B892F69"
+				type: "checkmark"
+			}]
+			title: "Before settling down"
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2AEF0BF597FF0E36"]
+			hide_dependency_lines: true
+			id: "216101B16F206C60"
+			tasks: [{
+				id: "086C84A57364C4D5"
+				item: "tconstruct:seared_faucet"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5080AD4A92076C63"]
+			hide_dependency_lines: true
+			id: "1D814C25827605EB"
+			tasks: [{
+				id: "787FD8B30555371A"
+				item: "tconstruct:seared_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5080AD4A92076C63"]
+			hide_dependency_lines: true
+			id: "2155ED5D3B95A6E9"
+			tasks: [{
+				id: "3637B74D09538A03"
+				item: "tconstruct:seared_basin"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5080AD4A92076C63"]
+			description: ["如果你已经找到了岩浆，你就不需要这个了"]
+			hide_dependency_lines: true
+			id: "7C92CB784271B4C8"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "2EEEB8AEBAE064B9"
+				item: "tconstruct:seared_heater"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2AEF0BF597FF0E36"]
+			hide_dependency_lines: true
+			icon: "tconstruct:seared_fuel_tank"
+			id: "13F1C5092BA578E2"
+			tasks: [
+				{
+					id: "7CE372AE3E49934A"
+					item: "tconstruct:seared_fuel_tank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0041D7C572164647"
+					item: "tconstruct:seared_fuel_gauge"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "127C173F9F5F3B73"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1270086FA79438E4"]
+			id: "3B35EDE8B923177A"
+			tasks: [{
+				id: "232BBF458E1AFF0B"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3B35EDE8B923177A"
+				"136FAF419EC66A2F"
+			]
+			id: "21117B9D2DEA67D4"
+			tasks: [{
+				id: "70E9058D52101ABD"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0950E73B864090F0"]
+			id: "136FAF419EC66A2F"
+			subtitle: "不需要我教了吧（"
+			tasks: [{
+				id: "5FE33B9B04299D33"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7C14A1CC724511CB"]
+			icon: "farmersdelight:cutting_board"
+			id: "4594936AAC131166"
+			subtitle: "我切切切！"
+			tasks: [
+				{
+					id: "22BA1E6E753A44E6"
+					item: {
+						Count: 1
+						id: "farmersdelight:flint_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0BC27BDAA00A4748"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			title: "砧板"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2AEF0BF597FF0E36"]
+			hide_dependency_lines: true
+			icon: "tconstruct:seared_ingot_tank"
+			id: "15D248E218C4FAB2"
+			subtitle: "没用完的液体存起来！"
+			tasks: [
+				{
+					id: "4E6C57F17D620BB1"
+					item: "tconstruct:seared_ingot_tank"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2CCB3CD46A90DB02"
+					item: "tconstruct:seared_ingot_gauge"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "605F522507C3E612"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4594936AAC131166"]
+			id: "53608AA274E5E414"
+			subtitle: "你也可以用砧板切"
+			tasks: [
+				{
+					id: "62CF9CCED10DC49D"
+					item: "farmersdelight:tree_bark"
+					type: "item"
+				}
+				{
+					id: "0EA094493117442A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:stripped_logs"
+						}
+					}
+					title: "Any #forge:stripped_logs"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -3.5d
 		}
 	]
-	title: "Start"
+	title: "艰难前期"
 }

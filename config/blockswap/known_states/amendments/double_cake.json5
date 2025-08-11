@@ -1,0 +1,509 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"bites": "0"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"bites": "0"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"bites": "0"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"bites": "0"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"bites": "0"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"bites": "0"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"bites": "0"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"bites": "1"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"bites": "1"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"bites": "1"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"bites": "1"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"bites": "1"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"bites": "1"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"bites": "1"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"bites": "1"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"bites": "2"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"bites": "2"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"bites": "2"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"bites": "2"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"bites": "2"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"bites": "2"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"bites": "2"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"bites": "2"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"bites": "3"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"bites": "3"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"bites": "3"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"bites": "3"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"bites": "3"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"bites": "3"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"bites": "3"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"bites": "3"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"bites": "4"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"bites": "4"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"bites": "4"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"bites": "4"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"bites": "4"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"bites": "4"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"bites": "4"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"bites": "4"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"bites": "5"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"bites": "5"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"bites": "5"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"bites": "5"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"bites": "5"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"bites": "5"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"bites": "5"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"bites": "5"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "north",
+			"bites": "6"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "north",
+			"bites": "6"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "south",
+			"bites": "6"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "south",
+			"bites": "6"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "west",
+			"bites": "6"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "west",
+			"bites": "6"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"facing": "east",
+			"bites": "6"
+		},
+		"Name": "amendments:double_cake"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"facing": "east",
+			"bites": "6"
+		},
+		"Name": "amendments:double_cake"
+	}
+]

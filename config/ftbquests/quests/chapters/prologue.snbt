@@ -1,0 +1,115 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "prologue"
+	group: ""
+	icon: "minecraft:oak_sapling"
+	id: "29A4A4AB5A6C2147"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			icon: "cmi:wooden_mechanism"
+			id: "21ED583750523195"
+			rewards: [{
+				id: "63AA958CA6111497"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.8d
+			tasks: [{
+				id: "22D0220F20C29089"
+				type: "checkmark"
+			}]
+			title: "构件世界"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			icon: "ad_astra:earth_globe"
+			id: "1EA33F05E5B01612"
+			rewards: [{
+				count: 16
+				id: "2D13E4A26211EAD7"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D6250EF55DF25ED"
+				type: "checkmark"
+			}]
+			title: "整合包"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: ["Completely Peaceful friendly"]
+			disable_toast: true
+			icon: "create:wrench"
+			id: "16E08617F49E62A9"
+			rewards: [{
+				id: "4271BF34E3F04113"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2F9F7E1BE7866A66"
+				type: "checkmark"
+			}]
+			title: "科技树"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			disable_toast: true
+			icon: "create:steam_engine"
+			id: "1970EFE7924032F0"
+			rewards: [{
+				id: "433BB8C77D51C434"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Now : Beta 2.0.1"
+			tasks: [{
+				id: "79D5B1959C780861"
+				type: "checkmark"
+			}]
+			title: "Pre release"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"[主创]Unknown_Entity_"
+				"[程序]逐日炎雪_中微子"
+				"[程序]榛名柒月"
+				"[程序]随机构件"
+				"[程序]燕栖"
+				"[程序]FiberOptics"
+				"[程序]117458866249"
+				"[美工]Dropper_QWQ"
+				"[技术]MF."
+				"[技术]芒果凍布丁"
+				"[任务]Decahydroflowey"
+			]
+			disable_toast: true
+			icon: "ae2:tiny_tnt"
+			id: "04615C350964977A"
+			rewards: [{
+				id: "7B2A097158E9272F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4AC9E70B5E11919B"
+				type: "checkmark"
+			}]
+			title: "Dev Team"
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "开始"
+}

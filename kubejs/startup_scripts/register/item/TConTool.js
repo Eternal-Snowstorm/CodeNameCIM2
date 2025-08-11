@@ -4,29 +4,46 @@ let $ModifiableItem =
 	Java.loadClass("slimeknights.tconstruct.library.tools.item.ModifiableItem")
 let $Item$Properties =
 	Java.loadClass("net.minecraft.world.item.Item$Properties")
+let $TinkerTags$Items =
+	Java.loadClass("slimeknights.tconstruct.common.TinkerTags$Items")
 
 StartupEvents.registry("item", (event) => {
-	const ITEM_BUILD = new $Item$Properties()
-	.stacksTo(1)
-	const PAXEL = $ToolDefinition.create(`${global.namespace}:paxel`)
+	/**
+	 * 按理说这里其实不需要返回也可以
+	 * 但是我习惯了(😋)
+	 * @param {String} name 注册名称
+	 * @returns 注册匠魂工具类型
+	*/
+	function addTConToolType(name) {
+		return $ToolDefinition.create(`${global.namespace}:${name}`)
+	}
 
-	event.createCustom(`${global.namespace}:paxel`, () => {
-		return new $ModifiableItem(ITEM_BUILD, PAXEL)
-	})
-		.tag("forge:tools")
-		.tag("minecraft:tools")
+	/**
+	 * 返回CustomBuilderObject可以
+	 * 直接调用createCustom()下的方法
+	 * @param {String} name 注册名称
+	 * @returns 注册匠魂工具物品
+	 */
+	function addTConTool(name) {
+		return event.createCustom(`${global.namespace}:${name}`, () => {
+			return new $ModifiableItem(new $Item$Properties(), addTConToolType(name))
+		}).tag("forge:tools").tag("minecraft:tools")
+	}
+
+	addTConTool("paxel")
 		.tag("minecraft:pickaxes")
 		.tag("minecraft:axes")
 		.tag("minecraft:shovels")
-		.tag("tconstruct:modifiable")
-		.tag("tconstruct:modifiable/multipart")
-		.tag("tconstruct:modifiable/durability")
-		.tag("tconstruct:modifiable/small")
-		.tag("tconstruct:modifiable/melee")
-		.tag("tconstruct:modifiable/held")
-		.tag("tconstruct:modifiable/harvest")
-		.tag("tconstruct:modifiable/harvest/primary")
-		.tag("tconstruct:modifiable/harvest/stone")
-		.tag("tconstruct:modifiable/interactable")
-		.tag("tconstruct:modifiable/interactable/right")
+		.tag(global.TinkerItemTags.MODIFIABLE)
+		.tag(global.TinkerItemTags.MODIFIABLE)
+		.tag(global.TinkerItemTags.MULTIPART_TOOL)
+		.tag(global.TinkerItemTags.DURABILITY)
+		.tag(global.TinkerItemTags.SMALL_TOOLS)
+		.tag(global.TinkerItemTags.MELEE)
+		.tag(global.TinkerItemTags.HELD)
+		.tag(global.TinkerItemTags.HARVEST)
+		.tag(global.TinkerItemTags.HARVEST_PRIMARY)
+		.tag(global.TinkerItemTags.STONE_HARVEST)
+		.tag(global.TinkerItemTags.INTERACTABLE)
+		.tag(global.TinkerItemTags.INTERACTABLE_RIGHT)
 })

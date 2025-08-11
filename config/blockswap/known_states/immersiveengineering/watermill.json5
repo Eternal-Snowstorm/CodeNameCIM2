@@ -1,0 +1,70 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"facing": "north"
+		},
+		"Name": "immersiveengineering:watermill"
+	},
+	{
+		"Name": "immersiveengineering:watermill"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:watermill"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"facing": "south"
+		},
+		"Name": "immersiveengineering:watermill"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:watermill"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"facing": "west"
+		},
+		"Name": "immersiveengineering:watermill"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:watermill"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"facing": "east"
+		},
+		"Name": "immersiveengineering:watermill"
+	}
+]
