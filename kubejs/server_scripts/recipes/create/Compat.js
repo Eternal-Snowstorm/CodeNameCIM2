@@ -68,4 +68,9 @@ ServerEvents.recipes((event) => {
 		Fluid.of("create_enchantment_industry:ink", 250),
 		"minecraft:glass_bottle"
 	], "supplementaries:antique_ink")
+
+	create.mixing(Fluid.of("cmi:blood", 500), [
+		Fluid.of("minecraft:water", 1000),
+		"#forge:nuggets/iron"
+	]).heated()
 })

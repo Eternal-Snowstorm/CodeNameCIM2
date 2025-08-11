@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	global.mechanismGroup.forEach((material) => {
+	global.mechanismGroup.forEach((material ) => {
 		event.custom({
 			"type": "custommachinery:custom_machine",
 			"machine": `${global.namespace}:flash_disk_writer`,

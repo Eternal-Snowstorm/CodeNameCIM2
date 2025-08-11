@@ -111,7 +111,8 @@ ServerEvents.recipes((event) => {
 		"ad_astra:tier_1_rocket",
 		"ad_astra:tier_2_rocket",
 		"ad_astra:tier_3_rocket",
-		"ad_astra:tier_4_rocket"
+		"ad_astra:tier_4_rocket",
+		"cmi:creative_mechanism_flash_drive"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({

@@ -7,4 +7,10 @@ ServerEvents.recipes((event) => {
 		"2x #forge:dusts/niter",
 		"3x #forge:dusts/charcoal"
 	])
+
+	// 泥土
+	kubejs.shapeless("2x minecraft:dirt", [
+		"#minecraft:sand",
+		"minecraft:dirt"
+	])
 })

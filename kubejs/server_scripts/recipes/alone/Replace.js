@@ -3,10 +3,14 @@ ServerEvents.recipes((event) => {
 	event.replaceInput({}, "create:powdered_obsidian", "#forge:dusts/obsidian")
 	event.replaceInput({}, "create:andesite_alloy", "#forge:ingots/andesite_alloy")
 
-	event.replaceInput({ type: "minecraft:crafting_shaped" }, "mekanism:basic_control_circuit", "cmi:basic_mekanism_mechanism")
-	event.replaceInput({ type: "minecraft:crafting_shaped" }, "mekanism:advanced_control_circuit", "cmi:advanced_mekanism_mechanism")
-	event.replaceInput({ type: "minecraft:crafting_shaped" }, "mekanism:elite_control_circuit", "cmi:elite_mekanism_mechanism")
-	event.replaceInput({ type: "minecraft:crafting_shaped" }, "mekanism:ultimate_control_circuit", "cmi:ultimate_mekanism_mechanism")
+	event.replaceInput({}, "mekanism:basic_control_circuit", "cmi:basic_mekanism_mechanism")
+	event.replaceInput({}, "#forge:circuits/basic", "cmi:basic_mekanism_mechanism")
+	event.replaceInput({}, "mekanism:advanced_control_circuit", "cmi:advanced_mekanism_mechanism")
+	event.replaceInput({}, "#forge:circuits/advanced", "cmi:advanced_mekanism_mechanism")
+	event.replaceInput({}, "mekanism:elite_control_circuit", "cmi:elite_mekanism_mechanism")
+	event.replaceInput({}, "#forge:circuits/elite", "cmi:elite_mekanism_mechanism")
+	event.replaceInput({}, "mekanism:ultimate_control_circuit", "cmi:ultimate_mekanism_mechanism")
+	event.replaceInput({}, "#forge:circuits/ultimate", "cmi:ultimate_mekanism_mechanism")
 
 	event.replaceInput({ type: "minecraft:crafting_shaped" }, "ae2:logic_processor", "cmi:smart_mechanism")
 	event.replaceInput({ type: "minecraft:crafting_shaped" }, "ae2:calculation_processor", "cmi:smart_mechanism")
