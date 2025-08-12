@@ -41,7 +41,7 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 
 				if (block === "minecraft:netherrack") {
 					rand = Math.random()
-					if (rand <= 0.1) {
+					if (rand <= 0.2) {
 						event.level.getBlock(pos).set("tconstruct:cobalt_ore")
 					}
 				}
