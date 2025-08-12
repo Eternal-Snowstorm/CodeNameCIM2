@@ -50,7 +50,8 @@ ServerEvents.recipes((event) => {
 		"mekanism:processing/lategame/antimatter_pellet/from_gas",
 		"tconstruct:common/basalt_blast_furnace",
 		"tconstruct:common/glass/vanilla/daylight_detector",
-		"create:crafting/palettes/scorchia"
+		"create:crafting/palettes/scorchia",
+		"tconstruct:smeltery/alloys/molten_enderium"
 
 
 	]
@@ -159,6 +160,9 @@ ServerEvents.recipes((event) => {
 			id: `thermal_extra:machine/endothermic_dehydrator/raw_${id}`
 		})
 		event.remove({
+			id: `thermal_extra:crafting/${id}_rod`
+		})
+		event.remove({
 			id: `thermal_extra:machine/chiller/raw_${id}`
 		})
 		event.remove({
@@ -175,6 +179,12 @@ ServerEvents.recipes((event) => {
 		})
 		event.remove({
 			id: `immersiveengineering:crafting/plate_${id}_hammering`
+		})
+		event.remove({
+			id: `immersiveengineering:crafting/stick_${id}`
+		})
+		event.remove({
+			id: `ad_astra:${id}_rod`
 		})
 	})
 
