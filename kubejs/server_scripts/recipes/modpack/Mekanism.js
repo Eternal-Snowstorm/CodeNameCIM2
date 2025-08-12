@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { mekanism } = event.recipes
+	let { mekanism, kubejs} = event.recipes
 
 	// 铂碎片处理
 	mekanism.purifying(
@@ -24,4 +24,30 @@ ServerEvents.recipes((event) => {
 		Fluid.of("mekanism:ethene", 50),
 		"mekanism:hdpe_pellet",
 	).duration(400).energyRequired(200)
+
+
+	
+	kubejs.shaped("mekanism:metallurgic_infuser", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: "minecraft:redstone",
+		C: "cmi:basic_mekanism_mechanism",
+		B: "minecraft:furnace",
+		D: "mekanism:steel_casing"
+	}).id("mekanism:metallurgic_infuser")
+
+
+	
+	kubejs.shaped("mekanism:enrichment_chamber", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: "minecraft:redstone",
+		B: "cmi:basic_mekanism_mechanism",
+		C: "minecraft:netherite_ingot",
+		D: "mekanism:steel_casing"
+	}).id("mekanism:enrichment_chamber")
 })
