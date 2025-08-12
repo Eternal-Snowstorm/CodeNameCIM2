@@ -21,7 +21,6 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.remove(`#${global.namespace}:ore_nodes`)
 	event.remove(`#${global.namespace}:dev_doll`)
 	event.remove(`#${global.namespace}:machine_block`)
-	event.remove(`#${global.namespace}:to_air`)
 })
 
 StartupEvents.modifyCreativeTab("create:base", (event) => {

@@ -86,7 +86,4 @@ StartupEvents.registry("block", (event) => {
 		.resistance(5)
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock("create:wrench_pickup")
-
-	// 生成占位方块
-	addBlock("to_air")
 })
