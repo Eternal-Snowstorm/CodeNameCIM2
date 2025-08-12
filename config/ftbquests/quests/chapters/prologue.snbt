@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["如标题所示, 这个整合包是一个做构件产线的整合包"]
 			disable_toast: true
 			icon: "cmi:wooden_mechanism"
 			id: "21ED583750523195"
@@ -53,7 +54,7 @@
 			y: 0.0d
 		}
 		{
-			description: ["Completely Peaceful friendly"]
+			description: ["完全和平且友好"]
 			disable_toast: true
 			icon: "create:wrench"
 			id: "16E08617F49E62A9"
@@ -95,13 +96,13 @@
 					type: "item"
 				}
 			]
-			subtitle: "Now : Beta 2.0.1"
+			subtitle: "当前版本: Beta-2.1.0"
 			tasks: [{
 				id: "79D5B1959C780861"
 				type: "checkmark"
 			}]
-			title: "Pre release"
-			x: 1.0d
+			title: "测试版"
+			x: 1.5d
 			y: -2.5d
 		}
 		{
@@ -138,7 +139,7 @@
 				id: "4AC9E70B5E11919B"
 				type: "checkmark"
 			}]
-			title: "Dev Team"
+			title: "开发组"
 			x: 3.0d
 			y: 0.0d
 		}
@@ -160,6 +161,63 @@
 				type: "checkmark"
 			}]
 			x: -1.5d
+			y: 2.5d
+		}
+		{
+			description: ["并且整合包内有匠魂, 你可以选择去打造一把一刀999的武器去打怪战斗爽"]
+			icon: {
+				Count: 1
+				id: "tconstruct:sword"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:manyullyn"
+						"tconstruct:manyullyn"
+						"tconstruct:manyullyn"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:insatiable"
+						}
+						{
+							level: 1
+							name: "tconstruct:silky_shears"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:durability": 1.1f
+						"tconstruct:mining_speed": 0.5f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 7.8f
+						"tconstruct:attack_speed": 1.52f
+						"tconstruct:durability": 1512.5f
+						"tconstruct:harvest_tier": "minecraft:netherite"
+						"tconstruct:mining_speed": 2.925f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			id: "71844FCBE2D77B89"
+			rewards: [{
+				count: 8
+				id: "1E0011EC608B5F17"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5903CA2F944B139F"
+				title: "本整合包哪怕是和平模式下也可以正常游玩, 不存在什么必须打怪才能获得的东西"
+				type: "checkmark"
+			}]
+			title: "关于刷怪"
+			x: 1.5d
 			y: 2.5d
 		}
 	]
