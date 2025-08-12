@@ -86,8 +86,8 @@ function addCommonOreLoots(event, ore) {
 	})
 }
 
-function addAloneOreLoots(event, ore_id, item_id) {
-	event.addBlock(ore_id, (loot) => {
+function addAloneOreLoots(event, oreId, itemId) {
+	event.addBlock(oreId, (loot) => {
 		loot.addPool((pool) => {
 			pool.addEntry({
 				"type": "minecraft:alternatives",
@@ -109,7 +109,7 @@ function addAloneOreLoots(event, ore_id, item_id) {
 								}
 							}
 						],
-						"name": ore_id
+						"name": oreId
 					},
 					{
 						"type": "minecraft:item",
@@ -123,7 +123,7 @@ function addAloneOreLoots(event, ore_id, item_id) {
 								"function": "minecraft:explosion_decay"
 							}
 						],
-						"name": item_id
+						"name": itemId
 					}
 				]
 			})
