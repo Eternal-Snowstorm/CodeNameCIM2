@@ -221,6 +221,7 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:ingots")
 		.add("createdeco:industrial_iron_ingot")
 		.add("#forge:ingots/prismalium")
+		.add("#forge:ingots/andesite_alloy")
 		.add("#forge:ingots/melodium")
 		.add("#forge:ingots/stellarium")
 

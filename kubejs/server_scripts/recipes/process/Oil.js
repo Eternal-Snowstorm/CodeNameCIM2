@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { createaddition, create, createdieselgenerators, thermal, thermal_extra } = event.recipes
+	let { create, createdieselgenerators, thermal, thermal_extra, tconstruct } = event.recipes
 
 	// 蒸馏
 	createdieselgenerators.distillation([
@@ -74,6 +74,15 @@ ServerEvents.recipes((event) => {
 		"superheated": true
 	})
 
+	// 沥青冷却
+	thermal.chiller("thermal:bitumen", [
+		Fluid.of("cmi:molten_bitumen", 250)
+	]).energy(2000)
+	
+	tconstruct.casting_table("thermal:bitumen")
+		.fluid(Fluid.of("cmi:molten_bitumen", 250))
+		.cooling_time(20)
+
 	// 热力烧煤油
-	thermal.compression_fuel("cmi:kerosene",2000000)
+	thermal.compression_fuel("cmi:kerosene", 2000000)
 })
