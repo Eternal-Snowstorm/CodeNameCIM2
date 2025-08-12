@@ -184,6 +184,6 @@ addOreBlock("argentite", "iron", 6)
 	.deepslate()
 
 // 赛特斯石英
-addOreBlock("cetus_quartz", "iron", 3)
+addOreBlock("certus_quartz", "iron", 3)
 	.stone()
 	.deepslate()
