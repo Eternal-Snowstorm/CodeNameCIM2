@@ -32,6 +32,8 @@ ItemEvents.tooltip((event) => {
 	addAccelerateTooltip("cmi:nether_mechanism")
 	addAccelerateTooltip("cmi:cobalt_mechanism")
 	addAccelerateTooltip("cmi:wooden_mechanism")
+	addAccelerateTooltip("cmi:smart_mechanism")
+	addAccelerateTooltip("create:precision_mechanism")
 
 	let chemSalts = [
 		"fecl2",

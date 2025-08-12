@@ -97,6 +97,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("ostrum", "紫金")
 	addMaterialLanguage("calorite", "耐热金属")
 	addMaterialLanguage("oil_shale", "油页岩")
+	addMaterialLanguage("certus_quartz", "赛特斯石英")
 
 	addMaterialLanguage("pyrite", "黄铁")
 	addMaterialLanguage("lateritic_nickel", "红镍")
@@ -171,15 +172,15 @@ ClientEvents.lang("zh_cn", (event) => {
 	addSolutionLanguage("nacl", "氯化钠", "NaCl")
 	addSolutionLanguage("na2so4", "硫酸钠", "Na₂SO₄")
 
-	addOreNodeLanguaue("uranium", "铀")
-	addOreNodeLanguaue("copper", "铜")
-	addOreNodeLanguaue("zinc", "锌")
-	addOreNodeLanguaue("iron", "铁")
-	addOreNodeLanguaue("gold", "金")
-	addOreNodeLanguaue("platinum", "铂")
-	addOreNodeLanguaue("cheese", "奶酪")
-	addOreNodeLanguaue("coal", "煤炭")
-	addOreNodeLanguaue("tin", "锡")
+	addOreNodeLanguage("uranium", "铀")
+	addOreNodeLanguage("copper", "铜")
+	addOreNodeLanguage("zinc", "锌")
+	addOreNodeLanguage("iron", "铁")
+	addOreNodeLanguage("gold", "金")
+	addOreNodeLanguage("platinum", "铂")
+	addOreNodeLanguage("cheese", "奶酪")
+	addOreNodeLanguage("coal", "煤炭")
+	addOreNodeLanguage("tin", "锡")
 
 	addBlockLanguage("rocket_pattern", "火箭模版")
 	addBlockLanguage("tier_1_rocket_frame", "一阶火箭框架")
@@ -265,8 +266,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("vintageimprovements:redstone_module", "§e转化石头\n§e20%红石矿石\n§2转化深板岩\n§225%深层红石矿石")
 	addAccelerateTooltipLanguage("cmi:enchanted_mechanism", "§e转化石头\n§e20%青金石矿石\n§e1%经验块\n§2转化深板岩\n§215%深层青金石矿石\n§21%经验块")
 	addAccelerateTooltipLanguage("cmi:nether_mechanism", "§c转换下界岩\n§c3%黑石\n§c3%岩浆块\n§c3%灵魂沙\n§c3%灵魂土\n§c3%镶金黑石\n§c3%金矿石\n§c3%远古残骸\n§c3%下界石英\n§c3%萤石\n§c3%下界铀矿石")
-	addAccelerateTooltipLanguage("cmi:cobalt_mechanism", "§e转化下界岩\n§e10%钴矿石")
+	addAccelerateTooltipLanguage("cmi:cobalt_mechanism", "§e转化下界岩\n§e20%钴矿石")
 	addAccelerateTooltipLanguage("cmi:wooden_mechanism", "§e转化石头\n§e20%煤矿石\n§2转化深板岩\n§215%深层煤矿石\n§21%深层钻石矿石")
+	addAccelerateTooltipLanguage("cmi:smart_mechanism", "§e转化石头\n§e10%钻石矿石\n§e20%金矿石\n§e20%赛特斯石英矿石\n§e1%红宝石矿石\n§e1%蓝宝石矿石\n§e1%绿宝石矿石\n§2转化深板岩\n§215%深层钻石矿石\n§215%深层金矿石\n§215%深层赛特斯石英矿石\n§22%深层红宝石矿石\n§22%深层蓝宝石矿石\n§22%深层绿宝石矿石")
+	addAccelerateTooltipLanguage("create:precision_mechanism", "§e转化石头\n§e15%铜矿石\n§e15%锌矿石\n§e10%红石矿石\n§2转化深板岩\n§210%深层铜矿石\n§210%深层锌矿石\n§215%深层红石矿石")
 	addAccelerateTooltipLanguage("cmi:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 
 	addHeatedLanguage("grilled", "炙烤")
@@ -486,7 +489,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`fluid.${global.namespace}.${key}_solution`, `${value}溶液`)
 	}
 
-	function addOreNodeLanguaue(key, value) {
+	function addOreNodeLanguage(key, value) {
 		event.add(`block.${global.namespace}.stone_${key}_ore_node`, `${value}矿物节点`)
 		event.add(`block.${global.namespace}.deepslate_${key}_ore_node`, `深层${value}矿物节点`)
 		event.add(`block.${global.namespace}.nether_${key}_ore_node`, `下界${value}矿物节点`)
@@ -497,7 +500,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${global.namespace}.glacio_${key}_ore_node`, `霜原${value}矿物节点`)
 	}
 
-	function addAdvancementLanguaue(key, title, desc) {
+	function addAdvancementLanguage(key, title, desc) {
 		event.add(`advancements.${global.namespace}.${key}`, title)
 		event.add(`advancements.${global.namespace}.${key}`, desc)
 	}
