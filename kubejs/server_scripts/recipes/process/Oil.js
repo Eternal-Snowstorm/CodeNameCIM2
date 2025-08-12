@@ -12,6 +12,28 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("ad_astra:oil", 1000))
 		.heatRequirement("heated")
 		.id("createdieselgenerators:distillation/crude_oil")
+	// 蒸馏
+	createdieselgenerators.distillation([
+		Fluid.of("cmi:molten_bitumen", 100),
+		Fluid.of("thermal:heavy_oil", 100),
+		Fluid.of("cmi:lubricating_oil", 100),
+		Fluid.of("createdieselgenerators:diesel", 100),
+		Fluid.of("cmi:kerosene", 100),
+		Fluid.of("cmi:naphtha", 100)
+	], Fluid.of("thermal:crude_oil", 1000))
+		.heatRequirement("heated")
+		.id("createdieselgenerators:distillation/crude_oil2")
+	// 蒸馏
+	createdieselgenerators.distillation([
+		Fluid.of("cmi:molten_bitumen", 100),
+		Fluid.of("thermal:heavy_oil", 100),
+		Fluid.of("cmi:lubricating_oil", 100),
+		Fluid.of("createdieselgenerators:diesel", 100),
+		Fluid.of("cmi:kerosene", 100),
+		Fluid.of("cmi:naphtha", 100)
+	], Fluid.of("createdieselgenerators:crude_oil", 1000))
+		.heatRequirement("heated")
+		.id("createdieselgenerators:distillation/crude_oil3")
 
 	// 油页岩粉
 	create.milling("cmi:oil_shale_dust", [

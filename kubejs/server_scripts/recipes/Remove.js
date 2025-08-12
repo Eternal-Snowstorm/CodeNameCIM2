@@ -51,7 +51,8 @@ ServerEvents.recipes((event) => {
 		"tconstruct:common/basalt_blast_furnace",
 		"tconstruct:common/glass/vanilla/daylight_detector",
 		"create:crafting/palettes/scorchia",
-		"tconstruct:smeltery/alloys/molten_enderium"
+		"tconstruct:smeltery/alloys/molten_enderium",
+		"thermal_extra:machine/fluid_mixer/polyolefin"
 
 
 	]
