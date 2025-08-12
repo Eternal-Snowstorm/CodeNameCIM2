@@ -24,6 +24,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "63BBB5BA2256CA02"
 				item: "ad_astra:desh_ingot"
@@ -37,6 +38,7 @@
 			dependencies: ["2A5A731B42749129"]
 			hide_dependent_lines: true
 			id: "5C419CA9BEBE236C"
+			size: 1.0d
 			tasks: [{
 				id: "6E6E0F3B1F268D17"
 				title: "Press"
@@ -49,6 +51,7 @@
 			dependencies: ["5C419CA9BEBE236C"]
 			hide_dependent_lines: true
 			id: "411D7DE638607B90"
+			size: 1.5d
 			tasks: [{
 				id: "1983F140F877203A"
 				item: "ad_astra:desh_plate"
@@ -67,6 +70,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "459BA6C8CDCFF3DD"
 				item: "cmi:computer_component"
@@ -83,13 +87,14 @@
 			]
 			hide_dependent_lines: true
 			id: "3B69482640462E26"
+			size: 1.5d
 			tasks: [{
 				id: "5FF4183E6B463D27"
 				title: "Deploy"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -11.385714285714265d
+			x: 1.0d
+			y: -10.5d
 		}
 		{
 			hide_dependent_lines: true
@@ -99,6 +104,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "38C36873D990BD23"
 				item: {
@@ -127,6 +133,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "3BC5A183C1F04D66"
 				item: "ad_astra:desh_cable"
@@ -144,6 +151,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "4EDE7B37963F3831"
 				item: {
@@ -164,6 +172,7 @@
 			]
 			hide_dependent_lines: true
 			id: "49EE4CE729CBEF14"
+			size: 1.5d
 			tasks: [{
 				id: "79BADF8F04489BAD"
 				title: "Deploy"
@@ -179,6 +188,7 @@
 			]
 			hide_dependent_lines: true
 			id: "736466130AA9ACEE"
+			size: 1.5d
 			tasks: [{
 				id: "7EB04CDE233FE852"
 				item: "ad_astra:desh_tank"
@@ -192,6 +202,7 @@
 			dependencies: ["736466130AA9ACEE"]
 			hide_dependent_lines: true
 			id: "369435396E11D508"
+			size: 1.5d
 			tasks: [{
 				id: "261FE5826AA31AA4"
 				item: "cmi:space_mechanism_part"
@@ -210,6 +221,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5B96EFDFF7F4A81A"
 				item: "cmi:tier_2_aviation_mechanism"

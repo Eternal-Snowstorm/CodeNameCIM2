@@ -35,6 +35,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "75554CAE2E8540E4"
 				item: {
@@ -55,6 +56,7 @@
 			dependencies: ["68FBD581C194043D"]
 			hide_dependent_lines: true
 			id: "3196C0B4D3BC5D1C"
+			size: 1.5d
 			tasks: [{
 				id: "3F3C8A79582F76DF"
 				title: "Press"
@@ -73,6 +75,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "012ADBA06FA1BFA0"
 				item: {
@@ -98,6 +101,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "021E69F962927B56"
 				item: {
@@ -151,6 +155,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "6EE58F2DE89E430E"
 				item: {
@@ -275,6 +280,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "229E5BABEDCD9B12"
 				item: "ae2:silicon_press"
@@ -328,6 +334,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5467C4320B274DFA"
 				item: "minecraft:redstone"
@@ -346,6 +353,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7BCCAF1D0EEF9CE2"
 				item: "ae2:printed_calculation_processor"
@@ -363,6 +371,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "155696DD4A3B6E04"
 				item: "ae2:printed_logic_processor"
@@ -380,6 +389,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7225D4E277177404"
 				item: "ae2:printed_engineering_processor"
@@ -403,6 +413,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "2EC6E0D81734E4BF"
 				item: "ae2:engineering_processor"
@@ -426,6 +437,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "678D1612598B8F06"
 				item: "ae2:logic_processor"
@@ -449,6 +461,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "490388763B972EE3"
 				item: "ae2:calculation_processor"
@@ -467,6 +480,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "4F5A2E989C1F2D4B"
 				item: "cmi:engineering_mechanism_part"
@@ -486,6 +500,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "019F695CD769073F"
 				item: "cmi:smart_mechanism"
@@ -499,6 +514,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5570069EBC905368"
+			size: 1.5d
 			tasks: [{
 				id: "5912B8EB7C4D337C"
 				title: "Inscrib"
@@ -516,6 +532,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "64674A74EBC7DEBA"
 				item: "minecraft:coal"
@@ -531,6 +548,7 @@
 			hide_dependent_lines: true
 			icon: "immersiveindustry:rotary_kiln"
 			id: "365D113EBC6C07EC"
+			size: 1.5d
 			tasks: [{
 				id: "4F89253B4A77BBAB"
 				title: "Rotary Kiln"

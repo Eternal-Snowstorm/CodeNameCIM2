@@ -20,6 +20,7 @@
 			hide_dependent_lines: true
 			icon: "tconstruct:molten_pig_iron_bucket"
 			id: "3E5BEC20B4D4B89F"
+			size: 1.5d
 			tasks: [{
 				id: "1E4D2D827F42826F"
 				title: "Molten Pig Iron"
@@ -32,6 +33,7 @@
 			dependencies: ["3E5BEC20B4D4B89F"]
 			hide_dependent_lines: true
 			id: "05EAE1825CF7A469"
+			size: 1.5d
 			tasks: [{
 				id: "78EF4BA2D42D2068"
 				title: "Cast"
@@ -49,6 +51,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "40584A27390C28B1"
 				item: "tconstruct:pig_iron_ingot"
@@ -62,6 +65,7 @@
 			dependencies: ["42BFA98F41B1948C"]
 			hide_dependent_lines: true
 			id: "2F31E171E4FB969D"
+			size: 1.5d
 			tasks: [{
 				id: "4DF4104670A83859"
 				title: "Press"
@@ -79,6 +83,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "1780ECFFCFC835E0"
 				item: "vintageimprovements:pig_iron_sheet"
@@ -95,6 +100,7 @@
 			]
 			hide_dependent_lines: true
 			id: "4B67A3B7F01D072E"
+			size: 1.5d
 			tasks: [{
 				id: "7BEDB060BDC9D909"
 				title: "Fill"
@@ -107,6 +113,7 @@
 			dependencies: ["4B67A3B7F01D072E"]
 			hide_dependent_lines: true
 			id: "1F95AE18632113FE"
+			size: 1.5d
 			tasks: [{
 				id: "3593F81A3C6C7B88"
 				title: "Press"
@@ -124,6 +131,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7B5C82C16917B75D"
 				item: "tconstruct:pig_iron_nugget"
@@ -142,6 +150,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "0C01A4F2707230B2"
 				item: "cmi:magical_mechanism_part"
@@ -160,6 +169,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5313E58ED7A218AD"
 				item: "cmi:pigiron_mechanism"

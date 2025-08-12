@@ -3,12 +3,12 @@
 	"itemAsHead": "mekanism:pellet_plutonium",
 	"ingredients": [
 		{
-		  "item": "mekanism:pellet_polonium"
+			"item": "mekanism:pellet_polonium"
 		}
 	],
 	"results": [
 		{
-		  "item": "mekanism:pellet_plutonium"
+			"item": "mekanism:pellet_plutonium"
 		}
 	]
 }

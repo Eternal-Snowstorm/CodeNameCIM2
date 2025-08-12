@@ -26,6 +26,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7C954E10628DFD0B"
 				item: {
@@ -51,6 +52,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5EEF66D39DFECD88"
 				item: "minecraft:iron_ingot"
@@ -65,6 +67,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "799EA946A3177D2B"
+			size: 1.5d
 			tasks: [{
 				id: "15A432EF7E97FC9D"
 				title: "Press"
@@ -77,6 +80,7 @@
 			dependencies: ["3BE08A14BB9BC06C"]
 			hide_dependent_lines: true
 			id: "29285A338533C1AC"
+			size: 1.5d
 			tasks: [{
 				id: "22D926AC13A00C09"
 				title: "Cut"
@@ -95,6 +99,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "3E2DA20BF713533A"
 				item: "immersiveengineering:sheetmetal_iron"
@@ -113,6 +118,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7AABC253DA5DB893"
 				item: "minecraft:copper_ingot"
@@ -127,6 +133,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "2ADB0FE94E9DF4C0"
+			size: 1.5d
 			tasks: [{
 				id: "0BF601143A0CD4E0"
 				title: "Roll"
@@ -145,6 +152,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "0711EE848B5741A5"
 				item: {
@@ -169,6 +177,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "07144E85CE0E0DC1"
+			size: 1.5d
 			tasks: [{
 				id: "49D475F7F2189F18"
 				title: "Deploy"
@@ -187,6 +196,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7CB5B9DC75253EA6"
 				item: "immersiveengineering:component_iron"
@@ -205,6 +215,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "3EE102A82E194537"
 				item: {
@@ -226,6 +237,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "19856A115C16071A"
+			size: 1.5d
 			tasks: [{
 				id: "66F111D029ABA1B1"
 				title: "Roll"
@@ -247,6 +259,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "4980A9D0FB8C0293"
 				item: {
@@ -273,6 +286,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "6A5F2A5E47E2D70B"
 				item: "cmi:engineering_mechanism_part"
@@ -292,6 +306,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "3100E4BC56E7DD1E"
 				item: "cmi:light_engineering_mechanism"
