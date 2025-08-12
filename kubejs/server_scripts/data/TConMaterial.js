@@ -88,47 +88,100 @@ ServerEvents.highPriorityData((event) => {
 	addTConMaterial(event, `${global.namespace}:industrial_iron`, (builder) => {
 		builder.visibility(2, false)
 			.craftable(false)
+			.sortOrder(2)
+			.head(250, 2, 4, "minecraft:iron")
+			.binding()
+			.handle(0.1, -0.1, 0.05, 0)
+			.limb(0, 0.05, 250, 0.2)
+			.grip(0.1, 0.1, 0)
+			.maille()
+			.platingHelmet(2, 165, 0, 1)
+			.platingChestplate(4, 240, 0, 2)
+			.platingLeggings(3, 225, 0, 2)
+			.platingBoots(2, 195, 0, 1)
+			.platingShield(270, 0, 2)
+			.setTraits((builder) => {
+				builder.addTrait("default", "tconstruct:magnetic", 1)
+					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
+			})
 	})
 
 	// 铸铁
 	addTConMaterial(event, `${global.namespace}:cast_iron`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
+			.sortOrder(7)
+			.head(265, 6, 8, "minecraft:iron")
+			.binding()
+			.handle(0.1, 0.1, 0, 0.05)
+			.limb(-0.2, -0.3, 120, -0.2)
+			.grip(-0.2, 0.1, 2)
+			.maille()
+			.platingHelmet(3, 180, 1, 0)
+			.platingChestplate(6, 285, 2, 0)
+			.platingLeggings(5, 240, 2, 0)
+			.platingBoots(3, 225, 1, 0)
+			.platingShield(300, 2, 0)
+			.setTraits((builder) => {
+				builder.addTrait("default", "tconstruct:magnetic", 1)
+					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
+			})
 	})
 
 	// 不锈钢
 	addTConMaterial(event, `${global.namespace}:stainless_steel`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
+			.sortOrder(7)
+			.head(775, 2.75, 6, "minecraft:diamond")
+			.binding()
+			.handle(0.05, 0, 0.05, 0.05)
+			.limb(0.1, -0.3, 775, +0.2)
+			.grip(0.05, -0.05, 2.75)
+			.maille()
+			.platingHelmet(2, 319, 0, 2)
+			.platingChestplate(7, 464, 0, 2)
+			.platingLeggings(5, 435, 0, 2)
+			.platingBoots(2, 377, 0, 2)
+			.platingShield(522, 0, 2)
+			.setTraits((builder) => {
+				builder.addTrait("default", "tconstruct:ductile", 1)
+					.addTrait("default", "tconstruct:tanned", 1)
+			})
 	})
 
 	// 戴斯
 	addTConMaterial(event, `${global.namespace}:desh`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
+			.sortOrder(7)
 	})
 
 	// 紫金
 	addTConMaterial(event, `${global.namespace}:ostrum`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
+			.sortOrder(7)
 	})
 
 	// 耐热金属
 	addTConMaterial(event, `${global.namespace}:calorite`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
+			.sortOrder(7)
 	})
 
 	// 暗影钢
 	addTConMaterial(event, `${global.namespace}:shadow_steel`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
+			.sortOrder(7)
 	})
 
 	// 光辉石
 	addTConMaterial(event, `${global.namespace}:refined_radiance`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
+			.sortOrder(7)
 	})
 })
