@@ -14,6 +14,11 @@ ItemEvents.modification((event) => {
 		modify.burnTime = 200
 	})
 
+	// 钻石燃烧时间
+	event.modify("minecraft:diamond", (modify) => {
+		modify.burnTime = 200 * 128
+	})
+
 	// 泥炭块
 	event.modify("cmi:peat_block", (modify) => {
 		modify.burnTime = 3200
