@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs, ratatouille } = event.recipes
+	let { create, kubejs } = event.recipes
 
 	// 砖块
 	create.mixing(Fluid.of("tconstruct:seared_stone", 250), [
@@ -39,18 +39,18 @@ ServerEvents.recipes((event) => {
 
 	// 杂酚油
 	create.mixing("immersiveengineering:treated_wood_horizontal", [
-		{ fluidTag: "forge:creosote", amount: 125 },
+		Fluid.of("immersiveengineering:creosote", 125),
 		"#minecraft:planks"
 	])
 
 	create.mixing("8x immersiveengineering:treated_wood_horizontal", [
-		{ fluidTag: "forge:creosote", amount: 1000 },
+		Fluid.of("immersiveengineering:creosote", 1000),
 		"8x #minecraft:planks"
 	])
 
 	create.filling("immersiveengineering:treated_wood_horizontal", [
 		"#minecraft:planks",
-		{ fluidTag: "forge:creosote", amount: 125 }
+		Fluid.of("immersiveengineering:creosote", 125)
 	]).id("createaddition:filling/treated_wood_planks")
 
 	// 木屑

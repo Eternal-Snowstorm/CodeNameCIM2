@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
 
 	create.compacting("cmi:creosote_wood_chip_briquette", [
 		"cmi:densely_packed_wood_chip_briquette",
-		{ fluidTag: "forge:creosote", amount: 1000 }
+		Fluid.of("immersiveengineering:creosote", 1000)
 	])
 
 	create.filling("4x cmi:magical_mechanism_part", [

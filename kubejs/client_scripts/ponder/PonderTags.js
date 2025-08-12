@@ -16,7 +16,10 @@ Ponder.tags((event) => {
 		"mm:large_steam_boiler_fluid_output",
 		"mm:large_steam_boiler_fluid_input",
 		"mm:large_steam_boiler_item_input",
-		"cmi:steam_bucket"
+		"cmi:steam_bucket",
+		"mm:steam_ore_processor",
+		"mm:cracker",
+		"mm:particle_collision_machine"
 	])
 
 	addPonderTag("other", "supplementaries:faucet", "Other", [
