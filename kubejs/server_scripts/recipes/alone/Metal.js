@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { minecraft, kubejs, create, createaddition, thermal, immersiveengineering, mekanism, tconstruct } = event.recipes
 
 	function moltenMetalRecipeWithCondition(metal) {
-		let namespace = ["cmi","thermalconstruct" , "tconstruct"]
+		let namespace = ["cmi", "thermalconstruct", "tconstruct"]
 		let fluid = ""
 
 		namespace.forEach((modid) => {
@@ -138,7 +138,7 @@ ServerEvents.recipes((event) => {
 				.cast_consumed(true)
 			thermal.chiller(`#forge:gears/${metal}`, [
 				Fluid.of(fluid, 360),
-				"thermalconstruct:chiller_gear_cast"
+				"#tconstruct:casts/multi_use/gear"
 			]).energy(9600)
 		} else {
 			console.warn(`No gear found for ${metal}!`)
@@ -160,7 +160,7 @@ ServerEvents.recipes((event) => {
 				.cast_consumed(true)
 			thermal.chiller(`#forge:coins/${metal}`, [
 				Fluid.of(fluid, 30),
-				"thermalconstruct:chiller_coin_cast"
+				"#tconstruct:casts/multi_use/coin"
 			]).energy(1600)
 		} else {
 			console.warn(`No coins found for ${metal}!`)
@@ -438,7 +438,7 @@ ServerEvents.recipes((event) => {
 					"thermal:press_coin_die"
 				]).energy(800)
 				thermal.smelter(`3x #forge:nuggets/${metal}`, `#forge:coins/${metal}`)
-				.energy(800)
+					.energy(800)
 			} else {
 				console.warn(`No nuggets found for ${metal}!`)
 			}
