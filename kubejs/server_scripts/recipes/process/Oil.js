@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, thermal, thermal_extra } = event.recipes
+	let { createaddition, create, createdieselgenerators, thermal, thermal_extra } = event.recipes
 
 	// 蒸馏
 	createdieselgenerators.distillation([
@@ -62,4 +62,18 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:turbid_waste_liquid", 400)
 	], Fluid.of("cmi:oil_shale_steam", 1000))
 		.energy(10000)
+
+	// 烈焰人烧煤油
+	event.custom({
+		"type": "createaddition:liquid_burning",
+		"input": {
+			"fluid": "cmi:kerosene",
+			"amount": 1000
+		},
+		"burnTime": 48000,
+		"superheated": true
+	})
+
+	// 热力烧煤油
+	thermal.compression_fuel("cmi:kerosene",2000000)
 })

@@ -16,4 +16,12 @@ ServerEvents.recipes((event) => {
 		"cmi:single_crystal_silicon",
 		{ gas: "mekanism:hydrogen_chloride", amount: 500 }
 	).duration(400).energyRequired(200)
+
+	// HDPE
+	mekanism.reaction(
+		"thermal_extra:polyolefin_plate",
+		{ gas: "mekanism:oxygen", amount: 10 },
+		Fluid.of("mekanism:ethene", 50),
+		"mekanism:hdpe_pellet",
+	).duration(400).energyRequired(200)
 })

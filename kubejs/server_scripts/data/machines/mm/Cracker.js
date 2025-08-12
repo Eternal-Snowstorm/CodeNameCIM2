@@ -20,7 +20,7 @@ MMEvents.createStructures((event) => {
 			builder.layer([
 				"FFFFF",
 				"F   F",
-				"F B F",
+				"I B F",
 				"F   F",
 				"FFFFF"
 			])

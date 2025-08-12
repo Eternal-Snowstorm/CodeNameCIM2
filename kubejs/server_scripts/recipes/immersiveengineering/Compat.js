@@ -15,12 +15,12 @@ ServerEvents.recipes((event) => {
 				"amount": 1000
 			}
 		],
-		"outputs": [
-			{
-				"item": "mekanism:hdpe_sheet",
-				"count": 1
-			}
-		],
+	"result_fluids": [
+		{
+			"fluid": "thermal_extra:polyolefin",
+			"amount": 500
+		},
+	],
 		"time": 200
 	})
 })

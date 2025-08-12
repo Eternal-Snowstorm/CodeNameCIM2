@@ -5,6 +5,28 @@
 	group: ""
 	icon: "minecraft:oak_sapling"
 	id: "29A4A4AB5A6C2147"
+	images: [
+		{
+			click: "command:say Hello World!"
+			height: 1.0d
+			hover: ["what is this?"]
+			image: "ldlib:textures/gui/icon/open_file.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			click: "command:reload"
+			height: 1.0d
+			hover: ["Reload"]
+			image: "ldlib:textures/gui/icon/replay.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 1.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

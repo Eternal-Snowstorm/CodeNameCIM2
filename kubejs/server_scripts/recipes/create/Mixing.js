@@ -49,4 +49,11 @@ ServerEvents.recipes((event) => {
 		Fluid.of("mekanism:chlorine", 500),
 		"#forge:silicon"
 	]).processingTime(200).superheated()
+
+	// C2H5OH
+	create.mixing(Fluid.of("immersiveengineering:ethanol", 125), [
+		"minecraft:sugar",
+		"create:cinder_flour",
+		"2x #forge:fuels/bio"
+	]).id("createaddition:mixing/bioethanol")
 })
