@@ -1,4 +1,5 @@
 ItemEvents.modification((event) => {
+	const BURN_TIME = 200
 	// 设定多彩构件无法被合成配方消耗
 	event.modify("cmi:colorful_mechanism", (modify) => {
 		modify.craftingRemainder = "cmi:colorful_mechanism"
@@ -6,22 +7,22 @@ ItemEvents.modification((event) => {
 
 	// 煤粉燃烧时间
 	event.modify("mekanism:dust_coal", (modify) => {
-		modify.burnTime = 2400
+		modify.burnTime = BURN_TIME * 20
 	})
 
 	// 木屑块燃烧时间
 	event.modify("createdieselgenerators:wood_chip", (modify) => {
-		modify.burnTime = 200
+		modify.burnTime = BURN_TIME
 	})
 
 	// 钻石燃烧时间
 	event.modify("minecraft:diamond", (modify) => {
-		modify.burnTime = 200 * 128
+		modify.burnTime = BURN_TIME * 128
 	})
 
 	// 泥炭块
 	event.modify("cmi:peat_block", (modify) => {
-		modify.burnTime = 3200
+		modify.burnTime = BURN_TIME * 16
 	})
 
 	// 奶酪统一处理
