@@ -48,7 +48,6 @@ ServerEvents.recipes((event) => {
 		E: "mekanism:ultimate_energy_cube"
 	}).id("cmi:flash_disk_writer")
 
-
 	kubejs.shaped("cmi:programmed_flash_drive", [
 		"A",
 		"B",

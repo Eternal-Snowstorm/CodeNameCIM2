@@ -1,3 +1,5 @@
+// priority: 100
+
 function getFirstItemId(ingredient) {
 	return Ingredient.of(ingredient).getItemIds()[0]
 }
