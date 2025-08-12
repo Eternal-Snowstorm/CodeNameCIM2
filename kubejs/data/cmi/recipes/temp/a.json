@@ -3,12 +3,12 @@
 	"itemAsHead": "mekanism:pellet_antimatter",
 	"ingredients": [
 		{
-		  "item": "cmi:plasma_ingot"
+			"item": "cmi:plasma_ingot"
 		}
 	],
 	"results": [
 		{
-		  "item": "mekanism:pellet_antimatter"
+			"item": "mekanism:pellet_antimatter"
 		}
 	]
 }

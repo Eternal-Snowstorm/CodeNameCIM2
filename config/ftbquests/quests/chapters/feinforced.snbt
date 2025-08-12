@@ -25,6 +25,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "186F2F6471B0F1C9"
 				item: {
@@ -50,6 +51,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "0A422B4A758D32B3"
 				item: "minecraft:gold_ingot"
@@ -67,6 +69,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1E446EB15DE75BAD"
+			size: 1.5d
 			tasks: [{
 				id: "094E56E9C7471509"
 				title: "Mixing"
@@ -85,6 +88,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7CCF78F31B4A8AED"
 				item: {
@@ -106,6 +110,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "22877136228BAEC0"
+			size: 1.5d
 			tasks: [{
 				id: "4BA1EBF8A251F5EC"
 				title: "Press"
@@ -124,6 +129,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "3BBD5AB7541A3F24"
 				item: {
@@ -150,6 +156,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5810391B48625240"
 				item: "thermal:rf_coil"
@@ -168,6 +175,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7D94F0C6454629A4"
 				item: "thermal:signalum_dust"
@@ -182,6 +190,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1FC3C56F861CAEEF"
+			size: 1.5d
 			tasks: [{
 				id: "61550E50311336B4"
 				title: "Smelt"
@@ -200,6 +209,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "6706FA97FDBFDDF3"
 				item: "thermal:signalum_ingot"
@@ -214,6 +224,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "0839776A23D7B685"
+			size: 1.5d
 			tasks: [{
 				id: "3E7AC89ADA6444A2"
 				title: "Gear Press"
@@ -235,6 +246,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "474FC4DDB3759309"
 				item: "thermal:signalum_gear"
@@ -254,6 +266,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "45223E735CD8863C"
 				item: "cmi:flux_mechanism_part"
@@ -268,6 +281,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1BFACCB25CDA31C5"
+			size: 1.5d
 			tasks: [{
 				id: "6FCC67A9DCA47ECB"
 				item: "cmi:feinforced_mechanism"

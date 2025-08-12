@@ -24,6 +24,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "78CBD3946B973E64"
 				item: "minecraft:dirt"
@@ -37,6 +38,7 @@
 			hide_dependent_lines: true
 			icon: "minecraft:water_bucket"
 			id: "29EA1FDB233D9E70"
+			size: 1.5d
 			tasks: [{
 				id: "39C53B8030201945"
 				title: "Water"
@@ -52,6 +54,7 @@
 			]
 			hide_dependent_lines: true
 			id: "5712E7F0ACE20017"
+			size: 1.5d
 			tasks: [{
 				id: "310BF5C67CFA5633"
 				title: "Fill"
@@ -68,6 +71,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5BEFBCAC618BF431"
 				item: "minecraft:grass_block"
@@ -85,6 +89,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "61068ADE991F180B"
 				item: {
@@ -108,6 +113,7 @@
 			]
 			hide_dependent_lines: true
 			id: "214B80AC1F02561E"
+			size: 1.5d
 			tasks: [{
 				id: "63A6D82EB10DE6E9"
 				title: "Deploy"
@@ -123,6 +129,7 @@
 			]
 			hide_dependent_lines: true
 			id: "4F497AECF5FE5208"
+			size: 1.5d
 			tasks: [{
 				id: "106B1AF60297C1CF"
 				title: "Fill"
@@ -140,6 +147,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "7A597065E6F89D47"
 				item: "cmi:magical_mechanism_part"
@@ -158,6 +166,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "58FA3FC7749DEF19"
 				item: "cmi:nature_mechanism"

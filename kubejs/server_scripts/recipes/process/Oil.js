@@ -12,6 +12,7 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("ad_astra:oil", 1000))
 		.heatRequirement("heated")
 		.id("createdieselgenerators:distillation/crude_oil")
+
 	// 蒸馏
 	createdieselgenerators.distillation([
 		Fluid.of("cmi:molten_bitumen", 100),
@@ -23,6 +24,7 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("thermal:crude_oil", 1000))
 		.heatRequirement("heated")
 		.id("createdieselgenerators:distillation/crude_oil2")
+
 	// 蒸馏
 	createdieselgenerators.distillation([
 		Fluid.of("cmi:molten_bitumen", 100),

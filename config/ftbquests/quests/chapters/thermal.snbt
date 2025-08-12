@@ -25,6 +25,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "1DDBAD57FC549940"
 				item: "minecraft:iron_ingot"
@@ -43,6 +44,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			subtitle: "10"
 			tasks: [{
 				id: "7E75035DE77155A2"
@@ -68,6 +70,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "158872F89555C2CC"
+			size: 1.5d
 			tasks: [{
 				id: "704D979C24EAB67E"
 				title: "Mixing"
@@ -81,6 +84,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "74E69B8EC920F145"
+			size: 1.5d
 			tasks: [{
 				id: "4D77CCCA9B7083CA"
 				title: "Cast"
@@ -99,6 +103,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "03573E52D768FB76"
 				item: {
@@ -120,6 +125,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "371001287D4C8D23"
+			size: 1.5d
 			tasks: [{
 				id: "52FB216C01DB28FE"
 				title: "Press"
@@ -138,6 +144,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5D7DB54507A95698"
 				item: {
@@ -163,6 +170,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "499FBDCFA7BA027C"
 				item: "minecraft:gold_ingot"
@@ -177,6 +185,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "78855495E2626F93"
+			size: 1.5d
 			tasks: [{
 				id: "7A7B593A00B46F1F"
 				title: "Roll"
@@ -195,6 +204,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "4994BF4BF537AE73"
 				item: "createaddition:gold_rod"
@@ -214,6 +224,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "501BA9F04E7BE517"
 				item: "minecraft:redstone"
@@ -228,6 +239,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "11848C62B13BEC44"
+			size: 1.5d
 			tasks: [{
 				id: "602F39F82716CEED"
 				title: "Lase"
@@ -249,6 +261,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "671426A45F426846"
 				item: "thermal:rf_coil"
@@ -268,6 +281,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "00C4C797445C32A1"
 				item: "thermal:constantan_gear"
@@ -287,6 +301,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "085D8F73C4E98EAE"
 				item: "cmi:flux_mechanism_part"
@@ -306,6 +321,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "600CE0676FCA8A26"
 				item: "cmi:thermal_mechanism"

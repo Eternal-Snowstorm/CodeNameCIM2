@@ -21,6 +21,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "76A0B5FAB70C2CF4"
+			size: 1.5d
 			tasks: [{
 				id: "2F9B56B777E4430D"
 				title: "Crush"
@@ -38,6 +39,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5981D112C38A16BC"
 				item: "minecraft:obsidian"
@@ -57,6 +59,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "71334458816BF5F4"
 				item: {
@@ -79,6 +82,7 @@
 			hide_dependent_lines: true
 			icon: "minecraft:lava_bucket"
 			id: "0DA999FE8A0D80D7"
+			size: 1.5d
 			tasks: [{
 				id: "6CE9BB5374F1AEDB"
 				title: "Fill"
@@ -92,6 +96,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "79FE17B82BB0AC09"
+			size: 1.5d
 			tasks: [{
 				id: "349BE2C817C53DFD"
 				title: "Press *2"
@@ -110,6 +115,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "1D750768E2E91014"
 				item: "create:sturdy_sheet"
@@ -124,6 +130,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "195146AD9810DA9A"
+			size: 1.5d
 			tasks: [{
 				id: "27CEB934F0C57703"
 				title: "Compat"
@@ -142,6 +149,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "2B4BE6412843827B"
 				item: "cmi:dense_sturdy_sheet"
@@ -160,6 +168,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "2D752C101170D936"
 				item: "create:brass_nugget"
@@ -177,6 +186,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "545A07017D1759D1"
+			size: 1.5d
 			tasks: [{
 				id: "7939ABB6369AF8DC"
 				title: "Deploy *3"
@@ -190,28 +200,30 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "132C06A144E76AFB"
+			size: 1.5d
 			tasks: [{
 				id: "29FBBD7231E2EE3A"
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
 			title: "Mechanism Part"
-			x: 6.025714285714258d
-			y: 6.642857142857146d
+			x: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["132C06A144E76AFB"]
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "4417AEF4EEA8754C"
+			size: 1.5d
 			tasks: [{
 				id: "6A20173E4652FEDD"
 				item: "cmi:railway_mechanism"
 				type: "item"
 			}]
 			title: "Raiway Mechanism"
-			x: 10.279999999999973d
-			y: 8.642857142857146d
+			x: 12.0d
+			y: 9.75d
 		}
 	]
 	title: "Railway"

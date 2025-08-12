@@ -25,6 +25,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "75B7CADD6ABA3EFE"
 				item: "minecraft:lapis_lazuli"
