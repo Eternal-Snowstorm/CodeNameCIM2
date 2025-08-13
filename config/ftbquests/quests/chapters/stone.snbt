@@ -25,7 +25,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "3F928C61ECCC50A6"
 				item: {
@@ -66,7 +66,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "1F6E4288F7701DAC"
 				item: "minecraft:flint"
@@ -86,7 +86,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "033475D20A583AA3"
 				item: "tconstruct:seared_brick"
@@ -106,7 +106,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "5289229069BC30A6"
 				item: "cmi:stone_mechanism"

@@ -31,7 +31,6 @@
 			hide_dependent_lines: true
 			icon: "minecraft:water_bucket"
 			id: "0AB470E3A20E01DF"
-			size: 1.5d
 			tasks: [{
 				id: "5AA6A2BBE7879251"
 				title: "Water"
@@ -45,7 +44,6 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "75A405BDA18F991B"
-			size: 1.5d
 			tasks: [{
 				id: "767FFC76DAD04DFA"
 				title: "Electrolytic Separator"
@@ -256,7 +254,6 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1A8071F9D05BD9AB"
-			size: 1.5d
 			tasks: [{
 				id: "1B530FDA3C93842A"
 				title: "Mix Water"
@@ -317,7 +314,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "4D1DB9B670D941B1"
 				item: "cmi:single_crystal_silicon"
@@ -332,7 +328,6 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "02E7945B5FA117DA"
-			size: 1.5d
 			tasks: [{
 				id: "1765765E280E6666"
 				title: "Press"
@@ -350,7 +345,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "7CB6F1A015F7B569"
 				item: {
@@ -372,7 +366,6 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3BCAE92A85378AEC"
-			size: 1.5d
 			tasks: [{
 				id: "771D385D6C063E52"
 				title: "Press"
@@ -391,7 +384,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "7D99C11BF67C82CD"
 				item: {
@@ -417,7 +409,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "02752F6D272770EB"
 				item: "ae2:logic_processor"
@@ -430,7 +421,6 @@
 			dependencies: ["722A0EA19903506A"]
 			hide_dependent_lines: true
 			id: "4C6B3731A726C4F5"
-			size: 1.5d
 			tasks: [{
 				id: "456F6E9F0548025D"
 				title: "Infuse"
@@ -454,8 +444,8 @@
 				item: "cmi:infusion_treated_processor"
 				type: "item"
 			}]
-			x: -15.5d
-			y: 5.5d
+			x: -15.476190476190467d
+			y: 5.609523809523786d
 		}
 		{
 			disable_toast: true
@@ -466,7 +456,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "452AC9F79ED84B07"
 				item: "ae2:calculation_processor"
@@ -479,7 +468,6 @@
 			dependencies: ["13737516E62B3F57"]
 			hide_dependent_lines: true
 			id: "74C290EA5E34C780"
-			size: 1.5d
 			tasks: [{
 				id: "27DDF5BDCBD37750"
 				title: "Enrichment"
@@ -503,8 +491,8 @@
 				item: "cmi:enrichment_treated_processor"
 				type: "item"
 			}]
-			x: -15.5d
-			y: 6.5d
+			x: -15.476190476190467d
+			y: 6.909523809523797d
 		}
 		{
 			disable_toast: true
@@ -515,7 +503,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "61E11AE853AA2E19"
 				item: "ae2:engineering_processor"
@@ -528,7 +515,6 @@
 			dependencies: ["7E8998606FF5D250"]
 			hide_dependent_lines: true
 			id: "7E0F086F986F7B03"
-			size: 1.5d
 			tasks: [{
 				id: "4F8528A864C36D2B"
 				title: "Sawimll"
@@ -552,8 +538,8 @@
 				item: "cmi:ground_treated_processor"
 				type: "item"
 			}]
-			x: -15.5d
-			y: 7.5d
+			x: -15.476190476190467d
+			y: 7.938095238095222d
 		}
 		{
 			dependencies: [
@@ -585,7 +571,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "5FD15E176C2BABF3"
 				item: "cmi:mekanism_processor"
@@ -604,7 +589,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "2A3D92E52CAC9C07"
 				item: {
@@ -631,7 +615,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "56837F7FE0B492ED"
 				item: {
@@ -661,7 +644,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "31DD9FDE82ABFFEE"
 				item: "cmi:computer_component"
@@ -681,7 +663,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "52D73FF541C910D5"
 				item: "cmi:mekanism_mechanism_part"
@@ -696,7 +677,6 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "29BDB3FD04B04386"
-			size: 1.5d
 			tasks: [{
 				id: "52B1A4F46E1B9824"
 				item: "cmi:computing_mechanism"

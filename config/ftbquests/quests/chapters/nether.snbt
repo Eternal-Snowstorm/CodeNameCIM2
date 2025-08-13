@@ -25,7 +25,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "080D90CE907D6FFA"
 				item: "minecraft:netherrack"
@@ -40,7 +40,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1A17066E8247E64A"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "09F988039E2D2644"
 				title: "Crush"
@@ -59,7 +59,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "0723C9B1B43163B8"
 				item: "create:cinder_flour"
@@ -164,7 +164,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "249BAE49291210E1"
 				item: "create:blaze_cake_base"
@@ -180,7 +180,7 @@
 			hide_dependent_lines: true
 			icon: "minecraft:lava_bucket"
 			id: "62FA67263227B2BB"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "768FFCB368F5C88B"
 				title: "Lava"
@@ -198,13 +198,13 @@
 			hide_dependent_lines: true
 			icon: "tconstruct:liquid_soul_bucket"
 			id: "146A740517A7F0B8"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "1216990A160F826B"
 				title: "Liquid Soul"
 				type: "checkmark"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
@@ -257,7 +257,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "576446DD3E0E7631"
 				item: "minecraft:gold_nugget"
@@ -277,7 +277,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "5C5033AD95BB8A84"
 				item: "cmi:magical_mechanism_part"
@@ -297,7 +297,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "14591DBA07D6495F"
 				item: "cmi:nether_mechanism"
@@ -317,7 +317,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "62289CCC21DCBC9C"
 				item: "create:blaze_cake"

@@ -25,6 +25,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "circle"
 			size: 1.5d
 			tasks: [{
 				id: "28E939114684941B"

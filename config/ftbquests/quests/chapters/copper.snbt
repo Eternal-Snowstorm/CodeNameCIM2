@@ -25,7 +25,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "5762E8143D7C4D63"
 				item: {
@@ -47,7 +47,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "20F96D71B2750581"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "452D1F3D2EC21B1D"
 				title: "milling"
@@ -69,7 +69,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "7AB2579C225576FA"
 				item: "cmi:cured_rubber_bucket"
@@ -89,7 +89,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "778BD2DF9BCE7180"
 				item: "cmi:rubber_plate"
@@ -108,7 +108,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "0B4C52827C61977C"
 				item: "thermal:latex_bucket"
@@ -128,7 +128,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "76F5E94626BB4F90"
 				item: "thermal:rubber"
@@ -148,7 +148,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "520DFF481E2A88B5"
 				item: "thermal:cured_rubber"
@@ -167,7 +167,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "6EB377B547B1E4A2"
 				item: {
@@ -194,7 +194,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "054E57CA80AC5F78"
 				title: "Cutting"
@@ -215,7 +215,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "04D41FB175AF13AB"
 				item: {
@@ -244,7 +244,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "339E5F8CA578BCAE"
 				item: "create:fluid_pipe"
@@ -264,7 +264,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "68BE0A609AFF4C01"
 				item: {
@@ -290,7 +290,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "0E95959F9DDFC902"
 				item: "cmi:mechanical_mechanism_part"
@@ -309,7 +309,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "38CAD11C3E7CB2D5"
 				item: {
@@ -329,7 +329,7 @@
 			dependencies: ["535B0B3CBC4056DA"]
 			disable_toast: true
 			id: "3373DC4239E82E00"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "14E19338506703E0"
 				item: "cmi:copper_mechanism"

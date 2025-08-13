@@ -25,7 +25,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "004BA51988CA0A33"
 				item: "thermal:lumium_ingot"
@@ -40,7 +39,6 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6446DBC6D9F816BF"
-			size: 1.5d
 			tasks: [{
 				id: "66FDA1C2A093B09C"
 				title: "Gear Press"
@@ -62,15 +60,14 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "4DCC38ED1EF6FE79"
 				item: "thermal:lumium_gear"
 				type: "item"
 			}]
 			title: "Lumium Gear"
-			x: 3.75d
-			y: 0.0d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			disable_toast: true
@@ -81,34 +78,31 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "63E5D9837FABCBB4"
 				item: "thermal:enderium_ingot"
 				type: "item"
 			}]
 			title: "Enderium Ingot"
-			x: -18.75d
-			y: -3.0d
+			x: -16.42857142857143d
+			y: -2.5285714285713965d
 		}
 		{
 			dependencies: ["68FE3754B7FD6A25"]
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "14052EA9F3024744"
-			size: 1.5d
 			tasks: [{
 				id: "104BEC3A257EE9AD"
 				title: "Press"
 				type: "checkmark"
 			}]
-			x: -12.0d
-			y: 0.0d
+			x: -11.857142857142861d
+			y: -0.8642857142856784d
 		}
 		{
 			dependencies: ["51185FDAE329399B"]
 			disable_toast: true
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "5CA424539C8A6E21"
 			rewards: [{
@@ -116,15 +110,14 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "2FA090BCB35880C0"
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
 			title: "RF Coil"
-			x: -6.75d
-			y: -4.5d
+			x: -6.428571428571431d
+			y: -5.414285714285668d
 		}
 		{
 			dependencies: ["4ED43AC44602A99C"]
@@ -136,15 +129,14 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "38162D1F8EAECEBF"
 				item: "cmi:flux_mechanism_part"
 				type: "item"
 			}]
 			title: "Mechanism Part"
-			x: 8.25d
-			y: -3.75d
+			x: 8.42857142857143d
+			y: -4.6071428571428115d
 		}
 		{
 			dependencies: ["098EC7655B58032B"]
@@ -156,20 +148,18 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "54A240554A0F5216"
 				item: "cmi:resonant_mechanism"
 				type: "item"
 			}]
 			title: "Resonant Mechanism"
-			x: 17.25d
-			y: 0.0d
+			x: 15.57142857142857d
+			y: -1.5142857142856627d
 		}
 		{
 			dependencies: ["14052EA9F3024744"]
 			id: "51185FDAE329399B"
-			size: 1.5d
 			tasks: [{
 				id: "41B0806330D1C0C6"
 				item: "thermal:enderium_plate"

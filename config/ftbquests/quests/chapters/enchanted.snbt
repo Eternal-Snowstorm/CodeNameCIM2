@@ -6,10 +6,10 @@
 	icon: "cmi:enchanted_mechanism"
 	id: "3FAF5D1654572EA4"
 	images: [{
-		height: 9.0d
+		height: 27.72d
 		image: "cmi:textures/images/background/enchanted.png"
 		rotation: 0.0d
-		width: 20.0d
+		width: 62.94d
 		x: -7.5d
 		y: -0.5d
 	}]
@@ -25,15 +25,14 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.0d
 			tasks: [{
 				id: "75B7CADD6ABA3EFE"
 				item: "minecraft:lapis_lazuli"
 				type: "item"
 			}]
 			title: "Lapis Lazuli"
-			x: -12.5d
-			y: 0.5d
+			x: -27.071428571428577d
+			y: 1.7142857142857153d
 		}
 		{
 			dependencies: ["6E7A08C1A597A773"]
@@ -45,8 +44,8 @@
 				title: "Compat"
 				type: "checkmark"
 			}]
-			x: -10.0d
-			y: 2.0d
+			x: -15.92857142857143d
+			y: 5.285714285714285d
 		}
 		{
 			dependencies: ["3264DFDEFE1F1405"]
@@ -64,8 +63,8 @@
 				type: "item"
 			}]
 			title: "Lapis Block"
-			x: -9.0d
-			y: 1.0d
+			x: -12.642857142857139d
+			y: 3.7142857142857153d
 		}
 		{
 			dependencies: ["42B54B555EC4FA88"]
@@ -77,8 +76,8 @@
 				title: "Press"
 				type: "checkmark"
 			}]
-			x: -8.0d
-			y: 0.5d
+			x: -9.642857142857139d
+			y: 1.1428571428571388d
 		}
 		{
 			disable_toast: true
@@ -90,8 +89,8 @@
 				title: "Fiuld Experience"
 				type: "checkmark"
 			}]
-			x: -6.5d
-			y: -3.5d
+			x: -4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -106,10 +105,11 @@
 				title: "Fill"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: 1.0d
+			x: -0.5d
+			y: 5.0d
 		}
 		{
+			dependencies: ["29CA4C846BC2E898"]
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "7DB92A8D55E693A0"
@@ -124,14 +124,11 @@
 				type: "item"
 			}]
 			title: "Mechanism Part"
-			x: -3.0d
-			y: -2.0d
+			x: 6.071428571428569d
+			y: -1.0d
 		}
 		{
-			dependencies: [
-				"7DB92A8D55E693A0"
-				"29CA4C846BC2E898"
-			]
+			dependencies: ["7DB92A8D55E693A0"]
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "031DF244D321E171"
@@ -146,8 +143,8 @@
 				type: "item"
 			}]
 			title: "Enchanted Mechanism"
-			x: -1.0d
-			y: 0.0d
+			x: 13.92857142857143d
+			y: 2.4285714285714164d
 		}
 	]
 	title: "Enchanted"

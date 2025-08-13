@@ -25,6 +25,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "6C62EA861E609548"
 				item: {
@@ -51,6 +52,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "1316954E83A06660"
 				item: {
@@ -72,6 +74,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "07E74FB0730F6F2A"
+			size: 1.0d
 			tasks: [{
 				id: "75FA176DB4C6E19E"
 				title: "plank"
@@ -91,6 +94,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "1F2BEF434633AB22"
 				item: {
@@ -112,6 +116,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "77DE8AABD50A1BA5"
+			size: 1.0d
 			tasks: [{
 				id: "060FA62D17060F9B"
 				title: "plank"
@@ -131,6 +136,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "68EEF073ECE5A02E"
 				item: "cmi:basic_mechanism_part"
@@ -150,6 +156,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "7553903DD79BD984"
 				item: "cmi:wooden_mechanism"

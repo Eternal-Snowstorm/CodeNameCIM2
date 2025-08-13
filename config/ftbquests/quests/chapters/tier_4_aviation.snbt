@@ -24,7 +24,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "78484BCB4587B75A"
 				item: "ad_astra:calorite_ingot"
@@ -38,7 +37,6 @@
 			dependencies: ["71E4BA6D8BA12C05"]
 			hide_dependent_lines: true
 			id: "2E241F8B79CE9FA8"
-			size: 1.5d
 			tasks: [{
 				id: "7B12DD0A3FB9A489"
 				title: "Press"
@@ -56,7 +54,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "55B60934F36000A9"
 				item: "cmi:computer_component"
@@ -75,7 +72,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "339B52F94E13FB7C"
 				item: "ad_astra:calorite_plate"
@@ -97,7 +93,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "24ADB16EE9C2BC31"
 				item: "ad_astra:ostrum_fluid_pipe"
@@ -115,7 +110,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "432839804937BA04"
 				item: "create:fluid_pipe"
@@ -134,7 +128,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "4C8332F3032374C1"
 				item: "ad_astra:ostrum_plate"
@@ -152,7 +145,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "108699EF5DDD9C40"
 				item: {
@@ -173,7 +165,6 @@
 			]
 			hide_dependent_lines: true
 			id: "5C039154C09FFD89"
-			size: 1.5d
 			tasks: [{
 				id: "277420A16DCA581F"
 				title: "Deploy"
@@ -194,7 +185,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "591579B0A6CE39A8"
 				item: "ad_astra:ostrum_tank"
@@ -213,7 +203,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "781C97502EDAE007"
 				item: "cmi:space_mechanism_part"
@@ -232,7 +221,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "41EA670BB1072F00"
 				item: "cmi:tier_4_aviation_mechanism"
