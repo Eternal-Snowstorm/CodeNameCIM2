@@ -48,13 +48,12 @@ StartupEvents.registry("item", (event) => {
 		.maxDamage(128)
 		.unstackable()
 		.tag("forge:tools")
-		
+
 	// addItem("handheld_crafting_table")
 	// 	.texture(`${global.namespace}:item/tool/handheld_crafting_table`)
 	// 	.maxStackSize(1)
 	// 	.use((level, player, hand) => {
 	// 		if (!level.isClientSide()) {
-	// 			// Java 原生 BlockPos
 	// 			let BlockPos = Java.loadClass("net.minecraft.core.BlockPos")
 	// 			let ContainerLevelAccess = Java.loadClass("net.minecraft.world.inventory.ContainerLevelAccess")
 	// 			let CraftingMenu = Java.loadClass("net.minecraft.world.inventory.CraftingMenu")
@@ -66,7 +65,6 @@ StartupEvents.registry("item", (event) => {
 
 	// 			let playerInventory = player.getInventory()
 
-	// 			// 打开 GUI
 	// 			player.openMenu(new $SimpleMenuProvider(
 	// 				new JavaAdapter($SimpleMenuProvider, {
 	// 					getDisplayName() { return Component.translatable("container.crafting") },

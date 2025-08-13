@@ -44,6 +44,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("paxel", "镐尖斧")
 	addItemLanguage("rubber_tree_bark", "橡胶树皮")
 	addItemLanguage("handheld_crafting_table", "手持工作台")
+	addItemLanguage("incomplete_advanced_control_circuit", "高级控制电路(半成品)")
+	addItemLanguage("incomplete_elite_control_circuit", "精英控制电路(半成品)")
+	addItemLanguage("incomplete_ultimate_control_circuit", "终极控制电路(半成品)")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")
@@ -275,6 +278,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("cmi:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 
 	addHeatedLanguage("grilled", "炙烤")
+
+	addMusicDiscLanguage("mechanism", "Mechanism", "DontkillBelalus")
 
 	let amethystEncyclopedia = "紫水晶中流动的微弱力量会试图获取更多的稀有资源"
 	addTConMaterialLanguage(
@@ -577,5 +582,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addAdvancementLanguage(key, title, desc) {
 		event.add(`advancements.${global.namespace}.${key}`, title)
 		event.add(`advancements.${global.namespace}.${key}`, desc)
+	}
+
+	function addMusicDiscLanguage(key, value, author) {
+		event.add(`item.${global.namespace}.${key}`, "音乐唱片")
+		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
 	}
 })
