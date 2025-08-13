@@ -1,11 +1,11 @@
 // 石头转化
 BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 	// 判定是否主手手持精密构件
-	if (event.hand == "OFF_HAND") {
+	if (event.hand === "OFF_HAND") {
 		return
 	}
 	let player = event.getPlayer()
-	if (player == null) {
+	if (player === null) {
 		return
 	}
 	if (event.getItem().is("create:precision_mechanism")) {
@@ -68,12 +68,14 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 				}
 			}
 		}
+		// 使玩家挥动手持物品
+		event.getPlayer().swing()
 		// 给进行操作的玩家播放提示音
 		player.playNotifySound("create:crafter_craft", "voice", 2, 1)
 		// 检测玩家是否创造模式
 		if (event.player.isCreative()) {
 		} else {
-			// 若是生存模式则减少一个铜质构件
+			// 若是生存模式则减少一个精密构件
 			event.getItem().shrink(1)
 		}
 	}

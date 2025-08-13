@@ -1,11 +1,11 @@
 // 石头转化
 BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 	// 判定是否主手手持安山构件
-	if (event.hand == "OFF_HAND") {
+	if (event.hand === "OFF_HAND") {
 		return
 	}
 	let player = event.getPlayer()
-	if (player == null) {
+	if (player === null) {
 		return
 	}
 	if (event.getItem().is("cmi:andesite_mechanism")) {

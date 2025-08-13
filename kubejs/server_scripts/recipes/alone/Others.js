@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs, tconstruct } = event.recipes
+	let { create, createaddition, kubejs, tconstruct } = event.recipes
 
 	create.deploying("minecraft:sculk_sensor", [
 		"minecraft:sculk",
@@ -31,13 +31,77 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/ender_pearl"
 	])
 
-	kubejs.shaped("createaddition:straw", [
-		" AA",
+	kubejs.shaped("3x createaddition:straw", [
 		"A A",
-		" A "
+		"B B",
+		"A A"
 	], {
-		A: "#forge:rods/wooden"
+		A: [
+			"#forge:ingots/copper",
+			"#forge:plates/copper",
+			"#forge:rods/copper",
+
+			"#forge:ingots/tin",
+			"#forge:plates/tin",
+			"#forge:rods/tin",
+
+			"#forge:ingots/bronze",
+			"#forge:plates/bronze",
+			"#forge:rods/bronze",
+
+			"#forge:ingots/iron",
+			"#forge:plates/iron",
+			"#forge:rods/iron",
+
+			"#forge:ingots/brass",
+			"#forge:plates/brass",
+			"#forge:rods/brass"
+		],
+		B: [
+			"minecraft:dried_kelp",
+			"minecraft:sugar_cane",
+			"minecraft:bamboo",
+			"#forge:bones"
+		]
 	})
+
+	kubejs.shaped("3x createaddition:straw", [
+		"ABA",
+		"   ",
+		"ABA"
+	], {
+		A: [
+			"#forge:ingots/copper",
+			"#forge:plates/copper",
+			"#forge:rods/copper",
+
+			"#forge:ingots/tin",
+			"#forge:plates/tin",
+			"#forge:rods/tin",
+
+			"#forge:ingots/bronze",
+			"#forge:plates/bronze",
+			"#forge:rods/bronze",
+
+			"#forge:ingots/iron",
+			"#forge:plates/iron",
+			"#forge:rods/iron",
+
+			"#forge:ingots/brass",
+			"#forge:plates/brass",
+			"#forge:rods/brass"
+		],
+		B: [
+			"minecraft:dried_kelp",
+			"minecraft:sugar_cane",
+			"minecraft:bamboo",
+			"#forge:bones"
+		]
+	})
+
+	createaddition.rolling("3x createaddition:straw",[
+		"minecraft:bamboo"
+	]).id("createaddition:rolling/straw")
 
 	create.mechanical_crafting("81x minecraft:rotten_flesh", [
 		"AAAAAAAAA",
@@ -121,7 +185,7 @@ ServerEvents.recipes((event) => {
 		2: "#forge:rods/wooden"
 	}).id("megatimestop:knife")
 */
-	
+
 	kubejs.shaped("2x minecraft:torch", [
 		"A",
 		"B"

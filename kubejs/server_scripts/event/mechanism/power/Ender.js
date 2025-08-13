@@ -1,9 +1,9 @@
 BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
-	if (event.hand == "OFF_HAND") {
+	if (event.hand === "OFF_HAND") {
 		return
 	}
 	let player = event.getPlayer()
-	if (player == null) {
+	if (player === null) {
 		return
 	}
 	// 确认玩家手持带有NBT的末影构件右键催生器
