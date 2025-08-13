@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["蒸汽(Steam)得了MVP, Epic是躺赢狗"]
+			description: ["蒸汽(Steam)得了MVP"]
 			id: "50BE6EA508B2E833"
 			rewards: [
 				{
@@ -209,7 +209,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "蒸汽动力这一块"
+			subtitle: "引擎可以使用蒸汽驱动产生应力"
 			tasks: [{
 				id: "1AC3B9D062D0BD76"
 				item: "createdieselgenerators:diesel_engine"

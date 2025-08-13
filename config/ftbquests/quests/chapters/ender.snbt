@@ -25,15 +25,14 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "44B18A7460FBE209"
 				item: "create:sturdy_sheet"
 				type: "item"
 			}]
 			title: "Sturdy Sheet"
-			x: -22.5d
-			y: 8.25d
+			x: -22.0d
+			y: 8.357142857142861d
 		}
 		{
 			disable_toast: true
@@ -44,7 +43,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "60EFEB1EB3278F8F"
 				item: "minecraft:chorus_fruit"
@@ -60,7 +58,6 @@
 			hide_dependent_lines: true
 			icon: "thermal:ender_bucket"
 			id: "4A7A67C25D91AF74"
-			size: 1.5d
 			tasks: [{
 				id: "3A4EE6607D4D6F39"
 				title: "Fiuld Ender"
@@ -74,7 +71,6 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "022046E00DDF637F"
-			size: 1.5d
 			tasks: [{
 				id: "524294F995536EDD"
 				title: "Mix"
@@ -88,7 +84,6 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "40E404BCF340AE74"
-			size: 1.5d
 			tasks: [{
 				id: "15BEDC3DC62F64C1"
 				title: "Cast"
@@ -110,7 +105,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "5689B431FE839044"
 				item: "minecraft:ender_pearl"
@@ -130,7 +124,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "514C211F6B74A3CC"
 				item: {
@@ -157,7 +150,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "1666219949FA2B41"
 				item: "cmi:magical_mechanism_part"
@@ -177,7 +169,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "4B8EC46D9B606040"
 				item: "cmi:ender_mechanism"

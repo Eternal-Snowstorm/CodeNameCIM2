@@ -26,7 +26,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "1368628EE6CB7EBD"
 				item: {
@@ -48,7 +48,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3AAF51F4A4924343"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "54FA863085554928"
 				title: "Press"
@@ -62,7 +62,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "110882205EC952C3"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "285195A9136C33FD"
 				title: "Cut"
@@ -81,7 +81,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "0F399D7FA9D291EE"
 				item: {
@@ -108,7 +108,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "691D185FB0AE3BF4"
 				item: "cmi:basic_mechanism_part"
@@ -123,7 +123,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "30F0B84B98781F76"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "6E0E1F1A210104EE"
 				title: "Deploy"
@@ -142,7 +142,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "6B81C23109702052"
 				item: "cmi:iron_mechanism"

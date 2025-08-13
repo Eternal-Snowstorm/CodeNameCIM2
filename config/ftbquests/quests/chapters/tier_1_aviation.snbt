@@ -24,7 +24,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "020BFCEA9D19CADC"
 				item: {
@@ -45,7 +44,6 @@
 			dependencies: ["0962B98D9108782F"]
 			hide_dependent_lines: true
 			id: "763CA072A2A18CCB"
-			size: 1.5d
 			tasks: [{
 				id: "4C8ED45E29675AE2"
 				title: "Press"
@@ -58,7 +56,6 @@
 			dependencies: ["3BB3B864B7E89E8C"]
 			hide_dependent_lines: true
 			id: "5CCB1415C01E7A71"
-			size: 1.5d
 			tasks: [{
 				id: "7AC59FC2F8C3D795"
 				title: "Craft"
@@ -76,7 +73,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "2706BC120A34BAC4"
 				item: "cmi:computer_component"
@@ -94,7 +90,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "07750311722E46F1"
 				item: {
@@ -120,7 +115,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "1360A3ED04FCF5DF"
 				item: {
@@ -149,7 +143,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "7A80387B61AB2B3F"
 				item: "thermal:cured_rubber"
@@ -165,7 +158,6 @@
 				"67CECC63231A4769"
 			]
 			id: "4FD621DD5AADFC77"
-			size: 1.5d
 			tasks: [{
 				id: "4B60C978260BBB42"
 				title: "Mix and Cast"
@@ -218,7 +210,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "167C178F2EBCBD30"
 				item: "ad_astra:steel_cable"
@@ -307,7 +298,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.5d
 			tasks: [{
 				id: "2D87081FFA8A1400"
 				item: "ad_astra:steel_tank"
@@ -321,7 +311,6 @@
 			dependencies: ["2D279FB9E90A462F"]
 			hide_dependent_lines: true
 			id: "2366DE1FBFBFDFE9"
-			size: 1.5d
 			tasks: [{
 				id: "543104918EDB08CD"
 				item: "cmi:space_mechanism_part"
@@ -335,7 +324,6 @@
 			dependencies: ["2366DE1FBFBFDFE9"]
 			hide_dependent_lines: true
 			id: "16DD79B7DD71D0AC"
-			size: 1.5d
 			tasks: [{
 				id: "3C69D1F1229C4CCD"
 				item: "cmi:tier_1_aviation_mechanism"
