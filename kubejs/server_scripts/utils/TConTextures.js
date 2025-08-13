@@ -33,14 +33,14 @@ addTConTexture(
 )
 addTConTexture(
     "cast_iron",
-    "4D4D4D",
-    "FF757171",
-    "FF676161",
-    "FF444444",
-    "FF494848",
-    "FF3F3E42",
-    "FF353438",
-    "FF2B2B2E"
+    "4C4C4C",
+    "FF4C4C4C",
+    "FF3C3C3C",
+    "FF343434",
+    "FF2B2B2B",
+    "FF232323",
+    "FF1A1A1A",
+    "FF131313"
 )
 addTConTexture(
     "stainless_steel",
