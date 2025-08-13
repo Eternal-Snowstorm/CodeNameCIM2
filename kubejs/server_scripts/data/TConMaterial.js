@@ -216,7 +216,7 @@ ServerEvents.highPriorityData((event) => {
 	// 暗影钢
 	addTConMaterial(event, `${global.namespace}:shadow_steel`, (builder) => {
 		builder.visibility(4, false)
-			.craftable(false)
+			.craftable(true)
 			.sortOrder(7)
 			.head(1420, 5, 6, "minecraft:netherite")
 			.binding()
@@ -234,7 +234,7 @@ ServerEvents.highPriorityData((event) => {
 	// 光辉石
 	addTConMaterial(event, `${global.namespace}:refined_radiance`, (builder) => {
 		builder.visibility(4, false)
-			.craftable(false)
+			.craftable(true)
 			.sortOrder(7)
 			.head(1380, 7, 6.5, "minecraft:netherite")
 			.binding()
