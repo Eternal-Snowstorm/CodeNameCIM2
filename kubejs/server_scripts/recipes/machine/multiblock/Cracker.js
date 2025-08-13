@@ -65,7 +65,7 @@ MMEvents.createProcesses((event) => {
 			ingredient: {
 				type: "mm:fluid",
 				fluid: "mekanism:ethene",
-				amount: global.BUCKET_CAPACITY * 2
+				amount: global.BUCKET_CAPACITY * 5
 			}
 		})
 })

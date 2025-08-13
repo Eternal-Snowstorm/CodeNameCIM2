@@ -21,3 +21,8 @@ new Schema("thermal_extra:endothermic_dehydrator")
 new Schema("thermal_extra:cold_fuel")
 	.simpleKey("ingredient", "inputItem")
 	.simpleKey("energy", "intNumber", 100)
+
+new Schema("thermal_extra:nitratic_igniter")
+	.simpleKey("result", "outputItemArray")
+	.simpleKey("ingredients", "inputItemArray")
+	.simpleKey("energy", "intNumber", 100)

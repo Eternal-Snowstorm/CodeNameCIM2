@@ -3,25 +3,25 @@ ServerEvents.recipes((event) => {
 
 	// 蒸馏
 	createdieselgenerators.distillation([
-		Fluid.of("cmi:molten_bitumen", 100),
-		Fluid.of("thermal:heavy_oil", 100),
-		Fluid.of("cmi:lubricating_oil", 100),
-		Fluid.of("createdieselgenerators:diesel", 100),
-		Fluid.of("cmi:kerosene", 100),
-		Fluid.of("cmi:naphtha", 100)
-	], Fluid.of("ad_astra:oil", 1000))
+		Fluid.of("cmi:molten_bitumen", 500),
+		Fluid.of("thermal:heavy_oil", 500),
+		Fluid.of("cmi:lubricating_oil", 500),
+		Fluid.of("createdieselgenerators:diesel", 500),
+		Fluid.of("cmi:kerosene", 500),
+		Fluid.of("cmi:naphtha", 500)
+	], Fluid.of("ad_astra:oil", global.BUCKET_CAPACITY * 2))
 		.heatRequirement("heated")
 		.id("createdieselgenerators:distillation/crude_oil")
 
 	// 蒸馏
 	createdieselgenerators.distillation([
-		Fluid.of("cmi:molten_bitumen", 100),
-		Fluid.of("thermal:heavy_oil", 100),
-		Fluid.of("cmi:lubricating_oil", 100),
-		Fluid.of("createdieselgenerators:diesel", 100),
-		Fluid.of("cmi:kerosene", 100),
-		Fluid.of("cmi:naphtha", 100)
-	], Fluid.of("thermal:crude_oil", 1000))
+		Fluid.of("cmi:molten_bitumen", 500),
+		Fluid.of("thermal:heavy_oil", 500),
+		Fluid.of("cmi:lubricating_oil", 500),
+		Fluid.of("createdieselgenerators:diesel", 500),
+		Fluid.of("cmi:kerosene", 500),
+		Fluid.of("cmi:naphtha", 500)
+	], Fluid.of("thermal:crude_oil", global.BUCKET_CAPACITY * 2))
 		.heatRequirement("heated")
 		.id("createdieselgenerators:distillation/crude_oil2")
 
@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("createdieselgenerators:diesel", 100),
 		Fluid.of("cmi:kerosene", 100),
 		Fluid.of("cmi:naphtha", 100)
-	], Fluid.of("createdieselgenerators:crude_oil", 1000))
+	], Fluid.of("createdieselgenerators:crude_oil", global.BUCKET_CAPACITY))
 		.heatRequirement("heated")
 		.id("createdieselgenerators:distillation/crude_oil3")
 
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
 	thermal.chiller("thermal:bitumen", [
 		Fluid.of("cmi:molten_bitumen", 250)
 	]).energy(2000)
-	
+
 	tconstruct.casting_table("thermal:bitumen")
 		.fluid(Fluid.of("cmi:molten_bitumen", 250))
 		.cooling_time(20)

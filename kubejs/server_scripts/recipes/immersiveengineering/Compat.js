@@ -15,12 +15,12 @@ ServerEvents.recipes((event) => {
 				"amount": 1000
 			}
 		],
-	"result_fluids": [
-		{
-			"fluid": "thermal_extra:polyolefin",
-			"amount": 500
-		},
-	],
+		"result_fluids": [
+			{
+				"fluid": "thermal_extra:polyolefin",
+				"amount": 500
+			},
+		],
 		"time": 200
 	})
 })

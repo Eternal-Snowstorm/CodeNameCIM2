@@ -31,6 +31,7 @@
 	"message.cmi.initial_item_kit": "欢迎游玩整合包! 物品已发放!",
 	"display.cmi.nether_crops": "§c下界作物只能种植在位于下界的下界农田方块上!",
 	"gui.create.jei.category.basin.heat.grilled.title": "木炭块和煤炭块上方的火焰可以无限燃烧",
+	"gui.cmi.handheld_crafting_table": "手持工作台",
 	"item.cmi.paxel.description": "镐尖斧是一种多功能采掘工具, 适用于挖掘各种方块, 但对岩石和木头效果最好\n村民肯定不喜欢这个",
 	"message.cmi.modrinth_warning0": "你正在游玩从Modrinth渠道下载的CMI",
 	"message.cmi.modrinth_warning1": "因Modrinth的政策限制, 本版本删除了部分内容, 可能造成如无法多人游戏、无法进入服务器等问题\n您可以通过下方按钮在CurseForge或BBSMC下载本整合包游玩完整内容"

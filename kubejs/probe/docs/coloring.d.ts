@@ -2,7 +2,7 @@ export interface Coloring {
 	[material: string]: number
 }
 
-const materialColor: Coloring = {
+const MATERIALS_COLOR: Coloring = {
 	rubber: 0xE0D8B8,
 	cast_iron: 0x4D4D4D,
 	andesite_alloy: 0xA9AFA1,

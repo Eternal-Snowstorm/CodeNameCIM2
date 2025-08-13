@@ -66,6 +66,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("immersiveengineering:creosote", 1000)
 	])
 
+	// 魔力部件
 	create.filling("4x cmi:magical_mechanism_part", [
 		Fluid.of("create_enchantment_industry:hyper_experience", 10),
 		"cmi:basic_mechanism_part"
@@ -75,6 +76,7 @@ ServerEvents.recipes((event) => {
 		"cmi:basic_mechanism_part"
 	])
 
+	// 安山岩粉
 	create.milling([
 		"2x cmi:andesite_dust",
 		Item.of("cmi:andesite_dust", 2).withChance(0.5)
@@ -84,9 +86,68 @@ ServerEvents.recipes((event) => {
 		"#create:stone_types/andesite"
 	])
 
+	// 安山混合物
 	create.mixing("4x cmi:andesite_aggregate", [
 		Fluid.of("minecraft:water", 250),
 		"#forge:dusts/andesite",
 		"#forge:clay"
 	])
+
+	// 反物质
+	vintageimprovements.curving("mekanism:pellet_antimatter", [
+		"#forge:ingots/plasma"
+	]).itemAsHead("mekanism:pellet_antimatter")
+
+	vintageimprovements.pressurizing([
+		"mekanism:pellet_polonium",
+		Fluid.of("cmi:steam", 200)
+	], [
+		Fluid.of("mekanism:uranium_hexafluoride", 200),
+		Fluid.of("minecraft:water", 200),
+		"mekanism:dust_fluorite"
+	]).processingTime(80)
+
+	// 钚
+	vintageimprovements.curving("mekanism:pellet_plutonium",[
+		"mekanism:pellet_polonium"
+	]).itemAsHead("mekanism:pellet_plutonium")
+
+	const GET_BRASS_PLATE_ITEM = getFirstItemId("#forge:plates/brass")
+
+	// 黄铜漏斗
+	create.sequenced_assembly("12x create:brass_funnel", [
+		"#forge:plates/brass"
+	], [
+		create.cutting(GET_BRASS_PLATE_ITEM, [
+			GET_BRASS_PLATE_ITEM
+		]),
+		create.deploying(GET_BRASS_PLATE_ITEM, [
+			GET_BRASS_PLATE_ITEM,
+			"minecraft:dried_kelp"
+		]),
+		create.deploying(GET_BRASS_PLATE_ITEM, [
+			GET_BRASS_PLATE_ITEM,
+			"create:precision_mechanism"
+		]),
+		create.deploying(GET_BRASS_PLATE_ITEM, [
+			GET_BRASS_PLATE_ITEM,
+			"#forge:plates/brass"
+		])
+	]).loops(1).transitionalItem(GET_BRASS_PLATE_ITEM)
+
+	create.sequenced_assembly("6x create:brass_funnel", [
+		"#forge:plates/brass"
+	], [
+		create.cutting("create:brass_casing", [
+			"create:brass_casing"
+		]),
+		create.deploying("create:brass_casing", [
+			"create:brass_casing",
+			"create:precision_mechanism"
+		]),
+		create.deploying("create:brass_casing", [
+			"create:brass_casing",
+			"forge:glass"
+		])
+	]).loops(1).transitionalItem("create:brass_casing")
 })

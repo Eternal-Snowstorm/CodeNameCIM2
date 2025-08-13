@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { thermal } = event.recipes
+	let { thermal, thermal_extra } = event.recipes
 
 	thermal.centrifuge([
 		"6x cmi:platinum_shard",
@@ -15,4 +15,12 @@ ServerEvents.recipes((event) => {
 	thermal.rock_gen("minecraft:andesite")
 		.below("create:andesite_alloy_block")
 		.adjacent("minecraft:water")
+
+	// 爆裂
+	thermal_extra.nitratic_igniter([
+		"cmi:blackstone_sourse_alpha",
+		"cmi:blackstone_sourse_beta",
+		"cmi:blackstone_sourse_gamma"
+	], "#forge:blackstone")
+		.energy(2000)
 })

@@ -14,41 +14,46 @@ ItemEvents.rightClicked("cmi:geological_hammer", (event) => {
 
 PlayerEvents.chat((event) => {
 	let { player, message } = event
+	message = message.trim()
 
-	for (let i = 0; i < global.debugUserName.length; i++) {
-		// 输入-kf获得[夜视 力量 抗性]buff
-		if (message.trim().equalsIgnoreCase("-kf") && player.username === global.debugUserName[i]) {
+	// 只允许调试用户使用
+	if (!global.debugUserName.includes(player.username)) {
+		return
+	}
+
+	// 命令映射表
+	let commands = {
+		"-kf": () => {
 			player.runCommandSilent("effect give @s minecraft:night_vision infinite 255 true")
 			player.runCommandSilent("effect give @s minecraft:strength infinite 255 true")
 			player.runCommandSilent("effect give @s minecraft:resistance infinite 255 true")
-			event.cancel()
-		}
-
-		// 输入-efc清除自身所有buff
-		if (message.trim().equalsIgnoreCase("-efc") && player.username === global.debugUserName[i]) {
+		},
+		"-efc": () => {
 			player.runCommandSilent("effect clear")
-			event.cancel()
-		}
-
-		// 重载(这个重载不能用于配方和Tags等数据包脚本)
-		let commandList = [
-			"client_scripts",
-			"config",
-			"lang",
-			"server_scripts",
-			"startup_scripts",
-			"textures",
-		]
-		if (message.trim().equalsIgnoreCase("-re") && player.username === global.debugUserName[i]) {
+		},
+		"-re": () => {
+			let commandList = [
+				"client_scripts",
+				"config",
+				"lang",
+				"server_scripts",
+				"startup_scripts",
+				"textures"
+			]
 			commandList.forEach((command) => {
 				player.runCommandSilent(`kjs reload ${command}`)
 			})
-			// Reloaded All Scripts!
 			player.tell(Component.translate(`message.${global.namespace}.reload`).green())
-			event.cancel()
 		}
 	}
+
+	// 执行对应命令
+	if (commands[message?.toLowerCase()]) {
+		commands[message.toLowerCase()]()
+		event.cancel()
+	}
 })
+
 
 PlayerEvents.loggedIn((event) => {
 	let { player } = event

@@ -22,5 +22,13 @@
 				"stream": true
 			}
 		]
+	},
+	"record.mechanism": {
+		"sounds": [
+			{
+				"name": "cmi:music/record/mechanism",
+				"stream": true
+			}
+		]
 	}
 }
