@@ -2,7 +2,7 @@
 
 let $LocalDateTime = Java.loadClass("java.time.LocalDateTime")
 
-ClientEvents.init((event) => {
+StartupEvents.postInit((event) => {
 	let month = $LocalDateTime.now().getMonthValue()
 	let day = $LocalDateTime.now().getDayOfMonth()
 
