@@ -1,0 +1,9 @@
+{
+	"ctm": {
+		"ctm_version": 1,
+		"type": "ctm",
+		"textures": [
+			"immersiveengineering:block/stone_decoration/alloybrick_ctm"
+		]
+	}
+}
