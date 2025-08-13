@@ -184,7 +184,7 @@ ServerEvents.highPriorityData((event) => {
 			.platingShield(1420, 0, 4)
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:heavy", 1)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:smelting", 1)
+					.addTrait("tconstruct:melee_harvest", "tconstruct:flamestance", 1)
 					.addTrait("tconstruct:ranged", "tconstruct:flamestance", 1)
 			})
 	})
