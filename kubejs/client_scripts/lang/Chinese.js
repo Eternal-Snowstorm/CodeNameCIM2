@@ -58,6 +58,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("enrichment_treated_processor", "经富集处理的运算处理器")
 	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")
 	addItemLanguage("mekanism_processor", "通用处理器")
+	addItemLanguage("music_disc_mechanism", "DontkillBelalus - Mechanism")
 
 	addCastItemLanguage("mechanism", "构件")
 	addCastItemLanguage("nugget", "粒")
@@ -243,7 +244,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("#cmi:special_ores", "该矿石只能在蒸汽矿石处理机内处理")
 	addCommonTooltipLanguage("#cmi:multiblock_machine_controller", "制作多方块接口时不消耗")
 	addCommonTooltipLanguage("cmi:stone_plate", "把字刻在石头上")
-	addCommonTooltipLanguage("cmi:cast_iron", "这种材料不够坚固，辊压加工时可能会损坏！")
+	addCommonTooltipLanguage("cmi:cast_iron_ingot", "这种材料不够坚固，辊压加工时可能会损坏！")
 
 	addJEIInfoLanguage("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量职务胶乳")
 	addJEIInfoLanguage("mm:large_steam_boiler", "需要燃烧焦煤或钻石才能释放足够的热能来产生蒸汽\n不同于远在泛银河系的格雷科技有限公司, 我们的锅炉非常非常安全, 永远不会爆炸(笑)")
