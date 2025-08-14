@@ -86,4 +86,22 @@ StartupEvents.registry("block", (event) => {
 		.resistance(5)
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock("create:wrench_pickup")
+
+	// 陨石外壳
+	addBlock("sky_stone_casing")
+		.textureAll(`${global.namespace}:block/casing/ae2/smart`)
+		.soundType(SoundType.METAL)
+		.hardness(5)
+		.resistance(5)
+		.tagBlock(global.toolType["pickaxe"])
+		.tagBlock("create:wrench_pickup")
+
+	// 高级计算外壳
+	addBlock("computing_casing")
+		.textureAll(`${global.namespace}:block/casing/ae2/computing_top`)
+		.soundType(SoundType.METAL)
+		.hardness(5)
+		.resistance(5)
+		.tagBlock(global.toolType["pickaxe"])
+		.tagBlock("create:wrench_pickup")
 })

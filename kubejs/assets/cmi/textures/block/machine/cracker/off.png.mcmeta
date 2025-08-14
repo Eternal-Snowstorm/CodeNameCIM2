@@ -1,14 +1,7 @@
-{
-  "animation": {
-    "interpolate": true,
-    "frametime": 10
-  }
-
-
-"ctm":{"ctm_version":1,
+{"ctm":{"ctm_version":1,
 "type":"CTM",
 "layer":"SOLID",
-"textures":["cmi:block/machine/cracker/on_ctm"],
+"textures":["cmi:block/machine/cracker/off_ctm"],
 "extra":{"connect_to":[
 {"block":"cmi:pressure_resistance_casing"},
 {"block":"mm:cracker_energy_input"},
@@ -17,8 +10,4 @@
 {"block":"mm:cracker_item_output"},
 {"block":"mm:cracker_fluid_input"},
 {"block":"mm:cracker_fluid_output"}
-]}}
-
-
-
-}
+]}}}

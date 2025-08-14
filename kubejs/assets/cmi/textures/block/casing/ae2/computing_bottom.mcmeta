@@ -1,0 +1,9 @@
+{
+	"ctm": {
+		"ctm_version": 1,
+		"type": "ctm",
+		"textures": [
+			"cmi:block_casing/ae2/computing_bottom_ctm"
+		]
+	}
+}
