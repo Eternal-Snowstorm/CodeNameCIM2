@@ -10,7 +10,6 @@ Ponder.registry((event) => {
 		scene.showBasePlate()
 		scene.idle(20)
 
-		scene.world.showSection([5, 1, 0], Direction.DOWN)
 		scene.world.showSection([1, 1, 2, 3, 4, 4], Direction.DOWN)
 		scene.idle(20)
 
@@ -19,6 +18,7 @@ Ponder.registry((event) => {
 		scene.idle(20)
 
 		scene.world.showSection([2, 1, 1, 2, 4, 1], Direction.SOUTH)
+		scene.world.showSection([5, 1, 0, 5, 2, 0], Direction.SOUTH)
 		scene.idle(20)
 
 		// 同时必须提供能量
@@ -40,11 +40,11 @@ Ponder.registry((event) => {
 		scene.addKeyframe()
 		scene.rotateCameraY(90)
 		scene.idle(20)
-		scene.world.showSection([4, 1, 0, 5, 2, 5], Direction.WEST)
+		scene.world.showSection([4, 1, 3], Direction.WEST)
 
-		// 焦炭煤可以输入燃烧室
+		// 焦炭可以输入燃烧室
 		scene.text(40, "Coke coal can insert to the burners", [4.5, 1.5, 3.5])
-		let coalCokeItem = scene.world.createItemEntity([4.5, 3, 3.5], Direction.DOWN, "immersiveengineering:coal_coke")
+		let coalCokeItem = scene.world.createItemEntity([4.5, 3, 3.5], Direction.DOWN, "thermal:coal_coke")
 		scene.idle(9)
 		scene.world.removeEntity(coalCokeItem)
 		scene.idle(40)

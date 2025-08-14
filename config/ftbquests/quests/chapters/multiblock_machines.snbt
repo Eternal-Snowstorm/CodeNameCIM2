@@ -7,20 +7,231 @@
 	id: "55DB869A8FA3F0F0"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "12FC76D11FA11F6C"
-		rewards: [{
-			id: "4CA9749FB40B4FFF"
-			type: "xp"
-			xp: 10
-		}]
-		tasks: [{
-			id: "572E1E4C3C04EB9F"
-			title: "该章节主要是介绍一些多方块"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.5d
-	}]
+	quests: [
+		{
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "12FC76D11FA11F6C"
+			rewards: [{
+				id: "4CA9749FB40B4FFF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "572E1E4C3C04EB9F"
+					title: "该章节主要是介绍一些多方块"
+					type: "checkmark"
+				}
+				{
+					id: "38C3CFB07EFDB078"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["12FC76D11FA11F6C"]
+			description: [
+				"合金窑的GUI内有两个输入槽, 一个输出槽以及一个燃料槽"
+				"按照JEI的指示将原材料放到输入槽内再加入燃料就可以生产合金"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:alloy_smelter"
+			id: "3BAE16C094B8B971"
+			rewards: [
+				{
+					id: "2B18081CAC4060FA"
+					item: "immersiveengineering:alloy_smelter"
+					type: "item"
+				}
+				{
+					id: "0900E62766F92B77"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "一种可以把两种金属制作成合金的炉子"
+			tasks: [{
+				count: 8L
+				id: "5063757A7CCC6C03"
+				item: "immersiveengineering:alloybrick"
+				type: "item"
+			}]
+			title: "合金窑"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12FC76D11FA11F6C"]
+			description: ["高炉在这个世界只可以用来将石灰石烧至生石灰去增加黏土产量"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:blast_furnace"
+			id: "109F54D40BDCBA7B"
+			rewards: [
+				{
+					id: "6E5137EC176DE8D4"
+					item: "immersiveengineering:blast_furnace"
+					type: "item"
+				}
+				{
+					id: "1DDCD4B08C10BB8B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "这个炉子在这个世界用处不大..."
+			tasks: [{
+				count: 27L
+				id: "67AC2C34D76AB5C2"
+				item: { Count: 27, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			title: "高炉"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12FC76D11FA11F6C"]
+			description: ["强化高炉是处理速度更快的高炉, 但是需要接入通电的预热器"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "4B8CF122EFBB9276"
+			rewards: [
+				{
+					id: "27971DBF189F66EA"
+					item: "immersiveengineering:advanced_blast_furnace"
+					type: "item"
+				}
+				{
+					id: "4CB1B833315B0ED9"
+					item: "immersiveengineering:blastfurnace_preheater"
+					type: "item"
+				}
+				{
+					id: "0F84B58493E47D74"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "更快..."
+			tasks: [
+				{
+					count: 27L
+					id: "2D264498F41D325B"
+					item: { Count: 27, id: "immersiveengineering:blastbrick_reinforced" }
+					type: "item"
+				}
+				{
+					id: "53FE366914C5CBC1"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "7A2CA760B5E932A6"
+					item: "immersiveengineering:blastfurnace_preheater"
+					type: "item"
+				}
+			]
+			title: "强化高炉"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12FC76D11FA11F6C"]
+			description: ["焦炉可以将木头烧成木炭, 木炭或煤炭可以继续烧成焦炭, 同时会产生在产线中必不可少的杂酚油, 并且杂酚油也是一种上好的燃料, 不管是拿去发电还是做成木屑块都是不错的选择"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:coke_oven"
+			id: "608BB60FF9CD8A31"
+			rewards: [
+				{
+					id: "5FF0BEB3B746DB92"
+					item: "immersiveengineering:coke_oven"
+					type: "item"
+				}
+				{
+					id: "12C082BDD93D5A86"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "生产杂酚油"
+			tasks: [{
+				count: 27L
+				id: "7B97DD7257398390"
+				item: { Count: 27, id: "immersiveengineering:cokebrick" }
+				type: "item"
+			}]
+			title: "焦炉"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12FC76D11FA11F6C"]
+			description: [
+				"炼钢坩埚用于将铸铁与合金剂高温冶炼成钢锭, 将原料投入输入槽并加入足量燃料即可开始冶炼"
+				"在生产过程中会持续消耗燃料并积蓄高温"
+				""
+				"在工作时需要预热器将锅内温度提上去, 并且只能使用焦炭作为燃料"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveindustry:crucible"
+			id: "568EA16355A2E7E6"
+			rewards: [
+				{
+					id: "7D04863DA6F96764"
+					item: "immersiveindustry:crucible"
+					type: "item"
+				}
+				{
+					id: "358A82FC7613B601"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "炼钢的基础"
+			tasks: [
+				{
+					count: 13L
+					id: "586B18FD113E03BF"
+					item: { Count: 13, id: "cmi:crucible_base" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0111CF460F8FC9DD"
+					item: { Count: 4, id: "immersiveindustry:burning_chamber" }
+					type: "item"
+				}
+				{
+					id: "22FDB10800F9329A"
+					item: "cmi:crucible_tuyere"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "630A9F4992822995"
+					item: { Count: 16, id: "immersiveengineering:blastbrick" }
+					type: "item"
+				}
+			]
+			title: "炼钢坩埚"
+			x: 5.5d
+			y: -0.5d
+		}
+	]
 	title: "多方块机器"
 }

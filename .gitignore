@@ -92,4 +92,4 @@ XaeroWaypoints*
 !/config/ding.toml
 !/config/supplementaries-common.toml
 !/config/jeiintegration-client.toml
-!/config/starterstructure
+!/config/starterstructure*

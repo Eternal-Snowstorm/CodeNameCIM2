@@ -1,9 +1,10 @@
 ServerEvents.recipes((event) => {
-	let { create, mekanism, vintageimprovements } = event.recipes
+	let { create, vintageimprovements } = event.recipes
 
+	// 熔融安山合金
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
 		"minecraft:andesite",
-		Fluid.of("tconstruct:molten_iron", 30)
+		Fluid.of("tconstruct:molten_iron", 10)
 	]).heatLevel("grilled")
 
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
@@ -13,7 +14,7 @@ ServerEvents.recipes((event) => {
 
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
 		"minecraft:andesite",
-		"3x #forge:nuggets/iron"
+		"#forge:nuggets/iron"
 	]).heatLevel("grilled")
 
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
@@ -21,21 +22,21 @@ ServerEvents.recipes((event) => {
 		"#forge:nuggets/zinc"
 	]).heatLevel("grilled")
 
-	//殷钢
+	// 殷钢
 	create.mixing(Fluid.of("tconstruct:molten_invar", 270), [
 		"2x #forge:ingots/iron",
 		"#forge:ingots/nickel"
 	]).heated()
 
-	//末影
+	// 末影
 	create.mixing(Fluid.of("thermal:ender", 1000), [
 		Fluid.of("thermal:ender", 250),
 		"minecraft:chorus_fruit"
 	]).heated()
 
-	//石英纤维
+	// 石英纤维
 	create.mixing("ae2:quartz_fiber", [
-		"ae2:certus_quartz_dust","#forge:glass"
+		"ae2:certus_quartz_dust", "#forge:glass"
 	])
 
 	// 盐水

@@ -149,7 +149,7 @@
 				item: "cmi:andesite_mechanism"
 				type: "item"
 			}]
-			x: 0.25d
+			x: 0.5d
 			y: 3.5d
 		}
 		{
@@ -160,8 +160,8 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: -0.5d
+			y: 5.5d
 		}
 		{
 			id: "3DA43BDED8E5ECDC"
@@ -225,7 +225,7 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: 6.0d
 		}
 		{
@@ -422,29 +422,11 @@
 			description: ["我想你已经有一个合适的定居点了"]
 			icon: "create:goggles"
 			id: "76463379A8192794"
-			rewards: [
-				{
-					id: "170FC30278F87194"
-					item: "create:wrench"
-					type: "item"
-				}
-				{
-					id: "614D69CA9C6EB276"
-					item: "create:goggles"
-					type: "item"
-				}
-				{
-					id: "53F728CCBBEDD8B2"
-					item: {
-						Count: 1
-						id: "create:super_glue"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "7B218E8506EA4B10"
+				item: "cmi:initial_item_kit"
+				type: "item"
+			}]
 			size: 2.0d
 			subtitle: "勇敢去做"
 			tasks: [{
@@ -463,8 +445,8 @@
 				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.0d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["09892B803004AA1D"]

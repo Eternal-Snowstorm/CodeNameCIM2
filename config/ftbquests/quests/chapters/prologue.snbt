@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["如任务所示, 这是一个做构件的科技整合包, 你只需要关注你的产线就好了"]
 			disable_toast: true
 			icon: "cmi:wooden_mechanism"
 			id: "21ED583750523195"
@@ -25,18 +26,35 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
 			size: 1.8d
+			subtitle: "哈哈你坠机啦"
 			tasks: [{
 				id: "22D0220F20C29089"
 				type: "checkmark"
 			}]
-			title: "构件世界"
+			title: "关于整合包"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
+			description: [
+				"思索(Ponder)是伟大的工程师&bSimibubi&r发明出来用于传递知识的仪式——直观的演示胜于千言万语"
+				"我把我所知道的经验都编织为了思索, 当你&e对着某些物品按住[W]&r时, 你就能和仪式建立连接"
+				""
+				"JEI则是上个时代流传下来的一种仪式, 它用于传递那些有关繁杂配方的知识. 你可以&e对着物品使用[R]和[U]&r来与仪式建立连接. &c当然, 并非所有配方都能在JEI中看到&r"
+				""
+				"而任务, 也就是你现在看到的东西, 则可以让我为你提供帮助"
+				""
+				"我基于任务, 思索和JEI编写了这一套仪式, 我将其命名为&e构件与革新&r. 我相信它可以帮助每一个像你这样流浪到这里的旅人"
+				""
+				"&a当然, 它的内容并不完全, 我也不可能事无巨细地把所有的细节都教给你, 你总是需要自己去探索那些大量的, 并不在仪式说明中的内容&r"
+				""
+				"{image:cmi:textures/images/slime_authorization.png width:144 height:45 align:center}"
+				"&b文案来自黄铜协奏曲, 已经过原作者授权"
+			]
 			disable_toast: true
-			icon: "ad_astra:earth_globe"
+			icon: "create:empty_schematic"
 			id: "1EA33F05E5B01612"
 			rewards: [{
 				count: 16
@@ -44,16 +62,18 @@
 				item: "minecraft:cooked_beef"
 				type: "item"
 			}]
+			shape: "hexagon"
+			subtitle: "这些是辅助你通关的工具"
 			tasks: [{
 				id: "6D6250EF55DF25ED"
 				type: "checkmark"
 			}]
-			title: "整合包"
+			title: "关于思索, 任务和JEI"
 			x: -3.0d
 			y: 0.0d
 		}
 		{
-			description: ["Completely Peaceful friendly"]
+			description: [""]
 			disable_toast: true
 			icon: "create:wrench"
 			id: "16E08617F49E62A9"
@@ -70,6 +90,8 @@
 					type: "item"
 				}
 			]
+			shape: "hexagon"
+			subtitle: "完全和平且友好"
 			tasks: [{
 				id: "2F9F7E1BE7866A66"
 				type: "checkmark"
@@ -95,13 +117,14 @@
 					type: "item"
 				}
 			]
-			subtitle: "Now : Beta 2.0.1"
+			shape: "hexagon"
+			subtitle: "当前版本: Beta-2.1.0"
 			tasks: [{
 				id: "79D5B1959C780861"
 				type: "checkmark"
 			}]
-			title: "Pre release"
-			x: 1.0d
+			title: "测试发行版"
+			x: 1.5d
 			y: -2.5d
 		}
 		{
@@ -134,11 +157,13 @@
 					type: "item"
 				}
 			]
+			shape: "hexagon"
+			subtitle: "整合包开发团队"
 			tasks: [{
 				id: "4AC9E70B5E11919B"
 				type: "checkmark"
 			}]
-			title: "Dev Team"
+			title: "CMI Dev Team"
 			x: 3.0d
 			y: 0.0d
 		}
@@ -154,6 +179,7 @@
 				item: "farmersdelight:steak_and_potatoes"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "3BA7D8532D8DD772"
 				title: "关于任务线"
@@ -161,6 +187,316 @@
 			}]
 			x: -1.5d
 			y: 2.5d
+		}
+		{
+			description: [
+				"整合包内哪怕是和平模式也可以正常游玩, 不影响流程"
+				"不过整合包内同时配备匠魂, 你如果是个匠魂高手也可以去打造一把一刀114514的武器去战斗爽"
+				"并且我们添加了很多我们认为不错的匠魂材料, 有适合挖矿的, 有适合伐木的, 也有适合战斗的! 全看你自己的搭配! 这就是匠魂!"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:sword"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"cmi:refined_radiance"
+						"cmi:shadow_steel"
+						"cmi:calorite"
+					]
+					tic_modifiers: [
+						{
+							level: 1
+							name: "tconstruct:unbreakable"
+						}
+						{
+							level: 1
+							name: "tinkerleveling:leveling"
+						}
+						{
+							level: 1
+							name: "tconstruct:diamond"
+						}
+						{
+							level: 1
+							name: "tconstruct:emerald"
+						}
+						{
+							level: 1
+							name: "tconstruct:netherite"
+						}
+						{
+							level: 1
+							name: "tconstruct:creative_slot"
+						}
+						{
+							level: 5
+							name: "tconstruct:sharpness"
+						}
+						{
+							level: 5
+							name: "tconstruct:smite"
+						}
+						{
+							level: 5
+							name: "tconstruct:bane_of_sssss"
+						}
+						{
+							level: 5
+							name: "tconstruct:killager"
+						}
+						{
+							level: 5
+							name: "tconstruct:antiaquatic"
+						}
+						{
+							level: 5
+							name: "tconstruct:cooling"
+						}
+						{
+							level: 3
+							name: "tconstruct:pierce"
+						}
+						{
+							level: 5
+							name: "tconstruct:swiftstrike"
+						}
+						{
+							level: 5
+							name: "tconstruct:haste"
+						}
+						{
+							level: 5
+							name: "tconstruct:hydraulic"
+						}
+						{
+							level: 3
+							name: "tconstruct:luck"
+						}
+						{
+							level: 5
+							name: "tconstruct:reinforced"
+						}
+						{
+							level: 5
+							name: "tconstruct:overforced"
+						}
+						{
+							level: 1
+							name: "tconstruct:soulbound"
+						}
+						{
+							level: 5
+							name: "tconstruct:experienced"
+						}
+						{
+							level: 3
+							name: "tconstruct:freezing"
+						}
+						{
+							level: 3
+							name: "tconstruct:sweeping_edge"
+						}
+						{
+							level: 5
+							name: "tconstruct:fiery"
+						}
+						{
+							level: 1
+							name: "tconstruct:lightspeed"
+						}
+						{
+							level: 1
+							name: "tconstruct:searing"
+						}
+						{
+							level: 1
+							name: "tconstruct:conducting"
+						}
+						{
+							level: 1
+							name: "tconstruct:silky_shears"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.25f
+						"tconstruct:durability": 1.1f
+						"tconstruct:mining_speed": 0.625f
+					}
+					tic_persistent: {
+						abilities: -2
+						"tconstruct:creative": {
+							abilities: 1
+							upgrades: 129
+						}
+						"tinkerleveling:level": 1
+						"tinkerleveling:uuid": [I;
+							148698228
+							-721206332
+							-1885687601
+							-1780182765
+						]
+						upgrades: -78
+					}
+					tic_stats: {
+						"tconstruct:accuracy": 0.85f
+						"tconstruct:armor": 1.0f
+						"tconstruct:armor_toughness": 2.0f
+						"tconstruct:attack_damage": 20.317503f
+						"tconstruct:attack_speed": 2.1f
+						"tconstruct:durability": 4187.7f
+						"tconstruct:harvest_tier": "minecraft:netherite"
+						"tconstruct:knockback_resistance": 0.05f
+						"tconstruct:mining_speed": 18.703125f
+						"tconstruct:overslime": 412.5f
+						"tconstruct:projectile_damage": 2.5f
+						"tconstruct:velocity": 1.1f
+					}
+					tic_upgrades: [
+						{
+							level: 1
+							name: "tinkerleveling:leveling"
+						}
+						{
+							level: 1
+							name: "tconstruct:diamond"
+						}
+						{
+							level: 1
+							name: "tconstruct:emerald"
+						}
+						{
+							level: 1
+							name: "tconstruct:netherite"
+						}
+						{
+							level: 1
+							name: "tconstruct:creative_slot"
+						}
+						{
+							level: 5
+							name: "tconstruct:sharpness"
+						}
+						{
+							level: 5
+							name: "tconstruct:smite"
+						}
+						{
+							level: 5
+							name: "tconstruct:bane_of_sssss"
+						}
+						{
+							level: 5
+							name: "tconstruct:killager"
+						}
+						{
+							level: 5
+							name: "tconstruct:antiaquatic"
+						}
+						{
+							level: 5
+							name: "tconstruct:cooling"
+						}
+						{
+							level: 3
+							name: "tconstruct:pierce"
+						}
+						{
+							level: 5
+							name: "tconstruct:swiftstrike"
+						}
+						{
+							level: 5
+							name: "tconstruct:haste"
+						}
+						{
+							level: 5
+							name: "tconstruct:hydraulic"
+						}
+						{
+							level: 3
+							name: "tconstruct:luck"
+						}
+						{
+							level: 5
+							name: "tconstruct:reinforced"
+						}
+						{
+							level: 5
+							name: "tconstruct:overforced"
+						}
+						{
+							level: 1
+							name: "tconstruct:soulbound"
+						}
+						{
+							level: 5
+							name: "tconstruct:experienced"
+						}
+						{
+							level: 3
+							name: "tconstruct:freezing"
+						}
+						{
+							level: 3
+							name: "tconstruct:sweeping_edge"
+						}
+						{
+							level: 1
+							name: "tconstruct:unbreakable"
+						}
+						{
+							level: 5
+							name: "tconstruct:fiery"
+						}
+					]
+					tic_volatile_data: {
+						abilities: 2
+						"tconstruct:indestructible": 1b
+						"tconstruct:rarity": 2
+						"tconstruct:soulbound": 1b
+						upgrades: 132
+					}
+				}
+			}
+			id: "5A4FC2CACB726A2B"
+			rewards: [{
+				count: 64
+				id: "5EA3431C9FE56D19"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "苟活发育还是战斗爽?"
+			tasks: [{
+				id: "58616AF4A4680231"
+				title: "关于刷怪"
+				type: "checkmark"
+			}]
+			title: "关于刷怪"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			description: ["史莱姆li"]
+			icon: "minecraft:apple"
+			id: "30ED8BD20D50F96D"
+			rewards: [{
+				count: 4
+				id: "511E5FE18D4DEEBD"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "我们愿奉上最真诚的致谢"
+			tasks: [{
+				id: "47BA93F1301917CD"
+				title: "致谢名单"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
 		}
 	]
 	title: "开始"

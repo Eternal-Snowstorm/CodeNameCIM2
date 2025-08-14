@@ -1,0 +1,66 @@
+{
+	// Whether a schematic that's located in './config/starterstructure/schematics/...' should be generated.
+	"shouldGenerateStructure": true,
+	// Usually player spawn points are in a randomized area. With this enabled, players will always spawn at the set coordinates (at the nearest air pocket).
+	"forceExactSpawn": true,
+	// Prevents structures from being placed on top of trees. Any leaf and log blocks will be ignored during placement.
+	"ignoreTreesDuringStructurePlacement": true,
+	// Some schematic files might contain jigsaw or structure blocks. These are by default ignored during structure generation.
+	"generationIgnoreJigsawAndStructureBlocks": true,
+	// Whether the blocks from the generated structure should be protected from breaking/griefing.
+	"protectStructureBlocks": false,
+	// Whether entities spawned inside the generated structure should be protected from damage.
+	"protectSpawnedEntities": false,
+	// If enabled, players that are in creative mode will be able to break and place the structure blocks.
+	"playersInCreativeModeIgnoreProtection": true,
+	// If enabled, players that are in creative mode will be able to damage protected entities which spawned in structures.
+	"playersInCreativeModeIgnoreEntityProtection": false,
+	// If spawned entities inside the generated structure should not be allowed to move away from the block they spawned on. Disabled by default.
+	"preventSpawnedEntityMovement": false,
+	// If entities from (structure block) schematic files should be spawned when found. These are entities not created with signs.
+	"spawnNonSignEntitiesFromSupportedSchematics": true,
+	// If the generatedStructurePosition config options should be used.
+	"shouldUseStructurePosition": false,
+	// The exact x position for the generated structure. Used when shouldUseStructurePosition is enabled.
+	// min: -1E7, max: 1E7
+	"generatedStructureXPosition": 0,
+	// The exact y position for the generated structure. Used when shouldUseStructurePosition is enabled.
+	// min: -1000, max: 1000
+	"generatedStructureYPosition": 0,
+	// The exact z position for the generated structure. Used when shouldUseStructurePosition is enabled.
+	// min: -1E7, max: 1E7
+	"generatedStructureZPosition": 0,
+	// If the generatedStructureOffset config options should be used.
+	"shouldUseStructureOffset": false,
+	// The x offset for the generated structure. Used when shouldUseStructureOffset is enabled.
+	// min: -1000, max: 1000
+	"generatedStructureXOffset": 0,
+	// The y offset for the generated structure. Can for example be set to -1 if you notice a building always spawns one block too high. Used when shouldUseStructureOffset is enabled.
+	// min: -1000, max: 1000
+	"generatedStructureYOffset": 0,
+	// The z offset for the generated structure. Used when shouldUseStructureOffset is enabled.
+	// min: -1000, max: 1000
+	"generatedStructureZOffset": 0,
+	// If the spawnCoordinate config options should be used.
+	"shouldUseSpawnCoordinates": false,
+	// The new X coordinate of the spawn when shouldUseSpawnCoordinates is enabled.
+	// min: -1E7, max: 1E7
+	"spawnXCoordinate": 0,
+	// The new Y coordinate of the spawn when shouldUseSpawnCoordinates is enabled.
+	// min: -1000, max: 1000
+	"spawnYCoordinate": 0,
+	// The new Z coordinate of the spawn when shouldUseSpawnCoordinates is enabled.
+	// min: -1E7, max: 1E7
+	"spawnZCoordinate": 0,
+	// If the spawnCoordOffset config options should be used.
+	"shouldUseSpawnCoordOffsets": false,
+	// The X coordinate offset of the spawn when shouldUseSpawnCoordOffsets is enabled.
+	// min: -1000, max: 1000
+	"spawnXCoordOffset": 0,
+	// The Y coordinate offset of the spawn when shouldUseSpawnCoordOffsets is enabled.
+	// min: -1000, max: 1000
+	"spawnYCoordOffset": 0,
+	// The Z coordinate offset of the spawn when shouldUseSpawnCoordOffsets is enabled.
+	// min: -1000, max: 1000
+	"spawnZCoordOffset": 0
+}
