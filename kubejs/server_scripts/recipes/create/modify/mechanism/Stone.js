@@ -43,8 +43,8 @@ ServerEvents.recipes((event) => {
 
 	//焦黑铸件台
 	kubejs.shaped("tconstruct:seared_table", [
-		"BBB",
 		"BAB",
+		"B B",
 		"B B"
 	], {
 		A: mech,
@@ -54,8 +54,8 @@ ServerEvents.recipes((event) => {
 	//焦黑浇筑盆
 	kubejs.shaped("tconstruct:seared_basin", [
 		"B B",
-		"BAB",
-		"BBB"
+		"B B",
+		"BAB"
 	], {
 		A: mech,
 		B: "tconstruct:seared_brick"
@@ -80,6 +80,69 @@ ServerEvents.recipes((event) => {
 		B: "tconstruct:seared_brick",
 		C: "#tconstruct:gauge"
 	}).id("tconstruct:smeltery/seared/melter")
+
+	// 焦褐排液孔
+	kubejs.shaped("tconstruct:scorched_drain",[
+		"B B",
+		"CAC",
+		"B B"
+	],{
+		A:mech,
+		B:"tconstruct:scorched_brick",
+		C:"tconstruct:obsidian_pane"
+	}).id("tconstruct:smeltery/scorched/drain")
+
+	// 焦褐滑槽
+	kubejs.shaped("tconstruct:scorched_chute",[
+		"BCB",
+		" A ",
+		"BCB"
+	],{
+		A:mech,
+		B:"tconstruct:scorched_brick",
+		C:"tconstruct:obsidian_pane"
+	}).id("tconstruct:smeltery/scorched/chute")
+
+	// 焦褐疏导孔
+	kubejs.shaped("tconstruct:scorched_duct",[
+		"B B",
+		"CAC",
+		"B B"
+	],{
+		A:mech,
+		B:"tconstruct:scorched_brick",
+		C:"#forge:ingots/gold"
+	}).id("tconstruct:smeltery/scorched/duct_retextured")
+
+	// 焦褐铸件台
+	kubejs.shaped("tconstruct:scorched_table", [
+		"BAB",
+		"B B",
+		"B B"
+	], {
+		A: mech,
+		B: "tconstruct:scorched_brick"
+	}).id("tconstruct:smeltery/scorched/table")
+
+	// 焦褐浇筑盆
+	kubejs.shaped("tconstruct:scorched_basin", [
+		"B B",
+		"B B",
+		"BAB"
+	], {
+		A: mech,
+		B: "tconstruct:scorched_brick"
+	}).id("tconstruct:smeltery/scorched/basin")
+
+	// 焦褐合金炉
+	kubejs.shaped("tconstruct:scorched_alloyer", [
+		"BCB",
+		"BAB",
+	], {
+		A: mech,
+		B: "tconstruct:scorched_brick",
+		C: "#tconstruct:scorched_tanks"
+	}).id("tconstruct:smeltery/scorched/alloyer")
 
 	//铸模箱
 	kubejs.shaped("tconstruct:cast_chest", [
