@@ -11,6 +11,7 @@ ServerEvents.recipes((event) => {
 		"cmi:mekanism_mechanism_part",
 		"cmi:space_mechanism_part"
 	]).superheated()
+
 	create.mechanical_crafting("cmi:creative_mechanism", [
 		"abcdefg",
 		"hijklmn",

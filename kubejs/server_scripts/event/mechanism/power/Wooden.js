@@ -1,9 +1,9 @@
 BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
-	if (event.hand == "OFF_HAND") {
+	if (event.hand === "OFF_HAND") {
 		return
 	}
 	let player = event.getPlayer()
-	if (player == null) {
+	if (player === null) {
 		return
 	}
 	if (event.getItem().is("cmi:wooden_mechanism")) {
