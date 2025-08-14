@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
 		C:"#forge:storage_blocks/copper"
 	}).id("create:crafting/kinetics/steam_engine")
 
-	// 电梯(你知道我在0.5没有你的日子是怎么过的吗!(揪着衣领))
+	// 电梯
 	kubejs.shaped("create:elevator_pulley", [
 		" A ",
 		"BCB",

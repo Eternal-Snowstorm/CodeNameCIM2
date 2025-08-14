@@ -115,15 +115,13 @@ ServerEvents.recipes((event) => {
 
 	// 鼓风机
 	kubejs.shaped("create:encased_fan", [
-		"EAE",
-		"CBD",
-		"EAE"
+		" B ",
+		" A ",
+		" C "
 	], {
 		A: casing,
 		B: mech,
-		C: "create:shaft",
-		D: "create:propeller",
-		E: "#minecraft:planks"
+		C: "create:propeller"
 	}).id("create:crafting/kinetics/encased_fan")
 
 	// 砂带磨床
@@ -198,4 +196,104 @@ ServerEvents.recipes((event) => {
 		D: "vintageimprovements:iron_spring",
 		E: "create:shaft"
 	}).id("vintageimprovements:craft/centrifuge")
+
+	// 切割机
+	kubejs.shaped("sliceanddice:slicer", [
+		" A ",
+		" B ",
+		" C "
+	], {
+		A: mech,
+		B: casing,
+		C: "#forge:plates/andesite"
+	}).id("sliceanddice:slicer")
+
+	// 烤箱用鼓风机
+	kubejs.shaped("ratatouille:oven_fan", [
+		" B ",
+		" A ",
+		" C "
+	], {
+		A: mech,
+		B: casing,
+		C: "create:propeller"
+	}).id("ratatouille:oven_fan")
+
+	// 动力脱模机
+	kubejs.shaped("ratatouille:mechanical_demolder", [
+		" A ",
+		" B ",
+		" C "
+	], {
+		A: mech,
+		B: casing,
+		C: "#forge:slimeballs"
+	}).id("ratatouille:mechanical_demolder")
+
+	// 脱粒机
+	kubejs.shaped("ratatouille:thresher", [
+		" A ",
+		" C ",
+		" B "
+	], {
+		A: mech,
+		B: casing,
+		C: "create:mechanical_harvester"
+	}).id("ratatouille:thresher")
+
+	// 风车轴承
+	kubejs.shaped("create:windmill_bearing", [
+		" A ",
+		" B ",
+		" C "
+	], {
+		A: "create:turntable",
+		B: "#forge:stone",
+		C: mech
+	}).id("create:crafting/kinetics/windmill_bearing")
+
+	// 动力轴承
+	kubejs.shaped("create:mechanical_bearing", [
+		" A ",
+		" B ",
+		" C "
+	], {
+		A: "create:turntable",
+		B: casing,
+		C: mech
+	}).id("create:crafting/kinetics/mechanical_bearing")
+
+	// 动力活塞
+	kubejs.shaped("create:mechanical_piston", [
+		" B ",
+		" A ",
+		" C "
+	], {
+		A: "create:piston_extension_pole",
+		B: casing,
+		C: mech
+	}).id("create:crafting/kinetics/mechanical_piston")
+
+	// 起重机取物器
+	kubejs.shaped("create:gantry_carriage", [
+		" A ",
+		" B ",
+		"DCD"
+	], {
+		A: "create:turntable",
+		B: casing,
+		C: mech,
+		D: "create:cogwheel"
+	}).id("create:crafting/kinetics/gantry_carriage")
+
+	// 矿车装配站
+	kubejs.shaped("create:cart_assembler", [
+		"BDB",
+		"CAC"
+	], {
+		A: mech,
+		B: "minecraft:redstone",
+		C: "#minecraft:logs",
+		D: "#forge:slimeballs"
+	}).id("create:crafting/kinetics/cart_assembler")
 })
