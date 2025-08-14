@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
 	let mech = "cmi:andesite_mechanism"
 	let tube = "create:electron_tube"
 
-	// 动态结构控制器(你知道我在0.5没有你的日子是怎么过的吗!(揪着衣领))
+	// 动态结构控制器
 	kubejs.shaped("create:contraption_controls", [
 		"A",
 		"B",
@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
 		C: mech
 	}).id("create:crafting/kinetics/contraption_controls")
 
-	// 动力压路机(砸! 瓦鲁多----)
+	// 动力压路机
 	kubejs.shaped("create:mechanical_roller", [
 		" A ",
 		"BCB",
@@ -27,14 +27,14 @@ ServerEvents.recipes((event) => {
 		D: "create:crushing_wheel"
 	}).id("create:crafting/kinetics/mechanical_roller")
 
-	// 物品接口(你们为什么要Kiss👊😭👊)
+	// 物品接口
 	kubejs.shapeless("create:portable_storage_interface", [
 		"create:chute",
 		casing,
 		mech
 	]).id("create:crafting/kinetics/portable_storage_interface")
 
-	// 机械手(你妈逼我是不是给你脸给多了)
+	// 机械手
 	kubejs.shaped("create:deployer", [
 		"A",
 		"B",
@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
 		C: "create:brass_hand"
 	}).id("create:crafting/kinetics/deployer")
 
-	// 动力锯(有这个为什么还要连锁?)
+	// 动力锯
 	kubejs.shaped("create:mechanical_saw", [
 		"A",
 		"B",
@@ -56,7 +56,7 @@ ServerEvents.recipes((event) => {
 		C: casing
 	}).id("create:crafting/kinetics/mechanical_saw")
 
-	// 动力钻头(滋--------!)
+	// 动力钻头
 	kubejs.shaped("create:mechanical_drill", [
 		"A",
 		"B",
@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
 		C: casing
 	}).id("create:crafting/kinetics/mechanical_drill")
 
-	// 绳索滑轮(我想不到了)
+	// 绳索滑轮
 	kubejs.shaped("create:rope_pulley", [
 		" A ",
 		"BCB",
