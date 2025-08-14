@@ -68,4 +68,11 @@ ServerEvents.recipes((event) => {
 		.cast("#forge:nuggets")
 		.cooling_time(57)
 		.cast_consumed(true)
+
+	tconstruct.casting_basin("tconstruct:foundry_controller")
+		.fluid(Fluid.of("tconstruct:molten_obsidian", 1000))
+		.cast("tconstruct:scorched_alloyer")
+		.cast_consumed(true)
+		.cooling_time(220)
+		.id("tconstruct:smeltery/casting/scorched/foundry_controller")
 })
