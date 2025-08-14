@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
 			"#forge:ingots/chromium",
 			"#forge:ingots/invar"
 		])
-		.time(400)
+		.time(100)
 		.energy(8000)
 
 	// 钢
