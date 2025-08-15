@@ -199,6 +199,8 @@ addItemLanguage("paxel", "镐尖斧")
 	addBlockLanguage("crucible_tuyere", "风口")
 	addBlockLanguage("bronze_casing", "青铜外壳")
 	addBlockLanguage("pressure_resistance_casing", "耐压外壳")
+	addBlockLanguage("sky_stone_casing", "陨石外壳")
+	addBlockLanguage("computing_casing", "高级计算外壳")
 	addBlockLanguage("peat_block", "泥炭块")
 	addBlockLanguage("oil_shale", "油页岩")
 
