@@ -9,5 +9,10 @@
 	"tconjei.tooltip.harvest_ranged_armor": " 远程与盔甲材料",
 	"tconjei.tooltip.ranged": " 远程材料",
 	"tconjei.tooltip.ranged_armor": " 远程与盔甲材料",
-	"tconjei.tooltip.armor": " 盔甲材料"
+	"tconjei.tooltip.armor": " 盔甲材料",
+	"tconjei.tool_stats.skull": "粘液头颅统计",
+	"tconjei.tooltip.material": "材料",
+	"tconjei.tooltip.separator": ", ",
+	"tconjei.tooltip.and": "和 ",
+	"tconjei.tooltip.skull": "粘液头颅"
 }
