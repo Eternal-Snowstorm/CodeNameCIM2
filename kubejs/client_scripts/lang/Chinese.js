@@ -362,7 +362,7 @@ addItemLanguage("paxel", "镐尖斧")
 		caloriteEncyclopedia,
 		caloriteEncyclopedia
 	)
-	let shadowSteelEncyclopedia = "从未知的致命领域归来的化合物，似乎韧性异常强大"
+	let shadowSteelEncyclopedia = "从未知的致命领域归来的化合物，韧性异常强大，但是抗冲击能力堪称灾难"
 	addTConMaterialLanguage(
 		"shadow_steel",
 		"暗影钢",
@@ -371,7 +371,7 @@ addItemLanguage("paxel", "镐尖斧")
 		shadowSteelEncyclopedia,
 		shadowSteelEncyclopedia
 	)
-	let refinedRadianceEncyclopedia = "从天空之中归来的化合物，硬度与强度出类拔萃"
+	let refinedRadianceEncyclopedia = "吸收了大量光能的化合物，韧性令人掩面，但可以为装备提供极大的强化"
 	addTConMaterialLanguage(
 		"refined_radiance",
 		"光辉石",
