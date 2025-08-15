@@ -144,12 +144,11 @@ ServerEvents.recipes((event) => {
 		"platinum",
 		"steel",
 		"calorite"
-
 	]
 	removeRecipeExtraIds.forEach((id) => {
-		event.remove({
-			id: `thermal_extra:machine/nitratic_igniter/raw_${id}`
-		})
+		// event.remove({
+		// 	id: `thermal_extra:machine/nitratic_igniter/raw_${id}`
+		// })
 		event.remove({
 			id: `thermal_extra:machine/crucible/raw_${id}_from_chunk`
 		})

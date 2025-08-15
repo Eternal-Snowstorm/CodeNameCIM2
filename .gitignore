@@ -94,3 +94,4 @@ XaeroWaypoints*
 !/config/jeiintegration-client.toml
 !/config/starterstructure*
 !/config/createaddition-common.toml
+!/config/lmft.json
