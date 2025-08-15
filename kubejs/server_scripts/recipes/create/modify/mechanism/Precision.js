@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: mech,
 		B: "#forge:ingots/andesite_alloy",
-		C:"#forge:storage_blocks/copper"
+		C: "#forge:storage_blocks/copper"
 	}).id("create:crafting/kinetics/steam_engine")
 
 	// 电梯
@@ -75,4 +75,36 @@ ServerEvents.recipes((event) => {
 		C: mech,
 		D: "#forge:plates/obsidian"
 	}).id("create:crafting/kinetics/elevator_pulley")
+
+	// 发条轴承
+	kubejs.shaped("create:clockwork_bearing", [
+		" C ",
+		" B ",
+		" A "
+	], {
+		A: mech,
+		B: casing,
+		C: "#minecraft:wooden_slabs"
+	}).id("create:crafting/kinetics/clockwork_bearing")
+
+	// 智能侦测器
+	kubejs.shaped("create:content_observer", [
+		" A ",
+		" B ",
+		" C "
+	], {
+		A: mech,
+		B: casing,
+		C: "minecraft:observer"
+	}).id("create:crafting/logistics/content_observer")
+
+	// 可编程齿轮箱
+	kubejs.shaped("create:sequenced_gearshift", [
+		"BA ",
+		"C  "
+	], {
+		A: mech,
+		B: casing,
+		C: "create:cogwheel"
+	}).id("create:crafting/kinetics/sequenced_gearshift")
 })

@@ -296,4 +296,24 @@ ServerEvents.recipes((event) => {
 		C: "#minecraft:logs",
 		D: "#forge:slimeballs"
 	}).id("create:crafting/kinetics/cart_assembler")
+
+	// 催熟机
+	kubejs.shaped("ratatouille:spreader", [
+		" A ",
+		"CBC",
+		" D "
+	], {
+		A: mech,
+		B: casing,
+		C: "cmi:nature_mechanism",
+		D: "create:propeller"
+	}).id("ratatouille:spreader")
+
+	// 翻牌显示器
+	kubejs.shaped("create:display_board", [
+		"BAB"
+	], {
+		A: mech,
+		B: "#forge:plates/andesite"
+	}).id("create:crafting/kinetics/display_board")
 })

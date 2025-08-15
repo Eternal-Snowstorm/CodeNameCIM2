@@ -67,4 +67,37 @@ ServerEvents.recipes((event) => {
 		B: casing,
 		C: "minecraft:dried_kelp"
 	}).id("create:crafting/kinetics/spout")
+
+	//洒水器
+	kubejs.shaped("2x sliceanddice:sprinkler", [
+		"BAB",
+		"BCB"
+	], {
+		A: mech,
+		B: "#forge:plates/copper",
+		C: "minecraft:iron_bars"
+	}).id("sliceanddice:sprinkler")
+
+	// 挤压盆
+	kubejs.shaped("ratatouille:squeeze_basin", [
+		" B ",
+		"BAB",
+		"C C"
+	], {
+		A: mech,
+		B: "#forge:plates/copper",
+		C: "#forge:ingots/copper"
+	}).id("ratatouille:squeeze_basin")
+
+	// 灌溉塔
+	kubejs.shaped("ratatouille:irrigation_tower", [
+		" B ",
+		"CAC",
+		"D D"
+	], {
+		A: mech,
+		B: "create:fluid_tank",
+		C: "#forge:plates/copper",
+		D: "create:fluid_pipe"
+	}).id("ratatouille:irrigation_tower")
 })
