@@ -1,0 +1,373 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "structure"
+	group: "65AEEF30E0964DD3"
+	icon: "cmi:structure_mechanism"
+	id: "2A9D4B2FC774BD4E"
+	images: [{
+		height: 15.84d
+		image: "cmi:textures/images/background/structure.png"
+		rotation: 0.0d
+		width: 34.86d
+		x: 1.0d
+		y: 0.5d
+	}]
+	order_index: 29
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependent_lines: true
+			id: "4A651FC4B295ABBC"
+			rewards: [{
+				id: "6639F28C9BFA3B59"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5764B831CE7109B7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+				title: "Any #forge:ingots/steel"
+				type: "item"
+			}]
+			title: "Steel Ingot"
+			x: -10.165238095238102d
+			y: 1.0747619047619068d
+		}
+		{
+			dependencies: ["4A651FC4B295ABBC"]
+			hide_dependent_lines: true
+			id: "7FBBC1E4BAF32D9A"
+			tasks: [{
+				id: "1D7C25D2BE7FD975"
+				title: "Press"
+				type: "checkmark"
+			}]
+			x: -8.520952380952387d
+			y: 1.7804761904761932d
+		}
+		{
+			hide_dependent_lines: true
+			id: "41A96A2E16C0F547"
+			rewards: [{
+				id: "1519E7910F687DFA"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7D18F387DE9A1F76"
+				item: "mekanism:hdpe_pellet"
+				type: "item"
+			}]
+			title: "HDPE Pellet"
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["41A96A2E16C0F547"]
+			hide_dependent_lines: true
+			id: "73E4472A2E33911B"
+			tasks: [{
+				id: "2B16C3A6337F7A92"
+				title: "Enrichment"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"7FBBC1E4BAF32D9A"
+				"73E4472A2E33911B"
+			]
+			hide_dependent_lines: true
+			id: "79187B17F3F63129"
+			rewards: [{
+				id: "0292DEBC5A7AF369"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "262A2423AF9FBD72"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			title: "HDPE Sheet"
+			x: -4.802380952380943d
+			y: 2.826190476190469d
+		}
+		{
+			hide_dependent_lines: true
+			id: "19F485B32A54A339"
+			rewards: [{
+				id: "0614EFC1E9378837"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "175B1F46F1098666"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			title: "Copper Ingot"
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			hide_dependent_lines: true
+			id: "38C46A916D00DAF4"
+			rewards: [{
+				id: "507D9A4CB60D25FE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "47E490BED89F34B9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/lead"
+					}
+				}
+				title: "Any #forge:ingots/lead"
+				type: "item"
+			}]
+			title: "Lead Ingot"
+			x: 4.707619047619076d
+			y: -4.768809523809544d
+		}
+		{
+			hide_dependent_lines: true
+			id: "00B0FC1269A1A91F"
+			rewards: [{
+				id: "4D7071DBFD530EBD"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3A4F9E276B815B48"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/osmium"
+					}
+				}
+				title: "Any #forge:ingots/osmium"
+				type: "item"
+			}]
+			title: "Osmium Ingot"
+			x: 6.136190476190507d
+			y: -4.340238095238114d
+		}
+		{
+			hide_dependent_lines: true
+			id: "44454B7FD9101F98"
+			rewards: [{
+				id: "73550DE0F3A72042"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5C35F810EEBCCED2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/tin"
+					}
+				}
+				title: "Any #forge:ingots/tin"
+				type: "item"
+			}]
+			title: "Tin Ingot"
+			x: 7.814761904761944d
+			y: -3.5188095238095443d
+		}
+		{
+			dependencies: [
+				"38C46A916D00DAF4"
+				"44454B7FD9101F98"
+				"19F485B32A54A339"
+				"00B0FC1269A1A91F"
+			]
+			hide_dependent_lines: true
+			id: "010AB0A0BA1609AE"
+			tasks: [{
+				id: "0C04604CD9600F46"
+				title: "Press *4"
+				type: "checkmark"
+			}]
+			x: 3.8476190476190624d
+			y: -1.3595238095238145d
+		}
+		{
+			dependencies: [
+				"79187B17F3F63129"
+				"010AB0A0BA1609AE"
+			]
+			hide_dependent_lines: true
+			id: "1A763F528914D295"
+			rewards: [{
+				id: "02D386E4E2FF4289"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "07006E91FE951678"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/copper"
+					}
+				}
+				title: "Any #forge:plates/copper"
+				type: "item"
+			}]
+			title: "Copper Plate"
+			x: 0.06333333333334679d
+			y: 1.5604761904761872d
+		}
+		{
+			dependencies: [
+				"1A763F528914D295"
+				"010AB0A0BA1609AE"
+			]
+			hide_dependent_lines: true
+			id: "3AE14F8698147B1F"
+			rewards: [{
+				id: "58C8C27B8C045CE1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "20F5C678EA7F95B9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/lead"
+					}
+				}
+				title: "Any #forge:plates/lead"
+				type: "item"
+			}]
+			title: "Lead Plate"
+			x: 1.4933333333333394d
+			y: 2.2661904761904594d
+		}
+		{
+			dependencies: [
+				"3AE14F8698147B1F"
+				"010AB0A0BA1609AE"
+			]
+			hide_dependent_lines: true
+			id: "2BC7748A4BB936CF"
+			rewards: [{
+				id: "16B38FAD386A147B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "07E078EBE4BC6121"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/osmium"
+					}
+				}
+				title: "Any #forge:plates/osmium"
+				type: "item"
+			}]
+			title: "Osmium Plate"
+			x: 3.064761904761916d
+			y: 2.8290476190476d
+		}
+		{
+			dependencies: [
+				"2BC7748A4BB936CF"
+				"010AB0A0BA1609AE"
+			]
+			hide_dependent_lines: true
+			id: "18B913D922CAAD59"
+			rewards: [{
+				id: "189B4D02F5772A3D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "333D1216D44C11F5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/tin"
+					}
+				}
+				title: "Any #forge:plates/tin"
+				type: "item"
+			}]
+			title: "Tin Plate"
+			x: 4.6361904761904995d
+			y: 3.5347619047618863d
+		}
+		{
+			dependencies: ["18B913D922CAAD59"]
+			hide_dependent_lines: true
+			id: "5BA03CCA5168AED4"
+			tasks: [{
+				id: "7925FF5677955520"
+				title: "Press"
+				type: "checkmark"
+			}]
+			x: 6.779047619047645d
+			y: 4.669047619047589d
+		}
+		{
+			dependencies: ["5BA03CCA5168AED4"]
+			hide_dependent_lines: true
+			id: "05255E7E8E12A36F"
+			rewards: [{
+				id: "2DD68B940FD9C767"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "36DFC2A28F574397"
+				item: "cmi:mekanism_mechanism_part"
+				type: "item"
+			}]
+			title: "Mechanism Part"
+			x: 9.49333333333336d
+			y: 2.3747619047618898d
+		}
+		{
+			dependencies: ["05255E7E8E12A36F"]
+			hide_dependent_lines: true
+			id: "609A0E9375DABD5B"
+			rewards: [{
+				id: "4CEF18D683539073"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1C91A09F7154622C"
+				item: "cmi:structure_mechanism"
+				type: "item"
+			}]
+			title: "Structure Mechanism"
+			x: 13.493333333333375d
+			y: 3.7947619047618844d
+		}
+	]
+	title: "Structure"
+}
