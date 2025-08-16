@@ -21,4 +21,24 @@ ServerEvents.recipes((event) => {
 		C: "ae2:fluix_crystal",
 		M: "create:precision_mechanism"
 	}).id("ae2:network/blocks/inscribers")
+
+	kubejs.shaped("4x cmi:sky_stone_casing", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: "#forge:plates/silver",
+		B: '#ae2:all_certus_quartz',
+		C: "ae2:smooth_sky_stone_block"
+	})
+
+	kubejs.shaped("4x cmi:computing_casing", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: "#forge:plates/platinum",
+		B: 'cmi:single_crystal_silicon',
+		C: "cmi:osmium_tile"
+	})
 })
