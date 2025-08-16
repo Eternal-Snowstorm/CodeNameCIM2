@@ -7,7 +7,7 @@ ItemEvents.modification((event) => {
 
 	// 煤粉燃烧时间
 	event.modify("mekanism:dust_coal", (modify) => {
-		modify.burnTime = BURN_TIME * 20
+		modify.burnTime = BURN_TIME * 12
 	})
 
 	// 木屑块燃烧时间
