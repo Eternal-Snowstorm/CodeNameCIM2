@@ -21,6 +21,13 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:stone_plate")
 	addCommonTooltip("cmi:cast_iron_ingot")
 
+	addCommonTooltip("cmi:cast_iron_ingot")
+	addCommonTooltip("cmi:cast_iron_ingot")
+	addCommonTooltip("cmi:cast_iron_ingot")
+	addCommonTooltip("cmi:cast_iron_ingot")
+	addCommonTooltip("cmi:cast_iron_ingot")
+	addCommonTooltip("cmi:cast_iron_ingot")
+
 	addAccelerateTooltip("cmi:stone_mechanism")
 	addAccelerateTooltip("cmi:andesite_mechanism")
 	addAccelerateTooltip("cmi:copper_mechanism")

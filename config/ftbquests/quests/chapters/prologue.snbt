@@ -344,11 +344,11 @@
 						"tconstruct:armor": 1.0f
 						"tconstruct:armor_toughness": 2.0f
 						"tconstruct:attack_damage": 14.512502f
-						"tconstruct:attack_speed": 2.1f
+						"tconstruct:attack_speed": 2.25f
 						"tconstruct:durability": 2717.5503f
 						"tconstruct:harvest_tier": "minecraft:netherite"
 						"tconstruct:knockback_resistance": 0.05f
-						"tconstruct:mining_speed": 15.749999f
+						"tconstruct:mining_speed": 14.625001f
 						"tconstruct:overslime": 412.5f
 						"tconstruct:projectile_damage": 2.5f
 						"tconstruct:velocity": 1.1f
@@ -479,7 +479,10 @@
 			y: 2.5d
 		}
 		{
-			description: ["史莱姆li"]
+			description: [
+				"[？？]史莱姆li"
+				"[音乐]DontkillBelalus"
+			]
 			icon: "minecraft:apple"
 			id: "30ED8BD20D50F96D"
 			rewards: [{
@@ -495,7 +498,19 @@
 				title: "致谢名单"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			icon: "createdeco:decal_warning"
+			id: "511AD7F0E04213FC"
+			shape: "hexagon"
+			tasks: [{
+				id: "6377990FF2529CEB"
+				title: "温馨提示"
+				type: "checkmark"
+			}]
+			x: -5.0d
 			y: 0.0d
 		}
 	]
