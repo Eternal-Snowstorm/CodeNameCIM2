@@ -46,4 +46,20 @@ ItemEvents.modification((event) => {
 				.saturation(1)
 		})
 	})
+
+	// 烈焰蛋糕
+	event.modify("create:blaze_cake", (modify) => {
+		modify.setFoodProperties((food) => {
+			food.hunger(10)
+				.saturation(1.2)
+				.eaten((event) => {
+					let { player } = event
+					let haveEffect = player.hasEffect("minecraft:fire_resistance")
+
+					if (!haveEffect) {
+						player.runCommandSilent(`damage ${player.name.toString()} 20 minecraft:lava`)
+					}
+				})
+		})
+	})
 })

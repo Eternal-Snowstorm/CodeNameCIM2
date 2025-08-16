@@ -120,7 +120,7 @@ function addTConTexture(name, colour, first, second, third, forth, fifth, sixth,
 		seventh
 	]
 	paletteColors.map((color) => {
-		return color.startsWith("FF") ? c : `FF${color}`
+		return color.startsWith("FF") ? color : `FF${color}`
 	})
 
 	const FILE_PATH = `kubejs/assets/${global.namespace}/tinkering/materials/${name}.json`
