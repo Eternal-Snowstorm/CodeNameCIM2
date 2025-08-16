@@ -41,7 +41,7 @@
 			size: 2.0d
 			subtitle: "安第斯合金(笑)"
 			tasks: [{
-				id: "0CAF6FF69FBB71C9"
+				id: "7C61D025A76D4569"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"

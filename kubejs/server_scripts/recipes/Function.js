@@ -2,10 +2,16 @@
 
 let IngredientUtils = {
 	getFirstItemId: function (ingredient, count) {
-		if (count !== undefined) {
-			return Ingredient.of(ingredient, count).getItemIds()[0]
+		let ids = count !== undefined 
+			? Ingredient.of(ingredient, count).getItemIds() 
+			: Ingredient.of(ingredient).getItemIds()
+
+		if (ids.length > 0) {
+			return ids[0]
+		} else {
+			console.warn(`${ingredient}下没有对应物品`)
+			return null 
 		}
-		return Ingredient.of(ingredient).getItemIds()[0]
 	},
 	ofMekanismGas: function (gas, amount) {
 		if (amount === undefined) {

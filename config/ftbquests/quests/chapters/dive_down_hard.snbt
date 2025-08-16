@@ -234,7 +234,7 @@
 		{
 			dependencies: ["2B656B7972166C08"]
 			id: "3F4BF299239521B5"
-			subtitle: "You'll need them"
+			subtitle: "你会需要它们"
 			tasks: [
 				{
 					id: "44320669FD6E2F02"
@@ -246,11 +246,6 @@
 						}
 					}
 					title: "Any Tinker's Anvil"
-					type: "item"
-				}
-				{
-					id: "26657802A90AF54B"
-					item: "tconstruct:cast_chest"
 					type: "item"
 				}
 				{
