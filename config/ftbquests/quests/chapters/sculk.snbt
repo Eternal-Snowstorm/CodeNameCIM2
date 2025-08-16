@@ -1,0 +1,187 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sculk"
+	group: "65AEEF30E0964DD3"
+	id: "1B99F79E4232255B"
+	images: [{
+		height: 26.46d
+		image: "cmi:textures/images/background/sculk.png"
+		rotation: 0.0d
+		width: 70.32d
+		x: -0.5d
+		y: -4.0d
+	}]
+	order_index: 32
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependent_lines: true
+			id: "7B82E7464796EDA3"
+			rewards: [{
+				id: "6762B4D00AB5DA97"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "54615BB3C919B13F"
+				item: "minecraft:sculk"
+				type: "item"
+			}]
+			title: "Sculk"
+			x: -22.08857142857144d
+			y: -6.428571428571445d
+		}
+		{
+			dependencies: ["7B82E7464796EDA3"]
+			hide_dependent_lines: true
+			id: "5C33E2CFA7B4B131"
+			rewards: [{
+				id: "2988BE4BC862809C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "12980E330222ABB8"
+				item: "create:experience_block"
+				type: "item"
+			}]
+			title: "Experience Block"
+			x: -9.231428571428566d
+			y: -1.9128571428571561d
+		}
+		{
+			dependencies: [
+				"14229CD218F68507"
+				"34D659884F27BD30"
+			]
+			hide_dependent_lines: true
+			id: "2485113E121A1F0A"
+			rewards: [{
+				id: "3480226E208B9693"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2849F4595D99B654"
+				item: "minecraft:sculk_shrieker"
+				type: "item"
+			}]
+			title: "Sculk Shrieker"
+			x: 4.054285714285712d
+			y: -1.6828571428571593d
+		}
+		{
+			dependencies: ["5C33E2CFA7B4B131"]
+			hide_dependent_lines: true
+			id: "0C56B95038059F78"
+			rewards: [{
+				id: "1843438876C39972"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "02450C8C218AE6A5"
+				item: "minecraft:sculk_catalyst"
+				type: "item"
+			}]
+			title: "Sculk Catalyst"
+			x: -6.374285714285719d
+			y: -3.452857142857148d
+		}
+		{
+			dependencies: ["7B82E7464796EDA3"]
+			hide_dependent_lines: true
+			id: "029CD14AC06F87AF"
+			rewards: [{
+				id: "66123C334F4D879B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5974484CD7AABABC"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			title: "Redstone Block"
+			x: -10.659999999999997d
+			y: -6.437142857142867d
+		}
+		{
+			dependencies: [
+				"029CD14AC06F87AF"
+				"0C56B95038059F78"
+			]
+			hide_dependent_lines: true
+			id: "34D659884F27BD30"
+			rewards: [{
+				id: "46F6DA493323C3B7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6454476B708B8F40"
+				item: "minecraft:sculk_sensor"
+				type: "item"
+			}]
+			title: "Sculk Sensor"
+			x: -4.945714285714288d
+			y: -5.20714285714287d
+		}
+		{
+			dependencies: ["7B82E7464796EDA3"]
+			hide_dependent_lines: true
+			id: "14229CD218F68507"
+			rewards: [{
+				id: "1EE6D7636D010523"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "13C236B4828DEF29"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			title: "Ender Pearl"
+			x: -5.660000000000011d
+			y: 1.0228571428571342d
+		}
+		{
+			dependencies: ["2485113E121A1F0A"]
+			hide_dependent_lines: true
+			id: "67FF36B70B4A9370"
+			rewards: [{
+				id: "4EBB8581EB04D8FE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "311E4A14618504BF"
+				item: "cmi:magical_mechanism_part"
+				type: "item"
+			}]
+			title: "Mechanism Part"
+			x: 10.482857142857142d
+			y: -6.96142857142857d
+		}
+		{
+			dependencies: ["67FF36B70B4A9370"]
+			hide_dependent_lines: true
+			id: "40D2BAD99CA69ADB"
+			rewards: [{
+				id: "3B896663CD542FB9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "503A9C0AB142F1E8"
+				item: "cmi:sculk_mechanism"
+				type: "item"
+			}]
+			title: "Sculk Mechanism"
+			x: 20.768571428571434d
+			y: -2.231428571428566d
+		}
+	]
+	title: "Sculk"
+}
