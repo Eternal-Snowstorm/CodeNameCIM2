@@ -1,6 +1,16 @@
-{"ctm":{"ctm_version":1,
-"type":"ctm",
-"textures":["cmi:block/machine/cracker/off_ctm"],
-"extra":{"connect_to":[
-{"block":"cmi:pressure_resistance_casing"}
-]}}}
+{
+	"ctm": {
+		"ctm_version": 1,
+		"type": "ctm",
+		"textures": [
+			"cmi:block/machine/cracker/off_ctm"
+		],
+		"extra": {
+			"connect_to": [
+				{
+					"block": "cmi:pressure_resistance_casing"
+				}
+			]
+		}
+	}
+}

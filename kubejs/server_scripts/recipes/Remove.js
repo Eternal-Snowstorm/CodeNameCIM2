@@ -146,9 +146,9 @@ ServerEvents.recipes((event) => {
 		"calorite"
 	]
 	removeRecipeExtraIds.forEach((id) => {
-		// event.remove({
-		// 	id: `thermal_extra:machine/nitratic_igniter/raw_${id}`
-		// })
+		event.remove({
+			id: `thermal_extra:machine/nitratic_igniter/raw_${id}`
+		})
 		event.remove({
 			id: `thermal_extra:machine/crucible/raw_${id}_from_chunk`
 		})
@@ -388,21 +388,6 @@ ServerEvents.recipes((event) => {
 			}
 		])
 	})
-
-	event.remove([
-		{
-			type: "minecraft:crafting_shapeless",
-			input: "#minecraft:logs",
-			output: "#minecraft:planks"
-		}, {
-			type: "create:cutting",
-			input: "#minecraft:logs",
-			output: "#minecraft:planks"
-		}, {
-			type: "create:cutting",
-			output: "#forge:stripped_logs"
-		}
-	])
 
 	event.remove({
 		type: "minecraft:crafting_shaped",

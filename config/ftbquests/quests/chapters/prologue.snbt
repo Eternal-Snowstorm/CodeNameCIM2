@@ -479,7 +479,10 @@
 			y: 2.5d
 		}
 		{
-			description: ["史莱姆li"]
+			description: [
+				"[？？]史莱姆li"
+				"[音乐]DontkillBelalus"
+			]
 			icon: "minecraft:apple"
 			id: "30ED8BD20D50F96D"
 			rewards: [{
@@ -495,7 +498,19 @@
 				title: "致谢名单"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			icon: "createdeco:decal_warning"
+			id: "511AD7F0E04213FC"
+			shape: "hexagon"
+			tasks: [{
+				id: "6377990FF2529CEB"
+				title: "温馨提示"
+				type: "checkmark"
+			}]
+			x: -5.0d
 			y: 0.0d
 		}
 	]

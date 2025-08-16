@@ -21,6 +21,10 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:stone_plate")
 	addCommonTooltip("cmi:cast_iron_ingot")
 
+	addCommonTooltip("createaddition:bioethanol")
+	addCommonTooltip("thermal_extra:diesel")
+	addCommonTooltip("createaddition:seed_oil")
+	
 	addAccelerateTooltip("cmi:stone_mechanism")
 	addAccelerateTooltip("cmi:andesite_mechanism")
 	addAccelerateTooltip("cmi:copper_mechanism")

@@ -130,6 +130,28 @@ ServerEvents.recipes((event) => {
 		"cmi:peat_block"
 	])
 
+	kubejs.shaped("mekanism:metallurgic_infuser", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: "minecraft:redstone",
+		C: "cmi:basic_mekanism_mechanism",
+		B: "minecraft:furnace",
+		D: "mekanism:steel_casing"
+	}).id("mekanism:metallurgic_infuser")
+
+	kubejs.shaped("mekanism:enrichment_chamber", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: "minecraft:redstone",
+		B: "cmi:basic_mekanism_mechanism",
+		C: "minecraft:netherite_ingot",
+		D: "mekanism:steel_casing"
+	}).id("mekanism:enrichment_chamber")
+
 	// 安山岩
 	addSmeltingRecipe(event, "2x minecraft:andesite", "cmi:andesite_aggregate")
 

@@ -6,21 +6,26 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 		"cmi:water_pump"
 	])
 
-	event.remove(`#${global.namespace}:io_debug_block`)
-	event.remove("#forge:chem_salts")
-	event.remove("#create:mechanisms")
-	event.remove("#create:incomplete_mechanisms")
-	event.remove(`#${global.namespace}:mechanism_parts`)
-	event.remove(`#${global.namespace}:mechanism_flash_drives`)
-	event.remove("#tconstruct:casts/multi_use/mechanism")
-	event.remove("#tconstruct:casts/single_use/mechanism")
-	event.remove("#tconstruct:casts/multi_use/nugget")
-	event.remove(`#${global.namespace}:metals`)
-	event.remove(`#${global.namespace}:ores`)
-	event.remove(`#${global.namespace}:raw_metals`)
-	event.remove(`#${global.namespace}:ore_nodes`)
-	event.remove(`#${global.namespace}:dev_doll`)
-	event.remove(`#${global.namespace}:machine_block`)
+	let removeItemFromCreativeTab = [
+		`#${global.namespace}:io_debug_block`,
+		"#forge:chem_salts",
+		"#create:mechanisms",
+		"#create:incomplete_mechanisms",
+		`#${global.namespace}:mechanism_parts`,
+		`#${global.namespace}:mechanism_flash_drives`,
+		"#tconstruct:casts/multi_use/mechanism",
+		"#tconstruct:casts/single_use/mechanism",
+		"#tconstruct:casts/multi_use/nugget",
+		`#${global.namespace}:metals`,
+		`#${global.namespace}:ores`,
+		`#${global.namespace}:raw_metals`,
+		`#${global.namespace}:ore_nodes`,
+		`#${global.namespace}:dev_doll`,
+		`#${global.namespace}:machine_block`
+	]
+	removeItemFromCreativeTab.forEach((item) => {
+		event.remove(item)
+	})
 })
 
 StartupEvents.modifyCreativeTab("create:base", (event) => {

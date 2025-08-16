@@ -187,6 +187,7 @@ ServerEvents.recipes((event) => {
 	], [
 		create.deploying(ihem, [ihem, "immersiveengineering:component_steel"]),
 		create.deploying(ihem, [ihem, "#forge:wires/electrum"]),
+		create.filling(ihem,[ihem,Fluid.of("cmi:lubricating_oil", 100)]),
 		create.deploying(ihem, [ihem, "cmi:engineering_mechanism_part"]),
 	]).transitionalItem(ihem).loops(1)
 
