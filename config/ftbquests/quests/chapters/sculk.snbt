@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "sculk"
 	group: "65AEEF30E0964DD3"
+	icon: "cmi:sculk_mechanism"
 	id: "1B99F79E4232255B"
 	images: [{
 		height: 26.46d
