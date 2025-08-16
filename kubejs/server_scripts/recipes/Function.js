@@ -1,7 +1,18 @@
 // priority: 100
 
-function getFirstItemId(ingredient) {
-	return Ingredient.of(ingredient).getItemIds()[0]
+let IngredientUtils = {
+	getFirstItemId: function (ingredient, count) {
+		if (count !== undefined) {
+			return Ingredient.of(ingredient, count).getItemIds()[0]
+		}
+		return Ingredient.of(ingredient).getItemIds()[0]
+	},
+	ofMekanismGas: function (gas, amount) {
+		if (amount === undefined) {
+			return { gas: gas, amount: 1000 }
+		}
+		return { gas: gas, amount: amount }
+	}
 }
 
 function aeCharger(output, input) {
@@ -11,7 +22,7 @@ function aeCharger(output, input) {
 		"type": "ae2:charger",
 		"ingredient": INPUT,
 		"result": {
-			"item": getFirstItemId(output)
+			"item": IngredientUtils.getFirstItemId(output)
 		}
 	}
 }
@@ -43,11 +54,9 @@ function IEIngredient(input) {
 	}
 }
 function addSmeltingRecipe(event, output, input) {
-	let smeltingRecipe = event.recipes.minecraft.blasting(output, input)
+	event.recipes.minecraft.blasting(output, input)
 		.cookingTime(100)
 
 	event.recipes.minecraft.smelting(output, input)
 		.cookingTime(200)
-
-	return smeltingRecipe
 }
