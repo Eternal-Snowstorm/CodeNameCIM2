@@ -1,0 +1,137 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "redstone"
+	group: "65AEEF30E0964DD3"
+	icon: "vintageimprovements:redstone_module"
+	id: "7C96ED876FCA1F2D"
+	images: [{
+		height: 16.56d
+		image: "cmi:textures/images/background/redstone.png"
+		rotation: 0.0d
+		width: 25.2d
+		x: -2.0d
+		y: -1.5d
+	}]
+	order_index: 37
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependent_lines: true
+			id: "0202EDEC54A21772"
+			rewards: [{
+				id: "78B8B4E7E0FFB7B1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "40575D0E2A32EAD5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:sleepers"
+					}
+				}
+				title: "Any #create:sleepers"
+				type: "item"
+			}]
+			title: "Stone Slab"
+			x: -8.685714285714276d
+			y: -1.2142857142857082d
+		}
+		{
+			hide_dependent_lines: true
+			id: "039BFD4DA7F9DDB3"
+			rewards: [{
+				id: "6C9B6A52D2FF513E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "646903045A651C3F"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			title: "Stick"
+			x: 0.41428571428572525d
+			y: -3.607142857142854d
+		}
+		{
+			dependencies: ["039BFD4DA7F9DDB3"]
+			hide_dependent_lines: true
+			id: "36E61589B6DF3EE6"
+			rewards: [{
+				id: "2A41EFDEDC7D1239"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "33C27FF9E3C5B518"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			title: "Redstone Dust"
+			x: -1.1999999999999886d
+			y: -2.107142857142861d
+		}
+		{
+			dependencies: [
+				"0202EDEC54A21772"
+				"36E61589B6DF3EE6"
+			]
+			hide_dependent_lines: true
+			id: "77D170098F1B876D"
+			rewards: [{
+				id: "11C631D8F82336C2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5ABA6B92D8C188E1"
+				item: "minecraft:redstone_torch"
+				type: "item"
+			}]
+			title: "Redstone Torch"
+			x: -2.242857142857119d
+			y: 2.464285714285708d
+		}
+		{
+			dependencies: ["77D170098F1B876D"]
+			hide_dependent_lines: true
+			id: "32B49EA99753E8EB"
+			rewards: [{
+				id: "080E217C8BDC9370"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6DBE7240B9EFB121"
+				item: "cmi:basic_mechanism_part"
+				type: "item"
+			}]
+			title: "Mechanism Part"
+			x: 1.3571428571428683d
+			y: -0.5357142857142847d
+		}
+		{
+			dependencies: ["32B49EA99753E8EB"]
+			hide_dependent_lines: true
+			id: "7EBFB7B22E8EA168"
+			rewards: [{
+				id: "60A83A67191E0F8C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F596D6884C01186"
+				item: "vintageimprovements:redstone_module"
+				type: "item"
+			}]
+			title: "Redstone Mechanism"
+			x: 6.528571428571439d
+			y: 1.4642857142857153d
+		}
+	]
+	title: "Redstone"
+}
