@@ -42,6 +42,7 @@ fabric*
 /icon-exports-*
 ESM
 XaeroWaypoints*
+/oei
 
 # ResourcePacks
 /resourcepacks/*
