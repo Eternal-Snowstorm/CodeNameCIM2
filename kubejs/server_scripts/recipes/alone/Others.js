@@ -193,4 +193,44 @@ ServerEvents.recipes((event) => {
 		A: "cmi:peat",
 		B: "#forge:rods/wooden"
 	}).id("cmi:peat_torch")
+
+	// pipez item/fluid/nergy/gas/all
+	kubejs.shaped("16x pipez:item_pipe",[
+		"ABA"
+	],{
+		A:"#forge:plates/invar",
+		B:"#forge:chests"
+	}).id("pipez:item_pipe")
+
+	kubejs.shaped("16x pipez:fluid_pipe",[
+		"ABA"
+	],{
+		A:"#forge:plates/invar",
+		B:"minecraft:bucket"
+	}
+	).id("pipez:fluid_pipe")
+
+	kubejs.shaped("16x pipez:energy_pipe",[
+		"ABA"
+	],{
+		A:"#forge:plates/invar",
+		B:"minecraft:redstone"
+	}
+	).id("pipez:energy_pipe")
+
+	kubejs.shaped("16x pipez:gas_pipe",[
+		"ABA"
+	],{
+		A:"#forge:plates/invar",
+		B:'mekanism:alloy_infused'
+	}
+	).id("pipez:gas_pipe")
+
+	kubejs.shapeless("4x pipez:universal_pipe",[
+		"pipez:item_pipe",
+		"pipez:fluid_pipe",
+		"pipez:energy_pipe",
+		"pipez:gas_pipe",
+	]
+	).id("pipez:universal_pipe")
 })
