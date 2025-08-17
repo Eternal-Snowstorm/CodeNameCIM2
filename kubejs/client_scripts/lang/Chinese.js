@@ -82,6 +82,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("lubricating_oil", "润滑油")
 	addFluidLanguage("oil_shale_steam", "油页岩蒸汽")
 	addFluidLanguage("sea_water", "海水")
+	addFluidLanguage("concentrated_sea_water", "浓缩海水")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
