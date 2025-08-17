@@ -1,0 +1,344 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bronze"
+	group: "65AEEF30E0964DD3"
+	icon: "cmi:bronze_mechanism"
+	id: "2C49C2F1F297D7CC"
+	images: [{
+		height: 25.56d
+		image: "cmi:textures/images/background/bronze.png"
+		rotation: 0.0d
+		width: 31.74d
+		x: 1.5d
+		y: 7.0d
+	}]
+	order_index: 35
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependent_lines: true
+			id: "030D8928C9CB73E3"
+			rewards: [{
+				id: "7D5D24D24167A755"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "02357DF2AF76925B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "Any #forge:ingots/bronze"
+				type: "item"
+			}]
+			title: "Bronze Ingot"
+			x: -6.987142857142864d
+			y: 12.107142857142847d
+		}
+		{
+			dependencies: ["030D8928C9CB73E3"]
+			hide_dependent_lines: true
+			id: "14341BC5791FBEEE"
+			tasks: [{
+				id: "58D7B0FAE9577FAC"
+				title: "Press"
+				type: "checkmark"
+			}]
+			x: -4.117142857142866d
+			y: 13.714285714285708d
+		}
+		{
+			dependencies: ["14341BC5791FBEEE"]
+			hide_dependent_lines: true
+			id: "6A77A8DDDC4663D8"
+			tasks: [{
+				id: "5295AEDB69CD2A6F"
+				title: "Cut"
+				type: "checkmark"
+			}]
+			x: -1.3900000000000077d
+			y: 13.357142857142847d
+		}
+		{
+			hide_dependent_lines: true
+			id: "49B77BD83F5DB967"
+			rewards: [{
+				id: "500F67647E2C740E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5A72D5E7B1CC9EE4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "Any #forge:ingots/bronze"
+				type: "item"
+			}]
+			title: "Bronze Ingot"
+			x: -6.162857142857163d
+			y: 4.785714285714285d
+		}
+		{
+			dependencies: ["49B77BD83F5DB967"]
+			hide_dependent_lines: true
+			id: "53C2429F47DDF6BE"
+			tasks: [{
+				id: "58DDD171B4BF894E"
+				title: "Craft"
+				type: "checkmark"
+			}]
+			x: -4.020000000000017d
+			y: 5.785714285714285d
+		}
+		{
+			dependencies: ["53C2429F47DDF6BE"]
+			hide_dependent_lines: true
+			id: "7FBE58CD94EDF608"
+			rewards: [{
+				id: "1765E0030256B874"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3CE98106C09DDE15"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/bronze"
+					}
+				}
+				title: "Any #forge:rods/bronze"
+				type: "item"
+			}]
+			title: "Bronze Rod"
+			x: -2.0785714285714363d
+			y: 7.428571428571431d
+		}
+		{
+			dependencies: ["7FBE58CD94EDF608"]
+			hide_dependent_lines: true
+			id: "77E2E7C835C9A5A6"
+			tasks: [{
+				id: "6341C438FB18151E"
+				title: "Spring Coil"
+				type: "checkmark"
+			}]
+			x: 0.6485714285714153d
+			y: 8.357142857142854d
+		}
+		{
+			dependencies: [
+				"6A77A8DDDC4663D8"
+				"77E2E7C835C9A5A6"
+			]
+			hide_dependent_lines: true
+			id: "2246119940BE1CC8"
+			rewards: [{
+				id: "549C21AFD346014C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "48177B43CA972793"
+				item: "vintageimprovements:bronze_spring"
+				type: "item"
+			}]
+			title: "Bronze Spring"
+			x: 0.0185714285714198d
+			y: 11.92857142857143d
+		}
+		{
+			dependencies: ["2246119940BE1CC8"]
+			hide_dependent_lines: true
+			id: "3C02E5BE5044A233"
+			rewards: [{
+				id: "20D05B3FDBCF1E02"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4537D660DD4E8D28"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:nuggets/bronze"
+					}
+				}
+				title: "Any #forge:nuggets/bronze"
+				type: "item"
+			}]
+			title: "Bronze Nugget"
+			x: 3.88857142857141d
+			y: 13.499999999999993d
+		}
+		{
+			hide_dependent_lines: true
+			id: "60A73FC123F9BF46"
+			rewards: [{
+				id: "7FEE7A2E325B0EFD"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2069529C84AAA6E8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:shaft"
+					}
+				}
+				title: "Any #create:shaft"
+				type: "item"
+			}]
+			title: "Shaft"
+			x: 0.03142857142855604d
+			y: 4.208571428571432d
+		}
+		{
+			dependencies: [
+				"60A73FC123F9BF46"
+				"77856E8F981CE7D1"
+			]
+			hide_dependent_lines: true
+			id: "0E8FBC83516CD28D"
+			tasks: [{
+				id: "36DA54172A662E65"
+				title: "Deploy *4"
+				type: "checkmark"
+			}]
+			x: 2.8171428571428407d
+			y: 5.274285714285718d
+		}
+		{
+			id: "6C122FECB20AE322"
+			rewards: [{
+				id: "06114364FFAC838C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4295DF43DEFEC755"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "Any #forge:ingots/bronze"
+				type: "item"
+			}]
+			title: "Bronze Ingot"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C122FECB20AE322"]
+			hide_dependent_lines: true
+			id: "3AAC31907C14A332"
+			tasks: [{
+				id: "23804518F056F3EA"
+				title: "Press"
+				type: "checkmark"
+			}]
+			x: 5.745714285714264d
+			y: 0.40571428571430346d
+		}
+		{
+			dependencies: ["3AAC31907C14A332"]
+			hide_dependent_lines: true
+			id: "77856E8F981CE7D1"
+			rewards: [{
+				id: "5B83441A634E5503"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7337A6C18E2EACC9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/bronze"
+					}
+				}
+				title: "Any #forge:plates/bronze"
+				type: "item"
+			}]
+			title: "Bronze Plate"
+			x: 4.745714285714271d
+			y: 2.257142857142881d
+		}
+		{
+			dependencies: [
+				"3C02E5BE5044A233"
+				"0E8FBC83516CD28D"
+			]
+			hide_dependent_lines: true
+			id: "44C521FE3FBC6A9D"
+			rewards: [{
+				id: "4406CC5F28FFDEE9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0D92763ADC4AD06E"
+				item: "create:flywheel"
+				type: "item"
+			}]
+			title: "Flywheel"
+			x: 6.602857142857118d
+			y: 11.180000000000028d
+		}
+		{
+			dependencies: ["44C521FE3FBC6A9D"]
+			hide_dependent_lines: true
+			id: "3CA006E9B0EAA55C"
+			rewards: [{
+				id: "6AF7362155793F38"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7645526BF4F68208"
+				item: "cmi:mechanical_mechanism_part"
+				type: "item"
+			}]
+			title: "Mechanism Part"
+			x: 10.245714285714264d
+			y: 12.680000000000028d
+		}
+		{
+			dependencies: ["3CA006E9B0EAA55C"]
+			hide_dependent_lines: true
+			id: "54C3EBB620082883"
+			rewards: [{
+				id: "3FB1D94A84D58E96"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7EC253E0F1BE8445"
+				item: "cmi:bronze_mechanism"
+				type: "item"
+			}]
+			title: "Bronze Mechanism"
+			x: 12.102857142857125d
+			y: 13.537142857142882d
+		}
+	]
+	title: "Bronze"
+}
