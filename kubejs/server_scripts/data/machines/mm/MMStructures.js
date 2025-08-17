@@ -9,15 +9,15 @@ MMEvents.createStructures((event) => {
 		return map[getCurrentClientLanguage] || map[DEFAULT_LANGUAGE] || Object.values(map)[0] || ""
 	}
 
-	function addMMStructure(id, controller, names, layout) {
-		return event.create(id)
-			.controllerId(controller)
+	function addMMStructure(id, names, layout) {
+		return event.create(`${global.namespace}:${id}_structure`)
+			.controllerId(`mm:${id}`)
 			.name(getLangText(names))
 			.layout(layout)
 	}
 
 	// 大型蒸汽锅炉
-	addMMStructure("cmi:large_steam_boiler_structure", "mm:large_steam_boiler", {
+	addMMStructure("large_steam_boiler", {
 		zh_cn: "大型蒸汽锅炉",
 		en_us: "Large Steam Boiler"
 	}, (builder) => {
@@ -59,7 +59,7 @@ MMEvents.createStructures((event) => {
 	})
 
 	// 蒸汽矿石处理机
-	addMMStructure("cmi:steam_ore_processor_structure", "mm:steam_ore_processor", {
+	addMMStructure("steam_ore_processor", {
 		zh_cn: "蒸汽矿石处理机",
 		en_us: "Steam Ore Processor"
 	}, (builder) => {
@@ -107,7 +107,7 @@ MMEvents.createStructures((event) => {
 	})
 
 	// 粒子对撞机
-	addMMStructure("cmi:particle_collision_machine_structure", "mm:particle_collision_machine", {
+	addMMStructure("particle_collision_machine", {
 		zh_cn: "粒子对撞机",
 		en_us: "Particle Collider Machine"
 	}, (builder) => {
@@ -144,7 +144,7 @@ MMEvents.createStructures((event) => {
 	})
 
 	// 裂化炉
-	addMMStructure("cmi:cracker_structure", "mm:cracker", {
+	addMMStructure("cracker", {
 		zh_cn: "裂化机",
 		en_us: "Cracker"
 	}, (builder) => {
