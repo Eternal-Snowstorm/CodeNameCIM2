@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "create:precision_mechanism"
 	id: "7E1852EB31247391"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -56,6 +56,7 @@
 				xp: 10
 			}]
 			shape: "diamond"
+			subtitle: "谁能告诉我为什么红石和石英会变成玫瑰石英"
 			tasks: [
 				{
 					id: "1D7DCB92BD5622DB"
@@ -78,7 +79,6 @@
 							value: "forge:dusts/redstone"
 						}
 					}
-					task_screen_only: true
 					title: "红石"
 					type: "item"
 				}
@@ -187,17 +187,25 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "比充能器好用"
-			tasks: [{
-				id: "1EE3FF3F20F49E31"
-				item: "createaddition:tesla_coil"
-				type: "item"
-			}]
+			subtitle: "比充能器好用一百亿倍"
+			tasks: [
+				{
+					id: "1EE3FF3F20F49E31"
+					item: "createaddition:tesla_coil"
+					type: "item"
+				}
+				{
+					id: "1CC9AD52318DA6A6"
+					item: "create:depot"
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["3B48B2AE5448F88E"]
+			description: ["本整合包稍微加强了这个发电机, 提升了自身的存储量, 并且发电量由480提升到了640"]
 			id: "11BE58B08BECE324"
 			rewards: [{
 				id: "1B10920C33D31991"
@@ -210,7 +218,8 @@
 				item: "createaddition:alternator"
 				type: "item"
 			}]
-			x: -2.5d
+			title: "交流发电机-超级原始的发电机"
+			x: -3.0d
 			y: 3.5d
 		}
 		{
@@ -221,7 +230,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "制作冲压模具"
+			subtitle: "你最好别钻进去"
 			tasks: [{
 				id: "246DFA8C4195A3F8"
 				item: "vintageimprovements:lathe"
@@ -239,11 +248,25 @@
 				xp: 10
 			}]
 			subtitle: "速度非常慢, 但是可以帮你省坚固板"
-			tasks: [{
-				id: "1AF7DE7877CF0D43"
-				item: "vintageimprovements:helve_hammer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1AF7DE7877CF0D43"
+					item: "vintageimprovements:helve_hammer"
+					type: "item"
+				}
+				{
+					id: "3EA0DE92459E8F43"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:anvil"
+						}
+					}
+					title: "铁砧"
+					type: "item"
+				}
+			]
 			x: 1.0d
 			y: 3.5d
 		}
@@ -263,8 +286,8 @@
 				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -299,7 +322,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "同样也可以用充能器将就一下"
+			subtitle: "&b拿到手上你的头发会飘起来吗"
 			tasks: [{
 				id: "59578E87A3CB1807"
 				item: {
@@ -361,12 +384,14 @@
 		}
 		{
 			dependencies: ["461F149DB4B79436"]
+			icon: "minecraft:quartz"
 			id: "01A4036255B88FDD"
 			rewards: [{
 				id: "30D056A6A29E7154"
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "一种廉价到不能廉价的宝石"
 			tasks: [{
 				id: "443B840E74F16FEC"
 				item: {
@@ -391,7 +416,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "别放到耳边, 会哇哇哇的叫"
+			subtitle: "别放到耳边, 会哇哇哇的叫, 吵的你头疼"
 			tasks: [{
 				id: "2AAA2CE342011B6C"
 				item: "minecraft:soul_sand"
@@ -448,6 +473,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "可以当夜视仪"
 			tasks: [{
 				id: "6E13312AB1CD6487"
 				item: "cmi:photosensitive_mechanism"
@@ -463,7 +489,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "只需要一点"
+			subtitle: "涂在墨镜上可以模仿柯南"
 			tasks: [{
 				id: "756D3F4A4DB6BF3B"
 				item: {
@@ -586,9 +612,15 @@
 			}]
 			tasks: [
 				{
-					count: 4L
 					id: "7F7C935854BAEE23"
-					item: { Count: 4, id: "createaddition:copper_spool" }
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "createaddition:spools"
+						}
+					}
+					title: "简易能量传输导线"
 					type: "item"
 				}
 				{
@@ -599,7 +631,7 @@
 				}
 			]
 			title: "简易能量传输"
-			x: -4.0d
+			x: -4.5d
 			y: 3.5d
 		}
 		{
@@ -674,6 +706,34 @@
 			title: "致密坚固板"
 			x: 6.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["11BE58B08BECE324"]
+			description: [
+				"本整合包加强了蓄电池, 目前蓄电池最大大小可搭建到8*8*8!"
+				"这可太壮观了!"
+				"并且单个蓄电池方块就可以存储10000000FE的能量!"
+				"{image:cmi:textures/images/accumulator_build.png width:185 height:105 align:center}"
+			]
+			id: "74BB217F948AC507"
+			rewards: [{
+				count: 5
+				id: "70F0896237C4F7F0"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "稳定的蓄电池, 不会漏电!"
+			tasks: [{
+				count: 4L
+				id: "0A809A3B8C373077"
+				item: { Count: 4, id: "createaddition:modular_accumulator" }
+				type: "item"
+			}]
+			title: "你需要一个电池"
+			x: -3.0d
+			y: 2.0d
 		}
 	]
 	title: "智能机械"

@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "create:precision_mechanism"
 	id: "16BF65FE8553A6F6"
-	order_index: 13
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -503,7 +503,7 @@
 				item: "cmi:cobalt_mechanism"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.5d
 			y: -4.0d
 		}
 		{

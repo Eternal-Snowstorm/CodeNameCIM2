@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "cmi:steam_boiler"
 	id: "209B1A2CAFDEB2AA"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -86,6 +86,7 @@
 				xp: 100
 			}]
 			shape: "gear"
+			size: 1.5d
 			subtitle: "青铜构件用于后面的引擎和机器的制作"
 			tasks: [{
 				id: "43F802AD08EAE9DB"
@@ -200,7 +201,10 @@
 		}
 		{
 			dependencies: ["2E433CDEC9C53072"]
-			description: ["蒸汽在小型引擎中的消耗量为100mB/s, 可以产生1024的应力"]
+			description: [
+				"蒸汽在小型引擎中的消耗量为100mB/s, 可以产生1024的应力"
+				"这个引擎可以用于大型应力锅炉前的过渡"
+			]
 			id: "18164A95D55493B4"
 			rewards: [{
 				id: "3BF181CCCFA49440"
@@ -283,7 +287,8 @@
 				{
 					count: 9L
 					id: "4A9EA17F30D65AB4"
-					item: { Count: 9, id: "immersiveengineering:treated_wood_horizontal" }
+					item: "immersiveengineering:treated_wood_horizontal"
+					title: "防腐木板"
 					type: "item"
 				}
 			]

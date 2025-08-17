@@ -399,4 +399,9 @@ ServerEvents.recipes((event) => {
 		type: "thermal:smelter",
 		input: "#forge:dusts",
 	})
+
+	// event.remove({
+	// 	type: "farmersdelight:cutting",
+	// 	input: "#minecraft:logs"
+	// })
 })

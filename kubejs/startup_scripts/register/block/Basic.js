@@ -11,7 +11,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 背景
 	addBlock("green_screen")
-		.lightLevel(() => 15)
+		.lightLevel(15)
 
 	// 锇砖瓦
 	addBlock("osmium_tile")

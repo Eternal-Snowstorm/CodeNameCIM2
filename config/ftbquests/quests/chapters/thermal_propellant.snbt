@@ -5,13 +5,14 @@
 	group: "050255AE19A93344"
 	icon: "thermal:rf_coil"
 	id: "62433C137A51E5F8"
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["2B6B38F467E0A162"]
 			id: "6A562CAD5AADE8B9"
 			shape: "gear"
+			subtitle: "感觉里面的空间会很有安全感.."
 			tasks: [{
 				id: "7E95340D78CDBC0C"
 				item: "thermal:machine_frame"
@@ -93,12 +94,13 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "这个东西接上电转的飞快"
+			subtitle: "但它不是马达"
 			tasks: [{
 				id: "750621601DAB2155"
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
+			title: "这个东西接上电转的飞快"
 			x: -5.5d
 			y: -3.0d
 		}
@@ -388,6 +390,11 @@
 		{
 			dependencies: ["74D97642DAB6DF6F"]
 			id: "0F2EA46939C06520"
+			rewards: [{
+				id: "26263CABA0662228"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "5FF2CCC88F015D21"
@@ -398,7 +405,7 @@
 						value: "forge:plates/polyolefin"
 					}
 				}
-				title: "Any #forge:plates/polyolefin"
+				title: "聚烯烃板"
 				type: "item"
 			}]
 			x: 2.5d
@@ -427,11 +434,8 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"1B1E5D3285128DF5"
-				"7A517683CCCFF700"
-				"2C009ACB6368F1D5"
-			]
+			dependencies: ["7A517683CCCFF700"]
+			icon: "immersiveindustry:chemical_reactor"
 			id: "6F9E16D27C6C973B"
 			rewards: [{
 				id: "4039BA750D96B28D"
@@ -439,50 +443,23 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "279D0BF6561EF618"
-				item: "thermal_extra:fluid_mixer"
-				type: "item"
+				id: "2C4A86150FAE0464"
+				title: "反应釜"
+				type: "checkmark"
 			}]
+			title: "你需要一个反应釜"
 			x: -2.0d
 			y: 0.5d
 		}
 		{
-			id: "2C009ACB6368F1D5"
-			tasks: [{
-				id: "5A3C4F9AA0F11AE7"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/twinite"
-					}
-				}
-				title: "Any #forge:dusts/twinite"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 1.5d
-		}
-		{
 			id: "7A517683CCCFF700"
 			tasks: [{
-				id: "5D773AA22905C2C2"
-				item: "thermal:latex_bucket"
+				id: "5B4E01D8D4E9F896"
+				item: "mekanism:ethene_bucket"
 				type: "item"
 			}]
 			x: -3.5d
-			y: 1.0d
-		}
-		{
-			id: "1B1E5D3285128DF5"
-			subtitle: "好怕它飘到太空"
-			tasks: [{
-				id: "1A924CD0CE1208E1"
-				item: "thermal:glowstone_bucket"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["42DA0B5B429DACC9"]

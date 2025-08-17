@@ -20,6 +20,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("#cmi:multiblock_machine_controller")
 	addCommonTooltip("cmi:stone_plate")
 	addCommonTooltip("cmi:cast_iron_ingot")
+	addCommonTooltip("cmi:creosote_wood_chip_briquette")
 
 	addCommonTooltip("createaddition:bioethanol")
 	addCommonTooltip("thermal_extra:diesel")

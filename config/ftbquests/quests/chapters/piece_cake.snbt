@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "mekanism:pellet_antimatter"
 	id: "18F1DE7F79086F03"
-	order_index: 11
+	order_index: 12
 	quest_links: [ ]
 	quests: [
 		{
@@ -85,7 +85,7 @@
 		}
 		{
 			dependencies: ["29F86C33F70E9575"]
-			description: ["No need to thank me cus this is the exact amount of material to build an SPS"]
+			description: ["无需感谢我, 因为这是搭建SPS的确切材料数量"]
 			id: "27CBF88AFC0584A6"
 			rewards: [{
 				id: "370527A3EFC9290D"
