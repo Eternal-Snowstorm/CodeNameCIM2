@@ -10,7 +10,7 @@ ServerEvents.highPriorityData((event) => {
 	]
 	materialType.forEach((type) => {
 		global.metalGroup.forEach((material) => {
-			let ids = Ingredient.of(`#forge:${type}s/${material}`).getItemIds()
+			let ids = Ingredient.of(`#forge:${type}/${material}`).getItemIds()
 			if (ids.length > 0) {
 				event.addJson(`oei:replacements/${material}_${type}.json`, {
 					"matchItems": [`#forge:${type}/${material}`],
@@ -19,12 +19,5 @@ ServerEvents.highPriorityData((event) => {
 				console.log("aaa")
 			}
 		})
-	})
-
-	event.addJson("oei:replacements/material.json", {
-		"matchItems": [
-			`#forge:plates/iron`
-		],
-		"resultItems": "create:iron_sheet"
 	})
 })
