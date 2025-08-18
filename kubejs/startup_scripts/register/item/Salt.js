@@ -63,7 +63,7 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:chem_salts")
 	addItem("pbso4")
 		.texture(`${global.namespace}:item/material/salt/pbso4`)
-		.tag("forge:chem_saltslead")
+		.tag("forge:chem_salts/lead")
 		.tag("forge:chem_salts")
 
 	addItem("crcl3")

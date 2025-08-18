@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
 	}).id("create:crafting/kinetics/rope_pulley")
 
 	// 石磨
-	kubejs.shaped("create:millstone", [
+	kubejs.shaped("2x create:millstone", [
 		"A A",
 		"BCB",
 		"DDD"
@@ -310,7 +310,7 @@ ServerEvents.recipes((event) => {
 	}).id("ratatouille:spreader")
 
 	// 翻牌显示器
-	kubejs.shaped("create:display_board", [
+	kubejs.shaped("4x create:display_board", [
 		"BAB"
 	], {
 		A: mech,

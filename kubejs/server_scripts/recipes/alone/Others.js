@@ -194,7 +194,7 @@ ServerEvents.recipes((event) => {
 		B: "#forge:rods/wooden"
 	}).id("cmi:peat_torch")
 
-	// pipez item/fluid/nergy/gas/all
+	// pipez item|fluid|energy|gas|all
 	kubejs.shaped("16x pipez:item_pipe", [
 		"ABA"
 	], {
@@ -229,4 +229,9 @@ ServerEvents.recipes((event) => {
 		"pipez:energy_pipe",
 		"pipez:gas_pipe",
 	]).id("pipez:universal_pipe")
+
+	kubejs.shapeless('cmi:mechanism', [
+		"cmi:dont_kill_belalus",
+		"#create:mechanisms",
+	])
 })

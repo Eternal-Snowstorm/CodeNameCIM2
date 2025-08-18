@@ -71,4 +71,16 @@ ServerEvents.recipes((event) => {
 		B: 'cmi:sky_stone_casing',
 		C: 'ae2:annihilation_core',
 	}).id("ae2:network/blocks/interfaces_interface")
+
+	kubejs.shapeless('2x ae2:formation_core', [
+		"cmi:smart_mechanism",
+		"ae2:fluix_dust",
+		"#ae2:all_certus_quartz"
+	]).id("ae2:materials/formationcore")
+
+	kubejs.shapeless('2x ae2:annihilation_core', [
+		"cmi:smart_mechanism",
+		"ae2:fluix_dust",
+		"minecraft:nether_quartz"
+	]).id("ae2:materials/annihilationcore")
 })

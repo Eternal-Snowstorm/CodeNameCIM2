@@ -62,6 +62,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")
 	addItemLanguage("mekanism_processor", "通用处理器")
 	addItemLanguage("music_disc_mechanism", "DontkillBelalus - Mechanism")
+	
+	addItemLanguage("reactive_element", "活泼元素")
+	addItemLanguage("stable_element", "稳定元素")
+	addItemLanguage("explosive_element", "爆鸣元素")
 
 	addCastItemLanguage("mechanism", "构件")
 	addCastItemLanguage("nugget", "粒")

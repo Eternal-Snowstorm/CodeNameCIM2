@@ -163,4 +163,16 @@ StartupEvents.registry("item", (event) => {
 	// 计算机组件半成品
 	addItem("incomplete_computer_component")
 		.texture(`${global.namespace}:item/material/incomplete_computer_component`)
+
+	// 活泼元素
+	addItem("reactive_element")
+		.texture(`${global.namespace}:item/material/cc/1`)
+
+	// 稳定元素
+	addItem("stable_element")
+		.texture(`${global.namespace}:item/material/cc/2`)
+
+	// 爆鸣元素
+	addItem("explosive_element")
+		.texture(`${global.namespace}:item/material/cc/3`)
 })

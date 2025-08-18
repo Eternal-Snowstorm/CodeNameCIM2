@@ -33,14 +33,14 @@ ServerEvents.recipes((event) => {
 		B: "create:fluid_pipe"
 	}).id("create:crafting/kinetics/smart_fluid_pipe")
 
-	// 大聪明侦测器
-	kubejs.shaped("create:content_observer", [
-		"A",
-		"B"
-	], {
-		A: mech,
-		B: "minecraft:observer"
-	}).id("create:crafting/kinetics/smart_observer")
+	// // 大聪明侦测器
+	// kubejs.shaped("create:content_observer", [
+	// 	"A",
+	// 	"B"
+	// ], {
+	// 	A: mech,
+	// 	B: "minecraft:observer"
+	// }).id("create:crafting/kinetics/smart_observer")
 
 	// 存量转信器
 	kubejs.shaped("create:stockpile_switch", [

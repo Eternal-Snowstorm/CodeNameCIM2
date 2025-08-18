@@ -43,15 +43,13 @@ ServerEvents.recipes((event) => {
 	]).id("create:compacting/blaze_cake")
 
 	// 激光发射器
-	create.mechanical_crafting("vintageimprovements:laser_item", [
+	kubejs.shaped("vintageimprovements:laser_item", [
 		" A ",
-		"BCB",
 		"BDB",
 		" E "
 	], {
 		A: "#forge:dusts/redstone",
 		B: "#forge:plates/copper",
-		C: "create:electron_tube",
 		D: "createaddition:capacitor",
 		E: "cmi:photosensitive_mechanism"
 	}).id("vintageimprovements:mechanical_crafting/laser")
