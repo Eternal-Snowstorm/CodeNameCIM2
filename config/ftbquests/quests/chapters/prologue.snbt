@@ -28,7 +28,7 @@
 			]
 			shape: "gear"
 			size: 1.8d
-			subtitle: "哈哈你坠机啦"
+			subtitle: "你坠机啦"
 			tasks: [{
 				id: "22D0220F20C29089"
 				type: "checkmark"
@@ -48,9 +48,8 @@
 				""
 				"我基于任务, 思索和JEI编写了这一套仪式, 我将其命名为&e构件与革新&r. 我相信它可以帮助每一个像你这样流浪到这里的旅人"
 				""
-				"&a当然, 它的内容并不完全, 我也不可能事无巨细地把所有的细节都教给你, 你总是需要自己去探索那些大量的, 并不在仪式说明中的内容&r"
-				""
-				"{image:cmi:textures/images/slime_authorization.png width:144 height:45 align:center}"
+				"&a当然, 它的内容并不完全, 我也不可能事无巨细地把所有的细节都教给你, 你总是需要自己去探索那些大量且不在仪式说明中的内容&r"
+				"{image:cmi:textures/images/authorization/slime_authorization.png width:144 height:45 align:center}"
 				"&b文案来自黄铜协奏曲, 已经过原作者授权"
 			]
 			disable_toast: true
@@ -69,11 +68,10 @@
 				type: "checkmark"
 			}]
 			title: "关于思索, 任务和JEI"
-			x: -3.0d
-			y: 0.0d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
-			description: [""]
 			disable_toast: true
 			icon: "create:wrench"
 			id: "16E08617F49E62A9"
@@ -97,8 +95,8 @@
 				type: "checkmark"
 			}]
 			title: "科技树"
-			x: -1.5d
-			y: -2.5d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			disable_toast: true
@@ -118,14 +116,14 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "当前版本: Beta-2.1.0"
+			subtitle: "当前版本: Beta-2.2.0"
 			tasks: [{
 				id: "79D5B1959C780861"
 				type: "checkmark"
 			}]
-			title: "测试发行版"
-			x: 1.5d
-			y: -2.5d
+			title: "版本?"
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			description: [
@@ -164,13 +162,15 @@
 				type: "checkmark"
 			}]
 			title: "CMI Dev Team"
-			x: 3.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
 			description: [
 				"如果你不是一位水槽包玩家, 你看到任务或许会觉得有些水槽..."
 				"如果你不知道要做什么的话, 你可以按照下面的构件产线去生产构件"
+				""
+				"并且任务设计灵感来源于PVZ2早期的迷宫地图"
 			]
 			icon: "ftbquests:book"
 			id: "79AA74F5F585BC6B"
@@ -185,8 +185,8 @@
 				title: "关于任务线"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 2.5d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -475,13 +475,13 @@
 				type: "checkmark"
 			}]
 			title: "关于刷怪"
-			x: 1.5d
-			y: 2.5d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			description: [
-				"[？？]史莱姆li"
-				"[音乐]DontkillBelalus"
+				"[？？] 史莱姆li"
+				"[音乐] DontkillBelalus"
 			]
 			icon: "minecraft:apple"
 			id: "30ED8BD20D50F96D"
@@ -492,13 +492,13 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "我们愿奉上最真诚的致谢"
+			subtitle: "他们是制作整合包时提供了帮助的人"
 			tasks: [{
 				id: "47BA93F1301917CD"
 				title: "致谢名单"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -510,8 +510,8 @@
 				title: "温馨提示"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: 0.0d
+			y: -4.0d
 		}
 	]
 	title: "开始"

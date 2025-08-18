@@ -80,19 +80,36 @@ StartupEvents.registry("item", (event) => {
 	// 木屑加工系列
 	addItem("wood_chip_briquette")
 		.texture(`${global.namespace}:item/material/wood_chip/stage_1`)
-		.burnTime(800)
+		.burnTime(200 * 10)
 
 	addItem("compressed_wood_chip_briquette")
 		.texture(`${global.namespace}:item/material/wood_chip/stage_2`)
-		.burnTime(3600)
+		.burnTime(200 * 30)
 
 	addItem("densely_packed_wood_chip_briquette")
 		.texture(`${global.namespace}:item/material/wood_chip/stage_3`)
-		.burnTime(9200)
+		.burnTime(200 * 60)
 
 	addItem("creosote_wood_chip_briquette")
 		.texture(`${global.namespace}:item/material/wood_chip/done`)
-		.burnTime(16000)
+		.burnTime(200 * 100)
+		.food((food) => {
+			food.hunger(20)
+				.saturation(1)
+				.effect("immersiveengineering:flammable", 20 * 60, 5, 1)
+				.effect("minecraft:blindness", 20 * 60, 5, 1)
+				.effect("minecraft:nausea", 20 * 60, 5, 1)
+				.effect("minecraft:instant_damage", 1, 1, 1)
+				.eaten((event) => {
+					let { player, level } = event
+					let key = `message.${global.namespace}.food.creosote_wood_chip_briquette`
+
+					if (event.hand !== "MAIN_HAND" && !level.isClientSide()) {
+						player.displayClientMessage(Component.translate(key).blue(), true)
+					}
+				})
+		})
+		.tag("create:blaze_burner_fuel/special")
 
 	// 安山岩
 	addItem("andesite_dust")

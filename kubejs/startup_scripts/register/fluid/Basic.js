@@ -55,4 +55,5 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("kerosene")
 	addAloneFluid("lubricating_oil")
 	addAloneFluid("sea_water")
+	addAloneFluid("concentrated_sea_water")
 })

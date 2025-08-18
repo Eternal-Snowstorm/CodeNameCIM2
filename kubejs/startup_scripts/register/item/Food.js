@@ -23,7 +23,7 @@ StartupEvents.registry("item", (event) => {
 					let key = `message.${global.namespace}.food.andesite_alloy_noodle`
 
 					if (event.hand !== "MAIN_HAND" && !level.isClientSide()) {
-						player.tell(Component.translate(key).blue())
+						player.displayClientMessage(Component.translate(key).blue(), true)
 					}
 				})
 		})

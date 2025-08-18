@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "ae2:controller"
 	id: "6222051868900EF4"
-	order_index: 8
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -315,7 +315,7 @@
 						value: "forge:sand"
 					}
 				}
-				title: "Any #forge:sand"
+				title: "沙子"
 				type: "item"
 			}]
 			x: -11.5d

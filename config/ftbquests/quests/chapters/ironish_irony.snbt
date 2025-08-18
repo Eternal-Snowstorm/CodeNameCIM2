@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "immersiveengineering:arc_furnace"
 	id: "6D70BA971FA80DD3"
-	order_index: 7
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -178,7 +178,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "他们都可以由构件催生器生成"
+			subtitle: "它们都可以由构件催生器生成"
 			tasks: [{
 				id: "41634AB6CA683C80"
 				item: {
@@ -199,32 +199,49 @@
 			dependencies: ["738AA5C4C4167BFB"]
 			icon: "immersiveindustry:crucible"
 			id: "47D11B96A16AB842"
+			rewards: [
+				{
+					id: "4E23D08C5B8BFEAF"
+					item: "immersiveindustry:crucible"
+					type: "item"
+				}
+				{
+					id: "0AC65E2993329C45"
+					type: "xp"
+					xp: 50
+				}
+			]
 			subtitle: "瞅瞅工程师手册"
 			tasks: [
 				{
+					consume_items: true
 					count: 13L
 					id: "123A1CB64DB84D2E"
 					item: "cmi:crucible_base"
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "3BF6F78FDA14BAA6"
 					item: "cmi:crucible_tuyere"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "32B4056AE87EB0F4"
 					item: "immersiveindustry:burning_chamber"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 16L
 					id: "4199A9FBF2935DC6"
-					item: { Count: 16, id: "immersiveengineering:blastbrick" }
+					item: "immersiveengineering:blastbrick"
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "4AB9667ACB682703"
 					item: "immersiveengineering:blastfurnace_preheater"
 					type: "item"
@@ -236,6 +253,11 @@
 		}
 		{
 			id: "60113F54A37402B6"
+			rewards: [{
+				id: "64418ABAF03CD7E7"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5CBAD161EEDA5452"
 				item: {
@@ -281,16 +303,33 @@
 			dependencies: ["511A9A1AAB98500B"]
 			dependency_requirement: "one_completed"
 			id: "638C473E89416E79"
-			tasks: [{
-				id: "156BABFDA236F5A1"
-				item: "vintageimprovements:vacuum_chamber"
-				type: "item"
+			rewards: [{
+				id: "7F02F3CA1F94BC2B"
+				type: "xp"
+				xp: 10
 			}]
+			tasks: [
+				{
+					id: "156BABFDA236F5A1"
+					item: "vintageimprovements:vacuum_chamber"
+					type: "item"
+				}
+				{
+					id: "5D3CE0D8B04CE661"
+					item: "create:basin"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			id: "763E30AB21E0FAAE"
+			rewards: [{
+				id: "76A4F1F90D24AB19"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "1333E591BC131554"
 				item: "create:blaze_cake"

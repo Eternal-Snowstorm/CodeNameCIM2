@@ -7,15 +7,7 @@
 	group: "050255AE19A93344"
 	icon: "minecraft:oak_log"
 	id: "7CF1214F39DD4E53"
-	images: [{
-		height: 4.0d
-		image: "cmi:textures/images/unfinished.png"
-		rotation: 0.0d
-		width: 11.0d
-		x: -1.5d
-		y: -6.5d
-	}]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -33,32 +25,18 @@
 			}]
 			size: 2.0d
 			subtitle: "记得种回去"
-			tasks: [
-				{
-					id: "5B1C9F698CB8E5CC"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:logs"
-						}
+			tasks: [{
+				id: "5B1C9F698CB8E5CC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
 					}
-					title: "原木"
-					type: "item"
 				}
-				{
-					id: "085A25218DA4CDA5"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:saplings"
-						}
-					}
-					title: "树苗"
-					type: "item"
-				}
-			]
+				title: "原木"
+				type: "item"
+			}]
 			title: "万恶之源"
 			x: -5.5d
 			y: -1.5d
@@ -81,7 +59,7 @@
 						value: "minecraft:planks"
 					}
 				}
-				title: "Any planks"
+				title: "木板"
 				type: "item"
 			}]
 			title: "木板"
@@ -106,7 +84,7 @@
 						value: "forge:rods/wooden"
 					}
 				}
-				title: "Any #forge:rods/wooden"
+				title: "木棍"
 				type: "item"
 			}]
 			title: "木棍"
@@ -140,10 +118,12 @@
 				xp: 10
 			}]
 			tasks: [{
+				count: 4L
 				id: "6F090051AAF62190"
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
+			title: "用来搓部件"
 			x: -3.5d
 			y: 0.5d
 		}
@@ -162,6 +142,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "匠魂开始"
 			tasks: [
 				{
 					id: "51B80491226B5764"
@@ -179,7 +160,6 @@
 		}
 		{
 			dependencies: ["005CD7BF1218DD20"]
-			description: ["Just make sure you have a full one"]
 			icon: "tconstruct:encyclopedia"
 			id: "5D0FEBD3FC3443C6"
 			rewards: [
@@ -208,12 +188,13 @@
 					type: "advancement"
 				}
 			]
+			subtitle: "可以查看所有的材料数据"
 			tasks: [{
 				id: "726B99C8AA64D96B"
 				item: "tconstruct:encyclopedia"
 				type: "item"
 			}]
-			title: "Encycolpedia Supplement Pack"
+			title: "知识扩充"
 			x: -3.5d
 			y: 2.5d
 		}
@@ -225,6 +206,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "以前叫水泥来着..."
 			tasks: [{
 				id: "220DAA4A983F78AB"
 				item: "tconstruct:grout"
@@ -313,11 +295,18 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "终于可以冶炼金属了"
-			tasks: [{
-				id: "2768A6B87D06FAE1"
-				item: "tconstruct:seared_melter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2768A6B87D06FAE1"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "5E99139C145DC33C"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: 2.5d
 		}
@@ -329,6 +318,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "三个沙砾可以合成一个燧石"
 			tasks: [{
 				id: "03C108D923131D75"
 				item: "minecraft:flint"
@@ -458,7 +448,7 @@
 				"7C14A1CC724511CB"
 				"542BB1A40BC1B441"
 			]
-			description: ["Flint hammers only have 1/4 durability, but you can make four"]
+			description: ["燧石制作的锤子只有1/4的耐久, 但你为什么不多做点呢?"]
 			id: "2C0C50F32F39BD3F"
 			rewards: [{
 				id: "1A0161DE002C8C21"
@@ -481,7 +471,12 @@
 		}
 		{
 			dependencies: ["27A18EEBBE063B43"]
-			description: [""]
+			description: [
+				"工业大麻种子可以打草获得"
+				"亚麻普遍可以海边找到"
+				"{image:cmi:textures/images/linen_generate.png width:185 height:105 align:center}"
+			]
+			icon: "minecraft:string"
 			id: "542BB1A40BC1B441"
 			rewards: [{
 				id: "5991A9D3EA6281A2"
@@ -511,10 +506,7 @@
 			y: -3.5d
 		}
 		{
-			description: [
-				"在开始发展前下来先把下面的需求做好"
-				"你需要一把铁镐"
-			]
+			description: ["在开始发展前下来先把下面的需求做好"]
 			icon: "minecraft:grass_block"
 			id: "27A18EEBBE063B43"
 			rewards: [{
@@ -542,12 +534,14 @@
 				xp: 10
 			}]
 			tasks: [{
+				count: 3L
 				id: "086C84A57364C4D5"
 				item: "tconstruct:seared_faucet"
+				title: "浇筑口"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.5d
+			x: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5080AD4A92076C63"]
@@ -564,7 +558,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5080AD4A92076C63"]
@@ -581,31 +575,10 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["5080AD4A92076C63"]
-			description: ["如果你已经找到了岩浆, 你就不需要这个了"]
-			hide_dependency_lines: true
-			id: "7C92CB784271B4C8"
-			optional: true
-			rewards: [{
-				id: "4C0879A3C9315605"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "2EEEB8AEBAE064B9"
-				item: "tconstruct:seared_heater"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2AEF0BF597FF0E36"]
-			hide_dependency_lines: true
+			dependencies: ["749E2F97A546138F"]
 			icon: "tconstruct:seared_fuel_tank"
 			id: "13F1C5092BA578E2"
 			rewards: [{
@@ -613,6 +586,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "提供的温度比固体燃料高"
 			tasks: [
 				{
 					id: "7CE372AE3E49934A"
@@ -631,8 +605,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
-			y: 4.0d
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1270086FA79438E4"]
@@ -644,7 +618,14 @@
 			}]
 			tasks: [{
 				id: "232BBF458E1AFF0B"
-				item: "minecraft:sand"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:sand"
+					}
+				}
+				title: "沙子"
 				type: "item"
 			}]
 			x: -1.5d
@@ -663,7 +644,14 @@
 			}]
 			tasks: [{
 				id: "70E9058D52101ABD"
-				item: "minecraft:glass"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:glass"
+					}
+				}
+				title: "玻璃"
 				type: "item"
 			}]
 			x: -1.5d
@@ -748,7 +736,7 @@
 				}
 			]
 			x: 3.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4594936AAC131166"]
@@ -780,6 +768,66 @@
 			]
 			x: 2.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["542BB1A40BC1B441"]
+			description: ["整合包做了对灰化土的兼容, 灰化土也可以用锄头右键耕地了"]
+			icon: {
+				Count: 1
+				id: "tconstruct:mattock"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:cobalt"
+						"tconstruct:cobalt"
+						"tconstruct:cobalt"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:lightweight"
+						}
+						{
+							level: 1
+							name: "tconstruct:tilling"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.1f
+						"tconstruct:durability": 1.25f
+						"tconstruct:mining_speed": 1.1f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 4.125f
+						"tconstruct:attack_speed": 1.1434499f
+						"tconstruct:draw_speed": 1.09f
+						"tconstruct:durability": 1049.9999f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:mining_speed": 9.084075f
+						"tconstruct:velocity": 1.09f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			id: "648444B110FB640D"
+			rewards: [{
+				id: "7D0D7AFFEB1768E8"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "灰化土也可以耕地"
+			tasks: [{
+				id: "5580C021BA791527"
+				title: "要种地"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -4.5d
 		}
 	]
 	title: "艰难前期"
