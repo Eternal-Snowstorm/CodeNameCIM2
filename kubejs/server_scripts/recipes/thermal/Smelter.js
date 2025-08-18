@@ -18,8 +18,8 @@ ServerEvents.recipes((event) => {
 	])
 
 	thermal.smelter("4x thermal:bronze_ingot", [
-		["3x #forge:dusts/copper","3x #forge:ingots/copper"],
-		["#forge:dusts/tin","#forge:ingots/tin"],
+		"3x #forge:ingots/copper",
+		"#forge:ingots/tin",
 	])
 
 	thermal.smelter("thermalendergy:prismalium_ingot", [
@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 
 	thermal.smelter("thermalendergy:melodium_ingot", [
 		["minecraft:amethyst_shard"],
-		["#forge:dusts/chormium","#forge:ingots/chormium"],
+		["#forge:dusts/chromium","#forge:ingots/chromium"],
 		["minecraft:glowstone"],
 	])
 
@@ -42,31 +42,31 @@ ServerEvents.recipes((event) => {
 
 	thermal.smelter("2x thermal_extra:dragonsteel_ingot", [
 		["thermal_extra:ancient_dust"],
-		["netherite_scarp"],
+		["minecraft:netherite_scarp"],
 		["#forge:dusts/ender_pearl","minecraft:ender_pearl"],
 	])
 
 	thermal.smelter("2x thermal_extra:abyssal_ingot", [
 		["#forge:dusts/diamond"],
-		["netherite_scarp"],
+		["minecraft:netherite_scarp"],
 		["minecraft:echo_shard"],
 	])
 
 	thermal.smelter("3x thermal:invar_ingot", [
-		["2x #forge:dusts/iron","2x #forge:ingots/iron"],
-		["#forge:dusts/nickel","#forge:ingots/nickel"],
+		"2x #forge:ingots/iron",
+		"#forge:ingots/nickel",
 	])
 
 	thermal.smelter("4x thermal:signalum_ingot", [
-		["3x #forge:dusts/copper","3x #forge:ingots/copper"],
-		["#forge:dusts/silver","#forge:ingots/silver"],
-		["4x minecraft:redstone"],
+		"3x #forge:ingots/copper",
+		"#forge:ingots/silver",
+		"4x minecraft:redstone",
 	])
 
 	thermal.smelter("4x thermal:lumium_ingot", [
-		["3x #forge:dusts/tin","3x #forge:ingots/tin"],
-		["#forge:dusts/silver","#forge:ingots/silver"],
-		["2x minecraft:glowstone"],
+		"3x #forge:ingots/tin",
+		"#forge:ingots/silver",
+		"2x minecraft:glowstone_dust",
 	])
 
 	thermal.smelter('tconstruct:cinderslime_ingot', [

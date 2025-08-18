@@ -81,6 +81,6 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless('2x ae2:annihilation_core', [
 		"cmi:smart_mechanism",
 		"ae2:fluix_dust",
-		"minecraft:nether_quartz"
+		"minecraft:quartz"
 	]).id("ae2:materials/annihilationcore")
 })

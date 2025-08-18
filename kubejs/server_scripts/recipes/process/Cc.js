@@ -26,11 +26,11 @@ ServerEvents.recipes((event) => {
         '#forge:chem_salts/copper',
         '#forge:chem_salts/gold',
         '#forge:chem_salts/silver',
-        '#forge:chem_salts/osmiumm',
+        '#forge:chem_salts/osmium',
         '#forge:chem_salts/platinum',
     ])
 
-	thermal.smelter('create:chromatic_compound', [
+	thermal.smelter('3x create:chromatic_compound', [
 		"cmi:explosive_element",
 		"cmi:reactive_element",
 		"cmi:stable_element",
