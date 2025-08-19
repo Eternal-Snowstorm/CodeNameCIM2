@@ -1,8 +1,8 @@
 Ponder.registry((event) => {
     event.create([
-        'mekanism:supercharged_coil',
-        'mekanism:sps_casing',
-        'mekanism:sps_port'
+        "mekanism:supercharged_coil",
+        "mekanism:sps_casing",
+        "mekanism:sps_port"
     ]).scene("cmi:sps", "超临界移相器", "cmi:multiblock/sps", (scene, utils) => {
         scene.scaleSceneView(0.3)
         scene.showStructure(0)
@@ -67,7 +67,7 @@ Ponder.registry((event) => {
         scene.overlay.showOutline("blue", {}, [7, 5, 5, 7, 5, 5], 60)
         scene.showControls(60, [6.5, 5, 5], "right")
             .rightClick()
-            .withItem('mekanism:configurator')
+            .withItem("mekanism:configurator")
             .whileSneaking()
         scene.addKeyframe()
         scene.text(60, "潜行右键将端口调整为输出模式")
