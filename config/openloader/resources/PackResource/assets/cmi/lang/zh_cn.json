@@ -1,0 +1,5 @@
+{
+	"block.cmi.water_pump": "水井",
+	"cmi.tooltip.water_pump.functional": "水井工作正常",
+	"cmi.tooltip.water_pump.non_functional": "水井关键结构缺失"
+}

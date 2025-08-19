@@ -106,42 +106,44 @@ Ponder.registry((event) => {
 		scene.idle(20)
 	})
 
-	/*// 海水
+	// 海水
 	event.create([
 		"cmi:water_pump",
 		"cmi:sea_water_bucket"
-	]).scene("cmi:sea_water_extraction", "Sea Water Extraction", "cmi:multiblock/sea_water", (scene) => {
-		scene.showBasePlate()
-		scene.idle(20)
-		scene.scaleSceneView(0.8)
-	})*/
-
-	event.create(['cmi:water_pump', 'cmi:sea_water_bucket']).scene("cmi:sea_water", "如何用水泵抽取海水", "cmi:multiblock/sea_water", (scene, utils) => {
+	]).scene("cmi:sea_water", "抽取海水", "cmi:multiblock/sea_water", (scene) => {
 		scene.scaleSceneView(0.5)
-		scene.idle(15)
-		let inde1 = scene.world.showIndependentSection([1, 3, 3, 3, 3, 1], Direction.DOWN)
-		let inde2 = scene.world.showIndependentSection([1, 6, 3, 3, 6, 1], Direction.DOWN)
-		let inde3 = scene.world.showIndependentSection([1, 3, 3, 1, 6, 1], Direction.DOWN)
-		let inde4 = scene.world.showIndependentSection([1, 3, 1, 3, 6, 1], Direction.DOWN)
-		scene.idle(15)
+		scene.idle(20)
+
+		let inde1 =
+			scene.world.showIndependentSection([1, 3, 3, 3, 3, 1], Direction.DOWN)
+		let inde2 =
+			scene.world.showIndependentSection([1, 6, 3, 3, 6, 1], Direction.DOWN)
+		let inde3 =
+			scene.world.showIndependentSection([1, 3, 3, 1, 6, 1], Direction.DOWN)
+		let inde4 =
+			scene.world.showIndependentSection([1, 3, 1, 3, 6, 1], Direction.DOWN)
+
+		scene.idle(20)
+
 		scene.addKeyframe()
 		scene.overlay.showOutline("blue", {}, [1, 3, 3, 3, 6, 1], 40)
-		scene.text(40, "如你所见，这是一台水泵")
+		scene.text(40, "如你所见, 这是一台水泵")
 		scene.idle(55)
 		scene.world.hideIndependentSection(inde1, Direction.UP)
 		scene.world.hideIndependentSection(inde2, Direction.UP)
 		scene.world.hideIndependentSection(inde3, Direction.UP)
 		scene.world.hideIndependentSection(inde4, Direction.UP)
-		scene.idle(15)
+		scene.idle(20)
 		scene.world.showSection([0, 0, 0, 6, 6, 6], Direction.DOWN)
-		scene.idle(15)
+		scene.idle(20)
+
 		scene.addKeyframe()
 		scene.overlay.showOutline("blue", {}, [1, 3, 3, 3, 6, 1], 50)
-		scene.text(50, "当其处在海洋群系的海平面上时...", [2, 4.5, 2])
+		scene.text(50, "当其处在海洋群系的海平面上时...(Y=62)", [2, 4.5, 2])
 		scene.idle(65)
 		scene.addKeyframe()
 		scene.overlay.showOutline("blue", {}, [4, 4, 4, 6, 6, 6], 50)
 		scene.text(50, "抽出来的水就是海水了", [5, 5, 5])
 		scene.idle(65)
-	});
+	})
 })

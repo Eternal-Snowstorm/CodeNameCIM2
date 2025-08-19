@@ -1,13 +1,10 @@
 CreateHeatJS.registerHeatEvent((event) => {
-	function addHeatLevel(name, number, color, block) {
-		let heatLevelRegister =
-			event.registerHeat(name, number, color)
-				.addHeatSource(block)
-				.register()
-
-		return heatLevelRegister
+	function addHeatLevel(name, color, block) {
+		let heat = event.registerHeat(name, color)
+		heat.addHeatSource(block)
+			.jeiTip()
+		return heat.register()
 	}
 
-	addHeatLevel("grilled", 1, 0xFF8C00, "minecraft:fire")
-		.setJeiTip(true)
+	addHeatLevel("grilled", 0xFF8C00, "minecraft:fire")
 })

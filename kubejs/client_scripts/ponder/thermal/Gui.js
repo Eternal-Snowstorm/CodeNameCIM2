@@ -118,7 +118,7 @@ Ponder.registry((event) => {
 		scene.idle(50)
 	})
 
-	havePonderSceneBlock.scene("cmi:thermal_gui2", "Machine Automation", "cmi:thermal/thermal_gui2", (scene) => {
+	havePonderSceneBlock.scene("cmi:thermal_gui2", "Machine Automation", "cmi:thermal/thermal_gui", (scene) => {
 		scene.showBasePlate()
 		scene.idle(20)
 		scene.scaleSceneView(0.5)

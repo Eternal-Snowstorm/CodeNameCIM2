@@ -260,6 +260,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("thermal_extra:diesel", "§c此液体废弃，无法合成！")
 	addCommonTooltipLanguage("createaddition:seed_oil", "§c此液体废弃，无法合成！")
 	addCommonTooltipLanguage("cmi:creosote_wood_chip_briquette", "能吃哦")
+	addCommonTooltipLanguage("mm:large_steam_boiler", "§c只能使用焦煤或钻石作为燃料")
 
 	addJEIInfoLanguage("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量植物胶乳")
 	addJEIInfoLanguage("mm:large_steam_boiler", "需要燃烧焦煤或钻石才能释放足够的热能来产生蒸汽\n不同于远在泛银河系的格雷科技有限公司, 我们的锅炉非常非常安全, 永远不会爆炸(笑)")
