@@ -43,8 +43,11 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("platinum_solution", 0xE1FFFF)
 	addColorFluid("tetrachlorosilane", 0xDDFF6E)
 
-	addAloneFluid("steam").noBlock()
-	addAloneFluid("oil_shale_steam").noBlock()
+	addAloneFluid("steam")
+		.noBlock()
+		.tag("forge:steam")
+	addAloneFluid("oil_shale_steam")
+		.noBlock()
 	addAloneFluid("blood")
 	addAloneFluid("delta_unstable_solution")
 	addAloneFluid("turbid_waste_liquid")

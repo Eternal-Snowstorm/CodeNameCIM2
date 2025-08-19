@@ -105,4 +105,14 @@ Ponder.registry((event) => {
 		scene.world.showSection([3, 4, 1, 1, 4, 3], Direction.UP)
 		scene.idle(20)
 	})
+
+	// 海水
+	event.create([
+		"cmi:water_pump",
+		"cmi:sea_water_bucket"
+	]).scene("cmi:sea_water_extraction", "Sea Water Extraction", "cmi:multiblock/sea_water", (scene) => {
+		scene.showBasePlate()
+		scene.idle(20)
+		scene.scaleSceneView(0.8)
+	})
 })
