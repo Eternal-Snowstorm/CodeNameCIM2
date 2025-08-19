@@ -52,7 +52,13 @@ ServerEvents.recipes((event) => {
 		}
 	)
 
-	mekanism.crystallizing("gas","mekanism:pellet_antimatter",{ gas: "mekanism:antimatter", amount: 10 })
-	mekanism.oxidizing("mekanism:pellet_antimatter",{ gas: "mekanism:antimatter", amount: 10 })
+	mekanism.crystallizing("gas","mekanism:pellet_antimatter",
+		{ gas: "mekanism:antimatter", amount: 10 })
+	mekanism.oxidizing("mekanism:pellet_antimatter",
+		{ gas: "mekanism:antimatter", amount: 10 })
 
+	mekanism.combining("create:shadow_steel",
+		"create:chromatic_compound","64x #forge:dusts/obsidian")
+	mekanism.combining("create:refined_radiance",
+		"create:chromatic_compound","64x #forge:dusts/glowstone")
 })

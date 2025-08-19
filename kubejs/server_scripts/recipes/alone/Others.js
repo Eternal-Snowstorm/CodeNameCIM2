@@ -234,4 +234,6 @@ ServerEvents.recipes((event) => {
 		"cmi:dont_kill_belalus",
 		"#create:mechanisms",
 	])
+
+	create.cutting("minecraft:echo_shard","cmi:sculk_mechanism")
 })
