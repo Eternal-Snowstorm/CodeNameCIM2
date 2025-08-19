@@ -101,7 +101,7 @@ ServerEvents.recipes((event) => {
 	}).id("immersiveindustry:crafting/burning_chamber")
 
 	// 耐压外壳
-	kubejs.shaped("4x cmi:pressure_resistance_casing", [
+	kubejs.shaped("8x cmi:pressure_resistance_casing", [
 		"AAA",
 		"A A",
 		"AAA"
