@@ -47,6 +47,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_advanced_control_circuit", "高级控制电路(半成品)")
 	addItemLanguage("incomplete_elite_control_circuit", "精英控制电路(半成品)")
 	addItemLanguage("incomplete_ultimate_control_circuit", "终极控制电路(半成品)")
+	addItemLanguage("magnesium_hydroxide", "氢氧化镁")
+	addItemLanguage("brominated_flame_retardants", "溴系阻燃剂")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")
@@ -87,6 +89,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("oil_shale_steam", "油页岩蒸汽")
 	addFluidLanguage("sea_water", "海水")
 	addFluidLanguage("concentrated_sea_water", "浓缩海水")
+	addFluidLanguage("alkaline_concentrated_sea_water", "碱性浓缩海水")
+	addFluidLanguage("acidic_concentrated_sea_water", "酸性浓缩海水")
+	addFluidLanguage("bromine", "溴")
+	addFluidLanguage("sodium_hydroxide", "氢氧化钠")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")

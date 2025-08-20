@@ -364,4 +364,57 @@ ServerEvents.recipes((event) => {
 		"ae2:interface",
 		"minecraft:crafting_table"
 	]).id("ae2:network/blocks/pattern_providers_interface")
+
+	kubejs.shaped("2x ae2:molecular_assembler", [
+		"EAE",
+		"BCD",
+		"EAE"
+	], {
+		A: "minecraft:crafting_table",
+		B: coreA,
+		D: coreF,
+		C: casing,
+		E: "ae2:quartz_glass",
+	}).id("ae2:network/crafting/molecular_assembler")
+
+	kubejs.shapeless("ae2:semi_dark_monitor", [
+		"ae2:quartz_glass",
+		"minecraft:redstone",
+		"minecraft:glowstone_dust"
+	])
+
+	kubejs.shapeless("ae2:terminal", [
+		"#ae2:illuminated_panel",
+		coreA,
+		coreF,
+		"cmi:smart_mechanism"
+	]).id("ae2:network/parts/terminals")
+
+	kubejs.shapeless("ae2:crafting_terminal", [
+		"ae2:terminal",
+		"minecraft:crafting_table",
+		"cmi:smart_mechanism"
+	]).id("ae2:network/parts/terminals_crafting")
+
+	kubejs.shapeless("ae2:pattern_encoding_terminal", [
+		"ae2:crafting_terminal",
+	]).id("ae2:network/parts/terminals_pattern_encoding")
+
+	kubejs.shapeless("ae2:pattern_access_terminal", [
+		"ae2:pattern_encoding_terminal",
+	]).id("ae2:network/parts/terminals_pattern_access")
+
+	kubejs.shapeless("ae2:crafting_terminal", [
+		"ae2:pattern_access_terminal",
+	])
+
+	kubejs.shaped("ae2:me_p2p_tunnel", [
+		"ABA",
+		"DCD",
+	], {
+		A: silver,
+		C: mech,
+		D: "ae2:fluix_crystal",
+		B: "cmi:ender_mechanism",
+	}).id("ae2:network/parts/tunnels_me")
 })

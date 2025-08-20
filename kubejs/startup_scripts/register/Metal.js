@@ -165,6 +165,15 @@ addMaterial("cast_iron", 0x4D4D4D, "iron")
 	.block()
 	.molten()
 
+// 镁
+addMaterial("magnesium", 0xFDC7FF, "iron")
+	.ingot()
+	.plate()
+	.dust()
+	.nugget()
+	.block()
+	.molten()
+
 // 工业铁
 addMaterial("industrial_iron", 0x4E4E4E, "iron")
 	.molten()
