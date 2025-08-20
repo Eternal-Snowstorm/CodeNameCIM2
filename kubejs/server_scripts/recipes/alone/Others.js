@@ -236,4 +236,27 @@ ServerEvents.recipes((event) => {
 	])
 
 	create.cutting("minecraft:echo_shard","cmi:sculk_mechanism")
+
+	kubejs.shapeless('pipez:basic_upgrade', [
+		"cmi:cobalt_mechanism",
+		"#forge:plates/iron",
+	])
+
+	kubejs.shapeless('pipez:improved_upgrade', [
+		"cmi:cobalt_mechanism",
+		"pipez:basic_upgrade",
+		"#forge:plates/gold",
+	])
+
+	kubejs.shapeless('pipez:advanced_upgrade', [
+		"cmi:cobalt_mechanism",
+		"pipez:improved_upgrade",
+		"minecraft:diamond",
+	])
+
+	kubejs.shapeless('pipez:ultimate_upgrade', [
+		"cmi:cobalt_mechanism",
+		"pipez:advanced_upgrade",
+		"#forge:plates/netherite",
+	])
 })
