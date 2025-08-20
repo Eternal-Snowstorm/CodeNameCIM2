@@ -178,5 +178,25 @@ addMaterial("ostrum", 0xA66B72, "wooden")
 	.molten()
 
 // 耐热金属
-addMaterial("calorite", 0xC94D4E, "wood")
+addMaterial("calorite", 0xC94D4E, "wooden")
 	.molten()
+
+// 钠
+addMaterial("sodium", 0xD7DDDD, "wooden")
+	.ingot()
+	.dust()
+
+// 钾
+addMaterial("potassium", 0xDADEDF, "wooden")
+	.ingot()
+	.dust()
+
+// 钙
+addMaterial("calcium", 0xF2F2F2, "wooden")
+	.ingot()
+	.dust()
+
+// 镁
+addMaterial("magnesium", 0xE0E0E0, "wooden")
+	.ingot()
+	.dust()
