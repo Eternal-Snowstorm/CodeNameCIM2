@@ -306,5 +306,5 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:rods/copper",
 		B: casing
-	}).id("ae2:network/blocks/energy_energy_acceptor")
+	}).id("ae2:network/blocks/energy_acceptor")
 })
