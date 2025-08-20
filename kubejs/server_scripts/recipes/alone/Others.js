@@ -240,23 +240,23 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless('pipez:basic_upgrade', [
 		"cmi:cobalt_mechanism",
 		"#forge:plates/iron",
-	])
+	]).id("pipez:basic_upgrade")
 
 	kubejs.shapeless('pipez:improved_upgrade', [
 		"cmi:cobalt_mechanism",
 		"pipez:basic_upgrade",
 		"#forge:plates/gold",
-	])
+	]).id("pipez:improved_upgrade")
 
 	kubejs.shapeless('pipez:advanced_upgrade', [
 		"cmi:cobalt_mechanism",
 		"pipez:improved_upgrade",
 		"minecraft:diamond",
-	])
+	]).id("pipez:advanced_upgrade")
 
 	kubejs.shapeless('pipez:ultimate_upgrade', [
 		"cmi:cobalt_mechanism",
 		"pipez:advanced_upgrade",
 		"#forge:plates/netherite",
-	])
+	]).id("pipez:ultimate_upgrade")
 })

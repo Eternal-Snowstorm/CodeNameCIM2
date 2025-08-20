@@ -1,6 +1,7 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs, create } = event.recipes
 	let casing = "cmi:sky_stone_casing"
+	let casingA = "cmi:computing_casing"
 	let mech = "cmi:smart_mechanism"
 	let mechA = "cmi:computing_mechanism"
 	let silver = "#forge:plates/silver"
@@ -161,43 +162,150 @@ ServerEvents.recipes((event) => {
 		"#ae2:all_certus_quartz"
 	]).id("ae2:network/cells/item_storage_components_cell_1k_part")
 
-	kubejs.shaped("ae2:_cell_component_4k", [
+	kubejs.shaped("ae2:cell_component_4k", [
 		"ABA",
 		"BCB",
 		"ABA"
 	], {
 		A: 'minecraft:redstone',
 		B: 'ae2:cell_component_1k',
-		C: mechA,
+		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_4k_part")
 
-	kubejs.shaped("ae2:_cell_component_16k", [
+	kubejs.shaped("ae2:cell_component_16k", [
 		"ABA",
 		"BCB",
 		"ABA"
 	], {
 		A: 'minecraft:glowstone_dust',
 		B: 'ae2:cell_component_4k',
-		C: mechA,
+		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_16k_part")
 
-	kubejs.shaped("ae2:_cell_component_64k", [
+	kubejs.shaped("ae2:cell_component_64k", [
 		"ABA",
 		"BCB",
 		"ABA"
 	], {
 		A: 'minecraft:glowstone_dust',
 		B: 'ae2:cell_component_16k',
-		C: mechA,
+		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_64k_part")
 
-	kubejs.shaped("ae2:_cell_component_256k", [
+	kubejs.shaped("ae2:cell_component_256k", [
 		"ABA",
 		"BCB",
 		"ABA"
 	], {
 		A: 'ae2:sky_dust',
 		B: 'ae2:cell_component_64k',
-		C: mechA,
+		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_256k_part")
+
+
+	create.mixing("ae2:quartz_glass",
+		["#forge:dusts/certus_quartz", "#forge:glass"])
+
+	kubejs.shaped("ae2:wireless_receiver", [
+		" A ",
+		"BCB",
+		" B "
+	], {
+		A: 'ae2:fluix_pearl',
+		B: silver,
+		C: "cmi:ender_mechanism",
+	}).id("ae2:network/wireless_part")
+
+	kubejs.shaped("ae2:wireless_booster", [
+		"ABC",
+		"DDD",
+	], {
+		A: 'ae2:fluix_dust',
+		B: mech,
+		D: silver,
+		C: "cmi:ender_mechanism",
+	}).id("ae2:network/wireless_booster")
+
+	kubejs.shaped("ae2:wireless_access_point", [
+		"A",
+		"B",
+	], {
+		A: "ae2:wireless_receiver",
+		B: mech,
+	}).id("ae2:network/wireless_access_point")
+
+	kubejs.shapeless("ae2:quantum_ring", [
+		mechA,
+		"ae2:energy_cell",
+		"#ae2:smart_dense_cable",
+		silver,
+	]).id("ae2:network/blocks/quantum_ring")
+
+	kubejs.shaped("2x ae2:spatial_pylon", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: "ae2:quartz_glass",
+		B: "#ae2:glass_cable",
+		C: mechA,
+		D: casing
+	}).id("ae2:network/blocks/spatial_io_pylon")
+
+	kubejs.shaped("ae2:io_port", [
+		"CDC",
+		"ABA",
+		"CDC"
+	], {
+		A: "ae2:drive",
+		C: "#ae2:glass_cable",
+		D: mech,
+		B: casing
+	}).id("ae2:network/blocks/io_port")
+
+	kubejs.shapeless("ae2:spatial_io_port", [
+		mechA,
+		"ae2:io_port",
+		"ae2:spatial_pylon"
+	]).id("ae2:network/blocks/spatial_io_port")
+
+	kubejs.shaped("ae2:chest", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: "ae2:termal",
+		C: mech,
+		B: "ae2:drive"
+	}).id("ae2:network/blocks/storage_chest")
+
+	kubejs.shaped("ae2:cell_workbench", [
+		"A",
+		"B",
+		"C"
+	], {
+		C: "#forge:chests",
+		A: mech,
+		B: casing
+	}).id("ae2:network/blocks/cell_workbench")
+
+	kubejs.shaped("ae2:condenser", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: "#forge:dusts/fluix",
+		C: mechA,
+		B: casingA
+	}).id("ae2:network/blocks/io_condenser")
+
+	kubejs.shaped("ae2:energy_acceptor", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: "#forge:dusts/fluix",
+		C: mechA,
+		B: casingA
+	}).id("ae2:network/blocks/io_condenser")
 })
