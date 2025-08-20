@@ -85,4 +85,7 @@ ServerEvents.recipes((event) => {
 
 	// 热力烧煤油
 	thermal.compression_fuel("cmi:kerosene", 2000000)
+
+	// 热力烧废液
+	thermal.compression_fuel("cmi:turbid_waste_liquid", 200000)
 })
