@@ -503,10 +503,28 @@
 			y: 0.0d
 		}
 		{
+			description: [
+				"1.若聊天栏出现“&cKubeJS Errors Found [X] &r”字样,请按“控制面板”中的Reload按钮, 或者 输入命令“/reload”直到出现“&aReloaded with no KubeJS errors! ”"
+				"&8&o注:"
+				"&8&o(1)此操作会重载所有的配方,会造成短暂卡顿且需要较长的时间"
+				"&8&o(2)任何一个KubeJS Error都会影响全体配方"
+				""
+				"2.在存档内更换或开关光影可能导致客户端崩溃,请谨慎使用"
+				""
+				"3.“控制面板”页面可以找到&6Curseforge&r, &7Github&r和&c视频&r链接"
+				""
+				"4.添加资源包时, 请确保PackResourse置于最顶"
+				""
+				"5.纹理或模型资源错误时, 请尝试按 &e&lF3+T&r 重载"
+				"&8&o注:"
+				"&8&o这需要非常长的时间&r"
+				""
+				"6.思索中部分方块(矿石等)可能出现异常渲染, 此特性由矿石发光资源包产生, 属正常现象"
+			]
 			icon: "createdeco:decal_warning"
 			id: "511AD7F0E04213FC"
 			shape: "hexagon"
-			subtitle: "还没有东西..."
+			subtitle: "这里是一些常见问题的解决方案"
 			tasks: [{
 				id: "6377990FF2529CEB"
 				title: "温馨提示"

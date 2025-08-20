@@ -1,14 +1,20 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
+	let casing = "cmi:sky_stone_casing"
+	let mech = "cmi:smart_mechanism"
+	let mechA = "cmi:computing_mechanism"
+	let silver = "#forge:plates/silver"
+	let coreF = "ae2:formation_core"
+	let coreA = 'ae2:annihilation_core'
 
 	kubejs.shaped("4x ae2:controller", [
 		"SCS",
 		"CMC",
 		"SCS"
 	], {
-		M: "cmi:_sky_stone_casing",
+		M: casing,
 		S: "ae2:fluix_crystal",
-		C: "cmi:smart_mechanism"
+		C: mech
 	}).id("ae2:network/blocks/controller")
 
 	kubejs.shaped("ae2:inscriber", [
@@ -19,7 +25,7 @@ ServerEvents.recipes((event) => {
 		P: "create:mechanical_press",
 		C: "ae2:fluix_crystal",
 		M: "create:precision_mechanism",
-		Z: "cmi:sky_stone_casing"
+		Z: casing
 	}).id("ae2:network/blocks/inscribers")
 
 	kubejs.shaped("4x cmi:sky_stone_casing", [
@@ -27,7 +33,7 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"ABA"
 	], {
-		A: "#forge:plates/silver",
+		A: silver,
 		B: '#ae2:all_certus_quartz',
 		C: "ae2:smooth_sky_stone_block"
 	})
@@ -47,7 +53,7 @@ ServerEvents.recipes((event) => {
 		"A  ",
 		"ABA"
 	], {
-		A: "#forge:plates/silver",
+		A: silver,
 		B: 'minecraft:amethyst_shard',
 	}).id("ae2:network/blocks/crystal_processing_charger")
 
@@ -56,8 +62,8 @@ ServerEvents.recipes((event) => {
 		"DBD",
 		"CAC"
 	], {
-		A: "cmi:smart_mechanism",
-		B: 'cmi:sky_stone_casing',
+		A: mech,
+		B: casing,
 		C: '#forge:plates/silver',
 		D: '#ae2:glass_cable',
 	}).id("ae2:network/blocks/storage_drive")
@@ -67,20 +73,131 @@ ServerEvents.recipes((event) => {
 		"B",
 		"C"
 	], {
-		A: 'ae2:formation_core',
+		A: coreF,
 		B: 'cmi:sky_stone_casing',
-		C: 'ae2:annihilation_core',
+		C: coreA,
 	}).id("ae2:network/blocks/interfaces_interface")
 
+
 	kubejs.shapeless('2x ae2:formation_core', [
-		"cmi:smart_mechanism",
+		mech,
 		"ae2:fluix_dust",
 		"#ae2:all_certus_quartz"
 	]).id("ae2:materials/formationcore")
 
 	kubejs.shapeless('2x ae2:annihilation_core', [
-		"cmi:smart_mechanism",
+		mech,
 		"ae2:fluix_dust",
 		"minecraft:quartz"
 	]).id("ae2:materials/annihilationcore")
+
+
+	kubejs.shaped("2x ae2:basic_card", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: '#forge:plates/gold',
+		B: mech,
+		C: silver,
+	}).id("ae2:materials/basiccard")
+
+	kubejs.shaped("2x ae2:advanced_card", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: 'minecraft:diamond',
+		B: mech,
+		C: silver,
+	}).id("ae2:materials/advancedcard")
+
+	kubejs.shapeless('ae2:void_card', [
+		"#forge:dusts/obsidian",
+		"ae2:basic_card"
+	]).id("ae2:materials/cardvoid")
+
+	kubejs.shapeless('ae2:speed_card', [
+		"cmi:cobalt_mechanism",
+		"ae2:advanced_card"
+	]).id("ae2:materials/cardspeed")
+
+	kubejs.shapeless('ae2:equal_distribution_card', [
+		"minecraft:comparator",
+		"ae2:advanced_card"
+	]).id("ae2:materials/carddistribution")
+
+
+	kubejs.shapeless('ae2:spatial_cell_component_2', [
+		"minecraft:glowstone_dust",
+		mechA,
+		"ae2:fluix_pearl"
+	]).id("ae2:network/cells/spatial_components")
+
+	kubejs.shaped("ae2:spatial_cell_component_16", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: 'minecraft:glowstone_dust',
+		B: 'ae2:spatial_cell_component_2',
+		C: mechA,
+	}).id("ae2:network/cells/spatial_components_0")
+
+	kubejs.shaped("ae2:spatial_cell_component_128", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: 'minecraft:glowstone_dust',
+		B: 'ae2:spatial_cell_component_16',
+		C: mechA,
+	}).id("ae2:network/cells/spatial_components_1")
+
+
+	kubejs.shapeless('ae2:cell_component_1k', [
+		"minecraft:redstone",
+		mech,
+		"#ae2:all_certus_quartz"
+	]).id("ae2:network/cells/item_storage_components_cell_1k_part")
+
+	kubejs.shaped("ae2:_cell_component_4k", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: 'minecraft:redstone',
+		B: 'ae2:cell_component_1k',
+		C: mechA,
+	}).id("ae2:network/cells/item_storage_components_cell_4k_part")
+
+	kubejs.shaped("ae2:_cell_component_16k", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: 'minecraft:glowstone_dust',
+		B: 'ae2:cell_component_4k',
+		C: mechA,
+	}).id("ae2:network/cells/item_storage_components_cell_16k_part")
+
+	kubejs.shaped("ae2:_cell_component_64k", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: 'minecraft:glowstone_dust',
+		B: 'ae2:cell_component_16k',
+		C: mechA,
+	}).id("ae2:network/cells/item_storage_components_cell_64k_part")
+
+	kubejs.shaped("ae2:_cell_component_256k", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: 'ae2:sky_dust',
+		B: 'ae2:cell_component_64k',
+		C: mechA,
+	}).id("ae2:network/cells/item_storage_components_cell_256k_part")
 })

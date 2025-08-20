@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
 
 	// 蒸汽处理
 	thermal_extra.advanced_refinery([
-		Fluid.of("ad_astra:oil", 100),
+		Fluid.of("createdieselgenerators:crude_oil", 100),
 		Fluid.of("cmi:steam", 500),
 		Fluid.of("cmi:turbid_waste_liquid", 400)
 	], Fluid.of("cmi:oil_shale_steam", 1000))
@@ -85,4 +85,7 @@ ServerEvents.recipes((event) => {
 
 	// 热力烧煤油
 	thermal.compression_fuel("cmi:kerosene", 2000000)
+
+	// 热力烧废液
+	thermal.compression_fuel("cmi:turbid_waste_liquid", 200000)
 })

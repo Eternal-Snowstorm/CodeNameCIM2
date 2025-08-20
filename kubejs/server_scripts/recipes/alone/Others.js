@@ -195,31 +195,31 @@ ServerEvents.recipes((event) => {
 	}).id("cmi:peat_torch")
 
 	// pipez item|fluid|energy|gas|all
-	kubejs.shaped("16x pipez:item_pipe", [
+	kubejs.shaped("32x pipez:item_pipe", [
 		"ABA"
 	], {
-		A: "#forge:plates/invar",
+		A: "cmi:thermal_mechanism",
 		B: "#forge:chests"
 	}).id("pipez:item_pipe")
 
-	kubejs.shaped("16x pipez:fluid_pipe", [
+	kubejs.shaped("32x pipez:fluid_pipe", [
 		"ABA"
 	], {
-		A: "#forge:plates/invar",
+		A: "cmi:thermal_mechanism",
 		B: "minecraft:bucket"
 	}).id("pipez:fluid_pipe")
 
-	kubejs.shaped("16x pipez:energy_pipe", [
+	kubejs.shaped("32x pipez:energy_pipe", [
 		"ABA"
 	], {
-		A: "#forge:plates/invar",
+		A: "cmi:thermal_mechanism",
 		B: "minecraft:redstone"
 	}).id("pipez:energy_pipe")
 
-	kubejs.shaped("16x pipez:gas_pipe", [
+	kubejs.shaped("32x pipez:gas_pipe", [
 		"ABA"
 	], {
-		A: "#forge:plates/invar",
+		A: "cmi:thermal_mechanism",
 		B: 'mekanism:alloy_infused'
 	}).id("pipez:gas_pipe")
 
@@ -236,4 +236,27 @@ ServerEvents.recipes((event) => {
 	])
 
 	create.cutting("minecraft:echo_shard","cmi:sculk_mechanism")
+
+	kubejs.shapeless('pipez:basic_upgrade', [
+		"cmi:cobalt_mechanism",
+		"#forge:plates/iron",
+	])
+
+	kubejs.shapeless('pipez:improved_upgrade', [
+		"cmi:cobalt_mechanism",
+		"pipez:basic_upgrade",
+		"#forge:plates/gold",
+	])
+
+	kubejs.shapeless('pipez:advanced_upgrade', [
+		"cmi:cobalt_mechanism",
+		"pipez:improved_upgrade",
+		"minecraft:diamond",
+	])
+
+	kubejs.shapeless('pipez:ultimate_upgrade', [
+		"cmi:cobalt_mechanism",
+		"pipez:advanced_upgrade",
+		"#forge:plates/netherite",
+	])
 })
