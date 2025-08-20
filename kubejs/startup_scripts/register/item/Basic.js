@@ -179,4 +179,8 @@ StartupEvents.registry("item", (event) => {
 	// Mg(OH)2
 	addItem("magnesium_hydroxide")
 		.texture(`${global.namespace}:item/material/sea/mgoh2`)
+
+	// Mg(OH)2
+	addItem("brominated_flame_retardants")
+		.texture(`${global.namespace}:item/material/brominated_flame_retardants`)
 })
