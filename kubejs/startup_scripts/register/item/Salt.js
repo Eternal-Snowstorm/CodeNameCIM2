@@ -1,15 +1,14 @@
 StartupEvents.registry("item", (event) => {
 	function addSaltItem(name, name2, tag) {
-		let register1 =
-			event.create(`${global.namespace}:${name}`)
-				.texture(`${global.namespace}:item/material/salt/${name}`)
-				.tag(`forge:chem_salts/${tag}`)
-				.tag("forge:chem_salts")
-		let register2 =
-			event.create(`${global.namespace}:${name2}`)
-				.texture(`${global.namespace}:item/material/salt/${name2}`)
-				.tag(`forge:chem_salts/${tag}`)
-				.tag("forge:chem_salts")
+		let register1 = event.create(`${global.namespace}:${name}`)
+			.texture(`${global.namespace}:item/material/salt/${name}`)
+			.tag(`forge:chem_salts/${tag}`)
+			.tag("forge:chem_salts")
+
+		let register2 = event.create(`${global.namespace}:${name2}`)
+			.texture(`${global.namespace}:item/material/salt/${name2}`)
+			.tag(`forge:chem_salts/${tag}`)
+			.tag("forge:chem_salts")
 
 		return {
 			item1: register1,
