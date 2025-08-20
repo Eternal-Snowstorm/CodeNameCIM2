@@ -161,7 +161,7 @@ ServerEvents.recipes((event) => {
 		"#ae2:all_certus_quartz"
 	]).id("ae2:network/cells/item_storage_components_cell_1k_part")
 
-	kubejs.shaped("ae2:_cell_component_4k", [
+	kubejs.shaped("ae2:cell_component_4k", [
 		"ABA",
 		"BCB",
 		"ABA"
@@ -171,7 +171,7 @@ ServerEvents.recipes((event) => {
 		C: mechA,
 	}).id("ae2:network/cells/item_storage_components_cell_4k_part")
 
-	kubejs.shaped("ae2:_cell_component_16k", [
+	kubejs.shaped("ae2:cell_component_16k", [
 		"ABA",
 		"BCB",
 		"ABA"
@@ -181,7 +181,7 @@ ServerEvents.recipes((event) => {
 		C: mechA,
 	}).id("ae2:network/cells/item_storage_components_cell_16k_part")
 
-	kubejs.shaped("ae2:_cell_component_64k", [
+	kubejs.shaped("ae2:cell_component_64k", [
 		"ABA",
 		"BCB",
 		"ABA"
@@ -191,7 +191,7 @@ ServerEvents.recipes((event) => {
 		C: mechA,
 	}).id("ae2:network/cells/item_storage_components_cell_64k_part")
 
-	kubejs.shaped("ae2:_cell_component_256k", [
+	kubejs.shaped("ae2:cell_component_256k", [
 		"ABA",
 		"BCB",
 		"ABA"
