@@ -2,15 +2,15 @@
 
 let IngredientUtils = {
 	getFirstItemId: function (ingredient, count) {
-		let ids = count !== undefined 
-			? Ingredient.of(ingredient, count).getItemIds() 
+		let ids = count !== undefined
+			? Ingredient.of(ingredient, count).getItemIds()
 			: Ingredient.of(ingredient).getItemIds()
 
 		if (ids.length > 0) {
 			return ids[0]
 		} else {
 			console.warn(`${ingredient}下没有对应物品`)
-			return null 
+			return null
 		}
 	},
 	ofMekanismGas: function (gas, amount) {
@@ -20,6 +20,7 @@ let IngredientUtils = {
 		return { gas: gas, amount: amount }
 	}
 }
+
 
 function aeCharger(output, input) {
 	const INPUT = Ingredient.of(input).toJson()
