@@ -166,7 +166,7 @@ addMaterial("cast_iron", 0x4D4D4D, "iron")
 	.molten()
 
 // 镁
-addMaterial("magnesium", 0xFDC7FF, "iron")
+addMaterial("magnesium", 0xFDC7FF, "stone")
 	.ingot()
 	.plate()
 	.dust()
@@ -202,10 +202,5 @@ addMaterial("potassium", 0xDADEDF, "wooden")
 
 // 钙
 addMaterial("calcium", 0xF2F2F2, "wooden")
-	.ingot()
-	.dust()
-
-// 镁
-addMaterial("magnesium", 0xE0E0E0, "wooden")
 	.ingot()
 	.dust()

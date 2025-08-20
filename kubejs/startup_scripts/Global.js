@@ -150,7 +150,8 @@ global.metalGroup = [
 	"queens_slime",
 	"industrial_iron",
 	"refined_obsidian",
-	"refined_glowstone"
+	"refined_glowstone",
+	"magnesium"
 ]
 // 匠魂物品标签
 global.TinkerItemTags = {
