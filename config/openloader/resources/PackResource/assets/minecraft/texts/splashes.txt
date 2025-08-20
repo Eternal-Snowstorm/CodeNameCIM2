@@ -69,14 +69,10 @@ Under Construction
 Unknown_Entity_
 Aleegos=Alegos
 12418
-西红柿炒蛋拌饭仙人
 构件仙人
 革新构件研发有限公司
 __, 启动!
-KubeJS errors found [114514]!
-逸一时误一世, 逸久逸久罢已领
 啥?
-轻松一下, Windows98~
 :(
 :)
 你说得对, 后面忘了
@@ -91,9 +87,7 @@ UE是猫娘喵~
 今天, 我宣布个事儿, 我是()()
 DeepSleep
 请输入文本
-狮山代码制造者柒月小姐
-牢微被抓去玩怪猎啦（悲）
-开发组-榛名柒月
+牢微被抓去玩怪猎啦(悲)
 开发组-Unknown_Entity_
 开发组-逐日炎雪_中微子
 开发组-FiberOptics
@@ -102,19 +96,14 @@ DeepSleep
 开发组-⑨Dropper_QWQ​⑨
 开发组-117458866249
 进攻D点!
-嗯，嗯~嗯♂！屑♂！FA♂Q！
 We Got More, Than We Had Before
 418 I am a teapot
 404 Not found
 403 Forbidden
 永远爱你
-[地铁][老人][手机]
-Suzume
-核电, 轻而易举啊
 一只屑UE
 Windows 1174
 windowS
-5202不会有人还不会热力机器界面配置吧...
 肝硬化科技
 No Mcreator
 AMD, YES
@@ -127,7 +116,7 @@ Cyriak
 蜗~↓丧↑德↓
 -进攻A点! -不行! -进攻D点!
 胜败乃兵家常事, 但是下一次, _______!
-Reloaded with NO KubeJS Errors!
+Reloaded with NO KubeJS Error!
 牢安东香泥的收益了...
 哎, 为什么我产线收集里面有个大齿轮, 然后那个转速控制器...
 /*你为什么会来看源代码*/
