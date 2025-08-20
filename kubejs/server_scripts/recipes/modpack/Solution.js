@@ -58,7 +58,8 @@ ServerEvents.recipes((event) => {
 			.fluid(Fluid.of(`cmi:${metal}_sulfate_solution`, 500))
 			.cooling_time(20)
 	})
-	let MetalActiveOrder = [
+
+	let metalActiveOrder = [
 		"potassium",
 		"calcium",
 		"sodium",
@@ -79,73 +80,74 @@ ServerEvents.recipes((event) => {
 		"osmium",
 		"gold"
 	]
-	MetalActiveOrder.forEach((metal) => {
-		MetalActiveOrder.slice(MetalActiveOrder.indexOf(metal) + 1).forEach((solution) => {
-			event.custom({
-				"type": "immersiveindustry:chemical",
-				"inputs": [
-					{
-						"base_ingredient": {
-							"tag": `forge:dusts/${metal}`
-						},
-						"count": 1
-					}
-				],
-				"results": [
-					{
-						"base_ingredient": {
-							"tag": `forge:dusts/${solution}`
-						},
-						"count": 1
-					}
-				],
-				"input_fluids": [
-					{
-						"fluid": `cmi:${solution}_chloride_solution`,
-						"amount": 1000
-					}
-				],
-				"result_fluids": [
-					{
-						"fluid": `cmi:${metal}_chlorite_solution`,
-						"amount": 1000
-					}
-				],
-				"time": 300
-			})
+	metalActiveOrder.forEach((metal) => {
+		metalActiveOrder.slice(metalActiveOrder.indexOf(metal) + 1)
+			.forEach((solution) => {
+				event.custom({
+					"type": "immersiveindustry:chemical",
+					"inputs": [
+						{
+							"base_ingredient": {
+								"tag": `forge:dusts/${metal}`
+							},
+							"count": 1
+						}
+					],
+					"results": [
+						{
+							"base_ingredient": {
+								"tag": `forge:dusts/${solution}`
+							},
+							"count": 1
+						}
+					],
+					"input_fluids": [
+						{
+							"fluid": `cmi:${solution}_chloride_solution`,
+							"amount": 1000
+						}
+					],
+					"result_fluids": [
+						{
+							"fluid": `cmi:${metal}_chlorite_solution`,
+							"amount": 1000
+						}
+					],
+					"time": 300
+				})
 
-			event.custom({
-				"type": "immersiveindustry:chemical",
-				"inputs": [
-					{
-						"base_ingredient": {
-							"tag": `forge:dusts/${metal}`
-						},
-						"count": 1
-					}
-				],
-				"results": [
-					{
-						"base_ingredient": {
-							"tag": `forge:dusts/${solution}`
-						},
-						"count": 1
-					}
-				],
-				"input_fluids": [
-					{
-						"fluid": `cmi:${solution}_sulfate_solution`,
-						"amount": 1000
-					}
-				],
-				"result_fluids": [
-					{
-						"fluid": `cmi:${metal}_sulfate_solution`,
-						"amount": 1000
-					}
-				],
-				"time": 300
+				event.custom({
+					"type": "immersiveindustry:chemical",
+					"inputs": [
+						{
+							"base_ingredient": {
+								"tag": `forge:dusts/${metal}`
+							},
+							"count": 1
+						}
+					],
+					"results": [
+						{
+							"base_ingredient": {
+								"tag": `forge:dusts/${solution}`
+							},
+							"count": 1
+						}
+					],
+					"input_fluids": [
+						{
+							"fluid": `cmi:${solution}_sulfate_solution`,
+							"amount": 1000
+						}
+					],
+					"result_fluids": [
+						{
+							"fluid": `cmi:${metal}_sulfate_solution`,
+							"amount": 1000
+						}
+					],
+					"time": 300
+				})
 			})
-		})
 	})
 })
