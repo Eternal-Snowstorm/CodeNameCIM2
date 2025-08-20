@@ -304,8 +304,7 @@ ServerEvents.recipes((event) => {
 		"B",
 		"C"
 	], {
-		A: "#forge:dusts/fluix",
-		C: mechA,
-		B: casingA
-	}).id("ae2:network/blocks/io_condenser")
+		A: "#forge:rods/copper",
+		B: casing
+	}).id("ae2:network/blocks/energy_energy_acceptor")
 })
