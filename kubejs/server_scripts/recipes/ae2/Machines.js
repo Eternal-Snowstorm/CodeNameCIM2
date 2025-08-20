@@ -301,10 +301,67 @@ ServerEvents.recipes((event) => {
 
 	kubejs.shaped("ae2:energy_acceptor", [
 		"A",
-		"B",
-		"C"
+		"B"
 	], {
 		A: "#forge:rods/copper",
 		B: casing
 	}).id("ae2:network/blocks/energy_energy_acceptor")
+
+	kubejs.shaped("ae2:crystal_resonance_generator", [
+		"ABA",
+		"AMA"
+	], {
+		A: "#forge:plates/copper",
+		M: casing,
+		B: "ae2:fluix_block"
+	}).id("ae2:network/crystal_resonance_generator")
+
+	kubejs.shaped("ae2:crafting_unit", [
+		" A ",
+		"CBC",
+		" A "
+	], {
+		A: mech,
+		B: casing,
+		C: "#ae2:glass_cable"
+	}).id("ae2:network/crafting/cpu_crafting_unit")
+
+	kubejs.shapeless("ae2:crafting_accelerator", [
+		"ae2:crafting_unit",
+		mech
+	]).id("ae2:network/crafting/cpu_crafting_accelerator")
+
+	kubejs.shaped("ae2:growth_accelerator", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: mech,
+		B: casing,
+		C: "ae2:fluix_block"
+	}).id("ae2:network/blocks/crystal_processing_growth_accelerator")
+
+	kubejs.shaped("ae2:energy_cell", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: "ae2:fluix_dust",
+		B: casing,
+		C: "#ae2:all_certus_quartz"
+	}).id("ae2:network/blocks/energy_energy_cell")
+
+	kubejs.shaped("ae2:dense_energy_cell", [
+		"AAA",
+		"ABA",
+		"AAA"
+	], {
+		A: "ae2:energy_cell",
+		B: mech,
+	}).id("ae2:network/blocks/energy_dense_energy_cell")
+
+	kubejs.shapeless("ae2:pattern_provider", [
+		"ae2:interface",
+		"minecraft:crafting_table"
+	]).id("ae2:network/blocks/pattern_providers_interface")
 })
