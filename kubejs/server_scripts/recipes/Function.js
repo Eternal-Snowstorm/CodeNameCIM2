@@ -22,9 +22,9 @@ let IngredientUtils = {
 		if (optional.isPresent()) {
 			let fluidHolder = optional.get().stream().findFirst().orElse(null)
 			if (fluidHolder !== null) {
-				let getFluidKey = $BuiltInRegistries.FLUID.getKey(fluidHolder.value())
+				let getFluidKey = $BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
 				console.log(`The first fluid is: ${getFluidKey}`)
-				return getFluidKey.toString()
+				return getFluidKey
 			}
 		}
 		return null
