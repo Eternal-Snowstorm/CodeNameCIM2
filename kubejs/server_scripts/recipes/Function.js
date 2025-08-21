@@ -1,5 +1,5 @@
 // priority: 100
-let $FluidTag = Java.loadClass("net.minecraft.tags.FluidTags")
+let $FluidTags = Java.loadClass("net.minecraft.tags.FluidTags")
 let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
 
 let IngredientUtils = {
@@ -16,7 +16,7 @@ let IngredientUtils = {
 		}
 	},
 	getFirstFluidId: function (fluidTag) {
-		let tag = $FluidTag.create(ResourceLocation.parse(fluidTag))
+		let tag = $FluidTags.create(ResourceLocation.parse(fluidTag))
 		let optional = $BuiltInRegistries.FLUID.getTag(tag)
 
 		if (optional.isPresent()) {
