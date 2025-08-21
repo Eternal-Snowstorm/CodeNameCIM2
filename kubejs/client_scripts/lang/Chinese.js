@@ -152,42 +152,42 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addGasLanguage("sulfide_gas_mixture", "硫化物混合气")
 
-	addSolutionLanguage("iron_sulfate", "硫酸亚铁", "FeSO₄")
-	addSolutionLanguage("iron_chloride", "氯化亚铁", "FeCl₂")
-	addSolutionLanguage("copper_sulfate", "硫酸铜", "CuSO₄")
-	addSolutionLanguage("copper_chloride", "氯化铜", "CuCl₂")
-	addSolutionLanguage("aluminium_sulfate", "硫酸铝", "Al₂(SO₄)₃")
-	addSolutionLanguage("aluminium_chloride", "氯化铝", "AlCl₃")
-	addSolutionLanguage("lead_sulfate", "氯化铅", "PbCl₂")
-	addSolutionLanguage("lead_chloride", "硫酸铅", "PbSO₄")
-	addSolutionLanguage("tin_sulfate", "氯化亚锡", "SnCl₂")
-	addSolutionLanguage("tin_chloride", "硫酸亚锡", "SnSO₄")
-	addSolutionLanguage("zinc_chloride", "氯化锌", "ZnCl₂")
-	addSolutionLanguage("zinc_sulfate", "硫酸锌", "ZnSO₄")
-	addSolutionLanguage("gold_chloride", "氯化金", "AuCl₃")
-	addSolutionLanguage("gold_sulfate", "硫酸金", "Au₂(SO₄)₃")
-	addSolutionLanguage("silver_chloride", "氯化银", "AgCl")
-	addSolutionLanguage("silver_sulfate", "硫酸银", "Ag₂SO₄")
-	addSolutionLanguage("chromium_chloride", "氯化铬", "CrCl₃")
-	addSolutionLanguage("chromium_sulfate", "硫酸铬", "Cr₂(SO₄)₃")
-	addSolutionLanguage("vanadium_chloride", "二氯氧钒", "VOCl₂")
-	addSolutionLanguage("vanadium_sulfate", "硫酸氧钒", "VOSO₄")
-	addSolutionLanguage("uranium_chloride", "氯化铀酰", "UO₂Cl₂")
-	addSolutionLanguage("uranium_sulfate", "硫酸铀酰", "UO₂SO₄")
-	addSolutionLanguage("nickel_chloride", "氯化镍", "NiCl₂")
-	addSolutionLanguage("nickel_sulfate", "硫酸镍", "NiSO₄")
-	addSolutionLanguage("cobalt_chloride", "氯化钴", "CoCl₂")
-	addSolutionLanguage("cobalt_sulfate", "硫酸钴", "CoSO₄")
-	addSolutionLanguage("osmium_chloride", "氯化锇", "OsCl₃")
-	addSolutionLanguage("osmium_sulfate", "硫酸锇", "Os₂(SO₄)₃")
-	addSolutionLanguage("platinum_chloride", "氯化铂", "PtCl₄")
-	addSolutionLanguage("platinum_sulfate", "硫酸铂", "Pt(SO₄)₂")
-	addSolutionLanguage("potassium_chloride", "氯化钾", "KCl")
-	addSolutionLanguage("potassium_sulfate", "硫酸钾", "K₂SO₄")
-	addSolutionLanguage("calcium_chloride", "氯化钙", "CaCl₂")
-	addSolutionLanguage("calcium_sulfate", "硫酸钙", "CaSO₄")
-	addSolutionLanguage("sodium_chloride", "氯化钠", "NaCl")
-	addSolutionLanguage("sodium_sulfate", "硫酸钠", "Na₂SO₄")
+	addSolutionLanguage("feso4", "硫酸亚铁", "FeSO₄")
+	addSolutionLanguage("fecl2", "氯化亚铁", "FeCl₂")
+	addSolutionLanguage("cuso4", "硫酸铜", "CuSO₄")
+	addSolutionLanguage("cucl2", "氯化铜", "CuCl₂")
+	addSolutionLanguage("al2so43", "硫酸铝", "Al₂(SO₄)₃")
+	addSolutionLanguage("alcl3", "氯化铝", "AlCl₃")
+	addSolutionLanguage("pbcl2", "氯化铅", "PbCl₂")
+	addSolutionLanguage("pbso4", "硫酸铅", "PbSO₄")
+	addSolutionLanguage("sncl2", "氯化亚锡", "SnCl₂")
+	addSolutionLanguage("snso4", "硫酸亚锡", "SnSO₄")
+	addSolutionLanguage("zncl2", "氯化锌", "ZnCl₂")
+	addSolutionLanguage("znso4", "硫酸锌", "ZnSO₄")
+	addSolutionLanguage("aucl3", "氯化金", "AuCl₃")
+	addSolutionLanguage("au2so43", "硫酸金", "Au₂(SO₄)₃")
+	addSolutionLanguage("agcl", "氯化银", "AgCl")
+	addSolutionLanguage("ag2so4", "硫酸银", "Ag₂SO₄")
+	addSolutionLanguage("crcl3", "氯化铬", "CrCl₃")
+	addSolutionLanguage("cr2so43", "硫酸铬", "Cr₂(SO₄)₃")
+	addSolutionLanguage("vocl2", "二氯氧钒", "VOCl₂")
+	addSolutionLanguage("voso4", "硫酸氧钒", "VOSO₄")
+	addSolutionLanguage("uo2cl2", "氯化铀酰", "UO₂Cl₂")
+	addSolutionLanguage("uo2so4", "硫酸铀酰", "UO₂SO₄")
+	addSolutionLanguage("nicl2", "氯化镍", "NiCl₂")
+	addSolutionLanguage("niso4", "硫酸镍", "NiSO₄")
+	addSolutionLanguage("cocl2", "氯化钴", "CoCl₂")
+	addSolutionLanguage("coso4", "硫酸钴", "CoSO₄")
+	addSolutionLanguage("oscl3", "氯化锇", "OsCl₃")
+	addSolutionLanguage("os2so43", "硫酸锇", "Os₂(SO₄)₃")
+	addSolutionLanguage("ptcl4", "氯化铂", "PtCl₄")
+	addSolutionLanguage("ptso42", "硫酸铂", "Pt(SO₄)₂")
+	addSolutionLanguage("kcl", "氯化钾", "KCl")
+	addSolutionLanguage("k2so4", "硫酸钾", "K₂SO₄")
+	addSolutionLanguage("cacl2", "氯化钙", "CaCl₂")
+	addSolutionLanguage("caso4", "硫酸钙", "CaSO₄")
+	addSolutionLanguage("nacl", "氯化钠", "NaCl")
+	addSolutionLanguage("na2so4", "硫酸钠", "Na₂SO₄")
 
 	addOreNodeLanguage("uranium", "铀")
 	addOreNodeLanguage("copper", "铜")
@@ -261,10 +261,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("#cmi:special_ores", "该矿石只能在蒸汽矿石处理机内处理")
 	addCommonTooltipLanguage("#cmi:multiblock_machine_controller", "制作多方块接口时不消耗")
 	addCommonTooltipLanguage("cmi:stone_plate", "把字刻在石头上")
-	addCommonTooltipLanguage("cmi:cast_iron_ingot", "这种材料不够坚固，辊压加工时可能会损坏! ")
-	addCommonTooltipLanguage("createaddition:bioethanol", "§c此液体废弃，无法合成! ")
-	addCommonTooltipLanguage("thermal_extra:diesel", "§c此液体废弃，无法合成! ")
-	addCommonTooltipLanguage("createaddition:seed_oil", "§c此液体废弃，无法合成! ")
+	addCommonTooltipLanguage("cmi:cast_iron_ingot", "这种材料不够坚固, 辊压加工时可能会损坏! ")
+	addCommonTooltipLanguage("createaddition:bioethanol", "§c此液体废弃, 无法合成! ")
+	addCommonTooltipLanguage("thermal_extra:diesel", "§c此液体废弃, 无法合成! ")
+	addCommonTooltipLanguage("createaddition:seed_oil", "§c此液体废弃, 无法合成! ")
 	addCommonTooltipLanguage("cmi:creosote_wood_chip_briquette", "能吃哦")
 	addCommonTooltipLanguage("mm:large_steam_boiler", "§c只能使用焦煤或钻石作为燃料")
 
@@ -318,7 +318,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		andesiteAlloyEncyclopedia,
 		andesiteAlloyEncyclopedia
 	)
-	let brassEncyclopedia = "导热性与可塑性极强，似乎可以做成搭载多个箭矢的模样"
+	let brassEncyclopedia = "导热性与可塑性极强, 似乎可以做成搭载多个箭矢的模样"
 	addTConMaterialLanguage(
 		"brass",
 		"黄铜",
@@ -327,7 +327,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		brassEncyclopedia,
 		brassEncyclopedia
 	)
-	let industrialIronEncyclopedia = "通过重复排碳制成的高韧铁材料，弹性与韧性极佳"
+	let industrialIronEncyclopedia = "通过重复排碳制成的高韧铁材料, 弹性与韧性极佳"
 	addTConMaterialLanguage(
 		"industrial_iron",
 		"工业铁",
@@ -336,7 +336,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		industrialIronEncyclopedia,
 		industrialIronEncyclopedia
 	)
-	let castIronEncyclopedia = "含有完整碳结晶的铁材料，耐磨性极佳"
+	let castIronEncyclopedia = "含有完整碳结晶的铁材料, 耐磨性极佳"
 	addTConMaterialLanguage(
 		"cast_iron",
 		"铸铁",
@@ -345,7 +345,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		castIronEncyclopedia,
 		castIronEncyclopedia
 	)
-	let stainlessSteelEncyclopedia = "有着极强耐腐蚀性能的材料，可以有效减慢工具的损坏"
+	let stainlessSteelEncyclopedia = "有着极强耐腐蚀性能的材料, 可以有效减慢工具的损坏"
 	addTConMaterialLanguage(
 		"stainless_steel",
 		"不锈钢",
@@ -354,7 +354,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		stainlessSteelEncyclopedia,
 		stainlessSteelEncyclopedia
 	)
-	let deshEncyclopedia = "从月球开采的神秘材料，似乎可以做出更好的升级？"
+	let deshEncyclopedia = "从月球开采的神秘材料, 似乎可以做出更好的升级？"
 	addTConMaterialLanguage(
 		"desh",
 		"戴斯",
@@ -363,7 +363,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		deshEncyclopedia,
 		deshEncyclopedia
 	)
-	let ostrumEncyclopedia = "来自火星的惰性金属，似乎在灼热环境中会变得更加优秀"
+	let ostrumEncyclopedia = "来自火星的惰性金属, 似乎在灼热环境中会变得更加优秀"
 	addTConMaterialLanguage(
 		"ostrum",
 		"紫金",
@@ -372,7 +372,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		ostrumEncyclopedia,
 		ostrumEncyclopedia
 	)
-	let caloriteEncyclopedia = "优秀的隔热材料，可以承受更强的火箭尾焰，将它送向其他星系"
+	let caloriteEncyclopedia = "优秀的隔热材料, 可以承受更强的火箭尾焰, 将它送向其他星系"
 	addTConMaterialLanguage(
 		"calorite",
 		"耐热金属",
@@ -381,7 +381,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		caloriteEncyclopedia,
 		caloriteEncyclopedia
 	)
-	let shadowSteelEncyclopedia = "从未知的致命领域归来的化合物，韧性异常强大，但是抗冲击能力堪称灾难"
+	let shadowSteelEncyclopedia = "从未知的致命领域归来的化合物, 韧性异常强大, 但是抗冲击能力堪称灾难"
 	addTConMaterialLanguage(
 		"shadow_steel",
 		"暗影钢",
@@ -390,7 +390,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		shadowSteelEncyclopedia,
 		shadowSteelEncyclopedia
 	)
-	let refinedRadianceEncyclopedia = "吸收了大量光能的化合物，韧性令人掩面，但可以为装备提供极大的强化"
+	let refinedRadianceEncyclopedia = "吸收了大量光能的化合物, 韧性令人掩面, 但可以为装备提供极大的强化"
 	addTConMaterialLanguage(
 		"refined_radiance",
 		"光辉石",
