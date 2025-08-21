@@ -1,3 +1,5 @@
+// priority: 100
+
 let RegisterNativeEvents = {
 	/**
 	 * 

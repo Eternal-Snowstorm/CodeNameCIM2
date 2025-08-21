@@ -1,4 +1,6 @@
 // priority: 100
+let $FluidTag = Java.loadClass("net.minecraft.tags.FluidTags")
+let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
 
 let IngredientUtils = {
 	getFirstItemId: function (ingredient, count) {
@@ -13,6 +15,20 @@ let IngredientUtils = {
 			return null
 		}
 	},
+	getFirstFluidId: function (fluidTag) {
+		let tag = $FluidTag.create(ResourceLocation.parse(fluidTag))
+		let optional = $BuiltInRegistries.FLUID.getTag(tag)
+
+		if (optional.isPresent()) {
+			let fluidHolder = optional.get().stream().findFirst().orElse(null)
+			if (fluidHolder !== null) {
+				let getFluidKey = $BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
+				console.log(`The first fluid is: ${getFluidKey}`)
+				return getFluidKey
+			}
+		}
+		return null
+	},
 	ofMekanismGas: function (gas, amount) {
 		if (amount === undefined) {
 			return {
@@ -26,7 +42,6 @@ let IngredientUtils = {
 		}
 	}
 }
-
 
 function aeCharger(output, input) {
 	const INPUT = Ingredient.of(input).toJson()
@@ -73,3 +88,12 @@ function addSmeltingRecipe(event, output, input) {
 	event.recipes.minecraft.smelting(output, input)
 		.cookingTime(200)
 }
+
+// Test Function Event
+BlockEvents.rightClicked((event) => {
+	let { block, player } = event
+
+	if (block.id === "cmi:green_screen") {
+		player.tell(IngredientUtils.getFirstFluidId("create:bottomless/allow"))
+	}
+})
