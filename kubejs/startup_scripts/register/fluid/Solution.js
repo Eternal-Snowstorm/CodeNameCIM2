@@ -1,11 +1,6 @@
-let solutionFluids = []
-
 StartupEvents.registry("fluid", (event) => {
-	solutionFluids.forEach((entry) => {
-		let { name, color } = entry
-		let id = `${global.namespace}:${name}_solution`
-
-		event.create(id)
+	function addSolution(name, color) {
+		let registerSolution = event.create(`${global.namespace}:${name}_solution`)
 			.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 			.stillTexture(`${global.namespace}:fluid/solution/still`)
 			.thinTexture(color)
@@ -16,37 +11,12 @@ StartupEvents.registry("fluid", (event) => {
 			JsonIO.write(file, {
 				parent: "forge:item/bucket_drip",
 				loader: "forge:fluid_container",
-				fluid: id
+				fluid: `${global.namespace}:${name}_solution`
 			})
 		}
-
-		console.log(`${id} 注册成功`)
-	})
-})
-
-let customCreativeTab = `${global.namespace}:salts_and_solutions`
-StartupEvents.modifyCreativeTab(customCreativeTab, (event) => {
-	solutionFluids.forEach((entry) => {
-		let { name } = entry
-		event.add(`${global.namespace}:${name}_solution_bucket`)
-	})
-})
-
-let kjsCreativeTab = "kubejs:tab"
-StartupEvents.modifyCreativeTab(kjsCreativeTab, (event) => {
-	solutionFluids.forEach((entry) => {
-		let { name } = entry
-		event.remove(`${global.namespace}:${name}_solution_bucket`)
-	})
-})
-
-function addSolution(name, color) {
-	solutionFluids.push({
-		name: name,
-		color: color
-	})
-}
-
+		console.log(`${global.namespace}:${name}_solution注册成功`)
+		return registerSolution
+	}
 addSolution("fecl2", 0x5BBD7F)
 addSolution("feso4", 0x6EB49C)
 
@@ -92,6 +62,9 @@ addSolution("os2so43", 0x001AE3)
 addSolution("ptcl4", 0xa81c07)
 addSolution("ptso42", 0xFFFFD0)
 
+addSolution("mgcl2", 0xC8C8C8)
+addSolution("mgso4", 0xE0E0E0)
+
 addSolution("na2so4", 0xD7DDDD)
 addSolution("nacl", 0xDADEDF)
 
@@ -100,3 +73,4 @@ addSolution("cacl2", 0xE0DDC3)
 
 addSolution("k2so4", 0xB8BDBD)
 addSolution("kcl", 0xB8BDBD)
+})
