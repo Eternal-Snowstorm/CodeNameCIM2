@@ -193,14 +193,26 @@ addMaterial("calorite", 0xC94D4E, "wooden")
 // 钠
 addMaterial("sodium", 0xD7DDDD, "wooden")
 	.ingot()
+	.plate()
 	.dust()
+	.nugget()
+	.block()
+	.molten()
 
 // 钾
 addMaterial("potassium", 0xDADEDF, "wooden")
 	.ingot()
+	.plate()
 	.dust()
+	.nugget()
+	.block()
+	.molten()
 
 // 钙
 addMaterial("calcium", 0xF2F2F2, "wooden")
 	.ingot()
+	.plate()
 	.dust()
+	.nugget()
+	.block()
+	.molten()
