@@ -261,10 +261,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("#cmi:special_ores", "该矿石只能在蒸汽矿石处理机内处理")
 	addCommonTooltipLanguage("#cmi:multiblock_machine_controller", "制作多方块接口时不消耗")
 	addCommonTooltipLanguage("cmi:stone_plate", "把字刻在石头上")
-	addCommonTooltipLanguage("cmi:cast_iron_ingot", "这种材料不够坚固，辊压加工时可能会损坏！")
-	addCommonTooltipLanguage("createaddition:bioethanol", "§c此液体废弃，无法合成！")
-	addCommonTooltipLanguage("thermal_extra:diesel", "§c此液体废弃，无法合成！")
-	addCommonTooltipLanguage("createaddition:seed_oil", "§c此液体废弃，无法合成！")
+	addCommonTooltipLanguage("cmi:cast_iron_ingot", "这种材料不够坚固，辊压加工时可能会损坏! ")
+	addCommonTooltipLanguage("createaddition:bioethanol", "§c此液体废弃，无法合成! ")
+	addCommonTooltipLanguage("thermal_extra:diesel", "§c此液体废弃，无法合成! ")
+	addCommonTooltipLanguage("createaddition:seed_oil", "§c此液体废弃，无法合成! ")
 	addCommonTooltipLanguage("cmi:creosote_wood_chip_briquette", "能吃哦")
 	addCommonTooltipLanguage("mm:large_steam_boiler", "§c只能使用焦煤或钻石作为燃料")
 
@@ -322,7 +322,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addTConMaterialLanguage(
 		"brass",
 		"黄铜",
-		"充满蒸汽的气息！",
+		"充满蒸汽的气息! ",
 		brassEncyclopedia,
 		brassEncyclopedia,
 		brassEncyclopedia
@@ -340,7 +340,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addTConMaterialLanguage(
 		"cast_iron",
 		"铸铁",
-		"非常适合进一步加热！",
+		"非常适合进一步加热! ",
 		castIronEncyclopedia,
 		castIronEncyclopedia,
 		castIronEncyclopedia
@@ -367,7 +367,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addTConMaterialLanguage(
 		"ostrum",
 		"紫金",
-		"越热就越强！",
+		"越热就越强! ",
 		ostrumEncyclopedia,
 		ostrumEncyclopedia,
 		ostrumEncyclopedia
@@ -376,7 +376,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addTConMaterialLanguage(
 		"calorite",
 		"耐热金属",
-		"红色的隔热板！",
+		"红色的隔热板! ",
 		caloriteEncyclopedia,
 		caloriteEncyclopedia,
 		caloriteEncyclopedia
@@ -385,7 +385,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addTConMaterialLanguage(
 		"shadow_steel",
 		"暗影钢",
-		"从深渊中现身！",
+		"从深渊中现身! ",
 		shadowSteelEncyclopedia,
 		shadowSteelEncyclopedia,
 		shadowSteelEncyclopedia
@@ -394,7 +394,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addTConMaterialLanguage(
 		"refined_radiance",
 		"光辉石",
-		"来自天空的使者！",
+		"来自天空的使者! ",
 		refinedRadianceEncyclopedia,
 		refinedRadianceEncyclopedia,
 		refinedRadianceEncyclopedia
