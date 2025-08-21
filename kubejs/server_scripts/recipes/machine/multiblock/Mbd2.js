@@ -4,7 +4,10 @@ ServerEvents.recipes((event) => {
 	// 铜1
 	mbd2.accelerator()
 		.inputFE(2000)
-		.inputItems(["25x minecraft:stone", "cmi:copper_mechanism"])
+		.inputItems([
+			"25x minecraft:stone",
+			"cmi:copper_mechanism"
+		])
 		.outputItems([
 			Item.of("minecraft:copper_ore", 10),
 			Item.of("minecraft:clay", 2),
