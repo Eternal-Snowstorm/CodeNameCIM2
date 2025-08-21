@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
 		"#forge:chem_salts/iron",
 		"#forge:chem_salts/zinc",
 		"#forge:chem_salts/lead",
-		"#forge:chem_salts/chorme",
+		"#forge:chem_salts/chromium",
 		"#forge:chem_salts/tin",
 		"#forge:chem_salts/cobalt",
 		"#forge:chem_salts/vanadium",
@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	kubejs.shapeless("4x cmi:explosive_element", [
-		"#forge:chem_salts/aluminium",
+		"#forge:chem_salts/aluminum",
 		"#forge:chem_salts/sodium",
 		"#forge:chem_salts/potassium",
 		"#forge:chem_salts/calcium",
