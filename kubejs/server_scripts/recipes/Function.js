@@ -15,9 +15,15 @@ let IngredientUtils = {
 	},
 	ofMekanismGas: function (gas, amount) {
 		if (amount === undefined) {
-			return { gas: gas, amount: 1000 }
+			return {
+				gas: gas,
+				amount: 1000
+			}
 		}
-		return { gas: gas, amount: amount }
+		return {
+			gas: gas,
+			amount: amount
+		}
 	}
 }
 
