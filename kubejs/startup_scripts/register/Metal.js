@@ -216,3 +216,7 @@ addMaterial("calcium", 0xF2F2F2, "wooden")
 	.nugget()
 	.block()
 	.molten()
+
+// 钒
+addMaterial("vanadium", "0xFFFFFF", "stone")
+	.dust()

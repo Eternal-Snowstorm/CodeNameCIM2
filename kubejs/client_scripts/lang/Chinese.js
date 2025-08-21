@@ -119,6 +119,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("sodium", "钠")
 	addMaterialLanguage("potassium", "钾")
 	addMaterialLanguage("calcium", "钙")
+	addMaterialLanguage("vanadium", "钒")
 
 	addMaterialLanguage("pyrite", "黄铁")
 	addMaterialLanguage("lateritic_nickel", "红镍")
