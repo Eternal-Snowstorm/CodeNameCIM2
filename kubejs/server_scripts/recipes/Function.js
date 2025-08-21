@@ -23,7 +23,7 @@ let IngredientUtils = {
 			let fluidHolder = optional.get().stream().findFirst().orElse(null)
 			if (fluidHolder !== null) {
 				let getFluidKey = $BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
-				console.log(`The first fluid is: ${getFluidKey}`)
+				// console.log(`The first fluid is: ${getFluidKey}`)
 				return getFluidKey
 			}
 		}
@@ -95,6 +95,6 @@ BlockEvents.rightClicked((event) => {
 	const DEBUG_BLOCK = "cmi:green_screen"
 
 	if (block.id === DEBUG_BLOCK) {
-		player.tell(IngredientUtils.getFirstFluidId("create:bottomless/allow"))
+		player.tell(IngredientUtils.getFirstFluidId("forge:solutions/iron/chloride"))
 	}
 })
