@@ -1,22 +1,24 @@
 StartupEvents.registry("fluid", (event) => {
 	function addSolution(name, color) {
-		return event.create(`${global.namespace}:${name}_solution`)
+		let registerSolution = event.create(`${global.namespace}:${name}_solution`)
 			.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 			.stillTexture(`${global.namespace}:fluid/solution/still`)
 			.thinTexture(color)
 			.bucketColor(color)
+
+		if (Platform.isClientEnvironment()) {
+			let file = `kubejs/assets/${global.namespace}/models/item/${name}_solution_bucket.json`
+			JsonIO.write(file, {
+				parent: "forge:item/bucket_drip",
+				loader: "forge:fluid_container",
+				fluid: `${global.namespace}:${name}_solution`
+			})
+		}
+		console.log(`${id} 注册成功`)
+		return registerSolution
 	}
 
-	if (Platform.isClientEnvironment()) {
-		let file = `kubejs/assets/${global.namespace}/models/item/${name}_solution_bucket.json`
-		JsonIO.write(file, {
-			parent: "forge:item/bucket_drip",
-			loader: "forge:fluid_container",
-			fluid: id
-		})
-	}
 
-	console.log(`${id} 注册成功`)
 
 	addSolution("iron_chloride", 0x5BBD7F)
 	addSolution("iron_sulfate", 0x6EB49C)
