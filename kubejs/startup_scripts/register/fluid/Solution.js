@@ -14,7 +14,7 @@ StartupEvents.registry("fluid", (event) => {
 				fluid: `${global.namespace}:${name}_solution`
 			})
 		}
-		console.log(`${id} 注册成功`)
+		console.log(`${global.namespace}:${name}_solution注册成功`)
 		return registerSolution
 	}
 
