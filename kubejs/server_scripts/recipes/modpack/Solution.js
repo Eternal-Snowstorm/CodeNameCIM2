@@ -57,4 +57,95 @@ ServerEvents.recipes((event) => {
 			.fluid(Fluid.of(`cmi:${name}_solution`, 500))
 			.cooling_time(20)
 	})
+	
+	// let MetalActiveOrder = [
+	// 	"potassium",
+	// 	"calcium",
+	// 	"sodium",
+	// 	"magnesium",
+	// 	"uranium",
+	// 	"aluminum",
+	// 	"vanadium",
+	// 	"zinc",
+	// 	"chromium",
+	// 	"iron",
+	// 	"cobalt",
+	// 	"nickel",
+	// 	"tin",
+	// 	"lead",
+	// 	"copper",
+	// 	"silver",
+	// 	"platinum",
+	// 	"osmium",
+	// 	"gold"
+	// ]
+	// MetalActiveOrder.forEach((metal) => {
+	// 	MetalActiveOrder.slice(MetalActiveOrder.indexOf(metal) + 1).forEach((solution) => {
+	// 		event.custom({
+	// 			"type": "immersiveindustry:chemical",
+	// 			"inputs": [
+	// 				{
+	// 					"base_ingredient": {
+	// 						"tag": `forge:dusts/${metal}`
+	// 					},
+	// 					"count": 1
+	// 				}
+	// 			],
+	// 			"results": [
+	// 				{
+	// 					"base_ingredient": {
+	// 						"tag": `forge:dusts/${solution}`
+	// 					},
+	// 					"count": 1
+	// 				}
+	// 			],
+	// 			"input_fluids": [
+	// 				{
+	// 					"tag": `forge:solutions/${solution}/chloride`,
+	// 					"amount": 1000
+	// 				}
+	// 			],
+	// 			"result_fluids": [
+	// 				{
+	// 					"tag": `forge:solutions/${metal}/chloride`,
+	// 					"amount": 1000
+	// 				}
+	// 			],
+	// 			"time": 300
+	// 		})
+
+	// 		event.custom({
+	// 			"type": "immersiveindustry:chemical",
+	// 			"inputs": [
+	// 				{
+	// 					"base_ingredient": {
+	// 						"tag": `forge:dusts/${metal}`
+	// 					},
+	// 					"count": 1
+	// 				}
+	// 			],
+	// 			"results": [
+	// 				{
+	// 					"base_ingredient": {
+	// 						"tag": `forge:dusts/${solution}`
+	// 					},
+	// 					"count": 1
+	// 				}
+	// 			],
+	// 			"input_fluids": [
+	// 				{
+	// 					"tag": `forge:solutions/${solution}/sulfate`,
+	// 					"amount": 1000
+	// 				}
+	// 			],
+	// 			"result_fluids": [
+	// 				{
+	// 					"tag": `forge:solutions/${metal}/sulfate`,
+	// 					"amount": 1000
+	// 				}
+	// 			],
+	// 			"time": 300
+	// 		})
+	// 	})
+	// })
 })
