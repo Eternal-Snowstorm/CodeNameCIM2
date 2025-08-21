@@ -92,8 +92,9 @@ function addSmeltingRecipe(event, output, input) {
 // Test Function Event
 BlockEvents.rightClicked((event) => {
 	let { block, player } = event
+	const DEBUG_BLOCK = "cmi:green_screen"
 
-	if (block.id === "cmi:green_screen") {
+	if (block.id === DEBUG_BLOCK) {
 		player.tell(IngredientUtils.getFirstFluidId("create:bottomless/allow"))
 	}
 })
