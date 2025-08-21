@@ -1,5 +1,5 @@
 // priority: 100
-let $FluidTag = Java.loadClass("net.minecraft.tags.FluidTags")
+let $FluidTags = Java.loadClass("net.minecraft.tags.FluidTags")
 let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
 
 let IngredientUtils = {
@@ -16,14 +16,14 @@ let IngredientUtils = {
 		}
 	},
 	getFirstFluidId: function (fluidTag) {
-		let tag = $FluidTag.create(ResourceLocation.parse(fluidTag))
+		let tag = $FluidTags.create(ResourceLocation.parse(fluidTag))
 		let optional = $BuiltInRegistries.FLUID.getTag(tag)
 
 		if (optional.isPresent()) {
 			let fluidHolder = optional.get().stream().findFirst().orElse(null)
 			if (fluidHolder !== null) {
 				let getFluidKey = $BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
-				console.log(`The first fluid is: ${getFluidKey}`)
+				// console.log(`The first fluid is: ${getFluidKey}`)
 				return getFluidKey
 			}
 		}
@@ -92,8 +92,9 @@ function addSmeltingRecipe(event, output, input) {
 // Test Function Event
 BlockEvents.rightClicked((event) => {
 	let { block, player } = event
+	const DEBUG_BLOCK = "cmi:green_screen"
 
-	if (block.id === "cmi:green_screen") {
-		player.tell(IngredientUtils.getFirstFluidId("create:bottomless/allow"))
+	if (block.id === DEBUG_BLOCK) {
+		player.tell(IngredientUtils.getFirstFluidId("forge:solutions/iron/chloride"))
 	}
 })
