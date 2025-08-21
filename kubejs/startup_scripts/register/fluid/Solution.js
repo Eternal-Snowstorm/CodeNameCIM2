@@ -18,8 +18,6 @@ StartupEvents.registry("fluid", (event) => {
 		return registerSolution
 	}
 
-
-
 	addSolution("iron_chloride", 0x5BBD7F)
 	addSolution("iron_sulfate", 0x6EB49C)
 
