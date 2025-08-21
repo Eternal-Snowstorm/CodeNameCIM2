@@ -143,6 +143,10 @@ StartupEvents.registry("item", (event) => {
 	addItem("lime")
 		.texture(`${global.namespace}:item/material/lime`)
 
+	// 橡胶手部零件
+	addItem("rubber_hand")
+		.texture(`${global.namespace}:item/material/rubber_hand`)
+
 	// mek-ae2 cpu
 	// 灌注
 	addItem("infusion_treated_processor")

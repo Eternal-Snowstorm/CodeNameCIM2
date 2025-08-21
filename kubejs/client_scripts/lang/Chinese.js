@@ -49,6 +49,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_ultimate_control_circuit", "终极控制电路(半成品)")
 	addItemLanguage("magnesium_hydroxide", "氢氧化镁")
 	addItemLanguage("brominated_flame_retardants", "溴系阻燃剂")
+	addItemLanguage("rubber_hand", "橡胶手部零件")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")
@@ -64,7 +65,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")
 	addItemLanguage("mekanism_processor", "通用处理器")
 	addItemLanguage("music_disc_mechanism", "DontkillBelalus - Mechanism")
-	
+
 	addItemLanguage("reactive_element", "活泼元素")
 	addItemLanguage("stable_element", "稳定元素")
 	addItemLanguage("explosive_element", "爆鸣元素")
@@ -93,6 +94,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("acidic_concentrated_sea_water", "酸性浓缩海水")
 	addFluidLanguage("bromine", "溴")
 	addFluidLanguage("sodium_hydroxide", "氢氧化钠")
+	addFluidLanguage("hydrochloric_acid", "盐酸")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
@@ -312,8 +314,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"amethyst",
 		"紫水晶",
 		"通电后可以发出极具规律性的振动",
-		amethystEncyclopedia,
-		amethystEncyclopedia,
 		amethystEncyclopedia
 	)
 	let andesiteAlloyEncyclopedia = "岩石的能力, 铁器的数值"
@@ -321,8 +321,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"andesite_alloy",
 		"安山合金",
 		"岩石和金属居然能变成合金? ",
-		andesiteAlloyEncyclopedia,
-		andesiteAlloyEncyclopedia,
 		andesiteAlloyEncyclopedia
 	)
 	let brassEncyclopedia = "导热性与可塑性极强, 似乎可以做成搭载多个箭矢的模样"
@@ -330,8 +328,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"brass",
 		"黄铜",
 		"充满蒸汽的气息! ",
-		brassEncyclopedia,
-		brassEncyclopedia,
 		brassEncyclopedia
 	)
 	let industrialIronEncyclopedia = "通过重复排碳制成的高韧铁材料, 弹性与韧性极佳"
@@ -339,8 +335,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"industrial_iron",
 		"工业铁",
 		"富有韧性的高纯铁",
-		industrialIronEncyclopedia,
-		industrialIronEncyclopedia,
 		industrialIronEncyclopedia
 	)
 	let castIronEncyclopedia = "含有完整碳结晶的铁材料, 耐磨性极佳"
@@ -348,8 +342,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"cast_iron",
 		"铸铁",
 		"非常适合进一步加热! ",
-		castIronEncyclopedia,
-		castIronEncyclopedia,
 		castIronEncyclopedia
 	)
 	let stainlessSteelEncyclopedia = "有着极强耐腐蚀性能的材料, 可以有效减慢工具的损坏"
@@ -357,8 +349,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"stainless_steel",
 		"不锈钢",
 		"旧仓库角落中的反光",
-		stainlessSteelEncyclopedia,
-		stainlessSteelEncyclopedia,
 		stainlessSteelEncyclopedia
 	)
 	let deshEncyclopedia = "从月球开采的神秘材料, 似乎可以做出更好的升级？"
@@ -366,8 +356,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"desh",
 		"戴斯",
 		"来自月球的神秘金属",
-		deshEncyclopedia,
-		deshEncyclopedia,
 		deshEncyclopedia
 	)
 	let ostrumEncyclopedia = "来自火星的惰性金属, 似乎在灼热环境中会变得更加优秀"
@@ -375,8 +363,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"ostrum",
 		"紫金",
 		"越热就越强! ",
-		ostrumEncyclopedia,
-		ostrumEncyclopedia,
 		ostrumEncyclopedia
 	)
 	let caloriteEncyclopedia = "优秀的隔热材料, 可以承受更强的火箭尾焰, 将它送向其他星系"
@@ -384,8 +370,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"calorite",
 		"耐热金属",
 		"红色的隔热板! ",
-		caloriteEncyclopedia,
-		caloriteEncyclopedia,
 		caloriteEncyclopedia
 	)
 	let shadowSteelEncyclopedia = "从未知的致命领域归来的化合物, 韧性异常强大, 但是抗冲击能力堪称灾难"
@@ -393,8 +377,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"shadow_steel",
 		"暗影钢",
 		"从深渊中现身! ",
-		shadowSteelEncyclopedia,
-		shadowSteelEncyclopedia,
 		shadowSteelEncyclopedia
 	)
 	let refinedRadianceEncyclopedia = "吸收了大量光能的化合物, 韧性令人掩面, 但可以为装备提供极大的强化"
@@ -402,8 +384,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"refined_radiance",
 		"光辉石",
 		"来自天空的使者! ",
-		refinedRadianceEncyclopedia,
-		refinedRadianceEncyclopedia,
 		refinedRadianceEncyclopedia
 	)
 
@@ -577,12 +557,12 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`painting.${global.namespace}.${key}.author`, author)
 	}
 
-	function addTConMaterialLanguage(key, name, flavour, encyclopedia, ranged, armor) {
+	function addTConMaterialLanguage(key, name, flavour, encyclopedia) {
 		event.add(`material.${global.namespace}.${key}`, name)
 		event.add(`material.${global.namespace}.${key}.flavor`, flavour)
 		event.add(`material.${global.namespace}.${key}.encyclopedia`, encyclopedia)
-		event.add(`material.${global.namespace}.${key}.ranged`, ranged)
-		event.add(`material.${global.namespace}.${key}.armor`, armor)
+		event.add(`material.${global.namespace}.${key}.ranged`, encyclopedia)
+		event.add(`material.${global.namespace}.${key}.armor`, encyclopedia)
 	}
 
 	function addSolutionLanguage(key, value, tooltip) {

@@ -18,6 +18,16 @@ ServerEvents.recipes((event) => {
 		E: "cmi:stone_plate"
 	})
 
+	// 橡胶手
+	kubejs.shaped("cmi:rubber_hand",[
+		" A ",
+		"BBB",
+		" B "
+	],{
+		A: "#forge:ingots/andesite_alloy",
+		B: "thermal:cured_rubber"
+	})
+
 	// 木龙头
 	kubejs.shaped("cmi:wooden_faucet", [
 		" A ",

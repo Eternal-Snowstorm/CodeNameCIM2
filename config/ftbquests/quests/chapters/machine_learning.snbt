@@ -190,6 +190,7 @@
 				item: "cmi:andesite_mechanism"
 				type: "item"
 			}]
+			title: "安山构件"
 			x: 0.5d
 			y: 3.5d
 		}
@@ -207,7 +208,7 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: 5.5d
 		}
 		{
@@ -298,7 +299,7 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: 6.0d
 		}
 		{
@@ -560,8 +561,8 @@
 				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.5d
+			x: 0.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["09892B803004AA1D"]
@@ -620,6 +621,46 @@
 			}]
 			x: 1.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["20308A3CE26E5D67"]
+			id: "4E081FA1580EAAF9"
+			rewards: [{
+				id: "1304B988649CA39E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "573A03296F231E85"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["20308A3CE26E5D67"]
+			icon: "create:mechanical_press"
+			id: "680ED87569F99AF4"
+			rewards: [{
+				id: "7185039BF0D8AD94"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "081042A868062C01"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "7869EADB94A30BB5"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.0d
 		}
 	]
 	title: "学习机械"

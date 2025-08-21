@@ -181,6 +181,7 @@
 		}
 		{
 			dependencies: ["3B48B2AE5448F88E"]
+			icon: "createaddition:tesla_coil"
 			id: "3CD5A0E2A1AB76EB"
 			rewards: [{
 				id: "5C15BFBA2551112C"
