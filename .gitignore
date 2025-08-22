@@ -4,6 +4,7 @@
 /backups/
 /caxton*
 /.idea
+/data
 /CMI_*.jar
 /CMI_*.json
 /crash-reports/
@@ -38,7 +39,7 @@ fancymenu_data
 saves/*/session.lock
 /schematics
 hs_err*
-fabric*
+/fabric*
 /icon-exports-*
 ESM
 XaeroWaypoints*
