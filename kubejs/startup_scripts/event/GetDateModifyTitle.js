@@ -6,10 +6,12 @@ let $System = Java.loadClass("java.lang.System")
 StartupEvents.postInit((event) => {
 	let month = $LocalDateTime.now().getMonthValue()
 	let day = $LocalDateTime.now().getDayOfMonth()
-	let getSystemOsName = $System.getProperty("os.name").toLowerCase()
+	function getSystemOsName(name){
+		$System.getProperty("os.name").toLowerCase().contains(name)
+	}
 
 	if (Platform.isClientEnvironment()) {
-		if (month === 4 && day === 1 && !getSystemOsName.contains("mac")) {
+		if (month === 4 && day === 1 && !getSystemOsName("mac")) {
 			Client.window.setTitle("Create: Infinity Mechanism")
 		} else {
 			Client.window.setTitle("Create: Mechanism and Innovation")
