@@ -7,7 +7,7 @@ StartupEvents.postInit((event) => {
 	let month = $LocalDateTime.now().getMonthValue()
 	let day = $LocalDateTime.now().getDayOfMonth()
 	function getSystemOsName(name){
-		$System.getProperty("os.name").toLowerCase().contains(name)
+		return $System.getProperty("os.name").toLowerCase().contains(name)
 	}
 
 	if (Platform.isClientEnvironment()) {
