@@ -407,8 +407,14 @@
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
+			description: ["多方块结构 - 去按[W]寻思下怎么用"]
 			id: "4DF9116B2357D62D"
-			subtitle: "多方块结构 - 去按[W]寻思下怎么用"
+			rewards: [{
+				id: "69280515C60DBB70"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "无限产水"
 			tasks: [{
 				id: "33A573AB9F77F2F1"
 				item: "cmi:water_pump"
@@ -624,17 +630,25 @@
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
+			icon: "create:deployer"
 			id: "4E081FA1580EAAF9"
 			rewards: [{
 				id: "1304B988649CA39E"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "573A03296F231E85"
-				item: "create:deployer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "573A03296F231E85"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "46F82974260ED8BC"
+					item: "cmi:rubber_hand"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: 5.5d
 		}

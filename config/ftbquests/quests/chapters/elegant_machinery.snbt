@@ -176,8 +176,8 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.0d
+			x: 3.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["3B48B2AE5448F88E"]
@@ -348,6 +348,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "可以往紫水晶芽上注水"
 			tasks: [{
 				id: "17E4F41FB0697C6A"
 				item: {
@@ -371,6 +372,11 @@
 			]
 			icon: "minecraft:amethyst_cluster"
 			id: "52A96C4DF54ECD90"
+			rewards: [{
+				id: "2488C8092A881DAD"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				icon: "minecraft:amethyst_block"
 				id: "52562113C4221DDA"
@@ -392,7 +398,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "一种廉价到不能廉价的宝石"
+			subtitle: "一种廉价到不能再廉价的宝石"
 			tasks: [{
 				id: "443B840E74F16FEC"
 				item: {
@@ -417,7 +423,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "别放到耳边, 会哇哇哇的叫, 吵的你头疼"
+			subtitle: "别放到耳边, 会哇哇哇的叫唤"
 			tasks: [{
 				id: "2AAA2CE342011B6C"
 				item: "minecraft:soul_sand"
@@ -490,7 +496,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "涂在墨镜上可以模仿柯南"
+			subtitle: "涂在墨镜上可以模仿柯南吗?"
 			tasks: [{
 				id: "756D3F4A4DB6BF3B"
 				item: {
@@ -534,6 +540,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "square"
 			size: 1.5d
 			subtitle: "别被这个照到眼睛了"
 			tasks: [{
@@ -547,6 +554,11 @@
 		{
 			dependencies: ["39B65FFFBE06F481"]
 			id: "74179D016BFA23EB"
+			rewards: [{
+				id: "1E4551BAD5F24BE8"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "紫水晶经高能激光处理后, 可以发光"
 			tasks: [{
 				id: "7A517A71A3823BC1"

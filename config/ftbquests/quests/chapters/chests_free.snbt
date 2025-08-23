@@ -32,6 +32,11 @@
 		}
 		{
 			id: "56E28410FE10ADDA"
+			rewards: [{
+				id: "4CEB0DBA737CD8CE"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "通量水晶吗"
 			tasks: [{
 				id: "55BBB1ACE69ED49C"
@@ -74,6 +79,11 @@
 		{
 			dependencies: ["5C4867BCE9C90F18"]
 			id: "34595880AAFDC69C"
+			rewards: [{
+				id: "49FD89A57425BB85"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "355D0530C783AC61"
 				item: "ae2:smooth_sky_stone_block"
@@ -229,6 +239,11 @@
 		{
 			icon: "ae2:meteorite_compass"
 			id: "5C4867BCE9C90F18"
+			rewards: [{
+				id: "2E8C43F9A1E1E0B2"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "7117BA56BD405F1A"
@@ -256,6 +271,11 @@
 		{
 			dependencies: ["56E28410FE10ADDA"]
 			id: "41F9733A27F6C40F"
+			rewards: [{
+				id: "64F3F47F27D12A89"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "0856BE86F7C3ACC8"
 				item: "ae2:crystal_resonance_generator"
@@ -291,6 +311,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "沙子走一遍分液池"
 			tasks: [{
 				id: "2DF32EFE8B634CFB"
 				item: "cmi:pure_sand_bucket"
@@ -362,6 +383,11 @@
 		}
 		{
 			id: "47B4857754BB9464"
+			rewards: [{
+				id: "13BDF823F81067DE"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "03077AEF5BAED165"
 				item: "cmi:engineering_mechanism_part"

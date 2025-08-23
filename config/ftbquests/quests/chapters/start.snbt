@@ -279,11 +279,13 @@
 				{
 					id: "7BB9D6C371524FF2"
 					item: "tconstruct:cast_chest"
+					team_reward: true
 					type: "item"
 				}
 				{
 					id: "6B497AC11E7E2E69"
 					item: "tconstruct:ingot_cast"
+					team_reward: true
 					type: "item"
 				}
 				{
