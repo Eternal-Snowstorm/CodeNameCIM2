@@ -53,6 +53,7 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("turbid_waste_liquid")
 	addAloneFluid("cured_rubber")
 	addAloneFluid("pure_sand")
+		.noBlock()
 	addAloneFluid("molten_bitumen")
 	addAloneFluid("naphtha")
 	addAloneFluid("kerosene")

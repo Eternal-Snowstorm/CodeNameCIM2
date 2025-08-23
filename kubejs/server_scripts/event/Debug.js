@@ -44,53 +44,53 @@ PlayerEvents.chat((event) => {
 				player.runCommandSilent(`kjs reload ${command}`)
 			})
 			// Reloaded All Scripts!
-			player.tell(Component.translate(`message.${global.namespace}.reload`).green())
+			player.tell(Component.translatable(`message.${global.namespace}.reload`).green())
 			event.cancel()
 		}
 	}
 })
 
-	PlayerEvents.loggedIn((event) => {
-		let { player } = event
+PlayerEvents.loggedIn((event) => {
+	let { player } = event
 
-		/* 
-		* 获取Tag下的所有id, 会在
-		* "logs/kubejs/server.log"
-		* 打印出来, 更换Tag在Ingredient.of()内更换
-		*/
+	/* 
+	* 获取Tag下的所有id, 会在
+	* "logs/kubejs/server.log"
+	* 打印出来, 更换Tag在Ingredient.of()内更换
+	*/
 
-		for (let i = 0; i < global.debugUserName.length; i++) {
-			if (player.username === global.debugUserName[i]) {
-				// 遍历Tag
-				Ingredient.of("#cmi:ore_nodes")
-					.getItemIds()
-					.forEach((print) => {
-						console.log(print)
-					})
-			}
+	for (let i = 0; i < global.debugUserName.length; i++) {
+		if (player.username === global.debugUserName[i]) {
+			// 遍历Tag
+			Ingredient.of("#cmi:ore_nodes")
+				.getItemIds()
+				.forEach((print) => {
+					console.log(print)
+				})
 		}
-	})
+	}
+})
 
-	// 查看方块硬度(地质锤潜行右键方块)
-	BlockEvents.rightClicked((event) => {
-		let { player } = event
-		let getItem = "cmi:geological_hammer"
+// 查看方块硬度(地质锤潜行右键方块)
+BlockEvents.rightClicked((event) => {
+	let { player } = event
+	let getItem = "cmi:geological_hammer"
 
-		let blockState = event.getBlock().getBlockState()
-		let pos = event.getBlock().getPos()
-		let blockHardness = blockState.getDestroySpeed(event.getLevel(), pos)
+	let blockState = event.getBlock().getBlockState()
+	let pos = event.getBlock().getPos()
+	let blockHardness = blockState.getDestroySpeed(event.getLevel(), pos)
 
-		for (let i = 0; i < global.debugUserName.length; i++) {
-			if (event.hand === "OFF_HAND") {
-				return
-			}
-			if (player.mainHandItem === getItem &&
-				player.crouching &&
-				player.username === global.debugUserName[i]) {
-				event.getPlayer().swing()
-				let key = Component.translate(`message.${global.namespace}.debug.getHardness`, [blockHardness])
-				player.tell(key)
-				event.cancel()
-			}
+	for (let i = 0; i < global.debugUserName.length; i++) {
+		if (event.hand === "OFF_HAND") {
+			return
 		}
-	})
+		if (player.mainHandItem === getItem &&
+			player.crouching &&
+			player.username === global.debugUserName[i]) {
+			event.getPlayer().swing()
+			let key = Component.translatable(`message.${global.namespace}.debug.getHardness`, [blockHardness])
+			player.tell(key)
+			event.cancel()
+		}
+	}
+})

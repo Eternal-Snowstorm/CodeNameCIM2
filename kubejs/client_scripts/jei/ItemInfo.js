@@ -1,7 +1,7 @@
 JEIEvents.information((event) => {
 	function addJEIInfo(name) {
 		let itemInfoTranslateKey = `jei.info.${name}`.replace(":", ".")
-		event.addItem(name, Component.translate(itemInfoTranslateKey))
+		event.addItem(name, Component.translatable(itemInfoTranslateKey))
 	}
 
 	addJEIInfo("minecraft:andesite")

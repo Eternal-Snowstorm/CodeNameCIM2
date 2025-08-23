@@ -85,19 +85,19 @@ ItemEvents.tooltip((event) => {
 	})
 	function addCommonTooltip(item) {
 		let itemTooltipTranslateKey = `tooltip.${item}`.replace(":", ".")
-		event.add(item, Component.translate(itemTooltipTranslateKey))
+		event.add(item, Component.translatable(itemTooltipTranslateKey))
 	}
 
 	function addAccelerateTooltip(item) {
 		event.addAdvanced(item, (item, advanced, text) => {
 			if (event.shift) {
-				let lines = Component.translate(`tooltip.${item.getId()}.accelerate`.replace(":", "."))
+				let lines = Component.translatable(`tooltip.${item.getId()}.accelerate`.replace(":", "."))
 					.string.split("\n")
 				lines.forEach((line) => {
 					text.add(line)
 				})
 			} else {
-				text.add(Component.translate(`tooltip.${global.namespace}.acceleratable`))
+				text.add(Component.translatable(`tooltip.${global.namespace}.acceleratable`))
 			}
 		})
 	}
@@ -105,23 +105,23 @@ ItemEvents.tooltip((event) => {
 	// 地质锤的tooltip
 	event.addAdvanced("cmi:geological_hammer", (item, advanced, text) => {
 		if (global.isDeveloper) {
-			text.add(Component.translate("tooltip.cmi.geographycal_hammer.developer1"))
-			text.add(Component.translate("tooltip.cmi.geographycal_hammer.developer2"))
+			text.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer1"))
+			text.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer2"))
 		} else {
-			text.add(Component.translate("tooltip.cmi.geographycal_hammer.not_developer"))
+			text.add(Component.translatable("tooltip.cmi.geographycal_hammer.not_developer"))
 		}
 	})
 
 	// 初始套件的Tooltip
 	event.addAdvanced("cmi:initial_item_kit", (item, advanced, text) => {
 		if (event.shift) {
-			let lines = Component.translate("tooltip.cmi.initial_item_kit.shift")
+			let lines = Component.translatable("tooltip.cmi.initial_item_kit.shift")
 				.string.split("\n")
 			lines.forEach((line) => {
 				text.add(line)
 			})
 		} else {
-			text.add(Component.translate("tooltip.cmi.initial_item_kit.tip"))
+			text.add(Component.translatable("tooltip.cmi.initial_item_kit.tip"))
 		}
 	})
 
@@ -130,6 +130,6 @@ ItemEvents.tooltip((event) => {
 	let day = Java.loadClass("java.time.LocalDateTime").now().getDayOfMonth()
 
 	if (month === 4 && day === 1) {
-		event.add("minecraft:dirt", Component.translate(`tooltip.${global.namespace}.41dirt`))
+		event.add("minecraft:dirt", Component.translatable(`tooltip.${global.namespace}.41dirt`))
 	}
 })

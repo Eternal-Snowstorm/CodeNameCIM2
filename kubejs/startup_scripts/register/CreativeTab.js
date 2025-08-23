@@ -5,12 +5,12 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 	addCreativeTab("io_block")
 		.icon(() => Item.of("cmi:ponder_thermal_input"))
 		.content(() => Ingredient.of("#cmi:io_debug_block").itemIds)
-		.displayName(Component.translate(`itemGroup.${global.namespace}.io_block`))
+		.displayName(Component.translatable(`itemGroup.${global.namespace}.io_block`))
 
 	addCreativeTab("salts_and_solutions")
 		.icon(() => Item.of("cmi:feso4"))
 		.content(() => Ingredient.of("#forge:chem_salts").itemIds)
-		.displayName(Component.translate(`itemGroup.${global.namespace}.salts_and_solutions`))
+		.displayName(Component.translatable(`itemGroup.${global.namespace}.salts_and_solutions`))
 
 	addCreativeTab("mechanisms")
 		.icon(() => Item.of("cmi:creative_mechanism"))
@@ -22,7 +22,7 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 			.concat("cmi:crafting_incomplete_iron_mechanism")
 			.concat("cmi:crafting_incomplete_copper_mechanism")
 		)
-		.displayName(Component.translate(`itemGroup.${global.namespace}.mechanisms`))
+		.displayName(Component.translatable(`itemGroup.${global.namespace}.mechanisms`))
 
 	addCreativeTab("metals")
 		.icon(() => Item.of("cmi:platinum_ingot"))
@@ -31,10 +31,10 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 			.concat(Ingredient.of("#cmi:raw_metals").itemIds)
 			.concat(Ingredient.of("#cmi:ore_nodes").itemIds)
 		)
-		.displayName(Component.translate(`itemGroup.${global.namespace}.metals`))
+		.displayName(Component.translatable(`itemGroup.${global.namespace}.metals`))
 
 	addCreativeTab("developers")
 		.icon(() => Item.of("cmi:unknown_entity_"))
 		.content(() => Ingredient.of("#cmi:dev_doll").itemIds)
-		.displayName(Component.translate(`itemGroup.${global.namespace}.developers`))
+		.displayName(Component.translatable(`itemGroup.${global.namespace}.developers`))
 })

@@ -26,7 +26,7 @@ StartupEvents.registry("item", (event) => {
 				m_7626_(stack) {
 					if (Client.level) {
 						let modifyItemName =
-							Component.translate(`item.${global.namespace}.${name}_upgrade`)
+							Component.translatable(`item.${global.namespace}.${name}_upgrade`)
 						modifyItemName.setStyle($Style.EMPTY.applyTo(modifyItemName.getStyle()))
 
 						return modifyItemName
@@ -39,9 +39,9 @@ StartupEvents.registry("item", (event) => {
 					let fluidTranslateKey = `tooltip.${global.namespace}.storage_upgrade.fluidMultiplier`
 					let ctrlTranslateKey = `tooltip.${global.namespace}.storage_upgrade.controllerMultiplier`
 
-					tooltip.add(Component.translate(itemTranslateKey, itemMultiplier).gray())
-					tooltip.add(Component.translate(fluidTranslateKey, fluidMultiplier).gray())
-					tooltip.add(Component.translate(ctrlTranslateKey, controllerMultiplier).gray())
+					tooltip.add(Component.translatable(itemTranslateKey, itemMultiplier).gray())
+					tooltip.add(Component.translatable(fluidTranslateKey, fluidMultiplier).gray())
+					tooltip.add(Component.translatable(ctrlTranslateKey, controllerMultiplier).gray())
 				}
 			}, $StorageUpgradeItem$StorageTier.DIAMOND)
 		}).tag("functionalstorage:upgrades")
