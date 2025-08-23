@@ -18,13 +18,6 @@ ServerEvents.recipes((event) => {
 			.cast_consumed(true)
 	})
 
-	tconstruct.casting_basin("tconstruct:smeltery_controller")
-		.fluid(Fluid.of("tconstruct:molten_copper", 360))
-		.cast("tconstruct:seared_melter")
-		.cast_consumed(true)
-		.cooling_time(100)
-		.id("tconstruct:smeltery/casting/seared/smeltery_controller")
-
 	tconstruct.casting_table("cmi:mechanism_cast")
 		.fluid(Fluid.of("tconstruct:molten_gold", 90))
 		.cast("#create:mechanisms")
