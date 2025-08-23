@@ -13,7 +13,7 @@
 		x: -1.5d
 		y: -3.0d
 	}]
-	order_index: 0
+	order_index: 37
 	quest_links: [ ]
 	quests: [
 		{
@@ -177,5 +177,5 @@
 			y: 4.952857142857162d
 		}
 	]
-	title: "Nature"
+	title: "自然"
 }

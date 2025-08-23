@@ -13,7 +13,7 @@
 		x: -2.5d
 		y: -0.5d
 	}]
-	order_index: 11
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -316,5 +316,5 @@
 			y: -2.5d
 		}
 	]
-	title: "Thermal"
+	title: "热力"
 }

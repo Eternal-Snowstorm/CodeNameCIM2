@@ -13,7 +13,7 @@
 		x: -3.0d
 		y: -0.5d
 	}]
-	order_index: 3
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -35,10 +35,9 @@
 						value: "forge:stone"
 					}
 				}
-				title: "Any #forge:stone"
+				title: "石头"
 				type: "item"
 			}]
-			title: "Stone"
 			x: -11.5d
 			y: -1.5d
 		}
@@ -50,7 +49,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "3047DC8F8345FF9A"
-				title: "Press"
+				title: "辊压"
 				type: "checkmark"
 			}]
 			x: -5.5d
@@ -72,7 +71,6 @@
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			title: "Flint"
 			x: -2.5d
 			y: -1.0d
 		}
@@ -92,7 +90,6 @@
 				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
-			title: "Seared Brick"
 			x: 1.5d
 			y: 0.5d
 		}
@@ -112,10 +109,9 @@
 				item: "cmi:stone_mechanism"
 				type: "item"
 			}]
-			title: "Stone Mechanism"
 			x: 6.0d
 			y: -3.0d
 		}
 	]
-	title: "Stone"
+	title: "石质"
 }

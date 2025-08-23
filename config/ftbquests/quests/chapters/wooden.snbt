@@ -13,7 +13,7 @@
 		x: -2.0d
 		y: -2.0d
 	}]
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -35,10 +35,10 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "Any #minecraft:logs"
+				title: "原木"
 				type: "item"
 			}]
-			title: "Log"
+			title: "原木"
 			x: -13.5d
 			y: 0.0d
 		}
@@ -62,10 +62,9 @@
 						value: "minecraft:planks"
 					}
 				}
-				title: "Any #minecraft:planks"
+				title: "木板"
 				type: "item"
 			}]
-			title: "Plank"
 			x: -9.0d
 			y: 2.0d
 		}
@@ -77,10 +76,10 @@
 			size: 1.0d
 			tasks: [{
 				id: "75FA176DB4C6E19E"
-				title: "plank"
+				title: "辊压"
 				type: "checkmark"
 			}]
-			title: "Press"
+			title: "辊压"
 			x: -1.5d
 			y: 5.0d
 		}
@@ -104,10 +103,9 @@
 						value: "forge:rods/wooden"
 					}
 				}
-				title: "Any #forge:rods/wooden"
+				title: "木棍"
 				type: "item"
 			}]
-			title: "Stick"
 			x: 1.5d
 			y: 2.5d
 		}
@@ -119,10 +117,10 @@
 			size: 1.0d
 			tasks: [{
 				id: "060FA62D17060F9B"
-				title: "plank"
+				title: "切割"
 				type: "checkmark"
 			}]
-			title: "Cut"
+			title: "切割"
 			x: 5.0d
 			y: 4.0d
 		}
@@ -142,7 +140,6 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
 			x: 7.5d
 			y: 5.0d
 		}
@@ -162,10 +159,9 @@
 				item: "cmi:wooden_mechanism"
 				type: "item"
 			}]
-			title: "Wooden Mechanism"
 			x: 11.0d
 			y: 2.0d
 		}
 	]
-	title: "Wooden"
+	title: "木质"
 }

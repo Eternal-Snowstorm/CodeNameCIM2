@@ -13,7 +13,7 @@
 		x: 1.5d
 		y: 7.0d
 	}]
-	order_index: 35
+	order_index: 33
 	quest_links: [ ]
 	quests: [
 		{
@@ -340,5 +340,5 @@
 			y: 13.537142857142882d
 		}
 	]
-	title: "Bronze"
+	title: "青铜"
 }

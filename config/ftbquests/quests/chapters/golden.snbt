@@ -13,7 +13,7 @@
 		x: -2.0d
 		y: -0.5d
 	}]
-	order_index: 8
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -110,5 +110,5 @@
 			y: 4.5d
 		}
 	]
-	title: "Gold"
+	title: "金质"
 }

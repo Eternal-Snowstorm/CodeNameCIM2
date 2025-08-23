@@ -13,7 +13,7 @@
 		x: -2.0d
 		y: -1.5d
 	}]
-	order_index: 37
+	order_index: 35
 	quest_links: [ ]
 	quests: [
 		{
@@ -133,5 +133,5 @@
 			y: 1.4642857142857153d
 		}
 	]
-	title: "Redstone"
+	title: "红石"
 }

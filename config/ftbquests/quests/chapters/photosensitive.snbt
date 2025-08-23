@@ -13,7 +13,7 @@
 		x: -3.0d
 		y: -1.0d
 	}]
-	order_index: 7
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -116,7 +116,6 @@
 				item: "thermal_extra:amethyst_dust"
 				type: "item"
 			}]
-			title: "Amethyst Dust"
 			x: -10.0d
 			y: 2.0d
 		}
@@ -128,7 +127,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "34AA6D1E681D3032"
-				title: "Filling water *4"
+				title: "4次注水"
 				type: "checkmark"
 			}]
 			x: -10.0d
@@ -138,6 +137,7 @@
 			dependencies: ["04D8E7B236306B91"]
 			disable_toast: true
 			hide_dependent_lines: true
+			icon: "minecraft:amethyst_cluster"
 			id: "6BEF3191E17065E0"
 			rewards: [{
 				id: "3DB25C07FE73DE50"
@@ -146,11 +146,10 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				id: "38432647A57F42C1"
-				item: "minecraft:amethyst_cluster"
-				type: "item"
+				id: "2FAF41CDEDE88853"
+				title: "紫水晶簇"
+				type: "checkmark"
 			}]
-			title: "Amethyst Cluster"
 			x: -8.0d
 			y: -3.0d
 		}
@@ -278,5 +277,5 @@
 			y: 1.8571428571428612d
 		}
 	]
-	title: "Photosensitive"
+	title: "感光"
 }

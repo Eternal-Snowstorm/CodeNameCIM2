@@ -13,7 +13,7 @@
 		x: 1.0d
 		y: -1.5d
 	}]
-	order_index: 33
+	order_index: 31
 	quest_links: [ ]
 	quests: [
 		{
@@ -162,5 +162,5 @@
 			y: -2.07714285714286d
 		}
 	]
-	title: "Colorful"
+	title: "多彩"
 }

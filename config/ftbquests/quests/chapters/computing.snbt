@@ -13,7 +13,7 @@
 		x: -1.5d
 		y: -0.5d
 	}]
-	order_index: 20
+	order_index: 18
 	quest_links: [ ]
 	quests: [
 		{
@@ -677,5 +677,5 @@
 			y: 0.12380952380951271d
 		}
 	]
-	title: "Computing"
+	title: "计算"
 }
