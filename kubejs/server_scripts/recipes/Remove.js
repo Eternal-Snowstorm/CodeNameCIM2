@@ -54,7 +54,9 @@ ServerEvents.recipes((event) => {
 		"create:crafting/palettes/scorchia",
 		"tconstruct:smeltery/alloys/molten_enderium",
 		"thermal_extra:machine/fluid_mixer/polyolefin",
-		"createaddition:compacting/seed_oil"
+		"createaddition:compacting/seed_oil",
+		"vintageimprovements:pressurizing/copper_sulfate",
+		"mekanism:evaporating/brine"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

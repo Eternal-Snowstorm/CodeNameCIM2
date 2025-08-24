@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, thermal, thermal_extra, tconstruct } = event.recipes
+	let { create, createdieselgenerators, thermal, thermal_extra, tconstruct, immersiveengineering } = event.recipes
 
 	// 蒸馏
 	createdieselgenerators.distillation([
@@ -88,4 +88,12 @@ ServerEvents.recipes((event) => {
 
 	// 热力烧废液
 	thermal.compression_fuel("cmi:turbid_waste_liquid", 200000)
+
+	// IE塑胶
+	event.custom
+		({ "type": "immersiveengineering:refinery", 
+			"energy": 240, 
+			"input0": { "amount": 12, "tag": "forge:acetaldehyde" }, 
+			"input1": { "amount": 8, "tag": "forge:creosote" }, 
+			"result": { "amount": 8, "fluid": "immersiveengineering:phenolic_resin" } })
 })

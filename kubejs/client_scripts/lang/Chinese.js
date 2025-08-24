@@ -50,6 +50,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("magnesium_hydroxide", "氢氧化镁")
 	addItemLanguage("brominated_flame_retardants", "溴系阻燃剂")
 	addItemLanguage("rubber_hand", "橡胶手部零件")
+	addItemLanguage("flame_retardant_plastic", "阻燃塑料")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")

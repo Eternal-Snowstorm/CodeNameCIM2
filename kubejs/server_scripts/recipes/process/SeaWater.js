@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { createdieselgenerators, create } = event.recipes
+	let { tconstruct, createdieselgenerators, create, mekanism } = event.recipes
 
 	// 蒸馏
 	createdieselgenerators.distillation([
@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 		"cmi:magnesium_hydroxide"
 	], [
 		Fluid.of("cmi:concentrated_sea_water", 1000),
-		"4x cmi:lime"
+		"cmi:lime"
 	])
 
 	// 氯化钠+硫酸钠+氯化钙+硫酸钙
@@ -39,14 +39,14 @@ ServerEvents.recipes((event) => {
 	]).heated()
 
 	// 酸性浓缩海水
-	create.mixing(Fluid.of("cmi:acidic_concentrated_sea_water", 2000), [
-		Fluid.of("cmi:concentrated_sea_water", 1000),
-		Fluid.of("vintageimprovements:sulfuric_acid", 1000)
+	create.mixing(Fluid.of("cmi:acidic_concentrated_sea_water", 500), [
+		Fluid.of("cmi:concentrated_sea_water", 500),
+		Fluid.of("vintageimprovements:sulfuric_acid", 100)
 	])
 
-	create.mixing(Fluid.of("cmi:acidic_concentrated_sea_water", 2000), [
-		Fluid.of("cmi:concentrated_sea_water", 1000),
-		Fluid.of("cmi:hydrochloric_acid", 1000)
+	create.mixing(Fluid.of("cmi:acidic_concentrated_sea_water", 500), [
+		Fluid.of("cmi:concentrated_sea_water", 500),
+		Fluid.of("mekanism:hydrogen_chloride", 100)
 	])
 
 	// 液态溴+废液
@@ -55,13 +55,13 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:turbid_waste_liquid", 250)
 	], [
 		Fluid.of("cmi:acidic_concentrated_sea_water", 500),
-		Fluid.of("mekanism:chlorine", 500)
+		Fluid.of("mekanism:chlorine", 100)
 	]).heated()
 
 	// 氯化镁溶液
 	create.mixing(Fluid.of("cmi:mgcl2_solution", 1000), [
-		Fluid.of("cmi:hydrochloric_acid", 500),
-		"4x cmi:magnesium_hydroxide"
+		Fluid.of("mekanism:hydrogen_chloride", 100),
+		"cmi:magnesium_hydroxide"
 	])
 
 	// 镁粉+氯气
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
 		},
 		"result_fluid": {
 			"fluid": "mekanism:chlorine",
-			"amount": 50
+			"amount": 100
 		},
 		"result": {
 			"item": "cmi:magnesium_dust",
@@ -85,8 +85,8 @@ ServerEvents.recipes((event) => {
 	// 重水+氯化钠+硫酸钠
 	createdieselgenerators.distillation([
 		Fluid.of("mekanism:heavy_water", 10),
-		Fluid.of("cmi:nacl_solution", 25),
-		Fluid.of("cmi:na2so4_solution", 15)
+		Fluid.of("cmi:nacl_solution", 500),
+		Fluid.of("cmi:na2so4_solution", 300)
 	], Fluid.of("cmi:concentrated_sea_water", 1000))
 		.heatRequirement("heated")
 
@@ -116,4 +116,39 @@ ServerEvents.recipes((event) => {
 		Fluid.of("minecraft:water", 1000),
 		"2x #forge:dusts/sodium"
 	])
+
+	event.custom({
+		"type": "immersiveindustry:chemical",
+		"input_fluids": [
+			{
+				"fluid": "cmi:bromine",
+				"amount": 500
+			}
+		],
+		"outputs": [
+			{
+				"item": "brominated_flame_retardants",
+				"count": 1
+			}
+		],
+		"time": 200
+	})
+
+//出错
+	// 阻燃塑料
+	create.mixing([
+		"cmi:flame_retardant_plastic",
+	], [
+		"cmi:brominated_flame_retardants",
+		'mekanism:hdpe_pellet'
+	]).heated()
+
+//出错
+	// 镁盐结晶
+	tconstruct.casting_table("cmi:mgso4",
+		Fluid.of("cmi:mgso4_solution", 500), "#tconstruct:casts/multi_use/gem")
+	tconstruct.casting_table("cmi:mgcl2",
+		Fluid.of("cmi:mgcl2_solution", 500), "#tconstruct:casts/multi_use/gem")
 })
+
+

@@ -187,4 +187,8 @@ StartupEvents.registry("item", (event) => {
 	// Mg(OH)2
 	addItem("brominated_flame_retardants")
 		.texture(`${global.namespace}:item/material/brominated_flame_retardants`)
+
+	// Mg(OH)2
+	addItem("flame_retardant_plastic")
+		.texture(`${global.namespace}:item/material/flame_retardant_plastic`)
 })

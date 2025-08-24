@@ -1,0 +1,1 @@
+{"type":"mekanism:rotary","fluidInput":{"amount":200,"tag":"minecraft:water"},"fluidOutput":{"amount":200,"fluid":"minecraft:water"},"gasInput":{"amount":200,"gas":"mekanism:water_vapor"},"gasOutput":{"amount":200,"gas":"mekanism:water_vapor"}}
