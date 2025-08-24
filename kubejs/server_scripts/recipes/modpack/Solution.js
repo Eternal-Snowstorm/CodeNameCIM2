@@ -3,7 +3,7 @@
  * 导致每次进入游戏load会导致流体无法get
  * 目前解决方案是进游戏时自动reload(服务端reload!)
  * 但是可能会导致小部分呢奇奇怪怪的问题(不能确保是什么)
-*/
+ */
 ServerEvents.recipes((event) => {
 	let { create, tconstruct } = event.recipes
 
