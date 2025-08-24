@@ -134,21 +134,19 @@ ServerEvents.recipes((event) => {
 		"time": 200
 	})
 
-//出错
 	// 阻燃塑料
-	create.mixing([
-		"cmi:flame_retardant_plastic",
-	], [
+	create.mixing("cmi:flame_retardant_plastic", [
 		"cmi:brominated_flame_retardants",
-		'mekanism:hdpe_pellet'
+		"mekanism:hdpe_pellet"
 	]).heated()
 
-//出错
 	// 镁盐结晶
-	tconstruct.casting_table("cmi:mgso4",
-		Fluid.of("cmi:mgso4_solution", 500), "#tconstruct:casts/multi_use/gem")
-	tconstruct.casting_table("cmi:mgcl2",
-		Fluid.of("cmi:mgcl2_solution", 500), "#tconstruct:casts/multi_use/gem")
+	tconstruct.casting_table("cmi:mgso4")
+		.fluid(Fluid.of("cmi:mgso4_solution", 500))
+		.cast("#tconstruct:casts/multi_use/gem")
+		.time(20 * 2)
+	tconstruct.casting_table("cmi:mgcl2")
+		.fluid(Fluid.of("cmi:mgcl2_solution", 500))
+		.cast("#tconstruct:casts/multi_use/gem")
+		.time(20 * 2)
 })
-
-

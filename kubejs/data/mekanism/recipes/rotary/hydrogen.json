@@ -1,1 +1,19 @@
-{"type":"mekanism:rotary","fluidInput":{"amount":200,"tag":"forge:hydrogen"},"fluidOutput":{"amount":200,"fluid":"mekanism:hydrogen"},"gasInput":{"amount":200,"gas":"mekanism:hydrogen"},"gasOutput":{"amount":200,"gas":"mekanism:hydrogen"}}
+{
+	"type": "mekanism:rotary",
+	"fluidInput": {
+		"amount": 200,
+		"tag": "forge:hydrogen"
+	},
+	"fluidOutput": {
+		"amount": 200,
+		"fluid": "mekanism:hydrogen"
+	},
+	"gasInput": {
+		"amount": 200,
+		"gas": "mekanism:hydrogen"
+	},
+	"gasOutput": {
+		"amount": 200,
+		"gas": "mekanism:hydrogen"
+	}
+}

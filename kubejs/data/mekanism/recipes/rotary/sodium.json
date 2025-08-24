@@ -1,1 +1,19 @@
-{"type":"mekanism:rotary","fluidInput":{"amount":200,"tag":"forge:sodium"},"fluidOutput":{"amount":200,"fluid":"mekanism:sodium"},"gasInput":{"amount":200,"gas":"mekanism:sodium"},"gasOutput":{"amount":200,"gas":"mekanism:sodium"}}
+{
+	"type": "mekanism:rotary",
+	"fluidInput": {
+		"amount": 200,
+		"tag": "forge:sodium"
+	},
+	"fluidOutput": {
+		"amount": 200,
+		"fluid": "mekanism:sodium"
+	},
+	"gasInput": {
+		"amount": 200,
+		"gas": "mekanism:sodium"
+	},
+	"gasOutput": {
+		"amount": 200,
+		"gas": "mekanism:sodium"
+	}
+}
