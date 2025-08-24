@@ -56,7 +56,8 @@ ServerEvents.recipes((event) => {
 		"thermal_extra:machine/fluid_mixer/polyolefin",
 		"createaddition:compacting/seed_oil",
 		"vintageimprovements:pressurizing/copper_sulfate",
-		"mekanism:evaporating/brine"
+		"mekanism:evaporating/brine",
+		"immersiveengineering:blueprint/electron_tube"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
