@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
 	// 蒸汽处理
 	thermal_extra.advanced_refinery([
 		Fluid.of("createdieselgenerators:crude_oil", 100),
-		Fluid.of("cmi:steam", 500),
+		Fluid.of("mekanism:steam", 500),
 		Fluid.of("cmi:turbid_waste_liquid", 400)
 	], Fluid.of("cmi:oil_shale_steam", 1000))
 		.energy(10000)

@@ -35,5 +35,5 @@ ServerEvents.tags("fluid", (event) => {
 		.add("cmi:nacl_solution")
 
 	event.get("forge:steam")
-		.add("cmi:steam")
+		.add("mekanism:steam")
 })

@@ -19,11 +19,11 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 橡胶手
-	kubejs.shaped("cmi:rubber_hand",[
+	kubejs.shaped("cmi:rubber_hand", [
 		" A ",
 		"BBB",
 		" B "
-	],{
+	], {
 		A: "#forge:ingots/andesite_alloy",
 		B: "thermal:cured_rubber"
 	})
@@ -59,11 +59,22 @@ ServerEvents.recipes((event) => {
 		C: "#forge:plates/iron"
 	})
 
+	// 安山岩粉
+	kubejs.shapeless("cmi:andesite_dust", [
+		"#create:stone_types/andesite",
+		"#forge:hammer"
+	]).damageIngredient("#forge:hammer", 1)
+
 	// 石板
 	kubejs.shapeless("cmi:stone_plate", [
 		"2x #forge:stone",
-		"immersiveengineering:hammer"
-	]).damageIngredient("immersiveengineering:hammer")
+		"#forge:hammer"
+	]).damageIngredient("#forge:hammer", 1)
+
+	// 草绳
+	kubejs.shapeless("cmi:grass_string", [
+		"3x cmi:grass_fiber"
+	])
 
 	// 坩埚底座
 	kubejs.shaped("3x cmi:crucible_base", [

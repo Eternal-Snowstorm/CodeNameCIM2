@@ -6,7 +6,7 @@ MMEvents.createProcesses((event) => {
 			type: "mm:input/consume",
 			ingredient: {
 				type: "mm:fluid",
-				fluid: "cmi:steam",
+				fluid: "mekanism:steam",
 				amount: global.BUCKET_CAPACITY
 			}
 		})

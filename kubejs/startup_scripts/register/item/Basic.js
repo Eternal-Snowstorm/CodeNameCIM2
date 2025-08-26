@@ -147,6 +147,15 @@ StartupEvents.registry("item", (event) => {
 	addItem("rubber_hand")
 		.texture(`${global.namespace}:item/material/rubber_hand`)
 
+	// 草纤维
+	addItem("grass_fiber")
+		.texture(`${global.namespace}:item/material/grass_fiber`)
+
+	// 草绳
+	addItem("grass_string")
+		.texture(`${global.namespace}:item/material/grass_string`)
+		.tag("forge:string")
+
 	// mek-ae2 cpu
 	// 灌注
 	addItem("infusion_treated_processor")

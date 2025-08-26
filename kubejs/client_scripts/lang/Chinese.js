@@ -35,6 +35,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("rubber_plate", "橡胶板")
 	addItemLanguage("lime", "生石灰")
 	addItemLanguage("super_knife", "纯粹小刀")
+	addItemLanguage("wooden_knife", "木质小刀")
 	addItemLanguage("wooden_faucet", "木质龙头")
 	addItemLanguage("andesite_alloy_noodle_stage0", "安山合金刀削面(阶段0)")
 	addItemLanguage("andesite_alloy_noodle_stage1", "安山合金刀削面(阶段1)")
@@ -51,6 +52,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("brominated_flame_retardants", "溴系阻燃剂")
 	addItemLanguage("rubber_hand", "橡胶手部零件")
 	addItemLanguage("flame_retardant_plastic", "阻燃塑料")
+	addItemLanguage("grass_fiber", "草纤维")
+	addItemLanguage("grass_string", "草绳")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")

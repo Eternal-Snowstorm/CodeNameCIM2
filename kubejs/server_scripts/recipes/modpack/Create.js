@@ -100,7 +100,7 @@ ServerEvents.recipes((event) => {
 
 	vintageimprovements.pressurizing([
 		"mekanism:pellet_polonium",
-		Fluid.of("cmi:steam", 200)
+		Fluid.of("mekanism:steam", 200)
 	], [
 		Fluid.of("mekanism:uranium_hexafluoride", 200),
 		Fluid.of("minecraft:water", 200),

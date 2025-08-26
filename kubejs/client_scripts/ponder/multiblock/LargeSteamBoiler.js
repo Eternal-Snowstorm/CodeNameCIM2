@@ -1,12 +1,12 @@
 Ponder.registry((event) => {
 	event.create([
 		"cmi:bronze_casing",
-		"cmi:steam_boiler",
+		"mekanism:steam_boiler",
 		"mm:large_steam_boiler",
 		"mm:large_steam_boiler_fluid_output",
 		"mm:large_steam_boiler_fluid_input",
 		"mm:large_steam_boiler_item_input",
-		"cmi:steam_bucket"
+		"mekanism:steam_bucket"
 	]).scene(`${global.namespace}:large_steam_boiler`, "Large Steam Boiler", (scene) => {
 		const BRONZE_CASING = "cmi:bronze_casing"
 

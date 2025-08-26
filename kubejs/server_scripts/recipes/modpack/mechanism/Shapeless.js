@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 		"#minecraft:planks",
 		"minecraft:stick",
 		"cmi:basic_mechanism_part",
-		"immersiveengineering:hammer"
+		"#forge:hammer"
 	])
 
 	// 石质
@@ -15,38 +15,38 @@ ServerEvents.recipes((event) => {
 		"cmi:wooden_mechanism",
 		"#forge:stone",
 		"minecraft:flint",
-		"immersiveengineering:hammer",
+		"#forge:hammer",
 		"tconstruct:seared_brick",
-	]).damageIngredient("immersiveengineering:hammer", 1)
+	]).damageIngredient("#forge:hammer", 1)
 
 	// 铁质
 	kubejs.shapeless("cmi:iron_mechanism", [
 		"cmi:crafting_incomplete_iron_mechanism",
-		"immersiveengineering:hammer",
+		"#forge:hammer",
 		"#forge:nuggets/iron",
 		"#forge:nuggets/iron",
 		"cmi:basic_mechanism_part"
-	]).damageIngredient("immersiveengineering:hammer", 1)
+	]).damageIngredient("#forge:hammer", 1)
 
 	// 铜质
 	kubejs.shapeless("cmi:copper_mechanism", [
 		"cmi:crafting_incomplete_copper_mechanism",
-		"immersiveengineering:hammer",
+		"#forge:hammer",
 		"#forge:nuggets/copper",
 		"create:fluid_pipe",
 		"thermal:cured_rubber",
 		"cmi:mechanical_mechanism_part",
 		"minecraft:water_bucket"
-	]).damageIngredient("immersiveengineering:hammer", 1)
+	]).damageIngredient("#forge:hammer", 1)
 
 	// 安山
 	kubejs.shapeless("cmi:andesite_mechanism", [
 		"2x #forge:ingots/andesite_alloy",
-		"immersiveengineering:hammer",
+		"#forge:hammer",
 		"create:cogwheel",
 		"create:cogwheel",
 		"cmi:mechanical_mechanism_part"
-	]).damageIngredient("immersiveengineering:hammer", 1)
+	]).damageIngredient("#forge:hammer", 1)
 
 	kubejs.shapeless("4x cmi:basic_mechanism_part", [
 		"minecraft:flint",

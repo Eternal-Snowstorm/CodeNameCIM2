@@ -49,6 +49,7 @@
 				"我基于任务, 思索和JEI编写了这一套仪式, 我将其命名为&e构件与革新&r. 我相信它可以帮助每一个像你这样流浪到这里的旅人"
 				""
 				"&a当然, 它的内容并不完全, 我也不可能事无巨细地把所有的细节都教给你, 你总是需要自己去探索那些大量且不在仪式说明中的内容&r"
+				""
 				"{image:cmi:textures/images/authorization/slime_authorization.png width:144 height:45 align:center}"
 				"&b文案来自黄铜协奏曲, 已经过原作者授权"
 			]
@@ -99,7 +100,6 @@
 			y: -2.0d
 		}
 		{
-			description: ["由于师傅玩的是还未更新的Beta-2.2.0的抢先体验版, 所以可能多多少少会有一定的BUG, 出BUG了还请多多反馈"]
 			disable_toast: true
 			icon: "create:steam_engine"
 			id: "1970EFE7924032F0"
@@ -122,7 +122,7 @@
 				id: "79D5B1959C780861"
 				type: "checkmark"
 			}]
-			title: "抢先体验版"
+			title: "预发行版"
 			x: 2.0d
 			y: -2.0d
 		}
@@ -483,6 +483,7 @@
 			description: [
 				"[？？] 史莱姆li"
 				"[音乐] DontkillBelalus"
+				"[结构] 咸到老时变成鱼"
 			]
 			icon: "minecraft:apple"
 			id: "30ED8BD20D50F96D"
@@ -523,6 +524,19 @@
 			]
 			icon: "createdeco:decal_warning"
 			id: "511AD7F0E04213FC"
+			rewards: [
+				{
+					id: "24F80221EE499443"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 32
+					id: "159C4359DE3D8E71"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "这里是一些常见问题的解决方案"
 			tasks: [{

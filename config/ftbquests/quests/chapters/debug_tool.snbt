@@ -1,10 +1,10 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "24DE1929EF580EEB"
+	filename: "debug_tool"
 	group: ""
 	icon: "thermal:iron_gear"
-	id: "24DE1929EF580EEB"
+	id: "15397CD3CD8AF4A2"
 	images: [
 		{
 			click: "command:reload"

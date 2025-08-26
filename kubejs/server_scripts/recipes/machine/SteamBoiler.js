@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 			{
 				"type": "custommachinery:fluid",
 				"mode": "output",
-				"fluid": "cmi:steam",
+				"fluid": "mekanism:steam",
 				"amount": 2
 			},
 			{

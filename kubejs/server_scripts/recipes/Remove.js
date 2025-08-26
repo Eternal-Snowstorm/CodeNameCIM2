@@ -57,7 +57,15 @@ ServerEvents.recipes((event) => {
 		"createaddition:compacting/seed_oil",
 		"vintageimprovements:pressurizing/copper_sulfate",
 		"mekanism:evaporating/brine",
-		"immersiveengineering:blueprint/electron_tube"
+		"immersiveengineering:blueprint/electron_tube",
+		"cmi:creative_mechanism_flash_drive",
+		"create:crafting/materials/andesite_alloy",
+		"create:crafting/materials/andesite_alloy_from_zinc",
+		"tconstruct:compat/create/andesite_alloy_iron",
+		"tconstruct:compat/create/andesite_alloy_zinc",
+		"tconstruct:compat/create/andesite_alloy_iron",
+		"tconstruct:compat/create/andesite_alloy_zinc",
+		"ad_astra:coal_generator"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -118,8 +126,7 @@ ServerEvents.recipes((event) => {
 		"ad_astra:tier_1_rocket",
 		"ad_astra:tier_2_rocket",
 		"ad_astra:tier_3_rocket",
-		"ad_astra:tier_4_rocket",
-		"cmi:creative_mechanism_flash_drive"
+		"ad_astra:tier_4_rocket"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({

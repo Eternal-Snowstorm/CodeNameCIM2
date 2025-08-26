@@ -13,7 +13,6 @@
 /local/
 /logs/
 /modernfix/
-/mods/
 /options.txt
 /patchouli_books/
 /patchouli_data.json
@@ -45,6 +44,10 @@ ESM
 XaeroWaypoints*
 /oei
 replay*
+
+# Mods
+/mods/*
+!/mods/CMI Core-*-1.20.1-all.jar
 
 # ResourcePacks
 /resourcepacks/*

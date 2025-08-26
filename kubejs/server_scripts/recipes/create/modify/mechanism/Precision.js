@@ -53,17 +53,6 @@ ServerEvents.recipes((event) => {
 		C: casing
 	}).id("create:crafting/logistics/stockpile_switch")
 
-	// steam引擎
-	kubejs.shaped("create:steam_engine", [
-		"A",
-		"B",
-		"C"
-	], {
-		A: mech,
-		B: "#forge:ingots/andesite_alloy",
-		C: "#forge:storage_blocks/copper"
-	}).id("create:crafting/kinetics/steam_engine")
-
 	// 电梯
 	kubejs.shaped("create:elevator_pulley", [
 		" A ",
