@@ -306,8 +306,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("create:precision_mechanism", "§e转化石头\n§e15%铜矿石\n§e15%锌矿石\n§e10%红石矿石\n§2转化深板岩\n§210%深层铜矿石\n§210%深层锌矿石\n§215%深层红石矿石")
 	addAccelerateTooltipLanguage("cmi:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 
-	addHeatedLanguage("grilled", "炙烤")
-
 	addMusicDiscLanguage("mechanism", "Mechanism", "DontkillBelalus")
 
 	let amethystEncyclopedia = "紫水晶中流动的微弱力量会试图获取更多的稀有资源"
