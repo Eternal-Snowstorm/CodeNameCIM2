@@ -1,8 +1,7 @@
 BlockEvents.rightClicked((event) => {
 	let { block, item, player, level } = event
-	const WOODEN_FAUCET = "cmi:wooden_faucet"
 
-	if (block.id === "thermal:rubberwood_log" && item.id === WOODEN_FAUCET) {
+	if (block.id === "thermal:rubberwood_log" && player.mainHandItem.hasTag("cmi:faucet")) {
 		player.swing()
 		if (item.getDamageValue() >= item.getMaxDamage()) {
 			player.setItemInHand(event.hand, "minecraft:air")

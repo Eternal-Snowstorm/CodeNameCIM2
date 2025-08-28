@@ -22,6 +22,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:cast_iron_ingot")
 	addCommonTooltip("cmi:creosote_wood_chip_briquette")
 	addCommonTooltip("mm:large_steam_boiler")
+	addCommonTooltip("#forge:ingots/siltsteel")
 
 	addCommonTooltip("createaddition:bioethanol")
 	addCommonTooltip("thermal_extra:diesel")

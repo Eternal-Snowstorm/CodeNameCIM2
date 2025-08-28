@@ -1,2 +1,7 @@
 type HeatedLevel = "heated" | "superheated" | "grilled";
-heatRequirement: HeatedLevel
+
+declare namespace Internal {
+	interface ProcessingRecipeSchema$ProcessingRecipeJS {
+		heatRequirement(heatRequirement: HeatedLevel | string): this
+	}
+}

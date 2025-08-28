@@ -1,6 +1,6 @@
-function addMMPonder(event, controllerName, displayName, scmaticsName, level, horizon) {
-	return event.create(controllerName)
-		.scene(`${global.namespace}:${scmaticsName}`, `${displayName}`, `${global.namespace}:multiblock/${scmaticsName}`, (scene) => {
+function addMMPonder(event, controller, name, scmatics, level, horizon) {
+	return event.create(controller)
+		.scene(`${global.namespace}:${scmatics}`, `${name}`, `${global.namespace}:multiblock/${scmatics}`, (scene) => {
 			scene.scaleSceneView(horizon)
 			scene.showStructure(0)
 			scene.idle(20)

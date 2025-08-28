@@ -27,7 +27,7 @@ StartupEvents.registry("item", (event) => {
 					if (Client.level) {
 						let modifyItemName =
 							Component.translatable(`item.${global.namespace}.${name}_upgrade`)
-						modifyItemName.setStyle($Style.EMPTY.applyTo(modifyItemName.getStyle()))
+								.setStyle($Style.EMPTY.applyTo(modifyItemName.getStyle()))
 
 						return modifyItemName
 					} else {

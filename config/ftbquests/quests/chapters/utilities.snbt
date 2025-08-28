@@ -13,6 +13,20 @@
 	id: "4D96ACCE1356C17D"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "714D1AC6D07BEEC0"
+		rewards: [{
+			id: "2655761D7F974CC2"
+			type: "xp"
+			xp: 10
+		}]
+		tasks: [{
+			id: "48D573EC7FE00A91"
+			title: "一些实用工具"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "实用工具(WIP)"
 }
