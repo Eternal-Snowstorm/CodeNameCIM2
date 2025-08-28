@@ -5,14 +5,7 @@ StartupEvents.registry("fluid", (event) => {
 				.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
 				.stillTexture(`${global.namespace}:fluid/${name}/still`)
 
-		if (Platform.isClientEnvironment()) {
-			let file = `kubejs/assets/${global.namespace}/models/item/${name}_bucket.json`
-			JsonIO.write(file, {
-				"parent": "forge:item/bucket_drip",
-				"loader": "forge:fluid_container",
-				"fluid": `${global.namespace}:${name}`
-			})
-		}
+		FluidBucketItemModel.generate(name)
 
 		console.log(`${global.namespace}:${name}已注册!`)
 
@@ -27,14 +20,7 @@ StartupEvents.registry("fluid", (event) => {
 				.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 				.stillTexture(`${global.namespace}:fluid/solution/still`)
 
-		if (Platform.isClientEnvironment()) {
-			let file = `kubejs/assets/${global.namespace}/models/item/${name}_bucket.json`
-			JsonIO.write(file, {
-				"parent": "forge:item/bucket_drip",
-				"loader": "forge:fluid_container",
-				"fluid": `${global.namespace}:${name}`
-			})
-		}
+		FluidBucketItemModel.generate(name)
 
 		return registerColorFluid
 	}

@@ -16,21 +16,8 @@ StartupEvents.registry("fluid", (event) => {
 			.tag(`forge:solutions/${tag}/sulfate`)
 			.tag(`forge:solutions/${tag}`)
 
-		if (Platform.isClientEnvironment()) {
-			let file1 = `kubejs/assets/${global.namespace}/models/item/${name1}_solution_bucket.json`
-			JsonIO.write(file1, {
-				parent: "forge:item/bucket_drip",
-				loader: "forge:fluid_container",
-				fluid: `${global.namespace}:${name1}_solution`
-			})
-
-			let file2 = `kubejs/assets/${global.namespace}/models/item/${name2}_solution_bucket.json`
-			JsonIO.write(file2, {
-				parent: "forge:item/bucket_drip",
-				loader: "forge:fluid_container",
-				fluid: `${global.namespace}:${name2}_solution`
-			})
-		}
+		FluidBucketItemModel.generate(name1)
+		FluidBucketItemModel.generate(name2)
 
 		console.log(`${global.namespace}:${name1}_solution 和 ${global.namespace}:${name2}_solution 注册成功`)
 		return {
