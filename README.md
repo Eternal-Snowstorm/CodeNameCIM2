@@ -38,7 +38,7 @@ Currently in Beta stage.
 
 ## Notes
 
-### Server
-- Please keep the `hotai` and `ldlib` folders under the root directory and **all** files inside during packaging to ensure the normal operation of multi-square machines.
+### Server Pack
+- Please keep the `hotai` and `ldlib` folders under the root directory and **all** files inside during packaging to ensure the normal operation of multi-block machines.
 - Delete the client mod that affects the server to ensure the normal operation of the server.
 - BUG **must** feedback (it is best to use [**`issues`**](https://github.com/VechniMetel/CodeNameCIM2/issues)!)
