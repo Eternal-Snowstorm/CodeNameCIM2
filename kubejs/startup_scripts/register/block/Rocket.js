@@ -17,6 +17,7 @@ StartupEvents.registry("block", (event) => {
 		.box(0, 0, 0, 16, 45, 16, true)
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.toolType["axe"])
+		.tagBlock(global.miningLevel["wooden"])
 		.tagBlock("create:wrench_pickup")
 
 	// 火箭框架1
@@ -33,7 +34,7 @@ StartupEvents.registry("block", (event) => {
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
 		.tagBlock(global.toolType["pickaxe"])
-		.tagBlock(global.miningLevel["wooden"])
+		.tagBlock(global.miningLevel["stone"])
 		.tagBlock("create:wrench_pickup")
 
 	// 火箭框架2

@@ -16,8 +16,8 @@ StartupEvents.registry("fluid", (event) => {
 			.tag(`forge:solutions/${tag}/sulfate`)
 			.tag(`forge:solutions/${tag}`)
 
-		FluidBucketItemModel.generate(name1)
-		FluidBucketItemModel.generate(name2)
+		FluidBucketItemModel.generate(`${name1}_solution`)
+		FluidBucketItemModel.generate(`${name2}_solution`)
 
 		console.log(`${global.namespace}:${name1}_solution 和 ${global.namespace}:${name2}_solution 注册成功`)
 		return {
