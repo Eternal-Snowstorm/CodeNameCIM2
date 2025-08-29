@@ -75,5 +75,4 @@ ServerEvents.recipes((event) => {
 			Item.of("minecraft:deepslate_coal_ore", 15),
 			Item.of("minecraft:deepslate_diamond_ore", 5)
 		])
-
 })
