@@ -126,7 +126,10 @@ ServerEvents.recipes((event) => {
 		"ad_astra:tier_1_rocket",
 		"ad_astra:tier_2_rocket",
 		"ad_astra:tier_3_rocket",
-		"ad_astra:tier_4_rocket"
+		"ad_astra:tier_4_rocket",
+		"steampowered:alternator",
+		"steampowered:pressurized_gas_container",
+		"steampowered:pressurized_steam_container"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({

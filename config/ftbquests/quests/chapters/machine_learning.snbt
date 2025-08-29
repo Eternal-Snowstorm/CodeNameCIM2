@@ -231,12 +231,13 @@
 					id: "7F66AA0513CAD480"
 					item: {
 						Count: 1
-						id: "cmi:wooden_faucet"
+						id: "itemfilters:tag"
 						tag: {
-							Damage: 0
+							value: "cmi:faucet"
 						}
 					}
 					optional_task: true
+					title: "龙头"
 					type: "item"
 				}
 			]
