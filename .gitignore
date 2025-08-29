@@ -45,6 +45,8 @@ XaeroWaypoints*
 /oei
 replay*
 /servers*
+/mods*.zip
+/mods.zip
 
 # Mods
 /mods/*
