@@ -260,7 +260,6 @@
 		}
 		{
 			dependencies: ["3DEE902840C6F8F2"]
-			description: [""]
 			id: "43DC2A81B21001BE"
 			rewards: [{
 				id: "1C7C0BC12D4185BE"
@@ -725,7 +724,7 @@
 						value: "forge:stone"
 					}
 				}
-				title: "Any #forge:stone"
+				title: "石头"
 				type: "item"
 			}]
 			title: "融化石头也可以"

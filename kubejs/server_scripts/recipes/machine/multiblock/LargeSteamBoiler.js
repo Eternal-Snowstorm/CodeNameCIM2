@@ -22,7 +22,7 @@ MMEvents.createProcesses((event) => {
 			type: "mm:output/simple",
 			ingredient: {
 				type: "mm:fluid",
-				fluid: "cmi:steam",
+				fluid: "mekanism:steam",
 				amount: global.BUCKET_CAPACITY * 5
 			}
 		})

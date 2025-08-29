@@ -13,7 +13,7 @@
 		x: 0.0d
 		y: 2.5d
 	}]
-	order_index: 36
+	order_index: 34
 	quest_links: [ ]
 	quests: [
 		{
@@ -423,5 +423,5 @@
 			y: 0.2764285714285535d
 		}
 	]
-	title: "Precision"
+	title: "精密"
 }

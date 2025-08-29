@@ -1,6 +1,6 @@
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setIcon("cmi:charged_amethyst")
-	event.setDisplayName(Component.translate(`itemGroup.${global.namespace}.all`))
+	event.setDisplayName(Component.translatable(`itemGroup.${global.namespace}.all`))
 
 	event.add([
 		"cmi:water_pump"

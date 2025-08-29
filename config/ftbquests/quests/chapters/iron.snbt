@@ -14,7 +14,7 @@
 		x: -2.0d
 		y: 0.0d
 	}]
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -39,7 +39,7 @@
 				title: "Any #forge:ingots/iron"
 				type: "item"
 			}]
-			title: "Iron Ingot"
+			title: "铁锭"
 			x: -8.0d
 			y: 3.0d
 		}
@@ -51,7 +51,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "54FA863085554928"
-				title: "Press"
+				title: "辊压"
 				type: "checkmark"
 			}]
 			x: -4.0d
@@ -65,7 +65,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "285195A9136C33FD"
-				title: "Cut"
+				title: "切割"
 				type: "checkmark"
 			}]
 			x: -1.0d
@@ -114,7 +114,6 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			title: "Medchanism Part"
 			x: 7.0d
 			y: 3.0d
 		}
@@ -126,7 +125,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "6E0E1F1A210104EE"
-				title: "Deploy"
+				title: "安装"
 				type: "checkmark"
 			}]
 			x: 1.0d
@@ -148,10 +147,9 @@
 				item: "cmi:iron_mechanism"
 				type: "item"
 			}]
-			title: "Iron Mechanism"
 			x: 10.5d
 			y: 0.75d
 		}
 	]
-	title: "Iron"
+	title: "铁质"
 }

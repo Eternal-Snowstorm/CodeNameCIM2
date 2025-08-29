@@ -1,0 +1,19 @@
+{
+	"type": "mekanism:rotary",
+	"fluidInput": {
+		"amount": 200,
+		"tag": "forge:superheated_sodium"
+	},
+	"fluidOutput": {
+		"amount": 200,
+		"fluid": "mekanism:superheated_sodium"
+	},
+	"gasInput": {
+		"amount": 200,
+		"gas": "mekanism:superheated_sodium"
+	},
+	"gasOutput": {
+		"amount": 200,
+		"gas": "mekanism:superheated_sodium"
+	}
+}

@@ -6,7 +6,7 @@ PlayerEvents.loggedIn(event => {
 	let day = $LocalDateTime.now().getDayOfMonth()
 	if (month === 4 && day === 1) {
 		server.scheduleInTicks(5, () => {
-			player.tell(Component.translate(`message.${global.namespace}.41msg`)
+			player.tell(Component.translatable(`message.${global.namespace}.41msg`)
 				.clickOpenUrl("https://www.bilibili.com/video/BV1UT42167xb"))
 		})
 	}

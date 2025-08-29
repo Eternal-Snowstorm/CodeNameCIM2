@@ -11,6 +11,7 @@ ServerEvents.recipes((event) => {
 		"createdieselgenerators:crafting/chip_wood_beam",
 		"tconstruct:smeltery/seared/chute_retextured",
 		"tconstruct:__default",
+		"vintageimprovements:sequenced_assembly/redstone_module",
 		"functionalstorage:void_upgrade",
 		"immersiveengineering:crafting/treated_wood_horizontal",
 		"create:milling/compat/ae2/sky_stone_block",
@@ -53,7 +54,18 @@ ServerEvents.recipes((event) => {
 		"create:crafting/palettes/scorchia",
 		"tconstruct:smeltery/alloys/molten_enderium",
 		"thermal_extra:machine/fluid_mixer/polyolefin",
-		"createaddition:compacting/seed_oil"
+		"createaddition:compacting/seed_oil",
+		"vintageimprovements:pressurizing/copper_sulfate",
+		"mekanism:evaporating/brine",
+		"immersiveengineering:blueprint/electron_tube",
+		"cmi:creative_mechanism_flash_drive",
+		"create:crafting/materials/andesite_alloy",
+		"create:crafting/materials/andesite_alloy_from_zinc",
+		"tconstruct:compat/create/andesite_alloy_iron",
+		"tconstruct:compat/create/andesite_alloy_zinc",
+		"tconstruct:compat/create/andesite_alloy_iron",
+		"tconstruct:compat/create/andesite_alloy_zinc",
+		"ad_astra:coal_generator"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -114,8 +126,7 @@ ServerEvents.recipes((event) => {
 		"ad_astra:tier_1_rocket",
 		"ad_astra:tier_2_rocket",
 		"ad_astra:tier_3_rocket",
-		"ad_astra:tier_4_rocket",
-		"cmi:creative_mechanism_flash_drive"
+		"ad_astra:tier_4_rocket"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({

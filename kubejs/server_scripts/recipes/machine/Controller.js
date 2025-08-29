@@ -1,6 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
+	// 粒子碰装机
 	kubejs.shaped("mm:particle_collision_machine", [
 		"AEA",
 		"BCD",
@@ -13,6 +14,7 @@ ServerEvents.recipes((event) => {
 		E: "cmi:computer_component"
 	}).id("mm:particle_collision_machine")
 
+	// 裂解机
 	kubejs.shaped("mm:cracker", [
 		"ABA",
 		"CDC",
@@ -24,6 +26,7 @@ ServerEvents.recipes((event) => {
 		D: "cmi:light_engineering_mechanism"
 	}).id("mm:cracker")
 
+	// 蒸汽矿石处理机
 	kubejs.shaped("mm:steam_ore_processor", [
 		"ABA",
 		"CDC",
@@ -35,7 +38,7 @@ ServerEvents.recipes((event) => {
 		D: "#forge:glass"
 	}).id("mm:steam_ore_processor")
 
-
+	// 闪存盘写入器
 	kubejs.shaped("cmi:flash_disk_writer", [
 		"ABA",
 		"CDC",
@@ -48,6 +51,7 @@ ServerEvents.recipes((event) => {
 		E: "mekanism:ultimate_energy_cube"
 	}).id("cmi:flash_disk_writer")
 
+	// 已编程闪存盘
 	kubejs.shaped("cmi:programmed_flash_drive", [
 		"A",
 		"B",

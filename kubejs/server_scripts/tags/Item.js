@@ -40,6 +40,10 @@ ServerEvents.tags("item", (event) => {
 		.add("cmi:peat_block")
 		.add("cmi:peat")
 
+	event.get("minecraft:infiniburn_all")
+		.add("#forge:storage_blocks/charcoal")
+		.add("#forge:storage_blocks/coal")
+
 	// 特殊矿石
 	event.get("cmi:special_ores")
 		.add("#forge:raw_materials/galena")
@@ -57,6 +61,20 @@ ServerEvents.tags("item", (event) => {
 	event.get("cmi:large_boiler_fuel")
 		.add("#forge:coal_coke")
 		.add("#forge:gems/diamond")
+
+	// 锤子
+	event.get("forge:hammer")
+		.add("thermal_extra:signalum_hammer")
+		.add("thermal_extra:lumium_hammer")
+		.add("thermal_extra:enderium_hammer")
+		.add("thermal_extra:soul_infused_hammer")
+		.add("thermal_extra:shellite_hammer")
+		.add("thermal_extra:twinite_hammer")
+		.add("thermal_extra:dragonsteel_hammer")
+		.add("thermal_extra:abyssal_hammer")
+		.add("immersiveengineering:hammer")
+		.add("tconstruct:sledge_hammer")
+		.add("tconstruct:vein_hammer")
 
 	// 农夫乐事刀子
 	event.get("farmersdelight:tools/knives")

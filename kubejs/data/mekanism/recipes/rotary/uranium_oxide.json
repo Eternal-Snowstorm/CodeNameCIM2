@@ -1,0 +1,19 @@
+{
+	"type": "mekanism:rotary",
+	"fluidInput": {
+		"amount": 200,
+		"tag": "forge:uranium_oxide"
+	},
+	"fluidOutput": {
+		"amount": 200,
+		"fluid": "mekanism:uranium_oxide"
+	},
+	"gasInput": {
+		"amount": 200,
+		"gas": "mekanism:uranium_oxide"
+	},
+	"gasOutput": {
+		"amount": 200,
+		"gas": "mekanism:uranium_oxide"
+	}
+}

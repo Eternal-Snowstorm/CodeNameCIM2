@@ -13,7 +13,7 @@
 		x: -0.5d
 		y: -4.0d
 	}]
-	order_index: 32
+	order_index: 30
 	quest_links: [ ]
 	quests: [
 		{
@@ -184,5 +184,5 @@
 			y: -2.231428571428566d
 		}
 	]
-	title: "Sculk"
+	title: "幽匿"
 }

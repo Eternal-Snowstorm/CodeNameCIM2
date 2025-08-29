@@ -105,7 +105,7 @@ StartupEvents.registry("item", (event) => {
 					let key = `message.${global.namespace}.food.creosote_wood_chip_briquette`
 
 					if (event.hand !== "MAIN_HAND" && !level.isClientSide()) {
-						player.displayClientMessage(Component.translate(key).blue(), true)
+						player.displayClientMessage(Component.translatable(key).blue(), true)
 					}
 				})
 		})
@@ -142,6 +142,19 @@ StartupEvents.registry("item", (event) => {
 	// 生石灰
 	addItem("lime")
 		.texture(`${global.namespace}:item/material/lime`)
+
+	// 橡胶手部零件
+	addItem("rubber_hand")
+		.texture(`${global.namespace}:item/material/rubber_hand`)
+
+	// 草纤维
+	addItem("grass_fiber")
+		.texture(`${global.namespace}:item/material/grass_fiber`)
+
+	// 草绳
+	addItem("grass_string")
+		.texture(`${global.namespace}:item/material/grass_string`)
+		.tag("forge:string")
 
 	// mek-ae2 cpu
 	// 灌注
@@ -183,4 +196,8 @@ StartupEvents.registry("item", (event) => {
 	// Mg(OH)2
 	addItem("brominated_flame_retardants")
 		.texture(`${global.namespace}:item/material/brominated_flame_retardants`)
+
+	// Mg(OH)2
+	addItem("flame_retardant_plastic")
+		.texture(`${global.namespace}:item/material/flame_retardant_plastic`)
 })

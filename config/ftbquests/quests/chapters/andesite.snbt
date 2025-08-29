@@ -13,7 +13,7 @@
 		x: -1.0d
 		y: 0.0d
 	}]
-	order_index: 6
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -32,7 +32,6 @@
 				item: "minecraft:andesite"
 				type: "item"
 			}]
-			title: "Andesite"
 			x: -21.75d
 			y: -3.75d
 		}
@@ -47,10 +46,16 @@
 			}]
 			tasks: [{
 				id: "013A8C4931168497"
-				item: "minecraft:iron_nugget"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:nuggets/iron"
+					}
+				}
+				title: "铁粒"
 				type: "item"
 			}]
-			title: "Iron Nugget"
 			x: -8.5d
 			y: -3.0d
 		}
@@ -65,7 +70,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "7D3504D81DE99D6C"
-				title: "Mix"
+				title: "搅拌"
 				type: "checkmark"
 			}]
 			x: -13.0d
@@ -79,7 +84,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "4E4E70A2E845BC15"
-				title: "Cast"
+				title: "浇筑"
 				type: "checkmark"
 			}]
 			x: -14.0d
@@ -98,10 +103,16 @@
 			size: 1.5d
 			tasks: [{
 				id: "4B276CF4125CEC37"
-				item: "create:andesite_alloy"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/andesite_alloy"
+					}
+				}
+				title: "安山合金"
 				type: "item"
 			}]
-			title: "Andesite Alloy"
 			x: -10.5d
 			y: 4.5d
 		}
@@ -113,7 +124,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "292861CD8E8999BC"
-				title: "Press"
+				title: "辊压"
 				type: "checkmark"
 			}]
 			x: -4.0d
@@ -131,11 +142,10 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				id: "5AC159D303B570D1"
+				id: "43CC78A2C0821970"
 				item: "create:shaft"
 				type: "item"
 			}]
-			title: "Shaft"
 			x: -1.5d
 			y: 1.0d
 		}
@@ -159,10 +169,9 @@
 						value: "minecraft:planks"
 					}
 				}
-				title: "Any #minecraft:planks"
+				title: "木板"
 				type: "item"
 			}]
-			title: "Plank"
 			x: 0.0d
 			y: -0.5d
 		}
@@ -185,7 +194,6 @@
 				item: "create:cogwheel"
 				type: "item"
 			}]
-			title: "Cogwheel"
 			x: 4.5d
 			y: -0.5d
 		}
@@ -205,7 +213,6 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
 			x: 11.25d
 			y: 3.0d
 		}
@@ -224,10 +231,9 @@
 				item: "cmi:andesite_mechanism"
 				type: "item"
 			}]
-			title: "Andesite Mechanism"
 			x: 17.25d
 			y: -1.5d
 		}
 	]
-	title: "Andesite"
+	title: "安山"
 }

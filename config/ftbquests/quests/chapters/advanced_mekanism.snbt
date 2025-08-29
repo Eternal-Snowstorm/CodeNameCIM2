@@ -13,7 +13,7 @@
 		x: 0.5d
 		y: -2.0d
 	}]
-	order_index: 26
+	order_index: 24
 	quest_links: [ ]
 	quests: [
 		{
@@ -328,5 +328,5 @@
 			y: 1.5819047619048732d
 		}
 	]
-	title: "Advanced Mekanism"
+	title: "高级通用"
 }

@@ -5,14 +5,7 @@ StartupEvents.registry("fluid", (event) => {
 				.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
 				.stillTexture(`${global.namespace}:fluid/${name}/still`)
 
-		if (Platform.isClientEnvironment()) {
-			let file = `kubejs/assets/${global.namespace}/models/item/${name}_bucket.json`
-			JsonIO.write(file, {
-				"parent": "forge:item/bucket_drip",
-				"loader": "forge:fluid_container",
-				"fluid": `${global.namespace}:${name}`
-			})
-		}
+		FluidBucketItemModel.generate(name)
 
 		console.log(`${global.namespace}:${name}已注册!`)
 
@@ -27,14 +20,7 @@ StartupEvents.registry("fluid", (event) => {
 				.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 				.stillTexture(`${global.namespace}:fluid/solution/still`)
 
-		if (Platform.isClientEnvironment()) {
-			let file = `kubejs/assets/${global.namespace}/models/item/${name}_bucket.json`
-			JsonIO.write(file, {
-				"parent": "forge:item/bucket_drip",
-				"loader": "forge:fluid_container",
-				"fluid": `${global.namespace}:${name}`
-			})
-		}
+		FluidBucketItemModel.generate(name)
 
 		return registerColorFluid
 	}
@@ -42,14 +28,7 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("eletriced_source_emeraid", 0x117458)
 	addColorFluid("platinum_solution", 0xE1FFFF)
 	addColorFluid("tetrachlorosilane", 0xDDFF6E)
-	addAloneFluid("alkaline_concentrated_sea_water", 0xC3AFA0)
-	addAloneFluid("acidic_concentrated_sea_water", 0xB19E68)
-	addAloneFluid("bromine", 0x802B31)
-	addAloneFluid("sodium_hydroxide", 0xFFFFFF)
 
-	addAloneFluid("steam")
-		.noBlock()
-		.tag("forge:steam")
 	addAloneFluid("oil_shale_steam")
 		.noBlock()
 	addAloneFluid("blood")
@@ -57,10 +36,16 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("turbid_waste_liquid")
 	addAloneFluid("cured_rubber")
 	addAloneFluid("pure_sand")
+		.noBlock()
 	addAloneFluid("molten_bitumen")
 	addAloneFluid("naphtha")
 	addAloneFluid("kerosene")
 	addAloneFluid("lubricating_oil")
 	addAloneFluid("sea_water")
 	addAloneFluid("concentrated_sea_water")
+	addAloneFluid("hydrochloric_acid")
+	addAloneFluid("alkaline_concentrated_sea_water")
+	addAloneFluid("acidic_concentrated_sea_water")
+	addAloneFluid("bromine")
+	addAloneFluid("sodium_hydroxide")
 })

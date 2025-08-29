@@ -3,16 +3,17 @@ let $UseOnContext = Java.loadClass("net.minecraft.world.item.context.UseOnContex
 let $AllItems = Java.loadClass("com.simibubi.create.AllItems")
 
 BlockEvents.rightClicked((event) => {
-	let { level, item, player, facing, block, hand } = event
+	let { level, item, player, block } = event
+	const MECH = Item.of("cmi:wooden_mechanism")
 
-	if (level.clientSide) {
-		return
-	}
-	if (item === "cmi:wooden_mechanism") {
-		let blockHitResult = new $BlockHitResult(player.pos, facing, block.pos, false)
-		let useOnContext = new $UseOnContext(level, player, hand, "create:tree_fertilizer", blockHitResult)
-		let treeFertilizer = $AllItems.TREE_FERTILIZER.get()
-		treeFertilizer.useOn(useOnContext)
+	// if (item === MECH && !player.cooldowns.isOnCooldown(MECH)) {
+	if (item === MECH) {
+		let result = new $BlockHitResult(player.pos, event.facing, block.pos, false)
+		let context = new $UseOnContext(level, player, event.hand, "create:tree_fertilizer", result)
+
+		// 调用use方法
+		$AllItems.TREE_FERTILIZER.get().useOn(context)
+		// 调用动画
 		player.swing()
 	}
 })

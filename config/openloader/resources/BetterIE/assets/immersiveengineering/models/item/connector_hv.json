@@ -1,7 +1,0 @@
-{
-	"credit": "Made with Blockbench",
-	"parent": "minecraft:item/generated",
-	"textures": {
-		"layer0": "immersiveengineering:item/connector/connector_hv"
-	}
-}

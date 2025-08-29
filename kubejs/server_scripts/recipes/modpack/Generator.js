@@ -3,39 +3,39 @@ ServerEvents.recipes((event) => {
 
 	const BATTERIES = Ingredient.of(`#${global.namespace}:batteries`)
 
-	kubejs.shaped("immersiveengineering:dynamo", [
-		"EDE",
-		"ECE",
-		"ABA"
-	], {
-		A: BATTERIES,
-		B: "#forge:dusts/redstone",
-		C: "immersiveengineering:component_iron",
-		D: "immersiveengineering:coil_lv",
-		E: "#forge:plates/iron"
-	})
+	// kubejs.shaped("immersiveengineering:dynamo", [
+	// 	"EDE",
+	// 	"ECE",
+	// 	"ABA"
+	// ], {
+	// 	A: BATTERIES,
+	// 	B: "#forge:dusts/redstone",
+	// 	C: "immersiveengineering:component_iron",
+	// 	D: "immersiveengineering:coil_lv",
+	// 	E: "#forge:plates/iron"
+	// })
 
-	kubejs.shaped("immersiveengineering:thermoelectric_generator", [
-		"CCC",
-		"BDB",
-		"AAA"
-	], {
-		A: BATTERIES,
-		B: "#forge:plates/constantan",
-		C: "#forge:ingots/steel",
-		D: "immersiveengineering:coil_lv"
-	})
+	// kubejs.shaped("immersiveengineering:thermoelectric_generator", [
+	// 	"CCC",
+	// 	"BDB",
+	// 	"AAA"
+	// ], {
+	// 	A: BATTERIES,
+	// 	B: "#forge:plates/constantan",
+	// 	C: "#forge:ingots/steel",
+	// 	D: "immersiveengineering:coil_lv"
+	// })
 
-	kubejs.shaped("8x immersiveengineering:generator", [
-		"DBD",
-		"BCB",
-		"ABA"
-	], {
-		A: BATTERIES,
-		B: "immersiveengineering:sheetmetal_steel",
-		C: "cmi:heavy_engineering_mechanism",
-		D: "immersiveengineering:component_iron"
-	})
+	// kubejs.shaped("8x immersiveengineering:generator", [
+	// 	"DBD",
+	// 	"BCB",
+	// 	"ABA"
+	// ], {
+	// 	A: BATTERIES,
+	// 	B: "immersiveengineering:sheetmetal_steel",
+	// 	C: "cmi:heavy_engineering_mechanism",
+	// 	D: "immersiveengineering:component_iron"
+	// })
 
 	kubejs.shaped("portality:generator", [
 		"AAA",

@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
 			"#forge:plates/bronze"
 		],
 		B: "cmi:bronze_mechanism",
-		C: "cmi:steam_boiler",
+		C: "mekanism:steam_boiler",
 		D: "#forge:storage_blocks/bronze"
 	})
 

@@ -42,6 +42,7 @@
 				"46858C4B5052EC0C"
 				"06012DC3A4BBF58B"
 			]
+			description: ["将熔融铁或熔融锌浇筑在安山岩粉上"]
 			id: "65F2C054D52EB96B"
 			rewards: [{
 				id: "47882DC9659E05FD"
@@ -190,6 +191,7 @@
 				item: "cmi:andesite_mechanism"
 				type: "item"
 			}]
+			title: "安山构件"
 			x: 0.5d
 			y: 3.5d
 		}
@@ -207,7 +209,7 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: 5.5d
 		}
 		{
@@ -298,7 +300,7 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: 6.0d
 		}
 		{
@@ -406,8 +408,14 @@
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
+			description: ["多方块结构 - 去按[W]寻思下怎么用"]
 			id: "4DF9116B2357D62D"
-			subtitle: "多方块结构 - 去按[W]寻思下怎么用"
+			rewards: [{
+				id: "69280515C60DBB70"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "无限产水"
 			tasks: [{
 				id: "33A573AB9F77F2F1"
 				item: "cmi:water_pump"
@@ -560,8 +568,8 @@
 				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.5d
+			x: 0.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["09892B803004AA1D"]
@@ -620,6 +628,54 @@
 			}]
 			x: 1.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["20308A3CE26E5D67"]
+			icon: "create:deployer"
+			id: "4E081FA1580EAAF9"
+			rewards: [{
+				id: "1304B988649CA39E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "573A03296F231E85"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "46F82974260ED8BC"
+					item: "cmi:rubber_hand"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["20308A3CE26E5D67"]
+			icon: "create:mechanical_press"
+			id: "680ED87569F99AF4"
+			rewards: [{
+				id: "7185039BF0D8AD94"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "081042A868062C01"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "7869EADB94A30BB5"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.0d
 		}
 	]
 	title: "学习机械"

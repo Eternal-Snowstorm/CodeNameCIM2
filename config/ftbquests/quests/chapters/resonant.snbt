@@ -13,7 +13,7 @@
 		x: -2.0d
 		y: 0.0d
 	}]
-	order_index: 13
+	order_index: 11
 	quest_links: [ ]
 	quests: [
 		{
@@ -169,5 +169,5 @@
 			y: -3.5d
 		}
 	]
-	title: "Resonant"
+	title: "谐振"
 }

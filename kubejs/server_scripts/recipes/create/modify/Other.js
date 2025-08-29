@@ -125,11 +125,38 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"DED"
 	], {
-		Z:"create:andesite_alloy",
-		A:"minecraft:flint_and_steel",
+		Z: "create:andesite_alloy",
+		A: "minecraft:flint_and_steel",
 		B: "cmi:light_engineering_mechanism",
 		C: "create:steam_engine",
 		D: "create:fluid_pipe",
 		E: "#forge:storage_blocks/steel"
 	}).id("creatediselgenerators:huge_diesel_engine")
+
+	// 蒸汽引擎
+	create.sequenced_assembly("create:steam_engine", [
+		"createdieselgenerators:diesel_engine"
+	], [
+		create.deploying("createdieselgenerators:diesel_engine", [
+			"createdieselgenerators:diesel_engine",
+			"createdieselgenerators:engine_piston"
+		]),
+		create.cutting("createdieselgenerators:diesel_engine", [
+			"createdieselgenerators:diesel_engine"
+		]),
+		create.deploying("createdieselgenerators:diesel_engine", [
+			"createdieselgenerators:diesel_engine", [
+				"#forge:plates/brass",
+				"#forge:ingots/brass"
+			]
+		]),
+		create.cutting("createdieselgenerators:diesel_engine", [
+			"createdieselgenerators:diesel_engine"
+		]),
+		create.deploying("createdieselgenerators:diesel_engine", [
+			"createdieselgenerators:diesel_engine",
+			"create:precision_mechanism"
+		])
+	]).loops(3).transitionalItem("create:brass_casing")
+		.id("create:crafting/kinetics/steam_engine")
 })

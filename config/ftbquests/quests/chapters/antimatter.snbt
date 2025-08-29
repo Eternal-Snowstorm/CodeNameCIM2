@@ -13,7 +13,7 @@
 		x: 1.5d
 		y: 1.5d
 	}]
-	order_index: 30
+	order_index: 28
 	quest_links: [ ]
 	quests: [
 		{
@@ -222,5 +222,5 @@
 			y: 7.638571428571396d
 		}
 	]
-	title: "Antimatter"
+	title: "反物质"
 }

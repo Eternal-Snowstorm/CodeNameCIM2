@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: mech,
 		B: casing,
-		C: "create:brass_hand"
+		C: ["create:brass_hand", "cmi:rubber_hand"]
 	}).id("create:crafting/kinetics/deployer")
 
 	// 动力锯

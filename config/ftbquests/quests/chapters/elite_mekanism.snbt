@@ -13,7 +13,7 @@
 		x: -1.5d
 		y: -3.5d
 	}]
-	order_index: 27
+	order_index: 25
 	quest_links: [ ]
 	quests: [
 		{
@@ -236,5 +236,5 @@
 			y: -2.160000000000018d
 		}
 	]
-	title: "Elite Mekanism"
+	title: "精英通用"
 }

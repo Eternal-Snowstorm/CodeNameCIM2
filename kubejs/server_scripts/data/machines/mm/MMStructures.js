@@ -1,14 +1,28 @@
-let $Minecraft = Java.loadClass("net.minecraft.client.Minecraft")
+// 初始化$Minecraft累变量
+let $Minecraft = null
 
 MMEvents.createStructures((event) => {
+	// 本地化判断
 	function getLangText(map) {
-		// 获取当前客户端语言环境
-		let getCurrentClientLanguage = $Minecraft.getInstance().getLanguageManager().getSelected()
-		// 默认返回en_us
 		const DEFAULT_LANGUAGE = "en_us"
-		return map[getCurrentClientLanguage] || map[DEFAULT_LANGUAGE] || Object.values(map)[0] || ""
+
+		if (Platform.isClientEnvironment()) {
+			try {
+				if ($Minecraft === null) {
+					$Minecraft = Java.loadClass("net.minecraft.client.Minecraft")
+				}
+				let lang = $Minecraft.getInstance().getLanguageManager().getSelected()
+				return map[lang] || map[DEFAULT_LANGUAGE] || map[Object.keys(map)[0]] || ""
+			} catch (e) {
+				return map[DEFAULT_LANGUAGE] || map[Object.keys(map)[0]] || ""
+			}
+		}
+
+		// 服务端环境直接用默认
+		return map[DEFAULT_LANGUAGE] || map[Object.keys(map)[0]] || ""
 	}
 
+	// 封装添加结构函数
 	function addMMStructure(id, names, layout) {
 		return event.create(`${global.namespace}:${id}_structure`)
 			.controllerId(`mm:${id}`)
@@ -106,46 +120,9 @@ MMEvents.createStructures((event) => {
 		})
 	})
 
-	// 粒子对撞机
-	addMMStructure("particle_collision_machine", {
-		zh_cn: "粒子对撞机",
-		en_us: "Particle Collider Machine"
-	}, (builder) => {
-		builder.layer([
-			"ABBBABBBA",
-			"ABBBABBBA",
-			"ABBBABBBA"
-		])
-		builder.layer([
-			"ABBBGBBBA",
-			"F       E",
-			"ABBBCBBBA"
-		])
-		builder.layer([
-			"AAAAAAAAA",
-			"AAAAAAAAA",
-			"AAAAAAAAA"
-		])
-		builder.key("E", {
-			block: "mm:particle_collision_machine_item_output"
-		})
-		builder.key("B", {
-			block: "mekanism:structural_glass"
-		})
-		builder.key("G", {
-			block: "mm:particle_collision_machine_energy_input"
-		})
-		builder.key("A", {
-			block: "mekanism:sps_casing"
-		})
-		builder.key("F", {
-			block: "mm:particle_collision_machine_item_input"
-		})
-	})
-
-	// 裂化炉
+	// 裂解机
 	addMMStructure("cracker", {
-		zh_cn: "裂化机",
+		zh_cn: "裂解机",
 		en_us: "Cracker"
 	}, (builder) => {
 		builder.layer([
@@ -203,6 +180,43 @@ MMEvents.createStructures((event) => {
 		})
 		builder.key("I", {
 			block: "mm:cracker_fluid_input"
+		})
+	})
+
+	// 粒子对撞机
+	addMMStructure("particle_collision_machine", {
+		zh_cn: "粒子对撞机",
+		en_us: "Particle Collider Machine"
+	}, (builder) => {
+		builder.layer([
+			"ABBBABBBA",
+			"ABBBABBBA",
+			"ABBBABBBA"
+		])
+		builder.layer([
+			"ABBBGBBBA",
+			"F       E",
+			"ABBBCBBBA"
+		])
+		builder.layer([
+			"AAAAAAAAA",
+			"AAAAAAAAA",
+			"AAAAAAAAA"
+		])
+		builder.key("E", {
+			block: "mm:particle_collision_machine_item_output"
+		})
+		builder.key("B", {
+			block: "mekanism:structural_glass"
+		})
+		builder.key("G", {
+			block: "mm:particle_collision_machine_energy_input"
+		})
+		builder.key("A", {
+			block: "mekanism:sps_casing"
+		})
+		builder.key("F", {
+			block: "mm:particle_collision_machine_item_input"
 		})
 	})
 })

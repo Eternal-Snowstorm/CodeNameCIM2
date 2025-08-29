@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["蒸汽(Steam)得了MVP"]
+			description: ["蒸汽是一个支线"]
 			id: "50BE6EA508B2E833"
 			rewards: [
 				{
@@ -183,7 +183,7 @@
 		}
 		{
 			dependencies: ["4405C578E1F06769"]
-			icon: "cmi:steam_bucket"
+			icon: "mekanism:steam_bucket"
 			id: "2E433CDEC9C53072"
 			rewards: [{
 				id: "1D5A3A262631D216"

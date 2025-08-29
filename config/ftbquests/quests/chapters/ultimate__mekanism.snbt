@@ -13,7 +13,7 @@
 		x: -4.5d
 		y: 2.0d
 	}]
-	order_index: 28
+	order_index: 26
 	quest_links: [ ]
 	quests: [
 		{
@@ -199,5 +199,5 @@
 			y: 6.928571428571431d
 		}
 	]
-	title: "Ultimate Mekanism"
+	title: "终极通用"
 }

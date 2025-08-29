@@ -11,7 +11,7 @@ ClientEvents.loggedIn((event) => {
 		}
 
 		if (player.username === debugUser) {
-			let devInfo = Component.translate(`text.${global.namespace}.dev`).getString()
+			let devInfo = Component.translatable(`text.${global.namespace}.dev`).getString()
 			player.paint({
 				devTip: {
 					type: "text",
@@ -22,7 +22,7 @@ ClientEvents.loggedIn((event) => {
 					scale: 1.0,
 				}
 			})
-			let playerInfo = Component.translate(`text.${global.namespace}.player`).getString()
+			let playerInfo = Component.translatable(`text.${global.namespace}.player`).getString()
 			player.paint({
 				playerTip: {
 					type: "text",

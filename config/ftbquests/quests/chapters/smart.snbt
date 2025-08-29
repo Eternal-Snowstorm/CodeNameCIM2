@@ -23,7 +23,7 @@
 			y: -3.5714285714285836d
 		}
 	]
-	order_index: 19
+	order_index: 17
 	quest_links: [ ]
 	quests: [
 		{
@@ -540,5 +540,5 @@
 			y: -6.0871428571428865d
 		}
 	]
-	title: "Smart"
+	title: "智能"
 }

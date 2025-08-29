@@ -35,6 +35,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("rubber_plate", "橡胶板")
 	addItemLanguage("lime", "生石灰")
 	addItemLanguage("super_knife", "纯粹小刀")
+	addItemLanguage("wooden_knife", "木质小刀")
 	addItemLanguage("wooden_faucet", "木质龙头")
 	addItemLanguage("andesite_alloy_noodle_stage0", "安山合金刀削面(阶段0)")
 	addItemLanguage("andesite_alloy_noodle_stage1", "安山合金刀削面(阶段1)")
@@ -49,6 +50,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_ultimate_control_circuit", "终极控制电路(半成品)")
 	addItemLanguage("magnesium_hydroxide", "氢氧化镁")
 	addItemLanguage("brominated_flame_retardants", "溴系阻燃剂")
+	addItemLanguage("rubber_hand", "橡胶手部零件")
+	addItemLanguage("flame_retardant_plastic", "阻燃塑料")
+	addItemLanguage("grass_fiber", "草纤维")
+	addItemLanguage("grass_string", "草绳")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")
@@ -64,7 +69,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")
 	addItemLanguage("mekanism_processor", "通用处理器")
 	addItemLanguage("music_disc_mechanism", "DontkillBelalus - Mechanism")
-	
+
 	addItemLanguage("reactive_element", "活泼元素")
 	addItemLanguage("stable_element", "稳定元素")
 	addItemLanguage("explosive_element", "爆鸣元素")
@@ -93,6 +98,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("acidic_concentrated_sea_water", "酸性浓缩海水")
 	addFluidLanguage("bromine", "溴")
 	addFluidLanguage("sodium_hydroxide", "氢氧化钠")
+	addFluidLanguage("hydrochloric_acid", "盐酸")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
@@ -274,6 +280,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("createaddition:seed_oil", "§c此液体废弃, 无法合成! ")
 	addCommonTooltipLanguage("cmi:creosote_wood_chip_briquette", "能吃哦")
 	addCommonTooltipLanguage("mm:large_steam_boiler", "§c只能使用焦煤或钻石作为燃料")
+	addCommonTooltipLanguage("#forge:ingots/siltsteel", "自浑浊淤泥中升华, 历经繁复萃取与催化精炼, 终获此一泓清冽碧波")
 
 	addJEIInfoLanguage("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量植物胶乳")
 	addJEIInfoLanguage("mm:large_steam_boiler", "需要燃烧焦煤或钻石才能释放足够的热能来产生蒸汽\n不同于远在泛银河系的格雷科技有限公司, 我们的锅炉非常非常安全, 永远不会爆炸(笑)")
@@ -284,8 +291,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLanguage("cmi:bucket", "似是一种巨大的力量塑造的诡异造物\n它有着令人倍感亲切的形状, 却处于一种令人不寒而栗的陌生角度\n这巨大的力量, 炽热, 强大又致命\n善良者受其腐化\n卑鄙者因其强大\n收容之器受其影响, 转为包覆之具, 幸于并无灵魂, 于我没有危害")
 	addJEIInfoLanguage("#ad_astra:power_consumption_machines", "该Mod的机器每个面都有能量输入的上限\n如果想要不会断电确保产量你可能需要给每个面都连接一根电线")
 	addJEIInfoLanguage("engineered_schematics:multiblock_schematic", "手持原理图右键地面以放置投影网格, 将原理图放置于副手可以查看方块的具体位置")
-	addJEIInfoLanguage("cmi:siltsteel_ingot", "自浑浊淤泥中升华, 历经繁复萃取与催化精炼, 终获此一泓清冽碧波")
-	addJEIInfoLanguage("cmi:wooden_faucet", `右键"橡胶原木"有25%概率获得1个"橡胶"\n有10%概率会将其变为"去皮橡胶原木"\n每次右键都会消耗1点耐久, 耐久归零后工具损坏`)
+	addJEIInfoLanguage("#cmi:faucet", "右键橡胶原木有25%概率获得1个橡胶\n有10%概率会将其变为去皮橡胶原木\n每次右键都会消耗1点耐久, 耐久归零后工具损坏")
 	addJEIInfoLanguage("#cmi:liquid_output", "淤泥泵在每次工作时, 会产出100mB ~ 200mB的淤泥\n初始概率为1.3%, 有概率产出10000mB淤泥, 如果抽中了那么概率重置为1.3%\n若未抽中, 那么每次运作时概率提升为当前的1.02倍, 最多提升至100%\n第499次未抽中时, 那么在第500次有50%概率产出10000mB, 否则产出5000mB, 随后概率重置为1.3%\n第999次未抽中时, 那么在第1000次必定产出10000mB, 随后概率重置为1.3%\n若单个淤泥泵连续5次产出10000mB, 将向所有玩家发送提示信息")
 	addJEIInfoLanguage("#cmi:peat_gen", `泥炭是一种上好的燃料, 单个泥炭可以烧炼4个物品\n只会在"红树林沼泽"和"沼泽"群系的地表生成\n并且挖掘泥炭块时将会受到"时运"和"精准采集"的附魔效果影响`)
 
@@ -303,8 +309,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("create:precision_mechanism", "§e转化石头\n§e15%铜矿石\n§e15%锌矿石\n§e10%红石矿石\n§2转化深板岩\n§210%深层铜矿石\n§210%深层锌矿石\n§215%深层红石矿石")
 	addAccelerateTooltipLanguage("cmi:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 
-	addHeatedLanguage("grilled", "炙烤")
-
 	addMusicDiscLanguage("mechanism", "Mechanism", "DontkillBelalus")
 
 	let amethystEncyclopedia = "紫水晶中流动的微弱力量会试图获取更多的稀有资源"
@@ -312,8 +316,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"amethyst",
 		"紫水晶",
 		"通电后可以发出极具规律性的振动",
-		amethystEncyclopedia,
-		amethystEncyclopedia,
 		amethystEncyclopedia
 	)
 	let andesiteAlloyEncyclopedia = "岩石的能力, 铁器的数值"
@@ -321,8 +323,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"andesite_alloy",
 		"安山合金",
 		"岩石和金属居然能变成合金? ",
-		andesiteAlloyEncyclopedia,
-		andesiteAlloyEncyclopedia,
 		andesiteAlloyEncyclopedia
 	)
 	let brassEncyclopedia = "导热性与可塑性极强, 似乎可以做成搭载多个箭矢的模样"
@@ -330,8 +330,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"brass",
 		"黄铜",
 		"充满蒸汽的气息! ",
-		brassEncyclopedia,
-		brassEncyclopedia,
 		brassEncyclopedia
 	)
 	let industrialIronEncyclopedia = "通过重复排碳制成的高韧铁材料, 弹性与韧性极佳"
@@ -339,8 +337,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"industrial_iron",
 		"工业铁",
 		"富有韧性的高纯铁",
-		industrialIronEncyclopedia,
-		industrialIronEncyclopedia,
 		industrialIronEncyclopedia
 	)
 	let castIronEncyclopedia = "含有完整碳结晶的铁材料, 耐磨性极佳"
@@ -348,8 +344,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"cast_iron",
 		"铸铁",
 		"非常适合进一步加热! ",
-		castIronEncyclopedia,
-		castIronEncyclopedia,
 		castIronEncyclopedia
 	)
 	let stainlessSteelEncyclopedia = "有着极强耐腐蚀性能的材料, 可以有效减慢工具的损坏"
@@ -357,8 +351,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"stainless_steel",
 		"不锈钢",
 		"旧仓库角落中的反光",
-		stainlessSteelEncyclopedia,
-		stainlessSteelEncyclopedia,
 		stainlessSteelEncyclopedia
 	)
 	let deshEncyclopedia = "从月球开采的神秘材料, 似乎可以做出更好的升级？"
@@ -366,8 +358,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"desh",
 		"戴斯",
 		"来自月球的神秘金属",
-		deshEncyclopedia,
-		deshEncyclopedia,
 		deshEncyclopedia
 	)
 	let ostrumEncyclopedia = "来自火星的惰性金属, 似乎在灼热环境中会变得更加优秀"
@@ -375,8 +365,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"ostrum",
 		"紫金",
 		"越热就越强! ",
-		ostrumEncyclopedia,
-		ostrumEncyclopedia,
 		ostrumEncyclopedia
 	)
 	let caloriteEncyclopedia = "优秀的隔热材料, 可以承受更强的火箭尾焰, 将它送向其他星系"
@@ -384,8 +372,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"calorite",
 		"耐热金属",
 		"红色的隔热板! ",
-		caloriteEncyclopedia,
-		caloriteEncyclopedia,
 		caloriteEncyclopedia
 	)
 	let shadowSteelEncyclopedia = "从未知的致命领域归来的化合物, 韧性异常强大, 但是抗冲击能力堪称灾难"
@@ -393,8 +379,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"shadow_steel",
 		"暗影钢",
 		"从深渊中现身! ",
-		shadowSteelEncyclopedia,
-		shadowSteelEncyclopedia,
 		shadowSteelEncyclopedia
 	)
 	let refinedRadianceEncyclopedia = "吸收了大量光能的化合物, 韧性令人掩面, 但可以为装备提供极大的强化"
@@ -402,8 +386,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		"refined_radiance",
 		"光辉石",
 		"来自天空的使者! ",
-		refinedRadianceEncyclopedia,
-		refinedRadianceEncyclopedia,
 		refinedRadianceEncyclopedia
 	)
 
@@ -577,12 +559,12 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`painting.${global.namespace}.${key}.author`, author)
 	}
 
-	function addTConMaterialLanguage(key, name, flavour, encyclopedia, ranged, armor) {
+	function addTConMaterialLanguage(key, name, flavour, encyclopedia) {
 		event.add(`material.${global.namespace}.${key}`, name)
 		event.add(`material.${global.namespace}.${key}.flavor`, flavour)
 		event.add(`material.${global.namespace}.${key}.encyclopedia`, encyclopedia)
-		event.add(`material.${global.namespace}.${key}.ranged`, ranged)
-		event.add(`material.${global.namespace}.${key}.armor`, armor)
+		event.add(`material.${global.namespace}.${key}.ranged`, encyclopedia)
+		event.add(`material.${global.namespace}.${key}.armor`, encyclopedia)
 	}
 
 	function addSolutionLanguage(key, value, tooltip) {

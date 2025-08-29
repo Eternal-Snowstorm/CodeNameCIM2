@@ -1,0 +1,11 @@
+{
+	"values": [
+		"minecraft:grass",
+		"minecraft:tall_grass",
+		"minecraft:seagrass",
+		"tconstruct:earth_slime_tall_grass",
+		"tconstruct:sky_slime_tall_grass",
+		"tconstruct:ender_slime_tall_grass",
+		"tconstruct:blood_slime_tall_grass"
+	]
+}

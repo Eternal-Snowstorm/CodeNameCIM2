@@ -25,7 +25,7 @@ PlayerEvents.loggedIn((event) => {
 		let messageKey = detectedMods.length > 1 ?
 			`message.${global.namespace}.checkMultipleCheating` :
 			`message.${global.namespace}.checkCheating`
-		player.tell(Component.translate(messageKey, [getMod]))
+		player.tell(Component.translatable(messageKey, [getMod]))
 
 		player.stages.add("first_login")
 	}

@@ -124,10 +124,6 @@ addMaterial("andesite_alloy", 0xA9AFA1, "wooden")
 	.nugget()
 	.molten()
 
-// 钒
-addMaterial("vanadium", 0xF0FFFF, "stone")
-	.dust()
-
 // 不锈钢
 addMaterial("stainless_steel", 0x708090, "diamond")
 	.ingot()
@@ -220,3 +216,7 @@ addMaterial("calcium", 0xF2F2F2, "wooden")
 	.nugget()
 	.block()
 	.molten()
+
+// 钒
+addMaterial("vanadium", 0xF0FFFF, "stone")
+	.dust()

@@ -13,7 +13,7 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	order_index: 5
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -35,7 +35,7 @@
 						value: "forge:gems/sulfur"
 					}
 				}
-				title: "Any #forge:gems/sulfur"
+				title: "硫磺"
 				type: "item"
 			}]
 			title: "Sulfur"
@@ -50,7 +50,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "452D1F3D2EC21B1D"
-				title: "milling"
+				title: "粉碎"
 				type: "checkmark"
 			}]
 			x: -3.3214285714285694d
@@ -75,7 +75,6 @@
 				item: "cmi:cured_rubber_bucket"
 				type: "item"
 			}]
-			title: "Cured Rubber"
 			x: -0.9642857142857224d
 			y: 5.285714285714299d
 		}
@@ -92,10 +91,16 @@
 			size: 1.0d
 			tasks: [{
 				id: "778BD2DF9BCE7180"
-				item: "cmi:rubber_plate"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/rubber"
+					}
+				}
+				title: "橡胶板"
 				type: "item"
 			}]
-			title: "Rubber Plate"
 			x: -4.357142857142847d
 			y: 4.428571428571445d
 		}
@@ -114,7 +119,6 @@
 				item: "thermal:latex_bucket"
 				type: "item"
 			}]
-			title: "Latex"
 			x: -14.07142857142857d
 			y: -1.7857142857142705d
 		}
@@ -134,7 +138,6 @@
 				item: "thermal:rubber"
 				type: "item"
 			}]
-			title: "Rubber"
 			x: -9.071428571428577d
 			y: -0.8214285714285694d
 		}
@@ -154,7 +157,6 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			title: "Cured Rubber"
 			x: 6.392857142857139d
 			y: 0.9285714285714306d
 		}
@@ -177,10 +179,9 @@
 						value: "forge:plates/copper"
 					}
 				}
-				title: "Any #forge:plates/copper"
+				title: "铜板"
 				type: "item"
 			}]
-			title: "Copper Plate"
 			x: -14.607142857142861d
 			y: 1.857142857142854d
 		}
@@ -197,7 +198,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "054E57CA80AC5F78"
-				title: "Cutting"
+				title: "切割"
 				type: "checkmark"
 			}]
 			title: "Cutting"
@@ -225,10 +226,9 @@
 						value: "forge:nuggets/copper"
 					}
 				}
-				title: "Any #forge:nuggets/copper"
+				title: "铜粒"
 				type: "item"
 			}]
-			title: "Copper Nugget"
 			x: -5.5d
 			y: 0.5d
 		}
@@ -250,7 +250,6 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			title: "Fiuld Pipe"
 			x: 2.75d
 			y: 3.7142857142857153d
 		}
@@ -274,10 +273,9 @@
 						value: "forge:buckets/water"
 					}
 				}
-				title: "Any #forge:buckets/water"
+				title: "水桶"
 				type: "item"
 			}]
-			title: "Water Bucket"
 			x: 11.535714285714278d
 			y: 2.9285714285714306d
 		}
@@ -296,7 +294,6 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
 			x: 15.607142857142861d
 			y: -0.5d
 		}
@@ -321,7 +318,6 @@
 				}
 				type: "item"
 			}]
-			title: "Conver Curving"
 			x: -0.5d
 			y: -0.1071428571428541d
 		}
@@ -335,9 +331,9 @@
 				item: "cmi:copper_mechanism"
 				type: "item"
 			}]
-			x: 19.5d
-			y: 0.75d
+			x: 19.75d
+			y: 1.2857142857142847d
 		}
 	]
-	title: "Copper"
+	title: "铜质"
 }

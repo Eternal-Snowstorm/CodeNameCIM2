@@ -177,6 +177,7 @@ ServerEvents.recipes((event) => {
 		"#forge:sheetmetals/iron"
 	], [
 		create.deploying(ilem, [ilem, "immersiveengineering:component_iron"]),
+		create.deploying(ilem, [ilem, "immersiveengineering:component_electronic"]),
 		create.deploying(ilem, [ilem, "#forge:wires/copper"]),
 		create.deploying(ilem, [ilem, "cmi:engineering_mechanism_part"]),
 	]).transitionalItem(ilem).loops(1)
@@ -186,6 +187,7 @@ ServerEvents.recipes((event) => {
 		"#forge:sheetmetals/steel"
 	], [
 		create.deploying(ihem, [ihem, "immersiveengineering:component_steel"]),
+		create.deploying(ihem, [ihem, "immersiveengineering:component_electronic_adv"]),
 		create.deploying(ihem, [ihem, "#forge:wires/electrum"]),
 		create.filling(ihem,[ihem,Fluid.of("cmi:lubricating_oil", 100)]),
 		create.deploying(ihem, [ihem, "cmi:engineering_mechanism_part"]),

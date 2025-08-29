@@ -31,7 +31,7 @@
 			y: 0.5d
 		}
 	]
-	order_index: 25
+	order_index: 23
 	quest_links: [ ]
 	quests: [
 		{
@@ -427,5 +427,5 @@
 			y: -4.252857142857096d
 		}
 	]
-	title: "Basic Mekanism"
+	title: "基础通用"
 }

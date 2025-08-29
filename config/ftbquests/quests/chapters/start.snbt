@@ -279,11 +279,13 @@
 				{
 					id: "7BB9D6C371524FF2"
 					item: "tconstruct:cast_chest"
+					team_reward: true
 					type: "item"
 				}
 				{
 					id: "6B497AC11E7E2E69"
 					item: "tconstruct:ingot_cast"
+					team_reward: true
 					type: "item"
 				}
 				{
@@ -447,7 +449,9 @@
 			dependencies: [
 				"7C14A1CC724511CB"
 				"542BB1A40BC1B441"
+				"370E4B4D6068CF98"
 			]
+			dependency_requirement: "one_completed"
 			description: ["燧石制作的锤子只有1/4的耐久, 但你为什么不多做点呢?"]
 			id: "2C0C50F32F39BD3F"
 			rewards: [{
@@ -456,7 +460,7 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "23654119B083445E"
+				id: "77B0BCC1BC320A97"
 				item: {
 					Count: 1
 					id: "immersiveengineering:hammer"
@@ -503,7 +507,7 @@
 			]
 			title: "线的来源"
 			x: -1.5d
-			y: -3.5d
+			y: -4.0d
 		}
 		{
 			description: ["在开始发展前下来先把下面的需求做好"]
@@ -521,8 +525,8 @@
 				type: "checkmark"
 			}]
 			title: "先安顿下来"
-			x: -3.5d
-			y: -3.5d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2AEF0BF597FF0E36"]
@@ -704,7 +708,7 @@
 			]
 			title: "砧板"
 			x: 1.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2AEF0BF597FF0E36"]
@@ -767,7 +771,7 @@
 				}
 			]
 			x: 2.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["542BB1A40BC1B441"]
@@ -827,7 +831,48 @@
 				type: "checkmark"
 			}]
 			x: -1.5d
-			y: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["27A18EEBBE063B43"]
+			description: ["没有燧石可以先做把木质小刀"]
+			icon: "cmi:grass_string"
+			id: "370E4B4D6068CF98"
+			rewards: [{
+				id: "6DF9C4F2A814B1A2"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "用小刀去右键草"
+			tasks: [
+				{
+					count: 30L
+					id: "671FC0A90AD0AF99"
+					item: { Count: 30, id: "cmi:grass_fiber" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "21E3C9650C6FE97E"
+					item: { Count: 10, id: "cmi:grass_string" }
+					type: "item"
+				}
+				{
+					id: "103462B02335ABFA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+					title: "小刀"
+					type: "item"
+				}
+			]
+			title: "草绳也是一种选择"
+			x: -1.5d
+			y: -3.0d
 		}
 	]
 	title: "艰难前期"
