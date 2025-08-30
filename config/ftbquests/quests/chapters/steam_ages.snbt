@@ -202,29 +202,6 @@
 		{
 			dependencies: ["2E433CDEC9C53072"]
 			description: [
-				"蒸汽在小型引擎中的消耗量为100mB/s, 可以产生1024的应力"
-				"这个引擎可以用于大型应力锅炉前的过渡"
-			]
-			id: "18164A95D55493B4"
-			rewards: [{
-				id: "3BF181CCCFA49440"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "gear"
-			size: 1.5d
-			subtitle: "引擎可以使用蒸汽驱动产生应力"
-			tasks: [{
-				id: "1AC3B9D062D0BD76"
-				item: "createdieselgenerators:diesel_engine"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -0.75d
-		}
-		{
-			dependencies: ["2E433CDEC9C53072"]
-			description: [
 				"蒸汽矿石处理机可以消耗2000mB蒸汽处理特殊的矿石, 例如黄铁, 辉铜和黄锡等"
 				"一个粗矿可以处理3个矿粉, 有25%的概率多给一个, 但是处理后会在顶部产生100mB水和200mB液态二氧化硫, 需要手动导出处理"
 				"而处理矿石方块产出会多一点, 水和二氧化硫的产出同理"
@@ -294,6 +271,32 @@
 			]
 			x: 7.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["2E433CDEC9C53072"]
+			icon: "steampowered:bronze_flywheel"
+			id: "39A64AAD5944BEE7"
+			rewards: [{
+				id: "0CB19DD41C7D3B07"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "72FF859776891997"
+					item: "steampowered:bronze_boiler"
+					type: "item"
+				}
+				{
+					id: "43466D3364AAE7AD"
+					item: "steampowered:bronze_flywheel"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -1.0d
 		}
 	]
 	title: "蒸汽时代"

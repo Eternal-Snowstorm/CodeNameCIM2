@@ -26,7 +26,23 @@ JEIAddedEvents.registerCategories((event) => {
 			.background(guiHelper.createBlankDrawable(0, 0))
 			// 设置图标(这里用的是机械动力的双图标lib)
 			.iconSupplier(() => {
-				return new $DoubleItemIcon("cmi:accelerator", "create:precision_mechanism")
+				return new $DoubleItemIcon(
+					// $DoubleItemIcon构造函数只支持箭头函数
+					() => Item.of("cmi:accelerator"),
+					() => Item.of("create:precision_mechanism")
+				)
+			})
+
+			// 处理格子
+			.handleLookup((builder, recipe, group) => {
+				// 格子类型, X, Y
+				builder.addSlot($RecipeIngredientRole.INPUT, 21, 48)
+					.setBackground($CreateRecipeCategory.getRenderedSlot(), -1, -1)
+					.addItemStack(recipe.recipeData.input)
+
+				builder.addSlot($RecipeIngredientRole.OUTPUT, 141, 48)
+					.setBackground($CreateRecipeCategory.getRenderedSlot(), -1, -1)
+					.addItemStack(recipe.recipeData.output)
 			})
 	})
 })

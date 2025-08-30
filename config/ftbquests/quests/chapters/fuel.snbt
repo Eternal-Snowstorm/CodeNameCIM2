@@ -206,6 +206,31 @@
 			x: 2.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["0CE693D306C1B691"]
+			description: ["煤炭也可以烧成焦炭"]
+			id: "12FAE452591719C6"
+			rewards: [{
+				id: "2E48459F498A2E75"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "烧的更久"
+			tasks: [{
+				id: "2E41429B7D22CCDF"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:coal_coke"
+					}
+				}
+				title: "焦炭"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.5d
+		}
 	]
 	title: "燃料(WIP)"
 }

@@ -17,6 +17,7 @@
  - 在打包时请保留根目录下的`hotai`和`ldlib`文件夹以及内部的**所有**文件, 确保多方块机器运行正常
  - 删除影响服务端的客户端Mod确保服务端运行正常
  - 出现BUG**一定**要反馈(能够使用[**`issues`**](https://github.com/VechniMetel/CodeNameCIM2/issues)最好!)
+ - 在修改JEI的时候需要先运行`kjs reload client_scripts`后再运行`reload`
 
 ---
 

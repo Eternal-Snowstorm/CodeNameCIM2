@@ -1,0 +1,10 @@
+{
+	id: "09D55A72928A9205"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "functionalstorage:puller_upgrade" }
+		{ item: "functionalstorage:pusher_upgrade" }
+	]
+	title: "抽屉传输"
+}

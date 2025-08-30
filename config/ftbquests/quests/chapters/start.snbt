@@ -664,11 +664,19 @@
 		{
 			dependencies: ["0950E73B864090F0"]
 			id: "136FAF419EC66A2F"
-			rewards: [{
-				id: "1008A4D96D14E2CA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1008A4D96D14E2CA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 8
+					id: "1AFA63BF48B2D11A"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
 			subtitle: "不需要我教了吧"
 			tasks: [{
 				id: "5FE33B9B04299D33"
@@ -693,11 +701,12 @@
 					id: "22BA1E6E753A44E6"
 					item: {
 						Count: 1
-						id: "farmersdelight:flint_knife"
+						id: "itemfilters:tag"
 						tag: {
-							Damage: 0
+							value: "forge:tools/knives"
 						}
 					}
+					title: "小刀"
 					type: "item"
 				}
 				{
@@ -766,7 +775,7 @@
 							value: "forge:stripped_logs"
 						}
 					}
-					title: "Any #forge:stripped_logs"
+					title: "去皮原木"
 					type: "item"
 				}
 			]

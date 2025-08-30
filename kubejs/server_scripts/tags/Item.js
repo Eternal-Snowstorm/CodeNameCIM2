@@ -13,6 +13,22 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	// 建筑手杖
+	event.get("constructionwand:wand")
+		.add("constructionwand:stone_wand")
+		.add("constructionwand:iron_wand")
+		.add("constructionwand:diamond_wand")
+		.add("constructionwand:infinity_wand")
+
+	// 抽屉
+	event.get("functionalstorage:drawer")
+		.add("functionalstorage:fluid_1")
+		.add("functionalstorage:fluid_2")
+		.add("functionalstorage:fluid_4")
+		.add("functionalstorage:compacting_drawer")
+		.add("functionalstorage:simple_compacting_drawer")
+		.add("functionalstorage:ender_drawer")
+
 	// 机器核心
 	event.get("cmi:multiblock_machine_controller")
 		.add("mm:large_steam_boiler")
