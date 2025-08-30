@@ -1,7 +1,7 @@
 // 铜构件的普通右键
-ItemEvents.rightClicked("cmi:copper_mechanism", event => {
+ItemEvents.rightClicked("cmi:copper_mechanism", (event) => {
 	// 与构件催生器互动时不执行后续逻辑
-	if (event.player.rayTrace(5, false).block != null && event.player.rayTrace(5, false).block.id === "cmi:the_accelerator_of_mechanism_power") {
+	if (event.player.rayTrace(5, false).block !== null && event.player.rayTrace(5, false).block.id === "cmi:the_accelerator_of_mechanism_power") {
 		event.player.swing()
 		return
 	} else {
