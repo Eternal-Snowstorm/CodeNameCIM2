@@ -55,6 +55,8 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 						event.level.getBlock(pos).set("minecraft:gold_ore")
 					} else if (rand <= 0.3) {
 						event.level.getBlock(pos).set("minecraft:clay")
+					}else if (rand <= 0.35) {
+						event.level.getBlock(pos).set("thermal:sulfur_ore")
 					}
 				} else if (block === "minecraft:deepslate") {
 					rand = Math.random()
@@ -64,6 +66,8 @@ BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
 						event.level.getBlock(pos).set("minecraft:deepslate_gold_ore")
 					} else if (rand <= 0.35) {
 						event.level.getBlock(pos).set("minecraft:clay")
+					}else if (rand <= 0.4) {
+						event.level.getBlock(pos).set("thermal:deepslate_sulfur_ore")
 					}
 				}
 			}

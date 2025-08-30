@@ -67,6 +67,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_tier_3_rocket", "三阶火箭(半成品)")
 	addItemLanguage("incomplete_tier_4_rocket", "四阶火箭(半成品)")
 
+	addItemLanguage("incomplete_computer_component", "计算机组件（半成品）")
+	addItemLanguage("incomplete_scanning_module", "扫描模块（半成品）")
+	addItemLanguage("incomplete_scanner", "扫描器（半成品）")
+
 	addItemLanguage("infusion_treated_processor", "经灌注处理的逻辑处理器")
 	addItemLanguage("enrichment_treated_processor", "经富集处理的运算处理器")
 	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")
@@ -301,7 +305,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addAccelerateTooltipLanguage("cmi:stone_mechanism", "§e转化石头\n§e10%安山岩\n§e10%闪长岩\n§e10%花岗岩\n§e10%石灰岩\n§e10%焦黑石头\n§2转化深板岩\n§210%焦黑石头\n§210%凝灰岩\n§210%熔渣\n§210%滴水石块\n§210%平滑玄武岩")
 	addAccelerateTooltipLanguage("cmi:andesite_mechanism", "§e转化石头\n§e20%安山岩\n§e5%铁矿石\n§e5%锌矿石\n§2转化深板岩\n§215%安山岩\n§210%深层铁矿石\n§210%深层锌矿石")
-	addAccelerateTooltipLanguage("cmi:copper_mechanism", "§e转化石头\n§e20%铜矿石\n§e5%金矿石\n§e5%粘土块\n§2转化深板岩\n§215%深层铜矿石\n§210%深层金矿石\n§210%粘土块")
+	addAccelerateTooltipLanguage("cmi:copper_mechanism", "§e转化石头\n§e20%铜矿石\n§e5%金矿石\n§e5%粘土块\n§e5%硫矿石\n§2转化深板岩\n§215%深层铜矿石\n§210%深层金矿石\n§210%粘土块\n§25%深层硫矿石")
 	addAccelerateTooltipLanguage("cmi:iron_mechanism", "§e转化石头\n§e20%铁矿石\n§e5%红石矿石\n§e5%镍矿石\n§2转化深板岩\n§215%深层铁矿石\n§210%深层红石矿\n§210%深层镍矿石")
 	addAccelerateTooltipLanguage("cmi:gold_mechanism", "§e转化石头\n§e20%金矿石\n§e5%朱砂矿石\n§e5%石英矿石\n§2转化深板岩\n§215%深层金矿石\n§210%深层朱砂矿\n§210%深层石英矿")
 	addAccelerateTooltipLanguage("vintageimprovements:redstone_module", "§e转化石头\n§e20%红石矿石\n§2转化深板岩\n§225%深层红石矿石")
