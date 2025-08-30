@@ -1,4 +1,4 @@
-BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
+BlockEvents.rightClicked("cmi:accelerator", (event) => {
 	if (event.hand === "OFF_HAND") {
 		return
 	}
@@ -92,7 +92,7 @@ BlockEvents.rightClicked((event) => {
 		return
 	}
 	let { block, item, level } = event
-	if (item.id !== "cmi:wooden_mechanism" || block.id !== "cmi:the_accelerator_of_mechanism_power") {
+	if (item.id !== "cmi:wooden_mechanism" || block.id !== "cmi:accelerator") {
 		return
 	}
 	let command = `particle minecraft:dust 0 0.4 0.3 1 ${block.x + 0.5} ${block.y + 1} ${block.z + 0.5} 0.5 0.5 0.5 0.1 30`

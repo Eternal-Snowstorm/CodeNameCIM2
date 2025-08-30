@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { kubejs, minecraft } = event.recipes
 
 	// 催生器
-	kubejs.shaped("cmi:the_accelerator_of_mechanism_power", [
+	kubejs.shaped("cmi:accelerator", [
 		"ABC",
 		"DEF",
 		"GHI"

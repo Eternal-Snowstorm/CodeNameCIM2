@@ -224,7 +224,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("tier_2_rocket_frame", "二阶火箭框架")
 	addBlockLanguage("tier_3_rocket_frame", "三阶火箭框架")
 	addBlockLanguage("tier_4_rocket_frame", "四阶火箭框架")
-	addBlockLanguage("the_accelerator_of_mechanism_power", "构件之力催生器")
+	addBlockLanguage("accelerator", "构件之力催生器")
 	addBlockLanguage("osmium_tile", "锇砖瓦")
 	addBlockLanguage("compression_end_stone_dust_block", "压缩末地石粉块")
 	addBlockLanguage("crucible_base", "底座")

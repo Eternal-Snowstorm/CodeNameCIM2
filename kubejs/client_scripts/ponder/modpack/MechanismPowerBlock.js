@@ -1,10 +1,10 @@
 Ponder.registry((event) => {
-	event.create("cmi:the_accelerator_of_mechanism_power")
-		.scene("cmi:the_accelerator_of_mechanism_power", "How to use the accelerator", "cmi:modpack/stone", (scene) => {
+	event.create("cmi:accelerator")
+		.scene("cmi:accelerator", "How to use the accelerator", "cmi:modpack/stone", (scene) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
-			scene.world.setBlocks([3, 0, 3], "cmi:the_accelerator_of_mechanism_power")
+			scene.world.setBlocks([3, 0, 3], "cmi:accelerator")
 			scene.idle(10)
 			scene.overlay.showOutline("blue", {}, [3, 0, 3], 35)
 			scene.text(30, "This is an accelerator", [3, 1.5, 3])

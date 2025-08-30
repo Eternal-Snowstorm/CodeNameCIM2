@@ -26,10 +26,7 @@ JEIAddedEvents.registerCategories((event) => {
 			.background(guiHelper.createBlankDrawable(0, 0))
 			// 设置图标(这里用的是机械动力的双图标lib)
 			.iconSupplier(() => {
-				return new $DoubleItemIcon(
-					"cmi:the_accelerator_of_mechanism_power",
-					"create:precision_mechanism"
-				)
+				return new $DoubleItemIcon("cmi:accelerator", "create:precision_mechanism")
 			})
 	})
 })

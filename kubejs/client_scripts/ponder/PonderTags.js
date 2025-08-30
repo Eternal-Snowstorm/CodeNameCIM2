@@ -7,7 +7,7 @@ Ponder.tags((event) => {
 	}
 
 	addPonderTag("ponder", "cmi:creative_mechanism", "Modpack", [
-		"cmi:the_accelerator_of_mechanism_power",
+		"cmi:accelerator",
 		"cmi:water_pump",
 		"minecraft:water_bucket",
 		"cmi:bronze_casing",

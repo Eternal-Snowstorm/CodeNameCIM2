@@ -1,5 +1,5 @@
 // 石头转化
-BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
+BlockEvents.rightClicked("cmi:accelerator", (event) => {
 	// 判定是否主手手持铜质构件
 	if (event.hand === "OFF_HAND") {
 		return
@@ -118,7 +118,7 @@ BlockEvents.rightClicked((event) => {
 	}
 	// 若数量大于5则召唤效果粒子
 	let { block, item, level } = event
-	if (item.id !== "cmi:copper_mechanism" || block.id !== "cmi:the_accelerator_of_mechanism_power") {
+	if (item.id !== "cmi:copper_mechanism" || block.id !== "cmi:accelerator") {
 		return
 	}
 	let command = `particle minecraft:dust 1 0.5 0 1 ${block.x + 0.5} ${block.y + 1} ${block.z + 0.5} 0.5 0.5 0.5 0.1 30`
