@@ -45,13 +45,13 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/salt"
 	])
 
-	// SiCl4
+	// 四氯化硅
 	vintageimprovements.pressurizing(Fluid.of("cmi:tetrachlorosilane", 500), [
 		Fluid.of("mekanism:chlorine", 500),
 		"#forge:silicon"
 	]).processingTime(200).superheated()
 
-	// C2H5OH
+	// 乙醇
 	create.mixing(Fluid.of("immersiveengineering:ethanol", 125), [
 		"minecraft:sugar",
 		"create:cinder_flour",
