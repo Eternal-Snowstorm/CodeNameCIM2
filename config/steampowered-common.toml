@@ -1,0 +1,94 @@
+
+[steam]
+	#HU generation for each fuel burning tick. 10HU=1mb of steam. THIS AFFECT ALL BURNERS AND BOILERS!
+	#Range: 0 ~ 655360
+	HuPerFuelTick = 4
+	#This defines how many mbs of steam does a mb of water can turn into.
+	#Range: 0.0 ~ 100000.0
+	steamPerWater = 2.0
+
+[boiler]
+	#Maximum HU the boiler intakes. 10HU=1mb of steam. 
+	#Range: 0 ~ 1000000
+	bronzeBoilerHu = 20
+	#Range: 0 ~ 1000000
+	castIronBoilerHu = 40
+	#Range: 0 ~ 1000000
+	steelBoilerHu = 80
+
+[burner]
+	#Maximum HU the boiler emits. Note that this does not affect steam per fuel tick. 10HU=1mb of steam. 
+	#Range: 0 ~ 1000000
+	bronzeBurnerHu = 20
+	#Range: 0 ~ 1000000
+	castIronBurnerHu = 40
+	#Range: 0 ~ 1000000
+	steelBurnerHu = 80
+
+[burnerEfficiency]
+	#Fuel Tick to HU Convertion Percentage. 10HU=1mb of steam. 
+	#Range: 0.0 ~ 1.0
+	bronzeBurnerEfficiency = 0.8
+	#Range: 0.0 ~ 1.0
+	castIronBurnerEfficiency = 0.9
+	#Range: 0.0 ~ 1.0
+	steelBurnerEfficiency = 1.0
+
+[flywheel]
+
+	[flywheel.bronze_flywheel]
+		#Range: 0 ~ 8192
+		bronzeFlywheelCapacity = 512
+		#Range: 0 ~ 8192
+		bronzeFlywheelSpeed = 32
+		#Range: 0 ~ 8192
+		bronzeFlywheelSteamConsumptionPerTick = 2
+		#Range: 0 ~ 1048576
+		bronzeFlywheelSteamStorage = 2000
+		#Range: 0.0 ~ 1.0
+		bronzeFlywheelSuckEfficiency = 0.7
+
+	[flywheel.cast_iron_flywheel]
+		#Range: 0 ~ 8192
+		castIronFlywheelCapacity = 1024
+		#Range: 0 ~ 8192
+		castIronFlywheelSpeed = 32
+		#Range: 0 ~ 8192
+		castIronFlywheelSteamConsumptionPerTick = 4
+		#Range: 0 ~ 1048576
+		castIronFlywheelSteamStorage = 4000
+		#Range: 0.0 ~ 1.0
+		castIronFlywheelSuckEfficiency = 0.7
+
+	[flywheel.steel_flywheel]
+		#Range: 0 ~ 8192
+		steelFlywheelCapacity = 2048
+		#Range: 0 ~ 8192
+		steelFlywheelSpeed = 32
+		#Range: 0 ~ 1048576
+		steelFlywheelSteamConsumptionPerTick = 8
+		#Range: 0 ~ 1048576
+		steelFlywheelSteamStorage = 8000
+		#Range: 0.0 ~ 1.0
+		steelFlywheelSuckEfficiency = 0.7
+
+[dynamo]
+	#If dynamo is disabled in the server config, the following will be ignored!
+	#Range: 0 ~ 8192
+	dynamoFeMaxOut = 256
+	#Range: 0 ~ 8192
+	dynamoFeCapacity = 2048
+	#Range: 0 ~ 8192
+	dynamoImpact = 16
+	#Range: 0.0 ~ 1.0
+	dynamoEfficiency = 0.75
+
+[cogwheel]
+	#For those who want to make the game more challenging, you can add stress impact to cogwheels!
+	#Range: 0.0 ~ 1.0
+	bronzeCogwheelImpact = 0.0
+	#Range: 0.0 ~ 1.0
+	castIronCogwheelImpact = 0.0
+	#Range: 0.0 ~ 1.0
+	steelCogwheelImpact = 0.0
+

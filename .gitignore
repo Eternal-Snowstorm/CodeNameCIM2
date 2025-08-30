@@ -99,3 +99,4 @@ replay*
 !/config/createaddition-common.toml
 !/config/lmft.json
 !/config/modernfix-mixins.properties
+!/config/steampowered-common.toml
