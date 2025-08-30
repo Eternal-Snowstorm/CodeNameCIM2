@@ -5,6 +5,8 @@ StartupEvents.registry("block", (event) => {
 
 	addBlock("accelerator")
 		.soundType(SoundType.METAL)
+		.hardness(4)
+		.resistance(4)
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.miningLevel["wooden"])
 		.requiresTool(true)
