@@ -87,9 +87,9 @@ StartupEvents.postInit((event) => {
 		"sawing"
 	]
 	machines.forEach((id) => {
-	addConversionRecipe("mekanism:basic_$id_factory", "mekanism:basic_tier_installer")
-	addConversionRecipe("mekanism:advanced_$id_factory", "mekanism:advanced_tier_installer")
-	addConversionRecipe("mekanism:elite_$id_factory", "mekanism:elite_tier_installer")
-	addConversionRecipe("mekanism:ultimate_$id_factory", "mekanism:ultimate_tier_installer")
+	addConversionRecipe(`mekanism:basic_${id}_factory`, "mekanism:basic_tier_installer")
+	addConversionRecipe(`mekanism:advanced_${id}_factory`, "mekanism:advanced_tier_installer")
+	addConversionRecipe(`mekanism:elite_${id}_factory`, "mekanism:elite_tier_installer")
+	addConversionRecipe(`mekanism:ultimate_${id}_factory`, "mekanism:ultimate_tier_installer")
 	})
 })

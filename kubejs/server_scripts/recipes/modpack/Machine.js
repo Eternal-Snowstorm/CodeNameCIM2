@@ -48,5 +48,4 @@ ServerEvents.recipes((event) => {
 		D: "#forge:storage_blocks/bronze"
 	})
 
-	// 蒸汽矿石处理机
 })
