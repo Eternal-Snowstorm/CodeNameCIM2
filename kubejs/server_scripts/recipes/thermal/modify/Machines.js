@@ -381,7 +381,7 @@ ServerEvents.recipes((event) => {
 		A: PLANK,
 		B: COPPER_MECH,
 		C: GLASS,
-		D: "cmi:wooden_faucet",
+		D: "#cmi:faucet",
 		E: "cmi:andesite_mechanism",
 	})
 

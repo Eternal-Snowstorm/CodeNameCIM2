@@ -38,6 +38,34 @@ ServerEvents.recipes((event) => {
 		B: "#minecraft:planks"
 	})
 
+	// 铸铁龙头
+	kubejs.shaped("cmi:cast_iron_faucet", [
+		" A ",
+		"BBB",
+		"  B"
+	], {
+		A: "#minecraft:planks",
+		B: "#forge:plates/cast_iron"
+	})
+
+	// 钢龙头
+	kubejs.shaped("cmi:steel_faucet", [
+		" A ",
+		"BBB",
+		"  B"
+	], {
+		A: "#minecraft:planks",
+		B: "#forge:plates/steel"
+	})
+
+	// 等离子龙头
+	kubejs.shapeless("cmi:plasma_faucet", [
+		"cmi:wooden_faucet",
+		"cmi:cast_iron_faucet",
+		"cmi:steel_faucet",
+		"#forge:ingots/plasma"
+	])
+
 	// 锇砖瓦
 	kubejs.shaped("cmi:osmium_tile", [
 		" A ",
