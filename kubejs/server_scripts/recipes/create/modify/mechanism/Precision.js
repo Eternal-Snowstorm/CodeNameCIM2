@@ -96,4 +96,16 @@ ServerEvents.recipes((event) => {
 		B: casing,
 		C: "create:cogwheel"
 	}).id("create:crafting/kinetics/sequenced_gearshift")
+
+	// 线圈
+	kubejs.shaped("createaddition:tesla_coil", [
+		" D ",
+		"ABA",
+		" C "
+	], {
+		C: mech,
+		B: casing,
+		A: "createaddition:capacitor",
+		D: "immersiveengineering:coil_lv"
+	}).id("createaddition:mechanical_crafting/tesla_coil")
 })

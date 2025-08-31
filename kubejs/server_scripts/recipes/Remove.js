@@ -65,7 +65,8 @@ ServerEvents.recipes((event) => {
 		"tconstruct:compat/create/andesite_alloy_zinc",
 		"tconstruct:compat/create/andesite_alloy_iron",
 		"tconstruct:compat/create/andesite_alloy_zinc",
-		"ad_astra:coal_generator"
+		"ad_astra:coal_generator",
+		"createaddition:crafting/capacitor_1"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
