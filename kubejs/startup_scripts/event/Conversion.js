@@ -59,7 +59,7 @@ StartupEvents.postInit((event) => {
 	addConversionRecipe("minecraft:redstone_ore", "vintageimprovements:redstone_module")
 	addConversionRecipe("minecraft:deepslate_redstone_ore", "vintageimprovements:redstone_module")
 
-	
+
 	addConversionRecipe("minecraft:andesite", "cmi:stone_mechanism")
 	addConversionRecipe("minecraft:diorite", "cmi:stone_mechanism")
 	addConversionRecipe("minecraft:granite", "cmi:stone_mechanism")
@@ -73,4 +73,23 @@ StartupEvents.postInit((event) => {
 	addConversionRecipe("minecraft:coal_ore", "cmi:wooden_mechanism")
 	addConversionRecipe("minecraft:deepslate_coal_ore", "cmi:wooden_mechanism")
 	addConversionRecipe("minecraft:deepslate_diamond_ore", "cmi:wooden_mechanism")
+	
+
+	let machines = [
+		"smelting",
+		"enriching",
+		"crushing",
+		"compressing",
+		"combining",
+		"purifying",
+		"injecting",
+		"infusing",
+		"sawing"
+	]
+	machines.forEach((id) => {
+	addConversionRecipe("mekanism:basic_$id_factory", "mekanism:basic_tier_installer")
+	addConversionRecipe("mekanism:advanced_$id_factory", "mekanism:advanced_tier_installer")
+	addConversionRecipe("mekanism:elite_$id_factory", "mekanism:elite_tier_installer")
+	addConversionRecipe("mekanism:ultimate_$id_factory", "mekanism:ultimate_tier_installer")
+	})
 })

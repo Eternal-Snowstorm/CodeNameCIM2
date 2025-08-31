@@ -130,7 +130,11 @@ ServerEvents.recipes((event) => {
 		"ad_astra:tier_4_rocket",
 		"steampowered:alternator",
 		"steampowered:pressurized_gas_container",
-		"steampowered:pressurized_steam_container"
+		"steampowered:pressurized_steam_container",
+		"mekanism:tier_installer/basic",
+		"mekanism:tier_installer/advanced",
+		"mekanism:tier_installer/elite",
+		"mekanism:tier_installer/ultimate"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({

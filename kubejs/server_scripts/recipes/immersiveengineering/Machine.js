@@ -130,4 +130,9 @@ ServerEvents.recipes((event) => {
 		B: "#forge:ingots/iron",
 		C: "minecraft:redstone"
 	}).id("immersiveengineering:crafting/conveyor_basic")
+
+	create.filling(Item.of("immersiveengineering:graphite_electrode", "{Unbreakable:1b}"), [
+		"immersiveengineering:graphite_electrode",
+		Fluid.of("create_enchantment_industry:hyper_experience", 1000)
+	])
 })
