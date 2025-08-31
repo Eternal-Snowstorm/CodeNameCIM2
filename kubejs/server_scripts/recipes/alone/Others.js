@@ -208,7 +208,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: "cmi:thermal_mechanism",
-		B: 'mekanism:alloy_infused'
+		B: "mekanism:alloy_infused"
 	}).id("pipez:gas_pipe")
 
 	kubejs.shapeless("4x pipez:universal_pipe", [
@@ -218,41 +218,44 @@ ServerEvents.recipes((event) => {
 		"pipez:gas_pipe",
 	]).id("pipez:universal_pipe")
 
-	kubejs.shapeless('cmi:mechanism', [
+	kubejs.shapeless("cmi:mechanism", [
 		"cmi:dont_kill_belalus",
 		"#create:mechanisms",
 	])
 
-	create.cutting("minecraft:echo_shard","cmi:sculk_mechanism")
+	create.cutting("minecraft:echo_shard", [
+		"cmi:sculk_mechanism"
+	])
 
-	kubejs.shapeless('pipez:basic_upgrade', [
+	kubejs.shapeless("pipez:basic_upgrade", [
 		"cmi:cobalt_mechanism",
 		"#forge:plates/iron",
 	]).id("pipez:basic_upgrade")
 
-	kubejs.shapeless('pipez:improved_upgrade', [
+	kubejs.shapeless("pipez:improved_upgrade", [
 		"cmi:cobalt_mechanism",
 		"pipez:basic_upgrade",
 		"#forge:plates/gold",
 	]).id("pipez:improved_upgrade")
 
-	kubejs.shapeless('pipez:advanced_upgrade', [
+	kubejs.shapeless("pipez:advanced_upgrade", [
 		"cmi:cobalt_mechanism",
 		"pipez:improved_upgrade",
 		"minecraft:diamond",
 	]).id("pipez:advanced_upgrade")
 
-	kubejs.shapeless('pipez:ultimate_upgrade', [
+	kubejs.shapeless("pipez:ultimate_upgrade", [
 		"cmi:cobalt_mechanism",
 		"pipez:advanced_upgrade",
 		"#forge:plates/netherite",
 	]).id("pipez:ultimate_upgrade")
 
-	create.sequenced_assembly('createaddition:capacitor',["#forge:plates/aluminum"],[
-		
+	create.sequenced_assembly("createaddition:capacitor"[
+		"#forge:plates/aluminum"
+	], [
 		create.deploying(inc, [inc, "#forge:rods/copper"]),
 		create.deploying(inc, [inc, "#forge:rods/zinc"]),
 		create.deploying(inc, [inc, "minecraft:redstone"]),
-		create.pressing(inc,inc),
+		create.pressing(inc, inc),
 	]).transitionalItem(inc).loops(1).id("createaddition:crafting/capacitor_2")
 })
