@@ -147,8 +147,8 @@ ServerEvents.recipes((event) => {
 		]),
 		create.deploying("createdieselgenerators:diesel_engine", [
 			"createdieselgenerators:diesel_engine", [
-				"#forge:plates/brass",
-				"#forge:ingots/brass"
+				"#forge:ingots/copper",
+				"#forge:plates/copper"
 			]
 		]),
 		create.cutting("createdieselgenerators:diesel_engine", [
