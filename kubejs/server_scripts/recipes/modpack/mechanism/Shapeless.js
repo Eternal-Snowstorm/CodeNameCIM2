@@ -48,6 +48,15 @@ ServerEvents.recipes((event) => {
 		"cmi:mechanical_mechanism_part"
 	]).damageIngredient("#forge:hammer", 1)
 
+	// 红石
+	kubejs.shapeless("vintageimprovements:redstone_module", [
+		"2x #forge:redstone",
+		"#forge:stone",
+		"minecraft:redstone_torch",
+		"#forge:hammer",
+		"cmi:mechanical_mechanism_part"
+	]).damageIngredient("#forge:hammer", 1)
+
 	kubejs.shapeless("4x cmi:basic_mechanism_part", [
 		"minecraft:flint",
 		"minecraft:clay_ball"

@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
 	// 计算机组件
 	create.sequenced_assembly([
 		Item.of("cmi:computer_component")
-	], "#forge:plates/silver", [
+	], "cmi:flame_retardant_plastic", [
 		create.deploying("cmi:incomplete_computer_component", [
 			"cmi:incomplete_computer_component",
 			"cmi:mekanism_processor"

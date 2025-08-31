@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs } = event.recipes
+	let { create, kubejs, thermal} = event.recipes
 
 	const ANDESITE_MECH = "cmi:andesite_mechanism"
 	const COPPER_MECH = "cmi:copper_mechanism"
@@ -451,4 +451,10 @@ ServerEvents.recipes((event) => {
 		B: "thermal:machine_crucible",
 		C: "#forge:dusts/soul_infused"
 	})
+
+	//存在问题
+	thermal.tree_extractor(Fluid.of("thermal:latex",200),[
+		"thermal:rubberwood_log",
+		"thermal:rubberwood_leaves"
+	]).id("thermal:devices/tree_extractor/tree_extractor_rubberwood")
 })

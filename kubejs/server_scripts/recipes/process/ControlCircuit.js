@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create ,vintageimprovements} = event.recipes
 
 	// 高级
 	create.sequenced_assembly("mekanism:advanced_control_circuit", [
@@ -7,12 +7,11 @@ ServerEvents.recipes((event) => {
 	], [
 		create.deploying("cmi:incomplete_advanced_control_circuit", [
 			"cmi:incomplete_advanced_control_circuit",
-			"mekanism:basic_control_circuit"
-		]),
-		create.deploying("cmi:incomplete_advanced_control_circuit", [
-			"cmi:incomplete_advanced_control_circuit",
 			"#forge:plates/platinum"
 		]),
+		vintageimprovements.laser_cutting("cmi:incomplete_advanced_control_circuit",[
+			"cmi:incomplete_advanced_control_circuit"
+		]).energy(10),
 		create.pressing("cmi:incomplete_advanced_control_circuit", [
 			"cmi:incomplete_advanced_control_circuit"
 		])
@@ -22,10 +21,6 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("mekanism:elite_control_circuit", [
 		"mekanism:alloy_reinforced"
 	], [
-		create.deploying("cmi:incomplete_elite_control_circuit", [
-			"cmi:incomplete_elite_control_circuit",
-			"mekanism:advanced_control_circuit"
-		]),
 		create.deploying("cmi:incomplete_elite_control_circuit", [
 			"cmi:incomplete_elite_control_circuit",
 			"#forge:plates/ostrum"
