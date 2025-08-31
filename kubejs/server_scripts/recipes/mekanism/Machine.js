@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
 	}).id("mekanism:energized_smelter")
 
 	// 压射
-	kubejs.shaped("mekanism:purification_chamber", [
+	kubejs.shaped("mekanism:chemical_injection_chamber", [
 		"ABA",
 		"CDC",
 		"ABA"
@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
 		B: mechE,
 		C: "#forge:ingots/gold",
 		D: "mekanism:enrichment_chamber",
-	}).id("mekanism:purification_chamber")
+	}).id("mekanism:chemical_injection_chamber")
 
 	// 灌注
 	kubejs.shaped("mekanism:chemical_infuser", [
@@ -166,4 +166,51 @@ ServerEvents.recipes((event) => {
 		C: "cmi:pigiron_mechanism",
 		D: casing,
 	}).id("mekanism:nutritional_liquifier")
+
+	// 反物质
+	kubejs.shaped("mekanism:antiprotonic_nucleosynthesizer", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: alloyU,
+		B: mechU,
+		C: "mekanism:pellet_antimatter",
+		D: casing,
+	}).id("mekanism:antiprotonic_nucleosynthesizer")
+
+	// 维度稳定
+	kubejs.shaped("mekanism:dimensional_stabilizer", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: alloyU,
+		B: mechU,
+		C: "minecraft:diamond_block",
+		D: casing,
+	}).id("mekanism:dimensional_stabilizer")
+
+	// 热力发电机
+	kubejs.shaped("mekanismgenerators:heat_generator", [
+		"AAA",
+		"BCB",
+		"DED"
+	], {
+		A: "#forge:ingots/iron",
+		B: "cmi:stone_mechanism",
+		C: mechB,
+		D: "#forge:ingots/copper",
+        E: casing
+	}).id("mekanismgenerators:generator/heat")
+
+	// 电池
+	kubejs.shaped("mekanism:energy_tablet", [
+		"A",
+        "B",
+        "A"
+	], {
+		A: alloyA,
+		B: "cmi:gold_mechanism",
+	}).id("mekanism:energy_tablet")
 })
