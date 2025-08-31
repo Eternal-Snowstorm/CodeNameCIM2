@@ -127,7 +127,7 @@ ServerEvents.recipes((event) => {
 		],
 		"outputs": [
 			{
-				"item": "brominated_flame_retardants",
+				"item": "cmi:brominated_flame_retardants",
 				"count": 1
 			}
 		],
