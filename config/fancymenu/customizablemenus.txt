@@ -75,9 +75,6 @@ net.minecraft.client.gui.screens.achievement.StatsScreen {
 net.minecraft.client.gui.screens.LevelLoadingScreen {
 }
 
-net.minecraft.client.gui.screens.GenericDirtMessageScreen {
-}
-
 net.minecraft.client.gui.screens.ProgressScreen {
 }
 
@@ -85,5 +82,8 @@ net.minecraft.client.gui.screens.ConnectScreen {
 }
 
 net.minecraft.client.gui.screens.ReceivingLevelScreen {
+}
+
+net.minecraft.client.gui.screens.GenericDirtMessageScreen {
 }
 

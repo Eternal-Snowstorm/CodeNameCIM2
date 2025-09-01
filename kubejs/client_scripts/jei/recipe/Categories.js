@@ -39,6 +39,7 @@ JEIAddedEvents.registerCategories((event) => {
 				recipe,
 				group
 			) => {
+				builder.setShapeless()
 				// 格子类型, X, Y
 				builder.addSlot($RecipeIngredientRole.INPUT, 21, 48)
 					.setBackground($CreateRecipeCategory.getRenderedSlot(), -1, -1)

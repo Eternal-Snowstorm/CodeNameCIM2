@@ -22,7 +22,7 @@ global.debugUserName = [
 	"oooooooo_zane"
 ]
 // 挖掘等级
-global.miningLevel = {
+global.MiningLevel = {
 	"wooden": "minecraft:needs_wooden_tool",
 	"stone": "minecraft:needs_stone_tool",
 	"iron": "minecraft:needs_iron_tool",
@@ -31,12 +31,17 @@ global.miningLevel = {
 	"nether": "forge:needs_netherite_tool"
 }
 // 挖掘工具类型
-global.toolType = {
+global.ToolType = {
 	"sword": "forge:mineable/sword",
 	"pickaxe": "minecraft:mineable/pickaxe",
 	"axe": "minecraft:mineable/axe",
 	"shovel": "minecraft:mineable/shovel",
 	"hoe": "minecraft:mineable/hoe"
+}
+global.HeatLevel = {
+	"heated": "heated",
+	"super": "superheated",
+	"grilled": "grilled"
 }
 // 所有染料颜色
 global.dyeColorGroup = [

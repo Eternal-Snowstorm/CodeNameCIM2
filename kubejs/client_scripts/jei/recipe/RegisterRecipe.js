@@ -5,10 +5,8 @@ JEIAddedEvents.registerRecipes((event) => {
 	let addRecipesToJEI = {
 		accelerator: function (output, input) {
 			return acceleratorType.add({
-				recipe: {
-					"input": input,
-					"output": output
-				}
+				"input": input,
+				"output": output
 			})
 		}
 	}

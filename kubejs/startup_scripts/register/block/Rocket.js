@@ -15,9 +15,9 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.toolType["pickaxe"])
-		.tagBlock(global.toolType["axe"])
-		.tagBlock(global.miningLevel["wooden"])
+		.tagBlock(global.ToolType["pickaxe"])
+		.tagBlock(global.ToolType["axe"])
+		.tagBlock(global.MiningLevel["wooden"])
 		.tagBlock("create:wrench_pickup")
 
 	// 火箭框架1
@@ -33,8 +33,8 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.toolType["pickaxe"])
-		.tagBlock(global.miningLevel["stone"])
+		.tagBlock(global.ToolType["pickaxe"])
+		.tagBlock(global.MiningLevel["stone"])
 		.tagBlock("create:wrench_pickup")
 
 	// 火箭框架2
@@ -50,8 +50,8 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.toolType["pickaxe"])
-		.tagBlock(global.miningLevel["iron"])
+		.tagBlock(global.ToolType["pickaxe"])
+		.tagBlock(global.MiningLevel["iron"])
 		.tagBlock("create:wrench_pickup")
 
 	// 火箭框架3
@@ -67,8 +67,8 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.toolType["pickaxe"])
-		.tagBlock(global.miningLevel["iron"])
+		.tagBlock(global.ToolType["pickaxe"])
+		.tagBlock(global.MiningLevel["iron"])
 		.tagBlock("create:wrench_pickup")
 
 	// 火箭框架4
@@ -84,7 +84,7 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.toolType["pickaxe"])
-		.tagBlock(global.miningLevel["iron"])
+		.tagBlock(global.ToolType["pickaxe"])
+		.tagBlock(global.MiningLevel["iron"])
 		.tagBlock("create:wrench_pickup")
 })

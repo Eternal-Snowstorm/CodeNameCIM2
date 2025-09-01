@@ -23,6 +23,10 @@ ServerEvents.highPriorityData((event) => {
 				"type": "custommachinery:fluid",
 				"id": "water",
 				"mode": "input",
+				"filter": [
+					"minecraft:water"
+				],
+				"whitelist": true,
 				"capacity": 10000
 			},
 			{
@@ -35,7 +39,15 @@ ServerEvents.highPriorityData((event) => {
 				"type": "custommachinery:fluid",
 				"id": "steam",
 				"mode": "output",
-				"capacity": 10000
+				"filter": [
+					"mekanism:steam"
+				],
+				"whitelist": true,
+				"capacity": 10000,
+				"config": {
+					"top": "output",
+					"enabled": false
+				}
 			}
 		],
 		"gui": [

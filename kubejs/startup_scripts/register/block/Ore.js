@@ -1,5 +1,5 @@
 let ores = []
-const PICKAXE = global.toolType["pickaxe"]
+const PICKAXE = global.ToolType["pickaxe"]
 
 /**
  * 函数封装
@@ -69,7 +69,7 @@ StartupEvents.registry("block", (event) => {
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
 					.tagBlock(PICKAXE)
-					.tagBlock(global.miningLevel[ore.level])
+					.tagBlock(global.MiningLevel[ore.level])
 					.requiresTool(true)
 			} else if (type === "deepslate") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
@@ -81,7 +81,7 @@ StartupEvents.registry("block", (event) => {
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
 					.tagBlock(PICKAXE)
-					.tagBlock(global.miningLevel[ore.level])
+					.tagBlock(global.MiningLevel[ore.level])
 					.requiresTool(true)
 			} else if (type === "nether") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
@@ -93,7 +93,7 @@ StartupEvents.registry("block", (event) => {
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
 					.tagBlock(PICKAXE)
-					.tagBlock(global.miningLevel[ore.level])
+					.tagBlock(global.MiningLevel[ore.level])
 					.requiresTool(true)
 			} else {
 				event.create(`${global.namespace}:${ore.name}_ore`)
@@ -105,7 +105,7 @@ StartupEvents.registry("block", (event) => {
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
 					.tagBlock(PICKAXE)
-					.tagBlock(global.miningLevel[ore.level])
+					.tagBlock(global.MiningLevel[ore.level])
 					.requiresTool(true)
 			}
 		})

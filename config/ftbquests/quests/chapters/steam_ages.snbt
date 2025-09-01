@@ -296,7 +296,150 @@
 					type: "item"
 				}
 			]
+			title: "飞轮!"
 			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A8F6D85F3DA8DF9"]
+			icon: "steampowered:bronze_burner"
+			id: "5F2AD32EF14B2C79"
+			rewards: [{
+				id: "70D1AAF895BC437F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "6F65B29EC0C2A6B5"
+					item: "steampowered:bronze_burner"
+					type: "item"
+				}
+				{
+					id: "3E19EB52518D30EE"
+					item: "steampowered:bronze_boiler"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A8F6D85F3DA8DF9"]
+			icon: "steampowered:cast_iron_burner"
+			id: "1156D2A5BA2286FD"
+			rewards: [{
+				id: "7540D5485D5787C3"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "4F993DD16985FC21"
+					item: "steampowered:cast_iron_burner"
+					type: "item"
+				}
+				{
+					id: "0A07D1BD78EC1145"
+					item: "steampowered:cast_iron_boiler"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3A8F6D85F3DA8DF9"]
+			icon: "steampowered:steel_burner"
+			id: "3588EC6A12F8BE35"
+			rewards: [{
+				id: "705608604CDE76B0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "534D796C056E7878"
+					item: "steampowered:steel_burner"
+					type: "item"
+				}
+				{
+					id: "19F63437A938A0EB"
+					item: "steampowered:steel_boiler"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4405C578E1F06769"]
+			id: "3A8F6D85F3DA8DF9"
+			rewards: [{
+				id: "0F54B8174DEA627B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "436613C46D6D77EA"
+				title: "更多锅炉"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39A64AAD5944BEE7"]
+			icon: "steampowered:cast_iron_flywheel"
+			id: "20E3CB07FA4862A5"
+			rewards: [{
+				id: "2E0120D8392976EB"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "5634D5BEE16C7907"
+					item: "steampowered:cast_iron_steam_engine"
+					type: "item"
+				}
+				{
+					id: "2D3C78AFFDC714AC"
+					item: "steampowered:cast_iron_flywheel"
+					type: "item"
+				}
+			]
+			title: "铸铁飞轮"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["39A64AAD5944BEE7"]
+			icon: "steampowered:steel_flywheel"
+			id: "4B9103F7518CA5C0"
+			rewards: [{
+				id: "77F0245A0CB06359"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "5F07458F9264FB15"
+					item: "steampowered:steel_steam_engine"
+					type: "item"
+				}
+				{
+					id: "32FFA5FBA1669724"
+					item: "steampowered:steel_flywheel"
+					type: "item"
+				}
+			]
+			title: "钢飞轮"
+			x: 9.5d
 			y: -1.0d
 		}
 	]

@@ -83,8 +83,8 @@ StartupEvents.registry("block", (event) => {
 					.item((item) => {
 						item.color(0, material.color)
 					})
-					.tagBlock(global.toolType["pickaxe"])
-					.tagBlock(global.miningLevel[material.level])
+					.tagBlock(global.ToolType["pickaxe"])
+					.tagBlock(global.MiningLevel[material.level])
 					.tag(`${global.namespace}:metals`)
 					.tag("forge:storage_blocks")
 					.tag(`forge:storage_blocks/${material.name}`)

@@ -6,7 +6,8 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:concentrated_sea_water", 500),
 		Fluid.of("minecraft:water", 1500)
 	], Fluid.of("cmi:sea_water", 2000))
-		.heatRequirement("heated")
+		.heatRequirement(global.HeatLevel["heated"])
+		// .heatRequirement(global.HeatLevel["grilled"])
 
 	// 碱性浓缩海水
 	create.mixing([
@@ -88,7 +89,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:nacl_solution", 500),
 		Fluid.of("cmi:na2so4_solution", 300)
 	], Fluid.of("cmi:concentrated_sea_water", 1000))
-		.heatRequirement("heated")
+		.heatRequirement(global.HeatLevel["grilled"])
 
 	// 钠+氯气
 	event.custom({

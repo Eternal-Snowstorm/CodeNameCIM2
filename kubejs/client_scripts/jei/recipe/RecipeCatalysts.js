@@ -4,7 +4,7 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 	let acceleratorTypeId = ResourceLocation.parse("cmi:accelerator")
 	let recipeType = data.jeiHelpers.getRecipeType(acceleratorTypeId).get()
 
-	let key = Component.translatable("recipe.jei.recipe.accelerator")
+	let key = Component.translatable("recipe.jei.recipe.cmi.accelerator")
 	data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"]
 		(Item.of("cmi:accelerator").setHoverName(key), recipeType)
 })

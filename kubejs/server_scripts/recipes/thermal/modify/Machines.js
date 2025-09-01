@@ -451,30 +451,4 @@ ServerEvents.recipes((event) => {
 		B: "thermal:machine_crucible",
 		C: "#forge:dusts/soul_infused"
 	})
-
-	// 存在问题
-	event.custom({
-		"type": "thermal:tree_extractor",
-		"trunk": {
-			"Name": "thermal:rubberwood_log",
-			"Properties": {
-				"axis": "y"
-			}
-		},
-		"leaves": {
-			"Name": "thermal:rubberwood_leaves",
-			"Properties": {
-				"persistent": "false"
-			}
-		},
-		"sapling": "thermal:rubberwood_sapling",
-		"min_height": 4,
-		"max_height": 16,
-		"min_leaves": 16,
-		"max_leaves": 24,
-		"result": {
-			"fluid": "thermal:latex",
-			"amount": 200
-		}
-	}).id("thermal:devices/tree_extractor/tree_extractor_rubberwood")
 })

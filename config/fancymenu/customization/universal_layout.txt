@@ -4,16 +4,17 @@ layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = false
   last_edited_time = 1751278639344
-  is_enabled = false
+  is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:272bda52-1420-489a-bb28-0fd6c05b5bdb-1755165971535] = [groups:][instances:]
+  [loading_requirement_container_meta:9362beb4-93c4-4e80-89f7-f27fc73c6063-1756748706657] = [groups:][instances:]
 }
 
 menu_background {
   slideshow_name = cool_slideshow
+  instance_identifier = 612e1d57-2a7f-4c6b-8fef-a53e855984de-1756748706657
   background_type = slideshow
 }
 
