@@ -33,8 +33,8 @@ MMEvents.createProcesses((event) => {
 				amount: global.BUCKET_CAPACITY * 2
 			}
 		})
-		
-		event.create("cmi:cracker/ethene")
+
+	event.create("cmi:cracker/ethene")
 		.structureId("cmi:cracker_structure")
 		.ticks(600)
 		.input({
@@ -66,6 +66,14 @@ MMEvents.createProcesses((event) => {
 				type: "mm:fluid",
 				fluid: "mekanism:ethene",
 				amount: global.BUCKET_CAPACITY * 5
+			}
+		})
+		.output({
+			type: "mm:output/simple",
+			ingredient: {
+				type: "mm:fluid",
+				fluid: "cmi:benzene",
+				amount: global.BUCKET_CAPACITY * 3
 			}
 		})
 })

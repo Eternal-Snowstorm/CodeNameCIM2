@@ -106,6 +106,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("bromine", "溴")
 	addFluidLanguage("sodium_hydroxide", "氢氧化钠")
 	addFluidLanguage("hydrochloric_acid", "盐酸")
+	addFluidLanguage("sulfric_diesel", "含硫柴油")
+	addFluidLanguage("benzene", "苯")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
