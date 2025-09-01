@@ -70,7 +70,7 @@
 			}]
 			title: "关于思索, 任务和JEI"
 			x: 0.0d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			disable_toast: true
@@ -117,7 +117,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "当前版本: Beta-2.2.0 抢先体验版"
+			subtitle: "当前版本: Beta-2.2.0"
 			tasks: [{
 				id: "79D5B1959C780861"
 				type: "checkmark"
@@ -163,7 +163,7 @@
 				type: "checkmark"
 			}]
 			title: "CMI Dev Team"
-			x: 4.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -500,27 +500,29 @@
 				title: "致谢名单"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
 			description: [
-				"1.若聊天栏出现“&cKubeJS Errors Found [X] &r”字样,请按“控制面板”中的Reload按钮, 或者 输入命令“/reload”直到出现“&aReloaded with no KubeJS errors! ”"
+				"若聊天栏出现\"&cKubeJS Errors Found [X] &r\"字样,请按\"控制面板\"中的Reload按钮, 或者 输入命令\"/reload\"直到出现\"&aReloaded with no KubeJS errors! \""
 				"&8&o注:"
 				"&8&o(1)此操作会重载所有的配方,会造成短暂卡顿且需要较长的时间"
 				"&8&o(2)任何一个KubeJS Error都会影响全体配方"
-				""
-				"2.在存档内更换或开关光影可能导致客户端崩溃,请谨慎使用"
-				""
-				"3.“控制面板”页面可以找到&6Curseforge&r, &7Github&r和&c视频&r链接"
-				""
-				"4.添加资源包时, 请确保PackResourse置于最顶"
-				""
-				"5.纹理或模型资源错误时, 请尝试按 &e&lF3+T&r 重载"
-				"&8&o注:"
-				"&8&o这需要非常长的时间&r"
-				""
-				"6.思索中部分方块(矿石等)可能出现异常渲染, 此特性由矿石发光资源包产生, 属正常现象"
+				"{@pagebreak}"
+				"在存档内更换或开关光影可能导致客户端崩溃,请谨慎使用"
+				"{@pagebreak}"
+				"\"控制面板\"页面可以找到&6CurseForge&r, &7Github&r和&c视频&r链接"
+				"{@pagebreak}"
+				"添加资源包时, 请确保PackResourse置于最顶, 该资源包修改了整合包内需要的纹理, 模型等资源"
+				"{@pagebreak}"
+				"纹理或模型资源错误时, 请尝试按 &e&lF3+T&r 重载"
+				"{@pagebreak}"
+				"思索中部分方块(矿石等)可能出现异常渲染, 此特性由矿石发光资源包产生, 属正常现象"
+				"{@pagebreak}"
+				"因为不可控因素, 在服务器内可能会有部分问题:"
+				"    1. 工作台合成构件时匠魂的锤子会直接消失, 而在单人则会正常的消耗1耐久"
+				"    2. 多方块机器面板内没有翻译名称"
 			]
 			icon: "createdeco:decal_warning"
 			id: "511AD7F0E04213FC"
@@ -538,14 +540,14 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "这里是一些常见问题的解决方案"
+			subtitle: "这里是一些常见问题和解决方案"
 			tasks: [{
 				id: "6377990FF2529CEB"
 				title: "温馨提示"
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -4.0d
+			y: -2.0d
 		}
 	]
 	title: "开始"

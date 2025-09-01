@@ -2,22 +2,22 @@ ServerEvents.recipes((event) => {
 	let { create, vintageimprovements } = event.recipes
 
 	// 熔融安山合金
-	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
+	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 120), [
 		"minecraft:andesite",
 		Fluid.of("tconstruct:molten_iron", 10)
 	]).heatRequirement("grilled")
 
-	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
+	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 120), [
 		"minecraft:andesite",
 		Fluid.of("tconstruct:molten_zinc", 10)
 	]).heatRequirement("grilled")
 
-	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
+	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 120), [
 		"minecraft:andesite",
 		"#forge:nuggets/iron"
 	]).heatRequirement("grilled")
 
-	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
+	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 120), [
 		"minecraft:andesite",
 		"#forge:nuggets/zinc"
 	]).heatRequirement("grilled")
@@ -45,13 +45,13 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/salt"
 	])
 
-	// SiCl4
+	// 四氯化硅
 	vintageimprovements.pressurizing(Fluid.of("cmi:tetrachlorosilane", 500), [
 		Fluid.of("mekanism:chlorine", 500),
 		"#forge:silicon"
 	]).processingTime(200).superheated()
 
-	// C2H5OH
+	// 乙醇
 	create.mixing(Fluid.of("immersiveengineering:ethanol", 125), [
 		"minecraft:sugar",
 		"create:cinder_flour",

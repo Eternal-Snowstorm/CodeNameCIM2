@@ -88,6 +88,7 @@ ServerEvents.recipes((event) => {
 		B: "create:fluid_tank"
 	}).id("ratatouille:oven")
 
+	// 超级刀
 	create.filling("cmi:super_knife", [
 		"farmersdelight:netherite_knife",
 		Fluid.of("create_enchantment_industry:hyper_experience", 1000)
@@ -146,8 +147,8 @@ ServerEvents.recipes((event) => {
 		]),
 		create.deploying("createdieselgenerators:diesel_engine", [
 			"createdieselgenerators:diesel_engine", [
-				"#forge:plates/brass",
-				"#forge:ingots/brass"
+				"#forge:ingots/copper",
+				"#forge:plates/copper"
 			]
 		]),
 		create.cutting("createdieselgenerators:diesel_engine", [

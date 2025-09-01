@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { tconstruct, createdieselgenerators, create, mekanism } = event.recipes
+	let { tconstruct, createdieselgenerators, create } = event.recipes
 
 	// 蒸馏
 	createdieselgenerators.distillation([
@@ -121,13 +121,15 @@ ServerEvents.recipes((event) => {
 		"type": "immersiveindustry:chemical",
 		"input_fluids": [
 			{
-				"fluid": "cmi:bromine",
+				"tag": "cmi:bromine",
 				"amount": 500
 			}
 		],
 		"outputs": [
 			{
-				"item": "brominated_flame_retardants",
+				"base_ingredient": {
+					"item": "cmi:brominated_flame_retardants"
+				},
 				"count": 1
 			}
 		],

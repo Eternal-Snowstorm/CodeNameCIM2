@@ -1,7 +1,7 @@
 BlockEvents.rightClicked((event) => {
 	let { block: { x, y, z }, player } = event
 
-	const ACCELERATOR = "cmi:the_accelerator_of_mechanism_power"
+	const ACCELERATOR = "cmi:accelerator"
 	const MECH = "cmi:coil_mechanism"
 
 	if (player.mainHandItem === MECH && block.id === ACCELERATOR) {

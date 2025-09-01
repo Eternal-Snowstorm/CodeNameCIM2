@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "tamp"
 	group: "050255AE19A93344"
-	icon: "cmi:the_accelerator_of_mechanism_power"
+	icon: "cmi:accelerator"
 	id: "057D31FCDB4D0CD8"
 	order_index: 6
 	quest_links: [ ]
@@ -25,7 +25,7 @@
 			subtitle: "无限矿石"
 			tasks: [{
 				id: "3F82E5BA2034F940"
-				item: "cmi:the_accelerator_of_mechanism_power"
+				item: "cmi:accelerator"
 				type: "item"
 			}]
 			x: 0.0d

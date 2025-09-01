@@ -44,6 +44,9 @@ ESM
 XaeroWaypoints*
 /oei
 replay*
+/servers*
+/mods*.zip
+/mods.zip
 
 # Mods
 /mods/*
@@ -96,3 +99,4 @@ replay*
 !/config/createaddition-common.toml
 !/config/lmft.json
 !/config/modernfix-mixins.properties
+!/config/steampowered-common.toml

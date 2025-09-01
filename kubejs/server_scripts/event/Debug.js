@@ -30,6 +30,20 @@ PlayerEvents.chat((event) => {
 			event.cancel()
 		}
 
+		// 重载JEI
+		let reloadJeiCommands = [
+			"kjs reload client_scripts",
+			"reload"
+		]
+		if (message.trim().equalsIgnoreCase("-rej") && player.username === global.debugUserName[i]) {
+			reloadJeiCommands.forEach((command) => {
+				player.runCommandSilent(command)
+			})
+			// Reloaded All Scripts!
+			player.tell(Component.translatable(`message.${global.namespace}.jei.reloaded`).green())
+			event.cancel()
+		}
+
 		// 重载(这个重载不能用于配方和Tags等数据包脚本)
 		let commandList = [
 			"client_scripts",
@@ -44,7 +58,7 @@ PlayerEvents.chat((event) => {
 				player.runCommandSilent(`kjs reload ${command}`)
 			})
 			// Reloaded All Scripts!
-			player.tell(Component.translatable(`message.${global.namespace}.reload`).green())
+			player.tell(Component.translatable(`message.${global.namespace}.reloaded`).green())
 			event.cancel()
 		}
 	}

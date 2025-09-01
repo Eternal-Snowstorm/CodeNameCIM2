@@ -3,8 +3,10 @@ StartupEvents.registry("block", (event) => {
 		return event.create(`${global.namespace}:${name}`)
 	}
 
-	addBlock("the_accelerator_of_mechanism_power")
+	addBlock("accelerator")
 		.soundType(SoundType.METAL)
+		.hardness(4)
+		.resistance(4)
 		.tagBlock(global.toolType["pickaxe"])
 		.tagBlock(global.miningLevel["wooden"])
 		.requiresTool(true)

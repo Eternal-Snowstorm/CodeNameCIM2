@@ -27,4 +27,7 @@ JEIEvents.hideItems((event) => {
 	hideItemFromJEI("deepdrilling:asurine_node")
 	hideItemFromJEI("deepdrilling:ochrum_node")
 	hideItemFromJEI("deepdrilling:veridium_node")
+	hideItemFromJEI("steampowered:alternator")
+	hideItemFromJEI("steampowered:pressurized_gas_container")
+	hideItemFromJEI("steampowered:pressurized_steam_container")
 })

@@ -234,6 +234,11 @@
 		{
 			dependencies: ["2B656B7972166C08"]
 			id: "3F4BF299239521B5"
+			rewards: [{
+				id: "4E99DF3D99AAD26B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "你会需要它们"
 			tasks: [
 				{

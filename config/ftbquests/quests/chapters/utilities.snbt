@@ -13,20 +13,259 @@
 	id: "4D96ACCE1356C17D"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		id: "714D1AC6D07BEEC0"
-		rewards: [{
-			id: "2655761D7F974CC2"
-			type: "xp"
-			xp: 10
-		}]
-		tasks: [{
-			id: "48D573EC7FE00A91"
-			title: "一些实用工具"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "714D1AC6D07BEEC0"
+			rewards: [{
+				id: "2655761D7F974CC2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "48D573EC7FE00A91"
+				title: "一些实用工具"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["建筑手杖是一种可以快速搭建方块的工具, 搭建冶炼炉或地板时可以发挥大用"]
+			hide_dependency_lines: true
+			id: "794382603730734B"
+			rewards: [
+				{
+					id: "64ED75CE47E67146"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "79AE46FA1AD74FED"
+					table_id: 9045507092957783316L
+					type: "choice"
+				}
+			]
+			subtitle: "不能拿来抡人"
+			tasks: [{
+				id: "442E57867A50ED37"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "constructionwand:wand"
+					}
+				}
+				title: "建筑手杖"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"输出升级可以往旁边相邻的容器方块内输出抽屉内的东西, 在物品栏内右键物品配置方向"
+				""
+				"输出升级可以从旁边相邻的容器方块内抽取东西到抽屉内, 在物品栏内右键物品配置方向"
+				""
+				"流体抽屉搭配这俩升级前期可以很方便的取代管道和动力泵, 如下图所示, 就是很简单的将流体传输到右上方的储罐内"
+				"{image:cmi:textures/images/io_upgrade.png width:192 height:108 align:center}"
+			]
+			hide_dependency_lines: true
+			id: "21185FDCCEDBFDC8"
+			rewards: [
+				{
+					id: "3D4CB92AB062A95D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E89B3FCD80460D6"
+					table_id: 708571964512047621L
+					type: "choice"
+				}
+			]
+			subtitle: "短距离传输最好用的东西"
+			tasks: [
+				{
+					id: "13B8113F0054C365"
+					item: "functionalstorage:puller_upgrade"
+					type: "item"
+				}
+				{
+					id: "16C5CC3C6B5D631A"
+					item: "functionalstorage:pusher_upgrade"
+					type: "item"
+				}
+			]
+			title: "传输升级"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["生铁降级可以降低抽屉的存储上限, 在超短距离分流能起到一定用处"]
+			hide_dependency_lines: true
+			id: "48FF030A13CEF66D"
+			rewards: [
+				{
+					id: "175562A991B7D87B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "22D0AA1B4C1008F6"
+					item: "tconstruct:pig_iron_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "这个不可以吃"
+			tasks: [{
+				id: "16474AE01A0452B5"
+				item: "functionalstorage:iron_downgrade"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"抽屉可以大量存储限定的一种或几种物品, 但是存储几种意味着存储上限会降低"
+				""
+				"同时还有流体抽屉, 压缩抽屉和末影抽屉等好用的抽屉"
+			]
+			id: "4CCF561EE0B2C3A6"
+			rewards: [
+				{
+					id: "21FE937F4DD74A9E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "1C0A3CAB47B3DFB6"
+					item: "functionalstorage:copper_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "存储的好手段"
+			tasks: [{
+				id: "50F32AC335DB631E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "抽屉"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"配置工具可以将某个抽屉上锁, 上锁后的抽屉只会接受标记过的物品或流体"
+				"合理利用配置工具可以省下不少黄铜"
+				"并且配置工具没有耐久, 只要做一个就可以用到毕业"
+			]
+			hide_dependency_lines: true
+			id: "645BA6E93229CA27"
+			rewards: [
+				{
+					id: "188377787CFE9304"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "7707E934906B6AEC"
+					item: "functionalstorage:copper_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "没有黄铜时的过滤神器"
+			tasks: [{
+				id: "4DCE9FB6C29C2B4A"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["连接工具需要和存储控制器搭配使用, 和存储控制器连接过的抽屉可以在控制器中查看并调用"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "functionalstorage:linking_tool"
+				tag: { }
+			}
+			id: "515D545E66315AF9"
+			rewards: [
+				{
+					id: "0165C2212CAAC5E3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "740D6D6B75B3A98A"
+					item: "functionalstorage:copper_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "一种传输方式"
+			tasks: [
+				{
+					id: "5DF7A2EB2EB12702"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0022C564D0D9E999"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["虚空升级可以让抽屉内的物品超过存储上限后输入进去的物品或流体自动销毁, 在处理极大产量的产线时尤为重要"]
+			hide_dependency_lines: true
+			id: "04D94D6A19BFCAD5"
+			rewards: [
+				{
+					id: "30C8910AB46543E6"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 8
+					id: "3C6D28DF35F59A36"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+			]
+			subtitle: "妈妈再也不怕我产能过剩了"
+			tasks: [{
+				id: "380D891EA57D8A79"
+				item: "functionalstorage:void_upgrade"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+	]
 	title: "实用工具(WIP)"
 }

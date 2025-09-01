@@ -31,6 +31,9 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("forge:oil")
 		.add("#forge:crude_oil")
 
+	event.get("cmi:bromine")
+		.add("cmi:bromine")
+
 	event.get("forge:brine")
 		.add("cmi:nacl_solution")
 

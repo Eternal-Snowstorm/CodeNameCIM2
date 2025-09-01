@@ -1,4 +1,4 @@
-BlockEvents.rightClicked("cmi:the_accelerator_of_mechanism_power", (event) => {
+BlockEvents.rightClicked("cmi:accelerator", (event) => {
 	if (event.hand === "OFF_HAND") {
 		return
 	}

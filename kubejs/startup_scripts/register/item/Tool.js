@@ -61,6 +61,7 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/tool/steel_faucet`)
 		.maxDamage(4096)
 		.unstackable()
+		.tag("cmi:faucet")
 		.tag("forge:tools")
 
 	// TODO: NEED TEXTURE

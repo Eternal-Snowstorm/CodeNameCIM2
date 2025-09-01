@@ -65,7 +65,8 @@ ServerEvents.recipes((event) => {
 		"tconstruct:compat/create/andesite_alloy_zinc",
 		"tconstruct:compat/create/andesite_alloy_iron",
 		"tconstruct:compat/create/andesite_alloy_zinc",
-		"ad_astra:coal_generator"
+		"ad_astra:coal_generator",
+		"createaddition:crafting/capacitor_1"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -126,7 +127,14 @@ ServerEvents.recipes((event) => {
 		"ad_astra:tier_1_rocket",
 		"ad_astra:tier_2_rocket",
 		"ad_astra:tier_3_rocket",
-		"ad_astra:tier_4_rocket"
+		"ad_astra:tier_4_rocket",
+		"steampowered:alternator",
+		"steampowered:pressurized_gas_container",
+		"steampowered:pressurized_steam_container",
+		"mekanism:tier_installer/basic",
+		"mekanism:tier_installer/advanced",
+		"mekanism:tier_installer/elite",
+		"mekanism:tier_installer/ultimate"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({

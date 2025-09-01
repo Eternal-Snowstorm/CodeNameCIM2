@@ -11,7 +11,8 @@
 	"jade.theme.cmi.windows_xp_luna": "Windows XP Luna",
 	"jade.theme.cmi.windows10": "Windows 10",
 	"tooltip.cmi.41dirt": "按下Alt + F4可以获得创造模式能量立方!",
-	"message.cmi.reload": "已重载全部脚本!",
+	"message.cmi.reloaded": "已重载全部脚本!",
+	"message.cmi.jei.reloaded": "已重载JEI!",
 	"message.cmi.41msg": "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息",
 	"itemGroup.cmi.io_block": "配置面方块(调试用)",
 	"itemGroup.cmi.all": "机械动力: 构件与革新",
@@ -34,7 +35,7 @@
 	"create.recipe.heat_requirement.grilled": "炙烤",
 	"create.cmi.recipe.tip.fire": "木炭块和煤炭块上方的火焰可以无限燃烧",
 	"message.cmi.welcome": "欢迎%s来到CMI!",
-	"gui.cmi.handheld_crafting_table": "手持工作台",
+	"recipe.jei.recipeType.cmi.accelerator": "构件催生",
 	"item.cmi.paxel.description": "镐尖斧是一种多功能采掘工具, 适用于挖掘各种方块, 但对岩石和木头效果最好\n村民肯定不喜欢这个",
 	"message.cmi.modrinth_warning0": "你正在游玩从Modrinth渠道下载的CMI",
 	"message.cmi.modrinth_warning1": "因Modrinth的政策限制, 本版本删除了部分内容, 可能造成如无法多人游戏、无法进入服务器等问题\n您可以通过下方按钮在CurseForge或BBSMC下载本整合包游玩完整内容"

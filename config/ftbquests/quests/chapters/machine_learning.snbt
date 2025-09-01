@@ -213,6 +213,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["7FF0C3B318313C79"]
 			icon: "thermal:rubber"
 			id: "3DA43BDED8E5ECDC"
 			rewards: [{
@@ -231,20 +232,22 @@
 					id: "7F66AA0513CAD480"
 					item: {
 						Count: 1
-						id: "cmi:wooden_faucet"
+						id: "itemfilters:tag"
 						tag: {
-							Damage: 0
+							value: "cmi:faucet"
 						}
 					}
 					optional_task: true
+					title: "龙头"
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 2.0d
+			x: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3A8E9AE06B88D05E"]
+			description: ["{image:cmi:textures/images/faucet_interaction.png width:180 height:105 align:center}"]
 			id: "06FF6D3CAD3DCD8D"
 			rewards: [{
 				id: "395434D455DB3965"
@@ -353,7 +356,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
@@ -528,8 +531,9 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "411144C16B9979EB"
-				type: "checkmark"
+				id: "14606E1AA45641CA"
+				item: "cmi:cured_rubber_bucket"
+				type: "item"
 			}]
 			title: "熔融硫化橡胶"
 			x: 3.5d
@@ -617,7 +621,7 @@
 					type: "item"
 				}
 			]
-			shape: "diamond"
+			shape: "circle"
 			size: 2.0d
 			subtitle: "您才是真正的水车仙人!"
 			tasks: [{
@@ -676,6 +680,44 @@
 			]
 			x: 1.5d
 			y: 6.0d
+		}
+		{
+			description: [
+				"橡胶树会在大部分森林生物群系生成, 但是黑森林和云杉林等群系似乎没有, 我更推荐去制作一个群系指南针去橡树树林或白桦林一带去寻找"
+				""
+				"&c&l一定要把树苗带回家!!!&r&r"
+			]
+			icon: "thermal:rubberwood_log"
+			id: "7FF0C3B318313C79"
+			rewards: [{
+				id: "003312AE2862308A"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "应该不难找"
+			tasks: [
+				{
+					icon: "thermal:rubberwood_log"
+					id: "4D0575D145D1EAA3"
+					observe_type: 0
+					timer: 0L
+					title: "橡胶树"
+					to_observe: "thermal:rubberwood_log"
+					type: "observation"
+				}
+				{
+					id: "4D30507921F73CBB"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.0d
 		}
 	]
 	title: "学习机械"
