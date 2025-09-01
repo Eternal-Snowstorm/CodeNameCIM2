@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs, thermal} = event.recipes
+	let { create, kubejs, thermal } = event.recipes
 
 	const ANDESITE_MECH = "cmi:andesite_mechanism"
 	const COPPER_MECH = "cmi:copper_mechanism"
@@ -452,9 +452,29 @@ ServerEvents.recipes((event) => {
 		C: "#forge:dusts/soul_infused"
 	})
 
-	//存在问题
-	thermal.tree_extractor(Fluid.of("thermal:latex",200),[
-		"thermal:rubberwood_log",
-		"thermal:rubberwood_leaves"
-	]).id("thermal:devices/tree_extractor/tree_extractor_rubberwood")
+	// 存在问题
+	event.custom({
+		"type": "thermal:tree_extractor",
+		"trunk": {
+			"Name": "thermal:rubberwood_log",
+			"Properties": {
+				"axis": "y"
+			}
+		},
+		"leaves": {
+			"Name": "thermal:rubberwood_leaves",
+			"Properties": {
+				"persistent": "false"
+			}
+		},
+		"sapling": "thermal:rubberwood_sapling",
+		"min_height": 4,
+		"max_height": 16,
+		"min_leaves": 16,
+		"max_leaves": 24,
+		"result": {
+			"fluid": "thermal:latex",
+			"amount": 200
+		}
+	}).id("thermal:devices/tree_extractor/tree_extractor_rubberwood")
 })
