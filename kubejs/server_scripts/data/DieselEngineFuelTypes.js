@@ -1,5 +1,6 @@
 ServerEvents.highPriorityData((event) => {
 
+
 	// 植物油
 	addDieselEngineFuelType("#forge:plantoil", 1)
 		.normal(32, 16384, 1)
@@ -26,9 +27,9 @@ ServerEvents.highPriorityData((event) => {
 
 	// 柴油
 	addDieselEngineFuelType("#forge:diesel", 1)
-		.normal(128, 24576, 1)
-		.modular(128, 49152, 1)
-		.huge(256, 98304, 1)
+		.normal(128, 20480, 1)
+		.modular(128, 40960, 1)
+		.huge(128, 81920, 1)
 
 	function addDieselEngineFuelType(name, speed) {
 		let getFluidName = name.indexOf(":") !== -1 ? name.split(":")[1] : name
@@ -42,7 +43,7 @@ ServerEvents.highPriorityData((event) => {
 		}
 
 		function save() {
-			event.addJson(`${global.namespace}:diesel_engine_fuel_types/${getFluidName}.json`, data)
+			event.addJson(`createdieselgenerators:diesel_engine_fuel_types/${getFluidName}.json`, data)
 		}
 
 		return {
