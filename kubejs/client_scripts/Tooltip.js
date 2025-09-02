@@ -130,7 +130,7 @@ ItemEvents.tooltip((event) => {
 		})
 
 	// 电池
-	event.add("cmi:simple_battery",
+	event.addAdvanced("cmi:simple_battery",
 		(stack, advanced, tooltip) => {
 			let stored = stack.nbt?.energy || 0
 			let max = 10000
