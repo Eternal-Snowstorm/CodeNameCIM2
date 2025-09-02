@@ -60,6 +60,24 @@ StartupEvents.registry("item", (event) => {
 				return
 			}
 
+			if (type === "dirty") {
+				let dirtyItemModel = {
+					"parent": "minecraft:item/generated",
+					"textures": {
+						"layer0": "cmi:item/material/color/layer/dirty/0",
+						"layer1": "cmi:item/material/color/layer/dirty/1"
+					}
+				}
+
+				event.create(`${global.namespace}:${material.name}_${type}`)
+					.texture(`${global.namespace}:item/material/color/${type}`)
+					.modelJson(dirtyItemModel)
+					.color(0, material.color)
+					.tag(`${global.namespace}:metals`)
+					.tag(`forge:${type}s`)
+					.tag(`forge:${type}s/${material.name}`)
+			}
+
 			event.create(`${global.namespace}:${material.name}_${type}`)
 				.texture(`${global.namespace}:item/material/color/${type}`)
 				.color(0, material.color)
