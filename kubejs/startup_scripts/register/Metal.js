@@ -92,8 +92,10 @@ StartupEvents.registry("item", (event) => {
 				}
 			}
 
-			if (type === "block" || type === "molten"
-				|| type === "dirty_slurry" || type === "slurry") {
+			if (type === "block"
+				|| type === "molten"
+				|| type === "dirty_slurry"
+				|| type === "slurry") {
 				return
 			}
 
@@ -108,13 +110,13 @@ StartupEvents.registry("item", (event) => {
 				return
 			}
 
-			if(type === "clump" || type === "shard" || type === "crystal") {
+			if (type === "clump" || type === "shard" || type === "crystal") {
 				event.create(`${global.namespace}:${material.name}_${type}`)
-				.texture(`${global.namespace}:item/material/color/${type}`)
-				.color(0, material.color)
-				.tag(`${global.namespace}:metals`)
-				.tag(`mekanism:${type}s`)
-				.tag(`mekanism:${type}s/${material.name}`)
+					.texture(`${global.namespace}:item/material/color/${type}`)
+					.color(0, material.color)
+					.tag(`${global.namespace}:metals`)
+					.tag(`mekanism:${type}s`)
+					.tag(`mekanism:${type}s/${material.name}`)
 				return
 			}
 

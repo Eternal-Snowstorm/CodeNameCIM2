@@ -1,261 +1,85 @@
 CreateEvents.spoutHandler((event) => {
-	const WATER = "cmi:crystal_catalyt"
+	const FLUID = "cmi:crystal_catalyt"
 
-	event.add("cmi:amethyst_spawn", "minecraft:budding_amethyst", (block, fluid, simulate) => {
-		for (let d of ["up", "north", "west", "south", "east", "down"]) {
-			if (block[d].id === "minecraft:air") {
-				if (fluid.id === WATER && fluid.amount >= 250) {
-					if (!simulate) {
-						block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-						block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-						block.level.server.runCommandSilent(`setblock ${block[d].x} ${block[d].y} ${block[d].z} minecraft:small_amethyst_bud[facing=${d}]`)
-					}
-					return 250
+	/**
+	 * 注册晶簇成长逻辑
+	 * @param {string} id 注册ID
+	 * @param {string} blockId 当前方块
+	 * @param {string} nextId 下个阶段方块
+	 * @param {boolean} [checkAir=false] 是否需要检查空气生成(仅 budding 用)
+	 */
+	function addBudGrowth(id, blockId, nextId, checkAir) {
+		checkAir = checkAir === true
+
+		event.add(id, blockId, (
+			block,
+			fluid,
+			simulate
+		) => {
+			if (fluid.id !== FLUID || fluid.amount < 250) {
+				return 0
+			}
+
+			if (!simulate) {
+				let facing = block.properties.facing
+
+				block.level.server.runCommandSilent(
+					`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`
+				)
+				block.level.server.runCommandSilent(
+					`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`
+				)
+
+				if (checkAir) {
+					let dirs = ["up", "north", "west", "south", "east", "down"]
+					let placed = false
+					dirs.forEach((d) => {
+						if (!placed && block[d].id === "minecraft:air") {
+							block.level.server.runCommandSilent(
+								`setblock ${block[d].x} ${block[d].y} ${block[d].z} ${nextId}[facing=${d}]`
+							)
+							placed = true
+						}
+					})
+				} else {
+					block.level.server.runCommandSilent(
+						`setblock ${block.x} ${block.y} ${block.z} ${nextId}[facing=${facing}]`
+					)
 				}
-				break
-			}
-		}
-		return 0
-	})
-
-	event.add("cmi:small_amethyst_bud", "minecraft:small_amethyst_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} minecraft:medium_amethyst_bud[facing=${f}]`)
 			}
 			return 250
-		}
-		return 0
-	})
+		})
+	}
 
-	event.add("cmi:medium_amethyst_bud", "minecraft:medium_amethyst_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} minecraft:large_amethyst_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:large_amethyst_bud", "minecraft:large_amethyst_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} minecraft:amethyst_cluster[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
+	// 紫水晶
+	addBudGrowth("cmi:amethyst_spawn", "minecraft:budding_amethyst", "minecraft:small_amethyst_bud", true)
+	addBudGrowth("cmi:small_amethyst_bud", "minecraft:small_amethyst_bud", "minecraft:medium_amethyst_bud")
+	addBudGrowth("cmi:medium_amethyst_bud", "minecraft:medium_amethyst_bud", "minecraft:large_amethyst_bud")
+	addBudGrowth("cmi:large_amethyst_bud", "minecraft:large_amethyst_bud", "minecraft:amethyst_cluster")
 
 	// 赛特斯石英
-	event.add("cmi:small_certus_bud", "ae2:small_quartz_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} ae2:medium_quartz_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:medium_certus_bud", "ae2:medium_quartz_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} ae2:large_quartz_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:large_certus_bud", "ae2:large_quartz_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} ae2:quartz_cluster[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
+	addBudGrowth("cmi:small_certus_bud", "ae2:small_quartz_bud", "ae2:medium_quartz_bud")
+	addBudGrowth("cmi:medium_certus_bud", "ae2:medium_quartz_bud", "ae2:large_quartz_bud")
+	addBudGrowth("cmi:large_certus_bud", "ae2:large_quartz_bud", "ae2:quartz_cluster")
 
 	// 大地粘液
-	event.add("cmi:small_earth_bud", "tconstruct:small_earth_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:medium_earth_slime_crystal_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:medium_earth_bud", "tconstruct:medium_earth_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:large_earth_slime_crystal_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:large_earth_bud", "tconstruct:large_earth_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:earth_slime_crystal_cluster[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
+	addBudGrowth("cmi:small_earth_bud", "tconstruct:small_earth_slime_crystal_bud", "tconstruct:medium_earth_slime_crystal_bud")
+	addBudGrowth("cmi:medium_earth_bud", "tconstruct:medium_earth_slime_crystal_bud", "tconstruct:large_earth_slime_crystal_bud")
+	addBudGrowth("cmi:large_earth_bud", "tconstruct:large_earth_slime_crystal_bud", "tconstruct:earth_slime_crystal_cluster")
 
 	// 碧空粘液
-	event.add("cmi:small_sky_bud", "tconstruct:small_sky_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:medium_sky_slime_crystal_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:medium_sky_bud", "tconstruct:medium_sky_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:large_sky_slime_crystal_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:large_sky_bud", "tconstruct:large_sky_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:sky_slime_crystal_cluster[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
+	addBudGrowth("cmi:small_sky_bud", "tconstruct:small_sky_slime_crystal_bud", "tconstruct:medium_sky_slime_crystal_bud")
+	addBudGrowth("cmi:medium_sky_bud", "tconstruct:medium_sky_slime_crystal_bud", "tconstruct:large_sky_slime_crystal_bud")
+	addBudGrowth("cmi:large_sky_bud", "tconstruct:large_sky_slime_crystal_bud", "tconstruct:sky_slime_crystal_cluster")
 
 	// 灵浆粘液
-	event.add("cmi:small_ichor_bud", "tconstruct:small_ichor_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:medium_ichor_slime_crystal_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:medium_ichor_bud", "tconstruct:medium_ichor_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:large_ichor_slime_crystal_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:large_ichor_bud", "tconstruct:large_ichor_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:ichor_slime_crystal_cluster[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
+	addBudGrowth("cmi:small_ichor_bud", "tconstruct:small_ichor_slime_crystal_bud", "tconstruct:medium_ichor_slime_crystal_bud")
+	addBudGrowth("cmi:medium_ichor_bud", "tconstruct:medium_ichor_slime_crystal_bud", "tconstruct:large_ichor_slime_crystal_bud")
+	addBudGrowth("cmi:large_ichor_bud", "tconstruct:large_ichor_slime_crystal_bud", "tconstruct:ichor_slime_crystal_cluster")
 
 	// 末影粘液
-	event.add("cmi:small_ender_bud", "tconstruct:small_ender_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:medium_ender_slime_crystal_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:medium_ender_bud", "tconstruct:medium_ender_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:large_ender_slime_crystal_bud[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
-	event.add("cmi:large_ender_bud", "tconstruct:large_ender_slime_crystal_bud", (block, fluid, simulate) => {
-		if (fluid.id === WATER && fluid.amount >= 250) {
-			if (!simulate) {
-				let f = block.properties.facing
-				block.level.server.runCommandSilent(`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`)
-				block.level.server.runCommandSilent(`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`)
-				block.level.server.runCommandSilent(`setblock ${block.x} ${block.y} ${block.z} tconstruct:ender_slime_crystal_cluster[facing=${f}]`)
-			}
-			return 250
-		}
-		return 0
-	})
-
+	addBudGrowth("cmi:small_ender_bud", "tconstruct:small_ender_slime_crystal_bud", "tconstruct:medium_ender_slime_crystal_bud")
+	addBudGrowth("cmi:medium_ender_bud", "tconstruct:medium_ender_slime_crystal_bud", "tconstruct:large_ender_slime_crystal_bud")
+	addBudGrowth("cmi:large_ender_bud", "tconstruct:large_ender_slime_crystal_bud", "tconstruct:ender_slime_crystal_cluster")
 })
 // By 史莱姆li
