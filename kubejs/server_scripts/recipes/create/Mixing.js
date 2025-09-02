@@ -57,4 +57,11 @@ ServerEvents.recipes((event) => {
 		"create:cinder_flour",
 		"2x #forge:fuels/bio"
 	]).id("createaddition:mixing/bioethanol")
+
+	// 晶体催生剂
+	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
+		Fluid.of("immersiveengineering:redstone_acid", 500),
+		"#cmi:crystals",
+		"32x #forge:crops"
+	])
 })

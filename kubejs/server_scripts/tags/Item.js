@@ -338,6 +338,17 @@ ServerEvents.tags("item", (event) => {
 		.add("ratatouille:salt")
 		.add("cmi:nacl")
 
+	// 催生晶体
+	event.get("cmi:crystals")
+		.add("minecraft:amethyst_shard")
+		.add("minecraft:quartz")
+		.add("ae2:certus_quartz_crystal")
+		.add("tconstruct:earth_slime_crystal")
+		.add("tconstruct:sky_slime_crystal")
+		.add("tconstruct:ichor_slime_crystal")
+		.add("tconstruct:ender_slime_crystal")
+
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
