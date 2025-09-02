@@ -91,41 +91,41 @@ ItemEvents.tooltip((event) => {
 	}
 
 	function addAccelerateTooltip(item) {
-		event.addAdvanced(item, (item, advanced, text) => {
+		event.addAdvanced(item, (item, advanced, tooltip) => {
 			if (event.shift) {
 				let lines = Component.translatable(`tooltip.${item.getId()}.accelerate`.replace(":", "."))
 					.string.split("\n")
 				lines.forEach((line) => {
-					text.add(line)
+					tooltip.add(line)
 				})
 			} else {
-				text.add(Component.translatable(`tooltip.${global.namespace}.acceleratable`))
+				tooltip.add(Component.translatable(`tooltip.${global.namespace}.acceleratable`))
 			}
 		})
 	}
 
 	// 地质锤的tooltip
 	event.addAdvanced("cmi:geological_hammer",
-		(item, advanced, text) => {
+		(item, advanced, tooltip) => {
 			if (global.isDeveloper) {
-				text.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer1"))
-				text.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer2"))
+				tooltip.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer1"))
+				tooltip.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer2"))
 			} else {
-				text.add(Component.translatable("tooltip.cmi.geographycal_hammer.not_developer"))
+				tooltip.add(Component.translatable("tooltip.cmi.geographycal_hammer.not_developer"))
 			}
 		})
 
 	// 初始套件的Tooltip
 	event.addAdvanced("cmi:initial_item_kit",
-		(item, advanced, text) => {
+		(item, advanced, tooltip) => {
 			if (event.shift) {
 				let lines = Component.translatable("tooltip.cmi.initial_item_kit.shift")
 					.string.split("\n")
 				lines.forEach((line) => {
-					text.add(line)
+					tooltip.add(line)
 				})
 			} else {
-				text.add(Component.translatable("tooltip.cmi.initial_item_kit.tip"))
+				tooltip.add(Component.translatable("tooltip.cmi.initial_item_kit.tip"))
 			}
 		})
 
