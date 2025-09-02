@@ -56,22 +56,26 @@ function addMaterial(name, color, level) {
 StartupEvents.registry("item", (event) => {
 	materials.forEach((material) => {
 		material.types.forEach((type) => {
+			let MetalTypeModels = {
+				dirty: function () {
+					return {
+						"parent": "minecraft:item/generated",
+						"textures": {
+							"layer0": "cmi:item/material/color/layer/dirty/0",
+							"layer1": "cmi:item/material/color/layer/dirty/1"
+						}
+					}
+				}
+			}
+
 			if (type === "block" || type === "molten") {
 				return
 			}
 
 			if (type === "dirty") {
-				let dirtyItemModel = {
-					"parent": "minecraft:item/generated",
-					"textures": {
-						"layer0": "cmi:item/material/color/layer/dirty/0",
-						"layer1": "cmi:item/material/color/layer/dirty/1"
-					}
-				}
-
 				event.create(`${global.namespace}:${material.name}_${type}`)
 					.texture(`${global.namespace}:item/material/color/${type}`)
-					.modelJson(dirtyItemModel)
+					.modelJson(MetalTypeModels.dirty())
 					.color(0, material.color)
 					.tag(`${global.namespace}:metals`)
 					.tag(`forge:${type}s`)
