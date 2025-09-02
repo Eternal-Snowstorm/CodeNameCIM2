@@ -29,7 +29,7 @@ ServerEvents.highPriorityData((event) => {
 	addDieselEngineFuelType("#forge:diesel", 1)
 		.normal(128, 24576, 1)
 		.modular(128, 49152, 1)
-		.huge(256, 98304, 1)
+		.huge(128, 98304, 1)
 
 	function addDieselEngineFuelType(name, speed) {
 		let getFluidName = name.indexOf(":") !== -1 ? name.split(":")[1] : name
