@@ -1,5 +1,6 @@
 ServerEvents.highPriorityData((event) => {
 
+
 	// 植物油
 	addDieselEngineFuelType("#forge:plantoil", 1)
 		.normal(32, 16384, 1)
@@ -42,7 +43,7 @@ ServerEvents.highPriorityData((event) => {
 		}
 
 		function save() {
-			event.addJson(`${global.namespace}:diesel_engine_fuel_types/${getFluidName}.json`, data)
+			event.addJson(`createdieselgenerators:diesel_engine_fuel_types/${getFluidName}.json`, data)
 		}
 
 		return {
