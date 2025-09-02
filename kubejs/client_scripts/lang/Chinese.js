@@ -82,6 +82,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("stable_element", "稳定元素")
 	addItemLanguage("explosive_element", "爆鸣元素")
 
+	addItemLanguage("trinitrotoluene", "三硝基甲苯")
+	addItemLanguage("nitrocellulose", "硝化纤维")
+
 	addCastItemLanguage("mechanism", "构件")
 	addCastItemLanguage("nugget", "粒")
 
@@ -109,6 +112,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("hydrochloric_acid", "盐酸")
 	addFluidLanguage("sulfric_diesel", "含硫柴油")
 	addFluidLanguage("benzene", "苯")
+	addFluidLanguage("fatty_acid", "脂肪酸")
+	addFluidLanguage("glycerin", "甘油")
+	addFluidLanguage("nitric_acid", "硝酸")
+	addFluidLanguage("trinitrotoluene_solution", "三硝基甲苯溶液")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
@@ -172,6 +179,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMechanismPartLanguage("space", "太空")
 
 	addGasLanguage("sulfide_gas_mixture", "硫化物混合气")
+	addGasLanguage("nitroglycerine", "硝化甘油")
 
 	addSolutionLanguage("feso4", "硫酸亚铁", "FeSO₄")
 	addSolutionLanguage("fecl2", "氯化亚铁", "FeCl₂")
