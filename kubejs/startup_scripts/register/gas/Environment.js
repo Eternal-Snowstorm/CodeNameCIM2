@@ -8,4 +8,5 @@ StartupEvents.registry("mekanism:gas", (event) => {
 	}
 
 	addMekanismGas("sulfide_gas_mixture", 0xB22222)
+	addMekanismGas("nitroglycerine", 0xFFFBD3)
 })

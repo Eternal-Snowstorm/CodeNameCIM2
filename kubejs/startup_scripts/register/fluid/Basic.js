@@ -32,6 +32,10 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("tetrachlorosilane", 0xDDFF6E)
 	addColorFluid("sulfric_diesel", 0xFFDA69)
 	addColorFluid("benzene", 0xFFF4AD)
+	addColorFluid("fatty_acid", 0xFFFE9B)
+	addColorFluid("glycerin", 0xFFFCB8)
+	addColorFluid("nitric_acid", 0xD6B000)
+	addColorFluid("trinitrotoluene_solution", 0xFFEFA8)
 
 	addAloneFluid("oil_shale_steam")
 		.noBlock()

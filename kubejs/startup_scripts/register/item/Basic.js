@@ -200,4 +200,12 @@ StartupEvents.registry("item", (event) => {
 	// Mg(OH)2
 	addItem("flame_retardant_plastic")
 		.texture(`${global.namespace}:item/material/flame_retardant_plastic`)
+
+	// 三硝基甲苯
+	addItem("trinitrotoluene")
+		.texture(`${global.namespace}:item/material/dynamite/trinitrotoluene`)
+
+	// 硝化纤维
+	addItem("nitrocellulose")
+		.texture(`${global.namespace}:item/material/dynamite/nitrocellulose`)
 })
