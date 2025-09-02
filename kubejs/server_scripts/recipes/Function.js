@@ -40,6 +40,9 @@ let IngredientUtils = {
 			gas: gas,
 			amount: amount
 		}
+	},
+	isNotNull: function (tag) {
+		return Ingredient.of(tag).getItemIds().length > 0
 	}
 }
 
