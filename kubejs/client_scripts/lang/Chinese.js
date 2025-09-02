@@ -266,6 +266,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	}
 	addPaintingLanguage("bug_is_right", "有Bug是对的", "古镇天")
 	addPaintingLanguage("it_must_be_optifine", "一定是OptiFine干的", "XeKr")
+	addPaintingLanguage("random_mechanism_old", "随机构件(旧版)", "随机构件")
 	addPaintingLanguage("random_mechanism", "随机构件", "随机构件")
 	addPaintingLanguage("qi_month", "榛名柒月", "榛名柒月")
 	addPaintingLanguage("sacabamBaspis", "萨卡班甲鱼", "⑨Dropper_QWQ⑨")

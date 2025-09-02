@@ -46,6 +46,30 @@ function addMaterial(name, color, level) {
 		molten: function () {
 			this.types.push("molten")
 			return this
+		},
+		dirty: function () {
+			this.types.push("dirty")
+			return this
+		},
+		clump: function () {
+			this.types.push("clump")
+			return this
+		},
+		shard: function () {
+			this.types.push("shard")
+			return this
+		},
+		crystal: function () {
+			this.types.push("crystal")
+			return this
+		},
+		dirty_slurry: function () {
+			this.types.push("dirty_slurry")
+			return this
+		},
+		slurry: function () {
+			this.types.push("slurry")
+			return this
 		}
 	}
 
@@ -68,7 +92,8 @@ StartupEvents.registry("item", (event) => {
 				}
 			}
 
-			if (type === "block" || type === "molten") {
+			if (type === "block" || type === "molten"
+				|| type === "dirty_slurry" || type === "slurry") {
 				return
 			}
 
@@ -78,8 +103,19 @@ StartupEvents.registry("item", (event) => {
 					.modelJson(MetalTypeModels.dirty())
 					.color(0, material.color)
 					.tag(`${global.namespace}:metals`)
-					.tag(`forge:${type}s`)
-					.tag(`forge:${type}s/${material.name}`)
+					.tag(`mekanism:dirty_dusts`)
+					.tag(`mekanism:dirty_dusts/${material.name}`)
+				return
+			}
+
+			if(type === "clump" || type === "shard" || type === "crystal") {
+				event.create(`${global.namespace}:${material.name}_${type}`)
+				.texture(`${global.namespace}:item/material/color/${type}`)
+				.color(0, material.color)
+				.tag(`${global.namespace}:metals`)
+				.tag(`mekanism:${type}s`)
+				.tag(`mekanism:${type}s/${material.name}`)
+				return
 			}
 
 			event.create(`${global.namespace}:${material.name}_${type}`)
@@ -139,6 +175,26 @@ StartupEvents.registry("fluid", (event) => {
 		})
 	})
 	console.log("Fluid已注册完毕!")
+})
+StartupEvents.registry("mekanism:slurry", (event) => {
+	materials.forEach((material) => {
+		material.types.forEach((type) => {
+			if (type === "dirty_slurry") {
+				event.create(`${global.namespace}:${material.name}_dirty_slurry`)
+					.texture(`${global.namespace}:item/material/color/${type}`)
+					.color(material.color)
+					.tag("mekanism:dirty")
+					.tag(`mekanism:dirty/${material.name}`)
+			}
+			if (type === "slurry") {
+				event.create(`${global.namespace}:${material.name}_slurry`)
+					.texture(`${global.namespace}:item/material/color/${type}`)
+					.color(material.color)
+					.tag("mekanism:clean/")
+					.tag(`mekanism:clean/${material.name}`)
+			}
+		})
+	})
 })
 
 // 安山合金

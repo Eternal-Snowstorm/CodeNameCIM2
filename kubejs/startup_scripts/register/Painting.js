@@ -21,6 +21,7 @@ StartupEvents.registry("painting_variant", (event) => {
 	addPainting("it_must_be_optifine", 16, 32)
 
 	// RandomMechanism(随机构件)
+	addPainting("random_mechanism_old", 32, 32)
 	addPainting("random_mechanism", 32, 32)
 
 	// 柒
