@@ -28,6 +28,14 @@ ServerEvents.recipes((event) => {
 		.energy(4000)
 		.id("thermal_extra:machine/advanced_refinery/light_oil")
 
+	// 三硝基甲苯提纯
+	thermal_extra.advanced_refinery([
+		"4x cmi:trinitrotoluene",
+		Fluid.of("cmi:benzene", 150),
+		Fluid.of("cmi:nitric_acid", 20)
+	], Fluid.of("cmi:trinitrotoluene_solution", 1000))
+		.energy(8000)
+
 	//柴油压缩炉统一
-	thermal.compression_fuel("createdieselgenerators:diesel",2000000)
+	thermal.compression_fuel("createdieselgenerators:diesel", 2000000)
 })

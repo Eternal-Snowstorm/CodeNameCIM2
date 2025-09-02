@@ -37,6 +37,7 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("nitric_acid", 0xD6B000)
 	addColorFluid("trinitrotoluene_solution", 0xFFEFA8)
 	addColorFluid("crystal_catalyt", 0x90EE90)
+	addColorFluid("fluid_nitroglycerine", 0xFFFBD3)
 
 	addAloneFluid("oil_shale_steam")
 		.noBlock()

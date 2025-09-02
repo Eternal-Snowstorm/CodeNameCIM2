@@ -16,10 +16,6 @@ ServerEvents.recipes((event) => {
 		"znso4",
 		"alcl3",
 		"al2so43",
-		"aucl3",
-		"au2so43",
-		"agcl",
-		"ag2so4",
 		"pbcl2",
 		"pbso4",
 		"crcl3",
@@ -36,8 +32,6 @@ ServerEvents.recipes((event) => {
 		"coso4",
 		"oscl3",
 		"os2so43",
-		"ptcl4",
-		"ptso42",
 		"na2so4",
 		"nacl",
 		"caso4",
@@ -80,10 +74,7 @@ ServerEvents.recipes((event) => {
 		"tin",
 		"lead",
 		"copper",
-		"silver",
-		"platinum",
 		"osmium",
-		"gold"
 	]
 	metalActiveOrder.forEach((metal) => {
 		metalActiveOrder.slice(metalActiveOrder.indexOf(metal) + 1)

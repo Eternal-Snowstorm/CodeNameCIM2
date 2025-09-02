@@ -63,6 +63,12 @@ ServerEvents.highPriorityData((event) => {
 		"thermal:sulfur_block"
 	))
 
+	// 硝酸盐
+	event.addJson("oei:replacement/niter_dust", addUnification(
+		"#forge:dusts/niter",
+		"thermal:niter_dust"
+	))
+
 	// 电容
 	event.addJson("oei:replacements/capacitor", addUnification(
 		"createaddition:capacitor",

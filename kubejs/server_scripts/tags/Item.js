@@ -348,6 +348,9 @@ ServerEvents.tags("item", (event) => {
 		.add("tconstruct:ichor_slime_crystal")
 		.add("tconstruct:ender_slime_crystal")
 
+	event.get("forge:dusts/niter")
+		.add("immersiveengineering:dust_saltpeter")
+
 
 	let crushedMaterialGroup = [
 		"iron",
