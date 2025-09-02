@@ -36,4 +36,23 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("ad_astra:cheese_block", [
 		"9x #forge:cheese",
 	]).id("ad_astra:cheese_block")
+
+	// 燃煤发电机
+	kubejs.shaped("ad_astra:coal_generator", [
+		"ABA",
+		"ACA",
+		"ADA"
+	], {
+		A: [
+			"#forge:ingots/iron",
+			"#forge:plates/iron"
+		],
+		B: "cmi:simple_battery",
+		C: [
+			"minecraft:furnace",
+			"minecraft:smoker",
+			"minecraft:blast_furnace"
+		],
+		D: "#forge:coal"
+	}).id("ad_astra:coal_generator")
 })

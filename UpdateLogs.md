@@ -413,6 +413,7 @@
  - 删除了`CreateHeatJS` Mod
  - 删除了`柴油动力`引擎对`#forge:steam`的兼容
  - 删除了`AlmostUnified` Mod
+ - 删除了`青铜蒸汽`(蒸汽动力取代)
 
 ### 修改(调整)内容
  - 任务文本修正

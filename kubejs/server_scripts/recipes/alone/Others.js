@@ -249,15 +249,4 @@ ServerEvents.recipes((event) => {
 		"pipez:advanced_upgrade",
 		"#forge:plates/netherite",
 	]).id("pipez:ultimate_upgrade")
-
-	create.sequenced_assembly("createaddition:capacitor",[
-		"#forge:plates/aluminum"
-	], [
-		create.deploying(inc, [inc, "#forge:rods/copper"]),
-		create.deploying(inc, [inc, "#forge:rods/zinc"]),
-		create.deploying(inc, [inc, "minecraft:redstone"]),
-		create.pressing(inc, inc),
-	]).transitionalItem(inc)
-		.loops(1)
-		.id("createaddition:crafting/capacitor_2")
 })

@@ -63,6 +63,12 @@ ServerEvents.highPriorityData((event) => {
 		"thermal:sulfur_block"
 	))
 
+	// 电容
+	event.addJson("oei:replacements/capacitor", addUnification(
+		"createaddition:capacitor",
+		"cmi:simple_battery"
+	))
+
 	/**
 	 * @example event.addJson("oei:replacements/coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
 	 * @param {Internal.Item | Internal.Ingredient} match 

@@ -42,11 +42,7 @@
 		}
 		{
 			dependencies: ["50BE6EA508B2E833"]
-			description: [
-				"往里供入水后再放入燃料便可开始生产蒸气(2mB/t)"
-				"蒸汽与水的产出比例为1:2, 即1mB水产生2mB蒸汽"
-			]
-			icon: "cmi:steam_boiler"
+			icon: "steampowered:bronze_burner"
 			id: "4405C578E1F06769"
 			rewards: [
 				{
@@ -65,12 +61,12 @@
 			tasks: [
 				{
 					id: "4366353F4F781C16"
-					item: "cmi:steam_boiler"
+					item: "steampowered:bronze_burner"
 					type: "item"
 				}
 				{
-					id: "12A3738B8B497DF6"
-					item: "minecraft:water_bucket"
+					id: "3ADB5E4B3F615979"
+					item: "steampowered:bronze_boiler"
 					type: "item"
 				}
 			]
@@ -301,31 +297,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["3A8F6D85F3DA8DF9"]
-			icon: "steampowered:bronze_burner"
-			id: "5F2AD32EF14B2C79"
-			rewards: [{
-				id: "70D1AAF895BC437F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [
-				{
-					id: "6F65B29EC0C2A6B5"
-					item: "steampowered:bronze_burner"
-					type: "item"
-				}
-				{
-					id: "3E19EB52518D30EE"
-					item: "steampowered:bronze_boiler"
-					type: "item"
-				}
-			]
-			x: 1.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3A8F6D85F3DA8DF9"]
+			dependencies: ["4405C578E1F06769"]
 			icon: "steampowered:cast_iron_burner"
 			id: "1156D2A5BA2286FD"
 			rewards: [{
@@ -345,11 +317,11 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 3.0d
+			x: 1.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["3A8F6D85F3DA8DF9"]
+			dependencies: ["4405C578E1F06769"]
 			icon: "steampowered:steel_burner"
 			id: "3588EC6A12F8BE35"
 			rewards: [{
@@ -369,24 +341,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["4405C578E1F06769"]
-			id: "3A8F6D85F3DA8DF9"
-			rewards: [{
-				id: "0F54B8174DEA627B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "436613C46D6D77EA"
-				title: "更多锅炉"
-				type: "checkmark"
-			}]
-			x: 2.5d
-			y: 1.5d
+			x: 3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["39A64AAD5944BEE7"]

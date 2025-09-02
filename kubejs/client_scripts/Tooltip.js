@@ -28,7 +28,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("createaddition:bioethanol")
 	addCommonTooltip("thermal_extra:diesel")
 	addCommonTooltip("createaddition:seed_oil")
-	
+
 	addAccelerateTooltip("cmi:stone_mechanism")
 	addAccelerateTooltip("cmi:andesite_mechanism")
 	addAccelerateTooltip("cmi:copper_mechanism")
@@ -105,27 +105,37 @@ ItemEvents.tooltip((event) => {
 	}
 
 	// 地质锤的tooltip
-	event.addAdvanced("cmi:geological_hammer", (item, advanced, text) => {
-		if (global.isDeveloper) {
-			text.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer1"))
-			text.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer2"))
-		} else {
-			text.add(Component.translatable("tooltip.cmi.geographycal_hammer.not_developer"))
-		}
-	})
+	event.addAdvanced("cmi:geological_hammer",
+		(item, advanced, text) => {
+			if (global.isDeveloper) {
+				text.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer1"))
+				text.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer2"))
+			} else {
+				text.add(Component.translatable("tooltip.cmi.geographycal_hammer.not_developer"))
+			}
+		})
 
 	// 初始套件的Tooltip
-	event.addAdvanced("cmi:initial_item_kit", (item, advanced, text) => {
-		if (event.shift) {
-			let lines = Component.translatable("tooltip.cmi.initial_item_kit.shift")
-				.string.split("\n")
-			lines.forEach((line) => {
-				text.add(line)
-			})
-		} else {
-			text.add(Component.translatable("tooltip.cmi.initial_item_kit.tip"))
-		}
-	})
+	event.addAdvanced("cmi:initial_item_kit",
+		(item, advanced, text) => {
+			if (event.shift) {
+				let lines = Component.translatable("tooltip.cmi.initial_item_kit.shift")
+					.string.split("\n")
+				lines.forEach((line) => {
+					text.add(line)
+				})
+			} else {
+				text.add(Component.translatable("tooltip.cmi.initial_item_kit.tip"))
+			}
+		})
+
+	// 电池
+	event.add("cmi:simple_battery",
+		(stack, advanced, tooltip) => {
+			let stored = stack.nbt?.energy || 0
+			let max = 10000
+			tooltip.add(Component.literal(`§e${stored} / ${max} FE`))
+		})
 
 	// 愚人节
 	let month = Java.loadClass("java.time.LocalDateTime").now().getMonthValue()

@@ -10,8 +10,15 @@ ServerEvents.recipes((event) => {
 		"ABA",
 		"CCC"
 	], {
-		A: ["#forge:plates/bronze", "#forge:ingots/bronze"],
-		B: ["minecraft:furnace", "minecraft:smoker", "minecraft:blast_furnace"],
+		A: [
+			"#forge:plates/bronze",
+			"#forge:ingots/bronze"
+		],
+		B: [
+			"minecraft:furnace",
+			"minecraft:smoker",
+			"minecraft:blast_furnace"
+		],
 		C: "tconstruct:seared_bricks"
 	})
 
@@ -21,7 +28,10 @@ ServerEvents.recipes((event) => {
 		"ABA",
 		"ABA"
 	], {
-		A: ["#forge:plates/cast_iron", "#forge:ingots/cast_iron"],
+		A: [
+			"#forge:plates/cast_iron",
+			"#forge:ingots/cast_iron"
+		],
 		B: "create:fluid_pipe"
 	})
 
@@ -31,8 +41,15 @@ ServerEvents.recipes((event) => {
 		"ABA",
 		"CCC"
 	], {
-		A: ["#forge:plates/cast_iron", "#forge:ingots/cast_iron"],
-		B: ["minecraft:furnace", "minecraft:smoker", "minecraft:blast_furnace"],
+		A: [
+			"#forge:plates/cast_iron",
+			"#forge:ingots/cast_iron"
+		],
+		B: [
+			"minecraft:furnace",
+			"minecraft:smoker",
+			"minecraft:blast_furnace"
+		],
 		C: "tconstruct:scorched_bricks"
 	})
 
@@ -42,8 +59,15 @@ ServerEvents.recipes((event) => {
 		"ABA",
 		"CCC"
 	], {
-		A: ["#forge:plates/steel", "#forge:ingots/steel"],
-		B: ["minecraft:furnace", "minecraft:smoker", "minecraft:blast_furnace"],
+		A: [
+			"#forge:plates/steel",
+			"#forge:ingots/steel"
+		],
+		B: [
+			"minecraft:furnace",
+			"minecraft:smoker",
+			"minecraft:blast_furnace"
+		],
 		C: "immersiveengineering:blastbrick"
 	})
 })
