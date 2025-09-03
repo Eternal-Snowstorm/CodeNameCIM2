@@ -72,10 +72,12 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/platinum/raw_particles`)
 
 	addItem("platinum_crystal_nucleus")
-		.texture(`${global.namespace}:item/material/platinum/crystal_nucleus`)
+	 	.texture(`${global.namespace}:item/material/platinum/crystal_nucleus`)
 
-	addItem("platinum_shard")
-		.texture(`${global.namespace}:item/material/platinum/shard`)
+	// addItem("platinum_shard")
+	// 	.texture(`${global.namespace}:item/material/platinum/shard`)
+	
+	// 铂碎片已在kubejs\server_scripts\recipes\alone\Metal.js中注册
 
 	// 木屑加工系列
 	addItem("wood_chip_briquette")
@@ -121,7 +123,7 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/andesite/aggregate`)
 		.tag("forge:bricks")
 
-	//硅处理
+	// 硅处理
 	addItem("small_coal_coke")
 		.burnTime(400)
 		.texture(`${global.namespace}:item/material/small_coal_coke`)

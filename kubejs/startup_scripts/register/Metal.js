@@ -100,17 +100,14 @@ StartupEvents.registry("item", (event) => {
 			}
 
 			if (type === "dirty") {
-				event.create(`${global.namespace}:${material.name}_${type}`)
+				event.create(`${global.namespace}:dirty_${material.name}_dust`)
 					.texture(`${global.namespace}:item/material/color/${type}`)
 					.modelJson(MetalTypeModels.dirty())
 					.color(0, material.color)
 					.tag(`${global.namespace}:metals`)
 					.tag(`mekanism:dirty_dusts`)
 					.tag(`mekanism:dirty_dusts/${material.name}`)
-				return
-			}
-
-			if (type === "clump" || type === "shard" || type === "crystal") {
+			} else if (type === "clump" || type === "shard" || type === "crystal") {
 				event.create(`${global.namespace}:${material.name}_${type}`)
 					.texture(`${global.namespace}:item/material/color/${type}`)
 					.color(0, material.color)
@@ -118,14 +115,14 @@ StartupEvents.registry("item", (event) => {
 					.tag(`mekanism:${type}s`)
 					.tag(`mekanism:${type}s/${material.name}`)
 				return
+			} else {
+				event.create(`${global.namespace}:${material.name}_${type}`)
+					.texture(`${global.namespace}:item/material/color/${type}`)
+					.color(0, material.color)
+					.tag(`${global.namespace}:metals`)
+					.tag(`forge:${type}s`)
+					.tag(`forge:${type}s/${material.name}`)
 			}
-
-			event.create(`${global.namespace}:${material.name}_${type}`)
-				.texture(`${global.namespace}:item/material/color/${type}`)
-				.color(0, material.color)
-				.tag(`${global.namespace}:metals`)
-				.tag(`forge:${type}s`)
-				.tag(`forge:${type}s/${material.name}`)
 		})
 	})
 	console.log("Items已注册完毕!")
@@ -182,21 +179,21 @@ StartupEvents.registry("mekanism:slurry", (event) => {
 	materials.forEach((material) => {
 		material.types.forEach((type) => {
 			if (type === "dirty_slurry") {
-				event.create(`${global.namespace}:${material.name}_dirty_slurry`)
-					.texture(`${global.namespace}:item/material/color/${type}`)
+				event.create(`${global.namespace}:dirty_${material.name}_slurry`)
+					.texture("mekanism:slurry/dirty")
 					.color(material.color)
 					.tag("mekanism:dirty")
 					.tag(`mekanism:dirty/${material.name}`)
-			}
-			if (type === "slurry") {
+			} else if (type === "slurry") {
 				event.create(`${global.namespace}:${material.name}_slurry`)
-					.texture(`${global.namespace}:item/material/color/${type}`)
+					.texture("mekanism:slurry/clean")
 					.color(material.color)
-					.tag("mekanism:clean/")
+					.tag("mekanism:clean")
 					.tag(`mekanism:clean/${material.name}`)
 			}
 		})
 	})
+	console.log("Slurry已注册完毕!")
 })
 
 // 安山合金
@@ -220,6 +217,12 @@ addMaterial("chromium", 0xE4DBDC, "iron")
 	.nugget()
 	.block()
 	.molten()
+	.dirty()
+	.clump()
+	.shard()
+	.crystal()
+	.slurry()
+	.dirty_slurry()
 
 // 铂
 addMaterial("platinum", 0XA4D4DA, "iron")
@@ -227,6 +230,9 @@ addMaterial("platinum", 0XA4D4DA, "iron")
 	.nugget()
 	.block()
 	.dust()
+	.dirty()
+	.clump()
+	.shard()
 
 // 泓钢
 addMaterial("siltsteel", 0x48D1CC, "diamond")
@@ -300,3 +306,53 @@ addMaterial("calcium", 0xF2F2F2, "wooden")
 // 钒
 addMaterial("vanadium", 0xF0FFFF, "stone")
 	.dust()
+	.dirty()
+	.clump()
+	.shard()
+	.crystal()
+	.slurry()
+	.dirty_slurry()
+
+// MEK中间产物
+// 锌
+addMaterial("zinc", 0xA8C0A0, "stone")
+	.dirty()
+	.clump()
+	.shard()
+	.crystal()
+	.slurry()
+	.dirty_slurry()
+
+// 铝
+addMaterial("aluminum", 0xB8C0C0, "stone")
+	.dirty()
+	.clump()
+	.shard()
+	.crystal()
+	.slurry()
+	.dirty_slurry()
+
+// 银
+addMaterial("silver", 0x788090, "stone")
+	.dirty()
+	.clump()
+	.shard()
+
+// 镍
+addMaterial("nickel", 0x989050, "stone")
+	.dirty()
+	.clump()
+	.shard()
+	.crystal()
+	.slurry()
+	.dirty_slurry()
+
+
+// 钴
+addMaterial("cobalt", 0x0850b8, "iron")
+	.dirty()
+	.clump()
+	.shard()
+	.crystal()
+	.slurry()
+	.dirty_slurry()
