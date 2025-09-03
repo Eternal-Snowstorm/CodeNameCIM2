@@ -29,9 +29,8 @@ StartupEvents.registry("block", (event) => {
 
 		typeList.forEach((type) => {
 			const SOUND = SOUND_TYPE[type] || SoundType.STONE
-			const BLOCK_ID = `${global.namespace}:${type}_${name}_ore_node`
 
-			let blockBuilder = event.create(BLOCK_ID)
+			let blockBuilder = event.create(`${global.namespace}:${type}_${name}_ore_node`)
 				.soundType(SOUND)
 				.hardness(-1)
 				.resistance(3600000)
