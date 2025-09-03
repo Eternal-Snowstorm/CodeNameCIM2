@@ -3,6 +3,12 @@ let $FluidTags = Java.loadClass("net.minecraft.tags.FluidTags")
 let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
 
 let IngredientUtils = {
+	/**
+	 * 获取标签内第一个物品的ID, 若标签下没有物品则返回null
+	 * @param {string} ingredient 物品标签ID
+	 * @param {number | undefined} count 物品数量
+	 * @returns {string | null}
+	 */
 	getFirstItemId: function (ingredient, count) {
 		let ids = count !== undefined
 			? Ingredient.of(ingredient, count).getItemIds()
@@ -15,6 +21,11 @@ let IngredientUtils = {
 			return null
 		}
 	},
+	/**
+	 * 获取标签内第一个流体的ID, 若标签下没有流体则返回null
+	 * @param {string} fluidTag 流体标签ID
+	 * @returns {string | null}
+	 */
 	getFirstFluidId: function (fluidTag) {
 		let tag = $FluidTags.create(ResourceLocation.parse(fluidTag))
 		let optional = $BuiltInRegistries.FLUID.getTag(tag)
@@ -27,8 +38,15 @@ let IngredientUtils = {
 				return getFluidKey
 			}
 		}
+		console.warn(`${fluidTag}下没有对应流体`)
 		return null
 	},
+	/**
+	 * 表示通用机械的气体
+	 * @param {string} gas 气体ID
+	 * @param {number | undefined} amount 数量
+	 * @returns 
+	 */
 	ofMekanismGas: function (gas, amount) {
 		if (amount === undefined) {
 			return {
@@ -41,6 +59,11 @@ let IngredientUtils = {
 			amount: amount
 		}
 	},
+	/**
+	 * 判断物品标签是否为空
+	 * @param {string} tag 物品标签ID
+	 * @returns {boolean}
+	 */
 	isNotNull: function (tag) {
 		return Ingredient.of(tag).getItemIds().length > 0
 	}
