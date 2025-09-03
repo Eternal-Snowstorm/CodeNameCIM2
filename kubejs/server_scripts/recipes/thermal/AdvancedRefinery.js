@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("minecraft:water", 900)
 	], Fluid.of("deepdrilling:sludge")).energy(5000)
 
-	//石化柴油来自重油
+	// 石化柴油来自重油
 	thermal_extra.advanced_refinery([
 		"thermal:tar",
 		Fluid.of("createdieselgenerators:diesel", 80)
@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
 		.energy(4000)
 		.id("thermal_extra:machine/advanced_refinery/heavy_oil")
 
-	//石化柴油来自轻油
+	// 石化柴油来自轻油
 	thermal_extra.advanced_refinery([
 		"#forge:dusts/sulfur",
 		Fluid.of("createdieselgenerators:diesel", 80)
