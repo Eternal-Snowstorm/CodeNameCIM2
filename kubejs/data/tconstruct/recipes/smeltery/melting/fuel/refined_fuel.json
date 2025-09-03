@@ -1,0 +1,10 @@
+{
+	"type": "tconstruct:melting_fuel",
+	"duration": 150,
+	"fluid": {
+		"amount": 50,
+		"fluid": "thermal:refined_fuel"
+	},
+	"rate": 30,
+	"temperature": 3000
+}
