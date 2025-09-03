@@ -16,12 +16,12 @@ ServerEvents.recipes((event) => {
 		if (leftover) {
 			recipe.leftover = leftover
 		}
-		event.custom(recipe)
+		return event.custom(recipe)
 	}
 
 	// 流体铸造工具封装
 	function addMaterialFluid(fluid, material, amount, temperature) {
-		event.custom({
+		return event.custom({
 			type: "tconstruct:material_fluid",
 			fluid: Fluid.of(fluid, amount).toJson(),
 			temperature: temperature,
@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
 	// Casting 封装
 	function addCastingNugget(fluid, result) {
 		// 金模具
-		event.custom({
+		let recipe1 = event.custom({
 			type: "tconstruct:casting_table",
 			cast: Ingredient.of("#tconstruct:casts/multi_use/nugget").toJson(),
 			cooling_time: 20,
@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
 			result: result
 		})
 		// 沙模具
-		event.custom({
+		let recipe2 = event.custom({
 			type: "tconstruct:casting_table",
 			cast: Ingredient.of("#tconstruct:casts/single_use/nugget").toJson(),
 			cast_consumed: true,
@@ -48,6 +48,11 @@ ServerEvents.recipes((event) => {
 			fluid: Fluid.of(fluid, 10).toJson(),
 			result: result
 		})
+
+		return {
+			gold: recipe1,
+			sand: recipe2
+		}
 	}
 
 	// 手搓
