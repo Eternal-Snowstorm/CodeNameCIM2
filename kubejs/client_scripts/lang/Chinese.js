@@ -146,6 +146,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("potassium", "钾")
 	addMaterialLanguage("calcium", "钙")
 	addMaterialLanguage("vanadium", "钒")
+	addMaterialLanguage("zinc", "锌")
+	addMaterialLanguage("aluminum", "铝")
+	addMaterialLanguage("silver", "银")
+	addMaterialLanguage("nickel", "镍")
+	addMaterialLanguage("cobalt", "钴")
 
 	addMaterialLanguage("pyrite", "黄铁")
 	addMaterialLanguage("lateritic_nickel", "红镍")
@@ -540,6 +545,14 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}_dust`, `${value}粉`)
 		event.add(`item.${global.namespace}.${key}_gear`, `${value}齿轮`)
 		event.add(`item.${global.namespace}.${key}_rod`, `${value}杆`)
+
+		event.add(`item.${global.namespace}.dirty_${key}_dust`, `污浊${value}粉`)
+		event.add(`item.${global.namespace}.${key}_clump`, `${value}碎块`)
+		event.add(`item.${global.namespace}.${key}_shard`, `${value}碎片`)
+		event.add(`item.${global.namespace}.${key}_crystal`, `${value}晶体`)
+
+		event.add(`slurry.${global.namespace}.dirty_${key}_slurry`, `污浊${value}浆液`)
+		event.add(`slurry.${global.namespace}.${key}_slurry`, `纯净${value}浆液`)
 
 		event.add(`block.${global.namespace}.${key}_block`, `${value}块`)
 
