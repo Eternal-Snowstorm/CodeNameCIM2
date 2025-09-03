@@ -1,8 +1,4 @@
-let $NoteBlockInstrument =
-	Java.loadClass("net.minecraft.world.level.block.state.properties.NoteBlockInstrument")
-
 StartupEvents.registry("block", (event) => {
-
 	// SoundType List
 	const SOUND_TYPE = {
 		"stone": SoundType.STONE,
@@ -26,7 +22,7 @@ StartupEvents.registry("block", (event) => {
 	/**
 	 * 注册矿石节点方块
 	 * @param {String} name 矿石id
-	 * @param {String | Array<String>} types 类型, 可以是 stone/deepslate/nether/moon 等,支持数组
+	 * @param {String | Array<String>} types 类型, 可以是 stone/deepslate/nether/moon 等, 支持数组
 	 */
 	function addOreNode(name, types) {
 		let typeList = Array.isArray(types) ? types : [types]
@@ -37,7 +33,6 @@ StartupEvents.registry("block", (event) => {
 
 			let blockBuilder = event.create(BLOCK_ID)
 				.soundType(SOUND)
-				.instrument($NoteBlockInstrument.BASEDRUM)
 				.hardness(-1)
 				.resistance(3600000)
 				.textureAll(`${global.namespace}:block/ore/node/${name}/${type}`)
@@ -64,6 +59,7 @@ StartupEvents.registry("block", (event) => {
 	addOreNode("cheese", "moon")
 	addOreNode("coal", "deepslate")
 	addOreNode("tin", "deepslate")
+	addOreNode("oil_shale", ["stone", "deepslate"])
 
 	// Array Example
 	// addOreNode("diamond", ["deepslate", "nether"])

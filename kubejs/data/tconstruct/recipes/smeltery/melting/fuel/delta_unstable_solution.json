@@ -1,0 +1,10 @@
+{
+	"type": "tconstruct:melting_fuel",
+	"duration": 150,
+	"fluid": {
+		"amount": 50,
+		"fluid": "cmi:delta_unstable_solution"
+	},
+	"rate": 12,
+	"temperature": 1200
+}

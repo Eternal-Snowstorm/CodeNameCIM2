@@ -1,0 +1,10 @@
+{
+	"type": "tconstruct:melting_fuel",
+	"duration": 150,
+	"fluid": {
+		"amount": 50,
+		"fluid": "ad_astra:cryo_fuel"
+	},
+	"rate": 40,
+	"temperature": 4000
+}
