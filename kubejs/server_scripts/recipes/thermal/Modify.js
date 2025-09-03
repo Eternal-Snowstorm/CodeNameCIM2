@@ -28,8 +28,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:trinitrotoluene",
 		B: "#forge:nuggets/iron"
-	})
-		.id("thermal:explosive_grenade_4")
+	}).id("thermal:explosive_grenade_4")
 
 	replaceBombRecipe("minecraft:ender_pearl", "ender")
 	replaceBombRecipe("minecraft:glowstone_dust", "glowstone")
@@ -39,6 +38,7 @@ ServerEvents.recipes((event) => {
 	replaceBombRecipe("thermal:blizz_powder", "ice")
 	replaceBombRecipe("thermal:blitz_powder", "lightning")
 	replaceBombRecipe("thermal:basalz_powder", "earth")
+
 	function replaceBombRecipe(input, bombname) {
 		kubejs.shaped(`thermal:${bombname}_tnt`, [
 			" A ",
@@ -47,8 +47,8 @@ ServerEvents.recipes((event) => {
 		], {
 			A: input,
 			B: "cmi:trinitrotoluene"
-		})
-			.id(`thermal:${bombname}_tnt`)
+		}).id(`thermal:${bombname}_tnt`)
+
 		kubejs.shaped(`4x thermal:${bombname}_grenade`, [
 			"CAC",
 			"ABA",
@@ -57,7 +57,6 @@ ServerEvents.recipes((event) => {
 			A: input,
 			B: "cmi:trinitrotoluene",
 			C: "#forge:nuggets/iron"
-		})
-			.id(`thermal:${bombname}_grenade_4`)
+		}).id(`thermal:${bombname}_grenade_4`)
 	}
 })

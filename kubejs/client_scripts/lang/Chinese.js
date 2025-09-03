@@ -302,7 +302,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("#cmi:special_ores", "该矿石只能在蒸汽矿石处理机内处理")
 	addCommonTooltipLanguage("#cmi:multiblock_machine_controller", "制作多方块接口时不消耗")
 	addCommonTooltipLanguage("cmi:stone_plate", "把字刻在石头上")
-	addCommonTooltipLanguage("cmi:cast_iron_ingot", "这种材料不够坚固, 辊压加工时可能会损坏! ")
 	addCommonTooltipLanguage("createaddition:bioethanol", "§c此液体废弃, 无法合成! ")
 	addCommonTooltipLanguage("thermal_extra:diesel", "§c此液体废弃, 无法合成! ")
 	addCommonTooltipLanguage("createaddition:seed_oil", "§c此液体废弃, 无法合成! ")

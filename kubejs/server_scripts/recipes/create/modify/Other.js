@@ -8,9 +8,8 @@ ServerEvents.recipes((event) => {
 		"BBB"
 	], {
 		A: "create:andesite_alloy",
-		B: "#forge:plates/zinc"
-	})
-		.id("create:crafting/kinetics/whisk")
+		B: ["#forge:plates/zinc", "#forge:plates/iron"]
+	}).id("create:crafting/kinetics/whisk")
 
 	// 空烈焰人燃烧室
 	kubejs.shaped("create:empty_blaze_burner", [

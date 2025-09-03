@@ -351,7 +351,6 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:dusts/niter")
 		.add("immersiveengineering:dust_saltpeter")
 
-
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
@@ -363,7 +362,8 @@ ServerEvents.tags("item", (event) => {
 		"lead",
 		"aluminum",
 		"uranium",
-		"nickel"
+		"nickel",
+		"platinum"
 	]
 	crushedMaterialGroup.forEach((material) => {
 		event.get(`create:crushed_raw_materials/${material}`)
