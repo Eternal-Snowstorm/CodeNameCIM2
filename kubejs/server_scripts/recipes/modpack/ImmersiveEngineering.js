@@ -55,34 +55,6 @@ ServerEvents.recipes((event) => {
 		"time": 600
 	})
 
-	// 铂溶液
-	event.custom({
-		"type": "immersiveengineering:mixer",
-		"energy": 10000,
-		"fluid": {
-			"amount": 1000,
-			"tag": "forge:glowstone"
-		},
-		"inputs": [
-			{
-				"base_ingredient": {
-					"item": "cmi:platinum_crystal_nucleus"
-				},
-				"count": 4
-			},
-			{
-				"base_ingredient": {
-					"tag": "forge:dusts/redstone"
-				},
-				"count": 6
-			}
-		],
-		"result": {
-			"amount": 500,
-			"fluid": "cmi:platinum_solution"
-		}
-	})
-
 	// 熔融铂
 	event.custom({
 		"type": "immersiveindustry:chemical",

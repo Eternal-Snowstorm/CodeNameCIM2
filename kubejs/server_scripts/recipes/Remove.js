@@ -66,7 +66,8 @@ ServerEvents.recipes((event) => {
 		"mekanism:processing/gold/slurry/dirty/from_raw_ore",
 		"mekanism:processing/gold/slurry/dirty/from_raw_block",
 		"mekanism:processing/gold/slurry/dirty/from_ore",
-		"mekanism:processing/gold/slurry/clean"
+		"mekanism:processing/gold/slurry/clean",
+		"mynethersdelight:crafting/tnt_alt"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

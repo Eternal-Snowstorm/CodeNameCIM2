@@ -68,16 +68,17 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:plates/stone")
 
 	// 铂系列
+	/*
 	addItem("raw_platinum_particles")
 		.texture(`${global.namespace}:item/material/platinum/raw_particles`)
 
 	addItem("platinum_crystal_nucleus")
-	 	.texture(`${global.namespace}:item/material/platinum/crystal_nucleus`)
-
+		.texture(`${global.namespace}:item/material/platinum/crystal_nucleus`)
+	*/
 	// addItem("platinum_shard")
 	// 	.texture(`${global.namespace}:item/material/platinum/shard`)
-	
-	// 铂碎片已在kubejs\server_scripts\recipes\alone\Metal.js中注册
+
+	// 铂系列已在kubejs\server_scripts\recipes\alone\Metal.js中注册
 
 	// 木屑加工系列
 	addItem("wood_chip_briquette")
@@ -144,10 +145,6 @@ StartupEvents.registry("item", (event) => {
 	// 生石灰
 	addItem("lime")
 		.texture(`${global.namespace}:item/material/lime`)
-
-	// 橡胶手部零件
-	addItem("rubber_hand")
-		.texture(`${global.namespace}:item/material/rubber_hand`)
 
 	// 草纤维
 	addItem("grass_fiber")

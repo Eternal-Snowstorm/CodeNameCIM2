@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 橡胶手
-	kubejs.shaped("cmi:rubber_hand", [
+	kubejs.shaped("create:brass_hand", [
 		" A ",
 		"BBB",
 		" B "
@@ -27,6 +27,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:ingots/andesite_alloy",
 		B: "thermal:cured_rubber"
 	})
+		.id("create:crafting/kinetics/brass_hand")
 
 	// 木龙头
 	kubejs.shaped("cmi:wooden_faucet", [
@@ -224,4 +225,13 @@ ServerEvents.recipes((event) => {
 			minecraft.stonecutting(id, "#minecraft:wool")
 			minecraft.stonecutting(id, "#cmi:dev_doll")
 		})
+
+	kubejs.shaped("minecraft:tnt", [
+		"AA ",
+		"AA ",
+		"   "
+	], {
+		A: "cmi:trinitrotoluene"
+	})
+		.id("minecraft:tnt")
 })

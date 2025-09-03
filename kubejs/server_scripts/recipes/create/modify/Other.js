@@ -1,6 +1,17 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, create, vintageimprovements } = event.recipes
 
+	// 搅拌头
+	kubejs.shaped("create:whisk", [
+		" A ",
+		"BAB",
+		"BBB"
+	], {
+		A: "create:andesite_alloy",
+		B: "#forge:plates/zinc"
+	})
+		.id("create:crafting/kinetics/whisk")
+
 	// 空烈焰人燃烧室
 	kubejs.shaped("create:empty_blaze_burner", [
 		"ABA",
