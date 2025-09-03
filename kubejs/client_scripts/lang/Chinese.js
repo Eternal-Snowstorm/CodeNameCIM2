@@ -231,6 +231,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addOreNodeLanguage("cheese", "奶酪")
 	addOreNodeLanguage("coal", "煤炭")
 	addOreNodeLanguage("tin", "锡")
+	addOreNodeLanguage("oil_shale", "油页岩")
 
 	addBlockLanguage("rocket_pattern", "火箭模版")
 	addBlockLanguage("tier_1_rocket_frame", "一阶火箭框架")
