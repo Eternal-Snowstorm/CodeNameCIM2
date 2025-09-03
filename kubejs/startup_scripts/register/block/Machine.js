@@ -12,5 +12,4 @@ StartupEvents.registry("block", (event) => {
 	addCustomMachine("flash_disk_writer")
 	addCustomMachine("chemical_gas_extractor")
 	addCustomMachine("simple_centrifuge")
-	addCustomMachine("steam_boiler")
 })

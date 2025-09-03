@@ -15,19 +15,21 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: "create:wrench"
 			id: "714D1AC6D07BEEC0"
 			rewards: [{
 				id: "2655761D7F974CC2"
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "超多实用工具"
 			tasks: [{
 				id: "48D573EC7FE00A91"
 				title: "一些实用工具"
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -64,13 +66,16 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["714D1AC6D07BEEC0"]
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
 			description: [
-				"输出升级可以往旁边相邻的容器方块内输出抽屉内的东西, 在物品栏内右键物品配置方向"
+				"输出升级可以将抽屉内的物品输出到相邻的容器方块中, 在物品栏内右键即可配置输出方向"
 				""
-				"输出升级可以从旁边相邻的容器方块内抽取东西到抽屉内, 在物品栏内右键物品配置方向"
+				"抽入升级可以从相邻的容器方块中将物品抽取到抽屉内, 在物品栏内右键即可配置输入方向"
 				""
-				"流体抽屉搭配这俩升级前期可以很方便的取代管道和动力泵, 如下图所示, 就是很简单的将流体传输到右上方的储罐内"
+				"流体抽屉搭配这两种升级, 在前期就能方便地取代管道和动力泵, 如下图所示, 可以将流体轻松传输到右上方的储罐中"
 				"{image:cmi:textures/images/io_upgrade.png width:192 height:108 align:center}"
 			]
 			hide_dependency_lines: true
@@ -102,12 +107,19 @@
 				}
 			]
 			title: "传输升级"
-			x: 0.0d
+			x: 2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["714D1AC6D07BEEC0"]
-			description: ["生铁降级可以降低抽屉的存储上限, 在超短距离分流能起到一定用处"]
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
+			description: [
+				"生铁降级可以降低抽屉的存储上限, 在需要进行超短距离分流时非常实用"
+				""
+				"例如, 当你希望让物流系统中的物品优先进入其他容器, 而不是被抽屉无限堆叠时, 就可以用降级来限制抽屉容量, 从而实现更灵活的分流与控制"
+			]
 			hide_dependency_lines: true
 			id: "48FF030A13CEF66D"
 			rewards: [
@@ -133,11 +145,14 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["714D1AC6D07BEEC0"]
 			description: [
-				"抽屉可以大量存储限定的一种或几种物品, 但是存储几种意味着存储上限会降低"
+				"抽屉是一种能够大量存储特定物品的设备"
+				"它既可以专注于存放单一物品以获得极高的容量, 也可以设置为存放多种物品, 但存储上限会相应降低"
 				""
-				"同时还有流体抽屉, 压缩抽屉和末影抽屉等好用的抽屉"
+				"除了常规抽屉之外, 还有流体抽屉, 压缩抽屉以及末影抽屉等扩展类型, 为物品与流体的管理提供了更加灵活的选择"
 			]
+			hide_dependency_lines: true
 			id: "4CCF561EE0B2C3A6"
 			rewards: [
 				{
@@ -164,11 +179,14 @@
 				title: "抽屉"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["714D1AC6D07BEEC0"]
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
 			description: [
 				"配置工具可以将某个抽屉上锁, 上锁后的抽屉只会接受标记过的物品或流体"
 				"合理利用配置工具可以省下不少黄铜"
@@ -198,7 +216,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["714D1AC6D07BEEC0"]
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
 			description: ["连接工具需要和存储控制器搭配使用, 和存储控制器连接过的抽屉可以在控制器中查看并调用"]
 			hide_dependency_lines: true
 			icon: {
@@ -240,7 +261,10 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["714D1AC6D07BEEC0"]
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
 			description: ["虚空升级可以让抽屉内的物品超过存储上限后输入进去的物品或流体自动销毁, 在处理极大产量的产线时尤为重要"]
 			hide_dependency_lines: true
 			id: "04D94D6A19BFCAD5"
@@ -266,6 +290,143 @@
 			x: 0.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"蒸汽飞轮是一种通过蒸汽驱动产生应力的设备"
+				"它不需要太大的占地, 只要你有一块稳定产出蒸汽的区域, 便能驱动飞轮持续运转"
+				"在任何时候, 它都可以作为最便捷的动力来源, 帮助你建立起基础的机械系统;"
+				"哪怕是在后期, 只要配合大型蒸汽锅炉或其他蒸汽供应方式, 也能为复杂装置提供稳定的动力支持。"
+				""
+				"(我知道你在想什么, 虚空飞轮&l&c亖了喵&r&r)"
+			]
+			hide_dependency_lines: true
+			icon: "steampowered:cast_iron_flywheel"
+			id: "38472ADBCFC92083"
+			rewards: [{
+				id: "57B448C721039A9F"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "超大应力来源"
+			tasks: [
+				{
+					id: "7D0557943210EEA6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:flywheel"
+						}
+					}
+					title: "蒸汽飞轮"
+					type: "item"
+				}
+				{
+					id: "0CCF89B1A1AE56BF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:steam_engine"
+						}
+					}
+					title: "蒸汽引擎"
+					type: "item"
+				}
+			]
+			title: "蒸汽飞轮"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"蒸汽飞轮往往需要与蒸汽产出设备搭配使用"
+				"其中, 蒸汽锅炉是一种仅需1×2空间的紧凑型设备, 相较于大型蒸汽锅炉, 它的占地更小, 搭建更加便捷"
+				""
+				"但是当内部存储的蒸汽满了之后蒸汽锅炉便会开始一边制造噪音一边爆气"
+			]
+			hide_dependency_lines: true
+			icon: "steampowered:cast_iron_burner"
+			id: "243EF0B9E933D85A"
+			rewards: [{
+				id: "4A87A56EAFEA81C5"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "蒸汽产出设备"
+			tasks: [
+				{
+					id: "14EF53B2B6618A77"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:boiler"
+						}
+					}
+					title: "锅炉"
+					type: "item"
+				}
+				{
+					id: "338F292855CFB115"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:burner"
+						}
+					}
+					title: "燃烧室"
+					type: "item"
+				}
+			]
+			title: "蒸汽锅炉"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["销毁器可以清除任何东西, 一般用于生产线中清除废弃的流体和物品"]
+			hide_dependency_lines: true
+			id: "5E52B40EB76B5C84"
+			rewards: [{
+				id: "1BC96651A96CB49B"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "清理垃圾和流体的好手段"
+			tasks: [{
+				id: "27B5F94D96D252FE"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			id: "7CF3605CD32CCEED"
+			rewards: [{
+				id: "433B4A0FB4FC08AA"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "找东西的好帮手"
+			tasks: [{
+				id: "1773E438C3EB9B3B"
+				item: {
+					Count: 1
+					id: "scannable:scanner"
+					tag: {
+						energy: 10000000
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
 	]
-	title: "实用工具(WIP)"
+	title: "实用工具"
 }

@@ -1,8 +1,9 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, create } = event.recipes
+	let unbreakable = "{Unbreakable:1b}"
 
 	// 安山钻头
-	kubejs.shaped(Item.of("deepdrilling:andesite_drill_head", "{Unbreakable:1b}"), [
+	kubejs.shaped(Item.of("deepdrilling:andesite_drill_head", unbreakable), [
 		" A ",
 		"ABA",
 		"CDC"
@@ -14,7 +15,7 @@ ServerEvents.recipes((event) => {
 	}).id("deepdrilling:andesite_drill_head")
 
 	// 铜制钻头
-	create.sequenced_assembly(Item.of("deepdrilling:copper_drill_head", "{Unbreakable:1b}"), [
+	create.sequenced_assembly(Item.of("deepdrilling:copper_drill_head", unbreakable), [
 		"#forge:storage_blocks/copper"
 	], [
 		create.deploying("#forge:storage_blocks/copper", [
@@ -27,10 +28,11 @@ ServerEvents.recipes((event) => {
 		create.pressing("#forge:storage_blocks/copper", [
 			"#forge:storage_blocks/copper"
 		])
-	]).loops(3).transitionalItem("deepdrilling:incomplete_copper_drill_head").id("deepdrilling:sequenced_assembly/copper_drill_head")
+	]).loops(3).transitionalItem("deepdrilling:incomplete_copper_drill_head")
+		.id("deepdrilling:sequenced_assembly/copper_drill_head")
 
 	// 黄铜钻头
-	create.sequenced_assembly(Item.of("deepdrilling:brass_drill_head", "{Unbreakable:1b}"), [
+	create.sequenced_assembly(Item.of("deepdrilling:brass_drill_head", unbreakable), [
 		"#forge:storage_blocks/brass"
 	], [
 		create.deploying("#forge:storage_blocks/brass", [
@@ -50,5 +52,6 @@ ServerEvents.recipes((event) => {
 		create.pressing("#forge:storage_blocks/brass", [
 			"#forge:storage_blocks/brass"
 		])
-	]).loops(5).transitionalItem("deepdrilling:incomplete_brass_drill_head").id("deepdrilling:sequenced_assembly/brass_drill_head")
+	]).loops(5).transitionalItem("deepdrilling:incomplete_brass_drill_head")
+		.id("deepdrilling:sequenced_assembly/brass_drill_head")
 })

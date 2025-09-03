@@ -40,10 +40,11 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
+			x: -0.5d
 			y: -2.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["12FC76D11FA11F6C"]
 			description: [
 				"合金窑的GUI内有两个输入槽, 一个输出槽以及一个燃料槽"
@@ -77,6 +78,7 @@
 			y: -0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["12FC76D11FA11F6C"]
 			description: ["高炉在这个世界只可以用来将石灰石烧至生石灰"]
 			hide_dependency_lines: true
@@ -107,6 +109,7 @@
 			y: -0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["12FC76D11FA11F6C"]
 			description: ["强化高炉是处理速度更快的高炉, 但是需要接入通电的预热器"]
 			hide_dependency_lines: true
@@ -156,6 +159,7 @@
 			y: -0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["12FC76D11FA11F6C"]
 			description: ["焦炉可以将木头烧成木炭, 木炭或煤炭可以继续烧成焦炭, 同时会产生在产线中必不可少的杂酚油, 并且杂酚油也是一种上好的燃料, 不管是拿去发电还是做成木屑块都是不错的选择"]
 			hide_dependency_lines: true
@@ -186,6 +190,7 @@
 			y: -0.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["12FC76D11FA11F6C"]
 			description: [
 				"炼钢坩埚用于将铸铁与合金剂高温冶炼成钢锭, 将原料投入输入槽并加入足量燃料即可开始冶炼"
@@ -242,6 +247,63 @@
 			x: 5.5d
 			y: -0.5d
 		}
+		{
+			can_repeat: true
+			icon: "immersiveengineering:lightning_rod"
+			id: "46D770A186667489"
+			rewards: [{
+				id: "571EC2E993F442CC"
+				item: "immersiveengineering:lightning_rod"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "4669EAF28A2DFEC8"
+					item: { Count: 3, id: "immersiveengineering:coil_hv" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "4FBABD3D22E251A9"
+					item: { Count: 4, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "7BFAC02B0060C66F"
+					item: { Count: 9, id: "immersiveengineering:coil_lv" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "2379797F9F19C572"
+					item: { Count: 4, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "3F8C072F970410B9"
+					item: { Count: 4, id: "immersiveengineering:treated_fence" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "444742490AEBE98A"
+					item: { Count: 5, id: "immersiveengineering:capacitor_hv" }
+					type: "item"
+				}
+			]
+			title: "避雷针"
+			x: -0.5d
+			y: 1.5d
+		}
 	]
-	title: "多方块机器(WIP)"
+	title: "多方块机器"
 }

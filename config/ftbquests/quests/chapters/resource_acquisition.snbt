@@ -7,6 +7,21 @@
 	id: "48BE72D86FDBBEB8"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
-	title: "Resource Acquisition"
+	quests: [{
+		icon: "minecraft:diamond"
+		id: "44410128C3C76917"
+		rewards: [{
+			id: "705B31BD4E6365DB"
+			type: "xp"
+			xp: 10
+		}]
+		tasks: [{
+			id: "4A80F67883357FAD"
+			title: "本章节主要讲解各种资源的获取"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "资源获取"
 }

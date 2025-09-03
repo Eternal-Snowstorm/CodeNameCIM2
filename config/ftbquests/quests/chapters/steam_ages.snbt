@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "steam_ages"
 	group: "050255AE19A93344"
-	icon: "cmi:steam_boiler"
+	icon: "steampowered:bronze_burner"
 	id: "209B1A2CAFDEB2AA"
 	order_index: 4
 	quest_links: [ ]
@@ -11,18 +11,11 @@
 		{
 			description: ["蒸汽是一个支线"]
 			id: "50BE6EA508B2E833"
-			rewards: [
-				{
-					id: "4148E7F8DB84EDA5"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "13E8F87C8B320D08"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "4148E7F8DB84EDA5"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "蒸汽可以处理矿石, 也可以给予引擎生产应力"
 			tasks: [{
 				id: "0663928BECC3E50F"
@@ -368,7 +361,7 @@
 				}
 			]
 			title: "铸铁飞轮"
-			x: 7.5d
+			x: 6.6d
 			y: -3.0d
 		}
 		{
@@ -395,8 +388,8 @@
 				}
 			]
 			title: "钢飞轮"
-			x: 9.5d
-			y: -1.0d
+			x: 8.4d
+			y: -3.0d
 		}
 	]
 	title: "蒸汽时代"
