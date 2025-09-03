@@ -20,6 +20,7 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("thermal:heavy_oil"))
 		.energy(4000)
 		.id("thermal_extra:machine/advanced_refinery/heavy_oil")
+
 	//石化柴油来自轻油
 	thermal_extra.advanced_refinery([
 		"#forge:dusts/sulfur",
@@ -27,6 +28,13 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("thermal:light_oil"))
 		.energy(4000)
 		.id("thermal_extra:machine/advanced_refinery/light_oil")
+
+	// 石化含硫柴油提纯柴油
+	thermal.refinery([
+		"thermal:sulfur_dust",
+		Fluid.of("createdieselgenerators:diesel", 100)
+	], Fluid.of("cmi:sulfric_diesel", 100))
+		.energy(4000)
 
 	// 三硝基甲苯提纯
 	thermal_extra.advanced_refinery([

@@ -122,8 +122,8 @@ ServerEvents.recipes((event) => {
 
 
 	mekanism.rotary()
-		.fluidInput(Fluid.of("cmi:fluid_nitroglycerine", 200))
-		.gasOutput("200x cmi:nitroglycerine")
-		.fluidOutput(Fluid.of("cmi:fluid_nitroglycerine", 200))
-		.gasInput("200x cmi:nitroglycerine")
+		.fluidInput(Fluid.of("cmi:fluid_nitroglycerine", 1))
+		.gasOutput("1x cmi:nitroglycerine")
+		.fluidOutput(Fluid.of("cmi:fluid_nitroglycerine", 1))
+		.gasInput("1x cmi:nitroglycerine")
 })
