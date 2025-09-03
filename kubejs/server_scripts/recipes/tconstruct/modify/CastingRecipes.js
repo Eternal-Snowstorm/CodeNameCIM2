@@ -13,7 +13,9 @@ ServerEvents.recipes((event) => {
 			needed: 1,
 			value: value
 		}
-		if (leftover) recipe.leftover = leftover
+		if (leftover) {
+			recipe.leftover = leftover
+		}
 		event.custom(recipe)
 	}
 
