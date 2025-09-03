@@ -20,12 +20,12 @@ ServerEvents.recipes((event) => {
 	}
 
 	// 流体铸造工具封装
-	function addMaterialFluid(fluid, output, amount, temperature) {
+	function addMaterialFluid(fluid, material, amount, temperature) {
 		event.custom({
 			type: "tconstruct:material_fluid",
 			fluid: Fluid.of(fluid, amount).toJson(),
 			temperature: temperature,
-			output: output
+			output: material
 		})
 	}
 
