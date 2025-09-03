@@ -349,7 +349,7 @@ addMaterial("nickel", 0x989050, "stone")
 
 
 // 钴
-addMaterial("cobalt", 0x0850b8, "iron")
+addMaterial("cobalt", 0x0098FF, "iron")
 	.dirty()
 	.clump()
 	.shard()

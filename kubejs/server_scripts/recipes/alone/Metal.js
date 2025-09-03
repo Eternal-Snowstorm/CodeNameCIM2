@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 	} = event.recipes
 
 	function moltenMetalRecipeWithCondition(metal) {
-		let fluid = IngredientUtils.getFirstFluidId(`#forge:molten_${metal}`)
+		let fluid = IngredientUtils.getFirstFluidId(`forge:molten_${metal}`)
 
 		if (fluid === null) {
 			console.warn(`No molten metal found for ${metal}!`)

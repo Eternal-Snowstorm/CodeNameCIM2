@@ -62,7 +62,11 @@ ServerEvents.recipes((event) => {
 		"create:crafting/materials/andesite_alloy",
 		"create:crafting/materials/andesite_alloy_from_zinc",
 		"tconstruct:compat/create/andesite_alloy_iron",
-		"tconstruct:compat/create/andesite_alloy_zinc"
+		"tconstruct:compat/create/andesite_alloy_zinc",
+		"mekanism:processing/gold/slurry/dirty/from_raw_ore",
+		"mekanism:processing/gold/slurry/dirty/from_raw_block",
+		"mekanism:processing/gold/slurry/dirty/from_ore",
+		"mekanism:processing/gold/slurry/clean"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
