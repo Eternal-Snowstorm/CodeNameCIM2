@@ -8,4 +8,15 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#minecraft:logs"
 	})
+
+	kubejs.shaped("create:crushing_wheel", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: "create:andesite_alloy_block",
+		B: "thermal:iron_gear",
+		C: "cmi:andesite_mechanism"
+	})
+	
 })

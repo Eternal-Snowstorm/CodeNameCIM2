@@ -1,0 +1,8 @@
+{
+    "block": "cmi:deepslate_oil_shale_ore_node",
+    "loot_tables": {
+        "earth": "cmi:ore_nodes/deepslate_oil_shale/earth",
+        "common": "cmi:ore_nodes/deepslate_oil_shale/common",
+        "rare": "cmi:ore_nodes/deepslate_oil_shale/rare"
+    }
+}
