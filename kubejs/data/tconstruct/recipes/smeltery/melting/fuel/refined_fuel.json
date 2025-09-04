@@ -5,6 +5,6 @@
 		"amount": 50,
 		"fluid": "thermal:refined_fuel"
 	},
-	"rate": 30,
-	"temperature": 3000
+	"rate": 20,
+	"temperature": 2000
 }
