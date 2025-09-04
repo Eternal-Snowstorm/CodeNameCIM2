@@ -83,14 +83,15 @@ let IngredientUtils = {
 let MekanismElement = {
 	slurry: {
 		exists: function (id) {
-			const SLURRY =
-				$RegistryInfo.of($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry.class)
-			return SLURRY.hasValue(id)
+			return addRegisterType($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry)
+				.hasValue(id)
 		}
 	}
 }
 
-// function (){}
+function addRegisterType(key, type) {
+	return $RegistryInfo.of(key, type)
+}
 
 function aeCharger(output, input) {
 	const INPUT = Ingredient.of(input).toJson()
