@@ -36,6 +36,12 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("cmi:sulfric_diesel", 100))
 		.energy(4000)
 
+	thermal_extra.advanced_refinery([
+		"thermal:sulfur_dust",
+		Fluid.of("createdieselgenerators:diesel", 100)
+	], Fluid.of("cmi:sulfric_diesel", 100))
+		.energy(4000)
+
 	// 三硝基甲苯提纯
 	thermal_extra.advanced_refinery([
 		"4x cmi:trinitrotoluene",
