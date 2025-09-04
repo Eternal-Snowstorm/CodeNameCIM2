@@ -58,6 +58,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("flame_retardant_plastic", "阻燃塑料")
 	addItemLanguage("grass_fiber", "草纤维")
 	addItemLanguage("grass_string", "草绳")
+	addItemLanguage("sugarcane_fiber", "甘蔗纤维")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")
@@ -119,6 +120,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("fluid_nitroglycerine", "液态硝化甘油")
 	addFluidLanguage("crystal_catalyt", "晶体催生剂")
 	addFluidLanguage("oily_sludge", "含油淤泥")
+	addFluidLanguage("sugar_cane_syrup", "甘蔗糖浆")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")

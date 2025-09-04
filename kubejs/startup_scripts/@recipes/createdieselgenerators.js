@@ -1,6 +1,6 @@
 new Schema("createdieselgenerators:basin_fermenting")
-	.simpleKey("results", "outputFluidArray")
-	.simpleKey("ingredients", "inputItemArray")
+	.simpleKey("results", "outputFluidOrItemArray")
+	.simpleKey("ingredients", "inputFluidOrItemArray")
 	.simpleKey("heatRequirement", "nonEmptyString", "heated" || "superheated")
 	.simpleKey("processingTime", "intNumber", 100)
 

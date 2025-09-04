@@ -66,4 +66,17 @@ ItemEvents.modification((event) => {
 				})
 		})
 	})
+
+	// 甘蔗
+	event.modify("minecraft:sugar_cane", (modify) => {
+		modify.setFoodProperties((food) => {
+			food.hunger(2)
+				.saturation(1)
+				.eaten((event) => {
+					let { player } = event
+
+					player.give("cmi:sugarcane_fiber")
+				})
+		})
+	})
 })

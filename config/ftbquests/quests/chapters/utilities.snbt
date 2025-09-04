@@ -433,6 +433,32 @@
 			x: 0.0d
 			y: 7.0d
 		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["龙头可以很方便的获取橡胶, 但是代价就是会损害, 并且树干有概率变成去皮原木"]
+			hide_dependency_lines: true
+			id: "7ABC764F1F79CB4E"
+			rewards: [{
+				id: "74A16B24C0301174"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "橡胶获取"
+			tasks: [{
+				id: "2958A72C4C03C715"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cmi:faucet"
+					}
+				}
+				title: "龙头"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
 	]
 	title: "实用工具"
 }

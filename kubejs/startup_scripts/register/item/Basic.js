@@ -52,6 +52,10 @@ StartupEvents.registry("item", (event) => {
 	addItem("sludge_extract")
 		.texture(`${global.namespace}:item/material/sludge_extract`)
 
+	// 甘蔗纤维
+	addItem("sugarcane_fiber")
+		.texture(`${global.namespace}:item/material/sugarcane_fiber`)
+
 	// 泥炭
 	addItem("peat")
 		.texture(`${global.namespace}:item/material/peat`)
