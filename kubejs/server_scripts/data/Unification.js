@@ -10,10 +10,11 @@ ServerEvents.highPriorityData((event) => {
 	]
 	materialType.forEach((type) => {
 		global.metalGroup.forEach((material) => {
-			let ids = Ingredient.of(`#forge:${type}s/${material}`).getItemIds()
+			let tag = `#forge:${type}s/${material}`
+			let ids = Ingredient.of(tag).getItemIds()
 			if (ids.length > 0) {
 				event.addJson(`oei:replacements/${material}_${type}.json`, addUnification(
-					ids,
+					tag,
 					ids[0]
 				))
 				console.log(`oei:replacements/${material}_${type}.json is generated!`)
@@ -23,10 +24,11 @@ ServerEvents.highPriorityData((event) => {
 
 	// 粗矿
 	global.metalGroup.forEach((material) => {
-		let ids = Ingredient.of(`#forge:raw_materials/${material}`).getItemIds()
+		let tag = `#forge:raw_materials/${material}`
+		let ids = Ingredient.of(tag).getItemIds()
 		if (ids.length > 0) {
 			event.addJson(`oei:replacements/raw_${material}.json`, addUnification(
-				ids,
+				tag,
 				ids[0]
 			))
 			console.log(`oei:replacements/raw_${material}.json is generated!`)
@@ -35,7 +37,8 @@ ServerEvents.highPriorityData((event) => {
 
 	// 粗矿块
 	global.metalGroup.forEach((material) => {
-		let ids = Ingredient.of(`#forge:storage_blocks/raw_${material}`).getItemIds()
+		let tag = `#forge:storage_blocks/raw_${material}`
+		let ids = Ingredient.of(tag).getItemIds()
 		if (ids.length > 0) {
 			event.addJson(`oei:replacements/raw_${material}_block.json`, addUnification(
 				ids,

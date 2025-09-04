@@ -303,20 +303,7 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (IngredientUtils.isNotNull(ORE)) {
-			minecraft.smelting(INGOT, ORE)
-			minecraft.blasting(INGOT, ORE)
 
-			thermal.smelter([
-				`2x ${INGOT}`,
-				Item.of("thermal:rich_slag").withChance(0.2)
-			], ORE)
-
-			immersiveengineering.arc_furnace(`2x #forge:ingots/${metal}`)
-				.input(ORE)
-				.slag("immersiveengineering:slag")
-				.time(200)
-				.energy(102400)
-				.additives([])
 		} else {
 			console.warn(`No ore found for ${metal}!`)
 		}
@@ -337,29 +324,11 @@ ServerEvents.recipes((event) => {
 			} else {
 				console.warn(`No storage block found for raw ${metal}!`)
 			}
-			minecraft.smelting(INGOT, RAW_ORE)
-			minecraft.blasting(INGOT, RAW_ORE)
-
-			thermal.smelter(Item.of(IngredientUtils.getFirstItemId(INGOT)).withChance(1.5), [
-				RAW_ORE
-			])
-
-			immersiveengineering.arc_furnace(INGOT)
-				.secondaries(Item.of(IngredientUtils.getFirstItemId(INGOT)).withChance(0.5))
-				.input(RAW_ORE)
-				.time(900)
-				.energy(230400)
-				.additives([])
 		} else {
 			console.warn(`No raw material found for ${metal}!`)
 		}
 
 		if (IngredientUtils.isNotNull(RAW_BLOCK)) {
-			immersiveengineering.arc_furnace(`13x #forge:ingots/${metal}`)
-				.secondaries(Item.of(IngredientUtils.getFirstItemId(INGOT)).withChance(0.5))
-				.input(RAW_BLOCK)
-				.energy(25600)
-				.additives([])
 		} else {
 			console.warn(`No storage block found for raw ${metal}!`)
 		}
@@ -391,35 +360,18 @@ ServerEvents.recipes((event) => {
 			} else {
 				console.warn(`No ore found for ${metal}!`)
 			}
-			minecraft.smelting(INGOT, CRUSHED)
-			minecraft.blasting(INGOT, CRUSHED)
 		} else {
 			console.warn(`No crushed raw material found for ${metal}!`)
 		}
 
 		if (IngredientUtils.isNotNull(DUST)) {
-			minecraft.smelting(INGOT, [
-				DUST
-			])
-			minecraft.blasting(INGOT, [
-				DUST
-			])
 			thermal.pulverizer(DUST, [
 				INGOT
 			]).energy(2000)
 
-			thermal.smelter(INGOT, [
-				DUST
-			]).energy(1600)
-
 			immersiveengineering.crusher(DUST)
 				.secondaries([])
 				.input(INGOT)
-
-			immersiveengineering.arc_furnace(INGOT)
-				.secondaries([])
-				.input(DUST)
-				.additives([])
 
 			mekanism.crushing(DUST, INGOT)
 			if (IngredientUtils.isNotNull(RAW_ORE)) {
@@ -470,10 +422,6 @@ ServerEvents.recipes((event) => {
 			thermal.press(PLATE, [
 				INGOT
 			])
-			thermal.smelter(INGOT, [
-				PLATE
-			]).energy(1600)
-
 			immersiveengineering.metal_press(PLATE)
 				.input(INGOT)
 				.mold("immersiveengineering:mold_plate")
@@ -512,10 +460,6 @@ ServerEvents.recipes((event) => {
 				"thermal:press_gear_die"
 			])
 
-			thermal.smelter(`4x ${INGOT}`, [
-				GEAR
-			])
-
 			immersiveengineering.metal_press(GEAR)
 				.input(`4x ${INGOT}`)
 				.mold("immersiveengineering:mold_gear")
@@ -534,9 +478,6 @@ ServerEvents.recipes((event) => {
 					"thermal:press_coin_die"
 				]).energy(800)
 
-				thermal.smelter(`3x ${NUGGET}`, [
-					COIN
-				]).energy(800)
 			} else {
 				console.warn(`No nuggets found for ${metal}!`)
 			}
