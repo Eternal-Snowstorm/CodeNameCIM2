@@ -429,6 +429,18 @@ ServerEvents.recipes((event) => {
 			}, {
 				type: "thermal:chilling",
 				output: `#forge:coins/${metal}`
+			}, {
+				output: "#forge:nuggets/iron",
+				type: "minecraft:smelting"
+			}, {
+				output: "#forge:nuggets/steel",
+				type: "minecraft:smelting"
+			}, {
+				output: "#forge:nuggets/osmium",
+				type: "minecraft:smelting"
+			}, {
+				output: "#forge:nuggets/refined_obsidian",
+				type: "minecraft:smelting"
 			}
 		])
 	})

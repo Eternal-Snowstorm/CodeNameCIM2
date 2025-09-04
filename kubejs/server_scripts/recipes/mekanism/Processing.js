@@ -9,33 +9,41 @@ materials.forEach((material) => {
     ServerEvents.recipes((event) => {
         let { mekanism, kubejs } = event.recipes
 
-        mekanism.purifying(
-            Item.of(clumpIds[0], 2),
-            `#forge:raw_materials/${material}`,
-            "2x cmi:nitroglycerine"
-        )
-            .id(`mekanism:processing/${material}/clump/from_raw_ore`)
+        if (IngredientUtils.isNotNull(`#forge:raw_materials/${material}`)) {
+            mekanism.purifying(
+                Item.of(clumpIds[0], 2),
+                `#forge:raw_materials/${material}`,
+                "2x cmi:nitroglycerine"
+            )
+                .id(`mekanism:processing/${material}/clump/from_raw_ore`)
+        }
 
-        mekanism.purifying(
-            Item.of(clumpIds[0], 18),
-            `#forge:storage_blocks/raw_${material}`,
-            "2x cmi:nitroglycerine"
-        )
-            .id(`mekanism:processing/${material}/clump/from_raw_block`)
+        if (IngredientUtils.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
+            mekanism.purifying(
+                Item.of(clumpIds[0], 18),
+                `#forge:storage_blocks/raw_${material}`,
+                "2x cmi:nitroglycerine"
+            )
+                .id(`mekanism:processing/${material}/clump/from_raw_block`)
+        }
 
-        mekanism.purifying(
-            Item.of(clumpIds[0], 3),
-            `#forge:ores/${material}`,
-            "2x cmi:nitroglycerine"
-        )
-            .id(`mekanism:processing/${material}/clump/from_ore`)
+        if (IngredientUtils.isNotNull(`#forge:ores/${material}`)) {
+            mekanism.purifying(
+                Item.of(clumpIds[0], 3),
+                `#forge:ores/${material}`,
+                "2x cmi:nitroglycerine"
+            )
+                .id(`mekanism:processing/${material}/clump/from_ore`)
+        }
 
-        mekanism.purifying(
-            Item.of(clumpIds[0], 1),
-            `#mekanism:shards/${material}`,
-            "1x cmi:nitroglycerine"
-        )
-            .id(`mekanism:processing/${material}/clump/from_shard`)
+        if (IngredientUtils.isNotNull(`#mekanism:shards/${material}`)) {
+            mekanism.purifying(
+                Item.of(clumpIds[0], 1),
+                `#mekanism:shards/${material}`,
+                "1x cmi:nitroglycerine"
+            )
+                .id(`mekanism:processing/${material}/clump/from_shard`)
+        }
 
         mekanism.crushing(
             dirtyDustIds[0],
