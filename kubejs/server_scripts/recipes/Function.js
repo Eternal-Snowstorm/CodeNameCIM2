@@ -1,6 +1,14 @@
 // priority: 100
-let $FluidTags = Java.loadClass("net.minecraft.tags.FluidTags")
-let $BuiltInRegistries = Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
+let $FluidTags =
+	Java.loadClass("net.minecraft.tags.FluidTags")
+let $BuiltInRegistries =
+	Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
+let $RegistryInfo =
+	Java.loadClass("dev.latvian.mods.kubejs.registry.RegistryInfo")
+let $MekanismAPI =
+	Java.loadClass("mekanism.api.MekanismAPI")
+let $Slurry =
+	Java.loadClass("mekanism.api.chemical.slurry.Slurry")
 
 let IngredientUtils = {
 	/**
@@ -21,6 +29,7 @@ let IngredientUtils = {
 			return null
 		}
 	},
+
 	/**
 	 * 获取标签内第一个流体的ID, 若标签下没有流体则返回null
 	 * @param {string} fluidTag 流体标签ID
@@ -41,6 +50,7 @@ let IngredientUtils = {
 		console.warn(`${fluidTag}下没有对应流体`)
 		return null
 	},
+
 	/**
 	 * 表示通用机械的气体
 	 * @param {string} gas 气体ID
@@ -59,6 +69,7 @@ let IngredientUtils = {
 			amount: amount
 		}
 	},
+
 	/**
 	 * 判断物品标签是否为空
 	 * @param {string} tag 物品标签ID
@@ -68,6 +79,18 @@ let IngredientUtils = {
 		return Ingredient.of(tag).getItemIds().length > 0
 	}
 }
+
+let MekanismElement = {
+	slurry: {
+		exists: function (id) {
+			const SLURRY =
+				$RegistryInfo.of($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry.class)
+			return SLURRY.hasValue(id)
+		}
+	}
+}
+
+// function (){}
 
 function aeCharger(output, input) {
 	const INPUT = Ingredient.of(input).toJson()
