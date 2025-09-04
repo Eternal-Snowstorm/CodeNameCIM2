@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("minecraft:water", 200)
 	])
 
-	//萤石
+	// 萤石
 	vintageimprovements.laser_cutting("minecraft:glowstone_dust", [
 		"thermal_extra:amethyst_dust"
 	]).energy(50)

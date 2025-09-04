@@ -67,7 +67,15 @@ ServerEvents.recipes((event) => {
 		"mekanism:processing/gold/slurry/dirty/from_raw_block",
 		"mekanism:processing/gold/slurry/dirty/from_ore",
 		"mekanism:processing/gold/slurry/clean",
-		"mynethersdelight:crafting/tnt_alt"
+		"mynethersdelight:crafting/tnt_alt",
+		"engineered_schematics:crafting/recycle_schematic",
+		"thermal_extra:sticky_ball_to_paper",
+		"mekanism:paper",
+		"immersiveengineering:crafting/paper_from_sawdust",
+		"minecraft:paper",
+		"minecraft:sugar_from_sugar_cane",
+		"create:milling/sugar_cane",
+		"farmersdelight:cutting/sugar_cane_alt"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -217,12 +225,28 @@ ServerEvents.recipes((event) => {
 
 	let removeRecipeType = [
 		"vintageimprovements:laser_cutting",
-		"ad_astra:nasa_workbench"
+		"ad_astra:nasa_workbench",
+		"immersiveengineering:fermenter"
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({
 			type: type
 		})
+	})
+
+	event.remove({
+		type: "minecraft:crafting_shaped",
+		input: "#forge:ingots",
+		output: "#forge:rods"
+	})
+
+	event.remove({
+		type: "thermal:smelter",
+		input: "#forge:dusts",
+	})
+
+	event.remove({
+		mod: "steampowered"
 	})
 
 	global.metalGroup.forEach((metal) => {
@@ -408,20 +432,4 @@ ServerEvents.recipes((event) => {
 			}
 		])
 	})
-
-	event.remove({
-		type: "minecraft:crafting_shaped",
-		input: "#forge:ingots",
-		output: "#forge:rods"
-	})
-
-	event.remove({
-		type: "thermal:smelter",
-		input: "#forge:dusts",
-	})
-
-	// event.remove({
-	// 	type: "farmersdelight:cutting",
-	// 	input: "#minecraft:logs"
-	// })
 })

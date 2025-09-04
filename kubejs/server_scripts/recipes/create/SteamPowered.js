@@ -1,9 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
-	// 删除蒸汽动力全部配方
-	event.remove({ mod: "steampowered" })
-
 	// 青铜燃烧室
 	kubejs.shaped("steampowered:bronze_burner", [
 		"AAA",

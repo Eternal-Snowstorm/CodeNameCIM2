@@ -115,6 +115,14 @@ function addSmeltingRecipe(event, output, input) {
 		.cookingTime(200)
 }
 
+function addSmokingRecipe(event, output, input) {
+	event.recipes.minecraft.blasting(output, input)
+		.cookingTime(100)
+
+	event.recipes.minecraft.smoking(output, input)
+		.cookingTime(200)
+}
+
 // Test Function Event
 BlockEvents.rightClicked((event) => {
 	let { block, player } = event
