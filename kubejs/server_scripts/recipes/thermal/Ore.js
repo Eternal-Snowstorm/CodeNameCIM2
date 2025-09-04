@@ -46,4 +46,8 @@ ServerEvents.recipes((event) => {
 		"#forge:glass",
 		Fluid.of("cmi:eletriced_source_emeraid", 1000)
 	])
+	thermal.crystallizer("ae2:certus_quartz_crystal", [
+		"#forge:dusts/certus_quartz",
+		Fluid.of("cmi:crystal_catalyt", 250)
+	])
 })
