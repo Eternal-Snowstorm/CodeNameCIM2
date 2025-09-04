@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/stainless_steel",
 		B: "thermal_extra:nitratic_igniter",
-		C: mechA
+		C: mechB
 	}).id("mekanism:purification_chamber")
 
 	// 炉子

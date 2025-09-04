@@ -1,9 +1,10 @@
 ServerEvents.recipes((event) => {
-    let { minecraft, immersiveengineering, thermal } = event.recipes
+    let { minecraft, mekanism } = event.recipes
     let types = ["forge:raw_materials", "forge:dusts", "create:crushed_raw_materials"]
-    let furnaceMetals = ["tin", "lead", "zinc", "aluminum", "silver", "gold", "copper"]
-    let blastFurnaceMetals = ["uranium", "nickel", "cobalt", "iron", "platinum", "desh"]
-    let arcFurnaceMetals = ["chromium", "vanadium", "ostrum", "calorite"]
+    let furnaceMetals = global.meltingLevels[1000]
+    let blastFurnaceMetals = global.meltingLevels[1500]
+    let arcFurnaceMetals = global.meltingLevels[2000]
+    let energizedSmelterMetals = global.meltingLevels["above"]
 
     types.forEach((type) => {
         furnaceMetals.forEach((metal) => {
@@ -70,6 +71,20 @@ ServerEvents.recipes((event) => {
                     "time": 200,
                     "tickEnergy": 32
                 })
+                mekanism.smelting(
+                    ingotId[0],
+                    `#${type}/${metal}`
+                )
+            }
+        })
+        energizedSmelterMetals.forEach((metal) => {
+            let ingotId = Ingredient.of(`#forge:ingots/${metal}`).getItemIds()
+
+            if (IngredientUtils.isNotNull(`#${type}/${metal}`)) {
+                mekanism.smelting(
+                    ingotId[0],
+                    `#${type}/${metal}`
+                )
             }
         })
     })
