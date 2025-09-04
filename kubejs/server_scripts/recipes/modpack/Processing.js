@@ -6,14 +6,11 @@ global.metalGroup.forEach((metal) => {
 
     ServerEvents.recipes((event) => {
         let { thermal } = event.recipes
-
         if (IngredientUtils.isNotNull(`#forge:dusts/${metal}`)) {
-
             thermal.pulverizer(
                 dustIds[0],
                 `#mekanism:clumps/${metal}`
             )
-
             thermal.crystallizer(
                 ingotIds[0],
                 [
@@ -21,10 +18,6 @@ global.metalGroup.forEach((metal) => {
                     Fluid.of("minecraft:lava", 250)
                 ]
             )
-
         }
-
     })
-
-
 })
