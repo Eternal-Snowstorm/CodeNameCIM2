@@ -408,15 +408,17 @@ ServerEvents.recipes((event) => {
 		C: "#forge:dusts/soul_infused"
 	})
 
-	// 
+	// 硝化起爆器
 	kubejs.shaped("thermal_extra:nitratic_igniter", [
-		"C",
-		"B",
-		"A"
+		"ECE",
+		"DBD",
+		"EAE"
 	], {
 		A: "cmi:resonant_mechanism",
-		B: "thermal:machine_pulverizer",
-		C: "minecraft:tnt"
+		B: "thermal:machine_frame",
+		C: "cmi:flame_retardant_plastic",
+		D: "cmi:nitrocellulose",
+		E: "cmi:siltsteel_plate"
 	})
 
 	// 

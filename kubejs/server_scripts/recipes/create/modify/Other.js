@@ -106,42 +106,39 @@ ServerEvents.recipes((event) => {
 
 	// 小引擎
 	kubejs.shaped("createdieselgenerators:diesel_engine", [
-		" A ",
+		"ABA",
 		"BCB",
-		"DED"
+		"DDD"
 	], {
-		A: "minecraft:flint_and_steel",
-		B: "createdieselgenerators:engine_piston",
-		C: "#forge:storage_blocks/bronze",
-		D: "minecraft:polished_blackstone_slab",
-		E: "cmi:bronze_mechanism"
+		A: "createdieselgenerators:engine_piston",
+		B: "#forge:plates/brass",
+		C: "create:precision_mechanism",
+		D: "tconstruct:seared_brick"
 	}).id("creatediselgenerators:diesel_engine")
 
 	// 中引擎
 	kubejs.shaped("createdieselgenerators:large_diesel_engine", [
-		" A ",
+		"ABA",
 		"BCB",
-		"DED"
+		"DDD"
 	], {
-		A: "create:andesite_alloy",
-		B: "create:precision_mechanism",
-		C: "createdieselgenerators:diesel_engine",
-		D: "minecraft:polished_blackstone_slab",
-		E: "#forge:storage_blocks/brass"
+		A: "createdieselgenerators:engine_piston",
+		B: "#forge:plates/cast_iron",
+		C: "cmi:light_engineering_mechanism",
+		D: "tconstruct:scorched_brick"
 	}).id("creatediselgenerators:large_diesel_engine")
 
 	// 大引擎
 	kubejs.shaped("createdieselgenerators:huge_diesel_engine", [
-		"ZAZ",
-		"BCB",
-		"DED"
+		"ABA",
+		"CDC",
+		"AEA"
 	], {
-		Z: "create:andesite_alloy",
-		A: "minecraft:flint_and_steel",
-		B: "cmi:light_engineering_mechanism",
-		C: "create:steam_engine",
-		D: "create:fluid_pipe",
-		E: "#forge:storage_blocks/steel"
+		A: "#forge:plates/steel",
+		B: "minecraft:flint_and_steel",
+		C: "cmi:heavy_engineering_mechanism",
+		D: "create:steam_engine",
+		E: "create:fluid_pipe"
 	}).id("creatediselgenerators:huge_diesel_engine")
 
 	// 电容

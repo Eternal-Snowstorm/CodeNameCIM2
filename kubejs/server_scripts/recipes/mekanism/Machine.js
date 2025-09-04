@@ -1,14 +1,14 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-    let casing = "mekanism:steel_casing"
-    let alloyB = "minecraft:redstone"
-    let alloyA = "mekanism:alloy_infused"
-    let alloyE = "mekanism:alloy_reinforced"
-    let alloyU = "mekanism:alloy_atomic"
-    let mechB = "cmi:basic_mekanism_mechanism"
-    let mechA = "cmi:advanced_mekanism_mechanism"
-    let mechE = "cmi:elite_mekanism_mechanism"
-    let mechU = "cmi:ultimate_mekanism_mechanism"
+	let casing = "mekanism:steel_casing"
+	let alloyB = "minecraft:redstone"
+	let alloyA = "mekanism:alloy_infused"
+	let alloyE = "mekanism:alloy_reinforced"
+	let alloyU = "mekanism:alloy_atomic"
+	let mechB = "cmi:basic_mekanism_mechanism"
+	let mechA = "cmi:advanced_mekanism_mechanism"
+	let mechE = "cmi:elite_mekanism_mechanism"
+	let mechU = "cmi:ultimate_mekanism_mechanism"
 
 	// Os压缩机
 	kubejs.shaped("mekanism:osmium_compressor", [
@@ -48,14 +48,13 @@ ServerEvents.recipes((event) => {
 
 	// 提纯仓
 	kubejs.shaped("mekanism:purification_chamber", [
+		"ACA",
 		"ABA",
-		"CDC",
-		"ABA"
+		"ACA"
 	], {
-		A: alloyA,
-		B: mechA,
-		C: "#forge:ingots/osmium",
-		D: "mekanism:enrichment_chamber",
+		A: "#forge:plates/stainless_steel",
+		B: "thermal_extra:nitratic_igniter",
+		C: mechA
 	}).id("mekanism:purification_chamber")
 
 	// 炉子
@@ -201,14 +200,14 @@ ServerEvents.recipes((event) => {
 		B: "cmi:stone_mechanism",
 		C: mechB,
 		D: "#forge:ingots/copper",
-        E: casing
+		E: casing
 	}).id("mekanismgenerators:generator/heat")
 
 	// 电池
 	kubejs.shaped("mekanism:energy_tablet", [
 		"A",
-        "B",
-        "A"
+		"B",
+		"A"
 	], {
 		A: alloyA,
 		B: "cmi:gold_mechanism",

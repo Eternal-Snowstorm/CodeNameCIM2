@@ -18,5 +18,16 @@ ServerEvents.recipes((event) => {
 		B: "thermal:iron_gear",
 		C: "cmi:andesite_mechanism"
 	})
-	
+
+	// 高炉
+	kubejs.shaped("minecraft:blast_furnace", [
+		"AAA",
+		"ABA",
+		"CCC"
+	], {
+		A: "#forge:plates/andesite_alloy",
+		B: "minecraft:furnace",
+		C: "minecraft:smooth_stone"
+	})
+		.id("minecraft:blast_furnace")
 })

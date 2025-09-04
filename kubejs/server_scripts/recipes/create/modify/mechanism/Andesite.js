@@ -93,9 +93,9 @@ ServerEvents.recipes((event) => {
 
 	// 动力辊压机
 	kubejs.shaped("create:mechanical_press", [
-		"B",
-		"A",
-		"C"
+		" B ",
+		" A ",
+		" C "
 	], {
 		A: casing,
 		B: mech,
