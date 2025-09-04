@@ -98,67 +98,9 @@ ItemEvents.tooltip((event) => {
 		"dust",
 		"rod"
 	]
-	let meltingPoints = {
-		// null代表该金属现实不存在, 所需熔点是随便写的一个数值
-		andesite_alloy: 1200, // null
-		aluminum: 660,
-		brass: 930,
-		bronze: 950,
-		cobalt: 1495,
-		constantan: 1200,
-		copper: 1085,
-		cast_iron: 1200,
-		electrum: 1060,
-		gold: 1064,
-		invar: 1425,
-		iron: 1535,
-		siltsteel: 1400, // null
-		lead: 327,
-		lumium: 1000, // null
-		netherite: 2050, // null
-		nickel: 1455,
-		osmium: 3033,
-		signalum: 1200, // null
-		silver: 962,
-		steel: 1370,
-		tin: 232,
-		zinc: 419,
-		rose_gold: 960,
-		hepatizon: 990, // null
-		manyullyn: 1600, // null
-		amethyst_bronze: 1020, // null
-		vanadium: 1910,
-		chromium: 1907,
-		enderium: 1500, // null
-		platinum: 1768,
-		uranium: 1132,
-		desh: 1450, // null
-		ostrum: 1650, // null
-		calorite: 1800, // null
-		prismalium: 1700, // null
-		melodium: 1750, // null
-		stellarium: 1800, // null
-		soul_infused: 1900, // null
-		shellite: 1500, // null
-		twinite: 1600, // null
-		dragonsteel: 2100, // null
-		abyssal: 1950, // null
-		stainless_steel: 1510,
-		slimesteel: 1100, // null
-		pig_iron: 1150,
-		cinderslime: 1300, // null
-		queens_slime: 1200, // null
-		industrial_iron: 1500, // null
-		refined_obsidian: 1400, // null
-		refined_glowstone: 900, // null
-		magnesium: 650,
-		sodium: 98,
-		potassium: 64,
-		calcium: 842
-	}
 	materialTypeList.forEach((type) => {
 		global.metalGroup.forEach((material) => {
-			let mp = meltingPoints[material]
+			let mp = global.meltingPoints[material]
 
 			if (mp !== null) {
 				let translatable = Component.translatable(
@@ -174,7 +116,7 @@ ItemEvents.tooltip((event) => {
 
 	// 碎矿单独循环一次
 	global.metalGroup.forEach((material) => {
-		let mp = meltingPoints[material]
+		let mp = global.meltingPoints[material]
 
 		if (mp !== null) {
 			let translatable = Component.translatable(
