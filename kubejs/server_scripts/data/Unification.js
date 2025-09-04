@@ -12,7 +12,7 @@ ServerEvents.highPriorityData((event) => {
 		global.metalGroup.forEach((material) => {
 			let ids = Ingredient.of(`#forge:${type}s/${material}`).getItemIds()
 			if (ids.length > 0) {
-				addJsonFile(`${material}_${type}`, addUnification(
+				event.addJson(`oei:replacements/${material}_${type}.json`, addUnification(
 					ids,
 					ids[0]
 				))
@@ -25,7 +25,7 @@ ServerEvents.highPriorityData((event) => {
 	global.metalGroup.forEach((material) => {
 		let ids = Ingredient.of(`#forge:raw_materials/${material}`).getItemIds()
 		if (ids.length > 0) {
-			addJsonFile(`raw_${material}`, addUnification(
+			event.addJson(`oei:replacements/raw_${material}.json`, addUnification(
 				ids,
 				ids[0]
 			))
@@ -37,7 +37,7 @@ ServerEvents.highPriorityData((event) => {
 	global.metalGroup.forEach((material) => {
 		let ids = Ingredient.of(`#forge:storage_blocks/raw_${material}`).getItemIds()
 		if (ids.length > 0) {
-			addJsonFile(`raw_${material}_block`, addUnification(
+			event.addJson(`oei:replacements/raw_${material}_block.json`, addUnification(
 				ids,
 				ids[0]
 			))
