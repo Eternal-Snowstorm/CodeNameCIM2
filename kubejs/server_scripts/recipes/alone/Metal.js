@@ -430,7 +430,7 @@ ServerEvents.recipes((event) => {
 				immersiveengineering.crusher(DUST, RAW_ORE)
 					.secondaries(Item.of(IngredientUtils.getFirstItemId(DUST)).withChance(1 / 3))
 
-				mekanism.enriching(`4x ${DUST}`, `3x ${RAW_ORE}`)
+				// mekanism.enriching(`4x ${DUST}`, `3x ${RAW_ORE}`)
 			} else {
 				console.warn(`No raw material found for ${metal}!`)
 			}
@@ -443,7 +443,8 @@ ServerEvents.recipes((event) => {
 					.secondaries([])
 					.input(ORE)
 
-				mekanism.enriching(`2x ${DUST}`, ORE)
+				// mekanism.enriching(`2x ${DUST}`, ORE)
+
 			} else {
 				console.warn(`No ore found for ${metal}!`)
 			}
@@ -452,12 +453,14 @@ ServerEvents.recipes((event) => {
 					.secondaries([])
 					.input(RAW_BLOCK)
 
-				mekanism.enriching(`12x ${DUST}`, RAW_BLOCK)
+				// mekanism.enriching(`12x ${DUST}`, RAW_BLOCK)
 			} else {
 				console.warn(`No storage block found for raw ${metal}!`)
 			}
+
 		} else {
 			console.warn(`No dust found for ${metal}!`)
+
 		}
 
 		if (IngredientUtils.isNotNull(PLATE)) {
