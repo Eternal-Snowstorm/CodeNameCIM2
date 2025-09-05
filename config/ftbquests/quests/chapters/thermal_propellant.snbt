@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "thermal:rf_coil"
 	id: "62433C137A51E5F8"
-	order_index: 7
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{

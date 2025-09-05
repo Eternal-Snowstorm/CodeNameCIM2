@@ -93,7 +93,7 @@ ServerEvents.recipes((event) => {
 					.temperature(meltingPoint)
 			}
 
-			if (namespace = "v") {
+			if (namespace === "v") {
 				event.custom({
 					"type": "tconstruct:material_melting",
 					"input": `tconstruct:${metal}`,
@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
 					},
 					"temperature": meltingPoint
 				})
-			} if (namespace = "t") {
+			} if (namespace === "t") {
 				event.custom({
 					"type": "tconstruct:material_melting",
 					"input": `thermalconstruct:${metal}`,
@@ -113,7 +113,7 @@ ServerEvents.recipes((event) => {
 					},
 					"temperature": meltingPoint
 				})
-			} if (namespace = "c") {
+			} if (namespace === "c") {
 				event.custom({
 					"type": "tconstruct:material_melting",
 					"input": `cmi:${metal}`,

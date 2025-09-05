@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "immersiveengineering:arc_furnace"
 	id: "6D70BA971FA80DD3"
-	order_index: 8
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
