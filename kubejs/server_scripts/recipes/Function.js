@@ -3,12 +3,16 @@ let $FluidTags =
 	Java.loadClass("net.minecraft.tags.FluidTags")
 let $BuiltInRegistries =
 	Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
+
 let $RegistryInfo =
 	Java.loadClass("dev.latvian.mods.kubejs.registry.RegistryInfo")
+
 let $MekanismAPI =
 	Java.loadClass("mekanism.api.MekanismAPI")
 let $Slurry =
 	Java.loadClass("mekanism.api.chemical.slurry.Slurry")
+let $Gas =
+	Java.loadClass("mekanism.api.chemical.gas.Gas")
 
 let IngredientUtils = {
 	/**
@@ -25,7 +29,7 @@ let IngredientUtils = {
 		if (ids.length > 0) {
 			return ids[0]
 		} else {
-			console.warn(`${ingredient}下没有对应物品`)
+			console.warn(`No corresponding item under ${ingredient}`)
 			return null
 		}
 	},
@@ -47,27 +51,8 @@ let IngredientUtils = {
 				return getFluidKey
 			}
 		}
-		console.warn(`${fluidTag}下没有对应流体`)
+		console.warn(`No corresponding fluid under ${fluidTag}`)
 		return null
-	},
-
-	/**
-	 * 表示通用机械的气体
-	 * @param {string} gas 气体ID
-	 * @param {number | undefined} amount 数量
-	 * @returns 
-	 */
-	ofMekanismGas: function (gas, amount) {
-		if (amount === undefined) {
-			return {
-				gas: gas,
-				amount: 1000
-			}
-		}
-		return {
-			gas: gas,
-			amount: amount
-		}
 	},
 
 	/**
@@ -80,17 +65,30 @@ let IngredientUtils = {
 	}
 }
 
-let MekanismElement = {
-	slurry: {
+let MekanismType = {
+	Slurry: {
 		exists: function (id) {
-			return addRegisterType($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry)
+			return $RegistryInfo.of($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry)
 				.hasValue(id)
-		}
+		},
+		of: makeOf("slurry")
+	},
+	Gas: {
+		exists: function (id) {
+			return $RegistryInfo.of($MekanismAPI.GAS_REGISTRY_NAME, $Gas)
+				.hasValue(id)
+		},
+		of: makeOf("gas")
 	}
 }
 
-function addRegisterType(key, type) {
-	return $RegistryInfo.of(key, type)
+function makeOf(type) {
+	return function (id, amount) {
+		let obj = {}
+		obj[type] = id
+		obj.amount = amount == null ? 1000 : amount
+		return obj
+	}
 }
 
 function aeCharger(output, input) {

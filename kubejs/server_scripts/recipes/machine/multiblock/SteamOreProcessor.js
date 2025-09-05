@@ -4,8 +4,8 @@ MMEvents.createProcesses((event) => {
 
 	// 核心处理函数
 	function addSteamOreProcessingRecipe(ore, dust) {
-		event.create(`mekanism:steam_ore_processor/${ore}`)
-			.structureId("mekanism:steam_ore_processor_structure")
+		event.create(`cmi:steam_ore_processor/${ore}`)
+			.structureId("cmi:steam_ore_processor_structure")
 			.ticks(400)
 			.input(addFluidInput("mekanism:steam", STEAM_AMOUNT))
 			.input(addItemInput(`forge:raw_materials/${ore}`, 1))
@@ -14,8 +14,8 @@ MMEvents.createProcesses((event) => {
 			.output(addFluidOutput("minecraft:water", 100))
 			.output(addFluidOutput("mekanism:sulfur_dioxide", 200))
 
-		event.create(`mekanism:steam_ore_processor/${ore}_block`)
-			.structureId("mekanism:steam_ore_processor_structure")
+		event.create(`cmi:steam_ore_processor/${ore}_block`)
+			.structureId("cmi:steam_ore_processor_structure")
 			.ticks(400)
 			.input(addFluidInput("mekanism:steam", STEAM_AMOUNT))
 			.input(addItemInput(`forge:ores/${ore}`, 1))

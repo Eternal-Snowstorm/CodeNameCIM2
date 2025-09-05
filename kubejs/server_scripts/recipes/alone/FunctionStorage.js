@@ -69,4 +69,37 @@ ServerEvents.recipes((event) => {
 		.cast("#functionalstorage:upgrades")
 		.cast_consumed(true)
 		.cooling_time(40)
+
+	// 流体抽屉1
+	kubejs.shaped("functionalstorage:fluid_1", [
+		"ABA",
+		"BCB",
+		"BAB"
+	], {
+		A: "#forge:storage_blocks/iron",
+		B: "#forge:plates/iron",
+		C: "minecraft:bucket"
+	}).id("functionalstorage:fluid_1")
+
+	// 流体抽屉2
+	kubejs.shaped("functionalstorage:fluid_2", [
+		"ACA",
+		"BAB",
+		"BCB"
+	], {
+		A: "#forge:storage_blocks/iron",
+		B: "#forge:plates/iron",
+		C: "minecraft:bucket"
+	}).id("functionalstorage:fluid_2")
+
+	// 流体抽屉4
+	kubejs.shaped("functionalstorage:fluid_4", [
+		"ACA",
+		"CAC",
+		"BCB"
+	], {
+		A: "#forge:storage_blocks/iron",
+		B: "#forge:plates/iron",
+		C: "minecraft:bucket"
+	}).id("functionalstorage:fluid_4")
 })
