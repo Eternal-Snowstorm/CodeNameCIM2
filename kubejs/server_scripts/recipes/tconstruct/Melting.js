@@ -11,40 +11,18 @@ ServerEvents.recipes((event) => {
 		.temperature(800)
 		.id("tconstruct:smeltery/melting/obsidian/block")
 
-	/*
-let moltenMaterialGroup = [
-	["andesite_alloy", 30]
-]
-moltenMaterialGroup.forEach(([material, moltingTime]) => {
-	tconstruct.melting(Fluid.of(`cmi:molten_${material}`, 90))
-		.ingredient(`#forge:ingots/${material}`)
-		.time(moltingTime)
-		.temperature(800)
-
-	tconstruct.melting(Fluid.of(`cmi:molten_${material}`, 810))
-		.ingredient(`#forge:storage_blocks/${material}`)
-		.time(3 * moltingTime)
-		.temperature(800)
-
-	tconstruct.melting(Fluid.of(`cmi:molten_${material}`, 90))
-		.ingredient(`#forge:plates/${material}`)
-		.time(moltingTime)
-		.temperature(800)
-})
-		*/
-
 	global.metalGroup.forEach((metal) => {
-
-		event.remove([{
-			id: new RegExp(`^tconstruct:smeltery/melting/metal/${metal}/.+`)
-		}, {
-			id: new RegExp(`^thermalconstruct:smeltery/melting/metal/${metal}/.+`)
-		}, {
-			id: new RegExp(`^tconstruct:tools/materials/melting/${metal}`)
-		}, {
-			id: new RegExp(`^thermalconstruct:smeltery/melting/${metal}`)
-		}]
-		)
+		event.remove([
+			{
+				id: new RegExp(`^tconstruct:smeltery/melting/metal/${metal}/.+`)
+			}, {
+				id: new RegExp(`^thermalconstruct:smeltery/melting/metal/${metal}/.+`)
+			}, {
+				id: new RegExp(`^tconstruct:tools/materials/melting/${metal}`)
+			}, {
+				id: new RegExp(`^thermalconstruct:smeltery/melting/${metal}`)
+			}
+		])
 
 		let meltingPoint = global.meltingPoints[metal]
 		let fluidId = IngredientUtils.getFirstFluidId(`forge:molten_${metal}`)
@@ -58,7 +36,7 @@ moltenMaterialGroup.forEach(([material, moltingTime]) => {
 		let block = `#forge:storage_blocks/${metal}`
 		let rawBlock = `#forge:storage_blocks/raw_${metal}`
 
-		if (fluidId != null) {
+		if (fluidId !== null) {
 			if (IngredientUtils.isNotNull(ingot)) {
 				tconstruct.melting(Fluid.of(fluidId, 90))
 					.ingredient(ingot)
@@ -146,9 +124,7 @@ moltenMaterialGroup.forEach(([material, moltingTime]) => {
 					"temperature": meltingPoint
 				})
 			}
-
 			console.log(`created recipes for material ${metal}`)
-
 		}
 	})
 
@@ -178,18 +154,10 @@ moltenMaterialGroup.forEach(([material, moltingTime]) => {
 	event.custom({
 		"type": "tconstruct:melting",
 		"byproducts": [
-			{
-				"amount": 125,
-				"fluid": "tconstruct:scorched_stone"
-			}
+			Fluid.of("tconstruct:scorched_stone", 125).toJson()
 		],
-		"ingredient": {
-			"tag": "create:stone_types/scorchia"
-		},
-		"result": {
-			"amount": 250,
-			"fluid": "tconstruct:seared_stone"
-		},
+		"ingredient": Ingredient.of("#create:stone_types/scorchia").toJson(),
+		"result": Fluid.of("tconstruct:seared_stone", 250).toJson(),
 		"temperature": 1000,
 		"time": 20 * 10
 	})
