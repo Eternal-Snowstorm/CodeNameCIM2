@@ -196,9 +196,9 @@ global.meltingPoints = {
 	"enderium": 1501, // null
 	"platinum": 1768,
 	"uranium": 1132,
-	"desh": 1452, // null
-	"ostrum": 1638, // null
-	"calorite": 1894, // null
+	"desh": 3094, // null
+	"ostrum": 3687, // null
+	"calorite": 4000, // null
 	"prismalium": 1741, // null
 	"melodium": 1755, // null
 	"stellarium": 1873, // null
@@ -219,6 +219,65 @@ global.meltingPoints = {
 	"sodium": 98,
 	"potassium": 64,
 	"calcium": 842
+}
+// 命名空间
+global.materialNamespace = {
+	// v代表该材料是由TIC本体添加的，t代表该材料是由热力工匠添加的，c代表该材料是由制作组自定义的,n代表无此材料
+	"andesite_alloy": "c",
+	"aluminum": "v",
+	"brass": "c",
+	"bronze": "v",
+	"cobalt": "v",
+	"constantan": "v",
+	"copper": "v",
+	"cast_iron": "c",
+	"electrum": "v",
+	"gold": "v",
+	"invar": "n",
+	"iron": "v",
+	"siltsteel": "n",
+	"lead": "v",
+	"lumium": "t",
+	"netherite": "v",
+	"nickel": "n",
+	"osmium": "v",
+	"signalum": "t",
+	"silver": "v",
+	"steel": "v",
+	"tin": "n",
+	"zinc": "v",
+	"rose_gold": "v",
+	"hepatizon": "v",
+	"manyullyn": "v",
+	"amethyst_bronze": "v",
+	"vanadium": "n",
+	"chromium": "n",
+	"enderium": "t",
+	"platinum": "n",
+	"uranium": "v",
+	"desh": "c",
+	"ostrum": "c",
+	"calorite": "c",
+	"prismalium": "t",
+	"melodium": "t",
+	"stellarium": "t",
+	"soul_infused": "t",
+	"shellite": "t",
+	"twinite": "t",
+	"dragonsteel": "t",
+	"abyssal": "t",
+	"stainless_steel": "c",
+	"slimesteel": "v",
+	"pig_iron": "v",
+	"cinderslime": "v",
+	"queens_slime": "v",
+	"industrial_iron": "c",
+	"refined_obsidian": "v",
+	"refined_glowstone": "t",
+	"magnesium": "c",
+	"sodium": "c",
+	"potassium": "c",
+	"calcium": "c"
 }
 // 熔点数组
 global.meltingLevels = {
@@ -252,7 +311,6 @@ global.meltingLevels = {
 		"queens_slime",
 		"signalum",
 		"invar",
-		"desh",
 		"nickel",
 		"cobalt",
 		"industrial_iron",
@@ -267,11 +325,9 @@ global.meltingLevels = {
 		"iron",
 		"manyullyn",
 		"twinite",
-		"ostrum",
 		"prismalium",
 		"melodium",
 		"platinum",
-		"calorite",
 		"stellarium",
 		"vanadium",
 		"chromium",
@@ -280,6 +336,9 @@ global.meltingLevels = {
 		"amethyst_bronze"
 	],
 	"above": [
+		"desh",
+		"ostrum",
+		"calorite",
 		"netherite",
 		"dragonsteel",
 		"osmium"

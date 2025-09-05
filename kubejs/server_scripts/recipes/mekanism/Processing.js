@@ -45,13 +45,13 @@ ServerEvents.recipes((event) => {
     )
 
     materials.forEach((material) => {
-        const CRYSTAL = `#mekanism:crystals/${material}`
-        const SHARD = `#mekanism:shards/${material}`
-        const CLUMP = `#mekanism:clumps/${material}`
-        const DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
-        const DUST = `#forge:dusts/${material}`
-        const SLURRY = getSlurry(material)
-        const DIRTY_SLURRY = getDirtySlurry(material)
+        let CRYSTAL = `#mekanism:crystals/${material}`
+        let SHARD = `#mekanism:shards/${material}`
+        let CLUMP = `#mekanism:clumps/${material}`
+        let DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
+        let DUST = `#forge:dusts/${material}`
+        let SLURRY = getSlurry(material)
+        let DIRTY_SLURRY = getDirtySlurry(material)
 
         if (DIRTY_SLURRY !== null) {
             if (IngredientUtils.isNotNull(`#forge:raw_materials/${material}`)) {
