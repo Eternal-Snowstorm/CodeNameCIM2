@@ -351,6 +351,12 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:dusts/niter")
 		.add("immersiveengineering:dust_saltpeter")
 
+	event.get("mekanism:crystals/gold")
+		.remove("mekanism:crystal_gold")
+
+	event.get("mekanism:crystals")
+		.remove("mekanism:crystal_gold")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
