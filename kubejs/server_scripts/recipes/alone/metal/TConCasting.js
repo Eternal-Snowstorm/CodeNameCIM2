@@ -1,10 +1,7 @@
 ServerEvents.recipes((event) => {
-	let {
-		thermal,
-		tconstruct
-	} = event.recipes
+	let { thermal, tconstruct } = event.recipes
 
-	global.metalGroups.forEach((metal) => {
+	global.metalGroup.forEach((metal) => {
 		let fluid = IngredientUtils.getFirstFluidId(`forge:molten_${metal}`)
 
 		if (fluid === null) {
@@ -27,11 +24,13 @@ ServerEvents.recipes((event) => {
 			.cast(`${MULTI_USE_CAST}/ingot`)
 			.fluid(Fluid.of(fluid, 90))
 			.cooling_time(20 * 3)
+
 		tconstruct.casting_table(INGOT)
 			.cast(`${SINGLE_USE_CAST}/ingot`)
 			.fluid(Fluid.of(fluid, 90))
 			.cooling_time(20 * 3)
 			.cast_consumed(true)
+
 		thermal.chiller(INGOT, [
 			Fluid.of(fluid, 90),
 			"thermal:chiller_ingot_cast"
@@ -42,11 +41,13 @@ ServerEvents.recipes((event) => {
 				.cast(`${MULTI_USE_CAST}/nugget`)
 				.fluid(Fluid.of(fluid, 10))
 				.cooling_time(20 * 1)
+
 			tconstruct.casting_table(NUGGET)
 				.cast(`${SINGLE_USE_CAST}/nugget`)
 				.fluid(Fluid.of(fluid, 10))
 				.cooling_time(20 * 1)
 				.cast_consumed(true)
+
 			thermal.chiller(NUGGET, [
 				Fluid.of(fluid, 10),
 				"cmi:bronze_nugget_cast"

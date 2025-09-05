@@ -1,12 +1,12 @@
 ServerEvents.recipes((event) => {
-        
+	let { thermal } = event.recipes
 
-    global.metalGroup.forEach((metal) => {
-        const INGOT = `#forge:ingots/${metal}`
+	global.metalGroup.forEach((metal) => {
+		const INGOT = `#forge:ingots/${metal}`
 		const NUGGET = `#forge:nuggets/${metal}`
 		const COIN = `#forge:coins/${metal}`
-        
-        if (IngredientUtils.isNotNull(COIN)) {
+
+		if (IngredientUtils.isNotNull(COIN)) {
 			thermal.press(`3x ${COIN}`, [
 				INGOT,
 				"thermal:press_coin_die"
@@ -30,5 +30,5 @@ ServerEvents.recipes((event) => {
 				output: COIN
 			}
 		])
-    })
+	})
 })

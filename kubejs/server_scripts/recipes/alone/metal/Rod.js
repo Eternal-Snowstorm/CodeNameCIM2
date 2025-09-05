@@ -1,15 +1,11 @@
 ServerEvents.recipes((event) => {
-	let {
-		createaddition,
-		thermal,
-		immersiveengineering
-	} = event.recipes
+	let { createaddition, thermal, immersiveengineering } = event.recipes
 
-    global.metalGroup.forEach((metal) => {
-        const INGOT = `#forge:ingots/${metal}`
-        const ROD = `#forge:rods/${metal}`
+	global.metalGroup.forEach((metal) => {
+		const INGOT = `#forge:ingots/${metal}`
+		const ROD = `#forge:rods/${metal}`
 
-        if (IngredientUtils.isNotNull(ROD)) {
+		if (IngredientUtils.isNotNull(ROD)) {
 			createaddition.rolling(`2x ${ROD}`, [
 				INGOT
 			])
@@ -38,5 +34,5 @@ ServerEvents.recipes((event) => {
 				output: ROD
 			}
 		])
-    })
+	})
 })

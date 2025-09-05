@@ -1,14 +1,14 @@
 ServerEvents.recipes((event) => {
-    let { create } = event.recipes
+	let { create } = event.recipes
 
-    global.materials.forEach((material) => {
-        const RAW_ORE = `#forge:raw_materials/${metal}`
+	global.metalGroup.forEach((metal) => {
+		const RAW_ORE = `#forge:raw_materials/${metal}`
 		const RAW_BLOCK = `#forge:storage_blocks/raw_${metal}`
 		const CRUSHED = `#create:crushed_raw_materials/${metal}`
 		const ORE = `#forge:ores/${metal}`
-        const EXP_NUGGET = "create:experience_nugget"
+		const EXP_NUGGET = "create:experience_nugget"
 
-        if (IngredientUtils.isNotNull(CRUSHED)) {
+		if (IngredientUtils.isNotNull(CRUSHED)) {
 			if (IngredientUtils.isNotNull(RAW_BLOCK)) {
 				create.crushing([
 					`9x ${CRUSHED}`,
@@ -48,5 +48,5 @@ ServerEvents.recipes((event) => {
 				output: RAW_ORE
 			}
 		])
-    })
+	})
 })
