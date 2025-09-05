@@ -1,11 +1,14 @@
 ServerEvents.recipes((event) => {
-	addFuel("ad_astra:cryo_fuel", 4000)
-	addFuel("cmi:delta_unstable_solution", 1200)
-	addFuel("ad_astra:fuel", 1400)
-	addFuel(IngredientUtils.getFirstFluidId("forge:oil"), 1200)
-	addFuel("thermal:refined_fuel", 2000)
-	addFuel("cmi:turbid_waste_liquid", 1200)
-	addFuel("tconstruct:blazing_blood", 2500)
+	addFuel("ad_astra:cryo_fuel", 4225)
+	addFuel("cmi:delta_unstable_solution", 1206)
+	addFuel("ad_astra:fuel", 1417)
+	addFuel(IngredientUtils.getFirstFluidId("forge:oil"), 1220)
+	addFuel("thermal:refined_fuel", 2041)
+	addFuel("cmi:turbid_waste_liquid", 1189)
+	addFuel("tconstruct:blazing_blood", 2638)
+	addFuel(IngredientUtils.getFirstFluidId("forge:ethanol"), 1132)
+	addFuel("createdieselgenerators:plant_oil", 1027)
+	addFuel("createdieselgenerators:biodiesel", 1636)
 
 	/**
 	 * 添加匠魂流体燃料
@@ -32,4 +35,12 @@ ServerEvents.recipes((event) => {
 			"temperature": temperature
 		})
 	}
+
+	// 固体燃料
+	event.custom({
+		"type": "tconstruct:melting_fuel",
+		"rate": 9,
+		"temperature": 937
+	})
+		.id("tconstruct:smeltery/melting/fuel/solid")
 })

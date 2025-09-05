@@ -78,7 +78,11 @@ ServerEvents.recipes((event) => {
 		"create:milling/sugar_cane",
 		"farmersdelight:cutting/sugar_cane_alt",
 		"mekanism:processing/gold/crystal/from_slurry",
-		"mekanism:processing/gold/shard/from_crystal"
+		"mekanism:processing/gold/shard/from_crystal",
+		"immersiveengineering:refinery/biodiesel",
+		"createdieselgenerators:basin_fermenting/fermentable",
+		"createdieselgenerators:basin_fermenting/fermented_spider_eye",
+		"createaddition:mixing/bioethanol"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

@@ -51,13 +51,6 @@ ServerEvents.recipes((event) => {
 		"#forge:silicon"
 	]).processingTime(200).superheated()
 
-	// 乙醇
-	create.mixing(Fluid.of("immersiveengineering:ethanol", 125), [
-		"minecraft:sugar",
-		"create:cinder_flour",
-		"2x #forge:fuels/bio"
-	]).id("createaddition:mixing/bioethanol")
-
 	// 晶体催生剂
 	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
 		Fluid.of("immersiveengineering:redstone_acid", 500),
