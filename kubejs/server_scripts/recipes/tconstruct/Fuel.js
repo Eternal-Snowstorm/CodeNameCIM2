@@ -21,14 +21,20 @@ ServerEvents.recipes((event) => {
 	 * @returns RecipeJS
 	 */
 	function addFuel(name, temperature) {
+		let isTag = name.charAt(0) === "#"
+		let realName = isTag ? name.substring(1) : name
+
+		let fluidObj = { amount: 50 }
+		if (isTag) {
+			fluidObj.tag = realName
+		} else {
+			fluidObj.fluid = realName
+		}
+
 		return event.custom({
 			"type": "tconstruct:melting_fuel",
 			"duration": 150,
-			"fluid": {
-				"amount": 50,
-				[name.charAt(0) === "#" ? "tag" : "fluid"]:
-					name.charAt(0) === "#" ? name.substring(1) : name
-			},
+			"fluid": fluidObj,
 			"rate": temperature / 100,
 			"temperature": temperature
 		})
