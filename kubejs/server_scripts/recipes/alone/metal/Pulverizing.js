@@ -1,18 +1,14 @@
 ServerEvents.recipes((event) => {
-    let {
-        thermal,
-        immersiveengineering,
-        mekanism
-    } = event.recipes
+	let { thermal, immersiveengineering, mekanism } = event.recipes
 
-    global.metalGroup.forEach((metal) => {
-        const INGOT = `#forge:ingots/${metal}`
+	global.metalGroup.forEach((metal) => {
+		const INGOT = `#forge:ingots/${metal}`
 		const RAW_ORE = `#forge:raw_materials/${metal}`
 		const RAW_BLOCK = `#forge:storage_blocks/raw_${metal}`
 		const ORE = `#forge:ores/${metal}`
 		const DUST = `#forge:dusts/${metal}`
 
-        if (IngredientUtils.isNotNull(DUST)) {
+		if (IngredientUtils.isNotNull(DUST)) {
 			thermal.pulverizer(DUST, [
 				INGOT
 			]).energy(2000)
@@ -75,5 +71,5 @@ ServerEvents.recipes((event) => {
 				output: DUST
 			}
 		])
-    })
+	})
 })

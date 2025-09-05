@@ -1,13 +1,14 @@
 ServerEvents.recipes((event) => {
-    let { kubejs } = event.recipes;
-    global.metalGroups.forEach((metal) => {
+	let { kubejs } = event.recipes
+
+	global.metalGroup.forEach((metal) => {
 		const INGOT = `#forge:ingots/${metal}`
 		const NUGGET = `#forge:nuggets/${metal}`
 		const BLOCK = `#forge:storage_blocks/${metal}`
 		const RAW_ORE = `#forge:raw_materials/${metal}`
 		const RAW_BLOCK = `#forge:storage_blocks/raw_${metal}`
-		
-        if (IngredientUtils.isNotNull(BLOCK)) {
+
+		if (IngredientUtils.isNotNull(BLOCK)) {
 			kubejs.shapeless(`9x ${INGOT}`, [
 				BLOCK
 			])
@@ -21,7 +22,7 @@ ServerEvents.recipes((event) => {
 		} else {
 			console.warn(`No storage block found for ${metal}!`)
 		}
-        if (IngredientUtils.isNotNull(NUGGET)) {
+		if (IngredientUtils.isNotNull(NUGGET)) {
 			kubejs.shapeless(`9x ${NUGGET}`, [
 				INGOT
 			])
@@ -82,5 +83,5 @@ ServerEvents.recipes((event) => {
 				output: RAW_BLOCK
 			}
 		])
-    })
+	})
 })

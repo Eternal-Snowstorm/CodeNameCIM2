@@ -1,15 +1,11 @@
 ServerEvents.recipes((event) => {
-    let {
-        create,
-        thermal,
-        immersiveengineering
-    } = event.recipes
+	let { create, thermal, immersiveengineering } = event.recipes
 
-    global.metalGroup.forEach((metal) => {
-        const INGOT = `#forge:ingots/${metal}`
-        const PLATE = `#forge:plates/${metal}`
+	global.metalGroup.forEach((metal) => {
+		const INGOT = `#forge:ingots/${metal}`
+		const PLATE = `#forge:plates/${metal}`
 
-        if (IngredientUtils.isNotNull(PLATE)) {
+		if (IngredientUtils.isNotNull(PLATE)) {
 			create.pressing(PLATE, [
 				INGOT
 			])
@@ -35,5 +31,5 @@ ServerEvents.recipes((event) => {
 				output: PLATE
 			}
 		])
-    })
+	})
 })
