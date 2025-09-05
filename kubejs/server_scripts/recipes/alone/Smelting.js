@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { minecraft, mekanism } = event.recipes
+    let { minecraft, mekanism, immersiveengineering } = event.recipes
     let types = ["forge:raw_materials", "forge:dusts", "create:crushed_raw_materials"]
     let furnaceMetals = global.meltingLevels[1000]
     let blastFurnaceMetals = global.meltingLevels[1500]
@@ -32,6 +32,13 @@ ServerEvents.recipes((event) => {
                     "time": 200,
                     "tickEnergy": 32
                 })
+                immersiveengineering.arc_furnace(ingotId[0])
+                    .input(`#${type}/${metal}`)
+                    .additives([])
+                mekanism.smelting(
+                    ingotId[0],
+                    `#${type}/${metal}`
+                )
             }
         })
         blastFurnaceMetals.forEach((metal) => {
@@ -54,6 +61,13 @@ ServerEvents.recipes((event) => {
                     "time": 200,
                     "tickEnergy": 32
                 })
+                immersiveengineering.arc_furnace(ingotId[0])
+                    .input(`#${type}/${metal}`)
+                    .additives([])
+                mekanism.smelting(
+                    ingotId[0],
+                    `#${type}/${metal}`
+                )
             }
         })
         arcFurnaceMetals.forEach((metal) => {
@@ -71,6 +85,9 @@ ServerEvents.recipes((event) => {
                     "time": 200,
                     "tickEnergy": 32
                 })
+                immersiveengineering.arc_furnace(ingotId[0])
+                    .input(`#${type}/${metal}`)
+                    .additives([])
                 mekanism.smelting(
                     ingotId[0],
                     `#${type}/${metal}`
