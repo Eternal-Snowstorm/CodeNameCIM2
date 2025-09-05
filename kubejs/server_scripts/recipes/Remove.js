@@ -76,7 +76,9 @@ ServerEvents.recipes((event) => {
 		"minecraft:paper",
 		"minecraft:sugar_from_sugar_cane",
 		"create:milling/sugar_cane",
-		"farmersdelight:cutting/sugar_cane_alt"
+		"farmersdelight:cutting/sugar_cane_alt",
+		"mekanism:processing/gold/crystal/from_slurry",
+		"mekanism:processing/gold/shard/from_crystal"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
