@@ -205,7 +205,7 @@ global.meltingPoints = {
 	"uranium": 1132,
 	"desh": 3094, // null
 	"ostrum": 3687, // null
-	"calorite": 4000, // null
+	"calorite": 4003, // null
 	"prismalium": 1741, // null
 	"melodium": 1755, // null
 	"stellarium": 1873, // null
