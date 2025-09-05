@@ -37,19 +37,18 @@ let materials = [
     "cobalt",
     "osmium"
 ]
+ServerEvents.recipes((event) => {
+    materials.forEach((material) => {
 
-materials.forEach((material) => {
+        const CRYSTAL = `mekanism:crystals/${material}`
+        const SHARD = `#mekanism:shards/${material}`
+        const CLUMP = `#mekanism:clumps/${material}`
+        const DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
+        const DUST = `#forge:dusts/${material}`
 
-    const CRYSTAL = `mekanism:crystals/${material}`
-    const SHARD = `#mekanism:shards/${material}`
-    const CLUMP = `#mekanism:clumps/${material}`
-    const DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
-    const DUST = `#forge:dusts/${material}`
+        const SLURRY = getSlurry(material)
+        const DIRTY_SLURRY = getDirtySlurry(material)
 
-    const SLURRY = getSlurry(material)
-    const DIRTY_SLURRY = getDirtySlurry(material)
-
-    ServerEvents.recipes((event) => {
         let { mekanism } = event.recipes
         if (DIRTY_SLURRY !== null) {
             if (IngredientUtils.isNotNull(`#forge:raw_materials/${material}`)) {
@@ -173,6 +172,5 @@ materials.forEach((material) => {
                 DIRTY_DUST
             ).id(`mekanism:processing/${material}/dust/from_dirty_dust`)
         }
-
     })
 })

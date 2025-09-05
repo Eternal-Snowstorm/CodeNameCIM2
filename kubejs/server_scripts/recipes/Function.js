@@ -86,7 +86,7 @@ function makeOf(type) {
 	return function (id, amount) {
 		let obj = {}
 		obj[type] = id
-		obj.amount = amount == null ? 1000 : amount
+		obj.amount = amount === null ? 1000 : amount
 		return obj
 	}
 }

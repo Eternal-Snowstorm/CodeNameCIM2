@@ -48,6 +48,7 @@ ServerEvents.recipes((event) => {
 		"createdieselgenerators:crafting/huge_diesel_engine",
 		"create:crafting/kinetics/flywheel",
 		"mekanism:processing/lategame/antimatter/from_pellet",
+		"tconstruct:smeltery/melting/fuel/blaze",
 		"mekanism:processing/lategame/antimatter_pellet/from_gas",
 		"tconstruct:common/basalt_blast_furnace",
 		"tconstruct:common/glass/vanilla/daylight_detector",
@@ -283,6 +284,10 @@ ServerEvents.recipes((event) => {
 				type: "tconstruct:melting"
 			}, {
 				type: "tconstruct:ore_melting"
+			}, {
+				type: "tconstruct:damagable_melting"
+			}, {
+				type: "tconstruct:material_melting"
 			}, {
 				type: "tconstruct:casting_table",
 				output: `#forge:ingots/${metal}`,
