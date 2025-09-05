@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "cmi:accelerator"
 	id: "057D31FCDB4D0CD8"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{

@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "mekanism:alloy_atomic"
 	id: "7B300D6F9D557241"
-	order_index: 10
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{

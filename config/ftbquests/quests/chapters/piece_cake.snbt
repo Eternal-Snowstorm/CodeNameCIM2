@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "mekanism:pellet_antimatter"
 	id: "18F1DE7F79086F03"
-	order_index: 12
+	order_index: 11
 	quest_links: [ ]
 	quests: [
 		{
