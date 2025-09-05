@@ -29,6 +29,13 @@ moltenMaterialGroup.forEach(([material, moltingTime]) => {
 })
 		*/
 
+	global.metalGroup.forEach((metal) => {
+
+		let fluidId = IngredientUtils.getFirstFluidId(`#forge:molten_${metal}`)
+		let ingot = `#forge:ingots/${metal}`
+
+	})
+
 	// 充能萤石
 	tconstruct.melting(Fluid.of("thermal:glowstone", 250))
 		.ingredient("#forge:dusts/glowstone")

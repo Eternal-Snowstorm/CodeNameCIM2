@@ -285,6 +285,10 @@ ServerEvents.recipes((event) => {
 			}, {
 				type: "tconstruct:ore_melting"
 			}, {
+				type: "tconstruct:damagable_melting"
+			}, {
+				type: "tconstruct:material_melting"
+			}, {
 				type: "tconstruct:casting_table",
 				output: `#forge:ingots/${metal}`,
 			}, {
