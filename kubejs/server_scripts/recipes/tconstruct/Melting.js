@@ -42,11 +42,7 @@ moltenMaterialGroup.forEach(([material, moltingTime]) => {
 		let block = `#forge:storage_blocks/${metal}`
 		let rawBlock = `#forge:storage_blocks/raw_${metal}`
 
-		event.remove(
-			{
-				id: `tconstruct:smeltery/melting/metal/${metal}/*`
-			}
-		)
+		
 
 	})
 

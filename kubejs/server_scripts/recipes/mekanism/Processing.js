@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
     )
 
     materials.forEach((material) => {
-        const CRYSTAL = `mekanism:crystals/${material}`
+        const CRYSTAL = `#mekanism:crystals/${material}`
         const SHARD = `#mekanism:shards/${material}`
         const CLUMP = `#mekanism:clumps/${material}`
         const DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
