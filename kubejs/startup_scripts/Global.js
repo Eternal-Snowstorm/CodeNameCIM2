@@ -196,9 +196,9 @@ global.meltingPoints = {
 	"enderium": 1501, // null
 	"platinum": 1768,
 	"uranium": 1132,
-	"desh": 1452, // null
-	"ostrum": 1638, // null
-	"calorite": 1894, // null
+	"desh": 3094, // null
+	"ostrum": 3687, // null
+	"calorite": 4000, // null
 	"prismalium": 1741, // null
 	"melodium": 1755, // null
 	"stellarium": 1873, // null
@@ -311,7 +311,6 @@ global.meltingLevels = {
 		"queens_slime",
 		"signalum",
 		"invar",
-		"desh",
 		"nickel",
 		"cobalt",
 		"industrial_iron",
@@ -326,11 +325,9 @@ global.meltingLevels = {
 		"iron",
 		"manyullyn",
 		"twinite",
-		"ostrum",
 		"prismalium",
 		"melodium",
 		"platinum",
-		"calorite",
 		"stellarium",
 		"vanadium",
 		"chromium",
@@ -339,6 +336,9 @@ global.meltingLevels = {
 		"amethyst_bronze"
 	],
 	"above": [
+		"desh",
+		"ostrum",
+		"calorite",
 		"netherite",
 		"dragonsteel",
 		"osmium"
