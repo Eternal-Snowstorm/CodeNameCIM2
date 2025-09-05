@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 			mekanism.purifying(
 				`2x ${CLUMP}`,
 				`#forge:raw_materials/${material}`,
-				"2x cmi:nitroglycerine"
+				"1x cmi:nitroglycerine"
 			).id(`mekanism:processing/${material}/clump/from_raw_ore`)
 		}
 
@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
 			mekanism.purifying(
 				`3x ${CLUMP}`,
 				`#forge:ores/${material}`,
-				"cmi:nitroglycerine"
+				"1x cmi:nitroglycerine"
 			).id(`mekanism:processing/${material}/clump/from_ore`)
 		}
 
@@ -52,7 +52,7 @@ ServerEvents.recipes((event) => {
 			mekanism.purifying(
 				CLUMP,
 				SHARD,
-				"cmi:nitroglycerine"
+				"1x cmi:nitroglycerine"
 			).id(`mekanism:processing/${material}/clump/from_shard`)
 		}
 
