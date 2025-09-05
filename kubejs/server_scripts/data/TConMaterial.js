@@ -55,7 +55,7 @@ ServerEvents.highPriorityData((event) => {
 			})
 			.addMaterialFluidRecipes("cmi:molten_andesite_alloy", (builder) => {
 				builder.amount(90)
-					.temperature(800)
+					.temperature(760)
 			})
 	})
 
@@ -81,7 +81,7 @@ ServerEvents.highPriorityData((event) => {
 			})
 			.addMaterialFluidRecipes("tconstruct:molten_brass", (builder) => {
 				builder.amount(90)
-					.temperature(810)
+					.temperature(930)
 			})
 	})
 
