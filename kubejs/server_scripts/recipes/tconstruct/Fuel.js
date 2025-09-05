@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 	 * 
 	 * @param {String} name 流体id
 	 * @param {Number} temperature 温度
-	 * @returns 
+	 * @returns RecipeJS
 	 */
 	function addFuel(name, temperature) {
 		return event.custom({
