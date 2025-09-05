@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	addFuel("ad_astra:cryo_fuel", 4000)
 	addFuel("cmi:delta_unstable_solution", 1200)
 	addFuel("ad_astra:fuel", 1400)
-	addFuel("#forge:oil", 1200)
+	addFuel(IngredientUtils.getFirstFluidId("forge:oil"), 1200)
 	addFuel("thermal:refined_fuel", 2000)
 	addFuel("cmi:turbid_waste_liquid", 1200)
 	addFuel("tconstruct:blazing_blood", 2500)
@@ -21,20 +21,13 @@ ServerEvents.recipes((event) => {
 	 * @returns RecipeJS
 	 */
 	function addFuel(name, temperature) {
-		let isTag = name.charAt(0) === "#"
-		let realName = isTag ? name.substring(1) : name
-
-		let fluidObj = { amount: 50 }
-		if (isTag) {
-			fluidObj.tag = realName
-		} else {
-			fluidObj.fluid = realName
-		}
-
 		return event.custom({
 			"type": "tconstruct:melting_fuel",
 			"duration": 150,
-			"fluid": fluidObj,
+			"fluid": {
+				"amount": 50,
+				"fluid": name
+			},
 			"rate": temperature / 100,
 			"temperature": temperature
 		})
