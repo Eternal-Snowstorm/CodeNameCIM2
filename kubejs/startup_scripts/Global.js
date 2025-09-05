@@ -163,7 +163,14 @@ global.metalGroup = [
 ]
 // 熔点对象
 global.meltingPoints = {
-	// null代表该金属现实不存在, 所需熔点是随便写的一个数值
+	/**
+	 * null代表该金属现实不存在, 所需熔点是随便写的一个数值
+	 * 
+	 * 熔炉1000
+	 * 高炉, 热力电炉1500
+	 * 车窑, 电弧炉2000
+	 * Mek熔炉全部可熔炼
+	 */
 	"andesite_alloy": 760, // null
 	"aluminum": 660,
 	"brass": 930,
