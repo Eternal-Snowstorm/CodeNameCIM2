@@ -31,14 +31,22 @@ moltenMaterialGroup.forEach(([material, moltingTime]) => {
 
 	global.metalGroup.forEach((metal) => {
 
+		let meltingPoint = global.meltingPoints[metal]
 		let fluidId = IngredientUtils.getFirstFluidId(`forge:molten_${metal}`)
 		let ingot = `#forge:ingots/${metal}`
 		let plate = `#forge:plates/${metal}`
 		let nugget = `#forge:nuggets/${metal}`
+		let gear = `#forge:gears/${metal}`
 		let dust = `#forge:dusts/${metal}`
 		let raw_material = `#forge:raw_materials/${metal}`
 		let block = `#forge:storage_blocks/${metal}`
 		let rawBlock = `#forge:storage_blocks/raw_${metal}`
+
+		event.remove(
+			{
+				id: `tconstruct:smeltery/melting/metal/${metal}/*`
+			}
+		)
 
 	})
 

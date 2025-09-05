@@ -8,6 +8,14 @@ ServerEvents.recipes((event) => {
 	let coreF = "ae2:formation_core"
 	let coreA = 'ae2:annihilation_core'
 
+	kubejs.shapeless(
+		"ae2:tiny_tnt", [
+		"minecraft:paper",
+		"cmi:trinitrotoluene",
+		"cmi:trinitrotoluene"
+	])
+		.id("ae2:misc/tiny_tnt")
+
 	kubejs.shaped("4x ae2:controller", [
 		"SCS",
 		"CMC",

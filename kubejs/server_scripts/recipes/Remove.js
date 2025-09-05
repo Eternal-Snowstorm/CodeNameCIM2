@@ -281,13 +281,35 @@ ServerEvents.recipes((event) => {
 				type: "mekanism:enriching",
 				input: `#forge:storage_blocks/raw_${metal}`
 			}, {
-				type: "tconstruct:melting"
+				type: "tconstruct:melting",
+				input: `#forge:ingots/${metal}`
 			}, {
-				type: "tconstruct:ore_melting"
+				type: "tconstruct:melting",
+				input: `#forge:nuggets/${metal}`,
 			}, {
-				type: "tconstruct:damagable_melting"
+				type: "tconstruct:melting",
+				input: `#forge:storage_blocks/${metal}`,
 			}, {
-				type: "tconstruct:material_melting"
+				type: "tconstruct:melting",
+				input: `#forge:plates/${metal}`,
+			}, {
+				type: "tconstruct:melting",
+				input: `#forge:dusts/${metal}`,
+			}, {
+				type: "tconstruct:melting",
+				input: `#forge:rods/${metal}`,
+			}, {
+				type: "tconstruct:melting",
+				input: `#forge:gears/${metal}`,
+			}, {
+				type: "tconstruct:ore_melting",
+				input: `#forge:raw_materials/${metal}`,
+			}, {
+				type: "tconstruct:ore_melting",
+				input: `#forge:storage_blocks/raw_${metal}`,
+			}, {
+				type: "tconstruct:ore_melting",
+				input: `#forge:ores/${metal}`
 			}, {
 				type: "tconstruct:casting_table",
 				output: `#forge:ingots/${metal}`,

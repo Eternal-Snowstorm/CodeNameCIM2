@@ -5,7 +5,7 @@ function getSlurry(material) {
     else if (MekanismType.Slurry.exists(`mekanism:clean_${material}`))
         slurry = `mekanism:clean_${material}`
     else if (MekanismType.Slurry.exists(`cmi:${material}_slurry`))
-        slurry = `cmi:${material}_slurry`  
+        slurry = `cmi:${material}_slurry`
     return slurry
 }
 
@@ -38,18 +38,21 @@ let materials = [
     "osmium"
 ]
 ServerEvents.recipes((event) => {
-    materials.forEach((material) => {
+    let { mekanism } = event.recipes
 
+    mekanism.gas_conversion("cmi:trinitrotoluene",
+        "100x cmi:nitroglycerine"
+    )
+
+    materials.forEach((material) => {
         const CRYSTAL = `mekanism:crystals/${material}`
         const SHARD = `#mekanism:shards/${material}`
         const CLUMP = `#mekanism:clumps/${material}`
         const DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
         const DUST = `#forge:dusts/${material}`
-
         const SLURRY = getSlurry(material)
         const DIRTY_SLURRY = getDirtySlurry(material)
 
-        let { mekanism } = event.recipes
         if (DIRTY_SLURRY !== null) {
             if (IngredientUtils.isNotNull(`#forge:raw_materials/${material}`)) {
                 mekanism.dissolution(
@@ -72,7 +75,7 @@ ServerEvents.recipes((event) => {
                     `#forge:ores/${material}`
                 ).id(`mekanism:processing/${material}/slurry/dirty/from_ore`)
             }
-            if (SLURRY !== null){
+            if (SLURRY !== null) {
                 mekanism.washing(
                     Fluid.of("minecraft:water", 5),
                     MekanismType.Slurry.of(DIRTY_SLURRY, 1),
