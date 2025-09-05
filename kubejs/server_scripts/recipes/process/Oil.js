@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, thermal, thermal_extra, tconstruct, immersiveengineering } = event.recipes
+	let { create, createdieselgenerators, thermal, thermal_extra, tconstruct } = event.recipes
 
 	// 蒸馏
 	createdieselgenerators.distillation([
@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:kerosene", 500),
 		Fluid.of("cmi:naphtha", 500)
 	], Fluid.of("ad_astra:oil", global.BUCKET_CAPACITY * 2))
-		.heatRequirement(global.HeatLevel["grilled"])
+		.heatRequirement(global.HeatLevel["heated"])
 		.id("createdieselgenerators:distillation/crude_oil")
 
 	// 蒸馏
@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:kerosene", 500),
 		Fluid.of("cmi:naphtha", 500)
 	], Fluid.of("thermal:crude_oil", global.BUCKET_CAPACITY * 2))
-		.heatRequirement(global.HeatLevel["grilled"])
+		.heatRequirement(global.HeatLevel["heated"])
 		.id("createdieselgenerators:distillation/crude_oil2")
 
 	// 蒸馏
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:kerosene", 100),
 		Fluid.of("cmi:naphtha", 100)
 	], Fluid.of("createdieselgenerators:crude_oil", global.BUCKET_CAPACITY))
-		.heatRequirement(global.HeatLevel["grilled"])
+		.heatRequirement(global.HeatLevel["heated"])
 		.id("createdieselgenerators:distillation/crude_oil3")
 
 	// 油页岩粉
