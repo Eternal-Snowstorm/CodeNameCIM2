@@ -120,7 +120,6 @@ ServerEvents.recipes((event) => {
 		.gasOutput(MekanismType.Gas.of("mekanism:water_vapor", 200))
 		.id("mekanism:rotary/water")
 
-
 	mekanism.rotary()
 		.fluidInput(Fluid.of("cmi:fluid_nitroglycerine", 1))
 		.gasOutput("1x cmi:nitroglycerine")

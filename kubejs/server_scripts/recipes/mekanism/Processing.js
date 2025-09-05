@@ -1,28 +1,28 @@
-let materials = [
-	"copper",
-	"iron",
-	"zinc",
-	"aluminum",
-	"nickel",
-	"platinum",
-	"chromium",
-	"vanadium",
-	"tin",
-	"silver",
-	"gold",
-	"lead",
-	"uranium",
-	"cobalt",
-	"osmium"
-]
-materials.forEach((material) => {
-	const SHARD = `#mekanism:shards/${material}`
-	const CLUMP = `#mekanism:clumps/${material}`
-	const DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
-	const DUST = `#forge:dusts/${material}`
+ServerEvents.recipes((event) => {
+	let { mekanism } = event.recipes
 
-	ServerEvents.recipes((event) => {
-		let { mekanism } = event.recipes
+	let materials = [
+		"copper",
+		"iron",
+		"zinc",
+		"aluminum",
+		"nickel",
+		"platinum",
+		"chromium",
+		"vanadium",
+		"tin",
+		"silver",
+		"gold",
+		"lead",
+		"uranium",
+		"cobalt",
+		"osmium"
+	]
+	materials.forEach((material) => {
+		const SHARD = `#mekanism:shards/${material}`
+		const CLUMP = `#mekanism:clumps/${material}`
+		const DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
+		const DUST = `#forge:dusts/${material}`
 
 		mekanism.purifying(
 			`2x ${CLUMP}`,
