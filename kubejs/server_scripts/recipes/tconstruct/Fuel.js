@@ -26,7 +26,8 @@ ServerEvents.recipes((event) => {
 			"duration": 150,
 			"fluid": {
 				"amount": 50,
-				[name.charAt(0) === "#" ? "tag" : "fluid"]: name.charAt(0) === "#" ? name.substring(1) : name
+				[name.charAt(0) === "#" ? "tag" : "fluid"]:
+					name.charAt(0) === "#" ? name.substring(1) : name
 			},
 			"rate": temperature / 100,
 			"temperature": temperature
