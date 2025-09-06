@@ -7,7 +7,7 @@ MMEvents.createProcesses((event) => {
 			ingredient: {
 				type: "mm:fluid",
 				fluid: "minecraft:water",
-				amount: global.BUCKET_CAPACITY * 5
+				amount: global.BUCKET_CAPACITY * 0.5
 			}
 		})
 		.input({
@@ -23,7 +23,7 @@ MMEvents.createProcesses((event) => {
 			ingredient: {
 				type: "mm:fluid",
 				fluid: "mekanism:steam",
-				amount: global.BUCKET_CAPACITY * 5
+				amount: global.BUCKET_CAPACITY * 1
 			}
 		})
 })

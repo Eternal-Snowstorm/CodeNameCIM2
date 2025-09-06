@@ -1,6 +1,6 @@
 MMEvents.createProcesses((event) => {
 	// 蒸汽输入量(1000)
-	const STEAM_AMOUNT = global.BUCKET_CAPACITY * 2
+	const STEAM_AMOUNT = global.BUCKET_CAPACITY * 0.4
 
 	// 核心处理函数
 	function addSteamOreProcessingRecipe(ore, dust) {
