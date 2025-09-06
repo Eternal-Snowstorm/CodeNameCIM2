@@ -81,10 +81,16 @@ ServerEvents.recipes((event) => {
 	}).id("vintageimprovements:pressurizing/sulfur_dioxide")
 
 	// 硫化
-	create.mixing(Fluid.of("cmi:cured_rubber", 1000), [
+	create.mixing(Fluid.of("cmi:cured_rubber", 500), [
 		"#forge:dusts/sulfur",
 		"#forge:plates/rubber"
 	]).heated()
+
+	create.mixing(Fluid.of("cmi:cured_rubber", 1000), [
+		"2x thermal:rubber",
+		"#forge:dusts/sulfur",
+		Fluid.of("cmi:fatty_acid", 250)
+	]).superheated()
 
 	// 冷却
 	tconstruct.casting_table("thermal:cured_rubber")

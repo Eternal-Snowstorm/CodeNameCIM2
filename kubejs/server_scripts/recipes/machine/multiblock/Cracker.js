@@ -76,7 +76,6 @@ MMEvents.createProcesses((event) => {
 				amount: global.BUCKET_CAPACITY * 3
 			}
 		})
-
 	event.create("cmi:cracker/glycerin")
 		.structureId("cmi:cracker_structure")
 		.ticks(600)
@@ -84,7 +83,7 @@ MMEvents.createProcesses((event) => {
 			type: "mm:input/consume",
 			ingredient: {
 				type: "mm:fluid",
-				fluid: IngredientUtils.getFirstFluidId("forge:plantoil"),
+				fluid: "immersiveengineering:plantoil",
 				amount: global.BUCKET_CAPACITY * 4
 			}
 		})

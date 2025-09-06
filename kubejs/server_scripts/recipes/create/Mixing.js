@@ -55,12 +55,12 @@ ServerEvents.recipes((event) => {
 	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
 		Fluid.of("immersiveengineering:redstone_acid", 500),
 		"#cmi:crystals",
-		"32x #forge:crops"
+		"16x #forge:crops"
 	]).heated()
 
 	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
 		Fluid.of("immersiveengineering:redstone_acid", 500),
 		"#cmi:crystals",
-		"64x #forge:seeds"
+		"32x #forge:seeds"
 	]).heated()
 })

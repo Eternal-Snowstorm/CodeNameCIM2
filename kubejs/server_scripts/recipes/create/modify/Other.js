@@ -164,28 +164,27 @@ ServerEvents.recipes((event) => {
 
 	// 蒸汽引擎
 	create.sequenced_assembly("create:steam_engine", [
-		"createdieselgenerators:diesel_engine"
+		"create:copper_casing"
 	], [
-		create.deploying("createdieselgenerators:diesel_engine", [
-			"createdieselgenerators:diesel_engine",
+		create.deploying("create:brass_casing", [
+			"create:brass_casing",
+			"cmi:bronze_mechanism"
+		]),
+		create.cutting("create:brass_casing", [
+			"create:brass_casing"
+		]),
+		create.deploying("create:brass_casing", [
+			"create:brass_casing",
 			"createdieselgenerators:engine_piston"
 		]),
-		create.cutting("createdieselgenerators:diesel_engine", [
-			"createdieselgenerators:diesel_engine"
+		create.deploying("create:brass_casing", [
+			"create:brass_casing",
+			"#forge:plates/steel"
 		]),
-		create.deploying("createdieselgenerators:diesel_engine", [
-			"createdieselgenerators:diesel_engine", [
-				"#forge:ingots/copper",
-				"#forge:plates/copper"
-			]
-		]),
-		create.cutting("createdieselgenerators:diesel_engine", [
-			"createdieselgenerators:diesel_engine"
-		]),
-		create.deploying("createdieselgenerators:diesel_engine", [
-			"createdieselgenerators:diesel_engine",
+		create.deploying("create:brass_casing", [
+			"create:brass_casing",
 			"create:precision_mechanism"
 		])
-	]).loops(3).transitionalItem("create:brass_casing")
+	]).loops(1).transitionalItem("create:brass_casing")
 		.id("create:crafting/kinetics/steam_engine")
 })

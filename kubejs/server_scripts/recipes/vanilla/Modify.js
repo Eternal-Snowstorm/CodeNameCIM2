@@ -13,4 +13,16 @@ ServerEvents.recipes((event) => {
 		"#minecraft:sand",
 		"minecraft:dirt"
 	])
+
+	kubejs.shapeless(
+		"6x supplementaries:soap",
+		[
+			"cmi:fatty_acid_bucket",
+			"supplementaries:ash",
+			"supplementaries:ash",
+			"supplementaries:ash",
+			"supplementaries:ash"
+		])
+		.replaceIngredient("cmi:fatty_acid_bucket", "minecraft:bucket")
+		.id("supplementaries:soap")
 })
