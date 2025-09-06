@@ -47,7 +47,7 @@ let IngredientUtils = {
 			let fluidHolder = optional.get().stream().findFirst().orElse(null)
 			if (fluidHolder !== null) {
 				let fluidId = $BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
-				return Fluid.of(fluidId, 1)
+				return Fluid.of(fluidId)
 			}
 		}
 		console.warn(`No corresponding fluid under ${fluidTag}`)
