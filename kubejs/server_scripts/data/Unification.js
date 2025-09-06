@@ -13,7 +13,7 @@ ServerEvents.highPriorityData((event) => {
 			let tag = `#forge:${type}s/${material}`
 			let ids = Ingredient.of(tag).getItemIds()
 			if (ids.length > 0) {
-				event.addJson(`oei:replacements/${material}_${type}.json`, addUnification(
+				addJsonFile(`${material}_${type}`, addUnification(
 					tag,
 					ids[0]
 				))
@@ -27,7 +27,7 @@ ServerEvents.highPriorityData((event) => {
 		let tag = `#forge:raw_materials/${material}`
 		let ids = Ingredient.of(tag).getItemIds()
 		if (ids.length > 0) {
-			event.addJson(`oei:replacements/raw_${material}.json`, addUnification(
+			addJsonFile(`raw_${material}`, addUnification(
 				tag,
 				ids[0]
 			))
@@ -40,8 +40,8 @@ ServerEvents.highPriorityData((event) => {
 		let tag = `#forge:storage_blocks/raw_${material}`
 		let ids = Ingredient.of(tag).getItemIds()
 		if (ids.length > 0) {
-			event.addJson(`oei:replacements/raw_${material}_block.json`, addUnification(
-				ids,
+			addJsonFile(`raw_${material}_block`, addUnification(
+				tag,
 				ids[0]
 			))
 			console.log(`oei:replacements/raw_${material}_block.json is generated!`)
