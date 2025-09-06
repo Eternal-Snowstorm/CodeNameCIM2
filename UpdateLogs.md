@@ -1,3 +1,5 @@
+<font face="Sarasa Mono slab SC">
+
 ## Beta 1.1.0
 
 ### 修复问题
@@ -517,3 +519,4 @@
  - 添加了熔点Tooltip
  - 根据`金属熔点`调整了`熔炼`配方
  - 添加了`月球铬矿石`
+</font>
