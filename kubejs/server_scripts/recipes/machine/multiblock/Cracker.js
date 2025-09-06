@@ -84,7 +84,7 @@ MMEvents.createProcesses((event) => {
 			type: "mm:input/consume",
 			ingredient: {
 				type: "mm:fluid",
-				fluid: IngredientUtils.getFirstFluidId("forge:plant_oil"),
+				fluid: IngredientUtils.getFirstFluidId("forge:plantoil"),
 				amount: global.BUCKET_CAPACITY * 4
 			}
 		})
