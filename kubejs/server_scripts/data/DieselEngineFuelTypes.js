@@ -5,7 +5,7 @@ ServerEvents.highPriorityData((event) => {
 		.modular(32, 32768, 1)
 		.huge(48, 65536, 1)
 
-	// 酒精
+	// 乙醇
 	addDieselEngineFuelType("#forge:ethanol", 1)
 		.normal(48, 16384, 1)
 		.modular(48, 32768, 1)
@@ -34,7 +34,7 @@ ServerEvents.highPriorityData((event) => {
 
 		let data = {
 			fluid: name,
-			sound_speed: speed || 1,
+			sound_speed: speed,
 			normal: {},
 			modular: {},
 			huge: {}
