@@ -1,6 +1,4 @@
 ServerEvents.highPriorityData((event) => {
-
-
 	// 植物油
 	addDieselEngineFuelType("#forge:plantoil", 1)
 		.normal(32, 16384, 1)
