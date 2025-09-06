@@ -1,7 +1,7 @@
 // 工具类型
 type ToolType = "pickaxe" | "axe" | "shovel" | "hoe" | "sword"
 // 挖掘等级列表
-type MiningLevel = "wood" | "stone" | "iron" | "diamond" | "netherite"
+type MiningLevel = "wood" | "stone" | "iron" | "diamond" | "nether"
 // 材料类型定义
 type MaterialType =
 	"ingot" |

@@ -77,7 +77,7 @@ MMEvents.createProcesses((event) => {
 			}
 		})
 
-	event.create("cmi:cracker/ethene")
+	event.create("cmi:cracker/glycerin")
 		.structureId("cmi:cracker_structure")
 		.ticks(600)
 		.input({

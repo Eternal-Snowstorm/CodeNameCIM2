@@ -13,6 +13,7 @@ StartupEvents.registry("item", (event) => {
 	addAloneRawMaterial("vanadium")
 	addAloneRawMaterial("platinum")
 	addAloneRawMaterial("chromium")
+	addAloneRawMaterial("tungsten")
 
 	addAloneRawMaterial("pyrite")
 	addAloneRawMaterial("lateritic_nickel")

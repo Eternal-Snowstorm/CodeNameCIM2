@@ -159,7 +159,8 @@ global.metalGroup = [
 	"magnesium",
 	"sodium",
 	"potassium",
-	"calcium"
+	"calcium",
+	"tungsten"
 ]
 // 熔点对象
 global.meltingPoints = {
