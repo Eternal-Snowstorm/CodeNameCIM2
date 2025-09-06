@@ -229,7 +229,12 @@ global.meltingPoints = {
 }
 // 命名空间
 global.materialNamespace = {
-	// v代表该材料是由TIC本体添加的，t代表该材料是由热力工匠添加的，c代表该材料是由制作组自定义的,n代表无此材料
+	/*
+	 * v代表该材料是由TIC本体添加的
+	 * t代表该材料是由热力工匠添加的
+	 * c代表该材料是由制作组自定义的
+	 * n代表无此材料
+	 */
 	"andesite_alloy": "c",
 	"aluminum": "v",
 	"brass": "c",
