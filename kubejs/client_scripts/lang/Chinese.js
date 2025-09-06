@@ -153,6 +153,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("silver", "银")
 	addMaterialLanguage("nickel", "镍")
 	addMaterialLanguage("cobalt", "钴")
+	addMaterialLanguage("tungsten", "钨")
 
 	addMaterialLanguage("pyrite", "黄铁")
 	addMaterialLanguage("lateritic_nickel", "红镍")

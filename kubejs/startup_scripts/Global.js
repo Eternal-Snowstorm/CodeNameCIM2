@@ -198,6 +198,7 @@ global.meltingPoints = {
 	"hepatizon": 990, // null
 	"manyullyn": 1617, // null
 	"amethyst_bronze": 1043, // null
+	"tungsten": 3410,
 	"vanadium": 1910,
 	"chromium": 1907,
 	"enderium": 1501, // null
@@ -289,7 +290,8 @@ global.materialNamespace = {
 	"magnesium": "c",
 	"sodium": "c",
 	"potassium": "c",
-	"calcium": "c"
+	"calcium": "c",
+	"tungsten":"c"
 }
 // 熔点数组
 global.meltingLevels = {
@@ -353,7 +355,8 @@ global.meltingLevels = {
 		"calorite",
 		"netherite",
 		"dragonsteel",
-		"osmium"
+		"osmium",
+		"tungsten"
 	]
 }
 // 匠魂物品标签

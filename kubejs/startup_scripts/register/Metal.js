@@ -313,6 +313,14 @@ addMaterial("vanadium", 0xF0FFFF, "stone")
 	.slurry()
 	.dirty_slurry()
 
+// 钨
+addMaterial("tungsten", 0x5A6C7E, "netherite")
+	.ingot()
+	.plate()
+	.dust()
+	.rod()
+	.molten()
+
 // MEK中间产物
 // 锌
 addMaterial("zinc", 0xA8C0A0, "stone")

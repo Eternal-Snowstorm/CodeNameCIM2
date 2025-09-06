@@ -137,6 +137,10 @@ addOreBlock("uranium", "iron", 5)
 addOreBlock("chromium", "stone", 5)
 	.moon()
 
+// 钨
+addOreBlock("tungsten", "netherite", 10)
+	.nether()
+
 // 黄铁
 addOreBlock("pyrite", "stone", 6)
 	.stone()
