@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 	]).heatRequirement(global.HeatLevel["grilled"])
 
 	// 乙醇发酵
-	function addFermentingRecipes(input, amount) {
+	function addEthanolRecipes(input, amount) {
 		let recipe =
 			createdieselgenerators.basin_fermenting(Fluid.of(ETHANOL, amount), [
 				Fluid.of("cmi:sugar_cane_syrup", amount),
@@ -39,11 +39,11 @@ ServerEvents.recipes((event) => {
 		return recipe
 	}
 
-	addFermentingRecipes("#forge:vegetables/potato", 80)
-	addFermentingRecipes("minecraft:melon_slice", 20)
-	addFermentingRecipes("#forge:vegetables/tomato", 80)
-	addFermentingRecipes("minecraft:sweet_berries", 50)
-	addFermentingRecipes("minecraft:apple", 80)
-	addFermentingRecipes("minecraft:glow_berries", 100)
-	addFermentingRecipes("#forge:vegetables/beetroot", 40)
+	addEthanolRecipes("#forge:vegetables/potato", 80)
+	addEthanolRecipes("minecraft:melon_slice", 20)
+	addEthanolRecipes("#forge:vegetables/tomato", 80)
+	addEthanolRecipes("minecraft:sweet_berries", 50)
+	addEthanolRecipes("minecraft:apple", 80)
+	addEthanolRecipes("minecraft:glow_berries", 100)
+	addEthanolRecipes("#forge:vegetables/beetroot", 40)
 })
