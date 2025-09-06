@@ -68,5 +68,4 @@ ServerEvents.recipes((event) => {
 		"scannable:blank_module",
 		"cmi:wooden_mechanism"
 	]).id("scannable:chest_module")
-
 })

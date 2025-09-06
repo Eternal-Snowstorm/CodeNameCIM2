@@ -1,4 +1,3 @@
-// 初始化$Minecraft累变量
 let $Minecraft = null
 
 MMEvents.createStructures((event) => {

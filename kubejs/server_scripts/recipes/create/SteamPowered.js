@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
 		"#forge:ingots/steel"
 	])
 
-	//钢齿轮
+	// 钢齿轮
 	kubejs.shapeless("steampowered:steel_large_cogwheel", [
 		"create:shaft",
 		"#forge:ingots/steel",

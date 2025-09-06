@@ -95,10 +95,10 @@ function aeCharger(output, input) {
 	const INPUT = Ingredient.of(input).toJson()
 
 	return {
-		"type": "ae2:charger",
-		"ingredient": INPUT,
-		"result": {
-			"item": IngredientUtils.getFirstItemId(output)
+		type: "ae2:charger",
+		ingredient: INPUT,
+		result: {
+			item: IngredientUtils.getFirstItemId(output)
 		}
 	}
 }
@@ -108,13 +108,13 @@ function IEIngredient(input) {
 		let count = 0
 		let inps = []
 		for (let i of input) {
+			let item = Item.of(i, 1)
+				.toJson()
 			if (count === 0) {
 				count = Item.of(i)
 					.getCount()
 			}
-			inps.push(Item.of(i)
-				.withCount(1)
-				.toJson())
+			inps.push(item)
 		}
 		return {
 			base_ingredient: inps,

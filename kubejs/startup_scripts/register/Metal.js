@@ -347,7 +347,6 @@ addMaterial("nickel", 0x989050, "stone")
 	.slurry()
 	.dirty_slurry()
 
-
 // 钴
 addMaterial("cobalt", 0x0098FF, "iron")
 	.dirty()
