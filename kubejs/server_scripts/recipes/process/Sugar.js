@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
 	// 糖
 	create.mixing("minecraft:sugar", [
 		Fluid.of("cmi:sugar_cane_syrup", 10)
-	]).heated()
+	]).heatRequirement(global.HeatLevel["grilled"])
 
 	// 乙醇发酵
 	function addFermentingRecipes(input, amount) {

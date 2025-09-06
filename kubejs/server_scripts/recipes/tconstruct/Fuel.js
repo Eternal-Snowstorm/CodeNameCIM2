@@ -41,6 +41,5 @@ ServerEvents.recipes((event) => {
 		"type": "tconstruct:melting_fuel",
 		"rate": 9,
 		"temperature": 937
-	})
-		.id("tconstruct:smeltery/melting/fuel/solid")
+	}).id("tconstruct:smeltery/melting/fuel/solid")
 })
