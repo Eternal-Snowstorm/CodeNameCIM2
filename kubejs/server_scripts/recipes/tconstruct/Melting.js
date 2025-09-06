@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 		])
 
 		let meltingPoint = global.meltingPoints[metal]
-		let fluidId = IngredientUtils.getFirstFluid(`forge:molten_${metal}`)
+		let fluidId = IngredientUtils.getFirstFluidId(`forge:molten_${metal}`)
 		let namespace = global.materialNamespace[metal]
 		let ingot = `#forge:ingots/${metal}`
 		let plate = `#forge:plates/${metal}`
