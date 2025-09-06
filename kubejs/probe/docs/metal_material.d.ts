@@ -43,5 +43,24 @@ interface Material {
 	slurry(): this
 }
 
+// 矿石接口
+interface OreBlock {
+	name: string,
+	level: MiningLevel,
+	hardness: number
+
+	stone(): this
+	deepslate(): this
+	nether(): this
+	end(): this
+	moon(): this
+	mars(): this
+	venus(): this
+	mercury(): this
+	glacio(): this
+}
+
 // 材料管理函数
 type RegisterMetalMaterial = (name: string, color: Color, level: MiningLevel) => Material
+// 矿石函数
+type OreBlockRegister = (name: string, level: MiningLevel, hardness: number) => OreBlock

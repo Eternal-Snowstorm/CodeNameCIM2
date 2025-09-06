@@ -6,6 +6,7 @@ const PICKAXE = global.ToolType["pickaxe"]
  * @param {string} name 注册ID
  * @param {ResourceLocation_} level 挖掘等级
  * @param {number} hardness 硬度
+ * @type {OreBlockRegister}
  * @returns 矿石注册
  */
 function addOreBlock(name, level, hardness) {
