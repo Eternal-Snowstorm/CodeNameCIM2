@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 		["#forge:ingots/brass", "#forge:plates/brass"]
 	]).id("create:item_application/brass_casing_from_log")
 
-	// 哭泣和黑曜石
+	// 哭泣黑曜石
 	create.item_application("minecraft:crying_obsidian", [
 		"minecraft:obsidian",
 		"#forge:vegetables/onion"
