@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { thermal, tconstruct } = event.recipes
 
 	global.metalGroup.forEach((metal) => {
-		let fluid = IngredientUtils.getFirstFluidId(`forge:molten_${metal}`)
+		let fluid = IngredientUtils.getFirstFluid(`forge:molten_${metal}`)
 
 		if (fluid === null) {
 			console.warn(`No molten metal found for ${metal}!`)

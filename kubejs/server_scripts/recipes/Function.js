@@ -35,20 +35,19 @@ let IngredientUtils = {
 	},
 
 	/**
-	 * 获取标签内第一个流体的ID, 若标签下没有流体则返回null
+	 * 获取标签内第一个流体, 若标签下没有流体则返回 null
 	 * @param {string} fluidTag 流体标签ID
-	 * @returns {string | null}
+	 * @returns {Internal.FluidStackJS | null}
 	 */
-	getFirstFluidId: function (fluidTag) {
+	getFirstFluid: function (fluidTag) {
 		let tag = $FluidTags.create(ResourceLocation.parse(fluidTag))
 		let optional = $BuiltInRegistries.FLUID.getTag(tag)
 
 		if (optional.isPresent()) {
 			let fluidHolder = optional.get().stream().findFirst().orElse(null)
 			if (fluidHolder !== null) {
-				let getFluidKey = $BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
-				// console.log(`The first fluid is: ${getFluidKey}`)
-				return getFluidKey
+				let fluidId = $BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
+				return Fluid.of(fluidId, 1)
 			}
 		}
 		console.warn(`No corresponding fluid under ${fluidTag}`)
@@ -151,6 +150,6 @@ BlockEvents.rightClicked((event) => {
 	const DEBUG_BLOCK = "cmi:green_screen"
 
 	if (block.id === DEBUG_BLOCK) {
-		player.tell(IngredientUtils.getFirstFluidId("forge:solutions/iron/chloride"))
+		player.tell(IngredientUtils.getFirstFluid("forge:solutions/iron/chloride"))
 	}
 })

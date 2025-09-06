@@ -2,11 +2,11 @@ ServerEvents.recipes((event) => {
 	addFuel("ad_astra:cryo_fuel", 4225)
 	addFuel("cmi:delta_unstable_solution", 1206)
 	addFuel("ad_astra:fuel", 1417)
-	addFuel(IngredientUtils.getFirstFluidId("forge:oil"), 1220)
+	addFuel(IngredientUtils.getFirstFluid("forge:oil"), 1220)
 	addFuel("thermal:refined_fuel", 2041)
 	addFuel("cmi:turbid_waste_liquid", 1189)
 	addFuel("tconstruct:blazing_blood", 2638)
-	addFuel(IngredientUtils.getFirstFluidId("forge:ethanol"), 1132)
+	addFuel(IngredientUtils.getFirstFluid("forge:ethanol"), 1132)
 	addFuel("createdieselgenerators:plant_oil", 1027)
 	addFuel("createdieselgenerators:biodiesel", 1636)
 

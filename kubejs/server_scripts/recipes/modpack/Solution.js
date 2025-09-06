@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
 					],
 					"result_fluids": [
 						{
-							"fluid": IngredientUtils.getFirstFluidId(`forge:solutions/${metal}/chloride`),
+							"fluid": IngredientUtils.getFirstFluid(`forge:solutions/${metal}/chloride`),
 							"amount": 1000
 						}
 					],
@@ -138,7 +138,7 @@ ServerEvents.recipes((event) => {
 					],
 					"result_fluids": [
 						{
-							"fluid": IngredientUtils.getFirstFluidId(`forge:solutions/${metal}/sulfate`),
+							"fluid": IngredientUtils.getFirstFluid(`forge:solutions/${metal}/sulfate`),
 							"amount": 1000
 						}
 					],
