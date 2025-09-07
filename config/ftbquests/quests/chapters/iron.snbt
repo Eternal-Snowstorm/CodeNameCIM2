@@ -94,7 +94,7 @@
 				title: "Any #forge:nuggets/iron"
 				type: "item"
 			}]
-			title: "Iron Nugget"
+			title: "铁粒"
 			x: 1.0d
 			y: -3.0d
 		}
