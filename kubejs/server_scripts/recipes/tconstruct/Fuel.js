@@ -9,6 +9,8 @@ ServerEvents.recipes((event) => {
 	addFuel(IngredientUtils.getFirstFluidId("forge:ethanol"), 1132)
 	addFuel("createdieselgenerators:plant_oil", 1027)
 	addFuel("createdieselgenerators:biodiesel", 1636)
+	addFuel("createdieselgenerators:diesel", 2113)
+	addFuel("createdieselgenerators:gasoline", 2043)
 
 	/**
 	 * 添加匠魂流体燃料
