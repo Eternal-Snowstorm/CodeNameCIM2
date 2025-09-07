@@ -1,0 +1,183 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "metal"
+	group: "6A6C7C5BAEF247E2"
+	id: "130C15E73E18410C"
+	images: [
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/1.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/0.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/0.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/0.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/1c.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/dou.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/minus.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/furnace_front_on"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/1.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/5.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/0.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/0.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/1c.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/dou.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/minus.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/blast_furnace_front_on"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "tconstruct:block/smeltery/controller/smeltery_active"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 1.5d
+		}
+	]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "immersiveengineering:ingot_aluminum"
+			id: "5DDAED0C86C34873"
+			tasks: [{
+				id: "78BBEBD7CAB475AE"
+				title: "1"
+				type: "checkmark"
+			}]
+			title: "铝 660℃"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			icon: "minecraft:iron_ingot"
+			id: "6105AE67A3FCDD8E"
+			tasks: [{
+				id: "4510FC89A26182E5"
+				title: "1"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "7F57658170C32134"
+			tasks: [{
+				id: "67D57A9E2658F10D"
+				title: "熔岩 1000℃"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+	]
+	title: "金属冶炼"
+}
