@@ -29,7 +29,6 @@
 				item: "cmi:light_engineering_mechanism"
 				type: "item"
 			}]
-			title: "Light Engineering Mechanism"
 			x: -30.92857142857143d
 			y: -3.5d
 		}
@@ -46,7 +45,6 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "Copper Ingot"
 			x: -27.400000000000006d
 			y: -4.642857142857146d
 		}
@@ -56,7 +54,7 @@
 			id: "484A8F54DDA53E14"
 			tasks: [{
 				id: "0CB8BC8F69AE5819"
-				title: "Wire Metalpress"
+				title: "金属轧制-线"
 				type: "checkmark"
 			}]
 			x: -19.300000000000026d
@@ -68,7 +66,7 @@
 			id: "014169D9093B9C20"
 			tasks: [{
 				id: "1E33C55B88A34597"
-				title: "Wire Metalpress"
+				title: "金属轧制-线"
 				type: "checkmark"
 			}]
 			x: -17.985714285714323d
@@ -80,7 +78,7 @@
 			id: "31CE7127BE9E5AC7"
 			tasks: [{
 				id: "40FBAA2998FAEC02"
-				title: "Wire Metalpress"
+				title: "金属轧制-线"
 				type: "checkmark"
 			}]
 			x: -16.81428571428576d
@@ -92,7 +90,7 @@
 			id: "314797FFBBF2D58D"
 			tasks: [{
 				id: "1B876A97B16B4C32"
-				title: "Wire Metalpress"
+				title: "金属轧制-线"
 				type: "checkmark"
 			}]
 			x: -7.500000000000043d
@@ -115,10 +113,9 @@
 						value: "forge:ingots/electrum"
 					}
 				}
-				title: "Any #forge:ingots/electrum"
+				title: "琥珀金"
 				type: "item"
 			}]
-			title: "Electrum Ingot"
 			x: -26.071428571428605d
 			y: -9.802857142857142d
 		}
@@ -139,10 +136,9 @@
 						value: "forge:ingots/aluminum"
 					}
 				}
-				title: "Any #forge:ingots/aluminum"
+				title: "铝"
 				type: "item"
 			}]
-			title: "Aluminum Ingot"
 			x: -23.78571428571432d
 			y: -13.462857142857139d
 		}
@@ -163,10 +159,9 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "Any #forge:ingots/steel"
+				title: "钢"
 				type: "item"
 			}]
-			title: "Steel Ingot"
 			x: -8.928571428571459d
 			y: -8.479999999999997d
 		}
@@ -191,10 +186,9 @@
 						value: "forge:wires/copper"
 					}
 				}
-				title: "Any #forge:wires/copper"
+				title: "铜线"
 				type: "item"
 			}]
-			title: "Copper Wire"
 			x: -7.35714285714289d
 			y: 5.217142857142868d
 		}
@@ -219,10 +213,9 @@
 						value: "forge:wires/electrum"
 					}
 				}
-				title: "Any #forge:wires/electrum"
+				title: "琥珀金线"
 				type: "item"
 			}]
-			title: "Electrum Wire"
 			x: 0.07142857142854098d
 			y: 0.20000000000000995d
 		}
@@ -242,10 +235,9 @@
 						value: "forge:wires/aluminum"
 					}
 				}
-				title: "Any #forge:wires/aluminum"
+				title: "铝线"
 				type: "item"
 			}]
-			title: "Aluminum Wire"
 			x: 10.499999999999957d
 			y: 3.6114285714285828d
 		}
@@ -270,10 +262,9 @@
 						value: "forge:wires/steel"
 					}
 				}
-				title: "Any #forge:wires/steel"
+				title: "钢线"
 				type: "item"
 			}]
-			title: "Steel Wire"
 			x: 17.928571428571388d
 			y: -2.3342857142856914d
 		}
@@ -291,7 +282,6 @@
 				item: "cmi:coil_mechanism"
 				type: "item"
 			}]
-			title: "Coil Mechanism"
 			x: 27.21428571428568d
 			y: 1.5771428571428743d
 		}

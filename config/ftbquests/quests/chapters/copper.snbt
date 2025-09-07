@@ -38,7 +38,6 @@
 				title: "硫磺"
 				type: "item"
 			}]
-			title: "Sulfur"
 			x: -17.0d
 			y: 2.0d
 		}
@@ -201,9 +200,9 @@
 				title: "切割"
 				type: "checkmark"
 			}]
-			title: "Cutting"
-			x: -9.821428571428577d
-			y: 3.7857142857142847d
+			title: "切"
+			x: -10.57142857142857d
+			y: 3.392857142857146d
 		}
 		{
 			dependencies: ["6B4BF166BA668546"]
@@ -307,6 +306,7 @@
 				xp: 10
 			}]
 			size: 1.0d
+			subtitle: "冲压一下"
 			tasks: [{
 				id: "38CAD11C3E7CB2D5"
 				item: {
