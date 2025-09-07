@@ -33,9 +33,10 @@
 						value: "minecraft:wooden_slabs"
 					}
 				}
-				title: "木台阶"
+				title: "Any #minecraft:wooden_slabs"
 				type: "item"
 			}]
+			title: "Wooden Slab"
 			x: -24.857142857142854d
 			y: -3.8042857142857187d
 		}
@@ -53,6 +54,7 @@
 				item: "minecraft:red_dye"
 				type: "item"
 			}]
+			title: "Red Dye"
 			x: -12.142857142857139d
 			y: 1.0342857142857156d
 		}
@@ -70,6 +72,7 @@
 				item: "minecraft:yellow_dye"
 				type: "item"
 			}]
+			title: "Yellow Dye"
 			x: -6.714285714285722d
 			y: -3.1271428571428572d
 		}
@@ -87,6 +90,7 @@
 				item: "minecraft:blue_dye"
 				type: "item"
 			}]
+			title: "Blue Dye"
 			x: 0.8571428571428612d
 			y: -0.21714285714286063d
 		}
@@ -104,6 +108,7 @@
 				item: "minecraft:white_dye"
 				type: "item"
 			}]
+			title: "White Dye"
 			x: 4.999999999999986d
 			y: -3.664285714285718d
 		}
@@ -121,6 +126,7 @@
 				item: "minecraft:black_dye"
 				type: "item"
 			}]
+			title: "Black Dye"
 			x: 12.57142857142857d
 			y: -0.682857142857145d
 		}
@@ -133,6 +139,7 @@
 				item: "cmi:magical_mechanism_part"
 				type: "item"
 			}]
+			title: "Mechanism Part"
 			x: 18.0d
 			y: -5.1299999999999955d
 		}
@@ -150,6 +157,7 @@
 				item: "cmi:colorful_mechanism"
 				type: "item"
 			}]
+			title: "Colorful Mechanism"
 			x: 25.714285714285722d
 			y: -2.07714285714286d
 		}
