@@ -120,7 +120,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("fluid_nitroglycerine", "液态硝化甘油")
 	addFluidLanguage("crystal_catalyt", "晶体催生剂")
 	addFluidLanguage("oily_sludge", "含油淤泥")
-	addFluidLanguage("sugar_cane_syrup", "甘蔗糖浆")
+	addFluidLanguage("syrup", "糖浆")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
