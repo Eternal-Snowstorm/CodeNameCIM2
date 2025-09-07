@@ -38,7 +38,7 @@
 				title: "Any #forge:gems/amethyst"
 				type: "item"
 			}]
-			title: "Amethyst Shard"
+			title: "紫水晶碎片"
 			x: -5.0d
 			y: -2.0d
 		}
@@ -68,7 +68,7 @@
 				title: "Any #forge:gems/charged_amethyst"
 				type: "item"
 			}]
-			title: "Charged Amethyst Shard"
+			title: "充完电的紫水晶（？）"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -83,6 +83,7 @@
 				title: "Charge"
 				type: "checkmark"
 			}]
+			title: "充电"
 			x: -3.5d
 			y: -1.0d
 		}
@@ -94,7 +95,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "7EEC2D37BD9DAE3B"
-				title: "Crush"
+				title: "粉碎"
 				type: "checkmark"
 			}]
 			x: -6.5d
@@ -158,6 +159,7 @@
 				"10640F4F5D4493FC"
 				"239C8B297E65182D"
 			]
+			description: ["唉，雷批"]
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5B09C912CC93559E"
@@ -167,6 +169,7 @@
 				xp: 10
 			}]
 			size: 1.5d
+			subtitle: "银狮粉.png"
 			tasks: [{
 				id: "51511C5F60FDAC35"
 				item: {
@@ -179,7 +182,7 @@
 				title: "Any #forge:dusts/glowstone"
 				type: "item"
 			}]
-			title: "Glowstone Dust"
+			title: "萤石粉"
 			x: 1.7857142857142918d
 			y: 1.5714285714285694d
 		}
@@ -191,7 +194,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "08F5C25F2E184F5A"
-				title: "Lase"
+				title: "激光加工"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -213,7 +216,6 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
 			x: 4.785714285714292d
 			y: 3.0714285714285694d
 		}
@@ -232,7 +234,6 @@
 				item: "minecraft:quartz_block"
 				type: "item"
 			}]
-			title: "Quartz Block"
 			x: -7.5d
 			y: 1.5d
 		}
@@ -252,7 +253,6 @@
 				item: "minecraft:quartz_slab"
 				type: "item"
 			}]
-			title: "Quartz Slab"
 			x: -5.5d
 			y: 2.5d
 		}
@@ -272,7 +272,6 @@
 				item: "cmi:photosensitive_mechanism"
 				type: "item"
 			}]
-			title: "Photosensitive Mechanism"
 			x: 6.285714285714292d
 			y: 1.8571428571428612d
 		}

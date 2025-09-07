@@ -21,7 +21,7 @@
 			id: "03F0FCAFC3C6712A"
 			tasks: [{
 				id: "28F4151B181E320F"
-				title: "Condense"
+				title: "物质聚合"
 				type: "checkmark"
 			}]
 			x: -6.998571428571417d
@@ -41,7 +41,6 @@
 				item: "ae2:matter_ball"
 				type: "item"
 			}]
-			title: "Matter Ball"
 			x: -9.354285714285702d
 			y: -4.232857142857156d
 		}
@@ -51,7 +50,6 @@
 			id: "786CF4F47346C148"
 			tasks: [{
 				id: "306CF2686355D7B8"
-				title: "Particle Collision"
 				type: "checkmark"
 			}]
 			x: -6.638571428571417d
@@ -71,7 +69,6 @@
 				item: "ae2:singularity"
 				type: "item"
 			}]
-			title: "Singularity"
 			x: -1.2800000000000011d
 			y: 3.0528571428571283d
 		}
@@ -81,7 +78,7 @@
 			id: "4AB432278E33FFAC"
 			tasks: [{
 				id: "3285AB786A467E91"
-				title: "Press"
+				title: "辊压"
 				type: "checkmark"
 			}]
 			x: 4.005714285714284d
@@ -107,9 +104,9 @@
 			id: "64F2D9237A417803"
 			tasks: [{
 				id: "177B0A753D3E4A88"
-				title: "Polonium"
 				type: "checkmark"
 			}]
+			title: "钋"
 			x: -5.565714285714279d
 			y: -3.448571428571455d
 		}
@@ -122,6 +119,7 @@
 				title: "SPS"
 				type: "checkmark"
 			}]
+			title: "超临界移相器"
 			x: -0.9942857142856951d
 			y: -3.717142857142882d
 		}
@@ -146,9 +144,9 @@
 			id: "2C24FAFBDA02E124"
 			tasks: [{
 				id: "56EC424D610FE63E"
-				title: "Antimatter"
 				type: "checkmark"
 			}]
+			title: "反物质"
 			x: 4.72000000000002d
 			y: -2.2714285714285936d
 		}
@@ -156,11 +154,12 @@
 			dependencies: ["2C24FAFBDA02E124"]
 			hide_dependent_lines: true
 			id: "67A33A7F3C63AE88"
+			subtitle: "添钠，钠是结晶的！"
 			tasks: [{
 				id: "4BDBA4FFB66FEB39"
-				title: "Chemical Crystalliz"
 				type: "checkmark"
 			}]
+			title: "化学结晶"
 			x: 5.29142857142859d
 			y: 3.299999999999983d
 		}
@@ -181,7 +180,6 @@
 				item: "mekanism:pellet_antimatter"
 				type: "item"
 			}]
-			title: "Pellet Antimatter"
 			x: 9.291428571428604d
 			y: 5.014285714285691d
 		}
@@ -199,7 +197,6 @@
 				item: "cmi:quantum_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
 			x: 14.720000000000034d
 			y: 7.174285714285688d
 		}
@@ -217,7 +214,6 @@
 				item: "cmi:antimatter_mechanism"
 				type: "item"
 			}]
-			title: "Antimatter Mechanism"
 			x: 16.64857142857145d
 			y: 7.638571428571396d
 		}

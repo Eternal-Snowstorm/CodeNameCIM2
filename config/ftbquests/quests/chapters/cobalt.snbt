@@ -31,7 +31,6 @@
 				item: "tconstruct:raw_cobalt"
 				type: "item"
 			}]
-			title: "Raw Cobalt"
 			x: -20.285714285714292d
 			y: -0.2142857142857082d
 		}
@@ -51,7 +50,6 @@
 				item: "tconstruct:cobalt_ingot"
 				type: "item"
 			}]
-			title: "Cobalt Ingot"
 			x: -11.428571428571445d
 			y: 3.5d
 		}
@@ -63,7 +61,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "37838203995484AD"
-				title: "Smelting"
+				title: "熔炼"
 				type: "checkmark"
 			}]
 			x: -15.857142857142875d
@@ -77,7 +75,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "39B6DE9F84277DF5"
-				title: "Roll"
+				title: "轧制"
 				type: "checkmark"
 			}]
 			x: -1.142857142857153d
@@ -103,10 +101,9 @@
 						value: "forge:rods/cobalt"
 					}
 				}
-				title: "Any #forge:rods/cobalt"
+				title: "钴杆"
 				type: "item"
 			}]
-			title: "Cobalt Rod"
 			x: -1.4285714285714448d
 			y: -3.642857142857146d
 		}
@@ -118,7 +115,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "6E19F1EAB8448AE2"
-				title: "Coiling"
+				title: "卷簧"
 				type: "checkmark"
 			}]
 			x: -4.285714285714306d
@@ -147,10 +144,9 @@
 						value: "vintageimprovements:springs/cobalt"
 					}
 				}
-				title: "Any #vintageimprovements:springs/cobalt"
+				title: "钴小弹簧"
 				type: "item"
 			}]
-			title: "Cobalt Spring"
 			x: 1.1428571428571246d
 			y: 4.357142857142854d
 		}
@@ -162,7 +158,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "4B4C5FA6DC61569C"
-				title: "Press"
+				title: "辊压"
 				type: "checkmark"
 			}]
 			x: -7.428571428571445d
@@ -188,10 +184,9 @@
 						value: "forge:plates/cobalt"
 					}
 				}
-				title: "Any #forge:plates/cobalt"
+				title: "钴板"
 				type: "item"
 			}]
-			title: "Cobalt Plate"
 			x: -1.8571428571428754d
 			y: 7.5d
 		}
@@ -210,7 +205,6 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			title: "Gold Ingot"
 			x: 13.428571428571402d
 			y: -10.214285714285715d
 		}
@@ -222,7 +216,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "5D2F37EA2E42EC77"
-				title: "Roll"
+				title: "轧制"
 				type: "checkmark"
 			}]
 			x: 11.285714285714263d
@@ -248,10 +242,9 @@
 						value: "forge:rods/gold"
 					}
 				}
-				title: "Any #forge:rods/gold"
+				title: "金杆"
 				type: "item"
 			}]
-			title: "Gold Rod"
 			x: 9.428571428571402d
 			y: -7.357142857142854d
 		}
@@ -271,7 +264,6 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			title: "Redstone Dust"
 			x: 7.857142857142833d
 			y: -6.642857142857146d
 		}
@@ -283,7 +275,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "7024E00F9D391CEC"
-				title: "Lase"
+				title: "激光加工"
 				type: "checkmark"
 			}]
 			x: 13.285714285714278d
@@ -308,7 +300,6 @@
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
-			title: "RF Coil"
 			x: 10.5d
 			y: 4.5d
 		}
@@ -323,7 +314,6 @@
 				item: "cmi:engineering_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
 			x: 22.857142857142847d
 			y: 0.6428571428571388d
 		}
@@ -338,7 +328,6 @@
 				item: "cmi:cobalt_mechanism"
 				type: "item"
 			}]
-			title: "Cobalt Mechanism"
 			x: 25.428571428571416d
 			y: -1.500000000000007d
 		}
