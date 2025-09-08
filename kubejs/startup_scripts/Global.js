@@ -292,7 +292,7 @@ global.materialNamespace = {
 	"sodium": "c",
 	"potassium": "c",
 	"calcium": "c",
-	"tungsten":"c"
+	"tungsten": "c"
 }
 // 熔点数组
 global.meltingLevels = {
@@ -310,12 +310,12 @@ global.meltingLevels = {
 		"silver",
 		"rose_gold",
 		"lumium",
-		"hepatizon"
-	],
-	1500: [
+		"hepatizon",
 		"electrum",
 		"gold",
 		"copper",
+	],
+	1500: [
 		"uranium",
 		"pig_iron",
 		"refined_obsidian",
@@ -333,11 +333,11 @@ global.meltingLevels = {
 		"enderium",
 		"steel",
 		"slimesteel",
-		"cinderslime"
+		"cinderslime",
+		"stainless_steel",
+		"iron"
 	],
 	2000: [
-		"stainless_steel",
-		"iron",
 		"manyullyn",
 		"twinite",
 		"prismalium",
@@ -351,13 +351,13 @@ global.meltingLevels = {
 		"amethyst_bronze"
 	],
 	"above": [
+		"osmium",
 		"desh",
+		"tungsten",
 		"ostrum",
 		"calorite",
 		"netherite",
-		"dragonsteel",
-		"osmium",
-		"tungsten"
+		"dragonsteel"
 	]
 }
 // 匠魂物品标签
