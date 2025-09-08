@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 	addFuel("thermal:refined_fuel", 2041)
 	addFuel("cmi:turbid_waste_liquid", 1189)
 	addFuel("tconstruct:blazing_blood", 2638)
-	addFuel(IngredientUtils.getFirstFluidId("forge:ethanol"), 1132)
+	addFuel("immersiveengineering:ethanol", 1132)
 	addFuel("createdieselgenerators:plant_oil", 1027)
 	addFuel("createdieselgenerators:biodiesel", 1636)
 	addFuel("createdieselgenerators:diesel", 2113)
