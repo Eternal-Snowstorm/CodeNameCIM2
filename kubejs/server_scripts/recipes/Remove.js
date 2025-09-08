@@ -82,7 +82,8 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:refinery/biodiesel",
 		"createdieselgenerators:basin_fermenting/fermentable",
 		"createdieselgenerators:basin_fermenting/fermented_spider_eye",
-		"createaddition:mixing/bioethanol"
+		"createaddition:mixing/bioethanol",
+		"thermal:compat/mekanism/smelter_mek_osmium_ore"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -352,6 +353,9 @@ ServerEvents.recipes((event) => {
 			}, {
 				type: "thermal:chilling",
 				output: `#forge:coins/${metal}`
+			}, {
+				type: "immersiveengineering:arc_furnace",
+				output: "#forge:ingots/osmium"
 			}
 		])
 	})

@@ -126,6 +126,16 @@ ServerEvents.recipes((event) => {
 
             if (IngredientUtils.isNotNull(`#${type}/${metal}`)) {
 
+                event.remove({
+                    type: "minecraft:smelting",
+                    input: `#${type}/${metal}`
+                })
+
+                event.remove({
+                    type: "minecraft:blasting",
+                    input: `#${type}/${metal}`
+                })
+
                 mekanism.smelting(
                     ingotId[0],
                     `#${type}/${metal}`
