@@ -84,13 +84,13 @@ ServerEvents.recipes((event) => {
 	create.mixing(Fluid.of("cmi:cured_rubber", 500), [
 		"#forge:dusts/sulfur",
 		"#forge:plates/rubber"
-	]).heated()
+	]).heatRequirement("grilled")
 
 	create.mixing(Fluid.of("cmi:cured_rubber", 1000), [
 		"2x thermal:rubber",
 		"#forge:dusts/sulfur",
 		Fluid.of("cmi:fatty_acid", 250)
-	]).superheated()
+	]).heated()
 
 	// 冷却
 	tconstruct.casting_table("thermal:cured_rubber")
