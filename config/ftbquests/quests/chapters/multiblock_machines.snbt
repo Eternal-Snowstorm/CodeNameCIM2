@@ -53,18 +53,11 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:alloy_smelter"
 			id: "3BAE16C094B8B971"
-			rewards: [
-				{
-					id: "2B18081CAC4060FA"
-					item: "immersiveengineering:alloy_smelter"
-					type: "item"
-				}
-				{
-					id: "0900E62766F92B77"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "0900E62766F92B77"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "一种可以把两种金属制作成合金的炉子"
 			tasks: [{
 				consume_items: true
@@ -84,18 +77,11 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:blast_furnace"
 			id: "109F54D40BDCBA7B"
-			rewards: [
-				{
-					id: "6E5137EC176DE8D4"
-					item: "immersiveengineering:blast_furnace"
-					type: "item"
-				}
-				{
-					id: "1DDCD4B08C10BB8B"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "1DDCD4B08C10BB8B"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "这个炉子在这个世界用处不大..."
 			tasks: [{
 				consume_items: true
@@ -116,11 +102,6 @@
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "4B8CF122EFBB9276"
 			rewards: [
-				{
-					id: "27971DBF189F66EA"
-					item: "immersiveengineering:advanced_blast_furnace"
-					type: "item"
-				}
 				{
 					id: "4CB1B833315B0ED9"
 					item: "immersiveengineering:blastfurnace_preheater"
@@ -165,18 +146,11 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:coke_oven"
 			id: "608BB60FF9CD8A31"
-			rewards: [
-				{
-					id: "5FF0BEB3B746DB92"
-					item: "immersiveengineering:coke_oven"
-					type: "item"
-				}
-				{
-					id: "12C082BDD93D5A86"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "12C082BDD93D5A86"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "生产杂酚油"
 			tasks: [{
 				consume_items: true
@@ -201,18 +175,11 @@
 			hide_dependency_lines: true
 			icon: "immersiveindustry:crucible"
 			id: "568EA16355A2E7E6"
-			rewards: [
-				{
-					id: "7D04863DA6F96764"
-					item: "immersiveindustry:crucible"
-					type: "item"
-				}
-				{
-					id: "358A82FC7613B601"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "358A82FC7613B601"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "炼钢的基础"
 			tasks: [
 				{
@@ -251,11 +218,6 @@
 			can_repeat: true
 			icon: "immersiveengineering:lightning_rod"
 			id: "46D770A186667489"
-			rewards: [{
-				id: "571EC2E993F442CC"
-				item: "immersiveengineering:lightning_rod"
-				type: "item"
-			}]
 			tasks: [
 				{
 					consume_items: true

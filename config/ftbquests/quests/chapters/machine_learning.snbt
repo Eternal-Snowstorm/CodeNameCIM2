@@ -69,7 +69,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3DEE902840C6F8F2"]
 			icon: "tconstruct:molten_iron_bucket"
 			id: "06012DC3A4BBF58B"
 			rewards: [{
@@ -307,7 +306,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["3DEE902840C6F8F2"]
 			id: "44EA87F955CC8C23"
 			rewards: [{
 				id: "1943177E8F9A0441"
@@ -324,7 +322,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["325D8F9EC9B394E0"]
 			id: "283906AAD8AA56E8"
 			rewards: [{
 				id: "222C1C62CDFC6AE6"
@@ -377,7 +374,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["42952FF47036885B"]
 			id: "73210821C1E60467"
 			rewards: [{
 				id: "138E4385A9C5F459"
@@ -605,8 +601,10 @@
 			y: 7.5d
 		}
 		{
+			can_repeat: false
 			dependencies: ["1206A5483DCDF968"]
 			id: "61B7D0A6461EF192"
+			invisible: true
 			optional: true
 			rewards: [
 				{
@@ -649,8 +647,8 @@
 					type: "item"
 				}
 				{
-					id: "46F82974260ED8BC"
-					item: "cmi:rubber_hand"
+					id: "219D8608674B10B4"
+					item: "create:brass_hand"
 					type: "item"
 				}
 			]
