@@ -60,4 +60,20 @@ ServerEvents.tags("fluid", (event) => {
 
 	event.get("forge:diesel")
 		.add("cmi:sulfric_diesel")
+
+	event.get("tconstruct:fuels")
+		.add([
+			"ad_astra:cryo_fuel",
+			"cmi:delta_unstable_solution",
+			"ad_astra:fuel",
+			"#forge:oil",
+			"thermal:refined_fuel",
+			"cmi:turbid_waste_liquid",
+			"tconstruct:blazing_blood",
+			"immersiveengineering:ethanol",
+			"createdieselgenerators:plant_oil",
+			"createdieselgenerators:biodiesel",
+			"createdieselgenerators:diesel",
+			"createdieselgenerators:gasoline"
+		])
 })

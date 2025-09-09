@@ -2,6 +2,7 @@
 	"message.cmi.food.andesite_alloy_noodle": "不咸不淡, 味道好极了",
 	"message.cmi.food.creosote_wood_chip_briquette": "带派不老铁",
 	"tooltip.cmi.meltingPoint": "熔点: %s°C / %s°F",
+	"tooltip.cmi.fuelTemperature": "热量: %s°C/ %s°F",
 	"jade.theme.cmi.stardew_valley": "星露谷物语",
 	"jade.theme.cmi.war_thunder": "战争雷霆",
 	"jade.theme.cmi.windows_aero_lite": "Windows Aero Lite",

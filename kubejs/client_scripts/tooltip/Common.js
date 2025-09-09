@@ -114,6 +114,22 @@ ItemEvents.tooltip((event) => {
 		})
 	})
 
+	// 燃料温度
+	global.fuelList.forEach((fuel) => {
+		let bucket = `${fuel}_bucket`
+		let tp = global.fuelTemperatures[fuel]
+
+		if (tp !== null) {
+			let translatable = Component.translatable(
+				"tooltip.cmi.fuelTemperature",
+				tp,
+				toFahrenheit(tp)
+			).yellow()
+
+			event.add(bucket, translatable)
+		}
+	})
+
 	// 碎矿单独循环一次
 	global.metalGroup.forEach((material) => {
 		let mp = global.meltingPoints[material]
