@@ -23,7 +23,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("mm:large_steam_boiler")
 	addCommonTooltip("#forge:ingots/siltsteel")
 	addCommonTooltip("cmi:plasma_faucet")
-
+	addCommonTooltip("tconstruct:seared_heater")
 	addCommonTooltip("createaddition:bioethanol")
 	addCommonTooltip("thermal_extra:diesel")
 	addCommonTooltip("createaddition:seed_oil")

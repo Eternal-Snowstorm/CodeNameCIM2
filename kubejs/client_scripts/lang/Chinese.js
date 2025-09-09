@@ -281,6 +281,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("qi_month", "榛名柒月", "榛名柒月")
 	addPaintingLanguage("sacabamBaspis", "萨卡班甲鱼", "⑨Dropper_QWQ⑨")
 
+	addCommonTooltipLanguage("tconstruct:seared_heater", "固体燃料最多提供937°C / 1718.6°F")
 	addCommonTooltipLanguage("cmi:pigiron_mechanism", "可无限次食用")
 	addCommonTooltipLanguage("cmi:acceleratable", "§v按住Shift查看构件之力催生器用途")
 	addCommonTooltipLanguage("cmi:stone_mechanism", "§c手持右键圆石可将其转换为石头")
