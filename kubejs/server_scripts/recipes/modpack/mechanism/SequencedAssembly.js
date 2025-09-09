@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
 		"#minecraft:planks"
 	], [
 		create.pressing(iwm, iwm),
-		create.deploying(iwm, [iwm, "#forge:rods/wooden"]),
+		create.deploying(iwm, [iwm, "minecraft:stick"]),
 		create.cutting(iwm, iwm),
 		create.deploying(iwm, [iwm, "cmi:basic_mechanism_part"])
 	]).transitionalItem(iwm).loops(1)
