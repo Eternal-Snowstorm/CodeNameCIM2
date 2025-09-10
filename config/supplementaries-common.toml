@@ -322,7 +322,7 @@
 		enabled = false
 		#Burnable blocks will have a chance to create ash layers when burned. Greater this number the greater the chance will be
 		#Range: 0.0 ~ 1.0
-		ash_from_fire_chance = 1.0
+		ash_from_fire_chance = 0
 		#Burning mobs will drop ash when they die
 		ash_from_burning_mobs = false
 		#Allows rain to wash away ash layers overtime

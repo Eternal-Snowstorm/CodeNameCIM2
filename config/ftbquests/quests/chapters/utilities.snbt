@@ -388,7 +388,10 @@
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
-			description: ["销毁器可以清除任何东西, 一般用于生产线中清除废弃的流体和物品"]
+			description: [
+				"销毁器可以清除任何东西, 一般用于生产线中清除废弃的流体和物品。"
+				"当然我们还是更推荐您在AE2发展起来后使用物质聚合器销毁。"
+			]
 			hide_dependency_lines: true
 			id: "5E52B40EB76B5C84"
 			rewards: [{

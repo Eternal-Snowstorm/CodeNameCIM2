@@ -1,0 +1,377 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4AA1F962E3D7F9D6"
+	group: "6A6C7C5BAEF247E2"
+	icon: "tconstruct:smeltery_controller"
+	id: "4AA1F962E3D7F9D6"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"如你所见，本整合包的金属材料全都被赋予了独立的熔点，你可能会因此被迫不断去制造对应的燃料与熔炉。"
+				"不过别担心，既然我们做了这个系统，我们当然会为你尽可能详细的讲解~"
+			]
+			icon: "minecraft:furnace"
+			id: "55B7A6AEBB65DFDA"
+			rewards: [{
+				id: "3F7948B0FD7B1844"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "熔点系统带来的变革"
+			tasks: [{
+				id: "59FA22C26D126C02"
+				title: "我准备好了！"
+				type: "checkmark"
+			}]
+			title: "千万注意！"
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["55B7A6AEBB65DFDA"]
+			description: [
+				"熔炉！我们的老朋友！"
+				"但很抱歉，他的力量被削弱的很厉害，到现在这点温度顶天也只能熔炼铜矿物了……"
+				"而且他没有匠魂熔炉的熔化增产，除了开局拿来熔铜制造工具似乎也并不能发挥什么太大的作用了……"
+			]
+			id: "423068E2C60598B2"
+			subtitle: "再熟悉不过了"
+			tasks: [{
+				id: "60D75F6362BF68A3"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "最基础的熔炼"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55B7A6AEBB65DFDA"]
+			description: [
+				"在1000摄氏度以上的金属占据了主要地位的整合包内，仅能提供937摄氏度的焦黑加热器怕是只能熔炼锌锡黄铜青铜这类熔点极低的金属了。"
+				"它对于开局使用锌制造安山合金意义重大，可以说开局的机械动力就是从这里起源的。"
+			]
+			id: "3497D2D25AA3ACA6"
+			subtitle: "1000度以下还能应付"
+			tasks: [{
+				id: "2527A0D370DF24DF"
+				item: "tconstruct:seared_heater"
+				type: "item"
+			}]
+			title: "匠魂的基础加热"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"55B7A6AEBB65DFDA"
+				"2192A4D7A83457AD"
+				"6CA32F483367E0AF"
+			]
+			description: [
+				"现在，去挖点铜吧。"
+				"你可以试试用紫水晶工具，自带的时运可以获得更多矿物。"
+				"铜可以直接在熔炉里熔炼，也可以直接在部件制造台上手搓，是不错的前期工具材料。"
+			]
+			id: "1E2099E61A6F1339"
+			subtitle: "可能是你的第一种金属！"
+			tasks: [{
+				id: "23B2FB8B0D2F8C59"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			title: "橙红色的光泽"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"55B7A6AEBB65DFDA"
+				"6CA32F483367E0AF"
+			]
+			description: [
+				"虽然不是原版，但是这个家伙大概也是大多数玩家的老朋友了。"
+				"锌的熔点只有420摄氏度，可以直接在焦黑炉里熔化，并用于浇筑安山合金。"
+				"机械动力的故事⑨此开始(ᗜˬᗜ)"
+			]
+			id: "1592681A54FC5717"
+			subtitle: "安山设备的基础之一"
+			tasks: [{
+				id: "36D709D5E822F5B1"
+				item: "create:raw_zinc"
+				type: "item"
+			}]
+			title: "老朋友"
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"使用锤子、石磨与粉碎轮都可以把安山岩打碎。"
+				"打碎后的安山岩就是安山合金的重要原材料，所以多挖点，很有用！"
+			]
+			icon: "minecraft:andesite"
+			id: "5D305A93B3676FEE"
+			subtitle: "专门加了个群系给你挖，应该不会缺吧"
+			tasks: [
+				{
+					id: "362AE1F8AAE377F9"
+					item: "cmi:andesite_dust"
+					type: "item"
+				}
+				{
+					id: "2CC3D625983F3827"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+			]
+			title: "打成粉，然后呢？"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3497D2D25AA3ACA6"
+				"1592681A54FC5717"
+				"5D305A93B3676FEE"
+			]
+			description: [
+				"安山合金是大前期的重要资源，是你升级到铁器时代的必经之路。"
+				"将它熔化后浇在小板铸模上就可以获得安山合金板，用于制造高炉、安山系列设备等"
+			]
+			id: "2F07FB52B3D85792"
+			rewards: [{
+				id: "5A639A1385C3FFF7"
+				item: "tconstruct:plate_cast"
+				type: "item"
+			}]
+			subtitle: "获得安山合金！"
+			tasks: [{
+				id: "3603027C61393227"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "坚如磐石"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F07FB52B3D85792"]
+			description: [
+				"高炉的内部温度提高到了1550摄氏度，足以将铁及以下熔点的金属熔炼。"
+				"配方正确，原料正确，产物正确，UI错误"
+			]
+			id: "41D7E109B48C4231"
+			subtitle: "制造高炉"
+			tasks: [{
+				id: "65BCC26F3EAFFDBD"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			title: "更进一步的冶炼"
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["57F25D7AD4CC6CBE"]
+			description: [
+				"即使匠魂原版的大量燃料都被我们调高了温度，熔岩炼铁仍然成为了过去式。"
+				"但是你都有安山合金了，为什么不去做点别的燃料呢？"
+				"当植物油与乙醇被混合均匀，生物柴油就诞生了！"
+				"它可以提供1636摄氏度的高温，是非常优秀的过渡燃料"
+			]
+			icon: "create:whisk"
+			id: "13C438F279FA1A53"
+			subtitle: "燃烧温度更高的液体燃料！"
+			tasks: [
+				{
+					id: "53AE1BF7055EA776"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "1CA86C29582628FB"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "3E5925C8D4287191"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+			]
+			title: "混合均匀"
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"41D7E109B48C4231"
+				"43A58164AF59ECA2"
+			]
+			description: [
+				"有了高炉，现在你可以熔炼铁了！"
+				"可能还是有那么一点陌生，但是终于还是闻到了熟悉的味道！"
+				"现在，辊压机，搅拌机，鼓风机等一系列含铁设备正在向你招手！"
+			]
+			id: "57F25D7AD4CC6CBE"
+			subtitle: "找出你的粗铁"
+			tasks: [{
+				id: "16F92DE13EB1C548"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			title: "铁器时代！"
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"真是想不到啊，这次黄铜竟然可以比铁还早！"
+				"但是似乎在前面还卡着一些东西不让你制造黄铜设备，先去把它干掉吧！"
+			]
+			id: "6CA32F483367E0AF"
+			subtitle: "再熟悉不过的金属"
+			tasks: [{
+				id: "40B7E60CF4B4945E"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "金光闪闪"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"人类历史上的第一种合金"
+				"现在正和蒸汽技术深度绑定。"
+				"赶紧制造青铜构件来驱动你的蒸汽锅炉吧！"
+			]
+			id: "2192A4D7A83457AD"
+			subtitle: "制作青铜"
+			tasks: [{
+				id: "4CA53FE370915814"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
+			title: "我本来不是绿的！"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"55B7A6AEBB65DFDA"
+				"2192A4D7A83457AD"
+			]
+			description: [
+				"锡是一种熔点只有232的杂鱼~"
+				"对于前期的玩家来说，使用锡制造的合金应该会是一种不错的应力设备原料~"
+			]
+			id: "7B0FF29D1967C917"
+			subtitle: "获取锡"
+			tasks: [{
+				id: "6BE83EB12D1BA4EA"
+				item: "thermal:raw_tin"
+				type: "item"
+			}]
+			title: "材质柔软，熔点也很低"
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			description: [
+				"终于要进入电气时代了！"
+				"如果你问我电气时代最具有代表性的材料是什么"
+				"那我一定会说&5钢！"
+				"将碳与铁以最合适的比例融合在一起，就是最为坚韧耐用的金属铁！"
+			]
+			id: "43A58164AF59ECA2"
+			subtitle: "炼出钢"
+			tasks: [{
+				id: "3432C6434689A2E4"
+				item: "tconstruct:steel_ingot"
+				type: "item"
+			}]
+			title: "铁的加强态！"
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["43A58164AF59ECA2"]
+			description: [
+				"为什么要你做这东西呢？"
+				"除了炼钢更快以外……"
+				"&a电弧炉是当前阶段温度最高的熔炉。"
+				"想要发展热力的话，那些合金不是需要柴油烈焰血熔化就是需要电弧炉生产"
+				"就是这个电老虎不仅耗电高，噪声也大"
+				"希望你在黄铜阶段制造了足够的蓄电池与发电机"
+			]
+			id: "22C43CFB89AA2C2B"
+			subtitle: "获取27块强化高炉砖"
+			tasks: [{
+				count: 27L
+				id: "2F50FA6A94D3F9EC"
+				item: "immersiveengineering:blastbrick_reinforced"
+				type: "item"
+			}]
+			title: "噪音警告！"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["378E684B19F5736E"]
+			description: [
+				"嘿锇，你整天炫耀你那3k摄氏度熔点的日子结束了！"
+				"把你的单质给我。"
+				"想熔炼的话，就自己去JEI查，这规矩你也懂的。"
+				"我就知道你会这么说（掏出提纯仓）（意义不明的鼓点）"
+				"我们之间因为熔点争了多少次了？"
+				"不好说，自从我把你从地下挖出来，就一直在试图熔化你。"
+				"（意义不明的鼓点）"
+				"是时候结束了，锇！一了百了。"
+				"（意义不明的鼓点）"
+			]
+			icon: "mekanism:ingot_osmium"
+			id: "5B75C8DD9D359835"
+			subtitle: "想熔炼的话，你得自己去JEI查"
+			tasks: [
+				{
+					id: "7BE82B5D77287BD2"
+					item: "mekanism:raw_osmium"
+					type: "item"
+				}
+				{
+					id: "0277627913E46ADB"
+					item: "cmi:raw_tungsten"
+					type: "item"
+				}
+			]
+			title: "绝不会锇钨冲突！"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["22C43CFB89AA2C2B"]
+			description: [
+				"在石油化工与海水处理线路的终点，你看到了这点光芒。"
+				"它有着极强的耐腐蚀性能，经历漫长的岁月仍然可以凭借致密的氧化层保持光洁。"
+				"它是下一个阶段的重要材料，那些基础设备一个两个都需要它的参与。"
+				"而它只能在电弧炉中制作"
+			]
+			id: "378E684B19F5736E"
+			subtitle: "制造不锈钢"
+			tasks: [{
+				id: "0F097E2BCE0B4681"
+				item: "cmi:stainless_steel_ingot"
+				type: "item"
+			}]
+			title: "仓库角落的闪光"
+			x: 1.0d
+			y: 2.5d
+		}
+	]
+	title: "矿石获取与熔炼"
+}

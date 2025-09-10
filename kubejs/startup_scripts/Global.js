@@ -6,7 +6,7 @@ let $TinkerTags$Items =
 // 全局注册物品命名空间
 global.namespace = "cmi"
 // Modpack版本
-global.modPackVersion = "§0CMI Beta-2.3.0"
+global.modPackVersion = "§0CMI Beta-2.2.1-hotfix"
 // 桶容量
 global.BUCKET_CAPACITY = 1000
 // 扳手Tag
@@ -362,14 +362,19 @@ global.meltingLevels = {
 }
 // 燃料列表
 global.fuelList = [
+	"minecraft:lava",
 	"ad_astra:cryo_fuel",
 	"cmi:delta_unstable_solution",
 	"ad_astra:fuel",
+	"thermal:crude_oil",
+	"createdieselgenerators:crude_oil",
 	"ad_astra:oil",
 	"thermal:refined_fuel",
 	"cmi:turbid_waste_liquid",
 	"tconstruct:blazing_blood",
 	"immersiveengineering:ethanol",
+	"immersiveengineering:plantoil",
+	"createdieselgenerators:ethanol",
 	"createdieselgenerators:plant_oil",
 	"createdieselgenerators:biodiesel",
 	"createdieselgenerators:diesel",
@@ -378,15 +383,20 @@ global.fuelList = [
 
 // 燃料温度
 global.fuelTemperatures = {
+	"minecraft:lava": 1346,
 	"ad_astra:cryo_fuel": 4225,
 	"cmi:delta_unstable_solution": 1206,
 	"ad_astra:fuel": 1417,
+	"thermal:crude_oil": 1220,
+	"createdieselgenerators:crude_oil": 1220,
 	"ad_astra:oil": 1220,
 	"thermal:refined_fuel": 2041,
 	"cmi:turbid_waste_liquid": 1189,
 	"tconstruct:blazing_blood": 2638,
 	"immersiveengineering:ethanol": 1132,
+	"createdieselgenerators:ethanol": 1132,
 	"createdieselgenerators:plant_oil": 1027,
+	"immersiveengineering:plantoil": 1027,
 	"createdieselgenerators:biodiesel": 1636,
 	"createdieselgenerators:diesel": 2113,
 	"createdieselgenerators:gasoline": 2043
