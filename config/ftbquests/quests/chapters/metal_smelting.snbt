@@ -1,10 +1,10 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "4AA1F962E3D7F9D6"
+	filename: "metal_smelting"
 	group: "6A6C7C5BAEF247E2"
 	icon: "tconstruct:smeltery_controller"
-	id: "4AA1F962E3D7F9D6"
+	id: "metal_smelting"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -16,9 +16,9 @@
 			icon: "minecraft:furnace"
 			id: "55B7A6AEBB65DFDA"
 			rewards: [{
-				id: "3F7948B0FD7B1844"
+				id: "61711E37B896CB40"
 				type: "xp"
-				xp: 5
+				xp: 10
 			}]
 			subtitle: "熔点系统带来的变革"
 			tasks: [{
@@ -38,6 +38,11 @@
 				"而且他没有匠魂熔炉的熔化增产，除了开局拿来熔铜制造工具似乎也并不能发挥什么太大的作用了……"
 			]
 			id: "423068E2C60598B2"
+			rewards: [{
+				id: "16DF6C4C510BC7F6"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "再熟悉不过了"
 			tasks: [{
 				id: "60D75F6362BF68A3"
@@ -55,6 +60,11 @@
 				"它对于开局使用锌制造安山合金意义重大，可以说开局的机械动力就是从这里起源的。"
 			]
 			id: "3497D2D25AA3ACA6"
+			rewards: [{
+				id: "6370035081EC0FEF"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "1000度以下还能应付"
 			tasks: [{
 				id: "2527A0D370DF24DF"
@@ -77,10 +87,22 @@
 				"铜可以直接在熔炉里熔炼，也可以直接在部件制造台上手搓，是不错的前期工具材料。"
 			]
 			id: "1E2099E61A6F1339"
+			rewards: [{
+				id: "25956A1C91AEA4DB"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "可能是你的第一种金属！"
 			tasks: [{
 				id: "23B2FB8B0D2F8C59"
-				item: "minecraft:raw_copper"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/copper"
+					}
+				}
+				title: "粗铜"
 				type: "item"
 			}]
 			title: "橙红色的光泽"
@@ -98,10 +120,22 @@
 				"机械动力的故事⑨此开始(ᗜˬᗜ)"
 			]
 			id: "1592681A54FC5717"
+			rewards: [{
+				id: "659E9CD7D0704F8F"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "安山设备的基础之一"
 			tasks: [{
 				id: "36D709D5E822F5B1"
-				item: "create:raw_zinc"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/zinc"
+					}
+				}
+				title: "粗锌"
 				type: "item"
 			}]
 			title: "老朋友"
@@ -115,6 +149,11 @@
 			]
 			icon: "minecraft:andesite"
 			id: "5D305A93B3676FEE"
+			rewards: [{
+				id: "6D42FA319D122496"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "专门加了个群系给你挖，应该不会缺吧"
 			tasks: [
 				{
@@ -143,15 +182,29 @@
 				"将它熔化后浇在小板铸模上就可以获得安山合金板，用于制造高炉、安山系列设备等"
 			]
 			id: "2F07FB52B3D85792"
-			rewards: [{
-				id: "5A639A1385C3FFF7"
-				item: "tconstruct:plate_cast"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5A639A1385C3FFF7"
+					item: "tconstruct:plate_cast"
+					type: "item"
+				}
+				{
+					id: "3DC8C554F37BE0E4"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "获得安山合金！"
 			tasks: [{
 				id: "3603027C61393227"
-				item: "create:andesite_alloy"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/andesite_alloy"
+					}
+				}
+				title: "安山合金"
 				type: "item"
 			}]
 			title: "坚如磐石"
@@ -165,6 +218,11 @@
 				"配方正确，原料正确，产物正确，UI错误"
 			]
 			id: "41D7E109B48C4231"
+			rewards: [{
+				id: "420F0411C57AFB72"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "制造高炉"
 			tasks: [{
 				id: "65BCC26F3EAFFDBD"
@@ -185,6 +243,11 @@
 			]
 			icon: "create:whisk"
 			id: "13C438F279FA1A53"
+			rewards: [{
+				id: "622F9AB476ECF7DE"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "燃烧温度更高的液体燃料！"
 			tasks: [
 				{
@@ -218,10 +281,22 @@
 				"现在，辊压机，搅拌机，鼓风机等一系列含铁设备正在向你招手！"
 			]
 			id: "57F25D7AD4CC6CBE"
+			rewards: [{
+				id: "01AE9526E71990F1"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "找出你的粗铁"
 			tasks: [{
 				id: "16F92DE13EB1C548"
-				item: "minecraft:raw_iron"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/iron"
+					}
+				}
+				title: "粗铁"
 				type: "item"
 			}]
 			title: "铁器时代！"
@@ -234,10 +309,22 @@
 				"但是似乎在前面还卡着一些东西不让你制造黄铜设备，先去把它干掉吧！"
 			]
 			id: "6CA32F483367E0AF"
+			rewards: [{
+				id: "48E4484F2510EE65"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "再熟悉不过的金属"
 			tasks: [{
 				id: "40B7E60CF4B4945E"
-				item: "create:brass_ingot"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/brass"
+					}
+				}
+				title: "黄铜"
 				type: "item"
 			}]
 			title: "金光闪闪"
@@ -251,10 +338,22 @@
 				"赶紧制造青铜构件来驱动你的蒸汽锅炉吧！"
 			]
 			id: "2192A4D7A83457AD"
+			rewards: [{
+				id: "1150212D393860C2"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "制作青铜"
 			tasks: [{
 				id: "4CA53FE370915814"
-				item: "thermal:bronze_ingot"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+				title: "青铜"
 				type: "item"
 			}]
 			title: "我本来不是绿的！"
@@ -271,10 +370,22 @@
 				"对于前期的玩家来说，使用锡制造的合金应该会是一种不错的应力设备原料~"
 			]
 			id: "7B0FF29D1967C917"
+			rewards: [{
+				id: "1E941479DFCF4D7C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "获取锡"
 			tasks: [{
 				id: "6BE83EB12D1BA4EA"
-				item: "thermal:raw_tin"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/tin"
+					}
+				}
+				title: "粗锡"
 				type: "item"
 			}]
 			title: "材质柔软，熔点也很低"
@@ -289,10 +400,22 @@
 				"将碳与铁以最合适的比例融合在一起，就是最为坚韧耐用的金属铁！"
 			]
 			id: "43A58164AF59ECA2"
+			rewards: [{
+				id: "16965F1CEF82A892"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "炼出钢"
 			tasks: [{
 				id: "3432C6434689A2E4"
-				item: "tconstruct:steel_ingot"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+				title: "钢"
 				type: "item"
 			}]
 			title: "铁的加强态！"
@@ -310,6 +433,11 @@
 				"希望你在黄铜阶段制造了足够的蓄电池与发电机"
 			]
 			id: "22C43CFB89AA2C2B"
+			rewards: [{
+				id: "201DB6B21C2E36EF"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "获取27块强化高炉砖"
 			tasks: [{
 				count: 27L
@@ -336,16 +464,35 @@
 			]
 			icon: "mekanism:ingot_osmium"
 			id: "5B75C8DD9D359835"
+			rewards: [{
+				id: "54AE4AF0F8A4619C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "想熔炼的话，你得自己去JEI查"
 			tasks: [
 				{
 					id: "7BE82B5D77287BD2"
-					item: "mekanism:raw_osmium"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/osmium"
+						}
+					}
+					title: "粗锇"
 					type: "item"
 				}
 				{
 					id: "0277627913E46ADB"
-					item: "cmi:raw_tungsten"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/tungsten"
+						}
+					}
+					title: "粗钨"
 					type: "item"
 				}
 			]
@@ -362,10 +509,22 @@
 				"而它只能在电弧炉中制作"
 			]
 			id: "378E684B19F5736E"
+			rewards: [{
+				id: "545573DBBC9B11E6"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "制造不锈钢"
 			tasks: [{
 				id: "0F097E2BCE0B4681"
-				item: "cmi:stainless_steel_ingot"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/stainless_steel"
+					}
+				}
+				title: "不锈耐酸钢"
 				type: "item"
 			}]
 			title: "仓库角落的闪光"
