@@ -152,16 +152,6 @@ ServerEvents.recipes((event) => {
 		C: "#forge:plates/zinc"
 	}).id("createaddition:crafting/capacitor_1")
 
-	kubejs.shaped("cmi:simple_battery", [
-		" A ",
-		"BBB",
-		" C "
-	], {
-		A: "#forge:plates/zinc",
-		B: "#forge:dusts/redstone",
-		C: "#forge:plates/copper"
-	}).id("createaddition:crafting/capacitor_2")
-
 	// 蒸汽引擎
 	create.sequenced_assembly("create:steam_engine", [
 		"create:copper_casing"

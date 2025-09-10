@@ -50,6 +50,7 @@ ServerEvents.recipes((event) => {
 		"mekanism:processing/lategame/antimatter/from_pellet",
 		"tconstruct:smeltery/melting/fuel/blaze",
 		"tconstruct:smeltery/melting/fuel/lava",
+		"createaddition:crafting/capacitor_2",
 		"mekanism:processing/lategame/antimatter_pellet/from_gas",
 		"tconstruct:common/basalt_blast_furnace",
 		"tconstruct:common/glass/vanilla/daylight_detector",

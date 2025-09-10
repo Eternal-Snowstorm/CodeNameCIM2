@@ -4,7 +4,7 @@
 	filename: "metal_smelting"
 	group: "6A6C7C5BAEF247E2"
 	icon: "tconstruct:smeltery_controller"
-	id: "metal_smelting"
+	id: "3787728164F11E05"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
