@@ -7,7 +7,6 @@ ServerEvents.recipes((event) => {
 		Fluid.of("minecraft:water", 1500)
 	], Fluid.of("cmi:sea_water", 2000))
 		.heatRequirement(global.HeatLevel["heated"])
-		// .heatRequirement(global.HeatLevel["grilled"])
 
 	// 碱性浓缩海水
 	create.mixing([
