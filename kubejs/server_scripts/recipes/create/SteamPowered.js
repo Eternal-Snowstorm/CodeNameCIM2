@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
 	let materials = [

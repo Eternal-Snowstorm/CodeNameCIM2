@@ -364,7 +364,7 @@
 					consume_items: true
 					count: 6L
 					id: "489B8BE7868377C5"
-					item: "thermal:steel_block"
+					item: "tconstruct:steel_block"
 					type: "item"
 				}
 				{
