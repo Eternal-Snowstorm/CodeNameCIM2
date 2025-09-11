@@ -1,5 +1,14 @@
 ServerEvents.recipes((event) => {
 	let removeRecipeIds = [
+		"thermal:machines/chiller/chiller_water_to_ice",
+		"ae2:entropy/cool/water_ice",
+		"create:compacting/ice",
+		"thermal:machines/press/unpacking/press_packed_ice_unpacking",
+		"thermal:machines/press/unpacking/press_blue_ice_unpacking",
+		"thermal:machines/press/packing3x3/press_packed_ice_packing",
+		"thermal:machines/press/packing3x3/press_blue_ice_packing",
+		"minecraft:packed_ice",
+		"minecraft:blue_ice",
 		"create:mixing/andesite_alloy_from_zinc",
 		"create:mixing/andesite_alloy",
 		"create:item_application/andesite_casing_from_wood",

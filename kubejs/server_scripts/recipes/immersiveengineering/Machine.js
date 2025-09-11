@@ -24,7 +24,8 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem(icea).loops(1)
 
 	kubejs.shapeless("immersiveindustry:refractory_kiln_brick", [
-		"minecraft:clay_ball", "supplementaries:ash_brick"
+		"minecraft:clay_ball",
+		"supplementaries:ash_brick"
 	]).id("immersiveindustry:crafting/refractory_kiln_brick")
 
 	kubejs.shapeless("immersiveengineering:light_engineering", [
@@ -36,7 +37,8 @@ ServerEvents.recipes((event) => {
 	]).id("immersiveengineering:crafting/heavy_engineering")
 
 	kubejs.shapeless("immersiveengineering:rs_engineering", [
-		"vintageimprovements:redstone_module", "#forge:sheetmetals/iron"
+		"vintageimprovements:redstone_module",
+		"#forge:sheetmetals/iron"
 	]).id("immersiveengineering:crafting/rs_engineering")
 
 	kubejs.shapeless("immersiveengineering:generator", [
@@ -44,7 +46,9 @@ ServerEvents.recipes((event) => {
 	]).id("minecraft:kjs/immersiveengineering_generator")
 
 	kubejs.shapeless("immersiveengineering:radiator", [
-		"cmi:cobalt_mechanism", "#forge:sheetmetals/steel", "cmi:bronze_mechanism"
+		"cmi:cobalt_mechanism",
+		"#forge:sheetmetals/steel",
+		"cmi:bronze_mechanism"
 	]).id("immersiveengineering:crafting/radiator")
 
 	kubejs.shaped("immersiveindustry:electrolyzer", [
@@ -88,7 +92,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:glass",
 		B: "cmi:nature_mechanism",
 		C: "cmi:light_engineering_mechanism"
-	}).id("immersiveengineering:crafting/clocheW")
+	}).id("immersiveengineering:crafting/cloche")
 
 	kubejs.shaped("immersiveengineering:fluid_pump", [
 		"A",

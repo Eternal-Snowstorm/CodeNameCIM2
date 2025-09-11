@@ -28,6 +28,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("thermal_extra:diesel")
 	addCommonTooltip("createaddition:seed_oil")
 	addCommonTooltip("#cmi:machine_block")
+	addCommonTooltip("ad_astra:ice_shard")
 
 	let chemSalts = [
 		"fecl2",

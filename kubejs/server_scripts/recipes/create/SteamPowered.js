@@ -15,7 +15,6 @@ ServerEvents.recipes((event) => {
 			block: "immersiveengineering:blastbrick"
 		}
 	]
-
 	materials.forEach((material) => {
 		let ingot = `#forge:ingots/${material.id}`
 		let plate = `#forge:plates/${material.id}`

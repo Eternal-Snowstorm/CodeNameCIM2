@@ -227,11 +227,24 @@ ServerEvents.recipes((event) => {
 		})
 
 	kubejs.shaped("minecraft:tnt", [
-		"AA ",
-		"AA ",
-		"   "
+		"AA",
+		"AA"
 	], {
 		A: "cmi:trinitrotoluene"
-	})
-		.id("minecraft:tnt")
+	}).id("minecraft:tnt")
+
+	// 冰
+	kubejs.shapeless("minecraft:ice",[
+		"4x ad_astra:ice_shard"
+	])
+
+	// 浮冰
+	kubejs.shapeless("minecraft:packed_ice",[
+		"4x minecraft:ice"
+	])
+
+	// 蓝冰
+	kubejs.shapeless("minecraft:blue_ice",[
+		"4x minecraft:packed_ice"
+	])
 })
