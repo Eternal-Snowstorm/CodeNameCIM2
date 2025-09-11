@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
 		"AAA"
 	], {
 		A: "#minecraft:planks",
-		B: "minecraft:stone",
+		B: "#forge:stone",
 		C: "cmi:wooden_mechanism"
 	}).id("functionalstorage:upgrade_template")
 
@@ -73,7 +73,7 @@ ServerEvents.recipes((event) => {
 	tconstruct.casting_table("functionalstorage:iron_downgrade")
 		.cast(TEMPLATE)
 		.cast_consumed(true)
-		.fluid(Fluid.of("tconstruct:molten_iron", 180))
+		.fluid(Fluid.of("tconstruct:molten_pig_iron", 180))
 		.cooling_time(20 * 3)
 		.id("functionalstorage:iron_downgrade")
 
@@ -94,11 +94,11 @@ ServerEvents.recipes((event) => {
 		.id("functionalstorage:diamond_upgrade")
 
 	// 虚空升级
-	tconstruct.casting_basin("functionalstorage:void_upgrade")
+	tconstruct.casting_table("functionalstorage:void_upgrade")
 		.fluid(Fluid.of("tconstruct:molten_obsidian", 4000))
 		.cast(TEMPLATE)
 		.cast_consumed(true)
-		.cooling_time(40)
+		.cooling_time(20 * 3)
 		.id("functionalstorage:void_upgrade")
 
 	// 流体抽屉1

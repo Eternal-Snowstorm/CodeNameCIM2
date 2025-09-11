@@ -4,17 +4,17 @@ ServerEvents.blockLootTables((event) => {
 			// 定义前缀列表
 			let prefixes = [
 				"",
-				"deepslate",
-				"nether",
-				"end",
-				"moon",
-				"mars",
-				"venus",
-				"glacio",
-				"mercury"
+				"deepslate_",
+				"nether_",
+				"end_",
+				"moon_",
+				"mars_",
+				"venus_",
+				"glacio_",
+				"mercury_"
 			]
 			prefixes.forEach((prefix) => {
-				let blockId = `cmi:${prefix}_${ore}_ore`
+				let blockId = `cmi:${prefix}${ore}_ore`
 
 				event.addBlock(blockId, (loot) => {
 					loot.addPool((pool) => {

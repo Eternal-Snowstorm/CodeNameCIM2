@@ -62,8 +62,8 @@
 				title: "建筑手杖"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -461,6 +461,35 @@
 			}]
 			x: 2.0d
 			y: 7.0d
+		}
+		{
+			dependencies: [
+				"4CCF561EE0B2C3A6"
+				"714D1AC6D07BEEC0"
+			]
+			description: ["搭配输出输入升级使用有奇效"]
+			hide_dependency_lines: true
+			id: "15080FCC44C718DD"
+			rewards: [{
+				id: "4B5E173031563764"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "比流体储罐好用一百亿倍"
+			tasks: [{
+				id: "4AF4B44DD243B23F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:fluid_drawer"
+					}
+				}
+				title: "流体抽屉"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
 		}
 	]
 	title: "实用工具"

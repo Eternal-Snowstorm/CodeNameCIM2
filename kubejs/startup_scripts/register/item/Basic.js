@@ -107,7 +107,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 升级模板
 	addItem("drawer_upgrade_template")
-		.texture(`${global.namespace}:item/material/upgrade_template`)
+		.texture(`${global.namespace}:item/material/drawer_upgrade_template`)
 
 	// 安山岩
 	addItem("andesite_dust")
