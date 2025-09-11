@@ -23,7 +23,7 @@
 			id: "0AB470E3A20E01DF"
 			tasks: [{
 				id: "5AA6A2BBE7879251"
-				title: "水"
+				title: "Water"
 				type: "checkmark"
 			}]
 			x: -12.833333333333329d
@@ -36,7 +36,7 @@
 			id: "75A405BDA18F991B"
 			tasks: [{
 				id: "767FFC76DAD04DFA"
-				title: "电解分离"
+				title: "Electrolytic Separator"
 				type: "checkmark"
 			}]
 			x: -12.76190476190476d
@@ -64,7 +64,7 @@
 			id: "4B1F3B0B95BDE516"
 			tasks: [{
 				id: "2930318885CAB669"
-				title: "氢"
+				title: "Hydrogen"
 				type: "checkmark"
 			}]
 			x: -11.11904761904762d
@@ -84,6 +84,7 @@
 				item: "ae2:silicon"
 				type: "item"
 			}]
+			title: "Silicon"
 			x: -5.547619047619051d
 			y: -7.915476190476205d
 		}
@@ -95,7 +96,7 @@
 			id: "2A5E311AA2C6E26F"
 			tasks: [{
 				id: "5280413E9C5312D6"
-				title: "氯"
+				title: "Chlorine"
 				type: "checkmark"
 			}]
 			x: -2.690476190476204d
@@ -111,7 +112,7 @@
 			id: "41E29862F69FA483"
 			tasks: [{
 				id: "43FBEA744CC20533"
-				title: "加压处理"
+				title: "Vacuum Chamb"
 				type: "checkmark"
 			}]
 			x: -3.6190476190476346d
@@ -125,7 +126,7 @@
 			id: "73FF8AFE61EF7AFC"
 			tasks: [{
 				id: "41D3A3F159FEAE69"
-				title: "四氯化硅"
+				title: "Tetrachlorosilane"
 				type: "checkmark"
 			}]
 			x: -5.476190476190482d
@@ -153,7 +154,7 @@
 			id: "5C541C73D1FBFB8B"
 			tasks: [{
 				id: "3A2B3CB3F5A5258E"
-				title: "氯气"
+				title: "Gas Chlorine"
 				type: "checkmark"
 			}]
 			x: -2.5714285714285836d
@@ -166,7 +167,7 @@
 			id: "60922F13CE0156BE"
 			tasks: [{
 				id: "00A57C987BEBA47E"
-				title: "气液转换"
+				title: "Rotary Condensentrator"
 				type: "checkmark"
 			}]
 			x: -1.7619047619047734d
@@ -179,7 +180,7 @@
 			id: "546730BE3E146C8F"
 			tasks: [{
 				id: "278334677D59B662"
-				title: "电解分离"
+				title: "Electrolytic Separator"
 				type: "checkmark"
 			}]
 			x: -4.333333333333329d
@@ -193,7 +194,7 @@
 			id: "5FCEA9E62DBCE01C"
 			tasks: [{
 				id: "5FD40ECFB1036956"
-				title: "盐水"
+				title: "Brine"
 				type: "checkmark"
 			}]
 			x: -5.476190476190482d
@@ -218,9 +219,10 @@
 						value: "forge:dusts/salt"
 					}
 				}
-				title: "盐"
+				title: "Any #forge:dusts/salt"
 				type: "item"
 			}]
+			title: "Salt"
 			x: -8.547619047619051d
 			y: -10.554761904761897d
 		}
@@ -231,7 +233,7 @@
 			id: "75A0199420354F74"
 			tasks: [{
 				id: "35833E7206BBD68A"
-				title: "搅拌"
+				title: "Mix"
 				type: "checkmark"
 			}]
 			x: -6.547619047619037d
@@ -244,7 +246,7 @@
 			id: "1A8071F9D05BD9AB"
 			tasks: [{
 				id: "1B530FDA3C93842A"
-				title: "搅拌水"
+				title: "Mix Water"
 				type: "checkmark"
 			}]
 			x: -10.11904761904762d
@@ -268,9 +270,10 @@
 						value: "forge:glass"
 					}
 				}
-				title: "玻璃"
+				title: "Any #forge:glass"
 				type: "item"
 			}]
+			title: "Glass"
 			x: -9.61904761904762d
 			y: -6.747619047619054d
 		}
@@ -285,7 +288,7 @@
 			id: "496A8EADEC2A0270"
 			tasks: [{
 				id: "5D0846AE3BA12B1E"
-				title: "加压反应室"
+				title: "Pressurized Reaction Chamber"
 				type: "checkmark"
 			}]
 			x: -9.476190476190482d
@@ -306,7 +309,7 @@
 				item: "cmi:single_crystal_silicon"
 				type: "item"
 			}]
-			title: "单晶硅"
+			title: "Single Crystal Silicon"
 			x: -5.547619047619051d
 			y: -3.1261904761904944d
 		}
@@ -317,7 +320,7 @@
 			id: "02E7945B5FA117DA"
 			tasks: [{
 				id: "1765765E280E6666"
-				title: "辊压"
+				title: "Press"
 				type: "checkmark"
 			}]
 			x: -0.6190476190476062d
@@ -341,9 +344,10 @@
 						value: "forge:ingots/silver"
 					}
 				}
-				title: "银锭"
+				title: "Any #forge:ingots/silver"
 				type: "item"
 			}]
+			title: "Silver Ingot"
 			x: -17.76190476190476d
 			y: -1.9761904761904887d
 		}
@@ -354,7 +358,7 @@
 			id: "3BCAE92A85378AEC"
 			tasks: [{
 				id: "771D385D6C063E52"
-				title: "辊压"
+				title: "Press"
 				type: "checkmark"
 			}]
 			x: -16.19047619047619d
@@ -379,9 +383,10 @@
 						value: "forge:plates/silver"
 					}
 				}
-				title: "银板"
+				title: "Any #forge:plates/silver"
 				type: "item"
 			}]
+			title: "Silver Plate"
 			x: -9.904761904761898d
 			y: 1.2095238095238017d
 		}
@@ -408,7 +413,7 @@
 			id: "4C6B3731A726C4F5"
 			tasks: [{
 				id: "456F6E9F0548025D"
-				title: "灌注"
+				title: "Infuse"
 				type: "checkmark"
 			}]
 			x: -19.476190476190474d
@@ -455,7 +460,7 @@
 			id: "74C290EA5E34C780"
 			tasks: [{
 				id: "27DDF5BDCBD37750"
-				title: "富集"
+				title: "Enrichment"
 				type: "checkmark"
 			}]
 			x: -20.904761904761898d
@@ -502,7 +507,7 @@
 			id: "7E0F086F986F7B03"
 			tasks: [{
 				id: "4F8528A864C36D2B"
-				title: "精密锯木"
+				title: "Sawimll"
 				type: "checkmark"
 			}]
 			x: -22.190476190476183d
@@ -537,7 +542,7 @@
 			id: "5CA61F74A8331383"
 			tasks: [{
 				id: "62195B94231F4364"
-				title: "动力合成"
+				title: "Mechanical Craft"
 				type: "checkmark"
 			}]
 			x: -15.476190476190467d
@@ -583,9 +588,10 @@
 						value: "ae2:glass_cable"
 					}
 				}
-				title: "ME玻璃线缆"
+				title: "Any #ae2:glass_cable"
 				type: "item"
 			}]
+			title: "Glass Cable"
 			x: 2.095238095238116d
 			y: 2.838095238095235d
 		}
@@ -608,9 +614,10 @@
 						value: "ae2:illuminated_panel"
 					}
 				}
-				title: "照明面板"
+				title: "Any #ae2:illuminated_panel"
 				type: "item"
 			}]
+			title: "Monitor"
 			x: 8.238095238095255d
 			y: 5.266666666666644d
 		}
@@ -632,6 +639,7 @@
 				item: "cmi:computer_component"
 				type: "item"
 			}]
+			title: "Computer Component"
 			x: 15.309523809523839d
 			y: 0.6595238095237903d
 		}
@@ -650,6 +658,7 @@
 				item: "cmi:mekanism_mechanism_part"
 				type: "item"
 			}]
+			title: "Mechanism Part"
 			x: 17.952380952380977d
 			y: -1.8761904761904873d
 		}
@@ -663,6 +672,7 @@
 				item: "cmi:computing_mechanism"
 				type: "item"
 			}]
+			title: "Computing Mechanism"
 			x: 22.95238095238099d
 			y: 0.12380952380951271d
 		}
