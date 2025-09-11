@@ -40,8 +40,7 @@ ServerEvents.recipes((event) => {
 	mekanism.metallurgic_infusing(
 		"mekanism:basic_control_circuit",
 		"#forge:plates/polyolefin",
-		{ "amount": 20, "tag": "mekanism:redstone" }
-	)
+	).chemicalInput({ "amount": 20, "tag": "mekanism:redstone" })
 
 	mekanism.crystallizing(
 		"gas",
