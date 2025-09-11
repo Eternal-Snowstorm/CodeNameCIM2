@@ -1,190 +1,165 @@
 BlockEvents.rightClicked("cmi:accelerator", (event) => {
 	// 安山构件
-	addAccelerateEvent(event, "cmi:andesite_mechanism",
-		"minecraft:stone", [
-			Item.of("minecraft:andesite").withChance(0.2),
-			Item.of("minecraft:iron_ore").withChance(0.05),
-			Item.of("create:zinc_ore").withChance(0.05)
+	addAccelerateEvent(event, "cmi:andesite_mechanism", "minecraft:stone", [
+		Item.of("minecraft:andesite").withChance(0.2),
+		Item.of("minecraft:iron_ore").withChance(0.05),
+		Item.of("create:zinc_ore").withChance(0.05)
 	])
-	addAccelerateEvent(event, "cmi:andesite_mechanism",
-		"minecraft:deepslate", [
-			Item.of("minecraft:andesite").withChance(0.15),
-			Item.of("minecraft:deepslate_iron_ore").withChance(0.1),
-			Item.of("create:deepslate_zinc_ore").withChance(0.1)
+	addAccelerateEvent(event, "cmi:andesite_mechanism", "minecraft:deepslate", [
+		Item.of("minecraft:andesite").withChance(0.15),
+		Item.of("minecraft:deepslate_iron_ore").withChance(0.1),
+		Item.of("create:deepslate_zinc_ore").withChance(0.1)
 	])
 
 	// 钴质构件
-	addAccelerateEvent(event, "cmi:cobalt_mechanism",
-		"minecraft:netherrack", [
-			Item.of("tconstruct:cobalt_ore").withChance(0.2),
+	addAccelerateEvent(event, "cmi:cobalt_mechanism", "minecraft:netherrack", [
+		Item.of("tconstruct:cobalt_ore").withChance(0.2),
 	])
 
 	// 铜质构件
-	addAccelerateEvent(event, "cmi:copper_mechanism",
-		"minecraft:stone", [
-			Item.of("minecraft:copper_ore").withChance(0.2),
-			Item.of("minecraft:gold_ore").withChance(0.05),
-			Item.of("minecraft:clay").withChance(0.05),
-			Item.of("thermal:sulfur_ore").withChance(0.05)
+	addAccelerateEvent(event, "cmi:copper_mechanism", "minecraft:stone", [
+		Item.of("minecraft:copper_ore").withChance(0.2),
+		Item.of("minecraft:gold_ore").withChance(0.05),
+		Item.of("minecraft:clay").withChance(0.05),
+		Item.of("thermal:sulfur_ore").withChance(0.05)
 	])
-	addAccelerateEvent(event, "cmi:copper_mechanism",
-		"minecraft:deepslate", [
-			Item.of("minecraft:deepslate_copper_ore").withChance(0.15),
-			Item.of("minecraft:deepslate_gold_ore").withChance(0.1),
-			Item.of("minecraft:clay").withChance(0.1),
-			Item.of("thermal:deepslate_sulfur_ore").withChance(0.05)
+	addAccelerateEvent(event, "cmi:copper_mechanism", "minecraft:deepslate", [
+		Item.of("minecraft:deepslate_copper_ore").withChance(0.15),
+		Item.of("minecraft:deepslate_gold_ore").withChance(0.1),
+		Item.of("minecraft:clay").withChance(0.1),
+		Item.of("thermal:deepslate_sulfur_ore").withChance(0.05)
 	])
 
 	// 贰级科技航天构件
-	addAccelerateEvent(event, "cmi:tier_2_aviation_mechanism",
-		"ad_astra:moon_stone", [
-			Item.of("ad_astra:moon_desh_ore").withChance(0.2),
-			Item.of("ad_astra:moon_ice_shard_ore").withChance(0.05),
-			Item.of("thermal:steel_block").withChance(0.05)
+	addAccelerateEvent(event, "cmi:tier_2_aviation_mechanism", "ad_astra:moon_stone", [
+		Item.of("ad_astra:moon_desh_ore").withChance(0.2),
+		Item.of("ad_astra:moon_ice_shard_ore").withChance(0.05),
+		Item.of("thermal:steel_block").withChance(0.05)
 	])
-	addAccelerateEvent(event, "cmi:tier_2_aviation_mechanism",
-		"minecraft:deepslate", [
-			Item.of("ad_astra:deepslate_desh_ore").withChance(0.15),
-			Item.of("minecraft:deepslate_iron_ore").withChance(0.1),
-			Item.of("thermal:deepslate_silver_ore").withChance(0.1)
+	addAccelerateEvent(event, "cmi:tier_2_aviation_mechanism", "minecraft:deepslate", [
+		Item.of("ad_astra:deepslate_desh_ore").withChance(0.15),
+		Item.of("minecraft:deepslate_iron_ore").withChance(0.1),
+		Item.of("thermal:deepslate_silver_ore").withChance(0.1)
 	])
 
 	// 附魔构件
-	addAccelerateEvent(event, "cmi:enchanted_mechanism",
-		"minecraft:stone", [
-			Item.of("minecraft:lapis_ore").withChance(0.2),
-			Item.of("create:experience_block").withChance(0.01)
+	addAccelerateEvent(event, "cmi:enchanted_mechanism", "minecraft:stone", [
+		Item.of("minecraft:lapis_ore").withChance(0.2),
+		Item.of("create:experience_block").withChance(0.01)
 	])
-	addAccelerateEvent(event, "cmi:enchanted_mechanism",
-		"minecraft:deepslate", [
-			Item.of("minecraft:deepslate_lapis_ore").withChance(0.2),
-			Item.of("create:experience_block").withChance(0.01)
+	addAccelerateEvent(event, "cmi:enchanted_mechanism", "minecraft:deepslate", [
+		Item.of("minecraft:deepslate_lapis_ore").withChance(0.2),
+		Item.of("create:experience_block").withChance(0.01)
 	])
 
 	// 金质构件
-	addAccelerateEvent(event, "cmi:gold_mechanism",
-		"minecraft:stone", [
-			Item.of("minecraft:gold_ore").withChance(0.2),
-			Item.of("thermal:cinnabar_ore").withChance(0.05),
-			Item.of("cmi:quartz_ore").withChance(0.05)
+	addAccelerateEvent(event, "cmi:gold_mechanism", "minecraft:stone", [
+		Item.of("minecraft:gold_ore").withChance(0.2),
+		Item.of("thermal:cinnabar_ore").withChance(0.05),
+		Item.of("cmi:quartz_ore").withChance(0.05)
 	])
-	addAccelerateEvent(event, "cmi:gold_mechanism",
-		"minecraft:deepslate", [
-			Item.of("minecraft:deepslate_gold_ore").withChance(0.15),
-			Item.of("thermal:deepslate_cinnabar_ore").withChance(0.1),
-			Item.of("cmi:deepslate_quartz_ore").withChance(0.1)
+	addAccelerateEvent(event, "cmi:gold_mechanism", "minecraft:deepslate", [
+		Item.of("minecraft:deepslate_gold_ore").withChance(0.15),
+		Item.of("thermal:deepslate_cinnabar_ore").withChance(0.1),
+		Item.of("cmi:deepslate_quartz_ore").withChance(0.1)
 	])
 
 	// 铁质构件
-	addAccelerateEvent(event, "cmi:iron_mechanism",
-		"minecraft:stone", [
-			Item.of("minecraft:iron_ore").withChance(0.2),
-			Item.of("minecraft:redstone_ore").withChance(0.05),
-			Item.of("thermal:nickel_ore").withChance(0.05)
+	addAccelerateEvent(event, "cmi:iron_mechanism", "minecraft:stone", [
+		Item.of("minecraft:iron_ore").withChance(0.2),
+		Item.of("minecraft:redstone_ore").withChance(0.05),
+		Item.of("thermal:nickel_ore").withChance(0.05)
 	])
-	addAccelerateEvent(event, "cmi:iron_mechanism",
-		"minecraft:deepslate", [
-			Item.of("minecraft:deepslate_iron_ore").withChance(0.15),
-			Item.of("minecraft:deepslate_redstone_ore").withChance(0.1),
-			Item.of("thermal:deepslate_nickel_ore").withChance(0.1)
+	addAccelerateEvent(event, "cmi:iron_mechanism", "minecraft:deepslate", [
+		Item.of("minecraft:deepslate_iron_ore").withChance(0.15),
+		Item.of("minecraft:deepslate_redstone_ore").withChance(0.1),
+		Item.of("thermal:deepslate_nickel_ore").withChance(0.1)
 	])
 
 	// 下界构件
-	addAccelerateEvent(event, "cmi:nether_mechanism",
-		"minecraft:netherrack", [
-			Item.of("minecraft:blackstone").withChance(0.1),
-			Item.of("minecraft:magma_block").withChance(0.03),
-			Item.of("minecraft:soul_sand").withChance(0.03),
-			Item.of("minecraft:soul_soil").withChance(0.03),
-			Item.of("minecraft:gilded_blackstone").withChance(0.03),
-			Item.of("minecraft:nether_gold_ore").withChance(0.03),
-			Item.of("minecraft:ancient_debris").withChance(0.03),
-			Item.of("minecraft:nether_quartz_ore").withChance(0.03),
-			Item.of("minecraft:glowstone").withChance(0.03),
-			Item.of("cmi:nether_uranium_ore").withChance(0.03)
+	addAccelerateEvent(event, "cmi:nether_mechanism", "minecraft:netherrack", [
+		Item.of("minecraft:blackstone").withChance(0.1),
+		Item.of("minecraft:magma_block").withChance(0.03),
+		Item.of("minecraft:soul_sand").withChance(0.03),
+		Item.of("minecraft:soul_soil").withChance(0.03),
+		Item.of("minecraft:gilded_blackstone").withChance(0.03),
+		Item.of("minecraft:nether_gold_ore").withChance(0.03),
+		Item.of("minecraft:ancient_debris").withChance(0.03),
+		Item.of("minecraft:nether_quartz_ore").withChance(0.03),
+		Item.of("minecraft:glowstone").withChance(0.03),
+		Item.of("cmi:nether_uranium_ore").withChance(0.03)
 	])
 
 	// 叁级科技航天构件
-	addAccelerateEvent(event, "cmi:tier_3_aviation_mechanism",
-		"ad_astra:mars_stone", [
-			Item.of("ad_astra:mars_ostrum_ore").withChance(0.2),
-			Item.of("ad_astra:mars_iron_ore").withChance(0.05),
-			Item.of("ad_astra:desh_block").withChance(0.05)
+	addAccelerateEvent(event, "cmi:tier_3_aviation_mechanism", "ad_astra:mars_stone", [
+		Item.of("ad_astra:mars_ostrum_ore").withChance(0.2),
+		Item.of("ad_astra:mars_iron_ore").withChance(0.05),
+		Item.of("ad_astra:desh_block").withChance(0.05)
 	])
-	addAccelerateEvent(event, "cmi:tier_3_aviation_mechanism",
-		"minecraft:deepslate", [
-			Item.of("ad_astra:deepslate_ostrum_ore").withChance(0.15),
-			Item.of("minecraft:deepslate_iron_ore").withChance(0.1),
-			Item.of("thermal:deepslate_silver_ore").withChance(0.1)
+	addAccelerateEvent(event, "cmi:tier_3_aviation_mechanism", "minecraft:deepslate", [
+		Item.of("ad_astra:deepslate_ostrum_ore").withChance(0.15),
+		Item.of("minecraft:deepslate_iron_ore").withChance(0.1),
+		Item.of("thermal:deepslate_silver_ore").withChance(0.1)
 	])
 
 	// 精密构件
-	addAccelerateEvent(event, "cmi:precision_mechanism",
-		"minecraft:stone", [
-			Item.of("minecraft:copper_ore").withChance(0.15),
-			Item.of("create:zinc_ore").withChance(0.15),
-			Item.of("minecraft:redstone_ore").withChance(0.1)
+	addAccelerateEvent(event, "cmi:precision_mechanism", "minecraft:stone", [
+		Item.of("minecraft:copper_ore").withChance(0.15),
+		Item.of("create:zinc_ore").withChance(0.15),
+		Item.of("minecraft:redstone_ore").withChance(0.1)
 	])
-	addAccelerateEvent(event, "cmi:precision_mechanism",
-		"minecraft:deepslate", [
-			Item.of("minecraft:deepslate_copper_ore").withChance(0.1),
-			Item.of("create:deepslate_zinc_ore").withChance(0.1),
-			Item.of("minecraft:deepslate_redstone_ore").withChance(0.15)
+	addAccelerateEvent(event, "cmi:precision_mechanism", "minecraft:deepslate", [
+		Item.of("minecraft:deepslate_copper_ore").withChance(0.1),
+		Item.of("create:deepslate_zinc_ore").withChance(0.1),
+		Item.of("minecraft:deepslate_redstone_ore").withChance(0.15)
 	])
 
 	// 红石构件
-	addAccelerateEvent(event, "vintageimprovements:redstone_module",
-		"minecraft:stone", [
-			Item.of("minecraft:redstone_ore").withChance(0.2),
+	addAccelerateEvent(event, "vintageimprovements:redstone_module", "minecraft:stone", [
+		Item.of("minecraft:redstone_ore").withChance(0.2),
 	])
-	addAccelerateEvent(event, "vintageimprovements:redstone_module",
-		"minecraft:deepslate", [
-			Item.of("minecraft:deepslate_redstone_ore").withChance(0.25),
+	addAccelerateEvent(event, "vintageimprovements:redstone_module", "minecraft:deepslate", [
+		Item.of("minecraft:deepslate_redstone_ore").withChance(0.25),
 	])
 
 	// 智能构件
-	addAccelerateEvent(event, "cmi:smart_mechanism",
-		"minecraft:stone", [
-			Item.of("minecraft:diamond_ore").withChance(0.1),
-			Item.of("minecraft:gold_ore").withChance(0.2),
-			Item.of("cmi:certus_quartz_ore").withChance(0.2),
-			Item.of("thermal:ruby_ore").withChance(0.01),
-			Item.of("thermal:sapphire_ore").withChance(0.01),
-			Item.of("minecraft:emerald_ore").withChance(0.01)
+	addAccelerateEvent(event, "cmi:smart_mechanism", "minecraft:stone", [
+		Item.of("minecraft:diamond_ore").withChance(0.1),
+		Item.of("minecraft:gold_ore").withChance(0.2),
+		Item.of("cmi:certus_quartz_ore").withChance(0.2),
+		Item.of("thermal:ruby_ore").withChance(0.01),
+		Item.of("thermal:sapphire_ore").withChance(0.01),
+		Item.of("minecraft:emerald_ore").withChance(0.01)
 	])
-	addAccelerateEvent(event, "cmi:smart_mechanism",
-		"minecraft:deepslate", [
-			Item.of("minecraft:deepslate_diamond_ore").withChance(0.15),
-			Item.of("minecraft:deepslate_gold_ore").withChance(0.2),
-			Item.of("cmi:deepslate_certus_quartz_ore").withChance(0.2),
-			Item.of("thermal:deepslate_ruby_ore").withChance(0.01),
-			Item.of("thermal:deepslate_sapphire_ore").withChance(0.01),
-			Item.of("minecraft:deepslate_emerald_ore").withChance(0.01)
+	addAccelerateEvent(event, "cmi:smart_mechanism", "minecraft:deepslate", [
+		Item.of("minecraft:deepslate_diamond_ore").withChance(0.15),
+		Item.of("minecraft:deepslate_gold_ore").withChance(0.2),
+		Item.of("cmi:deepslate_certus_quartz_ore").withChance(0.2),
+		Item.of("thermal:deepslate_ruby_ore").withChance(0.01),
+		Item.of("thermal:deepslate_sapphire_ore").withChance(0.01),
+		Item.of("minecraft:deepslate_emerald_ore").withChance(0.01)
 	])
 
 	// 石质构件
-	addAccelerateEvent(event, "cmi:stone_mechanism",
-		"minecraft:stone", [
-			Item.of("minecraft:andesite").withChance(0.1),
-			Item.of("minecraft:diorite").withChance(0.1),
-			Item.of("minecraft:granite").withChance(0.1),
-			Item.of("create:limestone").withChance(0.1),
-			Item.of("tconstruct:seared_stone").withChance(0.1)
+	addAccelerateEvent(event, "cmi:stone_mechanism", "minecraft:stone", [
+		Item.of("minecraft:andesite").withChance(0.1),
+		Item.of("minecraft:diorite").withChance(0.1),
+		Item.of("minecraft:granite").withChance(0.1),
+		Item.of("create:limestone").withChance(0.1),
+		Item.of("tconstruct:seared_stone").withChance(0.1)
 	])
-	addAccelerateEvent(event, "cmi:stone_mechanism",
-		"minecraft:deepslate", [
-			Item.of("tconstruct:seared_stone").withChance(0.1),
-			Item.of("minecraft:tuff").withChance(0.1),
-			Item.of("create:scoria").withChance(0.1),
-			Item.of("minecraft:dripstone_block").withChance(0.1),
-			Item.of("minecraft:smooth_basalt").withChance(0.1)
-		]
+	addAccelerateEvent(event, "cmi:stone_mechanism", "minecraft:deepslate", [
+		Item.of("tconstruct:seared_stone").withChance(0.1),
+		Item.of("minecraft:tuff").withChance(0.1),
+		Item.of("create:scoria").withChance(0.1),
+		Item.of("minecraft:dripstone_block").withChance(0.1),
+		Item.of("minecraft:smooth_basalt").withChance(0.1)
+	]
 	)
 
 	// 木质构件
-	addAccelerateEvent(event, "cmi:wooden_mechanism",
-		"minecraft:stone", [
-			Item.of("minecraft:coal_ore").withChance(0.2)
+	addAccelerateEvent(event, "cmi:wooden_mechanism", "minecraft:stone", [
+		Item.of("minecraft:coal_ore").withChance(0.2)
 	])
 	addAccelerateEvent(event, "cmi:wooden_mechanism",
 		Item.of("minecraft:deepslate_coal_ore").withChance(0.15),
@@ -205,7 +180,7 @@ function addAccelerateEvent(event, input, stone, blocks) {
 	if (event.hand === "OFF_HAND") {
 		return
 	}
-	let {level, player, item, block} = event
+	let { level, player, item, block } = event
 	if (player === null) {
 		return
 	}
@@ -249,8 +224,8 @@ function addAccelerateEvent(event, input, stone, blocks) {
 				if (block === stone) {
 					rand = Math.random()
 					let value = 0
-					for(let b of blocks) {
-						if(b.item.block) {
+					for (let b of blocks) {
+						if (b.item.block) {
 							value += b.getChance()
 							if (rand <= value) {
 								level.getBlock(pos).set(b.item.getId())
