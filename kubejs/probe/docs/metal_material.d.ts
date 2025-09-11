@@ -16,7 +16,7 @@ type MaterialType =
 	"clump" |
 	"shard" |
 	"crystal" |
-	"dirty_slurry" |
+	"dirtySlurry" |
 	"slurry";
 
 
@@ -39,7 +39,7 @@ interface Material {
 	clump(): this
 	shard(): this
 	crystal(): this
-	dirty_slurry(): this
+	dirtySlurry(): this
 	slurry(): this
 }
 

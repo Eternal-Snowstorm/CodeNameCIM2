@@ -63,7 +63,7 @@ function addMaterial(name, color, level) {
 			this.types.push("crystal")
 			return this
 		},
-		dirty_slurry: function () {
+		dirtySlurry: function () {
 			this.types.push("dirty_slurry")
 			return this
 		},
@@ -222,7 +222,7 @@ addMaterial("chromium", 0xE4DBDC, "iron")
 	.shard()
 	.crystal()
 	.slurry()
-	.dirty_slurry()
+	.dirtySlurry()
 
 // 铂
 addMaterial("platinum", 0XA4D4DA, "iron")
@@ -311,7 +311,7 @@ addMaterial("vanadium", 0xF0FFFF, "stone")
 	.shard()
 	.crystal()
 	.slurry()
-	.dirty_slurry()
+	.dirtySlurry()
 
 // 钨
 addMaterial("tungsten", 0x5A6C7E, "nether")
@@ -330,7 +330,7 @@ addMaterial("zinc", 0xA8C0A0, "stone")
 	.shard()
 	.crystal()
 	.slurry()
-	.dirty_slurry()
+	.dirtySlurry()
 
 // 铝
 addMaterial("aluminum", 0xB8C0C0, "stone")
@@ -339,7 +339,7 @@ addMaterial("aluminum", 0xB8C0C0, "stone")
 	.shard()
 	.crystal()
 	.slurry()
-	.dirty_slurry()
+	.dirtySlurry()
 
 // 银
 addMaterial("silver", 0x788090, "stone")
@@ -354,7 +354,7 @@ addMaterial("nickel", 0x989050, "stone")
 	.shard()
 	.crystal()
 	.slurry()
-	.dirty_slurry()
+	.dirtySlurry()
 
 // 钴
 addMaterial("cobalt", 0x0098FF, "iron")
@@ -363,4 +363,4 @@ addMaterial("cobalt", 0x0098FF, "iron")
 	.shard()
 	.crystal()
 	.slurry()
-	.dirty_slurry()
+	.dirtySlurry()
