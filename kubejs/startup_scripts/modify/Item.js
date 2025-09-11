@@ -72,6 +72,8 @@ ItemEvents.modification((event) => {
 		modify.setFoodProperties((food) => {
 			food.hunger(2)
 				.saturation(5)
+				.alwaysEdible()
+				.fastToEat()
 				.eaten((event) => {
 					let { player } = event
 
