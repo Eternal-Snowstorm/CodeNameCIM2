@@ -1,7 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { create, kubejs, vintageimprovements } = event.recipes
-
-	const BATTERIES = Ingredient.of(`#${global.namespace}:batteries`)
+	let MECH = "cmi:coil_mechanism"
 
 	// kubejs.shaped("immersiveengineering:dynamo", [
 	// 	"EDE",
@@ -37,22 +36,65 @@ ServerEvents.recipes((event) => {
 	// 	D: "immersiveengineering:component_iron"
 	// })
 
+	// Poetality发电机
 	kubejs.shaped("portality:generator", [
-		"AAA",
+		" A ",
 		"ACA",
-		"DBD"
+		" B "
 	], {
 		A: "portality:frame",
-		B: BATTERIES,
-		C: "minecraft:blast_furnace",
-		D: "cmi:stone_mechanism"
+		B: "cmi:nether_mechanism",
+		C: MECH
 	})
 
+	// 电磁线圈
+	kubejs.shaped("mekanismgenerators:electromagnetic_coil", [
+		"ADA",
+		"BCB",
+		"ADA"
+	], {
+		A: "#forge:plates/steel",
+		B: "immersiveengineering:coil_mv",
+		C: "mekanism:steel_casing",
+		D: MECH
+	})
+		.id("mekanismgenerators:electromagnetic_coil")
+
+	// 水晶共振生成器
+	kubejs.shaped("ae2:crystal_resonance_generator", [
+		"ABA",
+		"ACA",
+		"DED"
+	], {
+		A: "createaddition:copper_spool",
+		B: "ae2:fluix_block",
+		C: MECH,
+		D: "#forge:plates/silver",
+		E: "cmi:sky_stone_casing"
+	})
+		.id("ae2:network/crystal_resonance_generator")
+
+	// 谐振仓
+	kubejs.shaped("ae2:vibration_chamber", [
+		"ABA",
+		"CDC",
+		"EFE"
+	], {
+		A: "#forge:ingots/copper",
+		B: "ae2:fluix_crystal",
+		C: "ae2:quartz_fiber",
+		D: MECH,
+		E: "cmi:sky_stone_casing",
+		F: "cmi:nether_mechanism"
+	})
+		.id("ae2:network/blocks/energy_vibration_chamber")
+
+	// 红石通量线圈
 	let incGoldRod = "createaddition:gold_rod"
 	create.sequenced_assembly("thermal:rf_coil", [
 		"#forge:rods/gold"
 	], [
 		create.deploying(incGoldRod, [incGoldRod, "#forge:dusts/redstone"]),
-		vintageimprovements.laser_cutting(incGoldRod, [incGoldRod]).energy(1000),
+		vintageimprovements.laser_cutting(incGoldRod, [incGoldRod], 1000, 50),
 	]).transitionalItem(incGoldRod).loops(1)
 })

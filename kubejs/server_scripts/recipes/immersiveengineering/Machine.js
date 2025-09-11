@@ -63,13 +63,13 @@ ServerEvents.recipes((event) => {
 	}).id("immersiveindustry:crafting/electrolyzer")
 
 	kubejs.shaped("immersiveengineering:dynamo", [
-		"A",
-		"B",
-		"C"
+		" A ",
+		"CBC",
+		" A "
 	], {
-		A: "cmi:coil_mechanism",
-		B: "#forge:rods/iron",
-		C: "createaddition:capacitor"
+		A: "#forge:plates/iron",
+		B: "cmi:coil_mechanism",
+		C: "cmi:simple_battery"
 	}).id("minecraft:kjs/immersiveengineering_dynamo")
 
 	kubejs.shaped("immersiveengineering:thermoelectric_generator", [

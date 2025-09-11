@@ -315,15 +315,6 @@ ServerEvents.recipes((event) => {
 		B: casing
 	}).id("ae2:network/blocks/energy_energy_acceptor")
 
-	kubejs.shaped("ae2:crystal_resonance_generator", [
-		"ABA",
-		"AMA"
-	], {
-		A: "#forge:plates/copper",
-		M: casing,
-		B: "ae2:fluix_block"
-	}).id("ae2:network/crystal_resonance_generator")
-
 	kubejs.shaped("ae2:crafting_unit", [
 		" A ",
 		"CBC",

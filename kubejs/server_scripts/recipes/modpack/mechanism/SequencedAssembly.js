@@ -195,9 +195,9 @@ ServerEvents.recipes((event) => {
 
 	// 线圈
 	create.sequenced_assembly("cmi:coil_mechanism", [
-		"immersiveengineering:sheetmetal_steel"
+		"immersiveengineering:sheetmetal_iron"
 	], [
-		create.deploying(icom, [icom, "immersiveengineering:component_electronic_adv"]),
+		create.deploying(icom, [icom, "create:electron_tube"]),
 		create.deploying(icom, [icom, "cmi:simple_battery"]),
 		create.deploying(icom, [icom, "immersiveengineering:wirecoil_copper"]),
 		create.deploying(icom, [icom, "immersiveengineering:wirecoil_electrum"]),
