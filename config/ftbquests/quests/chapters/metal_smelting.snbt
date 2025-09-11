@@ -78,7 +78,6 @@
 		{
 			dependencies: [
 				"55B7A6AEBB65DFDA"
-				"2192A4D7A83457AD"
 				"6CA32F483367E0AF"
 			]
 			description: [
@@ -332,6 +331,10 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"1E2099E61A6F1339"
+				"7B0FF29D1967C917"
+			]
 			description: [
 				"人类历史上的第一种合金"
 				"现在正和蒸汽技术深度绑定。"
@@ -361,10 +364,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"55B7A6AEBB65DFDA"
-				"2192A4D7A83457AD"
-			]
+			dependencies: ["55B7A6AEBB65DFDA"]
 			description: [
 				"锡是一种熔点只有232的杂鱼~"
 				"对于前期的玩家来说，使用锡制造的合金应该会是一种不错的应力设备原料~"
