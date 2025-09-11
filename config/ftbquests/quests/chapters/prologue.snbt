@@ -117,7 +117,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "当前版本: Beta-2.2.1"
+			subtitle: "当前版本: Beta-2.3.0"
 			tasks: [{
 				id: "79D5B1959C780861"
 				type: "checkmark"
@@ -516,7 +516,7 @@
 				"{@pagebreak}"
 				"\"控制面板\"页面可以找到&6CurseForge&r, &7Github&r和&c视频&r链接"
 				"{@pagebreak}"
-				"添加资源包时, 请确保PackResourse置于最顶, 该资源包修改了整合包内需要的纹理, 模型等资源"
+				"添加资源包时, 请确保&l&dPackResourse&r&r&r置于最顶, 该资源包修改了整合包内需要的纹理, 模型等资源"
 				"{@pagebreak}"
 				"纹理或模型资源错误时, 请尝试按 &e&lF3+T&r 重载"
 				"{@pagebreak}"

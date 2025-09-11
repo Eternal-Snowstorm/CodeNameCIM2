@@ -95,6 +95,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeItemOutputRecipes = [
+		"immersiveengineering:alloybrick",
 		"createdieselgenerators:chip_wood_block",
 		"pipez:filter_destination_tool",
 		"create:schedule",
@@ -237,7 +238,8 @@ ServerEvents.recipes((event) => {
 	let removeRecipeType = [
 		"vintageimprovements:laser_cutting",
 		"ad_astra:nasa_workbench",
-		"immersiveengineering:fermenter"
+		"immersiveengineering:fermenter",
+		"immersiveengineering:alloy"
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({
