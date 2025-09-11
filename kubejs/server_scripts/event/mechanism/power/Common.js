@@ -175,15 +175,16 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
  * @returns {BlockRightClickedEventJS} 催生
  */
 function addAccelerateEvent(event, input, stone, blocks) {
+	let { level, player, item, block } = event
+
 	// 判定是否主手手持构件
 	if (event.hand === "OFF_HAND") {
 		return
 	}
-	let { level, player, item, block } = event
 	if (player === null) {
 		return
 	}
-	if (event.getItem().is(input)) {
+	if (item.is(input)) {
 		let { x, y, z } = event.block.pos
 		// 设定扫描所用变量
 		let numx = x
@@ -201,7 +202,7 @@ function addAccelerateEvent(event, input, stone, blocks) {
 				outz = numz + num[n]
 				pos = new BlockPos(outx, y, outz)
 
-				let block = event.level.getBlock(pos).getId()
+				let block = level.getBlock(pos).getId()
 
 				if (block === stone) {
 					count = 1 + count
