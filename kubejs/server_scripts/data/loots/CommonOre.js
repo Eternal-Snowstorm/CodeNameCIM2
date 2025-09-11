@@ -51,7 +51,6 @@ ServerEvents.blockLootTables((event) => {
 				"glacio",
 				"mercury"
 			]
-
 			prefixes.forEach((prefix) => {
 				let blockId = `cmi:${prefix}_${ore}_ore`
 
