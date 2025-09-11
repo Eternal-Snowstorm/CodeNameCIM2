@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, tconstruct } = event.recipes
+	let { kubejs, create, tconstruct } = event.recipes
 	const TEMPLATE = "cmi:drawer_upgrade_template"
 
 	// 物品抽屉
@@ -100,6 +100,30 @@ ServerEvents.recipes((event) => {
 		.cast_consumed(true)
 		.cooling_time(20 * 3)
 		.id("functionalstorage:void_upgrade")
+
+	// 输入升级
+	create.deploying("functionalstorage:puller_upgrade",[
+		TEMPLATE,
+		"minecraft:hopper"
+	]).id("functionalstorage:puller_upgrade")
+
+	// 输出升级
+	create.deploying("functionalstorage:pusher_upgrade",[
+		"functionalstorage:puller_upgrade",
+		"minecraft:redstone_torch"
+	]).id("functionalstorage:pusher_upgrade")
+
+	// 收集升级
+	create.deploying("functionalstorage:collector_upgrade",[
+		"functionalstorage:puller_upgrade",
+		"minecraft:hopper"
+	]).id("functionalstorage:collector_upgrade")
+
+	// 红石升级
+	create.deploying("functionalstorage:redstone_upgrade", [
+		TEMPLATE,
+		"minecraft:comparator"
+	])
 
 	// 流体抽屉1
 	kubejs.shaped("functionalstorage:fluid_1", [
