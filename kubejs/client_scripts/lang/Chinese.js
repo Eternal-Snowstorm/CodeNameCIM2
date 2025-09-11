@@ -59,6 +59,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("grass_fiber", "草纤维")
 	addItemLanguage("grass_string", "草绳")
 	addItemLanguage("sugarcane_fiber", "甘蔗纤维")
+	addItemLanguage("drawer_upgrade_template", "抽屉升级模板")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")
@@ -120,7 +121,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("fluid_nitroglycerine", "液态硝化甘油")
 	addFluidLanguage("crystal_catalyt", "晶体催生剂")
 	addFluidLanguage("oily_sludge", "含油淤泥")
-	addFluidLanguage("sugar_cane_syrup", "甘蔗糖浆")
+	addFluidLanguage("syrup", "糖浆")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
@@ -281,6 +282,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("qi_month", "榛名柒月", "榛名柒月")
 	addPaintingLanguage("sacabamBaspis", "萨卡班甲鱼", "⑨Dropper_QWQ⑨")
 
+	addCommonTooltipLanguage("tconstruct:seared_heater", "固体燃料最多提供937°C / 1718.6°F")
+	addCommonTooltipLanguage("#cmi:machine_block", "只有装饰作用(暂时)")
 	addCommonTooltipLanguage("cmi:pigiron_mechanism", "可无限次食用")
 	addCommonTooltipLanguage("cmi:acceleratable", "§v按住Shift查看构件之力催生器用途")
 	addCommonTooltipLanguage("cmi:stone_mechanism", "§c手持右键圆石可将其转换为石头")

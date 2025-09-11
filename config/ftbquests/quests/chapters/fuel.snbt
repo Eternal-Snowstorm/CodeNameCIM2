@@ -5,7 +5,7 @@
 	group: "6A6C7C5BAEF247E2"
 	icon: "cmi:creosote_wood_chip_briquette"
 	id: "345DC897468FE6CE"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

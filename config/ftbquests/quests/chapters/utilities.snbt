@@ -11,7 +11,7 @@
 		}
 	}
 	id: "4D96ACCE1356C17D"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -62,8 +62,8 @@
 				title: "建筑手杖"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -388,7 +388,10 @@
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
-			description: ["销毁器可以清除任何东西, 一般用于生产线中清除废弃的流体和物品"]
+			description: [
+				"销毁器可以清除任何东西, 一般用于生产线中清除废弃的流体和物品。"
+				"当然我们还是更推荐您在AE2发展起来后使用物质聚合器销毁。"
+			]
 			hide_dependency_lines: true
 			id: "5E52B40EB76B5C84"
 			rewards: [{
@@ -458,6 +461,35 @@
 			}]
 			x: 2.0d
 			y: 7.0d
+		}
+		{
+			dependencies: [
+				"4CCF561EE0B2C3A6"
+				"714D1AC6D07BEEC0"
+			]
+			description: ["搭配输出输入升级使用有奇效"]
+			hide_dependency_lines: true
+			id: "15080FCC44C718DD"
+			rewards: [{
+				id: "4B5E173031563764"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "比流体储罐好用一百亿倍"
+			tasks: [{
+				id: "4AF4B44DD243B23F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:fluid_drawer"
+					}
+				}
+				title: "流体抽屉"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
 		}
 	]
 	title: "实用工具"

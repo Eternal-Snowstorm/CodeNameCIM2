@@ -16,5 +16,4 @@ StartupEvents.registry("item", (event) => {
 	addAloneCrushedRawMaterial("cobalt")
 	addAloneCrushedRawMaterial("vanadium")
 	addAloneCrushedRawMaterial("chromium")
-	addAloneCrushedRawMaterial("platinum")
 })

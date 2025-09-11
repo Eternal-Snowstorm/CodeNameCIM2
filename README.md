@@ -19,6 +19,26 @@
  - 出现BUG**一定**要反馈(能够使用[**`issues`**](https://github.com/VechniMetel/CodeNameCIM2/issues)最好!)
  - 在修改JEI的时候需要先运行`kjs reload client_scripts`后再运行`reload`
 
+
+### 整合包打包所需文件
+ - **config**
+ - **defaultconfigs**
+ - **hotai**
+ - **kubejs**
+	- **assets**
+	- **client_scripts**
+	- **config**
+	- **data**
+	- **server_scripts**
+	- **startup_scripts**
+ - **ldlib**
+ - **mods**
+ - **resourcepacks**
+ - **icon.png**
+ - **LICENSE.md**
+ - **README.md**
+ - **UpdateLogs.md**
+
 ---
 
 <!--markdownlint-disable MD001 MD033 MD041 MD051-->
@@ -43,3 +63,23 @@ Currently in Beta stage.
 - Please keep the `hotai` and `ldlib` folders under the root directory and **all** files inside during packaging to ensure the normal operation of multi-block machines.
 - Delete the client mod that affects the server to ensure the normal operation of the server.
 - BUG **must** feedback (it is best to use [**`issues`**](https://github.com/VechniMetel/CodeNameCIM2/issues)!)
+
+
+### Files required for modpack packaging
+ - **config**
+ - **defaultconfigs**
+ - **hotai**
+ - **kubejs**
+	- **assets**
+	- **client_scripts**
+	- **config**
+	- **data**
+	- **server_scripts**
+	- **startup_scripts**
+ - **ldlib**
+ - **mods**
+ - **resourcepacks**
+ - **icon.png**
+ - **LICENSE.md**
+ - **README.md**
+ - **UpdateLogs.md**

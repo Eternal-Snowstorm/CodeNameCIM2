@@ -13,6 +13,8 @@ let $Slurry =
 	Java.loadClass("mekanism.api.chemical.slurry.Slurry")
 let $Gas =
 	Java.loadClass("mekanism.api.chemical.gas.Gas")
+let $Chemical =
+	Java.loadClass("mekanism.api.chemical.Chemical")
 
 let IngredientUtils = {
 	/**

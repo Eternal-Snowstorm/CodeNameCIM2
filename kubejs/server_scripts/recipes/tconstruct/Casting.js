@@ -44,35 +44,35 @@ ServerEvents.recipes((event) => {
 
 	// 安山合金
 	tconstruct.casting_table("create:andesite_alloy")
-		.fluid(Fluid.of("cmi:molten_andesite_alloy", 90))
+		.fluid(Fluid.of("cmi:molten_andesite_alloy", 10))
 		.cast("tconstruct:ingot_cast")
 		.cooling_time(40)
 		.cast_consumed(false)
 
 	// 安山合金
 	tconstruct.casting_table("create:andesite_alloy")
-		.fluid(Fluid.of("cmi:molten_andesite_alloy", 90))
+		.fluid(Fluid.of("cmi:molten_andesite_alloy", 10))
 		.cast("tconstruct:ingot_sand_cast")
 		.cooling_time(40)
 		.cast_consumed(true)
 
 	// 安山合金
 	tconstruct.casting_table("create:andesite_alloy")
-		.fluid(Fluid.of("cmi:molten_andesite_alloy", 90))
+		.fluid(Fluid.of("cmi:molten_andesite_alloy", 10))
 		.cast("tconstruct:ingot_red_sand_cast")
 		.cooling_time(40)
 		.cast_consumed(true)
 
 	// 安山合金
 	tconstruct.casting_table("create:andesite_alloy")
-		.fluid(Fluid.of("tconstruct:molten_iron", 90))
+		.fluid(Fluid.of("tconstruct:molten_iron", 10))
 		.cast("#forge:dusts/andesite")
 		.cooling_time(20)
 		.cast_consumed(true)
 
 	// 安山合金
 	tconstruct.casting_table("create:andesite_alloy")
-		.fluid(Fluid.of("tconstruct:molten_zinc", 90))
+		.fluid(Fluid.of("tconstruct:molten_zinc", 10))
 		.cast("#forge:dusts/andesite")
 		.cooling_time(20)
 		.cast_consumed(true)

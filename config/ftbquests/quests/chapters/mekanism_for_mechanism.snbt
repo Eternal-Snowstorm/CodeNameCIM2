@@ -85,7 +85,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["2F14AA034A31D85F"]
 			dependency_requirement: "all_started"
 			id: "530CAF716E0D1B73"
 			rewards: [{
@@ -109,7 +108,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["4B55A849175426D6"]
 			dependency_requirement: "all_started"
 			id: "18B7DC9FD757ACC8"
 			rewards: [{

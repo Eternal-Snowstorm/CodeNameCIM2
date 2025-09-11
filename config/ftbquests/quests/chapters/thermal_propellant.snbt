@@ -22,7 +22,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["69B1FF11D9273022"]
 			dependency_requirement: "all_started"
 			id: "2B6B38F467E0A162"
 			rewards: [{
@@ -140,7 +139,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["0167CF802B8C41BD"]
 			dependency_requirement: "all_started"
 			id: "054CC551DA5CFB94"
 			tasks: [{
@@ -159,7 +157,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["16380F8083EEC007"]
 			dependency_requirement: "all_started"
 			id: "0FFDD4E0AC08B29B"
 			tasks: [{
@@ -222,7 +219,6 @@
 			y: -2.25d
 		}
 		{
-			dependencies: ["457865F53B3A7339"]
 			dependency_requirement: "all_started"
 			id: "7C576110450726F8"
 			rewards: [{
@@ -247,7 +243,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["566E94FC8211FCCF"]
 			dependency_requirement: "all_started"
 			id: "0A1AB8A282C91166"
 			rewards: [{
@@ -272,7 +267,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["0799AA1823240100"]
 			dependency_requirement: "all_started"
 			id: "57EC25AC52B42AC2"
 			rewards: [{

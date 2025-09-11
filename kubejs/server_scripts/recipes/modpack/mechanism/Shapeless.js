@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
 
 	// 红石
 	kubejs.shapeless("vintageimprovements:redstone_module", [
-		"2x #forge:redstone",
+		"2x #forge:dusts/redstone",
 		"#forge:stone",
 		"minecraft:redstone_torch",
 		"#forge:hammer",

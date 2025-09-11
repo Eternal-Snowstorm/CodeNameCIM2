@@ -37,8 +37,8 @@ StartupEvents.registry("block", (event) => {
 	// 油页岩
 	addBlock("oil_shale")
 		.soundType(SoundType.DEEPSLATE)
-		.hardness(2)
-		.resistance(2)
+		.hardness(15)
+		.resistance(15)
 		.tagBlock(global.MiningLevel["nether"])
 		.tagBlock(global.ToolType["pickaxe"])
 		.requiresTool(true)

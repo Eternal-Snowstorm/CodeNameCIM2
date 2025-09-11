@@ -1,74 +1,105 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, tconstruct } = event.recipes
-	const DRAWER = "#functionalstorage:drawer"
-	const UPGRADE = "#functionalstorage:upgrades"
+	const TEMPLATE = "cmi:drawer_upgrade_template"
+
+	// 物品抽屉
+	let drawerWoodTypes = [
+		"oak",
+		"spruce",
+		"birch",
+		"jungle",
+		"acacia",
+		"dark_oak",
+		"mangrove",
+		"crimson",
+		"warped",
+		"cherry"
+	]
+	drawerWoodTypes.forEach((type) => {
+		// 物品抽屉1
+		kubejs.shaped(`functionalstorage:${type}_1`, [
+			"AAA",
+			"ABA",
+			"ACA"
+		], {
+			A: `minecraft:${type}_planks`,
+			B: "minecraft:chest",
+			C: "cmi:wooden_mechanism"
+		}).id(`functionalstorage:${type}_1`)
+
+		// 物品抽屉2
+		kubejs.shaped(`functionalstorage:${type}_2`, [
+			"ABA",
+			"ACA",
+			"ABA"
+		], {
+			A: `minecraft:${type}_planks`,
+			B: "minecraft:chest",
+			C: "cmi:wooden_mechanism"
+		}).id(`functionalstorage:${type}_2`)
+
+		// 物品抽屉4
+		kubejs.shaped(`functionalstorage:${type}_4`, [
+			"ABA",
+			"BCB",
+			"ABA"
+		], {
+			A: `minecraft:${type}_planks`,
+			B: "minecraft:chest",
+			C: "cmi:wooden_mechanism"
+		}).id(`functionalstorage:${type}_4`)
+	})
+
+	// 升级模板
+	kubejs.shaped("cmi:drawer_upgrade_template", [
+		"AAA",
+		"BCB",
+		"AAA"
+	], {
+		A: "#minecraft:planks",
+		B: "#forge:stone",
+		C: "cmi:wooden_mechanism"
+	}).id("functionalstorage:upgrade_template")
 
 	// 紫水晶青铜
-	kubejs.shaped("functionalstorage:copper_upgrade", [
-		"AAA",
-		"ABA",
-		"AAA"
-	], {
-		A: "#forge:ingots/amethyst_bronze",
-		B: DRAWER
-	}).id("functionalstorage:copper_upgrade")
+	tconstruct.casting_table("functionalstorage:copper_upgrade")
+		.cast(TEMPLATE)
+		.cast_consumed(true)
+		.fluid(Fluid.of("tconstruct:molten_amethyst_bronze", 720))
+		.cooling_time(20 * 3)
+		.id("functionalstorage:copper_upgrade")
 
 	// 生铁
-	kubejs.shapeless("functionalstorage:iron_downgrade", [
-		"2x #forge:ingots/pig_iron",
-		DRAWER
-	]).id("functionalstorage:iron_downgrade")
-
-	kubejs.shapeless("functionalstorage:iron_downgrade", [
-		"2x #forge:ingots/pig_iron",
-		UPGRADE
-	])
-
-	tconstruct.casting_basin("functionalstorage:iron_downgrade")
-		.cast(DRAWER)
-		.cast_consumed(true)
-		.fluid(Fluid.of("tconstruct:molten_pig_iron", 180))
-		.cooling_time(20 * 3)
-
 	tconstruct.casting_table("functionalstorage:iron_downgrade")
-		.cast(UPGRADE)
+		.cast(TEMPLATE)
 		.cast_consumed(true)
 		.fluid(Fluid.of("tconstruct:molten_pig_iron", 180))
 		.cooling_time(20 * 3)
+		.id("functionalstorage:iron_downgrade")
 
 	// 玫瑰金
-	kubejs.shaped("functionalstorage:gold_upgrade", [
-		"AAA",
-		"ABA",
-		"AAA"
-	], {
-		A: "#forge:ingots/rose_gold",
-		B: DRAWER
-	}).id("functionalstorage:gold_upgrade")
+	tconstruct.casting_table("functionalstorage:gold_upgrade")
+		.cast(TEMPLATE)
+		.cast_consumed(true)
+		.fluid(Fluid.of("tconstruct:molten_rose_gold", 720))
+		.cooling_time(20 * 3)
+		.id("functionalstorage:gold_upgrade")
 
 	// 钢
-	kubejs.shaped("functionalstorage:diamond_upgrade", [
-		"ABA",
-		"ACA",
-		"ABA"
-	], {
-		A: "#forge:gems/diamond",
-		B: "#forge:plates/steel",
-		C: DRAWER
-	}).id("functionalstorage:diamond_upgrade")
+	tconstruct.casting_table("functionalstorage:diamond_upgrade")
+		.cast(TEMPLATE)
+		.cast_consumed(true)
+		.fluid(Fluid.of("tconstruct:molten_steel", 360))
+		.cooling_time(20 * 3)
+		.id("functionalstorage:diamond_upgrade")
 
 	// 虚空升级
-	tconstruct.casting_basin("functionalstorage:void_upgrade")
-		.fluid(Fluid.of("tconstruct:molten_obsidian", 4000))
-		.cast("#functionalstorage:drawer")
-		.cast_consumed(true)
-		.cooling_time(40)
-
 	tconstruct.casting_table("functionalstorage:void_upgrade")
 		.fluid(Fluid.of("tconstruct:molten_obsidian", 4000))
-		.cast("#functionalstorage:upgrades")
+		.cast(TEMPLATE)
 		.cast_consumed(true)
-		.cooling_time(40)
+		.cooling_time(20 * 3)
+		.id("functionalstorage:void_upgrade")
 
 	// 流体抽屉1
 	kubejs.shaped("functionalstorage:fluid_1", [

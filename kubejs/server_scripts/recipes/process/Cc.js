@@ -1,31 +1,31 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, thermal } = event.recipes
 
-	kubejs.shapeless("9x cmi:reactive_element", [
-		"#forge:chem_salts/iron",
-		"#forge:chem_salts/zinc",
-		"#forge:chem_salts/lead",
-		"#forge:chem_salts/chromium",
-		"#forge:chem_salts/tin",
-		"#forge:chem_salts/cobalt",
-		"#forge:chem_salts/vanadium",
-		"#forge:chem_salts/uranium",
-		"#forge:chem_salts/nickel"
-	])
-
-	kubejs.shapeless("4x cmi:explosive_element", [
-		"#forge:chem_salts/aluminum",
+	kubejs.shapeless("6x cmi:reactive_element", [
+		"#forge:chem_salts/magnesium",
 		"#forge:chem_salts/sodium",
-		"#forge:chem_salts/potassium",
 		"#forge:chem_salts/calcium",
+		"#forge:chem_salts/potassium",
+		"#forge:chem_salts/tin",
+		"cmi:blockstone_source_gamma"
 	])
 
-	kubejs.shapeless("5x cmi:stable_element", [
+	kubejs.shapeless("6x cmi:stable_element", [
 		"#forge:chem_salts/copper",
-		"#forge:chem_salts/gold",
-		"#forge:chem_salts/silver",
+		"#forge:chem_salts/zinc",
+		"#forge:chem_salts/aluminum",
+		"#forge:chem_salts/nickel",
+		"#forge:chem_salts/iron",
+		"cmi:blockstone_source_beta"
+	])
+
+	kubejs.shapeless("6x cmi:explosive_element", [
 		"#forge:chem_salts/osmium",
-		"#forge:chem_salts/platinum",
+		"#forge:chem_salts/cobalt",
+		"#forge:chem_salts/chromium",
+		"#forge:chem_salts/lead",
+		"#forge:chem_salts/uranium",
+		"cmi:blockstone_source_alpha"
 	])
 
 	thermal.smelter("3x create:chromatic_compound", [

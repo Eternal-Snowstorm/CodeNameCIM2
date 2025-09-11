@@ -23,10 +23,11 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("mm:large_steam_boiler")
 	addCommonTooltip("#forge:ingots/siltsteel")
 	addCommonTooltip("cmi:plasma_faucet")
-
+	addCommonTooltip("tconstruct:seared_heater")
 	addCommonTooltip("createaddition:bioethanol")
 	addCommonTooltip("thermal_extra:diesel")
 	addCommonTooltip("createaddition:seed_oil")
+	addCommonTooltip("#cmi:machine_block")
 
 	let chemSalts = [
 		"fecl2",
@@ -112,6 +113,22 @@ ItemEvents.tooltip((event) => {
 				event.add(`#forge:${type}s/${material}`, translatable)
 			}
 		})
+	})
+
+	// 燃料温度
+	global.fuelList.forEach((fuel) => {
+		let bucket = `${fuel}_bucket`
+		let tp = global.fuelTemperatures[fuel]
+
+		if (tp !== null) {
+			let translatable = Component.translatable(
+				"tooltip.cmi.fuelTemperature",
+				tp,
+				toFahrenheit(tp)
+			).yellow()
+
+			event.add(bucket, translatable)
+		}
 	})
 
 	// 碎矿单独循环一次

@@ -49,6 +49,8 @@ ServerEvents.recipes((event) => {
 		"create:crafting/kinetics/flywheel",
 		"mekanism:processing/lategame/antimatter/from_pellet",
 		"tconstruct:smeltery/melting/fuel/blaze",
+		"tconstruct:smeltery/melting/fuel/lava",
+		"createaddition:crafting/capacitor_2",
 		"mekanism:processing/lategame/antimatter_pellet/from_gas",
 		"tconstruct:common/basalt_blast_furnace",
 		"tconstruct:common/glass/vanilla/daylight_detector",
@@ -82,7 +84,9 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:refinery/biodiesel",
 		"createdieselgenerators:basin_fermenting/fermentable",
 		"createdieselgenerators:basin_fermenting/fermented_spider_eye",
-		"createaddition:mixing/bioethanol"
+		"createaddition:mixing/bioethanol",
+		"thermal:compat/mekanism/smelter_mek_osmium_ore",
+		"create:milling/andesite"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -91,6 +95,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeItemOutputRecipes = [
+		"immersiveengineering:alloybrick",
 		"createdieselgenerators:chip_wood_block",
 		"pipez:filter_destination_tool",
 		"create:schedule",
@@ -233,7 +238,8 @@ ServerEvents.recipes((event) => {
 	let removeRecipeType = [
 		"vintageimprovements:laser_cutting",
 		"ad_astra:nasa_workbench",
-		"immersiveengineering:fermenter"
+		"immersiveengineering:fermenter",
+		"immersiveengineering:alloy"
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({
@@ -352,6 +358,9 @@ ServerEvents.recipes((event) => {
 			}, {
 				type: "thermal:chilling",
 				output: `#forge:coins/${metal}`
+			}, {
+				type: "immersiveengineering:arc_furnace",
+				output: "#forge:ingots/osmium"
 			}
 		])
 	})

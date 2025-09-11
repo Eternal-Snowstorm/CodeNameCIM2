@@ -40,9 +40,12 @@ StartupEvents.registry("item", (event) => {
 						let fluidTranslateKey = `tooltip.${global.namespace}.storage_upgrade.fluidMultiplier`
 						let ctrlTranslateKey = `tooltip.${global.namespace}.storage_upgrade.controllerMultiplier`
 
-						tooltip.add(Component.translatable(itemTranslateKey, itemMultiplier).gray())
-						tooltip.add(Component.translatable(fluidTranslateKey, fluidMultiplier).gray())
-						tooltip.add(Component.translatable(ctrlTranslateKey, controllerMultiplier).gray())
+						tooltip.add(Component.translatable(itemTranslateKey, itemMultiplier)
+							.gray())
+						tooltip.add(Component.translatable(fluidTranslateKey, fluidMultiplier)
+							.gray())
+						tooltip.add(Component.translatable(ctrlTranslateKey, controllerMultiplier)
+							.gray())
 					}
 				}, $StorageUpgradeItem$StorageTier.DIAMOND)
 			}).tag("functionalstorage:upgrades")

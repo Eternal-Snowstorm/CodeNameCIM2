@@ -29,6 +29,12 @@ ServerEvents.tags("item", (event) => {
 		.add("functionalstorage:simple_compacting_drawer")
 		.add("functionalstorage:ender_drawer")
 
+	// 流体抽屉
+	event.get("functionalstorage:fluid_drawer")
+		.add("functionalstorage:fluid_1")
+		.add("functionalstorage:fluid_2")
+		.add("functionalstorage:fluid_4")
+
 	// 机器核心
 	event.get("cmi:multiblock_machine_controller")
 		.add("mm:large_steam_boiler")
