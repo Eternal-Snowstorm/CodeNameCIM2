@@ -71,7 +71,7 @@ ItemEvents.modification((event) => {
 	event.modify("minecraft:sugar_cane", (modify) => {
 		modify.setFoodProperties((food) => {
 			food.hunger(2)
-				.saturation(1)
+				.saturation(5)
 				.eaten((event) => {
 					let { player } = event
 
