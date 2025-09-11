@@ -154,8 +154,7 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 		Item.of("create:scoria").withChance(0.1),
 		Item.of("minecraft:dripstone_block").withChance(0.1),
 		Item.of("minecraft:smooth_basalt").withChance(0.1)
-	]
-	)
+	])
 
 	// 木质构件
 	addAccelerateEvent(event, "cmi:wooden_mechanism", "minecraft:stone", [
@@ -173,7 +172,7 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
  * @param {Internal.ItemStack_} input 催生使用的物品
  * @param {string} stone 催生所需的方块的ID
  * @param {Array<OutputItem>} blocks 催生出的方块(需要添加概率)，没有对应方块的物品会被忽略
- * @returns 
+ * @returns {BlockRightClickedEventJS} 催生
  */
 function addAccelerateEvent(event, input, stone, blocks) {
 	// 判定是否主手手持构件
