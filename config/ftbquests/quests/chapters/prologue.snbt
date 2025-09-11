@@ -9,7 +9,12 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["如任务所示, 这是一个做构件的科技整合包, 你只需要关注你的产线就好了"]
+			description: [
+				"妈的, 烧的真他妈充分."
+				"要不是紧急逃生仓, 我怕是也和这船体一样支离破碎了. "
+				"空气含氧量34%, 地表重力加速度31.36m*s^-2, 有地球生物存活......啊，这就是伊甸了. "
+				"既然这样, 得赶紧想办法活下去, 才能争取与地球的通讯......"
+			]
 			disable_toast: true
 			icon: "cmi:wooden_mechanism"
 			id: "21ED583750523195"
@@ -28,12 +33,13 @@
 			]
 			shape: "gear"
 			size: 1.8d
-			subtitle: "你坠机啦"
+			subtitle: "Mayday! Mayday!"
 			tasks: [{
 				id: "22D0220F20C29089"
+				title: "从航天事故生还"
 				type: "checkmark"
 			}]
-			title: "关于整合包"
+			title: "劫后余生"
 			x: 0.0d
 			y: 0.0d
 		}

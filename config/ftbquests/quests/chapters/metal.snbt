@@ -1038,7 +1038,7 @@
 			y: -8.5d
 		}
 	]
-	order_index: 5
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -1845,5 +1845,5 @@
 			y: -9.5d
 		}
 	]
-	title: "金属冶炼"
+	title: "金属熔点与燃料纵览"
 }
