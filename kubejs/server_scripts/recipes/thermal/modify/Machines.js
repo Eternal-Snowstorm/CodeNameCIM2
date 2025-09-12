@@ -252,24 +252,6 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 
-	create.item_application("thermal_extra:dynamo_frost", [
-		"thermal:dynamo_stirling",
-		"cmi:cobalt_mechanism"
-	])
-
-	// 
-	create.item_application("thermal:dynamo_numismatic", [
-		"thermal:dynamo_magmatic",
-		"cmi:gold_mechanism"
-	])
-
-	// 
-	create.item_application("thermal:dynamo_lapidary", [
-		"thermal:dynamo_magmatic",
-		"cmi:resonant_mechanism"
-	])
-
-	// 
 	kubejs.shaped("thermal:machine_smelter", [
 		"C",
 		"B",
