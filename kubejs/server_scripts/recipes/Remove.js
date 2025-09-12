@@ -104,7 +104,6 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeItemOutputRecipes = [
-		"immersiveengineering:alloybrick",
 		"createdieselgenerators:chip_wood_block",
 		"pipez:filter_destination_tool",
 		"create:schedule",

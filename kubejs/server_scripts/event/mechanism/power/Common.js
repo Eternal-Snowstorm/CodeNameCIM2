@@ -1,4 +1,6 @@
 BlockEvents.rightClicked("cmi:accelerator", (event) => {
+	let { level, player, item, block } = event
+
 	// 安山构件
 	addAccelerateEvent("cmi:andesite_mechanism", "minecraft:stone", [
 		Item.of("minecraft:andesite").withChance(0.2),
@@ -167,21 +169,18 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 
 	/**
 	 * 添加构件催生器事件
-	 * @param {Internal.BlockRightClickedEventJS} event 方块右键事件
 	 * @param {Internal.ItemStack_} input 催生使用的物品
 	 * @param {string} stone 催生所需的方块的ID
-	 * @param {Array<OutputItem>} blocks 催生出的方块(需要添加概率)，没有对应方块的物品会被忽略
+	 * @param {Array<OutputItem>} blocks 催生出的方块(需要添加概率), 没有对应方块的物品会被忽略
 	 * @returns 
 	 */
 	function addAccelerateEvent(input, stone, blocks) {
-		let { level, player, item, block } = event
-
 		// 判定是否主手手持构件
 		if (event.hand === "OFF_HAND") {
-			return
+			return false
 		}
 		if (player === null) {
-			return
+			return false
 		}
 		if (item.is(input)) {
 			let { x, y, z } = block.pos
@@ -210,7 +209,7 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 			}
 			// 若数量小于等于5则停止该程序
 			if (count <= 5) {
-				return
+				return false
 			}
 			// 若数量大于5则开始抽随机数转化方块
 			for (let m = 0; m <= 4; m++) {
@@ -247,6 +246,8 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 				// 若是生存模式则减少一个安山构件
 				item.shrink(1)
 			}
+			return true
 		}
+		return false
 	}
 })
