@@ -17,6 +17,7 @@ ServerEvents.recipes((event) => {
 	let icom = "cmi:incomplete_coil_mechanism"
 	let ienm = "cmi:incomplete_enchanted_mechanism"
 	let ismm = "cmi:incomplete_smart_mechanism"
+	let iom = "cmi:incomplete_osmium_mechanism"
 	let ibmm = "cmi:incomplete_basic_mekanism_mechanism"
 	let iamm = "cmi:incomplete_advanced_mekanism_mechanism"
 	let iemm = "cmi:incomplete_elite_mekanism_mechanism"
@@ -222,6 +223,17 @@ ServerEvents.recipes((event) => {
 		create.deploying(ismm, [ismm, "ae2:engineering_processor"]),
 		create.deploying(ismm, [ismm, "cmi:engineering_mechanism_part"]),
 	]).transitionalItem(ismm).loops(1)
+
+
+	// 锇质
+	create.sequenced_assembly("cmi:osmium_mechanism", [
+		"#forge:plates/osmium"
+	], [
+		create.deploying(iom, [iom, "mekanism:hdpe_sheet"]),
+		create.deploying(iom, [iom, "mekanism:structural_glass"]),
+		create.pressing(iom, iom),
+		create.deploying(iom, [iom, "cmi:mekanism_mechanism_part"])
+	]).transitionalItem(iom).loops(1)
 
 	// 基础通用
 	create.sequenced_assembly("cmi:basic_mekanism_mechanism", [

@@ -152,19 +152,6 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 
-	kubejs.shaped("thermal:dynamo_stirling", [
-		" A ",
-		"BMB",
-		"CDC"
-	], {
-		A: "thermal:rf_coil",
-		B: "#forge:stone",
-		C: "createaddition:capacitor",
-		D: "cmi:stone_mechanism",
-		M: "cmi:thermal_mechanism"
-	})
-
-	// 
 	kubejs.shaped("thermal:machine_pulverizer", [
 		" A ",
 		"CBC",
@@ -186,12 +173,6 @@ ServerEvents.recipes((event) => {
 		B: FRAME,
 		C: THERMAL_MECH
 	})
-
-	// 
-	create.item_application("thermal:dynamo_gourmand", [
-		"thermal:dynamo_stirling",
-		"cmi:pigiron_mechanism"
-	])
 
 	// 
 	kubejs.shaped("thermal:machine_crafter", [
@@ -247,24 +228,6 @@ ServerEvents.recipes((event) => {
 		B: FRAME,
 		C: "minecraft:furnace"
 	})
-
-	// 
-	create.item_application("thermal:dynamo_compression", [
-		"thermal:dynamo_stirling",
-		"cmi:thermal_mechanism"
-	])
-
-	// 
-	create.item_application("thermal:dynamo_disenchantment", [
-		"thermal:dynamo_stirling",
-		"cmi:enchanted_mechanism"
-	])
-
-	// 
-	create.item_application("thermal:dynamo_magmatic", [
-		"thermal:dynamo_compression",
-		"cmi:feinforced_mechanism"
-	])
 
 	// 
 	kubejs.shaped("thermal:machine_crucible", [
