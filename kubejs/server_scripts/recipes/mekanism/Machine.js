@@ -189,27 +189,4 @@ ServerEvents.recipes((event) => {
 		C: "minecraft:diamond_block",
 		D: casing,
 	}).id("mekanism:dimensional_stabilizer")
-
-	// 热力发电机
-	kubejs.shaped("mekanismgenerators:heat_generator", [
-		"AAA",
-		"BCB",
-		"DED"
-	], {
-		A: "#forge:ingots/iron",
-		B: "cmi:stone_mechanism",
-		C: mechB,
-		D: "#forge:ingots/copper",
-		E: casing
-	}).id("mekanismgenerators:generator/heat")
-
-	// 电池
-	kubejs.shaped("mekanism:energy_tablet", [
-		"A",
-		"B",
-		"A"
-	], {
-		A: alloyA,
-		B: "cmi:gold_mechanism",
-	}).id("mekanism:energy_tablet")
 })

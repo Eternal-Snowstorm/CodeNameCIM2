@@ -76,10 +76,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"55B7A6AEBB65DFDA"
-				"6CA32F483367E0AF"
-			]
+			dependencies: ["55B7A6AEBB65DFDA"]
 			description: [
 				"现在，去挖点铜吧。"
 				"你可以试试用紫水晶工具，自带的时运可以获得更多矿物。"
@@ -109,10 +106,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"55B7A6AEBB65DFDA"
-				"6CA32F483367E0AF"
-			]
+			dependencies: ["55B7A6AEBB65DFDA"]
 			description: [
 				"虽然不是原版，但是这个家伙大概也是大多数玩家的老朋友了。"
 				"锌的熔点只有420摄氏度，可以直接在焦黑炉里熔化，并用于浇筑安山合金。"
@@ -270,10 +264,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"41D7E109B48C4231"
-				"43A58164AF59ECA2"
-			]
+			dependencies: ["41D7E109B48C4231"]
 			description: [
 				"有了高炉，现在你可以熔炼铁了！"
 				"可能还是有那么一点陌生，但是终于还是闻到了熟悉的味道！"
@@ -303,6 +294,10 @@
 			y: 5.0d
 		}
 		{
+			dependencies: [
+				"1E2099E61A6F1339"
+				"1592681A54FC5717"
+			]
 			description: [
 				"真是想不到啊，这次黄铜竟然可以比铁还早！"
 				"但是似乎在前面还卡着一些东西不让你制造黄铜设备，先去把它干掉吧！"
@@ -393,6 +388,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["57F25D7AD4CC6CBE"]
 			description: [
 				"终于要进入电气时代了！"
 				"如果你问我电气时代最具有代表性的材料是什么"

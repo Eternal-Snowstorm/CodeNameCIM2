@@ -183,32 +183,40 @@ ServerEvents.recipes((event) => {
 	}).id("cmi:peat_torch")
 
 	// pipez item|fluid|energy|gas|all
-	kubejs.shaped("32x pipez:item_pipe", [
-		"ABA"
+	kubejs.shaped("16x pipez:item_pipe", [
+		"A A",
+		" B ",
+		"A A"
 	], {
-		A: "cmi:thermal_mechanism",
-		B: "#forge:chests"
+		A: "#forge:plates/invar",
+		B: "cmi:wooden_mechanism"
 	}).id("pipez:item_pipe")
 
-	kubejs.shaped("32x pipez:fluid_pipe", [
-		"ABA"
+	kubejs.shaped("16x pipez:fluid_pipe", [
+		"A A",
+		" B ",
+		"A A"
 	], {
-		A: "cmi:thermal_mechanism",
-		B: "minecraft:bucket"
+		A: "#forge:plates/invar",
+		B: "cmi:copper_mechanism"
 	}).id("pipez:fluid_pipe")
 
-	kubejs.shaped("32x pipez:energy_pipe", [
-		"ABA"
+	kubejs.shaped("16x pipez:energy_pipe", [
+		"A A",
+		" B ",
+		"A A"
 	], {
-		A: "cmi:thermal_mechanism",
-		B: "minecraft:redstone"
+		A: "#forge:plates/invar",
+		B: "vintageimprovements:redstone_module"
 	}).id("pipez:energy_pipe")
 
-	kubejs.shaped("32x pipez:gas_pipe", [
-		"ABA"
+	kubejs.shaped("16x pipez:gas_pipe", [
+		"A A",
+		" B ",
+		"A A"
 	], {
-		A: "cmi:thermal_mechanism",
-		B: "mekanism:alloy_infused"
+		A: "#forge:plates/invar",
+		B: "cmi:osmium_mechanism"
 	}).id("pipez:gas_pipe")
 
 	kubejs.shapeless("4x pipez:universal_pipe", [
