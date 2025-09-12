@@ -123,7 +123,7 @@ ServerEvents.recipes((event) => {
 	create.deploying("functionalstorage:redstone_upgrade", [
 		TEMPLATE,
 		"minecraft:comparator"
-	])
+	]).id("functionalstorage:redstone_upgrade")
 
 	// 流体抽屉1
 	kubejs.shaped("functionalstorage:fluid_1", [
