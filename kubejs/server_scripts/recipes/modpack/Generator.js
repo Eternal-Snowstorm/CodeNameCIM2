@@ -97,4 +97,29 @@ ServerEvents.recipes((event) => {
 		create.deploying(incGoldRod, [incGoldRod, "#forge:dusts/redstone"]),
 		vintageimprovements.laser_cutting(incGoldRod, [incGoldRod], 1000, 50),
 	]).transitionalItem(incGoldRod).loops(1)
+
+	// 电磁铁
+	kubejs.shaped("immersiveengineering:electromagnet", [
+		"ABA",
+		"CDC",
+		"AAA"
+	], {
+		A: "#forge:plates/steel",
+		B: "immersiveengineering:coil_lv",
+		C: "immersiveengineering:component_steel",
+		D: MECH
+	}).id("immersiveengineering:crafting/electromagnet")
+
+	// 过热元件
+	kubejs.shaped("mekanism:superheating_element", [
+		"ABA",
+		"CDC",
+		"AEA"
+	], {
+		A: "#forge:plates/stainless_steel",
+		B: "#forge:ingots/constantan",
+		C: "#vintageimprovements:springs/constantan",
+		D: MECH,
+		E: "mekanism:steel_casing"
+	}).id("mekanism:superheating_element")
 })
