@@ -114,12 +114,26 @@ ServerEvents.recipes((event) => {
 	kubejs.shaped("mekanism:superheating_element", [
 		"ABA",
 		"CDC",
-		"AEA"
+		"FEF"
 	], {
 		A: "#forge:plates/stainless_steel",
 		B: "#forge:ingots/constantan",
 		C: "#vintageimprovements:springs/constantan",
 		D: MECH,
-		E: "mekanism:steel_casing"
+		E: "mekanism:steel_casing",
+		F: "cmi:advanced_mekanism_mechanism"
 	}).id("mekanism:superheating_element")
+
+	// 电阻加热器
+	kubejs.shaped("mekanism:resistive_heater",[
+		"AAA",
+		"BCB",
+		"DED"
+	],{
+		A: "#forge:plates/invar",
+		B: MECH,
+		C: "mekanism:steel_casing",
+		D: "cmi:basic_mekanism_mechanism",
+		E: "mekanism:energy_tablet",
+	}).id("mekanism:resistive_heater")
 })
