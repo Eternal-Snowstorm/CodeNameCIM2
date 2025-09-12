@@ -491,6 +491,26 @@
 			x: 2.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			hide_dependency_lines: true
+			icon: "create:brass_hand"
+			id: "217440E1A1A049D3"
+			rewards: [{
+				id: "360877202A4E3763"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "怎么可能没有整理"
+			tasks: [{
+				id: "0E1EAD2AD1770131"
+				title: "整合包内自带中键整理Mod"
+				type: "checkmark"
+			}]
+			title: "关于整理"
+			x: 6.0d
+			y: 7.0d
+		}
 	]
 	title: "实用工具"
 }
