@@ -36,11 +36,13 @@ StartupEvents.registry("item", (event) => {
 		"colorful",
 		"creative",
 		"potion",
-		"bronze"
+		"bronze",
+		"osmium"
 	]
-	//仅注册完成状态的构件 没有驱动
+	
 	global.mechanismList = mechanismRegister.concat("pigiron")
-
+	
+	//仅注册完成状态的构件 没有驱动
 	let completeMechanismRegister = [
 		"basic_random",
 		"mechanical_random",
@@ -48,8 +50,7 @@ StartupEvents.registry("item", (event) => {
 		"flux_random",
 		"magical_random",
 		"quantum_random",
-		"mekanism_random",
-		"final_random"
+		"mekanism_random"
 	]
 	mechanismRegister.forEach((material) => {
 		event.create(`${global.namespace}:${material}_mechanism`)
