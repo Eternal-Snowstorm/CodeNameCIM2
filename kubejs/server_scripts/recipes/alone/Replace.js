@@ -19,4 +19,12 @@ ServerEvents.recipes((event) => {
 			}
 		})
 	})
+
+	event.replaceInput({
+		mod: "ad_astra"
+	}, "ad_astra:steel_rod", "#forge:rods/steel")
+
+	event.replaceInput({
+		mod: "ad_astra"
+	}, "ad_astra:iron_rod", "#forge:rods/iron")
 })

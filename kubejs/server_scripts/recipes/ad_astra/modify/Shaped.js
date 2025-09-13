@@ -55,4 +55,14 @@ ServerEvents.recipes((event) => {
 		],
 		D: "#forge:coal"
 	}).id("ad_astra:coal_generator")
+
+	// 车轱辘
+	kubejs.shaped("ad_astra:wheel", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "thermal:cured_rubber",
+		B: "#forge:plates/steel"
+	}).id("ad_astra:wheel")
 })
