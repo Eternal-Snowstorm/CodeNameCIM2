@@ -1069,11 +1069,11 @@
 			id: "7F57658170C32134"
 			tasks: [{
 				id: "67D57A9E2658F10D"
-				title: "熔岩 1000°C"
+				title: "熔岩 1346°C"
 				type: "checkmark"
 			}]
-			x: 12.0d
-			y: 1.5d
+			x: 11.0d
+			y: -1.5d
 		}
 		{
 			icon: "minecraft:charcoal"
@@ -1096,7 +1096,7 @@
 				type: "checkmark"
 			}]
 			title: "植物油 1027°C"
-			x: 13.0d
+			x: 12.0d
 			y: 1.5d
 		}
 		{
