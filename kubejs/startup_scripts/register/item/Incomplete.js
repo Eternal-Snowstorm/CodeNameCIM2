@@ -19,4 +19,8 @@ StartupEvents.registry("item", (event) => {
 	// 扫描模块（半成品）
 	addItem("incomplete_scanning_module")
 		.texture("scannable:item/blank_module")
+
+	// 电子管（半成品）
+	addItem("incomplete_electron_tube")
+		.texture(`${global.namespace}:item/material/electron_tube`)
 })

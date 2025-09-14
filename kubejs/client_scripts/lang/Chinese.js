@@ -52,6 +52,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_advanced_control_circuit", "高级控制电路(半成品)")
 	addItemLanguage("incomplete_elite_control_circuit", "精英控制电路(半成品)")
 	addItemLanguage("incomplete_ultimate_control_circuit", "终极控制电路(半成品)")
+	addItemLanguage("incomplete_electron_tube", "电子管(半成品)")
 	addItemLanguage("magnesium_hydroxide", "氢氧化镁")
 	addItemLanguage("brominated_flame_retardants", "溴系阻燃剂")
 	addItemLanguage("rubber_hand", "橡胶手部零件")

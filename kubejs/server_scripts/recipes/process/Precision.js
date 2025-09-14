@@ -11,9 +11,4 @@ ServerEvents.recipes((event) => {
 		Item.of("minecraft:redstone").withChance(0.25),
 		"minecraft:amethyst_shard"
 	], "cmi:charged_amethyst")
-
-	create.deploying("create:electron_tube", [
-		"#forge:plates/iron",
-		"create:polished_rose_quartz"
-	])
 })

@@ -190,7 +190,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/stainless_steel",
 		B: "cmi:coil_mechanism",
 		C: "cmi:advanced_mekanism_mechanism",
-		D: "cmi:osmium_mechanism"
+		D: "cmi:air_tight_mechanism"
 	}).id("mekanismgenerators:generator/gas_burning")
 
 	// 生物能发电机

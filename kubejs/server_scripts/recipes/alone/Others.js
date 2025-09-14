@@ -179,7 +179,7 @@ ServerEvents.recipes((event) => {
 		"A A"
 	], {
 		A: "#forge:plates/invar",
-		B: "cmi:osmium_mechanism"
+		B: "cmi:air_tight_mechanism"
 	}).id("pipez:gas_pipe")
 
 	kubejs.shapeless("4x pipez:universal_pipe", [
