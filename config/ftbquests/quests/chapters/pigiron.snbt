@@ -5,16 +5,14 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:pigiron_mechanism"
 	id: "15178B26DF0785CB"
-	images: [
-		{
-			height: 38.88d
-			image: "cmi:textures/images/background/pigiron.png"
-			rotation: 0.0d
-			width: 64.62d
-			x: 1.0d
-			y: 0.5d
-		}
-	]
+	images: [{
+		height: 38.88d
+		image: "cmi:textures/images/background/pigiron.png"
+		rotation: 0.0d
+		width: 64.62d
+		x: 1.0d
+		y: 0.5d
+	}]
 	order_index: 36
 	quest_links: [ ]
 	quests: [
@@ -22,13 +20,11 @@
 			hide_dependent_lines: true
 			icon: "tconstruct:molten_pig_iron_bucket"
 			id: "3E5BEC20B4D4B89F"
-			tasks: [
-				{
-					id: "1E4D2D827F42826F"
-					title: "熔融猪铁"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "1E4D2D827F42826F"
+				title: "熔融猪铁"
+				type: "checkmark"
+			}]
 			x: -10.249999999999993d
 			y: -6.345714285714287d
 		}
@@ -36,13 +32,11 @@
 			dependencies: ["3E5BEC20B4D4B89F"]
 			hide_dependent_lines: true
 			id: "05EAE1825CF7A469"
-			tasks: [
-				{
-					id: "78EF4BA2D42D2068"
-					title: "铸造"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "78EF4BA2D42D2068"
+				title: "铸造"
+				type: "checkmark"
+			}]
 			x: -16.964285714285708d
 			y: 3.594285714285725d
 		}
@@ -50,20 +44,16 @@
 			dependencies: ["05EAE1825CF7A469"]
 			hide_dependent_lines: true
 			id: "42BFA98F41B1948C"
-			rewards: [
-				{
-					id: "32FB0FD940D62A2B"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "40584A27390C28B1"
-					item: "tconstruct:pig_iron_ingot"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "32FB0FD940D62A2B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "40584A27390C28B1"
+				item: "tconstruct:pig_iron_ingot"
+				type: "item"
+			}]
 			title: "猪铁锭"
 			x: -18.107142857142847d
 			y: 6.248571428571431d
@@ -72,13 +62,11 @@
 			dependencies: ["42BFA98F41B1948C"]
 			hide_dependent_lines: true
 			id: "2F31E171E4FB969D"
-			tasks: [
-				{
-					id: "4DF4104670A83859"
-					title: "压制"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "4DF4104670A83859"
+				title: "压制"
+				type: "checkmark"
+			}]
 			x: -15.535714285714278d
 			y: 7.260000000000005d
 		}
@@ -86,20 +74,16 @@
 			dependencies: ["2F31E171E4FB969D"]
 			hide_dependent_lines: true
 			id: "1ED8227B1B1A756A"
-			rewards: [
-				{
-					id: "0630DEE317FA82CF"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "1780ECFFCFC835E0"
-					item: "vintageimprovements:pig_iron_sheet"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0630DEE317FA82CF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1780ECFFCFC835E0"
+				item: "vintageimprovements:pig_iron_sheet"
+				type: "item"
+			}]
 			title: "猪铁板"
 			x: -13.571428571428577d
 			y: 7.857142857142854d
@@ -111,13 +95,11 @@
 			]
 			hide_dependent_lines: true
 			id: "4B67A3B7F01D072E"
-			tasks: [
-				{
-					id: "7BEDB060BDC9D909"
-					title: "填充"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "7BEDB060BDC9D909"
+				title: "填充"
+				type: "checkmark"
+			}]
 			x: -11.857142857142854d
 			y: 8.65428571428572d
 		}
@@ -125,13 +107,11 @@
 			dependencies: ["4B67A3B7F01D072E"]
 			hide_dependent_lines: true
 			id: "1F95AE18632113FE"
-			tasks: [
-				{
-					id: "3593F81A3C6C7B88"
-					title: "压制"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3593F81A3C6C7B88"
+				title: "压制"
+				type: "checkmark"
+			}]
 			x: -9.0d
 			y: 9.59428571428571d
 		}
@@ -139,20 +119,16 @@
 			dependencies: ["1F95AE18632113FE"]
 			hide_dependent_lines: true
 			id: "484C5844E0691968"
-			rewards: [
-				{
-					id: "0663D3E03E8846B5"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "7B5C82C16917B75D"
-					item: "tconstruct:pig_iron_nugget"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0663D3E03E8846B5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7B5C82C16917B75D"
+				item: "tconstruct:pig_iron_nugget"
+				type: "item"
+			}]
 			title: "猪铁粒"
 			x: -1.4285714285714306d
 			y: 2.9628571428571533d
@@ -161,20 +137,16 @@
 			dependencies: ["484C5844E0691968"]
 			hide_dependent_lines: true
 			id: "50F1865C69CC6349"
-			rewards: [
-				{
-					id: "6D967C64631FDBF0"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "0C01A4F2707230B2"
-					item: "cmi:magical_mechanism_part"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6D967C64631FDBF0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0C01A4F2707230B2"
+				item: "cmi:magical_mechanism_part"
+				type: "item"
+			}]
 			title: "机械部件"
 			x: 14.57142857142857d
 			y: 3.260000000000005d
@@ -183,20 +155,16 @@
 			dependencies: ["50F1865C69CC6349"]
 			hide_dependent_lines: true
 			id: "3BB2A4CAA61416DB"
-			rewards: [
-				{
-					id: "1EC9B0A4B2C0D185"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "5313E58ED7A218AD"
-					item: "cmi:pigiron_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1EC9B0A4B2C0D185"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5313E58ED7A218AD"
+				item: "cmi:pigiron_mechanism"
+				type: "item"
+			}]
 			title: "猪铁机械装置"
 			x: 20.85714285714286d
 			y: 5.914285714285725d

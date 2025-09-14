@@ -5,16 +5,14 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:heavy_engineering_mechanism"
 	id: "7E3B6B8C4B3AD105"
-	images: [
-		{
-			height: 36.06d
-			image: "cmi:textures/images/background/heavy_ie.png"
-			rotation: 0.0d
-			width: 79.92d
-			x: -1.5d
-			y: 0.5d
-		}
-	]
+	images: [{
+		height: 36.06d
+		image: "cmi:textures/images/background/heavy_ie.png"
+		rotation: 0.0d
+		width: 79.92d
+		x: -1.5d
+		y: 0.5d
+	}]
 	order_index: 15
 	quest_links: [ ]
 	quests: [
@@ -22,27 +20,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5BFFB06867926424"
-			rewards: [
-				{
-					id: "03E92F60B4C87AB0"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "330A04BAB8C5535D"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/steel"
-						}
+			rewards: [{
+				id: "03E92F60B4C87AB0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "330A04BAB8C5535D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
 					}
-					title: "任意 #forge:ingots/steel"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:ingots/steel"
+				type: "item"
+			}]
 			title: "钢锭"
 			x: -14.142857142857125d
 			y: 1.0300000000000011d
@@ -52,13 +46,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "12429DAA0F211857"
-			tasks: [
-				{
-					id: "2150E1830E5E6360"
-					title: "压制"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "2150E1830E5E6360"
+				title: "压制"
+				type: "checkmark"
+			}]
 			x: -11.571428571428555d
 			y: 2.2742857142857176d
 		}
@@ -67,27 +59,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "28F91ED583A2E111"
-			rewards: [
-				{
-					id: "5D32040B1F1846DF"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "721536A63E18BC5B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:plates/steel"
-						}
+			rewards: [{
+				id: "5D32040B1F1846DF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "721536A63E18BC5B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/steel"
 					}
-					title: "任意 #forge:plates/steel"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:plates/steel"
+				type: "item"
+			}]
 			title: "钢板"
 			x: -8.428571428571416d
 			y: 3.661428571428573d
@@ -97,13 +85,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "756CC1515ADEA813"
-			tasks: [
-				{
-					id: "7B6FCCFAB84211A5"
-					title: "切割"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "7B6FCCFAB84211A5"
+				title: "切割"
+				type: "checkmark"
+			}]
 			x: -5.428571428571416d
 			y: 4.905714285714282d
 		}
@@ -112,20 +98,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "081C99BB553D5EE1"
-			rewards: [
-				{
-					id: "0DB4432A7C9694B7"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "6B7303B02A05DF7B"
-					item: "immersiveengineering:sheetmetal_steel"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0DB4432A7C9694B7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6B7303B02A05DF7B"
+				item: "immersiveengineering:sheetmetal_steel"
+				type: "item"
+			}]
 			title: "钢金属板"
 			x: -1.9999999999999858d
 			y: 2.507142857142867d
@@ -134,20 +116,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "181F917BFC990905"
-			rewards: [
-				{
-					id: "59C697F7BAB1D701"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "361356B57A3C2783"
-					item: "minecraft:copper_ingot"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "59C697F7BAB1D701"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "361356B57A3C2783"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
 			title: "铜锭"
 			x: -21.0d
 			y: 5.5d
@@ -157,13 +135,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "4DB703243615AD7D"
-			tasks: [
-				{
-					id: "1C22F5AC3811C406"
-					title: "杆压制模具"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "1C22F5AC3811C406"
+				title: "杆压制模具"
+				type: "checkmark"
+			}]
 			x: -19.214285714285715d
 			y: 4.744285714285709d
 		}
@@ -175,20 +151,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "65502D2E5BB5860C"
-			rewards: [
-				{
-					id: "48AA31111607A8E6"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "5A9F64970CAA5617"
-					item: "createaddition:copper_rod"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "48AA31111607A8E6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5A9F64970CAA5617"
+				item: "createaddition:copper_rod"
+				type: "item"
+			}]
 			title: "铜杆"
 			x: 5.928571428571431d
 			y: -7.797142857142852d
@@ -201,20 +173,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "22B078B56711D82C"
-			rewards: [
-				{
-					id: "05DF9158F755C6A2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "6BA1C815F3D2518E"
-					item: "immersiveengineering:component_steel"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "05DF9158F755C6A2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6BA1C815F3D2518E"
+				item: "immersiveengineering:component_steel"
+				type: "item"
+			}]
 			title: "钢构件"
 			x: 10.357142857142861d
 			y: -1.3778571428571382d
@@ -223,27 +191,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "58D6C75E7721570F"
-			rewards: [
-				{
-					id: "744BCA8C09E6551D"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "2BECB199B2F84342"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/electrum"
-						}
+			rewards: [{
+				id: "744BCA8C09E6551D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2BECB199B2F84342"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/electrum"
 					}
-					title: "任意 #forge:ingots/electrum"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:ingots/electrum"
+				type: "item"
+			}]
 			title: "琥珀金锭"
 			x: -8.785714285714292d
 			y: -1.7764285714285677d
@@ -253,13 +217,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3782AEE3395C52DD"
-			tasks: [
-				{
-					id: "6BDD8BB5AB3595EC"
-					title: "线压制模具"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "6BDD8BB5AB3595EC"
+				title: "线压制模具"
+				type: "checkmark"
+			}]
 			x: -6.642857142857139d
 			y: -0.24642857142855945d
 		}
@@ -271,27 +233,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "73F02C1F2AB47896"
-			rewards: [
-				{
-					id: "21FCA762E2F0D8D6"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "2A7DBD23CBD2F909"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:wires/electrum"
-						}
+			rewards: [{
+				id: "21FCA762E2F0D8D6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2A7DBD23CBD2F909"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:wires/electrum"
 					}
-					title: "任意 #forge:wires/electrum"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:wires/electrum"
+				type: "item"
+			}]
 			title: "琥珀金线"
 			x: 14.642857142857139d
 			y: -4.787857142857128d
@@ -301,13 +259,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "03871707E6DA9511"
-			tasks: [
-				{
-					id: "7B2E6257F3BEF4E5"
-					item: "cmi:engineering_mechanism_part"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B2E6257F3BEF4E5"
+				item: "cmi:engineering_mechanism_part"
+				type: "item"
+			}]
 			title: "机械部件"
 			x: 25.35714285714286d
 			y: -0.829285714285696d
@@ -317,20 +273,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "77D67EC1A1D6D321"
-			rewards: [
-				{
-					id: "024351CDC7CD0332"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "3212205A244194E1"
-					item: "cmi:heavy_engineering_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "024351CDC7CD0332"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3212205A244194E1"
+				item: "cmi:heavy_engineering_mechanism"
+				type: "item"
+			}]
 			title: "重型工程师机械"
 			x: 28.5d
 			y: -2.0d

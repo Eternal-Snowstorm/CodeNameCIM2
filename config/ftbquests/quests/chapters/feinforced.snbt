@@ -5,16 +5,14 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:feinforced_mechanism"
 	id: "3D080324D6B46294"
-	images: [
-		{
-			height: 23.28d
-			image: "cmi:textures/images/background/feinforced.png"
-			rotation: 0.0d
-			width: 44.4d
-			x: -1.0d
-			y: 0.0d
-		}
-	]
+	images: [{
+		height: 23.28d
+		image: "cmi:textures/images/background/feinforced.png"
+		rotation: 0.0d
+		width: 44.4d
+		x: -1.0d
+		y: 0.0d
+	}]
 	order_index: 10
 	quest_links: [ ]
 	quests: [
@@ -22,27 +20,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5D1A23B1F7C18C5B"
-			rewards: [
-				{
-					id: "7FC82355378D5AED"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "186F2F6471B0F1C9"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/silver"
-						}
+			rewards: [{
+				id: "7FC82355378D5AED"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "186F2F6471B0F1C9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/silver"
 					}
-					title: "任意 #forge:ingots/silver"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:ingots/silver"
+				type: "item"
+			}]
 			title: "银锭"
 			x: -7.242857142857126d
 			y: -2.827142857142867d
@@ -51,20 +45,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5C55C5A27FD620C0"
-			rewards: [
-				{
-					id: "4014D2C0D22BC682"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "0A422B4A758D32B3"
-					item: "minecraft:gold_ingot"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4014D2C0D22BC682"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0A422B4A758D32B3"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
 			title: "金锭"
 			x: -12.0d
 			y: -2.5d
@@ -77,13 +67,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1E446EB15DE75BAD"
-			tasks: [
-				{
-					id: "094E56E9C7471509"
-					title: "混合"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "094E56E9C7471509"
+				title: "混合"
+				type: "checkmark"
+			}]
 			x: -9.242857142857126d
 			y: -1.3271428571428672d
 		}
@@ -92,27 +80,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "73121B5585D69262"
-			rewards: [
-				{
-					id: "34E6B116CF3630EB"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "7CCF78F31B4A8AED"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/electrum"
-						}
+			rewards: [{
+				id: "34E6B116CF3630EB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7CCF78F31B4A8AED"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/electrum"
 					}
-					title: "任意 #forge:ingots/electrum"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:ingots/electrum"
+				type: "item"
+			}]
 			title: "琥珀金锭"
 			x: -7.028571428571411d
 			y: -0.32714285714286717d
@@ -122,13 +106,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "22877136228BAEC0"
-			tasks: [
-				{
-					id: "4BA1EBF8A251F5EC"
-					title: "压制"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "4BA1EBF8A251F5EC"
+				title: "压制"
+				type: "checkmark"
+			}]
 			x: -5.114285714285693d
 			y: 0.5299999999999869d
 		}
@@ -137,27 +119,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6D62D2B44AFBD4B1"
-			rewards: [
-				{
-					id: "00ACE8A7102B404C"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "3BBD5AB7541A3F24"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:plates/electrum"
-						}
+			rewards: [{
+				id: "00ACE8A7102B404C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3BBD5AB7541A3F24"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/electrum"
 					}
-					title: "任意 #forge:plates/electrum"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:plates/electrum"
+				type: "item"
+			}]
 			title: "琥珀金板"
 			x: -3.0571428571428214d
 			y: -1.2557142857142978d
@@ -167,20 +145,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3736139A32B991A4"
-			rewards: [
-				{
-					id: "797F647DF6DD67B1"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "5810391B48625240"
-					item: "thermal:rf_coil"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "797F647DF6DD67B1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5810391B48625240"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
 			title: "RF线圈"
 			x: -1.4999999999999574d
 			y: -2.4342857142857284d
@@ -189,20 +163,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "56EFDD3333BB54AF"
-			rewards: [
-				{
-					id: "6E0FF9257729E4B9"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "7D94F0C6454629A4"
-					item: "thermal:signalum_dust"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6E0FF9257729E4B9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7D94F0C6454629A4"
+				item: "thermal:signalum_dust"
+				type: "item"
+			}]
 			title: "信素粉"
 			x: -13.900000000000006d
 			y: 2.642857142857146d
@@ -212,13 +182,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1FC3C56F861CAEEF"
-			tasks: [
-				{
-					id: "61550E50311336B4"
-					title: "熔炼"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "61550E50311336B4"
+				title: "熔炼"
+				type: "checkmark"
+			}]
 			x: -12.342857142857135d
 			y: 3.3214285714285694d
 		}
@@ -227,20 +195,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "79390B295BEC1A2B"
-			rewards: [
-				{
-					id: "5A7B6EC336876767"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "6706FA97FDBFDDF3"
-					item: "thermal:signalum_ingot"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5A7B6EC336876767"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6706FA97FDBFDDF3"
+				item: "thermal:signalum_ingot"
+				type: "item"
+			}]
 			title: "信素锭"
 			x: -12.428571428571416d
 			y: 4.678571428571431d
@@ -250,13 +214,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "0839776A23D7B685"
-			tasks: [
-				{
-					id: "3E7AC89ADA6444A2"
-					title: "齿轮压制模具"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3E7AC89ADA6444A2"
+				title: "齿轮压制模具"
+				type: "checkmark"
+			}]
 			x: -9.0d
 			y: 2.5d
 		}
@@ -268,20 +230,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "77E890753F312A53"
-			rewards: [
-				{
-					id: "1B1334D9BABE2A82"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "474FC4DDB3759309"
-					item: "thermal:signalum_gear"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1B1334D9BABE2A82"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "474FC4DDB3759309"
+				item: "thermal:signalum_gear"
+				type: "item"
+			}]
 			title: "信素齿轮"
 			x: 4.40000000000002d
 			y: -0.1428571428571459d
@@ -291,20 +249,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "0F99DFE45596681F"
-			rewards: [
-				{
-					id: "67AAD46B2E719AAC"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "45223E735CD8863C"
-					item: "cmi:flux_mechanism_part"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "67AAD46B2E719AAC"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "45223E735CD8863C"
+				item: "cmi:flux_mechanism_part"
+				type: "item"
+			}]
 			title: "机械部件"
 			x: 7.314285714285759d
 			y: -2.4285714285714306d
@@ -314,13 +268,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1BFACCB25CDA31C5"
-			tasks: [
-				{
-					id: "6FCC67A9DCA47ECB"
-					item: "cmi:feinforced_mechanism"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6FCC67A9DCA47ECB"
+				item: "cmi:feinforced_mechanism"
+				type: "item"
+			}]
 			title: "强化机械"
 			x: 13.657142857142901d
 			y: 0.1428571428571459d

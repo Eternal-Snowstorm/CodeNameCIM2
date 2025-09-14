@@ -50,6 +50,6 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("cmi:trinitrotoluene_solution", 1000))
 		.energy(8000)
 
-	//柴油压缩炉统一
+	// 柴油压缩炉统一
 	thermal.compression_fuel("createdieselgenerators:diesel", 2000000)
 })

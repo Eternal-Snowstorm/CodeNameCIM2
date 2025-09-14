@@ -5,43 +5,37 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:colorful_mechanism"
 	id: "6E05062A62D5CC63"
-	images: [
-		{
-			height: 26.82d
-			image: "cmi:textures/images/background/colorful.png"
-			rotation: 0.0d
-			width: 81.12d
-			x: 1.0d
-			y: -1.5d
-		}
-	]
+	images: [{
+		height: 26.82d
+		image: "cmi:textures/images/background/colorful.png"
+		rotation: 0.0d
+		width: 81.12d
+		x: 1.0d
+		y: -1.5d
+	}]
 	order_index: 31
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "2545C4DBE9E7FA0D"
-			rewards: [
-				{
-					id: "2B321DCA2E28B072"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "788B27A8590CA55A"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:wooden_slabs"
-						}
+			rewards: [{
+				id: "2B321DCA2E28B072"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "788B27A8590CA55A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:wooden_slabs"
 					}
-					title: "任意 #minecraft:wooden_slabs"
-					type: "item"
 				}
-			]
+				title: "任意 #minecraft:wooden_slabs"
+				type: "item"
+			}]
 			title: "木台阶"
 			x: -24.857142857142854d
 			y: -3.8042857142857187d
@@ -50,20 +44,16 @@
 			dependencies: ["2545C4DBE9E7FA0D"]
 			hide_dependent_lines: true
 			id: "35DC590E36A2097B"
-			rewards: [
-				{
-					id: "3C362683EF6E8EE5"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "41A03C0CEFCE7DDD"
-					item: "minecraft:red_dye"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "3C362683EF6E8EE5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "41A03C0CEFCE7DDD"
+				item: "minecraft:red_dye"
+				type: "item"
+			}]
 			title: "红色染料"
 			x: -12.142857142857139d
 			y: 1.0342857142857156d
@@ -72,20 +62,16 @@
 			dependencies: ["35DC590E36A2097B"]
 			hide_dependent_lines: true
 			id: "6C84271A45A8FD86"
-			rewards: [
-				{
-					id: "45B50614B6D5D556"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "5C37B2814AD892FA"
-					item: "minecraft:yellow_dye"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "45B50614B6D5D556"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5C37B2814AD892FA"
+				item: "minecraft:yellow_dye"
+				type: "item"
+			}]
 			title: "黄色染料"
 			x: -6.714285714285722d
 			y: -3.1271428571428572d
@@ -94,20 +80,16 @@
 			dependencies: ["6C84271A45A8FD86"]
 			hide_dependent_lines: true
 			id: "263CEC6DD02BC24F"
-			rewards: [
-				{
-					id: "56A67FF60CE110A2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "2A6C3B8BCF2FD843"
-					item: "minecraft:blue_dye"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "56A67FF60CE110A2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2A6C3B8BCF2FD843"
+				item: "minecraft:blue_dye"
+				type: "item"
+			}]
 			title: "蓝色染料"
 			x: 0.8571428571428612d
 			y: -0.21714285714286063d
@@ -116,20 +98,16 @@
 			dependencies: ["263CEC6DD02BC24F"]
 			hide_dependent_lines: true
 			id: "5564DCE23624CEC2"
-			rewards: [
-				{
-					id: "44C16E654DC6B45B"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "741AF47FFE59BC0A"
-					item: "minecraft:white_dye"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "44C16E654DC6B45B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "741AF47FFE59BC0A"
+				item: "minecraft:white_dye"
+				type: "item"
+			}]
 			title: "白色染料"
 			x: 4.999999999999986d
 			y: -3.664285714285718d
@@ -138,20 +116,16 @@
 			dependencies: ["5564DCE23624CEC2"]
 			hide_dependent_lines: true
 			id: "433BC0F9366ACF70"
-			rewards: [
-				{
-					id: "29B157D665F9D83D"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "2B21FFC1EEDFDBFE"
-					item: "minecraft:black_dye"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "29B157D665F9D83D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2B21FFC1EEDFDBFE"
+				item: "minecraft:black_dye"
+				type: "item"
+			}]
 			title: "黑色染料"
 			x: 12.57142857142857d
 			y: -0.682857142857145d
@@ -160,13 +134,11 @@
 			dependencies: ["433BC0F9366ACF70"]
 			hide_dependent_lines: true
 			id: "01C7951F2DB0F177"
-			tasks: [
-				{
-					id: "271D6F589FC2C354"
-					item: "cmi:magical_mechanism_part"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "271D6F589FC2C354"
+				item: "cmi:magical_mechanism_part"
+				type: "item"
+			}]
 			title: "机械部件"
 			x: 18.0d
 			y: -5.1299999999999955d
@@ -175,20 +147,16 @@
 			dependencies: ["01C7951F2DB0F177"]
 			hide_dependent_lines: true
 			id: "50920415BB258F04"
-			rewards: [
-				{
-					id: "707C70FA0887BC7E"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "4DB30A119A6A1543"
-					item: "cmi:colorful_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "707C70FA0887BC7E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4DB30A119A6A1543"
+				item: "cmi:colorful_mechanism"
+				type: "item"
+			}]
 			title: "彩色机械"
 			x: 25.714285714285722d
 			y: -2.07714285714286d

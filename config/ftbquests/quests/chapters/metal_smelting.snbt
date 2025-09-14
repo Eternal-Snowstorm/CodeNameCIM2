@@ -15,21 +15,17 @@
 			]
 			icon: "minecraft:furnace"
 			id: "55B7A6AEBB65DFDA"
-			rewards: [
-				{
-					id: "61711E37B896CB40"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "61711E37B896CB40"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "熔点系统带来的变革"
-			tasks: [
-				{
-					id: "59FA22C26D126C02"
-					title: "我准备好了!"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "59FA22C26D126C02"
+				title: "我准备好了!"
+				type: "checkmark"
+			}]
 			title: "千万注意!"
 			x: -3.0d
 			y: -3.5d
@@ -42,21 +38,17 @@
 				"而且他没有匠魂熔炉的熔化增产,除了开局拿来烧炼粗铜后制造工具似乎也并不能发挥什么太大的作用了..."
 			]
 			id: "423068E2C60598B2"
-			rewards: [
-				{
-					id: "16DF6C4C510BC7F6"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "16DF6C4C510BC7F6"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "再熟悉不过了"
-			tasks: [
-				{
-					id: "60D75F6362BF68A3"
-					item: "minecraft:furnace"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "60D75F6362BF68A3"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
 			title: "最基础的熔炼"
 			x: -1.5d
 			y: 0.0d
@@ -68,21 +60,17 @@
 				"它对于开局使用&6锌&r制造&b安山合金&r意义重大,可以说开局的机械动力就是从这里起源的."
 			]
 			id: "3497D2D25AA3ACA6"
-			rewards: [
-				{
-					id: "6370035081EC0FEF"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "6370035081EC0FEF"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "1000度以下还能应付"
-			tasks: [
-				{
-					id: "2527A0D370DF24DF"
-					item: "tconstruct:seared_heater"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2527A0D370DF24DF"
+				item: "tconstruct:seared_heater"
+				type: "item"
+			}]
 			title: "匠魂的基础加热"
 			x: -5.0d
 			y: -1.5d
@@ -95,28 +83,24 @@
 				"&b铜&r可以直接在熔炉里熔炼,也可以直接在&e部件制造台&r上手搓,是不错的前期工具材料."
 			]
 			id: "1E2099E61A6F1339"
-			rewards: [
-				{
-					id: "25956A1C91AEA4DB"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "25956A1C91AEA4DB"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "可能是你的第一种金属!"
-			tasks: [
-				{
-					id: "23B2FB8B0D2F8C59"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:raw_materials/copper"
-						}
+			tasks: [{
+				id: "23B2FB8B0D2F8C59"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/copper"
 					}
-					title: "粗铜"
-					type: "item"
 				}
-			]
+				title: "粗铜"
+				type: "item"
+			}]
 			title: "橙红色的光泽"
 			x: -1.0d
 			y: -2.0d
@@ -132,28 +116,24 @@
 				"机械动力的故事⑨此开始(ᗜˬᗜ)"
 			]
 			id: "1592681A54FC5717"
-			rewards: [
-				{
-					id: "659E9CD7D0704F8F"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "659E9CD7D0704F8F"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "安山设备的基础之一"
-			tasks: [
-				{
-					id: "36D709D5E822F5B1"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:raw_materials/zinc"
-						}
+			tasks: [{
+				id: "36D709D5E822F5B1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/zinc"
 					}
-					title: "粗锌"
-					type: "item"
 				}
-			]
+				title: "粗锌"
+				type: "item"
+			}]
 			title: "老朋友"
 			x: -4.5d
 			y: 0.0d
@@ -165,13 +145,11 @@
 			]
 			icon: "minecraft:andesite"
 			id: "5D305A93B3676FEE"
-			rewards: [
-				{
-					id: "6D42FA319D122496"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "6D42FA319D122496"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "专门加了个群系给你挖,应该不会缺吧"
 			tasks: [
 				{
@@ -213,20 +191,18 @@
 				}
 			]
 			subtitle: "获得安山合金!"
-			tasks: [
-				{
-					id: "3603027C61393227"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/andesite_alloy"
-						}
+			tasks: [{
+				id: "3603027C61393227"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/andesite_alloy"
 					}
-					title: "安山合金"
-					type: "item"
 				}
-			]
+				title: "安山合金"
+				type: "item"
+			}]
 			title: "坚如磐石"
 			x: -7.0d
 			y: 0.0d
@@ -238,21 +214,17 @@
 				"配方正确,原料正确,产物正确,UI错误"
 			]
 			id: "41D7E109B48C4231"
-			rewards: [
-				{
-					id: "420F0411C57AFB72"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "420F0411C57AFB72"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "制造高炉"
-			tasks: [
-				{
-					id: "65BCC26F3EAFFDBD"
-					item: "minecraft:blast_furnace"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "65BCC26F3EAFFDBD"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
 			title: "更进一步的冶炼"
 			x: -7.0d
 			y: 2.5d
@@ -267,13 +239,11 @@
 			]
 			icon: "create:whisk"
 			id: "13C438F279FA1A53"
-			rewards: [
-				{
-					id: "622F9AB476ECF7DE"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "622F9AB476ECF7DE"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "燃烧温度更高的液体燃料!"
 			tasks: [
 				{
@@ -304,28 +274,24 @@
 				"现在,辊压机,搅拌机,鼓风机等一系列含铁设备正在向你招手!"
 			]
 			id: "57F25D7AD4CC6CBE"
-			rewards: [
-				{
-					id: "01AE9526E71990F1"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "01AE9526E71990F1"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "找出你的粗铁"
-			tasks: [
-				{
-					id: "16F92DE13EB1C548"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:raw_materials/iron"
-						}
+			tasks: [{
+				id: "16F92DE13EB1C548"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/iron"
 					}
-					title: "粗铁"
-					type: "item"
 				}
-			]
+				title: "粗铁"
+				type: "item"
+			}]
 			title: "铁器时代!"
 			x: -7.0d
 			y: 5.0d
@@ -341,28 +307,24 @@
 				"赶紧制造青铜构件来驱动你的蒸汽锅炉吧!"
 			]
 			id: "2192A4D7A83457AD"
-			rewards: [
-				{
-					id: "1150212D393860C2"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "1150212D393860C2"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "制作青铜"
-			tasks: [
-				{
-					id: "4CA53FE370915814"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/bronze"
-						}
+			tasks: [{
+				id: "4CA53FE370915814"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
 					}
-					title: "青铜"
-					type: "item"
 				}
-			]
+				title: "青铜"
+				type: "item"
+			}]
 			title: "我本来不是绿的!"
 			x: 1.0d
 			y: -2.0d
@@ -374,28 +336,24 @@
 				"对于前期的玩家来说,使用&a锡制造的合金&r应该会是一种不错的&b应力设备&r原料"
 			]
 			id: "7B0FF29D1967C917"
-			rewards: [
-				{
-					id: "1E941479DFCF4D7C"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "1E941479DFCF4D7C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "获取锡"
-			tasks: [
-				{
-					id: "6BE83EB12D1BA4EA"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:raw_materials/tin"
-						}
+			tasks: [{
+				id: "6BE83EB12D1BA4EA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/tin"
 					}
-					title: "粗锡"
-					type: "item"
 				}
-			]
+				title: "粗锡"
+				type: "item"
+			}]
 			title: "材质柔软,熔点也很低"
 			x: -0.5d
 			y: -3.5d
@@ -409,28 +367,24 @@
 				"将碳与铁以最合适的比例融合在一起,就是最为坚韧耐用的金属铁!"
 			]
 			id: "43A58164AF59ECA2"
-			rewards: [
-				{
-					id: "16965F1CEF82A892"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "16965F1CEF82A892"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "炼出钢"
-			tasks: [
-				{
-					id: "3432C6434689A2E4"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/steel"
-						}
+			tasks: [{
+				id: "3432C6434689A2E4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
 					}
-					title: "钢"
-					type: "item"
 				}
-			]
+				title: "钢"
+				type: "item"
+			}]
 			title: "铁的加强态!"
 			x: -4.5d
 			y: 2.5d
@@ -446,22 +400,18 @@
 				"希望你在黄铜阶段制造了足够的蓄电池与发电机"
 			]
 			id: "22C43CFB89AA2C2B"
-			rewards: [
-				{
-					id: "201DB6B21C2E36EF"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "201DB6B21C2E36EF"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "获取27块强化高炉砖"
-			tasks: [
-				{
-					count: 27L
-					id: "2F50FA6A94D3F9EC"
-					item: "immersiveengineering:blastbrick_reinforced"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 27L
+				id: "2F50FA6A94D3F9EC"
+				item: "immersiveengineering:blastbrick_reinforced"
+				type: "item"
+			}]
 			title: "噪音警告!"
 			x: -2.0d
 			y: 2.5d
@@ -481,13 +431,11 @@
 			]
 			icon: "mekanism:ingot_osmium"
 			id: "5B75C8DD9D359835"
-			rewards: [
-				{
-					id: "54AE4AF0F8A4619C"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "54AE4AF0F8A4619C"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "想熔炼的话,你得自己去JEI查"
 			tasks: [
 				{
@@ -528,28 +476,24 @@
 				"而它只能在电弧炉中制作"
 			]
 			id: "378E684B19F5736E"
-			rewards: [
-				{
-					id: "545573DBBC9B11E6"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "545573DBBC9B11E6"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "制造不锈钢"
-			tasks: [
-				{
-					id: "0F097E2BCE0B4681"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/stainless_steel"
-						}
+			tasks: [{
+				id: "0F097E2BCE0B4681"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/stainless_steel"
 					}
-					title: "不锈耐酸钢"
-					type: "item"
 				}
-			]
+				title: "不锈耐酸钢"
+				type: "item"
+			}]
 			title: "仓库角落的闪光"
 			x: 0.5d
 			y: 2.5d
@@ -606,12 +550,10 @@
 						"tconstruct:harvest_tier": "minecraft:iron"
 						"tconstruct:mining_speed": 5.0f
 					}
-					tic_upgrades: [
-						{
-							level: 1
-							name: "tinkerleveling:leveling"
-						}
-					]
+					tic_upgrades: [{
+						level: 1
+						name: "tinkerleveling:leveling"
+					}]
 					tic_volatile_data: {
 						abilities: 1
 						upgrades: 3
@@ -649,13 +591,11 @@
 				}
 			]
 			subtitle: "匠魂的铜镐挖掘等级为铁"
-			tasks: [
-				{
-					id: "75271B65753A6297"
-					title: "做把匠魂的铜镐"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "75271B65753A6297"
+				title: "做把匠魂的铜镐"
+				type: "checkmark"
+			}]
 			title: "我要怎么挖锌?"
 			x: -3.0d
 			y: 0.0d

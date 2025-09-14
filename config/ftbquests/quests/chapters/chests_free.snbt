@@ -15,49 +15,41 @@
 				"2E5126D23EA66A9A"
 			]
 			id: "1A821F749A38FA5E"
-			rewards: [
-				{
-					id: "264B93309E1E732F"
-					type: "xp"
-					xp: 100
-				}
-			]
+			rewards: [{
+				id: "264B93309E1E732F"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 2.0d
-			tasks: [
-				{
-					id: "5B2BECA0E5459D40"
-					item: "ae2:controller"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5B2BECA0E5459D40"
+				item: "ae2:controller"
+				type: "item"
+			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			id: "56E28410FE10ADDA"
-			rewards: [
-				{
-					id: "4CEB0DBA737CD8CE"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "4CEB0DBA737CD8CE"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "通量水晶吗"
-			tasks: [
-				{
-					id: "55BBB1ACE69ED49C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:gems/fluix"
-						}
+			tasks: [{
+				id: "55BBB1ACE69ED49C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/fluix"
 					}
-					title: "福鲁伊克斯水晶"
-					type: "item"
 				}
-			]
+				title: "福鲁伊克斯水晶"
+				type: "item"
+			}]
 			x: 0.0d
 			y: -2.0d
 		}
@@ -69,42 +61,34 @@
 				"617F2C5A4BC6FCB0"
 			]
 			id: "2E5126D23EA66A9A"
-			rewards: [
-				{
-					id: "75C0CDC7C54A570B"
-					type: "xp"
-					xp: 100
-				}
-			]
+			rewards: [{
+				id: "75C0CDC7C54A570B"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 2.0d
-			tasks: [
-				{
-					id: "2415D3D846CC2BB4"
-					item: "cmi:smart_mechanism"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2415D3D846CC2BB4"
+				item: "cmi:smart_mechanism"
+				type: "item"
+			}]
 			x: -3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5C4867BCE9C90F18"]
 			id: "34595880AAFDC69C"
-			rewards: [
-				{
-					id: "49FD89A57425BB85"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "355D0530C783AC61"
-					item: "ae2:smooth_sky_stone_block"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "49FD89A57425BB85"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "355D0530C783AC61"
+				item: "ae2:smooth_sky_stone_block"
+				type: "item"
+			}]
 			x: -1.5d
 			y: -2.0d
 		}
@@ -114,20 +98,16 @@
 				"246798E59F8CD31D"
 			]
 			id: "617F2C5A4BC6FCB0"
-			rewards: [
-				{
-					id: "0480468E09B891C9"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "76D05C6FE33AA386"
-					item: "ae2:logic_processor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0480468E09B891C9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "76D05C6FE33AA386"
+				item: "ae2:logic_processor"
+				type: "item"
+			}]
 			x: -8.0d
 			y: -1.5d
 		}
@@ -137,20 +117,16 @@
 				"246798E59F8CD31D"
 			]
 			id: "2E3F3D2D1ED25477"
-			rewards: [
-				{
-					id: "183CD47D57E56B42"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "39CA4EBBE49ADBD7"
-					item: "ae2:calculation_processor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "183CD47D57E56B42"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "39CA4EBBE49ADBD7"
+				item: "ae2:calculation_processor"
+				type: "item"
+			}]
 			x: -7.0d
 			y: -1.5d
 		}
@@ -160,47 +136,39 @@
 				"246798E59F8CD31D"
 			]
 			id: "58F851E8B4299162"
-			rewards: [
-				{
-					id: "4C396EDF230F4655"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "2B2B0A2D5379C55D"
-					item: "ae2:engineering_processor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4C396EDF230F4655"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2B2B0A2D5379C55D"
+				item: "ae2:engineering_processor"
+				type: "item"
+			}]
 			x: -6.0d
 			y: -1.5d
 		}
 		{
 			id: "0852D0FF49459733"
-			rewards: [
-				{
-					id: "6C69F5C76E1A42C7"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "6C69F5C76E1A42C7"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "戴尔芒得(笑)"
-			tasks: [
-				{
-					id: "717DEA57411C0C03"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:gems/diamond"
-						}
+			tasks: [{
+				id: "717DEA57411C0C03"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/diamond"
 					}
-					title: "钻石"
-					type: "item"
 				}
-			]
+				title: "钻石"
+				type: "item"
+			}]
 			title: "钻石"
 			x: -6.0d
 			y: -3.0d
@@ -208,46 +176,38 @@
 		{
 			dependencies: ["5C4867BCE9C90F18"]
 			id: "29AC4601B0D54D6B"
-			rewards: [
-				{
-					id: "0349126A996AFFAF"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "78F0B2DB65681E50"
-					item: "ae2:certus_quartz_crystal"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0349126A996AFFAF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "78F0B2DB65681E50"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
 			x: -7.0d
 			y: -3.0d
 		}
 		{
 			id: "78696E475282669B"
-			rewards: [
-				{
-					id: "01BC59F53E21AF09"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "763067B9241F8485"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/gold"
-						}
+			rewards: [{
+				id: "01BC59F53E21AF09"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "763067B9241F8485"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/gold"
 					}
-					title: "金锭"
-					type: "item"
 				}
-			]
+				title: "金锭"
+				type: "item"
+			}]
 			title: "金锭"
 			x: -8.0d
 			y: -3.0d
@@ -255,27 +215,23 @@
 		{
 			dependencies: ["0629BAB6E8F3A2B5"]
 			id: "246798E59F8CD31D"
-			rewards: [
-				{
-					id: "1342CCEB3C732F4C"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "25D34A3A55DE4C5D"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:silicon"
-						}
+			rewards: [{
+				id: "1342CCEB3C732F4C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "25D34A3A55DE4C5D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:silicon"
 					}
-					title: "硅"
-					type: "item"
 				}
-			]
+				title: "硅"
+				type: "item"
+			}]
 			title: "硅"
 			x: -7.0d
 			y: 0.0d
@@ -283,23 +239,19 @@
 		{
 			icon: "ae2:meteorite_compass"
 			id: "5C4867BCE9C90F18"
-			rewards: [
-				{
-					id: "2E8C43F9A1E1E0B2"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "2E8C43F9A1E1E0B2"
+				type: "xp"
+				xp: 10
+			}]
 			size: 2.0d
-			tasks: [
-				{
-					id: "7117BA56BD405F1A"
-					observe_type: 0
-					timer: 0L
-					to_observe: "ae2:mysterious_cube"
-					type: "observation"
-				}
-			]
+			tasks: [{
+				id: "7117BA56BD405F1A"
+				observe_type: 0
+				timer: 0L
+				to_observe: "ae2:mysterious_cube"
+				type: "observation"
+			}]
 			title: "找个陨石"
 			x: -2.5d
 			y: -4.5d
@@ -308,33 +260,27 @@
 			dependencies: ["51A6B0B7FBDAB5A0"]
 			id: "17790FC91B1E5D4A"
 			subtitle: "非常适合搬运无暇的赛特斯石英母岩"
-			tasks: [
-				{
-					id: "0048299A59FCF0AE"
-					item: "mekanism:cardboard_box"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0048299A59FCF0AE"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
 			x: -4.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["56E28410FE10ADDA"]
 			id: "41F9733A27F6C40F"
-			rewards: [
-				{
-					id: "64F3F47F27D12A89"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "0856BE86F7C3ACC8"
-					item: "ae2:crystal_resonance_generator"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "64F3F47F27D12A89"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0856BE86F7C3ACC8"
+				item: "ae2:crystal_resonance_generator"
+				type: "item"
+			}]
 			x: 2.0d
 			y: -2.0d
 		}
@@ -344,133 +290,109 @@
 				"7141333090D1D27A"
 			]
 			id: "0629BAB6E8F3A2B5"
-			rewards: [
-				{
-					id: "399353FE4F75FCD4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "131CB3CB21A35E15"
-					item: "cmi:silicon_mixure"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "399353FE4F75FCD4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "131CB3CB21A35E15"
+				item: "cmi:silicon_mixure"
+				type: "item"
+			}]
 			x: -9.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2CB364E2B27F413F"]
 			id: "7141333090D1D27A"
-			rewards: [
-				{
-					id: "715793B88A990242"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "715793B88A990242"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "沙子走一遍分液池"
-			tasks: [
-				{
-					id: "2DF32EFE8B634CFB"
-					item: "cmi:pure_sand_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2DF32EFE8B634CFB"
+				item: "cmi:pure_sand_bucket"
+				type: "item"
+			}]
 			x: -10.0d
 			y: -1.0d
 		}
 		{
 			id: "2CB364E2B27F413F"
-			rewards: [
-				{
-					id: "4B3C0067FE643A83"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "0C827B0F9FDF8418"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:sand"
-						}
+			rewards: [{
+				id: "4B3C0067FE643A83"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0C827B0F9FDF8418"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:sand"
 					}
-					title: "沙子"
-					type: "item"
 				}
-			]
+				title: "沙子"
+				type: "item"
+			}]
 			x: -11.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["5D2F9B6EA98A8CC6"]
 			id: "2CE11211D9B78F3B"
-			rewards: [
-				{
-					id: "31F95952EAACC80D"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "64DE125F811BE84C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:coal_coke"
-						}
+			rewards: [{
+				id: "31F95952EAACC80D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "64DE125F811BE84C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:coal_coke"
 					}
-					title: "焦炭"
-					type: "item"
 				}
-			]
+				title: "焦炭"
+				type: "item"
+			}]
 			title: "焦炭"
 			x: -10.0d
 			y: 1.0d
 		}
 		{
 			id: "5D2F9B6EA98A8CC6"
-			rewards: [
-				{
-					id: "7A1EC863F4874D18"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "3E70ABC622CF059B"
-					item: "minecraft:charcoal"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "7A1EC863F4874D18"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3E70ABC622CF059B"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
 			x: -11.5d
 			y: 1.0d
 		}
 		{
 			id: "47B4857754BB9464"
-			rewards: [
-				{
-					id: "13BDF823F81067DE"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "03077AEF5BAED165"
-					item: "cmi:engineering_mechanism_part"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "13BDF823F81067DE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "03077AEF5BAED165"
+				item: "cmi:engineering_mechanism_part"
+				type: "item"
+			}]
 			x: -4.5d
 			y: -1.5d
 		}

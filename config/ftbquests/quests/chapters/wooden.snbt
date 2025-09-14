@@ -5,16 +5,14 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:wooden_mechanism"
 	id: "2CDF2947F7A9E98F"
-	images: [
-		{
-			height: 25.0d
-			image: "cmi:textures/images/background/wooden.png"
-			rotation: 0.0d
-			width: 50.0d
-			x: -2.0d
-			y: -2.0d
-		}
-	]
+	images: [{
+		height: 25.0d
+		image: "cmi:textures/images/background/wooden.png"
+		rotation: 0.0d
+		width: 50.0d
+		x: -2.0d
+		y: -2.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -22,28 +20,24 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "01AE65C1634E3194"
-			rewards: [
-				{
-					id: "5E45C53173C11845"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "5E45C53173C11845"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "6C62EA861E609548"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:logs"
-						}
+			tasks: [{
+				id: "6C62EA861E609548"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
 					}
-					title: "原木"
-					type: "item"
 				}
-			]
+				title: "原木"
+				type: "item"
+			}]
 			title: "原木"
 			x: -13.5d
 			y: 0.0d
@@ -53,28 +47,24 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6887A37B72AA97FA"
-			rewards: [
-				{
-					id: "2ECEC43F6CF02584"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "2ECEC43F6CF02584"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "1316954E83A06660"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:planks"
-						}
+			tasks: [{
+				id: "1316954E83A06660"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
 					}
-					title: "木板"
-					type: "item"
 				}
-			]
+				title: "木板"
+				type: "item"
+			}]
 			x: -9.0d
 			y: 2.0d
 		}
@@ -84,13 +74,11 @@
 			hide_dependent_lines: true
 			id: "07E74FB0730F6F2A"
 			size: 1.0d
-			tasks: [
-				{
-					id: "75FA176DB4C6E19E"
-					title: "辊压"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "75FA176DB4C6E19E"
+				title: "辊压"
+				type: "checkmark"
+			}]
 			title: "辊压"
 			x: -1.5d
 			y: 5.0d
@@ -100,28 +88,24 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "558AB1EEAEE4FF10"
-			rewards: [
-				{
-					id: "6E918F2937771DD9"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "6E918F2937771DD9"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "1F2BEF434633AB22"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:rods/wooden"
-						}
+			tasks: [{
+				id: "1F2BEF434633AB22"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/wooden"
 					}
-					title: "木棍"
-					type: "item"
 				}
-			]
+				title: "木棍"
+				type: "item"
+			}]
 			x: 1.5d
 			y: 2.5d
 		}
@@ -131,13 +115,11 @@
 			hide_dependent_lines: true
 			id: "77DE8AABD50A1BA5"
 			size: 1.0d
-			tasks: [
-				{
-					id: "060FA62D17060F9B"
-					title: "切割"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "060FA62D17060F9B"
+				title: "切割"
+				type: "checkmark"
+			}]
 			title: "切割"
 			x: 5.0d
 			y: 4.0d
@@ -147,21 +129,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "4DDD4AE7B3C5B57A"
-			rewards: [
-				{
-					id: "4464672D2FCFD538"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "4464672D2FCFD538"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "68EEF073ECE5A02E"
-					item: "cmi:basic_mechanism_part"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "68EEF073ECE5A02E"
+				item: "cmi:basic_mechanism_part"
+				type: "item"
+			}]
 			x: 7.5d
 			y: 5.0d
 		}
@@ -170,21 +148,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1ADECAB6440F54A3"
-			rewards: [
-				{
-					id: "456D888F0B1ADC60"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "456D888F0B1ADC60"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "7553903DD79BD984"
-					item: "cmi:wooden_mechanism"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7553903DD79BD984"
+				item: "cmi:wooden_mechanism"
+				type: "item"
+			}]
 			x: 11.0d
 			y: 2.0d
 		}
