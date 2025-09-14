@@ -1,7 +1,7 @@
 BlockEvents.rightClicked((event) => {
-	let { level, player: { mainHandItem }, block, item } = event
+	let { level, player, block, item } = event
 
-	const PICKAXE = mainHandItem.hasTag("minecraft:pickaxes")
+	const PICKAXE = player.mainHandItem.hasTag("minecraft:pickaxes")
 	const ORE_NODE = block.hasTag("deepdrilling:ore_nodes")
 
 	if (PICKAXE && ORE_NODE) {
