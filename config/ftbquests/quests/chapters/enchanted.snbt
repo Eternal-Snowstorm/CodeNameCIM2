@@ -5,14 +5,16 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:enchanted_mechanism"
 	id: "3FAF5D1654572EA4"
-	images: [{
-		height: 27.72d
-		image: "cmi:textures/images/background/enchanted.png"
-		rotation: 0.0d
-		width: 62.94d
-		x: -7.5d
-		y: -0.5d
-	}]
+	images: [
+		{
+			height: 27.72d
+			image: "cmi:textures/images/background/enchanted.png"
+			rotation: 0.0d
+			width: 62.94d
+			x: -7.5d
+			y: -0.5d
+		}
+	]
 	order_index: 16
 	quest_links: [ ]
 	quests: [
@@ -20,17 +22,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6E7A08C1A597A773"
-			rewards: [{
-				id: "3C2D1F21CC9D8163"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "75B7CADD6ABA3EFE"
-				item: "minecraft:lapis_lazuli"
-				type: "item"
-			}]
-			title: "Lapis Lazuli"
+			rewards: [
+				{
+					id: "3C2D1F21CC9D8163"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "75B7CADD6ABA3EFE"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			title: "青金石"
 			x: -27.071428571428577d
 			y: 1.7142857142857153d
 		}
@@ -39,11 +45,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3264DFDEFE1F1405"
-			tasks: [{
-				id: "6F61DF5D691A2F58"
-				title: "Compat"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6F61DF5D691A2F58"
+					title: "兼容"
+					type: "checkmark"
+				}
+			]
 			x: -15.92857142857143d
 			y: 5.285714285714285d
 		}
@@ -52,17 +60,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "42B54B555EC4FA88"
-			rewards: [{
-				id: "036F87733236FA69"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "6236B62A0EFE3E57"
-				item: "minecraft:lapis_block"
-				type: "item"
-			}]
-			title: "Lapis Block"
+			rewards: [
+				{
+					id: "036F87733236FA69"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "6236B62A0EFE3E57"
+					item: "minecraft:lapis_block"
+					type: "item"
+				}
+			]
+			title: "青金石块"
 			x: -12.642857142857139d
 			y: 3.7142857142857153d
 		}
@@ -71,11 +83,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3D8801175C63488E"
-			tasks: [{
-				id: "03C950BA77A0B5B8"
-				title: "Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "03C950BA77A0B5B8"
+					title: "压缩"
+					type: "checkmark"
+				}
+			]
 			x: -9.642857142857139d
 			y: 1.1428571428571388d
 		}
@@ -84,11 +98,13 @@
 			hide_dependent_lines: true
 			icon: "minecraft:experience_bottle"
 			id: "70EB67AB022CA57C"
-			tasks: [{
-				id: "10DD9AC2DA826C48"
-				title: "Fiuld Experience"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "10DD9AC2DA826C48"
+					title: "液体经验"
+					type: "checkmark"
+				}
+			]
 			x: -4.0d
 			y: -4.0d
 		}
@@ -100,11 +116,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "29CA4C846BC2E898"
-			tasks: [{
-				id: "7BB49506F3AED350"
-				title: "Fill"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7BB49506F3AED350"
+					title: "填充"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: 5.0d
 		}
@@ -113,17 +131,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "7DB92A8D55E693A0"
-			rewards: [{
-				id: "1AA13079AA80C5A4"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "104F2E209276D149"
-				item: "cmi:magical_mechanism_part"
-				type: "item"
-			}]
-			title: "Mechanism Part"
+			rewards: [
+				{
+					id: "1AA13079AA80C5A4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "104F2E209276D149"
+					item: "cmi:magical_mechanism_part"
+					type: "item"
+				}
+			]
+			title: "机械部件"
 			x: 6.071428571428569d
 			y: -1.0d
 		}
@@ -132,17 +154,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "031DF244D321E171"
-			rewards: [{
-				id: "4EFF53FDE854A02E"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "68D187DE26E53A29"
-				item: "cmi:enchanted_mechanism"
-				type: "item"
-			}]
-			title: "Enchanted Mechanism"
+			rewards: [
+				{
+					id: "4EFF53FDE854A02E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "68D187DE26E53A29"
+					item: "cmi:enchanted_mechanism"
+					type: "item"
+				}
+			]
+			title: "附魔机械"
 			x: 13.92857142857143d
 			y: 2.4285714285714164d
 		}

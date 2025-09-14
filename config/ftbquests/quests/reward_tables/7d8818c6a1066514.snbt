@@ -3,8 +3,12 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ item: "constructionwand:core_angel" }
-		{ item: "constructionwand:core_destruction" }
+		{
+			item: "constructionwand:core_angel"
+		}
+		{
+			item: "constructionwand:core_destruction"
+		}
 	]
 	title: "手杖核心"
 }

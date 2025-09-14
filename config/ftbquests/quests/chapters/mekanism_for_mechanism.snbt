@@ -13,23 +13,27 @@
 			dependency_requirement: "all_started"
 			disable_toast: true
 			id: "4CBCC7040D3804C0"
-			rewards: [{
-				id: "37C23FBC2D5EE8CE"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "075A331EF41827FC"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/polyolefin"
-					}
+			rewards: [
+				{
+					id: "37C23FBC2D5EE8CE"
+					type: "xp"
+					xp: 10
 				}
-				title: "聚烯烃板"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "075A331EF41827FC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/polyolefin"
+						}
+					}
+					title: "聚烯烃板"
+					type: "item"
+				}
+			]
 			title: "聚烯烃板"
 			x: -4.5d
 			y: -3.0d
@@ -39,23 +43,27 @@
 			dependency_requirement: "all_started"
 			disable_toast: true
 			id: "4BB2CC63842D1305"
-			rewards: [{
-				id: "5EC741E1CC3BA1C4"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "335A2EF66CF49DDF"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/stainless_steel"
-					}
+			rewards: [
+				{
+					id: "5EC741E1CC3BA1C4"
+					type: "xp"
+					xp: 10
 				}
-				title: "不锈耐酸钢锭"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "335A2EF66CF49DDF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/stainless_steel"
+						}
+					}
+					title: "不锈耐酸钢锭"
+					type: "item"
+				}
+			]
 			x: -5.5d
 			y: -3.0d
 		}
@@ -67,66 +75,78 @@
 				"18B7DC9FD757ACC8"
 			]
 			id: "712549587C271819"
-			rewards: [{
-				id: "49712EAA0D394A65"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "49712EAA0D394A65"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "看着真漂亮"
-			tasks: [{
-				count: 8L
-				id: "621CBE6FDC3ADECC"
-				item: "mekanism:steel_casing"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 8L
+					id: "621CBE6FDC3ADECC"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+			]
 			x: -5.0d
 			y: -1.5d
 		}
 		{
 			dependency_requirement: "all_started"
 			id: "530CAF716E0D1B73"
-			rewards: [{
-				id: "26F0B842F565AB03"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2C23A7CA9A3BBB2A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/vanadium"
-					}
+			rewards: [
+				{
+					id: "26F0B842F565AB03"
+					type: "xp"
+					xp: 10
 				}
-				title: "钒锭"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "2C23A7CA9A3BBB2A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/vanadium"
+						}
+					}
+					title: "钒锭"
+					type: "item"
+				}
+			]
 			x: -6.5d
 			y: -2.0d
 		}
 		{
 			dependency_requirement: "all_started"
 			id: "18B7DC9FD757ACC8"
-			rewards: [{
-				id: "5E39044CD8037DEC"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3D0A921262B4800F"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/osmium"
-					}
+			rewards: [
+				{
+					id: "5E39044CD8037DEC"
+					type: "xp"
+					xp: 10
 				}
-				title: "锇板"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "3D0A921262B4800F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/osmium"
+						}
+					}
+					title: "锇板"
+					type: "item"
+				}
+			]
 			x: -6.5d
 			y: -1.0d
 		}
@@ -136,151 +156,183 @@
 				"6A8497E9E3A78756"
 			]
 			id: "0B7A8B7B0797880A"
-			rewards: [{
-				id: "699ABE1FD7E27525"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "699ABE1FD7E27525"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "25CA8024B2817765"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:circuits/basic"
+			tasks: [
+				{
+					id: "25CA8024B2817765"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:circuits/basic"
+						}
 					}
+					title: "基础控制电路"
+					type: "item"
 				}
-				title: "基础控制电路"
-				type: "item"
-			}]
+			]
 			x: -1.5d
 			y: -0.75d
 		}
 		{
 			dependencies: ["712549587C271819"]
 			id: "6A8497E9E3A78756"
-			rewards: [{
-				id: "791705DBC32011C4"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1F3E5448BEFFC86A"
-				item: "mekanism:metallurgic_infuser"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "791705DBC32011C4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "1F3E5448BEFFC86A"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+			]
 			x: -3.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["0B7A8B7B0797880A"]
 			id: "160C0C93DC5C5248"
-			rewards: [{
-				id: "0171DAC8D9482C2E"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "6A7C3242FF6C99E4"
-				item: "mekanism:enrichment_chamber"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0171DAC8D9482C2E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "6A7C3242FF6C99E4"
+					item: "mekanism:enrichment_chamber"
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["0B7A8B7B0797880A"]
 			id: "17B63817F949B065"
-			rewards: [{
-				id: "101F258DBC4F4F75"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "373D300F80CA1A00"
-				item: "mekanism:energized_smelter"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "101F258DBC4F4F75"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "373D300F80CA1A00"
+					item: "mekanism:energized_smelter"
+					type: "item"
+				}
+			]
 			x: 0.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["0B7A8B7B0797880A"]
 			id: "205833817952613E"
-			rewards: [{
-				id: "7C773EEAB51D00C0"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1A315955305C260B"
-				item: "mekanism:chemical_injection_chamber"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7C773EEAB51D00C0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "1A315955305C260B"
+					item: "mekanism:chemical_injection_chamber"
+					type: "item"
+				}
+			]
 			x: -3.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["0B7A8B7B0797880A"]
 			id: "7895FFF740721D02"
-			rewards: [{
-				id: "1A564E8025129152"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4A3C7AFEE35803B9"
-				item: "mekanism:purification_chamber"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1A564E8025129152"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4A3C7AFEE35803B9"
+					item: "mekanism:purification_chamber"
+					type: "item"
+				}
+			]
 			x: -2.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["6A8497E9E3A78756"]
 			id: "4398FB5BD99FACF6"
-			rewards: [{
-				id: "26B2228764883B91"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "67C1B699F56F0983"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "mekanism:alloys/infused"
-					}
+			rewards: [
+				{
+					id: "26B2228764883B91"
+					type: "xp"
+					xp: 10
 				}
-				title: "灌注合金"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "67C1B699F56F0983"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "mekanism:alloys/infused"
+						}
+					}
+					title: "灌注合金"
+					type: "item"
+				}
+			]
 			x: -3.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["4398FB5BD99FACF6"]
 			id: "502B04D4FA13B245"
-			rewards: [{
-				id: "54F84C25E764DCB2"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "73B444AF62C8561A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "mekanism:alloys/reinforced"
-					}
+			rewards: [
+				{
+					id: "54F84C25E764DCB2"
+					type: "xp"
+					xp: 10
 				}
-				title: "强化合金"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "73B444AF62C8561A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "mekanism:alloys/reinforced"
+						}
+					}
+					title: "强化合金"
+					type: "item"
+				}
+			]
 			x: -2.0d
 			y: -3.5d
 		}
@@ -290,62 +342,74 @@
 				"7A3D5E599315ACBC"
 			]
 			id: "181CA1A087F04FEF"
-			rewards: [{
-				id: "4F5E24E4BD2B66B8"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "0A6AFF710FCFFA78"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "mekanism:alloys/atomic"
-					}
+			rewards: [
+				{
+					id: "4F5E24E4BD2B66B8"
+					type: "xp"
+					xp: 10
 				}
-				title: "原子合金"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "0A6AFF710FCFFA78"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "mekanism:alloys/atomic"
+						}
+					}
+					title: "原子合金"
+					type: "item"
+				}
+			]
 			x: -1.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["6A8497E9E3A78756"]
 			id: "7A3D5E599315ACBC"
-			rewards: [{
-				id: "05FA596BB52C21D2"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "73555465BBB8EF45"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/refined_obsidian"
-					}
+			rewards: [
+				{
+					id: "05FA596BB52C21D2"
+					type: "xp"
+					xp: 10
 				}
-				title: "强化黑曜石粉"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "73555465BBB8EF45"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/refined_obsidian"
+						}
+					}
+					title: "强化黑曜石粉"
+					type: "item"
+				}
+			]
 			x: -1.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["0B7A8B7B0797880A"]
 			id: "6C5D7F848697DF94"
-			rewards: [{
-				id: "770B3F9B5AC4AF89"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "6FA5119463A6AD91"
-				item: "mekanism:crusher"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "770B3F9B5AC4AF89"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "6FA5119463A6AD91"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 1.0d
 		}

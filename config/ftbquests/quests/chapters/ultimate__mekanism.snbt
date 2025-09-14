@@ -5,31 +5,37 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:ultimate_mekanism_mechanism"
 	id: "62B48DABB3228679"
-	images: [{
-		height: 32.7d
-		image: "cmi:textures/images/background/ultimate_mek.png"
-		rotation: 0.0d
-		width: 52.74d
-		x: -4.5d
-		y: 2.0d
-	}]
+	images: [
+		{
+			height: 32.7d
+			image: "cmi:textures/images/background/ultimate_mek.png"
+			rotation: 0.0d
+			width: 52.74d
+			x: -4.5d
+			y: 2.0d
+		}
+	]
 	order_index: 26
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "7FBFD5F36879A0F9"
-			rewards: [{
-				id: "160617C998751B07"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "6D367BD558650347"
-				item: "cmi:stainless_steel_ingot"
-				type: "item"
-			}]
-			title: "Stainless Steel Ingot"
+			rewards: [
+				{
+					id: "160617C998751B07"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "6D367BD558650347"
+					item: "cmi:stainless_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "不锈钢锭"
 			x: -18.552142857142854d
 			y: 6.214285714285715d
 		}
@@ -37,23 +43,27 @@
 			dependencies: ["7FBFD5F36879A0F9"]
 			hide_dependent_lines: true
 			id: "076152A7B17A706C"
-			tasks: [{
-				id: "3B2BD227AF47816B"
-				title: "Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3B2BD227AF47816B"
+					title: "压制"
+					type: "checkmark"
+				}
+			]
 			x: -12.694999999999993d
 			y: 8.642857142857146d
 		}
 		{
 			hide_dependent_lines: true
 			id: "14DCF13D6CDAAD15"
-			tasks: [{
-				id: "26CA71EBB76F38D1"
-				item: "mekanism:alloy_atomic"
-				type: "item"
-			}]
-			title: "Alloy Atomic"
+			tasks: [
+				{
+					id: "26CA71EBB76F38D1"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+			]
+			title: "合金原子"
 			x: -6.896428571428558d
 			y: -7.071428571428569d
 		}
@@ -61,17 +71,21 @@
 			dependencies: ["076152A7B17A706C"]
 			hide_dependent_lines: true
 			id: "65955558889F1C8C"
-			rewards: [{
-				id: "3E3E8F23C19521DE"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "53D9EBF83F7DD369"
-				item: "cmi:stainless_steel_plate"
-				type: "item"
-			}]
-			title: "Stainless Steel Plate"
+			rewards: [
+				{
+					id: "3E3E8F23C19521DE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "53D9EBF83F7DD369"
+					item: "cmi:stainless_steel_plate"
+					type: "item"
+				}
+			]
+			title: "不锈钢板"
 			x: -9.955000000000013d
 			y: 6.0714285714285765d
 		}
@@ -79,17 +93,21 @@
 			dependencies: ["14DCF13D6CDAAD15"]
 			hide_dependent_lines: true
 			id: "2F8E7034C8A9FB53"
-			rewards: [{
-				id: "7F06E089DEE000B2"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "108843DFB475CE43"
-				item: "mekanism:elite_control_circuit"
-				type: "item"
-			}]
-			title: "Elite Control Circut"
+			rewards: [
+				{
+					id: "7F06E089DEE000B2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "108843DFB475CE43"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
+			]
+			title: "精英控制电路"
 			x: -10.656428571428549d
 			y: -4.214285714285715d
 		}
@@ -97,17 +115,21 @@
 			dependencies: ["2F8E7034C8A9FB53"]
 			hide_dependent_lines: true
 			id: "682E3D56582C9EA8"
-			rewards: [{
-				id: "3C419CD149EA8348"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "55AF20949A258EBE"
-				item: "ad_astra:calorite_plate"
-				type: "item"
-			}]
-			title: "Calorite Plate"
+			rewards: [
+				{
+					id: "3C419CD149EA8348"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "55AF20949A258EBE"
+					item: "ad_astra:calorite_plate"
+					type: "item"
+				}
+			]
+			title: "耐热金属板"
 			x: -4.572142857142836d
 			y: -1.7857142857142847d
 		}
@@ -115,11 +137,13 @@
 			dependencies: ["682E3D56582C9EA8"]
 			hide_dependent_lines: true
 			id: "54DAC919BA5D8C9B"
-			tasks: [{
-				id: "437BD64F92EA6F1D"
-				title: "Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "437BD64F92EA6F1D"
+					title: "压制"
+					type: "checkmark"
+				}
+			]
 			x: -6.702142857142832d
 			y: 0.2142857142857153d
 		}
@@ -130,17 +154,21 @@
 			]
 			hide_dependent_lines: true
 			id: "32D74FBDBA5148A6"
-			rewards: [{
-				id: "6125E61D67ECC3CB"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "75F8F735B3CFB959"
-				item: "mekanism:ultimate_control_circuit"
-				type: "item"
-			}]
-			title: "Ultimate Control Circut"
+			rewards: [
+				{
+					id: "6125E61D67ECC3CB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "75F8F735B3CFB959"
+					item: "mekanism:ultimate_control_circuit"
+					type: "item"
+				}
+			]
+			title: "终极控制电路"
 			x: -7.189285714285688d
 			y: 3.5d
 		}
@@ -148,17 +176,21 @@
 			dependencies: ["32D74FBDBA5148A6"]
 			hide_dependent_lines: true
 			id: "12ABB63AC34961F5"
-			rewards: [{
-				id: "54A07F8B2AF28980"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "0296F44DF48D02B7"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
-			title: "Diamond"
+			rewards: [
+				{
+					id: "54A07F8B2AF28980"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "0296F44DF48D02B7"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "钻石"
 			x: 4.180714285714316d
 			y: 8.071428571428577d
 		}
@@ -166,17 +198,21 @@
 			dependencies: ["12ABB63AC34961F5"]
 			hide_dependent_lines: true
 			id: "277A138B10D8731D"
-			rewards: [{
-				id: "6C1B71613EADB2C6"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "586C70E4CE24CA1A"
-				item: "cmi:mekanism_mechanism_part"
-				type: "item"
-			}]
-			title: "Mechanism Part"
+			rewards: [
+				{
+					id: "6C1B71613EADB2C6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "586C70E4CE24CA1A"
+					item: "cmi:mekanism_mechanism_part"
+					type: "item"
+				}
+			]
+			title: "机械部件"
 			x: 7.479285714285751d
 			y: 5.071428571428584d
 		}
@@ -184,17 +220,21 @@
 			dependencies: ["277A138B10D8731D"]
 			hide_dependent_lines: true
 			id: "0D59C6FFFD6480CF"
-			rewards: [{
-				id: "0D7267EE38BF1141"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "34FFA6F25FCE2C04"
-				item: "cmi:ultimate_mekanism_mechanism"
-				type: "item"
-			}]
-			title: "Ultimate Mekanism  Mechanism"
+			rewards: [
+				{
+					id: "0D7267EE38BF1141"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "34FFA6F25FCE2C04"
+					item: "cmi:ultimate_mekanism_mechanism"
+					type: "item"
+				}
+			]
+			title: "终极通用机械"
 			x: 11.441428571428574d
 			y: 6.928571428571431d
 		}

@@ -5,14 +5,16 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:computing_mechanism"
 	id: "359DF666EE0F0BEB"
-	images: [{
-		height: 34.8d
-		image: "cmi:textures/images/background/computing.png"
-		rotation: 0.0d
-		width: 70.06d
-		x: -1.5d
-		y: -0.5d
-	}]
+	images: [
+		{
+			height: 34.8d
+			image: "cmi:textures/images/background/computing.png"
+			rotation: 0.0d
+			width: 70.06d
+			x: -1.5d
+			y: -0.5d
+		}
+	]
 	order_index: 18
 	quest_links: [ ]
 	quests: [
@@ -21,11 +23,13 @@
 			hide_dependent_lines: true
 			icon: "minecraft:water_bucket"
 			id: "0AB470E3A20E01DF"
-			tasks: [{
-				id: "5AA6A2BBE7879251"
-				title: "Water"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5AA6A2BBE7879251"
+					title: "水"
+					type: "checkmark"
+				}
+			]
 			x: -12.833333333333329d
 			y: -8.826190476190483d
 		}
@@ -34,11 +38,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "75A405BDA18F991B"
-			tasks: [{
-				id: "767FFC76DAD04DFA"
-				title: "Electrolytic Separator"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "767FFC76DAD04DFA"
+					title: "电解分离器"
+					type: "checkmark"
+				}
+			]
 			x: -12.76190476190476d
 			y: -6.3976190476190595d
 		}
@@ -51,22 +57,26 @@
 				id: "mekanism:creative_chemical_tank"
 				tag: {
 					mekData: {
-						GasTanks: [{
-							Tank: 0b
-							stored: {
-								amount: 9223372036854775807L
-								gasName: "mekanism:hydrogen"
+						GasTanks: [
+							{
+								Tank: 0b
+								stored: {
+									amount: 9223372036854775807L
+									gasName: "mekanism:hydrogen"
+								}
 							}
-						}]
+						]
 					}
 				}
 			}
 			id: "4B1F3B0B95BDE516"
-			tasks: [{
-				id: "2930318885CAB669"
-				title: "Hydrogen"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2930318885CAB669"
+					title: "氢气"
+					type: "checkmark"
+				}
+			]
 			x: -11.11904761904762d
 			y: -5.7833333333333385d
 		}
@@ -74,17 +84,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "10C2067884319D2A"
-			rewards: [{
-				id: "577A14941B6A4717"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5458E3871B12F9B5"
-				item: "ae2:silicon"
-				type: "item"
-			}]
-			title: "Silicon"
+			rewards: [
+				{
+					id: "577A14941B6A4717"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "5458E3871B12F9B5"
+					item: "ae2:silicon"
+					type: "item"
+				}
+			]
+			title: "硅"
 			x: -5.547619047619051d
 			y: -7.915476190476205d
 		}
@@ -94,11 +108,13 @@
 			hide_dependent_lines: true
 			icon: "mekanism:chlorine_bucket"
 			id: "2A5E311AA2C6E26F"
-			tasks: [{
-				id: "5280413E9C5312D6"
-				title: "Chlorine"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5280413E9C5312D6"
+					title: "氯气"
+					type: "checkmark"
+				}
+			]
 			x: -2.690476190476204d
 			y: -8.054761904761918d
 		}
@@ -110,11 +126,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "41E29862F69FA483"
-			tasks: [{
-				id: "43FBEA744CC20533"
-				title: "Vacuum Chamb"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "43FBEA744CC20533"
+					title: "真空室"
+					type: "checkmark"
+				}
+			]
 			x: -3.6190476190476346d
 			y: -7.261904761904766d
 		}
@@ -124,11 +142,13 @@
 			hide_dependent_lines: true
 			icon: "cmi:tetrachlorosilane_bucket"
 			id: "73FF8AFE61EF7AFC"
-			tasks: [{
-				id: "41D3A3F159FEAE69"
-				title: "Tetrachlorosilane"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "41D3A3F159FEAE69"
+					title: "四氯化硅"
+					type: "checkmark"
+				}
+			]
 			x: -5.476190476190482d
 			y: -6.5047619047619065d
 		}
@@ -141,22 +161,26 @@
 				id: "mekanism:creative_chemical_tank"
 				tag: {
 					mekData: {
-						GasTanks: [{
-							Tank: 0b
-							stored: {
-								amount: 9223372036854775807L
-								gasName: "mekanism:chlorine"
+						GasTanks: [
+							{
+								Tank: 0b
+								stored: {
+									amount: 9223372036854775807L
+									gasName: "mekanism:chlorine"
+								}
 							}
-						}]
+						]
 					}
 				}
 			}
 			id: "5C541C73D1FBFB8B"
-			tasks: [{
-				id: "3A2B3CB3F5A5258E"
-				title: "Gas Chlorine"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3A2B3CB3F5A5258E"
+					title: "氯气"
+					type: "checkmark"
+				}
+			]
 			x: -2.5714285714285836d
 			y: -10.580952380952382d
 		}
@@ -165,11 +189,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "60922F13CE0156BE"
-			tasks: [{
-				id: "00A57C987BEBA47E"
-				title: "Rotary Condensentrator"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "00A57C987BEBA47E"
+					title: "旋转冷凝器"
+					type: "checkmark"
+				}
+			]
 			x: -1.7619047619047734d
 			y: -8.997619047619047d
 		}
@@ -178,11 +204,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "546730BE3E146C8F"
-			tasks: [{
-				id: "278334677D59B662"
-				title: "Electrolytic Separator"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "278334677D59B662"
+					title: "电解分离器"
+					type: "checkmark"
+				}
+			]
 			x: -4.333333333333329d
 			y: -10.597619047619041d
 		}
@@ -192,11 +220,13 @@
 			hide_dependent_lines: true
 			icon: "mekanism:brine_bucket"
 			id: "5FCEA9E62DBCE01C"
-			tasks: [{
-				id: "5FD40ECFB1036956"
-				title: "Brine"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5FD40ECFB1036956"
+					title: "盐水"
+					type: "checkmark"
+				}
+			]
 			x: -5.476190476190482d
 			y: -9.81190476190475d
 		}
@@ -205,24 +235,28 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "21E1950FBFF57199"
-			rewards: [{
-				id: "2CA1230C76B15F03"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "03D0B45FFA0512A1"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/salt"
-					}
+			rewards: [
+				{
+					id: "2CA1230C76B15F03"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:dusts/salt"
-				type: "item"
-			}]
-			title: "Salt"
+			]
+			tasks: [
+				{
+					id: "03D0B45FFA0512A1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/salt"
+						}
+					}
+					title: "任意 #forge:dusts/salt"
+					type: "item"
+				}
+			]
+			title: "盐"
 			x: -8.547619047619051d
 			y: -10.554761904761897d
 		}
@@ -231,11 +265,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "75A0199420354F74"
-			tasks: [{
-				id: "35833E7206BBD68A"
-				title: "Mix"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "35833E7206BBD68A"
+					title: "混合"
+					type: "checkmark"
+				}
+			]
 			x: -6.547619047619037d
 			y: -10.011904761904752d
 		}
@@ -244,11 +280,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1A8071F9D05BD9AB"
-			tasks: [{
-				id: "1B530FDA3C93842A"
-				title: "Mix Water"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "1B530FDA3C93842A"
+					title: "混合水"
+					type: "checkmark"
+				}
+			]
 			x: -10.11904761904762d
 			y: -12.11190476190476d
 		}
@@ -256,24 +294,28 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "56B14A99C5324B29"
-			rewards: [{
-				id: "40953A0C8C1720C2"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "533FE3EF9B132474"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:glass"
-					}
+			rewards: [
+				{
+					id: "40953A0C8C1720C2"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:glass"
-				type: "item"
-			}]
-			title: "Glass"
+			]
+			tasks: [
+				{
+					id: "533FE3EF9B132474"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:glass"
+						}
+					}
+					title: "任意 #forge:glass"
+					type: "item"
+				}
+			]
+			title: "玻璃"
 			x: -9.61904761904762d
 			y: -6.747619047619054d
 		}
@@ -286,11 +328,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "496A8EADEC2A0270"
-			tasks: [{
-				id: "5D0846AE3BA12B1E"
-				title: "Pressurized Reaction Chamber"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5D0846AE3BA12B1E"
+					title: "加压反应室"
+					type: "checkmark"
+				}
+			]
 			x: -9.476190476190482d
 			y: -5.097619047619062d
 		}
@@ -299,17 +343,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "75D8B6FE5ED1E4DD"
-			rewards: [{
-				id: "07FB988A44C52056"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4D1DB9B670D941B1"
-				item: "cmi:single_crystal_silicon"
-				type: "item"
-			}]
-			title: "Single Crystal Silicon"
+			rewards: [
+				{
+					id: "07FB988A44C52056"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4D1DB9B670D941B1"
+					item: "cmi:single_crystal_silicon"
+					type: "item"
+				}
+			]
+			title: "单晶硅"
 			x: -5.547619047619051d
 			y: -3.1261904761904944d
 		}
@@ -318,11 +366,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "02E7945B5FA117DA"
-			tasks: [{
-				id: "1765765E280E6666"
-				title: "Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "1765765E280E6666"
+					title: "压缩"
+					type: "checkmark"
+				}
+			]
 			x: -0.6190476190476062d
 			y: -0.9761904761904958d
 		}
@@ -330,24 +380,28 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6EB5E351E198EA6C"
-			rewards: [{
-				id: "706D7DBF3AA65B74"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7CB6F1A015F7B569"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/silver"
-					}
+			rewards: [
+				{
+					id: "706D7DBF3AA65B74"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:ingots/silver"
-				type: "item"
-			}]
-			title: "Silver Ingot"
+			]
+			tasks: [
+				{
+					id: "7CB6F1A015F7B569"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/silver"
+						}
+					}
+					title: "任意 #forge:ingots/silver"
+					type: "item"
+				}
+			]
+			title: "银锭"
 			x: -17.76190476190476d
 			y: -1.9761904761904887d
 		}
@@ -356,11 +410,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3BCAE92A85378AEC"
-			tasks: [{
-				id: "771D385D6C063E52"
-				title: "Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "771D385D6C063E52"
+					title: "压缩"
+					type: "checkmark"
+				}
+			]
 			x: -16.19047619047619d
 			y: -1.4047619047619193d
 		}
@@ -369,24 +425,28 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1E2372C7989848CD"
-			rewards: [{
-				id: "665113B5C428F604"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7D99C11BF67C82CD"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/silver"
-					}
+			rewards: [
+				{
+					id: "665113B5C428F604"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:plates/silver"
-				type: "item"
-			}]
-			title: "Silver Plate"
+			]
+			tasks: [
+				{
+					id: "7D99C11BF67C82CD"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/silver"
+						}
+					}
+					title: "任意 #forge:plates/silver"
+					type: "item"
+				}
+			]
+			title: "银板"
 			x: -9.904761904761898d
 			y: 1.2095238095238017d
 		}
@@ -394,16 +454,20 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "722A0EA19903506A"
-			rewards: [{
-				id: "0826FA9F1923849D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "02752F6D272770EB"
-				item: "ae2:logic_processor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0826FA9F1923849D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "02752F6D272770EB"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+			]
 			x: -21.476190476190474d
 			y: 2.2095238095237946d
 		}
@@ -411,11 +475,13 @@
 			dependencies: ["722A0EA19903506A"]
 			hide_dependent_lines: true
 			id: "4C6B3731A726C4F5"
-			tasks: [{
-				id: "456F6E9F0548025D"
-				title: "Infuse"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "456F6E9F0548025D"
+					title: "注入"
+					type: "checkmark"
+				}
+			]
 			x: -19.476190476190474d
 			y: 2.895238095238085d
 		}
@@ -424,16 +490,20 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "04B2632FDDCFABC8"
-			rewards: [{
-				id: "1B7BA47E6EEBD18A"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "0F071C7EBF89C2B6"
-				item: "cmi:infusion_treated_processor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1B7BA47E6EEBD18A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "0F071C7EBF89C2B6"
+					item: "cmi:infusion_treated_processor"
+					type: "item"
+				}
+			]
 			x: -15.476190476190467d
 			y: 5.609523809523786d
 		}
@@ -441,16 +511,20 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "13737516E62B3F57"
-			rewards: [{
-				id: "7D2CEEFBA4D8D66B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "452AC9F79ED84B07"
-				item: "ae2:calculation_processor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7D2CEEFBA4D8D66B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "452AC9F79ED84B07"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+			]
 			x: -22.904761904761905d
 			y: 3.4380952380952223d
 		}
@@ -458,11 +532,13 @@
 			dependencies: ["13737516E62B3F57"]
 			hide_dependent_lines: true
 			id: "74C290EA5E34C780"
-			tasks: [{
-				id: "27DDF5BDCBD37750"
-				title: "Enrichment"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "27DDF5BDCBD37750"
+					title: "富集"
+					type: "checkmark"
+				}
+			]
 			x: -20.904761904761898d
 			y: 4.009523809523799d
 		}
@@ -471,16 +547,20 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "333CEDBFFA9A51A0"
-			rewards: [{
-				id: "2124E33F8E1A8033"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "11EF016DE495AFA4"
-				item: "cmi:enrichment_treated_processor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2124E33F8E1A8033"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "11EF016DE495AFA4"
+					item: "cmi:enrichment_treated_processor"
+					type: "item"
+				}
+			]
 			x: -15.476190476190467d
 			y: 6.909523809523797d
 		}
@@ -488,16 +568,20 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "7E8998606FF5D250"
-			rewards: [{
-				id: "691F1D25F11B1C2F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "61E11AE853AA2E19"
-				item: "ae2:engineering_processor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "691F1D25F11B1C2F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "61E11AE853AA2E19"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
 			x: -24.33333333333333d
 			y: 4.738095238095234d
 		}
@@ -505,11 +589,13 @@
 			dependencies: ["7E8998606FF5D250"]
 			hide_dependent_lines: true
 			id: "7E0F086F986F7B03"
-			tasks: [{
-				id: "4F8528A864C36D2B"
-				title: "Sawimll"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4F8528A864C36D2B"
+					title: "锯切"
+					type: "checkmark"
+				}
+			]
 			x: -22.190476190476183d
 			y: 5.352380952380948d
 		}
@@ -518,16 +604,20 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "103EBCBBE2F2DDAD"
-			rewards: [{
-				id: "769DD85CDEF1CD49"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "0B4DB449FDAA466E"
-				item: "cmi:ground_treated_processor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "769DD85CDEF1CD49"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "0B4DB449FDAA466E"
+					item: "cmi:ground_treated_processor"
+					type: "item"
+				}
+			]
 			x: -15.476190476190467d
 			y: 7.938095238095222d
 		}
@@ -540,11 +630,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5CA61F74A8331383"
-			tasks: [{
-				id: "62195B94231F4364"
-				title: "Mechanical Craft"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "62195B94231F4364"
+					title: "机械合成"
+					type: "checkmark"
+				}
+			]
 			x: -15.476190476190467d
 			y: 9.509523809523799d
 		}
@@ -556,16 +648,20 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "4A9CFF02F0C03700"
-			rewards: [{
-				id: "469C575C68238987"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5FD15E176C2BABF3"
-				item: "cmi:mekanism_processor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "469C575C68238987"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "5FD15E176C2BABF3"
+					item: "cmi:mekanism_processor"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 4.5d
 		}
@@ -574,24 +670,28 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "68CB60FD04333AF8"
-			rewards: [{
-				id: "7246BCE28F52E63F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2A3D92E52CAC9C07"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "ae2:glass_cable"
-					}
+			rewards: [
+				{
+					id: "7246BCE28F52E63F"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #ae2:glass_cable"
-				type: "item"
-			}]
-			title: "Glass Cable"
+			]
+			tasks: [
+				{
+					id: "2A3D92E52CAC9C07"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "ae2:glass_cable"
+						}
+					}
+					title: "任意 #ae2:glass_cable"
+					type: "item"
+				}
+			]
+			title: "玻璃线缆"
 			x: 2.095238095238116d
 			y: 2.838095238095235d
 		}
@@ -600,24 +700,28 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "236522EF07FA5155"
-			rewards: [{
-				id: "3832B0C3476A2D05"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "56837F7FE0B492ED"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "ae2:illuminated_panel"
-					}
+			rewards: [
+				{
+					id: "3832B0C3476A2D05"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #ae2:illuminated_panel"
-				type: "item"
-			}]
-			title: "Monitor"
+			]
+			tasks: [
+				{
+					id: "56837F7FE0B492ED"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "ae2:illuminated_panel"
+						}
+					}
+					title: "任意 #ae2:illuminated_panel"
+					type: "item"
+				}
+			]
+			title: "显示器"
 			x: 8.238095238095255d
 			y: 5.266666666666644d
 		}
@@ -629,17 +733,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "4C0F9088217DB615"
-			rewards: [{
-				id: "141FF54093161333"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "31DD9FDE82ABFFEE"
-				item: "cmi:computer_component"
-				type: "item"
-			}]
-			title: "Computer Component"
+			rewards: [
+				{
+					id: "141FF54093161333"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "31DD9FDE82ABFFEE"
+					item: "cmi:computer_component"
+					type: "item"
+				}
+			]
+			title: "计算机组件"
 			x: 15.309523809523839d
 			y: 0.6595238095237903d
 		}
@@ -648,17 +756,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "38EE11F1B6C58F5C"
-			rewards: [{
-				id: "0575B91F7643F2B1"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "52D73FF541C910D5"
-				item: "cmi:mekanism_mechanism_part"
-				type: "item"
-			}]
-			title: "Mechanism Part"
+			rewards: [
+				{
+					id: "0575B91F7643F2B1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "52D73FF541C910D5"
+					item: "cmi:mekanism_mechanism_part"
+					type: "item"
+				}
+			]
+			title: "机械部件"
 			x: 17.952380952380977d
 			y: -1.8761904761904873d
 		}
@@ -667,12 +779,14 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "29BDB3FD04B04386"
-			tasks: [{
-				id: "52B1A4F46E1B9824"
-				item: "cmi:computing_mechanism"
-				type: "item"
-			}]
-			title: "Computing Mechanism"
+			tasks: [
+				{
+					id: "52B1A4F46E1B9824"
+					item: "cmi:computing_mechanism"
+					type: "item"
+				}
+			]
+			title: "计算机械"
 			x: 22.95238095238099d
 			y: 0.12380952380951271d
 		}

@@ -5,14 +5,16 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:cobalt_mechanism"
 	id: "1299FC04262673E3"
-	images: [{
-		height: 47.36d
-		image: "cmi:textures/images/background/cobalt.png"
-		rotation: 0.0d
-		width: 92.4d
-		x: 0.0d
-		y: -2.0d
-	}]
+	images: [
+		{
+			height: 47.36d
+			image: "cmi:textures/images/background/cobalt.png"
+			rotation: 0.0d
+			width: 92.4d
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	order_index: 7
 	quest_links: [ ]
 	quests: [
@@ -20,18 +22,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5AD7B465C92D054A"
-			rewards: [{
-				id: "545065C582496279"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "545065C582496279"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "62B88C64C0DF520A"
-				item: "tconstruct:raw_cobalt"
-				type: "item"
-			}]
-			title: "Raw Cobalt"
+			tasks: [
+				{
+					id: "62B88C64C0DF520A"
+					item: "tconstruct:raw_cobalt"
+					type: "item"
+				}
+			]
+			title: "粗钴矿"
 			x: -20.285714285714292d
 			y: -0.2142857142857082d
 		}
@@ -40,18 +46,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "46B5032D30E390C8"
-			rewards: [{
-				id: "6C20925C1FB129DF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6C20925C1FB129DF"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "272E418742E15D72"
-				item: "tconstruct:cobalt_ingot"
-				type: "item"
-			}]
-			title: "Cobalt Ingot"
+			tasks: [
+				{
+					id: "272E418742E15D72"
+					item: "tconstruct:cobalt_ingot"
+					type: "item"
+				}
+			]
+			title: "钴锭"
 			x: -11.428571428571445d
 			y: 3.5d
 		}
@@ -61,11 +71,13 @@
 			hide_dependent_lines: true
 			id: "34C0D2040A59E347"
 			size: 1.5d
-			tasks: [{
-				id: "37838203995484AD"
-				title: "Smelting"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "37838203995484AD"
+					title: "熔炼"
+					type: "checkmark"
+				}
+			]
 			x: -15.857142857142875d
 			y: 1.6428571428571388d
 		}
@@ -75,11 +87,13 @@
 			hide_dependent_lines: true
 			id: "17F8A693FD6200E4"
 			size: 1.5d
-			tasks: [{
-				id: "39B6DE9F84277DF5"
-				title: "Roll"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "39B6DE9F84277DF5"
+					title: "轧制"
+					type: "checkmark"
+				}
+			]
 			x: -1.142857142857153d
 			y: -6.357142857142861d
 		}
@@ -88,25 +102,29 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "649B015C33D4ADDC"
-			rewards: [{
-				id: "11CA2FC141FA9EBA"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "5DB74DFC0BDD4CB4"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:rods/cobalt"
-					}
+			rewards: [
+				{
+					id: "11CA2FC141FA9EBA"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:rods/cobalt"
-				type: "item"
-			}]
-			title: "Cobalt Rod"
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5DB74DFC0BDD4CB4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:rods/cobalt"
+						}
+					}
+					title: "任意 #forge:rods/cobalt"
+					type: "item"
+				}
+			]
+			title: "钴杆"
 			x: -1.4285714285714448d
 			y: -3.642857142857146d
 		}
@@ -116,11 +134,13 @@
 			hide_dependent_lines: true
 			id: "3B643257E2D339C9"
 			size: 1.5d
-			tasks: [{
-				id: "6E19F1EAB8448AE2"
-				title: "Coiling"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6E19F1EAB8448AE2"
+					title: "绕制"
+					type: "checkmark"
+				}
+			]
 			x: -4.285714285714306d
 			y: -1.642857142857146d
 		}
@@ -132,25 +152,29 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "0593923A4CD302A5"
-			rewards: [{
-				id: "3DAA50BF3C76DBD2"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "628C9A8C695393DE"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "vintageimprovements:springs/cobalt"
-					}
+			rewards: [
+				{
+					id: "3DAA50BF3C76DBD2"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #vintageimprovements:springs/cobalt"
-				type: "item"
-			}]
-			title: "Cobalt Spring"
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "628C9A8C695393DE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "vintageimprovements:springs/cobalt"
+						}
+					}
+					title: "任意 #vintageimprovements:springs/cobalt"
+					type: "item"
+				}
+			]
+			title: "钴弹簧"
 			x: 1.1428571428571246d
 			y: 4.357142857142854d
 		}
@@ -160,11 +184,13 @@
 			hide_dependent_lines: true
 			id: "2E8A24D60ADCFB27"
 			size: 1.5d
-			tasks: [{
-				id: "4B4C5FA6DC61569C"
-				title: "Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4B4C5FA6DC61569C"
+					title: "压制"
+					type: "checkmark"
+				}
+			]
 			x: -7.428571428571445d
 			y: 5.214285714285708d
 		}
@@ -173,25 +199,29 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3693762697D9281D"
-			rewards: [{
-				id: "5C8B2A97076D6EC2"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "5025C8DF88835268"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/cobalt"
-					}
+			rewards: [
+				{
+					id: "5C8B2A97076D6EC2"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:plates/cobalt"
-				type: "item"
-			}]
-			title: "Cobalt Plate"
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5025C8DF88835268"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/cobalt"
+						}
+					}
+					title: "任意 #forge:plates/cobalt"
+					type: "item"
+				}
+			]
+			title: "钴板"
 			x: -1.8571428571428754d
 			y: 7.5d
 		}
@@ -199,18 +229,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "2E5C7860E38FB347"
-			rewards: [{
-				id: "3561B32F9B0EF4C5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3561B32F9B0EF4C5"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "0555A1DA308A7127"
-				item: "minecraft:gold_ingot"
-				type: "item"
-			}]
-			title: "Gold Ingot"
+			tasks: [
+				{
+					id: "0555A1DA308A7127"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			title: "金锭"
 			x: 13.428571428571402d
 			y: -10.214285714285715d
 		}
@@ -220,11 +254,13 @@
 			hide_dependent_lines: true
 			id: "45394B6473F0D6D9"
 			size: 1.5d
-			tasks: [{
-				id: "5D2F37EA2E42EC77"
-				title: "Roll"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5D2F37EA2E42EC77"
+					title: "轧制"
+					type: "checkmark"
+				}
+			]
 			x: 11.285714285714263d
 			y: -8.5d
 		}
@@ -233,25 +269,29 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1081B156749D66C8"
-			rewards: [{
-				id: "3B645F0DE158070B"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "785DA2E1233B59E4"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:rods/gold"
-					}
+			rewards: [
+				{
+					id: "3B645F0DE158070B"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:rods/gold"
-				type: "item"
-			}]
-			title: "Gold Rod"
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "785DA2E1233B59E4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:rods/gold"
+						}
+					}
+					title: "任意 #forge:rods/gold"
+					type: "item"
+				}
+			]
+			title: "金杆"
 			x: 9.428571428571402d
 			y: -7.357142857142854d
 		}
@@ -260,18 +300,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "305DEBA8D4384D35"
-			rewards: [{
-				id: "49397213376F43BB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "49397213376F43BB"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "4853FE47FB9DF9CE"
-				item: "minecraft:redstone"
-				type: "item"
-			}]
-			title: "Redstone Dust"
+			tasks: [
+				{
+					id: "4853FE47FB9DF9CE"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			title: "红石粉"
 			x: 7.857142857142833d
 			y: -6.642857142857146d
 		}
@@ -281,11 +325,13 @@
 			hide_dependent_lines: true
 			id: "0052FBF9EC086D8E"
 			size: 1.5d
-			tasks: [{
-				id: "7024E00F9D391CEC"
-				title: "Lase"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7024E00F9D391CEC"
+					title: "激光蚀刻"
+					type: "checkmark"
+				}
+			]
 			x: 13.285714285714278d
 			y: -5.357142857142861d
 		}
@@ -297,18 +343,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "75CE97D84422D377"
-			rewards: [{
-				id: "07133D66263189D2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "07133D66263189D2"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "7096CC4DAD3392DC"
-				item: "thermal:rf_coil"
-				type: "item"
-			}]
-			title: "RF Coil"
+			tasks: [
+				{
+					id: "7096CC4DAD3392DC"
+					item: "thermal:rf_coil"
+					type: "item"
+				}
+			]
+			title: "射频线圈"
 			x: 10.5d
 			y: 4.5d
 		}
@@ -318,12 +368,14 @@
 			hide_dependent_lines: true
 			id: "722D55A9AF2DC06F"
 			size: 1.5d
-			tasks: [{
-				id: "022288F4C5FEC6BD"
-				item: "cmi:engineering_mechanism_part"
-				type: "item"
-			}]
-			title: "Mechanism Part"
+			tasks: [
+				{
+					id: "022288F4C5FEC6BD"
+					item: "cmi:engineering_mechanism_part"
+					type: "item"
+				}
+			]
+			title: "机械部件"
 			x: 22.857142857142847d
 			y: 0.6428571428571388d
 		}
@@ -333,12 +385,14 @@
 			hide_dependent_lines: true
 			id: "07E36873AC7E489E"
 			size: 1.5d
-			tasks: [{
-				id: "20AA80A3F21E7547"
-				item: "cmi:cobalt_mechanism"
-				type: "item"
-			}]
-			title: "Cobalt Mechanism"
+			tasks: [
+				{
+					id: "20AA80A3F21E7547"
+					item: "cmi:cobalt_mechanism"
+					type: "item"
+				}
+			]
+			title: "钴机械"
 			x: 25.428571428571416d
 			y: -1.500000000000007d
 		}

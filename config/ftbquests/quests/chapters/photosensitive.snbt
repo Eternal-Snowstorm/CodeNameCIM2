@@ -5,14 +5,16 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:photosensitive_mechanism"
 	id: "50E2DE0506D40242"
-	images: [{
-		height: 21.12d
-		image: "cmi:textures/images/background/photosensitive.png"
-		rotation: 0.0d
-		width: 35.0d
-		x: -3.0d
-		y: -1.0d
-	}]
+	images: [
+		{
+			height: 21.12d
+			image: "cmi:textures/images/background/photosensitive.png"
+			rotation: 0.0d
+			width: 35.0d
+			x: -3.0d
+			y: -1.0d
+		}
+	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
@@ -20,25 +22,29 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "2D7C497B6DE71A6A"
-			rewards: [{
-				id: "07EB6F1A4758009A"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "636621F052B386A8"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:gems/amethyst"
-					}
+			rewards: [
+				{
+					id: "07EB6F1A4758009A"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:gems/amethyst"
-				type: "item"
-			}]
-			title: "Amethyst Shard"
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "636621F052B386A8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/amethyst"
+						}
+					}
+					title: "任意 #forge:gems/amethyst"
+					type: "item"
+				}
+			]
+			title: "紫水晶碎片"
 			x: -5.0d
 			y: -2.0d
 		}
@@ -50,25 +56,29 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "10640F4F5D4493FC"
-			rewards: [{
-				id: "37516020B61DCC41"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "2EEF4DA32A872EA9"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:gems/charged_amethyst"
-					}
+			rewards: [
+				{
+					id: "37516020B61DCC41"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:gems/charged_amethyst"
-				type: "item"
-			}]
-			title: "Charged Amethyst Shard"
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2EEF4DA32A872EA9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/charged_amethyst"
+						}
+					}
+					title: "任意 #forge:gems/charged_amethyst"
+					type: "item"
+				}
+			]
+			title: "充能紫水晶碎片"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -78,11 +88,13 @@
 			hide_dependent_lines: true
 			id: "7689533A731CF99F"
 			size: 1.5d
-			tasks: [{
-				id: "7A8F8A781AC7DDC7"
-				title: "Charge"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7A8F8A781AC7DDC7"
+					title: "充能"
+					type: "checkmark"
+				}
+			]
 			x: -3.5d
 			y: -1.0d
 		}
@@ -92,11 +104,13 @@
 			hide_dependent_lines: true
 			id: "4686C401FC04122D"
 			size: 1.5d
-			tasks: [{
-				id: "7EEC2D37BD9DAE3B"
-				title: "Crush"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7EEC2D37BD9DAE3B"
+					title: "粉碎"
+					type: "checkmark"
+				}
+			]
 			x: -6.5d
 			y: -3.0d
 		}
@@ -105,17 +119,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5653F0D4FEAB12B3"
-			rewards: [{
-				id: "318A7D91E05ADC51"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "318A7D91E05ADC51"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "590A2D2F4D628C8D"
-				item: "thermal_extra:amethyst_dust"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "590A2D2F4D628C8D"
+					item: "thermal_extra:amethyst_dust"
+					type: "item"
+				}
+			]
 			x: -10.0d
 			y: 2.0d
 		}
@@ -125,11 +143,13 @@
 			hide_dependent_lines: true
 			id: "04D8E7B236306B91"
 			size: 1.5d
-			tasks: [{
-				id: "34AA6D1E681D3032"
-				title: "4次注水"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "34AA6D1E681D3032"
+					title: "4次注水"
+					type: "checkmark"
+				}
+			]
 			x: -10.0d
 			y: -1.5d
 		}
@@ -139,17 +159,21 @@
 			hide_dependent_lines: true
 			icon: "minecraft:amethyst_cluster"
 			id: "6BEF3191E17065E0"
-			rewards: [{
-				id: "3DB25C07FE73DE50"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3DB25C07FE73DE50"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "2FAF41CDEDE88853"
-				title: "紫水晶簇"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2FAF41CDEDE88853"
+					title: "紫水晶簇"
+					type: "checkmark"
+				}
+			]
 			x: -8.0d
 			y: -3.0d
 		}
@@ -161,25 +185,29 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5B09C912CC93559E"
-			rewards: [{
-				id: "55D8C52FB9FC9BC4"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "51511C5F60FDAC35"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/glowstone"
-					}
+			rewards: [
+				{
+					id: "55D8C52FB9FC9BC4"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:dusts/glowstone"
-				type: "item"
-			}]
-			title: "Glowstone Dust"
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "51511C5F60FDAC35"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/glowstone"
+						}
+					}
+					title: "任意 #forge:dusts/glowstone"
+					type: "item"
+				}
+			]
+			title: "荧石粉"
 			x: 1.7857142857142918d
 			y: 1.5714285714285694d
 		}
@@ -189,11 +217,13 @@
 			hide_dependent_lines: true
 			id: "239C8B297E65182D"
 			size: 1.5d
-			tasks: [{
-				id: "08F5C25F2E184F5A"
-				title: "Lase"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "08F5C25F2E184F5A"
+					title: "激光"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: -1.0d
 		}
@@ -202,18 +232,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "18DDE97D66E9E7BE"
-			rewards: [{
-				id: "723C90C3C2066D0F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "723C90C3C2066D0F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "086E12431BE12161"
-				item: "cmi:mechanical_mechanism_part"
-				type: "item"
-			}]
-			title: "Mechanism Part"
+			tasks: [
+				{
+					id: "086E12431BE12161"
+					item: "cmi:mechanical_mechanism_part"
+					type: "item"
+				}
+			]
+			title: "机械部件"
 			x: 4.785714285714292d
 			y: 3.0714285714285694d
 		}
@@ -221,18 +255,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "03A565CE4505C8FA"
-			rewards: [{
-				id: "5447AFCF7ECD433B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5447AFCF7ECD433B"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "6C51BA7F36339E19"
-				item: "minecraft:quartz_block"
-				type: "item"
-			}]
-			title: "Quartz Block"
+			tasks: [
+				{
+					id: "6C51BA7F36339E19"
+					item: "minecraft:quartz_block"
+					type: "item"
+				}
+			]
+			title: "石英块"
 			x: -7.5d
 			y: 1.5d
 		}
@@ -241,18 +279,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "4655CCB0F95FFEC9"
-			rewards: [{
-				id: "2232772B659C90DA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2232772B659C90DA"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "33EBA3FD8F768C39"
-				item: "minecraft:quartz_slab"
-				type: "item"
-			}]
-			title: "Quartz Slab"
+			tasks: [
+				{
+					id: "33EBA3FD8F768C39"
+					item: "minecraft:quartz_slab"
+					type: "item"
+				}
+			]
+			title: "石英台阶"
 			x: -5.5d
 			y: 2.5d
 		}
@@ -261,18 +303,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "462C2FFF623F9260"
-			rewards: [{
-				id: "3C350348BFF0DF38"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3C350348BFF0DF38"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "5BBD071841538D06"
-				item: "cmi:photosensitive_mechanism"
-				type: "item"
-			}]
-			title: "Photosensitive Mechanism"
+			tasks: [
+				{
+					id: "5BBD071841538D06"
+					item: "cmi:photosensitive_mechanism"
+					type: "item"
+				}
+			]
+			title: "感光机械装置"
 			x: 6.285714285714292d
 			y: 1.8571428571428612d
 		}

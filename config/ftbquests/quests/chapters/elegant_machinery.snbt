@@ -11,17 +11,21 @@
 		{
 			dependencies: ["45F498C68434124E"]
 			id: "6D5F23703924F441"
-			rewards: [{
-				id: "3A2ECBE62E257C00"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3A2ECBE62E257C00"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "使用砂带磨床解放双手"
-			tasks: [{
-				id: "14A8E8D716B27C1E"
-				item: "create:polished_rose_quartz"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "14A8E8D716B27C1E"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+			]
 			x: -1.0d
 			y: 0.5d
 		}
@@ -32,16 +36,20 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "45F498C68434124E"
-			rewards: [{
-				id: "0583F98BC9B171A6"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "69247D4E34DA37C8"
-				item: "create:rose_quartz"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0583F98BC9B171A6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "69247D4E34DA37C8"
+					item: "create:rose_quartz"
+					type: "item"
+				}
+			]
 			x: -2.0d
 			y: 0.5d
 		}
@@ -50,11 +58,13 @@
 			icon: "minecraft:quartz"
 			id: "65B6BBF87D6B8B97"
 			optional: true
-			rewards: [{
-				id: "0B271C5991C79F75"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0B271C5991C79F75"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "diamond"
 			subtitle: "谁能告诉我为什么红石和石英会变成玫瑰石英"
 			tasks: [
@@ -90,11 +100,13 @@
 		{
 			icon: "ae2:charged_certus_quartz_crystal"
 			id: "0D5DA19848AB76B1"
-			rewards: [{
-				id: "63BF490022739190"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "63BF490022739190"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "可以用充能器凑合"
 			tasks: [
 				{
@@ -115,53 +127,65 @@
 		{
 			id: "4E2E1B22C1CEA8C1"
 			optional: true
-			rewards: [{
-				id: "5F378EDC335B3ACF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5F378EDC335B3ACF"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "diamond"
 			subtitle: "你得加大力度"
-			tasks: [{
-				id: "4458BE0DB3D3EF08"
-				item: "ae2:charger"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4458BE0DB3D3EF08"
+					item: "ae2:charger"
+					type: "item"
+				}
+			]
 			x: -4.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6D5F23703924F441"]
 			id: "53D955D9B5CCC02E"
-			rewards: [{
-				id: "684F13F5691A2D88"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "684F13F5691A2D88"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "把磨制玫瑰石英和铁板啪的一下塞在一起"
-			tasks: [{
-				id: "2B2B700D71715DFA"
-				item: "create:electron_tube"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2B2B700D71715DFA"
+					item: "create:electron_tube"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["53D955D9B5CCC02E"]
 			id: "3B48B2AE5448F88E"
-			rewards: [{
-				id: "37DF4191E7850464"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "37DF4191E7850464"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 2.0d
-			tasks: [{
-				id: "4E023564982FF530"
-				item: "create:mechanical_crafter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4E023564982FF530"
+					item: "create:mechanical_crafter"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 2.0d
 		}
@@ -171,11 +195,13 @@
 			shape: "gear"
 			size: 1.5d
 			subtitle: "矿石处理砖家"
-			tasks: [{
-				id: "4988E4DCE32C9967"
-				item: "create:crushing_wheel"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4988E4DCE32C9967"
+					item: "create:crushing_wheel"
+					type: "item"
+				}
+			]
 			x: 3.75d
 			y: 3.75d
 		}
@@ -183,11 +209,13 @@
 			dependencies: ["3B48B2AE5448F88E"]
 			icon: "createaddition:tesla_coil"
 			id: "3CD5A0E2A1AB76EB"
-			rewards: [{
-				id: "5C15BFBA2551112C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5C15BFBA2551112C"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "比充能器好用一百亿倍"
 			tasks: [
 				{
@@ -208,17 +236,21 @@
 			dependencies: ["3B48B2AE5448F88E"]
 			description: ["本整合包稍微加强了这个发电机, 提升了自身的存储量, 并且发电量由480提升到了640"]
 			id: "11BE58B08BECE324"
-			rewards: [{
-				id: "1B10920C33D31991"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1B10920C33D31991"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "将应力转化为交流电的装置"
-			tasks: [{
-				id: "492AA967BDED2317"
-				item: "createaddition:alternator"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "492AA967BDED2317"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+			]
 			title: "交流发电机-超级原始的发电机"
 			x: -3.0d
 			y: 3.5d
@@ -226,28 +258,34 @@
 		{
 			dependencies: ["3B48B2AE5448F88E"]
 			id: "2A6DB9B66CA8C18C"
-			rewards: [{
-				id: "7940F5430F3F0AE2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7940F5430F3F0AE2"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "你最好别钻进去"
-			tasks: [{
-				id: "246DFA8C4195A3F8"
-				item: "vintageimprovements:lathe"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "246DFA8C4195A3F8"
+					item: "vintageimprovements:lathe"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["3B48B2AE5448F88E"]
 			id: "6035A421AC0BD9F7"
-			rewards: [{
-				id: "44065DF92D29F64C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "44065DF92D29F64C"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "速度非常慢, 但是可以帮你省坚固板"
 			tasks: [
 				{
@@ -275,18 +313,22 @@
 			dependencies: ["3B48B2AE5448F88E"]
 			id: "074C0C3D2E998B03"
 			optional: true
-			rewards: [{
-				id: "0749057EE16FBD5E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0749057EE16FBD5E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "diamond"
 			subtitle: "接上电可以当创造马达用"
-			tasks: [{
-				id: "36EE988B61A55ECA"
-				item: "createaddition:electric_motor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "36EE988B61A55ECA"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 2.0d
 		}
@@ -297,18 +339,22 @@
 			]
 			id: "6D5697CB6C74F830"
 			optional: true
-			rewards: [{
-				id: "2B8530283050863A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2B8530283050863A"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "diamond"
 			subtitle: "如果你是个基建狂魔"
-			tasks: [{
-				id: "228AFD5BD452CD9B"
-				item: "create:wand_of_symmetry"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "228AFD5BD452CD9B"
+					item: "create:wand_of_symmetry"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: 2.0d
 		}
@@ -318,24 +364,28 @@
 				"3CD5A0E2A1AB76EB"
 			]
 			id: "2B27BAFDEB5B567C"
-			rewards: [{
-				id: "7AC23A05BB750E9F"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "&b拿到手上你的头发会飘起来吗"
-			tasks: [{
-				id: "59578E87A3CB1807"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:gems/charged_amethyst"
-					}
+			rewards: [
+				{
+					id: "7AC23A05BB750E9F"
+					type: "xp"
+					xp: 10
 				}
-				title: "充能紫水晶碎片"
-				type: "item"
-			}]
+			]
+			subtitle: "&b拿到手上你的头发会飘起来吗"
+			tasks: [
+				{
+					id: "59578E87A3CB1807"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/charged_amethyst"
+						}
+					}
+					title: "充能紫水晶碎片"
+					type: "item"
+				}
+			]
 			title: "充能紫水晶碎片"
 			x: -1.5d
 			y: 5.0d
@@ -343,24 +393,28 @@
 		{
 			dependencies: ["52A96C4DF54ECD90"]
 			id: "1B9A79A7D2845A3B"
-			rewards: [{
-				id: "78339E84B4550B03"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "可以往紫水晶芽上注水"
-			tasks: [{
-				id: "17E4F41FB0697C6A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:gems/amethyst"
-					}
+			rewards: [
+				{
+					id: "78339E84B4550B03"
+					type: "xp"
+					xp: 10
 				}
-				title: "紫水晶碎片"
-				type: "item"
-			}]
+			]
+			subtitle: "可以往紫水晶芽上注水"
+			tasks: [
+				{
+					id: "17E4F41FB0697C6A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/amethyst"
+						}
+					}
+					title: "紫水晶碎片"
+					type: "item"
+				}
+			]
 			title: "紫水晶碎片"
 			x: -3.0d
 			y: 5.0d
@@ -372,19 +426,23 @@
 			]
 			icon: "minecraft:amethyst_cluster"
 			id: "52A96C4DF54ECD90"
-			rewards: [{
-				id: "2488C8092A881DAD"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				icon: "minecraft:amethyst_block"
-				id: "52562113C4221DDA"
-				observe_type: 0
-				timer: 0L
-				to_observe: "minecraft:amethyst_cluster"
-				type: "observation"
-			}]
+			rewards: [
+				{
+					id: "2488C8092A881DAD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					icon: "minecraft:amethyst_block"
+					id: "52562113C4221DDA"
+					observe_type: 0
+					timer: 0L
+					to_observe: "minecraft:amethyst_cluster"
+					type: "observation"
+				}
+			]
 			title: "找个晶洞"
 			x: -4.5d
 			y: 5.0d
@@ -393,58 +451,70 @@
 			dependencies: ["461F149DB4B79436"]
 			icon: "minecraft:quartz"
 			id: "01A4036255B88FDD"
-			rewards: [{
-				id: "30D056A6A29E7154"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "一种廉价到不能再廉价的宝石"
-			tasks: [{
-				id: "443B840E74F16FEC"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:gems/quartz"
-					}
+			rewards: [
+				{
+					id: "30D056A6A29E7154"
+					type: "xp"
+					xp: 10
 				}
-				title: "石英"
-				type: "item"
-			}]
+			]
+			subtitle: "一种廉价到不能再廉价的宝石"
+			tasks: [
+				{
+					id: "443B840E74F16FEC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/quartz"
+						}
+					}
+					title: "石英"
+					type: "item"
+				}
+			]
 			title: "石英"
 			x: -3.0d
 			y: 6.5d
 		}
 		{
 			id: "461F149DB4B79436"
-			rewards: [{
-				id: "0382F3456581AA0D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0382F3456581AA0D"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "别放到耳边, 会哇哇哇的叫唤"
-			tasks: [{
-				id: "2AAA2CE342011B6C"
-				item: "minecraft:soul_sand"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2AAA2CE342011B6C"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+			]
 			x: -4.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["47574C3F29B28A25"]
 			id: "616E469CD48DE166"
-			rewards: [{
-				id: "1CB137BB5161FA0F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1CB137BB5161FA0F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "看起来和望远镜很像不是吗"
-			tasks: [{
-				id: "5D039255085C81C4"
-				item: "vintageimprovements:laser_item"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5D039255085C81C4"
+					item: "vintageimprovements:laser_item"
+					type: "item"
+				}
+			]
 			title: "激光发射器"
 			x: 2.5d
 			y: 6.0d
@@ -452,16 +522,20 @@
 		{
 			dependencies: ["01A4036255B88FDD"]
 			id: "7F819724F9ACC820"
-			rewards: [{
-				id: "33D65CCA6E7D7FD9"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "49F57132FB44B56E"
-				item: "minecraft:quartz_slab"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "33D65CCA6E7D7FD9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "49F57132FB44B56E"
+					item: "minecraft:quartz_slab"
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 6.5d
 		}
@@ -472,42 +546,50 @@
 				"2B27BAFDEB5B567C"
 			]
 			id: "47574C3F29B28A25"
-			rewards: [{
-				id: "5C1301FCED4A7F90"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "5C1301FCED4A7F90"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "可以当夜视仪"
-			tasks: [{
-				id: "6E13312AB1CD6487"
-				item: "cmi:photosensitive_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6E13312AB1CD6487"
+					item: "cmi:photosensitive_mechanism"
+					type: "item"
+				}
+			]
 			x: 1.0d
 			y: 6.0d
 		}
 		{
 			id: "3BC2B2D48B8AED66"
-			rewards: [{
-				id: "061EF4BFB706F4DF"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "涂在墨镜上可以模仿柯南吗?"
-			tasks: [{
-				id: "756D3F4A4DB6BF3B"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/glowstone"
-					}
+			rewards: [
+				{
+					id: "061EF4BFB706F4DF"
+					type: "xp"
+					xp: 10
 				}
-				title: "萤石粉"
-				type: "item"
-			}]
+			]
+			subtitle: "涂在墨镜上可以模仿柯南吗?"
+			tasks: [
+				{
+					id: "756D3F4A4DB6BF3B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/glowstone"
+						}
+					}
+					title: "萤石粉"
+					type: "item"
+				}
+			]
 			title: "萤石粉"
 			x: -0.5d
 			y: 7.5d
@@ -515,62 +597,74 @@
 		{
 			dependencies: ["53D955D9B5CCC02E"]
 			id: "0CB7CA460732E67E"
-			rewards: [{
-				id: "59195FCB39C0215A"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "59195FCB39C0215A"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "安全保障"
-			tasks: [{
-				id: "401ECEF3887585CE"
-				item: "create:precision_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "401ECEF3887585CE"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["616E469CD48DE166"]
 			id: "39B65FFFBE06F481"
-			rewards: [{
-				id: "276C908FE31DD6AB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "276C908FE31DD6AB"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			subtitle: "别被这个照到眼睛了"
-			tasks: [{
-				id: "4DD363014EBBD648"
-				item: "vintageimprovements:laser"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4DD363014EBBD648"
+					item: "vintageimprovements:laser"
+					type: "item"
+				}
+			]
 			x: 3.75d
 			y: 6.0d
 		}
 		{
 			dependencies: ["39B65FFFBE06F481"]
 			id: "74179D016BFA23EB"
-			rewards: [{
-				id: "1E4551BAD5F24BE8"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "紫水晶经高能激光处理后, 可以发光"
-			tasks: [{
-				id: "7A517A71A3823BC1"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/glowstone"
-					}
+			rewards: [
+				{
+					id: "1E4551BAD5F24BE8"
+					type: "xp"
+					xp: 10
 				}
-				title: "萤石粉"
-				type: "item"
-			}]
+			]
+			subtitle: "紫水晶经高能激光处理后, 可以发光"
+			tasks: [
+				{
+					id: "7A517A71A3823BC1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/glowstone"
+						}
+					}
+					title: "萤石粉"
+					type: "item"
+				}
+			]
 			title: "萤石粉"
 			x: 5.0d
 			y: 5.0d
@@ -579,18 +673,20 @@
 			dependencies: ["2B27BAFDEB5B567C"]
 			id: "52C1D90EEF0C79C5"
 			subtitle: "充能紫水晶打磨后有概率获得"
-			tasks: [{
-				id: "2FAD53986BE34317"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/redstone"
+			tasks: [
+				{
+					id: "2FAD53986BE34317"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/redstone"
+						}
 					}
+					title: "红石粉"
+					type: "item"
 				}
-				title: "红石粉"
-				type: "item"
-			}]
+			]
 			title: "红石粉"
 			x: 1.0d
 			y: 4.5d
@@ -598,18 +694,22 @@
 		{
 			dependencies: ["39B65FFFBE06F481"]
 			id: "2FE3E707C0A5D658"
-			rewards: [{
-				id: "5AD879912F7002E4"
-				type: "xp"
-				xp: 50
-			}]
+			rewards: [
+				{
+					id: "5AD879912F7002E4"
+					type: "xp"
+					xp: 50
+				}
+			]
 			shape: "gear"
 			subtitle: "下下章"
-			tasks: [{
-				id: "2790B7C5FA086FAE"
-				item: "thermal:rf_coil"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2790B7C5FA086FAE"
+					item: "thermal:rf_coil"
+					type: "item"
+				}
+			]
 			x: 5.0d
 			y: 6.0d
 		}
@@ -617,11 +717,13 @@
 			dependencies: ["11BE58B08BECE324"]
 			icon: "createaddition:copper_spool"
 			id: "0500572AA2764EDC"
-			rewards: [{
-				id: "36F9A308AF4FE5AB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "36F9A308AF4FE5AB"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [
 				{
 					id: "7F7C935854BAEE23"
@@ -638,7 +740,10 @@
 				{
 					count: 4L
 					id: "383AABDE329FD9EB"
-					item: { Count: 4, id: "createaddition:connector" }
+					item: {
+						Count: 4
+						id: "createaddition:connector"
+					}
 					type: "item"
 				}
 			]
@@ -649,23 +754,27 @@
 		{
 			dependencies: ["228F544F6D51A4B7"]
 			id: "547983BEE84A4B9D"
-			rewards: [{
-				id: "24C7F96601FCC16E"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "040E7B91F1C5CBF8"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/obsidian"
-					}
+			rewards: [
+				{
+					id: "24C7F96601FCC16E"
+					type: "xp"
+					xp: 10
 				}
-				title: "黑曜石粉末"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "040E7B91F1C5CBF8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/obsidian"
+						}
+					}
+					title: "黑曜石粉末"
+					type: "item"
+				}
+			]
 			title: "黑曜石粉末"
 			x: 6.0d
 			y: 2.0d
@@ -673,23 +782,27 @@
 		{
 			dependencies: ["547983BEE84A4B9D"]
 			id: "486C3122D2542380"
-			rewards: [{
-				id: "3F3C5873E43E0555"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "49883B1DC1FE9E68"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/obsidian"
-					}
+			rewards: [
+				{
+					id: "3F3C5873E43E0555"
+					type: "xp"
+					xp: 10
 				}
-				title: "坚固板"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "49883B1DC1FE9E68"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/obsidian"
+						}
+					}
+					title: "坚固板"
+					type: "item"
+				}
+			]
 			title: "坚固板"
 			x: 6.0d
 			y: 3.0d
@@ -697,24 +810,28 @@
 		{
 			dependencies: ["486C3122D2542380"]
 			id: "51A6B0B7FBDAB5A0"
-			rewards: [{
-				id: "677EC585338839A9"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "438E41B1547436D2"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/dense_obsidian"
-					}
+			rewards: [
+				{
+					id: "677EC585338839A9"
+					type: "xp"
+					xp: 10
 				}
-				title: "致密坚固板"
-				type: "item"
-			}]
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "438E41B1547436D2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/dense_obsidian"
+						}
+					}
+					title: "致密坚固板"
+					type: "item"
+				}
+			]
 			title: "致密坚固板"
 			x: 6.0d
 			y: 4.0d
@@ -728,21 +845,28 @@
 				"{image:cmi:textures/images/accumulator_build.png width:185 height:105 align:center}"
 			]
 			id: "74BB217F948AC507"
-			rewards: [{
-				count: 5
-				id: "70F0896237C4F7F0"
-				item: "createaddition:modular_accumulator"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "70F0896237C4F7F0"
+					item: "createaddition:modular_accumulator"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.2d
 			subtitle: "稳定的蓄电池, 不会漏电!"
-			tasks: [{
-				count: 4L
-				id: "0A809A3B8C373077"
-				item: { Count: 4, id: "createaddition:modular_accumulator" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 4L
+					id: "0A809A3B8C373077"
+					item: {
+						Count: 4
+						id: "createaddition:modular_accumulator"
+					}
+					type: "item"
+				}
+			]
 			title: "你需要一个电池"
 			x: -3.0d
 			y: 2.0d
