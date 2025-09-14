@@ -2,8 +2,9 @@ ServerEvents.recipes((event) => {
 	let { tconstruct } = event.recipes
 
 	addFuel(Fluid.of("ad_astra:cryo_fuel"), 4225)
-	addFuel(Fluid.of("cmi:delta_unstable_solution"), 1206)
 	addFuel(Fluid.of("ad_astra:fuel"), 1417)
+	addFuel(Fluid.of("cmi:delta_unstable_solution"), 1206)
+	addFuel(Fluid.tag("tag", "forge:creosote"), 1300)
 	addFuel(Fluid.tag("tag", "forge:oil"), 1220)
 	addFuel(Fluid.of("thermal:refined_fuel"), 2041)
 	addFuel(Fluid.of("cmi:turbid_waste_liquid"), 1189)
