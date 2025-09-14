@@ -30,7 +30,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "Iron Ingot"
+			title: "铁锭"
 			x: -23.0d
 			y: -3.0d
 		}
@@ -53,10 +53,10 @@
 						value: "forge:ingots/nickel"
 					}
 				}
-				title: "Any #forge:ingots/nickel"
+				title: "任意 #forge:ingots/镍"
 				type: "item"
 			}]
-			title: "Nickle Ingot"
+			title: "镍锭"
 			x: -17.5d
 			y: -4.0d
 		}
@@ -70,7 +70,7 @@
 			id: "158872F89555C2CC"
 			tasks: [{
 				id: "704D979C24EAB67E"
-				title: "Mixing"
+				title: "混合"
 				type: "checkmark"
 			}]
 			x: -20.0d
@@ -83,7 +83,7 @@
 			id: "74E69B8EC920F145"
 			tasks: [{
 				id: "4D77CCCA9B7083CA"
-				title: "Cast"
+				title: "铸造"
 				type: "checkmark"
 			}]
 			x: -18.5d
@@ -108,10 +108,10 @@
 						value: "forge:ingots/invar"
 					}
 				}
-				title: "Any #forge:ingots/invar"
+				title: "任意 #forge:ingots/殷钢"
 				type: "item"
 			}]
-			title: "Invar Ingot"
+			title: "殷钢锭"
 			x: -14.5d
 			y: 1.5d
 		}
@@ -122,7 +122,7 @@
 			id: "371001287D4C8D23"
 			tasks: [{
 				id: "52FB216C01DB28FE"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -7.5d
@@ -147,10 +147,10 @@
 						value: "forge:plates/invar"
 					}
 				}
-				title: "Any #forge:plates/invar"
+				title: "任意 #forge:plates/殷钢板"
 				type: "item"
 			}]
-			title: "Invar Plate"
+			title: "殷钢板"
 			x: -5.0d
 			y: 2.0d
 		}
@@ -168,7 +168,7 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			title: "Gold Ingot"
+			title: "金锭"
 			x: -13.5d
 			y: -4.0d
 		}
@@ -179,7 +179,7 @@
 			id: "78855495E2626F93"
 			tasks: [{
 				id: "7A7B593A00B46F1F"
-				title: "Roll"
+				title: "轧制"
 				type: "checkmark"
 			}]
 			x: -11.0d
@@ -200,7 +200,7 @@
 				item: "createaddition:gold_rod"
 				type: "item"
 			}]
-			title: "Gold Rod"
+			title: "金棒"
 			x: -8.5d
 			y: -2.0d
 		}
@@ -219,7 +219,7 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			title: "Redstone Dust"
+			title: "红石粉"
 			x: -6.5d
 			y: -1.5d
 		}
@@ -230,7 +230,7 @@
 			id: "11848C62B13BEC44"
 			tasks: [{
 				id: "602F39F82716CEED"
-				title: "Lase"
+				title: "激光"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -254,7 +254,7 @@
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
-			title: "RF Coil"
+			title: "RF线圈"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -273,7 +273,7 @@
 				item: "thermal:constantan_gear"
 				type: "item"
 			}]
-			title: "Constantan Gear"
+			title: "康铜齿轮"
 			x: 9.5d
 			y: 1.5d
 		}
@@ -292,7 +292,7 @@
 				item: "cmi:flux_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械零件"
 			x: 12.5d
 			y: -0.5d
 		}
@@ -311,7 +311,7 @@
 				item: "cmi:thermal_mechanism"
 				type: "item"
 			}]
-			title: "Thermal Mechanism"
+			title: "热力机械"
 			x: 15.0d
 			y: -2.5d
 		}

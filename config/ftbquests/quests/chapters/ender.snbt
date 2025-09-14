@@ -30,7 +30,7 @@
 				item: "create:sturdy_sheet"
 				type: "item"
 			}]
-			title: "Sturdy Sheet"
+			title: "坚固板"
 			x: -22.0d
 			y: 8.357142857142861d
 		}
@@ -48,7 +48,7 @@
 				item: "minecraft:chorus_fruit"
 				type: "item"
 			}]
-			title: "Chorus Fruit"
+			title: "紫颂果"
 			x: -19.77714285714287d
 			y: -0.7857142857142776d
 		}
@@ -60,7 +60,7 @@
 			id: "4A7A67C25D91AF74"
 			tasks: [{
 				id: "3A4EE6607D4D6F39"
-				title: "Fiuld Ender"
+				title: "末影之眼"
 				type: "checkmark"
 			}]
 			x: -10.06285714285714d
@@ -73,7 +73,7 @@
 			id: "022046E00DDF637F"
 			tasks: [{
 				id: "524294F995536EDD"
-				title: "Mix"
+				title: "混合"
 				type: "checkmark"
 			}]
 			x: -12.634285714285696d
@@ -86,7 +86,7 @@
 			id: "40E404BCF340AE74"
 			tasks: [{
 				id: "15BEDC3DC62F64C1"
-				title: "Cast"
+				title: "浇筑"
 				type: "checkmark"
 			}]
 			x: -8.491428571428557d
@@ -110,7 +110,7 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
-			title: "Ender Pearl"
+			title: "末影珍珠"
 			x: -0.8485714285714465d
 			y: 2.999999999999993d
 		}
@@ -133,10 +133,10 @@
 						value: "forge:dusts/diamond"
 					}
 				}
-				title: "Any #forge:dusts/diamond"
+				title: "任意 #forge:dusts/diamond"
 				type: "item"
 			}]
-			title: "Diamond Dust"
+			title: "钻石粉"
 			x: 8.231428571428552d
 			y: 6.571428571428569d
 		}
@@ -155,7 +155,7 @@
 				item: "cmi:magical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 13.517142857142844d
 			y: 2.5714285714285765d
 		}
@@ -174,7 +174,7 @@
 				item: "cmi:ender_mechanism"
 				type: "item"
 			}]
-			title: "Ender Mechanism"
+			title: "末影机械"
 			x: 19.231428571428552d
 			y: 5.142857142857139d
 		}

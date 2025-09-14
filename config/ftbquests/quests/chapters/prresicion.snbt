@@ -29,7 +29,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "Copper Ingot"
+			title: "铜锭"
 			x: -11.071428571428577d
 			y: -6.781428571428577d
 		}
@@ -46,7 +46,7 @@
 				item: "create:zinc_ingot"
 				type: "item"
 			}]
-			title: "Zinc Ingot"
+			title: "锌锭"
 			x: -20.64285714285714d
 			y: -5.741428571428585d
 		}
@@ -57,10 +57,10 @@
 			]
 			hide_dependent_lines: true
 			id: "50592F3A482CB912"
-			subtitle: "...and HEAT!"
+			subtitle: "...还有热量!"
 			tasks: [{
 				id: "3AD3DA0901DB5CA2"
-				title: "Mix"
+				title: "混合"
 				type: "checkmark"
 			}]
 			x: -15.07142857142857d
@@ -80,7 +80,7 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "Brass Ingot"
+			title: "黄铜锭"
 			x: -11.5d
 			y: -2.304285714285733d
 		}
@@ -90,7 +90,7 @@
 			id: "2EB85DE49F85953B"
 			tasks: [{
 				id: "7E3A4C99F12FA0FC"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -5.714285714285708d
@@ -105,13 +105,13 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "cogwheel OR gear?"
+			subtitle: "齿轮还是齿轮？"
 			tasks: [{
 				id: "26527B8CEF4580DD"
 				item: "create:cogwheel"
 				type: "item"
 			}]
-			title: "Cogwheel"
+			title: "齿轮"
 			x: -2.0d
 			y: -2.9028571428571652d
 		}
@@ -132,7 +132,7 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			title: "Electron Tube"
+			title: "电子管"
 			x: 6.928571428571431d
 			y: 0.494285714285688d
 		}
@@ -154,10 +154,10 @@
 						value: "forge:plates/iron"
 					}
 				}
-				title: "Any #forge:plates/iron"
+				title: "任意 #forge:plates/iron"
 				type: "item"
 			}]
-			title: "Iron Plate"
+			title: "铁板"
 			x: 2.5d
 			y: 5.3914285714285555d
 		}
@@ -167,7 +167,7 @@
 			id: "44858D1DE3494B36"
 			tasks: [{
 				id: "5A2C95A4893506FA"
-				title: "Water"
+				title: "水"
 				type: "checkmark"
 			}]
 			x: -16.64285714285714d
@@ -187,7 +187,7 @@
 				item: "cmi:charged_amethyst"
 				type: "item"
 			}]
-			title: "Charged Amethyst"
+			title: "充能紫水晶"
 			x: -6.0d
 			y: 11.5d
 		}
@@ -197,7 +197,7 @@
 			id: "0C4ACB64F4456ACC"
 			tasks: [{
 				id: "272ADB36781B51CA"
-				title: "Grind"
+				title: "研磨"
 				type: "checkmark"
 			}]
 			x: -5.2142857142857295d
@@ -208,7 +208,7 @@
 			id: "4D939D95BFEB4C0F"
 			tasks: [{
 				id: "34380DBB64F9BDC3"
-				title: "Charge"
+				title: "充能"
 				type: "checkmark"
 			}]
 			x: -7.0464285714285495d
@@ -223,13 +223,13 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "CHARGE IT AGAIN"
+			subtitle: "再次充能"
 			tasks: [{
 				id: "43CE3159812AB95C"
 				item: "minecraft:amethyst_shard"
 				type: "item"
 			}]
-			title: "Amethyst Shard"
+			title: "紫水晶碎片"
 			x: -5.785714285714327d
 			y: 8.53428571428568d
 		}
@@ -247,7 +247,7 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			title: "Redstone Dust"
+			title: "红石粉"
 			x: -3.1892857142856883d
 			y: 9.240714285714269d
 		}
@@ -260,7 +260,7 @@
 			id: "27DA9129F1633B83"
 			tasks: [{
 				id: "7BB869DCD3A141A9"
-				title: "Mix"
+				title: "混合"
 				type: "checkmark"
 			}]
 			x: -1.7857142857143202d
@@ -273,7 +273,7 @@
 			id: "784B7E5730FA5A6C"
 			tasks: [{
 				id: "50949D20DC7E3779"
-				title: "Redstone Acid"
+				title: "红石酸"
 				type: "checkmark"
 			}]
 			x: -0.9285714285714732d
@@ -288,7 +288,7 @@
 			id: "0053E1D35233E9E3"
 			tasks: [{
 				id: "5361445594ADA1D0"
-				title: "Mix"
+				title: "混合"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -299,7 +299,7 @@
 			id: "2208A48AAC79A57B"
 			tasks: [{
 				id: "3D911632D05B7E4E"
-				title: "Mill"
+				title: "研磨"
 				type: "checkmark"
 			}]
 			x: -10.327142857142888d
@@ -319,7 +319,7 @@
 				item: "ae2:certus_quartz_dust"
 				type: "item"
 			}]
-			title: "Certus Quartz Dust"
+			title: "赛特斯石英粉"
 			x: -13.666428571428568d
 			y: 6.517857142857139d
 		}
@@ -332,7 +332,7 @@
 			id: "03C69C9BBD0B26F3"
 			tasks: [{
 				id: "7FC71E56A68590DA"
-				title: "Mix"
+				title: "混合"
 				type: "checkmark"
 			}]
 			x: -11.493571428571421d
@@ -352,7 +352,7 @@
 				item: "ae2:certus_quartz_crystal"
 				type: "item"
 			}]
-			title: "Certus Quartz Crystal"
+			title: "赛特斯石英晶体"
 			x: -8.249285714285698d
 			y: 5.910714285714278d
 		}
@@ -362,7 +362,7 @@
 			id: "4DE1F2CA85182919"
 			tasks: [{
 				id: "27F20D5BCFC31739"
-				title: "Charge"
+				title: "充能"
 				type: "checkmark"
 			}]
 			x: -6.290714285714259d
@@ -382,7 +382,7 @@
 				item: "ae2:charged_certus_quartz_crystal"
 				type: "item"
 			}]
-			title: "Charged Certus Quartz Crystal"
+			title: "充能赛特斯石英晶体"
 			x: -3.1892857142856883d
 			y: 5.625d
 		}
@@ -400,7 +400,7 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 11.239285714285742d
 			y: -2.7635714285714315d
 		}
@@ -418,7 +418,7 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			title: "Precision Mechanism"
+			title: "精密机械"
 			x: 18.52500000000002d
 			y: 0.2764285714285535d
 		}

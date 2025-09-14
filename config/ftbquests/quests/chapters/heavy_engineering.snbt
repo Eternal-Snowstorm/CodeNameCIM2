@@ -34,10 +34,10 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "Any #forge:ingots/steel"
+				title: "任意 #forge:ingots/steel"
 				type: "item"
 			}]
-			title: "Steel Ingot"
+			title: "钢锭"
 			x: -14.142857142857125d
 			y: 1.0300000000000011d
 		}
@@ -48,7 +48,7 @@
 			id: "12429DAA0F211857"
 			tasks: [{
 				id: "2150E1830E5E6360"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -11.571428571428555d
@@ -73,10 +73,10 @@
 						value: "forge:plates/steel"
 					}
 				}
-				title: "Any #forge:plates/steel"
+				title: "任意 #forge:plates/steel"
 				type: "item"
 			}]
-			title: "Steel Plate"
+			title: "钢板"
 			x: -8.428571428571416d
 			y: 3.661428571428573d
 		}
@@ -87,7 +87,7 @@
 			id: "756CC1515ADEA813"
 			tasks: [{
 				id: "7B6FCCFAB84211A5"
-				title: "Cut"
+				title: "切割"
 				type: "checkmark"
 			}]
 			x: -5.428571428571416d
@@ -108,7 +108,7 @@
 				item: "immersiveengineering:sheetmetal_steel"
 				type: "item"
 			}]
-			title: "Sheetmetal Steel"
+			title: "钢金属板"
 			x: -1.9999999999999858d
 			y: 2.507142857142867d
 		}
@@ -126,7 +126,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "Copper Ingot"
+			title: "铜锭"
 			x: -21.0d
 			y: 5.5d
 		}
@@ -137,7 +137,7 @@
 			id: "4DB703243615AD7D"
 			tasks: [{
 				id: "1C22F5AC3811C406"
-				title: "Rod Press"
+				title: "杆压制模具"
 				type: "checkmark"
 			}]
 			x: -19.214285714285715d
@@ -161,7 +161,7 @@
 				item: "createaddition:copper_rod"
 				type: "item"
 			}]
-			title: "Copper Rod"
+			title: "铜杆"
 			x: 5.928571428571431d
 			y: -7.797142857142852d
 		}
@@ -183,7 +183,7 @@
 				item: "immersiveengineering:component_steel"
 				type: "item"
 			}]
-			title: "Component Steel"
+			title: "钢构件"
 			x: 10.357142857142861d
 			y: -1.3778571428571382d
 		}
@@ -205,10 +205,10 @@
 						value: "forge:ingots/electrum"
 					}
 				}
-				title: "Any #forge:ingots/electrum"
+				title: "任意 #forge:ingots/electrum"
 				type: "item"
 			}]
-			title: "Electrum Ingot"
+			title: "琥珀金锭"
 			x: -8.785714285714292d
 			y: -1.7764285714285677d
 		}
@@ -219,7 +219,7 @@
 			id: "3782AEE3395C52DD"
 			tasks: [{
 				id: "6BDD8BB5AB3595EC"
-				title: "Wire Press"
+				title: "线压制模具"
 				type: "checkmark"
 			}]
 			x: -6.642857142857139d
@@ -247,10 +247,10 @@
 						value: "forge:wires/electrum"
 					}
 				}
-				title: "Any #forge:wires/electrum"
+				title: "任意 #forge:wires/electrum"
 				type: "item"
 			}]
-			title: "Electrum Wire"
+			title: "琥珀金线"
 			x: 14.642857142857139d
 			y: -4.787857142857128d
 		}
@@ -264,7 +264,7 @@
 				item: "cmi:engineering_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 25.35714285714286d
 			y: -0.829285714285696d
 		}
@@ -283,7 +283,7 @@
 				item: "cmi:heavy_engineering_mechanism"
 				type: "item"
 			}]
-			title: "Heavy Engineer Mechanism"
+			title: "重型工程师机械"
 			x: 28.5d
 			y: -2.0d
 		}

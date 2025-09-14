@@ -168,7 +168,7 @@
 						value: "forge:ingots/signalum"
 					}
 				}
-				title: "Any #forge:ingots/signalum"
+				title: "任意 #forge:ingots/信素"
 				type: "item"
 			}]
 			x: 0.5d

@@ -1,18 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
-	// 太阳能发电机
-	kubejs.shaped("ad_astra:solar_panel", [
-		"AAA",
-		"BCB",
-		"DDD"
-	], {
-		A: "mekanismgenerators:solar_panel",
-		B: "#forge:plates/iron",
-		C: "thermal:energy_cell",
-		D: "#forge:ingots/osmium"
-	}).id("ad_astra:solar_panel")
-
 	// 电缆
 	kubejs.shaped("4x ad_astra:steel_cable", [
 		"AAA",

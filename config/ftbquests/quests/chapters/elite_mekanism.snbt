@@ -29,7 +29,7 @@
 				item: "cmi:stainless_steel_ingot"
 				type: "item"
 			}]
-			title: "Stainless Steel Ingot"
+			title: "不锈钢锭"
 			x: -11.184285714285714d
 			y: -2.857142857142854d
 		}
@@ -39,7 +39,7 @@
 			id: "2EB33A5F59BD816F"
 			tasks: [{
 				id: "71E5E3BF5710541A"
-				title: "Press"
+				title: "压缩"
 				type: "checkmark"
 			}]
 			x: -9.184285714285714d
@@ -59,7 +59,7 @@
 				item: "cmi:stainless_steel_plate"
 				type: "item"
 			}]
-			title: "Stainless Steel Plate"
+			title: "不锈钢板"
 			x: -5.184285714285707d
 			y: -0.5742857142857218d
 		}
@@ -76,7 +76,7 @@
 				item: "mekanism:alloy_reinforced"
 				type: "item"
 			}]
-			title: "Alloy Refeinforced"
+			title: "合金强化"
 			x: 4.672857142857154d
 			y: -10.21857142857143d
 		}
@@ -94,7 +94,7 @@
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
-			title: "Advanced Control Circut"
+			title: "高级控制电路"
 			x: 3.5300000000000153d
 			y: -9.505714285714276d
 		}
@@ -112,7 +112,7 @@
 				item: "ad_astra:ostrum_plate"
 				type: "item"
 			}]
-			title: "Ostrum Plate"
+			title: "紫金板"
 			x: 2.1014285714285847d
 			y: -8.364285714285714d
 		}
@@ -122,7 +122,7 @@
 			id: "373032BF6A7F20DE"
 			tasks: [{
 				id: "277D8232E6856268"
-				title: "Press"
+				title: "压缩"
 				type: "checkmark"
 			}]
 			x: 0.958571428571446d
@@ -145,7 +145,7 @@
 				item: "mekanism:elite_control_circuit"
 				type: "item"
 			}]
-			title: "Elite Control Circut"
+			title: "精英控制电路"
 			x: -1.4699999999999847d
 			y: -3.652857142857158d
 		}
@@ -162,7 +162,7 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			title: "Gold Ingot"
+			title: "金锭"
 			x: 7.672857142857154d
 			y: -10.297142857142866d
 		}
@@ -172,7 +172,7 @@
 			id: "5ADFA64355ED03B8"
 			tasks: [{
 				id: "1E5B690795559C24"
-				title: "Press"
+				title: "压缩"
 				type: "checkmark"
 			}]
 			x: 6.101428571428585d
@@ -195,7 +195,7 @@
 				item: "thermal:gold_plate"
 				type: "item"
 			}]
-			title: "Gold Plate"
+			title: "金板"
 			x: 4.815714285714293d
 			y: -1.3714285714285879d
 		}
@@ -213,7 +213,7 @@
 				item: "cmi:mekanism_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 8.244285714285724d
 			y: -4.01571428571431d
 		}
@@ -231,7 +231,7 @@
 				item: "cmi:elite_mekanism_mechanism"
 				type: "item"
 			}]
-			title: "Elite Mekanism Mechanism"
+			title: "精英机械装置"
 			x: 12.244285714285724d
 			y: -2.160000000000018d
 		}

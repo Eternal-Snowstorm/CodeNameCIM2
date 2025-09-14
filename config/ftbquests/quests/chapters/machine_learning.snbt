@@ -61,7 +61,7 @@
 						value: "forge:ingots/andesite_alloy"
 					}
 				}
-				title: "Any #forge:ingots/andesite_alloy"
+				title: "任意 #forge:ingots/andesite_alloy"
 				type: "item"
 			}]
 			title: "安山合金"
@@ -550,7 +550,7 @@
 				id: "6E602D46F137513C"
 				type: "checkmark"
 			}]
-			title: "C! R! E! A! T! E!"
+			title: "创!造!模!式!"
 			x: -2.0d
 			y: 0.0d
 		}

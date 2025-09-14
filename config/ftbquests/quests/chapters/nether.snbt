@@ -31,7 +31,7 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			title: "Netherrack"
+			title: "下界岩"
 			x: -15.5d
 			y: 2.5d
 		}
@@ -43,7 +43,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "09F988039E2D2644"
-				title: "Crush"
+				title: "粉碎"
 				type: "checkmark"
 			}]
 			x: -14.5d
@@ -65,7 +65,7 @@
 				item: "create:cinder_flour"
 				type: "item"
 			}]
-			title: "Cinder Flour"
+			title: "灰烬面粉"
 			x: -11.0d
 			y: 2.0d
 		}
@@ -81,7 +81,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "33EECFBE5E567974"
-				title: "Compat"
+				title: "兼容"
 				type: "checkmark"
 			}]
 			x: -5.5d
@@ -95,7 +95,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "27313D54FA079C3A"
-				title: "Milk"
+				title: "牛奶"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -116,7 +116,7 @@
 				item: "minecraft:sugar_cane"
 				type: "item"
 			}]
-			title: "Sugar Cane"
+			title: "甘蔗"
 			x: -5.5d
 			y: 0.0d
 		}
@@ -128,7 +128,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "58F0E0454B536CBD"
-				title: "Mill"
+				title: "磨坊"
 				type: "checkmark"
 			}]
 			x: -8.0d
@@ -150,7 +150,7 @@
 				item: "minecraft:sugar"
 				type: "item"
 			}]
-			title: "Sugar"
+			title: "糖"
 			x: -7.0d
 			y: 2.5d
 		}
@@ -170,7 +170,7 @@
 				item: "create:blaze_cake_base"
 				type: "item"
 			}]
-			title: "Blaze Cake Base"
+			title: "烈焰蛋糕基底"
 			x: -3.5d
 			y: 4.5d
 		}
@@ -183,7 +183,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "768FFCB368F5C88B"
-				title: "Lava"
+				title: "熔岩"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -201,7 +201,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "1216990A160F826B"
-				title: "Liquid Soul"
+				title: "液态灵魂"
 				type: "checkmark"
 			}]
 			x: 3.5d
@@ -229,7 +229,7 @@
 					type: "item"
 				}
 			]
-			title: "Nether Vines"
+			title: "下界藤蔓"
 			x: -0.5d
 			y: 2.0d
 		}
@@ -241,7 +241,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "7AE8FB87B50E3A3A"
-				title: "Mix"
+				title: "混合"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -263,7 +263,7 @@
 				item: "minecraft:gold_nugget"
 				type: "item"
 			}]
-			title: "Gold Nugget"
+			title: "金粒"
 			x: 6.5d
 			y: 3.5d
 		}
@@ -283,7 +283,7 @@
 				item: "cmi:magical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 9.5d
 			y: 1.5d
 		}
@@ -303,7 +303,7 @@
 				item: "cmi:nether_mechanism"
 				type: "item"
 			}]
-			title: "Nether Mechanism"
+			title: "下界机械装置"
 			x: 14.5d
 			y: 3.5d
 		}
@@ -323,7 +323,7 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			title: "Blaze Cake"
+			title: "烈焰蛋糕"
 			x: 1.5d
 			y: 3.5d
 		}

@@ -9,7 +9,7 @@
 		{
 			click: "command:reload"
 			height: 1.0d
-			hover: ["Reload"]
+			hover: ["重新加载"]
 			image: "ftblibrary:icons/refresh"
 			rotation: 0.0d
 			width: 1.0d
@@ -19,7 +19,7 @@
 		{
 			click: "command:kill"
 			height: 1.0d
-			hover: ["Suicide"]
+			hover: ["自杀"]
 			image: "cofh_core:textures/gui/icons/icon_cancel.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -29,7 +29,7 @@
 		{
 			click: "command:gamemode creative"
 			height: 1.0d
-			hover: ["Creative"]
+			hover: ["创造模式"]
 			image: "jei:textures/jei/atlas/gui/icons/config_button_cheat.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -39,7 +39,7 @@
 		{
 			click: "command:gamemode survival"
 			height: 1.0d
-			hover: ["Survival"]
+			hover: ["生存模式"]
 			image: "jei:textures/jei/atlas/gui/icons/config_button.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -49,7 +49,7 @@
 		{
 			click: "command:weather clear"
 			height: 1.0d
-			hover: ["Sunny"]
+			hover: ["晴天"]
 			image: "minecraft:block/sunflower_front"
 			rotation: 0.0d
 			width: 1.0d
@@ -79,7 +79,7 @@
 		{
 			click: "command:effect give @p night_vision 300"
 			height: 1.0d
-			hover: ["Night Vision"]
+			hover: ["夜视"]
 			image: "minecraft:textures/mob_effect/night_vision.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -89,7 +89,7 @@
 		{
 			click: "command:say Hello!"
 			height: 1.0d
-			hover: ["Hello!"]
+			hover: ["你好!"]
 			image: "ftblibrary:icons/chat"
 			rotation: 0.0d
 			width: 1.0d
@@ -99,7 +99,7 @@
 		{
 			click: "https://space.bilibili.com/3461572013853145"
 			height: 1.0d
-			hover: ["Video"]
+			hover: ["视频"]
 			image: "supplementaries:textures/gui/book/icon/youtube.png"
 			rotation: 0.0d
 			width: 1.0d

@@ -33,10 +33,10 @@
 						value: "create:sleepers"
 					}
 				}
-				title: "Any #create:sleepers"
+				title: "任意 #create:sleepers"
 				type: "item"
 			}]
-			title: "Stone Slab"
+			title: "石台阶"
 			x: -8.685714285714276d
 			y: -1.2142857142857082d
 		}
@@ -53,7 +53,7 @@
 				item: "minecraft:stick"
 				type: "item"
 			}]
-			title: "Stick"
+			title: "木棍"
 			x: 0.41428571428572525d
 			y: -3.607142857142854d
 		}
@@ -71,7 +71,7 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			title: "Redstone Dust"
+			title: "红石粉"
 			x: -1.1999999999999886d
 			y: -2.107142857142861d
 		}
@@ -92,7 +92,7 @@
 				item: "minecraft:redstone_torch"
 				type: "item"
 			}]
-			title: "Redstone Torch"
+			title: "红石火把"
 			x: -2.242857142857119d
 			y: 2.464285714285708d
 		}
@@ -110,7 +110,7 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 1.3571428571428683d
 			y: -0.5357142857142847d
 		}
@@ -128,7 +128,7 @@
 				item: "vintageimprovements:redstone_module"
 				type: "item"
 			}]
-			title: "Redstone Mechanism"
+			title: "红石机械"
 			x: 6.528571428571439d
 			y: 1.4642857142857153d
 		}

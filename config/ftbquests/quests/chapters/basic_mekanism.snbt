@@ -52,10 +52,10 @@
 						value: "forge:ingots/chromium"
 					}
 				}
-				title: "Any #forge:ingots/chromium"
+				title: "任意 #forge:ingots/chromium"
 				type: "item"
 			}]
-			title: "Chromium Ingot"
+			title: "铬锭"
 			x: -12.5d
 			y: 0.5d
 		}
@@ -76,10 +76,10 @@
 						value: "forge:ingots/invar"
 					}
 				}
-				title: "Any #forge:ingots/invar"
+				title: "任意 #forge:ingots/invar"
 				type: "item"
 			}]
-			title: "Invar Ingot"
+			title: "殷钢锭"
 			x: -10.5d
 			y: 0.5d
 		}
@@ -100,10 +100,10 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "Any #forge:ingots/steel"
+				title: "任意 #forge:ingots/steel"
 				type: "item"
 			}]
-			title: "Steel Ingot"
+			title: "钢锭"
 			x: -8.5d
 			y: 0.5d
 		}
@@ -121,13 +121,13 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "What did you say , bro ?"
+			subtitle: "你说什么,兄弟？"
 			tasks: [{
 				id: "03631F76626EEAF2"
 				item: "cmi:stainless_steel_ingot"
 				type: "item"
 			}]
-			title: "Stainless Steel Ingot"
+			title: "不锈钢锭"
 			x: -6.42000000000003d
 			y: 5.130952380952387d
 		}
@@ -135,10 +135,10 @@
 			dependencies: ["721424F57193B87F"]
 			hide_dependent_lines: true
 			id: "6B9BC6E3F7708F75"
-			subtitle: "*brr*"
+			subtitle: "*颤抖*"
 			tasks: [{
 				id: "4D9649576E67B934"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -3.8642857142857423d
@@ -153,13 +153,13 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "I   s a i d   I ' m   Strv122B+!!!!!!!"
+			subtitle: "我 说 我 ' 是 Strv122B+!!!!!"
 			tasks: [{
 				id: "595338F4FF9B057C"
 				item: "cmi:stainless_steel_plate"
 				type: "item"
 			}]
-			title: "Stainless Steel Plate"
+			title: "不锈钢板"
 			x: -1.8085714285714687d
 			y: 4.55952380952381d
 		}
@@ -176,7 +176,7 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			title: "Redstone"
+			title: "红石"
 			x: -5.722142857142863d
 			y: -3.2142857142857153d
 		}
@@ -186,7 +186,7 @@
 			id: "2A93C31925CD45D7"
 			tasks: [{
 				id: "3137C33F7C54EEBB"
-				title: "Ethene"
+				title: "乙烯"
 				type: "checkmark"
 			}]
 			x: 4.3335714285714175d
@@ -199,7 +199,7 @@
 			id: "77C84E441AADD28F"
 			tasks: [{
 				id: "5A031C270D186F5B"
-				title: "Polyolefin"
+				title: "聚烯烃"
 				type: "checkmark"
 			}]
 			x: 1.5321428571428442d
@@ -211,7 +211,7 @@
 			id: "42307908292D76EA"
 			tasks: [{
 				id: "3EA5A3972A0026F8"
-				title: "Chill"
+				title: "冷却"
 				type: "checkmark"
 			}]
 			x: 3.6592857142857014d
@@ -231,7 +231,7 @@
 				item: "thermal_extra:polyolefin_plate"
 				type: "item"
 			}]
-			title: "Polyolefin Plate"
+			title: "聚烯烃板"
 			x: 2.214999999999975d
 			y: -0.5d
 		}
@@ -242,10 +242,10 @@
 			]
 			hide_dependent_lines: true
 			id: "2561D99F7CE55993"
-			subtitle: "That's crazy bro DDD"
+			subtitle: "那太疯狂了兄弟 DDD"
 			tasks: [{
 				id: "6BD2730703768584"
-				title: "Infuse"
+				title: "注入"
 				type: "checkmark"
 			}]
 			x: 0.5564285714285688d
@@ -268,7 +268,7 @@
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
-			title: "Basic Control Circut"
+			title: "基础控制电路"
 			x: 0.8421428571428464d
 			y: 4.5d
 		}
@@ -286,7 +286,7 @@
 				item: "thermal:ruby"
 				type: "item"
 			}]
-			title: "Ruby"
+			title: "红宝石"
 			x: 6.254999999999981d
 			y: -1.9328571428571308d
 		}
@@ -303,7 +303,7 @@
 				item: "minecraft:iron_nugget"
 				type: "item"
 			}]
-			title: "Iron Nugget"
+			title: "铁粒"
 			x: 8.525000000000006d
 			y: -1.0085714285714147d
 		}
@@ -316,7 +316,7 @@
 			id: "7107F771F6A75456"
 			tasks: [{
 				id: "454AB4B1858CADA7"
-				title: "Craft"
+				title: "合成"
 				type: "checkmark"
 			}]
 			x: 6.5092857142856815d
@@ -339,7 +339,7 @@
 				item: "thermal:ruby_gear"
 				type: "item"
 			}]
-			title: "Ruby Gear"
+			title: "红宝石齿轮"
 			x: 6.564999999999955d
 			y: 4.268571428571448d
 		}
@@ -357,7 +357,7 @@
 				item: "cmi:mekanism_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 12.334999999999965d
 			y: 3.121428571428609d
 		}
@@ -375,7 +375,7 @@
 				item: "cmi:basic_mekanism_mechanism"
 				type: "item"
 			}]
-			title: "Basic Mekanism Mechanism"
+			title: "基础mekanism机械"
 			x: 15.334999999999951d
 			y: 4.688571428571464d
 		}
@@ -392,7 +392,7 @@
 				item: "cmi:crystal_ruby"
 				type: "item"
 			}]
-			title: "Crystal Ruby"
+			title: "红宝石晶体"
 			x: 10.906428571428535d
 			y: -6.177142857142819d
 		}
@@ -402,7 +402,7 @@
 			id: "07DDD975B1CAA9A8"
 			tasks: [{
 				id: "28685B282F90CCBF"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: 10.0d
@@ -422,7 +422,7 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			title: "Redstone Dust"
+			title: "红石粉"
 			x: 8.620714285714229d
 			y: -4.252857142857096d
 		}

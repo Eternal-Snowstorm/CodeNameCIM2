@@ -29,7 +29,7 @@
 				item: "cmi:stainless_steel_ingot"
 				type: "item"
 			}]
-			title: "Stainless Steel Ingot"
+			title: "不锈钢锭"
 			x: -12.480952380952395d
 			y: 0.9761904761904816d
 		}
@@ -39,7 +39,7 @@
 			id: "32550CDABE143DB3"
 			tasks: [{
 				id: "386188D524813B92"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -9.009523809523813d
@@ -59,7 +59,7 @@
 				item: "cmi:stainless_steel_plate"
 				type: "item"
 			}]
-			title: "Stainless Steel Plate"
+			title: "不锈钢板"
 			x: -6.823809523809544d
 			y: 0.6190476190476346d
 		}
@@ -76,7 +76,7 @@
 				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
-			title: "Alloy Infused"
+			title: "合金注入"
 			x: 3.7476190476190183d
 			y: -7.389523809523787d
 		}
@@ -94,7 +94,7 @@
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
-			title: "Basic Control Circut"
+			title: "基础控制电路"
 			x: 2.6047619047618795d
 			y: -6.675238095238072d
 		}
@@ -111,7 +111,7 @@
 				item: "cmi:platinum_ingot"
 				type: "item"
 			}]
-			title: "Plantinum Ingot"
+			title: "铂锭"
 			x: -3.466666666666697d
 			y: -8.393809523809509d
 		}
@@ -121,7 +121,7 @@
 			id: "37538C97F90F8594"
 			tasks: [{
 				id: "0814F4D300E72CFC"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -2.5380952380952735d
@@ -133,7 +133,7 @@
 			id: "14308E6B1F0F929E"
 			tasks: [{
 				id: "54BB93F7D935C878"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -1.6095238095238287d
@@ -156,7 +156,7 @@
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
-			title: "Advanced Control Circut"
+			title: "高级控制电路"
 			x: -2.8952380952381063d
 			y: 1.9104761904762455d
 		}
@@ -166,7 +166,7 @@
 			id: "05D3492FFA3122DE"
 			tasks: [{
 				id: "083CF913E00A72F9"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: 7.676190476190463d
@@ -178,7 +178,7 @@
 			id: "5E8227A9C83C2A41"
 			tasks: [{
 				id: "60FFC30DDADF0228"
-				title: "Roll"
+				title: "轧制"
 				type: "checkmark"
 			}]
 			x: 5.676190476190477d
@@ -201,7 +201,7 @@
 				item: "vintageimprovements:platinum_sheet"
 				type: "item"
 			}]
-			title: "Plantinum Plate"
+			title: "铂板"
 			x: 0.6761904761904631d
 			y: -4.999523809523723d
 		}
@@ -218,7 +218,7 @@
 				item: "mekanism:ingot_osmium"
 				type: "item"
 			}]
-			title: "Osmium Ingot"
+			title: "锇锭"
 			x: 9.533333333333339d
 			y: -5.718095238095152d
 		}
@@ -236,7 +236,7 @@
 				item: "vintageimprovements:osmium_sheet"
 				type: "item"
 			}]
-			title: "Osmium Plate"
+			title: "锇板"
 			x: 6.819047619047602d
 			y: -3.2938095238094363d
 		}
@@ -254,7 +254,7 @@
 				item: "vintageimprovements:osmium_wire"
 				type: "item"
 			}]
-			title: "Osmium Wire"
+			title: "锇线"
 			x: 4.176190476190463d
 			y: -1.5123809523808518d
 		}
@@ -264,7 +264,7 @@
 			id: "6B1395EAE30F7653"
 			tasks: [{
 				id: "46BC198A2A2CDF1C"
-				title: "Spring Coil"
+				title: "弹簧线圈"
 				type: "checkmark"
 			}]
 			x: 2.9619047619047407d
@@ -287,7 +287,7 @@
 				item: "vintageimprovements:small_osmium_spring"
 				type: "item"
 			}]
-			title: "Small Osmium Spring"
+			title: "小型锇弹簧"
 			x: 2.319047619047616d
 			y: 3.9119047619048644d
 		}
@@ -305,7 +305,7 @@
 				item: "cmi:mekanism_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 6.390476190476171d
 			y: 0.5861904761905947d
 		}
@@ -323,7 +323,7 @@
 				item: "cmi:advanced_mekanism_mechanism"
 				type: "item"
 			}]
-			title: "Advanced Mekanism Mechanism"
+			title: "高级mekanism机械"
 			x: 14.533333333333324d
 			y: 1.5819047619048732d
 		}

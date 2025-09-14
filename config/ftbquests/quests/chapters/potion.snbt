@@ -33,10 +33,10 @@
 						value: "forge:glass"
 					}
 				}
-				title: "Any #forge:glass"
+				title: "任意 #forge:glass"
 				type: "item"
 			}]
-			title: "Glass"
+			title: "玻璃"
 			x: -9.402857142857144d
 			y: -1.4642857142857153d
 		}
@@ -164,7 +164,7 @@
 				item: "cmi:magical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 3.240000000000002d
 			y: 0.4214285714285495d
 		}
@@ -182,7 +182,7 @@
 				item: "cmi:potion_mechanism"
 				type: "item"
 			}]
-			title: "Potion Mechanism"
+			title: "药水机械装置"
 			x: 5.454285714285724d
 			y: 1.3614285714285401d
 		}

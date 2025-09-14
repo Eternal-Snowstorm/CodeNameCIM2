@@ -35,10 +35,10 @@
 						value: "forge:gems/amethyst"
 					}
 				}
-				title: "Any #forge:gems/amethyst"
+				title: "任意 #forge:gems/amethyst"
 				type: "item"
 			}]
-			title: "Amethyst Shard"
+			title: "紫水晶碎片"
 			x: -5.0d
 			y: -2.0d
 		}
@@ -65,10 +65,10 @@
 						value: "forge:gems/charged_amethyst"
 					}
 				}
-				title: "Any #forge:gems/charged_amethyst"
+				title: "任意 #forge:gems/charged_amethyst"
 				type: "item"
 			}]
-			title: "Charged Amethyst Shard"
+			title: "充能紫水晶碎片"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -80,7 +80,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "7A8F8A781AC7DDC7"
-				title: "Charge"
+				title: "充能"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -94,7 +94,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "7EEC2D37BD9DAE3B"
-				title: "Crush"
+				title: "粉碎"
 				type: "checkmark"
 			}]
 			x: -6.5d
@@ -176,10 +176,10 @@
 						value: "forge:dusts/glowstone"
 					}
 				}
-				title: "Any #forge:dusts/glowstone"
+				title: "任意 #forge:dusts/glowstone"
 				type: "item"
 			}]
-			title: "Glowstone Dust"
+			title: "荧石粉"
 			x: 1.7857142857142918d
 			y: 1.5714285714285694d
 		}
@@ -191,7 +191,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "08F5C25F2E184F5A"
-				title: "Lase"
+				title: "激光"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -213,7 +213,7 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 4.785714285714292d
 			y: 3.0714285714285694d
 		}
@@ -232,7 +232,7 @@
 				item: "minecraft:quartz_block"
 				type: "item"
 			}]
-			title: "Quartz Block"
+			title: "石英块"
 			x: -7.5d
 			y: 1.5d
 		}
@@ -252,7 +252,7 @@
 				item: "minecraft:quartz_slab"
 				type: "item"
 			}]
-			title: "Quartz Slab"
+			title: "石英台阶"
 			x: -5.5d
 			y: 2.5d
 		}
@@ -272,7 +272,7 @@
 				item: "cmi:photosensitive_mechanism"
 				type: "item"
 			}]
-			title: "Photosensitive Mechanism"
+			title: "感光机械装置"
 			x: 6.285714285714292d
 			y: 1.8571428571428612d
 		}

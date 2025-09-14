@@ -29,7 +29,7 @@
 				item: "minecraft:sculk"
 				type: "item"
 			}]
-			title: "Sculk"
+			title: "幽匿"
 			x: -22.08857142857144d
 			y: -6.428571428571445d
 		}
@@ -47,7 +47,7 @@
 				item: "create:experience_block"
 				type: "item"
 			}]
-			title: "Experience Block"
+			title: "经验块"
 			x: -9.231428571428566d
 			y: -1.9128571428571561d
 		}
@@ -68,7 +68,7 @@
 				item: "minecraft:sculk_shrieker"
 				type: "item"
 			}]
-			title: "Sculk Shrieker"
+			title: "幽匿尖啸体"
 			x: 4.054285714285712d
 			y: -1.6828571428571593d
 		}
@@ -86,7 +86,7 @@
 				item: "minecraft:sculk_catalyst"
 				type: "item"
 			}]
-			title: "Sculk Catalyst"
+			title: "幽匿催发体"
 			x: -6.374285714285719d
 			y: -3.452857142857148d
 		}
@@ -104,7 +104,7 @@
 				item: "minecraft:redstone_block"
 				type: "item"
 			}]
-			title: "Redstone Block"
+			title: "红石块"
 			x: -10.659999999999997d
 			y: -6.437142857142867d
 		}
@@ -125,7 +125,7 @@
 				item: "minecraft:sculk_sensor"
 				type: "item"
 			}]
-			title: "Sculk Sensor"
+			title: "幽匿感测体"
 			x: -4.945714285714288d
 			y: -5.20714285714287d
 		}
@@ -143,7 +143,7 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
-			title: "Ender Pearl"
+			title: "末影珍珠"
 			x: -5.660000000000011d
 			y: 1.0228571428571342d
 		}
@@ -161,7 +161,7 @@
 				item: "cmi:magical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 10.482857142857142d
 			y: -6.96142857142857d
 		}
@@ -179,7 +179,7 @@
 				item: "cmi:sculk_mechanism"
 				type: "item"
 			}]
-			title: "Sculk Mechanism"
+			title: "幽匿机械"
 			x: 20.768571428571434d
 			y: -2.231428571428566d
 		}

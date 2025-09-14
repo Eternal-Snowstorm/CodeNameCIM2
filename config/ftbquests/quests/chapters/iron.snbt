@@ -36,7 +36,7 @@
 						value: "forge:ingots/iron"
 					}
 				}
-				title: "Any #forge:ingots/iron"
+				title: "任意 #forge:ingots/iron"
 				type: "item"
 			}]
 			title: "铁锭"
@@ -91,10 +91,10 @@
 						value: "forge:nuggets/iron"
 					}
 				}
-				title: "Any #forge:nuggets/iron"
+				title: "任意 #forge:nuggets/iron"
 				type: "item"
 			}]
-			title: "Iron Nugget"
+			title: "铁粒"
 			x: 1.0d
 			y: -3.0d
 		}

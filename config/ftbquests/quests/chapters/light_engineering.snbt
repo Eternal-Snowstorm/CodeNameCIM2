@@ -35,10 +35,10 @@
 						value: "forge:plates/iron"
 					}
 				}
-				title: "Any #forge:plates/iron"
+				title: "任意 #forge:plates/iron"
 				type: "item"
 			}]
-			title: "Iron Plate"
+			title: "铁板"
 			x: -17.0d
 			y: -0.5d
 		}
@@ -56,7 +56,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "Iron Plate"
+			title: "铁板"
 			x: -24.857142857142847d
 			y: -3.751428571428555d
 		}
@@ -67,7 +67,7 @@
 			id: "799EA946A3177D2B"
 			tasks: [{
 				id: "15A432EF7E97FC9D"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -20.535714285714278d
@@ -79,7 +79,7 @@
 			id: "29285A338533C1AC"
 			tasks: [{
 				id: "22D926AC13A00C09"
-				title: "Cut"
+				title: "切割"
 				type: "checkmark"
 			}]
 			x: -12.642857142857139d
@@ -100,7 +100,7 @@
 				item: "immersiveengineering:sheetmetal_iron"
 				type: "item"
 			}]
-			title: "Iron Sheetmetal"
+			title: "铁金属板"
 			x: -3.75d
 			y: -2.608571428571409d
 		}
@@ -118,7 +118,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "Copper Ingot"
+			title: "铜锭"
 			x: -12.42857142857143d
 			y: -3.518571428571427d
 		}
@@ -129,7 +129,7 @@
 			id: "2ADB0FE94E9DF4C0"
 			tasks: [{
 				id: "0BF601143A0CD4E0"
-				title: "Roll"
+				title: "轧制"
 				type: "checkmark"
 			}]
 			x: -13.785714285714292d
@@ -154,10 +154,10 @@
 						value: "forge:rods/copper"
 					}
 				}
-				title: "Any #forge:rods/copper"
+				title: "任意 #forge:rods/copper"
 				type: "item"
 			}]
-			title: "Copper Rod"
+			title: "铜杆"
 			x: -8.357142857142861d
 			y: -0.5014285714285833d
 		}
@@ -171,7 +171,7 @@
 			id: "07144E85CE0E0DC1"
 			tasks: [{
 				id: "49D475F7F2189F18"
-				title: "Deploy"
+				title: "部署"
 				type: "checkmark"
 			}]
 			x: -7.928571428571431d
@@ -192,7 +192,7 @@
 				item: "immersiveengineering:component_iron"
 				type: "item"
 			}]
-			title: "Component Iron"
+			title: "铁构件"
 			x: 1.5d
 			y: -2.0d
 		}
@@ -214,10 +214,10 @@
 						value: "forge:plates/copper"
 					}
 				}
-				title: "Any #forge:plates/copper"
+				title: "任意 #forge:plates/copper"
 				type: "item"
 			}]
-			title: "Copper Plate"
+			title: "铜板"
 			x: -14.92857142857143d
 			y: -5.198571428571455d
 		}
@@ -228,7 +228,7 @@
 			id: "19856A115C16071A"
 			tasks: [{
 				id: "66F111D029ABA1B1"
-				title: "Roll"
+				title: "滚轮"
 				type: "checkmark"
 			}]
 			x: -7.642857142857139d
@@ -256,10 +256,10 @@
 						value: "forge:wires/copper"
 					}
 				}
-				title: "Any #forge:wires/copper"
+				title: "任意 #forge:wires/copper"
 				type: "item"
 			}]
-			title: "Copper Wire"
+			title: "铜线"
 			x: 5.785714285714292d
 			y: -5.164285714285747d
 		}
@@ -278,7 +278,7 @@
 				item: "cmi:engineering_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械零件"
 			x: 14.785714285714292d
 			y: -1.3257142857143265d
 		}
@@ -297,7 +297,7 @@
 				item: "cmi:light_engineering_mechanism"
 				type: "item"
 			}]
-			title: "Light Engineering Mechanism"
+			title: "轻型工程机制"
 			x: 17.928571428571416d
 			y: -3.142857142857139d
 		}

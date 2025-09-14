@@ -30,7 +30,7 @@
 				item: "thermal:lumium_ingot"
 				type: "item"
 			}]
-			title: "Lunium Ingot"
+			title: "月光锭"
 			x: -18.42857142857143d
 			y: 0.807142857142864d
 		}
@@ -41,7 +41,7 @@
 			id: "6446DBC6D9F816BF"
 			tasks: [{
 				id: "66FDA1C2A093B09C"
-				title: "Gear Press"
+				title: "齿轮压模"
 				type: "checkmark"
 			}]
 			x: -13.714285714285715d
@@ -65,7 +65,7 @@
 				item: "thermal:lumium_gear"
 				type: "item"
 			}]
-			title: "Lumium Gear"
+			title: "流明齿轮"
 			x: 4.0d
 			y: -1.0d
 		}
@@ -83,7 +83,7 @@
 				item: "thermal:enderium_ingot"
 				type: "item"
 			}]
-			title: "Enderium Ingot"
+			title: "末影锭"
 			x: -16.42857142857143d
 			y: -2.5285714285713965d
 		}
@@ -94,7 +94,7 @@
 			id: "14052EA9F3024744"
 			tasks: [{
 				id: "104BEC3A257EE9AD"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -11.857142857142861d
@@ -115,7 +115,7 @@
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
-			title: "RF Coil"
+			title: "RF线圈"
 			x: -6.428571428571431d
 			y: -5.414285714285668d
 		}
@@ -134,7 +134,7 @@
 				item: "cmi:flux_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 8.42857142857143d
 			y: -4.6071428571428115d
 		}
@@ -153,7 +153,7 @@
 				item: "cmi:resonant_mechanism"
 				type: "item"
 			}]
-			title: "Resonant Mechanism"
+			title: "谐振机械"
 			x: 15.57142857142857d
 			y: -1.5142857142856627d
 		}

@@ -29,7 +29,7 @@
 				item: "cmi:stainless_steel_ingot"
 				type: "item"
 			}]
-			title: "Stainless Steel Ingot"
+			title: "不锈钢锭"
 			x: -18.552142857142854d
 			y: 6.214285714285715d
 		}
@@ -39,7 +39,7 @@
 			id: "076152A7B17A706C"
 			tasks: [{
 				id: "3B2BD227AF47816B"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -12.694999999999993d
@@ -53,7 +53,7 @@
 				item: "mekanism:alloy_atomic"
 				type: "item"
 			}]
-			title: "Alloy Atomic"
+			title: "合金原子"
 			x: -6.896428571428558d
 			y: -7.071428571428569d
 		}
@@ -71,7 +71,7 @@
 				item: "cmi:stainless_steel_plate"
 				type: "item"
 			}]
-			title: "Stainless Steel Plate"
+			title: "不锈钢板"
 			x: -9.955000000000013d
 			y: 6.0714285714285765d
 		}
@@ -89,7 +89,7 @@
 				item: "mekanism:elite_control_circuit"
 				type: "item"
 			}]
-			title: "Elite Control Circut"
+			title: "精英控制电路"
 			x: -10.656428571428549d
 			y: -4.214285714285715d
 		}
@@ -107,7 +107,7 @@
 				item: "ad_astra:calorite_plate"
 				type: "item"
 			}]
-			title: "Calorite Plate"
+			title: "耐热金属板"
 			x: -4.572142857142836d
 			y: -1.7857142857142847d
 		}
@@ -117,7 +117,7 @@
 			id: "54DAC919BA5D8C9B"
 			tasks: [{
 				id: "437BD64F92EA6F1D"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -6.702142857142832d
@@ -140,7 +140,7 @@
 				item: "mekanism:ultimate_control_circuit"
 				type: "item"
 			}]
-			title: "Ultimate Control Circut"
+			title: "终极控制电路"
 			x: -7.189285714285688d
 			y: 3.5d
 		}
@@ -158,7 +158,7 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			title: "Diamond"
+			title: "钻石"
 			x: 4.180714285714316d
 			y: 8.071428571428577d
 		}
@@ -176,7 +176,7 @@
 				item: "cmi:mekanism_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 7.479285714285751d
 			y: 5.071428571428584d
 		}
@@ -194,7 +194,7 @@
 				item: "cmi:ultimate_mekanism_mechanism"
 				type: "item"
 			}]
-			title: "Ultimate Mekanism  Mechanism"
+			title: "终极通用机械"
 			x: 11.441428571428574d
 			y: 6.928571428571431d
 		}

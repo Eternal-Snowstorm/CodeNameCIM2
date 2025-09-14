@@ -33,10 +33,10 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "Any #forge:ingots/steel"
+				title: "任意 #forge:ingots/钢"
 				type: "item"
 			}]
-			title: "Steel Ingot"
+			title: "钢锭"
 			x: -10.165238095238102d
 			y: 1.0747619047619068d
 		}
@@ -46,7 +46,7 @@
 			id: "7FBBC1E4BAF32D9A"
 			tasks: [{
 				id: "1D7C25D2BE7FD975"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -8.520952380952387d
@@ -65,7 +65,7 @@
 				item: "mekanism:hdpe_pellet"
 				type: "item"
 			}]
-			title: "HDPE Pellet"
+			title: "高密度聚乙烯颗粒"
 			x: -1.5d
 			y: -5.5d
 		}
@@ -75,7 +75,7 @@
 			id: "73E4472A2E33911B"
 			tasks: [{
 				id: "2B16C3A6337F7A92"
-				title: "Enrichment"
+				title: "富集"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -98,7 +98,7 @@
 				item: "mekanism:hdpe_sheet"
 				type: "item"
 			}]
-			title: "HDPE Sheet"
+			title: "高密度聚乙烯片"
 			x: -4.802380952380943d
 			y: 2.826190476190469d
 		}
@@ -115,7 +115,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "Copper Ingot"
+			title: "铜锭"
 			x: 3.0d
 			y: -5.5d
 		}
@@ -136,10 +136,10 @@
 						value: "forge:ingots/lead"
 					}
 				}
-				title: "Any #forge:ingots/lead"
+				title: "任意 #forge:ingots/铅"
 				type: "item"
 			}]
-			title: "Lead Ingot"
+			title: "铅锭"
 			x: 4.707619047619076d
 			y: -4.768809523809544d
 		}
@@ -160,10 +160,10 @@
 						value: "forge:ingots/osmium"
 					}
 				}
-				title: "Any #forge:ingots/osmium"
+				title: "任意 #forge:ingots/锇"
 				type: "item"
 			}]
-			title: "Osmium Ingot"
+			title: "锇锭"
 			x: 6.136190476190507d
 			y: -4.340238095238114d
 		}
@@ -184,10 +184,10 @@
 						value: "forge:ingots/tin"
 					}
 				}
-				title: "Any #forge:ingots/tin"
+				title: "任意 #forge:ingots/锡"
 				type: "item"
 			}]
-			title: "Tin Ingot"
+			title: "锡锭"
 			x: 7.814761904761944d
 			y: -3.5188095238095443d
 		}
@@ -202,7 +202,7 @@
 			id: "010AB0A0BA1609AE"
 			tasks: [{
 				id: "0C04604CD9600F46"
-				title: "Press *4"
+				title: "压印 *4"
 				type: "checkmark"
 			}]
 			x: 3.8476190476190624d
@@ -229,10 +229,10 @@
 						value: "forge:plates/copper"
 					}
 				}
-				title: "Any #forge:plates/copper"
+				title: "任意 #forge:plates/铜板"
 				type: "item"
 			}]
-			title: "Copper Plate"
+			title: "铜板"
 			x: 0.06333333333334679d
 			y: 1.5604761904761872d
 		}
@@ -257,10 +257,10 @@
 						value: "forge:plates/lead"
 					}
 				}
-				title: "Any #forge:plates/lead"
+				title: "任意 #forge:plates/铅板"
 				type: "item"
 			}]
-			title: "Lead Plate"
+			title: "铅板"
 			x: 1.4933333333333394d
 			y: 2.2661904761904594d
 		}
@@ -285,10 +285,10 @@
 						value: "forge:plates/osmium"
 					}
 				}
-				title: "Any #forge:plates/osmium"
+				title: "任意 #forge:plates/锇板"
 				type: "item"
 			}]
-			title: "Osmium Plate"
+			title: "锇板"
 			x: 3.064761904761916d
 			y: 2.8290476190476d
 		}
@@ -313,10 +313,10 @@
 						value: "forge:plates/tin"
 					}
 				}
-				title: "Any #forge:plates/tin"
+				title: "任意 #forge:plates/锡板"
 				type: "item"
 			}]
-			title: "Tin Plate"
+			title: "锡板"
 			x: 4.6361904761904995d
 			y: 3.5347619047618863d
 		}
@@ -326,7 +326,7 @@
 			id: "5BA03CCA5168AED4"
 			tasks: [{
 				id: "7925FF5677955520"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: 6.779047619047645d
@@ -346,7 +346,7 @@
 				item: "cmi:mekanism_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械零件"
 			x: 9.49333333333336d
 			y: 2.3747619047618898d
 		}
@@ -364,7 +364,7 @@
 				item: "cmi:structure_mechanism"
 				type: "item"
 			}]
-			title: "Structure Mechanism"
+			title: "结构机械"
 			x: 13.493333333333375d
 			y: 3.7947619047618844d
 		}

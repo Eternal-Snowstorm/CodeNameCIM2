@@ -22,7 +22,7 @@
 			id: "3E5BEC20B4D4B89F"
 			tasks: [{
 				id: "1E4D2D827F42826F"
-				title: "Molten Pig Iron"
+				title: "熔融猪铁"
 				type: "checkmark"
 			}]
 			x: -10.249999999999993d
@@ -34,7 +34,7 @@
 			id: "05EAE1825CF7A469"
 			tasks: [{
 				id: "78EF4BA2D42D2068"
-				title: "Cast"
+				title: "铸造"
 				type: "checkmark"
 			}]
 			x: -16.964285714285708d
@@ -54,7 +54,7 @@
 				item: "tconstruct:pig_iron_ingot"
 				type: "item"
 			}]
-			title: "Pig Iron Ingot"
+			title: "猪铁锭"
 			x: -18.107142857142847d
 			y: 6.248571428571431d
 		}
@@ -64,7 +64,7 @@
 			id: "2F31E171E4FB969D"
 			tasks: [{
 				id: "4DF4104670A83859"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -15.535714285714278d
@@ -84,7 +84,7 @@
 				item: "vintageimprovements:pig_iron_sheet"
 				type: "item"
 			}]
-			title: "Pig Iron Sheet"
+			title: "猪铁板"
 			x: -13.571428571428577d
 			y: 7.857142857142854d
 		}
@@ -97,7 +97,7 @@
 			id: "4B67A3B7F01D072E"
 			tasks: [{
 				id: "7BEDB060BDC9D909"
-				title: "Fill"
+				title: "填充"
 				type: "checkmark"
 			}]
 			x: -11.857142857142854d
@@ -109,7 +109,7 @@
 			id: "1F95AE18632113FE"
 			tasks: [{
 				id: "3593F81A3C6C7B88"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -9.0d
@@ -129,7 +129,7 @@
 				item: "tconstruct:pig_iron_nugget"
 				type: "item"
 			}]
-			title: "Pig Iron Nugget"
+			title: "猪铁粒"
 			x: -1.4285714285714306d
 			y: 2.9628571428571533d
 		}
@@ -147,7 +147,7 @@
 				item: "cmi:magical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 14.57142857142857d
 			y: 3.260000000000005d
 		}
@@ -165,7 +165,7 @@
 				item: "cmi:pigiron_mechanism"
 				type: "item"
 			}]
-			title: "Pig Iron Mechanism"
+			title: "猪铁机械装置"
 			x: 20.85714285714286d
 			y: 5.914285714285725d
 		}

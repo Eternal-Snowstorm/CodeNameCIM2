@@ -35,10 +35,10 @@
 						value: "forge:plates/gold"
 					}
 				}
-				title: "Any #forge:plates/gold"
+				title: "任意 #forge:plates/gold"
 				type: "item"
 			}]
-			title: "Gold Plate"
+			title: "金板"
 			x: -12.75d
 			y: 1.5d
 		}
@@ -62,10 +62,10 @@
 						value: "forge:nuggets/gold"
 					}
 				}
-				title: "Any #forge:nuggets/gold"
+				title: "任意 #forge:nuggets/gold"
 				type: "item"
 			}]
-			title: "Gold Nugget"
+			title: "金粒"
 			x: -4.0d
 			y: 5.0d
 		}
@@ -85,7 +85,7 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 1.0d
 			y: 1.0d
 		}
@@ -105,7 +105,7 @@
 				item: "cmi:gold_mechanism"
 				type: "item"
 			}]
-			title: "Gold Mechanism"
+			title: "金机械"
 			x: 7.5d
 			y: 4.5d
 		}

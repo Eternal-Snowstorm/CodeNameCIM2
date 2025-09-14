@@ -14,7 +14,7 @@
 			dependencies: ["27A18EEBBE063B43"]
 			description: [
 				"Q: 我要是出生在沙漠咋办？"
-				"A: 重开吧。"
+				"A: 重开吧."
 			]
 			icon: "minecraft:oak_log"
 			id: "18237D913486FE33"
@@ -372,7 +372,7 @@
 						value: "forge:clay"
 					}
 				}
-				title: "Clay"
+				title: "黏土"
 				type: "item"
 			}]
 			title: "黏土"
@@ -695,7 +695,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "我切切切！"
+			subtitle: "我切切切!"
 			tasks: [
 				{
 					id: "22BA1E6E753A44E6"
@@ -729,7 +729,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "没用完的液体存起来！"
+			subtitle: "没用完的液体存起来!"
 			tasks: [
 				{
 					id: "4E6C57F17D620BB1"

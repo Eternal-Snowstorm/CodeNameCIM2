@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "cmi:block/machine/ue/structure_machine",
-		"particle": "cmi:block/machine/ue/structure_machine"
+		"0": "cmi:block/machine/ue/air_tight_machine",
+		"particle": "cmi:block/machine/ue/air_tight_machine"
 	},
 	"elements": [
 		{

@@ -38,7 +38,7 @@
 				title: "硫磺"
 				type: "item"
 			}]
-			title: "Sulfur"
+			title: "硫磺"
 			x: -17.0d
 			y: 2.0d
 		}
@@ -201,7 +201,7 @@
 				title: "切割"
 				type: "checkmark"
 			}]
-			title: "Cutting"
+			title: "切割"
 			x: -9.821428571428577d
 			y: 3.7857142857142847d
 		}

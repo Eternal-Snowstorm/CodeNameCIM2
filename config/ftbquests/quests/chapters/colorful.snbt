@@ -33,10 +33,10 @@
 						value: "minecraft:wooden_slabs"
 					}
 				}
-				title: "Any #minecraft:wooden_slabs"
+				title: "任意 #minecraft:wooden_slabs"
 				type: "item"
 			}]
-			title: "Wooden Slab"
+			title: "木台阶"
 			x: -24.857142857142854d
 			y: -3.8042857142857187d
 		}
@@ -54,7 +54,7 @@
 				item: "minecraft:red_dye"
 				type: "item"
 			}]
-			title: "Red Dye"
+			title: "红色染料"
 			x: -12.142857142857139d
 			y: 1.0342857142857156d
 		}
@@ -72,7 +72,7 @@
 				item: "minecraft:yellow_dye"
 				type: "item"
 			}]
-			title: "Yellow Dye"
+			title: "黄色染料"
 			x: -6.714285714285722d
 			y: -3.1271428571428572d
 		}
@@ -90,7 +90,7 @@
 				item: "minecraft:blue_dye"
 				type: "item"
 			}]
-			title: "Blue Dye"
+			title: "蓝色染料"
 			x: 0.8571428571428612d
 			y: -0.21714285714286063d
 		}
@@ -108,7 +108,7 @@
 				item: "minecraft:white_dye"
 				type: "item"
 			}]
-			title: "White Dye"
+			title: "白色染料"
 			x: 4.999999999999986d
 			y: -3.664285714285718d
 		}
@@ -126,7 +126,7 @@
 				item: "minecraft:black_dye"
 				type: "item"
 			}]
-			title: "Black Dye"
+			title: "黑色染料"
 			x: 12.57142857142857d
 			y: -0.682857142857145d
 		}
@@ -139,7 +139,7 @@
 				item: "cmi:magical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 18.0d
 			y: -5.1299999999999955d
 		}
@@ -157,7 +157,7 @@
 				item: "cmi:colorful_mechanism"
 				type: "item"
 			}]
-			title: "Colorful Mechanism"
+			title: "彩色机械"
 			x: 25.714285714285722d
 			y: -2.07714285714286d
 		}

@@ -30,7 +30,7 @@
 				item: "minecraft:dirt"
 				type: "item"
 			}]
-			title: "Dirt"
+			title: "泥土"
 			x: -21.0d
 			y: -1.1957142857142813d
 		}
@@ -41,7 +41,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "39C53B8030201945"
-				title: "Water"
+				title: "水"
 				type: "checkmark"
 			}]
 			x: -1.7142857142857082d
@@ -57,7 +57,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "310BF5C67CFA5633"
-				title: "Fill"
+				title: "填充"
 				type: "checkmark"
 			}]
 			x: -1.8571428571428612d
@@ -77,7 +77,7 @@
 				item: "minecraft:grass_block"
 				type: "item"
 			}]
-			title: "Grass Block"
+			title: "草方块"
 			x: 1.5714285714285694d
 			y: 3.3599999999999994d
 		}
@@ -99,10 +99,10 @@
 						value: "minecraft:flowers"
 					}
 				}
-				title: "Any #minecraft:flowers"
+				title: "任意 #minecraft:flowers"
 				type: "item"
 			}]
-			title: "Flower"
+			title: "花朵"
 			x: -10.428571428571423d
 			y: -11.121428571428574d
 		}
@@ -116,7 +116,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "63A6D82EB10DE6E9"
-				title: "Deploy"
+				title: "部署"
 				type: "checkmark"
 			}]
 			x: 3.4285714285714306d
@@ -132,7 +132,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "106B1AF60297C1CF"
-				title: "Fill"
+				title: "填充"
 				type: "checkmark"
 			}]
 			x: 11.142857142857139d
@@ -153,7 +153,7 @@
 				item: "cmi:magical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanim Part"
+			title: "机械部件"
 			x: 14.42857142857143d
 			y: 2.434285714285714d
 		}
@@ -172,7 +172,7 @@
 				item: "cmi:nature_mechanism"
 				type: "item"
 			}]
-			title: "Nature Mechanism"
+			title: "自然机械装置"
 			x: 20.14285714285714d
 			y: 4.952857142857162d
 		}

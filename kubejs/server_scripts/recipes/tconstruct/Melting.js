@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 		])
 
 		let meltingPoint = global.meltingPoints[metal]
-		let fluidId = IngredientUtils.getFirstFluidId(`forge:molten_${metal}`)
+		let fluidId = IngredientUtils.getFirstFluidId(`tconstruct:molten_${metal}`)
 		let namespace = global.materialNamespace[metal]
 		let ingot = `#forge:ingots/${metal}`
 		let plate = `#forge:plates/${metal}`
@@ -99,27 +99,29 @@ ServerEvents.recipes((event) => {
 					"input": `tconstruct:${metal}`,
 					"result": {
 						"amount": 90,
-						"tag": `forge:molten_${metal}`
+						"tag": `tconstruct:molten_${metal}`
 					},
 					"temperature": meltingPoint
 				})
+
 			} if (namespace === "t") {
 				event.custom({
 					"type": "tconstruct:material_melting",
 					"input": `thermalconstruct:${metal}`,
 					"result": {
 						"amount": 90,
-						"tag": `forge:molten_${metal}`
+						"tag": `tconstruct:molten_${metal}`
 					},
 					"temperature": meltingPoint
 				})
+
 			} if (namespace === "c") {
 				event.custom({
 					"type": "tconstruct:material_melting",
 					"input": `cmi:${metal}`,
 					"result": {
 						"amount": 90,
-						"tag": `forge:molten_${metal}`
+						"tag": `tconstruct:molten_${metal}`
 					},
 					"temperature": meltingPoint
 				})

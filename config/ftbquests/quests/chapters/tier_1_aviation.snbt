@@ -33,10 +33,10 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "Any #forge:ingots/steel"
+				title: "任意 #forge:ingots/钢"
 				type: "item"
 			}]
-			title: "Steel Ingot"
+			title: "钢锭"
 			x: -17.339183673469392d
 			y: 7.566326530612251d
 		}
@@ -46,7 +46,7 @@
 			id: "763CA072A2A18CCB"
 			tasks: [{
 				id: "4C8ED45E29675AE2"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -12.196326530612247d
@@ -58,7 +58,7 @@
 			id: "5CCB1415C01E7A71"
 			tasks: [{
 				id: "7AC59FC2F8C3D795"
-				title: "Craft"
+				title: "合成"
 				type: "checkmark"
 			}]
 			x: -9.910612244897962d
@@ -78,7 +78,7 @@
 				item: "cmi:computer_component"
 				type: "item"
 			}]
-			title: "Computer Component"
+			title: "计算机组件"
 			x: -6.5048979591836655d
 			y: 8.31061224489796d
 		}
@@ -99,10 +99,10 @@
 						value: "forge:ingots/silver"
 					}
 				}
-				title: "Any #forge:ingots/silver"
+				title: "任意 #forge:ingots/银"
 				type: "item"
 			}]
-			title: "Silver Ingot"
+			title: "银锭"
 			x: -15.027755102040814d
 			y: 3.7334693877551075d
 		}
@@ -124,10 +124,10 @@
 						value: "forge:rods/silver"
 					}
 				}
-				title: "Any #forge:rods/silver"
+				title: "任意 #forge:rods/银棒"
 				type: "item"
 			}]
-			title: "Silver Rod"
+			title: "银棒"
 			x: -7.622040816326518d
 			y: -1.415102040816322d
 		}
@@ -148,7 +148,7 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			title: "Cured Rubber"
+			title: "硫化橡胶"
 			x: -5.430612244897937d
 			y: -0.28224489795915986d
 		}
@@ -160,7 +160,7 @@
 			id: "4FD621DD5AADFC77"
 			tasks: [{
 				id: "4B60C978260BBB42"
-				title: "Mix and Cast"
+				title: "混合与铸造"
 				type: "checkmark"
 			}]
 			x: -5.502040816326513d
@@ -178,7 +178,7 @@
 				item: "thermal:sulfur_dust"
 				type: "item"
 			}]
-			title: "Sulfur Dust"
+			title: "硫磺粉"
 			x: -5.0734693877550825d
 			y: -5.890816326530604d
 		}
@@ -194,7 +194,7 @@
 				item: "cmi:rubber_plate"
 				type: "item"
 			}]
-			title: "Rubber Plate"
+			title: "橡胶板"
 			x: -4.144897959183652d
 			y: -5.890816326530604d
 		}
@@ -215,7 +215,7 @@
 				item: "ad_astra:steel_cable"
 				type: "item"
 			}]
-			title: "Steel Cable"
+			title: "钢缆"
 			x: -0.7163265306122213d
 			y: 3.2820408163265427d
 		}
@@ -232,7 +232,7 @@
 				item: "minecraft:bucket"
 				type: "item"
 			}]
-			title: "Bucket"
+			title: "桶"
 			x: 1.855102040816348d
 			y: 0.9191836734693979d
 		}
@@ -254,10 +254,10 @@
 						value: "forge:rods/iron"
 					}
 				}
-				title: "Any #forge:rods/iron"
+				title: "任意 #forge:rods/iron"
 				type: "item"
 			}]
-			title: "Iron Rod"
+			title: "铁杆"
 			x: 3.14081632653064d
 			y: 1.3363265306122614d
 		}
@@ -279,10 +279,10 @@
 						value: "forge:plates/steel"
 					}
 				}
-				title: "Any #forge:plates/steel"
+				title: "任意 #forge:plates/steel"
 				type: "item"
 			}]
-			title: "Steel Plate"
+			title: "钢板"
 			x: 4.140816326530626d
 			y: 1.622040816326546d
 		}
@@ -303,7 +303,7 @@
 				item: "ad_astra:steel_tank"
 				type: "item"
 			}]
-			title: "Steel Tank"
+			title: "钢制储罐"
 			x: 5.426530612244903d
 			y: 5.622040816326553d
 		}
@@ -316,7 +316,7 @@
 				item: "cmi:space_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 10.283673469387779d
 			y: 1.8306122448979778d
 		}
@@ -329,7 +329,7 @@
 				item: "cmi:tier_1_aviation_mechanism"
 				type: "item"
 			}]
-			title: "Tier 1 Aviation Mechanism"
+			title: "一级航空机械"
 			x: 13.997959183673487d
 			y: 3.3963265306122707d
 		}

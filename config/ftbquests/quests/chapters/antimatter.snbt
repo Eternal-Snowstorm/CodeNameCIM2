@@ -21,7 +21,7 @@
 			id: "03F0FCAFC3C6712A"
 			tasks: [{
 				id: "28F4151B181E320F"
-				title: "Condense"
+				title: "压缩"
 				type: "checkmark"
 			}]
 			x: -6.998571428571417d
@@ -41,7 +41,7 @@
 				item: "ae2:matter_ball"
 				type: "item"
 			}]
-			title: "Matter Ball"
+			title: "物质球"
 			x: -9.354285714285702d
 			y: -4.232857142857156d
 		}
@@ -51,7 +51,7 @@
 			id: "786CF4F47346C148"
 			tasks: [{
 				id: "306CF2686355D7B8"
-				title: "Particle Collision"
+				title: "粒子碰撞"
 				type: "checkmark"
 			}]
 			x: -6.638571428571417d
@@ -71,7 +71,7 @@
 				item: "ae2:singularity"
 				type: "item"
 			}]
-			title: "Singularity"
+			title: "奇点"
 			x: -1.2800000000000011d
 			y: 3.0528571428571283d
 		}
@@ -81,7 +81,7 @@
 			id: "4AB432278E33FFAC"
 			tasks: [{
 				id: "3285AB786A467E91"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: 4.005714285714284d
@@ -107,7 +107,7 @@
 			id: "64F2D9237A417803"
 			tasks: [{
 				id: "177B0A753D3E4A88"
-				title: "Polonium"
+				title: "钋"
 				type: "checkmark"
 			}]
 			x: -5.565714285714279d
@@ -146,7 +146,7 @@
 			id: "2C24FAFBDA02E124"
 			tasks: [{
 				id: "56EC424D610FE63E"
-				title: "Antimatter"
+				title: "反物质"
 				type: "checkmark"
 			}]
 			x: 4.72000000000002d
@@ -158,7 +158,7 @@
 			id: "67A33A7F3C63AE88"
 			tasks: [{
 				id: "4BDBA4FFB66FEB39"
-				title: "Chemical Crystalliz"
+				title: "化学结晶"
 				type: "checkmark"
 			}]
 			x: 5.29142857142859d
@@ -181,7 +181,7 @@
 				item: "mekanism:pellet_antimatter"
 				type: "item"
 			}]
-			title: "Pellet Antimatter"
+			title: "反物质粒"
 			x: 9.291428571428604d
 			y: 5.014285714285691d
 		}
@@ -199,7 +199,7 @@
 				item: "cmi:quantum_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 14.720000000000034d
 			y: 7.174285714285688d
 		}
@@ -217,7 +217,7 @@
 				item: "cmi:antimatter_mechanism"
 				type: "item"
 			}]
-			title: "Antimatter Mechanism"
+			title: "反物质机械"
 			x: 16.64857142857145d
 			y: 7.638571428571396d
 		}

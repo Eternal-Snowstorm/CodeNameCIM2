@@ -12,7 +12,7 @@ Ponder.registry((event) => {
 		scene.world.moveSection(move0, [-2, 0, 0], 0)
 		scene.idle(20)
 		scene.overlay.showOutline("blue", {}, [2, 1, 2], 90)
-		// 如果想要使用水泵
+		// 如果想要使用水井
 		scene.text(40, "If you want to use the water pump", [2, 1.5, 2])
 		scene.idle(45)
 		// 你需要先搭建一个完整的结构
@@ -127,7 +127,7 @@ Ponder.registry((event) => {
 
 		scene.addKeyframe()
 		scene.overlay.showOutline("blue", {}, [1, 3, 3, 3, 6, 1], 40)
-		scene.text(40, "如你所见, 这是一台水泵")
+		scene.text(40, "如你所见, 这是一台水井")
 		scene.idle(55)
 		scene.world.hideIndependentSection(inde1, Direction.UP)
 		scene.world.hideIndependentSection(inde2, Direction.UP)

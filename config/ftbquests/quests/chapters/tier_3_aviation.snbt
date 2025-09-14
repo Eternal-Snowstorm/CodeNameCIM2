@@ -29,7 +29,7 @@
 				item: "ad_astra:ostrum_ingot"
 				type: "item"
 			}]
-			title: "Ostrum Ingot"
+			title: "紫金锭"
 			x: -8.392857142857146d
 			y: 3.3414285714285725d
 		}
@@ -39,7 +39,7 @@
 			id: "60877457DA56BEF0"
 			tasks: [{
 				id: "21A23D84FC7DF6D8"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -7.042857142857137d
@@ -59,7 +59,7 @@
 				item: "ad_astra:ostrum_plate"
 				type: "item"
 			}]
-			title: "Ostrum Plate"
+			title: "紫金板"
 			x: -5.19285714285715d
 			y: 4.682857142857131d
 		}
@@ -77,7 +77,7 @@
 				item: "cmi:computer_component"
 				type: "item"
 			}]
-			title: "Computer Component"
+			title: "计算机组件"
 			x: -1.057142857142864d
 			y: 6.2542857142857d
 		}
@@ -95,7 +95,7 @@
 				item: "ad_astra:desh_fluid_pipe"
 				type: "item"
 			}]
-			title: "Desh Fiuld Pipe"
+			title: "戴斯流体管道"
 			x: 3.221428571428561d
 			y: 2.682857142857138d
 		}
@@ -116,7 +116,7 @@
 				item: "ad_astra:ostrum_tank"
 				type: "item"
 			}]
-			title: "Ostrum Tank"
+			title: "紫金储罐"
 			x: 7.214285714285708d
 			y: 4.1114285714285685d
 		}
@@ -128,7 +128,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "Normal =P"
+			subtitle: "普通 =P"
 			tasks: [{
 				id: "574905A4593C62CC"
 				item: {
@@ -138,7 +138,7 @@
 				}
 				type: "item"
 			}]
-			title: "Gas tank"
+			title: "气体储罐"
 			x: 1.1357142857142861d
 			y: -2.9757142857142895d
 		}
@@ -151,7 +151,7 @@
 			id: "13AB4A4DFCA225C6"
 			tasks: [{
 				id: "1A340412D545FC01"
-				title: "Deploy"
+				title: "部署"
 				type: "checkmark"
 			}]
 			x: 3.2714285714285722d
@@ -171,7 +171,7 @@
 				item: "cmi:space_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 11.699999999999996d
 			y: 0.6357142857142719d
 		}
@@ -189,7 +189,7 @@
 				item: "cmi:tier_3_aviation_mechanism"
 				type: "item"
 			}]
-			title: "Tier 3 Aviation Mechanism"
+			title: "三级航空机械"
 			x: 16.69999999999998d
 			y: 2.6199999999999832d
 		}

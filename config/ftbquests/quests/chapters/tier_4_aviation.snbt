@@ -29,7 +29,7 @@
 				item: "ad_astra:calorite_ingot"
 				type: "item"
 			}]
-			title: "Calorite Ingot"
+			title: "耐热金属锭"
 			x: -15.214285714285737d
 			y: 6.5357142857142705d
 		}
@@ -39,7 +39,7 @@
 			id: "2E241F8B79CE9FA8"
 			tasks: [{
 				id: "7B12DD0A3FB9A489"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -13.771428571428586d
@@ -59,7 +59,7 @@
 				item: "cmi:computer_component"
 				type: "item"
 			}]
-			title: "Computer Component"
+			title: "计算机组件"
 			x: -5.471428571428589d
 			y: 6.964285714285708d
 		}
@@ -77,7 +77,7 @@
 				item: "ad_astra:calorite_plate"
 				type: "item"
 			}]
-			title: "Calorite Plate"
+			title: "耐热金属板"
 			x: -12.042857142857159d
 			y: 7.821428571428548d
 		}
@@ -98,7 +98,7 @@
 				item: "ad_astra:ostrum_fluid_pipe"
 				type: "item"
 			}]
-			title: "Ostrum Fiuld Pipe"
+			title: "紫金流体管道"
 			x: -0.2785714285714249d
 			y: 5.928571428571431d
 		}
@@ -115,7 +115,7 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			title: "Fiuld Pipe"
+			title: "流体管道"
 			x: -5.714285714285715d
 			y: 1.9285714285714306d
 		}
@@ -133,7 +133,7 @@
 				item: "ad_astra:ostrum_plate"
 				type: "item"
 			}]
-			title: "Ostrum Plate"
+			title: "紫金板"
 			x: -3.4285714285714164d
 			y: 2.7142857142857153d
 		}
@@ -154,7 +154,7 @@
 				}
 				type: "item"
 			}]
-			title: "Gas Tank"
+			title: "气体储罐"
 			x: -7.857142857142847d
 			y: -3.642857142857146d
 		}
@@ -167,7 +167,7 @@
 			id: "5C039154C09FFD89"
 			tasks: [{
 				id: "277420A16DCA581F"
-				title: "Deploy"
+				title: "部署"
 				type: "checkmark"
 			}]
 			x: -5.714285714285715d
@@ -190,7 +190,7 @@
 				item: "ad_astra:ostrum_tank"
 				type: "item"
 			}]
-			title: "Ostrum Tank"
+			title: "紫金储罐"
 			x: 5.0d
 			y: 7.928571428571416d
 		}
@@ -208,7 +208,7 @@
 				item: "cmi:space_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 9.285714285714278d
 			y: 4.571428571428555d
 		}
@@ -226,7 +226,7 @@
 				item: "cmi:tier_4_aviation_mechanism"
 				type: "item"
 			}]
-			title: "Tier 4 Aviation Mechanism"
+			title: "四级航空机械"
 			x: 13.428571428571416d
 			y: 6.428571428571409d
 		}

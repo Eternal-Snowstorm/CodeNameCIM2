@@ -33,10 +33,10 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "Any #forge:ingots/bronze"
+				title: "任意 #forge:ingots/bronze"
 				type: "item"
 			}]
-			title: "Bronze Ingot"
+			title: "青铜锭"
 			x: -6.987142857142864d
 			y: 12.107142857142847d
 		}
@@ -46,7 +46,7 @@
 			id: "14341BC5791FBEEE"
 			tasks: [{
 				id: "58D7B0FAE9577FAC"
-				title: "Press"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -4.117142857142866d
@@ -58,7 +58,7 @@
 			id: "6A77A8DDDC4663D8"
 			tasks: [{
 				id: "5295AEDB69CD2A6F"
-				title: "Cut"
+				title: "切割"
 				type: "checkmark"
 			}]
 			x: -1.3900000000000077d
@@ -81,10 +81,10 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "Any #forge:ingots/bronze"
+				title: "任意 #forge:ingots/bronze"
 				type: "item"
 			}]
-			title: "Bronze Ingot"
+			title: "青铜锭"
 			x: -6.162857142857163d
 			y: 4.785714285714285d
 		}
@@ -94,7 +94,7 @@
 			id: "53C2429F47DDF6BE"
 			tasks: [{
 				id: "58DDD171B4BF894E"
-				title: "Craft"
+				title: "合成"
 				type: "checkmark"
 			}]
 			x: -4.020000000000017d
@@ -118,10 +118,10 @@
 						value: "forge:rods/bronze"
 					}
 				}
-				title: "Any #forge:rods/bronze"
+				title: "任意 #forge:rods/bronze"
 				type: "item"
 			}]
-			title: "Bronze Rod"
+			title: "青铜杆"
 			x: -2.0785714285714363d
 			y: 7.428571428571431d
 		}
@@ -131,7 +131,7 @@
 			id: "77E2E7C835C9A5A6"
 			tasks: [{
 				id: "6341C438FB18151E"
-				title: "Spring Coil"
+				title: "弹簧线圈"
 				type: "checkmark"
 			}]
 			x: 0.6485714285714153d
@@ -154,7 +154,7 @@
 				item: "vintageimprovements:bronze_spring"
 				type: "item"
 			}]
-			title: "Bronze Spring"
+			title: "青铜弹簧"
 			x: 0.0185714285714198d
 			y: 11.92857142857143d
 		}
@@ -176,10 +176,10 @@
 						value: "forge:nuggets/bronze"
 					}
 				}
-				title: "Any #forge:nuggets/bronze"
+				title: "任意 #forge:nuggets/bronze"
 				type: "item"
 			}]
-			title: "Bronze Nugget"
+			title: "青铜粒"
 			x: 3.88857142857141d
 			y: 13.499999999999993d
 		}
@@ -200,10 +200,10 @@
 						value: "create:shaft"
 					}
 				}
-				title: "Any #create:shaft"
+				title: "任意 #create:shaft"
 				type: "item"
 			}]
-			title: "Shaft"
+			title: "传动杆"
 			x: 0.03142857142855604d
 			y: 4.208571428571432d
 		}
@@ -216,7 +216,7 @@
 			id: "0E8FBC83516CD28D"
 			tasks: [{
 				id: "36DA54172A662E65"
-				title: "Deploy *4"
+				title: "部署 *4"
 				type: "checkmark"
 			}]
 			x: 2.8171428571428407d
@@ -238,10 +238,10 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "Any #forge:ingots/bronze"
+				title: "任意 #forge:ingots/bronze"
 				type: "item"
 			}]
-			title: "Bronze Ingot"
+			title: "青铜锭"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -251,7 +251,7 @@
 			id: "3AAC31907C14A332"
 			tasks: [{
 				id: "23804518F056F3EA"
-				title: "Press"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: 5.745714285714264d
@@ -275,10 +275,10 @@
 						value: "forge:plates/bronze"
 					}
 				}
-				title: "Any #forge:plates/bronze"
+				title: "任意 #forge:plates/bronze"
 				type: "item"
 			}]
-			title: "Bronze Plate"
+			title: "青铜板"
 			x: 4.745714285714271d
 			y: 2.257142857142881d
 		}
@@ -299,7 +299,7 @@
 				item: "create:flywheel"
 				type: "item"
 			}]
-			title: "Flywheel"
+			title: "飞轮"
 			x: 6.602857142857118d
 			y: 11.180000000000028d
 		}
@@ -317,7 +317,7 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			title: "Mechanism Part"
+			title: "机械部件"
 			x: 10.245714285714264d
 			y: 12.680000000000028d
 		}
@@ -335,7 +335,7 @@
 				item: "cmi:bronze_mechanism"
 				type: "item"
 			}]
-			title: "Bronze Mechanism"
+			title: "青铜机械"
 			x: 12.102857142857125d
 			y: 13.537142857142882d
 		}
