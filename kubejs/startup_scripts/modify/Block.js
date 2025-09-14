@@ -19,6 +19,9 @@ BlockEvents.modification((event) => {
         event.modify(`steampowered:${materials}_large_cogwheel`, (modify) => {
             modify.soundType = SoundType.LANTERN
         })
+		event.modify(`steampowered:${materials}_burner`, (modify) => {
+            modify.soundType = SoundType.LANTERN
+        })
 		event.modify(`steampowered:${materials}_boiler`, (modify) => {
             modify.soundType = SoundType.LANTERN
         })
