@@ -451,7 +451,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["advanced_mekanism", "高级通用"],
 		["elite_mekanism", "精英通用"],
 		["ultimate_mekanism", "终极通用"],
-		["structure", "结构"],
 		["nuclear", "核"],
 		["antimatter", "反物质"],
 		["coil", "线圈"],
@@ -464,7 +463,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["redstone", "红石"],
 		["potion", "秘药"],
 		["bronze", "青铜"],
-		["osmium", "锇质"]
+		["air_tight", "气密"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
 		addFlashDriveLanguage(material, name)

@@ -30,7 +30,6 @@ ServerEvents.recipes((event) => {
 		"advanced_mekanism",
 		"elite_mekanism",
 		"ultimate_mekanism",
-		"structure",
 		"nuclear",
 		"antimatter",
 		"coil",

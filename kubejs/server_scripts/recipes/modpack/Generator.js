@@ -36,17 +36,6 @@ ServerEvents.recipes((event) => {
 	// 	D: "immersiveengineering:component_iron"
 	// })
 
-	// Poetality发电机
-	kubejs.shaped("portality:generator", [
-		" A ",
-		"ACA",
-		" B "
-	], {
-		A: "portality:frame",
-		B: "cmi:nether_mechanism",
-		C: MECH
-	})
-
 	// 电磁线圈
 	kubejs.shaped("mekanismgenerators:electromagnetic_coil", [
 		"ADA",
