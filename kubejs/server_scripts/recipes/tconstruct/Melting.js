@@ -5,6 +5,12 @@ ServerEvents.recipes((event) => {
 		id: "tconstruct:tools/materials/melting/plated_slimewood"
 	})
 
+	function addRemoveId(id) {
+		return {
+			id: new RegExp(id)
+		}
+	}
+
 	tconstruct.melting(Fluid.of("tconstruct:molten_obsidian", 1000))
 		.ingredient("#forge:obsidian")
 		.time(80)
@@ -13,15 +19,10 @@ ServerEvents.recipes((event) => {
 
 	global.metalGroup.forEach((metal) => {
 		event.remove([
-			{
-				id: new RegExp(`^tconstruct:smeltery/melting/metal/${metal}/.+`)
-			}, {
-				id: new RegExp(`^thermalconstruct:smeltery/melting/metal/${metal}/.+`)
-			}, {
-				id: new RegExp(`^tconstruct:tools/materials/melting/${metal}`)
-			}, {
-				id: new RegExp(`^thermalconstruct:smeltery/melting/${metal}`)
-			}
+			addRemoveId(`^tconstruct:smeltery/melting/metal/${metal}/.+`), ,
+			addRemoveId(`^thermalconstruct:smeltery/melting/metal/${metal}/.+`),
+			addRemoveId(`^tconstruct:tools/materials/melting/${metal}`),
+			addRemoveId(`^thermalconstruct:smeltery/melting/${metal}`)
 		])
 
 		let meltingPoint = global.meltingPoints[metal]
