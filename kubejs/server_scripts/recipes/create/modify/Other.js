@@ -177,4 +177,14 @@ ServerEvents.recipes((event) => {
 		])
 	]).loops(1).transitionalItem("create:brass_casing")
 		.id("create:crafting/kinetics/steam_engine")
+
+	// 工作盆盖板
+	kubejs.shaped("createdieselgenerators:basin_lid", [
+		"ABA",
+		"C C"
+	], {
+		A: "#forge:plates/andesite_alloy",
+		B: "#forge:ingots/andesite_alloy",
+		C: "thermal:cured_rubber"
+	}).id("createdieselgenerators:crafting/basin_lid")
 })

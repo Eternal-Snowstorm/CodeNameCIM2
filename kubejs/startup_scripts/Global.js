@@ -292,7 +292,7 @@ global.materialNamespace = {
 	"sodium": "c",
 	"potassium": "c",
 	"calcium": "c",
-	"tungsten": "c"
+	"tungsten": "v"
 }
 // 熔点数组
 global.meltingLevels = {
