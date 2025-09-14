@@ -10,17 +10,22 @@
 	quests: [
 		{
 			id: "5D2E38893802D455"
-			rewards: [{
-				id: "1DFA0C9DF6D8CEEA"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "1DFA0C9DF6D8CEEA"
+					type: "xp"
+					xp: 100
+				}
+			]
 			subtitle: "一会你就知道为什么要这么多了"
 			tasks: [
 				{
 					count: 78L
 					id: "3C0DE860C91A0332"
-					item: { Count: 78, id: "cmi:programmed_flash_drive" }
+					item: {
+						Count: 78
+						id: "cmi:programmed_flash_drive"
+					}
 					type: "item"
 				}
 				{
@@ -35,187 +40,235 @@
 		{
 			dependencies: ["5D2E38893802D455"]
 			id: "76B5771D01DDF6B7"
-			rewards: [{
-				id: "049AD9E69B2030C9"
-				type: "xp"
-				xp: 5000
-			}]
+			rewards: [
+				{
+					id: "049AD9E69B2030C9"
+					type: "xp"
+					xp: 5000
+				}
+			]
 			shape: "gear"
 			size: 2.0d
-			tasks: [{
-				count: 2L
-				id: "35DC21BFF97A6DBA"
-				item: "cmi:creative_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 2L
+					id: "35DC21BFF97A6DBA"
+					item: "cmi:creative_mechanism"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["76B5771D01DDF6B7"]
 			id: "1C12DA73C3D2EBF7"
-			rewards: [{
-				id: "0B98D6D864B78229"
-				type: "xp_levels"
-				xp_levels: 50
-			}]
+			rewards: [
+				{
+					id: "0B98D6D864B78229"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
 			shape: "square"
 			size: 1.2d
-			tasks: [{
-				id: "64593EDCC4830B44"
-				item: "create:creative_crate"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "64593EDCC4830B44"
+					item: "create:creative_crate"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 6.0d
 		}
 		{
 			id: "69496289CC226EAC"
-			rewards: [{
-				id: "14E9FA5FDFE6E8FC"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "7F2CA93CC59ED37F"
-				item: "cmi:final_mechanism_part"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "14E9FA5FDFE6E8FC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "7F2CA93CC59ED37F"
+					item: "cmi:final_mechanism_part"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			id: "6025E8FD11984A19"
-			rewards: [{
-				id: "2A4FB5133AEA0F59"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "73D862A4093EFC65"
-				item: "cmi:ultimate_mekanism_mechanism_flash_drive"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2A4FB5133AEA0F59"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "73D862A4093EFC65"
+					item: "cmi:ultimate_mekanism_mechanism_flash_drive"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			id: "399AE43712409288"
-			rewards: [{
-				id: "2FE59228FED601C9"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "1C85466D1B608366"
-				item: "cmi:nuclear_mechanism_flash_drive"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2FE59228FED601C9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "1C85466D1B608366"
+					item: "cmi:nuclear_mechanism_flash_drive"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: 1.5d
 		}
 		{
 			id: "179711BCD1EB9FDA"
-			rewards: [{
-				id: "6DDB06153D5E609E"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "355593164B68A6F5"
-				item: "cmi:advanced_mekanism_mechanism_flash_drive"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6DDB06153D5E609E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "355593164B68A6F5"
+					item: "cmi:advanced_mekanism_mechanism_flash_drive"
+					type: "item"
+				}
+			]
 			x: -2.0d
 			y: 1.5d
 		}
 		{
 			id: "2079EB86DA286242"
-			rewards: [{
-				id: "4C1589D890E6CB2B"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "3289D9E9E232A59C"
-				item: "cmi:photosensitive_mechanism_flash_drive"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4C1589D890E6CB2B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "3289D9E9E232A59C"
+					item: "cmi:photosensitive_mechanism_flash_drive"
+					type: "item"
+				}
+			]
 			x: -2.0d
 			y: -2.5d
 		}
 		{
 			id: "58FB3DB99F14279F"
-			rewards: [{
-				id: "5C67F106B33744D3"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "5F53194C356D3C08"
-				item: "cmi:thermal_mechanism_flash_drive"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5C67F106B33744D3"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "5F53194C356D3C08"
+					item: "cmi:thermal_mechanism_flash_drive"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: -2.5d
 		}
 		{
 			id: "6C5BC013413F6E19"
-			rewards: [{
-				id: "54AA5F7AD14B01BB"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "374E677A04CFBCE7"
-				item: "cmi:precision_mechanism_flash_drive"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "54AA5F7AD14B01BB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "374E677A04CFBCE7"
+					item: "cmi:precision_mechanism_flash_drive"
+					type: "item"
+				}
+			]
 			x: -3.0d
 			y: -3.5d
 		}
 		{
 			id: "76D2A5FA10C65F68"
-			rewards: [{
-				id: "3465C2132946AFEB"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "528DAE4BDBC0546A"
-				item: "cmi:copper_mechanism_flash_drive"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3465C2132946AFEB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "528DAE4BDBC0546A"
+					item: "cmi:copper_mechanism_flash_drive"
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: -3.5d
 		}
 		{
 			id: "4CD816217AB76A92"
-			rewards: [{
-				id: "27334CED31191758"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "45AC73670A4344AF"
-				item: "cmi:bronze_mechanism_flash_drive"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "27334CED31191758"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "45AC73670A4344AF"
+					item: "cmi:bronze_mechanism_flash_drive"
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: 2.5d
 		}
 		{
 			id: "1B5B01986FBEC954"
-			rewards: [{
-				id: "22E5FCF44A9F88B6"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "7165DF191AE89E1A"
-				item: "cmi:coil_mechanism_flash_drive"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "22E5FCF44A9F88B6"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "7165DF191AE89E1A"
+					item: "cmi:coil_mechanism_flash_drive"
+					type: "item"
+				}
+			]
 			x: -3.0d
 			y: 2.5d
 		}

@@ -5,14 +5,16 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:resonant_mechanism"
 	id: "4A450D8A3CB5E9F3"
-	images: [{
-		height: 21.9d
-		image: "cmi:textures/images/background/resonant.png"
-		rotation: 0.0d
-		width: 57.6d
-		x: -2.0d
-		y: 0.0d
-	}]
+	images: [
+		{
+			height: 21.9d
+			image: "cmi:textures/images/background/resonant.png"
+			rotation: 0.0d
+			width: 57.6d
+			x: -2.0d
+			y: 0.0d
+		}
+	]
 	order_index: 11
 	quest_links: [ ]
 	quests: [
@@ -20,17 +22,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3C0E736DFE86AF6B"
-			rewards: [{
-				id: "76DB5716359E5AAB"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "004BA51988CA0A33"
-				item: "thermal:lumium_ingot"
-				type: "item"
-			}]
-			title: "Lunium Ingot"
+			rewards: [
+				{
+					id: "76DB5716359E5AAB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "004BA51988CA0A33"
+					item: "thermal:lumium_ingot"
+					type: "item"
+				}
+			]
+			title: "月光锭"
 			x: -18.42857142857143d
 			y: 0.807142857142864d
 		}
@@ -39,11 +45,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6446DBC6D9F816BF"
-			tasks: [{
-				id: "66FDA1C2A093B09C"
-				title: "Gear Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "66FDA1C2A093B09C"
+					title: "齿轮压模"
+					type: "checkmark"
+				}
+			]
 			x: -13.714285714285715d
 			y: 2.2357142857142946d
 		}
@@ -55,17 +63,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "4ED43AC44602A99C"
-			rewards: [{
-				id: "437A67E3C05D77B1"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4DCC38ED1EF6FE79"
-				item: "thermal:lumium_gear"
-				type: "item"
-			}]
-			title: "Lumium Gear"
+			rewards: [
+				{
+					id: "437A67E3C05D77B1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4DCC38ED1EF6FE79"
+					item: "thermal:lumium_gear"
+					type: "item"
+				}
+			]
+			title: "流明齿轮"
 			x: 4.0d
 			y: -1.0d
 		}
@@ -73,17 +85,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "68FE3754B7FD6A25"
-			rewards: [{
-				id: "1808B2455778ABEE"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "63E5D9837FABCBB4"
-				item: "thermal:enderium_ingot"
-				type: "item"
-			}]
-			title: "Enderium Ingot"
+			rewards: [
+				{
+					id: "1808B2455778ABEE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "63E5D9837FABCBB4"
+					item: "thermal:enderium_ingot"
+					type: "item"
+				}
+			]
+			title: "末影锭"
 			x: -16.42857142857143d
 			y: -2.5285714285713965d
 		}
@@ -92,11 +108,13 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "14052EA9F3024744"
-			tasks: [{
-				id: "104BEC3A257EE9AD"
-				title: "Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "104BEC3A257EE9AD"
+					title: "压制"
+					type: "checkmark"
+				}
+			]
 			x: -11.857142857142861d
 			y: -0.8642857142856784d
 		}
@@ -105,17 +123,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5CA424539C8A6E21"
-			rewards: [{
-				id: "19F4A77CEA31E599"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2FA090BCB35880C0"
-				item: "thermal:rf_coil"
-				type: "item"
-			}]
-			title: "RF Coil"
+			rewards: [
+				{
+					id: "19F4A77CEA31E599"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "2FA090BCB35880C0"
+					item: "thermal:rf_coil"
+					type: "item"
+				}
+			]
+			title: "RF线圈"
 			x: -6.428571428571431d
 			y: -5.414285714285668d
 		}
@@ -124,17 +146,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "098EC7655B58032B"
-			rewards: [{
-				id: "259B81BC588E2FF4"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "38162D1F8EAECEBF"
-				item: "cmi:flux_mechanism_part"
-				type: "item"
-			}]
-			title: "Mechanism Part"
+			rewards: [
+				{
+					id: "259B81BC588E2FF4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "38162D1F8EAECEBF"
+					item: "cmi:flux_mechanism_part"
+					type: "item"
+				}
+			]
+			title: "机械部件"
 			x: 8.42857142857143d
 			y: -4.6071428571428115d
 		}
@@ -143,28 +169,34 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "18BFAB5AC99461B0"
-			rewards: [{
-				id: "16D3C334A020F384"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "54A240554A0F5216"
-				item: "cmi:resonant_mechanism"
-				type: "item"
-			}]
-			title: "Resonant Mechanism"
+			rewards: [
+				{
+					id: "16D3C334A020F384"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "54A240554A0F5216"
+					item: "cmi:resonant_mechanism"
+					type: "item"
+				}
+			]
+			title: "谐振机械"
 			x: 15.57142857142857d
 			y: -1.5142857142856627d
 		}
 		{
 			dependencies: ["14052EA9F3024744"]
 			id: "51185FDAE329399B"
-			tasks: [{
-				id: "41B0806330D1C0C6"
-				item: "thermal:enderium_plate"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "41B0806330D1C0C6"
+					item: "thermal:enderium_plate"
+					type: "item"
+				}
+			]
 			x: -8.5d
 			y: -3.5d
 		}

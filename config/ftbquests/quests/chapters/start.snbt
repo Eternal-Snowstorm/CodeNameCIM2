@@ -14,29 +14,33 @@
 			dependencies: ["27A18EEBBE063B43"]
 			description: [
 				"Q: 我要是出生在沙漠咋办？"
-				"A: 重开吧。"
+				"A: 重开吧."
 			]
 			icon: "minecraft:oak_log"
 			id: "18237D913486FE33"
-			rewards: [{
-				id: "06636288EE5A0CF9"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "06636288EE5A0CF9"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			subtitle: "记得种回去"
-			tasks: [{
-				id: "5B1C9F698CB8E5CC"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
+			tasks: [
+				{
+					id: "5B1C9F698CB8E5CC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
 					}
+					title: "原木"
+					type: "item"
 				}
-				title: "原木"
-				type: "item"
-			}]
+			]
 			title: "万恶之源"
 			x: -5.5d
 			y: -1.5d
@@ -45,23 +49,27 @@
 			dependencies: ["18237D913486FE33"]
 			icon: "minecraft:oak_planks"
 			id: "77E939643ECBC35D"
-			rewards: [{
-				id: "66001D2A2D7F63F7"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "71825456C60860A5"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:planks"
-					}
+			rewards: [
+				{
+					id: "66001D2A2D7F63F7"
+					type: "xp"
+					xp: 10
 				}
-				title: "木板"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "71825456C60860A5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "木板"
+					type: "item"
+				}
+			]
 			title: "木板"
 			x: -3.5d
 			y: -1.5d
@@ -69,24 +77,28 @@
 		{
 			dependencies: ["77E939643ECBC35D"]
 			id: "219A962B82333395"
-			rewards: [{
-				id: "71225F6C3EA4BCEB"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "不是棍木"
-			tasks: [{
-				id: "7F9158854E4B0E49"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:rods/wooden"
-					}
+			rewards: [
+				{
+					id: "71225F6C3EA4BCEB"
+					type: "xp"
+					xp: 10
 				}
-				title: "木棍"
-				type: "item"
-			}]
+			]
+			subtitle: "不是棍木"
+			tasks: [
+				{
+					id: "7F9158854E4B0E49"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:rods/wooden"
+						}
+					}
+					title: "木棍"
+					type: "item"
+				}
+			]
 			title: "木棍"
 			x: -3.5d
 			y: -0.5d
@@ -94,17 +106,21 @@
 		{
 			dependencies: ["77E939643ECBC35D"]
 			id: "0950E73B864090F0"
-			rewards: [{
-				id: "4E86B94E0C604702"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4E86B94E0C604702"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "不是圆石工作台"
-			tasks: [{
-				id: "6F95F79F0C6650AB"
-				item: "minecraft:crafting_table"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6F95F79F0C6650AB"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
 			title: "工作台"
 			x: -2.5d
 			y: -1.5d
@@ -112,17 +128,21 @@
 		{
 			dependencies: ["219A962B82333395"]
 			id: "29624F942DC7CC08"
-			rewards: [{
-				id: "593610C7A7A10CC1"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				count: 4L
-				id: "6F090051AAF62190"
-				item: "tconstruct:pattern"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "593610C7A7A10CC1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6F090051AAF62190"
+					item: "tconstruct:pattern"
+					type: "item"
+				}
+			]
 			title: "用来搓部件"
 			x: -3.5d
 			y: 0.5d
@@ -189,11 +209,13 @@
 				}
 			]
 			subtitle: "可以查看所有的材料数据"
-			tasks: [{
-				id: "726B99C8AA64D96B"
-				item: "tconstruct:encyclopedia"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "726B99C8AA64D96B"
+					item: "tconstruct:encyclopedia"
+					type: "item"
+				}
+			]
 			title: "知识扩充"
 			x: -3.5d
 			y: 2.5d
@@ -201,17 +223,21 @@
 		{
 			dependencies: ["2F1D496A9B588220"]
 			id: "414EEE72A59CEE7E"
-			rewards: [{
-				id: "7744CAAADE6B57E8"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7744CAAADE6B57E8"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "以前叫水泥来着..."
-			tasks: [{
-				id: "220DAA4A983F78AB"
-				item: "tconstruct:grout"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "220DAA4A983F78AB"
+					item: "tconstruct:grout"
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: -0.5d
 		}
@@ -221,16 +247,20 @@
 				"136FAF419EC66A2F"
 			]
 			id: "2AEF0BF597FF0E36"
-			rewards: [{
-				id: "72E3D8891F99BEAD"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "73A17049198BEC5E"
-				item: "tconstruct:seared_brick"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "72E3D8891F99BEAD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "73A17049198BEC5E"
+					item: "tconstruct:seared_brick"
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: 0.5d
 		}
@@ -260,11 +290,13 @@
 			]
 			shape: "square"
 			size: 1.5d
-			tasks: [{
-				id: "60BBAE1D75A64388"
-				item: "cmi:stone_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "60BBAE1D75A64388"
+					item: "cmi:stone_mechanism"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: 0.5d
 		}
@@ -315,17 +347,21 @@
 		{
 			dependencies: ["0DB45287C4FF724B"]
 			id: "7C14A1CC724511CB"
-			rewards: [{
-				id: "4C14E7D36ACC2778"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4C14E7D36ACC2778"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "三个沙砾可以合成一个燧石"
-			tasks: [{
-				id: "03C108D923131D75"
-				item: "minecraft:flint"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "03C108D923131D75"
+					item: "minecraft:flint"
+					type: "item"
+				}
+			]
 			x: 0.5d
 			y: -2.5d
 		}
@@ -339,16 +375,20 @@
 				}
 			}
 			id: "1270086FA79438E4"
-			rewards: [{
-				id: "052C57F8E9C85D61"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "052C57F8E9C85D61"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "你也可以手挖"
-			tasks: [{
-				id: "23868A918DDF3627"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "23868A918DDF3627"
+					type: "checkmark"
+				}
+			]
 			title: "铲子"
 			x: -1.5d
 			y: -2.0d
@@ -357,24 +397,28 @@
 			dependencies: ["1270086FA79438E4"]
 			icon: "minecraft:clay_ball"
 			id: "2F1D496A9B588220"
-			rewards: [{
-				id: "04FEC11008A93E6F"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "不是指你, Dream"
-			tasks: [{
-				id: "5E890AB67D72E70A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:clay"
-					}
+			rewards: [
+				{
+					id: "04FEC11008A93E6F"
+					type: "xp"
+					xp: 10
 				}
-				title: "Clay"
-				type: "item"
-			}]
+			]
+			subtitle: "不是指你, Dream"
+			tasks: [
+				{
+					id: "5E890AB67D72E70A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:clay"
+						}
+					}
+					title: "黏土"
+					type: "item"
+				}
+			]
 			title: "黏土"
 			x: -0.5d
 			y: -1.5d
@@ -385,16 +429,20 @@
 				"7C14A1CC724511CB"
 			]
 			id: "79C36E5EB68E7476"
-			rewards: [{
-				id: "0D12F5110DF2884F"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				id: "595EE2C9F1E377F3"
-				item: "cmi:basic_mechanism_part"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0D12F5110DF2884F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "595EE2C9F1E377F3"
+					item: "cmi:basic_mechanism_part"
+					type: "item"
+				}
+			]
 			x: 0.5d
 			y: -1.5d
 		}
@@ -421,27 +469,33 @@
 			]
 			shape: "square"
 			size: 1.5d
-			tasks: [{
-				id: "6E12031437BBAE52"
-				item: "cmi:wooden_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6E12031437BBAE52"
+					item: "cmi:wooden_mechanism"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1270086FA79438E4"]
 			id: "0DB45287C4FF724B"
-			rewards: [{
-				id: "28861EAA34931FDE"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "720500722CBF0E76"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "28861EAA34931FDE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "720500722CBF0E76"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: -2.5d
 		}
@@ -454,22 +508,26 @@
 			dependency_requirement: "one_completed"
 			description: ["燧石制作的锤子只有1/4的耐久, 但你为什么不多做点呢?"]
 			id: "2C0C50F32F39BD3F"
-			rewards: [{
-				id: "1A0161DE002C8C21"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "77B0BCC1BC320A97"
-				item: {
-					Count: 1
-					id: "immersiveengineering:hammer"
-					tag: {
-						Damage: 0
-					}
+			rewards: [
+				{
+					id: "1A0161DE002C8C21"
+					type: "xp"
+					xp: 10
 				}
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "77B0BCC1BC320A97"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			x: 0.5d
 			y: -3.5d
 		}
@@ -482,11 +540,13 @@
 			]
 			icon: "minecraft:string"
 			id: "542BB1A40BC1B441"
-			rewards: [{
-				id: "5991A9D3EA6281A2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5991A9D3EA6281A2"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [
 				{
 					id: "5D45077745461FF6"
@@ -513,17 +573,21 @@
 			description: ["在开始发展前下来先把下面的需求做好"]
 			icon: "minecraft:grass_block"
 			id: "27A18EEBBE063B43"
-			rewards: [{
-				id: "128E304879444877"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "128E304879444877"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			subtitle: "开始收集资源"
-			tasks: [{
-				id: "45EA37160B892F69"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "45EA37160B892F69"
+					type: "checkmark"
+				}
+			]
 			title: "先安顿下来"
 			x: -3.0d
 			y: -3.0d
@@ -532,18 +596,22 @@
 			dependencies: ["2AEF0BF597FF0E36"]
 			hide_dependency_lines: true
 			id: "216101B16F206C60"
-			rewards: [{
-				id: "73996EE12E6E535B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				count: 3L
-				id: "086C84A57364C4D5"
-				item: "tconstruct:seared_faucet"
-				title: "浇筑口"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "73996EE12E6E535B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "086C84A57364C4D5"
+					item: "tconstruct:seared_faucet"
+					title: "浇筑口"
+					type: "item"
+				}
+			]
 			x: -2.0d
 			y: 1.5d
 		}
@@ -551,16 +619,20 @@
 			dependencies: ["5080AD4A92076C63"]
 			hide_dependency_lines: true
 			id: "1D814C25827605EB"
-			rewards: [{
-				id: "2F0B4D0469EA5B41"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "787FD8B30555371A"
-				item: "tconstruct:seared_table"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2F0B4D0469EA5B41"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "787FD8B30555371A"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+			]
 			x: 1.5d
 			y: 2.5d
 		}
@@ -568,16 +640,20 @@
 			dependencies: ["5080AD4A92076C63"]
 			hide_dependency_lines: true
 			id: "2155ED5D3B95A6E9"
-			rewards: [{
-				id: "2072380977139207"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3637B74D09538A03"
-				item: "tconstruct:seared_basin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2072380977139207"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "3637B74D09538A03"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: 2.5d
 		}
@@ -585,11 +661,13 @@
 			dependencies: ["749E2F97A546138F"]
 			icon: "tconstruct:seared_fuel_tank"
 			id: "13F1C5092BA578E2"
-			rewards: [{
-				id: "3AAE7918B4E76E88"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3AAE7918B4E76E88"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "提供的温度比固体燃料高"
 			tasks: [
 				{
@@ -615,23 +693,27 @@
 		{
 			dependencies: ["1270086FA79438E4"]
 			id: "3B35EDE8B923177A"
-			rewards: [{
-				id: "75B57A428322B493"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "232BBF458E1AFF0B"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:sand"
-					}
+			rewards: [
+				{
+					id: "75B57A428322B493"
+					type: "xp"
+					xp: 10
 				}
-				title: "沙子"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "232BBF458E1AFF0B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:sand"
+						}
+					}
+					title: "沙子"
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: -1.0d
 		}
@@ -641,23 +723,27 @@
 				"136FAF419EC66A2F"
 			]
 			id: "21117B9D2DEA67D4"
-			rewards: [{
-				id: "369DDF117BF5CBDD"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "70E9058D52101ABD"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:glass"
-					}
+			rewards: [
+				{
+					id: "369DDF117BF5CBDD"
+					type: "xp"
+					xp: 10
 				}
-				title: "玻璃"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "70E9058D52101ABD"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:glass"
+						}
+					}
+					title: "玻璃"
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 0.0d
 		}
@@ -678,11 +764,13 @@
 				}
 			]
 			subtitle: "不需要我教了吧"
-			tasks: [{
-				id: "5FE33B9B04299D33"
-				item: "minecraft:furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5FE33B9B04299D33"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+			]
 			x: -2.5d
 			y: -0.5d
 		}
@@ -690,12 +778,14 @@
 			dependencies: ["7C14A1CC724511CB"]
 			icon: "farmersdelight:cutting_board"
 			id: "4594936AAC131166"
-			rewards: [{
-				id: "167503AC6078CC01"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "我切切切！"
+			rewards: [
+				{
+					id: "167503AC6078CC01"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "我切切切!"
 			tasks: [
 				{
 					id: "22BA1E6E753A44E6"
@@ -724,12 +814,14 @@
 			hide_dependency_lines: true
 			icon: "tconstruct:seared_ingot_tank"
 			id: "15D248E218C4FAB2"
-			rewards: [{
-				id: "38B0ED4732010DA6"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "没用完的液体存起来！"
+			rewards: [
+				{
+					id: "38B0ED4732010DA6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "没用完的液体存起来!"
 			tasks: [
 				{
 					id: "4E6C57F17D620BB1"
@@ -754,11 +846,13 @@
 		{
 			dependencies: ["4594936AAC131166"]
 			id: "53608AA274E5E414"
-			rewards: [{
-				id: "64E76F8819AE5989"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "64E76F8819AE5989"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "你也可以用砧板切"
 			tasks: [
 				{
@@ -828,17 +922,21 @@
 				}
 			}
 			id: "648444B110FB640D"
-			rewards: [{
-				id: "7D0D7AFFEB1768E8"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7D0D7AFFEB1768E8"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "灰化土也可以耕地"
-			tasks: [{
-				id: "5580C021BA791527"
-				title: "要种地"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5580C021BA791527"
+					title: "要种地"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: -5.0d
 		}
@@ -847,23 +945,31 @@
 			description: ["没有燧石可以先做把木质小刀"]
 			icon: "cmi:grass_string"
 			id: "370E4B4D6068CF98"
-			rewards: [{
-				id: "6DF9C4F2A814B1A2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6DF9C4F2A814B1A2"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "用小刀去右键草"
 			tasks: [
 				{
 					count: 30L
 					id: "671FC0A90AD0AF99"
-					item: { Count: 30, id: "cmi:grass_fiber" }
+					item: {
+						Count: 30
+						id: "cmi:grass_fiber"
+					}
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "21E3C9650C6FE97E"
-					item: { Count: 10, id: "cmi:grass_string" }
+					item: {
+						Count: 10
+						id: "cmi:grass_string"
+					}
 					type: "item"
 				}
 				{

@@ -13,34 +13,40 @@
 			id: "6A562CAD5AADE8B9"
 			shape: "gear"
 			subtitle: "感觉里面的空间会很有安全感.."
-			tasks: [{
-				id: "7E95340D78CDBC0C"
-				item: "thermal:machine_frame"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7E95340D78CDBC0C"
+					item: "thermal:machine_frame"
+					type: "item"
+				}
+			]
 			x: -4.5d
 			y: -5.0d
 		}
 		{
 			dependency_requirement: "all_started"
 			id: "2B6B38F467E0A162"
-			rewards: [{
-				id: "563CFB6522B13781"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "405E16B6AAC47090"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/invar"
-					}
+			rewards: [
+				{
+					id: "563CFB6522B13781"
+					type: "xp"
+					xp: 10
 				}
-				title: "殷钢锭"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "405E16B6AAC47090"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/invar"
+						}
+					}
+					title: "殷钢锭"
+					type: "item"
+				}
+			]
 			title: "殷钢锭"
 			x: -3.0d
 			y: -5.0d
@@ -53,52 +59,62 @@
 			]
 			hide_dependent_lines: true
 			id: "1841501B013A8139"
-			rewards: [{
-				id: "25FC28A90A13C966"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "25FC28A90A13C966"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "386C95F012F420BA"
-				item: "cmi:thermal_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "386C95F012F420BA"
+					item: "cmi:thermal_mechanism"
+					type: "item"
+				}
+			]
 			x: -2.25d
 			y: -2.25d
 		}
 		{
 			dependencies: ["054CC551DA5CFB94"]
 			id: "1A77BF1B49C2EA05"
-			tasks: [{
-				id: "38ACB09F149E84C3"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:gears/constantan"
+			tasks: [
+				{
+					id: "38ACB09F149E84C3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gears/constantan"
+						}
 					}
+					title: "康铜齿轮"
+					type: "item"
 				}
-				title: "康铜齿轮"
-				type: "item"
-			}]
+			]
 			x: -2.0d
 			y: -4.0d
 		}
 		{
 			id: "1D8A1D223F15B923"
-			rewards: [{
-				id: "09A73CE4ECE905DC"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "09A73CE4ECE905DC"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "但它不是马达"
-			tasks: [{
-				id: "750621601DAB2155"
-				item: "thermal:rf_coil"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "750621601DAB2155"
+					item: "thermal:rf_coil"
+					type: "item"
+				}
+			]
 			title: "这个东西接上电转的飞快"
 			x: -5.5d
 			y: -3.0d
@@ -106,34 +122,40 @@
 		{
 			dependencies: ["1D8A1D223F15B923"]
 			id: "5BD6EBC1F19DB22C"
-			tasks: [{
-				id: "4426DDEFF4BB9BFC"
-				item: "cmi:flux_mechanism_part"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4426DDEFF4BB9BFC"
+					item: "cmi:flux_mechanism_part"
+					type: "item"
+				}
+			]
 			x: -4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2B6B38F467E0A162"]
 			id: "6E1346FADDAC81CB"
-			rewards: [{
-				id: "5716EED4C0457CDC"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7278E3069B6EFB85"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/invar"
-					}
+			rewards: [
+				{
+					id: "5716EED4C0457CDC"
+					type: "xp"
+					xp: 10
 				}
-				title: "殷钢板"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "7278E3069B6EFB85"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/invar"
+						}
+					}
+					title: "殷钢板"
+					type: "item"
+				}
+			]
 			title: "殷钢板"
 			x: -3.0d
 			y: -4.0d
@@ -141,36 +163,40 @@
 		{
 			dependency_requirement: "all_started"
 			id: "054CC551DA5CFB94"
-			tasks: [{
-				id: "318B133B6EACB14E"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/constantan"
+			tasks: [
+				{
+					id: "318B133B6EACB14E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/constantan"
+						}
 					}
+					title: "康铜锭"
+					type: "item"
 				}
-				title: "康铜锭"
-				type: "item"
-			}]
+			]
 			x: -2.0d
 			y: -5.0d
 		}
 		{
 			dependency_requirement: "all_started"
 			id: "0FFDD4E0AC08B29B"
-			tasks: [{
-				id: "7628882BEF14AE4C"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/signalum"
+			tasks: [
+				{
+					id: "7628882BEF14AE4C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/signalum"
+						}
 					}
+					title: "任意 #forge:ingots/信素"
+					type: "item"
 				}
-				title: "Any #forge:ingots/signalum"
-				type: "item"
-			}]
+			]
 			x: 0.5d
 			y: -5.0d
 		}
@@ -181,18 +207,22 @@
 				"5BD6EBC1F19DB22C"
 			]
 			id: "42DA0B5B429DACC9"
-			rewards: [{
-				id: "062C092498D86976"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "062C092498D86976"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "38E804B6C3B47453"
-				item: "cmi:feinforced_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "38E804B6C3B47453"
+					item: "cmi:feinforced_mechanism"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -2.25d
 		}
@@ -203,41 +233,49 @@
 				"5BD6EBC1F19DB22C"
 			]
 			id: "0531A82CFE7311D2"
-			rewards: [{
-				id: "14ADEC480B3C2B84"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "14ADEC480B3C2B84"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "4716560CE9EE7531"
-				item: "cmi:resonant_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4716560CE9EE7531"
+					item: "cmi:resonant_mechanism"
+					type: "item"
+				}
+			]
 			x: 2.25d
 			y: -2.25d
 		}
 		{
 			dependency_requirement: "all_started"
 			id: "7C576110450726F8"
-			rewards: [{
-				id: "75808C78A6165476"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "6041BF685FC8ABF4"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/lumium"
-					}
+			rewards: [
+				{
+					id: "75808C78A6165476"
+					type: "xp"
+					xp: 10
 				}
-				title: "流明锭"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "6041BF685FC8ABF4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/lumium"
+						}
+					}
+					title: "流明锭"
+					type: "item"
+				}
+			]
 			title: "流明锭"
 			x: 3.0d
 			y: -5.0d
@@ -245,23 +283,27 @@
 		{
 			dependency_requirement: "all_started"
 			id: "0A1AB8A282C91166"
-			rewards: [{
-				id: "0D9A98B0C1B04E76"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4C8E1AE7469DBA27"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/enderium"
-					}
+			rewards: [
+				{
+					id: "0D9A98B0C1B04E76"
+					type: "xp"
+					xp: 10
 				}
-				title: "末影锭"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "4C8E1AE7469DBA27"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/enderium"
+						}
+					}
+					title: "末影锭"
+					type: "item"
+				}
+			]
 			title: "末影锭"
 			x: 2.0d
 			y: -5.0d
@@ -269,23 +311,27 @@
 		{
 			dependency_requirement: "all_started"
 			id: "57EC25AC52B42AC2"
-			rewards: [{
-				id: "69FDDF1ADD64D562"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5F4150F7825D30D4"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/electrum"
-					}
+			rewards: [
+				{
+					id: "69FDDF1ADD64D562"
+					type: "xp"
+					xp: 10
 				}
-				title: "琥珀金锭"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "5F4150F7825D30D4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/electrum"
+						}
+					}
+					title: "琥珀金锭"
+					type: "item"
+				}
+			]
 			title: "琥珀金锭"
 			x: -0.5d
 			y: -5.0d
@@ -293,23 +339,27 @@
 		{
 			dependencies: ["57EC25AC52B42AC2"]
 			id: "039DA3533BE9F04F"
-			rewards: [{
-				id: "1B5F7101F08EC961"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3291A43AE3FCD96C"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/electrum"
-					}
+			rewards: [
+				{
+					id: "1B5F7101F08EC961"
+					type: "xp"
+					xp: 10
 				}
-				title: "琥珀金板"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "3291A43AE3FCD96C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/electrum"
+						}
+					}
+					title: "琥珀金板"
+					type: "item"
+				}
+			]
 			title: "琥珀金板"
 			x: -0.5d
 			y: -4.0d
@@ -317,18 +367,20 @@
 		{
 			dependencies: ["0FFDD4E0AC08B29B"]
 			id: "73E05A58EE3905C4"
-			tasks: [{
-				id: "5DCD3CC3467BE2BF"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:gears/signalum"
+			tasks: [
+				{
+					id: "5DCD3CC3467BE2BF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gears/signalum"
+						}
 					}
+					title: "信素齿轮"
+					type: "item"
 				}
-				title: "信素齿轮"
-				type: "item"
-			}]
+			]
 			title: "信素齿轮"
 			x: 0.5d
 			y: -4.0d
@@ -336,23 +388,27 @@
 		{
 			dependencies: ["0A1AB8A282C91166"]
 			id: "07AA69F3389F3143"
-			rewards: [{
-				id: "4C7758125F7C55EF"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "58E2BA00E5D3481C"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/enderium"
-					}
+			rewards: [
+				{
+					id: "4C7758125F7C55EF"
+					type: "xp"
+					xp: 10
 				}
-				title: "末影板"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "58E2BA00E5D3481C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/enderium"
+						}
+					}
+					title: "末影板"
+					type: "item"
+				}
+			]
 			title: "末影板"
 			x: 2.0d
 			y: -4.0d
@@ -360,23 +416,27 @@
 		{
 			dependencies: ["7C576110450726F8"]
 			id: "2739A5A82798001B"
-			rewards: [{
-				id: "1D9FB9C59424050B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "57BF80E2F36ECB8B"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:gears/lumium"
-					}
+			rewards: [
+				{
+					id: "1D9FB9C59424050B"
+					type: "xp"
+					xp: 10
 				}
-				title: "流明齿轮"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "57BF80E2F36ECB8B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gears/lumium"
+						}
+					}
+					title: "流明齿轮"
+					type: "item"
+				}
+			]
 			title: "流明齿轮"
 			x: 3.0d
 			y: -4.0d
@@ -384,46 +444,54 @@
 		{
 			dependencies: ["74D97642DAB6DF6F"]
 			id: "0F2EA46939C06520"
-			rewards: [{
-				id: "26263CABA0662228"
-				type: "xp"
-				xp: 100
-			}]
-			shape: "gear"
-			tasks: [{
-				id: "5FF2CCC88F015D21"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/polyolefin"
-					}
+			rewards: [
+				{
+					id: "26263CABA0662228"
+					type: "xp"
+					xp: 100
 				}
-				title: "聚烯烃板"
-				type: "item"
-			}]
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "5FF2CCC88F015D21"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/polyolefin"
+						}
+					}
+					title: "聚烯烃板"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["7CCC505D92DC2663"]
 			id: "74D97642DAB6DF6F"
-			tasks: [{
-				id: "6E1DC37A5994DE89"
-				item: "thermal:machine_chiller"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6E1DC37A5994DE89"
+					item: "thermal:machine_chiller"
+					type: "item"
+				}
+			]
 			x: 1.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6F9E16D27C6C973B"]
 			id: "7CCC505D92DC2663"
-			tasks: [{
-				id: "163ED354A00B2D2B"
-				item: "thermal_extra:polyolefin_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "163ED354A00B2D2B"
+					item: "thermal_extra:polyolefin_bucket"
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: 0.5d
 		}
@@ -431,27 +499,33 @@
 			dependencies: ["7A517683CCCFF700"]
 			icon: "immersiveindustry:chemical_reactor"
 			id: "6F9E16D27C6C973B"
-			rewards: [{
-				id: "4039BA750D96B28D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2C4A86150FAE0464"
-				title: "反应釜"
-				type: "checkmark"
-			}]
+			rewards: [
+				{
+					id: "4039BA750D96B28D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "2C4A86150FAE0464"
+					title: "反应釜"
+					type: "checkmark"
+				}
+			]
 			title: "你需要一个反应釜"
 			x: -2.0d
 			y: 0.5d
 		}
 		{
 			id: "7A517683CCCFF700"
-			tasks: [{
-				id: "5B4E01D8D4E9F896"
-				item: "mekanism:ethene_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5B4E01D8D4E9F896"
+					item: "mekanism:ethene_bucket"
+					type: "item"
+				}
+			]
 			x: -3.5d
 			y: 0.5d
 		}
@@ -459,11 +533,13 @@
 			dependencies: ["42DA0B5B429DACC9"]
 			id: "51D67AF5AA21448F"
 			subtitle: "更方便自动化的合金"
-			tasks: [{
-				id: "62B73FA496AA1951"
-				item: "thermal:machine_smelter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "62B73FA496AA1951"
+					item: "thermal:machine_smelter"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -1.0d
 		}

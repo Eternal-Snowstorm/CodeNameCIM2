@@ -5,48 +5,58 @@
 	group: "65AEEF30E0964DD3"
 	icon: "create:precision_mechanism"
 	id: "713A9C3AA22A51AA"
-	images: [{
-		height: 31.08d
-		image: "cmi:textures/images/background/precision.png"
-		rotation: 0.0d
-		width: 57.06d
-		x: 0.0d
-		y: 2.5d
-	}]
+	images: [
+		{
+			height: 31.08d
+			image: "cmi:textures/images/background/precision.png"
+			rotation: 0.0d
+			width: 57.06d
+			x: 0.0d
+			y: 2.5d
+		}
+	]
 	order_index: 34
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "7CD5D58DC9294C63"
-			rewards: [{
-				id: "0B45511937C299A5"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "72A13CD5DDDD52C9"
-				item: "minecraft:copper_ingot"
-				type: "item"
-			}]
-			title: "Copper Ingot"
+			rewards: [
+				{
+					id: "0B45511937C299A5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "72A13CD5DDDD52C9"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+			]
+			title: "铜锭"
 			x: -11.071428571428577d
 			y: -6.781428571428577d
 		}
 		{
 			hide_dependent_lines: true
 			id: "3E10BE8D3C7CF17A"
-			rewards: [{
-				id: "0975B175CFC1F5EF"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "08B344D3D32DE971"
-				item: "create:zinc_ingot"
-				type: "item"
-			}]
-			title: "Zinc Ingot"
+			rewards: [
+				{
+					id: "0975B175CFC1F5EF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "08B344D3D32DE971"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+			]
+			title: "锌锭"
 			x: -20.64285714285714d
 			y: -5.741428571428585d
 		}
@@ -57,12 +67,14 @@
 			]
 			hide_dependent_lines: true
 			id: "50592F3A482CB912"
-			subtitle: "...and HEAT!"
-			tasks: [{
-				id: "3AD3DA0901DB5CA2"
-				title: "Mix"
-				type: "checkmark"
-			}]
+			subtitle: "...还有热量!"
+			tasks: [
+				{
+					id: "3AD3DA0901DB5CA2"
+					title: "混合"
+					type: "checkmark"
+				}
+			]
 			x: -15.07142857142857d
 			y: -3.987142857142871d
 		}
@@ -70,17 +82,21 @@
 			dependencies: ["50592F3A482CB912"]
 			hide_dependent_lines: true
 			id: "41E039A1DF262000"
-			rewards: [{
-				id: "6243BACED2B74A1C"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "13BF71D05A766522"
-				item: "create:brass_ingot"
-				type: "item"
-			}]
-			title: "Brass Ingot"
+			rewards: [
+				{
+					id: "6243BACED2B74A1C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "13BF71D05A766522"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
+			title: "黄铜锭"
 			x: -11.5d
 			y: -2.304285714285733d
 		}
@@ -88,11 +104,13 @@
 			dependencies: ["41E039A1DF262000"]
 			hide_dependent_lines: true
 			id: "2EB85DE49F85953B"
-			tasks: [{
-				id: "7E3A4C99F12FA0FC"
-				title: "Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7E3A4C99F12FA0FC"
+					title: "压制"
+					type: "checkmark"
+				}
+			]
 			x: -5.714285714285708d
 			y: 0.3428571428571203d
 		}
@@ -100,18 +118,22 @@
 			dependencies: ["2EB85DE49F85953B"]
 			hide_dependent_lines: true
 			id: "2468BB6C75DC3EBE"
-			rewards: [{
-				id: "33AAF0AEE6944590"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "cogwheel OR gear?"
-			tasks: [{
-				id: "26527B8CEF4580DD"
-				item: "create:cogwheel"
-				type: "item"
-			}]
-			title: "Cogwheel"
+			rewards: [
+				{
+					id: "33AAF0AEE6944590"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "齿轮还是齿轮？"
+			tasks: [
+				{
+					id: "26527B8CEF4580DD"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
+			title: "齿轮"
 			x: -2.0d
 			y: -2.9028571428571652d
 		}
@@ -122,17 +144,21 @@
 			]
 			hide_dependent_lines: true
 			id: "4AA54070EFBE3702"
-			rewards: [{
-				id: "1AD7C2E512914414"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "065AF8659F9DFAA4"
-				item: "create:electron_tube"
-				type: "item"
-			}]
-			title: "Electron Tube"
+			rewards: [
+				{
+					id: "1AD7C2E512914414"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "065AF8659F9DFAA4"
+					item: "create:electron_tube"
+					type: "item"
+				}
+			]
+			title: "电子管"
 			x: 6.928571428571431d
 			y: 0.494285714285688d
 		}
@@ -140,24 +166,28 @@
 			dependencies: ["0053E1D35233E9E3"]
 			hide_dependent_lines: true
 			id: "5A2B2C699C52CE33"
-			rewards: [{
-				id: "4ED08781DA61CE73"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7496BC7AAFF076AB"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/iron"
-					}
+			rewards: [
+				{
+					id: "4ED08781DA61CE73"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:plates/iron"
-				type: "item"
-			}]
-			title: "Iron Plate"
+			]
+			tasks: [
+				{
+					id: "7496BC7AAFF076AB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/iron"
+						}
+					}
+					title: "任意 #forge:plates/iron"
+					type: "item"
+				}
+			]
+			title: "铁板"
 			x: 2.5d
 			y: 5.3914285714285555d
 		}
@@ -165,11 +195,13 @@
 			hide_dependent_lines: true
 			icon: "minecraft:water_bucket"
 			id: "44858D1DE3494B36"
-			tasks: [{
-				id: "5A2C95A4893506FA"
-				title: "Water"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5A2C95A4893506FA"
+					title: "水"
+					type: "checkmark"
+				}
+			]
 			x: -16.64285714285714d
 			y: 3.5342857142857014d
 		}
@@ -177,17 +209,21 @@
 			dependencies: ["4D939D95BFEB4C0F"]
 			hide_dependent_lines: true
 			id: "1C383EB2D2F554D3"
-			rewards: [{
-				id: "44265702C1A25829"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "472A9D1CD5199019"
-				item: "cmi:charged_amethyst"
-				type: "item"
-			}]
-			title: "Charged Amethyst"
+			rewards: [
+				{
+					id: "44265702C1A25829"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "472A9D1CD5199019"
+					item: "cmi:charged_amethyst"
+					type: "item"
+				}
+			]
+			title: "充能紫水晶"
 			x: -6.0d
 			y: 11.5d
 		}
@@ -195,22 +231,26 @@
 			dependencies: ["1C383EB2D2F554D3"]
 			hide_dependent_lines: true
 			id: "0C4ACB64F4456ACC"
-			tasks: [{
-				id: "272ADB36781B51CA"
-				title: "Grind"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "272ADB36781B51CA"
+					title: "研磨"
+					type: "checkmark"
+				}
+			]
 			x: -5.2142857142857295d
 			y: 10.67714285714284d
 		}
 		{
 			hide_dependent_lines: true
 			id: "4D939D95BFEB4C0F"
-			tasks: [{
-				id: "34380DBB64F9BDC3"
-				title: "Charge"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "34380DBB64F9BDC3"
+					title: "充能"
+					type: "checkmark"
+				}
+			]
 			x: -7.0464285714285495d
 			y: 12.02642857142856d
 		}
@@ -218,18 +258,22 @@
 			dependencies: ["0C4ACB64F4456ACC"]
 			hide_dependent_lines: true
 			id: "5C0063B58D625D0B"
-			rewards: [{
-				id: "14DC242E663413AF"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "CHARGE IT AGAIN"
-			tasks: [{
-				id: "43CE3159812AB95C"
-				item: "minecraft:amethyst_shard"
-				type: "item"
-			}]
-			title: "Amethyst Shard"
+			rewards: [
+				{
+					id: "14DC242E663413AF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "再次充能"
+			tasks: [
+				{
+					id: "43CE3159812AB95C"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
+			title: "紫水晶碎片"
 			x: -5.785714285714327d
 			y: 8.53428571428568d
 		}
@@ -237,17 +281,21 @@
 			dependencies: ["0C4ACB64F4456ACC"]
 			hide_dependent_lines: true
 			id: "5DCFEBBF7EDB821F"
-			rewards: [{
-				id: "69CD906822285C61"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5C71A32B29C07BDE"
-				item: "minecraft:redstone"
-				type: "item"
-			}]
-			title: "Redstone Dust"
+			rewards: [
+				{
+					id: "69CD906822285C61"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "5C71A32B29C07BDE"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			title: "红石粉"
 			x: -3.1892857142856883d
 			y: 9.240714285714269d
 		}
@@ -258,11 +306,13 @@
 			]
 			hide_dependent_lines: true
 			id: "27DA9129F1633B83"
-			tasks: [{
-				id: "7BB869DCD3A141A9"
-				title: "Mix"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7BB869DCD3A141A9"
+					title: "混合"
+					type: "checkmark"
+				}
+			]
 			x: -1.7857142857143202d
 			y: 8.605714285714242d
 		}
@@ -271,11 +321,13 @@
 			hide_dependent_lines: true
 			icon: "immersiveengineering:redstone_acid_bucket"
 			id: "784B7E5730FA5A6C"
-			tasks: [{
-				id: "50949D20DC7E3779"
-				title: "Redstone Acid"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "50949D20DC7E3779"
+					title: "红石酸"
+					type: "checkmark"
+				}
+			]
 			x: -0.9285714285714732d
 			y: 7.891428571428534d
 		}
@@ -286,22 +338,26 @@
 			]
 			hide_dependent_lines: true
 			id: "0053E1D35233E9E3"
-			tasks: [{
-				id: "5361445594ADA1D0"
-				title: "Mix"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5361445594ADA1D0"
+					title: "混合"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: 7.0d
 		}
 		{
 			hide_dependent_lines: true
 			id: "2208A48AAC79A57B"
-			tasks: [{
-				id: "3D911632D05B7E4E"
-				title: "Mill"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3D911632D05B7E4E"
+					title: "研磨"
+					type: "checkmark"
+				}
+			]
 			x: -10.327142857142888d
 			y: 7.2128571428571036d
 		}
@@ -309,17 +365,21 @@
 			dependencies: ["2208A48AAC79A57B"]
 			hide_dependent_lines: true
 			id: "638EA9D76F4FFF55"
-			rewards: [{
-				id: "0E37FB17A2FAEFF2"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1FD23207ED392327"
-				item: "ae2:certus_quartz_dust"
-				type: "item"
-			}]
-			title: "Certus Quartz Dust"
+			rewards: [
+				{
+					id: "0E37FB17A2FAEFF2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "1FD23207ED392327"
+					item: "ae2:certus_quartz_dust"
+					type: "item"
+				}
+			]
+			title: "赛特斯石英粉"
 			x: -13.666428571428568d
 			y: 6.517857142857139d
 		}
@@ -330,11 +390,13 @@
 			]
 			hide_dependent_lines: true
 			id: "03C69C9BBD0B26F3"
-			tasks: [{
-				id: "7FC71E56A68590DA"
-				title: "Mix"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7FC71E56A68590DA"
+					title: "混合"
+					type: "checkmark"
+				}
+			]
 			x: -11.493571428571421d
 			y: 3.874999999999993d
 		}
@@ -342,17 +404,21 @@
 			dependencies: ["03C69C9BBD0B26F3"]
 			hide_dependent_lines: true
 			id: "3DE5CE10F9D0DDD5"
-			rewards: [{
-				id: "0992CEB5B1659D36"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "59E236B15B9E05B8"
-				item: "ae2:certus_quartz_crystal"
-				type: "item"
-			}]
-			title: "Certus Quartz Crystal"
+			rewards: [
+				{
+					id: "0992CEB5B1659D36"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "59E236B15B9E05B8"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "赛特斯石英晶体"
 			x: -8.249285714285698d
 			y: 5.910714285714278d
 		}
@@ -360,11 +426,13 @@
 			dependencies: ["3DE5CE10F9D0DDD5"]
 			hide_dependent_lines: true
 			id: "4DE1F2CA85182919"
-			tasks: [{
-				id: "27F20D5BCFC31739"
-				title: "Charge"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "27F20D5BCFC31739"
+					title: "充能"
+					type: "checkmark"
+				}
+			]
 			x: -6.290714285714259d
 			y: 4.482142857142854d
 		}
@@ -372,17 +440,21 @@
 			dependencies: ["4DE1F2CA85182919"]
 			hide_dependent_lines: true
 			id: "0CD5AEDB48EA0D97"
-			rewards: [{
-				id: "2E61B1985A3CA7E4"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "30AF0BE39BDB824B"
-				item: "ae2:charged_certus_quartz_crystal"
-				type: "item"
-			}]
-			title: "Charged Certus Quartz Crystal"
+			rewards: [
+				{
+					id: "2E61B1985A3CA7E4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "30AF0BE39BDB824B"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "充能赛特斯石英晶体"
 			x: -3.1892857142856883d
 			y: 5.625d
 		}
@@ -390,17 +462,21 @@
 			dependencies: ["4AA54070EFBE3702"]
 			hide_dependent_lines: true
 			id: "629BA9D9B3216FD1"
-			rewards: [{
-				id: "74AE7CEBB111BDAA"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "421EA01FCA074801"
-				item: "cmi:mechanical_mechanism_part"
-				type: "item"
-			}]
-			title: "Mechanism Part"
+			rewards: [
+				{
+					id: "74AE7CEBB111BDAA"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "421EA01FCA074801"
+					item: "cmi:mechanical_mechanism_part"
+					type: "item"
+				}
+			]
+			title: "机械部件"
 			x: 11.239285714285742d
 			y: -2.7635714285714315d
 		}
@@ -408,17 +484,21 @@
 			dependencies: ["629BA9D9B3216FD1"]
 			hide_dependent_lines: true
 			id: "6D936793BC513D53"
-			rewards: [{
-				id: "18E299C2D23FEF0B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "110DA41E785C2F73"
-				item: "create:precision_mechanism"
-				type: "item"
-			}]
-			title: "Precision Mechanism"
+			rewards: [
+				{
+					id: "18E299C2D23FEF0B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "110DA41E785C2F73"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+			]
+			title: "精密机械"
 			x: 18.52500000000002d
 			y: 0.2764285714285535d
 		}

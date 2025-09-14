@@ -5,31 +5,37 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:tier_2_aviation_mechanism"
 	id: "4B8ECFCC2BA9D239"
-	images: [{
-		height: 26.4d
-		image: "cmi:textures/images/background/tier_2_ava.png"
-		rotation: 0.0d
-		width: 51.78d
-		x: 3.0d
-		y: -7.0d
-	}]
+	images: [
+		{
+			height: 26.4d
+			image: "cmi:textures/images/background/tier_2_ava.png"
+			rotation: 0.0d
+			width: 51.78d
+			x: 3.0d
+			y: -7.0d
+		}
+	]
 	order_index: 20
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "2A5A731B42749129"
-			rewards: [{
-				id: "6D14C1F11F81796D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "63BBB5BA2256CA02"
-				item: "ad_astra:desh_ingot"
-				type: "item"
-			}]
-			title: "Desh Ingot"
+			rewards: [
+				{
+					id: "6D14C1F11F81796D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "63BBB5BA2256CA02"
+					item: "ad_astra:desh_ingot"
+					type: "item"
+				}
+			]
+			title: "戴斯锭"
 			x: -9.967142857142854d
 			y: -4.928571428571445d
 		}
@@ -37,11 +43,13 @@
 			dependencies: ["2A5A731B42749129"]
 			hide_dependent_lines: true
 			id: "5C419CA9BEBE236C"
-			tasks: [{
-				id: "6E6E0F3B1F268D17"
-				title: "Press"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6E6E0F3B1F268D17"
+					title: "压制"
+					type: "checkmark"
+				}
+			]
 			x: -8.648571428571444d
 			y: -4.357142857142868d
 		}
@@ -49,12 +57,14 @@
 			dependencies: ["5C419CA9BEBE236C"]
 			hide_dependent_lines: true
 			id: "411D7DE638607B90"
-			tasks: [{
-				id: "1983F140F877203A"
-				item: "ad_astra:desh_plate"
-				type: "item"
-			}]
-			title: "Desh Plate"
+			tasks: [
+				{
+					id: "1983F140F877203A"
+					item: "ad_astra:desh_plate"
+					type: "item"
+				}
+			]
+			title: "戴斯板"
 			x: -6.1871428571428595d
 			y: -3.2142857142857366d
 		}
@@ -62,17 +72,21 @@
 			dependencies: ["411D7DE638607B90"]
 			hide_dependent_lines: true
 			id: "4E284836C0AEA42B"
-			rewards: [{
-				id: "0227FF32734F7EB7"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "459BA6C8CDCFF3DD"
-				item: "cmi:computer_component"
-				type: "item"
-			}]
-			title: "Computer Component"
+			rewards: [
+				{
+					id: "0227FF32734F7EB7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "459BA6C8CDCFF3DD"
+					item: "cmi:computer_component"
+					type: "item"
+				}
+			]
+			title: "计算机组件"
 			x: -2.5714285714285694d
 			y: -1.942857142857136d
 		}
@@ -83,35 +97,41 @@
 			]
 			hide_dependent_lines: true
 			id: "3B69482640462E26"
-			tasks: [{
-				id: "5FF4183E6B463D27"
-				title: "Deploy"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5FF4183E6B463D27"
+					title: "部署"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: -11.385714285714265d
 		}
 		{
 			hide_dependent_lines: true
 			id: "17A8A987216BBE3F"
-			rewards: [{
-				id: "52144A5DD15E0350"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "38C36873D990BD23"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:rods/silver"
-					}
+			rewards: [
+				{
+					id: "52144A5DD15E0350"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:rods/silver"
-				type: "item"
-			}]
-			title: "Silver Rod"
+			]
+			tasks: [
+				{
+					id: "38C36873D990BD23"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:rods/silver"
+						}
+					}
+					title: "任意 #forge:rods/silver"
+					type: "item"
+				}
+			]
+			title: "银杆"
 			x: -1.142857142857146d
 			y: -11.52857142857141d
 		}
@@ -122,38 +142,46 @@
 			]
 			hide_dependent_lines: true
 			id: "67B0DF4470D9BBF8"
-			rewards: [{
-				id: "0B01B25EE99FF75F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3BC5A183C1F04D66"
-				item: "ad_astra:desh_cable"
-				type: "item"
-			}]
-			title: "Desh Cable"
+			rewards: [
+				{
+					id: "0B01B25EE99FF75F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "3BC5A183C1F04D66"
+					item: "ad_astra:desh_cable"
+					type: "item"
+				}
+			]
+			title: "戴斯缆"
 			x: 3.357142857142847d
 			y: -7.042857142857116d
 		}
 		{
 			hide_dependent_lines: true
 			id: "78C7AAD9038C6C2E"
-			rewards: [{
-				id: "1A3E8A6CB776E674"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4EDE7B37963F3831"
-				item: {
-					Count: 1
-					id: "ad_astra:gas_tank"
-					tag: { }
+			rewards: [
+				{
+					id: "1A3E8A6CB776E674"
+					type: "xp"
+					xp: 10
 				}
-				type: "item"
-			}]
-			title: "Gas Tank"
+			]
+			tasks: [
+				{
+					id: "4EDE7B37963F3831"
+					item: {
+						Count: 1
+						id: "ad_astra:gas_tank"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "气体储罐"
 			x: 8.785714285714292d
 			y: -11.557142857142814d
 		}
@@ -164,11 +192,13 @@
 			]
 			hide_dependent_lines: true
 			id: "49EE4CE729CBEF14"
-			tasks: [{
-				id: "79BADF8F04489BAD"
-				title: "Deploy"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "79BADF8F04489BAD"
+					title: "部署"
+					type: "checkmark"
+				}
+			]
 			x: 7.5d
 			y: -10.714285714285666d
 		}
@@ -179,12 +209,14 @@
 			]
 			hide_dependent_lines: true
 			id: "736466130AA9ACEE"
-			tasks: [{
-				id: "7EB04CDE233FE852"
-				item: "ad_astra:desh_tank"
-				type: "item"
-			}]
-			title: "Desh Tank"
+			tasks: [
+				{
+					id: "7EB04CDE233FE852"
+					item: "ad_astra:desh_tank"
+					type: "item"
+				}
+			]
+			title: "戴斯储罐"
 			x: 9.500000000000014d
 			y: -4.51428571428567d
 		}
@@ -192,12 +224,14 @@
 			dependencies: ["736466130AA9ACEE"]
 			hide_dependent_lines: true
 			id: "369435396E11D508"
-			tasks: [{
-				id: "261FE5826AA31AA4"
-				item: "cmi:space_mechanism_part"
-				type: "item"
-			}]
-			title: "Mechanism Part"
+			tasks: [
+				{
+					id: "261FE5826AA31AA4"
+					item: "cmi:space_mechanism_part"
+					type: "item"
+				}
+			]
+			title: "机械部件"
 			x: 13.785714285714292d
 			y: -7.957142857142813d
 		}
@@ -205,17 +239,21 @@
 			dependencies: ["369435396E11D508"]
 			hide_dependent_lines: true
 			id: "774635B2A034CDC0"
-			rewards: [{
-				id: "49CFB84A6EF21666"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5B96EFDFF7F4A81A"
-				item: "cmi:tier_2_aviation_mechanism"
-				type: "item"
-			}]
-			title: "Tier 2 Aviation Mechanism"
+			rewards: [
+				{
+					id: "49CFB84A6EF21666"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "5B96EFDFF7F4A81A"
+					item: "cmi:tier_2_aviation_mechanism"
+					type: "item"
+				}
+			]
+			title: "二级航空机械"
 			x: 18.64285714285714d
 			y: -5.828571428571365d
 		}

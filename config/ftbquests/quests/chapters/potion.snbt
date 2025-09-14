@@ -5,38 +5,44 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:potion_mechanism"
 	id: "3E4B59A9736356B4"
-	images: [{
-		height: 16.44d
-		image: "cmi:textures/images/background/potion.png"
-		rotation: 0.0d
-		width: 30.48d
-		x: -2.0d
-		y: -0.5d
-	}]
+	images: [
+		{
+			height: 16.44d
+			image: "cmi:textures/images/background/potion.png"
+			rotation: 0.0d
+			width: 30.48d
+			x: -2.0d
+			y: -0.5d
+		}
+	]
 	order_index: 32
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "0A06A545F781B0B6"
-			rewards: [{
-				id: "0595D04FD6C0C9E9"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7931290E9AFBDED1"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:glass"
-					}
+			rewards: [
+				{
+					id: "0595D04FD6C0C9E9"
+					type: "xp"
+					xp: 10
 				}
-				title: "Any #forge:glass"
-				type: "item"
-			}]
-			title: "Glass"
+			]
+			tasks: [
+				{
+					id: "7931290E9AFBDED1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:glass"
+						}
+					}
+					title: "任意 #forge:glass"
+					type: "item"
+				}
+			]
+			title: "玻璃"
 			x: -9.402857142857144d
 			y: -1.4642857142857153d
 		}
@@ -44,23 +50,27 @@
 			dependencies: ["0A06A545F781B0B6"]
 			hide_dependent_lines: true
 			id: "03ABDB6AF2CE60EE"
-			rewards: [{
-				id: "3DCA35F858948131"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "66D8EF1DE43B13E2"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "minecraft:night_vision"
-					}
+			rewards: [
+				{
+					id: "3DCA35F858948131"
+					type: "xp"
+					xp: 10
 				}
-				match_nbt: true
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "66D8EF1DE43B13E2"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:night_vision"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
 			x: -6.3314285714285745d
 			y: -0.10142857142857054d
 		}
@@ -75,23 +85,27 @@
 				}
 			}
 			id: "4D881CF647E713C2"
-			rewards: [{
-				id: "73FAA6A048BB758A"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "237CBCD41D065B5D"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "minecraft:strength"
-					}
+			rewards: [
+				{
+					id: "73FAA6A048BB758A"
+					type: "xp"
+					xp: 10
 				}
-				match_nbt: true
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "237CBCD41D065B5D"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strength"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
 			x: -4.831428571428567d
 			y: 0.7614285714285671d
 		}
@@ -99,23 +113,27 @@
 			dependencies: ["4D881CF647E713C2"]
 			hide_dependent_lines: true
 			id: "6F0B28E06F1BEDDD"
-			rewards: [{
-				id: "2717307EBE04FBD2"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "52E4241A3BD38257"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "minecraft:swiftness"
-					}
+			rewards: [
+				{
+					id: "2717307EBE04FBD2"
+					type: "xp"
+					xp: 10
 				}
-				match_nbt: true
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "52E4241A3BD38257"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:swiftness"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
 			x: -3.1885714285714286d
 			y: 1.4099999999999895d
 		}
@@ -130,23 +148,27 @@
 				}
 			}
 			id: "0AFA00FE240B3E5F"
-			rewards: [{
-				id: "02DE604C7A321555"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5882F0FF16D4E5E9"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "minecraft:fire_resistance"
-					}
+			rewards: [
+				{
+					id: "02DE604C7A321555"
+					type: "xp"
+					xp: 10
 				}
-				match_nbt: true
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "5882F0FF16D4E5E9"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
 			x: -1.6885714285714357d
 			y: 1.915714285714266d
 		}
@@ -154,17 +176,21 @@
 			dependencies: ["0AFA00FE240B3E5F"]
 			hide_dependent_lines: true
 			id: "1E9561FA87733368"
-			rewards: [{
-				id: "523C3A5F80355C88"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7BE1FCA935BE996E"
-				item: "cmi:magical_mechanism_part"
-				type: "item"
-			}]
-			title: "Mechanism Part"
+			rewards: [
+				{
+					id: "523C3A5F80355C88"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "7BE1FCA935BE996E"
+					item: "cmi:magical_mechanism_part"
+					type: "item"
+				}
+			]
+			title: "机械部件"
 			x: 3.240000000000002d
 			y: 0.4214285714285495d
 		}
@@ -172,17 +198,21 @@
 			dependencies: ["1E9561FA87733368"]
 			hide_dependent_lines: true
 			id: "44103CC1F90644AA"
-			rewards: [{
-				id: "58A523A16D96F31D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2408F30772A4603B"
-				item: "cmi:potion_mechanism"
-				type: "item"
-			}]
-			title: "Potion Mechanism"
+			rewards: [
+				{
+					id: "58A523A16D96F31D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "2408F30772A4603B"
+					item: "cmi:potion_mechanism"
+					type: "item"
+				}
+			]
+			title: "药水机械装置"
 			x: 5.454285714285724d
 			y: 1.3614285714285401d
 		}
