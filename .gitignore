@@ -66,8 +66,7 @@ replay*
 
 # Saves
 /saves/*
-!/saves/Debug/*
-#!/saves/Debug
+!/saves/Debug
 !/saves/QBWT*
 !/saves/Quest_Background*
 
