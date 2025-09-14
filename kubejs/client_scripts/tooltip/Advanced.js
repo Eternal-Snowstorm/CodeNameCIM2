@@ -59,4 +59,16 @@ ItemEvents.tooltip((event) => {
 			let max = 10000
 			tooltip.add(Component.literal(`§e${stored} / ${max} FE`))
 		})
+
+	// 末影构件
+	event.addAdvanced("cmi:ender_mechanism",
+		(item, advanced, tooltip) => {
+			if (item.hasNBT()) {
+				let x = item.getNbt().x
+				let y = item.getNbt().y
+				let z = item.getNbt().z
+				let dim = item.getNbt().dim
+				tooltip.add(Component.translatable("tooltip.cmi.stored_location", dim, x, y, z))
+			}
+		})
 })

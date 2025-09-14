@@ -14,17 +14,26 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 		let x = nbt.x + 0.5
 		let y = nbt.y
 		let z = nbt.z + 0.5
-		// 传送玩家到目标位置
-		player.teleportTo(x, y, z)
+		let dimention = nbt.dim
+		let currentDimention = player.level.getDimension().toString()
 
-		// 生成传送音效和粒子
-		let soundCommand = `playsound minecraft:entity.enderman.teleport master @a ${x} ${y} ${z}`
-		player.level.server.runCommandSilent(soundCommand)
-		let particleCommand = `particle minecraft:dragon_breath ${x} ${y} ${z} 0.5 0.5 0.5 0.1 50`
-		player.level.server.runCommandSilent(particleCommand)
-		// 清除物品NBT
-		event.getItem().setNbt({})
-		// 添加冷却时间(5s)
-		player.cooldowns.addCooldown("cmi:ender_mechanism", 100)
+		// 判定是否在存储的位置同一维度
+		if (currentDimention === dimention) {
+			// 传送玩家到目标位置
+			player.teleportTo(x, y, z)
+
+			// 生成传送音效和粒子
+			let soundCommand = `playsound minecraft:entity.enderman.teleport master @a ${x} ${y} ${z}`
+			player.level.server.runCommandSilent(soundCommand)
+			let particleCommand = `particle minecraft:dragon_breath ${x} ${y} ${z} 0.5 0.5 0.5 0.1 50`
+			player.level.server.runCommandSilent(particleCommand)
+			// 清除物品NBT
+			event.getItem().setNbt({})
+			// 添加冷却时间(5s)
+			player.cooldowns.addCooldown("cmi:ender_mechanism", 100)
+		}
+		else {
+			player.tell(Component.translatable("message.cmi.unsble_to_transport"))
+		}
 	}
 })

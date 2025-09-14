@@ -36,6 +36,8 @@
     "display.cmi.nether_crops": "§c下界作物只能种植在位于下界的下界农田方块上!",
     "create.recipe.heat_requirement.grilled": "炙烤",
     "create.cmi.recipe.tip.fire": "木炭块和煤炭块上方的火焰可以无限燃烧",
+    "message.cmi.unsble_to_transport":"所存储的位置不在当前维度！",
+    "tooltip.cmi.stored_location":"维度:%s ,X:%s ,Y:%s ,Z:%s ",
     "message.cmi.welcome": "欢迎%s来到CMI!",
     "recipe.jei.recipe.cmi.accelerator": "对着催生器使用构件",
     "recipe.jei.recipeType.cmi.accelerator": "构件催生(WIP)",
