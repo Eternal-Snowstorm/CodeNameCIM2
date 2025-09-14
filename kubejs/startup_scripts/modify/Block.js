@@ -6,4 +6,27 @@ BlockEvents.modification((event) => {
 	event.modify("cmi:water_pump", (modify) => {
 		modify.soundType = SoundType.WOOD
 	})
+
+	let materualSoundType = [
+        "bronze",
+        "cast_iron",
+        "steel"
+    ]
+    materualSoundType.forEach((materials) => {
+		event.modify(`steampowered:${materials}_cogwheel`, (modify) => {
+            modify.soundType = SoundType.LANTERN
+        })
+        event.modify(`steampowered:${materials}_large_cogwheel`, (modify) => {
+            modify.soundType = SoundType.LANTERN
+        })
+		event.modify(`steampowered:${materials}_boiler`, (modify) => {
+            modify.soundType = SoundType.LANTERN
+        })
+		event.modify(`steampowered:${materials}_steam_engine`, (modify) => {
+            modify.soundType = SoundType.LANTERN
+        })
+		event.modify(`steampowered:${materials}_flywheel`, (modify) => {
+            modify.soundType = SoundType.LANTERN
+        })
+    })
 })
