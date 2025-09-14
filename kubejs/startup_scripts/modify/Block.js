@@ -7,12 +7,12 @@ BlockEvents.modification((event) => {
 		modify.soundType = SoundType.WOOD
 	})
 
-	let materualSoundType = [
+	let materialSoundType = [
         "bronze",
         "cast_iron",
         "steel"
     ]
-    materualSoundType.forEach((materials) => {
+    materialSoundType.forEach((materials) => {
 		event.modify(`steampowered:${materials}_cogwheel`, (modify) => {
             modify.soundType = SoundType.LANTERN
         })
