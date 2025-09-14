@@ -7,6 +7,7 @@ StartupEvents.registry("item", (event) => {
 		"iron",
 		"copper",
 		"andesite",
+		"bronze",
 		"photosensitive",
 		"gold",
 		"cobalt",
@@ -21,6 +22,7 @@ StartupEvents.registry("item", (event) => {
 		"enchanted",
 		"smart",
 		"computing",
+		"air_tight",
 		"tier_1_aviation",
 		"tier_2_aviation",
 		"tier_3_aviation",
@@ -29,15 +31,12 @@ StartupEvents.registry("item", (event) => {
 		"advanced_mekanism",
 		"elite_mekanism",
 		"ultimate_mekanism",
-		"structure",
 		"antimatter",
 		"coil",
 		"sculk",
 		"colorful",
 		"creative",
-		"potion",
-		"bronze",
-		"osmium"
+		"potion"
 	]
 	
 	global.mechanismList = mechanismRegister.concat("pigiron")

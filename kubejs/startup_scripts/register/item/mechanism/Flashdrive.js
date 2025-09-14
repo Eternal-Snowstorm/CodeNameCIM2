@@ -21,6 +21,7 @@ StartupEvents.registry("item", (event) => {
 		"iron",
 		"copper",
 		"andesite",
+		"bronze",
 		"photosensitive",
 		"gold",
 		"cobalt",
@@ -35,6 +36,7 @@ StartupEvents.registry("item", (event) => {
 		"enchanted",
 		"smart",
 		"computing",
+		"air_tight",
 		"tier_1_aviation",
 		"tier_2_aviation",
 		"tier_3_aviation",
@@ -43,7 +45,6 @@ StartupEvents.registry("item", (event) => {
 		"advanced_mekanism",
 		"elite_mekanism",
 		"ultimate_mekanism",
-		"structure",
 		"nuclear",
 		"antimatter",
 		"coil",
@@ -52,7 +53,6 @@ StartupEvents.registry("item", (event) => {
 		"creative",
 		"pigiron",
 		"potion",
-		"bronze"
 	]
 	mechanismRegister.forEach((material) => {
 		event.create(`${global.namespace}:${material}_mechanism_flash_drive`)

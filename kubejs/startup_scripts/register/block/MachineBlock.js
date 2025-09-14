@@ -28,7 +28,7 @@ StartupEvents.registry("block", (event) => {
 		"advanced_mekanism",
 		"elite_mekanism",
 		"ultimate_mekanism",
-		"structure",
+		"air_tight",
 		"nuclear",
 		"antimatter",
 		"coil",
