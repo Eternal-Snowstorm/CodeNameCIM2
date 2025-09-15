@@ -52,6 +52,14 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["wooden"])
 		.requiresTool(true)
 
+	// 燃烧介质块
+	addBlock("combustion_medium_block")
+		.soundType(SoundType.STONE)
+		.hardness(3)
+		.resistance(3)
+		.tagBlock(global.ToolType["pickaxe"])
+		.tagBlock(global.MiningLevel["stone"])
+
 	// 坩埚底座
 	addBlock("crucible_base")
 		.textureAll(`${global.namespace}:block/crucible/top`)

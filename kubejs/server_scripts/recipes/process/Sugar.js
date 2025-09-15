@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
 		"6x minecraft:paper"
 	], "cmi:sugarcane_fiber")
 
-	addSmokingRecipe(event, "3x minecraft:paper", "cmi:sugarcane_fiber")
+	SmeltingRecipe.smoking(event, "3x minecraft:paper", "cmi:sugarcane_fiber")
 
 	// 糖
 	create.mixing("minecraft:sugar", [

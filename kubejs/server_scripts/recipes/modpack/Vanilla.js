@@ -203,7 +203,7 @@ ServerEvents.recipes((event) => {
 	}).id("mekanism:enrichment_chamber")
 
 	// 安山岩
-	addSmeltingRecipe(event, "2x minecraft:andesite", "cmi:andesite_aggregate")
+	SmeltingRecipe.blasting(event, "2x minecraft:andesite", "cmi:andesite_aggregate")
 
 	// IOBlock
 	kubejs.shapeless("cmi:gui_block", [

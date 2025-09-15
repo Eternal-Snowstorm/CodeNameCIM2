@@ -1,15 +1,15 @@
 BlockEvents.rightClicked("cmi:accelerator", (event) => {
+	let { player, item } = event
 	if (event.hand === "OFF_HAND") {
 		return
 	}
-	let player = event.getPlayer()
 	if (player === null) {
 		return
 	}
 	// 确认玩家手持带有NBT的末影构件右键催生器
-	if (event.getItem().is("cmi:ender_mechanism") && event.getItem().hasNBT()) {
+	if (item.is("cmi:ender_mechanism") && item.hasNBT()) {
 		// 获取构件中的NBT数据
-		let nbt = event.getItem().getNbt()
+		let nbt = item.getNbt()
 		// 将目标点重置为目标方块中心位置
 		let x = nbt.x + 0.5
 		let y = nbt.y
@@ -28,11 +28,10 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 			let particleCommand = `particle minecraft:dragon_breath ${x} ${y} ${z} 0.5 0.5 0.5 0.1 50`
 			player.level.server.runCommandSilent(particleCommand)
 			// 清除物品NBT
-			event.getItem().setNbt({})
+			item.setNbt({})
 			// 添加冷却时间(5s)
 			player.cooldowns.addCooldown("cmi:ender_mechanism", 100)
-		}
-		else {
+		} else {
 			player.tell(Component.translatable("message.cmi.unsble_to_transport"))
 		}
 	}

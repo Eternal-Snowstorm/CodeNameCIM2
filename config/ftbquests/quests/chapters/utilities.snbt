@@ -419,11 +419,19 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "7CF3605CD32CCEED"
-			rewards: [{
-				id: "433B4A0FB4FC08AA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "433B4A0FB4FC08AA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06293BBA843D7B22"
+					table_id: 3709485928623049336L
+					type: "choice"
+				}
+			]
 			subtitle: "找东西的好帮手"
 			tasks: [{
 				id: "1773E438C3EB9B3B"
