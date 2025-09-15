@@ -260,6 +260,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("computing_casing", "高级计算外壳")
 	addBlockLanguage("peat_block", "泥炭块")
 	addBlockLanguage("oil_shale", "油页岩")
+	addBlockLanguage("combustion_medium_block", "燃烧介质块")
 
 	addBlockLanguage("unknown_entity_", "Unknown_Entity_")
 	addBlockLanguage("aleegos", "阿列戈斯")

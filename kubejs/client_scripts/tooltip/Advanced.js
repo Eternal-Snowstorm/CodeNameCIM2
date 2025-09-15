@@ -67,8 +67,19 @@ ItemEvents.tooltip((event) => {
 				let x = item.getNbt().x
 				let y = item.getNbt().y
 				let z = item.getNbt().z
-				let dim = item.getNbt().dim
-				tooltip.add(Component.translatable("tooltip.cmi.stored_location", dim, x, y, z))
+
+				let dimId = item.getNbt().dim
+
+				if (dimId) {
+					// 转成翻译键
+					let dimKey = "dimension." + dimId.replace(":", ".")
+					let dim = Component.translatable(dimKey)
+					let tranKey =
+						Component.translatable("tooltip.cmi.stored_location", dim, x, y, z)
+							.red()
+
+					tooltip.add(tranKey)
+				}
 			}
 		})
 })

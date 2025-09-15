@@ -131,20 +131,33 @@ function IEIngredient(input) {
 			.getCount()
 	}
 }
-function addSmeltingRecipe(event, output, input) {
-	event.recipes.minecraft.blasting(output, input)
-		.cookingTime(100)
 
-	event.recipes.minecraft.smelting(output, input)
-		.cookingTime(200)
-}
 
-function addSmokingRecipe(event, output, input) {
-	event.recipes.minecraft.blasting(output, input)
-		.cookingTime(100)
+let SmeltingRecipe = {
+	all: function (event, output, input) {
+		event.recipes.minecraft.smelting(output, input)
+			.cookingTime(200)
 
-	event.recipes.minecraft.smoking(output, input)
-		.cookingTime(200)
+		event.recipes.minecraft.blasting(output, input)
+			.cookingTime(100)
+
+		event.recipes.minecraft.smoking(output, input)
+			.cookingTime(100)
+	},
+	blasting: function (event, output, input) {
+		event.recipes.minecraft.blasting(output, input)
+			.cookingTime(100)
+
+		event.recipes.minecraft.smelting(output, input)
+			.cookingTime(200)
+	},
+	smoking: function (event, output, input) {
+		event.recipes.minecraft.blasting(output, input)
+			.cookingTime(100)
+
+		event.recipes.minecraft.smoking(output, input)
+			.cookingTime(100)
+	}
 }
 
 // Test Function Event
