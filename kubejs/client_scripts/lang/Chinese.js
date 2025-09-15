@@ -20,7 +20,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("blockstone_source_gamma", "Γ(Gamma)型黑石源质")
 	addItemLanguage("crystal_ruby", "晶射红宝石")
 	addItemLanguage("source_sapphire", "蓝源晶")
-	addItemLanguage("bomBed_source_emeraid", "爆裂源质")
+	addItemLanguage("bombed_source_emeraid", "爆裂源质")
 	addItemLanguage("sludge_extract", "淤泥提取物")
 	addItemLanguage("crafting_incomplete_iron_mechanism", "铁构件底座")
 	addItemLanguage("crafting_incomplete_copper_mechanism", "铜构件底座")
@@ -480,7 +480,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["magical_random", "魔力随机"],
 		["quantum_random", "量子随机"],
 		["mekanism_random", "通用随机"],
-		["final_random", "最终随机"]
+		["space_random", "太空随机"]
 	]
 	completeMechanismGroup.forEach(([material, name]) => {
 		addCompleteMechanismLanguage(material, name)
