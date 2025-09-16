@@ -268,14 +268,17 @@ addMaterial("industrial_iron", 0x4E4E4E, "iron")
 // 戴斯
 addMaterial("desh", 0xD38B4C, "wooden")
 	.molten()
+	.dust()
 
 // 紫金
 addMaterial("ostrum", 0xA66B72, "wooden")
 	.molten()
+	.dust()
 
 // 耐热金属
 addMaterial("calorite", 0xC94D4E, "wooden")
 	.molten()
+	.dust()
 
 // 钠
 addMaterial("sodium", 0xD7DDDD, "wooden")
