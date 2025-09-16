@@ -363,6 +363,9 @@ ServerEvents.tags("item", (event) => {
 	event.get("mekanism:crystals")
 		.remove("mekanism:crystal_gold")
 
+	event.add("forge:stripped_logs")
+		.add("thermal:stripped_rubberwood_log")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",

@@ -20,9 +20,11 @@ ServerEvents.recipes((event) => {
 					"input": {
 						"tag": `${type}/${metal}`
 					},
-					"results": [{
-						"item": ingotId[0]
-					}],
+					"results": [
+						{
+							"item": ingotId[0]
+						}
+					],
 					"time": 200,
 					"tickEnergy": 32
 				})

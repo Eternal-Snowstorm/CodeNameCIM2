@@ -94,11 +94,9 @@ function makeOf(type) {
 }
 
 function aeCharger(output, input) {
-	const INPUT = Ingredient.of(input).toJson()
-
 	return {
 		type: "ae2:charger",
-		ingredient: INPUT,
+		ingredient: Ingredient.of(input).toJson(),
 		result: {
 			item: IngredientUtils.getFirstItemId(output)
 		}

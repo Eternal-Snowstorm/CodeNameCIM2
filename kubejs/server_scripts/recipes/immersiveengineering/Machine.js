@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 
 	kubejs.shapeless("immersiveindustry:refractory_kiln_brick", [
 		"minecraft:clay_ball",
-		"supplementaries:ash_brick"
+		"#forge:ingots/brick"
 	]).id("immersiveindustry:crafting/refractory_kiln_brick")
 
 	kubejs.shapeless("immersiveengineering:light_engineering", [
