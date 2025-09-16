@@ -26,8 +26,8 @@ BlockEvents.rightClicked("cmi:industrial_platform", (event) => {
     }
 
     else if (item.is("minecraft:andesite")) {
+        level.runCommandSilent(`/fill ${FINX} ${POSY - 2} ${FINZ} ${FINX + 15} ${POSY + 16} ${FINZ + 15} air`)
         level.runCommandSilent(`/place template cmi:industrial_platform/levitational ${FINX} ${POSY - 2} ${FINZ}`)
-        level.getBlock(block.pos).set("air")
         player.swing()
         item.shrink(1)
         event.cancel()
