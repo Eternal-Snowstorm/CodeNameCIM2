@@ -84,6 +84,7 @@ global.mechanismGroup = [
 	"enchanted",
 	"smart",
 	"computing",
+	"air_tight",
 	"tier_1_aviation",
 	"tier_2_aviation",
 	"tier_3_aviation",

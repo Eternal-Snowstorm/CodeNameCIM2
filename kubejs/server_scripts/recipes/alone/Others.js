@@ -220,4 +220,64 @@ ServerEvents.recipes((event) => {
 		"pipez:advanced_upgrade",
 		"#forge:plates/netherite",
 	]).id("pipez:ultimate_upgrade")
+
+	kubejs.shaped("ad_astra:earth_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "minecraft:dirt",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:moon_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:moon_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:mars_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:mars_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:mercury_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:mercury_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:venus_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:venus_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:glacio_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:glacio_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
 })

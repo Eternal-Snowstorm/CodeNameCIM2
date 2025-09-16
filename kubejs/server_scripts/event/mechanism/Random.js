@@ -8,7 +8,8 @@ ItemEvents.rightClicked((event) => {
 		"flux",
 		"magical",
 		"quantum",
-		"mekanism"
+		"mekanism",
+		"space"
 	]
 	randomMechanisms.forEach((material) => {
 		if (player.mainHandItem === `cmi:${material}_random_mechanism`) {

@@ -95,7 +95,7 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 	// 叁级科技航天构件
 	addAccelerateEvent("cmi:tier_3_aviation_mechanism", "ad_astra:mars_stone", [
 		Item.of("ad_astra:mars_ostrum_ore").withChance(0.2),
-		Item.of("ad_astra:mars_iron_ore").withChance(0.05),
+		Item.of("ad_astra:mars_ice_shard_ore").withChance(0.05),
 		Item.of("ad_astra:desh_block").withChance(0.05)
 	])
 	addAccelerateEvent("cmi:tier_3_aviation_mechanism", "minecraft:deepslate", [
@@ -243,7 +243,7 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 			level.server.runCommandSilent(command)
 			// 检测玩家是否创造模式
 			if (!player.isCreative()) {
-				// 若是生存模式则减少一个安山构件
+				// 若是生存模式则减少一个构件
 				item.shrink(1)
 			}
 			return true
