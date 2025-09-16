@@ -7,7 +7,7 @@
     },
     "structures":[
         {
-            "structure":"cmi:cave_spwan",
+            "structure":"cmi:cave_spawn",
             "weight":1
         }
     ]

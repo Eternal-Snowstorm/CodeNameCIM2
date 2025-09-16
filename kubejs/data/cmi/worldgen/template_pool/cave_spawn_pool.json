@@ -1,11 +1,11 @@
 {
-    "name": "cmi:cave_spwan_pool",
+    "name": "cmi:cave_spawn_pool",
     "fallback": "minecraft:empty",
     "elements": [
         {
             "weight": 1,
             "element": {
-                "location": "cmi:cave/cave_spwan",
+                "location": "cmi:cave/cave_spawn",
                 "processors": "minecraft:empty",
                 "projection": "rigid",
                 "element_type": "minecraft:single_pool_element"

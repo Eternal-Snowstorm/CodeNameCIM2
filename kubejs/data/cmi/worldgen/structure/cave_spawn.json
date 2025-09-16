@@ -8,7 +8,7 @@
   "start_height": {
     "absolute": 1
   },
-  "start_pool": "cmi:cave_spwan_pool",
+  "start_pool": "cmi:cave_spawn_pool",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "use_expansion_hack": false

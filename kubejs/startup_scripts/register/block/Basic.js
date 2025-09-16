@@ -3,6 +3,7 @@ StartupEvents.registry("block", (event) => {
 		return event.create(`${global.namespace}:${name}`)
 	}
 
+	// 催生器
 	addBlock("accelerator")
 		.soundType(SoundType.METAL)
 		.hardness(4)
@@ -10,6 +11,17 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.MiningLevel["wooden"])
 		.requiresTool(true)
+
+	// 便携工业平台
+	addBlock("industrial_platform")
+		.soundType(SoundType.STONE)
+		.hardness(4)
+		.resistance(8)
+		.tagBlock(global.ToolType["pickaxe"])
+		.tagBlock(global.MiningLevel["wooden"])
+		.requiresTool(true)
+		.notSolid()
+		.defaultCutout()
 
 	// 背景
 	addBlock("green_screen")
