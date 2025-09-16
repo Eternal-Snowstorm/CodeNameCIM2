@@ -69,11 +69,6 @@ ServerEvents.recipes((event) => {
 		"minecraft:glass_bottle"
 	], "supplementaries:antique_ink")
 
-	create.mixing(Fluid.of("cmi:blood", 500), [
-		Fluid.of("minecraft:water", 1000),
-		"#forge:nuggets/iron"
-	]).heated()
-
 	// 烈焰血
 	create.mixing(Fluid.of("tconstruct:blazing_blood", 500), [
 		Fluid.of("cmi:blood", 500),

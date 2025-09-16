@@ -364,7 +364,7 @@
 				"终于要进入电气时代了!"
 				"如果你问我电气时代最具有代表性的材料是什么"
 				"那我一定会说&5钢!"
-				"将碳与铁以最合适的比例融合在一起,就是最为坚韧耐用的金属铁!"
+				"将碳与铁以最合适的比例融合在一起,就是最为坚韧耐用的铁合金!"
 			]
 			id: "43A58164AF59ECA2"
 			rewards: [{
@@ -598,6 +598,52 @@
 			}]
 			title: "我要怎么挖锌?"
 			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F07FB52B3D85792"]
+			description: [
+				"不论大小炉子,匠魂的熔炉都支持使用匠魂自身的&6流体储罐&r方块储存燃料."
+				"也只有这样使用才能避免焦黑加热器的&c大量&r热能散失,发挥出燃料应有的能耐."
+			]
+			icon: "tconstruct:seared_fuel_tank"
+			id: "327C3DF2054C9DD1"
+			rewards: [{
+				id: "1B4ED99901B058F9"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "不要把液体塞进焦黑加热器!"
+			tasks: [{
+				id: "627DE0E59DF86F20"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tconstruct:seared_fuel_tank"
+							}
+							{
+								Count: 1b
+								id: "tconstruct:seared_fuel_gauge"
+							}
+							{
+								Count: 1b
+								id: "tconstruct:seared_ingot_tank"
+							}
+							{
+								Count: 1b
+								id: "tconstruct:seared_ingot_gauge"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "如何使用液体燃料?"
+			x: -9.5d
 			y: 0.0d
 		}
 	]

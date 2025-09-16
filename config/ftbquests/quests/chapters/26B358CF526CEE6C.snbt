@@ -1,0 +1,67 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "26B358CF526CEE6C"
+	group: "65AEEF30E0964DD3"
+	icon: "cmi:air_tight_mechanism"
+	id: "26B358CF526CEE6C"
+	order_index: 19
+	quest_links: [ ]
+	quests: [
+		{
+			id: "18E3EB47F5EF697D"
+			tasks: [{
+				id: "540A1602256ACBF1"
+				item: "vintageimprovements:osmium_sheet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["18E3EB47F5EF697D"]
+			id: "17A0C0980B3EB325"
+			tasks: [{
+				id: "48B00720DF5F18AE"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["17A0C0980B3EB325"]
+			id: "4C9109F90DC37B64"
+			tasks: [{
+				id: "17A2D0DC7EC7376E"
+				item: "mekanism:structural_glass"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4C9109F90DC37B64"]
+			id: "0B447590DDAD1A29"
+			tasks: [{
+				id: "2215E5BB2E688213"
+				title: "辊压"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0B447590DDAD1A29"]
+			id: "17E83D0479E30137"
+			tasks: [{
+				id: "49B4B7C80D3A6439"
+				item: "cmi:air_tight_mechanism"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+	]
+	title: "气密"
+}
