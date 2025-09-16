@@ -13,6 +13,7 @@ BlockEvents.rightClicked("cmi:industrial_platform", (event) => {
         level.runCommandSilent(`/fill ${FINX} ${POSY - 1} ${FINZ} ${FINX + 15} ${POSY - 6} ${FINZ + 15} minecraft:stone keep`)
         level.runCommandSilent(`/place template cmi:industrial_platform/light ${FINX} ${POSY} ${FINZ}`)
         player.swing()
+        item.shrink(1)
         event.cancel()
     }
 
@@ -20,15 +21,17 @@ BlockEvents.rightClicked("cmi:industrial_platform", (event) => {
         level.runCommandSilent(`/fill ${FINX - 16} ${POSY + 1} ${FINZ - 16} ${FINX + 31} ${POSY + 11} ${FINZ + 31} air`)
         level.runCommandSilent(`/fill ${FINX - 16} ${POSY - 1} ${FINZ - 16} ${FINX + 31} ${POSY - 6} ${FINZ + 31} minecraft:stone keep`)
         level.runCommandSilent(`/place template cmi:industrial_platform/heavy ${FINX - 16} ${POSY} ${FINZ - 16}`)
-        event.cancel()
         player.swing()
+        item.shrink(1)
+        event.cancel()
     }
 
     else if (item.is("minecraft:andesite")) {
         level.runCommandSilent(`/place template cmi:industrial_platform/levitational ${FINX} ${FINY} ${FINZ}`)
         level.getBlock(block.pos).set("air")
-        event.cancel()
         player.swing()
+        item.shrink(1)
+        event.cancel()
     }
 
 })
