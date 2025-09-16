@@ -5,7 +5,6 @@ BlockEvents.rightClicked("cmi:industrial_platform", (event) => {
     const POSY = block.pos.y
     const POSZ = block.pos.z
     const FINX = Math.floor(POSX / 16) * 16
-    const FINY = POSY + 5
     const FINZ = Math.floor(POSZ / 16) * 16
 
     if (item.is("minecraft:cobblestone")) {
@@ -27,7 +26,7 @@ BlockEvents.rightClicked("cmi:industrial_platform", (event) => {
     }
 
     else if (item.is("minecraft:andesite")) {
-        level.runCommandSilent(`/place template cmi:industrial_platform/levitational ${FINX} ${FINY} ${FINZ}`)
+        level.runCommandSilent(`/place template cmi:industrial_platform/levitational ${FINX} ${POSY - 2} ${FINZ}`)
         level.getBlock(block.pos).set("air")
         player.swing()
         item.shrink(1)
