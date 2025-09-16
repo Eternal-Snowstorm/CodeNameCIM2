@@ -153,6 +153,32 @@ ServerEvents.recipes((event) => {
 		.time(20 * 10)
 		.temperature(1000)
 
+	// 铁轨系列
+	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 30))
+		.ingredient("minecraft:rail")
+		.time(2 * 20)
+		.temperature(1535)
+
+	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 90))
+		.ingredient("minecraft:detector_rail")
+		.time(2 * 20)
+		.temperature(1535)
+
+	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 90))
+		.ingredient("minecraft:activator_rail")
+		.time(2 * 20)
+		.temperature(1535)
+
+	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 90))
+		.ingredient("minecraft:powered_rail")
+		.time(2 * 20)
+		.temperature(1064)
+
+	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 90))
+		.ingredient("create:controller_rail")
+		.time(2 * 20)
+		.temperature(1064)
+
 	event.custom({
 		"type": "tconstruct:melting",
 		"byproducts": [
