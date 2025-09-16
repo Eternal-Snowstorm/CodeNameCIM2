@@ -21,6 +21,9 @@ ServerEvents.recipes((event) => {
     addCrushedSplashing("cobalt", "thermal_extra:soul_sand_dust")
     addCrushedSplashing("vanadium", "thermal_extra:amethyst_dust")
     addCrushedSplashing("chromium", "mekanism:dust_obsidian")
+    addCrushedSplashing("desh", "immersiveengineering:slag")
+    addCrushedSplashing("ostrum", "mekanism:salt")
+    addCrushedSplashing("calorite", "mekanism:dust_coal")
 
     function addCrushedSplashing(material, by_product) {
         let crushed = `#create:crushed_raw_materials/${material}`
@@ -31,22 +34,4 @@ ServerEvents.recipes((event) => {
         ], crushed
         )
     }
-
-    create.splashing([
-        "9x ad_astra:desh_nugget",
-        Item.of("immersiveengineering:slag").withChance(0.25)
-    ], "cmi:crushed_raw_desh"
-    )
-
-    create.splashing([
-        "9x ad_astra:ostrum_nugget",
-        Item.of("mekanism:salt").withChance(0.25)
-    ], "cmi:crushed_raw_ostrum"
-    )
-
-    create.splashing([
-        "9x ad_astra:calorite_nugget",
-        Item.of("mekanism:dust_coal").withChance(0.25)
-    ], "cmi:crushed_raw_calorite"
-    )
 })
