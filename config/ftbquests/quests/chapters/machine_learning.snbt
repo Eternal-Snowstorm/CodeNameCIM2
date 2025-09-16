@@ -34,14 +34,11 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: -1.0d
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"46858C4B5052EC0C"
-				"06012DC3A4BBF58B"
-			]
+			dependencies: ["46858C4B5052EC0C"]
 			description: ["将熔融铁或熔融锌浇筑在安山岩粉上"]
 			id: "65F2C054D52EB96B"
 			rewards: [{
@@ -65,11 +62,12 @@
 				type: "item"
 			}]
 			title: "安山合金"
-			x: 0.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
-			icon: "tconstruct:molten_iron_bucket"
+			dependencies: ["10C714793513B077"]
+			icon: "minecraft:iron_ingot"
 			id: "06012DC3A4BBF58B"
 			rewards: [{
 				id: "19A6913779FCE207"
@@ -78,12 +76,13 @@
 			}]
 			subtitle: "把铁或铁矿丢进炉子里"
 			tasks: [{
-				id: "1B537ED52C207D0A"
-				type: "checkmark"
+				id: "0A4BA186729E732C"
+				item: "minecraft:iron_ingot"
+				type: "item"
 			}]
-			title: "熔融铁"
-			x: 2.0d
-			y: 0.0d
+			title: "铁锭"
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["65F2C054D52EB96B"]
@@ -99,8 +98,8 @@
 				item: "create:shaft"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.5d
+			x: -3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0E6030AA8C2A8243"]
@@ -115,8 +114,8 @@
 				item: "create:cogwheel"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0E6030AA8C2A8243"]
@@ -132,8 +131,8 @@
 				item: "create:large_cogwheel"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 2.5d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0E6030AA8C2A8243"]
@@ -156,8 +155,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 1.5d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["712B9101FE885629"]
@@ -172,8 +171,8 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.5d
+			x: -3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6E9FFFBBCA1D13B7"]
@@ -191,8 +190,8 @@
 				type: "item"
 			}]
 			title: "安山构件"
-			x: 0.5d
-			y: 3.5d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
@@ -208,8 +207,8 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.5d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7FF0C3B318313C79"]
@@ -241,8 +240,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 3.0d
+			x: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3A8E9AE06B88D05E"]
@@ -285,7 +284,7 @@
 				type: "item"
 			}]
 			title: "硫磺粉"
-			x: 2.5d
+			x: 1.5d
 			y: 4.0d
 		}
 		{
@@ -302,8 +301,8 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 6.0d
+			x: -2.0d
+			y: 6.5d
 		}
 		{
 			id: "44EA87F955CC8C23"
@@ -472,11 +471,11 @@
 				item: "cmi:iron_mechanism"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["06012DC3A4BBF58B"]
+			dependencies: ["7510D0C5F36D0F1E"]
 			id: "6EBB0E1E97405AAB"
 			optional: true
 			shape: "diamond"
@@ -485,8 +484,8 @@
 				item: "cmi:crafting_incomplete_iron_mechanism"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.0d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3DA43BDED8E5ECDC"]
@@ -510,14 +509,14 @@
 				type: "item"
 			}]
 			title: "橡胶板"
-			x: 3.5d
-			y: 3.0d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"5E953238EC4CB053"
 				"0D5B2BC965C555DF"
-				"71371D8C476BF1C4"
+				"2CA18D2367DC42BD"
 			]
 			icon: "cmi:cured_rubber_bucket"
 			id: "3A8E9AE06B88D05E"
@@ -532,7 +531,7 @@
 				type: "item"
 			}]
 			title: "熔融硫化橡胶"
-			x: 3.5d
+			x: 3.0d
 			y: 4.0d
 		}
 		{
@@ -551,8 +550,8 @@
 				type: "checkmark"
 			}]
 			title: "创!造!模!式!"
-			x: -2.0d
-			y: 0.0d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
@@ -568,8 +567,8 @@
 				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 6.0d
+			x: -1.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["09892B803004AA1D"]
@@ -580,8 +579,8 @@
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.5d
+			x: 4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
@@ -628,8 +627,8 @@
 				item: { Count: 512, id: "create:large_water_wheel" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.5d
+			x: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
@@ -652,8 +651,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 5.5d
+			x: 1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
@@ -676,8 +675,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 6.0d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			description: [
@@ -714,8 +713,78 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 2.0d
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["65F2C054D52EB96B"]
+			id: "10C714793513B077"
+			rewards: [{
+				id: "273C33791CF28976"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "更高的熔炼温度"
+			tasks: [{
+				id: "745DFE839C30DDA1"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06012DC3A4BBF58B"]
+			icon: "tconstruct:molten_iron_bucket"
+			id: "7510D0C5F36D0F1E"
+			subtitle: "把铁丢进熔化炉!"
+			tasks: [{
+				id: "70FCC35ADBA19D21"
+				title: "熔融铁"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64E57AAB64922B1E"]
+			id: "2CA18D2367DC42BD"
+			rewards: [{
+				id: "60058FC1A44C313E"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "熊熊燃烧的火苗"
+			tasks: [{
+				id: "04083E89DFE4327E"
+				item: "cmi:combustion_medium_block"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			id: "64E57AAB64922B1E"
+			rewards: [{
+				id: "29AE447EB7362913"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "待会就知道要拿来干嘛了"
+			tasks: [{
+				id: "5CB1303DAAF51292"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:storage_blocks/coal"
+					}
+				}
+				type: "item"
+			}]
+			title: "煤炭块或木炭块"
+			x: 3.0d
+			y: 7.0d
 		}
 	]
 	title: "学习机械"
