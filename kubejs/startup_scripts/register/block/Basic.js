@@ -14,7 +14,9 @@ StartupEvents.registry("block", (event) => {
 
 	// 便携工业平台
 	addBlock("industrial_platform")
-		.soundType(SoundType.STONE)
+		.soundType(SoundType.DEEPSLATE_BRICKS)
+		.box(0, 0, 0, 16, 12, 16, true)
+		.model("cmi:block/industrial_platform")
 		.hardness(4)
 		.resistance(8)
 		.tagBlock(global.ToolType["pickaxe"])
