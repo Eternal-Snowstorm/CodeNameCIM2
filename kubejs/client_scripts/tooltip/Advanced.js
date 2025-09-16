@@ -89,7 +89,15 @@ ItemEvents.tooltip((event) => {
 	// 工业平台
 	event.addAdvanced("cmi:industrial_platform",
 		(item, advanced, tooltip) => {
-			tooltip.add(Component.translatable("tooltip.cmi.industrial_platform"))
+			if (event.shift) {
+				let lines = Component.translatable("tooltip.cmi.industrial_platform")
+					.string.split("\n")
+				lines.forEach((line) => {
+					tooltip.add(line)
+				})
+			} else {
+				tooltip.add(Component.translatable("tooltip.cmi.industrial_platform.off"))
+			}
 		}
 	)
 })
