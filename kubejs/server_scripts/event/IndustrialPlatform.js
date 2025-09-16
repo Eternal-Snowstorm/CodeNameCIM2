@@ -9,15 +9,17 @@ BlockEvents.rightClicked("cmi:industrial_platform", (event) => {
     const FINZ = Math.floor(POSZ / 16) * 16
 
     if (item.is("minecraft:cobblestone")) {
-        level.runCommandSilent(`/fill ${FINX} ${POSY} ${FINZ} ${FINX + 15} ${POSY + 11} ${FINZ + 15} air`)
-        level.runCommandSilent(`/place template cmi:industrial_platform/light ${FINX} ${POSY - 1} ${FINZ}`)
+        level.runCommandSilent(`/fill ${FINX} ${POSY + 1} ${FINZ} ${FINX + 15} ${POSY + 11} ${FINZ + 15} air`)
+        level.runCommandSilent(`/fill ${FINX} ${POSY - 1} ${FINZ} ${FINX + 15} ${POSY - 6} ${FINZ + 15} minecraft:stone keep`)
+        level.runCommandSilent(`/place template cmi:industrial_platform/light ${FINX} ${POSY} ${FINZ}`)
         player.swing()
         event.cancel()
     }
 
     else if (item.is("minecraft:cobbled_deepslate")) {
-        level.runCommandSilent(`/fill ${FINX} ${POSY} ${FINZ} ${FINX + 31} ${POSY + 11} ${FINZ + 31} air`)
-        level.runCommandSilent(`/place template cmi:industrial_platform/heavy ${FINX} ${POSY - 1} ${FINZ}`)
+        level.runCommandSilent(`/fill ${FINX - 16} ${POSY + 1} ${FINZ - 16} ${FINX + 31} ${POSY + 11} ${FINZ + 31} air`)
+        level.runCommandSilent(`/fill ${FINX - 16} ${POSY - 1} ${FINZ - 16} ${FINX + 31} ${POSY - 6} ${FINZ + 31} minecraft:stone keep`)
+        level.runCommandSilent(`/place template cmi:industrial_platform/heavy ${FINX - 16} ${POSY} ${FINZ - 16}`)
         event.cancel()
         player.swing()
     }

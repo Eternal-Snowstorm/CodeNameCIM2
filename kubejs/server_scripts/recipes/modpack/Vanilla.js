@@ -18,6 +18,19 @@ ServerEvents.recipes((event) => {
 		E: "cmi:stone_plate"
 	})
 
+	// 工业平台
+	kubejs.shaped("cmi:industrial_platform", [
+		"ACB",
+		"EDE",
+		"EEE"
+	], {
+		A: "#forge:dyes/yellow",
+		B: "#forge:dyes/black",
+		C: "#forge:deepslate",
+		D: "cmi:stone_mechanism",
+		E: "#forge:stone"
+	})
+
 	// 橡胶手
 	kubejs.shaped("create:brass_hand", [
 		" A ",
@@ -234,17 +247,17 @@ ServerEvents.recipes((event) => {
 	}).id("minecraft:tnt")
 
 	// 冰
-	kubejs.shapeless("minecraft:ice",[
+	kubejs.shapeless("minecraft:ice", [
 		"4x ad_astra:ice_shard"
 	])
 
 	// 浮冰
-	kubejs.shapeless("minecraft:packed_ice",[
+	kubejs.shapeless("minecraft:packed_ice", [
 		"4x minecraft:ice"
 	])
 
 	// 蓝冰
-	kubejs.shapeless("minecraft:blue_ice",[
+	kubejs.shapeless("minecraft:blue_ice", [
 		"4x minecraft:packed_ice"
 	])
 })
