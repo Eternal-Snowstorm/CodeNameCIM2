@@ -6,7 +6,8 @@ ServerEvents.highPriorityData((event) => {
 		"storage_block",
 		"gear",
 		"dust",
-		"rod"
+		"rod",
+		"wire"
 	]
 	materialType.forEach((type) => {
 		global.metalGroup.forEach((material) => {
@@ -76,6 +77,18 @@ ServerEvents.highPriorityData((event) => {
 	addJsonFile("capacitor", addUnification(
 		"createaddition:capacitor",
 		"cmi:simple_battery"
+	))
+
+	// 石英粉
+	addJsonFile("quartz_dust", addUnification(
+		"#forge:dusts/quartz",
+		"thermal:quartz_dust"
+	))
+
+	// 黑曜石粉
+	addJsonFile("obsidian_dust", addUnification(
+		"#forge:dusts/obsidian",
+		"create:powdered_obsidian"
 	))
 
 	/**
