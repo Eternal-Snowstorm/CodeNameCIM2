@@ -28,6 +28,5 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/andesite_alloy",
 		B: "minecraft:furnace",
 		C: "minecraft:smooth_stone"
-	})
-		.id("minecraft:blast_furnace")
+	}).id("minecraft:blast_furnace")
 })
