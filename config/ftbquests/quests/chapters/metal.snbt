@@ -1045,44 +1045,52 @@
 		{
 			icon: "immersiveengineering:ingot_aluminum"
 			id: "5DDAED0C86C34873"
-			tasks: [{
-				id: "78BBEBD7CAB475AE"
-				title: "铝 600°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "78BBEBD7CAB475AE"
+					title: "铝 600°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: 2.5d
 		}
 		{
 			icon: "minecraft:iron_ingot"
 			id: "6105AE67A3FCDD8E"
-			tasks: [{
-				id: "4510FC89A26182E5"
-				title: "铁 1535°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4510FC89A26182E5"
+					title: "铁 1535°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -4.5d
 		}
 		{
 			icon: "minecraft:lava_bucket"
 			id: "7F57658170C32134"
-			tasks: [{
-				id: "67D57A9E2658F10D"
-				title: "熔岩 1346°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "67D57A9E2658F10D"
+					title: "熔岩 1346°C"
+					type: "checkmark"
+				}
+			]
 			x: 11.0d
 			y: -1.5d
 		}
 		{
 			icon: "minecraft:charcoal"
 			id: "26C27F0ADFC85BC9"
-			tasks: [{
-				id: "46A385D56FEDFCBF"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "46A385D56FEDFCBF"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "固体燃料 937°C"
 			x: 12.0d
 			y: 2.5d
@@ -1090,11 +1098,13 @@
 		{
 			icon: "createdieselgenerators:plant_oil_bucket"
 			id: "2A658581374E1F34"
-			tasks: [{
-				id: "2155D38B5F8F5354"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2155D38B5F8F5354"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "植物油 1027°C"
 			x: 12.0d
 			y: 1.5d
@@ -1102,594 +1112,702 @@
 		{
 			icon: "thermal:tin_ingot"
 			id: "4B5097DC553934DE"
-			tasks: [{
-				id: "57DBACE0483CB891"
-				title: "锡 232°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "57DBACE0483CB891"
+					title: "锡 232°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: 2.5d
 		}
 		{
 			icon: "thermal:lead_ingot"
 			id: "30C78FF480D48761"
-			tasks: [{
-				id: "653134F19E9FDD9E"
-				title: "铅 328°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "653134F19E9FDD9E"
+					title: "铅 328°C"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: 2.5d
 		}
 		{
 			icon: "create:zinc_ingot"
 			id: "4A249F15C037471F"
-			tasks: [{
-				id: "72A7FB0DAA5255D8"
-				title: "锌 420°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "72A7FB0DAA5255D8"
+					title: "锌 420°C"
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: 2.5d
 		}
 		{
 			icon: "thermal:silver_ingot"
 			id: "257E222C791D6BA5"
-			tasks: [{
-				id: "44DD46FB9AAD6002"
-				title: "银 962°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "44DD46FB9AAD6002"
+					title: "银 962°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: 1.5d
 		}
 		{
 			icon: "minecraft:gold_ingot"
 			id: "73F3A20FA59E9771"
-			tasks: [{
-				id: "3F88A77D32970F18"
-				title: "金 1064°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3F88A77D32970F18"
+					title: "金 1064°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: 0.5d
 		}
 		{
 			icon: "minecraft:copper_ingot"
 			id: "23B9EB93D743DEBF"
-			tasks: [{
-				id: "16AF1929A6251679"
-				title: "铜 1085°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "16AF1929A6251679"
+					title: "铜 1085°C"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: 0.5d
 		}
 		{
 			icon: "create:andesite_alloy"
 			id: "39BC343F538768D6"
-			tasks: [{
-				id: "3A83435D302FB87F"
-				title: "安山合金 760°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3A83435D302FB87F"
+					title: "安山合金 760°C"
+					type: "checkmark"
+				}
+			]
 			x: -3.5d
 			y: 2.5d
 		}
 		{
 			icon: "create:brass_ingot"
 			id: "44FDA637A049202F"
-			tasks: [{
-				id: "268DB9932B7379FB"
-				title: "黄铜 930°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "268DB9932B7379FB"
+					title: "黄铜 930°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: 1.5d
 		}
 		{
 			icon: "thermal:bronze_ingot"
 			id: "54A5E2AEA2766ED6"
-			tasks: [{
-				id: "5B8614F5E94163E4"
-				title: "青铜 820°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5B8614F5E94163E4"
+					title: "青铜 820°C"
+					type: "checkmark"
+				}
+			]
 			x: -4.5d
 			y: 2.5d
 		}
 		{
 			icon: "thermal:constantan_ingot"
 			id: "2A20A99BECC374F5"
-			tasks: [{
-				id: "02F96387982970A0"
-				title: "康铜 1200°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "02F96387982970A0"
+					title: "康铜 1200°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -0.5d
 		}
 		{
 			icon: "cmi:cast_iron_ingot"
 			id: "6FBD2651BEA03DAB"
-			tasks: [{
-				id: "589FAD88B5D3F170"
-				title: "铸铁 1200°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "589FAD88B5D3F170"
+					title: "铸铁 1200°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -0.5d
 		}
 		{
 			icon: "thermal:electrum_ingot"
 			id: "0E6F8F7CD4A40D6C"
-			tasks: [{
-				id: "3431DBA734438362"
-				title: "琥珀金 1060°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3431DBA734438362"
+					title: "琥珀金 1060°C"
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: 0.5d
 		}
 		{
 			icon: "tconstruct:cinderslime_ingot"
 			id: "4AD70A056C558037"
-			tasks: [{
-				id: "683E13490FD50AEF"
-				title: "余烬粘液 1288°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "683E13490FD50AEF"
+					title: "余烬粘液 1288°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -1.5d
 		}
 		{
 			icon: "thermal:invar_ingot"
 			id: "50C9F4D7932D8DC3"
-			tasks: [{
-				id: "069DB19DBC20D4D8"
-				title: "殷钢 1425°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "069DB19DBC20D4D8"
+					title: "殷钢 1425°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -3.5d
 		}
 		{
 			icon: "cmi:siltsteel_ingot"
 			id: "1D5F5A97D70C4405"
-			tasks: [{
-				id: "3D03BA032B9536C8"
-				title: "泓钢 1386°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3D03BA032B9536C8"
+					title: "泓钢 1386°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -2.5d
 		}
 		{
 			icon: "thermal:lumium_ingot"
 			id: "4DB6AAF2378BA093"
-			tasks: [{
-				id: "06BAC94A06ACDEB8"
-				title: "流明 993°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "06BAC94A06ACDEB8"
+					title: "流明 993°C"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: 1.5d
 		}
 		{
 			icon: "thermal:signalum_ingot"
 			id: "760A87239D94D617"
-			tasks: [{
-				id: "50E362A9C1F05ED5"
-				title: "信素 1231°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "50E362A9C1F05ED5"
+					title: "信素 1231°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -1.5d
 		}
 		{
 			icon: "tconstruct:steel_ingot"
 			id: "6FCF9F67624D88CF"
-			tasks: [{
-				id: "7BC3C0A71BE9CE62"
-				title: "钢 1370°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7BC3C0A71BE9CE62"
+					title: "钢 1370°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -2.5d
 		}
 		{
 			icon: "immersiveengineering:ingot_uranium"
 			id: "63124209A2CE30ED"
-			tasks: [{
-				id: "067518855718801C"
-				title: "铀 1132°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "067518855718801C"
+					title: "铀 1132°C"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: -0.5d
 		}
 		{
 			icon: "thermal:nickel_ingot"
 			id: "63823472C4AC7DE1"
-			tasks: [{
-				id: "3B3B4DFEDBD89C7E"
-				title: "镍 1455°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3B3B4DFEDBD89C7E"
+					title: "镍 1455°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -3.5d
 		}
 		{
 			icon: "tconstruct:cobalt_ingot"
 			id: "38621FA2809A4F9F"
-			tasks: [{
-				id: "7ED9955B9D09F1D0"
-				title: "钴 1495°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7ED9955B9D09F1D0"
+					title: "钴 1495°C"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: -3.5d
 		}
 		{
 			icon: "cmi:platinum_ingot"
 			id: "607A18687B97D7FD"
-			tasks: [{
-				id: "2BCDB9B35CAB9330"
-				title: "铂 1768°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2BCDB9B35CAB9330"
+					title: "铂 1768°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -6.5d
 		}
 		{
 			icon: "cmi:chromium_ingot"
 			id: "41C5B67CB6EBE56A"
-			tasks: [{
-				id: "69DE3D1CFFB0AAA0"
-				title: "铬 1907°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "69DE3D1CFFB0AAA0"
+					title: "铬 1907°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -8.5d
 		}
 		{
 			icon: "vintageimprovements:vanadium_ingot"
 			id: "2EDDB875BB6987AD"
-			tasks: [{
-				id: "074182861544F4A1"
-				title: "钒 1910°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "074182861544F4A1"
+					title: "钒 1910°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -8.5d
 		}
 		{
 			icon: "cmi:potassium_ingot"
 			id: "47E2A229710885D5"
-			tasks: [{
-				id: "21D2ED2A2BF143E6"
-				title: "钾 64°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "21D2ED2A2BF143E6"
+					title: "钾 64°C"
+					type: "checkmark"
+				}
+			]
 			x: -5.5d
 			y: 2.5d
 		}
 		{
 			icon: "cmi:sodium_ingot"
 			id: "03AC4162234B22EB"
-			tasks: [{
-				id: "2938060C35A994EE"
-				title: "钠 98°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2938060C35A994EE"
+					title: "钠 98°C"
+					type: "checkmark"
+				}
+			]
 			x: -6.5d
 			y: 2.5d
 		}
 		{
 			icon: "cmi:calcium_ingot"
 			id: "72F5C0445DC32FAA"
-			tasks: [{
-				id: "50115D1F8C265CF7"
-				title: "钙 842°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "50115D1F8C265CF7"
+					title: "钙 842°C"
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: 1.5d
 		}
 		{
 			icon: "cmi:magnesium_ingot"
 			id: "1451B0E485EB917F"
-			tasks: [{
-				id: "6D963898C65F68E0"
-				title: "镁 650°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6D963898C65F68E0"
+					title: "镁 650°C"
+					type: "checkmark"
+				}
+			]
 			x: -7.5d
 			y: 2.5d
 		}
 		{
 			icon: "mekanism:ingot_refined_glowstone"
 			id: "137004058596FDAE"
-			tasks: [{
-				id: "301BC6301F614344"
-				title: "强化荧石 943°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "301BC6301F614344"
+					title: "强化荧石 943°C"
+					type: "checkmark"
+				}
+			]
 			x: -3.5d
 			y: 1.5d
 		}
 		{
 			icon: "tconstruct:rose_gold_ingot"
 			id: "6035061CC312D16B"
-			tasks: [{
-				id: "679DC6C950186284"
-				title: "玫瑰金 960°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "679DC6C950186284"
+					title: "玫瑰金 960°C"
+					type: "checkmark"
+				}
+			]
 			x: -4.5d
 			y: 1.5d
 		}
 		{
 			icon: "tconstruct:hepatizon_ingot"
 			id: "7591E80504D993E1"
-			tasks: [{
-				id: "619AA21448C07CFE"
-				title: "黑色科林斯青铜 990°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "619AA21448C07CFE"
+					title: "黑色科林斯青铜 990°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: 0.5d
 		}
 		{
 			icon: "tconstruct:amethyst_bronze_ingot"
 			id: "67D62F4B2356D6C6"
-			tasks: [{
-				id: "3FEB3EF5C83796F8"
-				title: "紫水晶青铜 1043°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3FEB3EF5C83796F8"
+					title: "紫水晶青铜 1043°C"
+					type: "checkmark"
+				}
+			]
 			x: -3.5d
 			y: 0.5d
 		}
 		{
 			icon: "tconstruct:slimesteel_ingot"
 			id: "781663D1AFBE01E3"
-			tasks: [{
-				id: "33FE6398CACE0C50"
-				title: "黏钢 1098°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "33FE6398CACE0C50"
+					title: "黏钢 1098°C"
+					type: "checkmark"
+				}
+			]
 			x: -4.5d
 			y: 0.5d
 		}
 		{
 			icon: "tconstruct:pig_iron_ingot"
 			id: "5F147308D7BC914C"
-			tasks: [{
-				id: "04026B62F36C7C4F"
-				title: "生铁 1145°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "04026B62F36C7C4F"
+					title: "生铁 1145°C"
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: -0.5d
 		}
 		{
 			icon: "tconstruct:queens_slime_ingot"
 			id: "10C9B3865919B7A7"
-			tasks: [{
-				id: "3C57D195983E9B99"
-				title: "皇后史莱姆 1193°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3C57D195983E9B99"
+					title: "皇后史莱姆 1193°C"
+					type: "checkmark"
+				}
+			]
 			x: -3.5d
 			y: -0.5d
 		}
 		{
 			icon: "mekanism:ingot_refined_obsidian"
 			id: "6361A4507F5853F4"
-			tasks: [{
-				id: "4E77DF1E202CBB0B"
-				title: "强化黑曜石 1413°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4E77DF1E202CBB0B"
+					title: "强化黑曜石 1413°C"
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: -3.5d
 		}
 		{
 			icon: "thermal:enderium_ingot"
 			id: "582114A9B3C50CF5"
-			tasks: [{
-				id: "29B792C0274A3BBA"
-				title: "末影 1501°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "29B792C0274A3BBA"
+					title: "末影 1501°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -4.5d
 		}
 		{
 			icon: "createdeco:industrial_iron_ingot"
 			id: "1520B086584D69D7"
-			tasks: [{
-				id: "5B2BCCF74933E39E"
-				title: "工业铁 1507°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5B2BCCF74933E39E"
+					title: "工业铁 1507°C"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: -4.5d
 		}
 		{
 			icon: "cmi:stainless_steel_ingot"
 			id: "254C4C44D005B123"
-			tasks: [{
-				id: "5A192270EBB0AF02"
-				title: "不锈耐酸钢 1510°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5A192270EBB0AF02"
+					title: "不锈耐酸钢 1510°C"
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: -4.5d
 		}
 		{
 			icon: "thermal_extra:shellite_ingot"
 			id: "2BA97A720AD1622B"
-			tasks: [{
-				id: "2E9430FE38994765"
-				title: "潜影合金 1562°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2E9430FE38994765"
+					title: "潜影合金 1562°C"
+					type: "checkmark"
+				}
+			]
 			x: -3.5d
 			y: -4.5d
 		}
 		{
 			icon: "tconstruct:manyullyn_ingot"
 			id: "477B3765FA977F07"
-			tasks: [{
-				id: "1FE2746B27DD2564"
-				title: "玛玉灵 1617°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "1FE2746B27DD2564"
+					title: "玛玉灵 1617°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -5.5d
 		}
 		{
 			icon: "thermal_extra:twinite_ingot"
 			id: "431C299E79ED8509"
-			tasks: [{
-				id: "5035B831EF97DA3C"
-				title: "双子物质 1671°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5035B831EF97DA3C"
+					title: "双子物质 1671°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -5.5d
 		}
 		{
 			icon: "thermalendergy:prismalium_ingot"
 			id: "14FB68625D994E08"
-			tasks: [{
-				id: "16CF1EFC06C79BCB"
-				title: "海晶 1741°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "16CF1EFC06C79BCB"
+					title: "海晶 1741°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -6.5d
 		}
 		{
 			icon: "thermalendergy:melodium_ingot"
 			id: "5731CC9DD9BC63E6"
-			tasks: [{
-				id: "4CA4AC2BD532B015"
-				title: "旋律 1755°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4CA4AC2BD532B015"
+					title: "旋律 1755°C"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: -6.5d
 		}
 		{
 			icon: "thermalendergy:stellarium_ingot"
 			id: "1F014216A1CF053E"
-			tasks: [{
-				id: "06FC3BDA67B958A7"
-				title: "恒星 1873°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "06FC3BDA67B958A7"
+					title: "恒星 1873°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -7.5d
 		}
 		{
 			icon: "thermal_extra:soul_infused_ingot"
 			id: "243CFC63B116AD7B"
-			tasks: [{
-				id: "5E8E9512A71DC1BC"
-				title: "注灵 1901°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5E8E9512A71DC1BC"
+					title: "注灵 1901°C"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: -8.5d
 		}
 		{
 			icon: "thermal_extra:abyssal_ingot"
 			id: "5C2195BB1DD034F4"
-			tasks: [{
-				id: "66099B1B56B122FF"
-				title: "深渊 1953°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "66099B1B56B122FF"
+					title: "深渊 1953°C"
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: -8.5d
 		}
 		{
 			icon: "minecraft:netherite_ingot"
 			id: "5FC14F277DFCCEBB"
-			tasks: [{
-				id: "270BC98BA5949E11"
-				title: "下界合金 2042°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "270BC98BA5949E11"
+					title: "下界合金 2042°C"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: -9.5d
 		}
 		{
 			icon: "mekanism:ingot_osmium"
 			id: "6C8CB1CB1E349EBD"
-			tasks: [{
-				id: "50D3544320ACBF14"
-				title: "锇 3033°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "50D3544320ACBF14"
+					title: "锇 3033°C"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: -9.5d
 		}
 		{
 			icon: "ad_astra:desh_ingot"
 			id: "4F8348A5CBBBB006"
-			tasks: [{
-				id: "799AC958B3028671"
-				title: "戴斯 3094°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "799AC958B3028671"
+					title: "戴斯 3094°C"
+					type: "checkmark"
+				}
+			]
 			x: -1.5d
 			y: -9.5d
 		}
 		{
 			icon: "cmi:tungsten_ingot"
 			id: "61D1DF68928F03DE"
-			tasks: [{
-				id: "69780BE16A9539E4"
-				title: "钨 3410°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "69780BE16A9539E4"
+					title: "钨 3410°C"
+					type: "checkmark"
+				}
+			]
 			x: -2.5d
 			y: -9.5d
 		}
 		{
 			icon: "ad_astra:ostrum_ingot"
 			id: "67FFA27690EC0436"
-			tasks: [{
-				id: "52F435808CE1F259"
-				title: "紫金 3687°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "52F435808CE1F259"
+					title: "紫金 3687°C"
+					type: "checkmark"
+				}
+			]
 			x: -3.5d
 			y: -9.5d
 		}
 		{
 			icon: "ad_astra:calorite_ingot"
 			id: "33B6C0F6ABDC1583"
-			tasks: [{
-				id: "1A36E579AA29CDB0"
-				title: "耐热金属 4003°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "1A36E579AA29CDB0"
+					title: "耐热金属 4003°C"
+					type: "checkmark"
+				}
+			]
 			x: -4.5d
 			y: -9.5d
 		}
 		{
 			icon: "immersiveengineering:ethanol_bucket"
 			id: "55886680D90FDB81"
-			tasks: [{
-				id: "0ED0577C2ACD3093"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "0ED0577C2ACD3093"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "乙醇 1132°C"
 			x: 11.0d
 			y: 0.5d
@@ -1697,11 +1815,13 @@
 		{
 			icon: "cmi:turbid_waste_liquid_bucket"
 			id: "5488564333A59C81"
-			tasks: [{
-				id: "31B082677C06A022"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "31B082677C06A022"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "浑浊废液 1189°C"
 			x: 12.0d
 			y: 0.5d
@@ -1709,11 +1829,13 @@
 		{
 			icon: "cmi:delta_unstable_solution_bucket"
 			id: "39B86E0CB32009C1"
-			tasks: [{
-				id: "22EE0AA74FC9A863"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "22EE0AA74FC9A863"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "德尔塔不稳定源质 1206°C"
 			x: 11.0d
 			y: -0.5d
@@ -1721,11 +1843,13 @@
 		{
 			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "703F44ABE34DEAD8"
-			tasks: [{
-				id: "035D5CE5B10EC22F"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "035D5CE5B10EC22F"
+					title: "熔岩 100极0°C"
+					type: "checkmark"
+				}
+			]
 			title: "原油 1240°C"
 			x: 12.0d
 			y: -0.5d
@@ -1733,11 +1857,13 @@
 		{
 			icon: "ad_astra:fuel_bucket"
 			id: "3323158A6852F009"
-			tasks: [{
-				id: "2AAA63D0F8AF2E85"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2AAA63D0F8AF2E85"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "燃油 1417°C"
 			x: 11.0d
 			y: -2.5d
@@ -1745,11 +1871,13 @@
 		{
 			icon: "createdieselgenerators:biodiesel_bucket"
 			id: "33D89D913F406163"
-			tasks: [{
-				id: "02EA6EA4D40E0BBE"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "02EA6EA4D40E0BBE"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "生物柴油 1636°C"
 			x: 11.0d
 			y: -4.5d
@@ -1757,11 +1885,13 @@
 		{
 			icon: "thermal:refined_fuel_bucket"
 			id: "3BA57FFC26FA73DC"
-			tasks: [{
-				id: "56FE0FE575739513"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "56FE0FE575739513"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "精炼油 2041°C"
 			x: 11.0d
 			y: -8.5d
@@ -1769,11 +1899,13 @@
 		{
 			icon: "tconstruct:blazing_blood_bucket"
 			id: "510375FCD1628BE2"
-			tasks: [{
-				id: "5B47D5CD713D9727"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5B47D5CD713D9727"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "烈焰血 2638°C"
 			x: 12.0d
 			y: -8.5d
@@ -1781,11 +1913,13 @@
 		{
 			icon: "ad_astra:cryo_fuel_bucket"
 			id: "5979BB9F8FCA8B0A"
-			tasks: [{
-				id: "725D05BF02A3AFB6"
-				title: "熔岩 1000°C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "725D05BF02A3AFB6"
+					title: "熔岩 1000°C"
+					type: "checkmark"
+				}
+			]
 			title: "凛冰燃料 4225°C"
 			x: 11.0d
 			y: -9.5d

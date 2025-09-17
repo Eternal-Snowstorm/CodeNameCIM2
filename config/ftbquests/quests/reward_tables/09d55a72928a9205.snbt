@@ -3,8 +3,12 @@
 	loot_size: 1
 	order_index: 1
 	rewards: [
-		{ item: "functionalstorage:puller_upgrade" }
-		{ item: "functionalstorage:pusher_upgrade" }
+		{
+			item: "functionalstorage:puller_upgrade"
+		}
+		{
+			item: "functionalstorage:pusher_upgrade"
+		}
 	]
 	title: "抽屉传输"
 }

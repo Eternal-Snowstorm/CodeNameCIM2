@@ -5,14 +5,16 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:stone_mechanism"
 	id: "36A6BEE891284A7A"
-	images: [{
-		height: 10.58d
-		image: "cmi:textures/images/background/stone.png"
-		rotation: 0.0d
-		width: 28.42d
-		x: -3.0d
-		y: -0.5d
-	}]
+	images: [
+		{
+			height: 10.58d
+			image: "cmi:textures/images/background/stone.png"
+			rotation: 0.0d
+			width: 28.42d
+			x: -3.0d
+			y: -0.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -20,24 +22,28 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "129F9D4B54D65DC0"
-			rewards: [{
-				id: "7A2C400D1A6E6361"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "3F928C61ECCC50A6"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:stone"
-					}
+			rewards: [
+				{
+					id: "7A2C400D1A6E6361"
+					type: "xp"
+					xp: 10
 				}
-				title: "石头"
-				type: "item"
-			}]
+			]
+			size: 1.0d
+			tasks: [
+				{
+					id: "3F928C61ECCC50A6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:stone"
+						}
+					}
+					title: "石头"
+					type: "item"
+				}
+			]
 			x: -11.5d
 			y: -1.5d
 		}
@@ -47,11 +53,13 @@
 			hide_dependent_lines: true
 			id: "0A53DB225AE2E67A"
 			size: 1.0d
-			tasks: [{
-				id: "3047DC8F8345FF9A"
-				title: "辊压"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3047DC8F8345FF9A"
+					title: "辊压"
+					type: "checkmark"
+				}
+			]
 			x: -5.5d
 			y: 1.5d
 		}
@@ -60,17 +68,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "24F20C2FD7E80B8A"
-			rewards: [{
-				id: "6F2A316F7D5BB936"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6F2A316F7D5BB936"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.0d
-			tasks: [{
-				id: "1F6E4288F7701DAC"
-				item: "minecraft:flint"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1F6E4288F7701DAC"
+					item: "minecraft:flint"
+					type: "item"
+				}
+			]
 			x: -2.5d
 			y: -1.0d
 		}
@@ -79,17 +91,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "375701D6F3DFB6FA"
-			rewards: [{
-				id: "4DBFCD4B29C3542D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4DBFCD4B29C3542D"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.0d
-			tasks: [{
-				id: "033475D20A583AA3"
-				item: "tconstruct:seared_brick"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "033475D20A583AA3"
+					item: "tconstruct:seared_brick"
+					type: "item"
+				}
+			]
 			x: 1.5d
 			y: 0.5d
 		}
@@ -98,17 +114,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "367A587D2ECBABD7"
-			rewards: [{
-				id: "0173B5DA7508B89F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0173B5DA7508B89F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.0d
-			tasks: [{
-				id: "5289229069BC30A6"
-				item: "cmi:stone_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5289229069BC30A6"
+					item: "cmi:stone_mechanism"
+					type: "item"
+				}
+			]
 			x: 6.0d
 			y: -3.0d
 		}

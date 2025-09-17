@@ -320,6 +320,7 @@ addMaterial("vanadium", 0xF0FFFF, "stone")
 // 钨
 addMaterial("tungsten", 0x5A6C7E, "nether")
 	.ingot()
+	.nugget()
 	.plate()
 	.dust()
 	.rod()

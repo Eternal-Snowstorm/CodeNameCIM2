@@ -5,14 +5,16 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:andesite_mechanism"
 	id: "44C687AD917150CC"
-	images: [{
-		height: 33.26d
-		image: "cmi:textures/images/background/andesite.png"
-		rotation: 0.0d
-		width: 61.53d
-		x: -1.0d
-		y: 0.0d
-	}]
+	images: [
+		{
+			height: 33.26d
+			image: "cmi:textures/images/background/andesite.png"
+			rotation: 0.0d
+			width: 61.53d
+			x: -1.0d
+			y: 0.0d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
@@ -20,18 +22,22 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "18B8E359D17F7E53"
-			rewards: [{
-				id: "0AF552738CF8EE64"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0AF552738CF8EE64"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "circle"
 			size: 1.5d
-			tasks: [{
-				id: "28E939114684941B"
-				item: "minecraft:andesite"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "28E939114684941B"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+			]
 			x: -21.75d
 			y: -3.75d
 		}
@@ -39,23 +45,27 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "51C25B919C10A46B"
-			rewards: [{
-				id: "5DC435F478CC98D6"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "013A8C4931168497"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:nuggets/iron"
-					}
+			rewards: [
+				{
+					id: "5DC435F478CC98D6"
+					type: "xp"
+					xp: 10
 				}
-				title: "铁粒"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "013A8C4931168497"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:nuggets/iron"
+						}
+					}
+					title: "铁粒"
+					type: "item"
+				}
+			]
 			x: -8.5d
 			y: -3.0d
 		}
@@ -68,11 +78,13 @@
 			hide_dependent_lines: true
 			id: "0D1F7376FED3CD15"
 			size: 1.5d
-			tasks: [{
-				id: "7D3504D81DE99D6C"
-				title: "搅拌"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7D3504D81DE99D6C"
+					title: "搅拌"
+					type: "checkmark"
+				}
+			]
 			x: -13.0d
 			y: -0.5d
 		}
@@ -82,11 +94,13 @@
 			hide_dependent_lines: true
 			id: "77C265540CB8A645"
 			size: 1.5d
-			tasks: [{
-				id: "4E4E70A2E845BC15"
-				title: "浇筑"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4E4E70A2E845BC15"
+					title: "浇筑"
+					type: "checkmark"
+				}
+			]
 			x: -14.0d
 			y: 1.5d
 		}
@@ -95,24 +109,28 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "667E8A5AD5497D43"
-			rewards: [{
-				id: "49620C90F7A8036C"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "4B276CF4125CEC37"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/andesite_alloy"
-					}
+			rewards: [
+				{
+					id: "49620C90F7A8036C"
+					type: "xp"
+					xp: 10
 				}
-				title: "安山合金"
-				type: "item"
-			}]
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "4B276CF4125CEC37"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/andesite_alloy"
+						}
+					}
+					title: "安山合金"
+					type: "item"
+				}
+			]
 			x: -10.5d
 			y: 4.5d
 		}
@@ -122,11 +140,13 @@
 			hide_dependent_lines: true
 			id: "423D0363FE4F4214"
 			size: 1.5d
-			tasks: [{
-				id: "292861CD8E8999BC"
-				title: "辊压"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "292861CD8E8999BC"
+					title: "辊压"
+					type: "checkmark"
+				}
+			]
 			x: -4.0d
 			y: 7.0d
 		}
@@ -135,17 +155,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "55FA0604A4F6871C"
-			rewards: [{
-				id: "61D5474E040EC637"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "61D5474E040EC637"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "43CC78A2C0821970"
-				item: "create:shaft"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "43CC78A2C0821970"
+					item: "create:shaft"
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 1.0d
 		}
@@ -154,24 +178,28 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "7640994C0B1404A6"
-			rewards: [{
-				id: "6261D65A22DE3B53"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "151D3BB5FD7BE374"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:planks"
-					}
+			rewards: [
+				{
+					id: "6261D65A22DE3B53"
+					type: "xp"
+					xp: 10
 				}
-				title: "木板"
-				type: "item"
-			}]
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "151D3BB5FD7BE374"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "木板"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -0.5d
 		}
@@ -183,17 +211,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "0A4C0E57E9EF1371"
-			rewards: [{
-				id: "7D0B17574EB62034"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7D0B17574EB62034"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "551FB095DB4DC141"
-				item: "create:cogwheel"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "551FB095DB4DC141"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: -0.5d
 		}
@@ -202,17 +234,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5ACC868E22697931"
-			rewards: [{
-				id: "4223EF9EFCCF2A90"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4223EF9EFCCF2A90"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "62AD8680D3245FFD"
-				item: "cmi:mechanical_mechanism_part"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "62AD8680D3245FFD"
+					item: "cmi:mechanical_mechanism_part"
+					type: "item"
+				}
+			]
 			x: 11.25d
 			y: 3.0d
 		}
@@ -220,17 +256,21 @@
 			dependencies: ["5ACC868E22697931"]
 			disable_toast: true
 			id: "6F284117A1096CBC"
-			rewards: [{
-				id: "17BD58F919C05692"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "17BD58F919C05692"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "0522DBB2B2112B31"
-				item: "cmi:andesite_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0522DBB2B2112B31"
+					item: "cmi:andesite_mechanism"
+					type: "item"
+				}
+			]
 			x: 17.25d
 			y: -1.5d
 		}
