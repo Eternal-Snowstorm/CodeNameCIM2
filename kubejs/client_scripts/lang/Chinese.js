@@ -167,6 +167,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("osmiridium", "铱锇")
 	addMaterialLanguage("uraninite", "方铀")
 	addMaterialLanguage("argentite", "辉银")
+	addMaterialLanguage("etrium", "埃忒恩")
 
 	addMachineLanguage("flash_disk_writer", "闪存盘写入器")
 	addMachineLanguage("chemical_gas_extractor", "化学气体抽取器")

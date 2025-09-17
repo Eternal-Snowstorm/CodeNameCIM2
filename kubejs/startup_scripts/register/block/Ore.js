@@ -144,55 +144,50 @@ addOreBlock("tungsten", "nether", 10)
 
 // 黄铁
 addOreBlock("pyrite", "stone", 6)
-	.stone()
-	.deepslate()
+	.nether()
 
 // 红镍
 addOreBlock("lateritic_nickel", "stone", 6)
-	.stone()
-	.deepslate()
+	.end()
 
 // 辉绿
 addOreBlock("veridium", "stone", 3)
-	.stone()
-	.deepslate()
+	.mars()
 
 // 黄锡
 addOreBlock("stannine", "stone", 3)
-	.stone()
-	.deepslate()
+	.moon()
 
 // 闪锌
 addOreBlock("sphalerite", "iron", 5)
-	.stone()
-	.deepslate()
+	.end()
 
 // 磷酸铝
 addOreBlock("variscite", "stone", 4)
-	.stone()
-	.deepslate()
+	.end()
 
 // 方铅
 addOreBlock("galena", "stone", 5)
-	.stone()
-	.deepslate()
+	.mars()
 
 // 铱锇
 addOreBlock("osmiridium", "iron", 6)
-	.stone()
-	.deepslate()
+	.moon()
 
 // 方铀
 addOreBlock("uraninite", "stone", 5)
-	.stone()
-	.deepslate()
+	.nether()
 
 // 辉银
 addOreBlock("argentite", "iron", 6)
-	.stone()
-	.deepslate()
+	.moon()
 
 // 赛特斯石英
 addOreBlock("certus_quartz", "iron", 3)
+	.stone()
+	.deepslate()
+
+// 埃特恩
+addOreBlock("etrium", "diamond", 5)
 	.stone()
 	.deepslate()
