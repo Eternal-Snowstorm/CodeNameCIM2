@@ -91,7 +91,7 @@ MMEvents.createProcesses((event) => {
 			type: "mm:input/consume",
 			ingredient: {
 				type: "mm:fluid",
-				fluid: "vintageimprovements:sulfuric_acid",
+				fluid: "mekanism:sulfuric_acid",
 				amount: global.BUCKET_CAPACITY
 			}
 		})

@@ -86,8 +86,8 @@ ServerEvents.recipes((event) => {
 		.id("mekanism:rotary/sulfur_trioxide")
 
 	mekanism.rotary()
-		.fluidInput(Fluid.of(IngredientUtils.getFirstFluidId("forge:sulfuric_acid"), 200))
-		.fluidOutput(Fluid.of(IngredientUtils.getFirstFluidId("forge:sulfuric_acid"), 200))
+		.fluidInput(Fluid.of("mekanism:sulfric_acid", 200))
+		.fluidOutput(Fluid.of("mekanism:sulfric_acid", 200))
 		.gasInput(MekanismType.Gas.of("mekanism:sulfuric_acid", 200))
 		.gasOutput(MekanismType.Gas.of("mekanism:sulfuric_acid", 200))
 		.id("mekanism:rotary/sulfuric_acid")

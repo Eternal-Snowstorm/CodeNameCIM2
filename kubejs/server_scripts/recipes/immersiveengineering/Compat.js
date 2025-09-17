@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create, immersiveengineering } = event.recipes
 
 	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 250), [
 		"#forge:dusts/redstone",
@@ -22,6 +22,23 @@ ServerEvents.recipes((event) => {
 			"fluid": "thermal_extra:polyolefin"
 		}
 	})
+
+	// 三氧化硫
+	event.custom({
+		"type": "immersiveengineering:refinery",
+		"catalyst": {
+			"tag": "forge:plates/vanadium"
+		},
+		"energy": 150,
+		"input0": {
+			"amount": 8,
+			"tag": "forge:sulfur_dioxide"
+		},
+		"result": {
+			"amount": 8,
+			"fluid": "mekanism:sulfur_trioxide"
+		}
+	}).id("vintageimprovements:pressurizing/sulfur_trioxide")
 
 	// 三硝基甲苯
 	event.custom({
