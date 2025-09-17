@@ -4,22 +4,22 @@ ServerEvents.recipes((event) => {
 	// 1
 	create.filling("minecraft:small_amethyst_bud", [
 		"thermal_extra:amethyst_dust",
-		Fluid.of("minecraft:water", 200)
+		Fluid.of("cmi:crystal_catalyt", 200)
 	])
 	// 2
 	create.filling("minecraft:medium_amethyst_bud", [
 		"minecraft:small_amethyst_bud",
-		Fluid.of("minecraft:water", 200)
+		Fluid.of("cmi:crystal_catalyt", 200)
 	])
 	// 3
 	create.filling("minecraft:large_amethyst_bud", [
 		"minecraft:medium_amethyst_bud",
-		Fluid.of("minecraft:water", 200)
+		Fluid.of("cmi:crystal_catalyt", 200)
 	])
 	// 4
 	create.filling("minecraft:amethyst_cluster", [
 		"minecraft:large_amethyst_bud",
-		Fluid.of("minecraft:water", 200)
+		Fluid.of("cmi:crystal_catalyt", 200)
 	])
 
 	// 萤石

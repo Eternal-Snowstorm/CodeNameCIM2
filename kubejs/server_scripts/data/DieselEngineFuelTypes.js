@@ -18,7 +18,7 @@ ServerEvents.highPriorityData((event) => {
 		.huge(96, 73728, 9)
 
 	// 煤油
-	addDieselEngineFuelType("#forge:kerosene", 1)
+	addDieselEngineFuelType("cmi:kerosene", 1)
 		.normal(32, 18432, 6)
 		.modular(32, 36864, 8)
 		.huge(64, 73728, 12)

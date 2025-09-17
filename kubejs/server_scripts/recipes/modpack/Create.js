@@ -35,13 +35,6 @@ ServerEvents.recipes((event) => {
 		"#cmi:steelmaking_raw_materials"
 	]).processingTime(200).superheated()
 
-	// 钢粉
-	create.sequenced_assembly("immersiveengineering:dust_steel", [
-		"#forge:dusts/cast_iron"
-	], [
-		create.pressing("cmi:cast_iron_dust", ["cmi:cast_iron_dust"])
-	]).loops(10).transitionalItem("cmi:cast_iron_dust")
-
 	// 木棍
 	create.cutting([
 		Item.of("minecraft:stick", 4).withChance(1),
