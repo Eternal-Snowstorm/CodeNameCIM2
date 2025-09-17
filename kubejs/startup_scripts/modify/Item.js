@@ -1,7 +1,7 @@
 ItemEvents.modification((event) => {
-	const BURN_TIME = 200
 	function modifyItemBurnTime(item, time) {
 		return event.modify(item, (modify) => {
+			const BURN_TIME = 200
 			modify.burnTime = BURN_TIME * time
 		})
 	}
