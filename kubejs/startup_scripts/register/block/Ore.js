@@ -11,7 +11,7 @@ const PICKAXE = global.ToolType["pickaxe"]
 }
 */
 
-function simple(background, ore) {
+function simpleOreModel(background, ore) {
 	return {
 		"parent": "cmi:block/ore/simple",
 		"textures": {
@@ -20,14 +20,14 @@ function simple(background, ore) {
 		}
 	}
 }
-simple("aaa", "aaa")
+simpleOreModel("aaa", "aaa")
 
 StartupEvents.registry("block", (event) => {
 	event.create("cmi:aaa")
 		// 着色的层是矿石层, 也就是0后面的1
 		.color(1, 0xFFFFFF)
 		// 调用模型文件
-		.modelJson(simple("moon", "ore_1"))
+		.modelJson(simpleOreModel("moon", "ore_1"))
 })
 
 /**
