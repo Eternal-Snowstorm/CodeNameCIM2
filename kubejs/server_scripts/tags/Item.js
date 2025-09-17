@@ -366,6 +366,9 @@ ServerEvents.tags("item", (event) => {
 	event.add("forge:stripped_logs")
 		.add("thermal:stripped_rubberwood_log")
 
+	event.get("create:blaze_burner_fuel/special")
+		.add("tconstruct:blazing_blood_bucket")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
