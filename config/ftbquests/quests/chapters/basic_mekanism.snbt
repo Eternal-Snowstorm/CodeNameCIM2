@@ -31,7 +31,7 @@
 			y: 0.5d
 		}
 	]
-	order_index: 23
+	order_index: 24
 	quest_links: [ ]
 	quests: [
 		{
@@ -54,8 +54,10 @@
 						tag: {
 							value: "forge:ingots/chromium"
 						}
+						title: "任意 #forge:锭/铬"
+						type: "item"
 					}
-					title: "任意 #forge:锭/铬"
+					title: "任意 #forge:ingots/chromium"
 					type: "item"
 				}
 			]
@@ -82,8 +84,10 @@
 						tag: {
 							value: "forge:ingots/invar"
 						}
+						title: "任意 #forge:锭/殷钢"
+						type: "item"
 					}
-					title: "任意 #forge:锭/殷钢"
+					title: "任意 #forge:ingots/invar"
 					type: "item"
 				}
 			]
@@ -110,8 +114,10 @@
 						tag: {
 							value: "forge:ingots/steel"
 						}
+						title: "任意 #forge:锭/钢"
+						type: "item"
 					}
-					title: "任意 #forge:锭/钢"
+					title: "任意 #forge:ingots/steel"
 					type: "item"
 				}
 			]

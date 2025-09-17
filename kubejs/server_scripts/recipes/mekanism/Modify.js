@@ -26,12 +26,6 @@ ServerEvents.recipes((event) => {
 		"thermal_extra:polyolefin_plate"
 	])
 
-	// 太阳能替换
-	event.replaceInput({
-		input: "mekanismgenerators:solar_panel",
-		output: "mekanismgenerators:solar_generator"
-	}, "mekanismgenerators:solar_panel", "ad_astra:photovoltaic_etrium_cell")
-
 	event.replaceInput({
 		input: "#forge:plates/hdpe",
 		output: "mekanism:solar_neutron_activator"

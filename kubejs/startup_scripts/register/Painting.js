@@ -1,19 +1,22 @@
 StartupEvents.registry("painting_variant", (event) => {
 	// Aleegos
-	addPainting("rr1", 16, 16)
-	addPainting("rr2", 16, 16)
-	addPainting("rr3", 16, 16)
-	addPainting("rr4", 16, 16)
-	addPainting("rr5", 16, 16)
-	addPainting("rr6", 16, 16)
-	addPainting("rr7", 16, 16)
-	addPainting("rr8", 16, 16)
-	addPainting("rr9", 16, 16)
-	addPainting("rr10", 16, 16)
-	addPainting("rr11", 16, 16)
-	addPainting("rr12", 16, 16)
-	addPainting("rr13", 16, 16)
-	addPainting("rr14", 16, 16)
+	// 嗯是的阿列不让我放了又
+	// 虽然但是之前确实是说允许的
+	// 所以我注释掉了
+	// addPainting("rr1", 16, 16)
+	// addPainting("rr2", 16, 16)
+	// addPainting("rr3", 16, 16)
+	// addPainting("rr4", 16, 16)
+	// addPainting("rr5", 16, 16)
+	// addPainting("rr6", 16, 16)
+	// addPainting("rr7", 16, 16)
+	// addPainting("rr8", 16, 16)
+	// addPainting("rr9", 16, 16)
+	// addPainting("rr10", 16, 16)
+	// addPainting("rr11", 16, 16)
+	// addPainting("rr12", 16, 16)
+	// addPainting("rr13", 16, 16)
+	// addPainting("rr14", 16, 16)
 	addPainting("girl_of_cmi", 64, 64)
 
 	// Vechni_Metel

@@ -37,8 +37,10 @@
 						tag: {
 							value: "forge:ingots/bronze"
 						}
+						title: "任意 #forge:锭/青铜"
+						type: "item"
 					}
-					title: "任意 #forge:锭/青铜"
+					title: "任意 #forge:ingots/bronze"
 					type: "item"
 				}
 			]
@@ -93,8 +95,10 @@
 						tag: {
 							value: "forge:ingots/bronze"
 						}
+						title: "任意 #forge:锭/青铜"
+						type: "item"
 					}
-					title: "任意 #forge:锭/青铜"
+					title: "任意 #forge:ingots/bronze"
 					type: "item"
 				}
 			]
@@ -136,8 +140,10 @@
 						tag: {
 							value: "forge:rods/bronze"
 						}
+						title: "任意 #forge:杆/青铜"
+						type: "item"
 					}
-					title: "任意 #forge:杆/青铜"
+					title: "任意 #forge:rods/bronze"
 					type: "item"
 				}
 			]
@@ -204,8 +210,10 @@
 						tag: {
 							value: "forge:nuggets/bronze"
 						}
+						title: "任意 #forge:粒/青铜"
+						type: "item"
 					}
-					title: "任意 #forge:粒/青铜"
+					title: "任意 #forge:nuggets/bronze"
 					type: "item"
 				}
 			]
@@ -232,8 +240,10 @@
 						tag: {
 							value: "create:shaft"
 						}
+						title: "任意 #create:传动杆"
+						type: "item"
 					}
-					title: "任意 #create:传动杆"
+					title: "任意 #create:shaft"
 					type: "item"
 				}
 			]
@@ -276,8 +286,10 @@
 						tag: {
 							value: "forge:ingots/bronze"
 						}
+						title: "任意 #forge:锭/青铜"
+						type: "item"
 					}
-					title: "任意 #forge:锭/青铜"
+					title: "任意 #forge:ingots/bronze"
 					type: "item"
 				}
 			]
@@ -319,8 +331,10 @@
 						tag: {
 							value: "forge:plates/bronze"
 						}
+						title: "任意 #forge:板/青铜"
+						type: "item"
 					}
-					title: "任意 #forge:板/青铜"
+					title: "任意 #forge:plates/bronze"
 					type: "item"
 				}
 			]

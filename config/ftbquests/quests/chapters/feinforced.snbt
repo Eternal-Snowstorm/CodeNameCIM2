@@ -38,6 +38,8 @@
 						tag: {
 							value: "forge:ingots/silver"
 						}
+						title: "任意 #forge:锭/银"
+						type: "item"
 					}
 					title: "任意 #forge:锭/银"
 					type: "item"
@@ -108,6 +110,8 @@
 						tag: {
 							value: "forge:ingots/electrum"
 						}
+						title: "任意 #forge:锭/琥珀金"
+						type: "item"
 					}
 					title: "任意 #forge:锭/琥珀金"
 					type: "item"
@@ -153,6 +157,8 @@
 						tag: {
 							value: "forge:plates/electrum"
 						}
+						title: "任意 #forge:板/琥珀金"
+						type: "item"
 					}
 					title: "任意 #forge:板/琥珀金"
 					type: "item"

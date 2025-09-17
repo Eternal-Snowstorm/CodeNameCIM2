@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 		])
 
 		let meltingPoint = global.meltingPoints[metal]
-		let fluidId = IngredientUtils.getFirstFluidId(`forge:molten_${metal}`)
+		let fluidId = IngredientUtils.getFirstFluidId(`tconstruct:molten_${metal}`)
 		let namespace = global.materialNamespace[metal]
 		let ingot = `#forge:ingots/${metal}`
 		let plate = `#forge:plates/${metal}`
@@ -99,27 +99,29 @@ ServerEvents.recipes((event) => {
 					"input": `tconstruct:${metal}`,
 					"result": {
 						"amount": 90,
-						"tag": `forge:molten_${metal}`
+						"tag": `tconstruct:molten_${metal}`
 					},
 					"temperature": meltingPoint
 				})
+
 			} if (namespace === "t") {
 				event.custom({
 					"type": "tconstruct:material_melting",
 					"input": `thermalconstruct:${metal}`,
 					"result": {
 						"amount": 90,
-						"tag": `forge:molten_${metal}`
+						"tag": `tconstruct:molten_${metal}`
 					},
 					"temperature": meltingPoint
 				})
+
 			} if (namespace === "c") {
 				event.custom({
 					"type": "tconstruct:material_melting",
 					"input": `cmi:${metal}`,
 					"result": {
 						"amount": 90,
-						"tag": `forge:molten_${metal}`
+						"tag": `tconstruct:molten_${metal}`
 					},
 					"temperature": meltingPoint
 				})
@@ -150,6 +152,32 @@ ServerEvents.recipes((event) => {
 		.ingredient("#forge:stone")
 		.time(20 * 10)
 		.temperature(1000)
+
+	// 铁轨系列
+	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 30))
+		.ingredient("minecraft:rail")
+		.time(2 * 20)
+		.temperature(1535)
+
+	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 90))
+		.ingredient("minecraft:detector_rail")
+		.time(2 * 20)
+		.temperature(1535)
+
+	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 90))
+		.ingredient("minecraft:activator_rail")
+		.time(2 * 20)
+		.temperature(1535)
+
+	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 90))
+		.ingredient("minecraft:powered_rail")
+		.time(2 * 20)
+		.temperature(1064)
+
+	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 90))
+		.ingredient("create:controller_rail")
+		.time(2 * 20)
+		.temperature(1064)
 
 	event.custom({
 		"type": "tconstruct:melting",

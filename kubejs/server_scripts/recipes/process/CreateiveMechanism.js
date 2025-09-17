@@ -51,7 +51,7 @@ ServerEvents.recipes((event) => {
 		B: "cmi:advanced_mekanism_mechanism_flash_drive",
 		C: "cmi:elite_mekanism_mechanism_flash_drive",
 		D: "cmi:ultimate_mekanism_mechanism_flash_drive",
-		E: "cmi:structure_mechanism_flash_drive",
+		E: "cmi:air_tight_mechanism_flash_drive",
 		F: "cmi:nuclear_mechanism_flash_drive",
 		G: "cmi:antimatter_mechanism_flash_drive",
 		H: "cmi:coil_mechanism_flash_drive",

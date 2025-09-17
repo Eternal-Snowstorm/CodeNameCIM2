@@ -137,43 +137,6 @@ ServerEvents.recipes((event) => {
 		B: "#forge:nuggets/iron"
 	})
 
-	// 
-	/*kubejs.shaped("megatimestop:time_clock2", [
-		"AAA",
-		"ABA",
-		"AAA"
-	], {
-		A: "create:precision_mechanism",
-		B: "minecraft:clock"
-	}).id("megatimestop:time_clock2")
-
-	// 
-	kubejs.shaped("megatimestop:time_clock", [
-		"123",
-		"4B5",
-		"678"
-	], {
-		1: "cmi:nature_mechanism",
-		2: "cmi:enchanted_mechanism",
-		3: "cmi:sculk_mechanism",
-		4: "cmi:nether_mechanism",
-		5: "cmi:ender_mechanism",
-		6: "cmi:photosensitive_mechanism",
-		7: "create:precision_mechanism",
-		8: "cmi:cobalt_mechanism",
-		B: "minecraft:clock"
-	}).id("megatimestop:time_clock")
-
-	// 
-	kubejs.shaped("4x megatimestop:knife", [
-		"1",
-		"2"
-	], {
-		1: "#forge:plates/iron",
-		2: "#forge:rods/wooden"
-	}).id("megatimestop:knife")
-*/
-
 	kubejs.shaped("2x minecraft:torch", [
 		"A",
 		"B"
@@ -216,7 +179,7 @@ ServerEvents.recipes((event) => {
 		"A A"
 	], {
 		A: "#forge:plates/invar",
-		B: "cmi:osmium_mechanism"
+		B: "cmi:air_tight_mechanism"
 	}).id("pipez:gas_pipe")
 
 	kubejs.shapeless("4x pipez:universal_pipe", [
@@ -257,4 +220,64 @@ ServerEvents.recipes((event) => {
 		"pipez:advanced_upgrade",
 		"#forge:plates/netherite",
 	]).id("pipez:ultimate_upgrade")
+
+	kubejs.shaped("ad_astra:earth_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "minecraft:dirt",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:moon_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:moon_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:mars_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:mars_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:mercury_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:mercury_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:venus_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:venus_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
+
+	kubejs.shaped("ad_astra:glacio_globe", [
+		"AA ",
+		"AB ",
+		"AAC"
+	], {
+		A: ["#forge:rods/brass", "#forge:rods/bronze"],
+		B: "ad_astra:glacio_stone",
+		C: ["#forge:plates/brass", "#forge:plates/bronze"]
+	})
 })

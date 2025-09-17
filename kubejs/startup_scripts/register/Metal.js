@@ -161,6 +161,7 @@ StartupEvents.registry("fluid", (event) => {
 					.stillTexture(`${global.namespace}:fluid/metal/still`)
 					.tag("forge:molten_materials")
 					.tag(`forge:molten_${material.name}`)
+					.tag(`tconstruct:molten_${material.name}`)
 
 				if (Platform.isClientEnvironment()) {
 					let file = `kubejs/assets/${global.namespace}/models/item/molten_${material.name}_bucket.json`
@@ -267,14 +268,17 @@ addMaterial("industrial_iron", 0x4E4E4E, "iron")
 // 戴斯
 addMaterial("desh", 0xD38B4C, "wooden")
 	.molten()
+	.dust()
 
 // 紫金
 addMaterial("ostrum", 0xA66B72, "wooden")
 	.molten()
+	.dust()
 
 // 耐热金属
 addMaterial("calorite", 0xC94D4E, "wooden")
 	.molten()
+	.dust()
 
 // 钠
 addMaterial("sodium", 0xD7DDDD, "wooden")
@@ -320,7 +324,6 @@ addMaterial("tungsten", 0x5A6C7E, "nether")
 	.dust()
 	.rod()
 	.block()
-	.molten()
 
 // MEK中间产物
 // 锌

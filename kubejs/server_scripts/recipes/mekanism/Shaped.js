@@ -4,88 +4,93 @@ ServerEvents.recipes((event) => {
 	// 基础流体储罐
 	kubejs.shaped("mekanism:basic_fluid_tank", [
 		"ABA",
-		"BCB",
-		"ABA"
+		"C C",
+		"ADA"
 	], {
-		A: "#forge:dusts/redstone",
-		B: "#forge:ingots/iron",
-		C: "#forge:glass"
+		A: "#forge:plates/stainless_steel",
+		B: "cmi:copper_mechanism",
+		C: "#forge:glass_panes",
+		D: "cmi:basic_mekanism_mechanism"
 	})
 
 	// 高级流体储罐
 	kubejs.shaped("mekanism:advanced_fluid_tank", [
 		"ABA",
-		"BCB",
-		"ABA"
+		"C C",
+		"ADA"
 	], {
-		A: "#forge:alloys/advanced",
-		B: "#forge:ingots/iron",
-		C: "mekanism:basic_fluid_tank"
+		A: "#forge:plates/stainless_steel",
+		B: "cmi:copper_mechanism",
+		C: "#forge:glass_panes",
+		D: "cmi:advanced_mekanism_mechanism"
 	})
 
 	// 精英流体储罐
 	kubejs.shaped("mekanism:elite_fluid_tank", [
 		"ABA",
-		"BCB",
-		"ABA"
+		"C C",
+		"ADA"
 	], {
-		A: "#forge:alloys/elite",
-		B: "#forge:ingots/iron",
-		C: "mekanism:advanced_fluid_tank"
+		A: "#forge:plates/stainless_steel",
+		B: "cmi:copper_mechanism",
+		C: "#forge:glass_panes",
+		D: "cmi:elite_mekanism_mechanism"
 	})
 
 	// 终极流体储罐
 	kubejs.shaped("mekanism:ultimate_fluid_tank", [
 		"ABA",
-		"BCB",
-		"ABA"
+		"C C",
+		"ADA"
 	], {
-		A: "#forge:alloys/ultimate",
-		B: "#forge:ingots/iron",
-		C: "mekanism:elite_fluid_tank"
+		A: "#forge:plates/stainless_steel",
+		B: "cmi:copper_mechanism",
+		C: "#forge:glass_panes",
+		D: "cmi:ultimate_mekanism_mechanism"
 	})
 
 	// 基础化学品储罐
 	kubejs.shaped("mekanism:basic_chemical_tank", [
-		"AOA",
-		"O O",
-		"AOA"
+		"ABA",
+		"A A",
+		"ACA"
 	], {
-		A: "#mekanism:alloys/basic",
-		O: "#forge:ingots/osmium"
+		A: "#forge:plates/stainless_steel",
+		B: "cmi:air_tight_mechanism",
+		C: "cmi:basic_mekanism_mechanism"
 	})
 
 	// 高级化学品储罐
 	kubejs.shaped("mekanism:advanced_chemical_tank", [
-		"AOA",
-		"OPO",
-		"AOA"
+		"ABA",
+		"A A",
+		"ACA"
 	], {
-		A: "#mekanism:alloys/infused",
-		O: "#forge:ingots/osmium",
-		P: "mekanism:basic_chemical_tank"
+		A: "#forge:plates/stainless_steel",
+		B: "cmi:air_tight_mechanism",
+		C: "cmi:advanced_mekanism_mechanism"
 	})
 
 	// 精英化学品储罐
 	kubejs.shaped("mekanism:elite_chemical_tank", [
-		"AOA",
-		"OPO",
-		"AOA"
+		"ABA",
+		"A A",
+		"ACA"
 	], {
-		A: "#mekanism:alloys/reinforced",
-		O: "#forge:ingots/osmium",
-		P: "mekanism:advanced_chemical_tank"
+		A: "#forge:plates/stainless_steel",
+		B: "cmi:air_tight_mechanism",
+		C: "cmi:elite_mekanism_mechanism"
 	})
 
 	// 终极化学品储罐
 	kubejs.shaped("mekanism:ultimate_chemical_tank", [
-		"AOA",
-		"OPO",
-		"AOA"
+		"ABA",
+		"A A",
+		"ACA"
 	], {
-		A: "#mekanism:alloys/atomic",
-		O: "#forge:ingots/osmium",
-		P: "mekanism:elite_chemical_tank"
+		A: "#forge:plates/stainless_steel",
+		B: "cmi:air_tight_mechanism",
+		C: "cmi:ultimate_mekanism_mechanism"
 	})
 
 	// 基础能量立方
@@ -94,9 +99,9 @@ ServerEvents.recipes((event) => {
 		"IPI",
 		"AEA"
 	], {
-		A: "#mekanism:alloys/basic",
+		A: "cmi:basic_mekanism_mechanism",
 		E: "mekanism:energy_tablet",
-		I: "#forge:ingots/iron",
+		I: "cmi:coil_mechanism",
 		P: "mekanism:steel_casing"
 	})
 
@@ -106,10 +111,10 @@ ServerEvents.recipes((event) => {
 		"IPI",
 		"AEA"
 	], {
-		A: "#mekanism:alloys/infused",
+		A: "cmi:advanced_mekanism_mechanism",
 		E: "mekanism:energy_tablet",
-		I: "#forge:ingots/osmium",
-		P: "mekanism:basic_energy_cube"
+		I: "cmi:coil_mechanism",
+		P: "mekanism:steel_casing"
 	})
 
 	// 精英能量立方
@@ -118,10 +123,10 @@ ServerEvents.recipes((event) => {
 		"IPI",
 		"AEA"
 	], {
-		A: "#mekanism:alloys/reinforced",
+		A: "cmi:elite_mekanism_mechanism",
 		E: "mekanism:energy_tablet",
-		I: "#forge:ingots/gold",
-		P: "mekanism:advanced_energy_cube"
+		I: "cmi:coil_mechanism",
+		P: "mekanism:steel_casing"
 	})
 
 	// 终极能量立方
@@ -130,9 +135,9 @@ ServerEvents.recipes((event) => {
 		"IPI",
 		"AEA"
 	], {
-		A: "#mekanism:alloys/atomic",
+		A: "cmi:ultimate_mekanism_mechanism",
 		E: "mekanism:energy_tablet",
-		I: "#forge:gems/diamond",
-		P: "mekanism:elite_energy_cube"
+		I: "cmi:coil_mechanism",
+		P: "mekanism:steel_casing"
 	})
 })

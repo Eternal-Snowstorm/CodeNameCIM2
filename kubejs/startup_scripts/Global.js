@@ -84,6 +84,7 @@ global.mechanismGroup = [
 	"enchanted",
 	"smart",
 	"computing",
+	"air_tight",
 	"tier_1_aviation",
 	"tier_2_aviation",
 	"tier_3_aviation",
@@ -292,7 +293,7 @@ global.materialNamespace = {
 	"sodium": "c",
 	"potassium": "c",
 	"calcium": "c",
-	"tungsten": "c"
+	"tungsten": "v"
 }
 // 熔点数组
 global.meltingLevels = {

@@ -49,7 +49,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["30B8A752461496DD"]
+			dependencies: ["17888283D819AB51"]
 			id: "4083E533701242D1"
 			rewards: [
 				{
@@ -65,8 +65,8 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: -1.0d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["17888283D819AB51"]
@@ -85,7 +85,7 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
+			x: -1.5d
 			y: -3.0d
 		}
 		{
@@ -188,7 +188,7 @@
 				}
 			]
 			x: 2.5d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["56DB23E9AE579DAD"]
@@ -328,7 +328,7 @@
 				}
 			]
 			x: 5.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0DE8D693A94C5A6D"]
@@ -407,7 +407,7 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -427,7 +427,7 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
+			x: 11.5d
 			y: 0.0d
 		}
 		{
@@ -447,28 +447,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
+			x: 13.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["315BE76178E4D7F7"]
-			id: "3CBE5B0B56CB75A4"
-			rewards: [
-				{
-					id: "43D18851C1626E4A"
-					item: "cmi:structure_machine"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "7DA1893078B8FCF9"
-					item: "cmi:structure_mechanism"
-					type: "item"
-				}
-			]
-			x: 9.5d
-			y: -3.0d
 		}
 		{
 			dependencies: ["67FAE1DA4D9C2F87"]
@@ -487,7 +467,7 @@
 					type: "item"
 				}
 			]
-			x: 14.5d
+			x: 16.0d
 			y: -2.0d
 		}
 		{
@@ -507,7 +487,7 @@
 					type: "item"
 				}
 			]
-			x: 16.0d
+			x: 17.5d
 			y: -2.0d
 		}
 		{
@@ -627,7 +607,7 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
+			x: 4.5d
 			y: -4.0d
 		}
 		{
@@ -651,7 +631,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["767B33B7921C4E6A"]
+			dependencies: ["295EBD49E24B2BBA"]
 			id: "5DACA4599CFCBB11"
 			rewards: [
 				{
@@ -667,7 +647,7 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
+			x: 10.0d
 			y: -2.0d
 		}
 		{
@@ -687,7 +667,7 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
+			x: 11.5d
 			y: -2.0d
 		}
 		{
@@ -707,7 +687,7 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
+			x: 13.0d
 			y: -2.0d
 		}
 		{
@@ -727,7 +707,7 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
+			x: 14.5d
 			y: -2.0d
 		}
 		{
@@ -769,6 +749,19 @@
 			]
 			x: 0.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["767B33B7921C4E6A"]
+			id: "295EBD49E24B2BBA"
+			tasks: [
+				{
+					id: "5665E998009E3BC9"
+					item: "cmi:air_tight_mechanism"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
 		}
 	]
 	title: "构件之旅"

@@ -234,7 +234,6 @@
 		}
 		{
 			dependencies: ["3B48B2AE5448F88E"]
-			description: ["本整合包稍微加强了这个发电机, 提升了自身的存储量, 并且发电量由480提升到了640"]
 			id: "11BE58B08BECE324"
 			rewards: [
 				{

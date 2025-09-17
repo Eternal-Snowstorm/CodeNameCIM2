@@ -227,6 +227,18 @@ BlockEvents.rightClicked((event) => {
 })
 ```
 
+15. 导入 Java 包
+
+在脚本中导入 Java 类时, 应统一使用`Java.loadClass("package.ClassName")`, 并遵循以下规范:
+ - 必须用 `let` 定义变量
+ - 变量名统一采用 **`$`+类名** 的形式
+ - 若为内部类(子类)，在变量名中使用 `$` 连接，例如: 
+
+```js
+let $BlockItem = Java.loadClass("net.minecraft.world.item.BlockItem")
+let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties")
+```
+
 **第六条** 注册规范:
 
 在调用链式方法时`必须`换行
@@ -235,8 +247,8 @@ BlockEvents.rightClicked((event) => {
 
 ```js
 event.create(`${global.namespace}:smart_gear`)
-   .texture(`${global.namespace}:item/smart_gear`)
-   .burnTime(400)
+    .texture(`${global.namespace}:item/smart_gear`)
+    .burnTime(400)
 ```
 
 ## 第四章 代码管理

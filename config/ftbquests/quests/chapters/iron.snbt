@@ -40,8 +40,10 @@
 						tag: {
 							value: "forge:ingots/iron"
 						}
+						title: "任意 #forge:锭/铁"
+						type: "item"
 					}
-					title: "任意 #forge:锭/铁"
+					title: "任意 #forge:ingots/iron"
 					type: "item"
 				}
 			]
@@ -103,8 +105,10 @@
 						tag: {
 							value: "forge:nuggets/iron"
 						}
+						title: "任意 #forge:粒/铁"
+						type: "item"
 					}
-					title: "任意 #forge:粒/铁"
+					title: "任意 #forge:nuggets/iron"
 					type: "item"
 				}
 			]

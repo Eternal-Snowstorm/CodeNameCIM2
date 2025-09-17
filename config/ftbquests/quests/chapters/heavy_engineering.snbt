@@ -38,6 +38,8 @@
 						tag: {
 							value: "forge:ingots/steel"
 						}
+						title: "任意 #forge:锭/钢"
+						type: "item"
 					}
 					title: "任意 #forge:锭/钢"
 					type: "item"
@@ -83,6 +85,8 @@
 						tag: {
 							value: "forge:plates/steel"
 						}
+						title: "任意 #forge:板/钢"
+						type: "item"
 					}
 					title: "任意 #forge:板/钢"
 					type: "item"
@@ -239,8 +243,10 @@
 						tag: {
 							value: "forge:ingots/electrum"
 						}
+						title: "任意 #forge:ingots/electrum (琥珀金锭)"
+						type: "item"
 					}
-					title: "任意 #forge:ingots/electrum (琥珀金锭)"
+					title: "任意 #forge:ingots/electrum"
 					type: "item"
 				}
 			]
@@ -287,8 +293,10 @@
 						tag: {
 							value: "forge:wires/electrum"
 						}
+						title: "任意 #forge:线/琥珀金"
+						type: "item"
 					}
-					title: "任意 #forge:线/琥珀金"
+					title: "任意 #forge:wires/electrum"
 					type: "item"
 				}
 			]

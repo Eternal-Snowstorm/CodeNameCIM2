@@ -20,7 +20,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("blockstone_source_gamma", "Γ(Gamma)型黑石源质")
 	addItemLanguage("crystal_ruby", "晶射红宝石")
 	addItemLanguage("source_sapphire", "蓝源晶")
-	addItemLanguage("bomBed_source_emeraid", "爆裂源质")
+	addItemLanguage("bombed_source_emeraid", "爆裂源质")
 	addItemLanguage("sludge_extract", "淤泥提取物")
 	addItemLanguage("crafting_incomplete_iron_mechanism", "铁构件底座")
 	addItemLanguage("crafting_incomplete_copper_mechanism", "铜构件底座")
@@ -52,6 +52,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_advanced_control_circuit", "高级控制电路(半成品)")
 	addItemLanguage("incomplete_elite_control_circuit", "精英控制电路(半成品)")
 	addItemLanguage("incomplete_ultimate_control_circuit", "终极控制电路(半成品)")
+	addItemLanguage("incomplete_electron_tube", "电子管(半成品)")
 	addItemLanguage("magnesium_hydroxide", "氢氧化镁")
 	addItemLanguage("brominated_flame_retardants", "溴系阻燃剂")
 	addItemLanguage("rubber_hand", "橡胶手部零件")
@@ -259,6 +260,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("computing_casing", "高级计算外壳")
 	addBlockLanguage("peat_block", "泥炭块")
 	addBlockLanguage("oil_shale", "油页岩")
+	addBlockLanguage("combustion_medium_block", "燃烧介质块")
+	addBlockLanguage("industrial_platform", "工业平台")
 
 	addBlockLanguage("unknown_entity_", "Unknown_Entity_")
 	addBlockLanguage("aleegos", "阿列戈斯")
@@ -316,6 +319,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("#forge:ingots/siltsteel", "自浑浊淤泥中升华, 历经繁复萃取与催化精炼, 终获此一泓清冽碧波")
 	addCommonTooltipLanguage("cmi:plasma_faucet", "§c所以你的意思是...你就拿等离子锭做了这个?")
 	addCommonTooltipLanguage("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
+	addCommonTooltipLanguage("cmi:industrial_platform", "§a使用圆石可以放出轻型工业平台\n§a使用深板岩圆石可以放出重型工业平台\n§a使用安山岩可以放出悬浮工业平台")
 
 	addJEIInfoLanguage("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量植物胶乳")
 	addJEIInfoLanguage("mm:large_steam_boiler", "需要燃烧焦煤或钻石才能释放足够的热能来产生蒸汽\n不同于远在泛银河系的格雷科技有限公司, 我们的锅炉非常非常安全, 永远不会爆炸(笑)")
@@ -342,85 +346,77 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("cmi:smart_mechanism", "§e转化石头\n§e10%钻石矿石\n§e20%金矿石\n§e20%赛特斯石英矿石\n§e1%红宝石矿石\n§e1%蓝宝石矿石\n§e1%绿宝石矿石\n§2转化深板岩\n§215%深层钻石矿石\n§215%深层金矿石\n§215%深层赛特斯石英矿石\n§22%深层红宝石矿石\n§22%深层蓝宝石矿石\n§22%深层绿宝石矿石")
 	addAccelerateTooltipLanguage("create:precision_mechanism", "§e转化石头\n§e15%铜矿石\n§e15%锌矿石\n§e10%红石矿石\n§2转化深板岩\n§210%深层铜矿石\n§210%深层锌矿石\n§215%深层红石矿石")
 	addAccelerateTooltipLanguage("cmi:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
+	addAccelerateTooltipLanguage("cmi:tier_2_aviation_mechanism", "§7转化月石\n§720%月球戴斯矿石\n§75%月球寒冰碎片矿石\n§75%钢块\n§2转化深板岩\n§215%深层戴斯矿石\n§210%深层铁矿石\n§210%深层银矿石")
+	addAccelerateTooltipLanguage("cmi:tier_3_aviation_mechanism", "§6转化火星石\n§620%火星紫金矿石\n§65%火星寒冰碎片矿石\n§65%戴斯块\n§2转化深板岩\n§215%深层紫金矿石\n§210%深层铁矿石\n§210%深层银矿石")
+	addAccelerateTooltipLanguage("vintageimprovements:redstone_module", "§e转化石头\n§e20%红石矿石\n§2转化深板岩\n§225%深层红石矿石")
 
 	addMusicDiscLanguage("mechanism", "Mechanism", "DontkillBelalus")
 
-	let amethystEncyclopedia = "紫水晶中流动的微弱力量会试图获取更多的稀有资源"
 	addTConMaterialLanguage(
 		"amethyst",
 		"紫水晶",
 		"通电后可以发出极具规律性的振动",
-		amethystEncyclopedia
+		"紫水晶中流动的微弱力量会试图获取更多的稀有资源"
 	)
-	let andesiteAlloyEncyclopedia = "岩石的能力, 铁器的数值"
 	addTConMaterialLanguage(
 		"andesite_alloy",
 		"安山合金",
 		"岩石和金属居然能变成合金? ",
-		andesiteAlloyEncyclopedia
+		"岩石的能力, 铁器的数值"
 	)
-	let brassEncyclopedia = "导热性与可塑性极强, 似乎可以做成搭载多个箭矢的模样"
 	addTConMaterialLanguage(
 		"brass",
 		"黄铜",
 		"充满蒸汽的气息! ",
-		brassEncyclopedia
+		"导热性与可塑性极强, 似乎可以做成搭载多个箭矢的模样"
 	)
-	let industrialIronEncyclopedia = "通过重复排碳制成的高韧铁材料, 弹性与韧性极佳"
 	addTConMaterialLanguage(
 		"industrial_iron",
 		"工业铁",
 		"富有韧性的高纯铁",
-		industrialIronEncyclopedia
+		"通过重复排碳制成的高韧铁材料, 弹性与韧性极佳"
 	)
-	let castIronEncyclopedia = "含有完整碳结晶的铁材料, 耐磨性极佳"
 	addTConMaterialLanguage(
 		"cast_iron",
 		"铸铁",
 		"非常适合进一步加热! ",
-		castIronEncyclopedia
+		"含有完整碳结晶的铁材料, 耐磨性极佳"
 	)
-	let stainlessSteelEncyclopedia = "有着极强耐腐蚀性能的材料, 可以有效减慢工具的损坏"
 	addTConMaterialLanguage(
 		"stainless_steel",
 		"不锈钢",
 		"旧仓库角落中的反光",
-		stainlessSteelEncyclopedia
+		"有着极强耐腐蚀性能的材料, 可以有效减慢工具的损坏"
 	)
-	let deshEncyclopedia = "从月球开采的神秘材料, 似乎可以做出更好的升级？"
 	addTConMaterialLanguage(
 		"desh",
 		"戴斯",
 		"来自月球的神秘金属",
-		deshEncyclopedia
+		"从月球开采的神秘材料, 似乎可以做出更好的升级？"
 	)
-	let ostrumEncyclopedia = "来自火星的惰性金属, 似乎在灼热环境中会变得更加优秀"
 	addTConMaterialLanguage(
 		"ostrum",
 		"紫金",
 		"越热就越强! ",
-		ostrumEncyclopedia
+		"来自火星的惰性金属, 似乎在灼热环境中会变得更加优秀"
 	)
-	let caloriteEncyclopedia = "优秀的隔热材料, 可以承受更强的火箭尾焰, 将它送向其他星系"
 	addTConMaterialLanguage(
 		"calorite",
 		"耐热金属",
 		"红色的隔热板! ",
-		caloriteEncyclopedia
+		"优秀的隔热材料, 可以承受更强的火箭尾焰, 将它送向其他星系"
 	)
-	let shadowSteelEncyclopedia = "从未知的致命领域归来的化合物, 韧性异常强大, 但是抗冲击能力堪称灾难"
 	addTConMaterialLanguage(
 		"shadow_steel",
 		"暗影钢",
 		"从深渊中现身! ",
-		shadowSteelEncyclopedia
+		"从未知的致命领域归来的化合物, 韧性异常强大, 但是抗冲击能力堪称灾难"
 	)
-	let refinedRadianceEncyclopedia = "吸收了大量光能的化合物, 韧性令人掩面, 但可以为装备提供极大的强化"
 	addTConMaterialLanguage(
 		"refined_radiance",
 		"光辉石",
 		"来自天空的使者! ",
-		refinedRadianceEncyclopedia
+		"吸收了大量光能的化合物, 韧性令人掩面, 但可以为装备提供极大的强化"
 	)
 
 	let mechanismGroup = [
@@ -451,7 +447,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		["advanced_mekanism", "高级通用"],
 		["elite_mekanism", "精英通用"],
 		["ultimate_mekanism", "终极通用"],
-		["structure", "结构"],
 		["nuclear", "核"],
 		["antimatter", "反物质"],
 		["coil", "线圈"],
@@ -464,7 +459,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["redstone", "红石"],
 		["potion", "秘药"],
 		["bronze", "青铜"],
-		["osmium", "锇质"]
+		["air_tight", "气密"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
 		addFlashDriveLanguage(material, name)
@@ -480,7 +475,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["magical_random", "魔力随机"],
 		["quantum_random", "量子随机"],
 		["mekanism_random", "通用随机"],
-		["final_random", "最终随机"]
+		["space_random", "太空随机"]
 	]
 	completeMechanismGroup.forEach(([material, name]) => {
 		addCompleteMechanismLanguage(material, name)

@@ -74,4 +74,19 @@ ServerEvents.recipes((event) => {
 		]).energy(1000).maxChargeRate(100)
 	]).transitionalItem("cmi:incomplete_scanning_module").loops(1)
 		.id("scannable:blank_module")
+
+	// 电子管
+	create.sequenced_assembly([
+		"create:electron_tube"
+	], "#forge:plates/iron", [
+		create.deploying("cmi:incomplete_electron_tube", [
+			"cmi:incomplete_electron_tube",
+			"#forge:wires/copper"
+		]),
+		create.deploying("cmi:incomplete_electron_tube", [
+			"cmi:incomplete_electron_tube",
+			"create:polished_rose_quartz"
+		])
+	]).transitionalItem("cmi:incomplete_electron_tube").loops(1)
+		.id("create:crafting/materials/electron_tube")
 })

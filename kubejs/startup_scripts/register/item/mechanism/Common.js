@@ -7,6 +7,7 @@ StartupEvents.registry("item", (event) => {
 		"iron",
 		"copper",
 		"andesite",
+		"bronze",
 		"photosensitive",
 		"gold",
 		"cobalt",
@@ -21,6 +22,7 @@ StartupEvents.registry("item", (event) => {
 		"enchanted",
 		"smart",
 		"computing",
+		"air_tight",
 		"tier_1_aviation",
 		"tier_2_aviation",
 		"tier_3_aviation",
@@ -29,18 +31,13 @@ StartupEvents.registry("item", (event) => {
 		"advanced_mekanism",
 		"elite_mekanism",
 		"ultimate_mekanism",
-		"structure",
 		"antimatter",
 		"coil",
 		"sculk",
 		"colorful",
 		"creative",
-		"potion",
-		"bronze",
-		"osmium"
+		"potion"
 	]
-	
-	global.mechanismList = mechanismRegister.concat("pigiron")
 	
 	//仅注册完成状态的构件 没有驱动
 	let completeMechanismRegister = [
@@ -50,7 +47,8 @@ StartupEvents.registry("item", (event) => {
 		"flux_random",
 		"magical_random",
 		"quantum_random",
-		"mekanism_random"
+		"mekanism_random",
+		"space_random"
 	]
 	mechanismRegister.forEach((material) => {
 		event.create(`${global.namespace}:${material}_mechanism`)

@@ -113,7 +113,7 @@
 				}
 			]
 			title: "传输升级"
-			x: 2.0d
+			x: 4.0d
 			y: 3.0d
 		}
 		{
@@ -149,7 +149,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 6.0d
 			y: 3.0d
 		}
 		{
@@ -224,7 +224,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 10.0d
 			y: 3.0d
 		}
 		{
@@ -269,7 +269,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 12.0d
 			y: 3.0d
 		}
 		{
@@ -301,8 +301,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 5.0d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -352,7 +352,7 @@
 				}
 			]
 			title: "蒸汽飞轮"
-			x: 6.0d
+			x: 2.0d
 			y: 5.0d
 		}
 		{
@@ -401,7 +401,7 @@
 				}
 			]
 			title: "蒸汽锅炉"
-			x: 4.0d
+			x: 0.0d
 			y: 5.0d
 		}
 		{
@@ -427,16 +427,19 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 4.0d
 			y: 5.0d
 		}
 		{
+			dependencies: ["714D1AC6D07BEEC0"]
 			description: [
 				"扫描器可以侦测周围一定范围的实体与方块"
 				"你需要手持扫描器蹲下右键, 打开gui向其中插入扫描插件, 来为其赋予功能或增加扫描范围"
 				"一个扫描器中最多激活三个插件, 并存储5个未激活插件"
 				"扫描器总共有9种插件, 其中8个为目标型插件, 激活多个目标型插件时会同时扫描多种目标"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "7CF3605CD32CCEED"
 			rewards: [
 				{
@@ -523,7 +526,7 @@
 				}
 			]
 			x: 2.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -548,6 +551,113 @@
 			title: "关于整理"
 			x: 6.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["灌注液态超经验获得无限耐久!"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "553F8AFDC9BAC40F"
+			subtitle: "液态超经验的力量"
+			tasks: [
+				{
+					id: "5E6DC322D45F40EF"
+					item: {
+						Count: 1
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							graphDmg: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "无限石墨电极"
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["灌注液态超经验获得无限耐久!"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "0D920683691D237D"
+			subtitle: "液态超经验的力量"
+			tasks: [
+				{
+					id: "4DD3608387E0F186"
+					item: {
+						Count: 1
+						id: "cmi:super_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"物品栏左上角有一个按钮"
+				"可以选择禁用一些声音"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "immersiveengineering:earmuffs"
+			id: "6219A68A3A7C1876"
+			subtitle: "把世界调成静音,聆听主机的轰鸣(不是"
+			tasks: [
+				{
+					id: "74725548CEEF2EF4"
+					title: "确认"
+					type: "checkmark"
+				}
+			]
+			title: "ESM"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"将工业平台方块放置在你希望放置&3基地&r的位置,然后以&3圆石,深板岩或者安山岩&r点击,即可展开工业平台."
+				"用&b圆石&r可以展开&a单个区块大小&r的轻型工业平台,该平台会自动填充&e下方5格&r的空间."
+				"用&b深板岩&r可以展开&a3x3区块&r的重型工业平台,同样会自动填充&e下方5格&r的空间."
+				"用&b安山岩&r可以展开&a单个区块大小&r的悬浮工业平台.该平台&e不会向下填充&r,但是拥有&e两层可规划&r区域."
+				"工业平台将会主动适配区块,并以警戒线标明区块边界,辅助玩家按区块规划设备."
+				"灵感与方块材质来自 &e史莱姆li&r 的&6黄铜协奏曲&r, 已获得授权."
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "cmi:industrial_platform"
+			id: "7BA8A28AD2EA188E"
+			rewards: [
+				{
+					id: "5F3F01C87AFE2643"
+					item: "cmi:industrial_platform"
+					type: "item"
+				}
+				{
+					id: "750CB938A115C0E0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "搭建基地的好帮手"
+			tasks: [
+				{
+					id: "47E8C062AA7F9EF7"
+					title: "知道了!"
+					type: "checkmark"
+				}
+			]
+			title: "工业平台"
+			x: 6.0d
+			y: 5.0d
 		}
 	]
 	title: "实用工具"

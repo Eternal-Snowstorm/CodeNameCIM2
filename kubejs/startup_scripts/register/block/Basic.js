@@ -1,8 +1,12 @@
 StartupEvents.registry("block", (event) => {
-	function addBlock(name) {
-		return event.create(`${global.namespace}:${name}`)
+	function addBlock(name, type) {
+		if (type === undefined) {
+			return event.create(`${global.namespace}:${name}`)
+		}
+		return event.create(`${global.namespace}:${name}`, type)
 	}
 
+	// 催生器
 	addBlock("accelerator")
 		.soundType(SoundType.METAL)
 		.hardness(4)
@@ -10,6 +14,19 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.MiningLevel["wooden"])
 		.requiresTool(true)
+
+	// 便携工业平台
+	addBlock("industrial_platform", "cardinal")
+		.soundType(SoundType.DEEPSLATE_BRICKS)
+		.box(0, 0, 0, 16, 12, 16, true)
+		.model("cmi:block/industrial_platform")
+		.hardness(4)
+		.resistance(8)
+		.tagBlock(global.ToolType["pickaxe"])
+		.tagBlock(global.MiningLevel["wooden"])
+		.requiresTool(true)
+		.notSolid()
+		.defaultCutout()
 
 	// 背景
 	addBlock("green_screen")
@@ -51,6 +68,14 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.MiningLevel["wooden"])
 		.requiresTool(true)
+
+	// 燃烧介质块
+	addBlock("combustion_medium_block")
+		.soundType(SoundType.STONE)
+		.hardness(3)
+		.resistance(3)
+		.tagBlock(global.ToolType["pickaxe"])
+		.tagBlock(global.MiningLevel["stone"])
 
 	// 坩埚底座
 	addBlock("crucible_base")

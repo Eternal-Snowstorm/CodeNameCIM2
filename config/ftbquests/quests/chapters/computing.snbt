@@ -251,6 +251,8 @@
 						tag: {
 							value: "forge:dusts/salt"
 						}
+						title: "任意 #forge:粉尘/盐"
+						type: "item"
 					}
 					title: "任意 #forge:粉尘/盐"
 					type: "item"
@@ -310,6 +312,8 @@
 						tag: {
 							value: "forge:glass"
 						}
+						title: "任意 #forge:玻璃"
+						type: "item"
 					}
 					title: "任意 #forge:玻璃"
 					type: "item"
@@ -396,8 +400,10 @@
 						tag: {
 							value: "forge:ingots/silver"
 						}
+						title: "任意 #forge:锭/银 (银锭)"
+						type: "item"
 					}
-					title: "任意 #forge:ingots/silver (银锭)"
+					title: "任意 #forge:锭/银"
 					type: "item"
 				}
 			]
@@ -441,6 +447,8 @@
 						tag: {
 							value: "forge:plates/silver"
 						}
+						title: "任意 #forge:板/银"
+						type: "item"
 					}
 					title: "任意 #forge:板/银"
 					type: "item"
@@ -686,6 +694,8 @@
 						tag: {
 							value: "ae2:glass_cable"
 						}
+						title: "任意 #ae2:玻璃线缆"
+						type: "item"
 					}
 					title: "任意 #ae2:玻璃线缆"
 					type: "item"
@@ -716,8 +726,10 @@
 						tag: {
 							value: "ae2:illuminated_panel"
 						}
+						title: "任意 #ae2:发光面板 (发光面板)"
+						type: "item"
 					}
-					title: "任意 #ae2:illuminated_panel (发光面板)"
+					title: "任意 #ae2:发光面板"
 					type: "item"
 				}
 			]

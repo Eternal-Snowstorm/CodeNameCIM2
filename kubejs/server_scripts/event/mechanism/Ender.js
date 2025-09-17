@@ -47,8 +47,9 @@ ItemEvents.rightClicked("cmi:ender_mechanism", (event) => {
 	let locationX = Math.floor(player.getX())
 	let locationY = Math.floor(player.getY())
 	let locationZ = Math.floor(player.getZ())
+	let dimention = player.level.getDimension().toString()
 	// 以X、Y、Z形式存入3个NBT
-	event.getPlayer().mainHandItem.setNbt({ x: locationX, y: locationY, z: locationZ })
+	event.getPlayer().mainHandItem.setNbt({ x: locationX, y: locationY, z: locationZ, dim: dimention })
 	// 提示玩家已存储坐标
 	player.tell(Text.translatable("promp.cmi.ender_mechanism.location_stored"))
 })

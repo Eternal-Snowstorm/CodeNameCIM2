@@ -155,6 +155,8 @@
 						tag: {
 							value: "forge:dusts/diamond"
 						}
+						title: "任意 #forge:粉尘/钻石"
+						type: "item"
 					}
 					title: "任意 #forge:粉尘/钻石"
 					type: "item"

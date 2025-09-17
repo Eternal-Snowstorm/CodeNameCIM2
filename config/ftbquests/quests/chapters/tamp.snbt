@@ -20,6 +20,13 @@
 				"2F87AB1BE47D5754"
 			]
 			id: "31160500429DCF29"
+			rewards: [
+				{
+					id: "4CF264E6DD9FC225"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "circle"
 			size: 3.0d
 			subtitle: "无限矿石"

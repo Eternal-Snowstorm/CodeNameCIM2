@@ -58,26 +58,31 @@ CreateEvents.spoutHandler((event) => {
 	addBudGrowth("cmi:large_amethyst_bud", "minecraft:large_amethyst_bud", "minecraft:amethyst_cluster")
 
 	// 赛特斯石英
+	addBudGrowth("cmi:certus_spawn", "ae2:flawless_budding_quartz", "ae2:small_quartz_bud", true)
 	addBudGrowth("cmi:small_certus_bud", "ae2:small_quartz_bud", "ae2:medium_quartz_bud")
 	addBudGrowth("cmi:medium_certus_bud", "ae2:medium_quartz_bud", "ae2:large_quartz_bud")
 	addBudGrowth("cmi:large_certus_bud", "ae2:large_quartz_bud", "ae2:quartz_cluster")
 
 	// 大地粘液
+	addBudGrowth("cmi:earth_slime_spawn", "tconstruct:budding_earth_slime_crystal", "tconstruct:small_earth_slime_crystal_bud", true)
 	addBudGrowth("cmi:small_earth_bud", "tconstruct:small_earth_slime_crystal_bud", "tconstruct:medium_earth_slime_crystal_bud")
 	addBudGrowth("cmi:medium_earth_bud", "tconstruct:medium_earth_slime_crystal_bud", "tconstruct:large_earth_slime_crystal_bud")
 	addBudGrowth("cmi:large_earth_bud", "tconstruct:large_earth_slime_crystal_bud", "tconstruct:earth_slime_crystal_cluster")
 
 	// 碧空粘液
+	addBudGrowth("cmi:sky_slime_spawn", "tconstruct:budding_sky_slime_crystal", "tconstruct:small_sky_slime_crystal_bud", true)
 	addBudGrowth("cmi:small_sky_bud", "tconstruct:small_sky_slime_crystal_bud", "tconstruct:medium_sky_slime_crystal_bud")
 	addBudGrowth("cmi:medium_sky_bud", "tconstruct:medium_sky_slime_crystal_bud", "tconstruct:large_sky_slime_crystal_bud")
 	addBudGrowth("cmi:large_sky_bud", "tconstruct:large_sky_slime_crystal_bud", "tconstruct:sky_slime_crystal_cluster")
 
 	// 灵浆粘液
+	addBudGrowth("cmi:ichor_spawn", "tconstruct:budding_ichor_slime_crystal", "tconstruct:small_ichor_slime_crystal_bud", true)
 	addBudGrowth("cmi:small_ichor_bud", "tconstruct:small_ichor_slime_crystal_bud", "tconstruct:medium_ichor_slime_crystal_bud")
 	addBudGrowth("cmi:medium_ichor_bud", "tconstruct:medium_ichor_slime_crystal_bud", "tconstruct:large_ichor_slime_crystal_bud")
 	addBudGrowth("cmi:large_ichor_bud", "tconstruct:large_ichor_slime_crystal_bud", "tconstruct:ichor_slime_crystal_cluster")
 
 	// 末影粘液
+	addBudGrowth("cmi:ender_slime_spawn", "tconstruct:budding_ender_slime_crystal", "tconstruct:small_ender_slime_crystal_bud", true)
 	addBudGrowth("cmi:small_ender_bud", "tconstruct:small_ender_slime_crystal_bud", "tconstruct:medium_ender_slime_crystal_bud")
 	addBudGrowth("cmi:medium_ender_bud", "tconstruct:medium_ender_slime_crystal_bud", "tconstruct:large_ender_slime_crystal_bud")
 	addBudGrowth("cmi:large_ender_bud", "tconstruct:large_ender_slime_crystal_bud", "tconstruct:ender_slime_crystal_cluster")

@@ -1,51 +1,82 @@
 ServerEvents.recipes((event) => {
 	let { create, kubejs, vintageimprovements } = event.recipes
 	let MECH = "cmi:coil_mechanism"
+	let LMECH = "cmi:photosensitive_mechanism"
 
-	// kubejs.shaped("immersiveengineering:dynamo", [
-	// 	"EDE",
-	// 	"ECE",
-	// 	"ABA"
-	// ], {
-	// 	A: BATTERIES,
-	// 	B: "#forge:dusts/redstone",
-	// 	C: "immersiveengineering:component_iron",
-	// 	D: "immersiveengineering:coil_lv",
-	// 	E: "#forge:plates/iron"
-	// })
-
-	// kubejs.shaped("immersiveengineering:thermoelectric_generator", [
-	// 	"CCC",
-	// 	"BDB",
-	// 	"AAA"
-	// ], {
-	// 	A: BATTERIES,
-	// 	B: "#forge:plates/constantan",
-	// 	C: "#forge:ingots/steel",
-	// 	D: "immersiveengineering:coil_lv"
-	// })
-
-	// kubejs.shaped("8x immersiveengineering:generator", [
-	// 	"DBD",
-	// 	"BCB",
-	// 	"ABA"
-	// ], {
-	// 	A: BATTERIES,
-	// 	B: "immersiveengineering:sheetmetal_steel",
-	// 	C: "cmi:heavy_engineering_mechanism",
-	// 	D: "immersiveengineering:component_iron"
-	// })
-
-	// Poetality发电机
-	kubejs.shaped("portality:generator", [
-		" A ",
-		"ACA",
-		" B "
+	// 一级太阳能板
+	kubejs.shaped("mekanismgenerators:solar_panel", [
+		"AAA",
+		"BCB",
+		"DED"
 	], {
-		A: "portality:frame",
-		B: "cmi:nether_mechanism",
-		C: MECH
-	})
+		A: "#forge:glass",
+		B: "ae2:printed_silicon",
+		C: LMECH,
+		D: "#forge:plates/steel",
+		E: "cmi:simple_battery"
+	}).id("mekanismgenerators:solar_panel")
+
+	// 二级太阳能板
+	kubejs.shaped("ad_astra:photovoltaic_etrium_cell", [
+		"AAA",
+		"BCB",
+		"DED"
+	], {
+		A: "#forge:glass",
+		B: "ae2:printed_silicon",
+		C: LMECH,
+		D: "#forge:plates/invar",
+		E: "cmi:thermal_mechanism"
+	}).id("ad_astra:photovoltaic_etrium_cell")
+
+	// 三级太阳能板
+	kubejs.shaped("ad_astra:photovoltaic_vesnium_cell", [
+		"AAA",
+		"BCB",
+		"DED"
+	], {
+		A: "#forge:glass",
+		B: "ae2:printed_silicon",
+		C: LMECH,
+		D: "#forge:plates/stainless_steel",
+		E: "cmi:basic_mekanism_mechanism"
+	}).id("ad_astra:photovoltaic_vesnium_cell")
+
+	// 小型太阳能板
+	kubejs.shaped("mekanismgenerators:solar_generator", [
+		" A ",
+		"BCB",
+		" D "
+	], {
+		A: "mekanismgenerators:solar_panel",
+		B: "#forge:plates/steel",
+		C: "immersiveengineering:component_steel",
+		D: "cmi:simple_battery"
+	}).id("mekanismgenerators:generator/solar")
+
+	// 太阳能发电机
+	kubejs.shaped("ad_astra:solar_panel", [
+		" A ",
+		" B ",
+		"CDC"
+	], {
+		A: "ad_astra:photovoltaic_etrium_cell",
+		B: "#forge:gears/invar",
+		C: "#forge:plates/invar",
+		D: "cmi:thermal_mechanism"
+	}).id("ad_astra:solar_panel")
+
+	// 大型太阳能板
+	kubejs.shaped("mekanismgenerators:advanced_solar_generator", [
+		"A A",
+		" B ",
+		"CDC"
+	], {
+		A: "ad_astra:photovoltaic_vesnium_cell",
+		B: "cmi:basic_mekanism_mechanism",
+		C: "#forge:plates/stainless_steel",
+		D: "immersiveengineering:steel_post"
+	}).id("mekanismgenerators:generator/advanced_solar")
 
 	// 电磁线圈
 	kubejs.shaped("mekanismgenerators:electromagnetic_coil", [
@@ -159,7 +190,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/stainless_steel",
 		B: "cmi:coil_mechanism",
 		C: "cmi:advanced_mekanism_mechanism",
-		D: "cmi:osmium_mechanism"
+		D: "cmi:air_tight_mechanism"
 	}).id("mekanismgenerators:generator/gas_burning")
 
 	// 生物能发电机
@@ -182,9 +213,9 @@ ServerEvents.recipes((event) => {
 		"BDB"
 	], {
 		A: "create:propeller",
-		B: "#forge:plates/steel",
+		B: "#forge:plates/aluminum",
 		C: "cmi:coil_mechanism",
-		D: "cmi:basic_mekanism_mechanism"
+		D: "immersiveengineering:alu_post"
 	}).id("mekanismgenerators:generator/wind")
 
 	// 斯特林

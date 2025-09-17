@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 	]
 	inputs.forEach(([from, to]) => {
 		// 同步遍历所有配方
-		event.forEachRecipe({}, recipe => {
+		event.forEachRecipe({}, (recipe) => {
 			try {
 				recipe.replaceInput(from, to)
 			} catch (error) {

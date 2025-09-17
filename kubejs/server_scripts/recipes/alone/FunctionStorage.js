@@ -102,19 +102,19 @@ ServerEvents.recipes((event) => {
 		.id("functionalstorage:void_upgrade")
 
 	// 输入升级
-	create.deploying("functionalstorage:puller_upgrade",[
+	create.deploying("functionalstorage:puller_upgrade", [
 		TEMPLATE,
 		"minecraft:hopper"
 	]).id("functionalstorage:puller_upgrade")
 
 	// 输出升级
-	create.deploying("functionalstorage:pusher_upgrade",[
+	create.deploying("functionalstorage:pusher_upgrade", [
 		"functionalstorage:puller_upgrade",
 		"minecraft:redstone_torch"
 	]).id("functionalstorage:pusher_upgrade")
 
 	// 收集升级
-	create.deploying("functionalstorage:collector_upgrade",[
+	create.deploying("functionalstorage:collector_upgrade", [
 		"functionalstorage:puller_upgrade",
 		"minecraft:hopper"
 	]).id("functionalstorage:collector_upgrade")

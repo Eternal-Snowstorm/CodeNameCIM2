@@ -13,6 +13,10 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	// 无线燃烧Tooltip
+	event.get("minecraft:infiniburn_all")
+		.add("cmi:combustion_medium_block")
+
 	// 建筑手杖
 	event.get("constructionwand:wand")
 		.add("constructionwand:stone_wand")
@@ -61,10 +65,6 @@ ServerEvents.tags("item", (event) => {
 	event.get("cmi:peat_gen")
 		.add("cmi:peat_block")
 		.add("cmi:peat")
-
-	event.get("minecraft:infiniburn_all")
-		.add("#forge:storage_blocks/charcoal")
-		.add("#forge:storage_blocks/coal")
 
 	// 特殊矿石
 	event.get("cmi:special_ores")
@@ -362,6 +362,12 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("mekanism:crystals")
 		.remove("mekanism:crystal_gold")
+
+	event.add("forge:stripped_logs")
+		.add("thermal:stripped_rubberwood_log")
+
+	event.get("create:blaze_burner_fuel/special")
+		.add("tconstruct:blazing_blood_bucket")
 
 	let crushedMaterialGroup = [
 		"iron",

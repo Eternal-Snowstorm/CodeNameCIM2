@@ -11,6 +11,9 @@ ItemEvents.tooltip((event) => {
 	addAccelerateTooltip("cmi:cobalt_mechanism")
 	addAccelerateTooltip("cmi:wooden_mechanism")
 	addAccelerateTooltip("cmi:smart_mechanism")
+	addAccelerateTooltip("cmi:tier_2_aviation_mechanism")
+	addAccelerateTooltip("cmi:tier_3_aviation_mechanism")
+	addAccelerateTooltip("vintageimprovements:redstone_module")
 	addAccelerateTooltip("create:precision_mechanism")
 
 	function addAccelerateTooltip(item) {
@@ -54,9 +57,47 @@ ItemEvents.tooltip((event) => {
 
 	// 电池
 	event.addAdvanced("cmi:simple_battery",
-		(stack, advanced, tooltip) => {
-			let stored = stack.nbt?.energy || 0
+		(item, advanced, tooltip) => {
+			let stored = item.nbt?.energy || 0
 			let max = 10000
 			tooltip.add(Component.literal(`§e${stored} / ${max} FE`))
 		})
+
+	// 末影构件
+	event.addAdvanced("cmi:ender_mechanism",
+		(item, advanced, tooltip) => {
+			if (item.hasNBT()) {
+				let x = item.getNbt().x
+				let y = item.getNbt().y
+				let z = item.getNbt().z
+
+				let dimId = item.getNbt().dim
+
+				if (dimId) {
+					// 转成翻译键
+					let dimKey = "dimension." + dimId.replace(":", ".")
+					let dim = Component.translatable(dimKey)
+					let tranKey =
+						Component.translatable("tooltip.cmi.stored_location", dim, x, y, z)
+							.red()
+
+					tooltip.add(tranKey)
+				}
+			}
+		})
+
+	// 工业平台
+	event.addAdvanced("cmi:industrial_platform",
+		(item, advanced, tooltip) => {
+			if (event.shift) {
+				let lines = Component.translatable("tooltip.cmi.industrial_platform")
+					.string.split("\n")
+				lines.forEach((line) => {
+					tooltip.add(line)
+				})
+			} else {
+				tooltip.add(Component.translatable("tooltip.cmi.industrial_platform.off"))
+			}
+		}
+	)
 })

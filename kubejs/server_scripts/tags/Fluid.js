@@ -76,4 +76,16 @@ ServerEvents.tags("fluid", (event) => {
 			"createdieselgenerators:diesel",
 			"createdieselgenerators:gasoline"
 		])
+
+	let thermalMaterials = [
+		"soul_infused",
+		"shellite",
+		"dragonsteel",
+		"twinite",
+		"abyssal"
+	]
+	thermalMaterials.forEach(material => {
+		event.get(`tconstruct:molten_${material}`)
+			.add(`thermalconstruct:molten_${material}`)
+	})
 })

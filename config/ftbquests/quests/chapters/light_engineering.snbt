@@ -39,8 +39,10 @@
 						tag: {
 							value: "forge:plates/iron"
 						}
+						title: "任意 #forge:板/铁"
+						type: "item"
 					}
-					title: "任意 #forge:板/铁"
+					title: "任意 #forge:plates/iron"
 					type: "item"
 				}
 			]
@@ -180,8 +182,10 @@
 						tag: {
 							value: "forge:rods/copper"
 						}
+						title: "任意 #forge:杆/铜"
+						type: "item"
 					}
-					title: "任意 #forge:杆/铜"
+					title: "任意 #forge:rods/copper"
 					type: "item"
 				}
 			]
@@ -250,8 +254,10 @@
 						tag: {
 							value: "forge:plates/copper"
 						}
+						title: "任意 #forge:板/铜"
+						type: "item"
 					}
-					title: "任意 #forge:板/铜"
+					title: "任意 #forge:plates/copper"
 					type: "item"
 				}
 			]
@@ -298,8 +304,10 @@
 						tag: {
 							value: "forge:wires/copper"
 						}
+						title: "任意 #forge:线/铜"
+						type: "item"
 					}
-					title: "任意 #forge:线/铜"
+					title: "任意 #forge:wires/copper"
 					type: "item"
 				}
 			]

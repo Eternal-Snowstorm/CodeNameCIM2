@@ -15,7 +15,7 @@
 			y: -7.0d
 		}
 	]
-	order_index: 20
+	order_index: 21
 	quest_links: [ ]
 	quests: [
 		{
@@ -126,8 +126,10 @@
 						tag: {
 							value: "forge:rods/silver"
 						}
+						title: "任意 #forge:rods/银棒"
+						type: "item"
 					}
-					title: "任意 #forge:rods/银棒"
+					title: "任意 #forge:rods/silver"
 					type: "item"
 				}
 			]
