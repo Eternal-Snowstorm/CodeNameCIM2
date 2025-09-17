@@ -252,7 +252,7 @@
 							value: "forge:dusts/salt"
 						}
 					}
-					title: "任意 #forge:dusts/salt"
+					title: "任意 #forge:粉尘/盐"
 					type: "item"
 				}
 			]
@@ -311,7 +311,7 @@
 							value: "forge:glass"
 						}
 					}
-					title: "任意 #forge:glass"
+					title: "任意 #forge:玻璃"
 					type: "item"
 				}
 			]
@@ -397,7 +397,7 @@
 							value: "forge:ingots/silver"
 						}
 					}
-					title: "任意 #forge:ingots/silver"
+					title: "任意 #forge:ingots/silver (银锭)"
 					type: "item"
 				}
 			]
@@ -442,7 +442,7 @@
 							value: "forge:plates/silver"
 						}
 					}
-					title: "任意 #forge:plates/silver"
+					title: "任意 #forge:板/银"
 					type: "item"
 				}
 			]
@@ -687,7 +687,7 @@
 							value: "ae2:glass_cable"
 						}
 					}
-					title: "任意 #ae2:glass_cable"
+					title: "任意 #ae2:玻璃线缆"
 					type: "item"
 				}
 			]
@@ -717,7 +717,7 @@
 							value: "ae2:illuminated_panel"
 						}
 					}
-					title: "任意 #ae2:illuminated_panel"
+					title: "任意 #ae2:illuminated_panel (发光面板)"
 					type: "item"
 				}
 			]

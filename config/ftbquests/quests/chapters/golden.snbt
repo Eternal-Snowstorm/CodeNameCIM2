@@ -40,7 +40,7 @@
 							value: "forge:plates/gold"
 						}
 					}
-					title: "任意 #forge:plates/gold"
+					title: "任意 #forge:板/金"
 					type: "item"
 				}
 			]
@@ -71,7 +71,7 @@
 							value: "forge:nuggets/gold"
 						}
 					}
-					title: "任意 #forge:nuggets/gold"
+					title: "任意 #forge:粒/金"
 					type: "item"
 				}
 			]

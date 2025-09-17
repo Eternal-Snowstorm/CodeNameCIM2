@@ -301,7 +301,7 @@
 							value: "forge:rods/iron"
 						}
 					}
-					title: "任意 #forge:rods/iron"
+					title: "任意 #forge:rods/铁锭"
 					type: "item"
 				}
 			]
@@ -330,7 +330,7 @@
 							value: "forge:plates/steel"
 						}
 					}
-					title: "任意 #forge:plates/steel"
+					title: "任意 #forge:plates/钢板"
 					type: "item"
 				}
 			]

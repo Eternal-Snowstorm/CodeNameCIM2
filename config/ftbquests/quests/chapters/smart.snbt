@@ -91,7 +91,7 @@
 							value: "forge:plates/silver"
 						}
 					}
-					title: "任意 #forge:plates/silver"
+					title: "任意 #forge:plates/silver (银板)"
 					type: "item"
 				}
 			]

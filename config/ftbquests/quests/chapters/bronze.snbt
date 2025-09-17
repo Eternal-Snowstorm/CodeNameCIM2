@@ -38,7 +38,7 @@
 							value: "forge:ingots/bronze"
 						}
 					}
-					title: "任意 #forge:ingots/bronze"
+					title: "任意 #forge:锭/青铜"
 					type: "item"
 				}
 			]
@@ -94,7 +94,7 @@
 							value: "forge:ingots/bronze"
 						}
 					}
-					title: "任意 #forge:ingots/bronze"
+					title: "任意 #forge:锭/青铜"
 					type: "item"
 				}
 			]
@@ -137,7 +137,7 @@
 							value: "forge:rods/bronze"
 						}
 					}
-					title: "任意 #forge:rods/bronze"
+					title: "任意 #forge:杆/青铜"
 					type: "item"
 				}
 			]
@@ -205,7 +205,7 @@
 							value: "forge:nuggets/bronze"
 						}
 					}
-					title: "任意 #forge:nuggets/bronze"
+					title: "任意 #forge:粒/青铜"
 					type: "item"
 				}
 			]
@@ -233,7 +233,7 @@
 							value: "create:shaft"
 						}
 					}
-					title: "任意 #create:shaft"
+					title: "任意 #create:传动杆"
 					type: "item"
 				}
 			]
@@ -277,7 +277,7 @@
 							value: "forge:ingots/bronze"
 						}
 					}
-					title: "任意 #forge:ingots/bronze"
+					title: "任意 #forge:锭/青铜"
 					type: "item"
 				}
 			]
@@ -320,7 +320,7 @@
 							value: "forge:plates/bronze"
 						}
 					}
-					title: "任意 #forge:plates/bronze"
+					title: "任意 #forge:板/青铜"
 					type: "item"
 				}
 			]

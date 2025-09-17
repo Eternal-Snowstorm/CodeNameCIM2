@@ -55,7 +55,7 @@
 							value: "forge:ingots/chromium"
 						}
 					}
-					title: "任意 #forge:ingots/chromium"
+					title: "任意 #forge:锭/铬"
 					type: "item"
 				}
 			]
@@ -83,7 +83,7 @@
 							value: "forge:ingots/invar"
 						}
 					}
-					title: "任意 #forge:ingots/invar"
+					title: "任意 #forge:锭/殷钢"
 					type: "item"
 				}
 			]
@@ -111,7 +111,7 @@
 							value: "forge:ingots/steel"
 						}
 					}
-					title: "任意 #forge:ingots/steel"
+					title: "任意 #forge:锭/钢"
 					type: "item"
 				}
 			]

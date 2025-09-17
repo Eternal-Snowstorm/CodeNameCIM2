@@ -66,7 +66,7 @@
 							value: "forge:ingots/andesite_alloy"
 						}
 					}
-					title: "任意 #forge:ingots/andesite_alloy"
+					title: "任意 #forge:锭/安山合金"
 					type: "item"
 				}
 			]

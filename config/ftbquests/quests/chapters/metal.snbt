@@ -1375,7 +1375,7 @@
 			tasks: [
 				{
 					id: "7ED9955B9D09F1D0"
-					title: "钴 1495°C"
+					title: "钴 1495℃"
 					type: "checkmark"
 				}
 			]
@@ -1453,7 +1453,7 @@
 			tasks: [
 				{
 					id: "50115D1F8C265CF7"
-					title: "钙 842°C"
+					title: "钙 842℃"
 					type: "checkmark"
 				}
 			]
@@ -1661,7 +1661,7 @@
 			tasks: [
 				{
 					id: "16CF1EFC06C79BCB"
-					title: "海晶 1741°C"
+					title: "海晶 1741℃"
 					type: "checkmark"
 				}
 			]
@@ -1700,7 +1700,7 @@
 			tasks: [
 				{
 					id: "5E8E9512A71DC1BC"
-					title: "注灵 1901°C"
+					title: "注灵 1901℃"
 					type: "checkmark"
 				}
 			]
@@ -1818,7 +1818,7 @@
 			tasks: [
 				{
 					id: "31B082677C06A022"
-					title: "熔岩 1000°C"
+					title: "熔岩 1000℃"
 					type: "checkmark"
 				}
 			]
@@ -1832,7 +1832,7 @@
 			tasks: [
 				{
 					id: "22EE0AA74FC9A863"
-					title: "熔岩 1000°C"
+					title: "熔岩 1000℃"
 					type: "checkmark"
 				}
 			]

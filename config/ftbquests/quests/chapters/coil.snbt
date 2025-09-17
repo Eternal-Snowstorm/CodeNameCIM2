@@ -136,7 +136,7 @@
 							value: "forge:ingots/electrum"
 						}
 					}
-					title: "任意 #forge:ingots/electrum"
+					title: "任意 #forge:锭/琥珀金"
 					type: "item"
 				}
 			]
@@ -164,7 +164,7 @@
 							value: "forge:ingots/aluminum"
 						}
 					}
-					title: "任意 #forge:ingots/aluminum"
+					title: "任意 #forge:锭/铝"
 					type: "item"
 				}
 			]
@@ -192,7 +192,7 @@
 							value: "forge:ingots/steel"
 						}
 					}
-					title: "任意 #forge:ingots/steel"
+					title: "任意 #forge:锭/钢"
 					type: "item"
 				}
 			]
@@ -224,7 +224,7 @@
 							value: "forge:wires/copper"
 						}
 					}
-					title: "任意 #forge:wires/copper"
+					title: "任意 #forge:线/铜"
 					type: "item"
 				}
 			]
@@ -256,7 +256,7 @@
 							value: "forge:wires/electrum"
 						}
 					}
-					title: "任意 #forge:wires/electrum"
+					title: "任意 #forge:线/琥珀金"
 					type: "item"
 				}
 			]
@@ -281,7 +281,7 @@
 							value: "forge:wires/aluminum"
 						}
 					}
-					title: "任意 #forge:wires/aluminum"
+					title: "任意 #forge:线/铝"
 					type: "item"
 				}
 			]
@@ -313,7 +313,7 @@
 							value: "forge:wires/steel"
 						}
 					}
-					title: "任意 #forge:wires/steel"
+					title: "任意 #forge:线/钢"
 					type: "item"
 				}
 			]

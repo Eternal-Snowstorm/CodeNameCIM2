@@ -38,7 +38,7 @@
 							value: "minecraft:wooden_slabs"
 						}
 					}
-					title: "任意 #minecraft:wooden_slabs"
+					title: "任意 #minecraft:木台阶"
 					type: "item"
 				}
 			]

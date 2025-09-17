@@ -120,7 +120,7 @@
 							value: "forge:rods/cobalt"
 						}
 					}
-					title: "任意 #forge:rods/cobalt"
+					title: "任意 #forge:杆/钴"
 					type: "item"
 				}
 			]
@@ -170,7 +170,7 @@
 							value: "vintageimprovements:springs/cobalt"
 						}
 					}
-					title: "任意 #vintageimprovements:springs/cobalt"
+					title: "任意 #vintageimprovements:弹簧/钴"
 					type: "item"
 				}
 			]
@@ -217,7 +217,7 @@
 							value: "forge:plates/cobalt"
 						}
 					}
-					title: "任意 #forge:plates/cobalt"
+					title: "任意 #forge:板/钴"
 					type: "item"
 				}
 			]
@@ -287,7 +287,7 @@
 							value: "forge:rods/gold"
 						}
 					}
-					title: "任意 #forge:rods/gold"
+					title: "任意 #forge:杆/金"
 					type: "item"
 				}
 			]

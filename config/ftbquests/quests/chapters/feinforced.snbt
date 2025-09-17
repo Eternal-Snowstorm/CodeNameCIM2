@@ -39,7 +39,7 @@
 							value: "forge:ingots/silver"
 						}
 					}
-					title: "任意 #forge:ingots/silver"
+					title: "任意 #forge:锭/银"
 					type: "item"
 				}
 			]
@@ -109,7 +109,7 @@
 							value: "forge:ingots/electrum"
 						}
 					}
-					title: "任意 #forge:ingots/electrum"
+					title: "任意 #forge:锭/琥珀金"
 					type: "item"
 				}
 			]
@@ -154,7 +154,7 @@
 							value: "forge:plates/electrum"
 						}
 					}
-					title: "任意 #forge:plates/electrum"
+					title: "任意 #forge:板/琥珀金"
 					type: "item"
 				}
 			]
