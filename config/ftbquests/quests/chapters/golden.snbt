@@ -5,14 +5,16 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:gold_mechanism"
 	id: "43422929E4F0DDA4"
-	images: [{
-		height: 22.84d
-		image: "cmi:textures/images/background/gold.png"
-		rotation: 0.0d
-		width: 45.32d
-		x: -2.0d
-		y: -0.5d
-	}]
+	images: [
+		{
+			height: 22.84d
+			image: "cmi:textures/images/background/gold.png"
+			rotation: 0.0d
+			width: 45.32d
+			x: -2.0d
+			y: -0.5d
+		}
+	]
 	order_index: 6
 	quest_links: [ ]
 	quests: [
@@ -20,24 +22,30 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "2D953C3117B4B10F"
-			rewards: [{
-				id: "3436A13F8F6B563D"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "6A1AC24F3C42DA69"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/gold"
-					}
+			rewards: [
+				{
+					id: "3436A13F8F6B563D"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:plates/gold"
-				type: "item"
-			}]
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "6A1AC24F3C42DA69"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/gold"
+						}
+						title: "任意 #forge:板/金"
+						type: "item"
+					}
+					title: "任意 #forge:板/金"
+					type: "item"
+				}
+			]
 			title: "金板"
 			x: -12.75d
 			y: 1.5d
@@ -47,24 +55,30 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1D3F60B7C9135A1A"
-			rewards: [{
-				id: "6DEDA10F2100CF72"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "05BDE591ACA17C13"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:nuggets/gold"
-					}
+			rewards: [
+				{
+					id: "6DEDA10F2100CF72"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:nuggets/gold"
-				type: "item"
-			}]
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "05BDE591ACA17C13"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:nuggets/gold"
+						}
+						title: "任意 #forge:粒/金"
+						type: "item"
+					}
+					title: "任意 #forge:粒/金"
+					type: "item"
+				}
+			]
 			title: "金粒"
 			x: -4.0d
 			y: 5.0d
@@ -74,17 +88,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6D84FA27A4DD4B8E"
-			rewards: [{
-				id: "27C63CD981149063"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "27C63CD981149063"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "28D5FAA305EC069D"
-				item: "cmi:basic_mechanism_part"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "28D5FAA305EC069D"
+					item: "cmi:basic_mechanism_part"
+					type: "item"
+				}
+			]
 			title: "机械部件"
 			x: 1.0d
 			y: 1.0d
@@ -94,17 +112,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "583E2869C9280CF3"
-			rewards: [{
-				id: "3810158FBD283F5C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3810158FBD283F5C"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "3743C7A475FA4F12"
-				item: "cmi:gold_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3743C7A475FA4F12"
+					item: "cmi:gold_mechanism"
+					type: "item"
+				}
+			]
 			title: "金机械"
 			x: 7.5d
 			y: 4.5d

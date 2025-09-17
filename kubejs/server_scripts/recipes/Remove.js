@@ -95,7 +95,8 @@ ServerEvents.recipes((event) => {
 		"createdieselgenerators:basin_fermenting/fermented_spider_eye",
 		"createaddition:mixing/bioethanol",
 		"thermal:compat/mekanism/smelter_mek_osmium_ore",
-		"create:milling/andesite"
+		"create:milling/andesite",
+		"create:industrial_iron_block_from_ingots_iron_stonecutting"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

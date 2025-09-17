@@ -12,11 +12,13 @@
 			dependencies: ["03386EF94707C999"]
 			icon: "mekanismgenerators:fission_fuel_assembly"
 			id: "3BC96A9B0909BB8E"
-			rewards: [{
-				id: "6916147914B1D396"
-				type: "xp"
-				xp: 150
-			}]
+			rewards: [
+				{
+					id: "6916147914B1D396"
+					type: "xp"
+					xp: 150
+				}
+			]
 			shape: "square"
 			size: 2.0d
 			subtitle: "就一个就行, 别搞太大"
@@ -54,32 +56,40 @@
 		{
 			dependencies: ["3BC96A9B0909BB8E"]
 			id: "117804AEE2EFE080"
-			rewards: [{
-				id: "7D036D91DE395693"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "34D833137CCF5271"
-				item: "mekanism:pellet_polonium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7D036D91DE395693"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "34D833137CCF5271"
+					item: "mekanism:pellet_polonium"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3BC96A9B0909BB8E"]
 			id: "7627475DF91BAE48"
-			rewards: [{
-				id: "4218E0F1CB766B37"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "68E9057221E1F450"
-				item: "mekanism:pellet_plutonium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4218E0F1CB766B37"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "68E9057221E1F450"
+					item: "mekanism:pellet_plutonium"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: 0.5d
 		}
@@ -87,11 +97,13 @@
 			dependencies: ["29F86C33F70E9575"]
 			description: ["无需感谢我, 因为这是搭建SPS的确切材料数量"]
 			id: "27CBF88AFC0584A6"
-			rewards: [{
-				id: "370527A3EFC9290D"
-				type: "xp"
-				xp: 150
-			}]
+			rewards: [
+				{
+					id: "370527A3EFC9290D"
+					type: "xp"
+					xp: 150
+				}
+			]
 			shape: "square"
 			size: 2.0d
 			subtitle: "初识超临界移相器"
@@ -130,52 +142,64 @@
 				"117804AEE2EFE080"
 			]
 			id: "29F86C33F70E9575"
-			rewards: [{
-				id: "22FC402C6F1655A4"
-				type: "xp"
-				xp: 50
-			}]
+			rewards: [
+				{
+					id: "22FC402C6F1655A4"
+					type: "xp"
+					xp: 50
+				}
+			]
 			shape: "square"
 			size: 1.5d
-			tasks: [{
-				id: "546A9B4BDD1EE8ED"
-				item: "cmi:nuclear_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "546A9B4BDD1EE8ED"
+					item: "cmi:nuclear_mechanism"
+					type: "item"
+				}
+			]
 			x: 3.75d
 			y: 0.0d
 		}
 		{
 			dependencies: ["27CBF88AFC0584A6"]
 			id: "46CB630D33D3F705"
-			rewards: [{
-				id: "4476D9ABA7516D75"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "335976E1273DBA9C"
-				item: "mekanism:pellet_antimatter"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4476D9ABA7516D75"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "335976E1273DBA9C"
+					item: "mekanism:pellet_antimatter"
+					type: "item"
+				}
+			]
 			x: 5.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["46CB630D33D3F705"]
 			id: "568186541547B51C"
-			rewards: [{
-				id: "7326BC5BB6153574"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "7326BC5BB6153574"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "square"
 			size: 1.5d
-			tasks: [{
-				id: "03BCA8EB638B84A9"
-				item: "cmi:antimatter_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "03BCA8EB638B84A9"
+					item: "cmi:antimatter_mechanism"
+					type: "item"
+				}
+			]
 			x: 6.75d
 			y: 2.25d
 		}
@@ -184,23 +208,27 @@
 			dependency_requirement: "all_started"
 			disable_toast: true
 			id: "03386EF94707C999"
-			rewards: [{
-				id: "6E8F3C0CE849239E"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3B3C03672F656C74"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:circuits/elite"
-					}
+			rewards: [
+				{
+					id: "6E8F3C0CE849239E"
+					type: "xp"
+					xp: 10
 				}
-				title: "精英控制电路"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "3B3C03672F656C74"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:circuits/elite"
+						}
+					}
+					title: "精英控制电路"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -2.0d
 		}

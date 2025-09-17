@@ -37,24 +37,30 @@
 		{
 			hide_dependent_lines: true
 			id: "0303BDC8C5B8563A"
-			rewards: [{
-				id: "5C3B6E0C40C71F84"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "=P"
-			tasks: [{
-				id: "6B01FDC573BC7B2E"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/chromium"
-					}
+			rewards: [
+				{
+					id: "5C3B6E0C40C71F84"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:ingots/chromium"
-				type: "item"
-			}]
+			]
+			subtitle: "=P"
+			tasks: [
+				{
+					id: "6B01FDC573BC7B2E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/chromium"
+						}
+						title: "任意 #forge:锭/铬"
+						type: "item"
+					}
+					title: "任意 #forge:ingots/chromium"
+					type: "item"
+				}
+			]
 			title: "铬锭"
 			x: -12.5d
 			y: 0.5d
@@ -62,23 +68,29 @@
 		{
 			hide_dependent_lines: true
 			id: "1D6B4D421E6598F8"
-			rewards: [{
-				id: "5AE8E149EA42787E"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "056CAD5AF3A2A7EE"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/invar"
-					}
+			rewards: [
+				{
+					id: "5AE8E149EA42787E"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:ingots/invar"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "056CAD5AF3A2A7EE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/invar"
+						}
+						title: "任意 #forge:锭/殷钢"
+						type: "item"
+					}
+					title: "任意 #forge:ingots/invar"
+					type: "item"
+				}
+			]
 			title: "殷钢锭"
 			x: -10.5d
 			y: 0.5d
@@ -86,23 +98,29 @@
 		{
 			hide_dependent_lines: true
 			id: "26339E0319D8EF17"
-			rewards: [{
-				id: "6B2C496E79363F64"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7AFD28DC80FE2C5F"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/steel"
-					}
+			rewards: [
+				{
+					id: "6B2C496E79363F64"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:ingots/steel"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "7AFD28DC80FE2C5F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/steel"
+						}
+						title: "任意 #forge:锭/钢"
+						type: "item"
+					}
+					title: "任意 #forge:ingots/steel"
+					type: "item"
+				}
+			]
 			title: "钢锭"
 			x: -8.5d
 			y: 0.5d
@@ -116,17 +134,21 @@
 			description: [""]
 			hide_dependent_lines: true
 			id: "721424F57193B87F"
-			rewards: [{
-				id: "6259C2A4BFF72F59"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6259C2A4BFF72F59"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "你说什么,兄弟？"
-			tasks: [{
-				id: "03631F76626EEAF2"
-				item: "cmi:stainless_steel_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "03631F76626EEAF2"
+					item: "cmi:stainless_steel_ingot"
+					type: "item"
+				}
+			]
 			title: "不锈钢锭"
 			x: -6.42000000000003d
 			y: 5.130952380952387d
@@ -136,11 +158,13 @@
 			hide_dependent_lines: true
 			id: "6B9BC6E3F7708F75"
 			subtitle: "*颤抖*"
-			tasks: [{
-				id: "4D9649576E67B934"
-				title: "压印"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4D9649576E67B934"
+					title: "压印"
+					type: "checkmark"
+				}
+			]
 			x: -3.8642857142857423d
 			y: 6.13095238095238d
 		}
@@ -148,17 +172,21 @@
 			dependencies: ["6B9BC6E3F7708F75"]
 			hide_dependent_lines: true
 			id: "354F4EF9FBA5DFC1"
-			rewards: [{
-				id: "73A93A26BD53DC40"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "73A93A26BD53DC40"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "我 说 我 ' 是 Strv122B+!!!!!"
-			tasks: [{
-				id: "595338F4FF9B057C"
-				item: "cmi:stainless_steel_plate"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "595338F4FF9B057C"
+					item: "cmi:stainless_steel_plate"
+					type: "item"
+				}
+			]
 			title: "不锈钢板"
 			x: -1.8085714285714687d
 			y: 4.55952380952381d
@@ -166,16 +194,20 @@
 		{
 			hide_dependent_lines: true
 			id: "5DB5B348A527CBB5"
-			rewards: [{
-				id: "7366C7FBD4427B71"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5DC30636057F17FC"
-				item: "minecraft:redstone"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7366C7FBD4427B71"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "5DC30636057F17FC"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
 			title: "红石"
 			x: -5.722142857142863d
 			y: -3.2142857142857153d
@@ -184,11 +216,13 @@
 			hide_dependent_lines: true
 			icon: "mekanism:ethene_bucket"
 			id: "2A93C31925CD45D7"
-			tasks: [{
-				id: "3137C33F7C54EEBB"
-				title: "乙烯"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3137C33F7C54EEBB"
+					title: "乙烯"
+					type: "checkmark"
+				}
+			]
 			x: 4.3335714285714175d
 			y: -5.5d
 		}
@@ -197,11 +231,13 @@
 			hide_dependent_lines: true
 			icon: "thermal_extra:polyolefin_bucket"
 			id: "77C84E441AADD28F"
-			tasks: [{
-				id: "5A031C270D186F5B"
-				title: "聚烯烃"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5A031C270D186F5B"
+					title: "聚烯烃"
+					type: "checkmark"
+				}
+			]
 			x: 1.5321428571428442d
 			y: -4.595238095238095d
 		}
@@ -209,11 +245,13 @@
 			dependencies: ["77C84E441AADD28F"]
 			hide_dependent_lines: true
 			id: "42307908292D76EA"
-			tasks: [{
-				id: "3EA5A3972A0026F8"
-				title: "冷却"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3EA5A3972A0026F8"
+					title: "冷却"
+					type: "checkmark"
+				}
+			]
 			x: 3.6592857142857014d
 			y: -2.5d
 		}
@@ -221,16 +259,20 @@
 			dependencies: ["42307908292D76EA"]
 			hide_dependent_lines: true
 			id: "59278B80D7513654"
-			rewards: [{
-				id: "7465EC9A2E2357D1"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3DF30993ADC1BAD1"
-				item: "thermal_extra:polyolefin_plate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7465EC9A2E2357D1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "3DF30993ADC1BAD1"
+					item: "thermal_extra:polyolefin_plate"
+					type: "item"
+				}
+			]
 			title: "聚烯烃板"
 			x: 2.214999999999975d
 			y: -0.5d
@@ -243,11 +285,13 @@
 			hide_dependent_lines: true
 			id: "2561D99F7CE55993"
 			subtitle: "那太疯狂了兄弟 DDD"
-			tasks: [{
-				id: "6BD2730703768584"
-				title: "注入"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6BD2730703768584"
+					title: "注入"
+					type: "checkmark"
+				}
+			]
 			x: 0.5564285714285688d
 			y: 0.3571428571428612d
 		}
@@ -258,16 +302,20 @@
 			]
 			hide_dependent_lines: true
 			id: "7DA73AC7043D6178"
-			rewards: [{
-				id: "37A8BF0B0CF85275"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "00127E7CA84F6026"
-				item: "mekanism:basic_control_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "37A8BF0B0CF85275"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "00127E7CA84F6026"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+			]
 			title: "基础控制电路"
 			x: 0.8421428571428464d
 			y: 4.5d
@@ -276,16 +324,20 @@
 			dependencies: ["37A53F80B2AF7C9B"]
 			hide_dependent_lines: true
 			id: "6A6AE4DA8C74A8CC"
-			rewards: [{
-				id: "0E077BB58ED56E4D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4C4E4C728E403725"
-				item: "thermal:ruby"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0E077BB58ED56E4D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4C4E4C728E403725"
+					item: "thermal:ruby"
+					type: "item"
+				}
+			]
 			title: "红宝石"
 			x: 6.254999999999981d
 			y: -1.9328571428571308d
@@ -293,16 +345,20 @@
 		{
 			hide_dependent_lines: true
 			id: "53C3FBEC7D503079"
-			rewards: [{
-				id: "6BA276186CB86FE4"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5009C118DF88A3F6"
-				item: "minecraft:iron_nugget"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6BA276186CB86FE4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "5009C118DF88A3F6"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+			]
 			title: "铁粒"
 			x: 8.525000000000006d
 			y: -1.0085714285714147d
@@ -314,11 +370,13 @@
 			]
 			hide_dependent_lines: true
 			id: "7107F771F6A75456"
-			tasks: [{
-				id: "454AB4B1858CADA7"
-				title: "合成"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "454AB4B1858CADA7"
+					title: "合成"
+					type: "checkmark"
+				}
+			]
 			x: 6.5092857142856815d
 			y: 1.2728571428571556d
 		}
@@ -329,16 +387,20 @@
 			]
 			hide_dependent_lines: true
 			id: "16A9BAA674ED01F4"
-			rewards: [{
-				id: "3A56D6F82DE1B087"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "189A5B6E76F79D77"
-				item: "thermal:ruby_gear"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3A56D6F82DE1B087"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "189A5B6E76F79D77"
+					item: "thermal:ruby_gear"
+					type: "item"
+				}
+			]
 			title: "红宝石齿轮"
 			x: 6.564999999999955d
 			y: 4.268571428571448d
@@ -347,16 +409,20 @@
 			dependencies: ["16A9BAA674ED01F4"]
 			hide_dependent_lines: true
 			id: "53A5C65BE35A274C"
-			rewards: [{
-				id: "740924879CEEE7F8"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "382E272978D27B19"
-				item: "cmi:mekanism_mechanism_part"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "740924879CEEE7F8"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "382E272978D27B19"
+					item: "cmi:mekanism_mechanism_part"
+					type: "item"
+				}
+			]
 			title: "机械部件"
 			x: 12.334999999999965d
 			y: 3.121428571428609d
@@ -365,16 +431,20 @@
 			dependencies: ["53A5C65BE35A274C"]
 			hide_dependent_lines: true
 			id: "0DF94BD8B1C6FE58"
-			rewards: [{
-				id: "16B3928935A80769"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "219AD995AE968180"
-				item: "cmi:basic_mekanism_mechanism"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "16B3928935A80769"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "219AD995AE968180"
+					item: "cmi:basic_mekanism_mechanism"
+					type: "item"
+				}
+			]
 			title: "基础mekanism机械"
 			x: 15.334999999999951d
 			y: 4.688571428571464d
@@ -382,16 +452,20 @@
 		{
 			hide_dependent_lines: true
 			id: "321292C01F440F1E"
-			rewards: [{
-				id: "6D090E7B2953BC68"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "0EA13074963ABD5A"
-				item: "cmi:crystal_ruby"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6D090E7B2953BC68"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "0EA13074963ABD5A"
+					item: "cmi:crystal_ruby"
+					type: "item"
+				}
+			]
 			title: "红宝石晶体"
 			x: 10.906428571428535d
 			y: -6.177142857142819d
@@ -400,11 +474,13 @@
 			dependencies: ["321292C01F440F1E"]
 			hide_dependent_lines: true
 			id: "07DDD975B1CAA9A8"
-			tasks: [{
-				id: "28685B282F90CCBF"
-				title: "压印"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "28685B282F90CCBF"
+					title: "压印"
+					type: "checkmark"
+				}
+			]
 			x: 10.0d
 			y: -5.5d
 		}
@@ -412,16 +488,20 @@
 			dependencies: ["07DDD975B1CAA9A8"]
 			hide_dependent_lines: true
 			id: "37A53F80B2AF7C9B"
-			rewards: [{
-				id: "5BA526303FCA9577"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2376142D3C0B924D"
-				item: "minecraft:redstone"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5BA526303FCA9577"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "2376142D3C0B924D"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
 			title: "红石粉"
 			x: 8.620714285714229d
 			y: -4.252857142857096d

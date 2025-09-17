@@ -1,7 +1,7 @@
 MMEvents.createProcesses((event) => {
 	event.create("cmi:large_steam_boiler/steam")
 		.structureId("cmi:large_steam_boiler_structure")
-		.ticks(200)
+		.ticks(100)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {

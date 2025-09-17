@@ -5,37 +5,43 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:tier_1_aviation_mechanism"
 	id: "6359B6F6B6A0E81F"
-	images: [{
-		height: 34.56d
-		image: "cmi:textures/images/background/tier_1_ava.png"
-		rotation: 0.0d
-		width: 54.24d
-		x: -2.0d
-		y: 4.0d
-	}]
+	images: [
+		{
+			height: 34.56d
+			image: "cmi:textures/images/background/tier_1_ava.png"
+			rotation: 0.0d
+			width: 54.24d
+			x: -2.0d
+			y: 4.0d
+		}
+	]
 	order_index: 20
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "0962B98D9108782F"
-			rewards: [{
-				id: "086B396B0F85F50B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "020BFCEA9D19CADC"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/steel"
-					}
+			rewards: [
+				{
+					id: "086B396B0F85F50B"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:ingots/钢"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "020BFCEA9D19CADC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/steel"
+						}
+					}
+					title: "任意 #forge:ingots/钢"
+					type: "item"
+				}
+			]
 			title: "钢锭"
 			x: -17.339183673469392d
 			y: 7.566326530612251d
@@ -44,11 +50,13 @@
 			dependencies: ["0962B98D9108782F"]
 			hide_dependent_lines: true
 			id: "763CA072A2A18CCB"
-			tasks: [{
-				id: "4C8ED45E29675AE2"
-				title: "压印"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4C8ED45E29675AE2"
+					title: "压印"
+					type: "checkmark"
+				}
+			]
 			x: -12.196326530612247d
 			y: 7.209183673469397d
 		}
@@ -56,11 +64,13 @@
 			dependencies: ["3BB3B864B7E89E8C"]
 			hide_dependent_lines: true
 			id: "5CCB1415C01E7A71"
-			tasks: [{
-				id: "7AC59FC2F8C3D795"
-				title: "合成"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7AC59FC2F8C3D795"
+					title: "合成"
+					type: "checkmark"
+				}
+			]
 			x: -9.910612244897962d
 			y: -1.4336734693877418d
 		}
@@ -68,16 +78,20 @@
 			dependencies: ["763CA072A2A18CCB"]
 			hide_dependent_lines: true
 			id: "4042479CA7251391"
-			rewards: [{
-				id: "718F7094636C29A6"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2706BC120A34BAC4"
-				item: "cmi:computer_component"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "718F7094636C29A6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "2706BC120A34BAC4"
+					item: "cmi:computer_component"
+					type: "item"
+				}
+			]
 			title: "计算机组件"
 			x: -6.5048979591836655d
 			y: 8.31061224489796d
@@ -85,23 +99,27 @@
 		{
 			hide_dependent_lines: true
 			id: "3BB3B864B7E89E8C"
-			rewards: [{
-				id: "748BF7A477428A19"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "07750311722E46F1"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/silver"
-					}
+			rewards: [
+				{
+					id: "748BF7A477428A19"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:ingots/银"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "07750311722E46F1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/silver"
+						}
+					}
+					title: "任意 #forge:ingots/银"
+					type: "item"
+				}
+			]
 			title: "银锭"
 			x: -15.027755102040814d
 			y: 3.7334693877551075d
@@ -110,23 +128,27 @@
 			dependencies: ["5CCB1415C01E7A71"]
 			hide_dependent_lines: true
 			id: "347B90CE8C120608"
-			rewards: [{
-				id: "07D75B246F426785"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1360A3ED04FCF5DF"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:rods/silver"
-					}
+			rewards: [
+				{
+					id: "07D75B246F426785"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:rods/银棒"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "1360A3ED04FCF5DF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:rods/silver"
+						}
+					}
+					title: "任意 #forge:rods/银棒"
+					type: "item"
+				}
+			]
 			title: "银棒"
 			x: -7.622040816326518d
 			y: -1.415102040816322d
@@ -138,16 +160,20 @@
 			]
 			hide_dependent_lines: true
 			id: "12FFC7DA29F24ABE"
-			rewards: [{
-				id: "2858A25D7475B6B4"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7A80387B61AB2B3F"
-				item: "thermal:cured_rubber"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2858A25D7475B6B4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "7A80387B61AB2B3F"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+			]
 			title: "硫化橡胶"
 			x: -5.430612244897937d
 			y: -0.28224489795915986d
@@ -158,42 +184,52 @@
 				"67CECC63231A4769"
 			]
 			id: "4FD621DD5AADFC77"
-			tasks: [{
-				id: "4B60C978260BBB42"
-				title: "混合与铸造"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4B60C978260BBB42"
+					title: "混合与铸造"
+					type: "checkmark"
+				}
+			]
 			x: -5.502040816326513d
 			y: -4.319387755102035d
 		}
 		{
 			id: "47510EBE3F6FCA29"
-			rewards: [{
-				id: "6189E9865865A304"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "69A14AFEC857397E"
-				item: "thermal:sulfur_dust"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6189E9865865A304"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "69A14AFEC857397E"
+					item: "thermal:sulfur_dust"
+					type: "item"
+				}
+			]
 			title: "硫磺粉"
 			x: -5.0734693877550825d
 			y: -5.890816326530604d
 		}
 		{
 			id: "67CECC63231A4769"
-			rewards: [{
-				id: "456EF6A46CF0CCBD"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7476AAC03E770441"
-				item: "cmi:rubber_plate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "456EF6A46CF0CCBD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "7476AAC03E770441"
+					item: "cmi:rubber_plate"
+					type: "item"
+				}
+			]
 			title: "橡胶板"
 			x: -4.144897959183652d
 			y: -5.890816326530604d
@@ -205,16 +241,20 @@
 			]
 			hide_dependent_lines: true
 			id: "2700191D9DE08421"
-			rewards: [{
-				id: "5400D67B3C332B34"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "167C178F2EBCBD30"
-				item: "ad_astra:steel_cable"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5400D67B3C332B34"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "167C178F2EBCBD30"
+					item: "ad_astra:steel_cable"
+					type: "item"
+				}
+			]
 			title: "钢缆"
 			x: -0.7163265306122213d
 			y: 3.2820408163265427d
@@ -222,16 +262,20 @@
 		{
 			hide_dependent_lines: true
 			id: "12595B23E04C0C86"
-			rewards: [{
-				id: "1C5A1C11B46D971B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3FB5793866010AF5"
-				item: "minecraft:bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1C5A1C11B46D971B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "3FB5793866010AF5"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
 			title: "桶"
 			x: 1.855102040816348d
 			y: 0.9191836734693979d
@@ -240,23 +284,29 @@
 			dependencies: ["12595B23E04C0C86"]
 			hide_dependent_lines: true
 			id: "54DAB769216C8CC9"
-			rewards: [{
-				id: "5DF1934B64E3E0A4"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "54B3472420C3431F"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:rods/iron"
-					}
+			rewards: [
+				{
+					id: "5DF1934B64E3E0A4"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:rods/iron"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "54B3472420C3431F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:rods/iron"
+						}
+						title: "任意 #forge:rods/铁锭"
+						type: "item"
+					}
+					title: "任意 #forge:rods/iron"
+					type: "item"
+				}
+			]
 			title: "铁杆"
 			x: 3.14081632653064d
 			y: 1.3363265306122614d
@@ -265,23 +315,29 @@
 			dependencies: ["54DAB769216C8CC9"]
 			hide_dependent_lines: true
 			id: "19A7E9598816A63E"
-			rewards: [{
-				id: "45D25C5DB6F89251"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "24EF5CED45B84C1B"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/steel"
-					}
+			rewards: [
+				{
+					id: "45D25C5DB6F89251"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:plates/steel"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "24EF5CED45B84C1B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/steel"
+						}
+						title: "任意 #forge:plates/钢板"
+						type: "item"
+					}
+					title: "任意 #forge:plates/steel"
+					type: "item"
+				}
+			]
 			title: "钢板"
 			x: 4.140816326530626d
 			y: 1.622040816326546d
@@ -293,16 +349,20 @@
 			]
 			hide_dependent_lines: true
 			id: "2D279FB9E90A462F"
-			rewards: [{
-				id: "19766B755B328FF8"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2D87081FFA8A1400"
-				item: "ad_astra:steel_tank"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "19766B755B328FF8"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "2D87081FFA8A1400"
+					item: "ad_astra:steel_tank"
+					type: "item"
+				}
+			]
 			title: "钢制储罐"
 			x: 5.426530612244903d
 			y: 5.622040816326553d
@@ -311,11 +371,13 @@
 			dependencies: ["2D279FB9E90A462F"]
 			hide_dependent_lines: true
 			id: "2366DE1FBFBFDFE9"
-			tasks: [{
-				id: "543104918EDB08CD"
-				item: "cmi:space_mechanism_part"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "543104918EDB08CD"
+					item: "cmi:space_mechanism_part"
+					type: "item"
+				}
+			]
 			title: "机械部件"
 			x: 10.283673469387779d
 			y: 1.8306122448979778d
@@ -324,11 +386,13 @@
 			dependencies: ["2366DE1FBFBFDFE9"]
 			hide_dependent_lines: true
 			id: "16DD79B7DD71D0AC"
-			tasks: [{
-				id: "3C69D1F1229C4CCD"
-				item: "cmi:tier_1_aviation_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3C69D1F1229C4CCD"
+					item: "cmi:tier_1_aviation_mechanism"
+					type: "item"
+				}
+			]
 			title: "一级航空机械"
 			x: 13.997959183673487d
 			y: 3.3963265306122707d

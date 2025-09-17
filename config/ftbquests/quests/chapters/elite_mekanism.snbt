@@ -5,30 +5,36 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:elite_mekanism_mechanism"
 	id: "150F13C1C3E2D647"
-	images: [{
-		height: 28.14d
-		image: "cmi:textures/images/background/elite_mek.png"
-		rotation: 0.0d
-		width: 41.94d
-		x: -1.5d
-		y: -3.5d
-	}]
+	images: [
+		{
+			height: 28.14d
+			image: "cmi:textures/images/background/elite_mek.png"
+			rotation: 0.0d
+			width: 41.94d
+			x: -1.5d
+			y: -3.5d
+		}
+	]
 	order_index: 26
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "3C1C29661D3ADFC6"
-			rewards: [{
-				id: "24075118AC80F38F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "710C65B9820F1A65"
-				item: "cmi:stainless_steel_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "24075118AC80F38F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "710C65B9820F1A65"
+					item: "cmi:stainless_steel_ingot"
+					type: "item"
+				}
+			]
 			title: "不锈钢锭"
 			x: -11.184285714285714d
 			y: -2.857142857142854d
@@ -37,11 +43,13 @@
 			dependencies: ["3C1C29661D3ADFC6"]
 			hide_dependent_lines: true
 			id: "2EB33A5F59BD816F"
-			tasks: [{
-				id: "71E5E3BF5710541A"
-				title: "压缩"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "71E5E3BF5710541A"
+					title: "压缩"
+					type: "checkmark"
+				}
+			]
 			x: -9.184285714285714d
 			y: -1.9299999999999997d
 		}
@@ -49,16 +57,20 @@
 			dependencies: ["2EB33A5F59BD816F"]
 			hide_dependent_lines: true
 			id: "4882090320EBB22C"
-			rewards: [{
-				id: "70971034E49CE3B7"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4E6FF7073CBB2E85"
-				item: "cmi:stainless_steel_plate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "70971034E49CE3B7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4E6FF7073CBB2E85"
+					item: "cmi:stainless_steel_plate"
+					type: "item"
+				}
+			]
 			title: "不锈钢板"
 			x: -5.184285714285707d
 			y: -0.5742857142857218d
@@ -66,16 +78,20 @@
 		{
 			hide_dependent_lines: true
 			id: "52BAAC2D558CE394"
-			rewards: [{
-				id: "486E3A92EA43FEAF"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "0BAD4E6F4B81B2F9"
-				item: "mekanism:alloy_reinforced"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "486E3A92EA43FEAF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "0BAD4E6F4B81B2F9"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+			]
 			title: "合金强化"
 			x: 4.672857142857154d
 			y: -10.21857142857143d
@@ -84,16 +100,20 @@
 			dependencies: ["52BAAC2D558CE394"]
 			hide_dependent_lines: true
 			id: "14396C5882C4574E"
-			rewards: [{
-				id: "0004AC1E1E87D768"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "51103C046415A337"
-				item: "mekanism:advanced_control_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0004AC1E1E87D768"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "51103C046415A337"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+			]
 			title: "高级控制电路"
 			x: 3.5300000000000153d
 			y: -9.505714285714276d
@@ -102,16 +122,20 @@
 			dependencies: ["14396C5882C4574E"]
 			hide_dependent_lines: true
 			id: "47BB59493C97E8EB"
-			rewards: [{
-				id: "11B2D4338AA77F3D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "0A670BD7079D3253"
-				item: "ad_astra:ostrum_plate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "11B2D4338AA77F3D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "0A670BD7079D3253"
+					item: "ad_astra:ostrum_plate"
+					type: "item"
+				}
+			]
 			title: "紫金板"
 			x: 2.1014285714285847d
 			y: -8.364285714285714d
@@ -120,11 +144,13 @@
 			dependencies: ["47BB59493C97E8EB"]
 			hide_dependent_lines: true
 			id: "373032BF6A7F20DE"
-			tasks: [{
-				id: "277D8232E6856268"
-				title: "压缩"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "277D8232E6856268"
+					title: "压缩"
+					type: "checkmark"
+				}
+			]
 			x: 0.958571428571446d
 			y: -7.008571428571436d
 		}
@@ -135,16 +161,20 @@
 			]
 			hide_dependent_lines: true
 			id: "4EDDBB507941DD35"
-			rewards: [{
-				id: "749C23431B97604F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "14503EC22317FF69"
-				item: "mekanism:elite_control_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "749C23431B97604F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "14503EC22317FF69"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
+			]
 			title: "精英控制电路"
 			x: -1.4699999999999847d
 			y: -3.652857142857158d
@@ -152,16 +182,20 @@
 		{
 			hide_dependent_lines: true
 			id: "55C5EF27CEA580AB"
-			rewards: [{
-				id: "14A17DC7BF0ACEC5"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "6B99B058D320C71D"
-				item: "minecraft:gold_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "14A17DC7BF0ACEC5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "6B99B058D320C71D"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
 			title: "金锭"
 			x: 7.672857142857154d
 			y: -10.297142857142866d
@@ -170,11 +204,13 @@
 			dependencies: ["55C5EF27CEA580AB"]
 			hide_dependent_lines: true
 			id: "5ADFA64355ED03B8"
-			tasks: [{
-				id: "1E5B690795559C24"
-				title: "压缩"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "1E5B690795559C24"
+					title: "压缩"
+					type: "checkmark"
+				}
+			]
 			x: 6.101428571428585d
 			y: -6.0128571428571576d
 		}
@@ -185,16 +221,20 @@
 			]
 			hide_dependent_lines: true
 			id: "6EA659C646BE2969"
-			rewards: [{
-				id: "1748886C9B3B4AB5"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "338AF8B447D4C75F"
-				item: "thermal:gold_plate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1748886C9B3B4AB5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "338AF8B447D4C75F"
+					item: "thermal:gold_plate"
+					type: "item"
+				}
+			]
 			title: "金板"
 			x: 4.815714285714293d
 			y: -1.3714285714285879d
@@ -203,16 +243,20 @@
 			dependencies: ["6EA659C646BE2969"]
 			hide_dependent_lines: true
 			id: "46D55EC57B0A1DE5"
-			rewards: [{
-				id: "51F540369B510847"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "33428630D0EDD9E7"
-				item: "cmi:mekanism_mechanism_part"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "51F540369B510847"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "33428630D0EDD9E7"
+					item: "cmi:mekanism_mechanism_part"
+					type: "item"
+				}
+			]
 			title: "机械部件"
 			x: 8.244285714285724d
 			y: -4.01571428571431d
@@ -221,16 +265,20 @@
 			dependencies: ["46D55EC57B0A1DE5"]
 			hide_dependent_lines: true
 			id: "68E8543A0092649B"
-			rewards: [{
-				id: "43F22CF426438C5E"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "6A681087C3F9A6F5"
-				item: "cmi:elite_mekanism_mechanism"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "43F22CF426438C5E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "6A681087C3F9A6F5"
+					item: "cmi:elite_mekanism_mechanism"
+					type: "item"
+				}
+			]
 			title: "精英机械装置"
 			x: 12.244285714285724d
 			y: -2.160000000000018d

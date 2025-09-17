@@ -5,30 +5,36 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:tier_4_aviation_mechanism"
 	id: "223DE53B90C1CDB2"
-	images: [{
-		height: 33.0d
-		image: "cmi:textures/images/background/tier_4_ava.png"
-		rotation: 0.0d
-		width: 47.6d
-		x: -3.0d
-		y: 6.0d
-	}]
+	images: [
+		{
+			height: 33.0d
+			image: "cmi:textures/images/background/tier_4_ava.png"
+			rotation: 0.0d
+			width: 47.6d
+			x: -3.0d
+			y: 6.0d
+		}
+	]
 	order_index: 23
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "71E4BA6D8BA12C05"
-			rewards: [{
-				id: "79CECE6838DDA4A6"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "78484BCB4587B75A"
-				item: "ad_astra:calorite_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "79CECE6838DDA4A6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "78484BCB4587B75A"
+					item: "ad_astra:calorite_ingot"
+					type: "item"
+				}
+			]
 			title: "耐热金属锭"
 			x: -15.214285714285737d
 			y: 6.5357142857142705d
@@ -37,11 +43,13 @@
 			dependencies: ["71E4BA6D8BA12C05"]
 			hide_dependent_lines: true
 			id: "2E241F8B79CE9FA8"
-			tasks: [{
-				id: "7B12DD0A3FB9A489"
-				title: "压制"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7B12DD0A3FB9A489"
+					title: "压制"
+					type: "checkmark"
+				}
+			]
 			x: -13.771428571428586d
 			y: 7.249999999999986d
 		}
@@ -49,16 +57,20 @@
 			dependencies: ["6EDEDD1E902A22B5"]
 			hide_dependent_lines: true
 			id: "0DEC4D0DDA973204"
-			rewards: [{
-				id: "19B175C4989E7639"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "55B60934F36000A9"
-				item: "cmi:computer_component"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "19B175C4989E7639"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "55B60934F36000A9"
+					item: "cmi:computer_component"
+					type: "item"
+				}
+			]
 			title: "计算机组件"
 			x: -5.471428571428589d
 			y: 6.964285714285708d
@@ -67,16 +79,20 @@
 			dependencies: ["2E241F8B79CE9FA8"]
 			hide_dependent_lines: true
 			id: "6EDEDD1E902A22B5"
-			rewards: [{
-				id: "49E74911FA6711D9"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "339B52F94E13FB7C"
-				item: "ad_astra:calorite_plate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "49E74911FA6711D9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "339B52F94E13FB7C"
+					item: "ad_astra:calorite_plate"
+					type: "item"
+				}
+			]
 			title: "耐热金属板"
 			x: -12.042857142857159d
 			y: 7.821428571428548d
@@ -88,16 +104,20 @@
 			]
 			hide_dependent_lines: true
 			id: "4A3D98EA8A6DABEA"
-			rewards: [{
-				id: "23E76BCFB2151355"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "24ADB16EE9C2BC31"
-				item: "ad_astra:ostrum_fluid_pipe"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "23E76BCFB2151355"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "24ADB16EE9C2BC31"
+					item: "ad_astra:ostrum_fluid_pipe"
+					type: "item"
+				}
+			]
 			title: "紫金流体管道"
 			x: -0.2785714285714249d
 			y: 5.928571428571431d
@@ -105,16 +125,20 @@
 		{
 			hide_dependent_lines: true
 			id: "6C9FB466BE39FAF7"
-			rewards: [{
-				id: "3E2B9575631BFFE3"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "432839804937BA04"
-				item: "create:fluid_pipe"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3E2B9575631BFFE3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "432839804937BA04"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+			]
 			title: "流体管道"
 			x: -5.714285714285715d
 			y: 1.9285714285714306d
@@ -123,16 +147,20 @@
 			dependencies: ["6C9FB466BE39FAF7"]
 			hide_dependent_lines: true
 			id: "53E141142CE46FBC"
-			rewards: [{
-				id: "5D6866E00FAB6133"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4C8332F3032374C1"
-				item: "ad_astra:ostrum_plate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5D6866E00FAB6133"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4C8332F3032374C1"
+					item: "ad_astra:ostrum_plate"
+					type: "item"
+				}
+			]
 			title: "紫金板"
 			x: -3.4285714285714164d
 			y: 2.7142857142857153d
@@ -140,20 +168,24 @@
 		{
 			hide_dependent_lines: true
 			id: "0C1D807BAD516709"
-			rewards: [{
-				id: "58FC62745D3805A7"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "108699EF5DDD9C40"
-				item: {
-					Count: 1
-					id: "ad_astra:gas_tank"
-					tag: { }
+			rewards: [
+				{
+					id: "58FC62745D3805A7"
+					type: "xp"
+					xp: 10
 				}
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "108699EF5DDD9C40"
+					item: {
+						Count: 1
+						id: "ad_astra:gas_tank"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "气体储罐"
 			x: -7.857142857142847d
 			y: -3.642857142857146d
@@ -165,11 +197,13 @@
 			]
 			hide_dependent_lines: true
 			id: "5C039154C09FFD89"
-			tasks: [{
-				id: "277420A16DCA581F"
-				title: "部署"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "277420A16DCA581F"
+					title: "部署"
+					type: "checkmark"
+				}
+			]
 			x: -5.714285714285715d
 			y: -3.0714285714285765d
 		}
@@ -180,16 +214,20 @@
 			]
 			hide_dependent_lines: true
 			id: "3637B92E69D1C678"
-			rewards: [{
-				id: "11B9A348B2E2970D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "591579B0A6CE39A8"
-				item: "ad_astra:ostrum_tank"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "11B9A348B2E2970D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "591579B0A6CE39A8"
+					item: "ad_astra:ostrum_tank"
+					type: "item"
+				}
+			]
 			title: "紫金储罐"
 			x: 5.0d
 			y: 7.928571428571416d
@@ -198,16 +236,20 @@
 			dependencies: ["3637B92E69D1C678"]
 			hide_dependent_lines: true
 			id: "015879F2F730B4F1"
-			rewards: [{
-				id: "3BA9677266815F2D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "781C97502EDAE007"
-				item: "cmi:space_mechanism_part"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3BA9677266815F2D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "781C97502EDAE007"
+					item: "cmi:space_mechanism_part"
+					type: "item"
+				}
+			]
 			title: "机械部件"
 			x: 9.285714285714278d
 			y: 4.571428571428555d
@@ -216,16 +258,20 @@
 			dependencies: ["015879F2F730B4F1"]
 			hide_dependent_lines: true
 			id: "7EAA8BAB3189BCD5"
-			rewards: [{
-				id: "758F04E21E160717"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "41EA670BB1072F00"
-				item: "cmi:tier_4_aviation_mechanism"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "758F04E21E160717"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "41EA670BB1072F00"
+					item: "cmi:tier_4_aviation_mechanism"
+					type: "item"
+				}
+			]
 			title: "四级航空机械"
 			x: 13.428571428571416d
 			y: 6.428571428571409d

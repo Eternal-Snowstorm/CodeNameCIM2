@@ -34,11 +34,13 @@
 			shape: "gear"
 			size: 1.8d
 			subtitle: "紧急求助!紧急求助!"
-			tasks: [{
-				id: "22D0220F20C29089"
-				title: "从航天事故生还"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "22D0220F20C29089"
+					title: "从航天事故生还"
+					type: "checkmark"
+				}
+			]
 			title: "劫后余生"
 			x: 0.0d
 			y: 0.0d
@@ -62,18 +64,22 @@
 			disable_toast: true
 			icon: "create:empty_schematic"
 			id: "1EA33F05E5B01612"
-			rewards: [{
-				count: 16
-				id: "2D13E4A26211EAD7"
-				item: "minecraft:cooked_beef"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "2D13E4A26211EAD7"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "这些是辅助你通关的工具"
-			tasks: [{
-				id: "6D6250EF55DF25ED"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6D6250EF55DF25ED"
+					type: "checkmark"
+				}
+			]
 			title: "关于思索, 任务和JEI"
 			x: 0.0d
 			y: 2.0d
@@ -97,10 +103,12 @@
 			]
 			shape: "hexagon"
 			subtitle: "完全和平且友好"
-			tasks: [{
-				id: "2F9F7E1BE7866A66"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2F9F7E1BE7866A66"
+					type: "checkmark"
+				}
+			]
 			title: "科技树"
 			x: -2.0d
 			y: -2.0d
@@ -124,10 +132,12 @@
 			]
 			shape: "hexagon"
 			subtitle: "当前版本:Beta-2.3.0"
-			tasks: [{
-				id: "79D5B1959C780861"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "79D5B1959C780861"
+					type: "checkmark"
+				}
+			]
 			title: "预发行版"
 			x: 2.0d
 			y: -2.0d
@@ -164,10 +174,12 @@
 			]
 			shape: "hexagon"
 			subtitle: "整合包开发团队"
-			tasks: [{
-				id: "4AC9E70B5E11919B"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4AC9E70B5E11919B"
+					type: "checkmark"
+				}
+			]
 			title: "CMI开发团队"
 			x: 2.0d
 			y: 0.0d
@@ -182,18 +194,22 @@
 			]
 			icon: "ftbquests:book"
 			id: "79AA74F5F585BC6B"
-			rewards: [{
-				id: "37AA8EF9463A9990"
-				item: "farmersdelight:steak_and_potatoes"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "37AA8EF9463A9990"
+					item: "farmersdelight:steak_and_potatoes"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "未完成,请注意"
-			tasks: [{
-				id: "3BA7D8532D8DD772"
-				title: "关于任务线"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3BA7D8532D8DD772"
+					title: "关于任务线"
+					type: "checkmark"
+				}
+			]
 			x: -2.0d
 			y: 2.0d
 		}
@@ -470,19 +486,23 @@
 				}
 			}
 			id: "5A4FC2CACB726A2B"
-			rewards: [{
-				count: 64
-				id: "5EA3431C9FE56D19"
-				item: "minecraft:cooked_beef"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 64
+					id: "5EA3431C9FE56D19"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "和平发育还是战斗爽?"
-			tasks: [{
-				id: "58616AF4A4680231"
-				title: "关于刷怪"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "58616AF4A4680231"
+					title: "关于刷怪"
+					type: "checkmark"
+				}
+			]
 			title: "关于难度"
 			x: 2.0d
 			y: 2.0d
@@ -496,19 +516,23 @@
 			]
 			icon: "minecraft:apple"
 			id: "30ED8BD20D50F96D"
-			rewards: [{
-				count: 4
-				id: "511E5FE18D4DEEBD"
-				item: "minecraft:cooked_beef"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "511E5FE18D4DEEBD"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "他们是制作整合包时提供了帮助的人"
-			tasks: [{
-				id: "47BA93F1301917CD"
-				title: "致谢名单"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "47BA93F1301917CD"
+					title: "致谢名单"
+					type: "checkmark"
+				}
+			]
 			x: -2.0d
 			y: 0.0d
 		}
@@ -550,11 +574,13 @@
 			]
 			shape: "hexagon"
 			subtitle: "这里是一些常见问题和解决方案"
-			tasks: [{
-				id: "6377990FF2529CEB"
-				title: "温馨提示"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6377990FF2529CEB"
+					title: "温馨提示"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: -2.0d
 		}

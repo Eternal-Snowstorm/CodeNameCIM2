@@ -11,11 +11,13 @@
 		{
 			description: ["这边更建议制作一个生物群系指南针去安山岩洞窟收集安山岩"]
 			id: "46858C4B5052EC0C"
-			rewards: [{
-				id: "1114B3F7EE4991F7"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1114B3F7EE4991F7"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "并非三废石之一"
 			tasks: [
 				{
@@ -41,26 +43,32 @@
 			dependencies: ["46858C4B5052EC0C"]
 			description: ["将熔融铁或熔融锌浇筑在安山岩粉上"]
 			id: "65F2C054D52EB96B"
-			rewards: [{
-				id: "47882DC9659E05FD"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "47882DC9659E05FD"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "安第斯合金(笑)"
-			tasks: [{
-				id: "7C61D025A76D4569"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/andesite_alloy"
+			tasks: [
+				{
+					id: "7C61D025A76D4569"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/andesite_alloy"
+						}
+						title: "任意 #forge:锭/安山合金"
+						type: "item"
 					}
+					title: "任意 #forge:ingots/andesite_alloy"
+					type: "item"
 				}
-				title: "任意 #forge:ingots/andesite_alloy"
-				type: "item"
-			}]
+			]
 			title: "安山合金"
 			x: -1.0d
 			y: 0.0d
@@ -69,17 +77,21 @@
 			dependencies: ["10C714793513B077"]
 			icon: "minecraft:iron_ingot"
 			id: "06012DC3A4BBF58B"
-			rewards: [{
-				id: "19A6913779FCE207"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "19A6913779FCE207"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "把铁或铁矿丢进炉子里"
-			tasks: [{
-				id: "0A4BA186729E732C"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0A4BA186729E732C"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
 			title: "铁锭"
 			x: 1.0d
 			y: -2.0d
@@ -88,32 +100,40 @@
 			dependencies: ["65F2C054D52EB96B"]
 			hide_dependency_lines: true
 			id: "0E6030AA8C2A8243"
-			rewards: [{
-				id: "13A14588DD83147F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "28D917CBD7AA1C33"
-				item: "create:shaft"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "13A14588DD83147F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "28D917CBD7AA1C33"
+					item: "create:shaft"
+					type: "item"
+				}
+			]
 			x: -3.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0E6030AA8C2A8243"]
 			id: "712B9101FE885629"
-			rewards: [{
-				id: "106B956B48C2AF6D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1CD1D71A1E5EB644"
-				item: "create:cogwheel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "106B956B48C2AF6D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "1CD1D71A1E5EB644"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
 			x: -3.5d
 			y: 3.0d
 		}
@@ -121,27 +141,33 @@
 			dependencies: ["0E6030AA8C2A8243"]
 			hide_dependency_lines: true
 			id: "0AEFA1A35CCA86C3"
-			rewards: [{
-				id: "541393E2F40C690E"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "795792D83B950A26"
-				item: "create:large_cogwheel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "541393E2F40C690E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "795792D83B950A26"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
 			x: -2.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["0E6030AA8C2A8243"]
 			id: "1206A5483DCDF968"
-			rewards: [{
-				id: "33FA16CA975D485E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "33FA16CA975D485E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "水车仙人"
 			tasks: [
 				{
@@ -161,34 +187,42 @@
 		{
 			dependencies: ["712B9101FE885629"]
 			id: "6E9FFFBBCA1D13B7"
-			rewards: [{
-				id: "4816E11BF5D4D896"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3FA3CF466C203E45"
-				item: "cmi:mechanical_mechanism_part"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4816E11BF5D4D896"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "3FA3CF466C203E45"
+					item: "cmi:mechanical_mechanism_part"
+					type: "item"
+				}
+			]
 			x: -3.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["6E9FFFBBCA1D13B7"]
 			id: "20308A3CE26E5D67"
-			rewards: [{
-				id: "35D55DAB07462763"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "35D55DAB07462763"
+					type: "xp"
+					xp: 100
+				}
+			]
 			shape: "gear"
 			size: 2.0d
-			tasks: [{
-				id: "54F81836CC8C9999"
-				item: "cmi:andesite_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "54F81836CC8C9999"
+					item: "cmi:andesite_mechanism"
+					type: "item"
+				}
+			]
 			title: "安山构件"
 			x: -1.0d
 			y: 4.0d
@@ -196,17 +230,21 @@
 		{
 			dependencies: ["20308A3CE26E5D67"]
 			id: "750438CC48D57EF0"
-			rewards: [{
-				id: "6DEA3606BCA178F5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6DEA3606BCA178F5"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "机械动力の神"
-			tasks: [{
-				id: "362EBFEFC0638E5D"
-				item: "create:encased_fan"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "362EBFEFC0638E5D"
+					item: "create:encased_fan"
+					type: "item"
+				}
+			]
 			x: -3.0d
 			y: 6.0d
 		}
@@ -214,11 +252,13 @@
 			dependencies: ["7FF0C3B318313C79"]
 			icon: "thermal:rubber"
 			id: "3DA43BDED8E5ECDC"
-			rewards: [{
-				id: "08B0AE3E28BEF91F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "08B0AE3E28BEF91F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "木龙头是个很好用的东西"
 			tasks: [
 				{
@@ -247,17 +287,21 @@
 			dependencies: ["3A8E9AE06B88D05E"]
 			description: ["{image:cmi:textures/images/faucet_interaction.png width:180 height:105 align:center}"]
 			id: "06FF6D3CAD3DCD8D"
-			rewards: [{
-				id: "395434D455DB3965"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "395434D455DB3965"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "浇筑口可以直接对着工作盆交互"
-			tasks: [{
-				id: "39DE61F52D5222EA"
-				item: "thermal:cured_rubber"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "39DE61F52D5222EA"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 4.0d
 		}
@@ -265,24 +309,28 @@
 			dependencies: ["730DAE94F8D751D7"]
 			hide_dependency_lines: true
 			id: "5E953238EC4CB053"
-			rewards: [{
-				id: "3AD855E453CDC4BF"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "真的可以做火药(小声咬耳朵)"
-			tasks: [{
-				id: "1818B1CF1114DD30"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/sulfur"
-					}
+			rewards: [
+				{
+					id: "3AD855E453CDC4BF"
+					type: "xp"
+					xp: 10
 				}
-				title: "硫磺粉"
-				type: "item"
-			}]
+			]
+			subtitle: "真的可以做火药(小声咬耳朵)"
+			tasks: [
+				{
+					id: "1818B1CF1114DD30"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/sulfur"
+						}
+					}
+					title: "硫磺粉"
+					type: "item"
+				}
+			]
 			title: "硫磺粉"
 			x: 1.5d
 			y: 4.0d
@@ -290,49 +338,61 @@
 		{
 			dependencies: ["20308A3CE26E5D67"]
 			id: "730DAE94F8D751D7"
-			rewards: [{
-				id: "359A6C2CE861CE13"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "359A6C2CE861CE13"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "不能磨豆浆"
-			tasks: [{
-				id: "3E7AF487F0C90851"
-				item: "create:millstone"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3E7AF487F0C90851"
+					item: "create:millstone"
+					type: "item"
+				}
+			]
 			x: -2.0d
 			y: 6.5d
 		}
 		{
 			id: "44EA87F955CC8C23"
-			rewards: [{
-				id: "1943177E8F9A0441"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1943177E8F9A0441"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "可以当盆用吗?"
-			tasks: [{
-				id: "02CE9ECE51BA909B"
-				item: "cmi:crafting_incomplete_copper_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "02CE9ECE51BA909B"
+					item: "cmi:crafting_incomplete_copper_mechanism"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 5.0d
 		}
 		{
 			id: "283906AAD8AA56E8"
-			rewards: [{
-				id: "222C1C62CDFC6AE6"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				count: 16L
-				id: "7F418EDA2B7B144E"
-				item: "create:fluid_pipe"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "222C1C62CDFC6AE6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "7F418EDA2B7B144E"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: 4.0d
 		}
@@ -346,61 +406,75 @@
 			id: "42EB8C8A978CA905"
 			shape: "gear"
 			size: 2.0d
-			tasks: [{
-				id: "3FD721764C64DDC3"
-				item: "cmi:copper_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3FD721764C64DDC3"
+					item: "cmi:copper_mechanism"
+					type: "item"
+				}
+			]
 			x: 6.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
 			id: "621969A0F0B131A6"
-			rewards: [{
-				id: "6E3C6AA3E085606A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6E3C6AA3E085606A"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.0d
 			subtitle: "橡胶, 橡胶, 更多的橡胶!"
-			tasks: [{
-				id: "73AB9A0B1A4FD96D"
-				item: "thermal:device_tree_extractor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "73AB9A0B1A4FD96D"
+					item: "thermal:device_tree_extractor"
+					type: "item"
+				}
+			]
 			x: 6.0d
 			y: 3.0d
 		}
 		{
 			id: "73210821C1E60467"
-			rewards: [{
-				id: "138E4385A9C5F459"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "567D1836BD987B12"
-				item: "minecraft:water_bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "138E4385A9C5F459"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "567D1836BD987B12"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
 			id: "2D81767BF32BE392"
-			rewards: [{
-				id: "7ABB9A593F9AC93B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7ABB9A593F9AC93B"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "2B39D793748E2BD8"
-				item: "create:spout"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2B39D793748E2BD8"
+					item: "create:spout"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 7.5d
 		}
@@ -408,69 +482,85 @@
 			dependencies: ["42EB8C8A978CA905"]
 			description: ["多方块结构 - 去按[W]寻思下怎么用"]
 			id: "4DF9116B2357D62D"
-			rewards: [{
-				id: "69280515C60DBB70"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "69280515C60DBB70"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "无限产水"
-			tasks: [{
-				id: "33A573AB9F77F2F1"
-				item: "cmi:water_pump"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "33A573AB9F77F2F1"
+					item: "cmi:water_pump"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
 			id: "0E7927D00F19EA9A"
-			rewards: [{
-				id: "48F854FA54C05118"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "429706CBC29DA5EC"
-				item: "create:hose_pulley"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "48F854FA54C05118"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "429706CBC29DA5EC"
+					item: "create:hose_pulley"
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
 			id: "24A816718AA4F697"
-			rewards: [{
-				id: "3329B9CB500916E4"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3329B9CB500916E4"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "26A76781D66EFF1C"
-				item: "create:item_drain"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "26A76781D66EFF1C"
+					item: "create:item_drain"
+					type: "item"
+				}
+			]
 			x: 6.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["6EBB0E1E97405AAB"]
 			id: "09892B803004AA1D"
-			rewards: [{
-				id: "32E202BFD9C26059"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "32E202BFD9C26059"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			subtitle: "敲得头疼"
-			tasks: [{
-				id: "15E6F3A1335DEB6B"
-				item: "cmi:iron_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "15E6F3A1335DEB6B"
+					item: "cmi:iron_mechanism"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 0.0d
 		}
@@ -479,35 +569,41 @@
 			id: "6EBB0E1E97405AAB"
 			optional: true
 			shape: "diamond"
-			tasks: [{
-				id: "1FD2DF00B6E2E64B"
-				item: "cmi:crafting_incomplete_iron_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1FD2DF00B6E2E64B"
+					item: "cmi:crafting_incomplete_iron_mechanism"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["3DA43BDED8E5ECDC"]
 			id: "0D5B2BC965C555DF"
-			rewards: [{
-				id: "7801C6827ACBD091"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "别被JEI骗了! 用刀子切"
-			tasks: [{
-				id: "26261FC9137085A9"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/rubber"
-					}
+			rewards: [
+				{
+					id: "7801C6827ACBD091"
+					type: "xp"
+					xp: 10
 				}
-				title: "橡胶板"
-				type: "item"
-			}]
+			]
+			subtitle: "别被JEI骗了! 用刀子切"
+			tasks: [
+				{
+					id: "26261FC9137085A9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/rubber"
+						}
+					}
+					title: "橡胶板"
+					type: "item"
+				}
+			]
 			title: "橡胶板"
 			x: 3.0d
 			y: 2.5d
@@ -520,16 +616,20 @@
 			]
 			icon: "cmi:cured_rubber_bucket"
 			id: "3A8E9AE06B88D05E"
-			rewards: [{
-				id: "29A27740FCA51286"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "14606E1AA45641CA"
-				item: "cmi:cured_rubber_bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "29A27740FCA51286"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "14606E1AA45641CA"
+					item: "cmi:cured_rubber_bucket"
+					type: "item"
+				}
+			]
 			title: "熔融硫化橡胶"
 			x: 3.0d
 			y: 4.0d
@@ -538,17 +638,21 @@
 			description: ["我想你已经有一个合适的定居点了"]
 			icon: "create:goggles"
 			id: "76463379A8192794"
-			rewards: [{
-				id: "7B218E8506EA4B10"
-				item: "cmi:initial_item_kit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7B218E8506EA4B10"
+					item: "cmi:initial_item_kit"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			subtitle: "勇敢去做"
-			tasks: [{
-				id: "6E602D46F137513C"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6E602D46F137513C"
+					type: "checkmark"
+				}
+			]
 			title: "创!造!模!式!"
 			x: -3.0d
 			y: 0.5d
@@ -556,17 +660,21 @@
 		{
 			dependencies: ["20308A3CE26E5D67"]
 			id: "60721FA3D428FDEF"
-			rewards: [{
-				id: "0BCE4D76BD1A3B12"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0BCE4D76BD1A3B12"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "可以躺在上面刮痧吗"
-			tasks: [{
-				id: "50AA3131CC5B74D3"
-				item: "vintageimprovements:belt_grinder"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "50AA3131CC5B74D3"
+					item: "vintageimprovements:belt_grinder"
+					type: "item"
+				}
+			]
 			x: -1.0d
 			y: 6.5d
 		}
@@ -574,28 +682,34 @@
 			dependencies: ["09892B803004AA1D"]
 			id: "71371D8C476BF1C4"
 			subtitle: "别忘了把它填满"
-			tasks: [{
-				id: "439B800146FFE81F"
-				item: "create:empty_blaze_burner"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "439B800146FFE81F"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
 			id: "511A9A1AAB98500B"
-			rewards: [{
-				id: "5179FC390CC1CC8A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5179FC390CC1CC8A"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.5d
-			tasks: [{
-				id: "0851AC598C9779C3"
-				item: "vintageimprovements:vacuum_chamber"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0851AC598C9779C3"
+					item: "vintageimprovements:vacuum_chamber"
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: 7.5d
 		}
@@ -621,12 +735,17 @@
 			shape: "circle"
 			size: 2.0d
 			subtitle: "您才是真正的水车仙人!"
-			tasks: [{
-				count: 512L
-				id: "78BDC9CD6B286BD0"
-				item: { Count: 512, id: "create:large_water_wheel" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 512L
+					id: "78BDC9CD6B286BD0"
+					item: {
+						Count: 512
+						id: "create:large_water_wheel"
+					}
+					type: "item"
+				}
+			]
 			x: -1.0d
 			y: 2.0d
 		}
@@ -634,11 +753,13 @@
 			dependencies: ["20308A3CE26E5D67"]
 			icon: "create:deployer"
 			id: "4E081FA1580EAAF9"
-			rewards: [{
-				id: "1304B988649CA39E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1304B988649CA39E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [
 				{
 					id: "573A03296F231E85"
@@ -658,11 +779,13 @@
 			dependencies: ["20308A3CE26E5D67"]
 			icon: "create:mechanical_press"
 			id: "680ED87569F99AF4"
-			rewards: [{
-				id: "7185039BF0D8AD94"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7185039BF0D8AD94"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [
 				{
 					id: "081042A868062C01"
@@ -686,11 +809,13 @@
 			]
 			icon: "thermal:rubberwood_log"
 			id: "7FF0C3B318313C79"
-			rewards: [{
-				id: "003312AE2862308A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "003312AE2862308A"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "应该不难找"
 			tasks: [
 				{
@@ -719,17 +844,21 @@
 		{
 			dependencies: ["65F2C054D52EB96B"]
 			id: "10C714793513B077"
-			rewards: [{
-				id: "273C33791CF28976"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "273C33791CF28976"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "更高的熔炼温度"
-			tasks: [{
-				id: "745DFE839C30DDA1"
-				item: "minecraft:blast_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "745DFE839C30DDA1"
+					item: "minecraft:blast_furnace"
+					type: "item"
+				}
+			]
 			x: 1.0d
 			y: 0.0d
 		}
@@ -738,50 +867,60 @@
 			icon: "tconstruct:molten_iron_bucket"
 			id: "7510D0C5F36D0F1E"
 			subtitle: "把铁丢进熔化炉!"
-			tasks: [{
-				id: "70FCC35ADBA19D21"
-				title: "熔融铁"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "70FCC35ADBA19D21"
+					title: "熔融铁"
+					type: "checkmark"
+				}
+			]
 			x: 3.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["64E57AAB64922B1E"]
 			id: "2CA18D2367DC42BD"
-			rewards: [{
-				id: "60058FC1A44C313E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "60058FC1A44C313E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "熊熊燃烧的火苗"
-			tasks: [{
-				id: "04083E89DFE4327E"
-				item: "cmi:combustion_medium_block"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "04083E89DFE4327E"
+					item: "cmi:combustion_medium_block"
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: 5.5d
 		}
 		{
 			id: "64E57AAB64922B1E"
-			rewards: [{
-				id: "29AE447EB7362913"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "待会就知道要拿来干嘛了"
-			tasks: [{
-				id: "5CB1303DAAF51292"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:storage_blocks/coal"
-					}
+			rewards: [
+				{
+					id: "29AE447EB7362913"
+					type: "xp"
+					xp: 10
 				}
-				type: "item"
-			}]
+			]
+			subtitle: "待会就知道要拿来干嘛了"
+			tasks: [
+				{
+					id: "5CB1303DAAF51292"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/coal"
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "煤炭块或木炭块"
 			x: 3.0d
 			y: 7.0d

@@ -5,25 +5,29 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:antimatter_mechanism"
 	id: "30C24A69E6CE8424"
-	images: [{
-		height: 28.32d
-		image: "cmi:textures/images/background/antimatter.png"
-		rotation: 0.0d
-		width: 40.86d
-		x: 1.5d
-		y: 1.5d
-	}]
+	images: [
+		{
+			height: 28.32d
+			image: "cmi:textures/images/background/antimatter.png"
+			rotation: 0.0d
+			width: 40.86d
+			x: 1.5d
+			y: 1.5d
+		}
+	]
 	order_index: 28
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "03F0FCAFC3C6712A"
-			tasks: [{
-				id: "28F4151B181E320F"
-				title: "压缩"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "28F4151B181E320F"
+					title: "压缩"
+					type: "checkmark"
+				}
+			]
 			x: -6.998571428571417d
 			y: -8.91142857142858d
 		}
@@ -31,16 +35,20 @@
 			dependencies: ["03F0FCAFC3C6712A"]
 			hide_dependent_lines: true
 			id: "3FB34F0B99B4712A"
-			rewards: [{
-				id: "6B0FEC77C231A76A"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "132F4D9F8417BC3C"
-				item: "ae2:matter_ball"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6B0FEC77C231A76A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "132F4D9F8417BC3C"
+					item: "ae2:matter_ball"
+					type: "item"
+				}
+			]
 			title: "物质球"
 			x: -9.354285714285702d
 			y: -4.232857142857156d
@@ -49,11 +57,13 @@
 			dependencies: ["3FB34F0B99B4712A"]
 			hide_dependent_lines: true
 			id: "786CF4F47346C148"
-			tasks: [{
-				id: "306CF2686355D7B8"
-				title: "粒子碰撞"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "306CF2686355D7B8"
+					title: "粒子碰撞"
+					type: "checkmark"
+				}
+			]
 			x: -6.638571428571417d
 			y: 0.9099999999999824d
 		}
@@ -61,16 +71,20 @@
 			dependencies: ["786CF4F47346C148"]
 			hide_dependent_lines: true
 			id: "455A713A4AD4C5D7"
-			rewards: [{
-				id: "6769C78C3C1C02B6"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "426D6EFB07E3F286"
-				item: "ae2:singularity"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6769C78C3C1C02B6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "426D6EFB07E3F286"
+					item: "ae2:singularity"
+					type: "item"
+				}
+			]
 			title: "奇点"
 			x: -1.2800000000000011d
 			y: 3.0528571428571283d
@@ -79,11 +93,13 @@
 			dependencies: ["455A713A4AD4C5D7"]
 			hide_dependent_lines: true
 			id: "4AB432278E33FFAC"
-			tasks: [{
-				id: "3285AB786A467E91"
-				title: "压印"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3285AB786A467E91"
+					title: "压印"
+					type: "checkmark"
+				}
+			]
 			x: 4.005714285714284d
 			y: 6.8438095238095045d
 		}
@@ -94,22 +110,26 @@
 				id: "mekanism:creative_chemical_tank"
 				tag: {
 					mekData: {
-						GasTanks: [{
-							Tank: 0b
-							stored: {
-								amount: 9223372036854775807L
-								gasName: "mekanism:polonium"
+						GasTanks: [
+							{
+								Tank: 0b
+								stored: {
+									amount: 9223372036854775807L
+									gasName: "mekanism:polonium"
+								}
 							}
-						}]
+						]
 					}
 				}
 			}
 			id: "64F2D9237A417803"
-			tasks: [{
-				id: "177B0A753D3E4A88"
-				title: "钋"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "177B0A753D3E4A88"
+					title: "钋"
+					type: "checkmark"
+				}
+			]
 			x: -5.565714285714279d
 			y: -3.448571428571455d
 		}
@@ -117,11 +137,13 @@
 			dependencies: ["64F2D9237A417803"]
 			hide_dependent_lines: true
 			id: "47086F44DA78590D"
-			tasks: [{
-				id: "74B2954F79C457BD"
-				title: "SPS"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "74B2954F79C457BD"
+					title: "SPS"
+					type: "checkmark"
+				}
+			]
 			x: -0.9942857142856951d
 			y: -3.717142857142882d
 		}
@@ -133,22 +155,26 @@
 				id: "mekanism:creative_chemical_tank"
 				tag: {
 					mekData: {
-						GasTanks: [{
-							Tank: 0b
-							stored: {
-								amount: 9223372036854775807L
-								gasName: "mekanism:antimatter"
+						GasTanks: [
+							{
+								Tank: 0b
+								stored: {
+									amount: 9223372036854775807L
+									gasName: "mekanism:antimatter"
+								}
 							}
-						}]
+						]
 					}
 				}
 			}
 			id: "2C24FAFBDA02E124"
-			tasks: [{
-				id: "56EC424D610FE63E"
-				title: "反物质"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "56EC424D610FE63E"
+					title: "反物质"
+					type: "checkmark"
+				}
+			]
 			x: 4.72000000000002d
 			y: -2.2714285714285936d
 		}
@@ -156,11 +182,13 @@
 			dependencies: ["2C24FAFBDA02E124"]
 			hide_dependent_lines: true
 			id: "67A33A7F3C63AE88"
-			tasks: [{
-				id: "4BDBA4FFB66FEB39"
-				title: "化学结晶"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4BDBA4FFB66FEB39"
+					title: "化学结晶"
+					type: "checkmark"
+				}
+			]
 			x: 5.29142857142859d
 			y: 3.299999999999983d
 		}
@@ -171,16 +199,20 @@
 			]
 			hide_dependent_lines: true
 			id: "0582D4E534EF3398"
-			rewards: [{
-				id: "62EB9E3A13E7B054"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "42BD08AF731D4C0A"
-				item: "mekanism:pellet_antimatter"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "62EB9E3A13E7B054"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "42BD08AF731D4C0A"
+					item: "mekanism:pellet_antimatter"
+					type: "item"
+				}
+			]
 			title: "反物质粒"
 			x: 9.291428571428604d
 			y: 5.014285714285691d
@@ -189,16 +221,20 @@
 			dependencies: ["0582D4E534EF3398"]
 			hide_dependent_lines: true
 			id: "703F8CC3820EB0B4"
-			rewards: [{
-				id: "566DFBB156B5C4FC"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4E9438DE6952DEDF"
-				item: "cmi:quantum_mechanism_part"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "566DFBB156B5C4FC"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4E9438DE6952DEDF"
+					item: "cmi:quantum_mechanism_part"
+					type: "item"
+				}
+			]
 			title: "机械部件"
 			x: 14.720000000000034d
 			y: 7.174285714285688d
@@ -207,16 +243,20 @@
 			dependencies: ["703F8CC3820EB0B4"]
 			hide_dependent_lines: true
 			id: "56FFEE7F05B99B4C"
-			rewards: [{
-				id: "72AE2A5BFB7CF613"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4357551FA5C6CD68"
-				item: "cmi:antimatter_mechanism"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "72AE2A5BFB7CF613"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4357551FA5C6CD68"
+					item: "cmi:antimatter_mechanism"
+					type: "item"
+				}
+			]
 			title: "反物质机械"
 			x: 16.64857142857145d
 			y: 7.638571428571396d
