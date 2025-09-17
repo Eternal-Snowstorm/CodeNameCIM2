@@ -24,7 +24,7 @@ simpleOreModel("aaa", "aaa")
 
 StartupEvents.registry("block", (event) => {
 	event.create("cmi:aaa")
-		// 着色的层是矿石层, 也就是0后面的1
+		// 着色的层是矿石层, 也就是0(background)后面的1(ore)
 		.color(1, 0xFFFFFF)
 		// 调用模型文件
 		.modelJson(simpleOreModel("moon", "ore_1"))
