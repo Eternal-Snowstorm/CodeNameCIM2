@@ -1,6 +1,16 @@
 let ores = []
 const PICKAXE = global.ToolType["pickaxe"]
 
+/* 最简单的子模型
+{
+    "parent": "cmi:block/ore/simple",
+    "textures": {
+        "background": "minecraft:block/stone",
+        "ore": "minecraft:block/iron_ore"
+    }
+}
+*/
+
 /**
  * 函数封装
  * @param {string} name 注册ID
