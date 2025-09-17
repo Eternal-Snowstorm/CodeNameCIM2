@@ -95,6 +95,9 @@ StartupEvents.registry("block", (event) => {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
 					.color(1, ore.color)
+					.item((item) => {
+						item.color(ore.color)
+					})
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
@@ -108,6 +111,9 @@ StartupEvents.registry("block", (event) => {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
 					.color(1, ore.color)
+					.item((item) => {
+						item.color(ore.color)
+					})
 					.soundType(SoundType.DEEPSLATE)
 					.hardness(ore.hardness + 1.5)
 					.resistance(ore.hardness + 1.5)
@@ -121,6 +127,9 @@ StartupEvents.registry("block", (event) => {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
 					.color(1, ore.color)
+					.item((item) => {
+						item.color(ore.color)
+					})
 					.soundType(SoundType.NETHER_ORE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
@@ -134,6 +143,9 @@ StartupEvents.registry("block", (event) => {
 				event.create(`${global.namespace}:${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
 					.color(1, ore.color)
+					.item((item) => {
+						item.color(ore.color)
+					})
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
