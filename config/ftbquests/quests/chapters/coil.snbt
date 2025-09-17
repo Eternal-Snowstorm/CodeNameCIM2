@@ -5,30 +5,36 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:coil_mechanism"
 	id: "5EE028B792792DC3"
-	images: [{
-		height: 37.68d
-		image: "cmi:textures/images/background/coil.png"
-		rotation: 0.0d
-		width: 88.2d
-		x: -1.5d
-		y: -2.0d
-	}]
+	images: [
+		{
+			height: 37.68d
+			image: "cmi:textures/images/background/coil.png"
+			rotation: 0.0d
+			width: 88.2d
+			x: -1.5d
+			y: -2.0d
+		}
+	]
 	order_index: 29
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "4775A842990D19EB"
-			rewards: [{
-				id: "62519104619DCF14"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "31917449E788A4F3"
-				item: "cmi:light_engineering_mechanism"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "62519104619DCF14"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "31917449E788A4F3"
+					item: "cmi:light_engineering_mechanism"
+					type: "item"
+				}
+			]
 			title: "轻型工程机械"
 			x: -30.92857142857143d
 			y: -3.5d
@@ -36,16 +42,20 @@
 		{
 			hide_dependent_lines: true
 			id: "45522B57DFA9CFD3"
-			rewards: [{
-				id: "41F19B2085BAAB33"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4DBCF29B2737B5E2"
-				item: "minecraft:copper_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "41F19B2085BAAB33"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "4DBCF29B2737B5E2"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+			]
 			title: "铜锭"
 			x: -27.400000000000006d
 			y: -4.642857142857146d
@@ -54,11 +64,13 @@
 			dependencies: ["45522B57DFA9CFD3"]
 			hide_dependent_lines: true
 			id: "484A8F54DDA53E14"
-			tasks: [{
-				id: "0CB8BC8F69AE5819"
-				title: "金属丝冲压"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "0CB8BC8F69AE5819"
+					title: "金属丝冲压"
+					type: "checkmark"
+				}
+			]
 			x: -19.300000000000026d
 			y: -1.642857142857146d
 		}
@@ -66,11 +78,13 @@
 			dependencies: ["2D1A1471A77D5740"]
 			hide_dependent_lines: true
 			id: "014169D9093B9C20"
-			tasks: [{
-				id: "1E33C55B88A34597"
-				title: "金属丝冲压"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "1E33C55B88A34597"
+					title: "金属丝冲压"
+					type: "checkmark"
+				}
+			]
 			x: -17.985714285714323d
 			y: -7.0714285714285765d
 		}
@@ -78,11 +92,13 @@
 			dependencies: ["0070C38E9E4A1C2E"]
 			hide_dependent_lines: true
 			id: "31CE7127BE9E5AC7"
-			tasks: [{
-				id: "40FBAA2998FAEC02"
-				title: "金属丝冲压"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "40FBAA2998FAEC02"
+					title: "金属丝冲压"
+					type: "checkmark"
+				}
+			]
 			x: -16.81428571428576d
 			y: -11.071428571428577d
 		}
@@ -90,34 +106,42 @@
 			dependencies: ["73AACD632305A730"]
 			hide_dependent_lines: true
 			id: "314797FFBBF2D58D"
-			tasks: [{
-				id: "1B876A97B16B4C32"
-				title: "金属丝冲压"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "1B876A97B16B4C32"
+					title: "金属丝冲压"
+					type: "checkmark"
+				}
+			]
 			x: -7.500000000000043d
 			y: -9.92857142857143d
 		}
 		{
 			hide_dependent_lines: true
 			id: "2D1A1471A77D5740"
-			rewards: [{
-				id: "6CFB552D055D6368"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2D03123629B25AC5"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/electrum"
-					}
+			rewards: [
+				{
+					id: "6CFB552D055D6368"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:ingots/electrum"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "2D03123629B25AC5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/electrum"
+						}
+						title: "任意 #forge:锭/琥珀金"
+						type: "item"
+					}
+					title: "任意 #forge:ingots/electrum"
+					type: "item"
+				}
+			]
 			title: "琥珀金锭"
 			x: -26.071428571428605d
 			y: -9.802857142857142d
@@ -125,23 +149,29 @@
 		{
 			hide_dependent_lines: true
 			id: "0070C38E9E4A1C2E"
-			rewards: [{
-				id: "7F0E32AA7042CD15"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7B06543B736EE8C9"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/aluminum"
-					}
+			rewards: [
+				{
+					id: "7F0E32AA7042CD15"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:ingots/aluminum"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "7B06543B736EE8C9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/aluminum"
+						}
+						title: "任意 #forge:锭/铝"
+						type: "item"
+					}
+					title: "任意 #forge:ingots/aluminum"
+					type: "item"
+				}
+			]
 			title: "铝锭"
 			x: -23.78571428571432d
 			y: -13.462857142857139d
@@ -149,23 +179,29 @@
 		{
 			hide_dependent_lines: true
 			id: "73AACD632305A730"
-			rewards: [{
-				id: "683FF7097BD0324D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "01D04224A30EE153"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/steel"
-					}
+			rewards: [
+				{
+					id: "683FF7097BD0324D"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:ingots/steel"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "01D04224A30EE153"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/steel"
+						}
+						title: "任意 #forge:锭/钢"
+						type: "item"
+					}
+					title: "任意 #forge:ingots/steel"
+					type: "item"
+				}
+			]
 			title: "钢锭"
 			x: -8.928571428571459d
 			y: -8.479999999999997d
@@ -177,23 +213,29 @@
 			]
 			hide_dependent_lines: true
 			id: "04F521D3BE469ACD"
-			rewards: [{
-				id: "3F4334CA9635AB31"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "67DAC6FC618A3374"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:wires/copper"
-					}
+			rewards: [
+				{
+					id: "3F4334CA9635AB31"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:wires/copper"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "67DAC6FC618A3374"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:wires/copper"
+						}
+						title: "任意 #forge:线/铜"
+						type: "item"
+					}
+					title: "任意 #forge:线材/铜"
+					type: "item"
+				}
+			]
 			title: "铜线"
 			x: -7.35714285714289d
 			y: 5.217142857142868d
@@ -205,23 +247,29 @@
 			]
 			hide_dependent_lines: true
 			id: "62B5E2688B157B6B"
-			rewards: [{
-				id: "0CDD5FDE1840969B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "60EF2FF8067D8822"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:wires/electrum"
-					}
+			rewards: [
+				{
+					id: "0CDD5FDE1840969B"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:wires/electrum"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "60EF2FF8067D8822"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:wires/electrum"
+						}
+						title: "任意 #forge:线/琥珀金"
+						type: "item"
+					}
+					title: "任意 #forge:线材/琥珀金"
+					type: "item"
+				}
+			]
 			title: "琥珀金线"
 			x: 0.07142857142854098d
 			y: 0.20000000000000995d
@@ -233,18 +281,22 @@
 			]
 			hide_dependent_lines: true
 			id: "300E4DEF2E61369B"
-			tasks: [{
-				id: "09B1F949160D4DBB"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:wires/aluminum"
+			tasks: [
+				{
+					id: "09B1F949160D4DBB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:wires/aluminum"
+						}
+						title: "任意 #forge:线/铝"
+						type: "item"
 					}
+					title: "任意 #forge:线材/铝"
+					type: "item"
 				}
-				title: "任意 #forge:wires/aluminum"
-				type: "item"
-			}]
+			]
 			title: "铝线"
 			x: 10.499999999999957d
 			y: 3.6114285714285828d
@@ -256,23 +308,29 @@
 			]
 			hide_dependent_lines: true
 			id: "5B77C7D46983B62E"
-			rewards: [{
-				id: "68B2A3B651B86B42"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4E644347DD8CF389"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:wires/steel"
-					}
+			rewards: [
+				{
+					id: "68B2A3B651B86B42"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:wires/steel"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "4E644347DD8CF389"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:wires/steel"
+						}
+						title: "任意 #forge:线/钢"
+						type: "item"
+					}
+					title: "任意 #forge:线材/钢"
+					type: "item"
+				}
+			]
 			title: "钢线"
 			x: 17.928571428571388d
 			y: -2.3342857142856914d
@@ -281,16 +339,20 @@
 			dependencies: ["5B77C7D46983B62E"]
 			hide_dependent_lines: true
 			id: "63B533DFF0AAD2AD"
-			rewards: [{
-				id: "7CD2D1263AEFCCFC"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "54360E29F3C3FFE9"
-				item: "cmi:coil_mechanism"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7CD2D1263AEFCCFC"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "54360E29F3C3FFE9"
+					item: "cmi:coil_mechanism"
+					type: "item"
+				}
+			]
 			title: "线圈机械"
 			x: 27.21428571428568d
 			y: 1.5771428571428743d

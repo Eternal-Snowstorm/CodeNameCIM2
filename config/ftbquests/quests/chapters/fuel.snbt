@@ -12,156 +12,188 @@
 			dependencies: ["18237D913486FE33"]
 			icon: "minecraft:coal"
 			id: "2D245A409C2C190B"
-			rewards: [{
-				id: "2264475D2DE77C7F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2264475D2DE77C7F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "来看看有什么好的燃料?"
-			tasks: [{
-				id: "5E01C3C84D5948D9"
-				title: "燃料?"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5E01C3C84D5948D9"
+					title: "燃料?"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["2D245A409C2C190B"]
 			id: "55952D9B9D8E8F21"
-			rewards: [{
-				id: "05DD24F8CF5BBEB1"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5ABFC7887FB01C7C"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
-					}
+			rewards: [
+				{
+					id: "05DD24F8CF5BBEB1"
+					type: "xp"
+					xp: 10
 				}
-				title: "原木"
-				type: "item"
-			}]
+			]
+			tasks: [
+				{
+					id: "5ABFC7887FB01C7C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "原木"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["55952D9B9D8E8F21"]
 			id: "4930FB8565659CF5"
-			rewards: [{
-				id: "7B28F4E8A7B59C0D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7B28F4E8A7B59C0D"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "原木粉碎"
-			tasks: [{
-				id: "7BBC98D119AFC393"
-				item: "createdieselgenerators:wood_chip"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7BBC98D119AFC393"
+					item: "createdieselgenerators:wood_chip"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["4930FB8565659CF5"]
 			id: "5A90B92B1CCF14B8"
-			rewards: [{
-				id: "28997BE9A7D5728F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "28997BE9A7D5728F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "辊压一次"
-			tasks: [{
-				id: "7784C7233147A465"
-				item: "cmi:wood_chip_briquette"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7784C7233147A465"
+					item: "cmi:wood_chip_briquette"
+					type: "item"
+				}
+			]
 			x: 7.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["5A90B92B1CCF14B8"]
 			id: "727E544121C1E389"
-			rewards: [{
-				id: "58D2B9155B373748"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "58D2B9155B373748"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "再压缩一次"
-			tasks: [{
-				id: "71C11011531B08A3"
-				item: "cmi:densely_packed_wood_chip_briquette"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "71C11011531B08A3"
+					item: "cmi:densely_packed_wood_chip_briquette"
+					type: "item"
+				}
+			]
 			x: 9.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["727E544121C1E389"]
 			id: "494A3AF72096707C"
-			rewards: [{
-				id: "2D1F23F1F735EA84"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2D1F23F1F735EA84"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "最后和杂酚油一起再压一次"
-			tasks: [{
-				id: "762658767AEED461"
-				item: "cmi:creosote_wood_chip_briquette"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "762658767AEED461"
+					item: "cmi:creosote_wood_chip_briquette"
+					type: "item"
+				}
+			]
 			x: 12.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["55952D9B9D8E8F21"]
 			id: "0CE693D306C1B691"
-			rewards: [{
-				id: "5713E685D9E94D33"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "还是最朴素的木炭(但是被削了)"
-			tasks: [{
-				id: "37DA293DB5FD4D7F"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:charcoal"
-					}
+			rewards: [
+				{
+					id: "5713E685D9E94D33"
+					type: "xp"
+					xp: 10
 				}
-				title: "木炭"
-				type: "item"
-			}]
+			]
+			subtitle: "还是最朴素的木炭(但是被削了)"
+			tasks: [
+				{
+					id: "37DA293DB5FD4D7F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:charcoal"
+						}
+					}
+					title: "木炭"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["0CE693D306C1B691"]
 			id: "4E1C39C56CD52564"
-			rewards: [{
-				id: "7539C9E05F1764A6"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "打成粉能烧更久"
-			tasks: [{
-				id: "267B425EF2E478A3"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/charcoal"
-					}
+			rewards: [
+				{
+					id: "7539C9E05F1764A6"
+					type: "xp"
+					xp: 10
 				}
-				title: "木炭粉"
-				type: "item"
-			}]
+			]
+			subtitle: "打成粉能烧更久"
+			tasks: [
+				{
+					id: "267B425EF2E478A3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/charcoal"
+						}
+					}
+					title: "木炭粉"
+					type: "item"
+				}
+			]
 			title: "木炭粉"
 			x: 7.0d
 			y: -4.0d
@@ -181,28 +213,32 @@
 						Count: 1
 						id: "minecraft:enchanted_book"
 						tag: {
-							StoredEnchantments: [{
-								id: "minecraft:fortune"
-								lvl: 3s
-							}]
+							StoredEnchantments: [
+								{
+									id: "minecraft:fortune"
+									lvl: 3s
+								}
+							]
 						}
 					}
 					type: "item"
 				}
 			]
 			subtitle: "一种产量极高的燃料"
-			tasks: [{
-				id: "09851817940F4AAE"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "cmi:peat_gen"
+			tasks: [
+				{
+					id: "09851817940F4AAE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "cmi:peat_gen"
+						}
 					}
+					title: "泥炭"
+					type: "item"
 				}
-				title: "泥炭"
-				type: "item"
-			}]
+			]
 			x: 2.0d
 			y: 2.0d
 		}
@@ -210,24 +246,28 @@
 			dependencies: ["0CE693D306C1B691"]
 			description: ["煤炭也可以烧成焦炭"]
 			id: "12FAE452591719C6"
-			rewards: [{
-				id: "2E48459F498A2E75"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "烧的更久"
-			tasks: [{
-				id: "2E41429B7D22CCDF"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:coal_coke"
-					}
+			rewards: [
+				{
+					id: "2E48459F498A2E75"
+					type: "xp"
+					xp: 10
 				}
-				title: "焦炭"
-				type: "item"
-			}]
+			]
+			subtitle: "烧的更久"
+			tasks: [
+				{
+					id: "2E41429B7D22CCDF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:coal_coke"
+						}
+					}
+					title: "焦炭"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: -6.5d
 		}

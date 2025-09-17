@@ -17,17 +17,21 @@
 		{
 			icon: "create:wrench"
 			id: "714D1AC6D07BEEC0"
-			rewards: [{
-				id: "2655761D7F974CC2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2655761D7F974CC2"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "超多实用工具"
-			tasks: [{
-				id: "48D573EC7FE00A91"
-				title: "一些实用工具"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "48D573EC7FE00A91"
+					title: "一些实用工具"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: 1.0d
 		}
@@ -50,18 +54,20 @@
 				}
 			]
 			subtitle: "不能拿来抡人"
-			tasks: [{
-				id: "442E57867A50ED37"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "constructionwand:wand"
+			tasks: [
+				{
+					id: "442E57867A50ED37"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "constructionwand:wand"
+						}
 					}
+					title: "建筑手杖"
+					type: "item"
 				}
-				title: "建筑手杖"
-				type: "item"
-			}]
+			]
 			x: 4.0d
 			y: 7.0d
 		}
@@ -136,11 +142,13 @@
 				}
 			]
 			subtitle: "这个不可以吃"
-			tasks: [{
-				id: "16474AE01A0452B5"
-				item: "functionalstorage:iron_downgrade"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "16474AE01A0452B5"
+					item: "functionalstorage:iron_downgrade"
+					type: "item"
+				}
+			]
 			x: 6.0d
 			y: 3.0d
 		}
@@ -167,18 +175,20 @@
 				}
 			]
 			subtitle: "存储的好手段"
-			tasks: [{
-				id: "50F32AC335DB631E"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "functionalstorage:drawer"
+			tasks: [
+				{
+					id: "50F32AC335DB631E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "functionalstorage:drawer"
+						}
 					}
+					title: "抽屉"
+					type: "item"
 				}
-				title: "抽屉"
-				type: "item"
-			}]
+			]
 			x: 0.0d
 			y: 3.0d
 		}
@@ -207,11 +217,13 @@
 				}
 			]
 			subtitle: "没有黄铜时的过滤神器"
-			tasks: [{
-				id: "4DCE9FB6C29C2B4A"
-				item: "functionalstorage:configuration_tool"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4DCE9FB6C29C2B4A"
+					item: "functionalstorage:configuration_tool"
+					type: "item"
+				}
+			]
 			x: 10.0d
 			y: 3.0d
 		}
@@ -282,11 +294,13 @@
 				}
 			]
 			subtitle: "妈妈再也不怕我产能过剩了"
-			tasks: [{
-				id: "380D891EA57D8A79"
-				item: "functionalstorage:void_upgrade"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "380D891EA57D8A79"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+			]
 			x: 8.0d
 			y: 3.0d
 		}
@@ -303,11 +317,13 @@
 			hide_dependency_lines: true
 			icon: "steampowered:cast_iron_flywheel"
 			id: "38472ADBCFC92083"
-			rewards: [{
-				id: "57B448C721039A9F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "57B448C721039A9F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "超大应力来源"
 			tasks: [
 				{
@@ -350,11 +366,13 @@
 			hide_dependency_lines: true
 			icon: "steampowered:cast_iron_burner"
 			id: "243EF0B9E933D85A"
-			rewards: [{
-				id: "4A87A56EAFEA81C5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4A87A56EAFEA81C5"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "蒸汽产出设备"
 			tasks: [
 				{
@@ -394,17 +412,21 @@
 			]
 			hide_dependency_lines: true
 			id: "5E52B40EB76B5C84"
-			rewards: [{
-				id: "1BC96651A96CB49B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1BC96651A96CB49B"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "清理垃圾和流体的好手段"
-			tasks: [{
-				id: "27B5F94D96D252FE"
-				item: "thermal:device_nullifier"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "27B5F94D96D252FE"
+					item: "thermal:device_nullifier"
+					type: "item"
+				}
+			]
 			x: 4.0d
 			y: 5.0d
 		}
@@ -419,23 +441,27 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "7CF3605CD32CCEED"
-			rewards: [{
-				id: "433B4A0FB4FC08AA"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "找东西的好帮手"
-			tasks: [{
-				id: "1773E438C3EB9B3B"
-				item: {
-					Count: 1
-					id: "scannable:scanner"
-					tag: {
-						energy: 10000000
-					}
+			rewards: [
+				{
+					id: "433B4A0FB4FC08AA"
+					type: "xp"
+					xp: 10
 				}
-				type: "item"
-			}]
+			]
+			subtitle: "找东西的好帮手"
+			tasks: [
+				{
+					id: "1773E438C3EB9B3B"
+					item: {
+						Count: 1
+						id: "scannable:scanner"
+						tag: {
+							energy: 10000000
+						}
+					}
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 7.0d
 		}
@@ -444,24 +470,28 @@
 			description: ["龙头可以很方便的获取橡胶, 但是代价就是会损害, 并且树干有概率变成去皮原木"]
 			hide_dependency_lines: true
 			id: "7ABC764F1F79CB4E"
-			rewards: [{
-				id: "74A16B24C0301174"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "橡胶获取"
-			tasks: [{
-				id: "2958A72C4C03C715"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "cmi:faucet"
-					}
+			rewards: [
+				{
+					id: "74A16B24C0301174"
+					type: "xp"
+					xp: 10
 				}
-				title: "龙头"
-				type: "item"
-			}]
+			]
+			subtitle: "橡胶获取"
+			tasks: [
+				{
+					id: "2958A72C4C03C715"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "cmi:faucet"
+						}
+					}
+					title: "龙头"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: 7.0d
 		}
@@ -473,24 +503,28 @@
 			description: ["搭配输出输入升级使用有奇效"]
 			hide_dependency_lines: true
 			id: "15080FCC44C718DD"
-			rewards: [{
-				id: "4B5E173031563764"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "比流体储罐好用一百亿倍"
-			tasks: [{
-				id: "4AF4B44DD243B23F"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "functionalstorage:fluid_drawer"
-					}
+			rewards: [
+				{
+					id: "4B5E173031563764"
+					type: "xp"
+					xp: 10
 				}
-				title: "流体抽屉"
-				type: "item"
-			}]
+			]
+			subtitle: "比流体储罐好用一百亿倍"
+			tasks: [
+				{
+					id: "4AF4B44DD243B23F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "functionalstorage:fluid_drawer"
+						}
+					}
+					title: "流体抽屉"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: 3.0d
 		}
@@ -499,61 +533,69 @@
 			hide_dependency_lines: true
 			icon: "create:brass_hand"
 			id: "217440E1A1A049D3"
-			rewards: [{
-				id: "360877202A4E3763"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "360877202A4E3763"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "怎么可能没有整理"
-			tasks: [{
-				id: "0E1EAD2AD1770131"
-				title: "整合包内自带中键整理Mod"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "0E1EAD2AD1770131"
+					title: "整合包内自带中键整理Mod"
+					type: "checkmark"
+				}
+			]
 			title: "关于整理"
 			x: 6.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
-			description: ["灌注液态超经验获得无限耐久！"]
+			description: ["灌注液态超经验获得无限耐久!"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "553F8AFDC9BAC40F"
 			subtitle: "液态超经验的力量"
-			tasks: [{
-				id: "5E6DC322D45F40EF"
-				item: {
-					Count: 1
-					id: "immersiveengineering:graphite_electrode"
-					tag: {
-						graphDmg: 0
+			tasks: [
+				{
+					id: "5E6DC322D45F40EF"
+					item: {
+						Count: 1
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							graphDmg: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			title: "无限石墨电极"
 			x: 8.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
-			description: ["灌注液态超经验获得无限耐久！"]
+			description: ["灌注液态超经验获得无限耐久!"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "0D920683691D237D"
 			subtitle: "液态超经验的力量"
-			tasks: [{
-				id: "4DD3608387E0F186"
-				item: {
-					Count: 1
-					id: "cmi:super_knife"
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "4DD3608387E0F186"
+					item: {
+						Count: 1
+						id: "cmi:super_knife"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			x: 10.0d
 			y: 7.0d
 		}
@@ -567,12 +609,14 @@
 			hide_dependent_lines: true
 			icon: "immersiveengineering:earmuffs"
 			id: "6219A68A3A7C1876"
-			subtitle: "把世界调成静音，聆听主机的轰鸣（不是"
-			tasks: [{
-				id: "74725548CEEF2EF4"
-				title: "OK"
-				type: "checkmark"
-			}]
+			subtitle: "把世界调成静音,聆听主机的轰鸣(不是"
+			tasks: [
+				{
+					id: "74725548CEEF2EF4"
+					title: "确认"
+					type: "checkmark"
+				}
+			]
 			title: "ESM"
 			x: 0.0d
 			y: 9.0d
@@ -580,10 +624,10 @@
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
 			description: [
-				"将工业平台方块放置在你希望放置&3基地&r的位置,然后以&3圆石,深板岩或者安山岩&r点击，即可展开工业平台."
+				"将工业平台方块放置在你希望放置&3基地&r的位置,然后以&3圆石,深板岩或者安山岩&r点击,即可展开工业平台."
 				"用&b圆石&r可以展开&a单个区块大小&r的轻型工业平台,该平台会自动填充&e下方5格&r的空间."
 				"用&b深板岩&r可以展开&a3x3区块&r的重型工业平台,同样会自动填充&e下方5格&r的空间."
-				"用&b安山岩&r可以展开&a单个区块大小&r的悬浮工业平台.该平台&e不会向下填充&r，但是拥有&e两层可规划&r区域."
+				"用&b安山岩&r可以展开&a单个区块大小&r的悬浮工业平台.该平台&e不会向下填充&r,但是拥有&e两层可规划&r区域."
 				"工业平台将会主动适配区块,并以警戒线标明区块边界,辅助玩家按区块规划设备."
 				"灵感与方块材质来自 &e史莱姆li&r 的&6黄铜协奏曲&r, 已获得授权."
 			]
@@ -604,11 +648,13 @@
 				}
 			]
 			subtitle: "搭建基地的好帮手"
-			tasks: [{
-				id: "47E8C062AA7F9EF7"
-				title: "知道了！"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "47E8C062AA7F9EF7"
+					title: "知道了!"
+					type: "checkmark"
+				}
+			]
 			title: "工业平台"
 			x: 6.0d
 			y: 5.0d

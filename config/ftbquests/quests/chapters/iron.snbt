@@ -6,14 +6,16 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:iron_mechanism"
 	id: "21598BD6C77970EB"
-	images: [{
-		height: 16.64d
-		image: "cmi:textures/images/background/iron.png"
-		rotation: 0.0d
-		width: 41.36d
-		x: -2.0d
-		y: 0.0d
-	}]
+	images: [
+		{
+			height: 16.64d
+			image: "cmi:textures/images/background/iron.png"
+			rotation: 0.0d
+			width: 41.36d
+			x: -2.0d
+			y: 0.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -21,24 +23,30 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6B45AF976D26E391"
-			rewards: [{
-				id: "0E2C6CF4676F5D40"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "1368628EE6CB7EBD"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/iron"
-					}
+			rewards: [
+				{
+					id: "0E2C6CF4676F5D40"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:ingots/iron"
-				type: "item"
-			}]
+			]
+			size: 1.0d
+			tasks: [
+				{
+					id: "1368628EE6CB7EBD"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/iron"
+						}
+						title: "任意 #forge:锭/铁"
+						type: "item"
+					}
+					title: "任意 #forge:ingots/iron"
+					type: "item"
+				}
+			]
 			title: "铁锭"
 			x: -8.0d
 			y: 3.0d
@@ -49,11 +57,13 @@
 			hide_dependent_lines: true
 			id: "3AAF51F4A4924343"
 			size: 1.0d
-			tasks: [{
-				id: "54FA863085554928"
-				title: "辊压"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "54FA863085554928"
+					title: "辊压"
+					type: "checkmark"
+				}
+			]
 			x: -4.0d
 			y: 5.0d
 		}
@@ -63,11 +73,13 @@
 			hide_dependent_lines: true
 			id: "110882205EC952C3"
 			size: 1.0d
-			tasks: [{
-				id: "285195A9136C33FD"
-				title: "切割"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "285195A9136C33FD"
+					title: "切割"
+					type: "checkmark"
+				}
+			]
 			x: -1.0d
 			y: 2.5d
 		}
@@ -76,24 +88,30 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "701F589A2FF74412"
-			rewards: [{
-				id: "53BF792B8F753004"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "0F399D7FA9D291EE"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:nuggets/iron"
-					}
+			rewards: [
+				{
+					id: "53BF792B8F753004"
+					type: "xp"
+					xp: 10
 				}
-				title: "任意 #forge:nuggets/iron"
-				type: "item"
-			}]
+			]
+			size: 1.0d
+			tasks: [
+				{
+					id: "0F399D7FA9D291EE"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:nuggets/iron"
+						}
+						title: "任意 #forge:粒/铁"
+						type: "item"
+					}
+					title: "任意 #forge:nuggets/iron"
+					type: "item"
+				}
+			]
 			title: "铁粒"
 			x: 1.0d
 			y: -3.0d
@@ -103,17 +121,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "030F841D01F802A7"
-			rewards: [{
-				id: "61CD484743319D15"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "61CD484743319D15"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.0d
-			tasks: [{
-				id: "691D185FB0AE3BF4"
-				item: "cmi:basic_mechanism_part"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "691D185FB0AE3BF4"
+					item: "cmi:basic_mechanism_part"
+					type: "item"
+				}
+			]
 			x: 7.0d
 			y: 3.0d
 		}
@@ -123,11 +145,13 @@
 			hide_dependent_lines: true
 			id: "30F0B84B98781F76"
 			size: 1.0d
-			tasks: [{
-				id: "6E0E1F1A210104EE"
-				title: "安装"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6E0E1F1A210104EE"
+					title: "安装"
+					type: "checkmark"
+				}
+			]
 			x: 1.0d
 			y: 1.0d
 		}
@@ -136,17 +160,21 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "65F2FFE639A215C6"
-			rewards: [{
-				id: "57228099923BB864"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "57228099923BB864"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 1.0d
-			tasks: [{
-				id: "6B81C23109702052"
-				item: "cmi:iron_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6B81C23109702052"
+					item: "cmi:iron_mechanism"
+					type: "item"
+				}
+			]
 			x: 10.5d
 			y: 0.75d
 		}

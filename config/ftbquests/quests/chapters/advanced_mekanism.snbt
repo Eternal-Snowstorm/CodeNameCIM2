@@ -5,30 +5,36 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:advanced_mekanism_mechanism"
 	id: "5B143D9C6D649ABE"
-	images: [{
-		height: 27.42d
-		image: "cmi:textures/images/background/advanced_mek.png"
-		rotation: 0.0d
-		width: 46.8d
-		x: 0.5d
-		y: -2.0d
-	}]
+	images: [
+		{
+			height: 27.42d
+			image: "cmi:textures/images/background/advanced_mek.png"
+			rotation: 0.0d
+			width: 46.8d
+			x: 0.5d
+			y: -2.0d
+		}
+	]
 	order_index: 25
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
 			id: "1B1AF9C2270216F7"
-			rewards: [{
-				id: "7DB55BDA8A3EB9F7"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7C1737BCC6356D9D"
-				item: "cmi:stainless_steel_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7DB55BDA8A3EB9F7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "7C1737BCC6356D9D"
+					item: "cmi:stainless_steel_ingot"
+					type: "item"
+				}
+			]
 			title: "不锈钢锭"
 			x: -12.480952380952395d
 			y: 0.9761904761904816d
@@ -37,11 +43,13 @@
 			dependencies: ["1B1AF9C2270216F7"]
 			hide_dependent_lines: true
 			id: "32550CDABE143DB3"
-			tasks: [{
-				id: "386188D524813B92"
-				title: "压印"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "386188D524813B92"
+					title: "压印"
+					type: "checkmark"
+				}
+			]
 			x: -9.009523809523813d
 			y: 2.6190476190476204d
 		}
@@ -49,16 +57,20 @@
 			dependencies: ["32550CDABE143DB3"]
 			hide_dependent_lines: true
 			id: "3AE6046598FC7828"
-			rewards: [{
-				id: "78222DD0F1FC350B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2F524BC501DFE675"
-				item: "cmi:stainless_steel_plate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "78222DD0F1FC350B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "2F524BC501DFE675"
+					item: "cmi:stainless_steel_plate"
+					type: "item"
+				}
+			]
 			title: "不锈钢板"
 			x: -6.823809523809544d
 			y: 0.6190476190476346d
@@ -66,16 +78,20 @@
 		{
 			hide_dependent_lines: true
 			id: "0D9121DA5E4E5F67"
-			rewards: [{
-				id: "205C617CD00655FC"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3356D453FE8051DD"
-				item: "mekanism:alloy_infused"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "205C617CD00655FC"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "3356D453FE8051DD"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+			]
 			title: "合金注入"
 			x: 3.7476190476190183d
 			y: -7.389523809523787d
@@ -84,16 +100,20 @@
 			dependencies: ["0D9121DA5E4E5F67"]
 			hide_dependent_lines: true
 			id: "790AA55255A5FA0C"
-			rewards: [{
-				id: "66369C99F1BC4C02"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "51EB53715204A5F8"
-				item: "mekanism:basic_control_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "66369C99F1BC4C02"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "51EB53715204A5F8"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+			]
 			title: "基础控制电路"
 			x: 2.6047619047618795d
 			y: -6.675238095238072d
@@ -101,16 +121,20 @@
 		{
 			hide_dependent_lines: true
 			id: "44D9DD1AA680AB39"
-			rewards: [{
-				id: "320B824885B1D149"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3308B9876AE70079"
-				item: "cmi:platinum_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "320B824885B1D149"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "3308B9876AE70079"
+					item: "cmi:platinum_ingot"
+					type: "item"
+				}
+			]
 			title: "铂锭"
 			x: -3.466666666666697d
 			y: -8.393809523809509d
@@ -119,11 +143,13 @@
 			dependencies: ["44D9DD1AA680AB39"]
 			hide_dependent_lines: true
 			id: "37538C97F90F8594"
-			tasks: [{
-				id: "0814F4D300E72CFC"
-				title: "压印"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "0814F4D300E72CFC"
+					title: "压印"
+					type: "checkmark"
+				}
+			]
 			x: -2.5380952380952735d
 			y: -7.969523809523793d
 		}
@@ -131,11 +157,13 @@
 			dependencies: ["1A786C0DCEC7E976"]
 			hide_dependent_lines: true
 			id: "14308E6B1F0F929E"
-			tasks: [{
-				id: "54BB93F7D935C878"
-				title: "压印"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "54BB93F7D935C878"
+					title: "压印"
+					type: "checkmark"
+				}
+			]
 			x: -1.6095238095238287d
 			y: -2.9780952380952d
 		}
@@ -146,16 +174,20 @@
 			]
 			hide_dependent_lines: true
 			id: "284B8793ACD6D201"
-			rewards: [{
-				id: "419077F32FA2F998"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3A18034B7664345F"
-				item: "mekanism:advanced_control_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "419077F32FA2F998"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "3A18034B7664345F"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+			]
 			title: "高级控制电路"
 			x: -2.8952380952381063d
 			y: 1.9104761904762455d
@@ -164,11 +196,13 @@
 			dependencies: ["38B8B31272CECC59"]
 			hide_dependent_lines: true
 			id: "05D3492FFA3122DE"
-			tasks: [{
-				id: "083CF913E00A72F9"
-				title: "压印"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "083CF913E00A72F9"
+					title: "压印"
+					type: "checkmark"
+				}
+			]
 			x: 7.676190476190463d
 			y: -4.308095238095177d
 		}
@@ -176,11 +210,13 @@
 			dependencies: ["3E36CE6802A0B136"]
 			hide_dependent_lines: true
 			id: "5E8227A9C83C2A41"
-			tasks: [{
-				id: "60FFC30DDADF0228"
-				title: "轧制"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "60FFC30DDADF0228"
+					title: "轧制"
+					type: "checkmark"
+				}
+			]
 			x: 5.676190476190477d
 			y: -2.7452380952380295d
 		}
@@ -191,16 +227,20 @@
 			]
 			hide_dependent_lines: true
 			id: "1A786C0DCEC7E976"
-			rewards: [{
-				id: "0205D201E4D7DBA5"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "414624A5BECCA045"
-				item: "vintageimprovements:platinum_sheet"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0205D201E4D7DBA5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "414624A5BECCA045"
+					item: "vintageimprovements:platinum_sheet"
+					type: "item"
+				}
+			]
 			title: "铂板"
 			x: 0.6761904761904631d
 			y: -4.999523809523723d
@@ -208,16 +248,20 @@
 		{
 			hide_dependent_lines: true
 			id: "38B8B31272CECC59"
-			rewards: [{
-				id: "1501E50592E3CF47"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1E630122143307E3"
-				item: "mekanism:ingot_osmium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1501E50592E3CF47"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "1E630122143307E3"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
 			title: "锇锭"
 			x: 9.533333333333339d
 			y: -5.718095238095152d
@@ -226,16 +270,20 @@
 			dependencies: ["05D3492FFA3122DE"]
 			hide_dependent_lines: true
 			id: "3E36CE6802A0B136"
-			rewards: [{
-				id: "0C2EC59051692CFB"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7E39654242B21372"
-				item: "vintageimprovements:osmium_sheet"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0C2EC59051692CFB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "7E39654242B21372"
+					item: "vintageimprovements:osmium_sheet"
+					type: "item"
+				}
+			]
 			title: "锇板"
 			x: 6.819047619047602d
 			y: -3.2938095238094363d
@@ -244,16 +292,20 @@
 			dependencies: ["5E8227A9C83C2A41"]
 			hide_dependent_lines: true
 			id: "22C801198445E8E6"
-			rewards: [{
-				id: "527DEA307ECE1CDF"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "768F0C2093E5F3FD"
-				item: "vintageimprovements:osmium_wire"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "527DEA307ECE1CDF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "768F0C2093E5F3FD"
+					item: "vintageimprovements:osmium_wire"
+					type: "item"
+				}
+			]
 			title: "锇线"
 			x: 4.176190476190463d
 			y: -1.5123809523808518d
@@ -262,11 +314,13 @@
 			dependencies: ["22C801198445E8E6"]
 			hide_dependent_lines: true
 			id: "6B1395EAE30F7653"
-			tasks: [{
-				id: "46BC198A2A2CDF1C"
-				title: "弹簧线圈"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "46BC198A2A2CDF1C"
+					title: "弹簧线圈"
+					type: "checkmark"
+				}
+			]
 			x: 2.9619047619047407d
 			y: 0.3447619047620165d
 		}
@@ -277,16 +331,20 @@
 			]
 			hide_dependent_lines: true
 			id: "77D2FD6A798743D6"
-			rewards: [{
-				id: "03724462A2B6F59B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5851CA02AA6B36FA"
-				item: "vintageimprovements:small_osmium_spring"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "03724462A2B6F59B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "5851CA02AA6B36FA"
+					item: "vintageimprovements:small_osmium_spring"
+					type: "item"
+				}
+			]
 			title: "小型锇弹簧"
 			x: 2.319047619047616d
 			y: 3.9119047619048644d
@@ -295,16 +353,20 @@
 			dependencies: ["77D2FD6A798743D6"]
 			hide_dependent_lines: true
 			id: "55F8437BDA3D8859"
-			rewards: [{
-				id: "3EC3DB2E246CACBC"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "19E542E9568EB057"
-				item: "cmi:mekanism_mechanism_part"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3EC3DB2E246CACBC"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "19E542E9568EB057"
+					item: "cmi:mekanism_mechanism_part"
+					type: "item"
+				}
+			]
 			title: "机械部件"
 			x: 6.390476190476171d
 			y: 0.5861904761905947d
@@ -313,16 +375,20 @@
 			dependencies: ["55F8437BDA3D8859"]
 			hide_dependent_lines: true
 			id: "140FC7D753896E4D"
-			rewards: [{
-				id: "3B8000B4464C3E8D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "785EABFBD90E9913"
-				item: "cmi:advanced_mekanism_mechanism"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3B8000B4464C3E8D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "785EABFBD90E9913"
+					item: "cmi:advanced_mekanism_mechanism"
+					type: "item"
+				}
+			]
 			title: "高级mekanism机械"
 			x: 14.533333333333324d
 			y: 1.5819047619048732d
