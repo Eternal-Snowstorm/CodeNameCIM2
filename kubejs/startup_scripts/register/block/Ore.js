@@ -3,25 +3,46 @@ const PICKAXE = global.ToolType["pickaxe"]
 
 /* 最简单的子模型
 {
-    "parent": "cmi:block/ore/simple",
-    "textures": {
-        "background": "minecraft:block/stone",
-        "ore": "minecraft:block/iron_ore"
-    }
+	"parent": "cmi:block/ore/simple",
+	"textures": {
+		"background": "minecraft:block/stone",
+		"ore": "minecraft:block/iron_ore"
+	}
 }
 */
+
+function simpleOreModel(background, ore) {
+	return {
+		"parent": "cmi:block/ore/simple",
+		"textures": {
+			"background": `cmi:block/ore/assets/${background}`,
+			"ore": `cmi:block/ore/assets/${ore}`
+		}
+	}
+}
+simpleOreModel("aaa", "aaa")
+
+StartupEvents.registry("block", (event) => {
+	event.create("cmi:aaa")
+		// 着色的层是矿石层, 也就是0(background)后面的1(ore)
+		.color(1, 0xFFFFFF)
+		// 调用模型文件
+		.modelJson(simpleOreModel("moon", "ore_1"))
+})
 
 /**
  * 函数封装
  * @param {string} name 注册ID
+ * @param {Internal.BlockTintFunction_} color 矿石颜色
  * @param {ResourceLocation_} level 挖掘等级
  * @param {number} hardness 硬度
  * @type {OreBlockRegister}
  * @returns 矿石注册
  */
-function addOreBlock(name, level, hardness) {
+function addOreBlock(name, color, level, hardness) {
 	let ore = {
 		name: name,
+		color: color,
 		level: level,
 		hardness: hardness,
 		types: [],
@@ -73,6 +94,10 @@ StartupEvents.registry("block", (event) => {
 			if (type !== "stone" && type !== "deepslate" && type !== "nether") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
+					.color(1, ore.color)
+					.item((item) => {
+						item.color(ore.color)
+					})
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
@@ -85,6 +110,10 @@ StartupEvents.registry("block", (event) => {
 			} else if (type === "deepslate") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
+					.color(1, ore.color)
+					.item((item) => {
+						item.color(ore.color)
+					})
 					.soundType(SoundType.DEEPSLATE)
 					.hardness(ore.hardness + 1.5)
 					.resistance(ore.hardness + 1.5)
@@ -97,6 +126,10 @@ StartupEvents.registry("block", (event) => {
 			} else if (type === "nether") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
+					.color(1, ore.color)
+					.item((item) => {
+						item.color(ore.color)
+					})
 					.soundType(SoundType.NETHER_ORE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
@@ -109,6 +142,10 @@ StartupEvents.registry("block", (event) => {
 			} else {
 				event.create(`${global.namespace}:${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
+					.color(1, ore.color)
+					.item((item) => {
+						item.color(ore.color)
+					})
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
