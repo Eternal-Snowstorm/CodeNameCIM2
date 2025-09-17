@@ -11,26 +11,23 @@ const PICKAXE = global.ToolType["pickaxe"]
 }
 */
 
-let CmiOreBlockModel = {
-	simple: function (background, ore) {
-		return {
-			"parent": "cmi:block/ore/simple",
-			"textures": {
-				"background": `cmi:block/ore/assets/${background}`,
-				"ore": `cmi:block/ore/assets/${ore}`
-			}
+function simple(background, ore) {
+	return {
+		"parent": "cmi:block/ore/simple",
+		"textures": {
+			"background": `cmi:block/ore/assets/${background}`,
+			"ore": `cmi:block/ore/assets/${ore}`
 		}
 	}
 }
-
-CmiOreBlockModel.simple("aaa", "aaa")
+simple("aaa", "aaa")
 
 StartupEvents.registry("block", (event) => {
 	event.create("cmi:aaa")
 		// 着色的层是矿石层, 也就是0后面的1
 		.color(1, 0xFFFFFF)
 		// 调用模型文件
-		.modelJson(CmiOreBlockModel.simple("moon", "ore_1"))
+		.modelJson(simple("moon", "ore_1"))
 })
 
 /**
