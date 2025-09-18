@@ -8,6 +8,10 @@ ServerEvents.highPriorityData((event) => {
      * @param {Number} count 矿石数量
      * @returns 
      */
+
+    addOreGeneratingType("certus_quartz", "overworld", 9)
+        .overworld(10)
+
     function addOreGeneratingType(name, type, size) {
 
         let oreType = {
@@ -39,7 +43,7 @@ ServerEvents.highPriorityData((event) => {
             step: "underground_ores"
         }
 
-        function save() {
+        function build() {
             event.addJson(`cmi:worldgen/configured_feature/${oreType[type]}${name}_ore`, configuredFeature)
             event.addJson(`cmi:worldgen/placed_feature/${oreType[type]}${name}_ore`, placedFeature)
             event.addJson(`cmi:forge/biome_modifier/${oreType[type]}${name}_ore`, biomeModifier)
@@ -93,7 +97,7 @@ ServerEvents.highPriorityData((event) => {
                     }
                 ]
                 biomeModifier.biomes = "#minecraft:is_overworld"
-                save()
+                build()
                 return this
             },
             nether: function (count) {
@@ -133,7 +137,7 @@ ServerEvents.highPriorityData((event) => {
                     }
                 ]
                 biomeModifier.biomes = "#minecraft:is_nether"
-                save()
+                build()
                 return this
             },
             end: function (count) {
@@ -173,7 +177,7 @@ ServerEvents.highPriorityData((event) => {
                     }
                 ]
                 biomeModifier.biomes = "minecraft:end_highlands"
-                save()
+                build()
                 return this
             },
             moon: function (count) {
@@ -213,7 +217,7 @@ ServerEvents.highPriorityData((event) => {
                     }
                 ]
                 biomeModifier.biomes = "ad_astra:lunar_wastelands"
-                save()
+                build()
                 return this
             },
             mars: function (count) {
@@ -253,7 +257,7 @@ ServerEvents.highPriorityData((event) => {
                     }
                 ]
                 biomeModifier.biomes = "ad_astra:martian_wastelands"
-                save()
+                build()
                 return this
             }
         }
