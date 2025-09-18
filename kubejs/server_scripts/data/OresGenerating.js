@@ -9,6 +9,7 @@ ServerEvents.highPriorityData((event) => {
      * @returns 
      */
 
+    // 赛特斯石英
     addOreGeneratingType("certus_quartz", "overworld", 9)
         .overworld(10)
 
@@ -51,6 +52,7 @@ ServerEvents.highPriorityData((event) => {
         }
 
         return {
+
             overworld: function (count) {
                 configuredFeature.config.targets = [
                     {
@@ -100,6 +102,7 @@ ServerEvents.highPriorityData((event) => {
                 build()
                 return this
             },
+
             nether: function (count) {
                 configuredFeature.config.targets = [
                     {
@@ -140,6 +143,7 @@ ServerEvents.highPriorityData((event) => {
                 build()
                 return this
             },
+
             end: function (count) {
                 configuredFeature.config.targets = [
                     {
@@ -180,6 +184,7 @@ ServerEvents.highPriorityData((event) => {
                 build()
                 return this
             },
+
             moon: function (count) {
                 configuredFeature.config.targets = [
                     {
@@ -220,6 +225,7 @@ ServerEvents.highPriorityData((event) => {
                 build()
                 return this
             },
+
             mars: function (count) {
                 configuredFeature.config.targets = [
                     {
@@ -260,6 +266,7 @@ ServerEvents.highPriorityData((event) => {
                 build()
                 return this
             }
+
         }
     }
 })
