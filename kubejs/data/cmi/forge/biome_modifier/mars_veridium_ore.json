@@ -1,6 +1,0 @@
-{
-	"type": "forge:add_features",
-	"biomes": "ad_astra:martian_wastelands",
-	"features": "cmi:mars_veridium_ore",
-	"step": "underground_ores"
-}

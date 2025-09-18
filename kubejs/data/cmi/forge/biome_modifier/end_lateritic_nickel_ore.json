@@ -1,6 +1,0 @@
-{
-	"type": "forge:add_features",
-	"biomes": "minecraft:end_highlands",
-	"features": "end_lateritic_nickel_ore",
-	"step": "underground_ores"
-}

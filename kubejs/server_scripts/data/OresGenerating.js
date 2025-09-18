@@ -13,6 +13,74 @@ ServerEvents.highPriorityData((event) => {
     addOreGeneratingType("certus_quartz", "overworld", 9)
         .overworld(10)
 
+    // 石英
+    addOreGeneratingType("quartz", "overworld", 9)
+        .overworld(10)
+
+    // 钒
+    addOreGeneratingType("vanadium", "overworld", 9)
+        .overworld(10)
+
+    // 红镍
+    addOreGeneratingType("lateritic_nickel", "end", 8)
+        .end(4)
+
+    // 闪锌
+    addOreGeneratingType("sphalerite", "end", 8)
+        .end(4)
+
+    // 磷酸铝
+    addOreGeneratingType("variscite", "end", 8)
+        .end(4)
+
+    // 方铅
+    addOreGeneratingType("galena", "mars", 4)
+        .mars(4)
+
+    // 方铀
+    addOreGeneratingType("uraninite", "mars", 4)
+        .mars(4)
+
+    // 辉铜
+    addOreGeneratingType("veridium", "mars", 4)
+        .mars(4)
+
+    // 钴
+    addOreGeneratingType("cobalt", "moon", 4)
+        .moon(4)
+
+    // 铱锇
+    addOreGeneratingType("osmiridium", "moon", 4)
+        .moon(4)
+
+    // 铂
+    addOreGeneratingType("platinum", "moon", 4)
+        .moon(4)
+
+    // 黄锡
+    addOreGeneratingType("stannine", "moon", 4)
+        .moon(4)
+
+    // 黄铁
+    addOreGeneratingType("pyrite", "nether", 4)
+        .nether(4)
+
+    // 辉银
+    addOreGeneratingType("argentite", "nether", 4)
+        .nether(4)
+
+    // 钨
+    addOreGeneratingType("tungsten", "nether", 4)
+        .nether(4)
+
+    // 铀
+    addOreGeneratingType("uranium", "nether", 4)
+        .nether(4)
+
+    // 钒（下界)
+    addOreGeneratingType("vanadium", "nether", 9)
+        .nether(10)
+
     function addOreGeneratingType(name, type, size) {
 
         let oreType = {

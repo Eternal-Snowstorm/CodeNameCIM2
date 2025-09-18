@@ -1,6 +1,0 @@
-{
-	"type": "forge:add_features",
-	"biomes": "#minecraft:is_nether",
-	"features": "cmi:nether_uraninite_ore",
-	"step": "underground_ores"
-}
