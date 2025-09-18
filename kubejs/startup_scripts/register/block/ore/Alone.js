@@ -69,7 +69,7 @@ StartupEvents.registry("block", (event) => {
 					.tag(`${global.namespace}:ores`)
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
-					.tagBlock(PICKAXE)
+					.tagBlock(global.ToolType["pickaxe"])
 					.tagBlock(global.MiningLevel[ore.level])
 					.requiresTool(true)
 			} else if (type === "deepslate") {
@@ -81,7 +81,7 @@ StartupEvents.registry("block", (event) => {
 					.tag(`${global.namespace}:ores`)
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
-					.tagBlock(PICKAXE)
+					.tagBlock(global.ToolType["pickaxe"])
 					.tagBlock(global.MiningLevel[ore.level])
 					.requiresTool(true)
 			} else if (type === "nether") {
@@ -93,7 +93,7 @@ StartupEvents.registry("block", (event) => {
 					.tag(`${global.namespace}:ores`)
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
-					.tagBlock(PICKAXE)
+					.tagBlock(global.ToolType["pickaxe"])
 					.tagBlock(global.MiningLevel[ore.level])
 					.requiresTool(true)
 			} else {
@@ -105,7 +105,7 @@ StartupEvents.registry("block", (event) => {
 					.tag(`${global.namespace}:ores`)
 					.tag("forge:ores")
 					.tag(`forge:ores/${ore.name}`)
-					.tagBlock(PICKAXE)
+					.tagBlock(global.ToolType["pickaxe"])
 					.tagBlock(global.MiningLevel[ore.level])
 					.requiresTool(true)
 			}

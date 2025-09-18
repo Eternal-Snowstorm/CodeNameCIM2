@@ -1,16 +1,6 @@
 let commonOres = []
-const PICKAXE = global.ToolType["pickaxe"]
 
-/* 最简单的子模型
-{
-	"parent": "cmi:block/ore/simple",
-	"textures": {
-		"background": "minecraft:block/stone",
-		"ore": "minecraft:block/iron_ore"
-	}
-}
-*/
-
+// 继承父模型
 function simpleOreModel(background, ore) {
 	return {
 		"parent": "cmi:block/ore/simple",
@@ -21,24 +11,82 @@ function simpleOreModel(background, ore) {
 		}
 	}
 }
-simpleOreModel("aaa", "aaa")
 
-StartupEvents.registry("block", (event) => {
-	event.create("cmi:aaa")
-		// 着色的层是矿石层, 也就是0(background)后面的1(ore)
-		.color(1, 0xFFFFFF)
-		// 调用模型文件
-		.modelJson = simpleOreModel("moon", "ore_1")
-})
+const ORE_TYPE_CONFIG = {
+	stone: {
+		sound: SoundType.STONE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
+	},
+	deepslate: {
+		sound: SoundType.DEEPSLATE,
+		hardness: function (base) {
+			return base + 1.5
+		},
+		resistance: function (base) {
+			return base + 1.5
+		}
+	},
+	nether: {
+		sound: SoundType.NETHER_ORE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
+	},
+	moon: {
+		sound: SoundType.STONE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
+	},
+	mars: {
+		sound: SoundType.STONE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
+	},
+	venus: {
+		sound: SoundType.STONE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
+	},
+	mercury: {
+		sound: SoundType.STONE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
+	},
+	glacio: {
+		sound: SoundType.STONE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
+	}
+}
 
-/**
- * 函数封装
- * @param {string} name 注册ID
- * @param {ResourceLocation_} level 挖掘等级
- * @param {number} hardness 硬度
- * @type {OreBlockRegister}
- * @returns 矿石注册
- */
 function addOreBlock(name, level, hardness) {
 	let ore = {
 		name: name,
@@ -48,10 +96,10 @@ function addOreBlock(name, level, hardness) {
 		texture: "ore_1",
 		types: [],
 
-		/**
-		 * 设置矿石外观
-		 * @param {Internal.BlockTintFunction_ || Color_} color 颜色
-		 * @param {number} id 矿石贴图形状编号
+		/** 
+		 *  设置矿石外观 
+		 * @param {Internal.BlockTintFunction_ || Color_} color 颜色 
+		 * @param {number} id 矿石贴图形状编号 
 		 */
 		appearance: function (color, id) {
 			this.color = color
@@ -68,10 +116,6 @@ function addOreBlock(name, level, hardness) {
 		},
 		nether: function () {
 			this.types.push("nether")
-			return this
-		},
-		end: function () {
-			this.types.push("end")
 			return this
 		},
 		moon: function () {
@@ -103,59 +147,44 @@ function addOreBlock(name, level, hardness) {
 StartupEvents.registry("block", (event) => {
 	commonOres.forEach((ore) => {
 		ore.types.forEach((type) => {
-			if (type !== "stone" && type !== "deepslate" && type !== "nether") {
-				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
-					.soundType(SoundType.STONE)
-					.hardness(ore.hardness)
-					.resistance(ore.hardness)
-					.tag(`${global.namespace}:ores`)
-					.tag("forge:ores")
-					.tag(`forge:ores/${ore.name}`)
-					.tagBlock(PICKAXE)
-					.tagBlock(global.MiningLevel[ore.level])
-					.requiresTool(true)
-					.color(1, ore.color)
-					.modelJson = simpleOreModel(type, ore.texture)
-			} else if (type === "deepslate") {
-				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
-					.soundType(SoundType.DEEPSLATE)
-					.hardness(ore.hardness + 1.5)
-					.resistance(ore.hardness + 1.5)
-					.tag(`${global.namespace}:ores`)
-					.tag("forge:ores")
-					.tag(`forge:ores/${ore.name}`)
-					.tagBlock(PICKAXE)
-					.tagBlock(global.MiningLevel[ore.level])
-					.requiresTool(true)
-					.color(1, ore.color)
-					.modelJson = simpleOreModel(type, ore.texture)
-			} else if (type === "nether") {
-				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
-					.soundType(SoundType.NETHER_ORE)
-					.hardness(ore.hardness)
-					.resistance(ore.hardness)
-					.tag(`${global.namespace}:ores`)
-					.tag("forge:ores")
-					.tag(`forge:ores/${ore.name}`)
-					.tagBlock(PICKAXE)
-					.tagBlock(global.MiningLevel[ore.level])
-					.requiresTool(true)
-					.color(1, ore.color)
-					.modelJson = simpleOreModel(type, ore.texture)
-			} else {
-				event.create(`${global.namespace}:${ore.name}_ore`)
-					.soundType(SoundType.STONE)
-					.hardness(ore.hardness)
-					.resistance(ore.hardness)
-					.tag(`${global.namespace}:ores`)
-					.tag("forge:ores")
-					.tag(`forge:ores/${ore.name}`)
-					.tagBlock(PICKAXE)
-					.tagBlock(global.MiningLevel[ore.level])
-					.requiresTool(true)
-					.color(1, ore.color)
-					.modelJson = simpleOreModel(type, ore.texture)
+			let cfg = ORE_TYPE_CONFIG[type]
+
+			if (!cfg) {
+				cfg = ORE_TYPE_CONFIG["stone"]
 			}
+
+			let blockId = `${global.namespace}:${type}_${ore.name}_ore`
+
+			let blockBuilder = event.create(blockId)
+
+			// 设置音效
+			blockBuilder.soundType(cfg.sound)
+
+			// 设置硬度和抗性
+			blockBuilder.hardness(cfg.hardness(ore.hardness))
+			blockBuilder.resistance(cfg.resistance(ore.hardness))
+
+			// 标签
+			blockBuilder.tag(`${global.namespace}:ores`)
+			blockBuilder.tag("forge:ores")
+			blockBuilder.tag(`forge:ores/${ore.name}`)
+			blockBuilder.tagBlock(global.ToolType["pickaxe"])
+			blockBuilder.tagBlock(global.MiningLevel[ore.level])
+
+			// 工具需求
+			blockBuilder.requiresTool(true)
+
+			// 渲染类型
+			blockBuilder.renderType("cutout")
+
+			// 颜色
+			blockBuilder.color(0, ore.color)
+			blockBuilder.item((item) => {
+				item.color(0, ore.color)
+			})
+
+			// 模型
+			blockBuilder.modelJson = simpleOreModel(type, ore.texture)
 		})
 	})
 })
