@@ -2,14 +2,14 @@ let commonOres = []
 
 // 继承父模型
 function simpleOreModel(background, ore) {
-	let background = `cmi:block/ore/assets/${background}`
-	let ore = `cmi:block/ore/assets/${ore}`
+	let backgroundT = `cmi:block/ore/assets/${background}`
+	let oreT = `cmi:block/ore/assets/${ore}`
 	return {
 		parent: "cmi:block/ore/simple",
 		textures: {
-			background: background,
-			ore: ore,
-			particle: ore
+			background: backgroundT,
+			ore: oreT,
+			particle: oreT
 		}
 	}
 }
