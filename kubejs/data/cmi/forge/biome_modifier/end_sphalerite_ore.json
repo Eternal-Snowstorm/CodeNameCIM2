@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "minecraft:end_highlands",
+	"features": "end_sphalerite_ore",
+	"step": "underground_ores"
+}

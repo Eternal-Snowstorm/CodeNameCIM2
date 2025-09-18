@@ -1,0 +1,6 @@
+{
+	"type": "forge:add_features",
+	"biomes": "ad_astra:martian_wastelands",
+	"features": "cmi:mars_galena_ore",
+	"step": "underground_ores"
+}
