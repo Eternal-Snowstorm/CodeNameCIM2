@@ -1,6 +1,35 @@
 let ores = []
 const PICKAXE = global.ToolType["pickaxe"]
 
+/* 最简单的子模型
+{
+	"parent": "cmi:block/ore/simple",
+	"textures": {
+		"background": "minecraft:block/stone",
+		"ore": "minecraft:block/iron_ore"
+	}
+}
+*/
+
+function simpleOreModel(background, ore) {
+	return {
+		"parent": "cmi:block/ore/simple",
+		"textures": {
+			"background": `cmi:block/ore/assets/${background}`,
+			"ore": `cmi:block/ore/assets/${ore}`
+		}
+	}
+}
+simpleOreModel("aaa", "aaa")
+
+StartupEvents.registry("block", (event) => {
+	event.create("cmi:aaa")
+		// 着色的层是矿石层, 也就是0(background)后面的1(ore)
+		.color(1, 0xFFFFFF)
+		// 调用模型文件
+		.modelJson = simpleOreModel("moon", "ore_1")
+})
+
 /**
  * 函数封装
  * @param {string} name 注册ID
