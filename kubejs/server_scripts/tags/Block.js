@@ -8,7 +8,7 @@ ServerEvents.tags("block", (event) => {
 	event.get("forge:ores/cheese")
 		.add("ad_astra:moon_cheese_ore")
 
-	event.get(`${global.namespace}:nether_farmland`)
+	event.get("cmi:nether_farmland")
 		.add("minecraft:netherrack")
 		.add("minecraft:soul_sand")
 		.add("minecraft:soul_soil")

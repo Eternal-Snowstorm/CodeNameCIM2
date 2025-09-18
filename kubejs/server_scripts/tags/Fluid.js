@@ -62,20 +62,18 @@ ServerEvents.tags("fluid", (event) => {
 		.add("cmi:sulfric_diesel")
 
 	event.get("tconstruct:fuels")
-		.add([
-			"ad_astra:cryo_fuel",
-			"cmi:delta_unstable_solution",
-			"ad_astra:fuel",
-			"#forge:oil",
-			"thermal:refined_fuel",
-			"cmi:turbid_waste_liquid",
-			"tconstruct:blazing_blood",
-			"immersiveengineering:ethanol",
-			"createdieselgenerators:plant_oil",
-			"createdieselgenerators:biodiesel",
-			"createdieselgenerators:diesel",
-			"createdieselgenerators:gasoline"
-		])
+		.add("ad_astra:cryo_fuel")
+		.add("cmi:delta_unstable_solution")
+		.add("ad_astra:fuel")
+		.add("#forge:oil")
+		.add("thermal:refined_fuel")
+		.add("cmi:turbid_waste_liquid")
+		.add("tconstruct:blazing_blood")
+		.add("immersiveengineering:ethanol")
+		.add("createdieselgenerators:plant_oil")
+		.add("createdieselgenerators:biodiesel")
+		.add("createdieselgenerators:diesel")
+		.add("createdieselgenerators:gasoline")
 
 	let thermalMaterials = [
 		"soul_infused",

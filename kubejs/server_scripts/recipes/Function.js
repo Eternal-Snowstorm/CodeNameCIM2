@@ -38,8 +38,8 @@ let IngredientUtils = {
 
 	/**
 	 * 获取标签内第一个流体的ID, 若标签下没有流体则返回null
-	 * @param {string} fluidTag 流体标签ID
-	 * @returns {string | null}
+	 * @param {String} fluidTag 流体标签ID
+	 * @returns {String | null}
 	 */
 	getFirstFluidId: function (fluidTag) {
 		let tag = $FluidTags.create(ResourceLocation.parse(fluidTag))
@@ -59,8 +59,8 @@ let IngredientUtils = {
 
 	/**
 	 * 判断物品标签是否为空
-	 * @param {string} tag 物品标签ID
-	 * @returns {boolean}
+	 * @param {String} tag 物品标签ID
+	 * @returns {Boolean}
 	 */
 	isNotNull: function (tag) {
 		return Ingredient.of(tag).getItemIds().length > 0
@@ -133,7 +133,6 @@ function IEIngredient(input) {
 			.getCount()
 	}
 }
-
 
 let SmeltingRecipe = {
 	all: function (event, output, input) {
