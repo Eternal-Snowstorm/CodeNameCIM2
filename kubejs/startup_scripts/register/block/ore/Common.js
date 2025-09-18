@@ -7,7 +7,7 @@ function simpleOreModel(background, ore) {
 		"textures": {
 			"background": `cmi:block/ore/assets/${background}`,
 			"ore": `cmi:block/ore/assets/${ore}`,
-			"particle": `cmi:block/ore/assets/${background}`
+			"particle": `cmi:block/ore/assets/${ore}`
 		}
 	}
 }
