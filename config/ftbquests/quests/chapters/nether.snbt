@@ -5,16 +5,14 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:nether_mechanism"
 	id: "42B9AB71ADAF7223"
-	images: [
-		{
-			height: 24.0d
-			image: "cmi:textures/images/background/nether.png"
-			rotation: 0.0d
-			width: 43.8d
-			x: 0.0d
-			y: -1.5d
-		}
-	]
+	images: [{
+		height: 24.0d
+		image: "cmi:textures/images/background/nether.png"
+		rotation: 0.0d
+		width: 43.8d
+		x: 0.0d
+		y: -1.5d
+	}]
 	order_index: 8
 	quest_links: [ ]
 	quests: [
@@ -22,21 +20,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5F11D8144EBC0FEE"
-			rewards: [
-				{
-					id: "18B2FFE258FCB949"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "18B2FFE258FCB949"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "080D90CE907D6FFA"
-					item: "minecraft:netherrack"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "080D90CE907D6FFA"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
 			title: "下界岩"
 			x: -15.5d
 			y: 2.5d
@@ -47,13 +41,11 @@
 			hide_dependent_lines: true
 			id: "1A17066E8247E64A"
 			size: 1.0d
-			tasks: [
-				{
-					id: "09F988039E2D2644"
-					title: "粉碎"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "09F988039E2D2644"
+				title: "粉碎"
+				type: "checkmark"
+			}]
 			x: -14.5d
 			y: 0.0d
 		}
@@ -62,21 +54,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "341B808E312E2E20"
-			rewards: [
-				{
-					id: "6D4A7409EC56BCAA"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "6D4A7409EC56BCAA"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "0723C9B1B43163B8"
-					item: "create:cinder_flour"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0723C9B1B43163B8"
+				item: "create:cinder_flour"
+				type: "item"
+			}]
 			title: "灰烬面粉"
 			x: -11.0d
 			y: 2.0d
@@ -91,13 +79,11 @@
 			hide_dependent_lines: true
 			id: "37481D6C049C988F"
 			size: 1.0d
-			tasks: [
-				{
-					id: "33EECFBE5E567974"
-					title: "兼容"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "33EECFBE5E567974"
+				title: "兼容"
+				type: "checkmark"
+			}]
 			x: -5.5d
 			y: 3.0d
 		}
@@ -107,13 +93,11 @@
 			icon: "minecraft:milk_bucket"
 			id: "4E83A277F74A2462"
 			size: 1.0d
-			tasks: [
-				{
-					id: "27313D54FA079C3A"
-					title: "牛奶"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "27313D54FA079C3A"
+				title: "牛奶"
+				type: "checkmark"
+			}]
 			x: -2.5d
 			y: 2.0d
 		}
@@ -121,21 +105,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6D0520B2CE148580"
-			rewards: [
-				{
-					id: "364E0B9D564BC333"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "364E0B9D564BC333"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "5AE08302625CDF55"
-					item: "minecraft:sugar_cane"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5AE08302625CDF55"
+				item: "minecraft:sugar_cane"
+				type: "item"
+			}]
 			title: "甘蔗"
 			x: -5.5d
 			y: 0.0d
@@ -146,13 +126,11 @@
 			hide_dependent_lines: true
 			id: "5219A529E3F6041A"
 			size: 1.0d
-			tasks: [
-				{
-					id: "58F0E0454B536CBD"
-					title: "磨坊"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "58F0E0454B536CBD"
+				title: "磨坊"
+				type: "checkmark"
+			}]
 			x: -8.0d
 			y: 2.0d
 		}
@@ -161,21 +139,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5CB151F91E669D1C"
-			rewards: [
-				{
-					id: "23B4793B90CD778C"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "23B4793B90CD778C"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "7397CDCC2DE9D1D7"
-					item: "minecraft:sugar"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7397CDCC2DE9D1D7"
+				item: "minecraft:sugar"
+				type: "item"
+			}]
 			title: "糖"
 			x: -7.0d
 			y: 2.5d
@@ -185,21 +159,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "467B4443D949C26C"
-			rewards: [
-				{
-					id: "5FDDD368930AD992"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "5FDDD368930AD992"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "249BAE49291210E1"
-					item: "create:blaze_cake_base"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "249BAE49291210E1"
+				item: "create:blaze_cake_base"
+				type: "item"
+			}]
 			title: "烈焰蛋糕基底"
 			x: -3.5d
 			y: 4.5d
@@ -211,13 +181,11 @@
 			icon: "minecraft:lava_bucket"
 			id: "62FA67263227B2BB"
 			size: 1.0d
-			tasks: [
-				{
-					id: "768FFCB368F5C88B"
-					title: "熔岩"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "768FFCB368F5C88B"
+				title: "熔岩"
+				type: "checkmark"
+			}]
 			x: -0.5d
 			y: 4.5d
 		}
@@ -231,13 +199,11 @@
 			icon: "tconstruct:liquid_soul_bucket"
 			id: "146A740517A7F0B8"
 			size: 1.0d
-			tasks: [
-				{
-					id: "1216990A160F826B"
-					title: "液态灵魂"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "1216990A160F826B"
+				title: "液态灵魂"
+				type: "checkmark"
+			}]
 			x: 3.5d
 			y: 1.5d
 		}
@@ -245,13 +211,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "56EE6D6C0290ACCF"
-			rewards: [
-				{
-					id: "053C97F46F6516E3"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "053C97F46F6516E3"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -275,13 +239,11 @@
 			hide_dependent_lines: true
 			id: "4F585F87D301063A"
 			size: 1.0d
-			tasks: [
-				{
-					id: "7AE8FB87B50E3A3A"
-					title: "混合"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "7AE8FB87B50E3A3A"
+				title: "混合"
+				type: "checkmark"
+			}]
 			x: -1.5d
 			y: 3.0d
 		}
@@ -290,21 +252,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "7340E37954926B04"
-			rewards: [
-				{
-					id: "31A40D95E4D63462"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "31A40D95E4D63462"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "576446DD3E0E7631"
-					item: "minecraft:gold_nugget"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "576446DD3E0E7631"
+				item: "minecraft:gold_nugget"
+				type: "item"
+			}]
 			title: "金粒"
 			x: 6.5d
 			y: 3.5d
@@ -314,21 +272,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "4ED09D7FC978F936"
-			rewards: [
-				{
-					id: "01CE048627251932"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "01CE048627251932"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "5C5033AD95BB8A84"
-					item: "cmi:magical_mechanism_part"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5C5033AD95BB8A84"
+				item: "cmi:magical_mechanism_part"
+				type: "item"
+			}]
 			title: "机械部件"
 			x: 9.5d
 			y: 1.5d
@@ -338,21 +292,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1D1A51F1EDBF8EAA"
-			rewards: [
-				{
-					id: "6489FB559A36EDA8"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "6489FB559A36EDA8"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "14591DBA07D6495F"
-					item: "cmi:nether_mechanism"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "14591DBA07D6495F"
+				item: "cmi:nether_mechanism"
+				type: "item"
+			}]
 			title: "下界机械装置"
 			x: 14.5d
 			y: 3.5d
@@ -362,21 +312,17 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "032EFAA67639B4DA"
-			rewards: [
-				{
-					id: "1D07A23EFA5DF8A6"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "1D07A23EFA5DF8A6"
+				type: "xp"
+				xp: 10
+			}]
 			size: 1.0d
-			tasks: [
-				{
-					id: "62289CCC21DCBC9C"
-					item: "create:blaze_cake"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "62289CCC21DCBC9C"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
 			title: "烈焰蛋糕"
 			x: 1.5d
 			y: 3.5d

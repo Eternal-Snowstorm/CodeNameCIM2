@@ -15,29 +15,25 @@
 				"47D11B96A16AB842"
 			]
 			id: "0608EF158049B347"
-			rewards: [
-				{
-					id: "53EA57A337FE7B3E"
-					type: "xp"
-					xp: 100
-				}
-			]
+			rewards: [{
+				id: "53EA57A337FE7B3E"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [
-				{
-					id: "1AC53938CA735B6F"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/steel"
-						}
+			tasks: [{
+				id: "1AC53938CA735B6F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
 					}
-					title: "钢锭"
-					type: "item"
 				}
-			]
+				title: "钢锭"
+				type: "item"
+			}]
 			title: "钢锭"
 			x: 3.0d
 			y: 0.0d
@@ -50,29 +46,25 @@
 				"43CDBE9E710B8AAF"
 			]
 			id: "6D5194366D20F9B9"
-			rewards: [
-				{
-					id: "0C190D265D0690D9"
-					type: "xp"
-					xp: 100
-				}
-			]
+			rewards: [{
+				id: "0C190D265D0690D9"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [
-				{
-					id: "137A66AC6B50A268"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/stainless_steel"
-						}
+			tasks: [{
+				id: "137A66AC6B50A268"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/stainless_steel"
 					}
-					title: "不锈耐酸钢锭"
-					type: "item"
 				}
-			]
+				title: "不锈耐酸钢锭"
+				type: "item"
+			}]
 			title: "不锈耐酸钢锭"
 			x: 6.0d
 			y: 0.0d
@@ -86,27 +78,23 @@
 				"763E30AB21E0FAAE"
 			]
 			id: "7A0E18E85CCAEE1F"
-			rewards: [
-				{
-					id: "37EF0F3F03F13FE4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "2CA84D300926037E"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/cast_iron"
-						}
+			rewards: [{
+				id: "37EF0F3F03F13FE4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2CA84D300926037E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/cast_iron"
 					}
-					title: "铸铁锭"
-					type: "item"
 				}
-			]
+				title: "铸铁锭"
+				type: "item"
+			}]
 			title: "铸铁锭"
 			x: 0.0d
 			y: 0.0d
@@ -114,54 +102,46 @@
 		{
 			dependencies: ["23541E724E18C938"]
 			id: "738AA5C4C4167BFB"
-			rewards: [
-				{
-					id: "13831D6888230AF6"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "7C1668611B7D845B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/industrial_iron"
-						}
+			rewards: [{
+				id: "13831D6888230AF6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7C1668611B7D845B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/industrial_iron"
 					}
-					title: "工业铁锭"
-					type: "item"
 				}
-			]
+				title: "工业铁锭"
+				type: "item"
+			}]
 			title: "工业铁锭"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			id: "51E5F831D7247E8A"
-			rewards: [
-				{
-					id: "51F6B94F2CF7FF0F"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "0FE49C8BAB0CD95C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/chromium"
-						}
+			rewards: [{
+				id: "51F6B94F2CF7FF0F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0FE49C8BAB0CD95C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/chromium"
 					}
-					title: "铬锭"
-					type: "item"
 				}
-			]
+				title: "铬锭"
+				type: "item"
+			}]
 			title: "铬锭"
 			x: 4.5d
 			y: -1.0d
@@ -169,55 +149,47 @@
 		{
 			dependency_requirement: "all_started"
 			id: "7DE0B55B9B4703C8"
-			rewards: [
-				{
-					id: "68D9C51861C02403"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "5D6A226DE1ADEB9B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/invar"
-						}
+			rewards: [{
+				id: "68D9C51861C02403"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5D6A226DE1ADEB9B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/invar"
 					}
-					title: "殷钢锭"
-					type: "item"
 				}
-			]
+				title: "殷钢锭"
+				type: "item"
+			}]
 			title: "殷钢锭"
 			x: 6.0d
 			y: -2.0d
 		}
 		{
 			id: "319FC5833B1339C2"
-			rewards: [
-				{
-					id: "001DC811BDED7AA5"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "001DC811BDED7AA5"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "它们都可以由构件催生器生成"
-			tasks: [
-				{
-					id: "41634AB6CA683C80"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "cmi:steelmaking_raw_materials"
-						}
+			tasks: [{
+				id: "41634AB6CA683C80"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cmi:steelmaking_raw_materials"
 					}
-					title: "炼钢材料"
-					type: "item"
 				}
-			]
+				title: "炼钢材料"
+				type: "item"
+			}]
 			title: "方解石还是石灰石?"
 			x: 1.5d
 			y: -1.5d
@@ -280,27 +252,23 @@
 		}
 		{
 			id: "60113F54A37402B6"
-			rewards: [
-				{
-					id: "64418ABAF03CD7E7"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "5CBAD161EEDA5452"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:coal_coke"
-						}
+			rewards: [{
+				id: "64418ABAF03CD7E7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5CBAD161EEDA5452"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:coal_coke"
 					}
-					title: "焦煤"
-					type: "item"
 				}
-			]
+				title: "焦煤"
+				type: "item"
+			}]
 			title: "焦煤"
 			x: -2.0d
 			y: -1.5d
@@ -308,27 +276,23 @@
 		{
 			dependency_requirement: "all_started"
 			id: "23541E724E18C938"
-			rewards: [
-				{
-					id: "1C9D387DB728C7B0"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "2C86E81F2B2BF57A"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/iron"
-						}
+			rewards: [{
+				id: "1C9D387DB728C7B0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2C86E81F2B2BF57A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/iron"
 					}
-					title: "铁锭"
-					type: "item"
 				}
-			]
+				title: "铁锭"
+				type: "item"
+			}]
 			title: "铁锭"
 			x: -3.5d
 			y: 0.0d
@@ -337,13 +301,11 @@
 			dependencies: ["511A9A1AAB98500B"]
 			dependency_requirement: "one_completed"
 			id: "638C473E89416E79"
-			rewards: [
-				{
-					id: "7F02F3CA1F94BC2B"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "7F02F3CA1F94BC2B"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "156BABFDA236F5A1"
@@ -361,20 +323,16 @@
 		}
 		{
 			id: "763E30AB21E0FAAE"
-			rewards: [
-				{
-					id: "76A4F1F90D24AB19"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "1333E591BC131554"
-					item: "create:blaze_cake"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "76A4F1F90D24AB19"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1333E591BC131554"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
 			x: 0.0d
 			y: 1.5d
 		}

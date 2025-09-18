@@ -41,8 +41,14 @@ ServerEvents.highPriorityData((event) => {
 		.modular(128, 40960, 6)
 		.huge(128, 81920, 8)
 
+	/**
+	 * 
+	 * @param {String} name 流体ID(Tag)
+	 * @param {Number} speed 每秒消耗的流体量(mB)
+	 * @returns 
+	 */
 	function addDieselEngineFuelType(name, speed) {
-		let getFluidName = name.indexOf(":") !== -1 ? name.split(":")[1] : name
+		let getFluidName = IngredientUtils.getPath(name)
 
 		let data = {
 			fluid: name,
@@ -53,7 +59,7 @@ ServerEvents.highPriorityData((event) => {
 		}
 
 		function save() {
-			event.addJson(`createdieselgenerators:diesel_engine_fuel_types/${getFluidName}.json`, data)
+			return event.addJson(`createdieselgenerators:diesel_engine_fuel_types/${getFluidName}.json`, data)
 		}
 
 		return {

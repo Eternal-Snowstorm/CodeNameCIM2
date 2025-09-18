@@ -11,28 +11,24 @@
 		{
 			description: ["蒸汽是一个支线"]
 			id: "50BE6EA508B2E833"
-			rewards: [
-				{
-					id: "4148E7F8DB84EDA5"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "4148E7F8DB84EDA5"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "蒸汽可以处理矿石, 也可以给予引擎生产应力"
-			tasks: [
-				{
-					id: "0663928BECC3E50F"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/bronze"
-						}
+			tasks: [{
+				id: "0663928BECC3E50F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/bronze"
 					}
-					title: "青铜锭"
-					type: "item"
 				}
-			]
+				title: "青铜锭"
+				type: "item"
+			}]
 			title: "蒸汽时代的开始"
 			x: 0.0d
 			y: 0.0d
@@ -73,23 +69,19 @@
 		{
 			dependencies: ["50BE6EA508B2E833"]
 			id: "68DACE13F8DA3516"
-			rewards: [
-				{
-					id: "74B53DD1BDDD3962"
-					type: "xp"
-					xp: 100
-				}
-			]
+			rewards: [{
+				id: "74B53DD1BDDD3962"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "青铜构件用于后面的引擎和机器的制作"
-			tasks: [
-				{
-					id: "43F802AD08EAE9DB"
-					item: "cmi:bronze_mechanism"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "43F802AD08EAE9DB"
+				item: "cmi:bronze_mechanism"
+				type: "item"
+			}]
 			x: 2.5d
 			y: -2.0d
 		}
@@ -146,19 +138,13 @@
 				{
 					count: 20L
 					id: "0D7D72F7C13B2273"
-					item: {
-						Count: 20
-						id: "cmi:bronze_casing"
-					}
+					item: { Count: 20, id: "cmi:bronze_casing" }
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "704396679975B550"
-					item: {
-						Count: 8
-						id: "tconstruct:scorched_bricks"
-					}
+					item: { Count: 8, id: "tconstruct:scorched_bricks" }
 					type: "item"
 				}
 			]
@@ -168,22 +154,18 @@
 		{
 			dependencies: ["50BE6EA508B2E833"]
 			id: "69B6557CD9D8FE4C"
-			rewards: [
-				{
-					id: "60B8CCEFC7BE6EF2"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "60B8CCEFC7BE6EF2"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "青铜外壳一般用于搭建机器"
-			tasks: [
-				{
-					count: 4L
-					id: "34ADE83961CD600F"
-					item: "cmi:bronze_casing"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 4L
+				id: "34ADE83961CD600F"
+				item: "cmi:bronze_casing"
+				type: "item"
+			}]
 			title: "青铜外壳"
 			x: 2.5d
 			y: -4.0d
@@ -192,21 +174,17 @@
 			dependencies: ["4405C578E1F06769"]
 			icon: "mekanism:steam_bucket"
 			id: "2E433CDEC9C53072"
-			rewards: [
-				{
-					id: "1D5A3A262631D216"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "1D5A3A262631D216"
+				type: "xp"
+				xp: 10
+			}]
 			subtitle: "怎么会有那么好用的东西"
-			tasks: [
-				{
-					id: "258E7097CC150284"
-					title: "获得蒸汽"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "258E7097CC150284"
+				title: "获得蒸汽"
+				type: "checkmark"
+			}]
 			x: 5.0d
 			y: 0.0d
 		}
@@ -219,13 +197,11 @@
 			]
 			icon: "mm:steam_ore_processor"
 			id: "1C6A5D1DC3365BD0"
-			rewards: [
-				{
-					id: "56E76A6EA86A61F1"
-					type: "xp"
-					xp: 50
-				}
-			]
+			rewards: [{
+				id: "56E76A6EA86A61F1"
+				type: "xp"
+				xp: 50
+			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "初步倍产"
@@ -238,10 +214,7 @@
 				{
 					count: 16L
 					id: "616784BCD4619FD2"
-					item: {
-						Count: 16
-						id: "cmi:bronze_casing"
-					}
+					item: { Count: 16, id: "cmi:bronze_casing" }
 					type: "item"
 				}
 				{
@@ -292,13 +265,11 @@
 			dependencies: ["2E433CDEC9C53072"]
 			icon: "steampowered:bronze_flywheel"
 			id: "39A64AAD5944BEE7"
-			rewards: [
-				{
-					id: "0CB19DD41C7D3B07"
-					type: "xp"
-					xp: 50
-				}
-			]
+			rewards: [{
+				id: "0CB19DD41C7D3B07"
+				type: "xp"
+				xp: 50
+			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "超大应力"
@@ -322,13 +293,11 @@
 			dependencies: ["4405C578E1F06769"]
 			icon: "steampowered:cast_iron_burner"
 			id: "1156D2A5BA2286FD"
-			rewards: [
-				{
-					id: "7540D5485D5787C3"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "7540D5485D5787C3"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "4F993DD16985FC21"
@@ -348,13 +317,11 @@
 			dependencies: ["4405C578E1F06769"]
 			icon: "steampowered:steel_burner"
 			id: "3588EC6A12F8BE35"
-			rewards: [
-				{
-					id: "705608604CDE76B0"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "705608604CDE76B0"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [
 				{
 					id: "534D796C056E7878"
@@ -374,13 +341,11 @@
 			dependencies: ["39A64AAD5944BEE7"]
 			icon: "steampowered:cast_iron_flywheel"
 			id: "20E3CB07FA4862A5"
-			rewards: [
-				{
-					id: "2E0120D8392976EB"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "2E0120D8392976EB"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [
@@ -403,13 +368,11 @@
 			dependencies: ["39A64AAD5944BEE7"]
 			icon: "steampowered:steel_flywheel"
 			id: "4B9103F7518CA5C0"
-			rewards: [
-				{
-					id: "77F0245A0CB06359"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "77F0245A0CB06359"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [

@@ -5,16 +5,14 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:ender_mechanism"
 	id: "3796BC30E90CACE1"
-	images: [
-		{
-			height: 42.48d
-			image: "cmi:textures/images/background/ender.png"
-			rotation: 0.0d
-			width: 74.16d
-			x: -1.5d
-			y: 1.5d
-		}
-	]
+	images: [{
+		height: 42.48d
+		image: "cmi:textures/images/background/ender.png"
+		rotation: 0.0d
+		width: 74.16d
+		x: -1.5d
+		y: 1.5d
+	}]
 	order_index: 13
 	quest_links: [ ]
 	quests: [
@@ -22,20 +20,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "522F0F1F071E7A3A"
-			rewards: [
-				{
-					id: "0B43CED387219AE0"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "44B18A7460FBE209"
-					item: "create:sturdy_sheet"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0B43CED387219AE0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "44B18A7460FBE209"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
 			title: "坚固板"
 			x: -22.0d
 			y: 8.357142857142861d
@@ -44,20 +38,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "7996CBD8D010D793"
-			rewards: [
-				{
-					id: "4C64E57CE0F8B8DF"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "60EFEB1EB3278F8F"
-					item: "minecraft:chorus_fruit"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4C64E57CE0F8B8DF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "60EFEB1EB3278F8F"
+				item: "minecraft:chorus_fruit"
+				type: "item"
+			}]
 			title: "紫颂果"
 			x: -19.77714285714287d
 			y: -0.7857142857142776d
@@ -68,13 +58,11 @@
 			hide_dependent_lines: true
 			icon: "thermal:ender_bucket"
 			id: "4A7A67C25D91AF74"
-			tasks: [
-				{
-					id: "3A4EE6607D4D6F39"
-					title: "末影之眼"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3A4EE6607D4D6F39"
+				title: "末影之眼"
+				type: "checkmark"
+			}]
 			x: -10.06285714285714d
 			y: -5.499999999999993d
 		}
@@ -83,13 +71,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "022046E00DDF637F"
-			tasks: [
-				{
-					id: "524294F995536EDD"
-					title: "混合"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "524294F995536EDD"
+				title: "混合"
+				type: "checkmark"
+			}]
 			x: -12.634285714285696d
 			y: -5.214285714285701d
 		}
@@ -98,13 +84,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "40E404BCF340AE74"
-			tasks: [
-				{
-					id: "15BEDC3DC62F64C1"
-					title: "浇筑"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "15BEDC3DC62F64C1"
+				title: "浇筑"
+				type: "checkmark"
+			}]
 			x: -8.491428571428557d
 			y: -5.071428571428562d
 		}
@@ -116,20 +100,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1AAB7DB531785BF8"
-			rewards: [
-				{
-					id: "45443A8CEAE6A728"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "5689B431FE839044"
-					item: "minecraft:ender_pearl"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "45443A8CEAE6A728"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5689B431FE839044"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
 			title: "末影珍珠"
 			x: -0.8485714285714465d
 			y: 2.999999999999993d
@@ -139,29 +119,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "48038D772C0E4164"
-			rewards: [
-				{
-					id: "3BB84246519EE794"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "514C211F6B74A3CC"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:dusts/diamond"
-						}
-						title: "任意 #forge:粉尘/钻石"
-						type: "item"
+			rewards: [{
+				id: "3BB84246519EE794"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "514C211F6B74A3CC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/diamond"
 					}
-					title: "任意 #forge:粉尘/钻石"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:粉尘/钻石"
+				type: "item"
+			}]
 			title: "钻石粉"
 			x: 8.231428571428552d
 			y: 6.571428571428569d
@@ -171,20 +145,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "6B8036545D2D0402"
-			rewards: [
-				{
-					id: "0414AFFE5B88B746"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "1666219949FA2B41"
-					item: "cmi:magical_mechanism_part"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0414AFFE5B88B746"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1666219949FA2B41"
+				item: "cmi:magical_mechanism_part"
+				type: "item"
+			}]
 			title: "机械部件"
 			x: 13.517142857142844d
 			y: 2.5714285714285765d
@@ -194,20 +164,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5012B296C63CFD77"
-			rewards: [
-				{
-					id: "16BAED7E5F0E313F"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "4B8EC46D9B606040"
-					item: "cmi:ender_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "16BAED7E5F0E313F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4B8EC46D9B606040"
+				item: "cmi:ender_mechanism"
+				type: "item"
+			}]
 			title: "末影机械"
 			x: 19.231428571428552d
 			y: 5.142857142857139d

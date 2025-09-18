@@ -64,6 +64,10 @@ let IngredientUtils = {
 	 */
 	isNotNull: function (tag) {
 		return Ingredient.of(tag).getItemIds().length > 0
+	},
+
+	getPath: function (name) {
+		return name.indexOf(":") !== -1 ? name.split(":")[1] : name
 	}
 }
 

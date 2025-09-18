@@ -109,34 +109,30 @@
 	]
 	order_index: 1
 	quest_links: [ ]
-	quests: [
-		{
-			icon: "ae2:wireless_crafting_terminal"
-			id: "5795D74E97EE84BE"
-			rewards: [
-				{
-					count: 4
-					id: "3119017891480BCC"
-					item: "minecraft:cooked_beef"
-					type: "item"
-				}
-				{
-					id: "3E05E042EAF54E0C"
-					type: "xp"
-					xp: 10
-				}
-			]
-			subtitle: "看不懂的还请不要乱动"
-			tasks: [
-				{
-					id: "4E2485D65A214F1A"
-					title: "这里是一些便携操作"
-					type: "checkmark"
-				}
-			]
-			x: -3.5d
-			y: 3.0d
-		}
-	]
+	quests: [{
+		icon: "ae2:wireless_crafting_terminal"
+		id: "5795D74E97EE84BE"
+		rewards: [
+			{
+				count: 4
+				id: "3119017891480BCC"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}
+			{
+				id: "3E05E042EAF54E0C"
+				type: "xp"
+				xp: 10
+			}
+		]
+		subtitle: "看不懂的还请不要乱动"
+		tasks: [{
+			id: "4E2485D65A214F1A"
+			title: "这里是一些便携操作"
+			type: "checkmark"
+		}]
+		x: -3.5d
+		y: 3.0d
+	}]
 	title: "控制面板"
 }

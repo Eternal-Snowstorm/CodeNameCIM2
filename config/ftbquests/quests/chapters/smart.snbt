@@ -30,27 +30,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "68FBD581C194043D"
-			rewards: [
-				{
-					id: "3A164EAEB0FE0DD2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "75554CAE2E8540E4"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/silver"
-						}
+			rewards: [{
+				id: "3A164EAEB0FE0DD2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "75554CAE2E8540E4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/silver"
 					}
-					title: "任意 #forge:ingots/silver"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:ingots/silver"
+				type: "item"
+			}]
 			title: "银锭"
 			x: -18.64285714285714d
 			y: -9.337142857142851d
@@ -59,13 +55,11 @@
 			dependencies: ["68FBD581C194043D"]
 			hide_dependent_lines: true
 			id: "3196C0B4D3BC5D1C"
-			tasks: [
-				{
-					id: "3F3C8A79582F76DF"
-					title: "压制"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3F3C8A79582F76DF"
+				title: "压制"
+				type: "checkmark"
+			}]
 			x: -14.642857142857153d
 			y: -7.638571428571424d
 		}
@@ -74,29 +68,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3AF52DC485843C18"
-			rewards: [
-				{
-					id: "227563AD4A589075"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "012ADBA06FA1BFA0"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:plates/silver"
-						}
-						title: "任意 #forge:plates/silver (银板)"
-						type: "item"
+			rewards: [{
+				id: "227563AD4A589075"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "012ADBA06FA1BFA0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/silver"
 					}
-					title: "任意 #forge:plates/silver"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:plates/silver"
+				type: "item"
+			}]
 			title: "银板"
 			x: -9.07142857142857d
 			y: -5.15428571428572d
@@ -105,27 +93,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "43D92E63AB881987"
-			rewards: [
-				{
-					id: "17226BCC414585E6"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "021E69F962927B56"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:sand"
-						}
+			rewards: [{
+				id: "17226BCC414585E6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "021E69F962927B56"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:sand"
 					}
-					title: "任意 #minecraft:sand"
-					type: "item"
 				}
-			]
+				title: "任意 #minecraft:sand"
+				type: "item"
+			}]
 			title: "沙子"
 			x: -23.49999999999998d
 			y: -7.9557142857142935d
@@ -135,13 +119,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "60C76B7692A7DCB0"
-			tasks: [
-				{
-					id: "30E320074F87BDBE"
-					title: "排液"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "30E320074F87BDBE"
+				title: "排液"
+				type: "checkmark"
+			}]
 			x: -26.928571428571402d
 			y: -4.6857142857142975d
 		}
@@ -151,13 +133,11 @@
 			hide_dependent_lines: true
 			icon: "cmi:pure_sand_bucket"
 			id: "13D05FD44EB4CE46"
-			tasks: [
-				{
-					id: "43A304DF50A47887"
-					title: "纯净沙子"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "43A304DF50A47887"
+				title: "纯净沙子"
+				type: "checkmark"
+			}]
 			x: -25.49999999999997d
 			y: -3.9157142857142944d
 		}
@@ -166,27 +146,23 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "612A816443670A95"
-			rewards: [
-				{
-					id: "7FCF52BB812B1D56"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "6EE58F2DE89E430E"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:coal_coke"
-						}
+			rewards: [{
+				id: "7FCF52BB812B1D56"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6EE58F2DE89E430E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:coal_coke"
 					}
-					title: "任意 #forge:coal_coke"
-					type: "item"
 				}
-			]
+				title: "任意 #forge:coal_coke"
+				type: "item"
+			}]
 			title: "焦煤"
 			x: -31.78571428571425d
 			y: -1.6300000000000097d
@@ -196,13 +172,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "66299A6BE8A5730D"
-			tasks: [
-				{
-					id: "2D3F31D7FABA5E47"
-					title: "切割"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "2D3F31D7FABA5E47"
+				title: "切割"
+				type: "checkmark"
+			}]
 			x: -25.071428571428534d
 			y: -2.1657142857142873d
 		}
@@ -211,20 +185,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "4BC492370203E604"
-			rewards: [
-				{
-					id: "2A68FC0B172560A9"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "61CA9161E4C9E4C4"
-					item: "cmi:small_coal_coke"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "2A68FC0B172560A9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "61CA9161E4C9E4C4"
+				item: "cmi:small_coal_coke"
+				type: "item"
+			}]
 			title: "小块焦煤"
 			x: -24.428571428571395d
 			y: -2.951428571428579d
@@ -237,13 +207,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5A627E47C1A11E65"
-			tasks: [
-				{
-					id: "1DD402CEB8136F35"
-					title: "混合"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "1DD402CEB8136F35"
+				title: "混合"
+				type: "checkmark"
+			}]
 			x: -23.857142857142854d
 			y: -3.5714285714285836d
 		}
@@ -252,20 +220,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "73D6353F4FA39FC7"
-			rewards: [
-				{
-					id: "7FFC5D94D916ED32"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "1DD72B94A1D1D025"
-					item: "cmi:silicon_mixure"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "7FFC5D94D916ED32"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1DD72B94A1D1D025"
+				item: "cmi:silicon_mixure"
+				type: "item"
+			}]
 			title: "硅混合物"
 			x: -22.714285714285715d
 			y: -2.8571428571428683d
@@ -275,13 +239,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3EA43F9E094F4648"
-			tasks: [
-				{
-					id: "73FA2166208D628E"
-					title: "激光"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "73FA2166208D628E"
+				title: "激光"
+				type: "checkmark"
+			}]
 			x: -21.428571428571423d
 			y: -2.4285714285714377d
 		}
@@ -290,20 +252,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "75C47D685C5A31D6"
-			rewards: [
-				{
-					id: "7E82CACC6DF6E9B2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "757994A068C00147"
-					item: "ae2:silicon"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "7E82CACC6DF6E9B2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "757994A068C00147"
+				item: "ae2:silicon"
+				type: "item"
+			}]
 			title: "硅"
 			x: -20.397959183673464d
 			y: -1.918367346938794d
@@ -312,20 +270,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "19A830561D727A7A"
-			rewards: [
-				{
-					id: "2006D06A0D1F5A93"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "229E5BABEDCD9B12"
-					item: "ae2:silicon_press"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "2006D06A0D1F5A93"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "229E5BABEDCD9B12"
+				item: "ae2:silicon_press"
+				type: "item"
+			}]
 			title: "硅压模"
 			x: -19.14285714285714d
 			y: -4.367346938775519d
@@ -335,20 +289,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1589AE7362FBF720"
-			rewards: [
-				{
-					id: "79476C6D0BAF5071"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "165FE98EA1D3CB5F"
-					item: "ae2:printed_silicon"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "79476C6D0BAF5071"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "165FE98EA1D3CB5F"
+				item: "ae2:printed_silicon"
+				type: "item"
+			}]
 			title: "印刷硅板"
 			x: -17.877551020408163d
 			y: -1.1224489795918444d
@@ -361,13 +311,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1A378D92BFCDB06A"
-			tasks: [
-				{
-					id: "1ACDAE9D0EAF6143"
-					title: " inscription"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "1ACDAE9D0EAF6143"
+				title: " inscription"
+				type: "checkmark"
+			}]
 			x: -19.271836734693892d
 			y: -1.6224489795918586d
 		}
@@ -375,20 +323,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "53E3E86EDE51AD18"
-			rewards: [
-				{
-					id: "4BA502102AF5F085"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "5467C4320B274DFA"
-					item: "minecraft:redstone"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4BA502102AF5F085"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5467C4320B274DFA"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
 			title: "红石粉"
 			x: -21.2718367346939d
 			y: -0.19387755102042803d
@@ -397,20 +341,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "2F27EC18DF079BE3"
-			rewards: [
-				{
-					id: "71E2FFFAAA5D65E1"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "7BCCAF1D0EEF9CE2"
-					item: "ae2:printed_calculation_processor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "71E2FFFAAA5D65E1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7BCCAF1D0EEF9CE2"
+				item: "ae2:printed_calculation_processor"
+				type: "item"
+			}]
 			x: -13.128979591836753d
 			y: -3.336734693877574d
 		}
@@ -418,20 +358,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3740237CB4AC9B1B"
-			rewards: [
-				{
-					id: "319FAEF0C5E821B8"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "155696DD4A3B6E04"
-					item: "ae2:printed_logic_processor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "319FAEF0C5E821B8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "155696DD4A3B6E04"
+				item: "ae2:printed_logic_processor"
+				type: "item"
+			}]
 			x: -11.700408163265323d
 			y: -4.336734693877574d
 		}
@@ -439,20 +375,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "365202C0823F4CF5"
-			rewards: [
-				{
-					id: "52CD2AE822AE5185"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "7225D4E277177404"
-					item: "ae2:printed_engineering_processor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "52CD2AE822AE5185"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7225D4E277177404"
+				item: "ae2:printed_engineering_processor"
+				type: "item"
+			}]
 			x: -14.594693877551038d
 			y: -2.0510204081632892d
 		}
@@ -466,20 +398,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "7AF159A9152C9059"
-			rewards: [
-				{
-					id: "44693F3F0E23D8BF"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "2EC6E0D81734E4BF"
-					item: "ae2:engineering_processor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "44693F3F0E23D8BF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2EC6E0D81734E4BF"
+				item: "ae2:engineering_processor"
+				type: "item"
+			}]
 			x: 15.69102040816324d
 			y: -4.408163265306129d
 		}
@@ -493,20 +421,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "3AD35E12B7E32129"
-			rewards: [
-				{
-					id: "300E8DC388EB9EAB"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "678D1612598B8F06"
-					item: "ae2:logic_processor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "300E8DC388EB9EAB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "678D1612598B8F06"
+				item: "ae2:logic_processor"
+				type: "item"
+			}]
 			x: -3.451836734693913d
 			y: -3.4081632653061362d
 		}
@@ -520,20 +444,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1015BB57FB579916"
-			rewards: [
-				{
-					id: "2E103072A4E10E21"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "490388763B972EE3"
-					item: "ae2:calculation_processor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "2E103072A4E10E21"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "490388763B972EE3"
+				item: "ae2:calculation_processor"
+				type: "item"
+			}]
 			x: 3.9767346938775177d
 			y: -4.693877551020421d
 		}
@@ -542,20 +462,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "1737910435E1C712"
-			rewards: [
-				{
-					id: "088B5DAA470BA16A"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "4F5A2E989C1F2D4B"
-					item: "cmi:engineering_mechanism_part"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "088B5DAA470BA16A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4F5A2E989C1F2D4B"
+				item: "cmi:engineering_mechanism_part"
+				type: "item"
+			}]
 			title: "机械零件"
 			x: 25.428571428571416d
 			y: -5.015714285714289d
@@ -565,20 +481,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "15C514E672F7A9CF"
-			rewards: [
-				{
-					id: "0555F4F9CD7F25C4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "019F695CD769073F"
-					item: "cmi:smart_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0555F4F9CD7F25C4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "019F695CD769073F"
+				item: "cmi:smart_mechanism"
+				type: "item"
+			}]
 			title: "智能机械"
 			x: 27.85714285714286d
 			y: -6.817142857142862d
@@ -587,13 +499,11 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "5570069EBC905368"
-			tasks: [
-				{
-					id: "5912B8EB7C4D337C"
-					title: "inscrib"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "5912B8EB7C4D337C"
+				title: "inscrib"
+				type: "checkmark"
+			}]
 			x: -12.857142857142875d
 			y: 0.45285714285712686d
 		}
@@ -601,20 +511,16 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "11E9B8AF98B37C31"
-			rewards: [
-				{
-					id: "7A8A6AA29857EB14"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "64674A74EBC7DEBA"
-					item: "minecraft:coal"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "7A8A6AA29857EB14"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "64674A74EBC7DEBA"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			title: "煤炭"
 			x: -26.894285714285722d
 			y: -9.658571428571463d
@@ -625,13 +531,11 @@
 			hide_dependent_lines: true
 			icon: "immersiveindustry:rotary_kiln"
 			id: "365D113EBC6C07EC"
-			tasks: [
-				{
-					id: "4F89253B4A77BBAB"
-					title: "回转窑"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "4F89253B4A77BBAB"
+				title: "回转窑"
+				type: "checkmark"
+			}]
 			x: -29.717142857142868d
 			y: -6.0871428571428865d
 		}
