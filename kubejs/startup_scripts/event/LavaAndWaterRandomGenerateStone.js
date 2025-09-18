@@ -3,46 +3,52 @@ let $BlockEvent$FluidPlaceBlockEvent =
 let $PipeCollisionEvent$Spill =
 	Java.loadClass("com.simibubi.create.api.event.PipeCollisionEvent$Spill")
 
-// 定义可替换的方块列表
-let replaceBlocks = [
-	"minecraft:calcite",
-	"minecraft:tuff",
-	"minecraft:dripstone_block",
-	"minecraft:granite",
-	"minecraft:diorite",
-	"minecraft:cobblestone",
-	"minecraft:cobbled_deepslate"
+const RANDOM_BLOCKS = ["minecraft:cobblestone", "minecraft:cobbled_deepslate"]
+const CHANCE = 0.5
+
+let replaceBlock = [
+	// Example
+	[["minecraft:sand", "minecraft:red_sand"], "minecraft:sandstone"],
+	["minecraft:red_sand", "minecraft:sandstone"]
 ]
-// 概率
-const CHANCE = 0.25
-// 剩余75%概率随机选择列表中的方块
-let randomIndex = Math.floor(Math.random() * replaceBlocks.length)
-let randomBlock = replaceBlocks[randomIndex]
+
+function isMatch(belowBlockId, condition) {
+	if (Array.isArray(condition)) {
+		return condition.includes(belowBlockId)
+	}
+	return belowBlockId === condition
+}
 
 RegisterNativeEvents.onEvent($BlockEvent$FluidPlaceBlockEvent, (event) => {
-	let block = event.getNewState().getBlock()
+	let getBlock = event.getNewState().getBlock()
+	let pos = event.getPos()
+	let level = event.level
+	let belowBlock = level.getBlockState(pos.below()).getBlock()
 
-	if (block.id === "minecraft:cobblestone") {
-		// 25%概率生成安山岩
-		if (Math.random() < CHANCE) {
-			event.setNewState(Block.getBlock("minecraft:andesite").defaultBlockState())
-		} else {
-			// 剩余50%概率随机选择列表中的方块
-			event.setNewState(Block.getBlock(randomBlock).defaultBlockState())
+	replaceBlock.forEach(([condition, generate]) => {
+		if ((getBlock.id === "minecraft:cobblestone" || getBlock.id === "minecraft:stone") && isMatch(belowBlock.id, condition)) {
+			let newBlockId = Math.random() < CHANCE
+				? generate
+				: RANDOM_BLOCKS[Math.floor(Math.random() * RANDOM_BLOCKS.length)]
+
+			event.setNewState(Block.getBlock(newBlockId).defaultBlockState())
 		}
-	}
+	})
 })
 
 RegisterNativeEvents.onEvent($PipeCollisionEvent$Spill, (event) => {
-	let block = event.getState().block
+	let getBlock = event.getState().block
+	let pos = event.getPos()
+	let level = event.level
+	let belowBlock = level.getBlockState(pos.below()).getBlock()
 
-	if (block.id === "minecraft:stone") {
-		// 25%概率生成安山岩
-		if (Math.random() < CHANCE) {
-			event.setState(Block.getBlock("minecraft:andesite").defaultBlockState())
-		} else {
-			// 剩余75%概率随机选择列表中的方块
-			event.setState(Block.getBlock(randomBlock).defaultBlockState())
+	replaceBlock.forEach(([condition, generate]) => {
+		if ((getBlock.id === "minecraft:cobblestone" || getBlock.id === "minecraft:stone") && isMatch(belowBlock.id, condition)) {
+			let newBlockId = Math.random() < CHANCE
+				? generate
+				: RANDOM_BLOCKS[Math.floor(Math.random() * RANDOM_BLOCKS.length)]
+
+			event.setState(Block.getBlock(newBlockId).defaultBlockState())
 		}
-	}
+	})
 })
