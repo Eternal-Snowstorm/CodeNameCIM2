@@ -1,6 +1,0 @@
-{
-	"type": "forge:add_features",
-	"biomes": "ad_astra:lunar_wastelands",
-	"features": "cmi:moon_argentite_ore",
-	"step": "underground_ores"
-}

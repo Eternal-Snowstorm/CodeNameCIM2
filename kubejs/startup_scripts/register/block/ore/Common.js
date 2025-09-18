@@ -276,12 +276,12 @@ addOreBlock("osmiridium", "iron", 6)
 // 方铀
 addOreBlock("uraninite", "stone", 5)
 	.appearance(0x71D23A, 1)
-	.nether()
+	.mars()
 
 // 辉银
 addOreBlock("argentite", "iron", 6)
 	.appearance(0xFFFFFF, 4)
-	.moon()
+	.nether()
 
 // 埃忒恩
 addOreBlock("etrium", "diamond", 5)
