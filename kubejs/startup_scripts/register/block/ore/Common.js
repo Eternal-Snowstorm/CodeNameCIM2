@@ -1,4 +1,4 @@
-let ores = []
+let commonOres = []
 const PICKAXE = global.ToolType["pickaxe"]
 
 /* 最简单的子模型
@@ -96,12 +96,12 @@ function addOreBlock(name, level, hardness) {
 		}
 	}
 
-	ores.push(ore)
+	commonOres.push(ore)
 	return ore
 }
 
 StartupEvents.registry("block", (event) => {
-	ores.forEach((ore) => {
+	commonOres.forEach((ore) => {
 		ore.types.forEach((type) => {
 			if (type !== "stone" && type !== "deepslate" && type !== "nether") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
