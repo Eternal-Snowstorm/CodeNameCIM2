@@ -1,4 +1,4 @@
-let ores = []
+let aloneOres = []
 
 /**
  * 函数封装
@@ -53,12 +53,12 @@ function addAloneOreBlock(name, level, hardness) {
 		}
 	}
 
-	ores.push(ore)
+	aloneOres.push(ore)
 	return ore
 }
 
 StartupEvents.registry("block", (event) => {
-	ores.forEach((ore) => {
+	aloneOres.forEach((ore) => {
 		ore.types.forEach((type) => {
 			if (type !== "stone" && type !== "deepslate" && type !== "nether") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
