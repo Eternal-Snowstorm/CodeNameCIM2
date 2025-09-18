@@ -27,7 +27,7 @@ StartupEvents.registry("block", (event) => {
 		// 着色的层是矿石层, 也就是0(background)后面的1(ore)
 		.color(1, 0xFFFFFF)
 		// 调用模型文件
-		.modelJson(simpleOreModel("moon", "ore_1"))
+		.modelJson = simpleOreModel("moon", "ore_1")
 })
 
 /**
@@ -39,10 +39,9 @@ StartupEvents.registry("block", (event) => {
  * @type {OreBlockRegister}
  * @returns 矿石注册
  */
-function addOreBlock(name, color, level, hardness) {
+function addOreBlock(name, level, hardness) {
 	let ore = {
 		name: name,
-		color: color,
 		level: level,
 		hardness: hardness,
 		types: [],
@@ -94,10 +93,6 @@ StartupEvents.registry("block", (event) => {
 			if (type !== "stone" && type !== "deepslate" && type !== "nether") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
-					.color(1, ore.color)
-					.item((item) => {
-						item.color(ore.color)
-					})
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
@@ -110,10 +105,6 @@ StartupEvents.registry("block", (event) => {
 			} else if (type === "deepslate") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
-					.color(1, ore.color)
-					.item((item) => {
-						item.color(ore.color)
-					})
 					.soundType(SoundType.DEEPSLATE)
 					.hardness(ore.hardness + 1.5)
 					.resistance(ore.hardness + 1.5)
@@ -126,10 +117,6 @@ StartupEvents.registry("block", (event) => {
 			} else if (type === "nether") {
 				event.create(`${global.namespace}:${type}_${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
-					.color(1, ore.color)
-					.item((item) => {
-						item.color(ore.color)
-					})
 					.soundType(SoundType.NETHER_ORE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
@@ -142,10 +129,6 @@ StartupEvents.registry("block", (event) => {
 			} else {
 				event.create(`${global.namespace}:${ore.name}_ore`)
 					.textureAll(`${global.namespace}:block/ore/${ore.name}/${type}`)
-					.color(1, ore.color)
-					.item((item) => {
-						item.color(ore.color)
-					})
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
