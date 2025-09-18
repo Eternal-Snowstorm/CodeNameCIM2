@@ -1,5 +1,4 @@
 let ores = []
-const PICKAXE = global.ToolType["pickaxe"]
 
 /**
  * 函数封装
@@ -115,15 +114,15 @@ StartupEvents.registry("block", (event) => {
 })
 
 // 石英
-addOreBlock("quartz", "iron", 3)
+addAloneOreBlock("quartz", "iron", 3)
 	.stone()
 	.deepslate()
 
 // 钴
-addOreBlock("cobalt", "iron", 10)
+addAloneOreBlock("cobalt", "iron", 10)
 	.moon()
 
 // 赛特斯石英
-addOreBlock("certus_quartz", "iron", 3)
+addAloneOreBlock("certus_quartz", "iron", 3)
 	.stone()
 	.deepslate()
