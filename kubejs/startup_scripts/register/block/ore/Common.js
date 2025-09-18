@@ -40,6 +40,15 @@ const ORE_TYPE_CONFIG = {
 			return base
 		}
 	},
+	end: {
+		sound: SoundType.STONE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
+	},
 	moon: {
 		sound: SoundType.STONE,
 		hardness: function (base) {
@@ -118,6 +127,10 @@ function addOreBlock(name, level, hardness) {
 			this.types.push("nether")
 			return this
 		},
+		end: function () {
+			this.types.push("end")
+			return this
+		},
 		moon: function () {
 			this.types.push("moon")
 			return this
@@ -153,7 +166,12 @@ StartupEvents.registry("block", (event) => {
 				cfg = ORE_TYPE_CONFIG["stone"]
 			}
 
-			let blockId = `${global.namespace}:${type}_${ore.name}_ore`
+			let blockId
+			if (type === "stone") {
+				blockId = `${global.namespace}:${ore.name}_ore`
+			} else {
+				blockId = `${global.namespace}:${type}_${ore.name}_ore`
+			}
 
 			let blockBuilder = event.create(blockId)
 
