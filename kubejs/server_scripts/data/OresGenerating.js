@@ -322,7 +322,7 @@ ServerEvents.highPriorityData((event) => {
 	addOreGeneratingType("uranium", "nether", 4)
 		.nether(4)
 
-	// 钒（下界)
+	// 钒(下界)
 	addOreGeneratingType("vanadium", "nether", 9)
 		.nether(10)
 })
