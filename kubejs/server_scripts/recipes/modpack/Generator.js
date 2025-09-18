@@ -126,7 +126,8 @@ ServerEvents.recipes((event) => {
 		"#forge:rods/gold"
 	], [
 		create.deploying(incGoldRod, [incGoldRod, "#forge:dusts/redstone"]),
-		vintageimprovements.laser_cutting(incGoldRod, [incGoldRod], 1000, 50),
+		vintageimprovements.laser_cutting(incGoldRod, [incGoldRod])
+			.energy(1000).maxChargeRate(50),
 	]).transitionalItem(incGoldRod).loops(1)
 
 	// 电磁铁

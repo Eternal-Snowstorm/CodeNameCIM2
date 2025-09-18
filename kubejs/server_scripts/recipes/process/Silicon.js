@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 
 	vintageimprovements.laser_cutting("ae2:silicon", [
 		"cmi:silicon_mixure"
-	]).energy(40)
+	]).energy(400).maxChargeRate(100)
 
 	create.cutting("8x cmi:small_coal_coke", [
 		"#forge:coal_coke"

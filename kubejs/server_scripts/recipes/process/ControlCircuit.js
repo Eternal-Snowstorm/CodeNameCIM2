@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 		]),
 		vintageimprovements.laser_cutting("cmi:incomplete_advanced_control_circuit",[
 			"cmi:incomplete_advanced_control_circuit"
-		]).energy(10),
+		]).energy(1000).maxChargeRate(100),
 		create.pressing("cmi:incomplete_advanced_control_circuit", [
 			"cmi:incomplete_advanced_control_circuit"
 		])
@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
 		]),
 		vintageimprovements.laser_cutting("cmi:incomplete_ultimate_control_circuit",[
 			"cmi:incomplete_ultimate_control_circuit"
-		]).energy(10),
+		]).energy(1000).maxChargeRate(100),
 		create.pressing("cmi:incomplete_ultimate_control_circuit", [
 			"cmi:incomplete_ultimate_control_circuit"
 		])

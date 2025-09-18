@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 	// 晶射红宝石
 	vintageimprovements.laser_cutting("cmi:crystal_ruby", [
 		"cmi:blockstone_source_alpha"
-	]).energy(100)
+	]).energy(100).maxChargeRate(10)
 
 	// 充能紫水晶
 	createaddition.charging("cmi:charged_amethyst", [

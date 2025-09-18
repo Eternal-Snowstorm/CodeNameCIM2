@@ -25,5 +25,5 @@ ServerEvents.recipes((event) => {
 	// 萤石
 	vintageimprovements.laser_cutting("minecraft:glowstone_dust", [
 		"thermal_extra:amethyst_dust"
-	]).energy(50)
+	]).energy(50).maxChargeRate(5)
 })
