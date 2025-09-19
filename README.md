@@ -19,6 +19,7 @@
  - 出现BUG**一定**要反馈(能够使用[**`issues`**](https://github.com/VechniMetel/CodeNameCIM2/issues)最好!)
  - 在修改JEI的时候需要先运行`kjs reload client_scripts`后再运行`reload`
 
+---
 
 ### 整合包打包所需文件
  - **config**
@@ -40,6 +41,17 @@
  - **UpdateLogs.md**
 
 ---
+
+### 本整合包提供了非常多的轮子, 我们非常欢迎社区去使用我们的轮子, 包括但不限于:
+ - [**金属材料注册**](kubejs/startup_scripts/register/Metal.js)
+ - [**矿石方块注册**](kubejs/startup_scripts/register/block/ore/Common.js)
+ - [**可配置矿石生成**](kubejs/server_scripts/data/OresGenerating.js)
+ - [**帕秋莉多方块API封装**](kubejs/server_scripts/utils/DefineMultiBlockStructure.js)
+ - [**匠魂材料构建器**](kubejs/server_scripts/utils/TConMaterialGenerator.js)
+ - [**匠魂材料纹理生成器**](kubejs/server_scripts/utils/TConTexturesGenerator.js)
+ - [**功能性存储抽屉升级注册**](kubejs/startup_scripts/register/item/DrawerUpgrade.js)
+ - [**柴油动力燃料添加**](kubejs/server_scripts/data/DieselEngineFuelTypes.js)
+ - [**金属材料配方集成处理**](kubejs/server_scripts/recipes/alone/metal)
 
 <!--markdownlint-disable MD001 MD033 MD041 MD051-->
 
@@ -83,3 +95,17 @@ Currently in Beta stage.
  - **LICENSE.md**
  - **README.md**
  - **UpdateLogs.md**
+
+---
+
+### This modpack provides a wide variety of utilities, and we highly encourage the community to make use of them, including but not limited to:
+
+* [**Metal Material Registration**](kubejs/startup_scripts/register/Metal.js)
+* [**Ore Block Registration**](kubejs/startup_scripts/register/block/ore/Common.js)
+* [**Configurable Ore Generation**](kubejs/server_scripts/data/OresGenerating.js)
+* [**Patchouli Multiblock API Wrapper**](kubejs/server_scripts/utils/DefineMultiBlockStructure.js)
+* [**Tinkers’ Construct Material Generator**](kubejs/server_scripts/utils/TConMaterialGenerator.js)
+* [**Tinkers’ Construct Texture Generator**](kubejs/server_scripts/utils/TConTexturesGenerator.js)
+* [**Functional Storage Drawer Upgrade Registration**](kubejs/startup_scripts/register/item/DrawerUpgrade.js)
+* [**Diesel Engine Fuel Addition**](kubejs/server_scripts/data/DieselEngineFuelTypes.js)
+* [**Metal Material Recipe Integration Handling**](kubejs/server_scripts/recipes/alone/metal)
