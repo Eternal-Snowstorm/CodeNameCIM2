@@ -4,7 +4,7 @@ ServerEvents.highPriorityData((event) => {
 	 * @param {String} name 矿物ID
 	 * @param {String} dimention 生成维度
 	 * @param {Number} size 矿簇体积
-	 * @param {Number} count 矿石数量
+	 * @param {Number} count 矿簇数量(单个区块)
 	 * @returns 
 	 */
 	function addOreGeneratingType(name, type, size) {
@@ -255,20 +255,16 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	// 赛特斯石英
-	addOreGeneratingType("certus_quartz", "overworld", 9)
-		.overworld(10)
+	addOreGeneratingType("certus_quartz", "overworld", 5)
+		.overworld(2)
 
 	// 埃忒恩
-	addOreGeneratingType("etrium", "overworld", 2)
-		.overworld(2)
+	addOreGeneratingType("etrium", "overworld", 3)
+		.overworld(1)
 
 	// 石英
 	addOreGeneratingType("quartz", "overworld", 9)
-		.overworld(10)
-
-	// 钒
-	addOreGeneratingType("vanadium", "overworld", 9)
-		.overworld(10)
+		.overworld(3)
 
 	// 红镍
 	addOreGeneratingType("lateritic_nickel", "end", 8)
@@ -326,7 +322,7 @@ ServerEvents.highPriorityData((event) => {
 	addOreGeneratingType("uranium", "nether", 4)
 		.nether(4)
 
-	// 钒(下界)
+	// 钒
 	addOreGeneratingType("vanadium", "nether", 9)
 		.nether(10)
 })
