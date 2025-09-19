@@ -316,8 +316,7 @@ global.meltingLevels = {
 		"hepatizon",
 		"electrum",
 		"gold",
-		"copper",
-		"etrium"
+		"copper"
 	],
 	1500: [
 		"uranium",
@@ -339,7 +338,8 @@ global.meltingLevels = {
 		"slimesteel",
 		"cinderslime",
 		"stainless_steel",
-		"iron"
+		"iron",
+		"etrium"
 	],
 	2000: [
 		"manyullyn",
