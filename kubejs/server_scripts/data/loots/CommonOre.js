@@ -144,4 +144,6 @@ ServerEvents.blockLootTables((event) => {
 	addOreLoots.common("variscite")
 	// 辉铜
 	addOreLoots.common("veridium")
+	// 埃忒恩
+	addOreLoots.common("etrium")
 })
