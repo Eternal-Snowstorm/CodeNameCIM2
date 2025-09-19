@@ -214,12 +214,12 @@ ServerEvents.highPriorityData((event) => {
 			mars: function (count) {
 				configuredFeature.config.targets = [
 					{
-						"state": {
+						state: {
 							"Name": `${global.namespace}:mars_${name}_ore`
 						},
-						"target": {
-							"block": "ad_astra:mars_stone",
-							"predicate_type": "minecraft:block_match"
+						target: {
+							predicate_type: "minecraft:tag_match",
+							tag: "ad_astra:mars_stone_replaceables"
 						}
 					}
 				]
@@ -236,15 +236,15 @@ ServerEvents.highPriorityData((event) => {
 						height: {
 							type: "minecraft:trapezoid",
 							max_inclusive: {
-								absolute: 70
+								absolute: 56
 							},
 							min_inclusive: {
-								absolute: -60
+								absolute: -24
 							}
 						}
 					},
 					{
-						"type": "minecraft:biome"
+						type: "minecraft:biome"
 					}
 				]
 				biomeModifier.biomes = "ad_astra:martian_wastelands"
