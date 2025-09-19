@@ -344,7 +344,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("cmi:nether_mechanism", "§c转换下界岩\n§c3%黑石\n§c3%岩浆块\n§c3%灵魂沙\n§c3%灵魂土\n§c3%镶金黑石\n§c3%金矿石\n§c3%远古残骸\n§c3%下界石英\n§c3%萤石\n§c3%下界铀矿石")
 	addAccelerateTooltipLanguage("cmi:cobalt_mechanism", "§e转化下界岩\n§e20%钴矿石")
 	addAccelerateTooltipLanguage("cmi:wooden_mechanism", "§e转化石头\n§e20%煤矿石\n§2转化深板岩\n§215%深层煤矿石\n§21%深层钻石矿石")
-	addAccelerateTooltipLanguage("cmi:smart_mechanism", "§e转化石头\n§e10%钻石矿石\n§e20%金矿石\n§e20%赛特斯石英矿石\n§e1%红宝石矿石\n§e1%蓝宝石矿石\n§e1%绿宝石矿石\n§2转化深板岩\n§215%深层钻石矿石\n§215%深层金矿石\n§215%深层赛特斯石英矿石\n§22%深层红宝石矿石\n§22%深层蓝宝石矿石\n§22%深层绿宝石矿石")
+	addAccelerateTooltipLanguage("cmi:smart_mechanism", "§e转化石头\n§e10%埃忒恩矿石\n§e20%金矿石\n§e20%赛特斯石英矿石\n§e5%银矿石\n§2转化深板岩\n§215%深层埃忒恩矿石\n§215%深层金矿石\n§215%深层赛特斯石英矿石\n§25%深层银矿石")
 	addAccelerateTooltipLanguage("create:precision_mechanism", "§e转化石头\n§e15%铜矿石\n§e15%锌矿石\n§e10%红石矿石\n§2转化深板岩\n§210%深层铜矿石\n§210%深层锌矿石\n§215%深层红石矿石")
 	addAccelerateTooltipLanguage("cmi:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 	addAccelerateTooltipLanguage("cmi:tier_2_aviation_mechanism", "§7转化月石\n§720%月球戴斯矿石\n§75%月球寒冰碎片矿石\n§75%钢块\n§2转化深板岩\n§215%深层戴斯矿石\n§210%深层铁矿石\n§210%深层银矿石")

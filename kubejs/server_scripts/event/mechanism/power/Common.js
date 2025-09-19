@@ -126,20 +126,16 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 
 	// 智能构件
 	addAccelerateEvent("cmi:smart_mechanism", "minecraft:stone", [
-		Item.of("minecraft:diamond_ore").withChance(0.1),
+		Item.of("cmi:etrium_ore").withChance(0.1),
 		Item.of("minecraft:gold_ore").withChance(0.2),
 		Item.of("cmi:certus_quartz_ore").withChance(0.2),
-		Item.of("thermal:ruby_ore").withChance(0.01),
-		Item.of("thermal:sapphire_ore").withChance(0.01),
-		Item.of("minecraft:emerald_ore").withChance(0.01)
+		Item.of("immersiveengineering:ore_silver").withChance(0.05)
 	])
 	addAccelerateEvent("cmi:smart_mechanism", "minecraft:deepslate", [
-		Item.of("minecraft:deepslate_diamond_ore").withChance(0.15),
+		Item.of("cmi:deepslate_etrium_ore").withChance(0.15),
 		Item.of("minecraft:deepslate_gold_ore").withChance(0.2),
 		Item.of("cmi:deepslate_certus_quartz_ore").withChance(0.2),
-		Item.of("thermal:deepslate_ruby_ore").withChance(0.01),
-		Item.of("thermal:deepslate_sapphire_ore").withChance(0.01),
-		Item.of("minecraft:deepslate_emerald_ore").withChance(0.01)
+		Item.of("immersiveengineering:deepslate_ore_silver").withChance(0.05)
 	])
 
 	// 石质构件

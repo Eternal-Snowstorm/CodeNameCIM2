@@ -53,4 +53,41 @@ ServerEvents.recipes((event) => {
 		A: "thermal:cured_rubber",
 		B: "#forge:plates/steel"
 	}).id("ad_astra:wheel")
+
+	// 埃忒恩系列
+	kubejs.shaped("64x ad_astra:etrium_factory_block", [
+		"AAA",
+		"ABA",
+		"AAA"
+	], {
+		A: "#forge:plates/etrium",
+		B: "#forge:ingots/etrium"
+	})
+
+	kubejs.shaped("64x ad_astra:encased_etrium_block", [
+		"AAA",
+		"BBB",
+		"AAA"
+	], {
+		A: "#forge:ingots/steel",
+		B: "#forge:plates/etrium"
+	})
+
+	kubejs.shaped("64x ad_astra:etrium_plateblock", [
+		"AAA",
+		"ABA",
+		"AAA"
+	], {
+		A: "#forge:plates/etrium",
+		B: "#forge:rods/etrium"
+	})
+
+	kubejs.shaped("64x ad_astra:etrium_panel", [
+		"ABA",
+		"BBB",
+		"ABA"
+	], {
+		A: "#forge:ingots/etrium",
+		B: "#forge:plates/etrium"
+	})
 })
