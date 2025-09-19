@@ -430,5 +430,8 @@ ServerEvents.tags("item", (event) => {
 	types.forEach((metal) => {
 		event.get(`forge:${metal}s/etrium`)
 			.add(`ad_astra:etrium_${metal}`)
+
+		event.get(`forge:${metal}s`)
+			.add(`ad_astra:etrium_${metal}`)
 	})
 })
