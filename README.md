@@ -99,13 +99,12 @@ Currently in Beta stage.
 ---
 
 ### This modpack provides a wide variety of utilities, and we highly encourage the community to make use of them, including but not limited to:
-
-* [**Metal Material Registration**](kubejs/startup_scripts/register/Metal.js)
-* [**Ore Block Registration**](kubejs/startup_scripts/register/block/ore/Common.js)
-* [**Configurable Ore Generation**](kubejs/server_scripts/data/OresGenerating.js)
-* [**Patchouli Multiblock API Wrapper**](kubejs/server_scripts/utils/DefineMultiBlockStructure.js)
-* [**Tinkers’ Construct Material Generator**](kubejs/server_scripts/utils/TConMaterialGenerator.js)
-* [**Tinkers’ Construct Texture Generator**](kubejs/server_scripts/utils/TConTexturesGenerator.js)
-* [**Functional Storage Drawer Upgrade Registration**](kubejs/startup_scripts/register/item/DrawerUpgrade.js)
-* [**Diesel Engine Fuel Addition**](kubejs/server_scripts/data/DieselEngineFuelTypes.js)
-* [**Metal Material Recipe Integration Handling**](kubejs/server_scripts/recipes/alone/metal)
+ - [**Metal Material Registration**](kubejs/startup_scripts/register/Metal.js)
+ - [**Ore Block Registration**](kubejs/startup_scripts/register/block/ore/Common.js)
+ - [**Configurable Ore Generation**](kubejs/server_scripts/data/OresGenerating.js)
+ - [**Patchouli Multiblock API Wrapper**](kubejs/server_scripts/utils/DefineMultiBlockStructure.js)
+ - [**Tinkers’ Construct Material Generator**](kubejs/server_scripts/utils/TConMaterialGenerator.js)
+ - [**Tinkers’ Construct Texture Generator**](kubejs/server_scripts/utils/TConTexturesGenerator.js)
+ - [**Functional Storage Drawer Upgrade Registration**](kubejs/startup_scripts/register/item/DrawerUpgrade.js)
+ - [**Diesel Engine Fuel Addition**](kubejs/server_scripts/data/DieselEngineFuelTypes.js)
+ - [**Metal Material Recipe Integration Handling**](kubejs/server_scripts/recipes/alone/metal)
