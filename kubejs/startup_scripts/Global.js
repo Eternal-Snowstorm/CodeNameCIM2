@@ -228,7 +228,8 @@ global.meltingPoints = {
 	"magnesium": 650,
 	"sodium": 98,
 	"potassium": 64,
-	"calcium": 842
+	"calcium": 842,
+	"etrium": 1486 //null
 }
 // 命名空间
 global.materialNamespace = {
@@ -315,6 +316,7 @@ global.meltingLevels = {
 		"electrum",
 		"gold",
 		"copper",
+		"etrium"
 	],
 	1500: [
 		"uranium",
