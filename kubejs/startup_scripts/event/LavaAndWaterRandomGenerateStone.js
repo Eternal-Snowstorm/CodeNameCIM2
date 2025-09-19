@@ -9,7 +9,11 @@ const CHANCE = 0.5
 let replaceBlock = [
 	// Example
 	[["minecraft:sand", "minecraft:red_sand"], "minecraft:sandstone"],
-	["minecraft:red_sand", "minecraft:sandstone"]
+	["minecraft:magma_block", "minecraft:tuff"],
+	[["minecraft:soul_sand", "minecraft:soul_soil"], "minecraft:basalt"],
+	["create:andesite_alloy_block", "minecraft:andesite"],
+	["minecraft:quartz_block", "minecraft:diorite"],
+	["thermal:raw_silver_block", "thermal:silver_ore"]
 ]
 
 function isMatch(belowBlockId, condition) {

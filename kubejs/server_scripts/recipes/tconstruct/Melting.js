@@ -40,56 +40,56 @@ ServerEvents.recipes((event) => {
 			if (IngredientUtils.isNotNull(ingot)) {
 				tconstruct.melting(Fluid.of(fluidId, 90))
 					.ingredient(ingot)
-					.time(40)
+					.time(200)
 					.temperature(meltingPoint)
 			}
 
 			if (IngredientUtils.isNotNull(plate)) {
 				tconstruct.melting(Fluid.of(fluidId, 90))
 					.ingredient(plate)
-					.time(40)
+					.time(200)
 					.temperature(meltingPoint)
 			}
 
 			if (IngredientUtils.isNotNull(nugget)) {
 				tconstruct.melting(Fluid.of(fluidId, 10))
 					.ingredient(nugget)
-					.time(40)
+					.time(200)
 					.temperature(meltingPoint)
 			}
 
 			if (IngredientUtils.isNotNull(gear)) {
 				tconstruct.melting(Fluid.of(fluidId, 360))
 					.ingredient(gear)
-					.time(40)
+					.time(200)
 					.temperature(meltingPoint)
 			}
 
 			if (IngredientUtils.isNotNull(dust)) {
 				tconstruct.melting(Fluid.of(fluidId, 90))
 					.ingredient(dust)
-					.time(40)
+					.time(200)
 					.temperature(meltingPoint)
 			}
 
 			if (IngredientUtils.isNotNull(rawMaterial)) {
 				tconstruct.melting(Fluid.of(fluidId, 120))
 					.ingredient(rawMaterial)
-					.time(40)
+					.time(200)
 					.temperature(meltingPoint)
 			}
 
 			if (IngredientUtils.isNotNull(rawBlock)) {
 				tconstruct.melting(Fluid.of(fluidId, 1080))
 					.ingredient(rawBlock)
-					.time(40)
+					.time(200)
 					.temperature(meltingPoint)
 			}
 
 			if (IngredientUtils.isNotNull(block)) {
 				tconstruct.melting(Fluid.of(fluidId, 810))
 					.ingredient(block)
-					.time(40)
+					.time(200)
 					.temperature(meltingPoint)
 			}
 

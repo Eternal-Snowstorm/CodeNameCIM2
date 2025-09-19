@@ -91,6 +91,11 @@ ServerEvents.highPriorityData((event) => {
 		"create:powdered_obsidian"
 	))
 
+	addJsonFile("slag", addUnification(
+		"#forge:slag",
+		"thermal:slag"
+	))
+
 	/**
 	 * @example addJsonFile("coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
 	 * @param {Internal.Item | Internal.Ingredient} match 
