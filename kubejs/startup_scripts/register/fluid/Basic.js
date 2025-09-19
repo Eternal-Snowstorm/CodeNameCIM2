@@ -42,7 +42,7 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("oil_shale_steam")
 		.noBlock()
 	addAloneFluid("blood")
-	addAloneFluid("oily_sludge")
+	addAloneFluid("sludge_suspension")
 	addAloneFluid("delta_unstable_solution")
 	addAloneFluid("turbid_waste_liquid")
 	addAloneFluid("cured_rubber")

@@ -63,4 +63,10 @@ ServerEvents.recipes((event) => {
 		"#cmi:crystals",
 		"32x #forge:seeds"
 	]).heated()
+
+	// 淤泥悬浊液
+	create.mixing(Fluid.of("cmi:sludge_suspension", 1000), [
+		Fluid.of("deepdrilling:sludge", 500),
+		Fluid.of("minecraft:water", 500)
+	])
 })

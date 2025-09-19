@@ -5,13 +5,12 @@ ServerEvents.recipes((event) => {
 		"4x cmi:sludge_extract",
 		Item.of("cmi:siltsteel_dust").withChance(0.01),
 		Fluid.of("minecraft:water", 900)
-	], Fluid.of("deepdrilling:sludge")).energy(5000)
+	], Fluid.of("cmi:sludge_suspension")).energy(5000)
 
 	thermal.refinery([
 		"1x cmi:sludge_extract",
-		Item.of("cmi:siltsteel_dust").withChance(0.01),
 		Fluid.of("minecraft:water", 900)
-	], Fluid.of("deepdrilling:sludge")).energy(5000)
+	], Fluid.of("cmi:sludge_suspension")).energy(5000)
 
 	// 石化柴油来自重油
 	thermal_extra.advanced_refinery([

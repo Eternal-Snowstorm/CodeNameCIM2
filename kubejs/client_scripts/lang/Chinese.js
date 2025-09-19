@@ -121,7 +121,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("trinitrotoluene_solution", "三硝基甲苯溶液")
 	addFluidLanguage("fluid_nitroglycerine", "液态硝化甘油")
 	addFluidLanguage("crystal_catalyt", "晶体催生剂")
-	addFluidLanguage("oily_sludge", "含油淤泥")
+	addFluidLanguage("sludge_suspension", "淤泥悬浊液")
 	addFluidLanguage("syrup", "糖浆")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
