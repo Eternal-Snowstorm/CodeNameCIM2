@@ -416,4 +416,19 @@ ServerEvents.tags("item", (event) => {
 			})
 		}
 	}
+
+	event.get("forge:storage_blocks/etrium")
+		.add("ad_astra:etrium_block")
+
+	let types = [
+		"ingot",
+		"nugget",
+		"plate",
+		"rod"
+	]
+
+	types.forEach((metal) => {
+		event.get(`forge:${metal}s/etrium`)
+			.add(`ad_astra:etrium_${metal}`)
+	})
 })
