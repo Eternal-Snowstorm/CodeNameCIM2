@@ -8,12 +8,12 @@
 			"from": [0, 0, 0],
 			"to": [16, 16, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#background"},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#background"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#background"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#background"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#background"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#background"}
+				"north": {"uv": [0, 0, 16, 16], "texture": "#background", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#background", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#background", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#background", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#background", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#background", "cullface": "down"}
 			}
 		},
 		{
@@ -21,12 +21,12 @@
 			"from": [-0.01, -0.01, -0.01],
 			"to": [16.01, 16.01, 16.01],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0}
+				"north": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0, "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0, "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0, "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0, "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0, "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#ore", "tintindex": 0, "cullface": "down"}
 			}
 		}
 	],
