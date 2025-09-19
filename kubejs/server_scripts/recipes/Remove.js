@@ -370,6 +370,8 @@ ServerEvents.recipes((event) => {
 			}, {
 				type: "immersiveengineering:arc_furnace",
 				output: "#forge:ingots/osmium"
+			},{
+				id:`immersiveengineering:arcfurnace/ore_${metal}`
 			}
 		])
 	})
