@@ -280,6 +280,11 @@ addMaterial("calorite", 0xC94D4E, "wooden")
 	.molten()
 	.dust()
 
+// 埃忒恩
+addMaterial("etrium", 0x32FFD4, "diamond")
+	.molten()
+	.dust()
+
 // 钠
 addMaterial("sodium", 0xD7DDDD, "wooden")
 	.ingot()

@@ -24,6 +24,7 @@ ServerEvents.recipes((event) => {
     addCrushedSplashing("desh", "immersiveengineering:slag")
     addCrushedSplashing("ostrum", "mekanism:salt")
     addCrushedSplashing("calorite", "mekanism:dust_coal")
+    addCrushedSplashing("etrium", "ae2:certus_quartz_dust")
 
     function addCrushedSplashing(material, by_product) {
         let crushed = `#create:crushed_raw_materials/${material}`
