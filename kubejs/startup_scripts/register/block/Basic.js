@@ -20,6 +20,7 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.DEEPSLATE_BRICKS)
 		.box(0, 0, 0, 16, 12, 16, true)
 		.model("cmi:block/industrial_platform")
+		.waterlogged()
 		.hardness(4)
 		.resistance(8)
 		.tagBlock(global.ToolType["pickaxe"])
