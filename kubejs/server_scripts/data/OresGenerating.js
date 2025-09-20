@@ -1,19 +1,10 @@
 ServerEvents.highPriorityData((event) => {
-	/**
-	 * 
-	 * @param {String} name 矿物ID
-	 * @param {String} dimention 生成维度
-	 * @param {Number} size 矿簇体积
-	 * @param {Number} count 矿簇数量(单个区块)
-	 * @returns 
-	 */
-
 	// 赛特斯石英
 	addOreGeneratingType("certus_quartz", "overworld", 5)
 		.overworld(2)
 
 	// 埃忒恩
-	addOreGeneratingType("etrium", "overworld", 2) 
+	addOreGeneratingType("etrium", "overworld", 2)
 		.overworld(4)
 
 	// 石英
@@ -80,6 +71,14 @@ ServerEvents.highPriorityData((event) => {
 	addOreGeneratingType("vanadium", "nether", 9)
 		.nether(10)
 
+	/**
+	 * 
+	 * @param {String} name 矿物ID
+	 * @param {String} dimention 生成维度
+	 * @param {Number} size 矿簇体积
+	 * @param {Number} count 矿簇数量(单个区块)
+	 * @returns 
+	 */
 	function addOreGeneratingType(name, type, size) {
 		let oreType = {
 			"overworld": "",
