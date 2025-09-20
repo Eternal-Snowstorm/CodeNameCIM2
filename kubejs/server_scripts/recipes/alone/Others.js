@@ -151,7 +151,7 @@ ServerEvents.recipes((event) => {
 		" B ",
 		"A A"
 	], {
-		A: "#forge:plates/invar",
+		A: "cmi:thermal_mechanism",
 		B: "cmi:wooden_mechanism"
 	}).id("pipez:item_pipe")
 
@@ -160,7 +160,7 @@ ServerEvents.recipes((event) => {
 		" B ",
 		"A A"
 	], {
-		A: "#forge:plates/invar",
+		A: "cmi:thermal_mechanism",
 		B: "cmi:copper_mechanism"
 	}).id("pipez:fluid_pipe")
 
@@ -169,7 +169,7 @@ ServerEvents.recipes((event) => {
 		" B ",
 		"A A"
 	], {
-		A: "#forge:plates/invar",
+		A: "cmi:thermal_mechanism",
 		B: "vintageimprovements:redstone_module"
 	}).id("pipez:energy_pipe")
 
@@ -178,7 +178,7 @@ ServerEvents.recipes((event) => {
 		" B ",
 		"A A"
 	], {
-		A: "#forge:plates/invar",
+		A: "cmi:thermal_mechanism",
 		B: "cmi:air_tight_mechanism"
 	}).id("pipez:gas_pipe")
 
