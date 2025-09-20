@@ -13,7 +13,7 @@ let replaceBlock = [
 	[["minecraft:soul_sand", "minecraft:soul_soil"], "minecraft:basalt"],
 	["create:andesite_alloy_block", "minecraft:andesite"],
 	["minecraft:quartz_block", "minecraft:diorite"],
-	["thermal:raw_silver_block", "thermal:silver_ore"]
+	[["thermal:raw_silver_block","immersiveengineering:raw_block_silver"], "thermal:silver_ore"]
 ]
 
 function isMatch(belowBlockId, condition) {
