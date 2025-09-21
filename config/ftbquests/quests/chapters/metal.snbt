@@ -123,7 +123,7 @@
 			image: "tconstruct:block/smeltery/controller/smeltery_active"
 			rotation: 0.0d
 			width: 1.0d
-			x: 10.0d
+			x: 11.0d
 			y: 0.5d
 		}
 		{
@@ -1038,6 +1038,30 @@
 			x: 7.0d
 			y: -8.5d
 		}
+		{
+			height: 1.0d
+			image: "minecraft:block/furnace_front_on"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/blast_furnace_front_on"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/machines/machine_smelter_active"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.0d
+			y: -4.5d
+		}
 	]
 	order_index: 3
 	quest_links: [ ]
@@ -1055,7 +1079,8 @@
 				title: "铝 600°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			title: "铝 660°C"
+			x: -5.5d
 			y: 2.5d
 		}
 		{
@@ -1071,7 +1096,7 @@
 				title: "铁 1535°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: -2.5d
 			y: -4.5d
 		}
 		{
@@ -1137,7 +1162,7 @@
 				title: "锡 232°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: 2.5d
 		}
 		{
@@ -1153,7 +1178,7 @@
 				title: "铅 328°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
@@ -1169,7 +1194,7 @@
 				title: "锌 420°C"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: 2.5d
 		}
 		{
@@ -1185,7 +1210,7 @@
 				title: "银 962°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
@@ -1201,7 +1226,7 @@
 				title: "金 1064°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: 0.5d
 		}
 		{
@@ -1217,7 +1242,7 @@
 				title: "铜 1085°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: 0.5d
 		}
 		{
@@ -1233,7 +1258,7 @@
 				title: "安山合金 760°C"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -6.5d
 			y: 2.5d
 		}
 		{
@@ -1265,7 +1290,7 @@
 				title: "青铜 820°C"
 				type: "checkmark"
 			}]
-			x: -4.5d
+			x: -7.5d
 			y: 2.5d
 		}
 		{
@@ -1281,7 +1306,7 @@
 				title: "康铜 1200°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: -4.5d
 			y: -0.5d
 		}
 		{
@@ -1297,7 +1322,7 @@
 				title: "铸铁 1200°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: -3.5d
 			y: -0.5d
 		}
 		{
@@ -1313,7 +1338,7 @@
 				title: "琥珀金 1060°C"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -0.5d
 			y: 0.5d
 		}
 		{
@@ -1329,7 +1354,7 @@
 				title: "余烬粘液 1288°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -1.5d
 		}
 		{
@@ -1377,7 +1402,7 @@
 				title: "流明 993°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -5.5d
 			y: 1.5d
 		}
 		{
@@ -1393,7 +1418,7 @@
 				title: "信素 1231°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -1.5d
 		}
 		{
@@ -1425,7 +1450,7 @@
 				title: "铀 1132°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -0.5d
 		}
 		{
@@ -1457,7 +1482,7 @@
 				title: "钴 1495°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -3.5d
 		}
 		{
@@ -1473,7 +1498,7 @@
 				title: "铂 1768°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: -1.5d
 			y: -6.5d
 		}
 		{
@@ -1489,7 +1514,7 @@
 				title: "铬 1907°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -8.5d
 		}
 		{
@@ -1505,7 +1530,7 @@
 				title: "钒 1910°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: -8.5d
 		}
 		{
@@ -1521,7 +1546,7 @@
 				title: "钾 64°C"
 				type: "checkmark"
 			}]
-			x: -5.5d
+			x: 0.5d
 			y: 2.5d
 		}
 		{
@@ -1537,7 +1562,7 @@
 				title: "钠 98°C"
 				type: "checkmark"
 			}]
-			x: -6.5d
+			x: -0.5d
 			y: 2.5d
 		}
 		{
@@ -1553,7 +1578,7 @@
 				title: "钙 842°C"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: 0.5d
 			y: 1.5d
 		}
 		{
@@ -1569,7 +1594,7 @@
 				title: "镁 650°C"
 				type: "checkmark"
 			}]
-			x: -7.5d
+			x: -4.5d
 			y: 2.5d
 		}
 		{
@@ -1585,7 +1610,7 @@
 				title: "强化荧石 943°C"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -1601,7 +1626,7 @@
 				title: "玫瑰金 960°C"
 				type: "checkmark"
 			}]
-			x: -4.5d
+			x: -2.5d
 			y: 1.5d
 		}
 		{
@@ -1617,8 +1642,8 @@
 				title: "黑色科林斯青铜 990°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			icon: "tconstruct:amethyst_bronze_ingot"
@@ -1633,7 +1658,7 @@
 				title: "紫水晶青铜 1043°C"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: 0.5d
 			y: 0.5d
 		}
 		{
@@ -1649,8 +1674,8 @@
 				title: "黏钢 1098°C"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: 0.5d
+			y: -0.5d
 		}
 		{
 			icon: "tconstruct:pig_iron_ingot"
@@ -1665,7 +1690,7 @@
 				title: "生铁 1145°C"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: -0.5d
 		}
 		{
@@ -1681,7 +1706,7 @@
 				title: "皇后史莱姆 1193°C"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: -0.5d
 		}
 		{
@@ -1697,7 +1722,7 @@
 				title: "强化黑曜石 1413°C"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: -3.5d
 		}
 		{
@@ -1713,7 +1738,7 @@
 				title: "末影 1501°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -4.5d
 		}
 		{
@@ -1729,7 +1754,7 @@
 				title: "工业铁 1507°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -4.5d
 		}
 		{
@@ -1745,7 +1770,7 @@
 				title: "不锈耐酸钢 1510°C"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: -4.5d
 		}
 		{
@@ -1761,8 +1786,8 @@
 				title: "潜影合金 1562°C"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: -4.5d
+			x: 0.5d
+			y: -5.5d
 		}
 		{
 			icon: "tconstruct:manyullyn_ingot"
@@ -1772,7 +1797,7 @@
 				title: "玛玉灵 1617°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -5.5d
 		}
 		{
@@ -1783,7 +1808,7 @@
 				title: "双子物质 1671°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: -5.5d
 		}
 		{
@@ -1799,7 +1824,7 @@
 				title: "海晶 1741°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -6.5d
 		}
 		{
@@ -1815,7 +1840,7 @@
 				title: "旋律 1755°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -6.5d
 		}
 		{
@@ -1847,7 +1872,7 @@
 				title: "注灵 1901°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: 0.5d
 			y: -8.5d
 		}
 		{
@@ -1976,7 +2001,7 @@
 				type: "checkmark"
 			}]
 			title: "乙醇 1132°C"
-			x: 11.0d
+			x: 12.0d
 			y: 0.5d
 		}
 		{
@@ -1993,7 +2018,7 @@
 				type: "checkmark"
 			}]
 			title: "浑浊废液 1189°C"
-			x: 12.0d
+			x: 13.0d
 			y: 0.5d
 		}
 		{
@@ -2128,7 +2153,18 @@
 				title: "埃忒恩 1486°C"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			id: "7E0E151C4CEC8EA4"
+			tasks: [{
+				id: "6F417F9A24768FE2"
+				item: "ad_astra:etrium_ingot"
+				type: "item"
+			}]
+			title: "埃忒恩 1486°C"
+			x: -1.5d
 			y: -3.5d
 		}
 	]
