@@ -37,4 +37,9 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 		.icon(() => Item.of("cmi:unknown_entity_"))
 		.content(() => Ingredient.of("#cmi:dev_doll").itemIds)
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.developers`))
+
+	addCreativeTab("random_mechanisms")
+		.icon(() => Item.of("cmi:mechanical_random_mechanism"))
+		.content(() => Ingredient.of("#cmi:random_mechanisms").itemIds)
+		.displayName(Component.translatable(`itemGroup.${global.namespace}.random_mechanisms`))
 })

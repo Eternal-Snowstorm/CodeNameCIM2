@@ -22,6 +22,7 @@
     "itemGroup.cmi.mechanisms": "构件与革新: 构件",
     "itemGroup.cmi.metals": "构件与革新: 金属",
     "itemGroup.cmi.developers": "构件与革新: 开发者",
+    "itemGroup.cmi.random_mechanisms": "构建与革新: 随机构件",
     "curios.identifier.mechanisms": "构件",
     "promp.cmi.ender_mechanism.location_stored": "当前坐标已存入末影构件",
     "message.cmi.debug.getHardness": "这个方块的硬度是: %s",
