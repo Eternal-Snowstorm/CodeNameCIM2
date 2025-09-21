@@ -340,14 +340,6 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 7.0d
-			y: 2.5d
-		}
-		{
-			height: 1.0d
-			image: "immersiveengineering:item/graphite_electrode"
-			rotation: 0.0d
-			width: 1.0d
-			x: 7.0d
 			y: 1.5d
 		}
 		{
@@ -1039,16 +1031,7 @@
 			y: -8.5d
 		}
 		{
-			height: 1.0d
-			image: "minecraft:block/furnace_front_on"
-			rotation: 0.0d
-			width: 1.0d
-			x: 10.0d
-			y: 0.5d
-		}
-		{
-			height: 1.0d
-			image: "minecraft:block/blast_furnace_front_on"
+			height: 1.0dk/blast_furnace_front_on"
 			rotation: 0.0d
 			width: 1.0d
 			x: 9.0d
@@ -1060,7 +1043,103 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 8.0d
-			y: -4.5d
+			y: 4.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/machines/machine_smelter_active"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/blast_furnace_front_on"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/blast_furnace_front_on"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/furnace_front_on"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			height: 1.0d
+			image: "tconstruct:block/smeltery/controller/smeltery_active"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			height: 1.0d
+			image: "tconstruct:block/smeltery/controller/smeltery_active"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 4.5d
 		}
 	]
 	order_index: 3
@@ -1096,8 +1175,8 @@
 				title: "铁 1535°C"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: -4.5d
+			x: 0.5d
+			y: 4.5d
 		}
 		{
 			icon: "minecraft:lava_bucket"
@@ -1242,8 +1321,8 @@
 				title: "铜 1085°C"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 0.5d
+			x: 0.5d
+			y: 5.5d
 		}
 		{
 			icon: "create:andesite_alloy"
@@ -1674,8 +1753,8 @@
 				title: "黏钢 1098°C"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: -0.5d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			icon: "tconstruct:pig_iron_ingot"
@@ -1787,7 +1866,7 @@
 				type: "checkmark"
 			}]
 			x: 0.5d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
 			icon: "tconstruct:manyullyn_ingot"
