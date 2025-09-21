@@ -172,10 +172,10 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 	 */
 	function addAccelerateEvent(input, stone, blocks) {
 		// 判定是否主手手持构件
-		if (event.hand === "OFF_HAND") {
+		if (event.hand !== "MAIN_HAND" || !player || !item || item.isEmpty()) {
 			return false
 		}
-		if (player === null) {
+		if (item.getId() !== input) {
 			return false
 		}
 		if (item.is(input)) {

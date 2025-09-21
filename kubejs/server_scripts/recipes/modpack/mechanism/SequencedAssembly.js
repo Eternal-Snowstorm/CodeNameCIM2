@@ -226,9 +226,9 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:air_tight_mechanism", [
 		"#forge:plates/osmium"
 	], [
-		create.deploying(iom, [iom, "mekanism:hdpe_sheet"]),
-		create.deploying(iom, [iom, "mekanism:structural_glass"]),
-		create.pressing(iom, iom),
+		create.deploying(iom, [iom, "#forge:gears/electrum"]),
+		create.deploying(iom, [iom, "#forge:plates/polyolefin"]),
+		create.deploying(iom, [iom, "thermal:florb"]),
 		create.deploying(iom, [iom, "cmi:mekanism_mechanism_part"])
 	]).transitionalItem(iom).loops(1)
 
@@ -267,7 +267,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(iumm, [iumm, "minecraft:diamond"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(iumm).loops(1)
-	
+
 	// 核能
 	create.sequenced_assembly("cmi:nuclear_mechanism", [
 		"#forge:plates/lead"
