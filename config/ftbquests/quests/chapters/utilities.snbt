@@ -589,12 +589,12 @@
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
-			icon: "cmi:industrial_platform"
+			icon: "industrial_platform:industrial_platform"
 			id: "7BA8A28AD2EA188E"
 			rewards: [
 				{
 					id: "5F3F01C87AFE2643"
-					item: "cmi:industrial_platform"
+					item: "industrial_platform:industrial_platform"
 					type: "item"
 				}
 				{
