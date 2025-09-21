@@ -146,7 +146,7 @@ ServerEvents.recipes((event) => {
 	}).id("cmi:peat_torch")
 
 	// pipez item|fluid|energy|gas|all
-	kubejs.shaped("16x pipez:item_pipe", [
+	kubejs.shaped("32x pipez:item_pipe", [
 		"A A",
 		" B ",
 		"A A"
@@ -155,7 +155,7 @@ ServerEvents.recipes((event) => {
 		B: "cmi:wooden_mechanism"
 	}).id("pipez:item_pipe")
 
-	kubejs.shaped("16x pipez:fluid_pipe", [
+	kubejs.shaped("32x pipez:fluid_pipe", [
 		"A A",
 		" B ",
 		"A A"
@@ -164,7 +164,7 @@ ServerEvents.recipes((event) => {
 		B: "cmi:copper_mechanism"
 	}).id("pipez:fluid_pipe")
 
-	kubejs.shaped("16x pipez:energy_pipe", [
+	kubejs.shaped("32x pipez:energy_pipe", [
 		"A A",
 		" B ",
 		"A A"
@@ -173,7 +173,7 @@ ServerEvents.recipes((event) => {
 		B: "vintageimprovements:redstone_module"
 	}).id("pipez:energy_pipe")
 
-	kubejs.shaped("16x pipez:gas_pipe", [
+	kubejs.shaped("32x pipez:gas_pipe", [
 		"A A",
 		" B ",
 		"A A"

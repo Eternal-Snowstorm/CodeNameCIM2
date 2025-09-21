@@ -4,7 +4,7 @@ ServerEvents.highPriorityData((event) => {
 		.overworld(2)
 
 	// 埃忒恩
-	addOreGeneratingType("etrium", "overworld", 2)
+	addOreGeneratingType("etrium", "overworld", 4)
 		.overworld(4)
 
 	// 石英

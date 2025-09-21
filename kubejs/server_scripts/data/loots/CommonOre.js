@@ -111,6 +111,8 @@ ServerEvents.blockLootTables((event) => {
 	addOreLoots.common("argentite")
 	// 赛特斯石英
 	addOreLoots.alone("cmi:certus_quartz_ore", "ae2:certus_quartz_crystal")
+	// 赛特斯（深层）
+	addOreLoots.alone("cmi:deepslate_certus_quartz_ore", "ae2:certus_quartz_crystal")
 	// 铬
 	addOreLoots.alone("cmi:moon_chromium_ore", "cmi:raw_chromium")
 	// 钴
