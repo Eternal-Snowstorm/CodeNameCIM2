@@ -18,19 +18,6 @@ ServerEvents.recipes((event) => {
 		E: "cmi:stone_plate"
 	})
 
-	// 工业平台
-	kubejs.shaped("cmi:industrial_platform", [
-		"ACB",
-		"EDE",
-		"EEE"
-	], {
-		A: "#forge:dyes/yellow",
-		B: "#forge:dyes/black",
-		C: "#forge:deepslate",
-		D: "cmi:stone_mechanism",
-		E: "#forge:stone"
-	})
-
 	// 橡胶手
 	kubejs.shaped("create:brass_hand", [
 		" A ",
