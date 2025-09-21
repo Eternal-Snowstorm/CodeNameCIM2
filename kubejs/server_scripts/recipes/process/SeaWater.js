@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 	// 酸性浓缩海水
 	create.mixing(Fluid.of("cmi:acidic_concentrated_sea_water", 500), [
 		Fluid.of("cmi:concentrated_sea_water", 500),
-		Fluid.of("mekanism:sulfric_acid", 100)
+		Fluid.of("mekanism:sulfuric_acid", 100)
 	])
 
 	create.mixing(Fluid.of("cmi:acidic_concentrated_sea_water", 500), [

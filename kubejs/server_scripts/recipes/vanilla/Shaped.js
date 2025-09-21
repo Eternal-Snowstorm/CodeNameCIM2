@@ -29,4 +29,17 @@ ServerEvents.recipes((event) => {
 		B: "minecraft:furnace",
 		C: "minecraft:smooth_stone"
 	}).id("minecraft:blast_furnace")
+
+	// 工业平台
+	kubejs.shaped("industrial_platform:industrial_platform", [
+		"ACB",
+		"EDE",
+		"EEE"
+	], {
+		A: "#forge:dyes/yellow",
+		B: "#forge:dyes/black",
+		C: "#forge:deepslate",
+		D: "cmi:stone_mechanism",
+		E: "#forge:stone"
+	}).id("industrial_platform:industrial_platform")
 })

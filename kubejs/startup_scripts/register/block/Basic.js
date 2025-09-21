@@ -15,20 +15,6 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["wooden"])
 		.requiresTool(true)
 
-	// 便携工业平台
-	addBlock("industrial_platform", "cardinal")
-		.soundType(SoundType.DEEPSLATE_BRICKS)
-		.box(0, 0, 0, 16, 12, 16, true)
-		.model("cmi:block/industrial_platform")
-		.waterlogged()
-		.hardness(4)
-		.resistance(8)
-		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock(global.MiningLevel["wooden"])
-		.requiresTool(true)
-		.notSolid()
-		.defaultCutout()
-
 	// 背景
 	addBlock("green_screen")
 		.lightLevel(15)
