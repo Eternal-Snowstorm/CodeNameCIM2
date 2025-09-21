@@ -147,36 +147,28 @@ ServerEvents.recipes((event) => {
 
 	// pipez item|fluid|energy|gas|all
 	kubejs.shaped("32x pipez:item_pipe", [
-		"A A",
-		" B ",
-		"A A"
+		"ABA"
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "cmi:wooden_mechanism"
 	}).id("pipez:item_pipe")
 
 	kubejs.shaped("32x pipez:fluid_pipe", [
-		"A A",
-		" B ",
-		"A A"
+		"ABA"
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "cmi:copper_mechanism"
 	}).id("pipez:fluid_pipe")
 
 	kubejs.shaped("32x pipez:energy_pipe", [
-		"A A",
-		" B ",
-		"A A"
+		"ABA"
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "vintageimprovements:redstone_module"
 	}).id("pipez:energy_pipe")
 
 	kubejs.shaped("32x pipez:gas_pipe", [
-		"A A",
-		" B ",
-		"A A"
+		"ABA"
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "cmi:air_tight_mechanism"
