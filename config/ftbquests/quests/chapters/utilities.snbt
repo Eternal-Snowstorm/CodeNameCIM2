@@ -593,14 +593,14 @@
 			id: "7BA8A28AD2EA188E"
 			rewards: [
 				{
-					id: "5F3F01C87AFE2643"
-					item: "industrial_platform:industrial_platform"
-					type: "item"
-				}
-				{
 					id: "750CB938A115C0E0"
 					type: "xp"
 					xp: 10
+				}
+				{
+					id: "49D5F0F64419194F"
+					item: "industrial_platform:industrial_platform"
+					type: "item"
 				}
 			]
 			subtitle: "搭建基地的好帮手"
