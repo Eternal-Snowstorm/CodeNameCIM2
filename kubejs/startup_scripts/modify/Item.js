@@ -71,14 +71,9 @@ ItemEvents.modification((event) => {
 	event.modify("minecraft:sugar_cane", (modify) => {
 		modify.setFoodProperties((food) => {
 			food.hunger(2)
-				.saturation(5)
+				.saturation(2)
 				.alwaysEdible()
 				.fastToEat()
-				.eaten((event) => {
-					let { player } = event
-
-					player.give("cmi:sugarcane_fiber")
-				})
 		})
 	})
 })

@@ -17,14 +17,12 @@ ServerEvents.recipes((event) => {
 		Item.of("ae2:certus_quartz_crystal").withChance(0.25),
 		Item.of("create:experience_nugget").withChance(0.75),
 		Item.of("minecraft:cobblestone").withChance(0.12)
-	], "cmi:certus_quartz_ore"
-	)
+	], "cmi:certus_quartz_ore")
 
 	create.crushing([
 		"2x ae2:certus_quartz_crystal",
 		Item.of("ae2:certus_quartz_crystal").withChance(0.25),
 		Item.of("create:experience_nugget").withChance(0.75),
 		Item.of("minecraft:cobbled_deepslate").withChance(0.12)
-	], "cmi:deepslate_certus_quartz_ore"
-	)
+	], "cmi:deepslate_certus_quartz_ore")
 })
