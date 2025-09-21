@@ -89,7 +89,7 @@ ServerEvents.recipes((event) => {
 							"count": 1
 						}
 					],
-					"results": [
+					"outputs": [
 						{
 							"base_ingredient": {
 								"tag": `forge:dusts/${solution}`
@@ -122,7 +122,7 @@ ServerEvents.recipes((event) => {
 							"count": 1
 						}
 					],
-					"results": [
+					"outputs": [
 						{
 							"base_ingredient": {
 								"tag": `forge:dusts/${solution}`
