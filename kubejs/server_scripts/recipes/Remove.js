@@ -97,7 +97,9 @@ ServerEvents.recipes((event) => {
 		"createaddition:mixing/bioethanol",
 		"thermal:compat/mekanism/smelter_mek_osmium_ore",
 		"create:milling/andesite",
-		"create:industrial_iron_block_from_ingots_iron_stonecutting"
+		"create:industrial_iron_block_from_ingots_iron_stonecutting",
+		"create:crushing/tuff",
+		"create:crushing/tuff_recycling"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

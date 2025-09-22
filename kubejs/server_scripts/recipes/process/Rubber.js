@@ -84,7 +84,7 @@ ServerEvents.recipes((event) => {
 	create.mixing(Fluid.of("cmi:cured_rubber", 500), [
 		"#forge:dusts/sulfur",
 		"#forge:plates/rubber"
-	]).heatRequirement("grilled")
+	]).heatRequirement(global.HeatLevel["grilled"])
 
 	create.mixing(Fluid.of("cmi:cured_rubber", 1000), [
 		"2x thermal:rubber",
@@ -97,7 +97,11 @@ ServerEvents.recipes((event) => {
 		.fluid(Fluid.of("cmi:cured_rubber", 250))
 		.cooling_time(20)
 
-	//硫粉
+	tconstruct.casting_basin("thermal:cured_rubber_block")
+		.fluid(Fluid.of("cmi:cured_rubber", 1000))
+		.cooling_time(20 * 4)
+
+	// 硫粉
 	create.milling("thermal:sulfur_dust", [
 		"#forge:gems/sulfur"
 	])

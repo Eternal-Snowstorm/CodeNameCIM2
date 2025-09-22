@@ -25,4 +25,12 @@ ServerEvents.recipes((event) => {
 		Item.of("create:experience_nugget").withChance(0.75),
 		Item.of("minecraft:cobbled_deepslate").withChance(0.12)
 	], "cmi:deepslate_certus_quartz_ore")
+
+	// 硫磺粉
+	create.crushing([
+		"thermal:sulfur_dust",
+		Item.of("2x thermal:sulfur_dust").withChance(0.1),
+	], [
+		"#forge:gems/sulfur"
+	])
 })

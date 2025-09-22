@@ -34,7 +34,7 @@
     "sea.cmi.search": "§b正在使用对海搜索!",
     "tooltip.cmi.industrial_platform.off": "§e按住Shift查看详情",
     "tooltip.cmi.initial_item_kit.tip": "按住Shift查看详情",
-    "tooltip.cmi.initial_item_kit.shift": "潜行 + 右键打开, 将会获得以下物品:\n§b扳手\n§b工程师护目镜\n§b强力胶\n§b时间之瓶",
+    "tooltip.cmi.initial_item_kit.shift": "潜行 + 右键打开, 将会获得以下物品:\n§b扳手\n§b工程师护目镜\n§b强力胶\n§b时间之瓶\n§b应力表",
     "message.cmi.initial_item_kit": "欢迎游玩整合包! 物品已发放!",
     "display.cmi.nether_crops": "§c下界作物只能种植在位于下界的下界农田方块上!",
     "create.recipe.heat_requirement.grilled": "炙烤",
