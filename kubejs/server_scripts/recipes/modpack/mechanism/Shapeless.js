@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
 		"#forge:stone",
 		"minecraft:redstone_torch",
 		"#forge:hammer",
-		"cmi:mechanical_mechanism_part"
+		"cmi:basic_mechanism_part"
 	]).damageIngredient("#forge:hammer", 1)
 
 	kubejs.shapeless("4x cmi:basic_mechanism_part", [
