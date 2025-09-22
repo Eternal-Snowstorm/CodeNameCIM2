@@ -3,11 +3,12 @@
 	"biomes": [
 		"minecraft:desert",
 		"minecraft:badlands",
-    "minecraft:eroded_badlands",
-    "minecraft:wooded_badlands",    
+		"minecraft:eroded_badlands",
+		"minecraft:wooded_badlands",
 		"minecraft:savanna",
-    "minecraft:savanna_plateau",
-    "minecraft:windswept_savanna"],
+		"minecraft:savanna_plateau",
+		"minecraft:windswept_savanna"
+	],
 	"size": 1,
 	"start_pool": "cmi:ore_node/deepslate_gold_node",
 	"step": "surface_structures",
