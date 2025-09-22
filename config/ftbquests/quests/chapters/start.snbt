@@ -551,11 +551,18 @@
 			dependencies: ["5080AD4A92076C63"]
 			hide_dependency_lines: true
 			id: "1D814C25827605EB"
-			rewards: [{
-				id: "2F0B4D0469EA5B41"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2F0B4D0469EA5B41"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "142D8CB3B9831298"
+					item: "minecraft:lever"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "787FD8B30555371A"
 				item: "tconstruct:seared_table"
@@ -568,11 +575,18 @@
 			dependencies: ["5080AD4A92076C63"]
 			hide_dependency_lines: true
 			id: "2155ED5D3B95A6E9"
-			rewards: [{
-				id: "2072380977139207"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2072380977139207"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "2F67F730E2512927"
+					item: "minecraft:lever"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3637B74D09538A03"
 				item: "tconstruct:seared_basin"

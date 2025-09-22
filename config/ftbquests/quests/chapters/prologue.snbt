@@ -123,7 +123,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "当前版本:Beta-2.3.0"
+			subtitle: "当前版本:Beta-2.4.0"
 			tasks: [{
 				id: "79D5B1959C780861"
 				type: "checkmark"

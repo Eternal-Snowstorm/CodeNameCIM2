@@ -239,11 +239,19 @@
 			]
 			icon: "create:whisk"
 			id: "13C438F279FA1A53"
-			rewards: [{
-				id: "622F9AB476ECF7DE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "622F9AB476ECF7DE"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75485CA7D0201BE1"
+					table_id: 2826709868639936990L
+					type: "choice"
+				}
+			]
 			subtitle: "燃烧温度更高的液体燃料!"
 			tasks: [
 				{

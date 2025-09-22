@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { kubejs, create} = event.recipes
 
 	// 工程师锤
-	kubejs.shaped(Item.of("immersiveengineering:hammer", "{Damage:75}"), [
+	kubejs.shaped(Item.of("immersiveengineering:hammer", "{Damage:128}"), [
 		" AB",
 		" CA",
 		"C  "

@@ -18,6 +18,33 @@ ServerEvents.recipes((event) => {
 		E: "cmi:stone_plate"
 	})
 
+	// 桶
+	kubejs.shaped("minecraft:bucket", [
+		"A A",
+		" A "
+	], {
+		A: "#forge:plates/andesite_alloy"
+	})
+
+	// 漏斗
+	kubejs.shaped("minecraft:hopper", [
+		"A A",
+		"ABA",
+		" A "
+	], {
+		A: "#forge:plates/andesite_alloy",
+		B: "#forge:chests/wooden"
+	})
+
+	kubejs.shaped("2x minecraft:hopper", [
+		"A A",
+		"ABA",
+		" A "
+	], {
+		A: "#forge:ingots/iron",
+		B: "#forge:chests/wooden"
+	}).id("minecraft:hopper")
+
 	// 橡胶手
 	kubejs.shaped("create:brass_hand", [
 		" A ",
@@ -26,8 +53,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:ingots/andesite_alloy",
 		B: "thermal:cured_rubber"
-	})
-		.id("create:crafting/kinetics/brass_hand")
+	}).id("create:crafting/kinetics/brass_hand")
 
 	// 木龙头
 	kubejs.shaped("cmi:wooden_faucet", [

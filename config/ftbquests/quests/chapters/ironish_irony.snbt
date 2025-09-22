@@ -340,95 +340,16 @@
 			dependencies: ["0608EF158049B347"]
 			icon: "immersiveengineering:arc_furnace"
 			id: "43CDBE9E710B8AAF"
-			rewards: [
-				{
-					id: "0390661092B2E958"
-					item: "immersiveengineering:arc_furnace"
-					type: "item"
-				}
-				{
-					id: "4E859550681A2471"
-					type: "xp"
-					xp: 50
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					count: 8L
-					id: "16D20993335925A5"
-					item: "immersiveengineering:sheetmetal_steel"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 6L
-					id: "489B8BE7868377C5"
-					item: "tconstruct:steel_block"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 5L
-					id: "4262EDA4151461D2"
-					item: "immersiveengineering:heavy_engineering"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "2D0088993CA8CCC2"
-					item: "immersiveengineering:rs_engineering"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 10L
-					id: "475A71B13A93EE6B"
-					item: "immersiveengineering:light_engineering"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 27L
-					id: "51FBE9B766A8EE46"
-					item: "immersiveengineering:blastbrick_reinforced"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 14L
-					id: "062033100F4494A8"
-					item: "immersiveengineering:slab_sheetmetal_steel"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 5L
-					id: "50A40ADEE5C4060C"
-					item: "immersiveengineering:steel_scaffolding_standard"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "661BDBF5FED5C83C"
-					item: "minecraft:cauldron"
-					type: "item"
-				}
-				{
-					consume_items: false
-					count: 3L
-					id: "5C8084C3BC00C40E"
-					item: {
-						Count: 1
-						id: "immersiveengineering:graphite_electrode"
-						tag: {
-							graphDmg: 0
-						}
-					}
-					match_nbt: false
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4E859550681A2471"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "54FDFC4D17E0F26B"
+				title: "电弧炉"
+				type: "checkmark"
+			}]
 			title: "电弧炉"
 			x: 4.5d
 			y: 1.0d

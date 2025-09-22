@@ -95,7 +95,14 @@
 			}]
 			tasks: [{
 				id: "28D917CBD7AA1C33"
-				item: "create:shaft"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:shaft"
+					}
+				}
+				title: "传动杆"
 				type: "item"
 			}]
 			x: -3.5d
@@ -111,7 +118,14 @@
 			}]
 			tasks: [{
 				id: "1CD1D71A1E5EB644"
-				item: "create:cogwheel"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:cogwheel"
+					}
+				}
+				title: "齿轮"
 				type: "item"
 			}]
 			x: -3.5d
@@ -128,7 +142,14 @@
 			}]
 			tasks: [{
 				id: "795792D83B950A26"
-				item: "create:large_cogwheel"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:large_cogwheel"
+					}
+				}
+				title: "大齿轮"
 				type: "item"
 			}]
 			x: -2.5d
@@ -476,14 +497,31 @@
 		}
 		{
 			dependencies: ["7510D0C5F36D0F1E"]
+			description: ["熔融青铜可以将铜和锡放到工作盆内加热搅拌, 但是这种配方有很大的损失, 请尽早做出冶炼炉"]
+			icon: "cmi:crafting_incomplete_iron_mechanism"
 			id: "6EBB0E1E97405AAB"
 			optional: true
 			shape: "diamond"
-			tasks: [{
-				id: "1FD2DF00B6E2E64B"
-				item: "cmi:crafting_incomplete_iron_mechanism"
-				type: "item"
-			}]
+			subtitle: "青铜铸模也是一种选择"
+			tasks: [
+				{
+					id: "1FD2DF00B6E2E64B"
+					item: "cmi:crafting_incomplete_iron_mechanism"
+					type: "item"
+				}
+				{
+					id: "6E74F5D3B0DAE3D8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tconstruct:casts/multi_use/mechanism"
+						}
+					}
+					title: "构件铸模"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: -2.0d
 		}
@@ -713,8 +751,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -0.5d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["65F2C054D52EB96B"]
@@ -785,6 +823,33 @@
 			title: "煤炭块或木炭块"
 			x: 3.0d
 			y: 7.0d
+		}
+		{
+			icon: "thermal:rubberwood_sapling"
+			id: "4189951FCBDA6139"
+			optional: true
+			rewards: [{
+				icon: "thermal:rubberwood_sapling"
+				id: "44D95E7B9AB91A32"
+				item: "thermal:rubberwood_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				count: 128L
+				id: "1A18EA52694332AA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:saplings"
+					}
+				}
+				title: "树苗"
+				type: "item"
+			}]
+			title: "找不到橡胶树?"
+			x: 1.5d
+			y: 2.5d
 		}
 	]
 	title: "学习机械"
