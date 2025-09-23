@@ -6,6 +6,16 @@ ServerEvents.recipes((event) => {
 		Item.of("create:cinder_flour").withChance(0.2)
 	], "#forge:netherrack")
 
+	create.milling(
+		"minecraft:sugar",
+		"minecraft:sugar_cane"
+	)
+
+	create.milling(
+		"minecraft:sugar",
+		"minecraft:beetroot"
+	)
+
 	create.milling([
 		"ae2:certus_quartz_dust",
 		Item.of("ae2:certus_quartz_dust", 2).withChance(0.5)
