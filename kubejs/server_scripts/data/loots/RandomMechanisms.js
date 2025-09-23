@@ -486,6 +486,7 @@ ServerEvents.genericLootTables((event) => {
 				.randomChance(0.125)
 			pool.addItem("cmi:random_random_mechanism")
 				.randomChance(0.0125)
+			pool.setUniformRolls(2,8)
 		})
 	})
 })
