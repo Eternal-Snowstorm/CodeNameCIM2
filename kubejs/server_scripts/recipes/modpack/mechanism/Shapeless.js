@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 		"minecraft:stick",
 		"cmi:basic_mechanism_part",
 		"#forge:hammer"
-	])
+	]).damageIngredient("#forge:hammer", 1)
 
 	// 石质
 	kubejs.shapeless("cmi:stone_mechanism", [
