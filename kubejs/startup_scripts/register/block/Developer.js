@@ -5,7 +5,6 @@ StartupEvents.registry("block", (event) => {
 				.soundType(SoundType.WOOL)
 				.hardness(0)
 				.resistance(1)
-				.requiresTool(true)
 				.model(`${global.namespace}:block/dev/${name}`)
 				.textureAll(`${global.namespace}:block/dev/${name}`)
 				.notSolid()
