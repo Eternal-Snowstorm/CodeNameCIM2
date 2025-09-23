@@ -2,7 +2,8 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "immersiveengineering:block/metal_decoration/radiator"
+		"1": "immersiveengineering:block/metal_decoration/radiator",
+		"particle": "ad_astra:block/iron_factory_block"
 	},
 	"elements": [
 		{

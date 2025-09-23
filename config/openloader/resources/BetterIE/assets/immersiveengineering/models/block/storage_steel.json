@@ -2,8 +2,8 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create_dd:block/steel_casing",
-		"particle": "create_dd:block/steel_casing"
+		"0": "ad_astra:block/iron_factory_block",
+		"particle": "ad_astra:block/iron_factory_block"
 	},
 	"elements": [
 		{
