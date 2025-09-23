@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create_dd:block/steel_casing",
+		"0": "ad_astra:block/iron_factory_block",
 		"1": "immersiveengineering:block/metal_decoration/heavy_engineering",
-		"particle": "immersiveengineering:block/metal_decoration/steel_casing"
+		"particle": "ad_astra:block/iron_factory_block"
 	},
 	"elements": [
 		{
