@@ -467,18 +467,19 @@ ClientEvents.lang("zh_cn", (event) => {
 		addMechanismMachineLanguage(material, name)
 	})
 
-	let completeMechanismGroup = [
-		["basic_random", "基础随机"],
-		["mechanical_random", "机械随机"],
-		["engineering_random", "工程随机"],
-		["flux_random", "通量随机"],
-		["magical_random", "魔力随机"],
-		["quantum_random", "量子随机"],
-		["mekanism_random", "通用随机"],
-		["space_random", "太空随机"]
+	let randomMechanismGroup = [
+		["basic", "基础"],
+		["mechanical", "机械"],
+		["engineering", "工程"],
+		["flux", "通量"],
+		["magical", "魔力"],
+		["quantum", "量子"],
+		["mekanism", "通用"],
+		["space", "太空"],
+		["random", "随机"]
 	]
-	completeMechanismGroup.forEach(([material, name]) => {
-		addCompleteMechanismLanguage(material, name)
+	randomMechanismGroup.forEach(([material, name]) => {
+		addRandomMechanismLanguage(material, name)
 	})
 
 	function addItemLanguage(key, value) {
@@ -505,8 +506,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${global.namespace}.${material}_machine`, `${value}机器`)
 	}
 
-	function addCompleteMechanismLanguage(material, value) {
-		event.add(`item.${global.namespace}.${material}_mechanism`, `${value}构件`)
+	function addRandomMechanismLanguage(material, value) {
+		event.add(`item.${global.namespace}.${material}_random_mechanism`, `${value}随机构件`)
 	}
 
 	function addMechanismPartLanguage(material, value) {

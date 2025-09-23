@@ -74,7 +74,6 @@ replay*
 /config/*
 !/config/openloader
 !/config/blockswap
-!/config/almostunified/
 !/config/drippyloadingscreen/
 !/config/fancymenu/
 !/config/ftbquests/
@@ -88,7 +87,6 @@ replay*
 !/config/scannable*
 !/config/carryon-common.toml
 !/config/cookingforblockheads-common.toml
-!/config/capsule-common.toml
 !/config/nolijium.json5
 !/config/Mekanism/
 !/config/ding.toml
