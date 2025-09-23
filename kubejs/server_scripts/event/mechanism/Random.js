@@ -10,7 +10,8 @@ ItemEvents.rightClicked((event) => {
 		"magical",
 		"quantum",
 		"mekanism",
-		"space"
+		"space",
+		"random"
 	]
 	randomMechanisms.forEach((material) => {
 		let lootTable = `cmi:gameplay/random_mechanisms/${material}`
