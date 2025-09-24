@@ -99,7 +99,9 @@ ServerEvents.recipes((event) => {
 		"create:milling/andesite",
 		"create:industrial_iron_block_from_ingots_iron_stonecutting",
 		"create:crushing/tuff",
-		"create:crushing/tuff_recycling"
+		"create:crushing/tuff_recycling",
+		"functionalstorage:oak_drawer_alternate_x1",
+		"create:milling/beetroot"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

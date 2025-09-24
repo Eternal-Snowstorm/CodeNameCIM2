@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 		"minecraft:sugar_cane"
 	])
 
-	create.milling("minecraft:sugar", [
+	create.milling(Item.of("minecraft:sugar").withChance(0.5), [
 		"minecraft:beetroot"
 	])
 

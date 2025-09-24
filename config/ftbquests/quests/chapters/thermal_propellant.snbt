@@ -429,7 +429,7 @@
 		}
 		{
 			dependencies: ["7A517683CCCFF700"]
-			icon: "immersiveindustry:chemical_reactor"
+			icon: "immersiveengineering:refinery"
 			id: "6F9E16D27C6C973B"
 			rewards: [{
 				id: "4039BA750D96B28D"
@@ -441,7 +441,7 @@
 				title: "反应釜"
 				type: "checkmark"
 			}]
-			title: "你需要一个反应釜"
+			title: "你需要一个炼油厂"
 			x: -2.0d
 			y: 0.5d
 		}

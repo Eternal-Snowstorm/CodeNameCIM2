@@ -6,7 +6,7 @@ let $TinkerTags$Items =
 // 全局注册物品命名空间
 global.namespace = "cmi"
 // Modpack版本
-global.modPackVersion = "§0CMI Beta-2.3.1"
+global.modPackVersion = "§0CMI Beta-2.4.0"
 // 桶容量
 global.BUCKET_CAPACITY = 1000
 // 扳手Tag
@@ -378,6 +378,7 @@ global.fuelList = [
 	"tconstruct:blazing_blood",
 	"immersiveengineering:ethanol",
 	"immersiveengineering:plantoil",
+	"immersiveengineering:creosote",
 	"createdieselgenerators:ethanol",
 	"createdieselgenerators:plant_oil",
 	"createdieselgenerators:biodiesel",
@@ -403,7 +404,8 @@ global.fuelTemperatures = {
 	"immersiveengineering:plantoil": 1027,
 	"createdieselgenerators:biodiesel": 1636,
 	"createdieselgenerators:diesel": 2113,
-	"createdieselgenerators:gasoline": 2043
+	"createdieselgenerators:gasoline": 2043,
+	"immersiveengineering:creosote": 1300
 }
 
 // 匠魂物品标签

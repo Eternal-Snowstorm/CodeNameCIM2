@@ -85,12 +85,19 @@ ServerEvents.highPriorityData((event) => {
 		"thermal:quartz_dust"
 	))
 
+	// 硫粉
+	addJsonFile("sulfur_dust", addUnification(
+		"#forge:dusts/sulfur",
+		"thermal:sulfur_dust"
+	))
+
 	// 黑曜石粉
 	addJsonFile("obsidian_dust", addUnification(
 		"#forge:dusts/obsidian",
 		"create:powdered_obsidian"
 	))
 
+	// 矿渣
 	addJsonFile("slag", addUnification(
 		"#forge:slag",
 		"thermal:slag"

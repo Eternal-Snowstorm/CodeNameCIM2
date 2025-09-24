@@ -58,7 +58,7 @@
 						value: "forge:ingots/andesite_alloy"
 					}
 				}
-				title: "任意 #forge:ingots/andesite_alloy"
+				title: "安山合金"
 				type: "item"
 			}]
 			title: "安山合金"
@@ -66,7 +66,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["10C714793513B077"]
+			dependencies: [
+				"10C714793513B077"
+				"4783E72B7485A77D"
+			]
 			icon: "minecraft:iron_ingot"
 			id: "06012DC3A4BBF58B"
 			rewards: [{
@@ -492,7 +495,7 @@
 				item: "cmi:iron_mechanism"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -522,7 +525,7 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
+			x: 5.0d
 			y: -2.0d
 		}
 		{
@@ -617,7 +620,7 @@
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.0d
 			y: 2.0d
 		}
 		{
@@ -850,6 +853,101 @@
 			title: "找不到橡胶树?"
 			x: 1.5d
 			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1E6F44D3CC3837DB"
+				"0498E2991294B14D"
+			]
+			description: ["生物柴油的生产线很难做, 因此可以使用&b糖&r和&b杂酚油&r发酵的配方来临时获取"]
+			id: "4783E72B7485A77D"
+			optional: true
+			rewards: [{
+				id: "61E96305476AC4A4"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "1636!"
+			tasks: [{
+				id: "42E7485E7A37E748"
+				item: "createdieselgenerators:biodiesel_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["45A8A2A35008745C"]
+			id: "1E6F44D3CC3837DB"
+			tasks: [{
+				id: "72A8D8C4D0CE8AAE"
+				item: "immersiveengineering:creosote_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			description: ["&4焦炉&r在烧制木炭的同时可以产生一定量的&4杂酚油&r, 在前期焦炉的效率很低, 但是后期可以使用效率更高的&b旋转窑&r"]
+			id: "45A8A2A35008745C"
+			rewards: [
+				{
+					id: "5070A226B0D2D0EE"
+					item: "immersiveengineering:creosote_bucket"
+					type: "item"
+				}
+				{
+					id: "77558A5E3731CFE9"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "107BD9B953705437"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
+			subtitle: "杂酚油产出"
+			tasks: [{
+				count: 27L
+				id: "32BFAC2333E06239"
+				item: { Count: 27, id: "immersiveengineering:cokebrick" }
+				type: "item"
+			}]
+			title: "焦炉"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			id: "0498E2991294B14D"
+			rewards: [{
+				id: "587B8D3600EB5573"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "丢石磨里"
+			tasks: [
+				{
+					id: "72A612B094AFC6D6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "cmi:sugar_raw_material"
+						}
+					}
+					title: "制糖原料"
+					type: "item"
+				}
+				{
+					id: "390B72655DAEF5BD"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+			]
+			title: "很甜.."
+			x: 3.0d
+			y: -4.0d
 		}
 	]
 	title: "学习机械"

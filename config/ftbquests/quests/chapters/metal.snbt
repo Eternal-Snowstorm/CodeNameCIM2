@@ -2156,6 +2156,22 @@
 			x: -1.5d
 			y: -3.5d
 		}
+		{
+			icon: "immersiveengineering:creosote_bucket"
+			id: "058C8134A1BEDB4F"
+			rewards: [{
+				id: "6857D6F813B5D510"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "02C11FA019529B86"
+				title: "杂酚油 1300°C"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
 	]
 	title: "金属熔点与燃料纵览"
 }

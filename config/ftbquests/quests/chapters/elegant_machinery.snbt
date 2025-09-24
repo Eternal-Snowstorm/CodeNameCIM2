@@ -347,7 +347,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "可以往紫水晶芽上注水"
+			subtitle: "可以往紫水晶芽上注晶体催生剂"
 			tasks: [{
 				id: "17E4F41FB0697C6A"
 				item: {

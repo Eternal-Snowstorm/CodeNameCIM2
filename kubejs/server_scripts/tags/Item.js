@@ -13,7 +13,12 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
-	// 无线燃烧Tooltip
+	// 榨糖原料
+	event.get("cmi:sugar_raw_material")
+		.add("minecraft:sugar_cane")
+		.add("minecraft:beetroot")
+
+	// 无限燃烧Tooltip
 	event.get("minecraft:infiniburn_all")
 		.add("cmi:combustion_medium_block")
 

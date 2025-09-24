@@ -29,11 +29,6 @@ ItemEvents.modification((event) => {
 		modify.craftingRemainder = "cmi:colorful_mechanism"
 	})
 
-	// 调整工程师锤耐久
-	event.modify("immersiveengineering:hammer", (modify) => {
-		modify.maxDamage = 512
-	})
-
 	// 奶酪统一处理
 	event.modify("ad_astra:cheese_block", (modify) => {
 		modify.setFoodProperties((food) => {

@@ -74,19 +74,19 @@ StartupEvents.registry("item", (event) => {
 	// 木屑加工系列
 	addItem("wood_chip_briquette")
 		.texture(`${global.namespace}:item/material/wood_chip/stage_1`)
-		.burnTime(200 * 10)
+		.burnTime(200 * 20)
 
 	addItem("compressed_wood_chip_briquette")
 		.texture(`${global.namespace}:item/material/wood_chip/stage_2`)
-		.burnTime(200 * 30)
+		.burnTime(200 * 70)
 
 	addItem("densely_packed_wood_chip_briquette")
 		.texture(`${global.namespace}:item/material/wood_chip/stage_3`)
-		.burnTime(200 * 60)
+		.burnTime(200 * 120)
 
 	addItem("creosote_wood_chip_briquette")
 		.texture(`${global.namespace}:item/material/wood_chip/done`)
-		.burnTime(200 * 100)
+		.burnTime(200 * 180)
 		.food((food) => {
 			food.hunger(20)
 				.saturation(1)
