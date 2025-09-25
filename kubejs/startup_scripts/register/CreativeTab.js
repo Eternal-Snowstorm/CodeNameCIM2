@@ -7,9 +7,52 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 		.content(() => Ingredient.of("#cmi:io_debug_block").itemIds)
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.io_block`))
 
+	let solution_buckets = [
+		"cmi:feso4_solution_bucket",
+		"cmi:fecl2_solution_bucket",
+		"cmi:cuso4_solution_bucket",
+		"cmi:cucl2_solution_bucket",
+		"cmi:al2so43_solution_bucket",
+		"cmi:alcl3_solution_bucket",
+		"cmi:pbcl2_solution_bucket",
+		"cmi:pbso4_solution_bucket",
+		"cmi:sncl2_solution_bucket",
+		"cmi:snso4_solution_bucket",
+		"cmi:zncl2_solution_bucket",
+		"cmi:znso4_solution_bucket",
+		"cmi:aucl3_solution_bucket",
+		"cmi:au2so43_solution_bucket",
+		"cmi:agcl_solution_bucket",
+		"cmi:ag2so4_solution_bucket",
+		"cmi:crcl3_solution_bucket",
+		"cmi:cr2so43_solution_bucket",
+		"cmi:vocl2_solution_bucket",
+		"cmi:voso4_solution_bucket",
+		"cmi:uo2cl2_solution_bucket",
+		"cmi:uo2so4_solution_bucket",
+		"cmi:nicl2_solution_bucket",
+		"cmi:niso4_solution_bucket",
+		"cmi:cocl2_solution_bucket",
+		"cmi:coso4_solution_bucket",
+		"cmi:oscl3_solution_bucket",
+		"cmi:os2so43_solution_bucket",
+		"cmi:ptcl4_solution_bucket",
+		"cmi:ptso42_solution_bucket",
+		"cmi:mgcl2_solution_bucket",
+		"cmi:mgso4_solution_bucket",
+		"cmi:kcl_solution_bucket",
+		"cmi:k2so4_solution_bucket",
+		"cmi:cacl2_solution_bucket",
+		"cmi:caso4_solution_bucket",
+		"cmi:nacl_solution_bucket",
+		"cmi:na2so4_solution_bucket"
+	]
+
 	addCreativeTab("salts_and_solutions")
 		.icon(() => Item.of("cmi:feso4"))
-		.content(() => Ingredient.of("#forge:chem_salts").itemIds)
+		.content(() => Ingredient.of("#forge:chem_salts").itemIds
+			.concat(solution_buckets)
+		)
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.salts_and_solutions`))
 
 	addCreativeTab("mechanisms")
