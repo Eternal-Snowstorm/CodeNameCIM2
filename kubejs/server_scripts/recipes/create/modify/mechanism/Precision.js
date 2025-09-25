@@ -1,8 +1,8 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let casing = "create:brass_casing"
-	let mech = "create:precision_mechanism"
-	let tube = "create:electron_tube"
+	const CASING = "create:brass_casing"
+	const MECH = "create:precision_mechanism"
+	const TUBE = "create:electron_tube"
 
 	// 合成器
 	kubejs.shaped("3x create:mechanical_crafter", [
@@ -10,8 +10,8 @@ ServerEvents.recipes((event) => {
 		"B",
 		"C"
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "minecraft:crafting_table"
 	}).id("create:crafting/kinetics/mechanical_crafter")
 
@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
 		"A",
 		"B"
 	], {
-		A: mech,
+		A: MECH,
 		B: "create:chute"
 	}).id("create:crafting/kinetics/smart_chute")
 
@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
 		"A",
 		"B"
 	], {
-		A: mech,
+		A: MECH,
 		B: "create:fluid_pipe"
 	}).id("create:crafting/kinetics/smart_fluid_pipe")
 
@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
 	// 	"A",
 	// 	"B"
 	// ], {
-	// 	A: mech,
+	// 	A: MECH,
 	// 	B: "minecraft:observer"
 	// }).id("create:crafting/kinetics/smart_observer")
 
@@ -48,9 +48,9 @@ ServerEvents.recipes((event) => {
 		"C",
 		"B"
 	], {
-		A: mech,
+		A: MECH,
 		B: "minecraft:comparator",
-		C: casing
+		C: CASING
 	}).id("create:crafting/logistics/stockpile_switch")
 
 	// 电梯
@@ -59,9 +59,9 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		" D "
 	], {
-		A: casing,
+		A: CASING,
 		B: "minecraft:dried_kelp_block",
-		C: mech,
+		C: MECH,
 		D: "#forge:plates/obsidian"
 	}).id("create:crafting/kinetics/elevator_pulley")
 
@@ -71,8 +71,8 @@ ServerEvents.recipes((event) => {
 		" B ",
 		" A "
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "#minecraft:wooden_slabs"
 	}).id("create:crafting/kinetics/clockwork_bearing")
 
@@ -82,8 +82,8 @@ ServerEvents.recipes((event) => {
 		" B ",
 		" C "
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "minecraft:observer"
 	}).id("create:crafting/logistics/content_observer")
 
@@ -92,8 +92,8 @@ ServerEvents.recipes((event) => {
 		"BA ",
 		"C  "
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "create:cogwheel"
 	}).id("create:crafting/kinetics/sequenced_gearshift")
 
@@ -103,8 +103,8 @@ ServerEvents.recipes((event) => {
 		"ABA",
 		" C "
 	], {
-		C: mech,
-		B: casing,
+		C: MECH,
+		B: CASING,
 		A: "createaddition:capacitor",
 		D: "immersiveengineering:coil_lv"
 	}).id("createaddition:mechanical_crafting/tesla_coil")

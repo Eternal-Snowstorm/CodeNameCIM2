@@ -1,13 +1,13 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let mech = "cmi:enchanted_mechanism"
+	const MECH = "cmi:enchanted_mechanism"
 	//打印机
 	kubejs.shaped("create_enchantment_industry:printer", [
 		" C ",
 		"BAB",
 		" D "
 	], {
-		A: mech,
+		A: MECH,
 		B: "minecraft:dried_kelp",
 		C: "create:copper_casing",
 		D: "minecraft:iron_block"
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 		"CBC",
 		"BAB"
 	], {
-		A: mech,
+		A: MECH,
 		B: "minecraft:obsidian",
 		C: "minecraft:diamond",
 		D: "minecraft:book"

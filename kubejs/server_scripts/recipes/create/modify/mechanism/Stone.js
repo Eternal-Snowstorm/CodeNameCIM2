@@ -1,12 +1,12 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let mech = "cmi:stone_mechanism"
+	const MECH = "cmi:stone_mechanism"
 
 	// 焦炉砖
 	event.replaceInput({
 		input: "#forge:sandstone",
 		output: "immersiveengineering:cokebrick"
-	}, "#forge:sandstone", mech)
+	}, "#forge:sandstone", MECH)
 
 	// 焦黑排液孔
 	kubejs.shaped("tconstruct:seared_drain", [
@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 		"CAC",
 		"B B"
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:seared_brick",
 		C: "minecraft:copper_ingot"
 	}).id("tconstruct:smeltery/seared/drain")
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 		" A ",
 		"BCB"
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:seared_brick",
 		C: "minecraft:copper_ingot"
 	}).id("tconstruct:smeltery/seared/chute")
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 		"CAC",
 		"B B"
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:seared_brick",
 		C: "minecraft:gold_ingot"
 	}).id("tconstruct:smeltery/seared/duct")
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
 		"B B",
 		"B B"
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:seared_brick"
 	}).id("tconstruct:smeltery/seared/table")
 
@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
 		"B B",
 		"BAB"
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:seared_brick"
 	}).id("tconstruct:smeltery/seared/basin")
 
@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
 		"B B",
 		"BAB"
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:seared_brick"
 	}).id("tconstruct:smeltery/seared/heater")
 
@@ -76,42 +76,42 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"BAB",
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:seared_brick",
 		C: "#tconstruct:gauge"
 	}).id("tconstruct:smeltery/seared/melter")
 
 	// 焦褐排液孔
-	kubejs.shaped("tconstruct:scorched_drain",[
+	kubejs.shaped("tconstruct:scorched_drain", [
 		"B B",
 		"CAC",
 		"B B"
-	],{
-		A:mech,
-		B:"tconstruct:scorched_brick",
-		C:"tconstruct:obsidian_pane"
+	], {
+		A: MECH,
+		B: "tconstruct:scorched_brick",
+		C: "tconstruct:obsidian_pane"
 	}).id("tconstruct:smeltery/scorched/drain")
 
 	// 焦褐滑槽
-	kubejs.shaped("tconstruct:scorched_chute",[
+	kubejs.shaped("tconstruct:scorched_chute", [
 		"BCB",
 		" A ",
 		"BCB"
-	],{
-		A:mech,
-		B:"tconstruct:scorched_brick",
-		C:"tconstruct:obsidian_pane"
+	], {
+		A: MECH,
+		B: "tconstruct:scorched_brick",
+		C: "tconstruct:obsidian_pane"
 	}).id("tconstruct:smeltery/scorched/chute")
 
 	// 焦褐疏导孔
-	kubejs.shaped("tconstruct:scorched_duct",[
+	kubejs.shaped("tconstruct:scorched_duct", [
 		"B B",
 		"CAC",
 		"B B"
-	],{
-		A:mech,
-		B:"tconstruct:scorched_brick",
-		C:"#forge:ingots/gold"
+	], {
+		A: MECH,
+		B: "tconstruct:scorched_brick",
+		C: "#forge:ingots/gold"
 	}).id("tconstruct:smeltery/scorched/duct_retextured")
 
 	// 焦褐铸件台
@@ -120,7 +120,7 @@ ServerEvents.recipes((event) => {
 		"B B",
 		"B B"
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:scorched_brick"
 	}).id("tconstruct:smeltery/scorched/table")
 
@@ -130,7 +130,7 @@ ServerEvents.recipes((event) => {
 		"B B",
 		"BAB"
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:scorched_brick"
 	}).id("tconstruct:smeltery/scorched/basin")
 
@@ -139,7 +139,7 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"BAB",
 	], {
-		A: mech,
+		A: MECH,
 		B: "tconstruct:scorched_brick",
 		C: "#tconstruct:scorched_tanks"
 	}).id("tconstruct:smeltery/scorched/alloyer")
@@ -150,7 +150,7 @@ ServerEvents.recipes((event) => {
 		"DBD",
 		"DAD"
 	], {
-		A: mech,
+		A: MECH,
 		B: "#forge:chests/wooden",
 		C: "#tconstruct:casts/gold",
 		D: "tconstruct:seared_brick"
@@ -162,7 +162,7 @@ ServerEvents.recipes((event) => {
 		"DAD",
 		"DCD"
 	], {
-		A: mech,
+		A: MECH,
 		B: "minecraft:iron_ingot",
 		C: "minecraft:campfire",
 		D: "minecraft:bricks"

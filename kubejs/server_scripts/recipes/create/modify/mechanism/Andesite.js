@@ -1,8 +1,8 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let casing = "create:andesite_casing"
-	let mech = "cmi:andesite_mechanism"
-	let tube = "create:electron_tube"
+	const CASING = "create:andesite_casing"
+	const MECH = "cmi:andesite_mechanism"
+	const TUBE = "create:electron_tube"
 
 	// 动态结构控制器
 	kubejs.shaped("create:contraption_controls", [
@@ -11,8 +11,8 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		A: "#minecraft:buttons",
-		B: casing,
-		C: mech
+		B: CASING,
+		C: MECH
 	}).id("create:crafting/kinetics/contraption_controls")
 
 	// 动力压路机
@@ -21,18 +21,21 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		" D "
 	], {
-		A: tube,
-		B: casing,
-		C: mech,
+		A: TUBE,
+		B: CASING,
+		C: MECH,
 		D: "create:crushing_wheel"
 	}).id("create:crafting/kinetics/mechanical_roller")
 
 	// 物品接口
-	kubejs.shapeless("create:portable_storage_interface", [
-		"create:chute",
-		casing,
-		mech
-	]).id("create:crafting/kinetics/portable_storage_interface")
+	kubejs.shaped("2x create:portable_storage_interface", [
+		"AB",
+		"C "
+	], {
+		A: "create:chute",
+		B: CASING,
+		C: MECH
+	}).id("create:crafting/kinetics/portable_storage_interface")
 
 	// 机械手
 	kubejs.shaped("create:deployer", [
@@ -40,8 +43,8 @@ ServerEvents.recipes((event) => {
 		"B",
 		"C"
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: ["create:brass_hand", "cmi:rubber_hand"]
 	}).id("create:crafting/kinetics/deployer")
 
@@ -52,8 +55,8 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		A: "thermal:saw_blade",
-		B: mech,
-		C: casing
+		B: MECH,
+		C: CASING
 	}).id("create:crafting/kinetics/mechanical_saw")
 
 	// 动力钻头
@@ -63,8 +66,8 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		A: "thermal:drill_head",
-		B: mech,
-		C: casing
+		B: MECH,
+		C: CASING
 	}).id("create:crafting/kinetics/mechanical_drill")
 
 	// 绳索滑轮
@@ -73,22 +76,21 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		" D "
 	], {
-		A: casing,
+		A: CASING,
 		B: "#minecraft:wool",
-		C: mech,
+		C: MECH,
 		D: "#forge:plates/iron"
 	}).id("create:crafting/kinetics/rope_pulley")
 
 	// 石磨
-	kubejs.shaped("2x create:millstone", [
-		"A A",
-		"BCB",
-		"DDD"
+	kubejs.shaped("create:millstone", [
+		"B",
+		"C",
+		"A"
 	], {
-		A: casing,
-		B: "create:cogwheel",
-		C: mech,
-		D: "#forge:stone"
+		A: CASING,
+		B: MECH,
+		C: "#forge:stone"
 	}).id("create:crafting/kinetics/millstone")
 
 	// 动力辊压机
@@ -97,8 +99,8 @@ ServerEvents.recipes((event) => {
 		" A ",
 		" C "
 	], {
-		A: casing,
-		B: mech,
+		A: CASING,
+		B: MECH,
 		C: "#forge:storage_blocks/iron"
 	}).id("create:crafting/kinetics/mechanical_press")
 
@@ -108,8 +110,8 @@ ServerEvents.recipes((event) => {
 		"A",
 		"C"
 	], {
-		A: casing,
-		B: mech,
+		A: CASING,
+		B: MECH,
 		C: "create:whisk"
 	}).id("create:crafting/kinetics/mechanical_mixer")
 
@@ -119,8 +121,8 @@ ServerEvents.recipes((event) => {
 		" A ",
 		" C "
 	], {
-		A: casing,
-		B: mech,
+		A: CASING,
+		B: MECH,
 		C: "create:propeller"
 	}).id("create:crafting/kinetics/encased_fan")
 
@@ -130,8 +132,8 @@ ServerEvents.recipes((event) => {
 		"B",
 		"A"
 	], {
-		A: casing,
-		B: mech,
+		A: CASING,
+		B: MECH,
 		C: "vintageimprovements:grinder_belt",
 	}).id("vintageimprovements:craft/belt_grinder")
 
@@ -141,8 +143,8 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: casing,
-		B: mech,
+		A: CASING,
+		B: MECH,
 		C: "create:andesite_alloy",
 		D: "create:shaft",
 		E: "#forge:plates/iron"
@@ -154,8 +156,8 @@ ServerEvents.recipes((event) => {
 		"CBD",
 		"EA "
 	], {
-		A: casing,
-		B: mech,
+		A: CASING,
+		B: MECH,
 		C: "vintageimprovements:spring_coiling_machine_wheel",
 		D: "create:shaft",
 		E: "iron_ingot"
@@ -167,7 +169,7 @@ ServerEvents.recipes((event) => {
 		"DCD",
 		"DAD"
 	], {
-		A: mech,
+		A: MECH,
 		B: "#minecraft:wooden_slabs",
 		C: "create:mechanical_piston",
 		D: "vintageimprovements:iron_spring",
@@ -179,8 +181,8 @@ ServerEvents.recipes((event) => {
 		" A ",
 		"CBC",
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "vintageimprovements:iron_spring"
 	}).id("vintageimprovements:craft/curving_press")
 
@@ -190,8 +192,8 @@ ServerEvents.recipes((event) => {
 		"ECE",
 		"DBD"
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "#minecraft:logs",
 		D: "vintageimprovements:iron_spring",
 		E: "create:shaft"
@@ -203,8 +205,8 @@ ServerEvents.recipes((event) => {
 		" B ",
 		" C "
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "#forge:plates/andesite"
 	}).id("sliceanddice:slicer")
 
@@ -214,8 +216,8 @@ ServerEvents.recipes((event) => {
 		" A ",
 		" C "
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "create:propeller"
 	}).id("ratatouille:oven_fan")
 
@@ -225,8 +227,8 @@ ServerEvents.recipes((event) => {
 		" B ",
 		" C "
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "#forge:slimeballs"
 	}).id("ratatouille:mechanical_demolder")
 
@@ -236,8 +238,8 @@ ServerEvents.recipes((event) => {
 		" C ",
 		" B "
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "create:mechanical_harvester"
 	}).id("ratatouille:thresher")
 
@@ -249,7 +251,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "create:turntable",
 		B: "#forge:stone",
-		C: mech
+		C: MECH
 	}).id("create:crafting/kinetics/windmill_bearing")
 
 	// 动力轴承
@@ -259,8 +261,8 @@ ServerEvents.recipes((event) => {
 		" C "
 	], {
 		A: "create:turntable",
-		B: casing,
-		C: mech
+		B: CASING,
+		C: MECH
 	}).id("create:crafting/kinetics/mechanical_bearing")
 
 	// 动力活塞
@@ -270,8 +272,8 @@ ServerEvents.recipes((event) => {
 		" C "
 	], {
 		A: "create:piston_extension_pole",
-		B: casing,
-		C: mech
+		B: CASING,
+		C: MECH
 	}).id("create:crafting/kinetics/mechanical_piston")
 
 	// 起重机取物器
@@ -281,8 +283,8 @@ ServerEvents.recipes((event) => {
 		"DCD"
 	], {
 		A: "create:turntable",
-		B: casing,
-		C: mech,
+		B: CASING,
+		C: MECH,
 		D: "create:cogwheel"
 	}).id("create:crafting/kinetics/gantry_carriage")
 
@@ -291,7 +293,7 @@ ServerEvents.recipes((event) => {
 		"BDB",
 		"CAC"
 	], {
-		A: mech,
+		A: MECH,
 		B: "minecraft:redstone",
 		C: "#minecraft:logs",
 		D: "#forge:slimeballs"
@@ -303,8 +305,8 @@ ServerEvents.recipes((event) => {
 		"CBC",
 		" D "
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "cmi:nature_mechanism",
 		D: "create:propeller"
 	}).id("ratatouille:spreader")
@@ -313,7 +315,7 @@ ServerEvents.recipes((event) => {
 	kubejs.shaped("4x create:display_board", [
 		"BAB"
 	], {
-		A: mech,
+		A: MECH,
 		B: "#forge:plates/andesite"
 	}).id("create:crafting/kinetics/display_board")
 })
