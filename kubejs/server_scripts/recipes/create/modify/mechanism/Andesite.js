@@ -80,15 +80,14 @@ ServerEvents.recipes((event) => {
 	}).id("create:crafting/kinetics/rope_pulley")
 
 	// 石磨
-	kubejs.shaped("2x create:millstone", [
-		"A A",
-		"BCB",
-		"DDD"
+	kubejs.shaped("create:millstone", [
+		"B",
+		"C",
+		"A"
 	], {
 		A: casing,
-		B: "create:cogwheel",
-		C: mech,
-		D: "#forge:stone"
+		B: mech,
+		C: "#forge:stone"
 	}).id("create:crafting/kinetics/millstone")
 
 	// 动力辊压机
