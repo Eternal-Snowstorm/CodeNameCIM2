@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let mech = "cmi:copper_mechanism"
-	let casing = "create:copper_casing"
+	const MECH = "cmi:copper_mechanism"
+	const CASING = "create:copper_casing"
 
 	//祛魔池
 	kubejs.shaped("create_enchantment_industry:disenchanter", [
@@ -9,8 +9,8 @@ ServerEvents.recipes((event) => {
 		"B",
 		"A"
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "#create:sandpaper"
 	}).id("create_enchantment_industry:crafting/disenchanter")
 
@@ -21,15 +21,15 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		A: "minecraft:iron_bars",
-		B: casing,
-		C: mech
+		B: CASING,
+		C: MECH
 	}).id("create:crafting/kinetics/item_drain")
 
 	// 流体接口
-	kubejs.shapeless("create:portable_fluid_interface", [
+	kubejs.shapeless("2x create:portable_fluid_interface", [
 		"create:chute",
-		casing,
-		mech
+		CASING,
+		MECH
 	]).id("create:crafting/kinetics/portable_fluid_interface")
 
 	// 软管滑轮
@@ -38,9 +38,9 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		" D "
 	], {
-		A: casing,
+		A: CASING,
 		B: "minecraft:dried_kelp_block",
-		C: mech,
+		C: MECH,
 		D: "#forge:plates/copper"
 	}).id("create:crafting/kinetics/hose_pulley")
 
@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"DED"
 	], {
-		A: mech,
+		A: MECH,
 		B: "#vintageimprovements:springs/iron",
 		C: "create:andesite_casing",
 		D: "#forge:ingots/andesite_alloy",
@@ -63,8 +63,8 @@ ServerEvents.recipes((event) => {
 		"B",
 		"C"
 	], {
-		A: mech,
-		B: casing,
+		A: MECH,
+		B: CASING,
 		C: "minecraft:dried_kelp"
 	}).id("create:crafting/kinetics/spout")
 
@@ -73,7 +73,7 @@ ServerEvents.recipes((event) => {
 		"BAB",
 		"BCB"
 	], {
-		A: mech,
+		A: MECH,
 		B: "#forge:plates/copper",
 		C: "minecraft:iron_bars"
 	}).id("sliceanddice:sprinkler")
@@ -84,7 +84,7 @@ ServerEvents.recipes((event) => {
 		"BAB",
 		"C C"
 	], {
-		A: mech,
+		A: MECH,
 		B: "#forge:plates/copper",
 		C: "#forge:ingots/copper"
 	}).id("ratatouille:squeeze_basin")
@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
 		"CAC",
 		"D D"
 	], {
-		A: mech,
+		A: MECH,
 		B: "create:fluid_tank",
 		C: "#forge:plates/copper",
 		D: "create:fluid_pipe"

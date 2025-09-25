@@ -6,8 +6,8 @@
 // 这一片我改了整整半小时! ! ! 
 ServerEvents.recipes((event) => {
 	let { create, kubejs } = event.recipes
-	let CASING = "create:railway_casing"
-	let MECH = "cmi:railway_mechanism"
+	const CASING = "create:railway_casing"
+	const MECH = "cmi:railway_mechanism"
 
 	// 时刻表
 	kubejs.shaped("4x create:schedule", [
@@ -91,4 +91,26 @@ ServerEvents.recipes((event) => {
 			create.deploying(icc, [icc, "#forge:string"])
 		]).transitionalItem(icc).loops(1).id(`railways:sequenced_assembly/${colour}_conductor_cap`)
 	})
+
+	// 臂板信号机
+	kubejs.shaped("2x railways:semaphore", [
+		" A ",
+		"BBC",
+		" D "
+	], {
+		A: MECH,
+		B: "#forge:plates/andesite_alloy",
+		C: "create:electron_tube",
+		D: "create:andesite_casing"
+	}).id("railways:crafting/semaphore")
+
+	// 燃料接口
+	kubejs.shaped("2x railways:portable_fuel_interface", [
+		"AB",
+		"C "
+	], {
+		A: CASING,
+		B: "create:chute",
+		C: MECH
+	}).id("railways:crafting/portable_fuel_interface")
 })

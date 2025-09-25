@@ -1,17 +1,28 @@
 ServerEvents.recipes((event) => {
     let { kubejs } = event.recipes
-    let mech = "cmi:photosensitive_mechanism"
-    let tube = "create:electron_tube"
-    let shard = "minecraft:amethyst_shard"
+    const MECH = "cmi:photosensitive_mechanism"
+    const TUBE = "create:electron_tube"
+    const SHARD = "minecraft:amethyst_shard"
 
     // 辉光管
     kubejs.shaped("create:nixie_tube", [
         "C C",
         "BAB"
     ], {
-        A: mech,
+        A: MECH,
         B: "#forge:plates/iron",
         C: "#forge:glass"
     }).id("create:crafting/kinetics/nixie_tube")
+
+    // 阳光传感器
+    kubejs.shaped("minecraft:daylight_detector", [
+        "A",
+        "B",
+        "C"
+    ], {
+        B: MECH,
+        A: "#forge:glass",
+        C: "#minecraft:wooden_slabs"
+    }).id("minecraft:daylight_detector")
 
 })
