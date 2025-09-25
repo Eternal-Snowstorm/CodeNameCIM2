@@ -5,69 +5,90 @@
 // 一定要写不一样的东西! ! ! ! ! 
 // 这一片我改了整整半小时! ! ! 
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
-	let incRailc = "create:railway_casing"
-	let incStus = "cmi:dense_sturdy_sheet"
-	let incStation = "create:display_board"
-	let incSign = "create:chute"
-	let incObs = "minecraft:observer"
-	let incCtrl = "minecraft:lever"
+	let { create, kubejs } = event.recipes
+	let CASING = "create:railway_casing"
+	let MECH = "cmi:railway_mechanism"
 
-	create.sequenced_assembly("2x railways:track_coupler", [
-		incRailc
-	], [
-		create.cutting(incRailc, incRailc),
-		create.deploying(incRailc, [incRailc, "cmi:railway_mechanism"]),
-		create.deploying(incRailc, [incRailc, "create:belt_connector"]),
-		create.deploying(incRailc, [incRailc, "minecraft:redstone_torch"]),
-		create.deploying(incRailc, [incRailc, "minecraft:heavy_weighted_pressure_plate"]),
-	]).transitionalItem(incRailc).loops(1).id("railways:crafting/track_coupler")
+	// 时刻表
+	kubejs.shaped("4x create:schedule", [
+		"A",
+		"B"
+	], {
+		A: "create:clipboard",
+		B: MECH
+	}).id("create:crafting/kinetics/schedule")
 
-	create.sequenced_assembly("8x create:schedule", [
-		incStus
-	], [
-		create.cutting(incStus, incStus),
-		create.deploying(incStus, [incStus, "cmi:railway_mechanism"]),
-		create.deploying(incStus, [incStus, "minecraft:book"]),
-	]).transitionalItem(incStus).loops(1).id("create:crafting/kinetics/schedule")
+	// 列车连挂器
+	kubejs.shaped("2x railways:track_coupler", [
+		" A ",
+		"BCB"
+	], {
+		A: MECH,
+		B: "create:minecart_coupling",
+		C: CASING
+	}).id("railways:crafting/track_coupler")
 
-	create.sequenced_assembly("8x create:track_station", [
-		incStation
-	], [
-		create.deploying(incStation, [incStation, "minecraft:stone_pressure_plate"]),
-		create.cutting(incStation, incStation),
-		create.deploying(incStation, [incStation, "cmi:railway_mechanism"]),
-		create.deploying(incStation, [incStation, "minecraft:redstone"]),
-		create.deploying(incStation, [incStation, "cmi:dense_sturdy_sheet"]),
-	]).transitionalItem(incStation).loops(1).id("create:crafting/kinetics/track_station")
+	// 车站
+	kubejs.shaped("2x create:track_station", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: "#minecraft:banners",
+		B: MECH,
+		C: CASING
+	}).id("create:crafting/kinetics/track_station")
 
-	create.sequenced_assembly("4x create:track_signal", [
-		incSign
-	], [
-		create.pressing(incSign, incSign),
-		create.deploying(incSign, [incSign, "cmi:railway_mechanism"]),
-		create.deploying(incSign, [incSign, "create:copper_sheet"]),
-		create.deploying(incSign, [incSign, "create:electron_tube"]),
-		create.deploying(incSign, [incSign, "create:electron_tube"]),
-	]).transitionalItem(incSign).loops(1).id("create:crafting/kinetics/track_signal")
+	// 列车信号机
+	kubejs.shaped("2x create:track_signal", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: "create:electron_tube",
+		B: CASING,
+		C: MECH
+	}).id("create:crafting/kinetics/track_signal")
 
-	create.sequenced_assembly("4x create:track_observer", [
-		incObs
-	], [
-		create.deploying(incObs, [incObs, "minecraft:observer"]),
-		create.cutting(incObs, incObs),
-		create.deploying(incObs, [incObs, "cmi:railway_mechanism"]),
-		create.deploying(incObs, [incObs, "minecraft:redstone"]),
-	]).transitionalItem(incObs).loops(1).id("create:crafting/kinetics/track_observer")
+	// 列车侦测器
+	kubejs.shaped("2x create:track_observer", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: MECH,
+		B: CASING,
+		C: "minecraft:observer"
+	}).id("create:crafting/kinetics/track_observer")
 
-	create.sequenced_assembly("4x create:controls", [
-		incCtrl
-	], [
-		create.deploying(incCtrl, [incCtrl, "create:cogwheel"]),
-		create.deploying(incCtrl, [incCtrl, "create:cogwheel"]),
-		create.deploying(incCtrl, [incCtrl, "cmi:railway_mechanism"]),
-		create.deploying(incCtrl, [incCtrl, "minecraft:lever"]),
-		create.deploying(incCtrl, [incCtrl, "minecraft:lever"]),
-		create.deploying(incCtrl, [incCtrl, "create:electron_tube"]),
-	]).transitionalItem(incCtrl).loops(1).id("create:crafting/kinetics/controls")
+	// 列车驾驶台
+	kubejs.shaped("create:controls", [
+		"A A",
+		"BCB"
+	], {
+		A: "minecraft:lever",
+		B: "create:sturdy_sheet",
+		C: MECH
+	}).id("create:crafting/kinetics/controls")
+
+	// 传感机械眼
+	kubejs.shaped("railways:remote_lens", [
+		"AB",
+		"C "
+	], {
+		A: MECH,
+		B: "cmi:ender_mechanism",
+		C: "create:redstone_link"
+	}).id("railways:crafting/remote_lens")
+
+	// 列车帽
+	global.dyeColorGroup.forEach((colour) => {
+		let icc = Item.of('railways:white_incomplete_conductor_cap', `{id:"railways:sequenced_assembly/${colour}_conductor_cap"}`)
+		create.sequenced_assembly(`railways:${colour}_conductor_cap`,
+			`minecraft:${colour}_wool`, [
+			create.cutting(icc, icc),
+			create.deploying(icc, [icc, MECH]),
+			create.deploying(icc, [icc, "#forge:string"])
+		]).transitionalItem(icc).loops(1).id(`railways:sequenced_assembly/${colour}_conductor_cap`)
+	})
 })
