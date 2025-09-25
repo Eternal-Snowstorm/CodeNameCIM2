@@ -5,6 +5,47 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 		"cmi:water_pump"
 	])
 
+	event.remove([
+		"cmi:feso4_solution_bucket",
+		"cmi:fecl2_solution_bucket",
+		"cmi:cuso4_solution_bucket",
+		"cmi:cucl2_solution_bucket",
+		"cmi:al2so43_solution_bucket",
+		"cmi:alcl3_solution_bucket",
+		"cmi:pbcl2_solution_bucket",
+		"cmi:pbso4_solution_bucket",
+		"cmi:sncl2_solution_bucket",
+		"cmi:snso4_solution_bucket",
+		"cmi:zncl2_solution_bucket",
+		"cmi:znso4_solution_bucket",
+		"cmi:aucl3_solution_bucket",
+		"cmi:au2so43_solution_bucket",
+		"cmi:agcl_solution_bucket",
+		"cmi:ag2so4_solution_bucket",
+		"cmi:crcl3_solution_bucket",
+		"cmi:cr2so43_solution_bucket",
+		"cmi:vocl2_solution_bucket",
+		"cmi:voso4_solution_bucket",
+		"cmi:uo2cl2_solution_bucket",
+		"cmi:uo2so4_solution_bucket",
+		"cmi:nicl2_solution_bucket",
+		"cmi:niso4_solution_bucket",
+		"cmi:cocl2_solution_bucket",
+		"cmi:coso4_solution_bucket",
+		"cmi:oscl3_solution_bucket",
+		"cmi:os2so43_solution_bucket",
+		"cmi:ptcl4_solution_bucket",
+		"cmi:ptso42_solution_bucket",
+		"cmi:mgcl2_solution_bucket",
+		"cmi:mgso4_solution_bucket",
+		"cmi:kcl_solution_bucket",
+		"cmi:k2so4_solution_bucket",
+		"cmi:cacl2_solution_bucket",
+		"cmi:caso4_solution_bucket",
+		"cmi:nacl_solution_bucket",
+		"cmi:na2so4_solution_bucket"
+	])
+
 	let removeItemFromCreativeTab = [
 		`#${global.namespace}:io_debug_block`,
 		"#forge:chem_salts",
@@ -20,7 +61,7 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 		`#${global.namespace}:raw_metals`,
 		`#${global.namespace}:ore_nodes`,
 		`#${global.namespace}:dev_doll`,
-		`#${global.namespace}:machine_block`
+		`#${global.namespace}:machine_block`,
 	]
 	removeItemFromCreativeTab.forEach((item) => {
 		event.remove(item)
