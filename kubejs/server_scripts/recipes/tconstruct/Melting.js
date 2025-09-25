@@ -153,6 +153,12 @@ ServerEvents.recipes((event) => {
 		.time(20 * 10)
 		.temperature(1000)
 
+	// 金铸模
+	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 90))
+		.ingredient("#tconstruct:patterns/reusable")
+		.time(100)
+		.temperature(1064)
+
 	// 铁轨系列
 	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 30))
 		.ingredient("minecraft:rail")
