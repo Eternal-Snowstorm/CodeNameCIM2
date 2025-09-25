@@ -7,8 +7,6 @@ const RANDOM_BLOCKS = ["minecraft:cobblestone", "minecraft:cobbled_deepslate"]
 const CHANCE = 0.5
 
 let replaceBlock = [
-	// Example
-	[["minecraft:sand", "minecraft:red_sand"], "minecraft:sandstone"],
 	["minecraft:magma_block", "minecraft:tuff"],
 	[["minecraft:soul_sand", "minecraft:soul_soil"], "minecraft:basalt"],
 	["create:andesite_alloy_block", "minecraft:andesite"],
@@ -29,7 +27,8 @@ RegisterNativeEvents.onEvent($BlockEvent$FluidPlaceBlockEvent, (event) => {
 	let belowBlock = level.getBlockState(pos.below()).getBlock()
 
 	replaceBlock.forEach(([condition, generate]) => {
-		if ((getBlock.id === "minecraft:cobblestone" || getBlock.id === "minecraft:stone") && isMatch(belowBlock.id, condition)) {
+		if ((getBlock.id === "minecraft:cobblestone" || getBlock.id === "minecraft:stone") &&
+			isMatch(belowBlock.id, condition)) {
 			let newBlockId = Math.random() < CHANCE
 				? generate
 				: RANDOM_BLOCKS[Math.floor(Math.random() * RANDOM_BLOCKS.length)]
@@ -46,7 +45,8 @@ RegisterNativeEvents.onEvent($PipeCollisionEvent$Spill, (event) => {
 	let belowBlock = level.getBlockState(pos.below()).getBlock()
 
 	replaceBlock.forEach(([condition, generate]) => {
-		if ((getBlock.id === "minecraft:cobblestone" || getBlock.id === "minecraft:stone") && isMatch(belowBlock.id, condition)) {
+		if ((getBlock.id === "minecraft:cobblestone" || getBlock.id === "minecraft:stone") &&
+			isMatch(belowBlock.id, condition)) {
 			let newBlockId = Math.random() < CHANCE
 				? generate
 				: RANDOM_BLOCKS[Math.floor(Math.random() * RANDOM_BLOCKS.length)]
