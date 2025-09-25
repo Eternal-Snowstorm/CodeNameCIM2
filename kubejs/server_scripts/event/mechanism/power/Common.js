@@ -163,6 +163,18 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 		Item.of("minecraft:deepslate_diamond_ore").withChance(0.01)
 	])
 
+	// 气密构件
+	addAccelerateEvent("cmi:air_tight_mechanism", "minecraft:stone", [
+		Item.of("mekanism:osmium_ore").withChance(0.2),
+		Item.of("thermal:silver_ore").withChance(0.1),
+		Item.of("minecraft:gold_ore").withChance(0.1)
+	])
+	addAccelerateEvent("cmi:air_tight_mechanism", "minecraft:deepslate", [
+		Item.of("mekanism:deepslate_osmium_ore").withChance(0.15),
+		Item.of("thermal:deepslate_silver_ore").withChance(0.15),
+		Item.of("minecraft:deepslate_gold_ore").withChance(0.15)
+	])
+
 	/**
 	 * 添加构件催生器事件
 	 * @param {Internal.ItemStack_} input 催生使用的物品

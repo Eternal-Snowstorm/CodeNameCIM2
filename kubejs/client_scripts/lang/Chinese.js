@@ -349,6 +349,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("cmi:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
 	addAccelerateTooltipLanguage("cmi:tier_2_aviation_mechanism", "§7转化月石\n§720%月球戴斯矿石\n§75%月球寒冰碎片矿石\n§75%钢块\n§2转化深板岩\n§215%深层戴斯矿石\n§210%深层铁矿石\n§210%深层银矿石")
 	addAccelerateTooltipLanguage("cmi:tier_3_aviation_mechanism", "§6转化火星石\n§620%火星紫金矿石\n§65%火星寒冰碎片矿石\n§65%戴斯块\n§2转化深板岩\n§215%深层紫金矿石\n§210%深层铁矿石\n§210%深层银矿石")
+	addAccelerateTooltipLanguage("cmi:air_tight_mechanism", "§e转化石头\n§e20%锇矿石\n§e10%银矿石\n§e10%金矿石\n§2转化深板岩\n§215%深层锇矿石\n§215%深层银矿石\n%215%深层金矿石")
 
 	addMusicDiscLanguage("mechanism", "Mechanism", "DontkillBelalus")
 

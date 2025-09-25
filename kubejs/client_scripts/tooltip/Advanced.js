@@ -13,7 +13,7 @@ ItemEvents.tooltip((event) => {
 	addAccelerateTooltip("cmi:smart_mechanism")
 	addAccelerateTooltip("cmi:tier_2_aviation_mechanism")
 	addAccelerateTooltip("cmi:tier_3_aviation_mechanism")
-	addAccelerateTooltip("vintageimprovements:redstone_module")
+	addAccelerateTooltip("cmi:air_tight_mechanism")
 	addAccelerateTooltip("create:precision_mechanism")
 
 	function addAccelerateTooltip(item) {
