@@ -92,10 +92,11 @@ StartupEvents.registry("item", (event) => {
 				}
 			}
 
-			if (type === "block"
-				|| type === "molten"
-				|| type === "dirty_slurry"
-				|| type === "slurry") {
+			if (type === "block" ||
+				type === "molten" ||
+				type === "dirty_slurry" ||
+				type === "slurry"
+			) {
 				return
 			}
 

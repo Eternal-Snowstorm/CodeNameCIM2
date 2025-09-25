@@ -12,12 +12,14 @@ StartupEvents.registry("item", (event) => {
 	 * @param {number} multiplier 倍率
 	 */
 	function addDrawerUpgrade(name, multiplier) {
-		let itemMultiplier = multiplier
-		let fluidMultiplier = itemMultiplier * 0.5
-		let controllerMultiplier = fluidMultiplier * 0.5
+		const ITEM_MULTIPLIER = multiplier
+		const FLUID_MULTIPLIER = ITEM_MULTIPLIER * 0.5
+		const CONTROLLER_MULTIPLIER = FLUID_MULTIPLIER * 0.5
+
+		let id = `${global.namespace}:${name}_upgrade`
 
 		let registerDrawerUpgrade =
-			event.createCustom(`${global.namespace}:${name}_upgrade`, () => {
+			event.createCustom(id, () => {
 				return new JavaAdapter($StorageUpgradeItem, {
 					// 重写getStorageMultiplier()方法设置升级的倍率
 					getStorageMultiplier() {
@@ -39,17 +41,17 @@ StartupEvents.registry("item", (event) => {
 						let itemTranslateKey =
 							Component.translatable(
 								`tooltip.${global.namespace}.storage_upgrade.itemMultiplier`,
-								itemMultiplier
+								ITEM_MULTIPLIER
 							).gray()
 						let fluidTranslateKey =
 							Component.translatable(
 								`tooltip.${global.namespace}.storage_upgrade.fluidMultiplier`,
-								fluidMultiplier
+								FLUID_MULTIPLIER
 							).gray()
 						let ctrlTranslateKey =
 							Component.translatable(
 								`tooltip.${global.namespace}.storage_upgrade.controllerMultiplier`,
-								controllerMultiplier
+								CONTROLLER_MULTIPLIER
 							).gray()
 
 						tooltip.add(itemTranslateKey)
