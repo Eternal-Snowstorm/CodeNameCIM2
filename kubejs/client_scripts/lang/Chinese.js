@@ -61,6 +61,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("grass_string", "草绳")
 	addItemLanguage("sugarcane_fiber", "甘蔗纤维")
 	addItemLanguage("drawer_upgrade_template", "抽屉升级模板")
+	addItemLanguage("incomplete_upgrade_augment_1","硬化整合组件(半成品)")
+	addItemLanguage("incomplete_upgrade_augment_2","强化整合组件(半成品)")
+	addItemLanguage("incomplete_upgrade_augment_3","谐振整合组件(半成品)")
+	addItemLanguage("lime_dust","石灰粉")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")

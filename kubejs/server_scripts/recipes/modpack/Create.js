@@ -26,14 +26,13 @@ ServerEvents.recipes((event) => {
 	]).heated()
 
 	// 铸铁锭
-	vintageimprovements.pressurizing([
-		"cmi:cast_iron_ingot",
-		"thermal:slag"
-	], [
-		"4x #create:crushed_raw_materials/iron",
-		"#forge:coal_coke",
-		"#cmi:steelmaking_raw_materials"
-	]).processingTime(200).superheated()
+	create.mixing("cmi:cast_iron_dust", [
+		[
+			"#create:crushed_raw_materials/iron",
+			"#forge:dusts/iron"
+		],
+		"#forge:dusts/coal_coke"
+	]).heated()
 
 	// 木棍
 	create.cutting([
@@ -101,7 +100,7 @@ ServerEvents.recipes((event) => {
 	]).processingTime(80)
 
 	// 钚
-	vintageimprovements.curving("mekanism:pellet_plutonium",[
+	vintageimprovements.curving("mekanism:pellet_plutonium", [
 		"mekanism:pellet_polonium"
 	]).itemAsHead("mekanism:pellet_plutonium")
 

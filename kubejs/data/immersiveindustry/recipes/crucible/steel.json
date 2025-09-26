@@ -2,15 +2,15 @@
 	"type": "immersiveindustry:crucible",
 	"inputs": [
 		{
-			"tag": "forge:ingots/cast_iron"
+			"tag": "forge:dusts/cast_iron"
 		},
 		{
-			"tag": "cmi:steelmaking_raw_materials"
+			"tag": "forge:dusts/lime"
 		}
 	],
 	"result": {
 		"item": "tconstruct:steel_ingot"
 	},
 	"time": 600,
-	"temperature": 1500
+	"temperature": 1370
 }

@@ -202,4 +202,10 @@ StartupEvents.registry("item", (event) => {
 	// 硝化纤维
 	addItem("nitrocellulose")
 		.texture(`${global.namespace}:item/material/dynamite/nitrocellulose`)
+
+	// 石灰粉
+	addItem("lime_dust")
+		.texture(`${global.namespace}:item/material/lime_powder`)
+		.tag("forge:dusts/lime")
+		.tag("forge:dusts")
 })

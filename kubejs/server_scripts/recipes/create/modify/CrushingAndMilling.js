@@ -32,4 +32,8 @@ ServerEvents.recipes((event) => {
 	], [
 		"minecraft:obsidian",
 	])
+
+	create.milling("cmi:lime_dust", [
+		"create:limestone"
+	])
 })
