@@ -205,7 +205,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 石灰粉
 	addItem("lime_dust")
-		.texture(`${global.namespace}:item/material/lime_powder`)
+		.texture(`${global.namespace}:item/material/lime_dust`)
 		.tag("forge:dusts/lime")
 		.tag("forge:dusts")
 })
