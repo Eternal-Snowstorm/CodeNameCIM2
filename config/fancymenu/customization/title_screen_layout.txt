@@ -271,7 +271,7 @@ element {
 
 element {
   interactable = true
-  source = Beta v2.3.3%n%已加载{"placeholder":"totalmods"}个Mod
+  source = Beta v2.4.0%n%已加载{"placeholder":"totalmods"}个Mod
   source_mode = direct
   shadow = true
   scale = 1.0
