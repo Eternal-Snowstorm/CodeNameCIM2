@@ -105,12 +105,12 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 	])
 
 	// 精密构件
-	addAccelerateEvent("cmi:precision_mechanism", "minecraft:stone", [
+	addAccelerateEvent("create:precision_mechanism", "minecraft:stone", [
 		Item.of("minecraft:copper_ore").withChance(0.15),
 		Item.of("create:zinc_ore").withChance(0.15),
 		Item.of("minecraft:redstone_ore").withChance(0.1)
 	])
-	addAccelerateEvent("cmi:precision_mechanism", "minecraft:deepslate", [
+	addAccelerateEvent("create:precision_mechanism", "minecraft:deepslate", [
 		Item.of("minecraft:deepslate_copper_ore").withChance(0.1),
 		Item.of("create:deepslate_zinc_ore").withChance(0.1),
 		Item.of("minecraft:deepslate_redstone_ore").withChance(0.15)
