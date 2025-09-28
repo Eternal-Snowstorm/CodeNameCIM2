@@ -298,7 +298,7 @@ ServerEvents.recipes((event) => {
 	create.deploying("4x create:cogwheel", [
 		"cmi:incomplete_cogwheel",
 		"#create:shaft"
-	])
+	]).id("create:deploying/cogwheel")
 
 	create.deploying("4x create:cogwheel", [
 		"create:shaft",
@@ -319,7 +319,7 @@ ServerEvents.recipes((event) => {
 	create.deploying("4x create:large_cogwheel", [
 		"cmi:incomplete_large_cogwheel",
 		"#create:shaft"
-	])
+	]).id("create:deploying/large_cogwheel")
 
 	create.deploying("4x create:large_cogwheel", [
 		"create:shaft",
