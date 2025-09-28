@@ -248,12 +248,12 @@ ServerEvents.recipes((event) => {
 			"immersiveengineering:hammer"
 		])
 
-		create.deploying(`steampowered:${material}_cogwheel`, [
+		create.deploying(`4x steampowered:${material}_cogwheel`, [
 			`cmi:incomplete_${material}_cogwheel`,
 			"#create:shaft"
 		])
 
-		create.item_application(`steampowered:${material}_cogwheel`, [
+		create.deploying(`4x steampowered:${material}_cogwheel`, [
 			"create:shaft",
 			`cmi:incomplete_${material}_cogwheel`
 		])
@@ -264,17 +264,17 @@ ServerEvents.recipes((event) => {
 		])
 
 		// 大齿轮
-		kubejs.shapeless(`cmi:incomplete_${material}_large_cogwheel`,[
+		kubejs.shapeless(`cmi:incomplete_${material}_large_cogwheel`, [
 			`2x #forge:plates/${material}`,
 			"immersiveengineering:hammer"
 		])
 
-		create.deploying(`steampowered:${material}_large_cogwheel`, [
+		create.deploying(`4x steampowered:${material}_large_cogwheel`, [
 			`cmi:incomplete_${material}_large_cogwheel`,
 			"#create:shaft"
 		])
 
-		create.item_application(`steampowered:${material}_large_cogwheel`, [
+		create.deploying(`4x steampowered:${material}_large_cogwheel`, [
 			"create:shaft",
 			`cmi:incomplete_${material}_large_cogwheel`
 		])
@@ -295,12 +295,12 @@ ServerEvents.recipes((event) => {
 		"#minecraft:axes"
 	])
 
-	create.deploying("create:cogwheel", [
+	create.deploying("4x create:cogwheel", [
 		"cmi:incomplete_cogwheel",
 		"#create:shaft"
 	])
 
-	create.item_application("create:cogwheel", [
+	create.deploying("4x create:cogwheel", [
 		"create:shaft",
 		"cmi:incomplete_cogwheel"
 	])
@@ -316,12 +316,12 @@ ServerEvents.recipes((event) => {
 		"#minecraft:axes"
 	])
 
-	create.deploying("create:large_cogwheel", [
+	create.deploying("4x create:large_cogwheel", [
 		"cmi:incomplete_large_cogwheel",
 		"#create:shaft"
 	])
 
-	create.item_application("create:large_cogwheel", [
+	create.deploying("4x create:large_cogwheel", [
 		"create:shaft",
 		"cmi:incomplete_large_cogwheel"
 	])
