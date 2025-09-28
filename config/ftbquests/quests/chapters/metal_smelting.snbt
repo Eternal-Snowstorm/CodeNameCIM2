@@ -654,6 +654,72 @@
 			x: -9.5d
 			y: 0.0d
 		}
+		{
+			icon: "minecraft:raw_iron"
+			id: "2ACC8CA727BBD613"
+			rewards: [{
+				id: "31360ACF14F0EFD2"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "如何获取更多金属"
+			tasks: [{
+				id: "2D9A1A6F786825D8"
+				title: "资源获取"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2ACC8CA727BBD613"]
+			description: ["使用特定构件右键催生器时, 会消耗一个构件, 并将周围5×5范围内的一部分石头转化为矿石(详见对应构件的提示)"]
+			id: "69E7747AD0E17A51"
+			rewards: [{
+				id: "7AF90AD883CEAB5D"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "构件催生"
+			tasks: [{
+				id: "0B693C57917746ED"
+				item: "cmi:accelerator"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2ACC8CA727BBD613"]
+			description: [
+				"矿石节点会随机生成在地表, 周围分布着部分粗矿块与矿石, 中心则包含一个节点方块"
+				"{image:cmi:textures/images/ore_node.png width:109 height:84 align:center}"
+				"{@pagebreak}"
+				"开采节点需要制作一个&9钻芯&r和任意材质的&9钻头(安山合金、铜或黄铜)&r"
+				"在节点上方第2格放置&9钻芯&r, 其下方放置&9钻头&r, 并接入动力后即可开始无限开采"
+				"{image:cmi:textures/images/ore_node_mining.png width:107 height:96 align:center}"
+			]
+			icon: "cmi:deepslate_iron_ore_node"
+			id: "515A858978CD77C7"
+			rewards: [{
+				id: "107D8CA3B55B71CA"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "无限获取"
+			tasks: [{
+				icon: "cmi:deepslate_iron_ore_node"
+				id: "1049179594D87817"
+				observe_type: 1
+				timer: 0L
+				title: "观察任意矿石节点"
+				to_observe: "#deepdrilling:ore_nodes"
+				type: "observation"
+			}]
+			title: "矿石节点"
+			x: -0.5d
+			y: -8.5d
+		}
 	]
 	title: "矿石获取与熔炼"
 }
