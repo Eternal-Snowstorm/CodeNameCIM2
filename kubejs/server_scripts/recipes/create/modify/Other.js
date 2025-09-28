@@ -264,9 +264,8 @@ ServerEvents.recipes((event) => {
 		])
 
 		// 大齿轮
-		kubejs.shapeless(`cmi:incomplete_${material}_large_cogwheel`, [
-			`#forge:plates/${material}`,
-			`#forge:plates/${material}`,
+		kubejs.shapeless(`cmi:incomplete_${material}_large_cogwheel`,[
+			`2x #forge:plates/${material}`,
 			"immersiveengineering:hammer"
 		])
 
@@ -313,8 +312,7 @@ ServerEvents.recipes((event) => {
 
 	// 大齿轮
 	kubejs.shapeless("cmi:incomplete_large_cogwheel", [
-		"#minecraft:planks",
-		"#minecraft:planks",
+		"2x #minecraft:planks",
 		"#minecraft:axes"
 	])
 
