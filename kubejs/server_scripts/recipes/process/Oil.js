@@ -49,7 +49,7 @@ ServerEvents.recipes((event) => {
 
 	// 油页岩蒸汽
 	thermal.pyrolyzer([
-		Fluid.of("cmi:oil_shale_steam", 20),
+		Fluid.of("cmi:oil_shale_steam", 200),
 		Item.of("immersiveengineering:slag").withChance(0.26),
 		Item.of("thermal:bitumen").withChance(0.05)
 	], "#forge:dusts/oil_shale")

@@ -187,4 +187,11 @@ ServerEvents.recipes((event) => {
 		B: "#forge:ingots/andesite_alloy",
 		C: "thermal:cured_rubber"
 	}).id("createdieselgenerators:crafting/basin_lid")
+
+	// 空白模块
+	kubejs.shapeless("deepdrilling:blank_module", [
+		"create:andesite_casing",
+		"cmi:andesite_mechanism",
+		"#forge:plates/iron"
+	]).id("deepdrilling:blank_module")
 })
