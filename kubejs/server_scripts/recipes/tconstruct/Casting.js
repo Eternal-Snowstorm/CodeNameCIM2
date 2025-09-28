@@ -18,6 +18,32 @@ ServerEvents.recipes((event) => {
 			.cast_consumed(true)
 	})
 
+	// 齿轮
+	let cogwheelMaterials = [
+		"bronze",
+		"cast_iron",
+		"steel",
+	]
+	cogwheelMaterials.forEach((material) => {
+		// 小齿轮
+		tconstruct.casting_table(`cmi:incomplete_${material}_cogwheel`)
+			.fluid(Fluid.tag("tag", `forge:molten_${material}`, 90))
+			.cast("#tconstruct:casts/multi_use/gear")
+			.cooling_time(20 * 2)
+
+		tconstruct.casting_table(`cmi:incomplete_${material}_cogwheel`)
+			.fluid(Fluid.tag("tag", `forge:molten_${material}`, 90))
+			.cast("#tconstruct:casts/single_use/gear")
+			.cooling_time(20 * 2)
+			.cast_consumed(true)
+
+		// 大齿轮
+		tconstruct.casting_table(`cmi:incomplete_${material}_large_cogwheel`)
+			.fluid(Fluid.tag("tag", `forge:molten_${material}`, 90))
+			.cast(`cmi:incomplete_${material}_cogwheel`)
+			.cooling_time(20 * 2)
+	})
+
 	// 金构件铸模
 	tconstruct.casting_table("cmi:mechanism_cast")
 		.fluid(Fluid.of("tconstruct:molten_gold", 90))

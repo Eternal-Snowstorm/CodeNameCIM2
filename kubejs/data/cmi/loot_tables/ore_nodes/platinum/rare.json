@@ -21,7 +21,7 @@
 				{
 					"type": "minecraft:item",
 					"weight": 1,
-					"name": "cmi:crushed_raw_platinum",
+					"name": "create:crushed_raw_platinum",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

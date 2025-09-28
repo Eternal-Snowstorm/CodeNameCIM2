@@ -21,7 +21,22 @@
 				{
 					"type": "minecraft:item",
 					"weight": 2,
-					"name": "cmi:crushed_raw_platinum",
+					"name": "create:crushed_raw_platinum",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"add": false,
+							"count": {
+								"min": 2,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "cmi:platinum_nugget",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

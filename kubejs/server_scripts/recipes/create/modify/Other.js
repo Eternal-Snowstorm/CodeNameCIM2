@@ -194,4 +194,44 @@ ServerEvents.recipes((event) => {
 		"cmi:andesite_mechanism",
 		"#forge:plates/iron"
 	]).id("deepdrilling:blank_module")
+
+	// 安山漏斗
+	kubejs.shaped("4x create:andesite_funnel", [
+		"A",
+		"B"
+	], {
+		A: "#forge:ingots/andesite_alloy",
+		B: "thermal:cured_rubber"
+	})
+
+	// 安山隧道
+	kubejs.shaped("8x create:andesite_tunnel", [
+		"AA",
+		"BB"
+	], {
+		A: "#forge:ingots/andesite_alloy",
+		B: "thermal:cured_rubber"
+	})
+
+	// 黄铜漏斗
+	kubejs.shaped("4x create:brass_funnel", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: "create:electron_tube",
+		B: "#forge:ingots/brass",
+		C: "thermal:cured_rubber"
+	})
+
+	// 黄铜隧道
+	kubejs.shaped("8x create:brass_tunnel", [
+		"A ",
+		"BB",
+		"CC"
+	], {
+		A: "create:electron_tube",
+		B: "#forge:ingots/brass",
+		C: "thermal:cured_rubber"
+	})
 })
