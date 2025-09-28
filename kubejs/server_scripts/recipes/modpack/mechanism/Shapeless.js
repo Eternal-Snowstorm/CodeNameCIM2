@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
 	])
 	kubejs.shapeless("4x cmi:space_mechanism_part", [
 		"ae2:sky_dust",
-		"ae2:matter_ball"
+		"ad_astra:etrionic_capacitor"
 	])
 	// 创造
 	kubejs.shapeless("2x cmi:creative_mechanism", [

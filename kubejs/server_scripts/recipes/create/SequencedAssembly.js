@@ -89,4 +89,24 @@ ServerEvents.recipes((event) => {
 		])
 	]).transitionalItem("cmi:incomplete_electron_tube").loops(1)
 		.id("create:crafting/materials/electron_tube")
+
+	// Ad电容器
+	create.sequenced_assembly("ad_astra:etrionic_capacitor",
+		"#forge:plates/steel", [
+		create.deploying("ad_astra:etrionic_core", [
+			'ad_astra:etrionic_core',
+			"#forge:plates/etrium"
+		]),
+		create.deploying("ad_astra:etrionic_core", [
+			'ad_astra:etrionic_core',
+			"cmi:simple_battery"
+		]),
+		create.deploying("ad_astra:etrionic_core", [
+			'ad_astra:etrionic_core',
+			"#forge:wires/copper"
+		]),
+		create.pressing("ad_astra:etrionic_core",
+			"ad_astra:etrionic_core"
+		)
+	]).transitionalItem('ad_astra:etrionic_core').loops(1).id("ad_astra:etrionic_capacitor")
 })

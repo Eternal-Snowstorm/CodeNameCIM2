@@ -120,4 +120,30 @@ ServerEvents.recipes((event) => {
 			}
 		})
 	})
+
+	// 锇的额外配方
+	event.custom({
+		"type": "immersiveindustry:car_kiln",
+		"input_fluid": {
+			"tag": "tconstruct:blazing_blood",
+			"amount": 1000
+		},
+		"inputs": [
+			{
+				"base_ingredient": {
+					"tag": "forge:dusts/osmium"
+				},
+				"count": 4
+			}
+		],
+		"results": [
+			{
+				"item": "mekanism:ingot_osmium",
+				"count": 2
+			}
+		],
+		"time": 500,
+		"tickEnergy": 80
+	})
+
 })
