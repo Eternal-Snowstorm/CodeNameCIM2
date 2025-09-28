@@ -1,11 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { immersiveengineering } = event.recipes
 
-	// immersiveengineering.coke_oven("#forge:coal_coke")
-	// 	.time(900 * 0.75)
-	// 	.input("minecraft:charcoal")
-	// 	.creosote(500)
-
 	immersiveengineering.coke_oven("minecraft:charcoal")
 		.time(900 * 0.75)
 		.input("#minecraft:logs")
