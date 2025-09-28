@@ -234,4 +234,24 @@ ServerEvents.recipes((event) => {
 		B: "#forge:ingots/brass",
 		C: "thermal:cured_rubber"
 	})
+
+	// 齿轮
+	let cogwheelMaterials = [
+		"bronze",
+		"cast_iron",
+		"steel",
+	]
+	cogwheelMaterials.forEach((material) => {
+		// 小齿轮
+		kubejs.shapeless(`cmi:incomplete_${material}_cogwheel`, [
+			`#forge:plates/${material}`,
+			"immersiveengineering:hammer"
+		])
+		// 大齿轮
+		kubejs.shapeless(`cmi:incomplete_${material}_large_cogwheel`,[
+			`#forge:plates/${material}`,
+			`#forge:plates/${material}`,
+			"immersiveengineering:hammer"
+		])
+	})
 })
