@@ -330,4 +330,9 @@ ServerEvents.recipes((event) => {
 		"cmi:incomplete_large_cogwheel",
 		"#create:shaft"
 	]).id("create:crafting/kinetics/large_cogwheel")
+
+	kubejs.shapeless("create:large_cogwheel", [
+		"create:cogwheel",
+		"#minecraft:planks"
+	]).id("create:crafting/kinetics/large_cogwheel_from_little")
 })
