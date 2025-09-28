@@ -11,11 +11,19 @@
 		{
 			dependencies: ["4F1185F495038BB3"]
 			id: "136F20B0869B90F6"
-			rewards: [{
-				id: "77E2D8516A5C450C"
-				item: "cmi:wooden_machine"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "77E2D8516A5C450C"
+					item: "cmi:wooden_machine"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0BEB0767F04CD300"
+					item: "cmi:basic_random_mechanism"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6BB1A5898061E906"
 				item: "cmi:wooden_mechanism"

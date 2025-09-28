@@ -192,7 +192,7 @@
 			}]
 			tasks: [{
 				id: "338AF8B447D4C75F"
-				item: "immersiveengineering:plate_gold"
+				item: "thermal:gold_plate"
 				type: "item"
 			}]
 			title: "金板"

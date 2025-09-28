@@ -6,7 +6,7 @@
 				"identifier": "geometry.unknown",
 				"texture_width": 128,
 				"texture_height": 128,
-				"visible_bounds_width": 2,
+				"visible_bounds_width": 3,
 				"visible_bounds_height": 5.5,
 				"visible_bounds_offset": [0, 2.25, 0]
 			},
@@ -108,6 +108,18 @@
 							"size": [8, 6, 2],
 							"pivot": [0, 56, 3],
 							"rotation": [0, -90, 0],
+							"uv": {
+								"north": {"uv": [48, 42], "uv_size": [8, 6]},
+								"east": {"uv": [56, 42], "uv_size": [2, 6]},
+								"south": {"uv": [8, 64], "uv_size": [8, 6]},
+								"west": {"uv": [64, 32], "uv_size": [2, 6]},
+								"up": {"uv": [68, 4], "uv_size": [8, 2]},
+								"down": {"uv": [68, 8], "uv_size": [8, -2]}
+							}
+						},
+						{
+							"origin": [-4, 56, -1],
+							"size": [8, 6, 2],
 							"uv": {
 								"north": {"uv": [48, 42], "uv_size": [8, 6]},
 								"east": {"uv": [56, 42], "uv_size": [2, 6]},

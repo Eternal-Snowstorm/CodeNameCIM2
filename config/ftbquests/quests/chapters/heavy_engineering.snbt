@@ -158,7 +158,7 @@
 			}]
 			tasks: [{
 				id: "5A9F64970CAA5617"
-				item: "thermal_extra:copper_rod"
+				item: "createaddition:copper_rod"
 				type: "item"
 			}]
 			title: "铜杆"
