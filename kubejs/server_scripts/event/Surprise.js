@@ -1,8 +1,8 @@
 let $LocalDateTime = Java.loadClass("java.time.LocalDateTime")
 
 PlayerEvents.loggedIn((event) => {
-
 	let { player, server } = event
+
 	let month = $LocalDateTime.now().getMonthValue()
 	let day = $LocalDateTime.now().getDayOfMonth()
 
