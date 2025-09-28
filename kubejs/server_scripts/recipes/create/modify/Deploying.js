@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create, kubejs } = event.recipes
 
 	create.deploying("immersiveengineering:component_iron", [
 		"immersiveengineering:sheetmetal_iron",
@@ -68,22 +68,4 @@ ServerEvents.recipes((event) => {
 		"scannable:blank_module",
 		"cmi:wooden_mechanism"
 	]).id("scannable:chest_module")
-
-	// 齿轮
-	let cogwheelMaterials = [
-		"bronze",
-		"cast_iron",
-		"steel"
-	]
-	cogwheelMaterials.forEach((material) => {
-		create.deploying(`8x steampowered:${material}_cogwheel`, [
-			`cmi:incomplete_${material}_cogwheel`,
-			"#create:shaft"
-		])
-
-		create.deploying(`8x steampowered:${material}_large_cogwheel`, [
-			`cmi:incomplete_${material}_large_cogwheel`,
-			"#create:shaft"
-		])
-	})
 })

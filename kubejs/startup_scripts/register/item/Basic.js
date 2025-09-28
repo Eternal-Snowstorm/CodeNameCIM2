@@ -519,6 +519,18 @@ StartupEvents.registry("item", (event) => {
 		}
 	}
 
+	addItem("incomplete_cogwheel")
+		.modelJson({
+			"parent": "create:block/cogwheel_shaftless"
+		})
+		.tag("create:incomplete_cogwheels")
+
+	addItem("incomplete_large_cogwheel")
+		.modelJson({
+			"parent": "create:block/large_cogwheel_shaftless"
+		})
+		.tag("create:incomplete_cogwheels")
+
 	let cogwheelMaterials = [
 		"bronze",
 		"cast_iron",

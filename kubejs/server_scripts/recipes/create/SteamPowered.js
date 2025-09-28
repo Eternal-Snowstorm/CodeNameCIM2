@@ -19,19 +19,6 @@ ServerEvents.recipes((event) => {
 		let ingot = `#forge:ingots/${material.id}`
 		let plate = `#forge:plates/${material.id}`
 
-		// 小齿轮
-		kubejs.shapeless(`steampowered:${material.id}_cogwheel`, [
-			"create:shaft",
-			ingot
-		])
-
-		// 大齿轮
-		kubejs.shapeless(`steampowered:${material.id}_large_cogwheel`, [
-			"create:shaft",
-			ingot,
-			ingot
-		])
-
 		// 锅炉
 		kubejs.shaped(`steampowered:${material.id}_boiler`, [
 			"AAA",

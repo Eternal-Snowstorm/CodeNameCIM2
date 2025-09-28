@@ -247,11 +247,89 @@ ServerEvents.recipes((event) => {
 			`#forge:plates/${material}`,
 			"immersiveengineering:hammer"
 		])
+
+		create.deploying(`steampowered:${material}_cogwheel`, [
+			`cmi:incomplete_${material}_cogwheel`,
+			"#create:shaft"
+		])
+
+		create.item_application(`steampowered:${material}_cogwheel`, [
+			"create:shaft",
+			`cmi:incomplete_${material}_cogwheel`
+		])
+
+		kubejs.shapeless(`steampowered:${material}_cogwheel`, [
+			`cmi:incomplete_${material}_cogwheel`,
+			"#create:shaft"
+		])
+
 		// 大齿轮
-		kubejs.shapeless(`cmi:incomplete_${material}_large_cogwheel`,[
+		kubejs.shapeless(`cmi:incomplete_${material}_large_cogwheel`, [
 			`#forge:plates/${material}`,
 			`#forge:plates/${material}`,
 			"immersiveengineering:hammer"
 		])
+
+		create.deploying(`steampowered:${material}_large_cogwheel`, [
+			`cmi:incomplete_${material}_large_cogwheel`,
+			"#create:shaft"
+		])
+
+		create.item_application(`steampowered:${material}_large_cogwheel`, [
+			"create:shaft",
+			`cmi:incomplete_${material}_large_cogwheel`
+		])
+
+		kubejs.shapeless(`steampowered:${material}_large_cogwheel`, [
+			`cmi:incomplete_${material}_large_cogwheel`,
+			"#create:shaft"
+		])
+
+		kubejs.shapeless(`steampowered:${material}_large_cogwheel`, [
+			`steampowered:${material}_cogwheel`,
+			`#forge:plates/${material}`
+		])
 	})
+	// 齿轮
+	kubejs.shapeless("cmi:incomplete_cogwheel", [
+		"#minecraft:planks",
+		"#minecraft:axes"
+	])
+
+	create.deploying("create:cogwheel", [
+		"cmi:incomplete_cogwheel",
+		"#create:shaft"
+	])
+
+	create.item_application("create:cogwheel", [
+		"create:shaft",
+		"cmi:incomplete_cogwheel"
+	])
+
+	kubejs.shapeless("create:cogwheel", [
+		"cmi:incomplete_cogwheel",
+		"#create:shaft"
+	]).id("create:crafting/kinetics/cogwheel")
+
+	// 大齿轮
+	kubejs.shapeless("cmi:incomplete_large_cogwheel", [
+		"#minecraft:planks",
+		"#minecraft:planks",
+		"#minecraft:axes"
+	])
+
+	create.deploying("create:large_cogwheel", [
+		"cmi:incomplete_large_cogwheel",
+		"#create:shaft"
+	])
+
+	create.item_application("create:large_cogwheel", [
+		"create:shaft",
+		"cmi:incomplete_large_cogwheel"
+	])
+
+	kubejs.shapeless("create:large_cogwheel", [
+		"cmi:incomplete_large_cogwheel",
+		"#create:shaft"
+	]).id("create:crafting/kinetics/large_cogwheel")
 })
