@@ -320,9 +320,9 @@ ServerEvents.recipes((event) => {
 		"#minecraft:axes"
 	]).damageIngredient("#minecraft:axes", 1)
 
-	create.cutting("cmi:incomplete_large_cogwheel",
+	create.cutting("cmi:incomplete_large_cogwheel", [
 		"#minecraft:planks"
-	)
+	])
 
 	create.deploying("4x create:large_cogwheel", [
 		"cmi:incomplete_large_cogwheel",
