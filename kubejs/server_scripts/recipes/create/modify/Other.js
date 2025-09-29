@@ -293,7 +293,11 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("cmi:incomplete_cogwheel", [
 		"#minecraft:planks",
 		"#minecraft:axes"
-	])
+	]).damageIngredient("#minecraft:axes", 1)
+
+	create.cutting("cmi:incomplete_cogwheel",
+		"#minecraft:wooden_slabs"
+	)
 
 	create.deploying("4x create:cogwheel", [
 		"cmi:incomplete_cogwheel",
@@ -315,6 +319,10 @@ ServerEvents.recipes((event) => {
 		"2x #minecraft:planks",
 		"#minecraft:axes"
 	]).damageIngredient("#minecraft:axes", 1)
+
+	create.cutting("cmi:incomplete_large_cogwheel",
+		"#minecraft:planks"
+	)
 
 	create.deploying("4x create:large_cogwheel", [
 		"cmi:incomplete_large_cogwheel",
