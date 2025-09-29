@@ -314,7 +314,7 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("cmi:incomplete_large_cogwheel", [
 		"2x #minecraft:planks",
 		"#minecraft:axes"
-        ]).damageIngredient("#minecraft:axes", 1)
+	]).damageIngredient("#minecraft:axes", 1)
 
 	create.deploying("4x create:large_cogwheel", [
 		"cmi:incomplete_large_cogwheel",
