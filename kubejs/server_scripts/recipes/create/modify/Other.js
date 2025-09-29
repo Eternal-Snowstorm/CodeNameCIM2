@@ -289,15 +289,16 @@ ServerEvents.recipes((event) => {
 			`#forge:plates/${material}`
 		])
 	})
+
 	// 齿轮
 	kubejs.shapeless("cmi:incomplete_cogwheel", [
 		"#minecraft:planks",
 		"#minecraft:axes"
 	]).damageIngredient("#minecraft:axes", 1)
 
-	create.cutting("cmi:incomplete_cogwheel",
+	create.cutting("cmi:incomplete_cogwheel", [
 		"#minecraft:wooden_slabs"
-	)
+	])
 
 	create.deploying("4x create:cogwheel", [
 		"cmi:incomplete_cogwheel",
