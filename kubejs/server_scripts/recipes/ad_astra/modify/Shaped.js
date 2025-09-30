@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs, create } = event.recipes
 
 	// 电缆
 	kubejs.shaped("4x ad_astra:steel_cable", [
@@ -90,4 +90,41 @@ ServerEvents.recipes((event) => {
 		A: "#forge:ingots/etrium",
 		B: "#forge:plates/etrium"
 	})
+
+	// 航天服T1
+	create.mechanical_crafting("ad_astra:space_helmet", [
+		"AAA",
+		"BCB"
+	], {
+		A: "#forge:plates/hdpe",
+		B: "#forge:plates/tungsten_steel",
+		C: "#forge:panes/glass"
+	}).id("ad_astra:space_helmet")
+
+	create.mechanical_crafting("ad_astra:space_suit", [
+		" A A ",
+		"CABAC",
+		" BAB "
+	], {
+		A: "#forge:plates/tungsten_steel",
+		B: "#forge:plates/hdpe",
+		C: "ad_astra:gas_tank"
+	}).id("ad_astra:space_suit")
+
+	create.mechanical_crafting("ad_astra:space_pants", [
+		"ABA",
+		"B B",
+		"A A"
+	], {
+		A: "#forge:plates/tungsten_steel",
+		B: "#forge:plates/hdpe"
+	}).id("ad_astra:space_pants")
+
+	create.mechanical_crafting("ad_astra:space_boots", [
+		"A A",
+		"B B",
+	], {
+		A: "#forge:plates/tungsten_steel",
+		B: "#forge:plates/hdpe"
+	}).id("ad_astra:space_boots")
 })

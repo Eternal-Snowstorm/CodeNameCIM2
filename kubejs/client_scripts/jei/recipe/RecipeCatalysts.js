@@ -21,4 +21,5 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 	}
 
 	addJeiRecipeIndex("cmi:accelerator", "cmi:accelerator", "accelerator")
+	addJeiRecipeIndex("immersiveindustry:crucible", "immersiveindustry:crucible")
 })

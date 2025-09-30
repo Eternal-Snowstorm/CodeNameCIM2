@@ -376,7 +376,7 @@ addMaterial("cobalt", 0x0098FF, "iron")
 	.dirtySlurry()
 
 // 钨钢
-addMaterial("tungsten_steel", 0x4B5A4F, "diamond")
+addMaterial("tungsten_steel", 0x82998C, "diamond")
 	.ingot()
 	.nugget()
 	.plate()
