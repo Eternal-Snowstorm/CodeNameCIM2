@@ -107,6 +107,7 @@ global.mechanismGroup = [
 // 所有金属(用于兼容性配方)
 global.metalGroup = [
 	"andesite_alloy",
+	"tungsten_steel",
 	"aluminum",
 	"brass",
 	"bronze",
@@ -175,6 +176,7 @@ global.meltingPoints = {
 	 * Mek熔炉全部可熔炼
 	 */
 	"andesite_alloy": 760, // null
+	"tungsten_steel": 2524,
 	"aluminum": 660,
 	"brass": 930,
 	"bronze": 820,
@@ -241,6 +243,7 @@ global.materialNamespace = {
 	 * n代表无此材料
 	 */
 	"andesite_alloy": "c",
+	"tungsten_steel": "c",
 	"aluminum": "v",
 	"brass": "c",
 	"bronze": "v",
@@ -355,6 +358,7 @@ global.meltingLevels = {
 		"amethyst_bronze"
 	],
 	"above": [
+		"tungsten_steel",
 		"osmium",
 		"desh",
 		"tungsten",
