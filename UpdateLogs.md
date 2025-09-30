@@ -658,6 +658,7 @@
 ## Beta 2.4.0(Undefined)
 
 ### 修改(调整)内容
+ - 将mod`Just Enough Resources`更换为了`Advanced Loot Info`
 
 ### 新增内容
 
