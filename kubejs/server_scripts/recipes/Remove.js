@@ -101,7 +101,9 @@ ServerEvents.recipes((event) => {
 		"create:crushing/tuff",
 		"create:crushing/tuff_recycling",
 		"functionalstorage:oak_drawer_alternate_x1",
-		"create:milling/beetroot"
+		"create:milling/beetroot",
+		"functionalstorage:oak_drawer_alternate_x4",
+		"functionalstorage:oak_drawer_alternate_x2"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
