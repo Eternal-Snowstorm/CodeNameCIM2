@@ -659,8 +659,10 @@
 
 ### 修改(调整)内容
  - 将mod`Just Enough Resources`更换为了`Advanced Loot Info`
+ - 修改了`流体储罐`的配方
 
 ### 新增内容
+ - 添加了`墨囊`的配方
 
 ### 删除内容
 

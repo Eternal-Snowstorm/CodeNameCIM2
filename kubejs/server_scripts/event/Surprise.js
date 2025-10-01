@@ -15,7 +15,8 @@ PlayerEvents.loggedIn((event) => {
 
 	if (month === 10 && day === 1) {
 		server.scheduleInTicks(5, () => {
-			player.tell(Component.translatable(`message.${global.namespace}.chinese_national_day`))
+			player.tell(Component.translatable(`message.${global.namespace}.chinese_national_day`)
+				.red())
 		})
 	}
 })

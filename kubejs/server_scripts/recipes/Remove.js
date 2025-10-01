@@ -103,7 +103,8 @@ ServerEvents.recipes((event) => {
 		"functionalstorage:oak_drawer_alternate_x1",
 		"create:milling/beetroot",
 		"functionalstorage:oak_drawer_alternate_x4",
-		"functionalstorage:oak_drawer_alternate_x2"
+		"functionalstorage:oak_drawer_alternate_x2",
+		"create:milling/coal"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

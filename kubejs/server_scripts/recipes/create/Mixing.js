@@ -80,4 +80,11 @@ ServerEvents.recipes((event) => {
 		"2x #forge:raw_materials/copper",
 		"2x #forge:raw_materials/tin"
 	]).heatRequirement(global.HeatLevel["grilled"])
+
+	// 墨囊
+	create.mixing("2x minecraft:ink_sac", [
+		Fluid.of("minecraft:water", 250),
+		"#forge:dys/black",
+		"immersiveengineering:ersatz_leather"
+	])
 })

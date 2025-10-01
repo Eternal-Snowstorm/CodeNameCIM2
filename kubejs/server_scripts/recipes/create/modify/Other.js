@@ -344,4 +344,23 @@ ServerEvents.recipes((event) => {
 		"create:cogwheel",
 		"#minecraft:planks"
 	]).id("create:crafting/kinetics/large_cogwheel_from_little")
+
+	// 流体储罐
+	kubejs.shaped("create:fluid_tank", [
+		"A",
+		"B",
+		"A"
+	], {
+		A: "#forge:plates/copper",
+		B: "#forge:glass"
+	}).id("create:crafting/kinetics/fluid_tank")
+
+	kubejs.shaped("2x create:fluid_tank", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "#forge:plates/copper",
+		B: "#forge:glass"
+	}).id("create:crafting/kinetics/fluid_tank2")
 })
