@@ -104,6 +104,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCastItemLanguage("mechanism", "构件")
 	addCastItemLanguage("nugget", "粒")
 
+	addCellItemLanguage("tier_1_aviation", "壹级科技航天")
+	addCellItemLanguage("tier_2_aviation", "贰级科技航天")
+	addCellItemLanguage("tier_3_aviation", "叁级科技航天")
+	addCellItemLanguage("tier_4_aviation", "肆级科技航天")
+
 	addFluidLanguage("steam", "蒸汽")
 	addFluidLanguage("blood", "血液")
 	addFluidLanguage("pure_sand", "纯净沙")
@@ -136,6 +141,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("crystal_catalyt", "晶体催生剂")
 	addFluidLanguage("sludge_suspension", "淤泥悬浊液")
 	addFluidLanguage("syrup", "糖浆")
+	addFluidLanguage("geyser_jet", "间歇泉喷射液")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
@@ -300,7 +306,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("qi_month", "榛名柒月", "榛名柒月")
 	addPaintingLanguage("sacabamBaspis", "萨卡班甲鱼", "⑨Dropper_QWQ⑨")
 
-	addCommonTooltipLanguage("tconstruct:seared_heater", "固体燃料最多提供937°C / 1718.6°F")
+	addCommonTooltipLanguage("cmi:sugarcane_fiber", "§c小刀右键草会掉落")
+	addCommonTooltipLanguage("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
 	addCommonTooltipLanguage("#cmi:machine_block", "只有装饰作用(暂时)")
 	addCommonTooltipLanguage("cmi:pigiron_mechanism", "可无限次食用")
 	addCommonTooltipLanguage("cmi:acceleratable", "§v按住Shift查看构件之力催生器用途")
@@ -499,6 +506,10 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addItemLanguage(key, value) {
 		event.add(`item.${global.namespace}.${key}`, value)
+	}
+
+	function addCellItemLanguage(key, value) {
+		event.add(`item.${global.namespace}.${key}_cell`, `${value}硬盘`)
 	}
 
 	function addFlashDriveLanguage(key, value) {

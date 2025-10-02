@@ -7,6 +7,7 @@ StartupEvents.registry("block", (event) => {
 				.resistance(1)
 				.model(`${global.namespace}:block/dev/${name}`)
 				.textureAll(`${global.namespace}:block/dev/${name}`)
+				.waterlogged()
 				.notSolid()
 				.defaultCutout()
 				.notSolid()
