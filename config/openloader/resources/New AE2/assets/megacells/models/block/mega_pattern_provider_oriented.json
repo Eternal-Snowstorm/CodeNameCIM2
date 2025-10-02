@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "megacells:block/mega_pattern_provider_alternate",
+    "side": "megacells:block/mega_pattern_provider_alternate_arrow",
+    "top": "megacells:block/mega_pattern_provider_alternate_front"
+  }
+}

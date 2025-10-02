@@ -1,0 +1,8 @@
+{
+  "parent": "ae2:part/display_off",
+  "textures": {
+    "lightsBright": "merequester:part/requester_terminal_bright",
+    "lightsMedium": "merequester:part/requester_terminal_medium",
+    "lightsDark": "merequester:part/requester_terminal_dark"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "ae2:item/cable_interface",
+  "textures": {
+    "back": "megacells:part/mega_interface_back",
+    "front": "megacells:part/mega_interface",
+    "sides": "megacells:part/mega_monitor_sides"
+  }
+}
