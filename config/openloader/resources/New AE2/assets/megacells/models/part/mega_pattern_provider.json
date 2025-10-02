@@ -1,0 +1,10 @@
+{
+  "parent": "ae2:part/interface_base",
+  "textures": {
+    "back": "megacells:part/mega_pattern_provider_back",
+    "front": "megacells:part/mega_pattern_provider",
+    "particle": "megacells:part/mega_pattern_provider_back",
+    "sides": "megacells:part/mega_monitor_sides",
+    "sides_status": "megacells:part/mega_monitor_sides_status"
+  }
+}

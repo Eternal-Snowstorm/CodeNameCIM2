@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 
     function addCrushedSplashing(material, by_product) {
         let crushed = `#create:crushed_raw_materials/${material}`
-        let dust = Ingredient.of(`#forge:dusts/${material}`).getItemIds()
+        let dust = Ingredient.of(`2x #forge:dusts/${material}`).getItemIds()
         create.splashing([
             dust[0],
             Item.of(by_product).withChance(0.25)
