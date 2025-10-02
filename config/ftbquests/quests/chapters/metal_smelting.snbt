@@ -621,7 +621,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "不要把液体塞进焦黑加热器!"
+			subtitle: "&c不要把桶装液体塞进焦黑加热器!"
 			tasks: [{
 				id: "627DE0E59DF86F20"
 				item: {

@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 		}).id(`functionalstorage:${type}_1`)
 
 		// 物品抽屉2
-		kubejs.shaped(`functionalstorage:${type}_2`, [
+		kubejs.shaped(`2x functionalstorage:${type}_2`, [
 			"ABA",
 			"ACA",
 			"ABA"
@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
 		}).id(`functionalstorage:${type}_2`)
 
 		// 物品抽屉4
-		kubejs.shaped(`functionalstorage:${type}_4`, [
+		kubejs.shaped(`4x functionalstorage:${type}_4`, [
 			"ABA",
 			"BCB",
 			"ABA"
