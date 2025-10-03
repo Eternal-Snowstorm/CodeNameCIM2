@@ -1,8 +1,8 @@
 ServerEvents.recipes((event) => {
 
-    global.dyeColorGroup.forEach((dye) => {
-        event.replaceInput({}, `minecraft:${dye}_dye`, `#forge:dyes/${dye}`)
-    })
+	global.dyeColorGroup.forEach((dye) => {
+		event.replaceInput({}, `minecraft:${dye}_dye`, `#forge:dyes/${dye}`)
+	})
 
 	let inputs = [
 		["minecraft:copper_ingot", "#forge:ingots/copper"],
