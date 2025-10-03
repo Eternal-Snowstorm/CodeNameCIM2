@@ -41,4 +41,24 @@ ServerEvents.recipes((event) => {
 	], [
 		"#forge:gems/sulfur"
 	])
+
+	// 焦煤粉
+	create.milling([
+		"immersiveengineering:dust_coke",
+	], [
+		"#forge:coal_coke"
+	])
+
+	// 木炭粉
+	create.milling([
+		"mekanism:dust_charcoal",
+	], [
+		"minecraft:charcoal"
+	]).id("create:milling/charcoal")
+
+	create.crushing([
+		"mekanism:dust_charcoal",
+	], [
+		"minecraft:charcoal"
+	]).id("create:milling/charcoal")
 })

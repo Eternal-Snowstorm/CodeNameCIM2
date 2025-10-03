@@ -364,3 +364,30 @@ ServerEvents.recipes((event) => {
 		B: "#forge:glass"
 	}).id("create:crafting/kinetics/fluid_tank2")
 })
+	let cutSlabWood = [
+		"minecraft:oak",
+		"minecraft:dark_oak",
+		"minecraft:birch",
+		"minecraft:spruce",
+		"minecraft:jungle",
+		"minecraft:acacia",
+		"minecraft:mangrove",
+		"minecraft:cherry",
+		"ad_astra:glacian",
+		"thermal:rubberwood",
+		"tconstruct:greenheart",
+		"tconstruct:skyroot",
+		"tconstruct:enderbark",
+		"minecraft:crimson",
+		"minecraft:warped",
+		"ad_astra:aeronos",
+		"ad_astra:strophar",
+		"minecraft:bamboo",
+		"mynethersdelight:powdery",
+		"tconstruct:bloodshroom",
+
+	]
+	cutSlabWood.forEach((id) => {
+	create.cutting(`${id}_planks`,`2x ${id}_slab`)
+
+	})
