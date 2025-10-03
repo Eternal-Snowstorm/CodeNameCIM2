@@ -13,7 +13,7 @@ ItemEvents.toolTierRegistry((event) => {
 		tier.speed = 6.0
 		tier.attackDamageBonus = 2.0
 		tier.enchantmentValue = 14
-		tier.level = 1
+		// tier.level = 1
 		tier.repairIngredient = "#forge:ingots/bronze"
 	})
 

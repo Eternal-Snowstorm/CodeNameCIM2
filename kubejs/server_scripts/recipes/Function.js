@@ -161,6 +161,11 @@ let SmeltingRecipe = {
 	}
 }
 
+// SimpleTCon.getModifiersFromGame()
+// 	.forEach((value) => {
+// 		console.log(value.getId())
+// 	})
+
 // Test Function Event
 BlockEvents.rightClicked((event) => {
 	let { block, player } = event
