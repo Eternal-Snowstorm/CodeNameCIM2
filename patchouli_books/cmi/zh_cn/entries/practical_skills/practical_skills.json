@@ -1,0 +1,18 @@
+{
+	"name": "cmi.book.entries.practical_skills.name",
+	"icon": "create:goggles",
+	"category": "practical_skills",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "create:goggles"
+			},
+			"text": "patchouli.gui.lexicon.ultranium_gem_cell.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.lexicon.ultranium_gem_cell"
+		}
+	]
+}
