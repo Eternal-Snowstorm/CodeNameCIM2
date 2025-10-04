@@ -258,9 +258,9 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:trinitrotoluene"
 	}).id("minecraft:tnt")
-	
+
 	// 羊毛
-	create.pressing("minecraft:white_wool","#cmi:dev_doll")
+	create.pressing("minecraft:white_wool", "#cmi:dev_doll")
 
 	// 冰
 	kubejs.shapeless("minecraft:ice", [
@@ -302,4 +302,12 @@ ServerEvents.recipes((event) => {
 		C: "minecraft:flint",
 		D: "cmi:stone_mechanism"
 	}).id("explorerscompass:explorers_compass")
+
+	// 帕秋莉手册
+	kubejs.shapeless(Item.of("patchouli:guide_book").withNBT({
+		"patchouli:book": "patchouli:cmi"
+	}), [
+		"minecraft:book",
+		"#create:mechanisms"
+	])
 })

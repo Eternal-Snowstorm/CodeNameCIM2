@@ -1,0 +1,8 @@
+{
+	"name": "item.cmi.guide_book",
+	"landing_text": "cmi.book.welcome",
+	"version": 114514,
+	"creative_tab": "kubejs:tab",
+	"use_resource_pack": true,
+	"i18n": true
+}

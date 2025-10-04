@@ -14,7 +14,6 @@ yes_steve_model*
 /logs/
 /modernfix/
 /options.txt
-/patchouli_books/
 /patchouli_data.json
 /PCL/
 /xaero
@@ -47,6 +46,7 @@ replay*
 /servers*
 /mods*.zip
 /mods.zip
+!/patchouli_books
 
 # Mods
 /mods/*
@@ -101,3 +101,4 @@ replay*
 !/config/lmft.json
 !/config/modernfix-mixins.properties
 !/config/steampowered-common.toml
+!/config/alexscaves-client.toml
