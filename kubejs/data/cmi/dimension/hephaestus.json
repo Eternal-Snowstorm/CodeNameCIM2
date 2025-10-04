@@ -1,0 +1,11 @@
+{
+    "type": "cmi:hephaestus",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "cmi:hephaestus",
+        "biome_source": {
+            "type": "minecraft:fixed",
+            "biome": "alexscaves:magnetic_caves"
+        }
+    }
+}

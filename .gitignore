@@ -75,6 +75,7 @@ replay*
 
 # Config
 /config/*
+!/config/alexscaves_biome_generation
 !/config/openloader
 !/config/blockswap
 !/config/drippyloadingscreen/

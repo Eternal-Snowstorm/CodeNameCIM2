@@ -1,0 +1,11 @@
+{
+    "type": "cmi:dionysus",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "cmi:dionysus",
+        "biome_source": {
+            "type": "minecraft:fixed",
+            "biome": "alexscaves:toxic_caves"
+        }
+    }
+}
