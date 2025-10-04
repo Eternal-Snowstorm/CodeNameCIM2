@@ -20,14 +20,19 @@
 		"version": "1.15.19"
 	},
 	{
-		"filename": "alltheleaks-1.0.4+1.20.1-forge.jar",
-		"name": "All The Leaks",
-		"version": "1.0.4+1.20.1-forge"
+		"filename": "AdvancedLootInfo-forge-1.20.1-1.3.8.jar",
+		"name": "AdvancedLootInfo",
+		"version": "1.20.1-1.3.8"
 	},
 	{
-		"filename": "amendments-1.20-1.2.19.jar",
-		"name": "Amendments",
-		"version": "1.20-1.2.19"
+		"filename": "alexscaves-2.0.2.jar",
+		"name": "Alex's Caves",
+		"version": "2.0.2"
+	},
+	{
+		"filename": "alltheleaks-1.0.7+1.20.1-forge.jar",
+		"name": "All The Leaks",
+		"version": "1.0.7+1.20.1-forge"
 	},
 	{
 		"filename": "appleskin-forge-mc1.20.1-2.5.1.jar",
@@ -55,9 +60,9 @@
 		"version": "3.1.2"
 	},
 	{
-		"filename": "balm-forge-1.20.1-7.3.29-all.jar",
+		"filename": "balm-forge-1.20.1-7.3.36-all.jar",
 		"name": "Balm",
-		"version": "7.3.29"
+		"version": "7.3.36"
 	},
 	{
 		"filename": "botarium-forge-1.20.1-2.3.4.jar",
@@ -65,14 +70,14 @@
 		"version": "2.3.4"
 	},
 	{
-		"filename": "Capsule-1.20.1-8.0.105.jar",
-		"name": "Capsule",
-		"version": "1.20.1-8.0.105"
-	},
-	{
 		"filename": "catalogue-forge-1.20.1-1.8.0.jar",
 		"name": "Catalogue",
 		"version": "1.8.0"
+	},
+	{
+		"filename": "citadel-2.6.2-1.20.1.jar",
+		"name": "Citadel",
+		"version": "2.6.2"
 	},
 	{
 		"filename": "cloth-config-11.1.136-forge.jar",
@@ -85,9 +90,9 @@
 		"version": "11.0.2"
 	},
 	{
-		"filename": "collective-1.20.1-8.3.jar",
+		"filename": "collective-1.20.1-8.7.jar",
 		"name": "Collective",
-		"version": "8.3"
+		"version": "8.7"
 	},
 	{
 		"filename": "configured-forge-1.20.1-2.2.3.jar",
@@ -185,7 +190,7 @@
 		"version": "1.2.0"
 	},
 	{
-		"filename": "CMI Core-1.0.0-1.20.1-all.jar",
+		"filename": "CMI Core-1.0.1-1.20.1-all.jar",
 		"name": "Create: Mechanism and Innovation",
 		"version": "1.0.0"
 	},
@@ -275,9 +280,9 @@
 		"version": "1.20.1-1.3.3-forge"
 	},
 	{
-		"filename": "ExtendedAE-1.20-1.4.5-forge.jar",
+		"filename": "ExtendedAE-1.20-1.4.7-forge.jar",
 		"name": "ExtendedAE",
-		"version": "1.20-1.4.5-forge"
+		"version": "1.20-1.4.7-forge"
 	},
 	{
 		"filename": "ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar",
@@ -405,14 +410,14 @@
 		"version": "3.1.1"
 	},
 	{
-		"filename": "guideme-20.1.12.jar",
+		"filename": "guideme-20.1.13.jar",
 		"name": "GuideME",
-		"version": "20.1.12"
+		"version": "20.1.13"
 	},
 	{
-		"filename": "ImmediatelyFast-Forge-1.5.1+1.20.4.jar",
+		"filename": "ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
 		"name": "ImmediatelyFast",
-		"version": "1.5.1+1.20.4"
+		"version": "1.5.2+1.20.4"
 	},
 	{
 		"filename": "ImmersiveEngineering-1.20.1-10.2.0-183.jar",
@@ -423,6 +428,11 @@
 		"filename": "ImmersiveIndustry-1.20.1-0.2.3.jar",
 		"name": "Immersive Industry",
 		"version": "1.20.1-0.2.3"
+	},
+	{
+		"filename": "Industrial Platform-1.5.0.jar",
+		"name": "Industrial Platform",
+		"version": "1.5.0"
 	},
 	{
 		"filename": "item-filters-forge-2001.1.0-build.59.jar",
@@ -465,9 +475,9 @@
 		"version": "15.20.0.112"
 	},
 	{
-		"filename": "JustEnoughResources-1.20.1-1.4.0.247.jar",
-		"name": "Just Enough Resources",
-		"version": "1.4.0.247"
+		"filename": "kaleidoscopecookery-1.1.0-forge+mc1.20.1.jar",
+		"name": "Kaleidoscope Cookery",
+		"version": "1.1.0-forge+mc1.20.1"
 	},
 	{
 		"filename": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
@@ -530,9 +540,9 @@
 		"version": "1.11.79"
 	},
 	{
-		"filename": "MasterfulMachinery-3-1.20.1-0.1.13.jar",
+		"filename": "MasterfulMachinery-3-1.20.1-0.1.16.jar",
 		"name": "Masterful Machinery",
-		"version": "3-1.20.1-0.1.13"
+		"version": "3-1.20.1-0.1.16"
 	},
 	{
 		"filename": "Mekanism-1.20.1-10.4.16.80.jar",
@@ -568,11 +578,6 @@
 		"filename": "modernfix-forge-5.24.4+mc1.20.1.jar",
 		"name": "ModernFix",
 		"version": "5.24.4+mc1.20.1"
-	},
-	{
-		"filename": "moonlight-1.20-2.13.75-forge.jar",
-		"name": "Moonlight Library",
-		"version": "1.20-2.13.75"
 	},
 	{
 		"filename": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
@@ -820,11 +825,6 @@
 		"version": "1.1.18"
 	},
 	{
-		"filename": "supplementaries-1.20-3.1.11.jar",
-		"name": "Supplementaries",
-		"version": "1.20-3.1.11"
-	},
-	{
 		"filename": "tconjei-1.20.1-1.5.0.jar",
 		"name": "TConJEI",
 		"version": "1.5.0"
@@ -918,6 +918,11 @@
 		"filename": "xenon-0.3.31+mc1.20.1.jar",
 		"name": "Xenon",
 		"version": "0.3.31"
+	},
+	{
+		"filename": "[]yesstevemodel-forge-1.20-2.4.1-release.jar",
+		"name": "Yes Steve Model",
+		"version": "2.4.1"
 	},
 	{
 		"filename": "ae2ct-1.20.1-1.1.0.jar",
