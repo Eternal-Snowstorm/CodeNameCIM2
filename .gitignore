@@ -100,3 +100,4 @@ replay*
 !/config/lmft.json
 !/config/modernfix-mixins.properties
 !/config/steampowered-common.toml
+!/config/alexscaves-client.toml
