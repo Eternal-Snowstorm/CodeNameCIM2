@@ -118,16 +118,6 @@ ServerEvents.recipes((event) => {
 		A: "minecraft:rotten_flesh"
 	}).id(`${global.namespace}:what_the_fuck_is_this`)
 
-	// 水龙头
-	kubejs.shaped("supplementaries:faucet", [
-		" A ",
-		"BBB",
-		"  B"
-	], {
-		A: "cmi:iron_mechanism",
-		B: "#forge:plates/iron"
-	}).id("supplementaries:faucet")
-
 	kubejs.shaped("cmi:bronze_nugget_cast", [
 		" A ",
 		"ABA",

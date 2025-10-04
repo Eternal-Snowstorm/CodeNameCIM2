@@ -35,12 +35,6 @@ ServerEvents.recipes((event) => {
         C: "#forge:cobblestone"
     }).id("minecraft:piston")
 
-    // 齿轮方块
-    kubejs.shapeless("supplementaries:cog_block", [
-        "#forge:plates/copper",
-        MECH
-    ]).id("supplementaries:cog_block")
-
     // 比较器
     kubejs.shaped("minecraft:comparator", [
         "A",

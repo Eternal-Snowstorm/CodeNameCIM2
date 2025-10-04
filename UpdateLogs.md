@@ -658,7 +658,6 @@
 ## Beta 2.4.0(Undefined)
 
 ### 修改(调整)内容
- - 将mod`Just Enough Resources`更换为了`Advanced Loot Info`
  - 修改了`流体储罐`的配方
  - 修复了`AE2界面`错位的问题
  - 水洗粉碎矿石产率修改为2
@@ -669,6 +668,14 @@
  - 添加了`墨囊`的配方
  - 切割木台阶
  - 手办可以被砸成羊毛
+ - mod`Advanced Loot Info`
+ - mod`森罗物语：厨房`
+ - mod`Citadel`
+ - mod`Alex的洞穴`
 ### 删除内容
+ - mod`Just Enough Resources`
+ - mod`月光库`
+ - mod`锦致装饰`
+ - mod`Amendments`
 
 </font>	

@@ -14,15 +14,6 @@ ServerEvents.recipes((event) => {
 		"minecraft:dirt"
 	])
 
-	kubejs.shapeless("6x supplementaries:soap", [
-		"cmi:fatty_acid_bucket",
-		"supplementaries:ash",
-		"supplementaries:ash",
-		"supplementaries:ash",
-		"supplementaries:ash"
-	]).replaceIngredient("cmi:fatty_acid_bucket", "minecraft:bucket")
-		.id("supplementaries:soap")
-
 	// TNT拆解
 	kubejs.shapeless("4x cmi:trinitrotoluene", [
 		"minecraft:tnt"
