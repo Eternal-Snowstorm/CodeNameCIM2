@@ -8,17 +8,21 @@ let $BlockTags =
 	Java.loadClass("net.minecraft.tags.BlockTags")
 
 ItemEvents.toolTierRegistry((event) => {
-	event.add("cmi:bronze", (tier) => {
+	event.add("bronze", (tier) => {
 		tier.uses = 250
 		tier.speed = 6.0
 		tier.attackDamageBonus = 2.0
 		tier.enchantmentValue = 14
-		tier.level = 1
+		// tier.level = 1
 		tier.repairIngredient = "#forge:ingots/bronze"
 	})
 
 	function addForgeTier(level, uses, speed, attackDamageBonus, enchantmentValue, tag, repairIngredient) {
 		return new $ForgeTier(level, uses, speed, attackDamageBonus, enchantmentValue, tag, repairIngredient)
+	}
+
+	function registerTier(tier, name, after, before) {
+		return $TierSortingRegistry.registerTier(tier, name, after, before)
 	}
 
 	let CustomTiers = {
@@ -35,12 +39,12 @@ ItemEvents.toolTierRegistry((event) => {
 		)
 	}
 
-	$TierSortingRegistry.registerTier(CustomTiers.BRONZE, "cmi:bronze", [$Tiers.STONE], [$Tiers.IRON])
+	registerTier(CustomTiers.BRONZE, "bronze", [$Tiers.STONE], [$Tiers.IRON])
 })
 
 StartupEvents.registry("item", (event) => {
 	event.create("cmi:bronze_pickaxe", "pickaxe")
-		.tier("cmi:bronze")
+		.tier("bronze")
 })
 
 StartupEvents.registry("block", (event) => {
@@ -48,6 +52,7 @@ StartupEvents.registry("block", (event) => {
 		.requiresTool()
 })
 
+// ---
 
 // let $TierSortingRegistry = Java.loadClass("net.minecraftforge.common.TierSortingRegistry")
 // let $Tiers = Java.loadClass("net.minecraft.world.item.Tiers")
@@ -65,13 +70,13 @@ StartupEvents.registry("block", (event) => {
 // 		//Make sure to set the "tier.repairIngredient" to the item or tag you want to use in your recipy
 // 		tier.repairIngredient = "#forge:ingots/bronze"
 // 	})
-// 	//The "$BlockTags.create" should contain the name of the tag you want to use to set the material requirment of your block, it's best to folow the name format of "<mod_name>:needs_<material>_tool"
+// 	//The "$BlockTags.create" should contain the name of the tag you want to use to set the material requirment of your block, it"s best to folow the name format of "<mod_name>:needs_<material>_tool"
 // 	// The "Ingredient.of" should contain the item or tag you want to use in your recipy
 // 	const BronzeTier = new $ForgeTier(0, 32, 12, 0, 22, $BlockTags.create("minecraft:needs_bronze_tool"), () => Ingredient.of("#forge:ingots/bronze"))
 // 	$TierSortingRegistry.registerTier(BronzeTier, "bronze", [$Tiers.STONE], [$Tiers.IRON])
 // })
 
 // //Register the pick with your new tier
-// StartupEvents.registry('item', event => {
-// 	event.create('bronze_pickaxe', 'pickaxe').tier('bronze')
+// StartupEvents.registry("item", event => {
+// 	event.create("bronze_pickaxe", "pickaxe").tier("bronze")
 // })

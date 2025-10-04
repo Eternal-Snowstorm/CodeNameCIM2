@@ -444,13 +444,16 @@ ServerEvents.tags("item", (event) => {
 
 //When you want a block to use your tier, remove the "<mod_name>:needs_<material>_tool" tag if one excist and add the tag you made previusly
 ServerEvents.tags("block", (event) => {
-	event.remove("minecraft:needs_stone_tool", "minecraft:iron_ore");
-	event.add("minecraft:needs_bronze_tool", "minecraft:iron_ore");
-	event.remove("minecraft:needs_stone_tool", "minecraft:iron_block");
-	event.add("minecraft:needs_bronze_tool", "minecraft:iron_block");
-	event.remove("minecraft:needs_stone_tool", "minecraft:raw_iron_block")
-	event.add("minecraft:needs_bronze_tool", "minecraft:raw_iron_block");
+	// event.remove("minecraft:needs_stone_tool", "minecraft:iron_ore");
+	// event.add("minecraft:needs_bronze_tool", "minecraft:iron_ore");
+	// event.remove("minecraft:needs_stone_tool", "minecraft:iron_block");
+	// event.add("minecraft:needs_bronze_tool", "minecraft:iron_block");
+	// event.remove("minecraft:needs_stone_tool", "minecraft:raw_iron_block")
+	// event.add("minecraft:needs_bronze_tool", "minecraft:raw_iron_block");
 
 	event.get("cmi:needs_bronze_tool")
+		.add("cmi:test_block")
+
+	event.get("minecraft:mineable/pickaxe")
 		.add("cmi:test_block")
 })
