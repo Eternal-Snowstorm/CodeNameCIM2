@@ -60,5 +60,5 @@ ServerEvents.recipes((event) => {
 		"mekanism:dust_charcoal",
 	], [
 		"minecraft:charcoal"
-	]).id("create:milling/charcoal")
+	]).id("create:crushing/charcoal")
 })

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, minecraft } = event.recipes
+	let { kubejs, minecraft, create } = event.recipes
 
 	// 催生器
 	kubejs.shaped("cmi:accelerator", [
@@ -258,6 +258,9 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:trinitrotoluene"
 	}).id("minecraft:tnt")
+	
+	// 羊毛
+	create.pressing("minecraft:white_wool","#cmi:dev_doll")
 
 	// 冰
 	kubejs.shapeless("minecraft:ice", [

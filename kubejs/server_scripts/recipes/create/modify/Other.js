@@ -363,7 +363,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/copper",
 		B: "#forge:glass"
 	}).id("create:crafting/kinetics/fluid_tank2")
-})
+
 	let cutSlabWood = [
 		"minecraft:oak",
 		"minecraft:dark_oak",
@@ -388,6 +388,7 @@ ServerEvents.recipes((event) => {
 
 	]
 	cutSlabWood.forEach((id) => {
-	create.cutting(`${id}_planks`,`2x ${id}_slab`)
+		create.cutting( `2x ${id}_slab`,`${id}_planks`)
 
 	})
+})
