@@ -7,7 +7,7 @@ StartupEvents.registry("block", (event) => {
 		"moon": SoundType.STONE
 	}
 
-	// Common Block Tags List
+	// Common Block Tag(s) List
 	const COMMON_BLOCK_TAGS = [
 		"mekanism:cardboard_blacklist",
 		"ae2:blacklisted/spatial",

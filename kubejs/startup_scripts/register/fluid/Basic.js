@@ -4,7 +4,6 @@ StartupEvents.registry("fluid", (event) => {
 			event.create(`${global.namespace}:${name}`)
 				.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
 				.stillTexture(`${global.namespace}:fluid/${name}/still`)
-				.displayName(Component.translatable(`${global.namespace}:${name}`))
 
 		FluidBucketItemModel.generate(name)
 
@@ -20,7 +19,6 @@ StartupEvents.registry("fluid", (event) => {
 				.bucketColor(color)
 				.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 				.stillTexture(`${global.namespace}:fluid/solution/still`)
-				.displayName(Component.translatable(`${global.namespace}:${name}`))
 
 		FluidBucketItemModel.generate(name)
 
@@ -42,6 +40,7 @@ StartupEvents.registry("fluid", (event) => {
 
 	addAloneFluid("oil_shale_steam")
 		.noBlock()
+		.gaseous()
 	addAloneFluid("blood")
 	addAloneFluid("sludge_suspension")
 	addAloneFluid("delta_unstable_solution")
