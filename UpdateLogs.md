@@ -661,21 +661,23 @@
  - 修改了`流体储罐`的配方
  - 修复了`AE2界面`错位的问题
  - 水洗粉碎矿石产率修改为2
- - 修复了原版部分配方不支持`多彩构件`染色
- （ojang你坏事做尽染料不用标签）
  - 修复了焦煤木炭的粉碎配方
+
 ### 新增内容
  - 添加了`墨囊`的配方
  - 切割木台阶
  - 手办可以被砸成羊毛
- - mod`Advanced Loot Info`
- - mod`森罗物语：厨房`
- - mod`Citadel`
- - mod`Alex的洞穴`
+ - **Mods**
+	- `Advanced Loot Info`
+	- `森罗物语：厨房`
+	- `Citadel`
+	- `Alex的洞穴`
+
 ### 删除内容
- - mod`Just Enough Resources`
- - mod`月光库`
- - mod`锦致装饰`
- - mod`Amendments`
+ - **Mods**
+   - `Just Enough Resources`
+   - `月光库`
+   - `锦致装饰`
+   - `Amendments`
 
 </font>	
