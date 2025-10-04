@@ -1,13 +1,13 @@
 ServerEvents.recipes((event) => {
-	function addCryoFreezingRecipe(inputItem, outputFluidMB) {
+	function addCryoFreezingRecipe(inputItem, amount) {
 		return event.custom({
 			"type": "ad_astra:cryo_freezing",
-			"cookingtime": 25,
+			"cookingtime": 20,
 			"energy": 2000,
 			"ingredient": Ingredient.of(inputItem).toJson(),
 			"result": {
 				"fluid": "ad_astra:cryo_fuel",
-				"millibuckets": outputFluidMB
+				"millibuckets": amount
 			}
 		})
 	}
