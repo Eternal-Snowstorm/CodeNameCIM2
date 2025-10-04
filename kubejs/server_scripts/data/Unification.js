@@ -103,16 +103,28 @@ ServerEvents.highPriorityData((event) => {
 		"thermal:slag"
 	))
 
+	// 番茄
+	addJsonFile("tomato", addUnification(
+		"#forge:vegetables/tomato",
+		"kaleidoscope_cookery:tomato"
+	))
+
+	// 稻米
+	addJsonFile("rice", addUnification(
+		"#forge:seeds/rice",
+		"kaleidoscope_cookery:rice"
+	))
+
 	/**
 	 * @example addJsonFile("coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
-	 * @param {Internal.Item | Internal.Ingredient} match 
-	 * @param {Internal.Item | Internal.Ingredient} result 
+	 * @param {Internal.Item | Internal.Ingredient} ingredient 
+	 * @param {Internal.Item | Internal.Ingredient} item 
 	 * @returns 
 	 */
-	function addUnification(match, result) {
+	function addUnification(ingredient, item) {
 		return {
-			matchItems: [match],
-			resultItems: IngredientUtils.getFirstItemId(result)
+			matchItems: [ingredient],
+			resultItems: IngredientUtils.getFirstItemId(item)
 		}
 	}
 
