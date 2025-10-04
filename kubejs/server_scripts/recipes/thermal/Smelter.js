@@ -74,4 +74,9 @@ ServerEvents.recipes((event) => {
 		["#forge:dusts/gold", "#forge:ingots/gold"],
 		["tconstruct:scorched_brick"],
 	])
+
+	thermal.smelter("mekanism:ingot_steel", [
+		["#forge:coal_coke"],
+		["#forge:dusts/iron", "#forge:ingots/iron"],
+	])
 })
