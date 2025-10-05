@@ -13,6 +13,19 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	// 航天构件
+	event.get("cmi:tier_1_aviation_mechanism")
+		.add("cmi:tier_1_aviation_mechanism")
+
+	event.get("cmi:tier_2_aviation_mechanism")
+		.add("cmi:tier_2_aviation_mechanism")
+
+	event.get("cmi:tier_3_aviation_mechanism")
+		.add("cmi:tier_3_aviation_mechanism")
+		
+	event.get("cmi:tier_4_aviation_mechanism")
+		.add("cmi:tier_4_aviation_mechanism")
+
 	// 榨糖原料
 	event.get("cmi:sugar_raw_material")
 		.add("minecraft:sugar_cane")
