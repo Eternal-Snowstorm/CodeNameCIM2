@@ -4,8 +4,8 @@
 	"render_type": "cutout",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "cmi:block/dev/unknown_entity_",
-		"particle": "cmi:block/dev/unknown_entity_"
+		"0": "cmi:block/dev/qicaijie",
+		"particle": "cmi:block/dev/qicaijie"
 	},
 	"elements": [
 		{

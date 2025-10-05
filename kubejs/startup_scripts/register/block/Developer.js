@@ -6,7 +6,6 @@ StartupEvents.registry("block", (event) => {
 				.hardness(0)
 				.resistance(1)
 				.model(`${global.namespace}:block/dev/${name}`)
-				.textureAll(`${global.namespace}:block/dev/${name}`)
 				.waterlogged()
 				.notSolid()
 				.defaultCutout()
@@ -35,6 +34,8 @@ StartupEvents.registry("block", (event) => {
 	addDeveloperDoll("dropper_qwq")
 	// 燕栖
 	addDeveloperDoll("ye_anqing")
+	// 亓才孑
+	addDeveloperDoll("qicaijie")
 
 	// music
 	// DontKillBelalus
