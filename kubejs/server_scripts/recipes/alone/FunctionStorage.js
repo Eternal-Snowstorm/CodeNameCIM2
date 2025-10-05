@@ -157,4 +157,25 @@ ServerEvents.recipes((event) => {
 		B: "#forge:plates/iron",
 		C: "minecraft:bucket"
 	}).id("functionalstorage:fluid_4")
+
+	// 配置工具
+	kubejs.shapeless("functionalstorage:configuration_tool", [
+		"#forge:plates/iron",
+		"#functionalstorage:drawer",
+		"#create:large_cogwheel"
+	]).id("functionalstorage:configuration_tool")
+
+	kubejs.shapeless("functionalstorage:configuration_tool", [
+		"#forge:plates/iron",
+		"#functionalstorage:drawer",
+		"#create:cogwheel"
+	]).id("functionalstorage:configuration_tool_2")
+
+	kubejs.shapeless("functionalstorage:configuration_tool", [
+		"functionalstorage:linking_tool"
+	])
+
+	kubejs.shapeless("functionalstorage:linking_tool", [
+		"functionalstorage:configuration_tool"
+	])
 })

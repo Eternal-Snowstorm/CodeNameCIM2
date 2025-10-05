@@ -1,4 +1,10 @@
 ItemEvents.modification((event) => {
+	/**
+	 * 
+	 * @param {Internal.Item} item 修改的物品
+	 * @param {Number} time 修改的时间(单位: 1个物品)
+	 * @returns 
+	 */
 	function modifyItemBurnTime(item, time) {
 		return event.modify(item, (modify) => {
 			const BURN_TIME = 200

@@ -97,6 +97,9 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "yes_steve_model": {
+    "model_info": true
+  },
   "mekanism": {
     "infuse_type": true,
     "gas": true,
