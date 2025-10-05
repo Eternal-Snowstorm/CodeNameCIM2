@@ -296,6 +296,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("hanhan_ovo", "涵涵OVO")
 	addBlockLanguage("dont_kill_belalus", "DontkillBelalus")
 
+	addPlanetLanguage("dionysus", "迪奥尼索斯")
+	addPlanetLanguage("hephaestus", "赫菲斯托斯")
+
 	for (let i = 1; i <= 14; i++) {
 		addPaintingLanguage(`rr${i}`, `Aleegos(${i})`, "Aleegos Reality Redemption")
 	}
@@ -660,5 +663,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addMusicDiscLanguage(key, value, author) {
 		event.add(`item.${global.namespace}.${key}`, "音乐唱片")
 		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
+	}
+
+	function addPlanetLanguage(key, value) {
+		event.add(`planet.${global.namespace}.${key}`, `${value}`)
+		event.add(`planet.${global.namespace}.${key}`, `${value}`)
 	}
 })

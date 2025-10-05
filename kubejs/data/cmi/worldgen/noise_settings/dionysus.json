@@ -5,7 +5,7 @@
   "ore_veins_enabled": false,
   "legacy_random_source": false,
   "default_block": {
-    "Name": "minecraft:stone"
+    "Name": "alexscaves:radrock"
   },
   "default_fluid": {
     "Name": "minecraft:air"
@@ -104,7 +104,7 @@
                     "type": "minecraft:mul",
                     "argument1": {
                       "type": "minecraft:y_clamped_gradient",
-                      "from_y": 296,
+                      "from_y": 96,
                       "to_y": 320,
                       "from_value": 1,
                       "to_value": 0
@@ -191,7 +191,7 @@
                             "type": "minecraft:range_choice",
                             "input": "minecraft:overworld/caves/pillars",
                             "min_inclusive": -1000000,
-                            "max_exclusive": 0.03,
+                            "max_exclusive": 0.3,
                             "when_in_range": -1000000,
                             "when_out_of_range": "minecraft:overworld/caves/pillars"
                           }
