@@ -667,6 +667,6 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addPlanetLanguage(key, value) {
 		event.add(`planet.${global.namespace}.${key}`, `${value}`)
-		event.add(`planet.${global.namespace}.${key}`, `${value}`)
+		event.add(`planet.${global.namespace}_orbit.${key}`, `${value}轨道`)
 	}
 })
