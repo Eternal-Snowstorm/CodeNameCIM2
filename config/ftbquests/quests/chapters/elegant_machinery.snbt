@@ -637,7 +637,7 @@
 				{
 					count: 4L
 					id: "383AABDE329FD9EB"
-					item: { Count: 4, id: "createaddition:connector" }
+					item: "createaddition:large_connector"
 					type: "item"
 				}
 			]

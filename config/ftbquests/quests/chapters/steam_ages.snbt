@@ -276,7 +276,7 @@
 			tasks: [
 				{
 					id: "72FF859776891997"
-					item: "steampowered:bronze_boiler"
+					item: "steampowered:bronze_steam_engine"
 					type: "item"
 				}
 				{
