@@ -16,8 +16,8 @@ StartupEvents.registry("item", (event) => {
 			.tag(`${global.namespace}:cells`)
 	}
 
-	addCellItem("tier_1_aviation", 0x5C585D)
-	addCellItem("tier_2_aviation", 0x4A5253)
-	addCellItem("tier_3_aviation", 0xCD9360)
-	addCellItem("tier_4_aviation", 0x723E49)
+	addCellItem("tier_1_aviation", 0xBA52FF)
+	addCellItem("tier_2_aviation", 0x00FFFF)
+	addCellItem("tier_3_aviation", 0xFCD720)
+	addCellItem("tier_4_aviation", 0xFFC4F2)
 })
