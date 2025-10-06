@@ -84,7 +84,7 @@ ServerEvents.recipes((event) => {
 	// 墨囊
 	create.mixing("2x minecraft:ink_sac", [
 		Fluid.of("minecraft:water", 250),
-		"#forge:dys/black",
+		"#forge:dyes/black",
 		"immersiveengineering:ersatz_leather"
 	])
 })
