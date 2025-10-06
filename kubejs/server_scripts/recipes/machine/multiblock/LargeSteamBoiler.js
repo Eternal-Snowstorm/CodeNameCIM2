@@ -42,8 +42,8 @@ MMEvents.createProcesses((event) => {
 			type: "mm:input/consume",
 			ingredient: {
 				type: "mm:item",
-				tag: "minecraft:coal",
-				count: 1
+				item: "minecraft:coal",
+				count: 4
 			}
 		})
 		.output({
@@ -70,7 +70,7 @@ MMEvents.createProcesses((event) => {
 			type: "mm:input/consume",
 			ingredient: {
 				type: "mm:item",
-				tag: "minecraft:charcoal",
+				item: "minecraft:charcoal",
 				count: 4
 			}
 		})
