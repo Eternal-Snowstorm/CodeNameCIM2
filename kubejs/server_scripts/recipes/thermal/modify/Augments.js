@@ -31,4 +31,20 @@ ServerEvents.recipes((event) => {
         create.deploying(up3, [up3, "cmi:cobalt_mechanism"]),
         create.deploying(up3, [up3, "#forge:plates/enderium"])
     ]).transitionalItem(up3).loops(1).id("thermal:augments/upgrade_augment_3")
+
+    create.sequenced_assembly(
+        "thermal_extra:upgrade_augment",
+        "thermal:upgrade_augment_3", [
+        create.deploying(up3, [up3, "#forge:gears/soul_infused"]),
+        create.deploying(up3, [up3, "cmi:cobalt_mechanism"]),
+        create.deploying(up3, [up3, "#forge:plates/dragonsteel"])
+    ]).transitionalItem(up3).loops(1).id("thermal_extra:crafting/dragonsteel_integral_component")
+
+    create.sequenced_assembly(
+        "thermal_extra:abyssal_upgrade_augment",
+        "thermal_extra:upgrade_augment", [
+        create.deploying(up3, [up3, "#forge:gears/twinite"]),
+        create.deploying(up3, [up3, "cmi:cobalt_mechanism"]),
+        create.deploying(up3, [up3, "#forge:plates/abyssal"])
+    ]).transitionalItem(up3).loops(1).id("thermal_extra:crafting/abyssal_integral_component")
 })

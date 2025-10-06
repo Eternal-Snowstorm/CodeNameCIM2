@@ -16,6 +16,15 @@ ServerEvents.recipes((event) => {
 		.below("create:andesite_alloy_block")
 		.adjacent("minecraft:water")
 
+	// 熔渣
+	thermal.rock_gen("create:scoria")
+		.adjacent("create:chocolate")
+
+	// 石灰岩
+	thermal.rock_gen("create:limestone")
+		.adjacent("create:honey")
+
+
 	// 爆裂
 	thermal_extra.nitratic_igniter([
 		"cmi:blackstone_sourse_alpha",
@@ -23,4 +32,5 @@ ServerEvents.recipes((event) => {
 		"cmi:blackstone_sourse_gamma"
 	], "#forge:blackstone")
 		.energy(2000)
+
 })

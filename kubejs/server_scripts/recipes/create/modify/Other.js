@@ -235,6 +235,14 @@ ServerEvents.recipes((event) => {
 		C: "thermal:cured_rubber"
 	})
 
+	// 过应力离合器
+	kubejs.shapeless("create_connected:overstress_clutch", [
+		"create:andesite_casing",
+		"create:electron_tube",
+		"create:shaft",
+		"#forge:plates/iron"
+	])
+
 	// 齿轮
 	let cogwheelMaterials = [
 		"bronze",
@@ -364,6 +372,22 @@ ServerEvents.recipes((event) => {
 		B: "#forge:glass"
 	}).id("create:crafting/kinetics/fluid_tank2")
 
+	kubejs.shaped("create_connected:fluid_vessel", [
+		"ABA"
+	], {
+		A: "#forge:plates/copper",
+		B: "#forge:glass"
+	}).id("create_connected:crafting/kinetics/fluid_vessel")
+
+	kubejs.shaped("2x create_connected:fluid_vessel", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "#forge:plates/copper",
+		B: "#forge:glass"
+	})
+
 	let cutSlabWood = [
 		"minecraft:oak",
 		"minecraft:dark_oak",
@@ -388,7 +412,7 @@ ServerEvents.recipes((event) => {
 
 	]
 	cutSlabWood.forEach((id) => {
-		create.cutting( `2x ${id}_slab`,`${id}_planks`)
+		create.cutting(`2x ${id}_slab`, `${id}_planks`)
 
 	})
 })

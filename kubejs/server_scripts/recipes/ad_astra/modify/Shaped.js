@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 			"minecraft:smoker",
 			"minecraft:blast_furnace"
 		],
-		D: "#forge:coal"
+		D: "cmi:wooden_mechanism"
 	}).id("ad_astra:coal_generator")
 
 	// 车轱辘
