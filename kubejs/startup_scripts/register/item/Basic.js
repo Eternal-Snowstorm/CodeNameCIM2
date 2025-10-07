@@ -1,6 +1,14 @@
 StartupEvents.registry("item", (event) => {
+	/**
+	 * @param {string} name 注册ID
+	 * @param {"basic" | "sword" | "pickaxe" | "axe" | "shovel" | "shears" | "hoe" | "helmet" | "chestplate" | "leggings" | "boots" | "music_disc" | "smithing_template" | "animatable" | "anim_helmet" | "anim_chestplate" | "anim_leggings" | "anim_boots" | "anim_axe" | "anim_hoe" | "anim_pickaxe" | "anim_sword" | "anim_shield" | "create:sequenced_assembly" | "create:sandpaper" | "vintageimprovements:spring"} type 注册类型
+	 * @returns {Internal.BasicItemJS$Builder | Internal.SwordItemBuilder | Internal.PickaxeItemBuilder | Internal.AxeItemBuilder | Internal.ShovelItemBuilder | Internal.ShearsItemBuilder | Internal.HoeItemBuilder | Internal.ArmorItemBuilder$Helmet | Internal.ArmorItemBuilder$Chestplate | Internal.ArmorItemBuilder$Leggings | Internal.ArmorItemBuilder$Boots | Internal.RecordItemJS$Builder | Internal.SmithingTemplateItemBuilder | Internal.AnimatableItem$Builder | Internal.AnimatableArmorBuilder | Internal.AnimatableAxeItem$Builder | Internal.AnimatableHoeItem$Builder | Internal.AnimatablePickaxeItem$Builder | Internal.AnimatableSwordItem$Builder | Internal.AnimatableShieldItem$Builder | Internal.SequencedAssemblyItemBuilder | Internal.SandpaperItemBuilder | Internal.SpringItemBuilder}
+	 */
 	function addItem(name, type) {
-		return event.create(`${global.namespace}:${name}`)
+		if (type === undefined) {
+			return event.create(`${global.namespace}:${name}`)
+		}
+		return event.create(`${global.namespace}:${name}`, type)
 	}
 
 	addItem("single_crystal_silicon")

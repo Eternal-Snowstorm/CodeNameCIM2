@@ -1,4 +1,15 @@
+let $RawAnimation =
+	Java.loadClass("software.bernie.geckolib.core.animation.RawAnimation")
+
 StartupEvents.registry("block", (event) => {
+	const ROTATING = RawAnimation.begin().thenLoop("rotating")
+
+	/**
+	 * 
+	 * @param {String} name 注册id
+	 * @param {"basic" | "detector" | "slab" | "stairs" | "fence" | "wall" | "fence_gate" | "pressure_plate" | "button" | "falling" | "crop" | "cardinal" | "carpet" | "animatable" | "custommachinery"} type 注册类型
+	 * @returns {Internal.BasicBlockJS$Builder | Internal.DetectorBlock$Builder | Internal.SlabBlockBuilder | Internal.StairBlockBuilder | Internal.FenceBlockBuilder | Internal.WallBlockBuilder | Internal.FenceGateBlockBuilder | Internal.PressurePlateBlockBuilder | Internal.ButtonBlockBuilder | Internal.FallingBlockBuilder | Internal.CropBlockBuilder | Internal.HorizontalDirectionalBlockBuilder | Internal.CarpetBlockBuilder | Internal.AnimatableBlockBuilder | Internal.CustomMachineBlockBuilderJS}
+	 */
 	function addBlock(name, type) {
 		if (type === undefined) {
 			return event.create(`${global.namespace}:${name}`)
@@ -13,6 +24,7 @@ StartupEvents.registry("block", (event) => {
 		.resistance(4)
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.MiningLevel["wooden"])
+		.tagBlock(global.WRENCH_PICKUP)
 		.requiresTool(true)
 
 	// 背景
@@ -90,7 +102,7 @@ StartupEvents.registry("block", (event) => {
 		.hardness(5)
 		.resistance(5)
 		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock("create:wrench_pickup")
+		.tagBlock(global.WRENCH_PICKUP)
 
 	// 耐压外壳
 	addBlock("pressure_resistance_casing")
@@ -99,7 +111,7 @@ StartupEvents.registry("block", (event) => {
 		.hardness(5)
 		.resistance(5)
 		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock("create:wrench_pickup")
+		.tagBlock(global.WRENCH_PICKUP)
 
 	// 陨石外壳
 	addBlock("sky_stone_casing")
@@ -108,7 +120,7 @@ StartupEvents.registry("block", (event) => {
 		.hardness(5)
 		.resistance(5)
 		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock("create:wrench_pickup")
+		.tagBlock(global.WRENCH_PICKUP)
 
 	// 高级计算外壳
 	addBlock("computing_casing")
@@ -117,5 +129,13 @@ StartupEvents.registry("block", (event) => {
 		.hardness(5)
 		.resistance(5)
 		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock("create:wrench_pickup")
+		.tagBlock(global.WRENCH_PICKUP)
+
+	event.create("cmi:radar", "animatable")
+		.animatableBlockEntity((entity) => {
+			entity.addAnimation((state) => {
+				state.setAndContinue($RawAnimation.begin().thenLoop("working"))
+			})
+		})
+		.defaultGeoModel()
 })
