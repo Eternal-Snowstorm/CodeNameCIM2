@@ -58,9 +58,9 @@
 		},
 		{
 			"name": "screen",
-			"from": [-4, 13, 4],
-			"to": [20, 13, 19],
-			"rotation": {"angle": -45, "axis": "x", "origin": [8, 6, 12]},
+			"from": [-4, 13.1, 4],
+			"to": [20, 13.1, 19],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 6.1, 12]},
 			"color": 5,
 			"faces": {
 				"up": {"uv": [0, 0, 16, 15], "texture": "#missing"}
