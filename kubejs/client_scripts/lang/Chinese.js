@@ -104,6 +104,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCastItemLanguage("mechanism", "构件")
 	addCastItemLanguage("nugget", "粒")
 
+	addCellItemLanguage("empty", "空白")
 	addCellItemLanguage("tier_1_aviation", "壹级科技航天")
 	addCellItemLanguage("tier_2_aviation", "贰级科技航天")
 	addCellItemLanguage("tier_3_aviation", "叁级科技航天")
@@ -193,7 +194,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMachineLanguage("chemical_gas_extractor", "化学气体抽取器")
 	addMachineLanguage("simple_centrifuge", "丐版离心机")
 	addMachineLanguage("steam_boiler", "青铜蒸汽锅炉")
-	addMachineLanguage("large_steam_boiler", "大型青铜蒸汽锅炉")
+	addMachineLanguage("radar_terminal", "雷达终端")
 
 	addMBDMachineLanguage("proxy_part_block", "多方块机器部件方块")
 	addMBDMachineLanguage("accelerator_energy_input", "大型构件催生器能量输入口")

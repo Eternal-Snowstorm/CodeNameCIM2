@@ -16,6 +16,9 @@ StartupEvents.registry("item", (event) => {
 			.tag(`${global.namespace}:cells`)
 	}
 
+	// 空白硬盘
+	addCellItem("empty", 0xFFFFFF)
+	// 航空硬盘
 	addCellItem("tier_1_aviation", 0xBA52FF)
 	addCellItem("tier_2_aviation", 0x00FFFF)
 	addCellItem("tier_3_aviation", 0xFCD720)
