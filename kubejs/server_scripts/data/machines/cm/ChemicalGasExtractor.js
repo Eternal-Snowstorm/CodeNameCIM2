@@ -33,12 +33,6 @@ ServerEvents.highPriorityData((event) => {
 		],
 		// "gui": [
 		// 	{
-		// 		"type": "custommachinery:text",
-		// 		"text": "machine.cmi.chemical_gas_extractor",
-		// 		"x": 110,
-		// 		"y": 5
-		// 	},
-		// 	{
 		// 		"type": "custommachinery:texture",
 		// 		"texture": "custommachinery:textures/gui/base_background.png",
 		// 		"x": 0,
@@ -57,12 +51,6 @@ ServerEvents.highPriorityData((event) => {
 		// 	}
 		// ],
 		"jei": [
-			{
-				"type": "custommachinery:text",
-				"text": "machine.cmi.chemical_gas_extractor",
-				"x": 110,
-				"y": 5
-			},
 			{
 				"type": "custommachinery:texture",
 				"texture": "custommachinery:textures/gui/base_background.png",

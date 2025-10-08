@@ -133,15 +133,15 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.WRENCH_PICKUP)
 
-	event.create("cmi:radar", "animatable")
-		.animatableBlockEntity((entity) => {
-			entity.addAnimation((state) => {
-				state.setAndContinue(setAnimation().thenLoop("working"))
-			})
-		})
-		.soundType(SoundType.NETHERITE_BLOCK)
-		.hardness(5)
-		.resistance(5)
-		.tagBlock(global.WRENCH_PICKUP)
-		.defaultGeoModel()
+	// event.create("cmi:radar", "animatable")
+	// 	.animatableBlockEntity((entity) => {
+	// 		entity.addAnimation((state) => {
+	// 			state.setAndContinue(setAnimation().thenLoop("working"))
+	// 		})
+	// 	})
+	// 	.soundType(SoundType.NETHERITE_BLOCK)
+	// 	.hardness(5)
+	// 	.resistance(5)
+	// 	.tagBlock(global.WRENCH_PICKUP)
+	// 	.defaultGeoModel()
 })
