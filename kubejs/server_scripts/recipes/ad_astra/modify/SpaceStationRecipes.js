@@ -1,6 +1,6 @@
-ServerEvents.highPriorityData((event) => {
+ServerEvents.recipes((event) => {
 	function addStationRecipe(namespace, name, tier) {
-		let stationRecipe = {
+		return event.custom({
 			type: "ad_astra:space_station_recipe",
 			dimension: `${namespace}:${name}_orbit`,
 			ingredients: [
@@ -30,8 +30,7 @@ ServerEvents.highPriorityData((event) => {
 				}
 			],
 			structure: "ad_astra:space_station"
-		}
-		event.addJson(`${namespace}:recipes/space_station/${name}_orbit_space_station`, stationRecipe)
+		})
 	}
 
 	addStationRecipe("ad_astra", "earth", 1)
