@@ -2,8 +2,8 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "cmi:block/machine/radar_terminal/model",
-		"particle": "cmi:block/machine/radar_terminal/model"
+		"0": "cmi:block/machine/radar_terminal/on",
+		"particle": "cmi:block/machine/radar_terminal/on"
 	},
 	"elements": [
 		{
