@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 	function addStationRecipe(namespace, name, tier) {
-		return event.custom({
+		let stationRecipe = {
 			type: "ad_astra:space_station_recipe",
 			dimension: `${namespace}:${name}_orbit`,
 			ingredients: [
