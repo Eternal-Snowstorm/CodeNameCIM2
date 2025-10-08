@@ -1,9 +1,11 @@
 let $RawAnimation =
 	Java.loadClass("software.bernie.geckolib.core.animation.RawAnimation")
 
-StartupEvents.registry("block", (event) => {
-	const ROTATING = RawAnimation.begin().thenLoop("rotating")
+function setAnimation() {
+	return $RawAnimation.begin()
+}
 
+StartupEvents.registry("block", (event) => {
 	/**
 	 * 
 	 * @param {String} name 注册id
@@ -134,8 +136,12 @@ StartupEvents.registry("block", (event) => {
 	event.create("cmi:radar", "animatable")
 		.animatableBlockEntity((entity) => {
 			entity.addAnimation((state) => {
-				state.setAndContinue($RawAnimation.begin().thenLoop("working"))
+				state.setAndContinue(setAnimation().thenLoop("working"))
 			})
 		})
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.hardness(5)
+		.resistance(5)
+		.tagBlock(global.WRENCH_PICKUP)
 		.defaultGeoModel()
 })
