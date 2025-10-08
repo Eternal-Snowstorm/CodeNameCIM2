@@ -2,7 +2,7 @@
     "custom_clouds": false,
     "custom_sky": true,
     "custom_weather": false,
-    "dimension": "cmi:dionysus",
+    "dimension": "cmi:hephaestus",
     "has_fog": false,
     "has_thick_fog": false,
     "render_in_rain": false,
