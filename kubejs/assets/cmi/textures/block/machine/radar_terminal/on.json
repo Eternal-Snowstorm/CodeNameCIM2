@@ -1,0 +1,70 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"elements": [
+		{
+			"name": "basement",
+			"from": [-8, 0, 0],
+			"to": [24, 8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, 0]},
+			"color": 3,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 8], "texture": "#missing"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#missing"},
+				"west": {"uv": [0, 0, 16, 8], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#missing"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "back",
+			"from": [-8, 8, 12],
+			"to": [24, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 8, 12]},
+			"color": 7,
+			"faces": {
+				"east": {"uv": [0, 0, 4, 8], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#missing"},
+				"west": {"uv": [0, 0, 4, 8], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 4], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "left",
+			"from": [20, 8, 0],
+			"to": [24, 16, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [20, 8, 0]},
+			"color": 1,
+			"faces": {
+				"north": {"uv": [0, 0, 4, 8], "texture": "#missing"},
+				"east": {"uv": [0, 0, 12, 8], "texture": "#missing"},
+				"west": {"uv": [0, 0, 12, 8], "texture": "#missing"},
+				"up": {"uv": [0, 0, 4, 12], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "right",
+			"from": [-8, 8, 0],
+			"to": [-4, 16, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 8, 0]},
+			"color": 1,
+			"faces": {
+				"north": {"uv": [0, 0, 4, 8], "texture": "#missing"},
+				"east": {"uv": [0, 0, 12, 8], "texture": "#missing"},
+				"west": {"uv": [0, 0, 12, 8], "texture": "#missing"},
+				"up": {"uv": [0, 0, 4, 12], "texture": "#missing"}
+			}
+		},
+		{
+			"name": "screen",
+			"from": [-4, 13.1, 4],
+			"to": [20, 13.1, 19],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 6.1, 12]},
+			"color": 5,
+			"faces": {
+				"up": {"uv": [0, 0, 16, 15], "texture": "#missing"}
+			}
+		}
+	]
+}
