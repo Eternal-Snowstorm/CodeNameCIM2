@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 				}
 			],
 			structure: "ad_astra:space_station"
-		})
+		}).id(`${namespace}:recipes/space_station/${name}_orbit_space_station`)
 	}
 
 	addStationRecipe("ad_astra", "earth", 1)
