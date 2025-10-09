@@ -145,5 +145,4 @@ ServerEvents.recipes((event) => {
 		"time": 500,
 		"tickEnergy": 80
 	})
-
 })

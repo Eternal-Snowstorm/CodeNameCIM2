@@ -63,6 +63,13 @@ ServerEvents.highPriorityData((event) => {
 		}
 
 		return {
+			/**
+			 * 
+			 * @param {Number} speed 转速
+			 * @param {Number} strength 转速
+			 * @param {Number} burnRate 燃料消耗速率
+			 * @returns 
+			 */
 			normal: function (speed, strength, burnRate) {
 				data.normal = {
 					speed: speed,
@@ -71,6 +78,13 @@ ServerEvents.highPriorityData((event) => {
 				}
 				return this
 			},
+			/**
+			 * 
+			 * @param {Number} speed 转速
+			 * @param {Number} strength 转速
+			 * @param {Number} burnRate 燃料消耗速率
+			 * @returns 
+			 */
 			modular: function (speed, strength, burnRate) {
 				data.modular = {
 					speed: speed,
@@ -79,6 +93,13 @@ ServerEvents.highPriorityData((event) => {
 				}
 				return this
 			},
+			/**
+			 * 
+			 * @param {Number} speed 转速
+			 * @param {Number} strength 转速
+			 * @param {Number} burnRate 燃料消耗速率
+			 * @returns 
+			 */
 			huge: function (speed, strength, burnRate) {
 				data.huge = {
 					speed: speed,
