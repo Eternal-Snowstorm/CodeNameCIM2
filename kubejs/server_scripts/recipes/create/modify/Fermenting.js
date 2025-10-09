@@ -12,9 +12,7 @@ ServerEvents.recipes((event) => {
 	// 血液
 	createdieselgenerators.basin_fermenting(Fluid.of("cmi:blood", 250), [
 		"create:cinder_flour",
-		"minecraft:nether_wart", [
-			"minecraft:warped_fungus",
-			"minecraft:crimson_fungus"
-		]
+		"minecraft:nether_wart",
+		["minecraft:warped_fungus", "minecraft:crimson_fungus"]
 	]).processingTime(20 * 5)
 })
