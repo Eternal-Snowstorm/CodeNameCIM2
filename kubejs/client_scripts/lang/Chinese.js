@@ -65,6 +65,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_upgrade_augment_2", "强化整合组件(半成品)")
 	addItemLanguage("incomplete_upgrade_augment_3", "谐振整合组件(半成品)")
 	addItemLanguage("lime_dust", "石灰粉")
+	addItemLanguage("guide", "指南")
 
 	addItemLanguage("incomplete_cogwheel", "齿轮(半成品)")
 	addItemLanguage("incomplete_bronze_cogwheel", "青铜齿轮(半成品)")
