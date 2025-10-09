@@ -6,6 +6,8 @@ function setAnimation() {
 }
 
 StartupEvents.registry("block", (event) => {
+	const WORKING = RawAnimation.begin().thenLoop("working");
+
 	/**
 	 * 
 	 * @param {String} name 注册id
@@ -133,15 +135,10 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.WRENCH_PICKUP)
 
-	// event.create("cmi:radar", "animatable")
-	// 	.animatableBlockEntity((entity) => {
-	// 		entity.addAnimation((state) => {
-	// 			state.setAndContinue(setAnimation().thenLoop("working"))
-	// 		})
-	// 	})
-	// 	.soundType(SoundType.NETHERITE_BLOCK)
-	// 	.hardness(5)
-	// 	.resistance(5)
-	// 	.tagBlock(global.WRENCH_PICKUP)
-	// 	.defaultGeoModel()
+	event.create("cmi:radar")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.hardness(5)
+		.resistance(5)
+		.tagBlock(global.WRENCH_PICKUP)
+		.box(6, 0, 6, 10, 16, 10, true)
 })
