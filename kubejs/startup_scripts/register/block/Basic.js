@@ -12,7 +12,6 @@ StartupEvents.registry("block", (event) => {
 	 * 
 	 * @param {String} name 注册id
 	 * @param {"basic" | "detector" | "slab" | "stairs" | "fence" | "wall" | "fence_gate" | "pressure_plate" | "button" | "falling" | "crop" | "cardinal" | "carpet" | "animatable" | "custommachinery"} type 注册类型
-	 * @returns {Internal.BasicBlockJS$Builder | Internal.DetectorBlock$Builder | Internal.SlabBlockBuilder | Internal.StairBlockBuilder | Internal.FenceBlockBuilder | Internal.WallBlockBuilder | Internal.FenceGateBlockBuilder | Internal.PressurePlateBlockBuilder | Internal.ButtonBlockBuilder | Internal.FallingBlockBuilder | Internal.CropBlockBuilder | Internal.HorizontalDirectionalBlockBuilder | Internal.CarpetBlockBuilder | Internal.AnimatableBlockBuilder | Internal.CustomMachineBlockBuilderJS}
 	 */
 	function addBlock(name, type) {
 		if (type === undefined) {
@@ -135,7 +134,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.WRENCH_PICKUP)
 
-	event.create("cmi:radar")
+	addBlock("radar")
 		.soundType(SoundType.NETHERITE_BLOCK)
 		.hardness(5)
 		.resistance(5)
