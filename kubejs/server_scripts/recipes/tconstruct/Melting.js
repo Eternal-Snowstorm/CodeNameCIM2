@@ -159,6 +159,18 @@ ServerEvents.recipes((event) => {
 		.time(100)
 		.temperature(1064)
 
+	// 铁栅栏
+	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 30))
+		.ingredient("minecraft:iron_bars")
+		.time(60)
+		.temperature(1535)
+
+	// 金栅栏
+	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 30))
+		.ingredient("tconstruct:gold_bars")
+		.time(60)
+		.temperature(1064)
+
 	// 铁轨系列
 	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 30))
 		.ingredient("minecraft:rail")
