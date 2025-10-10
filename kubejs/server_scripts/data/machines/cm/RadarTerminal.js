@@ -11,11 +11,13 @@ ServerEvents.highPriorityData((event) => {
 			"paused": {
 				"block": "cmi:machine/radar_terminal/off"
 			},
-			"hardness": -1,
+			"hardness": -1.0,
 			"interaction_sound": {},
 			"mining_level": "minecraft:needs_diamond_tool",
-			"tool_type": "minecraft:mineable/pickaxe",
-			"resistance": 114514,
+			"resistance": 114514.0,
+			"tool_type": [
+				"minecraft:mineable/pickaxe"
+			],
 			"idle": {
 				"block": "cmi:machine/radar_terminal/off"
 			}
@@ -72,37 +74,41 @@ ServerEvents.highPriorityData((event) => {
 			},
 			{
 				"type": "custommachinery:slot",
-				"id": "output",
-				"x": 150,
-				"y": 44
-			},
-			{
-				"type": "custommachinery:progress",
-				"x": 120,
-				"y": 45
-			},
-			{
-				"type": "custommachinery:slot",
 				"id": "cell_input",
 				"texture": "cmi:textures/gui/cell_slot.png",
-				"x": 99,
-				"y": 44
-			},
-			{
-				"type": "custommachinery:energy",
-				"id": "energy_input",
-				"x": 78,
-				"y": 31
+				"x": 104,
+				"y": 55
 			},
 			{
 				"type": "custommachinery:slot",
 				"id": "battery",
 				"texture": "cmi:textures/gui/battery_slot.png",
-				"x": 52,
-				"y": 44
+				"x": 104,
+				"y": 31
+			},
+			{
+				"type": "custommachinery:energy",
+				"id": "energy_input",
+				"x": 82,
+				"y": 31
+			},
+			{
+				"type": "custommachinery:slot",
+				"texture": "cmi:textures/gui/cell_slot.png",
+				"id": "output",
+				"x": 134,
+				"y": 55
+			},
+			{
+				"type": "custommachinery:progress",
+				"texture": "cmi:textures/gui/progress_empty.png",
+				"x": 128,
+				"y": 36,
+				"texture_empty": "cmi:textures/gui/progress_empty.png",
+				"texture_filled": "cmi:textures/gui/progress_filled.png"
 			}
 		],
-		"jei": [
+		"gui": [
 			{
 				"type": "custommachinery:background",
 				"width": 256,
@@ -120,34 +126,38 @@ ServerEvents.highPriorityData((event) => {
 			},
 			{
 				"type": "custommachinery:slot",
-				"id": "output",
-				"x": 150,
-				"y": 44
-			},
-			{
-				"type": "custommachinery:progress",
-				"x": 120,
-				"y": 45
-			},
-			{
-				"type": "custommachinery:slot",
 				"id": "cell_input",
 				"texture": "cmi:textures/gui/cell_slot.png",
-				"x": 99,
-				"y": 44
-			},
-			{
-				"type": "custommachinery:energy",
-				"id": "energy_input",
-				"x": 78,
-				"y": 31
+				"x": 104,
+				"y": 55
 			},
 			{
 				"type": "custommachinery:slot",
 				"id": "battery",
 				"texture": "cmi:textures/gui/battery_slot.png",
-				"x": 52,
-				"y": 44
+				"x": 104,
+				"y": 31
+			},
+			{
+				"type": "custommachinery:energy",
+				"id": "energy_input",
+				"x": 82,
+				"y": 31
+			},
+			{
+				"type": "custommachinery:slot",
+				"texture": "cmi:textures/gui/cell_slot.png",
+				"id": "output",
+				"x": 134,
+				"y": 55
+			},
+			{
+				"type": "custommachinery:progress",
+				"texture": "cmi:textures/gui/progress_empty.png",
+				"x": 128,
+				"y": 36,
+				"texture_empty": "cmi:textures/gui/progress_empty.png",
+				"texture_filled": "cmi:textures/gui/progress_filled.png"
 			}
 		]
 	})
