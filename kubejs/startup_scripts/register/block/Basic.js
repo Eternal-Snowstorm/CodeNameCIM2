@@ -136,6 +136,7 @@ StartupEvents.registry("block", (event) => {
 
 	addBlock("radar")
 		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
 		.hardness(5)
 		.resistance(5)
 		.tagBlock(global.WRENCH_PICKUP)
