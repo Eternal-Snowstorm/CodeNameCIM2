@@ -6,7 +6,6 @@ function setAnimation() {
 }
 
 StartupEvents.registry("block", (event) => {
-	const WORKING = RawAnimation.begin().thenLoop("working");
 
 	/**
 	 * 
