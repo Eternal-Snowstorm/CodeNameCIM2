@@ -17,7 +17,7 @@ let FluidBucketItemModel = {
 }
 
 function attachItemHandlerCapability() {
-	CapabilityBuilder.ITEM.blockEntity()
+	return CapabilityBuilder.ITEM.blockEntity()
 		// 允许漏斗或管道提取物品
 		.extractItem((entity, slot, amount, simulate) => {
 			let { inventory } = entity
