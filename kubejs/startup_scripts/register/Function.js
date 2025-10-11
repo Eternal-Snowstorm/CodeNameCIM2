@@ -16,6 +16,10 @@ let FluidBucketItemModel = {
 	}
 }
 
+/**
+ * 
+ * @param {Internal.BlockEntityInfo} entity 
+ */
 function setSimpleForgeCapability(entity) {
 	entity.attachCapability(CapabilityBuilder.ITEM.blockEntity()
 		// 允许漏斗或管道提取物品
