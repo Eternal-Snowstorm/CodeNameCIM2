@@ -44,6 +44,7 @@ StartupEvents.registry("block", (event) => {
 	machineBlockRegister.forEach((type) => {
 		event.create(`${global.namespace}:${type}_machine`, "cardinal")
 			.soundType(SoundType.METAL)
+			.waterlogged()
 			.model(`${global.namespace}:block/machine_block/${type}`)
 			.tag("cmi:machine_block")
 			.tag(`cmi:machine_block/${type}`)
@@ -53,9 +54,11 @@ StartupEvents.registry("block", (event) => {
 			.requiresTool(true)
 			.notSolid()
 			.defaultCutout()
-			.blockEntity((machine) => {
-				machine.inventory(9, 3, Ingredient.of(`#create:mechanisms/${type}`))
-				machine.rightClickOpensInventory()
+			.blockEntity((entity) => {
+				let mechanism = Ingredient.of(`#create:mechanisms/${type}`)
+				entity.enableSync()
+				entity.inventory(9, 3, mechanism)
+				entity.rightClickOpensInventory()
 			})
 	})
 })

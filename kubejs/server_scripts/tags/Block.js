@@ -14,4 +14,12 @@ ServerEvents.tags("block", (event) => {
 		.add("minecraft:soul_soil")
 		.add("mynethersdelight:resurgent_soil")
 		.add("mynethersdelight:resurgent_soil_farmland")
+
+	let wrenchPickupBlocks = [
+
+	]
+	wrenchPickupBlocks.forEach((blocks) => {
+		event.get("create:wrench_pickup")
+			.add(blocks)
+	})
 })
