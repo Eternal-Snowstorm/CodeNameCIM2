@@ -207,4 +207,24 @@ ServerEvents.recipes((event) => {
 		"temperature": 1000,
 		"time": 20 * 10
 	})
+
+	// 机动栏杆系列
+	tconstruct.melting(Fluid.of("cmi:molten_andesite_alloy", 30))
+		.ingredient("createdeco:andesite_bars")
+		.time(2 * 20)
+		.temperature(global.meltingPoints["andesite_alloy"])
+
+	let barTypes = [
+		"brass",
+		"copper",
+		"industrial_iron",
+		"zinc"
+	]
+
+	barTypes.forEach((type) => {
+		tconstruct.melting(Fluid.of(IngredientUtils.getFirstFluidId(`tconstruct:molten_${type}`), 30))
+			.ingredient(`createdeco:${type}_bars`)
+			.time(40)
+			.temperature(global.meltingPoints[type])
+	})
 })

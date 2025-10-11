@@ -22,7 +22,7 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("cmi:tier_3_aviation_mechanism")
 		.add("cmi:tier_3_aviation_mechanism")
-		
+
 	event.get("cmi:tier_4_aviation_mechanism")
 		.add("cmi:tier_4_aviation_mechanism")
 
@@ -362,6 +362,9 @@ ServerEvents.tags("item", (event) => {
 		.add("ratatouille:salt")
 		.add("cmi:nacl")
 
+	event.get("forge:ingots/andesite")
+		.add("create:andesite_alloy")
+
 	// 催生晶体
 	event.get("cmi:crystals")
 		.add("minecraft:amethyst_shard")
@@ -452,6 +455,16 @@ ServerEvents.tags("item", (event) => {
 		event.get(`forge:${metal}s`)
 			.add(`ad_astra:etrium_${metal}`)
 	})
+
+	// 构件
+	event.get("create:mechanisms/precision")
+		.add("create:precision_mechanism")
+
+	event.get("create:mechanisms/redstone")
+		.add("vintageimprovements:redstone_module")
+
+	event.get("create:mechanisms/nuclear")
+		.add("cmi:nuclear_mechanism")
 })
 
 

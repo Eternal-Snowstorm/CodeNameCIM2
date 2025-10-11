@@ -25,14 +25,23 @@ ServerEvents.recipes((event) => {
 		"32x #forge:dusts/end_stone"
 	]).heated()
 
-	// 铸铁锭
-	create.mixing("cmi:cast_iron_dust", [
+	// 铸铁
+	create.mixing(Fluid.of("cmi:molten_cast_iron", 90), [
 		[
 			"#create:crushed_raw_materials/iron",
 			"#forge:dusts/iron"
 		],
 		"#forge:dusts/coal_coke"
 	]).heated()
+
+	// 工业铁
+	create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
+		[
+			"#create:drushed_raw_materials/iron",
+			"#forge:dusts/iron"
+		],
+		"cmi:lime"
+	]).heated().id("createdeco:compacting/industrial_iron_ingot")
 
 	// 木棍
 	create.cutting([

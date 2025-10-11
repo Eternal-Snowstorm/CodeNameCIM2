@@ -106,7 +106,10 @@ ServerEvents.recipes((event) => {
 		"functionalstorage:oak_drawer_alternate_x2",
 		"create:milling/coal",
 		"vintageimprovements:crushing/scoria",
-		"functionalstorage:linking_tool"
+		"functionalstorage:linking_tool",
+		"create:copper_bars_from_ingots_copper_stonecutting",
+		"create:andesite_bars_from_andesite_alloy_stonecutting",
+		"create:brass_bars_from_ingots_brass_stonecutting"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

@@ -70,4 +70,22 @@ ServerEvents.recipes((event) => {
 		.cast_consumed(true)
 		.cooling_time(220)
 		.id("tconstruct:smeltery/casting/scorched/foundry_controller")
+
+	// 机动栏杆系列
+	tconstruct.casting_table("createdeco:andesite_bars")
+		.fluid(Fluid.of("cmi:molten_andesite_alloy", 30))
+		.cooling_time(35)
+
+	let barTypes = [
+		"brass",
+		"copper",
+		"industrial_iron",
+		"zinc"
+	]
+
+	barTypes.forEach((type) => {
+		tconstruct.casting_table(`createdeco:${type}_bars`)
+			.fluid(Fluid.of(IngredientUtils.getFirstFluidId(`tconstruct:molten_${type}`), 30))
+			.cooling_time(35)
+	})
 })

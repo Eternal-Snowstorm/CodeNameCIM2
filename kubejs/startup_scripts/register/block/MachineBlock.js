@@ -53,5 +53,9 @@ StartupEvents.registry("block", (event) => {
 			.requiresTool(true)
 			.notSolid()
 			.defaultCutout()
+			.blockEntity((machine) => {
+				machine.inventory(9, 3, Ingredient.of(`#create:mechanisms/${type}`))
+				machine.rightClickOpensInventory()
+			})
 	})
 })

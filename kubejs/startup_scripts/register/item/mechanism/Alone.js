@@ -22,6 +22,7 @@ StartupEvents.registry("item", (event) => {
 			})
 		})
 		.tag("create:mechanisms")
+		.tag(`create:mechanisms/pigiron`)
 
 	addItem("incomplete_pigiron_mechanism", "create:sequenced_assembly")
 		.texture(`${global.namespace}:item/mechanism/incomplete/pigiron`)

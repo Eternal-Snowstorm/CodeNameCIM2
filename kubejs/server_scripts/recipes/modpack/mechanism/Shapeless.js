@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 
 	// 木质
 	kubejs.shapeless("cmi:wooden_mechanism", [
-		"#forge:stripped_logs",
+		"#minecraft:logs",
 		"#minecraft:planks",
 		"minecraft:stick",
 		"cmi:basic_mechanism_part",
