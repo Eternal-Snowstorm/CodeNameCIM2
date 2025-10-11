@@ -52,6 +52,7 @@
  - [**功能性存储抽屉升级注册**](kubejs/startup_scripts/register/item/DrawerUpgrade.js)
  - [**柴油动力燃料添加**](kubejs/server_scripts/data/DieselEngineFuelTypes.js)
  - [**金属材料配方集成处理**](kubejs/server_scripts/recipes/alone/metal)
+ - [**KubeJS流体标签声明**](hotai/dev/latvian/mods/kubejs/fluid)
 
 <!--markdownlint-disable MD001 MD033 MD041 MD051-->
 
@@ -108,3 +109,4 @@ Currently in Beta stage.
  - [**Functional Storage Drawer Upgrade Registration**](kubejs/startup_scripts/register/item/DrawerUpgrade.js)
  - [**Diesel Engine Fuel Addition**](kubejs/server_scripts/data/DieselEngineFuelTypes.js)
  - [**Metal Material Recipe Integration Handling**](kubejs/server_scripts/recipes/alone/metal)
+ - [**KubeJS Fluid Tag Declaration**](hotai/dev/latvian/mods/kubejs/fluid)

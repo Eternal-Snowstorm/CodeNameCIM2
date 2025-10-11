@@ -63,17 +63,6 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("cmi:oil_shale_steam", 1000))
 		.energy(10000)
 
-	// 烈焰人烧煤油
-	event.custom({
-		"type": "createaddition:liquid_burning",
-		"input": {
-			"fluid": "cmi:kerosene",
-			"amount": 1000
-		},
-		"burnTime": 48000,
-		"superheated": true
-	})
-
 	// 沥青冷却
 	thermal.chiller("thermal:bitumen", [
 		Fluid.of("cmi:molten_bitumen", 250)
@@ -90,10 +79,11 @@ ServerEvents.recipes((event) => {
 	thermal.compression_fuel("cmi:turbid_waste_liquid", 200000)
 
 	// IE塑胶
-	event.custom
-		({ "type": "immersiveengineering:refinery", 
-			"energy": 240, 
-			"input0": { "amount": 12, "tag": "forge:acetaldehyde" }, 
-			"input1": { "amount": 8, "tag": "forge:creosote" }, 
-			"result": { "amount": 8, "fluid": "immersiveengineering:phenolic_resin" } })
+	event.custom({
+		"type": "immersiveengineering:refinery",
+		"energy": 240,
+		"input0": { "amount": 12, "tag": "forge:acetaldehyde" },
+		"input1": { "amount": 8, "tag": "forge:creosote" },
+		"result": { "amount": 8, "fluid": "immersiveengineering:phenolic_resin" }
+	})
 })
