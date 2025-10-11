@@ -60,7 +60,7 @@ StartupEvents.registry("block", (event) => {
 				entity.enableSync()
 				entity.inventory(9, 3, mechanism)
 				entity.rightClickOpensInventory()
-				setSimpleForgeCapability(entity)
+				entity.attachCapability(attachItemHandlerCapability())
 			})
 	})
 })
