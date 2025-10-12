@@ -25,30 +25,35 @@ ServerEvents.tags("block", (event) => {
 	event.get("thermal:dynamos")
 		.add("thermal_extra:dynamo_frost")
 
-	event.add("thermal:devices")
-		.add(["thermal_extra:device_harvester",
-			"thermal_extra:device_lava_gen",
-			"thermal:tinker_bench",
-			"thermal:charge_bench",
-			"thermal:device_tree_extractor",
-			"thermal:device_fisher",
-			"thermal:device_composter",
-			"thermal:device_water_gen",
-			"thermal:device_rock_gen",
-			"thermal:energy_cell",
-			"thermal:fluid_cell",
-			"thermal:device_tree_extractor",
-			"thermal:device_fisher",
-			"thermal:device_composter",
-			"thermal:device_water_gen",
-			"thermal:device_rock_gen",
-			"thermal:device_collector",
-			"thermal:device_xp_condenser",
-			"thermal:device_nullifier",
-			"thermal:device_potion_diffuser",
-			"thermal:machine_frame",
-			"thermal:energy_cell_frame",
-			"thermal:fluid_cell_frame"])
+	let thermalDevices = [
+		"thermal_extra:device_harvester",
+		"thermal_extra:device_lava_gen",
+		"thermal:tinker_bench",
+		"thermal:charge_bench",
+		"thermal:device_tree_extractor",
+		"thermal:device_fisher",
+		"thermal:device_composter",
+		"thermal:device_water_gen",
+		"thermal:device_rock_gen",
+		"thermal:energy_cell",
+		"thermal:fluid_cell",
+		"thermal:device_tree_extractor",
+		"thermal:device_fisher",
+		"thermal:device_composter",
+		"thermal:device_water_gen",
+		"thermal:device_rock_gen",
+		"thermal:device_collector",
+		"thermal:device_xp_condenser",
+		"thermal:device_nullifier",
+		"thermal:device_potion_diffuser",
+		"thermal:machine_frame",
+		"thermal:energy_cell_frame",
+		"thermal:fluid_cell_frame"
+	]
+	thermalDevices.forEach((blocks) => {
+		event.add("thermal:devices")
+			.add(blocks)
+	})
 
 	let wrenchPickupBlocks = [
 		"#thermal:machines",
@@ -216,7 +221,6 @@ ServerEvents.tags("block", (event) => {
 		"tconstruct:scorched_bricks",
 		"tconstruct:seared_glass",
 		"tconstruct:scorched_glass"
-
 	]
 	wrenchPickupBlocks.forEach((blocks) => {
 		event.get("create:wrench_pickup")
