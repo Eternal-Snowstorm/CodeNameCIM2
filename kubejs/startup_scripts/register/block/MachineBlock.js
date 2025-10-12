@@ -56,9 +56,10 @@ StartupEvents.registry("block", (event) => {
 			.defaultCutout()
 			.blockEntity((entity) => {
 				let mechanism = Ingredient.of(`#create:mechanisms/${type}`)
+				let flashDrive = Ingredient.of(`${global.namespace}:mechanism_flash_drives/${type}`)
 
 				entity.enableSync()
-				entity.inventory(9, 3, mechanism)
+				entity.inventory(9, 3, [mechanism, flashDrive])
 				entity.rightClickOpensInventory()
 				entity.attachCapability(attachItemHandlerCapability())
 			})
