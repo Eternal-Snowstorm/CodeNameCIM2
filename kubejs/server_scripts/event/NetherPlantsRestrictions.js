@@ -9,14 +9,14 @@ BlockEvents.rightClicked((event) => {
 		return
 	}
 
-	if (block.level.getDimension().toString() == "minecraft:the_nether") {
-		if (item.id == 'minecraft:twisting_vines' || item.id == 'minecraft:weeping_vines') {
+	let getDimension = block.level.getDimension().toString()
+	let isNetherFarmlandBlockTag = block.hasTag(`${global.namespace}:nether_farmland`)
+
+	if (getDimension == "minecraft:the_nether") {
+		if (item.id === "minecraft:twisting_vines" || item.id === "minecraft:weeping_vines") {
 			return
 		}
 	}
-
-	let getDimension = block.level.getDimension().toString()
-	let isNetherFarmlandBlockTag = block.hasTag(`${global.namespace}:nether_farmland`)
 
 	if (getDimension !== "minecraft:the_nether" || !isNetherFarmlandBlockTag) {
 		let translate = Component.translatable(`display.${global.namespace}.nether_crops`)
