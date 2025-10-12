@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
 	// 工业铁
 	create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
 		[
-			"#create:drushed_raw_materials/iron",
+			"#create:crushed_raw_materials/iron",
 			"#forge:dusts/iron"
 		],
 		"cmi:lime"
