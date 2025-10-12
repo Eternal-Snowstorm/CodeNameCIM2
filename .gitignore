@@ -46,7 +46,7 @@ replay*
 /servers*
 /mods*.zip
 /mods.zip
-!/patchouli_books
+/patchouli_books
 
 # Mods
 /mods/*
