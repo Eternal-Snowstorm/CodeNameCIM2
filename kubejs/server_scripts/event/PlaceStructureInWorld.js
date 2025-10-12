@@ -41,9 +41,7 @@ ServerEvents.loaded((event) => {
 				new BlockPos(x, y, z),
 				new $StructurePlaceSettings()
 					.setRotation($Rotation.NONE)
-					.setMirror($Mirror.NONE)
-					.setIgnoreEntities(false)
-					.setFinalizeEntities(true),
+					.setMirror($Mirror.NONE),
 				level.getRandom(),
 				2
 			)
