@@ -388,6 +388,65 @@ ServerEvents.recipes((event) => {
 		B: "#forge:glass"
 	})
 
+	// 齿轮箱
+	kubejs.shaped("create:gearbox", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "cmi:incomplete_cogwheel",
+		B: "create:andesite_casing"
+	}).id("create:crafting/kinetics/gearbox")
+
+	kubejs.shaped("create:vertical_gearbox", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "cmi:incomplete_cogwheel",
+		B: "create:andesite_casing"
+	}).id("create:crafting/kinetics/vertical_gearbox")
+
+	kubejs.shapeless("create_connected:parallel_gearbox", [
+		"create:gearbox",
+		"cmi:incomplete_large_cogwheel"
+	]).id("create_connected:crafting/kinetics/parallel_gearbox")
+
+	kubejs.shapeless("create_connected:six_way_gearbox", [
+		"create_connected:parallel_gearbox",
+		"cmi:incomplete_large_cogwheel"
+	]).id("create_connected:crafting/kinetics/six_way_gearbox_from_parallel")
+
+	kubejs.shapeless("create_connected:six_way_gearbox", [
+		"create:gearbox",
+		"2x cmi:incomplete_large_cogwheel"
+	]).id("create_connected:crafting/kinetics/six_way_gearbox_from_gearbox")
+
+	kubejs.shaped("create_connected:six_way_gearbox", [
+		"AB ",
+		"BCB",
+		" BA"
+	], {
+		A: "cmi:incomplete_large_cogwheel",
+		B: "cmi:incomplete_cogwheel",
+		C: "create:andesite_casing"
+	}).id("create_connected:crafting/kinetics/six_way_gearbox")
+
+	kubejs.shapeless("create_connected:encased_chain_cogwheel", [
+		"create:encased_chain_drive",
+		"cmi:incomplete_cogwheel"
+	]).id("create_connected:crafting/kinetics/encased_chain_cogwheel")
+
+	kubejs.shapeless("create_connected:crank_wheel", [
+		"create:hand_crank",
+		"cmi:incomplete_cogwheel"
+	]).id("create_connected:crafting/kinetics/crank_wheel")
+
+	kubejs.shapeless("create_connected:large_crank_wheel", [
+		"create:hand_crank",
+		"cmi:incomplete_large_cogwheel"
+	]).id("create_connected:crafting/kinetics/large_crank_wheel")
+
 	let cutSlabWood = [
 		"minecraft:oak",
 		"minecraft:dark_oak",
