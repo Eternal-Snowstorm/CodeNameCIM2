@@ -14,7 +14,8 @@ ServerEvents.loaded((event) => {
 	/**
 	 * 在指定维度的特定坐标生成结构
 	 * @param {String} dimId - 维度 ID (例如 "minecraft:the_nether")
-	 * @param {String} structurePath - 结构路径和文件名 (例如 "radar/radar")
+	 * @param {String} structurePath - 结构路径和文件名 
+	 * (展开后为 "cmi:structures/radar/radar.nbt" 实际编写时不需要写文件后缀)
 	 * @param {[number, number, number]} pos - 坐标 [x, y, z]
 	 */
 	function setStructureInWorld(dimId, structurePath, pos) {
@@ -29,7 +30,7 @@ ServerEvents.loaded((event) => {
 		let template = manager.get(getStructureName(structurePath))
 
 		if (!template.isPresent()) {
-			console.warn(`Structure not found: ${structurePath}`)
+			console.warn(`Structure not found: cmi:${structurePath}`)
 			return
 		}
 
@@ -47,7 +48,7 @@ ServerEvents.loaded((event) => {
 			)
 		})
 
-		console.info(`Placed structure ${structurePath} in ${dimId} at (${x}, ${y}, ${z})`)
+		console.info(`Placed structure cmi:${structurePath} in ${dimId} at (${x}, ${y}, ${z})`)
 	}
 
 	setStructureInWorld("ad_astra:moon", "radar/radar", [0, 80, 0]) // Example
