@@ -59,9 +59,6 @@ ServerEvents.recipes((event) => {
 	})
 
 	let metalActiveOrder = [
-		"potassium",
-		"calcium",
-		"sodium",
 		"magnesium",
 		"uranium",
 		"aluminum",

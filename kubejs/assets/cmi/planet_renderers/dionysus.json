@@ -1,5 +1,5 @@
 {
-	"custom_clouds": true,
+	"custom_clouds": false,
 	"custom_sky": true,
 	"custom_weather": false,
 	"dimension": "cmi:dionysus",
