@@ -1,5 +1,5 @@
 {
-  "sea_level": 63,
+  "sea_level": 0,
   "disable_mob_generation": false,
   "aquifers_enabled": false,
   "ore_veins_enabled": false,
@@ -104,7 +104,7 @@
                     "type": "minecraft:mul",
                     "argument1": {
                       "type": "minecraft:y_clamped_gradient",
-                      "from_y": 96,
+                      "from_y": 128,
                       "to_y": 320,
                       "from_value": 1,
                       "to_value": 0
@@ -191,7 +191,7 @@
                             "type": "minecraft:range_choice",
                             "input": "minecraft:overworld/caves/pillars",
                             "min_inclusive": -1000000,
-                            "max_exclusive": 0.3,
+                            "max_exclusive": 0.03,
                             "when_in_range": -1000000,
                             "when_out_of_range": "minecraft:overworld/caves/pillars"
                           }
@@ -304,7 +304,7 @@
         "if_true": {
           "type": "minecraft:biome",
           "biome_is": [
-            "ad_astra:lunar_wastelands"
+            "alexscaves:toxic_caves"
           ]
         },
         "then_run": {
@@ -312,7 +312,7 @@
           "if_true": {
             "type": "minecraft:y_above",
             "anchor": {
-              "absolute": 54
+              "absolute": 87
             },
             "surface_depth_multiplier": 2,
             "add_stone_depth": false
@@ -329,7 +329,7 @@
             "then_run": {
               "type": "minecraft:block",
               "result_state": {
-                "Name": "minecraft:red-sand"
+                "Name": "cmi:radsand"
               }
             }
           }

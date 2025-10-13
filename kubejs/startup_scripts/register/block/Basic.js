@@ -133,6 +133,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.WRENCH_PICKUP)
 
+	// 雷达
 	addBlock("radar")
 		.soundType(SoundType.NETHERITE_BLOCK)
 		.waterlogged()
@@ -140,4 +141,13 @@ StartupEvents.registry("block", (event) => {
 		.resistance(5)
 		.tagBlock(global.WRENCH_PICKUP)
 		.box(6, 0, 6, 10, 16, 10, true)
+
+	// 辐射沙
+	addBlock("radsand")
+		.textureAll(`${global.namespace}:block/radsand`)
+		.soundType(SoundType.SAND)
+		.hardness(3)
+		.resistance(3)
+		.tagBlock("minecraft:sand")
+		.tagBlock(global.ToolType["shovel"])
 })

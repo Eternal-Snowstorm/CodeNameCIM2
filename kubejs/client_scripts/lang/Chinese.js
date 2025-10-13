@@ -120,6 +120,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("oil_shale", "油页岩")
 	addBlockLanguage("combustion_medium_block", "燃烧介质块")
 	addBlockLanguage("radar", "雷达")
+	addBlockLanguage("radsand","辐射沙")
 
 	addBlockLanguage("unknown_entity_", "Unknown_Entity_")
 	addBlockLanguage("aleegos", "阿列戈斯")
@@ -372,8 +373,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLanguage("cmi:smart_mechanism", "§e转化石头\n§e10%埃忒恩矿石\n§e20%金矿石\n§e20%赛特斯石英矿石\n§e5%银矿石\n§2转化深板岩\n§215%深层埃忒恩矿石\n§215%深层金矿石\n§215%深层赛特斯石英矿石\n§25%深层银矿石")
 	addAccelerateTooltipLanguage("create:precision_mechanism", "§e转化石头\n§e15%铜矿石\n§e15%锌矿石\n§e10%红石矿石\n§2转化深板岩\n§210%深层铜矿石\n§210%深层锌矿石\n§215%深层红石矿石")
 	addAccelerateTooltipLanguage("cmi:ender_mechanism", "§5将玩家传送到构件所记录的坐标")
-	addAccelerateTooltipLanguage("cmi:tier_2_aviation_mechanism", "§7转化月石\n§720%月球戴斯矿石\n§75%月球寒冰碎片矿石\n§75%钢块\n§2转化深板岩\n§215%深层戴斯矿石\n§210%深层铁矿石\n§210%深层银矿石")
-	addAccelerateTooltipLanguage("cmi:tier_3_aviation_mechanism", "§6转化火星石\n§620%火星紫金矿石\n§65%火星寒冰碎片矿石\n§65%戴斯块\n§2转化深板岩\n§215%深层紫金矿石\n§210%深层铁矿石\n§210%深层银矿石")
+	addAccelerateTooltipLanguage("cmi:tier_2_aviation_mechanism", "§7转化莫托斯石\n§720%莫托斯戴斯矿石\n§75%莫托斯寒冰碎片矿石\n§75%钢块\n§2转化深板岩\n§215%深层戴斯矿石\n§210%深层铁矿石\n§210%深层银矿石")
+	addAccelerateTooltipLanguage("cmi:tier_3_aviation_mechanism", "§6转化阿瑞斯石\n§620%阿瑞斯紫金矿石\n§65%阿瑞斯寒冰碎片矿石\n§65%戴斯块\n§2转化深板岩\n§215%深层紫金矿石\n§210%深层铁矿石\n§210%深层银矿石")
 	addAccelerateTooltipLanguage("cmi:air_tight_mechanism", "§e转化石头\n§e20%锇矿石\n§e10%银矿石\n§e10%金矿石\n§2转化深板岩\n§215%深层锇矿石\n§215%深层银矿石\n§215%深层金矿石")
 
 	addMusicDiscLanguage("mechanism", "Mechanism", "DontkillBelalus")
@@ -417,14 +418,14 @@ ClientEvents.lang("zh_cn", (event) => {
 	addTConMaterialLanguage(
 		"desh",
 		"戴斯",
-		"来自月球的神秘金属",
-		"从月球开采的神秘材料, 似乎可以做出更好的升级？"
+		"来自莫托斯的神秘金属",
+		"从莫托斯开采的神秘材料, 似乎可以做出更好的升级？"
 	)
 	addTConMaterialLanguage(
 		"ostrum",
 		"紫金",
 		"越热就越强! ",
-		"来自火星的惰性金属, 似乎在灼热环境中会变得更加优秀"
+		"来自阿瑞斯的惰性金属, 似乎在灼热环境中会变得更加优秀"
 	)
 	addTConMaterialLanguage(
 		"calorite",
@@ -598,13 +599,13 @@ ClientEvents.lang("zh_cn", (event) => {
 
 		event.add(`block.${global.namespace}.${key}_ore`, `${value}矿石`)
 		event.add(`block.${global.namespace}.deepslate_${key}_ore`, `深层${value}矿石`)
-		event.add(`block.${global.namespace}.nether_${key}_ore`, `下界${value}矿石`)
-		event.add(`block.${global.namespace}.end_${key}_ore`, `末地${value}矿石`)
-		event.add(`block.${global.namespace}.moon_${key}_ore`, `月球${value}矿石`)
-		event.add(`block.${global.namespace}.mars_${key}_ore`, `火星${value}矿石`)
-		event.add(`block.${global.namespace}.mercury_${key}_ore`, `水星${value}矿石`)
-		event.add(`block.${global.namespace}.venus_${key}_ore`, `金星${value}矿石`)
-		event.add(`block.${global.namespace}.glacio_${key}_ore`, `霜原${value}矿石`)
+		event.add(`block.${global.namespace}.nether_${key}_ore`, `塔尔塔罗斯${value}矿石`)
+		event.add(`block.${global.namespace}.end_${key}_ore`, `倪克斯${value}矿石`)
+		event.add(`block.${global.namespace}.moon_${key}_ore`, `莫托斯${value}矿石`)
+		event.add(`block.${global.namespace}.mars_${key}_ore`, `阿瑞斯${value}矿石`)
+		event.add(`block.${global.namespace}.mercury_${key}_ore`, `赫尔墨斯${value}矿石`)
+		event.add(`block.${global.namespace}.venus_${key}_ore`, `阿弗洛狄忒${value}矿石`)
+		event.add(`block.${global.namespace}.glacio_${key}_ore`, `哈迪斯${value}矿石`)
 	}
 
 	function addCommonTooltipLanguage(key, value) {
@@ -648,12 +649,12 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addOreNodeLanguage(key, value) {
 		event.add(`block.${global.namespace}.stone_${key}_ore_node`, `${value}矿物节点`)
 		event.add(`block.${global.namespace}.deepslate_${key}_ore_node`, `深层${value}矿物节点`)
-		event.add(`block.${global.namespace}.nether_${key}_ore_node`, `下界${value}矿物节点`)
-		event.add(`block.${global.namespace}.end_${key}_ore_node`, `末地${value}矿物节点`)
-		event.add(`block.${global.namespace}.moon_${key}_ore_node`, `月球${value}矿物节点`)
-		event.add(`block.${global.namespace}.mars_${key}_ore_node`, `火星${value}矿物节点`)
-		event.add(`block.${global.namespace}.venus_${key}_ore_node`, `金星${value}矿物节点`)
-		event.add(`block.${global.namespace}.glacio_${key}_ore_node`, `霜原${value}矿物节点`)
+		event.add(`block.${global.namespace}.nether_${key}_ore_node`, `塔尔塔罗斯${value}矿物节点`)
+		event.add(`block.${global.namespace}.end_${key}_ore_node`, `倪克斯${value}矿物节点`)
+		event.add(`block.${global.namespace}.moon_${key}_ore_node`, `莫托斯${value}矿物节点`)
+		event.add(`block.${global.namespace}.mars_${key}_ore_node`, `阿瑞斯${value}矿物节点`)
+		event.add(`block.${global.namespace}.venus_${key}_ore_node`, `阿弗洛狄忒${value}矿物节点`)
+		event.add(`block.${global.namespace}.glacio_${key}_ore_node`, `哈迪斯${value}矿物节点`)
 	}
 
 	function addAdvancementLanguage(key, title, desc) {
