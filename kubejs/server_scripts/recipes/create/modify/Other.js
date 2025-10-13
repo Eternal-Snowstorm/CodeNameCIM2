@@ -394,7 +394,7 @@ ServerEvents.recipes((event) => {
 		"ABA",
 		" A "
 	], {
-		A: "#create:incomplete_cogwheel",
+		A: "#create:incomplete_cogwheels",
 		B: "create:andesite_casing"
 	}).id("create:crafting/kinetics/gearbox")
 
@@ -403,23 +403,23 @@ ServerEvents.recipes((event) => {
 		" B ",
 		"A A"
 	], {
-		A: "#create:incomplete_cogwheel",
+		A: "#create:incomplete_cogwheels",
 		B: "create:andesite_casing"
 	}).id("create:crafting/kinetics/vertical_gearbox")
 
 	kubejs.shapeless("create_connected:parallel_gearbox", [
 		"create:gearbox",
-		"cmi:incomplete_large_cogwheel"
+		"#create:incomplete_large_cogwheels"
 	]).id("create_connected:crafting/kinetics/parallel_gearbox")
 
 	kubejs.shapeless("create_connected:six_way_gearbox", [
 		"create_connected:parallel_gearbox",
-		"cmi:incomplete_large_cogwheel"
+		"#create:incomplete_large_cogwheels"
 	]).id("create_connected:crafting/kinetics/six_way_gearbox_from_parallel")
 
 	kubejs.shapeless("create_connected:six_way_gearbox", [
 		"create:gearbox",
-		"2x cmi:incomplete_large_cogwheel"
+		"2x #create:incomplete_large_cogwheels"
 	]).id("create_connected:crafting/kinetics/six_way_gearbox_from_gearbox")
 
 	kubejs.shaped("create_connected:six_way_gearbox", [
@@ -427,8 +427,8 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		" BA"
 	], {
-		A: "cmi:incomplete_large_cogwheel",
-		B: "#create:incomplete_cogwheel",
+		A: "#create:incomplete_large_cogwheels",
+		B: "#create:incomplete_cogwheels",
 		C: "create:andesite_casing"
 	}).id("create_connected:crafting/kinetics/six_way_gearbox")
 
@@ -439,12 +439,12 @@ ServerEvents.recipes((event) => {
 
 	kubejs.shapeless("create_connected:crank_wheel", [
 		"create:hand_crank",
-		"#create:incomplete_cogwheel"
+		"#create:incomplete_cogwheels"
 	]).id("create_connected:crafting/kinetics/crank_wheel")
 
 	kubejs.shapeless("create_connected:large_crank_wheel", [
 		"create:hand_crank",
-		"#create:incomplete_large_cogwheel"
+		"#create:incomplete_large_cogwheels"
 	]).id("create_connected:crafting/kinetics/large_crank_wheel")
 
 	let cutSlabWood = [

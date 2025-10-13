@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { createaddition } = event.recipes
 
 	addFluidFuel(Fluid.of("tconstruct:blazing_blood"), 1200, true)
-	addFluidFuel(Fluid.of("cmi:kerosene", 1000), 2400, true)
+	addFluidFuel(Fluid.of("cmi:kerosene"), 2400, true)
 
 	/**
 	 * 

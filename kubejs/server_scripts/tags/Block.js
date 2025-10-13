@@ -62,6 +62,7 @@ ServerEvents.tags("block", (event) => {
 		"#thermal:devices",
 
 		"@mm",
+		"steampowered",
 		"@createdeco",
 		"@kaleidoscope_cookery",
 		"@engineered_schematics",
