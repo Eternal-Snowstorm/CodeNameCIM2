@@ -80,6 +80,8 @@ ServerEvents.highPriorityData((event) => {
 	 * @returns 
 	 */
 	function addOreGeneratingType(name, type, size) {
+
+		// 矿物类型
 		let oreType = {
 			"overworld": "",
 			"nether": "nether_",
@@ -87,6 +89,8 @@ ServerEvents.highPriorityData((event) => {
 			"moon": "moon_",
 			"mars": "mars_"
 		}
+
+		// 已配置的地物
 		let configuredFeature = {
 			type: "minecraft:ore",
 			config: {
@@ -95,10 +99,14 @@ ServerEvents.highPriorityData((event) => {
 				targets: {}
 			}
 		}
+
+		// 已放置的地物
 		let placedFeature = {
 			feature: `${global.namespace}:${oreType[type]}${name}_ore`,
 			placement: {}
 		}
+
+		// 群系定义
 		let biomeModifier = {
 			type: "forge:add_features",
 			biomes: {},
@@ -106,6 +114,7 @@ ServerEvents.highPriorityData((event) => {
 			step: "underground_ores"
 		}
 
+		// 生成数据包
 		function build() {
 			event.addJson(`cmi:worldgen/configured_feature/${oreType[type]}${name}_ore`, configuredFeature)
 			event.addJson(`cmi:worldgen/placed_feature/${oreType[type]}${name}_ore`, placedFeature)
@@ -113,7 +122,10 @@ ServerEvents.highPriorityData((event) => {
 			return this
 		}
 
+		// 配置维度类型
 		return {
+
+			// 主世界
 			overworld: function (count) {
 				configuredFeature.config.targets = [
 					{
@@ -163,6 +175,8 @@ ServerEvents.highPriorityData((event) => {
 				build()
 				return this
 			},
+
+			// 下界
 			nether: function (count) {
 				configuredFeature.config.targets = [
 					{
@@ -203,6 +217,8 @@ ServerEvents.highPriorityData((event) => {
 				build()
 				return this
 			},
+
+			// 末地
 			end: function (count) {
 				configuredFeature.config.targets = [
 					{
@@ -243,6 +259,8 @@ ServerEvents.highPriorityData((event) => {
 				build()
 				return this
 			},
+
+			// 月球
 			moon: function (count) {
 				configuredFeature.config.targets = [
 					{
@@ -283,6 +301,8 @@ ServerEvents.highPriorityData((event) => {
 				build()
 				return this
 			},
+
+			// 火星
 			mars: function (count) {
 				configuredFeature.config.targets = [
 					{
