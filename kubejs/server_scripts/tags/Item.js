@@ -1,4 +1,12 @@
 ServerEvents.tags("item", (event) => {
+	let add = advancedAdd.bind(event)
+
+	add("forge:raw_materials/scarlet_neodymium", "alexscaves:raw_scarlet_neodymium")
+	add("forge:raw_materials/azure_neodymium", "alexscaves:raw_azure_neodymium")
+
+	add("forge:ingots/scarlet_neodymium", "alexscaves:scarlet_neodymium_ingot")
+	add("forge:ingots/azure_neodymium", "alexscaves:azure_neodymium_ingot")
+
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
 		.add("vintageimprovements:redstone_module")
@@ -409,35 +417,6 @@ ServerEvents.tags("item", (event) => {
 			.add(`create:crushed_raw_${material}`)
 	})
 
-	function splitTag(tag) {
-		let tagList = []
-		let splitedTag = tag.split("/")
-		tagList.push(splitedTag[0])
-		for (let i = 1; i < splitedTag.length; i++) {
-			tagList.push(tagList[i - 1] + "/" + splitedTag[i])
-		}
-		return tagList
-	}
-
-	function advancedAdd(tags, target) {
-		function tempAddTag(tag) {
-			if (tag.includes("/")) {
-				let tagList = splitTag(tag)
-				tagList.forEach((singleTag) => {
-					this.add(singleTag, target)
-				})
-			} else this.add(tag, target)
-		}
-		let addTag = tempAddTag.bind(this)
-		if (typeof tags == "string") {
-			addTag(tags)
-		} else {
-			tags.forEach((tag) => {
-				addTag(tag)
-			})
-		}
-	}
-
 	event.get("forge:storage_blocks/etrium")
 		.add("ad_astra:etrium_block")
 
@@ -465,21 +444,4 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("create:mechanisms/nuclear")
 		.add("cmi:nuclear_mechanism")
-})
-
-
-//When you want a block to use your tier, remove the "<mod_name>:needs_<material>_tool" tag if one excist and add the tag you made previusly
-ServerEvents.tags("block", (event) => {
-	// event.remove("minecraft:needs_stone_tool", "minecraft:iron_ore");
-	// event.add("minecraft:needs_bronze_tool", "minecraft:iron_ore");
-	// event.remove("minecraft:needs_stone_tool", "minecraft:iron_block");
-	// event.add("minecraft:needs_bronze_tool", "minecraft:iron_block");
-	// event.remove("minecraft:needs_stone_tool", "minecraft:raw_iron_block")
-	// event.add("minecraft:needs_bronze_tool", "minecraft:raw_iron_block");
-
-	event.get("cmi:needs_bronze_tool")
-		.add("cmi:test_block")
-
-	event.get("minecraft:mineable/pickaxe")
-		.add("cmi:test_block")
 })

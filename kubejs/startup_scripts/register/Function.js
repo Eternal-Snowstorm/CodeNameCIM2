@@ -1,4 +1,4 @@
- // priority: 100
+// priority: 100
 
 let FluidBucketItemModel = {
 	generate: function (name) {

@@ -537,7 +537,7 @@ StartupEvents.registry("item", (event) => {
 		.modelJson({
 			"parent": "create:block/large_cogwheel_shaftless"
 		})
-		.tag("create:incomplete_cogwheels")
+		.tag("create:incomplete_large_cogwheels")
 
 	let cogwheelMaterials = [
 		"bronze",
@@ -551,6 +551,6 @@ StartupEvents.registry("item", (event) => {
 
 		addItem(`incomplete_${material}_large_cogwheel`)
 			.modelJson(CogwheelModels.largeCogwheel(material))
-			.tag("create:incomplete_cogwheels")
+			.tag("create:incomplete_large_cogwheels")
 	})
 })
