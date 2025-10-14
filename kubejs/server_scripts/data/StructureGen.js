@@ -279,6 +279,9 @@ ServerEvents.highPriorityData((event) => {
     addStructureGen("ore_node", "platinum_node", 376345692, 70, 50)
         .moon()
 
+    // 月球起司矿点
+    addStructureGen("ore_node", "cheese_node", 114514191, 70, 50)
+
     // 金矿点
     addStructureGen("ore_node", "gold_node", 763456928, 70, 50)
         .dryland()
@@ -294,4 +297,16 @@ ServerEvents.highPriorityData((event) => {
     // 锌矿点
     addStructureGen("ore_node", "zinc_node", 187656928, 70, 50)
         .mountain()
+
+    // 煤矿点
+    addStructureGen("ore_node", "coal_node", 391035412, 70, 50)
+        .plain()
+
+    // 锡矿点
+    addStructureGen("ore_node", "tin_node", 172345891, 70, 50)
+        .wetland()
+
+    // 油页岩矿点
+    addStructureGen("ore_node", "oil_shale_node", 819248123, 70, 50)
+        .dryland()
 })
