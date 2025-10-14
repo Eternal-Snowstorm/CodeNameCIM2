@@ -30,6 +30,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("#cmi:machine_block")
 	addCommonTooltip("ad_astra:ice_shard")
 	addCommonTooltip("cmi:sugarcane_fiber")
+	addCommonTooltip("#cmi:broken_drill_heads")
 
 	let chemSalts = [
 		"fecl2",

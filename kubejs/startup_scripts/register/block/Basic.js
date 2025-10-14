@@ -1,12 +1,4 @@
-let $RawAnimation =
-	Java.loadClass("software.bernie.geckolib.core.animation.RawAnimation")
-
-function setAnimation() {
-	return $RawAnimation.begin()
-}
-
 StartupEvents.registry("block", (event) => {
-
 	/**
 	 * 
 	 * @param {String} name 注册id
@@ -150,4 +142,38 @@ StartupEvents.registry("block", (event) => {
 		.resistance(3)
 		.tagBlock("minecraft:sand")
 		.tagBlock(global.ToolType["shovel"])
+
+	// 破损钻头
+	addBlock("broken_andesite_drill_head")
+		.model(`${global.namespace}:block/drill/broken_andesite_drill_head`)
+		.soundType(SoundType.STONE)
+		.hardness(4)
+		.resistance(3)
+		.tagBlock(global.MiningLevel["stone"])
+		.tagBlock(global.ToolType["pickaxe"])
+		.requiresTool()
+		.notSolid()
+		.tag(`${global.namespace}:broken_drill_heads`)
+
+	addBlock("broken_copper_drill_head")
+		.model(`${global.namespace}:block/drill/broken_copper_drill_head`)
+		.soundType(SoundType.METAL)
+		.hardness(4)
+		.resistance(3)
+		.tagBlock(global.MiningLevel["stone"])
+		.tagBlock(global.ToolType["pickaxe"])
+		.requiresTool()
+		.notSolid()
+		.tag(`${global.namespace}:broken_drill_heads`)
+
+	addBlock("broken_brass_drill_head")
+		.model(`${global.namespace}:block/drill/broken_brass_drill_head`)
+		.soundType(SoundType.METAL)
+		.hardness(4)
+		.resistance(3)
+		.tagBlock(global.MiningLevel["stone"])
+		.tagBlock(global.ToolType["pickaxe"])
+		.requiresTool()
+		.notSolid()
+		.tag(`${global.namespace}:broken_drill_heads`)
 })

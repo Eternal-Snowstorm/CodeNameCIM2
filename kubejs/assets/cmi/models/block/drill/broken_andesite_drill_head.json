@@ -1,0 +1,6 @@
+{
+	"parent": "cmi:block/drill/drill_head",
+	"textures": {
+		"0": "minecraft:block/andesite"
+	}
+}
