@@ -1,39 +1,23 @@
-/**
- * 
- * @param {String} dimId - 维度 ID (例如 "minecraft:the_nether")
- * @param {String} path 结构路径
- * @param {String} dim 维度
- * @param {Number} salt 密码盐
- * @param {Number}  spacing 平均距离
- * @param {Number}  separation 最小距离
- * @returns 
- */
+ServerEvents.highPriorityData((event) => {
 
-function addStructureGen(dimId, path, salt, spacing, separation) {
+    /**
+     * 
+     * @param {String} type 结构类型
+     * @param {String} name 结构名称
+     * @param {Number} salt 密码盐
+     * @param {Number}  spacing 平均距离
+     * @param {Number}  separation 最小距离
+     * @returns 
+     */
 
-    let level
-    let manager
-    let template
-
-    // 从路径读取结构
-    ServerEvents.loaded((event) => {
-        function getStructureName(path) {
-            return ResourceLocation.fromNamespaceAndPath("cmi", path)
-        }
-        level = event.server.getLevel(dimId)
-        manager = level.getServer().getStructureManager()
-        template = manager.get(getStructureName(path))
-    })
-
-    // 生成数据包
-    ServerEvents.highPriorityData((event) => {
+    function addStructureGen(type, name, salt, spacing, separation) {
 
         // 结构
         let structure = {
             type: "minecraft:jigsaw",
             biomes: [],
             size: 1,
-            start_pool: `${global.namespace}:${path}`,
+            start_pool: `${global.namespace}:${type}/${name}`,
             step: "surface_structures",
             start_height: {
                 absolute: 0
@@ -49,7 +33,7 @@ function addStructureGen(dimId, path, salt, spacing, separation) {
         let structureSet = {
             structures: [
                 {
-                    structure: `${global.namespace}:${path}`,
+                    structure: `${global.namespace}:${type}/${name}`,
                     weight: 1
                 }
             ],
@@ -63,13 +47,13 @@ function addStructureGen(dimId, path, salt, spacing, separation) {
 
         // 结构池
         let templatePool = {
-            name: `${global.namespace}:${template}`,
+            name: `${global.namespace}:${name}`,
             fallback: "minecraft:empty",
             elements: [
                 {
                     weight: 1,
                     element: {
-                        location: `${global.namespace}:${path}`,
+                        location: `${global.namespace}:${type}/${name}`,
                         element_type: "minecraft:single_pool_element",
                         processors: "minecraft:empty",
                         projection: "rigid"
@@ -80,9 +64,9 @@ function addStructureGen(dimId, path, salt, spacing, separation) {
 
         // 生成数据包
         function build() {
-            event.addJson(`cmi:worldgen/structure/${path}`, structure)
-            event.addJson(`cmi:worldgen/structure_set/${path}`, structureSet)
-            event.addJson(`cmi:worldgen/template_pool/${path}`, templatePool)
+            event.addJson(`cmi:worldgen/structure/${type}/${name}`, structure)
+            event.addJson(`cmi:worldgen/structure_set/${type}/${name}`, structureSet)
+            event.addJson(`cmi:worldgen/template_pool/${type}/${name}`, templatePool)
             return this
         }
 
@@ -289,9 +273,25 @@ function addStructureGen(dimId, path, salt, spacing, separation) {
                 return this
             }
         }
-    })
-}
+    }
 
-// 月球铂矿点
-addStructureGen("ad_astra:moon", "ore_node/platinum_node", 376345692, 70, 50)
-    .moon()
+    // 月球铂矿点
+    addStructureGen("ore_node", "platinum_node", 376345692, 70, 50)
+        .moon()
+
+    // 金矿点
+    addStructureGen("ore_node", "gold_node", 763456928, 70, 50)
+        .dryland()
+
+    // 铁矿点
+    addStructureGen("ore_node", "iron_node", 463456928, 70, 50)
+        .forest()
+
+    // 铜矿点
+    addStructureGen("ore_node", "copper_node", 963456928, 70, 50)
+        .plain()
+
+    // 锌矿点
+    addStructureGen("ore_node", "zinc_node", 187656928, 70, 50)
+        .mountain()
+})
