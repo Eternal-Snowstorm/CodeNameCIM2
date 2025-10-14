@@ -1,5 +1,5 @@
 {
-	"block": "cmi:deepslate_gold_ore_node",
+	"block": "cmi:stone_gold_ore_node",
 	"loot_tables": {
 		"earth": "deepdrilling:ore_nodes/gold/earth",
 		"common": "deepdrilling:ore_nodes/gold/common",
