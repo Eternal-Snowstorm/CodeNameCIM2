@@ -12,7 +12,7 @@ ServerEvents.highPriorityData((event) => {
 			spawn_overrides: {},
 			max_distance_from_center: 64,
 			project_start_to_heightmap: "WORLD_SURFACE_WG",
-			terrain_adaptation: "none",
+			terrain_adaptation: "beard_thin",
 			use_expansion_hack: false
 		})
 	}
