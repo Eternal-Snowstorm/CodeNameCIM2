@@ -1,5 +1,4 @@
 ServerEvents.highPriorityData((event) => {
-
 	/**
 	 * 
 	 * @param {String} type 结构类型
@@ -10,7 +9,6 @@ ServerEvents.highPriorityData((event) => {
 	 * @returns 
 	 */
 	function addStructureGen(type, name, salt, spacing, separation) {
-
 		// 结构
 		let structure = {
 			type: "minecraft:jigsaw",
