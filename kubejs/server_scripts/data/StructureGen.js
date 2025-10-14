@@ -5,11 +5,10 @@ ServerEvents.highPriorityData((event) => {
      * @param {String} type 结构类型
      * @param {String} name 结构名称
      * @param {Number} salt 密码盐
-     * @param {Number}  spacing 平均距离
-     * @param {Number}  separation 最小距离
+     * @param {Number} spacing 平均距离
+     * @param {Number} separation 最小距离
      * @returns 
      */
-
     function addStructureGen(type, name, salt, spacing, separation) {
 
         // 结构
