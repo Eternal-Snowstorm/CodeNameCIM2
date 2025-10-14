@@ -1,42 +1,39 @@
-ServerEvents.highPriorityData((event) => {
+/**
+ * 
+ * @param {String} dimId - 维度 ID (例如 "minecraft:the_nether")
+ * @param {String} path 结构路径
+ * @param {String} dim 维度
+ * @param {Number} salt 密码盐
+ * @param {Number}  spacing 平均距离
+ * @param {Number}  separation 最小距离
+ * @returns 
+ */
 
-    // 月球铂矿点
-    addStructureGen("platinum_node", "ore_node", "moon", 376345692, 70, 50)
-        .moom()
+function addStructureGen(dimId, path, salt, spacing, separation) {
 
-    /**
-     * 
-     * @param {String} id 结构名称
-     * @param {String} type 结构类型
-     * @param {String} dim 维度
-     * @param {Number} salt 密码盐
-     * @param {Number}  spacing 平均距离
-     * @param {Number}  separation 最小距离
-     * @returns 
-     */
+    let level
+    let manager
+    let template
 
-    function addStructureGen(id, type, dim, salt, spacing, separation) {
-
-        // 配置结构类型
-        let nodeDim = {
-            "overworld": "",
-            "nether": "nether_",
-            "end": "end_",
-            "moon": "moon_",
-            "dionysus": "dionysus_",
-            "mars": "mars_",
-            "hephaestus": "hephaestus_",
-            "venus": "venus_",
-            "mercury": "mercury_",
-            "glacio": "glacio_"
+    // 从路径读取结构
+    ServerEvents.loaded((event) => {
+        function getStructureName(path) {
+            return ResourceLocation.fromNamespaceAndPath("cmi", path)
         }
+        level = event.server.getLevel(dimId)
+        manager = level.getServer().getStructureManager()
+        template = manager.get(getStructureName(path))
+    })
+
+    // 生成数据包
+    ServerEvents.highPriorityData((event) => {
 
         // 结构
         let structure = {
             type: "minecraft:jigsaw",
             biomes: [],
             size: 1,
-            start_pool: `${global.namespace}:${type}/${nodeDim[dim]}_${id}`,
+            start_pool: `${global.namespace}:${path}`,
             step: "surface_structures",
             start_height: {
                 absolute: 0
@@ -52,7 +49,7 @@ ServerEvents.highPriorityData((event) => {
         let structureSet = {
             structures: [
                 {
-                    structure: `${global.namespace}:${type}/${nodeDim[dim]}_${id}`,
+                    structure: `${global.namespace}:${path}`,
                     weight: 1
                 }
             ],
@@ -66,13 +63,13 @@ ServerEvents.highPriorityData((event) => {
 
         // 结构池
         let templatePool = {
-            name: `${global.namespace}:${nodeDim[dim]}_${id}`,
+            name: `${global.namespace}:${template}`,
             fallback: "minecraft:empty",
             elements: [
                 {
                     weight: 1,
                     element: {
-                        location: `${global.namespace}:${type}/${nodeDim[dim]}_${id}`,
+                        location: `${global.namespace}:${path}`,
                         element_type: "minecraft:single_pool_element",
                         processors: "minecraft:empty",
                         projection: "rigid"
@@ -83,9 +80,9 @@ ServerEvents.highPriorityData((event) => {
 
         // 生成数据包
         function build() {
-            event.addJson(`cmi:worldgen/structure/${type}/${nodeDim[dim]}_${id}`, structure)
-            event.addJson(`cmi:worldgen/structure_set/${type}/${nodeDim[dim]}_${id}`, structureSet)
-            event.addJson(`cmi:worldgen/template_pool/${type}/${nodeDim[dim]}_${id}`, templatePool)
+            event.addJson(`cmi:worldgen/structure/${path}`, structure)
+            event.addJson(`cmi:worldgen/structure_set/${path}`, structureSet)
+            event.addJson(`cmi:worldgen/template_pool/${path}`, templatePool)
             return this
         }
 
@@ -292,5 +289,9 @@ ServerEvents.highPriorityData((event) => {
                 return this
             }
         }
-    }
-})
+    })
+}
+
+// 月球铂矿点
+addStructureGen("ad_astra:moon", "ore_node/platinum_node", 376345692, 70, 50)
+    .moon()
