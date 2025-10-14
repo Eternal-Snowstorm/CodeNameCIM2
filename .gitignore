@@ -102,3 +102,4 @@ replay*
 !/config/modernfix-mixins.properties
 !/config/steampowered-common.toml
 !/config/alexscaves-client.toml
+!config/explorerscompass-common.toml
