@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Unbreakable:1b,HideFlags:4}"
+						}
+					],
+					"name": "deepdrilling:copper_drill_head"
+				}
+			],
+			"rolls": 1.0
+		}
+	],
+	"random_sequence": "deepdrilling:blocks/copper_drill_head"
+}
