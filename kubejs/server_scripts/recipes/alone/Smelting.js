@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 		furnaceMetals.forEach((metal) => {
 			let ingotId = Ingredient.of(`#forge:ingots/${metal}`).getItemIds()
 
-			if (IngredientUtils.isNotNull(`#${type}/${metal}`)) {
+			if (metal.toString() !== "aluminum" && IngredientUtils.isNotNull(`#${type}/${metal}`)) {
 
 				minecraft.smelting(ingotId[0], `#${type}/${metal}`)
 				minecraft.blasting(ingotId[0], `#${type}/${metal}`)
@@ -34,6 +34,7 @@ ServerEvents.recipes((event) => {
 					.additives([])
 
 				mekanism.smelting(ingotId[0], `#${type}/${metal}`)
+
 			}
 		})
 		blastFurnaceMetals.forEach((metal) => {
@@ -121,6 +122,29 @@ ServerEvents.recipes((event) => {
 		})
 	})
 
+	// 铝单独处理
+	minecraft.smelting("immersiveengineering:ingot_aluminum", "#forge:dusts/aluminum")
+	minecraft.blasting("immersiveengineering:ingot_aluminum", "#forge:dusts/aluminum")
+	event.custom({
+		"type": "immersiveindustry:car_kiln",
+		"input": {
+			"tag": "#forge:dusts/aluminum"
+		},
+		"results": [
+			{
+				"item": "immersiveengineering:ingot_aluminum"
+			}
+		],
+		"time": 200,
+		"tickEnergy": 32
+	})
+
+	immersiveengineering.arc_furnace("immersiveengineering:ingot_aluminum")
+		.input("#forge:dusts/aluminum")
+		.additives([])
+
+	mekanism.smelting("immersiveengineering:ingot_aluminum", "#forge:dusts/aluminum")
+
 	// 锇的额外配方
 	event.custom({
 		"type": "immersiveindustry:car_kiln",
@@ -131,7 +155,7 @@ ServerEvents.recipes((event) => {
 		"inputs": [
 			{
 				"base_ingredient": {
-					"tag": "forge:dusts/osmium"
+					"tag": "mekanism:shards/osmium"
 				},
 				"count": 4
 			}

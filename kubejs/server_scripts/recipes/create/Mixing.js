@@ -109,4 +109,9 @@ ServerEvents.recipes((event) => {
 		"#forge:dyes/black",
 		"immersiveengineering:ersatz_leather"
 	])
+
+	create.mixing(Fluid.of("cmi:hydrochloric_acid", 1000), [
+		Fluid.of("mekanism:hydrogen_chloride", 500),
+		Fluid.of("minecraft:water", 500)
+	])
 })
