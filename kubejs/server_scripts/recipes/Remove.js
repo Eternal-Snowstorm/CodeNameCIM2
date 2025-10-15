@@ -109,7 +109,11 @@ ServerEvents.recipes((event) => {
 		"functionalstorage:linking_tool",
 		"create:copper_bars_from_ingots_copper_stonecutting",
 		"create:andesite_bars_from_andesite_alloy_stonecutting",
-		"create:brass_bars_from_ingots_brass_stonecutting"
+		"create:brass_bars_from_ingots_brass_stonecutting",
+		"immersiveengineering:arcfurnace/raw_block_aluminum",
+		"thermal:compat/create_ie/smelter_create_ie_crushed_raw_aluminum",
+		"thermal:compat/immersiveengineering/smelter_ie_raw_aluminum",
+		"thermal:compat/immersiveengineering/smelter_ie_aluminum_ore"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

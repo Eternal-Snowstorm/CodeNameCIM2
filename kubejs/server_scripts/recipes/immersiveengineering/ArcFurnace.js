@@ -14,10 +14,10 @@ ServerEvents.recipes((event) => {
 
 	// 钢
 	immersiveengineering.arc_furnace("#forge:ingots/steel")
-		.input("#forge:ingots/iron")
+		.input("#forge:dusts/cast_iron")
 		.slag("#forge:slag")
 		.additives([
-			"#forge:coal_coke",
+			"#forge:dusts/lime",
 		])
 		.time(400)
 		.energy(8000)

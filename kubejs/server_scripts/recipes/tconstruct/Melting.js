@@ -72,14 +72,14 @@ ServerEvents.recipes((event) => {
 					.temperature(meltingPoint)
 			}
 
-			if (IngredientUtils.isNotNull(rawMaterial)) {
+			if (metal.toString() !== "aluminum" && IngredientUtils.isNotNull(rawMaterial)) {
 				tconstruct.melting(Fluid.of(fluidId, 120))
 					.ingredient(rawMaterial)
 					.time(100)
 					.temperature(meltingPoint)
 			}
 
-			if (IngredientUtils.isNotNull(rawBlock)) {
+			if (metal.toString() !== "aluminum" && IngredientUtils.isNotNull(rawBlock)) {
 				tconstruct.melting(Fluid.of(fluidId, 1080))
 					.ingredient(rawBlock)
 					.time(200)

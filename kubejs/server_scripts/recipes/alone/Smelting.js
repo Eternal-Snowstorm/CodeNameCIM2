@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { minecraft, mekanism, immersiveengineering } = event.recipes
+	let { minecraft, mekanism, immersiveengineering, thermal } = event.recipes
 	let types = ["forge:ores", "forge:raw_materials", "forge:dusts", "create:crushed_raw_materials"]
 	let furnaceMetals = global.meltingLevels[1000]
 	let blastFurnaceMetals = global.meltingLevels[1500]
@@ -10,6 +10,21 @@ ServerEvents.recipes((event) => {
 
 		furnaceMetals.forEach((metal) => {
 			let ingotId = Ingredient.of(`#forge:ingots/${metal}`).getItemIds()
+
+			event.remove({
+				type: "minecraft:smelting",
+				input: `#${type}/${metal}`
+			})
+
+			event.remove({
+				type: "minecraft:blasting",
+				input: `#${type}/${metal}`
+			})
+
+			event.remove({
+				type: "immersiveengineering:arc_furnace",
+				input: `#${type}/${metal}`
+			})
 
 			if (metal.toString() !== "aluminum" && IngredientUtils.isNotNull(`#${type}/${metal}`)) {
 
@@ -33,6 +48,8 @@ ServerEvents.recipes((event) => {
 					.input(`#${type}/${metal}`)
 					.additives([])
 
+
+
 				mekanism.smelting(ingotId[0], `#${type}/${metal}`)
 
 			}
@@ -40,12 +57,12 @@ ServerEvents.recipes((event) => {
 		blastFurnaceMetals.forEach((metal) => {
 			let ingotId = Ingredient.of(`#forge:ingots/${metal}`).getItemIds()
 
-			if (IngredientUtils.isNotNull(`#${type}/${metal}`)) {
+			event.remove({
+				type: "minecraft:smelting",
+				input: `#${type}/${metal}`
+			})
 
-				event.remove({
-					type: "minecraft:smelting",
-					input: `#${type}/${metal}`
-				})
+			if (IngredientUtils.isNotNull(`#${type}/${metal}`)) {
 
 				minecraft.blasting(ingotId[0], `#${type}/${metal}`)
 				event.custom({
@@ -71,12 +88,12 @@ ServerEvents.recipes((event) => {
 		arcFurnaceMetals.forEach((metal) => {
 			let ingotId = Ingredient.of(`#forge:ingots/${metal}`).getItemIds()
 
-			if (IngredientUtils.isNotNull(`#${type}/${metal}`)) {
+			event.remove({
+				type: "minecraft:smelting",
+				input: `#${type}/${metal}`
+			})
 
-				event.remove({
-					type: "minecraft:smelting",
-					input: `#${type}/${metal}`
-				})
+			if (IngredientUtils.isNotNull(`#${type}/${metal}`)) {
 
 				event.remove({
 					type: "minecraft:blasting",
@@ -144,6 +161,8 @@ ServerEvents.recipes((event) => {
 		.additives([])
 
 	mekanism.smelting("immersiveengineering:ingot_aluminum", "#forge:dusts/aluminum")
+
+	thermal.smelter("immersiveengineering:ingot_aluminum", "#forge:dusts/aluminum")
 
 	// 锇的额外配方
 	event.custom({
