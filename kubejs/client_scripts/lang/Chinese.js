@@ -120,7 +120,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("oil_shale", "油页岩")
 	addBlockLanguage("combustion_medium_block", "燃烧介质块")
 	addBlockLanguage("radar", "雷达")
-	addBlockLanguage("radsand","辐射沙")
+	addBlockLanguage("radsand", "辐射沙")
 
 	addBlockLanguage("broken_andesite_drill_head", "损坏的安山岩制钻头")
 	addBlockLanguage("broken_copper_drill_head", "损坏的铜制钻头")
@@ -315,6 +315,15 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPaintingLanguage("random_mechanism", "随机构件", "随机构件")
 	addPaintingLanguage("qi_month", "榛名柒月", "榛名柒月")
 	addPaintingLanguage("sacabamBaspis", "萨卡班甲鱼", "⑨Dropper_QWQ⑨")
+
+	addStructureLanguage("ore_node.coal_node", "煤炭矿物节点")
+	addStructureLanguage("ore_node.copper_node", "铜矿物节点")
+	addStructureLanguage("ore_node.gold_node", "金矿物节点")
+	addStructureLanguage("ore_node.iron_node", "铁矿物节点")
+	addStructureLanguage("ore_node.oil_shale_node", "油页岩矿物节点")
+	addStructureLanguage("ore_node.platinum_node", "铂矿物节点")
+	addStructureLanguage("ore_node.tin_node", "锡矿物节点")
+	addStructureLanguage("ore_node.zinc_node", "锌矿物节点")
 
 	addCommonTooltipLanguage("cmi:sugarcane_fiber", "§c小刀右键草会掉落")
 	addCommonTooltipLanguage("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
@@ -675,5 +684,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addPlanetLanguage(key, value) {
 		event.add(`planet.${global.namespace}.${key}`, `${value}`)
 		event.add(`planet.${global.namespace}_orbit.${key}`, `${value}轨道`)
+	}
+
+	function addStructureLanguage(key, value) {
+		event.add(`structure.${global.namespace}.${key}`, value)
 	}
 })

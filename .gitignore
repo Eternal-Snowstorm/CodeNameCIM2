@@ -103,3 +103,4 @@ replay*
 !/config/steampowered-common.toml
 !/config/alexscaves-client.toml
 !config/explorerscompass-common.toml
+!config/naturescompass-common.toml

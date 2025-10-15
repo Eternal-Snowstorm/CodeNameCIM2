@@ -4,7 +4,7 @@ ServerEvents.highPriorityData((event) => {
 			type: "minecraft:jigsaw",
 			biomes: [],
 			size: 1,
-			start_pool: `cmi:blank`,
+			start_pool: `cmi:dev/blank`,
 			step: "surface_structures",
 			start_height: {
 				absolute: 0
