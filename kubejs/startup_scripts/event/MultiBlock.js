@@ -13,8 +13,9 @@ IEEvents.multiblockForm((event) => {
 	}
 	function disableMultiblock(multiblockId) {
 		if (multiblock === multiblockId) {
-			let tran = Component.translatable("message.cmi.disabled_multiblock").bold()
-			player.displayClientMessage(tran, true)
+			let tranKey =
+				Component.translatable("message.cmi.disabled_multiblock").bold()
+			player.displayClientMessage(tranKey, true)
 
 			event.cancel()
 			return
