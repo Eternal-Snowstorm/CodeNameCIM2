@@ -37,6 +37,7 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("crystal_catalyt", 0x90EE90)
 	addColorFluid("fluid_nitroglycerine", 0xFFFBD3)
 	addColorFluid("geyser_jet", 0x3D57FF)
+	addColorFluid("photosyn_fluid", 0x00FA9A)
 
 	addAloneFluid("oil_shale_steam")
 		.noBlock()

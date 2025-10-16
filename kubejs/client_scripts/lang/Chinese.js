@@ -180,6 +180,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("sludge_suspension", "淤泥悬浊液")
 	addFluidLanguage("syrup", "糖浆")
 	addFluidLanguage("geyser_jet", "间歇泉喷射液")
+	addFluidLanguage("photosyn_fluid", "光合反应液")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
