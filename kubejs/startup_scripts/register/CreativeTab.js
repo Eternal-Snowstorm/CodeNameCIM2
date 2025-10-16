@@ -2,12 +2,13 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 	function addCreativeTab(name) {
 		return event.create(`${global.namespace}:${name}`)
 	}
+
 	addCreativeTab("io_block")
 		.icon(() => Item.of("cmi:ponder_thermal_input"))
 		.content(() => Ingredient.of("#cmi:io_debug_block").itemIds)
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.io_block`))
 
-	let solution_buckets = [
+	let solutionBuckets = [
 		"cmi:feso4_solution_bucket",
 		"cmi:fecl2_solution_bucket",
 		"cmi:cuso4_solution_bucket",
@@ -47,11 +48,10 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 		"cmi:nacl_solution_bucket",
 		"cmi:na2so4_solution_bucket"
 	]
-
 	addCreativeTab("salts_and_solutions")
 		.icon(() => Item.of("cmi:feso4"))
 		.content(() => Ingredient.of("#forge:chem_salts").itemIds
-			.concat(solution_buckets)
+			.concat(solutionBuckets)
 		)
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.salts_and_solutions`))
 
