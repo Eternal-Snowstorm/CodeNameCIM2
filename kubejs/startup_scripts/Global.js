@@ -163,7 +163,9 @@ global.metalGroup = [
 	"potassium",
 	"calcium",
 	"tungsten",
-	"etrium"
+	"etrium",
+	"scarlet_neodymium",
+	"azure_neodymium"
 ]
 // 熔点对象
 global.meltingPoints = {
@@ -232,7 +234,9 @@ global.meltingPoints = {
 	"sodium": 98,
 	"potassium": 64,
 	"calcium": 842,
-	"etrium": 1486 //null
+	"etrium": 1486, //null
+	"azure_neodymium": 1145, // null 占位
+	"scarlet_neodymium": 1145, // null 占位
 }
 // 命名空间
 global.materialNamespace = {
@@ -298,7 +302,9 @@ global.materialNamespace = {
 	"sodium": "c",
 	"potassium": "c",
 	"calcium": "c",
-	"tungsten": "v"
+	"tungsten": "v",
+	"azure_neodymium": "c",
+	"scarlet_neodymium": "c"
 }
 // 熔点数组
 global.meltingLevels = {

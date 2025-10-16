@@ -385,3 +385,11 @@ addMaterial("tungsten_steel", 0x82998C, "diamond")
 	.rod()
 	.gear()
 	.dust()
+
+// 赤铷合金
+addMaterial("scarlet_neodymium", 0xB91919, "stone")
+	.molten()
+
+// 青铷合金
+addMaterial("azure_neodymium", 0x1936B9, "stone")
+	.molten()

@@ -1,6 +1,23 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, minecraft, create } = event.recipes
 
+	event.custom({
+		"type": "create:item_application",
+		"ingredients": [
+			{
+				"tag": "forge:stripped_logs"
+			},
+			{
+				"item": "minecraft:iron_pickaxe"
+			}
+		],
+		"results": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		]
+	})
+
 	// 催生器
 	kubejs.shaped("cmi:accelerator", [
 		"ABC",

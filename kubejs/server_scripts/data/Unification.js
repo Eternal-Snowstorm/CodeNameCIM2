@@ -18,7 +18,7 @@ ServerEvents.highPriorityData((event) => {
 					tag,
 					ids[0]
 				))
-				console.log(`oei:replacements/${material}_${type}.json is generated!`)
+				console.debug(`oei:replacements/${material}_${type}.json is generated!`)
 			}
 		})
 	})
@@ -32,7 +32,7 @@ ServerEvents.highPriorityData((event) => {
 				tag,
 				ids[0]
 			))
-			console.log(`oei:replacements/raw_${material}.json is generated!`)
+			console.debug(`oei:replacements/raw_${material}.json is generated!`)
 		}
 	})
 
@@ -45,7 +45,7 @@ ServerEvents.highPriorityData((event) => {
 				tag,
 				ids[0]
 			))
-			console.log(`oei:replacements/raw_${material}_block.json is generated!`)
+			console.debug(`oei:replacements/raw_${material}_block.json is generated!`)
 		}
 	})
 
@@ -113,6 +113,12 @@ ServerEvents.highPriorityData((event) => {
 	addJsonFile("rice", addUnification(
 		"#forge:seeds/rice",
 		"kaleidoscope_cookery:rice"
+	))
+
+	// 稻穗
+	addJsonFile("rice_panicle", addUnification(
+		"farmersdelight:rice_panicle",
+		"kaleidoscope_cookery:rice_panicle"
 	))
 
 	/**

@@ -39,6 +39,11 @@ ServerEvents.tags("item", (event) => {
 		.add("minecraft:sugar_cane")
 		.add("minecraft:beetroot")
 
+	// 稻穗
+	event.get("forge:rice_panicle")
+		.add("farmersdelight:rice_panicle")
+		.add("kaleidoscope_cookery:rice_panicle")
+
 	// 无限燃烧Tooltip
 	event.get("minecraft:infiniburn_all")
 		.add("cmi:combustion_medium_block")

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, immersiveengineering, thermal } = event.recipes
+	let { create, thermal } = event.recipes
 
 	// 光合反应液
 	create.mixing(Fluid.of("cmi:photosyn_fluid", 125), [
@@ -16,7 +16,26 @@ ServerEvents.recipes((event) => {
 
 	// 少量氧气
 	let o = IngredientUtils.getFirstFluidId("forge:oxygen")
-	thermal.refinery(Fluid.of(o, 10), [
+	thermal.refinery(Fluid.of(o, 25), [
 		Fluid.of("cmi:photosyn_fluid", 500)
 	]).energy(2000)
+
+	// 燃油
+	event.custom({
+		"type": "immersiveengineering:refinery",
+		"catalyst": Ingredient.of("#forge:dusts/charcoal").toJson(),
+		"energy": 120,
+		"input0": {
+			"amount": 25,
+			"tag": "forge:oxygen"
+		},
+		"input1": {
+			"amount": 250,
+			"tag": "forge:kerosene"
+		},
+		"result": {
+			"amount": 50,
+			"fluid": "ad_astra:fuel",
+		}
+	})
 })
