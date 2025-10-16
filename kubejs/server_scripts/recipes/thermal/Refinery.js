@@ -49,6 +49,11 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("cmi:trinitrotoluene_solution", 1000))
 		.energy(8000)
 
+	// 燃油
+	thermal.refinery(Fluid.of("ad_astra:fuel", 1000), [
+		Fluid.of("createdieselgenerators:gasoline", 1000)
+	]).energy(2000)
+
 	// 柴油压缩炉统一
 	thermal.compression_fuel("createdieselgenerators:diesel", 2000000)
 })

@@ -91,6 +91,20 @@ ServerEvents.recipes((event) => {
 		B: "#forge:plates/etrium"
 	})
 
+	// 氧气装载机
+	kubejs.shaped("ad_astra:oxygen_loader", [
+		"AAA",
+		"CED",
+		"BFB"
+	], {
+		A: ["#forge:ingots/steel", "#forge:plates/steel"],
+		B: "#forge:sheetmetals/steel",
+		C: "cmi:copper_mechanism",
+		D: "cmi:air_tight_mechanism",
+		E: "cmi:tier_1_aviation_mechanism",
+		F: "#cmi:batteries"
+	}).id("ad_astra:oxygen_loader")
+
 	// 航天服T1
 	create.mechanical_crafting("ad_astra:space_helmet", [
 		"AAA",
