@@ -266,21 +266,6 @@ addMaterial("magnesium", 0xFDC7FF, "stone")
 addMaterial("industrial_iron", 0x4E4E4E, "iron")
 	.molten()
 
-// 戴斯
-addMaterial("desh", 0xD38B4C, "wooden")
-	.molten()
-	.dust()
-
-// 紫金
-addMaterial("ostrum", 0xA66B72, "wooden")
-	.molten()
-	.dust()
-
-// 耐热金属
-addMaterial("calorite", 0xC94D4E, "wooden")
-	.molten()
-	.dust()
-
 // 埃忒恩
 addMaterial("etrium", 0x32FFD4, "diamond")
 	.molten()
@@ -386,10 +371,27 @@ addMaterial("tungsten_steel", 0x82998C, "diamond")
 	.gear()
 	.dust()
 
+// 戴斯
+addMaterial("desh", 0xD38B4C, "wooden")
+	.molten()
+	.dust()
+
+// 紫金
+addMaterial("ostrum", 0xA66B72, "wooden")
+	.molten()
+	.dust()
+
+// 耐热金属
+addMaterial("calorite", 0xC94D4E, "wooden")
+	.molten()
+	.dust()
+
 // 赤铷合金
 addMaterial("scarlet_neodymium", 0xB91919, "stone")
+	.dust()
 	.molten()
 
 // 青铷合金
 addMaterial("azure_neodymium", 0x1936B9, "stone")
+	.dust()
 	.molten()

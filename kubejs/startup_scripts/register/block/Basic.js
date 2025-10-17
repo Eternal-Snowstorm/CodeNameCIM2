@@ -138,8 +138,8 @@ StartupEvents.registry("block", (event) => {
 	addBlock("radsand")
 		.textureAll(`${global.namespace}:block/radsand`)
 		.soundType(SoundType.SAND)
-		.hardness(3)
-		.resistance(3)
+		.hardness(0.5)
+		.resistance(0.5)
 		.tagBlock("minecraft:sand")
 		.tagBlock(global.ToolType["shovel"])
 

@@ -79,4 +79,58 @@ ServerEvents.recipes((event) => {
 		["#forge:coal_coke"],
 		["#forge:dusts/iron", "#forge:ingots/iron"],
 	])
+
+	// 太空三金属
+	thermal.smelter([
+		"2x ad_astra:desh_ingot",
+		Item.of("ad_astra:desh_ingot").withChance(0.1)
+	], [
+		[
+			"#forge:raw_materials/desh_scrap",
+			"#forge:ingots/desh",
+			"#forge:dusts/desh"
+		],
+		[
+			"#forge:raw_materials/cobalt",
+			"#forge:ingots/cobalt",
+			"#forge:dusts/cobalt"
+		]
+	]).energy(8000)
+
+	thermal.smelter([
+		"3x ad_astra:ostrum_ingot",
+		Item.of("ad_astra:ostrum_ingot").withChance(0.1)
+	], [
+		[
+			"#forge:raw_materials/ostrum_scrap",
+			"#forge:ingots/ostrum",
+			"#forge:dusts/ostrum"
+		],
+		[
+			"#forge:raw_materials/scarlet_neodymium",
+			"#forge:ingots/scarlet_neodymium",
+			"#forge:dusts/scarlet_neodymium"
+		],
+		[
+			"#forge:raw_materials/azure_neodymium",
+			"#forge:ingots/azure_neodymium",
+			"#forge:dusts/azure_neodymium"
+		]
+	]).energy(16000)
+
+	thermal.smelter([
+		"2x ad_astra:calorite_ingot",
+		Item.of("ad_astra:calorite_ingot").withChance(0.1)
+	], [
+		[
+			"#forge:raw_materials/calorite_scrap",
+			"#forge:ingots/calorite",
+			"#forge:dusts/calorite",
+		],
+		[
+			"#forge:raw_materials/osmium",
+			"#forge:ingots/osmium",
+			"#forge:dusts/osmium",
+		]
+	]).energy(32000)
 })

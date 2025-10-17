@@ -16,6 +16,16 @@ ServerEvents.tags("item", (event) => {
 		.add("vintageimprovements:incomplete_redstone_module")
 		.add("cmi:incomplete_nuclear_mechanism")
 
+	// 构件
+	event.get("create:mechanisms/precision")
+		.add("create:precision_mechanism")
+
+	event.get("create:mechanisms/redstone")
+		.add("vintageimprovements:redstone_module")
+
+	event.get("create:mechanisms/nuclear")
+		.add("cmi:nuclear_mechanism")
+
 	global.dyeColorGroup.forEach((color) => {
 		event.get(`forge:dyes/${color}`)
 			.add("cmi:colorful_mechanism")
@@ -431,7 +441,6 @@ ServerEvents.tags("item", (event) => {
 		"plate",
 		"rod"
 	]
-
 	types.forEach((metal) => {
 		event.get(`forge:${metal}s/etrium`)
 			.add(`ad_astra:etrium_${metal}`)
@@ -440,13 +449,21 @@ ServerEvents.tags("item", (event) => {
 			.add(`ad_astra:etrium_${metal}`)
 	})
 
-	// 构件
-	event.get("create:mechanisms/precision")
-		.add("create:precision_mechanism")
+	function removeTagAllId(tag) {
+		return event.get(tag)
+			.removeAll()
+	}
 
-	event.get("create:mechanisms/redstone")
-		.add("vintageimprovements:redstone_module")
+	removeTagAllId("forge:raw_materials/desh")
+	removeTagAllId("forge:raw_materials/ostrum")
+	removeTagAllId("forge:raw_materials/calorite")
 
-	event.get("create:mechanisms/nuclear")
-		.add("cmi:nuclear_mechanism")
+	event.get("forge:raw_materials/desh_scrap")
+		.add("ad_astra:raw_desh")
+
+	event.get("forge:raw_materials/ostrum_scrap")
+		.add("ad_astra:raw_ostrum")
+
+	event.get("forge:raw_materials/calorite_scrap")
+		.add("ad_astra:raw_calorite")
 })
