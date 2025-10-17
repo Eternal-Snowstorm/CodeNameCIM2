@@ -121,7 +121,8 @@ ServerEvents.recipes((event) => {
 		"ad_astra:blasting/ostrum_ingot_from_blasting_raw_ostrum",
 		"ad_astra:smelting/ostrum_ingot_from_smelting_raw_ostrum",
 		"ad_astra:blasting/calorite_ingot_from_blasting_raw_calorite",
-		"ad_astra:smelting/calorite_ingot_from_smelting_raw_calorite"
+		"ad_astra:smelting/calorite_ingot_from_smelting_raw_calorite",
+		"thermal:storage/sugar_cane_block"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

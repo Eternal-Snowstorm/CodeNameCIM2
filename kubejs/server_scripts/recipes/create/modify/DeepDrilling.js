@@ -14,9 +14,9 @@ ServerEvents.recipes((event) => {
 		D: "#create:shaft"
 	}).id("deepdrilling:andesite_drill_head")
 
-	vintageimprovements.turning(Item.of("deepdrilling:andesite_drill_head", unbreakable),
+	vintageimprovements.turning(Item.of("deepdrilling:andesite_drill_head", unbreakable), [
 		"cmi:broken_andesite_drill_head"
-	)
+	])
 
 	// 铜制钻头
 	create.sequenced_assembly(Item.of("deepdrilling:copper_drill_head", unbreakable), [
@@ -35,9 +35,9 @@ ServerEvents.recipes((event) => {
 	]).loops(3).transitionalItem("deepdrilling:incomplete_copper_drill_head")
 		.id("deepdrilling:sequenced_assembly/copper_drill_head")
 
-	vintageimprovements.turning(Item.of("deepdrilling:copper_drill_head", unbreakable),
+	vintageimprovements.turning(Item.of("deepdrilling:copper_drill_head", unbreakable), [
 		"cmi:broken_copper_drill_head"
-	)
+	])
 
 	// 黄铜钻头
 	create.sequenced_assembly(Item.of("deepdrilling:brass_drill_head", unbreakable), [
@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
 	]).loops(5).transitionalItem("deepdrilling:incomplete_brass_drill_head")
 		.id("deepdrilling:sequenced_assembly/brass_drill_head")
 
-	vintageimprovements.turning(Item.of("deepdrilling:brass_drill_head", unbreakable),
+	vintageimprovements.turning(Item.of("deepdrilling:brass_drill_head", unbreakable), [
 		"cmi:broken_brass_drill_head"
-	)
+	])
 })

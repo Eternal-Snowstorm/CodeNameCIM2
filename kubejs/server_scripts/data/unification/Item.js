@@ -123,13 +123,13 @@ ServerEvents.highPriorityData((event) => {
 
 	/**
 	 * @example addJsonFile("coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
-	 * @param {Internal.Item | Internal.Ingredient} ingredient 
+	 * @param {Internal.Item | Internal.Ingredient} match 
 	 * @param {Internal.Item | Internal.Ingredient} item 
 	 * @returns 
 	 */
-	function addUnification(ingredient, item) {
+	function addUnification(match, item) {
 		return {
-			matchItems: [ingredient],
+			matchItems: [match],
 			resultItems: IngredientUtils.getFirstItemId(item)
 		}
 	}
