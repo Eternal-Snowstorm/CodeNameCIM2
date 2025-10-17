@@ -23,7 +23,7 @@ MMEvents.createProcesses((event) => {
 			ingredient: {
 				type: "mm:fluid",
 				fluid: "mekanism:steam",
-				amount: global.BUCKET_CAPACITY * 4
+				amount: global.BUCKET_CAPACITY * 2
 			}
 		})
 
@@ -51,7 +51,7 @@ MMEvents.createProcesses((event) => {
 			ingredient: {
 				type: "mm:fluid",
 				fluid: "mekanism:steam",
-				amount: global.BUCKET_CAPACITY * 4
+				amount: global.BUCKET_CAPACITY * 2
 			}
 		})
 
@@ -79,7 +79,7 @@ MMEvents.createProcesses((event) => {
 			ingredient: {
 				type: "mm:fluid",
 				fluid: "mekanism:steam",
-				amount: global.BUCKET_CAPACITY * 4
+				amount: global.BUCKET_CAPACITY * 2
 			}
 		})
 })

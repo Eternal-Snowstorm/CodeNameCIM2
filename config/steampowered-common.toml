@@ -5,7 +5,7 @@
 	HuPerFuelTick = 4
 	#This defines how many mbs of steam does a mb of water can turn into.
 	#Range: 0.0 ~ 100000.0
-	steamPerWater = 2.0
+	steamPerWater = 1.0
 
 [boiler]
 	#Maximum HU the boiler intakes. 10HU=1mb of steam. 
@@ -42,7 +42,7 @@
 		#Range: 0 ~ 8192
 		bronzeFlywheelSpeed = 32
 		#Range: 0 ~ 8192
-		bronzeFlywheelSteamConsumptionPerTick = 2
+		bronzeFlywheelSteamConsumptionPerTick = 1
 		#Range: 0 ~ 1048576
 		bronzeFlywheelSteamStorage = 2000
 		#Range: 0.0 ~ 1.0
@@ -54,7 +54,7 @@
 		#Range: 0 ~ 8192
 		castIronFlywheelSpeed = 32
 		#Range: 0 ~ 8192
-		castIronFlywheelSteamConsumptionPerTick = 4
+		castIronFlywheelSteamConsumptionPerTick = 2
 		#Range: 0 ~ 1048576
 		castIronFlywheelSteamStorage = 4000
 		#Range: 0.0 ~ 1.0
@@ -66,7 +66,7 @@
 		#Range: 0 ~ 8192
 		steelFlywheelSpeed = 32
 		#Range: 0 ~ 1048576
-		steelFlywheelSteamConsumptionPerTick = 8
+		steelFlywheelSteamConsumptionPerTick = 4
 		#Range: 0 ~ 1048576
 		steelFlywheelSteamStorage = 8000
 		#Range: 0.0 ~ 1.0
