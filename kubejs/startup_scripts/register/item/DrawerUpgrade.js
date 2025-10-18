@@ -16,10 +16,10 @@ StartupEvents.registry("item", (event) => {
 		const FLUID_MULTIPLIER = ITEM_MULTIPLIER * 0.5
 		const CONTROLLER_MULTIPLIER = FLUID_MULTIPLIER * 0.5
 
-		let id = `${global.namespace}:${name}_upgrade`
+		const REGISTER_ID = `${global.namespace}:${name}_upgrade`
 
 		let registerDrawerUpgrade =
-			event.createCustom(id, () => {
+			event.createCustom(REGISTER_ID, () => {
 				return new JavaAdapter($StorageUpgradeItem, {
 					// 重写getStorageMultiplier()方法设置升级的倍率
 					getStorageMultiplier() {

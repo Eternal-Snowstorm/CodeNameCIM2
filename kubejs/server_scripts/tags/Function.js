@@ -17,7 +17,9 @@ function advancedAdd(tags, target) {
 			tagList.forEach((singleTag) => {
 				this.add(singleTag, target)
 			})
-		} else this.add(tag, target)
+		} else {
+			this.add(tag, target)
+		}
 	}
 	let addTag = tempAddTag.bind(this)
 	if (typeof tags === "string") {

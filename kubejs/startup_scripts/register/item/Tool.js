@@ -42,7 +42,6 @@ StartupEvents.registry("item", (event) => {
 		.tag("mekanism:configurators")
 		.tag("forge:wrenches")
 
-
 	// 简易电池
 	addItem("simple_battery")
 		.maxStackSize(1)
@@ -50,8 +49,9 @@ StartupEvents.registry("item", (event) => {
 		.attachCapability(CapabilityBuilder.ENERGY.customItemStack()
 			.canExtract(() => true)
 			.canReceive(() => true)
-			.getMaxEnergyStored((i) => 10000)
-			.getEnergyStored((stack) => stack.nbt?.energy || 0)
+			.getEnergyStored((stack) => {
+				stack.nbt?.energy || 0
+			})
 			.getMaxEnergyStored(() => 10000)
 			.extractEnergy((stack, amount, simulate) => {
 				let stored = stack.nbt?.energy || 0
