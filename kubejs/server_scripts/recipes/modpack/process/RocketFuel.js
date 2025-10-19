@@ -4,12 +4,14 @@ ServerEvents.recipes((event) => {
 	// 光合反应液
 	create.mixing(Fluid.of("cmi:photosyn_fluid", 125), [
 		Fluid.of("minecraft:water", 500),
+		"minecraft:glowstone_dust",
 		"16x #minecraft:leaves",
 		"16x createaddition:biomass"
 	]).heated()
 
 	create.mixing(Fluid.of("cmi:photosyn_fluid", 125), [
 		Fluid.of("minecraft:water", 500),
+		"minecraft:glowstone_dust",
 		"32x #minecraft:saplings",
 		"16x createaddition:biomass"
 	]).heated()

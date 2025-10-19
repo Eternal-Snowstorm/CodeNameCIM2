@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
 
 	create.mixing(Fluid.of("cmi:acidic_concentrated_sea_water", 500), [
 		Fluid.of("cmi:concentrated_sea_water", 500),
-		Fluid.of("mekanism:hydrogen_chloride", 100)
+		Fluid.of("cmi:hydrochloric_acid", 100)
 	])
 
 	// 液态溴+废液
@@ -64,6 +64,12 @@ ServerEvents.recipes((event) => {
 		"cmi:magnesium_hydroxide"
 	])
 
+	// 硫酸镁溶液
+	create.mixing(Fluid.of("cmi:mgso4_solution", 1000), [
+		Fluid.of("#forge:sulfuric_acid", 100),
+		"cmi:magnesium_hydroxide"
+	])
+
 	// 镁粉+氯气
 	event.custom({
 		"type": "immersiveindustry:electrolyzer",
@@ -72,7 +78,7 @@ ServerEvents.recipes((event) => {
 		},
 		"result_fluid": {
 			"fluid": "mekanism:chlorine",
-			"amount": 100
+			"amount": 50
 		},
 		"result": {
 			"item": "cmi:magnesium_dust",
@@ -81,6 +87,24 @@ ServerEvents.recipes((event) => {
 		"large_only": true,
 		"time": 20
 	})
+
+	// 镁粉+三氧化硫
+	event.custom({
+		"type": "immersiveindustry:electrolyzer",
+		"input": {
+			"tag": "forge:chem_salts/magnesium/sulfate"
+		},
+		"result_fluid": {
+			"fluid": "mekanism:sulfur_trioxide",
+			"amount": 50
+		},
+		"result": {
+			"item": "cmi:magnesium_dust",
+			"count": 1
+		},
+		"large_only": true,
+		"time": 20
+	}),
 
 	// 重水+氯化钠+硫酸钠
 	createdieselgenerators.distillation([

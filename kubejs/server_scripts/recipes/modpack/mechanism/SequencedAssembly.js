@@ -347,7 +347,7 @@ ServerEvents.recipes((event) => {
 
 	// 1航天
 	create.sequenced_assembly("cmi:tier_1_aviation_mechanism", [
-		"#forge:plates/steel"
+		"#forge:plates/tungsten_steel"
 	], [
 		create.deploying(ir1m, [ir1m, "cmi:computer_component"]),
 		create.deploying(ir1m, [ir1m, "ad_astra:steel_cable"]),

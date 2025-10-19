@@ -228,7 +228,7 @@ ServerEvents.recipes((event) => {
 		"CMC",
 		"AAA"
 	], {
-		A: "#forge:plates/steel",
+		A: "#forge:plates/tungsten_steel",
 		C: "cmi:tier_1_aviation_mechanism",
 		M: "minecraft:blast_furnace"
 	}).id("ad_astra:etrionic_blast_furnace")
