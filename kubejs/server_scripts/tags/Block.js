@@ -1,4 +1,9 @@
 ServerEvents.tags("block", (event) => {
+	function removeTagAllId(tag) {
+		return event.get(tag)
+			.removeAll()
+	}
+
 	event.get("minecraft:infiniburn_all")
 		.add("cmi:combustion_medium_block")
 
