@@ -10,13 +10,13 @@ let $NBTTags =
 StartupEvents.registry("item", (event) => {
 	/**
 	 * 
-	 * @param {Number} multiplier 倍率
+	 * @param {Number} value 并行数量 
 	 */
-	function addArgumentParallel(multiplier) {
-		event.createCustom(`${global.namespace}:argument_parallel_${multiplier}`, () => {
+	function addArgumentParallel(value) {
+		event.createCustom(`${global.namespace}:argument_parallel_${value}`, () => {
 			return new $AugmentItem(new $Item$Properties(), $AugmentDataHelper.builder()
 				.type($NBTTags.TAG_AUGMENT_TYPE_MACHINE)
-				.mod("MachineParallel", multiplier)
+				.mod("MachineParallel", value)
 				.build()
 			)
 		})
