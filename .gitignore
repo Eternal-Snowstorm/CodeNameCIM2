@@ -1,7 +1,6 @@
 # Common
 yes_steve_model*
 /.cache/
-/.vscode/
 /backups/
 /caxton*
 /.idea
@@ -74,6 +73,10 @@ replay*
 !/saves/Debug
 !/saves/QBWT*
 !/saves/Quest_Background*
+
+#.vscode
+/.vscode/*
+!.vscode/kubejs.code-snippets
 
 # Config
 /config/*

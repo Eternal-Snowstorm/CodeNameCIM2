@@ -22,9 +22,6 @@ StartupEvents.registry("item", (event) => {
 		})
 	}
 
-	addArgumentParallel(1)
-	addArgumentParallel(2)
-	addArgumentParallel(4)
 	addArgumentParallel(8)
 	addArgumentParallel(16)
 	addArgumentParallel(32)
