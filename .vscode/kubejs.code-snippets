@@ -1,0 +1,52 @@
+{
+	"Recipes Event Template": {
+		"prefix": "#Recipes",
+		"body": [
+			"ServerEvents.recipes((event) => {",
+			"    let {} = event.recipes",
+			"})"
+		],
+	},
+	"ItemTags Event Template": {
+		"prefix": "#ItemTags",
+		"body": [
+			"ServerEvents.tags(\"item\", (event) => {",
+			"})"
+		],
+	},
+	"BlockTags Event Template": {
+		"prefix": "#BlockTags",
+		"body": [
+			"ServerEvents.tags(\"block\", (event) => {",
+			"})"
+		],
+	},
+	"FluidTags Event Template": {
+		"prefix": "#FluidTags",
+		"body": [
+			"ServerEvents.tags(\"fluid\", (event) => {",
+			"})"
+		],
+	},
+	"Registry Block Template": {
+		"prefix": "#RegisterBlock",
+		"body": [
+			"StartupEvents.registry(\"block\", (event) => {",
+			"})"
+		]
+	},
+	"Registry Item Template": {
+		"prefix": "#RegisterItem",
+		"body": [
+			"StartupEvents.registry(\"item\", (event) => {",
+			"})"
+		]
+	},
+	"Registry Fluid Template": {
+		"prefix": "#RegisterFluid",
+		"body": [
+			"StartupEvents.registry(\"fluid\", (event) => {",
+			"})"
+		]
+	}
+}

@@ -33,7 +33,6 @@ StartupEvents.registry("item", (event) => {
 		.tag("minecraft:axes")
 		.tag("minecraft:shovels")
 		.tag(global.TinkerItemTags.MODIFIABLE)
-		.tag(global.TinkerItemTags.MODIFIABLE)
 		.tag(global.TinkerItemTags.MULTIPART_TOOL)
 		.tag(global.TinkerItemTags.DURABILITY)
 		.tag(global.TinkerItemTags.SMALL_TOOLS)

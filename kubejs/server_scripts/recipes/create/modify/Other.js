@@ -388,6 +388,19 @@ ServerEvents.recipes((event) => {
 		B: "#forge:glass"
 	})
 
+	// 增产机壳
+	let casingFrame = [
+		"andesite",
+		"brass",
+		"copper"
+	]
+	casingFrame.forEach((frame) => {
+		event.stonecutting(
+			`4x cmi:${frame}_casing_framework`,
+			`#forge:plates/${frame}`
+		)
+	})
+
 	// 齿轮箱
 	kubejs.shaped("create:gearbox", [
 		" A ",

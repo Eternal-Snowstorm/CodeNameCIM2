@@ -66,6 +66,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_upgrade_augment_3", "谐振整合组件(半成品)")
 	addItemLanguage("lime_dust", "石灰粉")
 	addItemLanguage("guide", "指南")
+	addItemLanguage("andesite_casing_framework","安山机壳框架")
+	addItemLanguage("brass_casing_framework","黄铜机壳框架")
+	addItemLanguage("copper_casing_framework","铜机壳框架")
 
 	addItemLanguage("incomplete_cogwheel", "齿轮(半成品)")
 	addItemLanguage("incomplete_bronze_cogwheel", "青铜齿轮(半成品)")
