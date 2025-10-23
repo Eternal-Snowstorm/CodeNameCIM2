@@ -553,4 +553,21 @@ StartupEvents.registry("item", (event) => {
 			.modelJson(CogwheelModels.largeCogwheel(material))
 			.tag("create:incomplete_large_cogwheels")
 	})
+
+	let casingFrame = [
+		"andesite",
+		"brass",
+		"copper"
+	]
+	casingFrame.forEach((frame) => {
+		addItem(`${frame}_casing_framework`)
+			.modelJson({
+				"parent": "cmi:item/casing_framework/main",
+				"textures": {
+					"side": `cmi:item/framework/${frame}`
+				}
+			})
+			.tag(`cmi:casing_framework`)
+			.tag(`cmi:casing_framework/${frame}`)
+	})
 })

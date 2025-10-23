@@ -134,7 +134,11 @@ ServerEvents.recipes((event) => {
 					input: `#${type}/${metal}`
 				})
 
-				mekanism.smelting(ingotId[0], `#${type}/${metal}`)
+				if (metal.toString() !== "desh" &&
+					metal.toString() !== "ostrum" &&
+					metal.toString() !== "calorite") {
+					mekanism.smelting(ingotId[0], `#${type}/${metal}`)
+				}
 			}
 		})
 	})

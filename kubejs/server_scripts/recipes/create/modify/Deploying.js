@@ -68,4 +68,19 @@ ServerEvents.recipes((event) => {
 		"scannable:blank_module",
 		"cmi:wooden_mechanism"
 	]).id("scannable:chest_module")
+
+	create.deploying(`create:andesite_casing`, [
+		"#minecraft:planks",
+		"cmi:andesite_casing_framework"
+	])
+
+	create.deploying(`create:brass_casing`, [
+		"#minecraft:planks",
+		"cmi:brass_casing_framework"
+	])
+
+	create.deploying(`create:copper_casing`, [
+		"#forge:treated_wood",
+		"cmi:copper_casing_framework"
+	])
 })

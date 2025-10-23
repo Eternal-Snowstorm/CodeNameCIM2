@@ -79,18 +79,28 @@ ServerEvents.recipes((event) => {
 					.temperature(meltingPoint)
 			}
 
-			if (metal.toString() !== "aluminum" && IngredientUtils.isNotNull(rawBlock)) {
-				tconstruct.melting(Fluid.of(fluidId, 1080))
-					.ingredient(rawBlock)
-					.time(200)
-					.temperature(meltingPoint)
+			if (IngredientUtils.isNotNull(rawBlock)) {
+				if (metal.toString() !== "aluminum" &&
+					metal.toString() !== "desh" &&
+					metal.toString() !== "ostrum" &&
+					metal.toString() !== "calorite") {
+					tconstruct.melting(Fluid.of(fluidId, 1080))
+						.ingredient(rawBlock)
+						.time(200)
+						.temperature(meltingPoint)
+				}
 			}
 
 			if (IngredientUtils.isNotNull(block)) {
-				tconstruct.melting(Fluid.of(fluidId, 810))
-					.ingredient(block)
-					.time(200)
-					.temperature(meltingPoint)
+				if (metal.toString() !== "aluminum" &&
+					metal.toString() !== "desh" &&
+					metal.toString() !== "ostrum" &&
+					metal.toString() !== "calorite") {
+					tconstruct.melting(Fluid.of(fluidId, 810))
+						.ingredient(block)
+						.time(200)
+						.temperature(meltingPoint)
+				}
 			}
 
 			if (namespace === "v") {
