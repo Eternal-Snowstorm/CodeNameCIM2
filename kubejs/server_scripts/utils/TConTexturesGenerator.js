@@ -124,7 +124,7 @@ function addTConTexture(name, colour, first, second, third, forth, fifth, sixth,
 	})
 
 	const FILE_PATH = `kubejs/assets/${global.namespace}/tinkering/materials/${name}.json`
-	JsonIO.write(FILE_PATH, {
+	JsonIO.writeAndCreateDirectories(FILE_PATH, {
 		"color": colour.startsWith("FF") ? colour : `FF${colour}`,
 		"fallbacks": [
 			"metal"

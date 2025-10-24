@@ -331,7 +331,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addStructureLanguage("ore_node.tin_node", "锡矿物节点")
 	addStructureLanguage("ore_node.zinc_node", "锌矿物节点")
 
-	addCommonTooltipLanguage("cmi:sugarcane_fiber", "§c小刀右键草会掉落")
+	addCommonTooltipLanguage("cmi:grass_fiber", "§c小刀右键草会掉落")
 	addCommonTooltipLanguage("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
 	addCommonTooltipLanguage("#cmi:machine_block", "只有装饰作用(暂时)")
 	addCommonTooltipLanguage("cmi:pigiron_mechanism", "可无限次食用")
