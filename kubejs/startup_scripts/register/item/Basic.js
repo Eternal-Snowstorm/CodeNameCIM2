@@ -218,8 +218,8 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:dusts")
 
 	// 觉得长的请使用VS Code自带的折叠功能
-	let CogwheelModels = {
-		"cogwheel": function (material) {
+	let SomeModelsJson = {
+		cogwheel: function (material) {
 			return {
 				"parent": "create:block/large_wheels",
 				"texture_size": [32, 32],
@@ -311,7 +311,7 @@ StartupEvents.registry("item", (event) => {
 				]
 			}
 		},
-		"largeCogwheel": function (material) {
+		largeCogwheel: function (material) {
 			return {
 				"parent": "create:block/large_wheels",
 				"texture_size": [32, 32],
@@ -524,6 +524,14 @@ StartupEvents.registry("item", (event) => {
 					}
 				]
 			}
+		},
+		casingFrame: function (material) {
+			return {
+				"parent": "cmi:item/casing_framework/main",
+				"textures": {
+					"side": `cmi:item/framework/${material}`
+				}
+			}
 		}
 	}
 
@@ -546,13 +554,15 @@ StartupEvents.registry("item", (event) => {
 	]
 	cogwheelMaterials.forEach((material) => {
 		addItem(`incomplete_${material}_cogwheel`)
-			.modelJson(CogwheelModels.cogwheel(material))
+			.modelJson(SomeModelsJson.cogwheel(material))
 			.tag("create:incomplete_cogwheels")
 
 		addItem(`incomplete_${material}_large_cogwheel`)
-			.modelJson(CogwheelModels.largeCogwheel(material))
+			.modelJson(SomeModelsJson.largeCogwheel(material))
 			.tag("create:incomplete_large_cogwheels")
 	})
+
+
 
 	let casingFrame = [
 		"andesite",
@@ -561,12 +571,7 @@ StartupEvents.registry("item", (event) => {
 	]
 	casingFrame.forEach((frame) => {
 		addItem(`${frame}_casing_framework`)
-			.modelJson({
-				"parent": "cmi:item/casing_framework/main",
-				"textures": {
-					"side": `cmi:item/framework/${frame}`
-				}
-			})
+			.modelJson(SomeModelsJson.casingFrame(frame))
 			.tag(`cmi:casing_framework`)
 			.tag(`cmi:casing_framework/${frame}`)
 	})
