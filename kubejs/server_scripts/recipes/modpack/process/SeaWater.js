@@ -66,7 +66,7 @@ ServerEvents.recipes((event) => {
 
 	// 硫酸镁溶液
 	create.mixing(Fluid.of("cmi:mgso4_solution", 1000), [
-		Fluid.of("#forge:sulfuric_acid", 100),
+		Fluid.tag("fluidTag", "forge:sulfuric_acid", 100),
 		"cmi:magnesium_hydroxide"
 	])
 
@@ -106,13 +106,13 @@ ServerEvents.recipes((event) => {
 		"time": 20
 	}),
 
-	// 重水+氯化钠+硫酸钠
-	createdieselgenerators.distillation([
-		Fluid.of("mekanism:heavy_water", 10),
-		Fluid.of("cmi:nacl_solution", 500),
-		Fluid.of("cmi:na2so4_solution", 300)
-	], Fluid.of("cmi:concentrated_sea_water", 1000))
-		.heatRequirement(global.HeatLevel["grilled"])
+		// 重水+氯化钠+硫酸钠
+		createdieselgenerators.distillation([
+			Fluid.of("mekanism:heavy_water", 10),
+			Fluid.of("cmi:nacl_solution", 500),
+			Fluid.of("cmi:na2so4_solution", 300)
+		], Fluid.of("cmi:concentrated_sea_water", 1000))
+			.heatRequirement(global.HeatLevel["grilled"])
 
 	// 钠+氯气
 	event.custom({
