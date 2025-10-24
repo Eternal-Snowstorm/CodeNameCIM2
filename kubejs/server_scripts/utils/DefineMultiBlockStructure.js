@@ -22,7 +22,7 @@ function defineMultiBlockStructure(structure) {
 	}
 	let self = {
 		where: function (pos, block) {
-			addMater(matcher, new $Character(pos), block)
+			addMater(matcher, new $Character(pos), Block.getBlock(block))
 			return self
 		},
 		build: function () {

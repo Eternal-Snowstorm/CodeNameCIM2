@@ -67,9 +67,9 @@ BlockEvents.rightClicked("minecraft:sculk_shrieker", (event) => {
 		["   ", " 0 ", "   "],
 		["AAA", "ACA", "AAA"]
 	])
-		.where("A", Block.getBlock("create:andesite_alloy_block"))
-		.where("0", Block.getBlock("minecraft:sculk_shrieker"))
-		.where("C", Block.getBlock("minecraft:obsidian"))
+		.where("A", "create:andesite_alloy_block")
+		.where("0", "minecraft:sculk_shrieker")
+		.where("C", "minecraft:obsidian")
 		.build()
 
 	let structure = defineStructure.validate(level, block.pos)
