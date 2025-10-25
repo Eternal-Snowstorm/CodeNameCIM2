@@ -4,8 +4,8 @@
 	"render_type": "cutout",
 	"texture_size": [64, 64],
 	"textures": {
-		"skin": "#skin",
-		"particle": "#skin"
+		"particle": "#skin",
+		"skin": "#skin"
 	},
 	"elements": [
 		{
@@ -185,8 +185,8 @@
 		},
 		"thirdperson_lefthand": {
 			"rotation": [90, 0, 0],
-			"translation": [0, 0, 14],
-			"scale": [0.29, 0.29, 0.29]
+			"translation": [1.25, 0, 15],
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, 135, 0],
