@@ -1,33 +1,35 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
+
 	const ITEM_CONTAINER = Ingredient.of("#cmi:item_container")
 	const FLUID_TANKS = Ingredient.of("#cmi:fluid_tanks")
 	const BATTERIES = Ingredient.of("#cmi:batteries")
+	const CONTROLLER_NAMESPACE = "mm"
 
 	// 锅炉
 	addMachinePart({
-		controllerID: "mm:large_steam_boiler",
+		controllerID: "large_steam_boiler",
 		fluidIO: true,
 		itemIO: true
 	})
 
 	// 裂解机
 	addMachinePart({
-		controllerID: "mm:cracker",
+		controllerID: "cracker",
 		fluidIO: true,
 		energyIO: true
 	})
 
 	// 矿石处理机
 	addMachinePart({
-		controllerID: "mm:steam_ore_processor",
+		controllerID: "steam_ore_processor",
 		fluidIO: true,
 		itemIO: true
 	})
 
 	// 粒子碰装机
 	addMachinePart({
-		controllerID: "mm:particle_collision_machine",
+		controllerID: "particle_collision_machine",
 		itemIO: true,
 		energyIO: true
 	})
@@ -46,64 +48,64 @@ ServerEvents.recipes((event) => {
 		// 添加流体接口(输入+输出)
 		if (fluidIO) {
 			// 流体输入接口
-			kubejs.shaped(`${controllerID}_fluid_input`, [
+			kubejs.shaped(`${CONTROLLER_NAMESPACE}:${controllerID}_fluid_input`, [
 				"A",
 				"B"
 			], {
 				A: FLUID_TANKS,
 				B: controllerID
-			}).keepIngredient(controllerID)
+			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
 
 			// 流体输出接口
-			kubejs.shaped(`${controllerID}_fluid_output`, [
+			kubejs.shaped(`${CONTROLLER_NAMESPACE}:${controllerID}_fluid_output`, [
 				"A",
 				"B"
 			], {
 				A: controllerID,
 				B: FLUID_TANKS
-			}).keepIngredient(controllerID)
+			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
 		}
 
 		// 添加物品接口(输入+输出)
 		if (itemIO) {
 			// 物品输入接口
-			kubejs.shaped(`${controllerID}_item_input`, [
+			kubejs.shaped(`${CONTROLLER_NAMESPACE}:${controllerID}_item_input`, [
 				"A",
 				"B"
 			], {
 				A: ITEM_CONTAINER,
 				B: controllerID
-			}).keepIngredient(controllerID)
+			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
 
 			// 物品输出接口
-			kubejs.shaped(`${controllerID}_item_output`, [
+			kubejs.shaped(`${CONTROLLER_NAMESPACE}:${controllerID}_item_output`, [
 				"A",
 				"B"
 			], {
 				A: controllerID,
 				B: ITEM_CONTAINER
-			}).keepIngredient(controllerID)
+			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
 		}
 
 		// 添加能量接口(输入+输出)
 		if (energyIO) {
 			// 能量输入接口
-			kubejs.shaped(`${controllerID}_energy_input`, [
+			kubejs.shaped(`${CONTROLLER_NAMESPACE}:${controllerID}_energy_input`, [
 				"A",
 				"B"
 			], {
 				A: BATTERIES,
 				B: controllerID
-			}).keepIngredient(controllerID)
+			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
 
 			// 能量输出接口
-			kubejs.shaped(`${controllerID}_energy_output`, [
+			kubejs.shaped(`${CONTROLLER_NAMESPACE}:${controllerID}_energy_output`, [
 				"A",
 				"B"
 			], {
 				A: controllerID,
 				B: BATTERIES
-			}).keepIngredient(controllerID)
+			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
 		}
 	}
 })
