@@ -102,16 +102,16 @@
 				y = 2147483647
 
 			[client.gui.window.sideConfig]
-				x = -90
-				y = 7
+				x = -82
+				y = 39
 
 			[client.gui.window.transporterConfig]
 				x = 10
 				y = 15
 
 			[client.gui.window.upgrade]
-				x = 10
-				y = 15
+				x = -22
+				y = 25
 
 	#QIO Config
 	[client.qio]
