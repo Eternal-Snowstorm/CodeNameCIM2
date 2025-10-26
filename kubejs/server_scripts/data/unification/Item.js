@@ -1,4 +1,20 @@
 ServerEvents.highPriorityData((event) => {
+
+	let namespacePriority = {
+		"cmi": 1,
+		"thermal": 2,
+		"thermalconstruct": 3,
+		"thermalendergy": 4,
+		"thermal_extra": 5,
+		"create": 6,
+		"createdeco": 7,
+		"immersiveengineering": 8,
+		"mekanism": 9,
+		"vintageimprovements": 10,
+		"ae2": 11,
+		"ad_astra": 12
+	}
+
 	let materialType = [
 		"ingot",
 		"plate",

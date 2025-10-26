@@ -138,8 +138,6 @@ ServerEvents.blockLootTables((event) => {
 	addOreLoots.common("tungsten")
 	// 方铀
 	addOreLoots.common("uraninite")
-	// 铀
-	addOreLoots.alone("cmi:nether_uranium_ore", "immersiveengineering:raw_uranium")
 	// 钒
 	addOreLoots.alone("cmi:nether_vanadium_ore", "cmi:raw_vanadium")
 	// 磷酸铝
