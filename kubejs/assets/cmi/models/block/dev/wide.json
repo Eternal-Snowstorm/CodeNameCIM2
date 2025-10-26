@@ -1,6 +1,4 @@
 {
-	"format_version": "1.21.6",
-	"credit": "Made with Blockbench",
 	"render_type": "cutout",
 	"texture_size": [64, 64],
 	"textures": {
