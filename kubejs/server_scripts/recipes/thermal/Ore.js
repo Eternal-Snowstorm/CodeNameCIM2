@@ -2,9 +2,9 @@ ServerEvents.recipes((event) => {
 	let { create, createaddition, thermal } = event.recipes
 
 	create.compacting([
-		"cmi:blockstone_source_alpha",
-		"cmi:blockstone_source_beta",
-		"cmi:blockstone_source_gamma"
+		"cmi:blackstone_source_alpha",
+		"cmi:blackstone_source_beta",
+		"cmi:blackstone_source_gamma"
 	], [
 		"minecraft:blackstone"
 	]).superheated()
@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 		"cmi:enchanted_mechanism",
 		"cmi:amethested_ruby"
 	], [
-		"cmi:blockstone_source_alpha",
+		"cmi:blackstone_source_alpha",
 		"cmi:enchanted_mechanism"
 	]).superheated()
 
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem("cmi:crystal_ruby").loops(1)
 
 	create.deploying("cmi:source_sapphire", [
-		"cmi:blockstone_source_beta",
+		"cmi:blackstone_source_beta",
 		"cmi:cobalt_mechanism"
 	]).keepHeldItem()
 
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:molten_source_sapphire", 1000)
 	])
 	createaddition.charging("cmi:bombed_source_emeraid", [
-		"cmi:blockstone_source_gamma"
+		"cmi:blackstone_source_gamma"
 	]).energy(4000).maxChargeRate(1000)
 
 	thermal.crucible(Fluid.of("cmi:eletriced_source_emeraid", 1000), [

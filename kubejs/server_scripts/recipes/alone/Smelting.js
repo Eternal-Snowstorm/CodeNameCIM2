@@ -178,7 +178,7 @@ ServerEvents.recipes((event) => {
 		"inputs": [
 			{
 				"base_ingredient": {
-					"tag": "mekanism:shards/osmium"
+					"tag": "mekanism:clumps/osmium"
 				},
 				"count": 4
 			}
