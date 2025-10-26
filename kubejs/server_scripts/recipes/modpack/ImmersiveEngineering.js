@@ -7,19 +7,19 @@ ServerEvents.recipes((event) => {
 		"inputs": [
 			{
 				"base_ingredient": {
-					"item": "cmi:blockstone_source_alpha"
+					"item": "cmi:blackstone_source_alpha"
 				},
 				"count": 1
 			},
 			{
 				"base_ingredient": {
-					"item": "cmi:blockstone_source_beta"
+					"item": "cmi:blackstone_source_beta"
 				},
 				"count": 1
 			},
 			{
 				"base_ingredient": {
-					"item": "cmi:blockstone_source_gamma"
+					"item": "cmi:blackstone_source_gamma"
 				},
 				"count": 1
 			}

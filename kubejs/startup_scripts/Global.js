@@ -361,10 +361,10 @@ global.meltingLevels = {
 		"chromium",
 		"soul_infused",
 		"abyssal",
-		"amethyst_bronze"
+		"amethyst_bronze",
+		"tungsten_steel"
 	],
 	"above": [
-		"tungsten_steel",
 		"osmium",
 		"desh",
 		"tungsten",

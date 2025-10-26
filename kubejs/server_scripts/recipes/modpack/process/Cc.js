@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 		"#forge:chem_salts/calcium",
 		"#forge:chem_salts/potassium",
 		"#forge:chem_salts/tin",
-		"cmi:blockstone_source_gamma"
+		"cmi:blackstone_source_gamma"
 	])
 
 	kubejs.shapeless("6x cmi:stable_element", [
@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
 		"#forge:chem_salts/aluminum",
 		"#forge:chem_salts/nickel",
 		"#forge:chem_salts/iron",
-		"cmi:blockstone_source_beta"
+		"cmi:blackstone_source_beta"
 	])
 
 	kubejs.shapeless("6x cmi:explosive_element", [
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 		"#forge:chem_salts/chromium",
 		"#forge:chem_salts/lead",
 		"#forge:chem_salts/uranium",
-		"cmi:blockstone_source_alpha"
+		"cmi:blackstone_source_alpha"
 	])
 
 	thermal.smelter("3x create:chromatic_compound", [
