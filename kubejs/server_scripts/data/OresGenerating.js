@@ -63,10 +63,6 @@ ServerEvents.highPriorityData((event) => {
 	addOreGeneratingType("tungsten", "nether", 4)
 		.nether(4)
 
-	// 铀
-	addOreGeneratingType("uranium", "nether", 4)
-		.nether(4)
-
 	// 钒
 	addOreGeneratingType("vanadium", "nether", 9)
 		.nether(10)

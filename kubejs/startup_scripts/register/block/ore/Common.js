@@ -219,11 +219,6 @@ addOreBlock("vanadium", "iron", 5)
 	.appearance(0xFFFFFF, 1)
 	.nether()
 
-// 铀
-addOreBlock("uranium", "iron", 5)
-	.appearance(0x40B725, 6)
-	.nether()
-
 // 铬
 addOreBlock("chromium", "stone", 5)
 	.appearance(0xFFFFFF, 5)
