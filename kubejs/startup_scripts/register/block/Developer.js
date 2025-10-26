@@ -76,4 +76,7 @@ StartupEvents.registry("block", (event) => {
 	// hanhan
 	addDeveloperDoll("hanhan_ovo", "wide")
 
+	// dkrkoo_weihe
+	addDeveloperDoll("dkrkoo_weihe", "slim")
+
 })
