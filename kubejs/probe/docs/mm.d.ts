@@ -25,15 +25,15 @@ declare function getBuilderFor(
 interface MachineBuilder {
 	port(
 		portType: "item",
-		handle: (builder: ItemSlotsBuilder) => void
+		handler: (builder: ItemSlotsBuilder) => void
 	): MachineBuilder
 	port(
 		portType: "fluid",
-		handle: (builder: FluidSlotsBuilder) => void
+		handler: (builder: FluidSlotsBuilder) => void
 	): MachineBuilder
 	port(
 		portType: "energy",
-		handle: (builder: EnergySlotBuilder) => void
+		handler: (builder: EnergySlotBuilder) => void
 	): MachineBuilder
 }
 
