@@ -28,7 +28,7 @@
  * @returns {ItemSlotsBuilder | FluidSlotsBuilder | EnergySlotBuilder}
  */
 function getBuilderFor(portType, config) {
-	const builder = {}
+	let builder = {}
 
 	if (portType === "item" || portType === "fluid") {
 		builder.rows = (rowCount) => {
