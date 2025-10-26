@@ -1,5 +1,6 @@
 ServerEvents.highPriorityData((event) => {
 
+	// 设置命名空间优先级
 	let namespacePriority = {
 		"cmi": 1,
 		"thermal": 2,
@@ -12,9 +13,11 @@ ServerEvents.highPriorityData((event) => {
 		"mekanism": 9,
 		"vintageimprovements": 10,
 		"ae2": 11,
-		"ad_astra": 12
+		"ad_astra": 12,
+		"tconstruct": 13
 	}
 
+	// 录入所有金属材料类型
 	let materialType = [
 		"ingot",
 		"plate",
@@ -25,25 +28,40 @@ ServerEvents.highPriorityData((event) => {
 		"rod",
 		"wire"
 	]
+
+	// 遍历金属材料类型
 	materialType.forEach((type) => {
+
+		// 遍历金属类型
 		global.metalGroup.forEach((material) => {
+
+			// 设置好所需变量
 			let tag = `#forge:${type}s/${material}`
 			let ids = Ingredient.of(tag).getItemIds()
 			let currentNamespace
 			let outputId
-			let priorityValue = 13
+			let priorityValue = 14
+
 			if (ids.length > 0) {
+
+				// 遍历获取到的tag下每个物品的命名空间
 				for (let i = 0; i < ids.length; i++) {
 					currentNamespace = ResourceLocation.parse(ids[i]).getNamespace()
+
+					// 判定命名空间优先级并选择性输出优先级值最小的
 					if (namespacePriority[currentNamespace] <= priorityValue) {
 						outputId = ids[i]
 						priorityValue = namespacePriority[currentNamespace]
 					}
 				}
+
+				// 利用输出的物品id完成匹配tag的物品统一
 				addJsonFile(`${material}_${type}`, addUnification(
 					tag,
 					outputId
 				))
+
+				// 输出完成统一的信息
 				console.debug(`oei:replacements/${material}_${type}.json is generated!`)
 			}
 		})
@@ -51,46 +69,68 @@ ServerEvents.highPriorityData((event) => {
 
 	// 粗矿
 	global.metalGroup.forEach((material) => {
+
+		// 设置变量
 		let tag = `#forge:raw_materials/${material}`
 		let ids = Ingredient.of(tag).getItemIds()
 		let currentNamespace
 		let outputId
-		let priorityValue = 13
+		let priorityValue = 14
+
 		if (ids.length > 0) {
+
+			// 遍历获取到的tag下每个物品的命名空间
 			for (let i = 0; i < ids.length; i++) {
 				currentNamespace = ResourceLocation.parse(ids[i]).getNamespace()
+
+				// 判定命名空间优先级并选择性输出优先级值最小的
 				if (namespacePriority[currentNamespace] <= priorityValue) {
 					outputId = ids[i]
 					priorityValue = namespacePriority[currentNamespace]
 				}
 			}
+
+			// 利用输出的物品id完成匹配tag的物品统一
 			addJsonFile(`raw_${material}`, addUnification(
 				tag,
 				outputId
 			))
+
+			// 输出完成统一的信息
 			console.debug(`oei:replacements/raw_${material}.json is generated!`)
 		}
 	})
 
 	// 粗矿块
 	global.metalGroup.forEach((material) => {
+
+		// 设置变量
 		let tag = `#forge:storage_blocks/raw_${material}`
 		let ids = Ingredient.of(tag).getItemIds()
 		let currentNamespace
 		let outputId
-		let priorityValue = 13
+		let priorityValue = 14
+
 		if (ids.length > 0) {
+
+			// 遍历获取到的tag下每个物品的命名空间
 			for (let i = 0; i < ids.length; i++) {
 				currentNamespace = ResourceLocation.parse(ids[i]).getNamespace()
+
+				// 判定命名空间优先级并选择性输出优先级值最小的
 				if (namespacePriority[currentNamespace] <= priorityValue) {
 					outputId = ids[i]
 					priorityValue = namespacePriority[currentNamespace]
 				}
 			}
+
+			// 利用输出的物品id完成匹配tag的物品统一
 			addJsonFile(`raw_${material}_block`, addUnification(
 				tag,
 				ids[0]
 			))
+
+			// 输出完成统一的信息
 			console.debug(`oei:replacements/raw_${material}_block.json is generated!`)
 		}
 	})
