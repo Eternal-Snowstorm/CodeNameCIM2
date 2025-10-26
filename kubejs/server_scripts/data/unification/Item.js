@@ -29,10 +29,20 @@ ServerEvents.highPriorityData((event) => {
 		global.metalGroup.forEach((material) => {
 			let tag = `#forge:${type}s/${material}`
 			let ids = Ingredient.of(tag).getItemIds()
+			let currentNamespace
+			let outputId
+			let priorityValue = 13
 			if (ids.length > 0) {
+				for (let i = 0; i < ids.length; i++) {
+					currentNamespace = ResourceLocation.parse(ids[i]).getNamespace()
+					if (namespacePriority[currentNamespace] <= priorityValue) {
+						outputId = ids[i]
+						priorityValue = namespacePriority[currentNamespace]
+					}
+				}
 				addJsonFile(`${material}_${type}`, addUnification(
 					tag,
-					ids[0]
+					outputId
 				))
 				console.debug(`oei:replacements/${material}_${type}.json is generated!`)
 			}
@@ -43,10 +53,20 @@ ServerEvents.highPriorityData((event) => {
 	global.metalGroup.forEach((material) => {
 		let tag = `#forge:raw_materials/${material}`
 		let ids = Ingredient.of(tag).getItemIds()
+		let currentNamespace
+		let outputId
+		let priorityValue = 13
 		if (ids.length > 0) {
+			for (let i = 0; i < ids.length; i++) {
+				currentNamespace = ResourceLocation.parse(ids[i]).getNamespace()
+				if (namespacePriority[currentNamespace] <= priorityValue) {
+					outputId = ids[i]
+					priorityValue = namespacePriority[currentNamespace]
+				}
+			}
 			addJsonFile(`raw_${material}`, addUnification(
 				tag,
-				ids[0]
+				outputId
 			))
 			console.debug(`oei:replacements/raw_${material}.json is generated!`)
 		}
@@ -56,7 +76,17 @@ ServerEvents.highPriorityData((event) => {
 	global.metalGroup.forEach((material) => {
 		let tag = `#forge:storage_blocks/raw_${material}`
 		let ids = Ingredient.of(tag).getItemIds()
+		let currentNamespace
+		let outputId
+		let priorityValue = 13
 		if (ids.length > 0) {
+			for (let i = 0; i < ids.length; i++) {
+				currentNamespace = ResourceLocation.parse(ids[i]).getNamespace()
+				if (namespacePriority[currentNamespace] <= priorityValue) {
+					outputId = ids[i]
+					priorityValue = namespacePriority[currentNamespace]
+				}
+			}
 			addJsonFile(`raw_${material}_block`, addUnification(
 				tag,
 				ids[0]
