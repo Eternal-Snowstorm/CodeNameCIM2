@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "ad_astra:oxygen_loading",
 		"cookingtime": 1,
-		"energy": 30,
+		"energy": 1,
 		"input": {
 			"ingredient": {
 				"tag": "forge:oxygen"

@@ -237,10 +237,10 @@ global.meltingPoints = {
 	"potassium": 64,
 	"calcium": 842,
 	"etrium": 1486, //null
-	"azure_neodymium": 1145, // null 占位
-	"scarlet_neodymium": 1145, // null 占位
-	"shadow_steel": 1145, // null 占位
-	"refined_radiance": 1145, // null 占位
+	"azure_neodymium": 1024, // null
+	"scarlet_neodymium": 1024, // null
+	"shadow_steel": 2106, // null
+	"refined_radiance": 2106, // null
 }
 // 命名空间
 global.materialNamespace = {
@@ -331,7 +331,7 @@ global.meltingLevels = {
 		"hepatizon",
 		"electrum",
 		"gold",
-		"copper"
+		"copper",
 	],
 	1500: [
 		"uranium",
@@ -354,7 +354,9 @@ global.meltingLevels = {
 		"cinderslime",
 		"stainless_steel",
 		"iron",
-		"etrium"
+		"etrium",
+		"azure_neodymium",
+		"scarlet_neodymium",
 	],
 	2000: [
 		"manyullyn",
@@ -377,7 +379,9 @@ global.meltingLevels = {
 		"ostrum",
 		"calorite",
 		"netherite",
-		"dragonsteel"
+		"dragonsteel",
+		"shadow_steel",
+		"refined_radiance"
 	]
 }
 // 燃料列表
