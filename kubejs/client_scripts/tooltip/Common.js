@@ -20,7 +20,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("#cmi:multiblock_machine_controller")
 	addCommonTooltip("cmi:stone_plate")
 	addCommonTooltip("cmi:creosote_wood_chip_briquette")
-	addCommonTooltip("mm:large_steam_boiler")
+	// addCommonTooltip("mm:large_steam_boiler")
 	addCommonTooltip("#forge:ingots/siltsteel")
 	addCommonTooltip("cmi:plasma_faucet")
 	addCommonTooltip("tconstruct:seared_heater")

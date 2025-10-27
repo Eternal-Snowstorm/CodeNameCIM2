@@ -366,7 +366,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("thermal_extra:diesel", "§c此液体废弃, 无法合成! ")
 	addCommonTooltipLanguage("createaddition:seed_oil", "§c此液体废弃, 无法合成! ")
 	addCommonTooltipLanguage("cmi:creosote_wood_chip_briquette", "能吃哦")
-	addCommonTooltipLanguage("mm:large_steam_boiler", "§c只能使用焦煤或钻石作为燃料")
+	// addCommonTooltipLanguage("mm:large_steam_boiler", "§c只能使用焦煤或钻石作为燃料")
 	addCommonTooltipLanguage("#forge:ingots/siltsteel", "自浑浊淤泥中升华, 历经繁复萃取与催化精炼, 终获此一泓清冽碧波")
 	addCommonTooltipLanguage("cmi:plasma_faucet", "§c所以你的意思是...你就拿等离子锭做了这个?")
 	addCommonTooltipLanguage("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
