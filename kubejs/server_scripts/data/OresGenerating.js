@@ -4,8 +4,8 @@ ServerEvents.highPriorityData((event) => {
 		.overworld(2)
 
 	// 银
-	addOreGeneratingType("silver", "moon", 4)
-		.moon(4)
+	addOreGeneratingType("silver", "moon", 8)
+		.moon(7)
 
 	// 埃忒恩
 	addOreGeneratingType("etrium", "overworld", 4)
@@ -40,8 +40,8 @@ ServerEvents.highPriorityData((event) => {
 		.mars(4)
 
 	// 钴
-	addOreGeneratingType("cobalt", "moon", 4)
-		.moon(4)
+	addOreGeneratingType("cobalt", "moon", 6)
+		.moon(5)
 
 	// 铱锇
 	addOreGeneratingType("osmiridium", "moon", 4)
@@ -80,7 +80,6 @@ ServerEvents.highPriorityData((event) => {
 	 * @returns 
 	 */
 	function addOreGeneratingType(name, type, size) {
-
 		// 矿物类型
 		let oreType = {
 			"overworld": "",
