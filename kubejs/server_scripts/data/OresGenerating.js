@@ -74,7 +74,7 @@ ServerEvents.highPriorityData((event) => {
 	/**
 	 * 
 	 * @param {String} name 矿物ID
-	 * @param {String} dimention 生成维度
+	 * @param {"overworld" | "nether" | "end" | "moon" | "mars"} type 生成维度
 	 * @param {Number} size 矿簇体积
 	 * @param {Number} count 矿簇数量(单个区块)
 	 * @returns 
