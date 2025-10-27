@@ -3,6 +3,10 @@ ServerEvents.highPriorityData((event) => {
 	addOreGeneratingType("certus_quartz", "overworld", 5)
 		.overworld(2)
 
+	// 银
+	addOreGeneratingType("silver", "moon", 4)
+		.moon(4)
+
 	// 埃忒恩
 	addOreGeneratingType("etrium", "overworld", 4)
 		.overworld(4)
