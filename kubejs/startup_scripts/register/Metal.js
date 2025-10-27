@@ -328,6 +328,16 @@ addMaterial("tungsten_steel", 0x82998C, "diamond")
 	.gear()
 	.dust()
 
+// 暗影钢
+addMaterial("shadow_steel", 0x383040, "diamond")
+	.nugget()
+	.molten()
+
+// 光辉石
+addMaterial("refined_radiance", 0xE8E8F8, "diamond")
+	.nugget()
+	.molten()
+
 // 戴斯
 addMaterial("desh", 0xD38B4C, "wooden")
 	.molten()

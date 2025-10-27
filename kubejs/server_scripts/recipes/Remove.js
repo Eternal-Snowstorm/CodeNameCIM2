@@ -7,6 +7,7 @@ ServerEvents.recipes((event) => {
 		"thermal:machines/press/unpacking/press_blue_ice_unpacking",
 		"thermal:machines/press/packing3x3/press_packed_ice_packing",
 		"thermal:machines/press/packing3x3/press_blue_ice_packing",
+		"vintageimprovements:craft/sulfur_block_to_items",
 		"minecraft:packed_ice",
 		"minecraft:blue_ice",
 		"create:mixing/andesite_alloy_from_zinc",

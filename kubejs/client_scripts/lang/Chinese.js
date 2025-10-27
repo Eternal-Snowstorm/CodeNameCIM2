@@ -224,6 +224,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("tungsten_steel", "钨钢")
 	addMaterialLanguage("scarlet_neodymium", "赤铷合金")
 	addMaterialLanguage("azure_neodymium", "青铷合金")
+	addMaterialLanguage("shadow_steel", "暗影钢")
+	addMaterialLanguage("refined_radiance", "光辉石")
 
 	addMaterialLanguage("pyrite", "黄铁")
 	addMaterialLanguage("lateritic_nickel", "红镍")
@@ -700,3 +702,4 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`structure.${global.namespace}.${key}`, value)
 	}
 })
+
