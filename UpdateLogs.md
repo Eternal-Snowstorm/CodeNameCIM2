@@ -693,14 +693,16 @@
 	- `森罗物语：厨房`
 	- `Citadel`
 	- `Alex的洞穴`
-  - `OreUI For Everyone`资源包
+	- `OreUI For Everyone`资源包
 
 ### 删除内容
  - 宝宝生物
  - **Mods**
-   - `Just Enough Resources`
-   - `月光库`
-   - `锦致装饰`
-   - `Amendments`
+   	- `Just Enough Resources`
+   	- `月光库`
+   	- `锦致装饰`
+   	- `Amendments`
+   	- `Oculus`
+   	- `Oculus Flywheel Compat`
 
 </font>	
