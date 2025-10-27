@@ -64,4 +64,4 @@ interface OreBlock {
 // 材料管理函数
 type RegisterMetalMaterial = (name: string, color: Color, level: MiningLevel) => Material
 // 矿石函数
-type OreBlockRegister = (name: string, color: Color, level: MiningLevel, hardness: number) => OreBlock
+type OreBlockRegister = (name: string, level: MiningLevel, level: MiningLevel, hardness: number) => OreBlock

@@ -57,5 +57,8 @@ const MATERIALS_COLOR: Coloring = {
 	queens_slime: 0xB85700,
 	manyullyn: 0x8058B8,
 	hepatizon: 0x483050,
-	etrium: 0x32FFD4
+	etrium: 0x32FFD4,
+	tungsten: 0x82998C,
+	scarlet_neodymium: 0xB91919,
+	azure_neodymium: 0x1936B9
 }
