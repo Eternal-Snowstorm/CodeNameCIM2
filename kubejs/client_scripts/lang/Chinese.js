@@ -142,8 +142,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLanguage("dont_kill_belalus", "音乐-DontkillBelalus")
 	addBlockLanguage("qicaijie", "内测服维护-亓才孑")
 	addBlockLanguage("dkrkoo_weihe", "吉祥物-dkrkoo为何")
-	addBlockLanguage("117458866249","程序-117458866249")
-	addBlockLanguage("sakura_star_cn","仓库协管-MF.")
+	addBlockLanguage("117458866249", "程序-117458866249")
+	addBlockLanguage("sakura_star_cn", "仓库协管-MF.")
 
 	addCastItemLanguage("mechanism", "构件")
 	addCastItemLanguage("nugget", "粒")
