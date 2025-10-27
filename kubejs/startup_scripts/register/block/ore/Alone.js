@@ -126,3 +126,7 @@ addAloneOreBlock("cobalt", "iron", 10)
 addAloneOreBlock("certus_quartz", "iron", 3)
 	.stone()
 	.deepslate()
+
+// 银
+addAloneOreBlock("silver", "iron", 3)
+	.moon()
