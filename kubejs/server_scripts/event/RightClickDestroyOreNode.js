@@ -1,10 +1,11 @@
 BlockEvents.rightClicked((event) => {
 	let { level, player, block, item } = event
 
-	const PICKAXE = player.mainHandItem.hasTag("minecraft:pickaxes")
+	const PICKAXE = player.offHandItem.hasTag("minecraft:pickaxes")
+	const SNEAK = player.isCrouching()
 	const ORE_NODE = block.hasTag("deepdrilling:ore_nodes")
 
-	if (PICKAXE && ORE_NODE) {
+	if (PICKAXE && SNEAK && ORE_NODE) {
 		player.swing()
 
 		if (!player.isCreative()) {
