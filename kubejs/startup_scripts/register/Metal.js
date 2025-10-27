@@ -317,6 +317,42 @@ addMaterial("tungsten", 0x5A6C7E, "nether")
 	.rod()
 	.block()
 
+// 钨钢
+addMaterial("tungsten_steel", 0x82998C, "diamond")
+	.ingot()
+	.nugget()
+	.plate()
+	.block()
+	.molten()
+	.rod()
+	.gear()
+	.dust()
+
+// 戴斯
+addMaterial("desh", 0xD38B4C, "wooden")
+	.molten()
+	.dust()
+
+// 紫金
+addMaterial("ostrum", 0xA66B72, "wooden")
+	.molten()
+	.dust()
+
+// 耐热金属
+addMaterial("calorite", 0xC94D4E, "wooden")
+	.molten()
+	.dust()
+
+// 赤铷合金
+addMaterial("scarlet_neodymium", 0xB91919, "stone")
+	.dust()
+	.molten()
+
+// 青铷合金
+addMaterial("azure_neodymium", 0x1936B9, "stone")
+	.dust()
+	.molten()
+
 // MEK中间产物
 // 锌
 addMaterial("zinc", 0xA8C0A0, "stone")
@@ -359,39 +395,3 @@ addMaterial("cobalt", 0x0098FF, "iron")
 	.crystal()
 	.slurry()
 	.dirtySlurry()
-
-// 钨钢
-addMaterial("tungsten_steel", 0x82998C, "diamond")
-	.ingot()
-	.nugget()
-	.plate()
-	.block()
-	.molten()
-	.rod()
-	.gear()
-	.dust()
-
-// 戴斯
-addMaterial("desh", 0xD38B4C, "wooden")
-	.molten()
-	.dust()
-
-// 紫金
-addMaterial("ostrum", 0xA66B72, "wooden")
-	.molten()
-	.dust()
-
-// 耐热金属
-addMaterial("calorite", 0xC94D4E, "wooden")
-	.molten()
-	.dust()
-
-// 赤铷合金
-addMaterial("scarlet_neodymium", 0xB91919, "stone")
-	.dust()
-	.molten()
-
-// 青铷合金
-addMaterial("azure_neodymium", 0x1936B9, "stone")
-	.dust()
-	.molten()
