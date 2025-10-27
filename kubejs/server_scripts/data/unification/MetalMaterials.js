@@ -1,8 +1,8 @@
 ServerEvents.highPriorityData((event) => {
 	/**
- * 设置命名空间优先级
- * 越往前的命名空间优先级越高
- */
+	 * 设置命名空间优先级
+	 * 越往前的命名空间优先级越高
+	 */
 	let namespacePriority = [
 		"cmi",
 		"thermal",
