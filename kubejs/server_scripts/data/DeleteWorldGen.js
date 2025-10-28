@@ -1,6 +1,6 @@
 ServerEvents.highPriorityData((event) => {
-	function deleteGen(namespace, path) {
-		event.addJson(`${namespace}:worldgen/structure/${path}`, {
+	function deleteStructureGen(namespace, name) {
+		event.addJson(`${namespace}:worldgen/structure/${name}`, {
 			type: "minecraft:jigsaw",
 			biomes: [],
 			size: 1,
@@ -17,13 +17,34 @@ ServerEvents.highPriorityData((event) => {
 		})
 	}
 
-	deleteGen("ad_astra", "oil_well")
-	deleteGen("deepdrilling", "copper_node")
-	deleteGen("deepdrilling", "gold_node")
-	deleteGen("deepdrilling", "iron_node")
-	deleteGen("deepdrilling", "zinc_node")
-	deleteGen("deepdrilling", "asurine_node")
-	deleteGen("deepdrilling", "crimsite_node")
-	deleteGen("deepdrilling", "ochrum_node")
-	deleteGen("deepdrilling", "veridium_node")
+	function deleteFeatureGen(namespace, name) {
+		event.addJson(`${namespace}:worldgen/configured_feature/${name}`, {
+			type: "minecraft:ore",
+			config: {
+				discard_chance_on_air_exposure: 0.0,
+				size: 0,
+				targets: []
+			}
+		})
+	}
+
+	deleteStructureGen("ad_astra", "oil_well")
+	deleteStructureGen("deepdrilling", "copper_node")
+	deleteStructureGen("deepdrilling", "gold_node")
+	deleteStructureGen("deepdrilling", "iron_node")
+	deleteStructureGen("deepdrilling", "zinc_node")
+	deleteStructureGen("deepdrilling", "asurine_node")
+	deleteStructureGen("deepdrilling", "crimsite_node")
+	deleteStructureGen("deepdrilling", "ochrum_node")
+	deleteStructureGen("deepdrilling", "veridium_node")
+
+	deleteFeatureGen("immersiveengineering", "uranium")
+	deleteFeatureGen("immersiveengineering", "nickel")
+	deleteFeatureGen("immersiveengineering", "silver")
+	deleteFeatureGen("immersiveengineering", "deep_nickel")
+	deleteFeatureGen("immersiveengineering", "lead")
+	deleteFeatureGen("mekanism", "ore_uranium_small")
+	deleteFeatureGen("mekanism", "ore_uranium_small_retrogen")
+	deleteFeatureGen("mekanism", "ore_uranium_buried")
+	deleteFeatureGen("mekanism", "ore_uranium_buried_retrogen")
 })

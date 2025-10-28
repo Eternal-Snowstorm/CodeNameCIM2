@@ -1,5 +1,6 @@
 WorldgenEvents.remove((event) => {
 	event.removeFeatureById("underground_decoration", [
+		"ad_astra:oil_well",
 		"deepdrilling:asurine_node",
 		"deepdrilling:copper_node",
 		"deepdrilling:crimsite_node",

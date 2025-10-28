@@ -24,6 +24,7 @@ ServerEvents.recipes((event) => {
 	addCrushedSplashing("ostrum", "mekanism:salt")
 	addCrushedSplashing("calorite", "mekanism:dust_coal")
 	addCrushedSplashing("etrium", "ae2:certus_quartz_dust")
+	addCrushedSplashing("tungsten", "cmi:lime_dust")
 
 	function addCrushedSplashing(material, product) {
 		let crushed = `#create:crushed_raw_materials/${material}`
