@@ -1,9 +1,5 @@
 [
 	{
-		"filename": ".connector",
-		"name": ".connector"
-	},
-	{
 		"filename": "skinlayers3d-forge-1.9.0-mc1.20.1.jar",
 		"name": "3d-Skin-Layers",
 		"version": "1.9.0"
