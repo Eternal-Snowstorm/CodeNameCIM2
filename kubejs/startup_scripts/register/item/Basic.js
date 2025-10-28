@@ -562,8 +562,6 @@ StartupEvents.registry("item", (event) => {
 			.tag("create:incomplete_large_cogwheels")
 	})
 
-
-
 	let casingFrame = [
 		"andesite",
 		"brass",
