@@ -76,6 +76,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_bronze_large_cogwheel", "青铜大齿轮(半成品)")
 	addItemLanguage("incomplete_cast_iron_large_cogwheel", "铸铁大齿轮(半成品)")
 	addItemLanguage("incomplete_steel_large_cogwheel", "钢大齿轮(半成品)")
+	addItemLanguage("incomplete_aviation_cell", "航天硬盘(半成品)")
 
 	addItemLanguage("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLanguage("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")
@@ -89,7 +90,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_computer_component", "计算机组件(半成品)")
 	addItemLanguage("incomplete_scanning_module", "扫描模块(半成品)")
 	addItemLanguage("incomplete_scanner", "扫描器(半成品)")
-	addItemLanguage("incomplete_cell", "硬盘外壳")
 
 	addItemLanguage("infusion_treated_processor", "经灌注处理的逻辑处理器")
 	addItemLanguage("enrichment_treated_processor", "经富集处理的运算处理器")
