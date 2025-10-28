@@ -23,11 +23,11 @@ EntityEvents.hurt((event) => {
 PlayerEvents.tick((event) => {
 	let { player } = event
 
-	let playerUuid = player.getStringUuid()
+	let getPlayerUUID = player.getUuid().toString()
 
-	if (pendingAttackTimeMap[playerUuid]) {
-		comboTimerMap[playerUuid] = pendingAttackTimeMap[playerUuid]
-		delete pendingAttackTimeMap[playerUuid]
+	if (pendingAttackTimeMap[getPlayerUUID]) {
+		comboTimerMap[getPlayerUUID] = pendingAttackTimeMap[getPlayerUUID]
+		delete pendingAttackTimeMap[getPlayerUUID]
 	}
 })
 
