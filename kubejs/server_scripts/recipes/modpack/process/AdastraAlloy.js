@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
         "energy": 20,
         "ingredients": [
             Ingredient.of("#forge:desh/raw").toJson(),
-            Ingredient.of("#forge:ingots/cobalt").toJson()
+            Ingredient.of("#forge:ingots/aluminum").toJson()
         ],
         "result": {
             "count": 1,

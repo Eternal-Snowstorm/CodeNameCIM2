@@ -1,4 +1,21 @@
 ServerEvents.highPriorityData((event) => {
+
+	event.addJson(`cmi:worldgen/template_pool/dev/blank`, {
+		name: `${global.namespace}:dev/blank`,
+		fallback: "minecraft:empty",
+		elements: [
+			{
+				weight: 1,
+				element: {
+					location: "cmi:dev/blank",
+					element_type: "minecraft:single_pool_element",
+					processors: "minecraft:empty",
+					projection: "rigid"
+				}
+			}
+		]
+	})
+
 	function deleteStructureGen(namespace, name) {
 		event.addJson(`${namespace}:worldgen/structure/${name}`, {
 			type: "minecraft:jigsaw",
@@ -22,7 +39,7 @@ ServerEvents.highPriorityData((event) => {
 			type: "minecraft:ore",
 			config: {
 				discard_chance_on_air_exposure: 0.0,
-				size: 0,
+				size: 1,
 				targets: []
 			}
 		})
