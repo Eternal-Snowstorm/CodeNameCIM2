@@ -2,9 +2,9 @@ ServerEvents.recipes((event) => {
 	let { tconstruct } = event.recipes
 
 	let castingMechanismMaterials = [
-		["tconstruct:molten_iron", "cmi:crafting_incomplete_iron_mechanism"],
+		["tconstruct:molten_iron", "cmi:iron_mechanism_basement"],
 		//["tconstruct:molten_gold", "cmi:incomplete_gold_mechanism"],
-		["tconstruct:molten_copper", "cmi:crafting_incomplete_copper_mechanism"],
+		["tconstruct:molten_copper", "cmi:copper_mechanism_basement"],
 		//["cmi:molten_andesite_alloy", "cmi:incomplete_andesite_mechanism"]
 	]
 	castingMechanismMaterials.forEach(([input, output]) => {
@@ -85,7 +85,7 @@ ServerEvents.recipes((event) => {
 
 	barTypes.forEach((type) => {
 		tconstruct.casting_table(`createdeco:${type}_bars`)
-			.fluid(Fluid.of(IngredientUtils.getFirstFluidId(`tconstruct:molten_${type}`), 30))
+			.fluid(Fluid.of(IngredUtils.getFirstFluidId(`tconstruct:molten_${type}`), 30))
 			.cooling_time(35)
 	})
 })

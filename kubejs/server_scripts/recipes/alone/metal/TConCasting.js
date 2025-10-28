@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { thermal, tconstruct } = event.recipes
 
 	global.metalGroup.forEach((metal) => {
-		let fluid = IngredientUtils.getFirstFluidId(`forge:molten_${metal}`)
+		let fluid = IngredUtils.getFirstFluidId(`forge:molten_${metal}`)
 
 		if (fluid === null) {
 			console.warn(`No molten metal found for ${metal}!`)
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 			"thermal:chiller_ingot_cast"
 		]).energy(4800)
 
-		if (IngredientUtils.isNotNull(NUGGET)) {
+		if (IngredUtils.isNotNull(NUGGET)) {
 			tconstruct.casting_table(NUGGET)
 				.cast(`${MULTI_USE_CAST}/nugget`)
 				.fluid(Fluid.of(fluid, 10))
@@ -56,7 +56,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No nugget found for ${metal}!`)
 		}
 
-		if (IngredientUtils.isNotNull(BLOCK)) {
+		if (IngredUtils.isNotNull(BLOCK)) {
 			tconstruct.casting_basin(BLOCK)
 				.fluid(Fluid.of(fluid, 810))
 				.cooling_time(20 * 9)
@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No storage block found for ${metal}!`)
 		}
 
-		if (IngredientUtils.isNotNull(PLATE)) {
+		if (IngredUtils.isNotNull(PLATE)) {
 			tconstruct.casting_table(PLATE)
 				.cast(`${MULTI_USE_CAST}/plate`)
 				.fluid(Fluid.of(fluid, 90))
@@ -84,7 +84,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No plate found for ${metal}!`)
 		}
 
-		if (IngredientUtils.isNotNull(ROD)) {
+		if (IngredUtils.isNotNull(ROD)) {
 			tconstruct.casting_table(ROD)
 				.cast(`${MULTI_USE_CAST}/rod`)
 				.fluid(Fluid.of(fluid, 45))
@@ -104,7 +104,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No rod found for ${metal}!`)
 		}
 
-		if (IngredientUtils.isNotNull(GEAR)) {
+		if (IngredUtils.isNotNull(GEAR)) {
 			tconstruct.casting_table(GEAR)
 				.cast(`${MULTI_USE_CAST}/gear`)
 				.fluid(Fluid.of(fluid, 360))
@@ -124,7 +124,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No gear found for ${metal}!`)
 		}
 
-		if (IngredientUtils.isNotNull(COIN)) {
+		if (IngredUtils.isNotNull(COIN)) {
 			tconstruct.casting_table(COIN)
 				.cast(`${MULTI_USE_CAST}/coin`)
 				.fluid(Fluid.of(fluid, 30))

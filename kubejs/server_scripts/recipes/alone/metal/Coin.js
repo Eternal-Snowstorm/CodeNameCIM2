@@ -6,12 +6,12 @@ ServerEvents.recipes((event) => {
 		const NUGGET = `#forge:nuggets/${metal}`
 		const COIN = `#forge:coins/${metal}`
 
-		if (IngredientUtils.isNotNull(COIN)) {
+		if (IngredUtils.isNotNull(COIN)) {
 			thermal.press(`3x ${COIN}`, [
 				INGOT,
 				"thermal:press_coin_die"
 			])
-			if (IngredientUtils.isNotNull(NUGGET)) {
+			if (IngredUtils.isNotNull(NUGGET)) {
 				thermal.press(COIN, [
 					`3x ${NUGGET}`,
 					"thermal:press_coin_die"

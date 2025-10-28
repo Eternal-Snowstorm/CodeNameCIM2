@@ -22,8 +22,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("source_sapphire", "蓝源晶")
 	addItemLanguage("bombed_source_emeraid", "爆裂源质")
 	addItemLanguage("sludge_extract", "淤泥提取物")
-	addItemLanguage("crafting_incomplete_iron_mechanism", "铁构件底座")
-	addItemLanguage("crafting_incomplete_copper_mechanism", "铜构件底座")
 	addItemLanguage("wood_chip_briquette", "木屑块")
 	addItemLanguage("compressed_wood_chip_briquette", "压缩木屑块")
 	addItemLanguage("densely_packed_wood_chip_briquette", "致密压缩木屑块")
@@ -226,6 +224,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("azure_neodymium", "青铷合金")
 	addMaterialLanguage("shadow_steel", "暗影钢")
 	addMaterialLanguage("refined_radiance", "光辉石")
+	addMaterialLanguage("etrium", "埃忒恩")
 
 	addMaterialLanguage("pyrite", "黄铁")
 	addMaterialLanguage("lateritic_nickel", "红镍")
@@ -237,7 +236,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLanguage("osmiridium", "铱锇")
 	addMaterialLanguage("uraninite", "方铀")
 	addMaterialLanguage("argentite", "辉银")
-	addMaterialLanguage("etrium", "埃忒恩")
 
 	addMachineLanguage("flash_disk_writer", "闪存盘写入器")
 	addMachineLanguage("chemical_gas_extractor", "化学气体抽取器")
@@ -518,6 +516,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		addFlashDriveLanguage(material, name)
 		addMechanismLanguage(material, name)
 		addMechanismMachineLanguage(material, name)
+		addCraftingIncompleteLanguage(material, name)
 	})
 
 	let randomMechanismGroup = [
@@ -557,6 +556,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addMechanismLanguage(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism`, `${value}构件`)
 		event.add(`item.${global.namespace}.incomplete_${material}_mechanism`, `${value}构件(半成品)`)
+	}
+
+	function addCraftingIncompleteLanguage(material, value) {
+		event.add(`item.${global.namespace}.${material}_mechanism_basement`, `${value}构件底座`)
 	}
 
 	function addMechanismMachineLanguage(material, value) {
@@ -702,4 +705,3 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`structure.${global.namespace}.${key}`, value)
 	}
 })
-

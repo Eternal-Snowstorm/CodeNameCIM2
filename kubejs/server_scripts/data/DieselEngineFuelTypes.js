@@ -48,7 +48,7 @@ ServerEvents.highPriorityData((event) => {
 	 * @returns 
 	 */
 	function addDieselEngineFuelType(name, speed) {
-		let getFluidName = IngredientUtils.getPath(name)
+		let getFluidName = IngredUtils.getPath(name)
 
 		let data = {
 			fluid: name,

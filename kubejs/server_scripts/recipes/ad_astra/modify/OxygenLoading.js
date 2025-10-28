@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 			"millibuckets": 25
 		},
 		"result": {
-			"fluid": IngredientUtils.getFirstFluidId("forge:oxygen"),
+			"fluid": IngredUtils.getFirstFluidId("forge:oxygen"),
 			"millibuckets": 25
 		}
 	}).id("ad_astra:oxygen_loading/oxygen_from_oxygen_loading_oxygen")

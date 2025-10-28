@@ -62,8 +62,8 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 			.concat(Ingredient.of("#cmi:mechanism_parts").itemIds)
 			.concat(Ingredient.of("#cmi:mechanism_flash_drives").itemIds)
 			.concat(Ingredient.of("#cmi:machine_block").itemIds)
-			.concat("cmi:crafting_incomplete_iron_mechanism")
-			.concat("cmi:crafting_incomplete_copper_mechanism")
+			.concat("cmi:iron_mechanism_basement")
+			.concat("cmi:copper_mechanism_basement")
 		)
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.mechanisms`))
 

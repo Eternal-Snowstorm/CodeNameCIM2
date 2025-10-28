@@ -1,16 +1,14 @@
 ServerEvents.recipes((event) => {
 	let { immersiveengineering } = event.recipes
 
-	immersiveengineering.blueprint(
-		"4x immersiveengineering:casull", [
+	immersiveengineering.blueprint("4x immersiveengineering:casull", [
 		"2x cmi:nitrocellulose",
 		"2x #forge:nuggets/lead",
 		"4x immersiveengineering:empty_casing"
 	]).blueprint("bullet")
 		.id("immersiveengineering:blueprint/bullet_casull")
 
-	immersiveengineering.blueprint(
-		"4x immersiveengineering:silver", [
+	immersiveengineering.blueprint("4x immersiveengineering:silver", [
 		"2x cmi:nitrocellulose",
 		"4x immersiveengineering:empty_casing",
 		"2x #forge:nuggets/lead",
@@ -18,8 +16,7 @@ ServerEvents.recipes((event) => {
 	]).blueprint("bullet")
 		.id("immersiveengineering:blueprint/bullet_silver")
 
-	immersiveengineering.blueprint(
-		"4x immersiveengineering:armor_piercing", [
+	immersiveengineering.blueprint("4x immersiveengineering:armor_piercing", [
 		"2x cmi:nitrocellulose",
 		"4x immersiveengineering:empty_casing",
 		"2x #forge:nuggets/steel",
@@ -27,16 +24,14 @@ ServerEvents.recipes((event) => {
 	]).blueprint("bullet")
 		.id("immersiveengineering:blueprint/bullet_armorpiercing")
 
-	immersiveengineering.blueprint(
-		"4x immersiveengineering:buckshot", [
+	immersiveengineering.blueprint("4x immersiveengineering:buckshot", [
 		"2x cmi:nitrocellulose",
 		"4x immersiveengineering:empty_shell",
 		"2x #forge:dusts/steel"
 	]).blueprint("bullet")
 		.id("immersiveengineering:blueprint/bullet_buckshot")
 
-	immersiveengineering.blueprint(
-		"4x immersiveengineering:homing", [
+	immersiveengineering.blueprint("4x immersiveengineering:homing", [
 		"2x cmi:nitrocellulose",
 		"4x immersiveengineering:empty_casing",
 		"2x #forge:nuggets/lead",
@@ -44,16 +39,14 @@ ServerEvents.recipes((event) => {
 	]).blueprint("specialBullet")
 		.id("immersiveengineering:blueprint/bullet_homing")
 
-	immersiveengineering.blueprint(
-		"4x immersiveengineering:dragons_breath", [
+	immersiveengineering.blueprint("4x immersiveengineering:dragons_breath", [
 		"2x cmi:nitrocellulose",
 		"4x immersiveengineering:empty_shell",
 		"4x #forge:dusts/aluminum"
 	]).blueprint("specialBullet")
 		.id("immersiveengineering:blueprint/bullet_dragonsbreath")
 
-	immersiveengineering.blueprint(
-		"immersiveengineering:wolfpack", [
+	immersiveengineering.blueprint("immersiveengineering:wolfpack", [
 		"cmi:nitrocellulose",
 		"immersiveengineering:empty_shell",
 		"6x tconstruct:quartz_shuriken",
@@ -61,19 +54,33 @@ ServerEvents.recipes((event) => {
 	]).blueprint("specialBullet")
 		.id("immersiveengineering:blueprint/bullet_wolfpack")
 
-	immersiveengineering.blueprint(
-		"immersiveengineering:he", [
+	immersiveengineering.blueprint("immersiveengineering:he", [
 		"cmi:nitrocellulose",
 		"immersiveengineering:empty_casing",
 		"thermal:explosive_grenade"
 	]).blueprint("specialBullet")
 		.id("immersiveengineering:blueprint/bullet_explosive")
 
-	immersiveengineering.blueprint(
-		"immersiveengineering:potion", [
+	immersiveengineering.blueprint("immersiveengineering:potion", [
 		"cmi:nitrocellulose",
 		"immersiveengineering:empty_casing",
 		"minecraft:glass_bottle"
 	]).blueprint("specialBullet")
 		.id("immersiveengineering:blueprint/bullet_potion")
+
+	addMechanismBasementsRecipes("cmi:tier_1_aviation_mechanism_basement", [
+		"#forge:plates/tungsten_steel",
+		"#forge:circuits/basic",
+		"#forge:plates/etrium"
+	])
+
+	/**
+	 * 
+	 * @param {Internal.Item_} output 输出
+	 * @param {Array<Internal.Item_>} inputs 输入
+	 */
+	function addMechanismBasementsRecipes(output, inputs) {
+		immersiveengineering.blueprint(output, inputs)
+			.blueprint("mechanism_basements")
+	}
 })

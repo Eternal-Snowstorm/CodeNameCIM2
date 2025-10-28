@@ -19,7 +19,6 @@ type MaterialType =
 	"dirtySlurry" |
 	"slurry";
 
-
 // 材料对象接口
 interface Material {
 	name: string

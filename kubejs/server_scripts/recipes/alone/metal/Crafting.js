@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 		const RAW_ORE = `#forge:raw_materials/${metal}`
 		const RAW_BLOCK = `#forge:storage_blocks/raw_${metal}`
 
-		if (IngredientUtils.isNotNull(BLOCK)) {
+		if (IngredUtils.isNotNull(BLOCK)) {
 			kubejs.shapeless(`9x ${INGOT}`, [
 				BLOCK
 			])
@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
 		} else {
 			console.warn(`No storage block found for ${metal}!`)
 		}
-		if (IngredientUtils.isNotNull(NUGGET)) {
+		if (IngredUtils.isNotNull(NUGGET)) {
 			kubejs.shapeless(`9x ${NUGGET}`, [
 				INGOT
 			])
@@ -36,8 +36,8 @@ ServerEvents.recipes((event) => {
 		} else {
 			console.warn(`No nugget found for ${metal}!`)
 		}
-		if (IngredientUtils.isNotNull(RAW_ORE)) {
-			if (IngredientUtils.isNotNull(RAW_BLOCK)) {
+		if (IngredUtils.isNotNull(RAW_ORE)) {
+			if (IngredUtils.isNotNull(RAW_BLOCK)) {
 				kubejs.shapeless(`9x ${RAW_ORE}`, [
 					RAW_BLOCK
 				])

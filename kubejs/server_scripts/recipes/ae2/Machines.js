@@ -6,15 +6,13 @@ ServerEvents.recipes((event) => {
 	let mechA = "cmi:computing_mechanism"
 	let silver = "#forge:plates/silver"
 	let coreF = "ae2:formation_core"
-	let coreA = 'ae2:annihilation_core'
+	let coreA = "ae2:annihilation_core"
 
-	kubejs.shapeless(
-		"ae2:tiny_tnt", [
+	kubejs.shapeless("ae2:tiny_tnt", [
 		"minecraft:paper",
 		"cmi:trinitrotoluene",
 		"cmi:trinitrotoluene"
-	])
-		.id("ae2:misc/tiny_tnt")
+	]).id("ae2:misc/tiny_tnt")
 
 	kubejs.shaped("4x ae2:controller", [
 		"SCS",
@@ -43,7 +41,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: silver,
-		B: '#ae2:all_certus_quartz',
+		B: "#ae2:all_certus_quartz",
 		C: "ae2:smooth_sky_stone_block"
 	})
 
@@ -53,7 +51,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: "#forge:plates/platinum",
-		B: 'cmi:single_crystal_silicon',
+		B: "cmi:single_crystal_silicon",
 		C: "cmi:osmium_tile"
 	})
 
@@ -63,7 +61,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: silver,
-		B: 'minecraft:amethyst_shard',
+		B: "minecraft:amethyst_shard",
 	}).id("ae2:network/blocks/crystal_processing_charger")
 
 	kubejs.shaped("ae2:drive", [
@@ -73,8 +71,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: mech,
 		B: casing,
-		C: '#forge:plates/silver',
-		D: '#ae2:glass_cable',
+		C: "#forge:plates/silver",
+		D: "#ae2:glass_cable",
 	}).id("ae2:network/blocks/storage_drive")
 
 	kubejs.shaped("ae2:interface", [
@@ -83,18 +81,17 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		A: coreF,
-		B: 'cmi:sky_stone_casing',
+		B: "cmi:sky_stone_casing",
 		C: coreA,
 	}).id("ae2:network/blocks/interfaces_interface")
 
-
-	kubejs.shapeless('2x ae2:formation_core', [
+	kubejs.shapeless("2x ae2:formation_core", [
 		mech,
 		"ae2:fluix_dust",
 		"#ae2:all_certus_quartz"
 	]).id("ae2:materials/formationcore")
 
-	kubejs.shapeless('2x ae2:annihilation_core', [
+	kubejs.shapeless("2x ae2:annihilation_core", [
 		mech,
 		"ae2:fluix_dust",
 		"minecraft:quartz"
@@ -106,7 +103,7 @@ ServerEvents.recipes((event) => {
 		"B",
 		"C"
 	], {
-		A: '#forge:plates/gold',
+		A: "#forge:plates/gold",
 		B: mech,
 		C: silver,
 	}).id("ae2:materials/basiccard")
@@ -116,28 +113,28 @@ ServerEvents.recipes((event) => {
 		"B",
 		"C"
 	], {
-		A: 'minecraft:diamond',
+		A: "minecraft:diamond",
 		B: mech,
 		C: silver,
 	}).id("ae2:materials/advancedcard")
 
-	kubejs.shapeless('ae2:void_card', [
+	kubejs.shapeless("ae2:void_card", [
 		"#forge:dusts/obsidian",
 		"ae2:basic_card"
 	]).id("ae2:materials/cardvoid")
 
-	kubejs.shapeless('ae2:speed_card', [
+	kubejs.shapeless("ae2:speed_card", [
 		"cmi:cobalt_mechanism",
 		"ae2:advanced_card"
 	]).id("ae2:materials/cardspeed")
 
-	kubejs.shapeless('ae2:equal_distribution_card', [
+	kubejs.shapeless("ae2:equal_distribution_card", [
 		"minecraft:comparator",
 		"ae2:advanced_card"
 	]).id("ae2:materials/carddistribution")
 
 
-	kubejs.shapeless('ae2:spatial_cell_component_2', [
+	kubejs.shapeless("ae2:spatial_cell_component_2", [
 		"minecraft:glowstone_dust",
 		mechA,
 		"ae2:fluix_pearl"
@@ -148,8 +145,8 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"ABA"
 	], {
-		A: 'minecraft:glowstone_dust',
-		B: 'ae2:spatial_cell_component_2',
+		A: "minecraft:glowstone_dust",
+		B: "ae2:spatial_cell_component_2",
 		C: mechA,
 	}).id("ae2:network/cells/spatial_components_0")
 
@@ -158,13 +155,12 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"ABA"
 	], {
-		A: 'minecraft:glowstone_dust',
-		B: 'ae2:spatial_cell_component_16',
+		A: "minecraft:glowstone_dust",
+		B: "ae2:spatial_cell_component_16",
 		C: mechA,
 	}).id("ae2:network/cells/spatial_components_1")
 
-
-	kubejs.shapeless('ae2:cell_component_1k', [
+	kubejs.shapeless("ae2:cell_component_1k", [
 		"minecraft:redstone",
 		mech,
 		"#ae2:all_certus_quartz"
@@ -175,8 +171,8 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"ABA"
 	], {
-		A: 'minecraft:redstone',
-		B: 'ae2:cell_component_1k',
+		A: "minecraft:redstone",
+		B: "ae2:cell_component_1k",
 		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_4k_part")
 
@@ -185,8 +181,8 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"ABA"
 	], {
-		A: 'minecraft:glowstone_dust',
-		B: 'ae2:cell_component_4k',
+		A: "minecraft:glowstone_dust",
+		B: "ae2:cell_component_4k",
 		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_16k_part")
 
@@ -195,8 +191,8 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"ABA"
 	], {
-		A: 'minecraft:glowstone_dust',
-		B: 'ae2:cell_component_16k',
+		A: "minecraft:glowstone_dust",
+		B: "ae2:cell_component_16k",
 		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_64k_part")
 
@@ -205,8 +201,8 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"ABA"
 	], {
-		A: 'ae2:sky_dust',
-		B: 'ae2:cell_component_64k',
+		A: "ae2:sky_dust",
+		B: "ae2:cell_component_64k",
 		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_256k_part")
 
@@ -219,7 +215,7 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		" B "
 	], {
-		A: 'ae2:fluix_pearl',
+		A: "ae2:fluix_pearl",
 		B: silver,
 		C: "cmi:ender_mechanism",
 	}).id("ae2:network/wireless_part")
@@ -228,7 +224,7 @@ ServerEvents.recipes((event) => {
 		"ABC",
 		"DDD",
 	], {
-		A: 'ae2:fluix_dust',
+		A: "ae2:fluix_dust",
 		B: mech,
 		D: silver,
 		C: "cmi:ender_mechanism",

@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
 		const INGOT = `#forge:ingots/${metal}`
 		const ROD = `#forge:rods/${metal}`
 
-		if (IngredientUtils.isNotNull(ROD)) {
+		if (IngredUtils.isNotNull(ROD)) {
 			createaddition.rolling(`2x ${ROD}`, [
 				INGOT
 			])

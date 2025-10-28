@@ -113,7 +113,7 @@ ServerEvents.recipes((event) => {
 		"mekanism:pellet_polonium"
 	]).itemAsHead("mekanism:pellet_plutonium")
 
-	const GET_BRASS_PLATE_ITEM = IngredientUtils.getFirstItemId("#forge:plates/brass")
+	const GET_BRASS_PLATE_ITEM = IngredUtils.getFirstItemId("#forge:plates/brass")
 
 	// 黄铜漏斗
 	create.sequenced_assembly("12x create:brass_funnel", [

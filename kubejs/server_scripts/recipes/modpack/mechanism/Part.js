@@ -26,27 +26,32 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 通用
-	kubejs.shapeless("4x cmi:mekanism_mechanism_part", [
-		"#forge:ingots/steel",
-		"mekanism:basic_control_circuit"
-	])
-
-	// 量子
-	create.sequenced_assembly("4x cmi:quantum_mechanism_part", [
-		"#forge:plates/refined_radiance"
+	create.sequenced_assembly("4x cmi:mekanism_mechanism_part", [
+		"#forge:nuggets/etrium"
 	], [
-		create.deploying("#forge:plates/refined_radiance", [
-			"#forge:plates/refined_radiance",
+		create.deploying("#forge:nuggets/etrium", [
+			"#forge:nuggets/etrium",
+			"immersiveengineering:component_electronic_adv"
+		]),
+		create.deploying("#forge:nuggets/etrium", [
+			"#forge:nuggets/etrium",
 			"ae2:printed_silicon"
 		]),
-		vintageimprovements.laser_cutting("#forge:plates/refined_radiance", [
-			"#forge:plates/refined_radiance"
+		vintageimprovements.laser_cutting("#forge:nuggets/etrium", [
+			"#forge:nuggets/etrium"
 		]).energy(4000).maxChargeRate(4000)
-	]).loops(1).transitionalItem(IngredientUtils.getFirstItemId("#forge:plates/refined_radiance"))
+	]).loops(1).transitionalItem(IngredUtils.getFirstItemId("#forge:nuggets/etrium"))
 
 	// 太空
-	kubejs.shapeless("4x cmi:space_mechanism_part", [
-		"#forge:nuggets/shadow_steel",
-		"ad_astra:etrionic_capacitor"
-	])
+	create.sequenced_assembly("4x cmi:space_mechanism_part", [
+		"#forge:nuggets/tungsten"
+	], [
+		create.deploying("#forge:nuggets/tungsten", [
+			"#forge:nuggets/tungsten",
+			"ad_astra:etrionic_capacitor"
+		]),
+		vintageimprovements.laser_cutting("#forge:nuggets/tungsten", [
+			"#forge:nuggets/tungsten"
+		]).energy(4000).maxChargeRate(4000)
+	]).loops(1).transitionalItem(IngredUtils.getFirstItemId("#forge:nuggets/tungsten"))
 })

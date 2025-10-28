@@ -16,22 +16,22 @@ let $Gas =
 let $Chemical =
 	Java.loadClass("mekanism.api.chemical.Chemical")
 
-let IngredientUtils = {
+let IngredUtils = {
 	/**
 	 * 获取标签内第一个物品的ID, 若标签下没有物品则返回null
-	 * @param {string} ingredient 物品标签ID
+	 * @param {string} tagOrItem 物品标签ID
 	 * @param {number | undefined} count 物品数量
 	 * @returns {string | null}
 	 */
-	getFirstItemId: function (ingredient, count) {
+	getFirstItemId: function (tagOrItem, count) {
 		let ids = count !== undefined
-			? Ingredient.of(ingredient, count).getItemIds()
-			: Ingredient.of(ingredient).getItemIds()
+			? Ingredient.of(tagOrItem, count).getItemIds()
+			: Ingredient.of(tagOrItem).getItemIds()
 
 		if (ids.length > 0) {
 			return ids[0]
 		} else {
-			console.warn(`No corresponding item under ${ingredient}`)
+			console.warn(`No corresponding item under ${tagOrItem}`)
 			return null
 		}
 	},
@@ -102,7 +102,7 @@ function aeCharger(output, input) {
 		type: "ae2:charger",
 		ingredient: Ingredient.of(input).toJson(),
 		result: {
-			item: IngredientUtils.getFirstItemId(output)
+			item: IngredUtils.getFirstItemId(output)
 		}
 	}
 }
@@ -167,6 +167,6 @@ BlockEvents.rightClicked((event) => {
 	const DEBUG_BLOCK = "cmi:green_screen"
 
 	if (block.id === DEBUG_BLOCK) {
-		player.tell(IngredientUtils.getFirstFluidId("forge:solutions/iron/chloride"))
+		player.tell(IngredUtils.getFirstFluidId("forge:solutions/iron/chloride"))
 	}
 })

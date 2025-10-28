@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, thermal_extra, mekanism } = event.recipes
+	let { kubejs, mekanism } = event.recipes
 
 	kubejs.shaped("mekanism:cardboard_box", [
 		"AAA",
@@ -20,21 +20,10 @@ ServerEvents.recipes((event) => {
 		C: "cmi:osmium_tile"
 	}).id("mekanism:steel_casing")
 
-	// 基础控制电路
-	thermal_extra.component_assembly("mekanism:basic_control_circuit", [
-		"#forge:dusts/emerald",
-		"thermal_extra:polyolefin_plate"
-	])
-
 	event.replaceInput({
 		input: "#forge:plates/hdpe",
 		output: "mekanism:solar_neutron_activator"
 	}, "#forge:plates/hdpe", "ad_astra:photovoltaic_etrium_cell")
-
-	mekanism.metallurgic_infusing(
-		"mekanism:basic_control_circuit",
-		"#forge:plates/polyolefin",
-	).chemicalInput({ "amount": 20, "tag": "mekanism:redstone" })
 
 	mekanism.crystallizing(
 		"gas",

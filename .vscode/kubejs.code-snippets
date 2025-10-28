@@ -48,5 +48,12 @@
 			"StartupEvents.registry(\"fluid\", (event) => {",
 			"})"
 		]
+	},
+	"Modify Creative Tab": {
+		"prefix": "#ModifyCreativeTab",
+		"body": [
+			"StartupEvents.modifyCreativeTab(\"\", (event) => {",
+			"})"
+		]
 	}
 }

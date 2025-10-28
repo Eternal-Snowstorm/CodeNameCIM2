@@ -175,7 +175,7 @@ ServerEvents.highPriorityData((event) => {
 	function addUnification(match, item) {
 		return {
 			matchItems: [match],
-			resultItems: IngredientUtils.getFirstItemId(item)
+			resultItems: IngredUtils.getFirstItemId(item)
 		}
 	}
 

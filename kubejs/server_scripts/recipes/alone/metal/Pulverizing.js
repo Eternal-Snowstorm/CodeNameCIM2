@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 		const ORE = `#forge:ores/${metal}`
 		const DUST = `#forge:dusts/${metal}`
 
-		if (IngredientUtils.isNotNull(DUST)) {
+		if (IngredUtils.isNotNull(DUST)) {
 			thermal.pulverizer(DUST, [
 				INGOT
 			]).energy(2000)
@@ -18,19 +18,19 @@ ServerEvents.recipes((event) => {
 				.input(INGOT)
 
 			mekanism.crushing(DUST, INGOT)
-			if (IngredientUtils.isNotNull(RAW_ORE)) {
-				thermal.pulverizer(Item.of(IngredientUtils.getFirstItemId(DUST)).withChance(1.25), [
+			if (IngredUtils.isNotNull(RAW_ORE)) {
+				thermal.pulverizer(Item.of(IngredUtils.getFirstItemId(DUST)).withChance(1.25), [
 					RAW_ORE
 				])
 
 				immersiveengineering.crusher(DUST, RAW_ORE)
-					.secondaries(Item.of(IngredientUtils.getFirstItemId(DUST)).withChance(1 / 3))
+					.secondaries(Item.of(IngredUtils.getFirstItemId(DUST)).withChance(1 / 3))
 
 				// mekanism.enriching(`4x ${DUST}`, `3x ${RAW_ORE}`)
 			} else {
 				console.warn(`No raw material found for ${metal}!`)
 			}
-			if (IngredientUtils.isNotNull(ORE)) {
+			if (IngredUtils.isNotNull(ORE)) {
 				thermal.pulverizer(`2x ${DUST}`, [
 					ORE
 				])
@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
 			} else {
 				console.warn(`No ore found for ${metal}!`)
 			}
-			if (IngredientUtils.isNotNull(RAW_BLOCK)) {
+			if (IngredUtils.isNotNull(RAW_BLOCK)) {
 				immersiveengineering.crusher(`12x ${DUST}`)
 					.secondaries([])
 					.input(RAW_BLOCK)

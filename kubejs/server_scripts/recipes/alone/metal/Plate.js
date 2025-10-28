@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
 		const INGOT = `#forge:ingots/${metal}`
 		const PLATE = `#forge:plates/${metal}`
 
-		if (IngredientUtils.isNotNull(PLATE)) {
+		if (IngredUtils.isNotNull(PLATE)) {
 			create.pressing(PLATE, [
 				INGOT
 			])
