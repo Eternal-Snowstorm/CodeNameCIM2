@@ -1,5 +1,9 @@
 [
 	{
+		"filename": ".connector",
+		"name": ".connector"
+	},
+	{
 		"filename": "skinlayers3d-forge-1.9.0-mc1.20.1.jar",
 		"name": "3d-Skin-Layers",
 		"version": "1.9.0"
@@ -33,6 +37,11 @@
 		"filename": "alltheleaks-1.0.7+1.20.1-forge.jar",
 		"name": "All The Leaks",
 		"version": "1.0.7+1.20.1-forge"
+	},
+	{
+		"filename": "alphaskins-1.20-3.0.0.jar",
+		"name": "Alphaskins",
+		"version": "1.20-3.0.0"
 	},
 	{
 		"filename": "appleskin-forge-mc1.20.1-2.5.1.jar",
@@ -103,6 +112,10 @@
 		"filename": "CTM-1.20.1-1.1.10.jar",
 		"name": "ConnectedTexturesMod",
 		"version": "1.20.1-1.1.10"
+	},
+	{
+		"filename": "Connector-1.0.0-beta.46+1.20.1.jar",
+		"name": "Connector-1.0.0-beta.46+1.20.1"
 	},
 	{
 		"filename": "constructionwand-1.20.1-2.11.jar",
@@ -255,6 +268,11 @@
 		"version": "3.0.12"
 	},
 	{
+		"filename": "embeddium-0.3.31+mc1.20.1.jar",
+		"name": "Embeddium",
+		"version": "0.3.31+mc1.20.1"
+	},
+	{
 		"filename": "rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar",
 		"name": "Embeddium Extra",
 		"version": "0.5.4.4+mc1.20.1-build.131"
@@ -263,6 +281,16 @@
 		"filename": "EngineeredSchematics-1.2.3.jar",
 		"name": "Engineered Schematics",
 		"version": "1.2.3"
+	},
+	{
+		"filename": "entity_model_features_1.20.1-forge-3.0.1.jar",
+		"name": "Entity Model Features",
+		"version": "3.0.1"
+	},
+	{
+		"filename": "entity_texture_features_1.20.1-forge-7.0.2.jar",
+		"name": "Entity Texture Features",
+		"version": "7.0.2"
 	},
 	{
 		"filename": "entityculling-forge-1.8.2-mc1.20.1.jar",
@@ -390,6 +418,11 @@
 		"version": "1.2.11+a"
 	},
 	{
+		"filename": "GeckoJS-2001forge-1.5.2.jar",
+		"name": "GeckoJS",
+		"version": "2001forge-1.5.2"
+	},
+	{
 		"filename": "geckolib-forge-1.20.1-4.7.4.jar",
 		"name": "GeckoLib 4",
 		"version": "4.7.4"
@@ -483,11 +516,6 @@
 		"filename": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
 		"name": "Konkrete",
 		"version": "1.8.0"
-	},
-	{
-		"filename": "kotlinforforge-4.11.0-all.jar",
-		"name": "Kotlin for Forge",
-		"version": "5402061"
 	},
 	{
 		"filename": "Ksyxis-1.3.4.jar",
@@ -600,11 +628,6 @@
 		"version": "1.20.1-1.11.2-forge"
 	},
 	{
-		"filename": "Neruina-2.1.2-forge+1.20.1.jar",
-		"name": "Neruina",
-		"version": "2.1.2"
-	},
-	{
 		"filename": "netherportalfix-forge-1.20-13.0.1.jar",
 		"name": "NetherPortalFix",
 		"version": "13.0.1"
@@ -630,24 +653,29 @@
 		"version": "0.4.1"
 	},
 	{
+		"filename": "OELib-forge-0.0.5.jar",
+		"name": "OELib",
+		"version": "0.0.5"
+	},
+	{
 		"filename": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
 		"name": "OctoLib",
 		"version": "0.5.0.1"
 	},
 	{
-		"filename": "oculus-mc1.20.1-1.8.0.jar",
-		"name": "Oculus",
-		"version": "1.8.0"
+		"filename": "oneenoughblock-1.1.0.jar",
+		"name": "OneEnoughBlock",
+		"version": "1.1.0"
 	},
 	{
-		"filename": "oculus-flywheel-compat-forge1.20.1+1.1.4.jar",
-		"name": "Oculus Flywheel Compat",
-		"version": "1.1.4"
+		"filename": "oneenoughfluid-1.1.0.jar",
+		"name": "OneEnoughFluid",
+		"version": "1.1.0"
 	},
 	{
-		"filename": "OneEnoughItem-Forge-1.0.5.1.jar",
+		"filename": "OneEnoughItem-1.0.6.jar",
 		"name": "OneEnoughItem",
-		"version": "1.0.5.1"
+		"version": "1.0.6"
 	},
 	{
 		"filename": "OpenLoader-Forge-1.20.1-19.0.4.jar",
@@ -785,11 +813,6 @@
 		"version": "23.1.9"
 	},
 	{
-		"filename": "Connector-1.0.0-beta.46+1.20.1.jar",
-		"name": "Sinytra Connector",
-		"version": "5761411"
-	},
-	{
 		"filename": "smoothboot(reloaded)-mc1.20.1-0.0.4.jar",
 		"name": "Smooth Boot (Reloaded)",
 		"version": "0.0.4"
@@ -870,6 +893,11 @@
 		"version": "11.0.1"
 	},
 	{
+		"filename": "thermal_parallel-1.0.0-beta.1.jar",
+		"name": "Thermal Parallel",
+		"version": "1.0.0-beta.1"
+	},
+	{
 		"filename": "ticktweaks-forge-1.2.5.jar",
 		"name": "Tick Tweaks",
 		"version": "1.2.5"
@@ -915,16 +943,6 @@
 		"version": "1.39.12"
 	},
 	{
-		"filename": "xenon-0.3.31+mc1.20.1.jar",
-		"name": "Xenon",
-		"version": "0.3.31"
-	},
-	{
-		"filename": "[]yesstevemodel-forge-1.20-2.4.1-release.jar",
-		"name": "Yes Steve Model",
-		"version": "2.4.1"
-	},
-	{
 		"filename": "ae2ct-1.20.1-1.1.0.jar",
 		"name": "ae2CraftingTree",
 		"version": "1.20.1-1.1.0"
@@ -943,5 +961,9 @@
 		"filename": "iChunUtil-1.20.1-Forge-1.0.3.jar",
 		"name": "iChunUtil",
 		"version": "1.0.3"
+	},
+	{
+		"filename": "kotlinforforge-4.11.0-all.jar",
+		"name": "kotlinforforge-4.11.0-all"
 	}
 ]
