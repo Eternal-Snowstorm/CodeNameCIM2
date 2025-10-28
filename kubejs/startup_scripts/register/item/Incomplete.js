@@ -33,4 +33,8 @@ StartupEvents.registry("item", (event) => {
 
 	addItem("incomplete_upgrade_augment_3")
 		.texture(`${global.namespace}:item/mechanism/incomplete/resonant`)
+
+	// 航天硬盘（半成品）
+	addItem("incomplete_aviation_cell")
+		.texture(`${global.namespace}:item/material/incomplete_aviation_cell`)
 })

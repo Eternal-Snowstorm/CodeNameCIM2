@@ -89,6 +89,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_computer_component", "计算机组件(半成品)")
 	addItemLanguage("incomplete_scanning_module", "扫描模块(半成品)")
 	addItemLanguage("incomplete_scanner", "扫描器(半成品)")
+	addItemLanguage("incomplete_cell", "硬盘外壳")
 
 	addItemLanguage("infusion_treated_processor", "经灌注处理的逻辑处理器")
 	addItemLanguage("enrichment_treated_processor", "经富集处理的运算处理器")
