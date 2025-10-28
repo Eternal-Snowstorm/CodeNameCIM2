@@ -1,6 +1,7 @@
 {
 	"pack": {
 		"pack_format": 15,
-		"description": "§bModpack ResourcePack"
+		"description": "§bModpack ResourcePack",
+		"priority": "top"
 	}
 }
