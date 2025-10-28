@@ -28,9 +28,9 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyE,
-		B: mechE,
-		C: "minecraft:cobblestone",// 故意没有标签
+		A: alloyA,
+		B: mechB,
+		C: "#forge:stone",
 		D: casing,
 	}).id("mekanism:combiner")
 

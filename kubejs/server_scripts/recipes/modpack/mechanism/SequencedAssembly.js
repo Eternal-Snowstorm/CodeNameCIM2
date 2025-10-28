@@ -234,10 +234,10 @@ ServerEvents.recipes((event) => {
 
 	// 基础通用
 	create.sequenced_assembly("cmi:basic_mekanism_mechanism", [
-		"#forge:plates/stainless_steel"
+		"cmi:basic_mekanism_mechanism_basement"
 	], [
-		create.deploying(ibmm, [ibmm, "mekanism:basic_control_circuit"]),
-		create.deploying(ibmm, [ibmm, "#forge:gears/ruby"]),
+		create.deploying(ibmm, [ibmm, "ae2:logic_processor"]),
+		create.deploying(ibmm, [ibmm, "thermal:signalum_glass"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(ibmm).loops(1)
 
@@ -347,12 +347,11 @@ ServerEvents.recipes((event) => {
 
 	// 1航天
 	create.sequenced_assembly("cmi:tier_1_aviation_mechanism", [
-		"#forge:plates/tungsten_steel"
+		"cmi:tier_1_aviation_mechanism_basement"
 	], [
-		create.deploying(ir1m, [ir1m, "cmi:computer_component"]),
-		create.deploying(ir1m, [ir1m, "ad_astra:steel_cable"]),
 		create.deploying(ir1m, [ir1m, "ad_astra:steel_tank"]),
-		create.deploying(ir1m, [ir1m, "cmi:space_mechanism_part"]),
+		create.deploying(ir1m, [ir1m, "ad_astra:steel_engine"]),
+		create.deploying(ir1m, [ir1m, "cmi:space_mechanism_part"])
 	]).transitionalItem(ir1m).loops(1)
 
 	// 2航天

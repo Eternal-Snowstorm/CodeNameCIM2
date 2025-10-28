@@ -15,8 +15,8 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"ABA"
 	], {
-		A: "#forge:ingots/stainless_steel",
-		B: "#forge:plates/polyolefin",
+		A: ["#forge:ingots/stainless_steel", "#forge:plates/stainless_steel"],
+		B: "#forge:plates/osmium",
 		C: "cmi:osmium_tile"
 	}).id("mekanism:steel_casing")
 

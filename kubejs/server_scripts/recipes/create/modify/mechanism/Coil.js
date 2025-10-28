@@ -169,6 +169,18 @@ ServerEvents.recipes((event) => {
 		E: "mekanism:energy_tablet",
 	}).id("mekanism:resistive_heater")
 
+	// 固体燃料加热器
+	kubejs.shaped("mekanism:fuelwood_heater", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: ["#forge:ingots/stainless_steel", "#forge:plates/stainless_steel"],
+		B: "cmi:basic_mekanism_mechanism",
+		C: ["minecraft:furnace", "minecraft:smoker", "minecraft:blast_furnace"],
+		D: "mekanism:steel_casing"
+	}).id("mekanism:fuelwood_heater")
+
 	// 热力发电机
 	kubejs.shaped("mekanismgenerators:heat_generator", [
 		"AAA",

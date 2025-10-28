@@ -19,7 +19,6 @@ StartupEvents.registry("fluid", (event) => {
 		FluidBucketItemModel.generate(`${name1}_solution`)
 		FluidBucketItemModel.generate(`${name2}_solution`)
 
-		console.log(`${global.namespace}:${name1}_solution 和 ${global.namespace}:${name2}_solution 注册成功`)
 		return {
 			register1: fluid1,
 			register2: fluid2
