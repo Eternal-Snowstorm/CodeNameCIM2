@@ -12,7 +12,7 @@
 
  - `CMI`大、中版本号码由主创`Unknown_Entity_`进行规定
 
- - 版本号须在[**Global.js**](kubejs/startup_scripts/Global.js)第6行显示声明
+ - 版本号须在[**Global.js**](kubejs/startup_scripts/Global.js)的`global.modPackVersion`显示声明
 
 ## **第三条** GitHub仓库修改注释协议
 
