@@ -5,7 +5,6 @@ StartupEvents.registry("fluid", (event) => {
 			.stillTexture(`${global.namespace}:fluid/solution/still`)
 			.thinTexture(color1)
 			.bucketColor(color1)
-			.displayName(Component.translatable(`${global.namespace}:${name1}_solution`))
 			.tag(`forge:solutions/${tag}/chloride`)
 			.tag(`forge:solutions/${tag}`)
 
@@ -14,7 +13,6 @@ StartupEvents.registry("fluid", (event) => {
 			.stillTexture(`${global.namespace}:fluid/solution/still`)
 			.thinTexture(color2)
 			.bucketColor(color2)
-			.displayName(Component.translatable(`${global.namespace}:${name2}_solution`))
 			.tag(`forge:solutions/${tag}/sulfate`)
 			.tag(`forge:solutions/${tag}`)
 

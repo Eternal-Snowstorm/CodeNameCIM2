@@ -6,7 +6,6 @@ StartupEvents.registry("fluid", (event) => {
 				.stillTexture(`${global.namespace}:fluid/metal/still`)
 				.thinTexture(color)
 				.bucketColor(color)
-				.displayName(Component.translatable(`${global.namespace}:molten_${name}`))
 				.tag("forge:molten_materials")
 				.tag(`forge:molten_${name}`)
 

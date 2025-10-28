@@ -38,13 +38,12 @@ StartupEvents.registry("item", (event) => {
 		"creative",
 		"potion"
 	]
-
 	mechanismRegister.forEach((material) => {
 		event.create(`${global.namespace}:${material}_mechanism`)
 			.texture(`${global.namespace}:item/mechanism/complete/${material}`)
 			.tag("create:mechanisms")
 			.tag(`create:mechanisms/${material}`)
-			.displayName(Component.translatable(`${global.namespace}:${material}_mechanism`))
+
 		event.create(`${global.namespace}:incomplete_${material}_mechanism`, "create:sequenced_assembly")
 			.texture(`${global.namespace}:item/mechanism/incomplete/${material}`)
 			.tag("create:incomplete_mechanisms")
