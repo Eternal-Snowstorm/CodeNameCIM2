@@ -5,17 +5,18 @@ ServerEvents.highPriorityData((event) => {
 	 */
 	let namespacePriority = [
 		"cmi",
+		"vintageimprovements",
 		"thermal",
 		"thermalconstruct",
 		"thermalendergy",
 		"thermal_extra",
+		"alexscaves",
 		"create",
 		"createdeco",
-		"immersiveengineering",
-		"mekanism",
-		"vintageimprovements",
 		"ae2",
 		"ad_astra",
+		"immersiveengineering",
+		"mekanism",
 		"tconstruct"
 	]
 	// 录入所有金属材料类型
