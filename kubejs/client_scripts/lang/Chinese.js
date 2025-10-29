@@ -356,7 +356,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("cmi:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLanguage("cmi:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 	addCommonTooltipLanguage("cmi:charged_amethyst", "拿到耳边能听到它一直在发出嗡嗡嗡的声音")
-	addCommonTooltipLanguage("#minecraft:pickaxes", "副手潜行+右键可破坏矿物节点")
+	addCommonTooltipLanguage("#minecraft:pickaxes", "副手潜行+右键可破坏矿物节点(不掉落)")
 	addCommonTooltipLanguage("#minecraft:infiniburn_all", "上方的火焰可以无限燃烧")
 	addCommonTooltipLanguage("cmi:potion_mechanism", "右键获取大多数正面buff")
 	addCommonTooltipLanguage("cmi:super_knife", "经魔力灌注, 难以磨损")
