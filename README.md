@@ -32,7 +32,6 @@
 	- **data**
 	- **server_scripts**
 	- **startup_scripts**
- - **ldlib**
  - **mods**
  - **resourcepacks**
  - **icon.png**
@@ -89,7 +88,6 @@ Currently in Beta stage.
 	- **data**
 	- **server_scripts**
 	- **startup_scripts**
- - **ldlib**
  - **mods**
  - **resourcepacks**
  - **icon.png**
