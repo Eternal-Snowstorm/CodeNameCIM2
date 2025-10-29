@@ -97,7 +97,6 @@ ServerEvents.recipes((event) => {
 		"minecraft:quartz"
 	]).id("ae2:materials/annihilationcore")
 
-
 	kubejs.shaped("2x ae2:basic_card", [
 		"A",
 		"B",

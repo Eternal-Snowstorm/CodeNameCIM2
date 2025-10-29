@@ -158,4 +158,30 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/tungsten_steel",
 		B: "#forge:plates/hdpe"
 	}).id("ad_astra:space_boots")
+
+	// 电力高炉
+	kubejs.shaped("ad_astra:etrionic_blast_furnace", [
+		"A A",
+		"CMC",
+		"DBD"
+	], {
+		A: "#forge:plates/stainless_steel",
+		B: "cmi:coil_mechanism",
+		C: "cmi:tier_1_aviation_mechanism",
+		D: "#forge:ingots/stainless_steel",
+		M: "minecraft:blast_furnace"
+	}).id("ad_astra:etrionic_blast_furnace")
+
+	// NASA
+	kubejs.shaped("ad_astra:nasa_workbench", [
+		"ABA",
+		"CDC",
+		"BEB"
+	], {
+		A: "#forge:rods/steel",
+		B: "cmi:tier_1_aviation_mechanism",
+		C: "vintageimprovements:laser",
+		D: "cmi:computer_component",
+		E: "#forge:storage_blocks/steel"
+	}).id("ad_astra:nasa_workbench")
 })
