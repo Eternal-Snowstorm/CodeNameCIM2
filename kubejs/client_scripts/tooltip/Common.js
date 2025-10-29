@@ -4,6 +4,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:copper_mechanism")
 	addCommonTooltip("cmi:nature_mechanism")
 	addCommonTooltip("cmi:ender_mechanism")
+	addCommonTooltip("cmi:thermal_mechanism")
 	addCommonTooltip("cmi:photosensitive_mechanism")
 	addCommonTooltip("cmi:cobalt_mechanism")
 	addCommonTooltip("cmi:nether_mechanism")

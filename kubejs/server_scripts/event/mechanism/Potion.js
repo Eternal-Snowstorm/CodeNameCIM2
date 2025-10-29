@@ -6,7 +6,7 @@ ItemEvents.rightClicked("cmi:potion_mechanism", (event) => {
 		"dolphins_grace",
 		"conduit_power",
 		"fire_resistance",
-		"slow_falling",
+		// "slow_falling",
 		"haste",
 		"resistance",
 		"strength",
@@ -14,7 +14,7 @@ ItemEvents.rightClicked("cmi:potion_mechanism", (event) => {
 		"regeneration",
 		"water_breathing",
 		"speed",
-		"jump_boost",
+		// "jump_boost",
 		"night_vision",
 		// "invisibility",
 	]

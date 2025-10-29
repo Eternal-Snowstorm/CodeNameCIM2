@@ -276,6 +276,7 @@ ServerEvents.tags("item", (event) => {
 		.add("cmi:cobalt_mechanism")
 		.add("cmi:photosensitive_mechanism")
 		.add("cmi:nether_mechanism")
+		.add("cmi:thermal_mechanism")
 
 	event.get("forge:chests")
 		.add("ae2:smooth_sky_stone_chest")
