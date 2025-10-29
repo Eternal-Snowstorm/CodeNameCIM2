@@ -228,7 +228,7 @@ ServerEvents.recipes((event) => {
 	], [
 		create.deploying(iom, [iom, "#forge:gears/electrum"]),
 		create.deploying(iom, [iom, "#forge:plates/polyolefin"]),
-		create.deploying(iom, [iom, "thermal:florb"]),
+		create.deploying(iom, [iom, "#forge:nuggets/platinum"]),
 		create.deploying(iom, [iom, "cmi:mekanism_mechanism_part"])
 	]).transitionalItem(iom).loops(1)
 
