@@ -1,6 +1,23 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, create, vintageimprovements } = event.recipes
 
+	// 流体管道
+	kubejs.shaped("8x create:fluid_pipe", [
+		"AAA",
+		"   ",
+		"AAA"
+	], {
+		A: "#forge:plates/copper"
+	}).id("create:crafting/kinetics/fluid_pipe")
+
+	kubejs.shaped("8x copycats:copycat_fluid_pipe", [
+		"AAA",
+		"   ",
+		"AAA"
+	], {
+		A: "#forge:plates/zinc"
+	}).id("copycats:crafting/copycat_fluid_pipe")
+
 	// 搅拌头
 	kubejs.shaped("create:whisk", [
 		" A ",

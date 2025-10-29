@@ -1,6 +1,23 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, create } = event.recipes
 
+	// 流体管道
+	kubejs.shaped("8x ad_astra:desh_fluid_pipe", [
+		"AAA",
+		"   ",
+		"AAA"
+	], {
+		A: "#forge:plates/desh"
+	}).id("ad_astra:desh_fluid_pipe")
+
+	kubejs.shaped("8x ad_astra:ostrum_fluid_pipe", [
+		"AAA",
+		"   ",
+		"AAA"
+	], {
+		A: "#forge:plates/ostrum"
+	}).id("ad_astra:ostrum_fluid_pipe")
+
 	// 电缆
 	kubejs.shaped("4x ad_astra:steel_cable", [
 		"AAA",
