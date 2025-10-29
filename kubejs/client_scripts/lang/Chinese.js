@@ -352,6 +352,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLanguage("cmi:cobalt_mechanism", "§9装备于构件饰品栏可获得急迫与速度效果")
 	addCommonTooltipLanguage("cmi:nether_mechanism", "§4装备于构件饰品栏可获得抗火效果")
 	addCommonTooltipLanguage("cmi:thermal_mechanism", "§b装备于构件饰品栏可以获得力量效果\n§b攻击会少量扣除血量\n§b连续造成伤害可以回复血量")
+	addCommonTooltipLanguage("cmi:smart_mechanism", "§a装备于构件饰品栏可以使箭矢伤害无视无敌帧")
 	addCommonTooltipLanguage("cmi:sculk_mechanism", "§v手持右键可以发射一道音波尖啸")
 	addCommonTooltipLanguage("cmi:geographycal_hammer.developer1", "手持右键潜行方块获取方块硬度")
 	addCommonTooltipLanguage("cmi:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
