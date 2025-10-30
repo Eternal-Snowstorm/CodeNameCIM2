@@ -217,6 +217,19 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:dusts/lime")
 		.tag("forge:dusts")
 
+	// 火箭零件
+	for (let i = 1; i <= 4; i++) {
+		addItem(`tier_${i}_rocket_nose_cone`)
+			.texture(`${global.namespace}:item/material/rocket_nose_cone/${i}`)
+			.tag(`${global.namespace}:rocket_nose_cones/tier_${i}`)
+			.tag(`${global.namespace}:rocket_nose_cones`)
+
+		addItem(`tier_${i}_rocket_fin`)
+			.texture(`${global.namespace}:item/material/rocket_fin/${i}`)
+			.tag(`${global.namespace}:rocket_fins/tier_${i}`)
+			.tag(`${global.namespace}:rocket_fins`)
+	}
+
 	// 觉得长的请使用VS Code自带的折叠功能
 	let SomeModelsJson = {
 		cogwheel: function (material) {

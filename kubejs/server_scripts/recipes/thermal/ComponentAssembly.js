@@ -8,4 +8,11 @@ ServerEvents.recipes((event) => {
 		"ae2:logic_processor",
 		"#forge:plates/polyolefin"
 	])
+
+	// 末影抽屉
+	thermal_extra.component_assembly("functionalstorage:ender_drawer", [
+		"cmi:ender_mechanism",
+		"#forge:gears/enderium",
+		"#functionalstorage:drawer"
+	])
 })

@@ -73,6 +73,18 @@ ServerEvents.highPriorityData((event) => {
 		"kaleidoscope_cookery:rice_panicle"
 	))
 
+	// 火箭尾鳍
+	addJsonFile("rocket_fin", addUnification(
+		"ad_astra:rocket_fin",
+		"cmi:tier_1_rocket_fin"
+	))
+
+	// 火箭鼻锥
+	addJsonFile("rocket_nose_cone", addUnification(
+		"ad_astra:rocket_nose_cone",
+		"cmi:tier_1_rocket_nose_cone"
+	))
+
 	/**
 	 * @example addJsonFile("coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
 	 * @param {Internal.Item | Internal.Ingredient} match 
@@ -87,6 +99,6 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	function addJsonFile(name, unification) {
-		return event.addJson(`oei:replacements/${name}.json`, unification)
+		event.addJson(`oei:replacements/${name}.json`, unification)
 	}
 })

@@ -165,10 +165,10 @@ ServerEvents.recipes((event) => {
 
 	// 末影
 	create.sequenced_assembly("cmi:ender_mechanism", [
-		"#forge:plates/obsidian"
+		"cmi:ender_mechanism_basement"
 	], [
-		create.deploying(iem, [iem, "minecraft:ender_pearl"]),
-		create.deploying(iem, [iem, "#forge:dusts/diamond"]),
+		create.deploying(iem, [iem, "#forge:gears/sapphire"]),
+		create.deploying(iem, [iem, "#forge:ender_pearls"]),
 		create.deploying(iem, [iem, "cmi:magical_mechanism_part"]),
 	]).transitionalItem(iem).loops(1)
 
