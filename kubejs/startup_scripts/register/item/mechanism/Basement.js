@@ -17,6 +17,8 @@ StartupEvents.registry("item", (event) => {
 	addMechanismBasement("iron")
 	addMechanismBasement("copper")
 
+	addMechanismBasement("ender")
+
 	for (let i = 1; i <= 4; i++) {
 		addMechanismBasement(`tier_${i}_aviation`)
 	}

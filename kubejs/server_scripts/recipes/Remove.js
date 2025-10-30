@@ -21,6 +21,7 @@ ServerEvents.recipes((event) => {
 		"createdieselgenerators:crafting/chip_wood_beam",
 		"tconstruct:smeltery/seared/chute_retextured",
 		"tconstruct:__default",
+		"functionalstorage:ender_drawer",
 		"createaddition:compat/tconstruct/blaze_blood",
 		"vintageimprovements:sequenced_assembly/redstone_module",
 		"functionalstorage:void_upgrade",

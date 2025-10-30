@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create, vintageimprovements } = event.recipes
+	let { kubejs, create, vintageimprovements, tconstruct } = event.recipes
 
 	// 流体管道
 	kubejs.shaped("8x create:fluid_pipe", [
@@ -502,4 +502,43 @@ ServerEvents.recipes((event) => {
 	cutSlabWood.forEach((id) => {
 		create.cutting(`2x ${id}_slab`, `${id}_planks`)
 	})
+
+	// 黄铜漏斗
+	kubejs.shapeless("create:brass_funnel", [
+		"create:andesite_funnel",
+		"cmi:andesite_mechanism",
+		"#forge:ingots/brass"
+	])
+
+	tconstruct.casting_basin("create:brass_funnel")
+		.cast("create:andesite_funnel")
+		.fluid(Fluid.of("tconstruct:molten_brass", 90 * 2))
+		.cast_consumed(true)
+		.cooling_time(20)
+
+	// 黄铜隧道
+	kubejs.shapeless("create:brass_tunnel", [
+		"create:andesite_tunnel",
+		"cmi:andesite_mechanism",
+		"#forge:ingots/brass"
+	])
+
+	tconstruct.casting_basin("create:brass_tunnel")
+		.cast("create:andesite_tunnel")
+		.fluid(Fluid.of("tconstruct:molten_brass", 180 * 2))
+		.cast_consumed(true)
+		.cooling_time(20)
+
+	// 智能溜槽
+	kubejs.shapeless("create:smart_chute", [
+		"create:chute",
+		"cmi:andesite_mechanism",
+		"#forge:ingots/brass"
+	])
+
+	tconstruct.casting_basin("create:smart_chute")
+		.cast("create:chute")
+		.fluid(Fluid.of("tconstruct:molten_brass", 180 * 2))
+		.cast_consumed(true)
+		.cooling_time(20)
 })
