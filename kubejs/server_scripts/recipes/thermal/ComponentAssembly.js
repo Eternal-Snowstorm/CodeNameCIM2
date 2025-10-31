@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
 	// 基础控制电路
 	thermal_extra.component_assembly("4x mekanism:basic_control_circuit", [
 		"#immersiveengineering:circuits/pcb",
-		"ae2:printed_silicon",
+		"immersiveengineering:component_electronic_adv",
 		"ae2:logic_processor",
 		"#forge:plates/polyolefin"
 	])

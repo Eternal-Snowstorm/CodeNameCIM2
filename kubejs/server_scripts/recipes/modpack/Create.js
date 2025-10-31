@@ -94,25 +94,6 @@ ServerEvents.recipes((event) => {
 		"#forge:clay"
 	])
 
-	// 反物质
-	vintageimprovements.curving("mekanism:pellet_antimatter", [
-		"#forge:ingots/plasma"
-	]).itemAsHead("mekanism:pellet_antimatter")
-
-	vintageimprovements.pressurizing([
-		"mekanism:pellet_polonium",
-		Fluid.of("mekanism:steam", 200)
-	], [
-		Fluid.of("mekanism:uranium_hexafluoride", 200),
-		Fluid.of("minecraft:water", 200),
-		"mekanism:dust_fluorite"
-	]).processingTime(80)
-
-	// 钚
-	vintageimprovements.curving("mekanism:pellet_plutonium", [
-		"mekanism:pellet_polonium"
-	]).itemAsHead("mekanism:pellet_plutonium")
-
 	const GET_BRASS_PLATE_ITEM = IngredUtils.getFirstItemId("#forge:plates/brass")
 
 	// 黄铜漏斗
