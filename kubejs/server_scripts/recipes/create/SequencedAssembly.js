@@ -13,24 +13,6 @@ ServerEvents.recipes((event) => {
 		])
 	]).transitionalItem("create:unprocessed_obsidian_sheet").loops(10)
 
-	// 计算机组件
-	create.sequenced_assembly([
-		Item.of("cmi:computer_component")
-	], "cmi:flame_retardant_plastic", [
-		create.deploying("cmi:incomplete_computer_component", [
-			"cmi:incomplete_computer_component",
-			"cmi:mekanism_processor"
-		]),
-		create.deploying("cmi:incomplete_computer_component", [
-			"cmi:incomplete_computer_component",
-			"#ae2:glass_cable"
-		]),
-		create.deploying("cmi:incomplete_computer_component", [
-			"cmi:incomplete_computer_component",
-			"#ae2:illuminated_panel"
-		]),
-	]).transitionalItem("cmi:incomplete_computer_component").loops(1)
-
 	// 扫描器
 	create.sequenced_assembly([
 		Item.of("scannable:scanner")

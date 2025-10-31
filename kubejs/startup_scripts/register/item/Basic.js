@@ -13,8 +13,8 @@ StartupEvents.registry("item", (event) => {
 
 	addItem("single_crystal_silicon")
 		.texture(`${global.namespace}:item/material/single_crystal_silicon`)
-	addItem("computer_component")
-		.texture(`${global.namespace}:item/material/computer_component`)
+	addItem("general_processor")
+		.texture(`${global.namespace}:item/material/general_processor`)
 	addItem("blackstone_source_alpha")
 		.texture(`${global.namespace}:item/material/blackstone_source_alpha`)
 	addItem("blackstone_source_beta")
@@ -158,26 +158,9 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/grass_string`)
 		.tag("forge:string")
 
-	// mek-ae2 cpu
-	// 灌注
-	addItem("infusion_treated_processor")
-		.texture(`${global.namespace}:item/material/infusion_treated_processor`)
-
-	// 富集
-	addItem("enrichment_treated_processor")
-		.texture(`${global.namespace}:item/material/enrichment_treated_processor`)
-
-	// 粉碎
-	addItem("ground_treated_processor")
-		.texture(`${global.namespace}:item/material/ground_treated_processor`)
-
-	// 通用
-	addItem("mekanism_processor")
-		.texture(`${global.namespace}:item/material/mekanism_processor`)
-
-	// 计算机组件半成品
-	addItem("incomplete_computer_component")
-		.texture(`${global.namespace}:item/material/incomplete_computer_component`)
+	// 通用电路板
+	addItem("printed_general_processor")
+		.texture(`${global.namespace}:item/material/printed_general_processor`)
 
 	// 活泼元素
 	addItem("reactive_element")
