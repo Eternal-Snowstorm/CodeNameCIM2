@@ -54,6 +54,9 @@ ServerEvents.recipes((event) => {
 		Fluid.of("createdieselgenerators:gasoline", 1000)
 	]).energy(2000)
 
+	// 间歇泉喷射液
+	// thermal.refinery()
+
 	// 柴油压缩炉统一
 	thermal.compression_fuel("createdieselgenerators:diesel", 2000000)
 })
