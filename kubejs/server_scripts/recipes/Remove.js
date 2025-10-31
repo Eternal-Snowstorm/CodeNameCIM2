@@ -125,7 +125,8 @@ ServerEvents.recipes((event) => {
 		"ad_astra:blasting/calorite_ingot_from_blasting_raw_calorite",
 		"ad_astra:smelting/calorite_ingot_from_smelting_raw_calorite",
 		"thermal:storage/sugar_cane_block",
-		"create:crafting/kinetics/fluid_pipe_vertical"
+		"create:crafting/kinetics/fluid_pipe_vertical",
+		"mekanism:metallurgic_infusing/alloy/infused"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
