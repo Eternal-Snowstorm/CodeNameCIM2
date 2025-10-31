@@ -184,4 +184,27 @@ ServerEvents.recipes((event) => {
 		D: "cmi:computer_component",
 		E: "#forge:storage_blocks/steel"
 	}).id("ad_astra:nasa_workbench")
+
+	// 氧气分配机
+	kubejs.shaped("ad_astra:oxygen_distributor", [
+		"ABA",
+		"ACA",
+		"DED"
+	], {
+		A: "ad_astra:fan",
+		B: "cmi:tier_2_aviation_mechanism",
+		C: "ad_astra:oxygen_loader",
+		D: "mekanism:steel_casing",
+		E: "ad_astra:oxygen_gear"
+	}).id("ad_astra:oxygen_distributor")
+
+	// 重力规正器
+	kubejs.shaped("ad_astra:gravity_normalizer", [
+		"ABA",
+		"CCC"
+	], {
+		A: "ad_astra:etrionic_capacitor",
+		B: "#forge:storage_blocks/etrium",
+		C: "mekanism:steel_casing"
+	}).id("ad_astra:gravity_normalizer")
 })
