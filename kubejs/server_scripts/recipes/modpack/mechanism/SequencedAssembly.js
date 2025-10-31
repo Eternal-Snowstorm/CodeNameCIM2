@@ -356,12 +356,11 @@ ServerEvents.recipes((event) => {
 
 	// 2航天
 	create.sequenced_assembly("cmi:tier_2_aviation_mechanism", [
-		"#forge:plates/desh"
+		"cmi:tier_2_aviation_mechanism_basement"
 	], [
-		create.deploying(ir2m, [ir2m, "cmi:computer_component"]),
-		create.deploying(ir2m, [ir2m, "ad_astra:desh_cable"]),
 		create.deploying(ir2m, [ir2m, "ad_astra:desh_tank"]),
-		create.deploying(ir2m, [ir2m, "cmi:space_mechanism_part"]),
+		create.deploying(ir2m, [ir2m, "ad_astra:desh_engine"]),
+		create.deploying(ir2m, [ir2m, "cmi:space_mechanism_part"])
 	]).transitionalItem(ir2m).loops(1)
 
 	// 3航天

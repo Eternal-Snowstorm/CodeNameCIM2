@@ -19,6 +19,12 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/ender_pearl"
 	])
 
+	addRecipes("cmi:tier_2_aviation_mechanism_basement", [
+		"#forge:circuits/advanced",
+		"#forge:plates/desh",
+		"#forge:plates/etrium"
+	])
+
 	/**
 	 * 
 	 * @param {Internal.Item_} output 输出
