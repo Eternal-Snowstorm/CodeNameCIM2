@@ -68,6 +68,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("brass_casing_framework", "黄铜机壳框架")
 	addItemLanguage("copper_casing_framework", "铜机壳框架")
 	addItemLanguage("incomplete_aviation_cell", "航天硬盘(半成品)")
+	addItemLanguage("chromeplated_steel_gear","镀铬钢齿轮")
 
 	addItemLanguage("tier_1_rocket_nose_cone", "一阶火箭鼻锥")
 	addItemLanguage("tier_2_rocket_nose_cone", "二阶火箭鼻锥")
@@ -78,8 +79,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("tier_2_rocket_fin", "二阶火箭尾翼")
 	addItemLanguage("tier_3_rocket_fin", "三阶火箭尾翼")
 	addItemLanguage("tier_4_rocket_fin", "四阶火箭尾翼")
-
-	addItemLanguage("chrome-plated_steel_gear","镀铬钢齿轮")
 
 	addItemLanguage("incomplete_cogwheel", "齿轮(半成品)")
 	addItemLanguage("incomplete_bronze_cogwheel", "青铜齿轮(半成品)")

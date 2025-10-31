@@ -243,10 +243,10 @@ ServerEvents.recipes((event) => {
 
 	// 高级通用
 	create.sequenced_assembly("cmi:advanced_mekanism_mechanism", [
-		"#forge:plates/stainless_steel"
+		"cmi:advanced_mekanism_mechanism_basement"
 	], [
-		create.deploying(iamm, [iamm, "mekanism:advanced_control_circuit"]),
-		create.deploying(iamm, [iamm, "#vintageimprovements:small_springs/osmium"]),
+		create.deploying(iamm, [iamm, "ae2:calculation_processor"]),
+		create.deploying(iamm, [iamm, "#forge:gears/chromeplated_steel"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(iamm).loops(1)
 

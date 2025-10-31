@@ -218,9 +218,10 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:dusts")
 
 	// 镀铬钢齿轮
-	addItem("chrome-plated_steel_gear")
+	addItem("chromeplated_steel_gear")
 		.texture(`${global.namespace}:item/material/color/gear`)
 		.color(0, 0xE4DBDC)
+		.tag("forge:gears/chromeplated_steel")
 		.tag("forge:gears")
 
 	// 火箭零件
