@@ -90,9 +90,11 @@ BlockEvents.rightClicked((event) => {
 	let { player } = event
 	let getItem = "cmi:geological_hammer"
 
-	let blockState = event.getBlock().getBlockState()
+	let state = event.getBlock().getBlockState()
 	let pos = event.getBlock().getPos()
-	let blockHardness = blockState.getDestroySpeed(event.getLevel(), pos)
+	function getBlockHardness() {
+		return state.getDestroySpeed(event.getLevel(), pos)
+	}
 
 	for (let i = 0; i < global.debugUserName.length; i++) {
 		if (event.hand === "OFF_HAND") {
@@ -102,8 +104,8 @@ BlockEvents.rightClicked((event) => {
 			player.crouching &&
 			player.username === global.debugUserName[i]) {
 			event.getPlayer().swing()
-			let key = Component.translatable(`message.${global.namespace}.debug.getHardness`, [blockHardness])
-			player.tell(key)
+			let key = `message.${global.namespace}.debug.getHardness`
+			player.tell(Component.translatable(key, getBlockHardness()))
 			event.cancel()
 		}
 	}
