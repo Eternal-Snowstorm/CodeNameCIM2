@@ -55,7 +55,11 @@ ServerEvents.recipes((event) => {
 	]).energy(2000)
 
 	// 间歇泉喷射液
-	// thermal.refinery()
+	thermal.refinery([
+		Fluid.of("cmi:liquid_xenon", 250),
+		"thermal:sulfur_dust"
+	], Fluid.of("cmi:geyser_jet", 1000))
+		.energy(4000)
 
 	// 柴油压缩炉统一
 	thermal.compression_fuel("createdieselgenerators:diesel", 2000000)

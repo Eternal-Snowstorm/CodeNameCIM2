@@ -198,7 +198,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLanguage("geyser_jet", "间歇泉喷射液")
 	addFluidLanguage("photosyn_fluid", "光合反应液")
 	addFluidLanguage("liquid_xenon", "液态氙")
-	addFluidLanguage("radon", "氡气")
+	addFluidLanguage("radon", "液态氡")
 
 	addMaterialLanguage("andesite_alloy", "安山合金")
 	addMaterialLanguage("cinderslime", "余烬史莱姆")
@@ -275,7 +275,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addGasLanguage("sulfide_gas_mixture", "硫化物混合气")
 	addGasLanguage("nitroglycerine", "硝化甘油")
-	addGasLanguage("liquid_xenon", "液态氙")
+	addGasLanguage("liquid_xenon", "氙气")
 	addGasLanguage("radon", "氡气")
 
 	addSolutionLanguage("feso4", "硫酸亚铁", "FeSO₄")
