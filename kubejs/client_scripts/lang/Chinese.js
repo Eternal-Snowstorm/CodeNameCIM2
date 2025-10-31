@@ -79,6 +79,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("tier_3_rocket_fin", "三阶火箭尾翼")
 	addItemLanguage("tier_4_rocket_fin", "四阶火箭尾翼")
 
+	addItemLanguage("chrome-plated_steel_gear","镀铬钢齿轮")
+
 	addItemLanguage("incomplete_cogwheel", "齿轮(半成品)")
 	addItemLanguage("incomplete_bronze_cogwheel", "青铜齿轮(半成品)")
 	addItemLanguage("incomplete_cast_iron_cogwheel", "铸铁齿轮(半成品)")

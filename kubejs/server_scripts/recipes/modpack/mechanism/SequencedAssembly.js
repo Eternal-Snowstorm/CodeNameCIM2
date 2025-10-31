@@ -237,7 +237,7 @@ ServerEvents.recipes((event) => {
 		"cmi:basic_mekanism_mechanism_basement"
 	], [
 		create.deploying(ibmm, [ibmm, "ae2:logic_processor"]),
-		create.deploying(ibmm, [ibmm, "thermal:signalum_glass"]),
+		create.deploying(ibmm, [ibmm, "cmi:chrome-plated_steel_gear"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(ibmm).loops(1)
 

@@ -217,6 +217,12 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:dusts/lime")
 		.tag("forge:dusts")
 
+	// 镀铬钢齿轮
+	addItem("chrome-plated_steel_gear")
+		.texture(`${global.namespace}:item/material/color/gear`)
+		.color(0, 0xE4DBDC)
+		.tag("forge:gears")
+
 	// 火箭零件
 	for (let i = 1; i <= 4; i++) {
 		addItem(`tier_${i}_rocket_nose_cone`)

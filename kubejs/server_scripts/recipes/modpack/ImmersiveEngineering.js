@@ -55,6 +55,50 @@ ServerEvents.recipes((event) => {
 		"time": 600
 	})
 
+	// 钢齿轮镀铬
+	event.custom({
+		"type": "immersiveindustry:electrolyzer",
+		"input": {
+			"tag": "forge:gears/steel"
+		},
+		"fluid": {
+			"tag": "forge:solutions/chromium/chloride",
+			"amount": 1000
+		},
+		"result_fluid": {
+			"fluid": "cmi:hydrochloric_acid",
+			"amount": 500
+		},
+		"result": {
+			"item": "cmi:chrome-plated_steel_gear",
+			"count": 1
+		},
+		"large_only": true,
+		"time": 100
+	})
+
+	event.custom({
+		"type": "immersiveindustry:electrolyzer",
+		"input": {
+			"tag": "forge:gears/steel"
+		},
+		"fluid": {
+			"tag": "forge:solutions/chromium/sulfate",
+			"amount": 1000
+		},
+		"result_fluid": {
+			"fluid": "mekanism:sulfuric_acid",
+			"amount": 500
+		},
+		"result": {
+			"item": "cmi:chrome-plated_steel_gear",
+			"count": 1
+		},
+		"large_only": true,
+		"time": 100
+	})
+
+
 	// 熔融铂
 	event.custom({
 		"type": "immersiveindustry:chemical",
