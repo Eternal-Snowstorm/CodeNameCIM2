@@ -2,7 +2,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("geological_hammer", "地质锤(调试工具)")
 	addItemLanguage("empty_exe", "空程序.exe")
 	addItemLanguage("single_crystal_silicon", "单晶硅")
-	addItemLanguage("computer_component", "计算机组件")
 	addItemLanguage("bucket", "桶(?)")
 	addItemLanguage("blood_slime_ball", "黏血球")
 	addItemLanguage("empty_flash_drive", "空白闪存盘")
@@ -68,7 +67,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("brass_casing_framework", "黄铜机壳框架")
 	addItemLanguage("copper_casing_framework", "铜机壳框架")
 	addItemLanguage("incomplete_aviation_cell", "航天硬盘(半成品)")
-	addItemLanguage("chromeplated_steel_gear","镀铬钢齿轮")
+	addItemLanguage("chromeplated_steel_gear", "镀铬钢齿轮")
 
 	addItemLanguage("tier_1_rocket_nose_cone", "一阶火箭鼻锥")
 	addItemLanguage("tier_2_rocket_nose_cone", "二阶火箭鼻锥")
@@ -98,14 +97,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("incomplete_tier_3_rocket", "三阶火箭(半成品)")
 	addItemLanguage("incomplete_tier_4_rocket", "四阶火箭(半成品)")
 
-	addItemLanguage("incomplete_computer_component", "计算机组件(半成品)")
 	addItemLanguage("incomplete_scanning_module", "扫描模块(半成品)")
 	addItemLanguage("incomplete_scanner", "扫描器(半成品)")
 
-	addItemLanguage("infusion_treated_processor", "经灌注处理的逻辑处理器")
-	addItemLanguage("enrichment_treated_processor", "经富集处理的运算处理器")
-	addItemLanguage("ground_treated_processor", "经磨制处理的工程处理器")
-	addItemLanguage("mekanism_processor", "通用处理器")
+	addItemLanguage("general_processor", "通用处理器")
+	addItemLanguage("printed_general_processor", "通用电路板")
 	addItemLanguage("music_disc_mechanism", "DontkillBelalus - Mechanism")
 
 	addItemLanguage("reactive_element", "活泼元素")
