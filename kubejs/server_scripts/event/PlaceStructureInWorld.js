@@ -9,9 +9,10 @@ let $Mirror =
 
 ServerEvents.loaded((event) => {
 	let { server } = event
+	let structureNamespace = global.namespace
 
 	function getStructureName(path) {
-		return ResourceLocation.fromNamespaceAndPath("cmi", path)
+		return ResourceLocation.fromNamespaceAndPath(structureNamespace, path)
 	}
 
 	/**
@@ -23,7 +24,6 @@ ServerEvents.loaded((event) => {
 	 */
 	function placeStructure(dimId, structurePath, pos) {
 		let level = server.getLevel(dimId)
-		let structureNamespace = global.namespace
 
 		if (!(level instanceof $ServerLevel)) {
 			console.warn(`Failed to find dimension: ${structureNamespace}:${dimId}`)

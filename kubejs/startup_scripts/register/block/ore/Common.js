@@ -1,8 +1,32 @@
 let commonOres = []
 
+// 不想写路径屎山
+let SetPath = {
+	vanilla: function (type) {
+		return `minecraft:block/${type}`
+	},
+	adAstra: function (type) {
+		return `ad_astra:block/${type}_stone`
+	}
+}
+
+// 定义纹理路径, 方便资源包适配
+let BackgroundTexture = {
+	stone: SetPath.vanilla("stone"),
+	deepslate: SetPath.vanilla("deepslate"),
+	nether: SetPath.vanilla("netherrack"),
+	end: SetPath.vanilla("end_stone"),
+
+	moon: SetPath.adAstra("moon"),
+	mars: SetPath.adAstra("mars"),
+	venus: SetPath.adAstra("venus"),
+	mercury: SetPath.adAstra("mercury"),
+	glacio: SetPath.adAstra("glacio")
+}
+
 // 继承父模型
 function simpleOreModel(background, ore) {
-	const BACKGROUND = `cmi:block/ore/assets/${background}`
+	const BACKGROUND = BackgroundTexture[background]
 	const ORE = `cmi:block/ore/assets/${ore}`
 	return {
 		parent: "cmi:block/ore/simple",
