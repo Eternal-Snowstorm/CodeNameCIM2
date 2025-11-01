@@ -8,6 +8,8 @@ let $Mirror =
 	Java.loadClass("net.minecraft.world.level.block.Mirror")
 
 ServerEvents.loaded((event) => {
+	let { server } = event
+
 	function getStructureName(path) {
 		return ResourceLocation.fromNamespaceAndPath("cmi", path)
 	}
@@ -20,7 +22,7 @@ ServerEvents.loaded((event) => {
 	 * @param {[number, number, number]} pos - 坐标 [x, y, z]
 	 */
 	function placeStructure(dimId, structurePath, pos) {
-		let level = event.server.getLevel(dimId)
+		let level = server.getLevel(dimId)
 		let structureNamespace = global.namespace
 
 		if (!(level instanceof $ServerLevel)) {
@@ -55,7 +57,7 @@ ServerEvents.loaded((event) => {
 	}
 
 	function placeAllStructures(structures) {
-		let data = event.server.persistentData
+		let data = server.persistentData
 
 		structures.forEach((structure) => {
 			let { id, dimId, path, pos } = structure
@@ -66,7 +68,7 @@ ServerEvents.loaded((event) => {
 				return
 			}
 
-			let level = event.server.getLevel(dimId)
+			let level = server.getLevel(dimId)
 			if (!(level instanceof $ServerLevel)) {
 				console.warn(`Failed to find dimension: ${dimId}`)
 				return
