@@ -30,8 +30,6 @@ ServerEvents.recipes((event) => {
 		"niso4",
 		"cocl2",
 		"coso4",
-		"oscl3",
-		"os2so43",
 		"na2so4",
 		"nacl",
 		"caso4",
@@ -70,8 +68,7 @@ ServerEvents.recipes((event) => {
 		"nickel",
 		"tin",
 		"lead",
-		"copper",
-		"osmium",
+		"copper"
 	]
 	metalActiveOrder.forEach((metal) => {
 		metalActiveOrder.slice(metalActiveOrder.indexOf(metal) + 1)
@@ -142,5 +139,28 @@ ServerEvents.recipes((event) => {
 					"time": 300
 				})
 			})
+	})
+
+	global.metalGroup.forEach((metal) => {
+		if (IngredUtils.isNotNull(`#forge:dusts/${metal}`) && IngredUtils.isNotNull(`#forge:chem_salts/${metal}/chloride`)) {
+			event.custom({
+				"type": "immersiveindustry:electrolyzer",
+				"input": {
+					"tag": `forge:chem_salts/${metal}/chloride`
+				},
+				"result_fluid": {
+					"fluid": "mekanism:chlorine",
+					"amount": 50
+				},
+				"result": {
+					"base_ingredient": {
+						"tag": `forge:dusts/${metal}`
+					},
+					"count": 1
+				},
+				"large_only": true,
+				"time": 20
+			})
+		}
 	})
 })

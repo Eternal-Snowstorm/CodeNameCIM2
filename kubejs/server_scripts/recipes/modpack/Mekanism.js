@@ -15,6 +15,6 @@ ServerEvents.recipes((event) => {
 		"thermal_extra:polyolefin_plate",
 		MekanismType.Gas.of("mekanism:oxygen", 10),
 		Fluid.of("mekanism:ethene", 50),
-		"mekanism:hdpe_pellet",
+		"mekanism:hdpe_pellet"
 	).duration(400).energyRequired(200)
 })
