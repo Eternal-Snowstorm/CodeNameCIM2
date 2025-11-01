@@ -197,7 +197,8 @@ ServerEvents.recipes((event) => {
 		"mekanism:tier_installer/advanced",
 		"mekanism:tier_installer/elite",
 		"mekanism:tier_installer/ultimate",
-		"ad_astra:water_pump"
+		"ad_astra:water_pump",
+		"@portality"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({

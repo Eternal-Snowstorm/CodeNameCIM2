@@ -33,6 +33,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("ad_astra:ice_shard")
 	addCommonTooltip("cmi:grass_fiber")
 	addCommonTooltip("#cmi:broken_drill_heads")
+	addCommonTooltip("portality:controller")
 
 	let chemSalts = [
 		"fecl2",
