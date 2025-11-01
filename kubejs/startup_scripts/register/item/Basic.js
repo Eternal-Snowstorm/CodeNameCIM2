@@ -15,14 +15,16 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/single_crystal_silicon`)
 	addItem("general_processor")
 		.texture(`${global.namespace}:item/material/general_processor`)
+
+	// 黑石源质
 	addItem("blackstone_source_alpha")
 		.texture(`${global.namespace}:item/material/blackstone_source_alpha`)
 	addItem("blackstone_source_beta")
 		.texture(`${global.namespace}:item/material/blackstone_source_beta`)
-
 	addItem("blackstone_source_gamma")
 		.texture(`${global.namespace}:item/material/blackstone_source_gamma`)
 
+	// 宝石原料
 	addItem("crystal_ruby")
 		.texture(`${global.namespace}:item/material/crystal_ruby`)
 	addItem("source_sapphire")
@@ -165,14 +167,17 @@ StartupEvents.registry("item", (event) => {
 	// 活泼元素
 	addItem("reactive_element")
 		.texture(`${global.namespace}:item/material/cc/1`)
-
-	// 稳定元素
 	addItem("stable_element")
 		.texture(`${global.namespace}:item/material/cc/2`)
-
-	// 爆鸣元素
 	addItem("explosive_element")
 		.texture(`${global.namespace}:item/material/cc/3`)
+
+	addItem("reactive_element_basement")
+		.texture(`${global.namespace}:item/material/cc/1_dust`)
+	addItem("stable_element_basement")
+		.texture(`${global.namespace}:item/material/cc/2_dust`)
+	addItem("explosive_element_basement")
+		.texture(`${global.namespace}:item/material/cc/3_dust`)
 
 	// Mg(OH)2
 	addItem("magnesium_hydroxide")

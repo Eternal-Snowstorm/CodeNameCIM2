@@ -108,6 +108,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("stable_element", "稳定元素")
 	addItemLanguage("explosive_element", "爆鸣元素")
 
+	addItemLanguage("reactive_element_basement", "活泼元素混合物")
+	addItemLanguage("stable_element_basement", "稳定元素混合物")
+	addItemLanguage("explosive_element_basement", "爆鸣元素混合物")
+
 	addItemLanguage("trinitrotoluene", "三硝基甲苯")
 	addItemLanguage("nitrocellulose", "硝化纤维")
 

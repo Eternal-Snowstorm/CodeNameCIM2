@@ -34,15 +34,4 @@ ServerEvents.recipes((event) => {
 		"mekanism:pellet_antimatter",
 		MekanismType.Gas.of("mekanism:antimatter", 10)
 	)
-
-	mekanism.combining(
-		"create:shadow_steel",
-		"create:chromatic_compound",
-		"64x #forge:dusts/obsidian"
-	)
-	mekanism.combining(
-		"create:refined_radiance",
-		"create:chromatic_compound",
-		"64x #forge:dusts/glowstone"
-	)
 })

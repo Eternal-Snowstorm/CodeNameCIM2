@@ -29,7 +29,6 @@ StartupEvents.registry("item", (event) => {
 	addSaltItem("uo2cl2", "uo2so4", "uranium")
 	addSaltItem("nicl2", "niso4", "nickel")
 	addSaltItem("cocl2", "coso4", "cobalt")
-	addSaltItem("oscl3", "os2so43", "osmium")
 	addSaltItem("mgcl2", "mgso4", "magnesium")
 	addSaltItem("nacl", "na2so4", "sodium")
 	addSaltItem("cacl2", "caso4", "calcium")

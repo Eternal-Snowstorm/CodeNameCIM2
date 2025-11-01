@@ -17,21 +17,19 @@ ServerEvents.recipes((event) => {
 		"cmi:lime"
 	])
 
-	// 氯化钠+硫酸钠+氯化钙+硫酸钙
+	// 钠盐+钙盐+钾盐
 	create.mixing([
 		Fluid.of("cmi:nacl_solution", 250),
-		Fluid.of("cmi:na2so4_solution", 250),
-		Fluid.of("cmi:cacl2_solution", 250),
-		Fluid.of("cmi:caso4_solution", 250)
+		Fluid.of("cmi:kcl_solution", 250),
+		Fluid.of("cmi:cacl2_solution", 250)
 	], [
 		Fluid.of("cmi:alkaline_concentrated_sea_water", 500),
 		Fluid.of("mekanism:sulfuric_acid", 500),
 	]).heated()
 
 	create.mixing([
-		Fluid.of("cmi:nacl_solution", 250),
 		Fluid.of("cmi:na2so4_solution", 250),
-		Fluid.of("cmi:cacl2_solution", 250),
+		Fluid.of("cmi:k2so4_solution", 250),
 		Fluid.of("cmi:caso4_solution", 250)
 	], [
 		Fluid.of("cmi:alkaline_concentrated_sea_water", 500),
@@ -113,24 +111,6 @@ ServerEvents.recipes((event) => {
 			Fluid.of("cmi:na2so4_solution", 300)
 		], Fluid.of("cmi:concentrated_sea_water", 1000))
 			.heatRequirement(global.HeatLevel["grilled"])
-
-	// 钠+氯气
-	event.custom({
-		"type": "immersiveindustry:electrolyzer",
-		"input": {
-			"tag": "forge:chem_salts/sodium/chloride"
-		},
-		"result_fluid": {
-			"fluid": "mekanism:chlorine",
-			"amount": 50
-		},
-		"result": {
-			"item": "cmi:sodium_dust",
-			"count": 1
-		},
-		"large_only": true,
-		"time": 20
-	})
 
 	// 氢氧化钠+氢气
 	create.mixing([
