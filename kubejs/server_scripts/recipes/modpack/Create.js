@@ -146,11 +146,15 @@ ServerEvents.recipes((event) => {
 		]),
 		create.deploying("#forge:gems/ruby", [
 			"#forge:gems/ruby",
-			"ae2:printed_silicon"
+			"#forge:plates/silicon_carbide"
 		]),
 		vintageimprovements.laser_cutting("#forge:gems/ruby", [
 			"#forge:gems/ruby"
 		]).energy(4000).maxChargeRate(4000),
+		create.deploying("#forge:gems/ruby", [
+			"#forge:gems/ruby",
+			"ae2:printed_silicon"
+		]),
 		create.deploying("#forge:gems/ruby", [
 			"#forge:gems/ruby",
 			"immersiveengineering:wirecoil_redstone"

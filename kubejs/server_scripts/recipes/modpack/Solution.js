@@ -142,7 +142,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	global.metalGroup.forEach((metal) => {
-		if (IngredUtils.isNotNull(`#forge:dusts/${metal}`) && IngrUtils.isNotNull(`#forge:chem_salts/${metal}/chloride`)) {
+		if (IngrUtils.isNotNull(`#forge:dusts/${metal}`) && IngrUtils.isNotNull(`#forge:chem_salts/${metal}/chloride`)) {
 			event.custom({
 				"type": "immersiveindustry:electrolyzer",
 				"input": {
