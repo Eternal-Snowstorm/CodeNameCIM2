@@ -207,6 +207,16 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:gears/chromeplated_steel")
 		.tag("forge:gears")
 
+	// 碳化硅
+	addItem("silicon_carbide")
+		.texture(`${global.namespace}:item/material/silicon_carbide`)
+
+	// 碳化硅板
+	addItem("silicon_carbide_plate")
+		.texture(`${global.namespace}:item/material/silicon_carbide_plate`)
+		.tag("forge:plates/silicon_carbide")
+		.tag("forge:plates")
+
 	// 火箭零件
 	for (let i = 1; i <= 4; i++) {
 		addItem(`tier_${i}_rocket_nose_cone`)

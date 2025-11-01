@@ -56,7 +56,7 @@ ServerEvents.recipes((event) => {
 
 	// 间歇泉喷射液
 	thermal.refinery([
-		Fluid.of("cmi:liquid_xenon", 250),
+		Fluid.of("cmi:xenon", 250),
 		"thermal:sulfur_dust"
 	], Fluid.of("cmi:geyser_jet", 1000))
 		.energy(4000)

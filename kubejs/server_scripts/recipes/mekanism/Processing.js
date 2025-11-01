@@ -58,21 +58,21 @@ ServerEvents.recipes((event) => {
 		let DIRTY_SLURRY = getDirtySlurry(material)
 
 		if (DIRTY_SLURRY !== null) {
-			if (IngredUtils.isNotNull(`#forge:raw_materials/${material}`)) {
+			if (IngrUtils.isNotNull(`#forge:raw_materials/${material}`)) {
 				mekanism.dissolution(
 					MekanismType.Slurry.of(DIRTY_SLURRY, 2000),
 					MekanismType.Gas.of("mekanism:sulfuric_acid", 1),
 					`3x #forge:raw_materials/${material}`
 				).id(`mekanism:processing/${material}/slurry/dirty/from_raw_ore`)
 			}
-			if (IngredUtils.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
+			if (IngrUtils.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
 				mekanism.dissolution(
 					MekanismType.Slurry.of(DIRTY_SLURRY, 6000),
 					MekanismType.Gas.of("mekanism:sulfuric_acid", 2),
 					`#forge:storage_blocks/raw_${material}`
 				).id(`mekanism:processing/${material}/slurry/dirty/from_raw_block`)
 			}
-			if (IngredUtils.isNotNull(`#forge:ores/${material}`)) {
+			if (IngrUtils.isNotNull(`#forge:ores/${material}`)) {
 				mekanism.dissolution(
 					MekanismType.Slurry.of(DIRTY_SLURRY, 1000),
 					MekanismType.Gas.of("mekanism:sulfuric_acid", 1),
@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
 			}
 		}
 
-		if (IngredUtils.isNotNull(CRYSTAL)) {
+		if (IngrUtils.isNotNull(CRYSTAL)) {
 			if (SLURRY !== null) {
 				mekanism.crystallizing(
 					"slurry",
@@ -98,8 +98,8 @@ ServerEvents.recipes((event) => {
 			}
 		}
 
-		if (IngredUtils.isNotNull(SHARD)) {
-			if (IngredUtils.isNotNull(`#forge:raw_materials/${material}`)) {
+		if (IngrUtils.isNotNull(SHARD)) {
+			if (IngrUtils.isNotNull(`#forge:raw_materials/${material}`)) {
 				mekanism.injecting(
 					`8x ${SHARD}`,
 					`3x #forge:raw_materials/${material}`,
@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
 				).id(`mekanism:processing/${material}/shard/from_raw_ore`)
 			}
 
-			if (IngredUtils.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
+			if (IngrUtils.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
 				mekanism.injecting(
 					`24x ${SHARD}`,
 					`#forge:storage_blocks/raw_${material}`,
@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
 				).id(`mekanism:processing/${material}/shard/from_raw_block`)
 			}
 
-			if (IngredUtils.isNotNull(`#forge:ores/${material}`)) {
+			if (IngrUtils.isNotNull(`#forge:ores/${material}`)) {
 				mekanism.injecting(
 					`4x ${SHARD}`,
 					`#forge:ores/${material}`,
@@ -123,7 +123,7 @@ ServerEvents.recipes((event) => {
 				).id(`mekanism:processing/${material}/shard/from_ore`)
 			}
 
-			if (IngredUtils.isNotNull(CRYSTAL)) {
+			if (IngrUtils.isNotNull(CRYSTAL)) {
 				mekanism.injecting(
 					SHARD,
 					CRYSTAL,
@@ -132,8 +132,8 @@ ServerEvents.recipes((event) => {
 			}
 		}
 
-		if (IngredUtils.isNotNull(CLUMP)) {
-			if (IngredUtils.isNotNull(`#forge:raw_materials/${material}`)) {
+		if (IngrUtils.isNotNull(CLUMP)) {
+			if (IngrUtils.isNotNull(`#forge:raw_materials/${material}`)) {
 				mekanism.purifying(
 					`2x ${CLUMP}`,
 					`#forge:raw_materials/${material}`,
@@ -141,7 +141,7 @@ ServerEvents.recipes((event) => {
 				).id(`mekanism:processing/${material}/clump/from_raw_ore`)
 			}
 
-			if (IngredUtils.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
+			if (IngrUtils.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
 				mekanism.purifying(
 					`18x ${CLUMP}`,
 					`#forge:storage_blocks/raw_${material}`,
@@ -149,7 +149,7 @@ ServerEvents.recipes((event) => {
 				).id(`mekanism:processing/${material}/clump/from_raw_block`)
 			}
 
-			if (IngredUtils.isNotNull(`#forge:ores/${material}`)) {
+			if (IngrUtils.isNotNull(`#forge:ores/${material}`)) {
 				mekanism.purifying(
 					`3x ${CLUMP}`,
 					`#forge:ores/${material}`,
@@ -157,7 +157,7 @@ ServerEvents.recipes((event) => {
 				).id(`mekanism:processing/${material}/clump/from_ore`)
 			}
 
-			if (IngredUtils.isNotNull(SHARD)) {
+			if (IngrUtils.isNotNull(SHARD)) {
 				mekanism.purifying(
 					CLUMP,
 					SHARD,
@@ -165,7 +165,7 @@ ServerEvents.recipes((event) => {
 				).id(`mekanism:processing/${material}/clump/from_shard`)
 			}
 
-			if (IngredUtils.isNotNull(DIRTY_DUST)) {
+			if (IngrUtils.isNotNull(DIRTY_DUST)) {
 				mekanism.crushing(
 					DIRTY_DUST,
 					CLUMP
@@ -173,7 +173,7 @@ ServerEvents.recipes((event) => {
 			}
 		}
 
-		if (IngredUtils.isNotNull(DIRTY_DUST) && IngredUtils.isNotNull(DUST)) {
+		if (IngrUtils.isNotNull(DIRTY_DUST) && IngrUtils.isNotNull(DUST)) {
 			mekanism.enriching(
 				DUST,
 				DIRTY_DUST

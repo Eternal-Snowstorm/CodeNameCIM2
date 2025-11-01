@@ -415,6 +415,9 @@ ServerEvents.tags("item", (event) => {
 	event.get("create:blaze_burner_fuel/special")
 		.add("tconstruct:blazing_blood_bucket")
 
+	event.get("ae2:inscriber_presses")
+		.add("ae2:name_press")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",

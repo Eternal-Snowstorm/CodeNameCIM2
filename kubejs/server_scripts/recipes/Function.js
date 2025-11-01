@@ -16,7 +16,7 @@ let $Gas =
 let $Chemical =
 	Java.loadClass("mekanism.api.chemical.Chemical")
 
-let IngredUtils = {
+let IngrUtils = {
 	/**
 	 * 获取标签内第一个物品的ID, 若标签下没有物品则返回null
 	 * @param {string} tagOrItem 物品标签ID
@@ -102,7 +102,7 @@ function aeCharger(output, input) {
 		type: "ae2:charger",
 		ingredient: Ingredient.of(input).toJson(),
 		result: {
-			item: IngredUtils.getFirstItemId(output)
+			item: IngrUtils.getFirstItemId(output)
 		}
 	}
 }
@@ -167,6 +167,6 @@ BlockEvents.rightClicked((event) => {
 	const DEBUG_BLOCK = "cmi:green_screen"
 
 	if (block.id === DEBUG_BLOCK) {
-		player.tell(IngredUtils.getFirstFluidId("forge:solutions/iron/chloride"))
+		player.tell(IngrUtils.getFirstFluidId("forge:solutions/iron/chloride"))
 	}
 })

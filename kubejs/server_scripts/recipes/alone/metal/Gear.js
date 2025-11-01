@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
 		const INGOT = `#forge:ingots/${metal}`
 		const GEAR = `#forge:gears/${metal}`
 
-		if (IngredUtils.isNotNull(GEAR)) {
+		if (IngrUtils.isNotNull(GEAR)) {
 			thermal.press(GEAR, [
 				`4x ${INGOT}`,
 				"thermal:press_gear_die"

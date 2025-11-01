@@ -12,4 +12,16 @@ ServerEvents.recipes((event) => {
 		"#forge:circuits/advanced",
 		"cmi:incomplete_advanced_control_circuit"
 	).chemicalInput({ infuse_type: "mekanism:redstone", amount: 40 })
+
+	// 强化合金
+	mekanism.metallurgic_infusing(
+		"mekanism:alloy_reinforced",
+		"#forge:ingots/etrium"
+	).chemicalInput({ infuse_type: "mekanism:diamond", amount: 40 })
+
+	// 碳化硅
+	mekanism.metallurgic_infusing(
+		"cmi:silicon_carbide",
+		"#forge:silicon"
+	).chemicalInput({ infuse_type: "mekanism:carbon", amount: 40 })
 })

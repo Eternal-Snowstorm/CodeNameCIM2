@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
 		vintageimprovements.laser_cutting("#forge:nuggets/etrium", [
 			"#forge:nuggets/etrium"
 		]).energy(4000).maxChargeRate(4000)
-	]).loops(1).transitionalItem(IngredUtils.getFirstItemId("#forge:nuggets/etrium"))
+	]).loops(1).transitionalItem(IngrUtils.getFirstItemId("#forge:nuggets/etrium"))
 
 	// 太空
 	create.sequenced_assembly("4x cmi:space_mechanism_part", [
@@ -53,5 +53,5 @@ ServerEvents.recipes((event) => {
 		vintageimprovements.laser_cutting("#forge:nuggets/tungsten", [
 			"#forge:nuggets/tungsten"
 		]).energy(4000).maxChargeRate(4000)
-	]).loops(1).transitionalItem(IngredUtils.getFirstItemId("#forge:nuggets/tungsten"))
+	]).loops(1).transitionalItem(IngrUtils.getFirstItemId("#forge:nuggets/tungsten"))
 })

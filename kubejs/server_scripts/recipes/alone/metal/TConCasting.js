@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { thermal, tconstruct } = event.recipes
 
 	global.metalGroup.forEach((metal) => {
-		let fluid = IngredUtils.getFirstFluidId(`forge:molten_${metal}`)
+		let fluid = IngrUtils.getFirstFluidId(`forge:molten_${metal}`)
 
 		if (fluid === null) {
 			console.warn(`No molten metal found for ${metal}!`)
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 			"thermal:chiller_ingot_cast"
 		]).energy(4800)
 
-		if (IngredUtils.isNotNull(NUGGET)) {
+		if (IngrUtils.isNotNull(NUGGET)) {
 			tconstruct.casting_table(NUGGET)
 				.cast(`${MULTI_USE_CAST}/nugget`)
 				.fluid(Fluid.of(fluid, 10))
@@ -56,7 +56,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No nugget found for ${metal}!`)
 		}
 
-		if (IngredUtils.isNotNull(BLOCK)) {
+		if (IngrUtils.isNotNull(BLOCK)) {
 			tconstruct.casting_basin(BLOCK)
 				.fluid(Fluid.of(fluid, 810))
 				.cooling_time(20 * 9)
@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No storage block found for ${metal}!`)
 		}
 
-		if (IngredUtils.isNotNull(PLATE)) {
+		if (IngrUtils.isNotNull(PLATE)) {
 			tconstruct.casting_table(PLATE)
 				.cast(`${MULTI_USE_CAST}/plate`)
 				.fluid(Fluid.of(fluid, 90))
@@ -84,7 +84,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No plate found for ${metal}!`)
 		}
 
-		if (IngredUtils.isNotNull(ROD)) {
+		if (IngrUtils.isNotNull(ROD)) {
 			tconstruct.casting_table(ROD)
 				.cast(`${MULTI_USE_CAST}/rod`)
 				.fluid(Fluid.of(fluid, 45))
@@ -104,7 +104,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No rod found for ${metal}!`)
 		}
 
-		if (IngredUtils.isNotNull(GEAR)) {
+		if (IngrUtils.isNotNull(GEAR)) {
 			tconstruct.casting_table(GEAR)
 				.cast(`${MULTI_USE_CAST}/gear`)
 				.fluid(Fluid.of(fluid, 360))
@@ -124,7 +124,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No gear found for ${metal}!`)
 		}
 
-		if (IngredUtils.isNotNull(COIN)) {
+		if (IngrUtils.isNotNull(COIN)) {
 			tconstruct.casting_table(COIN)
 				.cast(`${MULTI_USE_CAST}/coin`)
 				.fluid(Fluid.of(fluid, 30))

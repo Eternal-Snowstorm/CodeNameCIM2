@@ -127,7 +127,8 @@ ServerEvents.recipes((event) => {
 		"thermal:storage/sugar_cane_block",
 		"create:crafting/kinetics/fluid_pipe_vertical",
 		"mekanism:metallurgic_infusing/alloy/infused",
-		"ae2:transform/entangled_singularity_from_pearl"
+		"ae2:transform/entangled_singularity_from_pearl",
+		"mekanism:metallurgic_infusing/alloy/reinforced"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
