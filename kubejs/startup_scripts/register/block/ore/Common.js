@@ -11,7 +11,7 @@ let SetPath = {
 }
 
 // 定义纹理路径, 方便资源包适配
-let BackgroundTexture = {
+let BackgroundTextures = {
 	stone: SetPath.vanilla("stone"),
 	deepslate: SetPath.vanilla("deepslate"),
 	nether: SetPath.vanilla("netherrack"),
@@ -26,7 +26,7 @@ let BackgroundTexture = {
 
 // 继承父模型
 function simpleOreModel(background, ore) {
-	const BACKGROUND = BackgroundTexture[background]
+	const BACKGROUND = BackgroundTextures[background]
 	const ORE = `cmi:block/ore/assets/${ore}`
 	return {
 		parent: "cmi:block/ore/simple",
