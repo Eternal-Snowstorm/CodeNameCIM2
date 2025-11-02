@@ -338,11 +338,13 @@ ServerEvents.recipes((event) => {
 
 	// 计算
 	create.sequenced_assembly("cmi:computing_mechanism", [
-		"cmi:single_crystal_silicon"
+		"ae2:sky_dust"
 	], [
-		create.pressing(icpm, icpm),
-		create.deploying(icpm, [icpm, "cmi:computer_component"]),
-		create.deploying(icpm, [icpm, "cmi:mekanism_mechanism_part"])
+		create.pressing(icpm, [icpm]),
+		create.deploying(icpm, [icpm, "immersiveengineering:circuit_board"]),
+		create.deploying(icbm, [icbm, "ae2:calculation_processor"]),
+		create.deploying(icbm, [icbm, "ae2:engineering_processor"]),
+		create.deploying(icbm, [icbm, "cmi:general_processor"])
 	]).transitionalItem(icpm).loops(1)
 
 	// 1航天
@@ -365,12 +367,11 @@ ServerEvents.recipes((event) => {
 
 	// 3航天
 	create.sequenced_assembly("cmi:tier_3_aviation_mechanism", [
-		"#forge:plates/ostrum"
+		"cmi:tier_3_aviation_mechanism_basement"
 	], [
-		create.deploying(ir3m, [ir3m, "cmi:computer_component"]),
-		create.deploying(ir3m, [ir3m, "ad_astra:desh_fluid_pipe"]),
 		create.deploying(ir3m, [ir3m, "ad_astra:ostrum_tank"]),
-		create.deploying(ir3m, [ir3m, "cmi:space_mechanism_part"]),
+		create.deploying(ir3m, [ir3m, "ad_astra:ostrum_engine"]),
+		create.deploying(ir3m, [ir3m, "cmi:space_mechanism_part"])
 	]).transitionalItem(ir3m).loops(1)
 
 	// 4航天
