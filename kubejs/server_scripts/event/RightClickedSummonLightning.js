@@ -1,11 +1,14 @@
+let $EntityType = Java.loadClass("net.minecraft.world.entity.EntityType")
+
 BlockEvents.rightClicked((event) => {
-	let { block: { x, y, z }, player } = event
+	let { block, player, level } = event
 
-	const ACCELERATOR = "cmi:accelerator"
-	const MECH = "cmi:coil_mechanism"
+	if (!level.isClientSide()) {
+		if (player.mainHandItem.id === "cmi:coil_mechanism" && block.id === "cmi:accelerator") {
+			const LIGHTNING = $EntityType.LIGHTNING_BOLT.create(level)
 
-	if (player.mainHandItem === MECH && block.id === ACCELERATOR) {
-		let command = `execute as ${player.username} at ${player.username} positioned as ${player.username} run summon minecraft:lightning_bolt ${x} ${y} ${z}`
-		player.runCommandSilent(command)
+			LIGHTNING.setPos(block.x + 0.5, block.y, block.z + 0.5)
+			level.addFreshEntity(LIGHTNING)
+		}
 	}
 })
