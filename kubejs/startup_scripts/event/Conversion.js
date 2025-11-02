@@ -5,7 +5,7 @@ StartupEvents.postInit((event) => {
 		Java.loadClass("com.simibubi.create.compat.jei.ConversionRecipe")
 
 	function addConversionRecipe(output, input) {
-		$Category.RECIPES.add($ConversionRecipe.create(input, output))
+		return $Category.RECIPES.add($ConversionRecipe.create(input, output))
 	}
 
 	// 光辉石
