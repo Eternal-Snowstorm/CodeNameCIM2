@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
 			"amount": 500
 		},
 		"result": {
-			"item": "cmi:chrome-plated_steel_gear",
+			"item": "cmi:chromeplated_steel_gear",
 			"count": 1
 		},
 		"large_only": true,
@@ -91,7 +91,7 @@ ServerEvents.recipes((event) => {
 			"amount": 500
 		},
 		"result": {
-			"item": "cmi:chrome-plated_steel_gear",
+			"item": "cmi:chromeplated_steel_gear",
 			"count": 1
 		},
 		"large_only": true,
