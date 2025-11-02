@@ -1422,7 +1422,7 @@
 			y: -1.5d
 		}
 		{
-			icon: "tconstruct:steel_ingot"
+			icon: "thermal:steel_ingot"
 			id: "6FCF9F67624D88CF"
 			rewards: [{
 				id: "3BE4CBACC037A2A9"
@@ -1614,7 +1614,7 @@
 			y: 1.5d
 		}
 		{
-			icon: "tconstruct:rose_gold_ingot"
+			icon: "thermal:rose_gold_ingot"
 			id: "6035061CC312D16B"
 			rewards: [{
 				id: "7CDAD552851DB37F"
