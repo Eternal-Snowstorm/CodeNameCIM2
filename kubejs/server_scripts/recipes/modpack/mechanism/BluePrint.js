@@ -31,6 +31,12 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/twinite"
 	])
 
+	addRecipe("cmi:tier_3_aviation_mechanism_basement", [
+		"#forge:plates/ostrum",
+		"#forge:plates/etrium",
+		"#forge:circuits/elite"
+	])
+
 	/**
 	 * 
 	 * @param {Internal.Item_} output 输出物品

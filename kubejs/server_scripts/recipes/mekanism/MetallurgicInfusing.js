@@ -24,4 +24,10 @@ ServerEvents.recipes((event) => {
 		"cmi:silicon_carbide",
 		"#forge:silicon"
 	).chemicalInput({ infuse_type: "mekanism:carbon", amount: 40 })
+
+	// 精英控制电路
+	mekanism.metallurgic_infusing(
+		"mekanism:elite_control_circuit",
+		"cmi:incomplete_elite_control_circuit"
+	).chemicalInput({ infuse_type: "mekanism:diamond", amount: 40 })
 })

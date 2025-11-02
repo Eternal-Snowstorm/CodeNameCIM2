@@ -1,6 +1,6 @@
 // priority: 100
 
-let RegisterNativeEvents = {
+let RegisterForgeEvents = {
 	/**
 	 * 
 	 * @template T
