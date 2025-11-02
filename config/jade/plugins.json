@@ -90,11 +90,12 @@
     "crafting_monitor": true,
     "part_name": true
   },
+  "mbd2": {
+    "recipe_logic_provider": true,
+    "multiblock_provider": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
-  },
-  "yes_steve_model": {
-    "model_info": true
   },
   "mekanism": {
     "infuse_type": true,

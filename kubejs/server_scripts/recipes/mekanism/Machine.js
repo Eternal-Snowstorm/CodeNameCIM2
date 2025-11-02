@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
 		A: alloyE,
 		B: mechE,
 		C: "#forge:ingots/gold",
-		D: "mekanism:enrichment_chamber",
+		D: "mekanism:purification_chamber",
 	}).id("mekanism:chemical_injection_chamber")
 
 	// 灌注
@@ -87,8 +87,8 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyB,
-		B: mechB,
+		A: alloyA,
+		B: mechA,
 		C: "mekanism:basic_chemical_tank",
 		D: casing,
 	}).id("mekanism:chemical_infuser")
@@ -124,8 +124,8 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyU,
-		B: mechU,
+		A: alloyA,
+		B: mechA,
 		C: "mekanism:basic_chemical_tank",
 		D: casing,
 	}).id("mekanism:chemical_dissolution_chamber")
@@ -189,4 +189,53 @@ ServerEvents.recipes((event) => {
 		C: "minecraft:diamond_block",
 		D: casing,
 	}).id("mekanism:dimensional_stabilizer")
+
+	// 合成
+	kubejs.shaped("mekanism:formulaic_assemblicator", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: alloyA,
+		C: mechA,
+		B: "minecraft:crafting_table",
+		D: casing,
+	}).id("mekanism:formulaic_assemblicator")
+
+	//氧化
+	kubejs.shaped("mekanism:chemical_oxidizer", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: alloyA,
+		B: mechA,
+		C: "mekanism:basic_chemical_tank",
+		D: casing,
+	}).id("mekanism:chemical_oxidizer")
+
+	//加压
+	kubejs.shaped("mekanism:pressurized_reaction_chamber", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: alloyA,
+		B: mechA,
+		C: "cmi:air_tight_mechanism",
+		D: casing,
+	}).id("mekanism:pressurized_reaction_chamber")
+
+	//同位素
+	kubejs.shaped("mekanism:isotopic_centrifuge", [
+		"EAE",
+		"ECE",
+		"BDB"
+	], {
+		A: alloyA,
+		B: mechA,
+		C: "mekanism:basic_chemical_tank",
+		D: casing,
+		E: "#forge:ingots/lead"
+	}).id("mekanism:isotopic_centrifuge")
 })

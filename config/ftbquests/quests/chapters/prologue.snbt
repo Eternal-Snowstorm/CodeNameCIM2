@@ -5,6 +5,170 @@
 	group: ""
 	icon: "minecraft:oak_sapling"
 	id: "29A4A4AB5A6C2147"
+	images: [
+		{
+			click: "command:reload"
+			height: 1.0d
+			hover: ["重新加载"]
+			image: "fancymenu:textures/contextmenu/icons/reload.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			click: "https://www.curseforge.com/minecraft/modpacks/create-mechanism-and-innovation"
+			height: 1.0d
+			hover: ["Curseforge"]
+			image: "fancymenu:textures/contextmenu/icons/link.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			click: "https://github.com/VechniMetel/CodeNameCIM2"
+			height: 1.0d
+			hover: ["Github"]
+			image: "fancymenu:textures/contextmenu/icons/open.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			click: "https://space.bilibili.com/3461572013853145"
+			height: 1.0d
+			hover: ["视频"]
+			image: "fancymenu:textures/contextmenu/icons/video.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			click: "file:resourcepacks"
+			height: 1.0d
+			hover: ["资源包文件夹"]
+			image: "fancymenu:textures/contextmenu/icons/save_as.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			click: "file:screenshots"
+			height: 1.0d
+			hover: ["截图文件夹"]
+			image: "fancymenu:textures/contextmenu/icons/image.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			click: "file:shaderpacks"
+			height: 1.0d
+			hover: ["光影包文件夹"]
+			image: "fancymenu:textures/contextmenu/icons/settings.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			click: "file:C:/WINDOWS/System32/SlideToShutDown.exe"
+			height: 1.0d
+			hover: [
+				"关闭计算机"
+				"需Windows 8及以上操作系统"
+			]
+			image: "fancymenu:textures/contextmenu/icons/screen.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			click: "file:mods"
+			height: 1.0d
+			hover: ["模组文件夹"]
+			image: "fancymenu:textures/contextmenu/icons/gui.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			click: "file:saves"
+			height: 1.0d
+			hover: ["存档文件夹"]
+			image: "fancymenu:textures/contextmenu/icons/check_list.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			click: "file:C:/WINDOWS/System32/calc.exe"
+			height: 1.0d
+			hover: [
+				"计算器"
+				"需Windows操作系统"
+			]
+			image: "fancymenu:textures/contextmenu/icons/book.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			click: "file:logs"
+			height: 1.0d
+			hover: ["日志文件夹"]
+			image: "fancymenu:textures/contextmenu/icons/copy.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			click: "file:kubejs"
+			height: 1.0d
+			hover: ["KubeJS文件夹"]
+			image: "fancymenu:textures/contextmenu/icons/script.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			click: "file:C:/WINDOWS/notepad.exe"
+			height: 1.0d
+			hover: [
+				"记事本"
+				"需Windows操作系统"
+			]
+			image: "fancymenu:textures/contextmenu/icons/edit.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			click: "file:config/cmi/cmi.bat"
+			height: 1.0d
+			hover: [
+				"CMI"
+				"需Windows操作系统"
+			]
+			image: "cmi:item/mechanism/complete/iron"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.0d
+			y: 1.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

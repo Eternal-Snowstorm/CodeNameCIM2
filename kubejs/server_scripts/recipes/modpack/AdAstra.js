@@ -19,35 +19,35 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:tier_1_rocket_frame", [
 		"cmi:rocket_pattern"
 	], [
-		create.deploying("ad_astra:steel_pillar", [
-			"ad_astra:steel_pillar",
-			"#forge:storage_blocks/steel"
+		create.deploying("cmi:tungsten_steel_block", [
+			"cmi:tungsten_steel_block",
+			"#forge:storage_blocks/tungsten_steel"
 		]),
-		create.deploying("ad_astra:steel_pillar", [
-			"ad_astra:steel_pillar",
+		create.deploying("cmi:tungsten_steel_block", [
+			"cmi:tungsten_steel_block",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("ad_astra:steel_pillar", [
-			"ad_astra:steel_pillar",
+		create.deploying("cmi:tungsten_steel_block", [
+			"cmi:tungsten_steel_block",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("ad_astra:steel_pillar", [
-			"ad_astra:steel_pillar",
+		create.deploying("cmi:tungsten_steel_block", [
+			"cmi:tungsten_steel_block",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("ad_astra:steel_pillar", [
-			"ad_astra:steel_pillar",
+		create.deploying("cmi:tungsten_steel_block", [
+			"cmi:tungsten_steel_block",
 			"ad_astra:rocket_fin"
 		]),
-		create.deploying("ad_astra:steel_pillar", [
-			"ad_astra:steel_pillar",
-			"#forge:storage_blocks/steel"
+		create.deploying("cmi:tungsten_steel_block", [
+			"cmi:tungsten_steel_block",
+			"#forge:storage_blocks/tungsten_steel"
 		]),
-		create.deploying("ad_astra:steel_pillar", [
-			"ad_astra:steel_pillar",
+		create.deploying("cmi:tungsten_steel_block", [
+			"cmi:tungsten_steel_block",
 			"ad_astra:rocket_nose_cone"
 		]),
-	]).loops(1).transitionalItem("ad_astra:steel_pillar")
+	]).loops(1).transitionalItem("cmi:tungsten_steel_block")
 
 	// Tier2
 	create.sequenced_assembly("cmi:tier_2_rocket_frame", [

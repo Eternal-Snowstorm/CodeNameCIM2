@@ -197,7 +197,7 @@
 			}]
 			tasks: [{
 				id: "4994BF4BF537AE73"
-				item: "createaddition:gold_rod"
+				item: "thermal_extra:gold_rod"
 				type: "item"
 			}]
 			title: "金棒"

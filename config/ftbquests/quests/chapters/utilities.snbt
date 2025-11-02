@@ -496,6 +496,7 @@
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["中键整理"]
 			hide_dependency_lines: true
 			icon: "create:brass_hand"
 			id: "217440E1A1A049D3"
