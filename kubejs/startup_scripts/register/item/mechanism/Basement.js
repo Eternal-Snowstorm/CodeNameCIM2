@@ -27,4 +27,6 @@ StartupEvents.registry("item", (event) => {
 	addMechanismBasement("advanced_mekanism")
 	addMechanismBasement("elite_mekanism")
 	addMechanismBasement("ultimate_mekanism")
+
+	addMechanismBasement("nuclear")
 })

@@ -1,6 +1,6 @@
 StartupEvents.registry("item", (event) => {
 	function addItem(name) {
-		return event.create(`${global.namespace}:${name}`)
+		return event.create(`${global.namespace}:${name}`, "create:sequenced_assembly")
 	}
 	// mek未完成电路板
 	addItem("incomplete_advanced_control_circuit")
