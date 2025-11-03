@@ -26,13 +26,13 @@ StartupEvents.registry("item", (event) => {
 
 	// 升级组件
 	addItem("incomplete_upgrade_augment_1")
-		.texture(`${global.namespace}:item/mechanism/incomplete/thermal`)
+		.texture(`${global.namespace}:item/material/upgrade/1`)
 
 	addItem("incomplete_upgrade_augment_2")
-		.texture(`${global.namespace}:item/mechanism/incomplete/feinforced`)
+		.texture(`${global.namespace}:item/material/upgrade/2`)
 
 	addItem("incomplete_upgrade_augment_3")
-		.texture(`${global.namespace}:item/mechanism/incomplete/resonant`)
+		.texture(`${global.namespace}:item/material/upgrade/3`)
 
 	// 航天硬盘(半成品)
 	addItem("incomplete_aviation_cell")
