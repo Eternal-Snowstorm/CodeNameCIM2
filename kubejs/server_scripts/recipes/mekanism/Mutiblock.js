@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 	const CASING = "mekanism:steel_casing"
-	const MECH = {
+	let Mech = {
 		T1: "cmi:basic_mekanism_mechanism",
 		T2: "cmi:advanced_mekanism_mechanism",
 		T3: "cmi:elite_mekanism_mechanism",
@@ -18,14 +18,14 @@ ServerEvents.recipes((event) => {
 		" A "
 	], {
 		A: "#forge:plates/stainless_steel",
-		B: MECH.COPPER
+		B: Mech.COPPER
 	}).id("mekanism:dynamic_tank")
 
 	kubejs.shaped("mekanism:dynamic_valve", [
 		"ABA"
 	], {
 		A: "2x mekanism:dynamic_tank",
-		B: MECH.COPPER
+		B: Mech.COPPER
 	}).id("mekanism:dynamic_valve")
 
 	// 蒸馏
@@ -44,15 +44,15 @@ ServerEvents.recipes((event) => {
 		" C "
 	], {
 		A: "mekanism:thermal_evaporation_block",
-		B: MECH.T1,
-		C: MECH.BRONZE
+		B: Mech.T1,
+		C: Mech.BRONZE
 	}).id("mekanism:thermal_evaporation/controller")
 
 	kubejs.shaped("2x mekanism:thermal_evaporation_valve", [
 		"ABA"
 	], {
 		A: "mekanism:thermal_evaporation_block",
-		B: MECH.COPPER
+		B: Mech.COPPER
 	}).id("mekanism:thermal_evaporation/valve")
 
 	// 锅炉
@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
 		" A "
 	], {
 		A: "#forge:plates/stainless_steel",
-		B: MECH.BRONZE
+		B: Mech.BRONZE
 	}).id("mekanism:boiler_casing")
 
 	kubejs.shaped("mekanism:pressure_disperser", [
@@ -80,8 +80,8 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: "mekanism:boiler_casing",
-		B: MECH.AIR,
-		C: MECH.COPPER
+		B: Mech.AIR,
+		C: Mech.COPPER
 	}).id("mekanism:boiler_valve")
 	// 裂变
 	kubejs.shaped("8x mekanismgenerators:fission_reactor_casing", [
@@ -90,7 +90,7 @@ ServerEvents.recipes((event) => {
 		" A "
 	], {
 		A: ["#forge:ingots/lead"],
-		M: MECH.AIR,
+		M: Mech.AIR,
 	}).id("mekanismgenerators:fission_reactor/casing")
 
 	// 涡轮
@@ -100,7 +100,7 @@ ServerEvents.recipes((event) => {
 		" A "
 	], {
 		A: ["#forge:ingots/osmium"],
-		M: MECH.AIR,
+		M: Mech.AIR,
 	}).id("mekanismgenerators:turbine/casing")
 
 	// 玻璃
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
 		"AMA",
 		" A "
 	], {
-		A: ["#forge:glass"],
-		M: "cmi:air_tight_mechanism",
+		A: "#forge:glass",
+		M: Mech.AIR,
 	}).id("mekanism:structural_glass")
 })
