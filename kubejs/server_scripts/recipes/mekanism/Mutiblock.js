@@ -128,10 +128,10 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 裂变
-	kubejs.shaped("8x mekanismgenerators:fission_reactor_casing", [
-		"A A",
-		" B ",
-		"A A"
+	kubejs.shaped("4x mekanismgenerators:fission_reactor_casing", [
+		" A ",
+		"ABA",
+		" A "
 	], {
 		A: "#forge:plates/lead",
 		B: CASING
