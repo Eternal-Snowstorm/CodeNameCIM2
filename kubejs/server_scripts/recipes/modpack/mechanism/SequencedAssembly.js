@@ -274,7 +274,7 @@ ServerEvents.recipes((event) => {
 	], [
 		create.deploying(ium, [ium, "mekanism:pellet_polonium"]),
 		create.deploying(ium, [ium, "mekanism:pellet_plutonium"]),
-		create.pressing(ium, ium),
+		create.deploying(ium, [ium, "#forge:circuits/elite"]),
 		create.deploying(ium, [ium, "cmi:quantum_mechanism_part"]),
 	]).transitionalItem(ium).loops(1)
 

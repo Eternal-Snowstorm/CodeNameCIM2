@@ -128,7 +128,8 @@ ServerEvents.recipes((event) => {
 		"create:crafting/kinetics/fluid_pipe_vertical",
 		"mekanism:metallurgic_infusing/alloy/infused",
 		"ae2:transform/entangled_singularity_from_pearl",
-		"mekanism:metallurgic_infusing/alloy/reinforced"
+		"mekanism:metallurgic_infusing/alloy/reinforced",
+		"ae2:network/blocks/io_condenser"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

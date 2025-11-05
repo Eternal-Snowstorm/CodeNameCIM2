@@ -43,6 +43,12 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/dragonsteel"
 	])
 
+	addRecipe("cmi:nuclear_mechanism_basement", [
+		"#forge:plates/lead",
+		"alexscaves:fissile_core",
+		"cmi:nuke_cooler"
+	])
+
 	/**
 	 * 
 	 * @param {Internal.Item_} output 输出物品

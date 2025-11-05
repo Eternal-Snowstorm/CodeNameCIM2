@@ -8,12 +8,14 @@ ServerEvents.recipes((event) => {
 	let coreF = "ae2:formation_core"
 	let coreA = "ae2:annihilation_core"
 
+	// 迷你TNT
 	kubejs.shapeless("ae2:tiny_tnt", [
 		"minecraft:paper",
 		"cmi:trinitrotoluene",
 		"cmi:trinitrotoluene"
 	]).id("ae2:misc/tiny_tnt")
 
+	// ME控制器
 	kubejs.shaped("4x ae2:controller", [
 		"SCS",
 		"CMC",
@@ -24,6 +26,7 @@ ServerEvents.recipes((event) => {
 		C: mech
 	}).id("ae2:network/blocks/controller")
 
+	// 压印器
 	kubejs.shaped("ae2:inscriber", [
 		" P ",
 		"CZM",
@@ -35,6 +38,7 @@ ServerEvents.recipes((event) => {
 		Z: casing
 	}).id("ae2:network/blocks/inscribers")
 
+	// 陨石外壳
 	kubejs.shaped("4x cmi:sky_stone_casing", [
 		"ABA",
 		"BCB",
@@ -45,6 +49,7 @@ ServerEvents.recipes((event) => {
 		C: "ae2:smooth_sky_stone_block"
 	})
 
+	// 高级计算外壳
 	kubejs.shaped("4x cmi:computing_casing", [
 		"ABA",
 		"BCB",
@@ -55,6 +60,7 @@ ServerEvents.recipes((event) => {
 		C: "cmi:osmium_tile"
 	})
 
+	// 充能器
 	kubejs.shaped("ae2:charger", [
 		"ABA",
 		"A  ",
@@ -64,6 +70,7 @@ ServerEvents.recipes((event) => {
 		B: "minecraft:amethyst_shard",
 	}).id("ae2:network/blocks/crystal_processing_charger")
 
+	// ME驱动器
 	kubejs.shaped("ae2:drive", [
 		"CAC",
 		"DBD",
@@ -75,6 +82,7 @@ ServerEvents.recipes((event) => {
 		D: "#ae2:glass_cable",
 	}).id("ae2:network/blocks/storage_drive")
 
+	// ME接口
 	kubejs.shaped("ae2:interface", [
 		"A",
 		"B",
@@ -85,18 +93,21 @@ ServerEvents.recipes((event) => {
 		C: coreA,
 	}).id("ae2:network/blocks/interfaces_interface")
 
+	// 成型核心
 	kubejs.shapeless("2x ae2:formation_core", [
 		mech,
 		"ae2:fluix_dust",
 		"#ae2:all_certus_quartz"
 	]).id("ae2:materials/formationcore")
 
+	// 破坏核心
 	kubejs.shapeless("2x ae2:annihilation_core", [
 		mech,
 		"ae2:fluix_dust",
 		"minecraft:quartz"
 	]).id("ae2:materials/annihilationcore")
 
+	// 基础卡
 	kubejs.shaped("2x ae2:basic_card", [
 		"A",
 		"B",
@@ -107,6 +118,7 @@ ServerEvents.recipes((event) => {
 		C: silver,
 	}).id("ae2:materials/basiccard")
 
+	// 高级卡
 	kubejs.shaped("2x ae2:advanced_card", [
 		"A",
 		"B",
@@ -117,28 +129,32 @@ ServerEvents.recipes((event) => {
 		C: silver,
 	}).id("ae2:materials/advancedcard")
 
+	// 溢出销毁卡
 	kubejs.shapeless("ae2:void_card", [
 		"#forge:dusts/obsidian",
 		"ae2:basic_card"
 	]).id("ae2:materials/cardvoid")
 
+	// 加速卡
 	kubejs.shapeless("ae2:speed_card", [
 		"cmi:cobalt_mechanism",
 		"ae2:advanced_card"
 	]).id("ae2:materials/cardspeed")
 
+	// 均分卡
 	kubejs.shapeless("ae2:equal_distribution_card", [
 		"minecraft:comparator",
 		"ae2:advanced_card"
 	]).id("ae2:materials/carddistribution")
 
-
+	// 2^3空间组件
 	kubejs.shapeless("ae2:spatial_cell_component_2", [
 		"minecraft:glowstone_dust",
 		mechA,
 		"ae2:fluix_pearl"
 	]).id("ae2:network/cells/spatial_components")
 
+	// 16^3空间组件
 	kubejs.shaped("ae2:spatial_cell_component_16", [
 		"ABA",
 		"BCB",
@@ -149,6 +165,7 @@ ServerEvents.recipes((event) => {
 		C: mechA,
 	}).id("ae2:network/cells/spatial_components_0")
 
+	// 128^3空间组件
 	kubejs.shaped("ae2:spatial_cell_component_128", [
 		"ABA",
 		"BCB",
@@ -159,12 +176,14 @@ ServerEvents.recipes((event) => {
 		C: mechA,
 	}).id("ae2:network/cells/spatial_components_1")
 
+	// 1K ME存储原件
 	kubejs.shapeless("ae2:cell_component_1k", [
 		"minecraft:redstone",
 		mech,
 		"#ae2:all_certus_quartz"
 	]).id("ae2:network/cells/item_storage_components_cell_1k_part")
 
+	// 4K ME存储原件
 	kubejs.shaped("ae2:cell_component_4k", [
 		"ABA",
 		"BCB",
@@ -175,6 +194,7 @@ ServerEvents.recipes((event) => {
 		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_4k_part")
 
+	// 16K ME存储原件
 	kubejs.shaped("ae2:cell_component_16k", [
 		"ABA",
 		"BCB",
@@ -185,6 +205,7 @@ ServerEvents.recipes((event) => {
 		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_16k_part")
 
+	// 64K ME存储原件
 	kubejs.shaped("ae2:cell_component_64k", [
 		"ABA",
 		"BCB",
@@ -195,6 +216,7 @@ ServerEvents.recipes((event) => {
 		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_64k_part")
 
+	// 256K ME存储原件
 	kubejs.shaped("ae2:cell_component_256k", [
 		"ABA",
 		"BCB",
@@ -205,10 +227,13 @@ ServerEvents.recipes((event) => {
 		C: mech,
 	}).id("ae2:network/cells/item_storage_components_cell_256k_part")
 
+	// 石英玻璃
+	create.mixing("ae2:quartz_glass", [
+		"#forge:dusts/certus_quartz",
+		"#forge:glass"
+	])
 
-	create.mixing("ae2:quartz_glass",
-		["#forge:dusts/certus_quartz", "#forge:glass"])
-
+	// 无线接收器
 	kubejs.shaped("ae2:wireless_receiver", [
 		" A ",
 		"BCB",
@@ -219,6 +244,7 @@ ServerEvents.recipes((event) => {
 		C: "cmi:ender_mechanism",
 	}).id("ae2:network/wireless_part")
 
+	// 无线信号增幅卡
 	kubejs.shaped("ae2:wireless_booster", [
 		"ABC",
 		"DDD",
@@ -229,6 +255,7 @@ ServerEvents.recipes((event) => {
 		C: "cmi:ender_mechanism",
 	}).id("ae2:network/wireless_booster")
 
+	// ME无线访问点
 	kubejs.shaped("ae2:wireless_access_point", [
 		"A",
 		"B",
@@ -237,6 +264,7 @@ ServerEvents.recipes((event) => {
 		B: mech,
 	}).id("ae2:network/wireless_access_point")
 
+	// 量子环
 	kubejs.shapeless("ae2:quantum_ring", [
 		mechA,
 		"ae2:energy_cell",
@@ -244,6 +272,7 @@ ServerEvents.recipes((event) => {
 		silver,
 	]).id("ae2:network/blocks/quantum_ring")
 
+	// 空间塔
 	kubejs.shaped("2x ae2:spatial_pylon", [
 		"ABA",
 		"CDC",
@@ -255,6 +284,7 @@ ServerEvents.recipes((event) => {
 		D: casing
 	}).id("ae2:network/blocks/spatial_io_pylon")
 
+	// ME IO端口
 	kubejs.shaped("ae2:io_port", [
 		"CDC",
 		"ABA",
@@ -266,12 +296,14 @@ ServerEvents.recipes((event) => {
 		B: casing
 	}).id("ae2:network/blocks/io_port")
 
+	// 空间IO端口
 	kubejs.shapeless("ae2:spatial_io_port", [
 		mechA,
 		"ae2:io_port",
 		"ae2:spatial_pylon"
 	]).id("ae2:network/blocks/spatial_io_port")
 
+	// 陨石箱子
 	kubejs.shaped("ae2:chest", [
 		"A",
 		"B",
@@ -282,6 +314,7 @@ ServerEvents.recipes((event) => {
 		B: "ae2:drive"
 	}).id("ae2:network/blocks/storage_chest")
 
+	// 元件控制台
 	kubejs.shaped("ae2:cell_workbench", [
 		"A",
 		"B",
@@ -292,16 +325,7 @@ ServerEvents.recipes((event) => {
 		B: casing
 	}).id("ae2:network/blocks/cell_workbench")
 
-	kubejs.shaped("ae2:condenser", [
-		"A",
-		"B",
-		"C"
-	], {
-		A: "#forge:dusts/fluix",
-		C: mechA,
-		B: casingA
-	}).id("ae2:network/blocks/io_condenser")
-
+	// 能源接收器
 	kubejs.shaped("ae2:energy_acceptor", [
 		"A",
 		"B"
@@ -310,6 +334,7 @@ ServerEvents.recipes((event) => {
 		B: casing
 	}).id("ae2:network/blocks/energy_energy_acceptor")
 
+	// 合成单元
 	kubejs.shaped("ae2:crafting_unit", [
 		" A ",
 		"CBC",
@@ -320,11 +345,13 @@ ServerEvents.recipes((event) => {
 		C: "#ae2:glass_cable"
 	}).id("ae2:network/crafting/cpu_crafting_unit")
 
+	// 并行处理单元
 	kubejs.shapeless("ae2:crafting_accelerator", [
 		"ae2:crafting_unit",
 		mech
 	]).id("ae2:network/crafting/cpu_crafting_accelerator")
 
+	// 催生器
 	kubejs.shaped("ae2:growth_accelerator", [
 		"A",
 		"B",
@@ -335,6 +362,7 @@ ServerEvents.recipes((event) => {
 		C: "ae2:fluix_block"
 	}).id("ae2:network/blocks/crystal_processing_growth_accelerator")
 
+	// 能源元件
 	kubejs.shaped("ae2:energy_cell", [
 		"A",
 		"B",
@@ -345,6 +373,7 @@ ServerEvents.recipes((event) => {
 		C: "#ae2:all_certus_quartz"
 	}).id("ae2:network/blocks/energy_energy_cell")
 
+	// 致密能源元件
 	kubejs.shaped("ae2:dense_energy_cell", [
 		"AAA",
 		"ABA",
@@ -354,11 +383,13 @@ ServerEvents.recipes((event) => {
 		B: mech,
 	}).id("ae2:network/blocks/energy_dense_energy_cell")
 
+	// ME样板供应器
 	kubejs.shapeless("ae2:pattern_provider", [
 		"ae2:interface",
 		"minecraft:crafting_table"
 	]).id("ae2:network/blocks/pattern_providers_interface")
 
+	// 分子装配室
 	kubejs.shaped("2x ae2:molecular_assembler", [
 		"EAE",
 		"BCD",
@@ -371,12 +402,14 @@ ServerEvents.recipes((event) => {
 		E: "ae2:quartz_glass",
 	}).id("ae2:network/crafting/molecular_assembler")
 
+	// 照明面板
 	kubejs.shapeless("ae2:semi_dark_monitor", [
 		"ae2:quartz_glass",
 		"minecraft:redstone",
 		"minecraft:glowstone_dust"
 	])
 
+	// ME终端
 	kubejs.shapeless("ae2:terminal", [
 		"#ae2:illuminated_panel",
 		coreA,
@@ -384,24 +417,28 @@ ServerEvents.recipes((event) => {
 		"cmi:smart_mechanism"
 	]).id("ae2:network/parts/terminals")
 
+	// 合成终端
 	kubejs.shapeless("ae2:crafting_terminal", [
 		"ae2:terminal",
 		"minecraft:crafting_table",
 		"cmi:smart_mechanism"
 	]).id("ae2:network/parts/terminals_crafting")
 
-	kubejs.shapeless("ae2:pattern_encoding_terminal", [
-		"ae2:crafting_terminal",
-	]).id("ae2:network/parts/terminals_pattern_encoding")
-
-	kubejs.shapeless("ae2:pattern_access_terminal", [
-		"ae2:pattern_encoding_terminal",
-	]).id("ae2:network/parts/terminals_pattern_access")
-
 	kubejs.shapeless("ae2:crafting_terminal", [
 		"ae2:pattern_access_terminal",
 	])
 
+	// 样板编码终端
+	kubejs.shapeless("ae2:pattern_encoding_terminal", [
+		"ae2:crafting_terminal",
+	]).id("ae2:network/parts/terminals_pattern_encoding")
+
+	// ME样板管理终端
+	kubejs.shapeless("ae2:pattern_access_terminal", [
+		"ae2:pattern_encoding_terminal",
+	]).id("ae2:network/parts/terminals_pattern_access")
+
+	// ME P2P 通道
 	kubejs.shaped("ae2:me_p2p_tunnel", [
 		"ABA",
 		"DCD",
@@ -411,4 +448,11 @@ ServerEvents.recipes((event) => {
 		D: "ae2:fluix_crystal",
 		B: "cmi:ender_mechanism",
 	}).id("ae2:network/parts/tunnels_me")
+
+	// 物质聚合器
+	kubejs.shapeless("ae2:condenser", [
+		"cmi:computing_casing",
+		"cmi:computing_mechanism",
+		"cmi:nuclear_mechanism"
+	])
 })
