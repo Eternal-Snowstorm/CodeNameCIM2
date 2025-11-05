@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
 		]),
 		vintageimprovements.laser_cutting("cmi:incomplete_scanning_module", [
 			"cmi:incomplete_scanning_module"
-		]).energy(1000).maxChargeRate(100)
+		]).energy(1000).maxChargeRate(1000)
 	]).transitionalItem("cmi:incomplete_scanning_module").loops(1)
 		.id("scannable:blank_module")
 
@@ -76,21 +76,21 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("ad_astra:etrionic_capacitor",
 		"#forge:plates/steel", [
 		create.deploying("ad_astra:etrionic_core", [
-			'ad_astra:etrionic_core',
+			"ad_astra:etrionic_core",
 			"#forge:plates/etrium"
 		]),
 		create.deploying("ad_astra:etrionic_core", [
-			'ad_astra:etrionic_core',
+			"ad_astra:etrionic_core",
 			"cmi:simple_battery"
 		]),
 		create.deploying("ad_astra:etrionic_core", [
-			'ad_astra:etrionic_core',
+			"ad_astra:etrionic_core",
 			"#forge:wires/copper"
 		]),
-		create.pressing("ad_astra:etrionic_core",
+		create.pressing("ad_astra:etrionic_core", [
 			"ad_astra:etrionic_core"
-		)
-	]).transitionalItem('ad_astra:etrionic_core').loops(1)
+		])
+	]).transitionalItem("ad_astra:etrionic_core").loops(1)
 		.id("ad_astra:etrionic_capacitor")
 
 	// 冷却设备

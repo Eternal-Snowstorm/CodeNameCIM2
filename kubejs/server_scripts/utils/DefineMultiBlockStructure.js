@@ -28,6 +28,6 @@ function defineMultiBlockStructure(structure) {
 		build: function () {
 			return $PatchouliAPI.get().makeMultiblock(structure, matcher)
 		}
-	} 
+	}
 	return self
 }
