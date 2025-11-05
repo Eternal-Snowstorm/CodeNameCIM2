@@ -153,7 +153,7 @@ ServerEvents.recipes((event) => {
 		C: "#vintageimprovements:springs/constantan",
 		D: MECH,
 		E: "mekanism:steel_casing",
-		F: "cmi:advanced_mekanism_mechanism"
+		F: "cmi:basic_mekanism_mechanism"
 	}).id("mekanism:superheating_element")
 
 	// 电阻加热器
