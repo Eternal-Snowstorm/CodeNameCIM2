@@ -8,4 +8,5 @@ StartupEvents.registry("mekanism:gas", (event) => {
 	addMekanismGas("nitroglycerine", 0xFFFBD3)
 	addMekanismGas("xenon", 0x1E90FF)
 	addMekanismGas("radon", 0x00FF00)
+	addMekanismGas("refined_nuke_waste", 0x7CFC00)
 })

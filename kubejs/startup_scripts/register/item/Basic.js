@@ -578,13 +578,13 @@ StartupEvents.registry("item", (event) => {
 		"cast_iron",
 		"steel"
 	]
-	cogwheelMaterials.forEach((material) => {
-		addItem(`incomplete_${material}_cogwheel`)
-			.modelJson(SomeModelsJson.cogwheel(material))
+	cogwheelMaterials.forEach((metal) => {
+		addItem(`incomplete_${metal}_cogwheel`)
+			.modelJson(SomeModelsJson.cogwheel(metal))
 			.tag("create:incomplete_cogwheels")
 
-		addItem(`incomplete_${material}_large_cogwheel`)
-			.modelJson(SomeModelsJson.largeCogwheel(material))
+		addItem(`incomplete_${metal}_large_cogwheel`)
+			.modelJson(SomeModelsJson.largeCogwheel(metal))
 			.tag("create:incomplete_large_cogwheels")
 	})
 

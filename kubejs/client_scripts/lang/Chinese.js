@@ -282,6 +282,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addGasLanguage("nitroglycerine", "硝化甘油")
 	addGasLanguage("xenon", "氙气")
 	addGasLanguage("radon", "氡气")
+	addGasLanguage("refined_nuke_waste", "精炼核废料")
 
 	addSolutionLanguage("feso4", "硫酸亚铁", "FeSO₄")
 	addSolutionLanguage("fecl2", "氯化亚铁", "FeCl₂")

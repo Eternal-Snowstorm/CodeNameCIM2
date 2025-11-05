@@ -138,6 +138,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeItemOutputRecipes = [
+		"thermal_extra:device_lava_gen",
 		"ad_astra:fuel_refinery",
 		"createdieselgenerators:chip_wood_block",
 		"pipez:filter_destination_tool",
