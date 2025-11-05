@@ -22,16 +22,6 @@ ServerEvents.recipes((event) => {
 		"minecraft:sculk_catalyst"
 	]).keepHeldItem()
 
-	create.mixing("2x ae2:quantum_entangled_singularity", [
-		"ae2:singularity",
-		"minecraft:ender_pearl"
-	])
-
-	create.mixing("2x ae2:quantum_entangled_singularity", [
-		"ae2:singularity",
-		"#forge:dusts/ender_pearl"
-	])
-
 	kubejs.shaped("3x createaddition:straw", [
 		"A A",
 		"B B",

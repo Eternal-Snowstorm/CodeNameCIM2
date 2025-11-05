@@ -267,9 +267,8 @@ ServerEvents.recipes((event) => {
 	// 量子环
 	kubejs.shapeless("ae2:quantum_ring", [
 		mechA,
-		"ae2:energy_cell",
-		"#ae2:smart_dense_cable",
-		silver,
+		"cmi:elite_mekanism_mechanism",
+		casingA,
 	]).id("ae2:network/blocks/quantum_ring")
 
 	// 空间塔
@@ -452,7 +451,18 @@ ServerEvents.recipes((event) => {
 	// 物质聚合器
 	kubejs.shapeless("ae2:condenser", [
 		"cmi:computing_casing",
-		"cmi:computing_mechanism",
+		mechA,
 		"cmi:nuclear_mechanism"
 	])
+
+	// ME量子连接仓
+	kubejs.shaped("2x ae2:quantum_link", [
+		"ABA",
+		"   ",
+		"ACA"
+	], {
+		A: "mekanism:structural_glass",
+		B: "alexscaves:telecore",
+		C: "cmi:ender_mechanism_basement"
+	}).id("ae2:network/blocks/quantum_link")
 })

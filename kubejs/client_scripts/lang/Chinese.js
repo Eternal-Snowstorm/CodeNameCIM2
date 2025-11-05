@@ -71,6 +71,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("silicon_carbide", "碳化硅")
 	addItemLanguage("silicon_carbide_plate", "碳化硅板")
 	addItemLanguage("nuke_cooler", "冷却设备")
+	addItemLanguage("refined_nuke_waste", "精炼核废料")
 
 	addItemLanguage("tier_1_rocket_nose_cone", "一阶火箭鼻锥")
 	addItemLanguage("tier_2_rocket_nose_cone", "二阶火箭鼻锥")
