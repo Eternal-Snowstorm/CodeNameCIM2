@@ -10,8 +10,14 @@ ServerEvents.recipes((event) => {
 	]).energy(4000)
 
 	// 精炼核废料
-	// mekanism.oxidizing(
-	// 	"4x alexscaves:toxic_paste",
+	mekanism.oxidizing(
+		"4x alexscaves:toxic_paste",
+		MekanismType.Gas.of("cmi:refined_nuke_waste", 25)
+	)
 
-	// )
+	// 氚
+	mekanism.activating(
+		MekanismType.Gas.of("cmi:refined_nuke_waste", 100),
+		MekanismType.Gas.of("mekanismgenerators:tritium", 100)
+	)
 })
