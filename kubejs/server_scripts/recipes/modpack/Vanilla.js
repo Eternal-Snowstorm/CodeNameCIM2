@@ -278,12 +278,11 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 群系指南针
-	kubejs.shaped("naturescompass:naturescompass",
-		[
-			"AAA",
-			"ABA",
-			"CDC"
-		], {
+	kubejs.shaped("naturescompass:naturescompass", [
+		"AAA",
+		"ABA",
+		"CDC"
+	], {
 		A: "#minecraft:leaves",
 		B: "minecraft:compass",
 		C: "#minecraft:saplings",
@@ -291,23 +290,14 @@ ServerEvents.recipes((event) => {
 	}).id("naturescompass:natures_compass")
 
 	// 结构指南针
-	kubejs.shaped("explorerscompass:explorerscompass",
-		[
-			"AAA",
-			"ABA",
-			"CDC"
-		], {
+	kubejs.shaped("explorerscompass:explorerscompass", [
+		"AAA",
+		"ABA",
+		"CDC"
+	], {
 		A: "#forge:stone",
 		B: "minecraft:compass",
 		C: "minecraft:flint",
 		D: "cmi:stone_mechanism"
 	}).id("explorerscompass:explorers_compass")
-
-	// 帕秋莉手册
-	kubejs.shapeless(Item.of("patchouli:guide_book").withNBT({
-		"patchouli:book": "patchouli:cmi"
-	}), [
-		"minecraft:book",
-		"#create:mechanisms"
-	])
 })
