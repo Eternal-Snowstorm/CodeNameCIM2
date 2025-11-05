@@ -90,5 +90,37 @@ ServerEvents.recipes((event) => {
 		create.pressing("ad_astra:etrionic_core",
 			"ad_astra:etrionic_core"
 		)
-	]).transitionalItem('ad_astra:etrionic_core').loops(1).id("ad_astra:etrionic_capacitor")
+	]).transitionalItem('ad_astra:etrionic_core').loops(1)
+		.id("ad_astra:etrionic_capacitor")
+
+	// 冷却设备
+	create.sequenced_assembly("cmi:nuke_cooler", [
+		"#forge:plates/stainless_steel"
+	], [
+		create.deploying("#forge:plates/stainless_steel", [
+			"#forge:plates/stainless_steel",
+			"alexscaves:polymer_plate"
+		]),
+		create.deploying("#forge:plates/stainless_steel", [
+			"#forge:plates/stainless_steel",
+			"#forge:plates/platinum"
+		]),
+		create.deploying("#forge:plates/stainless_steel", [
+			"#forge:plates/stainless_steel",
+			"mekanism:structural_glass"
+		])
+	]).loops(1).transitionalItem(IngrUtils.getFirstItemId("#forge:plates/stainless_steel"))
+
+	create.sequenced_assembly("cmi:nuke_cooler", [
+		"alexscaves:charred_remnant"
+	], [
+		create.deploying("#forge:plates/stainless_steel", [
+			"#forge:plates/stainless_steel",
+			"alexscaves:polymer_plate"
+		]),
+		create.deploying("#forge:plates/stainless_steel", [
+			"#forge:plates/stainless_steel",
+			"#forge:plates/platinum"
+		])
+	]).loops(1).transitionalItem("alexscaves:charred_remnant")
 })
