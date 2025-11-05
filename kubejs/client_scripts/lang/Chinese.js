@@ -244,6 +244,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("shadow_steel", "暗影钢")
 	addMaterialLang("refined_radiance", "光辉石")
 	addMaterialLang("etrium", "埃忒恩")
+	addMaterialLang("superconducting_mercury", "超导汞")
 
 	addMaterialLang("pyrite", "黄铁")
 	addMaterialLang("lateritic_nickel", "红镍")

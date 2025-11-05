@@ -129,7 +129,8 @@ ServerEvents.recipes((event) => {
 		"mekanism:metallurgic_infusing/alloy/infused",
 		"ae2:transform/entangled_singularity_from_pearl",
 		"mekanism:metallurgic_infusing/alloy/reinforced",
-		"ae2:network/blocks/io_condenser"
+		"ae2:network/blocks/io_condenser",
+		"tiab:time_in_a_bottle"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
