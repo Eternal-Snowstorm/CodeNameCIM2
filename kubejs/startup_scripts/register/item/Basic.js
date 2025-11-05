@@ -222,6 +222,10 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:plates/silicon_carbide")
 		.tag("forge:plates")
 
+	// 冷却设备
+	addItem("nuke_cooler")
+		.texture(`${global.namespace}:item/material/nuke_cooler`)
+
 	// 火箭零件
 	for (let i = 1; i <= 4; i++) {
 		addItem(`tier_${i}_rocket_nose_cone`)

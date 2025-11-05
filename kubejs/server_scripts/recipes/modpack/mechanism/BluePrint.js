@@ -37,6 +37,12 @@ ServerEvents.recipes((event) => {
 		"#forge:circuits/elite"
 	])
 
+	addRecipe("cmi:elite_mekanism_mechanism_basement", [
+		"#forge:plates/stainless_steel",
+		"ae2:engineering_processor",
+		"#forge:plates/dragonsteel"
+	])
+
 	/**
 	 * 
 	 * @param {Internal.Item_} output 输出物品

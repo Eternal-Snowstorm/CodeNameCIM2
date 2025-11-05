@@ -25,6 +25,23 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/invar"
 	])
 
+	// 量子
+	create.sequenced_assembly("cmi:quantum_mechanism_part", [
+		"#forge:nuggets/etrium"
+	], [
+		create.deploying("#forge:nuggets/etrium", [
+			"#forge:nuggets/etrium",
+			"#forge:gems/fluix"
+		]),
+		create.deploying("#forge:nuggets/etrium", [
+			"#forge:nuggets/etrium",
+			"alexscaves:notor_gizmo"
+		]),
+		vintageimprovements.laser_cutting("#forge:nuggets/etrium", [
+			"#forge:nuggets/etrium"
+		]).energy(4000).maxChargeRate(4000)
+	]).loops(1).transitionalItem(IngrUtils.getFirstItemId("#forge:nuggets/etrium"))
+
 	// 通用
 	create.sequenced_assembly("4x cmi:mekanism_mechanism_part", [
 		"#forge:nuggets/etrium"

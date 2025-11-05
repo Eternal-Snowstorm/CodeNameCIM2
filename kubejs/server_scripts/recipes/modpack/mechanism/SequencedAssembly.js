@@ -252,10 +252,10 @@ ServerEvents.recipes((event) => {
 
 	// 精英通用
 	create.sequenced_assembly("cmi:elite_mekanism_mechanism", [
-		"#forge:plates/stainless_steel"
+		"cmi:elite_mekanism_mechanism_basement"
 	], [
-		create.deploying(iemm, [iemm, "mekanism:elite_control_circuit"]),
-		create.deploying(iemm, [iemm, "#forge:plates/gold"]),
+		create.deploying(iemm, [iemm, "ae2:engineering_processor"]),
+		create.deploying(iemm, [iemm, "#forge:gears/chromeplated_steel"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(iemm).loops(1)
 

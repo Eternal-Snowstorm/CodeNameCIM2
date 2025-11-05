@@ -70,6 +70,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLanguage("chromeplated_steel_gear", "镀铬钢齿轮")
 	addItemLanguage("silicon_carbide", "碳化硅")
 	addItemLanguage("silicon_carbide_plate", "碳化硅板")
+	addItemLanguage("nuke_cooler", "冷却设备")
 
 	addItemLanguage("tier_1_rocket_nose_cone", "一阶火箭鼻锥")
 	addItemLanguage("tier_2_rocket_nose_cone", "二阶火箭鼻锥")

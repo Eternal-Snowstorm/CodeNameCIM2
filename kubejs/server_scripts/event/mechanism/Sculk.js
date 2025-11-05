@@ -40,9 +40,9 @@ function fireSonicBoom(level, player) {
 	let startingPosition = player.getEyePosition()
 
 	// 播放音爆声音
-	let x = startingPosition.x()
-	let y = startingPosition.y()
-	let z = startingPosition.z()
+	let x = startingPosition.x
+	let y = startingPosition.y
+	let z = startingPosition.z
 
 	let sonicBoomSound = "minecraft:entity.warden.sonic_boom"
 	level.playSound(null, x, y, z, sonicBoomSound, "hostile", 3, 1)
