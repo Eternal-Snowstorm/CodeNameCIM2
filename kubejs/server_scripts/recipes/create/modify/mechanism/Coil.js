@@ -79,12 +79,12 @@ ServerEvents.recipes((event) => {
 	}).id("mekanismgenerators:generator/advanced_solar")
 
 	// 电磁线圈
-	kubejs.shaped("mekanismgenerators:electromagnetic_coil", [
+	kubejs.shaped("2x mekanismgenerators:electromagnetic_coil", [
 		"ADA",
 		"BCB",
 		"ADA"
 	], {
-		A: "#forge:plates/steel",
+		A: "#forge:plates/stainless_steel",
 		B: "immersiveengineering:coil_mv",
 		C: "mekanism:steel_casing",
 		D: MECH
@@ -226,9 +226,9 @@ ServerEvents.recipes((event) => {
 		"BDB"
 	], {
 		A: "create:propeller",
-		B: "#forge:plates/aluminum",
+		B: "#forge:plates/tin",
 		C: MECH,
-		D: "immersiveengineering:alu_post"
+		D: "immersiveengineering:treated_post"
 	}).id("mekanismgenerators:generator/wind")
 
 	// 斯特林
