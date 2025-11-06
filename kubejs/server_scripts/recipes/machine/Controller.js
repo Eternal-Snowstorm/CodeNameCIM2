@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:stone_plate",
 		B: "cmi:computer_component",
-		C: "cmi:plasma_ingot",
+		C: "cmi:overcharged_alloy_ingot",
 		D: "cmi:antimatter_mechanism",
 		E: "mekanism:ultimate_energy_cube"
 	}).id("cmi:flash_disk_writer")
@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		A: "#mekanismadditions:plastic_blocks",
-		C: "#forge:ingots/plasma",
+		C: "#forge:ingots/overcharged_alloy",
 		B: "cmi:antimatter_mechanism",
 	}).id("cmi:programmed_flash_drive")
 })

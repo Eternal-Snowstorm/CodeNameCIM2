@@ -86,11 +86,11 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 等离子龙头
-	kubejs.shapeless("cmi:plasma_faucet", [
+	kubejs.shapeless("cmi:overcharged_alloy_faucet", [
 		"cmi:wooden_faucet",
 		"cmi:cast_iron_faucet",
 		"cmi:steel_faucet",
-		"#forge:ingots/plasma"
+		"#forge:ingots/overcharged_alloy"
 	])
 
 	// 锇砖瓦

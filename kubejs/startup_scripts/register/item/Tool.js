@@ -99,8 +99,8 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:tools")
 
 	// 等离子龙头
-	addItem("plasma_faucet")
-		.texture(`${global.namespace}:item/tool/plasma_faucet`)
+	addItem("overcharged_alloy_faucet")
+		.texture(`${global.namespace}:item/tool/overcharged_alloy_faucet`)
 		.maxDamage(114514)
 		.unstackable()
 		.tag("cmi:faucet")

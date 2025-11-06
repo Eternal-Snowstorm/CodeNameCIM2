@@ -44,12 +44,12 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:plates")
 		.tag("forge:plates/dense_obsidian")
 
-	// 等离子锭
-	addItem("plasma_ingot")
-		.texture(`${global.namespace}:item/material/ingot/plasma_ingot`)
+	// 超载合金锭
+	addItem("overcharged_alloy_ingot")
+		.texture(`${global.namespace}:item/material/ingot/overcharged_alloy_ingot`)
 		.rarity("epic")
 		.tag("forge:ingots")
-		.tag("forge:ingots/plasma")
+		.tag("forge:ingots/overcharged_alloy")
 
 	// 充能紫水晶
 	addItem("charged_amethyst")
