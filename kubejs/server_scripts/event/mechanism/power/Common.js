@@ -244,8 +244,8 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 			}
 			// 使玩家挥动手持物品
 			player.swing()
-			// 给进行操作的玩家播放提示音
-			player.playNotifySound("create:crafter_craft", "voice", 2, 1)
+			// 播放提示音
+			level.playSound(null, x, y, z, "create:crafter_craft", "voice", 3, 1)
 			// 召唤效果粒子
 			let command = `particle minecraft:dust 0 0.4 0.3 1 ${block.x + 0.5} ${block.y + 1} ${block.z + 0.5} 0.5 0.5 0.5 0.1 30`
 			level.server.runCommandSilent(command)
