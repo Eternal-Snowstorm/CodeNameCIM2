@@ -1,13 +1,12 @@
-ServerEvents.loaded((event) => {
-	let { server } = event
+// ServerEvents.loaded((event) => {
+// 	let { server } = event
 
-	server.runCommandSilent("reload")
-})
+// 	server.runCommandSilent("reload")
+// })
 
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
 
-	let message =
-		Component.translatable(`message.${global.namespace}.welcome`, player.username)
-	player.tell(message)
+	let message = `message.${global.namespace}.welcome`
+	player.tell(Component.translatable(message, player.username))
 })

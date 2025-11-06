@@ -30,4 +30,10 @@ ServerEvents.recipes((event) => {
 		"mekanism:elite_control_circuit",
 		"cmi:incomplete_elite_control_circuit"
 	).chemicalInput({ infuse_type: "mekanism:diamond", amount: 40 })
+
+	// 原子合金
+	// mekanism.metallurgic_infusing(
+	// 	"mekanism:alloy_atomic",
+	// 	"#forge:ingots/superconducting_mercury"
+	// ).chemicalInput({ infuse_type: "mekanism:antimatter", amount: 40 })
 })

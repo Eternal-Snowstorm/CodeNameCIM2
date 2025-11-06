@@ -205,6 +205,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("xenon", "液态氙")
 	addFluidLang("radon", "液态氡")
 	addFluidLang("mercury", "液态汞")
+	addFluidLang("milk", "牛奶")
 
 	addMaterialLang("andesite_alloy", "安山合金")
 	addMaterialLang("cinderslime", "余烬史莱姆")

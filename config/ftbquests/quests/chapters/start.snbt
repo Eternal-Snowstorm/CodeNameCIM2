@@ -452,7 +452,7 @@
 				"370E4B4D6068CF98"
 			]
 			dependency_requirement: "one_completed"
-			description: ["燧石制作的锤子只有1/4的耐久, 但你为什么不多做点呢?"]
+			description: ["燧石制作的锤子只有3/4的耐久, 但你为什么不多做点呢?"]
 			id: "2C0C50F32F39BD3F"
 			rewards: [{
 				id: "1A0161DE002C8C21"
