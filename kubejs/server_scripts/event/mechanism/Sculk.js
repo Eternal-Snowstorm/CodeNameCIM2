@@ -58,7 +58,17 @@ function fireSonicBoom(level, player) {
 	// 生成音爆粒子
 	for (let i = 1; i <= SONIC_BOOM_RANGE; i++) {
 		let pos = startingPosition.add(sight.scale(i))
-		level.sendParticles($ParticleTypes.SONIC_BOOM, pos.x(), pos.y(), pos.z(), 1, 0, 0, 0, 0)
+		level.sendParticles(
+			$ParticleTypes.SONIC_BOOM,
+			pos.x(),
+			pos.y(),
+			pos.z(),
+			1,
+			0,
+			0,
+			0,
+			0
+		)
 	}
 	// 识别音爆范围内的实体并造成伤害
 	level.getEntitiesWithin(player.boundingBox.inflate(SONIC_BOOM_RANGE))
