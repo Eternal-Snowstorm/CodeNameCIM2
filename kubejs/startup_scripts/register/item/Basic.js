@@ -46,7 +46,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 超载合金锭
 	addItem("overcharged_alloy_ingot")
-		.texture(`${global.namespace}:item/material/ingot/overcharged_alloy_ingot`)
+		.texture(`${global.namespace}:item/material/ingot/overcharged_alloy`)
 		.rarity("epic")
 		.tag("forge:ingots")
 		.tag("forge:ingots/overcharged_alloy")
@@ -225,7 +225,7 @@ StartupEvents.registry("item", (event) => {
 	// 冷却设备
 	addItem("nuke_cooler")
 		.texture(`${global.namespace}:item/material/nuke_cooler`)
-	
+
 	// 精炼核废料
 	addItem("refined_nuke_waste")
 		.texture(`${global.namespace}:item/material/refined_nuke_waste`)
