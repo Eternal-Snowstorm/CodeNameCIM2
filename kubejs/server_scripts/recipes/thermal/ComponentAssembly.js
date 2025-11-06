@@ -32,6 +32,23 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/hdpe"
 	])
 
+	// 终极控制电路(半成品)
+	addRecipe("cmi:incomplete_ultimate_control_circuit", [
+		"#forge:plates/refined_glowstone",
+		"#forge:alloys/ultimate",
+		"cmi:general_processor",
+		"cmi:flame_retardant_plastic"
+	])
+
+	// 反物质底座
+	addRecipe("cmi:incomplete_antimatter_mechanism", [
+		Fluid.of("cmi:molten_etrium", 90),
+		"#forge:plates/refined_obsidian",
+		"alexscaves:telecore",
+		"#forge:circuits/ultimate",
+		"cmi:quantum_mechanism_part"
+	])
+
 	function addRecipe(o, i) {
 		return thermal_extra.component_assembly(o, i)
 			.energy(8000)

@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
 				"type": "custommachinery:gas",
 				"mode": "output",
 				"chemical": "cmi:radon",
-				"amount": 6
+				"amount": 2
 			},
 			{
 				"type": "custommachinery:structure",

@@ -1,8 +1,10 @@
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setDisplayName(Component.translatable(`itemGroup.${global.namespace}.all`))
 
-	event.add([
-		"cmi:water_pump"
+	event.addAfter("cmi:radsand", [
+		"cmi:water_pump",
+		"cmi:moon_geothermal_vent",
+		"cmi:mercury_geothermal_vent"
 	])
 
 	event.remove([
@@ -43,7 +45,8 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 		"cmi:cacl2_solution_bucket",
 		"cmi:caso4_solution_bucket",
 		"cmi:nacl_solution_bucket",
-		"cmi:na2so4_solution_bucket"
+		"cmi:na2so4_solution_bucket",
+		"minecraft:milk_bucket"
 	])
 
 	let removeItemFromCreativeTab = [

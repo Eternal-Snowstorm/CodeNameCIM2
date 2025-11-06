@@ -43,7 +43,7 @@ ServerEvents.recipes((event) => {
 	]).loops(1).transitionalItem(IngrUtils.getFirstItemId("#forge:nuggets/etrium"))
 
 	// 通用
-	create.sequenced_assembly("4x cmi:mekanism_mechanism_part", [
+	create.sequenced_assembly("8x cmi:mekanism_mechanism_part", [
 		"#forge:nuggets/etrium"
 	], [
 		create.deploying("#forge:nuggets/etrium", [

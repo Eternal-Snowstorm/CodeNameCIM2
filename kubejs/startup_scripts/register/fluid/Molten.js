@@ -12,7 +12,7 @@ StartupEvents.registry("fluid", (event) => {
 		// 生成Json模型文件
 		FluidBucketItemModel.generate(name)
 
-		console.log(`molten_${name}已注册!`)
+		console.debug(`molten_${name}已注册!`)
 		return registerColorMaterialFluid
 	}
 

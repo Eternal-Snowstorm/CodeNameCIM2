@@ -261,10 +261,10 @@ ServerEvents.recipes((event) => {
 
 	// 终极通用
 	create.sequenced_assembly("cmi:ultimate_mekanism_mechanism", [
-		"#forge:plates/stainless_steel"
+		"cmi:ultimate_mekanism_mechanism_basement"
 	], [
-		create.deploying(iumm, [iumm, "mekanism:ultimate_control_circuit"]),
-		create.deploying(iumm, [iumm, "minecraft:diamond"]),
+		create.deploying(iumm, [iumm, "cmi:general_processor"]),
+		create.deploying(iumm, [iumm, "#forge:gears/chromeplated_steel"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(iumm).loops(1)
 
@@ -280,11 +280,9 @@ ServerEvents.recipes((event) => {
 
 	// 反物质
 	create.sequenced_assembly("cmi:antimatter_mechanism", [
-		"ae2:singularity"
+		"cmi:incomplete_antimatter_mechanism"
 	], [
-		create.pressing(iatm, iatm),
-		create.deploying(iatm, [iatm, "mekanism:pellet_antimatter"]),
-		create.deploying(iatm, [iatm, "cmi:quantum_mechanism_part"]),
+		create.deploying(iatm, [iatm, "#forge:pellets/antimatter"]),
 	]).transitionalItem(iatm).loops(1)
 
 	// 多彩
@@ -376,12 +374,11 @@ ServerEvents.recipes((event) => {
 
 	// 4航天
 	create.sequenced_assembly("cmi:tier_4_aviation_mechanism", [
-		"#forge:plates/calorite"
+		"cmi:tier_4_aviation_mechanism_basement"
 	], [
-		create.deploying(ir4m, [ir4m, "cmi:computer_component"]),
-		create.deploying(ir4m, [ir4m, "ad_astra:ostrum_fluid_pipe"]),
-		create.deploying(ir4m, [ir4m, "ad_astra:calorite_tank"]),
-		create.deploying(ir4m, [ir4m, "cmi:space_mechanism_part"]),
+		create.deploying(ir3m, [ir3m, "ad_astra:calorite_tank"]),
+		create.deploying(ir3m, [ir3m, "ad_astra:calorite_engine"]),
+		create.deploying(ir3m, [ir3m, "cmi:space_mechanism_part"])
 	]).transitionalItem(ir4m).loops(1)
 
 	// 秘药

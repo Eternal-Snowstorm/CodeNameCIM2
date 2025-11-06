@@ -1,17 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { create } = event.recipes
 
-	create.mixing("cmi:final_mechanism_part", [
-		"cmi:basic_mechanism_part",
-		"cmi:mechanical_mechanism_part",
-		"cmi:engineering_mechanism_part",
-		"cmi:flux_mechanism_part",
-		"cmi:magical_mechanism_part",
-		"cmi:quantum_mechanism_part",
-		"cmi:mekanism_mechanism_part",
-		"cmi:space_mechanism_part"
-	]).superheated()
-
 	create.mechanical_crafting("cmi:creative_mechanism", [
 		"abcdefg",
 		"hijklmn",

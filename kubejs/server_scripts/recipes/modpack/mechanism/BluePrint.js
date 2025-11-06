@@ -49,6 +49,18 @@ ServerEvents.recipes((event) => {
 		"cmi:nuke_cooler"
 	])
 
+	addRecipe("cmi:tier_4_aviation_mechanism_basement", [
+		"#forge:plates/calorite",
+		"#forge:plates/etrium",
+		"#forge:circuits/ultimate"
+	])
+
+	addRecipe("cmi:ultimate_mekanism_mechanism_basement", [
+		"#forge:plates/stainless_steel",
+		"#forge:circuits/ultimate",
+		"#forge:plates/abyssal"
+	])
+
 	/**
 	 * 
 	 * @param {Internal.Item_} output 输出物品

@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 	mekanism.metallurgic_infusing(
 		"#forge:circuits/advanced",
 		"cmi:incomplete_advanced_control_circuit"
-	).chemicalInput({ infuse_type: "mekanism:redstone", amount: 40 })
+	).chemicalInput({ infuse_type: "mekanism:redstone", amount: 80 })
 
 	// 强化合金
 	mekanism.metallurgic_infusing(
@@ -29,11 +29,17 @@ ServerEvents.recipes((event) => {
 	mekanism.metallurgic_infusing(
 		"mekanism:elite_control_circuit",
 		"cmi:incomplete_elite_control_circuit"
-	).chemicalInput({ infuse_type: "mekanism:diamond", amount: 40 })
+	).chemicalInput({ infuse_type: "mekanism:diamond", amount: 80 })
 
 	// 原子合金
-	// mekanism.metallurgic_infusing(
-	// 	"mekanism:alloy_atomic",
-	// 	"#forge:ingots/superconducting_mercury"
-	// ).chemicalInput({ infuse_type: "mekanism:antimatter", amount: 40 })
+	mekanism.metallurgic_infusing(
+		"mekanism:alloy_atomic",
+		"#forge:ingots/superconducting_mercury"
+	).chemicalInput({ infuse_type: "mekanism:refined_obsidian", amount: 40 })
+
+	// 终极控制电路
+	mekanism.metallurgic_infusing(
+		"mekanism:ultimate_control_circuit",
+		"cmi:incomplete_ultimate_control_circuit"
+	).chemicalInput({ infuse_type: "mekanism:refined_obsidian", amount: 80 })
 })
