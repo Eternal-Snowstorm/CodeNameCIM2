@@ -1,8 +1,6 @@
 ItemEvents.rightClicked((event) => {
 	let { item, player } = event
 
-	event.level.playSound()
-
 	if (item.id === "create:empty_schematic") {
 		player.swing()
 

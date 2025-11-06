@@ -1,4 +1,5 @@
-let $ParticleTypes = Java.loadClass("net.minecraft.core.particles.ParticleTypes")
+let $ParticleTypes =
+	Java.loadClass("net.minecraft.core.particles.ParticleTypes")
 
 // 设定所需常数与物品id
 const PI = 3.1415926535
@@ -40,12 +41,20 @@ function fireSonicBoom(level, player) {
 	let startingPosition = player.getEyePosition()
 
 	// 播放音爆声音
-	let x = startingPosition.x
-	let y = startingPosition.y
-	let z = startingPosition.z
+	let x = startingPosition.x()
+	let y = startingPosition.y()
+	let z = startingPosition.z()
 
-	let sonicBoomSound = "minecraft:entity.warden.sonic_boom"
-	level.playSound(null, x, y, z, sonicBoomSound, "hostile", 3, 1)
+	level.playSound(
+		null,
+		x,
+		y,
+		z,
+		"minecraft:entity.warden.sonic_boom",
+		"hostile",
+		3,
+		1
+	)
 	// 生成音爆粒子
 	for (let i = 1; i <= SONIC_BOOM_RANGE; i++) {
 		let pos = startingPosition.add(sight.scale(i))
@@ -55,6 +64,7 @@ function fireSonicBoom(level, player) {
 	level.getEntitiesWithin(player.boundingBox.inflate(SONIC_BOOM_RANGE))
 		.forEach((entity) => {
 			let direction = entity.getEyePosition().subtract(startingPosition).normalize()
+
 			if (Math.acos(direction.dot(sight)) <= SONIC_BOOM_ANGLE && entity.isLiving()) {
 				entity.attack(level.damageSources().sonicBoom(player), 10)
 			}

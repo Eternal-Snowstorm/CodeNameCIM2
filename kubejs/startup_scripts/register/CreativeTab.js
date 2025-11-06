@@ -68,7 +68,7 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.mechanisms`))
 
 	addCreativeTab("metals")
-		.icon(() => Item.of("cmi:platinum_ingot"))
+		.icon(() => Item.of("cmi:cast_iron_ingot"))
 		.content(() => Ingredient.of("#cmi:metals").itemIds
 			.concat(Ingredient.of("#cmi:ores").itemIds)
 			.concat(Ingredient.of("#cmi:raw_metals").itemIds)
@@ -80,9 +80,4 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 		.icon(() => Item.of("cmi:unknown_entity_"))
 		.content(() => Ingredient.of("#cmi:dev_doll").itemIds)
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.developers`))
-
-	addCreativeTab("random_mechanisms")
-		.icon(() => Item.of("cmi:mechanical_random_mechanism"))
-		.content(() => Ingredient.of("#cmi:random_mechanisms").itemIds)
-		.displayName(Component.translatable(`itemGroup.${global.namespace}.random_mechanisms`))
 })
