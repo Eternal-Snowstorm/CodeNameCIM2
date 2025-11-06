@@ -1,8 +1,8 @@
-// ServerEvents.loaded((event) => {
-// 	let { server } = event
+ServerEvents.loaded((event) => {
+	let { server } = event
 
-// 	server.runCommandSilent("reload")
-// })
+	server.runCommandSilent("reload")
+})
 
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
