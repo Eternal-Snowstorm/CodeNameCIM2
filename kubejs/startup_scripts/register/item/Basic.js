@@ -46,7 +46,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 超载合金锭
 	addItem("overcharged_alloy_ingot")
-		.texture(`${global.namespace}:item/material/ingot/overcharged_alloy`)
+		.texture(`${global.namespace}:item/material/ingot/overcharged_alloy_ingot`)
 		.rarity("epic")
 		.tag("forge:ingots")
 		.tag("forge:ingots/overcharged_alloy")
