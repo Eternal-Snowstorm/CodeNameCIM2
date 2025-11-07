@@ -129,12 +129,12 @@ ServerEvents.recipes((event) => {
 
 	// 裂变
 	kubejs.shaped("4x mekanismgenerators:fission_reactor_casing", [
-		" A ",
 		"ABA",
-		" A "
+		"B B",
+		"ABA"
 	], {
-		A: "#forge:plates/lead",
-		B: CASING
+		A: "#forge:plates/stainless_steel",
+		B: "immersiveengineering:concrete_leaded"
 	}).id("mekanismgenerators:fission_reactor/casing")
 
 	kubejs.shaped("4x mekanismgenerators:fission_reactor_port", [

@@ -143,4 +143,11 @@ ServerEvents.recipes((event) => {
 	immersiveengineering.blast_furnace("4x cmi:lime")
 		.input("create:limestone")
 		.time(30)
+
+
+	immersiveengineering.blast_furnace("immersiveengineering:concrete")
+		.time(200)
+		.input("tconstruct:grout")
+		.id("immersiveengineering:crafting/concrete")
+
 })

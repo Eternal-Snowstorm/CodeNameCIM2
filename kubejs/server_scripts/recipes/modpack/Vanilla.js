@@ -300,4 +300,28 @@ ServerEvents.recipes((event) => {
 		C: "minecraft:flint",
 		D: "cmi:stone_mechanism"
 	}).id("explorerscompass:explorers_compass")
+
+	// 混凝土
+	global.dyeColorGroup.forEach((colour) => {
+
+		event.remove({ id: `thermal:${colour}_concrete_powder_with_slag` })
+
+		kubejs.shaped(`minecraft:${colour}_concrete`, [
+			"AAA",
+			"ABA",
+			"AAA"
+		], {
+			A: "immersiveengineering:concrete",
+			B: `#forge:dyes/${colour}`
+		})
+
+		kubejs.shaped(`minecraft:${colour}_concrete_powder`, [
+			"AAA",
+			"ABA",
+			"AAA"
+		], {
+			A: "tconstruct:grout",
+			B: `#forge:dyes/${colour}`
+		}).id(`minecraft:${colour}_concrete_powder`)
+	})
 })
