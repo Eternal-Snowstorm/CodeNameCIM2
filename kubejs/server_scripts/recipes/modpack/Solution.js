@@ -30,7 +30,9 @@ ServerEvents.recipes((event) => {
 		"caso4",
 		"cacl2",
 		"k2so4",
-		"kcl"
+		"kcl",
+		"mgcl2",
+		"mgso4"
 	]
 
 	solutionGroup.forEach((type) => {
