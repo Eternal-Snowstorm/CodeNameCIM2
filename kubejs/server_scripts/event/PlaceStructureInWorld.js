@@ -6,6 +6,8 @@ let $Rotation =
 	Java.loadClass("net.minecraft.world.level.block.Rotation")
 let $Mirror =
 	Java.loadClass("net.minecraft.world.level.block.Mirror")
+let $BlockPos =
+	Java.loadClass("net.minecraft.core.BlockPos")
 
 ServerEvents.loaded((event) => {
 	let { server } = event
@@ -16,10 +18,36 @@ ServerEvents.loaded((event) => {
 	}
 
 	/**
+	 * 获取结构的底部 Y 坐标
+	 * @param {$StructureTemplate} template 结构模板
+	 * @returns {number} 底部 Y 坐标
+	 */
+	function getStructureBaseY(template) {
+		let boundingBox = template.getBoundingBox()
+		return boundingBox.minY
+	}
+
+	/**
+	 * 获取地面高度
+	 * @param {$ServerLevel} level
+	 * @param {number} x
+	 * @param {number} z
+	 * @returns {number} 地面高度
+	 */
+	function getGroundY(level, x, z) {
+		let pos = new $BlockPos(x, 0, z)
+		let state = level.getBlockState(pos)
+		while (!state.getMaterial().isSolid()) {
+			pos = pos.above() // 向上查找直到找到实心的方块
+			state = level.getBlockState(pos)
+		}
+		return pos.getY()
+	}
+
+	/**
 	 * 在指定维度的特定坐标生成结构
 	 * @param {String} dimId - 维度 ID (例如 "minecraft:the_nether")
 	 * @param {String} structurePath - 结构路径和文件名 
-	 * (展开后为 "cmi:structures/radar/radar.nbt" 实际编写时不需要写文件后缀)
 	 * @param {[number, number, number]} pos - 坐标 [x, y, z]
 	 */
 	function placeStructure(dimId, structurePath, pos) {
@@ -40,10 +68,20 @@ ServerEvents.loaded((event) => {
 
 		let [x, y, z] = pos
 		template.ifPresent((temp) => {
+			// 获取结构的底部 Y 坐标
+			let baseY = getStructureBaseY(temp)
+
+			// 获取目标位置的地面高度，并调整 Y 坐标
+			let groundY = getGroundY(level, x, z)
+
+			// 计算放置位置的 Y 坐标（地面高度 - 结构底部偏移）
+			let adjustedY = groundY - baseY
+
+			// 放置结构
 			temp.placeInWorld(
 				level,
-				new BlockPos(x, y, z),
-				new BlockPos(x, y, z),
+				new $BlockPos(x, adjustedY, z),
+				new $BlockPos(x, adjustedY, z),
 				new $StructurePlaceSettings()
 					.setRotation($Rotation.NONE)
 					.setMirror($Mirror.NONE),
@@ -89,21 +127,6 @@ ServerEvents.loaded((event) => {
 			path: "radar/radar",
 			pos: [0, 80, 0]
 		},
-		/*
-		Example
-		{
-			id: "lab_earth",
-			dimId: "minecraft:overworld",
-			path: "base/lab",
-			pos: [100, 70, -50]
-		},
-		{
-			id: "station_mars",
-			dimId: "ad_astra:mars",
-			path: "station/outpost",
-			pos: [-200, 90, 200]
-		}
-		*/
 	]
 
 	placeAllStructures(structuresToPlace)
