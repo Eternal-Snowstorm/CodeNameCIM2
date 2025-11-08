@@ -36,7 +36,6 @@ StartupEvents.registry("fluid", (event) => {
 	addSolutionFluid("uo2cl2", "uo2so4", "uranium", 0xDAFF00, 0xDAFF00)
 	addSolutionFluid("nicl2", "niso4", "nickel", 0x59FFD7, 0x59FFD7)
 	addSolutionFluid("cocl2", "coso4", "cobalt", 0xFFFFFF, 0xFFFFFF)
-	addSolutionFluid("oscl3", "os2so43", "osmium", 0xFF74F3, 0x001AE3)
 	addSolutionFluid("mgcl2", "mgso4", "magnesium", 0xC8C8C8, 0xE0E0E0)
 	addSolutionFluid("nacl", "na2so4", "sodium", 0xDADEDF, 0xD7DDDD)
 	addSolutionFluid("cacl2", "caso4", "calcium", 0xE0DDC3, 0xE0DDC3)

@@ -17,7 +17,9 @@ ServerEvents.recipes((event) => {
 		BRONZE: "cmi:bronze_mechanism",
 		COIL: "cmi:coil_mechanism",
 		PRECISION: "create:precision_mechanism",
-		COMPUTING: "cmi:computing_mechanism"
+		COMPUTING: "cmi:computing_mechanism",
+		NUKE: "cmi:nuclear_mechanism",
+		LIGHT: "cmi:photosensitive_mechanism"
 	}
 
 	// 动态储罐
@@ -103,13 +105,22 @@ ServerEvents.recipes((event) => {
 		B: Mech.COIL
 	}).id("mekanism:induction/casing")
 
+	kubejs.shaped("mekanism:induction_port", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "mekanism:induction_casing",
+		B: Mech.T2
+	}).id("mekanism:induction/port")
+
 	mekTiers.forEach((tier) => {
 		kubejs.shaped(`mekanism:${tier}_induction_cell`, [
 			"ABA",
 			"CDC",
 			"ABA"
 		], {
-			A: "#forge:plates/osmium",
+			A: "#forge:dusts/lithium",
 			B: `cmi:${tier}_mekanism_mechanism`,
 			C: "cmi:coil_mechanism",
 			D: `mekanism:${tier}_energy_cube`
@@ -120,7 +131,7 @@ ServerEvents.recipes((event) => {
 			"CDC",
 			"ABA"
 		], {
-			A: "#forge:plates/osmium",
+			A: "#forge:dusts/lithium",
 			B: `cmi:${tier}_mekanism_mechanism`,
 			C: "cmi:cobalt_mechanism",
 			D: `mekanism:${tier}_energy_cube`
@@ -246,6 +257,94 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/aluminum",
 		B: "#forge:ingots/stainless_steel"
 	}).id("mekanismgenerators:turbine/blade")
+
+	// 聚变
+	kubejs.shaped("4x mekanismgenerators:fusion_reactor_frame", [
+		"ABA",
+		"CDC",
+		"ABA"
+	], {
+		A: CASING,
+		B: Mech.NUKE,
+		C: "alexscaves:azure_neodymium_ingot",
+		D: Mech.T3
+	}).id("mekanismgenerators:reactor/frame")
+
+	kubejs.shaped("mekanismgenerators:fusion_reactor_controller", [
+		"ABA",
+		"CDC",
+		"CEC"
+	], {
+		A: Mech.T3,
+		B: Mech.COIL,
+		C: "#forge:plates/silver",
+		D: "mekanismgenerators:fusion_reactor_frame",
+		E: Mech.NUKE
+	}).id("mekanismgenerators:reactor/controller")
+
+	kubejs.shaped("mekanismgenerators:laser_focus_matrix", [
+		"BAB",
+		"ACA",
+		"BAB"
+	], {
+		A: "mekanismgenerators:reactor_glass",
+		B: "#forge:gems/ruby",
+		C: Mech.LIGHT
+	}).id("mekanismgenerators:laser_focus_matrix")
+
+	kubejs.shaped("4x mekanismgenerators:fusion_reactor_port", [
+		"ABA",
+		"C C",
+		"ABA"
+	], {
+		A: "mekanismgenerators:fusion_reactor_frame",
+		B: Mech.AIR,
+		C: Mech.T3
+	}).id("mekanismgenerators:reactor/port")
+
+	kubejs.shaped("4x mekanismgenerators:fusion_reactor_logic_adapter", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "mekanismgenerators:fusion_reactor_frame",
+		B: Mech.T3
+	}).id("mekanismgenerators:reactor/logic_adapter")
+
+	kubejs.shaped("mekanism:laser", [
+		"ABA",
+		"ACA",
+		"DED"
+	], {
+		A: "#forge:plates/silicon_carbide",
+		B: "#forge:gems/ruby",
+		C: "vintageimprovements:laser_item",
+		D: "#forge:plates/stainless_steel",
+		E: Mech.T3
+	}).id("mekanism:laser")
+
+	kubejs.shaped("2x mekanism:laser_tractor_beam", [
+		"ADA",
+		"BCB",
+		"ABA"
+	], {
+		A: Mech.T3,
+		B: Mech.LIGHT,
+		C: CASING,
+		D: "#forge:gems/ruby"
+	}).id("mekanism:laser_tractor_beam")
+
+	kubejs.shaped("mekanism:laser_amplifier", [
+		"AEA",
+		"BDB",
+		"ACA"
+	], {
+		A: "#forge:plates/osmium",
+		B: Mech.NUKE,
+		C: "vintageimprovements:laser_item",
+		D: "mekanism:laser_tractor_beam",
+		E: "#forge:gems/ruby"
+	}).id("mekanism:laser_amplifier")
 
 	// 玻璃
 	kubejs.shaped("8x mekanism:structural_glass", [

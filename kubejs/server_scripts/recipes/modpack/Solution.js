@@ -1,6 +1,6 @@
-/*
+
 ServerEvents.recipes((event) => {
-	let { create, tconstruct } = event.recipes
+	let { create, thermal_extra } = event.recipes
 
 	let solutionGroup = [
 		"fecl2",
@@ -32,134 +32,146 @@ ServerEvents.recipes((event) => {
 		"k2so4",
 		"kcl"
 	]
-	solutionGroup.forEach((name) => {
-		create.mixing(Fluid.of(`cmi:${name}_solution`, 250), [
-			`${global.namespace}:${name}`,
+
+	solutionGroup.forEach((type) => {
+		create.mixing(Fluid.of(`cmi:${type}_solution`, 250), [
+			`${global.namespace}:${type}`,
 			Fluid.of("minecraft:water", 250)
 		])
 
-		tconstruct.casting_table(`${global.namespace}:${name}`)
-			.cast("#tconstruct:casts/multi_use/gem")
-			.cast_consumed(false)
-			.fluid(Fluid.of(`cmi:${name}_solution`, 250))
-			.cooling_time(20)
-
-		tconstruct.casting_table(`${global.namespace}:${name}`)
-			.cast("#tconstruct:casts/single_use/gem")
-			.cast_consumed(true)
-			.fluid(Fluid.of(`cmi:${name}_solution`, 250))
-			.cooling_time(20)
-	})
-
-	let metalActiveOrder = [
-		"magnesium",
-		"uranium",
-		"aluminum",
-		"vanadium",
-		"zinc",
-		"chromium",
-		"iron",
-		"cobalt",
-		"nickel",
-		"tin",
-		"lead",
-		"copper"
-	]
-	metalActiveOrder.forEach((metal) => {
-		metalActiveOrder.slice(metalActiveOrder.indexOf(metal) + 1)
-			.forEach((solution) => {
-				event.custom({
-					"type": "immersiveindustry:chemical",
-					"inputs": [
-						{
-							"base_ingredient": {
-								"tag": `forge:dusts/${metal}`
-							},
-							"count": 1
-						}
-					],
-					"outputs": [
-						{
-							"base_ingredient": {
-								"tag": `forge:dusts/${solution}`
-							},
-							"count": 1
-						}
-					],
-					"input_fluids": [
-						{
-							"tag": `forge:solutions/${solution}/chloride`,
-							"amount": 250
-						}
-					],
-					"result_fluids": [
-						{
-							"fluid": IngrUtils.getFirstFluidId(`forge:solutions/${metal}/chloride`),
-							"amount": 250
-						}
-					],
-					"time": 300
-				})
-
-				event.custom({
-					"type": "immersiveindustry:chemical",
-					"inputs": [
-						{
-							"base_ingredient": {
-								"tag": `forge:dusts/${metal}`
-							},
-							"count": 1
-						}
-					],
-					"outputs": [
-						{
-							"base_ingredient": {
-								"tag": `forge:dusts/${solution}`
-							},
-							"count": 1
-						}
-					],
-					"input_fluids": [
-						{
-							"tag": `forge:solutions/${solution}/sulfate`,
-							"amount": 250
-						}
-					],
-					"result_fluids": [
-						{
-							"fluid": IngrUtils.getFirstFluidId(`forge:solutions/${metal}/sulfate`),
-							"amount": 250
-						}
-					],
-					"time": 300
-				})
-			})
-	})
-
-	global.metalGroup.forEach((metal) => {
-		if (IngrUtils.isNotNull(`#forge:dusts/${metal}`) && IngrUtils.isNotNull(`#forge:chem_salts/${metal}/chloride`)) {
-			event.custom({
-				"type": "immersiveindustry:electrolyzer",
-				"input": {
-					"tag": `forge:chem_salts/${metal}/chloride`
-				},
-				"result_fluid": {
-					"fluid": "mekanism:chlorine",
-					"amount": 50
-				},
-				"result": {
-					"base_ingredient": {
-						"tag": `forge:dusts/${metal}`
-					},
-					"count": 1
-				},
-				"large_only": true,
-				"time": 20
-			})
-		}
+		// 晶体
+		thermal_extra.endothermic_dehydrator(
+			`${global.namespace}:${type}`,
+			Fluid.of(`cmi:${type}_solution`, 250)
+		).energy(4000)
 	})
 })
+/*
+solutionGroup.forEach((name) => {
+
+	tconstruct.casting_table(`${global.namespace}:${name}`)
+		.cast("#tconstruct:casts/multi_use/gem")
+		.cast_consumed(false)
+		.fluid(Fluid.of(`cmi:${name}_solution`, 250))
+		.cooling_time(20)
+
+	tconstruct.casting_table(`${global.namespace}:${name}`)
+		.cast("#tconstruct:casts/single_use/gem")
+		.cast_consumed(true)
+		.fluid(Fluid.of(`cmi:${name}_solution`, 250))
+		.cooling_time(20)
+})
+
+let metalActiveOrder = [
+	"magnesium",
+	"uranium",
+	"aluminum",
+	"vanadium",
+	"zinc",
+	"chromium",
+	"iron",
+	"cobalt",
+	"nickel",
+	"tin",
+	"lead",
+	"copper"
+]
+metalActiveOrder.forEach((metal) => {
+	metalActiveOrder.slice(metalActiveOrder.indexOf(metal) + 1)
+		.forEach((solution) => {
+			event.custom({
+				"type": "immersiveindustry:chemical",
+				"inputs": [
+					{
+						"base_ingredient": {
+							"tag": `forge:dusts/${metal}`
+						},
+						"count": 1
+					}
+				],
+				"outputs": [
+					{
+						"base_ingredient": {
+							"tag": `forge:dusts/${solution}`
+						},
+						"count": 1
+					}
+				],
+				"input_fluids": [
+					{
+						"tag": `forge:solutions/${solution}/chloride`,
+						"amount": 250
+					}
+				],
+				"result_fluids": [
+					{
+						"fluid": IngrUtils.getFirstFluidId(`forge:solutions/${metal}/chloride`),
+						"amount": 250
+					}
+				],
+				"time": 300
+			})
+
+			event.custom({
+				"type": "immersiveindustry:chemical",
+				"inputs": [
+					{
+						"base_ingredient": {
+							"tag": `forge:dusts/${metal}`
+						},
+						"count": 1
+					}
+				],
+				"outputs": [
+					{
+						"base_ingredient": {
+							"tag": `forge:dusts/${solution}`
+						},
+						"count": 1
+					}
+				],
+				"input_fluids": [
+					{
+						"tag": `forge:solutions/${solution}/sulfate`,
+						"amount": 250
+					}
+				],
+				"result_fluids": [
+					{
+						"fluid": IngrUtils.getFirstFluidId(`forge:solutions/${metal}/sulfate`),
+						"amount": 250
+					}
+				],
+				"time": 300
+			})
+		})
+})
+
+global.metalGroup.forEach((metal) => {
+	if (IngrUtils.isNotNull(`#forge:dusts/${metal}`) && IngrUtils.isNotNull(`#forge:chem_salts/${metal}/chloride`)) {
+		event.custom({
+			"type": "immersiveindustry:electrolyzer",
+			"input": {
+				"tag": `forge:chem_salts/${metal}/chloride`
+			},
+			"result_fluid": {
+				"fluid": "mekanism:chlorine",
+				"amount": 50
+			},
+			"result": {
+				"base_ingredient": {
+					"tag": `forge:dusts/${metal}`
+				},
+				"count": 1
+			},
+			"large_only": true,
+			"time": 20
+		})
+	}
+})
+})
 */
+
 /*
  * TODO: 该脚本加载比Tags加载的快
  * 导致每次进入游戏load会导致流体无法get

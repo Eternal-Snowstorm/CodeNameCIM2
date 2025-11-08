@@ -19,5 +19,5 @@ ServerEvents.recipes((event) => {
 	mekanism.activating(
 		MekanismType.Gas.of("cmi:refined_nuke_waste", 100),
 		MekanismType.Gas.of("mekanismgenerators:tritium", 100)
-	)
+	).id("mekanismgenerators:activating/tritium")
 })
