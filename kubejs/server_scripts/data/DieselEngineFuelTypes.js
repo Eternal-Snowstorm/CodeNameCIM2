@@ -49,7 +49,6 @@ ServerEvents.highPriorityData((event) => {
 	 */
 	function addDieselEngineFuelType(name, speed) {
 		let getFluidName = IngrUtils.getPath(name)
-
 		let data = {
 			fluid: name,
 			sound_speed: speed,

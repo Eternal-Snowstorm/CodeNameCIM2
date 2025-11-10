@@ -65,7 +65,11 @@ let IngrUtils = {
 	isNotNull: function (tag) {
 		return Ingredient.of(tag).getItemIds().length > 0
 	},
-
+	/**
+	 * 
+	 * @param {String} name 标签或id
+	 * @returns 
+	 */
 	getPath: function (name) {
 		return name.indexOf(":") !== -1 ? name.split(":")[1] : name
 	}
