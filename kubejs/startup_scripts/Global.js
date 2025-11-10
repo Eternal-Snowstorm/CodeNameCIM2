@@ -75,7 +75,7 @@ global.mechanismGroup = [
 	"cobalt",
 	"nether",
 	"thermal",
-	"feinforced",
+	"reinforced",
 	"resonant",
 	"railway",
 	"ender",

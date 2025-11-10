@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
 	const COPPER_MECH = "cmi:copper_mechanism"
 	const IRON_MECH = "cmi:iron_mechanism"
 	const THERMAL_MECH = "cmi:thermal_mechanism"
-	const FEIN_MECH = "cmi:feinforced_mechanism"
+	const FEIN_MECH = "cmi:reinforced_mechanism"
 
 	const REDSTONE_MOD = "vintageimprovements:redstone_module"
 

@@ -52,7 +52,7 @@ StartupEvents.registry("painting_variant", (event) => {
 	addPainting("driver_copper", 16, 16)
 	addPainting("driver_enchanted", 16, 16)
 	addPainting("driver_ender", 16, 16)
-	addPainting("driver_feinforced", 16, 16)
+	addPainting("driver_reinforced", 16, 16)
 	addPainting("driver_gold", 16, 16)
 	addPainting("driver_heavy_engineering", 16, 16)
 	addPainting("driver_iron", 16, 16)

@@ -30,7 +30,7 @@ StartupEvents.registry("item", (event) => {
 		"cobalt",
 		"nether",
 		"thermal",
-		"feinforced",
+		"reinforced",
 		"resonant",
 		"railway",
 		"ender",
