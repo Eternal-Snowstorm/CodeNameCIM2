@@ -43,4 +43,7 @@ StartupEvents.registry("item", (event) => {
 		.tag(global.TinkerItemTags.STONE_HARVEST)
 		.tag(global.TinkerItemTags.INTERACTABLE)
 		.tag(global.TinkerItemTags.INTERACTABLE_RIGHT)
+		.tag(global.TinkerItemTags.NUGGETS_NETHERITE)
+		.tag(global.TinkerItemTags.NUGGETS_NETHERITE_SCRAP)
+		.tag(global.TinkerItemTags.INGOTS_NETHERITE_SCRAP)
 })
