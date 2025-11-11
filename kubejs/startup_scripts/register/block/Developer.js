@@ -14,18 +14,22 @@ StartupEvents.registry("block", (event) => {
 	}
 
 	function addDeveloperDoll(name, type) {
-		return event.create(`${global.namespace}:${name}`, "cardinal")
-			.soundType(SoundType.WOOL)
-			.hardness(0)
-			.resistance(1)
-			.waterlogged()
-			.notSolid()
-			.defaultCutout()
-			.notSolid()
-			.noCollision()
-			.translationKey(Component.translatable(`${global.namespace}:${name}`))
-			.tag(`${global.namespace}:dev_doll`)
-			.modelJson = developerDollmodel(name, type)
+		let builder =
+			event.create(`${global.namespace}:${name}`, "cardinal")
+
+		builder.soundType(SoundType.WOOL)
+		builder.hardness(0)
+		builder.resistance(1)
+		builder.waterlogged()
+		builder.notSolid()
+		builder.defaultCutout()
+		builder.notSolid()
+		builder.noCollision()
+		builder.translationKey(Component.translatable(`${global.namespace}:${name}`))
+		builder.tag(`${global.namespace}:dev_doll`)
+		builder.modelJson = developerDollmodel(name, type)
+
+		return builder
 	}
 
 	// Developer

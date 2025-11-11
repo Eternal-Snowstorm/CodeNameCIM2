@@ -8,9 +8,20 @@ IEEvents.multiblockForm((event) => {
 	const IE = "immersiveengineering"
 	const II = "immersiveindustry"
 
+	/**
+	 * 
+	 * @param {String} namespace 命名空间
+	 * @param {String} id 多方块id
+	 * @returns 
+	 */
 	function getMultiblockId(namespace, id) {
 		return ResourceLocation.fromNamespaceAndPath(namespace, `multiblocks/${id}`)
 	}
+	/**
+	 * 
+	 * @param {ResourceLocation} multiblockId 多方块id
+	 * @returns 
+	 */
 	function disableMultiblock(multiblockId) {
 		if (multiblock === multiblockId) {
 			let tranKey =
@@ -18,8 +29,9 @@ IEEvents.multiblockForm((event) => {
 			player.displayClientMessage(tranKey, true)
 
 			event.cancel()
-			return
+			return true
 		}
+		return false
 	}
 
 	disableMultiblock(getMultiblockId(IE, "alloy_smelter"))
