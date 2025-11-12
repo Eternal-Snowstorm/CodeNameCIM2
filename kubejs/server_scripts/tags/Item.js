@@ -56,7 +56,8 @@ ServerEvents.tags("item", (event) => {
 
 	// 无限燃烧Tooltip
 	event.get("minecraft:infiniburn_all")
-		.add("cmi:combustion_medium_block")
+		.add("forge:storage_blocks/coal")
+		.add("forge:storage_blocks/charcoal")
 
 	// 建筑手杖
 	event.get("constructionwand:wand")
