@@ -273,19 +273,7 @@ BlockEvents.rightClicked("create:shaft", (event) => {
 BlockEvents.rightClicked("create:brass_encased_shaft", (event) => {
 	let { player, item, block, level } = event
 
-	if (player === null) {
-		return
-	}
-
-	if (!player.isShiftKeyDown()) {
-		return
-	}
-
-	if (item.id !== "create:wrench") {
-		return
-	}
-
-	if (player.persistentData.Alt === false) {
+	if (player === null || !player.isShiftKeyDown() || item.id !== "create:wrench" || player.persistentData.Alt === false) {
 		return
 	}
 
@@ -370,19 +358,7 @@ BlockEvents.rightClicked("create:brass_encased_shaft", (event) => {
 BlockEvents.rightClicked("create:andesite_encased_shaft", (event) => {
 	let { player, item, block, level } = event
 
-	if (player === null) {
-		return
-	}
-
-	if (!player.isShiftKeyDown()) {
-		return
-	}
-
-	if (item.id !== "create:wrench") {
-		return
-	}
-
-	if (player.persistentData.Alt === false) {
+	if (player === null || !player.isShiftKeyDown() || item.id !== "create:wrench" || player.persistentData.Alt === false) {
 		return
 	}
 
