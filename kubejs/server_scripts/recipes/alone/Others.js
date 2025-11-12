@@ -264,4 +264,16 @@ ServerEvents.recipes((event) => {
 		D: "cmi:cobalt_mechanism",
 		E: "cmi:ender_mechanism"
 	})
+
+	// 裂变核心
+	kubejs.shaped("alexscaves:fissile_core", [
+		" A ",
+		"BCB",
+		"DBD"
+	], {
+		A: "#forge:ingots/uranium",
+		B: "#forge:plates/lead",
+		C: "#forge:ingots/hop_graphite",
+		D: "cmi:nuke_cooler"
+	})
 })

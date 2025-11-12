@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, tconstruct } = event.recipes
+	let { kubejs, tconstruct, create } = event.recipes
 	const CASING = "mekanism:steel_casing"
 	let mekTiers = [
 		"basic",
@@ -362,4 +362,41 @@ ServerEvents.recipes((event) => {
 	)
 		.cooling_time(50)
 		.id("mekanismgenerators:reactor/glass")
+
+	// 超临界移相器
+	create.mechanical_crafting("mekanism:supercharged_coil", [
+		" ABA ",
+		" AAA ",
+		" CDC ",
+		"AEFEA",
+		"CGHGC"
+	], {
+		A: "#forge:plates/superconducting_mercury",
+		B: Mech.COIL,
+		C: "#forge:plates/silicon_carbide",
+		D: "create:shadow_steel_casing",
+		E: "create:refined_radiance",
+		F: Mech.T4,
+		G: "create:shadow_steel",
+		H: Mech.NUKE
+	}).id("mekanism:supercharged_coil")
+
+	kubejs.shaped("2x mekanism:sps_port", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "mekanism:sps_casing",
+		B: Mech.AIR
+	}).id("mekanism:sps_port")
+
+	kubejs.shaped("mekanism:sps_casing", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: "mekanism:hdpe_sheet",
+		B: "#forge:plates/superconducting_mercury",
+		C: Mech.NUKE
+	}).id("mekanism:sps_casing")
 })
