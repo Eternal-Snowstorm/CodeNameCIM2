@@ -25,22 +25,29 @@ StartupEvents.recipeSchemaRegistry((event) => {
 	 * @template {keyof Special.RecipeComponents} T
 	 * @param {T} type
 	 * @param {string} key
-	 * @param {boolean} [optional]
+	 * @param {boolean | any} [optionalOrDefault]
 	 */
-	function buildRecipeSchema(type, key, optional) {
+	function buildRecipeSchema(type, key, optionalOrDefault) {
 		let builder = components.get(type)().key(key)
-		if (optional !== undefined) {
-			builder = builder.defaultOptional()
+
+		if (optionalOrDefault !== undefined) {
+			if (optionalOrDefault === true) {
+				builder = builder.defaultOptional()
+			} else {
+				builder = builder.optional(optionalOrDefault)
+			}
 		}
+
 		return new $RecipeSchema(builder)
 	}
 
 	let RecipeTypeSchema = {
-		a: {
-			b: function () {
-				buildRecipeSchema("", "", true)
+		namespace: {
+			recipeType: function () {
+				return buildRecipeSchema("", "", "")
 			}
 		}
 	}
-	// event.register("", RecipeTypeSchema.a.b())
+
+	// event.register("create:mixing", RecipeTypeSchema.namespace.recipeType())
 })
