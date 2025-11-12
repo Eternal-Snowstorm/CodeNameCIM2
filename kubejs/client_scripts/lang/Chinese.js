@@ -589,6 +589,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addCraftingIncompleteLang(material, value) {
 		event.add(`item.${global.namespace}.${material}_mechanism_basement`, `${value}构件底座`)
+		event.add(`item.${global.namespace}.${material}_mechanism_augment`, `${value}构件组件`)
 	}
 
 	function addMechanismMachineLang(material, value) {

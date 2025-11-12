@@ -16,6 +16,7 @@ StartupEvents.registry("item", (event) => {
 
 	addMechanismBasement("iron")
 	addMechanismBasement("copper")
+	addMechanismBasement("andesite")
 
 	addMechanismBasement("ender")
 
@@ -23,10 +24,13 @@ StartupEvents.registry("item", (event) => {
 		addMechanismBasement(`tier_${i}_aviation`)
 	}
 
+	addMechanismBasement("air_tight")
+	addMechanismBasement("computing")
 	addMechanismBasement("basic_mekanism")
 	addMechanismBasement("advanced_mekanism")
 	addMechanismBasement("elite_mekanism")
 	addMechanismBasement("ultimate_mekanism")
 
 	addMechanismBasement("nuclear")
+	addMechanismBasement("antimatter")
 })
