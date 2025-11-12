@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 	let igm = "cmi:incomplete_gold_mechanism"
 	let ipm = "cmi:incomplete_photosensitive_mechanism"
 	let itm = "cmi:incomplete_thermal_mechanism"
-	let ifm = "cmi:incomplete_feinforced_mechanism"
+	let ifm = "cmi:incomplete_reinforced_mechanism"
 	let irm = "cmi:incomplete_resonant_mechanism"
 	let inm = "cmi:incomplete_nature_mechanism"
 	let ilem = "cmi:incomplete_light_engineering_mechanism"
@@ -127,7 +127,7 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem(itm).loops(1)
 
 	// 强化
-	create.sequenced_assembly("cmi:feinforced_mechanism", [
+	create.sequenced_assembly("cmi:reinforced_mechanism", [
 		"#forge:plates/electrum"
 	], [
 		create.deploying(ifm, [ifm, "thermal:rf_coil"]),

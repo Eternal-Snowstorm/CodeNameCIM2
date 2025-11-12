@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
     let { create, kubejs } = event.recipes
     const MECH1 = "cmi:thermal_mechanism"
-    const MECH2 = "cmi:feinforced_mechanism"
+    const MECH2 = "cmi:reinforced_mechanism"
     const MECH3 = "cmi:resonant_mechanism"
     let up1 = "cmi:incomplete_upgrade_augment_1"
     let up2 = "cmi:incomplete_upgrade_augment_2"

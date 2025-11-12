@@ -11,7 +11,7 @@ StartupEvents.registry("block", (event) => {
 		"cobalt",
 		"nether",
 		"thermal",
-		"feinforced",
+		"reinforced",
 		"resonant",
 		"railway",
 		"ender",

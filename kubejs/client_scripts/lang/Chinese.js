@@ -509,7 +509,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["gold", "金质"],
 		["cobalt", "钴质"],
 		["thermal", "热力"],
-		["feinforced", "强化"],
+		["reinforced", "强化"],
 		["resonant", "谐振"],
 		["railway", "铁路"],
 		["ender", "末影"],

@@ -2,7 +2,7 @@ ItemEvents.modification((event) => {
 	/**
 	 * 
 	 * @param {Internal.Item} item 修改的物品
-	 * @param {Number} time 修改的时间(单位: 1个物品)
+	 * @param {Number} time 修改的时间(单位: 1个物品[即200tick])
 	 * @returns 
 	 */
 	function modifyItemBurnTime(item, time) {

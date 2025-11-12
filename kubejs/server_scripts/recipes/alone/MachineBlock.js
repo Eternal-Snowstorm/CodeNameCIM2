@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 		"cobalt",
 		"nether",
 		"thermal",
-		"feinforced",
+		"reinforced",
 		"resonant",
 		"railway",
 		"ender",

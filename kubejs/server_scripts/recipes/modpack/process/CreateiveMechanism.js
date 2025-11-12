@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
 		k: "cmi:cobalt_mechanism_flash_drive",
 		l: "cmi:nether_mechanism_flash_drive",
 		m: "cmi:thermal_mechanism_flash_drive",
-		n: "cmi:feinforced_mechanism_flash_drive",
+		n: "cmi:reinforced_mechanism_flash_drive",
 		o: "cmi:resonant_mechanism_flash_drive",
 		p: "cmi:railway_mechanism_flash_drive",
 		q: "cmi:ender_mechanism_flash_drive",

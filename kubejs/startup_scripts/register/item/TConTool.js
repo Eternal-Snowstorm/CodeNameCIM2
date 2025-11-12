@@ -23,9 +23,15 @@ StartupEvents.registry("item", (event) => {
 	 * @returns 注册匠魂工具物品
 	 */
 	function addTConTool(name) {
-		return event.createCustom(`${global.namespace}:${name}`, () => {
-			return new $ModifiableItem(new $Item$Properties(), addTConToolType(name))
-		}).tag("forge:tools").tag("minecraft:tools")
+		let toolItemBuilder =
+			event.createCustom(`${global.namespace}:${name}`, () => {
+				return new $ModifiableItem(new $Item$Properties(), addTConToolType(name))
+			})
+
+		toolItemBuilder.tag("forge:tools")
+		toolItemBuilder.tag("minecraft:tools")
+
+		return toolItemBuilder
 	}
 
 	addTConTool("paxel")
@@ -43,4 +49,7 @@ StartupEvents.registry("item", (event) => {
 		.tag(global.TinkerItemTags.STONE_HARVEST)
 		.tag(global.TinkerItemTags.INTERACTABLE)
 		.tag(global.TinkerItemTags.INTERACTABLE_RIGHT)
+		.tag(global.TinkerItemTags.NUGGETS_NETHERITE)
+		.tag(global.TinkerItemTags.NUGGETS_NETHERITE_SCRAP)
+		.tag(global.TinkerItemTags.INGOTS_NETHERITE_SCRAP)
 })

@@ -145,14 +145,4 @@ ServerEvents.recipes((event) => {
 		"cmi:brominated_flame_retardants",
 		"mekanism:hdpe_pellet"
 	]).heated()
-
-	// 镁盐结晶
-	tconstruct.casting_table("cmi:mgso4")
-		.fluid(Fluid.of("cmi:mgso4_solution", 500))
-		.cast("#tconstruct:casts/multi_use/gem")
-		.cooling_time(20 * 2)
-	tconstruct.casting_table("cmi:mgcl2")
-		.fluid(Fluid.of("cmi:mgcl2_solution", 500))
-		.cast("#tconstruct:casts/multi_use/gem")
-		.cooling_time(20 * 2)
 })
