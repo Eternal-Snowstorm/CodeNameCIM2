@@ -10,13 +10,13 @@ ServerEvents.highPriorityData((event) => {
 		"thermalconstruct",
 		"thermalendergy",
 		"thermal_extra",
-		"alexscaves",
 		"create",
 		"createdeco",
 		"ae2",
 		"ad_astra",
 		"immersiveengineering",
 		"mekanism",
+		"alexscaves",
 		"tconstruct"
 	]
 	// 录入所有金属材料类型

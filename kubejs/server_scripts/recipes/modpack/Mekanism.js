@@ -17,4 +17,13 @@ ServerEvents.recipes((event) => {
 		Fluid.of("mekanism:ethene", 50),
 		"mekanism:hdpe_pellet"
 	).duration(400).energyRequired(200)
+
+	// 核废料2
+	mekanism.reaction(
+		'mekanism:reprocessed_fissile_fragment',
+		MekanismType.Gas.of("mekanism:fissile_fuel", 100),
+		Fluid.of("minecraft:water", 10000),
+		'mekanism:reprocessed_fissile_fragment',
+		MekanismType.Gas.of("mekanism:nuclear_waste", 10)
+	).duration(400).energyRequired(0)
 })
