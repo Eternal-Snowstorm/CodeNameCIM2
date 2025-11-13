@@ -14,9 +14,9 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem("create:unprocessed_obsidian_sheet").loops(10)
 
 	// 扫描器
-	create.sequenced_assembly([
-		Item.of("scannable:scanner")
-	], "#forge:plates/iron", [
+	create.sequenced_assembly("scannable:scanner", [
+		"#forge:plates/iron"
+	], [
 		create.deploying("cmi:incomplete_scanner", [
 			"cmi:incomplete_scanner",
 			"immersiveengineering:survey_tools"
@@ -37,9 +37,9 @@ ServerEvents.recipes((event) => {
 		.id("scannable:scanner")
 
 	// 空白扫描模块
-	create.sequenced_assembly([
-		Item.of("scannable:blank_module")
-	], "#forge:plates/plastic", [
+	create.sequenced_assembly("scannable:blank_module", [
+		"#forge:plates/plastic"
+	], [
 		create.deploying("cmi:incomplete_scanning_module", [
 			"cmi:incomplete_scanning_module",
 			"#forge:plates/electrum"
@@ -73,8 +73,9 @@ ServerEvents.recipes((event) => {
 		.id("create:crafting/materials/electron_tube")
 
 	// Ad电容器
-	create.sequenced_assembly("ad_astra:etrionic_capacitor",
-		"#forge:plates/steel", [
+	create.sequenced_assembly("ad_astra:etrionic_capacitor", [
+		"#forge:plates/steel"
+	], [
 		create.deploying("ad_astra:etrionic_core", [
 			"ad_astra:etrionic_core",
 			"#forge:plates/etrium"
@@ -124,8 +125,9 @@ ServerEvents.recipes((event) => {
 		])
 	]).loops(1).transitionalItem("alexscaves:charred_remnant")
 
+	// 高压气体容器
 	create.sequenced_assembly("steampowered:pressurized_gas_container", [
-		"#forge:plates/bronze"
+		"#forge:plates/aluminum"
 	], [
 		create.deploying("cmi:incomplete_gas_container", [
 			"cmi:incomplete_gas_container",
@@ -133,16 +135,16 @@ ServerEvents.recipes((event) => {
 		]),
 		vintageimprovements.laser_cutting("cmi:incomplete_gas_container",
 			"cmi:incomplete_gas_container"
-		).energy(1000).maxChargeRate(100),
+		).energy(1000).maxChargeRate(1000),
 		create.deploying("cmi:incomplete_gas_container", [
 			"cmi:incomplete_gas_container",
 			"thermal:cured_rubber"
 		]),
-		create.pressing("cmi:incomplete_gas_container",
+		create.pressing("cmi:incomplete_gas_container", [
 			"cmi:incomplete_gas_container"
-		),
-		vintageimprovements.vacuumizing("cmi:incomplete_gas_container",
+		]),
+		vintageimprovements.vacuumizing("cmi:incomplete_gas_container", [
 			"cmi:incomplete_gas_container"
-		)
+		])
 	]).loops(1).transitionalItem("cmi:incomplete_gas_container")
 })

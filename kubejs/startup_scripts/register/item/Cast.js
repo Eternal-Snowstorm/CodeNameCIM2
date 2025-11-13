@@ -1,26 +1,28 @@
 let casts = []
 
-function addCastItem(name) {
-	let cast = {
-		name: name,
-		types: [],
+/**
+ * 
+ * @param {String} name 铸模类型
+ */
+function CastItem(name) {
+	this.name = name
+	this.types = []
 
-		gold: function () {
-			this.types.push("gold")
-			return this
-		},
-		sand: function () {
-			this.types.push("sand")
-			this.types.push("red_sand")
-			return this
-		},
-		bronze: function () {
-			this.types.push("bronze")
-			return this
-		}
-	}
-	casts.push(cast)
-	return cast
+	casts.push(this)
+}
+
+CastItem.prototype.gold = function () {
+	this.types.push("gold")
+	return this
+}
+CastItem.prototype.sand = function () {
+	this.types.push("sand")
+	this.types.push("red_sand")
+	return this
+}
+CastItem.prototype.bronze = function () {
+	this.types.push("bronze")
+	return this
 }
 
 StartupEvents.registry("item", (event) => {
@@ -52,10 +54,10 @@ StartupEvents.registry("item", (event) => {
 	})
 })
 
-addCastItem("mechanism")
+new CastItem("mechanism")
 	.gold()
 	.sand()
 	.bronze()
 
-addCastItem("nugget")
+new CastItem("nugget")
 	.bronze()

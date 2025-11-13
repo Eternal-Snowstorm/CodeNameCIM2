@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 		let crushed = `#create:crushed_raw_materials/${material}`
 		let dust = Ingredient.of(`#forge:dusts/${material}`).getItemIds()
 
-		create.splashing([
+		return create.splashing([
 			Item.of(dust[0], 2),
 			Item.of(product).withChance(0.25)
 		], crushed)

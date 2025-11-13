@@ -5,56 +5,52 @@ let aloneOres = []
  * @param {string} name 注册ID
  * @param {ResourceLocation_} level 挖掘等级
  * @param {number} hardness 硬度
- * @type {OreBlockRegister}
  * @returns 矿石注册
  */
-function addAloneOreBlock(name, level, hardness) {
-	let ore = {
-		name: name,
-		level: level,
-		hardness: hardness,
-		types: [],
+function AloneOreBlock(name, level, hardness) {
+	this.name = name
+	this.level = level
+	this.hardness = hardness
+	this.types = []
 
-		stone: function () {
-			this.types.push("stone")
-			return this
-		},
-		deepslate: function () {
-			this.types.push("deepslate")
-			return this
-		},
-		nether: function () {
-			this.types.push("nether")
-			return this
-		},
-		end: function () {
-			this.types.push("end")
-			return this
-		},
-		moon: function () {
-			this.types.push("moon")
-			return this
-		},
-		mars: function () {
-			this.types.push("mars")
-			return this
-		},
-		venus: function () {
-			this.types.push("venus")
-			return this
-		},
-		mercury: function () {
-			this.types.push("mercury")
-			return this
-		},
-		glacio: function () {
-			this.types.push("glacio")
-			return this
-		}
-	}
-
-	aloneOres.push(ore)
-	return ore
+	// 自动加入全局独立矿石表
+	aloneOres.push(this)
+}
+AloneOreBlock.prototype.stone = function () {
+	this.types.push("stone")
+	return this
+}
+AloneOreBlock.prototype.deepslate = function () {
+	this.types.push("deepslate")
+	return this
+}
+AloneOreBlock.prototype.nether = function () {
+	this.types.push("nether")
+	return this
+}
+AloneOreBlock.prototype.end = function () {
+	this.types.push("end")
+	return this
+}
+AloneOreBlock.prototype.moon = function () {
+	this.types.push("moon")
+	return this
+}
+AloneOreBlock.prototype.mars = function () {
+	this.types.push("mars")
+	return this
+}
+AloneOreBlock.prototype.venus = function () {
+	this.types.push("venus")
+	return this
+}
+AloneOreBlock.prototype.mercury = function () {
+	this.types.push("mercury")
+	return this
+}
+AloneOreBlock.prototype.glacio = function () {
+	this.types.push("glacio")
+	return this
 }
 
 StartupEvents.registry("block", (event) => {
@@ -114,19 +110,19 @@ StartupEvents.registry("block", (event) => {
 })
 
 // 石英
-addAloneOreBlock("quartz", "iron", 3)
+new AloneOreBlock("quartz", "iron", 3)
 	.stone()
 	.deepslate()
 
 // 钴
-addAloneOreBlock("cobalt", "iron", 10)
+new AloneOreBlock("cobalt", "iron", 10)
 	.moon()
 
 // 赛特斯石英
-addAloneOreBlock("certus_quartz", "iron", 3)
+new AloneOreBlock("certus_quartz", "iron", 3)
 	.stone()
 	.deepslate()
 
 // 银
-addAloneOreBlock("silver", "iron", 3)
+new AloneOreBlock("silver", "iron", 3)
 	.moon()

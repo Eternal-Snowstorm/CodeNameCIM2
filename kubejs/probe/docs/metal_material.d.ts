@@ -1,8 +1,26 @@
+// 矿石接口
+interface OreBlock {
+	name: string,
+	color: Color,
+	level: MiningLevel,
+	hardness: number
+
+	stone(): this
+	deepslate(): this
+	nether(): this
+	end(): this
+	moon(): this
+	mars(): this
+	venus(): this
+	mercury(): this
+	glacio(): this
+}
+
 // 工具类型
 type ToolType = "pickaxe" | "axe" | "shovel" | "hoe" | "sword"
-// 挖掘等级列表
+// 挖掘等级
 type MiningLevel = "wood" | "stone" | "iron" | "diamond" | "nether"
-// 材料类型定义
+// 材料类型
 type MaterialType =
 	"ingot" |
 	"plate" |
@@ -16,10 +34,9 @@ type MaterialType =
 	"clump" |
 	"shard" |
 	"crystal" |
-	"dirtySlurry" |
-	"slurry";
+	"dirty_slurry" |
+	"slurry"
 
-// 材料对象接口
 interface Material {
 	name: string
 	color: Color
@@ -42,25 +59,6 @@ interface Material {
 	slurry(): this
 }
 
-// 矿石接口
-interface OreBlock {
-	name: string,
-	color: Color,
-	level: MiningLevel,
-	hardness: number
-
-	stone(): this
-	deepslate(): this
-	nether(): this
-	end(): this
-	moon(): this
-	mars(): this
-	venus(): this
-	mercury(): this
-	glacio(): this
+declare class Material implements Material {
+	constructor(name: string, color: Color, level: MiningLevel)
 }
-
-// 材料管理函数
-type RegisterMetalMaterial = (name: string, color: Color, level: MiningLevel) => Material
-// 矿石函数
-type OreBlockRegister = (name: string, level: MiningLevel, level: MiningLevel, hardness: number) => OreBlock

@@ -122,65 +122,64 @@ const ORE_TYPE_CONFIG = {
 	}
 }
 
-function addOreBlock(name, level, hardness) {
-	let ore = {
-		name: name,
-		level: level,
-		hardness: hardness,
-		color: 0xFFFFFF,
-		texture: "ore_1",
-		types: [],
+/**
+ * 矿石类
+ * @param {string} name 注册ID
+ * @param {MiningLevel} level 挖掘等级
+ * @param {number} hardness 硬度
+ * @constructor
+ */
+function OreBlock(name, level, hardness) {
+	this.name = name
+	this.level = level
+	this.hardness = hardness
+	this.color = 0xFFFFFF
+	this.texture = "ore_1"
+	this.types = []
 
-		/** 
-		 *  设置矿石外观 
-		 * @param {Internal.BlockTintFunction_ || Color_} color 颜色 
-		 * @param {number} id 矿石贴图形状编号 
-		 */
-		appearance: function (color, id) {
-			this.color = color
-			this.texture = `ore_${id}`
-			return this
-		},
-		stone: function () {
-			this.types.push("stone")
-			return this
-		},
-		deepslate: function () {
-			this.types.push("deepslate")
-			return this
-		},
-		nether: function () {
-			this.types.push("nether")
-			return this
-		},
-		end: function () {
-			this.types.push("end")
-			return this
-		},
-		moon: function () {
-			this.types.push("moon")
-			return this
-		},
-		mars: function () {
-			this.types.push("mars")
-			return this
-		},
-		venus: function () {
-			this.types.push("venus")
-			return this
-		},
-		mercury: function () {
-			this.types.push("mercury")
-			return this
-		},
-		glacio: function () {
-			this.types.push("glacio")
-			return this
-		}
-	}
+	commonOres.push(this)
+}
 
-	commonOres.push(ore)
-	return ore
+OreBlock.prototype.appearance = function (color, id) {
+	this.color = color
+	this.texture = `ore_${id}`
+	return this
+}
+OreBlock.prototype.stone = function () {
+	this.types.push("stone")
+	return this
+}
+OreBlock.prototype.deepslate = function () {
+	this.types.push("deepslate")
+	return this
+}
+OreBlock.prototype.nether = function () {
+	this.types.push("nether")
+	return this
+}
+OreBlock.prototype.end = function () {
+	this.types.push("end")
+	return this
+}
+OreBlock.prototype.moon = function () {
+	this.types.push("moon")
+	return this
+}
+OreBlock.prototype.mars = function () {
+	this.types.push("mars")
+	return this
+}
+OreBlock.prototype.venus = function () {
+	this.types.push("venus")
+	return this
+}
+OreBlock.prototype.mercury = function () {
+	this.types.push("mercury")
+	return this
+}
+OreBlock.prototype.glacio = function () {
+	this.types.push("glacio")
+	return this
 }
 
 StartupEvents.registry("block", (event) => {
@@ -234,78 +233,78 @@ StartupEvents.registry("block", (event) => {
 })
 
 // 铂
-addOreBlock("platinum", "iron", 8)
+new OreBlock("platinum", "iron", 8)
 	.appearance(0xA4D4DA, 5)
 	.moon()
 
 // 钒
-addOreBlock("vanadium", "iron", 5)
+new OreBlock("vanadium", "iron", 5)
 	.appearance(0xFFFFFF, 1)
 	.nether()
 
 // 铬
-addOreBlock("chromium", "stone", 5)
+new OreBlock("chromium", "stone", 5)
 	.appearance(0xFFFFFF, 5)
 	.moon()
 
 // 钨
-addOreBlock("tungsten", "nether", 10)
+new OreBlock("tungsten", "nether", 10)
 	.appearance(0x596C7E, 5)
 	.nether()
 
 
 // 黄铁
-addOreBlock("pyrite", "stone", 6)
+new OreBlock("pyrite", "stone", 6)
 	.appearance(0xE4C02C, 4)
 	.nether()
 
 // 红镍
-addOreBlock("lateritic_nickel", "stone", 6)
+new OreBlock("lateritic_nickel", "stone", 6)
 	.appearance(0xA40000, 2)
 	.end()
 
 // 辉铜
-addOreBlock("veridium", "stone", 3)
+new OreBlock("veridium", "stone", 3)
 	.appearance(0x8ACE51, 2)
 	.mars()
 
 // 黄锡
-addOreBlock("stannine", "stone", 3)
+new OreBlock("stannine", "stone", 3)
 	.appearance(0xFFF86C, 3)
 	.moon()
 
 // 闪锌
-addOreBlock("sphalerite", "iron", 5)
+new OreBlock("sphalerite", "iron", 5)
 	.appearance(0xB4DDCB, 7)
 	.end()
 
 // 磷酸铝
-addOreBlock("variscite", "stone", 4)
+new OreBlock("variscite", "stone", 4)
 	.appearance(0x65F0BE, 5)
 	.end()
 
 // 方铅
-addOreBlock("galena", "stone", 5)
+new OreBlock("galena", "stone", 5)
 	.appearance(0x6A6F7C, 3)
 	.mars()
 
 // 铱锇
-addOreBlock("osmiridium", "iron", 6)
+new OreBlock("osmiridium", "iron", 6)
 	.appearance(0x987337, 5)
 	.moon()
 
 // 方铀
-addOreBlock("uraninite", "stone", 5)
+new OreBlock("uraninite", "stone", 5)
 	.appearance(0x71D23A, 1)
 	.mars()
 
 // 辉银
-addOreBlock("argentite", "iron", 6)
+new OreBlock("argentite", "iron", 6)
 	.appearance(0xFFFFFF, 4)
 	.nether()
 
 // 埃忒恩
-addOreBlock("etrium", "diamond", 5)
+new OreBlock("etrium", "diamond", 5)
 	.appearance(0x32FFD4, 1)
 	.stone()
 	.deepslate()
