@@ -1,29 +1,29 @@
-type TConMiningTier = "minecraft:wood" | "minecraft:stone" | "minecraft:iron" | "minecraft:diamond" | "minecraft:netherite"
+type MiningTier = "minecraft:wood" | "minecraft:stone" | "minecraft:iron" | "minecraft:diamond" | "minecraft:netherite"
 
-type TConTraitStat = "tconstruct:armor" | "tconstruct:head" | "tconstruct:handle" | "tconstruct:binding" | "tconstruct:limb" | "tconstruct:grip" | "tconstruct:bowstring" | "tconstruct:melee_harvest" | "tconstruct:ranged"
+type TraitStat = "tconstruct:armor" | "tconstruct:head" | "tconstruct:handle" | "tconstruct:binding" | "tconstruct:limb" | "tconstruct:grip" | "tconstruct:bowstring" | "tconstruct:melee_harvest" | "tconstruct:ranged"
 
 type TConMaterialRegistry = (event: Internal.DataPackEventJS_, name: string, handler: (builder: TConMaterialBuilder) => void) => void
 
 type FluidIngredient = Special.Fluid | `#${Special.FluidTag}`
 
-interface TConTraitsBuilder {
+interface TraitsBuilder {
 	addDefault(name: string, level: number): this;
-	addTrait(stat: TConTraitStat, name: string, level: number): this;
+	addTrait(stat: TraitStat, name: string, level: number): this;
 }
 
-interface TConMaterialRecipeBuilder {
+interface MaterialRecipeBuilder {
 	needed(needed: number): this;
 	value(value: number): this;
 	leftover(leftover: Internal.ItemStack): this;
 }
 
-interface TConMaterialFluidRecipeBuilder {
+interface MaterialFluidRecipeBuilder {
 	amount(amount: number): this;
 	temperature(temperature: number): this;
 	input(input: string): this;
 }
 
-interface TConMaterialMeltingRecipeBuilder {
+interface MaterialMeltingRecipeBuilder {
 	amount(amount: number): this;
 	temperature(temperature: number): this;
 }
@@ -34,7 +34,7 @@ interface TConMaterialBuilder {
 	tier(tier: number): this;
 	hidden(hidden: boolean): this;
 	sortOrder(sortOrder: number): this;
-	head(durability: number, meleeAttack: number, miningSpeed: number, miningTier: TConMiningTier): this;
+	head(durability: number, meleeAttack: number, miningSpeed: number, miningTier: MiningTier): this;
 	handle(durability: number, meleeDamage: number, meleeSpeed: number, miningSpeed: number): this;
 	binding(): this;
 	limb(accuracy: number, drawSpeed: number, durability: number, velocity: number): this;
@@ -47,8 +47,8 @@ interface TConMaterialBuilder {
 	platingShield(durability: number, knockbackResistance: number, toughness: number): this;
 	maille(): this;
 	shieldCore(): this;
-	setTraits(handler: (builder: TConTraitsBuilder) => void): this;
-	addMaterialRecipes(ingredient: Ingredient_, handler: (builder: TConMaterialRecipeBuilder) => void): this;
-	addMaterialFluidRecipes(fluid: FluidIngredient, handler: (builder: TConMaterialFluidRecipeBuilder) => void): this;
-	addMaterialMeltingRecipes(fluid: Special.Fluid, handler: (builder: TConMaterialMeltingRecipeBuilder) => void): this;
+	setTraits(handler: (builder: TraitsBuilder) => void): this;
+	addMaterialRecipes(ingredient: Ingredient_, handler: (builder: MaterialRecipeBuilder) => void): this;
+	addMaterialFluidRecipes(fluid: FluidIngredient, handler: (builder: MaterialFluidRecipeBuilder) => void): this;
+	addMaterialMeltingRecipes(fluid: Special.Fluid, handler: (builder: MaterialMeltingRecipeBuilder) => void): this;
 }
