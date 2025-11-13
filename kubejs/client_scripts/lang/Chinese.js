@@ -91,6 +91,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("incomplete_bronze_large_cogwheel", "青铜大齿轮(半成品)")
 	addItemLang("incomplete_cast_iron_large_cogwheel", "铸铁大齿轮(半成品)")
 	addItemLang("incomplete_steel_large_cogwheel", "钢大齿轮(半成品)")
+	addItemLang("incomplete_gas_container", "气体容器(半成品)")
 
 	addItemLang("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLang("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")

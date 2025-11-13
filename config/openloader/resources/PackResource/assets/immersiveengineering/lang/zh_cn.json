@@ -268,6 +268,7 @@
 	"desc.immersiveengineering.info.blueprint.electrode": "电弧炉电极",
 	"desc.immersiveengineering.info.blueprint.bannerpatterns": "旗帜图案",
 	"desc.immersiveengineering.info.blueprint.mechanism_basements": "构件底座",
+	"desc.immersiveengineering.info.blueprint.mechanism_augments": "构件组件",
 	"desc.immersiveengineering.info.electrodeIntegrity": "完整度%1$s %%",
 	"desc.immersiveengineering.info.revolver.perk.cooldown": "射击速度: %1$s%%",
 	"desc.immersiveengineering.info.revolver.perk.cooldown.tier-3": "很慢的%1$s",

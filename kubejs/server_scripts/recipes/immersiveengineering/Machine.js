@@ -4,25 +4,6 @@ ServerEvents.recipes((event) => {
 	let ice = "#forge:treated_wood_slab"
 	let icea = "immersiveengineering:plate_duroplast"
 
-	create.sequenced_assembly("immersiveengineering:component_electronic", [
-		ice
-	], [
-		create.deploying(ice, [ice, "minecraft:redstone"]),
-		create.deploying(ice, [ice, "minecraft:quartz"])
-	]).transitionalItem(ice).loops(1)
-
-	vintageimprovements.vacuumizing("immersiveengineering:electron_tube", [
-		"create:electron_tube",
-		"#forge:plates/nickel"
-	])
-
-	create.sequenced_assembly("immersiveengineering:component_electronic_adv", [
-		icea
-	], [
-		create.deploying(icea, [icea, "immersiveengineering:electron_tube"]),
-		create.deploying(icea, [icea, "immersiveengineering:electron_tube"])
-	]).transitionalItem(icea).loops(1)
-
 	kubejs.shapeless("immersiveindustry:refractory_kiln_brick", [
 		"minecraft:clay_ball",
 		"#forge:ingots/brick"

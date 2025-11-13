@@ -115,6 +115,10 @@ StartupEvents.modifyCreativeTab("immersiveengineering:main", (event) => {
 		Item.of("immersiveengineering:blueprint")
 			.withNBT({
 				blueprint: "mechanism_basements"
+			}),
+		Item.of("immersiveengineering:blueprint")
+			.withNBT({
+				blueprint: "mechanism_augments"
 			})
 	)
 })
