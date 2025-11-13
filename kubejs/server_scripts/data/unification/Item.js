@@ -1,6 +1,4 @@
 ServerEvents.highPriorityData((event) => {
-
-
 	// 焦煤
 	addJsonFile("coal_coke", addUnification(
 		"#forge:coal_coke",
