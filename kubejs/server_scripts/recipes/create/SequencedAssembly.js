@@ -123,4 +123,26 @@ ServerEvents.recipes((event) => {
 			"#forge:plates/platinum"
 		])
 	]).loops(1).transitionalItem("alexscaves:charred_remnant")
+
+	create.sequenced_assembly("steampowered:pressurized_gas_container", [
+		"#forge:plates/bronze"
+	], [
+		create.deploying("cmi:incomplete_gas_container", [
+			"cmi:incomplete_gas_container",
+			"#forge:glass_panes"
+		]),
+		vintageimprovements.laser_cutting("cmi:incomplete_gas_container",
+			"cmi:incomplete_gas_container"
+		).energy(1000).maxChargeRate(100),
+		create.deploying("cmi:incomplete_gas_container", [
+			"cmi:incomplete_gas_container",
+			"thermal:cured_rubber"
+		]),
+		create.pressing("cmi:incomplete_gas_container",
+			"cmi:incomplete_gas_container"
+		),
+		vintageimprovements.vacuumizing("cmi:incomplete_gas_container",
+			"cmi:incomplete_gas_container"
+		)
+	]).loops(1).transitionalItem("cmi:incomplete_gas_container")
 })

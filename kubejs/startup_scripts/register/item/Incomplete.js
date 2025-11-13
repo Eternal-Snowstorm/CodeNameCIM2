@@ -37,4 +37,8 @@ StartupEvents.registry("item", (event) => {
 	// 航天硬盘(半成品)
 	addItem("incomplete_aviation_cell")
 		.texture(`${global.namespace}:item/material/incomplete_aviation_cell`)
+
+	// 气体容器(半成品)
+	addItem("incomplete_gas_container")
+		.texture(`${global.namespace}:item/material/incomplete_gas_container`)
 })

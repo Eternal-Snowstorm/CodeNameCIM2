@@ -2,12 +2,13 @@ ServerEvents.recipes((event) => {
 	let { tconstruct } = event.recipes
 
 	let castingMechanismMaterials = [
-		["tconstruct:molten_iron", "cmi:iron_mechanism_basement"],
+		["tconstruct:molten_iron", "cmi:iron_mechanism_basement", 1535],
 		//["tconstruct:molten_gold", "cmi:incomplete_gold_mechanism"],
-		["tconstruct:molten_copper", "cmi:copper_mechanism_basement"],
+		["tconstruct:molten_copper", "cmi:copper_mechanism_basement", 1085],
 		//["cmi:molten_andesite_alloy", "cmi:incomplete_andesite_mechanism"]
+		["cmi:molten_andesite_alloy", "cmi:andesite_mechanism_basement", 760]
 	]
-	castingMechanismMaterials.forEach(([input, output]) => {
+	castingMechanismMaterials.forEach(([input, output, temp]) => {
 		tconstruct.casting_table(output, Fluid.of(input, 90))
 			.cast("#tconstruct:casts/multi_use/mechanism")
 			.cooling_time(50)
@@ -16,6 +17,11 @@ ServerEvents.recipes((event) => {
 			.cast("#tconstruct:casts/single_use/mechanism")
 			.cooling_time(50)
 			.cast_consumed(true)
+
+		tconstruct.melting(Fluid.of(input, 90))
+			.ingredient(output)
+			.temperature(temp)
+			.time(100)
 	})
 
 	// 金构件铸模
