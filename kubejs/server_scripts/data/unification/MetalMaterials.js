@@ -36,8 +36,8 @@ ServerEvents.highPriorityData((event) => {
 		global.metalGroup.forEach((material) => {
 			/**
 			 * 声明所需变量
-			 * @param {String} tag 当前正在遍历的物品tag
-			 * @param {Set} ids tag下所有物品id
+			 * @param {Internal.Ingredient_} tag 当前正在遍历的物品tag
+			 * @param {Internal.Set<string>} ids tag下所有物品id
 			 * @param {String} currentNamespace 当前物品的命名空间
 			 * @param {String} outputId 所输出的物品id
 			 * @param {Number} priorityValue 当前命名空间的优先级
