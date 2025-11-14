@@ -21,16 +21,9 @@ ServerEvents.recipes((event) => {
 
 	event.custom({
 		"type": "immersiveindustry:rotary_kiln",
-		"input": {
-			"item": "minecraft:charcoal"
-		},
-		"result": {
-			"item": "thermal:coal_coke"
-		},
-		"result_fluid": {
-			"fluid": "immersiveengineering:creosote",
-			"amount": 500
-		},
+		"input": Item.of("minecraft:charcoal").toJson(),
+		"result": Item.of("thermal:coal_coke").toJson(),
+		"result_fluid": Fluid.of("immersiveengineering:creosote").toJson(),
 		"time": 900,
 		"tickEnergy": 56
 	})
