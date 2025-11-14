@@ -315,13 +315,10 @@ ServerEvents.recipes((event) => {
 			B: `#forge:dyes/${colour}`
 		})
 
-		kubejs.shaped(`minecraft:${colour}_concrete_powder`, [
-			"AAA",
-			"ABA",
-			"AAA"
-		], {
-			A: "tconstruct:grout",
-			B: `#forge:dyes/${colour}`
-		}).id(`minecraft:${colour}_concrete_powder`)
+		kubejs.shapeless(`minecraft:${colour}_concrete_powder`, [
+			"4x #forge:sand",
+			`#forge:dyes/${colour}`,
+			"4x #forge:gravel"
+		]).id(`minecraft:${colour}_concrete_powder`)
 	})
 })
