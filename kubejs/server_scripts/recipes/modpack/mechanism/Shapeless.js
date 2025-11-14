@@ -31,28 +31,27 @@ ServerEvents.recipes((event) => {
 	// 铜质
 	kubejs.shapeless("cmi:copper_mechanism", [
 		"cmi:copper_mechanism_basement",
-		"#forge:hammer",
-		"#forge:nuggets/copper",
-		"create:fluid_pipe",
+		"minecraft:water_bucket",
 		"thermal:cured_rubber",
+		"create:fluid_pipe",
 		"cmi:mechanical_mechanism_part",
-		"minecraft:water_bucket"
+		"#forge:hammer"
 	]).damageIngredient("#forge:hammer", 1)
 
 	// 安山
 	kubejs.shapeless("cmi:andesite_mechanism", [
-		"2x #forge:ingots/andesite_alloy",
-		"#forge:hammer",
-		"create:cogwheel",
-		"create:cogwheel",
-		"cmi:mechanical_mechanism_part"
+		"cmi:andesite_mechanism_basement",
+		"2x create:cogwheel",
+		"create:large_cogwheel",
+		"cmi:mechanical_mechanism_part",
+		"#forge:hammer"
 	]).damageIngredient("#forge:hammer", 1)
 
 	// 红石
 	kubejs.shapeless("vintageimprovements:redstone_module", [
 		"2x #forge:dusts/redstone",
 		"#forge:stone",
-		"minecraft:redstone_torch",
+		"minecraft:repeater",
 		"#forge:hammer",
 		"cmi:basic_mechanism_part"
 	]).damageIngredient("#forge:hammer", 1)

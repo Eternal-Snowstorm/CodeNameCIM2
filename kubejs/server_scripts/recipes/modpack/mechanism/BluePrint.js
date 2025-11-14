@@ -101,7 +101,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	addAugmentRecipe("cmi:thermal_mechanism_augment", [
-		"#forge:gears/invar",
+		"#forge:gears/constantan",
 		"thermal:rf_coil",
 		"create:electron_tube"
 	])

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create, vintageimprovements } = event.recipes
 	let iwm = "cmi:incomplete_wooden_mechanism"
 	let ism = "cmi:incomplete_stone_mechanism"
 	let iim = "cmi:incomplete_iron_mechanism"
@@ -73,11 +73,10 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:copper_mechanism", [
 		"#forge:plates/copper"
 	], [
-		create.cutting(icm, icm),
 		create.deploying(icm, [icm, "#forge:nuggets/copper"]),
-		create.deploying(icm, [icm, "create:fluid_pipe"]),
-		create.deploying(icm, [icm, "thermal:cured_rubber"]),
 		create.filling(icm, [icm, Fluid.of("minecraft:water", 500)]),
+		create.deploying(icm, [icm, "#forge:glass_panes"]),
+		create.deploying(icm, [icm, "thermal:cured_rubber"]),
 		create.deploying(icm, [icm, "cmi:mechanical_mechanism_part"])
 	]).transitionalItem(icm).loops(1)
 
@@ -85,8 +84,8 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:andesite_mechanism", [
 		"#forge:plates/andesite_alloy"
 	], [
-		create.cutting(iam, iam),
-		create.deploying(iam, [iam, "create:cogwheel"]),
+		create.deploying(iam, [iam, "#create:incomplete_cogwheels"]),
+		create.deploying(iam, [iam, "#create:incomplete_large_cogwheels"]),
 		create.deploying(iam, [iam, "cmi:mechanical_mechanism_part"])
 	]).transitionalItem(iam).loops(1)
 
@@ -103,16 +102,20 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("create:precision_mechanism", [
 		"#forge:plates/brass"
 	], [
-		create.deploying(iprm, [iprm, "create:cogwheel"]),
+		create.deploying(iprm, [iprm, "#forge:nuggets/brass"]),
+		create.pressing(iprm, iprm),
+		create.deploying(iprm, [iprm, "#create:incomplete_large_cogwheels"]),
 		create.deploying(iprm, [iprm, "create:electron_tube"]),
 		create.deploying(iprm, [iprm, "cmi:mechanical_mechanism_part"])
 	]).transitionalItem(iprm).loops(1)
 
 	// 感光
 	create.sequenced_assembly("cmi:photosensitive_mechanism", [
-		"minecraft:quartz_slab"
+		"#forge:gems/quartz"
 	], [
+		create.pressing(ipm, ipm),
 		create.deploying(ipm, [ipm, "cmi:charged_amethyst"]),
+		vintageimprovements.polishing(ipm, ipm),
 		create.deploying(ipm, [ipm, "minecraft:glowstone_dust"]),
 		create.deploying(ipm, [ipm, "cmi:mechanical_mechanism_part"])
 	]).transitionalItem(ipm).loops(1)
@@ -122,7 +125,8 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/invar"
 	], [
 		create.deploying(itm, [itm, "thermal:rf_coil"]),
-		create.deploying(itm, [itm, "#forge:gears/constantan"]),
+		create.cutting(itm, itm),
+		create.deploying(itm, [itm, "cmi:thermal_mechanism_augment"]),
 		create.deploying(itm, [itm, "cmi:flux_mechanism_part"])
 	]).transitionalItem(itm).loops(1)
 
@@ -131,7 +135,8 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/electrum"
 	], [
 		create.deploying(ifm, [ifm, "thermal:rf_coil"]),
-		create.deploying(ifm, [ifm, "#forge:gears/signalum"]),
+		create.cutting(ifm, ifm),
+		create.deploying(ifm, [ifm, "cmi:reinforced_mechanism_augment"]),
 		create.deploying(ifm, [ifm, "cmi:flux_mechanism_part"])
 	]).transitionalItem(ifm).loops(1)
 
@@ -140,7 +145,8 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/enderium"
 	], [
 		create.deploying(irm, [irm, "thermal:rf_coil"]),
-		create.deploying(irm, [irm, "#forge:gears/lumium"]),
+		create.cutting(irm, irm),
+		create.deploying(irm, [irm, "cmi:resonant_mechanism_augment"]),
 		create.deploying(irm, [irm, "cmi:flux_mechanism_part"])
 	]).transitionalItem(irm).loops(1)
 
@@ -157,9 +163,11 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:railway_mechanism", [
 		"cmi:dense_sturdy_sheet"
 	], [
-		create.deploying(iram, [iram, "#forge:nuggets/brass"]),
-		create.deploying(iram, [iram, "#forge:nuggets/brass"]),
-		create.deploying(iram, [iram, "#forge:nuggets/brass"]),
+		vintageimprovements.curving(iram, iram)
+			.head("vintageimprovements:convex_curving_head"),
+		create.deploying(iram, [iram, "#vintageimprovements:small_springs/brass"]),
+		create.deploying(iram, [iram, "#forge:plates/brass"]),
+		create.cutting(iram, iram),
 		create.deploying(iram, [iram, "cmi:mechanical_mechanism_part"])
 	]).transitionalItem(iram).loops(1)
 
@@ -174,41 +182,43 @@ ServerEvents.recipes((event) => {
 
 	// 轻型工程
 	create.sequenced_assembly("cmi:light_engineering_mechanism", [
-		"#forge:sheetmetals/iron"
+		"#forge:plates/iron"
 	], [
-		create.deploying(ilem, [ilem, "immersiveengineering:component_iron"]),
-		create.deploying(ihem, [ihem, "immersiveengineering:electron_tube"]),
-		create.deploying(ilem, [ilem, "#forge:wires/copper"]),
+		create.deploying(ilem, [ilem, "#vintageimprovements:springs/constantan"]),
+		create.filling(ilem, [ilem, Fluid.of("immersiveengineering:creosote", 100)]),
+		create.deploying(ilem, [ilem, "cmi:light_engineering_mechanism_augment"]),
 		create.deploying(ilem, [ilem, "cmi:engineering_mechanism_part"]),
 	]).transitionalItem(ilem).loops(1)
 
 	// 重型工程
 	create.sequenced_assembly("cmi:heavy_engineering_mechanism", [
-		"#forge:sheetmetals/steel"
+		"#forge:plates/steel"
 	], [
-		create.deploying(ihem, [ihem, "immersiveengineering:component_steel"]),
-		create.deploying(ihem, [ihem, "immersiveengineering:component_electronic"]),
-		create.deploying(ihem, [ihem, "#forge:wires/electrum"]),
+		create.deploying(ihem, [ihem, "#vintageimprovements:springs/invar"]),
 		create.filling(ihem, [ihem, Fluid.of("cmi:lubricating_oil", 100)]),
+		create.deploying(ihem, [ihem, "cmi:heavy_engineering_mechanism_augment"]),
 		create.deploying(ihem, [ihem, "cmi:engineering_mechanism_part"]),
 	]).transitionalItem(ihem).loops(1)
 
 	// 线圈
 	create.sequenced_assembly("cmi:coil_mechanism", [
-		"immersiveengineering:sheetmetal_iron"
+		"#forge:plates/iron"
 	], [
-		create.deploying(icom, [icom, "cmi:simple_battery"]),
-		create.deploying(icom, [icom, "immersiveengineering:wirecoil_copper"]),
-		create.deploying(icom, [icom, "immersiveengineering:wirecoil_electrum"]),
+		create.deploying(icom, [icom, "#forge:plates/copper"]),
+		create.filling(icom, [icom, Fluid.of("immersiveengineering:redstone_acid", 1000)]),
+		create.deploying(icom, [icom, "cmi:coil_mechanism_augment"]),
+		create.deploying(icom, [icom, "#forge:plates/electrum"]),
 		create.deploying(icom, [icom, "cmi:engineering_mechanism_part"]),
 	]).transitionalItem(icom).loops(1)
 
 	// 附魔
 	create.sequenced_assembly("cmi:enchanted_mechanism", [
-		"#forge:storage_blocks/lapis"
+		"#forge:gems/lapis"
 	], [
 		create.pressing(ienm, ienm),
-		create.filling(ienm, [ienm, Fluid.of("create_enchantment_industry:experience", 20)]),
+		create.deploying(ienm, [ienm, "create:experience_nugget"]),
+		create.deploying(ienm, [ienm, "minecraft:book"]),
+		create.filling(ienm, [ienm, Fluid.of("create_enchantment_industry:experience", 30)]),
 		create.deploying(ienm, [ienm, "cmi:magical_mechanism_part"]),
 	]).transitionalItem(ienm).loops(1)
 
@@ -216,17 +226,16 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:smart_mechanism", [
 		"#forge:plates/silver"
 	], [
-		create.deploying(ismm, [ismm, "ae2:logic_processor"]),
-		create.deploying(ismm, [ismm, "ae2:calculation_processor"]),
-		create.deploying(ismm, [ismm, "ae2:engineering_processor"]),
+		create.deploying(ismm, [ismm, "#forge:ingots/hop_graphite"]),
+		create.pressing(ismm, ismm),
+		create.deploying(ismm, [ismm, "cmi:smart_mechanism_augment"]),
 		create.deploying(ismm, [ismm, "cmi:engineering_mechanism_part"]),
 	]).transitionalItem(ismm).loops(1)
 
 	// 气密
 	create.sequenced_assembly("cmi:air_tight_mechanism", [
-		"#forge:plates/osmium"
+		"cmi:air_tight_mechanism_basement"
 	], [
-		create.deploying(iom, [iom, "#forge:gears/electrum"]),
 		create.deploying(iom, [iom, "#forge:plates/polyolefin"]),
 		create.deploying(iom, [iom, "#forge:nuggets/platinum"]),
 		create.deploying(iom, [iom, "cmi:mekanism_mechanism_part"])
@@ -270,7 +279,7 @@ ServerEvents.recipes((event) => {
 
 	// 核能
 	create.sequenced_assembly("cmi:nuclear_mechanism", [
-		"#forge:plates/lead"
+		"cmi:nuclear_mechanism_basement"
 	], [
 		create.deploying(ium, [ium, "mekanism:pellet_polonium"]),
 		create.deploying(ium, [ium, "mekanism:pellet_plutonium"]),
@@ -280,9 +289,11 @@ ServerEvents.recipes((event) => {
 
 	// 反物质
 	create.sequenced_assembly("cmi:antimatter_mechanism", [
-		"cmi:incomplete_antimatter_mechanism"
+		"cmi:antimatter_mechanism_basement"
 	], [
-		create.deploying(iatm, [iatm, "#forge:pellets/antimatter"]),
+		create.deploying(iatm, [iatm, "#forge:dusts/azure_neodymium"]),
+		create.filling(iatm, [iatm, Fluid.of("cmi:molten_azure_neodymium", 90)]),
+		create.deploying(iatm, [iatm, "#forge:pellets/antimatter"])
 	]).transitionalItem(iatm).loops(1)
 
 	// 多彩
@@ -308,10 +319,13 @@ ServerEvents.recipes((event) => {
 
 	// 下界
 	create.sequenced_assembly("cmi:nether_mechanism", [
-		"create:blaze_cake"
+		"create:blaze_cake_base"
 	], [
-		create.filling(inem, [inem, Fluid.of("tconstruct:liquid_soul", 500)]),
+		create.pressing(inem, inem),
+		create.filling(inem, [inem, Fluid.of("tconstruct:liquid_soul", 250)]),
+		create.deploying(inem, [inem, "#tconstruct:fireballs"]),
 		create.deploying(inem, [inem, "#forge:nuggets/gold"]),
+		create.deploying(inem, [inem, "#forge:gems/quartz"]),
 		create.deploying(inem, [inem, "cmi:magical_mechanism_part"]),
 	]).transitionalItem(inem).loops(1)
 
@@ -336,13 +350,14 @@ ServerEvents.recipes((event) => {
 
 	// 计算
 	create.sequenced_assembly("cmi:computing_mechanism", [
-		"ae2:sky_dust"
+		"cmi:computing_mechanism_basement"
 	], [
-		create.pressing(icpm, [icpm]),
-		create.deploying(icpm, [icpm, "immersiveengineering:circuit_board"]),
+		vintageimprovements.laser_cutting(icpm, icpm).energy(1000).maxChargeRate(100),
+		create.deploying(icbm, [icbm, "ae2:logic_processor"]),
 		create.deploying(icbm, [icbm, "ae2:calculation_processor"]),
 		create.deploying(icbm, [icbm, "ae2:engineering_processor"]),
-		create.deploying(icbm, [icbm, "cmi:general_processor"])
+		create.deploying(icbm, [icbm, "cmi:general_processor"]),
+		create.deploying(icbm, [icbm, "cmi:mekanism_mechanism_part"])
 	]).transitionalItem(icpm).loops(1)
 
 	// 1航天
@@ -420,6 +435,8 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("vintageimprovements:redstone_module", [
 		"#create:sleepers"
 	], [
+		create.pressing(iram, iram),
+		create.filling(iram, [iram, Fluid.of("thermal:redstone", 100)]),
 		create.deploying(irsm, [irsm, "minecraft:redstone_torch"]),
 		create.deploying(irsm, [irsm, "cmi:basic_mechanism_part"]),
 	]).transitionalItem(irsm).loops(1)
@@ -428,10 +445,10 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:bronze_mechanism", [
 		"#forge:plates/bronze"
 	], [
-		create.cutting(ibm, ibm),
+		create.deploying(ibm, [ibm, "cmi:incomplete_bronze_cogwheel"]),
 		create.deploying(ibm, [ibm, "vintageimprovements:bronze_spring"]),
-		create.deploying(ibm, [ibm, "#forge:nuggets/bronze"]),
-		create.deploying(ibm, [ibm, "create:flywheel"]),
+		create.deploying(ibm, [ibm, "#forge:nuggets/andesite_alloy"]),
+		vintageimprovements.vibrating(ibm, ibm),
 		create.deploying(ibm, [ibm, "cmi:mechanical_mechanism_part"]),
 	]).transitionalItem(ibm).loops(1)
 })

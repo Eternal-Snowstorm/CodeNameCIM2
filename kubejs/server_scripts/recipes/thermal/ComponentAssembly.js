@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 反物质底座
-	addRecipe("cmi:incomplete_antimatter_mechanism", [
+	addRecipe("cmi:antimatter_mechanism_basement", [
 		Fluid.of("cmi:molten_etrium", 90),
 		"#forge:plates/refined_obsidian",
 		"alexscaves:telecore",
