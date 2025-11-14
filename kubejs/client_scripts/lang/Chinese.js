@@ -144,6 +144,14 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("broken_copper_drill_head", "损坏的铜制钻头")
 	addBlockLang("broken_brass_drill_head", "损坏的黄铜制钻头")
 
+	addBlockLang("reinforced_concrete", "钢筋混凝土")
+	addBlockLang("cracked_concrete", "碎裂的混凝土")
+	addBlockLang("bar_acid", "酸洗钢筋")
+	addBlockLang("bar_concrete", "带混凝土的结构钢筋")
+	addBlockLang("bar_normal", "结构钢筋")
+	addBlockLang("bar_rust", "锈蚀钢筋")
+	addBlockLang("bar_rust_concrete", "带混凝土的锈蚀钢筋")
+
 	addBlockLang("unknown_entity_", "主创-Unknown_Entity_")
 	addBlockLang("aleegos", "吉祥物-阿列戈斯")
 	addBlockLang("qi_month", "美工&程序-柒月")
