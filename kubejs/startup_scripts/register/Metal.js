@@ -2,8 +2,8 @@ let materials = []
 
 /**
  * 材料类
- * @param {string} name 注册ID
- * @param {Internal.ItemTintFunction_ || Internal.BlockTintFunction_ || Color_} color 颜色
+ * @param {String} name 注册ID
+ * @param {Internal.ItemTintFunction_ | Internal.BlockTintFunction_ | Color_} color 颜色
  * @param {MiningLevel} level 挖掘等级
  * @constructor
  */
