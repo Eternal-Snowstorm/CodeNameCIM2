@@ -22,12 +22,16 @@ StartupEvents.recipeSchemaRegistry((event) => {
 	let { components } = event
 
 	/**
+	 * 创建一个单字段的Schema组件(如input, output, heat_requirement等)
+	 *
 	 * @template {keyof Special.RecipeComponents} T
-	 * @param {T} type 配方组件
-	 * @param {string} key 配方键("input", "output"等)
-	 * @param {boolean | String | Number} optionalOrDefault 是否可选或默认配置
+	 * @param {T} type 组件类型(由KubeJS自身提供，如 "ItemInput")
+	 * @param {string} key 字段名(如"input"和"output"等)
+	 * @param {boolean|string|number} [optionalOrDefault]
+	 * 如果为 true => 字段可选
+	 * 如果为其它值 => 设置为默认值
 	 */
-	function buildRecipeSchema(type, key, optionalOrDefault) {
+	function field(type, key, optionalOrDefault) {
 		let builder = components.get(type)().key(key)
 
 		if (optionalOrDefault !== undefined) {
@@ -38,16 +42,40 @@ StartupEvents.recipeSchemaRegistry((event) => {
 			}
 		}
 
-		return new $RecipeSchema(builder)
+		return builder
+	}
+
+	/**
+	 * 从字段数组构建一个完整的 RecipeSchema
+	 *
+	 * @param {Array<Internal.RecipeComponentBuilder>} fields 字段列表
+	 * @returns {$RecipeSchema} 构建完成的配方 Schema
+	 *
+	 * @example
+	 * createSchema([
+	 *     field("ItemInput", "input"),
+	 *     field("ItemOutput", "output"),
+	 *     field("nonBlankString", "heat_requirement", true)
+	 * ])
+	 */
+	function createSchema(fields) {
+		return new $RecipeSchema.apply(null, fields)
 	}
 
 	let RecipeTypeSchema = {
 		namespace: {
 			recipeType: function () {
-				return buildRecipeSchema("", "", "")
+				// 这里创建多个字段
+				let fields = [
+					field("ItemInput", "input"),
+					field("ItemOutput", "output"),
+					field("nonBlankString", "heat_requirement", true)
+				]
+				return createSchema(fields)
 			}
 		}
 	}
 
+	// Example
 	// event.register("create:mixing", RecipeTypeSchema.namespace.recipeType())
 })
