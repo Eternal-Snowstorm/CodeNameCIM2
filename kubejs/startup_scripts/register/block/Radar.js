@@ -5,7 +5,6 @@ StartupEvents.registry("block", (event) => {
         .textureAll(`${global.namespace}:block/space/concrete_crack`)
         .tagBlock(global.ToolType["pickaxe"])
         .tagBlock(global.MiningLevel["iron"])
-        .hardness(50)
 
     event.create(`${global.namespace}:reinforced_concrete`)
         .soundType(SoundType.METAL)
@@ -16,6 +15,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock(global.MiningLevel["iron"])
         .tagBlock("ae2:blacklisted/spatial")
         .tagBlock("mekanism:cardboard_blacklist")
+        .hardness(50)
 
     function barModel(barType) {
 

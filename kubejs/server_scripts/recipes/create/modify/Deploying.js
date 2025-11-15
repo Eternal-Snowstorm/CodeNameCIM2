@@ -73,4 +73,10 @@ ServerEvents.recipes((event) => {
 		"#forge:treated_wood",
 		"cmi:copper_casing_framework"
 	])
+
+	// 红石伺服器
+	create.deploying("thermal:redstone_servo", [
+		"#forge:plates/iron",
+		"#create:mechanisms/redstone"
+	])
 })
