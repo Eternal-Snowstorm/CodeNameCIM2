@@ -23,9 +23,9 @@ StartupEvents.recipeSchemaRegistry((event) => {
 
 	/**
 	 * @template {keyof Special.RecipeComponents} T
-	 * @param {T} type
-	 * @param {string} key
-	 * @param {boolean | any} [optionalOrDefault]
+	 * @param {T} type 配方组件
+	 * @param {string} key 配方键("input", "output"等)
+	 * @param {boolean | String | Number} optionalOrDefault 是否可选或默认配置
 	 */
 	function buildRecipeSchema(type, key, optionalOrDefault) {
 		let builder = components.get(type)().key(key)
