@@ -1,3 +1,6 @@
+let $ParticleTypes =
+	Java.loadClass("net.minecraft.core.particles.ParticleTypes")
+
 CreateEvents.spoutHandler((event) => {
 	const FLUID = "cmi:crystal_catalyt"
 
@@ -23,12 +26,35 @@ CreateEvents.spoutHandler((event) => {
 			if (!simulate) {
 				let facing = block.properties.facing
 
-				block.level.server.runCommandSilent(
-					`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`
+				block.level.playSound(
+					null,
+					block.pos.x,
+					block.pos.y,
+					block.pos.z,
+					"create:spout",
+					"blocks",
+					1.0,
+					1.0
 				)
-				block.level.server.runCommandSilent(
-					`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`
+
+				// block.level.server.runCommandSilent(
+				// 	`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`
+				// )
+
+				block.level.server.getLevel().sendParticles(
+					$ParticleTypes.BLOCK,
+					block.pos.x(),
+					block.pos.y(),
+					block.pos.z(),
+					0.25,
+					0.25,
+					0.25,
+					3,
+					8
 				)
+				// block.level.server.runCommandSilent(
+				// 	`particle minecraft:block ${block.id} ${block.pos.x} ${block.pos.y} ${block.pos.z} 0.25 0.25 0.25 0.3 8`
+				// )
 
 				if (checkAir) {
 					let dirs = ["up", "north", "west", "south", "east", "down"]
