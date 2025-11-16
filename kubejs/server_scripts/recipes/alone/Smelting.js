@@ -48,10 +48,7 @@ ServerEvents.recipes((event) => {
 					.input(`#${type}/${metal}`)
 					.additives([])
 
-
-
 				mekanism.smelting(ingotId[0], `#${type}/${metal}`)
-
 			}
 		})
 		blastFurnaceMetals.forEach((metal) => {
@@ -148,13 +145,9 @@ ServerEvents.recipes((event) => {
 	minecraft.blasting("immersiveengineering:ingot_aluminum", "#forge:dusts/aluminum")
 	event.custom({
 		"type": "immersiveindustry:car_kiln",
-		"input": {
-			"tag": "#forge:dusts/aluminum"
-		},
+		"input": Ingredient.of("#forge:dusts/aluminum").toJson(),
 		"results": [
-			{
-				"item": "immersiveengineering:ingot_aluminum"
-			}
+			Item.of("immersiveengineering:ingot_aluminum").toJson()
 		],
 		"time": 200,
 		"tickEnergy": 32
