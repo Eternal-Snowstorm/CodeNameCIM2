@@ -121,10 +121,147 @@ StartupEvents.registry("block", (event) => {
 	addBlock("radar")
 		.soundType(SoundType.NETHERITE_BLOCK)
 		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.box(6, 0, 6, 10, 16, 10, true)
+
+	// 损坏雷达
+	addBlock("broken_radar")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.textureAll(`${global.namespace}:block/space/machine/broken/radar`)
+
+	// 变压器
+	addBlock("transformer")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+
+	// 损坏变压器
+	addBlock("broken_transformer")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.textureAll(`${global.namespace}:block/space/machine/broken/transformer`)
+
+	// 调制解调器
+	addBlock("modem")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+
+	// 损坏的调制解调器
+	addBlock("broken_modem")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.textureAll(`${global.namespace}:block/space/machine/broken/modem`)
+
+	// 追踪阵列
+	addBlock("tracking_array")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+
+	// 损坏的追踪阵列
+	addBlock("broken_tracking_array")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.textureAll(`${global.namespace}:block/space/machine/broken/tracking_array`)
+
+	// 电源
+	addBlock("power_supply")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+
+	// 损坏的电源
+	addBlock("broken_power_supply")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.textureAll(`${global.namespace}:block/space/machine/broken/power_supply`)
+
+	// 计算机
+	addBlock("computer")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+
+	// 损坏的计算机
+	addBlock("broken_computer")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.textureAll(`${global.namespace}:block/space/machine/broken/computer`)
+
+	// 定位系统终端
+	addBlock("positioning_system_terminal")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+
+	// 损坏的Positioning System Terminal
+	addBlock("broken_positioning_system_terminal")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.textureAll(`${global.namespace}:block/space/machine/broken/positioning_system_terminal`)
+
+	// 损坏的强化显示屏
+	addBlock("broken_reinforced_screen")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
 		.hardness(5)
 		.resistance(5)
-		.tagBlock(global.WRENCH_PICKUP)
-		.box(6, 0, 6, 10, 16, 10, true)
+		.textureAll(`${global.namespace}:block/space/machine/broken/pattern/reinforced_screen`)
+
+	// 损坏的处理器
+	addBlock("broken_processor")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(5)
+		.resistance(5)
+		.textureAll(`${global.namespace}:block/space/machine/broken/pattern/processor`)
+
+	// 损坏的发射线圈
+	addBlock("broken_launcher_coil")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(5)
+		.resistance(5)
+		.textureAll(`${global.namespace}:block/space/machine/broken/pattern/launcher_coil`)
+
+	// 损坏的无线发射器
+	addBlock("broken_wireless_launcher")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(5)
+		.resistance(5)
+		.textureAll(`${global.namespace}:block/space/machine/broken/pattern/wireless_launcher`)
+
+	// 损坏的散热器
+	addBlock("broken_cooler")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(5)
+		.resistance(5)
+		.textureAll(`${global.namespace}:block/space/machine/broken/pattern/cooler`)
 
 	// 辐射沙
 	addBlock("radsand")
