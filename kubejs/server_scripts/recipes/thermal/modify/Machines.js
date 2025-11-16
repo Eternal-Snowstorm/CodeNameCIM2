@@ -116,16 +116,6 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 
-	kubejs.shaped("thermal:redstone_servo", [
-		"A",
-		"B",
-
-	], {
-		A: REDSTONE_MOD,
-		B: "#forge:rods/iron",
-	})
-
-	// 
 	kubejs.shaped("thermal:device_composter", [
 		"CAC",
 		"DED",

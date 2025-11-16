@@ -687,6 +687,7 @@
  - 修改了大部分`AE`配方
  - 修改了大部分`Mekanism`配方
  - 修改了大部分构件配方
+ - 重做了`矿物节点`的结构
 
 ### 新增内容
  - 添加了`墨囊`的配方
@@ -700,7 +701,7 @@
  - 添加了`机壳`的增产配方
  - 添加了`黄铜隧道 黄铜漏斗 智能溜槽`的新配方
  - 添加了`OreUI For Everyone`资源包
- - `传送带`和`传动杆`连锁套壳
+ - 添加了`传送带`和`传动杆`连锁套壳
  - **Mods**
 	- `Advanced Loot Info`
 	- `森罗物语：厨房`
@@ -711,7 +712,7 @@
  - 宝宝生物
  - 置换反应
  - **Mods**
-   	- `Just Enough Resources`
+	- `Just Enough Resources`
    	- `月光库`
    	- `锦致装饰`
    	- `Amendments`
@@ -719,5 +720,6 @@
    	- `Oculus Flywheel Compat`
    	- `Multiblocked 2`
    	- `LdLib`
+   	- `fabricskyboxes`
 
 </font>	

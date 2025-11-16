@@ -124,7 +124,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:thermal_mechanism", [
 		"#forge:plates/invar"
 	], [
-		create.deploying(itm, [itm, "thermal:rf_coil"]),
+		create.deploying(itm, [itm, "thermal:redstone_servo"]),
 		create.cutting(itm, itm),
 		create.deploying(itm, [itm, "cmi:thermal_mechanism_augment"]),
 		create.deploying(itm, [itm, "cmi:flux_mechanism_part"])
@@ -134,7 +134,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:reinforced_mechanism", [
 		"#forge:plates/electrum"
 	], [
-		create.deploying(ifm, [ifm, "thermal:rf_coil"]),
+		create.deploying(ifm, [ifm, "thermal:redstone_servo"]),
 		create.cutting(ifm, ifm),
 		create.deploying(ifm, [ifm, "cmi:reinforced_mechanism_augment"]),
 		create.deploying(ifm, [ifm, "cmi:flux_mechanism_part"])
@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:resonant_mechanism", [
 		"#forge:plates/enderium"
 	], [
-		create.deploying(irm, [irm, "thermal:rf_coil"]),
+		create.deploying(irm, [irm, "thermal:redstone_servo"]),
 		create.cutting(irm, irm),
 		create.deploying(irm, [irm, "cmi:resonant_mechanism_augment"]),
 		create.deploying(irm, [irm, "cmi:flux_mechanism_part"])
