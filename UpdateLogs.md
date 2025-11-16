@@ -711,7 +711,7 @@
  - 宝宝生物
  - 置换反应
  - **Mods**
-   	- `Just Enough Resources`
+	- `Just Enough Resources`
    	- `月光库`
    	- `锦致装饰`
    	- `Amendments`
@@ -719,5 +719,6 @@
    	- `Oculus Flywheel Compat`
    	- `Multiblocked 2`
    	- `LdLib`
+   	- `fabricskyboxes`
 
 </font>	
