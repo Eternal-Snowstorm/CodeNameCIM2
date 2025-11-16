@@ -21,6 +21,7 @@ ServerEvents.recipes((event) => {
 		"createdieselgenerators:crafting/chip_wood_beam",
 		"tconstruct:smeltery/seared/chute_retextured",
 		"tconstruct:__default",
+		"immersiveengineering:crafting/concrete_leaded",
 		"functionalstorage:ender_drawer",
 		"createaddition:compat/tconstruct/blaze_blood",
 		"vintageimprovements:sequenced_assembly/redstone_module",
@@ -131,7 +132,8 @@ ServerEvents.recipes((event) => {
 		"mekanism:metallurgic_infusing/alloy/reinforced",
 		"ae2:network/blocks/io_condenser",
 		"tiab:time_in_a_bottle",
-		"mekanism:metallurgic_infusing/alloy/atomic"
+		"mekanism:metallurgic_infusing/alloy/atomic",
+		"thermal:compat/create/smelter_create_alloy_andesite_alloy"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

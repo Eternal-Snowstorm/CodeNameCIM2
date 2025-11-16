@@ -197,7 +197,7 @@ StartupEvents.registry("mekanism:slurry", (event) => {
 })
 
 // 安山合金
-new Material("andesite_alloy", 0xA9AFA1, "wood")
+new Material("andesite_alloy", 0xC7C8B8, "wooden")
 	.nugget()
 	.molten()
 

@@ -19,7 +19,7 @@ interface OreBlock {
 // 工具类型
 type ToolType = "pickaxe" | "axe" | "shovel" | "hoe" | "sword"
 // 挖掘等级
-type MiningLevel = "wood" | "stone" | "iron" | "diamond" | "nether"
+type MiningLevel = "wooden" | "stone" | "iron" | "diamond" | "nether"
 // 材料类型
 type MaterialType =
 	"ingot" |
