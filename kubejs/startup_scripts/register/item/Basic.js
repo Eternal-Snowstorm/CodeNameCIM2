@@ -183,11 +183,11 @@ StartupEvents.registry("item", (event) => {
 	addItem("magnesium_hydroxide")
 		.texture(`${global.namespace}:item/material/sea/mgoh2`)
 
-	// Mg(OH)2
+	// 溴化阻燃剂
 	addItem("brominated_flame_retardants")
 		.texture(`${global.namespace}:item/material/brominated_flame_retardants`)
 
-	// Mg(OH)2
+	// 阻燃塑料
 	addItem("flame_retardant_plastic")
 		.texture(`${global.namespace}:item/material/flame_retardant_plastic`)
 
@@ -244,6 +244,7 @@ StartupEvents.registry("item", (event) => {
 	}
 
 	// 觉得长的请使用VS Code自带的折叠功能
+	// ask by ue: 为什么不写成模型文件呢
 	let SomeModelsJson = {
 		cogwheel: function (material) {
 			return {
