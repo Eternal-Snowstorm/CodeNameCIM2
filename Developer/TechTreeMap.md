@@ -5,6 +5,10 @@
  - **Tx** **=** **TODO CANCEL**
  - **!** **=** **ISSUE**
 
+Cell NBT:
+Key: Data, 
+Values = orbit, radius, mass, atmosphere
+
 ``` mermaid
 mindmap
     root((一级航天技术))

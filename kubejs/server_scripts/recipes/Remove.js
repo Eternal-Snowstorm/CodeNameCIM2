@@ -333,85 +333,112 @@ ServerEvents.recipes((event) => {
 			{
 				type: "minecraft:crafting_shaped",
 				output: `#forge:gears/${metal}`
-			}, {
+			},
+			{
 				type: "mekanism:enriching",
 				input: `#forge:raw_materials/${metal}`
-			}, {
+			},
+			{
 				type: "mekanism:enriching",
 				input: `#forge:ores/${metal}`
-			}, {
+			},
+			{
 				type: "mekanism:enriching",
 				input: `#forge:storage_blocks/raw_${metal}`
-			}, {
+			},
+			{
 				type: "tconstruct:melting",
 				input: `#forge:ingots/${metal}`
-			}, {
+			},
+			{
 				type: "tconstruct:melting",
 				input: `#forge:nuggets/${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:melting",
 				input: `#forge:storage_blocks/${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:melting",
 				input: `#forge:plates/${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:melting",
 				input: `#forge:dusts/${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:melting",
 				input: `#forge:rods/${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:melting",
 				input: `#forge:gears/${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:ore_melting",
 				input: `#forge:raw_materials/${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:ore_melting",
 				input: `#forge:storage_blocks/raw_${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:ore_melting",
 				input: `#forge:ores/${metal}`
-			}, {
+			},
+			{
 				type: "tconstruct:casting_table",
 				output: `#forge:ingots/${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:casting_table",
 				output: `#forge:nuggets/${metal}`,
-			}, {
+			},
+			{
 				type: "tconstruct:casting_basin",
 				output: `#forge:storage_blocks/${metal}`
-			}, {
+			},
+			{
 				type: "tconstruct:casting_table",
 				output: `#forge:plates/${metal}`
-			}, {
+			},
+			{
 				type: "tconstruct:casting_table",
 				output: `#forge:rods/${metal}`
-			}, {
+			},
+			{
 				type: "tconstruct:casting_table",
 				output: `#forge:gears/${metal}`
-			}, {
+			},
+			{
 				type: "tconstruct:casting_table",
 				output: `#forge:coins/${metal}`
-			}, {
+			},
+			{
 				type: "thermal:chilling",
 				output: `#forge:ingots/${metal}`
-			}, {
+			},
+			{
 				type: "thermal:chilling",
 				output: `#forge:plates/${metal}`
-			}, {
+			},
+			{
 				type: "thermal:chilling",
 				output: `#forge:rods/${metal}`
-			}, {
+			},
+			{
 				type: "thermal:chilling",
 				output: `#forge:gears/${metal}`
-			}, {
+			},
+			{
 				type: "thermal:chilling",
 				output: `#forge:coins/${metal}`
-			}, {
+			},
+			{
 				type: "immersiveengineering:arc_furnace",
 				output: "#forge:ingots/osmium"
-			}, {
+			},
+			{
 				id: `immersiveengineering:arcfurnace/ore_${metal}`
 			}
 		])
