@@ -181,13 +181,13 @@ StartupEvents.registry("mekanism:slurry", (event) => {
 			if (type === "dirty_slurry") {
 				event.create(`${global.namespace}:dirty_${material.name}_slurry`)
 					.texture("mekanism:slurry/dirty")
-					.color(material.color)
+					.color(0, material.color)
 					.tag("mekanism:dirty")
 					.tag(`mekanism:dirty/${material.name}`)
 			} else if (type === "slurry") {
 				event.create(`${global.namespace}:${material.name}_slurry`)
 					.texture("mekanism:slurry/clean")
-					.color(material.color)
+					.color(0, material.color)
 					.tag("mekanism:clean")
 					.tag(`mekanism:clean/${material.name}`)
 			}

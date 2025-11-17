@@ -1,6 +1,6 @@
 ItemEvents.rightClicked((event) => {
 	let { player, item } = event
-	const KIT = "cmi:initial_item_kit"
+	const KIT = Item.of("cmi:initial_item_kit")
 
 	let itemList = [
 		"create:wrench",
@@ -9,7 +9,7 @@ ItemEvents.rightClicked((event) => {
 		"tiab:time_in_a_bottle",
 		"create:stressometer"
 	]
-	if (player.mainHandItem === KIT && player.offHandItem !== KIT && player.crouching) {
+	if (player.mainHandItem === KIT && player.offHandItem !== KIT && player.isCrouching()) {
 		let key = `message.${global.namespace}.initial_item_kit`
 		player.tell(Component.translatable(key))
 
