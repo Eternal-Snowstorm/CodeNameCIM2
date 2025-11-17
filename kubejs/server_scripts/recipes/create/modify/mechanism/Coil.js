@@ -1,7 +1,9 @@
 ServerEvents.recipes((event) => {
 	let { create, kubejs, vintageimprovements } = event.recipes
-	const MECH = "cmi:coil_mechanism"
-	const LMECH = "cmi:photosensitive_mechanism"
+	let Mech = {
+		COIL: "cmi:coil_mechanism",
+		PHOTO: "cmi:photosensitive_mechanism"
+	}
 
 	// 一级太阳能板
 	kubejs.shaped("mekanismgenerators:solar_panel", [
@@ -11,7 +13,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:glass",
 		B: "ae2:printed_silicon",
-		C: LMECH,
+		C: Mech.PHOTO,
 		D: "#forge:plates/steel",
 		E: "cmi:simple_battery"
 	}).id("mekanismgenerators:solar_panel")
@@ -24,7 +26,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:glass",
 		B: "ae2:printed_silicon",
-		C: LMECH,
+		C: Mech.PHOTO,
 		D: "#forge:plates/invar",
 		E: "cmi:thermal_mechanism"
 	}).id("ad_astra:photovoltaic_etrium_cell")
@@ -37,7 +39,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:glass",
 		B: "ae2:printed_silicon",
-		C: LMECH,
+		C: Mech.PHOTO,
 		D: "#forge:plates/stainless_steel",
 		E: "cmi:basic_mekanism_mechanism"
 	}).id("ad_astra:photovoltaic_vesnium_cell")
@@ -87,7 +89,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/stainless_steel",
 		B: "immersiveengineering:coil_mv",
 		C: "mekanism:steel_casing",
-		D: MECH
+		D: Mech.COIL
 	})
 		.id("mekanismgenerators:electromagnetic_coil")
 
@@ -99,7 +101,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "createaddition:copper_spool",
 		B: "ae2:fluix_block",
-		C: MECH,
+		C: Mech.COIL,
 		D: "#forge:plates/silver",
 		E: "cmi:sky_stone_casing"
 	})
@@ -114,7 +116,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:ingots/copper",
 		B: "ae2:fluix_crystal",
 		C: "ae2:quartz_fiber",
-		D: MECH,
+		D: Mech.COIL,
 		E: "cmi:sky_stone_casing",
 		F: "cmi:nether_mechanism"
 	})
@@ -139,7 +141,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/steel",
 		B: "immersiveengineering:coil_lv",
 		C: "immersiveengineering:component_steel",
-		D: MECH
+		D: Mech.COIL
 	}).id("immersiveengineering:crafting/electromagnet")
 
 	// 过热元件
@@ -151,7 +153,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/stainless_steel",
 		B: "#forge:ingots/constantan",
 		C: "#vintageimprovements:springs/constantan",
-		D: MECH,
+		D: Mech.COIL,
 		E: "mekanism:steel_casing",
 		F: "cmi:basic_mekanism_mechanism"
 	}).id("mekanism:superheating_element")
@@ -163,7 +165,7 @@ ServerEvents.recipes((event) => {
 		"DED"
 	], {
 		A: "#forge:plates/invar",
-		B: MECH,
+		B: Mech.COIL,
 		C: "mekanism:steel_casing",
 		D: "cmi:basic_mekanism_mechanism",
 		E: "mekanism:energy_tablet",
@@ -187,10 +189,10 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		"DED"
 	], {
-		A: "#forge:plates/osmium",
-		B: "#forge:ingots/stainless_steel",
-		C: MECH,
-		D: "cmi:basic_mekanism_mechanism",
+		A: "#forge:plates/tin",
+		B: "#forge:ingots/steel",
+		C: Mech.COIL,
+		D: "#forge:plates/steel",
 		E: "cmi:nether_mechanism"
 	}).id("mekanismgenerators:generator/heat")
 
@@ -201,7 +203,7 @@ ServerEvents.recipes((event) => {
 		"CDC"
 	], {
 		A: "#forge:plates/stainless_steel",
-		B: MECH,
+		B: Mech.COIL,
 		C: "cmi:advanced_mekanism_mechanism",
 		D: "cmi:air_tight_mechanism"
 	}).id("mekanismgenerators:generator/gas_burning")
@@ -214,8 +216,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/stainless_steel",
 		B: "#forge:glass",
-		C: MECH,
-		D: "cmi:advanced_mekanism_mechanism",
+		C: Mech.COIL,
+		D: "cmi:basic_mekanism_mechanism",
 		E: "cmi:nature_mechanism"
 	}).id("mekanismgenerators:generator/bio")
 
@@ -227,7 +229,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "create:propeller",
 		B: "#forge:plates/tin",
-		C: MECH,
+		C: Mech.COIL,
 		D: "immersiveengineering:treated_post"
 	}).id("mekanismgenerators:generator/wind")
 
@@ -239,7 +241,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "#forge:plates/invar",
-		C: MECH,
+		C: Mech.COIL,
 		D: "cmi:simple_battery",
 		E: "cmi:nether_mechanism"
 	})
@@ -252,7 +254,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "#forge:plates/invar",
-		C: MECH,
+		C: Mech.COIL,
 		D: "cmi:simple_battery",
 		E: "cmi:pigiron_mechanism"
 	})
@@ -265,7 +267,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "#forge:plates/invar",
-		C: MECH,
+		C: Mech.COIL,
 		D: "cmi:simple_battery",
 		E: "cmi:copper_mechanism"
 	})
@@ -278,7 +280,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "#forge:plates/invar",
-		C: MECH,
+		C: Mech.COIL,
 		D: "cmi:simple_battery",
 		E: "cmi:enchanted_mechanism"
 	})
@@ -291,7 +293,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "#forge:plates/invar",
-		C: MECH,
+		C: Mech.COIL,
 		D: "cmi:simple_battery",
 		E: "cmi:stone_mechanism"
 	})
@@ -304,7 +306,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "#forge:plates/invar",
-		C: MECH,
+		C: Mech.COIL,
 		D: "cmi:simple_battery",
 		E: "cmi:gold_mechanism"
 	})
@@ -317,7 +319,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "#forge:plates/invar",
-		C: MECH,
+		C: Mech.COIL,
 		D: "cmi:simple_battery",
 		E: "cmi:photosensitive_mechanism"
 	})
@@ -330,7 +332,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:thermal_mechanism",
 		B: "#forge:plates/invar",
-		C: MECH,
+		C: Mech.COIL,
 		D: "cmi:simple_battery",
 		E: "cmi:cobalt_mechanism"
 	})
@@ -342,6 +344,6 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "create:brass_casing",
 		B: "create:chute",
-		C: MECH
+		C: Mech.COIL
 	}).id("createaddition:crafting/portable_energy_interface")
 })

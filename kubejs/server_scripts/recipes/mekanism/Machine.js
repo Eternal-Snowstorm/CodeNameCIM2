@@ -1,14 +1,20 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let casing = "mekanism:steel_casing"
-	let alloyB = "minecraft:redstone"
-	let alloyA = "mekanism:alloy_infused"
-	let alloyE = "mekanism:alloy_reinforced"
-	let alloyU = "mekanism:alloy_atomic"
-	let mechB = "cmi:basic_mekanism_mechanism"
-	let mechA = "cmi:advanced_mekanism_mechanism"
-	let mechE = "cmi:elite_mekanism_mechanism"
-	let mechU = "cmi:ultimate_mekanism_mechanism"
+	let CASING = "mekanism:steel_casing"
+	let Ingot = {
+		STAINLESS: "#forge:ingots/stainless_steel",
+		INFUSED: "#forge:alloys/advanced",
+		REINFORCED: "#forge:alloys/elite",
+		ATOMIC: "#forge:alloys/ultimate",
+		OBSIDIAN: "#forge:ingots/refined_obsidian",
+		GLOWSTONE: "#forge:ingots/refined_glowstone"
+	}
+	let Mech = {
+		T1: "cmi:basic_mekanism_mechanism",
+		T2: "cmi:advanced_mekanism_mechanism",
+		T3: "cmi:elite_mekanism_mechanism",
+		T4: "cmi:ultimate_mekanism_mechanism"
+	}
 
 	// Os压缩机
 	kubejs.shaped("mekanism:osmium_compressor", [
@@ -16,10 +22,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyA,
-		B: mechA,
+		A: Ingot.INFUSED,
+		B: Mech.T2,
 		C: "minecraft:bucket",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:osmium_compressor")
 
 	// 融合机
@@ -28,10 +34,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyA,
-		B: mechB,
+		A: Ingot.INFUSED,
+		B: Mech.T1,
 		C: "#forge:stone",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:combiner")
 
 	// 粉碎机
@@ -40,10 +46,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyB,
-		B: mechB,
+		A: Ingot.STAINLESS,
+		B: Mech.T1,
 		C: "create:crushing_wheel",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:crusher")
 
 	// 提纯仓
@@ -54,7 +60,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/stainless_steel",
 		B: "thermal_extra:nitratic_igniter",
-		C: mechB
+		C: Mech.T1
 	}).id("mekanism:purification_chamber")
 
 	// 炉子
@@ -63,10 +69,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyB,
-		B: mechB,
+		A: Ingot.STAINLESS,
+		B: Mech.T1,
 		C: "#forge:glass",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:energized_smelter")
 
 	// 压射
@@ -75,8 +81,8 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyE,
-		B: mechE,
+		A: Ingot.REINFORCED,
+		B: Mech.T3,
 		C: "#forge:ingots/gold",
 		D: "mekanism:purification_chamber",
 	}).id("mekanism:chemical_injection_chamber")
@@ -87,10 +93,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyA,
-		B: mechA,
+		A: Ingot.INFUSED,
+		B: Mech.T2,
 		C: "mekanism:basic_chemical_tank",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:chemical_infuser")
 
 	// 气液
@@ -99,11 +105,11 @@ ServerEvents.recipes((event) => {
 		"CDE",
 		"ABA"
 	], {
-		A: alloyB,
-		B: mechB,
+		A: Ingot.STAINLESS,
+		B: Mech.T1,
 		C: "mekanism:basic_chemical_tank",
 		E: "mekanism:basic_fluid_tank",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:rotary_condensentrator")
 
 	// 锯木
@@ -112,10 +118,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyB,
-		B: mechB,
+		A: Ingot.STAINLESS,
+		B: Mech.T1,
 		C: "thermal:saw_blade",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:precision_sawmill")
 
 	// 溶解
@@ -124,10 +130,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyA,
-		B: mechA,
+		A: Ingot.INFUSED,
+		B: Mech.T2,
 		C: "mekanism:basic_chemical_tank",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:chemical_dissolution_chamber")
 
 	// 清洗
@@ -136,10 +142,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyU,
-		B: mechU,
+		A: Ingot.ATOMIC,
+		B: Mech.T4,
 		C: "mekanism:basic_fluid_tank",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:chemical_washer")
 
 	// 结晶
@@ -148,10 +154,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyU,
-		B: mechU,
+		A: Ingot.ATOMIC,
+		B: Mech.T4,
 		C: "minecraft:diamond",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:chemical_crystallizer")
 
 	// 吃饭
@@ -160,10 +166,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyB,
-		B: mechB,
+		A: Ingot.STAINLESS,
+		B: Mech.T1,
 		C: "cmi:pigiron_mechanism",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:nutritional_liquifier")
 
 	// 反物质
@@ -172,10 +178,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyU,
-		B: mechU,
+		A: Ingot.ATOMIC,
+		B: Mech.T4,
 		C: "mekanism:pellet_antimatter",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:antiprotonic_nucleosynthesizer")
 
 	// 维度稳定
@@ -184,10 +190,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyU,
-		B: mechU,
+		A: Ingot.ATOMIC,
+		B: Mech.T4,
 		C: "minecraft:diamond_block",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:dimensional_stabilizer")
 
 	// 合成
@@ -196,10 +202,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyA,
-		C: mechA,
+		A: Ingot.INFUSED,
+		C: Mech.T2,
 		B: "minecraft:crafting_table",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:formulaic_assemblicator")
 
 	//氧化
@@ -208,10 +214,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyA,
-		B: mechA,
+		A: Ingot.INFUSED,
+		B: Mech.T2,
 		C: "mekanism:basic_chemical_tank",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:chemical_oxidizer")
 
 	//加压
@@ -220,10 +226,10 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"ABA"
 	], {
-		A: alloyA,
-		B: mechA,
+		A: Ingot.INFUSED,
+		B: Mech.T2,
 		C: "cmi:air_tight_mechanism",
-		D: casing,
+		D: CASING,
 	}).id("mekanism:pressurized_reaction_chamber")
 
 	//同位素
@@ -232,10 +238,10 @@ ServerEvents.recipes((event) => {
 		"ECE",
 		"BDB"
 	], {
-		A: alloyA,
-		B: mechA,
+		A: Ingot.INFUSED,
+		B: Mech.T2,
 		C: "mekanism:basic_chemical_tank",
-		D: casing,
+		D: CASING,
 		E: "#forge:ingots/lead"
 	}).id("mekanism:isotopic_centrifuge")
 })
