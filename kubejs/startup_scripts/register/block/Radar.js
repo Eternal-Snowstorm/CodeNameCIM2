@@ -24,7 +24,7 @@ StartupEvents.registry("block", (event) => {
         return {
             parent: "cmi:block/space/bars",
             textures: {
-                "bar": BAR
+                bar: BAR
             }
         }
     }
