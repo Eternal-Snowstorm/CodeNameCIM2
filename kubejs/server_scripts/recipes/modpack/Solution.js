@@ -42,10 +42,9 @@ ServerEvents.recipes((event) => {
 		])
 
 		// 晶体
-		thermal_extra.endothermic_dehydrator(
-			`${global.namespace}:${type}`,
+		thermal_extra.endothermic_dehydrator(`${global.namespace}:${type}`, [
 			Fluid.of(`cmi:${type}_solution`, 250)
-		).energy(4000)
+		]).energy(4000)
 	})
 })
 /*

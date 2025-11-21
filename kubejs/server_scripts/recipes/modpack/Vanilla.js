@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, minecraft, create } = event.recipes
+	let { kubejs, minecraft, farmersdelight, create } = event.recipes
 
 	// 催生器
 	kubejs.shaped("cmi:accelerator", [
@@ -86,12 +86,11 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 等离子龙头
-	kubejs.shapeless("cmi:overcharged_alloy_faucet", [
+	farmersdelight.cooking("cmi:overcharged_alloy_faucet", [
 		"cmi:wooden_faucet",
 		"cmi:cast_iron_faucet",
 		"cmi:steel_faucet",
-		"#forge:ingots/overcharged_alloy"
-	])
+	]).container(IngrUtils.getFirstItemId("#forge:ingots/overcharged_alloy"))
 
 	// 锇砖瓦
 	kubejs.shaped("cmi:osmium_tile", [

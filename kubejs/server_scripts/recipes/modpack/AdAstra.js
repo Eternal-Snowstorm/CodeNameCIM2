@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create, vintageimprovements } = event.recipes
+	let { create, vintageimprovements } = event.recipes
 
 	event.custom({
 		"type": "ad_astra:alloying",
