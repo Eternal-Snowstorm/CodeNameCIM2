@@ -18,7 +18,7 @@ StartupEvents.registry("item", (event) => {
 
 		const REGISTER_ID = `${global.namespace}:${name}_upgrade`
 
-		let registerDrawerUpgrade =
+		let drawerUpgradeBuilder =
 			event.createCustom(REGISTER_ID, () => {
 				return new JavaAdapter($StorageUpgradeItem, {
 					// 重写getStorageMultiplier()方法设置升级的倍率
@@ -59,7 +59,9 @@ StartupEvents.registry("item", (event) => {
 						tooltip.add(ctrlTranslateKey)
 					}
 				}, $StorageUpgradeItem$StorageTier.DIAMOND)
-			}).tag("functionalstorage:upgrades")
+			})
+
+		drawerUpgradeBuilder.tag("functionalstorage:upgrades")
 
 		if (Platform.isClientEnvironment()) {
 			JsonIO.write(`kubejs/assets/${global.namespace}/models/item/${name}_upgrade.json`, {
@@ -70,6 +72,6 @@ StartupEvents.registry("item", (event) => {
 			})
 		}
 
-		return registerDrawerUpgrade
+		return drawerUpgradeBuilder
 	}
 })
