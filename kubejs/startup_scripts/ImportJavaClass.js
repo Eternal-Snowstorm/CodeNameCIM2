@@ -31,8 +31,6 @@ let $Axis =
 	Java.loadClass("com.mojang.math.Axis")
 let $ParticleTypes =
 	Java.loadClass("net.minecraft.core.particles.ParticleTypes")
-let $BuiltInRegistries =
-	Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
 let $BlockBehaviour$Properties =
 	Java.loadClass("net.minecraft.world.level.block.state.BlockBehaviour$Properties")
 let $BlockItem =

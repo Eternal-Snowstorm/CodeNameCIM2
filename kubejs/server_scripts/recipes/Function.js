@@ -1,6 +1,8 @@
 // priority: 100
 let $FluidTags =
 	Java.loadClass("net.minecraft.tags.FluidTags")
+let $BuiltInRegistries =
+	Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
 
 let IngrUtils = {
 	/**
