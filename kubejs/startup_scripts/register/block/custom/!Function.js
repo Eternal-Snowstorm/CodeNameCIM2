@@ -1,6 +1,3 @@
-let $BlockItem = Java.loadClass("net.minecraft.world.item.BlockItem")
-let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties")
-
 let customBlockDefs = []
 
 function defineCustomBlock(id, blockClass, properties) {

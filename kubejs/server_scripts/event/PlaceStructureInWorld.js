@@ -1,14 +1,3 @@
-let $ServerLevel =
-	Java.loadClass("net.minecraft.server.level.ServerLevel")
-let $StructurePlaceSettings =
-	Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings")
-let $Rotation =
-	Java.loadClass("net.minecraft.world.level.block.Rotation")
-let $Mirror =
-	Java.loadClass("net.minecraft.world.level.block.Mirror")
-let $BlockPos =
-	Java.loadClass("net.minecraft.core.BlockPos")
-
 ServerEvents.loaded((event) => {
 	let { server } = event
 	let structureNamespace = global.namespace

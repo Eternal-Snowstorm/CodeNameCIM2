@@ -1,10 +1,3 @@
-let $BlockHitResult =
-	Java.loadClass("net.minecraft.world.phys.BlockHitResult")
-let $UseOnContext =
-	Java.loadClass("net.minecraft.world.item.context.UseOnContext")
-let $ACItemRegistry =
-	Java.loadClass("com.github.alexmodguy.alexscaves.server.item.ACItemRegistry")
-
 BlockEvents.rightClicked((event) => {
 	let { level, item, player, facing, block, hand } = event
 

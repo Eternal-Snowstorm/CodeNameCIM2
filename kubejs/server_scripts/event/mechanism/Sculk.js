@@ -1,6 +1,3 @@
-let $ParticleTypes =
-	Java.loadClass("net.minecraft.core.particles.ParticleTypes")
-
 // 设定所需常数与物品id
 const PI = 3.1415926535
 const SONIC_BOOM_RANGE = 10

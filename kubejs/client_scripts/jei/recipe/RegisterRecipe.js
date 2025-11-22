@@ -1,5 +1,4 @@
 JEIAddedEvents.registerRecipes((event) => {
-
 	let acceleratorType = addRecipeTypeId("cmi:accelerator")
 
 	let addRecipesToJEI = {

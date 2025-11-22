@@ -1,20 +1,3 @@
-// let $DrawerBlock$DrawerItem =
-// 	Java.loadClass("com.buuz135.functionalstorage.block.DrawerBlock$DrawerItem")
-// let $DrawerBlock =
-// 	Java.loadClass("com.buuz135.functionalstorage.block.DrawerBlock")
-// let $DrawerWoodType =
-// 	Java.loadClass("com.buuz135.functionalstorage.util.DrawerWoodType")
-// let $FunctionalStorage =
-// 	Java.loadClass("com.buuz135.functionalstorage.FunctionalStorage")
-// let $FunctionalStorage$DrawerType =
-// 	Java.loadClass("com.buuz135.functionalstorage.FunctionalStorage$DrawerType")
-// let $BlockBehaviour =
-// 	Java.loadClass("net.minecraft.world.level.block.state.BlockBehaviour")
-// let $BlockItem =
-// 	Java.loadClass("net.minecraft.world.item.BlockItem")
-// let $Item$Properties =
-// 	Java.loadClass("net.minecraft.world.item.Item$Properties")
-
 // StartupEvents.registry("block", (event) => {
 // 	let props = $BlockBehaviour.Properties.of()
 

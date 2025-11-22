@@ -1,10 +1,3 @@
-let $ToolDefinition =
-	Java.loadClass("slimeknights.tconstruct.library.tools.definition.ToolDefinition")
-let $ModifiableItem =
-	Java.loadClass("slimeknights.tconstruct.library.tools.item.ModifiableItem")
-let $Item$Properties =
-	Java.loadClass("net.minecraft.world.item.Item$Properties")
-
 StartupEvents.registry("item", (event) => {
 	/**
 	 * 按理说这里其实不需要返回也可以

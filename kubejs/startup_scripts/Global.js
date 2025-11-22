@@ -1,7 +1,4 @@
-// priority: 1000
-
-let $TinkerTags$Items =
-	Java.loadClass("slimeknights.tconstruct.common.TinkerTags$Items")
+// priority: 100
 
 // 全局注册物品命名空间
 global.namespace = "cmi"
