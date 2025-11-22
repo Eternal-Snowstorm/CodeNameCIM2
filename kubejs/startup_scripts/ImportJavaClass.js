@@ -122,10 +122,6 @@ let $FunctionalStorage =
 let $FunctionalStorage$DrawerType =
 	Java.loadClass("com.buuz135.functionalstorage.FunctionalStorage$DrawerType")
 
-// KubeJS
-let $RegistryInfo =
-	Java.loadClass("dev.latvian.mods.kubejs.registry.RegistryInfo")
-
 // Java 基础类 / 时间类 / 工具类
 let $LocalDateTime =
 	Java.loadClass("java.time.LocalDateTime")
