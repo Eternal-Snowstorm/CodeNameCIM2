@@ -15,6 +15,7 @@ let $Gas =
 	Java.loadClass("mekanism.api.chemical.gas.Gas")
 let $Chemical =
 	Java.loadClass("mekanism.api.chemical.Chemical")
+
 let IngrUtils = {
 	/**
 	 * 获取标签内第一个物品的ID, 若标签下没有物品则返回null
