@@ -12,15 +12,40 @@ StartupEvents.registry("item", (event) => {
 	// 超级刀
 	event.createCustom(`${global.namespace}:super_knife`, () => {
 		return new JavaAdapter($KnifeItem, {
+			/**
+			 * 
+			 * @param {Internal.ItemStack_} stack 
+			 * @param {Internal.LivingEntity_} target 
+			 * @param {Internal.LivingEntity_} attacker 
+			 * @returns 
+			 */
 			hurtEnemy(stack, target, attacker) {
 				return false
 			},
+			/**
+			 * 
+			 * @param {Internal.ItemStack_} stack 
+			 * @param {Internal.Level_} level 
+			 * @param {Internal.BlockState_} state 
+			 * @param {BlockPos_} pos 
+			 * @param {Internal.LivingEntity_} miner 
+			 * @returns 
+			 */
 			mineBlock(stack, level, state, pos, miner) {
 				return false
 			},
+			/**
+			 * 
+			 * @param {Internal.ItemStack_} stack 
+			 * @returns 
+			 */
 			getDamage(stack) {
 				return 0
 			},
+			/**
+			 * 
+			 * @returns 
+			 */
 			isDamageable() {
 				return true
 			}

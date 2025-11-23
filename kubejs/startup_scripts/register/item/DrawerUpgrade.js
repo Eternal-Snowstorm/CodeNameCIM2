@@ -4,8 +4,13 @@ let $StorageUpgradeItem$StorageTier =
 	Java.loadClass("com.buuz135.functionalstorage.item.StorageUpgradeItem$StorageTier")
 let $Style =
 	Java.loadClass("net.minecraft.network.chat.Style")
+
+let $BasicItem$Key =
+	Java.loadClass("com.hrznstudio.titanium.item.BasicItem$Key")
+
 StartupEvents.registry("item", (event) => {
 	/**
+	 * 添加新的功能性存储的抽屉容量升级
 	 * 
 	 * @param {string} name 名称
 	 * @param {number} multiplier 倍率
@@ -20,11 +25,19 @@ StartupEvents.registry("item", (event) => {
 		let drawerUpgradeBuilder =
 			event.createCustom(REGISTER_ID, () => {
 				return new JavaAdapter($StorageUpgradeItem, {
-					// 重写getStorageMultiplier()方法设置升级的倍率
+					/**
+					 * 重写getStorageMultiplier()方法设置升级的倍率
+					 * @returns
+					 */
 					getStorageMultiplier() {
 						return multiplier
 					},
-					// 这里重写的是Item.getName()方法混淆后的名称m_7626_
+					/**
+					 * 这里重写的是Item.getName()方法混淆后的名称m_7626_
+					 * @method
+					 * @param {Internal.ItemStack_} stack 
+					 * @returns 
+					 */
 					m_7626_(stack) {
 						if (Client.level) {
 							let modifyItemName =
@@ -36,6 +49,13 @@ StartupEvents.registry("item", (event) => {
 							return Component.empty()
 						}
 					},
+					/**
+					 * 
+					 * @param {$BasicItem$Key} key 
+					 * @param {Internal.ItemStack_} stack 
+					 * @param {Internal.List_<Component_>} tooltip 
+					 * @param {Boolean} advanced 
+					 */
 					addTooltipDetails(key, stack, tooltip, advanced) {
 						let itemTranslateKey =
 							Component.translatable(
