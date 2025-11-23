@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+	// 硫化物混合气
 	event.custom({
 		"type": "custommachinery:custom_machine",
 		"machine": `${global.namespace}:chemical_gas_extractor`,

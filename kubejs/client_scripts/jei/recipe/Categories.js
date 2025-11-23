@@ -1,18 +1,3 @@
-let $DoubleItemIcon =
-	Java.loadClass("com.simibubi.create.compat.jei.DoubleItemIcon")
-let $AllGuiTextures =
-	Java.loadClass("com.simibubi.create.foundation.gui.AllGuiTextures")
-let $AnimatedKinetics =
-	Java.loadClass("com.simibubi.create.compat.jei.category.animations.AnimatedKinetics")
-let $AllPartialModels =
-	Java.loadClass("com.simibubi.create.AllPartialModels")
-let $CreateRecipeCategory =
-	Java.loadClass("com.simibubi.create.compat.jei.category.CreateRecipeCategory")
-let $Axis =
-	Java.loadClass("com.mojang.math.Axis")
-let $RecipeIngredientRole =
-	Java.loadClass("mezz.jei.api.recipe.RecipeIngredientRole")
-
 JEIAddedEvents.registerCategories((event) => {
 	let { data: { jeiHelpers: { guiHelper } } } = event
 

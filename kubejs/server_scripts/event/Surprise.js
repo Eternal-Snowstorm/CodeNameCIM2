@@ -1,5 +1,3 @@
-let $LocalDateTime = Java.loadClass("java.time.LocalDateTime")
-
 PlayerEvents.loggedIn((event) => {
 	let { player, server } = event
 

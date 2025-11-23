@@ -1,12 +1,3 @@
-let $BlockPattern =
-	Java.loadClass("net.minecraft.world.level.block.state.pattern.BlockPattern")
-let $BlockPatternBuilder =
-	Java.loadClass("net.minecraft.world.level.block.state.pattern.BlockPatternBuilder")
-let $BlockInWorld =
-	Java.loadClass("net.minecraft.world.level.block.state.pattern.BlockInWorld")
-let $BlockStatePredicate =
-	Java.loadClass("net.minecraft.world.level.block.state.predicate.BlockStatePredicate")
-
 BlockEvents.rightClicked((event) => {
 	let { block, level, player } = event
 	let stone = "minecraft:stone"
