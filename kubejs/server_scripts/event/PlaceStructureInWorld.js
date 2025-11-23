@@ -21,12 +21,11 @@ ServerEvents.loaded((event) => {
 
 	/**
 	 * 获取结构的底部 Y 坐标
-	 * @param {$StructureTemplate} template 结构模板
-	 * @returns {number} 底部 Y 坐标
+	 * @param {$StructureTemplate} template 
 	 */
 	function getStructureBaseY(template) {
-		let boundingBox = template.getBoundingBox()
-		return boundingBox.minY
+		let box = template.getBoundingBox()
+		return box.minY()
 	}
 
 	/**
@@ -40,7 +39,8 @@ ServerEvents.loaded((event) => {
 		let pos = new $BlockPos(x, 0, z)
 		let state = level.getBlockState(pos)
 		while (!state.getMaterial().isSolid()) {
-			pos = pos.above() // 向上查找直到找到实心的方块
+			// 向上查找直到找到实心的方块
+			pos = pos.above()
 			state = level.getBlockState(pos)
 		}
 		return pos.getY()
