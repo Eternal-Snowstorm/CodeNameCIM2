@@ -95,7 +95,7 @@ ServerEvents.loaded((event) => {
 	}
 
 	function placeAllStructures(structures) {
-		let data = server.persistentData
+		let data = server.getPersistentData()
 
 		structures.forEach((structure) => {
 			let { id, dimId, path, pos } = structure
