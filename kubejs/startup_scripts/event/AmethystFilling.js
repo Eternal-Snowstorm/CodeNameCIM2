@@ -25,16 +25,16 @@ CreateEvents.spoutHandler((event) => {
 			if (!simulate) {
 				let facing = block.properties.facing
 
-				block.level.playSound(
-					null,
-					block.pos.x,
-					block.pos.y,
-					block.pos.z,
-					"create:spout",
-					"blocks",
-					1.0,
-					1.0
-				)
+				// block.level.playSound(
+				// 	null,
+				// 	block.pos.x,
+				// 	block.pos.y,
+				// 	block.pos.z,
+				// 	"create:spout",
+				// 	"blocks",
+				// 	1.0,
+				// 	1.0
+				// )
 
 				block.level.server.runCommandSilent(
 					`playsound create:spout block @a ${block.pos.x} ${block.pos.y} ${block.pos.z}`
