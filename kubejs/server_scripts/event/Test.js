@@ -28,6 +28,8 @@ BlockEvents.rightClicked((event) => {
 		}
 	}
 })
+let $PatchouliAPI = Java.loadClass("vazkii.patchouli.api.PatchouliAPI")
+let $Character = Java.loadClass("java.lang.Character")
 // // 结构所需的方块
 // let needBlocks = {
 // 	A: Block.getBlock("create:andesite_alloy_block"),

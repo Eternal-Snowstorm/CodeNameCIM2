@@ -1,4 +1,6 @@
 // priority: 0
+let $PatchouliAPI = Java.loadClass("vazkii.patchouli.api.PatchouliAPI")
+let $Character = Java.loadClass("java.lang.Character")
 /**
  * @param {string[][]} structure
  * @type {DefineMultiBlockStructure}

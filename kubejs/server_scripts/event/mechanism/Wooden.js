@@ -1,3 +1,9 @@
+let $BlockHitResult =
+	Java.loadClass("net.minecraft.world.phys.BlockHitResult")
+let $UseOnContext =
+	Java.loadClass("net.minecraft.world.item.context.UseOnContext")
+let $AllItems =
+	Java.loadClass("com.simibubi.create.AllItems")
 BlockEvents.rightClicked((event) => {
 	let { level, item, player, block } = event
 	const MECH = Item.of("cmi:wooden_mechanism")
