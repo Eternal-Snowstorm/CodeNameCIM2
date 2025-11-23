@@ -11,8 +11,19 @@ BlockEvents.rightClicked((event) => {
 
 	// if (item === MECH && !player.cooldowns.isOnCooldown(MECH)) {
 	if (item === MECH) {
-		let result = new $BlockHitResult(player.pos, event.facing, block.pos, false)
-		let context = new $UseOnContext(level, player, event.hand, "create:tree_fertilizer", result)
+		let result = new $BlockHitResult(
+			player.pos,
+			event.facing,
+			block.pos,
+			false
+		)
+		let context = new $UseOnContext(
+			level,
+			player,
+			event.hand,
+			Item.of("create:tree_fertilizer"),
+			result
+		)
 
 		// 调用use方法
 		$AllItems.TREE_FERTILIZER.get().useOn(context)
