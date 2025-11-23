@@ -2,6 +2,8 @@ let $ServerLevel =
 	Java.loadClass("net.minecraft.server.level.ServerLevel")
 let $StructurePlaceSettings =
 	Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings")
+let $StructureTemplate =
+	Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate")
 let $Rotation =
 	Java.loadClass("net.minecraft.world.level.block.Rotation")
 let $Mirror =
