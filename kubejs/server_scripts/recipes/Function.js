@@ -3,6 +3,8 @@ let $FluidTags =
 	Java.loadClass("net.minecraft.tags.FluidTags")
 let $BuiltInRegistries =
 	Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
+let $RegistryInfo =
+	Java.loadClass("dev.latvian.mods.kubejs.registry.RegistryInfo")
 
 let IngrUtils = {
 	/**
