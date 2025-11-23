@@ -32,8 +32,7 @@ StartupEvents.registry("block", (event) => {
 		return builder
 	}
 
-	// Developer
-
+	// region Main Developer
 	// UE
 	addDeveloperDoll("unknown_entity_", "slim")
 
@@ -63,14 +62,14 @@ StartupEvents.registry("block", (event) => {
 
 	// 亓才孑
 	addDeveloperDoll("qicaijie", "slim")
+	// endregion
 
 	// music
 
 	// DontKillBelalus
 	addDeveloperDoll("dont_kill_belalus", "wide")
 
-	// Other
-
+	// region Other
 	// Aleegos
 	addDeveloperDoll("aleegos", "slim")
 
@@ -82,5 +81,5 @@ StartupEvents.registry("block", (event) => {
 
 	// dkrkoo_weihe
 	addDeveloperDoll("dkrkoo_weihe", "slim")
-
+	// endregion
 })

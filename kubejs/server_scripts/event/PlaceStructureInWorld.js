@@ -1,3 +1,16 @@
+let $ServerLevel =
+	Java.loadClass("net.minecraft.server.level.ServerLevel")
+let $StructurePlaceSettings =
+	Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings")
+let $StructureTemplate =
+	Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate")
+let $Rotation =
+	Java.loadClass("net.minecraft.world.level.block.Rotation")
+let $Mirror =
+	Java.loadClass("net.minecraft.world.level.block.Mirror")
+let $BlockPos =
+	Java.loadClass("net.minecraft.core.BlockPos")
+
 ServerEvents.loaded((event) => {
 	let { server } = event
 	let structureNamespace = global.namespace
@@ -8,12 +21,11 @@ ServerEvents.loaded((event) => {
 
 	/**
 	 * 获取结构的底部 Y 坐标
-	 * @param {$StructureTemplate} template 结构模板
-	 * @returns {number} 底部 Y 坐标
+	 * @param {$StructureTemplate} template 
 	 */
 	function getStructureBaseY(template) {
-		let boundingBox = template.getBoundingBox()
-		return boundingBox.minY
+		let box = template.getBoundingBox()
+		return box.minY()
 	}
 
 	/**
@@ -27,7 +39,8 @@ ServerEvents.loaded((event) => {
 		let pos = new $BlockPos(x, 0, z)
 		let state = level.getBlockState(pos)
 		while (!state.getMaterial().isSolid()) {
-			pos = pos.above() // 向上查找直到找到实心的方块
+			// 向上查找直到找到实心的方块
+			pos = pos.above()
 			state = level.getBlockState(pos)
 		}
 		return pos.getY()
@@ -84,7 +97,7 @@ ServerEvents.loaded((event) => {
 	}
 
 	function placeAllStructures(structures) {
-		let data = server.persistentData
+		let data = server.getPersistentData()
 
 		structures.forEach((structure) => {
 			let { id, dimId, path, pos } = structure
