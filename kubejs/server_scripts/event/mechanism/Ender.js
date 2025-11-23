@@ -1,3 +1,6 @@
+let $ParticleTypes =
+	Java.loadClass("net.minecraft.core.particles.ParticleTypes")
+
 //末影构件随机传送
 ItemEvents.rightClicked("cmi:ender_mechanism", (event) => {
 	let { player, level } = event

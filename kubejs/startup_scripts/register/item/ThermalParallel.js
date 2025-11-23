@@ -1,3 +1,11 @@
+let $AugmentDataHelper =
+	Java.loadClass("cofh.core.util.helpers.AugmentDataHelper")
+let $AugmentItem =
+	Java.loadClass("cofh.thermal.lib.common.item.AugmentItem")
+let $Item$Properties =
+	Java.loadClass("net.minecraft.world.item.Item$Properties")
+let $NBTTags =
+	Java.loadClass("cofh.lib.util.constants.NBTTags")
 StartupEvents.registry("item", (event) => {
 	/**
 	 * 

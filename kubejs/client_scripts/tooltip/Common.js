@@ -84,8 +84,9 @@ ItemEvents.tooltip((event) => {
 	}
 
 	// 愚人节
-	let month = $LocalDateTime.now().getMonthValue()
-	let day = $LocalDateTime.now().getDayOfMonth()
+
+	let month = Java.loadClass("java.time.LocalDateTime").now().getMonthValue()
+	let day = Java.loadClass("java.time.LocalDateTime").now().getDayOfMonth()
 
 	if (month === 4 && day === 1) {
 		event.add("minecraft:dirt", Component.translatable(`tooltip.${global.namespace}.41dirt`))

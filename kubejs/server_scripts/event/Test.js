@@ -1,3 +1,12 @@
+let $BlockPattern =
+	Java.loadClass("net.minecraft.world.level.block.state.pattern.BlockPattern")
+let $BlockPatternBuilder =
+	Java.loadClass("net.minecraft.world.level.block.state.pattern.BlockPatternBuilder")
+let $BlockInWorld =
+	Java.loadClass("net.minecraft.world.level.block.state.pattern.BlockInWorld")
+let $BlockStatePredicate =
+	Java.loadClass("net.minecraft.world.level.block.state.predicate.BlockStatePredicate")
+
 BlockEvents.rightClicked((event) => {
 	let { block, level, player } = event
 	let stone = "minecraft:stone"
@@ -28,6 +37,8 @@ BlockEvents.rightClicked((event) => {
 		}
 	}
 })
+let $PatchouliAPI = Java.loadClass("vazkii.patchouli.api.PatchouliAPI")
+let $Character = Java.loadClass("java.lang.Character")
 // // 结构所需的方块
 // let needBlocks = {
 // 	A: Block.getBlock("create:andesite_alloy_block"),

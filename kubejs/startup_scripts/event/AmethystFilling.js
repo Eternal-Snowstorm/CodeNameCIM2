@@ -1,3 +1,5 @@
+let $ParticleTypes =
+	Java.loadClass("net.minecraft.core.particles.ParticleTypes")
 CreateEvents.spoutHandler((event) => {
 	const FLUID = "cmi:crystal_catalyt"
 

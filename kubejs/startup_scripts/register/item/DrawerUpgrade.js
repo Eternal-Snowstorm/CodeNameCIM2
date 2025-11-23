@@ -1,3 +1,9 @@
+let $StorageUpgradeItem =
+	Java.loadClass("com.buuz135.functionalstorage.item.StorageUpgradeItem")
+let $StorageUpgradeItem$StorageTier =
+	Java.loadClass("com.buuz135.functionalstorage.item.StorageUpgradeItem$StorageTier")
+let $Style =
+	Java.loadClass("net.minecraft.network.chat.Style")
 StartupEvents.registry("item", (event) => {
 	/**
 	 * 
