@@ -1,71 +1,52 @@
-BlockEvents.rightClicked((event) => {
-	let { block, level, player } = event
-	let stone = "minecraft:stone"
-	let dirt = "minecraft:dirt"
-	let stonePattern = null
-
-	if (stonePattern === null) {
-		stonePattern = $BlockPatternBuilder.start()
-			.aisle([
-				"AAA",
-				"ABA",
-				"AAA"
-			])
-			.where("A", $BlockInWorld.hasState($BlockStatePredicate.forBlock(stone)))
-			.where("B", $BlockInWorld.hasState($BlockStatePredicate.forBlock(dirt)))
-			// .where("B", $BlockInWorld.hasState($BlockStatePredicate.ANY))
-			.build()
-	}
-
-	if (block.id === dirt) {
-		const START_POS = block.pos.offset(-1, 0, -1)
-
-		// 检查模式是否匹配
-		const MATCH = stonePattern.find(level, START_POS)
-
-		if (MATCH !== null) {
-			player.tell(Component.literal("哇袄!!!"))
-		}
-	}
+BlockEvents.rightClicked("cmi:qi_month", (event) => {
+	BlockUIFactory.INSTANCE.openUI(event.player, event.block.pos, "cmi:qi_month")
 })
-let $PatchouliAPI = Java.loadClass("vazkii.patchouli.api.PatchouliAPI")
-let $Character = Java.loadClass("java.lang.Character")
-// // 结构所需的方块
-// let needBlocks = {
-// 	A: Block.getBlock("create:andesite_alloy_block"),
-// 	B: Block.getBlock("minecraft:sculk_shrieker"),
-// 	C: Block.getBlock("minecraft:obsidian")
-// }
 
-// // 定义结构(0代表中心方块, 所以是必须的)
-// function TestMultiblock() {
-// 	return $PatchouliAPI.get().makeMultiblock([
-// 		["   ", "   ", "   "],
-// 		["   ", " 0 ", "   "],
-// 		["AAA", "ACA", "AAA"]
-// 	], [
-// 		new $Character("A"), needBlocks.A,
-// 		new $Character("0"), needBlocks.B,
-// 		new $Character("C"), needBlocks.C
-// 	])
-// }
+/**
+ * 
+ * @param {Internal.Player} player 
+ * @returns 
+ */
+function createUI(player) {
+	let group = new WidgetGroup()
 
-BlockEvents.rightClicked("minecraft:sculk_shrieker", (event) => {
-	let { block, level, player } = event
+	group.setSize(100, 100)
+	group.setBackground(ResourceBorderTexture.BORDERED_BACKGROUND)
 
-	let defineStructure = defineMultiBlockStructure([
-		["   ", " 0 ", "   "],
-		["AAA", "ACA", "AAA"]
-	])
-		.where("A", "create:andesite_alloy_block")
-		.where("0", "minecraft:sculk_shrieker")
-		.where("C", "minecraft:obsidian")
-		.build()
+	// 创建一个标签和按钮
+	let label = new LabelWidget()
 
-	let structure = defineStructure.validate(level, block.pos)
-	if (structure === null) {
-		return
-	}
+	label.setSelfPosition(20, 20)
+	label.setText("Hello World!")
 
-	player.tell(Component.literal("哇袄!!!"))
+	let button = new ButtonWidget()
+
+	button.setSelfPosition(20, 60)
+	button.setSize(60, 20)
+
+	// 准备按钮纹理
+	let backgroundImage = ResourceBorderTexture.BUTTON_COMMON
+	let hoverImage = backgroundImage.copy().setColor(ColorPattern.BLUE.color)
+	let textAbove = new TextTexture("Click Me!")
+
+	button.setButtonTexture(backgroundImage, textAbove)
+	button.setClickedTexture(hoverImage, textAbove)
+
+	// 妙妙小逻辑
+	let counter = 0
+	button.setOnPressCallback((click) => {
+		counter++
+		label.setText(`Clicked ${counter} times!`)
+		player.tell(Component.literal("AAAAA"))
+	})
+
+	group.addWidgets(label, button);
+	return group
+}
+
+/**
+ * 
+ */
+LDLibUI.block("cmi:qi_month", (event) => {
+	event.success(createUI(event.player))
 })
