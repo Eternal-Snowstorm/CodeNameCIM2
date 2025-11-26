@@ -1,5 +1,4 @@
 ServerEvents.highPriorityData((event) => {
-
 	event.addJson(`cmi:worldgen/template_pool/dev/blank`, {
 		name: `${global.namespace}:dev/blank`,
 		fallback: "minecraft:empty",
@@ -16,6 +15,11 @@ ServerEvents.highPriorityData((event) => {
 		]
 	})
 
+	/**
+	 * 
+	 * @param {String} namespace 命名空间
+	 * @param {String} name 文件名
+	 */
 	function deleteStructureGen(namespace, name) {
 		event.addJson(`${namespace}:worldgen/structure/${name}`, {
 			type: "minecraft:jigsaw",
@@ -34,6 +38,11 @@ ServerEvents.highPriorityData((event) => {
 		})
 	}
 
+	/**
+	 * 
+	 * @param {String} namespace 命名空间
+	 * @param {String} name 文件名
+	 */
 	function deleteFeatureGen(namespace, name) {
 		event.addJson(`${namespace}:worldgen/configured_feature/${name}`, {
 			type: "minecraft:ore",
