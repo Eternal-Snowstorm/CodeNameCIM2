@@ -177,20 +177,20 @@ BlockEvents.rightClicked("cmi:accelerator", (event) => {
 
 	/**
 	 * 添加构件催生器事件
-	 * @param {Internal.ItemStack_} input 催生使用的物品
+	 * @param {Internal.ItemStack_} mechanism 催生使用的物品
 	 * @param {string} stone 催生所需的方块的ID
 	 * @param {Array<OutputItem>} blocks 催生出的方块(需要添加概率), 没有对应方块的物品会被忽略
 	 * @returns 
 	 */
-	function addAccelerateEvent(input, stone, blocks) {
+	function addAccelerateEvent(mechanism, stone, blocks) {
 		// 判定是否主手手持构件
 		if (event.hand !== "MAIN_HAND" || !player || !item || item.isEmpty()) {
 			return false
 		}
-		if (item.getId() !== input) {
+		if (item.getId() !== mechanism) {
 			return false
 		}
-		if (item.is(input)) {
+		if (item.is(mechanism)) {
 			let { x, y, z } = block.pos
 			// 设定扫描所用变量
 			let numx = x
