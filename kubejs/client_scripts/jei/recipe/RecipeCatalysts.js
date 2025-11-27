@@ -20,6 +20,6 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 			(Item.of(item).setHoverName(key), type)
 	}
 
-	addJeiRecipeIndex("cmi:accelerator", "cmi:accelerator", "accelerator")
+	// addJeiRecipeIndex("cmi:accelerator", "cmi:accelerator", "accelerator")
 	addJeiRecipeIndex("immersiveindustry:crucible", "immersiveindustry:crucible")
 })

@@ -1,3 +1,4 @@
+/*
 JEIAddedEvents.registerCategories((event) => {
 	let { data: { jeiHelpers: { guiHelper } } } = event
 
@@ -70,3 +71,4 @@ JEIAddedEvents.registerCategories((event) => {
 			})
 	})
 })
+*/

@@ -27,7 +27,8 @@ function createUI(player) {
 	// 准备按钮纹理
 	let backgroundImage = ResourceBorderTexture.BUTTON_COMMON
 	let hoverImage = backgroundImage.copy().setColor(ColorPattern.BLUE.color)
-	let textAbove = new TextTexture("Click Me!")
+	// let textAbove = new TextTexture("Click Me!")
+	let textAbove = new TextTexture(Component.translatable("aaa.aaa").getString())
 
 	button.setButtonTexture(backgroundImage, textAbove)
 	button.setClickedTexture(hoverImage, textAbove)
@@ -37,16 +38,13 @@ function createUI(player) {
 	button.setOnPressCallback((click) => {
 		counter++
 		label.setText(`Clicked ${counter} times!`)
-		player.tell(Component.literal("AAAAA"))
+		player.tell(Component.translatable("aaa.bbb").getString())
 	})
 
 	group.addWidgets(label, button);
 	return group
 }
 
-/**
- * 
- */
 LDLibUI.block("cmi:qi_month", (event) => {
 	event.success(createUI(event.player))
 })

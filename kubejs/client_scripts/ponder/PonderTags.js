@@ -23,7 +23,8 @@ Ponder.tags((event) => {
 
 		icon = (typeof icon === "string") ? Item.of(icon) : icon
 
-		const ITEMS = item ? (Array.isArray(item) ? item : [item]) : []
+		const ITEMS = item ?
+			(Array.isArray(item) ? item : [item]) : []
 
 		for (let i = 0; i < ITEMS.length; i++) {
 			if (typeof ITEMS[i] === "string") {
@@ -31,7 +32,7 @@ Ponder.tags((event) => {
 			}
 		}
 
-		let index = `${name} Ponder Index`
+		let index = Component.translatable(`cmi.ponder.tag.${name}`).getString()
 		event.createTag(`${global.namespace}:${tag}`, icon, name, index, ITEMS)
 	}
 

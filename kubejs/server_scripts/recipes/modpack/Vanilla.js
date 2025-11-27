@@ -113,6 +113,12 @@ ServerEvents.recipes((event) => {
 		C: "#forge:plates/iron"
 	})
 
+	// 奇怪的羊皮纸
+	kubejs.shapeless("cmi:parchment", [
+		"cmi:torn_parchment_a",
+		"cmi:torn_parchment_b"
+	])
+
 	// 安山岩粉
 	kubejs.shapeless("cmi:andesite_dust", [
 		"#create:stone_types/andesite",

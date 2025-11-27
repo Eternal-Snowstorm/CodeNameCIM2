@@ -35,6 +35,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("#cmi:broken_drill_heads")
 	addCommonTooltip("portality:controller")
 	addCommonTooltip("cmi:water_pump")
+	addCommonTooltip("cmi:parchment")
 
 	let chemSalts = [
 		"fecl2",

@@ -4,6 +4,10 @@ ServerEvents.tags("fluid", (event) => {
 			.removeAll()
 	}
 
+	// 柴油
+	event.get("forge:diesel")
+		.add("thermal_extra:diesel")
+
 	// 可用作火箭燃料
 	event.get("ad_astra:fuel")
 		.removeAll()

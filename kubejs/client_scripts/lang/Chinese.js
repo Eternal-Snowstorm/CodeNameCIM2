@@ -72,6 +72,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("silicon_carbide_plate", "碳化硅板")
 	addItemLang("nuke_cooler", "冷却设备")
 	addItemLang("refined_nuke_waste", "精炼核废料")
+	addItemLang("parchment", "奇怪的羊皮纸")
+	addItemLang("torn_parchment_a", "撕开的羊皮纸(甲)")
+	addItemLang("torn_parchment_b", "撕开的羊皮纸(乙)")
 
 	addItemLang("tier_1_rocket_nose_cone", "一阶火箭鼻锥")
 	addItemLang("tier_2_rocket_nose_cone", "二阶火箭鼻锥")
@@ -409,6 +412,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("#cmi:broken_drill_heads", "破损的钻头, 修复后可以正常使用")
 	addCommonTooltipLang("portality:controller", "制作模块时不会消耗自身")
 	addCommonTooltipLang("cmi:water_pump", "使用扳手右键可以显示预览")
+	addCommonTooltipLang("cmi:parchment", `有些能量不是由燃料产生的, 而是靠"遇见"`)
 
 	addJEIInfoLang("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量植物胶乳")
 	addJEIInfoLang("mm:large_steam_boiler", "需要燃烧焦煤或钻石才能释放足够的热能来产生蒸汽\n不同于远在泛银河系的格雷科技有限公司, 我们的锅炉非常非常安全, 永远不会爆炸(笑)")

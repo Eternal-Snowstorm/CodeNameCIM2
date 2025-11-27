@@ -29,4 +29,7 @@ JEIEvents.hideItems((event) => {
 	hideItemFromJEI("deepdrilling:veridium_node")
 	hideItemFromJEI("steampowered:alternator")
 	hideItemFromJEI("steampowered:pressurized_steam_container")
+	hideItemFromJEI("cmi:parchment")
+	hideItemFromJEI("cmi:torn_parchment_a")
+	hideItemFromJEI("cmi:torn_parchment_b")
 })

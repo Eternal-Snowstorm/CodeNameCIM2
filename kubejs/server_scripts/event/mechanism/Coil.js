@@ -1,5 +1,6 @@
 let $EntityType =
 	Java.loadClass("net.minecraft.world.entity.EntityType")
+
 BlockEvents.rightClicked((event) => {
 	let { block, player, level } = event
 
