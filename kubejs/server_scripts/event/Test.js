@@ -1,4 +1,8 @@
 BlockEvents.rightClicked("cmi:qi_month", (event) => {
+	/**
+	 * 如果需要挥手动画记得加上一个挥手方法
+	 * event.player.swing()
+	 */
 	BlockUIFactory.INSTANCE.openUI(event.player, event.block.pos, "cmi:qi_month")
 })
 
@@ -45,6 +49,10 @@ function createUI(player) {
 	return group
 }
 
+/**
+ * extra: uiName
+ * (method) block(extra: string, handler: (event: Internal.UIEvents$BlockUIEventJS) => void): void (+1 overload)
+ */
 LDLibUI.block("cmi:qi_month", (event) => {
 	event.success(createUI(event.player))
 })

@@ -28,7 +28,7 @@ ItemEvents.rightClicked((event) => {
 		}
 
 		// 给予玩家幸运buff(10分钟, 2级)
-		player.potionEffects.add("minecraft:luck", 20 * 600, 2)
+		player.potionEffects.add("minecraft:luck", 20 * 600, 1)
 
 		// 播放音效
 		level.playSound(
