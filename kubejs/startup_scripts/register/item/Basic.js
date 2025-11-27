@@ -245,11 +245,11 @@ StartupEvents.registry("item", (event) => {
 
 	// 羊皮纸
 	addItem("parchment")
-		.texture(`${global.namespace}:item/parchment`)
+		.texture(`${global.namespace}:item/material/parchment`)
 	addItem("torn_parchment_a")
-		.texture(`${global.namespace}:item/torn_parchment_a`)
+		.texture(`${global.namespace}:item/material/torn_parchment_a`)
 	addItem("torn_parchment_b")
-		.texture(`${global.namespace}:item/torn_parchment_b`)
+		.texture(`${global.namespace}:item/material/torn_parchment_b`)
 
 	// 觉得长的请使用VS Code自带的折叠功能
 	let SomeModelsJson = {
