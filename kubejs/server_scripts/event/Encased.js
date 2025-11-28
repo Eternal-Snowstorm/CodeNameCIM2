@@ -1,10 +1,10 @@
-
 let $BeltBlock =
 	Java.loadClass("com.simibubi.create.content.kinetics.belt.BeltBlock")
 let $Boolean =
 	Java.loadClass("java.lang.Boolean")
 let $ShaftBlock =
 	Java.loadClass("com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock")
+
 let beltCasing = [
 	"create:brass_casing",
 	"create:andesite_casing"
