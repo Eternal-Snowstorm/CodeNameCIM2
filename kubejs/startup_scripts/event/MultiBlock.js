@@ -1,7 +1,7 @@
-/*
-This script can be hot reloaded with "kjs reload starup_scripts" or "-re"
-这个脚本可以用"kjs reload starup_scripts"或"-re"进行热重载
-*/
+/**
+ * This script can be hot reloaded with "kjs reload starup_scripts" or "-re"
+ * 这个脚本可以用"kjs reload starup_scripts"或"-re"进行热重载
+ */
 IEEvents.multiblockForm((event) => {
 	let { player, multiblock } = event
 

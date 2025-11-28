@@ -133,7 +133,8 @@ ServerEvents.recipes((event) => {
 		"ae2:network/blocks/io_condenser",
 		"tiab:time_in_a_bottle",
 		"mekanism:metallurgic_infusing/alloy/atomic",
-		"thermal:compat/create/smelter_create_alloy_andesite_alloy"
+		"thermal:compat/create/smelter_create_alloy_andesite_alloy",
+		"tconstruct:tools/materials/melting/plated_slimewood"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

@@ -114,10 +114,12 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 奇怪的羊皮纸
-	kubejs.shapeless("cmi:parchment", [
-		"cmi:torn_parchment_a",
-		"cmi:torn_parchment_b"
-	])
+	kubejs.shaped("cmi:parchment", [
+		"AB"
+	], {
+		A: "cmi:torn_parchment_a",
+		B: "cmi:torn_parchment_b"
+	}).id("cmi:minecraft/shaped/love_manual_only")
 
 	// 安山岩粉
 	kubejs.shapeless("cmi:andesite_dust", [

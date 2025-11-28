@@ -27,10 +27,9 @@ ServerEvents.recipes((event) => {
 	 * 
 	 * @param {Internal.FluidStackJS} fluid 流体id
 	 * @param {Number} temperature 温度
-	 * @returns {MeltingFuelTConstruct} 匠魂燃料配方
 	 */
 	function addFuel(fluid, temperature) {
-		return tconstruct.melting_fuel(fluid.withChance(50))
+		return tconstruct.melting_fuel(fluid.withAmount(50))
 			.duration(150)
 			.rate(temperature / 100)
 			.temperature(temperature)

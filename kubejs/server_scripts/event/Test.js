@@ -44,14 +44,14 @@ function createUI(player) {
 		label.setText(`Clicked ${counter} times!`)
 		player.tell(Component.translatable("aaa.bbb").getString())
 	})
+	CMICore.loadResource()
 
-	group.addWidgets(label, button);
+	group.addWidgets(label, button)
 	return group
 }
 
 /**
  * extra: uiName
- * (method) block(extra: string, handler: (event: Internal.UIEvents$BlockUIEventJS) => void): void (+1 overload)
  */
 LDLibUI.block("cmi:qi_month", (event) => {
 	event.success(createUI(event.player))

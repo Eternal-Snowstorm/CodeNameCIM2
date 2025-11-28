@@ -4,6 +4,12 @@ StartupEvents.postInit((event) => {
 	let $ConversionRecipe =
 		Java.loadClass("com.simibubi.create.compat.jei.ConversionRecipe")
 
+	/**
+	 * 
+	 * @param {Internal.ItemStack_} output 
+	 * @param {Internal.ItemStack_} input 
+	 * @returns 
+	 */
 	function addConversionRecipe(output, input) {
 		return $Category.RECIPES.add($ConversionRecipe.create(input, output))
 	}

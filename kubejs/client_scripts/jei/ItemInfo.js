@@ -1,4 +1,8 @@
 JEIEvents.information((event) => {
+	/**
+	 * 
+	 * @param {Internal.Ingredient_} name 
+	 */
 	function addJEIInfo(name) {
 		let itemInfoTranslateKey = `jei.info.${name}`.replace(":", ".")
 		event.addItem(name, Component.translatable(itemInfoTranslateKey))

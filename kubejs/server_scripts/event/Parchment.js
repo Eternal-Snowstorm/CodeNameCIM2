@@ -1,19 +1,8 @@
 let $ParticleTypes =
 	Java.loadClass("net.minecraft.core.particles.ParticleTypes")
-let $MinecraftClass =
-	Java.loadClass("net.minecraft.client.Minecraft")
 
 ItemEvents.rightClicked((event) => {
 	let { item, player, level } = event
-
-	/**
-	 * 使用不死图腾动画
-	 * 
-	 * @param {Internal.ItemStack_} stack 
-	 */
-	function useAnimation(stack) {
-		return $MinecraftClass.getInstance().gameRenderer.displayItemActivation(stack)
-	}
 
 	// 只能主手触发
 	if (item === "cmi:parchment" && event.hand === "MAIN_HAND") {

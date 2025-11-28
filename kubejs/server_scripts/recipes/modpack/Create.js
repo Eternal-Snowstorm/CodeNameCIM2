@@ -160,4 +160,9 @@ ServerEvents.recipes((event) => {
 			"immersiveengineering:wirecoil_redstone"
 		])
 	]).loops(1).transitionalItem("cmi:printed_general_processor")
+
+	// ???
+	createaddition.charging("cmi:overcharged_alloy_ingot", [
+		"create:chromatic_compound"
+	]).energy(1000).id("cmi:createaddition/charging/overcharged_alloy_ingot")
 })

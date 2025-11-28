@@ -1,27 +1,17 @@
-let $Minecraft = null
-
 MMEvents.createStructures((event) => {
-	// 本地化判断
 	function getLangText(map) {
 		const DEFAULT_LANGUAGE = "en_us"
 
+		// 客户端环境
 		if (Platform.isClientEnvironment()) {
-			try {
-				if ($Minecraft === null) {
-					$Minecraft = Java.loadClass("net.minecraft.client.Minecraft")
-				}
-				let lang = $Minecraft.getInstance().getLanguageManager().getSelected()
-				return map[lang] || map[DEFAULT_LANGUAGE] || map[Object.keys(map)[0]] || ""
-			} catch (e) {
-				return map[DEFAULT_LANGUAGE] || map[Object.keys(map)[0]] || ""
-			}
+			let lang = Client.instance.getLanguageManager().getSelected()
+
+			return (map[lang] || map[DEFAULT_LANGUAGE] || map[Object.keys(map)[0]] || "")
 		}
 
-		// 服务端环境直接用默认
-		return map[DEFAULT_LANGUAGE] || map[Object.keys(map)[0]] || ""
+		return (map[DEFAULT_LANGUAGE] || map[Object.keys(map)[0]] || "")
 	}
 
-	// 封装添加结构函数
 	function addMMStructure(id, names, layout) {
 		return event.create(`${global.namespace}:${id}_structure`)
 			.controllerId(`mm:${id}`)

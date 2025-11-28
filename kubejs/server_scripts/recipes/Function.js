@@ -138,6 +138,15 @@ function IEIngredient(input) {
 	}
 }
 
+/**
+ * 使用不死图腾动画
+ * 
+ * @param {Internal.ItemStack_} stack 
+ */
+function useAnimation(stack) {
+	return Client.instance.gameRenderer.displayItemActivation(stack)
+}
+
 let SmeltingRecipe = {
 	all: function (event, output, input) {
 		event.recipes.minecraft.smelting(output, input)
