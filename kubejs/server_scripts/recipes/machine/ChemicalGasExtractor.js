@@ -86,4 +86,6 @@ ServerEvents.recipes((event) => {
 			}
 		]
 	}).id("cmi:chemical_gas_extractor/mercury")
+
+	// 
 })
