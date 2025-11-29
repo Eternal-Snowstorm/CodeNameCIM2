@@ -60,7 +60,6 @@ let IngrUtils = {
 	/**
 	 * 判断物品标签是否为空
 	 * @param {String} tag 物品标签ID
-	 * @returns {Boolean}
 	 */
 	isNotNull: function (tag) {
 		return Ingredient.of(tag).getItemIds().length > 0

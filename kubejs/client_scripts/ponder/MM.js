@@ -1,3 +1,13 @@
+/**
+ * 
+ * @param {Internal.PonderRegistryEventJS} event 
+ * @param {Ingredient_} controller 
+ * @param {String} name 
+ * @param {String} scmatics 
+ * @param {Number} level 
+ * @param {Number} horizon 
+ * @returns 
+ */
 function addMMPonder(event, controller, name, scmatics, level, horizon) {
 	return event.create(controller)
 		.scene(`${global.namespace}:${scmatics}`, `${name}`, `${global.namespace}:multiblock/${scmatics}`, (scene) => {
