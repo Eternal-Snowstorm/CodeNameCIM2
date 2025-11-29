@@ -119,7 +119,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:torn_parchment_a",
 		B: "cmi:torn_parchment_b"
-	}).id("cmi:minecraft/shaped/love_manual_only")
+	}).noMirror().id("cmi:minecraft/shaped/love_manual_only")
 
 	// 安山岩粉
 	kubejs.shapeless("cmi:andesite_dust", [
