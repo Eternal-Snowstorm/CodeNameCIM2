@@ -19,9 +19,9 @@ let $Chemical =
 let IngrUtils = {
 	/**
 	 * 获取标签内第一个物品的ID, 若标签下没有物品则返回null
-	 * @param {string} tagOrItem 物品标签ID
+	 * @param {Internal.Ingredient_} tagOrItem 物品标签ID
 	 * @param {number | undefined} count 物品数量
-	 * @returns {string | null}
+	 * @returns {String | null}
 	 */
 	getFirstItemId: function (tagOrItem, count) {
 		let ids = count !== undefined
