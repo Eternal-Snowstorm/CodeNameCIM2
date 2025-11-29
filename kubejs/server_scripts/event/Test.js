@@ -44,7 +44,6 @@ function createUI(player) {
 		label.setText(`Clicked ${counter} times!`)
 		player.tell(Component.translatable("aaa.bbb").getString())
 	})
-	CMICore.loadResource()
 
 	group.addWidgets(label, button)
 	return group

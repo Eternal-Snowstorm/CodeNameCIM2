@@ -2,6 +2,7 @@ let $BlockEvent$FluidPlaceBlockEvent =
 	Java.loadClass("net.minecraftforge.event.level.BlockEvent$FluidPlaceBlockEvent")
 let $PipeCollisionEvent$Spill =
 	Java.loadClass("com.simibubi.create.api.event.PipeCollisionEvent$Spill")
+
 const RANDOM_BLOCKS = ["minecraft:cobblestone", "minecraft:cobbled_deepslate"]
 const CHANCE = 0.5
 
