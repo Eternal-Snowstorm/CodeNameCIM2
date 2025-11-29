@@ -1,4 +1,9 @@
 MMEvents.createStructures((event) => {
+	/**
+	 *
+	 * @param {{ [lang: string]: string }} map 
+	 * @returns {String} 
+	 */
 	function getLangText(map) {
 		const DEFAULT_LANGUAGE = "en_us"
 
@@ -12,6 +17,13 @@ MMEvents.createStructures((event) => {
 		return (map[DEFAULT_LANGUAGE] || map[Object.keys(map)[0]] || "")
 	}
 
+	/**
+	 * 
+	 * @param {String} id 
+	 * @param {{ [lang: String]: String }} names 
+	 * @param {Internal.Consumer_<Internal.StructureLayoutBuilderJS>} layout 
+	 * @returns 
+	 */
 	function addMMStructure(id, names, layout) {
 		return event.create(`${global.namespace}:${id}_structure`)
 			.controllerId(`mm:${id}`)

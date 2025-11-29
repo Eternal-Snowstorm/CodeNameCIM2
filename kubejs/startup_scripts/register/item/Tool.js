@@ -4,6 +4,7 @@ let $KnifeItem =
 	Java.loadClass("vectorwing.farmersdelight.common.item.KnifeItem")
 let $Tiers =
 	Java.loadClass("net.minecraft.world.item.Tiers")
+
 StartupEvents.registry("item", (event) => {
 	function addItem(name) {
 		return event.create(`${global.namespace}:${name}`)
