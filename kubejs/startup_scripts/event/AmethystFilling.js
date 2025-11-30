@@ -4,11 +4,8 @@ let $ParticleTypes =
 CreateEvents.spoutHandler((event) => {
 	const FLUID = "cmi:crystal_catalyt"
 
-<<<<<<< Updated upstream
-=======
 	// CMICore.loadResource()
 
->>>>>>> Stashed changes
 	/**
 	 * 注册晶簇成长逻辑
 	 * @param {string} id 注册ID

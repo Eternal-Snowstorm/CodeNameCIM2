@@ -1,16 +1,105 @@
 StartupEvents.registry("block", (event) => {
-    event.create(`${global.namespace}:cracked_concrete`)
+    /**
+     * 
+     * @param {String} name 注册id
+     * @param {"basic" | "detector" | "slab" | "stairs" | "fence" | "wall" | "fence_gate" | "pressure_plate" | "button" | "falling" | "crop" | "cardinal" | "carpet" | "animatable" | "custommachinery"} type 注册类型
+     */
+    function addBlock(name, type) {
+        if (type === undefined) {
+            return event.create(`${global.namespace}:${name}`)
+        }
+        return event.create(`${global.namespace}:${name}`, type)
+    }
+
+    addBlock(`cracked_concrete`)
         .soundType(SoundType.METAL)
         .requiresTool(true)
         .textureAll(`${global.namespace}:block/space/concrete_crack`)
         .tagBlock(global.ToolType["pickaxe"])
         .tagBlock(global.MiningLevel["iron"])
 
-    event.create(`${global.namespace}:reinforced_concrete`)
+    addBlock(`grey_reinforced_concrete`)
         .soundType(SoundType.METAL)
         .noDrops()
         .requiresTool(true)
-        .textureAll(`${global.namespace}:block/space/concrete`)
+        .textureAll("create:block/palettes/stone_types/polished/andesite_cut_polished")
+        .tagBlock(global.ToolType["pickaxe"])
+        .tagBlock(global.MiningLevel["iron"])
+        .tagBlock("ae2:blacklisted/spatial")
+        .tagBlock("mekanism:cardboard_blacklist")
+        .hardness(50)
+
+    addBlock(`white_reinforced_concrete`)
+        .soundType(SoundType.METAL)
+        .noDrops()
+        .requiresTool(true)
+        .textureAll("create:block/palettes/stone_types/polished/diorite_cut_polished")
+        .tagBlock(global.ToolType["pickaxe"])
+        .tagBlock(global.MiningLevel["iron"])
+        .tagBlock("ae2:blacklisted/spatial")
+        .tagBlock("mekanism:cardboard_blacklist")
+        .hardness(50)
+
+    addBlock(`grey_reinforced_concrete_wall`, "wall")
+        .soundType(SoundType.METAL)
+        .noDrops()
+        .requiresTool(true)
+        .textureAll("create:block/palettes/stone_types/polished/andesite_cut_polished")
+        .tagBlock(global.ToolType["pickaxe"])
+        .tagBlock(global.MiningLevel["iron"])
+        .tagBlock("ae2:blacklisted/spatial")
+        .tagBlock("mekanism:cardboard_blacklist")
+        .hardness(50)
+
+    addBlock(`white_reinforced_concrete_wall`, "wall")
+        .soundType(SoundType.METAL)
+        .noDrops()
+        .requiresTool(true)
+        .textureAll("create:block/palettes/stone_types/polished/diorite_cut_polished")
+        .tagBlock(global.ToolType["pickaxe"])
+        .tagBlock(global.MiningLevel["iron"])
+        .tagBlock("ae2:blacklisted/spatial")
+        .tagBlock("mekanism:cardboard_blacklist")
+        .hardness(50)
+
+    addBlock(`grey_reinforced_concrete_stairs`, "stairs")
+        .soundType(SoundType.METAL)
+        .noDrops()
+        .requiresTool(true)
+        .textureAll("create:block/palettes/stone_types/polished/andesite_cut_polished")
+        .tagBlock(global.ToolType["pickaxe"])
+        .tagBlock(global.MiningLevel["iron"])
+        .tagBlock("ae2:blacklisted/spatial")
+        .tagBlock("mekanism:cardboard_blacklist")
+        .hardness(50)
+
+    addBlock(`white_reinforced_concrete_stairs`, "stairs")
+        .soundType(SoundType.METAL)
+        .noDrops()
+        .requiresTool(true)
+        .textureAll("create:block/palettes/stone_types/polished/diorite_cut_polished")
+        .tagBlock(global.ToolType["pickaxe"])
+        .tagBlock(global.MiningLevel["iron"])
+        .tagBlock("ae2:blacklisted/spatial")
+        .tagBlock("mekanism:cardboard_blacklist")
+        .hardness(50)
+
+    addBlock(`grey_reinforced_concrete_slab`, "slab")
+        .soundType(SoundType.METAL)
+        .noDrops()
+        .requiresTool(true)
+        .textureAll("create:block/palettes/stone_types/polished/andesite_cut_polished")
+        .tagBlock(global.ToolType["pickaxe"])
+        .tagBlock(global.MiningLevel["iron"])
+        .tagBlock("ae2:blacklisted/spatial")
+        .tagBlock("mekanism:cardboard_blacklist")
+        .hardness(50)
+
+    addBlock(`white_reinforced_concrete_slab`, "slab")
+        .soundType(SoundType.METAL)
+        .noDrops()
+        .requiresTool(true)
+        .textureAll("create:block/palettes/stone_types/polished/diorite_cut_polished")
         .tagBlock(global.ToolType["pickaxe"])
         .tagBlock(global.MiningLevel["iron"])
         .tagBlock("ae2:blacklisted/spatial")
@@ -55,4 +144,83 @@ StartupEvents.registry("block", (event) => {
     addBarBlock("bar_normal")
     addBarBlock("bar_rust")
     addBarBlock("bar_rust_concrete")
+
+    for (let i = 1; i <= 4; i++) {
+        // 雷达
+        addBlock(`radar_${i}`)
+            .soundType(SoundType.NETHERITE_BLOCK)
+            .waterlogged()
+            .hardness(-1)
+            .resistance(-1)
+            .model(`${global.namespace}:block/radar`)
+            .box(6, 0, 6, 10, 16, 10, true)
+
+        // 损坏雷达
+        addBlock(`broken_radar_${i}`)
+            .soundType(SoundType.NETHERITE_BLOCK)
+            .waterlogged()
+            .hardness(-1)
+            .resistance(-1)
+            .textureAll(`${global.namespace}:block/space/machine/broken/radar`)
+    }
+
+    // 变压器
+    addBlock("transformer")
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+
+    // 损坏变压器
+    addBlock("broken_transformer")
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+        .textureAll(`${global.namespace}:block/space/machine/broken/transformer`)
+
+    // 调制解调器
+    addBlock("modem")
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+
+    // 损坏的调制解调器
+    addBlock("broken_modem")
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+        .textureAll(`${global.namespace}:block/space/machine/broken/modem`)
+
+    // 追踪阵列
+    addBlock("tracking_array")
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+
+    // 损坏的追踪阵列
+    addBlock("broken_tracking_array")
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+        .textureAll(`${global.namespace}:block/space/machine/broken/tracking_array`)
+
+    // 电源
+    addBlock("power_supply")
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+
+    // 损坏的电源
+    addBlock("broken_power_supply")
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+        .textureAll(`${global.namespace}:block/space/machine/broken/power_supply`)
 })
