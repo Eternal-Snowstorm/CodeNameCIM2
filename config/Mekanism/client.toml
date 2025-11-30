@@ -94,8 +94,8 @@
 				y = 2147483647
 
 			[client.gui.window.rename]
-				x = 2147483647
-				y = 2147483647
+				x = 27
+				y = 16
 
 			[client.gui.window.skinSelect]
 				x = 2147483647

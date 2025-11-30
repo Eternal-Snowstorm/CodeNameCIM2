@@ -512,8 +512,8 @@
 				type: "checkmark"
 			}]
 			title: "关于整理"
-			x: 6.0d
-			y: 7.0d
+			x: 2.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -606,6 +606,40 @@
 			title: "工业平台"
 			x: 6.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"一键放置多方块结构！"
+				""
+				"&a使用说明：&r"
+				"Shift右键打开界面"
+				"点击“&6选择&r”选择多方块结构"
+				"将所需物品放入界面中的物品栏中"
+				"退出界面，右键搭建"
+				""
+				"&c注意事项：&r"
+				"使用前需充电(FE)"
+				"拥有10MFE的储能，不建议全部充满"
+				"使用时需消耗能源和饱食度"
+				"对已搭建好的结构，出现&e[按F拆除结构]&r时长按F拆除并回收材料"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "0C1CE0D5FB5F9A07"
+			subtitle: "解放双手的好帮手"
+			tasks: [{
+				id: "013C98B3671B40F8"
+				item: {
+					Count: 1
+					id: "mbtool:mbtool"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "多方块搭建器"
+			x: 6.0d
+			y: 7.0d
 		}
 	]
 	title: "实用工具"
