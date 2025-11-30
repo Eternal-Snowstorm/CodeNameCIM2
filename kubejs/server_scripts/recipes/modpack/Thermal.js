@@ -24,7 +24,6 @@ ServerEvents.recipes((event) => {
 	thermal.rock_gen("create:limestone")
 		.adjacent("create:honey")
 
-
 	// 爆裂
 	thermal_extra.nitratic_igniter([
 		"cmi:blackstone_sourse_alpha",

@@ -1,8 +1,4 @@
 StartupEvents.registry("fluid", (event) => {
-	event.create("minecraft:milk")
-		.flowingTexture("forge:block/milk_flowing")
-		.stillTexture("forge:block/milk_still")
-
 	function addAloneFluid(name) {
 		let registerAloneFluid =
 			event.create(`${global.namespace}:${name}`)
