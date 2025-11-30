@@ -17,13 +17,15 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "gear"
+			size: 2.0d
 			subtitle: "来看看有什么好的燃料?"
 			tasks: [{
 				id: "5E01C3C84D5948D9"
 				title: "燃料?"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 0.5d
 		}
 		{
@@ -46,8 +48,8 @@
 				title: "原木"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["55952D9B9D8E8F21"]
@@ -63,8 +65,8 @@
 				item: "createdieselgenerators:wood_chip"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4930FB8565659CF5"]
@@ -80,8 +82,8 @@
 				item: "cmi:wood_chip_briquette"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.5d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5A90B92B1CCF14B8"]
@@ -97,8 +99,8 @@
 				item: "cmi:densely_packed_wood_chip_briquette"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -1.5d
+			x: 7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["727E544121C1E389"]
@@ -114,8 +116,8 @@
 				item: "cmi:creosote_wood_chip_briquette"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -1.5d
+			x: 9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["55952D9B9D8E8F21"]
@@ -138,8 +140,8 @@
 				title: "木炭"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.0d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0CE693D306C1B691"]
@@ -163,8 +165,8 @@
 				type: "item"
 			}]
 			title: "木炭粉"
-			x: 7.0d
-			y: -4.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2D245A409C2C190B"]
@@ -203,8 +205,8 @@
 				title: "泥炭"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0CE693D306C1B691"]
@@ -228,8 +230,8 @@
 				title: "焦炭"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -6.5d
+			x: 5.5d
+			y: -1.0d
 		}
 	]
 	title: "燃料"

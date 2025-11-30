@@ -27,10 +27,11 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -6.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["29AC4601B0D54D6B"]
 			id: "56E28410FE10ADDA"
 			rewards: [{
 				id: "4CEB0DBA737CD8CE"
@@ -50,8 +51,8 @@
 				title: "福鲁伊克斯水晶"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -73,8 +74,8 @@
 				item: "cmi:smart_mechanism"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5C4867BCE9C90F18"]
@@ -89,8 +90,8 @@
 				item: "ae2:smooth_sky_stone_block"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.0d
+			x: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -108,8 +109,8 @@
 				item: "ae2:logic_processor"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -1.5d
+			x: -10.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -127,8 +128,8 @@
 				item: "ae2:calculation_processor"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -1.5d
+			x: -10.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -146,10 +147,11 @@
 				item: "ae2:engineering_processor"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -1.5d
+			x: -10.0d
+			y: 2.5d
 		}
 		{
+			hide_dependent_lines: true
 			id: "0852D0FF49459733"
 			rewards: [{
 				id: "6C69F5C76E1A42C7"
@@ -170,11 +172,12 @@
 				type: "item"
 			}]
 			title: "钻石"
-			x: -6.0d
+			x: -10.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["5C4867BCE9C90F18"]
+			hide_dependent_lines: true
 			id: "29AC4601B0D54D6B"
 			rewards: [{
 				id: "0349126A996AFFAF"
@@ -186,10 +189,11 @@
 				item: "ae2:certus_quartz_crystal"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -11.0d
 			y: -3.0d
 		}
 		{
+			hide_dependent_lines: true
 			id: "78696E475282669B"
 			rewards: [{
 				id: "01BC59F53E21AF09"
@@ -209,7 +213,7 @@
 				type: "item"
 			}]
 			title: "金锭"
-			x: -8.0d
+			x: -12.0d
 			y: -3.0d
 		}
 		{
@@ -233,8 +237,8 @@
 				type: "item"
 			}]
 			title: "硅"
-			x: -7.0d
-			y: 0.0d
+			x: -11.5d
+			y: 1.0d
 		}
 		{
 			icon: "ae2:meteorite_compass"
@@ -245,6 +249,7 @@
 				xp: 10
 			}]
 			size: 2.0d
+			subtitle: "可以看罗盘一整天"
 			tasks: [{
 				id: "7117BA56BD405F1A"
 				observe_type: 0
@@ -253,8 +258,8 @@
 				type: "observation"
 			}]
 			title: "找个陨石"
-			x: -2.5d
-			y: -4.5d
+			x: -11.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["51A6B0B7FBDAB5A0"]
@@ -265,8 +270,8 @@
 				item: "mekanism:cardboard_box"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -4.5d
+			x: -14.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["56E28410FE10ADDA"]
@@ -281,8 +286,8 @@
 				item: "ae2:crystal_resonance_generator"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -300,8 +305,8 @@
 				item: "cmi:silicon_mixure"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 0.0d
+			x: -13.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2CB364E2B27F413F"]
@@ -317,8 +322,8 @@
 				item: "cmi:pure_sand_bucket"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -1.0d
+			x: -13.0d
+			y: -0.5d
 		}
 		{
 			id: "2CB364E2B27F413F"
@@ -339,8 +344,8 @@
 				title: "沙子"
 				type: "item"
 			}]
-			x: -11.5d
-			y: -1.0d
+			x: -14.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5D2F9B6EA98A8CC6"]
@@ -363,8 +368,8 @@
 				type: "item"
 			}]
 			title: "焦炭"
-			x: -10.0d
-			y: 1.0d
+			x: -13.0d
+			y: 2.5d
 		}
 		{
 			id: "5D2F9B6EA98A8CC6"
@@ -378,8 +383,8 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 1.0d
+			x: -14.5d
+			y: 2.5d
 		}
 		{
 			id: "47B4857754BB9464"
@@ -393,8 +398,8 @@
 				item: "cmi:engineering_mechanism_part"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.5d
+			x: -8.5d
+			y: 2.5d
 		}
 	]
 	title: "超大箱子"
