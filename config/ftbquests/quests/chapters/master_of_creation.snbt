@@ -18,9 +18,9 @@
 			subtitle: "一会你就知道为什么要这么多了"
 			tasks: [
 				{
-					count: 78L
+					count: 39L
 					id: "3C0DE860C91A0332"
-					item: { Count: 78, id: "cmi:programmed_flash_drive" }
+					item: "cmi:programmed_flash_drive"
 					type: "item"
 				}
 				{
@@ -42,6 +42,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "创造构件似乎拥有无限增殖的能力..."
 			tasks: [{
 				count: 2L
 				id: "35DC21BFF97A6DBA"
@@ -53,6 +54,12 @@
 		}
 		{
 			dependencies: ["76B5771D01DDF6B7"]
+			description: [
+				"或许你从未有过“梅塞施密特109-F战机的热带改装型搭载了一把太阳伞，以免倒霉的飞行员给太阳烤熟了”的经历，那又怎样呢？"
+				""
+				"出发吧，下一程！"
+			]
+			hide_until_deps_complete: true
 			id: "1C12DA73C3D2EBF7"
 			rewards: [{
 				id: "0B98D6D864B78229"
@@ -61,6 +68,7 @@
 			}]
 			shape: "square"
 			size: 1.2d
+			subtitle: "也许，在那个撒满光芒的合成器前，你仍能想起你的飞船坠毁前，那个看着数百年前的手册的小工程师吧..."
 			tasks: [{
 				id: "64593EDCC4830B44"
 				item: "create:creative_crate"

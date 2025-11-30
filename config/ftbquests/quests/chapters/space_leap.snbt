@@ -34,7 +34,7 @@
 				title: "耐热金属锭"
 				type: "item"
 			}]
-			x: 0.75d
+			x: 8.25d
 			y: -0.75d
 		}
 		{
@@ -60,8 +60,8 @@
 				title: "戴斯锭"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -0.75d
+			x: -6.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["219CBE63A4DBF1D4"]
@@ -85,7 +85,7 @@
 				title: "紫金锭"
 				type: "item"
 			}]
-			x: -2.25d
+			x: 1.5d
 			y: -0.75d
 		}
 		{
@@ -110,8 +110,8 @@
 				title: "铂锭"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -0.75d
+			x: -6.75d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2272BC074A02DEC7"]
@@ -128,8 +128,8 @@
 				id: "6202ACAF047B0762"
 				type: "dimension"
 			}]
-			x: -5.25d
-			y: -3.0d
+			x: -8.25d
+			y: -0.75d
 		}
 		{
 			dependencies: ["1F975B93EFA8A403"]
@@ -141,13 +141,14 @@
 				xp: 10
 			}]
 			size: 1.5d
+			subtitle: "那就~更高！更高！与更高！"
 			tasks: [{
 				dimension: "ad_astra:mars"
 				id: "7EF04641441715E3"
 				type: "dimension"
 			}]
-			x: -2.25d
-			y: -3.0d
+			x: -0.75d
+			y: -0.75d
 		}
 		{
 			dependencies: ["3ADF8DB46B99CD5C"]
@@ -164,8 +165,8 @@
 				id: "696982E3BE68E0FC"
 				type: "dimension"
 			}]
-			x: 0.75d
-			y: -3.0d
+			x: 6.75d
+			y: -0.75d
 		}
 		{
 			dependencies: ["30D3E7AEF186F9E8"]
@@ -186,7 +187,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4FDECC62C340F3FF"]
@@ -197,6 +198,7 @@
 				xp: 10
 			}]
 			shape: "square"
+			subtitle: "推起~我们心爱的火箭~"
 			tasks: [{
 				id: "0100D0BFA32B11B3"
 				item: {
@@ -206,13 +208,14 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.0d
+			x: 4.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"7E69B54ACC5B2E15"
-				"4B141FEC9925E00F"
+			dependencies: ["7E69B54ACC5B2E15"]
+			description: [
+				""
+				""
 			]
 			id: "78DCC038E3F05417"
 			rewards: [{
@@ -221,13 +224,14 @@
 				xp: 10
 			}]
 			shape: "square"
+			subtitle: "我们生来~为飞得更高~"
 			tasks: [{
 				id: "2713649F76AFEDAC"
 				item: "cmi:tier_1_aviation_mechanism"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -2.5d
+			x: -11.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["18BC9029C85E2018"]
@@ -243,8 +247,8 @@
 				item: "cmi:tier_2_aviation_mechanism"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.0d
+			x: -4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["041980289F796026"]
@@ -260,8 +264,8 @@
 				item: "cmi:tier_3_aviation_mechanism"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: 3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6F5E8BA29740F876"]
@@ -277,7 +281,7 @@
 				item: "cmi:tier_4_aviation_mechanism"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 10.5d
 			y: -2.0d
 		}
 		{
@@ -289,6 +293,7 @@
 				xp: 10
 			}]
 			shape: "square"
+			subtitle: "人类的智慧~赐予我铁的翅膀~"
 			tasks: [{
 				id: "460B72DA1AFD4CFC"
 				item: {
@@ -298,8 +303,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -3.0d
+			x: -10.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["66520A7CAD224418"]
@@ -314,8 +319,8 @@
 				item: "cmi:space_mechanism_part"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -3.5d
+			x: -12.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6618A0F7087C1AFA"]
@@ -330,8 +335,8 @@
 				item: "ae2:matter_ball"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -3.5d
+			x: -13.5d
+			y: -2.5d
 		}
 		{
 			icon: "ae2:condenser"
@@ -353,145 +358,8 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"360B5F6C804069EA"
-				"45BB2FD95C86EBA5"
-				"3F0DC92BB1C78730"
-			]
-			id: "4B141FEC9925E00F"
-			rewards: [{
-				id: "1136F2970C561336"
-				type: "xp"
-				xp: 100
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "34ABA3B0F5D2106E"
-				item: "cmi:computer_component"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["56E28410FE10ADDA"]
-			id: "360B5F6C804069EA"
-			rewards: [{
-				id: "2563C4DA6CFAEA43"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "65926C1B004F75FB"
-				item: "ae2:fluix_glass_cable"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -1.0d
-		}
-		{
-			id: "45BB2FD95C86EBA5"
-			rewards: [{
-				id: "57F96F47C26F8710"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1F5BA5CC71913390"
-				item: "ae2:semi_dark_monitor"
-				type: "item"
-			}]
-			x: -10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"401D7D465518872C"
-				"10F74AE07832C30C"
-				"7EBD914A96D93DD9"
-			]
-			id: "3F0DC92BB1C78730"
-			rewards: [{
-				id: "4EF0929450A4A81E"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4FCDB2CCD74E2A3E"
-				item: "cmi:mekanism_processor"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0F06154E4C09A7C1"]
-			id: "10F74AE07832C30C"
-			rewards: [{
-				id: "35E700C66FC0AA00"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "48A1ACCD597DFD86"
-				item: "cmi:infusion_treated_processor"
-				type: "item"
-			}]
-			x: -12.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3C88596E166BF7F4"]
-			id: "7EBD914A96D93DD9"
-			rewards: [{
-				id: "35A60B5EA85DDCA1"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "45302CDBB7947CF2"
-				item: "cmi:enrichment_treated_processor"
-				type: "item"
-			}]
-			x: -12.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["7A756DF0E843CE5A"]
-			id: "401D7D465518872C"
-			rewards: [{
-				id: "1F536BA0FA43009B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "77D9AAEBBDAE066E"
-				item: "cmi:ground_treated_processor"
-				type: "item"
-			}]
-			x: -12.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0B7A8B7B0797880A"]
-			id: "7A756DF0E843CE5A"
-			rewards: [{
-				id: "4A638ED182B16982"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "030BFC50E8223B18"
-				item: "mekanism:precision_sawmill"
-				type: "item"
-			}]
-			x: -14.0d
-			y: 0.0d
+			x: -14.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6F5E8BA29740F876"]
@@ -513,8 +381,8 @@
 				title: "任意 #forge:circuits/终极电路"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 10.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["041980289F796026"]
@@ -536,8 +404,8 @@
 				title: "精英控制电路"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["01E9DE433690023D"]
@@ -560,41 +428,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0B7A8B7B0797880A"]
-			id: "3C88596E166BF7F4"
-			rewards: [{
-				id: "18B22BC003D7ADD8"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1FE735EB6E643819"
-				item: "mekanism:enrichment_chamber"
-				type: "item"
-			}]
-			x: -14.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["712549587C271819"]
-			dependency_requirement: "all_started"
-			disable_toast: true
-			id: "0F06154E4C09A7C1"
-			rewards: [{
-				id: "2CB5FC4949B4E288"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "729B018AA08E90FD"
-				item: "mekanism:metallurgic_infuser"
-				type: "item"
-			}]
-			x: -14.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["779AD42F9F78D55D"]
@@ -610,7 +444,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5B980D972FC0A54E"]
@@ -625,8 +459,8 @@
 				item: "cmi:elite_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["154F51368A1D9C84"]
@@ -636,16 +470,18 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "每一丝构件的呼吸~"
 			tasks: [{
 				id: "319754B8FF898CFD"
 				item: "cmi:ultimate_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.5d
+			x: 11.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4FF08019341D871E"]
+			description: ["   —— ——《斯大林空军进行曲》"]
 			icon: "mm:particle_collision_machine"
 			id: "02C32F681F066C3C"
 			rewards: [{
@@ -655,6 +491,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "保卫你的构件安宁！"
 			tasks: [
 				{
 					id: "79E7E49BE23D1973"
@@ -690,8 +527,8 @@
 				}
 			]
 			title: "粒子对撞机"
-			x: 4.0d
-			y: 0.0d
+			x: 15.0d
+			y: -1.0d
 		}
 	]
 	title: "太空之旅"

@@ -420,8 +420,8 @@
 				item: "cmi:ultimate_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 0.0d
+			x: 14.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["67FAE1DA4D9C2F87"]

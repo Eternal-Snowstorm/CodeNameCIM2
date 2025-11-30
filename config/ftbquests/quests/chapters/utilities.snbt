@@ -28,8 +28,8 @@
 				title: "一些实用工具"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -62,7 +62,7 @@
 				title: "建筑手杖"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 7.0d
 		}
 		{
@@ -107,8 +107,8 @@
 				}
 			]
 			title: "传输升级"
-			x: 4.0d
-			y: 3.0d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -141,8 +141,8 @@
 				item: "functionalstorage:iron_downgrade"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -179,8 +179,8 @@
 				title: "抽屉"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -212,8 +212,8 @@
 				item: "functionalstorage:configuration_tool"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 3.0d
+			x: 10.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -257,8 +257,8 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: 3.0d
+			x: 13.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -336,8 +336,8 @@
 				}
 			]
 			title: "蒸汽飞轮"
-			x: 2.0d
-			y: 5.0d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -383,8 +383,8 @@
 				}
 			]
 			title: "蒸汽锅炉"
-			x: 0.0d
-			y: 5.0d
+			x: -2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -405,8 +405,8 @@
 				item: "thermal:device_nullifier"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -436,8 +436,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.0d
+			x: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -462,8 +462,8 @@
 				title: "龙头"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 7.0d
+			x: 0.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -491,8 +491,8 @@
 				title: "流体抽屉"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -512,8 +512,8 @@
 				type: "checkmark"
 			}]
 			title: "关于整理"
-			x: 6.0d
-			y: 7.0d
+			x: 5.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -535,7 +535,7 @@
 			}]
 			title: "无限石墨电极"
 			x: 8.0d
-			y: 7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -555,8 +555,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.0d
+			x: 10.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -575,8 +575,8 @@
 				type: "checkmark"
 			}]
 			title: "ESM"
-			x: 0.0d
-			y: 9.0d
+			x: 8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -604,7 +604,7 @@
 				type: "checkmark"
 			}]
 			title: "工业平台"
-			x: 6.0d
+			x: 5.5d
 			y: 5.0d
 		}
 	]
