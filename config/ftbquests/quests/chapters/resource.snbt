@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "resource"
 	group: "6A6C7C5BAEF247E2"
+	icon: "minecraft:coal_ore"
 	id: "75C525E1C9D62B29"
 	images: [
 		{
@@ -1074,16 +1075,16 @@
 			image: "tconstruct:block/cobalt_ore"
 			rotation: 0.0d
 			width: 1.0d
-			x: -6.5d
-			y: 15.5d
+			x: -9.5d
+			y: 33.5d
 		}
 		{
 			height: 1.0d
 			image: "tconstruct:item/materials/cobalt_ingot"
 			rotation: 0.0d
 			width: 1.0d
-			x: -4.5d
-			y: 16.5d
+			x: -9.0d
+			y: 34.0d
 		}
 		{
 			height: 1.0d
@@ -1789,6 +1790,62 @@
 			x: -14.0d
 			y: 30.5d
 		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 34.0d
+		}
+		{
+			height: 1.0d
+			image: "tconstruct:block/cobalt_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 34.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 33.5d
+		}
+		{
+			height: 1.0d
+			image: "tconstruct:item/materials/raw_cobalt"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 33.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 34.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 34.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/cobalt"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 33.5d
+		}
 	]
 	order_index: 4
 	quest_links: [ ]
@@ -1802,5 +1859,5 @@
 		x: -18.5d
 		y: -7.5d
 	}]
-	title: "resource"
+	title: "资源"
 }

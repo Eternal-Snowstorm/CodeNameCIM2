@@ -702,6 +702,7 @@
 				xp: 10
 			}]
 			shape: "gear"
+			subtitle: "伊尔-2攻击机的外壳.png"
 			tasks: [{
 				id: "438E41B1547436D2"
 				item: {

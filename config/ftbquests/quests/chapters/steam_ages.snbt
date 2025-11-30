@@ -30,8 +30,8 @@
 				type: "item"
 			}]
 			title: "蒸汽时代的开始"
-			x: 0.0d
-			y: 0.0d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["50BE6EA508B2E833"]
@@ -63,8 +63,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 0.0d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["50BE6EA508B2E833"]
@@ -82,8 +82,8 @@
 				item: "cmi:bronze_mechanism"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.0d
+			x: 0.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -148,7 +148,7 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -167,8 +167,8 @@
 				type: "item"
 			}]
 			title: "青铜外壳"
-			x: 2.5d
-			y: -4.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4405C578E1F06769"]
@@ -185,7 +185,7 @@
 				title: "获得蒸汽"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -258,8 +258,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.0d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2E433CDEC9C53072"]
@@ -286,8 +286,8 @@
 				}
 			]
 			title: "飞轮!"
-			x: 7.5d
-			y: -1.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4405C578E1F06769"]
@@ -310,8 +310,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 2.0d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4405C578E1F06769"]
@@ -334,7 +334,7 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
@@ -361,8 +361,8 @@
 				}
 			]
 			title: "铸铁飞轮"
-			x: 6.6d
-			y: -3.0d
+			x: 6.0d
+			y: -0.6d
 		}
 		{
 			dependencies: ["39A64AAD5944BEE7"]
@@ -388,8 +388,8 @@
 				}
 			]
 			title: "钢飞轮"
-			x: 8.4d
-			y: -3.0d
+			x: 6.0d
+			y: 0.6d
 		}
 	]
 	title: "蒸汽时代"

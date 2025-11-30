@@ -1123,6 +1123,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "没错，固体燃料到这里就燃尽了"
 			tasks: [{
 				id: "46A385D56FEDFCBF"
 				title: "熔岩 1000°C"
