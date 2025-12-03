@@ -1,0 +1,1863 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "resource"
+	group: "6A6C7C5BAEF247E2"
+	icon: "minecraft:coal_ore"
+	id: "75C525E1C9D62B29"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:block/coal_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: -8.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/coal"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: -8.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: -8.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/coal_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: -8.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: -8.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: -8.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/coal"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: -9.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: -8.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: -8.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/wooden"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: -8.5d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -16.0d
+			y: -8.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/ore/node/coal/stone"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: -8.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/brass_casing"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: -9.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/iron_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/iron_ingot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: -5.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/iron_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/raw_iron"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: -6.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/iron"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.690476190476161d
+			y: -6.154761904761891d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -16.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/ore/node/iron/stone"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/brass_casing"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: -6.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -18.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/gravel"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/fan_side"
+			rotation: 90.0d
+			width: 1.0d
+			x: -19.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/iron_nugget"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.5d
+			y: -6.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -21.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "mekanism:block/models/antiprotonic_nucleosynthesizer_side"
+			rotation: 0.0d
+			width: 1.0d
+			x: -21.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/tin_ingot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -22.0d
+			y: -6.0d
+		}
+		{
+			height: 1.0d
+			image: "mekanism:item/pellet_antimatter"
+			rotation: 0.0d
+			width: 1.0d
+			x: -21.5d
+			y: -5.5d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -23.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/rail"
+			rotation: 0.0d
+			width: 1.0d
+			x: -24.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -23.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -23.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/copper_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/copper_ingot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/copper_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/raw_copper"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: -3.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/copper"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/andesite"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.176190476190449d
+			y: -6.183333333333323d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/tier_1_aviation"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.719047619047586d
+			y: -5.954761904761895d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/tier_2_aviation"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.719047619047593d
+			y: -5.5261904761904646d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/tier_3_aviation"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.719047619047593d
+			y: -5.097619047619034d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/tier_4_aviation"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.719047619047593d
+			y: -4.6690476190476105d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/precision_mechanism"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.5d
+			y: -3.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -26.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/palettes/stone_types/natural/crimsite_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: -26.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -26.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -26.0d
+			y: -5.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -16.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/palettes/stone_types/natural/veridium_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/gold_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/gold_ingot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/gold_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/raw_gold"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/gold"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/smart"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.5d
+			y: 0.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -16.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/fan_side"
+			rotation: 90.0d
+			width: 1.0d
+			x: -17.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/soul_sand"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/gold_nugget"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.0d
+			y: 0.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -18.5d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.0d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:textures/images/letters/question.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.5d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/powered_rail"
+			rotation: 0.0d
+			width: 1.0d
+			x: -19.5d
+			y: 0.5d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -21.0d
+			y: 1.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -23.5d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/palettes/stone_types/natural/ochrum_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: -23.5d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -23.5d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -24.0d
+			y: 0.5d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -18.5d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/ore/node/gold/stone"
+			rotation: 0.0d
+			width: 1.0d
+			x: -21.5d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/brass_casing"
+			rotation: 0.0d
+			width: 1.0d
+			x: -19.0d
+			y: -3.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/brass_casing"
+			rotation: 0.0d
+			width: 1.0d
+			x: -21.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/ore/node/copper/stone"
+			rotation: 0.0d
+			width: 1.0d
+			x: -19.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/tin_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/tin_ingot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 3.5d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/tin_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/raw_tin"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 3.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/ore/node/tin/stone"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/brass_casing"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/silver_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:item/metal_ingot_silver"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 6.5d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/silver_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 6.5d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:item/metal_raw_silver"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 6.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/smart"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/tier_4_aviation"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.640476190476136d
+			y: 7.260714285714329d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/tier_3_aviation"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.640476190476136d
+			y: 6.7964285714286135d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/tier_2_aviation"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.67619047619042d
+			y: 6.367857142857183d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/tier_1_aviation"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.67619047619042d
+			y: 5.867857142857176d
+		}
+		{
+			height: 1.0d
+			image: "create:block/zinc_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 9.5d
+		}
+		{
+			height: 1.0d
+			image: "create:item/zinc_ingot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 10.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/zinc_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 9.5d
+		}
+		{
+			height: 1.0d
+			image: "create:item/raw_zinc"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 9.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/andesite"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 9.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/precision_mechanism"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.5d
+			y: 9.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -16.0d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/brass_casing"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: 9.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -18.5d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/palettes/stone_types/natural/asurine_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.5d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.5d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -19.0d
+			y: 9.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/ore/node/zinc/stone"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: 10.0d
+		}
+		{
+			height: 1.0d
+			image: "tconstruct:block/cobalt_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 33.5d
+		}
+		{
+			height: 1.0d
+			image: "tconstruct:item/materials/cobalt_ingot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 34.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/nickel_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 12.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/nickel_ingot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 13.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 13.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/nickel_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 13.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 13.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 12.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/raw_nickel"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 12.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 13.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 13.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/iron"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 12.5d
+		}
+		{
+			height: 1.0d
+			image: "mekanism:block/lead_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 15.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/lead_ingot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 16.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 16.0d
+		}
+		{
+			height: 1.0d
+			image: "mekanism:block/lead_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 16.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 16.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 15.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/raw_lead"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 15.0d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:block/metal/ore_aluminum"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 18.5d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:item/metal_ingot_aluminum"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 19.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 19.0d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:block/metal/ore_aluminum"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 19.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 19.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 18.5d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:item/metal_raw_aluminum"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 18.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 19.0d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:block/wooden_decoration/scaffolding"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 19.0d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:block/metal/sheetmetal_aluminum"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 18.0d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:block/metal/sheetmetal_steel"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 18.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/lava_bucket"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.5d
+			y: 19.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/water_bucket"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.5d
+			y: 18.0d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:item/metal_raw_aluminum"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 18.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/redstone_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 21.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/redstone"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 22.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/redstone_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 21.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/redstone"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 21.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/iron"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 21.5d
+		}
+		{
+			height: 1.0d
+			image: "vintageimprovements:item/redstone_module"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.5d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/precision_mechanism"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.5d
+			y: 21.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/nether"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.5d
+			y: 1.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -16.0d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/brass_casing"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: 21.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/ore/node/iron/stone"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: 22.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -18.5d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "crystal_clear:block/copper_glass_casing"
+			rotation: 0.0d
+			width: 1.0d
+			x: -19.0d
+			y: 21.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/hopper"
+			rotation: 0.0d
+			width: 1.0d
+			x: -19.0d
+			y: 21.5d
+		}
+		{
+			height: 1.0d
+			image: "crystal_clear:block/copper_glass_casing"
+			rotation: 0.0d
+			width: 1.0d
+			x: -19.0d
+			y: 21.0d
+		}
+		{
+			height: 1.0d
+			image: "create:item/cinder_flour"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.961904761904748d
+			y: 22.23690476190481d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:textures/mob_effect/strength.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.176190476190463d
+			y: 21.486904761904803d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:item/fluid_containers_bottle_biodiesel"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.283333333333317d
+			y: 20.91547619047622d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -21.0d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/machines/machine_bottler"
+			rotation: 0.0d
+			width: 1.0d
+			x: -21.5d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "create:item/cinder_flour"
+			rotation: 0.0d
+			width: 1.0d
+			x: -22.0d
+			y: 21.0d
+		}
+		{
+			height: 1.0d
+			image: "immersiveengineering:item/fluid_containers_bottle_biodiesel"
+			rotation: 0.0d
+			width: 1.0d
+			x: -21.0d
+			y: 21.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:textures/mob_effect/strength.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -20.747619047619033d
+			y: 21.379761904761935d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -23.5d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/gearbox"
+			rotation: 0.0d
+			width: 1.0d
+			x: -24.0d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "create:block/axis_top"
+			rotation: 0.0d
+			width: 1.0d
+			x: -24.0d
+			y: 22.0d
+		}
+		{
+			height: 1.0d
+			image: "vintageimprovements:block/grinder_belt"
+			rotation: 90.0d
+			width: 1.0d
+			x: -24.0d
+			y: 21.5d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/material/charged_amethyst"
+			rotation: 0.0d
+			width: 1.0d
+			x: -24.0d
+			y: 21.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/apatite_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 24.5d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 25.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/apatite"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 25.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/apatite_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 25.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 25.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 24.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/apatite"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 24.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/cinnabar_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 27.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/cinnabar"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 28.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 28.0d
+		}
+		{
+			height: 1.0d
+			image: "thermal:block/cinnabar_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 28.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 28.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 27.5d
+		}
+		{
+			height: 1.0d
+			image: "thermal:item/cinnabar"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 27.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/diamond_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.5d
+			y: 30.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.0d
+			y: 31.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 31.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/diamond_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 31.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/destroy_stage_5"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 31.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 30.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 30.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 31.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 31.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/wooden"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 30.5d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: 34.0d
+		}
+		{
+			height: 1.0d
+			image: "tconstruct:block/cobalt_ore"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 34.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/diamond_pickaxe"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 33.5d
+		}
+		{
+			height: 1.0d
+			image: "tconstruct:item/materials/raw_cobalt"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.0d
+			y: 33.0d
+		}
+		{
+			height: 4.0d
+			image: "create:entity/blueprint_large"
+			rotation: 0.0d
+			width: 4.0d
+			x: -13.5d
+			y: 34.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:block/accelerator"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.5d
+			y: 34.0d
+		}
+		{
+			height: 1.0d
+			image: "cmi:item/mechanism/complete/cobalt"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.0d
+			y: 33.5d
+		}
+	]
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "3BA5E1C52EDBB242"
+		tasks: [{
+			id: "5DA76071E8046992"
+			title: "这里提供了一些矿石资源的获取方式"
+			type: "checkmark"
+		}]
+		x: -18.5d
+		y: -7.5d
+	}]
+	title: "资源"
+}

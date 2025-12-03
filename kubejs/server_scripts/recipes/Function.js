@@ -147,6 +147,12 @@ function useAnimation(stack) {
 }
 
 let SmeltingRecipe = {
+	/**
+	 * 
+	 * @param {Internal.RecipesEventJS} event 
+	 * @param {OutputItem_} output 
+	 * @param {InputItem_} input 
+	 */
 	all: function (event, output, input) {
 		event.recipes.minecraft.smelting(output, input)
 			.cookingTime(200)
@@ -157,6 +163,12 @@ let SmeltingRecipe = {
 		event.recipes.minecraft.smoking(output, input)
 			.cookingTime(100)
 	},
+	/**
+	 * 
+	 * @param {Internal.RecipesEventJS} event 
+	 * @param {OutputItem_} output 
+	 * @param {InputItem_} input 
+	 */
 	blasting: function (event, output, input) {
 		event.recipes.minecraft.blasting(output, input)
 			.cookingTime(100)
@@ -164,6 +176,12 @@ let SmeltingRecipe = {
 		event.recipes.minecraft.smelting(output, input)
 			.cookingTime(200)
 	},
+	/**
+	 * 
+	 * @param {Internal.RecipesEventJS} event 
+	 * @param {OutputItem_} output 
+	 * @param {InputItem_} input 
+	 */
 	smoking: function (event, output, input) {
 		event.recipes.minecraft.blasting(output, input)
 			.cookingTime(100)
