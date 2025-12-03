@@ -103,7 +103,8 @@ BlockEvents.rightClicked((event) => {
 		if (player.mainHandItem === getItem &&
 			player.crouching &&
 			player.username === global.debugUserName[i]) {
-			event.getPlayer().swing()
+			player.swing()
+
 			let key = `message.${global.namespace}.debug.getHardness`
 			player.tell(Component.translatable(key, getBlockHardness()))
 			event.cancel()

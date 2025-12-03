@@ -5,19 +5,19 @@ let $Boolean =
 let $ShaftBlock =
 	Java.loadClass("com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock")
 
-let beltCasing = [
+let BeltCasing = [
 	"create:brass_casing",
 	"create:andesite_casing"
 ]
-let shaftCasingType = {
+let ShaftCasingType = {
 	"create:brass_casing": "create:brass_encased_shaft",
 	"create:andesite_casing": "create:andesite_encased_shaft"
 }
-let beltCasingType = {
+let BeltCasingType = {
 	"create:brass_casing": "BRASS",
 	"create:andesite_casing": "ANDESITE"
 }
-let inversedBeltCasingType = {
+let InversedBeltCasingType = {
 	BRASS: "create:brass_casing",
 	ANDESITE: "create:andesite_casing"
 }
@@ -27,11 +27,12 @@ NetworkEvents.dataReceived("isPlayerAltDown", (event) => {
 
 	player.persistentData.Alt = data.Alt
 
+	// !这里只能用弱等于
 	if (data.Alt != true) {
 		return
 	}
 
-	if (beltCasing.some((i) => {
+	if (BeltCasing.some((i) => {
 		return i == player.mainHandItem.id
 	})) {
 		player.setStatusMessage(Component.translatable("message.cmi.chainedcasing").green().bold())
@@ -50,7 +51,7 @@ BlockEvents.rightClicked("create:belt", (event) => {
 		return
 	}
 
-	if (beltCasing.some((i) => {
+	if (BeltCasing.some((i) => {
 		return i === item.id
 	})) {
 		player.swing()
@@ -137,7 +138,7 @@ BlockEvents.rightClicked("create:belt", (event) => {
 				)
 
 				level.server.runCommandSilent(
-					`/data modify block ${toEndblock.pos.x} ${toEndblock.pos.y} ${toEndblock.pos.z} Casing set value "${encaseOrNot ? beltCasingType[item.id] : "NONE"}"`
+					`/data modify block ${toEndblock.pos.x} ${toEndblock.pos.y} ${toEndblock.pos.z} Casing set value "${encaseOrNot ? BeltCasingType[item.id] : "NONE"}"`
 				)
 
 				if (toEndBlockStates.getValue($BeltBlock.PART).toString() === "END") {
@@ -167,7 +168,7 @@ BlockEvents.rightClicked("create:belt", (event) => {
 				)
 
 				level.server.runCommandSilent(
-					`/data modify block ${toStartblock.pos.x} ${toStartblock.pos.y} ${toStartblock.pos.z} Casing set value "${encaseOrNot ? beltCasingType[item.id] : "NONE"}"`
+					`/data modify block ${toStartblock.pos.x} ${toStartblock.pos.y} ${toStartblock.pos.z} Casing set value "${encaseOrNot ? BeltCasingType[item.id] : "NONE"}"`
 				)
 
 				if (toStartBlockStates.getValue($BeltBlock.PART).toString() === "START") {
@@ -186,7 +187,7 @@ BlockEvents.rightClicked("create:shaft", (event) => {
 		return
 	}
 
-	if (beltCasing.some((i) => {
+	if (BeltCasing.some((i) => {
 		return i === item.id
 	})) {
 		player.swing()
@@ -229,7 +230,7 @@ BlockEvents.rightClicked("create:shaft", (event) => {
 
 			toEndblock = block.offset(toEndPos[0], toEndPos[1], toEndPos[2])
 
-			if (toEndblock.id !== "create:shaft" && toEndblock.id !== shaftCasingType[item.id]) {
+			if (toEndblock.id !== "create:shaft" && toEndblock.id !== ShaftCasingType[item.id]) {
 				break
 			}
 
@@ -240,7 +241,7 @@ BlockEvents.rightClicked("create:shaft", (event) => {
 			}
 
 			level.server.runCommandSilent(
-				`setblock ${toEndblock.pos.x} ${toEndblock.pos.y} ${toEndblock.pos.z} ${shaftCasingType[item.id]}[axis=${axis.toLowerCase()}]`
+				`setblock ${toEndblock.pos.x} ${toEndblock.pos.y} ${toEndblock.pos.z} ${ShaftCasingType[item.id]}[axis=${axis.toLowerCase()}]`
 			)
 		}
 
@@ -252,7 +253,7 @@ BlockEvents.rightClicked("create:shaft", (event) => {
 
 			toStartblock = block.offset(toStartPos[0], toStartPos[1], toStartPos[2])
 
-			if (toStartblock.id !== "create:shaft" && toStartblock.id !== shaftCasingType[item.id]) {
+			if (toStartblock.id !== "create:shaft" && toStartblock.id !== ShaftCasingType[item.id]) {
 				break
 			}
 
@@ -263,7 +264,7 @@ BlockEvents.rightClicked("create:shaft", (event) => {
 			}
 
 			level.server.runCommandSilent(
-				`/setblock ${toStartblock.pos.x} ${toStartblock.pos.y} ${toStartblock.pos.z} ${shaftCasingType[item.id]}[axis=${axis.toLowerCase()}]`
+				`/setblock ${toStartblock.pos.x} ${toStartblock.pos.y} ${toStartblock.pos.z} ${ShaftCasingType[item.id]}[axis=${axis.toLowerCase()}]`
 			)
 		}
 	}
