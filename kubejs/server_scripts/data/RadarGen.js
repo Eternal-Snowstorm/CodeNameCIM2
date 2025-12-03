@@ -1,4 +1,21 @@
 ServerEvents.highPriorityData((event) => {
+	/**
+	 * 
+	 * @param {String} path 结构id
+	 * @returns 
+	 */
+	function radarTemplatePool(path) {
+		return {
+			weight: 1,
+			element: {
+				location: `${global.namespace}:${path}`,
+				element_type: "minecraft:single_pool_element",
+				processors: "minecraft:empty",
+				projection: "rigid"
+			}
+		}
+	}
+
 	// 结构
 	let structure = {
 		type: "minecraft:jigsaw",
@@ -48,35 +65,11 @@ ServerEvents.highPriorityData((event) => {
 		name: `${global.namespace}:radar/radar`,
 		fallback: "minecraft:empty",
 		elements: [
-			{
-				weight: 1,
-				element: {
-					location: `${global.namespace}:radar/main`,
-					element_type: "minecraft:single_pool_element",
-					processors: "minecraft:empty",
-					projection: "rigid"
-				}
-			}
+			radarTemplatePool("radar/main")
 		]
 	}
 
 	// 设备结构池
-	/**
-	 * 
-	 * @param {String} name 结构id
-	 * @returns 
-	 */
-	function radarTemplatePool(name) {
-		return {
-			weight: 1,
-			element: {
-				location: `${global.namespace}:${name}`,
-				element_type: "minecraft:single_pool_element",
-				processors: "minecraft:empty",
-				projection: "rigid"
-			}
-		}
-	}
 	let deviceTemplatePool = {
 		name: `${global.namespace}:radar/device`,
 		fallback: "minecraft:empty",
