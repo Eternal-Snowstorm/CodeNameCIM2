@@ -1,6 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	let CASING = "mekanism:steel_casing"
+
+	const CASING = "mekanism:steel_casing"
 	let Ingot = {
 		STAINLESS: "#forge:ingots/stainless_steel",
 		INFUSED: "#forge:alloys/advanced",

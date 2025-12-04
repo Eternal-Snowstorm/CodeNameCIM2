@@ -18,8 +18,7 @@ StartupEvents.registry("item", (event) => {
 			return new $AugmentItem(new $Item$Properties(), $AugmentDataHelper.builder()
 				.type($NBTTags.TAG_AUGMENT_TYPE_MACHINE)
 				.mod(MOD, value)
-				.build()
-			)
+				.build())
 		})
 	}
 

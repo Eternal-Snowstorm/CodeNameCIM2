@@ -44,18 +44,19 @@ let materials = [
 ServerEvents.recipes((event) => {
 	let { mekanism } = event.recipes
 
-	mekanism.gas_conversion("cmi:trinitrotoluene",
+	mekanism.gas_conversion(
+		"cmi:trinitrotoluene",
 		"100x cmi:nitroglycerine"
 	)
 
 	materials.forEach((material) => {
-		let CRYSTAL = `#mekanism:crystals/${material}`
-		let SHARD = `#mekanism:shards/${material}`
-		let CLUMP = `#mekanism:clumps/${material}`
-		let DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
-		let DUST = `#forge:dusts/${material}`
-		let SLURRY = getSlurry(material)
-		let DIRTY_SLURRY = getDirtySlurry(material)
+		const CRYSTAL = `#mekanism:crystals/${material}`
+		const SHARD = `#mekanism:shards/${material}`
+		const CLUMP = `#mekanism:clumps/${material}`
+		const DIRTY_DUST = `#mekanism:dirty_dusts/${material}`
+		const DUST = `#forge:dusts/${material}`
+		const SLURRY = getSlurry(material)
+		const DIRTY_SLURRY = getDirtySlurry(material)
 
 		if (DIRTY_SLURRY !== null) {
 			if (IngrUtils.isNotNull(`#forge:raw_materials/${material}`)) {
