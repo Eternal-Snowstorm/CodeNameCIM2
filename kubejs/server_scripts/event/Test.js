@@ -67,14 +67,23 @@ ItemEvents.rightClicked((event) => {
 
 function oreResourceUI() {
 	let group = new WidgetGroup()
+	let imageGroup = new ImageWidget()
+
 	const UI_WIDTH = 300
 	const UI_HEIGHT = UI_WIDTH
 
-	let mainTexturePath = "cmi:textures/images/ore_node_mining.png"
-	let mainTexture = new ["ResourceTexture(java.lang.String)"](mainTexturePath)
+	let mainTexturePath = "cmi:textures/images/copper_pickaxe.png"
+	let mainTexture = new ResourceTexture(
+		mainTexturePath,
+		0,
+		0,
+		1,
+		1
+	)
 
 	group.setSize(UI_WIDTH, UI_HEIGHT)
-	group.setBackground(mainTexture)
+	group.setBackground(ResourceBorderTexture.BORDERED_BACKGROUND)
+	imageGroup.setImage(mainTexture)
 
 	return group
 }
