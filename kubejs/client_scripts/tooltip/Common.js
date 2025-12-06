@@ -79,9 +79,14 @@ ItemEvents.tooltip((event) => {
 		addCommonTooltip(`cmi:${salt}`)
 		addCommonTooltip(`cmi:${salt}_solution_bucket`)
 	})
-	function addCommonTooltip(item) {
-		let itemTooltipTranslateKey = `tooltip.${item}`.replace(":", ".")
-		event.add(item, Component.translatable(itemTooltipTranslateKey))
+
+	/**
+	 * 
+	 * @param {Internal.Ingredient_} ingredient 
+	 */
+	function addCommonTooltip(ingredient) {
+		let itemTooltipTranslateKey = `tooltip.${ingredient}`.replace(":", ".")
+		event.add(ingredient, Component.translatable(itemTooltipTranslateKey))
 	}
 
 	// 愚人节

@@ -1,4 +1,5 @@
 ServerEvents.blockLootTables((event) => {
+	let namespace = global.namespace
 	let addOreLoots = {
 		common: function (ore) {
 			// 定义前缀列表
@@ -14,7 +15,7 @@ ServerEvents.blockLootTables((event) => {
 				"mercury_"
 			]
 			prefixes.forEach((prefix) => {
-				let blockId = `cmi:${prefix}${ore}_ore`
+				let blockId = `${namespace}:${prefix}${ore}_ore`
 
 				event.addBlock(blockId, (loot) => {
 					loot.addPool((pool) => {
@@ -52,7 +53,7 @@ ServerEvents.blockLootTables((event) => {
 											"function": "minecraft:explosion_decay"
 										}
 									],
-									"name": `cmi:raw_${ore}`
+									"name": `${namespace}:raw_${ore}`
 								}
 							]
 						})

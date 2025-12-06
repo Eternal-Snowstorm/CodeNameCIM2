@@ -16,8 +16,12 @@ ItemEvents.tooltip((event) => {
 	addAccelerateTooltip("cmi:air_tight_mechanism")
 	addAccelerateTooltip("create:precision_mechanism")
 
-	function addAccelerateTooltip(item) {
-		event.addAdvanced(item, (item, advanced, tooltip) => {
+	/**
+	 * 
+	 * @param {Internal.Ingredient_} ingredient 
+	 */
+	function addAccelerateTooltip(ingredient) {
+		event.addAdvanced(ingredient, (item, advanced, tooltip) => {
 			if (event.shift) {
 				let lines = Component.translatable(`tooltip.${item.getId()}.accelerate`.replace(":", "."))
 					.string.split("\n")
