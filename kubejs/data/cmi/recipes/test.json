@@ -1,0 +1,8 @@
+{
+	"type": "cmi:accelerator",
+	"input": {
+		"tag": "forge:ingots/gold"
+	},
+	"target": "minecraft:sandstone",
+	"output": "minecraft:gold_block"
+}

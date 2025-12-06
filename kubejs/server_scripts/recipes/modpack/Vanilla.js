@@ -310,7 +310,6 @@ ServerEvents.recipes((event) => {
 
 	// 混凝土
 	global.dyeColorGroup.forEach((colour) => {
-
 		event.remove({ id: `thermal:${colour}_concrete_powder_with_slag` })
 
 		kubejs.shaped(`minecraft:${colour}_concrete`, [

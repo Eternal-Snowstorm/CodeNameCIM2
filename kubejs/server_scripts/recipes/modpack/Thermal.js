@@ -31,5 +31,4 @@ ServerEvents.recipes((event) => {
 		"cmi:blackstone_sourse_gamma"
 	], "#forge:blackstone")
 		.energy(2000)
-
 })
