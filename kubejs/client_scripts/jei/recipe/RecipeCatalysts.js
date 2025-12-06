@@ -3,7 +3,7 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 
 	/**
 	 * 
-	 * @param {String} id JEI页面注册id
+	 * @param {ResourceLocation_} id JEI页面注册id
 	 * @param {Internal.Item_} item 索引物品
 	 * @param {String} displayName 显示名称
 	 * @returns 
