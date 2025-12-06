@@ -321,6 +321,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addGasLang("radon", "氡气")
 	addGasLang("refined_nuke_waste", "精炼核废料")
 	addGasLang("mercury", "汞")
+	addGasLang("geyser_jet", "间歇泉喷射气")
 
 	addSolutionLang("feso4", "硫酸亚铁", "FeSO₄")
 	addSolutionLang("fecl2", "氯化亚铁", "FeCl₂")

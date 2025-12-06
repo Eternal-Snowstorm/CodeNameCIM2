@@ -2,7 +2,7 @@ let $ParticleTypes =
 	Java.loadClass("net.minecraft.core.particles.ParticleTypes")
 
 ItemEvents.rightClicked((event) => {
-	let { item, player, level } = event
+	let { item, player, level, server } = event
 
 	// 只能主手触发
 	if (item === "cmi:parchment" && event.hand === "MAIN_HAND") {
@@ -37,7 +37,7 @@ ItemEvents.rightClicked((event) => {
 			let offsetY = (Math.random() - 0.5) * 2
 			let offsetZ = (Math.random() - 0.5) * 3
 
-			level.sendParticles(
+			server.getLevel().sendParticles(
 				$ParticleTypes.HEART,
 				PlayerPos.x + offsetX,
 				PlayerPos.y + offsetY,

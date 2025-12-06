@@ -14,7 +14,7 @@ ItemEvents.rightClicked((event) => {
 		player.tell(Component.translatable(key))
 
 		itemList.forEach((items) => {
-			player.give(items)
+			player.give(Item.of(items))
 		})
 		item.shrink(1)
 	}

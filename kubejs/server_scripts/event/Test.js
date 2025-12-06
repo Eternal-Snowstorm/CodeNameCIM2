@@ -55,3 +55,30 @@ function createUI(player) {
 LDLibUI.block("cmi:qi_month", (event) => {
 	event.success(createUI(event.player))
 })
+
+ItemEvents.rightClicked((event) => {
+	let { item, player } = event
+
+	if (item === "create:empty_schematic") {
+		player.swing()
+		ItemUIFactory.INSTANCE.openUI(player, event.hand, "cmi:ore")
+	}
+})
+
+function oreResourceUI() {
+	let group = new WidgetGroup()
+	const UI_WIDTH = 300
+	const UI_HEIGHT = UI_WIDTH
+
+	let mainTexturePath = "cmi:textures/images/ore_node_mining.png"
+	let mainTexture = new ["ResourceTexture(java.lang.String)"](mainTexturePath)
+
+	group.setSize(UI_WIDTH, UI_HEIGHT)
+	group.setBackground(mainTexture)
+
+	return group
+}
+
+LDLibUI.item("cmi:ore", (event) => {
+	event.success(oreResourceUI())
+})

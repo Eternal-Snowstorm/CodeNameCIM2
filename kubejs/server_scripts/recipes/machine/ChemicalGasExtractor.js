@@ -33,6 +33,40 @@ ServerEvents.recipes((event) => {
 		]
 	}).id("cmi:chemical_gas_extractor/radon")
 
+	// 间歇
+	event.custom({
+		"type": "custommachinery:custom_machine",
+		"machine": `${global.namespace}:chemical_gas_extractor`,
+		"time": 1,
+		"hidden": false,
+		"requirements": [
+			{
+				"type": "custommachinery:gas",
+				"mode": "output",
+				"chemical": "cmi:geyser_jet",
+				"amount": 2
+			},
+			{
+				"type": "custommachinery:structure",
+				"pattern": [
+					[
+						"A"
+					],
+					[
+						"m"
+					]
+				],
+				"keys": {
+					"A": "cmi:mars_geothermal_vent[smoke_type=3]"
+				}
+			},
+			{
+				"type": "custommachinery:dimension",
+				"filter": "cmi:mars"
+			}
+		]
+	}).id("cmi:chemical_gas_extractor/geyser_jet")
+
 	// 汞
 	event.custom({
 		"type": "custommachinery:custom_machine",
