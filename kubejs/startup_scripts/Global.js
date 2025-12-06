@@ -104,7 +104,10 @@ global.mechanismGroup = [
 	"potion",
 	"bronze"
 ]
-// 所有金属(用于兼容性配方)
+/**
+ * 所有金属(用于兼容性配方)
+ * @type {string[]}
+ */
 global.metalGroup = [
 	"andesite_alloy",
 	"tungsten_steel",
@@ -169,16 +172,19 @@ global.metalGroup = [
 	"shadow_steel",
 	"refined_radiance"
 ]
-// 熔点对象
+/**
+ * 各金属的熔点(单位C°)
+ * 
+ * null = 虚构金属, 熔点为随意设定值
+ * 
+ * 熔炉1000 
+ * 高炉, 热力电炉1500
+ * 车窑, 电弧炉2000
+ * Mek熔炉全部可熔炼
+ * 
+ * @type {{ [key: string]: number }}
+ */
 global.meltingPoints = {
-	/**
-	 * null代表该金属现实不存在, 所需熔点是随便写的一个数值
-	 * 
-	 * 熔炉1000 
-	 * 高炉, 热力电炉1500
-	 * 车窑, 电弧炉2000
-	 * Mek熔炉全部可熔炼
-	 */
 	"andesite_alloy": 760, // null
 	"tungsten_steel": 2524,
 	"aluminum": 660,
@@ -242,14 +248,16 @@ global.meltingPoints = {
 	"shadow_steel": 2106, // null
 	"refined_radiance": 2106, // null
 }
-// 命名空间
+/***
+ * 命名空间
+ * v代表该材料是由TIC本体添加的
+ * t代表该材料是由热力工匠添加的
+ * c代表该材料是由制作组自定义的
+ * n代表无此材料
+ * 
+ * @type {{ [key:string]: string }}
+ */
 global.materialNamespace = {
-	/*
-	 * v代表该材料是由TIC本体添加的
-	 * t代表该材料是由热力工匠添加的
-	 * c代表该材料是由制作组自定义的
-	 * n代表无此材料
-	 */
 	"andesite_alloy": "c",
 	"tungsten_steel": "c",
 	"aluminum": "v",
@@ -312,7 +320,11 @@ global.materialNamespace = {
 	"shadow_steel": "c",
 	"refined_radiance": "c"
 }
-// 熔点数组
+/**
+ * 熔炉等级: 不同熔炼设备可处理的金属集合
+ * key 可以是数值(表示温度上限)或 "above"(2000C°以上)
+ * @type {{ [key: number]: string[] }}
+ */
 global.meltingLevels = {
 	1000: [
 		"lead",
@@ -384,7 +396,9 @@ global.meltingLevels = {
 		"refined_radiance"
 	]
 }
-// 燃料列表
+/**
+ * @type {string[]} 燃料列表
+ */
 global.fuelList = [
 	"minecraft:lava",
 	"ad_astra:cryo_fuel",
@@ -406,7 +420,10 @@ global.fuelList = [
 	"createdieselgenerators:gasoline"
 ]
 
-// 燃料温度
+/**
+ * 燃料温度
+ * @type {{ [key: string]: number }}
+ */
 global.fuelTemperatures = {
 	"minecraft:lava": 1346,
 	"ad_astra:cryo_fuel": 4225,
@@ -428,7 +445,11 @@ global.fuelTemperatures = {
 	"immersiveengineering:creosote": 1300
 }
 
-// 匠魂物品标签
+/**
+ * 匠魂物品标签
+ * 
+ * @type {{ [key: any]: string }}
+ */
 global.TinkerItemTags = {
 	STAFFS: $TinkerTags$Items.STAFFS.location().toString(),
 	RED_SAND_CASTS: $TinkerTags$Items.RED_SAND_CASTS.location().toString(),
@@ -562,6 +583,11 @@ global.TinkerItemTags = {
 	HELD_ARMOR: $TinkerTags$Items.HELD_ARMOR.location().toString(),
 }
 
+/**
+ * 所有匠魂词条
+ * 
+ * @type {string[]}
+ */
 global.allTConModifier = [
 	"tconstruct:warping",
 	"tconstruct:tanned",
