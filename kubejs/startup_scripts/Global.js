@@ -11,7 +11,10 @@ global.modPackVersion = "§0CMI Beta-2.4.0"
 global.BUCKET_CAPACITY = 1000
 // 扳手Tag
 global.WRENCH_PICKUP = "create:wrench_pickup"
-// 设定全局开发人员名单
+/**
+ * 设定全局开发人员名单
+ * @type {string[]}
+ */
 global.debugUserName = [
 	"Qi_Month",
 	"Vechni_Metel",
@@ -21,29 +24,48 @@ global.debugUserName = [
 	"KEYboardManDesu",
 	"oooooooo_zane"
 ]
-// 挖掘等级
+/**
+ * 挖掘等级
+ * 
+ * @type {{ [key: any]: ResourceLocation_ }}
+ */
 global.MiningLevel = {
-	"wooden": "minecraft:needs_wooden_tool",
-	"stone": "minecraft:needs_stone_tool",
-	"iron": "minecraft:needs_iron_tool",
-	"gold": "forge:needs_gold_tool",
-	"diamond": "minecraft:needs_diamond_tool",
-	"nether": "forge:needs_netherite_tool"
+	wooden: "minecraft:needs_wooden_tool",
+	stone: "minecraft:needs_stone_tool",
+	iron: "minecraft:needs_iron_tool",
+	gold: "forge:needs_gold_tool",
+	diamond: "minecraft:needs_diamond_tool",
+	nether: "forge:needs_netherite_tool"
 }
-// 挖掘工具类型
+
+/**
+ * 挖掘工具类型
+ * 
+ * @type {{ [key: any]: ResourceLocation_ }}
+ */
 global.ToolType = {
-	"sword": "forge:mineable/sword",
-	"pickaxe": "minecraft:mineable/pickaxe",
-	"axe": "minecraft:mineable/axe",
-	"shovel": "minecraft:mineable/shovel",
-	"hoe": "minecraft:mineable/hoe"
+	sword: "forge:mineable/sword",
+	pickaxe: "minecraft:mineable/pickaxe",
+	axe: "minecraft:mineable/axe",
+	shovel: "minecraft:mineable/shovel",
+	hoe: "minecraft:mineable/hoe"
 }
+
+/**
+ * 热量
+ * 
+ * @type {{ [key: any]: string }}
+ */
 global.HeatLevel = {
-	"heated": "heated",
-	"super": "superheated",
-	"grilled": "grilled"
+	super: "superheated",
+	grilled: "grilled",
+	heated: "heated",
 }
-// 所有染料颜色
+/**
+ * 所有染料颜色
+ * 
+ * @type {string[]}
+ */
 global.dyeColorGroup = [
 	"black",
 	"blue",
@@ -62,7 +84,11 @@ global.dyeColorGroup = [
 	"white",
 	"yellow"
 ]
-// 所有构件
+/**
+ * 所有构件
+ * 
+ * @type {string[]}
+ */
 global.mechanismGroup = [
 	"nature",
 	"wooden",
