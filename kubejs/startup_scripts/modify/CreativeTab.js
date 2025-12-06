@@ -107,18 +107,14 @@ StartupEvents.modifyCreativeTab("functionalstorage:main", (event) => {
 })
 
 StartupEvents.modifyCreativeTab("immersiveengineering:main", (event) => {
-	event.addAfter(
-		Item.of("immersiveengineering:blueprint")
-			.withNBT({
-				blueprint: "molds"
-			}),
-		Item.of("immersiveengineering:blueprint")
-			.withNBT({
-				blueprint: "mechanism_basements"
-			}),
-		Item.of("immersiveengineering:blueprint")
-			.withNBT({
-				blueprint: "mechanism_augments"
-			})
-	)
+	event.addAfter(Item.of("immersiveengineering:blueprint", {
+		blueprint: "molds"
+	}), [
+		Item.of("immersiveengineering:blueprint", {
+			blueprint: "mechanism_basements"
+		}),
+		Item.of("immersiveengineering:blueprint", {
+			blueprint: "mechanism_augments"
+		})
+	])
 })
