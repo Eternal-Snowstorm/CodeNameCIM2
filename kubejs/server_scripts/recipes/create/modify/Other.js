@@ -405,6 +405,16 @@ ServerEvents.recipes((event) => {
 		B: "#forge:glass"
 	})
 
+	// 物品保险库
+	kubejs.shaped("create:item_vault", [
+		"A",
+		"B",
+		"A"
+	], {
+		A: "#forge:plates/iron",
+		B: "#forge:chests"
+	})
+
 	// 增产机壳
 	let casingFrame = [
 		"andesite",
