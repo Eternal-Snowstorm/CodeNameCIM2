@@ -3,6 +3,15 @@
 	"input": {
 		"tag": "create:mechanisms"
 	},
-	"target": "minecraft:sandstone",
-	"output": "minecraft:gold_block"
+	"target": "minecraft:gold_block",
+	"output": [
+		{
+			"id": "minecraft:gold_block",
+			"chance": 0.1
+		},
+		{
+			"id": "minecraft:redstone_block",
+			"chance": 0.4
+		}
+	]
 }
