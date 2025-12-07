@@ -1,4 +1,3 @@
-/*
 JEIAddedEvents.registerCategories((event) => {
 	let { data: { jeiHelpers: { guiHelper } } } = event
 
@@ -22,8 +21,7 @@ JEIAddedEvents.registerCategories((event) => {
 			// 处理格子
 			.handleLookup((
 				builder,
-				recipe,
-				group
+				recipe
 			) => {
 				builder.setShapeless()
 				// 格子类型, X, Y
@@ -71,4 +69,3 @@ JEIAddedEvents.registerCategories((event) => {
 			})
 	})
 })
-*/
