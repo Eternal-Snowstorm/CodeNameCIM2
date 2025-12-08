@@ -159,7 +159,7 @@ ServerEvents.recipes((event) => {
 		"atmosphere"
 	]
 	for (let tier = 1; tier <= 4; tier++) {
-		event.custom({
+		event.custom({	
 			type: "custommachinery:custom_machine",
 			machine: `${global.namespace}:flash_disk_writer`,
 			time: 400,
