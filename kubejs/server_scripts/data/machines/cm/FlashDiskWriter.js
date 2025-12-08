@@ -33,7 +33,8 @@ ServerEvents.highPriorityData((event) => {
 				"mode": "input",
 				"id": "mechanism_1",
 				"filter": [
-					"cmi:programmed_flash_drive"
+					"cmi:programmed_flash_drive",
+					"cmi:empty_cell"
 				]
 			},
 			{
@@ -41,7 +42,8 @@ ServerEvents.highPriorityData((event) => {
 				"mode": "input",
 				"id": "mechanism_2",
 				"filter": [
-					"cmi:programmed_flash_drive"
+					"cmi:programmed_flash_drive",
+					"cmi:empty_cell"
 				]
 			},
 			{
@@ -49,7 +51,8 @@ ServerEvents.highPriorityData((event) => {
 				"mode": "input",
 				"id": "mechanism_3",
 				"filter": [
-					"cmi:programmed_flash_drive"
+					"cmi:programmed_flash_drive",
+					"cmi:empty_cell"
 				]
 			},
 			{
@@ -57,7 +60,8 @@ ServerEvents.highPriorityData((event) => {
 				"mode": "input",
 				"id": "mechanism_4",
 				"filter": [
-					"cmi:programmed_flash_drive"
+					"cmi:programmed_flash_drive",
+					"cmi:empty_cell"
 				]
 			},
 			{
@@ -65,7 +69,11 @@ ServerEvents.highPriorityData((event) => {
 				"mode": "input",
 				"id": "flash_drive",
 				"filter": [
-					"#create:mechanisms"
+					"#create:mechanisms",
+					"cmi:tier_1_aviation_cell",
+					"cmi:tier_2_aviation_cell",
+					"cmi:tier_3_aviation_cell",
+					"cmi:tier_4_aviation_cell",
 				]
 			},
 			{

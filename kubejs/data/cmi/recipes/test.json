@@ -7,7 +7,7 @@
 	"output": [
 		{
 			"id": "minecraft:gold_block",
-			"chance": 0.1
+			"chance": 1
 		},
 		{
 			"id": "minecraft:redstone_block",

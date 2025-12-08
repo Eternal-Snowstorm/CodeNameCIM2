@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	global.mechanismGroup.forEach((material ) => {
+	global.mechanismGroup.forEach((material) => {
 		event.custom({
 			"type": "custommachinery:custom_machine",
 			"machine": `${global.namespace}:flash_disk_writer`,
@@ -151,4 +151,68 @@ ServerEvents.recipes((event) => {
 			}
 		]
 	})
+
+	let dataType = [
+		"orbit",
+		"mass",
+		"radius",
+		"atmosphere",
+		"complete"
+	]
+	for (let tier = 1; tier <= 4; tier++) {
+		event.custom({
+			type: "custommachinery:custom_machine",
+			machine: `${global.namespace}:flash_disk_writer`,
+			time: 400,
+			hidden: false,
+			requirements: [
+				{
+					type: "custommachinery:item",
+					mode: "input",
+					item: "cmi:empty_cell",
+					amount: 1
+				},
+				{
+					type: "custommachinery:item",
+					mode: "input",
+					item: `cmi:tier_${tier}_aviation_cell`,
+					nbt: `{data:${dataType[0]}}`,
+					amount: 1
+				},
+				{
+					type: "custommachinery:item",
+					mode: "input",
+					item: `cmi:tier_${tier}_aviation_cell`,
+					nbt: `{data:${dataType[1]}}`,
+					amount: 1
+				},
+				{
+					type: "custommachinery:item",
+					mode: "input",
+					item: `cmi:tier_${tier}_aviation_cell`,
+					nbt: `{data:${dataType[2]}}`,
+					amount: 1
+				},
+				{
+					type: "custommachinery:item",
+					mode: "input",
+					item: `cmi:tier_${tier}_aviation_cell`,
+					nbt: `{data:${dataType[3]}}`,
+					amount: 1
+				},
+				{
+					type: "custommachinery:item",
+					mode: "output",
+					item: `cmi:tier_${tier}_aviation_cell`,
+					nbt: `{data:${dataType[4]}}`,
+					amount: 1
+				},
+				{
+					type: "custommachinery:energy",
+					mode: "input",
+					amount: 2000000
+				}
+			]
+		})
+	}
 })

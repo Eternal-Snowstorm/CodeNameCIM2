@@ -19,7 +19,7 @@ ServerEvents.highPriorityData((event) => {
 				"minecraft:mineable/pickaxe"
 			],
 			"idle": {
-				"block": "cmi:machine/radar_terminal/off"
+				"custommachinery:block": "cmi:machine/radar_terminal/off"
 			}
 		},
 		"components": [
@@ -74,41 +74,41 @@ ServerEvents.highPriorityData((event) => {
 			},
 			{
 				"type": "custommachinery:slot",
-				"id": "cell_input",
-				"texture": "cmi:textures/gui/cell_slot.png",
-				"x": 104,
-				"y": 55
-			},
-			{
-				"type": "custommachinery:slot",
 				"id": "battery",
 				"texture": "cmi:textures/gui/battery_slot.png",
-				"x": 104,
-				"y": 31
+				"x": 84,
+				"y": 55
 			},
 			{
 				"type": "custommachinery:energy",
 				"id": "energy_input",
-				"x": 82,
+				"x": 137,
 				"y": 31
 			},
 			{
 				"type": "custommachinery:slot",
+				"id": "cell_input",
 				"texture": "cmi:textures/gui/cell_slot.png",
+				"x": 84,
+				"y": 31
+			},
+			{
+				"type": "custommachinery:slot",
 				"id": "output",
-				"x": 134,
+				"texture": "cmi:textures/gui/cell_slot.png",
+				"x": 110,
 				"y": 55
 			},
 			{
 				"type": "custommachinery:progress",
 				"texture": "cmi:textures/gui/progress_empty.png",
-				"x": 128,
-				"y": 36,
+				"x": 106,
+				"y": 34,
 				"texture_empty": "cmi:textures/gui/progress_empty.png",
 				"texture_filled": "cmi:textures/gui/progress_filled.png"
 			}
 		],
-		"gui": [
+		"jei": [
 			{
 				"type": "custommachinery:background",
 				"width": 256,
@@ -126,36 +126,36 @@ ServerEvents.highPriorityData((event) => {
 			},
 			{
 				"type": "custommachinery:slot",
-				"id": "cell_input",
-				"texture": "cmi:textures/gui/cell_slot.png",
-				"x": 104,
-				"y": 55
-			},
-			{
-				"type": "custommachinery:slot",
 				"id": "battery",
 				"texture": "cmi:textures/gui/battery_slot.png",
-				"x": 104,
-				"y": 31
+				"x": 84,
+				"y": 55
 			},
 			{
 				"type": "custommachinery:energy",
 				"id": "energy_input",
-				"x": 82,
+				"x": 137,
 				"y": 31
 			},
 			{
 				"type": "custommachinery:slot",
+				"id": "cell_input",
 				"texture": "cmi:textures/gui/cell_slot.png",
+				"x": 84,
+				"y": 31
+			},
+			{
+				"type": "custommachinery:slot",
 				"id": "output",
-				"x": 134,
+				"texture": "cmi:textures/gui/cell_slot.png",
+				"x": 110,
 				"y": 55
 			},
 			{
 				"type": "custommachinery:progress",
 				"texture": "cmi:textures/gui/progress_empty.png",
-				"x": 128,
-				"y": 36,
+				"x": 106,
+				"y": 34,
 				"texture_empty": "cmi:textures/gui/progress_empty.png",
 				"texture_filled": "cmi:textures/gui/progress_filled.png"
 			}
