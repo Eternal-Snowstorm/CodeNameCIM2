@@ -201,6 +201,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCellItemLang("tier_2_aviation", "贰级科技航天")
 	addCellItemLang("tier_3_aviation", "叁级科技航天")
 	addCellItemLang("tier_4_aviation", "肆级科技航天")
+	addCellItemLang("tier_1_aviation_complete", "壹级完整科技航天")
+	addCellItemLang("tier_2_aviation_complete", "贰级完整科技航天")
+	addCellItemLang("tier_3_aviation_complete", "叁级完整科技航天")
+	addCellItemLang("tier_4_aviation_complete", "肆级完整科技航天")
 
 	addFluidLang("steam", "蒸汽")
 	addFluidLang("blood", "血液")

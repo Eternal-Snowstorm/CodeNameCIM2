@@ -23,4 +23,9 @@ StartupEvents.registry("item", (event) => {
 	addCellItem("tier_2_aviation", 0x00FFFF)
 	addCellItem("tier_3_aviation", 0xFCD720)
 	addCellItem("tier_4_aviation", 0xFFC4F2)
+	// 完整硬盘
+	addCellItem("tier_1_aviation_complete", 0xBA52FF)
+	addCellItem("tier_2_aviation_complete", 0x00FFFF)
+	addCellItem("tier_3_aviation_complete", 0xFCD720)
+	addCellItem("tier_4_aviation_complete", 0xFFC4F2)
 })

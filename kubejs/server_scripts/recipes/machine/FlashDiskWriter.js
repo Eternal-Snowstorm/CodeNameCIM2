@@ -156,8 +156,7 @@ ServerEvents.recipes((event) => {
 		"orbit",
 		"mass",
 		"radius",
-		"atmosphere",
-		"complete"
+		"atmosphere"
 	]
 	for (let tier = 1; tier <= 4; tier++) {
 		event.custom({
@@ -203,8 +202,7 @@ ServerEvents.recipes((event) => {
 				{
 					type: "custommachinery:item",
 					mode: "output",
-					item: `cmi:tier_${tier}_aviation_cell`,
-					nbt: `{data:${dataType[4]}}`,
+					item: `cmi:tier_${tier}_aviation_complete_cell`,
 					amount: 1
 				},
 				{
