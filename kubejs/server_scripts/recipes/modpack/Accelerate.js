@@ -1,9 +1,8 @@
 ServerEvents.recipes((event) => {
-	addRecipe("#forge:gems/diamond", "ad_astra:moon_stone", [
-		setOutput("minecraft:iron_block", 0.1),
-		setOutput("minecraft:gold_block", 0.2),
-		setOutput("minecraft:diamond_block", 0.3),
-		setOutput("createaddition:creative_energy", 0.4)
+	addRecipe("cmi:iron_mechanism","minecraft:deepslate",[
+		setOutput("minecraft:deepslate_iron_ore",0.15),
+		setOutput("minecraft:deepslate_redstone_ore",0.15),
+		setOutput("thermal:deepslate_nickel_ore",0.15)
 	])
 
 	/**
