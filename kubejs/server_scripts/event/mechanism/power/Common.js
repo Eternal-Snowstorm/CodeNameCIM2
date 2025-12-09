@@ -72,11 +72,6 @@
 // 		Item.of("minecraft:redstone_ore").withChance(0.05),
 // 		Item.of("thermal:nickel_ore").withChance(0.05)
 // 	])
-// 	addAccelerateEvent("cmi:iron_mechanism", "minecraft:deepslate", [
-// 		Item.of("minecraft:deepslate_iron_ore").withChance(0.15),
-// 		Item.of("minecraft:deepslate_redstone_ore").withChance(0.1),
-// 		Item.of("thermal:deepslate_nickel_ore").withChance(0.1)
-// 	])
 
 // 	// 下界构件
 // 	addAccelerateEvent("cmi:nether_mechanism", "minecraft:netherrack", [
