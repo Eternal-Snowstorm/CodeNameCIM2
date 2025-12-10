@@ -59,7 +59,7 @@ LDLibUI.block("cmi:qi_month", (event) => {
 ItemEvents.rightClicked((event) => {
 	let { item, player } = event
 
-	if (item === "create:empty_schematic") {
+	if (item === "cmi:tier_1_aviation_complete_cell") {
 		player.swing()
 		ItemUIFactory.INSTANCE.openUI(player, event.hand, "cmi:ore")
 	}
@@ -69,10 +69,10 @@ function oreResourceUI() {
 	let group = new WidgetGroup()
 	let imageGroup = new ImageWidget()
 
-	const UI_WIDTH = 300
-	const UI_HEIGHT = UI_WIDTH
+	const UI_WIDTH = (416 / 2) + (416 / 8)
+	const UI_HEIGHT = (512 / 2) + (512 / 8)
 
-	let mainTexturePath = "cmi:textures/images/copper_pickaxe.png"
+	let mainTexturePath = "cmi:textures/gui/cell/tier_1.png"
 	let mainTexture = new ResourceTexture(
 		mainTexturePath,
 		0,
@@ -82,8 +82,7 @@ function oreResourceUI() {
 	)
 
 	group.setSize(UI_WIDTH, UI_HEIGHT)
-	group.setBackground(ResourceBorderTexture.BORDERED_BACKGROUND)
-	imageGroup.setImage(mainTexture)
+	group.setBackground(mainTexture)
 
 	return group
 }

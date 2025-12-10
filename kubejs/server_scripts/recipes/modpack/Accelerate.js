@@ -109,11 +109,11 @@ ServerEvents.recipes((event) => {
 		setOutput("create:zinc_ore", 0.15),
 		setOutput("minecraft:redstone_ore", 0.1)
 	])
-	addRecipe("create:precision_mechanism", "minecraft:deepslate", [
-		setOutput("minecraft:deepslate_copper_ore", 0.1),
-		setOutput("create:deepslate_zinc_ore", 0.1),
-		setOutput("minecraft:deepslate_redstone_ore", 0.15)
-	])
+	// addRecipe("create:precision_mechanism", "minecraft:deepslate", [
+	// 	setOutput("minecraft:deepslate_copper_ore", 0.1),
+	// 	setOutput("create:deepslate_zinc_ore", 0.1),
+	// 	setOutput("minecraft:deepslate_redstone_ore", 0.15)
+	// ])
 
 	// 红石构件
 	addRecipe("vintageimprovements:redstone_module", "minecraft:stone", [
@@ -203,4 +203,37 @@ ServerEvents.recipes((event) => {
 			.input(input)
 			.target(target)
 	}
+
+	cmi.accelerator([
+		{
+			"id": "minecraft:deepslate_copper_ore",
+			"chance": 0.1
+		},
+		{
+			"id": "create:deepslate_zinc_ore",
+			"chance": 0.1
+		},
+		{
+			"id": "minecraft:deepslate_redstone_ore",
+			"chance": 0.1
+		}
+	]).input("create:precision_mechanism").target("minecraft:deepslate")
+
+	event.custom({
+		"type": "cmi:accelerator",
+		"target": "minecraft:sandstone",
+		"input": {
+			"tag": "forge:ingots/iron"
+		},
+		"output": [
+			{
+				"id": "minecraft:iron_block",
+				"chance": 0.3
+			},
+			{
+				"id": "minecraft:gold_block",
+				"chance": 0.3
+			}
+		]
+	})
 })

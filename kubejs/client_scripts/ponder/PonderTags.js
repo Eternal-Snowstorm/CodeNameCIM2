@@ -34,7 +34,8 @@ Ponder.tags((event) => {
 
 		// let index = Component.translatable(`cmi.ponder.tag.${name}`).getString()
 		let index = `${name} Ponder Index`
-		event.createTag(`${global.namespace}:${tag}`, icon, name, index, ITEMS)
+		let id = `${global.namespace}:${tag}`
+		event.createTag(id, icon, name, index, ITEMS)
 	}
 
 	new PonderTag("ponder", "cmi:creative_mechanism", "Modpack", [

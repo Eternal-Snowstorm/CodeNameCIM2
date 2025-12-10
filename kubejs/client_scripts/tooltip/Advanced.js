@@ -23,8 +23,10 @@ ItemEvents.tooltip((event) => {
 	function addAccelerateTooltip(ingredient) {
 		event.addAdvanced(ingredient, (item, advanced, tooltip) => {
 			if (event.shift) {
-				let lines = Component.translatable(`tooltip.${item.getId()}.accelerate`.replace(":", "."))
-					.string.split("\n")
+				let lines = Component.translatable(`tooltip.${item.getId()}.accelerate`
+					.replace(":", "."))
+					.string
+					.split("\n")
 				lines.forEach((line) => {
 					tooltip.add(line)
 				})

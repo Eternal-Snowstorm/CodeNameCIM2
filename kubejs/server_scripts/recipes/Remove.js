@@ -21,6 +21,7 @@ ServerEvents.recipes((event) => {
 		"createdieselgenerators:crafting/chip_wood_beam",
 		"tconstruct:smeltery/seared/chute_retextured",
 		"tconstruct:__default",
+		"immersiveindustry:kiln/sandstone",
 		"immersiveengineering:crafting/concrete_leaded",
 		"functionalstorage:ender_drawer",
 		"createaddition:compat/tconstruct/blaze_blood",
