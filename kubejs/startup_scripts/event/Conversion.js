@@ -23,6 +23,7 @@ StartupEvents.postInit((event) => {
 	// 桶
 	addConversionRecipe("cmi:bucket", "minecraft:bucket")
 
+	/*
 	// 构件之力催生器
 	addConversionRecipe("minecraft:andesite", "cmi:andesite_mechanism")
 	addConversionRecipe("minecraft:iron_ore", "cmi:andesite_mechanism")
@@ -79,7 +80,7 @@ StartupEvents.postInit((event) => {
 	addConversionRecipe("minecraft:coal_ore", "cmi:wooden_mechanism")
 	addConversionRecipe("minecraft:deepslate_coal_ore", "cmi:wooden_mechanism")
 	addConversionRecipe("minecraft:deepslate_diamond_ore", "cmi:wooden_mechanism")
-
+*/
 
 	let machines = [
 		"smelting",
