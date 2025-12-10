@@ -448,7 +448,6 @@
 		{
 			dependencies: [
 				"7C14A1CC724511CB"
-				"542BB1A40BC1B441"
 				"370E4B4D6068CF98"
 			]
 			dependency_requirement: "one_completed"
@@ -472,42 +471,6 @@
 			}]
 			x: 0.5d
 			y: -3.5d
-		}
-		{
-			dependencies: ["27A18EEBBE063B43"]
-			description: [
-				"工业大麻种子可以打草获得"
-				"亚麻普遍可以海边找到"
-				"{image:cmi:textures/images/linen_generate.png width:185 height:105 align:center}"
-			]
-			icon: "minecraft:string"
-			id: "542BB1A40BC1B441"
-			rewards: [{
-				id: "5991A9D3EA6281A2"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [
-				{
-					id: "5D45077745461FF6"
-					item: "immersiveengineering:seed"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "03BF5BE848435504"
-					item: "supplementaries:flax_seeds"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0409DDDE56372F91"
-					type: "checkmark"
-				}
-			]
-			title: "线的来源"
-			x: -1.5d
-			y: -4.0d
 		}
 		{
 			description: ["在开始发展前下来先把下面的需求做好"]
@@ -795,66 +758,6 @@
 			]
 			x: 2.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["542BB1A40BC1B441"]
-			description: ["整合包做了对灰化土的兼容, 灰化土也可以用锄头右键耕地了"]
-			icon: {
-				Count: 1
-				id: "tconstruct:mattock"
-				tag: {
-					Damage: 0
-					tic_broken: 0b
-					tic_materials: [
-						"tconstruct:cobalt"
-						"tconstruct:cobalt"
-						"tconstruct:cobalt"
-					]
-					tic_modifiers: [
-						{
-							level: 3
-							name: "tconstruct:lightweight"
-						}
-						{
-							level: 1
-							name: "tconstruct:tilling"
-						}
-					]
-					tic_multipliers: {
-						"tconstruct:attack_damage": 1.1f
-						"tconstruct:durability": 1.25f
-						"tconstruct:mining_speed": 1.1f
-					}
-					tic_persistent: { }
-					tic_stats: {
-						"tconstruct:attack_damage": 4.125f
-						"tconstruct:attack_speed": 1.1434499f
-						"tconstruct:draw_speed": 1.09f
-						"tconstruct:durability": 1049.9999f
-						"tconstruct:harvest_tier": "minecraft:diamond"
-						"tconstruct:mining_speed": 9.084075f
-						"tconstruct:velocity": 1.09f
-					}
-					tic_volatile_data: {
-						abilities: 1
-						upgrades: 3
-					}
-				}
-			}
-			id: "648444B110FB640D"
-			rewards: [{
-				id: "7D0D7AFFEB1768E8"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "灰化土也可以耕地"
-			tasks: [{
-				id: "5580C021BA791527"
-				title: "要种地"
-				type: "checkmark"
-			}]
-			x: -1.5d
-			y: -5.0d
 		}
 		{
 			dependencies: ["27A18EEBBE063B43"]
