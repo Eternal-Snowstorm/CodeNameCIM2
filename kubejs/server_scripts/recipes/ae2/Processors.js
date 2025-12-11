@@ -2,6 +2,7 @@ ServerEvents.recipes((event) => {
     let { create, vintageimprovements, createaddition } = event.recipes
 
     let Print = {
+        CONTROL: "create_connected:incomplete_control_chip",
         LOGIC: "ae2:printed_logic_processor",
         CALCULATION: "ae2:printed_calculation_processor",
         ENGINEERING: "ae2:printed_engineering_processor",
@@ -9,11 +10,36 @@ ServerEvents.recipes((event) => {
     }
 
     let Processor = {
+        CONTROL: "create_connected:control_chip",
         LOGIC: "ae2:logic_processor",
         CALCULATION: "ae2:calculation_processor",
         ENGINEERING: "ae2:engineering_processor",
         QUANTUM: "advanced_ae:quantum_processor"
     }
+
+    // 控制芯片
+    create.sequenced_assembly(Processor.CONTROL, [
+        "#forge:plates/copper"
+    ], [
+        create.deploying(Print.CONTROL, [
+            Print.CONTROL,
+            "minecraft:redstone"
+        ]),
+        create.deploying(Print.CONTROL, [
+            Print.CONTROL,
+            "ae2:printed_silicon"
+        ]),
+        create.deploying(Print.CONTROL, [
+            Print.CONTROL,
+            "immersiveengineering:wirecoil_redstone"
+        ]),
+        vintageimprovements.laser_cutting(Print.CONTROL, [
+            Print.CONTROL
+        ]).energy(4000).maxChargeRate(1000)
+    ])
+        .transitionalItem(Print.CONTROL)
+        .loops(1)
+        .id("create_connected:sequenced_assembly/control_chip")
 
     // 逻辑处理器
     create.sequenced_assembly(Processor.LOGIC, [
@@ -24,7 +50,7 @@ ServerEvents.recipes((event) => {
         ]).itemAsHead("ae2:logic_processor_press"),
         create.deploying(Print.LOGIC, [
             Print.LOGIC,
-            "#forge:plates/copper"
+            "create:polished_rose_quartz"
         ]),
         create.deploying(Print.LOGIC, [
             Print.LOGIC,
@@ -51,7 +77,7 @@ ServerEvents.recipes((event) => {
         ]).itemAsHead("ae2:calculation_processor_press"),
         create.deploying(Print.CALCULATION, [
             Print.CALCULATION,
-            "#forge:plates/silver"
+            "#forge:silicon"
         ]),
         create.deploying(Print.CALCULATION, [
             Print.CALCULATION,
@@ -78,7 +104,7 @@ ServerEvents.recipes((event) => {
         ]).itemAsHead("ae2:engineering_processor_press"),
         create.deploying(Print.ENGINEERING, [
             Print.ENGINEERING,
-            "#forge:plates/platinum"
+            "cmi:silicon_carbide"
         ]),
         create.deploying(Print.ENGINEERING, [
             Print.ENGINEERING,
@@ -105,7 +131,7 @@ ServerEvents.recipes((event) => {
         ]).itemAsHead("advanced_ae:quantum_processor_press"),
         create.deploying(Print.QUANTUM, [
             Print.QUANTUM,
-            "#forge:plates/superconducting_mercury"
+            "cmi:single_crystal_silicon"
         ]),
         create.deploying(Print.QUANTUM, [
             Print.QUANTUM,
