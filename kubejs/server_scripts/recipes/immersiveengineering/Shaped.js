@@ -14,17 +14,6 @@ ServerEvents.recipes((event) => {
 		C: "#forge:rods/wooden"
 	})
 
-	// 蓝图桌
-	kubejs.shaped("engineered_schematics:schematic_table_block", [
-		"AAA",
-		"BCD"
-	], {
-		A: "#forge:treated_wood_slab",
-		B: "#cmi:tables",
-		C: "#forge:chests",
-		D: "#forge:rods/cast_iron"
-	}).id("engineered_schematics:crafting/schematic_table")
-
 	// 炼油
 	kubejs.shaped("createdieselgenerators:pumpjack_head", [
 		"A A",

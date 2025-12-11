@@ -71,7 +71,6 @@ ServerEvents.tags("block", (event) => {
 		"steampowered",
 		"@createdeco",
 		"@kaleidoscope_cookery",
-		"@engineered_schematics",
 		"@farmersdelight",
 		"@ftbquests",
 		"@immersiveindustry",

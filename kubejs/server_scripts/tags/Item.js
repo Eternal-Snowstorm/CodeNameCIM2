@@ -354,8 +354,10 @@ ServerEvents.tags("item", (event) => {
 		.add("mekanism:hdpe_sheet")
 
 	event.get("vintageimprovements:curving_heads")
-		.add("mekanism:pellet_plutonium")
-		.add("mekanism:pellet_antimatter")
+		.add("ae2:calculation_processor_press")
+		.add("ae2:engineering_processor_press")
+		.add("ae2:logic_processor_press")
+		.add("advanced_ae:quantum_processor_press")
 
 	event.get("thermal:crafting/casts")
 		.add("thermalconstruct:chiller_gear_cast")

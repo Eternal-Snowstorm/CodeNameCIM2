@@ -85,7 +85,6 @@ ServerEvents.recipes((event) => {
 		"mekanism:processing/gold/slurry/dirty/from_ore",
 		"mekanism:processing/gold/slurry/clean",
 		"mynethersdelight:crafting/tnt_alt",
-		"engineered_schematics:crafting/recycle_schematic",
 		"thermal_extra:sticky_ball_to_paper",
 		"mekanism:paper",
 		"immersiveengineering:crafting/paper_from_sawdust",
@@ -135,7 +134,11 @@ ServerEvents.recipes((event) => {
 		"tiab:time_in_a_bottle",
 		"mekanism:metallurgic_infusing/alloy/atomic",
 		"thermal:compat/create/smelter_create_alloy_andesite_alloy",
-		"tconstruct:tools/materials/melting/plated_slimewood"
+		"tconstruct:tools/materials/melting/plated_slimewood",
+		"advanced_ae:logic_processor_chamber",
+		"advanced_ae:calculation_processor_chamber",
+		"advanced_ae:engineering_processor_chamber",
+		"advanced_ae:quantum_processor_chamber"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -207,7 +210,11 @@ ServerEvents.recipes((event) => {
 		"mekanism:tier_installer/elite",
 		"mekanism:tier_installer/ultimate",
 		"ad_astra:water_pump",
-		"@portality"
+		"@portality",
+		"ae2:printed_logic_processor",
+		"ae2:printed_calculation_processor",
+		"ae2:printed_engineering_processor",
+		"advanced_ae:printed_quantum_processor"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({
