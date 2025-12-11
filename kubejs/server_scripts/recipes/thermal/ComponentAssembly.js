@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 	addRecipe("cmi:incomplete_ultimate_control_circuit", [
 		"#forge:plates/refined_glowstone",
 		"#forge:alloys/ultimate",
-		"cmi:general_processor",
+		"advanced_ae:quantum_processor",
 		"cmi:flame_retardant_plastic"
 	])
 

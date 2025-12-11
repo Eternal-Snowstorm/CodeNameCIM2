@@ -13,8 +13,8 @@ StartupEvents.registry("item", (event) => {
 
 	addItem("single_crystal_silicon")
 		.texture(`${global.namespace}:item/material/single_crystal_silicon`)
-	addItem("general_processor")
-		.texture(`${global.namespace}:item/material/general_processor`)
+	// addItem("general_processor")
+	// 	.texture(`${global.namespace}:item/material/general_processor`)
 
 	// 黑石源质
 	addItem("blackstone_source_alpha")
@@ -161,8 +161,8 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:string")
 
 	// 通用电路板
-	addItem("printed_general_processor")
-		.texture(`${global.namespace}:item/material/printed_general_processor`)
+	// addItem("printed_general_processor")
+	// 	.texture(`${global.namespace}:item/material/printed_general_processor`)
 
 	// 活泼元素
 	addItem("reactive_element")

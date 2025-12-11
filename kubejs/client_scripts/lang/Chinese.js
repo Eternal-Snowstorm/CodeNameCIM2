@@ -108,8 +108,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("incomplete_scanning_module", "扫描模块(半成品)")
 	addItemLang("incomplete_scanner", "扫描器(半成品)")
 
-	addItemLang("general_processor", "通用处理器")
-	addItemLang("printed_general_processor", "通用电路板")
+	// addItemLang("general_processor", "通用处理器")
+	// addItemLang("printed_general_processor", "通用电路板")
 	addItemLang("music_disc_mechanism", "DontkillBelalus - Mechanism")
 
 	addItemLang("reactive_element", "活泼元素")

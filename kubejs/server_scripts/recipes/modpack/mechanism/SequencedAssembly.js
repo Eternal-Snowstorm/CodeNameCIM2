@@ -272,7 +272,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:ultimate_mekanism_mechanism", [
 		"cmi:ultimate_mekanism_mechanism_basement"
 	], [
-		create.deploying(iumm, [iumm, "cmi:general_processor"]),
+		create.deploying(iumm, [iumm, "advanced_ae:quantum_processor"]),
 		create.deploying(iumm, [iumm, "#forge:gears/chromeplated_steel"]),
 		create.deploying(ibmm, [ibmm, "cmi:mekanism_mechanism_part"]),
 	]).transitionalItem(iumm).loops(1)
@@ -356,7 +356,7 @@ ServerEvents.recipes((event) => {
 		create.deploying(icbm, [icbm, "ae2:logic_processor"]),
 		create.deploying(icbm, [icbm, "ae2:calculation_processor"]),
 		create.deploying(icbm, [icbm, "ae2:engineering_processor"]),
-		create.deploying(icbm, [icbm, "cmi:general_processor"]),
+		create.deploying(icbm, [icbm, "advanced_ae:quantum_processor"]),
 		create.deploying(icbm, [icbm, "cmi:mekanism_mechanism_part"])
 	]).transitionalItem(icpm).loops(1)
 

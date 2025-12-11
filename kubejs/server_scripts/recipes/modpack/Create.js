@@ -134,6 +134,7 @@ ServerEvents.recipes((event) => {
 	]).loops(1).transitionalItem("create:brass_casing")
 
 	// 通用处理器
+	/*
 	create.sequenced_assembly("cmi:general_processor", [
 		"#forge:gems/ruby"
 	], [
@@ -160,6 +161,7 @@ ServerEvents.recipes((event) => {
 			"immersiveengineering:wirecoil_redstone"
 		])
 	]).loops(1).transitionalItem("cmi:printed_general_processor")
+	*/
 
 	// ???
 	createaddition.charging("cmi:overcharged_alloy_ingot", [
