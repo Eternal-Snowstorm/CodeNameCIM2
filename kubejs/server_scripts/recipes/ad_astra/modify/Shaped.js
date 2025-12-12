@@ -218,7 +218,7 @@ ServerEvents.recipes((event) => {
 	for (let i = 0; i <= 3; i++) {
 		let j = i + 1
 		// 火箭鼻锥
-		kubejs.shaped(`2x cmi:tier_${j.toString()}_rocket_nose_cone`, [
+		kubejs.shaped(`cmi:tier_${j.toString()}_rocket_nose_cone`, [
 			" A ",
 			"ABA",
 			" A "
