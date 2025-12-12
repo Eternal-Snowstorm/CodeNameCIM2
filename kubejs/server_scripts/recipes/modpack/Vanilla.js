@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:stone",
 		B: "#create:mechanisms/gold",
 		C: "#create:mechanisms/stone",
-		D: "#forge:rosin",
+		D: "#forge:gems/charged_amethyst",
 		E: "#create:mechanisms/iron"
 	})
 

@@ -207,4 +207,37 @@ ServerEvents.recipes((event) => {
 		B: "#forge:storage_blocks/etrium",
 		C: "mekanism:steel_casing"
 	}).id("ad_astra:gravity_normalizer")
+
+	let metalTier = [
+		"tungsten_steel",
+		"desh",
+		"ostrum",
+		"calorite"
+	]
+
+	for (let i = 0; i <= 3; i++) {
+		let j = i = 1
+		// 火箭鼻锥
+		kubejs.shaped(`cmi:tier_${j.toString()}_rocket_nose_cone`,
+			[
+				" A ",
+				"ABA",
+				" A "
+			], {
+			A: `#forge:plates/${metalTier[i]}`,
+			B: `#create:mechanisms/tier_${j.toString()}_aviation`
+		})
+
+		// 火箭尾翼
+		kubejs.shaped(`cmi:tier_${j.toString()}_rocket_fin`,
+			[
+				" A ",
+				"BAB",
+				"A A"
+			], {
+			A: `#forge:plates/${metalTier[i]}`,
+			B: `#forge:rods/${metalTier[i]}`
+		})
+	}
+
 })

@@ -139,7 +139,9 @@ ServerEvents.recipes((event) => {
 		"advanced_ae:calculation_processor_chamber",
 		"advanced_ae:engineering_processor_chamber",
 		"advanced_ae:quantum_processor_chamber",
-		"advanced_ae:quantum_alloy_plate"
+		"advanced_ae:quantum_alloy_plate",
+		"ad_astra:rocket_nose_cone",
+		"ad_astra:rocket_fin"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
