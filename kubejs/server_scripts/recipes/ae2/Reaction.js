@@ -8,9 +8,17 @@ ServerEvents.recipes((event) => {
 		])
 		.fluids(addFluidInput("minecraft:water", 500))
 		.build()
+
 	/**
-	 * 
 	 * @param {object} output
+	 * @returns {
+	 * 	 {
+	 *   	items: function(object[]): object,
+	 *   	fluids: function(object[]): object,
+	 *   	energy: function(number): object,
+	 *   	build: function(): Internal.RecipesEventJS
+	 *   }
+	 * }
 	 */
 	function addRecipe(output) {
 		let json = {
@@ -19,18 +27,36 @@ ServerEvents.recipes((event) => {
 		}
 
 		return {
+			/**
+			 * @param {object[]} inputItems
+			 * @returns {object}
+			 */
 			items: function (inputItems) {
 				json.input_items = inputItems
 				return this
 			},
+
+			/**
+			 * @param {object[]} inputFluid
+			 * @returns {object}
+			 */
 			fluids: function (inputFluid) {
 				json.fluid = inputFluid
 				return this
 			},
+
+			/**
+			 * @param {number} energy
+			 * @returns {object}
+			 */
 			energy: function (energy) {
 				json.energy = energy
 				return this
 			},
+
+			/**
+			 * @returns {Internal.RecipesEventJS}
+			 */
 			build: function () {
 				return event.custom(json)
 			}
