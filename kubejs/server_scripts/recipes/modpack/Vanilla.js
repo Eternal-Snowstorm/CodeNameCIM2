@@ -292,6 +292,23 @@ ServerEvents.recipes((event) => {
 		D: "cmi:nature_mechanism"
 	}).id("naturescompass:natures_compass")
 
+	// 多方块搭建器
+	create.mechanical_crafting("mbtool:mbtool", [
+		" ABA ",
+		"CDEFA",
+		"   GH",
+		"    H"
+	], {
+		A: "#forge:plates/brass",
+		B: "create:electron_tube",
+		C: "#forge:gems/charged_amethyst",
+		D: "#forge:tools/wrench",
+		E: "create:empty_schematic",
+		F: "#create:mechanisms/precision",
+		G: "immersiveengineering:component_steel",
+		H: "createdieselgenerators:kelp_handle",
+	}).id("mbtool:mbtool")
+
 	// 结构指南针
 	kubejs.shaped("explorerscompass:explorerscompass", [
 		"AAA",
@@ -323,4 +340,5 @@ ServerEvents.recipes((event) => {
 			"4x #forge:gravel"
 		]).id(`minecraft:${colour}_concrete_powder`)
 	})
+
 })

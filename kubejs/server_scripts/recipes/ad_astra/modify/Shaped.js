@@ -229,10 +229,10 @@ ServerEvents.recipes((event) => {
 		})
 
 		// 火箭尾翼
-		kubejs.shaped(`cmi:tier_${j.toString()}_rocket_fin`,
+		kubejs.shaped(`2x cmi:tier_${j.toString()}_rocket_fin`,
 			[
-				" A ",
-				"BAB",
+				" B ",
+				"ABA",
 				"A A"
 			], {
 			A: `#forge:plates/${metalTier[i]}`,
