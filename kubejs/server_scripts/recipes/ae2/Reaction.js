@@ -1,14 +1,52 @@
 ServerEvents.recipes((event) => {
+	// Example(Not tested)
+	addRecipe(setOutput("minecraft:diamond", 3, "item"))
+		.energy(114514)
+		.items([
+			addItemInput("#forge:ingots/iron", 3),
+			addItemInput("#forge:rods/gold", 1)
+		])
+		.fluids(addFluidInput("minecraft:water", 500))
+		.build()
 	/**
 	 * 
-	 * @param {Internal.FluidStackJS} fluid 
+	 * @param {object} output
+	 */
+	function addRecipe(output) {
+		let json = {
+			type: "advanced_ae:reaction",
+			output: output
+		}
+
+		return {
+			items: function (inputItems) {
+				json.input_items = inputItems
+				return this
+			},
+			fluids: function (inputFluid) {
+				json.fluid = inputFluid
+				return this
+			},
+			energy: function (energy) {
+				json.energy = energy
+				return this
+			},
+			build: function () {
+				return event.custom(json)
+			}
+		}
+	}
+
+	/**
+	 * 
+	 * @param {Internal.FluidStackJS_} fluid 
 	 * @param {number} amount 
 	 * @returns 
 	 */
 	function addFluidInput(fluid, amount) {
 		return {
 			fluidStack: {
-				FluidName: fluid,
+				FluidName: Fluid.of(fluid).toJson(),
 				Amound: amount
 			}
 		}
@@ -27,17 +65,28 @@ ServerEvents.recipes((event) => {
 		}
 	}
 
-	// event.custom({
-	// 	type: "advanced_ae:reaction",
-	// 	energy: 20000,
-	// 	fluid: "",
-	// 	input_items: [
-	// 		addItemInput()
-	// 	],
-	// 	output: {
-	// 		"#": 1000,
-	// 		"#c": "ae2:f",
-	// 		"id": IngrUtils.getFirstItemId()
-	// 	}
-	// })
+	/**
+	 * 
+	 * @param {Internal.FluidStackJS_ | Internal.Ingredient_} id 输出id
+	 * @param {number} count 数量 || 流体量
+	 * @param {"item" | "fluid"} type 输出类型
+	 * @returns 
+	 */
+	function setOutput(id, count, type) {
+		let amount = count
+		let fluid = id
+		if (type === "item") {
+			return {
+				"#c": "ae2:i",
+				"id": IngrUtils.getFirstItemId(id),
+				"#": count
+			}
+		} else if (type === "fluid") {
+			return {
+				"#c": "ae2:f",
+				"id": Fluid.of(fluid).toJson(),
+				"#": amount
+			}
+		}
+	}
 })
