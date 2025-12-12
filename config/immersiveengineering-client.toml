@@ -25,7 +25,7 @@ stencilBufferEnabled = true
 earDefenders_SoundBlacklist = []
 #Use VBOs to render certain blocks. This is significantly faster than the usual rendering,
 #but may not work correctly with visual effects from other mods
-enableVBO = true
+enableVBO = false
 
 #Options to set the RGB color of all IE wire types
 [wire_colors]
