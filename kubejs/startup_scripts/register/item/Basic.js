@@ -76,10 +76,10 @@ StartupEvents.registry("item", (event) => {
 		.glow(true)
 
 	// 石板
-	addItem("stone_plate")
-		.texture(`${global.namespace}:item/material/stone_plate`)
-		.tag("forge:plates")
-		.tag("forge:plates/stone")
+	// addItem("stone_plate")
+	// 	.texture(`${global.namespace}:item/material/stone_plate`)
+	// 	.tag("forge:plates")
+	// 	.tag("forge:plates/stone")
 
 	// 木屑加工系列
 	addItem("wood_chip_briquette")

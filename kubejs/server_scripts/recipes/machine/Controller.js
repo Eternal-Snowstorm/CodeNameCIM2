@@ -44,11 +44,11 @@ ServerEvents.recipes((event) => {
 		"CDC",
 		"AEA"
 	], {
-		A: "cmi:stone_plate",
-		B: "cmi:computer_component",
+		A: "#forge:plates/aluminum",
+		B: "cmi:empty_cell",
 		C: "cmi:overcharged_alloy_ingot",
-		D: "cmi:antimatter_mechanism",
-		E: "mekanism:ultimate_energy_cube"
+		D: "#create:mechanisms/smart",
+		E: "#cmi:batteries"
 	}).id("cmi:flash_disk_writer")
 
 	// 已编程闪存盘

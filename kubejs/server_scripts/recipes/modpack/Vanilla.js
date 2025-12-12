@@ -3,19 +3,15 @@ ServerEvents.recipes((event) => {
 
 	// 催生器
 	kubejs.shaped("cmi:accelerator", [
-		"ABC",
-		"DEF",
-		"GHI"
+		"ABA",
+		"CDC",
+		"AEA"
 	], {
-		A: "cmi:wooden_mechanism",
-		B: "cmi:stone_mechanism",
-		C: "cmi:iron_mechanism",
-		D: "cmi:andesite_mechanism",
-		F: "cmi:copper_mechanism",
-		G: "cmi:photosensitive_mechanism",
-		H: "cmi:gold_mechanism",
-		I: "cmi:nature_mechanism",
-		E: "cmi:stone_plate"
+		A: "#forge:stone",
+		B: "#create:mechanisms/gold",
+		C: "#create:mechanisms/stone",
+		D: "#forge:rosin",
+		E: "#create:mechanisms/iron"
 	})
 
 	// 桶
@@ -128,10 +124,10 @@ ServerEvents.recipes((event) => {
 	]).damageIngredient("#forge:hammer", 1)
 
 	// 石板
-	kubejs.shapeless("cmi:stone_plate", [
-		"2x #forge:stone",
-		"#forge:hammer"
-	]).damageIngredient("#forge:hammer", 1)
+	// kubejs.shapeless("cmi:stone_plate", [
+	// 	"2x #forge:stone",
+	// 	"#forge:hammer"
+	// ]).damageIngredient("#forge:hammer", 1)
 
 	// 草绳
 	kubejs.shapeless("cmi:grass_string", [
