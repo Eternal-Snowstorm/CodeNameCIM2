@@ -53,9 +53,6 @@ ServerEvents.recipes((event) => {
 				return this
 			},
 
-			/**
-			 * @returns {Internal.RecipesEventJS}
-			 */
 			build: function () {
 				return event.custom(json)
 			}
