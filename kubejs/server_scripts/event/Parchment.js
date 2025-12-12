@@ -49,9 +49,8 @@ ItemEvents.rightClicked((event) => {
 				0
 			)
 		}
-
 		// 调用动画
-		useAnimation(Item.of("cmi:parchment"))
+		CMICore.useTotemAnimation(Item.of("cmi:parchment"))
 		// 挥手
 		player.swing()
 		// 消耗物品

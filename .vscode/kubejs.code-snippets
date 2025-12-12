@@ -1,6 +1,6 @@
 {
 	"Recipes Event Template": {
-		"prefix": "#Recipes",
+		"prefix": "#recipes",
 		"body": [
 			"ServerEvents.recipes((event) => {",
 			"    let {} = event.recipes",
@@ -8,49 +8,49 @@
 		],
 	},
 	"ItemTags Event Template": {
-		"prefix": "#ItemTags",
+		"prefix": "#item_tags",
 		"body": [
 			"ServerEvents.tags(\"item\", (event) => {",
 			"})"
 		],
 	},
 	"BlockTags Event Template": {
-		"prefix": "#BlockTags",
+		"prefix": "#block_tags",
 		"body": [
 			"ServerEvents.tags(\"block\", (event) => {",
 			"})"
 		],
 	},
 	"FluidTags Event Template": {
-		"prefix": "#FluidTags",
+		"prefix": "#fluid_tags",
 		"body": [
 			"ServerEvents.tags(\"fluid\", (event) => {",
 			"})"
 		],
 	},
 	"Registry Block Template": {
-		"prefix": "#RegisterBlock",
+		"prefix": "#register_block",
 		"body": [
 			"StartupEvents.registry(\"block\", (event) => {",
 			"})"
 		]
 	},
 	"Registry Item Template": {
-		"prefix": "#RegisterItem",
+		"prefix": "#register_item",
 		"body": [
 			"StartupEvents.registry(\"item\", (event) => {",
 			"})"
 		]
 	},
 	"Registry Fluid Template": {
-		"prefix": "#RegisterFluid",
+		"prefix": "#register_fluid",
 		"body": [
 			"StartupEvents.registry(\"fluid\", (event) => {",
 			"})"
 		]
 	},
 	"Modify Creative Tab": {
-		"prefix": "#ModifyCreativeTab",
+		"prefix": "#modify_creative_tab",
 		"body": [
 			"StartupEvents.modifyCreativeTab(\"\", (event) => {",
 			"})"
