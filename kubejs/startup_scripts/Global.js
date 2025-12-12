@@ -196,7 +196,8 @@ global.metalGroup = [
 	"scarlet_neodymium",
 	"azure_neodymium",
 	"shadow_steel",
-	"refined_radiance"
+	"refined_radiance",
+	"quantum_alloy"
 ]
 /**
  * 各金属的熔点(单位C°)

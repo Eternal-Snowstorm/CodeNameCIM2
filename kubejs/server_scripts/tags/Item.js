@@ -393,6 +393,12 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:ingots/andesite")
 		.add("create:andesite_alloy")
 
+	event.get("forge:ingots/quantum_alloy")
+		.add("advanced_ae:quantum_alloy")
+
+	event.get("forge:plates/quantum_alloy")
+		.add("advanced_ae:quantum_alloy_plate")
+
 	// 催生晶体
 	event.get("cmi:crystals")
 		.add("minecraft:amethyst_shard")

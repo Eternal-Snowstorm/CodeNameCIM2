@@ -138,7 +138,8 @@ ServerEvents.recipes((event) => {
 		"advanced_ae:logic_processor_chamber",
 		"advanced_ae:calculation_processor_chamber",
 		"advanced_ae:engineering_processor_chamber",
-		"advanced_ae:quantum_processor_chamber"
+		"advanced_ae:quantum_processor_chamber",
+		"advanced_ae:quantum_alloy_plate"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
