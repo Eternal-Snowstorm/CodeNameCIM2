@@ -305,7 +305,7 @@ ServerEvents.recipes((event) => {
 		D: "#forge:tools/wrench",
 		E: "create:empty_schematic",
 		F: "#create:mechanisms/precision",
-		G: "immersiveengineering:component_steel",
+		G: "immersiveengineering:gunpart_hammer",
 		H: "createdieselgenerators:kelp_handle",
 	}).id("mbtool:mbtool")
 

@@ -118,7 +118,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.WRENCH_PICKUP)
 
 	// 辐射沙
-	addBlock("radsand")
+	addBlock("radsand", "falling")
 		.textureAll(`${global.namespace}:block/radsand`)
 		.soundType(SoundType.SAND)
 		.hardness(0.5)
