@@ -228,8 +228,7 @@ ServerEvents.recipes((event) => {
 		})
 
 		// 火箭尾翼
-		kubejs.shaped(`2x cmi:tier_${j.toString()}_rocket_fin`,
-			[
+		kubejs.shaped(`2x cmi:tier_${j.toString()}_rocket_fin`,[
 				" B ",
 				"ABA",
 				"A A"
