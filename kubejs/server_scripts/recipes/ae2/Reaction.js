@@ -10,14 +10,7 @@ ServerEvents.recipes((event) => {
 
 	/**
 	 * @param {object} output
-	 * @returns {
-	 * 	 {
-	 *   	items: function(object[]): object,
-	 *   	fluids: function(object[]): object,
-	 *   	energy: function(number): object,
-	 *   	build: function(): Internal.RecipesEventJS
-	 *   }
-	 * }
+	 * @returns 
 	 */
 	function addRecipe(output) {
 		let json = {
@@ -33,12 +26,17 @@ ServerEvents.recipes((event) => {
 		return {
 			/**
 			 * @param {object[]} inputItems
-			 * @returns {object}
 			 */
 			items: function (inputItems) {
 				json.input_items = inputItems
 				return this
 			},
+			/**
+			 * 
+			 * @param {Internal.FluidStackJS_} name 
+			 * @param {number} amount 
+			 * @returns 
+			 */
 			fluids: function (name, amount) {
 				json.fluid.fluidStack = {
 					Amount: amount,
@@ -49,16 +47,12 @@ ServerEvents.recipes((event) => {
 
 			/**
 			 * @param {number} energy
-			 * @returns {object}
 			 */
 			energy: function (energy) {
 				json.energy = energy
 				return this
 			},
 
-			/**
-			 * @returns {Internal.RecipesEventJS}
-			 */
 			build: function () {
 				return event.custom(json)
 			}
