@@ -3,10 +3,9 @@ ServerEvents.recipes((event) => {
 	addRecipe(setOutput("minecraft:diamond", 3, "item"))
 		.energy(114514)
 		.items([
-			addItemInput("#forge:ingots/iron", 3),
-			addItemInput("#forge:rods/gold", 1)
+			addItemInput("#forge:coal", 3)
 		])
-		.fluids(addFluidInput("minecraft:water", 500))
+		.fluids("minecraft:water", 500)
 		.build()
 
 	/**
@@ -23,7 +22,12 @@ ServerEvents.recipes((event) => {
 	function addRecipe(output) {
 		let json = {
 			type: "advanced_ae:reaction",
-			output: output
+			output: output,
+			fluid: {
+				fluidStack: {
+				}
+			},
+			input_items: []
 		}
 
 		return {
@@ -35,13 +39,11 @@ ServerEvents.recipes((event) => {
 				json.input_items = inputItems
 				return this
 			},
-
-			/**
-			 * @param {object[]} inputFluid
-			 * @returns {object}
-			 */
-			fluids: function (inputFluid) {
-				json.fluid = inputFluid
+			fluids: function (name, amount) {
+				json.fluid.fluidStack = {
+					Amount: amount,
+					FluidName: name
+				}
 				return this
 			},
 
@@ -86,8 +88,8 @@ ServerEvents.recipes((event) => {
 	 */
 	function addItemInput(ingredient, count) {
 		return {
-			ingredient: Ingredient.of(ingredient).toJson(),
-			amount: count
+			amount: count,
+			ingredient: Ingredient.of(ingredient).toJson()
 		}
 	}
 
