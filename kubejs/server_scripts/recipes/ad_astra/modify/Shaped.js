@@ -218,12 +218,11 @@ ServerEvents.recipes((event) => {
 	for (let i = 0; i <= 3; i++) {
 		let j = i + 1
 		// 火箭鼻锥
-		kubejs.shaped(`cmi:tier_${j.toString()}_rocket_nose_cone`,
-			[
-				" A ",
-				"ABA",
-				" A "
-			], {
+		kubejs.shaped(`cmi:tier_${j.toString()}_rocket_nose_cone`, [
+			" A ",
+			"ABA",
+			" A "
+		], {
 			A: `#forge:plates/${metalTier[i]}`,
 			B: `#create:mechanisms/tier_${j.toString()}_aviation`
 		})
