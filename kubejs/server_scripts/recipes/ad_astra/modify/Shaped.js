@@ -215,6 +215,7 @@ ServerEvents.recipes((event) => {
 		"calorite"
 	]
 
+	/*
 	for (let i = 0; i <= 3; i++) {
 		let j = i = 1
 		// 火箭鼻锥
@@ -239,5 +240,5 @@ ServerEvents.recipes((event) => {
 			B: `#forge:rods/${metalTier[i]}`
 		})
 	}
-
+	*/
 })
