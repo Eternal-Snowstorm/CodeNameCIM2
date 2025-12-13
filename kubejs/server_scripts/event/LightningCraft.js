@@ -6,8 +6,8 @@ EntityEvents.spawned("minecraft:lightning_bolt", (event) => {
 
 	/**
 	 * 函数封装
-	 * @param {Internal.Item_} output 输出
-	 * @param {Internal.Item_} input 输入
+	 * @param {Internal.ItemStack_} output 输出
+	 * @param {Internal.ItemStack_} input 输入
 	 */
 	function addLightningCraft(output, input) {
 		let targets = level.getEntitiesWithin(AABB.of(

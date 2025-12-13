@@ -81,6 +81,8 @@ replay*
 
 # Config
 /config/*
+!/config/cmi*
+!/config/nebula*
 !/config/alexscaves_biome_generation
 !/config/openloader
 !/config/blockswap
@@ -89,7 +91,6 @@ replay*
 !/config/ftbquests/
 !/config/jade/
 !/config/jei/
-!/config/cmi*
 !/config/immersiveengineering-client.toml
 !/config/ad_astra.jsonc
 !/config/fml.toml
