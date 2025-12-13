@@ -4,7 +4,13 @@ ItemEvents.rightClicked((event) => {
 
 	if (player.mainHandItem === canTriggerItem && player.inWater) {
 		player.tell(Component.translatable(`sea.${global.namespace}.search`))
-		player.potionEffects.add("minecraft:glowing", 30, 255, false, false)
+		player.potionEffects.add(
+			"minecraft:glowing",
+			30,
+			255,
+			false,
+			false
+		)
 		player.potionEffects.clear()
 		level.playSound(
 			null,
