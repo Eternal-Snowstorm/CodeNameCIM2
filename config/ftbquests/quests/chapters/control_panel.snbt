@@ -235,7 +235,7 @@
 			y: -10.0d
 		}
 		{
-			click: "file:config/cmi/cmi.bat"
+			click: "file:config/nebula/cmi.bat"
 			height: 1.0d
 			hover: ["CMI"]
 			image: "cmi:textures/images/control_panel/cmi.png"

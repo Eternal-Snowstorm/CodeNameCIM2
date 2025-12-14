@@ -4,13 +4,13 @@
 
 **第一条** 本协议适用于所有参与`Create: Mechanism and Innovation`(以下简称`CMI`)项目的开发人员及贡献者
 
-**第二条** 项目主理人(Maintainer)`Unknown_Entity_`拥有版本迭代的最终决策权和协议解释权
+**第二条** 项目主理人(Maintainer)`Re_Construction`拥有版本迭代的最终决策权和协议解释权
 
 ## 第二章 版本管理
 
  - `CMI`版本号码由大中小版本号组成
 
- - `CMI`大、中版本号码由主创`Unknown_Entity_`进行规定
+ - `CMI`大、中版本号码由主创`Re_Construction`进行规定
 
  - 版本号须在[**Global.js**](kubejs/startup_scripts/Global.js)的`global.modPackVersion`显示声明
 
