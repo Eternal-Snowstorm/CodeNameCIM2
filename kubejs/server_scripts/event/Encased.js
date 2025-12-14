@@ -35,11 +35,15 @@ NetworkEvents.dataReceived("isPlayerAltDown", (event) => {
 	if (BeltCasing.some((i) => {
 		return i == player.mainHandItem.id
 	})) {
-		player.setStatusMessage(Component.translatable("message.cmi.chainedcasing").green().bold())
+		player.setStatusMessage(Component.translatable("message.cmi.chainedcasing")
+			.green()
+			.bold())
 	}
 
 	if (player.mainHandItem.id == "create:wrench") {
-		player.setStatusMessage(Component.translatable("message.cmi.chaineduncasing").red().bold())
+		player.setStatusMessage(Component.translatable("message.cmi.chaineduncasing")
+			.red()
+			.bold())
 	}
 })
 

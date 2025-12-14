@@ -72,7 +72,6 @@ PlayerEvents.loggedIn((event) => {
 	* "logs/kubejs/server.log"
 	* 打印出来, 更换Tag在Ingredient.of()内更换
 	*/
-
 	for (let i = 0; i < global.debugUserName.length; i++) {
 		if (player.username === global.debugUserName[i]) {
 			// 遍历Tag
