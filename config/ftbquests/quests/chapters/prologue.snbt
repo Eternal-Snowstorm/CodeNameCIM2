@@ -134,7 +134,7 @@
 		}
 		{
 			description: [
-				"[主创] Unknown_Entity_"
+				"[主创] Re_Construction"
 				"[程序] 逐日炎雪_中微子"
 				"[程序] 榛名柒月"
 				"[程序] 随机构件"
@@ -147,7 +147,7 @@
 				"[任务] Decahydroflowey"
 			]
 			disable_toast: true
-			icon: "cmi:unknown_entity_"
+			icon: "cmi:re_construction"
 			id: "04615C350964977A"
 			rewards: [
 				{

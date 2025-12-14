@@ -77,7 +77,7 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.metals`))
 
 	addCreativeTab("developers")
-		.icon(() => Item.of("cmi:unknown_entity_"))
+		.icon(() => Item.of("cmi:re_construction"))
 		.content(() => Ingredient.of("#cmi:dev_doll").itemIds)
 		.displayName(Component.translatable(`itemGroup.${global.namespace}.developers`))
 })

@@ -34,7 +34,7 @@ StartupEvents.registry("block", (event) => {
 
 	// region Main Developer
 	// UE
-	addDeveloperDoll("unknown_entity_", "slim")
+	addDeveloperDoll("re_construction", "slim")
 
 	// 柒月
 	addDeveloperDoll("qi_month", "slim")

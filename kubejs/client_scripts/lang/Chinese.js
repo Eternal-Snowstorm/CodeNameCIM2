@@ -177,7 +177,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("broken_tracking_array", "损坏的追踪阵列")
 	addBlockLang("broken_modem", "损坏的调制解调器")
 
-	addBlockLang("unknown_entity_", "主创-Unknown_Entity_")
+	addBlockLang("re_construction", "主创-Re_Construction")
 	addBlockLang("aleegos", "吉祥物-阿列戈斯")
 	addBlockLang("qi_month", "美工&程序-柒月")
 	addBlockLang("vechni_metel", "策划&程序-逐日炎雪_中微子")
