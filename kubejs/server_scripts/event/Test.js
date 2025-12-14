@@ -55,38 +55,3 @@ function createUI(player) {
 LDLibUI.block("cmi:qi_month", (event) => {
 	event.success(createUI(event.player))
 })
-
-ItemEvents.rightClicked((event) => {
-	let { item, player } = event
-
-	if (item === "cmi:tier_1_aviation_complete_cell") {
-		player.swing()
-		ItemUIFactory.INSTANCE.openUI(player, event.hand, "cmi:ore")
-	}
-})
-
-function oreResourceUI() {
-	let group = new WidgetGroup()
-	let imageGroup = new ImageWidget()
-
-	const UI_WIDTH = (416 / 2) + (416 / 8)
-	const UI_HEIGHT = (512 / 2) + (512 / 8)
-
-	let mainTexturePath = "cmi:textures/gui/cell/tier_1.png"
-	let mainTexture = new ResourceTexture(
-		mainTexturePath,
-		0,
-		0,
-		1,
-		1
-	)
-
-	group.setSize(UI_WIDTH, UI_HEIGHT)
-	group.setBackground(mainTexture)
-
-	return group
-}
-
-LDLibUI.item("cmi:ore", (event) => {
-	event.success(oreResourceUI())
-})
