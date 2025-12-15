@@ -8,19 +8,19 @@
 // ItemEvents.armorTierRegistry((event) => {
 // 	event.add(`${namespace}:bronze`, (tier) => {
 // 		// 耐久系数
-// 		tier.setDurabilityMultiplier(100)
+// 		tier.durabilityMultiplier = 100
 // 		// 每件盔甲的保护系数, 分别是靴子, 裤子, 胸甲, 头盔
-// 		tier.setSlotProtections([1, 2, 3, 4])
+// 		tier.slotProtections = [1, 2, 3, 4]
 // 		// 盔甲韧性
-// 		tier.setToughness(1)
+// 		tier.toughness = 1
 // 		// 击退保护
-// 		tier.setKnockbackResistance(0.1)
+// 		tier.knockbackResistance = -0.1
 // 		// 附魔等级
-// 		tier.setEnchantmentValue(6)
+// 		tier.enchantmentValue = 6
 // 		// 修复材料
-// 		tier.setRepairIngredient("#forge:ingots/bronze")
+// 		tier.repairIngredient = "#forge:ingots/bronze"
 // 		// 穿戴音效
-// 		tier.setEquipSound("minecraft:item.armor.equip_iron")
+// 		tier.equipSound = "minecraft:item.armor.equip_iron"
 // 	})
 // })
 
@@ -43,7 +43,7 @@
 // 		]
 // 		armorParts.forEach((type) => {
 // 			return event.create(`${namespace}:${name}_${type}`, type)
-// 				.tier(tier)
+// 				.tier(name)
 // 		})
 // 	}
 
