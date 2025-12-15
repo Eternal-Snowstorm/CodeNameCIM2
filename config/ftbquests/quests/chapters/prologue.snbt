@@ -134,7 +134,7 @@
 		}
 		{
 			description: [
-				"[主创] Re_Construction"
+				"[主创] Unknown_Entity_"
 				"[程序] 逐日炎雪_中微子"
 				"[程序] 榛名柒月"
 				"[程序] 随机构件"
@@ -147,7 +147,7 @@
 				"[任务] Decahydroflowey"
 			]
 			disable_toast: true
-			icon: "cmi:re_construction"
+			icon: "cmi:unknown_entity_"
 			id: "04615C350964977A"
 			rewards: [
 				{
@@ -175,6 +175,8 @@
 		{
 			description: [
 				"对于魔改包玩家来说,本整合包的魔改程度可能还不够高."
+				"因为这个整合包还在较为早期的测试阶段,很多内容(尤其是从MEK开始的内容)还没做完."
+				"也请各位玩家见谅qwq"
 				""
 				"任务里的产线设计灵感来源于PVZ2早期的迷宫地图."
 			]

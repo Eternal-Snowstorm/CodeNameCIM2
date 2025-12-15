@@ -31,8 +31,8 @@
 				type: "item"
 			}]
 			title: "聚烯烃板"
-			x: -11.0d
-			y: 0.5d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6D5194366D20F9B9"]
@@ -56,8 +56,8 @@
 				title: "不锈耐酸钢锭"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -2.5d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -81,8 +81,8 @@
 				item: "mekanism:steel_casing"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -1.0d
+			x: -5.0d
+			y: -1.5d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -104,8 +104,8 @@
 				title: "钒锭"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -0.5d
+			x: -6.5d
+			y: -2.0d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -127,8 +127,8 @@
 				title: "锇板"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -1.5d
+			x: -6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -155,8 +155,8 @@
 				title: "基础控制电路"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.5d
+			x: -1.5d
+			y: -0.75d
 		}
 		{
 			dependencies: ["712549587C271819"]
@@ -171,7 +171,7 @@
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -3.0d
 			y: -1.0d
 		}
 		{
@@ -187,8 +187,8 @@
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.5d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0B7A8B7B0797880A"]
@@ -203,8 +203,8 @@
 				item: "mekanism:energized_smelter"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.0d
+			x: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0B7A8B7B0797880A"]
@@ -219,8 +219,8 @@
 				item: "mekanism:chemical_injection_chamber"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 2.0d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0B7A8B7B0797880A"]
@@ -235,8 +235,8 @@
 				item: "mekanism:purification_chamber"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 2.5d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6A8497E9E3A78756"]
@@ -258,8 +258,8 @@
 				title: "灌注合金"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -2.0d
+			x: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4398FB5BD99FACF6"]
@@ -281,8 +281,8 @@
 				title: "强化合金"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -1.5d
+			x: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -307,8 +307,8 @@
 				title: "原子合金"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.0d
+			x: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6A8497E9E3A78756"]
@@ -330,8 +330,8 @@
 				title: "强化黑曜石粉"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.0d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0B7A8B7B0797880A"]
@@ -346,8 +346,8 @@
 				item: "mekanism:crusher"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 3.0d
+			x: -1.5d
+			y: 1.0d
 		}
 	]
 	title: "通用构件"

@@ -5,15 +5,25 @@
 	group: "65AEEF30E0964DD3"
 	icon: "cmi:smart_mechanism"
 	id: "3EB9EC950A9527ED"
-	images: [{
-		height: 33.54d
-		image: "cmi:textures/images/background/smart.png"
-		rotation: 0.0d
-		width: 83.64d
-		x: -3.0d
-		y: -1.0d
-	}]
-	order_index: 18
+	images: [
+		{
+			height: 33.54d
+			image: "cmi:textures/images/background/smart.png"
+			rotation: 0.0d
+			width: 83.64d
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "supplementaries:block/cannon_arrow"
+			rotation: 0.0d
+			width: 1.0d
+			x: -19.142857142857125d
+			y: -3.5714285714285836d
+		}
+	]
+	order_index: 17
 	quest_links: [ ]
 	quests: [
 		{

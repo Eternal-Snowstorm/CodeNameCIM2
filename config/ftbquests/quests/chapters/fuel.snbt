@@ -17,15 +17,13 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "gear"
-			size: 2.0d
 			subtitle: "来看看有什么好的燃料?"
 			tasks: [{
 				id: "5E01C3C84D5948D9"
 				title: "燃料?"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: 0.5d
 		}
 		{
@@ -48,8 +46,8 @@
 				title: "原木"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["55952D9B9D8E8F21"]
@@ -65,8 +63,8 @@
 				item: "createdieselgenerators:wood_chip"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4930FB8565659CF5"]
@@ -76,14 +74,14 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "辊压一次"
+			subtitle: "压缩一次"
 			tasks: [{
 				id: "7784C7233147A465"
 				item: "cmi:wood_chip_briquette"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.0d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5A90B92B1CCF14B8"]
@@ -99,8 +97,8 @@
 				item: "cmi:densely_packed_wood_chip_briquette"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["727E544121C1E389"]
@@ -110,14 +108,14 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "最后和杂酚油一起再压一次"
+			subtitle: "和杂酚油一起再压一次"
 			tasks: [{
 				id: "762658767AEED461"
 				item: "cmi:creosote_wood_chip_briquette"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 2.0d
+			x: 11.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["55952D9B9D8E8F21"]
@@ -140,8 +138,8 @@
 				title: "木炭"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -0.5d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0CE693D306C1B691"]
@@ -165,11 +163,12 @@
 				type: "item"
 			}]
 			title: "木炭粉"
-			x: 5.5d
-			y: 0.0d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2D245A409C2C190B"]
+			description: ["泥炭块只会在红树林沼泽和沼泽群系生成，挖掘时掉落的泥炭数量受工具的时运效果影响"]
 			id: "7AC1116B656361E6"
 			rewards: [
 				{
@@ -205,11 +204,14 @@
 				title: "泥炭"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.0d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["0CE693D306C1B691"]
+			dependencies: [
+				"0CE693D306C1B691"
+				"32D57938C24F3E48"
+			]
 			description: ["煤炭也可以烧成焦炭"]
 			id: "12FAE452591719C6"
 			rewards: [{
@@ -230,8 +232,20 @@
 				title: "焦炭"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.0d
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			id: "32D57938C24F3E48"
+			subtitle: "燃烧时间是木炭的二倍"
+			tasks: [{
+				id: "1DC3AD319AD97070"
+				item: "minecraft:coal"
+				title: "煤炭"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
 		}
 	]
 	title: "燃料"
