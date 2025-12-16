@@ -11,7 +11,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["27A18EEBBE063B43"]
 			description: [
 				"Q: 我要是出生在沙漠咋办？"
 				"A: 重开吧."
@@ -37,95 +36,46 @@
 				title: "原木"
 				type: "item"
 			}]
-			title: "万恶之源"
-			x: -5.5d
-			y: -1.5d
+			title: "要致富，___"
+			x: -6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["18237D913486FE33"]
-			icon: "minecraft:oak_planks"
-			id: "77E939643ECBC35D"
-			rewards: [{
-				id: "66001D2A2D7F63F7"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "71825456C60860A5"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:planks"
-					}
-				}
-				title: "木板"
-				type: "item"
-			}]
-			title: "木板"
-			x: -3.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["77E939643ECBC35D"]
-			id: "219A962B82333395"
-			rewards: [{
-				id: "71225F6C3EA4BCEB"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "不是棍木"
-			tasks: [{
-				id: "7F9158854E4B0E49"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:rods/wooden"
-					}
-				}
-				title: "木棍"
-				type: "item"
-			}]
-			title: "木棍"
-			x: -3.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["77E939643ECBC35D"]
 			id: "0950E73B864090F0"
 			rewards: [{
 				id: "4E86B94E0C604702"
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "不是圆石工作台"
+			subtitle: "它的重要性无需多言"
 			tasks: [{
 				id: "6F95F79F0C6650AB"
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
 			title: "工作台"
-			x: -2.5d
-			y: -1.5d
+			x: -4.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["219A962B82333395"]
+			dependencies: ["18237D913486FE33"]
 			id: "29624F942DC7CC08"
 			rewards: [{
 				id: "593610C7A7A10CC1"
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "用来手搓部件"
 			tasks: [{
 				count: 4L
 				id: "6F090051AAF62190"
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			title: "用来搓部件"
-			x: -3.5d
-			y: 0.5d
+			title: "空白模具"
+			x: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["29624F942DC7CC08"]
@@ -142,7 +92,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "匠魂开始"
+			subtitle: "匠魂伊始"
 			tasks: [
 				{
 					id: "51B80491226B5764"
@@ -155,8 +105,9 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: 1.5d
+			title: "工匠必备"
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["005CD7BF1218DD20"]
@@ -188,18 +139,22 @@
 					type: "advancement"
 				}
 			]
-			subtitle: "可以查看所有的材料数据"
+			subtitle: "可以查看所有的材料及工具数据"
 			tasks: [{
 				id: "726B99C8AA64D96B"
 				item: "tconstruct:encyclopedia"
 				type: "item"
 			}]
 			title: "知识扩充"
-			x: -3.5d
-			y: 2.5d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["2F1D496A9B588220"]
+			dependencies: [
+				"2F1D496A9B588220"
+				"0DB45287C4FF724B"
+				"3B35EDE8B923177A"
+			]
 			id: "414EEE72A59CEE7E"
 			rewards: [{
 				id: "7744CAAADE6B57E8"
@@ -212,8 +167,8 @@
 				item: "tconstruct:grout"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -0.5d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -231,8 +186,8 @@
 				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.5d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -265,8 +220,8 @@
 				item: "cmi:stone_mechanism"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.5d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -274,6 +229,7 @@
 				"2AEF0BF597FF0E36"
 				"21117B9D2DEA67D4"
 			]
+			icon: "tconstruct:seared_melter"
 			id: "749E2F97A546138F"
 			rewards: [
 				{
@@ -287,11 +243,6 @@
 					item: "tconstruct:ingot_cast"
 					team_reward: true
 					type: "item"
-				}
-				{
-					id: "0E9BF324F3C83991"
-					type: "xp"
-					xp: 100
 				}
 			]
 			shape: "gear"
@@ -308,9 +259,24 @@
 					item: "tconstruct:seared_heater"
 					type: "item"
 				}
+				{
+					id: "7A5EEF8DCBCF15A7"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "1B6517EFDB6D65FF"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "6041E7ACFFE304D9"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
 			]
-			x: -0.5d
-			y: 2.5d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0DB45287C4FF724B"]
@@ -326,8 +292,8 @@
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.5d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0950E73B864090F0"]
@@ -350,8 +316,8 @@
 				type: "checkmark"
 			}]
 			title: "铲子"
-			x: -1.5d
-			y: -2.0d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1270086FA79438E4"]
@@ -376,14 +342,11 @@
 				type: "item"
 			}]
 			title: "黏土"
-			x: -0.5d
-			y: -1.5d
+			x: 0.0d
+			y: -4.0d
 		}
 		{
-			dependencies: [
-				"2F1D496A9B588220"
-				"7C14A1CC724511CB"
-			]
+			dependencies: ["7C14A1CC724511CB"]
 			id: "79C36E5EB68E7476"
 			rewards: [{
 				id: "0D12F5110DF2884F"
@@ -395,11 +358,15 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -1.5d
+			x: 4.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["79C36E5EB68E7476"]
+			dependencies: [
+				"79C36E5EB68E7476"
+				"2C0C50F32F39BD3F"
+				"6D27E2E448E70AE5"
+			]
 			id: "4F1185F495038BB3"
 			rewards: [
 				{
@@ -426,8 +393,8 @@
 				item: "cmi:wooden_mechanism"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.5d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1270086FA79438E4"]
@@ -442,16 +409,16 @@
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.5d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
 				"7C14A1CC724511CB"
-				"370E4B4D6068CF98"
+				"542BB1A40BC1B441"
 			]
 			dependency_requirement: "one_completed"
-			description: ["燧石制作的锤子只有3/4的耐久, 但你为什么不多做点呢?"]
+			description: ["燧石制作的锤子只有1/4的耐久, 但你为什么不多做点呢?"]
 			id: "2C0C50F32F39BD3F"
 			rewards: [{
 				id: "1A0161DE002C8C21"
@@ -469,97 +436,40 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: -3.5d
+			x: 4.0d
+			y: -7.0d
 		}
 		{
-			description: ["在开始发展前下来先把下面的需求做好"]
-			icon: "minecraft:grass_block"
-			id: "27A18EEBBE063B43"
+			description: [
+				"线可以找蜘蛛“借”；"
+				"也可以用它的替代品&6草绳&f（纤维可以用小刀或匕首右键草获得）；"
+				"或者找一找&6工业大麻&f/&6亚麻"
+			]
+			icon: "minecraft:string"
+			id: "542BB1A40BC1B441"
 			rewards: [{
-				id: "128E304879444877"
+				id: "5991A9D3EA6281A2"
 				type: "xp"
 				xp: 10
 			}]
-			size: 2.0d
-			subtitle: "开始收集资源"
-			tasks: [{
-				id: "45EA37160B892F69"
-				type: "checkmark"
-			}]
-			title: "先安顿下来"
-			x: -3.0d
-			y: -3.0d
+			tasks: [
+				{
+					id: "7F0EFACCA94A76C0"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					id: "3FB0EEFA641947AB"
+					item: "cmi:grass_string"
+					type: "item"
+				}
+			]
+			title: "线"
+			x: 2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2AEF0BF597FF0E36"]
-			hide_dependency_lines: true
-			id: "216101B16F206C60"
-			rewards: [{
-				id: "73996EE12E6E535B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				count: 3L
-				id: "086C84A57364C4D5"
-				item: "tconstruct:seared_faucet"
-				title: "浇筑口"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["5080AD4A92076C63"]
-			hide_dependency_lines: true
-			id: "1D814C25827605EB"
-			rewards: [
-				{
-					id: "2F0B4D0469EA5B41"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "142D8CB3B9831298"
-					item: "minecraft:lever"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "787FD8B30555371A"
-				item: "tconstruct:seared_table"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["5080AD4A92076C63"]
-			hide_dependency_lines: true
-			id: "2155ED5D3B95A6E9"
-			rewards: [
-				{
-					id: "2072380977139207"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "2F67F730E2512927"
-					item: "minecraft:lever"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "3637B74D09538A03"
-				item: "tconstruct:seared_basin"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["749E2F97A546138F"]
 			icon: "tconstruct:seared_fuel_tank"
 			id: "13F1C5092BA578E2"
 			rewards: [{
@@ -586,8 +496,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
-			y: 2.5d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1270086FA79438E4"]
@@ -609,8 +519,8 @@
 				title: "沙子"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -635,8 +545,8 @@
 				title: "玻璃"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.0d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0950E73B864090F0"]
@@ -660,45 +570,12 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["7C14A1CC724511CB"]
-			icon: "farmersdelight:cutting_board"
-			id: "4594936AAC131166"
-			rewards: [{
-				id: "167503AC6078CC01"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "我切切切!"
-			tasks: [
-				{
-					id: "22BA1E6E753A44E6"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/knives"
-						}
-					}
-					title: "小刀"
-					type: "item"
-				}
-				{
-					id: "0BC27BDAA00A4748"
-					item: "farmersdelight:cutting_board"
-					type: "item"
-				}
-			]
-			title: "砧板"
-			x: 1.5d
-			y: -3.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2AEF0BF597FF0E36"]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			icon: "tconstruct:seared_ingot_tank"
 			id: "15D248E218C4FAB2"
 			rewards: [{
@@ -706,7 +583,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "没用完的液体存起来!"
+			subtitle: "可以将没用完的液体存起来"
 			tasks: [
 				{
 					id: "4E6C57F17D620BB1"
@@ -720,85 +597,54 @@
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "605F522507C3E612"
-					type: "checkmark"
-				}
 			]
-			x: 3.5d
-			y: 2.5d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["4594936AAC131166"]
-			id: "53608AA274E5E414"
+			dependencies: ["542BB1A40BC1B441"]
+			description: ["整合包做了对灰化土的兼容, 灰化土也可以用锄头右键耕地了"]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "648444B110FB640D"
 			rewards: [{
-				id: "64E76F8819AE5989"
+				id: "7D0D7AFFEB1768E8"
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "你也可以用砧板切"
-			tasks: [
-				{
-					id: "62CF9CCED10DC49D"
-					item: "farmersdelight:tree_bark"
-					type: "item"
-				}
-				{
-					id: "0EA094493117442A"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:stripped_logs"
-						}
-					}
-					title: "去皮原木"
-					type: "item"
-				}
-			]
-			x: 2.5d
-			y: -3.0d
+			subtitle: "灰化土也可以耕地"
+			tasks: [{
+				id: "5580C021BA791527"
+				title: "要种地"
+				type: "checkmark"
+			}]
+			title: "耕种"
+			x: 0.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["27A18EEBBE063B43"]
-			description: ["没有燧石可以先做把木质小刀"]
-			icon: "cmi:grass_string"
-			id: "370E4B4D6068CF98"
-			rewards: [{
-				id: "6DF9C4F2A814B1A2"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "用小刀去右键草"
-			tasks: [
-				{
-					count: 30L
-					id: "671FC0A90AD0AF99"
-					item: { Count: 30, id: "cmi:grass_fiber" }
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "21E3C9650C6FE97E"
-					item: { Count: 10, id: "cmi:grass_string" }
-					type: "item"
-				}
-				{
-					id: "103462B02335ABFA"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/knives"
-						}
+			dependencies: ["7C14A1CC724511CB"]
+			id: "6D27E2E448E70AE5"
+			tasks: [{
+				id: "07427040A1255CA9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:stripped_logs"
 					}
-					title: "小刀"
-					type: "item"
 				}
-			]
-			title: "草绳也是一种选择"
-			x: -1.5d
-			y: -3.0d
+				title: "Any #forge:stripped_logs"
+				type: "item"
+			}]
+			title: "去皮原木"
+			x: 4.0d
+			y: -6.0d
 		}
 	]
 	title: "艰难前期"

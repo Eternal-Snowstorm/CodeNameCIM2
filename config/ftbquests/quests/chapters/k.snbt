@@ -35,19 +35,11 @@
 		{
 			dependencies: ["136F20B0869B90F6"]
 			id: "30B8A752461496DD"
-			rewards: [
-				{
-					id: "70946E58D25716EA"
-					item: "cmi:stone_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "3223AB8FF158D4B1"
-					item: "cmi:basic_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "70946E58D25716EA"
+				item: "cmi:stone_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2185828B8AD01CD9"
 				item: "cmi:stone_mechanism"
@@ -59,19 +51,11 @@
 		{
 			dependencies: ["17888283D819AB51"]
 			id: "4083E533701242D1"
-			rewards: [
-				{
-					id: "2FD022E425370CB1"
-					item: "cmi:iron_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "15CAFFE05F5E789E"
-					item: "cmi:basic_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "2FD022E425370CB1"
+				item: "cmi:iron_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5AD679254A483442"
 				item: "cmi:iron_mechanism"
@@ -83,19 +67,11 @@
 		{
 			dependencies: ["17888283D819AB51"]
 			id: "69C00F817438C355"
-			rewards: [
-				{
-					id: "6EFA105B88F10522"
-					item: "cmi:gold_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "57FBD2ADAF5907F1"
-					item: "cmi:basic_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6EFA105B88F10522"
+				item: "cmi:gold_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2F4565283385D493"
 				item: "cmi:gold_mechanism"
@@ -108,19 +84,11 @@
 			dependencies: ["30B8A752461496DD"]
 			dependency_requirement: "one_completed"
 			id: "17888283D819AB51"
-			rewards: [
-				{
-					id: "33B0BF3EA50529E0"
-					item: "cmi:andesite_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "6DF01DB3C1C0030A"
-					item: "cmi:mechanical_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "33B0BF3EA50529E0"
+				item: "cmi:andesite_machine"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "657E105AB2B3D75C"
@@ -149,19 +117,11 @@
 		{
 			dependencies: ["17888283D819AB51"]
 			id: "65AD80AEAA062CEE"
-			rewards: [
-				{
-					id: "65307309144CAED9"
-					item: "cmi:copper_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "6BC40D83917E3AFF"
-					item: "cmi:mechanical_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "65307309144CAED9"
+				item: "cmi:copper_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3F95424115CCADEB"
 				item: "cmi:copper_mechanism"
@@ -173,19 +133,11 @@
 		{
 			dependencies: ["65AD80AEAA062CEE"]
 			id: "08D012AB26459401"
-			rewards: [
-				{
-					id: "011BF1547CF2C383"
-					item: "cmi:nature_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "6D3774F7FFD1F56F"
-					item: "cmi:magical_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "011BF1547CF2C383"
+				item: "cmi:nature_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "78DBDA88A6FB64A4"
 				item: "cmi:nature_mechanism"
@@ -227,7 +179,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["17888283D819AB51"]
+			dependencies: ["56DB23E9AE579DAD"]
 			id: "42519082C3C86B41"
 			rewards: [{
 				id: "2489339320FD1C25"
@@ -239,7 +191,7 @@
 				item: "cmi:photosensitive_mechanism"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -276,7 +228,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["56DB23E9AE579DAD"]
 			id: "3D7BCA289055601D"
 			rewards: [{
 				id: "0EFAA1A6A21F2076"
@@ -288,8 +239,8 @@
 				item: "cmi:light_engineering_mechanism"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3D7BCA289055601D"]
@@ -305,7 +256,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3D7BCA289055601D"]
@@ -320,20 +271,20 @@
 				item: "cmi:coil_mechanism"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.0d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0DE8D693A94C5A6D"]
 			id: "6D6905E6A6E7A153"
 			rewards: [{
 				id: "31C6DC82DD0202B2"
-				item: "cmi:reinforced_machine"
+				item: "cmi:feinforced_machine"
 				type: "item"
 			}]
 			tasks: [{
 				id: "36891FDD5DDE4833"
-				item: "cmi:reinforced_mechanism"
+				item: "cmi:feinforced_mechanism"
 				type: "item"
 			}]
 			x: 5.0d
@@ -356,11 +307,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"71F81E8F67C3A8BE"
-				"0D63B72859D8D3D2"
-				"767B33B7921C4E6A"
-			]
+			dependencies: ["71F81E8F67C3A8BE"]
 			id: "315BE76178E4D7F7"
 			rewards: [{
 				id: "36C1295CD5A51379"
@@ -372,8 +319,8 @@
 				item: "cmi:basic_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.0d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5DACA4599CFCBB11"]
@@ -388,8 +335,8 @@
 				item: "cmi:advanced_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -1.0d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["44A58231092EABA1"]
@@ -404,8 +351,8 @@
 				item: "cmi:elite_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -1.0d
+			x: 11.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["01DFFFFD4CD9DD74"]
@@ -420,8 +367,8 @@
 				item: "cmi:ultimate_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -1.0d
+			x: 13.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["67FAE1DA4D9C2F87"]
@@ -458,19 +405,11 @@
 		{
 			dependencies: ["65AD80AEAA062CEE"]
 			id: "41D1483BFF793103"
-			rewards: [
-				{
-					id: "006E56C23C9393D4"
-					item: "cmi:enchanted_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "083552E9EC67FCF8"
-					item: "cmi:magical_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "006E56C23C9393D4"
+				item: "cmi:enchanted_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "105B9AE2D7540EC0"
 				item: "cmi:enchanted_mechanism"
@@ -498,19 +437,11 @@
 		{
 			dependencies: ["17888283D819AB51"]
 			id: "2023FCCA77518EF8"
-			rewards: [
-				{
-					id: "6B685BE00FC56DDD"
-					item: "cmi:colorful_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "2CE96A6B815ECB1D"
-					item: "cmi:magical_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6B685BE00FC56DDD"
+				item: "cmi:colorful_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2475148614D71807"
 				item: "cmi:colorful_mechanism"
@@ -548,7 +479,7 @@
 				item: "cmi:nether_mechanism"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.5d
 			y: -1.0d
 		}
 		{
@@ -580,8 +511,8 @@
 				item: "cmi:computing_mechanism"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -3.0d
+			x: 9.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["295EBD49E24B2BBA"]
@@ -596,14 +527,11 @@
 				item: "cmi:tier_1_aviation_mechanism"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"5DACA4599CFCBB11"
-				"41AAC35C55192CC1"
-			]
+			dependencies: ["5DACA4599CFCBB11"]
 			id: "44A58231092EABA1"
 			rewards: [{
 				id: "268876503CADF2D8"
@@ -653,19 +581,11 @@
 		{
 			dependencies: ["65AD80AEAA062CEE"]
 			id: "4B1899C4014F38E5"
-			rewards: [
-				{
-					id: "7716F7B8753604ED"
-					item: "cmi:potion_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "1847F9260EAFB765"
-					item: "cmi:magical_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "7716F7B8753604ED"
+				item: "cmi:potion_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4A84E3B0984A4514"
 				item: "cmi:potion_mechanism"
@@ -677,19 +597,11 @@
 		{
 			dependencies: ["17888283D819AB51"]
 			id: "5F2EF0F0AA5D4AB7"
-			rewards: [
-				{
-					id: "1DD689A6DC1D9474"
-					item: "cmi:bronze_machine"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "0B55B360DAF3908F"
-					item: "cmi:mechanical_random_mechanism"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1DD689A6DC1D9474"
+				item: "cmi:bronze_machine"
+				type: "item"
+			}]
 			tasks: [{
 				id: "10175B23AAA74C2D"
 				item: "cmi:bronze_mechanism"
@@ -699,15 +611,15 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["315BE76178E4D7F7"]
+			dependencies: ["767B33B7921C4E6A"]
 			id: "295EBD49E24B2BBA"
 			tasks: [{
 				id: "5665E998009E3BC9"
 				item: "cmi:air_tight_mechanism"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.0d
+			x: 8.0d
+			y: -2.0d
 		}
 	]
 	title: "构件之旅"

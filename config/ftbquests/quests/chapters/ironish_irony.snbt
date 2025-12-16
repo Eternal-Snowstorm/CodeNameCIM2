@@ -14,8 +14,6 @@
 				"319FC5833B1339C2"
 				"47D11B96A16AB842"
 			]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
 			id: "0608EF158049B347"
 			rewards: [{
 				id: "53EA57A337FE7B3E"
@@ -37,8 +35,8 @@
 				type: "item"
 			}]
 			title: "钢锭"
-			x: -3.0d
-			y: -9.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -68,8 +66,8 @@
 				type: "item"
 			}]
 			title: "不锈耐酸钢锭"
-			x: -3.0d
-			y: -10.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -85,8 +83,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "gear"
-			size: 2.0d
 			tasks: [{
 				id: "2CA84D300926037E"
 				item: {
@@ -100,8 +96,8 @@
 				type: "item"
 			}]
 			title: "铸铁锭"
-			x: -3.0d
-			y: -5.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["23541E724E18C938"]
@@ -124,8 +120,8 @@
 				type: "item"
 			}]
 			title: "工业铁锭"
-			x: -3.0d
-			y: -4.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			id: "51E5F831D7247E8A"
@@ -147,8 +143,8 @@
 				type: "item"
 			}]
 			title: "铬锭"
-			x: -3.0d
-			y: -12.0d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -171,8 +167,8 @@
 				type: "item"
 			}]
 			title: "殷钢锭"
-			x: -1.5d
-			y: -12.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			id: "319FC5833B1339C2"
@@ -195,8 +191,8 @@
 				type: "item"
 			}]
 			title: "方解石还是石灰石?"
-			x: -4.0d
-			y: -7.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["738AA5C4C4167BFB"]
@@ -251,8 +247,8 @@
 				}
 			]
 			title: "钢厂坩埚"
-			x: -1.0d
-			y: -3.0d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			id: "60113F54A37402B6"
@@ -274,8 +270,8 @@
 				type: "item"
 			}]
 			title: "焦煤"
-			x: -4.5d
-			y: -5.0d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -298,8 +294,8 @@
 				type: "item"
 			}]
 			title: "铁锭"
-			x: -5.0d
-			y: -3.0d
+			x: -3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["511A9A1AAB98500B"]
@@ -322,8 +318,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -7.0d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
 			id: "763E30AB21E0FAAE"
@@ -337,8 +333,8 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0608EF158049B347"]
@@ -355,8 +351,8 @@
 				type: "checkmark"
 			}]
 			title: "电弧炉"
-			x: -4.5d
-			y: -12.0d
+			x: 4.5d
+			y: 1.0d
 		}
 	]
 	title: "冶金工业"

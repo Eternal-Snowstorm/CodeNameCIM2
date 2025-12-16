@@ -338,7 +338,7 @@
 			subtitle: "可以当盆用吗?"
 			tasks: [{
 				id: "02CE9ECE51BA909B"
-				item: "cmi:copper_mechanism_basement"
+				item: "cmi:crafting_incomplete_copper_mechanism"
 				type: "item"
 			}]
 			x: 4.5d
@@ -501,7 +501,7 @@
 		{
 			dependencies: ["7510D0C5F36D0F1E"]
 			description: ["熔融青铜可以将铜和锡放到工作盆内加热搅拌, 但是这种配方有很大的损失, 请尽早做出冶炼炉"]
-			icon: "cmi:iron_mechanism_basement"
+			icon: "cmi:crafting_incomplete_iron_mechanism"
 			id: "6EBB0E1E97405AAB"
 			optional: true
 			shape: "diamond"
@@ -509,7 +509,7 @@
 			tasks: [
 				{
 					id: "1FD2DF00B6E2E64B"
-					item: "cmi:iron_mechanism_basement"
+					item: "cmi:crafting_incomplete_iron_mechanism"
 					type: "item"
 				}
 				{
@@ -557,7 +557,7 @@
 			dependencies: [
 				"5E953238EC4CB053"
 				"0D5B2BC965C555DF"
-				"64E57AAB64922B1E"
+				"2CA18D2367DC42BD"
 			]
 			icon: "cmi:cured_rubber_bucket"
 			id: "3A8E9AE06B88D05E"
@@ -788,13 +788,30 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["64E57AAB64922B1E"]
+			id: "2CA18D2367DC42BD"
+			rewards: [{
+				id: "60058FC1A44C313E"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "熊熊燃烧的火苗"
+			tasks: [{
+				id: "04083E89DFE4327E"
+				item: "cmi:combustion_medium_block"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
 			id: "64E57AAB64922B1E"
 			rewards: [{
 				id: "29AE447EB7362913"
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "在其上方的火焰可以无限燃烧！"
+			subtitle: "待会就知道要拿来干嘛了"
 			tasks: [{
 				id: "5CB1303DAAF51292"
 				item: {
@@ -808,7 +825,7 @@
 			}]
 			title: "煤炭块或木炭块"
 			x: 3.0d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
 			icon: "thermal:rubberwood_sapling"
