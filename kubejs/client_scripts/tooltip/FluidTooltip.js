@@ -6,7 +6,7 @@ NebulaEvents.fluidTooltip((event) => {
 	/**
 	 * 
 	 * @param {Internal.FluidStackJS_} fluid 
-	 * @param {Internal.Consumer_<Internal.List<net.minecraft.network.chat.Component>>} hanlder 
+	 * @param {Internal.Consumer_<Internal.List<Component>>} hanlder 
 	 */
 	function addFluidTooltip(fluid, hanlder) {
 		event.add(Fluid.of(fluid), hanlder)
