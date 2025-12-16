@@ -40,7 +40,7 @@ StartupEvents.registry("block", (event) => {
 	addDeveloperDoll("qi_month", "slim")
 
 	// 中微子
-	addDeveloperDoll("vechni_metel", "slim")
+	addDeveloperDoll("eternalsnowstorm", "slim")
 
 	// 1174
 	addDeveloperDoll("117458866249", "wide")

@@ -17,7 +17,7 @@ global.WRENCH_PICKUP = "create:wrench_pickup"
  */
 global.debugUserName = [
 	"Qi_Month",
-	"Vechni_Metel",
+	"eternalsnowstorm",
 	"UnknownEntity_UE",
 	"117458866249",
 	"Ye_Anqing",

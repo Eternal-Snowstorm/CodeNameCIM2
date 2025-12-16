@@ -19,7 +19,7 @@ StartupEvents.registry("painting_variant", (event) => {
 	// addPainting("rr14", 16, 16)
 	addPainting("girl_of_cmi", 64, 64)
 
-	// Vechni_Metel
+	// EternalSnowstorm
 	addPainting("bug_is_right", 32, 16)
 	addPainting("it_must_be_optifine", 16, 32)
 
@@ -27,13 +27,13 @@ StartupEvents.registry("painting_variant", (event) => {
 	addPainting("random_mechanism_old", 32, 32)
 	addPainting("random_mechanism", 32, 32)
 
-	// 柒
+	// Qi_Month
 	addPainting("qi_month", 64, 64)
 
 	// ⑨Dropper_QWQ⑨
 	addPainting("sacabambaspis", 32, 32)
 
-	//UE
+	//Re_Construction
 	addPainting("ue_sit", 32, 32)
 	addPainting("couple", 48, 48)
 	addPainting("cuo", 32, 32)

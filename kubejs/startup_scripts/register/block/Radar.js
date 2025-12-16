@@ -187,12 +187,20 @@ StartupEvents.registry("block", (event) => {
         .resistance(-1)
 
     // 损坏的调制解调器
-    addBlock("broken_modem")
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .textureAll(`${global.namespace}:block/space/machine/broken/modem`)
+    let dimensions = [
+        "overworld",
+        "moon",
+        "mars",
+        "mercury"
+    ]
+    dimensions.forEach((dim) => {
+        addBlock(`broken_modem_${dim}`)
+            .soundType(SoundType.NETHERITE_BLOCK)
+            .waterlogged()
+            .hardness(-1)
+            .resistance(-1)
+            .textureAll(`${global.namespace}:block/space/machine/broken/modem`)
+    })
 
     // 追踪阵列
     addBlock("tracking_array")

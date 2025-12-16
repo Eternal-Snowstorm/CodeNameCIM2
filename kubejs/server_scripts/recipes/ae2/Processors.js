@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
     ], [
         create.deploying(Print.CONTROL, [
             Print.CONTROL,
-            "minecraft:redstone"
+            "create:polished_rose_quartz"
         ]),
         create.deploying(Print.CONTROL, [
             Print.CONTROL,

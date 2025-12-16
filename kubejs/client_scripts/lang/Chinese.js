@@ -175,12 +175,20 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("broken_power_supply", "损坏的电源")
 	addBlockLang("broken_transformer", "损坏的变压器")
 	addBlockLang("broken_tracking_array", "损坏的追踪阵列")
-	addBlockLang("broken_modem", "损坏的调制解调器")
+	let dimensions = [
+		"overworld",
+		"moon",
+		"mars",
+		"mercury"
+	]
+	dimensions.forEach((dim) => {
+		addBlockLang(`broken_modem_${dim}`, "损坏的调制解调器")
+	})
 
 	addBlockLang("re_construction", "主创-Re_Construction")
 	addBlockLang("aleegos", "吉祥物-阿列戈斯")
 	addBlockLang("qi_month", "美工&程序-柒月")
-	addBlockLang("vechni_metel", "策划&程序-逐日炎雪_中微子")
+	addBlockLang("eternalsnowstorm", "策划&程序-逐日炎雪_中微子")
 	addBlockLang("fiber_optics", "程序-FiberOptics")
 	addBlockLang("random_mechanism", "程序-随机构件")
 	addBlockLang("dropper_qwq", "美工-⑨Dropper_QWQ⑨")
