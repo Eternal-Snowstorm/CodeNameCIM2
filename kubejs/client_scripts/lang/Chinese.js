@@ -1,4 +1,10 @@
 ClientEvents.lang("zh_cn", (event) => {
+	let dimensions = [
+		"overworld",
+		"moon",
+		"mars",
+		"mercury"
+	]
 	addItemLang("geological_hammer", "地质锤(调试工具)")
 	addItemLang("empty_exe", "空程序.exe")
 	addItemLang("single_crystal_silicon", "单晶硅")
@@ -75,6 +81,14 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("parchment", "奇怪的羊皮纸")
 	addItemLang("torn_parchment_a", "撕开的羊皮纸(甲)")
 	addItemLang("torn_parchment_b", "撕开的羊皮纸(乙)")
+
+	addItemLang("power_supply_repair_kit","电源修复包")
+	addItemLang("transformer_repair_kit","变压器修复包")
+	addItemLang("tracker_repair_kit","追踪阵列修复包")
+	dimensions.forEach((dim) => {
+		addItemLang(`modem_repair_kit_${dim}`,"调制解调器修复包")
+	})
+	addItemLang("radar_repair_kit","雷达修复包")
 
 	addItemLang("tier_1_rocket_nose_cone", "一阶火箭鼻锥")
 	addItemLang("tier_2_rocket_nose_cone", "二阶火箭鼻锥")
@@ -175,12 +189,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("broken_power_supply", "损坏的电源")
 	addBlockLang("broken_transformer", "损坏的变压器")
 	addBlockLang("broken_tracking_array", "损坏的追踪阵列")
-	let dimensions = [
-		"overworld",
-		"moon",
-		"mars",
-		"mercury"
-	]
+
 	dimensions.forEach((dim) => {
 		addBlockLang(`broken_modem_${dim}`, "损坏的调制解调器")
 	})
