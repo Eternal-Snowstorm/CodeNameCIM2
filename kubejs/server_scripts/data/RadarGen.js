@@ -116,11 +116,7 @@ ServerEvents.highPriorityData((event) => {
 		let structureSet = {
 			structures: [
 				{
-					structure: `${global.namespace}:radar/${dim}/base_a`,
-					weight: 1
-				},
-				{
-					structure: `${global.namespace}:radar/${dim}/base_b`,
+					structure: `${global.namespace}:radar/${dim}`,
 					weight: 1
 				}
 			],
