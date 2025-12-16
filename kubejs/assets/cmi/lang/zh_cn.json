@@ -54,9 +54,7 @@
 	"message.cmi.welcome": "欢迎%s来到CMI!",
 	"message.cmi.chainedcasing": "按住[Alt]将启用连锁套壳",
 	"message.cmi.chaineduncasing": "按住[Alt]将启用连锁拆壳",
-	"recipe.jei.recipe.cmi.accelerator": "对着催生器使用构件",
-	"recipe.jei.recipeType.cmi.accelerator": "构件催生(WIP)",
 	"item.cmi.paxel.description": "镐尖斧是一种多功能采掘工具, 适用于挖掘各种方块, 但对岩石和木头效果最好\n村民肯定不喜欢这个",
-	"message.cmi.modrinth_warning0": "你正在游玩从Modrinth渠道下载的CMI",
-	"message.cmi.modrinth_warning1": "因Modrinth的政策限制, 本版本删除了部分内容, 可能造成如无法多人游戏、无法进入服务器等问题\n您可以通过下方按钮在CurseForge或BBSMC下载本整合包游玩完整内容"
+	"item.cmi.overcharged_alloy_ingot.tooltip": "OVERCHARGED ALLOY INGOT",
+	"item.cmi.overcharged_alloy_ingot.tooltip.summary": "High-density alloy _charged_ with excess energy."
 }

@@ -19,8 +19,8 @@ BlockEvents.rightClicked((event) => {
 	}
 
 	if (getDimension !== "minecraft:the_nether" || !isNetherFarmlandBlockTag) {
-		let translate = Component.translatable(`display.${global.namespace}.nether_crops`)
-		player.displayClientMessage(translate, true)
+		let tranKey = `display.${global.namespace}.nether_crops`
+		player.displayClientMessage(Component.translatable(tranKey), true)
 		event.cancel()
 		return
 	}

@@ -7,6 +7,6 @@ ServerEvents.loaded((event) => {
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
 
-	let message = `message.${global.namespace}.welcome`
-	player.tell(Component.translatable(message, player.username))
+	let tranKey = `message.${global.namespace}.welcome`
+	player.tell(Component.translatable(tranKey, player.username))
 })
