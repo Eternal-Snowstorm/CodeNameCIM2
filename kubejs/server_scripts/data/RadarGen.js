@@ -28,7 +28,7 @@ ServerEvents.highPriorityData((event) => {
 			"minecraft:desert",
 			"minecraft:badlands"
 		],
-		size: 1,
+		size: 2,
 		start_pool: `${global.namespace}:radar/overworld`,
 		step: "surface_structures",
 		start_height: {
@@ -46,7 +46,7 @@ ServerEvents.highPriorityData((event) => {
 		biomes: [
 			"ad_astra:lunar_wastelands"
 		],
-		size: 1,
+		size: 2,
 		start_pool: `${global.namespace}:radar/moon`,
 		step: "surface_structures",
 		start_height: {
@@ -64,7 +64,7 @@ ServerEvents.highPriorityData((event) => {
 		biomes: [
 			"ad_astra:martian_wastelands"
 		],
-		size: 1,
+		size: 2,
 		start_pool: `${global.namespace}:radar/mars`,
 		step: "surface_structures",
 		start_height: {
@@ -82,7 +82,7 @@ ServerEvents.highPriorityData((event) => {
 		biomes: [
 			"ad_astra:mercury_deltas"
 		],
-		size: 1,
+		size: 2,
 		start_pool: `${global.namespace}:radar/mercury`,
 		step: "surface_structures",
 		start_height: {
@@ -147,7 +147,7 @@ ServerEvents.highPriorityData((event) => {
 
 	// 第三层结构池
 	let topTemplatePool = {
-		name: `${global.namespace}:radar/device`,
+		name: `${global.namespace}:radar/top`,
 		fallback: "minecraft:empty",
 		elements: [
 			radarTemplatePool("radar/top/broken_a"),
