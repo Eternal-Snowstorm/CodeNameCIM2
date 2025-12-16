@@ -19,7 +19,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -9.0d
+			y: -5.0d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -43,7 +43,7 @@
 			}]
 			title: "殷钢锭"
 			x: -3.0d
-			y: -9.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -66,7 +66,7 @@
 				type: "item"
 			}]
 			x: -2.25d
-			y: -6.25d
+			y: -2.25d
 		}
 		{
 			dependencies: ["054CC551DA5CFB94"]
@@ -84,7 +84,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -8.0d
+			y: -4.0d
 		}
 		{
 			id: "1D8A1D223F15B923"
@@ -100,19 +100,18 @@
 				type: "item"
 			}]
 			title: "这个东西接上电转的飞快"
-			x: -8.0d
+			x: -5.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1D8A1D223F15B923"]
-			hide_dependent_lines: true
 			id: "5BD6EBC1F19DB22C"
 			tasks: [{
 				id: "4426DDEFF4BB9BFC"
 				item: "cmi:flux_mechanism_part"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
@@ -137,7 +136,7 @@
 			}]
 			title: "殷钢板"
 			x: -3.0d
-			y: -8.0d
+			y: -4.0d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -155,7 +154,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -9.0d
+			y: -5.0d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -172,8 +171,8 @@
 				title: "任意 #forge:ingots/信素"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.5d
+			x: 0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -191,11 +190,11 @@
 			size: 1.5d
 			tasks: [{
 				id: "38E804B6C3B47453"
-				item: "cmi:reinforced_mechanism"
+				item: "cmi:feinforced_mechanism"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.75d
+			x: 0.0d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -216,8 +215,8 @@
 				item: "cmi:resonant_mechanism"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 3.75d
+			x: 2.25d
+			y: -2.25d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -240,8 +239,8 @@
 				type: "item"
 			}]
 			title: "流明锭"
-			x: -2.0d
-			y: 1.0d
+			x: 3.0d
+			y: -5.0d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -264,8 +263,8 @@
 				type: "item"
 			}]
 			title: "末影锭"
-			x: -3.0d
-			y: 1.0d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
 			dependency_requirement: "all_started"
@@ -288,8 +287,8 @@
 				type: "item"
 			}]
 			title: "琥珀金锭"
-			x: -3.0d
-			y: -4.5d
+			x: -0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["57EC25AC52B42AC2"]
@@ -312,8 +311,8 @@
 				type: "item"
 			}]
 			title: "琥珀金板"
-			x: -3.0d
-			y: -3.5d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0FFDD4E0AC08B29B"]
@@ -331,8 +330,8 @@
 				type: "item"
 			}]
 			title: "信素齿轮"
-			x: -2.0d
-			y: -3.5d
+			x: 0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0A1AB8A282C91166"]
@@ -355,8 +354,8 @@
 				type: "item"
 			}]
 			title: "末影板"
-			x: -3.0d
-			y: 2.0d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7C576110450726F8"]
@@ -379,8 +378,8 @@
 				type: "item"
 			}]
 			title: "流明齿轮"
-			x: -2.0d
-			y: 2.0d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["74D97642DAB6DF6F"]
@@ -391,7 +390,6 @@
 				xp: 100
 			}]
 			shape: "gear"
-			size: 2.0d
 			tasks: [{
 				id: "5FF2CCC88F015D21"
 				item: {
@@ -405,7 +403,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7CCC505D92DC2663"]
@@ -416,7 +414,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6F9E16D27C6C973B"]
@@ -427,7 +425,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7A517683CCCFF700"]
@@ -445,7 +443,7 @@
 			}]
 			title: "你需要一个炼油厂"
 			x: -2.0d
-			y: 6.0d
+			y: 0.5d
 		}
 		{
 			id: "7A517683CCCFF700"
@@ -455,7 +453,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["42DA0B5B429DACC9"]
@@ -466,8 +464,8 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -0.5d
+			x: 0.0d
+			y: -1.0d
 		}
 	]
 	title: "热力膨胀"
