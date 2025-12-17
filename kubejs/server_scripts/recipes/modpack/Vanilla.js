@@ -341,4 +341,81 @@ ServerEvents.recipes((event) => {
 		]).id(`minecraft:${colour}_concrete_powder`)
 	})
 
+	// 修复组件
+	kubejs.shaped("cmi:power_supply_repair_kit", [
+		"ABA",
+		"CDE",
+		"AFA"
+	], {
+		A: "#forge:plates/aluminum",
+		B: "#forge:circuits/basic",
+		C: "#immersiveengineering:tools/wirecutters",
+		D: "#create:mechanisms/coil",
+		E: "#forge:tools/wrench",
+		F: "#cmi:batteries"
+	})
+
+	kubejs.shaped("cmi:transformer_repair_kit", [
+		"D E",
+		"BCB",
+		"AAA"
+	], {
+		A: "#forge:plates/aluminum",
+		B: "#create:mechanisms/coil",
+		C: "#create:mechanisms/heavy_engineering",
+		D: "#immersiveengineering:tools/wirecutters",
+		E: "#forge:tools/wrench"
+	})
+
+	kubejs.shaped("cmi:tracker_repair_kit", [
+		"E F",
+		"ABA",
+		"CDC"
+	], {
+		A: "#forge:plates/polyolefin",
+		B: "#forge:circuits/basic",
+		C: "#forge:plates/aluminum",
+		D: "#create:mechanisms/smart",
+		E: "#immersiveengineering:tools/wirecutters",
+		F: "#forge:tools/wrench"
+	})
+
+	kubejs.shaped("cmi:radar_repair_kit", [
+		"D E",
+		"ABA",
+		"ACA"
+	], {
+		A: "#forge:plates/stainless_steel",
+		B: "#create:mechanisms/coil",
+		C: "#forge:circuits/basic",
+		D: "#immersiveengineering:tools/wirecutters",
+		E: "#forge:tools/wrench"
+	})
+
+	let dimensions = [
+		"overworld",
+		"moon",
+		"mars",
+		"mercury"
+	]
+
+	let tier = {
+		"overworld": "basic",
+		"moon": "advanced",
+		"mars": "elite",
+		"mercury": "ultimate"
+	}
+	dimensions.forEach((dim) => {
+		kubejs.shaped(`cmi:modem_repair_kit_${dim}`, [
+			"D E",
+			"ABA",
+			"ACA"
+		], {
+			A: "#forge:plates/stainless_steel",
+			B: "#create:mechanisms/coil",
+			C: `#create:mechanisms/${tier[dim]}_mekanism`,
+			D: "#immersiveengineering:tools/wirecutters",
+			E: "#forge:tools/wrench"
+		})
+	})
 })
