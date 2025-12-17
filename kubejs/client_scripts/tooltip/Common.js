@@ -97,10 +97,6 @@ ItemEvents.tooltip((event) => {
 		event.add("minecraft:dirt", Component.translatable(`tooltip.${global.namespace}.41dirt`))
 	}
 
-	// 熔点
-	function toFahrenheit(celsius) {
-		return celsius * 9 / 5 + 32
-	}
 	let materialTypeList = [
 		"raw_material",
 		"ore",
@@ -120,7 +116,7 @@ ItemEvents.tooltip((event) => {
 				let translatable = Component.translatable(
 					"tooltip.cmi.meltingPoint",
 					mp,
-					toFahrenheit(mp)
+					NebulaUtils.toFahrenheit(mp)
 				).yellow()
 
 				event.add(`#forge:${type}s/${material}`, translatable)
@@ -137,7 +133,7 @@ ItemEvents.tooltip((event) => {
 			let translatable = Component.translatable(
 				"tooltip.cmi.fuelTemperature",
 				tp,
-				toFahrenheit(tp)
+				NebulaUtils.toFahrenheit(tp)
 			).yellow()
 
 			event.add(bucket, translatable)
@@ -152,7 +148,7 @@ ItemEvents.tooltip((event) => {
 			let translatable = Component.translatable(
 				"tooltip.cmi.meltingPoint",
 				mp,
-				toFahrenheit(mp)
+				NebulaUtils.toFahrenheit(mp)
 			).yellow()
 
 			event.add(`#create:crushed_raw_materials/${material}`, translatable)
@@ -174,10 +170,10 @@ NebulaEvents.fluidTooltip((event) => {
 			let translatable = Component.translatable(
 				"tooltip.cmi.fuelTemperature",
 				tp,
-				toFahrenheit(tp)
+				NebulaUtils.toFahrenheit(tp)
 			).yellow()
 
-			event.add(fluid, (tooltip) => {
+			event.add(fuel, (tooltip) => {
 				tooltip.add(translatable)
 			})
 		}

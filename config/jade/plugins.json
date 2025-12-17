@@ -37,7 +37,7 @@
     "beehive": true,
     "item_storage.detailed_amount": 54,
     "player_head": true,
-    "block_states": true,
+    "block_states": false,
     "lectern": true,
     "entity_armor": true,
     "harvest_tool.creative": false,
