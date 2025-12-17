@@ -1,41 +1,41 @@
 let chemSalts = [
-		"fecl2",
-		"feso4",
-		"cucl2",
-		"cuso4",
-		"zncl2",
-		"znso4",
-		"alcl3",
-		"al2so43",
-		"aucl3",
-		"au2so43",
-		"agcl",
-		"ag2so4",
-		"pbcl2",
-		"pbso4",
-		"crcl3",
-		"cr2so43",
-		"sncl2",
-		"snso4",
-		"vocl2",
-		"voso4",
-		"uo2cl2",
-		"uo2so4",
-		"nicl2",
-		"niso4",
-		"cocl2",
-		"coso4",
-		"oscl3",
-		"os2so43",
-		"na2so4",
-		"nacl",
-		"caso4",
-		"cacl2",
-		"k2so4",
-		"kcl",
-		"ptcl4",
-		"ptso42"
-	]
+	"fecl2",
+	"feso4",
+	"cucl2",
+	"cuso4",
+	"zncl2",
+	"znso4",
+	"alcl3",
+	"al2so43",
+	"aucl3",
+	"au2so43",
+	"agcl",
+	"ag2so4",
+	"pbcl2",
+	"pbso4",
+	"crcl3",
+	"cr2so43",
+	"sncl2",
+	"snso4",
+	"vocl2",
+	"voso4",
+	"uo2cl2",
+	"uo2so4",
+	"nicl2",
+	"niso4",
+	"cocl2",
+	"coso4",
+	"oscl3",
+	"os2so43",
+	"na2so4",
+	"nacl",
+	"caso4",
+	"cacl2",
+	"k2so4",
+	"kcl",
+	"ptcl4",
+	"ptso42"
+]
 ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:wooden_mechanism")
 	addCommonTooltip("cmi:stone_mechanism")
@@ -177,7 +177,9 @@ NebulaEvents.fluidTooltip((event) => {
 				toFahrenheit(tp)
 			).yellow()
 
-			event.add(fluid, (tooltip) => {tooltip.add(translatable)})
+			event.add(fluid, (tooltip) => {
+				tooltip.add(translatable)
+			})
 		}
 	})
 })
