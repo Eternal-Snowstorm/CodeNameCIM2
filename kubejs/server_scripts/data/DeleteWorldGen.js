@@ -1,40 +1,25 @@
 ServerEvents.highPriorityData((event) => {
-	event.addJson(`cmi:worldgen/template_pool/dev/blank`, {
-		name: `${global.namespace}:dev/blank`,
-		fallback: "minecraft:empty",
-		elements: [
-			{
-				weight: 1,
-				element: {
-					location: "cmi:dev/blank",
-					element_type: "minecraft:single_pool_element",
-					processors: "minecraft:empty",
-					projection: "rigid"
-				}
-			}
-		]
-	})
 
 	/**
 	 * 
 	 * @param {String} namespace 命名空间
 	 * @param {String} name 文件名
 	 */
-	function deleteStructureGen(namespace, name) {
-		event.addJson(`${namespace}:worldgen/structure/${name}`, {
-			type: "minecraft:jigsaw",
-			biomes: [],
-			size: 1,
-			start_pool: `cmi:dev/blank`,
-			step: "surface_structures",
-			start_height: {
-				absolute: 0
-			},
-			spawn_overrides: {},
-			max_distance_from_center: 64,
-			project_start_to_heightmap: "WORLD_SURFACE_WG",
-			terrain_adaptation: "beard_thin",
-			use_expansion_hack: false
+	function deleteTemplatePool(namespace, name) {
+		event.addJson(`cmi:worldgen/template_pool/${namespace}/${name}`, {
+			name: `${global.namespace}:dev/blank`,
+			fallback: "minecraft:empty",
+			elements: [
+				{
+					weight: 1,
+					element: {
+						location: "cmi:dev/blank",
+						element_type: "minecraft:single_pool_element",
+						processors: "minecraft:empty",
+						projection: "rigid"
+					}
+				}
+			]
 		})
 	}
 
@@ -54,15 +39,15 @@ ServerEvents.highPriorityData((event) => {
 		})
 	}
 
-	deleteStructureGen("ad_astra", "oil_well")
-	deleteStructureGen("deepdrilling", "copper_node")
-	deleteStructureGen("deepdrilling", "gold_node")
-	deleteStructureGen("deepdrilling", "iron_node")
-	deleteStructureGen("deepdrilling", "zinc_node")
-	deleteStructureGen("deepdrilling", "asurine_node")
-	deleteStructureGen("deepdrilling", "crimsite_node")
-	deleteStructureGen("deepdrilling", "ochrum_node")
-	deleteStructureGen("deepdrilling", "veridium_node")
+	deleteTemplatePool("ad_astra", "oil_well")
+	deleteTemplatePool("deepdrilling", "copper_node")
+	deleteTemplatePool("deepdrilling", "gold_node")
+	deleteTemplatePool("deepdrilling", "iron_node")
+	deleteTemplatePool("deepdrilling", "zinc_node")
+	deleteTemplatePool("deepdrilling", "asurine_node")
+	deleteTemplatePool("deepdrilling", "crimsite_node")
+	deleteTemplatePool("deepdrilling", "ochrum_node")
+	deleteTemplatePool("deepdrilling", "veridium_node")
 
 	deleteFeatureGen("immersiveengineering", "uranium")
 	deleteFeatureGen("immersiveengineering", "nickel")
