@@ -8,6 +8,4 @@ ServerEvents.recipes((event) => {
 		"mode": "inscribe",
 		"result": Ingredient.of("cmi:silicon_carbide_plate").toJson()
 	})
-
-	
 })
