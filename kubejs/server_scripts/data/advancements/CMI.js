@@ -31,8 +31,139 @@ ServerEvents.highPriorityData((event) => {
 	// 	"sends_telemetry_event": true
 	// })
 
+	event.addJson("cmi:loot_table/torn_parchment_a.json", {
+		type: "generic",
+		pools: [
+			{
+				bonus_rolls: 0.0,
+				rolls: 1,
+				entries: [
+					{
+						"type": "minecraft:alternatives",
+						"children": [
+							{
+								"type": "minecraft:item",
+								"name": "cmi:torn_parchment_a"
+							}
+						]
+					}
+				]
+			}
+		]
+	})
+
+	event.addJson("cmi:loot_table/torn_parchment_b.json", {
+		type: "generic",
+		pools: [
+			{
+				bonus_rolls: 0.0,
+				rolls: 1,
+				entries: [
+					{
+						"type": "minecraft:alternatives",
+						"children": [
+							{
+								"type": "minecraft:item",
+								"name": "cmi:torn_parchment_b"
+							}
+						]
+					}
+				]
+			}
+		]
+	})
+
+	event.addJson("cmi:advancements/echoes_north_star.json", {
+		criteria: {
+			"0": {
+				conditions: {
+					items: [
+						{
+							items: [
+								"cmi:water_pump"
+							]
+						}
+					]
+				},
+				trigger: "minecraft:inventory_changed"
+			}
+		},
+		rewards: {
+			loot: [
+				"cmi:torn_parchment_b"
+			]
+		},
+		display: {
+			announce_to_chat: false,
+			background: "cmi:textures/gui/advancements/main.png",
+			description: {
+				"color": "#00b7ffff",
+				"translate": "advancements.cmi.north_star.desc"
+			},
+			frame: "goal",
+			hidden: true,
+			icon: {
+				item: "cmi:torn_parchment_b"
+			},
+			show_toast: true,
+			title: {
+				translate: "advancements.cmi.north_star"
+			},
+			requirements: [
+				[
+					"0"
+				]
+			]
+
+		}
+	})
+
+	event.addJson("cmi:advancements/echoes_south_cross.json", {
+		parent: "cmi:echoes_north_star",
+		criteria: {
+			"0": {
+				"conditions": {
+					"items": [
+						{
+							"items": [
+								"cmi:accelerator"
+							]
+						}
+					]
+				},
+				"trigger": "minecraft:inventory_changed"
+			}
+		},
+		rewards: {
+			loot: [
+				"cmi:torn_parchment_a"
+			]
+		},
+		display: {
+			announce_to_chat: false,
+			description: {
+				"color": "#fdba00ff",
+				"translate": "advancements.cmi.south_cross.desc"
+			},
+			frame: "goal",
+			hidden: true,
+			icon: {
+				item: "cmi:torn_parchment_a"
+			},
+			show_toast: true,
+			title: {
+				translate: "advancements.cmi.south_cross"
+			},
+			requirements: [
+				[
+					"0"
+				]
+			]
+		}
+	})
+
 	event.addJson("cmi:advancements/meet.json", {
-		"parent": "ad_astra:astronaut",
+		"parent": "cmi:echoes_south_cross",
 		"criteria": {
 			"0": {
 				"conditions": {
@@ -56,7 +187,7 @@ ServerEvents.highPriorityData((event) => {
 			"frame": "challenge",
 			"hidden": true,
 			"icon": {
-				"item": "minecraft:cherry_sapling"
+				"item": "ae2:quantum_entangled_singularity"
 			},
 			"show_toast": true,
 			"title": {

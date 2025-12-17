@@ -82,13 +82,13 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("torn_parchment_a", "撕开的羊皮纸(甲)")
 	addItemLang("torn_parchment_b", "撕开的羊皮纸(乙)")
 
-	addItemLang("power_supply_repair_kit","电源修复包")
-	addItemLang("transformer_repair_kit","变压器修复包")
-	addItemLang("tracker_repair_kit","追踪阵列修复包")
+	addItemLang("power_supply_repair_kit", "电源修复包")
+	addItemLang("transformer_repair_kit", "变压器修复包")
+	addItemLang("tracker_repair_kit", "追踪阵列修复包")
 	dimensions.forEach((dim) => {
-		addItemLang(`modem_repair_kit_${dim}`,"调制解调器修复包")
+		addItemLang(`modem_repair_kit_${dim}`, "调制解调器修复包")
 	})
-	addItemLang("radar_repair_kit","雷达修复包")
+	addItemLang("radar_repair_kit", "雷达修复包")
 
 	addItemLang("tier_1_rocket_nose_cone", "一阶火箭鼻锥")
 	addItemLang("tier_2_rocket_nose_cone", "二阶火箭鼻锥")
@@ -396,6 +396,9 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addPlanetLang("dionysus", "迪奥尼索斯")
 	addPlanetLang("hephaestus", "赫菲斯托斯")
+
+	addAdvancementLang("north_star", "迷航", "轨迹从此断裂, 却像在等待另一侧的回声")
+	addAdvancementLang("south_cross", "星港", "即便断裂, 它依旧把角度留给那道未曾抵达的回声")
 
 	for (let i = 1; i <= 14; i++) {
 		addPaintingLang(`rr${i}`, `Aleegos(${i})`, "Aleegos Reality Redemption")
@@ -774,7 +777,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addAdvancementLang(key, title, desc) {
 		event.add(`advancements.${global.namespace}.${key}`, title)
-		event.add(`advancements.${global.namespace}.${key}`, desc)
+		event.add(`advancements.${global.namespace}.${key}.desc`, desc)
 	}
 
 	function addMusicDiscLang(key, value, author) {
