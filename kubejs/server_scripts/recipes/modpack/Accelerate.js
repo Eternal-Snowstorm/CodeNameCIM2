@@ -139,37 +139,4 @@ ServerEvents.recipes((event) => {
 			.input(input)
 			.target(target)
 	}
-
-	cmi.accelerator([
-		{
-			"id": "minecraft:deepslate_copper_ore",
-			"chance": 0.1
-		},
-		{
-			"id": "create:deepslate_zinc_ore",
-			"chance": 0.1
-		},
-		{
-			"id": "minecraft:deepslate_redstone_ore",
-			"chance": 0.1
-		}
-	]).input("create:precision_mechanism").target("minecraft:deepslate")
-
-	event.custom({
-		"type": "cmi:accelerator",
-		"target": "minecraft:sandstone",
-		"input": {
-			"tag": "forge:ingots/iron"
-		},
-		"output": [
-			{
-				"id": "minecraft:iron_block",
-				"chance": 0.3
-			},
-			{
-				"id": "minecraft:gold_block",
-				"chance": 0.3
-			}
-		]
-	})
 })

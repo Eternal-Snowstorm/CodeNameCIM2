@@ -24,4 +24,41 @@ ServerEvents.recipes((event) => {
 		"minecraft:obsidian",
 		"#forge:vegetables/onion"
 	])
+
+	// 雷达
+	for (let i = 1; i <= 4; i++) {
+		create.item_application(`cmi:radar_${i.toString()}`, [
+			`cmi:broken_radar_${i.toString()}`,
+			"cmi:radar_repair_kit"
+		]).id(`cmi:radar_${i.toString()}_fix`)
+	}
+
+	create.item_application("cmi:power_supply", [
+		"cmi:broken_power_supply",
+		"cmi:power_supply_repair_kit"
+	]).id("cmi:power_fix")
+
+	create.item_application("cmi:transformer", [
+		"cmi:broken_transformer",
+		"cmi:transformer_repair_kit"
+	]).id("cmi:trans_fix")
+
+	create.item_application("cmi:tracking_array", [
+		"cmi:broken_tracking_array",
+		"cmi:tracker_repair_kit"
+	]).id("cmi:tracker_fix")
+
+	let dimensions = [
+		"overworld",
+		"moon",
+		"mars",
+		"mercury"
+	]
+
+	dimensions.forEach((dim) => {
+		create.item_application("cmi:modem", [
+			`cmi:broken_modem_${dim}`,
+			`cmi:modem_repair_kit_${dim}`
+		]).id(`cmi:modem_${dim}_fix`)
+	})
 })
