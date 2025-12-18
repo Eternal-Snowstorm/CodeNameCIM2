@@ -480,4 +480,8 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:raw_materials/calorite_scrap")
 		.add("ad_astra:raw_calorite")
+
+	event.get("kubejs:chests")
+		.add("#forge:chests")
+		.remove("minecraft:trapped_chest")
 })
