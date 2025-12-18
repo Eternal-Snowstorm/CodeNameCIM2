@@ -1,8 +1,6 @@
 {
 	"message.cmi.food.andesite_alloy_noodle": "不咸不淡, 味道好极了",
 	"message.cmi.food.creosote_wood_chip_briquette": "带派不老铁",
-	"advancement.cmi.meet": "轨道共鸣",
-	"advancement.cmi.meet.desc": "两颗游离的恒星在一次无意的轨道扰动中彼此靠近\n无人知晓它们为何产生引力, 只知从那一刻起, 星系的背景噪声变得温柔\n(隐藏挑战!)",
 	"tooltip.cmi.meltingPoint": "§e熔点: %s°C / %s°F",
 	"tooltip.cmi.fuelTemperature": "§e燃烧温度: %s°C / %s°F",
 	"jade.theme.cmi.stardew_valley": "星露谷物语",
@@ -54,7 +52,5 @@
 	"message.cmi.welcome": "欢迎%s来到CMI!",
 	"message.cmi.chainedcasing": "按住[Alt]将启用连锁套壳",
 	"message.cmi.chaineduncasing": "按住[Alt]将启用连锁拆壳",
-	"item.cmi.paxel.description": "镐尖斧是一种多功能采掘工具, 适用于挖掘各种方块, 但对岩石和木头效果最好\n村民肯定不喜欢这个",
-	"item.cmi.overcharged_alloy_ingot.tooltip": "OVERCHARGED ALLOY INGOT",
-	"item.cmi.overcharged_alloy_ingot.tooltip.summary": "High-density alloy _charged_ with excess energy."
+	"item.cmi.paxel.description": "镐尖斧是一种多功能采掘工具, 适用于挖掘各种方块, 但对岩石和木头效果最好\n村民肯定不喜欢这个"
 }
