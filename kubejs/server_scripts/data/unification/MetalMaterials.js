@@ -36,6 +36,7 @@ ServerEvents.highPriorityData((event) => {
 		global.metalGroup.forEach((material) => {
 			/**
 			 * 声明所需变量
+			 * 
 			 * @param {Internal.Ingredient_} tag 当前正在遍历的物品tag
 			 * @param {Internal.Set<string>} ids tag下所有物品id
 			 * @param {String} currentNamespace 当前物品的命名空间

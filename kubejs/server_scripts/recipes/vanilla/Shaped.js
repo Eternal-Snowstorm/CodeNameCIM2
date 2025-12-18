@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 		C: "#forge:deepslate",
 		D: "cmi:stone_mechanism",
 		E: "#forge:stone"
-	}).id("industrial_platform:industrial_platform")
+	}).id("industrial_platform:platform")
 
 	kubejs.shaped("industrial_platform:industrial_platform", [
 		"BCA",
@@ -53,5 +53,5 @@ ServerEvents.recipes((event) => {
 		C: "#forge:deepslate",
 		D: "cmi:stone_mechanism",
 		E: "#forge:stone"
-	}).id("industrial_platform:industrial_platform_2")
+	}).id("industrial_platform:platform_2")
 })
