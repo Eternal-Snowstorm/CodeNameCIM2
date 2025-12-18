@@ -463,6 +463,11 @@ ServerEvents.tags("item", (event) => {
 			.add(`ad_astra:etrium_${metal}`)
 	})
 
+	/**
+	 * 
+	 * @param {Special.ItemTag} tag 
+	 * @returns 
+	 */
 	function removeTagAllId(tag) {
 		return event.get(tag)
 			.removeAll()
