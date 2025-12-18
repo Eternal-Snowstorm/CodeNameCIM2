@@ -161,7 +161,8 @@ StartupEvents.registry("block", (event) => {
             .waterlogged()
             .hardness(-1)
             .resistance(-1)
-            .textureAll(`${global.namespace}:block/space/machine/broken/radar`)
+            .model(`${global.namespace}:block/radar`)
+            .box(6, 0, 6, 10, 16, 10, true)
     }
 
     // 变压器
@@ -170,6 +171,7 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
+        .textureAll(`${global.namespace}:block/space/machine/broken/transformer`)
 
     // 损坏变压器
     addBlock("broken_transformer")
@@ -185,6 +187,7 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
+        .model(`${global.namespace}:block/modem`)
 
     // 损坏的调制解调器
     let dimensions = [
@@ -199,7 +202,7 @@ StartupEvents.registry("block", (event) => {
             .waterlogged()
             .hardness(-1)
             .resistance(-1)
-            .textureAll(`${global.namespace}:block/space/machine/broken/modem`)
+            .model(`${global.namespace}:block/modem`)
     })
 
     // 追踪阵列
@@ -208,6 +211,7 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
+        .textureAll(`${global.namespace}:block/space/machine/broken/tracking_array`)
 
     // 损坏的追踪阵列
     addBlock("broken_tracking_array")
@@ -223,6 +227,7 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
+        .textureAll(`${global.namespace}:block/space/machine/broken/power_supply`)
 
     // 损坏的电源
     addBlock("broken_power_supply")
