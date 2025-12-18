@@ -1,6 +1,19 @@
 NebulaEvents.fluidTooltip((event) => {
-	event.add("cmi:sea_water", (tooltip) => {
-		tooltip.add(Component.literal("Debug Fluid Tooltip").blue())
-		
+
+	global.metalGroup.forEach((material) => {
+
+		if (IngrUtils.getFirstFluidId(`forge:molten_${material}`) != null) {
+			let mp = global.meltingPoints[material]
+
+			event.add(IngrUtils.getFirstFluidId(`forge:molten_${material}`), (tooltip) => {
+				tooltip.add(
+					Component.translatable(
+						"tooltip.cmi.meltingPoint",
+						mp,
+						NebulaUtils.toFahrenheit(mp)
+					).yellow()
+				)
+			})
+		}
 	})
 })

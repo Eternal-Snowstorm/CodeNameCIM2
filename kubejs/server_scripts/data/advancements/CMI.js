@@ -90,7 +90,7 @@ ServerEvents.highPriorityData((event) => {
 		},
 		rewards: {
 			loot: [
-				"cmi:torn_parchment_b"
+				"cmi:torn_parchment_a"
 			]
 		},
 		display: {
@@ -103,7 +103,7 @@ ServerEvents.highPriorityData((event) => {
 			frame: "goal",
 			hidden: true,
 			icon: {
-				item: "cmi:torn_parchment_b"
+				item: "cmi:torn_parchment_a"
 			},
 			show_toast: true,
 			title: {
@@ -136,7 +136,7 @@ ServerEvents.highPriorityData((event) => {
 		},
 		rewards: {
 			loot: [
-				"cmi:torn_parchment_a"
+				"cmi:torn_parchment_b"
 			]
 		},
 		display: {
@@ -148,7 +148,7 @@ ServerEvents.highPriorityData((event) => {
 			frame: "goal",
 			hidden: true,
 			icon: {
-				item: "cmi:torn_parchment_a"
+				item: "cmi:torn_parchment_b"
 			},
 			show_toast: true,
 			title: {
