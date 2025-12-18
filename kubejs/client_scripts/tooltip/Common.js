@@ -112,7 +112,7 @@ ItemEvents.tooltip((event) => {
 		global.metalGroup.forEach((material) => {
 			let mp = global.meltingPoints[material]
 
-			if (mp !== null) {
+			if (typeof tp === "number") {
 				let translatable = Component.translatable(
 					"tooltip.cmi.meltingPoint",
 					mp,
@@ -129,7 +129,7 @@ ItemEvents.tooltip((event) => {
 		let bucket = `${fuel}_bucket`
 		let tp = global.fuelTemperatures[fuel]
 
-		if (tp !== null) {
+		if (typeof tp === "number") {
 			let translatable = Component.translatable(
 				"tooltip.cmi.fuelTemperature",
 				tp,
@@ -144,7 +144,7 @@ ItemEvents.tooltip((event) => {
 	global.metalGroup.forEach((material) => {
 		let mp = global.meltingPoints[material]
 
-		if (mp !== null) {
+		if (typeof tp === "number") {
 			let translatable = Component.translatable(
 				"tooltip.cmi.meltingPoint",
 				mp,
@@ -166,7 +166,7 @@ NebulaEvents.fluidTooltip((event) => {
 	global.fuelList.forEach((fuel) => {
 		let tp = global.fuelTemperatures[fuel]
 
-		if (tp !== null) {
+		if (typeof tp === "number") {
 			let translatable = Component.translatable(
 				"tooltip.cmi.fuelTemperature",
 				tp,

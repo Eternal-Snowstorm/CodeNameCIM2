@@ -275,7 +275,7 @@ global.meltingPoints = {
 	"shadow_steel": 2106, // null
 	"refined_radiance": 2106, // null
 }
-/***
+/**
  * 命名空间
  * v代表该材料是由TIC本体添加的
  * t代表该材料是由热力工匠添加的

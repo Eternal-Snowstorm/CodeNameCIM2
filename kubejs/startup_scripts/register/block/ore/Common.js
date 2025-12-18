@@ -2,11 +2,29 @@ let commonOres = []
 
 // 不想写路径屎山
 let SetPath = {
+	/**
+	 * 
+	 * @param {string} type 类型
+	 * @returns 
+	 */
 	vanilla: function (type) {
 		return `minecraft:block/${type}`
 	},
+	/**
+	 * 
+	 * @param {string} type 类型
+	 * @returns 
+	 */
 	adAstra: function (type) {
 		return `ad_astra:block/${type}_stone`
+	},
+	/**
+	 * 
+	 * @param {string} type 类型
+	 * @returns 
+	 */
+	alexCave: function (type) {
+		return `alexcave:block/${type}`
 	}
 }
 
@@ -21,7 +39,10 @@ let BackgroundTextures = {
 	mars: SetPath.adAstra("mars"),
 	venus: SetPath.adAstra("venus"),
 	mercury: SetPath.adAstra("mercury"),
-	glacio: SetPath.adAstra("glacio")
+	glacio: SetPath.adAstra("glacio"),
+
+	radrock: SetPath.alexCave("radrock"),
+	galena: SetPath.alexCave("galena")
 }
 
 // 继承父模型
