@@ -21,6 +21,13 @@ ServerEvents.recipes((event) => {
 		setOutput("thermal:deepslate_sulfur_ore", 0.05)
 	])
 
+	addRecipe("cmi:copper_mechanism", "minecraft:stone", [
+		setOutput("minecraft:deepslate_copper_ore", 0.15),
+		setOutput("minecraft:deepslate_gold_ore", 0.1),
+		setOutput("minecraft:bricks", 0.1),
+		setOutput("thermal:deepslate_sulfur_ore", 0.05)
+	])
+
 	// 贰级科技航天构件
 	addRecipe("cmi:tier_2_aviation_mechanism", "minecraft:deepslate", [
 		setOutput("ad_astra:deepslate_desh_ore", 0.15),

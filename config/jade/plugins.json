@@ -127,5 +127,8 @@
     "crafting_blueprint": true,
     "goggles.detailed": false,
     "placard": true
+  },
+  "industrial_platform": {
+    "common": true
   }
 }
