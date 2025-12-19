@@ -171,7 +171,7 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
-        .textureAll(`${global.namespace}:block/space/machine/broken/transformer`)
+        .model(`${global.namespace}:block/transformer`)
 
     // 损坏变压器
     addBlock("broken_transformer")
@@ -179,7 +179,7 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
-        .textureAll(`${global.namespace}:block/space/machine/broken/transformer`)
+        .model(`${global.namespace}:block/transformer`)
 
     // 调制解调器
     addBlock("modem")
@@ -188,6 +188,7 @@ StartupEvents.registry("block", (event) => {
         .hardness(-1)
         .resistance(-1)
         .model(`${global.namespace}:block/modem`)
+        .notSolid()
 
     // 损坏的调制解调器
     let dimensions = [
@@ -203,6 +204,7 @@ StartupEvents.registry("block", (event) => {
             .hardness(-1)
             .resistance(-1)
             .model(`${global.namespace}:block/modem`)
+            .notSolid()
     })
 
     // 追踪阵列
@@ -211,7 +213,7 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
-        .textureAll(`${global.namespace}:block/space/machine/broken/tracking_array`)
+        .model(`${global.namespace}:block/tracking_array`)
 
     // 损坏的追踪阵列
     addBlock("broken_tracking_array")
@@ -219,7 +221,7 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
-        .textureAll(`${global.namespace}:block/space/machine/broken/tracking_array`)
+        .model(`${global.namespace}:block/tracking_array`)
 
     // 电源
     addBlock("power_supply")
@@ -227,7 +229,7 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
-        .textureAll(`${global.namespace}:block/space/machine/broken/power_supply`)
+        .model(`${global.namespace}:block/power_supply`)
 
     // 损坏的电源
     addBlock("broken_power_supply")
@@ -235,5 +237,5 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
-        .textureAll(`${global.namespace}:block/space/machine/broken/power_supply`)
+        .model(`${global.namespace}:block/power_supply`)
 })

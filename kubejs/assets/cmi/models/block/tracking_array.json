@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "cmi:block/space/machine/bottom",
+        "top": "cmi:block/space/machine/broken/tracking_array_top",
+        "side": "cmi:block/space/machine/broken/tracking_array"
+    }
+}
