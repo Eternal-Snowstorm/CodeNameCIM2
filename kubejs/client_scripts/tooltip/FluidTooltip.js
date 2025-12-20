@@ -1,6 +1,6 @@
 NebulaEvents.fluidTooltip((event) => {
 	global.metalGroup.forEach((material) => {
-		if (IngrUtils.getFirstFluidId(`forge:molten_${material}`) != null) {
+		if (IngrUtils.getFirstFluidId(`forge:molten_${material}`) !== null) {
 			let mp = global.meltingPoints[material]
 			let moltenMetal = IngrUtils.getFirstFluidId(`forge:molten_${material}`)
 
