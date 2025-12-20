@@ -26,6 +26,10 @@ ServerEvents.tags("fluid", (event) => {
 	// event.get("ad_astra:oxygen")
 	// 	.add("minecraft:lava")
 
+	event.get("deepdrilling:sludge")
+		.add("deepdrilling:flowing_sludge")
+		.add("deepdrilling:sludge")
+
 	event.get("minecraft:water")
 		.removeAll()
 		.add("minecraft:water")

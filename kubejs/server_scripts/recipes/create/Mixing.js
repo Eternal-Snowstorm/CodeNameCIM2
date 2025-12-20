@@ -85,8 +85,13 @@ ServerEvents.recipes((event) => {
 	]).heated()
 
 	// 淤泥悬浊液
+	// create.mixing(Fluid.of("cmi:sludge_suspension", 1000), [
+	// 	Fluid.of("deepdrilling:sludge", 500),
+	// 	Fluid.of("minecraft:water", 500)
+	// ])
+
 	create.mixing(Fluid.of("cmi:sludge_suspension", 1000), [
-		Fluid.of("deepdrilling:sludge", 500),
+		{ fluidTag: "deepdrilling:sludge", amount: 500 },
 		Fluid.of("minecraft:water", 500)
 	])
 
