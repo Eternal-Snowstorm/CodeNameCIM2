@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs, thermal } = event.recipes
+	let { kubejs } = event.recipes
 
 	const ANDESITE_MECH = "cmi:andesite_mechanism"
 	const COPPER_MECH = "cmi:copper_mechanism"

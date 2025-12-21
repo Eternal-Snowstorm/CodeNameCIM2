@@ -1,28 +1,41 @@
 StartupEvents.registry("fluid", (event) => {
+	/**
+	 * 
+	 * @param {string} name 注册id
+	 * @returns 
+	 */
 	function addAloneFluid(name) {
-		let registerAloneFluid =
-			event.create(`${global.namespace}:${name}`)
-				.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
-				.stillTexture(`${global.namespace}:fluid/${name}/still`)
+		let builder = event.create(`${global.namespace}:${name}`)
+
+		builder.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
+		builder.stillTexture(`${global.namespace}:fluid/${name}/still`)
+		builder.renderType("translucent")
 
 		FluidBucketItemModel.generate(name)
 
 		console.log(`${global.namespace}:${name}已注册!`)
 
-		return registerAloneFluid
+		return builder
 	}
 
+	/**
+	 * 
+	 * @param {string} name 注册id
+	 * @param {Color_} color 着色色号
+	 * @returns 
+	 */
 	function addColorFluid(name, color) {
-		let registerColorFluid =
-			event.create(`${global.namespace}:${name}`)
-				.thinTexture(color)
-				.bucketColor(color)
-				.flowingTexture(`${global.namespace}:fluid/solution/flow`)
-				.stillTexture(`${global.namespace}:fluid/solution/still`)
+		let builder = event.create(`${global.namespace}:${name}`)
+
+		builder.thinTexture(color)
+		builder.bucketColor(color)
+		builder.flowingTexture(`${global.namespace}:fluid/solution/flow`)
+		builder.stillTexture(`${global.namespace}:fluid/solution/still`)
+		builder.renderType("translucent")
 
 		FluidBucketItemModel.generate(name)
 
-		return registerColorFluid
+		return builder
 	}
 
 	addColorFluid("eletriced_source_emeraid", 0x117458)

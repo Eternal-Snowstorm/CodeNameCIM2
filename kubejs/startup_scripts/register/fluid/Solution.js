@@ -1,27 +1,31 @@
 StartupEvents.registry("fluid", (event) => {
 	function addSolutionFluid(name1, name2, tag, color1, color2) {
-		let fluid1 = event.create(`${global.namespace}:${name1}_solution`)
-			.flowingTexture(`${global.namespace}:fluid/solution/flow`)
-			.stillTexture(`${global.namespace}:fluid/solution/still`)
-			.thinTexture(color1)
-			.bucketColor(color1)
-			.tag(`forge:solutions/${tag}/chloride`)
-			.tag(`forge:solutions/${tag}`)
+		let builder1 = event.create(`${global.namespace}:${name1}_solution`)
 
-		let fluid2 = event.create(`${global.namespace}:${name2}_solution`)
-			.flowingTexture(`${global.namespace}:fluid/solution/flow`)
-			.stillTexture(`${global.namespace}:fluid/solution/still`)
-			.thinTexture(color2)
-			.bucketColor(color2)
-			.tag(`forge:solutions/${tag}/sulfate`)
-			.tag(`forge:solutions/${tag}`)
+		builder1.flowingTexture(`${global.namespace}:fluid/solution/flow`)
+		builder1.stillTexture(`${global.namespace}:fluid/solution/still`)
+		builder1.thinTexture(color1)
+		builder1.bucketColor(color1)
+		builder1.renderType("translucent")
+		builder1.tag(`forge:solutions/${tag}/chloride`)
+		builder1.tag(`forge:solutions/${tag}`)
+
+		let builder2 = event.create(`${global.namespace}:${name2}_solution`)
+
+		builder2.flowingTexture(`${global.namespace}:fluid/solution/flow`)
+		builder2.stillTexture(`${global.namespace}:fluid/solution/still`)
+		builder2.thinTexture(color2)
+		builder2.bucketColor(color2)
+		builder2.renderType("translucent")
+		builder2.tag(`forge:solutions/${tag}/sulfate`)
+		builder2.tag(`forge:solutions/${tag}`)
 
 		FluidBucketItemModel.generate(`${name1}_solution`)
 		FluidBucketItemModel.generate(`${name2}_solution`)
 
 		return {
-			register1: fluid1,
-			register2: fluid2
+			register1: builder1,
+			register2: builder2
 		}
 	}
 
