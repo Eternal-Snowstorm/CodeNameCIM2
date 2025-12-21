@@ -182,7 +182,7 @@ ServerEvents.highPriorityData((event) => {
 			"announce_to_chat": false,
 			"description": {
 				"color": "#DBA213",
-				"translate": "advancement.cmi.meet.desc"
+				"translate": "advancements.cmi.meet.desc"
 			},
 			"frame": "challenge",
 			"hidden": true,
@@ -191,7 +191,7 @@ ServerEvents.highPriorityData((event) => {
 			},
 			"show_toast": true,
 			"title": {
-				"translate": "advancement.cmi.meet"
+				"translate": "advancements.cmi.meet"
 			}
 		},
 		"requirements": [
