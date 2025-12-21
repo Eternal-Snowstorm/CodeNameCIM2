@@ -341,16 +341,19 @@ new Material("refined_radiance", 0xE8E8F8, "diamond")
 new Material("desh", 0xD38B4C, "wooden")
 	.molten()
 	.dust()
+	.gear()
 
 // 紫金
 new Material("ostrum", 0xA66B72, "wooden")
 	.molten()
 	.dust()
+	.gear()
 
 // 耐热金属
 new Material("calorite", 0xC94D4E, "wooden")
 	.molten()
 	.dust()
+	.gear()
 
 // 赤铷合金
 new Material("scarlet_neodymium", 0xB91919, "stone")

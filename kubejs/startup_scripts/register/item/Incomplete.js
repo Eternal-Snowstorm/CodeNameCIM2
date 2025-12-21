@@ -41,4 +41,12 @@ StartupEvents.registry("item", (event) => {
 	// 气体容器(半成品)
 	addItem("incomplete_gas_container")
 		.texture(`${global.namespace}:item/material/incomplete_gas_container`)
+
+	// 火箭框架(半成品)
+	for (let i = 1; i <= 4; i++) {
+		addItem(`incomplete_tier_${i.toString()}_rocket_frame`)
+			.modelJson({
+				"parent": `cmi:block/rocket/tier${i.toString()}/tier${i.toString()}`
+			})
+	}
 })

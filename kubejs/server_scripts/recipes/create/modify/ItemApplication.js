@@ -1,6 +1,23 @@
 ServerEvents.recipes((event) => {
 	let { create } = event.recipes
 
+	let colour = [
+		"white",
+		"gray"
+	]
+
+	// 钢筋混凝土
+	colour.forEach((colour) => {
+		create.item_application(`cmi:${colour}_reinforced_concrete`, [
+			"cmi:bar_normal",
+			`minecraft:${colour}_concrete_powder`
+		])
+		create.item_application(`cmi:${colour}_reinforced_concrete`, [
+			"cmi:bar_concrete",
+			`minecraft:${colour}_concrete_powder`
+		])
+	})
+
 	// 安山机壳
 	create.item_application("create:andesite_casing", [
 		"#minecraft:logs",

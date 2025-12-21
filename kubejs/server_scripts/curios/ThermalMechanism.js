@@ -14,8 +14,10 @@ EntityEvents.hurt((event) => {
 
 	let player = source.actual
 	let playerUuid = player.getUuid().toString()
-
+	let { attackDamage, attackSpeed } = player.getItem().getAttributeModifiers()
+	let attackCd = Math.floor(20 / attackSpeed)
 	let attackTime = server.getTickCount()
+
 	pendingAttackTimeMap[playerUuid] = attackTime
 })
 

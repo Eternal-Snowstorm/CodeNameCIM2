@@ -18,7 +18,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock(global.ToolType["pickaxe"])
         .tagBlock(global.MiningLevel["iron"])
 
-    addBlock(`grey_reinforced_concrete`)
+    addBlock(`gray_reinforced_concrete`)
         .soundType(SoundType.METAL)
         .noDrops()
         .requiresTool(true)
@@ -40,7 +40,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mekanism:cardboard_blacklist")
         .hardness(50)
 
-    addBlock(`grey_reinforced_concrete_wall`, "wall")
+    addBlock(`gray_reinforced_concrete_wall`, "wall")
         .soundType(SoundType.METAL)
         .noDrops()
         .requiresTool(true)
@@ -62,7 +62,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mekanism:cardboard_blacklist")
         .hardness(50)
 
-    addBlock(`grey_reinforced_concrete_stairs`, "stairs")
+    addBlock(`gray_reinforced_concrete_stairs`, "stairs")
         .soundType(SoundType.METAL)
         .noDrops()
         .requiresTool(true)
@@ -84,7 +84,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mekanism:cardboard_blacklist")
         .hardness(50)
 
-    addBlock(`grey_reinforced_concrete_slab`, "slab")
+    addBlock(`gray_reinforced_concrete_slab`, "slab")
         .soundType(SoundType.METAL)
         .noDrops()
         .requiresTool(true)
