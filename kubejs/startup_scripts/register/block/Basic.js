@@ -2,7 +2,7 @@ StartupEvents.registry("block", (event) => {
 	/**
 	 * 
 	 * @param {String} name 注册id
-	 * @param {"basic" | "detector" | "slab" | "stairs" | "fence" | "wall" | "fence_gate" | "pressure_plate" | "button" | "falling" | "crop" | "cardinal" | "carpet" | "animatable" | "custommachinery"} type 注册类型
+	 * @param 
 	 */
 	function addBlock(name, type) {
 		if (type === undefined) {
