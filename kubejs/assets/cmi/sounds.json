@@ -30,5 +30,13 @@
 				"stream": true
 			}
 		]
+	},
+	"record.togni_leets": {
+		"sounds": [
+			{
+				"name": "cmi:music/record/togni_leets",
+				"stream": true
+			}
+		]
 	}
 }

@@ -1,6 +1,8 @@
 ItemEvents.rightClicked((event) => {
 	let { item, player } = event
 
+	item.getEnchantmentLevel()
+
 	if (item === "cmi:tier_1_aviation_complete_cell") {
 		player.swing()
 		ItemUIFactory.INSTANCE.openUI(player, event.hand, "cmi:cell_1")

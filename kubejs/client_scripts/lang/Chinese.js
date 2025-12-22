@@ -125,6 +125,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	// addItemLang("general_processor", "通用处理器")
 	// addItemLang("printed_general_processor", "通用电路板")
 	addItemLang("music_disc_mechanism", "DontkillBelalus - Mechanism")
+	addItemLang("togni_leets", "钢錠")
 
 	addItemLang("reactive_element", "活泼元素")
 	addItemLang("stable_element", "稳定元素")

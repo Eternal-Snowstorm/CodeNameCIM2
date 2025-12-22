@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1766408984964
+  last_edited_time = 1766419652305
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:3fe06b5e-fb4d-454c-9cb7-362aecf835b7-1766408931640] = [groups:][instances:]
+  [loading_requirement_container_meta:c983e4f6-1e25-402d-98a7-07a0369dbb8f-1766419611278] = [groups:][instances:]
 }
 
 menu_background {
@@ -77,7 +77,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.2
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -118,7 +118,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.2
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -200,7 +200,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.2
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -241,7 +241,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.2
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -309,8 +309,8 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1020
+  auto_sizing_base_screen_width = 2488
+  auto_sizing_base_screen_height = 1572
   sticky_anchor = false
   anchor_point = mid-centered
   x = 5
@@ -324,7 +324,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.2
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -365,7 +365,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.2
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -406,7 +406,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.20
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -447,7 +447,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.2
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -488,7 +488,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.2
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -529,7 +529,7 @@ element {
   [loading_requirement_container_meta:ca318d8f-2deb-4b6a-bdc4-5bbd7089e521-1753548359242] = [groups:][instances:]
   enable_parallax = true
   parallax_intensity_v2 = 0.2
-  invert_parallax = true
+  invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
@@ -945,10 +945,10 @@ vanilla_button {
   auto_sizing_base_screen_height = 1012
   sticky_anchor = false
   anchor_point = vanilla
-  x = 113
-  y = 96
-  width = 254
-  height = 62
+  x = 115
+  y = 147
+  width = 392
+  height = 98
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
