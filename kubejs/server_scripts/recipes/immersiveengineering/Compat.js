@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, immersiveengineering } = event.recipes
+	let { create } = event.recipes
 
 	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 250), [
 		"#forge:dusts/redstone",

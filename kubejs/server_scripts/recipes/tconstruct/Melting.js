@@ -232,35 +232,4 @@ ServerEvents.recipes((event) => {
 			.time(40)
 			.temperature(global.meltingPoints[type])
 	})
-
-	// ???
-	tconstruct.melting(Fluid.of("tconstruct:molten_steel", 90 * 6))
-		.ingredient("farmersdelight:cooking_pot")
-		.temperature(1370)
-		.time(10 * 20)
-		.id("cmi:tconstruct/melting/steel/cooking_pot")
-
-	tconstruct.melting(Fluid.of("tconstruct:molten_steel", 90 * 5))
-		.ingredient("farmersdelight:skillet")
-		.temperature(1370)
-		.time(10 * 20)
-		.id("cmi:tconstruct/melting/steel/skillet")
-
-	tconstruct.melting(Fluid.of("tconstruct:molten_steel", 90 * 8))
-		.ingredient("kaleidoscope_cookery:pot")
-		.temperature(1370)
-		.time(10 * 20)
-		.id("cmi:tconstruct/melting/steel/pot")
-
-	tconstruct.melting(Fluid.of("tconstruct:molten_steel", 90 * 6))
-		.ingredient("kaleidoscope_cookery:stockpot")
-		.temperature(1370)
-		.time(10 * 20)
-		.id("cmi:tconstruct/melting/steel/stockpot")
-
-	tconstruct.melting(Fluid.of("tconstruct:molten_steel", 90 * 4))
-		.ingredient("kaleidoscope_cookery:stockpot_lid")
-		.temperature(1370)
-		.time(10 * 20)
-		.id("cmi:tconstruct/melting/steel/stockpot_lid")
 })

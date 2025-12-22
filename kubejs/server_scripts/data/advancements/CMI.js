@@ -1,76 +1,34 @@
 ServerEvents.highPriorityData((event) => {
-	// event.addJson("cmi:advancements/start.json", {
-	// 	"criteria": {
-	// 		"0": {
-	// 			"conditions": {},
-	// 			"trigger": "minecraft:inventory_changed"
-	// 		}
-	// 	},
-	// 	"display": {
-	// 		"announce_to_chat": false,
-	// 		"background": "cmi:textures/gui/advancements/main.png",
-	// 		"description": {
-	// 			"color": "#DBA213",
-	// 			"translate": "advancement.cmi.start.desc"
-	// 		},
-	// 		"frame": "task",
-	// 		"hidden": false,
-	// 		"icon": {
-	// 			"item": "create:wrench"
-	// 		},
-	// 		"show_toast": true,
-	// 		"title": {
-	// 			"translate": "advancement.cmi.start"
-	// 		}
-	// 	},
-	// 	"requirements": [
-	// 		[
-	// 			"0"
-	// 		]
-	// 	],
-	// 	"sends_telemetry_event": true
-	// })
-
-	event.addJson("cmi:loot_table/torn_parchment_a.json", {
-		type: "generic",
-		pools: [
-			{
-				bonus_rolls: 0.0,
-				rolls: 1,
-				entries: [
-					{
-						"type": "minecraft:alternatives",
-						"children": [
-							{
-								"type": "minecraft:item",
-								"name": "cmi:torn_parchment_a"
-							}
-						]
-					}
-				]
+	event.addJson("cmi:advancements/start.json", {
+		"criteria": {
+			"0": {
+				"conditions": {},
+				"trigger": "minecraft:inventory_changed"
 			}
-		]
-	})
-
-	event.addJson("cmi:loot_table/torn_parchment_b.json", {
-		type: "generic",
-		pools: [
-			{
-				bonus_rolls: 0.0,
-				rolls: 1,
-				entries: [
-					{
-						"type": "minecraft:alternatives",
-						"children": [
-							{
-								"type": "minecraft:item",
-								"name": "cmi:torn_parchment_b"
-							}
-						]
-					}
-				]
+		},
+		"display": {
+			"announce_to_chat": false,
+			"background": "cmi:textures/gui/advancements/main.png",
+			"description": {
+				"color": "#DBA213",
+				"translate": "advancement.cmi.start.desc"
+			},
+			"frame": "task",
+			"hidden": false,
+			"icon": {
+				"item": "create:wrench"
+			},
+			"show_toast": true,
+			"title": {
+				"translate": "advancement.cmi.start"
 			}
-		]
+		},
+		"requirements": [
+			[
+				"0"
+			]
+		],
+		"sends_telemetry_event": true
 	})
 
 	event.addJson("cmi:advancements/echoes_north_star.json", {
@@ -114,7 +72,6 @@ ServerEvents.highPriorityData((event) => {
 					"0"
 				]
 			]
-
 		}
 	})
 
@@ -203,5 +160,47 @@ ServerEvents.highPriorityData((event) => {
 			"experience": 100
 		},
 		"sends_telemetry_event": true
+	})
+
+	event.addJson("cmi:loot_table/torn_parchment_a.json", {
+		type: "generic",
+		pools: [
+			{
+				bonus_rolls: 0.0,
+				rolls: 1,
+				entries: [
+					{
+						"type": "minecraft:alternatives",
+						"children": [
+							{
+								"type": "minecraft:item",
+								"name": "cmi:torn_parchment_a"
+							}
+						]
+					}
+				]
+			}
+		]
+	})
+
+	event.addJson("cmi:loot_table/torn_parchment_b.json", {
+		type: "generic",
+		pools: [
+			{
+				bonus_rolls: 0.0,
+				rolls: 1,
+				entries: [
+					{
+						"type": "minecraft:alternatives",
+						"children": [
+							{
+								"type": "minecraft:item",
+								"name": "cmi:torn_parchment_b"
+							}
+						]
+					}
+				]
+			}
+		]
 	})
 })

@@ -10,11 +10,11 @@ JEIEvents.removeRecipes((event) => {
 
 	removeRecipeFromJEI("createaddition:charging", "cmi:createaddition/charging/overcharged_alloy_ingot")
 	removeRecipeFromJEI("minecraft:crafting", "cmi:minecraft/shaped/love_manual_only")
-	removeRecipeFromJEI("tconstruct:melting", [
-		"cmi:tconstruct/melting/steel/cooking_pot",
-		"cmi:tconstruct/melting/steel/skillet",
-		"cmi:tconstruct/melting/steel/pot",
-		"cmi:tconstruct/melting/steel/stockpot",
-		"cmi:tconstruct/melting/steel/stockpot_lid",
+	removeRecipeFromJEI("immersiveengineering:blast_furnace", [
+		"cmi:immersiveengineering/blast_furnace/steel_ingot/cooking_pot",
+		"cmi:immersiveengineering/blast_furnace/steel_ingot/skillet",
+		"cmi:immersiveengineering/blast_furnace/steel_ingot/pot",
+		"cmi:immersiveengineering/blast_furnace/steel_ingot/stockpot",
+		"cmi:immersiveengineering/blast_furnace/steel_ingot/stockpot_lid",
 	])
 })
