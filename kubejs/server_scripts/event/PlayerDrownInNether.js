@@ -1,12 +1,7 @@
-PlayerEvents.tick((event) => {
-    let { player } = event
+// PlayerEvents.tick((event) => {
+//     let { player } = event
+//     let dim = player.level.getDimension().toString()
+//     if (dim = "minecraft:the_nether") {
 
-    if (player.isCreative()) {
-        return
-    }
-    let dimension = event.player.level.getDimension().toString()
-    if (dimension == "minecraft:the_nether") {
-        player.decreaseAirSupply(2)
-    }
-
-})
+//     }
+// })
