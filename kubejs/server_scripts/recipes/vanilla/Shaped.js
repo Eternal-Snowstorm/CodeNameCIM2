@@ -54,4 +54,29 @@ ServerEvents.recipes((event) => {
 		D: "cmi:stone_mechanism",
 		E: "#forge:stone"
 	}).id("industrial_platform:platform_2")
+
+	// 流体池
+	kubejs.shaped("industrial_platform:fluid_pool", [
+		"A B",
+		"CDC",
+		"CEC"
+	], {
+		A: "#forge:dyes/yellow",
+		B: "#forge:dyes/black",
+		C: "#forge:stone",
+		D: "#forge:deepslate",
+		E: "cmi:stone_mechanism",
+	}).id("industrial_platform:pool")
+
+		kubejs.shaped("industrial_platform:fluid_pool", [
+		"B A",
+		"CDC",
+		"CEC"
+	], {
+		A: "#forge:dyes/yellow",
+		B: "#forge:dyes/black",
+		C: "#forge:stone",
+		D: "#forge:deepslate",
+		E: "cmi:stone_mechanism",
+	}).id("industrial_platform:pool_2")
 })

@@ -84,12 +84,14 @@ ServerEvents.recipes((event) => {
 		"32x #forge:seeds"
 	]).heated()
 
-	// 淤泥悬浊液
-	// create.mixing(Fluid.of("cmi:sludge_suspension", 1000), [
-	// 	Fluid.of("deepdrilling:sludge", 500),
-	// 	Fluid.of("minecraft:water", 500)
-	// ])
+	// 熔融黄铜
+	create.mixing(Fluid.of("tconstruct:molten_brass", 180), [
+		Fluid.of("tconstruct:molten_zinc", 90),
+		Fluid.of("tconstruct:molten_copper", 90)
+	]).heatRequirement(global.HeatLevel["heated"])
+		.id("create:mixing/brass_ingot")
 
+	// 淤泥悬浊液
 	create.mixing(Fluid.of("cmi:sludge_suspension", 1000), [
 		{ fluidTag: "deepdrilling:sludge", amount: 500 },
 		Fluid.of("minecraft:water", 500)
