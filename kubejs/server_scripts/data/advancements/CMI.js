@@ -11,7 +11,7 @@ ServerEvents.highPriorityData((event) => {
 			"background": "cmi:textures/gui/advancements/main.png",
 			"description": {
 				"color": "#DBA213",
-				"translate": "advancement.cmi.start.desc"
+				"translate": "advancements.cmi.start.desc"
 			},
 			"frame": "task",
 			"hidden": false,
@@ -20,7 +20,7 @@ ServerEvents.highPriorityData((event) => {
 			},
 			"show_toast": true,
 			"title": {
-				"translate": "advancement.cmi.start"
+				"translate": "advancements.cmi.start"
 			}
 		},
 		"requirements": [
