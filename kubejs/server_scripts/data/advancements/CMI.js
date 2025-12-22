@@ -32,6 +32,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	event.addJson("cmi:advancements/echoes_north_star.json", {
+		parent: "cmi:start",
 		criteria: {
 			"0": {
 				conditions: {
@@ -53,7 +54,6 @@ ServerEvents.highPriorityData((event) => {
 		},
 		display: {
 			announce_to_chat: false,
-			background: "cmi:textures/gui/advancements/main.png",
 			description: {
 				"color": "#00b7ffff",
 				"translate": "advancements.cmi.north_star.desc"
