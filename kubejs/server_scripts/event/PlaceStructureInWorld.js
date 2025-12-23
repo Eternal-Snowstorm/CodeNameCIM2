@@ -15,6 +15,11 @@ ServerEvents.loaded((event) => {
 	let { server } = event
 	let structureNamespace = global.namespace
 
+	/**
+	 * 
+	 * @param {string} path 
+	 * @returns 
+	 */
 	function getStructureName(path) {
 		return ResourceLocation.fromNamespaceAndPath(structureNamespace, path)
 	}

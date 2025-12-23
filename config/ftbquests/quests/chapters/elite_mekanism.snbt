@@ -13,7 +13,7 @@
 		x: -1.5d
 		y: -3.5d
 	}]
-	order_index: 26
+	order_index: 27
 	quest_links: [ ]
 	quests: [
 		{
@@ -192,7 +192,7 @@
 			}]
 			tasks: [{
 				id: "338AF8B447D4C75F"
-				item: "immersiveengineering:plate_gold"
+				item: "thermal:gold_plate"
 				type: "item"
 			}]
 			title: "金板"

@@ -13,7 +13,7 @@
 		x: -2.0d
 		y: 0.0d
 	}]
-	order_index: 11
+	order_index: 12
 	quest_links: [ ]
 	quests: [
 		{
@@ -162,7 +162,7 @@
 			id: "51185FDAE329399B"
 			tasks: [{
 				id: "41B0806330D1C0C6"
-				item: "thermal:enderium_plate"
+				item: "vintageimprovements:enderium_sheet"
 				type: "item"
 			}]
 			x: -8.5d

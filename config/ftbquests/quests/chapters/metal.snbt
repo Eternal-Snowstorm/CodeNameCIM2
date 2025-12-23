@@ -1150,7 +1150,7 @@
 			y: 1.5d
 		}
 		{
-			icon: "mekanism:ingot_tin"
+			icon: "thermal:tin_ingot"
 			id: "4B5097DC553934DE"
 			rewards: [{
 				id: "1A10AA41303751C4"
@@ -1166,7 +1166,7 @@
 			y: 2.5d
 		}
 		{
-			icon: "mekanism:ingot_lead"
+			icon: "thermal:lead_ingot"
 			id: "30C78FF480D48761"
 			rewards: [{
 				id: "1045679868E22320"
@@ -1198,7 +1198,7 @@
 			y: 2.5d
 		}
 		{
-			icon: "immersiveengineering:ingot_silver"
+			icon: "thermal:silver_ingot"
 			id: "257E222C791D6BA5"
 			rewards: [{
 				id: "7F6172781DBFD7E8"
@@ -1278,7 +1278,7 @@
 			y: 1.5d
 		}
 		{
-			icon: "mekanism:ingot_bronze"
+			icon: "thermal:bronze_ingot"
 			id: "54A5E2AEA2766ED6"
 			rewards: [{
 				id: "3442DED4DB0479AD"
@@ -1294,7 +1294,7 @@
 			y: 2.5d
 		}
 		{
-			icon: "immersiveengineering:ingot_constantan"
+			icon: "thermal:constantan_ingot"
 			id: "2A20A99BECC374F5"
 			rewards: [{
 				id: "275ED571A4BC304C"
@@ -1326,7 +1326,7 @@
 			y: -0.5d
 		}
 		{
-			icon: "immersiveengineering:ingot_electrum"
+			icon: "thermal:electrum_ingot"
 			id: "0E6F8F7CD4A40D6C"
 			rewards: [{
 				id: "3CE566C60D3142E1"
@@ -1422,7 +1422,7 @@
 			y: -1.5d
 		}
 		{
-			icon: "mekanism:ingot_steel"
+			icon: "thermal:steel_ingot"
 			id: "6FCF9F67624D88CF"
 			rewards: [{
 				id: "3BE4CBACC037A2A9"
@@ -1438,7 +1438,7 @@
 			y: -2.5d
 		}
 		{
-			icon: "mekanism:ingot_uranium"
+			icon: "immersiveengineering:ingot_uranium"
 			id: "63124209A2CE30ED"
 			rewards: [{
 				id: "355B774D3246DA0E"
@@ -1454,7 +1454,7 @@
 			y: -0.5d
 		}
 		{
-			icon: "immersiveengineering:ingot_nickel"
+			icon: "thermal:nickel_ingot"
 			id: "63823472C4AC7DE1"
 			rewards: [{
 				id: "169AAB8A800FBB6F"

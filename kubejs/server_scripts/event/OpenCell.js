@@ -26,7 +26,7 @@ ItemEvents.rightClicked((event) => {
 	let { item, player } = event
 
 	let cell = cellMap.find((c) => {
-		c.item === item
+		return c.item === item
 	})
 	if (cell) {
 		player.swing()
@@ -34,12 +34,23 @@ ItemEvents.rightClicked((event) => {
 	}
 })
 
-// UI 工厂函数
+/**
+ * UI 工厂函数
+ * 
+ * @param {ResourceLocation_} texturePath 
+ * @returns 
+ */
 function createCellUI(texturePath) {
 	let group = new WidgetGroup()
 	const UI_WIDTH = (416 / 2) + (416 / 8)
 	const UI_HEIGHT = (512 / 2) + (512 / 8)
-	let mainTexture = new ResourceTexture(texturePath, 0, 0, 1, 1)
+	let mainTexture = new ResourceTexture(
+		texturePath,
+		0,
+		0,
+		1,
+		1
+	)
 	group.setSize(UI_WIDTH, UI_HEIGHT)
 	group.setBackground(mainTexture)
 	return group

@@ -79,6 +79,7 @@
 			y: 2.0d
 		}
 		{
+			description: ["整合包内添加了些许彩蛋, 这些彩蛋里有开发组的恶趣味, 也有让玩家更舒服的内容. 但是希望大家发现一个彩蛋后还请&l&c不要声张&r&r! 当彩蛋不再是彩蛋那它便失去了它作为彩蛋的意义了!"]
 			disable_toast: true
 			icon: "create:wrench"
 			id: "16E08617F49E62A9"
@@ -96,12 +97,13 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "完全和平且友好"
+			subtitle: "还请大家保密!"
 			tasks: [{
 				id: "2F9F7E1BE7866A66"
+				title: "彩蛋是对的"
 				type: "checkmark"
 			}]
-			title: "科技树"
+			title: "关于彩蛋"
 			x: -2.0d
 			y: -2.0d
 		}
