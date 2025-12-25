@@ -34,6 +34,7 @@ ItemEvents.rightClicked((event) => {
 	}
 })
 
+
 /**
  * UI 工厂函数
  * 
@@ -41,6 +42,14 @@ ItemEvents.rightClicked((event) => {
  * @returns 
  */
 function createCellUI(texturePath) {
+	let page = {
+		false: "1",
+		true: "2"
+	}
+	let clicked = false
+	let string = texturePath.toString()
+		.replace("cmi:textures/gui/cell/", "")
+		.replace(".png", "")
 	let group = new WidgetGroup()
 	const UI_WIDTH = (416 / 2) + (416 / 8)
 	const UI_HEIGHT = (512 / 2) + (512 / 8)
@@ -53,6 +62,27 @@ function createCellUI(texturePath) {
 	)
 	group.setSize(UI_WIDTH, UI_HEIGHT)
 	group.setBackground(mainTexture)
+	let button = new ButtonWidget()
+	button.setButtonTexture(ResourceBorderTexture.BUTTON_COMMON,
+		new TextTexture(Component.translatable("gui.cmi.cell.page_turning").getString()))
+	button.setClickedTexture(ResourceBorderTexture.BUTTON_COMMON,
+		new TextTexture(Component.translatable("gui.cmi.cell.page_turning").getString()))
+	button.setSelfPosition(216, 298)
+	button.setSize(32, 16)
+	button.setOnPressCallback((clickData) => {
+		if (clicked) {
+			clicked = false
+			return
+		} else {
+			clicked = true
+			return
+		}
+	})
+	let lable = new LabelWidget()
+	lable.setSelfPosition(35, 14)
+	lable.setTextProvider(() =>
+		Component.translatable(`text.cmi.cell.${string}.page_${page[clicked]}`).getString())
+	group.addWidgets(lable, button)
 	return group
 }
 
@@ -62,3 +92,4 @@ cellMap.forEach((cell) => {
 		event.success(createCellUI(cell.texture))
 	})
 })
+
