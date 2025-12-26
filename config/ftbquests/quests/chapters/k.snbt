@@ -279,12 +279,12 @@
 			id: "6D6905E6A6E7A153"
 			rewards: [{
 				id: "31C6DC82DD0202B2"
-				item: "cmi:feinforced_machine"
+				item: "cmi:reinforced_mechanism"
 				type: "item"
 			}]
 			tasks: [{
 				id: "36891FDD5DDE4833"
-				item: "cmi:feinforced_mechanism"
+				item: "cmi:reinforced_mechanism"
 				type: "item"
 			}]
 			x: 5.0d

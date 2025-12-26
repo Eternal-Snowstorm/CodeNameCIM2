@@ -149,7 +149,7 @@
 				"[任务] Decahydroflowey"
 			]
 			disable_toast: true
-			icon: "cmi:unknown_entity_"
+			icon: "cmi:re_construction"
 			id: "04615C350964977A"
 			rewards: [
 				{

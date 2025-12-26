@@ -699,7 +699,7 @@
 				"在节点上方第2格放置&9钻芯&r, 其下方放置&9钻头&r, 并接入动力后即可开始无限开采"
 				"{image:cmi:textures/images/ore_node_mining.png width:107 height:96 align:center}"
 			]
-			icon: "cmi:deepslate_iron_ore_node"
+			icon: "cmi:stone_iron_ore_node"
 			id: "515A858978CD77C7"
 			rewards: [{
 				id: "107D8CA3B55B71CA"
@@ -708,7 +708,7 @@
 			}]
 			subtitle: "无限获取"
 			tasks: [{
-				icon: "cmi:deepslate_iron_ore_node"
+				icon: "cmi:stone_iron_ore_node"
 				id: "1049179594D87817"
 				observe_type: 1
 				timer: 0L
