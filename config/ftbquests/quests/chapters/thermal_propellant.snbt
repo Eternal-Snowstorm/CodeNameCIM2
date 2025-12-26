@@ -190,7 +190,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "38E804B6C3B47453"
-				item: "cmi:feinforced_mechanism"
+				item: "cmi:reinforced_mechanism"
 				type: "item"
 			}]
 			x: 0.0d
