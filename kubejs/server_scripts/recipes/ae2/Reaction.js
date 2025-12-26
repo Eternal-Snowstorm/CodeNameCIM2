@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	// Example(Not tested)
+	/* Example
 	addRecipe(setOutput("minecraft:diamond", 3, "item"))
 		.energy(114514)
 		.items([
@@ -7,6 +7,7 @@ ServerEvents.recipes((event) => {
 		])
 		.fluids("minecraft:water", 500)
 		.build()
+	*/
 
 	/**
 	 * @param {object} output
@@ -17,8 +18,7 @@ ServerEvents.recipes((event) => {
 			type: "advanced_ae:reaction",
 			output: output,
 			fluid: {
-				fluidStack: {
-				}
+				fluidStack: {}
 			},
 			input_items: []
 		}

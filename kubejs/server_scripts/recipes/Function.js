@@ -1,12 +1,4 @@
 // priority: 100
-let $FluidTags =
-	Java.loadClass("net.minecraft.tags.FluidTags")
-let $BuiltInRegistries =
-	Java.loadClass("net.minecraft.core.registries.BuiltInRegistries")
-
-let $RegistryInfo =
-	Java.loadClass("dev.latvian.mods.kubejs.registry.RegistryInfo")
-
 let $MekanismAPI =
 	Java.loadClass("mekanism.api.MekanismAPI")
 let $Slurry =
@@ -42,13 +34,13 @@ let IngrUtils = {
 	 * @returns {String | null}
 	 */
 	getFirstFluidId: function (fluidTag) {
-		let tag = $FluidTags.create(ResourceLocation.parse(fluidTag))
-		let optional = $BuiltInRegistries.FLUID.getTag(tag)
+		let tag = FluidTags.create(ResourceLocation.parse(fluidTag))
+		let optional = BuiltInRegistries.FLUID.getTag(tag)
 
 		if (optional.isPresent()) {
 			let fluidHolder = optional.get().stream().findFirst().orElse(null)
 			if (fluidHolder !== null) {
-				let getFluidKey = $BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
+				let getFluidKey = BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
 				// console.log(`The first fluid is: ${getFluidKey}`)
 				return getFluidKey
 			}
@@ -77,14 +69,14 @@ let IngrUtils = {
 let MekanismType = {
 	Slurry: {
 		exists: function (id) {
-			return $RegistryInfo.of($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry)
+			return RegistryInfo.of($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry)
 				.hasValue(id)
 		},
 		of: makeOf("slurry")
 	},
 	Gas: {
 		exists: function (id) {
-			return $RegistryInfo.of($MekanismAPI.GAS_REGISTRY_NAME, $Gas)
+			return RegistryInfo.of($MekanismAPI.GAS_REGISTRY_NAME, $Gas)
 				.hasValue(id)
 		},
 		of: makeOf("gas")

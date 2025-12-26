@@ -50,9 +50,12 @@ function createCellUI(texturePath) {
 	let string = texturePath.toString()
 		.replace("cmi:textures/gui/cell/", "")
 		.replace(".png", "")
+
 	let group = new WidgetGroup()
+
 	const UI_WIDTH = (416 / 2) + (416 / 8)
 	const UI_HEIGHT = (512 / 2) + (512 / 8)
+
 	let mainTexture = new ResourceTexture(
 		texturePath,
 		0,
@@ -62,14 +65,18 @@ function createCellUI(texturePath) {
 	)
 	group.setSize(UI_WIDTH, UI_HEIGHT)
 	group.setBackground(mainTexture)
+
 	let button = new ButtonWidget()
-	button.setButtonTexture(ResourceBorderTexture.BUTTON_COMMON,
-		new TextTexture(Component.translatable("gui.cmi.cell.page_turning").getString()))
-	button.setClickedTexture(ResourceBorderTexture.BUTTON_COMMON,
-		new TextTexture(Component.translatable("gui.cmi.cell.page_turning").getString()))
+
+	const PAGE_TURNING = Component.translatable("gui.cmi.cell.page_turning").getString()
+	const BUTTON_COMMON = ResourceBorderTexture.BUTTON_COMMON
+
+	button.setButtonTexture(BUTTON_COMMON, new TextTexture(PAGE_TURNING))
+	button.setClickedTexture(BUTTON_COMMON, new TextTexture(PAGE_TURNING))
+
 	button.setSelfPosition(216, 298)
 	button.setSize(32, 16)
-	button.setOnPressCallback((clickData) => {
+	button.setOnPressCallback((data) => {
 		if (clicked) {
 			clicked = false
 			return
@@ -80,8 +87,9 @@ function createCellUI(texturePath) {
 	})
 	let lable = new LabelWidget()
 	lable.setSelfPosition(35, 14)
-	lable.setTextProvider(() =>
-		Component.translatable(`text.cmi.cell.${string}.page_${page[clicked]}`).getString())
+	lable.setTextProvider(() => {
+		return Component.translatable(`text.cmi.cell.${string}.page_${page[clicked]}`).getString()
+	})
 	group.addWidgets(lable, button)
 	return group
 }
@@ -92,4 +100,3 @@ cellMap.forEach((cell) => {
 		event.success(createCellUI(cell.texture))
 	})
 })
-
