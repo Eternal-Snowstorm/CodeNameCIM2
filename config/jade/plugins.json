@@ -65,9 +65,9 @@
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
-  "expatternprovider": {
-    "jade_chamber": true,
-    "jade_wireless": true
+  "uti": {
+    "entity_name": true,
+    "object_name": true
   },
   "functionalstorage": {
     "armory": true
@@ -109,7 +109,6 @@
   "kaleidoscope_cookery": {
     "chopping_board": true,
     "shawarma_spit": true,
-    "oil_pot": true,
     "recipe_block": true,
     "millstone": true,
     "enamel_basin": true
