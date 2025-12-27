@@ -1,5 +1,5 @@
 StartupEvents.registry("painting_variant", (event) => {
-	// Aleegos
+	// Alegos
 	// 嗯是的阿列不让我放了又
 	// 虽然但是之前确实是说允许的
 	// 所以我注释掉了

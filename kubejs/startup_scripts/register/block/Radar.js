@@ -161,7 +161,7 @@ StartupEvents.registry("block", (event) => {
             .waterlogged()
             .hardness(-1)
             .resistance(-1)
-            .model(`${global.namespace}:block/radar`)
+            .model(`${global.namespace}:block/broken_radar_part/radar`)
             .box(6, 0, 6, 10, 16, 10, true)
     }
 
@@ -179,7 +179,8 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
-        .model(`${global.namespace}:block/transformer`)
+        .model(`${global.namespace}:block/broken_radar_part/transformer`)
+        .notSolid()
 
     // 调制解调器
     addBlock("modem")
@@ -203,7 +204,7 @@ StartupEvents.registry("block", (event) => {
             .waterlogged()
             .hardness(-1)
             .resistance(-1)
-            .model(`${global.namespace}:block/modem`)
+            .model(`${global.namespace}:block/broken_radar_part/modem`)
             .notSolid()
     })
 
@@ -221,7 +222,8 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
-        .model(`${global.namespace}:block/tracking_array`)
+        .model(`${global.namespace}:block/broken_radar_part/tracking_array`)
+        .notSolid()
 
     // 电源
     addBlock("power_supply")
@@ -237,5 +239,6 @@ StartupEvents.registry("block", (event) => {
         .waterlogged()
         .hardness(-1)
         .resistance(-1)
-        .model(`${global.namespace}:block/power_supply`)
+        .model(`${global.namespace}:block/broken_radar_part/power_supply`)
+        .notSolid()
 })
