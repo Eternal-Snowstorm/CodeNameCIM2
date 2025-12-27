@@ -1851,13 +1851,15 @@
 	quest_links: [ ]
 	quests: [{
 		id: "3BA5E1C52EDBB242"
+		shape: "gear"
+		size: 2.0d
 		tasks: [{
 			id: "5DA76071E8046992"
 			title: "这里提供了一些矿石资源的获取方式"
 			type: "checkmark"
 		}]
-		x: -18.5d
-		y: -7.5d
+		x: -19.5d
+		y: -8.5d
 	}]
 	title: "资源"
 }
