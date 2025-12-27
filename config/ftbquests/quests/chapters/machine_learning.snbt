@@ -34,8 +34,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -2.0d
+			x: -16.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["46858C4B5052EC0C"]
@@ -62,8 +62,8 @@
 				type: "item"
 			}]
 			title: "安山合金"
-			x: -1.0d
-			y: 0.0d
+			x: -14.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -84,8 +84,8 @@
 				type: "item"
 			}]
 			title: "铁锭"
-			x: 1.0d
-			y: -2.0d
+			x: -13.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["65F2C054D52EB96B"]
@@ -108,8 +108,8 @@
 				title: "传动杆"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.0d
+			x: -15.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0E6030AA8C2A8243"]
@@ -131,8 +131,8 @@
 				title: "齿轮"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.0d
+			x: -13.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0E6030AA8C2A8243"]
@@ -155,8 +155,8 @@
 				title: "大齿轮"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.0d
+			x: -12.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0E6030AA8C2A8243"]
@@ -179,8 +179,8 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: 2.0d
+			x: -16.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["712B9101FE885629"]
@@ -195,8 +195,8 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.0d
+			x: -13.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6E9FFFBBCA1D13B7"]
@@ -208,14 +208,15 @@
 			}]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "做了这个可以参加空战历史性能14.3吗"
 			tasks: [{
 				id: "54F81836CC8C9999"
 				item: "cmi:andesite_mechanism"
 				type: "item"
 			}]
 			title: "安山构件"
-			x: -1.0d
-			y: 4.0d
+			x: -10.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
@@ -231,8 +232,8 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 6.0d
+			x: -11.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7FF0C3B318313C79"]
@@ -264,8 +265,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.0d
+			x: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3A8E9AE06B88D05E"]
@@ -282,8 +283,8 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["730DAE94F8D751D7"]
@@ -308,8 +309,8 @@
 				type: "item"
 			}]
 			title: "硫磺粉"
-			x: 1.5d
-			y: 4.0d
+			x: -5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
@@ -325,8 +326,8 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 6.5d
+			x: -10.0d
+			y: 4.0d
 		}
 		{
 			id: "44EA87F955CC8C23"
@@ -341,8 +342,8 @@
 				item: "cmi:copper_mechanism_basement"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 5.0d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			id: "283906AAD8AA56E8"
@@ -357,8 +358,8 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.0d
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -369,14 +370,14 @@
 			]
 			id: "42EB8C8A978CA905"
 			shape: "gear"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "3FD721764C64DDC3"
 				item: "cmi:copper_mechanism"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
@@ -386,15 +387,16 @@
 				type: "xp"
 				xp: 10
 			}]
-			size: 1.0d
+			shape: "rsquare"
+			size: 1.5d
 			subtitle: "橡胶, 橡胶, 更多的橡胶!"
 			tasks: [{
 				id: "73AB9A0B1A4FD96D"
 				item: "thermal:device_tree_extractor"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			id: "73210821C1E60467"
@@ -408,8 +410,8 @@
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.0d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
@@ -425,8 +427,8 @@
 				item: "create:spout"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 7.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
@@ -437,14 +439,16 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "rsquare"
+			size: 1.5d
 			subtitle: "无限产水"
 			tasks: [{
 				id: "33A573AB9F77F2F1"
 				item: "cmi:water_pump"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.0d
+			x: 1.5d
+			y: 3.75d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
@@ -459,8 +463,8 @@
 				item: "create:hose_pulley"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 6.0d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
@@ -476,8 +480,8 @@
 				item: "create:item_drain"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 7.5d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6EBB0E1E97405AAB"]
@@ -495,12 +499,14 @@
 				item: "cmi:iron_mechanism"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: -9.0d
+			y: -2.25d
 		}
 		{
 			dependencies: ["7510D0C5F36D0F1E"]
 			description: ["熔融青铜可以将铜和锡放到工作盆内加热搅拌, 但是这种配方有很大的损失, 请尽早做出冶炼炉"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "cmi:iron_mechanism_basement"
 			id: "6EBB0E1E97405AAB"
 			optional: true
@@ -525,8 +531,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: -2.0d
+			x: -9.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3DA43BDED8E5ECDC"]
@@ -550,14 +556,14 @@
 				type: "item"
 			}]
 			title: "橡胶板"
-			x: 3.0d
-			y: 2.5d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
 				"5E953238EC4CB053"
 				"0D5B2BC965C555DF"
-				"2CA18D2367DC42BD"
+				"64E57AAB64922B1E"
 			]
 			icon: "cmi:cured_rubber_bucket"
 			id: "3A8E9AE06B88D05E"
@@ -572,8 +578,8 @@
 				type: "item"
 			}]
 			title: "熔融硫化橡胶"
-			x: 3.0d
-			y: 4.0d
+			x: -4.0d
+			y: -0.5d
 		}
 		{
 			description: ["我想你已经有一个合适的定居点了"]
@@ -591,8 +597,8 @@
 				type: "checkmark"
 			}]
 			title: "创!造!模!式!"
-			x: -3.0d
-			y: 0.5d
+			x: -18.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
@@ -608,8 +614,8 @@
 				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 6.5d
+			x: -9.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["09892B803004AA1D"]
@@ -620,8 +626,8 @@
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.0d
+			x: -9.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["42EB8C8A978CA905"]
@@ -637,8 +643,8 @@
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.5d
+			x: -1.5d
+			y: 3.75d
 		}
 		{
 			can_repeat: false
@@ -668,8 +674,8 @@
 				item: { Count: 512, id: "create:large_water_wheel" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.0d
+			x: -16.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
@@ -692,8 +698,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: 6.0d
+			x: -7.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["20308A3CE26E5D67"]
@@ -716,8 +722,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 6.5d
+			x: -8.0d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -754,8 +760,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.0d
+			x: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["65F2C054D52EB96B"]
@@ -771,8 +777,8 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 0.0d
+			x: -14.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["06012DC3A4BBF58B"]
@@ -784,25 +790,8 @@
 				title: "熔融铁"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["64E57AAB64922B1E"]
-			id: "2CA18D2367DC42BD"
-			rewards: [{
-				id: "60058FC1A44C313E"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "熊熊燃烧的火苗"
-			tasks: [{
-				id: "04083E89DFE4327E"
-				item: "cmi:combustion_medium_block"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 5.5d
+			x: -11.5d
+			y: -2.5d
 		}
 		{
 			id: "64E57AAB64922B1E"
@@ -824,8 +813,8 @@
 				type: "item"
 			}]
 			title: "煤炭块或木炭块"
-			x: 3.0d
-			y: 7.0d
+			x: -4.5d
+			y: 1.0d
 		}
 		{
 			icon: "thermal:rubberwood_sapling"
@@ -851,8 +840,8 @@
 				type: "item"
 			}]
 			title: "找不到橡胶树?"
-			x: 1.5d
-			y: 2.5d
+			x: -5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -873,8 +862,8 @@
 				item: "createdieselgenerators:biodiesel_bucket"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: -12.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["45A8A2A35008745C"]
@@ -884,8 +873,8 @@
 				item: "immersiveengineering:creosote_bucket"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: -12.0d
+			y: -6.0d
 		}
 		{
 			description: ["&4焦炉&r在工作的同时可以产生一定量的&4杂酚油&r, 在前期焦炉的效率很低, 但是后期可以使用效率更高的&b旋转窑&r"]
@@ -915,8 +904,8 @@
 				type: "item"
 			}]
 			title: "焦炉"
-			x: -1.0d
-			y: -6.0d
+			x: -11.5d
+			y: -7.5d
 		}
 		{
 			id: "0498E2991294B14D"
@@ -946,7 +935,7 @@
 				}
 			]
 			title: "很甜.."
-			x: 3.0d
+			x: -11.0d
 			y: -4.0d
 		}
 	]

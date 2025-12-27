@@ -55,8 +55,8 @@
 				type: "item"
 			}]
 			title: "工作台"
-			x: -4.0d
-			y: -3.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["18237D913486FE33"]
@@ -106,8 +106,8 @@
 				}
 			]
 			title: "工匠必备"
-			x: -4.0d
-			y: 0.5d
+			x: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["005CD7BF1218DD20"]
@@ -146,8 +146,8 @@
 				type: "item"
 			}]
 			title: "知识扩充"
-			x: -2.0d
-			y: 0.5d
+			x: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -155,38 +155,44 @@
 				"0DB45287C4FF724B"
 				"3B35EDE8B923177A"
 			]
+			hide_dependent_lines: true
 			id: "414EEE72A59CEE7E"
 			rewards: [{
 				id: "7744CAAADE6B57E8"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "gear"
+			size: 1.5d
 			subtitle: "以前叫水泥来着..."
 			tasks: [{
 				id: "220DAA4A983F78AB"
 				item: "tconstruct:grout"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.0d
+			x: -0.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
 				"414EEE72A59CEE7E"
 				"136FAF419EC66A2F"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "2AEF0BF597FF0E36"
 			rewards: [{
 				id: "72E3D8891F99BEAD"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "gear"
 			tasks: [{
 				id: "73A17049198BEC5E"
 				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -2.0d
 			y: -2.0d
 		}
 		{
@@ -292,8 +298,8 @@
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -6.0d
+			x: 3.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["0950E73B864090F0"]
@@ -316,11 +322,12 @@
 				type: "checkmark"
 			}]
 			title: "铲子"
-			x: -2.0d
-			y: -4.0d
+			x: -2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1270086FA79438E4"]
+			hide_dependent_lines: true
 			icon: "minecraft:clay_ball"
 			id: "2F1D496A9B588220"
 			rewards: [{
@@ -328,6 +335,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "diamond"
 			subtitle: "不是指你, Dream"
 			tasks: [{
 				id: "5E890AB67D72E70A"
@@ -342,8 +350,8 @@
 				type: "item"
 			}]
 			title: "黏土"
-			x: 0.0d
-			y: -4.0d
+			x: -4.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["7C14A1CC724511CB"]
@@ -358,8 +366,8 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.0d
+			x: 2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -367,6 +375,7 @@
 				"2C0C50F32F39BD3F"
 				"6D27E2E448E70AE5"
 			]
+			hide_dependency_lines: true
 			id: "4F1185F495038BB3"
 			rewards: [
 				{
@@ -394,23 +403,25 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1270086FA79438E4"]
+			hide_dependent_lines: true
 			id: "0DB45287C4FF724B"
 			rewards: [{
 				id: "28861EAA34931FDE"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "diamond"
 			tasks: [{
 				id: "720500722CBF0E76"
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: -2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -436,8 +447,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -7.0d
+			x: 3.5d
+			y: -8.5d
 		}
 		{
 			description: [
@@ -466,7 +477,7 @@
 			]
 			title: "线"
 			x: 2.0d
-			y: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["2AEF0BF597FF0E36"]
@@ -477,6 +488,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "diamond"
 			subtitle: "提供的温度比固体燃料高"
 			tasks: [
 				{
@@ -496,17 +508,19 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: -1.5d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1270086FA79438E4"]
+			hide_dependent_lines: true
 			id: "3B35EDE8B923177A"
 			rewards: [{
 				id: "75B57A428322B493"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "diamond"
 			tasks: [{
 				id: "232BBF458E1AFF0B"
 				item: {
@@ -519,8 +533,8 @@
 				title: "沙子"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: -3.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -546,7 +560,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0950E73B864090F0"]
@@ -570,8 +584,8 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
+			x: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2AEF0BF597FF0E36"]
@@ -583,6 +597,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "diamond"
 			subtitle: "可以将没用完的液体存起来"
 			tasks: [
 				{
@@ -598,8 +613,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: -2.5d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["542BB1A40BC1B441"]
@@ -624,8 +639,8 @@
 				type: "checkmark"
 			}]
 			title: "耕种"
-			x: 0.0d
-			y: -7.0d
+			x: 0.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["7C14A1CC724511CB"]
@@ -643,8 +658,8 @@
 				type: "item"
 			}]
 			title: "去皮原木"
-			x: 4.0d
-			y: -6.0d
+			x: 4.5d
+			y: -6.5d
 		}
 	]
 	title: "艰难前期"

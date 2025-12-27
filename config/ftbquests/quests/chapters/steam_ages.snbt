@@ -30,8 +30,8 @@
 				type: "item"
 			}]
 			title: "蒸汽时代的开始"
-			x: 0.0d
-			y: 0.0d
+			x: -4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["50BE6EA508B2E833"]
@@ -63,8 +63,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 0.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["50BE6EA508B2E833"]
@@ -82,8 +82,8 @@
 				item: "cmi:bronze_mechanism"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.0d
+			x: -1.9880952380952408d
+			y: -0.6428571428571388d
 		}
 		{
 			dependencies: [
@@ -148,8 +148,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: -2.0d
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["50BE6EA508B2E833"]
@@ -167,11 +167,12 @@
 				type: "item"
 			}]
 			title: "青铜外壳"
-			x: 2.5d
-			y: -4.0d
+			x: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4405C578E1F06769"]
+			hide_dependency_lines: true
 			icon: "mekanism:steam_bucket"
 			id: "2E433CDEC9C53072"
 			rewards: [{
@@ -185,8 +186,8 @@
 				title: "获得蒸汽"
 				type: "checkmark"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2E433CDEC9C53072"]
@@ -258,8 +259,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.0d
+			x: 4.5d
+			y: 2.25d
 		}
 		{
 			dependencies: ["2E433CDEC9C53072"]
@@ -286,8 +287,8 @@
 				}
 			]
 			title: "飞轮!"
-			x: 7.5d
-			y: -1.0d
+			x: 4.5d
+			y: 0.75d
 		}
 		{
 			dependencies: ["4405C578E1F06769"]
@@ -310,7 +311,7 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -334,8 +335,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 2.0d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["39A64AAD5944BEE7"]
@@ -362,7 +363,7 @@
 			]
 			title: "铸铁飞轮"
 			x: 6.6d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["39A64AAD5944BEE7"]
@@ -388,8 +389,8 @@
 				}
 			]
 			title: "钢飞轮"
-			x: 8.4d
-			y: -3.0d
+			x: 6.6d
+			y: 1.2d
 		}
 	]
 	title: "蒸汽时代"

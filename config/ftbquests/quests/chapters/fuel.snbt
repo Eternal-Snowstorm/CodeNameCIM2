@@ -23,8 +23,8 @@
 				title: "燃料?"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2D245A409C2C190B"]
@@ -46,8 +46,8 @@
 				title: "原木"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["55952D9B9D8E8F21"]
@@ -63,8 +63,8 @@
 				item: "createdieselgenerators:wood_chip"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4930FB8565659CF5"]
@@ -80,8 +80,8 @@
 				item: "cmi:wood_chip_briquette"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.0d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5A90B92B1CCF14B8"]
@@ -97,8 +97,8 @@
 				item: "cmi:densely_packed_wood_chip_briquette"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["727E544121C1E389"]
@@ -114,8 +114,8 @@
 				item: "cmi:creosote_wood_chip_briquette"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 0.0d
+			x: 2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["55952D9B9D8E8F21"]
@@ -138,7 +138,7 @@
 				title: "木炭"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -163,8 +163,8 @@
 				type: "item"
 			}]
 			title: "木炭粉"
-			x: 7.0d
-			y: -1.5d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2D245A409C2C190B"]
@@ -204,8 +204,8 @@
 				title: "泥炭"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.0d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -232,7 +232,7 @@
 				title: "焦炭"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 4.0d
 			y: -2.5d
 		}
 		{
@@ -244,8 +244,8 @@
 				title: "煤炭"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -3.0d
+			x: 4.5d
+			y: -0.5d
 		}
 	]
 	title: "燃料"

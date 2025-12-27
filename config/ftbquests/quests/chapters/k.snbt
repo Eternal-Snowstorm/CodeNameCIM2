@@ -279,7 +279,7 @@
 			id: "6D6905E6A6E7A153"
 			rewards: [{
 				id: "31C6DC82DD0202B2"
-				item: "cmi:reinforced_mechanism"
+				item: "cmi:reinforced_machine"
 				type: "item"
 			}]
 			tasks: [{
