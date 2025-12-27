@@ -13,6 +13,7 @@
 				"如你所见,本整合包的金属材料全都被赋予了独立的熔点,你可能会因此被迫不断去制造对应的燃料与熔炉."
 				"不过别担心,既然我们做了这个系统,我们当然会为你尽可能详细的讲解~"
 			]
+			hide_dependent_lines: true
 			icon: "minecraft:furnace"
 			id: "55B7A6AEBB65DFDA"
 			rewards: [{
@@ -20,6 +21,8 @@
 				type: "xp"
 				xp: 10
 			}]
+			shape: "gear"
+			size: 2.0d
 			subtitle: "熔点系统带来的变革"
 			tasks: [{
 				id: "59FA22C26D126C02"
@@ -27,8 +30,8 @@
 				type: "checkmark"
 			}]
 			title: "千万注意!"
-			x: -3.0d
-			y: -3.5d
+			x: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["55B7A6AEBB65DFDA"]
@@ -37,6 +40,7 @@
 				"但很抱歉,他的力量被削弱的很厉害,到现在这点温度顶天也只能熔炼铜矿物了..."
 				"而且他没有匠魂熔炉的熔化增产,除了开局拿来烧炼粗铜后制造工具似乎也并不能发挥什么太大的作用了..."
 			]
+			hide_dependent_lines: true
 			id: "423068E2C60598B2"
 			rewards: [{
 				id: "16DF6C4C510BC7F6"
@@ -50,8 +54,8 @@
 				type: "item"
 			}]
 			title: "最基础的熔炼"
-			x: -1.5d
-			y: 0.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["55B7A6AEBB65DFDA"]
@@ -59,12 +63,15 @@
 				"在1000摄氏度以上的金属占据了主要地位的整合包内,&c&l仅能&r&r提供&c937摄氏度&r的焦黑加热器怕是只能熔炼&6锌 锡 黄铜 青铜&r这类熔点极低的金属了."
 				"它对于开局使用&6锌&r制造&b安山合金&r意义重大,可以说开局的机械动力就是从这里起源的."
 			]
+			hide_dependent_lines: true
 			id: "3497D2D25AA3ACA6"
 			rewards: [{
 				id: "6370035081EC0FEF"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "gear"
+			size: 1.5d
 			subtitle: "1000度以下还能应付"
 			tasks: [{
 				id: "2527A0D370DF24DF"
@@ -72,8 +79,8 @@
 				type: "item"
 			}]
 			title: "匠魂的基础加热"
-			x: -5.0d
-			y: -1.5d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["55B7A6AEBB65DFDA"]
@@ -103,7 +110,7 @@
 			}]
 			title: "橙红色的光泽"
 			x: -1.0d
-			y: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -135,8 +142,8 @@
 				type: "item"
 			}]
 			title: "老朋友"
-			x: -4.5d
-			y: 0.0d
+			x: -5.0d
+			y: -4.5d
 		}
 		{
 			description: [
@@ -164,8 +171,8 @@
 				}
 			]
 			title: "打成粉,然后呢？"
-			x: -7.0d
-			y: -2.0d
+			x: -6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -205,7 +212,7 @@
 			}]
 			title: "坚如磐石"
 			x: -7.0d
-			y: 0.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2F07FB52B3D85792"]
@@ -226,8 +233,8 @@
 				type: "item"
 			}]
 			title: "更进一步的冶炼"
-			x: -7.0d
-			y: 2.5d
+			x: -7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["57F25D7AD4CC6CBE"]
@@ -271,8 +278,8 @@
 				}
 			]
 			title: "混合均匀"
-			x: -4.5d
-			y: 5.0d
+			x: -8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["41D7E109B48C4231"]
@@ -301,8 +308,8 @@
 				type: "item"
 			}]
 			title: "铁器时代!"
-			x: -7.0d
-			y: 5.0d
+			x: -8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -334,8 +341,8 @@
 				type: "item"
 			}]
 			title: "我本来不是绿的!"
-			x: 1.0d
-			y: -2.0d
+			x: -0.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["55B7A6AEBB65DFDA"]
@@ -363,8 +370,8 @@
 				type: "item"
 			}]
 			title: "材质柔软,熔点也很低"
-			x: -0.5d
-			y: -3.5d
+			x: -2.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["57F25D7AD4CC6CBE"]
@@ -394,8 +401,8 @@
 				type: "item"
 			}]
 			title: "铁的加强态!"
-			x: -4.5d
-			y: 2.5d
+			x: -6.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["43A58164AF59ECA2"]
@@ -421,8 +428,8 @@
 				type: "item"
 			}]
 			title: "噪音警告!"
-			x: -2.0d
-			y: 2.5d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["378E684B19F5736E"]
@@ -472,8 +479,8 @@
 				}
 			]
 			title: "绝不会锇钨冲突!"
-			x: 0.5d
-			y: 5.0d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["22C43CFB89AA2C2B"]
@@ -503,8 +510,8 @@
 				type: "item"
 			}]
 			title: "仓库角落的闪光"
-			x: 0.5d
-			y: 2.5d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["423068E2C60598B2"]
@@ -513,6 +520,8 @@
 				"并且如下图所示, 铜&r&c不需要融化&r也可以直接放入&a部件制造台&r&r内制作对应的部件"
 				"{image:cmi:textures/images/copper_pickaxe.png width:162 height:56 align:center}"
 			]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "tconstruct:pickaxe"
@@ -598,6 +607,8 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
+			size: 1.5d
 			subtitle: "匠魂的铜镐挖掘等级为铁"
 			tasks: [{
 				id: "75271B65753A6297"
@@ -605,8 +616,8 @@
 				type: "checkmark"
 			}]
 			title: "我要怎么挖锌?"
-			x: -3.0d
-			y: 0.0d
+			x: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2F07FB52B3D85792"]
@@ -651,8 +662,8 @@
 				type: "item"
 			}]
 			title: "如何使用液体燃料?"
-			x: -9.5d
-			y: 0.0d
+			x: -9.0d
+			y: -5.5d
 		}
 		{
 			icon: "minecraft:raw_iron"
@@ -668,8 +679,8 @@
 				title: "资源获取"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: -6.0d
+			x: -6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["2ACC8CA727BBD613"]
@@ -686,7 +697,7 @@
 				item: "cmi:accelerator"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: -8.5d
 		}
 		{
@@ -699,7 +710,6 @@
 				"在节点上方第2格放置&9钻芯&r, 其下方放置&9钻头&r, 并接入动力后即可开始无限开采"
 				"{image:cmi:textures/images/ore_node_mining.png width:107 height:96 align:center}"
 			]
-			icon: "cmi:deepslate_iron_ore_node"
 			id: "515A858978CD77C7"
 			rewards: [{
 				id: "107D8CA3B55B71CA"
@@ -708,7 +718,7 @@
 			}]
 			subtitle: "无限获取"
 			tasks: [{
-				icon: "cmi:deepslate_iron_ore_node"
+				icon: "cmi:stone_iron_ore_node"
 				id: "1049179594D87817"
 				observe_type: 1
 				timer: 0L
@@ -717,8 +727,8 @@
 				type: "observation"
 			}]
 			title: "矿石节点"
-			x: -0.5d
-			y: -8.5d
+			x: -5.5d
+			y: -11.0d
 		}
 	]
 	title: "矿石获取与熔炼"

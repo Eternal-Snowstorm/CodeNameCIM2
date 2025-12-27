@@ -8,8 +8,8 @@
     "harvest_tool.show_unbreakable": true,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage": true,
     "item_storage.normal_amount": 9,
+    "item_storage": true,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -65,9 +65,9 @@
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
-  "expatternprovider": {
-    "jade_chamber": true,
-    "jade_wireless": true
+  "uti": {
+    "entity_name": true,
+    "object_name": true
   },
   "functionalstorage": {
     "armory": true
@@ -102,14 +102,6 @@
     "slurry": true,
     "energy": true,
     "tooltip_renderer": true
-  },
-  "kaleidoscope_cookery": {
-    "chopping_board": true,
-    "shawarma_spit": true,
-    "oil_pot": true,
-    "recipe_block": true,
-    "millstone": true,
-    "enamel_basin": true
   },
   "pipez": {
     "pipe": true

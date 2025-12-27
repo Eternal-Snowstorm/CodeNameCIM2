@@ -1514,7 +1514,7 @@
 				title: "铬 1907°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: -8.5d
 		}
 		{
@@ -1530,7 +1530,7 @@
 				title: "钒 1910°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -8.5d
 		}
 		{
@@ -1774,22 +1774,6 @@
 			y: -4.5d
 		}
 		{
-			icon: "thermal_extra:shellite_ingot"
-			id: "2BA97A720AD1622B"
-			rewards: [{
-				id: "17FB767B3E3F58C1"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2E9430FE38994765"
-				title: "潜影合金 1562°C"
-				type: "checkmark"
-			}]
-			x: 0.5d
-			y: -5.5d
-		}
-		{
 			icon: "tconstruct:manyullyn_ingot"
 			id: "477B3765FA977F07"
 			tasks: [{
@@ -1797,18 +1781,7 @@
 				title: "玛玉灵 1617°C"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: -5.5d
-		}
-		{
-			icon: "thermal_extra:twinite_ingot"
-			id: "431C299E79ED8509"
-			tasks: [{
-				id: "5035B831EF97DA3C"
-				title: "双子物质 1671°C"
-				type: "checkmark"
-			}]
-			x: -1.5d
+			x: 0.5d
 			y: -5.5d
 		}
 		{
@@ -1858,38 +1831,6 @@
 			}]
 			x: 0.5d
 			y: -7.5d
-		}
-		{
-			icon: "thermal_extra:soul_infused_ingot"
-			id: "243CFC63B116AD7B"
-			rewards: [{
-				id: "48979105BB50225A"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "5E8E9512A71DC1BC"
-				title: "注灵 1901°C"
-				type: "checkmark"
-			}]
-			x: 0.5d
-			y: -8.5d
-		}
-		{
-			icon: "thermal_extra:abyssal_ingot"
-			id: "5C2195BB1DD034F4"
-			rewards: [{
-				id: "18C7F527783E8AFA"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "66099B1B56B122FF"
-				title: "深渊 1953°C"
-				type: "checkmark"
-			}]
-			x: -2.5d
-			y: -8.5d
 		}
 		{
 			icon: "minecraft:netherite_ingot"

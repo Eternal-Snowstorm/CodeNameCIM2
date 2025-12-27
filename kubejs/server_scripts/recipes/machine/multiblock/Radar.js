@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
 						],
 						"jei": false,
 						"keys": {
-							"A": "cmi:grey_reinforced_concrete",
+							"A": "cmi:gray_reinforced_concrete",
 							"B": "cmi:white_reinforced_concrete",
 							"C": "minecraft:orange_concrete",
 							"D": "cmi:power_supply",

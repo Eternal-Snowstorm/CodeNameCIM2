@@ -51,6 +51,7 @@
 				"1A77BF1B49C2EA05"
 				"5BD6EBC1F19DB22C"
 			]
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "1841501B013A8139"
 			rewards: [{
@@ -168,7 +169,7 @@
 						value: "forge:ingots/signalum"
 					}
 				}
-				title: "任意 #forge:ingots/信素"
+				title: "信素"
 				type: "item"
 			}]
 			x: 0.5d
@@ -180,6 +181,7 @@
 				"73E05A58EE3905C4"
 				"5BD6EBC1F19DB22C"
 			]
+			hide_dependency_lines: true
 			id: "42DA0B5B429DACC9"
 			rewards: [{
 				id: "062C092498D86976"
@@ -190,7 +192,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "38E804B6C3B47453"
-				item: "cmi:feinforced_mechanism"
+				item: "cmi:reinforced_mechanism"
 				type: "item"
 			}]
 			x: 0.0d
@@ -202,6 +204,7 @@
 				"07AA69F3389F3143"
 				"5BD6EBC1F19DB22C"
 			]
+			hide_dependency_lines: true
 			id: "0531A82CFE7311D2"
 			rewards: [{
 				id: "14ADEC480B3C2B84"
@@ -406,7 +409,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["7CCC505D92DC2663"]
 			id: "74D97642DAB6DF6F"
 			tasks: [{
 				id: "6E1DC37A5994DE89"
@@ -414,17 +416,6 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["6F9E16D27C6C973B"]
-			id: "7CCC505D92DC2663"
-			tasks: [{
-				id: "163ED354A00B2D2B"
-				item: "thermal_extra:polyolefin_bucket"
-				type: "item"
-			}]
-			x: -0.5d
 			y: 0.5d
 		}
 		{

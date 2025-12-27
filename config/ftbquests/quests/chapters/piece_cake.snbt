@@ -19,7 +19,7 @@
 			}]
 			shape: "square"
 			size: 2.0d
-			subtitle: "就一个就行, 别搞太大"
+			subtitle: "就一个就行, 别搞太大\\n否则你的下场就是\\n\\n“现在的发电量是114514MFE”\\n“核电，轻而易举啊”\\n\\n“坏了坏了”\\n“你 死于核弹”"
 			tasks: [
 				{
 					id: "79019146BD8A0D92"
@@ -49,7 +49,7 @@
 			]
 			title: "裂变反应堆"
 			x: 0.0d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3BC96A9B0909BB8E"]
@@ -59,13 +59,14 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "是钋不是钚！"
 			tasks: [{
 				id: "34D833137CCF5271"
 				item: "mekanism:pellet_polonium"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: -0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3BC96A9B0909BB8E"]
@@ -75,17 +76,22 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "是钚不是钋！"
 			tasks: [{
 				id: "68E9057221E1F450"
 				item: "mekanism:pellet_plutonium"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.5d
+			x: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["29F86C33F70E9575"]
-			description: ["无需感谢我, 因为这是搭建SPS的确切材料数量"]
+			description: [
+				"无需感谢我, 因为这是搭建SPS的确切材料数量"
+				""
+				"&m这玩应的思索是另一个整合包搬过来的"
+			]
 			id: "27CBF88AFC0584A6"
 			rewards: [{
 				id: "370527A3EFC9290D"
@@ -121,8 +127,8 @@
 				}
 			]
 			title: "超临界移相器"
-			x: 3.0d
-			y: 2.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -137,13 +143,14 @@
 			}]
 			shape: "square"
 			size: 1.5d
+			subtitle: "我后台的战雷不是开的8.3吗为什么RWR在响\\n\\n“卧槽核弹轻而易举啊”"
 			tasks: [{
 				id: "546A9B4BDD1EE8ED"
 				item: "cmi:nuclear_mechanism"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 0.0d
+			x: 0.0d
+			y: 0.75d
 		}
 		{
 			dependencies: ["27CBF88AFC0584A6"]
@@ -158,8 +165,8 @@
 				item: "mekanism:pellet_antimatter"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["46CB630D33D3F705"]
@@ -176,8 +183,8 @@
 				item: "cmi:antimatter_mechanism"
 				type: "item"
 			}]
-			x: 6.75d
-			y: 2.25d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5B980D972FC0A54E"]
@@ -189,6 +196,7 @@
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "嫌核电难做？这可是你的任务，工程师！"
 			tasks: [{
 				id: "3B3C03672F656C74"
 				item: {
@@ -202,7 +210,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: -4.0d
 		}
 	]
 	title: "美味铀饼"
