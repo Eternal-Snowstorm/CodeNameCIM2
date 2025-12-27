@@ -59,59 +59,89 @@
   ],
   "gui": [
     {
-      "type": "custommachinery:player_inventory",
-      "priority": 2,
-      "texture": "cmi:textures/gui/radar/inventory.png",
-      "x": 43,
-      "y": 85
-    },
-    {
-      "type": "custommachinery:status",
-      "x": 236,
-      "y": 5
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "battery",
-      "texture": "cmi:textures/gui/battery_slot.png",
-      "x": 84,
-      "y": 55
-    },
-    {
-      "type": "custommachinery:energy",
-      "id": "energy_input",
-      "x": 137,
-      "y": 31
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "cell_input",
-      "texture": "cmi:textures/gui/cell_slot.png",
-      "x": 84,
-      "y": 31
+      "type": "custommachinery:background",
+      "texture": "cmi:textures/gui/radar/background.png",
+      "width": 224,
+      "height": 176
     },
     {
       "type": "custommachinery:slot",
       "id": "output",
-      "texture": "cmi:textures/gui/cell_slot.png",
-      "x": 110,
-      "y": 55
+      "priority": 1,
+      "texture": "cmi:textures/gui/radar/item_slot.png",
+      "x": 9,
+      "y": 52,
+      "width": 18,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "cell_input",
+      "priority": 1,
+      "texture": "cmi:textures/gui/radar/item_slot.png",
+      "x": 9,
+      "y": 16,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "battery",
+      "priority": 1,
+      "texture": "cmi:textures/gui/radar/battery_slot.png",
+      "x": 198,
+      "y": 10,
+      "ghost": {
+        "items": [
+          "minecraft:air"
+        ],
+        "color": {}
+      }
+    },
+    {
+      "type": "custommachinery:energy",
+      "priority": 1,
+      "x": 201,
+      "y": 31,
+      "texture_empty": "cmi:textures/gui/radar/energy_empty.png",
+      "texture_filled": "cmi:textures/gui/radar/energy_filled.png"
+    },
+    {
+      "type": "custommachinery:player_inventory",
+      "priority": 1,
+      "texture": "cmi:textures/gui/radar/inventory.png",
+      "x": 31,
+      "y": 93
+    },
+    {
+      "type": "custommachinery:status",
+      "x": 43,
+      "y": 17,
+      "texture_idle": "cmi:textures/gui/radar/idle.png",
+      "texture_running": "cmi:textures/gui/radar/processing.png"
     },
     {
       "type": "custommachinery:progress",
-      "texture": "cmi:textures/gui/progress_empty.png",
-      "x": 106,
-      "y": 34,
-      "texture_empty": "cmi:textures/gui/progress_empty.png",
-      "texture_filled": "cmi:textures/gui/progress_filled.png"
+      "x": 50,
+      "y": 44,
+      "texture_empty": "cmi:textures/gui/radar/progress_empty.png",
+      "texture_filled": "cmi:textures/gui/radar/progress_filled.png"
     },
     {
-      "type": "custommachinery:texture",
-      "texture": "cmi:textures/gui/radar/background.png",
-      "x": 1,
-      "y": 0,
-      "width": 255,
-      "height": 192
+      "type": "custommachinery:status",
+      "x": 43,
+      "y": 44,
+      "texture_idle": "cmi:textures/gui/radar/idle_bottom.png",
+      "texture_running": "cmi:textures/gui/radar/processing_bottom.png"
     }
   ],
   "jei": [
