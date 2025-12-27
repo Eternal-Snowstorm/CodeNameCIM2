@@ -20,7 +20,7 @@ function isMatch(belowBlockId, condition) {
 	return belowBlockId === condition
 }
 
-RegisterForgeEvents.onEvent($BlockEvent$FluidPlaceBlockEvent, (event) => {
+nativeEvent($BlockEvent$FluidPlaceBlockEvent, (event) => {
 	let getBlock = event.getNewState().getBlock()
 	let pos = event.getPos()
 	let level = event.level
@@ -38,7 +38,7 @@ RegisterForgeEvents.onEvent($BlockEvent$FluidPlaceBlockEvent, (event) => {
 	})
 })
 
-RegisterForgeEvents.onEvent($PipeCollisionEvent$Spill, (event) => {
+nativeEvent($PipeCollisionEvent$Spill, (event) => {
 	let getBlock = event.getState().block
 	let pos = event.getPos()
 	let level = event.level
