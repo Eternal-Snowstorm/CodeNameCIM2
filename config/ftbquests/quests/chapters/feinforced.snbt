@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "feinforced"
 	group: "65AEEF30E0964DD3"
-	icon: "cmi:feinforced_mechanism"
+	icon: "cmi:reinforced_mechanism"
 	id: "3D080324D6B46294"
 	images: [{
 		height: 23.28d
@@ -270,7 +270,7 @@
 			id: "1BFACCB25CDA31C5"
 			tasks: [{
 				id: "6FCC67A9DCA47ECB"
-				item: "cmi:feinforced_mechanism"
+				item: "cmi:reinforced_mechanism"
 				type: "item"
 			}]
 			title: "强化机械"
