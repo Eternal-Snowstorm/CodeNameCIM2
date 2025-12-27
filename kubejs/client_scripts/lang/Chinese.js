@@ -196,7 +196,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	})
 
 	addBlockLang("re_construction", "主创-Re_Construction")
-	addBlockLang("aleegos", "吉祥物-阿列戈斯")
+	addBlockLang("alegos", "吉祥物-阿列戈斯")
 	addBlockLang("qi_month", "美工&程序-柒月")
 	addBlockLang("eternalsnowstorm", "策划&程序-逐日炎雪_中微子")
 	addBlockLang("fiber_optics", "程序-FiberOptics")
@@ -403,7 +403,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAdvancementLang("south_cross", "星港", "即便断裂, 它依旧把角度留给那道未曾抵达的回声")
 
 	for (let i = 1; i <= 14; i++) {
-		addPaintingLang(`rr${i}`, `Aleegos(${i})`, "Aleegos Reality Redemption")
+		addPaintingLang(`rr${i}`, `Alegos(${i})`, "Alegos Reality Redemption")
 	}
 	addPaintingLang("bug_is_right", "有Bug是对的", "古镇天")
 	addPaintingLang("it_must_be_optifine", "一定是OptiFine干的", "XeKr")

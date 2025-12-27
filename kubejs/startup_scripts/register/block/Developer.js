@@ -70,8 +70,8 @@ StartupEvents.registry("block", (event) => {
 	addDeveloperDoll("dont_kill_belalus", "wide")
 
 	// region Other
-	// Aleegos
-	addDeveloperDoll("aleegos", "slim")
+	// Alegos
+	addDeveloperDoll("alegos", "slim")
 
 	// shi_xiao_bai_na
 	addDeveloperDoll("shi_xiao_bai_na", "slim")

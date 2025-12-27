@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "cmi:block/power_supper",
-		"particle": "cmi:block/power_supper"
+		"0": "cmi:block/space/machine/broken/power_supper",
+		"particle": "cmi:block/space/machine/broken/power_supper"
 	},
 	"elements": [
 		{
