@@ -14,6 +14,19 @@ ServerEvents.recipes((event) => {
 		E: "#create:mechanisms/iron"
 	})
 
+	// 气体收集器
+	kubejs.shaped("cmi:chemical_gas_extractor", [
+		"ABA",
+		"CDC",
+		"EBE"
+	], {
+		A: ["#forge:plates/steel", "#forge:ingots/steel"],
+		B: "ad_astra:fan",
+		C: "#create:mechanisms/air_tight",
+		D: "mekanism:electric_pump",
+		E: ["#forge:plates/stainless_steel", "#forge:ingots/stainless_steel"]
+	})
+
 	// 桶
 	kubejs.shaped("minecraft:bucket", [
 		"A A",
