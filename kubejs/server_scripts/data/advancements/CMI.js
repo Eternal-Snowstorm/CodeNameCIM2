@@ -34,7 +34,7 @@ ServerEvents.highPriorityData((event) => {
 	event.addJson("cmi:advancements/echoes_north_star.json", {
 		parent: "cmi:start",
 		criteria: {
-			"0": {
+			"get_water_pump": {
 				conditions: {
 					items: [
 						{
@@ -55,8 +55,8 @@ ServerEvents.highPriorityData((event) => {
 		display: {
 			announce_to_chat: false,
 			description: {
-				"color": "#00b7ffff",
-				"translate": "advancements.cmi.north_star.desc"
+				color: "#00b7ffff",
+				translate: "advancements.cmi.north_star.desc"
 			},
 			frame: "goal",
 			hidden: true,
@@ -69,7 +69,7 @@ ServerEvents.highPriorityData((event) => {
 			},
 			requirements: [
 				[
-					"0"
+					"get_water_pump"
 				]
 			]
 		}
@@ -78,17 +78,17 @@ ServerEvents.highPriorityData((event) => {
 	event.addJson("cmi:advancements/echoes_south_cross.json", {
 		parent: "cmi:echoes_north_star",
 		criteria: {
-			"0": {
-				"conditions": {
-					"items": [
+			"get_accelerator": {
+				conditions: {
+					items: [
 						{
-							"items": [
+							items: [
 								"cmi:accelerator"
 							]
 						}
 					]
 				},
-				"trigger": "minecraft:inventory_changed"
+				trigger: "minecraft:inventory_changed"
 			}
 		},
 		rewards: {
@@ -99,8 +99,8 @@ ServerEvents.highPriorityData((event) => {
 		display: {
 			announce_to_chat: false,
 			description: {
-				"color": "#fdba00ff",
-				"translate": "advancements.cmi.south_cross.desc"
+				color: "#fdba00ff",
+				translate: "advancements.cmi.south_cross.desc"
 			},
 			frame: "goal",
 			hidden: true,
@@ -113,7 +113,7 @@ ServerEvents.highPriorityData((event) => {
 			},
 			requirements: [
 				[
-					"0"
+					"get_accelerator"
 				]
 			]
 		}
