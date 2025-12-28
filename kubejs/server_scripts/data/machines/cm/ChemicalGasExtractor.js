@@ -22,7 +22,7 @@ ServerEvents.highPriorityData((event) => {
 			{
 				"type": "custommachinery:gas",
 				"mode": "output",
-				"capacity": 100000,
+				"capacity": 1000000,
 				"id": "output",
 				"maxInput": 1000,
 				"maxOutput": 2000,
