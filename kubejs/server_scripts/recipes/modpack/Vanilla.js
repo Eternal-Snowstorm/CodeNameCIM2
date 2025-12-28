@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
 		C: "#create:mechanisms/stone",
 		D: "#forge:gems/charged_amethyst",
 		E: "#create:mechanisms/iron"
-	})
+	}).id("cmi:accelerator")
 
 	// 气体收集器
 	kubejs.shaped("cmi:chemical_gas_extractor", [
@@ -120,7 +120,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:treated_wood",
 		B: "cmi:copper_mechanism",
 		C: "#forge:plates/iron"
-	})
+	}).id("cmi:water_pump")
 
 	// 奇怪的羊皮纸
 	kubejs.shaped("cmi:parchment", [

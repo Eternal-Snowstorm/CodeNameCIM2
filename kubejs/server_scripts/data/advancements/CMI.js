@@ -49,7 +49,7 @@ ServerEvents.highPriorityData((event) => {
 		},
 		rewards: {
 			loot: [
-				"cmi:torn_parchment_a"
+				"cmi:gameplay/torn_parchment_a"
 			]
 		},
 		display: {
@@ -93,7 +93,7 @@ ServerEvents.highPriorityData((event) => {
 		},
 		rewards: {
 			loot: [
-				"cmi:torn_parchment_b"
+				"cmi:gameplay/torn_parchment_b"
 			]
 		},
 		display: {
@@ -160,47 +160,5 @@ ServerEvents.highPriorityData((event) => {
 			"experience": 100
 		},
 		"sends_telemetry_event": true
-	})
-
-	event.addJson("cmi:loot_table/torn_parchment_a.json", {
-		type: "generic",
-		pools: [
-			{
-				bonus_rolls: 0.0,
-				rolls: 1,
-				entries: [
-					{
-						"type": "minecraft:alternatives",
-						"children": [
-							{
-								"type": "minecraft:item",
-								"name": "cmi:torn_parchment_a"
-							}
-						]
-					}
-				]
-			}
-		]
-	})
-
-	event.addJson("cmi:loot_table/torn_parchment_b.json", {
-		type: "generic",
-		pools: [
-			{
-				bonus_rolls: 0.0,
-				rolls: 1,
-				entries: [
-					{
-						"type": "minecraft:alternatives",
-						"children": [
-							{
-								"type": "minecraft:item",
-								"name": "cmi:torn_parchment_b"
-							}
-						]
-					}
-				]
-			}
-		]
 	})
 })
