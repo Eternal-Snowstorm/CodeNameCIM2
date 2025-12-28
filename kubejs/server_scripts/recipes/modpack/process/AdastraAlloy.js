@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 		"cookingtime": 100,
 		"energy": 20,
 		"ingredients": [
-			Ingredient.of("#forge:desh/raw").toJson(),
+			Ingredient.of("#forge:raw_materials/desh_scrap").toJson(),
 			Ingredient.of("#forge:ingots/aluminum").toJson()
 		],
 		"result": {
@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
 		"cookingtime": 100,
 		"energy": 20,
 		"ingredients": [
-			Ingredient.of("#forge:ostrum/raw").toJson(),
+			Ingredient.of("#forge:raw_materials/ostrum_scrap").toJson(),
 			Ingredient.of("#forge:ingots/scarlet_neodymium").toJson(),
 			Ingredient.of("#forge:ingots/azure_neodymium").toJson()
 		],
@@ -38,12 +38,12 @@ ServerEvents.recipes((event) => {
 		"cookingtime": 100,
 		"energy": 20,
 		"ingredients": [
-			Ingredient.of("#forge:calorite/raw").toJson(),
+			Ingredient.of("#forge:raw_materials/calorite_scrap").toJson(),
 			Ingredient.of("#forge:ingots/osmium").toJson()
 		],
 		"result": {
 			"id": "ad_astra:calorite_ingot",
-			"count": 6
+			"count": 4
 		}
 	})
 

@@ -76,5 +76,4 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("acidic_concentrated_sea_water")
 	addAloneFluid("bromine")
 	addAloneFluid("sodium_hydroxide")
-	addAloneFluid("syrup")
 })
