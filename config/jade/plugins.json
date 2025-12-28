@@ -65,9 +65,9 @@
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
-  "uti": {
-    "entity_name": true,
-    "object_name": true
+  "expatternprovider": {
+    "jade_chamber": true,
+    "jade_wireless": true
   },
   "functionalstorage": {
     "armory": true
@@ -93,9 +93,6 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
-  "yes_steve_model": {
-    "model_info": true
-  },
   "mekanism": {
     "infuse_type": true,
     "gas": true,
@@ -109,6 +106,7 @@
   "kaleidoscope_cookery": {
     "chopping_board": true,
     "shawarma_spit": true,
+    "oil_pot": true,
     "recipe_block": true,
     "millstone": true,
     "enamel_basin": true
