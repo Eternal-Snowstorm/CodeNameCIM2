@@ -17,4 +17,5 @@ JEIEvents.removeRecipes((event) => {
 		"cmi:immersiveengineering/blast_furnace/steel_ingot/stockpot",
 		"cmi:immersiveengineering/blast_furnace/steel_ingot/stockpot_lid",
 	])
+	// removeRecipeFromJEI("ae2:transform", "cmi:ae2/transform/max_storage_upgrade")
 })

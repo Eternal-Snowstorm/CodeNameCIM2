@@ -22,7 +22,8 @@ global.debugUserName = [
 	"117458866249",
 	"Ye_Anqing",
 	"KEYboardManDesu",
-	"oooooooo_zane"
+	"oooooooo_zane",
+	"Flash_Yi"
 ]
 /**
  * 挖掘等级

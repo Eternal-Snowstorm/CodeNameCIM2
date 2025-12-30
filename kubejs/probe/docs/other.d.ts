@@ -1,0 +1,1 @@
+type HeatedLevel = "heated" | "superheated" | "grilled";

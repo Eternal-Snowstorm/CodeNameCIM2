@@ -1,6 +1,10 @@
 // priority: 100
 
 let FluidBucketItemModel = {
+	/**
+	 * 
+	 * @param {string} fluid Fluid register id
+	 */
 	generate: function (fluid) {
 		if (Platform.isClientEnvironment()) {
 			let file = `kubejs/assets/${global.namespace}/models/item/${fluid}_bucket.json`

@@ -7,10 +7,18 @@
 			}
 		]
 	},
-	"meme.starup": {
+	"meme.startup": {
 		"sounds": [
 			{
-				"name": "cmi:meme/starup",
+				"name": "cmi:meme/startup",
+				"stream": true
+			}
+		]
+	},
+	"meme.bruh": {
+		"sounds": [
+			{
+				"name": "cmi:meme/bruh",
 				"stream": true
 			}
 		]

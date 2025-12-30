@@ -1,16 +1,11 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, minecraft } = event.recipes
-	const ETHANOL = "immersiveengineering:ethanol"
+	let { create, createdieselgenerators } = event.recipes
 
-	// 甘蔗糖浆
+	// 糖浆
 	create.compacting([
 		Fluid.of("thermal:syrup", 50),
 		"cmi:sugarcane_fiber"
 	], "minecraft:sugar_cane")
-
-	create.compacting(Fluid.of("thermal:syrup", 25), [
-		"#forge:vegetables/beetroot"
-	])
 
 	create.compacting([
 		Fluid.of("thermal:syrup", 150),
@@ -20,21 +15,37 @@ ServerEvents.recipes((event) => {
 		"minecraft:sugar"
 	])
 
+	create.compacting(Fluid.of("thermal:syrup", 125), [
+		"#forge:vegetables/beetroot"
+	])
+
+	create.compacting(Fluid.of("thermal:syrup", 125), [
+		"#forge:vegetables/beetroot",
+		"minecraft:sugar"
+	])
+
 	// 纸
 	create.emptying([
 		Fluid.of("thermal:syrup", 10),
 		"6x minecraft:paper"
 	], "cmi:sugarcane_fiber")
 
-	SmeltingRecipe.smoking(event, "3x minecraft:paper", "cmi:sugarcane_fiber")
+	SmeltingRecipes.smoking(event, "3x minecraft:paper", "cmi:sugarcane_fiber")
 
 	// 糖
 	create.mixing("minecraft:sugar", [
 		Fluid.of("thermal:syrup", 10)
 	]).heatRequirement(global.HeatLevel["grilled"])
 
-	// 乙醇发酵
+	/**
+	 * 乙醇发酵配方
+	 * 
+	 * @param {(Internal.InputFluid_|InputItem_)[]} input 输入物品
+	 * @param {number} amount 输出流体量
+	 * @returns 
+	 */
 	function addEthanolRecipes(input, amount) {
+		const ETHANOL = "immersiveengineering:ethanol"
 		let recipe =
 			createdieselgenerators.basin_fermenting(Fluid.of(ETHANOL, amount), [
 				Fluid.of("thermal:syrup", amount),

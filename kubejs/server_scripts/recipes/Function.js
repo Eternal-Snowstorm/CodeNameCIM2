@@ -106,9 +106,10 @@ function IEIngredient(input) {
 	if (Array.isArray(input)) {
 		let count = 0
 		let inps = []
+
 		for (let i of input) {
-			let item = Item.of(i, 1)
-				.toJson()
+			let item = Item.of(i, 1).toJson()
+
 			if (count === 0) {
 				count = Item.of(i)
 					.getCount()
@@ -120,6 +121,7 @@ function IEIngredient(input) {
 			count: count
 		}
 	}
+
 	return {
 		base_ingredient: Item.of(input)
 			.withCount(1)
@@ -129,48 +131,85 @@ function IEIngredient(input) {
 	}
 }
 
-let SmeltingRecipe = {
+let SmeltingRecipes = {
 	/**
-	 * 
-	 * @param {Internal.RecipesEventJS} event 
-	 * @param {OutputItem_} output 
-	 * @param {InputItem_} input 
+	 * 添加熔炼配方: 熔炉+高炉+烟熏
+	 *
+	 * @param {Internal.RecipesEventJS} event 配方事件
+	 * @param {OutputItem_} output 输出产物
+	 * @param {InputItem_} input 输入成分
+	 * @returns
 	 */
 	all: function (event, output, input) {
-		event.recipes.minecraft.smelting(output, input)
-			.cookingTime(200)
+		let { minecraft } = event.recipes
 
-		event.recipes.minecraft.blasting(output, input)
-			.cookingTime(100)
+		let smelting = minecraft
+			.smelting(output, input)
+			.cookingTime(20 * 10)
 
-		event.recipes.minecraft.smoking(output, input)
-			.cookingTime(100)
+		let blasting = minecraft
+			.blasting(output, input)
+			.cookingTime(20 * 5)
+
+		let smoking = minecraft
+			.smoking(output, input)
+			.cookingTime(20 * 5)
+
+		return {
+			smelting: smelting,
+			blasting: blasting,
+			smoking: smoking
+		}
 	},
+
 	/**
-	 * 
-	 * @param {Internal.RecipesEventJS} event 
-	 * @param {OutputItem_} output 
-	 * @param {InputItem_} input 
+	 * 注册：高炉 + 熔炉
+	 *
+	 * @param {Internal.RecipesEventJS} event 配方事件
+	 * @param {OutputItem_} output 输出产物
+	 * @param {InputItem_} input 输入成分
+	 * @returns 
 	 */
 	blasting: function (event, output, input) {
-		event.recipes.minecraft.blasting(output, input)
-			.cookingTime(100)
+		let { minecraft } = event.recipes
 
-		event.recipes.minecraft.smelting(output, input)
-			.cookingTime(200)
+		let blasting = minecraft
+			.blasting(output, input)
+			.cookingTime(20 * 5)
+
+		let smelting = minecraft
+			.smelting(output, input)
+			.cookingTime(20 * 10)
+
+		return {
+			blasting: blasting,
+			smelting: smelting
+		}
 	},
+
 	/**
-	 * 
-	 * @param {Internal.RecipesEventJS} event 
-	 * @param {OutputItem_} output 
-	 * @param {InputItem_} input 
+	 * 注册：烟熏 + 熔炉
+	 *
+	 * @param {Internal.RecipesEventJS} event 配方事件
+	 * @param {OutputItem_} output 输出产物
+	 * @param {InputItem_} input 输入成分
+	 * @returns 
 	 */
 	smoking: function (event, output, input) {
-		event.recipes.minecraft.blasting(output, input)
-			.cookingTime(100)
+		let { minecraft } = event.recipes
 
-		event.recipes.minecraft.smoking(output, input)
-			.cookingTime(100)
+		let smelting = minecraft
+			.smelting(output, input)
+			.cookingTime(20 * 10)
+
+		let smoking = minecraft
+			.smoking(output, input)
+			.cookingTime(20 * 5)
+
+		return {
+			smelting: smelting,
+			smoking: smoking
+		}
 	}
 }
 

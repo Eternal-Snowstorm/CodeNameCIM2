@@ -8,7 +8,8 @@ Ponder.registry((event) => {
 		scene.scaleSceneView(0.8)
 
 		scene.addKeyframe()
-		let move0 = scene.world.showIndependentSection([4, 1, 2], Direction.WEST)
+		let move0 =
+			scene.world.showIndependentSection([4, 1, 2], Direction.DOWN)
 		scene.world.moveSection(move0, [-2, 0, 0], 0)
 		scene.idle(20)
 		scene.overlay.showOutline("blue", {}, [2, 1, 2], 90)
