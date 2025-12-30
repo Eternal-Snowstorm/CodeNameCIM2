@@ -5,18 +5,15 @@ ServerEvents.highPriorityData((event) => {
 	 * @param {String} namespace 命名空间
 	 * @param {String} name 文件名
 	 */
-	function deleteTemplatePool(namespace, name) {
-		event.addJson(`cmi:worldgen/template_pool/${namespace}/${name}`, {
-			name: `${global.namespace}:dev/blank`,
-			fallback: "minecraft:empty",
-			elements: [
-				{
-					weight: 1,
-					element: {
-						element_type: "minecraft:empty_pool_element"
-					}
-				}
-			]
+	function deleteStructureGen(namespace, name) {
+		event.addJson(`${namespace}:worldgen/structure_set/${name}`, {
+			"structures": [],
+			"placement": {
+				"type": "minecraft:random_spread",
+				"spacing": 16,
+				"separation": 8,
+				"salt": 1
+			}
 		})
 	}
 
@@ -32,15 +29,15 @@ ServerEvents.highPriorityData((event) => {
 		})
 	}
 
-	deleteTemplatePool("ad_astra", "oil_well")
-	deleteTemplatePool("deepdrilling", "copper_node")
-	deleteTemplatePool("deepdrilling", "gold_node")
-	deleteTemplatePool("deepdrilling", "iron_node")
-	deleteTemplatePool("deepdrilling", "zinc_node")
-	deleteTemplatePool("deepdrilling", "asurine_node")
-	deleteTemplatePool("deepdrilling", "crimsite_node")
-	deleteTemplatePool("deepdrilling", "ochrum_node")
-	deleteTemplatePool("deepdrilling", "veridium_node")
+	deleteStructureGen("ad_astra", "oil_well")
+	deleteStructureGen("deepdrilling", "copper_node")
+	deleteStructureGen("deepdrilling", "gold_node")
+	deleteStructureGen("deepdrilling", "iron_node")
+	deleteStructureGen("deepdrilling", "zinc_node")
+	deleteStructureGen("deepdrilling", "asurine_node")
+	deleteStructureGen("deepdrilling", "crimsite_node")
+	deleteStructureGen("deepdrilling", "ochrum_node")
+	deleteStructureGen("deepdrilling", "veridium_node")
 
 	deleteFeatureGen("immersiveengineering", "uranium")
 	deleteFeatureGen("immersiveengineering", "nickel")
