@@ -122,7 +122,31 @@ ServerEvents.recipes((event) => {
 
 	mekanism.rotary()
 		.fluidInput(Fluid.of("cmi:fluid_nitroglycerine", 200))
-		.gasOutput("1x cmi:nitroglycerine")
+		.gasOutput(MekanismType.Gas.of("cmi:nitroglycerine", 20))
 		.fluidOutput(Fluid.of("cmi:fluid_nitroglycerine", 200))
-		.gasInput("1x cmi:nitroglycerine")
+		.gasInput(MekanismType.Gas.of("cmi:nitroglycerine", 20))
+
+	mekanism.rotary()
+		.fluidInput(Fluid.of("cmi:geyser_jet", 200))
+		.gasOutput(MekanismType.Gas.of("cmi:geyser_jet", 200))
+		.fluidOutput(Fluid.of("cmi:geyser_jet", 200))
+		.gasInput(MekanismType.Gas.of("cmi:geyser_jet", 200))
+
+	mekanism.rotary()
+		.fluidInput(Fluid.of("cmi:mercury", 200))
+		.gasOutput(MekanismType.Gas.of("cmi:mercury", 200))
+		.fluidOutput(Fluid.of("cmi:mercury", 200))
+		.gasInput(MekanismType.Gas.of("cmi:mercury", 200))
+
+	mekanism.rotary()
+		.fluidInput(Fluid.of("cmi:radon", 200))
+		.gasOutput(MekanismType.Gas.of("cmi:radon", 200))
+		.fluidOutput(Fluid.of("cmi:radon", 200))
+		.gasInput(MekanismType.Gas.of("cmi:radon", 200))
+
+	mekanism.rotary()
+		.fluidInput(Fluid.of("cmi:xenon", 200))
+		.gasOutput(MekanismType.Gas.of("cmi:xenon", 200))
+		.fluidOutput(Fluid.of("cmi:xenon", 200))
+		.gasInput(MekanismType.Gas.of("cmi:xenon", 200))
 })
