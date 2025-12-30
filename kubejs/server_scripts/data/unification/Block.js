@@ -45,6 +45,10 @@ ServerEvents.highPriorityData((event) => {
 		"mekanism:deepslate_tin_ore"
 	], "thermal:deepslate_tin_ore")
 
+	addUnification("steel_cluster", [
+		"tconstruct:steel_cluster"
+	],"minecraft:air")
+
 	function addUnification(name, match, block) {
 		let blockUnification = {
 			matchBlocks: match,

@@ -13,10 +13,7 @@ ServerEvents.highPriorityData((event) => {
 				{
 					weight: 1,
 					element: {
-						location: "cmi:dev/blank",
-						element_type: "minecraft:single_pool_element",
-						processors: "minecraft:empty",
-						projection: "rigid"
+						element_type: "minecraft:empty_pool_element"
 					}
 				}
 			]
@@ -30,12 +27,8 @@ ServerEvents.highPriorityData((event) => {
 	 */
 	function deleteFeatureGen(namespace, name) {
 		event.addJson(`${namespace}:worldgen/configured_feature/${name}`, {
-			type: "minecraft:ore",
-			config: {
-				discard_chance_on_air_exposure: 0.0,
-				size: 1,
-				targets: []
-			}
+			type: "minecraft:no_op",
+			config: {}
 		})
 	}
 

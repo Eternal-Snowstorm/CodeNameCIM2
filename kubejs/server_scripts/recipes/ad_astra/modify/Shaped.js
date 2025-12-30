@@ -122,43 +122,6 @@ ServerEvents.recipes((event) => {
 		F: "#cmi:batteries"
 	}).id("ad_astra:oxygen_loader")
 
-	// 航天服T1
-	create.mechanical_crafting("ad_astra:space_helmet", [
-		"AAA",
-		"BCB"
-	], {
-		A: "#forge:plates/hdpe",
-		B: "#forge:plates/tungsten_steel",
-		C: "#forge:panes/glass"
-	}).id("ad_astra:space_helmet")
-
-	create.mechanical_crafting("ad_astra:space_suit", [
-		" A A ",
-		"CABAC",
-		" BAB "
-	], {
-		A: "#forge:plates/tungsten_steel",
-		B: "#forge:plates/hdpe",
-		C: "ad_astra:gas_tank"
-	}).id("ad_astra:space_suit")
-
-	create.mechanical_crafting("ad_astra:space_pants", [
-		"ABA",
-		"B B",
-		"A A"
-	], {
-		A: "#forge:plates/tungsten_steel",
-		B: "#forge:plates/hdpe"
-	}).id("ad_astra:space_pants")
-
-	create.mechanical_crafting("ad_astra:space_boots", [
-		"A A",
-		"B B",
-	], {
-		A: "#forge:plates/tungsten_steel",
-		B: "#forge:plates/hdpe"
-	}).id("ad_astra:space_boots")
-
 	// 电力高炉
 	kubejs.shaped("ad_astra:etrionic_blast_furnace", [
 		"A A",
