@@ -111,6 +111,16 @@ ServerEvents.recipes((event) => {
 		B: "#forge:ingots/vanadium"
 	})
 
+	// 雷达终端
+	kubejs.shaped("cmi:radar_terminal", [
+		"ABA",
+		"ACA"
+	], {
+		A: "#forge:plates/aluminum",
+		B: "cmi:smart_mechanism",
+		C: "cmi:tier_1_aviation_mechanism"
+	})
+
 	// 水泵
 	kubejs.shaped("cmi:water_pump", [
 		"ACA",
