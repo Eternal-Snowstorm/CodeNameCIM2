@@ -22,26 +22,6 @@ ServerEvents.recipes((event) => {
 		"#forge:nuggets/zinc"
 	]).heatRequirement("grilled")
 
-	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 120), [
-		"minecraft:andesite",
-		Fluid.of("tconstruct:molten_iron", 10)
-	]).heatRequirement("grilled")
-
-	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 120), [
-		"minecraft:andesite",
-		Fluid.of("tconstruct:molten_zinc", 10)
-	]).heatRequirement("grilled")
-
-	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
-		"minecraft:andesite",
-		"#forge:nuggets/iron"
-	]).heatRequirement("grilled")
-
-	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 90), [
-		"minecraft:andesite",
-		"#forge:nuggets/zinc"
-	]).heatRequirement("grilled")
-
 	// 殷钢
 	create.mixing(Fluid.of("tconstruct:molten_invar", 270), [
 		"2x #forge:ingots/iron",
