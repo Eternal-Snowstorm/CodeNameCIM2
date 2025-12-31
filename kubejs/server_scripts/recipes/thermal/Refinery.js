@@ -61,6 +61,14 @@ ServerEvents.recipes((event) => {
 	], Fluid.of("cmi:geyser_jet", 1000))
 		.energy(4000)
 
+	// 氧气
+	thermal_extra.advanced_refinery([
+		"2x createaddition:biomass",
+		Fluid.of("minecraft:water", 500),
+		Fluid.of("ad_astra:oxygen", 125)
+	], Fluid.of("cmi:photosyn_fluid", 1000))
+		.energy(5000)
+
 	// 柴油压缩炉统一
 	thermal.compression_fuel("createdieselgenerators:diesel", 2000000)
 })

@@ -96,6 +96,9 @@ ServerEvents.tags("fluid", (event) => {
 		.add("createdieselgenerators:diesel")
 		.add("createdieselgenerators:gasoline")
 
+	event.get("forge:sauce/tomato")
+		.add("create_central_kitchen:tomato_sauce")
+
 	let thermalMaterials = [
 		"soul_infused",
 		"shellite",

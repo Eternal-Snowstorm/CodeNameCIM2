@@ -713,6 +713,7 @@
  - 添加了`水井`的结构预览
  - 添加了`多方块搭建器`
  - 覆盖`Alex's Caves`群系的新维度
+ - 数个新材料及其获取、用途
  - 添加了新的配置文件: 用于开关大型云杉树生长时是否将周边的泥土转换为灰化土(默认禁用转换)
  - **Mods**
 	- `Advanced Loot Info`
@@ -732,9 +733,9 @@
    	- `Oculus`
    	- `Oculus Flywheel Compat`
    	- `Multiblocked 2`
-   	- `LdLib`
    	- `fabricskyboxes`
    	- `ExtendedAE`
    	- `工程师蓝图`
+   	- `凿子`系列
 
 </font>	

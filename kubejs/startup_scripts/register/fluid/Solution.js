@@ -1,12 +1,23 @@
 StartupEvents.registry("fluid", (event) => {
+	/**
+	 * 添加溶液
+	 * 
+	 * @param {string} name1 
+	 * @param {string} name2 
+	 * @param {string} tag 
+	 * @param {dev.latvian.mods.rhino.mod.util.color.Color_} color1 
+	 * @param {dev.latvian.mods.rhino.mod.util.color.Color_} color2 
+	 * @returns 
+	 */
 	function addSolutionFluid(name1, name2, tag, color1, color2) {
 		let builder1 = event.create(`${global.namespace}:${name1}_solution`)
 
 		builder1.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 		builder1.stillTexture(`${global.namespace}:fluid/solution/still`)
-		builder1.thinTexture(color1)
+		// builder1.thinTexture(color1)
 		builder1.bucketColor(color1)
 		builder1.renderType("translucent")
+		builder1.tag("forge:solutions")
 		builder1.tag(`forge:solutions/${tag}/chloride`)
 		builder1.tag(`forge:solutions/${tag}`)
 
@@ -14,9 +25,10 @@ StartupEvents.registry("fluid", (event) => {
 
 		builder2.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 		builder2.stillTexture(`${global.namespace}:fluid/solution/still`)
-		builder2.thinTexture(color2)
+		// builder2.thinTexture(color2)
 		builder2.bucketColor(color2)
 		builder2.renderType("translucent")
+		builder2.tag("forge:solutions")
 		builder2.tag(`forge:solutions/${tag}/sulfate`)
 		builder2.tag(`forge:solutions/${tag}`)
 

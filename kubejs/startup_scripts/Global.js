@@ -22,7 +22,8 @@ global.debugUserName = [
 	"117458866249",
 	"Ye_Anqing",
 	"KEYboardManDesu",
-	"oooooooo_zane"
+	"oooooooo_zane",
+	"Flash_Yi"
 ]
 /**
  * 挖掘等级
@@ -274,6 +275,34 @@ global.meltingPoints = {
 	"shadow_steel": 2106, // null
 	"refined_radiance": 2106, // null
 }
+/**
+ * 金属流体副产物
+ * 用于匠魂配方
+ * 总之就是金属类型对应流体ID
+ * 
+ * @type {{ [key:string]: string }}
+ */
+global.materialByProduct = {
+	"aluminum": "tconstruct:molten_emerald",
+	"azure_neodymium": "cmi:molten_cast_iron",
+	"cobalt": "tconstruct:liquid_soul",
+	"copper": "tconstruct:molten_clay",
+	"etrium": "tconstruct:molten_glass",
+	"gold": "tconstruct:molten_quartz",
+	"iron": "thermal:redstone",
+	"lead": "thermal:syrup",
+	"nickel": "createdieselgenerators:crude_oil",
+	"osmium": "mekanism:hydrofluoric_acid",
+	"platinum": "thermal:glowstone",
+	"scarlet_neodymium": "cmi:molten_industrial_iron",
+	"silver": "deepdrilling:sludge",
+	"tin": "cmi:molten_andesite_alloy",
+	"tungsten": "minecraft:lava",
+	"uranium": "mekanism:sulfuric_acid",
+	"vanadium": "tconstruct:molten_amethyst",
+	"zinc": "immersiveengineering:creosote"
+}
+
 /**
  * 命名空间
  * v代表该材料是由TIC本体添加的

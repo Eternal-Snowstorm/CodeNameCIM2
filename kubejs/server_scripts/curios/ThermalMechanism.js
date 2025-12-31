@@ -1,3 +1,4 @@
+/*
 const COMBO_WINDOW_TICKS = 30
 
 let comboTimerMap = {}
@@ -89,3 +90,4 @@ ItemEvents.firstLeftClicked((event) => {
 		player.attack(2)
 	}
 })
+*/

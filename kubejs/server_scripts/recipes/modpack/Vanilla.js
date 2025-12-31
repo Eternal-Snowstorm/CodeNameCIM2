@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
 		C: "#create:mechanisms/stone",
 		D: "#forge:gems/charged_amethyst",
 		E: "#create:mechanisms/iron"
-	})
+	}).id("cmi:accelerator")
 
 	// 气体收集器
 	kubejs.shaped("cmi:chemical_gas_extractor", [
@@ -111,6 +111,16 @@ ServerEvents.recipes((event) => {
 		B: "#forge:ingots/vanadium"
 	})
 
+	// 雷达终端
+	kubejs.shaped("cmi:radar_terminal", [
+		"ABA",
+		"ACA"
+	], {
+		A: "#forge:plates/aluminum",
+		B: "cmi:smart_mechanism",
+		C: "cmi:tier_1_aviation_mechanism"
+	})
+
 	// 水泵
 	kubejs.shaped("cmi:water_pump", [
 		"ACA",
@@ -120,7 +130,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:treated_wood",
 		B: "cmi:copper_mechanism",
 		C: "#forge:plates/iron"
-	})
+	}).id("cmi:water_pump")
 
 	// 奇怪的羊皮纸
 	kubejs.shaped("cmi:parchment", [
@@ -245,7 +255,7 @@ ServerEvents.recipes((event) => {
 	}).id("mekanism:enrichment_chamber")
 
 	// 安山岩
-	SmeltingRecipe.blasting(event, "2x minecraft:andesite", "cmi:andesite_aggregate")
+	SmeltingRecipes.blasting(event, "2x minecraft:andesite", "cmi:andesite_aggregate")
 
 	// IOBlock
 	kubejs.shapeless("cmi:gui_block", [

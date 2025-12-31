@@ -1,0 +1,51 @@
+ServerEvents.highPriorityData((event) => {
+
+	/**
+	 * 
+	 * @param {String} namespace 命名空间
+	 * @param {String} name 文件名
+	 */
+	function deleteStructureGen(namespace, name) {
+		event.addJson(`${namespace}:worldgen/structure_set/${name}`, {
+			"structures": [],
+			"placement": {
+				"type": "minecraft:random_spread",
+				"spacing": 16,
+				"separation": 8,
+				"salt": 1
+			}
+		})
+	}
+
+	/**
+	 * 
+	 * @param {String} namespace 命名空间
+	 * @param {String} name 文件名
+	 */
+	function deleteFeatureGen(namespace, name) {
+		event.addJson(`${namespace}:worldgen/configured_feature/${name}`, {
+			type: "minecraft:no_op",
+			config: {}
+		})
+	}
+
+	deleteStructureGen("ad_astra", "oil_well")
+	deleteStructureGen("deepdrilling", "copper_node")
+	deleteStructureGen("deepdrilling", "gold_node")
+	deleteStructureGen("deepdrilling", "iron_node")
+	deleteStructureGen("deepdrilling", "zinc_node")
+	deleteStructureGen("deepdrilling", "asurine_node")
+	deleteStructureGen("deepdrilling", "crimsite_node")
+	deleteStructureGen("deepdrilling", "ochrum_node")
+	deleteStructureGen("deepdrilling", "veridium_node")
+
+	deleteFeatureGen("immersiveengineering", "uranium")
+	deleteFeatureGen("immersiveengineering", "nickel")
+	deleteFeatureGen("immersiveengineering", "silver")
+	deleteFeatureGen("immersiveengineering", "deep_nickel")
+	deleteFeatureGen("immersiveengineering", "lead")
+	deleteFeatureGen("mekanism", "ore_uranium_small")
+	deleteFeatureGen("mekanism", "ore_uranium_small_retrogen")
+	deleteFeatureGen("mekanism", "ore_uranium_buried")
+	deleteFeatureGen("mekanism", "ore_uranium_buried_retrogen")
+})

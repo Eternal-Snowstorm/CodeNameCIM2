@@ -578,35 +578,11 @@
 				}
 			}
 			id: "164862935DD9DE1D"
-			rewards: [
-				{
-					id: "4692CC8EA5B87985"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "2F25403D551BA9BD"
-					item: {
-						Count: 1
-						id: "tconstruct:tool_binding"
-						tag: {
-							Material: "tconstruct:rock"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6F47FA154F659AF3"
-					item: {
-						Count: 1
-						id: "tconstruct:tool_handle"
-						tag: {
-							Material: "tconstruct:wood"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4692CC8EA5B87985"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "匠魂的铜镐挖掘等级为铁"
@@ -703,12 +679,14 @@
 		{
 			dependencies: ["2ACC8CA727BBD613"]
 			description: [
-				"矿石节点会随机生成在地表, 周围分布着部分粗矿块与矿石, 中心则包含一个节点方块"
-				"{image:cmi:textures/images/ore_node.png width:109 height:84 align:center}"
+				"矿石节点会随机生成在地表, 周围分布着部分粗矿块, 矿石以及少量装饰性方块, 中心则包含一个节点方块"
+				"节点方块不可被任何形式带, 包括矿车, 列车, 量子塔和集装箱等"
+				"{image:cmi:textures/images/copper_ore_node.png width:122 height:111 align:center}"
+				"{image:cmi:textures/images/iron_ore_node.png width:138 height:120 align:center}"
 				"{@pagebreak}"
 				"开采节点需要制作一个&9钻芯&r和任意材质的&9钻头(安山合金、铜或黄铜)&r"
 				"在节点上方第2格放置&9钻芯&r, 其下方放置&9钻头&r, 并接入动力后即可开始无限开采"
-				"{image:cmi:textures/images/ore_node_mining.png width:107 height:96 align:center}"
+				"{image:cmi:textures/images/ore_node_mining.png width:118 height:125 align:center}"
 			]
 			id: "515A858978CD77C7"
 			rewards: [{
