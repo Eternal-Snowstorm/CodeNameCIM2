@@ -62,6 +62,9 @@ StartupEvents.registry("block", (event) => {
 
 	// 亓才孑
 	addDeveloperDoll("qicaijie", "slim")
+
+	// 闪电羿
+	addDeveloperDoll("flash_yi", "slim")
 	// endregion
 
 	// music
@@ -70,14 +73,6 @@ StartupEvents.registry("block", (event) => {
 	addDeveloperDoll("dont_kill_belalus", "wide")
 
 	// region Other
-	// Alegos
-	addDeveloperDoll("alegos", "slim")
-
-	// shi_xiao_bai_na
-	addDeveloperDoll("shi_xiao_bai_na", "slim")
-
-	// hanhan
-	addDeveloperDoll("hanhan_ovo", "wide")
 
 	// dkrkoo_weihe
 	addDeveloperDoll("dkrkoo_weihe", "slim")
