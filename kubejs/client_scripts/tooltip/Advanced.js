@@ -16,6 +16,20 @@ ItemEvents.tooltip((event) => {
 	addAccelerateTooltip("cmi:air_tight_mechanism")
 	addAccelerateTooltip("create:precision_mechanism")
 
+	// 制作组fumo
+	addAdvancedTooltip("cmi:re_construction")
+	addAdvancedTooltip("cmi:qi_month")
+	addAdvancedTooltip("cmi:eternalsnowstorm")
+	addAdvancedTooltip("cmi:117458866249")
+	addAdvancedTooltip("cmi:fiber_optics")
+	addAdvancedTooltip("cmi:random_mechanism")
+	addAdvancedTooltip("cmi:sakura_star_cn")
+	addAdvancedTooltip("cmi:dropper_qwq")
+	addAdvancedTooltip("cmi:ye_anqing")
+	addAdvancedTooltip("cmi:qicaijie")
+	addAdvancedTooltip("cmi:flash_yi")
+	addAdvancedTooltip("cmi:dont_kill_belalus")
+	addAdvancedTooltip("cmi:dkrkoo_weihe")
 	/**
 	 * 
 	 * @param {Internal.Ingredient_} ingredient 
@@ -33,6 +47,18 @@ ItemEvents.tooltip((event) => {
 			} else {
 				tooltip.add(Component.translatable(`tooltip.${global.namespace}.acceleratable`))
 			}
+		})
+	}
+
+	/**
+	 * 
+	 * @param {Internal.Ingredient_} ingredient 
+	 */
+	function addAdvancedTooltip(ingredient) {
+		event.addAdvanced(ingredient, (item, advanced, tooltip) => {
+			let itemTooltipTranslateKey = Component.translatable(`tooltip.${ingredient}`
+				.replace(":", "."))
+			tooltip.add(itemTooltipTranslateKey)
 		})
 	}
 

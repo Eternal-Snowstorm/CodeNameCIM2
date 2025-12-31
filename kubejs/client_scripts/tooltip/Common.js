@@ -74,20 +74,6 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("portality:controller")
 	addCommonTooltip("cmi:water_pump")
 	addCommonTooltip("cmi:parchment")
-	// 制作组fumo
-	addCommonTooltip("cmi:re_construction")
-	addCommonTooltip("cmi:qi_month")
-	addCommonTooltip("cmi:eternalsnowstorm")
-	addCommonTooltip("cmi:117458866249")
-	addCommonTooltip("cmi:fiber_optics")
-	addCommonTooltip("cmi:random_mechanism")
-	addCommonTooltip("cmi:sakura_star_cn")
-	addCommonTooltip("cmi:dropper_qwq")
-	addCommonTooltip("cmi:ye_anqing")
-	addCommonTooltip("cmi:qicaijie")
-	addCommonTooltip("cmi:flash_yi")
-	addCommonTooltip("cmi:dont_kill_belalus")
-	addCommonTooltip("cmi:dkrkoo_weihe")
 
 	chemSalts.forEach((salt) => {
 		addCommonTooltip(`cmi:${salt}`)
