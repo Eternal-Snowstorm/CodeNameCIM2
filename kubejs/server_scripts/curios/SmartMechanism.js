@@ -1,6 +1,9 @@
 EntityEvents.hurt((event) => {
     let { entity, source } = event
     let { player } = event.source
+    if (player == null) {
+        return
+    }
 
     const CURIOS = String(player.nbt["ForgeCaps"]["curios:inventory"]["Curios"])
 
