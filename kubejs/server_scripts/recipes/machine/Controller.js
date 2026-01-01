@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/aluminum",
 		B: "cmi:empty_cell",
-		C: "cmi:overcharged_alloy_ingot",
+		C: "#forge:circuits/basic",
 		D: "#create:mechanisms/smart",
 		E: "#cmi:batteries"
 	}).id("cmi:flash_disk_writer")
