@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
 	let removeRecipeIds = [
+		"mekanism:processing/gold/shard/from_crystal",
 		"thermal:machines/chiller/chiller_water_to_ice",
 		"ae2:entropy/cool/water_ice",
 		"create:compacting/ice",

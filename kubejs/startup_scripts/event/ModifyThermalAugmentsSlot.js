@@ -32,9 +32,13 @@ private Supplier<Boolean> boolMobBasalz = TRUE;
 private Supplier<Boolean> boolMobBlitz = TRUE;
 private Supplier<Boolean> boolMobBlizz = TRUE;
 */
+let $ThermalCoreConfig =
+	Java.loadClass("cofh.thermal.core.common.config.ThermalCoreConfig")
+
 StartupEvents.postInit((event) => {
-	let $ThermalCoreConfig =
-		Java.loadClass("cofh.thermal.core.common.config.ThermalCoreConfig")
+
+	const TRUE = () => true
+	const FALSE = () => false
 
 	// 强化插件槽位数量(当前9)
 	let augmentKeys = [
@@ -48,16 +52,6 @@ StartupEvents.postInit((event) => {
 		$ThermalCoreConfig[config] = 9
 	})
 
-	let configs = [
-		["keepItems", true],
-		["keepFluids", true]
-	]
-	configs.forEach((entry) => {
-		let key = entry[0]
-		let value = entry[1]
-
-		$ThermalCoreConfig[key] = () => {
-			return value
-		}
-	})
+	$ThermalCoreConfig.keepItems = TRUE
+	$ThermalCoreConfig.keepFluids = TRUE
 })

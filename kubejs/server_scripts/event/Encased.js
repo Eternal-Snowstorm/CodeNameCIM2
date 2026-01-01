@@ -27,6 +27,14 @@ NetworkEvents.dataReceived("isPlayerAltDown", (event) => {
 
 	player.persistentData.Alt = data.Alt
 
+	let chainedcasing = Component.translatable(
+		"message.cmi.chainedcasing"
+	).green().bold()
+
+	let chaineduncasing = Component.translatable(
+		"message.cmi.chaineduncasing"
+	).red().bold()
+
 	// !这里只能用弱等于
 	if (data.Alt != true) {
 		return
@@ -35,15 +43,11 @@ NetworkEvents.dataReceived("isPlayerAltDown", (event) => {
 	if (BeltCasing.some((i) => {
 		return i == player.mainHandItem.id
 	})) {
-		player.setStatusMessage(Component.translatable("message.cmi.chainedcasing")
-			.green()
-			.bold())
+		player.displayClientMessage(chainedcasing, true)
 	}
 
 	if (player.mainHandItem.id == "create:wrench") {
-		player.setStatusMessage(Component.translatable("message.cmi.chaineduncasing")
-			.red()
-			.bold())
+		player.displayClientMessage(chaineduncasing, true)
 	}
 })
 

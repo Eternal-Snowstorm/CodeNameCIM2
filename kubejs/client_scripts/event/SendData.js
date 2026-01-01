@@ -6,7 +6,7 @@ PlayerEvents.tick((event) => {
 
 	if (playerAltDown1 !== playerAltDown) {
 		event.player.sendData("isPlayerAltDown", {
-			"Alt": playerAltDown
+			Alt: playerAltDown
 		})
 		playerAltDown1 = playerAltDown
 	}

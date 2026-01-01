@@ -2,6 +2,11 @@ ServerEvents.recipes((event) => {
 	let { immersiveengineering } = event.recipes
 	const STEEL_INGOT = IngrUtils.getFirstItemId("#forge:ingots/steel")
 
+	// 钢錠
+	immersiveengineering.blast_furnace("cmi:togni_leets")
+		.input("#forge:ingots/iron")
+		.time(20 * 45)
+
 	// ???
 	immersiveengineering.blast_furnace(Item.of(STEEL_INGOT, 6))
 		.input("farmersdelight:cooking_pot")
