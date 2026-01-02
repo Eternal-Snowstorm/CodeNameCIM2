@@ -1,6 +1,6 @@
 /*
- * ⚠ 注意：这个 Event 不能热重载
- * ⚠ NOTE: This event does NOT support hot reload.
+ * 🙌 注意：这个 Event 不能热重载
+ * 🙌 NOTE: This event does NOT support hot reload.
  */
 let $BlockAccessor =
 	Java.loadClass("snownee.jade.api.BlockAccessor")
@@ -57,6 +57,7 @@ JadeEvents.onClientRegistration((event) => {
 
 			/*
 			 * 仅当目标方块 ID 匹配时才继续
+			 * 
 			 * Only continue if the block ID matches
 			 */
 			if (acc.getBlock().id !== block) {
