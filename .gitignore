@@ -55,6 +55,7 @@ config/ftbquests/qusets/chapters/control*
 !/mods/.index/
 !/mods/CMI Core-*-1.20.1-all.jar
 !/mods/Industrial Platform-*.jar
+!/mods/MasterfulMachinery*.jar
 
 # ResourcePacks
 /resourcepacks/*
