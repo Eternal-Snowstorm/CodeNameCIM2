@@ -207,7 +207,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("dkrkoo_weihe", "dkrkoo为何")
 	addBlockLang("117458866249", "117458866249")
 	addBlockLang("sakura_star_cn", "MF.")
-	addBlockLang("flash_yi","闪电羿")
+	addBlockLang("flash_yi", "闪电羿")
 
 	addCastItemLang("mechanism", "构件")
 	addCastItemLang("nugget", "粒")
@@ -294,8 +294,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("cobalt", "钴")
 	addMaterialLang("tungsten", "钨")
 	addMaterialLang("tungsten_steel", "钨钢")
-	addMaterialLang("scarlet_neodymium", "赤铷合金")
-	addMaterialLang("azure_neodymium", "青铷合金")
+	addMaterialLang("scarlet_neodymium", "赤钕合金")
+	addMaterialLang("azure_neodymium", "青钕合金")
 	addMaterialLang("shadow_steel", "暗影钢")
 	addMaterialLang("refined_radiance", "光辉石")
 	addMaterialLang("etrium", "埃忒恩")
@@ -396,7 +396,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addPlanetLang("dionysus", "迪奥尼索斯")
 	addPlanetLang("hephaestus", "赫菲斯托斯")
 
-	addAdvancementLang("start","欢迎来到机械动力: 构件与革新","感谢您的游玩!")
+	addAdvancementLang("start", "欢迎来到机械动力: 构件与革新", "感谢您的游玩!")
 	addAdvancementLang("meet", "轨道共鸣", "两颗游离的恒星在一次无意的轨道扰动中彼此靠近\n无人知晓它们为何产生引力, 只知从那一刻起, 星系的背景噪声变得温柔\n(隐藏挑战!)")
 	addAdvancementLang("north_star", "迷航", "轨迹从此断裂, 却像在等待另一侧的回声")
 	addAdvancementLang("south_cross", "星港", "即便断裂, 它依旧把角度留给那道未曾抵达的回声")
@@ -442,6 +442,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:geographycal_hammer.developer2", "副手手持潜行右键获取主手物品ID")
 	addCommonTooltipLang("cmi:geographycal_hammer.not_developer", "似乎有一种神秘的力量阻止了你使用这个物品")
 	addCommonTooltipLang("cmi:charged_amethyst", "拿到耳边能听到它一直在发出嗡嗡嗡的声音")
+	addCommonTooltipLang("alexscaves:notor_gizmo", "第一个只能通过探险获得")
 	addCommonTooltipLang("#minecraft:pickaxes", "副手潜行+右键可破坏矿物节点(无掉落物)")
 	addCommonTooltipLang("#minecraft:infiniburn_all", "上方的火焰可以无限燃烧")
 	addCommonTooltipLang("cmi:potion_mechanism", "右键获取大多数正面buff")
@@ -462,20 +463,21 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:water_pump", "使用扳手右键可以显示预览")
 	addCommonTooltipLang("cmi:parchment", `有些能量不是由燃料产生的, 而是靠"遇见"`)
 	// 制作组fumo
-	addCommonTooltipLang("cmi:re_construction","主创&策划&美工")
-	addCommonTooltipLang("cmi:qi_month","KubeJS程序&Mod程序&美工")
-	addCommonTooltipLang("cmi:eternalsnowstorm","主策划&KubeJS程序&Mod程序")
-	addCommonTooltipLang("cmi:117458866249","KubeJS程序")
-	addCommonTooltipLang("cmi:fiber_optics","KubeJS程序&Mod程序")
-	addCommonTooltipLang("cmi:random_mechanism","KubeJS程序")
-	addCommonTooltipLang("cmi:sakura_star_cn","Github仓库管理&社区管理")
-	addCommonTooltipLang("cmi:dropper_qwq","主美")
-	addCommonTooltipLang("cmi:ye_anqing","KubeJS程序")
-	addCommonTooltipLang("cmi:qicaijie","内测服务器维护")
-	addCommonTooltipLang("cmi:flash_yi","策划&任务撰写")
-	addCommonTooltipLang("cmi:dont_kill_belalus","音乐创作者")
-	addCommonTooltipLang("cmi:dkrkoo_weihe","吉祥物&社区管理")
+	addCommonTooltipLang("cmi:re_construction", "主创&策划&美工")
+	addCommonTooltipLang("cmi:qi_month", "KubeJS程序&Mod程序&美工")
+	addCommonTooltipLang("cmi:eternalsnowstorm", "主策划&KubeJS程序&Mod程序")
+	addCommonTooltipLang("cmi:117458866249", "KubeJS程序")
+	addCommonTooltipLang("cmi:fiber_optics", "KubeJS程序&Mod程序")
+	addCommonTooltipLang("cmi:random_mechanism", "KubeJS程序")
+	addCommonTooltipLang("cmi:sakura_star_cn", "Github仓库管理&社区管理")
+	addCommonTooltipLang("cmi:dropper_qwq", "主美")
+	addCommonTooltipLang("cmi:ye_anqing", "KubeJS程序")
+	addCommonTooltipLang("cmi:qicaijie", "内测服务器维护")
+	addCommonTooltipLang("cmi:flash_yi", "策划&任务撰写")
+	addCommonTooltipLang("cmi:dont_kill_belalus", "音乐创作者")
+	addCommonTooltipLang("cmi:dkrkoo_weihe", "吉祥物&社区管理")
 
+	addCommonJadeTipLang("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
 
 	addJEIInfoLang("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量植物胶乳")
 	addJEIInfoLang("mm:large_steam_boiler", "需要燃烧焦煤或钻石才能释放足够的热能来产生蒸汽\n不同于远在泛银河系的格雷科技有限公司, 我们的锅炉非常非常安全, 永远不会爆炸(笑)")
@@ -766,6 +768,10 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	function addCommonTooltipLang(key, value) {
 		event.add(`tooltip.${key}`.replace(":", "."), `§b${value}`)
+	}
+
+	function addCommonJadeTipLang(key, value) {
+		event.add(`jade.info.cmi.${key}`.replace(":", "."), `${value}`)
 	}
 
 	function addAccelerateTooltipLang(key, value) {

@@ -8,8 +8,6 @@ let $Rotation =
 	Java.loadClass("net.minecraft.world.level.block.Rotation")
 let $Mirror =
 	Java.loadClass("net.minecraft.world.level.block.Mirror")
-let $BlockPos =
-	Java.loadClass("net.minecraft.core.BlockPos")
 
 ServerEvents.loaded((event) => {
 	let { server } = event
@@ -85,13 +83,16 @@ ServerEvents.loaded((event) => {
 			let adjustedY = groundY - baseY
 
 			// 放置结构
+			let pos = new BlockPos(x, adjustedY, z)
+			let setting = new $StructurePlaceSettings()
+				.setRotation($Rotation.NONE)
+				.setMirror($Mirror.NONE)
+
 			temp.placeInWorld(
 				level,
-				new $BlockPos(x, adjustedY, z),
-				new $BlockPos(x, adjustedY, z),
-				new $StructurePlaceSettings()
-					.setRotation($Rotation.NONE)
-					.setMirror($Mirror.NONE),
+				pos,
+				pos,
+				setting,
 				level.getRandom(),
 				2
 			)

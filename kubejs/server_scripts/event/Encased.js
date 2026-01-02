@@ -55,7 +55,7 @@ NetworkEvents.dataReceived("isPlayerAltDown", (event) => {
 BlockEvents.rightClicked("create:belt", (event) => {
 	let { player, item, block, level } = event
 
-	if (player === null || player.isShiftKeyDown() || player.persistentData.Alt === false) {
+	if (player === null || player.isShiftKeyDown() || (player.persistentData.Alt !== "true" && player.persistentData.Alt !== 1)) {
 		return
 	}
 
@@ -191,7 +191,7 @@ BlockEvents.rightClicked("create:belt", (event) => {
 BlockEvents.rightClicked("create:shaft", (event) => {
 	let { player, item, block, level } = event
 
-	if (player === null || player.isShiftKeyDown() || player.persistentData.Alt === false) {
+	if (player === null || player.isShiftKeyDown() || (player.persistentData.Alt !== "true" && player.persistentData.Alt !== 1)) {
 		return
 	}
 
@@ -282,7 +282,7 @@ BlockEvents.rightClicked("create:shaft", (event) => {
 BlockEvents.rightClicked("create:brass_encased_shaft", (event) => {
 	let { player, item, block, level } = event
 
-	if (player === null || !player.isShiftKeyDown() || item.id !== "create:wrench" || player.persistentData.Alt === false) {
+	if (player === null || player.isShiftKeyDown() || (player.persistentData.Alt !== "true" && player.persistentData.Alt !== 1)) {
 		return
 	}
 
@@ -367,7 +367,7 @@ BlockEvents.rightClicked("create:brass_encased_shaft", (event) => {
 BlockEvents.rightClicked("create:andesite_encased_shaft", (event) => {
 	let { player, item, block, level } = event
 
-	if (player === null || !player.isShiftKeyDown() || item.id !== "create:wrench" || player.persistentData.Alt === false) {
+	if (player === null || player.isShiftKeyDown() || (player.persistentData.Alt !== "true" && player.persistentData.Alt !== 1)) {
 		return
 	}
 

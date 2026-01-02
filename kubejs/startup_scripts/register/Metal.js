@@ -355,14 +355,16 @@ new Material("calorite", 0xC94D4E, "wooden")
 	.dust()
 	.gear()
 
-// 赤铷合金
+// 赤钕合金
 new Material("scarlet_neodymium", 0xB91919, "stone")
 	.dust()
+	.nugget()
 	.molten()
 
-// 青铷合金
+// 青钕合金
 new Material("azure_neodymium", 0x1936B9, "stone")
 	.dust()
+	.nugget()
 	.molten()
 
 // MEK中间产物
