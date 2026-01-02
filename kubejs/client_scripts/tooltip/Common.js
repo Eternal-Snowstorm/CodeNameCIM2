@@ -74,6 +74,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("portality:controller")
 	addCommonTooltip("cmi:water_pump")
 	addCommonTooltip("cmi:parchment")
+	addCommonTooltip("alexscaves:notor_gizmo")
 
 	chemSalts.forEach((salt) => {
 		addCommonTooltip(`cmi:${salt}`)
