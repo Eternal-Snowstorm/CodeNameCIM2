@@ -7,11 +7,15 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 飞轮
+	const BRONZE_PLATE = IngrUtils.getFirstItemId("#forge:plates/bronze")
 	create.sequenced_assembly("create:flywheel", [
 		"#create:shaft"
 	], [
-		create.deploying("thermal:bronze_plate", ["thermal:bronze_plate", "#forge:plates/bronze"]),
-	]).transitionalItem("thermal:bronze_plate").loops(4)
+		create.deploying("create:shaft", [
+			BRONZE_PLATE, 
+			"#forge:plates/bronze"
+		]),
+	]).transitionalItem("create:shaft").loops(4)
 
 	// 扫描组件
 	create.deploying("scannable:range_module", [
