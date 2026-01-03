@@ -28,8 +28,20 @@ ServerEvents.recipes((event) => {
 		setOutput("thermal:deepslate_sulfur_ore", 0.05)
 	])
 
+	// 叁级科技航天构件
+	addRecipe("cmi:tier_3_aviation_mechanism", "minecraft:deepslate", [
+		setOutput("ad_astra:deepslate_ostrum_ore", 0.15),
+		setOutput("minecraft:deepslate_iron_ore", 0.1),
+	])
+
 	// 贰级科技航天构件
 	addRecipe("cmi:tier_2_aviation_mechanism", "minecraft:deepslate", [
+		setOutput("ad_astra:deepslate_desh_ore", 0.15),
+		setOutput("minecraft:deepslate_iron_ore", 0.1),
+	])
+
+	// 壹级科技航天构件
+	addRecipe("cmi:tier_1_aviation_mechanism", "minecraft:deepslate", [
 		setOutput("ad_astra:deepslate_desh_ore", 0.15),
 		setOutput("minecraft:deepslate_iron_ore", 0.1),
 		setOutput("thermal:deepslate_silver_ore", 0.1)
@@ -66,13 +78,6 @@ ServerEvents.recipes((event) => {
 		setOutput("minecraft:ancient_debris", 0.03),
 		setOutput("minecraft:nether_quartz_ore", 0.03),
 		setOutput("minecraft:glowstone", 0.03)
-	])
-
-	// 叁级科技航天构件
-	addRecipe("cmi:tier_3_aviation_mechanism", "minecraft:deepslate", [
-		setOutput("ad_astra:deepslate_ostrum_ore", 0.15),
-		setOutput("minecraft:deepslate_iron_ore", 0.1),
-		setOutput("thermal:deepslate_silver_ore", 0.1)
 	])
 
 	// 精密构件

@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:caso4_solution", 250)
 	], [
 		Fluid.of("cmi:alkaline_concentrated_sea_water", 500),
-		Fluid.of("mekanism:hydrogen_chloride", 500),
+		Fluid.of("cmi:hydrochloric_acid", 500),
 	]).heated()
 
 	// 酸性浓缩海水
@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
 
 	// 氯化镁溶液
 	create.mixing(Fluid.of("cmi:mgcl2_solution", 1000), [
-		Fluid.of("mekanism:hydrogen_chloride", 100),
+		Fluid.of("cmi:hydrochloric_acid", 100),
 		"cmi:magnesium_hydroxide"
 	])
 
