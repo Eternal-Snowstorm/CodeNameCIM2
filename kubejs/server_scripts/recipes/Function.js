@@ -30,7 +30,7 @@ let IngrUtils = {
 
 	/**
 	 * 获取标签内第一个流体的ID, 若标签下没有流体则返回null
-	 * @param {String} fluidTag 流体标签ID
+	 * @param {ResourceLocation} fluidTag 流体标签ID
 	 * @returns {String | null}
 	 */
 	getFirstFluidId: function (fluidTag) {
@@ -38,9 +38,13 @@ let IngrUtils = {
 		let optional = BuiltInRegistries.FLUID.getTag(tag)
 
 		if (optional.isPresent()) {
-			let fluidHolder = optional.get().stream().findFirst().orElse(null)
+			let fluidHolder = optional.get()
+				.stream()
+				.findFirst()
+				.orElse(null)
+
 			if (fluidHolder !== null) {
-				let getFluidKey = BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
+				let getFluidKey = ForgeRegistries.FLUIDS.getValue(fluidHolder.value()).toString()
 				// console.log(`The first fluid is: ${getFluidKey}`)
 				return getFluidKey
 			}
@@ -51,7 +55,7 @@ let IngrUtils = {
 
 	/**
 	 * 判断物品标签是否为空
-	 * @param {String} tag 物品标签ID
+	 * @param {Internal.Ingredient_} tag 物品标签ID
 	 */
 	isNotNull: function (tag) {
 		return Ingredient.of(tag).getItemIds().length > 0
@@ -68,6 +72,11 @@ let IngrUtils = {
 
 let MekanismType = {
 	Slurry: {
+		/**
+		 * 
+		 * @param {ResourceLocation_} id 
+		 * @returns 
+		 */
 		exists: function (id) {
 			return RegistryInfo.of($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry)
 				.hasValue(id)
@@ -75,6 +84,11 @@ let MekanismType = {
 		of: makeOf("slurry")
 	},
 	Gas: {
+		/**
+		 * 
+		 * @param {ResourceLocation_} id 
+		 * @returns 
+		 */
 		exists: function (id) {
 			return RegistryInfo.of($MekanismAPI.GAS_REGISTRY_NAME, $Gas)
 				.hasValue(id)
@@ -83,6 +97,11 @@ let MekanismType = {
 	}
 }
 
+/**
+ * 
+ * @param {string} type 
+ * @returns 
+ */
 function makeOf(type) {
 	return function (id, amount) {
 		let obj = {}
@@ -92,13 +111,17 @@ function makeOf(type) {
 	}
 }
 
+/**
+ * 
+ * @param {Internal.Ingredient_} output 
+ * @param {Internal.Ingredient_} input 
+ * @returns 
+ */
 function aeCharger(output, input) {
 	return {
 		type: "ae2:charger",
 		ingredient: Ingredient.of(input).toJson(),
-		result: {
-			item: IngrUtils.getFirstItemId(output)
-		}
+		result: Item.of(IngrUtils.getFirstItemId(output)).toJson()
 	}
 }
 
