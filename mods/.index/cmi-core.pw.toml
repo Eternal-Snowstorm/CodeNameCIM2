@@ -1,17 +1,17 @@
-filename = 'CMI Core-1.1-1.20.1-all.jar'
+filename = 'CMI Core-1.2-1.20.1-all.jar'
 name = 'CMI Core'
 side = 'server'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'CMI Core-1.1-1.20.1-all.jar'
+x-prismlauncher-version-number = 'CMI Core-1.2-1.20.1-all.jar'
 
 [download]
-hash = '68858fc7af0bf519da595e8cbfea060b052df898'
+hash = '2de78dd102bc4ff1646df1d66b4bfe4ae85ada9c'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7403693
+file-id = 7417151
 project-id = 1349729
