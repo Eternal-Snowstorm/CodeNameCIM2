@@ -427,6 +427,12 @@ ServerEvents.tags("item", (event) => {
 	event.get("ae2:inscriber_presses")
 		.add("ae2:name_press")
 
+	event.get("forge:ice")
+		.add("minecraft:ice")
+		.add("minecraft:packed_ice")
+		.add("minecraft:blue_ice")
+		.add("ratatouille:frozen_block")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
@@ -486,12 +492,16 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:raw_materials/calorite_scrap")
 		.add("ad_astra:raw_calorite")
 
-	let tags = [
-		"forge:nuggets/netherite_scrap",
-		"forge:nuggets/netherite"
-	]
-	tags.forEach((tag) => {
-		event.get(tag)
-			.remove("cmi:paxel")
-	})
+	removeTagAllId("forge:nuggets/netherite_scrap")
+		.add("tconstruct:debris_nugget")
+
+	removeTagAllId("forge:ingots/netherite_scrap")
+		.add("minecraft:netherite_scrap")
+
+	removeTagAllId("forge:nuggets/netherite")
+		.add("tconstruct:netherite_nugget")
+		.add("createdeco:netherite_nugget")
+
+	removeTagAllId("forge:ingots/netherite")
+		.add("minecraft:netherite_ingot")
 })

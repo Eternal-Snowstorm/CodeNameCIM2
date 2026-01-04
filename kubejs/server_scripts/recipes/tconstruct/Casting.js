@@ -24,6 +24,13 @@ ServerEvents.recipes((event) => {
 			.time(100)
 	})
 
+	// 冰!
+	tconstruct.casting_basin("minecraft:ice")
+		.fluid(Fluid.of("minecraft:water", 1000))
+		.cast("#forge:ice")
+		.cooling_time(20)
+		.cast_consumed(false)
+
 	// 金构件铸模
 	tconstruct.casting_table("cmi:mechanism_cast")
 		.fluid(Fluid.of("tconstruct:molten_gold", 90))
@@ -88,7 +95,6 @@ ServerEvents.recipes((event) => {
 		"industrial_iron",
 		"zinc"
 	]
-
 	barTypes.forEach((type) => {
 		tconstruct.casting_table(`createdeco:${type}_bars`)
 			.fluid(Fluid.of(IngrUtils.getFirstFluidId(`tconstruct:molten_${type}`), 30))
