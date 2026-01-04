@@ -13,7 +13,7 @@ let modPackState = "Beta"
 let isHotfix = true
 
 // Modpack数字版本号
-let modpackNumberVersion = "2.4.1"
+let modpackNumberVersion = "2.5.0"
 
 /* 
  * Modpack总版本
