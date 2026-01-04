@@ -34,6 +34,57 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/coal_coke"
 	]).heated()
 
+	// 真空管
+	vintageimprovements.vacuumizing("immersiveengineering:electron_tube", [
+		"#forge:plates/nickel",
+		"create:electron_tube",
+		"minecraft:glass_bottle"
+	]).heatRequirement(global.HeatLevel["grilled"])
+
+	// 扫描机兵零件
+	const ALUMINUM_PLATE = IngrUtils.getFirstItemId("#forge:plates/aluminum")
+	create.sequenced_assembly([
+		Item.of("alexscaves:notor_gizmo"),
+		Item.of("2x alexscaves:notor_gizmo").withChance(0.5),
+		Item.of("3x alexscaves:notor_gizmo").withChance(0.1),
+	], [
+		"#forge:plates/aluminum"
+	], [
+		create.deploying(ALUMINUM_PLATE, [
+			"#forge:plates/aluminum",
+			"alexscaves:notor_gizmo"
+		]).keepHeldItem(),
+		create.deploying(ALUMINUM_PLATE, [
+			"#forge:plates/aluminum",
+			"#forge:nuggets/azure_neodymium"
+		]),
+		create.deploying(ALUMINUM_PLATE, [
+			"#forge:plates/aluminum",
+			"#forge:nuggets/scarlet_neodymium"
+		])
+	]).loops(1).transitionalItem(ALUMINUM_PLATE)
+
+	create.sequenced_assembly([
+		Item.of("alexscaves:notor_gizmo"),
+		Item.of("2x alexscaves:notor_gizmo").withChance(0.5),
+		Item.of("3x alexscaves:notor_gizmo").withChance(0.1),
+	], [
+		"#forge:plates/aluminum"
+	], [
+		create.deploying(ALUMINUM_PLATE, [
+			"#forge:plates/aluminum",
+			"alexscaves:notor_gizmo"
+		]).keepHeldItem(),
+		create.deploying(ALUMINUM_PLATE, [
+			"#forge:plates/aluminum",
+			"#forge:nuggets/scarlet_neodymium"
+		]),
+		create.deploying(ALUMINUM_PLATE, [
+			"#forge:plates/aluminum",
+			"#forge:nuggets/azure_neodymium"
+		])
+	]).loops(1).transitionalItem(ALUMINUM_PLATE)
+
 	// 工业铁
 	create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
 		[

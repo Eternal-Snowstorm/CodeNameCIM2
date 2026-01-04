@@ -55,6 +55,7 @@ config/ftbquests/qusets/chapters/control*
 !/mods/.index/
 !/mods/CMI Core-*-1.20.1-all.jar
 !/mods/Industrial Platform-*.jar
+!/mods/MasterfulMachinery*.jar
 
 # ResourcePacks
 /resourcepacks/*
@@ -112,6 +113,4 @@ config/ftbquests/qusets/chapters/control*
 !config/explorerscompass-common.toml
 !config/naturescompass-common.toml
 !config/oei
-!config/oeb
-!config/oef
 !config/railways-client.toml

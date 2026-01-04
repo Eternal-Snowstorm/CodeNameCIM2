@@ -58,7 +58,6 @@ ServerEvents.highPriorityData((event) => {
 			matchItems: match,
 			resultItems: block
 		}
-		event.addJson(`oeb:replacements/${name}.json`, blockUnification)
 		event.addJson(`oei:replacements/${name}.json`, itemUnification)
 		return this
 	}

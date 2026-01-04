@@ -38,6 +38,19 @@ ServerEvents.recipes((event) => {
 		C: "minecraft:paper"
 	}).id("immersiveengineering:crafting/blueprint_mechanism_basements")
 
+	// 构件组件蓝图
+	kubejs.shaped(Item.of("immersiveengineering:blueprint").withNBT({
+		blueprint: "mechanism_augments"
+	}), [
+		" A ",
+		"BBB",
+		"CCC"
+	], {
+		A: "create:electron_tube",
+		B: "#forge:dyes/blue",
+		C: "minecraft:paper"
+	}).id("immersiveengineering:crafting/blueprint_mechanism_augments")
+
 	kubejs.shaped("createdieselgenerators:pumpjack_bearing", [
 		"A",
 		"B",

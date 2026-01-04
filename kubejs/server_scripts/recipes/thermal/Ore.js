@@ -1,13 +1,11 @@
 ServerEvents.recipes((event) => {
 	let { create, createaddition, thermal } = event.recipes
 
-	create.compacting([
-		"cmi:blackstone_source_alpha",
-		"cmi:blackstone_source_beta",
-		"cmi:blackstone_source_gamma"
-	], [
-		"minecraft:blackstone"
-	]).superheated()
+	create.crushing([
+		Item.of("cmi:blackstone_source_alpha").withChance(0.33),
+		Item.of("cmi:blackstone_source_beta").withChance(0.33),
+		Item.of("cmi:blackstone_source_gamma").withChance(0.33)
+	], "minecraft:blackstone")
 
 	create.mixing([
 		"cmi:enchanted_mechanism",
