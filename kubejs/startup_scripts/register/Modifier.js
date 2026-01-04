@@ -1,6 +1,12 @@
 TConJSEvents.modifierRegistry((event) => {
-	addNewModifier("causal_truncation", (builder) => {
-		builder.getMeleeDamage((view, modifierLevel, context, baseDamage, finalDamage) => {
+	addModifier("causal_truncation", (builder) => {
+		builder.getMeleeDamage((
+			view,
+			modifierLevel,
+			context,
+			baseDamage,
+			finalDamage
+		) => {
 			let { livingTarget } = context
 
 			if (!livingTarget || !livingTarget.isAlive()) {
@@ -33,13 +39,23 @@ TConJSEvents.modifierRegistry((event) => {
 		})
 	})
 
+	addEmptyModifier("frenzy")
+
 	/**
 	 * 
 	 * @param {string} name 
 	 * @param {Internal.Consumer_<Internal.ModifierBuilder>} handler 
 	 * @returns 
 	 */
-	function addNewModifier(name, handler) {
-		return event.createNew(`${global.namespace}:${name}`, handler)
+	function addModifier(name, handler) {
+		event.createNew(`${global.namespace}:${name}`, handler)
+	}
+
+	/**
+	 * 
+	 * @param {string} name 
+	 */
+	function addEmptyModifier(name){
+		event.createEmpty(`${global.namespace}:${name}`)
 	}
 })
