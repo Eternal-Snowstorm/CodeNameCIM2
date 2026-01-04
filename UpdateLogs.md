@@ -1,5 +1,3 @@
-<font face="Sarasa Mono slab SC">
-
 ## Beta 1.1.0
 
 ### 修复问题
@@ -756,5 +754,3 @@
  - **Mods**
    - `One Enough Block`
    - `One Enough Fluid`
-
-</font>	
