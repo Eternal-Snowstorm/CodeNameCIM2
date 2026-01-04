@@ -5,10 +5,29 @@ let $TinkerTags$Items =
 
 // 全局注册物品命名空间
 global.namespace = "cmi"
+
 // 整合包状态
-global.modPackState = "Beta"
-// Modpack版本
-global.modPackVersion = `§0CMI ${global.modPackState}-2.4.0`
+let modPackState = "Beta"
+
+// 是否为热修复版本
+let isHotfix = true
+
+// Modpack数字版本号
+let modpackNumberVersion = "2.4.1"
+
+/* 
+ * Modpack总版本
+ * 根据是否为热修复版本, 生成不同的版本号并保存到global并被读取
+ */
+if (isHotfix) {
+    global.modPackMainVersion = `§0CMI ${modPackState}-${modpackNumberVersion}-hf`
+} else {
+    global.modPackMainVersion = `§0CMI ${modPackState}-${modpackNumberVersion}`
+}
+
+// 输出查看
+console.log(global.modPackMainVersion)
+
 // 桶容量
 global.BUCKET_CAPACITY = 1000
 // 扳手Tag

@@ -1,4 +1,5 @@
 TConJSEvents.modifierRegistry((event) => {
+	// 因果截断
 	addModifier("causal_truncation", (builder) => {
 		builder.getMeleeDamage((
 			view,
@@ -39,6 +40,7 @@ TConJSEvents.modifierRegistry((event) => {
 		})
 	})
 
+	// 狂乱
 	addEmptyModifier("frenzy")
 
 	/**

@@ -111,9 +111,12 @@ ItemEvents.tooltip((event) => {
 	]
 	materialTypeList.forEach((type) => {
 		global.metalGroup.forEach((material) => {
+			/**
+			 * @type {number}
+			 */
 			let mp = global.meltingPoints[material]
 
-			if (typeof tp === "number") {
+			if (typeof mp === "number") {
 				let translatable = Component.translatable(
 					"tooltip.cmi.meltingPoint",
 					mp,
@@ -128,6 +131,9 @@ ItemEvents.tooltip((event) => {
 	// 燃料温度
 	global.fuelList.forEach((fuel) => {
 		let bucket = `${fuel}_bucket`
+		/**
+		 * @type {number}
+		 */
 		let tp = global.fuelTemperatures[fuel]
 
 		if (typeof tp === "number") {
@@ -143,9 +149,12 @@ ItemEvents.tooltip((event) => {
 
 	// 碎矿单独循环一次
 	global.metalGroup.forEach((material) => {
+		/**
+		 * @type {number}
+		 */
 		let mp = global.meltingPoints[material]
 
-		if (typeof tp === "number") {
+		if (typeof mp === "number") {
 			let translatable = Component.translatable(
 				"tooltip.cmi.meltingPoint",
 				mp,
