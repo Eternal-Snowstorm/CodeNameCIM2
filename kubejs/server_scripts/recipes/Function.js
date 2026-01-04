@@ -44,7 +44,7 @@ let IngrUtils = {
 				.orElse(null)
 
 			if (fluidHolder !== null) {
-				let getFluidKey = ForgeRegistries.FLUIDS.getValue(fluidHolder.value()).toString()
+				let getFluidKey = BuiltInRegistries.FLUID.getKey(fluidHolder.value()).toString()
 				// console.log(`The first fluid is: ${getFluidKey}`)
 				return getFluidKey
 			}
