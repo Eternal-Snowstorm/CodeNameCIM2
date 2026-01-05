@@ -10,7 +10,7 @@ global.namespace = "cmi"
 let modPackState = "Beta"
 
 // 是否为热修复版本
-let isHotfix = true
+let isHotfix = false
 
 // Modpack数字版本号
 let modpackNumberVersion = "2.5.0"
