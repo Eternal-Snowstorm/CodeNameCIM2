@@ -14,6 +14,11 @@ ServerEvents.tags("fluid", (event) => {
 		.add("ad_astra:fuel")
 		.add("ad_astra:cryo_fuel")
 
+	// 机械动力无限流体
+	event.get("create:bottomless/allow")
+		.add("cmi:sea_water")
+		.add()
+
 	// 一桶就能上天的燃料
 	// event.get("ad_astra:efficient_fuel")
 	// 	.add("minecraft:lava")
