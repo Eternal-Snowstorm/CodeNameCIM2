@@ -1,4 +1,8 @@
 TConJSEvents.modifierRegistry((event) => {
+	// 狂乱
+	addEmptyModifier("frenzy")
+	// addEmptyModifier("acupoint")
+
 	// 因果截断
 	addModifier("causal_truncation", (builder) => {
 		builder.getMeleeDamage((
@@ -40,9 +44,6 @@ TConJSEvents.modifierRegistry((event) => {
 		})
 	})
 
-	// 狂乱
-	addEmptyModifier("frenzy")
-
 	/**
 	 * 
 	 * @param {string} name 
@@ -57,7 +58,7 @@ TConJSEvents.modifierRegistry((event) => {
 	 * 
 	 * @param {string} name 
 	 */
-	function addEmptyModifier(name){
+	function addEmptyModifier(name) {
 		event.createEmpty(`${global.namespace}:${name}`)
 	}
 })
