@@ -35,6 +35,10 @@ ServerEvents.tags("fluid", (event) => {
 		.add("deepdrilling:flowing_sludge")
 		.add("deepdrilling:sludge")
 
+	event.get("cmi:pig_iron_material")
+		.add("#tconstruct:meat_soup")
+		.add("cmi:blood")
+
 	event.get("minecraft:water")
 		.removeAll()
 		.add("minecraft:water")
@@ -115,4 +119,7 @@ ServerEvents.tags("fluid", (event) => {
 		event.get(`tconstruct:molten_${material}`)
 			.add(`thermalconstruct:molten_${material}`)
 	})
+
+	event.get("forge:molten_pig_iron")
+		.add("#tconstruct:molten_pig_iron")
 })
