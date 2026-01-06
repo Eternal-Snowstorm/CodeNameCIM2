@@ -1,0 +1,8 @@
+{
+	"type": "tconstruct:item_part_builder",
+	"pattern": "tconstruct:plate",
+	"pattern_item": {
+		"tag": "tconstruct:casts/sand"
+	},
+	"result": "cmi:mechanism_red_sand_cast"
+}

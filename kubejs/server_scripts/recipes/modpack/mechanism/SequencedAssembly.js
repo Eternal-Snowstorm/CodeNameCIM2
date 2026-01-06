@@ -445,7 +445,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:bronze_mechanism", [
 		"#forge:plates/bronze"
 	], [
-		create.deploying(ibm, [ibm, "cmi:incomplete_bronze_cogwheel"]),
+		create.deploying(ibm, [ibm, ["cmi:incomplete_bronze_cogwheel", "#forge:gears/bronze"]]),
 		create.deploying(ibm, [ibm, "vintageimprovements:bronze_spring"]),
 		create.deploying(ibm, [ibm, "#forge:nuggets/andesite_alloy"]),
 		vintageimprovements.vibrating(ibm, ibm),

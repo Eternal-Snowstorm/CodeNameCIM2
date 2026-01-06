@@ -518,7 +518,7 @@
 			description: [
 				"铜的挖掘等级为&b铁&r, 可以直接挖&b铁镐&r能挖的东西"
 				"并且如下图所示, 铜&r&c不需要融化&r也可以直接放入&a部件制造台&r&r内制作对应的部件"
-				"{image:cmi:textures/images/copper_pickaxe.png width:162 height:56 align:center}"
+				"{image:cmi:textures/images/copper_pickaxe.png width:162 height:74 align:center}"
 			]
 			hide_dependency_lines: false
 			hide_dependent_lines: true

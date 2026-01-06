@@ -1,8 +1,14 @@
 ServerEvents.recipes((event) => {
 	let { create } = event.recipes
 
+	// 红石酸
 	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 250), [
 		"#forge:dusts/redstone",
+		Fluid.of("minecraft:water", 250)
+	]).heated()
+
+	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 500), [
+		Fluid.of("thermal:redstone", 250),
 		Fluid.of("minecraft:water", 250)
 	])
 

@@ -147,7 +147,7 @@ global.mechanismGroup = [
 	"sculk",
 	"colorful",
 	"creative",
-	"pigiron",
+	"pig_iron",
 	"potion",
 	"bronze"
 ]
