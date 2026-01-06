@@ -73,4 +73,15 @@ ServerEvents.recipes((event) => {
 		M: "cmi:light_engineering_mechanism",
 		B: "create:shaft"
 	}).id("createdieselgenerators:mechanical_crafting/pumpjack_crank")
+
+	// 红石线圈
+	kubejs.shaped("immersiveengineering:wirecoil_redstone", [
+		" A ",
+		"BCB",
+		" A "
+	], {
+		A: "#forge:wires/lead",
+		B: "minecraft:redstone",
+		C: "#forge:rods/wooden"
+	}).id("immersiveengineering:crafting/wirecoil_redstone")
 })

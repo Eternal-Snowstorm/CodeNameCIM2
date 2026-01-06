@@ -310,16 +310,20 @@ ServerEvents.recipes((event) => {
 		})
 	})
 
-	event.remove({
-		type: "minecraft:crafting_shaped",
-		input: "#forge:ingots",
-		output: "#forge:rods"
-	})
-
-	event.remove({
-		type: "thermal:smelter",
-		input: "#forge:dusts",
-	})
+	event.remove([
+		{
+			type: "minecraft:crafting_shaped",
+			input: "#forge:ingots",
+			output: "#forge:rods"
+		}, {
+			type: "thermal:smelter",
+			input: "#forge:dusts",
+		}, {
+			type: "create:cutting",
+			input: "#minecraft:logs",
+			output: "#forge:stripped_logs",
+		}
+	])
 
 	event.remove([
 		{

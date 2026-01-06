@@ -169,7 +169,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: Ingot.STAINLESS,
 		B: Mech.T1,
-		C: "cmi:pigiron_mechanism",
+		C: "cmi:pig_iron_mechanism",
 		D: CASING,
 	}).id("mekanism:nutritional_liquifier")
 

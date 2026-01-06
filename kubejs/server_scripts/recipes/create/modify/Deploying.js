@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 
 	create.deploying("scannable:friendly_entity_module", [
 		"scannable:blank_module",
-		"cmi:pigiron_mechanism"
+		"cmi:pig_iron_mechanism"
 	]).id("scannable:friendly_entity_module")
 
 	create.deploying("scannable:hostile_entity_module", [

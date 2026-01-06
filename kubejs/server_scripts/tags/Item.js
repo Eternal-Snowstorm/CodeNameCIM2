@@ -504,4 +504,25 @@ ServerEvents.tags("item", (event) => {
 
 	removeTagAllId("forge:ingots/netherite")
 		.add("minecraft:netherite_ingot")
+
+	let rawNuggetMetals = [
+		"copper",
+		"iron",
+		"gold",
+		"tin",
+		"lead",
+		"silver",
+		"nickel",
+		"aluminum",
+		"uranium",
+		"osmium",
+		"zinc"
+	]
+	rawNuggetMetals.forEach((metal) => {
+		event.get(`forge:raw_nuggets/${metal}`)
+			.add(`thermal_extra:${metal}_ore_chunk`)
+
+		event.get(`forge:raw_nuggets`)
+			.add(`thermal_extra:${metal}_ore_chunk`)
+	})
 })

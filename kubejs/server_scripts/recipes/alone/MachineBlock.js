@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
 		"creative",
 		"potion",
 		"bronze",
-		"pigiron"
+		"pig_iron"
 	]
 	machineBlockGroup.forEach((type) => {
 		minecraft.stonecutting(`cmi:${type}_machine`, `cmi:${type}_mechanism`)

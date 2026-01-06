@@ -39,7 +39,7 @@ Ponder.registry((event) => {
 		"precision",
 		"redstone",
 		"bronze",
-		"pigiron"
+		"pig_iron"
 	]
 	mechanismTypes.forEach((type)=>{
 	event.create(`cmi:${type}_machine`)

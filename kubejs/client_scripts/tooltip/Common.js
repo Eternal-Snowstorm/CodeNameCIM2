@@ -46,7 +46,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:photosensitive_mechanism")
 	addCommonTooltip("cmi:cobalt_mechanism")
 	addCommonTooltip("cmi:nether_mechanism")
-	addCommonTooltip("cmi:pigiron_mechanism")
+	addCommonTooltip("cmi:pig_iron_mechanism")
 	addCommonTooltip("cmi:enchanted_mechanism")
 	addCommonTooltip("cmi:nuclear_mechanism")
 	addCommonTooltip("cmi:sculk_mechanism")
