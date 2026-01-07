@@ -72,12 +72,6 @@ function Material(name, level) {
 }
 
 // 定义链式方法
-/**
- * 设置材料各层颜色
- * @param {Internal.ItemTintFunction_ | Internal.BlockTintFunction_ | Color_} color1 主层颜色
- * @param {Internal.ItemTintFunction_ | Internal.BlockTintFunction_ | Color_} color2 覆盖层颜色（不需要请填0xFFFFFF）
- * @param {Internal.ItemTintFunction_ | Internal.BlockTintFunction_ | Color_} color3 副层颜色
- */
 Material.prototype.color = function (color1, color2, color3) {
 	this.color1 = color1
 	this.color2 = color2
