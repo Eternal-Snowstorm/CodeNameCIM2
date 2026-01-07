@@ -9,7 +9,7 @@ let DefineModels = {
 		return {
 			"parent": "minecraft:item/generated",
 			"textures": {
-				"layer0": `cmi:item/material/color/${type}`
+				"layer0": `cmi:item/material/color/${type}/${type}`
 			}
 		}
 	},
@@ -22,8 +22,8 @@ let DefineModels = {
 		return {
 			"parent": "minecraft:item/generated",
 			"textures": {
-				"layer0": `cmi:item/material/color/${type}`,
-				"layer1": `cmi:item/material/color/${type}_overlay`,
+				"layer0": `cmi:item/material/color/${type}/${type}`,
+				"layer1": `cmi:item/material/color/${type}/${type}_overlay`,
 			}
 		}
 	},
@@ -36,9 +36,9 @@ let DefineModels = {
 		return {
 			"parent": "minecraft:item/generated",
 			"textures": {
-				"layer0": `cmi:item/material/color/${type}`,
-				"layer1": `cmi:item/material/color/${type}_overlay`,
-				"layer2": `cmi:item/material/color/${type}_secondary`,
+				"layer0": `cmi:item/material/color/${type}/${type}`,
+				"layer1": `cmi:item/material/color/${type}/${type}_overlay`,
+				"layer2": `cmi:item/material/color/${type}/${type}_secondary`,
 			}
 		}
 	}
@@ -56,13 +56,14 @@ let MaterialModels = {
 /**
  * 材料类
  * @param {String} name 注册ID
- * @param {Internal.ItemTintFunction_ | Internal.BlockTintFunction_ | Color_} color 颜色
  * @param {MiningLevel} level 挖掘等级
  * @constructor
  */
-function Material(name, color, level) {
+function Material(name, level) {
 	this.name = name
-	this.color = color
+	this.color1 = 0xFFFFFF
+	this.color2 = 0xFFFFFF
+	this.color3 = 0xFFFFFF
 	this.level = level
 	this.types = []
 
@@ -71,6 +72,19 @@ function Material(name, color, level) {
 }
 
 // 定义链式方法
+/**
+ * 设置材料各层颜色
+ * @param {Internal.ItemTintFunction_ | Internal.BlockTintFunction_ | Color_} color1 主层颜色
+ * @param {Internal.ItemTintFunction_ | Internal.BlockTintFunction_ | Color_} color2 覆盖层颜色（不需要请填0xFFFFFF）
+ * @param {Internal.ItemTintFunction_ | Internal.BlockTintFunction_ | Color_} color3 副层颜色
+ */
+Material.prototype.color = function (color1, color2, color3) {
+	this.color1 = color1
+	this.color2 = color2
+	this.color3 = color3
+	return this
+}
+// 注册材料
 Material.prototype.ingot = function () {
 	this.types.push("ingot")
 	return this
@@ -136,8 +150,8 @@ StartupEvents.registry("item", (event) => {
 					return {
 						"parent": "minecraft:item/generated",
 						"textures": {
-							"layer0": "cmi:item/material/color/layer/dirty/0",
-							"layer1": "cmi:item/material/color/layer/dirty/1"
+							"layer0": "cmi:item/material/color/dirty/0",
+							"layer1": "cmi:item/material/color/dirty/1"
 						}
 					}
 				}
@@ -153,24 +167,25 @@ StartupEvents.registry("item", (event) => {
 
 			if (type === "dirty") {
 				event.create(`${global.namespace}:dirty_${material.name}_dust`)
-					.texture(`${global.namespace}:item/material/color/${type}`)
 					.modelJson(MetalTypeModels.dirty())
-					.color(0, material.color)
+					.color(0, material.color1)
 					.tag(`${global.namespace}:metals`)
 					.tag(`mekanism:dirty_dusts`)
 					.tag(`mekanism:dirty_dusts/${material.name}`)
 			} else if (type === "clump" || type === "shard" || type === "crystal") {
 				event.create(`${global.namespace}:${material.name}_${type}`)
 					.texture(`${global.namespace}:item/material/color/${type}`)
-					.color(0, material.color)
+					.color(0, material.color1)
 					.tag(`${global.namespace}:metals`)
 					.tag(`mekanism:${type}s`)
 					.tag(`mekanism:${type}s/${material.name}`)
 				return
 			} else {
 				event.create(`${global.namespace}:${material.name}_${type}`)
-					.texture(`${global.namespace}:item/material/color/${type}`)
-					.color(0, material.color)
+					.modelJson(DefineModels.threeLayers(type))
+					.color(0, material.color1)
+					.color(1, material.color2)
+					.color(2, material.color3)
 					.tag(`${global.namespace}:metals`)
 					.tag(`forge:${type}s`)
 					.tag(`forge:${type}s/${material.name}`)
@@ -186,11 +201,11 @@ StartupEvents.registry("block", (event) => {
 				event.create(`${global.namespace}:${material.name}_block`)
 					.textureAll(`${global.namespace}:block/material/color/storage_blocks`)
 					.soundType(SoundType.METAL)
-					.color(0, material.color)
+					.color(0, material.color1)
 					.hardness(5)
 					.resistance(5)
 					.item((item) => {
-						item.color(0, material.color)
+						item.color(0, material.color1)
 					})
 					.tagBlock(global.ToolType["pickaxe"])
 					.tagBlock(global.MiningLevel[material.level])
@@ -207,8 +222,8 @@ StartupEvents.registry("fluid", (event) => {
 		material.types.forEach((type) => {
 			if (type === "molten") {
 				event.create(`${global.namespace}:molten_${material.name}`)
-					.thinTexture(material.color)
-					.bucketColor(material.color)
+					.thinTexture(material.color1)
+					.bucketColor(material.color1)
 					.flowingTexture(`${global.namespace}:fluid/metal/flow`)
 					.stillTexture(`${global.namespace}:fluid/metal/still`)
 					.renderType("translucent")
@@ -235,13 +250,13 @@ StartupEvents.registry("mekanism:slurry", (event) => {
 			if (type === "dirty_slurry") {
 				event.create(`${global.namespace}:dirty_${material.name}_slurry`)
 					.texture("mekanism:slurry/dirty")
-					.color(material.color)
+					.color(material.color1)
 					.tag("mekanism:dirty")
 					.tag(`mekanism:dirty/${material.name}`)
 			} else if (type === "slurry") {
 				event.create(`${global.namespace}:${material.name}_slurry`)
 					.texture("mekanism:slurry/clean")
-					.color(material.color)
+					.color(material.color1)
 					.tag("mekanism:clean")
 					.tag(`mekanism:clean/${material.name}`)
 			}
@@ -251,12 +266,14 @@ StartupEvents.registry("mekanism:slurry", (event) => {
 })
 
 // 安山合金
-new Material("andesite_alloy", 0xC7C8B8, "wooden")
+new Material("andesite_alloy", "wooden")
+	.color(0xC7C8B8, 0xe3e3d8, 0x809587)
 	.nugget()
 	.molten()
 
 // 不锈钢
-new Material("stainless_steel", 0x708090, "diamond")
+new Material("stainless_steel", "diamond")
+	.color(0x647280, 0x6f7e8e, 0x4c5661)
 	.ingot()
 	.plate()
 	.nugget()
@@ -264,7 +281,8 @@ new Material("stainless_steel", 0x708090, "diamond")
 	.molten()
 
 // 铬
-new Material("chromium", 0xE4DBDC, "iron")
+new Material("chromium", "iron")
+	.color(0x9a9491, 0xe1d8d9, 0x4c566)
 	.ingot()
 	.plate()
 	.dust()
@@ -279,7 +297,8 @@ new Material("chromium", 0xE4DBDC, "iron")
 	.dirtySlurry()
 
 // 铂
-new Material("platinum", 0XA4D4DA, "iron")
+new Material("platinum", "iron")
+	.color(0x92bdc2, 0xe1d8d9, 0x6f8f93)
 	.ingot()
 	.nugget()
 	.block()
@@ -289,7 +308,8 @@ new Material("platinum", 0XA4D4DA, "iron")
 	.shard()
 
 // 泓钢
-new Material("siltsteel", 0x48D1CC, "diamond")
+new Material("siltsteel", "diamond")
+	.color(0x40bab6, 0x47cfca, 0x318d8a)
 	.ingot()
 	.plate()
 	.nugget()
@@ -298,7 +318,8 @@ new Material("siltsteel", 0x48D1CC, "diamond")
 	.molten()
 
 // 铸铁
-new Material("cast_iron", 0x4D4D4D, "iron")
+new Material("cast_iron", "iron")
+	.color(0x454545, 0x454545, 0x343434)
 	.ingot()
 	.dust()
 	.nugget()
@@ -306,7 +327,8 @@ new Material("cast_iron", 0x4D4D4D, "iron")
 	.molten()
 
 // 镁
-new Material("magnesium", 0xFDC7FF, "stone")
+new Material("magnesium", "stone")
+	.color(0xe2b1e3, 0xfac5fc, 0xab86ac)
 	.ingot()
 	.plate()
 	.dust()
@@ -315,16 +337,19 @@ new Material("magnesium", 0xFDC7FF, "stone")
 	.molten()
 
 // 工业铁
-new Material("industrial_iron", 0x4E4E4E, "iron")
+new Material("industrial_iron", "iron")
+	.color(0x626262, 0x777575, 0x4e4e4e)
 	.molten()
 
 // 埃忒恩
-new Material("etrium", 0x32FFD4, "diamond")
+new Material("etrium", "diamond")
+	.color(0xbafcf6, 0xfcfcfc, 0x80d8b9)
 	.molten()
 	.dust()
 
 // 钠
-new Material("sodium", 0xD7DDDD, "wooden")
+new Material("sodium", "wooden")
+	.color(0xc0c5c5, 0xd4dada, 0x919595)
 	.ingot()
 	.plate()
 	.dust()
@@ -333,7 +358,8 @@ new Material("sodium", 0xD7DDDD, "wooden")
 	.molten()
 
 // 钾
-new Material("potassium", 0xDADEDF, "wooden")
+new Material("potassium", "wooden")
+	.color(0xc2c6c7, 0xd7dbdc, 0x939696)
 	.ingot()
 	.plate()
 	.dust()
@@ -342,7 +368,8 @@ new Material("potassium", 0xDADEDF, "wooden")
 	.molten()
 
 // 钙
-new Material("calcium", 0xF2F2F2, "wooden")
+new Material("calcium", "wooden")
+	.color(0xd8d8d8, 0xefefef, 0xa3a3a3)
 	.ingot()
 	.plate()
 	.dust()
@@ -351,7 +378,8 @@ new Material("calcium", 0xF2F2F2, "wooden")
 	.molten()
 
 // 钒
-new Material("vanadium", 0xF0FFFF, "stone")
+new Material("vanadium", "stone")
+	.color(0xd4e7e5, 0xfcfcfc, 0xb4ccc8)
 	.dust()
 	.dirty()
 	.clump()
@@ -361,7 +389,8 @@ new Material("vanadium", 0xF0FFFF, "stone")
 	.dirtySlurry()
 
 // 钨
-new Material("tungsten", 0x5A6C7E, "nether")
+new Material("tungsten", "nether")
+	.color(0x506070, 0x596b7d, 0x3d4955)
 	.ingot()
 	.nugget()
 	.plate()
@@ -370,7 +399,8 @@ new Material("tungsten", 0x5A6C7E, "nether")
 	.block()
 
 // 钨钢
-new Material("tungsten_steel", 0x82998C, "diamond")
+new Material("tungsten_steel", "diamond")
+	.color(0x74887d, 0x80978a, 0x58675e)
 	.ingot()
 	.nugget()
 	.plate()
@@ -381,48 +411,56 @@ new Material("tungsten_steel", 0x82998C, "diamond")
 	.dust()
 
 // 暗影钢
-new Material("shadow_steel", 0x383040, "diamond")
+new Material("shadow_steel", "diamond")
+	.color(0x5f5d6a, 0x655c77, 0x3f364c)
 	.nugget()
 	.molten()
 
 // 光辉石
-new Material("refined_radiance", 0xE8E8F8, "diamond")
+new Material("refined_radiance", "diamond")
+	.color(0xffffff, 0xffffff, 0xdbddde)
 	.nugget()
 	.molten()
 
 // 戴斯
-new Material("desh", 0xD38B4C, "wooden")
+new Material("desh", "wooden")
+	.color(0xd38b4c, 0xe6b85c, 0xc57041)
 	.molten()
 	.dust()
 	.gear()
 
 // 紫金
-new Material("ostrum", 0xA66B72, "wooden")
+new Material("ostrum", "wooden")
+	.color(0xa66b72, 0xbd7980, 0x76525f)
 	.molten()
 	.dust()
 	.gear()
 
 // 耐热金属
-new Material("calorite", 0xC94D4E, "wooden")
+new Material("calorite", "wooden")
+	.color(0xc94d4e, 0xdc6c5b, 0x9c1f3e)
 	.molten()
 	.dust()
 	.gear()
 
 // 赤钕合金
-new Material("scarlet_neodymium", 0xB91919, "stone")
+new Material("scarlet_neodymium", "stone")
+	.color(0xb91919, 0xfc002a, 0x6f2021)
 	.dust()
 	.nugget()
 	.molten()
 
 // 青钕合金
-new Material("azure_neodymium", 0x1936B9, "stone")
+new Material("azure_neodymium", "stone")
+	.color(0x6f2021, 0x005fec, 0x202f6f)
 	.dust()
 	.nugget()
 	.molten()
 
 // MEK中间产物
 // 锌
-new Material("zinc", 0xA8C0A0, "stone")
+new Material("zinc", "stone")
+	.color(0xd3fcd9, 0xfcfcfc, 0xa3be9e)
 	.dirty()
 	.clump()
 	.shard()
@@ -431,7 +469,8 @@ new Material("zinc", 0xA8C0A0, "stone")
 	.dirtySlurry()
 
 // 铝
-new Material("aluminum", 0xB8C0C0, "stone")
+new Material("aluminum", "stone")
+	.color(0xe1eeed, 0xfcfcfc, 0xc1c8cb)
 	.dirty()
 	.clump()
 	.shard()
@@ -440,13 +479,15 @@ new Material("aluminum", 0xB8C0C0, "stone")
 	.dirtySlurry()
 
 // 银
-new Material("silver", 0x788090, "stone")
+new Material("silver", "stone")
+	.color(0x9dabb2, 0xbccad0, 0x748190)
 	.dirty()
 	.clump()
 	.shard()
 
 // 镍
-new Material("nickel", 0x989050, "stone")
+new Material("nickel", "stone")
+	.color(0xc5b582, 0xe4d196, 0xae9e74)
 	.dirty()
 	.clump()
 	.shard()
@@ -455,7 +496,8 @@ new Material("nickel", 0x989050, "stone")
 	.dirtySlurry()
 
 // 钴
-new Material("cobalt", 0x0098FF, "iron")
+new Material("cobalt", "iron")
+	.color(0x2375da, 0x58a4ec, 0x0752b6)
 	.dirty()
 	.clump()
 	.shard()
