@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
 		H: "cmi:coil_mechanism_flash_drive",
 		I: "cmi:sculk_mechanism_flash_drive",
 		J: "cmi:colorful_mechanism_flash_drive",
-		K: "cmi:pigiron_mechanism_flash_drive",
+		K: "cmi:pig_iron_mechanism_flash_drive",
 		L: "cmi:potion_mechanism_flash_drive",
 		M: "cmi:bronze_mechanism_flash_drive",
 		Z: "cmi:final_mechanism_part"

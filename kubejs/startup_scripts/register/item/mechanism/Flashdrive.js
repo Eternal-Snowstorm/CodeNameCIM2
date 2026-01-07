@@ -54,7 +54,7 @@ StartupEvents.registry("item", (event) => {
 		"sculk",
 		"colorful",
 		"creative",
-		"pigiron",
+		"pig_iron",
 		"potion",
 	]
 	mechanismRegister.forEach((material) => {

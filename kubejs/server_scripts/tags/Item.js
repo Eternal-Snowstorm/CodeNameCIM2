@@ -427,6 +427,12 @@ ServerEvents.tags("item", (event) => {
 	event.get("ae2:inscriber_presses")
 		.add("ae2:name_press")
 
+	event.get("forge:ice")
+		.add("minecraft:ice")
+		.add("minecraft:packed_ice")
+		.add("minecraft:blue_ice")
+		.add("ratatouille:frozen_block")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
@@ -486,7 +492,37 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:raw_materials/calorite_scrap")
 		.add("ad_astra:raw_calorite")
 
-	event.get("kubejs:chests")
-		.add("#forge:chests")
-		.remove("minecraft:trapped_chest")
+	removeTagAllId("forge:nuggets/netherite_scrap")
+		.add("tconstruct:debris_nugget")
+
+	removeTagAllId("forge:ingots/netherite_scrap")
+		.add("minecraft:netherite_scrap")
+
+	removeTagAllId("forge:nuggets/netherite")
+		.add("tconstruct:netherite_nugget")
+		.add("createdeco:netherite_nugget")
+
+	removeTagAllId("forge:ingots/netherite")
+		.add("minecraft:netherite_ingot")
+
+	let rawNuggetMetals = [
+		"copper",
+		"iron",
+		"gold",
+		"tin",
+		"lead",
+		"silver",
+		"nickel",
+		"aluminum",
+		"uranium",
+		"osmium",
+		"zinc"
+	]
+	rawNuggetMetals.forEach((metal) => {
+		event.get(`forge:raw_nuggets/${metal}`)
+			.add(`thermal_extra:${metal}_ore_chunk`)
+
+		event.get(`forge:raw_nuggets`)
+			.add(`thermal_extra:${metal}_ore_chunk`)
+	})
 })

@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 	let iscm = "cmi:incomplete_sculk_mechanism"
 	let iprm = "create:incomplete_precision_mechanism"
 	let inem = "cmi:incomplete_nether_mechanism"
-	let ipim = "cmi:incomplete_pigiron_mechanism"
+	let ipim = "cmi:incomplete_pig_iron_mechanism"
 	let icbm = "cmi:incomplete_cobalt_mechanism"
 	let icpm = "cmi:incomplete_computing_mechanism"
 	let iram = "cmi:incomplete_railway_mechanism"
@@ -330,7 +330,7 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem(inem).loops(1)
 
 	// 生铁
-	create.sequenced_assembly("cmi:pigiron_mechanism", [
+	create.sequenced_assembly("cmi:pig_iron_mechanism", [
 		"#forge:plates/pig_iron"
 	], [
 		create.filling(ipim, [ipim, Fluid.of("tconstruct:molten_pig_iron", 90)]),
@@ -445,7 +445,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:bronze_mechanism", [
 		"#forge:plates/bronze"
 	], [
-		create.deploying(ibm, [ibm, "cmi:incomplete_bronze_cogwheel"]),
+		create.deploying(ibm, [ibm, ["cmi:incomplete_bronze_cogwheel", "#forge:gears/bronze"]]),
 		create.deploying(ibm, [ibm, "vintageimprovements:bronze_spring"]),
 		create.deploying(ibm, [ibm, "#forge:nuggets/andesite_alloy"]),
 		vintageimprovements.vibrating(ibm, ibm),

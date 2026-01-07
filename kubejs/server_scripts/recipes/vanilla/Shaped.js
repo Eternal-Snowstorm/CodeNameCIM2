@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
 		E: "cmi:stone_mechanism",
 	}).id("industrial_platform:pool")
 
-		kubejs.shaped("industrial_platform:fluid_pool", [
+	kubejs.shaped("industrial_platform:fluid_pool", [
 		"B A",
 		"CDC",
 		"CEC"
@@ -79,4 +79,13 @@ ServerEvents.recipes((event) => {
 		D: "#forge:deepslate",
 		E: "cmi:stone_mechanism",
 	}).id("industrial_platform:pool_2")
+
+	// 蜘蛛网
+	kubejs.shaped("minecraft:cobweb", [
+		"A A",
+		" A ",
+		"A A"
+	], {
+		A: "#forge:string"
+	})
 })

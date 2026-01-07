@@ -95,9 +95,9 @@ ServerEvents.recipes((event) => {
 
 	addAugmentRecipe("cmi:smart_mechanism_augment", [
 		"2x immersiveengineering:wirecoil_redstone",
+		"create_connected:control_chip",
 		"ae2:logic_processor",
 		"ae2:calculation_processor",
-		"ae2:engineering_processor"
 	])
 
 	addAugmentRecipe("cmi:thermal_mechanism_augment", [

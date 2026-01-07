@@ -39,7 +39,7 @@ StartupEvents.registry("block", (event) => {
 		"precision",
 		"redstone",
 		"bronze",
-		"pigiron"
+		"pig_iron"
 	]
 	machineBlockRegister.forEach((type) => {
 		event.create(`${global.namespace}:${type}_machine`, "cardinal")

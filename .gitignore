@@ -113,6 +113,4 @@ config/ftbquests/qusets/chapters/control*
 !config/explorerscompass-common.toml
 !config/naturescompass-common.toml
 !config/oei
-!config/oeb
-!config/oef
 !config/railways-client.toml

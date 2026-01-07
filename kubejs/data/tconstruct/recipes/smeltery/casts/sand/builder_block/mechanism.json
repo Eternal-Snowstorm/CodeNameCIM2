@@ -1,0 +1,8 @@
+{
+	"type": "tconstruct:item_part_builder",
+	"pattern": "tconstruct:plate",
+	"pattern_item": {
+		"item": "minecraft:sand"
+	},
+	"result": "cmi:mechanism_sand_cast"
+}

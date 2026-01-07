@@ -2,11 +2,19 @@ ServerEvents.recipes((event) => {
 	let { create } = event.recipes
 
 	global.metalGroup.forEach((metal) => {
-		const RAW_ORE = `#forge:raw_materials/${metal}`
-		const RAW_BLOCK = `#forge:storage_blocks/raw_${metal}`
-		const CRUSHED = `#create:crushed_raw_materials/${metal}`
-		const ORE = `#forge:ores/${metal}`
-		const EXP_NUGGET = "create:experience_nugget"
+		let RAW_ORE = `#forge:raw_materials/${metal}`
+		let RAW_BLOCK = `#forge:storage_blocks/raw_${metal}`
+		let CRUSHED = `#create:crushed_raw_materials/${metal}`
+		let ORE = `#forge:ores/${metal}`
+		let EXP_NUGGET = "create:experience_nugget"
+		let INGOT = `#forge:ingots/${metal}`
+		let DUST = `#forge:dusts/${metal}`
+
+		if (IngrUtils.isNotNull(DUST)) {
+			create.crushing([
+				DUST
+			], INGOT)
+		}
 
 		if (IngrUtils.isNotNull(CRUSHED)) {
 			if (IngrUtils.isNotNull(RAW_BLOCK)) {

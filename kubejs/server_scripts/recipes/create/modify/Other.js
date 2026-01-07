@@ -467,7 +467,7 @@ ServerEvents.recipes((event) => {
 
 	kubejs.shapeless("create_connected:encased_chain_cogwheel", [
 		"create:encased_chain_drive",
-		"#create:incomplete_cogwheel"
+		"#create:incomplete_cogwheels"
 	]).id("create_connected:crafting/kinetics/encased_chain_cogwheel")
 
 	kubejs.shapeless("create_connected:crank_wheel", [

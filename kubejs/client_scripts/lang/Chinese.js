@@ -423,7 +423,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:grass_fiber", "§c小刀右键草会掉落")
 	addCommonTooltipLang("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
 	addCommonTooltipLang("#cmi:machine_block", "只有装饰作用(暂时)")
-	addCommonTooltipLang("cmi:pigiron_mechanism", "可无限次食用")
+	addCommonTooltipLang("cmi:pig_iron_mechanism", "可无限次食用")
 	addCommonTooltipLang("cmi:acceleratable", "§v按住Shift查看构件之力催生器用途")
 	addCommonTooltipLang("cmi:stone_mechanism", "§c手持右键圆石可将其转换为石头")
 	addCommonTooltipLang("cmi:copper_mechanism", "§6手持右键可以投掷出水瓶")
@@ -597,6 +597,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		"来自天空的使者! ",
 		"吸收了大量光能的化合物, 韧性令人掩面, 但可以为装备提供极大的强化"
 	)
+	addTConModifierLang("frenzy", "狂乱")
+	addTConModifierLang("acupoint", "死穴")
+	addTConModifierLang("causal_truncation", "因果截断")
 
 	let mechanismGroup = [
 		["nature", "自然"],
@@ -631,7 +634,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		["coil", "线圈"],
 		["sculk", "幽匿"],
 		["colorful", "多彩"],
-		["pigiron", "生铁"],
+		["pig_iron", "生铁"],
 		["nether", "下界"],
 		["creative", "创造"],
 		["precision", "精密"],
@@ -841,5 +844,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addCellLang(key, text_1, text_2) {
 		event.add(`text.${global.namespace}.cell.${key}.page_1`, text_1)
 		event.add(`text.${global.namespace}.cell.${key}.page_2`, text_2)
+	}
+
+	function addTConModifierLang(key, value) {
+		event.add(`modifier.${global.namespace}.${key}`, value)
 	}
 })

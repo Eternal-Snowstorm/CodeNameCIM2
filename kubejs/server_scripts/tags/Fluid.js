@@ -14,6 +14,11 @@ ServerEvents.tags("fluid", (event) => {
 		.add("ad_astra:fuel")
 		.add("ad_astra:cryo_fuel")
 
+	// 机械动力无限流体
+	event.get("create:bottomless/allow")
+		.add("cmi:sea_water")
+		.add()
+
 	// 一桶就能上天的燃料
 	// event.get("ad_astra:efficient_fuel")
 	// 	.add("minecraft:lava")
@@ -29,6 +34,10 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("deepdrilling:sludge")
 		.add("deepdrilling:flowing_sludge")
 		.add("deepdrilling:sludge")
+
+	event.get("cmi:pig_iron_material")
+		.add("#tconstruct:meat_soup")
+		.add("cmi:blood")
 
 	event.get("minecraft:water")
 		.removeAll()
@@ -110,4 +119,7 @@ ServerEvents.tags("fluid", (event) => {
 		event.get(`tconstruct:molten_${material}`)
 			.add(`thermalconstruct:molten_${material}`)
 	})
+
+	event.get("forge:molten_pig_iron")
+		.add("#tconstruct:molten_pig_iron")
 })
