@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
 
 	new NitraticIgniterRecipe()
 		.energy(2000)
-		.ingredient("#minecraft:dirt", 2)
+		.ingredient("#minecraft:dirt")
 		.results([
 			setResult("cmi:cast_iron_ingot", 2, 1),
 			setResult("cmi:cast_iron_ingot", 1, 0.5),
