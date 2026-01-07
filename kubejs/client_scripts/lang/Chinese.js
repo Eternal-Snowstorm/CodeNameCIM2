@@ -597,6 +597,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		"来自天空的使者! ",
 		"吸收了大量光能的化合物, 韧性令人掩面, 但可以为装备提供极大的强化"
 	)
+	addTConModifierLang("frenzy", "狂乱")
+	addTConModifierLang("acupoint", "死穴")
+	addTConModifierLang("causal_truncation", "因果截断")
 
 	let mechanismGroup = [
 		["nature", "自然"],
@@ -841,5 +844,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addCellLang(key, text_1, text_2) {
 		event.add(`text.${global.namespace}.cell.${key}.page_1`, text_1)
 		event.add(`text.${global.namespace}.cell.${key}.page_2`, text_2)
+	}
+
+	function addTConModifierLang(key, value) {
+		event.add(`modifier.${global.namespace}.${key}`, value)
 	}
 })

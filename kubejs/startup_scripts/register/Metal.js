@@ -7,9 +7,9 @@ let DefineModels = {
 	 */
 	oneLayers: function (type) {
 		return {
-			"parent": "minecraft:item/generated",
-			"textures": {
-				"layer0": `cmi:item/material/color/${type}/${type}`
+			parent: "minecraft:item/generated",
+			textures: {
+				layer0: `cmi:item/material/color/${type}/${type}`
 			}
 		}
 	},
@@ -20,10 +20,10 @@ let DefineModels = {
 	 */
 	twoLayers: function (type) {
 		return {
-			"parent": "minecraft:item/generated",
-			"textures": {
-				"layer0": `cmi:item/material/color/${type}/${type}`,
-				"layer1": `cmi:item/material/color/${type}/${type}_overlay`,
+			parent: "minecraft:item/generated",
+			textures: {
+				layer0: `cmi:item/material/color/${type}/${type}`,
+				layer1: `cmi:item/material/color/${type}/${type}_overlay`,
 			}
 		}
 	},
@@ -34,23 +34,14 @@ let DefineModels = {
 	 */
 	threeLayers: function (type) {
 		return {
-			"parent": "minecraft:item/generated",
-			"textures": {
-				"layer0": `cmi:item/material/color/${type}/${type}`,
-				"layer1": `cmi:item/material/color/${type}/${type}_overlay`,
-				"layer2": `cmi:item/material/color/${type}/${type}_secondary`,
+			parent: "minecraft:item/generated",
+			textures: {
+				layer0: `cmi:item/material/color/${type}/${type}`,
+				layer1: `cmi:item/material/color/${type}/${type}_overlay`,
+				layer2: `cmi:item/material/color/${type}/${type}_secondary`,
 			}
 		}
 	}
-}
-
-let MaterialModels = {
-	ingot: DefineModels.threeLayers("ingot"),
-	plate: DefineModels.threeLayers("plate"),
-	nugget: DefineModels.threeLayers("nugget"),
-	dust: DefineModels.threeLayers("dust"),
-	rod: DefineModels.oneLayers("rod"),
-	gear: DefineModels.twoLayers("gear")
 }
 
 /**
