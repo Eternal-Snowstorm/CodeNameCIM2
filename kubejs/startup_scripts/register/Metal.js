@@ -1,4 +1,57 @@
 let materials = []
+let DefineModels = {
+	/**
+	 * 
+	 * @param {string} type 材料类型名称
+	 * @returns 
+	 */
+	oneLayers: function (type) {
+		return {
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `cmi:item/material/color/${type}`
+			}
+		}
+	},
+	/**
+	 * 
+	 * @param {string} type 材料类型名称
+	 * @returns 
+	 */
+	twoLayers: function (type) {
+		return {
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `cmi:item/material/color/${type}`,
+				"layer1": `cmi:item/material/color/${type}_overlay`,
+			}
+		}
+	},
+	/**
+	 * 
+	 * @param {string} type 材料类型名称
+	 * @returns 
+	 */
+	threeLayers: function (type) {
+		return {
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": `cmi:item/material/color/${type}`,
+				"layer1": `cmi:item/material/color/${type}_overlay`,
+				"layer2": `cmi:item/material/color/${type}_secondary`,
+			}
+		}
+	}
+}
+
+let MaterialModels = {
+	ingot: DefineModels.threeLayers("ingot"),
+	plate: DefineModels.threeLayers("plate"),
+	nugget: DefineModels.threeLayers("nugget"),
+	dust: DefineModels.threeLayers("dust"),
+	rod: DefineModels.oneLayers("rod"),
+	gear: DefineModels.twoLayers("gear")
+}
 
 /**
  * 材料类
