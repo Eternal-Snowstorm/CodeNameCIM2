@@ -267,7 +267,7 @@ new Material("stainless_steel", "diamond")
 
 // 铬
 new Material("chromium", "iron")
-	.color(0x9a9491, 0xe1d8d9, 0x4c566)
+	.color(0xebe3e4, 0xffffff, 0xb2acad)
 	.ingot()
 	.plate()
 	.dust()
@@ -437,7 +437,7 @@ new Material("scarlet_neodymium", "stone")
 
 // 青钕合金
 new Material("azure_neodymium", "stone")
-	.color(0x6f2021, 0x005fec, 0x202f6f)
+	.color(0x1937bb, 0x005fec, 0x202f6f)
 	.dust()
 	.nugget()
 	.molten()
