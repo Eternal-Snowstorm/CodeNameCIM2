@@ -6,6 +6,4 @@ StartupEvents.registry("item", (event) => {
 			.tag("forge:ingots")
 			.tag(`forge:ingots/${name}`)
 	}
-
-	addColorIngotItem("superconducting_mercury", 0xA9C0FF)
 })

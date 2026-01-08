@@ -6,6 +6,4 @@ StartupEvents.registry("item", (event) => {
 			.tag("forge:plates")
 			.tag(`forge:plates/${name}`)
 	}
-
-	addColorPlateItem("superconducting_mercury", 0xA9C0FF)
 })

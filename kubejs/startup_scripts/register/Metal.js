@@ -489,3 +489,14 @@ new Material("cobalt", "iron")
 	.crystal()
 	.slurry()
 	.dirtySlurry()
+
+// 镀铬钢
+new Material("chromeplated_steel", "diamond")
+	.color(0xE4DBDC, 0xDBD3D4, 0x726F73)
+	.gear()
+
+// 超导汞
+new Material("superconducting_mercury", "diamond")
+	.color(0xA9C0FF, 0x91AED9, 0x7D84B8)
+	.ingot()
+	.plate()

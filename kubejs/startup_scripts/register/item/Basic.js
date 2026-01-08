@@ -76,10 +76,10 @@ StartupEvents.registry("item", (event) => {
 		.glow(true)
 
 	// 石板
-	// addItem("stone_plate")
-	// 	.texture(`${global.namespace}:item/material/stone_plate`)
-	// 	.tag("forge:plates")
-	// 	.tag("forge:plates/stone")
+	addItem("stone_plate")
+		.texture(`${global.namespace}:item/material/stone_plate`)
+		.tag("forge:plates")
+		.tag("forge:plates/stone")
 
 	// 木屑加工系列
 	addItem("wood_chip_briquette")
@@ -204,13 +204,6 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/lime_dust`)
 		.tag("forge:dusts/lime")
 		.tag("forge:dusts")
-
-	// 镀铬钢齿轮
-	addItem("chromeplated_steel_gear")
-		.texture(`${global.namespace}:item/material/color/gear`)
-		.color(0, 0xE4DBDC)
-		.tag("forge:gears/chromeplated_steel")
-		.tag("forge:gears")
 
 	// 碳化硅
 	addItem("silicon_carbide")
