@@ -252,13 +252,13 @@ StartupEvents.registry("mekanism:slurry", (event) => {
 
 // 安山合金
 new Material("andesite_alloy", "wooden")
-	.color(0xC7C8B8, 0xe3e3d8, 0x809587)
+	.color(0xC7C8B8, 0xE3E3D8, 0x809587)
 	.nugget()
 	.molten()
 
 // 不锈钢
 new Material("stainless_steel", "diamond")
-	.color(0x647280, 0x6f7e8e, 0x4c5661)
+	.color(0x647280, 0x6F7E8E, 0x4C5661)
 	.ingot()
 	.plate()
 	.nugget()
@@ -267,7 +267,7 @@ new Material("stainless_steel", "diamond")
 
 // 铬
 new Material("chromium", "iron")
-	.color(0xebe3e4, 0xffffff, 0xb2acad)
+	.color(0xEBE3E4, 0xFFFFFF, 0xB2ACAD)
 	.ingot()
 	.plate()
 	.dust()
@@ -283,7 +283,7 @@ new Material("chromium", "iron")
 
 // 铂
 new Material("platinum", "iron")
-	.color(0x92bdc2, 0xe1d8d9, 0x6f8f93)
+	.color(0x92BDC2, 0xE1D8D9, 0x6F8F93)
 	.ingot()
 	.nugget()
 	.block()
@@ -294,7 +294,7 @@ new Material("platinum", "iron")
 
 // 泓钢
 new Material("siltsteel", "diamond")
-	.color(0x40bab6, 0x47cfca, 0x318d8a)
+	.color(0x40BAB6, 0x47CFCA, 0x318D8A)
 	.ingot()
 	.plate()
 	.nugget()
@@ -313,7 +313,7 @@ new Material("cast_iron", "iron")
 
 // 镁
 new Material("magnesium", "stone")
-	.color(0xe2b1e3, 0xfac5fc, 0xab86ac)
+	.color(0xE2B1E3, 0xFAC5FC, 0xAB86AC)
 	.ingot()
 	.plate()
 	.dust()
@@ -323,18 +323,18 @@ new Material("magnesium", "stone")
 
 // 工业铁
 new Material("industrial_iron", "iron")
-	.color(0x626262, 0x777575, 0x4e4e4e)
+	.color(0x626262, 0x777575, 0x4E4E4E)
 	.molten()
 
 // 埃忒恩
 new Material("etrium", "diamond")
-	.color(0xbafcf6, 0xfcfcfc, 0x80d8b9)
+	.color(0xBAFCF6, 0xFCFCFC, 0x80D8B9)
 	.molten()
 	.dust()
 
 // 钠
 new Material("sodium", "wooden")
-	.color(0xc0c5c5, 0xd4dada, 0x919595)
+	.color(0xC0C5C5, 0xD4DADA, 0x919595)
 	.ingot()
 	.plate()
 	.dust()
@@ -344,7 +344,7 @@ new Material("sodium", "wooden")
 
 // 钾
 new Material("potassium", "wooden")
-	.color(0xc2c6c7, 0xd7dbdc, 0x939696)
+	.color(0xC2C6C7, 0xD7DBDC, 0x939696)
 	.ingot()
 	.plate()
 	.dust()
@@ -354,7 +354,7 @@ new Material("potassium", "wooden")
 
 // 钙
 new Material("calcium", "wooden")
-	.color(0xd8d8d8, 0xefefef, 0xa3a3a3)
+	.color(0xD8D8D8, 0xEFEFEF, 0xA3A3A3)
 	.ingot()
 	.plate()
 	.dust()
@@ -364,7 +364,7 @@ new Material("calcium", "wooden")
 
 // 钒
 new Material("vanadium", "stone")
-	.color(0xd4e7e5, 0xfcfcfc, 0xb4ccc8)
+	.color(0xD4E7E5, 0xFCFCFC, 0xB4CCC8)
 	.dust()
 	.dirty()
 	.clump()
@@ -375,7 +375,7 @@ new Material("vanadium", "stone")
 
 // 钨
 new Material("tungsten", "nether")
-	.color(0x506070, 0x596b7d, 0x3d4955)
+	.color(0x506070, 0x596B7D, 0x3D4955)
 	.ingot()
 	.nugget()
 	.plate()
@@ -385,7 +385,7 @@ new Material("tungsten", "nether")
 
 // 钨钢
 new Material("tungsten_steel", "diamond")
-	.color(0x74887d, 0x80978a, 0x58675e)
+	.color(0x74887D, 0x80978A, 0x58675E)
 	.ingot()
 	.nugget()
 	.plate()
@@ -397,47 +397,47 @@ new Material("tungsten_steel", "diamond")
 
 // 暗影钢
 new Material("shadow_steel", "diamond")
-	.color(0x5f5d6a, 0x655c77, 0x3f364c)
+	.color(0x5F5D6A, 0x655C77, 0x3F364C)
 	.nugget()
 	.molten()
 
 // 光辉石
 new Material("refined_radiance", "diamond")
-	.color(0xffffff, 0xffffff, 0xdbddde)
+	.color(0xFFFFFF, 0xFFFFFF, 0xDBDDDE)
 	.nugget()
 	.molten()
 
 // 戴斯
 new Material("desh", "wooden")
-	.color(0xd38b4c, 0xe6b85c, 0xc57041)
+	.color(0xD38B4C, 0xE6B85C, 0xC57041)
 	.molten()
 	.dust()
 	.gear()
 
 // 紫金
 new Material("ostrum", "wooden")
-	.color(0xa66b72, 0xbd7980, 0x76525f)
+	.color(0xA66B72, 0xBD7980, 0x76525F)
 	.molten()
 	.dust()
 	.gear()
 
 // 耐热金属
 new Material("calorite", "wooden")
-	.color(0xc94d4e, 0xdc6c5b, 0x9c1f3e)
+	.color(0xC94D4E, 0xDC6C5B, 0x9C1F3E)
 	.molten()
 	.dust()
 	.gear()
 
 // 赤钕合金
 new Material("scarlet_neodymium", "stone")
-	.color(0xb91919, 0xfc002a, 0x6f2021)
+	.color(0xB91919, 0xFC002A, 0x6F2021)
 	.dust()
 	.nugget()
 	.molten()
 
 // 青钕合金
 new Material("azure_neodymium", "stone")
-	.color(0x1937bb, 0x005fec, 0x202f6f)
+	.color(0x1937BB, 0x005FEC, 0x202F6F)
 	.dust()
 	.nugget()
 	.molten()
@@ -445,7 +445,7 @@ new Material("azure_neodymium", "stone")
 // MEK中间产物
 // 锌
 new Material("zinc", "stone")
-	.color(0xd3fcd9, 0xfcfcfc, 0xa3be9e)
+	.color(0xD3FCD9, 0xFCFCFC, 0xA3BE9E)
 	.dirty()
 	.clump()
 	.shard()
@@ -455,7 +455,7 @@ new Material("zinc", "stone")
 
 // 铝
 new Material("aluminum", "stone")
-	.color(0xe1eeed, 0xfcfcfc, 0xc1c8cb)
+	.color(0xE1EEED, 0xFCFCFC, 0xC1C8CB)
 	.dirty()
 	.clump()
 	.shard()
@@ -465,14 +465,14 @@ new Material("aluminum", "stone")
 
 // 银
 new Material("silver", "stone")
-	.color(0x9dabb2, 0xbccad0, 0x748190)
+	.color(0x9DABB2, 0xBCCAD0, 0x748190)
 	.dirty()
 	.clump()
 	.shard()
 
 // 镍
 new Material("nickel", "stone")
-	.color(0xc5b582, 0xe4d196, 0xae9e74)
+	.color(0xC5B582, 0xE4D196, 0xAE9E74)
 	.dirty()
 	.clump()
 	.shard()
@@ -482,7 +482,7 @@ new Material("nickel", "stone")
 
 // 钴
 new Material("cobalt", "iron")
-	.color(0x2375da, 0x58a4ec, 0x0752b6)
+	.color(0x2375DA, 0x58A4EC, 0x0752B6)
 	.dirty()
 	.clump()
 	.shard()
