@@ -16,6 +16,10 @@ interface OreBlock {
 	glacio(): this
 }
 
+// 颜色类型
+type MaterialColor = Internal.ItemTintFunction_
+	| Internal.BlockTintFunction_
+	| dev.latvian.mods.rhino.mod.util.color.Color_
 // 工具类型
 type ToolType = "pickaxe" | "axe" | "shovel" | "hoe" | "sword"
 // 挖掘等级
@@ -42,17 +46,7 @@ interface Material {
 	level: MiningLevel
 	types: MaterialType[]
 
-	color(
-		color1: Internal.ItemTintFunction_
-			| Internal.BlockTintFunction_
-			| dev.latvian.mods.rhino.mod.util.color.Color_,
-		color2: Internal.ItemTintFunction_
-			| Internal.BlockTintFunction_
-			| dev.latvian.mods.rhino.mod.util.color.Color_,
-		color3: Internal.ItemTintFunction_
-			| Internal.BlockTintFunction_
-			| dev.latvian.mods.rhino.mod.util.color.Color_
-	): this
+	color(color1: MaterialColor, color2: MaterialColor): this
 	isMetal(): this
 	ingot(): this
 	plate(): this
