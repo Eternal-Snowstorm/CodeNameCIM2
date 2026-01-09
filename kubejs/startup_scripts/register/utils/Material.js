@@ -1,8 +1,8 @@
+// priority: 102
+
 let materials = []
 
-/**
- * 模型定义：根据 overlay 决定 2 / 3 层
- */
+// 模型定义: 根据 overlay 决定 2 / 3 层
 function defineModels(type, overlay) {
 	let textures = {
 		layer0: `cmi:item/material/color/${type}/${type}`,
@@ -33,9 +33,7 @@ function Material(name, level) {
 	materials.push(this)
 }
 
-/**
- * 链式方法
- */
+// 链式方法
 Material.prototype.color = function (c1, c2) {
 	this.color1 = c1
 	this.color2 = c2
@@ -46,7 +44,7 @@ Material.prototype.isMetal = function () {
 	return this
 }
 /**
- * 内部方法：默认 overlay = true
+ * 内部方法: 默认 overlay = true
  */
 Material.prototype._pushType = function (type, overlay) {
 	this.types.push({
