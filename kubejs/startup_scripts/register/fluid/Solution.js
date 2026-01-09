@@ -14,7 +14,7 @@ StartupEvents.registry("fluid", (event) => {
 
 		builder1.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 		builder1.stillTexture(`${global.namespace}:fluid/solution/still`)
-		// builder1.thinTexture(color1)
+		builder1.thinTexture(color1)
 		builder1.bucketColor(color1)
 		builder1.renderType("translucent")
 		builder1.tag("forge:solutions")
@@ -25,7 +25,7 @@ StartupEvents.registry("fluid", (event) => {
 
 		builder2.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 		builder2.stillTexture(`${global.namespace}:fluid/solution/still`)
-		// builder2.thinTexture(color2)
+		builder2.thinTexture(color2)
 		builder2.bucketColor(color2)
 		builder2.renderType("translucent")
 		builder2.tag("forge:solutions")
