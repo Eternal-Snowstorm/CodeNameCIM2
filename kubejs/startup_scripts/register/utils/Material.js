@@ -71,22 +71,22 @@ Material.prototype.pushType = function (type, overlay) {
 	return this
 }
 Material.prototype.ingot = function (overlay) {
-	return this._pushType("ingot", overlay)
+	return this.pushType("ingot", overlay)
 }
 Material.prototype.plate = function (overlay) {
-	return this._pushType("plate", overlay)
+	return this.pushType("plate", overlay)
 }
 Material.prototype.nugget = function (overlay) {
-	return this._pushType("nugget", overlay)
+	return this.pushType("nugget", overlay)
 }
 Material.prototype.dust = function (overlay) {
-	return this._pushType("dust", overlay)
+	return this.pushType("dust", overlay)
 }
 Material.prototype.rod = function (overlay) {
-	return this._pushType("rod", overlay)
+	return this.pushType("rod", overlay)
 }
 Material.prototype.gear = function (overlay) {
-	return this._pushType("gear", overlay)
+	return this.pushType("gear", overlay)
 }
 Material.prototype.block = function () {
 	this.types.push({
