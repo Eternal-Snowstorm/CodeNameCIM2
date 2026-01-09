@@ -2,7 +2,14 @@
 
 let materials = []
 
-// 模型定义: 根据 overlay 决定 2 / 3 层
+/**
+ * 模型定义
+ * 根据 overlay 决定 2 / 3 层
+ * 
+ * @param {string} type 
+ * @param {boolean} overlay 
+ * @returns 
+ */
 function defineModels(type, overlay) {
 	let textures = {
 		layer0: `cmi:item/material/color/${type}/${type}`,
@@ -35,8 +42,13 @@ function Material(name, level) {
 	materials.push(this)
 }
 
-// 链式方法
-Material.prototype.color = function (c1, c2) {
+/**
+ * 
+ * @param {MaterialColor} color1 
+ * @param {MaterialColor} color2 
+ * @returns 
+ */
+Material.prototype.color = function (color1, color2) {
 	this.color1 = c1
 	this.color2 = c2
 	return this
@@ -47,8 +59,11 @@ Material.prototype.isMetal = function () {
 }
 /**
  * 内部方法: 默认 overlay = true
+ * 
+ * @param {string} type
+ * @param {boolean} overlay
  */
-Material.prototype._pushType = function (type, overlay) {
+Material.prototype.pushType = function (type, overlay) {
 	this.types.push({
 		type: type,
 		overlay: overlay !== false
