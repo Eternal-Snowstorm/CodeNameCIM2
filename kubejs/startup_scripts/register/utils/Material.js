@@ -225,12 +225,13 @@ StartupEvents.registry("fluid", (event) => {
 			}
 
 			let molten = event.create(`${global.namespace}:molten_${material.name}`)
-				.thinTexture(material.color1)
-				.bucketColor(material.color1)
-				.flowingTexture(`${global.namespace}:fluid/metal/flow`)
-				.stillTexture(`${global.namespace}:fluid/metal/still`)
-				.renderType("translucent")
-				.tag(`tconstruct:molten_${material.name}`)
+
+			molten.thinTexture(material.color1)
+			molten.bucketColor(material.color1)
+			molten.flowingTexture(`${global.namespace}:fluid/metal/flow`)
+			molten.stillTexture(`${global.namespace}:fluid/metal/still`)
+			molten.renderType("translucent")
+			molten.tag(`tconstruct:molten_${material.name}`)
 
 			if (material.metal) {
 				molten.tag(`forge:molten_${material.name}`)
