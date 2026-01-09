@@ -20,7 +20,9 @@ function defineModels(type, overlay) {
 }
 
 /**
- * 材料类
+ * @constructor
+ * @param {string} name
+ * @param {MiningLevel} level
  */
 function Material(name, level) {
 	this.name = name
