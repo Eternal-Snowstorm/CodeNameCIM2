@@ -1,15 +1,14 @@
-ServerEvents.highPriorityData((event) => {
+ServerEvents.recipes((event) => {
 
     /** 
         * 
         * @param {String} modifier
         * @param {Set} inputs
         * @param {String} targetTag 
-        * @param {String} path
         * @returns
        */
 
-    function addCustomModifierRecipe(modifier, inputs, targetTag, path) {
+    function addCustomModifierRecipe(modifier, inputs, targetTag) {
         let recipe = {
             "type": "tconstruct:modifier",
             "allow_crystal": true,
@@ -24,7 +23,7 @@ ServerEvents.highPriorityData((event) => {
                 "tag": targetTag
             }
         }
-        event.addJson(path, recipe)
+        return event.custom(recipe)
     }
 
     addCustomModifierRecipe("nebula_tinker:acupoint", [
@@ -34,8 +33,8 @@ ServerEvents.highPriorityData((event) => {
         { "tag": "forge:gems/charged_amethyst" },
         { "tag": "forge:gems/charged_amethyst" }
     ],
-        "tconstruct:modifiable/durability",
-        "nebula_tinker:recipes/tconstruct/modifier/ability/acupoint")
+        "tconstruct:modifiable/held"
+    ).id("nebula_tinker:tconstruct/modifier/ability/acupoint")
 
     addCustomModifierRecipe("nebula_tinker:frenzy", [
         { "tag": "forge:dusts/quartz" },
@@ -44,8 +43,8 @@ ServerEvents.highPriorityData((event) => {
         { "tag": "forge:gems/charged_amethyst" },
         { "tag": "forge:gems/charged_amethyst" }
     ],
-        "tconstruct:modifiable/durability",
-        "nebula_tinker:recipes/tconstruct/modifier/ability/frenzy")
+        "tconstruct:modifiable/held"
+    ).id("nebula_tinker:tconstruct/modifier/ability/frenzy")
 
     addCustomModifierRecipe("nebula_tinker:causal_truncation", [
         { "tag": "forge:plates/uranium" },
@@ -54,6 +53,6 @@ ServerEvents.highPriorityData((event) => {
         { "tag": "forge:slimeball/blood" },
         { "tag": "forge:slimeball/blood" }
     ],
-        "tconstruct:modifiable/melee/primary",
-        "nebula_tinker:recipes/tconstruct/modifier/ability/causal_truncation")
+        "tconstruct:modifiable/melee/primary"
+    ).id("nebula_tinker:tconstruct/modifier/ability/causal_truncation")
 })
