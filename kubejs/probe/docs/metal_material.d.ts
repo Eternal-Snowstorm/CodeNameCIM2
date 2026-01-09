@@ -53,6 +53,7 @@ interface Material {
 			| Internal.BlockTintFunction_
 			| dev.latvian.mods.rhino.mod.util.color.Color_
 	): this
+	isMetal(): this
 	ingot(): this
 	plate(): this
 	nugget(): this
