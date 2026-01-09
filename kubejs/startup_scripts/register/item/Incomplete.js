@@ -12,6 +12,19 @@ StartupEvents.registry("item", (event) => {
 	addItem("incomplete_ultimate_control_circuit")
 		.texture(`${global.namespace}:item/material/ultimate_control_circuit`)
 
+	// ae未完成处理器
+	addItem("incomplete_logic_processor")
+		.texture("ae2:item/printed_logic_processor")
+
+	addItem("incomplete_calculation_processor")
+		.texture("ae2:item/printed_calculation_processor")
+
+	addItem("incomplete_engineering_processor")
+		.texture("ae2:item/printed_engineering_processor")
+
+	addItem("incomplete_quantum_processor")
+		.texture("advanced_ae:item/printed_quantum_processor")
+
 	// 扫描器(半成品)
 	addItem("incomplete_scanner")
 		.texture("scannable:item/scanner")

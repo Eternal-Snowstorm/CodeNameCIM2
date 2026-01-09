@@ -49,8 +49,8 @@ function Material(name, level) {
  * @returns 
  */
 Material.prototype.color = function (color1, color2) {
-	this.color1 = c1
-	this.color2 = c2
+	this.color1 = color1
+	this.color2 = color2
 	return this
 }
 Material.prototype.isMetal = function () {
