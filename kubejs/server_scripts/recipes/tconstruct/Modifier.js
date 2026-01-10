@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	/** 
 		* 
 		* @param {String} modifier
-		* @param {Set} inputs
+		* @param {Internal.JsonElement[]} inputs
 		* @param {String} targetTag 
 		* @returns
 	   */
