@@ -12,5 +12,5 @@ ServerEvents.recipes((event) => {
 		"minecraft:amethyst_shard",
 		Item.of("minecraft:redstone").withChance(0.5)
 	], "#forge:gems/charged_amethyst")
-		.processingTime(10)
+		.processingTime(15)
 })
