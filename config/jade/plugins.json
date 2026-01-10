@@ -65,6 +65,10 @@
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
+  "expatternprovider": {
+    "jade_chamber": true,
+    "jade_wireless": true
+  },
   "uti": {
     "entity_name": true,
     "object_name": true
