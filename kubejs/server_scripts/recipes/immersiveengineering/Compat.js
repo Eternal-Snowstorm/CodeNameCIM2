@@ -2,14 +2,14 @@ ServerEvents.recipes((event) => {
 	let { create } = event.recipes
 
 	// 红石酸
-	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 250), [
+	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 200), [
 		"#forge:dusts/redstone",
-		Fluid.of("minecraft:water", 250)
+		Fluid.of("tconstruct:molten_lead", 90)
 	]).heated()
 
-	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 500), [
-		Fluid.of("thermal:redstone", 250),
-		Fluid.of("minecraft:water", 250)
+	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 400), [
+		Fluid.of("thermal:redstone", 200),
+		Fluid.of("tconstruct:molten_lead", 180)
 	])
 
 	// 聚烯烃

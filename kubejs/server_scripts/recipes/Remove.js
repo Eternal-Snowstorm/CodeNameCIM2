@@ -142,7 +142,8 @@ ServerEvents.recipes((event) => {
 		"advanced_ae:quantum_processor_chamber",
 		"advanced_ae:quantum_alloy_plate",
 		"ad_astra:rocket_nose_cone",
-		"ad_astra:rocket_fin"
+		"ad_astra:rocket_fin",
+		"immersiveengineering:crafting/redstone_acid"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
@@ -214,11 +215,7 @@ ServerEvents.recipes((event) => {
 		"mekanism:tier_installer/elite",
 		"mekanism:tier_installer/ultimate",
 		"ad_astra:water_pump",
-		"@portality",
-		"ae2:printed_logic_processor",
-		"ae2:printed_calculation_processor",
-		"ae2:printed_engineering_processor",
-		"advanced_ae:printed_quantum_processor"
+		"@portality"
 	]
 	removeItemOutputRecipes.forEach((item) => {
 		event.remove({
