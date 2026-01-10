@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
 	 *
 	 * @constructor
 	 */
-	function NitraticIgniterRecipe() {
+	function NitraticIgniterRecipeBuilder() {
 		/**
 		 * @type {Internal.JsonObject}
 		 */
@@ -18,9 +18,9 @@ ServerEvents.recipes((event) => {
 	 * 能量消耗
 	 *
 	 * @param {number} energy
-	 * @returns {NitraticIgniterRecipe}
+	 * @returns {NitraticIgniterRecipeBuilder}
 	 */
-	NitraticIgniterRecipe.prototype.energy = function (energy) {
+	NitraticIgniterRecipeBuilder.prototype.energy = function (energy) {
 		this.recipe.energy = energy
 		return this
 	}
@@ -29,9 +29,9 @@ ServerEvents.recipes((event) => {
 	 * 输入材料
 	 *
 	 * @param {Internal.Ingredient_} ingredient
-	 * @returns {NitraticIgniterRecipe}
+	 * @returns {NitraticIgniterRecipeBuilder}
 	 */
-	NitraticIgniterRecipe.prototype.ingredient = function (ingredient) {
+	NitraticIgniterRecipeBuilder.prototype.ingredient = function (ingredient) {
 		this.recipe.ingredients = [
 			Ingredient.of(ingredient).toJson()
 		]
@@ -42,9 +42,9 @@ ServerEvents.recipes((event) => {
 	 * 输出结果
 	 *
 	 * @param {Internal.JsonObject[]} results
-	 * @returns {NitraticIgniterRecipe}
+	 * @returns {NitraticIgniterRecipeBuilder}
 	 */
-	NitraticIgniterRecipe.prototype.results = function (results) {
+	NitraticIgniterRecipeBuilder.prototype.results = function (results) {
 		this.recipe.result = results
 		return this
 	}
@@ -52,7 +52,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 构建配方
 	 */
-	NitraticIgniterRecipe.prototype.build = function () {
+	NitraticIgniterRecipeBuilder.prototype.build = function () {
 		return event.custom(this.recipe)
 	}
 
@@ -81,9 +81,9 @@ ServerEvents.recipes((event) => {
 
 	// region add Recipes
 
-	new NitraticIgniterRecipe()
+	new NitraticIgniterRecipeBuilder()
 		.energy(2000)
-		.ingredient("#minecraft:dirt", 2)
+		.ingredient("#minecraft:dirt")
 		.results([
 			setResult("cmi:cast_iron_ingot", 2, 1),
 			setResult("cmi:cast_iron_ingot", 1, 0.5),

@@ -275,6 +275,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("end_stone", "末地石")
 	addMaterialLang("uranium", "铀")
 	addMaterialLang("siltsteel", "泓钢")
+	addMaterialLang("steel", "钢")
 	addMaterialLang("cast_iron", "铸铁")
 	addMaterialLang("industrial_iron", "工业铁")
 	addMaterialLang("desh", "戴斯")
@@ -314,7 +315,6 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addMachineLang("flash_disk_writer", "闪存盘写入器")
 	addMachineLang("chemical_gas_extractor", "化学气体抽取器")
-	addMachineLang("simple_centrifuge", "丐版离心机")
 	addMachineLang("steam_boiler", "青铜蒸汽锅炉")
 	addMachineLang("radar_terminal", "雷达终端")
 

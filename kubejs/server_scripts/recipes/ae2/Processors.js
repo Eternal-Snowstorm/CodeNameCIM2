@@ -3,10 +3,10 @@ ServerEvents.recipes((event) => {
 
     let Print = {
         CONTROL: "create_connected:incomplete_control_chip",
-        LOGIC: "ae2:printed_logic_processor",
-        CALCULATION: "ae2:printed_calculation_processor",
-        ENGINEERING: "ae2:printed_engineering_processor",
-        QUANTUM: "advanced_ae:printed_quantum_processor"
+        LOGIC: "cmi:incomplete_logic_processor",
+        CALCULATION: "cmi:incomplete_calculation_processor",
+        ENGINEERING: "cmi:incomplete_engineering_processor",
+        QUANTUM: "cmi:incomplete_quantum_processor"
     }
 
     let Processor = {
