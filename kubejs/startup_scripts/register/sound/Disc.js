@@ -32,6 +32,9 @@ StartupEvents.registry("item", (event) => {
 
 	addMusicDiscItem("mechanism", 120 + 34)
 	addMusicDiscItem("togni_leets", 180 + 32)
+		.modelJson(defineModels("ingot", true))
+		.color(0,0xA7A7A7)
+		.color(1,0x121C37)
 		.rarity(Rarity.COMMON)
 		.tag("forge:ingots")
 })
