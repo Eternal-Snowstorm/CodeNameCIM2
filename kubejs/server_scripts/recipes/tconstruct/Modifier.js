@@ -1,60 +1,153 @@
 ServerEvents.recipes((event) => {
-	/** 
-		* 
-		* @param {String} modifier
-		* @param {Internal.JsonElement[]} inputs
-		* @param {String} targetTag 
-		* @returns
-	   */
-	function addModifierRecipe(modifier, inputs, targetTag) {
-		let recipe = {
-			"type": "tconstruct:modifier",
-			"allow_crystal": true,
-			"check_trait_level": true,
-			"inputs": inputs,
-			"level": 1,
-			"result": modifier,
-			"slots": {
-				"abilities": 1
-			},
-			"tools": Ingredient.of(targetTag).toJson()
+	// region define ModifierRecipe
+
+	/**
+	 * TConstruct Modifier 配方构造器
+	 *
+	 * @constructor
+	 * @param {string} modifier 修饰符ID
+	 */
+	function ModifierRecipeBuilder(modifier) {
+		/**
+		 * @type {Internal.JsonObject}
+		 */
+		this.recipe = {
+			type: "tconstruct:modifier",
+			result: modifier
 		}
-		return event.custom(recipe)
 	}
 
 	/**
-	 * 
-	 * @param {Internal.Ingredient_} input 
-	 * @returns 
+	 * 是否允许水晶
+	 *
+	 * @param {boolean} [allow]
+	 * @returns {ModifierRecipeBuilder}
 	 */
-	function setInput(input) {
-		return Ingredient.of(input).toJson()
+	ModifierRecipeBuilder.prototype.allowCrystal = function (allow) {
+		if (typeof allow !== "undefined") {
+			this.recipe.allow_crystal = allow
+		}
+		return this
 	}
 
-	addModifierRecipe("nebula_tinker:acupoint", [
-		setInput("cmi:blackstone_source_alpha"),
-		setInput("cmi:blackstone_source_beta"),
-		setInput("cmi:blackstone_source_gamma"),
-		setInput("#forge:gems/charged_amethyst"),
-		setInput("#forge:gems/charged_amethyst")
-	], "#tconstruct:modifiable/held")
+	/**
+	 * 是否检查 Trait 等级
+	 *
+	 * @param {boolean} [check]
+	 * @returns {ModifierRecipeBuilder}
+	 */
+	ModifierRecipeBuilder.prototype.checkTraitLevel = function (check) {
+		if (typeof check !== "undefined") {
+			this.recipe.check_trait_level = check
+		}
+		return this
+	}
+
+	/**
+	 * 设置工具标签
+	 *
+	 * @param {string} tag
+	 * @returns {ModifierRecipeBuilder}
+	 */
+	ModifierRecipeBuilder.prototype.tools = function (tag) {
+		this.recipe.tools = Ingredient.of(tag).toJson()
+		return this
+	}
+
+	/**
+	 * 设置槽位
+	 *
+	 * @param {"ability"|"defense"|"upgrades"|"slotless"|"salvage"} type 
+	 * @param {number} count
+	 * @returns {ModifierRecipeBuilder}
+	 */
+	ModifierRecipeBuilder.prototype.slots = function (type, count) {
+		this.recipe.slots = {}
+		this.recipe.slots[type] = count
+		return this
+	}
+
+	/**
+	 * 设置输入材料
+	 *
+	 * @param {Internal.Ingredient_[]} inputs
+	 * @returns {ModifierRecipeBuilder}
+	 */
+	ModifierRecipeBuilder.prototype.inputs = function (inputs) {
+		this.recipe.inputs = inputs.map((ingredient) => {
+			return Ingredient.of(ingredient).toJson()
+		})
+		return this
+	}
+
+	/**
+	 * 设置等级
+	 *
+	 * @param {number} level
+	 * @returns {ModifierRecipeBuilder}
+	 */
+	ModifierRecipeBuilder.prototype.level = function (level) {
+		this.recipe.level = level
+		return this
+	}
+
+	/**
+	 * 构建配方
+	 *
+	 * @returns 
+	 */
+	ModifierRecipeBuilder.prototype.build = function () {
+		return event.custom(this.recipe)
+	}
+	// endregion
+
+	// region add Recipes
+	new ModifierRecipeBuilder("nebula_tinker:acupoint")
+		.allowCrystal()
+		.checkTraitLevel()
+		.tools("#tconstruct:modifiable/held")
+		.slots("abilities", 1)
+		.inputs([
+			"cmi:blackstone_source_alpha",
+			"cmi:blackstone_source_beta",
+			"cmi:blackstone_source_gamma",
+			"#forge:gems/charged_amethyst",
+			"#forge:gems/charged_amethyst"
+		])
+		.level(1)
+		.build()
 		.id("nebula_tinker:tconstruct/modifier/ability/acupoint")
 
-	addModifierRecipe("nebula_tinker:frenzy", [
-		setInput("#forge:dusts/quartz"),
-		setInput("#create:mechanisms/cobalt"),
-		setInput("#forge:dusts/quartz"),
-		setInput("#forge:gems/charged_amethyst"),
-		setInput("#forge:gems/charged_amethyst")
-	], "#tconstruct:modifiable/held")
+	new ModifierRecipeBuilder("nebula_tinker:frenzy")
+		.allowCrystal()
+		.checkTraitLevel()
+		.tools("#tconstruct:modifiable/held")
+		.slots("abilities", 1)
+		.inputs([
+			"#forge:dusts/quartz",
+			"#create:mechanisms/cobalt",
+			"#forge:dusts/quartz",
+			"#forge:gems/charged_amethyst",
+			"#forge:gems/charged_amethyst"
+		])
+		.level(1)
+		.build()
 		.id("nebula_tinker:tconstruct/modifier/ability/frenzy")
 
-	addModifierRecipe("nebula_tinker:causal_truncation", [
-		setInput("#forge:plates/uranium"),
-		setInput("#create:mechanisms/nether"),
-		setInput("#forge:plates/uranium"),
-		setInput("#forge:slimeball/blood"),
-		setInput("#forge:slimeball/blood")
-	], "#tconstruct:modifiable/melee/primary")
+	new ModifierRecipeBuilder("nebula_tinker:causal_truncation")
+		.allowCrystal()
+		.checkTraitLevel()
+		.tools("#tconstruct:modifiable/melee/primary")
+		.slots("abilities", 1)
+		.inputs([
+			"#forge:plates/uranium",
+			"#create:mechanisms/nether",
+			"#forge:plates/uranium",
+			"#forge:slimeball/blood",
+			"#forge:slimeball/blood"
+		])
+		.level(1)
+		.build()
 		.id("nebula_tinker:tconstruct/modifier/ability/causal_truncation")
+	// endregion
 })

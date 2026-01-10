@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
 	 *
 	 * @constructor
 	 */
-	function ClocheRecipe() {
+	function ClocheRecipeBuilder() {
 		/** 
 		 * @type {Internal.JsonObject}
 		 */
@@ -18,9 +18,9 @@ ServerEvents.recipes((event) => {
 	 * 输入作物
 	 *
 	 * @param {Internal.Ingredient_} item
-	 * @returns {ClocheRecipe}
+	 * @returns {ClocheRecipeBuilder}
 	 */
-	ClocheRecipe.prototype.input = function (item) {
+	ClocheRecipeBuilder.prototype.input = function (item) {
 		this.recipe.input = Ingredient.of(item).toJson()
 		return this
 	}
@@ -30,9 +30,9 @@ ServerEvents.recipes((event) => {
 	 *
 	 * @param {"crop" | "generic"} type
 	 * @param {Internal.Block_} block
-	 * @returns {ClocheRecipe}
+	 * @returns {ClocheRecipeBuilder}
 	 */
-	ClocheRecipe.prototype.render = function (type, block) {
+	ClocheRecipeBuilder.prototype.render = function (type, block) {
 		this.recipe.render = {
 			type: type,
 			block: block
@@ -44,9 +44,9 @@ ServerEvents.recipes((event) => {
 	 * 设置输出数组
 	 *
 	 * @param {Internal.JsonObject[]} results
-	 * @returns {ClocheRecipe}
+	 * @returns {ClocheRecipeBuilder}
 	 */
-	ClocheRecipe.prototype.results = function (results) {
+	ClocheRecipeBuilder.prototype.results = function (results) {
 		this.recipe.results = results
 		return this
 	}
@@ -55,9 +55,9 @@ ServerEvents.recipes((event) => {
 	 * 土壤
 	 *
 	 * @param {Internal.Ingredient_} soil
-	 * @returns {ClocheRecipe}
+	 * @returns {ClocheRecipeBuilder}
 	 */
-	ClocheRecipe.prototype.soil = function (soil) {
+	ClocheRecipeBuilder.prototype.soil = function (soil) {
 		this.recipe.soil = Ingredient.of(soil).toJson()
 		return this
 	}
@@ -66,9 +66,9 @@ ServerEvents.recipes((event) => {
 	 * 生长时间(tick)
 	 *
 	 * @param {number} time
-	 * @returns {ClocheRecipe}
+	 * @returns {ClocheRecipeBuilder}
 	 */
-	ClocheRecipe.prototype.time = function (time) {
+	ClocheRecipeBuilder.prototype.time = function (time) {
 		this.recipe.time = time
 		return this
 	}
@@ -76,7 +76,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 构建配方
 	 */
-	ClocheRecipe.prototype.build = function () {
+	ClocheRecipeBuilder.prototype.build = function () {
 		return event.custom(this.recipe)
 	}
 
@@ -96,7 +96,7 @@ ServerEvents.recipes((event) => {
 	// region add Recipes
 
 	// 橡树
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("minecraft:oak_sapling")
 		.render("generic", "minecraft:oak_sapling")
 		.results([
@@ -110,7 +110,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 白桦
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("minecraft:birch_sapling")
 		.render("generic", "minecraft:birch_sapling")
 		.results([
@@ -123,7 +123,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 云杉
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("minecraft:spruce_sapling")
 		.render("generic", "minecraft:spruce_sapling")
 		.results([
@@ -136,7 +136,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 金合欢
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("minecraft:acacia_sapling")
 		.render("generic", "minecraft:acacia_sapling")
 		.results([
@@ -149,7 +149,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 深色橡木
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("minecraft:dark_oak_sapling")
 		.render("generic", "minecraft:dark_oak_sapling")
 		.results([
@@ -163,7 +163,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 红树
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("minecraft:mangrove_propagule")
 		.render("generic", "minecraft:mangrove_propagule")
 		.results([
@@ -177,7 +177,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 樱花
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("minecraft:cherry_sapling")
 		.render("generic", "minecraft:cherry_sapling")
 		.results([
@@ -190,7 +190,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 杜鹃
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("minecraft:azalea")
 		.render("generic", "minecraft:azalea")
 		.results([
@@ -203,7 +203,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 开花杜鹃
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("minecraft:flowering_azalea")
 		.render("generic", "minecraft:flowering_azalea")
 		.results([
@@ -216,7 +216,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 南洋
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("alexscaves:pewen_sapling")
 		.render("generic", "alexscaves:pewen_sapling")
 		.results([
@@ -230,7 +230,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 远古
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("alexscaves:ancient_sapling")
 		.render("generic", "alexscaves:ancient_sapling")
 		.results([
@@ -244,7 +244,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 荆棘
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("alexscaves:thornwood_sapling")
 		.render("generic", "alexscaves:thornwood_sapling")
 		.results([
@@ -257,7 +257,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 橡胶
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("thermal:rubberwood_sapling")
 		.render("generic", "thermal:rubberwood_sapling")
 		.results([
@@ -271,7 +271,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 大地粘液
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("tconstruct:earth_slime_sapling")
 		.render("generic", "tconstruct:earth_slime_sapling")
 		.results([
@@ -285,7 +285,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 碧空粘液
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("tconstruct:sky_slime_sapling")
 		.render("generic", "tconstruct:sky_slime_sapling")
 		.results([
@@ -299,7 +299,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 碧空粘液
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("tconstruct:ender_slime_sapling")
 		.render("generic", "tconstruct:ender_slime_sapling")
 		.results([
@@ -313,7 +313,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 血菌
-	new ClocheRecipe()
+	new ClocheRecipeBuilder()
 		.input("tconstruct:blood_slime_sapling")
 		.render("generic", "tconstruct:blood_slime_sapling")
 		.results([
