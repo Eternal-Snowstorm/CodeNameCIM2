@@ -275,6 +275,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("end_stone", "末地石")
 	addMaterialLang("uranium", "铀")
 	addMaterialLang("siltsteel", "泓钢")
+	addMaterialLang("steel", "钢")
 	addMaterialLang("cast_iron", "铸铁")
 	addMaterialLang("industrial_iron", "工业铁")
 	addMaterialLang("desh", "戴斯")
