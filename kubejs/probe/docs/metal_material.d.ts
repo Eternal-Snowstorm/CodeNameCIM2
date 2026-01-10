@@ -39,10 +39,20 @@ type MaterialType =
 
 interface Material {
 	name: string
-	color: Color
 	level: MiningLevel
 	types: MaterialType[]
 
+	color(
+		color1: Internal.ItemTintFunction_
+			| Internal.BlockTintFunction_
+			| dev.latvian.mods.rhino.mod.util.color.Color_,
+		color2: Internal.ItemTintFunction_
+			| Internal.BlockTintFunction_
+			| dev.latvian.mods.rhino.mod.util.color.Color_,
+		color3: Internal.ItemTintFunction_
+			| Internal.BlockTintFunction_
+			| dev.latvian.mods.rhino.mod.util.color.Color_
+	): this
 	ingot(): this
 	plate(): this
 	nugget(): this
@@ -60,5 +70,5 @@ interface Material {
 }
 
 declare class Material implements Material {
-	constructor(name: string, color: Color, level: MiningLevel)
+	constructor(name: string, level: MiningLevel)
 }

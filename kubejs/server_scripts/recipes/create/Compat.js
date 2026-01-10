@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs } = event.recipes
+	let { create, kubejs, vintageimprovements } = event.recipes
 
 	// 砖块
 	create.mixing(Fluid.of("tconstruct:seared_stone", 250), [
@@ -68,4 +68,13 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:blood", 1000),
 		"#forge:rods/blaze"
 	]).superheated()
+
+	// 不稳定红石
+	create.mixing(Fluid.of("thermal:redstone", 50), [
+		"#forge:dusts/redstone"
+	]).heated()
+
+	vintageimprovements.pressurizing(Fluid.of("thermal:redstone", 125), [
+		"#forge:dusts/redstone"
+	]).heatRequirement(global.HeatLevel["heated"])
 })

@@ -7,8 +7,8 @@ StartupEvents.registry("item", (event) => {
 	}
 
 	// 生铁构件
-	addItem("pigiron_mechanism")
-		.texture(`${global.namespace}:item/mechanism/complete/pigiron`)
+	addItem("pig_iron_mechanism")
+		.texture(`${global.namespace}:item/mechanism/complete/pig_iron`)
 		.food((food) => {
 			food.hunger(8)
 			food.saturation(1)
@@ -22,10 +22,10 @@ StartupEvents.registry("item", (event) => {
 			})
 		})
 		.tag("create:mechanisms")
-		.tag(`create:mechanisms/pigiron`)
+		.tag(`create:mechanisms/pig_iron`)
 
-	addItem("incomplete_pigiron_mechanism", "create:sequenced_assembly")
-		.texture(`${global.namespace}:item/mechanism/incomplete/pigiron`)
+	addItem("incomplete_pig_iron_mechanism", "create:sequenced_assembly")
+		.texture(`${global.namespace}:item/mechanism/incomplete/pig_iron`)
 		.tag("create:incomplete_mechanisms")
 
 	addItem("incomplete_nuclear_mechanism", "create:sequenced_assembly")

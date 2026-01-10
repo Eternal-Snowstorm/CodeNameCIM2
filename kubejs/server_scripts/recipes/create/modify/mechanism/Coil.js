@@ -256,7 +256,7 @@ ServerEvents.recipes((event) => {
 		B: "#forge:plates/invar",
 		C: Mech.COIL,
 		D: "cmi:simple_battery",
-		E: "cmi:pigiron_mechanism"
+		E: "cmi:pig_iron_mechanism"
 	})
 
 	// 压缩

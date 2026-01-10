@@ -40,7 +40,7 @@ ClientEvents.loggedIn((event) => {
 					x: 10,
 					y: "$screenH - 20",
 					alignX: "left",
-					text: global.modPackVersion,
+					text: global.modPackMainVersion,
 					scale: 1.0
 				}
 			})

@@ -1,0 +1,330 @@
+ServerEvents.recipes((event) => {
+	// region define Recipe
+	/**
+	 * IE 园艺玻璃罩配方构造器
+	 *
+	 * @constructor
+	 */
+	function ClocheRecipe() {
+		/** 
+		 * @type {Internal.JsonObject}
+		 */
+		this.recipe = {
+			type: "immersiveengineering:cloche"
+		}
+	}
+
+	/**
+	 * 输入作物
+	 *
+	 * @param {Internal.Ingredient_} item
+	 * @returns {ClocheRecipe}
+	 */
+	ClocheRecipe.prototype.input = function (item) {
+		this.recipe.input = Ingredient.of(item).toJson()
+		return this
+	}
+
+	/**
+	 * 渲染配置
+	 *
+	 * @param {"crop" | "generic"} type
+	 * @param {Internal.Block_} block
+	 * @returns {ClocheRecipe}
+	 */
+	ClocheRecipe.prototype.render = function (type, block) {
+		this.recipe.render = {
+			type: type,
+			block: block
+		}
+		return this
+	}
+
+	/**
+	 * 设置输出数组
+	 *
+	 * @param {Internal.JsonObject[]} results
+	 * @returns {ClocheRecipe}
+	 */
+	ClocheRecipe.prototype.results = function (results) {
+		this.recipe.results = results
+		return this
+	}
+
+	/**
+	 * 土壤
+	 *
+	 * @param {Internal.Ingredient_} soil
+	 * @returns {ClocheRecipe}
+	 */
+	ClocheRecipe.prototype.soil = function (soil) {
+		this.recipe.soil = Ingredient.of(soil).toJson()
+		return this
+	}
+
+	/**
+	 * 生长时间(tick)
+	 *
+	 * @param {number} time
+	 * @returns {ClocheRecipe}
+	 */
+	ClocheRecipe.prototype.time = function (time) {
+		this.recipe.time = time
+		return this
+	}
+
+	/**
+	 * 构建配方
+	 */
+	ClocheRecipe.prototype.build = function () {
+		return event.custom(this.recipe)
+	}
+
+	/**
+	 *
+	 * @param {Internal.ItemStack_} id
+	 * @param {number} [count=1]
+	 * @returns 
+	 */
+	function setResult(id, count) {
+		if (typeof count === "undefined") {
+			count = 1
+		}
+		return Item.of(id, count).toJson()
+	}
+
+	// region add Recipes
+
+	// 橡树
+	new ClocheRecipe()
+		.input("minecraft:oak_sapling")
+		.render("generic", "minecraft:oak_sapling")
+		.results([
+			setResult("minecraft:oak_log"),
+			setResult("minecraft:oak_leaves"),
+			setResult("minecraft:oak_sapling"),
+			setResult("minecraft:apple")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 白桦
+	new ClocheRecipe()
+		.input("minecraft:birch_sapling")
+		.render("generic", "minecraft:birch_sapling")
+		.results([
+			setResult("minecraft:birch_log"),
+			setResult("minecraft:birch_leaves"),
+			setResult("minecraft:birch_sapling")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 云杉
+	new ClocheRecipe()
+		.input("minecraft:spruce_sapling")
+		.render("generic", "minecraft:spruce_sapling")
+		.results([
+			setResult("minecraft:spruce_log"),
+			setResult("minecraft:spruce_leaves"),
+			setResult("minecraft:spruce_sapling")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 金合欢
+	new ClocheRecipe()
+		.input("minecraft:acacia_sapling")
+		.render("generic", "minecraft:acacia_sapling")
+		.results([
+			setResult("minecraft:acacia_log"),
+			setResult("minecraft:acacia_leaves"),
+			setResult("minecraft:acacia_sapling")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 深色橡木
+	new ClocheRecipe()
+		.input("minecraft:dark_oak_sapling")
+		.render("generic", "minecraft:dark_oak_sapling")
+		.results([
+			setResult("minecraft:dark_oak_log"),
+			setResult("minecraft:dark_oak_leaves"),
+			setResult("minecraft:dark_oak_sapling"),
+			setResult("minecraft:apple")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 红树
+	new ClocheRecipe()
+		.input("minecraft:mangrove_propagule")
+		.render("generic", "minecraft:mangrove_propagule")
+		.results([
+			setResult("minecraft:mangrove_log"),
+			setResult("minecraft:mangrove_leaves"),
+			setResult("minecraft:mangrove_roots"),
+			setResult("minecraft:mangrove_propagule")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 樱花
+	new ClocheRecipe()
+		.input("minecraft:cherry_sapling")
+		.render("generic", "minecraft:cherry_sapling")
+		.results([
+			setResult("minecraft:cherry_log"),
+			setResult("minecraft:cherry_leaves"),
+			setResult("minecraft:cherry_sapling")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 杜鹃
+	new ClocheRecipe()
+		.input("minecraft:azalea")
+		.render("generic", "minecraft:azalea")
+		.results([
+			setResult("minecraft:oak_log"),
+			setResult("minecraft:azalea_leaves"),
+			setResult("minecraft:azalea")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 开花杜鹃
+	new ClocheRecipe()
+		.input("minecraft:flowering_azalea")
+		.render("generic", "minecraft:flowering_azalea")
+		.results([
+			setResult("minecraft:oak_log"),
+			setResult("minecraft:flowering_azalea_leaves"),
+			setResult("minecraft:flowering_azalea")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 南洋
+	new ClocheRecipe()
+		.input("alexscaves:pewen_sapling")
+		.render("generic", "alexscaves:pewen_sapling")
+		.results([
+			setResult("alexscaves:pewen_log"),
+			setResult("alexscaves:pine_nuts"),
+			setResult("alexscaves:pewen_sapling"),
+			setResult("alexscaves:pewen_sap")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 远古
+	new ClocheRecipe()
+		.input("alexscaves:ancient_sapling")
+		.render("generic", "alexscaves:ancient_sapling")
+		.results([
+			setResult("minecraft:jungle_log"),
+			setResult("alexscaves:ancient_leaves"),
+			setResult("alexscaves:ancient_sapling"),
+			setResult("alexscaves:tree_star")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 荆棘
+	new ClocheRecipe()
+		.input("alexscaves:thornwood_sapling")
+		.render("generic", "alexscaves:thornwood_sapling")
+		.results([
+			setResult("alexscaves:thornwood_log"),
+			setResult("alexscaves:thornwood_sapling"),
+			setResult("alexscaves:thornwood_branch")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 橡胶
+	new ClocheRecipe()
+		.input("thermal:rubberwood_sapling")
+		.render("generic", "thermal:rubberwood_sapling")
+		.results([
+			setResult("thermal:rubberwood_log"),
+			setResult("thermal:rubberwood_leaves"),
+			setResult("thermal:rubberwood_sapling"),
+			setResult("thermal:rubber")
+		])
+		.soil("#minecraft:dirt")
+		.time(20 * 24)
+		.build()
+
+	// 大地粘液
+	new ClocheRecipe()
+		.input("tconstruct:earth_slime_sapling")
+		.render("generic", "tconstruct:earth_slime_sapling")
+		.results([
+			setResult("tconstruct:greenheart_log"),
+			setResult("tconstruct:earth_slime_leaves"),
+			setResult("tconstruct:earth_slime_sapling"),
+			setResult("minecraft:slime_ball")
+		])
+		.soil("tconstruct:earth_slime_dirt")
+		.time(20 * 24)
+		.build()
+
+	// 碧空粘液
+	new ClocheRecipe()
+		.input("tconstruct:sky_slime_sapling")
+		.render("generic", "tconstruct:sky_slime_sapling")
+		.results([
+			setResult("tconstruct:skyroot_log"),
+			setResult("tconstruct:sky_slime_leaves"),
+			setResult("tconstruct:sky_slime_sapling"),
+			setResult("tconstruct:sky_slime_ball")
+		])
+		.soil("tconstruct:sky_slime_dirt")
+		.time(20 * 24)
+		.build()
+
+	// 碧空粘液
+	new ClocheRecipe()
+		.input("tconstruct:ender_slime_sapling")
+		.render("generic", "tconstruct:ender_slime_sapling")
+		.results([
+			setResult("tconstruct:enderbark_log"),
+			setResult("tconstruct:ender_slime_leaves"),
+			setResult("tconstruct:ender_slime_sapling"),
+			setResult("tconstruct:ender_slime_ball")
+		])
+		.soil("tconstruct:ender_slime_dirt")
+		.time(20 * 24)
+		.build()
+
+	// 血菌
+	new ClocheRecipe()
+		.input("tconstruct:blood_slime_sapling")
+		.render("generic", "tconstruct:blood_slime_sapling")
+		.results([
+			setResult("tconstruct:bloodshroom_log"),
+			setResult("tconstruct:blood_slime_leaves"),
+			setResult("tconstruct:blood_slime_sapling"),
+			setResult("tconstruct:ichor_slime_ball")
+		])
+		.soil("tconstruct:ichor_slime_dirt")
+		.time(20 * 24)
+		.build()
+
+	// endregion
+})
