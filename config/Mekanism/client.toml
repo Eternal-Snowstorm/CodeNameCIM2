@@ -102,8 +102,8 @@
 				y = 2147483647
 
 			[client.gui.window.sideConfig]
-				x = -34
-				y = 58
+				x = 54
+				y = 29
 
 			[client.gui.window.transporterConfig]
 				x = 10

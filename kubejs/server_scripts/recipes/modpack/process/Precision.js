@@ -7,8 +7,10 @@ ServerEvents.recipes((event) => {
 		Fluid.of("immersiveengineering:redstone_acid", 100)
 	])
 
+	// 充能紫水晶加工
 	vintageimprovements.polishing([
-		Item.of("minecraft:redstone").withChance(0.25),
-		"minecraft:amethyst_shard"
-	], "cmi:charged_amethyst")
+		"minecraft:amethyst_shard",
+		Item.of("minecraft:redstone").withChance(0.5)
+	], "#forge:gems/charged_amethyst")
+		.processingTime(10)
 })

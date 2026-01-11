@@ -597,6 +597,25 @@
 			x: 6.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			hide_dependency_lines: true
+			id: "3DD175AC87EB32EA"
+			rewards: [{
+				id: "45BC8967815A7259"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "伤害测试器"
+			tasks: [{
+				id: "0CC98A213BBFBC9C"
+				item: "powerful_dummy:dummy_stand"
+				type: "item"
+			}]
+			title: "训练假人是你吗"
+			x: 8.0d
+			y: 5.0d
+		}
 	]
 	title: "实用工具"
 }
