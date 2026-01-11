@@ -32,33 +32,39 @@ StartupEvents.registry("block", (event) => {
 		return builder
 	}
 
-	// region Main Developer
+	// 排列以加入项目的先后顺序
 	// UE
 	addDeveloperDoll("re_construction", "slim")
 
-	// 柒月
-	addDeveloperDoll("qi_month", "slim")
-
-	// 中微子
-	addDeveloperDoll("eternalsnowstorm", "slim")
-
-	// 1174
-	addDeveloperDoll("117458866249", "wide")
-
-	// FiberOptics
-	addDeveloperDoll("fiber_optics", "slim")
-
-	// Random Mechanism
-	addDeveloperDoll("random_mechanism", "slim")
-
-	// MF
-	addDeveloperDoll("sakura_star_cn", "slim")
+	// dkrkoo_weihe
+	addDeveloperDoll("dkrkoo_weihe", "slim")
 
 	// Dropper
 	addDeveloperDoll("dropper_qwq", "wide")
 
+	// 1174
+	addDeveloperDoll("117458866249", "wide")
+
+	// Random Mechanism
+	addDeveloperDoll("random_mechanism", "slim")
+
+	// 中微子
+	addDeveloperDoll("eternalsnowstorm", "slim")
+
+	// 柒月
+	addDeveloperDoll("qi_month", "slim")
+
+	// DontKillBelalus
+	addDeveloperDoll("dont_kill_belalus", "wide")
+
+	// FiberOptics
+	addDeveloperDoll("fiber_optics", "slim")
+
 	// 燕栖
 	addDeveloperDoll("ye_anqing", "slim")
+
+	// MF
+	addDeveloperDoll("sakura_star_cn", "slim")
 
 	// 亓才孑
 	addDeveloperDoll("qicaijie", "slim")
@@ -70,17 +76,6 @@ StartupEvents.registry("block", (event) => {
 	addDeveloperDoll("keyxeldesu", "slim")
 
 	// 谢尔盖
-	addDeveloperDoll("sergei", "wide")
-	// endregion
+	addDeveloperDoll("sergei", "slim")
 
-	// music
-
-	// DontKillBelalus
-	addDeveloperDoll("dont_kill_belalus", "wide")
-
-	// region Other
-
-	// dkrkoo_weihe
-	addDeveloperDoll("dkrkoo_weihe", "slim")
-	// endregion
 })

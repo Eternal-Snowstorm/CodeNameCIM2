@@ -18,18 +18,20 @@ ItemEvents.tooltip((event) => {
 
 	// 制作组fumo
 	addAdvancedTooltip("cmi:re_construction")
-	addAdvancedTooltip("cmi:qi_month")
-	addAdvancedTooltip("cmi:eternalsnowstorm")
-	addAdvancedTooltip("cmi:117458866249")
-	addAdvancedTooltip("cmi:fiber_optics")
-	addAdvancedTooltip("cmi:random_mechanism")
-	addAdvancedTooltip("cmi:sakura_star_cn")
+	addAdvancedTooltip("cmi:dkrkoo_weihe")
 	addAdvancedTooltip("cmi:dropper_qwq")
+	addAdvancedTooltip("cmi:117458866249")
+	addAdvancedTooltip("cmi:random_mechanism")
+	addAdvancedTooltip("cmi:eternalsnowstorm")
+	addAdvancedTooltip("cmi:qi_month")
+	addAdvancedTooltip("cmi:dont_kill_belalus")
+	addAdvancedTooltip("cmi:fiber_optics")
 	addAdvancedTooltip("cmi:ye_anqing")
+	addAdvancedTooltip("cmi:sakura_star_cn")
 	addAdvancedTooltip("cmi:qicaijie")
 	addAdvancedTooltip("cmi:flash_yi")
-	addAdvancedTooltip("cmi:dont_kill_belalus")
-	addAdvancedTooltip("cmi:dkrkoo_weihe")
+	addAdvancedTooltip("cmi:keyxeldesu")
+	addAdvancedTooltip("cmi:sergei")
 	/**
 	 * 
 	 * @param {Internal.Ingredient_} ingredient 
