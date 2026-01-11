@@ -1,6 +1,10 @@
 ServerEvents.recipes((event) => {
 	let { create, createaddition, vintageimprovements } = event.recipes
 
+	let Inc = {
+		GIZMO: "cmi:incomplete_notor_gizmo"
+	}
+
 	// 致密坚固板
 	create.compacting("cmi:dense_sturdy_sheet", [
 		"4x #forge:plates/obsidian"
@@ -42,7 +46,6 @@ ServerEvents.recipes((event) => {
 	]).heatRequirement(global.HeatLevel["grilled"])
 
 	// 扫描机兵零件
-	const ALUMINUM_PLATE = IngrUtils.getFirstItemId("#forge:plates/aluminum")
 	create.sequenced_assembly([
 		Item.of("alexscaves:notor_gizmo"),
 		Item.of("2x alexscaves:notor_gizmo").withChance(0.5),
@@ -50,19 +53,19 @@ ServerEvents.recipes((event) => {
 	], [
 		"#forge:plates/aluminum"
 	], [
-		create.deploying(ALUMINUM_PLATE, [
-			"#forge:plates/aluminum",
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
 			"alexscaves:notor_gizmo"
 		]).keepHeldItem(),
-		create.deploying(ALUMINUM_PLATE, [
-			"#forge:plates/aluminum",
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
 			"#forge:nuggets/azure_neodymium"
 		]),
-		create.deploying(ALUMINUM_PLATE, [
-			"#forge:plates/aluminum",
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
 			"#forge:nuggets/scarlet_neodymium"
 		])
-	]).loops(1).transitionalItem(ALUMINUM_PLATE)
+	]).loops(1).transitionalItem(Inc.GIZMO)
 
 	create.sequenced_assembly([
 		Item.of("alexscaves:notor_gizmo"),
@@ -71,19 +74,19 @@ ServerEvents.recipes((event) => {
 	], [
 		"#forge:plates/aluminum"
 	], [
-		create.deploying(ALUMINUM_PLATE, [
-			"#forge:plates/aluminum",
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
 			"alexscaves:notor_gizmo"
 		]).keepHeldItem(),
-		create.deploying(ALUMINUM_PLATE, [
-			"#forge:plates/aluminum",
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
 			"#forge:nuggets/scarlet_neodymium"
 		]),
-		create.deploying(ALUMINUM_PLATE, [
-			"#forge:plates/aluminum",
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
 			"#forge:nuggets/azure_neodymium"
 		])
-	]).loops(1).transitionalItem(ALUMINUM_PLATE)
+	]).loops(1).transitionalItem(Inc.GIZMO)
 
 	// 工业铁
 	create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
@@ -144,75 +147,6 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/andesite",
 		"#forge:clay"
 	])
-
-	const GET_BRASS_PLATE_ITEM = IngrUtils.getFirstItemId("#forge:plates/brass")
-
-	// 黄铜漏斗
-	create.sequenced_assembly("12x create:brass_funnel", [
-		"#forge:plates/brass"
-	], [
-		create.cutting(GET_BRASS_PLATE_ITEM, [
-			GET_BRASS_PLATE_ITEM
-		]),
-		create.deploying(GET_BRASS_PLATE_ITEM, [
-			GET_BRASS_PLATE_ITEM,
-			"minecraft:dried_kelp"
-		]),
-		create.deploying(GET_BRASS_PLATE_ITEM, [
-			GET_BRASS_PLATE_ITEM,
-			"create:precision_mechanism"
-		]),
-		create.deploying(GET_BRASS_PLATE_ITEM, [
-			GET_BRASS_PLATE_ITEM,
-			"#forge:plates/brass"
-		])
-	]).loops(1).transitionalItem(GET_BRASS_PLATE_ITEM)
-
-	create.sequenced_assembly("6x create:brass_funnel", [
-		"#forge:plates/brass"
-	], [
-		create.cutting("create:brass_casing", [
-			"create:brass_casing"
-		]),
-		create.deploying("create:brass_casing", [
-			"create:brass_casing",
-			"create:precision_mechanism"
-		]),
-		create.deploying("create:brass_casing", [
-			"create:brass_casing",
-			"forge:glass"
-		])
-	]).loops(1).transitionalItem("create:brass_casing")
-
-	// 通用处理器
-	/*
-	create.sequenced_assembly("cmi:general_processor", [
-		"#forge:gems/ruby"
-	], [
-		vintageimprovements.curving("#forge:gems/ruby", [
-			"#forge:gems/ruby"
-		]).itemAsHead("ae2:engineering_processor_press"),
-		create.deploying("#forge:gems/ruby", [
-			"#forge:gems/ruby",
-			"cmi:single_crystal_silicon"
-		]),
-		create.deploying("#forge:gems/ruby", [
-			"#forge:gems/ruby",
-			"#forge:plates/silicon_carbide"
-		]),
-		vintageimprovements.laser_cutting("#forge:gems/ruby", [
-			"#forge:gems/ruby"
-		]).energy(4000).maxChargeRate(4000),
-		create.deploying("#forge:gems/ruby", [
-			"#forge:gems/ruby",
-			"ae2:printed_silicon"
-		]),
-		create.deploying("#forge:gems/ruby", [
-			"#forge:gems/ruby",
-			"immersiveengineering:wirecoil_redstone"
-		])
-	]).loops(1).transitionalItem("cmi:printed_general_processor")
-	*/
 
 	// ???
 	createaddition.charging("cmi:overcharged_alloy_ingot", [

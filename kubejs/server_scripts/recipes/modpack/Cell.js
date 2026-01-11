@@ -6,19 +6,19 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:empty_cell", [
 		"#forge:plates/aluminum"
 	], [
-		create.deploying("#forge:plates/aluminum", [
-			"#forge:plates/aluminum",
+		create.deploying(INCOMPLETE_AVIATION_CELL, [
+			INCOMPLETE_AVIATION_CELL,
 			"cmi:coil_mechanism"
 		]),
-		create.deploying("#forge:plates/aluminum", [
-			"#forge:plates/aluminum",
+		create.deploying(INCOMPLETE_AVIATION_CELL, [
+			INCOMPLETE_AVIATION_CELL,
 			"#forge:gears/manyullyn"
 		]),
-		vintageimprovements.laser_cutting("#forge:plates/aluminum", [
-			"#forge:plates/aluminum"
+		vintageimprovements.laser_cutting(INCOMPLETE_AVIATION_CELL, [
+			INCOMPLETE_AVIATION_CELL
 		]).energy(4000).maxChargeRate(4000),
-		vintageimprovements.curving("#forge:plates/aluminum", [
-			"#forge:plates/aluminum"
+		vintageimprovements.curving(INCOMPLETE_AVIATION_CELL, [
+			INCOMPLETE_AVIATION_CELL
 		]).itemAsHead("vintageimprovements:w_shaped_curving_head")
 	]).loops(1).transitionalItem(INCOMPLETE_AVIATION_CELL)
 })

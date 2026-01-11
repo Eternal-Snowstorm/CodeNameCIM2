@@ -1,5 +1,8 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, create, vintageimprovements, tconstruct } = event.recipes
+	let Inc = {
+		ENGINE: "cmi:incomplete_steam_engine"
+	}
 
 	// 流体管道
 	kubejs.shaped("8x create:fluid_pipe", [
@@ -166,26 +169,26 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("create:steam_engine", [
 		"create:copper_casing"
 	], [
-		create.deploying("create:brass_casing", [
-			"create:brass_casing",
+		create.deploying(Inc.ENGINE, [
+			Inc.ENGINE,
 			"cmi:bronze_mechanism"
 		]),
-		create.cutting("create:brass_casing", [
-			"create:brass_casing"
+		create.cutting(Inc.ENGINE, [
+			Inc.ENGINE
 		]),
-		create.deploying("create:brass_casing", [
-			"create:brass_casing",
+		create.deploying(Inc.ENGINE, [
+			Inc.ENGINE,
 			"createdieselgenerators:engine_piston"
 		]),
-		create.deploying("create:brass_casing", [
-			"create:brass_casing",
+		create.deploying(Inc.ENGINE, [
+			Inc.ENGINE,
 			"#forge:plates/steel"
 		]),
-		create.deploying("create:brass_casing", [
-			"create:brass_casing",
+		create.deploying(Inc.ENGINE, [
+			Inc.ENGINE,
 			"create:precision_mechanism"
 		])
-	]).loops(1).transitionalItem("create:brass_casing")
+	]).loops(1).transitionalItem(Inc.ENGINE)
 		.id("create:crafting/kinetics/steam_engine")
 
 	// 工作盆盖板

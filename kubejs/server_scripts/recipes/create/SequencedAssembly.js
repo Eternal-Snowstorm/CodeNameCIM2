@@ -1,138 +1,146 @@
 ServerEvents.recipes((event) => {
 	let { create, vintageimprovements } = event.recipes
+	let Inc = {
+		SCANNER: "cmi:incomplete_scanner",
+		SCAMOD: "cmi:incomplete_scanning_module",
+		ELETUBE: "cmi:incomplete_electron_tube",
+		CAPACITOR: "ad_astra:etrionic_core",
+		NUKE: "incomplete_nuke_cooler",
+		GAS: "cmi:incomplete_gas_container"
+	}
 
 	// 扫描器
 	create.sequenced_assembly("scannable:scanner", [
 		"#forge:plates/iron"
 	], [
-		create.deploying("cmi:incomplete_scanner", [
-			"cmi:incomplete_scanner",
+		create.deploying(Inc.SCANNER, [
+			Inc.SCANNER,
 			"immersiveengineering:survey_tools"
 		]),
-		create.deploying("cmi:incomplete_scanner", [
-			"cmi:incomplete_scanner",
+		create.deploying(Inc.SCANNER, [
+			Inc.SCANNER,
 			"thermal:redstone_servo"
 		]),
-		create.deploying("cmi:incomplete_scanner", [
-			"cmi:incomplete_scanner",
+		create.deploying(Inc.SCANNER, [
+			Inc.SCANNER,
 			"#forge:plates/electrum"
 		]),
-		create.deploying("cmi:incomplete_scanner", [
-			"cmi:incomplete_scanner",
+		create.deploying(Inc.SCANNER, [
+			Inc.SCANNER,
 			"cmi:smart_mechanism"
 		])
-	]).transitionalItem("cmi:incomplete_scanner").loops(1)
+	]).transitionalItem(Inc.SCANNER).loops(1)
 		.id("scannable:scanner")
 
 	// 空白扫描模块
 	create.sequenced_assembly("scannable:blank_module", [
 		"#forge:plates/plastic"
 	], [
-		create.deploying("cmi:incomplete_scanning_module", [
-			"cmi:incomplete_scanning_module",
+		create.deploying(Inc.SCAMOD, [
+			Inc.SCAMOD,
 			"#forge:plates/electrum"
 		]),
-		create.deploying("cmi:incomplete_scanning_module", [
-			"cmi:incomplete_scanning_module",
+		create.deploying(Inc.SCAMOD, [
+			Inc.SCAMOD,
 			"ae2:printed_silicon"
 		]),
-		create.pressing("cmi:incomplete_scanning_module", [
-			"cmi:incomplete_scanning_module"
+		create.pressing(Inc.SCAMOD, [
+			Inc.SCAMOD
 		]),
-		vintageimprovements.laser_cutting("cmi:incomplete_scanning_module", [
-			"cmi:incomplete_scanning_module"
+		vintageimprovements.laser_cutting(Inc.SCAMOD, [
+			Inc.SCAMOD
 		]).energy(1000).maxChargeRate(1000)
-	]).transitionalItem("cmi:incomplete_scanning_module").loops(1)
+	]).transitionalItem(Inc.SCAMOD).loops(1)
 		.id("scannable:blank_module")
 
 	// 电子管
 	create.sequenced_assembly([
 		"create:electron_tube"
 	], "#forge:plates/iron", [
-		create.deploying("cmi:incomplete_electron_tube", [
-			"cmi:incomplete_electron_tube",
+		create.deploying(Inc.ELETUBE, [
+			Inc.ELETUBE,
 			"#forge:wires/copper"
 		]),
-		create.deploying("cmi:incomplete_electron_tube", [
-			"cmi:incomplete_electron_tube",
+		create.deploying(Inc.ELETUBE, [
+			Inc.ELETUBE,
 			"create:polished_rose_quartz"
 		])
-	]).transitionalItem("cmi:incomplete_electron_tube").loops(1)
+	]).transitionalItem(Inc.ELETUBE).loops(1)
 		.id("create:crafting/materials/electron_tube")
 
 	// Ad电容器
 	create.sequenced_assembly("ad_astra:etrionic_capacitor", [
 		"#forge:plates/steel"
 	], [
-		create.deploying("ad_astra:etrionic_core", [
-			"ad_astra:etrionic_core",
+		create.deploying(Inc.CAPACITOR, [
+			Inc.CAPACITOR,
 			"#forge:plates/etrium"
 		]),
-		create.deploying("ad_astra:etrionic_core", [
-			"ad_astra:etrionic_core",
+		create.deploying(Inc.CAPACITOR, [
+			Inc.CAPACITOR,
 			"cmi:simple_battery"
 		]),
-		create.deploying("ad_astra:etrionic_core", [
-			"ad_astra:etrionic_core",
+		create.deploying(Inc.CAPACITOR, [
+			Inc.CAPACITOR,
 			"#forge:wires/copper"
 		]),
-		create.pressing("ad_astra:etrionic_core", [
-			"ad_astra:etrionic_core"
+		create.pressing(Inc.CAPACITOR, [
+			Inc.CAPACITOR
 		])
-	]).transitionalItem("ad_astra:etrionic_core").loops(1)
+	]).transitionalItem(Inc.CAPACITOR).loops(1)
 		.id("ad_astra:etrionic_capacitor")
 
 	// 冷却设备
 	create.sequenced_assembly("cmi:nuke_cooler", [
 		"#forge:plates/stainless_steel"
 	], [
-		create.deploying("#forge:plates/stainless_steel", [
-			"#forge:plates/stainless_steel",
+		create.deploying(Inc.NUKE, [
+			Inc.NUKE,
 			"alexscaves:polymer_plate"
 		]),
-		create.deploying("#forge:plates/stainless_steel", [
-			"#forge:plates/stainless_steel",
+		create.deploying(Inc.NUKE, [
+			Inc.NUKE,
 			"#forge:plates/platinum"
 		]),
-		create.deploying("#forge:plates/stainless_steel", [
-			"#forge:plates/stainless_steel",
+		create.deploying(Inc.NUKE, [
+			Inc.NUKE,
 			"mekanism:structural_glass"
 		])
-	]).loops(1).transitionalItem(IngrUtils.getFirstItemId("#forge:plates/stainless_steel"))
+	]).loops(1).transitionalItem(Inc.NUKE)
 
 	create.sequenced_assembly("cmi:nuke_cooler", [
 		"alexscaves:charred_remnant"
 	], [
-		create.deploying("#forge:plates/stainless_steel", [
-			"#forge:plates/stainless_steel",
+		create.deploying(Inc.NUKE, [
+			Inc.NUKE,
 			"alexscaves:polymer_plate"
 		]),
-		create.deploying("#forge:plates/stainless_steel", [
-			"#forge:plates/stainless_steel",
+		create.deploying(Inc.NUKE, [
+			Inc.NUKE,
 			"#forge:plates/platinum"
 		])
-	]).loops(1).transitionalItem("alexscaves:charred_remnant")
+	]).loops(1).transitionalItem(Inc.NUKE)
 
 	// 高压气体容器
 	create.sequenced_assembly("steampowered:pressurized_gas_container", [
 		"#forge:plates/aluminum"
 	], [
-		create.deploying("cmi:incomplete_gas_container", [
-			"cmi:incomplete_gas_container",
+		create.deploying(Inc.GAS, [
+			Inc.GAS,
 			"#forge:glass_panes"
 		]),
-		vintageimprovements.laser_cutting("cmi:incomplete_gas_container",
-			"cmi:incomplete_gas_container"
+		vintageimprovements.laser_cutting(Inc.GAS,
+			Inc.GAS
 		).energy(1000).maxChargeRate(1000),
-		create.deploying("cmi:incomplete_gas_container", [
-			"cmi:incomplete_gas_container",
+		create.deploying(Inc.GAS, [
+			Inc.GAS,
 			"thermal:cured_rubber"
 		]),
-		create.pressing("cmi:incomplete_gas_container", [
-			"cmi:incomplete_gas_container"
+		create.pressing(Inc.GAS, [
+			Inc.GAS
 		]),
-		vintageimprovements.vacuumizing("cmi:incomplete_gas_container", [
-			"cmi:incomplete_gas_container"
+		vintageimprovements.vacuumizing(Inc.GAS, [
+			Inc.GAS
 		])
-	]).loops(1).transitionalItem("cmi:incomplete_gas_container")
+	]).loops(1).transitionalItem(Inc.GAS)
 })
