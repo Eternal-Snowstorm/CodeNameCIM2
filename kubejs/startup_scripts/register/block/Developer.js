@@ -65,6 +65,12 @@ StartupEvents.registry("block", (event) => {
 
 	// 闪电羿
 	addDeveloperDoll("flash_yi", "slim")
+
+	// 键盘虾
+	addDeveloperDoll("keyxeldesu", "slim")
+
+	// 谢尔盖
+	addDeveloperDoll("sergei", "wide")
 	// endregion
 
 	// music
