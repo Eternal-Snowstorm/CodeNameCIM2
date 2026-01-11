@@ -351,7 +351,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "cmi:resonant_mechanism",
 		B: "thermal:machine_frame",
-		C: "cmi:flame_retardant_plastic",
+		C: "#forge:plates/polyolefin",
 		D: "cmi:nitrocellulose",
 		E: "cmi:siltsteel_plate"
 	})
