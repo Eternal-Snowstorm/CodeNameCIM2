@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1766429409440
+  last_edited_time = 1768136548094
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:092123c2-a651-43b2-83c1-9ce2075e4ec6-1766429398454] = [groups:][instances:]
+  [loading_requirement_container_meta:a1a42b36-df7d-41e5-a039-32de35400b86-1768134857840] = [groups:][instances:]
 }
 
 menu_background {
@@ -62,12 +62,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1496
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = 110
-  y = -2
+  anchor_point = mid-right
+  x = -132
+  y = 2
   width = 128
   height = 128
   stretch_x = false
@@ -83,6 +83,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -103,12 +109,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1496
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = 13
-  y = -125
+  anchor_point = top-centered
+  x = 103
+  y = 87
   width = 64
   height = 64
   stretch_x = false
@@ -124,6 +130,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -145,11 +157,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1012
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = 37
-  y = -125
+  anchor_point = mid-right
+  x = -204
+  y = -75
   width = 128
   height = 128
   stretch_x = false
@@ -165,6 +177,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -185,12 +203,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1496
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -128
-  y = -102
+  anchor_point = top-centered
+  x = -180
+  y = 30
   width = 128
   height = 128
   stretch_x = false
@@ -206,6 +224,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -226,12 +250,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1496
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -155
-  y = -38
+  anchor_point = bottom-centered
+  x = -70
+  y = -132
   width = 128
   height = 128
   stretch_x = false
@@ -247,6 +271,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -289,6 +319,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -309,12 +345,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1496
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = 5
-  y = -12
+  anchor_point = bottom-centered
+  x = 50
+  y = -132
   width = 128
   height = 128
   stretch_x = false
@@ -330,6 +366,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -350,12 +392,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1496
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -55
-  y = -115
+  anchor_point = top-centered
+  x = -40
+  y = 13
   width = 128
   height = 128
   stretch_x = false
@@ -371,6 +413,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -392,11 +440,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1020
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = 110
-  y = -102
+  anchor_point = top-right
+  x = -132
+  y = 3
   width = 128
   height = 128
   stretch_x = false
@@ -412,6 +460,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -435,11 +489,11 @@ element {
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -193
-  y = -26
-  width = 64
-  height = 64
+  anchor_point = mid-left
+  x = 90
+  y = -37
+  width = 96
+  height = 96
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -453,6 +507,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -474,11 +534,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1020
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -238
-  y = 3
+  anchor_point = bottom-left
+  x = 3
+  y = -129
   width = 128
   height = 123
   stretch_x = false
@@ -494,6 +554,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -514,12 +580,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1496
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -238
-  y = -125
+  anchor_point = top-left
+  x = 5
+  y = 2
   width = 128
   height = 123
   stretch_x = false
@@ -535,6 +601,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -576,6 +648,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -597,11 +675,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1020
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
   anchor_point = bottom-left
-  x = -57
-  y = -265
+  x = 3
+  y = -259
   width = 100
   height = 100
   stretch_x = false
@@ -617,6 +695,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -635,14 +719,14 @@ element {
   fade_in_speed = 1.0
   fade_out = no_fading
   fade_out_speed = 1.0
-  base_opacity = 1.0
+  base_opacity = 0.5
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1496
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 20
-  y = -125
+  x = 130
+  y = -164
   width = 186
   height = 97
   stretch_x = false
@@ -658,6 +742,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -701,16 +791,16 @@ element {
   fade_in_speed = 1.0
   fade_out = no_fading
   fade_out_speed = 1.0
-  base_opacity = 1.0
+  base_opacity = 0.5
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1496
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 9902f09b-2e1c-4d2d-86c1-a3de2b1b4f21-1747472654909
-  x = 37
-  y = 14
-  width = 186
+  x = 32
+  y = 19
+  width = 171
   height = 68
   stretch_x = false
   stretch_y = false
@@ -725,6 +815,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -766,6 +862,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -809,6 +911,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 element {
@@ -827,14 +935,14 @@ element {
   fade_in_speed = 1.0
   fade_out = no_fading
   fade_out_speed = 1.0
-  base_opacity = 1.0
+  base_opacity = 0.5
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1020
+  auto_sizing_base_screen_height = 1011
   sticky_anchor = false
   anchor_point = bottom-right
-  x = -285
-  y = -74
+  x = -290
+  y = -77
   width = 280
   height = 71
   stretch_x = false
@@ -850,6 +958,12 @@ element {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
 }
 
 vanilla_button {
@@ -905,6 +1019,12 @@ vanilla_button {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
   is_hidden = true
   automated_button_clicks = 0
 }
@@ -945,10 +1065,10 @@ vanilla_button {
   auto_sizing_base_screen_height = 1012
   sticky_anchor = false
   anchor_point = vanilla
-  x = 133
-  y = 141
-  width = 374
-  height = 92
+  x = 152
+  y = 126
+  width = 336
+  height = 84
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -962,6 +1082,12 @@ vanilla_button {
   load_once_per_session = false
   in_editor_color = #FFC800FF
   layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
   is_hidden = true
   automated_button_clicks = 0
 }
