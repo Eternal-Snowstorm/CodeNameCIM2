@@ -15,9 +15,6 @@ net.minecraft.client.gui.screens.DeathScreen$TitleConfirmScreen {
 net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
 }
 
-net.minecraft.client.gui.screens.worldselection.CreateWorldScreen {
-}
-
 org.embeddedt.embeddium.gui.EmbeddiumVideoOptionsScreen {
 }
 
