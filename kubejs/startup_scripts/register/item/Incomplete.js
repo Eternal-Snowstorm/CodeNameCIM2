@@ -67,12 +67,16 @@ StartupEvents.registry("item", (event) => {
 	addItem("incomplete_nuke_cooler")
 		.texture(`${global.namespace}:item/material/nuke_cooler`)
 
+	// 扫描零件
+	addItem("incomplete_notor_gizmo")
+		.texture(`${global.namespace}:item/material/incomplete_notor_gizmo`)
+
 	// 飞轮
 	addItem("incopmplete_flywheel")
-		.parentModel("create:block/flywheel/flywheel")
+		.parentModel("create:block/flywheel/item")
 
 	addItem("incomplete_steam_engine")
-		.parentModel("create:block/steam_engine/block")
+		.parentModel("create:block/steam_engine/item")
 	// 火箭框架(半成品)
 	for (let i = 1; i <= 4; i++) {
 		addItem(`incomplete_tier_${i.toString()}_rocket_frame`)

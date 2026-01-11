@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
 
 	// 谐振
 	create.sequenced_assembly("cmi:resonant_mechanism", [
-		"#forge:plates/enderInc.NUKE"
+		"#forge:plates/enderium"
 	], [
 		create.deploying(Inc.RESONANT, [Inc.RESONANT, "thermal:redstone_servo"]),
 		create.cutting(Inc.RESONANT, Inc.RESONANT),
@@ -283,8 +283,8 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:nuclear_mechanism", [
 		"cmi:nuclear_mechanism_basement"
 	], [
-		create.deploying(Inc.NUKE, [Inc.NUKE, "mekanism:pellet_polonInc.NUKE"]),
-		create.deploying(Inc.NUKE, [Inc.NUKE, "mekanism:pellet_plutonInc.NUKE"]),
+		create.deploying(Inc.NUKE, [Inc.NUKE, "mekanism:pellet_polonium"]),
+		create.deploying(Inc.NUKE, [Inc.NUKE, "mekanism:pellet_plutonium"]),
 		create.deploying(Inc.NUKE, [Inc.NUKE, "#forge:circuits/elite"]),
 		create.deploying(Inc.NUKE, [Inc.NUKE, "cmi:quantum_mechanism_part"]),
 	]).transitionalItem(Inc.NUKE).loops(1)
@@ -293,8 +293,8 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:antimatter_mechanism", [
 		"cmi:antimatter_mechanism_basement"
 	], [
-		create.deploying(Inc.ANTI, [Inc.ANTI, "#forge:dusts/azure_neodymInc.NUKE"]),
-		create.filling(Inc.ANTI, [Inc.ANTI, Fluid.of("cmi:molten_azure_neodymInc.NUKE", 90)]),
+		create.deploying(Inc.ANTI, [Inc.ANTI, "#forge:dusts/azure_neodymium"]),
+		create.filling(Inc.ANTI, [Inc.ANTI, Fluid.of("cmi:molten_azure_neodymium", 90)]),
 		create.deploying(Inc.ANTI, [Inc.ANTI, "#forge:pellets/antimatter"])
 	]).transitionalItem(Inc.ANTI).loops(1)
 
