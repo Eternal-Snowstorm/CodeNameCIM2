@@ -463,7 +463,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("117458866249", "117458866249")
 	addBlockLang("sakura_star_cn", "MF.")
 	addBlockLang("flash_yi", "闪电羿")
-	addBlockLang("cergei", "谢尔盖")
+	addBlockLang("sergei", "谢尔盖")
 	addBlockLang("keyxeldesu", "一只键盘虾")
 	addCommonTooltipLang("cmi:re_construction", "主创&策划&美工")
 	addCommonTooltipLang("cmi:qi_month", "KubeJS程序&Mod程序&美工")
@@ -477,7 +477,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:keyxeldesu", "美工")
 	addCommonTooltipLang("cmi:sakura_star_cn", "Github仓库管理&社区管理")
 	addCommonTooltipLang("cmi:qicaijie", "内测服务器维护")
-	addCommonTooltipLang("cmi:cergei", "整合包建筑设计")
+	addCommonTooltipLang("cmi:sergei", "整合包建筑设计")
 	addCommonTooltipLang("cmi:dont_kill_belalus", "音乐创作者")
 	addCommonTooltipLang("cmi:dkrkoo_weihe", "吉祥物&社区管理")
 
