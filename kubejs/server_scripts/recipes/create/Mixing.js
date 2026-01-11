@@ -53,13 +53,13 @@ ServerEvents.recipes((event) => {
 
 	// 晶体催生剂
 	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
-		Fluid.of("immersiveengineering:redstone_acid", 500),
+		Fluid.of("sliceanddice:fertilizer", 500),
 		"#cmi:crystals",
 		"16x #forge:crops"
 	]).heated()
 
 	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
-		Fluid.of("immersiveengineering:redstone_acid", 500),
+		Fluid.of("sliceanddice:fertilizer", 500),
 		"#cmi:crystals",
 		"32x #forge:seeds"
 	]).heated()

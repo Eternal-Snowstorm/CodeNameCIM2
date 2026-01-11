@@ -1,12 +1,19 @@
 ServerEvents.recipes((event) => {
     let { create, vintageimprovements, createaddition } = event.recipes
 
-    let Print = {
+    let Incomplete = {
         CONTROL: "create_connected:incomplete_control_chip",
         LOGIC: "cmi:incomplete_logic_processor",
         CALCULATION: "cmi:incomplete_calculation_processor",
         ENGINEERING: "cmi:incomplete_engineering_processor",
         QUANTUM: "cmi:incomplete_quantum_processor"
+    }
+
+    let Print = {
+        LOGIC: "ae2:printed_logic_processor",
+        CALCULATION: "ae2:printed_calculation_processor",
+        ENGINEERING: "ae2:printed_engineering_processor",
+        QUANTUM: "advanced_ae:printed_quantum_processor"
     }
 
     let Processor = {
@@ -21,23 +28,23 @@ ServerEvents.recipes((event) => {
     create.sequenced_assembly(Processor.CONTROL, [
         "#forge:plates/copper"
     ], [
-        create.deploying(Print.CONTROL, [
-            Print.CONTROL,
+        create.deploying(Incomplete.CONTROL, [
+            Incomplete.CONTROL,
             "create:polished_rose_quartz"
         ]),
-        create.deploying(Print.CONTROL, [
-            Print.CONTROL,
+        create.deploying(Incomplete.CONTROL, [
+            Incomplete.CONTROL,
             "ae2:printed_silicon"
         ]),
-        create.deploying(Print.CONTROL, [
-            Print.CONTROL,
+        create.deploying(Incomplete.CONTROL, [
+            Incomplete.CONTROL,
             "immersiveengineering:wirecoil_redstone"
         ]),
-        vintageimprovements.laser_cutting(Print.CONTROL, [
-            Print.CONTROL
+        vintageimprovements.laser_cutting(Incomplete.CONTROL, [
+            Incomplete.CONTROL
         ]).energy(4000).maxChargeRate(1000)
     ])
-        .transitionalItem(Print.CONTROL)
+        .transitionalItem(Incomplete.CONTROL)
         .loops(1)
         .id("create_connected:sequenced_assembly/control_chip")
 
@@ -45,26 +52,26 @@ ServerEvents.recipes((event) => {
     create.sequenced_assembly(Processor.LOGIC, [
         "#forge:ingots/electrum"
     ], [
-        vintageimprovements.curving(Print.LOGIC, [
-            Print.LOGIC
+        vintageimprovements.curving(Incomplete.LOGIC, [
+            Incomplete.LOGIC
         ]).itemAsHead("ae2:logic_processor_press"),
-        create.deploying(Print.LOGIC, [
-            Print.LOGIC,
+        create.deploying(Incomplete.LOGIC, [
+            Incomplete.LOGIC,
             "create:polished_rose_quartz"
         ]),
-        create.deploying(Print.LOGIC, [
-            Print.LOGIC,
+        create.deploying(Incomplete.LOGIC, [
+            Incomplete.LOGIC,
             "ae2:printed_silicon"
         ]),
-        create.deploying(Print.LOGIC, [
-            Print.LOGIC,
+        create.deploying(Incomplete.LOGIC, [
+            Incomplete.LOGIC,
             "immersiveengineering:wirecoil_redstone"
         ]),
-        vintageimprovements.laser_cutting(Print.LOGIC, [
-            Print.LOGIC
+        vintageimprovements.laser_cutting(Incomplete.LOGIC, [
+            Incomplete.LOGIC
         ]).energy(4000).maxChargeRate(1000)
     ])
-        .transitionalItem(Print.LOGIC)
+        .transitionalItem(Incomplete.LOGIC)
         .loops(1)
         .id("ae2:inscriber/logic_processor")
 
@@ -72,26 +79,26 @@ ServerEvents.recipes((event) => {
     create.sequenced_assembly(Processor.CALCULATION, [
         "#forge:gems/certus_quartz"
     ], [
-        vintageimprovements.curving(Print.CALCULATION, [
-            Print.CALCULATION
+        vintageimprovements.curving(Incomplete.CALCULATION, [
+            Incomplete.CALCULATION
         ]).itemAsHead("ae2:calculation_processor_press"),
-        create.deploying(Print.CALCULATION, [
-            Print.CALCULATION,
+        create.deploying(Incomplete.CALCULATION, [
+            Incomplete.CALCULATION,
             "#forge:silicon"
         ]),
-        create.deploying(Print.CALCULATION, [
-            Print.CALCULATION,
+        create.deploying(Incomplete.CALCULATION, [
+            Incomplete.CALCULATION,
             "ae2:printed_silicon"
         ]),
-        create.deploying(Print.CALCULATION, [
-            Print.CALCULATION,
+        create.deploying(Incomplete.CALCULATION, [
+            Incomplete.CALCULATION,
             "immersiveengineering:wirecoil_redstone"
         ]),
-        vintageimprovements.laser_cutting(Print.CALCULATION, [
-            Print.CALCULATION
+        vintageimprovements.laser_cutting(Incomplete.CALCULATION, [
+            Incomplete.CALCULATION
         ]).energy(4000).maxChargeRate(1000)
     ])
-        .transitionalItem(Print.CALCULATION)
+        .transitionalItem(Incomplete.CALCULATION)
         .loops(1)
         .id("ae2:inscriber/calculation_processor")
 
@@ -99,26 +106,26 @@ ServerEvents.recipes((event) => {
     create.sequenced_assembly(Processor.ENGINEERING, [
         "#forge:ingots/etrium"
     ], [
-        vintageimprovements.curving(Print.ENGINEERING, [
-            Print.ENGINEERING
+        vintageimprovements.curving(Incomplete.ENGINEERING, [
+            Incomplete.ENGINEERING
         ]).itemAsHead("ae2:engineering_processor_press"),
-        create.deploying(Print.ENGINEERING, [
-            Print.ENGINEERING,
+        create.deploying(Incomplete.ENGINEERING, [
+            Incomplete.ENGINEERING,
             "cmi:silicon_carbide"
         ]),
-        create.deploying(Print.ENGINEERING, [
-            Print.ENGINEERING,
+        create.deploying(Incomplete.ENGINEERING, [
+            Incomplete.ENGINEERING,
             "ae2:printed_silicon"
         ]),
-        create.deploying(Print.ENGINEERING, [
-            Print.ENGINEERING,
+        create.deploying(Incomplete.ENGINEERING, [
+            Incomplete.ENGINEERING,
             "immersiveengineering:wirecoil_redstone"
         ]),
-        vintageimprovements.laser_cutting(Print.ENGINEERING,
-            Print.ENGINEERING
+        vintageimprovements.laser_cutting(Incomplete.ENGINEERING,
+            Incomplete.ENGINEERING
         ).energy(4000).maxChargeRate(1000)
     ])
-        .transitionalItem(Print.ENGINEERING)
+        .transitionalItem(Incomplete.ENGINEERING)
         .loops(1)
         .id("ae2:inscriber/engineering_processor")
 
@@ -126,27 +133,108 @@ ServerEvents.recipes((event) => {
     create.sequenced_assembly(Processor.QUANTUM, [
         "advanced_ae:quantum_alloy"
     ], [
-        vintageimprovements.curving(Print.QUANTUM, [
-            Print.QUANTUM
+        vintageimprovements.curving(Incomplete.QUANTUM, [
+            Incomplete.QUANTUM
         ]).itemAsHead("advanced_ae:quantum_processor_press"),
         create.deploying(Print.QUANTUM, [
-            Print.QUANTUM,
+            Incomplete.QUANTUM,
             "cmi:single_crystal_silicon"
         ]),
         create.deploying(Print.QUANTUM, [
-            Print.QUANTUM,
+            Incomplete.QUANTUM,
             "ae2:printed_silicon"
         ]),
         create.deploying(Print.QUANTUM, [
-            Print.QUANTUM,
+            Incomplete.QUANTUM,
             "immersiveengineering:wirecoil_redstone"
         ]),
         vintageimprovements.laser_cutting(Print.QUANTUM,
-            Print.QUANTUM
+            Incomplete.QUANTUM
         ).energy(4000).maxChargeRate(1000)
     ])
         .transitionalItem(Print.QUANTUM)
         .loops(1)
         .id("advanced_ae:quantum_processor")
+
+    // 切片
+    event.custom({
+        "type": "expatternprovider:circuit_cutter",
+        "fluid_input": {
+            "amount": 100,
+            "ingredient": {
+                "fluid": "immersiveengineering:redstone_acid"
+            }
+        },
+        "item_input": {
+            "amount": 1,
+            "ingredient": {
+                "tag": "forge:storage_blocks/electrum"
+            }
+        },
+        "output": {
+            "count": 9,
+            "item": Print.LOGIC
+        }
+    }).id("expatternprovider:cutter/logic")
+
+    event.custom({
+        "type": "expatternprovider:circuit_cutter",
+        "fluid_input": {
+            "amount": 100,
+            "ingredient": {
+                "fluid": "immersiveengineering:redstone_acid"
+            }
+        },
+        "item_input": {
+            "amount": 1,
+            "ingredient": {
+                "tag": "forge:storage_blocks/certus_quartz"
+            }
+        },
+        "output": {
+            "count": 9,
+            "item": Print.CALCULATION
+        }
+    }).id("expatternprovider:cutter/calculation")
+
+    event.custom({
+        "type": "expatternprovider:circuit_cutter",
+        "fluid_input": {
+            "amount": 100,
+            "ingredient": {
+                "fluid": "immersiveengineering:redstone_acid"
+            }
+        },
+        "item_input": {
+            "amount": 1,
+            "ingredient": {
+                "tag": "forge:storage_blocks/etrium"
+            }
+        },
+        "output": {
+            "count": 9,
+            "item": Print.ENGINEERING
+        }
+    }).id("expatternprovider:cutter/engineering")
+
+    event.custom({
+        "type": "expatternprovider:circuit_cutter",
+        "fluid_input": {
+            "amount": 100,
+            "ingredient": {
+                "fluid": "immersiveengineering:redstone_acid"
+            }
+        },
+        "item_input": {
+            "amount": 1,
+            "ingredient": {
+                "item": "advanced_ae:quantum_alloy_block"
+            }
+        },
+        "output": {
+            "count": 9,
+            "item": Print.QUANTUM
+        }
+    }).id("advanced_ae:quantum_processor_print_eae")
 
 })

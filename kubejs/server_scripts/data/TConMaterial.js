@@ -228,7 +228,7 @@ ServerEvents.highPriorityData((event) => {
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:raging", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:searing", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:necrotic", 1)
+					.addTrait("tconstruct:ranged", "tconstruct:trueshot", 1)
 			})
 	})
 

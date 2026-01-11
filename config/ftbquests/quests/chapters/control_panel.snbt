@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "control_panel"
 	group: "6A6C7C5BAEF247E2"
-	id: "37E8E472D4A36DF1"
+	id: "75204A78E1D18BCD"
 	images: [
 		{
 			click: "command:reload"
@@ -245,12 +245,12 @@
 			y: -10.0d
 		}
 	]
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [{
-		id: "6F3BF10FCC5AE7CF"
+		id: "5ECCD5D0FB37ECF9"
 		tasks: [{
-			id: "61E5A09264A0226F"
+			id: "13791D6D7E9D4387"
 			title: "test"
 			type: "checkmark"
 		}]

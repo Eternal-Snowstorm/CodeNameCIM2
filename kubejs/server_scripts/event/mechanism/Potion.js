@@ -3,24 +3,24 @@ ItemEvents.rightClicked("cmi:potion_mechanism", (event) => {
 
 	let potion = [
 		"saturation",
-		"luck",
-		"dolphins_grace",
-		"conduit_power",
+		// "luck",
+		// "dolphins_grace",
+		// "conduit_power",
 		"fire_resistance",
 		// "slow_falling",
 		"haste",
 		"resistance",
-		"strength",
+		// "strength",
 		"absorption",
 		"regeneration",
-		"water_breathing",
-		"speed",
+		// "water_breathing",
+		// "speed",
 		// "jump_boost",
-		"night_vision",
+		// "night_vision",
 		// "invisibility",
 	]
 	potion.forEach((buff) => {
-		player.potionEffects.add(`minecraft:${buff}`, 300, 2)
+		player.potionEffects.add(`minecraft:${buff}`, 300, 8)
 	})
 	player.playNotifySound("create:crafter_craft", "voice", 2, 1)
 })

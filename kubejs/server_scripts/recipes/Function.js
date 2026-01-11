@@ -103,12 +103,19 @@ let MekanismType = {
  * @returns 
  */
 function makeOf(type) {
-	return function (id, amount) {
+	/**
+	 * 
+	 * @param {string} id 
+	 * @param {number} amount 
+	 * @returns 
+	 */
+	let func = function (id, amount) {
 		let obj = {}
 		obj[type] = id
 		obj.amount = amount === null ? 1000 : amount
 		return obj
 	}
+	return func
 }
 
 /**

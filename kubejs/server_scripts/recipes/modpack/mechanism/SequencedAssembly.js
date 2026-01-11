@@ -205,7 +205,7 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/iron"
 	], [
 		create.deploying(icom, [icom, "#forge:plates/copper"]),
-		create.filling(icom, [icom, Fluid.of("immersiveengineering:redstone_acid", 1000)]),
+		create.filling(icom, [icom, Fluid.of("thermal:redstone", 1000)]),
 		create.deploying(icom, [icom, "cmi:coil_mechanism_augment"]),
 		create.deploying(icom, [icom, "#forge:plates/electrum"]),
 		create.deploying(icom, [icom, "cmi:engineering_mechanism_part"]),
