@@ -55,41 +55,41 @@ ServerEvents.recipes((event) => {
 								" m "
 							],
 							[
-								"BCB",
-								"CDC",
-								"BCB",
+								"B B",
+								" D ",
+								"B B",
 								"   ",
 								"   ",
 								"   "
 							],
 							[
-								"BCB",
-								"CEC",
-								"BCB",
+								"B B",
+								" E ",
+								"B B",
 								"   ",
 								"   ",
 								"   "
 							],
 							[
-								"BCB",
-								"CFC",
-								"BCB",
+								"B B",
+								" F ",
+								"B B",
 								"   ",
 								"   ",
 								"   "
 							],
 							[
-								"BCB",
-								"CGC",
-								"BCB",
+								"B B",
+								" G ",
+								"B B",
 								"   ",
 								"   ",
 								"   "
 							],
 							[
-								"AHA",
-								"IJK",
-								"ALA",
+								"A A",
+								" C ",
+								"A A",
 								"   ",
 								"   ",
 								"   "
@@ -99,16 +99,11 @@ ServerEvents.recipes((event) => {
 						"keys": {
 							"A": "cmi:gray_reinforced_concrete",
 							"B": "cmi:white_reinforced_concrete",
-							"C": "minecraft:orange_concrete",
+							"C": `cmi:radar_${b.toString()}`,
 							"D": "cmi:power_supply",
 							"E": "cmi:transformer",
 							"F": "cmi:tracking_array",
-							"G": "cmi:modem",
-							"H": "cmi:white_reinforced_concrete_stairs[facing=north,half=bottom]",
-							"I": "cmi:white_reinforced_concrete_stairs[facing=west,half=bottom]",
-							"J": `cmi:radar_${b.toString()}`,
-							"K": "cmi:white_reinforced_concrete_stairs[facing=east,half=bottom]",
-							"L": "cmi:white_reinforced_concrete_stairs[facing=south,half=bottom]"
+							"G": "cmi:modem"
 						}
 					}
 				]

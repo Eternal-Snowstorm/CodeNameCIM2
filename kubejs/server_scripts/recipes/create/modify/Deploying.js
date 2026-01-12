@@ -1,6 +1,10 @@
 ServerEvents.recipes((event) => {
 	let { create, kubejs } = event.recipes
 
+	let Inc = {
+		FLYWHEEL: "cmi:incomplete_flywheel"
+	}
+
 	create.deploying("minecraft:redstone_torch", [
 		"#forge:rods/wooden",
 		"#forge:dusts/redstone"
@@ -11,11 +15,11 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("create:flywheel", [
 		"#create:shaft"
 	], [
-		create.deploying("create:shaft", [
-			BRONZE_PLATE, 
+		create.deploying(Inc.FLYWHEEL, [
+			Inc.FLYWHEEL,
 			"#forge:plates/bronze"
 		]),
-	]).transitionalItem("create:shaft").loops(4)
+	]).transitionalItem(Inc.FLYWHEEL).loops(4)
 
 	// 扫描组件
 	create.deploying("scannable:range_module", [

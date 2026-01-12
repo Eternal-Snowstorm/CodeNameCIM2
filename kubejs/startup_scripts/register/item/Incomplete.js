@@ -2,6 +2,14 @@ StartupEvents.registry("item", (event) => {
 	function addItem(name) {
 		return event.create(`${global.namespace}:${name}`, "create:sequenced_assembly")
 	}
+	// 未完成构件零件
+	addItem("incomplete_mekanism_mechanism_part")
+		.texture(`${global.namespace}:item/mechanism/part/mekanism`)
+	addItem("incomplete_quantum_mechanism_part")
+		.texture(`${global.namespace}:item/mechanism/part/quantum`)
+	addItem("incomplete_space_mechanism_part")
+		.texture(`${global.namespace}:item/mechanism/part/space`)
+
 	// mek未完成电路板
 	addItem("incomplete_advanced_control_circuit")
 		.texture(`${global.namespace}:item/material/advanced_control_circuit`)
@@ -55,6 +63,20 @@ StartupEvents.registry("item", (event) => {
 	addItem("incomplete_gas_container")
 		.texture(`${global.namespace}:item/material/incomplete_gas_container`)
 
+	// 核能冷却器
+	addItem("incomplete_nuke_cooler")
+		.texture(`${global.namespace}:item/material/nuke_cooler`)
+
+	// 扫描零件
+	addItem("incomplete_notor_gizmo")
+		.texture(`${global.namespace}:item/material/incomplete_notor_gizmo`)
+
+	// 飞轮
+	addItem("incopmplete_flywheel")
+		.parentModel("create:block/flywheel/item")
+
+	addItem("incomplete_steam_engine")
+		.parentModel("create:block/steam_engine/item")
 	// 火箭框架(半成品)
 	for (let i = 1; i <= 4; i++) {
 		addItem(`incomplete_tier_${i.toString()}_rocket_frame`)
