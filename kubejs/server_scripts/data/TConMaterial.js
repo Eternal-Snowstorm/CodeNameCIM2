@@ -1,6 +1,6 @@
 ServerEvents.highPriorityData((event) => {
 	// 紫水晶
-	addTConMaterial(event, `${global.namespace}:amethyst`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:amethyst`, (builder) => {
 		builder.visibility(1, false)
 			.craftable(true)
 			.sortOrder(2)
@@ -28,21 +28,24 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 安山合金
-	addTConMaterial(event, `${global.namespace}:andesite_alloy`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:andesite_alloy`, (builder) => {
 		builder.visibility(2, false)
 			.craftable(true)
 			.sortOrder(2)
 			.head(250, 2, 6, "minecraft:iron")
-			.binding()
 			.handle(0.1, 0, 0, 0)
-			.limb(0, -0.2, 250, 0.1)
-			.grip(0, 0.1, 2)
+			.binding()
+			.limb(0.15, 0, 250, 0.2)
+			.grip(0.15, 0.1, 2)
 			.maille()
+			.arrowShaft()
 			.platingShield(226, 1.0, 1.0, 1.0)
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:stonebound", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:reach", 1)
 					.addTrait("tconstruct:armor", "tconstruct:melee_protection", 1)
+					.addTrait("tconstruct:ranged", "tconstruct:solid", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:solid", 1)
 			})
 			.addMaterialRecipes("create:andesite_alloy_block", (builder) => {
 				builder.needed(1)
@@ -60,7 +63,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 黄铜
-	addTConMaterial(event, `${global.namespace}:brass`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:brass`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -70,6 +73,7 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.1, 0.1, 600, 0.05)
 			.grip(0.2, 0.2, 1.4)
 			.maille()
+			.arrowShaft()
 			.platingBoots(1.2, 138, 0, 1.5)
 			.platingChestplate(0.2, 240, 0, 1.5)
 			.platingHelmet(0.2, 142, 0, 1.5)
@@ -79,6 +83,7 @@ ServerEvents.highPriorityData((event) => {
 				builder.addTrait("default", "tconstruct:harmonious", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:reach", 2)
 					.addTrait("tconstruct:ranged", "tconstruct:multishot", 2)
+					.addTrait("tconstruct:ammo", "tconstruct:insatiable", 1)
 			})
 			.addMaterialFluidRecipes("tconstruct:molten_brass", (builder) => {
 				builder.amount(90)
@@ -87,7 +92,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 工业铁
-	addTConMaterial(event, `${global.namespace}:industrial_iron`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:industrial_iron`, (builder) => {
 		builder.visibility(2, false)
 			.craftable(false)
 			.sortOrder(2)
@@ -97,6 +102,7 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0, 0.05, 250, 0.2)
 			.grip(0.1, 0.1, 0)
 			.maille()
+			.arrowShaft()
 			.platingHelmet(2, 165, 0, 1)
 			.platingChestplate(4, 240, 0, 2)
 			.platingLeggings(3, 225, 0, 2)
@@ -105,11 +111,12 @@ ServerEvents.highPriorityData((event) => {
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:magnetic", 1)
 					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:punch", 1)
 			})
 	})
 
 	// 铸铁
-	addTConMaterial(event, `${global.namespace}:cast_iron`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:cast_iron`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -118,6 +125,7 @@ ServerEvents.highPriorityData((event) => {
 			.handle(0.1, 0.1, 0, 0.05)
 			.limb(-0.2, -0.3, 120, -0.2)
 			.maille()
+			.arrowHead()
 			.platingHelmet(3, 180, 1, 0)
 			.platingChestplate(6, 285, 2, 0)
 			.platingLeggings(5, 240, 2, 0)
@@ -126,11 +134,12 @@ ServerEvents.highPriorityData((event) => {
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:magnetic", 1)
 					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:pierce", 1)
 			})
 	})
 
 	// 不锈钢
-	addTConMaterial(event, `${global.namespace}:stainless_steel`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:stainless_steel`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -140,20 +149,22 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.1, -0.3, 800, +0.2)
 			.grip(0.05, -0.05, 2.75)
 			.maille()
+			.arrowHead()
 			.platingHelmet(2, 380, 0, 2)
 			.platingChestplate(7, 490, 0, 2)
 			.platingLeggings(5, 475, 0, 2)
 			.platingBoots(2, 400, 0, 2)
 			.platingShield(550, 0, 2)
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:ductile", 1)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:tanned", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:tanned", 1)
+				builder.addTrait("default", "tconstruct:ductile", 2)
+					.addTrait("tconstruct:melee_harvest", "tconstruct:blockade", 1)
+					.addTrait("tconstruct:ranged", "tconstruct:ballista", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:impaling", 1)
 			})
 	})
 
 	// 戴斯
-	addTConMaterial(event, `${global.namespace}:desh`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:desh`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -163,16 +174,18 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.1, 0, 900, 0.05)
 			.grip(0.05, 0, 2.5)
 			.maille()
+			.arrowHead()
 			.platingShield(820, 0, 2)
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:reinforced", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:haste", 1)
 					.addTrait("tconstruct:armor", "tconstruct:speedy", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:valiant", 1)
 			})
 	})
 
 	// 紫金
-	addTConMaterial(event, `${global.namespace}:ostrum`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:ostrum`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -182,16 +195,18 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.2, 0, 1380, 0)
 			.grip(0.2, 0, 2.5)
 			.maille()
+			.arrowShaft()
 			.platingShield(1420, 0, 4)
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:heavy", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:flamestance", 1)
 					.addTrait("tconstruct:ranged", "tconstruct:flamestance", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:fiery", 1)
 			})
 	})
 
 	// 耐热金属
-	addTConMaterial(event, `${global.namespace}:calorite`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:calorite`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -201,6 +216,7 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0, -0.3, 1500, +0.4)
 			.grip(0, 0.15, 2.75)
 			.maille()
+			.arrowHead()
 			.platingHelmet(2, 1200, 0.2, 3)
 			.platingChestplate(7, 1420, 0.4, 3)
 			.platingLeggings(5, 1380, 0.3, 3)
@@ -211,11 +227,12 @@ ServerEvents.highPriorityData((event) => {
 					.addTrait("tconstruct:melee_harvest", "tconstruct:conducting", 1)
 					.addTrait("tconstruct:ranged", "tconstruct:conducting", 1)
 					.addTrait("tconstruct:armor", "tconstruct:fire_protection", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:keen", 1)
 			})
 	})
 
 	// 暗影钢
-	addTConMaterial(event, `${global.namespace}:shadow_steel`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:shadow_steel`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(true)
 			.sortOrder(7)
@@ -228,12 +245,12 @@ ServerEvents.highPriorityData((event) => {
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:raging", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:searing", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:trueshot", 1)
+					.addTrait("tconstruct:ranged", "tconstruct:power", 1)
 			})
 	})
 
 	// 光辉石
-	addTConMaterial(event, `${global.namespace}:refined_radiance`, (builder) => {
+	new TConMaterial(event, `${global.namespace}:refined_radiance`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(true)
 			.sortOrder(7)

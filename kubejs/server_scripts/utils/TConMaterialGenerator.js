@@ -1,10 +1,11 @@
 /** 
+ *  @constructor
+ * @type {MaterialRegistry}
  * @returns 注册匠魂材料
- * @type {TConMaterialRegistry}
  */
-function addTConMaterial(event, name, handler) {
+function TConMaterial(event, name, handler) {
 	/** 
-	 * @type {TConMaterialBuilder}
+	 * @type {MaterialBuilder}
 	 */
 	let builder = {
 		namespace: name.split(":", 2)[0],
@@ -86,6 +87,18 @@ function addTConMaterial(event, name, handler) {
 			this.stats.stats["tconstruct:bowstring"] = {}
 			return this
 		},
+		arrowHead() {
+			this.stats.stats["tconstruct:arrow_head"] = {}
+			return this
+		},
+		arrowShaft() {
+			this.stats.stats["tconstruct:arrow_shaft"] = {}
+			return this
+		},
+		fletching() {
+			this.stats.stats["tconstruct:fletching"] = {}
+			return this
+		},
 		platingHelmet(armor, durability, knockbackResistance, toughness) {
 			this.stats.stats["tconstruct:plating_helmet"] = {
 				armor: armor,
@@ -140,7 +153,7 @@ function addTConMaterial(event, name, handler) {
 		},
 		setTraits(handler) {
 			/** 
-			 * @type {TConTraitsBuilder} 
+			 * @type {TraitsBuilder} 
 			 */
 			let builder = {
 				traits: {
@@ -170,7 +183,7 @@ function addTConMaterial(event, name, handler) {
 		},
 		addMaterialRecipes(ingredient, handler) {
 			/**
-			 *  @type {TConMaterialRecipeBuilder} 
+			 *  @type {MaterialRecipeBuilder} 
 			 */
 			let builder = {
 				recipe: {
@@ -198,7 +211,7 @@ function addTConMaterial(event, name, handler) {
 			return this
 		},
 		addMaterialFluidRecipes(fluid, handler) {
-			/** @type {TConFluidRecipeBuilder} */
+			/** @type {MaterialFluidRecipeBuilder} */
 			let builder = {
 				recipe: {
 					type: "tconstruct:material_fluid",
@@ -231,7 +244,7 @@ function addTConMaterial(event, name, handler) {
 			return this
 		},
 		addMaterialMeltingRecipes(fluid, handler) {
-			/** @type {TConMaterialMeltingRecipeBuilder} */
+			/** @type {MaterialMeltingRecipeBuilder} */
 			let builder = {
 				recipe: {
 					type: "tconstruct:material_melting",
@@ -253,7 +266,7 @@ function addTConMaterial(event, name, handler) {
 			}
 			builder.recipe.input = `${this.namespace}:${this.id}`
 			handler(builder)
-			this.materialFluidRecipes.push(builder.recipe)
+			this.materialMeltingRecipes.push(builder.recipe)
 			return this
 		}
 	}
@@ -286,4 +299,7 @@ function addTConMaterial(event, name, handler) {
 			`${builder.namespace}:recipes/materials/material_melting/${builder.id}/${i}.json`
 		event.addJson(materialMeltingRecipesFile, builder.addMaterialMeltingRecipes[i])
 	}
+}
+TConMaterial.prototype.method = function () {
+	return this
 }

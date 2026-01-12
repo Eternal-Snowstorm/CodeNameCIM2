@@ -9,7 +9,9 @@
         "supported_stats": [
             "tconstruct:head",
             "tconstruct:handle",
-            "tconstruct:binding",
+            "tconstruct:limb",
+            "tconstruct:grip",
+            "tconstruct:bowstring",
             "tconstruct:repair_kit"
         ],
         "transformer": {
