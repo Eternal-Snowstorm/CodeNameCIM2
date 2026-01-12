@@ -231,11 +231,9 @@ StartupEvents.registry("fluid", (event) => {
 			molten.flowingTexture(`${global.namespace}:fluid/metal/flow`)
 			molten.stillTexture(`${global.namespace}:fluid/metal/still`)
 			molten.renderType("translucent")
+			molten.tag("forge:molten_materials")
 			molten.tag(`tconstruct:molten_${material.name}`)
-
-			if (material.metal) {
-				molten.tag(`forge:molten_${material.name}`)
-			}
+			molten.tag(`forge:molten_${material.name}`)
 
 			if (Platform.isClientEnvironment()) {
 				let file = `kubejs/assets/${global.namespace}/models/item/molten_${material.name}_bucket.json`
