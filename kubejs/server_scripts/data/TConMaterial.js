@@ -45,7 +45,7 @@ ServerEvents.highPriorityData((event) => {
 					.addTrait("tconstruct:melee_harvest", "tconstruct:reach", 1)
 					.addTrait("tconstruct:armor", "tconstruct:melee_protection", 1)
 					.addTrait("tconstruct:ranged", "tconstruct:solid", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:solid", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:insatiable", 1)
 			})
 			.addMaterialRecipes("create:andesite_alloy_block", (builder) => {
 				builder.needed(1)
@@ -73,7 +73,6 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.1, 0.1, 600, 0.05)
 			.grip(0.2, 0.2, 1.4)
 			.maille()
-			.arrowShaft()
 			.platingBoots(1.2, 138, 0, 1.5)
 			.platingChestplate(0.2, 240, 0, 1.5)
 			.platingHelmet(0.2, 142, 0, 1.5)
@@ -83,7 +82,6 @@ ServerEvents.highPriorityData((event) => {
 				builder.addTrait("default", "tconstruct:harmonious", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:reach", 2)
 					.addTrait("tconstruct:ranged", "tconstruct:multishot", 2)
-					.addTrait("tconstruct:ammo", "tconstruct:insatiable", 1)
 			})
 			.addMaterialFluidRecipes("tconstruct:molten_brass", (builder) => {
 				builder.amount(90)
@@ -102,7 +100,6 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0, 0.05, 250, 0.2)
 			.grip(0.1, 0.1, 0)
 			.maille()
-			.arrowShaft()
 			.platingHelmet(2, 165, 0, 1)
 			.platingChestplate(4, 240, 0, 2)
 			.platingLeggings(3, 225, 0, 2)
@@ -111,7 +108,6 @@ ServerEvents.highPriorityData((event) => {
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:magnetic", 1)
 					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:punch", 1)
 			})
 	})
 
@@ -195,13 +191,11 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.2, 0, 1380, 0)
 			.grip(0.2, 0, 2.5)
 			.maille()
-			.arrowShaft()
 			.platingShield(1420, 0, 4)
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:heavy", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:flamestance", 1)
 					.addTrait("tconstruct:ranged", "tconstruct:flamestance", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:fiery", 1)
 			})
 	})
 
