@@ -226,8 +226,8 @@ ServerEvents.highPriorityData((event) => {
 				builder.addTrait("default", "tconstruct:enhanced", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:conducting", 1)
 					.addTrait("tconstruct:ranged", "tconstruct:conducting", 1)
-					.addTrait("tconstruct:armor", "tconstruct:fire_protection", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:keen", 1)
+					.addTrait("tconstruct:armor", "tconstruct:fire_protection", 2)
+					.addTrait("tconstruct:ammo", "tconstruct:keen", 2)
 			})
 	})
 
