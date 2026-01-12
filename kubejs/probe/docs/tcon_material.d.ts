@@ -2,7 +2,7 @@ type MiningTier = "minecraft:wood" | "minecraft:stone" | "minecraft:iron" | "min
 
 type TraitStat = "tconstruct:armor" | "tconstruct:head" | "tconstruct:handle" | "tconstruct:binding" | "tconstruct:limb" | "tconstruct:grip" | "tconstruct:bowstring" | "tconstruct:melee_harvest" | "tconstruct:ranged"
 
-type MaterialRegistry = (event: Internal.DataPackEventJS_, name: string, handler: (builder: MaterialBuilder) => void) => void
+type TConMaterialRegistry = (event: Internal.DataPackEventJS_, name: string, handler: (builder: TConMaterialBuilder) => void) => void
 
 type FluidIngredient = Special.Fluid | `#${Special.FluidTag}`
 
@@ -28,7 +28,7 @@ interface MaterialMeltingRecipeBuilder {
 	temperature(temperature: number): this;
 }
 
-interface MaterialBuilder {
+interface TConMaterialBuilder {
 	craftable(craftable: boolean): this;
 	visibility(tier: number, hidden: boolean): this;
 	tier(tier: number): this;

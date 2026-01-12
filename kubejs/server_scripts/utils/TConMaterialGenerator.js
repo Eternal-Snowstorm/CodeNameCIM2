@@ -1,11 +1,11 @@
 /** 
  *  @constructor
- * @type {MaterialRegistry}
+ * @type {TConMaterialRegistry}
  * @returns 注册匠魂材料
  */
 function TConMaterial(event, name, handler) {
 	/** 
-	 * @type {MaterialBuilder}
+	 * @type {TConMaterialBuilder}
 	 */
 	let builder = {
 		namespace: name.split(":", 2)[0],
@@ -153,7 +153,7 @@ function TConMaterial(event, name, handler) {
 		},
 		setTraits(handler) {
 			/** 
-			 * @type {TraitsBuilder} 
+			 * @type {TConTraitsBuilder} 
 			 */
 			let builder = {
 				traits: {
@@ -183,7 +183,7 @@ function TConMaterial(event, name, handler) {
 		},
 		addMaterialRecipes(ingredient, handler) {
 			/**
-			 *  @type {MaterialRecipeBuilder} 
+			 *  @type {TConMaterialRecipeBuilder} 
 			 */
 			let builder = {
 				recipe: {
@@ -211,7 +211,7 @@ function TConMaterial(event, name, handler) {
 			return this
 		},
 		addMaterialFluidRecipes(fluid, handler) {
-			/** @type {MaterialFluidRecipeBuilder} */
+			/** @type {TConFluidRecipeBuilder} */
 			let builder = {
 				recipe: {
 					type: "tconstruct:material_fluid",
@@ -244,7 +244,7 @@ function TConMaterial(event, name, handler) {
 			return this
 		},
 		addMaterialMeltingRecipes(fluid, handler) {
-			/** @type {MaterialMeltingRecipeBuilder} */
+			/** @type {TConMaterialMeltingRecipeBuilder} */
 			let builder = {
 				recipe: {
 					type: "tconstruct:material_melting",
@@ -266,7 +266,7 @@ function TConMaterial(event, name, handler) {
 			}
 			builder.recipe.input = `${this.namespace}:${this.id}`
 			handler(builder)
-			this.materialMeltingRecipes.push(builder.recipe)
+			this.materialFluidRecipes.push(builder.recipe)
 			return this
 		}
 	}
