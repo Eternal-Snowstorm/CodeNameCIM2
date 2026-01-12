@@ -121,7 +121,6 @@ ServerEvents.highPriorityData((event) => {
 			.handle(0.1, 0.1, 0, 0.05)
 			.limb(-0.2, -0.3, 120, -0.2)
 			.maille()
-			.arrowHead()
 			.platingHelmet(3, 180, 1, 0)
 			.platingChestplate(6, 285, 2, 0)
 			.platingLeggings(5, 240, 2, 0)
@@ -130,7 +129,6 @@ ServerEvents.highPriorityData((event) => {
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:magnetic", 1)
 					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:pierce", 1)
 			})
 	})
 
@@ -145,7 +143,6 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.1, -0.3, 800, +0.2)
 			.grip(0.05, -0.05, 2.75)
 			.maille()
-			.arrowHead()
 			.platingHelmet(2, 380, 0, 2)
 			.platingChestplate(7, 490, 0, 2)
 			.platingLeggings(5, 475, 0, 2)
@@ -155,7 +152,6 @@ ServerEvents.highPriorityData((event) => {
 				builder.addTrait("default", "tconstruct:ductile", 2)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:blockade", 1)
 					.addTrait("tconstruct:ranged", "tconstruct:ballista", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:impaling", 1)
 			})
 	})
 
@@ -170,13 +166,11 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.1, 0, 900, 0.05)
 			.grip(0.05, 0, 2.5)
 			.maille()
-			.arrowHead()
 			.platingShield(820, 0, 2)
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:reinforced", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:haste", 1)
 					.addTrait("tconstruct:armor", "tconstruct:speedy", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:valiant", 1)
 			})
 	})
 
@@ -210,7 +204,6 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0, -0.3, 1500, +0.4)
 			.grip(0, 0.15, 2.75)
 			.maille()
-			.arrowHead()
 			.platingHelmet(2, 1200, 0.2, 3)
 			.platingChestplate(7, 1420, 0.4, 3)
 			.platingLeggings(5, 1380, 0.3, 3)
@@ -221,7 +214,6 @@ ServerEvents.highPriorityData((event) => {
 					.addTrait("tconstruct:melee_harvest", "tconstruct:conducting", 1)
 					.addTrait("tconstruct:ranged", "tconstruct:conducting", 1)
 					.addTrait("tconstruct:armor", "tconstruct:fire_protection", 2)
-					.addTrait("tconstruct:ammo", "tconstruct:keen", 2)
 			})
 	})
 
@@ -235,11 +227,14 @@ ServerEvents.highPriorityData((event) => {
 			.handle(0.1, -0.1, 0.2, -0.2)
 			.limb(0.35, 0.25, 1420, 0.4)
 			.grip(0.3, 0.1, 2.5)
+			.arrowHead()
 			.maille()
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:raging", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:searing", 1)
 					.addTrait("tconstruct:ranged", "tconstruct:power", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:impaling", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:pierce", 1)
 			})
 	})
 
@@ -253,11 +248,13 @@ ServerEvents.highPriorityData((event) => {
 			.handle(-0.3, 0.3, 0.25, 0.35)
 			.limb(-0.2, -0.3, 720, -0.1)
 			.grip(-0.2, -0.3, 1.5)
+			.arrowHead()
 			.maille()
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:crystalstrike", 1)
 					.addTrait("tconstruct:melee_harvest", "tconstruct:lightspeed", 1)
 					.addTrait("tconstruct:armor", "tconstruct:lightspeed", 1)
+					.addTrait("tconstruct:ammo", "tconstruct:keen", 2)
 			})
 	})
 })
