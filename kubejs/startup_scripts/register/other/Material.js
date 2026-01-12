@@ -60,6 +60,7 @@ new Material("steel", "iron")
 	.color(0xA7A7A7, 0x121C37)
 	.ingot()
 	.plate()
+	.block()
 	.isMetal()
 
 // 铸铁
