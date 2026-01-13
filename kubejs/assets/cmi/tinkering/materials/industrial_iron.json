@@ -8,17 +8,18 @@
 			"tconstruct:head",
 			"tconstruct:handle",
 			"tconstruct:binding",
-			"tconstruct:repair_kit",
-			"tconstruct:armor_plating",
+			"tconstruct:limb",
+			"tconstruct:grip",
+			"tconstruct:arrow_shaft",
 			"tconstruct:plating_helmet",
 			"tconstruct:plating_chestplate",
 			"tconstruct:plating_leggings",
 			"tconstruct:plating_boots",
 			"tconstruct:plating_shield",
+			"tconstruct:repair_kit",
+			"tconstruct:armor_plating",
 			"tconstruct:maille",
-			"tconstruct:armor_maille",
-			"tconstruct:limb",
-			"tconstruct:grip"
+			"tconstruct:armor_maille"
 		],
 		"transformer": {
 			"type": "tconstruct:recolor_sprite",
@@ -26,31 +27,31 @@
 				"type": "tconstruct:grey_to_color",
 				"palette": [
 					{
-						"color": "3F3E42",
+						"color": "FF1C1C1C",
 						"grey": 0
 					},
 					{
-						"color": "494848",
+						"color": "FF242424",
 						"grey": 63
 					},
 					{
-						"color": "444444",
+						"color": "FF313131",
 						"grey": 102
 					},
 					{
-						"color": "676161",
+						"color": "FF393939",
 						"grey": 140
 					},
 					{
-						"color": "757171",
+						"color": "FF4E4E4E",
 						"grey": 178
 					},
 					{
-						"color": "989797",
+						"color": "FF626262",
 						"grey": 216
 					},
 					{
-						"color": "444444",
+						"color": "FF777575",
 						"grey": 255
 					}
 				]
