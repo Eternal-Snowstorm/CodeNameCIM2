@@ -1,6 +1,33 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
+	// 改进型橡胶提取器
+	kubejs.shaped("mm:improved_rubber_extractor", [
+		"ABA",
+		"CDC",
+		"AAA"
+	], {
+		A: "tconstruct:scorched_brick",
+		B: "#create:mechanisms/thermal",
+		C: "#forge:glass",
+		D: "thermal:device_tree_extractor",
+	})
+
+	// 大型蒸汽锅炉
+	kubejs.shaped("mm:large_steam_boiler", [
+		"AAA",
+		"BCB",
+		"DDD"
+	], {
+		A: [
+			"#forge:ingots/bronze",
+			"#forge:plates/bronze"
+		],
+		B: "cmi:bronze_mechanism",
+		C: "mekanism:steam_boiler",
+		D: "#forge:storage_blocks/bronze"
+	})
+
 	// 粒子碰装机
 	kubejs.shaped("mm:particle_collision_machine", [
 		"AEA",

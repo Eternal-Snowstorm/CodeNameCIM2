@@ -75,11 +75,11 @@ function getBuilderFor(portType, config) {
  */
 
 /**
- * MultiBlockMachine 构造函数（无需 class）
+ * MultiBlockMachine 构造函数
  *
  * @param {string} machine
  * @constructor
- * @returns {MachineBuilder}
+ * @returns 
  */
 function MultiBlockMachine(machine) {
 	if (!(this instanceof MultiBlockMachine)) {
@@ -87,9 +87,6 @@ function MultiBlockMachine(machine) {
 	}
 
 	const CONTROLLER_PATH = `config/mm/controllers/${machine}.json`
-
-	JSIO.delete("config/mm/controllers")
-	JSIO.delete("config/mm/ports")
 
 	JsonIO.writeAndCreateDirectories(CONTROLLER_PATH, {
 		type: "mm:machine",
@@ -105,9 +102,9 @@ function MultiBlockMachine(machine) {
 	 *    T extends "fluid" ? FluidSlotsBuilder :
 	 *    EnergySlotBuilder
 	 * )) => void} handle
-	 * @returns {MachineBuilder}
+	 * @returns
 	 */
-	this.port = (portType, handle) => {
+	this.port = function (portType, handle) {
 		let portJson = {
 			id: `${machine}_${portType}`,
 			controllerIds: `mm:${machine}`,
@@ -175,4 +172,17 @@ new MultiBlockMachine("particle_collision_machine")
 		builder.capacity(10000000)
 			.maxExtract(10000000)
 			.maxReceive(10000000)
+	})
+
+// 改进型橡胶提取器
+new MultiBlockMachine("improved_rubber_extractor")
+	.port("fluid", (builder) => {
+		builder.rows(1)
+			.columns(1)
+			.slotCapacity(10000)
+	})
+	.port("energy", (builder) => {
+		builder.capacity(100000)
+			.maxExtract(100000)
+			.maxReceive(100000)
 	})

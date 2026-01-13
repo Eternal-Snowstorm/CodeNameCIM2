@@ -1,7 +1,7 @@
 MMEvents.createProcesses((event) => {
 	event.create("cmi:particle_collision_machine/overcharged_alloy_ingot")
 		.structureId("cmi:particle_collision_machine_structure")
-		.ticks(300)
+		.ticks(20 * 15)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {
@@ -36,7 +36,7 @@ MMEvents.createProcesses((event) => {
 
 	event.create("cmi:particle_collision_machine/singularity")
 		.structureId("cmi:particle_collision_machine_structure")
-		.ticks(300)
+		.ticks(20 * 15)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {

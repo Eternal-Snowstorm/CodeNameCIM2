@@ -84,6 +84,7 @@
   "cmi.ponder.fission_reactor.text_5": "在反应堆内部垂直放入裂变燃料组件",
   "cmi.ponder.fission_reactor.text_6": "再在其上方放置控制棒组件",
   "cmi.ponder.fission_reactor.text_7": "你也可以通过裂变反应堆逻辑适配器自动控制反应堆",
+  "cmi.ponder.improved_rubber_extractor.header": "Improved Rubber Extractor",
   "cmi.ponder.large_steam_boiler.header": "Large Steam Boiler",
   "cmi.ponder.large_steam_boiler.text_1": "Fuel Input",
   "cmi.ponder.large_steam_boiler.text_2": "Fluid Input",

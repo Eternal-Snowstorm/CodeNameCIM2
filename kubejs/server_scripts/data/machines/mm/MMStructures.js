@@ -220,4 +220,72 @@ MMEvents.createStructures((event) => {
 			block: "mm:particle_collision_machine_item_input"
 		})
 	})
+
+	// 改进型橡胶提取器
+	addMMStructure("improved_rubber_extractor", {
+		zh_cn: "改进型橡胶提取器",
+		en_us: "Improved Rubber Extractor"
+	}, (builder) => {
+		builder.layer([
+			"   ",
+			" A ",
+			"   "
+		])
+		builder.layer([
+			" A ",
+			"ABA",
+			" A "
+		])
+		builder.layer([
+			"   ",
+			" B ",
+			"   "
+		])
+		builder.layer([
+			"   ",
+			" B ",
+			"   "
+		])
+		builder.layer([
+			"   ",
+			" B ",
+			"   "
+		])
+		builder.layer([
+			"   ",
+			" B ",
+			"DDD"
+		])
+		builder.layer([
+			"   ",
+			"EFE",
+			"ECE"
+		])
+		builder.layer([
+			"EHE",
+			"EEE",
+			"EIE"
+		])
+		builder.key("A", {
+			block: "thermal:rubberwood_leaves"
+		})
+		builder.key("B", {
+			block: "thermal:rubberwood_log"
+		})
+		builder.key("D", {
+			block: "tconstruct:scorched_bricks_slab"
+		})
+		builder.key("E", {
+			block: "tconstruct:scorched_bricks"
+		})
+		builder.key("F", {
+			tag: "minecraft:dirt"
+		})
+		builder.key("H", {
+			block: "mm:improved_rubber_extractor_fluid_output"
+		})
+		builder.key("I", {
+			block: "mm:improved_rubber_extractor_energy_input"
+		})
+	})
 })

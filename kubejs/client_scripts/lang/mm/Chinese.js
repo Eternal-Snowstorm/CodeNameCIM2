@@ -10,7 +10,13 @@ addMMLanguage("large_steam_boiler", "大型蒸汽锅炉")
 addMMLanguage("cracker", "裂解机")
 addMMLanguage("steam_ore_processor", "蒸汽矿石处理机")
 addMMLanguage("particle_collision_machine", "粒子碰撞机")
+addMMLanguage("improved_rubber_extractor", "改进型橡胶提取器")
 
+/**
+ * 
+ * @param {string} key 
+ * @param {string} value 
+ */
 function addMMLanguage(key, value) {
 	langMap[`block.mm.${key}`] = value
 	console.log("控制器语言生成完成")

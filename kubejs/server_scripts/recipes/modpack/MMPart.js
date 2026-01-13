@@ -34,6 +34,13 @@ ServerEvents.recipes((event) => {
 		energyIO: true
 	})
 
+	// 改进型橡胶提取器
+	addMachinePart({
+		controllerID: "improved_rubber_extractor",
+		fluidIO: true,
+		energyIO: true
+	})
+
 	/**
 	 * @returns 快捷添加机器接口配方
 	 * @param {Object} options 配置对象
@@ -53,17 +60,17 @@ ServerEvents.recipes((event) => {
 				"B"
 			], {
 				A: FLUID_TANKS,
-				B: controllerID
-			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
+				B: `${CONTROLLER_NAMESPACE}:${controllerID}`
+			}).keepIngredient(`${CONTROLLER_NAMESPACE}:${controllerID}`)
 
 			// 流体输出接口
 			kubejs.shaped(`${CONTROLLER_NAMESPACE}:${controllerID}_fluid_output`, [
 				"A",
 				"B"
 			], {
-				A: controllerID,
+				A: `${CONTROLLER_NAMESPACE}:${controllerID}`,
 				B: FLUID_TANKS
-			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
+			}).keepIngredient(`${CONTROLLER_NAMESPACE}:${controllerID}`)
 		}
 
 		// 添加物品接口(输入+输出)
@@ -74,17 +81,17 @@ ServerEvents.recipes((event) => {
 				"B"
 			], {
 				A: ITEM_CONTAINER,
-				B: controllerID
-			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
+				B: `${CONTROLLER_NAMESPACE}:${controllerID}`
+			}).keepIngredient(`${CONTROLLER_NAMESPACE}:${controllerID}`)
 
 			// 物品输出接口
 			kubejs.shaped(`${CONTROLLER_NAMESPACE}:${controllerID}_item_output`, [
 				"A",
 				"B"
 			], {
-				A: controllerID,
+				A: `${CONTROLLER_NAMESPACE}:${controllerID}`,
 				B: ITEM_CONTAINER
-			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
+			}).keepIngredient(`${CONTROLLER_NAMESPACE}:${controllerID}`)
 		}
 
 		// 添加能量接口(输入+输出)
@@ -95,17 +102,17 @@ ServerEvents.recipes((event) => {
 				"B"
 			], {
 				A: BATTERIES,
-				B: controllerID
-			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
+				B: `${CONTROLLER_NAMESPACE}:${controllerID}`
+			}).keepIngredient(`${CONTROLLER_NAMESPACE}:${controllerID}`)
 
 			// 能量输出接口
 			kubejs.shaped(`${CONTROLLER_NAMESPACE}:${controllerID}_energy_output`, [
 				"A",
 				"B"
 			], {
-				A: controllerID,
+				A: `${CONTROLLER_NAMESPACE}:${controllerID}`,
 				B: BATTERIES
-			}).keepIngredient(CONTROLLER_NAMESPACE + controllerID)
+			}).keepIngredient(`${CONTROLLER_NAMESPACE}:${controllerID}`)
 		}
 	}
 })

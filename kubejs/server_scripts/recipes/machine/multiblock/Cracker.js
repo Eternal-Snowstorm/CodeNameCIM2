@@ -1,7 +1,7 @@
 MMEvents.createProcesses((event) => {
 	event.create("cmi:cracker/gasoline")
 		.structureId("cmi:cracker_structure")
-		.ticks(600)
+		.ticks(20 * 30)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {
@@ -36,7 +36,7 @@ MMEvents.createProcesses((event) => {
 
 	event.create("cmi:cracker/ethene")
 		.structureId("cmi:cracker_structure")
-		.ticks(600)
+		.ticks(20 * 30)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {
@@ -78,7 +78,7 @@ MMEvents.createProcesses((event) => {
 		})
 	event.create("cmi:cracker/glycerin")
 		.structureId("cmi:cracker_structure")
-		.ticks(600)
+		.ticks(20 * 30)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {

@@ -30,5 +30,12 @@
 	"block.mm.particle_collision_machine_fluid_input": "粒子碰撞机流体输入口",
 	"block.mm.particle_collision_machine_fluid_output": "粒子碰撞机流体输出口",
 	"block.mm.particle_collision_machine_energy_input": "粒子碰撞机能量输入口",
-	"block.mm.particle_collision_machine_energy_output": "粒子碰撞机能量输出口"
+	"block.mm.particle_collision_machine_energy_output": "粒子碰撞机能量输出口",
+	"block.mm.improved_rubber_extractor": "改进型橡胶提取器",
+	"block.mm.improved_rubber_extractor_item_input": "改进型橡胶提取器物品输入口",
+	"block.mm.improved_rubber_extractor_item_output": "改进型橡胶提取器物品输出口",
+	"block.mm.improved_rubber_extractor_fluid_input": "改进型橡胶提取器流体输入口",
+	"block.mm.improved_rubber_extractor_fluid_output": "改进型橡胶提取器流体输出口",
+	"block.mm.improved_rubber_extractor_energy_input": "改进型橡胶提取器能量输入口",
+	"block.mm.improved_rubber_extractor_energy_output": "改进型橡胶提取器能量输出口"
 }

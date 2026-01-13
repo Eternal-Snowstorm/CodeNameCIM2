@@ -1,7 +1,7 @@
 MMEvents.createProcesses((event) => {
 	event.create("cmi:large_steam_boiler/steam")
 		.structureId("cmi:large_steam_boiler_structure")
-		.ticks(200)
+		.ticks(20 * 10)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {
@@ -29,7 +29,7 @@ MMEvents.createProcesses((event) => {
 
 	event.create("cmi:large_steam_boiler/steam_coal")
 		.structureId("cmi:large_steam_boiler_structure")
-		.ticks(200)
+		.ticks(20 * 10)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {
@@ -57,7 +57,7 @@ MMEvents.createProcesses((event) => {
 
 	event.create("cmi:large_steam_boiler/steam_charcoal")
 		.structureId("cmi:large_steam_boiler_structure")
-		.ticks(200)
+		.ticks(20 * 10)
 		.input({
 			type: "mm:input/consume",
 			ingredient: {
