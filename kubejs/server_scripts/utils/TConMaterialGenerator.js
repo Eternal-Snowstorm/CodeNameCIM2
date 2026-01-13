@@ -1,7 +1,9 @@
-/** 
- *  @constructor
- * @type {TConMaterialRegistry}
- * @returns 注册匠魂材料
+/**
+ * @constructor
+ * @param {Internal.DataPackEventJS_} event
+ * @param {string} name
+ * @param {(builder: TConMaterialBuilder) => void} handler
+ * @returns
  */
 function TConMaterial(event, name, handler) {
 	/** 
@@ -299,7 +301,4 @@ function TConMaterial(event, name, handler) {
 			`${builder.namespace}:recipes/materials/material_melting/${builder.id}/${i}.json`
 		event.addJson(materialMeltingRecipesFile, builder.addMaterialMeltingRecipes[i])
 	}
-}
-TConMaterial.prototype.method = function () {
-	return this
 }
