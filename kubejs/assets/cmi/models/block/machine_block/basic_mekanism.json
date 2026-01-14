@@ -1,5 +1,5 @@
 {
-	"parent": "cmi:custom/mm",
+	"parent":  "cmi:block/machine_block/mekanism",
 	"textures": {
 		"all": "cmi:block/machine/ue/basic_mekanism_machine",
 		"particle": "mekanism:block/steel_casing",

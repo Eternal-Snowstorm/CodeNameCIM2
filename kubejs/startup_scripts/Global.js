@@ -10,19 +10,19 @@ global.namespace = "cmi"
 let modPackState = "Beta"
 
 // 是否为热修复版本
-let isHotfix = false
+let isHotfix = true
 
 // Modpack数字版本号
-let modpackNumberVersion = "2.5.0"
+let modpackNumberVersion = "2.4.2"
 
 /* 
  * Modpack总版本
  * 根据是否为热修复版本, 生成不同的版本号并保存到global并被读取
  */
 if (isHotfix) {
-    global.modPackMainVersion = `§0CMI ${modPackState}-${modpackNumberVersion}-hf`
+	global.modPackMainVersion = `§0CMI ${modPackState}-${modpackNumberVersion}-hf`
 } else {
-    global.modPackMainVersion = `§0CMI ${modPackState}-${modpackNumberVersion}`
+	global.modPackMainVersion = `§0CMI ${modPackState}-${modpackNumberVersion}`
 }
 
 // 输出查看
