@@ -111,9 +111,10 @@ ItemEvents.tooltip((event) => {
 					// 转成翻译键
 					let dimKey = "dimension." + dimId.replace(":", ".")
 					let dim = Component.translatable(dimKey)
-					let tranKey =
-						Component.translatable("tooltip.cmi.stored_location", dim, x, y, z)
-							.red()
+					let tranKey = Component.translatable(
+						"tooltip.cmi.stored_location",
+						dim, x, y, z
+					).red()
 
 					tooltip.add(tranKey)
 				}
