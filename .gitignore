@@ -115,3 +115,4 @@ config/ftbquests/qusets/chapters/control*
 !config/naturescompass-common.toml
 !config/oei
 !config/railways-client.toml
+!config/tconstruct-common.toml

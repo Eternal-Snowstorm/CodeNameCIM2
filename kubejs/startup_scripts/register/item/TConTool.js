@@ -51,4 +51,5 @@ StartupEvents.registry("item", (event) => {
 		.tag(global.TinkerItemTags.NUGGETS_NETHERITE)
 		.tag(global.TinkerItemTags.NUGGETS_NETHERITE_SCRAP)
 		.tag(global.TinkerItemTags.INGOTS_NETHERITE_SCRAP)
+		.tag(global.TinkerItemTags.BONUS_SLOTS)
 })

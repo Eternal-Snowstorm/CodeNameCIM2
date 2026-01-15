@@ -165,13 +165,12 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:railway_mechanism", [
 		"cmi:dense_sturdy_sheet"
 	], [
-		vintageimprovements.curving(Inc.REDSTONE, Inc.REDSTONE)
-			.head("vintageimprovements:convex_curving_head"),
-		create.deploying(Inc.REDSTONE, [Inc.REDSTONE, "#vintageimprovements:small_springs/brass"]),
-		create.deploying(Inc.REDSTONE, [Inc.REDSTONE, "#forge:plates/brass"]),
-		create.cutting(Inc.REDSTONE, Inc.REDSTONE),
-		create.deploying(Inc.REDSTONE, [Inc.REDSTONE, "cmi:mechanical_mechanism_part"])
-	]).transitionalItem(Inc.REDSTONE).loops(1)
+		create.pressing(Inc.RAILWAY, [Inc.RAILWAY]),
+		create.deploying(Inc.RAILWAY, [Inc.RAILWAY, "#vintageimprovements:small_springs/brass"]),
+		create.deploying(Inc.RAILWAY, [Inc.RAILWAY, "#forge:plates/brass"]),
+		create.cutting(Inc.RAILWAY, Inc.RAILWAY),
+		create.deploying(Inc.RAILWAY, [Inc.RAILWAY, "cmi:mechanical_mechanism_part"])
+	]).transitionalItem(Inc.RAILWAY).loops(1)
 
 	// 末影
 	create.sequenced_assembly("cmi:ender_mechanism", [

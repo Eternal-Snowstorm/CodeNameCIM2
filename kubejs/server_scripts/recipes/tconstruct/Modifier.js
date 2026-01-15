@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 设置槽位
 	 *
-	 * @param {"ability"|"defense"|"upgrades"|"slotless"|"salvage"} type 
+	 * @param {"abilities"|"ability"|"defense"|"upgrades"|"slotless"|"salvage"} type 
 	 * @param {number} count
 	 * @returns {ModifierRecipeBuilder}
 	 */
@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
 	 * @returns 
 	 */
 	ModifierRecipeBuilder.prototype.build = function (id) {
-		if (typeof id === undefined) {
+		if (typeof id === "undefined") {
 			return event.custom(this.recipe)
 		}
 		return event.custom(this.recipe)

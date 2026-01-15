@@ -37,11 +37,11 @@ ServerEvents.highPriorityData((event) => {
 			/**
 			 * 声明所需变量
 			 * 
-			 * @param {Internal.Ingredient_} tag 当前正在遍历的物品tag
-			 * @param {Internal.Set<string>} ids tag下所有物品id
-			 * @param {String} currentNamespace 当前物品的命名空间
-			 * @param {String} outputId 所输出的物品id
-			 * @param {Number} priorityValue 当前命名空间的优先级
+			 * @type {Internal.Ingredient_} tag 当前正在遍历的物品tag
+			 * @type {Internal.Set<string>} ids tag下所有物品id
+			 * @type {String} currentNamespace 当前物品的命名空间
+			 * @type {String} outputId 所输出的物品id
+			 * @type {Number} priorityValue 当前命名空间的优先级
 			 */
 			let tag = `#forge:${type}s/${material}`
 			let ids = Ingredient.of(tag).getItemIds()
