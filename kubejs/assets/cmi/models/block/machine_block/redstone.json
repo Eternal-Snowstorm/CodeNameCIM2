@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cmi:block/machine/ue/redstone_machine",
-		"particle": "cmi:block/machine/ue/redstone_machine"
+		"particle": "minecraft:block/smooth_stone"
 	},
 	"elements": [
 		{

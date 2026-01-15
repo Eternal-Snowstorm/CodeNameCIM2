@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cmi:block/machine/ue/pig_iron_machine",
-		"particle": "cmi:block/machine/ue/pig_iron_machine"
+		"particle": "tconstruct:block/storage/pig_iron/top"
 	},
 	"elements": [
 		{

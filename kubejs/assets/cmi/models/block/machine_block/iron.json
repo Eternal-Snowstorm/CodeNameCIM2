@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cmi:block/machine/ue/iron_machine",
-		"particle": "cmi:block/machine/ue/iron_machine"
+		"particle": "create:block/industrial_iron_block"
 	},
 	"elements": [
 		{

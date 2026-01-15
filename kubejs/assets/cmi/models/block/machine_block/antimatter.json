@@ -3,7 +3,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cmi:block/machine/ue/antimatter_machine",
-		"particle": "cmi:block/machine/ue/antimatter_machine"
+		"particle": "mekanism:block/block_refined_obsidian"
 	},
 	"elements": [
 		{

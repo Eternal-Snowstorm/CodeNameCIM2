@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cmi:block/machine/ue/colorful_machine",
-		"particle": "cmi:block/machine/ue/colorful_machine"
+		"particle": "minecraft:block/spruce_planks"
 	},
 	"elements": [
 		{
