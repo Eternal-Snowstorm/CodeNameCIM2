@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cmi:block/machine/ue/stone_machine",
-		"particle": "cmi:block/machine/ue/stone_machine"
+		"particle": "tconstruct:block/smeltery/seared/paver"
 	},
 	"elements": [
 		{

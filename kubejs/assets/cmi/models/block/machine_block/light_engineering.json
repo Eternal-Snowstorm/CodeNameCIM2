@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cmi:block/machine/ue/light_engineering_machine",
-		"particle": "cmi:block/machine/ue/light_engineering_machine"
+		"particle": "immersiveengineering:block/metal_decoration/steel_scaffolding_top_wooden_top"
 	},
 	"elements": [
 		{

@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cmi:block/machine/ue/air_tight_machine",
-		"particle": "cmi:block/machine/ue/air_tight_machine"
+		"particle": "mekanism:block/thermal_evaporation_block_top"
 	},
 	"elements": [
 		{

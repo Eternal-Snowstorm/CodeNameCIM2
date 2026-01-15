@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cmi:block/machine/ue/computing_machine",
-		"particle": "cmi:block/machine/ue/computing_machine"
+		"particle": "cmi:block/casing/ae2/computing_top"
 	},
 	"elements": [
 		{
