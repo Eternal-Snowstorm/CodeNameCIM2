@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 设置工具标签
 	 *
-	 * @param {string} tag
+	 * @param {Internal.Ingredient_} tag
 	 * @returns {ModifierRecipeBuilder}
 	 */
 	ModifierRecipeBuilder.prototype.tools = function (tag) {
@@ -92,12 +92,16 @@ ServerEvents.recipes((event) => {
 	}
 
 	/**
-	 * 构建配方
-	 *
+	 * 
+	 * @param {ResourceLocation_} [id]
 	 * @returns 
 	 */
-	ModifierRecipeBuilder.prototype.build = function () {
+	ModifierRecipeBuilder.prototype.build = function (id) {
+		if (typeof id === undefined) {
+			return event.custom(this.recipe)
+		}
 		return event.custom(this.recipe)
+			.id(id)
 	}
 	// endregion
 
@@ -115,8 +119,7 @@ ServerEvents.recipes((event) => {
 			"#forge:gems/charged_amethyst"
 		])
 		.level(1)
-		.build()
-		.id("nebula_tinker:tconstruct/modifier/ability/acupoint")
+		.build("nebula_tinker:tconstruct/modifier/ability/acupoint")
 
 	new ModifierRecipeBuilder("nebula_tinker:frenzy")
 		.allowCrystal()
@@ -131,8 +134,7 @@ ServerEvents.recipes((event) => {
 			"#forge:gems/charged_amethyst"
 		])
 		.level(1)
-		.build()
-		.id("nebula_tinker:tconstruct/modifier/ability/frenzy")
+		.build("nebula_tinker:tconstruct/modifier/ability/frenzy")
 
 	new ModifierRecipeBuilder("nebula_tinker:causal_truncation")
 		.allowCrystal()
@@ -147,7 +149,6 @@ ServerEvents.recipes((event) => {
 			"#forge:slimeball/blood"
 		])
 		.level(1)
-		.build()
-		.id("nebula_tinker:tconstruct/modifier/ability/causal_truncation")
+		.build("nebula_tinker:tconstruct/modifier/ability/causal_truncation")
 	// endregion
 })
