@@ -106,6 +106,7 @@ ServerEvents.recipes((event) => {
 	// endregion
 
 	// region add Recipes
+	// 死穴
 	new ModifierRecipeBuilder("nebula_tinker:acupoint")
 		.allowCrystal()
 		.checkTraitLevel()
@@ -121,6 +122,7 @@ ServerEvents.recipes((event) => {
 		.level(1)
 		.build("nebula_tinker:tconstruct/modifier/ability/acupoint")
 
+	// 狂乱
 	new ModifierRecipeBuilder("nebula_tinker:frenzy")
 		.allowCrystal()
 		.checkTraitLevel()
@@ -136,6 +138,7 @@ ServerEvents.recipes((event) => {
 		.level(1)
 		.build("nebula_tinker:tconstruct/modifier/ability/frenzy")
 
+	// 因果截断
 	new ModifierRecipeBuilder("nebula_tinker:causal_truncation")
 		.allowCrystal()
 		.checkTraitLevel()
