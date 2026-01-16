@@ -7,16 +7,17 @@ ServerEvents.recipes((event) => {
 	 * @constructor
 	 * @param {string} modifier Modifier ID
 	 * @param {number} [level] Modifier 等级
+	 * @returns {Internal.JsonElement_}
 	 */
 	function ModifierRecipeBuilder(modifier, level) {
 		if (typeof level === "undefined") {
-			this.recipe = {
+			return this.recipe = {
 				type: "tconstruct:modifier",
 				level: 1,
 				result: modifier
 			}
 		}
-		this.recipe = {
+		return this.recipe = {
 			type: "tconstruct:modifier",
 			level: level,
 			result: modifier
