@@ -5,14 +5,20 @@ ServerEvents.recipes((event) => {
 	 * TConstruct Modifier 配方构造器
 	 *
 	 * @constructor
-	 * @param {string} modifier 修饰符ID
+	 * @param {string} modifier Modifier ID
+	 * @param {number} [level] Modifier 等级
 	 */
-	function ModifierRecipeBuilder(modifier) {
-		/**
-		 * @type {Internal.JsonObject}
-		 */
+	function ModifierRecipeBuilder(modifier, level) {
+		if (typeof level === "undefined") {
+			this.recipe = {
+				type: "tconstruct:modifier",
+				level: 1,
+				result: modifier
+			}
+		}
 		this.recipe = {
 			type: "tconstruct:modifier",
+			level: level,
 			result: modifier
 		}
 	}
@@ -81,17 +87,6 @@ ServerEvents.recipes((event) => {
 	}
 
 	/**
-	 * 设置等级
-	 *
-	 * @param {number} level
-	 * @returns {ModifierRecipeBuilder}
-	 */
-	ModifierRecipeBuilder.prototype.level = function (level) {
-		this.recipe.level = level
-		return this
-	}
-
-	/**
 	 * 
 	 * @param {ResourceLocation_} [id]
 	 * @returns 
@@ -107,7 +102,7 @@ ServerEvents.recipes((event) => {
 
 	// region add Recipes
 	// 死穴
-	new ModifierRecipeBuilder("nebula_tinker:acupoint")
+	new ModifierRecipeBuilder("nebula_tinker:acupoint", 1)
 		.allowCrystal()
 		.checkTraitLevel()
 		.tools("#tconstruct:modifiable/held")
@@ -119,11 +114,10 @@ ServerEvents.recipes((event) => {
 			"#forge:gems/charged_amethyst",
 			"#forge:gems/charged_amethyst"
 		])
-		.level(1)
 		.build("nebula_tinker:tconstruct/modifier/ability/acupoint")
 
 	// 狂乱
-	new ModifierRecipeBuilder("nebula_tinker:frenzy")
+	new ModifierRecipeBuilder("nebula_tinker:frenzy", 1)
 		.allowCrystal()
 		.checkTraitLevel()
 		.tools("#tconstruct:modifiable/held")
@@ -135,11 +129,10 @@ ServerEvents.recipes((event) => {
 			"#forge:gems/charged_amethyst",
 			"#forge:gems/charged_amethyst"
 		])
-		.level(1)
 		.build("nebula_tinker:tconstruct/modifier/ability/frenzy")
 
 	// 因果截断
-	new ModifierRecipeBuilder("nebula_tinker:causal_truncation")
+	new ModifierRecipeBuilder("nebula_tinker:causal_truncation", 1)
 		.allowCrystal()
 		.checkTraitLevel()
 		.tools("#tconstruct:modifiable/melee/primary")
@@ -151,7 +144,6 @@ ServerEvents.recipes((event) => {
 			"#forge:slimeball/blood",
 			"#forge:slimeball/blood"
 		])
-		.level(1)
 		.build("nebula_tinker:tconstruct/modifier/ability/causal_truncation")
 	// endregion
 })
