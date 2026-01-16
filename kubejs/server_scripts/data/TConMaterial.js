@@ -70,7 +70,6 @@ ServerEvents.highPriorityData((event) => {
 			.head(780, 2.6, 2.5, "minecraft:diamond")
 			.binding()
 			.handle(0.2, 0.0, 0.2, 0.1)
-			.limb(0.1, 0.1, 600, 0.05)
 			.grip(0.2, 0.2, 1.4)
 			.maille()
 			.platingBoots(1.2, 138, 0, 1.5)
@@ -119,7 +118,7 @@ ServerEvents.highPriorityData((event) => {
 			.head(265, 2.8, 8, "minecraft:iron")
 			.binding()
 			.handle(0.1, 0.1, 0, 0.05)
-			.limb(-0.2, -0.3, 120, -0.2)
+			.grip(-0.05, 0.05, 0)
 			.maille()
 			.platingHelmet(3, 180, 1, 0)
 			.platingChestplate(6, 285, 2, 0)
@@ -129,6 +128,8 @@ ServerEvents.highPriorityData((event) => {
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:magnetic", 1)
 					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
+					.addTrait("tconstruct:ranged", "tconstruct:multishot", 1)
+					.addTrait("tconstruct:ranged", "nebula_tinker:rapid_shot", 1)
 			})
 	})
 
