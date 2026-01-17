@@ -127,8 +127,7 @@ ServerEvents.highPriorityData((event) => {
 			.setTraits((builder) => {
 				builder.addTrait("default", "tconstruct:magnetic", 1)
 					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:multishot", 1)
-					.addTrait("tconstruct:ranged", "nebula_tinker:converge", 1)
+					.addTrait("tconstruct:ranged", "tconstruct:maintained", 1)
 			})
 	})
 
