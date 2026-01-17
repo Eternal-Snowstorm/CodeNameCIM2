@@ -138,7 +138,8 @@ ServerEvents.recipes((event) => {
 		.checkTraitLevel()
 		.tools("#tconstruct:modifiable/melee/primary")
 		.slots("abilities", 1)
-		.inputs([
+		.input
+		s([
 			"#forge:plates/uranium",
 			"#create:mechanisms/nether",
 			"#forge:plates/uranium",
