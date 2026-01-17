@@ -104,8 +104,8 @@ ServerEvents.recipes((event) => {
 	// region add Recipes
 	// 死穴
 	new ModifierRecipeBuilder("nebula_tinker:acupoint", 1)
-		.allowCrystal()
-		.checkTraitLevel()
+		.allowCrystal(true)
+		.checkTraitLevel(true)
 		.tools("#tconstruct:modifiable/held")
 		.slots("abilities", 1)
 		.inputs([
@@ -119,8 +119,8 @@ ServerEvents.recipes((event) => {
 
 	// 狂乱
 	new ModifierRecipeBuilder("nebula_tinker:frenzy", 1)
-		.allowCrystal()
-		.checkTraitLevel()
+		.allowCrystal(true)
+		.checkTraitLevel(true)
 		.tools("#tconstruct:modifiable/held")
 		.slots("abilities", 1)
 		.inputs([
@@ -134,8 +134,8 @@ ServerEvents.recipes((event) => {
 
 	// 因果截断
 	new ModifierRecipeBuilder("nebula_tinker:causal_truncation", 1)
-		.allowCrystal()
-		.checkTraitLevel()
+		.allowCrystal(true)
+		.checkTraitLevel(true)
 		.tools("#tconstruct:modifiable/melee/primary")
 		.slots("abilities", 1)
 		.input
