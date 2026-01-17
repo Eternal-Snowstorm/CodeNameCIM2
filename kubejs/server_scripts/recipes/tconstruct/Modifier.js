@@ -11,17 +11,19 @@ ServerEvents.recipes((event) => {
 	 */
 	function ModifierRecipeBuilder(modifier, level) {
 		if (typeof level === "undefined") {
-			return this.recipe = {
+			this.recipe = {
 				type: "tconstruct:modifier",
 				level: 1,
 				result: modifier
 			}
+			return this
 		}
-		return this.recipe = {
+		this.recipe = {
 			type: "tconstruct:modifier",
 			level: level,
 			result: modifier
 		}
+		return this
 	}
 
 	/**
@@ -138,8 +140,7 @@ ServerEvents.recipes((event) => {
 		.checkTraitLevel(true)
 		.tools("#tconstruct:modifiable/melee/primary")
 		.slots("abilities", 1)
-		.input
-		s([
+		.inputs([
 			"#forge:plates/uranium",
 			"#create:mechanisms/nether",
 			"#forge:plates/uranium",
