@@ -154,10 +154,10 @@ ServerEvents.recipes((event) => {
 		.temperature(36)
 
 	// 焦黑熔石
-	tconstruct.melting(Fluid.of("tconstruct:seared_stone", 250))
+	tconstruct.melting(Fluid.of("minecraft:lava", 50))
 		.ingredient("#forge:stone")
-		.time(20 * 10)
-		.temperature(1000)
+		.time(20 * 20)
+		.temperature(1346)
 
 	// 金铸模
 	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 90))

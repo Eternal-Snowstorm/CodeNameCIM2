@@ -89,6 +89,18 @@ ServerEvents.recipes((event) => {
 		.fluid(Fluid.of("cmi:molten_andesite_alloy", 30))
 		.cooling_time(35)
 
+	// 石板
+	tconstruct.casting_table("cmi:stone_plate")
+		.cast("#tconstruct:casts/multi_use/plate")
+		.fluid(Fluid.of("minecraft:lava", 100))
+		.cooling_time(20 * 2)
+
+	tconstruct.casting_table("cmi:stone_plate")
+		.cast("#tconstruct:casts/single_use/plate")
+		.fluid(Fluid.of("minecraft:lava", 100))
+		.cooling_time(20 * 2)
+		.cast_consumed(true)
+
 	let barTypes = [
 		"brass",
 		"copper",
