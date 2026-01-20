@@ -1,6 +1,6 @@
 {
 	"type": "tconstruct:item_part_builder",
-	"pattern": "tconstruct:plate",
+	"pattern": "cmi:mechanism",
 	"pattern_item": {
 		"item": "minecraft:sand"
 	},
