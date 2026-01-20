@@ -72,7 +72,7 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/incomplete_notor_gizmo`)
 
 	// 飞轮
-	addItem("incopmplete_flywheel")
+	addItem("incomplete_flywheel")
 		.parentModel("create:block/flywheel/item")
 
 	addItem("incomplete_steam_engine")
