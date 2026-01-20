@@ -143,7 +143,8 @@ ServerEvents.recipes((event) => {
 		"advanced_ae:quantum_alloy_plate",
 		"ad_astra:rocket_nose_cone",
 		"ad_astra:rocket_fin",
-		"immersiveengineering:crafting/redstone_acid"
+		"immersiveengineering:crafting/redstone_acid",
+		"sophisticatedbackpacks:stack_upgrade_tier_1_from_starter"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

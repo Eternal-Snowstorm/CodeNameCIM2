@@ -61,14 +61,6 @@ ServerEvents.recipes((event) => {
 		C: "cmi:wooden_mechanism"
 	}).id("functionalstorage:upgrade_template")
 
-	// 紫水晶青铜
-	tconstruct.casting_table("functionalstorage:copper_upgrade")
-		.cast(TEMPLATE)
-		.cast_consumed(true)
-		.fluid(Fluid.of("tconstruct:molten_amethyst_bronze", 720))
-		.cooling_time(20 * 3)
-		.id("functionalstorage:copper_upgrade")
-
 	// 生铁
 	tconstruct.casting_table("functionalstorage:iron_downgrade")
 		.cast(TEMPLATE)
@@ -76,6 +68,14 @@ ServerEvents.recipes((event) => {
 		.fluid(Fluid.of("tconstruct:molten_pig_iron", 180))
 		.cooling_time(20 * 3)
 		.id("functionalstorage:iron_downgrade")
+
+	// 紫水晶青铜
+	tconstruct.casting_table("functionalstorage:copper_upgrade")
+		.cast(TEMPLATE)
+		.cast_consumed(true)
+		.fluid(Fluid.of("tconstruct:molten_amethyst_bronze", 720))
+		.cooling_time(20 * 3)
+		.id("functionalstorage:copper_upgrade")
 
 	// 玫瑰金
 	tconstruct.casting_table("functionalstorage:gold_upgrade")

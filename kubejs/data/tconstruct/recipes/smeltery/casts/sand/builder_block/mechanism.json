@@ -4,5 +4,8 @@
 	"pattern_item": {
 		"item": "minecraft:sand"
 	},
-	"result": "cmi:mechanism_sand_cast"
+	"result": {
+		"count": 4,
+		"item": "cmi:mechanism_sand_cast"
+	}
 }

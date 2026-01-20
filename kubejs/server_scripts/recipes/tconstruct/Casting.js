@@ -3,9 +3,7 @@ ServerEvents.recipes((event) => {
 
 	let castingMechanismMaterials = [
 		["tconstruct:molten_iron", "cmi:iron_mechanism_basement", 1535],
-		//["tconstruct:molten_gold", "cmi:incomplete_gold_mechanism"],
 		["tconstruct:molten_copper", "cmi:copper_mechanism_basement", 1085],
-		//["cmi:molten_andesite_alloy", "cmi:incomplete_andesite_mechanism"]
 		["cmi:molten_andesite_alloy", "cmi:andesite_mechanism_basement", 760]
 	]
 	castingMechanismMaterials.forEach(([input, output, temp]) => {
@@ -95,12 +93,6 @@ ServerEvents.recipes((event) => {
 		.fluid(Fluid.of("minecraft:lava", 100))
 		.cooling_time(20 * 2)
 
-	tconstruct.casting_table("cmi:stone_plate")
-		.cast("#tconstruct:casts/single_use/plate")
-		.fluid(Fluid.of("minecraft:lava", 100))
-		.cooling_time(20 * 2)
-		.cast_consumed(true)
-
 	let barTypes = [
 		"brass",
 		"copper",
@@ -112,4 +104,11 @@ ServerEvents.recipes((event) => {
 			.fluid(Fluid.of(IngrUtils.getFirstFluidId(`tconstruct:molten_${type}`), 30))
 			.cooling_time(35)
 	})
+
+	tconstruct.casting_table("cmi:stone_plate")
+		.cast("#tconstruct:casts/single_use/plate")
+		.fluid(Fluid.of("minecraft:lava", 100))
+		.cooling_time(20 * 2)
+		.cast_consumed(true)
+
 })
