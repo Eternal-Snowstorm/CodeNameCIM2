@@ -238,7 +238,7 @@ ServerEvents.recipes((event) => {
 		"cmi:air_tight_mechanism_basement"
 	], [
 		create.deploying(Inc.AIR, [Inc.AIR, "#forge:plates/polyolefin"]),
-		create.deploying(Inc.AIR, [Inc.AIR, "#forge:nuggets/platinum"]),
+		create.deploying(Inc.AIR, [Inc.AIR, "#forge:nuggets/silver"]),
 		create.deploying(Inc.AIR, [Inc.AIR, "cmi:mekanism_mechanism_part"])
 	]).transitionalItem(Inc.AIR).loops(1)
 
