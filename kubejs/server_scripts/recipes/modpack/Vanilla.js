@@ -130,18 +130,6 @@ ServerEvents.recipes((event) => {
 		B: "cmi:torn_parchment_b"
 	}).noMirror().id("cmi:minecraft/shaped/love_manual_only")
 
-	// 安山岩粉
-	kubejs.shapeless("cmi:andesite_dust", [
-		"#create:stone_types/andesite",
-		"#forge:hammer"
-	]).damageIngredient("#forge:hammer", 1)
-
-	// 石板
-	// kubejs.shapeless("cmi:stone_plate", [
-	// 	"2x #forge:stone",
-	// 	"#forge:hammer"
-	// ]).damageIngredient("#forge:hammer", 1)
-
 	// 草绳
 	kubejs.shapeless("cmi:grass_string", [
 		"3x cmi:grass_fiber"

@@ -144,7 +144,10 @@ ServerEvents.recipes((event) => {
 		"ad_astra:rocket_nose_cone",
 		"ad_astra:rocket_fin",
 		"immersiveengineering:crafting/redstone_acid",
-		"sophisticatedbackpacks:stack_upgrade_tier_1_from_starter"
+		"sophisticatedbackpacks:stack_upgrade_tier_1_from_starter",
+		"farmersdelight:cutting/deepslate",
+		"farmersdelight:cutting/stone",
+		"tconstruct:smeltery/seared/grout_multiple"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

@@ -525,8 +525,4 @@ ServerEvents.tags("item", (event) => {
 		event.get(`forge:raw_nuggets`)
 			.add(`thermal_extra:${metal}_ore_chunk`)
 	})
-
-	// 龙族暂时修复
-	event.get("tconstruct:modifiable/bonus_slots")
-		.add("cmi:paxel")
 })

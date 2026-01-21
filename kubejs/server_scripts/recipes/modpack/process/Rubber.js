@@ -1,30 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { tconstruct, farmersdelight, create } = event.recipes
 
-	// 植物胶乳
-	create.compacting([
-		Fluid.of("thermal:latex", 50),
-		"farmersdelight:tree_bark"
-	], "thermal:rubberwood_log")
-
-	create.compacting([
-		Fluid.of("thermal:latex", 50),
-		"farmersdelight:tree_bark"
-	], "thermal:rubberwood_wood")
-
-	create.compacting(Fluid.of("thermal:latex", 50), [
-		"thermal:stripped_rubberwood_log"
-	])
-
-	create.compacting(Fluid.of("thermal:latex", 50), [
-		"thermal:stripped_rubberwood_wood"
-	])
-
-	create.compacting([
-		Fluid.of("thermal:latex", 50),
-		"farmersdelight:tree_bark"
-	], "cmi:rubber_tree_bark")
-
 	// 橡胶板
 	create.pressing("cmi:rubber_plate", [
 		"thermal:rubber"
@@ -84,6 +60,11 @@ ServerEvents.recipes((event) => {
 	create.mixing(Fluid.of("cmi:cured_rubber", 500), [
 		"#forge:dusts/sulfur",
 		"#forge:plates/rubber"
+	]).heatRequirement(global.HeatLevel["grilled"])
+
+	create.mixing(Fluid.of("cmi:cured_rubber", 500), [
+		"#forge:dusts/sulfur",
+		"4x #forge:dusts/rubber"
 	]).heatRequirement(global.HeatLevel["grilled"])
 
 	create.mixing(Fluid.of("cmi:cured_rubber", 1000), [

@@ -38,10 +38,10 @@ function Material(name, level) {
 	this.metal = false
 	this.level = level
 	this.types = []
+	this.blockSound = null
 
 	materials.push(this)
 }
-
 /**
  * 
  * @param {MaterialColor} color1 
@@ -136,6 +136,15 @@ Material.prototype.slurry = function () {
 	})
 	return this
 }
+/**
+ * 
+ * @param {SoundType} sound 
+ * @returns 
+ */
+Material.prototype.sound = function (sound) {
+	this.blockSound = sound
+	return this
+}
 
 // Item
 StartupEvents.registry("item", (event) => {
@@ -195,18 +204,19 @@ StartupEvents.registry("block", (event) => {
 			}
 
 			let block = event.create(`${global.namespace}:${material.name}_block`)
-				.textureAll(`${global.namespace}:block/material/color/storage_blocks`)
-				.soundType(SoundType.METAL)
-				.color(0, material.color1)
-				.hardness(5)
-				.resistance(5)
-				.item((builder) => {
-					builder.color(0, material.color1)
-				})
-				.tagBlock(global.ToolType["pickaxe"])
-				.tagBlock(global.MiningLevel[material.level])
-				.tag("forge:storage_blocks")
-				.tag(`forge:storage_blocks/${material.name}`)
+
+			block.textureAll(`${global.namespace}:block/material/color/storage_blocks`)
+			block.soundType(material.blockSound || SoundType.METAL)
+			block.color(0, material.color1)
+			block.hardness(5)
+			block.resistance(5)
+			block.item((builder) => {
+				builder.color(0, material.color1)
+			})
+			block.tagBlock(global.ToolType["pickaxe"])
+			block.tagBlock(global.MiningLevel[material.level])
+			block.tag("forge:storage_blocks")
+			block.tag(`forge:storage_blocks/${material.name}`)
 
 			if (material.metal) {
 				block.tag(`${global.namespace}:metals`)

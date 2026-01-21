@@ -28,7 +28,7 @@ type ToolType = "pickaxe" | "axe" | "shovel" | "hoe" | "sword"
 // 挖掘等级
 type MiningLevel = "wooden" | "stone" | "iron" | "diamond" | "nether"
 
-// 材料类型（对外仍然是这个）
+// 材料类型
 type MaterialType =
 	| "ingot"
 	| "plate"
@@ -45,37 +45,22 @@ type MaterialType =
 	| "dirty_slurry"
 	| "slurry"
 
-// =========================
-// Material 接口
-// =========================
-
 interface Material {
 	name: string
 	level: MiningLevel
 
-	/**
-	 * 注意: 
-	 * 运行时实际是: 
-	 * { type: MaterialType, overlay?: boolean }[]
-	 * 但这里对外仍然保持 MaterialType[]
-	 */
 	types: MaterialType[]
 
 	color(color1: MaterialColor, color2: MaterialColor): this
 	isMetal(): this
-
-	/**
-	 * 默认: overlay = true（三层）
-	 * 传 false: 禁用覆盖层（两层）
-	 */
 	ingot(overlay?: boolean): this
 	plate(overlay?: boolean): this
 	nugget(overlay?: boolean): this
 	dust(overlay?: boolean): this
 	rod(overlay?: boolean): this
 	gear(overlay?: boolean): this
-
 	block(): this
+	sound(sound: Internal.SoundType_): this
 	molten(): this
 	dirty(): this
 	clump(): this
@@ -84,6 +69,7 @@ interface Material {
 	dirtySlurry(): this
 	slurry(): this
 }
+
 
 declare class Material implements Material {
 	constructor(name: string, level: MiningLevel)

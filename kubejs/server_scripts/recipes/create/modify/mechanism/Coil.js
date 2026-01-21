@@ -123,14 +123,14 @@ ServerEvents.recipes((event) => {
 		.id("ae2:network/blocks/energy_vibration_chamber")
 
 	// 红石通量线圈
-	let incGoldRod = "createaddition:gold_rod"
-	create.sequenced_assembly("thermal:rf_coil", [
-		"#forge:rods/gold"
-	], [
-		create.deploying(incGoldRod, [incGoldRod, "#forge:dusts/redstone"]),
-		vintageimprovements.laser_cutting(incGoldRod, [incGoldRod])
-			.energy(100).maxChargeRate(500),
-	]).transitionalItem(incGoldRod).loops(1)
+	kubejs.shaped("2x thermal:rf_coil", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "immersiveengineering:wirecoil_redstone",
+		B: ["#forge:rods/gold", "#forge:rods/electrum"]
+	})
 
 	// 电磁铁
 	kubejs.shaped("immersiveengineering:electromagnet", [

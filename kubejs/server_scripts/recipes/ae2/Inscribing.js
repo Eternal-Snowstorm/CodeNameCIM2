@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 			"top": Ingredient.of("ae2:silicon_press").toJson()
 		},
 		"mode": "inscribe",
-		"result": Ingredient.of("cmi:silicon_carbide_plate").toJson()
+		"result": Item.of("cmi:silicon_carbide_plate").toJson()
 	})
 
 	event.custom({
@@ -17,9 +17,8 @@ ServerEvents.recipes((event) => {
 			"top": Ingredient.of("ae2:logic_processor_press").toJson()
 		},
 		"mode": "inscribe",
-		"result": Ingredient.of("ae2:printed_logic_processor").toJson()
-	})
-		.id("ae2:inscriber/logic_processor_print")
+		"result": Item.of("ae2:printed_logic_processor").toJson()
+	}).id("ae2:inscriber/logic_processor_print")
 
 	event.custom({
 		"type": "ae2:inscriber",
@@ -29,9 +28,8 @@ ServerEvents.recipes((event) => {
 			"top": Ingredient.of("ae2:calculation_processor_press").toJson()
 		},
 		"mode": "inscribe",
-		"result": Ingredient.of("ae2:printed_calculation_processor").toJson()
-	})
-		.id("ae2:inscriber/calculation_processor_print")
+		"result": Item.of("ae2:printed_calculation_processor").toJson()
+	}).id("ae2:inscriber/calculation_processor_print")
 
 	event.custom({
 		"type": "ae2:inscriber",
@@ -41,9 +39,8 @@ ServerEvents.recipes((event) => {
 			"top": Ingredient.of("ae2:engineering_processor_press").toJson()
 		},
 		"mode": "inscribe",
-		"result": Ingredient.of("ae2:printed_engineering_processor").toJson()
-	})
-		.id("ae2:inscriber/engineering_processor_print")
+		"result": Item.of("ae2:printed_engineering_processor").toJson()
+	}).id("ae2:inscriber/engineering_processor_print")
 
 	event.custom({
 		"type": "ae2:inscriber",
@@ -53,9 +50,8 @@ ServerEvents.recipes((event) => {
 			"top": Ingredient.of("advanced_ae:quantum_processor_press").toJson()
 		},
 		"mode": "inscribe",
-		"result": Ingredient.of("advanced_ae:printed_quantum_processor").toJson()
-	})
-		.id("advanced_ae:quantum_processor_print")
+		"result": Item.of("advanced_ae:printed_quantum_processor").toJson()
+	}).id("advanced_ae:quantum_processor_print")
 
 	event.custom({
 		"type": "ae2:inscriber",
@@ -65,7 +61,7 @@ ServerEvents.recipes((event) => {
 			"top": Ingredient.of("ae2:printed_silicon").toJson()
 		},
 		"mode": "inscribe",
-		"result": Ingredient.of("ae2:logic_processor").toJson()
+		"result": Item.of("ae2:logic_processor").toJson()
 	})
 
 	event.custom({
@@ -76,7 +72,7 @@ ServerEvents.recipes((event) => {
 			"top": Ingredient.of("ae2:printed_silicon").toJson()
 		},
 		"mode": "inscribe",
-		"result": Ingredient.of("ae2:calculation_processor").toJson()
+		"result": Item.of("ae2:calculation_processor").toJson()
 	})
 
 	event.custom({
@@ -87,7 +83,7 @@ ServerEvents.recipes((event) => {
 			"top": Ingredient.of("ae2:printed_silicon").toJson()
 		},
 		"mode": "inscribe",
-		"result": Ingredient.of("ae2:engineering_processor").toJson()
+		"result": Item.of("ae2:engineering_processor").toJson()
 	})
 
 	event.custom({
@@ -98,9 +94,6 @@ ServerEvents.recipes((event) => {
 			"top": Ingredient.of("ae2:printed_silicon").toJson()
 		},
 		"mode": "inscribe",
-		"result": Ingredient.of("advanced_ae:quantum_processor").toJson()
+		"result": Item.of("advanced_ae:quantum_processor").toJson()
 	})
 })
-
-
-
