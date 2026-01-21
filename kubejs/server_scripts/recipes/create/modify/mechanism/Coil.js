@@ -90,8 +90,7 @@ ServerEvents.recipes((event) => {
 		B: "immersiveengineering:coil_mv",
 		C: "mekanism:steel_casing",
 		D: Mech.COIL
-	})
-		.id("mekanismgenerators:electromagnetic_coil")
+	}).id("mekanismgenerators:electromagnetic_coil")
 
 	// 水晶共振生成器
 	kubejs.shaped("ae2:crystal_resonance_generator", [
@@ -104,8 +103,7 @@ ServerEvents.recipes((event) => {
 		C: Mech.COIL,
 		D: "#forge:plates/silver",
 		E: "cmi:sky_stone_casing"
-	})
-		.id("ae2:network/crystal_resonance_generator")
+	}).id("ae2:network/crystal_resonance_generator")
 
 	// 谐振仓
 	kubejs.shaped("ae2:vibration_chamber", [
@@ -119,8 +117,7 @@ ServerEvents.recipes((event) => {
 		D: Mech.COIL,
 		E: "cmi:sky_stone_casing",
 		F: "cmi:nether_mechanism"
-	})
-		.id("ae2:network/blocks/energy_vibration_chamber")
+	}).id("ae2:network/blocks/energy_vibration_chamber")
 
 	// 红石通量线圈
 	kubejs.shaped("2x thermal:rf_coil", [
