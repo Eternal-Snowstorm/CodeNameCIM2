@@ -49,7 +49,7 @@ MMEvents.createProcesses((event) => {
 			type: "mm:input/consume",
 			ingredient: {
 				type: "mm:fluid",
-				fluid: "cmi:naphtha",
+				fluid: "thermal_extra:naphtha",
 				amount: global.BUCKET_CAPACITY
 			}
 		})

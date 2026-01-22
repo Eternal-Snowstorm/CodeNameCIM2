@@ -5,10 +5,10 @@ ServerEvents.recipes((event) => {
 	createdieselgenerators.distillation([
 		Fluid.of("cmi:molten_bitumen", 500),
 		Fluid.of("thermal:heavy_oil", 500),
-		Fluid.of("cmi:lubricating_oil", 500),
+		Fluid.of("thermal_extra:lubricant", 500),
 		Fluid.of("cmi:sulfric_diesel", 500),
 		Fluid.of("cmi:kerosene", 500),
-		Fluid.of("cmi:naphtha", 500)
+		Fluid.of("thermal_extra:naphtha", 500)
 	], Fluid.tag("fluidTag", "forge:oil", global.BUCKET_CAPACITY * 2))
 		.heatRequirement(global.HeatLevel["heated"])
 		.id("createdieselgenerators:distillation/crude_oil")
@@ -17,10 +17,10 @@ ServerEvents.recipes((event) => {
 	createdieselgenerators.distillation([
 		Fluid.of("cmi:molten_bitumen", 100),
 		Fluid.of("thermal:heavy_oil", 100),
-		Fluid.of("cmi:lubricating_oil", 100),
+		Fluid.of("thermal_extra:lubricant", 100),
 		Fluid.of("cmi:sulfric_diesel", 100),
 		Fluid.of("cmi:kerosene", 100),
-		Fluid.of("cmi:naphtha", 100)
+		Fluid.of("thermal_extra:naphtha", 100)
 	], Fluid.of("createdieselgenerators:crude_oil", global.BUCKET_CAPACITY))
 		.heatRequirement(global.HeatLevel["heated"])
 		.id("createdieselgenerators:distillation/crude_oil3")

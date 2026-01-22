@@ -196,7 +196,7 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/steel"
 	], [
 		create.deploying(Inc.HEAVY, [Inc.HEAVY, "#vintageimprovements:springs/invar"]),
-		create.filling(Inc.HEAVY, [Inc.HEAVY, Fluid.of("cmi:lubricating_oil", 100)]),
+		create.filling(Inc.HEAVY, [Inc.HEAVY, Fluid.of("thermal_extra:lubricant", 100)]),
 		create.deploying(Inc.HEAVY, [Inc.HEAVY, "cmi:heavy_engineering_mechanism_augment"]),
 		create.deploying(Inc.HEAVY, [Inc.HEAVY, "cmi:engineering_mechanism_part"]),
 	]).transitionalItem(Inc.HEAVY).loops(1)
