@@ -450,9 +450,9 @@ ServerEvents.recipes((event) => {
 
 	// 物质聚合器
 	kubejs.shapeless("ae2:condenser", [
-		"cmi:computing_casing",
-		mechA,
-		"cmi:nuclear_mechanism"
+		mech,
+		"cmi:sky_stone_casing",
+		"cmi:iron_mechanism"
 	])
 
 	// ME量子连接仓
