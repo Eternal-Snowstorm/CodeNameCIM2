@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
 		SCAMOD: "cmi:incomplete_scanning_module",
 		ELETUBE: "cmi:incomplete_electron_tube",
 		CAPACITOR: "ad_astra:etrionic_core",
-		NUKE: "incomplete_nuke_cooler",
+		NUKE: "cmi:incomplete_nuke_cooler",
 		GAS: "cmi:incomplete_gas_container"
 	}
 
