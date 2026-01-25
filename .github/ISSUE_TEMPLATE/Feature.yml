@@ -1,6 +1,6 @@
 name: "新增内容建议"
 description: "新增内容"
-title: (将此栏【替换】为你的标题)
+title: (将此栏[替换]为你的标题)
 labels: ["Feature", "待查看", "优先级：无"]
 body:
 - type: checkboxes
