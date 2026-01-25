@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         感谢您进行 Bug 反馈。请在上面的文本框⬆️起一个能够清晰描述您的问题的标题, 便于开发者解决您的问题。
-        
+
         > [!important]
         > 重要：如果要提出**多个 Bug**, 请为每一个 Bug 开一个单独的 issue。
         >
@@ -28,7 +28,7 @@ body:
         - label: 我勾选了所有框, 因为我根本就没仔细看他们是什么
 
   - type: markdown
-    attributes: 
+    attributes:
       value: |
         ### Bug 信息
         描述您遇到的 Bug。您可以附上截图、录屏、日志等材料, 便于开发者追踪问题。
@@ -74,7 +74,7 @@ body:
     attributes:
       label: 应用版本
       description: 您当前使用的 CMI 版本号, 可以在启动器的对应位置查看。
-      placeholder: 如：B1.0.0
+      placeholder: 如：Beta-2.4.0
     validations:
       required: true
 
@@ -95,3 +95,20 @@ body:
       options:
         - label: 我认为上述的描述已经足以详细, 以允许开发人员能复现该问题。如果我的 issue 没有按照上述的要求填写, 可能会被无条件关闭。
           required: true
+
+  - type: textarea
+    id: other_message
+    attributes:
+      label: 还有别的吗?
+      description: |
+        运行环境? 相关的硬件配置? 一些链接? 
+        或者可以给我们看的参考资料一类的? 
+        任何包括能让我们对你的问题有更多了解的信息内容都可以
+      render: shell
+
+  - type: textarea
+    id: sex_images
+    attributes:
+      label: 来点色图?
+      description: 来点好看的色图让大伙和开发者们都养养眼怎么样?
+      render: shell
