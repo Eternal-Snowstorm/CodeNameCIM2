@@ -147,7 +147,9 @@ ServerEvents.recipes((event) => {
 		"sophisticatedbackpacks:stack_upgrade_tier_1_from_starter",
 		"farmersdelight:cutting/deepslate",
 		"farmersdelight:cutting/stone",
-		"tconstruct:smeltery/seared/grout_multiple"
+		"tconstruct:smeltery/seared/grout_multiple",
+		"createdieselgenerators:distillation/crude_oil",
+		"thermal:fuels/magmatic/magmatic_lava"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

@@ -1,0 +1,43 @@
+
+[Devices]
+
+	[Devices.Harvester]
+		#Should Nether Wart be harvestable by the Harvester?
+		"Nether Wart Harvest" = true
+		#Should the Harvester replant blocks?
+		Replant = true
+
+[Dynamos]
+
+	[Dynamos."Cold Dynamo"]
+		#This sets the base power generation (RF/t) for the Cold Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 200
+
+[Machines]
+
+	[Machines."Advanced Refinery"]
+		#This sets the base power consumption (RF/t) for the Advanced Refinery.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines."Component Assembly"]
+		#This sets the base power consumption (RF/t) for the Component Assembly.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines."Endothermic Dehydrator"]
+		#This sets the base power consumption (RF/t) for the Endothermic Dehydrator.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines."Fluid Mixer"]
+		#This sets the base power consumption (RF/t) for the Fluid Mixer.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines."Nitratic Igniter"]
+		#This sets the base power consumption (RF/t) for the Nitratic Igniter.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+

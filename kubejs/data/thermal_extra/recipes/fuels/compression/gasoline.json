@@ -1,0 +1,8 @@
+{
+	"type": "thermal:compression_fuel",
+	"energy": 2500000,
+	"ingredient": {
+		"amount": 1000,
+		"fluid_tag": "forge:gasoline"
+	}
+}
