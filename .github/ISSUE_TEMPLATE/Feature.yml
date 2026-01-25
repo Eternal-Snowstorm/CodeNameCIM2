@@ -1,6 +1,6 @@
 name: "新增内容建议"
 description: "新增内容"
-title: （将此栏【替换】为你的标题）
+title: (将此栏【替换】为你的标题)
 labels: ["Feature", "待查看", "优先级：无"]
 body:
 - type: checkboxes
@@ -21,7 +21,7 @@ body:
 - type: textarea
   id: "yml-3"  
   attributes:
-    label: "其他补充信息（可选）"
+    label: "其他补充信息(可选)"
     description: "如有其他需要说明的内容, 请在此补充。"
   validations:
     required: false  
