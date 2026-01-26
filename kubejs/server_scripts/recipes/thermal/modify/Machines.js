@@ -308,6 +308,19 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 
+	kubejs.shaped("thermal:device_hive_extractor", [
+		"ABA",
+		"CDC",
+		"AEA"
+	], {
+		A: PLANK,
+		B: COPPER_MECH,
+		C: GLASS,
+		D: "minecraft:shears",
+		E: "cmi:andesite_mechanism",
+	})
+
+	// 
 	kubejs.shaped("thermal:device_tree_extractor", [
 		"ABA",
 		"CDC",
