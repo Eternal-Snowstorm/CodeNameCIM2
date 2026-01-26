@@ -239,6 +239,32 @@ let $BlockItem = Java.loadClass("net.minecraft.world.item.BlockItem")
 let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties")
 ```
 
+16. 方法或构造函数参数列表
+
+当长度过长的时候想要使用换行那就必须每个参数都换行, 要么就是一路到低
+包括调用方法或构造函数时也一样
+```js
+function name(a, b, c, d, e, f) {}
+function name(
+	a,
+	b,
+	c,
+	d, 
+	e, 
+	f
+) {}
+
+name(a, b, c, d, e, f)
+name(
+	a,
+	b,
+	c,
+	d, 
+	e, 
+	f
+)
+```
+
 **第六条** 注册规范:
 
 在调用链式方法时`必须`换行
