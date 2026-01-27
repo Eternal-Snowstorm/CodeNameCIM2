@@ -1,0 +1,621 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "utilities"
+	group: "6A6C7C5BAEF247E2"
+	icon: {
+		Count: 1
+		id: "constructionwand:infinity_wand"
+		tag: {
+			wand_options: { }
+		}
+	}
+	id: "4D96ACCE1356C17D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "create:wrench"
+			id: "714D1AC6D07BEEC0"
+			rewards: [{
+				id: "2655761D7F974CC2"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "超多实用工具"
+			tasks: [{
+				id: "48D573EC7FE00A91"
+				title: "一些实用工具"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["建筑手杖是一种可以快速搭建方块的工具, 搭建冶炼炉或地板时可以发挥大用"]
+			hide_dependency_lines: true
+			id: "794382603730734B"
+			rewards: [
+				{
+					id: "64ED75CE47E67146"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "79AE46FA1AD74FED"
+					table_id: 9045507092957783316L
+					type: "choice"
+				}
+			]
+			subtitle: "不能拿来抡人"
+			tasks: [{
+				id: "442E57867A50ED37"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "constructionwand:wand"
+					}
+				}
+				title: "建筑手杖"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
+			description: [
+				"输出升级可以将抽屉内的物品输出到相邻的容器方块中, 在物品栏内右键即可配置输出方向"
+				""
+				"抽入升级可以从相邻的容器方块中将物品抽取到抽屉内, 在物品栏内右键即可配置输入方向"
+				""
+				"流体抽屉搭配这两种升级, 在前期就能方便地取代管道和动力泵, 如下图所示, 可以将流体轻松传输到右上方的储罐中"
+				"{image:cmi:textures/images/io_upgrade.png width:192 height:108 align:center}"
+			]
+			hide_dependency_lines: true
+			id: "21185FDCCEDBFDC8"
+			rewards: [
+				{
+					id: "3D4CB92AB062A95D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E89B3FCD80460D6"
+					table_id: 708571964512047621L
+					type: "choice"
+				}
+			]
+			subtitle: "短距离传输最好用的东西"
+			tasks: [
+				{
+					id: "13B8113F0054C365"
+					item: "functionalstorage:puller_upgrade"
+					type: "item"
+				}
+				{
+					id: "16C5CC3C6B5D631A"
+					item: "functionalstorage:pusher_upgrade"
+					type: "item"
+				}
+			]
+			title: "传输升级"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
+			description: [
+				"生铁降级可以降低抽屉的存储上限, 在需要进行超短距离分流时非常实用"
+				""
+				"例如, 当你希望让物流系统中的物品优先进入其他容器, 而不是被抽屉无限堆叠时, 就可以用降级来限制抽屉容量, 从而实现更灵活的分流与控制"
+			]
+			hide_dependency_lines: true
+			id: "48FF030A13CEF66D"
+			rewards: [
+				{
+					id: "175562A991B7D87B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 2
+					id: "22D0AA1B4C1008F6"
+					item: "tconstruct:pig_iron_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "这个不可以吃"
+			tasks: [{
+				id: "16474AE01A0452B5"
+				item: "functionalstorage:iron_downgrade"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"抽屉是一种能够大量存储特定物品的设备"
+				"它既可以专注于存放单一物品以获得极高的容量, 也可以设置为存放多种物品, 但存储上限会相应降低"
+				""
+				"除了常规抽屉之外, 还有流体抽屉, 压缩抽屉以及末影抽屉等扩展类型, 为物品与流体的管理提供了更加灵活的选择"
+			]
+			hide_dependency_lines: true
+			id: "4CCF561EE0B2C3A6"
+			rewards: [
+				{
+					id: "21FE937F4DD74A9E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "1C0A3CAB47B3DFB6"
+					item: "functionalstorage:copper_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "存储的好手段"
+			tasks: [{
+				id: "50F32AC335DB631E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "抽屉"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
+			description: [
+				"配置工具可以将某个抽屉上锁, 上锁后的抽屉只会接受标记过的物品或流体"
+				"合理利用配置工具可以省下不少黄铜"
+				"并且配置工具没有耐久, 只要做一个就可以用到毕业"
+			]
+			hide_dependency_lines: true
+			id: "645BA6E93229CA27"
+			rewards: [
+				{
+					id: "188377787CFE9304"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "7707E934906B6AEC"
+					item: "functionalstorage:copper_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "没有黄铜时的过滤神器"
+			tasks: [{
+				id: "4DCE9FB6C29C2B4A"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
+			description: ["连接工具需要和存储控制器搭配使用, 和存储控制器连接过的抽屉可以在控制器中查看并调用"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "functionalstorage:linking_tool"
+				tag: { }
+			}
+			id: "515D545E66315AF9"
+			rewards: [
+				{
+					id: "0165C2212CAAC5E3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "740D6D6B75B3A98A"
+					item: "functionalstorage:copper_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "一种传输方式"
+			tasks: [
+				{
+					id: "5DF7A2EB2EB12702"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0022C564D0D9E999"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"714D1AC6D07BEEC0"
+				"4CCF561EE0B2C3A6"
+			]
+			description: ["虚空升级可以让抽屉内的物品超过存储上限后输入进去的物品或流体自动销毁, 在处理极大产量的产线时尤为重要"]
+			hide_dependency_lines: true
+			id: "04D94D6A19BFCAD5"
+			rewards: [
+				{
+					id: "30C8910AB46543E6"
+					type: "xp"
+					xp: 10
+				}
+				{
+					count: 8
+					id: "3C6D28DF35F59A36"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+			]
+			subtitle: "妈妈再也不怕我产能过剩了"
+			tasks: [{
+				id: "380D891EA57D8A79"
+				item: "functionalstorage:void_upgrade"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"蒸汽飞轮是一种通过蒸汽驱动产生应力的设备"
+				"它不需要太大的占地, 只要你有一块稳定产出蒸汽的区域, 便能驱动飞轮持续运转"
+				"在任何时候, 它都可以作为最便捷的动力来源, 帮助你建立起基础的机械系统;"
+				"哪怕是在后期, 只要配合大型蒸汽锅炉或其他蒸汽供应方式, 也能为复杂装置提供稳定的动力支持."
+				""
+				"(我知道你在想什么, 虚空飞轮&l&c亖了喵&r&r)"
+			]
+			hide_dependency_lines: true
+			icon: "steampowered:cast_iron_flywheel"
+			id: "38472ADBCFC92083"
+			rewards: [{
+				id: "57B448C721039A9F"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "超大应力来源"
+			tasks: [
+				{
+					id: "7D0557943210EEA6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:flywheel"
+						}
+					}
+					title: "蒸汽飞轮"
+					type: "item"
+				}
+				{
+					id: "0CCF89B1A1AE56BF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:steam_engine"
+						}
+					}
+					title: "蒸汽引擎"
+					type: "item"
+				}
+			]
+			title: "蒸汽飞轮"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"蒸汽飞轮往往需要与蒸汽产出设备搭配使用"
+				"其中, 蒸汽锅炉是一种仅需1×2空间的紧凑型设备, 相较于大型蒸汽锅炉, 它的占地更小, 搭建更加便捷"
+				""
+				"但是当内部存储的蒸汽满了之后蒸汽锅炉便会开始一边制造噪音一边爆气"
+			]
+			hide_dependency_lines: true
+			icon: "steampowered:cast_iron_burner"
+			id: "243EF0B9E933D85A"
+			rewards: [{
+				id: "4A87A56EAFEA81C5"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "蒸汽产出设备"
+			tasks: [
+				{
+					id: "14EF53B2B6618A77"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:boiler"
+						}
+					}
+					title: "锅炉"
+					type: "item"
+				}
+				{
+					id: "338F292855CFB115"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:burner"
+						}
+					}
+					title: "燃烧室"
+					type: "item"
+				}
+			]
+			title: "蒸汽锅炉"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"销毁器可以清除任何东西, 一般用于生产线中清除废弃的流体和物品."
+				"当然我们还是更推荐您在AE2发展起来后使用物质聚合器销毁."
+			]
+			hide_dependency_lines: true
+			id: "5E52B40EB76B5C84"
+			rewards: [{
+				id: "1BC96651A96CB49B"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "清理垃圾和流体的好手段"
+			tasks: [{
+				id: "27B5F94D96D252FE"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"扫描器可以侦测周围一定范围的实体与方块"
+				"你需要手持扫描器蹲下右键, 打开gui向其中插入扫描插件, 来为其赋予功能或增加扫描范围"
+				"一个扫描器中最多激活三个插件, 并存储5个未激活插件"
+				"扫描器总共有9种插件, 其中8个为目标型插件, 激活多个目标型插件时会同时扫描多种目标"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "7CF3605CD32CCEED"
+			rewards: [{
+				id: "433B4A0FB4FC08AA"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "找东西的好帮手"
+			tasks: [{
+				id: "1773E438C3EB9B3B"
+				item: {
+					Count: 1
+					id: "scannable:scanner"
+					tag: {
+						energy: 10000000
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["龙头可以很方便的获取橡胶, 但是会消耗耐久, 并且原木有概率变成去皮原木"]
+			hide_dependency_lines: true
+			id: "7ABC764F1F79CB4E"
+			rewards: [{
+				id: "74A16B24C0301174"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "橡胶获取"
+			tasks: [{
+				id: "2958A72C4C03C715"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cmi:faucet"
+					}
+				}
+				title: "龙头"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"4CCF561EE0B2C3A6"
+				"714D1AC6D07BEEC0"
+			]
+			description: ["搭配输出输入升级使用有奇效"]
+			hide_dependency_lines: true
+			id: "15080FCC44C718DD"
+			rewards: [{
+				id: "4B5E173031563764"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "比流体储罐好用一百亿倍"
+			tasks: [{
+				id: "4AF4B44DD243B23F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:fluid_drawer"
+					}
+				}
+				title: "流体抽屉"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["灌注液态超经验获得无限耐久!"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "553F8AFDC9BAC40F"
+			subtitle: "液态超经验的力量"
+			tasks: [{
+				id: "5E6DC322D45F40EF"
+				item: {
+					Count: 1
+					id: "immersiveengineering:graphite_electrode"
+					tag: {
+						graphDmg: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "无限石墨电极"
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: ["灌注液态超经验获得无限耐久!"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "0D920683691D237D"
+			subtitle: "液态超经验的力量"
+			tasks: [{
+				id: "4DD3608387E0F186"
+				item: {
+					Count: 1
+					id: "cmi:super_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"物品栏左上角有一个按钮"
+				"可以选择禁用一些声音"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "immersiveengineering:earmuffs"
+			id: "6219A68A3A7C1876"
+			subtitle: "把世界调成静音,聆听主机的轰鸣(不是"
+			tasks: [{
+				id: "74725548CEEF2EF4"
+				title: "确认"
+				type: "checkmark"
+			}]
+			title: "ESM"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"将工业平台方块放置在你希望放置&3基地&r的位置,然后用对应材料右键,即可展开工业平台（具体材料及类型可参考其自带的描述文本）."
+				"&4注意&f"
+				"1.工业平台展开时，会以其所在高度为顶层（若是悬浮平台则为第一层）生成平台；"
+				"2.所有\"&6轻型平台&f\"的大小都是一个区块；"
+				"3.所有\"&6重型平台&f\"的大小都是&6以工业平台方块所在区块为中心的&f3*3区块；"
+				"4.所有的\"&6悬浮平台&f\"都不会向下填充，而是会在第一层的上面五格（也就是中间空四格）再填充一层，在其角落用安山脚手架连接；"
+				"5.除\"&6悬浮平台&f\"外，以工业平台方块所在高度为顶层，若其下6格范围内没有方块填充，工业平台展开时会在该范围内所有空位填充石头（不会替换已有方块）；"
+				"6.工业平台展开时会&4清空&f其上（包括其所在高度）12格的&6所有&f方块（包括基岩），且不会产生掉落物（悬浮平台为其上19格）。&6务必注意！&f"
+				"工业平台将会主动适配区块,并以警戒线标明区块边界,辅助玩家按区块规划设备."
+				"灵感与方块材质来自 &e史莱姆li&r 的&6黄铜协奏曲&r, 已获得授权."
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "industrial_platform:industrial_platform"
+			id: "7BA8A28AD2EA188E"
+			rewards: [
+				{
+					id: "750CB938A115C0E0"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "49D5F0F64419194F"
+					item: "industrial_platform:industrial_platform"
+					type: "item"
+				}
+			]
+			subtitle: "搭建基地的好帮手"
+			tasks: [{
+				id: "47E8C062AA7F9EF7"
+				title: "知道了!"
+				type: "checkmark"
+			}]
+			title: "工业平台"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			hide_dependency_lines: true
+			id: "3DD175AC87EB32EA"
+			rewards: [{
+				id: "45BC8967815A7259"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "伤害测试器"
+			tasks: [{
+				id: "0CC98A213BBFBC9C"
+				item: "powerful_dummy:dummy_stand"
+				type: "item"
+			}]
+			title: "训练假人是你吗"
+			x: 8.0d
+			y: 5.0d
+		}
+	]
+	title: "实用工具"
+}

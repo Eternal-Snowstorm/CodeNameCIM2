@@ -622,5 +622,5 @@
 			y: -2.0d
 		}
 	]
-	title: "构件之旅"
+	title: "{ftbquests.chapter.k.title}"
 }
