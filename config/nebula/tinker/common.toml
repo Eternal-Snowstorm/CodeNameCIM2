@@ -1,0 +1,49 @@
+
+#Critical Hit System Settings
+[crit_system]
+	#Base critical chance for normal attacks (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	base_crit_chance = 0.05
+	#Base critical damage multiplier for normal attacks
+	#Range: 1.0 ~ 10.0
+	base_crit_multiplier = 1.5
+	#Critical chance for jump attacks (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	jump_crit_chance = 1.0
+	#Critical damage multiplier for jump attacks
+	#Range: 1.0 ~ 20.0
+	jump_crit_multiplier = 2.0
+	#Maximum critical chance cap (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	max_crit_chance = 1.0
+	#Maximum critical multiplier cap
+	#Range: 1.0 ~ 50.0
+	max_crit_multiplier = 10.0
+	#Maximum critical resistance cap (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	max_crit_resistance = 0.8
+	#Maximum critical damage reduction cap (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	max_crit_damage_reduction = 0.8
+	#Modifier for random seed calculation (adjust to change crit RNG)
+	#Range: > 0
+	random_seed_modifier = 12345
+	#Base critical resistance for all entities (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	base_crit_resistance = 0.0
+	#Base critical damage reduction for all entities (0.0-1.0)
+	#Range: 0.0 ~ 1.0
+	base_crit_damage_reduction = 0.0
+	#Default global critical chance attribute value
+	#Range: 0.0 ~ 1.0
+	global_crit_chance_default = 0.05
+	#Default global critical damage attribute value
+	#Range: 1.0 ~ 10.0
+	global_crit_damage_default = 1.5
+	#Default critical resistance attribute value
+	#Range: 0.0 ~ 1.0
+	crit_resistance_default = 0.0
+	#Default critical damage reduction attribute value
+	#Range: 0.0 ~ 1.0
+	crit_damage_reduction_default = 0.0
+

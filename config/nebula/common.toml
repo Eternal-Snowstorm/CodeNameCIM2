@@ -1,0 +1,10 @@
+
+#All settings below will only take effect after restarting the server or client.
+[general]
+	#Fluids in this list can burn entities like lava
+	#supports fluid tags, declared with "#"
+	burningFluids = ["#forge:molten_materials"]
+	#Whether to enable the feature that converts surrounding dirt to podzol when large spruce trees grow
+	#Default value: false
+	enableLargeSprucePodzolConversion = false
+

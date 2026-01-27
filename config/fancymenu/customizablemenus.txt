@@ -84,3 +84,6 @@ net.minecraft.client.gui.screens.ReceivingLevelScreen {
 net.minecraft.client.gui.screens.GenericDirtMessageScreen {
 }
 
+net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
+}
+
