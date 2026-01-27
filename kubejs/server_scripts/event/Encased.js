@@ -77,9 +77,9 @@ BlockEvents.rightClicked("create:belt", (event) => {
 
 	let axisY = slope !== "HORIZONTAL"
 
-	let toEndblock = block
+	let toEndblock = block								
 	let toEndPos = [0, 0, 0]
-	let toEndVec = [0, 0, 0]
+	let toEndVec = [0, 0, 0]	
 
 	let toStartblock = block
 	let toStartPos = [0, 0, 0]

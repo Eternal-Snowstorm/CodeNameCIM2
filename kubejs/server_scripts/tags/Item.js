@@ -433,6 +433,18 @@ ServerEvents.tags("item", (event) => {
 		.add("minecraft:blue_ice")
 		.add("ratatouille:frozen_block")
 
+	event.get("cmi:beltcasing")
+		.add("create:andesite_casing")
+		.add("create:brass_casing")
+
+	event.get("cmi:encasable")
+		.add("create:shaft")
+		.add("create:belt")
+
+	event.get("cmi:uncasingable")
+		.add("create:brass_encased_shaft")
+		.add("create:andesite_encased_shaft")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
