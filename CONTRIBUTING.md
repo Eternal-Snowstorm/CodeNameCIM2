@@ -148,7 +148,7 @@ if (a === b) {
 } // √
 ```
 
-7. 所有条件判断只能使用三等号强等于判断`===`, 禁止使用双等号弱等于判断`==`
+7. 若无特殊情况, 所有条件判断只能使用三等号强等于判断`===`, 禁止使用双等号弱等于判断`==`
 
 8. `KubeJS`的各种`event`中的`handler`必须使用`event`这个单词
 
@@ -156,7 +156,7 @@ if (a === b) {
 ServerEvents.recipes((event) => {})
 ```
 
-9. 所有的箭头函数必须加上小括号`()`, 不管是`forEach`还是`event`
+9. 所有的lambda(箭头函数)必须加上小括号`()`, 不管是`forEach`还是`event`
 
 ```js
 xxx.forEach((value) => {})
@@ -164,7 +164,7 @@ xxx.forEach((value) => {})
 ServerEvents.recipes((event) => {})
 ```
 
-11. 所有的箭头函数括号必须在末尾加上大括号(花括号)`{}`, 不能直接传参
+11. 所有的lambda(箭头函数)括号必须在末尾加上大括号(花括号)`{}`, 不能直接传参
 
 12. 所有的对象`{}`和数组`[]`内必须换行(数组内的数组随意)
 
@@ -237,6 +237,32 @@ BlockEvents.rightClicked((event) => {
 ```js
 let $BlockItem = Java.loadClass("net.minecraft.world.item.BlockItem")
 let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties")
+```
+
+16. 方法或构造函数参数列表
+
+当长度过长的时候想要使用换行那就必须每个参数都换行, 要么就是一路到低
+包括调用方法或构造函数时也一样
+```js
+function name(a, b, c, d, e, f) {}
+function name(
+	a,
+	b,
+	c,
+	d, 
+	e, 
+	f
+) {}
+
+name(a, b, c, d, e, f)
+name(
+	a,
+	b,
+	c,
+	d, 
+	e, 
+	f
+)
 ```
 
 **第六条** 注册规范:
