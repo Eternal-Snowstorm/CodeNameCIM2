@@ -127,7 +127,7 @@ ServerEvents.tags("item", (event) => {
 		.add("#forge:gems/diamond")
 
 	// 锤子
-	event.get("forge:hammer")
+	event.get("forge:hammers")
 		.add("thermal_extra:signalum_hammer")
 		.add("thermal_extra:lumium_hammer")
 		.add("thermal_extra:enderium_hammer")
@@ -432,6 +432,18 @@ ServerEvents.tags("item", (event) => {
 		.add("minecraft:packed_ice")
 		.add("minecraft:blue_ice")
 		.add("ratatouille:frozen_block")
+
+	event.get("cmi:beltcasing")
+		.add("create:andesite_casing")
+		.add("create:brass_casing")
+
+	event.get("cmi:encasable")
+		.add("create:shaft")
+		.add("create:belt")
+
+	event.get("cmi:uncasingable")
+		.add("create:brass_encased_shaft")
+		.add("create:andesite_encased_shaft")
 
 	let crushedMaterialGroup = [
 		"iron",
