@@ -536,10 +536,6 @@
 					tic_modifiers: [
 						{
 							level: 1
-							name: "tinkerleveling:leveling"
-						}
-						{
-							level: 1
 							name: "tconstruct:cultivated"
 						}
 						{

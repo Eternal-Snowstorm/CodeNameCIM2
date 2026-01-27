@@ -88,4 +88,32 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:string"
 	})
+
+	// 锤子
+	kubejs.shaped("cmi:flint_hammer", [
+		"AAA",
+		"ABA",
+		" B "
+	], {
+		A: "minecraft:flint",
+		B: "#forge:rods/wooden"
+	})
+
+	kubejs.shaped("cmi:iron_hammer", [
+		"AAA",
+		"ABA",
+		" B "
+	], {
+		A: "#forge:ingots/iron",
+		B: "#forge:rods/wooden"
+	})
+
+	kubejs.shaped("cmi:diamond_hammer", [
+		"AAA",
+		"ABA",
+		" B "
+	], {
+		A: "#forge:gems/diamond",
+		B: "#forge:rods/wooden"
+	})
 })

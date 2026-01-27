@@ -333,7 +333,7 @@ ServerEvents.recipes((event) => {
 		E: "cmi:andesite_mechanism",
 	})
 
-	// 
+	// 蓄水器
 	kubejs.shaped("thermal:device_water_gen", [
 		" A ",
 		"BCB",
@@ -341,8 +341,8 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "create:copper_casing",
 		B: "minecraft:bucket",
-		C: COPPER_MECH,
-		D: "#forge:plates/copper"
+		C: "cmi:water_pump",
+		D: COPPER_MECH
 	})
 
 	// 

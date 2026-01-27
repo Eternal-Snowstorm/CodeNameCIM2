@@ -25,4 +25,10 @@ ItemEvents.toolTierRegistry((event) => {
 	function addToolTier(name, tier) {
 		event.add(`${global.namespace}:${name}`, tier)
 	}
+
+	addToolTier("flint", (tier) => {
+		tier.setUses(150)
+		tier.setEnchantmentValue(5)
+		tier.setRepairIngredient("minecraft:flint")
+	})
 })

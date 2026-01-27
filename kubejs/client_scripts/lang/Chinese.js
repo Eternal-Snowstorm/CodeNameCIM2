@@ -82,6 +82,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("torn_parchment_a", "撕开的羊皮纸(甲)")
 	addItemLang("torn_parchment_b", "撕开的羊皮纸(乙)")
 
+	addItemLang("flint_hammer", "燧石锤")
+	addItemLang("iron_hammer", "铁锤")
+	addItemLang("diamond_hammer", "钻石锤")
+
 	addItemLang("power_supply_repair_kit", "电源修复包")
 	addItemLang("transformer_repair_kit", "变压器修复包")
 	addItemLang("tracker_repair_kit", "追踪阵列修复包")

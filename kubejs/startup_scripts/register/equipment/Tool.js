@@ -6,10 +6,6 @@ let $Tiers =
 	Java.loadClass("net.minecraft.world.item.Tiers")
 
 StartupEvents.registry("item", (event) => {
-	function addItem(name) {
-		return event.create(`${global.namespace}:${name}`)
-	}
-
 	// 超级刀
 	event.createCustom(`${global.namespace}:super_knife`, () => {
 		return new JavaAdapter($KnifeItem, {
@@ -59,7 +55,7 @@ StartupEvents.registry("item", (event) => {
 	}).tag("forge:tools/knives").tag("forge:tools")
 
 	// 地质锤
-	addItem("geological_hammer")
+	event.create(`${global.namespace}:geological_hammer`)
 		.rarity("epic")
 		.maxStackSize(1)
 		.tag("forge:tools")
@@ -68,7 +64,7 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:wrenches")
 
 	// 简易电池
-	addItem("simple_battery")
+	event.create(`${global.namespace}:simple_battery`)
 		.maxStackSize(1)
 		.texture("createaddition:item/capacitor")
 		.attachCapability(CapabilityBuilder.ENERGY.customItemStack()
@@ -100,7 +96,7 @@ StartupEvents.registry("item", (event) => {
 		)
 
 	// 木质龙头
-	addItem("wooden_faucet")
+	event.create(`${global.namespace}:wooden_faucet`)
 		.texture(`${global.namespace}:item/tool/wooden_faucet`)
 		.maxDamage(75)
 		.unstackable()
@@ -108,7 +104,7 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:tools")
 
 	// 铸铁龙头
-	addItem("cast_iron_faucet")
+	event.create(`${global.namespace}:cast_iron_faucet`)
 		.texture(`${global.namespace}:item/tool/cast_iron_faucet`)
 		.maxDamage(1024)
 		.unstackable()
@@ -116,7 +112,7 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:tools")
 
 	// 钢龙头
-	addItem("steel_faucet")
+	event.create(`${global.namespace}:steel_faucet`)
 		.texture(`${global.namespace}:item/tool/steel_faucet`)
 		.maxDamage(4096)
 		.unstackable()
@@ -124,10 +120,31 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:tools")
 
 	// 等离子龙头
-	addItem("overcharged_alloy_faucet")
+	event.create(`${global.namespace}:overcharged_alloy_faucet`)
 		.texture(`${global.namespace}:item/tool/overcharged_alloy_faucet`)
 		.maxDamage(114514)
 		.unstackable()
 		.tag("cmi:faucet")
 		.tag("forge:tools")
+
+	// 燧石锤
+	event.create(`${global.namespace}:flint_hammer`, "pickaxe")
+		.tier(`${global.namespace}:flint`)
+		.texture(`${global.namespace}:item/tool/flint_hammer`)
+		.tag("forge:tools")
+		.tag("forge:hammers")
+
+	// 铁锤
+	event.create(`${global.namespace}:iron_hammer`, "pickaxe")
+		.tier($Tiers.IRON)
+		.texture(`${global.namespace}:item/tool/iron_hammer`)
+		.tag("forge:tools")
+		.tag("forge:hammers")
+
+	// 钻石锤
+	event.create(`${global.namespace}:diamond_hammer`, "pickaxe")
+		.tier($Tiers.DIAMOND)
+		.texture(`${global.namespace}:item/tool/diamond_hammer`)
+		.tag("forge:tools")
+		.tag("forge:hammers")
 })
