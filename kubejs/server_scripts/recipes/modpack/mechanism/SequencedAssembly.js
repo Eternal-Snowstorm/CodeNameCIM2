@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { create, vintageimprovements } = event.recipes
+
 	let Inc = {
 		WOODEN: "cmi:incomplete_wooden_mechanism",
 		STONE: "cmi:incomplete_stone_mechanism",
@@ -165,7 +166,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:railway_mechanism", [
 		"cmi:dense_sturdy_sheet"
 	], [
-		create.pressing(Inc.RAILWAY, [Inc.RAILWAY]),
+		vintageimprovements.curving(Inc.RAILWAY, [Inc.RAILWAY]).mode(1),
 		create.deploying(Inc.RAILWAY, [Inc.RAILWAY, "#vintageimprovements:small_springs/brass"]),
 		create.deploying(Inc.RAILWAY, [Inc.RAILWAY, "#forge:plates/brass"]),
 		create.cutting(Inc.RAILWAY, Inc.RAILWAY),
