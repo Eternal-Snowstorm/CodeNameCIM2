@@ -127,7 +127,7 @@ ServerEvents.tags("item", (event) => {
 		.add("#forge:gems/diamond")
 
 	// 锤子
-	event.get("forge:hammer")
+	event.get("forge:hammers")
 		.add("thermal_extra:signalum_hammer")
 		.add("thermal_extra:lumium_hammer")
 		.add("thermal_extra:enderium_hammer")
