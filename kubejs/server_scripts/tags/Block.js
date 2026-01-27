@@ -9,6 +9,10 @@ ServerEvents.tags("block", (event) => {
 			.removeAll()
 	}
 
+	event.get("cmi:overworld_quartz_ore")
+		.add("cmi:quartz_ore")
+		.add("cmi:deepslate_quartz_ore")
+
 	event.get("cmi:heat_sources")
 		.add("minecraft:lava")
 		.add("#farmersdelight:heat_sources")

@@ -31,6 +31,11 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	// 主世界石英矿
+	event.get("cmi:overworld_quartz_ore")
+		.add("cmi:quartz_ore")
+		.add("cmi:deepslate_quartz_ore")
+
 	// 航天构件
 	event.get("cmi:tier_1_aviation_mechanism")
 		.add("cmi:tier_1_aviation_mechanism")
