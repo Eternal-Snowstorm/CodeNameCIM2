@@ -124,5 +124,5 @@
 	quickApplyToolModifiersSurvival = true
 	#If STACKTRACE, logs the stacktrace whenever a tool stack is created from a non-modifiable item. If WARNING (default), logs a shorter but more efficient error. If IGNORE, disables logging (useful for modpacks/players *after* they reported the issue). The stacktrace helps debug which mod is causing it, but is rather expensive on the chance they are doing it a lot.
 	#Allowed Values: STACKTRACE, WARNING, IGNORED
-	logInvalidToolStack = "WARNING"
+	logInvalidToolStack = "IGNORED"
 
