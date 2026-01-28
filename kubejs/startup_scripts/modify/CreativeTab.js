@@ -5,7 +5,8 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 		"cmi:water_pump",
 		"cmi:mars_geothermal_vent",
 		"cmi:mercury_geothermal_vent",
-		"cmi:hydraulic_press"
+		"cmi:hydraulic_press",
+		"cmi:accelerator_motor"
 	])
 
 	event.remove([
