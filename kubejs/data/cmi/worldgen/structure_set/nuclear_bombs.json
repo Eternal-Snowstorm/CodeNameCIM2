@@ -1,0 +1,14 @@
+{
+    "placement":{
+        "type":"minecraft:random_spread",
+        "salt": 1174,
+        "separation":12,
+        "spacing":15
+    },
+    "structures":[
+        {
+            "structure":"cmi:nuclear_bombs",
+            "weight":1
+        }
+    ]
+}
