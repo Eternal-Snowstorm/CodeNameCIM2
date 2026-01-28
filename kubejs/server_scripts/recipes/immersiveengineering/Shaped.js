@@ -1,19 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, create } = event.recipes
 
-	// 工程师锤
-	let damage = 1024 * 0.75
-	let hammer = Item.of("immersiveengineering:hammer")
-	kubejs.shaped(hammer.withNBT({ Damage: damage }), [
-		" AB",
-		" CA",
-		"C  "
-	], {
-		A: "minecraft:flint",
-		B: "#forge:string",
-		C: "#forge:rods/wooden"
-	})
-
 	// 炼油
 	kubejs.shaped("createdieselgenerators:pumpjack_head", [
 		"A A",

@@ -4,7 +4,8 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.addAfter("cmi:radsand", [
 		"cmi:water_pump",
 		"cmi:mars_geothermal_vent",
-		"cmi:mercury_geothermal_vent"
+		"cmi:mercury_geothermal_vent",
+		"cmi:hydraulic_press"
 	])
 
 	event.remove([

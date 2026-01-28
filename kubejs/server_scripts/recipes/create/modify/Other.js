@@ -266,7 +266,7 @@ ServerEvents.recipes((event) => {
 		// 小齿轮
 		kubejs.shapeless(`cmi:incomplete_${material}_cogwheel`, [
 			`#forge:plates/${material}`,
-			"immersiveengineering:hammer"
+			"#forge:hammers"
 		])
 
 		create.deploying(`4x steampowered:${material}_cogwheel`, [
@@ -287,7 +287,7 @@ ServerEvents.recipes((event) => {
 		// 大齿轮
 		kubejs.shapeless(`cmi:incomplete_${material}_large_cogwheel`, [
 			`2x #forge:plates/${material}`,
-			"immersiveengineering:hammer"
+			"#forge:hammers"
 		])
 
 		create.deploying(`4x steampowered:${material}_large_cogwheel`, [
