@@ -318,4 +318,15 @@ ServerEvents.recipes((event) => {
 		A: MECH,
 		B: "#forge:plates/andesite"
 	}).id("create:crafting/kinetics/display_board")
+
+	// 变速马达
+	kubejs.shaped("cmi:accelerator_motor", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: "cmi:andesite_mechanism",
+		B: "create:andesite_casing",
+		C: "#create:shaft"
+	})
 })
