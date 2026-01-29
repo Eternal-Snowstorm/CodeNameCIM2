@@ -1,13 +1,13 @@
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setDisplayName(Component.translatable(`itemGroup.${global.namespace}.all`))
 
-	event.addAfter("cmi:radsand", [
-		"cmi:water_pump",
-		"cmi:mars_geothermal_vent",
-		"cmi:mercury_geothermal_vent",
-		"cmi:hydraulic_press",
-		"cmi:accelerator_motor"
-	])
+	// event.addBefore([
+	// 	"cmi:water_pump",
+	// 	"cmi:mars_geothermal_vent",
+	// 	"cmi:mercury_geothermal_vent",
+	// 	"cmi:hydraulic_press",
+	// 	"cmi:accelerator_motor"
+	// ])
 
 	event.remove([
 		"cmi:feso4_solution_bucket",

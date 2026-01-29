@@ -114,6 +114,7 @@ thermal.centrifuge([
 ```
 
 4. **Create**序列合成规范
+* TransitionalItem必须为`不涉及其他配方`的`create:sequenced_assembly`物品类
 ```js
 create.sequenced_assembly([
 	Item.of("create:sturdy_sheet").withChance(0.7),
