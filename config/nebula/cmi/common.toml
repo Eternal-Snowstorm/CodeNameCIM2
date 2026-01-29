@@ -1,7 +1,7 @@
 
 #All settings below will only take effect after restarting the server or client.
 [general]
-	#Steam consumption per run of hydraulic press (0-10000)
+	#Steam consumption per run of hydraulic press (mB)
 	#default: 1000
 	#Range: 0 ~ 10000
 	steam_consumption = 1000
