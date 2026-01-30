@@ -73,8 +73,10 @@ config/ftbquests/qusets/chapters/control*
 !/kubejs/probe/docs/
 
 # Saves
-/saves/*
-!/saves/Debug
+/saves/新的世界/
+/saves/新的世界 (1)/
+/saves/Debug/
+!/saves/Debug/generated
 !/saves/QBWT*
 !/saves/Quest_Background*
 
@@ -116,3 +118,4 @@ config/ftbquests/qusets/chapters/control*
 !config/oei
 !config/railways-client.toml
 !config/tconstruct-common.toml
+config/jei/world/local/Debug/lookupHistory.ini
