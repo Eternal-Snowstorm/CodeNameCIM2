@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
 			"count": 5
 		},
 		"large_only": true,
-		"time": 100
+		"time": 200
 	})
 
 	// 粗制铂微粒
