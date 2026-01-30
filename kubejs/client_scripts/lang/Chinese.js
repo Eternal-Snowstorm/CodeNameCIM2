@@ -57,6 +57,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("incomplete_ultimate_control_circuit", "终极控制电路(半成品)")
 	addItemLang("incomplete_electron_tube", "电子管(半成品)")
 	addItemLang("magnesium_hydroxide", "氢氧化镁")
+	addItemLang("refined_iron_bloom", "精炼铁方坯")
 	addItemLang("brominated_flame_retardants", "溴系阻燃剂")
 	addItemLang("rubber_hand", "橡胶手部零件")
 	addItemLang("flame_retardant_plastic", "阻燃塑料")

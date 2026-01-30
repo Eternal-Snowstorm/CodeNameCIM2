@@ -223,6 +223,10 @@ StartupEvents.registry("item", (event) => {
 	addItem("refined_nuke_waste")
 		.texture(`${global.namespace}:item/material/refined_nuke_waste`)
 
+	// 精炼铁方坯
+	addItem("refined_iron_bloom")
+		.texture(`${global.namespace}:item/material/refined_iron_bloom`)
+
 	// 火箭零件
 	for (let i = 1; i <= 4; i++) {
 		addItem(`tier_${i}_rocket_nose_cone`)
