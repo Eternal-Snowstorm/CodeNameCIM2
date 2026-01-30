@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
 	// 液压机
-	kubejs.shaped("cmi:hydraulic_press", [
+	kubejs.shaped("cmi:steam_hammer", [
 		"A",
 		"B",
 		"C"
