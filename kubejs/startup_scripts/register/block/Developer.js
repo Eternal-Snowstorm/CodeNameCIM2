@@ -1,7 +1,6 @@
 StartupEvents.registry("block", (event) => {
 
 	function developerDollmodel(dollName, skinType) {
-
 		const PARENT = `cmi:block/dev/${skinType}`
 		const SKIN = `cmi:block/dev/${dollName}`
 
@@ -13,6 +12,12 @@ StartupEvents.registry("block", (event) => {
 		}
 	}
 
+	/**
+	 * 
+	 * @param {string} name 
+	 * @param {"wide"|"slim"} type 
+	 * @returns 
+	 */
 	function addDeveloperDoll(name, type) {
 		let builder =
 			event.create(`${global.namespace}:${name}`, "cardinal")
@@ -78,4 +83,6 @@ StartupEvents.registry("block", (event) => {
 	// 谢尔盖
 	addDeveloperDoll("sergei", "slim")
 
+	// 栗子
+	addDeveloperDoll("lirx_owo", "slim")
 })
