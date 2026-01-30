@@ -1,8 +1,25 @@
 
 #All settings below will only take effect after restarting the server or client.
 [general]
-	#Steam consumption per run of hydraulic press (mB)
-	#default: 1000
-	#Range: 0 ~ 10000
-	steam_consumption = 1000
+
+	#Hydraulic Press settings
+	[general.hydraulic_press]
+		#Steam consumption per run of hydraulic press (mB)
+		#type: int
+		#default: 1000
+		#Range: 0 ~ 10000
+		steam_consumption = 1000
+		#Steam capacity in hydraulic press (mB)
+		#type: int
+		#default: 10000
+		#Range: 1000 ~ 32000
+		steam_capacity = 10000
+
+	#Accelerator Motor settings
+	[general.accelerator_motor]
+		#Default speed of the Accelerator Motor
+		#type: int
+		#default: 16
+		#Range: 1 ~ 256
+		default_speed = 16
 

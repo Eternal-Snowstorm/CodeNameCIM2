@@ -74,7 +74,7 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 			.concat(Ingredient.of("#cmi:raw_metals").itemIds)
 			.concat(Ingredient.of("#cmi:ore_nodes").itemIds)
 		)
-		.displayName(Component.translatable(`itemGroup.${global.namespace}.metals`))
+		.displayName(Component.translatable(`itemGroup.${global.namespace}.materials`))
 
 	addCreativeTab("developers")
 		.icon(() => Item.of("cmi:re_construction"))
