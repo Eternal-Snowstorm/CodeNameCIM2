@@ -74,6 +74,8 @@ config/ftbquests/qusets/chapters/control*
 
 # Saves
 /saves/*
+!/saves/Debug/
+/saves/debug/*
 !/saves/Debug/generated
 
 #.vscode
