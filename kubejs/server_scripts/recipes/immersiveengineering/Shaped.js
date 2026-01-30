@@ -71,4 +71,26 @@ ServerEvents.recipes((event) => {
 		B: "minecraft:redstone",
 		C: "#forge:rods/wooden"
 	}).id("immersiveengineering:crafting/wirecoil_redstone")
+
+	// 复合窑壁
+	kubejs.shaped("4x immersiveindustry:rotary_kiln_cylinder", [
+		"AAA",
+		"BBB",
+		"CCC"
+	], {
+		A: "immersiveindustry:refractory_kiln_brick",
+		B: "tconstruct:scorched_brick",
+		C: "#forge:plates/steel"
+	}).id("immersiveindustry:crafting/rotary_kiln_cylinder")
+
+	// 加热窑壁
+	kubejs.shaped("2x immersiveindustry:car_kiln_brick", [
+		"AAA",
+		"ABA",
+		"CCC"
+	], {
+		A: "immersiveindustry:refractory_kiln_brick",
+		B: "cmi:coil_mechanism",
+		C: "#forge:plates/steel"
+	}).id("immersiveindustry:crafting/car_kiln_brick")
 })
