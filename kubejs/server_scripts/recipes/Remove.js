@@ -149,7 +149,8 @@ ServerEvents.recipes((event) => {
 		"farmersdelight:cutting/stone",
 		"tconstruct:smeltery/seared/grout_multiple",
 		"createdieselgenerators:distillation/crude_oil",
-		"thermal:fuels/magmatic/magmatic_lava"
+		"thermal:fuels/magmatic/magmatic_lava",
+		"immersiveindustry:chemical"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

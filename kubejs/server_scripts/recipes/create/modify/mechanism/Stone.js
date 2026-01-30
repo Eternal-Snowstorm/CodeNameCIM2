@@ -2,12 +2,6 @@ ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 	const MECH = "cmi:stone_mechanism"
 
-	// 焦炉砖
-	event.replaceInput({
-		input: "#forge:sandstone",
-		output: "immersiveengineering:cokebrick"
-	}, "#forge:sandstone", MECH)
-
 	// 焦黑排液孔
 	kubejs.shaped("tconstruct:seared_drain", [
 		"B B",
@@ -40,26 +34,6 @@ ServerEvents.recipes((event) => {
 		B: "tconstruct:seared_brick",
 		C: "minecraft:gold_ingot"
 	}).id("tconstruct:smeltery/seared/duct")
-
-	// 焦黑铸件台
-	kubejs.shaped("tconstruct:seared_table", [
-		"BAB",
-		"B B",
-		"B B"
-	], {
-		A: MECH,
-		B: "tconstruct:seared_brick"
-	}).id("tconstruct:smeltery/seared/table")
-
-	// 焦黑浇筑盆
-	kubejs.shaped("tconstruct:seared_basin", [
-		"B B",
-		"B B",
-		"BAB"
-	], {
-		A: MECH,
-		B: "tconstruct:seared_brick"
-	}).id("tconstruct:smeltery/seared/basin")
 
 	// 焦黑加热器
 	kubejs.shaped("tconstruct:seared_heater", [
