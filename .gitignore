@@ -73,12 +73,8 @@ config/ftbquests/qusets/chapters/control*
 !/kubejs/probe/docs/
 
 # Saves
-/saves/新的世界/
-/saves/新的世界 (1)/
-/saves/Debug/
+/saves/*
 !/saves/Debug/generated
-!/saves/QBWT*
-!/saves/Quest_Background*
 
 #.vscode
 /.vscode/*
