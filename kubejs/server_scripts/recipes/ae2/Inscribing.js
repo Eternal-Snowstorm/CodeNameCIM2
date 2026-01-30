@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
 			"middle": Ingredient.of("#forge:gems/certus_quartz").toJson(),
 			"top": Ingredient.of("ae2:calculation_processor_press").toJson()
 		},
-		"mode": "inscribe",
+		"mode": "press",
 		"result": Item.of("ae2:printed_calculation_processor").toJson()
 	}).id("ae2:inscriber/calculation_processor_print")
 
@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
 			"middle": Ingredient.of("ae2:printed_logic_processor").toJson(),
 			"top": Ingredient.of("ae2:printed_silicon").toJson()
 		},
-		"mode": "inscribe",
+		"mode": "press",
 		"result": Item.of("ae2:logic_processor").toJson()
 	})
 
@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
 			"middle": Ingredient.of("ae2:printed_calculation_processor").toJson(),
 			"top": Ingredient.of("ae2:printed_silicon").toJson()
 		},
-		"mode": "inscribe",
+		"mode": "press",
 		"result": Item.of("ae2:calculation_processor").toJson()
 	})
 
@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
 			"middle": Ingredient.of("ae2:printed_engineering_processor").toJson(),
 			"top": Ingredient.of("ae2:printed_silicon").toJson()
 		},
-		"mode": "inscribe",
+		"mode": "press",
 		"result": Item.of("ae2:engineering_processor").toJson()
 	})
 
@@ -93,7 +93,7 @@ ServerEvents.recipes((event) => {
 			"middle": Ingredient.of("advanced_ae:printed_quantum_processor").toJson(),
 			"top": Ingredient.of("ae2:printed_silicon").toJson()
 		},
-		"mode": "inscribe",
+		"mode": "press",
 		"result": Item.of("advanced_ae:quantum_processor").toJson()
 	})
 })
