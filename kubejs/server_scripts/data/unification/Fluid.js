@@ -1,15 +1,15 @@
 ServerEvents.highPriorityData((event) => {
-	// // 石油
-	// addJsonFile("oil", addUnification(
-	// 	"#forge:oil",
-	// 	"createdieselgenerators:crude_oil"
-	// ))
+	// 石油
+	addJsonFile("oil", addUnification(
+		"#forge:oil",
+		"createdieselgenerators:crude_oil"
+	))
 
-	// // 蒸汽
-	// addJsonFile("steam", addUnification(
-	// 	"#forge:steam",
-	// 	"mekanism:steam"
-	// ))
+	// 蒸汽
+	addJsonFile("steam", addUnification(
+		"#forge:steam",
+		"mekanism:steam"
+	))
 
 	/**
 	 * @example addJsonFile("oil", addUnification("#forge:oil", "createdieselgenerators:crude_oil"))

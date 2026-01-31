@@ -50,10 +50,6 @@ ServerEvents.highPriorityData((event) => {
 	],"minecraft:air")
 
 	function addUnification(name, match, block) {
-		let blockUnification = {
-			matchBlocks: match,
-			resultBlocks: block
-		}
 		let itemUnification = {
 			matchItems: match,
 			resultItems: block
