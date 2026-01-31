@@ -165,27 +165,27 @@ ItemEvents.tooltip((event) => {
 		}
 	})
 })
-NebulaEvents.fluidTooltip((event) => {
-	chemSalts.forEach((salt) => {
-		event.add(`cmi:${salt}_solution`, (tooltip) => {
-			tooltip.add(Component.translatable(`tooltip.cmi.${salt}_solution_bucket`))
-		})
-	})
+// NebulaEvents.fluidTooltip((event) => {
+// 	chemSalts.forEach((salt) => {
+// 		event.add(`cmi:${salt}_solution`, (tooltip) => {
+// 			tooltip.add(Component.translatable(`tooltip.cmi.${salt}_solution_bucket`))
+// 		})
+// 	})
 
-	// 燃料温度
-	global.fuelList.forEach((fuel) => {
-		let tp = global.fuelTemperatures[fuel]
+// 	// 燃料温度
+// 	global.fuelList.forEach((fuel) => {
+// 		let tp = global.fuelTemperatures[fuel]
 
-		if (typeof tp === "number") {
-			let translatable = Component.translatable(
-				"tooltip.cmi.fuelTemperature",
-				tp,
-				NebulaUtils.toFahrenheit(tp)
-			).yellow()
+// 		if (typeof tp === "number") {
+// 			let translatable = Component.translatable(
+// 				"tooltip.cmi.fuelTemperature",
+// 				tp,
+// 				NebulaUtils.toFahrenheit(tp)
+// 			).yellow()
 
-			event.add(fuel, (tooltip) => {
-				tooltip.add(translatable)
-			})
-		}
-	})
-})
+// 			event.add(fuel, (tooltip) => {
+// 				tooltip.add(translatable)
+// 			})
+// 		}
+// 	})
+// })
