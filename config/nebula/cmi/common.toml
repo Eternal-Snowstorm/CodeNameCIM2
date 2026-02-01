@@ -33,3 +33,42 @@
 		#Range: 0.0 ~ 64.0
 		stress_impact = 64.0
 
+	#Fast Spout settings
+	[general.fast_spout]
+		#Filling time in ticks
+		#20 ticks = 1 second
+		#Original spout uses 20 ticks
+		#type: int
+		#default: 5
+		#Range: 1 ~ 100
+		filling_time = 5
+
+	#Void Dust Collector settings
+	[general.void_dust_collector]
+		#Work time
+		#20 ticks = 1 second
+		#type: int
+		#default: 20
+		#Range: 1 ~ 100000
+		work_time = 20
+		#Energy consumed per tick of void dust collector (FE)
+		#type: int
+		#default: 100
+		#Range: > 0
+		energy_consumption = 100
+		#Energy capacity of void dust collector (FE)
+		#type: int
+		#default: 50000
+		#Range: > 0
+		energy_capacity = 50000
+		#Max receive of void dust collector (FE)
+		#type: int
+		#default: 1000
+		#Range: > 0
+		max_receive = 1000
+		#Work height of void dust collector
+		#type: int
+		#default: -63
+		#Range: -64 ~ 319
+		work_height = -63
+

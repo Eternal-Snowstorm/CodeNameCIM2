@@ -1,3 +1,8 @@
+let $TooltipHelper =
+	Java.loadClass("com.simibubi.create.foundation.item.TooltipHelper")
+let $CreateLang =
+	Java.loadClass("com.simibubi.create.foundation.utility.Lang")
+
 ItemEvents.tooltip((event) => {
 	addAccelerateTooltip("cmi:stone_mechanism")
 	addAccelerateTooltip("cmi:andesite_mechanism")
@@ -135,4 +140,28 @@ ItemEvents.tooltip((event) => {
 			}
 		}
 	)
+
+	// 打桩机
+	event.addAdvanced("cmi:impact_pile", (item, advanced, tooltip) => {
+		$CreateLang.translate("tooltip.holdForDescription", Component.literal("Shift")
+			.withStyle(event.shift ? ChatFormatting.WHITE : ChatFormatting.GRAY))
+			.style(ChatFormatting.DARK_GRAY)
+			.addTo(tooltip)
+
+		if (event.shift) {
+			tooltip.addAll($TooltipHelper.cutStringTextComponent(
+				CMIModLang.translateDirect("tooltip.impact_pile.behaviour1").getString(),
+				$TooltipHelper.Palette.STANDARD_CREATE.primary(),
+				$TooltipHelper.Palette.STANDARD_CREATE.highlight(),
+				0
+			))
+
+			tooltip.addAll($TooltipHelper.cutStringTextComponent(
+				CMIModLang.translateDirect("tooltip.impact_pile.behaviour2").getString(),
+				$TooltipHelper.Palette.STANDARD_CREATE.primary(),
+				$TooltipHelper.Palette.STANDARD_CREATE.highlight(),
+				0
+			))
+		}
+	})
 })

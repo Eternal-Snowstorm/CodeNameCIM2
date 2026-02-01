@@ -11,6 +11,17 @@ StartupEvents.registry("block", (event) => {
 		return event.create(`${global.namespace}:${name}`, type)
 	}
 
+	// 虚空涌泉
+	addBlock("void_spring")
+		.hardness(-1)
+		.resistance(114514)
+
+	// 冲击桩
+	addBlock("impact_pile")
+		.hardness(5)
+		.resistance(5)
+		.blockstateJson
+
 	// 催生器
 	addBlock("accelerator")
 		.soundType(SoundType.METAL)

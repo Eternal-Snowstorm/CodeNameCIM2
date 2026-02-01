@@ -285,3 +285,7 @@ new Material("rubber", "wooden")
 	// .color()
 	.dust(false)
 	.sound(SoundType.WOOL)
+
+// 虚空粉
+new Material("void", "nether")
+	.dust(false)
