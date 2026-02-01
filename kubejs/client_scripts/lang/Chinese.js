@@ -31,6 +31,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("compressed_wood_chip_briquette", "压缩木屑块")
 	addItemLang("densely_packed_wood_chip_briquette", "致密压缩木屑块")
 	addItemLang("creosote_wood_chip_briquette", "浸油致密压缩木屑块")
+	addItemLang("redstone_wire", "红石线")
+	addItemLang("inscribed_silicon", "线刻硅板")
 	addItemLang("andesite_dust", "安山岩粉")
 	addItemLang("andesite_aggregate", "安山混合物")
 	addItemLang("small_coal_coke", "小块焦炭")

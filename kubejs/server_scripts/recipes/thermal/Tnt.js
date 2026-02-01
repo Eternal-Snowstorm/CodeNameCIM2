@@ -79,15 +79,36 @@ ServerEvents.recipes((event) => {
 		}
 	}
 
+	// 催化剂配方
+	event.custom({
+		"type": "thermal_extra:nitratic_igniter_catalyst",
+		"energy_mod": 1.0,
+		"ingredient": {
+			"item": "cmi:trinitrotoluene"
+		},
+		"primary_mod": 1.0,
+		"secondary_mod": 1.0
+	})
+
+	event.custom({
+		"type": "thermal_extra:nitratic_igniter_catalyst",
+		"energy_mod": 1.25,
+		"ingredient": {
+			"item": "cmi:nitrocellulose"
+		},
+		"primary_mod": 1.0,
+		"secondary_mod": 1.0
+	})
+
 	// region add Recipes
 
 	new NitraticIgniterRecipeBuilder()
-		.energy(2000)
-		.ingredient("#minecraft:dirt")
+		.energy(4000)
+		.ingredient("#forge:raw_materials/osmium")
 		.results([
-			setResult("cmi:cast_iron_ingot", 2, 1),
-			setResult("cmi:cast_iron_ingot", 1, 0.5),
-			setResult("cmi:cast_iron_ingot", 1, 0.25)
+			setResult("mekanism:clump_osmium", 2, 1),
+			setResult("mekanism:clump_osmium", 1, 0.5),
+			setResult("mekanism:clump_osmium", 1, 0.25)
 		])
 		.build()
 

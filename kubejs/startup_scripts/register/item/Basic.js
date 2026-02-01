@@ -240,6 +240,16 @@ StartupEvents.registry("item", (event) => {
 			.tag(`${global.namespace}:rocket_fins`)
 	}
 
+	// 红石线
+	addItem("redstone_wire")
+		.texture(`${global.namespace}:item/material/redstone_wire`)
+		.tag("forge:wires/redstone")
+		.tag("forge:wires")
+
+	// 线刻硅板
+	addItem("inscribed_silicon")
+		.texture(`${global.namespace}:item/material/silicon/inscribed_silicon`)
+
 	// 羊皮纸
 	addItem("parchment")
 		.texture(`${global.namespace}:item/material/parchment`)

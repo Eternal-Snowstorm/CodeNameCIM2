@@ -306,7 +306,8 @@ ServerEvents.recipes((event) => {
 		"vintageimprovements:laser_cutting",
 		"ad_astra:nasa_workbench",
 		"immersiveengineering:fermenter",
-		"immersiveengineering:alloy"
+		"immersiveengineering:alloy",
+		"thermal_extra:nitratic_igniter_catalyst"
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({

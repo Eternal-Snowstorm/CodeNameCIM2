@@ -61,17 +61,6 @@ ServerEvents.recipes((event) => {
 		B: "create:shaft"
 	}).id("createdieselgenerators:mechanical_crafting/pumpjack_crank")
 
-	// 红石线圈
-	kubejs.shaped("immersiveengineering:wirecoil_redstone", [
-		" A ",
-		"BCB",
-		" A "
-	], {
-		A: "#forge:wires/lead",
-		B: "minecraft:redstone",
-		C: "#forge:rods/wooden"
-	}).id("immersiveengineering:crafting/wirecoil_redstone")
-
 	// 复合窑壁
 	kubejs.shaped("4x immersiveindustry:rotary_kiln_cylinder", [
 		"AAA",
@@ -113,4 +102,14 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/steel",
 		B: "#forge:gears/brass"
 	}).id("immersiveengineering:crafting/component_steel")
+
+	// 红石线圈
+	kubejs.shaped("4x immersiveengineering:wirecoil_redstone", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "cmi:redstone_wire",
+		B: "#forge:rods/wooden"
+	}).id("immersiveengineering:crafting/wirecoil_redstone")
 })

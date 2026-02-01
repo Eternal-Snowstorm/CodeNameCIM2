@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
         ]),
         create.deploying(Incomplete.CONTROL, [
             Incomplete.CONTROL,
-            "immersiveengineering:wirecoil_redstone"
+            "cmi:redstone_wire"
         ]),
         vintageimprovements.laser_cutting(Incomplete.CONTROL, [
             Incomplete.CONTROL
@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
         ]).itemAsHead("ae2:logic_processor_press"),
         create.deploying(Incomplete.LOGIC, [
             Incomplete.LOGIC,
-            "create:polished_rose_quartz"
+            "#forge:ingots/hop_graphite"
         ]),
         create.deploying(Incomplete.LOGIC, [
             Incomplete.LOGIC,
@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
         ]),
         create.deploying(Incomplete.LOGIC, [
             Incomplete.LOGIC,
-            "immersiveengineering:wirecoil_redstone"
+            "cmi:redstone_wire"
         ]),
         vintageimprovements.laser_cutting(Incomplete.LOGIC, [
             Incomplete.LOGIC
@@ -92,7 +92,7 @@ ServerEvents.recipes((event) => {
         ]),
         create.deploying(Incomplete.CALCULATION, [
             Incomplete.CALCULATION,
-            "immersiveengineering:wirecoil_redstone"
+            "cmi:redstone_wire"
         ]),
         vintageimprovements.laser_cutting(Incomplete.CALCULATION, [
             Incomplete.CALCULATION
@@ -119,7 +119,7 @@ ServerEvents.recipes((event) => {
         ]),
         create.deploying(Incomplete.ENGINEERING, [
             Incomplete.ENGINEERING,
-            "immersiveengineering:wirecoil_redstone"
+            "cmi:redstone_wire"
         ]),
         vintageimprovements.laser_cutting(Incomplete.ENGINEERING,
             Incomplete.ENGINEERING
@@ -146,7 +146,7 @@ ServerEvents.recipes((event) => {
         ]),
         create.deploying(Print.QUANTUM, [
             Incomplete.QUANTUM,
-            "immersiveengineering:wirecoil_redstone"
+            "cmi:redstone_wire"
         ]),
         vintageimprovements.laser_cutting(Print.QUANTUM,
             Incomplete.QUANTUM
@@ -160,9 +160,9 @@ ServerEvents.recipes((event) => {
     event.custom({
         "type": "expatternprovider:circuit_cutter",
         "fluid_input": {
-            "amount": 100,
+            "amount": 1000,
             "ingredient": {
-                "fluid": "immersiveengineering:redstone_acid"
+                "fluid": "minecraft:water"
             }
         },
         "item_input": {
@@ -180,9 +180,9 @@ ServerEvents.recipes((event) => {
     event.custom({
         "type": "expatternprovider:circuit_cutter",
         "fluid_input": {
-            "amount": 100,
+            "amount": 1000,
             "ingredient": {
-                "fluid": "immersiveengineering:redstone_acid"
+                "fluid": "minecraft:water"
             }
         },
         "item_input": {
@@ -200,9 +200,9 @@ ServerEvents.recipes((event) => {
     event.custom({
         "type": "expatternprovider:circuit_cutter",
         "fluid_input": {
-            "amount": 100,
+            "amount": 1000,
             "ingredient": {
-                "fluid": "immersiveengineering:redstone_acid"
+                "fluid": "minecraft:water"
             }
         },
         "item_input": {
@@ -220,9 +220,9 @@ ServerEvents.recipes((event) => {
     event.custom({
         "type": "expatternprovider:circuit_cutter",
         "fluid_input": {
-            "amount": 100,
+            "amount": 1000,
             "ingredient": {
-                "fluid": "immersiveengineering:redstone_acid"
+                "fluid": "minecraft:water"
             }
         },
         "item_input": {

@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
 		NATURE: "cmi:incomplete_nature_mechanism",
 		LIGHT: "cmi:incomplete_light_engineering_mechanism",
 		HEAVY: "cmi:incomplete_heavy_engineering_mechanism",
-		EMDER: "cmi:incomplete_ender_mechanism",
+		ENDER: "cmi:incomplete_ender_mechanism",
 		COIL: "cmi:incomplete_coil_mechanism",
 		ENCHANTED: "cmi:incomplete_enchanted_mechanism",
 		SMART: "cmi:incomplete_smart_mechanism",
@@ -228,7 +228,7 @@ ServerEvents.recipes((event) => {
 	create.sequenced_assembly("cmi:smart_mechanism", [
 		"#forge:plates/silver"
 	], [
-		create.deploying(Inc.SMART, [Inc.SMART, "#forge:ingots/hop_graphite"]),
+		create.deploying(Inc.SMART, [Inc.SMART, "ae2:printed_silicon"]),
 		create.pressing(Inc.SMART, Inc.SMART),
 		create.deploying(Inc.SMART, [Inc.SMART, "cmi:smart_mechanism_augment"]),
 		create.deploying(Inc.SMART, [Inc.SMART, "cmi:engineering_mechanism_part"]),
