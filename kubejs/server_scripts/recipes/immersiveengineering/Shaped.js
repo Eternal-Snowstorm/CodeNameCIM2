@@ -93,4 +93,24 @@ ServerEvents.recipes((event) => {
 		B: "cmi:coil_mechanism",
 		C: "#forge:plates/steel"
 	}).id("immersiveindustry:crafting/car_kiln_brick")
+
+	// 铁机械零件
+	kubejs.shaped("8x immersiveengineering:component_iron", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "#forge:plates/iron",
+		B: "#forge:gears/copper"
+	}).id("immersiveengineering:crafting/component_iron")
+
+	// 钢机械零件
+	kubejs.shaped("8x immersiveengineering:component_steel", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "#forge:plates/steel",
+		B: "#forge:gears/brass"
+	}).id("immersiveengineering:crafting/component_steel")
 })
