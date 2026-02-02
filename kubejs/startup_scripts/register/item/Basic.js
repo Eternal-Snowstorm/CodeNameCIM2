@@ -272,7 +272,7 @@ StartupEvents.registry("item", (event) => {
 			}
 		},
 		largeCogwheel: function (material) {
-			const PARENT = "cmi:item/cogwheels/large_cogwheels"
+			const PARENT = "cmi:item/cogwheels/large_cogwheel"
 			const PARTICLE = `steampowered:block/cogwheel/${material}_large_cogwheel`
 			const LARGE_COGWHEEL = `steampowered:block/cogwheel/${material}_large_cogwheel`
 
