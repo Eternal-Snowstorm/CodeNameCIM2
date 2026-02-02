@@ -69,16 +69,18 @@ BlockEvents.rightClicked((event) => {
 			} else {
 				for (let i = -1; i <= 1; i++) {
 					for (let j = -1; j <= 1; j++) {
-						let destroyPos = new BlockPos(centerX + i, -61, centerZ + j)
+						let destroyPos = new BlockPos(centerX + i, -60, centerZ + j)
 
 						level.destroyBlock(destroyPos, false)
 					}
 				}
-				let voidSpringPos = new BlockPos(centerX, -62, centerZ)
-				let bedrockPos = new BlockPos(centerX, -63, centerZ)
+				let voidSpringPos = new BlockPos(centerX, -61, centerZ)
+				let bedrockPos1 = new BlockPos(centerX, -62, centerZ)
+				let bedrockPos2 = new BlockPos(centerX, -63, centerZ)
 				let voidSpring = Block.getBlock("cmi:void_spring").defaultBlockState()
 				level.setBlock(voidSpringPos, voidSpring, 3)
-				level.setBlock(bedrockPos, bedrock, 3)
+				level.setBlock(bedrockPos1, bedrock, 3)
+				level.setBlock(bedrockPos2, bedrock, 3)
 			}
 		})
 	}

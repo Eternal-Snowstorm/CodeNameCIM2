@@ -71,6 +71,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("incomplete_upgrade_augment_2", "强化整合组件(半成品)")
 	addItemLang("incomplete_upgrade_augment_3", "谐振整合组件(半成品)")
 	addItemLang("lime_dust", "石灰粉")
+	addItemLang("void_dust", "虚空粉")
 	addItemLang("guide", "指南")
 	addItemLang("andesite_casing_framework", "安山机壳框架")
 	addItemLang("brass_casing_framework", "黄铜机壳框架")
@@ -163,6 +164,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("oil_shale", "油页岩")
 	addBlockLang("combustion_medium_block", "燃烧介质块")
 	addBlockLang("radsand", "辐射沙")
+
+	addBlockLang("impact_pile", "冲击桩")
+	addBlockLang("void_spring", "虚空涌泉")
 
 	addBlockLang("broken_andesite_drill_head", "损坏的安山岩制钻头")
 	addBlockLang("broken_copper_drill_head", "损坏的铜制钻头")
