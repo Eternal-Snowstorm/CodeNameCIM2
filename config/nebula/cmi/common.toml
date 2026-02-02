@@ -33,23 +33,6 @@
 		#Range: 0.0 ~ 64.0
 		stress_impact = 64.0
 
-	#Fast Spout settings
-	[general.fast_spout]
-		#Filling time in ticks
-		#20 ticks = 1 second
-		#Original spout uses 20 ticks
-		#type: int
-		#default: 5
-		#Range: 1 ~ 100
-		filling_time = 5
-		#Fluid capacity in mB (millibuckets)
-		#1000 mB = 1 bucket
-		#Original spout uses 1000 mB
-		#type: int
-		#default: 5000
-		#Range: 2000 ~ 64000
-		capacity = 5000
-
 	#Void Dust Collector settings
 	[general.void_dust_collector]
 		#Work time
@@ -78,4 +61,21 @@
 		#default: -63
 		#Range: -63 ~ 319
 		work_height = -63
+
+	#Advanced Spout settings
+	[general.advanced_spout]
+		#Filling time in ticks
+		#20 ticks = 1 second
+		#Original spout uses 20 ticks
+		#type: int
+		#default: 5
+		#Range: 1 ~ 100
+		filling_time = 5
+		#Fluid capacity in mB (millibuckets)
+		#1000 mB = 1 bucket
+		#Original spout uses 1000 mB
+		#type: int
+		#default: 5000
+		#Range: 2000 ~ 64000
+		capacity = 5000
 

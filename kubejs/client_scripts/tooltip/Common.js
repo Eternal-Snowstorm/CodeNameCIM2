@@ -120,7 +120,7 @@ ItemEvents.tooltip((event) => {
 				let translatable = Component.translatable(
 					"tooltip.cmi.meltingPoint",
 					mp,
-					NebulaUtils.toFahrenheit(mp)
+					NebulaLibs.toFahrenheit(mp)
 				).yellow()
 
 				event.add(`#forge:${type}s/${material}`, translatable)
@@ -140,7 +140,7 @@ ItemEvents.tooltip((event) => {
 			let translatable = Component.translatable(
 				"tooltip.cmi.fuelTemperature",
 				tp,
-				NebulaUtils.toFahrenheit(tp)
+				NebulaLibs.toFahrenheit(tp)
 			).yellow()
 
 			event.add(bucket, translatable)
@@ -158,7 +158,7 @@ ItemEvents.tooltip((event) => {
 			let translatable = Component.translatable(
 				"tooltip.cmi.meltingPoint",
 				mp,
-				NebulaUtils.toFahrenheit(mp)
+				NebulaLibs.toFahrenheit(mp)
 			).yellow()
 
 			event.add(`#create:crushed_raw_materials/${material}`, translatable)
@@ -180,7 +180,7 @@ ItemEvents.tooltip((event) => {
 // 			let translatable = Component.translatable(
 // 				"tooltip.cmi.fuelTemperature",
 // 				tp,
-// 				NebulaUtils.toFahrenheit(tp)
+// 				NebulaLibs.toFahrenheit(tp)
 // 			).yellow()
 
 // 			event.add(fuel, (tooltip) => {
