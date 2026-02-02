@@ -279,13 +279,3 @@ new Material("cobalt", "iron")
 	.crystal()
 	.slurry()
 	.dirtySlurry()
-
-// 橡胶
-new Material("rubber", "wooden")
-	// .color()
-	.dust(false)
-	.sound(SoundType.WOOL)
-
-// 虚空粉
-new Material("void", "nether")
-	.dust(false)
