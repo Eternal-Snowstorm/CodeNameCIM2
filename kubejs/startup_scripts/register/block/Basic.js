@@ -18,8 +18,9 @@ StartupEvents.registry("block", (event) => {
 
 	// 冲击桩
 	addBlock("impact_pile")
-	.model(`${global.namespace}:block/custom/impact_pile`)
+		.model(`${global.namespace}:block/custom/impact_pile`)
 		.defaultCutout()
+		.box(6, 0, 6, 10, 16, 10)
 		.hardness(5)
 		.resistance(5)
 
