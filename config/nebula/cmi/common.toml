@@ -56,7 +56,7 @@
 		#default: 1000
 		#Range: > 0
 		max_receive = 1000
-		#Work height of void dust collector
+		#Minimum work height of void dust collector(Collector doesnt work if greater than max height)
 		#type: int
 		#default: -63
 		#Range: -63 ~ 319
