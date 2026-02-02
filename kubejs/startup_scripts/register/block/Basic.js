@@ -20,7 +20,6 @@ StartupEvents.registry("block", (event) => {
 	addBlock("impact_pile")
 		.hardness(5)
 		.resistance(5)
-		.blockstateJson
 
 	// 催生器
 	addBlock("accelerator")

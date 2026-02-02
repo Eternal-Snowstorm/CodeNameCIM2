@@ -547,4 +547,17 @@ ServerEvents.recipes((event) => {
 		.fluid(Fluid.of("tconstruct:molten_brass", 180 * 2))
 		.cast_consumed(true)
 		.cooling_time(20)
+
+	// 高级注液器
+	kubejs.shaped("cmi:advanced_spout", [
+		"ABA",
+		"CDC",
+		" E "
+	], {
+		A: ["#forge:ingots/cast_iron", "#forge:plates/cast_iron"],
+		B: "vintageimprovements:redstone_module",
+		C: "cmi:copper_mechanism",
+		D: "create:spout",
+		E: "thermal:cured_rubber"
+	})
 })
