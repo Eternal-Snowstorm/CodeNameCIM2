@@ -42,6 +42,13 @@
 		#default: 5
 		#Range: 1 ~ 100
 		filling_time = 5
+		#Fluid capacity in mB (millibuckets)
+		#1000 mB = 1 bucket
+		#Original spout uses 1000 mB
+		#type: int
+		#default: 5000
+		#Range: 2000 ~ 64000
+		capacity = 5000
 
 	#Void Dust Collector settings
 	[general.void_dust_collector]
@@ -69,6 +76,6 @@
 		#Work height of void dust collector
 		#type: int
 		#default: -63
-		#Range: -64 ~ 319
+		#Range: -63 ~ 319
 		work_height = -63
 

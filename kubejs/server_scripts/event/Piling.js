@@ -9,9 +9,7 @@ BlockEvents.rightClicked((event) => {
 		let below = level.getBlock(pos.below())
 		if (below.id !== "create:mechanical_drill" || below.properties.facing !== "down") {
 			return
-
 		}
-		// ↑↑↑ 判断结束
 
 		let centerX = pos.x
 		let centerZ = pos.z
