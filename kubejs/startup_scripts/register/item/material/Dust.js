@@ -21,5 +21,7 @@ StartupEvents.registry("item", (event) => {
 	}
 
 	addColorDustItem("end_stone", 0xF6FABD)
+	addColorDustItem("rubber", 0xECEBD6)
 	addAloneDustItem("oil_shale")
+	addAloneDustItem("void")
 })

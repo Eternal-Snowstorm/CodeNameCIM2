@@ -4,39 +4,13 @@ BlockEvents.rightClicked((event) => {
 
 	let hasWrench = player.getMainHandItem().hasTag("forge:tools/wrench")
 	let hasHammer = player.getMainHandItem().hasTag("forge:hammers")
+	let bedrock = Block.getBlock("minecraft:bedrock").defaultBlockState()
 
-	if (block.id === "cmi:impact_pile" && hasWrench) {
-		let below = level.getBlock(pos.below())
-		if (below.id !== "create:mechanical_drill" || below.properties.facing !== "down") {
-			return
-		}
-
-		let centerX = pos.x
-		let centerZ = pos.z
-		let currentY = pos.y
-		player.swing()
-
-		level.server.scheduleInTicks(1, function tick() {
-			if (currentY > -64) {
-
-				let p1 = new BlockPos(centerX, currentY, centerZ)
-				level.destroyBlock(p1, false)
-
-				currentY--
-				level.server.scheduleInTicks(1, tick)
-
-			} else {
-				let p2 = new BlockPos(centerX, -64, centerZ)
-				let voidSpring = Block.getBlock("cmi:void_spring").defaultBlockState()
-				level.setBlock(p2, voidSpring, 3)
-			}
-		})
-	} else if (block.id === "cmi:impact_pile" && hasHammer) {
+	if (block.id === "cmi:impact_pile" && hasHammer) {
 		let below = level.getBlock(pos.below())
 		if (below.id !== "minecraft:bedrock") {
 			return
 		}
-		// 判定
 
 		let centerX = pos.x
 		let centerZ = pos.z
@@ -66,10 +40,46 @@ BlockEvents.rightClicked((event) => {
 
 			let currentPos = new BlockPos(centerX, centerY - i, centerZ)
 			let currentBlock = level.getBlockState(currentPos)
-			let bedrock = Block.getBlock("minecraft:bedrock").defaultBlockState()
 			if (currentBlock !== bedrock) {
 				level.setBlock(currentPos, bedrock, 3)
 			}
 		}
+	}
+
+	if (block.id === "cmi:impact_pile" && hasWrench) {
+		let below = level.getBlock(pos.below())
+		if (below.id !== "create:mechanical_drill" || below.properties.facing !== "down") {
+			return
+		}
+
+		let centerX = pos.x
+		let centerZ = pos.z
+		let currentY = pos.y
+		player.swing()
+
+		level.server.scheduleInTicks(1, function tick() {
+			if (currentY > -62) {
+
+				let destroyPos = new BlockPos(centerX, currentY, centerZ)
+				level.destroyBlock(destroyPos, false)
+
+				currentY--
+				level.server.scheduleInTicks(1, tick)
+
+			} else {
+				for (let i = -1; i <= 1; i++) {
+					for (let j = -1; j <= 1; j++) {
+						let destroyPos = new BlockPos(centerX + i, -61, centerZ + j)
+
+						level.destroyBlock(destroyPos, false)
+					}
+				}
+				let voidSpringPos = new BlockPos(centerX, -62, centerZ)
+				let bedrockPos = new BlockPos(centerX, -63, centerZ)
+				let voidSpring = Block.getBlock("cmi:void_spring").defaultBlockState()
+				level.setBlock(voidSpringPos, voidSpring, 3)
+				level.setBlock(bedrockPos, bedrock, 3)
+			}
+		})
 	}
 })
