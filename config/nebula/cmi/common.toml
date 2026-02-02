@@ -60,7 +60,12 @@
 		#type: int
 		#default: -63
 		#Range: -63 ~ 319
-		work_height = -63
+		"min work_height" = -63
+		#Maximum work height of void dust collector
+		#type: int
+		#default: -60
+		#Range: -63 ~ 319
+		"max work_height" = -60
 
 	#Advanced Spout settings
 	[general.advanced_spout]
