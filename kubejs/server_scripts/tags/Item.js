@@ -475,6 +475,18 @@ ServerEvents.tags("item", (event) => {
 		.add("create:brass_encased_shaft")
 		.add("create:andesite_encased_shaft")
 
+	event.get("cmi:natural_powders")
+		.add("minecraft:blaze_powder")
+		.add("thermal:basalz_powder")
+		.add("thermal:blitz_powder")
+		.add("thermal:blizz_powder")
+
+	event.add("portality:portality_module")
+		.add("portality:module_energy")
+		.add("portality:module_fluids")
+		.add("portality:module_items")
+		.add("portality:module_interdimensional")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",

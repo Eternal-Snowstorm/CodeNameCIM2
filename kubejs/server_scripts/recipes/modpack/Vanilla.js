@@ -393,6 +393,16 @@ ServerEvents.recipes((event) => {
 		E: "#forge:tools/wrench"
 	})
 
+	// 冲击桩
+	kubejs.shaped("cmi:impact_pile", [
+		"A",
+		"B",
+		"B"
+	], {
+		A: "#forge:plates/invar",
+		B: "#forge:rods/netherite"
+	})
+
 	let dimensions = [
 		"overworld",
 		"moon",
