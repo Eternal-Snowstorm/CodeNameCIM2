@@ -49,7 +49,7 @@ ServerEvents.highPriorityData((event) => {
 	 */
 	function addDieselEngineFuelType(name, speed) {
 		let getFluidName = IngrUtils.getPath(name)
-		let data = {
+		let engineFuelData = {
 			fluid: name,
 			sound_speed: speed,
 			normal: {},
@@ -57,8 +57,8 @@ ServerEvents.highPriorityData((event) => {
 			huge: {}
 		}
 
-		function save() {
-			return event.addJson(`createdieselgenerators:diesel_engine_fuel_types/${getFluidName}.json`, data)
+		function build() {
+			event.addJson(`createdieselgenerators:diesel_engine_fuel_types/${getFluidName}.json`, engineFuelData)
 		}
 
 		return {
@@ -105,8 +105,22 @@ ServerEvents.highPriorityData((event) => {
 					strength: strength,
 					burn_rate: burnRate
 				}
-				save()
+				build()
 				return this
+			},
+			/**
+			 * 
+			 * @param {Number} tick 燃烧时长
+			 * @returns 
+			 */
+			train(tick) {
+				let trainFuelData = {
+					fluids: [
+						name
+					],
+					fuel_ticks: tick
+				}
+				event.addJson(`cmi:railways_liquid_fuel/${getFluidName}.json`, trainFuelData)
 			}
 		}
 	}
