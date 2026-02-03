@@ -1,9 +1,0 @@
-{
-	"ctm": {
-		"ctm_version": 1,
-		"type": "ctm",
-		"textures": [
-			"cmi:block/casing/bronze/ctm"
-		]
-	}
-}
