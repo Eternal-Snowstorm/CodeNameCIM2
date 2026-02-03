@@ -20,7 +20,8 @@ StartupEvents.registry("block", (event) => {
 	addBlock("impact_pile")
 		.model(`${global.namespace}:block/custom/impact_pile`)
 		.defaultCutout()
-		.box(6, 0, 6, 10, 16, 10)
+		.box(7, 0, 7, 9, 14, 9, true)
+		.box(6, 14, 6, 10, 16, 10, true)
 		.hardness(5)
 		.resistance(5)
 

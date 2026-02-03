@@ -56,16 +56,16 @@
 		#default: 1000
 		#Range: > 0
 		max_receive = 1000
-		#Minimum work height of void dust collector(Collector doesnt work if greater than max height)
-		#type: int
-		#default: -63
-		#Range: -63 ~ 319
-		"min work_height" = -63
 		#Maximum work height of void dust collector
 		#type: int
 		#default: -60
 		#Range: -63 ~ 319
-		"max work_height" = -60
+		max_work_height = -60
+		#Minimum work height of void dust collector (Collector doesnt work if greater than max height)
+		#type: int
+		#default: -63
+		#Range: -63 ~ 319
+		min_work_height = -63
 
 	#Advanced Spout settings
 	[general.advanced_spout]
