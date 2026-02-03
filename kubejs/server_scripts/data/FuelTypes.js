@@ -1,45 +1,52 @@
 ServerEvents.highPriorityData((event) => {
 	// 植物油
-	new DieselEngineFuelType("#forge:plantoil", 1)
+	new FuelType("#forge:plantoil", 1)
 		.normal(32, 16384, 3)
 		.modular(32, 32768, 5)
 		.huge(48, 65536, 9)
+		.build()
 
 	// 乙醇
-	new DieselEngineFuelType("#forge:ethanol", 1)
+	new FuelType("#forge:ethanol", 1)
 		.normal(48, 16384, 4)
 		.modular(48, 32768, 5)
 		.huge(64, 65536, 6)
+		.build()
 
 	// 生物柴油
-	new DieselEngineFuelType("#forge:biodiesel", 1)
+	new FuelType("#forge:biodiesel", 1)
 		.normal(64, 18432, 3)
 		.modular(64, 36864, 5)
 		.huge(96, 73728, 9)
+		.build()
 
 	// 煤油
-	new DieselEngineFuelType("cmi:kerosene", 1)
+	new FuelType("cmi:kerosene", 1)
 		.normal(32, 18432, 6)
 		.modular(32, 36864, 8)
 		.huge(64, 73728, 12)
+		.build()
 
 	// 汽油
-	new DieselEngineFuelType("#forge:gasoline", 1)
+	new FuelType("#forge:gasoline", 1)
 		.normal(96, 18432, 3)
 		.modular(96, 36864, 5)
 		.huge(128, 73728, 8)
+		.build()
 
 	// 柴油
-	new DieselEngineFuelType("#forge:diesel", 1)
+	new FuelType("#forge:diesel", 1)
 		.normal(128, 20480, 6)
 		.modular(128, 40960, 8)
 		.huge(128, 81920, 12)
+		.build()
 
 	// 精炼油
-	new DieselEngineFuelType("thermal:refined_fuel", 1)
+	new FuelType("thermal:refined_fuel", 1)
 		.normal(128, 20480, 4)
 		.modular(128, 40960, 6)
 		.huge(128, 81920, 8)
+		.build()
 
 	/**
 	 * 
@@ -47,7 +54,7 @@ ServerEvents.highPriorityData((event) => {
 	 * @param {Number} speed 每秒消耗的流体量(mB)
 	 * @returns 
 	 */
-	function DieselEngineFuelType(name, speed) {
+	function FuelType(name, speed) {
 		this.name = name
 		this.speed = speed
 		this.getFluidName = IngrUtils.getPath(name)
@@ -61,7 +68,7 @@ ServerEvents.highPriorityData((event) => {
 		}
 	}
 
-	DieselEngineFuelType.prototype.build = function () {
+	FuelType.prototype.build = function () {
 		event.addJson(
 			`createdieselgenerators:diesel_engine_fuel_types/${this.getFluidName}.json`,
 			this.engineFuelData
@@ -75,7 +82,7 @@ ServerEvents.highPriorityData((event) => {
 	 * @param {Number} burnRate 燃料消耗速率
 	 * @returns 
 	 */
-	DieselEngineFuelType.prototype.normal = function (speed, strength, burnRate) {
+	FuelType.prototype.normal = function (speed, strength, burnRate) {
 		this.engineFuelData.normal = {
 			speed: speed,
 			strength: strength,
@@ -91,7 +98,7 @@ ServerEvents.highPriorityData((event) => {
 	 * @param {Number} burnRate 燃料消耗速率
 	 * @returns 
 	 */
-	DieselEngineFuelType.prototype.modular = function (speed, strength, burnRate) {
+	FuelType.prototype.modular = function (speed, strength, burnRate) {
 		this.engineFuelData.modular = {
 			speed: speed,
 			strength: strength,
@@ -107,13 +114,12 @@ ServerEvents.highPriorityData((event) => {
 	 * @param {Number} burnRate 燃料消耗速率
 	 * @returns 
 	 */
-	DieselEngineFuelType.prototype.huge = function (speed, strength, burnRate) {
+	FuelType.prototype.huge = function (speed, strength, burnRate) {
 		this.engineFuelData.huge = {
 			speed: speed,
 			strength: strength,
 			burn_rate: burnRate
 		}
-		this.build()
 		return this
 	}
 
@@ -122,7 +128,7 @@ ServerEvents.highPriorityData((event) => {
 	 * @param {Number} seconds 燃烧时长
 	 * @returns 
 	 */
-	DieselEngineFuelType.prototype.train = function (seconds) {
+	FuelType.prototype.train = function (seconds) {
 		let trainFuelData = {
 			fluids: [
 				this.name
