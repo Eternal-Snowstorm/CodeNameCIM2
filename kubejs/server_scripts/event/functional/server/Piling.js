@@ -11,6 +11,7 @@ BlockEvents.rightClicked((event) => {
 		if (below.id !== "minecraft:bedrock") {
 			return
 		}
+		player.swing()
 
 		let centerX = pos.x
 		let centerZ = pos.z
@@ -31,7 +32,6 @@ BlockEvents.rightClicked((event) => {
 			0.3,
 			1.0
 		)
-		player.swing()
 
 		for (let i = 2; i <= 5; i++) {
 			if (centerY - i <= -64) {
