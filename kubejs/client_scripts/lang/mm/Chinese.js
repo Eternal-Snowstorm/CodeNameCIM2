@@ -1,5 +1,6 @@
 let langMap = {}
-const FILE_PATH = "config/openloader/resources/PackResource/assets/mm/lang/zh_cn.json"
+// const FILE_PATH = "config/openloader/resources/PackResource/assets/mm/lang/zh_cn.json"
+const FILE_PATH = "kubejs/assets/mm/lang/zh_cn.json"
 
 langMap["recipe.mm.output.chance"] = "%s输出概率"
 langMap["recipe.mm.input.chance"] = "%s消耗概率"
