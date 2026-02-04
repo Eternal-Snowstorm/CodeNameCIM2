@@ -487,6 +487,13 @@ ServerEvents.tags("item", (event) => {
 		.add("portality:module_items")
 		.add("portality:module_interdimensional")
 
+	event.get("cmi:sodium_explosive")
+		.add("#forge:ingots/sodium")
+		.add("#forge:plates/sodium")
+		.add("#forge:dusts/sodium")
+		.add("#forge:nuggets/sodium")
+		.add("#forge:storage_blocks/sodium")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
