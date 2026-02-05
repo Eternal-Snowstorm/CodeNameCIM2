@@ -1,3 +1,4 @@
+// 构件相关物品统一调用
 let Mechanism = Object.freeze({
     // C0
     WOODEN: Object.freeze({
@@ -183,5 +184,19 @@ let Mechanism = Object.freeze({
         COM: Item.of("cmi:antimatter_mechanism"),
         INC: Item.of("cmi:incomplete_antimatter_mechanism"),
         BAS: Item.of("cmi:antimatter_mechanism_basement")
+    })
+})
+
+let Material = Object.freeze({
+    Incomplete: Object.freeze({
+        Circuit: Object.freeze({
+            ADVANCED: Item.of("cmi:incomplete_advanced_control_circuit"),
+            ELITE: Item.of("cmi:incomplete_elite_control_circuit"),
+            ULTIMATE: Item.of("cmi:incomplete_ultimate_cotrol_circuit"),
+            LOGIC: Item.of("cmi:incomplete_logic_processor"),
+            CALCULATION: Item.of("cmi:incomplete_calculation_processor"),
+            ENGINEERING: Item.of("cmi:incomplete_engineering_processor"),
+            QUANTUM: Item.of("cmi:incomplete_quantum_processor")
+        })
     })
 })
