@@ -6,6 +6,8 @@
 		"0": "cmi:block/transformer",
 		"particle": "cmi:block/radar_components"
 	},
+	
+	"render_type": "cutout",
 	"elements": [
 		{
 			"from": [0, 0, 0],
