@@ -45,11 +45,11 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/salt"
 	])
 
-	// 四氯化硅
-	vintageimprovements.pressurizing(Fluid.of("cmi:tetrachlorosilane", 500), [
-		Fluid.of("mekanism:chlorine", 500),
-		"#forge:silicon"
-	]).processingTime(200).superheated()
+	// // 四氯化硅
+	// vintageimprovements.pressurizing(Fluid.of("cmi:tetrachlorosilane", 500), [
+	// 	Fluid.of("mekanism:chlorine", 500),
+	// 	"#forge:silicon"
+	// ]).processingTime(200).superheated()
 
 	// 晶体催生剂
 	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
