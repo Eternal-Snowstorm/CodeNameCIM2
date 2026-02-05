@@ -35,17 +35,17 @@ ServerEvents.recipes((event) => {
 		"mgso4"
 	]
 
-	solutionGroup.forEach((type) => {
-		create.mixing(Fluid.of(`cmi:${type}_solution`, 250), [
-			`${global.namespace}:${type}`,
-			Fluid.of("minecraft:water", 250)
-		])
+	// solutionGroup.forEach((type) => {
+	// 	create.mixing(Fluid.of(`cmi:${type}_solution`, 250), [
+	// 		`${global.namespace}:${type}`,
+	// 		Fluid.of("minecraft:water", 250)
+	// 	])
 
-		// 晶体
-		thermal_extra.endothermic_dehydrator(`${global.namespace}:${type}`, [
-			Fluid.of(`cmi:${type}_solution`, 250)
-		]).energy(4000)
-	})
+	// 	// 晶体
+	// 	thermal_extra.endothermic_dehydrator(`${global.namespace}:${type}`, [
+	// 		Fluid.of(`cmi:${type}_solution`, 250)
+	// 	]).energy(4000)
+	// })
 })
 /*
 solutionGroup.forEach((name) => {

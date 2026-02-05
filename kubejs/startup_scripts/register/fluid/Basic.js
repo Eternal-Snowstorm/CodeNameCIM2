@@ -10,8 +10,11 @@ StartupEvents.registry("fluid", (event) => {
 		builder.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
 		builder.stillTexture(`${global.namespace}:fluid/${name}/still`)
 		builder.renderType("translucent")
-
-		FluidBucketItemModel.generate(name)
+		builder.bucketItem.modelJson({
+			"parent": "forge:item/bucket_drip",
+			"loader": "forge:fluid_container",
+			"fluid": `${global.namespace}:${name}`
+		})
 
 		console.log(`${global.namespace}:${name}已注册!`)
 
@@ -32,8 +35,11 @@ StartupEvents.registry("fluid", (event) => {
 		builder.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 		builder.stillTexture(`${global.namespace}:fluid/solution/still`)
 		builder.renderType("translucent")
-
-		FluidBucketItemModel.generate(name)
+		builder.bucketItem.modelJson({
+			"parent": "forge:item/bucket_drip",
+			"loader": "forge:fluid_container",
+			"fluid": `${global.namespace}:${name}`
+		})
 
 		return builder
 	}
@@ -62,7 +68,7 @@ StartupEvents.registry("fluid", (event) => {
 
 
 	// c5
-	
+
 	// addAloneFluid("naphtha") // 石脑油
 	// addAloneFluid("lubricating_oil") // 润滑油
 	// addAloneFluid("pure_sand") // 纯净沙
@@ -104,11 +110,11 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("hydrochloric_acid") //盐酸
 	addColorFluid("lithium-containing_electrolyte", 0x555100) // 含锂电解液
 
-	
+
 	//c7
 
 	// addColorFluid("tetrachlorosilane", 0xDDFF6E) // 四氯化硅
 	addColorFluid("chromium_plating_solution", 0x55AAAA) // 铬电镀液
 
-	
+
 })

@@ -1,4 +1,4 @@
-// priority: 100
+// priority: 10
 let $MekanismAPI =
 	Java.loadClass("mekanism.api.MekanismAPI")
 let $Slurry =

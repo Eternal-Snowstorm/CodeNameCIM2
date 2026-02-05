@@ -1,3 +1,4 @@
+// priority: 11
 ServerEvents.tags("fluid", (event) => {
 	function removeTagAllId(tag) {
 		return event.get(tag)

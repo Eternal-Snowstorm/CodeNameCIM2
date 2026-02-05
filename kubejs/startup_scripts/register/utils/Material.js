@@ -244,15 +244,20 @@ StartupEvents.registry("fluid", (event) => {
 			molten.tag("forge:molten_materials")
 			molten.tag(`tconstruct:molten_${material.name}`)
 			molten.tag(`forge:molten_${material.name}`)
+			molten.bucketItem.modelJson({
+				"parent": "forge:item/bucket_drip",
+				"loader": "forge:fluid_container",
+				"fluid": `${global.namespace}:molten_${material.name}`
+			})
 
-			if (Platform.isClientEnvironment()) {
-				let file = `kubejs/assets/${global.namespace}/models/item/molten_${material.name}_bucket.json`
-				JsonIO.write(file, {
-					parent: "forge:item/bucket_drip",
-					loader: "forge:fluid_container",
-					fluid: `${global.namespace}:molten_${material.name}`
-				})
-			}
+			// if (Platform.isClientEnvironment()) {
+			// 	let file = `kubejs/assets/${global.namespace}/models/item/molten_${material.name}_bucket.json`
+			// 	JsonIO.write(file, {
+			// 		parent: "forge:item/bucket_drip",
+			// 		loader: "forge:fluid_container",
+			// 		fluid: `${global.namespace}:molten_${material.name}`
+			// 	})
+			// }
 		})
 	})
 	console.log("Fluid已注册完毕!")
