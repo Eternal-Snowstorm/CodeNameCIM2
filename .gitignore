@@ -117,3 +117,8 @@ config/ftbquests/qusets/chapters/control*
 !config/railways-client.toml
 !config/tconstruct-common.toml
 config/jei/world/local/Debug/lookupHistory.ini
+config/jei/world/local/lookupHistory.ini
+config/jei/world/local/bookmarks.ini
+config/jei/world/local/lookupHistory.ini
+config/jei/recipe-category-sort-order.ini
+config/jei/ingredient-list-mod-sort-order.ini
