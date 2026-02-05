@@ -102,7 +102,7 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("sea_water") // 海水
 	addAloneFluid("concentrated_sea_water") // 浓缩海水
 	addColorFluid("brine", 0xA3A189) // 卤水
-	addColorFluid("acidic_brine", 0x8FA8A4) // 酸性卤水
+	addColorFluid("alkaline_brine", 0x8FA8A4) // 碱性卤水
 	addColorFluid("waste_brine", 0x3C3C3C) // 废卤水
 
 	// addAloneFluid("alkaline_concentrated_sea_water") // 碱性浓缩海水
