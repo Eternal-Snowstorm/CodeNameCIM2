@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
 	}
 
 	// 木质
-	create.sequenced_assembly(MECHANISM.WOODEN.COM, [
+	create.sequenced_assembly(Mechanism.WOODEN.COM, [
 		"#minecraft:planks"
 	], [
 		create.pressing(Inc.WOODEN, Inc.WOODEN),
