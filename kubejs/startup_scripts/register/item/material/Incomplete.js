@@ -1,86 +1,83 @@
 StartupEvents.registry("item", (event) => {
+	/**
+ * @param {string} name 注册ID
+ * @param {boolean} isSequencedAssembly 是否是序列物品
+ * @returns 
+ */
 	function addItem(name) {
-		return event.create(`${global.namespace}:${name}`, "create:sequenced_assembly")
+		if (!isSequencedAssembly) {
+			return event.create(`${global.namespace}:incomplete_${name}`)
+		} else if (isSequencedAssembly == undefined) {
+			return event.create(`${global.namespace}:incomplete_${name}`, "create:sequenced_assembly")
+		} else {
+			return event.create(`${global.namespace}:incomplete_${name}`)
+		}
 	}
-	// 未完成构件零件
-	addItem("incomplete_mekanism_mechanism_part")
-		.texture(`${global.namespace}:item/mechanism/part/mekanism`)
-	addItem("incomplete_quantum_mechanism_part")
-		.texture(`${global.namespace}:item/mechanism/part/quantum`)
-	addItem("incomplete_space_mechanism_part")
-		.texture(`${global.namespace}:item/mechanism/part/space`)
+	function addIncompleteItem(name) {
+		if (!isSequencedAssembly) {
+			return event.create(`${global.namespace}:incomplete_${name}`)
+				.texture(`${global.namespace}:item/material/incomplete/${name}`)
+		} else if (isSequencedAssembly == undefined) {
+			return event.create(`${global.namespace}:incomplete_${name}`, "create:sequenced_assembly")
+				.texture(`${global.namespace}:item/material/incomplete/${name}`)
+		} else {
+			return event.create(`${global.namespace}:incomplete_${name}`)
+				.texture(`${global.namespace}:item/material/incomplete/${name}`)
+		}
+	}
 
-	// mek未完成电路板
-	addItem("incomplete_advanced_control_circuit")
-		.texture(`${global.namespace}:item/material/advanced_control_circuit`)
-
-	addItem("incomplete_elite_control_circuit")
-		.texture(`${global.namespace}:item/material/elite_control_circuit`)
-
-	addItem("incomplete_ultimate_control_circuit")
-		.texture(`${global.namespace}:item/material/ultimate_control_circuit`)
-
-	// ae未完成处理器
-	addItem("incomplete_logic_processor")
-		.texture("ae2:item/printed_logic_processor")
-
-	addItem("incomplete_calculation_processor")
-		.texture("ae2:item/printed_calculation_processor")
-
-	addItem("incomplete_engineering_processor")
-		.texture("ae2:item/printed_engineering_processor")
-
-	addItem("incomplete_quantum_processor")
-		.texture("advanced_ae:item/printed_quantum_processor")
-
-	// 扫描器(半成品)
-	addItem("incomplete_scanner")
-		.texture("scannable:item/scanner")
-
-	// 扫描模块(半成品)
-	addItem("incomplete_scanning_module")
-		.texture("scannable:item/blank_module")
-
-	// 电子管(半成品)
-	addItem("incomplete_electron_tube")
-		.texture(`${global.namespace}:item/material/electron_tube`)
-
-	// 升级组件
-	addItem("incomplete_upgrade_augment_1")
-		.texture(`${global.namespace}:item/material/upgrade/1`)
-
-	addItem("incomplete_upgrade_augment_2")
-		.texture(`${global.namespace}:item/material/upgrade/2`)
-
-	addItem("incomplete_upgrade_augment_3")
-		.texture(`${global.namespace}:item/material/upgrade/3`)
-
-	// 航天硬盘(半成品)
-	addItem("incomplete_aviation_cell")
-		.texture(`${global.namespace}:item/material/incomplete_aviation_cell`)
-
-	// 气体容器(半成品)
-	addItem("incomplete_gas_container")
-		.texture(`${global.namespace}:item/material/incomplete_gas_container`)
-
-	// 核能冷却器
-	addItem("incomplete_nuke_cooler")
-		.texture(`${global.namespace}:item/material/nuke_cooler`)
-
-	// 扫描零件
-	addItem("incomplete_notor_gizmo")
-		.texture(`${global.namespace}:item/material/incomplete_notor_gizmo`)
+	addIncompleteItem("advanced_control_circuit")
+	addIncompleteItem("elite_control_circuit")
+	addIncompleteItem("ultimate_control_circuit")
+	addIncompleteItem("electron_tube")
+	addIncompleteItem("upgrade_augment_1")
+	addIncompleteItem("upgrade_augment_2")
+	addIncompleteItem("upgrade_augment_3")
+	addIncompleteItem("aviation_cell")
+	addIncompleteItem("gas_container")
+	addIncompleteItem("nuke_cooler")
+	addIncompleteItem("notor_gizmo")
 
 	// 飞轮
-	addItem("incomplete_flywheel")
+	addItem("flywheel")
 		.parentModel("create:block/flywheel/item")
 
 	// 蒸汽引擎
-	addItem("incomplete_steam_engine")
+	addItem("steam_engine")
 		.parentModel("create:block/steam_engine/item")
+
+	// 未完成构件零件
+	addItem("mekanism_mechanism_part")
+		.texture(`${global.namespace}:item/mechanism/part/mekanism`)
+	addItem("quantum_mechanism_part")
+		.texture(`${global.namespace}:item/mechanism/part/quantum`)
+	addItem("space_mechanism_part")
+		.texture(`${global.namespace}:item/mechanism/part/space`)
+
+	// ae未完成处理器
+	addItem("logic_processor")
+		.texture("ae2:item/printed_logic_processor")
+
+	addItem("calculation_processor")
+		.texture("ae2:item/printed_calculation_processor")
+
+	addItem("engineering_processor")
+		.texture("ae2:item/printed_engineering_processor")
+
+	addItem("quantum_processor")
+		.texture("advanced_ae:item/printed_quantum_processor")
+
+	// 扫描器(半成品)
+	addItem("scanner")
+		.texture("scannable:item/scanner")
+
+	// 扫描模块(半成品)
+	addItem("scanning_module")
+		.texture("scannable:item/blank_module")
+
 	// 火箭框架(半成品)
 	for (let i = 1; i <= 4; i++) {
-		addItem(`incomplete_tier_${i.toString()}_rocket_frame`)
+		addItem(`tier_${i.toString()}_rocket_frame`)
 			.modelJson({
 				"parent": `cmi:block/rocket/tier${i.toString()}/tier${i.toString()}`
 			})

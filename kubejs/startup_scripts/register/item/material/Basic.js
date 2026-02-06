@@ -10,11 +10,19 @@ StartupEvents.registry("item", (event) => {
 		}
 		return event.create(`${global.namespace}:${name}`, type)
 	}
-
-	addItem("single_crystal_silicon")
-		.texture(`${global.namespace}:item/material/single_crystal_silicon`)
-	// addItem("general_processor")
-	// 	.texture(`${global.namespace}:item/material/general_processor`)
+	/**
+	 * @param {string} name 注册ID
+	 * @param {"basic" | "sword" | "pickaxe" | "axe" | "shovel" | "shears" | "hoe" | "helmet" | "chestplate" | "leggings" | "boots" | "music_disc" | "smithing_template" | "animatable" | "anim_helmet" | "anim_chestplate" | "anim_leggings" | "anim_boots" | "anim_axe" | "anim_hoe" | "anim_pickaxe" | "anim_sword" | "anim_shield" | "create:sequenced_assembly" | "create:sandpaper" | "vintageimprovements:spring"} type 注册类型
+	 * @returns 
+	 */
+	function addMaterial(name, type) {
+		if (type === undefined) {
+			return event.create(`${global.namespace}:${name}`)
+				.texture(`${global.namespace}:item/material/${name}`)
+		}
+		return event.create(`${global.namespace}:${name}`, type)
+			.texture(`${global.namespace}:item/material/${name}`)
+	}
 
 	// 黑石源质
 	addItem("blackstone_source_alpha")
@@ -40,16 +48,26 @@ StartupEvents.registry("item", (event) => {
 
 	// 致密坚固板
 	addItem("dense_sturdy_sheet")
-		.texture(`${global.namespace}:item/material/dense_sturdy_sheet`)
+		.texture(`${global.namespace}:item/material/material/plate/dense_obsidian`)
 		.tag("forge:plates")
 		.tag("forge:plates/dense_obsidian")
 
+	// 石板
+	addItem("stone_plate")
+		.texture(`${global.namespace}:item/material/material/plate/stone`)
+		.tag("forge:plates")
+		.tag("forge:plates/stone")
+
 	// 超载合金锭
 	addItem("overcharged_alloy_ingot")
-		.texture(`${global.namespace}:item/material/ingot/overcharged_alloy_ingot`)
+		.texture(`${global.namespace}:item/material/material/ingot/overcharged_alloy_ingot`)
 		.rarity("epic")
 		.tag("forge:ingots")
 		.tag("forge:ingots/overcharged_alloy")
+
+	// 精炼铁方坯
+	addItem("refined_iron_bloom")
+		.texture(`${global.namespace}:item/material/material/material/ingot/refined_iron_bloom`)
 
 	// 充能紫水晶
 	addItem("charged_amethyst")
@@ -74,12 +92,6 @@ StartupEvents.registry("item", (event) => {
 	// 初始套件
 	addItem("initial_item_kit")
 		.glow(true)
-
-	// 石板
-	addItem("stone_plate")
-		.texture(`${global.namespace}:item/material/stone_plate`)
-		.tag("forge:plates")
-		.tag("forge:plates/stone")
 
 	// 木屑加工系列
 	addItem("wood_chip_briquette")
@@ -115,27 +127,42 @@ StartupEvents.registry("item", (event) => {
 		})
 		.tag("create:blaze_burner_fuel/special")
 
-	// 升级模板
-	addItem("drawer_upgrade_template")
-		.texture(`${global.namespace}:item/material/drawer_upgrade_template`)
-
-	// 安山岩
-	addItem("andesite_dust")
-		.texture(`${global.namespace}:item/material/andesite/dust`)
-		.tag("forge:dusts")
-		.tag(`forge:dusts/andesite`)
-
+	// 安山混合物
 	addItem("andesite_aggregate")
-		.texture(`${global.namespace}:item/material/andesite/aggregate`)
+		.texture(`${global.namespace}:item/material/material/brick/aggregate`)
 		.tag("forge:bricks")
 
-	// 硅处理
+	// 耐火砖柸
+	addItem("refractory_brick_bloom")
+		.texture(`${global.namespace}:item/material/material/brick/refractory_brick_bloom`)
+
+	// 小块焦炭
 	addItem("small_coal_coke")
 		.burnTime(400)
 		.texture(`${global.namespace}:item/material/small_coal_coke`)
 
+	// 升级模板
+	addItem("drawer_upgrade_template")
+		.texture(`${global.namespace}:item/material/drawer_upgrade_template`)
+
+	// 硅处理
+	// 硅混合物
 	addItem("silicon_mixure")
 		.texture(`${global.namespace}:item/material/silicon/silicon_mixure`)
+	// 碳化硅
+	addItem("silicon_carbide")
+		.texture(`${global.namespace}:item/material/silicon/silicon_carbide`)
+	// 碳化硅板
+	addItem("silicon_carbide_plate")
+		.texture(`${global.namespace}:item/material/silicon/silicon_carbide_plate`)
+		.tag("forge:plates/silicon_carbide")
+		.tag("forge:plates")
+	// 线刻硅板
+	addItem("inscribed_silicon")
+		.texture(`${global.namespace}:item/material/silicon/inscribed_silicon`)
+	// 单晶硅
+	addItem("single_crystal_silicon")
+		.texture(`${global.namespace}:item/material/silicon/single_crystal_silicon`)
 
 	// 橡胶板
 	addItem("rubber_plate")
@@ -159,10 +186,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("grass_string")
 		.texture(`${global.namespace}:item/material/grass_string`)
 		.tag("forge:string")
-
-	// 通用电路板
-	// addItem("printed_general_processor")
-	// 	.texture(`${global.namespace}:item/material/printed_general_processor`)
 
 	// 活泼元素
 	addItem("reactive_element")
@@ -199,22 +222,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("nitrocellulose")
 		.texture(`${global.namespace}:item/material/dynamite/nitrocellulose`)
 
-	// 石灰粉
-	addItem("lime_dust")
-		.texture(`${global.namespace}:item/material/lime_dust`)
-		.tag("forge:dusts/lime")
-		.tag("forge:dusts")
-
-	// 碳化硅
-	addItem("silicon_carbide")
-		.texture(`${global.namespace}:item/material/silicon_carbide`)
-
-	// 碳化硅板
-	addItem("silicon_carbide_plate")
-		.texture(`${global.namespace}:item/material/silicon_carbide_plate`)
-		.tag("forge:plates/silicon_carbide")
-		.tag("forge:plates")
-
 	// 冷却设备
 	addItem("nuke_cooler")
 		.texture(`${global.namespace}:item/material/nuke_cooler`)
@@ -222,10 +229,6 @@ StartupEvents.registry("item", (event) => {
 	// 精炼核废料
 	addItem("refined_nuke_waste")
 		.texture(`${global.namespace}:item/material/refined_nuke_waste`)
-
-	// 精炼铁方坯
-	addItem("refined_iron_bloom")
-		.texture(`${global.namespace}:item/material/refined_iron_bloom`)
 
 	// 火箭零件
 	for (let i = 1; i <= 4; i++) {
@@ -246,37 +249,32 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:wires/redstone")
 		.tag("forge:wires")
 
-	// 线刻硅板
-	addItem("inscribed_silicon")
-		.texture(`${global.namespace}:item/material/silicon/inscribed_silicon`)
-
-
 	// 羊皮纸
 	addItem("parchment")
-		.texture(`${global.namespace}:item/material/parchment`)
+		.texture(`${global.namespace}:item/material/parchment/parchment`)
 	addItem("torn_parchment_a")
-		.texture(`${global.namespace}:item/material/torn_parchment_a`)
+		.texture(`${global.namespace}:item/material/parchment/torn_parchment_a`)
 	addItem("torn_parchment_b")
-		.texture(`${global.namespace}:item/material/torn_parchment_b`)
-		
+		.texture(`${global.namespace}:item/material/parchment/torn_parchment_b`)
+
 	// 高纯石英
 	addItem("purified_quartz")
 		.texture(`${global.namespace}:item/material/purified_quartz_crystal`)
 	addItem("purified_quartz_dust")
 		.texture(`${global.namespace}:item/material/purified_quartz_dust`)
-		
+
 	// 二极管
 	addItem("diode")
 		.texture(`${global.namespace}:item/material/diode`)
-		
+
 	// 硅橡胶
 	addItem("silicon_rubber")
 		.texture(`${global.namespace}:item/material/rubber/silicon/rubber`)
-		
+
 	// 硅橡胶板
 	addItem("silicon_rubber_plate")
 		.texture(`${global.namespace}:item/material/rubber/silicon/rubber_plate_0`)
-		
+
 	// 热力单元
 	addItem("thermal_unit")
 		.texture(`${global.namespace}:item/material/thermal/unit_0`)
@@ -288,14 +286,6 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/thermal/unit_3`)
 	addItem("blizz_unit")
 		.texture(`${global.namespace}:item/material/thermal/unit_4`)
-		
-	// 方解石粉
-	addItem("calcite_dust")
-		.texture(`${global.namespace}:item/material/material/dust/calcite`)
-		
-	// 耐火砖柸
-	addItem("refractory_brick_bloom")
-		.texture(`${global.namespace}:item/material/refractory_brick_bloom`)
 
 	let SomeModelsJson = {
 		cogwheel: function (material) {
@@ -371,4 +361,11 @@ StartupEvents.registry("item", (event) => {
 			.tag(`cmi:casing_framework`)
 			.tag(`cmi:casing_framework/${frame}`)
 	})
+
+	// addItem("general_processor")
+	// 	.texture(`${global.namespace}:item/material/general_processor`)
+
+	// 通用电路板
+	// addItem("printed_general_processor")
+	// 	.texture(`${global.namespace}:item/material/printed_general_processor`)
 })

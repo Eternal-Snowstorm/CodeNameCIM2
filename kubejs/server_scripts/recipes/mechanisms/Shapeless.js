@@ -19,13 +19,13 @@ ServerEvents.recipes((event) => {
 		"tconstruct:seared_brick",
 	]).damageIngredient("#forge:hammers", 1)
 
-	// 铁质
-	kubejs.shapeless("cmi:iron_mechanism", [
-		"cmi:iron_mechanism_basement",
-		"#forge:hammers",
-		"#forge:nuggets/iron",
-		"#forge:nuggets/iron",
-		"cmi:basic_mechanism_part"
+	// 安山
+	kubejs.shapeless("cmi:andesite_mechanism", [
+		"cmi:andesite_mechanism_basement",
+		"2x create:cogwheel",
+		"create:large_cogwheel",
+		"cmi:mechanical_mechanism_part",
+		"#forge:hammers"
 	]).damageIngredient("#forge:hammers", 1)
 
 	// 铜质
@@ -38,15 +38,6 @@ ServerEvents.recipes((event) => {
 		"#forge:hammers"
 	]).damageIngredient("#forge:hammers", 1)
 
-	// 安山
-	kubejs.shapeless("cmi:andesite_mechanism", [
-		"cmi:andesite_mechanism_basement",
-		"2x create:cogwheel",
-		"create:large_cogwheel",
-		"cmi:mechanical_mechanism_part",
-		"#forge:hammers"
-	]).damageIngredient("#forge:hammers", 1)
-
 	// 红石
 	kubejs.shapeless("vintageimprovements:redstone_module", [
 		"2x #forge:dusts/redstone",
@@ -55,6 +46,8 @@ ServerEvents.recipes((event) => {
 		"#forge:hammers",
 		"cmi:basic_mechanism_part"
 	]).damageIngredient("#forge:hammers", 1)
+
+	// 自然
 
 	// 创造
 	kubejs.shapeless("2x cmi:creative_mechanism", [
