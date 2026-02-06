@@ -250,6 +250,7 @@ StartupEvents.registry("item", (event) => {
 	addItem("inscribed_silicon")
 		.texture(`${global.namespace}:item/material/silicon/inscribed_silicon`)
 
+
 	// 羊皮纸
 	addItem("parchment")
 		.texture(`${global.namespace}:item/material/parchment`)
@@ -257,6 +258,44 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/torn_parchment_a`)
 	addItem("torn_parchment_b")
 		.texture(`${global.namespace}:item/material/torn_parchment_b`)
+		
+	// 高纯石英
+	addItem("purified_certus_quartz")
+		.texture(`${global.namespace}:item/material/purified_certus_quartz_crystal`)
+	addItem("purified_certus_quartz_dust")
+		.texture(`${global.namespace}:item/material/purified_certus_quartz_dust`)
+		
+	// 二极管
+	addItem("diode")
+		.texture(`${global.namespace}:item/material/diode`)
+		
+	// 硅橡胶
+	addItem("silicon_rubber")
+		.texture(`${global.namespace}:item/material/rubber/silicon/rubber`)
+		
+	// 硅橡胶板
+	addItem("silicon_rubber_plate")
+		.texture(`${global.namespace}:item/material/rubber/silicon/rubber_plate_0`)
+		
+	// 热力单元
+	addItem("thermal_unit")
+		.texture(`${global.namespace}:item/material/thermal/unit_0`)
+	addItem("blaze_unit")
+		.texture(`${global.namespace}:item/material/thermal/unit_1`)
+	addItem("basalz_unit")
+		.texture(`${global.namespace}:item/material/thermal/unit_2`)
+	addItem("blitz_unit")
+		.texture(`${global.namespace}:item/material/thermal/unit_3`)
+	addItem("blizz_unit")
+		.texture(`${global.namespace}:item/material/thermal/unit_4`)
+		
+	// 方解石粉
+	addItem("calcite_dust")
+		.texture(`${global.namespace}:item/material/material/dust/calcite`)
+		
+	// 耐火砖柸
+	addItem("refractory_brick_bloom")
+		.texture(`${global.namespace}:item/material/refractory_brick_bloom`)
 
 	let SomeModelsJson = {
 		cogwheel: function (material) {
