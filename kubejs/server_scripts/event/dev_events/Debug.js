@@ -18,9 +18,27 @@ PlayerEvents.chat((event) => {
 	for (let i = 0; i < global.debugUserName.length; i++) {
 		// 输入-kf获得[夜视 力量 抗性]buff
 		if (message.trim().equalsIgnoreCase("-kf") && player.username === global.debugUserName[i]) {
-			player.runCommandSilent("effect give @s minecraft:night_vision infinite 255 true")
-			player.runCommandSilent("effect give @s minecraft:strength infinite 255 true")
-			player.runCommandSilent("effect give @s minecraft:resistance infinite 255 true")
+			player.potionEffects.add(
+				"minecraft:night_vision",
+				-1,
+				255,
+				false,
+				false
+			)
+			player.potionEffects.add(
+				"minecraft:strength",
+				-1,
+				255,
+				false,
+				false
+			)
+			player.potionEffects.add(
+				"minecraft:resistance",
+				-1,
+				255,
+				false,
+				false
+			)
 			event.cancel()
 		}
 

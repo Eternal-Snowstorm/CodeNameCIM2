@@ -75,6 +75,7 @@ StartupEvents.registry("item", (event) => {
 	addItem("incomplete_flywheel")
 		.parentModel("create:block/flywheel/item")
 
+	// 蒸汽引擎
 	addItem("incomplete_steam_engine")
 		.parentModel("create:block/steam_engine/item")
 	// 火箭框架(半成品)
