@@ -146,8 +146,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("trinitrotoluene", "三硝基甲苯")
 	addItemLang("nitrocellulose", "硝化纤维")
 
-	addItemLang("purified_certus_quartz", "高纯赛特斯石英")
-	addItemLang("purified_certus_quartz_dust", "高纯赛特斯石英粉")
+	addItemLang("purified_quartz", "高纯石英")
+	addItemLang("purified_quartz_dust", "高纯石英粉")
 	addItemLang("diode", "二极管")
 	addItemLang("silicon_rubber", "硅橡胶")
 	addItemLang("silicon_rubber_plate", "硅橡胶板")

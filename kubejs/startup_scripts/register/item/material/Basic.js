@@ -260,10 +260,10 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/torn_parchment_b`)
 		
 	// 高纯石英
-	addItem("purified_certus_quartz")
-		.texture(`${global.namespace}:item/material/purified_certus_quartz_crystal`)
-	addItem("purified_certus_quartz_dust")
-		.texture(`${global.namespace}:item/material/purified_certus_quartz_dust`)
+	addItem("purified_quartz")
+		.texture(`${global.namespace}:item/material/purified_quartz_crystal`)
+	addItem("purified_quartz_dust")
+		.texture(`${global.namespace}:item/material/purified_quartz_dust`)
 		
 	// 二极管
 	addItem("diode")
