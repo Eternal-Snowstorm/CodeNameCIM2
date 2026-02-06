@@ -1,4 +1,4 @@
-		ServerEvents.recipes((event) => {
+ServerEvents.recipes((event) => {
 	let { thermal_extra } = event.recipes
 
 	// 基础控制电路
