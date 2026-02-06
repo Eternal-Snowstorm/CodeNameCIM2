@@ -1,4 +1,4 @@
-// priority: 101
+// priority: 11
 
 function splitTag(tag) {
 	let tagList = []

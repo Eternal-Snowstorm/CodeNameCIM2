@@ -106,6 +106,14 @@ global.dyeColorGroup = [
 	"white",
 	"yellow"
 ]
+// /**
+//  * 所有废弃流体
+//  * 
+//  * @type {string[]}
+//  */
+// global.wasteFluid = [
+// 	"thermal_extra:gasoline"
+// ]
 /**
  * 所有构件
  * 

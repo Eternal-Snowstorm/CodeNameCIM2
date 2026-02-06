@@ -116,4 +116,3 @@ config/ftbquests/qusets/chapters/control*
 !config/oei
 !config/railways-client.toml
 !config/tconstruct-common.toml
-config/jei/world/local/Debug/lookupHistory.ini

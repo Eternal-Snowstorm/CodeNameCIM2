@@ -1,3 +1,4 @@
+// priority: 11
 ServerEvents.tags("item", (event) => {
 	let add = advancedAdd.bind(event)
 

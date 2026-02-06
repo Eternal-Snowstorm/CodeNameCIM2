@@ -1,24 +1,26 @@
-StartupEvents.registry("block", (event) => {
 
-	function developerDollmodel(dollName, skinType) {
-		const PARENT = `cmi:block/dev/${skinType}`
-		const SKIN = `cmi:block/dev/${dollName}`
 
-		return {
-			parent: PARENT,
-			textures: {
-				"skin": SKIN
-			}
+function developerDollmodel(dollName, skinType) {
+	const PARENT = `cmi:block/dev/${skinType}`
+	const SKIN = `cmi:block/dev/${dollName}`
+
+	return {
+		parent: PARENT,
+		textures: {
+			"skin": SKIN
 		}
 	}
 
-	/**
-	 * 
-	 * @param {string} name 
-	 * @param {"wide"|"slim"} type 
-	 * @returns 
-	 */
-	function addDeveloperDoll(name, type) {
+}
+
+/**
+ * 
+ * @param {string} name 
+ * @param {"wide"|"slim"} type 
+ * @returns 
+ */
+function addDeveloperDoll(name, type) {
+	StartupEvents.registry("block", (event) => {
 		let builder =
 			event.create(`${global.namespace}:${name}`, "cardinal")
 
@@ -35,54 +37,54 @@ StartupEvents.registry("block", (event) => {
 		builder.modelJson = developerDollmodel(name, type)
 
 		return builder
-	}
+	})
+}
 
-	// 排列以加入项目的先后顺序
-	// UE
-	addDeveloperDoll("re_construction", "slim")
+// 排列以加入项目的先后顺序
+// UE
+addDeveloperDoll("re_construction", "slim")
 
-	// dkrkoo_weihe
-	addDeveloperDoll("dkrkoo_weihe", "slim")
+// dkrkoo_weihe
+addDeveloperDoll("dkrkoo_weihe", "slim")
 
-	// Dropper
-	addDeveloperDoll("dropper_qwq", "wide")
+// Dropper
+addDeveloperDoll("dropper_qwq", "wide")
 
-	// 1174
-	addDeveloperDoll("117458866249", "wide")
+// 1174
+addDeveloperDoll("117458866249", "wide")
 
-	// Random Mechanism
-	addDeveloperDoll("random_mechanism", "slim")
+// Random Mechanism
+addDeveloperDoll("random_mechanism", "slim")
 
-	// 中微子
-	addDeveloperDoll("eternalsnowstorm", "slim")
+// 中微子
+addDeveloperDoll("eternalsnowstorm", "slim")
 
-	// 柒月
-	addDeveloperDoll("qi_month", "slim")
+// 柒月
+addDeveloperDoll("qi_month", "slim")
 
-	// DontKillBelalus
-	addDeveloperDoll("dont_kill_belalus", "wide")
+// DontKillBelalus
+addDeveloperDoll("dont_kill_belalus", "wide")
 
-	// FiberOptics
-	addDeveloperDoll("fiber_optics", "slim")
+// FiberOptics
+addDeveloperDoll("fiber_optics", "slim")
 
-	// 燕栖
-	addDeveloperDoll("ye_anqing", "slim")
+// 燕栖
+addDeveloperDoll("ye_anqing", "slim")
 
-	// MF
-	addDeveloperDoll("sakura_star_cn", "slim")
+// MF
+addDeveloperDoll("sakura_star_cn", "slim")
 
-	// 亓才孑
-	addDeveloperDoll("qicaijie", "slim")
+// 亓才孑
+addDeveloperDoll("qicaijie", "slim")
 
-	// 闪电羿
-	addDeveloperDoll("flash_yi", "slim")
+// 闪电羿
+addDeveloperDoll("flash_yi", "slim")
 
-	// 键盘虾
-	addDeveloperDoll("keyxeldesu", "slim")
+// 键盘虾
+addDeveloperDoll("keyxeldesu", "slim")
 
-	// 谢尔盖
-	addDeveloperDoll("sergei", "slim")
+// 谢尔盖
+addDeveloperDoll("sergei", "slim")
 
-	// 栗子
-	addDeveloperDoll("lirx_owo", "slim")
-})
+// 栗子
+addDeveloperDoll("lirx_owo", "slim")

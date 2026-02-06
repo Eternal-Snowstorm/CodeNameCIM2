@@ -9,9 +9,11 @@ StartupEvents.registry("fluid", (event) => {
 		builder.tag("forge:molten_materials")
 		builder.tag(`forge:molten_${name}`)
 		builder.renderType("translucent")
-
-		// 生成Json模型文件
-		FluidBucketItemModel.generate(name)
+		builder.bucketItem.modelJson({
+			"parent": "forge:item/bucket_drip",
+			"loader": "forge:fluid_container",
+			"fluid": `${global.namespace}:${name}`
+		})
 
 		console.debug(`molten_${name}已注册!`)
 		return builder

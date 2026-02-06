@@ -1,3 +1,4 @@
+// priority: 11
 ServerEvents.tags("block", (event) => {
 	/**
 	 * 
