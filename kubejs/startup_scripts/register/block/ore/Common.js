@@ -23,8 +23,8 @@ let SetPath = {
 	 * @param {string} type 类型
 	 * @returns 
 	 */
-	alexCave: function (type) {
-		return `alexcave:block/${type}`
+	alexsCaves: function (type) {
+		return `alexscaves:block/${type}`
 	}
 }
 
@@ -41,8 +41,8 @@ let BackgroundTextures = {
 	mercury: SetPath.adAstra("mercury"),
 	glacio: SetPath.adAstra("glacio"),
 
-	radrock: SetPath.alexCave("radrock"),
-	galena: SetPath.alexCave("galena")
+	radrock: SetPath.alexsCaves("radrock"),
+	galena: SetPath.alexsCaves("galena")
 }
 
 // 继承父模型
@@ -140,6 +140,24 @@ const ORE_TYPE_CONFIG = {
 		resistance: function (base) {
 			return base
 		}
+	},
+	galena: {
+		sound: SoundType.STONE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
+	},
+	radrock: {
+		sound: SoundType.DEEPSLATE,
+		hardness: function (base) {
+			return base
+		},
+		resistance: function (base) {
+			return base
+		}
 	}
 }
 
@@ -200,6 +218,14 @@ OreBlock.prototype.mercury = function () {
 }
 OreBlock.prototype.glacio = function () {
 	this.types.push("glacio")
+	return this
+}
+OreBlock.prototype.galena = function () {
+	this.types.push("galena")
+	return this
+}
+OreBlock.prototype.radrock = function () {
+	this.types.push("radrock")
 	return this
 }
 
@@ -273,7 +299,6 @@ new OreBlock("tungsten", "nether", 10)
 	.appearance(0x596C7E, 5)
 	.nether()
 
-
 // 黄铁
 new OreBlock("pyrite", "stone", 6)
 	.appearance(0xE4C02C, 4)
@@ -329,3 +354,8 @@ new OreBlock("etrium", "diamond", 5)
 	.appearance(0x32FFD4, 1)
 	.stone()
 	.deepslate()
+
+// 钛
+new OreBlock("titanium", "diamond", 20)
+	.appearance(0x71EAFF, 1)
+	.galena()

@@ -332,6 +332,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("etrium", "埃忒恩")
 	addMaterialLang("superconducting_mercury", "超导汞")
 	addMaterialLang("rubber", "橡胶")
+	addMaterialLang("titanium", "钛")
 
 	addMaterialLang("pyrite", "黄铁")
 	addMaterialLang("lateritic_nickel", "红镍")
@@ -816,6 +817,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${global.namespace}.mercury_${key}_ore`, `赫尔墨斯${value}矿石`)
 		event.add(`block.${global.namespace}.venus_${key}_ore`, `阿弗洛狄忒${value}矿石`)
 		event.add(`block.${global.namespace}.glacio_${key}_ore`, `哈迪斯${value}矿石`)
+		event.add(`block.${global.namespace}.galena_${key}_ore`, `赫菲斯托斯${value}矿石`)
+		event.add(`block.${global.namespace}.radrock_${key}_ore`, `迪奥尼索斯${value}矿石`)
 	}
 
 	function addCommonTooltipLang(key, value) {
