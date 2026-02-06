@@ -150,7 +150,8 @@ ServerEvents.recipes((event) => {
 		"tconstruct:smeltery/seared/grout_multiple",
 		"createdieselgenerators:distillation/crude_oil",
 		"thermal:fuels/magmatic/magmatic_lava",
-		"immersiveindustry:chemical"
+		"immersiveindustry:chemical",
+		"tconstruct:compat/wheat_dough"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
