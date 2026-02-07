@@ -5,7 +5,9 @@ StartupEvents.registry("block", (event) => {
 	 * @returns 
 	 */
 	function addBlock(name) {
+		let chapter = 1
 		let builder = event.create(`${global.namespace}:${name}`)
+		builder.textureAll(`${global.namespace}:block/chapter/c${chapter.toString()}/${name}`)
 
 		return builder
 	}

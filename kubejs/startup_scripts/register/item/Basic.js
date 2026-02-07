@@ -24,6 +24,10 @@ StartupEvents.registry("item", (event) => {
 			.texture(`${global.namespace}:item/material/${name}`)
 	}
 
+	// 构件冲压头
+	addItem("mechanism_curving_head")
+		.tag("vintageimprovements:curving_heads")
+
 	// 黑石源质
 	addItem("blackstone_source_alpha")
 		.texture(`${global.namespace}:item/material/blackstone_source_alpha`)
