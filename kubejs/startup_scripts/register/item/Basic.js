@@ -73,13 +73,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("refined_iron_bloom")
 		.texture(`${global.namespace}:item/material/material/material/ingot/refined_iron_bloom`)
 
-	// 充能紫水晶
-	addItem("charged_amethyst")
-		.texture(`${global.namespace}:item/material/charged_amethyst`)
-		.rarity("epic")
-		.tag("forge:gems")
-		.tag("forge:gems/charged_amethyst")
-
 	// 淤泥提取物
 	addItem("sludge_extract")
 		.texture(`${global.namespace}:item/material/sludge_extract`)

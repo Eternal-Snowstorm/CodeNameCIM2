@@ -49,6 +49,7 @@ replay*
 /mods.zip
 /patchouli_books
 config/ftbquests/qusets/chapters/control*
+/removed_kjs
 
 # Mods
 /mods/*

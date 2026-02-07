@@ -78,7 +78,6 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("light_olefins", 0xCED7FF) //轻烯烃
 	addColorFluid("light_silicate_ether", 0xBEFFFF) //轻硅醚
 	addColorFluid("polysiloxane", 0x77AAAA) //聚硅醚
-	addColorFluid("rice_vinegar", 0xE8E4BE) // 米醋
 	addColorFluid("acetic_acid", 0xFFFFFF) // 醋酸
 	addColorFluid("cracked_gasoline", 0xFFEECC) // 裂化汽油
 	addColorFluid("benzene", 0xFFF4AD) // 苯

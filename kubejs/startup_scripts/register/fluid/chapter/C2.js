@@ -41,4 +41,7 @@ StartupEvents.registry("fluid", (event) => {
 
 		return builder
 	}
+
+	// 醋
+	addColorFluid("vinegar", 0xFAF3E0)
 })

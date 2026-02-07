@@ -63,38 +63,6 @@ StartupEvents.registry("item", (event) => {
 		.tag("mekanism:configurators")
 		.tag("forge:wrenches")
 
-	// 简易电池
-	event.create(`${global.namespace}:simple_battery`)
-		.maxStackSize(1)
-		.texture("createaddition:item/capacitor")
-		.attachCapability(CapabilityBuilder.ENERGY.customItemStack()
-			.canExtract(() => true)
-			.canReceive(() => true)
-			.getEnergyStored((stack) => {
-				stack.nbt?.energy || 0
-			})
-			.getMaxEnergyStored(() => 10000)
-			.extractEnergy((stack, amount, simulate) => {
-				let stored = stack.nbt?.energy || 0
-				let extracted = Math.min(stored, amount)
-				if (!simulate) {
-					stack.nbt = stack.nbt || {}
-					stack.nbt.energy = stored - extracted
-				}
-				return extracted
-			})
-			.receiveEnergy((stack, amount, simulate) => {
-				let stored = stack.nbt?.energy || 0
-				let max = 10000
-				let received = Math.min(max - stored, amount)
-				if (!simulate) {
-					stack.nbt = stack.nbt || {}
-					stack.nbt.energy = stored + received
-				}
-				return received
-			})
-		)
-
 	// 木质龙头
 	event.create(`${global.namespace}:wooden_faucet`)
 		.texture(`${global.namespace}:item/tool/wooden_faucet`)
