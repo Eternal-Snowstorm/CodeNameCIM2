@@ -5,7 +5,7 @@ StartupEvents.registry("item", (event) => {
 	 * @returns 
 	 */
 	function addItem(name) {
-		let chapter = 3
+		let chapter = 4
 		let builder = event.create(`${global.namespace}:${name}`)
 
 		builder.texture(`${global.namespace}:item/chapter/c${chapter.toString()}/${name}`)
