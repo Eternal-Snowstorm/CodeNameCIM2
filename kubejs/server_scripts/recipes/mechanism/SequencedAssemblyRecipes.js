@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
     function BasicMechRecipe(result, transit, ingredient, part) {
         this.process1 = vintageimprovements.curving(transit, transit).itemAsHead("cmi:mechanism_curving_head")
         this.process2 = create.cutting(transit, transit)
-        this.process3 = undefined
+        this.process3
         this.process4 = vintageimprovements.vibrating(transit, transit)
         this.result = result
         this.transit = transit
