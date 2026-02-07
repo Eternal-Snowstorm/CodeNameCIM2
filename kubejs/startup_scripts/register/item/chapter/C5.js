@@ -12,4 +12,13 @@ StartupEvents.registry("item", (event) => {
 
 		return builder
 	}
+
+	// 硅混合物
+	addItem("silicon_mixure")
+
+	// 硅橡胶
+	addItem("silicon_rubber")
+
+	// 硅橡胶板
+	addItem("silicon_rubber_plate")
 })

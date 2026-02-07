@@ -67,21 +67,6 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("sodium_hydroxide")
 
 
-	// c5
-
-	// addAloneFluid("naphtha") // 石脑油
-	// addAloneFluid("lubricating_oil") // 润滑油
-	// addAloneFluid("pure_sand") // 纯净沙
-	addAloneFluid("molten_bitumen") // 熔融沥青
-	addColorFluid("sulfric_diesel", 0xFFDA69) // 含硫柴油
-	addAloneFluid("kerosene") // 煤油
-	addColorFluid("light_olefins", 0xCED7FF) //轻烯烃
-	addColorFluid("light_silicate_ether", 0xBEFFFF) //轻硅醚
-	addColorFluid("polysiloxane", 0x77AAAA) //聚硅醚
-	addColorFluid("acetic_acid", 0xFFFFFF) // 醋酸
-	addColorFluid("cracked_gasoline", 0xFFEECC) // 裂化汽油
-	addColorFluid("benzene", 0xFFF4AD) // 苯
-
 
 	// c6
 

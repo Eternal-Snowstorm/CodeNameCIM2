@@ -295,3 +295,9 @@ new Material("titanium", "diamond")
 	.gear()
 	.block()
 	.molten()
+
+// 纯净石英
+new Material("pure_quartz", "wooden")
+	.color(0xFFFFFF, 0xFFFFFF)
+	.dust()
+	.prism()

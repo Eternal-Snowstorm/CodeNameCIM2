@@ -117,7 +117,7 @@ StartupEvents.registry("item", (event) => {
 					let { player, level } = event
 					let key = `message.${global.namespace}.food.creosote_wood_chip_briquette`
 
-					if (event.hand !== "MAIN_HAND" && !level.isClientSide()) {
+					if (event.hand !== InteractionHand.MAIN_HAND && !level.isClientSide()) {
 						player.displayClientMessage(Component.translatable(key).blue(), true)
 					}
 				})
@@ -143,9 +143,6 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/drawer_upgrade_template`)
 
 	// 硅处理
-	// 硅混合物
-	addItem("silicon_mixure")
-		.texture(`${global.namespace}:item/material/silicon/silicon_mixure`)
 	// 碳化硅
 	addItem("silicon_carbide")
 		.texture(`${global.namespace}:item/material/silicon/silicon_carbide`)
