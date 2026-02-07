@@ -10,10 +10,13 @@ StartupEvents.registry("item", (event) => {
 	}
 
 	function addCellItem(name, color) {
-		return event.create(`${global.namespace}:${name}_cell`)
-			.color(0, color)
-			.modelJson(cellModel())
-			.tag(`${global.namespace}:cells`)
+		let builder = event.create(`${global.namespace}:${name}_cell`)
+
+		builder.color(0, color)
+		builder.modelJson(cellModel())
+		builder.tag(`${global.namespace}:cells`)
+
+		return builder
 	}
 
 	// 空白硬盘

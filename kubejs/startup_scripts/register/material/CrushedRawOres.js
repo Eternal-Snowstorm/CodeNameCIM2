@@ -1,13 +1,12 @@
 StartupEvents.registry("item", (event) => {
 	function addAloneCrushedRawMaterial(name) {
-		let registerAloneCrushedRawMaterial =
-			event.create(`${global.namespace}:crushed_raw_${name}`)
-				.texture(`${global.namespace}:item/material/crushed/${name}`)
-				.tag(`${global.namespace}:raw_metals`)
-				.tag("create:crushed_raw_materials")
-				.tag(`create:crushed_raw_materials/${name}`)
+		let builder = event.create(`${global.namespace}:crushed_raw_${name}`)
+		builder.texture(`${global.namespace}:item/material/crushed/${name}`)
+		builder.tag(`${global.namespace}:raw_metals`)
+		builder.tag("create:crushed_raw_materials")
+		builder.tag(`create:crushed_raw_materials/${name}`)
 
-		return registerAloneCrushedRawMaterial
+		return builder
 	}
 
 	addAloneCrushedRawMaterial("desh")

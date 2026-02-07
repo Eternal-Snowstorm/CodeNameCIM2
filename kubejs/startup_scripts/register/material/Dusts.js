@@ -1,23 +1,23 @@
 StartupEvents.registry("item", (event) => {
 	function addColorDustItem(name, color) {
-		let registerColorDustItem =
-			event.create(`${global.namespace}:${name}_dust`)
-				.texture(`${global.namespace}:item/material/color/dust/dust`)
-				.color(0, color)
-				.tag("forge:dusts")
-				.tag(`forge:dusts/${name}`)
+		let builder = event.create(`${global.namespace}:${name}_dust`)
 
-		return registerColorDustItem
+		builder.texture(`${global.namespace}:item/material/color/dust/dust`)
+		builder.color(0, color)
+		builder.tag("forge:dusts")
+		builder.tag(`forge:dusts/${name}`)
+
+		return builder
 	}
 
 	function addAloneDustItem(name) {
-		let registerAloneDustItem =
-			event.create(`${global.namespace}:${name}_dust`)
-				.texture(`${global.namespace}:item/material/material/dust/${name}`)
-				.tag("forge:dusts")
-				.tag(`forge:dusts/${name}`)
+		let builder = event.create(`${global.namespace}:${name}_dust`)
 
-		return registerAloneDustItem
+		builder.texture(`${global.namespace}:item/material/material/dust/${name}`)
+		builder.tag("forge:dusts")
+		builder.tag(`forge:dusts/${name}`)
+
+		return builder
 	}
 
 	addColorDustItem("end_stone", 0xF6FABD)

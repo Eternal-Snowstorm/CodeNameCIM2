@@ -1,7 +1,7 @@
 StartupEvents.registry("item", (event) => {
 	/**
 	 * @param {string} name 注册ID
-	 * @param {"basic" | "sword" | "pickaxe" | "axe" | "shovel" | "shears" | "hoe" | "helmet" | "chestplate" | "leggings" | "boots" | "music_disc" | "smithing_template" | "animatable" | "anim_helmet" | "anim_chestplate" | "anim_leggings" | "anim_boots" | "anim_axe" | "anim_hoe" | "anim_pickaxe" | "anim_sword" | "anim_shield" | "create:sequenced_assembly" | "create:sandpaper" | "vintageimprovements:spring"} type 注册类型
+	 * @param {string} type 注册类型
 	 * @returns 
 	 */
 	function addItem(name, type) {
@@ -12,7 +12,7 @@ StartupEvents.registry("item", (event) => {
 	}
 	/**
 	 * @param {string} name 注册ID
-	 * @param {"basic" | "sword" | "pickaxe" | "axe" | "shovel" | "shears" | "hoe" | "helmet" | "chestplate" | "leggings" | "boots" | "music_disc" | "smithing_template" | "animatable" | "anim_helmet" | "anim_chestplate" | "anim_leggings" | "anim_boots" | "anim_axe" | "anim_hoe" | "anim_pickaxe" | "anim_sword" | "anim_shield" | "create:sequenced_assembly" | "create:sandpaper" | "vintageimprovements:spring"} type 注册类型
+	 * @param {string} type 注册类型
 	 * @returns 
 	 */
 	function addMaterial(name, type) {
@@ -163,16 +163,6 @@ StartupEvents.registry("item", (event) => {
 	// 单晶硅
 	addItem("single_crystal_silicon")
 		.texture(`${global.namespace}:item/material/silicon/single_crystal_silicon`)
-
-	// 橡胶板
-	addItem("rubber_plate")
-		.texture(`${global.namespace}:item/material/rubber/rubber_plate_0`)
-		.tag("forge:plates")
-		.tag("forge:plates/rubber")
-
-	// 橡胶树皮
-	addItem("rubber_tree_bark")
-		.texture(`${global.namespace}:item/material/rubber/tree_bark`)
 
 	// 生石灰
 	addItem("lime")
