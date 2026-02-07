@@ -1,7 +1,7 @@
 StartupEvents.registry("item", (event) => {
     /**
      * @param {string} name 注册ID
-     * @param {"basic" | "sword" | "pickaxe" | "axe" | "shovel" | "shears" | "hoe" | "helmet" | "chestplate" | "leggings" | "boots" | "music_disc" | "smithing_template" | "animatable" | "anim_helmet" | "anim_chestplate" | "anim_leggings" | "anim_boots" | "anim_axe" | "anim_hoe" | "anim_pickaxe" | "anim_sword" | "anim_shield" | "create:sequenced_assembly" | "create:sandpaper" | "vintageimprovements:spring"} type 注册类型
+     * @param {string} type 注册类型
      * @returns 
      */
     function addItem(name, type) {
@@ -38,5 +38,4 @@ StartupEvents.registry("item", (event) => {
     // 雷达
     addItem("radar_repair_kit")
         .texture(`${global.namespace}:item/space/radar`)
-
 })
