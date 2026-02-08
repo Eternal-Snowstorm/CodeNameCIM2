@@ -84,6 +84,17 @@ new Material("magnesium", "stone")
 	.block()
 	.molten()
 
+// 钛
+new Material("titanium", "iron")
+	.color(0xD3BFFF, 0x988AB8)
+	.isMetal()
+	.ingot()
+	.plate()
+	.dust()
+	.nugget()
+	.block()
+	.molten()
+
 // 工业铁
 new Material("industrial_iron", "iron")
 	.color(0x626262, 0x4E4E4E)

@@ -51,18 +51,18 @@ ServerEvents.recipes((event) => {
 	// 	"#forge:silicon"
 	// ]).processingTime(200).superheated()
 
-	// 晶体催生剂
-	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
-		Fluid.of("sliceanddice:fertilizer", 500),
-		"#cmi:crystals",
-		"16x #forge:crops"
-	]).heated()
+	// // 晶体催生剂
+	// create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
+	// 	Fluid.of("sliceanddice:fertilizer", 500),
+	// 	"#cmi:crystals",
+	// 	"16x #forge:crops"
+	// ]).heated()
 
-	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
-		Fluid.of("sliceanddice:fertilizer", 500),
-		"#cmi:crystals",
-		"32x #forge:seeds"
-	]).heated()
+	// create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
+	// 	Fluid.of("sliceanddice:fertilizer", 500),
+	// 	"#cmi:crystals",
+	// 	"32x #forge:seeds"
+	// ]).heated()
 
 	// 熔融黄铜
 	create.mixing(Fluid.of("tconstruct:molten_brass", 180), [

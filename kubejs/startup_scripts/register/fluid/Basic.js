@@ -45,7 +45,6 @@ StartupEvents.registry("fluid", (event) => {
 	}
 
 	addColorFluid("eletriced_source_emeraid", 0x117458)
-	addColorFluid("platinum_solution", 0xE1FFFF)
 	addColorFluid("trinitrotoluene_solution", 0xFFEFA8)
 	addColorFluid("crystal_catalyt", 0x90EE90)
 	addColorFluid("geyser_jet", 0x3D57FF)
@@ -115,6 +114,9 @@ StartupEvents.registry("fluid", (event) => {
 
 	// addColorFluid("tetrachlorosilane", 0xDDFF6E) // 四氯化硅
 	addColorFluid("chromium_plating_solution", 0x55AAAA) // 铬电镀液
+	addColorFluid("chromium_plating_solution", 0x00FFFF) // 铬溶液
+	addColorFluid("platinum_solution", 0x663300) // 铂溶液
+	addColorFluid("cobalt_solution", 0xFFAAFF) // 钛溶液
 
 
 })
