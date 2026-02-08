@@ -251,14 +251,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("diode")
 		.texture(`${global.namespace}:item/material/diode`)
 
-	// 硅橡胶
-	addItem("silicon_rubber")
-		.texture(`${global.namespace}:item/material/rubber/silicon/rubber`)
-
-	// 硅橡胶板
-	addItem("silicon_rubber_plate")
-		.texture(`${global.namespace}:item/material/rubber/silicon/rubber_plate_0`)
-
 	// 热力单元
 	addItem("thermal_unit")
 		.texture(`${global.namespace}:item/material/thermal/unit_0`)

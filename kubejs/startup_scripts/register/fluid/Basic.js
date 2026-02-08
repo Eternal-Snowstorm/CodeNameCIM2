@@ -64,7 +64,6 @@ StartupEvents.registry("fluid", (event) => {
 
 	// addColorFluid("fatty_acid", 0xFFFE9B) // 脂肪酸
 	// addColorFluid("glycerin", 0xFFFCB8) // 甘油
-	addColorFluid("phenol", 0xAAAA99) // 苯酚
 	addColorFluid("light_aromatics", 0xEEDD66) // 轻芳烃
 	addColorFluid("nitric_acid", 0xD6B000) // 硝酸
 	addColorFluid("fluid_nitroglycerine", 0xFFFBD3) //  三硝基甲苯溶液
