@@ -158,10 +158,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("single_crystal_silicon")
 		.texture(`${global.namespace}:item/material/silicon/single_crystal_silicon`)
 
-	// 生石灰
-	addItem("lime")
-		.texture(`${global.namespace}:item/material/lime`)
-
 	// 草纤维
 	addItem("grass_fiber")
 		.texture(`${global.namespace}:item/material/grass_fiber`)
@@ -250,18 +246,6 @@ StartupEvents.registry("item", (event) => {
 	// 二极管
 	addItem("diode")
 		.texture(`${global.namespace}:item/material/diode`)
-
-	// 热力单元
-	addItem("thermal_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_0`)
-	addItem("blaze_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_1`)
-	addItem("basalz_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_2`)
-	addItem("blitz_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_3`)
-	addItem("blizz_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_4`)
 
 	let SomeModelsJson = {
 		cogwheel: function (material) {

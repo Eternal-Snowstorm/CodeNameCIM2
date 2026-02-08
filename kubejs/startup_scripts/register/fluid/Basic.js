@@ -41,7 +41,6 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("trinitrotoluene_solution", 0xFFEFA8)
 	addColorFluid("crystal_catalyt", 0x90EE90)
 	addColorFluid("geyser_jet", 0x3D57FF)
-	addColorFluid("photosyn_fluid", 0x00FA9A)
 	addColorFluid("xenon", 0x1E90FF)
 	addColorFluid("radon", 0x00FF00)
 	addColorFluid("mercury", 0xA9C0FF)

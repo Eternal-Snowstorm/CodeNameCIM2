@@ -34,6 +34,15 @@ StartupEvents.registry("fluid", (event) => {
 		return builder
 	}
 
+	// 铬电镀液
+	addColorFluid("chromium_plating_solution", 0x55AAAA)
+
+	//盐酸
+	addFluid("hydrochloric_acid")
+
+	// 含锂电解液
+	addColorFluid("lithium_containing_electrolyte", 0x555100)
+
 	// 轻芳烃
 	addColorFluid("light_aromatics", 0xEEDD66)
 
@@ -78,4 +87,7 @@ StartupEvents.registry("fluid", (event) => {
 
 	// 废卤水
 	addColorFluid("waste_brine", 0x3C3C3C)
+
+	// 光合反应液
+	addColorFluid("photosyn_fluid", 0x00FA9A)
 })
