@@ -1,11 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { create } = event.recipes
 
-	event.remove({
-		type: "create:splashing",
-		input: "#create:crushed_raw_materials"
-	})
-
 	addCrushedSplashing("iron", "minecraft:redstone")
 	addCrushedSplashing("gold", "thermal:quartz_dust")
 	addCrushedSplashing("copper", "minecraft:clay_ball")
