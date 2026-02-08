@@ -239,7 +239,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("eletriced_source_emeraid", "电解源质")
 	addFluidLang("delta_unstable_solution", "Δ(Delta)型不稳定源质溶液")
 	addFluidLang("turbid_waste_liquid", "浑浊废液")
-	addFluidLang("platinum_solution", "铂溶液")
 	addFluidLang("cured_rubber", "熔融硫化橡胶")
 	addFluidLang("tetrachlorosilane", "四氯化硅")
 	addFluidLang("molten_bitumen", "熔融沥青")
@@ -291,6 +290,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("lithium-containing_electrolyte", "含锂电解液")
 	addFluidLang("chromium_plating_solution", "铬电镀液")
 	addFluidLang("vinegar", "醋")
+	addFluidLang("chromium_solution", "铬溶液")
+	addFluidLang("platinum_solution", "铂溶液")
+	addFluidLang("cobalt_solution", "钴溶液")
 
 	addMaterialLang("andesite_alloy", "安山合金")
 	addMaterialLang("cinderslime", "余烬史莱姆")

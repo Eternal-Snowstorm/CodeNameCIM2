@@ -98,7 +98,7 @@ StartupEvents.registry("fluid", (event) => {
 
 	// addColorFluid("tetrachlorosilane", 0xDDFF6E) // 四氯化硅
 	addColorFluid("chromium_plating_solution", 0x55AAAA) // 铬电镀液
-	addColorFluid("chromium_plating_solution", 0x00FFFF) // 铬溶液
+	addColorFluid("chromium_solution", 0x00FFFF) // 铬溶液
 	addColorFluid("platinum_solution", 0x663300) // 铂溶液
 	addColorFluid("cobalt_solution", 0xFFAAFF) // 钛溶液
 
