@@ -184,6 +184,13 @@ let Mechanism = Object.freeze({
         COM: Item.of("cmi:antimatter_mechanism"),
         INC: Item.of("cmi:incomplete_antimatter_mechanism"),
         BAS: Item.of("cmi:antimatter_mechanism_basement")
+    }),
+    PART: Object.freeze({
+        BASIC: Item.of("cmi:basic_mechanism_part"),
+        MAGIC: Item.of("cmi:magical_mechanism_part"),
+        MECHA: Item.of("cmi:mechanical_mechanism_part"),
+        ENGIN: Item.of("cmi:engineering_mechanism_part"),
+        FLUX: Item.of("cmi:flux_mechanism_part")
     })
 })
 

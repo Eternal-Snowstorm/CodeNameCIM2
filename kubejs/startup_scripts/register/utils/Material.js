@@ -88,18 +88,6 @@ Material.prototype.rod = function (overlay) {
 Material.prototype.gear = function (overlay) {
 	return this.pushType("gear", overlay)
 }
-Material.prototype.block = function () {
-	this.types.push({
-		type: "block"
-	})
-	return this
-}
-Material.prototype.molten = function () {
-	this.types.push({
-		type: "molten"
-	})
-	return this
-}
 Material.prototype.dirty = function () {
 	this.types.push({
 		type: "dirty"
@@ -133,6 +121,24 @@ Material.prototype.dirtySlurry = function () {
 Material.prototype.slurry = function () {
 	this.types.push({
 		type: "slurry"
+	})
+	return this
+}
+Material.prototype.prism = function () {
+	this.types.push({
+		type: "prism"
+	})
+	return this
+}
+Material.prototype.block = function () {
+	this.types.push({
+		type: "block"
+	})
+	return this
+}
+Material.prototype.molten = function () {
+	this.types.push({
+		type: "molten"
 	})
 	return this
 }

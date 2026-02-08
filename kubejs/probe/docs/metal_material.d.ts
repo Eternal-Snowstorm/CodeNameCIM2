@@ -59,15 +59,16 @@ interface Material {
 	dust(overlay?: boolean): this
 	rod(overlay?: boolean): this
 	gear(overlay?: boolean): this
-	block(): this
 	sound(sound: Internal.SoundType_): this
-	molten(): this
 	dirty(): this
 	clump(): this
 	shard(): this
 	crystal(): this
 	dirtySlurry(): this
 	slurry(): this
+	prism(): this
+	block(): this
+	molten(): this
 }
 
 

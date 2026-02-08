@@ -97,6 +97,9 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "yes_steve_model": {
+    "model_info": true
+  },
   "mekanism": {
     "infuse_type": true,
     "gas": true,
@@ -121,7 +124,7 @@
     "filter": true,
     "backtank_capacity": true,
     "goggles.requires_goggles": true,
-    "goggles": false,
+    "goggles": true,
     "blaze_burner": true,
     "exact_block": true,
     "crafting_blueprint": true,
