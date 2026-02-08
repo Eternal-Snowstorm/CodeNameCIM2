@@ -4,7 +4,7 @@ StartupEvents.registry("item", (event) => {
  * @param {boolean} isSequencedAssembly 是否是序列物品
  * @returns 
  */
-	function addItem(name) {
+	function addItem(name, isSequencedAssembly) {
 		if (!isSequencedAssembly) {
 			return event.create(`${global.namespace}:incomplete_${name}`)
 		} else if (isSequencedAssembly == undefined) {
@@ -13,7 +13,12 @@ StartupEvents.registry("item", (event) => {
 			return event.create(`${global.namespace}:incomplete_${name}`)
 		}
 	}
-	function addIncompleteItem(name) {
+	/**
+ * @param {string} name 注册ID
+ * @param {boolean} isSequencedAssembly 是否是序列物品
+ * @returns 
+ */
+	function addIncompleteItem(name, isSequencedAssembly) {
 		if (!isSequencedAssembly) {
 			return event.create(`${global.namespace}:incomplete_${name}`)
 				.texture(`${global.namespace}:item/material/incomplete/${name}`)
