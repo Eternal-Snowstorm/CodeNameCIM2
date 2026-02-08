@@ -10,11 +10,7 @@ StartupEvents.registry("fluid", (event) => {
 		builder.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
 		builder.stillTexture(`${global.namespace}:fluid/${name}/still`)
 		builder.renderType("translucent")
-		builder.bucketItem.modelJson({
-			"parent": "forge:item/bucket_drip",
-			"loader": "forge:fluid_container",
-			"fluid": `${global.namespace}:${name}`
-		})
+		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
 		console.log(`${global.namespace}:${name}已注册!`)
 
@@ -35,11 +31,7 @@ StartupEvents.registry("fluid", (event) => {
 		builder.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 		builder.stillTexture(`${global.namespace}:fluid/solution/still`)
 		builder.renderType("translucent")
-		builder.bucketItem.modelJson({
-			"parent": "forge:item/bucket_drip",
-			"loader": "forge:fluid_container",
-			"fluid": `${global.namespace}:${name}`
-		})
+		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
 		return builder
 	}
