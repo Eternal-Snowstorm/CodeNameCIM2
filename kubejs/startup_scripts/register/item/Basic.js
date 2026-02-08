@@ -28,22 +28,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("mechanism_curving_head")
 		.tag("vintageimprovements:curving_heads")
 
-	// 黑石源质
-	addItem("blackstone_source_alpha")
-		.texture(`${global.namespace}:item/material/blackstone_source_alpha`)
-	addItem("blackstone_source_beta")
-		.texture(`${global.namespace}:item/material/blackstone_source_beta`)
-	addItem("blackstone_source_gamma")
-		.texture(`${global.namespace}:item/material/blackstone_source_gamma`)
-
-	// 宝石原料
-	addItem("crystal_ruby")
-		.texture(`${global.namespace}:item/material/crystal_ruby`)
-	addItem("source_sapphire")
-		.texture(`${global.namespace}:item/material/source_sapphire`)
-	addItem("bombed_source_emeraid")
-		.texture(`${global.namespace}:item/material/bombed_source_emeraid`)
-
 	// 黏血球
 	addItem("blood_slime_ball")
 		.texture(`${global.namespace}:item/material/blood_slime_ball`)

@@ -33,4 +33,19 @@ StartupEvents.registry("fluid", (event) => {
 
 		return builder
 	}
+
+	// 晶体催生剂
+	addColorFluid("crystal_catalyt", 0x90EE90)
+
+	// Delta不稳定溶液
+	addFluid("delta_unstable_solution")
+
+	// 铂溶液
+	addColorFluid("platinum_solution", 0xE1FFFF)
+
+	// 钛溶液
+	addColorFluid("titanium_solution", 0x71EAFF)
+
+	// 浑浊废液
+	addFluid("turbid_waste_liquid")
 })

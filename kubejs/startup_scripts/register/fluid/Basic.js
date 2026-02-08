@@ -37,9 +37,7 @@ StartupEvents.registry("fluid", (event) => {
 	}
 
 	addColorFluid("eletriced_source_emeraid", 0x117458)
-	addColorFluid("platinum_solution", 0xE1FFFF)
 	addColorFluid("trinitrotoluene_solution", 0xFFEFA8)
-	addColorFluid("crystal_catalyt", 0x90EE90)
 	addColorFluid("geyser_jet", 0x3D57FF)
 	addColorFluid("xenon", 0x1E90FF)
 	addColorFluid("radon", 0x00FF00)
@@ -50,8 +48,6 @@ StartupEvents.registry("fluid", (event) => {
 		.gaseous()
 	addAloneFluid("blood")
 	addAloneFluid("sludge_suspension")
-	addAloneFluid("delta_unstable_solution")
-	addAloneFluid("turbid_waste_liquid")
 	addAloneFluid("cured_rubber")
 		.noBlock()
 	addAloneFluid("bromine")
