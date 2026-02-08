@@ -46,6 +46,12 @@ StartupEvents.registry("fluid", (event) => {
 	// 钛溶液
 	addColorFluid("titanium_solution", 0x71EAFF)
 
+	// 钴溶液
+	addColorFluid("cobalt_solution", 0x2375DA)
+
 	// 浑浊废液
 	addFluid("turbid_waste_liquid")
+
+	// 电镀液
+	addColorFluid("plating_solution", 0x55AAAA)
 })

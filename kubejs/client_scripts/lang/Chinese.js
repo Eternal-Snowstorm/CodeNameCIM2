@@ -289,7 +289,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("alkaline_brine", "碱性卤水")
 	addFluidLang("waste_brine", "废卤水")
 	addFluidLang("lithium_containing_electrolyte", "含锂电解液")
-	addFluidLang("chromium_plating_solution", "铬电镀液")
+	addFluidLang("plating_solution", "电镀液")
 	addFluidLang("vinegar", "醋")
 
 	addMaterialLang("andesite_alloy", "安山合金")

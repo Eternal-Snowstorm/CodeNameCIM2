@@ -34,9 +34,6 @@ StartupEvents.registry("fluid", (event) => {
 		return builder
 	}
 
-	// 铬电镀液
-	addColorFluid("chromium_plating_solution", 0x55AAAA)
-
 	//盐酸
 	addFluid("hydrochloric_acid")
 
