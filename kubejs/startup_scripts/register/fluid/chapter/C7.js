@@ -34,48 +34,12 @@ StartupEvents.registry("fluid", (event) => {
 		return builder
 	}
 
-	// 轻芳烃
-	addColorFluid("light_aromatics", 0xEEDD66)
+	// 铬电镀液
+	addColorFluid("chromium_plating_solution", 0x55AAAA)
 
-	// 硝酸
-	addColorFluid("nitric_acid", 0xD6B000)
+	//盐酸
+	addFluid("hydrochloric_acid")
 
-	// 三硝基甲苯溶液
-	addColorFluid("fluid_nitroglycerine", 0xFFFBD3)
-
-	// 裂化柴油
-	addColorFluid("cracked_diesel", 0xDDCCBB)
-
-	// 裂化润滑油
-	addColorFluid("cracked_lubricating_oil", 0xFFFF99)
-
-	// 结构塑胶
-	addColorFluid("structural_plastic", 0xAABBEE)
-
-	// 轻醛烃
-	addColorFluid("light_aldehyde", 0xAACCFF)
-
-	// 聚乙烯醇
-	addColorFluid("polyvinyl_alcohol", 0x887799)
-
-	// 乙烯醇
-	addColorFluid("vinyl_alcohol", 0x9988AA)
-
-	// 乙炔
-	addColorFluid("acetylene", 0xDADEDF)
-
-	// 海水
-	addFluid("sea_water")
-
-	// 浓缩海水
-	addFluid("concentrated_sea_water")
-
-	// 卤水
-	addColorFluid("brine", 0xA3A189)
-
-	// 碱性卤水
-	addColorFluid("alkaline_brine", 0x8FA8A4)
-
-	// 废卤水
-	addColorFluid("waste_brine", 0x3C3C3C)
+	// 含锂电解液
+	addColorFluid("lithium_containing_electrolyte", 0x555100)
 })
