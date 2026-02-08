@@ -1,235 +1,132 @@
 ServerEvents.recipes((event) => {
-	let { tconstruct } = event.recipes
+    let { tconstruct } = event.recipes
 
-	tconstruct.melting(Fluid.of("tconstruct:molten_obsidian", 1000))
-		.ingredient("#forge:obsidian")
-		.time(80)
-		.temperature(800)
-		.id("tconstruct:smeltery/melting/obsidian/block")
+    global.metalGroup.forEach((metal) => {
+        event.remove([
+            {
+                id: new RegExp(`^tconstruct:smeltery/melting/metal/${metal}/.+`)
+            }, {
+                id: new RegExp(`^thermalconstruct:smeltery/melting/metal/${metal}/.+`)
+            }, {
+                id: new RegExp(`^tconstruct:tools/materials/melting/${metal}`)
+            }, {
+                id: new RegExp(`^thermalconstruct:smeltery/melting/${metal}`)
+            }
+        ])
 
-	global.metalGroup.forEach((metal) => {
-		event.remove([
-			{
-				id: new RegExp(`^tconstruct:smeltery/melting/metal/${metal}/.+`)
-			}, {
-				id: new RegExp(`^thermalconstruct:smeltery/melting/metal/${metal}/.+`)
-			}, {
-				id: new RegExp(`^tconstruct:tools/materials/melting/${metal}`)
-			}, {
-				id: new RegExp(`^thermalconstruct:smeltery/melting/${metal}`)
-			}
-		])
+        let meltingPoint = global.meltingPoints[metal]
+        let fluidId = IngrUtils.getFirstFluidId(`tconstruct:molten_${metal}`)
+        let namespace = global.materialNamespace[metal]
+        let ingot = `#forge:ingots/${metal}`
+        let plate = `#forge:plates/${metal}`
+        let nugget = `#forge:nuggets/${metal}`
+        let gear = `#forge:gears/${metal}`
+        let dust = `#forge:dusts/${metal}`
+        let rawMaterial = `#forge:raw_materials/${metal}`
+        let block = `#forge:storage_blocks/${metal}`
+        let rawBlock = `#forge:storage_blocks/raw_${metal}`
 
-		let meltingPoint = global.meltingPoints[metal]
-		let fluidId = IngrUtils.getFirstFluidId(`tconstruct:molten_${metal}`)
-		let namespace = global.materialNamespace[metal]
-		let ingot = `#forge:ingots/${metal}`
-		let plate = `#forge:plates/${metal}`
-		let nugget = `#forge:nuggets/${metal}`
-		let gear = `#forge:gears/${metal}`
-		let dust = `#forge:dusts/${metal}`
-		let rawMaterial = `#forge:raw_materials/${metal}`
-		let block = `#forge:storage_blocks/${metal}`
-		let rawBlock = `#forge:storage_blocks/raw_${metal}`
+        if (fluidId !== null) {
+            if (IngrUtils.isNotNull(ingot)) {
+                tconstruct.melting(Fluid.of(fluidId, 90))
+                    .ingredient(ingot)
+                    .time(100)
+                    .temperature(meltingPoint)
+            }
 
-		if (fluidId !== null) {
-			if (IngrUtils.isNotNull(ingot)) {
-				tconstruct.melting(Fluid.of(fluidId, 90))
-					.ingredient(ingot)
-					.time(100)
-					.temperature(meltingPoint)
-			}
+            if (IngrUtils.isNotNull(plate)) {
+                tconstruct.melting(Fluid.of(fluidId, 90))
+                    .ingredient(plate)
+                    .time(100)
+                    .temperature(meltingPoint)
+            }
 
-			if (IngrUtils.isNotNull(plate)) {
-				tconstruct.melting(Fluid.of(fluidId, 90))
-					.ingredient(plate)
-					.time(100)
-					.temperature(meltingPoint)
-			}
+            if (IngrUtils.isNotNull(nugget)) {
+                tconstruct.melting(Fluid.of(fluidId, 10))
+                    .ingredient(nugget)
+                    .time(60)
+                    .temperature(meltingPoint)
+            }
 
-			if (IngrUtils.isNotNull(nugget)) {
-				tconstruct.melting(Fluid.of(fluidId, 10))
-					.ingredient(nugget)
-					.time(60)
-					.temperature(meltingPoint)
-			}
+            if (IngrUtils.isNotNull(gear)) {
+                tconstruct.melting(Fluid.of(fluidId, 360))
+                    .ingredient(gear)
+                    .time(120)
+                    .temperature(meltingPoint)
+            }
 
-			if (IngrUtils.isNotNull(gear)) {
-				tconstruct.melting(Fluid.of(fluidId, 360))
-					.ingredient(gear)
-					.time(120)
-					.temperature(meltingPoint)
-			}
+            if (IngrUtils.isNotNull(dust)) {
+                tconstruct.melting(Fluid.of(fluidId, 90))
+                    .ingredient(dust)
+                    .time(80)
+                    .temperature(meltingPoint)
+            }
 
-			if (IngrUtils.isNotNull(dust)) {
-				tconstruct.melting(Fluid.of(fluidId, 90))
-					.ingredient(dust)
-					.time(80)
-					.temperature(meltingPoint)
-			}
+            if (metal.toString() !== "aluminum" && IngrUtils.isNotNull(rawMaterial)) {
+                tconstruct.melting(Fluid.of(fluidId, 120))
+                    .ingredient(rawMaterial)
+                    .time(100)
+                    .temperature(meltingPoint)
+            }
 
-			if (metal.toString() !== "aluminum" && IngrUtils.isNotNull(rawMaterial)) {
-				tconstruct.melting(Fluid.of(fluidId, 120))
-					.ingredient(rawMaterial)
-					.time(100)
-					.temperature(meltingPoint)
-			}
+            if (IngrUtils.isNotNull(rawBlock)) {
+                if (metal.toString() !== "aluminum" &&
+                    metal.toString() !== "desh" &&
+                    metal.toString() !== "ostrum" &&
+                    metal.toString() !== "calorite") {
+                    tconstruct.melting(Fluid.of(fluidId, 1080))
+                        .ingredient(rawBlock)
+                        .time(200)
+                        .temperature(meltingPoint)
+                }
+            }
 
-			if (IngrUtils.isNotNull(rawBlock)) {
-				if (metal.toString() !== "aluminum" &&
-					metal.toString() !== "desh" &&
-					metal.toString() !== "ostrum" &&
-					metal.toString() !== "calorite") {
-					tconstruct.melting(Fluid.of(fluidId, 1080))
-						.ingredient(rawBlock)
-						.time(200)
-						.temperature(meltingPoint)
-				}
-			}
+            if (IngrUtils.isNotNull(block)) {
+                if (metal.toString() !== "aluminum" &&
+                    metal.toString() !== "desh" &&
+                    metal.toString() !== "ostrum" &&
+                    metal.toString() !== "calorite") {
+                    tconstruct.melting(Fluid.of(fluidId, 810))
+                        .ingredient(block)
+                        .time(200)
+                        .temperature(meltingPoint)
+                }
+            }
 
-			if (IngrUtils.isNotNull(block)) {
-				if (metal.toString() !== "aluminum" &&
-					metal.toString() !== "desh" &&
-					metal.toString() !== "ostrum" &&
-					metal.toString() !== "calorite") {
-					tconstruct.melting(Fluid.of(fluidId, 810))
-						.ingredient(block)
-						.time(200)
-						.temperature(meltingPoint)
-				}
-			}
+            if (namespace === "v") {
+                event.custom({
+                    "type": "tconstruct:material_melting",
+                    "input": `tconstruct:${metal}`,
+                    "result": {
+                        "amount": 90,
+                        "tag": `tconstruct:molten_${metal}`
+                    },
+                    "temperature": meltingPoint
+                })
 
-			if (namespace === "v") {
-				event.custom({
-					"type": "tconstruct:material_melting",
-					"input": `tconstruct:${metal}`,
-					"result": {
-						"amount": 90,
-						"tag": `tconstruct:molten_${metal}`
-					},
-					"temperature": meltingPoint
-				})
+            } if (namespace === "t") {
+                event.custom({
+                    "type": "tconstruct:material_melting",
+                    "input": `thermalconstruct:${metal}`,
+                    "result": {
+                        "amount": 90,
+                        "tag": `tconstruct:molten_${metal}`
+                    },
+                    "temperature": meltingPoint
+                })
 
-			} if (namespace === "t") {
-				event.custom({
-					"type": "tconstruct:material_melting",
-					"input": `thermalconstruct:${metal}`,
-					"result": {
-						"amount": 90,
-						"tag": `tconstruct:molten_${metal}`
-					},
-					"temperature": meltingPoint
-				})
-
-			} if (namespace === "c") {
-				event.custom({
-					"type": "tconstruct:material_melting",
-					"input": `cmi:${metal}`,
-					"result": {
-						"amount": 90,
-						"tag": `tconstruct:molten_${metal}`
-					},
-					"temperature": meltingPoint
-				})
-			}
-			console.log(`created recipes for material ${metal}`)
-		}
-	})
-
-	// 充能萤石
-	tconstruct.melting(Fluid.of("thermal:glowstone", 250))
-		.ingredient("#forge:dusts/glowstone")
-		.time(200)
-		.temperature(1000)
-
-	tconstruct.melting(Fluid.of("thermal:glowstone", 1000))
-		.ingredient("#forge:storage_blocks/glowstone")
-		.time(300)
-		.temperature(1000)
-
-	// 血液
-	tconstruct.melting(Fluid.of("cmi:blood", 50))
-		.ingredient("minecraft:rotten_flesh")
-		.time(30)
-		.temperature(36)
-
-	// 焦黑熔石
-	tconstruct.melting(Fluid.of("minecraft:lava", 50))
-		.ingredient("#forge:stone")
-		.time(20 * 20)
-		.temperature(1346)
-
-	// 金铸模
-	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 90))
-		.ingredient("#tconstruct:patterns/reusable")
-		.time(100)
-		.temperature(1064)
-
-	// 铁栅栏
-	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 30))
-		.ingredient("minecraft:iron_bars")
-		.time(60)
-		.temperature(1535)
-
-	// 金栅栏
-	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 30))
-		.ingredient("tconstruct:gold_bars")
-		.time(60)
-		.temperature(1064)
-
-	// 铁轨系列
-	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 30))
-		.ingredient("minecraft:rail")
-		.time(2 * 20)
-		.temperature(1535)
-
-	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 90))
-		.ingredient("minecraft:detector_rail")
-		.time(2 * 20)
-		.temperature(1535)
-
-	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 90))
-		.ingredient("minecraft:activator_rail")
-		.time(2 * 20)
-		.temperature(1535)
-
-	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 90))
-		.ingredient("minecraft:powered_rail")
-		.time(2 * 20)
-		.temperature(1064)
-
-	tconstruct.melting(Fluid.of("tconstruct:molten_gold", 90))
-		.ingredient("create:controller_rail")
-		.time(2 * 20)
-		.temperature(1064)
-
-	event.custom({
-		"type": "tconstruct:melting",
-		"byproducts": [
-			Fluid.of("tconstruct:scorched_stone", 125).toJson()
-		],
-		"ingredient": Ingredient.of("#create:stone_types/scorchia").toJson(),
-		"result": Fluid.of("tconstruct:seared_stone", 250).toJson(),
-		"temperature": 1000,
-		"time": 20 * 10
-	})
-
-	// 机动栏杆系列
-	tconstruct.melting(Fluid.of("cmi:molten_andesite_alloy", 30))
-		.ingredient("createdeco:andesite_bars")
-		.time(2 * 20)
-		.temperature(global.meltingPoints["andesite_alloy"])
-
-	let barTypes = [
-		"brass",
-		"copper",
-		"industrial_iron",
-		"zinc"
-	]
-	barTypes.forEach((type) => {
-		tconstruct.melting(Fluid.of(IngrUtils.getFirstFluidId(`tconstruct:molten_${type}`), 30))
-			.ingredient(`createdeco:${type}_bars`)
-			.time(40)
-			.temperature(global.meltingPoints[type])
-	})
+            } if (namespace === "c") {
+                event.custom({
+                    "type": "tconstruct:material_melting",
+                    "input": `cmi:${metal}`,
+                    "result": {
+                        "amount": 90,
+                        "tag": `tconstruct:molten_${metal}`
+                    },
+                    "temperature": meltingPoint
+                })
+            }
+            console.log(`created recipes for material ${metal}`)
+        }
+    })
 })

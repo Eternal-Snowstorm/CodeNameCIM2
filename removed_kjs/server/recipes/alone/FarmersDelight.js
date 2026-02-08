@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
 	farmersdelight.cutting([
 		Item.of("cmi:stone_plate").withChance(0.1),
 		Item.of("minecraft:gravel").withChance(0.9)
-	], "#forge:stone", "#minecraft:pickaxes")
+	], "#forge:stone", "#forge:hammers")
 
 	// 安山岩粉
 	farmersdelight.cutting([

@@ -28,19 +28,4 @@ ServerEvents.recipes((event) => {
 			inputItem
 		])
 	})
-
-	// // 去皮
-	// event.forEachRecipe({
-	// 	type: "minecraft:crafting_shapeless",
-	// 	output: "#forge:stripped_logs",
-	// 	input: "#minecraft:logs",
-	// }, (recipes) => {
-	// 	let outputItem = recipes.getOriginalRecipeResult().getId()
-	// 	let inputItem = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
-
-	// 	farmersdelight.cutting([
-	// 		outputItem,
-	// 		"farmersdelight:tree_bark"
-	// 	], inputItem, "#minecraft:axes")
-	// })
 })

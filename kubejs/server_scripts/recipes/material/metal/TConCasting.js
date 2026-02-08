@@ -1,125 +1,187 @@
 ServerEvents.recipes((event) => {
-	let { tconstruct } = event.recipes
+	let { thermal, tconstruct } = event.recipes
 
-	let castingMechanismMaterials = [
-		["tconstruct:molten_iron", "cmi:iron_mechanism_basement", 1535],
-		["tconstruct:molten_copper", "cmi:copper_mechanism_basement", 1085],
-		["cmi:molten_andesite_alloy", "cmi:andesite_mechanism_basement", 760]
-	]
-	castingMechanismMaterials.forEach(([input, output, temp]) => {
-		tconstruct.casting_table(output, Fluid.of(input, 90))
-			.cast("#tconstruct:casts/multi_use/mechanism")
-			.cooling_time(50)
+	global.metalGroup.forEach((metal) => {
+		let fluid = IngrUtils.getFirstFluidId(`tconstruct:molten_${metal}`)
 
-		tconstruct.casting_table(output, Fluid.of(input, 90))
-			.cast("#tconstruct:casts/single_use/mechanism")
-			.cooling_time(50)
+		if (fluid === null) {
+			console.warn(`No molten metal found for ${metal}!`)
+			return
+		}
+
+		const INGOT = `#forge:ingots/${metal}`
+		const NUGGET = `#forge:nuggets/${metal}`
+		const BLOCK = `#forge:storage_blocks/${metal}`
+		const PLATE = `#forge:plates/${metal}`
+		const ROD = `#forge:rods/${metal}`
+		const GEAR = `#forge:gears/${metal}`
+		const COIN = `#forge:coins/${metal}`
+
+		const MULTI_USE_CAST = "#tconstruct:casts/multi_use"
+		const SINGLE_USE_CAST = "#tconstruct:casts/single_use"
+
+		tconstruct.casting_table(INGOT)
+			.cast(`${MULTI_USE_CAST}/ingot`)
+			.fluid(Fluid.of(fluid, 90))
+			.cooling_time(20 * 3)
+
+		tconstruct.casting_table(INGOT)
+			.cast(`${SINGLE_USE_CAST}/ingot`)
+			.fluid(Fluid.of(fluid, 90))
+			.cooling_time(20 * 3)
 			.cast_consumed(true)
 
-		tconstruct.melting(Fluid.of(input, 90))
-			.ingredient(output)
-			.temperature(temp)
-			.time(100)
+		thermal.chiller(INGOT, [
+			Fluid.of(fluid, 90),
+			"thermal:chiller_ingot_cast"
+		]).energy(4800)
+
+		if (IngrUtils.isNotNull(NUGGET)) {
+			tconstruct.casting_table(NUGGET)
+				.cast(`${MULTI_USE_CAST}/nugget`)
+				.fluid(Fluid.of(fluid, 10))
+				.cooling_time(20 * 1)
+
+			tconstruct.casting_table(NUGGET)
+				.cast(`${SINGLE_USE_CAST}/nugget`)
+				.fluid(Fluid.of(fluid, 10))
+				.cooling_time(20 * 1)
+				.cast_consumed(true)
+
+			thermal.chiller(NUGGET, [
+				Fluid.of(fluid, 10),
+				"cmi:bronze_nugget_cast"
+			]).energy(600)
+		} else {
+			console.warn(`No nugget found for ${metal}!`)
+		}
+
+		if (IngrUtils.isNotNull(BLOCK)) {
+			tconstruct.casting_basin(BLOCK)
+				.fluid(Fluid.of(fluid, 810))
+				.cooling_time(20 * 9)
+		} else {
+			console.warn(`No storage block found for ${metal}!`)
+		}
+
+		if (IngrUtils.isNotNull(PLATE)) {
+			tconstruct.casting_table(PLATE)
+				.cast(`${MULTI_USE_CAST}/plate`)
+				.fluid(Fluid.of(fluid, 90))
+				.cooling_time(20 * 3)
+
+			tconstruct.casting_table(PLATE)
+				.cast(`${SINGLE_USE_CAST}/plate`)
+				.fluid(Fluid.of(fluid, 90))
+				.cooling_time(20 * 3)
+				.cast_consumed(true)
+
+			thermal.chiller(PLATE, [
+				Fluid.of(fluid, 90),
+				"thermal_extra:chiller_plate_cast"
+			]).energy(4800)
+		} else {
+			console.warn(`No plate found for ${metal}!`)
+		}
+
+		if (IngrUtils.isNotNull(ROD)) {
+			tconstruct.casting_table(ROD)
+				.cast(`${MULTI_USE_CAST}/rod`)
+				.fluid(Fluid.of(fluid, 45))
+				.cooling_time(20 * 1.5)
+
+			tconstruct.casting_table(ROD)
+				.cast(`${SINGLE_USE_CAST}/rod`)
+				.fluid(Fluid.of(fluid, 45))
+				.cooling_time(20 * 1.5)
+				.cast_consumed(true)
+
+			thermal.chiller(ROD, [
+				Fluid.of(fluid, 45),
+				"thermal:chiller_rod_cast"
+			]).energy(2400)
+		} else {
+			console.warn(`No rod found for ${metal}!`)
+		}
+
+		if (IngrUtils.isNotNull(GEAR)) {
+			tconstruct.casting_table(GEAR)
+				.cast(`${MULTI_USE_CAST}/gear`)
+				.fluid(Fluid.of(fluid, 360))
+				.cooling_time(20 * 7.5)
+
+			tconstruct.casting_table(GEAR)
+				.cast(`${SINGLE_USE_CAST}/gear`)
+				.fluid(Fluid.of(fluid, 360))
+				.cooling_time(20 * 7.5)
+				.cast_consumed(true)
+
+			thermal.chiller(GEAR, [
+				Fluid.of(fluid, 360),
+				"thermalconstruct:bronze_cast_gear"
+			]).energy(9600)
+		} else {
+			console.warn(`No gear found for ${metal}!`)
+		}
+
+		if (IngrUtils.isNotNull(COIN)) {
+			tconstruct.casting_table(COIN)
+				.cast(`${MULTI_USE_CAST}/coin`)
+				.fluid(Fluid.of(fluid, 30))
+				.cooling_time(20 * 1.5)
+
+			tconstruct.casting_table(COIN)
+				.cast(`${SINGLE_USE_CAST}/coin`)
+				.fluid(Fluid.of(fluid, 30))
+				.cooling_time(20 * 1.5)
+				.cast_consumed(true)
+
+			thermal.chiller(COIN, [
+				Fluid.of(fluid, 30),
+				"thermalconstruct:bronze_cast_coin"
+			]).energy(1600)
+		} else {
+			console.warn(`No coins found for ${metal}!`)
+		}
+
+		event.remove([
+			{
+				type: "tconstruct:casting_table",
+				output: `#forge:ingots/${metal}`,
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:nuggets/${metal}`,
+			}, {
+				type: "tconstruct:casting_basin",
+				output: `#forge:storage_blocks/${metal}`
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:plates/${metal}`
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:rods/${metal}`
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:gears/${metal}`
+			}, {
+				type: "tconstruct:casting_table",
+				output: `#forge:coins/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:ingots/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:plates/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:rods/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:gears/${metal}`
+			}, {
+				type: "thermal:chilling",
+				output: `#forge:coins/${metal}`
+			}
+		])
 	})
-
-	// 冰!
-	tconstruct.casting_basin("minecraft:ice")
-		.fluid(Fluid.of("minecraft:water", 1000))
-		.cast("#forge:ice")
-		.cooling_time(20)
-		.cast_consumed(false)
-
-	// 金构件铸模
-	tconstruct.casting_table("cmi:mechanism_cast")
-		.fluid(Fluid.of("tconstruct:molten_gold", 90))
-		.cast("#create:mechanisms")
-		.cooling_time(57)
-		.cast_consumed(true)
-
-	// 青铜构件铸模
-	tconstruct.casting_table("cmi:bronze_mechanism_cast")
-		.fluid(Fluid.of("tconstruct:molten_bronze", 360))
-		.cast("#create:mechanisms")
-		.cooling_time(57)
-		.cast_consumed(true)
-
-	// 沙子构件铸模
-	tconstruct.molding_table("cmi:mechanism_sand_cast")
-		.pattern("#create:mechanisms")
-		.material("#tconstruct:casts/sand")
-
-	// 红沙构件铸模
-	tconstruct.molding_table("cmi:mechanism_red_sand_cast")
-		.pattern("#create:mechanisms")
-		.material("#tconstruct:casts/red_sand")
-
-	// 安山合金
-	tconstruct.casting_table("create:andesite_alloy")
-		.fluid(Fluid.of("tconstruct:molten_iron", 10))
-		.cast("#forge:dusts/andesite")
-		.cooling_time(20)
-		.cast_consumed(true)
-
-	// 安山合金
-	tconstruct.casting_table("create:andesite_alloy")
-		.fluid(Fluid.of("tconstruct:molten_zinc", 10))
-		.cast("#forge:dusts/andesite")
-		.cooling_time(20)
-		.cast_consumed(true)
-
-	// 青铜粒铸模
-	tconstruct.casting_table("cmi:bronze_nugget_cast")
-		.fluid(Fluid.of("tconstruct:molten_bronze", 360))
-		.cast("#forge:nuggets")
-		.cooling_time(57)
-		.cast_consumed(true)
-
-	// 熔铸炉控制器
-	tconstruct.casting_basin("tconstruct:foundry_controller")
-		.fluid(Fluid.of("tconstruct:molten_obsidian", 1000))
-		.cast("tconstruct:scorched_alloyer")
-		.cast_consumed(true)
-		.cooling_time(220)
-		.id("tconstruct:smeltery/casting/scorched/foundry_controller")
-
-	// 机动栏杆系列
-	tconstruct.casting_table("createdeco:andesite_bars")
-		.fluid(Fluid.of("cmi:molten_andesite_alloy", 30))
-		.cooling_time(35)
-
-	// 石板
-	tconstruct.casting_table("cmi:stone_plate")
-		.cast("#tconstruct:casts/multi_use/plate")
-		.fluid(Fluid.of("minecraft:lava", 100))
-		.cooling_time(20 * 2)
-
-	// 红石线
-	tconstruct.casting_table("cmi:redstone_wire")
-		.cast("#forge:wires/lead")
-		.fluid(Fluid.of("thermal:redstone", 100))
-		.cooling_time(20 * 3)
-
-	tconstruct.casting_table("cmi:redstone_wire")
-		.cast("#tconstruct:casts/multi_use/wire")
-		.fluid(Fluid.of("immersiveengineering:redstone_acid", 200))
-		.cooling_time(20 * 3)
-
-	let barTypes = [
-		"brass",
-		"copper",
-		"industrial_iron",
-		"zinc"
-	]
-	barTypes.forEach((type) => {
-		tconstruct.casting_table(`createdeco:${type}_bars`)
-			.fluid(Fluid.of(IngrUtils.getFirstFluidId(`tconstruct:molten_${type}`), 30))
-			.cooling_time(35)
-	})
-
-	tconstruct.casting_table("cmi:stone_plate")
-		.cast("#tconstruct:casts/single_use/plate")
-		.fluid(Fluid.of("minecraft:lava", 100))
-		.cooling_time(20 * 2)
-		.cast_consumed(true)
-
 })
