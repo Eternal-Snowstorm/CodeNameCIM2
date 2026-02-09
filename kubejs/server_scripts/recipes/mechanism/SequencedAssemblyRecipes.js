@@ -131,6 +131,7 @@ ServerEvents.recipes((event) => {
 		.filling3("thermal:redstone", 100)
 		.deploying4("minecraft:redstone_torch")
 		.build()
+		.id("vintageimprovements:sequenced_assembly/redstone_module")
 
 	new BasicMechRecipe(Mechanism.NATURE)
 		.input("minecraft:grass_block")
@@ -232,6 +233,7 @@ ServerEvents.recipes((event) => {
 		.deploying3("#create:incomplete_large_cogwheels")
 		.deploying4("#forge:nuggets/brass")
 		.build()
+		.id("create:sequenced_assembly/precision_mechanism")
 
 	new BasicMechRecipe(Mechanism.PHOTO)
 		.input("#forge:gems/quartz")

@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+	let { thermal_extra } = event.recipes
 	// region define Recipe
 	/**
 	 * 硝酸点火器配方构造器
@@ -102,15 +103,33 @@ ServerEvents.recipes((event) => {
 
 	// region add Recipes
 
-	new NitraticIgniterRecipeBuilder()
+	// 爆裂
+	thermal_extra.nitratic_igniter([
+		"cmi:blackstone_sourse_alpha",
+		"cmi:blackstone_sourse_beta",
+		"cmi:blackstone_sourse_gamma"
+	], "#forge:blackstone")
+		.energy(2000)
+
+	// 锇
+	thermal_extra.nitratic_igniter([
+		"2x mekanism:shard_osmium",
+		Item.of("mekanism:clump_osmium", 1).withChance(0.5),
+		Item.of("mekanism:clump_osmium", 1).withChance(0.25)
+	], "#forge:raw_materials/osmium")
 		.energy(4000)
-		.ingredient("#forge:raw_materials/osmium")
-		.results([
-			setResult("mekanism:clump_osmium", 2, 1),
-			setResult("mekanism:clump_osmium", 1, 0.5),
-			setResult("mekanism:clump_osmium", 1, 0.25)
-		])
-		.build()
+
+
+
+	// new NitraticIgniterRecipeBuilder()
+	// 	.energy(4000)
+	// 	.ingredient("#forge:raw_materials/osmium")
+	// 	.results([
+	// 		setResult("mekanism:clump_osmium", 2, 1),
+	// 		setResult("mekanism:clump_osmium", 1, 0.5),
+	// 		setResult("mekanism:clump_osmium", 1, 0.25)
+	// 	])
+	// 	.build()
 
 	// endregion
 })
