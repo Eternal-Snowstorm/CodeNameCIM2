@@ -265,6 +265,6 @@ ServerEvents.recipes((event) => {
         "type": "expatternprovider:circuit_cutter",
         "fluid_input": Fluid.of("minecraft:water", 1000).toJson(),
         "item_input": Ingredient.of("advanced_ae:quantum_alloy_block").toJson(),
-        "output": Item.of(rint.QUANTUM, 9).toJson()
+        "output": Item.of(Print.QUANTUM, 9).toJson()
     }).id("advanced_ae:quantum_processor_print_eae")
 })
