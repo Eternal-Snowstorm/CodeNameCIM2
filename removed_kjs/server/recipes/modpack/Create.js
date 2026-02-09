@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { create, createaddition, vintageimprovements } = event.recipes
 
 	let Inc = {
-		GIZMO: "cmi:incomplete_notor_gizmo"
+
 	}
 
 	// 致密坚固板
@@ -29,14 +29,6 @@ ServerEvents.recipes((event) => {
 		"32x #forge:dusts/end_stone"
 	]).heated()
 
-	// 铸铁
-	create.mixing(Fluid.of("cmi:molten_cast_iron", 90), [
-		[
-			"#create:crushed_raw_materials/iron",
-			"#forge:dusts/iron"
-		],
-		"#forge:dusts/coal_coke"
-	]).heated()
 
 	// 真空管
 	vintageimprovements.vacuumizing("immersiveengineering:electron_tube", [
@@ -45,63 +37,13 @@ ServerEvents.recipes((event) => {
 		"minecraft:glass_bottle"
 	]).heatRequirement(global.HeatLevel["grilled"])
 
-	// 扫描机兵零件
-	create.sequenced_assembly([
-		Item.of("alexscaves:notor_gizmo"),
-		Item.of("2x alexscaves:notor_gizmo").withChance(0.5),
-		Item.of("3x alexscaves:notor_gizmo").withChance(0.1),
-	], [
-		"#forge:plates/aluminum"
-	], [
-		create.deploying(Inc.GIZMO, [
-			Inc.GIZMO,
-			"alexscaves:notor_gizmo"
-		]).keepHeldItem(),
-		create.deploying(Inc.GIZMO, [
-			Inc.GIZMO,
-			"#forge:nuggets/azure_neodymium"
-		]),
-		create.deploying(Inc.GIZMO, [
-			Inc.GIZMO,
-			"#forge:nuggets/scarlet_neodymium"
-		])
-	]).loops(1).transitionalItem(Inc.GIZMO)
-
-	create.sequenced_assembly([
-		Item.of("alexscaves:notor_gizmo"),
-		Item.of("2x alexscaves:notor_gizmo").withChance(0.5),
-		Item.of("3x alexscaves:notor_gizmo").withChance(0.1),
-	], [
-		"#forge:plates/aluminum"
-	], [
-		create.deploying(Inc.GIZMO, [
-			Inc.GIZMO,
-			"alexscaves:notor_gizmo"
-		]).keepHeldItem(),
-		create.deploying(Inc.GIZMO, [
-			Inc.GIZMO,
-			"#forge:nuggets/scarlet_neodymium"
-		]),
-		create.deploying(Inc.GIZMO, [
-			Inc.GIZMO,
-			"#forge:nuggets/azure_neodymium"
-		])
-	]).loops(1).transitionalItem(Inc.GIZMO)
-
-	// 工业铁
-	create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
-		[
-			"#create:crushed_raw_materials/iron",
-			"#forge:dusts/iron"
-		],
-		"cmi:lime"
-	]).heated().id("createdeco:compacting/industrial_iron_ingot")
 
 	// 木棍
 	create.cutting([
 		Item.of("minecraft:stick", 4).withChance(1),
 		Item.of("minecraft:stick", 2).withChance(0.25)
 	], "#minecraft:planks")
+
 
 	// 木屑
 	create.compacting("cmi:wood_chip_briquette", [
@@ -129,23 +71,6 @@ ServerEvents.recipes((event) => {
 
 	create.haunting("cmi:magical_mechanism_part", [
 		"cmi:basic_mechanism_part"
-	])
-
-	// 安山岩粉
-	create.milling([
-		"2x cmi:andesite_dust",
-		Item.of("cmi:andesite_dust", 2).withChance(0.5)
-	], "#create:stone_types/andesite")
-
-	create.crushing("4x cmi:andesite_dust", [
-		"#create:stone_types/andesite"
-	])
-
-	// 安山混合物
-	create.mixing("4x cmi:andesite_aggregate", [
-		Fluid.of("minecraft:water", 250),
-		"#forge:dusts/andesite",
-		"#forge:clay"
 	])
 
 	// ???

@@ -98,11 +98,18 @@ ServerEvents.recipes((event) => {
 		.cast("#forge:wires/lead")
 		.fluid(Fluid.of("thermal:redstone", 50))
 		.cooling_time(20 * 3)
+		.cast_consumed(true)
 
 	tconstruct.casting_table("cmi:redstone_wire")
 		.cast("#tconstruct:casts/multi_use/wire")
 		.fluid(Fluid.of("immersiveengineering:redstone_acid", 50))
 		.cooling_time(20 * 3)
+
+	tconstruct.casting_table("cmi:redstone_wire")
+		.cast("#tconstruct:casts/single_use/wire")
+		.fluid(Fluid.of("immersiveengineering:redstone_acid", 50))
+		.cooling_time(20 * 3)
+		.cast_consumed(true)
 
 	let barTypes = [
 		"brass",

@@ -1,28 +1,17 @@
 ServerEvents.recipes((event) => {
 	let removeRecipeIds = [
 		"ae2:entropy/cool/water_ice",
-		"create:compacting/ice",
 		"vintageimprovements:craft/sulfur_block_to_items",
-		"create:mixing/andesite_alloy_from_zinc",
-		"create:mixing/andesite_alloy",
-		"create:item_application/andesite_casing_from_wood",
-		"create:item_application/copper_casing_from_wood",
-		"create:item_application/brass_casing_from_wood",
 		"vintageimprovements:grinder_polishing/rose_quartz",
-		"createdieselgenerators:crafting/chip_wood_beam",
-		"create:mixing/lava_from_cobble",
 		"immersiveindustry:kiln/sandstone",
 		"immersiveengineering:crafting/concrete_leaded",
 		"functionalstorage:ender_drawer",
-		"createaddition:compat/tconstruct/blaze_blood",
 		"vintageimprovements:sequenced_assembly/redstone_module",
 		"functionalstorage:void_upgrade",
 		"immersiveengineering:crafting/treated_wood_horizontal",
-		"create:milling/compat/ae2/sky_stone_block",
 		"ae2:blasting/sky_stone_block",
 		"ae2:blasting/silicon_from_certus_quartz_dust",
 		"ae2:smelting/silicon_from_certus_quartz_dust",
-		"create:sequenced_assembly/precision_mechanism",
 		"immersiveengineering:crafting/gunpowder_from_dusts",
 		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals",
 		"minecraft:stick_from_bamboo_item",
@@ -34,50 +23,24 @@ ServerEvents.recipes((event) => {
 		"mekanism:control_circuit/ultimate",
 		"immersiveengineering:blastfurnace/steel",
 		"immersiveengineering:arcfurnace/steel",
-		"create:crushing/netherrack",
 		"vintageimprovements:craft/vanadium_ingot_to_nuggets",
-		"create:crushing/obsidian",
-		"createdieselgenerators:crafting/large_diesel_engine",
-		"createdieselgenerators:crafting/diesel_engine",
-		"createdieselgenerators:crafting/huge_diesel_engine",
-		"createdieselgenerators:crafting/huge_diesel_engine",
-		"create:crafting/kinetics/flywheel",
-		"createaddition:crafting/capacitor_2",
 		"tconstruct:common/basalt_blast_furnace",
 		"tconstruct:common/glass/vanilla/daylight_detector",
-		"create:crafting/palettes/scorchia",
-		"createaddition:compacting/seed_oil",
 		"vintageimprovements:pressurizing/copper_sulfate",
 		"immersiveengineering:blueprint/electron_tube",
 		"cmi:creative_mechanism_flash_drive",
-		"create:crafting/materials/andesite_alloy",
 		"mynethersdelight:crafting/tnt_alt",
 		"mekanism:paper",
 		"immersiveengineering:crafting/paper_from_sawdust",
 		"minecraft:paper",
-		"minecraft:sugar_from_sugar_cane",
-		"create:milling/sugar_cane",
 		"farmersdelight:cutting/sugar_cane_alt",
 		"immersiveengineering:refinery/biodiesel",
-		"createdieselgenerators:basin_fermenting/fermentable",
-		"createdieselgenerators:basin_fermenting/fermented_spider_eye",
-		"createaddition:mixing/bioethanol",
-		"create:milling/andesite",
-		"create:industrial_iron_block_from_ingots_iron_stonecutting",
-		"create:crushing/tuff",
-		"create:crushing/tuff_recycling",
 		"functionalstorage:oak_drawer_alternate_x1",
-		"create:milling/beetroot",
 		"functionalstorage:oak_drawer_alternate_x4",
 		"functionalstorage:oak_drawer_alternate_x2",
-		"create:milling/coal",
 		"vintageimprovements:crushing/scoria",
 		"functionalstorage:linking_tool",
-		"create:copper_bars_from_ingots_copper_stonecutting",
-		"create:andesite_bars_from_andesite_alloy_stonecutting",
-		"create:brass_bars_from_ingots_brass_stonecutting",
 		"immersiveengineering:arcfurnace/raw_block_aluminum",
-		"create:crafting/kinetics/fluid_pipe_vertical",
 		"ae2:transform/entangled_singularity_from_pearl",
 		"ae2:network/blocks/io_condenser",
 		"tiab:time_in_a_bottle",
@@ -86,7 +49,6 @@ ServerEvents.recipes((event) => {
 		"sophisticatedbackpacks:stack_upgrade_tier_1_from_starter",
 		"farmersdelight:cutting/deepslate",
 		"farmersdelight:cutting/stone",
-		"createdieselgenerators:distillation/crude_oil",
 		"immersiveindustry:chemical",
 		"tconstruct:compat/wheat_dough"
 	]
@@ -99,12 +61,7 @@ ServerEvents.recipes((event) => {
 	let removeItemOutputRecipes = [
 		"thermal_extra:device_lava_gen",
 		"ad_astra:fuel_refinery",
-		"createdieselgenerators:chip_wood_block",
 		"pipez:filter_destination_tool",
-		"create:schedule",
-		"create:track_signal",
-		"create:track_observer",
-		"create:controls",
 		"thermal:fluid_cell_frame",
 		"thermal:machine_frame",
 		"thermal:device_potion_diffuser",
@@ -152,9 +109,6 @@ ServerEvents.recipes((event) => {
 		"ad_astra:tier_2_rocket",
 		"ad_astra:tier_3_rocket",
 		"ad_astra:tier_4_rocket",
-		"steampowered:alternator",
-		"steampowered:pressurized_gas_container",
-		"steampowered:pressurized_steam_container",
 		"mekanism:tier_installer/basic",
 		"mekanism:tier_installer/advanced",
 		"mekanism:tier_installer/elite",
@@ -166,238 +120,5 @@ ServerEvents.recipes((event) => {
 		event.remove({
 			output: item
 		})
-	})
-
-	let removeRecipeExtraIds = [
-		"copper",
-		"iron",
-		"gold",
-		"tin",
-		"lead",
-		"silver",
-		"nickel",
-		"aluminum",
-		"uranium",
-		"osmium",
-		"zinc",
-		"desh",
-		"cobalt",
-		"constantan",
-		"ostrum",
-		"electrum",
-		"platinum",
-		"platinum",
-		"steel",
-		"calorite"
-	]
-	removeRecipeExtraIds.forEach((id) => {
-		event.remove({
-			id: `thermal_extra:machine/nitratic_igniter/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:machine/crucible/raw_${id}_from_chunk`
-		})
-		event.remove({
-			id: `thermal_extra:machine/crucible/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:machine/endothermic_dehydrator/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:crafting/${id}_rod`
-		})
-		event.remove({
-			id: `thermal_extra:machine/chiller/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:compat/machine/chiller/raw_${id}`
-		})
-		event.remove({
-			id: `thermal_extra:compat/machine/endothermic_dehydrator/raw_${id}`
-		})
-		event.remove({
-			id: `immersiveengineering:crafting/raw_hammercrushing_${id}`
-		})
-		event.remove({
-			id: `immersiveengineering:crafting/hammercrushing_${id}`
-		})
-		event.remove({
-			id: `immersiveengineering:crafting/plate_${id}_hammering`
-		})
-		event.remove({
-			id: `immersiveengineering:crafting/stick_${id}`
-		})
-		event.remove({
-			id: `ad_astra:${id}_rod`
-		})
-	})
-
-	let removeItemInputRecipes = [
-	]
-	removeItemInputRecipes.forEach((item) => {
-		event.remove({
-			input: item
-		})
-	})
-
-	let removeRecipeType = [
-		"vintageimprovements:laser_cutting",
-		"ad_astra:nasa_workbench",
-		"immersiveengineering:fermenter",
-		"immersiveengineering:alloy",
-		"thermal_extra:nitratic_igniter_catalyst"
-	]
-	removeRecipeType.forEach((type) => {
-		event.remove({
-			type: type
-		})
-	})
-
-	event.remove([
-		{
-			type: "minecraft:crafting_shaped",
-			input: "#forge:ingots",
-			output: "#forge:rods"
-		}, {
-			type: "thermal:smelter",
-			input: "#forge:dusts",
-		}, {
-			type: "create:cutting",
-			input: "#minecraft:logs",
-			output: "#forge:stripped_logs",
-		}
-	])
-
-	event.remove([
-		{
-			output: "#forge:nuggets/iron",
-			type: "minecraft:smelting"
-		}, {
-			output: "#forge:nuggets/steel",
-			type: "minecraft:smelting"
-		}, {
-			output: "#forge:nuggets/osmium",
-			type: "minecraft:smelting"
-		}, {
-			output: "#forge:nuggets/refined_obsidian",
-			type: "minecraft:smelting"
-		}
-	])
-
-	
-	global.metalGroup.forEach((metal) => {
-		event.remove([
-			{
-				type: "minecraft:crafting_shaped",
-				output: `#forge:gears/${metal}`
-			},
-			{
-				type: "mekanism:enriching",
-				input: `#forge:raw_materials/${metal}`
-			},
-			{
-				type: "mekanism:enriching",
-				input: `#forge:ores/${metal}`
-			},
-			{
-				type: "mekanism:enriching",
-				input: `#forge:storage_blocks/raw_${metal}`
-			},
-			{
-				type: "tconstruct:melting",
-				input: `#forge:ingots/${metal}`
-			},
-			{
-				type: "tconstruct:melting",
-				input: `#forge:nuggets/${metal}`,
-			},
-			{
-				type: "tconstruct:melting",
-				input: `#forge:storage_blocks/${metal}`,
-			},
-			{
-				type: "tconstruct:melting",
-				input: `#forge:plates/${metal}`,
-			},
-			{
-				type: "tconstruct:melting",
-				input: `#forge:dusts/${metal}`,
-			},
-			{
-				type: "tconstruct:melting",
-				input: `#forge:rods/${metal}`,
-			},
-			{
-				type: "tconstruct:melting",
-				input: `#forge:gears/${metal}`,
-			},
-			{
-				type: "tconstruct:ore_melting",
-				input: `#forge:raw_materials/${metal}`,
-			},
-			{
-				type: "tconstruct:ore_melting",
-				input: `#forge:storage_blocks/raw_${metal}`,
-			},
-			{
-				type: "tconstruct:ore_melting",
-				input: `#forge:ores/${metal}`
-			},
-			{
-				type: "tconstruct:casting_table",
-				output: `#forge:ingots/${metal}`,
-			},
-			{
-				type: "tconstruct:casting_table",
-				output: `#forge:nuggets/${metal}`,
-			},
-			{
-				type: "tconstruct:casting_basin",
-				output: `#forge:storage_blocks/${metal}`
-			},
-			{
-				type: "tconstruct:casting_table",
-				output: `#forge:plates/${metal}`
-			},
-			{
-				type: "tconstruct:casting_table",
-				output: `#forge:rods/${metal}`
-			},
-			{
-				type: "tconstruct:casting_table",
-				output: `#forge:gears/${metal}`
-			},
-			{
-				type: "tconstruct:casting_table",
-				output: `#forge:coins/${metal}`
-			},
-			{
-				type: "thermal:chilling",
-				output: `#forge:ingots/${metal}`
-			},
-			{
-				type: "thermal:chilling",
-				output: `#forge:plates/${metal}`
-			},
-			{
-				type: "thermal:chilling",
-				output: `#forge:rods/${metal}`
-			},
-			{
-				type: "thermal:chilling",
-				output: `#forge:gears/${metal}`
-			},
-			{
-				type: "thermal:chilling",
-				output: `#forge:coins/${metal}`
-			},
-			{
-				type: "immersiveengineering:arc_furnace",
-				output: "#forge:ingots/osmium"
-			},
-			{
-				id: `immersiveengineering:arcfurnace/ore_${metal}`
-			}
-		])
 	})
 })

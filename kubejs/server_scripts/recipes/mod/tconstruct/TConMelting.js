@@ -50,6 +50,17 @@ ServerEvents.recipes((event) => {
 		.time(60)
 		.temperature(1064)
 
+	// 不稳定红石
+	tconstruct.melting(Fluid.of("thermal:redstone", 100))
+		.ingredient("#forge:dusts/redstone")
+		.time(20 * 5)
+		.temperature(800)
+
+	tconstruct.melting(Fluid.of("thermal:redstone", 900))
+		.ingredient("#forge:storage_blocks/redstone")
+		.time(20 * 5)
+		.temperature(800)
+
 	// 铁轨系列
 	tconstruct.melting(Fluid.of("tconstruct:molten_iron", 30))
 		.ingredient("minecraft:rail")

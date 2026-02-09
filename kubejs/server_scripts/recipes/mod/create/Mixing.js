@@ -6,6 +6,7 @@ ServerEvents.recipes((event) => {
         "#forge:dusts/andesite",
         Fluid.of("tconstruct:molten_iron", 10)
     ]).heatRequirement("grilled")
+        .id("create:mixing/andesite_alloy")
 
     create.mixing(Fluid.of("cmi:molten_andesite_alloy", 180), [
         "#forge:dusts/andesite",
@@ -16,11 +17,37 @@ ServerEvents.recipes((event) => {
         "#forge:dusts/andesite",
         "#forge:nuggets/iron"
     ]).heatRequirement("grilled")
+        .id("create:mixing/andesite_alloy_from_zinc")
 
     create.mixing(Fluid.of("cmi:molten_andesite_alloy", 120), [
         "#forge:dusts/andesite",
         "#forge:nuggets/zinc"
     ]).heatRequirement("grilled")
+
+    // 安山混合物
+    create.mixing("4x cmi:andesite_aggregate", [
+        Fluid.of("minecraft:water", 250),
+        "#forge:dusts/andesite",
+        "#forge:clay"
+    ])
+
+    // 工业铁
+    create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
+        [
+            "#create:crushed_raw_materials/iron",
+            "#forge:dusts/iron"
+        ],
+        "cmi:lime"
+    ]).heated().id("createdeco:compacting/industrial_iron_ingot")
+
+    // 铸铁
+    create.mixing(Fluid.of("cmi:molten_cast_iron", 90), [
+        [
+            "#create:crushed_raw_materials/iron",
+            "#forge:dusts/iron"
+        ],
+        "#forge:dusts/coal_coke"
+    ]).heated()
 
     // 殷钢
     create.mixing(Fluid.of("tconstruct:molten_invar", 270), [

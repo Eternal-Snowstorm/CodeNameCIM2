@@ -6,8 +6,53 @@ ServerEvents.recipes((event) => {
 		ELETUBE: "cmi:incomplete_electron_tube",
 		CAPACITOR: "ad_astra:etrionic_core",
 		NUKE: "cmi:incomplete_nuke_cooler",
-		GAS: "cmi:incomplete_gas_container"
+		GAS: "cmi:incomplete_gas_container",
+		GIZMO: "cmi:incomplete_notor_gizmo"
 	}
+
+	// 扫描机兵零件
+	create.sequenced_assembly([
+		Item.of("alexscaves:notor_gizmo"),
+		Item.of("2x alexscaves:notor_gizmo").withChance(0.5),
+		Item.of("3x alexscaves:notor_gizmo").withChance(0.1),
+	], [
+		"#forge:plates/aluminum"
+	], [
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
+			"alexscaves:notor_gizmo"
+		]).keepHeldItem(),
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
+			"#forge:nuggets/azure_neodymium"
+		]),
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
+			"#forge:nuggets/scarlet_neodymium"
+		])
+	]).loops(1).transitionalItem(Inc.GIZMO)
+
+	create.sequenced_assembly([
+		Item.of("alexscaves:notor_gizmo"),
+		Item.of("2x alexscaves:notor_gizmo").withChance(0.5),
+		Item.of("3x alexscaves:notor_gizmo").withChance(0.1),
+	], [
+		"#forge:plates/aluminum"
+	], [
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
+			"alexscaves:notor_gizmo"
+		]).keepHeldItem(),
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
+			"#forge:nuggets/scarlet_neodymium"
+		]),
+		create.deploying(Inc.GIZMO, [
+			Inc.GIZMO,
+			"#forge:nuggets/azure_neodymium"
+		])
+	]).loops(1).transitionalItem(Inc.GIZMO)
+
 
 	// 扫描器
 	create.sequenced_assembly("scannable:scanner", [

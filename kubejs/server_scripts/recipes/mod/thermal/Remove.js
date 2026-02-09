@@ -16,18 +16,7 @@ ServerEvents.recipes((event) => {
         "thermal:compat/immersiveengineering/smelter_ie_aluminum_ore",
         "thermal:storage/sugar_cane_block",
         "thermal:compat/create/smelter_create_alloy_andesite_alloy",
-        "thermal:fuels/magmatic/magmatic_lava",
-        "thermal_extra:machine/nitratic_igniter/catalyst/fire_tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/ice_tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/slime_tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/redstone_tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/lightning_tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/ender_tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/glowstone_tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/nuke_tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/phyto_tnt",
-        "thermal_extra:machine/nitratic_igniter/catalyst/earth_tnt"
+        "thermal:fuels/magmatic/magmatic_lava"
     ]
     removeRecipeIds.forEach((id) => {
         event.remove({

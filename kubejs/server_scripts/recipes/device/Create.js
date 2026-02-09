@@ -290,6 +290,10 @@ ServerEvents.recipes((event) => {
 			"#forge:hammers"
 		])
 
+		create.cutting(`cmi:incomplete_${material}_large_cogwheel`, `#forge:gears/${material}`)
+
+		create.cutting(`2x cmi:incomplete_${material}_cogwheel`,`cmi:incomplete_${material}_large_cogwheel`)
+
 		create.deploying(`4x steampowered:${material}_large_cogwheel`, [
 			`cmi:incomplete_${material}_large_cogwheel`,
 			"#create:shaft"
@@ -516,12 +520,6 @@ ServerEvents.recipes((event) => {
 		"#forge:ingots/brass"
 	])
 
-	tconstruct.casting_basin("create:brass_funnel")
-		.cast("create:andesite_funnel")
-		.fluid(Fluid.of("tconstruct:molten_brass", 90 * 2))
-		.cast_consumed(true)
-		.cooling_time(20)
-
 	// 黄铜隧道
 	kubejs.shapeless("create:brass_tunnel", [
 		"create:andesite_tunnel",
@@ -529,24 +527,12 @@ ServerEvents.recipes((event) => {
 		"#forge:ingots/brass"
 	])
 
-	tconstruct.casting_basin("create:brass_tunnel")
-		.cast("create:andesite_tunnel")
-		.fluid(Fluid.of("tconstruct:molten_brass", 180 * 2))
-		.cast_consumed(true)
-		.cooling_time(20)
-
 	// 智能溜槽
 	kubejs.shapeless("create:smart_chute", [
 		"create:chute",
 		"cmi:andesite_mechanism",
 		"#forge:ingots/brass"
 	])
-
-	tconstruct.casting_basin("create:smart_chute")
-		.cast("create:chute")
-		.fluid(Fluid.of("tconstruct:molten_brass", 180 * 2))
-		.cast_consumed(true)
-		.cooling_time(20)
 
 	// 高级注液器
 	kubejs.shaped("cmi:advanced_spout", [

@@ -1,3 +1,8 @@
+// 木头
+new Material("wooden", "wooden")
+	.color(0xab7500, 0xac8430)
+	.gear(false)
+
 // 安山合金
 new Material("andesite_alloy", "wooden")
 	.color(0xC7C8B8, 0x809587)
@@ -73,6 +78,7 @@ new Material("cast_iron", "iron")
 	.ingot(false)
 	.dust(false)
 	.nugget(false)
+	.gear(false)
 	.block()
 	.molten()
 

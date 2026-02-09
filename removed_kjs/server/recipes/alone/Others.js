@@ -253,17 +253,6 @@ ServerEvents.recipes((event) => {
 		C: ["#forge:plates/brass", "#forge:plates/bronze"]
 	})
 
-	kubejs.shaped("tiab:time_in_a_bottle", [
-		"DCE",
-		"ABA",
-		"ECD"
-	], {
-		A: "minecraft:diamond",
-		B: "minecraft:glass_bottle",
-		C: "minecraft:clock",
-		D: "cmi:cobalt_mechanism",
-		E: "cmi:ender_mechanism"
-	})
 
 	// 裂变核心
 	kubejs.shaped("alexscaves:fissile_core", [

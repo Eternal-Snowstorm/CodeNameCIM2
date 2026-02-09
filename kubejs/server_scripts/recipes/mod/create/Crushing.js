@@ -6,20 +6,6 @@ ServerEvents.recipes((event) => {
 		Item.of("create:cinder_flour").withChance(0.2)
 	], "#forge:netherrack")
 
-	create.milling("minecraft:sugar", [
-		"minecraft:sugar_cane"
-	])
-
-	create.milling(Item.of("minecraft:sugar").withChance(0.5), [
-		"minecraft:beetroot"
-	])
-
-	create.milling([
-		"ae2:certus_quartz_dust",
-		Item.of("ae2:certus_quartz_dust", 2).withChance(0.5)
-	], "ae2:certus_quartz_crystal")
-		.id("create:milling/compat/ae2/certus_quartz")
-
 	create.crushing([
 		"2x ae2:certus_quartz_crystal",
 		Item.of("ae2:certus_quartz_crystal").withChance(0.25),
@@ -42,19 +28,10 @@ ServerEvents.recipes((event) => {
 		"#forge:gems/sulfur"
 	])
 
-	// 焦煤粉
-	create.milling([
-		"immersiveengineering:dust_coke",
-	], [
-		"#forge:coal_coke"
+	// 安山岩粉
+		create.crushing("4x cmi:andesite_dust", [
+		"#create:stone_types/andesite"
 	])
-
-	// 木炭粉
-	create.milling([
-		"mekanism:dust_charcoal",
-	], [
-		"minecraft:charcoal"
-	]).id("create:milling/charcoal")
 
 	create.crushing([
 		"mekanism:dust_charcoal",
