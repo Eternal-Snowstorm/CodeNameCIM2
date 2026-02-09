@@ -210,27 +210,14 @@ ServerEvents.recipes((event) => {
     event.custom({
         "type": "expatternprovider:circuit_cutter",
         "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
-        "item_input": Ingredient.of("forge:storage_blocks/electrum").toJson(),
+        "item_input": {
+            "amount": 1,
+            "ingredient": {
+                "tag": "forge:storage_blocks/electrum"
+            }
+        },
         "output": Item.of(Print.LOGIC, 9).toJson()
     }).id("expatternprovider:cutter/logic")
-
-    // 运算电路板
-    event.custom({
-        "type": "ae2:inscriber",
-        "ingredients": {
-            "middle": Ingredient.of("#forge:gems/certus_quartz").toJson(),
-            "top": Ingredient.of("ae2:calculation_processor_press").toJson()
-        },
-        "mode": "inscribe",
-        "result": Item.of(Print.CALCULATION).toJson()
-    }).id("ae2:inscriber/calculation_processor_print")
-
-    event.custom({
-        "type": "expatternprovider:circuit_cutter",
-        "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
-        "item_input": Ingredient.of("forge:storage_blocks/certus_quartz").toJson(),
-        "output": Item.of(Print.CALCULATION, 9).toJson()
-    }).id("expatternprovider:cutter/calculation")
 
     // 工程电路板
     event.custom({
@@ -246,25 +233,12 @@ ServerEvents.recipes((event) => {
     event.custom({
         "type": "expatternprovider:circuit_cutter",
         "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
-        "item_input": Ingredient.of("forge:storage_blocks/etrium").toJson(),
+        "item_input": {
+            "amount": 1,
+            "ingredient": {
+                "tag": "forge:storage_blocks/etrium"
+            }
+        },
         "output": Item.of(Print.ENGINEERING, 9).toJson()
     }).id("expatternprovider:cutter/engineering")
-
-    // 量子电路板
-    event.custom({
-        "type": "ae2:inscriber",
-        "ingredients": {
-            "middle": Ingredient.of("#forge:ingots/quantum_alloy").toJson(),
-            "top": Ingredient.of("advanced_ae:quantum_processor_press").toJson()
-        },
-        "mode": "inscribe",
-        "result": Item.of(Print.QUANTUM).toJson()
-    }).id("advanced_ae:quantum_processor_print")
-
-    event.custom({
-        "type": "expatternprovider:circuit_cutter",
-        "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
-        "item_input": Ingredient.of("advanced_ae:quantum_alloy_block").toJson(),
-        "output": Item.of(Print.QUANTUM, 9).toJson()
-    }).id("advanced_ae:quantum_processor_print_eae")
 })
