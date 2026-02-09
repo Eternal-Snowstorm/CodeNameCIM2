@@ -18,13 +18,13 @@ ServerEvents.highPriorityData((event) => {
 	 * @returns 
 	 */
 	function addUnification(match, fluid) {
-		return {
+		return [{
 			matchFluid: [match],
 			resultFluid: fluid
-		}
+		}]
 	}
 
 	function addJsonFile(name, unification) {
-		return event.addJson(`oei:replacements/${name}.json`, unification)
+		return event.addJson(`oef:replacements/${name}.json`, unification)
 	}
 })
