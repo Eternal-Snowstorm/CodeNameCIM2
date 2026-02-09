@@ -76,17 +76,6 @@ new Material("cast_iron", "iron")
 	.block()
 	.molten()
 
-// 镁
-new Material("magnesium", "stone")
-	.color(0xE2B1E3, 0xAB86AC)
-	.isMetal()
-	.ingot()
-	.plate()
-	.dust()
-	.nugget()
-	.block()
-	.molten()
-
 // 工业铁
 new Material("industrial_iron", "iron")
 	.color(0x626262, 0x4E4E4E)
@@ -99,39 +88,6 @@ new Material("etrium", "diamond")
 	.isMetal()
 	.molten()
 	.dust()
-
-// 钠
-new Material("sodium", "wooden")
-	.color(0xC0C5C5, 0x919595)
-	.isMetal()
-	.ingot()
-	.plate()
-	.dust()
-	.nugget()
-	.block()
-	.molten()
-
-// 钾
-new Material("potassium", "wooden")
-	.color(0xC2C6C7, 0x939696)
-	.isMetal()
-	.ingot()
-	.plate()
-	.dust()
-	.nugget()
-	.block()
-	.molten()
-
-// 钙
-new Material("calcium", "wooden")
-	.color(0xD8D8D8, 0xA3A3A3)
-	.isMetal()
-	.ingot()
-	.plate()
-	.dust()
-	.nugget()
-	.block()
-	.molten()
 
 // 钒
 new Material("vanadium", "stone")
@@ -285,7 +241,7 @@ new Material("cobalt", "iron")
 
 // 钛
 new Material("titanium", "diamond")
-	.color(0x71EAFF, 0x2DE0FF)
+	.color(0xE2B1E3, 0xAB86AC)
 	.isMetal()
 	.ingot()
 	.plate()
