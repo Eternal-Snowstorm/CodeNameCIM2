@@ -1,10 +1,15 @@
 ServerEvents.recipes((event) => {
 	let { create, vintageimprovements } = event.recipes
 
-	/** 
+	/**
 	 * 第一大章节的配方
 	 * @constructor
-	 * @param {key: any} mechanism 产出构件
+	 * @param {{
+	 *  COM: Internal.ItemStack, 
+	 *  INC: Internal.ItemStack, 
+	 *  BAS?: Internal.ItemStack,
+	 *  AUG?: Internal.ItemStack 
+	 * }} mechanism
 	 */
 	function BasicMechRecipe(mechanism) {
 		let { COM, INC } = mechanism
