@@ -209,7 +209,7 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         "type": "expatternprovider:circuit_cutter",
-        "fluid_input": Fluid.of("minecraft:water", 1000).toJson(),
+        "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
         "item_input": Ingredient.of("forge:storage_blocks/electrum").toJson(),
         "output": Item.of(Print.LOGIC, 9).toJson()
     }).id("expatternprovider:cutter/logic")
@@ -227,7 +227,7 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         "type": "expatternprovider:circuit_cutter",
-        "fluid_input": Fluid.of("minecraft:water", 1000).toJson(),
+        "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
         "item_input": Ingredient.of("forge:storage_blocks/certus_quartz").toJson(),
         "output": Item.of(Print.CALCULATION, 9).toJson()
     }).id("expatternprovider:cutter/calculation")
@@ -245,7 +245,7 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         "type": "expatternprovider:circuit_cutter",
-        "fluid_input": Fluid.of("minecraft:water", 1000).toJson(),
+        "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
         "item_input": Ingredient.of("forge:storage_blocks/etrium").toJson(),
         "output": Item.of(Print.ENGINEERING, 9).toJson()
     }).id("expatternprovider:cutter/engineering")
@@ -263,7 +263,7 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         "type": "expatternprovider:circuit_cutter",
-        "fluid_input": Fluid.of("minecraft:water", 1000).toJson(),
+        "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
         "item_input": Ingredient.of("advanced_ae:quantum_alloy_block").toJson(),
         "output": Item.of(Print.QUANTUM, 9).toJson()
     }).id("advanced_ae:quantum_processor_print_eae")
