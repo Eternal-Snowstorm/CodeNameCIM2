@@ -145,14 +145,14 @@ ItemEvents.tooltip((event) => {
 
 		if (event.shift) {
 			tooltip.addAll(TooltipHelper.cutStringTextComponent(
-				CMIModLang.translateDirect("tooltip.impact_pile.behaviour1").getString(),
+				CmiLang.translateDirect("tooltip.impact_pile.behaviour1").getString(),
 				TooltipHelper.Palette.STANDARD_CREATE.primary(),
 				TooltipHelper.Palette.STANDARD_CREATE.highlight(),
 				0
 			))
 
 			tooltip.addAll(TooltipHelper.cutStringTextComponent(
-				CMIModLang.translateDirect("tooltip.impact_pile.behaviour2").getString(),
+				CmiLang.translateDirect("tooltip.impact_pile.behaviour2").getString(),
 				TooltipHelper.Palette.STANDARD_CREATE.primary(),
 				TooltipHelper.Palette.STANDARD_CREATE.highlight(),
 				0
