@@ -31,7 +31,7 @@
 		#type: double
 		#default: 16.0
 		#Range: 0.0 ~ 64.0
-		stress_impact = 64.0
+		stress_impact = 16.0
 
 	#Void Dust Collector settings
 	[general.void_dust_collector]
