@@ -229,7 +229,7 @@ ServerEvents.recipes((event) => {
         "type": "expatternprovider:circuit_cutter",
         "fluid_input": Fluid.of("minecraft:water", 1000).toJson(),
         "item_input": Ingredient.of("forge:storage_blocks/certus_quartz").toJson(),
-        "output": Itemm.of(Print.CALCULATION, 9).toJson()
+        "output": Item.of(Print.CALCULATION, 9).toJson()
     }).id("expatternprovider:cutter/calculation")
 
     // 工程电路板
