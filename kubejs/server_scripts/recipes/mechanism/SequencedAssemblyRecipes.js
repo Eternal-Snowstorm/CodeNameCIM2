@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements } = event.recipes
+	let { cmi, create, vintageimprovements } = event.recipes
 
 	/**
 	 * 第一大章节的配方
@@ -79,6 +79,10 @@ ServerEvents.recipes((event) => {
 	 */
 	BasicMechRecipe.prototype.deploying4 = function (ingredient) {
 		this.process4 = create.deploying(this.transit, [this.transit, ingredient])
+		return this
+	}
+	BasicMechRecipe.prototype.grinding4 = function () {
+		this.process4 = cmi.grinding(this.transit, this.transit)
 		return this
 	}
 	BasicMechRecipe.prototype.build = function () {
