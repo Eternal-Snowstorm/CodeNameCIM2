@@ -69,16 +69,3 @@ StartupEvents.modifyCreativeTab("thermalconstruct:thermal_construct_tab", (event
 StartupEvents.modifyCreativeTab("functionalstorage:main", (event) => {
 	event.setIcon("functionalstorage:cherry_1")
 })
-
-StartupEvents.modifyCreativeTab("immersiveengineering:main", (event) => {
-	event.addAfter(Item.of("immersiveengineering:blueprint", {
-		blueprint: "molds"
-	}), [
-		Item.of("immersiveengineering:blueprint", {
-			blueprint: "mechanism_basements"
-		}),
-		Item.of("immersiveengineering:blueprint", {
-			blueprint: "mechanism_augments"
-		})
-	])
-})
