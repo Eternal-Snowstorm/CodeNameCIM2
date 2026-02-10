@@ -1,0 +1,56 @@
+
+#MekaWeapons Settings. Joules to FE conversion: 2.5J = 1FE
+[weapons]
+	#Transfer energy rate of the Wireless Charger (Magnetizer), in Joules per tick.
+	wirelessChargerEnergyRate = "1250000"
+
+	#Meka-tana Settings
+	[weapons.mekatana]
+		#Base damage of the Meka-Tana, multiply it with Attack Amplification Units.
+		baseDamage = 50
+		#Attack speed of the Meka-Tana.
+		#Range: -4.0 ~ 100.0
+		attackSpeed = -2.4
+		#Cost in Joules of using the Meka-Tana to deal damage.
+		energyUsage = "625000"
+		#Additional cost in Joules of using the Meka-Tana to perform a sweeping attack.
+		sweepingAttackEnergyUsage = "125000"
+		#Cost in Joules of using the Meka-Tana to teleport 10 blocks.
+		teleportEnergyUsage = "5000"
+		#Maximum distance a player can teleport with the Meka-Tana.
+		#Range: 3 ~ 1024
+		maxTeleportReach = 100
+		#Cost in Joules of using the Meka-Tana to apply Looting effect to a mob.
+		lootingEnergyUsage = "125000"
+		#Base energy capacity of the Meka-Tana.
+		baseEnergyCapacity = "16000000"
+		#Base charge rate of the Meka-Tana.
+		baseChargeRate = "350000"
+		#Whether Meka-Tana can be enchanted. False by default. Use at your own risk.
+		enchantments = false
+
+	#Meka-Bow Settings
+	[weapons.mekabow]
+		#Attention: The final damage of Meka-Bow is based on how fast the arrow is going when hits, multiply it with Attack Amplification Units.
+		baseDamage = 50
+		#Cost in Joules of using the Meka-Bow.
+		energyUsage = "625000"
+		#Cost in Joules of using the Meka-Bow with flame mode active.
+		fireModeEnergyUsage = "825000"
+		#Additional cost in Joules of firing an arrow with the Meka-Bow when the Arrow Energy Unit module is installed.
+		energyArrowUsage = "125000"
+		#Additional cost in Joules of firing an arrow with the Meka-Bow when the Auto-Fire Unit module is installed.
+		autoFireEnergyUsage = "100000"
+		#Additional cost in Joules of firing an arrow with the Meka-Bow per level of Draw Speed Unit installed.
+		drawSpeedUsage = "50000"
+		#Additional cost in Joules of firing an arrow with the Meka-Bow when the Gravity Dampener Unit module is installed.
+		gravityDampenerUsage = "75000"
+		#Additional cost in Joules of firing an arrow with the Meka-Bow when the Looting Unit module is installed.
+		lootingEnergyUsage = "125000"
+		#Base energy capacity of Meka-Bow.
+		baseEnergyCapacity = "16000000"
+		#Base charge rate of Meka-Bow.
+		baseChargeRate = "350000"
+		#Whether Meka-Bow can be enchanted. False by default. Use at your own risk.
+		enchantments = false
+
