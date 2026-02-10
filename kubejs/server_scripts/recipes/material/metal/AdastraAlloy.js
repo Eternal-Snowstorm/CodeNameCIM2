@@ -23,12 +23,11 @@ ServerEvents.recipes((event) => {
 		"energy": 20,
 		"ingredients": [
 			Ingredient.of("#forge:raw_materials/ostrum_scrap").toJson(),
-			Ingredient.of("#forge:ingots/scarlet_neodymium").toJson(),
-			Ingredient.of("#forge:ingots/azure_neodymium").toJson()
+			Ingredient.of("#forge:ingots/titanium").toJson()
 		],
 		"result": {
 			"id": "ad_astra:ostrum_ingot",
-			"count": 6
+			"count": 4
 		}
 	})
 
