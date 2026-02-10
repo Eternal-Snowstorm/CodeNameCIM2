@@ -2,19 +2,6 @@
 #All settings below will only take effect after restarting the server or client.
 [general]
 
-	#Accelerator Motor settings
-	[general.accelerator_motor]
-		#Default speed when placing the Accelerator Motor (RPM)
-		#type: int
-		#default: 16
-		#Range: 1 ~ 256
-		default_speed = 16
-		#Maximum RPM the accelerator motor
-		#type: int
-		#default: 128
-		#Range: 1 ~ 256
-		max_speed = 128
-
 	#Steam Hammer settings
 	[general.steam_hammer]
 		#Steam consumption per run of steam hammer (mB)
@@ -32,6 +19,36 @@
 		#default: 16.0
 		#Range: 0.0 ~ 64.0
 		stress_impact = 16.0
+
+	#Accelerator Motor settings
+	[general.accelerator_motor]
+		#Default speed when placing the Accelerator Motor (RPM)
+		#type: int
+		#default: 16
+		#Range: 1 ~ 256
+		default_speed = 16
+		#Maximum RPM the accelerator motor
+		#type: int
+		#default: 128
+		#Range: 1 ~ 256
+		max_speed = 128
+
+	#Advanced Spout settings
+	[general.advanced_spout]
+		#Filling time in ticks
+		#20 ticks = 1 second
+		#Original spout uses 20 ticks
+		#type: int
+		#default: 5
+		#Range: 1 ~ 100
+		filling_time = 5
+		#Fluid capacity in mB (millibuckets)
+		#1000 mB = 1 bucket
+		#Original spout uses 1000 mB
+		#type: int
+		#default: 5000
+		#Range: 2000 ~ 64000
+		capacity = 5000
 
 	#Void Dust Collector settings
 	[general.void_dust_collector]
@@ -66,21 +83,4 @@
 		#default: -63
 		#Range: -63 ~ 319
 		min_work_height = -63
-
-	#Advanced Spout settings
-	[general.advanced_spout]
-		#Filling time in ticks
-		#20 ticks = 1 second
-		#Original spout uses 20 ticks
-		#type: int
-		#default: 5
-		#Range: 1 ~ 100
-		filling_time = 5
-		#Fluid capacity in mB (millibuckets)
-		#1000 mB = 1 bucket
-		#Original spout uses 1000 mB
-		#type: int
-		#default: 5000
-		#Range: 2000 ~ 64000
-		capacity = 5000
 

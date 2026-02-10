@@ -31,6 +31,8 @@ schematics/uploaded/
 /saves/Debug/
 /.idea
 /server.dat
+/observable_announce
+/TweakerMoreForge
 # *.zip
 fancymenu_data
 saves/*/session.lock
@@ -61,7 +63,6 @@ config/ftbquests/qusets/chapters/control*
 
 # ResourcePacks
 /resourcepacks/*
-!/resourcepacks/矿石发光.zip
 !/resourcepacks/彩色边框.zip
 !/resourcepacks/超好看天空.zip
 !/resourcepacks/CMI Squarefully.zip

@@ -1,0 +1,22 @@
+
+#All settings below will only take effect after restarting the server or client.
+[general]
+	#Items that can trigger platform placement (right-click).
+	#Use "#namespace:path" for tags, "namespace:path" for item IDs.
+	#Examples: "#forge:stone", "minecraft:cobblestone"
+	trigger_block = ["#forge:stone", "minecraft:cobblestone"]
+	#Items that can adjust platform mode (right-click) and show boundary preview (hold).
+	#Use "#namespace:path" for tags, "namespace:path" for item IDs.
+	#Examples: "#forge:tools/wrench", "minecraft:stick"
+	adjuster = ["#forge:tools/wrench", "minecraft:stick"]
+	#The distance that the platform fills on its top
+	#type: int
+	#default: 5
+	#Range: 0 ~ 64
+	top_filling_distance = 5
+	#The distance that the platform fills on its bottom
+	#type: int
+	#default: 5
+	#Range: 0 ~ 64
+	bottom_filling_distance = 5
+
