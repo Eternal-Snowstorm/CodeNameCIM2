@@ -299,56 +299,6 @@ new OreBlock("tungsten", "nether", 10)
 	.appearance(0x596C7E, 5)
 	.nether()
 
-// 黄铁
-new OreBlock("pyrite", "stone", 6)
-	.appearance(0xE4C02C, 4)
-	.nether()
-
-// 红镍
-new OreBlock("lateritic_nickel", "stone", 6)
-	.appearance(0xA40000, 2)
-	.end()
-
-// 辉铜
-new OreBlock("veridium", "stone", 3)
-	.appearance(0x8ACE51, 2)
-	.mars()
-
-// 黄锡
-new OreBlock("stannine", "stone", 3)
-	.appearance(0xFFF86C, 3)
-	.moon()
-
-// 闪锌
-new OreBlock("sphalerite", "iron", 5)
-	.appearance(0xB4DDCB, 7)
-	.end()
-
-// 磷酸铝
-new OreBlock("variscite", "stone", 4)
-	.appearance(0x65F0BE, 5)
-	.end()
-
-// 方铅
-new OreBlock("galena", "stone", 5)
-	.appearance(0x6A6F7C, 3)
-	.mars()
-
-// 铱锇
-new OreBlock("osmiridium", "iron", 6)
-	.appearance(0x987337, 5)
-	.moon()
-
-// 方铀
-new OreBlock("uraninite", "stone", 5)
-	.appearance(0x71D23A, 1)
-	.mars()
-
-// 辉银
-new OreBlock("argentite", "iron", 6)
-	.appearance(0xFFFFFF, 4)
-	.nether()
-
 // 埃忒恩
 new OreBlock("etrium", "diamond", 5)
 	.appearance(0x32FFD4, 1)

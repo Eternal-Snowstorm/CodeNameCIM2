@@ -34,18 +34,6 @@ StartupEvents.registry("item", (event) => {
 		.tag("forge:slimeball")
 		.tag("forge:slimeball/blood")
 
-	// 致密坚固板
-	addItem("dense_sturdy_sheet")
-		.texture(`${global.namespace}:item/material/material/plate/dense_obsidian`)
-		.tag("forge:plates")
-		.tag("forge:plates/dense_obsidian")
-
-	// 石板
-	addItem("stone_plate")
-		.texture(`${global.namespace}:item/material/material/plate/stone`)
-		.tag("forge:plates")
-		.tag("forge:plates/stone")
-
 	// 超载合金锭
 	addItem("overcharged_alloy_ingot")
 		.texture(`${global.namespace}:item/material/material/ingot/overcharged_alloy_ingot`)
