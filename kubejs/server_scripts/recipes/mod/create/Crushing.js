@@ -29,13 +29,11 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 安山岩粉
-		create.crushing("4x cmi:andesite_dust", [
+	create.crushing("4x cmi:andesite_dust", [
 		"#create:stone_types/andesite"
 	])
 
-	create.crushing([
-		"mekanism:dust_charcoal",
-	], [
+	create.crushing("mekanism:dust_charcoal", [
 		"minecraft:charcoal"
 	]).id("create:crushing/charcoal")
 })

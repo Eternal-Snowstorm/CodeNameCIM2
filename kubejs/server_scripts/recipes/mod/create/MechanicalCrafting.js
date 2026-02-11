@@ -56,5 +56,4 @@ ServerEvents.recipes((event) => {
 		G: "immersiveengineering:gunpart_hammer",
 		H: "createdieselgenerators:kelp_handle",
 	}).id("mbtool:mbtool")
-
 })

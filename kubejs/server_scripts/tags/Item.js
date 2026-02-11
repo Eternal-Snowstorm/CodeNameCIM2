@@ -169,10 +169,6 @@ ServerEvents.tags("item", (event) => {
 		.add("tconstruct:tinker_station")
 		.add("tconstruct:modifier_worktable")
 
-	event.get("cmi:steelmaking_raw_materials")
-		.add("minecraft:calcite")
-		.add("create:limestone")
-
 	event.get("cmi:nether_crops")
 		.add("minecraft:nether_sprouts")
 		.add("minecraft:nether_wart")

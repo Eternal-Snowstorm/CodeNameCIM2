@@ -34,7 +34,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("redstone_wire", "红石线")
 	addItemLang("inscribed_silicon", "线刻硅板")
 	addItemLang("andesite_dust", "安山岩粉")
-	addItemLang("andesite_aggregate", "安山混合物")
 	addItemLang("small_coal_coke", "小块焦炭")
 	addItemLang("silicon_mixure", "硅混合物")
 	addItemLang("rubber_plate", "橡胶板")

@@ -8,7 +8,8 @@ ServerEvents.recipes((event) => {
 		"advanced_ae:calculation_processor_chamber",
 		"advanced_ae:engineering_processor_chamber",
 		"advanced_ae:quantum_processor_chamber",
-		"advanced_ae:quantum_alloy_plate"
+		"advanced_ae:quantum_alloy_plate",
+		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals"
     ]
     removeRecipeIds.forEach((id) => {
         event.remove({
