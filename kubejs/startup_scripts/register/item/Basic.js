@@ -43,7 +43,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 精炼铁方坯
 	addItem("refined_iron_bloom")
-		.texture(`${global.namespace}:item/material/material/material/ingot/refined_iron_bloom`)
+		.texture(`${global.namespace}:item/material/material/ingot/refined_iron_bloom`)
 
 	// 淤泥提取物
 	addItem("sludge_extract")

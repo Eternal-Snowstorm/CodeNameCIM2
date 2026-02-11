@@ -33,4 +33,6 @@ ServerEvents.recipes((event) => {
 
 	minecraft.stonecutting("immersiveengineering:sheetmetal_gold", "#forge:plates/gold")
 	minecraft.stonecutting("#forge:plates/gold", "immersiveengineering:sheetmetal_gold")
+
+	minecraft.stonecutting("4x minecraft:pointed_dripstone", "minecraft:dripstone_block")
 })
