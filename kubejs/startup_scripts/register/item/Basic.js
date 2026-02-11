@@ -135,24 +135,24 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/grass_string`)
 		.tag("forge:string")
 
-	// 活泼元素
-	addItem("reactive_element")
-		.texture(`${global.namespace}:item/material/cc/1`)
-	addItem("stable_element")
-		.texture(`${global.namespace}:item/material/cc/2`)
-	addItem("explosive_element")
-		.texture(`${global.namespace}:item/material/cc/3`)
+	// // 活泼元素
+	// addItem("reactive_element")
+	// 	.texture(`${global.namespace}:item/material/cc/1`)
+	// addItem("stable_element")
+	// 	.texture(`${global.namespace}:item/material/cc/2`)
+	// addItem("explosive_element")
+	// 	.texture(`${global.namespace}:item/material/cc/3`)
 
-	addItem("reactive_element_basement")
-		.texture(`${global.namespace}:item/material/cc/1_dust`)
-	addItem("stable_element_basement")
-		.texture(`${global.namespace}:item/material/cc/2_dust`)
-	addItem("explosive_element_basement")
-		.texture(`${global.namespace}:item/material/cc/3_dust`)
+	// addItem("reactive_element_basement")
+	// 	.texture(`${global.namespace}:item/material/cc/1_dust`)
+	// addItem("stable_element_basement")
+	// 	.texture(`${global.namespace}:item/material/cc/2_dust`)
+	// addItem("explosive_element_basement")
+	// 	.texture(`${global.namespace}:item/material/cc/3_dust`)
 
-	// Mg(OH)2
-	addItem("magnesium_hydroxide")
-		.texture(`${global.namespace}:item/material/sea/mgoh2`)
+	// // Mg(OH)2
+	// addItem("magnesium_hydroxide")
+	// 	.texture(`${global.namespace}:item/material/sea/mgoh2`)
 
 	// 溴化阻燃剂
 	addItem("brominated_flame_retardants")
@@ -174,9 +174,9 @@ StartupEvents.registry("item", (event) => {
 	addItem("nuke_cooler")
 		.texture(`${global.namespace}:item/material/nuke_cooler`)
 
-	// 精炼核废料
-	addItem("refined_nuke_waste")
-		.texture(`${global.namespace}:item/material/refined_nuke_waste`)
+	// // 精炼核废料
+	// addItem("refined_nuke_waste")
+	// 	.texture(`${global.namespace}:item/material/refined_nuke_waste`)
 
 	// 火箭零件
 	for (let i = 1; i <= 4; i++) {
