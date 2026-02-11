@@ -213,7 +213,7 @@ ServerEvents.recipes((event) => {
 		"A",
 		"B"
 	], {
-		A: "#forge:ingots/andesite_alloy",
+		A: "#forge:plates/andesite_alloy",
 		B: "thermal:cured_rubber"
 	})
 
@@ -222,7 +222,7 @@ ServerEvents.recipes((event) => {
 		"AA",
 		"BB"
 	], {
-		A: "#forge:ingots/andesite_alloy",
+		A: "#forge:plates/andesite_alloy",
 		B: "thermal:cured_rubber"
 	})
 
@@ -292,7 +292,7 @@ ServerEvents.recipes((event) => {
 
 		create.cutting(`cmi:incomplete_${material}_large_cogwheel`, `#forge:gears/${material}`)
 
-		create.cutting(`2x cmi:incomplete_${material}_cogwheel`,`cmi:incomplete_${material}_large_cogwheel`)
+		create.cutting(`2x cmi:incomplete_${material}_cogwheel`, `cmi:incomplete_${material}_large_cogwheel`)
 
 		create.deploying(`4x steampowered:${material}_large_cogwheel`, [
 			`cmi:incomplete_${material}_large_cogwheel`,
@@ -321,8 +321,8 @@ ServerEvents.recipes((event) => {
 		"#minecraft:axes"
 	]).damageIngredient("#minecraft:axes", 1)
 
-	create.cutting("cmi:incomplete_cogwheel", [
-		"#minecraft:wooden_slabs"
+	create.cutting("2x cmi:incomplete_cogwheel", [
+		"cmi:incomplete_large_cogwheel"
 	])
 
 	create.deploying("4x create:cogwheel", [
@@ -346,8 +346,8 @@ ServerEvents.recipes((event) => {
 		"#minecraft:axes"
 	]).damageIngredient("#minecraft:axes", 1)
 
-	create.cutting("cmi:incomplete_large_cogwheel", [
-		"#minecraft:planks"
+	create.cutting("2x cmi:incomplete_large_cogwheel", [
+		"#forge:gears/wooden"
 	])
 
 	create.deploying("4x create:large_cogwheel", [

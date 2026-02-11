@@ -24,10 +24,6 @@ StartupEvents.registry("item", (event) => {
 			.texture(`${global.namespace}:item/material/${name}`)
 	}
 
-	// 构件冲压头
-	addItem("mechanism_curving_head")
-		.tag("vintageimprovements:curving_heads")
-
 	// 黏血球
 	addItem("blood_slime_ball")
 		.texture(`${global.namespace}:item/material/blood_slime_ball`)

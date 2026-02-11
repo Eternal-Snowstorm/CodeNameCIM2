@@ -1,6 +1,16 @@
 ServerEvents.recipes((event) => {
     let { kubejs, minecraft } = event.recipes
 
+    // 木齿轮
+    kubejs.shaped("cmi:wooden_gear", [
+        " A ",
+        "ABA",
+        " A "
+    ], {
+        A: "#minecraft:planks",
+        B: "#forge:rods/wooden"
+    })
+
     // 桶
     kubejs.shaped("minecraft:bucket", [
         "A A",

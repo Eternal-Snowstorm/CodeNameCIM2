@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 		this.part
 
 		this.process1 = vintageimprovements.curving(this.transit, this.transit)
-			.itemAsHead("cmi:mechanism_curving_head")
+			.itemAsHead("cmi:mechanism_mold")
 		this.process2 = create.cutting(this.transit, this.transit)
 		this.process3 = null
 		this.process4 = cmi.grinding(this.transit, this.transit)
