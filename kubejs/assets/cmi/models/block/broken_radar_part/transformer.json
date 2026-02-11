@@ -6,6 +6,7 @@
 		"0": "cmi:block/space/machine/broken/transformer",
 		"particle": "cmi:block/radar_components"
 	},
+	"render_type": "cutout",
 	"elements": [
 		{
 			"from": [0, 0, 0],
