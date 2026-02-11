@@ -28,22 +28,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("mechanism_curving_head")
 		.tag("vintageimprovements:curving_heads")
 
-	// 黑石源质
-	addItem("blackstone_source_alpha")
-		.texture(`${global.namespace}:item/material/blackstone_source_alpha`)
-	addItem("blackstone_source_beta")
-		.texture(`${global.namespace}:item/material/blackstone_source_beta`)
-	addItem("blackstone_source_gamma")
-		.texture(`${global.namespace}:item/material/blackstone_source_gamma`)
-
-	// 宝石原料
-	addItem("crystal_ruby")
-		.texture(`${global.namespace}:item/material/crystal_ruby`)
-	addItem("source_sapphire")
-		.texture(`${global.namespace}:item/material/source_sapphire`)
-	addItem("bombed_source_emeraid")
-		.texture(`${global.namespace}:item/material/bombed_source_emeraid`)
-
 	// 黏血球
 	addItem("blood_slime_ball")
 		.texture(`${global.namespace}:item/material/blood_slime_ball`)
@@ -158,10 +142,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("single_crystal_silicon")
 		.texture(`${global.namespace}:item/material/silicon/single_crystal_silicon`)
 
-	// 生石灰
-	addItem("lime")
-		.texture(`${global.namespace}:item/material/lime`)
-
 	// 草纤维
 	addItem("grass_fiber")
 		.texture(`${global.namespace}:item/material/grass_fiber`)
@@ -250,26 +230,6 @@ StartupEvents.registry("item", (event) => {
 	// 二极管
 	addItem("diode")
 		.texture(`${global.namespace}:item/material/diode`)
-
-	// 硅橡胶
-	addItem("silicon_rubber")
-		.texture(`${global.namespace}:item/material/rubber/silicon/rubber`)
-
-	// 硅橡胶板
-	addItem("silicon_rubber_plate")
-		.texture(`${global.namespace}:item/material/rubber/silicon/rubber_plate_0`)
-
-	// 热力单元
-	addItem("thermal_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_0`)
-	addItem("blaze_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_1`)
-	addItem("basalz_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_2`)
-	addItem("blitz_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_3`)
-	addItem("blizz_unit")
-		.texture(`${global.namespace}:item/material/thermal/unit_4`)
 
 	let SomeModelsJson = {
 		cogwheel: function (material) {

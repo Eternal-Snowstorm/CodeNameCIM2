@@ -14,4 +14,5 @@ JEIEvents.hideItems((event) => {
 	hideItemFromJEI("cmi:parchment")
 	hideItemFromJEI("cmi:torn_parchment_a")
 	hideItemFromJEI("cmi:torn_parchment_b")
+	hideItemFromJEI("vintageimprovements:belt_grinder")
 })

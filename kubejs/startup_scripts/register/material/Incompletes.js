@@ -1,23 +1,29 @@
 StartupEvents.registry("item", (event) => {
 	/**
- * @param {string} name 注册ID
- * @param {boolean} isSequencedAssembly 是否是序列物品
- * @returns 
- */
-	function addItem(name) {
+	 * @param {string} name 注册ID
+	 * @param {boolean} isSequencedAssembly 是否是序列物品
+	 * @returns 
+	 */
+	function addItem(name, isSequencedAssembly) {
 		if (!isSequencedAssembly) {
 			return event.create(`${global.namespace}:incomplete_${name}`)
-		} else if (isSequencedAssembly == undefined) {
+		} else if (isSequencedAssembly === undefined) {
 			return event.create(`${global.namespace}:incomplete_${name}`, "create:sequenced_assembly")
 		} else {
 			return event.create(`${global.namespace}:incomplete_${name}`)
 		}
 	}
-	function addIncompleteItem(name) {
+
+	/**
+	 * @param {string} name 注册ID
+	 * @param {boolean} isSequencedAssembly 是否是序列物品
+	 * @returns 
+	 */
+	function addIncompleteItem(name, isSequencedAssembly) {
 		if (!isSequencedAssembly) {
 			return event.create(`${global.namespace}:incomplete_${name}`)
 				.texture(`${global.namespace}:item/material/incomplete/${name}`)
-		} else if (isSequencedAssembly == undefined) {
+		} else if (isSequencedAssembly === undefined) {
 			return event.create(`${global.namespace}:incomplete_${name}`, "create:sequenced_assembly")
 				.texture(`${global.namespace}:item/material/incomplete/${name}`)
 		} else {

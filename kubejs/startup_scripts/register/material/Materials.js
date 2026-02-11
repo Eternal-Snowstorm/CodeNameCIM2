@@ -1,3 +1,8 @@
+// 木头
+new Material("wooden", "wooden")
+	.color(0xab7500, 0xac8430)
+	.gear(false)
+
 // 安山合金
 new Material("andesite_alloy", "wooden")
 	.color(0xC7C8B8, 0x809587)
@@ -73,17 +78,7 @@ new Material("cast_iron", "iron")
 	.ingot(false)
 	.dust(false)
 	.nugget(false)
-	.block()
-	.molten()
-
-// 镁
-new Material("magnesium", "stone")
-	.color(0xE2B1E3, 0xAB86AC)
-	.isMetal()
-	.ingot()
-	.plate()
-	.dust()
-	.nugget()
+	.gear(false)
 	.block()
 	.molten()
 
@@ -99,39 +94,6 @@ new Material("etrium", "diamond")
 	.isMetal()
 	.molten()
 	.dust()
-
-// 钠
-new Material("sodium", "wooden")
-	.color(0xC0C5C5, 0x919595)
-	.isMetal()
-	.ingot()
-	.plate()
-	.dust()
-	.nugget()
-	.block()
-	.molten()
-
-// 钾
-new Material("potassium", "wooden")
-	.color(0xC2C6C7, 0x939696)
-	.isMetal()
-	.ingot()
-	.plate()
-	.dust()
-	.nugget()
-	.block()
-	.molten()
-
-// 钙
-new Material("calcium", "wooden")
-	.color(0xD8D8D8, 0xA3A3A3)
-	.isMetal()
-	.ingot()
-	.plate()
-	.dust()
-	.nugget()
-	.block()
-	.molten()
 
 // 钒
 new Material("vanadium", "stone")
@@ -285,7 +247,7 @@ new Material("cobalt", "iron")
 
 // 钛
 new Material("titanium", "diamond")
-	.color(0x71EAFF, 0x2DE0FF)
+	.color(0xE2B1E3, 0xAB86AC)
 	.isMetal()
 	.ingot()
 	.plate()

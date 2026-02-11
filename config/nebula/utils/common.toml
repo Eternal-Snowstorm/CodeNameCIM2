@@ -6,5 +6,5 @@
 	burningFluids = ["#forge:molten_materials"]
 	#Whether to enable the feature that converts surrounding dirt to podzol when large spruce trees grow
 	#Default value: false
-	enableLargeSprucePodzolConversion = true
+	enableLargeSprucePodzolConversion = false
 

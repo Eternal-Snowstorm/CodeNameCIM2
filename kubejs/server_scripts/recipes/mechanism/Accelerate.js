@@ -106,7 +106,9 @@ ServerEvents.recipes((event) => {
 		setOutput("minecraft:tuff", 0.1),
 		setOutput("create:scoria", 0.1),
 		setOutput("minecraft:dripstone_block", 0.1),
-		setOutput("minecraft:smooth_basalt", 0.1)
+		setOutput("minecraft:smooth_basalt", 0.1),
+		setOutput("minecraft:calcite", 0.1),
+		setOutput("create:limestone", 0.1)
 	])
 
 	// 木质构件

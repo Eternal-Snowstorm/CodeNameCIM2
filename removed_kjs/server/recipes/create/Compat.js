@@ -58,23 +58,5 @@ ServerEvents.recipes((event) => {
 		"2x #minecraft:logs"
 	])
 
-	// 烈焰血
-	create.mixing(Fluid.of("tconstruct:blazing_blood", 500), [
-		Fluid.of("cmi:blood", 500),
-		"minecraft:blaze_powder"
-	]).heated()
-
-	create.mixing(Fluid.of("tconstruct:blazing_blood", 2000), [
-		Fluid.of("cmi:blood", 1000),
-		"#forge:rods/blaze"
-	]).superheated()
-
-	// 不稳定红石
-	create.mixing(Fluid.of("thermal:redstone", 50), [
-		"#forge:dusts/redstone"
-	]).heated()
-
-	vintageimprovements.pressurizing(Fluid.of("thermal:redstone", 125), [
-		"#forge:dusts/redstone"
-	]).heatRequirement(global.HeatLevel["heated"])
+	
 })

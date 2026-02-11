@@ -14,7 +14,7 @@ StartupEvents.registry("item", (event) => {
 	}
 
 	// 简易电池
-	addItem(`${global.namespace}:simple_battery`)
+	addItem("simple_battery")
 		.maxStackSize(1)
 		.texture("createaddition:item/capacitor")
 		.attachCapability(CapabilityBuilder.ENERGY.customItemStack()

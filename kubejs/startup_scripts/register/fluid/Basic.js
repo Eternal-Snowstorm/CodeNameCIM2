@@ -10,11 +10,7 @@ StartupEvents.registry("fluid", (event) => {
 		builder.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
 		builder.stillTexture(`${global.namespace}:fluid/${name}/still`)
 		builder.renderType("translucent")
-		builder.bucketItem.modelJson({
-			"parent": "forge:item/bucket_drip",
-			"loader": "forge:fluid_container",
-			"fluid": `${global.namespace}:${name}`
-		})
+		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
 		console.log(`${global.namespace}:${name}已注册!`)
 
@@ -35,20 +31,14 @@ StartupEvents.registry("fluid", (event) => {
 		builder.flowingTexture(`${global.namespace}:fluid/solution/flow`)
 		builder.stillTexture(`${global.namespace}:fluid/solution/still`)
 		builder.renderType("translucent")
-		builder.bucketItem.modelJson({
-			"parent": "forge:item/bucket_drip",
-			"loader": "forge:fluid_container",
-			"fluid": `${global.namespace}:${name}`
-		})
+		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
 		return builder
 	}
 
 	addColorFluid("eletriced_source_emeraid", 0x117458)
 	addColorFluid("trinitrotoluene_solution", 0xFFEFA8)
-	addColorFluid("crystal_catalyt", 0x90EE90)
 	addColorFluid("geyser_jet", 0x3D57FF)
-	addColorFluid("photosyn_fluid", 0x00FA9A)
 	addColorFluid("xenon", 0x1E90FF)
 	addColorFluid("radon", 0x00FF00)
 	addColorFluid("mercury", 0xA9C0FF)
@@ -58,49 +48,8 @@ StartupEvents.registry("fluid", (event) => {
 		.gaseous()
 	addAloneFluid("blood")
 	addAloneFluid("sludge_suspension")
-	addAloneFluid("delta_unstable_solution")
-	addAloneFluid("turbid_waste_liquid")
 	addAloneFluid("cured_rubber")
 		.noBlock()
 	addAloneFluid("bromine")
 	addAloneFluid("sodium_hydroxide")
-
-
-
-	// c6
-
-	// addColorFluid("fatty_acid", 0xFFFE9B) // 脂肪酸
-	// addColorFluid("glycerin", 0xFFFCB8) // 甘油
-	addColorFluid("phenol", 0xAAAA99) // 苯酚
-	addColorFluid("light_aromatics", 0xEEDD66) // 轻芳烃
-	addColorFluid("nitric_acid", 0xD6B000) // 硝酸
-	addColorFluid("fluid_nitroglycerine", 0xFFFBD3) //  三硝基甲苯溶液
-	addColorFluid("cracked_diesel", 0xDDCCBB) // 裂化柴油
-	addColorFluid("cracked_lubricating_oil", 0xFFFF99) // 裂化润滑油
-	addColorFluid("structural_plastic", 0xAABBEE) // 结构塑胶
-	addColorFluid("light_aldehyde", 0xAACCFF) // 轻醛烃
-	addColorFluid("polyvinyl_alcohol", 0x887799) // 聚乙烯醇
-	addColorFluid("vinyl_alcohol", 0x9988AA) // 乙烯醇
-	addColorFluid("acetylene", 0xDADEDF) // 乙炔
-	addAloneFluid("sea_water") // 海水
-	addAloneFluid("concentrated_sea_water") // 浓缩海水
-	addColorFluid("brine", 0xA3A189) // 卤水
-	addColorFluid("alkaline_brine", 0x8FA8A4) // 碱性卤水
-	addColorFluid("waste_brine", 0x3C3C3C) // 废卤水
-
-	// addAloneFluid("alkaline_concentrated_sea_water") // 碱性浓缩海水
-	// addAloneFluid("acidic_concentrated_sea_water") // 酸性浓缩海水
-	addAloneFluid("hydrochloric_acid") //盐酸
-	addColorFluid("lithium-containing_electrolyte", 0x555100) // 含锂电解液
-
-
-	//c7
-
-	// addColorFluid("tetrachlorosilane", 0xDDFF6E) // 四氯化硅
-	addColorFluid("chromium_plating_solution", 0x55AAAA) // 铬电镀液
-	addColorFluid("chromium_solution", 0x00FFFF) // 铬溶液
-	addColorFluid("platinum_solution", 0x663300) // 铂溶液
-	addColorFluid("cobalt_solution", 0xFFAAFF) // 钛溶液
-
-
 })

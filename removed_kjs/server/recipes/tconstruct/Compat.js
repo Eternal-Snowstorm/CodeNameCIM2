@@ -26,14 +26,4 @@ ServerEvents.recipes((event) => {
 		.cooling_time(40)
 		.cast_consumed(true)
 
-	// 不稳定红石
-	tconstruct.melting(Fluid.of("thermal:redstone", 100))
-		.ingredient("#forge:dusts/redstone")
-		.time(20 * 5)
-		.temperature(800)
-
-	tconstruct.melting(Fluid.of("thermal:redstone", 900))
-		.ingredient("#forge:storage_blocks/redstone")
-		.time(20 * 5)
-		.temperature(800)
 })

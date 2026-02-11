@@ -1,0 +1,17 @@
+ServerEvents.recipes((event) => {
+    let { thermal } = event.recipes
+
+    // 安山岩
+    thermal.rock_gen("minecraft:andesite")
+        .below("create:andesite_alloy_block")
+        .adjacent("minecraft:water")
+
+    // 熔渣
+    thermal.rock_gen("create:scoria")
+        .adjacent("create:chocolate")
+
+    // 石灰岩
+    thermal.rock_gen("create:limestone")
+        .adjacent("create:honey")
+
+})
