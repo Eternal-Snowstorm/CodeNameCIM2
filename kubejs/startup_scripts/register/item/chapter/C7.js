@@ -25,12 +25,12 @@ StartupEvents.registry("item", (event) => {
 	// 黑石源质D
 	addItem("delta_blackstone_source")
 
-	// 晶射红宝石
-	addItem("crystal_ruby")
+	// 红源晶
+	addItem("source_ruby")
 
 	// 蓝源晶
 	addItem("source_sapphire")
 
-	// 爆裂源质
-	addItem("bombed_source_emeraid")
+	// 绿源晶
+	addItem("source_emeraid")
 })

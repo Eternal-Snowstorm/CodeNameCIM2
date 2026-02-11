@@ -1,25 +1,10 @@
 ServerEvents.recipes((event) => {
 	let { create, kubejs } = event.recipes
 
-	let Inc = {
-		FLYWHEEL: "cmi:incomplete_flywheel"
-	}
-
 	create.deploying("minecraft:redstone_torch", [
 		"#forge:rods/wooden",
 		"#forge:dusts/redstone"
 	])
-
-	// 飞轮
-	const BRONZE_PLATE = IngrUtils.getFirstItemId("#forge:plates/bronze")
-	create.sequenced_assembly("create:flywheel", [
-		"#create:shaft"
-	], [
-		create.deploying(Inc.FLYWHEEL, [
-			Inc.FLYWHEEL,
-			"#forge:plates/bronze"
-		]),
-	]).transitionalItem(Inc.FLYWHEEL).loops(4)
 
 	// 扫描组件
 	create.deploying("scannable:range_module", [
@@ -67,6 +52,7 @@ ServerEvents.recipes((event) => {
 		"cmi:wooden_mechanism"
 	]).id("scannable:chest_module")
 
+	// 机壳增产
 	create.deploying(`create:andesite_casing`, [
 		"#minecraft:planks",
 		"cmi:andesite_casing_framework"

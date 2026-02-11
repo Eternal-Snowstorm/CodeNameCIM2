@@ -19,7 +19,7 @@ StartupEvents.registry("item", (event) => {
 	// 烈焰燃烧单元
 	addItem("blaze_unit")
 
-	// 大地发生单元
+	// 大地碎裂单元
 	addItem("basalz_unit")
 
 	// 狂风催化单元
@@ -27,9 +27,6 @@ StartupEvents.registry("item", (event) => {
 
 	// 暴雪冷凝单元
 	addItem("blizz_unit")
-
-	// 硝酸盐
-	addItem("nitrate")
 
 	// 生石灰
 	addItem("lime")

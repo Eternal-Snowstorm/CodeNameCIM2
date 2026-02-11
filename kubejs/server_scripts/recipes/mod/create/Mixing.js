@@ -31,6 +31,17 @@ ServerEvents.recipes((event) => {
         "#forge:clay"
     ])
 
+    // 玫瑰石英
+    create.mixing("create:rose_quartz", [
+        "ae2:charged_certus_quartz_crystal",
+        Fluid.of("thermal:redstone", 200)
+    ])
+
+    create.mixing("create:rose_quartz", [
+        "minecraft:quartz",
+        Fluid.of("thermal:redstone", 400)
+    ])
+
     // 工业铁
     create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
         [

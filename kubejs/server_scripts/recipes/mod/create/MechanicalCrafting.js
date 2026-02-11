@@ -39,4 +39,22 @@ ServerEvents.recipes((event) => {
 		D: "cmi:coil_mechanism",
 		E: "#forge:plates/electrum"
 	}).id("createaddition:mechanical_crafting/electric_motor")
+
+	// 多方块搭建器
+	create.mechanical_crafting("mbtool:mbtool", [
+		" ABA ",
+		"CDEFA",
+		"   GH",
+		"    H"
+	], {
+		A: "#forge:plates/brass",
+		B: "create:electron_tube",
+		C: "#forge:gems/charged_amethyst",
+		D: "#forge:tools/wrench",
+		E: "create:empty_schematic",
+		F: "#create:mechanisms/precision",
+		G: "immersiveengineering:gunpart_hammer",
+		H: "createdieselgenerators:kelp_handle",
+	}).id("mbtool:mbtool")
+
 })

@@ -9,6 +9,10 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("forge:diesel")
 		.add("thermal_extra:diesel")
 
+	// 电镀液
+	event.get("cmi:plating_solution")
+		.add("cmi:plating_solution")
+
 	// 可用作火箭燃料
 	event.get("ad_astra:fuel")
 		.removeAll()

@@ -39,21 +39,4 @@ ServerEvents.recipes((event) => {
 			id: id
 		})
 	})
-
-	let removeOutput = [
-		"vintageimprovements:belt_grinder",
-		"create:schedule",
-		"create:track_signal",
-		"create:track_observer",
-		"create:controls",
-		"createdieselgenerators:chip_wood_block",
-		"steampowered:alternator",
-		"steampowered:pressurized_gas_container",
-		"steampowered:pressurized_steam_container",
-	]
-	removeOutput.forEach((output) => {
-		event.remove({
-			output: output
-		})
-	})
 })

@@ -1,9 +1,6 @@
 ServerEvents.recipes((event) => {
     let removeRecipeIds = [
-        "minecraft:packed_ice",
-        "minecraft:blue_ice",
-        "alexscaves:gunpowder_from_sulfur",
-        "minecraft:sugar_from_sugar_cane"
+        "farmersdelight:cutting/sugar_cane_alt"
     ]
     removeRecipeIds.forEach((id) => {
         event.remove({

@@ -7,8 +7,20 @@ ServerEvents.recipes((event) => {
 		CAPACITOR: "ad_astra:etrionic_core",
 		NUKE: "cmi:incomplete_nuke_cooler",
 		GAS: "cmi:incomplete_gas_container",
-		GIZMO: "cmi:incomplete_notor_gizmo"
+		GIZMO: "cmi:incomplete_notor_gizmo",
+		FLYWHEEL: "cmi:incomplete_flywheel"
 	}
+
+	// 飞轮
+	create.sequenced_assembly("create:flywheel", [
+		"#create:shaft"
+	], [
+		create.deploying(Inc.FLYWHEEL, [
+			Inc.FLYWHEEL,
+			"#forge:plates/bronze"
+		]),
+	]).transitionalItem(Inc.FLYWHEEL).loops(4)
+
 
 	// 扫描机兵零件
 	create.sequenced_assembly([

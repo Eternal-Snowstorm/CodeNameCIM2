@@ -11,13 +11,6 @@ StartupEvents.registry("block", (event) => {
         return event.create(`${global.namespace}:${name}`, type)
     }
 
-    addBlock(`cracked_concrete`)
-        .soundType(SoundType.METAL)
-        .requiresTool(true)
-        .textureAll(`${global.namespace}:block/space/concrete_crack`)
-        .tagBlock(global.ToolType["pickaxe"])
-        .tagBlock(global.MiningLevel["iron"])
-
     let createColouredBlock = {
         "gray": "andesite_cut_polished",
         "white": "diorite_cut_polished"
@@ -69,45 +62,8 @@ StartupEvents.registry("block", (event) => {
             .hardness(50)
     }
 
-    function barModel(barType) {
-
-        const BAR = `cmi:block/space/${barType}`
-
-        return {
-            parent: "cmi:block/space/bars",
-            textures: {
-                bar: BAR
-            }
-        }
-    }
-
-    function addBarBlock(name) {
-        let builder =
-            event.create(`${global.namespace}:${name}`, "cardinal")
-
-        builder.soundType(SoundType.METAL)
-        builder.noDrops()
-        builder.defaultCutout()
-        builder.requiresTool(true)
-        builder.waterlogged()
-        builder.notSolid()
-        builder.tagBlock(global.ToolType["pickaxe"])
-        builder.tagBlock(global.MiningLevel["iron"])
-        builder.tagBlock("ae2:blacklisted/spatial")
-        builder.tagBlock("mekanism:cardboard_blacklist")
-        builder.hardness(5)
-
-        builder.modelJson = barModel(name)
-
-        return builder
-    }
-
     addConcreteBlock("gray")
     addConcreteBlock("white")
-
-    addBarBlock("bar_acid")
-    addBarBlock("bar_concrete")
-    addBarBlock("bar_normal")
 
     for (let i = 1; i <= 4; i++) {
         // 雷达
@@ -155,22 +111,14 @@ StartupEvents.registry("block", (event) => {
         .model(`${global.namespace}:block/modem`)
         .notSolid()
 
-    // 损坏的调制解调器
-    let dimensions = [
-        "overworld",
-        "moon",
-        "mars",
-        "mercury"
-    ]
-    dimensions.forEach((dim) => {
-        addBlock(`broken_modem_${dim}`)
-            .soundType(SoundType.NETHERITE_BLOCK)
-            .waterlogged()
-            .hardness(-1)
-            .resistance(-1)
-            .model(`${global.namespace}:block/broken_radar_part/modem`)
-            .notSolid()
-    })
+
+    addBlock(`broken_modem`)
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+        .model(`${global.namespace}:block/broken_radar_part/modem`)
+        .notSolid()
 
     // 追踪阵列
     addBlock("tracking_array")
