@@ -7,4 +7,6 @@
 	#Whether to enable the feature that converts surrounding dirt to podzol when large spruce trees grow
 	#Default value: false
 	enableLargeSprucePodzolConversion = false
+	#Blocks that require correct tool. Use "#" for block tags.
+	must_use_tool_blocks = []
 
