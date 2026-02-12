@@ -1,21 +1,21 @@
 let cellMap = [
 	{
-		item: "cmi:tier_1_aviation_complete_cell",
+		item: "cmi:tier_1_aviation_cell",
 		uiId: "cmi:cell_1",
 		texture: "cmi:textures/gui/cell/tier_1.png"
 	},
 	{
-		item: "cmi:tier_2_aviation_complete_cell",
+		item: "cmi:tier_2_aviation_cell",
 		uiId: "cmi:cell_2",
 		texture: "cmi:textures/gui/cell/tier_2.png"
 	},
 	{
-		item: "cmi:tier_3_aviation_complete_cell",
+		item: "cmi:tier_3_aviation_cell",
 		uiId: "cmi:cell_3",
 		texture: "cmi:textures/gui/cell/tier_3.png"
 	},
 	{
-		item: "cmi:tier_4_aviation_complete_cell",
+		item: "cmi:tier_4_aviation_cell",
 		uiId: "cmi:cell_4",
 		texture: "cmi:textures/gui/cell/tier_4.png"
 	}

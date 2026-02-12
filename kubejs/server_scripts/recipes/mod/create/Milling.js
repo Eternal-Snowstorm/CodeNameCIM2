@@ -30,10 +30,6 @@ ServerEvents.recipes((event) => {
 		Item.of("mekanism:dust_obsidian").withChance(0.5)
 	], "minecraft:obsidian")
 
-	create.milling("cmi:lime_dust", [
-		"create:limestone"
-	])
-
 	// 焦煤粉
 	create.milling([
 		"immersiveengineering:dust_coke",

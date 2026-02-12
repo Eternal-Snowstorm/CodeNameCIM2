@@ -22,4 +22,5 @@ StartupEvents.registry("item", (event) => {
 
     addAlonePlateItem("dense_obsidian")
     addAlonePlateItem("stone")
+    addAlonePlateItem("rubber")
 })

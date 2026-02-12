@@ -5,9 +5,9 @@ StartupEvents.registry("item", (event) => {
 	 * @returns 
 	 */
 	function addItem(name, isSequencedAssembly) {
-		if (!isSequencedAssembly) {
-			return event.create(`${global.namespace}:incomplete_${name}`)
-		} else if (isSequencedAssembly === undefined) {
+		if (isSequencedAssembly === undefined) {
+			return event.create(`${global.namespace}:incomplete_${name}`, "create:sequenced_assembly")
+		} else if (isSequencedAssembly) {
 			return event.create(`${global.namespace}:incomplete_${name}`, "create:sequenced_assembly")
 		} else {
 			return event.create(`${global.namespace}:incomplete_${name}`)
@@ -20,10 +20,10 @@ StartupEvents.registry("item", (event) => {
 	 * @returns 
 	 */
 	function addIncompleteItem(name, isSequencedAssembly) {
-		if (!isSequencedAssembly) {
-			return event.create(`${global.namespace}:incomplete_${name}`)
+		if (isSequencedAssembly === undefined) {
+			return event.create(`${global.namespace}:incomplete_${name}`, "create:sequenced_assembly")
 				.texture(`${global.namespace}:item/material/incomplete/${name}`)
-		} else if (isSequencedAssembly === undefined) {
+		} else if (isSequencedAssembly) {
 			return event.create(`${global.namespace}:incomplete_${name}`, "create:sequenced_assembly")
 				.texture(`${global.namespace}:item/material/incomplete/${name}`)
 		} else {

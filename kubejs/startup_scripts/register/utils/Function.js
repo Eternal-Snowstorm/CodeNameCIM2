@@ -17,15 +17,11 @@ function attachItemHandlerCapability() {
 	return CapabilityBuilder.ITEM.blockEntity()
 		// 允许漏斗或管道提取物品
 		.extractItem((entity, slot, amount, simulate) => {
-			let { inventory } = entity
-
-			return inventory.extractItem(slot, amount, simulate)
+			return entity.inventory.extractItem(slot, amount, simulate)
 		})
 		// 允许漏斗或管道插入物品
 		.insertItem((entity, slot, stack, simulate) => {
-			let { inventory } = entity
-
-			return inventory.insertItem(slot, stack, simulate)
+			return entity.inventory.insertItem(slot, stack, simulate)
 		})
 		// 获取指定槽位的物品
 		.getStackInSlot((entity, slot) => {

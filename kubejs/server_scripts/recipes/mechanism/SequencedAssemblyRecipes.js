@@ -19,10 +19,10 @@ ServerEvents.recipes((event) => {
 		this.part
 
 		this.process1 = vintageimprovements.curving(this.transit, this.transit)
-			.itemAsHead("cmi:mechanism_curving_head")
+			.itemAsHead("cmi:mechanism_mold")
 		this.process2 = create.cutting(this.transit, this.transit)
 		this.process3 = null
-		this.process4 = vintageimprovements.vibrating(this.transit, this.transit)
+		this.process4 = cmi.grinding(this.transit, this.transit)
 	}
 	/**
 	 * 
@@ -81,8 +81,8 @@ ServerEvents.recipes((event) => {
 		this.process4 = create.deploying(this.transit, [this.transit, ingredient])
 		return this
 	}
-	BasicMechRecipe.prototype.grinding4 = function () {
-		this.process4 = cmi.grinding(this.transit, this.transit)
+	BasicMechRecipe.prototype.vibrating4 = function () {
+		this.process4 = vintageimprovements.vibrating(this.transit, this.transit)
 		return this
 	}
 	BasicMechRecipe.prototype.build = function () {
@@ -187,6 +187,7 @@ ServerEvents.recipes((event) => {
 		.deploying1("cmi:incomplete_bronze_cogwheel")
 		.deploying2("#vintageimprovements:small_springs/bronze")
 		.deploying3("#forge:nuggets/andesite_alloy")
+		.vibrating4()
 		.build()
 
 	new BasicMechRecipe(Mechanism.RAILWAY)
@@ -240,7 +241,6 @@ ServerEvents.recipes((event) => {
 		.part(Mechanism.PART.ENGIN)
 		.deploying2("cmi:charged_amethyst")
 		.deploying3("create:electron_tube")
-		.grinding4()
 		.build()
 
 	new BasicMechRecipe(Mechanism.SCULK)
@@ -248,7 +248,6 @@ ServerEvents.recipes((event) => {
 		.part(Mechanism.PART.MAGIC)
 		.deploying2("minecraft:echo_shard")
 		.deploying3("cmi:charged_amethyst")
-		.grinding4()
 		.build()
 
 	new BasicMechRecipe(Mechanism.COLOR)

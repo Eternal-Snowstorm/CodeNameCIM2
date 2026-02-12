@@ -13,11 +13,6 @@ StartupEvents.registry("item", (event) => {
 		return builder
 	}
 
-	// 橡胶板
-	addItem("rubber_plate")
-		.tag("forge:plates")
-		.tag("forge:plates/rubber")
-
 	// 橡胶树皮
 	addItem("rubber_tree_bark")
 })

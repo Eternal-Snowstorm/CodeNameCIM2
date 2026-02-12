@@ -24,10 +24,6 @@ StartupEvents.registry("item", (event) => {
 			.texture(`${global.namespace}:item/material/${name}`)
 	}
 
-	// 构件冲压头
-	addItem("mechanism_curving_head")
-		.tag("vintageimprovements:curving_heads")
-
 	// 黏血球
 	addItem("blood_slime_ball")
 		.texture(`${global.namespace}:item/material/blood_slime_ball`)
@@ -43,7 +39,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 精炼铁方坯
 	addItem("refined_iron_bloom")
-		.texture(`${global.namespace}:item/material/material/material/ingot/refined_iron_bloom`)
+		.texture(`${global.namespace}:item/material/material/ingot/refined_iron_bloom`)
 
 	// 淤泥提取物
 	addItem("sludge_extract")
@@ -139,24 +135,24 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/grass_string`)
 		.tag("forge:string")
 
-	// 活泼元素
-	addItem("reactive_element")
-		.texture(`${global.namespace}:item/material/cc/1`)
-	addItem("stable_element")
-		.texture(`${global.namespace}:item/material/cc/2`)
-	addItem("explosive_element")
-		.texture(`${global.namespace}:item/material/cc/3`)
+	// // 活泼元素
+	// addItem("reactive_element")
+	// 	.texture(`${global.namespace}:item/material/cc/1`)
+	// addItem("stable_element")
+	// 	.texture(`${global.namespace}:item/material/cc/2`)
+	// addItem("explosive_element")
+	// 	.texture(`${global.namespace}:item/material/cc/3`)
 
-	addItem("reactive_element_basement")
-		.texture(`${global.namespace}:item/material/cc/1_dust`)
-	addItem("stable_element_basement")
-		.texture(`${global.namespace}:item/material/cc/2_dust`)
-	addItem("explosive_element_basement")
-		.texture(`${global.namespace}:item/material/cc/3_dust`)
+	// addItem("reactive_element_basement")
+	// 	.texture(`${global.namespace}:item/material/cc/1_dust`)
+	// addItem("stable_element_basement")
+	// 	.texture(`${global.namespace}:item/material/cc/2_dust`)
+	// addItem("explosive_element_basement")
+	// 	.texture(`${global.namespace}:item/material/cc/3_dust`)
 
-	// Mg(OH)2
-	addItem("magnesium_hydroxide")
-		.texture(`${global.namespace}:item/material/sea/mgoh2`)
+	// // Mg(OH)2
+	// addItem("magnesium_hydroxide")
+	// 	.texture(`${global.namespace}:item/material/sea/mgoh2`)
 
 	// 溴化阻燃剂
 	addItem("brominated_flame_retardants")
@@ -178,9 +174,9 @@ StartupEvents.registry("item", (event) => {
 	addItem("nuke_cooler")
 		.texture(`${global.namespace}:item/material/nuke_cooler`)
 
-	// 精炼核废料
-	addItem("refined_nuke_waste")
-		.texture(`${global.namespace}:item/material/refined_nuke_waste`)
+	// // 精炼核废料
+	// addItem("refined_nuke_waste")
+	// 	.texture(`${global.namespace}:item/material/refined_nuke_waste`)
 
 	// 火箭零件
 	for (let i = 1; i <= 4; i++) {
@@ -208,12 +204,6 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${global.namespace}:item/material/parchment/torn_parchment_a`)
 	addItem("torn_parchment_b")
 		.texture(`${global.namespace}:item/material/parchment/torn_parchment_b`)
-
-	// 高纯石英
-	addItem("purified_quartz")
-		.texture(`${global.namespace}:item/material/purified_quartz_crystal`)
-	addItem("purified_quartz_dust")
-		.texture(`${global.namespace}:item/material/purified_quartz_dust`)
 
 	// 二极管
 	addItem("diode")

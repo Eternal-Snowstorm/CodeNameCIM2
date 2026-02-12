@@ -169,10 +169,6 @@ ServerEvents.tags("item", (event) => {
 		.add("tconstruct:tinker_station")
 		.add("tconstruct:modifier_worktable")
 
-	event.get("cmi:steelmaking_raw_materials")
-		.add("minecraft:calcite")
-		.add("create:limestone")
-
 	event.get("cmi:nether_crops")
 		.add("minecraft:nether_sprouts")
 		.add("minecraft:nether_wart")
@@ -365,6 +361,9 @@ ServerEvents.tags("item", (event) => {
 		.add("ae2:engineering_processor_press")
 		.add("ae2:logic_processor_press")
 		.add("advanced_ae:quantum_processor_press")
+		.add("immersiveengineering:mold_gear")
+		.add("immersiveengineering:mold_plate")
+		.add("immersiveengineering:mold_rod")
 
 	event.get("thermal:crafting/casts")
 		.add("thermalconstruct:bronze_cast_tool_handle")
@@ -387,10 +386,6 @@ ServerEvents.tags("item", (event) => {
 		.add("thermalconstruct:bronze_cast_coin")
 		.add("thermalconstruct:bronze_cast_wire")
 		.add("thermalconstruct:bronze_cast_pick_head")
-		.add()
-		.add()
-		.add()
-		.add()
 
 
 
