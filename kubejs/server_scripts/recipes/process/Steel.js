@@ -36,11 +36,6 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 熔融钢
-	tconstruct.melting(Fluid.of("tconstruct:molten_steel", 90))
-		.ingredient("cmi:refined_iron_bloom")
-		.temperature(1370)
-		.time(10 * 20)
-
 	vintageimprovements.pressurizing(Fluid.of("tconstruct:molten_steel", 90), [
 		"cmi:refined_iron_bloom"
 	]).processingTime(10 * 20).superheated()
