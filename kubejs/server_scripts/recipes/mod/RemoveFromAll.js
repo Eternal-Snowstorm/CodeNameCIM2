@@ -21,8 +21,9 @@ ServerEvents.recipes((event) => {
         "steampowered:alternator",
         "steampowered:pressurized_gas_container",
         "steampowered:pressurized_steam_container",
-		"#forge:ingots/steel",
-		"forge:storage_blocks/steel"
+        "#forge:ingots/steel",
+        "forge:storage_blocks/steel",
+        "quark:grate"
     ]
     removeOutput.forEach((output) => {
         event.remove({

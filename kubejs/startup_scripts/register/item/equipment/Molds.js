@@ -4,12 +4,19 @@ StartupEvents.registry("item", (event) => {
 
         builder.tag("vintageimprovements:curving_heads")
         builder.texture(`${global.namespace}:item/material/mold/${name}`)
+        builder.tag("vintageimprovements:curving_heads")
 
         return builder
     }
 
     addMold("plate")
-    addMold("rod")
     addMold("gear")
+    addMold("rod")
+    addMold("wire")
+    addMold("coin")
+    addMold("bullet")
     addMold("mechanism")
+    addMold("2x2_packing")
+    addMold("3x3_packing")
+    addMold("unpack")
 })
