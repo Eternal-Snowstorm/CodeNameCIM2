@@ -15,5 +15,4 @@ StartupEvents.registry("fluid", (event) => {
 		return builder
 	}
 
-	addColorMaterialFluid("source_sapphire", 0x0257F5)
 })

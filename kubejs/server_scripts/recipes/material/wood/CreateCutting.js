@@ -28,4 +28,19 @@ ServerEvents.recipes((event) => {
 			inputItem
 		])
 	})
+
+	create.cutting([
+		"thermal:stripped_rubberwood_log",
+		"cmi:rubber_tree_bark"
+	], [
+		"thermal:rubberwood_log"
+	])
+
+	farmersdelight.cutting([
+		"thermal:stripped_rubberwood_log",
+		"cmi:rubber_tree_bark"
+	], [
+		"thermal:rubberwood_log"
+	], "#farmersdelight:tools/knives"
+	)
 })

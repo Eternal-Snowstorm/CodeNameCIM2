@@ -1,4 +1,10 @@
 StartupEvents.registry("item", (event) => {
+	/**
+	 * 
+	 * @param {String} name 
+	 * @param {Color} color 
+	 * @returns 
+	 */
 	function addColorDustItem(name, color) {
 		let builder = event.create(`${global.namespace}:${name}_dust`)
 
@@ -9,7 +15,11 @@ StartupEvents.registry("item", (event) => {
 
 		return builder
 	}
-
+	/**
+	 * 
+	 * @param {String} name 
+	 * @returns 
+	 */
 	function addAloneDustItem(name) {
 		let builder = event.create(`${global.namespace}:${name}_dust`)
 
@@ -19,12 +29,32 @@ StartupEvents.registry("item", (event) => {
 
 		return builder
 	}
+	/**
+	 * 
+	 * @param {String} name 
+	 * @returns 
+	 */
+	function addNonDustItem(name) {
+		let builder = event.create(`${global.namespace}:${name}`)
+
+		builder.texture(`${global.namespace}:item/material/material/dust/${name}`)
+
+		return builder
+	}
 
 	addColorDustItem("end_stone", 0xF6FABD)
 	addColorDustItem("rubber", 0xECEBD6)
+
 	addAloneDustItem("andesite")
 	addAloneDustItem("calcite")
 	addAloneDustItem("lime")
 	addAloneDustItem("oil_shale")
 	addAloneDustItem("void")
+
+	// 三硝基甲苯
+	addNonDustItem("trinitrotoluene")
+	// 硝化纤维
+	addNonDustItem("nitrocellulose")
+	// 生石灰
+	addNonDustItem("furnaced_lime")
 })

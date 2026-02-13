@@ -1,0 +1,76 @@
+StartupEvents.registry("fluid", (event) => {
+    /**
+      * 
+      * @param {string} name 
+      * @returns 
+      */
+    function addAloneFluid(name) {
+        let builder = event.create(`${global.namespace}:${name}`)
+
+        builder.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
+        builder.stillTexture(`${global.namespace}:fluid/${name}/still`)
+        builder.renderType("translucent")
+        builder.bucketItem.modelJson(setFluidBucketModel(name))
+
+        return builder
+    }
+
+    /**
+     * 
+     * @param {string} name 
+     * @param {MaterialColor} color 
+     * @returns 
+     */
+    function addColorFluid(name, color) {
+        let builder = event.create(`${global.namespace}:${name}`)
+
+        builder.color(color)
+        builder.bucketColor(color)
+        builder.flowingTexture(`${global.namespace}:fluid/organic/flow`)
+        builder.stillTexture(`${global.namespace}:fluid/organic/still`)
+        builder.renderType("translucent")
+        builder.translucent()
+        builder.bucketItem.modelJson(setFluidBucketModel(name))
+
+        return builder
+    }
+
+    // 晶体催生剂
+    addColorFluid("crystal_catalyt", 0x90EE90)
+
+    //盐酸
+    addAloneFluid("hydrochloric_acid")
+
+    // 海水
+    addAloneFluid("sea_water")
+
+    // 浓缩海水
+    addAloneFluid("concentrated_sea_water")
+
+    // 含锂电解液
+    addColorFluid("lithium_containing_electrolyte", 0x555100)
+
+    // 硝酸
+    addColorFluid("nitric_acid", 0xD6B000)
+
+    // 卤水
+    addColorFluid("brine", 0xA3A189)
+
+    // 碱性卤水
+    addColorFluid("alkaline_brine", 0x8FA8A4)
+
+    // 废卤水
+    addColorFluid("waste_brine", 0x3C3C3C)
+
+    // 铂溶液
+    addColorFluid("platinum_solution", 0xE1FFFF)
+
+    // 钛溶液
+    addColorFluid("titanium_solution", 0xE2B1E3)
+
+    // 钴溶液
+    addColorFluid("cobalt_solution", 0x2375DA)
+
+    // 电镀液
+    addColorFluid("plating_solution", 0x55AAAA)
+})

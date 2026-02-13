@@ -1,4 +1,10 @@
 StartupEvents.registry("item", (event) => {
+    /**
+     * 
+     * @param {String} name 
+     * @param {Color} color 
+     * @returns 
+     */
     function addColorPlateItem(name, color) {
         let builder = event.create(`${global.namespace}:${name}_plate`)
 
@@ -9,7 +15,26 @@ StartupEvents.registry("item", (event) => {
 
         return builder
     }
+    /**
+     * 
+     * @param {String} name 
+     * @param {String} type 
+     * @returns 
+     */
+    function addNamedPlateItem(name, type) {
+        let builder = event.create(`${global.namespace}:${name}`)
 
+        builder.texture(`${global.namespace}:item/material/material/plate/${type}`)
+        builder.tag("forge:plates")
+        builder.tag(`forge:plates/${type}`)
+
+        return builder
+    }
+    /**
+     * 
+     * @param {String} name 
+     * @returns 
+     */
     function addAlonePlateItem(name) {
         let builder = event.create(`${global.namespace}:${name}_plate`)
 
@@ -19,8 +44,26 @@ StartupEvents.registry("item", (event) => {
 
         return builder
     }
+    /**
+     * 
+     * @param {String} name 
+     * @returns 
+     */
+    function addNonPlateItem(name) {
+        let builder = event.create(`${global.namespace}:${name}`)
 
-    addAlonePlateItem("dense_obsidian")
+        builder.texture(`${global.namespace}:item/material/material/plate/${name}`)
+
+        return builder
+    }
+
     addAlonePlateItem("stone")
     addAlonePlateItem("rubber")
+    addAlonePlateItem("silicon_carbide")
+    addAlonePlateItem("silicon_rubber")
+
+    addNamedPlateItem("dense_sturdy_sheet", "dense_obsidian")
+
+    // 线刻硅板
+    addNonPlateItem("inscribed_silicon")
 })

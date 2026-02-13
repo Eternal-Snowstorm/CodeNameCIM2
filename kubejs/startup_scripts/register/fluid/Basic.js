@@ -23,13 +23,32 @@ StartupEvents.registry("fluid", (event) => {
 	 * @param {Color_} color 着色色号
 	 * @returns 
 	 */
+	function addThickColorFluid(name, color) {
+		let builder = event.create(`${global.namespace}:${name}`)
+
+		builder.thinTexture(color)
+		builder.bucketColor(color)
+		builder.flowingTexture(`${global.namespace}:fluid/metal/flow`)
+		builder.stillTexture(`${global.namespace}:fluid/metal/still`)
+		builder.renderType("translucent")
+		builder.bucketItem.modelJson(setFluidBucketModel(name))
+
+		return builder
+	}
+
+	/**
+	 * 
+	 * @param {string} name 注册id
+	 * @param {Color_} color 着色色号
+	 * @returns 
+	 */
 	function addColorFluid(name, color) {
 		let builder = event.create(`${global.namespace}:${name}`)
 
 		builder.thinTexture(color)
 		builder.bucketColor(color)
-		builder.flowingTexture(`${global.namespace}:fluid/solution/flow`)
-		builder.stillTexture(`${global.namespace}:fluid/solution/still`)
+		builder.flowingTexture(`${global.namespace}:fluid/organic/flow`)
+		builder.stillTexture(`${global.namespace}:fluid/organic/still`)
 		builder.renderType("translucent")
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
@@ -42,6 +61,9 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("radon", 0x00FF00)
 	addColorFluid("mercury", 0xA9C0FF)
 
+	addThickColorFluid("silicon_rubber", 0xBBBBBB)
+
+	addAloneFluid("bitumen")
 	addAloneFluid("oil_shale_steam")
 		.noBlock()
 		.gaseous()
@@ -50,4 +72,7 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("cured_rubber")
 		.noBlock()
 	addAloneFluid("bromine")
+	addAloneFluid("delta_unstable_solution")
+	addAloneFluid("turbid_waste_liquid")
+
 })

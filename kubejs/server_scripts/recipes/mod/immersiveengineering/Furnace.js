@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
         .time(100)
 
     // 生石灰
-    immersiveengineering.blast_furnace("4x cmi:lime")
+    immersiveengineering.blast_furnace("4x cmi:furnaced_lime")
         .input("create:limestone")
         .time(30)
 })
