@@ -384,7 +384,8 @@ ServerEvents.tags("item", (event) => {
 		.add("thermalconstruct:bronze_cast_wire")
 		.add("thermalconstruct:bronze_cast_pick_head")
 
-
+	event.get("forge:glass/prism")
+		.add("cmi:polished_quartz_prism")
 
 	event.get("tconstruct:casts")
 		.add("thermal:chiller_ingot_cast")

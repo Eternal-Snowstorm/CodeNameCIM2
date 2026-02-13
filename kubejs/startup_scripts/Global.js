@@ -132,7 +132,7 @@ global.mechanismGroup = [
 	"nether",
 	"thermal",
 	"reinforced",
-	"resonant",
+	// "resonant",
 	"railway",
 	"ender",
 	"light_engineering",

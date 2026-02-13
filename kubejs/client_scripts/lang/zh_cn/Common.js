@@ -1,4 +1,59 @@
 ClientEvents.lang("zh_cn", (event) => {
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
+	function addGasLang(key, value) {
+		event.add(`gas.${global.namespace}.${key}`, value)
+	}
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} title 
+	 * @param {String} author 
+	 */
+	function addPaintingLang(key, title, author) {
+		event.add(`painting.${global.namespace}.${key}.title`, title)
+		event.add(`painting.${global.namespace}.${key}.author`, author)
+	}
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} title 
+	 * @param {String} desc 
+	 */
+	function addAdvancementLang(key, title, desc) {
+		event.add(`advancements.${global.namespace}.${key}`, title)
+		event.add(`advancements.${global.namespace}.${key}.desc`, desc)
+	}
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 * @param {string} author
+	 */
+	function addMusicDiscLang(key, value, author) {
+		event.add(`item.${global.namespace}.${key}`, "音乐唱片")
+		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
+	}
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
+	function addPlanetLang(key, value) {
+		event.add(`planet.${global.namespace}.${key}`, `${value}`)
+		event.add(`planet.${global.namespace}_orbit.${key}`, `${value}轨道`)
+	}
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
+	function addStructureLang(key, value) {
+		event.add(`structure.${global.namespace}.${key}`, value)
+	}
 
 	addGasLang("sulfide_gas_mixture", "硫化物混合气")
 	addGasLang("nitroglycerine", "硝化甘油")
@@ -34,20 +89,6 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addMusicDiscLang("mechanism", "Mechanism", "DontkillBelalus")
 
-	function addGasLang(key, value) {
-		event.add(`gas.${global.namespace}.${key}`, value)
-	}
-
-
-	function addHeatedLang(key, value) {
-		event.add(`create.recipe.heat_requirement.${key}`, value)
-	}
-
-	function addPaintingLang(key, title, author) {
-		event.add(`painting.${global.namespace}.${key}.title`, title)
-		event.add(`painting.${global.namespace}.${key}.author`, author)
-	}
-
 	function addSolutionLang(key, value, tooltip) {
 		event.add(`item.${global.namespace}.${key}`, value)
 		event.add(`item.${global.namespace}.${key}_solution_bucket`, `${value}溶液桶`)
@@ -57,23 +98,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`fluid.${global.namespace}.${key}_solution`, `${value}溶液`)
 	}
 
-	function addAdvancementLang(key, title, desc) {
-		event.add(`advancements.${global.namespace}.${key}`, title)
-		event.add(`advancements.${global.namespace}.${key}.desc`, desc)
-	}
-
-	function addMusicDiscLang(key, value, author) {
-		event.add(`item.${global.namespace}.${key}`, "音乐唱片")
-		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
-	}
-
-	function addPlanetLang(key, value) {
-		event.add(`planet.${global.namespace}.${key}`, `${value}`)
-		event.add(`planet.${global.namespace}_orbit.${key}`, `${value}轨道`)
-	}
-
-	function addStructureLang(key, value) {
-		event.add(`structure.${global.namespace}.${key}`, value)
+	function addHeatedLang(key, value) {
+		event.add(`create.recipe.heat_requirement.${key}`, value)
 	}
 
 	// function addMBDMachineLang(key, value) {
