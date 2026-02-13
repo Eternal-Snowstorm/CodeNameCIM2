@@ -5,6 +5,7 @@ StartupEvents.registry("item", (event) => {
         builder.tag("vintageimprovements:curving_heads")
         builder.texture(`${global.namespace}:item/material/mold/${name}`)
         builder.tag("vintageimprovements:curving_heads")
+        builder.tag("cmi:molds")
 
         return builder
     }

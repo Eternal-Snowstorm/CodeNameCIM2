@@ -15,7 +15,12 @@ ServerEvents.recipes((event) => {
         "tconstruct:compat/create/andesite_alloy_iron",
         "tconstruct:compat/create/andesite_alloy_zinc",
         "tconstruct:tools/materials/melting/plated_slimewood",
-        "tconstruct:smeltery/seared/grout_multiple"
+        "tconstruct:smeltery/seared/grout_multiple",
+        "thermal:press_gear_die",
+        "thermal:press_coin_die",
+        "thermal:press_packing_2x2_die",
+        "thermal:press_packing_3x3_die",
+        "thermal:press_unpacking_die"
     ]
     removeRecipeIds.forEach((id) => {
         event.remove({

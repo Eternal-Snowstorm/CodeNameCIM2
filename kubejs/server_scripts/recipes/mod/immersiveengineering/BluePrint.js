@@ -67,4 +67,13 @@ ServerEvents.recipes((event) => {
 		"minecraft:glass_bottle"
 	]).blueprint("specialBullet")
 		.id("immersiveengineering:blueprint/bullet_potion")
+
+	Ingredient.of("#cmi:molds").getItemIds().forEach((mold) => {
+		immersiveengineering.blueprint(mold, [
+			"3x #forge:plates/industrial_iron",
+			"#immersiveengineering:tools/wirecutters"
+		]).blueprint("molds")
+			.id(`cmi:blueprint/${mold}`)
+	})
+
 })
