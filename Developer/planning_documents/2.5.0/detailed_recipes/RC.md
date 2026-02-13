@@ -49,7 +49,7 @@ Y 箱子
 # 安山
 
 构件(Mechanism构件): 安山
-材料(Block块/Ingot锭/Nugget粒/Sheet板/Casing机壳): 安山合金
+材料(Block块/Ingot锭/Nugget粒/Plate板/Casing机壳): 安山合金
 
 **动力辊压机**
 M
@@ -85,7 +85,7 @@ XIX
 X 锌板
 
 **工作盆盖板**
-SMS
+PIP
 X X
 
 X 橡胶木板
