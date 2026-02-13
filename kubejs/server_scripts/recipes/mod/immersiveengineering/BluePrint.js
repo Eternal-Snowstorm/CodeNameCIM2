@@ -73,7 +73,7 @@ ServerEvents.recipes((event) => {
 			"3x #forge:plates/industrial_iron",
 			"#immersiveengineering:tools/wirecutters"
 		]).blueprint("molds")
-			.id(`cmi:blueprint/${mold}`)
+			.id(`cmi:blueprint/${mold.replace("cmi:", "")}`)
 	})
 
 })

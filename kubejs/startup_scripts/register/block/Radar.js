@@ -65,25 +65,24 @@ StartupEvents.registry("block", (event) => {
     addConcreteBlock("gray")
     addConcreteBlock("white")
 
-    for (let i = 1; i <= 4; i++) {
-        // 雷达
-        addBlock(`radar_${i}`)
-            .soundType(SoundType.NETHERITE_BLOCK)
-            .waterlogged()
-            .hardness(-1)
-            .resistance(-1)
-            .model(`${global.namespace}:block/radar`)
-            .box(6, 0, 6, 10, 16, 10, true)
+    // 雷达
+    addBlock(`radar`)
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+        .model(`${global.namespace}:block/radar`)
+        .box(6, 0, 6, 10, 16, 10, true)
 
-        // 损坏雷达
-        addBlock(`broken_radar_${i}`)
-            .soundType(SoundType.NETHERITE_BLOCK)
-            .waterlogged()
-            .hardness(-1)
-            .resistance(-1)
-            .model(`${global.namespace}:block/broken_radar_part/radar`)
-            .box(6, 0, 6, 10, 16, 10, true)
-    }
+    // 损坏雷达
+    addBlock(`broken_radar`)
+        .soundType(SoundType.NETHERITE_BLOCK)
+        .waterlogged()
+        .hardness(-1)
+        .resistance(-1)
+        .model(`${global.namespace}:block/broken_radar_part/radar`)
+        .box(6, 0, 6, 10, 16, 10, true)
+
 
     // 变压器
     addBlock("transformer")
