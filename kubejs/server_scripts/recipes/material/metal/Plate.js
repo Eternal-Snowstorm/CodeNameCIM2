@@ -10,11 +10,12 @@ ServerEvents.recipes((event) => {
 				INGOT
 			])
 			thermal.press(PLATE, [
-				INGOT
+				INGOT,
+				"cmi:plate_mold"
 			])
 			immersiveengineering.metal_press(PLATE)
 				.input(INGOT)
-				.mold("immersiveengineering:mold_plate")
+				.mold("cmi:plate_mold")
 		} else {
 			console.warn(`No plate found for ${metal}!`)
 		}

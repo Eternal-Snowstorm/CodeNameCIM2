@@ -8,12 +8,12 @@ ServerEvents.recipes((event) => {
 		if (IngrUtils.isNotNull(GEAR)) {
 			thermal.press(GEAR, [
 				`4x ${INGOT}`,
-				"thermal:press_gear_die"
+				"cmi:gear_mold"
 			])
 
 			immersiveengineering.metal_press(GEAR)
 				.input(`4x ${INGOT}`)
-				.mold("immersiveengineering:mold_gear")
+				.mold("cmi:gear_mold")
 		} else {
 			console.warn(`No gear found for ${metal}!`)
 		}

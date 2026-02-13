@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { thermal } = event.recipes
+	let { thermal, immersiveengineering } = event.recipes
 
 	global.metalGroup.forEach((metal) => {
 		const INGOT = `#forge:ingots/${metal}`
@@ -9,12 +9,17 @@ ServerEvents.recipes((event) => {
 		if (IngrUtils.isNotNull(COIN)) {
 			thermal.press(`3x ${COIN}`, [
 				INGOT,
-				"thermal:press_coin_die"
+				"cmi:coin_mold"
 			])
+
+			immersiveengineering.metal_press(`3x ${COIN}`)
+				.input(`${INGOT}`)
+				.mold("cmi:coin_mold")
+
 			if (IngrUtils.isNotNull(NUGGET)) {
 				thermal.press(COIN, [
 					`3x ${NUGGET}`,
-					"thermal:press_coin_die"
+					"cmi:coin_mold"
 				]).energy(800)
 
 			} else {

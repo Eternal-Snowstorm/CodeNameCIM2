@@ -12,12 +12,12 @@ ServerEvents.recipes((event) => {
 
 			thermal.press(`2x ${ROD}`, [
 				INGOT,
-				"thermal_extra:press_rod_die"
+				"cmi:rod_mold"
 			])
 
 			immersiveengineering.metal_press(`2x ${ROD}`)
 				.input(INGOT)
-				.mold("immersiveengineering:mold_rod")
+				.mold("cmi:rod_mold")
 		} else {
 			console.warn(`No rod found for ${metal}!`)
 		}
