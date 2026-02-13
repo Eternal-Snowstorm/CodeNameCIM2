@@ -28,7 +28,7 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 		`#${global.namespace}:raw_metals`,
 		`#${global.namespace}:ore_nodes`,
 		`#${global.namespace}:dev_doll`,
-		`#${global.namespace}:machine_block`,
+		`#${global.namespace}:machine_block`
 	]
 	removeItemFromCreativeTab.forEach((item) => {
 		event.remove(item)

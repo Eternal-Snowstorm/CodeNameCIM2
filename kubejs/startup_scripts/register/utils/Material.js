@@ -180,6 +180,7 @@ StartupEvents.registry("item", (event) => {
 					.color(0, material.color1)
 					.tag(`mekanism:${type}s`)
 					.tag(`mekanism:${type}s/${material.name}`)
+					.tag(`${global.namespace}:metals`)
 				return
 			} else {
 				item = event.create(`${global.namespace}:${material.name}_${type}`)
