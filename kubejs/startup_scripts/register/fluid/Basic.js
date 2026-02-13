@@ -36,7 +36,6 @@ StartupEvents.registry("fluid", (event) => {
 		return builder
 	}
 
-	addColorFluid("eletriced_source_emeraid", 0x117458)
 	addColorFluid("trinitrotoluene_solution", 0xFFEFA8)
 	addColorFluid("geyser_jet", 0x3D57FF)
 	addColorFluid("xenon", 0x1E90FF)
@@ -51,5 +50,4 @@ StartupEvents.registry("fluid", (event) => {
 	addAloneFluid("cured_rubber")
 		.noBlock()
 	addAloneFluid("bromine")
-	addAloneFluid("sodium_hydroxide")
 })
