@@ -47,8 +47,8 @@ StartupEvents.registry("fluid", (event) => {
 
 		builder.thinTexture(color)
 		builder.bucketColor(color)
-		builder.flowingTexture(`${global.namespace}:fluid/organic/flow`)
-		builder.stillTexture(`${global.namespace}:fluid/organic/still`)
+		builder.flowingTexture(`${global.namespace}:fluid/chemical/flow`)
+		builder.stillTexture(`${global.namespace}:fluid/chemical/still`)
 		builder.renderType("translucent")
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
