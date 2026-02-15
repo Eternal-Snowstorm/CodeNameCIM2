@@ -42,7 +42,7 @@ ClientEvents.lang("zh_cn", (event) => {
     addFluidLang("milk", "牛奶")
     addFluidLang("light_olefin", "轻烯烃")
     addFluidLang("light_silicone_ether", "轻硅醚")
-    addFluidLang("polysilicone", "聚硅醚")
+    addFluidLang("polysilicone_ether", "聚硅醚")
     addFluidLang("rice_vinegar", "米醋")
     addFluidLang("vinegar_acid", "醋酸")
     addFluidLang("cracked_gasoline", "裂化汽油")
