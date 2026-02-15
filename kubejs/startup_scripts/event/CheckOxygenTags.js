@@ -3,18 +3,27 @@ let $AdAstraEvents$EntityOxygenEvent =
 
 StartupEvents.init((event) => {
 	$AdAstraEvents$EntityOxygenEvent.register((entity, hasOxygen) => {
-		let getArmorItem = {
-			head: entity.getHeadArmorItem(),
-			chest: entity.getChestArmorItem(),
-			legs: entity.getLegsArmorItem(),
-			feet: entity.getFeetArmorItem()
+		if (!(entity instanceof Player)) {
+			return
+		}
+
+		/**
+		 * @type {Player}
+		 */
+		let player = entity
+
+		let armorItem = {
+			head: player.getHeadArmorItem(),
+			chest: player.getChestArmorItem(),
+			legs: player.getLegsArmorItem(),
+			feet: player.getFeetArmorItem()
 		}
 
 		let getMekasuitArmor =
-			getArmorItem.head === "mekanism:mekasuit_helmet" &&
-			getArmorItem.chest === "mekanism:mekasuit_bodyarmor" &&
-			getArmorItem.legs === "mekanism:mekasuit_pants" &&
-			getArmorItem.feet === "mekanism:mekasuit_boots"
+			armorItem.head === "mekanism:mekasuit_helmet" &&
+			armorItem.chest === "mekanism:mekasuit_bodyarmor" &&
+			armorItem.legs === "mekanism:mekasuit_pants" &&
+			armorItem.feet === "mekanism:mekasuit_boots"
 
 		if (!hasOxygen) {
 			return getMekasuitArmor
