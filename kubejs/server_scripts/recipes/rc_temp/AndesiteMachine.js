@@ -144,10 +144,8 @@ ServerEvents.recipes((event) => {
         Y: "#forge:plates/andesite_alloy",
     }).id("ratatouille:thresher")
 
-
-    // !!!
     kubejs.shaped("2x create:mechanical_roller", [
-        "CX",
+        "CX ",
         "XMX",
         " X "
     ], {

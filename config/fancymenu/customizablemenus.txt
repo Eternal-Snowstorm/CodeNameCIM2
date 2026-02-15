@@ -87,3 +87,6 @@ net.minecraft.client.gui.screens.GenericDirtMessageScreen {
 net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 }
 
+net.minecraft.client.gui.screens.PauseScreen {
+}
+
