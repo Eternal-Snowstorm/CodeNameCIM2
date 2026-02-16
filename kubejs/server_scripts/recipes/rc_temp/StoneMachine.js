@@ -4,6 +4,7 @@ ServerEvents.recipes((event) => {
     const BRICK = "tconstruct:seared_brick"
     const PRISM = "cmi:polished_quartz_prism"
 
+    // 焦黑融化器
     kubejs.shaped("tconstruct:seared_melter", [
         "BXB",
         "BMB"
@@ -13,6 +14,7 @@ ServerEvents.recipes((event) => {
         X: "#tconstruct:gauge"
     }).id("tconstruct:smeltery/seared/melter")
 
+    // 焦黑加热器
     kubejs.shaped("tconstruct:seared_heater", [
         "BBB",
         "BMB",
@@ -22,6 +24,7 @@ ServerEvents.recipes((event) => {
         B: BRICK
     }).id("tconstruct:smeltery/seared/heater")
 
+    // 焦黑燃料储罐
     kubejs.shaped("tconstruct:seared_fuel_tank", [
         "BBB",
         "BPB",
@@ -31,6 +34,7 @@ ServerEvents.recipes((event) => {
         B: BRICK
     }).id("tconstruct:smeltery/seared/fuel_tank")
 
+    // 焦黑材料储罐
     kubejs.shaped("tconstruct:seared_ingot_tank", [
         "BPB",
         "BPB",
@@ -40,6 +44,7 @@ ServerEvents.recipes((event) => {
         B: BRICK
     }).id("tconstruct:smeltery/seared/ingot_tank")
 
+    // 焦黑燃料量器
     kubejs.shaped("tconstruct:seared_fuel_gauge", [
         "BPB",
         "PPP",
@@ -49,6 +54,7 @@ ServerEvents.recipes((event) => {
         B: BRICK
     }).id("tconstruct:smeltery/seared/fuel_gauge")
 
+    // 焦黑材料量器
     kubejs.shaped("tconstruct:seared_ingot_gauge", [
         "PBP",
         "BPB",
@@ -58,6 +64,7 @@ ServerEvents.recipes((event) => {
         B: BRICK
     }).id("tconstruct:smeltery/seared/ingot_gauge")
 
+    // 焦黑玻璃
     kubejs.shaped("tconstruct:seared_glass", [
         "PBP",
         "BPB",
@@ -67,6 +74,7 @@ ServerEvents.recipes((event) => {
         B: BRICK
     }).id("tconstruct:smeltery/seared/seared_glass")
 
+    // 铸模箱
     kubejs.shaped("tconstruct:cast_chest", [
         "BXB",
         "BYB",
@@ -78,5 +86,4 @@ ServerEvents.recipes((event) => {
         Y: "#forge:chests"
     }).id("tconstruct:tables/cast_chest")
 
-    
 })

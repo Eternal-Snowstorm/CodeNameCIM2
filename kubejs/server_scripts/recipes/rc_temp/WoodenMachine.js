@@ -2,6 +2,7 @@ ServerEvents.recipes((event) => {
     let { kubejs } = event.recipes
     const MECH = Mechanism.WOODEN.COM
 
+    // 漏斗
     kubejs.shaped("minecraft:hopper", [
         "X X",
         "XMX",
@@ -11,6 +12,7 @@ ServerEvents.recipes((event) => {
         X: ["#forge:plates/tin","#forge:plates/iron"],
     }).id("minecraft:hopper")
 
+    // 溜槽
     kubejs.shaped("2x create:chute", [
         "X",
         "Y"
@@ -19,6 +21,8 @@ ServerEvents.recipes((event) => {
         Y: "#forge:plates/industrial_iron",
     }).id("create:crafting/kinetics/chute")
 
+    // 背包
+    // !!!
     kubejs.shaped("sophisticatedbackpacks:backpack", [
         "XYX",
         "XMX",
@@ -28,6 +32,7 @@ ServerEvents.recipes((event) => {
         Y: ["#forge:leather","tconstruct:silky_cloth"]
     }).id("sophisticatedbackpacks:backpack")
 
+    // 空白升级
     // !!!
     kubejs.shaped("sophisticatedbackpacks:upgrade_base", [
         "XYX",
@@ -38,12 +43,14 @@ ServerEvents.recipes((event) => {
         Y: ["#forge:leather","tconstruct:silky_cloth"]
     }).id("sophisticatedbackpacks:upgrade_base")
 
+    // 移动式存储接口
     kubejs.shapeless("create:portable_storage_interface",[
         "create:andesite_casing",
         MECH,
         "#forge:plates/industrial_iron"
-    ]).id("minecraft:kjs/create_portable_storage_interface")
+    ]).id("create:crafting/kinetics/portable_storage_interface")
 
+    // ME物品原件外壳
     // !!!
     kubejs.shaped("2x ae2:item_cell_housing", [
         "XYX",

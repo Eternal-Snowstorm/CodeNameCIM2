@@ -3,6 +3,7 @@ ServerEvents.recipes((event) => {
     const MECH = Mechanism.ANDESITE.COM
     const CASHING = "create:andesite_casing"
 
+    // 动力辊压机
     kubejs.shaped("create:mechanical_press", [
         "M",
         "C",
@@ -13,6 +14,7 @@ ServerEvents.recipes((event) => {
         X: ["#forge:storage_blocks/iron", "#forge:storage_blocks/zinc"]
     }).id("create:crafting/kinetics/mechanical_press")
 
+    // 动力搅拌器
     kubejs.shaped("create:mechanical_mixer", [
         "M",
         "C",
@@ -23,6 +25,7 @@ ServerEvents.recipes((event) => {
         X: "create:whisk",
     }).id("create:crafting/kinetics/mechanical_mixer")
 
+    // 鼓风机
     kubejs.shaped("create:encased_fan", [
         "M",
         "C",
@@ -33,6 +36,7 @@ ServerEvents.recipes((event) => {
         X: "create:propeller",
     }).id("create:crafting/kinetics/encased_fan")
 
+    // 扇叶
     kubejs.shaped("create:propeller", [
         " A ",
         "ABA",
@@ -42,13 +46,17 @@ ServerEvents.recipes((event) => {
         B: "#forge:ingots/andesite_alloy"
     }).id("create:crafting/kinetics/propeller")
 
+    // 烤箱用鼓风机
     kubejs.shapeless("ratatouille:oven_fan",
         "create:encased_fan"
     ).id("ratatouille:oven_fan")
 
+    // 鼓风机 ←- 烤箱用鼓风机
     kubejs.shapeless("create:encased_fan",
         "ratatouille:oven_fan"
     )
+
+    // 工作盆盖板
     kubejs.shaped("createdieselgenerators:basin_lid", [
         "ABA",
         "C C"
@@ -58,6 +66,7 @@ ServerEvents.recipes((event) => {
         C: "thermal:rubberwood_planks"
     })
 
+    // 动力轴承
     kubejs.shaped("create:mechanical_bearing", [
         "X",
         "C",
@@ -68,6 +77,7 @@ ServerEvents.recipes((event) => {
         X: "#minecraft:planks",
     }).id("create:crafting/kinetics/mechanical_bearing")
 
+    // 风车轴承
     kubejs.shaped("create:windmill_bearing", [
         "X",
         "C",
@@ -78,6 +88,7 @@ ServerEvents.recipes((event) => {
         X: "#forge:plates/stone",
     }).id("create:crafting/kinetics/windmill_bearing")
 
+    // 动力活塞
     kubejs.shaped("create:mechanical_piston", [
         "M",
         "C",
@@ -88,6 +99,7 @@ ServerEvents.recipes((event) => {
         X: "create:piston_extension_pole",
     }).id("create:crafting/kinetics/mechanical_piston")
 
+    // 起重机轴承
     kubejs.shaped("create:gantry_carriage", [
         "M",
         "C",
@@ -98,11 +110,13 @@ ServerEvents.recipes((event) => {
         X: "#create:cogwheel",
     }).id("create:crafting/kinetics/gantry_carriage")
 
+    // 弹射置物台
     kubejs.shapeless("create:weighted_ejector",
         ["create:depot",
             MECH
         ])
 
+    // 石磨
     kubejs.shaped("create:millstone", [
         "M",
         "C",
@@ -113,6 +127,7 @@ ServerEvents.recipes((event) => {
         X: "#forge:stone",
     }).id("create:crafting/kinetics/millstone")
 
+    // 动力收割机
     kubejs.shaped("create:mechanical_harvester", [
         "XXX",
         " C ",
@@ -123,6 +138,7 @@ ServerEvents.recipes((event) => {
         X: "#forge:rods/andesite",
     }).id("create:crafting/kinetics/mechanical_harvester")
 
+    // 动力犁
     kubejs.shaped("create:mechanical_plough", [
         "XXX",
         " C ",
@@ -133,6 +149,7 @@ ServerEvents.recipes((event) => {
         X: "#forge:plates/andesite_alloy",
     }).id("create:crafting/kinetics/mechanical_plough")
 
+    // 脱粒机
     kubejs.shaped("ratatouille:thresher", [
         " Y ",
         "XMX",
@@ -144,6 +161,7 @@ ServerEvents.recipes((event) => {
         Y: "#forge:plates/andesite_alloy",
     }).id("ratatouille:thresher")
 
+    // 动力压路机
     kubejs.shaped("2x create:mechanical_roller", [
         "CX ",
         "XMX",
@@ -154,6 +172,7 @@ ServerEvents.recipes((event) => {
         X: "#forge:plates/andesite_alloy",
     }).id("create:crafting/kinetics/mechanical_roller")
 
+    // 动力脱模机
     kubejs.shaped("ratatouille:mechanical_demolder", [
         "M",
         "C",
@@ -164,6 +183,7 @@ ServerEvents.recipes((event) => {
         X: "#forge:slimeballs",
     }).id("ratatouille:mechanical_demolder")
 
+    // 振动台
     kubejs.shaped("vintageimprovements:vibrating_table", [
         " Y ",
         "XMX",
@@ -175,6 +195,7 @@ ServerEvents.recipes((event) => {
         Y: "#minecraft:planks",
     }).id("vintageimprovements:craft/vibrating_table")
 
+    // 轧机
     kubejs.shaped("createaddition:rolling_mill", [
         " M ",
         "XYX",
@@ -186,6 +207,7 @@ ServerEvents.recipes((event) => {
         Y: "#create:shaft",
     }).id("createaddition:crafting/rolling_mill")
 
+    // 卷簧机
     kubejs.shaped("vintageimprovements:spring_coiling_machine", [
         "X",
         "C",
@@ -196,6 +218,7 @@ ServerEvents.recipes((event) => {
         X: "vintageimprovements:spring_coiling_machine_wheel",
     }).id("vintageimprovements:craft/spring_coiling_machine")
 
+    // 卷簧轮
     kubejs.shaped("vintageimprovements:spring_coiling_machine_wheel", [
         " A ",
         "ABA",
@@ -205,6 +228,7 @@ ServerEvents.recipes((event) => {
         B: "#forge:ingots/andesite_alloy"
     }).id("vintageimprovements:craft/spring_coiling_machine_wheel")
 
+    // 冲压机
     kubejs.shaped("vintageimprovements:curving_press", [
         "M",
         "C",

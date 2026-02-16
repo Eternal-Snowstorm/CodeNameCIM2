@@ -120,3 +120,4 @@ config/ftbquests/qusets/chapters/control*
 !config/railways-client.toml
 !config/tconstruct-common.toml
 config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-mod-sort-order.ini
