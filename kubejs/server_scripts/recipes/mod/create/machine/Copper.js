@@ -15,7 +15,8 @@ ServerEvents.recipes((event) => {
 	}).id("ae2:network/cells/fluid_cell_housing")
 
 	// 移动式流体接口
-	kubejs.shapeless("create:portable_fluid_interface", [CASING,
+	kubejs.shapeless("create:portable_fluid_interface", [
+		CASING,
 		MECH,
 		"#forge:plates/industrial_iron"
 	]).id("create:crafting/kinetics/portable_fluid_interface")

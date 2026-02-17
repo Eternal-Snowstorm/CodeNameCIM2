@@ -47,14 +47,14 @@ ServerEvents.recipes((event) => {
 	}).id("create:crafting/kinetics/propeller")
 
 	// 烤箱用鼓风机
-	kubejs.shapeless("ratatouille:oven_fan",
+	kubejs.shapeless("ratatouille:oven_fan",[
 		"create:encased_fan"
-	).id("ratatouille:oven_fan")
+	]).id("ratatouille:oven_fan")
 
 	// 鼓风机 ←- 烤箱用鼓风机
-	kubejs.shapeless("create:encased_fan",
+	kubejs.shapeless("create:encased_fan",[
 		"ratatouille:oven_fan"
-	)
+	])
 
 	// 工作盆盖板
 	kubejs.shaped("createdieselgenerators:basin_lid", [
