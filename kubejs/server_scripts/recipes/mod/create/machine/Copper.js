@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	const MECH = Mechanism.WOODEN.COM
+	const MECH = Mechanism.COPPER.COM
 	const CASING = "create:copper_casing"
 
 	// 流体元件外壳
@@ -54,14 +54,47 @@ ServerEvents.recipes((event) => {
 		C: CASING
 	}).id("create:crafting/kinetics/hose_pulley")
 
-	// // 灌溉塔
-	// kubejs.shaped("create:hose_puyylley", [
-	//     "AMA",
-	//     "BCB"
-	// ], {
-	//     M: MECH,
-	//     A: "#forge:plates/copper",
-	//     B: "#forge:rods/copper",
-	//     C: "create:fluid_pipe"
-	// }).id("create:crafting/kinetics/ley")
+	// 灌溉塔
+	kubejs.shaped("ratatouille:irrigation_tower", [
+	    "AMA",
+	    "BCB"
+	], {
+	    M: MECH,
+	    A: "#forge:plates/copper",
+	    B: "#forge:rods/copper",
+	    C: "create:fluid_pipe"
+	}).id("ratatouille:irrigation_tower")
+
+	// 挤压盆
+	kubejs.shaped("ratatouille:squeeze_basin", [
+	    " X ",
+	    "YMY",
+		"YYY"
+	], {
+	    M: MECH,
+	    X: "#forge:plates/copper",
+	    Y: "#forge:ingots/copper",
+	}).id("ratatouille:squeeze_basin")
+
+	// 抽油机油泵
+	kubejs.shaped("createdieselgenerators:pumpjack_hole", [
+	    " M ",
+	    "BCB",
+		" A "
+	], {
+	    M: MECH,
+	    C: CASING,
+	    B: "minecraft:chain",
+	    A: "create:fluid_pipe"
+	}).id("createdieselgenerators:crafting/pumpjack_hole")
+
+	// 淤泥泵
+	kubejs.shaped("deepdrilling:sludge_pump", [
+	    " X ",
+	    "YMY"
+	], {
+	    M: MECH,
+	    X: "deepdrilling:blank_module",
+	    Y: "#forge:plates/copper"
+	}).id("deepdrilling:sludge_pump")
 })

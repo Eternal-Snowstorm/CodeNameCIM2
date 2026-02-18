@@ -121,3 +121,5 @@ config/ftbquests/qusets/chapters/control*
 !config/tconstruct-common.toml
 config/jei/ingredient-list-mod-sort-order.ini
 config/jei/ingredient-list-mod-sort-order.ini
+config/tconstruct-common.toml
+config/modernfix-mixins.properties

@@ -1,0 +1,76 @@
+ServerEvents.recipes((event) => {
+	let {farmersdelight, create, createdieselgenerators, immersiveengineering, tconstruct, ratatouille} = event.recipes
+    // 稻米
+    event.custom(
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "kaleidoscope_cookery:rice_panicle",
+      "count": 2
+    }
+  ],
+  "input": {
+    "item": "kaleidoscope_cookery:rice"
+  },
+  "soil": {
+    "item": "minecraft:mud"
+  },
+  "time": 1000,
+  "render": {
+    "type": "crop",
+    "block": "kaleidoscope_cookery:rice_crop"
+  }
+}
+
+    ).id("farmersdelight:integration/immersiveengineering/cloche/rice")
+
+    // 醋
+    createdieselgenerators.basin_fermenting(Fluid.of("cmi:vinegar",200),
+    "#forge:seeds/rice"
+)
+    // 橡胶
+    create.compacting("thermal:rubber",
+        Fluid.of("thermal:latex",200))
+
+    //橡胶板
+    create.pressing("cmi:rubber_plate",
+        "thermal:rubber"
+    )
+    farmersdelight.cutting("2x cmi:rubber_plate",
+        "thermal:rubber",
+        "#forge:tools/knives"
+    )
+
+    // 硫粉
+    create.milling("thermal:sulfur_dust",
+        "#forge:gems/sulfur"
+    )
+
+    // 熔融硫化橡胶
+    create.mixing(Fluid.of("cmi:cured_rubber",200),[
+        "thermal:rubber",
+        "#forge:dusts/sulfur",
+        Fluid.of("cmi:vinegar",200)
+    ])
+        create.mixing(Fluid.of("cmi:cured_rubber",200),[
+        "#forge:dusts/rubber",
+        "#forge:dusts/sulfur",
+        Fluid.of("cmi:vinegar",200)
+    ])
+
+    // 硫化橡胶
+    tconstruct.casting_table("thermal:cured_rubber")
+		.fluid(Fluid.of("cmi:cured_rubber", 200))
+		.cooling_time(20)
+    tconstruct.casting_basin("thermal:cured_rubber_block")
+		.fluid(Fluid.of("cmi:cured_rubber", 800))
+		.cooling_time(80)
+
+})
