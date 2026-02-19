@@ -8,9 +8,9 @@ PlayerEvents.loggedIn((event) => {
 
 		if (item.hasTag(UNBREAKABLE_TAG)) {
 			if (!item.nbt || !item.nbt.getBoolean(UNBREAKABLE_NBT_NAME)) {
-				let nbt = item.nbt || {}
+				let nbt = item.getNbt() || {}
 				nbt.Unbreakable = true
-				item.nbt = nbt
+				item.getNbt() = nbt
 			}
 		}
 	}

@@ -31,6 +31,14 @@
 			}
 		]
 	},
+	"final_quest_complete": {
+		"sounds": [
+			{
+				"name": "cmi:music/final_quest_complete",
+				"stream": true
+			}
+		]
+	},
 	"record.mechanism": {
 		"sounds": [
 			{

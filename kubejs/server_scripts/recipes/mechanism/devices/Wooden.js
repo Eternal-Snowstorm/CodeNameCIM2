@@ -22,23 +22,23 @@ ServerEvents.recipes((event) => {
 	}).id("create:crafting/kinetics/chute")
 
 	// 背包
-	// !!!
 	kubejs.shaped("sophisticatedbackpacks:backpack", [
 		"XYX",
 		"XMX",
 		"YYY"
 	], {
+		M: MECH,
 		X: "#forge:string",
 		Y: ["#forge:leather", "tconstruct:silky_cloth"]
 	}).id("sophisticatedbackpacks:backpack")
 
 	// 空白升级
-	// !!!
 	kubejs.shaped("sophisticatedbackpacks:upgrade_base", [
 		"XYX",
 		"YMY",
 		"XYX"
 	], {
+		M: MECH,
 		X: "#forge:rods/andesite",
 		Y: ["#forge:leather", "tconstruct:silky_cloth"]
 	}).id("sophisticatedbackpacks:upgrade_base")
@@ -51,12 +51,12 @@ ServerEvents.recipes((event) => {
 	]).id("create:crafting/kinetics/portable_storage_interface")
 
 	// ME物品原件外壳
-	// !!!
 	kubejs.shaped("2x ae2:item_cell_housing", [
 		"XYX",
 		"YMY",
 		"XYX"
 	], {
+		M: MECH,
 		X: "#forge:plates/silver",
 		Y: "ae2:quartz_glass",
 	}).id("ae2:network/cells/item_cell_housing")

@@ -10,4 +10,5 @@ StartupEvents.registry("sound_event", (event) => {
 
 	addSoundEvent("for_sea")
 	addSoundEvent("meme.bruh")
+	addSoundEvent("final_quest_complete")
 })
