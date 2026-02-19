@@ -325,6 +325,8 @@ ServerEvents.recipes((event) => {
 		.soil("tconstruct:ichor_slime_dirt")
 		.time(20 * 24)
 		.build()
+
+	// 稻米
 	new ClocheRecipeBuilder()
 		.input("#forge:seeds/rice")
 		.render("crop", "kaleidoscope_cookery:rice_crop")

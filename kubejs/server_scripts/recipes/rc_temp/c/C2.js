@@ -1,35 +1,5 @@
 ServerEvents.recipes((event) => {
     let { farmersdelight, create, createdieselgenerators, immersiveengineering, tconstruct, ratatouille } = event.recipes
-    // // 稻米
-    // event.custom(
-    //     {
-    //         "conditions": [
-    //             {
-    //                 "type": "forge:mod_loaded",
-    //                 "modid": "immersiveengineering"
-    //             }
-    //         ],
-    //         "type": "immersiveengineering:cloche",
-    //         "results": [
-    //             {
-    //                 "item": "kaleidoscope_cookery:rice_panicle",
-    //                 "count": 2
-    //             }
-    //         ],
-    //         "input": {
-    //             "item": "kaleidoscope_cookery:rice"
-    //         },
-    //         "soil": {
-    //             "item": "minecraft:mud"
-    //         },
-    //         "time": 1000,
-    //         "render": {
-    //             "type": "crop",
-    //             "block": "kaleidoscope_cookery:rice_crop"
-    //         }
-    //     }
-
-    // ).id("farmersdelight:integration/immersiveengineering/cloche/rice")
 
     // 醋
     createdieselgenerators.basin_fermenting(Fluid.of("cmi:vinegar", 200),
