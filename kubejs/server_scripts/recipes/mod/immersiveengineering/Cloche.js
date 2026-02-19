@@ -325,6 +325,15 @@ ServerEvents.recipes((event) => {
 		.soil("tconstruct:ichor_slime_dirt")
 		.time(20 * 24)
 		.build()
+	new ClocheRecipeBuilder()
+		.input("#forge:seeds/rice")
+		.render("crop", "kaleidoscope_cookery:rice_crop")
+		.results([
+			setResult("2x kaleidoscope_cookery:rice_panicle")
+		])
+		.soil("minecraft:mud")
+		.time(20 * 50)
+		.build()
 
 	// endregion
 })

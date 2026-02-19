@@ -21,5 +21,5 @@ ServerEvents.recipes((event) => {
     farmersdelight.cutting([
         Item.of("cmi:andesite_dust").withChance(0.25),
         Item.of("minecraft:gravel").withChance(0.75)
-    ], "#create:stone_types/andesite", "#forge:hammers")
+    ], "#create:stone_types/andesite", "#forge:tools/pickaxes")
 })
