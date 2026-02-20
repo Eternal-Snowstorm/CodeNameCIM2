@@ -81,6 +81,10 @@ StartupEvents.registry("item", (event) => {
 		})
 		.tag("create:blaze_burner_fuel/special")
 
+	// 电动机转子
+	addItem("motor_rotor")
+		.texture(`${global.namespace}:item/material/motor_rotor`)
+
 	// 热力单元
 	addItem("thermal_unit")
 		.texture(`${global.namespace}:item/material/unit/thermal`)

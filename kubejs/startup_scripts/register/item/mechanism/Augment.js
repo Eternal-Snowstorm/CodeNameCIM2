@@ -16,11 +16,9 @@ StartupEvents.registry("item", (event) => {
 
     addMechanismAugment("light_engineering")
     addMechanismAugment("heavy_engineering")
-    addMechanismAugment("coil")
 
     addMechanismAugment("smart")
 
     addMechanismAugment("thermal")
     addMechanismAugment("reinforced")
-    // addMechanismAugment("resonant")
 })

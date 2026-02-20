@@ -141,8 +141,23 @@ ServerEvents.recipes((event) => {
         A: "cmi:peat"
     })
 
-    kubejs.shapeless("4x cmi:peat", [
-        "cmi:peat_block"
-    ])
+    // 红石线圈
+    kubejs.shaped("4x immersiveengineering:wirecoil_redstone", [
+        " A ",
+        "ABA",
+        " A "
+    ], {
+        A: "cmi:redstone_wire",
+        B: "#forge:rods/wooden"
+    }).id("immersiveengineering:crafting/wirecoil_redstone")
 
+    // 红石通量线圈
+    kubejs.shaped("thermal:rf_coil",[
+        " A ",
+        "ABA",
+        " A "
+    ],{
+        A: "cmi:redstone_wire",
+        B: "#forge:rods/gold"
+    }).id("thermal:rf_coil")
 })
