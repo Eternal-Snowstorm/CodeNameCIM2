@@ -58,14 +58,14 @@ ServerEvents.recipes((event) => {
 		"#forge:gems/amethyst"
 	]).energy(400)
 
-	cmi.grinding("cmi:charged_amethyst", [
-		"minecraft:amethyst_shard",
-		"minecraft:redstone",
-		Item.of("minecraft:redstone").withChance(0.5)
-	])
+	// cmi.grinding("cmi:charged_amethyst", [
+	// 	"minecraft:amethyst_shard",
+	// 	"minecraft:redstone",
+	// 	Item.of("minecraft:redstone").withChance(0.5)
+	// ])
 
-	// 玫瑰石英
-	cmi.grinding("create:rose_quartz", [
-		"create:polished_rose_quartz"
-	])
+	// // 玫瑰石英
+	// cmi.grinding("create:rose_quartz", [
+	// 	"create:polished_rose_quartz"
+	// ])
 })
