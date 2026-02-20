@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, thermal, thermal_extra } = event.recipes
+	let { create, thermal, thermal_extra, vintageimprovements } = event.recipes
 
 	// 纯净石英
 	thermal.crystallizer("cmi:pure_quartz_prism", [
@@ -85,6 +85,11 @@ ServerEvents.recipes((event) => {
 		"cmi:silicon_mixure",
 		Fluid.of("tconstruct:scorched_stone", 250)
 	]).superheated()
+
+	// 硅板
+	vintageimprovements.curving("ae2:printed_silicon", [
+		"#forge:silicon"
+	]).itemAsHead("cmi:plate_mold")
 
 	/**
 	 * 
