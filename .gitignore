@@ -123,3 +123,6 @@ config/jei/ingredient-list-mod-sort-order.ini
 config/jei/ingredient-list-mod-sort-order.ini
 config/tconstruct-common.toml
 config/modernfix-mixins.properties
+CMI Dev.jar
+CMI Dev.json
+/CMI Dev-natives
