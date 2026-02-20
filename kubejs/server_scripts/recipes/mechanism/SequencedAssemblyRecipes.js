@@ -104,7 +104,7 @@ ServerEvents.recipes((event) => {
 
 		let sequence = []
 
-		this.$steps.forEach(step => {
+		this.$steps.forEach((step) => {
 			if (step) {
 				sequence.push(step())
 			}
