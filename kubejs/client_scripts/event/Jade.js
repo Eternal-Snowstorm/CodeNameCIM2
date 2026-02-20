@@ -17,6 +17,7 @@ JadeEvents.onClientRegistration((event) => {
 	 */
 	event.addTooltipCollectedCallback(10000, (tooltip, accessor) => {
 		addCommonTooltip("tconstruct:seared_heater")
+		addCommonTooltip("immersiveindustry:crucible")
 
 		/**
 		 * 为指定方块添加一个通用的 Jade 提示文本
@@ -25,7 +26,7 @@ JadeEvents.onClientRegistration((event) => {
 		 *
 		 * @example addCommonTooltip("tconstruct:seared_heater")
 		 *
-		 * @param {Internal.Block} block block register id 
+		 * @param {Internal.Block_} block block register id 
 		 * 
 		 * 方块注册id
 		 * @returns {boolean} 是否成功添加提示
@@ -76,17 +77,54 @@ JadeEvents.onClientRegistration((event) => {
 			let tranKey = `jade.info.cmi.${block}`.replace(":", ".")
 
 			/*
-			 * Rhino 环境下, tooltip.add() 存在多个重载版本
-			 * 直接调用 tooltip.add(...) 可能无法正确匹配
-			 * 因此需要显式指定使用 Component 参数的 add 方法
+			 * Rhino 环境下, `tooltip.add()` 存在多个重载版本
+			 * 直接调用 `tooltip.add(...)` 可能无法正确匹配
+			 * 因此需要显式指定使用 Component 参数的 `add()` 方法
 			 *
-			 * In the Rhino environment, tooltip.add() has multiple overloads.
-			 * Calling tooltip.add(...) directly may fail to resolve correctly,
-			 * so we explicitly select the Component-based add method.
+			 * In the Rhino environment, `tooltip.add()` has multiple overloads.
+			 * Calling `tooltip.add(...)` directly may fail to resolve correctly,
+			 * so we explicitly select the Component-based `add()` method.
 			 */
 			tooltip["add(net.minecraft.network.chat.Component)"](
-				Component.translatable(tranKey)
+				Component.translatable(tranKey).aqua()
 			)
+
+			return true
+		}
+
+		/**
+		 * 为指定方块添加一个"可自定义逻辑"的高级 Jade 提示
+		 *
+		 * Adds a logic-based advanced Jade tooltip.
+		 *
+		 * @example
+		 * addAdvancedTooltip("tconstruct:seared_heater", (acc, tooltip) => {
+		 *     tooltip["add(net.minecraft.network.chat.Component)"](
+		 *         Component.literal("🔥 Temperature: 1200C").red()
+		 *     )
+		 * })
+		 *
+		 * @param {Internal.Block_} block 方块注册id
+		 * @param {(acc: Internal.BlockAccessor, tooltip: Internal.ITooltip) => void} handler
+		 * @returns {boolean}
+		 */
+		function addAdvancedTooltip(block, handler) {
+			// 只处理方块
+			if (!(accessor instanceof $BlockAccessor)) {
+				return false
+			}
+
+			/** 
+			 * @type {$BlockAccessor}
+			 */
+			let acc = accessor
+
+			// 方块不匹配直接退出
+			if (acc.getBlock().id !== block) {
+				return false
+			}
+
+			handler(acc, tooltip)
 
 			return true
 		}

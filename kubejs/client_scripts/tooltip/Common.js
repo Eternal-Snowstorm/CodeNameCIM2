@@ -87,7 +87,7 @@ ItemEvents.tooltip((event) => {
 	 */
 	function addCommonTooltip(ingredient) {
 		let itemTooltipTranslateKey = `tooltip.${ingredient}`.replace(":", ".")
-		event.add(ingredient, Component.translatable(itemTooltipTranslateKey))
+		event.add(ingredient, Component.translatable(itemTooltipTranslateKey).aqua())
 	}
 
 	// 愚人节
@@ -95,7 +95,7 @@ ItemEvents.tooltip((event) => {
 	let day = LocalDateTime.now().getDayOfMonth()
 
 	if (month === 4 && day === 1) {
-		event.add("minecraft:dirt", Component.translatable(`tooltip.${global.namespace}.41dirt`))
+		event.add("minecraft:dirt", Component.translatable(`tooltip.${global.namespace}.41dirt`).aqua())
 	}
 
 	let materialTypeList = [

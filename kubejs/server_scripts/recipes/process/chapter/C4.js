@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { cmi, createaddition, create, thermal, vintageimprovements } = event.recipes
+	let { cmi, createaddition, create, vintageimprovements } = event.recipes
 
 	// 石英粉
 	create.crushing("thermal:quartz_dust", [
@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
 		"#minecraft:sand"
 	])
 
-	// 纯净石英
+	// 纯净石英粉
 	vintageimprovements.pressurizing("cmi:pure_quartz_dust", [
 		"#forge:dusts/quartz",
 		Fluid.of("cmi:pure_sand", 100)

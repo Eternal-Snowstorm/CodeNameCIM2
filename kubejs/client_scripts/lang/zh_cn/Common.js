@@ -7,6 +7,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addGasLang(key, value) {
 		event.add(`gas.${global.namespace}.${key}`, value)
 	}
+
 	/**
 	 * 
 	 * @param {String} key 
@@ -17,6 +18,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`painting.${global.namespace}.${key}.title`, title)
 		event.add(`painting.${global.namespace}.${key}.author`, author)
 	}
+
 	/**
 	 * 
 	 * @param {String} key 
@@ -27,6 +29,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`advancements.${global.namespace}.${key}`, title)
 		event.add(`advancements.${global.namespace}.${key}.desc`, desc)
 	}
+
 	/**
 	 * 
 	 * @param {String} key 
@@ -37,6 +40,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${global.namespace}.${key}`, "音乐唱片")
 		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
 	}
+
 	/**
 	 * 
 	 * @param {String} key 
@@ -46,6 +50,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`planet.${global.namespace}.${key}`, `${value}`)
 		event.add(`planet.${global.namespace}_orbit.${key}`, `${value}轨道`)
 	}
+
 	/**
 	 * 
 	 * @param {String} key 
@@ -53,6 +58,29 @@ ClientEvents.lang("zh_cn", (event) => {
 	 */
 	function addStructureLang(key, value) {
 		event.add(`structure.${global.namespace}.${key}`, value)
+	}
+
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
+	function addSolutionLang(key, value, tooltip) {
+		event.add(`item.${global.namespace}.${key}`, value)
+		event.add(`item.${global.namespace}.${key}_solution_bucket`, `${value}溶液桶`)
+		event.add(`tooltip.${global.namespace}.${key}`, tooltip)
+		event.add(`tooltip.${global.namespace}.${key}_solution_bucket`, tooltip)
+		event.add(`block.${global.namespace}.${key}_solution`, `${value}溶液`)
+		event.add(`fluid.${global.namespace}.${key}_solution`, `${value}溶液`)
+	}
+
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
+	function addHeatedLang(key, value) {
+		event.add(`create.recipe.heat_requirement.${key}`, value)
 	}
 
 	addGasLang("sulfide_gas_mixture", "硫化物混合气")
@@ -88,19 +116,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addStructureLang("ore_node.zinc_node", "锌矿物节点")
 
 	addMusicDiscLang("mechanism", "Mechanism", "DontkillBelalus")
-
-	function addSolutionLang(key, value, tooltip) {
-		event.add(`item.${global.namespace}.${key}`, value)
-		event.add(`item.${global.namespace}.${key}_solution_bucket`, `${value}溶液桶`)
-		event.add(`tooltip.${global.namespace}.${key}`, tooltip)
-		event.add(`tooltip.${global.namespace}.${key}_solution_bucket`, tooltip)
-		event.add(`block.${global.namespace}.${key}_solution`, `${value}溶液`)
-		event.add(`fluid.${global.namespace}.${key}_solution`, `${value}溶液`)
-	}
-
-	function addHeatedLang(key, value) {
-		event.add(`create.recipe.heat_requirement.${key}`, value)
-	}
 
 	// function addMBDMachineLang(key, value) {
 	// 	event.add(`block.mBd2.${key}`, value)
@@ -156,5 +171,4 @@ ClientEvents.lang("zh_cn", (event) => {
 	// addMBDMachineLang("accelerator_item_output", "大型构件催生器物品输出口")
 	// addMBDMachineLang("accelerator", "大型构件催生器控制器")
 	// addMBDMachineRecipeLang("accelerator", "大型构件催生器")
-
 })

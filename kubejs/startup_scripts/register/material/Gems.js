@@ -11,10 +11,9 @@ StartupEvents.registry("item", (event) => {
 		builder.tag("forge:gems")
 		builder.tag(`forge:gems/${name}`)
 
-		let a = TagsBuidlder.block("a")
-
 		return builder
 	}
+
 	/**
 	 * 
 	 * @param {String} name 
