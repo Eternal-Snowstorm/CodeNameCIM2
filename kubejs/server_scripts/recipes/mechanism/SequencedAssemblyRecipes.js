@@ -2,108 +2,118 @@ ServerEvents.recipes((event) => {
 	let { cmi, create, vintageimprovements } = event.recipes
 
 	/**
-	 * 第一大章节的配方
+	 * 第一大章节的序列装配封装
+	 *
 	 * @constructor
 	 * @param {{
-	 *  COM: Internal.ItemStack, 
-	 *  INC: Internal.ItemStack, 
-	 *  BAS?: Internal.ItemStack,
-	 *  AUG?: Internal.ItemStack 
+	 *  COM: Internal.ItemStack,
+	 *  INC: Internal.ItemStack
 	 * }} mechanism
 	 */
 	function BasicMechRecipe(mechanism) {
 		let { COM, INC } = mechanism
+
 		this.result = COM
 		this.transit = INC
-		this.ingredient
-		this.part
 
-		this.process1 = vintageimprovements.curving(this.transit, this.transit)
-			.itemAsHead("cmi:mechanism_mold")
-		this.process2 = create.cutting(this.transit, this.transit)
-		this.process3 = null
-		this.process4 = cmi.grinding(this.transit, this.transit)
+		this.$input = null
+		this.$part = null
+
+		// 用数组存步骤函数
+		this.$steps = []
+
+		// 默认四步
+		this.$steps[0] = () => {
+			return vintageimprovements.curving(this.transit, this.transit)
+				.itemAsHead("cmi:mechanism_mold")
+		}
+
+		this.$steps[1] = () => {
+			return create.cutting(this.transit, this.transit)
+		}
+
+		this.$steps[2] = null
+
+		this.$steps[3] = () => {
+			return cmi.grinding(this.transit, this.transit)
+		}
 	}
-	/**
-	 * 
-	 * @param {InputItem_} input
-	 */
+
 	BasicMechRecipe.prototype.input = function (input) {
-		this.input = input
+		this.$input = input
 		return this
 	}
-	/**
-	 * 
-	 * @param {InputItem_} part
-	 */
+
 	BasicMechRecipe.prototype.part = function (part) {
-		this.part = part
+		this.$part = part
 		return this
 	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 */
+
+	BasicMechRecipe.prototype._setStep = function (index, fn) {
+		this.$steps[index] = fn
+		return this
+	}
+
 	BasicMechRecipe.prototype.deploying1 = function (ingredient) {
-		this.process1 = create.deploying(this.transit, [this.transit, ingredient])
-		return this
+		return this._setStep(0, () => {
+			return create.deploying(this.transit, [this.transit, ingredient])
+		})
 	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 */
+
 	BasicMechRecipe.prototype.deploying2 = function (ingredient) {
-		this.process2 = create.deploying(this.transit, [this.transit, ingredient])
-		return this
+		return this._setStep(1, () => {
+			return create.deploying(this.transit, [this.transit, ingredient])
+		})
 	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 */
+
 	BasicMechRecipe.prototype.deploying3 = function (ingredient) {
-		this.process3 = create.deploying(this.transit, [this.transit, ingredient])
-		return this
+		return this._setStep(2, () => {
+			return create.deploying(this.transit, [this.transit, ingredient])
+		})
 	}
-	/**
-	 * 
-	 * @param {string} fluid 
-	 * @param {number} amount
-	 */
-	BasicMechRecipe.prototype.filling3 = function (fluid, amount) {
-		this.process3 = create.filling(this.transit, [this.transit, Fluid.of(fluid, amount)])
-		return this
-	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 */
+
 	BasicMechRecipe.prototype.deploying4 = function (ingredient) {
-		this.process4 = create.deploying(this.transit, [this.transit, ingredient])
-		return this
+		return this._setStep(3, () => {
+			return create.deploying(this.transit, [this.transit, ingredient])
+		})
 	}
+
+	BasicMechRecipe.prototype.filling3 = function (fluid, amount) {
+		return this._setStep(2, () => {
+			return create.filling(this.transit, [
+				this.transit,
+				Fluid.of(fluid, amount)
+			])
+		})
+	}
+
 	BasicMechRecipe.prototype.vibrating4 = function () {
-		this.process4 = vintageimprovements.vibrating(this.transit, this.transit)
-		return this
+		return this._setStep(3, () => {
+			return vintageimprovements.vibrating(this.transit, this.transit)
+		})
 	}
+
 	BasicMechRecipe.prototype.build = function () {
-		let seq = []
-
-		if (this.process1) {
-			seq.push(this.process1)
-		}
-		if (this.process2) {
-			seq.push(this.process2)
-		}
-		if (this.process3) {
-			seq.push(this.process3)
-		}
-		if (this.process4) {
-			seq.push(this.process4)
+		if (!this.$input) {
+			console.error("BasicMechRecipe: input 未设置")
 		}
 
-		seq.push(create.deploying(this.transit, [this.transit, this.part]))
+		if (!this.$part) {
+			console.error("BasicMechRecipe: part 未设置")
+		}
 
-		return create.sequenced_assembly(this.result, this.input, seq)
+		let sequence = []
+
+		this.$steps.forEach(step => {
+			if (step) {
+				sequence.push(step())
+			}
+		})
+
+		// 最终组装
+		sequence.push(create.deploying(this.transit, [this.transit, this.$part]))
+
+		return create.sequenced_assembly(this.result, this.$input, sequence)
 			.transitionalItem(this.transit)
 			.loops(1)
 	}
