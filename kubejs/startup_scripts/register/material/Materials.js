@@ -270,6 +270,6 @@ new Material("polished_quartz", "wooden")
 
 // 纯净石英
 new Material("pure_quartz", "wooden")
-	.color(0xFFFFFF, 0xFFFFFF)
+	.color(0xa5f1ff, 0xFFFFFF)
 	.dust()
 	.prism()

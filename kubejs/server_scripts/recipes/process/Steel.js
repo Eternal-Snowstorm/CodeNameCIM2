@@ -31,7 +31,7 @@ ServerEvents.recipes((event) => {
 			Ingredient.of("#forge:dusts/lime").toJson()
 		],
 		"result": Item.of("cmi:refined_iron_bloom").toJson(),
-		"time": 1200,
+		"time": 15 * 20,
 		"temperature": 1370
 	})
 

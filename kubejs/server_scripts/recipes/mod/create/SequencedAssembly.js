@@ -8,7 +8,8 @@ ServerEvents.recipes((event) => {
 		NUKE: "cmi:incomplete_nuke_cooler",
 		GAS: "cmi:incomplete_gas_container",
 		GIZMO: "cmi:incomplete_notor_gizmo",
-		FLYWHEEL: "cmi:incomplete_flywheel"
+		FLYWHEEL: "cmi:incomplete_flywheel",
+		ROTOR: "cmi:incomplete_motor_rotor"
 	}
 
 	// 飞轮
@@ -20,7 +21,6 @@ ServerEvents.recipes((event) => {
 			"#forge:plates/bronze"
 		]),
 	]).transitionalItem(Inc.FLYWHEEL).loops(4)
-
 
 	// 扫描机兵零件
 	create.sequenced_assembly([
@@ -200,4 +200,22 @@ ServerEvents.recipes((event) => {
 			Inc.GAS
 		])
 	]).loops(1).transitionalItem(Inc.GAS)
+
+	// 电动机转子
+	create.sequenced_assembly("cmi:motor_rotor", [
+		"#forge:rods/iron"
+	], [
+		create.cutting(Inc.ROTOR,
+			Inc.ROTOR
+		),
+		create.deploying(Inc.ROTOR, [
+			Inc.ROTOR,
+			"#forge:plates/industrial_iron"
+		]),
+		create.deploying(Inc.ROTOR, [
+			Inc.ROTOR,
+			"#forge:wires/copper"
+		])
+	]).transitionalItem(Inc.ROTOR).loops(1)
+
 })

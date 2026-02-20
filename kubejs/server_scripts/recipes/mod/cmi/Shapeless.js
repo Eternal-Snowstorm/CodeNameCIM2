@@ -21,4 +21,9 @@ ServerEvents.recipes((event) => {
         "3x cmi:grass_fiber"
     ])
 
+    // 泥炭
+    kubejs.shapeless("4x cmi:peat", [
+        "cmi:peat_block"
+    ])
+
 })
