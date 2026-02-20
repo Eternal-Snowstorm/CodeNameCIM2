@@ -19,12 +19,13 @@ ServerEvents.recipes((event) => {
 
 	// 纯净石英
 	vintageimprovements.pressurizing("cmi:pure_quartz_dust", [
-		"#forge:dusts/quartz", Fluid.of("cmi:pure_sand", 100)
+		"#forge:dusts/quartz",
+		Fluid.of("cmi:pure_sand", 100)
 	]).superheated()
 
 	// 玫瑰石英
 	create.mixing("create:rose_quartz", [
-		"cmi:pure_quartz_prism",
+		"#forge:dusts/pure_quartz",
 		Fluid.of("thermal:redstone", 100)
 	])
 
