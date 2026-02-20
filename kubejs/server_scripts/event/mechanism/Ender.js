@@ -4,7 +4,7 @@ ItemEvents.rightClicked("cmi:ender_mechanism", (event) => {
 	let sl = event.getServer().getLevel()
 
 	// 检测玩家潜行或物品具有NBT
-	if (player.crouching) {
+	if (player.isCrouching()) {
 		return
 	}
 	if (player.hasNBT()) {
@@ -43,7 +43,7 @@ ItemEvents.rightClicked("cmi:ender_mechanism", (event) => {
 		1.0
 	)
 	sl.sendParticles(
-		$ParticleTypes.DRAGON_BREATH,
+		ParticleTypes.DRAGON_BREATH,
 		targetPos.x,
 		targetPos.y,
 		targetPos.z,
@@ -71,6 +71,7 @@ ItemEvents.rightClicked("cmi:ender_mechanism", (event) => {
 	let locationY = Math.floor(player.getY())
 	let locationZ = Math.floor(player.getZ())
 	let getDimentionName = player.level.getDimension().toString()
+
 	// 以X、Y、Z形式存入3个NBT
 	player.mainHandItem.setNbt({
 		x: locationX,

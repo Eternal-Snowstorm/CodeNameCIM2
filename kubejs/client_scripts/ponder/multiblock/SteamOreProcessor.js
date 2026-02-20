@@ -1,3 +1,0 @@
-Ponder.registry((event) => {
-
-})
