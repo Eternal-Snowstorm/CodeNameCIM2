@@ -95,6 +95,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("brominated_flame_retardants", "溴系阻燃剂")
 	addItemLang("rubber_hand", "橡胶手部零件")
 	addItemLang("flame_retardant_plastic", "阻燃塑料")
+	addItemLang("motor_rotor","电动机转子")
 	addItemLang("grass_fiber", "草纤维")
 	addItemLang("grass_string", "草绳")
 	addItemLang("sugarcane_fiber", "甘蔗纤维")
