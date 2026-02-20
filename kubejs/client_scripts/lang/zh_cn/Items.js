@@ -99,6 +99,7 @@ ClientEvents.lang("zh_cn", (event) => {
     addItemLang("drawer_upgrade_template", "抽屉升级模板")
     addItemLang("lime_dust", "石灰粉")
     addItemLang("void_dust", "虚空粉")
+    addItemLang("motor_rotor","电动机转子")
     addItemLang("guide", "指南")
     addItemLang("andesite_casing_framework", "安山机壳框架")
     addItemLang("brass_casing_framework", "黄铜机壳框架")

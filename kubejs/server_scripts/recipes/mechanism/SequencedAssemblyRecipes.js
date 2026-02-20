@@ -232,7 +232,7 @@ ServerEvents.recipes((event) => {
 	new BasicMechRecipe(Mechanism.COIL)
 		.input("#forge:plates/iron")
 		.part(Mechanism.PART.ENGIN)
-		.deploying2("alexscaves:notor_gizmo")
+		.deploying2("cmi:motor_rotor")
 		.filling3("immersiveengineering:redstone_acid", 200)
 		.deploying4("#forge:plates/electrum")
 		.build()
