@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let {cmi, createaddition, farmersdelight, create, createdieselgenerators, immersiveengineering, tconstruct, ratatouille, vintageimprovements } = event.recipes
+	let { cmi, createaddition, create, thermal, vintageimprovements } = event.recipes
 
 	// 石英粉
 	create.crushing("thermal:quartz_dust", [
@@ -10,8 +10,10 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 纯净沙
-	create.emptying([Fluid.of("cmi:pure_sand", 100),
-		"thermal:niter_dust"], [
+	create.emptying([
+		Fluid.of("cmi:pure_sand", 100),
+		"thermal:niter_dust"
+	], [
 		"#minecraft:sand"
 	])
 
@@ -19,9 +21,6 @@ ServerEvents.recipes((event) => {
 	vintageimprovements.pressurizing("cmi:pure_quartz_dust", [
 		"#forge:dusts/quartz", Fluid.of("cmi:pure_sand", 100)
 	]).superheated()
-	create.compacting("cmi:pure_quartz_prism", [
-		"cmi:pure_quartz_dust"
-	]).heated()
 
 	// 玫瑰石英
 	create.mixing("create:rose_quartz", [
@@ -54,21 +53,18 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 充能紫水晶
-	createaddition.charging("cmi:charged_amethyst",
-		["#forge:gems/amethyst"], 400
-	)
-	// vintageimprovements.polishing(["minecraft:amethyst_shard",
-	// 	"minecraft:redstone"], [
-	// 	"cmi:charged_amethyst"
-	// ])
-	cmi.grinding("cmi:charged_amethyst",[
+	createaddition.charging("cmi:charged_amethyst", [
+		"#forge:gems/amethyst"
+	]).energy(400)
+
+	cmi.grinding("cmi:charged_amethyst", [
 		"minecraft:amethyst_shard",
 		"minecraft:redstone",
 		Item.of("minecraft:redstone").withChance(0.5)
-	] )
+	])
 
 	// 玫瑰石英
-	cmi.grinding("create:rose_quartz",[
+	cmi.grinding("create:rose_quartz", [
 		"create:polished_rose_quartz"
-		])
+	])
 })
