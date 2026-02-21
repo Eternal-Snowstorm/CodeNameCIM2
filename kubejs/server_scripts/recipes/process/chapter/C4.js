@@ -69,4 +69,9 @@ ServerEvents.recipes((event) => {
 	cmi.grinding("create:polished_rose_quartz", [
 		"create:rose_quartz"
 	])
+
+	// 植物油
+	create.compacting(Fluid.of("createdieselgenerators:plant_oil",100),[
+		"#forge:seeds"
+	])
 })

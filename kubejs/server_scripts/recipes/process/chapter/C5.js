@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, thermal, thermal_extra, vintageimprovements, tconstruct } = event.recipes
+	let { create, createdieselgenerators, thermal, thermal_extra, vintageimprovements, tconstruct, immersiveengineering} = event.recipes
 
 	// 纯净石英
 	thermal.crystallizer("cmi:pure_quartz_prism", [
@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
 		},
 		"result": {
 			"amount": 200,
-			"fluid": "cmi:distilled_oil",
+			"fluid": "cmi:cracked_gasoline",
 		}
 	})
 
@@ -154,7 +154,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:benzene", 100),
 		Fluid.of("cmi:light_olefin", 100),
 	], [
-		Fluid.of("cmi:distilled_oil", 500)
+		Fluid.of("cmi:cracked_gasoline", 500)
 	]).heatRequirement(global.HeatLevel["heated"])
 
 	// 苯 乙烯
@@ -198,6 +198,147 @@ ServerEvents.recipes((event) => {
 		"input1": Fluid.tag("tag", "forge:acetaldehyde", 100).toJson(),
 		"result": Fluid.of("immersiveengineering:phenolic_resin", 200).toJson()
 	})
+
+	// 柴油
+	thermal.refinery([
+		Fluid.of("createdieselgenerators:diesel", 50),
+		"thermal:sulfur_dust"
+	], [
+		Fluid.of("cmi:sulfric_diesel", 100)
+	])
+
+	thermal_extra.advanced_refinery([
+		Fluid.of("createdieselgenerators:diesel", 80),
+		"thermal:sulfur_dust"
+	], [
+		Fluid.of("cmi:sulfric_diesel", 100)
+	])
+
+	// 轻烯烃 石脑油
+	thermal.refinery([
+		Fluid.of("thermal_extra:naphtha", 50),
+		Fluid.of("cmi:light_olefin", 50)
+	], [
+		Fluid.of("createdieselgenerators:diesel", 100)
+	])
+	thermal_extra.advanced_refinery([
+		Fluid.of("thermal_extra:naphtha", 50),
+		Fluid.of("cmi:light_olefin", 100)
+	], [
+		Fluid.of("createdieselgenerators:diesel", 100)
+	])
+
+	// 轻硅醚
+	// event.custom({
+	// 	"type": "immersiveindustry:chemical",
+	// 	"inputs": [
+	// 		{
+	// 			"base_ingredient": {
+	// 				"tag": "forge:silicon"
+	// 			},
+	// 			"count": 0
+	// 		}
+	// 	],
+	// 	"input_fluids": [
+	// 		{
+	// 			"tag": "cmi:light_olefin",
+	// 			"amount": 200
+	// 		}
+	// 	],
+	// 	"result_fluids": [
+	// 		{
+	// 			"fluid": "cmi:light_silicone_ether",
+	// 			"amount": 200
+	// 		}
+	// 	],
+	// 	"outputs": [
+	// 	],
+	// 	"time": 200
+	// })
+    event.custom({
+        "type": "immersiveengineering:mixer",
+        "energy": 1600,
+        "fluid": {
+            "amount": 50,
+            "tag": "cmi:light_olefin"
+        },
+        "inputs": [
+            {
+                "tag": "forge:silicon"
+            }
+        ],
+        "result": {
+            "amount": 200,
+            "fluid": "cmi:light_silicone_ether"
+        }
+    })
+
+	// 聚硅醚
+	event.custom({
+		"type": "immersiveindustry:chemical",
+		"inputs": [
+		],
+		"input_fluids": [
+			{
+				"tag": "cmi:light_silicone_ether",
+				"amount": 200
+			}
+		],
+		"result_fluids": [
+			{
+				"fluid": "cmi:polysilicone_ether",
+				"amount": 200
+			}
+		],
+		"outputs": [
+		],
+		"time": 200
+	})
+	// 液态硅橡胶
+	event.custom({
+		"type": "immersiveindustry:chemical",
+		"inputs": [
+		],
+		"input_fluids": [
+			{
+				"tag": "cmi:polysilicone_ether",
+				"amount": 200
+			},
+			{
+				"tag": "cmi:vinegar_acid",
+				"amount": 100
+			}
+		],
+		"result_fluids": [
+			{
+				"fluid": "cmi:silicon_rubber",
+				"amount": 400
+			}
+		],
+		"outputs": [
+		],
+		"time": 200
+	})
+
+	// 硅橡胶
+	thermal.chiller("cmi:silicon_rubber",[
+		Fluid.of("cmi:silicon_rubber",200)
+	])
+	thermal.chiller("cmi:silicon_rubber_plate",[
+		Fluid.of("cmi:silicon_rubber",200),
+		"#tconstruct:casts/multi_use/plate"
+	])
+
+	// 醋酸
+	createdieselgenerators.distillation([
+		Fluid.of("cmi:vinegar_acid", 100),
+		Fluid.of("minecraft:water", 100),
+	], [
+		Fluid.of("cmi:vinegar", 200)
+	]).heatRequirement(global.HeatLevel["heated"])
+	
+
+
 
 	/**
 	 * 

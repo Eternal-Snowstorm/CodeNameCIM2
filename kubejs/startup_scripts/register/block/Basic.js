@@ -125,7 +125,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 高级计算外壳
 	addBlock("computing_casing")
-		.textureAll(`${global.namespace}:block/casing/ae2/computing_top`)
+		.model(`${global.namespace}:block/casing/ae2/computing`)
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)

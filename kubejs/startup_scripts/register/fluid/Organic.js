@@ -45,7 +45,7 @@ StartupEvents.registry("fluid", (event) => {
     addColorFluid("sulfric_diesel", 0xFFDA69)
 
     // 裂化汽油
-    addColorFluid("distilled_oil", 0xFF6F6F)
+    addColorFluid("cracked_gasoline", 0xFF6F6F)
 
     // 裂化柴油
     addColorFluid("cracked_diesel", 0xDDCCBB)
@@ -84,7 +84,7 @@ StartupEvents.registry("fluid", (event) => {
     addColorFluid("polyvinyl_alcohol", 0x887799)
 
     // 聚硅醚
-    addColorFluid("polysilicone_ether", 0xF89E3A)
+    addColorFluid("polysilicone_ether", 0xB0A8D1)
 
     // 结构塑胶
     addColorFluid("structural_plastic", 0xAABBEE)

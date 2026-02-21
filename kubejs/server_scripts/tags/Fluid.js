@@ -99,6 +99,30 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("cmi:phenol")
 		.add("cmi:phenol")
 
+	event.get("cmi:light_olefin")
+		.add("cmi:light_olefin")
+
+	event.get("cmi:vinegar_acid")
+		.add("cmi:vinegar_acid")
+
+	event.get("cmi:light_silicone_ether")
+		.add("cmi:light_silicone_ether")
+
+	event.get("cmi:polysilicone_ether")
+		.add("cmi:polysilicone_ether")
+
+	event.get("cmi:light_aldehyde")
+		.add("cmi:light_aldehyde")
+
+	event.get("cmi:acetylene")
+		.add("cmi:acetylene")
+
+	event.get("cmi:vinyl_alcohol")
+		.add("cmi:vinyl_alcohol")
+
+	event.get("cmi:polyvinyl_alcohol")
+		.add("cmi:polyvinyl_alcohol")
+
 	event.get("tconstruct:fuels")
 		.add("ad_astra:cryo_fuel")
 		.add("cmi:delta_unstable_solution")
