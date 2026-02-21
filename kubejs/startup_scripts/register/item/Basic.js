@@ -157,7 +157,9 @@ StartupEvents.registry("item", (event) => {
 			.getEnergyStored((stack) => {
 				return stack.nbt?.energy || 0
 			})
-			.getMaxEnergyStored(() => 10000)
+			.getMaxEnergyStored(() => {
+				return 150000
+			})
 			.extractEnergy((stack, amount, simulate) => {
 				let stored = stack.nbt?.energy || 0
 				let extracted = Math.min(stored, amount)
@@ -170,7 +172,7 @@ StartupEvents.registry("item", (event) => {
 			})
 			.receiveEnergy((stack, amount, simulate) => {
 				let stored = stack.nbt?.energy || 0
-				let max = 10000
+				let max = 150000
 				let received = Math.min(max - stored, amount)
 
 				if (!simulate) {
