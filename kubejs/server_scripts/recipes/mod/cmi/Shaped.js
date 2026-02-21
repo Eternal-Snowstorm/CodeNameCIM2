@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
         "AAA"
     ], {
         A: "thermal:cured_rubber"
-    })
+    }).id("create:crafting/kinetics/belt_connector")
 
     // 冲击桩
     kubejs.shaped("cmi:impact_pile", [

@@ -215,38 +215,16 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/andesite_alloy",
 		B: "thermal:cured_rubber"
-	})
+	}).id("create:crafting/logistics/andesite_funnel")
 
 	// 安山隧道
-	kubejs.shaped("8x create:andesite_tunnel", [
+	kubejs.shaped("4x create:andesite_tunnel", [
 		"AA",
 		"BB"
 	], {
 		A: "#forge:plates/andesite_alloy",
 		B: "thermal:cured_rubber"
-	})
-
-	// 黄铜漏斗
-	kubejs.shaped("4x create:brass_funnel", [
-		"A",
-		"B",
-		"C"
-	], {
-		A: "create:electron_tube",
-		B: "#forge:ingots/brass",
-		C: "thermal:cured_rubber"
-	})
-
-	// 黄铜隧道
-	kubejs.shaped("8x create:brass_tunnel", [
-		"A ",
-		"BB",
-		"CC"
-	], {
-		A: "create:electron_tube",
-		B: "#forge:ingots/brass",
-		C: "thermal:cured_rubber"
-	})
+	}).id("create:crafting/logistics/andesite_tunnel")
 
 	// 过应力离合器
 	kubejs.shapeless("create_connected:overstress_clutch", [
@@ -408,12 +386,12 @@ ServerEvents.recipes((event) => {
 	// 物品保险库
 	kubejs.shaped("create:item_vault", [
 		"A",
-		"B",
+		"M",
 		"A"
 	], {
 		A: "#forge:plates/iron",
-		B: "#forge:chests"
-	})
+		M: Mechanism.WOODEN.COM
+	}).id('create:crafting/kinetics/item_vault')
 
 	// 增产机壳
 	let casingFrame = [
@@ -517,22 +495,22 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("create:brass_funnel", [
 		"create:andesite_funnel",
 		"cmi:andesite_mechanism",
-		"#forge:ingots/brass"
-	])
+		"#forge:plates/brass"
+	]).id("create:crafting/logistics/brass_funnel")
 
 	// 黄铜隧道
 	kubejs.shapeless("create:brass_tunnel", [
 		"create:andesite_tunnel",
 		"cmi:andesite_mechanism",
-		"#forge:ingots/brass"
-	])
+		"#forge:plates/brass"
+	]).id("create:crafting/logistics/brass_tunnel")
 
 	// 智能溜槽
 	kubejs.shapeless("create:smart_chute", [
 		"create:chute",
 		"cmi:andesite_mechanism",
-		"#forge:ingots/brass"
-	])
+		"#forge:plates/brass"
+	]).id('create:crafting/kinetics/smart_chute')
 
 	// 高级注液器
 	kubejs.shaped("cmi:advanced_spout", [
