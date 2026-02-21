@@ -84,6 +84,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:overcharged_alloy_faucet", "§c所以你的意思是...你就拿超载合金锭做了这个?")
 	addCommonTooltipLang("ad_astra:ice_shard", "可以打破冰块获得, 并且受时运效果影响")
 	addCommonTooltipLang("#cmi:broken_drill_heads", "破损的钻头, 修复后可以正常使用")
+	addCommonTooltipLang("immersiveindustry:electrolyzer", "需要通电使用")
 	addCommonTooltipLang("portality:controller", "制作模块时不会消耗自身")
 	addCommonTooltipLang("cmi:water_pump", "使用扳手右键可以显示预览")
 	addCommonTooltipLang("cmi:parchment", `有些能量不是由燃料产生的, 而是靠"遇见"`)
