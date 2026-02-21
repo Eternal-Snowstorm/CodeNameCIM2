@@ -11,7 +11,8 @@ ServerEvents.recipes((event) => {
 		["mekanism:salt", "#forge:dusts/salt"],
 		["ratatouille:salt", "#forge:dusts/salt"],
 		["create:cogwheel", "#create:cogwheel"],
-		["create:large_cogwheel", "#create:large_cogwheel"]
+		["create:large_cogwheel", "#create:large_cogwheel"],
+		["farmersdelight:rice", "#forge:seeds/rice"]
 	]
 	inputs.forEach(([from, to]) => {
 		// 同步遍历所有配方

@@ -380,40 +380,40 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(3, 6)
 		})
 	})
-// ['mekanismgenerators:solar_panel',
-// 	 'mekanism:structural_glass',
-// 	  'mekanism:induction_casing', 
-// 	  'mekanism:dynamic_tank', 
-// 	  'mekanism:boiler_casing',
-// 	   'mekanismgenerators:fission_reactor_casing',
-// 	    'mekanismgenerators:turbine_casing',
-// 		 'mekanism:enriched_diamond', 
-// 		 'mekanism:enriched_redstone',
-// 		  'mekanism:enriched_carbon',
-// 		   'mekanism:basic_tier_installer',
-// 		    'mekanism:upgrade_muffling',
-// 			 'mekanism:upgrade_energy', 
-// 			 'mekanism:upgrade_speed',
-// 			  'mekanism:module_base', 
-// 			  'mekanism:energy_tablet', 
-// 			  'thermal:raw_lead', 
-// 			  'thermal:raw_tin',
-// 			   'mekanism:raw_osmium',
-// 			    'mekanism:dirty_netherite_scrap',
-// 				 'mekanism:electrolytic_core',
-// 				  'mekanism:hdpe_pellet',
-// 				   'mekanism:enriched_tin',
-// 				    'mekanism:enriched_gold',
-// 					 'mekanism:enriched_refined_obsidian', 
-// 					 'mekanism:cardboard_box',
-// 					  'mekanism:basic_chemical_tank', 
-// 					  'mekanism:basic_logistical_transporter', 
-// 					  'mekanism:basic_thermodynamic_conductor',
-// 					   'mekanism:basic_pressurized_tube',
-// 					    'mekanism:basic_universal_cable',
-// 						 'mekanism:basic_mechanical_pipe',
-// 						  'mekanism:basic_fluid_tank', 
-// 'mekanismadditions:blue_glow_panel']
+	// ['mekanismgenerators:solar_panel',
+	// 	 'mekanism:structural_glass',
+	// 	  'mekanism:induction_casing', 
+	// 	  'mekanism:dynamic_tank', 
+	// 	  'mekanism:boiler_casing',
+	// 	   'mekanismgenerators:fission_reactor_casing',
+	// 	    'mekanismgenerators:turbine_casing',
+	// 		 'mekanism:enriched_diamond', 
+	// 		 'mekanism:enriched_redstone',
+	// 		  'mekanism:enriched_carbon',
+	// 		   'mekanism:basic_tier_installer',
+	// 		    'mekanism:upgrade_muffling',
+	// 			 'mekanism:upgrade_energy', 
+	// 			 'mekanism:upgrade_speed',
+	// 			  'mekanism:module_base', 
+	// 			  'mekanism:energy_tablet', 
+	// 			  'thermal:raw_lead', 
+	// 			  'thermal:raw_tin',
+	// 			   'mekanism:raw_osmium',
+	// 			    'mekanism:dirty_netherite_scrap',
+	// 				 'mekanism:electrolytic_core',
+	// 				  'mekanism:hdpe_pellet',
+	// 				   'mekanism:enriched_tin',
+	// 				    'mekanism:enriched_gold',
+	// 					 'mekanism:enriched_refined_obsidian', 
+	// 					 'mekanism:cardboard_box',
+	// 					  'mekanism:basic_chemical_tank', 
+	// 					  'mekanism:basic_logistical_transporter', 
+	// 					  'mekanism:basic_thermodynamic_conductor',
+	// 					   'mekanism:basic_pressurized_tube',
+	// 					    'mekanism:basic_universal_cable',
+	// 						 'mekanism:basic_mechanical_pipe',
+	// 						  'mekanism:basic_fluid_tank', 
+	// 'mekanismadditions:blue_glow_panel']
 	event.addGeneric("cmi:gameplay/random_mechanisms/space", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("4x ad_astra:steel_cable")
@@ -461,32 +461,32 @@ ServerEvents.genericLootTables((event) => {
 	event.addGeneric("cmi:gameplay/random_mechanisms/random", (loot) => {
 		loot.addPool((pool) => {
 			pool.addItem("cmi:basic_random_mechanism")
-				.count([4,8])
+				.count([4, 8])
 				.randomChance(0.125)
 			pool.addItem("cmi:mechanical_random_mechanism")
-				.count([4,8])
+				.count([4, 8])
 				.randomChance(0.125)
 			pool.addItem("cmi:engineering_random_mechanism")
-				.count([4,8])
+				.count([4, 8])
 				.randomChance(0.125)
 			pool.addItem("cmi:flux_random_mechanism")
-				.count([4,8])
+				.count([4, 8])
 				.randomChance(0.125)
 			pool.addItem("cmi:magical_random_mechanism")
-				.count([4,8])
+				.count([4, 8])
 				.randomChance(0.125)
 			pool.addItem("cmi:quantum_random_mechanism")
-				.count([4,8])
+				.count([4, 8])
 				.randomChance(0.125)
 			pool.addItem("cmi:mekanism_random_mechanism")
-				.count([4,8])
+				.count([4, 8])
 				.randomChance(0.125)
 			pool.addItem("cmi:space_random_mechanism")
-				.count([4,8])
+				.count([4, 8])
 				.randomChance(0.125)
 			pool.addItem("cmi:random_random_mechanism")
 				.randomChance(0.0125)
-			pool.setUniformRolls(2,8)
+			pool.setUniformRolls(2, 8)
 		})
 	})
 })

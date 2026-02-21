@@ -8,5 +8,7 @@ MEK,mekanism:steam
 柴油动力,createdieselgenerators:gasoline
 **杂酚油**
 沉浸工程,immersiveengineering:creosote
+**柴油**
+柴油动力,createdieselgenerators:diesel
 
 
