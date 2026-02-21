@@ -18,10 +18,10 @@ JadeEvents.onClientRegistration((event) => {
 	event.addTooltipCollectedCallback(10000, (tooltip, accessor) => {
 		addAdvancedTooltip("tconstruct:seared_heater", (acc, tooltip) => {
 			tooltip["add(net.minecraft.network.chat.Component)"](
-				Component.translatable("jade.info.cmi.tconstruct.seared_heater.1")
+				Component.translatable("jade.info.cmi.tconstruct.seared_heater.1").aqua()
 			)
 			tooltip["add(net.minecraft.network.chat.Component)"](
-				Component.translatable("jade.info.cmi.tconstruct.seared_heater.2")
+				Component.translatable("jade.info.cmi.tconstruct.seared_heater.2").aqua()
 			)
 		})
 		addCommonTooltip("immersiveindustry:crucible")
