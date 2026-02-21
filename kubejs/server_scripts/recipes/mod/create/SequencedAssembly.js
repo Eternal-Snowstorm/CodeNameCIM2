@@ -9,7 +9,8 @@ ServerEvents.recipes((event) => {
 		GAS: "cmi:incomplete_gas_container",
 		GIZMO: "cmi:incomplete_notor_gizmo",
 		FLYWHEEL: "cmi:incomplete_flywheel",
-		ROTOR: "cmi:incomplete_motor_rotor"
+		ROTOR: "cmi:incomplete_motor_rotor",
+		THERMAL_AUG: "cmi:incomplete_thermal_mechanism_augment"
 	}
 
 	// 飞轮
@@ -218,4 +219,24 @@ ServerEvents.recipes((event) => {
 		])
 	]).transitionalItem(Inc.ROTOR).loops(1)
 
+	// 热力构件组件
+	create.sequenced_assembly(Mechanism.THERMAL.AUG, [
+		"#forge:gears/constantan"
+	], [
+		create.deploying(Inc.THERMAL_AUG, [
+			Inc.THERMAL_AUG,
+			"thermal:rf_coil"
+		]),
+		create.deploying(Inc.THERMAL_AUG, [
+			Inc.THERMAL_AUG,
+			"thermal:redstone_servo"
+		]),
+		create.deploying(Inc.THERMAL_AUG, [
+			Inc.THERMAL_AUG,
+			"cmi:simple_battery"
+		]),
+		create.cutting(Inc.THERMAL_AUG,
+			Inc.THERMAL_AUG
+		)
+	]).transitionalItem(Inc.THERMAL_AUG).loops(1)
 })

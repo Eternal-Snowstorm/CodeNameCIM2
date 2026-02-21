@@ -152,12 +152,24 @@ ServerEvents.recipes((event) => {
     }).id("immersiveengineering:crafting/wirecoil_redstone")
 
     // 红石通量线圈
-    kubejs.shaped("thermal:rf_coil",[
-        " A ",
-        "ABA",
-        " A "
-    ],{
+    kubejs.shaped("4x thermal:rf_coil", [
+        "BAC",
+        "A A",
+        "CAB"
+    ], {
         A: "cmi:redstone_wire",
-        B: "#forge:rods/gold"
+        B: "#forge:rods/gold",
+        C: "#forge:plates/gold"
     }).id("thermal:rf_coil")
+
+    // 振动核心
+    kubejs.shaped("2x thermalendergy:vibrating_core", [
+        "C B",
+        " A ",
+        "B C"
+    ], {
+        A: "cmi:charged_amethyst",
+        B: "#forge:rods/cobalt",
+        C: "#forge:plates/cobalt"
+    }).id("thermalendergy:vibrating_core")
 })

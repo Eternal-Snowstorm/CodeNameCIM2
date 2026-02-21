@@ -2,13 +2,13 @@ ServerEvents.recipes((event) => {
 	let { create } = event.recipes
 
 	addCrushedSplashing("iron", "minecraft:redstone")
-	addCrushedSplashing("gold", "thermal:quartz_dust")
+	addCrushedSplashing("gold", "thermal:cinnabar_dust")
 	addCrushedSplashing("copper", "minecraft:clay_ball")
 	addCrushedSplashing("zinc", "minecraft:gunpowder")
 	addCrushedSplashing("osmium", "mekanism:dust_fluorite")
 	addCrushedSplashing("platinum", "minecraft:glowstone_dust")
 	addCrushedSplashing("silver", "cmi:sludge_extract")
-	addCrushedSplashing("tin", "cmi:andesite_dust")
+	addCrushedSplashing("tin", "thermal:apatite_dust")
 	addCrushedSplashing("lead", "minecraft:sugar")
 	addCrushedSplashing("uranium", "immersiveengineering:dust_sulfur")
 	addCrushedSplashing("nickel", "cmi:oil_shale_dust")

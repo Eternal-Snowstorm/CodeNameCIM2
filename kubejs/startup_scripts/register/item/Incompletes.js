@@ -49,6 +49,7 @@ StartupEvents.registry("item", (event) => {
 	addIncompleteItem("nuke_cooler")
 	addIncompleteItem("notor_gizmo")
 	addIncompleteItem("motor_rotor")
+	addIncompleteItem("thermal_mechanism_augment")
 
 	// 飞轮
 	addItem("flywheel")

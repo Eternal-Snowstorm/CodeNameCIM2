@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
 		"XYX"
 	], {
 		M: MECH,
-		X: "#forge:plates/silver",
+		X: "#forge:plates/iron",
 		Y: "ae2:quartz_glass",
 	}).id("ae2:network/cells/item_cell_housing")
 })

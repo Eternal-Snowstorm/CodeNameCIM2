@@ -59,10 +59,6 @@ let Mechanism = Object.freeze({
         COM: Item.of("cmi:enchanted_mechanism"),
         INC: Item.of("cmi:incomplete_enchanted_mechanism")
     }),
-    GOLD: Object.freeze({
-        COM: Item.of("cmi:gold_mechanism"),
-        INC: Item.of("cmi:incomplete_gold_mechanism")
-    }),
     //C3
     COIL: Object.freeze({
         COM: Item.of("cmi:coil_mechanism"),
@@ -77,13 +73,13 @@ let Mechanism = Object.freeze({
         COM: Item.of("create:precision_mechanism"),
         INC: Item.of("create:incomplete_precision_mechanism")
     }),
-    COBALT: Object.freeze({
-        COM: Item.of("cmi:cobalt_mechanism"),
-        INC: Item.of("cmi:incomplete_cobalt_mechanism")
-    }),
     COLOR: Object.freeze({
         COM: Item.of("cmi:colorful_mechanism"),
         INC: Item.of("cmi:incomplete_colorful_mechanism")
+    }),
+    SCULK: Object.freeze({
+        COM: Item.of("cmi:sculk_mechanism"),
+        INC: Item.of("cmi:incomplete_sculk_mechanism")
     }),
     // C4
     THERMAL: Object.freeze({
@@ -101,9 +97,10 @@ let Mechanism = Object.freeze({
         INC: Item.of("cmi:incomplete_smart_mechanism"),
         AUG: Item.of("cmi:smart_mechanism_augment")
     }),
-    SCULK: Object.freeze({
-        COM: Item.of("cmi:sculk_mechanism"),
-        INC: Item.of("cmi:incomplete_sculk_mechanism")
+    GOLD: Object.freeze({
+        COM: Item.of("cmi:gold_mechanism"),
+        INC: Item.of("cmi:incomplete_gold_mechanism"),
+        AUG: Item.of("thermal:rf_coil")
     }),
     // C5
     REINFORCED: Object.freeze({
@@ -120,6 +117,11 @@ let Mechanism = Object.freeze({
         COM: Item.of("cmi:ender_mechanism"),
         INC: Item.of("cmi:incomplete_ender_mechanism"),
         BAS: Item.of("cmi:ender_mechanism_basement")
+    }),
+    COBALT: Object.freeze({
+        COM: Item.of("cmi:cobalt_mechanism"),
+        INC: Item.of("cmi:incomplete_cobalt_mechanism"),
+        AUG: Item.of("thermalendergy:vibrating_core")
     }),
     // C6
     BASIC: Object.freeze({
