@@ -72,6 +72,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("titanium_solution", "钛溶液")
 	// 以下流体未确定译名
 	addFluidLang("silicon_rubber", "液态硅橡胶")
-	addFluidLang("distilled_oil", "蒸馏油")
+	addFluidLang("cracked_gasoline", "裂化汽油")
 
 })
