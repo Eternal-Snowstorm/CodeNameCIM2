@@ -20,6 +20,17 @@ ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
 	 * @param {String} key 
+	 * @param {String[]} values 
+	 */
+	function addCommonJadeTipLangs(key, values) {
+		values.forEach((value, index) => {
+			event.add(`jade.info.cmi.${key}.${index + 1}`.replace(":", "."), `${value}`)
+		})
+	}
+
+	/**
+	 * 
+	 * @param {String} key 
 	 * @param {String} value 
 	 */
 	function addAccelerateTooltipLang(key, value) {
@@ -77,7 +88,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:water_pump", "使用扳手右键可以显示预览")
 	addCommonTooltipLang("cmi:parchment", `有些能量不是由燃料产生的, 而是靠"遇见"`)
 
-	addCommonJadeTipLang("tconstruct:seared_heater", "焦黑加热器最多提供 937°C / 1718.6°F")
+	addCommonJadeTipLangs("tconstruct:seared_heater", [
+		"自身最多提供 937°C / 1718.6°F",
+		"使用{tconstruct:seared_fuel_tank, 1.0}焦黑燃料储罐加入燃料升温"
+	])
 	addCommonJadeTipLang("immersiveindustry:crucible", "自身最多提供 1000°C, 使用{immersiveengineering:blastfurnace_preheater, 1.0}预热器升温")
 
 	addJEIInfoLang("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量植物胶乳")

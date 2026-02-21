@@ -2,9 +2,7 @@ ServerEvents.recipes((event) => {
     // 聚烯烃
     event.custom({
         "type": "immersiveengineering:refinery",
-        "catalyst": {
-            "tag": "forge:plates/aluminum"
-        },
+        "catalyst": Ingredient.of("#forge:plates/aluminum").toJson(),
         "energy": 120,
         "input0": {
             "amount": 8,
@@ -19,9 +17,7 @@ ServerEvents.recipes((event) => {
     // 乙醛副配方
     event.custom({
         "type": "immersiveengineering:refinery",
-        "catalyst": {
-            "tag": "forge:plates/copper"
-        },
+        "catalyst":Ingredient.of("#forge:plates/copper").toJson(),
         "energy": 150,
         "input0": {
             "amount": 8,
@@ -36,9 +32,7 @@ ServerEvents.recipes((event) => {
     // 三氧化硫
     event.custom({
         "type": "immersiveengineering:refinery",
-        "catalyst": {
-            "tag": "forge:plates/vanadium"
-        },
+        "catalyst": Ingredient.of("#forge:plates/vanadium").toJson(),
         "energy": 150,
         "input0": {
             "amount": 8,
@@ -49,5 +43,4 @@ ServerEvents.recipes((event) => {
             "fluid": "mekanism:sulfur_trioxide"
         }
     }).id("vintageimprovements:pressurizing/sulfur_trioxide")
-
 })

@@ -96,6 +96,9 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("forge:kerosene")
 		.add("cmi:kerosene")
 
+	event.get("cmi:phenol")
+		.add("cmi:phenol")
+
 	event.get("tconstruct:fuels")
 		.add("ad_astra:cryo_fuel")
 		.add("cmi:delta_unstable_solution")
