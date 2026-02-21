@@ -157,7 +157,7 @@ StartupEvents.registry("item", (event) => {
 			.getEnergyStored((stack) => {
 				return stack.nbt?.energy || 0
 			})
-			.getMaxEnergyStored(() => {
+			.getMaxEnergyStored((stack) => {
 				return 150000
 			})
 			.extractEnergy((stack, amount, simulate) => {
