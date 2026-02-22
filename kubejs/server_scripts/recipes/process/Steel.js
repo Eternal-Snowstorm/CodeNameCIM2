@@ -15,8 +15,9 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 熔融铸铁
-	vintageimprovements.pressurizing(Fluid.of("cmi:molten_cast_iron", 90), [
-		["#create:crushed_raw_materials/iron", "#forge:dusts/iron"],
+	vintageimprovements.pressurizing(
+		Fluid.of("cmi:molten_cast_iron", 90), [
+		Fluid.of("tconstruct:molten_iron", 90),
 		"#forge:dusts/coal_coke"
 	]).heated()
 
@@ -36,7 +37,8 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 熔融钢
-	vintageimprovements.pressurizing(Fluid.of("tconstruct:molten_steel", 90), [
+	vintageimprovements.pressurizing(
+		Fluid.of("tconstruct:molten_steel", 90), [
 		"cmi:refined_iron_bloom"
 	]).processingTime(10 * 20).superheated()
 })

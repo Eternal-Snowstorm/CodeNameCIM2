@@ -148,5 +148,16 @@ ServerEvents.recipes((event) => {
 			"#forge:slimeball/blood"
 		])
 		.build("nebula_tinker:tconstruct/modifier/ability/causal_truncation")
+
+	// 发条
+	new ModifierRecipeBuilder("nebula_tinker:clockwork", 1)
+		.allowCrystal(true)
+		.checkTraitLevel(true)
+		.tools("#tconstruct:modifiable/melee")
+		.slots("abilities", 1)
+		.inputs([
+			"cmi:andesite_mechanism"
+		])
+		.build("nebula_tinker:tconstruct/modifier/ability/clockwork")
 	// endregion
 })

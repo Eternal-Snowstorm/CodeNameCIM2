@@ -2,13 +2,23 @@ ServerEvents.recipes((event) => {
     let { create, vintageimprovements } = event.recipes
 
     // 不稳红石
-    vintageimprovements.pressurizing(Fluid.of("thermal:redstone", 125), [
+    vintageimprovements.pressurizing(
+        Fluid.of("thermal:redstone", 125), [
         "#forge:dusts/redstone"
     ]).heatRequirement(global.HeatLevel["heated"])
 
     // 硫酸
-    vintageimprovements.pressurizing(Fluid.of("mekanism:sulfuric_acid", 1000), [
+    vintageimprovements.pressurizing(
+        Fluid.of("mekanism:sulfuric_acid", 1000), [
         Fluid.of("minecraft:water", 1000),
         Fluid.of("mekanism:sulfur_trioxide", 1000)
     ]).processingTime(500).id("vintageimprovements:pressurizing/sulfuric_acid")
+
+    vintageimprovements.pressurizing(
+        Fluid.of("tconstruct:molten_iron", 90), [
+        [
+            "#forge:dusts/iron",
+            "#create:crushed_raw_materials/iron"
+        ]
+    ]).heated().processingTime(80)
 })
