@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
 		],
 		"time": 200
 	})
-	
+
 	// 结构塑胶
 	event.custom({
 		"type": "immersiveengineering:refinery",
@@ -120,14 +120,92 @@ ServerEvents.recipes((event) => {
 			"tag": "cmi:polyvinyl_alcohol"
 		},
 		"result": {
-			"amount": 100,
+			"amount": 200,
 			"fluid": "cmi:structural_plastic",
 		}
 	})
 
 	// 结构玻璃
-	thermal.bottler("mekanism:structural_glass",[
-		Fluid.of("cmi:structural_plastic",200),
+	thermal.bottler("mekanism:structural_glass", [
+		Fluid.of("cmi:structural_plastic", 200),
 		"ae2:quartz_glass"
+	])
+
+	// 轻芳烃
+	event.custom({
+		"type": "immersiveengineering:refinery",
+		"catalyst": Ingredient.of("#forge:plates/vanadium").toJson(),
+		"energy": 120,
+		"input0": {
+			"amount": 100,
+			"tag": "forge:naphtha"
+		},
+		"input1": {
+			"amount": 100,
+			"tag": "forge:acetaldehyde"
+		},
+		"result": {
+			"amount": 200,
+			"fluid": "cmi:light_aromatics",
+		}
+	})
+
+	// 乙醇
+	immersiveengineering.fermenter(["#forge:fermentable"], Fluid.of("immersiveengineering:ethanol", 100),
+		Item.of("createaddition:biomass").withChance(0.1), 2400)
+
+	// 苯 乙烯
+	thermal.refinery([
+		Fluid.of("cmi:benzene", 50),
+		Fluid.of("mekanism:ethene", 50)
+	], [
+		Fluid.of("cmi:light_aromatics", 100)
+	])
+	thermal_extra.advanced_refinery([
+		Fluid.of("cmi:benzene", 50),
+		Fluid.of("mekanism:ethene", 100)
+	], [
+		Fluid.of("cmi:light_aromatics", 100)
+	])
+
+	// 三硝基甲苯溶液
+	event.custom({
+		"type": "immersiveindustry:chemical",
+		"inputs": [
+		],
+		"input_fluids": [
+			{
+				"tag": "cmi:nitric_acid",
+				"amount": 200
+			},
+			{
+				"tag": "cmi:benzene",
+				"amount": 200
+			},
+			{
+				"tag": "forge:ethene",
+				"amount": 200
+			}
+		],
+		"result_fluids": [
+			{
+				"fluid": "cmi:trinitrotoluene_solution",
+				"amount": 600
+			}
+		],
+		"outputs": [
+		],
+		"time": 200
+	})
+	// 三硝基甲苯
+	thermal.refinery([
+		"cmi:trinitrotoluene"
+	], [
+		Fluid.of("cmi:trinitrotoluene_solution", 100)
+	])
+	thermal_extra.advanced_refinery([
+		"2x cmi:trinitrotoluene"
+	], [
+		Fluid.of("cmi:trinitrotoluene_solution", 100)
 	])
 })
