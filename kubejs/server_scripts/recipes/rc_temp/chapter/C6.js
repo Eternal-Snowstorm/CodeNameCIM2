@@ -144,4 +144,9 @@ ServerEvents.recipes((event) => {
 	], [
 		Fluid.of("cmi:trinitrotoluene_solution", 100)
 	])
+
+	// 萤石粉
+	vintageimprovements.laser_cutting("minecraft:glowstone_dust",[
+		"#forge:dusts/amethyst"
+	])
 })
