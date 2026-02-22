@@ -152,7 +152,7 @@ ServerEvents.recipes((event) => {
 	createdieselgenerators.distillation([
 		Fluid.of("thermal_extra:naphtha", 100),
 		Fluid.of("cmi:benzene", 100),
-		Fluid.of("cmi:light_olefin", 100),
+		Fluid.of("cmi:light_olefin", 200),
 	], [
 		Fluid.of("cmi:cracked_gasoline", 500)
 	]).heatRequirement(global.HeatLevel["heated"])
@@ -217,13 +217,13 @@ ServerEvents.recipes((event) => {
 	// 轻烯烃 石脑油
 	thermal.refinery([
 		Fluid.of("thermal_extra:naphtha", 50),
-		Fluid.of("cmi:light_olefin", 50)
+		Fluid.of("cmi:light_olefin", 100)
 	], [
 		Fluid.of("createdieselgenerators:diesel", 100)
 	])
 	thermal_extra.advanced_refinery([
-		Fluid.of("thermal_extra:naphtha", 50),
-		Fluid.of("cmi:light_olefin", 100)
+		Fluid.of("thermal_extra:naphtha", 100),
+		Fluid.of("cmi:light_olefin", 200)
 	], [
 		Fluid.of("createdieselgenerators:diesel", 100)
 	])
