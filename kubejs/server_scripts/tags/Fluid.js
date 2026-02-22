@@ -123,6 +123,9 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("cmi:polyvinyl_alcohol")
 		.add("cmi:polyvinyl_alcohol")
 
+	event.get("cmi:light_aromatics")
+		.add("cmi:light_aromatics")
+
 	event.get("tconstruct:fuels")
 		.add("ad_astra:cryo_fuel")
 		.add("cmi:delta_unstable_solution")

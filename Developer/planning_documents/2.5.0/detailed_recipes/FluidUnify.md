@@ -10,5 +10,7 @@ MEK,mekanism:steam
 沉浸工程,immersiveengineering:creosote
 **柴油**
 柴油动力,createdieselgenerators:diesel
+**乙醇**
+沉浸工程,immersiveengineering:ethanol
 
 
