@@ -21,6 +21,7 @@ ServerEvents.recipes((event) => {
 		"createaddition:mixing/bioethanol",
 		"create:milling/andesite",
 		"create:industrial_iron_block_from_ingots_iron_stonecutting",
+		"create:industrial_iron_block_from_iron_ingots_stonecutting",
 		"create:crushing/tuff",
 		"create:crushing/tuff_recycling",
 		"create:milling/coal",
@@ -34,6 +35,11 @@ ServerEvents.recipes((event) => {
 		"create:milling/beetroot",
 
 	]
+
+	global.dyeColorGroup.forEach((color) => {
+		removeRecipeIds.push(`createdeco:${color}_shipping_container`)
+	})
+
 	removeRecipeIds.forEach((id) => {
 		event.remove({
 			id: id

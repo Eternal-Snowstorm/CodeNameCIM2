@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, thermal, thermal_extra, vintageimprovements, tconstruct, immersiveengineering} = event.recipes
+	let { create, createdieselgenerators, thermal, thermal_extra, vintageimprovements, tconstruct, immersiveengineering } = event.recipes
 
 	// 纯净石英
 	thermal.crystallizer("cmi:pure_quartz_prism", [
@@ -255,23 +255,23 @@ ServerEvents.recipes((event) => {
 	// 	],
 	// 	"time": 200
 	// })
-    event.custom({
-        "type": "immersiveengineering:mixer",
-        "energy": 1600,
-        "fluid": {
-            "amount": 50,
-            "tag": "cmi:light_olefin"
-        },
-        "inputs": [
-            {
-                "tag": "forge:silicon"
-            }
-        ],
-        "result": {
-            "amount": 200,
-            "fluid": "cmi:light_silicone_ether"
-        }
-    })
+	event.custom({
+		"type": "immersiveengineering:mixer",
+		"energy": 1600,
+		"fluid": {
+			"amount": 50,
+			"tag": "cmi:light_olefin"
+		},
+		"inputs": [
+			{
+				"tag": "forge:silicon"
+			}
+		],
+		"result": {
+			"amount": 200,
+			"fluid": "cmi:light_silicone_ether"
+		}
+	})
 
 	// 聚硅醚
 	event.custom({
@@ -321,11 +321,11 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 硅橡胶
-	thermal.chiller("cmi:silicon_rubber",[
-		Fluid.of("cmi:silicon_rubber",200)
+	thermal.chiller("cmi:silicon_rubber", [
+		Fluid.of("cmi:silicon_rubber", 200)
 	])
-	thermal.chiller("cmi:silicon_rubber_plate",[
-		Fluid.of("cmi:silicon_rubber",200),
+	thermal.chiller("cmi:silicon_rubber_plate", [
+		Fluid.of("cmi:silicon_rubber", 200),
 		"#tconstruct:casts/multi_use/plate"
 	])
 
@@ -336,7 +336,7 @@ ServerEvents.recipes((event) => {
 	], [
 		Fluid.of("cmi:vinegar", 200)
 	]).heatRequirement(global.HeatLevel["heated"])
-	
+
 
 
 

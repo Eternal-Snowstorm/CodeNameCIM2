@@ -22,6 +22,14 @@ ServerEvents.recipes((event) => {
 			.time(100)
 	})
 
+	// 丝绢
+	tconstruct.casting_table("tconstruct:silky_cloth")
+		.fluid(Fluid.of("tconstruct:molten_rose_gold", 90))
+		.cast("farmersdelight:canvas")
+		.cooling_time(40)
+		.cast_consumed(true)
+		.id("tconstruct:tools/modifiers/silky_cloth")
+
 	// 冰!
 	tconstruct.casting_basin("minecraft:ice")
 		.fluid(Fluid.of("minecraft:water", 1000))

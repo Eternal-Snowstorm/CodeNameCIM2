@@ -177,5 +177,8 @@ ServerEvents.recipes((event) => {
 		"#forge:fuels/bio"
 	])
 
-	// 液态超经验
+	// 工业铁
+	create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
+		"#forge:dusts/iron"
+	]).heatRequirement("grilled")
 })

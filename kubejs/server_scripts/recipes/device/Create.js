@@ -389,9 +389,16 @@ ServerEvents.recipes((event) => {
 		"M",
 		"A"
 	], {
-		A: "#forge:plates/iron",
+		A: "#forge:plates/industrial_iron",
 		M: Mechanism.WOODEN.COM
 	}).id('create:crafting/kinetics/item_vault')
+
+	kubejs.shaped("create_connected:item_silo", [
+		"AMA"
+	], {
+		A: "#forge:plates/industrial_iron",
+		M: Mechanism.WOODEN.COM
+	}).id("create_connected:crafting/kinetics/item_silo")
 
 	// 增产机壳
 	let casingFrame = [
