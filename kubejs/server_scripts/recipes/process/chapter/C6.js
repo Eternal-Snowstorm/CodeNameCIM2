@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, thermal, thermal_extra, vintageimprovements, tconstruct, immersiveengineering } = event.recipes
+	let { create, createdieselgenerators, thermal, thermal_extra, vintageimprovements, tconstruct, immersiveengineering, mekanism} = event.recipes
 
 	thermal.centrifuge([
 		Item.of("minecraft:blaze_powder").withChance(0.5),
@@ -213,4 +213,14 @@ ServerEvents.recipes((event) => {
 	vintageimprovements.laser_cutting("minecraft:glowstone_dust",[
 		"#forge:dusts/amethyst"
 	])
+
+	// 浑浊废液
+	thermal.compression_fuel(Fluid.of("cmi:turbid_waste_liquid",1000),10000)
+
+	// // 浓缩海水
+
+	// // 
+	// mekanism.evaporating(Fluid.of("cmi:concentrated_sea_water",1,
+	// 	[Fluid.of("cmi:sea_water",10)]
+	// )
 })
