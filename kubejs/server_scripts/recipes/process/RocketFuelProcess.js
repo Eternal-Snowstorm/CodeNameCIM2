@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
 	create.mixing(Fluid.of("cmi:photosyn_fluid", 125), [
 		Fluid.of("minecraft:water", 500),
 		"minecraft:glowstone_dust",
-		"32x #minecraft:saplings",
+		"16x #minecraft:saplings",
 		"16x createaddition:biomass"
 	]).heated()
 

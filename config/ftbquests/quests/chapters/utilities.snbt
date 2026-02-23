@@ -616,6 +616,34 @@
 			x: 8.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			description: [
+				"高空或者海面施工时很有用"
+				"也可以用于虚空自救"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "immersiveengineering:balloon"
+				tag: { }
+			}
+			id: "19A84411941CC787"
+			subtitle: "可以在空中放置方块"
+			tasks: [{
+				id: "4DDE99136BA48AA6"
+				item: {
+					Count: 1
+					id: "immersiveengineering:balloon"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "凭空放置方块"
+			x: 2.0d
+			y: 9.0d
+		}
 	]
 	title: "{ftbquests.chapter.utilities.title}"
 }
