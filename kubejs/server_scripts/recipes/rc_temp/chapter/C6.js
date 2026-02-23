@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { thermal, thermal_extra, immersiveengineering } = event.recipes
+	let { thermal, thermal_extra, immersiveengineering, vintageimprovements } = event.recipes
 
 	thermal.centrifuge([
 		Item.of("minecraft:blaze_powder").withChance(0.5),
@@ -146,7 +146,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 萤石粉
-	vintageimprovements.laser_cutting("minecraft:glowstone_dust",[
+	vintageimprovements.laser_cutting("minecraft:glowstone_dust", [
 		"#forge:dusts/amethyst"
 	])
 })
