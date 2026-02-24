@@ -71,7 +71,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 植物油
-	create.compacting(Fluid.of("createdieselgenerators:plant_oil",100),[
+	create.compacting(Fluid.of("createdieselgenerators:plant_oil", 100), [
 		"#forge:seeds"
 	])
 })
