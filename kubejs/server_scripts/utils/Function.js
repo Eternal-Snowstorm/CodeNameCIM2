@@ -132,6 +132,11 @@ function aeCharger(output, input) {
 	}
 }
 
+/**
+ * 
+ * @param {Internal.ItemStack_} input 
+ * @returns 
+ */
 function IEIngredient(input) {
 	if (Array.isArray(input)) {
 		let count = 0
