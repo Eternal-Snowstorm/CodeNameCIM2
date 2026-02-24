@@ -65,6 +65,9 @@ StartupEvents.registry("fluid", (event) => {
     // 铂溶液
     addColorFluid("platinum_solution", 0xE1FFFF)
 
+    // 铬溶液
+    addColorFluid("chromium_solution", 0x98D9D9)
+
     // 钛溶液
     addColorFluid("titanium_solution", 0xE2B1E3)
 
