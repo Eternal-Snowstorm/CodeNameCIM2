@@ -11,19 +11,4 @@ ServerEvents.recipes((event) => {
 		],
 		"result": Item.of("ae2:quantum_entangled_singularity", 4).toJson()
 	}).id("ae2:transform/entangled_singularity")
-
-	// 砖泥
-	event.custom({
-		"type": "ae2:transform",
-		"circumstance": {
-			"type": "fluid",
-			"tag": "minecraft:water"
-		},
-		"ingredients": [
-			Ingredient.of("#minecraft:sand").toJson(),
-			Ingredient.of("#forge:clay").toJson(),
-			Item.of("minecraft:gravel").toJson()
-		],
-		"result": Item.of("tconstruct:grout", 2).toJson()
-	}).id("tconstruct:smeltery/seared/grout")
 })

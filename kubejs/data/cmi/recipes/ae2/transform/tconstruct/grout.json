@@ -1,0 +1,22 @@
+{
+	"type": "ae2:transform",
+	"circumstance": {
+		"type": "fluid",
+		"tag": "minecraft:water"
+	},
+	"ingredients": [
+		{
+			"tag": "minecraft:sand"
+		},
+		{
+			"tag": "forge:clay"
+		},
+		{
+			"item": "minecraft:gravel"
+		}
+	],
+	"result": {
+		"item": "tconstruct:grout",
+		"count": 2
+	}
+}

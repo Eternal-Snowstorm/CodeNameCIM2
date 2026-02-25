@@ -105,6 +105,10 @@ ServerEvents.tags("item", (event) => {
 		.add("ad_astra:cheese_block")
 		.add("tconstruct:cheese_block")
 
+	// 木屑
+	event.get("forge:dusts/wood")
+		.add("createdieselgenerators:wood_chip")
+
 	// 淤泥产出
 	event.get("cmi:liquid_output")
 		.add("deepdrilling:sludge_pump")
