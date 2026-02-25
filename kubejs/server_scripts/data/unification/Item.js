@@ -153,6 +153,12 @@ ServerEvents.highPriorityData((event) => {
 		"cmi:unpack_mold"
 	))
 
+	// 木屑
+	addJsonFile("wood_dust", addUnification(
+		"#forge:dusts/wood",
+		"createdieselgenerators:wood_chip"
+	))
+
 	/**
 	 * @example addJsonFile("coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
 	 * @param {Internal.Item | Internal.Ingredient} match 

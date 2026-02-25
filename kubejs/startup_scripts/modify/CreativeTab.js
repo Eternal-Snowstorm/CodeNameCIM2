@@ -69,3 +69,29 @@ StartupEvents.modifyCreativeTab("thermalconstruct:thermal_construct_tab", (event
 StartupEvents.modifyCreativeTab("functionalstorage:main", (event) => {
 	event.setIcon("functionalstorage:cherry_1")
 })
+
+StartupEvents.modifyCreativeTab("minecraft:tools_and_utilities", (event) => {
+	event.remove([
+		"@mekanism"
+	])
+})
+StartupEvents.modifyCreativeTab("minecraft:redstone_blocks", (event) => {
+	event.remove([
+		"@mekanism",
+		"@mekanismgenerators"
+	])
+})
+StartupEvents.modifyCreativeTab("minecraft:functional_blocks", (event) => {
+	event.remove([
+		"@mekanism"
+	])
+})
+StartupEvents.modifyCreativeTab("minecraft:ingredients", (event) => {
+	event.remove([
+		"@mekanism",
+		"@create",
+		"@thermal",
+		"@cmi",
+		"@immersiveengineering"
+	])
+})
