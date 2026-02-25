@@ -23,7 +23,8 @@ ServerEvents.recipes((event) => {
         "steampowered:pressurized_steam_container",
         "#forge:ingots/steel",
         "forge:storage_blocks/steel",
-        "quark:grate"
+        "quark:grate",
+		"@torcherino"
     ]
     removeOutput.forEach((output) => {
         event.remove({

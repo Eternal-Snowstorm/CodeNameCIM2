@@ -33,9 +33,7 @@ ServerEvents.recipes((event) => {
 		"createdieselgenerators:basin_fermenting/fermentable",
 		"createdieselgenerators:basin_fermenting/fermented_spider_eye",
 		"create:milling/beetroot",
-
 	]
-
 	global.dyeColorGroup.forEach((color) => {
 		removeRecipeIds.push(`createdeco:${color}_shipping_container`)
 	})

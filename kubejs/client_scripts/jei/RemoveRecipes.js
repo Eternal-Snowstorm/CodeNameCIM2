@@ -17,5 +17,15 @@ JEIEvents.removeRecipes((event) => {
 		"cmi:immersiveengineering/blast_furnace/steel_ingot/stockpot",
 		"cmi:immersiveengineering/blast_furnace/steel_ingot/stockpot_lid",
 	])
-	// removeRecipeFromJEI("ae2:transform", "cmi:ae2/transform/max_storage_upgrade")
+	removeRecipeFromJEI("custommachinery:custom_machine", [
+		"torcherino:torcherino",
+		"torcherino:lanterino",
+		"torcherino:lantern",
+		"torcherino:compressed_torcherino",
+		"torcherino:compressed_lanterino",
+		"torcherino:compressed_lantern",
+		"torcherino:double_compressed_torcherino",
+		"torcherino:double_compressed_lanterino",
+		"torcherino:double_compressed_lantern"
+	])
 })
