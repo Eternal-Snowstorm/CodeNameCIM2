@@ -132,6 +132,9 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("cmi:waste_brine")
 		.add("cmi:waste_brine")
 
+	event.get("cmi:delta_unstable_solution")
+		.add("cmi:delta_unstable_solution")
+
 	event.get("tconstruct:fuels")
 		.add("ad_astra:cryo_fuel")
 		.add("cmi:delta_unstable_solution")
