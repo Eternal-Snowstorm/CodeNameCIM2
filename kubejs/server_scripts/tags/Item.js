@@ -489,6 +489,9 @@ ServerEvents.tags("item", (event) => {
 		.add("#forge:nuggets/sodium")
 		.add("#forge:storage_blocks/sodium")
 
+	event.get("cmi:delta_blackstone_source")
+		.add("cmi:delta_blackstone_source")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
