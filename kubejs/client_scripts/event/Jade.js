@@ -59,7 +59,7 @@ JadeEvents.onClientRegistration((event) => {
 			 * It only tells the editor to treat accessor as BlockAccessor,
 			 * so method autocompletion becomes available.
 			 *
-			 * @type {$BlockAccessor}
+			 * @type {Internal.BlockAccessor}
 			 */
 			let acc = accessor
 
@@ -112,7 +112,7 @@ JadeEvents.onClientRegistration((event) => {
 		 * })
 		 *
 		 * @param {Internal.Block_} block 方块注册id
-		 * @param {(acc: Internal.BlockAccessor, tooltip: Internal.ITooltip) => void} handler
+		 * @param {Internal.BiConsumer_<Internal.BlockAccessor, Internal.ITooltip>} handler
 		 * @returns {boolean}
 		 */
 		function addAdvancedTooltip(block, handler) {
