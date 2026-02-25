@@ -30,6 +30,12 @@ ServerEvents.recipes((event) => {
 	})
 
 	create.cutting([
+		"2x minecraft:stick"
+	], [
+		"#minecraft:wooden_slabs"
+	])
+
+	create.cutting([
 		"thermal:stripped_rubberwood_log",
 		"cmi:rubber_tree_bark"
 	], [

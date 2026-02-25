@@ -181,4 +181,20 @@ ServerEvents.recipes((event) => {
 	create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
 		"#forge:dusts/iron"
 	]).heatRequirement("grilled")
+
+	// 墨水
+	create.mixing(
+		Fluid.of("create_enchantment_industry:ink", 250), [
+		Fluid.of("minecraft:water", 250), [
+			"#forge:dusts/charcoal",
+			"#forge:dusts/coal"
+		]]).id("create_enchantment_industry:mixing/ink")
+
+	// 超态经验
+	create.mixing(
+		Fluid.of("create_enchantment_industry:hyper_experience", 10), [
+		"#forge:dusts/lapis",
+		Fluid.of("create_enchantment_industry:ink", 25),
+		Fluid.of("create_enchantment_industry:experience", 100)
+	]).id("create_enchantment_industry:mixing/hyper_experience")
 })
