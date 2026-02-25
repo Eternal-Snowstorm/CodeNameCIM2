@@ -204,4 +204,22 @@ ServerEvents.recipes((event) => {
         "large_only": true,
         "time": 200
     })
+
+	// 电镀液
+	create.mixing(Fluid.of("cmi:plating_solution",1000),[
+		"#forge:dusts/chromium",
+		Fluid.of("mekanism:sulfuric_acid",500)
+	])
+
+	// 锇砖瓦
+	thermal.bottler("cmi:osmium_tile",[
+		"#forge:plates/osmium",
+		Fluid.of("cmi:structural_plastic",200)
+	])
+	
+	// 钢制机壳
+	create.item_application("mekanism:steel_casing",[
+		"#forge:plates/stainless_steel",
+		"cmi:osmium_tile"
+	])
 })
