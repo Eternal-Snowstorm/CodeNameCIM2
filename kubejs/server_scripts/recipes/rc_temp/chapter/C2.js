@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { farmersdelight, create, createdieselgenerators,  tconstruct } = event.recipes
+	let { farmersdelight, create, createdieselgenerators, tconstruct } = event.recipes
 
 	// 醋
 	createdieselgenerators.basin_fermenting(Fluid.of("cmi:vinegar", 200), [
