@@ -23,7 +23,7 @@ ServerEvents.highPriorityData((event) => {
 				"type": "custommachinery:energy",
 				"id": "energy_input",
 				"mode": "input",
-				"capacity": 2000000,
+				"capacity": 2147483647,
 				"config": {
 					"default": "both"
 				}
@@ -34,7 +34,10 @@ ServerEvents.highPriorityData((event) => {
 				"id": "mechanism_1",
 				"filter": [
 					"cmi:programmed_flash_drive",
-					"cmi:empty_cell"
+					"cmi:empty_cell",
+					"#cmi:torch",
+					"#cmi:lantern",
+					"#cmi:pumpkin"
 				]
 			},
 			{
@@ -43,7 +46,10 @@ ServerEvents.highPriorityData((event) => {
 				"id": "mechanism_2",
 				"filter": [
 					"cmi:programmed_flash_drive",
-					"cmi:empty_cell"
+					"cmi:empty_cell",
+					"#cmi:torch",
+					"#cmi:lantern",
+					"#cmi:pumpkin"
 				]
 			},
 			{
@@ -52,7 +58,10 @@ ServerEvents.highPriorityData((event) => {
 				"id": "mechanism_3",
 				"filter": [
 					"cmi:programmed_flash_drive",
-					"cmi:empty_cell"
+					"cmi:empty_cell",
+					"#cmi:torch",
+					"#cmi:lantern",
+					"#cmi:pumpkin"
 				]
 			},
 			{
@@ -61,7 +70,10 @@ ServerEvents.highPriorityData((event) => {
 				"id": "mechanism_4",
 				"filter": [
 					"cmi:programmed_flash_drive",
-					"cmi:empty_cell"
+					"cmi:empty_cell",
+					"#cmi:torch",
+					"#cmi:lantern",
+					"#cmi:pumpkin"
 				]
 			},
 			{
@@ -74,6 +86,7 @@ ServerEvents.highPriorityData((event) => {
 					"cmi:tier_2_aviation_cell",
 					"cmi:tier_3_aviation_cell",
 					"cmi:tier_4_aviation_cell",
+					"minecraft:clock"
 				]
 			},
 			{

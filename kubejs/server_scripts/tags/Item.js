@@ -105,6 +105,10 @@ ServerEvents.tags("item", (event) => {
 		.add("ad_astra:cheese_block")
 		.add("tconstruct:cheese_block")
 
+	// 木屑
+	event.get("forge:dusts/wood")
+		.add("createdieselgenerators:wood_chip")
+
 	// 淤泥产出
 	event.get("cmi:liquid_output")
 		.add("deepdrilling:sludge_pump")
@@ -491,6 +495,21 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("cmi:delta_blackstone_source")
 		.add("cmi:delta_blackstone_source")
+
+	event.get("cmi:torch")
+		.add("minecraft:torch")
+		.add("minecraft:soul_torch")
+		.add("minecraft:redstone_torch")
+		.add("alexscaves:bioluminescent_torch")
+
+	event.get("cmi:pumpkin")
+		.add("minecraft:pumpkin")
+		.add("minecraft:carved_pumpkin")
+		.add("minecraft:jack_o_lantern")
+
+	event.get("cmi:lantern")
+		.add("minecraft:lantern")
+		.add("minecraft:soul_lantern")
 
 	let crushedMaterialGroup = [
 		"iron",

@@ -29,6 +29,17 @@ ServerEvents.recipes((event) => {
 		])
 	})
 
+	// 树苗
+	WoodMaterials.forEach((wood) => {
+		let { SAPLING, LEAVE } = wood
+
+		create.cutting([
+			LEAVE,
+			Item.of("minecraft:stick", 2)
+		], SAPLING
+		)
+	})
+
 	create.cutting([
 		"2x minecraft:stick"
 	], [
@@ -42,11 +53,4 @@ ServerEvents.recipes((event) => {
 		"thermal:rubberwood_log"
 	])
 
-	farmersdelight.cutting([
-		"thermal:stripped_rubberwood_log",
-		"cmi:rubber_tree_bark"
-	], [
-		"thermal:rubberwood_log"
-	], "#farmersdelight:tools/knives"
-	)
 })
