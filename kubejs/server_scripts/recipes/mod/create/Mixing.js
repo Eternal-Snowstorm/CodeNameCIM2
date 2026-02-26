@@ -187,5 +187,5 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/lapis",
 		Fluid.of("create_enchantment_industry:ink", 25),
 		Fluid.of("create_enchantment_industry:experience", 100)
-	]).id("create_enchantment_industry:mixing/hyper_experience")
+	]).superheated().id("create_enchantment_industry:mixing/hyper_experience")
 })
