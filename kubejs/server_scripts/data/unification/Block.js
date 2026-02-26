@@ -47,7 +47,23 @@ ServerEvents.highPriorityData((event) => {
 
 	addUnification("steel_cluster", [
 		"tconstruct:steel_cluster"
-	],"minecraft:air")
+	], "minecraft:air")
+
+	addUnification("carrot_crate", [
+		"#forge:storage_blocks/carrot",
+	], "farmersdelight:carrot_crate")
+
+	addUnification("potato_crate", [
+		"#forge:storage_blocks/potato",
+	], "farmersdelight:potato_crate")
+
+	addUnification("beetroot_crate", [
+		"#forge:storage_blocks/beetroot",
+	], "farmersdelight:beetroot_crate")
+
+	addUnification("straw_bale", [
+		"#forge:storage_blocks/rice_panicle"
+	], "kaleidoscope_cookery:straw_block")
 
 	function addUnification(name, match, block) {
 		let itemUnification = {

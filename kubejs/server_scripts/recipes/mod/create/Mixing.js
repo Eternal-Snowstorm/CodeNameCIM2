@@ -35,15 +35,6 @@ ServerEvents.recipes((event) => {
 	// 	Fluid.of("thermal:redstone", 400)
 	// ])
 
-	// 工业铁
-	create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
-		[
-			"#create:crushed_raw_materials/iron",
-			"#forge:dusts/iron"
-		],
-		"cmi:lime"
-	]).heated().id("createdeco:compacting/industrial_iron_ingot")
-
 	// 殷钢
 	create.mixing(Fluid.of("tconstruct:molten_invar", 270), [
 		"2x #forge:ingots/iron",

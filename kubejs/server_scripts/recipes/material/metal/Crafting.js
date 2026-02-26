@@ -8,6 +8,7 @@ ServerEvents.recipes((event) => {
 		const RAW_ORE = `#forge:raw_materials/${metal}`
 		const RAW_BLOCK = `#forge:storage_blocks/raw_${metal}`
 		const RAW_NUGGET = `#forge:raw_nuggets/${metal}`
+		const CRUSHED = `#create:crushed_raw_materials/${metal}`
 
 		if (IngrUtils.isNotNull(BLOCK)) {
 			kubejs.shapeless(`9x ${INGOT}`, [
@@ -53,11 +54,16 @@ ServerEvents.recipes((event) => {
 			} else {
 				console.warn(`No storage block found for raw ${metal}!`)
 			}
+		} else {
+			console.warn(`No raw material found for ${metal}!`)
+		}
+
+		if (IngrUtils.isNotNull(CRUSHED)) {
 			if (IngrUtils.isNotNull(RAW_NUGGET)) {
 				kubejs.shapeless(`4x ${RAW_NUGGET}`, [
-					RAW_ORE
+					CRUSHED
 				])
-				kubejs.shaped(RAW_ORE, [
+				kubejs.shaped(CRUSHED, [
 					"AA",
 					"AA"
 				], {
@@ -67,7 +73,7 @@ ServerEvents.recipes((event) => {
 				console.warn(`No nugget found for raw ${metal}!`)
 			}
 		} else {
-			console.warn(`No raw material found for ${metal}!`)
+			console.warn(`No crushed vers found for raw ${metal}!`)
 		}
 
 		event.remove([
