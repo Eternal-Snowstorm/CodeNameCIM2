@@ -36,4 +36,15 @@ ServerEvents.recipes((event) => {
 	create.crushing("mekanism:dust_charcoal", [
 		"minecraft:charcoal"
 	]).id("create:crushing/charcoal")
+
+	create.crushing([
+		"mekanism:dust_coal",
+		Item.of("2x mekanism:dust_coal").withChance(0.5),
+		Item.of("thermal:sulfur_dust").withChance(0.3)
+	], "minecraft:coal")
+
+	create.crushing([
+		Item.of("minecraft:obsidian"),
+		Item.of("mekanism:dust_obsidian").withChance(0.5)
+	], "minecraft:obsidian")
 })
