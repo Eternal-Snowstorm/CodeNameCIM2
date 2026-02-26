@@ -44,6 +44,10 @@ StartupEvents.registry("item", (event) => {
 
 	addColorDustItem("end_stone", 0xF6FABD)
 	addColorDustItem("rubber", 0xECEBD6)
+	addColorDustItem("asurine", 0x4e73ea)
+	addColorDustItem("crimsite", 0xbb3c26)
+	addColorDustItem("ochrum", 0x9b8005)
+	addColorDustItem("veridium", 0x049146)
 
 	addAloneDustItem("andesite")
 	addAloneDustItem("calcite")

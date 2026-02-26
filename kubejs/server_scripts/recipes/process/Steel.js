@@ -1,19 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { create, vintageimprovements, tconstruct } = event.recipes
 
-	// 石灰粉
-	create.crushing([
-		Item.of("2x cmi:lime_dust"),
-		Item.of("cmi:lime_dust").withChance(0.5),
-		Item.of("cmi:lime_dust").withChance(0.5),
-	], [
-		["#create:stone_types/limestone", "minecraft:pointed_dripstone"]
-	])
-
-	create.milling("2x cmi:lime_dust", [
-		["#create:stone_types/limestone", "minecraft:pointed_dripstone"]
-	])
-
 	// 熔融铸铁
 	vintageimprovements.pressurizing(
 		Fluid.of("cmi:molten_cast_iron", 90), [

@@ -1,8 +1,7 @@
 ServerEvents.recipes((event) => {
 
     let removedMods = [
-        "steampowered",
-        "portality"
+        "steampowered"
     ]
 
     removedMods.forEach((mod) => {
