@@ -307,3 +307,43 @@ StartupEvents.registry("item", (event) => {
 	// 	.texture(`${global.namespace}:item/material/sea/mgoh2`)
 
 })
+
+
+
+{
+	{
+		{
+			{
+				{
+					{
+						{
+							{
+								{
+									{
+										{
+											{
+												{
+													{
+														{
+															{
+																{
+																	{
+																		{}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
