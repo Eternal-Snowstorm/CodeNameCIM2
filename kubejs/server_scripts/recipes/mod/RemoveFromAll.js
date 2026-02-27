@@ -1,5 +1,4 @@
 ServerEvents.recipes((event) => {
-
     let removedMods = [
         "steampowered"
     ]
