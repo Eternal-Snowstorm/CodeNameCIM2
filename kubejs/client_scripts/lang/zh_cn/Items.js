@@ -192,7 +192,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("blizz_unit", "暴雪冷凝单元")
 	addItemLang("calcite_dust", "方解石粉")
 	addItemLang("refractory_brick_bloom", "耐火砖坯")
-
+	addItemLang("piggy_bank", "破旧的存钱罐")
 
 	addCastItemLang("mechanism", "构件")
 	addCastItemLang("nugget", "粒")
