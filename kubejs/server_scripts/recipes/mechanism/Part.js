@@ -11,22 +11,30 @@ ServerEvents.recipes((event) => {
 		"minecraft:clay_ball"
 	])
 
+	// 魔力
+	kubejs.shapeless("cmi:magical_mechanism_part", [
+		"#forge:dusts/lapis",
+		"#forge:gems/amethyst"
+	])
+
 	// 机械
 	kubejs.shapeless("4x cmi:mechanical_mechanism_part", [
-		"create:cogwheel",
-		"#forge:ingots/andesite_alloy"
+		"#forge:gears/wooden",
+		"#forge:plates/andesite_alloy"
 	])
 
 	// 工程
 	kubejs.shapeless("4x cmi:engineering_mechanism_part", [
-		"#forge:plates/copper",
-		"immersiveengineering:component_iron"
+		"#forge:plates/constantan",
+		"2x #forge:wires/redstone",
+		"#immersiveengineering:circuits/logic"
 	])
 
 	// 通量
 	kubejs.shapeless("4x cmi:flux_mechanism_part", [
-		"thermal:rf_coil",
-		"#forge:plates/invar"
+		"#forge:plates/lead",
+		"2x #forge:dusts/redstone",
+		"#forge:gears/invar"
 	])
 
 	// 量子
