@@ -1,18 +1,25 @@
 EntityEvents.spawned((event) => {
 	let { entity } = event
 
+	let healthMap = {}
+
 	/**
-	 * @type {Partial<Record<Special.EntityType, number>>}
+	 * @param {Special.EntityType} id
+	 * @param {number} value
 	 */
-	let customHealth = {
-		"minecraft:ender_dragon": 2000
+	function setCustomHealth(id, value) {
+		healthMap[id] = value
 	}
 
-	let value = customHealth[entity.getType()]
+	// 注册
+	setCustomHealth("minecraft:ender_dragon", 2000)
 
 	if (!entity.isLiving()) {
 		return
 	}
+
+	let value = healthMap[entity.getType()]
+
 	if (!value) {
 		return
 	}
