@@ -203,6 +203,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 破旧的存钱罐
 	addItem("piggy_bank")
+		
 
 	let SomeModelsJson = {
 		cogwheel: function (material) {
