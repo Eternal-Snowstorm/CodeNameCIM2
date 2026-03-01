@@ -26,16 +26,6 @@ StartupEvents.registry("block", (event) => {
 		.hardness(5)
 		.resistance(5)
 
-	// 催生器
-	addBlock("accelerator")
-		.soundType(SoundType.METAL)
-		.hardness(4)
-		.resistance(4)
-		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock(global.MiningLevel["wooden"])
-		.tagBlock(global.WRENCH_PICKUP)
-		.requiresTool(true)
-
 	// 背景
 	addBlock("green_screen")
 		.lightLevel(15)
