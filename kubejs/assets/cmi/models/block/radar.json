@@ -5,6 +5,7 @@
 	"textures": {
 		"4": "cmi:block/radar"
 	},
+	"render_type": "cutout",
 	"elements": [
 		{
 			"from": [7.5, 20, 7.5],

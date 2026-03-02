@@ -4,6 +4,7 @@
 		"1": "cmi:block/accelerator",
 		"particle": "cmi:block/gen_side"
 	},
+	"render_type": "cutout",
 	"elements": [
 		{
 			"from": [1, 1, 1],
