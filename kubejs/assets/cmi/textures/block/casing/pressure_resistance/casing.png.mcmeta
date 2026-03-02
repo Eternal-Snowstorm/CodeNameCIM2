@@ -1,9 +1,5 @@
 {
-	"ctm": {
-		"ctm_version": 1,
-		"type": "ctm",
-		"textures": [
-			"cmi:block/casing/pressure_resistance/ctm"
-		]
+	"ldlib": {
+    "connection":"cmi:block/casing/pressure_resistance/ctm"
 	}
 }

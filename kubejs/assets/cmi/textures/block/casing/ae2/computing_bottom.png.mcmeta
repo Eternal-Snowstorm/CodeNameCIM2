@@ -1,9 +1,5 @@
 {
-	"ctm": {
-		"ctm_version": 1,
-		"type": "ctm",
-		"textures": [
-			"cmi:block/casing/ae2/computing_bottom_ctm"
-		]
+	"ldlib": {
+    "connection": "cmi:block/casing/ae2/computing_bottom_ctm"
 	}
 }
