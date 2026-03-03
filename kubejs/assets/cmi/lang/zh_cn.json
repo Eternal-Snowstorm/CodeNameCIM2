@@ -26,6 +26,7 @@
 	"itemGroup.cmi.random_mechanisms": "构件与革新: 随机构件",
 	"curios.identifier.mechanisms": "构件",
 	"promp.cmi.ender_mechanism.location_stored": "当前坐标已存入末影构件",
+	"promp.cmi.ender_mechanism.teleport_failed": "不支持跨维度传送！",
 	"message.cmi.debug.getHardness": "这个方块的硬度是: %s",
 	"text.cmi.dev": "§0● 开发中画面, 实际内容请以正式版为准",
 	"text.cmi.player": "§0● 测试中版本, 不代表最终品质",
