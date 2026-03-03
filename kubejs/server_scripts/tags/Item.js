@@ -156,6 +156,11 @@ ServerEvents.tags("item", (event) => {
 		.add("#forge:tools/knives")
 		.add("tconstruct:dagger")
 
+	// 树皮
+	event.get("cmi:tree_barks")
+		.add("farmersdelight:tree_bark")
+		.add("cmi:rubber_tree_bark")
+
 	event.get("minecraft:pickaxes")
 		.add("#forge:tools/paxels")
 

@@ -61,4 +61,6 @@ StartupEvents.registry("item", (event) => {
 	addNonDustItem("nitrocellulose")
 	// 生石灰
 	addNonDustItem("furnaced_lime")
+	// 草木灰
+	addNonDustItem("plant_ash")
 })

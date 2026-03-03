@@ -13,6 +13,11 @@ ServerEvents.recipes((event) => {
 		.creosote(5000)
 		.id("immersiveengineering:cokeoven/coke_block")
 
+	immersiveengineering.coke_oven("mekanism:dust_charcoal")
+		.input("#forge:dusts/wood")
+		.creosote(125)
+		.time(250 * 0.75)
+
 	event.custom({
 		"type": "immersiveindustry:rotary_kiln",
 		"input": Item.of("minecraft:charcoal").toJson(),
