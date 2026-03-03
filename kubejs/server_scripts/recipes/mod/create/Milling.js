@@ -60,4 +60,9 @@ ServerEvents.recipes((event) => {
 	], [
 		"thermal:lapis_dust"
 	])
+
+	// 硫粉
+	create.milling("thermal:sulfur_dust", [
+		"#forge:gems/sulfur"
+	])
 })

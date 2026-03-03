@@ -17,4 +17,22 @@ ServerEvents.recipes((event) => {
 		Fluid.of("create_enchantment_industry:hyper_experience", 1000),
 		"immersiveengineering:graphite_electrode"
 	])
+
+	// 紫水晶
+	create.filling("minecraft:small_amethyst_bud", [
+		"#forge:dusts/amethyst",
+		Fluid.of("cmi:crystal_catalyt", 50)
+	])
+	create.filling("minecraft:medium_amethyst_bud", [
+		"minecraft:small_amethyst_bud",
+		Fluid.of("cmi:crystal_catalyt", 50)
+	])
+	create.filling("minecraft:large_amethyst_bud", [
+		"minecraft:medium_amethyst_bud",
+		Fluid.of("cmi:crystal_catalyt", 50)
+	])
+	create.filling("minecraft:amethyst_cluster", [
+		"minecraft:large_amethyst_bud",
+		Fluid.of("cmi:crystal_catalyt", 50)
+	])
 })

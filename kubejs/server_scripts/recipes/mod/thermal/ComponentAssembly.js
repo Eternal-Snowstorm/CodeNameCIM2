@@ -1,0 +1,44 @@
+ServerEvents.recipes((event) => {
+    let { thermal_extra } = event.recipes
+
+    /**
+     * 
+     * @param {(Internal.OutputFluid_|OutputItem_)[]} output 
+     * @param {(Internal.InputFluid_|InputItem_)[]} inputs 
+     * @returns 
+     */
+    function addComponRecipe(output, inputs) {
+        return thermal_extra.component_assembly(output, inputs)
+            .energy(4000)
+    }
+
+    // 二极管
+    addComponRecipe("4x cmi:diode", [
+        "#forge:wires/electrum",
+        "#forge:plates/invar",
+        "#forge:prisms/pure_quartz"
+    ])
+
+    // 电子元件
+    addComponRecipe("2x immersiveengineering:component_electronic", [
+        "cmi:diode",
+        "#forge:treated_wood_slab",
+        "#forge:gems/quartz",
+        "#forge:wires/electrum"
+    ]).id("immersiveengineering:blueprint/component_electronic")
+
+    // 锇砖瓦
+    addComponRecipe("2x cmi:osmium_tile", [
+        "#forge:plates/aluminum",
+        "#forge:plates/osmium",
+        Fluid.of("cmi:structural_plastic", 200)
+    ])
+
+    // 钢制机壳
+    addComponRecipe("2x mekanism:steel_casing", [
+        "#forge:plates/stainless_steel",
+        "#forge:plates/stainless_steel",
+        "cmi:osmium_tile",
+        "#forge:gears/chromeplated_steel"
+    ])
+})
