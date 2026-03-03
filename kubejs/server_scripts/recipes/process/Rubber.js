@@ -1,9 +1,19 @@
 ServerEvents.recipes((event) => {
     let { farmersdelight, create, createdieselgenerators, tconstruct, vintageimprovements } = event.recipes
+
     // 醋
     createdieselgenerators.basin_fermenting(Fluid.of("cmi:vinegar", 200), [
         "#forge:seeds/rice"
     ])
+
+    // 醋酸
+    createdieselgenerators.distillation([
+        Fluid.of("cmi:vinegar_acid", 100),
+        Fluid.of("minecraft:water", 100),
+    ], [
+        Fluid.of("cmi:vinegar", 200)
+    ]).heatRequirement(global.HeatLevel["heated"])
+
     // 橡胶
     create.compacting("thermal:rubber", [
         Fluid.of("thermal:latex", 200)

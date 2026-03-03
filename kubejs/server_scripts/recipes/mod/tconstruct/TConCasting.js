@@ -108,6 +108,14 @@ ServerEvents.recipes((event) => {
 		.cooling_time(20 * 3)
 		.cast_consumed(true)
 
+	// 沥青
+	tconstruct.casting_table("thermal:bitumen")
+		.fluid(Fluid.of("cmi:bitumen", 200))
+		.cooling_time(20)
+	tconstruct.casting_basin("thermal:bitumen_block")
+		.fluid(Fluid.of("cmi:bitumen", 1800))
+		.cooling_time(180)
+
 	// 黏血球
 	tconstruct.casting_table("cmi:blood_slime_ball")
 		.fluid(Fluid.of("cmi:blood", 250))

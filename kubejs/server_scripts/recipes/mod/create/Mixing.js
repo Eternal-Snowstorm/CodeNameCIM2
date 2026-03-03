@@ -188,4 +188,17 @@ ServerEvents.recipes((event) => {
 		Fluid.of("create_enchantment_industry:ink", 25),
 		Fluid.of("create_enchantment_industry:experience", 100)
 	]).superheated().id("create_enchantment_industry:mixing/hyper_experience")
+
+	// 玫瑰石英
+	create.mixing("create:rose_quartz", [
+		"#forge:dusts/pure_quartz",
+		Fluid.of("thermal:redstone", 100)
+	])
+
+	// 晶体催生剂
+	create.mixing(Fluid.of("cmi:crystal_catalyt", 200), [
+		"#forge:fuels/bio",
+		Fluid.of("createdieselgenerators:plant_oil", 100),
+		Fluid.of("minecraft:water", 100)
+	])
 })

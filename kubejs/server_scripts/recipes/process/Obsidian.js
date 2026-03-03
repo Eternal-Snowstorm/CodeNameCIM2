@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { create, tconstruct } = event.recipes
+    let { create, tconstruct, thermal } = event.recipes
     let Inc = {
         OBSIDIAN_PLATE: "create:unprocessed_obsidian_sheet"
     }
@@ -17,6 +17,11 @@ ServerEvents.recipes((event) => {
         .cast("#tconstruct:casts/single_use/plate")
         .cooling_time(100)
         .cast_consumed(true)
+
+    thermal.chiller("create:sturdy_sheet", [
+        Fluid.of("tconstruct:molten_obsidian", 250),
+        "#tconstruct:casts/multi_use/plate"
+    ]).energy(4800)
 
     // 致密坚固板
     create.sequenced_assembly("cmi:dense_sturdy_sheet",

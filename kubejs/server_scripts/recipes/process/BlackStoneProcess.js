@@ -210,16 +210,4 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/chromium",
 		Fluid.of("mekanism:sulfuric_acid",500)
 	])
-
-	// 锇砖瓦
-	thermal.bottler("cmi:osmium_tile",[
-		"#forge:plates/osmium",
-		Fluid.of("cmi:structural_plastic",200)
-	])
-	
-	// 钢制机壳
-	create.item_application("mekanism:steel_casing",[
-		"#forge:plates/stainless_steel",
-		"cmi:osmium_tile"
-	])
 })

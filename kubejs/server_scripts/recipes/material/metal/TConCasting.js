@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
 
 		thermal.chiller(INGOT, [
 			Fluid.of(fluid, 90),
-			"thermal:chiller_ingot_cast"
+			`${MULTI_USE_CAST}/ingot`
 		]).energy(4800)
 
 		if (IngrUtils.isNotNull(NUGGET)) {
@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
 
 			thermal.chiller(NUGGET, [
 				Fluid.of(fluid, 10),
-				"cmi:bronze_nugget_cast"
+				`${MULTI_USE_CAST}/nugget`
 			]).energy(600)
 		} else {
 			console.warn(`No nugget found for ${metal}!`)
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
 
 			thermal.chiller(PLATE, [
 				Fluid.of(fluid, 90),
-				"thermal_extra:chiller_plate_cast"
+				`${MULTI_USE_CAST}/plate`
 			]).energy(4800)
 		} else {
 			console.warn(`No plate found for ${metal}!`)
@@ -98,7 +98,7 @@ ServerEvents.recipes((event) => {
 
 			thermal.chiller(ROD, [
 				Fluid.of(fluid, 45),
-				"thermal:chiller_rod_cast"
+				`${SINGLE_USE_CAST}/rod`
 			]).energy(2400)
 		} else {
 			console.warn(`No rod found for ${metal}!`)
@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
 
 			thermal.chiller(GEAR, [
 				Fluid.of(fluid, 360),
-				"thermalconstruct:bronze_cast_gear"
+				`${MULTI_USE_CAST}/gear`
 			]).energy(9600)
 		} else {
 			console.warn(`No gear found for ${metal}!`)
@@ -138,7 +138,7 @@ ServerEvents.recipes((event) => {
 
 			thermal.chiller(COIN, [
 				Fluid.of(fluid, 30),
-				"thermalconstruct:bronze_cast_coin"
+				`${MULTI_USE_CAST}/coin`
 			]).energy(1600)
 		} else {
 			console.warn(`No coins found for ${metal}!`)

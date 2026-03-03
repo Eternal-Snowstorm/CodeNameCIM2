@@ -1,0 +1,131 @@
+ServerEvents.recipes((event) => {
+    let { create, vintageimprovements, thermal } = event.recipes
+
+    // 石英粉
+    create.crushing("thermal:quartz_dust", [
+        "#forge:gems/quartz"
+    ])
+    create.milling("thermal:quartz_dust", [
+        "#forge:gems/quartz"
+    ])
+
+    // 纯净沙
+    create.emptying([
+        Fluid.of("cmi:pure_sand", 100),
+        "thermal:niter_dust"
+    ], [
+        "#minecraft:sand"
+    ])
+
+    // 纯净石英粉
+    vintageimprovements.pressurizing("cmi:pure_quartz_dust", [
+        "#forge:dusts/quartz",
+        Fluid.of("cmi:pure_sand", 100)
+    ]).superheated()
+
+    // 硅混合物
+    create.mixing("cmi:silicon_mixure", [
+        "#forge:dusts/coal_coke",
+        "#forge:dusts/pure_quartz"
+    ]).superheated()
+
+    // 硅
+    create.mixing([
+        "ae2:silicon",
+        Item.of("ae2:silicon", 2).withChance(0.1),
+        Item.of("create:scorchia").withChance(0.5)
+    ], [
+        "cmi:silicon_mixure",
+        Fluid.of("tconstruct:seared_stone", 250)
+    ]).superheated()
+
+    create.mixing([
+        "ae2:silicon",
+        Item.of("ae2:silicon", 2).withChance(0.1),
+        Item.of("create:scoria").withChance(0.5)
+    ], [
+        "cmi:silicon_mixure",
+        Fluid.of("tconstruct:scorched_stone", 250)
+    ]).superheated()
+
+    // 硅板
+    vintageimprovements.curving("ae2:printed_silicon", [
+        "#forge:silicon"
+    ]).itemAsHead("cmi:plate_mold")
+
+    // 轻硅醚
+    event.custom({
+        "type": "immersiveengineering:mixer",
+        "energy": 1600,
+        "fluid": {
+            "amount": 50,
+            "tag": "cmi:light_olefin"
+        },
+        "inputs": [
+            {
+                "tag": "forge:silicon"
+            }
+        ],
+        "result": {
+            "amount": 200,
+            "fluid": "cmi:light_silicone_ether"
+        }
+    })
+
+    // 聚硅醚
+    event.custom({
+        "type": "immersiveindustry:chemical",
+        "inputs": [
+        ],
+        "input_fluids": [
+            {
+                "tag": "cmi:light_silicone_ether",
+                "amount": 200
+            }
+        ],
+        "result_fluids": [
+            {
+                "fluid": "cmi:polysilicone_ether",
+                "amount": 200
+            }
+        ],
+        "outputs": [
+        ],
+        "time": 200
+    })
+    // 液态硅橡胶
+    event.custom({
+        "type": "immersiveindustry:chemical",
+        "inputs": [
+        ],
+        "input_fluids": [
+            {
+                "tag": "cmi:polysilicone_ether",
+                "amount": 200
+            },
+            {
+                "tag": "cmi:vinegar_acid",
+                "amount": 100
+            }
+        ],
+        "result_fluids": [
+            {
+                "fluid": "cmi:silicon_rubber",
+                "amount": 400
+            }
+        ],
+        "outputs": [
+        ],
+        "time": 200
+    })
+
+    // 硅橡胶
+    thermal.chiller("cmi:silicon_rubber", [
+        Fluid.of("cmi:silicon_rubber", 200)
+    ])
+    thermal.chiller("cmi:silicon_rubber_plate", [
+        Fluid.of("cmi:silicon_rubber", 200),
+        "#tconstruct:casts/multi_use/plate"
+    ])
+
+})
