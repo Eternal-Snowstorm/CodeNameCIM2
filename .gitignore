@@ -60,6 +60,7 @@ config/ftbquests/qusets/chapters/control*
 !/mods/Nebula Tinker-*.jar
 !/mods/Industrial Platform-*.jar
 !/mods/MasterfulMachinery*.jar
+!/mods/create_auto_track*.jar
 
 # ResourcePacks
 /resourcepacks/*
