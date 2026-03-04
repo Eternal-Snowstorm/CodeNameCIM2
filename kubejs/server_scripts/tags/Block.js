@@ -78,6 +78,9 @@ ServerEvents.tags("block", (event) => {
 			"thermal:fluid_cell_frame"
 		])
 
+	event.get("create:fan_transparent")
+		.add("tconstruct:seared_basin")
+
 	event.get("create:wrench_pickup")
 		.add([
 			"#thermal:machines",

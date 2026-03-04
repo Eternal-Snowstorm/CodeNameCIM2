@@ -2,7 +2,8 @@ ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 	const MECH = Mechanism.STONE.COM
 	const BRICK = "tconstruct:seared_brick"
-	const PRISM = "cmi:polished_quartz_prism"
+	const PRISM = "#forge:glass/prism"
+	const GLASS = "#forge:glass"
 
 	// 焦黑融化器
 	kubejs.shaped("tconstruct:seared_melter", [

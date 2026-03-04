@@ -4,6 +4,66 @@ ServerEvents.recipes((event) => {
 		ENGINE: "cmi:incomplete_steam_engine"
 	}
 
+	// 水车部件
+	kubejs.shaped("immersiveengineering:waterwheel_segment", [
+		" AA",
+		"A B",
+		"AB "
+	], {
+		A: "#minecraft:wooden_slabs",
+		B: "#forge:rods/wooden"
+	}).id("immersiveengineering:crafting/waterwheel_segment")
+
+	// 水车
+	kubejs.shaped("create:water_wheel", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "immersiveengineering:waterwheel_segment",
+		B: "create:andesite_casing"
+	}).id("create:crafting/kinetics/water_wheel")
+
+	// 大水车
+	kubejs.shaped("create:large_water_wheel", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "immersiveengineering:waterwheel_segment",
+		B: "create:water_wheel"
+	}).id("create:crafting/kinetics/large_water_wheel")
+
+	kubejs.shaped("create:large_water_wheel", [
+		"AAA",
+		"ABA",
+		"AAA"
+	], {
+		A: "immersiveengineering:waterwheel_segment",
+		B: "create:andesite_casing"
+	})
+
+	// 风车叶片
+	kubejs.shaped("2x create:white_sail", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: "#forge:string",
+		B: "#forge:rods/wooden",
+		C: "#forge:fabric_hemp"
+	}).id("createaddition:compat/immersiveengineering/fabric_sail")
+
+	kubejs.shaped("2x create:white_sail", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: "#forge:string",
+		B: "#forge:rods/wooden",
+		C: "#minecraft:wool"
+	}).id("create:crafting/kinetics/white_sail")
+
 	// 流体管道
 	kubejs.shaped("8x create:fluid_pipe", [
 		"AAA",
@@ -39,7 +99,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/iron",
 		B: "cmi:iron_mechanism",
-		C: "#forge:netherrack"
+		C: "minecraft:nether_bricks"
 	}).id("create:crafting/kinetics/empty_blaze_burner")
 
 	// 烈焰人燃烧室
@@ -50,7 +110,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/iron",
 		B: "cmi:iron_mechanism",
-		C: "#forge:netherrack",
+		C: "minecraft:nether_bricks",
 		D: "cmi:nether_mechanism"
 	}).id("create:crafting/kinetics/blaze_burner")
 
@@ -190,23 +250,6 @@ ServerEvents.recipes((event) => {
 		])
 	]).loops(1).transitionalItem(Inc.ENGINE)
 		.id("create:crafting/kinetics/steam_engine")
-
-	// 工作盆盖板
-	kubejs.shaped("createdieselgenerators:basin_lid", [
-		"ABA",
-		"C C"
-	], {
-		A: "#forge:plates/andesite_alloy",
-		B: "#forge:ingots/andesite_alloy",
-		C: "thermal:cured_rubber"
-	}).id("createdieselgenerators:crafting/basin_lid")
-
-	// 空白模块
-	kubejs.shapeless("deepdrilling:blank_module", [
-		"create:andesite_casing",
-		"cmi:andesite_mechanism",
-		"#forge:plates/iron"
-	]).id("deepdrilling:blank_module")
 
 	// 安山漏斗
 	kubejs.shaped("4x create:andesite_funnel", [
@@ -355,7 +398,7 @@ ServerEvents.recipes((event) => {
 		"A"
 	], {
 		A: "#forge:plates/copper",
-		B: "#forge:glass"
+		B: "#forge:glass/prism"
 	}).id("create:crafting/kinetics/fluid_tank")
 
 	kubejs.shaped("2x create:fluid_tank", [
@@ -371,7 +414,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: "#forge:plates/copper",
-		B: "#forge:glass"
+		B: "#forge:glass/prism"
 	}).id("create_connected:crafting/kinetics/fluid_vessel")
 
 	kubejs.shaped("2x create_connected:fluid_vessel", [
