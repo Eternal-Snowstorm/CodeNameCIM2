@@ -29,6 +29,7 @@ ServerEvents.tags("block", (event) => {
 
 	event.get("cmi:freezing_catalyst")
 		.add("minecraft:powder_snow")
+		.add("create_connected:fan_freezing_catalyst")
 
 	event.get("forge:ores/cheese")
 		.add("ad_astra:moon_cheese_ore")
