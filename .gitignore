@@ -52,6 +52,9 @@ replay*
 /patchouli_books
 config/ftbquests/qusets/chapters/control*
 /removed_kjs
+CMI Dev.jar
+CMI Dev.json
+/CMI Dev-natives
 
 # Mods
 /mods/*
@@ -85,7 +88,7 @@ config/ftbquests/qusets/chapters/control*
 !.vscode/kubejs.code-snippets
 
 # Config
-/config/*
+/config/
 !/config/cmi*
 !/config/nebula*
 !/config/alexscaves_biome_generation
@@ -96,7 +99,6 @@ config/ftbquests/qusets/chapters/control*
 !/config/ftbquests/
 !/config/jade/
 !/config/jei/
-/config/jei/world
 !/config/immersiveengineering-client.toml
 !/config/ad_astra.jsonc
 !/config/fml.toml
@@ -119,11 +121,4 @@ config/ftbquests/qusets/chapters/control*
 !config/oei
 !config/railways-client.toml
 !config/tconstruct-common.toml
-config/jei/ingredient-list-mod-sort-order.ini
-config/jei/ingredient-list-mod-sort-order.ini
-config/tconstruct-common.toml
-config/modernfix-mixins.properties
-config/nebula/value.txt
-CMI Dev.jar
-CMI Dev.json
-/CMI Dev-natives
+!config/asteorbar-client.toml
