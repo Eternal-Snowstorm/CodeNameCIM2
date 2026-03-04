@@ -59,6 +59,10 @@ StartupEvents.modifyCreativeTab("tconstruct:smeltery", (event) => {
 	])
 })
 
+StartupEvents.modifyCreativeTab("create_connected:main", (event) => {
+	event.add("create_connected:fan_freezing_catalyst")
+})
+
 StartupEvents.modifyCreativeTab("thermalconstruct:thermal_construct_tab", (event) => {
 	event.add([
 		"cmi:bronze_mechanism_cast",

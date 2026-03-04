@@ -73,4 +73,10 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/iron",
 		"#create:mechanisms/redstone"
 	])
+
+	// 鼓风机触媒
+	create.deploying("create_connected:empty_fan_catalyst", [
+		"minecraft:iron_bars",
+		"#cmi:casing_framework/brass"
+	]).id("create_connected:crafting/kinetics/empty_fan_catalyst")
 })

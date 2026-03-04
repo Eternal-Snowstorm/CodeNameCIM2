@@ -157,18 +157,18 @@ ServerEvents.recipes((event) => {
         "A A",
         "CAB"
     ], {
-        A: "cmi:redstone_wire",
+        A: "#forge:dusts/redstone",
         B: "#forge:rods/gold",
         C: "#forge:plates/gold"
     }).id("thermal:rf_coil")
 
     // 振动核心
     kubejs.shaped("2x thermalendergy:vibrating_core", [
-        "C B",
-        " A ",
-        "B C"
+        "CAB",
+        "A A",
+        "BAC"
     ], {
-        A: "cmi:charged_amethyst",
+        A: "#forge:dusts/amethyst",
         B: "#forge:rods/cobalt",
         C: "#forge:plates/cobalt"
     }).id("thermalendergy:vibrating_core")
