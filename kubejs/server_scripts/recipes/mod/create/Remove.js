@@ -35,9 +35,9 @@ ServerEvents.recipes((event) => {
 		"create:milling/beetroot",
 		"create:splashing/gravel",
 		"create:splashing/sand",
-		"create:splashing/red_sand"
-
-
+		"create:splashing/red_sand",
+		"ratatouille:freezing/chocolate_mold_filled",
+		"ratatouille:freezing"
 	]
 	global.dyeColorGroup.forEach((color) => {
 		removeRecipeIds.push(`createdeco:${color}_shipping_container`)
