@@ -1,6 +1,5 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	const MECH = Mechanism.ANDESITE.COM
 	const CASHING = "create:andesite_casing"
 
 	// 动力辊压机
@@ -9,7 +8,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: ["#forge:storage_blocks/iron", "#forge:storage_blocks/zinc"]
 	}).id("create:crafting/kinetics/mechanical_press")
@@ -20,7 +19,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "create:whisk",
 	}).id("create:crafting/kinetics/mechanical_mixer")
@@ -31,7 +30,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "create:propeller",
 	}).id("create:crafting/kinetics/encased_fan")
@@ -72,7 +71,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"M"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#minecraft:planks",
 	}).id("create:crafting/kinetics/mechanical_bearing")
@@ -83,7 +82,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"M"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#forge:plates/stone",
 	}).id("create:crafting/kinetics/windmill_bearing")
@@ -94,7 +93,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "create:piston_extension_pole",
 	}).id("create:crafting/kinetics/mechanical_piston")
@@ -105,7 +104,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#create:cogwheel",
 	}).id("create:crafting/kinetics/gantry_carriage")
@@ -113,7 +112,7 @@ ServerEvents.recipes((event) => {
 	// 弹射置物台
 	kubejs.shapeless("create:weighted_ejector",
 		["create:depot",
-			MECH
+			Mechanism.ANDESITE.COM
 		]).id("create:crafting/kinetics/weighted_ejector")
 
 	// 石磨
@@ -122,7 +121,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#forge:stone",
 	}).id("create:crafting/kinetics/millstone")
@@ -133,7 +132,7 @@ ServerEvents.recipes((event) => {
 		" C ",
 		" M "
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#forge:rods/andesite",
 	}).id("create:crafting/kinetics/mechanical_harvester")
@@ -144,7 +143,7 @@ ServerEvents.recipes((event) => {
 		" C ",
 		" M "
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#forge:plates/andesite_alloy",
 	}).id("create:crafting/kinetics/mechanical_plough")
@@ -155,7 +154,7 @@ ServerEvents.recipes((event) => {
 		"XMX",
 		" C "
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#forge:plates/andesite_alloy",
 		Y: "#forge:plates/andesite_alloy",
@@ -167,7 +166,7 @@ ServerEvents.recipes((event) => {
 		"XMX",
 		" X "
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#forge:plates/andesite_alloy",
 	}).id("create:crafting/kinetics/mechanical_roller")
@@ -178,7 +177,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#forge:slimeballs",
 	}).id("ratatouille:mechanical_demolder")
@@ -189,7 +188,7 @@ ServerEvents.recipes((event) => {
 		"XMX",
 		" C "
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#vintageimprovements:springs/andesite",
 		Y: "#minecraft:planks",
@@ -201,7 +200,7 @@ ServerEvents.recipes((event) => {
 		"XYX",
 		" C "
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "#forge:plates/andesite_alloy",
 		Y: "#create:shaft",
@@ -213,7 +212,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"M"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: "vintageimprovements:spring_coiling_machine_wheel",
 	}).id("vintageimprovements:craft/spring_coiling_machine")
@@ -234,7 +233,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: MECH,
+		M: Mechanism.ANDESITE.COM,
 		C: CASHING,
 		X: ["#forge:plates/iron", "#forge:plates/andesite_alloy"]
 	}).id("vintageimprovements:craft/curving_press")
@@ -242,7 +241,7 @@ ServerEvents.recipes((event) => {
 	// 空白模块
 	kubejs.shapeless("deepdrilling:blank_module", [
 		"create:andesite_casing",
-		"cmi:andesite_mechanism",
+		Mechanism.ANDESITE.COM,
 		"#forge:plates/iron"
 	]).id("deepdrilling:blank_module")
 

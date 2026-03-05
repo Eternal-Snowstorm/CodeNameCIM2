@@ -105,7 +105,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.WRENCH_PICKUP)
 
 	// 陨石外壳
-	addBlock("sky_stone_casing")
+	addBlock("smart_casing")
 		.textureAll(`${global.namespace}:block/casing/ae2/smart`)
 		.soundType(SoundType.METAL)
 		.hardness(5)

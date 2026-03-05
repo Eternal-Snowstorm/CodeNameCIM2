@@ -40,5 +40,5 @@ ServerEvents.recipes((event) => {
         "#forge:plates/stainless_steel",
         "cmi:osmium_tile",
         "#forge:gears/chromeplated_steel"
-    ])
+    ]).id("mekanism:steel_casing")
 })
