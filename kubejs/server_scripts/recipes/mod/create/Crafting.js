@@ -96,4 +96,17 @@ ServerEvents.recipes((event) => {
         B: ["#forge:plates/zinc", "#forge:plates/iron"]
     }).id("create:crafting/kinetics/whisk")
 
+    // 增产机壳
+    let casingFrame = [
+        "andesite",
+        "brass",
+        "copper"
+    ]
+    casingFrame.forEach((frame) => {
+        event.stonecutting(
+            `4x cmi:${frame}_casing_framework`,
+            `#forge:plates/${frame}`
+        )
+    })
+
 })
