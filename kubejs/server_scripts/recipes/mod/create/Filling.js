@@ -18,6 +18,23 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:graphite_electrode"
 	])
 
+	// 烈焰蛋糕
+	create.filling("create:blaze_cake", [
+		"create:blaze_cake_base",
+		Fluid.of("minecraft:lava", 500)
+	]).id("create:filling/blaze_cake")
+
+	create.filling("2x create:blaze_cake", [
+		"create:blaze_cake_base",
+		Fluid.of("tconstruct:blazing_blood", 500)
+	])
+
+	// 超级刀
+	create.filling("cmi:super_knife", [
+		"farmersdelight:netherite_knife",
+		Fluid.of("create_enchantment_industry:hyper_experience", 1000)
+	])
+
 	// 紫水晶
 	create.filling("minecraft:small_amethyst_bud", [
 		"#forge:dusts/amethyst",

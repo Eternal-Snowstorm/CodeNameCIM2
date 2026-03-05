@@ -125,64 +125,64 @@ function MultiBlockMachine(machine) {
 	return this
 }
 
-// 大型蒸汽锅炉
-new MultiBlockMachine("large_steam_boiler")
-	.port("fluid", (builder) => {
-		builder.rows(1)
-			.columns(1)
-			.slotCapacity(10000)
-	})
-	.port("item", (builder) => {
-		builder.rows(1)
-			.columns(1)
-	})
+// // 大型蒸汽锅炉
+// new MultiBlockMachine("large_steam_boiler")
+// 	.port("fluid", (builder) => {
+// 		builder.rows(1)
+// 			.columns(1)
+// 			.slotCapacity(10000)
+// 	})
+// 	.port("item", (builder) => {
+// 		builder.rows(1)
+// 			.columns(1)
+// 	})
 
-// 蒸汽矿石处理机
-new MultiBlockMachine("steam_ore_processor")
-	.port("fluid", (builder) => {
-		builder.rows(2)
-			.columns(2)
-			.slotCapacity(20000)
-	})
-	.port("item", (builder) => {
-		builder.rows(3)
-			.columns(3)
-	})
+// // 蒸汽矿石处理机
+// new MultiBlockMachine("steam_ore_processor")
+// 	.port("fluid", (builder) => {
+// 		builder.rows(2)
+// 			.columns(2)
+// 			.slotCapacity(20000)
+// 	})
+// 	.port("item", (builder) => {
+// 		builder.rows(3)
+// 			.columns(3)
+// 	})
 
-// 裂解机
-new MultiBlockMachine("cracker")
-	.port("fluid", (builder) => {
-		builder.rows(1)
-			.columns(3)
-			.slotCapacity(10000)
-	})
-	.port("energy", (builder) => {
-		builder.capacity(1000000)
-			.maxExtract(1000000)
-			.maxReceive(1000000)
-	})
+// // 裂解机
+// new MultiBlockMachine("cracker")
+// 	.port("fluid", (builder) => {
+// 		builder.rows(1)
+// 			.columns(3)
+// 			.slotCapacity(10000)
+// 	})
+// 	.port("energy", (builder) => {
+// 		builder.capacity(1000000)
+// 			.maxExtract(1000000)
+// 			.maxReceive(1000000)
+// 	})
 
-// 粒子碰装机
-new MultiBlockMachine("particle_collision_machine")
-	.port("item", (builder) => {
-		builder.rows(1)
-			.columns(2)
-	})
-	.port("energy", (builder) => {
-		builder.capacity(10000000)
-			.maxExtract(10000000)
-			.maxReceive(10000000)
-	})
+// // 粒子碰装机
+// new MultiBlockMachine("particle_collision_machine")
+// 	.port("item", (builder) => {
+// 		builder.rows(1)
+// 			.columns(2)
+// 	})
+// 	.port("energy", (builder) => {
+// 		builder.capacity(10000000)
+// 			.maxExtract(10000000)
+// 			.maxReceive(10000000)
+// 	})
 
-// 改进型橡胶提取器
-new MultiBlockMachine("improved_rubber_extractor")
-	.port("fluid", (builder) => {
-		builder.rows(1)
-			.columns(1)
-			.slotCapacity(10000)
-	})
-	.port("energy", (builder) => {
-		builder.capacity(100000)
-			.maxExtract(100000)
-			.maxReceive(100000)
-	})
+// // 改进型橡胶提取器
+// new MultiBlockMachine("improved_rubber_extractor")
+// 	.port("fluid", (builder) => {
+// 		builder.rows(1)
+// 			.columns(1)
+// 			.slotCapacity(10000)
+// 	})
+// 	.port("energy", (builder) => {
+// 		builder.capacity(100000)
+// 			.maxExtract(100000)
+// 			.maxReceive(100000)
+// 	})

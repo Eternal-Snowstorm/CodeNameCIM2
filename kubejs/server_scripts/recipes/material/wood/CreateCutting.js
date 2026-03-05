@@ -13,6 +13,33 @@ ServerEvents.recipes((event) => {
 		kubejs.shapeless(Item.of(outputItem, 4), inputItem)
 	})
 
+	// 木板切木台阶
+	let cutSlabWood = [
+		"minecraft:oak",
+		"minecraft:dark_oak",
+		"minecraft:birch",
+		"minecraft:spruce",
+		"minecraft:jungle",
+		"minecraft:acacia",
+		"minecraft:mangrove",
+		"minecraft:cherry",
+		"ad_astra:glacian",
+		"thermal:rubberwood",
+		"tconstruct:greenheart",
+		"tconstruct:skyroot",
+		"tconstruct:enderbark",
+		"minecraft:crimson",
+		"minecraft:warped",
+		"ad_astra:aeronos",
+		"ad_astra:strophar",
+		"minecraft:bamboo",
+		"mynethersdelight:powdery",
+		"tconstruct:bloodshroom",
+	]
+	cutSlabWood.forEach((id) => {
+		create.cutting(`2x ${id}_slab`, `${id}_planks`)
+	})
+
 	event.forEachRecipe({
 		type: "create:cutting",
 		input: "#minecraft:logs",

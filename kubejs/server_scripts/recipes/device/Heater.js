@@ -1,6 +1,5 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
-	const MECH = Mechanism.STONE.COM
 	const BRICK = "tconstruct:seared_brick"
 	const PRISM = "#forge:glass/prism"
 	const GLASS = "#forge:glass"
@@ -10,7 +9,7 @@ ServerEvents.recipes((event) => {
 		"BXB",
 		"BMB"
 	], {
-		M: MECH,
+		M: Mechanism.STONE.COM,
 		B: BRICK,
 		X: "#tconstruct:gauge"
 	}).id("tconstruct:smeltery/seared/melter")
@@ -21,7 +20,7 @@ ServerEvents.recipes((event) => {
 		"BMB",
 		"BBB"
 	], {
-		M: MECH,
+		M: Mechanism.STONE.COM,
 		B: BRICK
 	}).id("tconstruct:smeltery/seared/heater")
 
@@ -81,9 +80,33 @@ ServerEvents.recipes((event) => {
 		"BYB",
 		"BMB"
 	], {
-		M: MECH,
+		M: Mechanism.STONE.COM,
 		B: BRICK,
 		X: "#tconstruct:patterns/reusable",
 		Y: "#forge:chests"
 	}).id("tconstruct:tables/cast_chest")
+
+	// 空烈焰人燃烧室
+	kubejs.shaped("create:empty_blaze_burner", [
+		"ABA",
+		"A A",
+		"CCC"
+	], {
+		A: "#forge:plates/iron",
+		B: Mechanism.IRON.COM,
+		C: "minecraft:nether_bricks"
+	}).id("create:crafting/kinetics/empty_blaze_burner")
+
+	// 烈焰人燃烧室
+	kubejs.shaped("create:blaze_burner", [
+		"ABA",
+		"ADA",
+		"CCC"
+	], {
+		A: "#forge:plates/iron",
+		B: Mechanism.IRON.COM,
+		C: "minecraft:nether_bricks",
+		D: Mechanism.NETHER.COM
+	}).id("create:crafting/kinetics/blaze_burner")
+
 })

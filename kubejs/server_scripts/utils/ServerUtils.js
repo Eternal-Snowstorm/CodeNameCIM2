@@ -212,7 +212,15 @@ let Material = Object.freeze({
 
 // 机壳系列
 let Casing = Object.freeze({
-
+    ANDESITE: "create:andesite_casing",
+    COPPER: "create:copper_casing",
+    BRONZE: "cmi:bronze_casing",
+    BRASS: "create:brass_casing",
+    RAILWAY: "create:railway_casing",
+    SMART: "cmi:smart_casing",
+    THERMAL: "thermal:machine_frame",
+    COMPUTE: "cmi:computing_casing",
+    STEEL: "mekanism:steel_casing"
 })
 
 // 木材系列

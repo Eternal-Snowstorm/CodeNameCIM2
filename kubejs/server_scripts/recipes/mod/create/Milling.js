@@ -65,4 +65,20 @@ ServerEvents.recipes((event) => {
 	create.milling("thermal:sulfur_dust", [
 		"#forge:gems/sulfur"
 	])
+	
+	// 陨石粉
+	create.milling([
+		"ae2:sky_dust",
+		Item.of("ae2:sky_dust").withChance(0.25),
+		Item.of("ae2:sky_dust", 2).withChance(0.125),
+		Item.of("ae2:sky_stone_block").withChance(0.25)
+	], "ae2:sky_stone_block")
+
+	create.crushing([
+		"ae2:sky_dust",
+		Item.of("ae2:sky_dust").withChance(0.5),
+		Item.of("ae2:sky_dust", 2).withChance(0.25),
+		Item.of("ae2:sky_stone_block").withChance(0.5)
+	], "ae2:sky_stone_block")
+
 })

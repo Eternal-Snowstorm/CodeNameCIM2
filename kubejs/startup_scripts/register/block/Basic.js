@@ -89,16 +89,7 @@ StartupEvents.registry("block", (event) => {
 	// 青铜外壳
 	addBlock("bronze_casing")
 		.textureAll(`${global.namespace}:block/casing/bronze/casing`)
-		.soundType(SoundType.NETHERITE_BLOCK)
-		.hardness(5)
-		.resistance(5)
-		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock(global.WRENCH_PICKUP)
-
-	// 耐压外壳
-	addBlock("pressure_resistance_casing")
-		.textureAll(`${global.namespace}:block/casing/pressure_resistance/casing`)
-		.soundType(SoundType.NETHERITE_BLOCK)
+		.soundType(SoundType.WOOD)
 		.hardness(5)
 		.resistance(5)
 		.tagBlock(global.ToolType["pickaxe"])
@@ -209,4 +200,13 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.WRENCH_PICKUP)
 		.tag(`${global.namespace}:broken_drill_heads`)
+
+	// // 耐压外壳
+	// addBlock("pressure_resistance_casing")
+	// 	.textureAll(`${global.namespace}:block/casing/pressure_resistance/casing`)
+	// 	.soundType(SoundType.NETHERITE_BLOCK)
+	// 	.hardness(5)
+	// 	.resistance(5)
+	// 	.tagBlock(global.ToolType["pickaxe"])
+	// 	.tagBlock(global.WRENCH_PICKUP)
 })
