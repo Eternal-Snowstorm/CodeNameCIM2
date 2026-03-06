@@ -15,10 +15,18 @@
 			icon: "minecraft:andesite"
 			id: "46858C4B5052EC0C"
 			size: 1.5d
+			subtitle: "锤子可以用铁或燧石制作"
 			tasks: [
 				{
 					id: "45FADEFE78FB64F7"
-					item: "minecraft:andesite"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:andesite"
+						}
+					}
+					title: "安山岩"
 					type: "item"
 				}
 				{
@@ -30,10 +38,11 @@
 							value: "forge:hammers"
 						}
 					}
-					title: "Any #forge:hammers"
+					title: "锤子"
 					type: "item"
 				}
 			]
+			title: "安山岩"
 			x: -21.0d
 			y: 16.5d
 		}
@@ -50,7 +59,7 @@
 				xp: 100
 			}]
 			tasks: [{
-				id: "7C61D025A76D4569"
+				id: "0D5FCD1741F23F5B"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
@@ -76,14 +85,28 @@
 			tasks: [
 				{
 					id: "0A4BA186729E732C"
-					item: "minecraft:iron_ingot"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/iron"
+						}
+					}
 					optional_task: true
+					title: "铁锭"
 					type: "item"
 				}
 				{
 					id: "545E0B7C36E41469"
-					item: "thermal:iron_plate"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/iron"
+						}
+					}
 					optional_task: true
+					title: "铁板"
 					type: "item"
 				}
 				{
@@ -148,7 +171,14 @@
 			id: "331EF47BF4AFEA01"
 			tasks: [{
 				id: "6040C604D9F8C6C4"
-				item: "cmi:andesite_dust"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/andesite"
+					}
+				}
+				title: "安山岩粉"
 				type: "item"
 			}]
 			x: -18.0d
@@ -244,7 +274,7 @@
 							value: "create:cogwheel"
 						}
 					}
-					title: "任意齿轮"
+					title: "齿轮"
 					type: "item"
 				}
 				{
@@ -257,7 +287,7 @@
 							value: "create:large_cogwheel"
 						}
 					}
-					title: "Any #create:large_cogwheel"
+					title: "大齿轮"
 					type: "item"
 				}
 				{
@@ -313,13 +343,22 @@
 		}
 		{
 			dependencies: ["6865ED5A1D93E5EA"]
-			description: ["我可以在&6部件制造台&f上用沙子制作&6齿轮铸模&f，浇铸后就能得到铁齿轮"]
+			description: [
+				"我可以在&6部件制造台&f上用沙子制作&6齿轮铸模&f，浇铸后就能得到铁齿轮"
+				"或者也可以制作一个&b木质齿轮&r来作为制造铸模的材料"
+			]
 			id: "580C6E604C71F620"
 			subtitle: "粉碎的上一步"
 			tasks: [{
-				count: 4L
 				id: "5A81F7F4B157839D"
-				item: { Count: 4, id: "thermal:iron_gear" }
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gears/iron"
+					}
+				}
+				title: "铁齿轮"
 				type: "item"
 			}]
 			x: -9.5d
@@ -417,6 +456,55 @@
 		}
 		{
 			dependencies: ["0D502CA40E47F832"]
+			description: [
+				"听着孩子，&l&b水车仙人&r&r是一种极其神秘的修行者。"
+				"他们并不追求复杂的动力体系，也不关心蒸汽机、风车阵列或各种花里胡哨的应力工程。他们的世界观只有一句话："
+				"“水车，亦可载道。”"
+				""
+				"在常人看来，应力系统应该多样化、效率化、工业化。"
+				"但水车仙人不然。"
+				"他们会在一条小河旁——"
+				""
+				"静静地摆下第一座大型水车。"
+				"接着是第二座。"
+				"第三座。"
+				"第四座。"
+				"直到整条河变成一个&l&c缓慢旋转的木质长城&r&r。"
+				"有人问：“为什么不用别的应力源？”"
+				"水车仙人只会淡淡地回答："
+				"水流未尽，应力不绝。"
+				"他们的基地往往没有宏伟的蒸汽机房，也没有宏伟的风车矩阵。"
+				"取而代之的是——"
+				"一条被水车填满的河道"
+				"无穷延伸的传动轴"
+				"以及一种朴素到近乎宗教般的执念"
+				"传说，当一个玩家："
+				""
+				" - 看见河流 → 想的是还能再放一排水车"
+				" - 应力不足 → 想的是再加十个水车"
+				" - TPS下降 → 想的是把水车排得更整齐一点"
+				""
+				"那么他便已经踏入了水车之道。"
+				"修行到极致时，"
+				"水车仙人甚至可以做到："
+				""
+				" - 不造蒸汽机"
+				" - 不造风车"
+				" - 不碰高级动力"
+				""
+				"整个工业体系只靠水车驱动"
+				"那一刻，他已经不再是普通玩家。"
+				"他只是静静地站在河岸上，"
+				"看着数百个大型水车缓慢转动。"
+				""
+				"风吹过。"
+				"水流过。"
+				"齿轮咬合。"
+				"而仙人只会微微一笑："
+				"大道至简。"
+				""
+				"——&l这，便是水车仙人&r。"
+			]
 			id: "6BD3573C9B4A0B46"
 			tasks: [
 				{
@@ -445,7 +533,14 @@
 			id: "7A9561BE016F15B5"
 			tasks: [{
 				id: "4D2FC0401BDE6F5A"
-				item: "minecraft:raw_iron"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/iron"
+					}
+				}
+				title: "粗铁"
 				type: "item"
 			}]
 			x: -10.5d
@@ -541,7 +636,7 @@
 				type: "item"
 			}]
 			title: "醋"
-			x: -12.0d
+			x: -11.0d
 			y: 19.5d
 		}
 		{
@@ -549,6 +644,7 @@
 				"664B44589F807708"
 				"14FCB2B036726682"
 				"50B5CFD57763580A"
+				"2EE13016985061C5"
 			]
 			id: "43FFB9DB898EA83A"
 			subtitle: "气密性绝佳且不易磨损的材料"
@@ -557,8 +653,8 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 19.5d
+			x: -11.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["2DDCBAC1D7AF08AE"]
@@ -569,8 +665,8 @@
 				item: "thermal:sulfur_dust"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 19.5d
+			x: -12.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["2DDCBAC1D7AF08AE"]
@@ -583,7 +679,7 @@
 				item: "kaleidoscope_cookery:rice"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -12.5d
 			y: 19.5d
 		}
 		{
@@ -594,8 +690,8 @@
 				item: "cmi:rubber_plate"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 21.0d
+			x: -12.5d
+			y: 22.5d
 		}
 		{
 			dependencies: ["5E096A2AD55E8040"]
@@ -605,19 +701,18 @@
 				item: "thermal:rubber"
 				type: "item"
 			}]
-			x: -13.0d
-			y: 21.0d
+			x: -14.0d
+			y: 22.5d
 		}
 		{
 			dependencies: ["2DDCBAC1D7AF08AE"]
-			hide_dependency_lines: true
 			id: "5E096A2AD55E8040"
 			tasks: [{
 				id: "2F3B8F408FDE770B"
 				item: "thermal:latex_bucket"
 				type: "item"
 			}]
-			x: -15.0d
+			x: -14.0d
 			y: 21.0d
 		}
 		{
@@ -631,31 +726,107 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 22.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["24384207DB9668D9"]
 			id: "590FBD1F501100AE"
-			tasks: [
-				{
-					id: "6460741E477AA44D"
-					item: "create:item_drain"
-					type: "item"
-				}
-				{
-					id: "450BF529D21F5BF2"
-					item: "create:spout"
-					type: "item"
-				}
-				{
-					id: "136C8606D1197457"
-					item: "create:hose_pulley"
-					type: "item"
-				}
-			]
-			title: "流体元件"
-			x: -5.5d
+			tasks: [{
+				id: "136C8606D1197457"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: -6.0d
 			y: 22.5d
+		}
+		{
+			dependencies: ["26DFF62383774404"]
+			icon: "thermal:rubberwood_log"
+			id: "65F44F8EF0876EE1"
+			size: 1.5d
+			subtitle: "应该不难找"
+			tasks: [{
+				icon: "thermal:rubberwood_log"
+				id: "6A1AFA9CD5D9E5CD"
+				observe_type: 1
+				timer: 0L
+				title: "观察 橡胶原木"
+				to_observe: "thermal:rubberwood"
+				type: "observation"
+			}]
+			title: "橡胶树"
+			x: -21.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["26DFF62383774404"]
+			icon: "cmi:rubber_tree_bark"
+			id: "795C395B35395809"
+			size: 1.0d
+			subtitle: "橡胶树上获取的边角料"
+			tasks: [{
+				id: "5143A31D987F40D1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "thermal:rubberwood_leaves"
+							}
+							{
+								Count: 1b
+								id: "cmi:rubber_tree_bark"
+							}
+						]
+					}
+				}
+				title: "橡胶树边角料"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["795C395B35395809"]
+			id: "2EE13016985061C5"
+			tasks: [{
+				id: "4824EB82274F2DA8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/rubber"
+					}
+				}
+				title: "橡胶粉"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["24384207DB9668D9"]
+			id: "3CB9E200952C9D9F"
+			tasks: [{
+				id: "06D1D3BA96CD62DB"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["24384207DB9668D9"]
+			id: "3B5ADA1051DE6F9A"
+			tasks: [{
+				id: "264A72D387A04775"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 19.5d
 		}
 	]
 	title: "巧械奇工"

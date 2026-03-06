@@ -55,7 +55,8 @@
 			id: "5DC78DC9A01883A1"
 			size: 1.5d
 			tasks: [{
-				id: "18048F7DFE7B8202"
+				count: 16L
+				id: "44B1FA50FDE179A9"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
@@ -63,6 +64,7 @@
 						value: "minecraft:logs"
 					}
 				}
+				title: "原木"
 				type: "item"
 			}]
 			title: "从木头开始......"
@@ -109,7 +111,7 @@
 			id: "4EAFBA3A19526127"
 			subtitle: "原木分解出的基础材料"
 			tasks: [{
-				id: "04BE05258CDCE71C"
+				id: "727B3A48525FE96F"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
@@ -117,6 +119,7 @@
 						value: "minecraft:planks"
 					}
 				}
+				title: "木板"
 				type: "item"
 			}]
 			title: "木板"
@@ -147,12 +150,47 @@
 				tag: {
 					Damage: 0
 					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:rock"
+						"tconstruct:wood"
+						"tconstruct:rock"
+					]
+					tic_modifiers: [
+						{
+							level: 1
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 1
+							name: "tconstruct:stripping"
+						}
+						{
+							level: 2
+							name: "tconstruct:stonebound"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:durability": 1.25f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 5.5f
+						"tconstruct:attack_speed": 1.1f
+						"tconstruct:durability": 162.5f
+						"tconstruct:harvest_tier": "minecraft:stone"
+						"tconstruct:mining_speed": 4.0f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
 				}
 			}
 			id: "3A4EA6A20A0727AA"
 			subtitle: "万用挖掘工具"
 			tasks: [{
-				icon: {
+				id: "2B75BCE90D8DD22C"
+				item: {
 					Count: 1
 					id: "cmi:paxel"
 					tag: {
@@ -160,15 +198,6 @@
 						tic_broken: 0b
 					}
 				}
-				id: "55A9CC7416EA7E95"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/paxels"
-					}
-				}
-				title: "任意镐尖斧"
 				type: "item"
 			}]
 			title: "镐尖斧"
@@ -183,9 +212,9 @@
 			]
 			id: "17AEC8F5B7867AFE"
 			tasks: [{
-				count: 64L
+				count: 16L
 				id: "36A475E42CA7D3E6"
-				item: { Count: 64, id: "tconstruct:grout" }
+				item: "tconstruct:grout"
 				type: "item"
 			}]
 			title: "砖泥"
@@ -198,7 +227,14 @@
 			subtitle: "石器时代"
 			tasks: [{
 				id: "40BE6170D6E59FB1"
-				item: "minecraft:cobblestone"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:cobblestone"
+					}
+				}
+				title: "Any #forge:cobblestone"
 				type: "item"
 			}]
 			x: 2.5d
@@ -208,9 +244,15 @@
 			dependencies: ["5556629C2263CF73"]
 			id: "637C1318E278B73E"
 			tasks: [{
-				count: 16L
 				id: "44CCB17D995B1FD3"
-				item: { Count: 16, id: "minecraft:raw_copper" }
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/copper"
+					}
+				}
+				title: "粗铜"
 				type: "item"
 			}]
 			title: "粗铜"
@@ -288,9 +330,15 @@
 			dependencies: ["4840B337A93659FC"]
 			id: "154C4715E11930D1"
 			tasks: [{
-				count: 16L
-				id: "51C4F16ADF6FCAF6"
-				item: { Count: 16, id: "minecraft:sand" }
+				id: "0B7036B148045286"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:sand"
+					}
+				}
+				title: "Any #forge:sand"
 				type: "item"
 			}]
 			x: 1.0d
@@ -312,9 +360,15 @@
 			dependencies: ["4840B337A93659FC"]
 			id: "07FD61829D499994"
 			tasks: [{
-				count: 16L
-				id: "379FF7D65C4B4223"
-				item: { Count: 16, id: "minecraft:clay_ball" }
+				id: "49F5303C343FB372"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:clay"
+					}
+				}
+				title: "Any #forge:clay"
 				type: "item"
 			}]
 			x: 1.0d
@@ -395,7 +449,7 @@
 				id: "0BD42EA1C12522C2"
 				observe_type: 1
 				timer: 0L
-				title: "观察：石英矿"
+				title: "观察：主世界石英矿"
 				to_observe: "cmi:overworld_quartz_ore"
 				type: "observation"
 			}]
@@ -407,8 +461,15 @@
 			dependencies: ["13884F7A75B4D36D"]
 			id: "3D854C186FF6E897"
 			tasks: [{
-				id: "7EE1C6BC333AD0C5"
-				item: "cmi:pure_quartz_prism"
+				id: "2FC531D747BB6BDA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:prisms/polished_quartz"
+					}
+				}
+				title: "Any #forge:prisms/polished_quartz"
 				type: "item"
 			}]
 			x: 5.5d
@@ -419,7 +480,14 @@
 			id: "13884F7A75B4D36D"
 			tasks: [{
 				id: "2AA80A2100D437DD"
-				item: "minecraft:quartz"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/quartz"
+					}
+				}
+				title: "Any #forge:gems/quartz"
 				type: "item"
 			}]
 			x: 4.0d
