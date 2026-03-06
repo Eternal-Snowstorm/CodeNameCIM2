@@ -36,10 +36,10 @@
 						value: "forge:ingots/iron"
 					}
 				}
-				title: "{ftbquests.chapter.iron.quest1.task_+1398476050195513021.title}"
+				title: "任意 #forge:ingots/iron"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iron.quest1.title}"
+			title: "铁锭"
 			x: -8.0d
 			y: 3.0d
 		}
@@ -51,7 +51,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "54FA863085554928"
-				title: "{ftbquests.chapter.iron.quest2.task_+6123354186317121832.title}"
+				title: "辊压"
 				type: "checkmark"
 			}]
 			x: -4.0d
@@ -65,7 +65,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "285195A9136C33FD"
-				title: "{ftbquests.chapter.iron.quest3.task_+2905267788038550525.title}"
+				title: "切割"
 				type: "checkmark"
 			}]
 			x: -1.0d
@@ -91,10 +91,10 @@
 						value: "forge:nuggets/iron"
 					}
 				}
-				title: "{ftbquests.chapter.iron.quest4.task_+1097081155876983278.title}"
+				title: "任意 #forge:nuggets/iron"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.iron.quest4.title}"
+			title: "铁粒"
 			x: 1.0d
 			y: -3.0d
 		}
@@ -125,7 +125,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "6E0E1F1A210104EE"
-				title: "{ftbquests.chapter.iron.quest6.task_+7930310190929347822.title}"
+				title: "安装"
 				type: "checkmark"
 			}]
 			x: 1.0d
@@ -151,5 +151,5 @@
 			y: 0.75d
 		}
 	]
-	title: "{ftbquests.chapter.iron.title}"
+	title: "铁质"
 }

@@ -35,7 +35,7 @@
 						value: "forge:stone"
 					}
 				}
-				title: "{ftbquests.chapter.stone.quest1.task_+4580878123201745062.title}"
+				title: "石头"
 				type: "item"
 			}]
 			x: -11.5d
@@ -49,7 +49,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "3047DC8F8345FF9A"
-				title: "{ftbquests.chapter.stone.quest2.task_+3478991746107834266.title}"
+				title: "辊压"
 				type: "checkmark"
 			}]
 			x: -5.5d
@@ -113,5 +113,5 @@
 			y: -3.0d
 		}
 	]
-	title: "{ftbquests.chapter.stone.title}"
+	title: "石质"
 }

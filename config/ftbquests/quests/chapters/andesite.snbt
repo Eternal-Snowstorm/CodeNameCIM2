@@ -53,7 +53,7 @@
 						value: "forge:nuggets/iron"
 					}
 				}
-				title: "{ftbquests.chapter.andesite.quest2.task_+88537388671206551.title}"
+				title: "铁粒"
 				type: "item"
 			}]
 			x: -8.5d
@@ -70,7 +70,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "7D3504D81DE99D6C"
-				title: "{ftbquests.chapter.andesite.quest3.task_+9022122754767953260.title}"
+				title: "搅拌"
 				type: "checkmark"
 			}]
 			x: -13.0d
@@ -84,7 +84,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "4E4E70A2E845BC15"
-				title: "{ftbquests.chapter.andesite.quest4.task_+5642571228125707285.title}"
+				title: "浇筑"
 				type: "checkmark"
 			}]
 			x: -14.0d
@@ -110,7 +110,7 @@
 						value: "forge:ingots/andesite_alloy"
 					}
 				}
-				title: "{ftbquests.chapter.andesite.quest5.task_+5415416872472210487.title}"
+				title: "安山合金"
 				type: "item"
 			}]
 			x: -10.5d
@@ -124,7 +124,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "292861CD8E8999BC"
-				title: "{ftbquests.chapter.andesite.quest6.task_+2965727890111044028.title}"
+				title: "辊压"
 				type: "checkmark"
 			}]
 			x: -4.0d
@@ -169,7 +169,7 @@
 						value: "minecraft:planks"
 					}
 				}
-				title: "{ftbquests.chapter.andesite.quest8.task_+1521437901948969844.title}"
+				title: "木板"
 				type: "item"
 			}]
 			x: 0.0d
@@ -235,5 +235,5 @@
 			y: -1.5d
 		}
 	]
-	title: "{ftbquests.chapter.andesite.title}"
+	title: "安山"
 }

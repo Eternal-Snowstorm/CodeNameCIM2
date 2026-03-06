@@ -35,10 +35,10 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "{ftbquests.chapter.wooden.quest1.task_+7810062565570024776.title}"
+				title: "原木"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.wooden.quest1.title}"
+			title: "原木"
 			x: -13.5d
 			y: 0.0d
 		}
@@ -62,7 +62,7 @@
 						value: "minecraft:planks"
 					}
 				}
-				title: "{ftbquests.chapter.wooden.quest2.task_+1375450900656580192.title}"
+				title: "木板"
 				type: "item"
 			}]
 			x: -9.0d
@@ -76,10 +76,10 @@
 			size: 1.0d
 			tasks: [{
 				id: "75FA176DB4C6E19E"
-				title: "{ftbquests.chapter.wooden.quest3.task_+8501133006567039390.title}"
+				title: "辊压"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.wooden.quest3.title}"
+			title: "辊压"
 			x: -1.5d
 			y: 5.0d
 		}
@@ -103,7 +103,7 @@
 						value: "forge:rods/wooden"
 					}
 				}
-				title: "{ftbquests.chapter.wooden.quest4.task_+2246151911393962786.title}"
+				title: "木棍"
 				type: "item"
 			}]
 			x: 1.5d
@@ -117,10 +117,10 @@
 			size: 1.0d
 			tasks: [{
 				id: "060FA62D17060F9B"
-				title: "{ftbquests.chapter.wooden.quest5.task_+436750401468239771.title}"
+				title: "切割"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.wooden.quest5.title}"
+			title: "切割"
 			x: 5.0d
 			y: 4.0d
 		}
@@ -163,5 +163,5 @@
 			y: 2.0d
 		}
 	]
-	title: "{ftbquests.chapter.wooden.title}"
+	title: "木质"
 }

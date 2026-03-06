@@ -1076,10 +1076,10 @@
 			}]
 			tasks: [{
 				id: "78BBEBD7CAB475AE"
-				title: "{ftbquests.chapter.metal.quest1.task_+8699806417247565230.title}"
+				title: "铝 600°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest1.title}"
+			title: "铝 660°C"
 			x: -5.5d
 			y: 2.5d
 		}
@@ -1093,7 +1093,7 @@
 			}]
 			tasks: [{
 				id: "4510FC89A26182E5"
-				title: "{ftbquests.chapter.metal.quest2.task_+4976755256309416677.title}"
+				title: "铁 1535°C"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -1109,7 +1109,7 @@
 			}]
 			tasks: [{
 				id: "67D57A9E2658F10D"
-				title: "{ftbquests.chapter.metal.quest3.task_+7482021175612731661.title}"
+				title: "熔岩 1346°C"
 				type: "checkmark"
 			}]
 			x: 11.0d
@@ -1125,10 +1125,10 @@
 			}]
 			tasks: [{
 				id: "46A385D56FEDFCBF"
-				title: "{ftbquests.chapter.metal.quest4.task_+5090059155611188415.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest4.title}"
+			title: "固体燃料 937°C"
 			x: 12.0d
 			y: 2.5d
 		}
@@ -1142,10 +1142,10 @@
 			}]
 			tasks: [{
 				id: "2155D38B5F8F5354"
-				title: "{ftbquests.chapter.metal.quest5.task_+2402058571829171028.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest5.title}"
+			title: "植物油 1027°C"
 			x: 12.0d
 			y: 1.5d
 		}
@@ -1159,7 +1159,7 @@
 			}]
 			tasks: [{
 				id: "57DBACE0483CB891"
-				title: "{ftbquests.chapter.metal.quest6.task_+6330843780483954833.title}"
+				title: "锡 232°C"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -1175,7 +1175,7 @@
 			}]
 			tasks: [{
 				id: "653134F19E9FDD9E"
-				title: "{ftbquests.chapter.metal.quest7.task_+7291667484042583454.title}"
+				title: "铅 328°C"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -1191,7 +1191,7 @@
 			}]
 			tasks: [{
 				id: "72A7FB0DAA5255D8"
-				title: "{ftbquests.chapter.metal.quest8.task_+8261848077545133528.title}"
+				title: "锌 420°C"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -1207,7 +1207,7 @@
 			}]
 			tasks: [{
 				id: "44DD46FB9AAD6002"
-				title: "{ftbquests.chapter.metal.quest9.task_+4962200410877943810.title}"
+				title: "银 962°C"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -1223,7 +1223,7 @@
 			}]
 			tasks: [{
 				id: "3F88A77D32970F18"
-				title: "{ftbquests.chapter.metal.quest10.task_+4578093177383620376.title}"
+				title: "金 1064°C"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -1239,7 +1239,7 @@
 			}]
 			tasks: [{
 				id: "16AF1929A6251679"
-				title: "{ftbquests.chapter.metal.quest11.task_+1634552856430581369.title}"
+				title: "铜 1085°C"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -1255,7 +1255,7 @@
 			}]
 			tasks: [{
 				id: "3A83435D302FB87F"
-				title: "{ftbquests.chapter.metal.quest12.task_+4216287743668369535.title}"
+				title: "安山合金 760°C"
 				type: "checkmark"
 			}]
 			x: -6.5d
@@ -1271,7 +1271,7 @@
 			}]
 			tasks: [{
 				id: "268DB9932B7379FB"
-				title: "{ftbquests.chapter.metal.quest13.task_+2778080586897783291.title}"
+				title: "黄铜 930°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1287,7 +1287,7 @@
 			}]
 			tasks: [{
 				id: "5B8614F5E94163E4"
-				title: "{ftbquests.chapter.metal.quest14.task_+6594981750743589860.title}"
+				title: "青铜 820°C"
 				type: "checkmark"
 			}]
 			x: -7.5d
@@ -1303,7 +1303,7 @@
 			}]
 			tasks: [{
 				id: "02F96387982970A0"
-				title: "{ftbquests.chapter.metal.quest15.task_+214311891301396640.title}"
+				title: "康铜 1200°C"
 				type: "checkmark"
 			}]
 			x: -4.5d
@@ -1319,7 +1319,7 @@
 			}]
 			tasks: [{
 				id: "589FAD88B5D3F170"
-				title: "{ftbquests.chapter.metal.quest16.task_+6386013599312376176.title}"
+				title: "铸铁 1200°C"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -1335,7 +1335,7 @@
 			}]
 			tasks: [{
 				id: "3431DBA734438362"
-				title: "{ftbquests.chapter.metal.quest17.task_+3761028675013935970.title}"
+				title: "琥珀金 1060°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1351,7 +1351,7 @@
 			}]
 			tasks: [{
 				id: "683E13490FD50AEF"
-				title: "{ftbquests.chapter.metal.quest18.task_+7511462433019726575.title}"
+				title: "余烬粘液 1288°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1367,7 +1367,7 @@
 			}]
 			tasks: [{
 				id: "069DB19DBC20D4D8"
-				title: "{ftbquests.chapter.metal.quest19.task_+476732426595390680.title}"
+				title: "殷钢 1425°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1383,7 +1383,7 @@
 			}]
 			tasks: [{
 				id: "3D03BA032B9536C8"
-				title: "{ftbquests.chapter.metal.quest20.task_+4396562184022603464.title}"
+				title: "泓钢 1386°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1399,7 +1399,7 @@
 			}]
 			tasks: [{
 				id: "06BAC94A06ACDEB8"
-				title: "{ftbquests.chapter.metal.quest21.task_+484921229672505016.title}"
+				title: "流明 993°C"
 				type: "checkmark"
 			}]
 			x: -5.5d
@@ -1415,7 +1415,7 @@
 			}]
 			tasks: [{
 				id: "50E362A9C1F05ED5"
-				title: "{ftbquests.chapter.metal.quest22.task_+5828610823990304469.title}"
+				title: "信素 1231°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1431,7 +1431,7 @@
 			}]
 			tasks: [{
 				id: "7BC3C0A71BE9CE62"
-				title: "{ftbquests.chapter.metal.quest23.task_+8918183511084093026.title}"
+				title: "钢 1370°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1447,7 +1447,7 @@
 			}]
 			tasks: [{
 				id: "067518855718801C"
-				title: "{ftbquests.chapter.metal.quest24.task_+465305097473654812.title}"
+				title: "铀 1132°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1463,7 +1463,7 @@
 			}]
 			tasks: [{
 				id: "3B3B4DFEDBD89C7E"
-				title: "{ftbquests.chapter.metal.quest25.task_+4268090828869115006.title}"
+				title: "镍 1455°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1479,7 +1479,7 @@
 			}]
 			tasks: [{
 				id: "7ED9955B9D09F1D0"
-				title: "{ftbquests.chapter.metal.quest26.task_+9140501139434369488.title}"
+				title: "钴 1495°C"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -1495,7 +1495,7 @@
 			}]
 			tasks: [{
 				id: "2BCDB9B35CAB9330"
-				title: "{ftbquests.chapter.metal.quest27.task_+3156383093861618480.title}"
+				title: "铂 1768°C"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -1511,7 +1511,7 @@
 			}]
 			tasks: [{
 				id: "69DE3D1CFFB0AAA0"
-				title: "{ftbquests.chapter.metal.quest28.task_+7628602013570345632.title}"
+				title: "铬 1907°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1527,7 +1527,7 @@
 			}]
 			tasks: [{
 				id: "074182861544F4A1"
-				title: "{ftbquests.chapter.metal.quest29.task_+522842544145757345.title}"
+				title: "钒 1910°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1543,7 +1543,7 @@
 			}]
 			tasks: [{
 				id: "21D2ED2A2BF143E6"
-				title: "{ftbquests.chapter.metal.quest30.task_+2437271113742500838.title}"
+				title: "钾 64°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1559,7 +1559,7 @@
 			}]
 			tasks: [{
 				id: "2938060C35A994EE"
-				title: "{ftbquests.chapter.metal.quest31.task_+2970130603760522478.title}"
+				title: "钠 98°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1575,7 +1575,7 @@
 			}]
 			tasks: [{
 				id: "50115D1F8C265CF7"
-				title: "{ftbquests.chapter.metal.quest32.task_+5769494987715009783.title}"
+				title: "钙 842°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1591,7 +1591,7 @@
 			}]
 			tasks: [{
 				id: "6D963898C65F68E0"
-				title: "{ftbquests.chapter.metal.quest33.task_+7896561225455069408.title}"
+				title: "镁 650°C"
 				type: "checkmark"
 			}]
 			x: -4.5d
@@ -1607,7 +1607,7 @@
 			}]
 			tasks: [{
 				id: "301BC6301F614344"
-				title: "{ftbquests.chapter.metal.quest34.task_+3466582248178926404.title}"
+				title: "强化荧石 943°C"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -1623,7 +1623,7 @@
 			}]
 			tasks: [{
 				id: "679DC6C950186284"
-				title: "{ftbquests.chapter.metal.quest35.task_+7466342325184651908.title}"
+				title: "玫瑰金 960°C"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -1639,7 +1639,7 @@
 			}]
 			tasks: [{
 				id: "619AA21448C07CFE"
-				title: "{ftbquests.chapter.metal.quest36.task_+7033111976096070910.title}"
+				title: "黑色科林斯青铜 990°C"
 				type: "checkmark"
 			}]
 			x: -4.5d
@@ -1655,7 +1655,7 @@
 			}]
 			tasks: [{
 				id: "3FEB3EF5C83796F8"
-				title: "{ftbquests.chapter.metal.quest37.task_+4605844269263460088.title}"
+				title: "紫水晶青铜 1043°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1671,7 +1671,7 @@
 			}]
 			tasks: [{
 				id: "33FE6398CACE0C50"
-				title: "{ftbquests.chapter.metal.quest38.task_+3746541447907511376.title}"
+				title: "黏钢 1098°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1687,7 +1687,7 @@
 			}]
 			tasks: [{
 				id: "04026B62F36C7C4F"
-				title: "{ftbquests.chapter.metal.quest39.task_+288911398840073295.title}"
+				title: "生铁 1145°C"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -1703,7 +1703,7 @@
 			}]
 			tasks: [{
 				id: "3C57D195983E9B99"
-				title: "{ftbquests.chapter.metal.quest40.task_+4348174405684075417.title}"
+				title: "皇后史莱姆 1193°C"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -1719,7 +1719,7 @@
 			}]
 			tasks: [{
 				id: "4E77DF1E202CBB0B"
-				title: "{ftbquests.chapter.metal.quest41.task_+5654233177668762379.title}"
+				title: "强化黑曜石 1413°C"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -1735,7 +1735,7 @@
 			}]
 			tasks: [{
 				id: "29B792C0274A3BBA"
-				title: "{ftbquests.chapter.metal.quest42.task_+3006032630283647930.title}"
+				title: "末影 1501°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1751,7 +1751,7 @@
 			}]
 			tasks: [{
 				id: "5B2BCCF74933E39E"
-				title: "{ftbquests.chapter.metal.quest43.task_+6569569843907126174.title}"
+				title: "工业铁 1507°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1767,7 +1767,7 @@
 			}]
 			tasks: [{
 				id: "5A192270EBB0AF02"
-				title: "{ftbquests.chapter.metal.quest44.task_+6492258206217187074.title}"
+				title: "不锈耐酸钢 1510°C"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -1778,7 +1778,7 @@
 			id: "477B3765FA977F07"
 			tasks: [{
 				id: "1FE2746B27DD2564"
-				title: "{ftbquests.chapter.metal.quest45.task_+2297526763491501412.title}"
+				title: "玛玉灵 1617°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1794,7 +1794,7 @@
 			}]
 			tasks: [{
 				id: "16CF1EFC06C79BCB"
-				title: "{ftbquests.chapter.metal.quest46.task_+1643566456807857099.title}"
+				title: "海晶 1741°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1810,7 +1810,7 @@
 			}]
 			tasks: [{
 				id: "4CA4AC2BD532B015"
-				title: "{ftbquests.chapter.metal.quest47.task_+5522728347323510805.title}"
+				title: "旋律 1755°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1826,7 +1826,7 @@
 			}]
 			tasks: [{
 				id: "06FC3BDA67B958A7"
-				title: "{ftbquests.chapter.metal.quest48.task_+503343067587762343.title}"
+				title: "恒星 1873°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1842,7 +1842,7 @@
 			}]
 			tasks: [{
 				id: "270BC98BA5949E11"
-				title: "{ftbquests.chapter.metal.quest49.task_+2813563993838624273.title}"
+				title: "下界合金 2042°C"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -1858,7 +1858,7 @@
 			}]
 			tasks: [{
 				id: "50D3544320ACBF14"
-				title: "{ftbquests.chapter.metal.quest50.task_+5824091390407917332.title}"
+				title: "锇 3033°C"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -1874,7 +1874,7 @@
 			}]
 			tasks: [{
 				id: "799AC958B3028671"
-				title: "{ftbquests.chapter.metal.quest51.task_+8762537407800313457.title}"
+				title: "戴斯 3094°C"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -1890,7 +1890,7 @@
 			}]
 			tasks: [{
 				id: "69780BE16A9539E4"
-				title: "{ftbquests.chapter.metal.quest52.task_+7599837433971423716.title}"
+				title: "钨 3410°C"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -1906,7 +1906,7 @@
 			}]
 			tasks: [{
 				id: "52F435808CE1F259"
-				title: "{ftbquests.chapter.metal.quest53.task_+5977461431663194713.title}"
+				title: "紫金 3687°C"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -1922,7 +1922,7 @@
 			}]
 			tasks: [{
 				id: "1A36E579AA29CDB0"
-				title: "{ftbquests.chapter.metal.quest54.task_+1888949404437171632.title}"
+				title: "耐热金属 4003°C"
 				type: "checkmark"
 			}]
 			x: -4.5d
@@ -1938,10 +1938,10 @@
 			}]
 			tasks: [{
 				id: "0ED0577C2ACD3093"
-				title: "{ftbquests.chapter.metal.quest55.task_+1067449302492459155.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest55.title}"
+			title: "乙醇 1132°C"
 			x: 12.0d
 			y: 0.5d
 		}
@@ -1955,10 +1955,10 @@
 			}]
 			tasks: [{
 				id: "31B082677C06A022"
-				title: "{ftbquests.chapter.metal.quest56.task_+3580505084733595682.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest56.title}"
+			title: "浑浊废液 1189°C"
 			x: 13.0d
 			y: 0.5d
 		}
@@ -1972,10 +1972,10 @@
 			}]
 			tasks: [{
 				id: "22EE0AA74FC9A863"
-				title: "{ftbquests.chapter.metal.quest57.task_+2516960955461118051.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest57.title}"
+			title: "德尔塔不稳定源质 1206°C"
 			x: 11.0d
 			y: -0.5d
 		}
@@ -1989,10 +1989,10 @@
 			}]
 			tasks: [{
 				id: "035D5CE5B10EC22F"
-				title: "{ftbquests.chapter.metal.quest58.task_+242452096535675439.title}"
+				title: "熔岩 100极0°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest58.title}"
+			title: "原油 1240°C"
 			x: 12.0d
 			y: -0.5d
 		}
@@ -2006,10 +2006,10 @@
 			}]
 			tasks: [{
 				id: "2AAA63D0F8AF2E85"
-				title: "{ftbquests.chapter.metal.quest59.task_+3074379444810362501.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest59.title}"
+			title: "燃油 1417°C"
 			x: 11.0d
 			y: -2.5d
 		}
@@ -2023,10 +2023,10 @@
 			}]
 			tasks: [{
 				id: "02EA6EA4D40E0BBE"
-				title: "{ftbquests.chapter.metal.quest60.task_+210101986837531582.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest60.title}"
+			title: "生物柴油 1636°C"
 			x: 11.0d
 			y: -4.5d
 		}
@@ -2040,10 +2040,10 @@
 			}]
 			tasks: [{
 				id: "56FE0FE575739513"
-				title: "{ftbquests.chapter.metal.quest61.task_+6268465209538745619.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest61.title}"
+			title: "精炼油 2041°C"
 			x: 11.0d
 			y: -8.5d
 		}
@@ -2057,10 +2057,10 @@
 			}]
 			tasks: [{
 				id: "5B47D5CD713D9727"
-				title: "{ftbquests.chapter.metal.quest62.task_+6577460859142772519.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest62.title}"
+			title: "烈焰血 2638°C"
 			x: 12.0d
 			y: -8.5d
 		}
@@ -2074,10 +2074,10 @@
 			}]
 			tasks: [{
 				id: "725D05BF02A3AFB6"
-				title: "{ftbquests.chapter.metal.quest63.task_+8240749211099049910.title}"
+				title: "熔岩 1000°C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal.quest63.title}"
+			title: "凛冰燃料 4225°C"
 			x: 11.0d
 			y: -9.5d
 		}
@@ -2091,7 +2091,7 @@
 			}]
 			tasks: [{
 				id: "4032C62D93F552D9"
-				title: "{ftbquests.chapter.metal.quest64.task_+4625977666321076953.title}"
+				title: "埃忒恩 1486°C"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -2107,12 +2107,12 @@
 			}]
 			tasks: [{
 				id: "02C11FA019529B86"
-				title: "{ftbquests.chapter.metal.quest65.task_+198474631061085062.title}"
+				title: "杂酚油 1300°C"
 				type: "checkmark"
 			}]
 			x: 12.0d
 			y: -1.5d
 		}
 	]
-	title: "{ftbquests.chapter.metal.title}"
+	title: "金属熔点与燃料纵览"
 }

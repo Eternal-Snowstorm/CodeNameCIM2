@@ -16,7 +16,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest1.subtitle}"
+			subtitle: "使用砂带磨床解放双手"
 			tasks: [{
 				id: "14A8E8D716B27C1E"
 				item: "create:polished_rose_quartz"
@@ -58,7 +58,7 @@
 				xp: 10
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest3.subtitle}"
+			subtitle: "谁能告诉我为什么红石和石英会变成玫瑰石英"
 			tasks: [
 				{
 					id: "1D7DCB92BD5622DB"
@@ -69,7 +69,7 @@
 							value: "forge:gems/quartz"
 						}
 					}
-					title: "{ftbquests.chapter.elegant_machinery.quest3.task_+2125078430290944731.title}"
+					title: "石英"
 					type: "item"
 				}
 				{
@@ -81,11 +81,11 @@
 							value: "forge:dusts/redstone"
 						}
 					}
-					title: "{ftbquests.chapter.elegant_machinery.quest3.task_+7731599525018755681.title}"
+					title: "红石"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.elegant_machinery.quest3.title}"
+			title: "备用配方"
 			x: -7.5d
 			y: -2.0d
 		}
@@ -97,7 +97,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest4.subtitle}"
+			subtitle: "可以用充能器凑合"
 			tasks: [
 				{
 					id: "6043AE3D372D4BA5"
@@ -110,7 +110,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.elegant_machinery.quest4.title}"
+			title: "赛特斯石英也要充能"
 			x: -4.0d
 			y: -3.5d
 		}
@@ -124,7 +124,7 @@
 				xp: 10
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest5.subtitle}"
+			subtitle: "你得加大力度"
 			tasks: [{
 				id: "4458BE0DB3D3EF08"
 				item: "ae2:charger"
@@ -142,7 +142,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest6.subtitle}"
+			subtitle: "把磨制玫瑰石英和铁板啪的一下塞在一起"
 			tasks: [{
 				id: "2B2B700D71715DFA"
 				item: "create:electron_tube"
@@ -175,7 +175,7 @@
 			id: "228F544F6D51A4B7"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest8.subtitle}"
+			subtitle: "矿石处理砖家"
 			tasks: [{
 				id: "4988E4DCE32C9967"
 				item: "create:crushing_wheel"
@@ -195,7 +195,7 @@
 				xp: 10
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest9.subtitle}"
+			subtitle: "比充能器好用一百亿倍"
 			tasks: [
 				{
 					id: "1EE3FF3F20F49E31"
@@ -219,13 +219,13 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest10.subtitle}"
+			subtitle: "将应力转化为交流电的装置"
 			tasks: [{
 				id: "492AA967BDED2317"
 				item: "createaddition:alternator"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest10.title}"
+			title: "交流发电机-超级原始的发电机"
 			x: -3.0d
 			y: 5.0d
 		}
@@ -238,7 +238,7 @@
 				xp: 10
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest11.subtitle}"
+			subtitle: "你最好别钻进去"
 			tasks: [{
 				id: "246DFA8C4195A3F8"
 				item: "vintageimprovements:lathe"
@@ -256,7 +256,7 @@
 				xp: 10
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest12.subtitle}"
+			subtitle: "速度非常慢, 但是可以帮你省坚固板"
 			tasks: [
 				{
 					id: "1AF7DE7877CF0D43"
@@ -272,7 +272,7 @@
 							value: "minecraft:anvil"
 						}
 					}
-					title: "{ftbquests.chapter.elegant_machinery.quest12.task_+4512851546439847747.title}"
+					title: "铁砧"
 					type: "item"
 				}
 			]
@@ -289,7 +289,7 @@
 				xp: 10
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest13.subtitle}"
+			subtitle: "接上电可以当创造马达用"
 			tasks: [{
 				id: "36EE988B61A55ECA"
 				item: "createaddition:electric_motor"
@@ -311,7 +311,7 @@
 				xp: 10
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest14.subtitle}"
+			subtitle: "如果你是个基建狂魔"
 			tasks: [{
 				id: "228AFD5BD452CD9B"
 				item: "create:wand_of_symmetry"
@@ -331,7 +331,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest15.subtitle}"
+			subtitle: "&b拿到手上你的头发会飘起来吗"
 			tasks: [{
 				id: "59578E87A3CB1807"
 				item: {
@@ -341,10 +341,10 @@
 						value: "forge:gems/charged_amethyst"
 					}
 				}
-				title: "{ftbquests.chapter.elegant_machinery.quest15.task_+6437770905569138695.title}"
+				title: "充能紫水晶碎片"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest15.title}"
+			title: "充能紫水晶碎片"
 			x: -6.0d
 			y: 9.0d
 		}
@@ -356,7 +356,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest16.subtitle}"
+			subtitle: "可以往紫水晶芽上注晶体催生剂"
 			tasks: [{
 				id: "17E4F41FB0697C6A"
 				item: {
@@ -366,17 +366,17 @@
 						value: "forge:gems/amethyst"
 					}
 				}
-				title: "{ftbquests.chapter.elegant_machinery.quest16.task_+1721769374503238762.title}"
+				title: "紫水晶碎片"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest16.title}"
+			title: "紫水晶碎片"
 			x: -5.5d
 			y: 7.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.elegant_machinery.quest17.description1}"
-				"{ftbquests.chapter.elegant_machinery.quest17.description2}"
+				"紫水晶是非常有用的材料, 可以做廉价的工具金属紫水晶青铜"
+				"当然, 也可以用来做激光器"
 			]
 			icon: "minecraft:amethyst_cluster"
 			id: "52A96C4DF54ECD90"
@@ -393,7 +393,7 @@
 				to_observe: "minecraft:amethyst_cluster"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest17.title}"
+			title: "找个晶洞"
 			x: -5.0d
 			y: 6.0d
 		}
@@ -406,7 +406,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest18.subtitle}"
+			subtitle: "一种廉价到不能再廉价的宝石"
 			tasks: [{
 				id: "443B840E74F16FEC"
 				item: {
@@ -416,10 +416,10 @@
 						value: "forge:gems/quartz"
 					}
 				}
-				title: "{ftbquests.chapter.elegant_machinery.quest18.task_+4916668615831416812.title}"
+				title: "石英"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest18.title}"
+			title: "石英"
 			x: 2.0d
 			y: 5.0d
 		}
@@ -430,7 +430,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest19.subtitle}"
+			subtitle: "别放到耳边, 会哇哇哇的叫唤"
 			tasks: [{
 				id: "2AAA2CE342011B6C"
 				item: "minecraft:soul_sand"
@@ -447,13 +447,13 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest20.subtitle}"
+			subtitle: "看起来和望远镜很像不是吗"
 			tasks: [{
 				id: "5D039255085C81C4"
 				item: "vintageimprovements:laser_item"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest20.title}"
+			title: "激光发射器"
 			x: 1.5d
 			y: 10.0d
 		}
@@ -489,7 +489,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest22.subtitle}"
+			subtitle: "可以当夜视仪"
 			tasks: [{
 				id: "6E13312AB1CD6487"
 				item: "cmi:photosensitive_mechanism"
@@ -505,7 +505,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest23.subtitle}"
+			subtitle: "涂在墨镜上可以模仿柯南吗?"
 			tasks: [{
 				id: "756D3F4A4DB6BF3B"
 				item: {
@@ -515,10 +515,10 @@
 						value: "forge:dusts/glowstone"
 					}
 				}
-				title: "{ftbquests.chapter.elegant_machinery.quest23.task_+8461488863262981947.title}"
+				title: "萤石粉"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest23.title}"
+			title: "萤石粉"
 			x: 3.5d
 			y: 7.0d
 		}
@@ -533,7 +533,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest24.subtitle}"
+			subtitle: "安全保障"
 			tasks: [{
 				id: "401ECEF3887585CE"
 				item: "create:precision_mechanism"
@@ -552,7 +552,7 @@
 			}]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest25.subtitle}"
+			subtitle: "别被这个照到眼睛了"
 			tasks: [{
 				id: "4DD363014EBBD648"
 				item: "vintageimprovements:laser"
@@ -569,7 +569,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest26.subtitle}"
+			subtitle: "紫水晶经高能激光处理后, 可以发光"
 			tasks: [{
 				id: "7A517A71A3823BC1"
 				item: {
@@ -579,17 +579,17 @@
 						value: "forge:dusts/glowstone"
 					}
 				}
-				title: "{ftbquests.chapter.elegant_machinery.quest26.task_+8813960574233885633.title}"
+				title: "萤石粉"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest26.title}"
+			title: "萤石粉"
 			x: 1.0d
 			y: 13.5d
 		}
 		{
 			dependencies: ["2B27BAFDEB5B567C"]
 			id: "52C1D90EEF0C79C5"
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest27.subtitle}"
+			subtitle: "充能紫水晶打磨后有概率获得"
 			tasks: [{
 				id: "2FAD53986BE34317"
 				item: {
@@ -599,10 +599,10 @@
 						value: "forge:dusts/redstone"
 					}
 				}
-				title: "{ftbquests.chapter.elegant_machinery.quest27.task_+3435494004863746839.title}"
+				title: "红石粉"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest27.title}"
+			title: "红石粉"
 			x: -4.5d
 			y: 9.5d
 		}
@@ -615,7 +615,7 @@
 				xp: 50
 			}]
 			shape: "gear"
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest28.subtitle}"
+			subtitle: "下下章"
 			tasks: [{
 				id: "2790B7C5FA086FAE"
 				item: "thermal:rf_coil"
@@ -643,7 +643,7 @@
 							value: "createaddition:spools"
 						}
 					}
-					title: "{ftbquests.chapter.elegant_machinery.quest29.task_+9186379347516911139.title}"
+					title: "简易能量传输导线"
 					type: "item"
 				}
 				{
@@ -653,7 +653,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.elegant_machinery.quest29.title}"
+			title: "简易能量传输"
 			x: -3.5d
 			y: 6.5d
 		}
@@ -674,10 +674,10 @@
 						value: "forge:dusts/obsidian"
 					}
 				}
-				title: "{ftbquests.chapter.elegant_machinery.quest30.task_+292306892582407160.title}"
+				title: "黑曜石粉末"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest30.title}"
+			title: "黑曜石粉末"
 			x: 1.5d
 			y: -0.5d
 		}
@@ -698,10 +698,10 @@
 						value: "forge:plates/obsidian"
 					}
 				}
-				title: "{ftbquests.chapter.elegant_machinery.quest31.task_+5298549960596168296.title}"
+				title: "坚固板"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest31.title}"
+			title: "坚固板"
 			x: 3.0d
 			y: 0.0d
 		}
@@ -723,20 +723,20 @@
 						value: "forge:plates/dense_obsidian"
 					}
 				}
-				title: "{ftbquests.chapter.elegant_machinery.quest32.task_+4867900477116004050.title}"
+				title: "致密坚固板"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest32.title}"
+			title: "致密坚固板"
 			x: 4.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["11BE58B08BECE324"]
 			description: [
-				"{ftbquests.chapter.elegant_machinery.quest33.description1}"
-				"{ftbquests.chapter.elegant_machinery.quest33.description2}"
-				"{ftbquests.chapter.elegant_machinery.quest33.description3}"
-				"{ftbquests.chapter.elegant_machinery.quest33.image0}"
+				"本整合包加强了蓄电池, 目前蓄电池最大大小可搭建到8*8*8!"
+				"这可太壮观了!"
+				"并且单个蓄电池方块就可以存储10000000FE的能量!"
+				"{image:cmi:textures/images/accumulator_build.png width:185 height:105 align:center}"
 			]
 			id: "74BB217F948AC507"
 			rewards: [{
@@ -747,17 +747,17 @@
 			}]
 			shape: "hexagon"
 			size: 1.0d
-			subtitle: "{ftbquests.chapter.elegant_machinery.quest33.subtitle}"
+			subtitle: "稳定的蓄电池, 不会漏电!"
 			tasks: [{
 				count: 4L
 				id: "0A809A3B8C373077"
 				item: { Count: 4, id: "createaddition:modular_accumulator" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.elegant_machinery.quest33.title}"
+			title: "你需要一个电池"
 			x: -0.5d
 			y: 5.0d
 		}
 	]
-	title: "{ftbquests.chapter.elegant_machinery.title}"
+	title: "智能机械"
 }

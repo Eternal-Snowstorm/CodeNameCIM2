@@ -35,10 +35,10 @@
 						value: "forge:gems/amethyst"
 					}
 				}
-				title: "{ftbquests.chapter.photosensitive.quest1.task_+7162449573442717352.title}"
+				title: "任意 #forge:gems/amethyst"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.photosensitive.quest1.title}"
+			title: "紫水晶碎片"
 			x: -5.0d
 			y: -2.0d
 		}
@@ -65,10 +65,10 @@
 						value: "forge:gems/charged_amethyst"
 					}
 				}
-				title: "{ftbquests.chapter.photosensitive.quest2.task_+3382007208367042217.title}"
+				title: "任意 #forge:gems/charged_amethyst"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.photosensitive.quest2.title}"
+			title: "充能紫水晶碎片"
 			x: -2.0d
 			y: 3.0d
 		}
@@ -80,7 +80,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "7A8F8A781AC7DDC7"
-				title: "{ftbquests.chapter.photosensitive.quest3.task_+8831429642746846663.title}"
+				title: "充能"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -94,7 +94,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "7EEC2D37BD9DAE3B"
-				title: "{ftbquests.chapter.photosensitive.quest4.task_+9145734660710313531.title}"
+				title: "粉碎"
 				type: "checkmark"
 			}]
 			x: -6.5d
@@ -127,7 +127,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "34AA6D1E681D3032"
-				title: "{ftbquests.chapter.photosensitive.quest6.task_+3794965613376254002.title}"
+				title: "4次注水"
 				type: "checkmark"
 			}]
 			x: -10.0d
@@ -147,7 +147,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "2FAF41CDEDE88853"
-				title: "{ftbquests.chapter.photosensitive.quest7.task_+3436037393422518355.title}"
+				title: "紫水晶簇"
 				type: "checkmark"
 			}]
 			x: -8.0d
@@ -176,10 +176,10 @@
 						value: "forge:dusts/glowstone"
 					}
 				}
-				title: "{ftbquests.chapter.photosensitive.quest8.task_+5859495786160434229.title}"
+				title: "任意 #forge:dusts/glowstone"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.photosensitive.quest8.title}"
+			title: "荧石粉"
 			x: 1.7857142857142918d
 			y: 1.5714285714285694d
 		}
@@ -191,7 +191,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "08F5C25F2E184F5A"
-				title: "{ftbquests.chapter.photosensitive.quest9.task_+645635835648560986.title}"
+				title: "激光"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -213,7 +213,7 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.photosensitive.quest10.title}"
+			title: "机械部件"
 			x: 4.785714285714292d
 			y: 3.0714285714285694d
 		}
@@ -232,7 +232,7 @@
 				item: "minecraft:quartz_block"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.photosensitive.quest11.title}"
+			title: "石英块"
 			x: -7.5d
 			y: 1.5d
 		}
@@ -252,7 +252,7 @@
 				item: "minecraft:quartz_slab"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.photosensitive.quest12.title}"
+			title: "石英台阶"
 			x: -5.5d
 			y: 2.5d
 		}
@@ -272,10 +272,10 @@
 				item: "cmi:photosensitive_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.photosensitive.quest13.title}"
+			title: "感光机械装置"
 			x: 6.285714285714292d
 			y: 1.8571428571428612d
 		}
 	]
-	title: "{ftbquests.chapter.photosensitive.title}"
+	title: "感光"
 }

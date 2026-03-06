@@ -6,5 +6,5 @@
 		{ item: "functionalstorage:puller_upgrade" }
 		{ item: "functionalstorage:pusher_upgrade" }
 	]
-	title: "{ftbquests.loot_table_708571964512047621.title}"
+	title: "抽屉传输"
 }

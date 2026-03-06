@@ -35,10 +35,10 @@
 						value: "forge:gems/sulfur"
 					}
 				}
-				title: "{ftbquests.chapter.copper.quest1.task_+6296850402645921123.title}"
+				title: "硫磺"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.copper.quest1.title}"
+			title: "硫磺"
 			x: -17.0d
 			y: 2.0d
 		}
@@ -50,7 +50,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "452D1F3D2EC21B1D"
-				title: "{ftbquests.chapter.copper.quest2.task_+4984674710206946077.title}"
+				title: "粉碎"
 				type: "checkmark"
 			}]
 			x: -3.3214285714285694d
@@ -98,7 +98,7 @@
 						value: "forge:plates/rubber"
 					}
 				}
-				title: "{ftbquests.chapter.copper.quest4.task_+8614210570109743488.title}"
+				title: "橡胶板"
 				type: "item"
 			}]
 			x: -4.357142857142847d
@@ -179,7 +179,7 @@
 						value: "forge:plates/copper"
 					}
 				}
-				title: "{ftbquests.chapter.copper.quest8.task_+7976850985478907042.title}"
+				title: "铜板"
 				type: "item"
 			}]
 			x: -14.607142857142861d
@@ -198,10 +198,10 @@
 			size: 1.0d
 			tasks: [{
 				id: "054E57CA80AC5F78"
-				title: "{ftbquests.chapter.copper.quest9.task_+382339545626861432.title}"
+				title: "切割"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.copper.quest9.title}"
+			title: "切割"
 			x: -9.821428571428577d
 			y: 3.7857142857142847d
 		}
@@ -226,7 +226,7 @@
 						value: "forge:nuggets/copper"
 					}
 				}
-				title: "{ftbquests.chapter.copper.quest10.task_+347937918258451371.title}"
+				title: "铜粒"
 				type: "item"
 			}]
 			x: -5.5d
@@ -273,7 +273,7 @@
 						value: "forge:buckets/water"
 					}
 				}
-				title: "{ftbquests.chapter.copper.quest12.task_+7547481435553090561.title}"
+				title: "水桶"
 				type: "item"
 			}]
 			x: 11.535714285714278d
@@ -335,5 +335,5 @@
 			y: 1.2857142857142847d
 		}
 	]
-	title: "{ftbquests.chapter.copper.title}"
+	title: "铜质"
 }

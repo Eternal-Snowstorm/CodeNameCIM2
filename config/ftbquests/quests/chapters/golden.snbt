@@ -35,10 +35,10 @@
 						value: "forge:plates/gold"
 					}
 				}
-				title: "{ftbquests.chapter.golden.quest1.task_+7645636962984057449.title}"
+				title: "任意 #forge:板/金"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.golden.quest1.title}"
+			title: "金板"
 			x: -12.75d
 			y: 1.5d
 		}
@@ -62,10 +62,10 @@
 						value: "forge:nuggets/gold"
 					}
 				}
-				title: "{ftbquests.chapter.golden.quest2.task_+413739154617236499.title}"
+				title: "任意 #forge:粒/金"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.golden.quest2.title}"
+			title: "金粒"
 			x: -4.0d
 			y: 5.0d
 		}
@@ -85,7 +85,7 @@
 				item: "cmi:basic_mechanism_part"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.golden.quest3.title}"
+			title: "机械部件"
 			x: 1.0d
 			y: 1.0d
 		}
@@ -105,10 +105,10 @@
 				item: "cmi:gold_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.golden.quest4.title}"
+			title: "金机械"
 			x: 7.5d
 			y: 4.5d
 		}
 	]
-	title: "{ftbquests.chapter.golden.title}"
+	title: "金质"
 }

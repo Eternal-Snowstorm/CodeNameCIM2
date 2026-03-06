@@ -33,10 +33,10 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "{ftbquests.chapter.bronze.quest1.task_+159171843120861787.title}"
+				title: "任意 #forge:ingots/bronze"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest1.title}"
+			title: "青铜锭"
 			x: -6.987142857142864d
 			y: 12.107142857142847d
 		}
@@ -46,7 +46,7 @@
 			id: "14341BC5791FBEEE"
 			tasks: [{
 				id: "58D7B0FAE9577FAC"
-				title: "{ftbquests.chapter.bronze.quest2.task_+6401779987033587628.title}"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -4.117142857142866d
@@ -58,7 +58,7 @@
 			id: "6A77A8DDDC4663D8"
 			tasks: [{
 				id: "5295AEDB69CD2A6F"
-				title: "{ftbquests.chapter.bronze.quest3.task_+5950854740036102767.title}"
+				title: "切割"
 				type: "checkmark"
 			}]
 			x: -1.3900000000000077d
@@ -81,10 +81,10 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "{ftbquests.chapter.bronze.quest4.task_+6517506801855667940.title}"
+				title: "任意 #forge:ingots/bronze"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest4.title}"
+			title: "青铜锭"
 			x: -6.162857142857163d
 			y: 4.785714285714285d
 		}
@@ -94,7 +94,7 @@
 			id: "53C2429F47DDF6BE"
 			tasks: [{
 				id: "58DDD171B4BF894E"
-				title: "{ftbquests.chapter.bronze.quest5.task_+6403504531484674382.title}"
+				title: "合成"
 				type: "checkmark"
 			}]
 			x: -4.020000000000017d
@@ -118,10 +118,10 @@
 						value: "forge:rods/bronze"
 					}
 				}
-				title: "{ftbquests.chapter.bronze.quest6.task_+4389181177850617365.title}"
+				title: "任意 #forge:rods/bronze"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest6.title}"
+			title: "青铜杆"
 			x: -2.0785714285714363d
 			y: 7.428571428571431d
 		}
@@ -131,7 +131,7 @@
 			id: "77E2E7C835C9A5A6"
 			tasks: [{
 				id: "6341C438FB18151E"
-				title: "{ftbquests.chapter.bronze.quest7.task_+7152213432250930462.title}"
+				title: "弹簧线圈"
 				type: "checkmark"
 			}]
 			x: 0.6485714285714153d
@@ -154,7 +154,7 @@
 				item: "vintageimprovements:bronze_spring"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest8.title}"
+			title: "青铜弹簧"
 			x: 0.0185714285714198d
 			y: 11.92857142857143d
 		}
@@ -176,10 +176,10 @@
 						value: "forge:nuggets/bronze"
 					}
 				}
-				title: "{ftbquests.chapter.bronze.quest9.task_+4987690823854230824.title}"
+				title: "任意 #forge:nuggets/bronze"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest9.title}"
+			title: "青铜粒"
 			x: 3.88857142857141d
 			y: 13.499999999999993d
 		}
@@ -200,10 +200,10 @@
 						value: "create:shaft"
 					}
 				}
-				title: "{ftbquests.chapter.bronze.quest10.task_+2335488713962465000.title}"
+				title: "任意 #create:shaft"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest10.title}"
+			title: "传动杆"
 			x: 0.03142857142855604d
 			y: 4.208571428571432d
 		}
@@ -216,7 +216,7 @@
 			id: "0E8FBC83516CD28D"
 			tasks: [{
 				id: "36DA54172A662E65"
-				title: "{ftbquests.chapter.bronze.quest11.task_+3952564081443352165.title}"
+				title: "部署 *4"
 				type: "checkmark"
 			}]
 			x: 2.8171428571428407d
@@ -238,10 +238,10 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "{ftbquests.chapter.bronze.quest12.task_+4797986460630173525.title}"
+				title: "任意 #forge:ingots/bronze"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest12.title}"
+			title: "青铜锭"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -251,7 +251,7 @@
 			id: "3AAC31907C14A332"
 			tasks: [{
 				id: "23804518F056F3EA"
-				title: "{ftbquests.chapter.bronze.quest13.task_+2558120561760203754.title}"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: 5.745714285714264d
@@ -275,10 +275,10 @@
 						value: "forge:plates/bronze"
 					}
 				}
-				title: "{ftbquests.chapter.bronze.quest14.task_+8302287788325121225.title}"
+				title: "任意 #forge:plates/bronze"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest14.title}"
+			title: "青铜板"
 			x: 4.745714285714271d
 			y: 2.257142857142881d
 		}
@@ -299,7 +299,7 @@
 				item: "create:flywheel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest15.title}"
+			title: "飞轮"
 			x: 6.602857142857118d
 			y: 11.180000000000028d
 		}
@@ -317,7 +317,7 @@
 				item: "cmi:mechanical_mechanism_part"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest16.title}"
+			title: "机械部件"
 			x: 10.245714285714264d
 			y: 12.680000000000028d
 		}
@@ -335,10 +335,10 @@
 				item: "cmi:bronze_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.bronze.quest17.title}"
+			title: "青铜机械"
 			x: 12.102857142857125d
 			y: 13.537142857142882d
 		}
 	]
-	title: "{ftbquests.chapter.bronze.title}"
+	title: "青铜"
 }

@@ -19,7 +19,7 @@
 			}]
 			shape: "square"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.piece_cake.quest1.subtitle}"
+			subtitle: "就一个就行, 别搞太大\\n否则你的下场就是\\n\\n“现在的发电量是114514MFE”\\n“核电，轻而易举啊”\\n\\n“坏了坏了”\\n“你 死于核弹”"
 			tasks: [
 				{
 					id: "79019146BD8A0D92"
@@ -47,7 +47,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.piece_cake.quest1.title}"
+			title: "裂变反应堆"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -59,7 +59,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.piece_cake.quest2.subtitle}"
+			subtitle: "是钋不是钚！"
 			tasks: [{
 				id: "34D833137CCF5271"
 				item: "mekanism:pellet_polonium"
@@ -76,7 +76,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.piece_cake.quest3.subtitle}"
+			subtitle: "是钚不是钋！"
 			tasks: [{
 				id: "68E9057221E1F450"
 				item: "mekanism:pellet_plutonium"
@@ -88,9 +88,9 @@
 		{
 			dependencies: ["29F86C33F70E9575"]
 			description: [
-				"{ftbquests.chapter.piece_cake.quest4.description1}"
+				"无需感谢我, 因为这是搭建SPS的确切材料数量"
 				""
-				"{ftbquests.chapter.piece_cake.quest4.description2}"
+				"&m这玩应的思索是另一个整合包搬过来的"
 			]
 			id: "27CBF88AFC0584A6"
 			rewards: [{
@@ -100,7 +100,7 @@
 			}]
 			shape: "square"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.piece_cake.quest4.subtitle}"
+			subtitle: "初识超临界移相器"
 			tasks: [
 				{
 					count: 60L
@@ -126,7 +126,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.piece_cake.quest4.title}"
+			title: "超临界移相器"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -143,7 +143,7 @@
 			}]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.piece_cake.quest5.subtitle}"
+			subtitle: "我后台的战雷不是开的8.3吗为什么RWR在响\\n\\n“卧槽核弹轻而易举啊”"
 			tasks: [{
 				id: "546A9B4BDD1EE8ED"
 				item: "cmi:nuclear_mechanism"
@@ -196,7 +196,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.piece_cake.quest8.subtitle}"
+			subtitle: "嫌核电难做？这可是你的任务，工程师！"
 			tasks: [{
 				id: "3B3C03672F656C74"
 				item: {
@@ -206,12 +206,12 @@
 						value: "forge:circuits/elite"
 					}
 				}
-				title: "{ftbquests.chapter.piece_cake.quest8.task_+4268290288552078452.title}"
+				title: "精英控制电路"
 				type: "item"
 			}]
 			x: 0.0d
 			y: -4.0d
 		}
 	]
-	title: "{ftbquests.chapter.piece_cake.title}"
+	title: "美味铀饼"
 }

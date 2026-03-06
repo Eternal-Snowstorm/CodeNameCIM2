@@ -1,5 +1,4 @@
 {
-	autofocus_id: "7E672E73A0D23E18"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "prologue"
@@ -11,55 +10,53 @@
 	quests: [
 		{
 			description: [
-				"{ftbquests.chapter.prologue.quest1.description1}"
-				"{ftbquests.chapter.prologue.quest1.description2}"
-				"{ftbquests.chapter.prologue.quest1.description3}"
-				"{ftbquests.chapter.prologue.quest1.description4}"
-				"{ftbquests.chapter.prologue.quest1.description5}"
+				"妈的, 烧的真他妈充分."
+				"要不是紧急逃生仓, 我怕是也和这船体一样支离破碎了. "
+				"空气含氧量34%, 地表重力加速度10.28m*s^-2, 有地球生物存活......啊,这就是伊甸了. "
+				"重力，我操的只是略不正常，比上次那个巴......巴兰尼科夫先生发现的星球好太多了."
+				"既然这样, 得赶紧想办法活下去, 才能争取与地球的通讯......"
 			]
 			disable_toast: true
-			icon: "cmi:wooden_mechanism"
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_4_rocket"
+				tag: { }
+			}
 			id: "21ED583750523195"
-			rewards: [
-				{
-					id: "63AA958CA6111497"
-					type: "xp"
-					xp: 100
-				}
-				{
-					count: 64
-					id: "7921A777ABA1D383"
-					item: "minecraft:cooked_beef"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "7921A777ABA1D383"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.8d
-			subtitle: "{ftbquests.chapter.prologue.quest1.subtitle}"
+			subtitle: "紧急求助!紧急求助!"
 			tasks: [{
 				id: "22D0220F20C29089"
-				title: "{ftbquests.chapter.prologue.quest1.task_+2508542440814841993.title}"
+				title: "从航天事故生还"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.prologue.quest1.title}"
+			title: "劫后余生"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.prologue.quest2.description1}"
-				"{ftbquests.chapter.prologue.quest2.description2}"
+				"思索(Ponder)是伟大的工程师&bSimibubi&r发明出来用于传递知识的仪式——直观的演示胜于千言万语"
+				"我把我所知道的经验都编织为了思索, 当你&e对着某些物品按住[W]&r时, 你就能和仪式建立连接"
 				""
-				"{ftbquests.chapter.prologue.quest2.description3}"
+				"JEI则是上个时代流传下来的一种仪式, 它用于传递那些有关繁杂配方的知识. 你可以&e对着物品使用[R]和[U]&r来与仪式建立连接. &c当然, 并非所有配方都能在JEI中看到&r"
 				""
-				"{ftbquests.chapter.prologue.quest2.description4}"
+				"而任务, 也就是你现在看到的东西, 则可以让我为你提供帮助"
 				""
-				"{ftbquests.chapter.prologue.quest2.description5}"
+				"我基于任务, 思索和JEI编写了这一套仪式, 我将其命名为&e构件与革新&r. 我相信它可以帮助每一个像你这样流浪到这里的旅人"
 				""
-				"{ftbquests.chapter.prologue.quest2.description6}"
+				"&a当然, 它的内容并不完全, 我也不可能事无巨细地把所有的细节都教给你, 你总是需要自己去探索那些大量且不在仪式说明中的内容&r"
 				""
-				"{ftbquests.chapter.prologue.quest2.image0}"
-				"{ftbquests.chapter.prologue.quest2.description7}"
+				"{@pagebreak}"
+				"{image:cmi:textures/images/authorization/slime_authorization.png width:144 height:45 align:center}"
+				"&b文案来自黄铜协奏曲, 已经过原作者授权"
 			]
 			disable_toast: true
 			icon: "create:empty_schematic"
@@ -71,17 +68,17 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.prologue.quest2.subtitle}"
+			subtitle: "这些是辅助你通关的工具"
 			tasks: [{
 				id: "6D6250EF55DF25ED"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.prologue.quest2.title}"
-			x: 0.0d
-			y: 2.0d
+			title: "关于思索, 任务和JEI"
+			x: 2.0d
+			y: -4.0d
 		}
 		{
-			description: ["{ftbquests.chapter.prologue.quest3.description1}"]
+			description: ["整合包内添加了些许彩蛋, 这些彩蛋里有开发组的恶趣味, 也有让玩家更舒服的内容. 但是希望大家发现一个彩蛋后还请&l&c不要声张&r&r! 当彩蛋不再是彩蛋那它便失去了它作为彩蛋的意义了!"]
 			disable_toast: true
 			icon: "create:wrench"
 			id: "16E08617F49E62A9"
@@ -99,15 +96,15 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.prologue.quest3.subtitle}"
+			subtitle: "还请大家保密!"
 			tasks: [{
 				id: "2F9F7E1BE7866A66"
-				title: "{ftbquests.chapter.prologue.quest3.task_+3431600099393170022.title}"
+				title: "彩蛋是对的"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.prologue.quest3.title}"
-			x: -2.0d
-			y: -2.0d
+			title: "关于彩蛋"
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			disable_toast: true
@@ -127,28 +124,30 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.prologue.quest4.subtitle}"
+			subtitle: "当前版本:Beta-2.4.0"
 			tasks: [{
 				id: "79D5B1959C780861"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.prologue.quest4.title}"
-			x: 2.0d
-			y: -2.0d
+			title: "预发行版"
+			x: 5.0d
+			y: -5.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.prologue.quest5.description1}"
-				"{ftbquests.chapter.prologue.quest5.description2}"
-				"{ftbquests.chapter.prologue.quest5.description3}"
-				"{ftbquests.chapter.prologue.quest5.description4}"
-				"{ftbquests.chapter.prologue.quest5.description5}"
-				"{ftbquests.chapter.prologue.quest5.description6}"
-				"{ftbquests.chapter.prologue.quest5.description7}"
-				"{ftbquests.chapter.prologue.quest5.description8}"
-				"{ftbquests.chapter.prologue.quest5.description9}"
-				"{ftbquests.chapter.prologue.quest5.description10}"
-				"{ftbquests.chapter.prologue.quest5.description11}"
+				"[主创] Unknown_Entity_"
+				"[程序] 逐日炎雪_中微子"
+				"[程序] 榛名柒月"
+				"[程序] 随机构件"
+				"[程序] 燕栖"
+				"[程序] FiberOptics"
+				"[程序] 117458866249"
+				"[美工] 一只键盘虾"
+				"[美工] Dropper_QWQ"
+				"[技术] MF."
+				"[技术] 芒果凍布丁"
+				"[任务] 闪电羿"
+				"[任务] Decahydroflowey"
 			]
 			disable_toast: true
 			icon: "cmi:re_construction"
@@ -167,22 +166,22 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.prologue.quest5.subtitle}"
+			subtitle: "整合包开发团队"
 			tasks: [{
 				id: "4AC9E70B5E11919B"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.prologue.quest5.title}"
-			x: 2.0d
-			y: 0.0d
+			title: "CMI开发团队"
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.prologue.quest6.description1}"
-				"{ftbquests.chapter.prologue.quest6.description2}"
-				"{ftbquests.chapter.prologue.quest6.description3}"
+				"对于魔改包玩家来说,本整合包的魔改程度可能还不够高."
+				"因为这个整合包还在较为早期的测试阶段,很多内容(尤其是从MEK开始的内容)还没做完."
+				"也请各位玩家见谅qwq"
 				""
-				"{ftbquests.chapter.prologue.quest6.description4}"
+				"任务里的产线设计灵感来源于PVZ2早期的迷宫地图."
 			]
 			icon: "ftbquests:book"
 			id: "79AA74F5F585BC6B"
@@ -192,20 +191,20 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.prologue.quest6.subtitle}"
+			subtitle: "未完成,请注意"
 			tasks: [{
 				id: "3BA7D8532D8DD772"
-				title: "{ftbquests.chapter.prologue.quest6.task_+4298642221106583410.title}"
+				title: "关于任务线"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: 2.0d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.prologue.quest7.description1}"
-				"{ftbquests.chapter.prologue.quest7.description2}"
-				"{ftbquests.chapter.prologue.quest7.description3}"
+				"按照我们的设计,整合包内哪怕是和平模式也可以正常游玩, 生存难度不会直接影响流程"
+				"不过整合包内同时配备匠魂, 你如果是个匠魂高手也可以去打造一把超高伤害的武器去战斗爽"
+				"并且我们添加了很多我们认为不错的匠魂材料, 有适合挖矿的, 有适合伐木的, 也有适合战斗的! 全看你自己的搭配!"
 			]
 			icon: {
 				Count: 1
@@ -472,22 +471,22 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.prologue.quest7.subtitle}"
+			subtitle: "和平发育还是战斗爽?"
 			tasks: [{
 				id: "58616AF4A4680231"
-				title: "{ftbquests.chapter.prologue.quest7.task_+6368488947041436209.title}"
+				title: "关于刷怪"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.prologue.quest7.title}"
+			title: "关于难度"
 			x: 2.0d
-			y: 2.0d
+			y: -2.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.prologue.quest8.description1}"
-				"{ftbquests.chapter.prologue.quest8.description2}"
-				"{ftbquests.chapter.prologue.quest8.description3}"
-				"{ftbquests.chapter.prologue.quest8.description4}"
+				"[程序] 史莱姆li(黄铜协奏曲作者)"
+				"[程序] Jason(齿轮盛宴作者)"
+				"[音乐] DontkillBelalus"
+				"[结构] 咸到老时变成鱼(知名建筑up主)"
 			]
 			icon: "minecraft:apple"
 			id: "30ED8BD20D50F96D"
@@ -498,35 +497,35 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.prologue.quest8.subtitle}"
+			subtitle: "他们是制作整合包时提供了帮助的人"
 			tasks: [{
 				id: "47BA93F1301917CD"
-				title: "{ftbquests.chapter.prologue.quest8.task_+5168606186464417741.title}"
+				title: "致谢名单"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.prologue.quest9.description1}"
-				"{ftbquests.chapter.prologue.quest9.description2}"
-				"{ftbquests.chapter.prologue.quest9.description3}"
-				"{ftbquests.chapter.prologue.quest9.description4}"
+				"若聊天栏出现\"&cKubeJS Errors Found [X] &r\"字样,请按\"控制面板\"中的Reload按钮, 或者 输入命令\"/reload\"直到出现\"&aReloaded with no KubeJS errors! \""
+				"&8&o注:"
+				"&8&o(1)此操作会重载所有的配方,会造成短暂卡顿且需要较长的时间"
+				"&8&o(2)任何一个KubeJS Error都会影响全体配方"
 				"{@pagebreak}"
-				"{ftbquests.chapter.prologue.quest9.description5}"
+				"在存档内更换或开关光影可能导致客户端崩溃,请谨慎使用"
 				"{@pagebreak}"
-				"{ftbquests.chapter.prologue.quest9.description6}"
+				"\"控制面板\"页面可以找到&6CurseForge&r, &7Github&r和&c视频&r链接"
 				"{@pagebreak}"
-				"{ftbquests.chapter.prologue.quest9.description7}"
+				"添加资源包时, 请确保&l&dPackResourse&r&r&r置于最顶, 该资源包修改了整合包内需要的纹理, 模型等资源"
 				"{@pagebreak}"
-				"{ftbquests.chapter.prologue.quest9.description8}"
+				"纹理或模型资源错误时, 请尝试按 &e&lF3+T&r 重载"
 				"{@pagebreak}"
-				"{ftbquests.chapter.prologue.quest9.description9}"
+				"思索中部分方块(矿石等)可能出现异常渲染, 此特性由矿石发光资源包产生, 属正常现象"
 				"{@pagebreak}"
-				"{ftbquests.chapter.prologue.quest9.description10}"
-				"{ftbquests.chapter.prologue.quest9.description11}"
-				"{ftbquests.chapter.prologue.quest9.description12}"
+				"因为不可控因素, 在服务器内可能会有部分问题:"
+				"    1. 工作台合成构件时匠魂的锤子会直接消失, 而在单人则会正常的消耗1耐久"
+				"    2. 多方块机器面板内没有翻译名称"
 			]
 			icon: "createdeco:decal_warning"
 			id: "511AD7F0E04213FC"
@@ -544,42 +543,76 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.prologue.quest9.subtitle}"
+			subtitle: "这里是一些常见问题和解决方案"
 			tasks: [{
 				id: "6377990FF2529CEB"
-				title: "{ftbquests.chapter.prologue.quest9.task_+7167365625752493291.title}"
+				title: "温馨提示"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
-			id: "7E672E73A0D23E18"
-			rewards: [{
-				icon: "minecraft:oak_log"
-				id: "46B71692835CFF97"
-				tags: ["final_quest"]
-				title: "毕业了?"
-				type: "custom"
-			}]
+			id: "405D0556F11BCE2C"
+			shape: "hexagon"
+			subtitle: "感谢游玩&6机械动力:构建与革新&f！"
 			tasks: [{
-				id: "6276C385E9C0CC76"
-				title: "最终任务?"
+				id: "45029E8883011656"
+				title: "欢迎"
 				type: "checkmark"
 			}]
-			x: -6.5d
-			y: -1.5d
+			title: "欢迎，工程师！"
+			x: 3.5d
+			y: -7.0d
 		}
 		{
-			id: "2C0934EF7FAFEBF7"
+			description: ["&8Tips:按住[Alt]可以从附近的工具箱里快捷调用物品"]
+			icon: "ae2:nether_quartz_wrench"
+			id: "6FC6A8840156255C"
+			subtitle: "这些还能派上用场......"
+			tasks: [
+				{
+					count: 2L
+					id: "4C32610999389A1B"
+					item: { Count: 2, id: "ae2:storage_bus" }
+					type: "item"
+				}
+				{
+					id: "6B1F5AB1468C5122"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "24D0F5DFA34E1245"
+					item: "create:brown_toolbox"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "1337E828A7D442BC"
+					item: { Count: 9, id: "minecraft:magma_block" }
+					type: "item"
+				}
+			]
+			title: "清点物资"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"利用飞船上的物资，"
+				"我应该可以搭建一套简单的存储系统？"
+			]
+			icon: "ae2:crafting_terminal"
+			id: "527B287F33D8FDAE"
 			tasks: [{
-				id: "0791CD34DDE51F2F"
-				title: "A"
+				id: "109221B85E0631FC"
+				title: "存储控制"
 				type: "checkmark"
 			}]
-			x: 5.0d
-			y: 2.0d
+			x: 4.5d
+			y: 0.0d
 		}
 	]
-	title: "{ftbquests.chapter.prologue.title}"
+	title: "开始"
 }
