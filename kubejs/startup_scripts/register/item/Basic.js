@@ -309,45 +309,4 @@ StartupEvents.registry("item", (event) => {
 	// // Mg(OH)2
 	// addItem("magnesium_hydroxide")
 	// 	.texture(`${global.namespace}:item/material/sea/mgoh2`)
-
 })
-
-
-
-{
-	{
-		{
-			{
-				{
-					{
-						{
-							{
-								{
-									{
-										{
-											{
-												{
-													{
-														{
-															{
-																{
-																	{
-																		{}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
