@@ -10,8 +10,8 @@
 	quests: [
 		{
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest1.description1}"
-				"{ftbquests.chapter.metal_smelting.quest1.description2}"
+				"如你所见,本整合包的金属材料全都被赋予了独立的熔点,你可能会因此被迫不断去制造对应的燃料与熔炉."
+				"不过别担心,既然我们做了这个系统,我们当然会为你尽可能详细的讲解~"
 			]
 			hide_dependent_lines: true
 			icon: "minecraft:furnace"
@@ -23,22 +23,22 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.metal_smelting.quest1.subtitle}"
+			subtitle: "熔点系统带来的变革"
 			tasks: [{
 				id: "59FA22C26D126C02"
-				title: "{ftbquests.chapter.metal_smelting.quest1.task_+6483532832002173954.title}"
+				title: "我准备好了!"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest1.title}"
+			title: "千万注意!"
 			x: -4.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["55B7A6AEBB65DFDA"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest2.description1}"
-				"{ftbquests.chapter.metal_smelting.quest2.description2}"
-				"{ftbquests.chapter.metal_smelting.quest2.description3}"
+				"熔炉!我们的老朋友!"
+				"但很抱歉,他的力量被削弱的很厉害,到现在这点温度顶天也只能熔炼铜矿物了..."
+				"而且他没有匠魂熔炉的熔化增产,除了开局拿来烧炼粗铜后制造工具似乎也并不能发挥什么太大的作用了..."
 			]
 			hide_dependent_lines: true
 			id: "423068E2C60598B2"
@@ -47,21 +47,21 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest2.subtitle}"
+			subtitle: "再熟悉不过了"
 			tasks: [{
 				id: "60D75F6362BF68A3"
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest2.title}"
+			title: "最基础的熔炼"
 			x: -3.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["55B7A6AEBB65DFDA"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest3.description1}"
-				"{ftbquests.chapter.metal_smelting.quest3.description2}"
+				"在1000摄氏度以上的金属占据了主要地位的整合包内,&c&l仅能&r&r提供&c937摄氏度&r的焦黑加热器怕是只能熔炼&6锌 锡 黄铜 青铜&r这类熔点极低的金属了."
+				"它对于开局使用&6锌&r制造&b安山合金&r意义重大,可以说开局的机械动力就是从这里起源的."
 			]
 			hide_dependent_lines: true
 			id: "3497D2D25AA3ACA6"
@@ -72,22 +72,22 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.metal_smelting.quest3.subtitle}"
+			subtitle: "1000度以下还能应付"
 			tasks: [{
 				id: "2527A0D370DF24DF"
 				item: "tconstruct:seared_heater"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest3.title}"
+			title: "匠魂的基础加热"
 			x: -5.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["55B7A6AEBB65DFDA"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest4.description1}"
-				"{ftbquests.chapter.metal_smelting.quest4.description2}"
-				"{ftbquests.chapter.metal_smelting.quest4.description3}"
+				"现在,去挖点&b铜&r吧."
+				"你可以试试用&d紫水晶&r工具,自带的&6幸运(时运)&r效果可以获得更多矿物."
+				"&b铜&r可以直接在熔炉里熔炼,也可以直接在&e部件制造台&r上手搓,是不错的前期工具材料."
 			]
 			id: "1E2099E61A6F1339"
 			rewards: [{
@@ -95,7 +95,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest4.subtitle}"
+			subtitle: "可能是你的第一种金属!"
 			tasks: [{
 				id: "23B2FB8B0D2F8C59"
 				item: {
@@ -105,10 +105,10 @@
 						value: "forge:raw_materials/copper"
 					}
 				}
-				title: "{ftbquests.chapter.metal_smelting.quest4.task_+2572394911822220377.title}"
+				title: "粗铜"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest4.title}"
+			title: "橙红色的光泽"
 			x: -1.0d
 			y: -3.5d
 		}
@@ -118,9 +118,9 @@
 				"164862935DD9DE1D"
 			]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest5.description1}"
-				"{ftbquests.chapter.metal_smelting.quest5.description2}"
-				"{ftbquests.chapter.metal_smelting.quest5.description3}"
+				"虽然不是原版,但是这个家伙大概也是大多数玩家的老朋友了."
+				"&c锌&r的熔点只有&9420&r摄氏度,可以直接在焦黑炉里熔化,浇筑到&a安山岩粉&r上就可以获得&a安山合金&r了."
+				"机械动力的故事⑨此开始(ᗜˬᗜ)"
 			]
 			id: "1592681A54FC5717"
 			rewards: [{
@@ -128,7 +128,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest5.subtitle}"
+			subtitle: "安山设备的基础之一"
 			tasks: [{
 				id: "36D709D5E822F5B1"
 				item: {
@@ -138,17 +138,17 @@
 						value: "forge:raw_materials/zinc"
 					}
 				}
-				title: "{ftbquests.chapter.metal_smelting.quest5.task_+3951638012368188849.title}"
+				title: "粗锌"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest5.title}"
+			title: "老朋友"
 			x: -5.0d
 			y: -4.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest6.description1}"
-				"{ftbquests.chapter.metal_smelting.quest6.description2}"
+				"使用锤子、石磨与粉碎轮都可以把安山岩打碎."
+				"打碎后的安山岩就是安山合金的重要原材料,所以多挖点,很有用!"
 			]
 			icon: "minecraft:andesite"
 			id: "5D305A93B3676FEE"
@@ -157,7 +157,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest6.subtitle}"
+			subtitle: "专门加了个群系给你挖,应该不会缺吧"
 			tasks: [
 				{
 					id: "362AE1F8AAE377F9"
@@ -170,7 +170,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.metal_smelting.quest6.title}"
+			title: "打成粉,然后呢？"
 			x: -6.5d
 			y: -7.0d
 		}
@@ -181,8 +181,8 @@
 				"5D305A93B3676FEE"
 			]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest7.description1}"
-				"{ftbquests.chapter.metal_smelting.quest7.description2}"
+				"&a安山合金&r是大前期的重要资源,是你升级到铁器时代的必经之路."
+				"将它熔化后浇在小板铸模上就可以获得&a安山合金板&r,用于制造&a高炉&r、&a安山系列设备&r等"
 			]
 			id: "2F07FB52B3D85792"
 			rewards: [
@@ -197,7 +197,7 @@
 					xp: 10
 				}
 			]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest7.subtitle}"
+			subtitle: "获得安山合金!"
 			tasks: [{
 				id: "3603027C61393227"
 				item: {
@@ -207,18 +207,18 @@
 						value: "forge:ingots/andesite_alloy"
 					}
 				}
-				title: "{ftbquests.chapter.metal_smelting.quest7.task_+3891957236208579111.title}"
+				title: "安山合金"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest7.title}"
+			title: "坚如磐石"
 			x: -7.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["2F07FB52B3D85792"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest8.description1}"
-				"{ftbquests.chapter.metal_smelting.quest8.description2}"
+				"高炉的内部温度提高到了&c1550摄氏度&r,足以将铁及以下熔点的金属熔炼."
+				"配方正确,原料正确,产物正确,UI错误"
 			]
 			id: "41D7E109B48C4231"
 			rewards: [{
@@ -226,23 +226,23 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest8.subtitle}"
+			subtitle: "制造高炉"
 			tasks: [{
 				id: "65BCC26F3EAFFDBD"
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest8.title}"
+			title: "更进一步的冶炼"
 			x: -7.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["57F25D7AD4CC6CBE"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest9.description1}"
-				"{ftbquests.chapter.metal_smelting.quest9.description2}"
-				"{ftbquests.chapter.metal_smelting.quest9.description3}"
-				"{ftbquests.chapter.metal_smelting.quest9.description4}"
+				"即使匠魂原版的大量燃料都被我们调高了温度,熔岩炼铁仍然成为了过去式."
+				"但是你都有安山合金了,为什么不去做点别的燃料呢？"
+				"当植物油与乙醇被混合均匀,生物柴油就诞生了!"
+				"它可以提供1636摄氏度的高温,是非常优秀的过渡燃料"
 			]
 			icon: "create:whisk"
 			id: "13C438F279FA1A53"
@@ -259,7 +259,7 @@
 					type: "choice"
 				}
 			]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest9.subtitle}"
+			subtitle: "燃烧温度更高的液体燃料!"
 			tasks: [
 				{
 					id: "53AE1BF7055EA776"
@@ -277,16 +277,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.metal_smelting.quest9.title}"
+			title: "混合均匀"
 			x: -8.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["41D7E109B48C4231"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest10.description1}"
-				"{ftbquests.chapter.metal_smelting.quest10.description2}"
-				"{ftbquests.chapter.metal_smelting.quest10.description3}"
+				"有了高炉,现在你可以熔炼铁了!"
+				"可能还是有那么一点陌生,但是终于还是闻到了熟悉的味道!"
+				"现在,辊压机,搅拌机,鼓风机等一系列含铁设备正在向你招手!"
 			]
 			id: "57F25D7AD4CC6CBE"
 			rewards: [{
@@ -294,7 +294,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest10.subtitle}"
+			subtitle: "找出你的粗铁"
 			tasks: [{
 				id: "16F92DE13EB1C548"
 				item: {
@@ -304,10 +304,10 @@
 						value: "forge:raw_materials/iron"
 					}
 				}
-				title: "{ftbquests.chapter.metal_smelting.quest10.task_+1655404783478097224.title}"
+				title: "粗铁"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest10.title}"
+			title: "铁器时代!"
 			x: -8.0d
 			y: -1.0d
 		}
@@ -317,9 +317,9 @@
 				"7B0FF29D1967C917"
 			]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest11.description1}"
-				"{ftbquests.chapter.metal_smelting.quest11.description2}"
-				"{ftbquests.chapter.metal_smelting.quest11.description3}"
+				"人类历史上的第一种合金"
+				"现在正和蒸汽技术深度绑定."
+				"赶紧制造青铜构件来驱动你的蒸汽锅炉吧!"
 			]
 			id: "2192A4D7A83457AD"
 			rewards: [{
@@ -327,7 +327,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest11.subtitle}"
+			subtitle: "制作青铜"
 			tasks: [{
 				id: "4CA53FE370915814"
 				item: {
@@ -337,18 +337,18 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "{ftbquests.chapter.metal_smelting.quest11.task_+5522890764118480916.title}"
+				title: "青铜"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest11.title}"
+			title: "我本来不是绿的!"
 			x: -0.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["55B7A6AEBB65DFDA"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest12.description1}"
-				"{ftbquests.chapter.metal_smelting.quest12.description2}"
+				"&a锡&r是一种熔点只有232的杂鱼~"
+				"对于前期的玩家来说,使用&a锡制造的合金&r应该会是一种不错的&b应力设备&r原料"
 			]
 			id: "7B0FF29D1967C917"
 			rewards: [{
@@ -356,7 +356,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest12.subtitle}"
+			subtitle: "获取锡"
 			tasks: [{
 				id: "6BE83EB12D1BA4EA"
 				item: {
@@ -366,20 +366,20 @@
 						value: "forge:raw_materials/tin"
 					}
 				}
-				title: "{ftbquests.chapter.metal_smelting.quest12.task_+7775533687342081258.title}"
+				title: "粗锡"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest12.title}"
+			title: "材质柔软,熔点也很低"
 			x: -2.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["57F25D7AD4CC6CBE"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest13.description1}"
-				"{ftbquests.chapter.metal_smelting.quest13.description2}"
-				"{ftbquests.chapter.metal_smelting.quest13.description3}"
-				"{ftbquests.chapter.metal_smelting.quest13.description4}"
+				"终于要进入电气时代了!"
+				"如果你问我电气时代最具有代表性的材料是什么"
+				"那我一定会说&5钢!"
+				"将碳与铁以最合适的比例融合在一起,就是最为坚韧耐用的铁合金!"
 			]
 			id: "43A58164AF59ECA2"
 			rewards: [{
@@ -387,7 +387,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest13.subtitle}"
+			subtitle: "炼出钢"
 			tasks: [{
 				id: "3432C6434689A2E4"
 				item: {
@@ -397,22 +397,22 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "{ftbquests.chapter.metal_smelting.quest13.task_+3761286631056319204.title}"
+				title: "钢"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest13.title}"
+			title: "铁的加强态!"
 			x: -6.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["43A58164AF59ECA2"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest14.description1}"
-				"{ftbquests.chapter.metal_smelting.quest14.description2}"
-				"{ftbquests.chapter.metal_smelting.quest14.description3}"
-				"{ftbquests.chapter.metal_smelting.quest14.description4}"
-				"{ftbquests.chapter.metal_smelting.quest14.description5}"
-				"{ftbquests.chapter.metal_smelting.quest14.description6}"
+				"为什么要你做这东西呢？"
+				"除了炼钢更快以外……"
+				"&a电弧炉是当前阶段温度最高的熔炉."
+				"想要发展热力的话,那些合金不是需要柴油烈焰血熔化就是需要电弧炉生产"
+				"就是这个电老虎不仅耗电高,噪声也大"
+				"希望你在黄铜阶段制造了足够的蓄电池与发电机"
 			]
 			id: "22C43CFB89AA2C2B"
 			rewards: [{
@@ -420,29 +420,29 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest14.subtitle}"
+			subtitle: "获取27块强化高炉砖"
 			tasks: [{
 				count: 27L
 				id: "2F50FA6A94D3F9EC"
 				item: "immersiveengineering:blastbrick_reinforced"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest14.title}"
+			title: "噪音警告!"
 			x: -4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["378E684B19F5736E"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest15.description1}"
-				"{ftbquests.chapter.metal_smelting.quest15.description2}"
-				"{ftbquests.chapter.metal_smelting.quest15.description3}"
-				"{ftbquests.chapter.metal_smelting.quest15.description4}"
-				"{ftbquests.chapter.metal_smelting.quest15.description5}"
-				"{ftbquests.chapter.metal_smelting.quest15.description6}"
-				"{ftbquests.chapter.metal_smelting.quest15.description7}"
-				"{ftbquests.chapter.metal_smelting.quest15.description8}"
-				"{ftbquests.chapter.metal_smelting.quest15.description9}"
+				"嘿锇,你整天炫耀你那3k摄氏度熔点的日子结束了!"
+				"把你的单质给我."
+				"想熔炼的话,就自己去JEI查,这规矩你也懂的."
+				"我就知道你会这么说(掏出提纯仓)(意义不明的鼓点)"
+				"我们之间因为熔点争了多少次了？"
+				"不好说,自从我把你从地下挖出来,就一直在试图熔化你."
+				"(意义不明的鼓点)"
+				"是时候结束了,锇!一了百了."
+				"(意义不明的鼓点)"
 			]
 			icon: "mekanism:ingot_osmium"
 			id: "5B75C8DD9D359835"
@@ -451,7 +451,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest15.subtitle}"
+			subtitle: "想熔炼的话,你得自己去JEI查"
 			tasks: [
 				{
 					id: "7BE82B5D77287BD2"
@@ -462,7 +462,7 @@
 							value: "forge:raw_materials/osmium"
 						}
 					}
-					title: "{ftbquests.chapter.metal_smelting.quest15.task_+8928433941693103058.title}"
+					title: "粗锇"
 					type: "item"
 				}
 				{
@@ -474,21 +474,21 @@
 							value: "forge:raw_materials/tungsten"
 						}
 					}
-					title: "{ftbquests.chapter.metal_smelting.quest15.task_+177718982468725467.title}"
+					title: "粗钨"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.metal_smelting.quest15.title}"
+			title: "绝不会锇钨冲突!"
 			x: 0.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["22C43CFB89AA2C2B"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest16.description1}"
-				"{ftbquests.chapter.metal_smelting.quest16.description2}"
-				"{ftbquests.chapter.metal_smelting.quest16.description3}"
-				"{ftbquests.chapter.metal_smelting.quest16.description4}"
+				"在石油化工与海水处理线路的终点,你看到了这点光芒."
+				"它有着极强的耐腐蚀性能,经历漫长的岁月仍然可以凭借致密的氧化层保持光洁."
+				"它是下一个阶段的重要材料,那些基础设备一个两个都需要它的参与."
+				"而它只能在电弧炉中制作"
 			]
 			id: "378E684B19F5736E"
 			rewards: [{
@@ -496,7 +496,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest16.subtitle}"
+			subtitle: "制造不锈钢"
 			tasks: [{
 				id: "0F097E2BCE0B4681"
 				item: {
@@ -506,19 +506,19 @@
 						value: "forge:ingots/stainless_steel"
 					}
 				}
-				title: "{ftbquests.chapter.metal_smelting.quest16.task_+1083535911964853889.title}"
+				title: "不锈耐酸钢"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest16.title}"
+			title: "仓库角落的闪光"
 			x: -2.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["423068E2C60598B2"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest17.description1}"
-				"{ftbquests.chapter.metal_smelting.quest17.description2}"
-				"{ftbquests.chapter.metal_smelting.quest17.image0}"
+				"铜的挖掘等级为&b铁&r, 可以直接挖&b铁镐&r能挖的东西"
+				"并且如下图所示, 铜&r&c不需要融化&r也可以直接放入&a部件制造台&r&r内制作对应的部件"
+				"{image:cmi:textures/images/copper_pickaxe.png width:162 height:74 align:center}"
 			]
 			hide_dependency_lines: false
 			hide_dependent_lines: true
@@ -581,21 +581,21 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.metal_smelting.quest17.subtitle}"
+			subtitle: "匠魂的铜镐挖掘等级为铁"
 			tasks: [{
 				id: "75271B65753A6297"
-				title: "{ftbquests.chapter.metal_smelting.quest17.task_+8441746149101691543.title}"
+				title: "做把匠魂的铜镐"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest17.title}"
+			title: "我要怎么挖锌?"
 			x: -4.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2F07FB52B3D85792"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest18.description1}"
-				"{ftbquests.chapter.metal_smelting.quest18.description2}"
+				"不论大小炉子,匠魂的熔炉都支持使用匠魂自身的&6流体储罐&r方块储存燃料."
+				"也只有这样使用才能避免焦黑加热器的&c大量&r热能散失,发挥出燃料应有的能耐."
 			]
 			icon: "tconstruct:seared_fuel_tank"
 			id: "327C3DF2054C9DD1"
@@ -604,7 +604,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest18.subtitle}"
+			subtitle: "不要把液体塞进焦黑加热器!"
 			tasks: [{
 				id: "627DE0E59DF86F20"
 				item: {
@@ -633,7 +633,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest18.title}"
+			title: "如何使用液体燃料?"
 			x: -9.0d
 			y: -5.5d
 		}
@@ -645,10 +645,10 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest19.subtitle}"
+			subtitle: "如何获取更多金属"
 			tasks: [{
 				id: "2D9A1A6F786825D8"
-				title: "{ftbquests.chapter.metal_smelting.quest19.task_+3285967944183981528.title}"
+				title: "资源获取"
 				type: "checkmark"
 			}]
 			x: -6.0d
@@ -656,14 +656,14 @@
 		}
 		{
 			dependencies: ["2ACC8CA727BBD613"]
-			description: ["{ftbquests.chapter.metal_smelting.quest20.description1}"]
+			description: ["使用特定构件右键催生器时, 会消耗一个构件, 并将周围5×5范围内的一部分石头转化为矿石(详见对应构件的提示)"]
 			id: "69E7747AD0E17A51"
 			rewards: [{
 				id: "7AF90AD883CEAB5D"
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest20.subtitle}"
+			subtitle: "构件催生"
 			tasks: [{
 				id: "0B693C57917746ED"
 				item: "cmi:accelerator"
@@ -675,14 +675,14 @@
 		{
 			dependencies: ["2ACC8CA727BBD613"]
 			description: [
-				"{ftbquests.chapter.metal_smelting.quest21.description1}"
-				"{ftbquests.chapter.metal_smelting.quest21.description2}"
-				"{ftbquests.chapter.metal_smelting.quest21.image0}"
-				"{ftbquests.chapter.metal_smelting.quest21.image2}"
+				"矿石节点会随机生成在地表, 周围分布着部分粗矿块, 矿石以及少量装饰性方块, 中心则包含一个节点方块"
+				"节点方块不可被任何形式带, 包括矿车, 列车, 量子塔和集装箱等"
+				"{image:cmi:textures/images/copper_ore_node.png width:122 height:111 align:center}"
+				"{image:cmi:textures/images/iron_ore_node.png width:138 height:120 align:center}"
 				"{@pagebreak}"
-				"{ftbquests.chapter.metal_smelting.quest21.description3}"
-				"{ftbquests.chapter.metal_smelting.quest21.description4}"
-				"{ftbquests.chapter.metal_smelting.quest21.image4}"
+				"开采节点需要制作一个&9钻芯&r和任意材质的&9钻头(安山合金、铜或黄铜)&r"
+				"在节点上方第2格放置&9钻芯&r, 其下方放置&9钻头&r, 并接入动力后即可开始无限开采"
+				"{image:cmi:textures/images/ore_node_mining.png width:118 height:125 align:center}"
 			]
 			id: "515A858978CD77C7"
 			rewards: [{
@@ -690,20 +690,20 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.metal_smelting.quest21.subtitle}"
+			subtitle: "无限获取"
 			tasks: [{
 				icon: "cmi:stone_iron_ore_node"
 				id: "1049179594D87817"
 				observe_type: 1
 				timer: 0L
-				title: "{ftbquests.chapter.metal_smelting.quest21.task_+1173495109121505303.title}"
+				title: "观察任意矿石节点"
 				to_observe: "#deepdrilling:ore_nodes"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.metal_smelting.quest21.title}"
+			title: "矿石节点"
 			x: -5.5d
 			y: -11.0d
 		}
 	]
-	title: "{ftbquests.chapter.metal_smelting.title}"
+	title: "矿石获取与熔炼"
 }

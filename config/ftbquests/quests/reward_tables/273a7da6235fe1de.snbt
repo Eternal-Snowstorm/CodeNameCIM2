@@ -6,5 +6,5 @@
 		{ item: "create:basin" }
 		{ item: "create:depot" }
 	]
-	title: "{ftbquests.loot_table_2826709868639936990.title}"
+	title: "置物"
 }

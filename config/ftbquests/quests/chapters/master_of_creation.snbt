@@ -15,7 +15,7 @@
 				type: "xp"
 				xp: 100
 			}]
-			subtitle: "{ftbquests.chapter.master_of_creation.quest1.subtitle}"
+			subtitle: "一会你就知道为什么要这么多了"
 			tasks: [
 				{
 					count: 78L
@@ -220,5 +220,5 @@
 			y: 2.5d
 		}
 	]
-	title: "{ftbquests.chapter.master_of_creation.title}"
+	title: "掌控创造"
 }

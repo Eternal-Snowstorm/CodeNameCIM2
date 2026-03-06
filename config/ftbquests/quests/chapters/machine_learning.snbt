@@ -1,4 +1,5 @@
 {
+	autofocus_id: "76E151B82330EFAE"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "machine_learning"
@@ -9,14 +10,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{ftbquests.chapter.machine_learning.quest1.description1}"]
+			dependencies: ["26DFF62383774404"]
+			description: ["随处可见的岩石......它能开启&6工业时代"]
+			icon: "minecraft:andesite"
 			id: "46858C4B5052EC0C"
-			rewards: [{
-				id: "1114B3F7EE4991F7"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest1.subtitle}"
+			size: 1.5d
 			tasks: [
 				{
 					id: "45FADEFE78FB64F7"
@@ -24,31 +22,33 @@
 					type: "item"
 				}
 				{
-					id: "45C16BED14F2BA07"
+					id: "476BDF37D2D1A62E"
 					item: {
 						Count: 1
-						id: "naturescompass:naturescompass"
-						tag: { }
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:hammers"
+						}
 					}
-					optional_task: true
+					title: "Any #forge:hammers"
 					type: "item"
 				}
 			]
-			x: -16.0d
-			y: -5.5d
+			x: -21.0d
+			y: 16.5d
 		}
 		{
-			dependencies: ["46858C4B5052EC0C"]
-			description: ["{ftbquests.chapter.machine_learning.quest2.description1}"]
+			dependencies: [
+				"3942E154F0734013"
+				"331EF47BF4AFEA01"
+			]
+			description: ["工业的起点，有了它，我就可以制作各种&6动力设备"]
 			id: "65F2C054D52EB96B"
 			rewards: [{
 				id: "47882DC9659E05FD"
 				type: "xp"
 				xp: 100
 			}]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "{ftbquests.chapter.machine_learning.quest2.subtitle}"
 			tasks: [{
 				id: "7C61D025A76D4569"
 				item: {
@@ -58,886 +58,605 @@
 						value: "forge:ingots/andesite_alloy"
 					}
 				}
-				title: "{ftbquests.chapter.machine_learning.quest2.task_+8962673593585321321.title}"
+				title: "安山合金"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.machine_learning.quest2.title}"
-			x: -14.0d
-			y: -5.5d
+			title: "安山合金"
+			x: -16.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
-				"10C714793513B077"
-				"4783E72B7485A77D"
+				"23C01A41EBA593FC"
+				"7A9561BE016F15B5"
 			]
 			icon: "minecraft:iron_ingot"
 			id: "06012DC3A4BBF58B"
-			rewards: [{
-				id: "19A6913779FCE207"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest3.subtitle}"
-			tasks: [{
-				id: "0A4BA186729E732C"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.machine_learning.quest3.title}"
-			x: -13.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["65F2C054D52EB96B"]
-			hide_dependency_lines: true
-			id: "0E6030AA8C2A8243"
-			rewards: [{
-				id: "13A14588DD83147F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "28D917CBD7AA1C33"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "create:shaft"
-					}
-				}
-				title: "{ftbquests.chapter.machine_learning.quest4.task_+2943409995727379507.title}"
-				type: "item"
-			}]
-			x: -15.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["0E6030AA8C2A8243"]
-			id: "712B9101FE885629"
-			rewards: [{
-				id: "106B956B48C2AF6D"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1CD1D71A1E5EB644"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "create:cogwheel"
-					}
-				}
-				title: "{ftbquests.chapter.machine_learning.quest5.task_+2076677410373154372.title}"
-				type: "item"
-			}]
-			x: -13.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0E6030AA8C2A8243"]
-			hide_dependency_lines: true
-			id: "0AEFA1A35CCA86C3"
-			rewards: [{
-				id: "541393E2F40C690E"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "795792D83B950A26"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "create:large_cogwheel"
-					}
-				}
-				title: "{ftbquests.chapter.machine_learning.quest6.task_+8743618658973321766.title}"
-				type: "item"
-			}]
-			x: -12.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0E6030AA8C2A8243"]
-			id: "1206A5483DCDF968"
-			rewards: [{
-				id: "33FA16CA975D485E"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest7.subtitle}"
+			subtitle: "终于！第一块铁！"
 			tasks: [
 				{
-					id: "227C9337F4AF3AF5"
-					item: "create:water_wheel"
+					id: "0A4BA186729E732C"
+					item: "minecraft:iron_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "44D5ACC1A8A0DF1D"
-					item: "create:large_water_wheel"
-					type: "item"
-				}
-			]
-			x: -16.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["712B9101FE885629"]
-			id: "6E9FFFBBCA1D13B7"
-			rewards: [{
-				id: "4816E11BF5D4D896"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3FA3CF466C203E45"
-				item: "cmi:mechanical_mechanism_part"
-				type: "item"
-			}]
-			x: -13.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["6E9FFFBBCA1D13B7"]
-			id: "20308A3CE26E5D67"
-			rewards: [{
-				id: "35D55DAB07462763"
-				type: "xp"
-				xp: 100
-			}]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "{ftbquests.chapter.machine_learning.quest9.subtitle}"
-			tasks: [{
-				id: "54F81836CC8C9999"
-				item: "cmi:andesite_mechanism"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.machine_learning.quest9.title}"
-			x: -10.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["20308A3CE26E5D67"]
-			id: "750438CC48D57EF0"
-			rewards: [{
-				id: "6DEA3606BCA178F5"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest10.subtitle}"
-			tasks: [{
-				id: "362EBFEFC0638E5D"
-				item: "create:encased_fan"
-				type: "item"
-			}]
-			x: -11.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["7FF0C3B318313C79"]
-			icon: "thermal:rubber"
-			id: "3DA43BDED8E5ECDC"
-			rewards: [{
-				id: "08B0AE3E28BEF91F"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest11.subtitle}"
-			tasks: [
-				{
-					id: "4E6006998A8295B1"
-					item: "thermal:rubber"
+					id: "545E0B7C36E41469"
+					item: "thermal:iron_plate"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "7F66AA0513CAD480"
+					id: "509AEFCFCA1D2938"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "itemfilters:weak_nbt"
 						tag: {
-							value: "cmi:faucet"
+							value: {
+								Material: "tconstruct:iron"
+							}
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.chapter.machine_learning.quest11.task_+9180211829224952960.title}"
+					title: "任意铁部件"
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: -3.5d
+			title: "铁！"
+			x: -9.5d
+			y: 15.0d
 		}
 		{
-			dependencies: ["3A8E9AE06B88D05E"]
-			description: ["{ftbquests.chapter.machine_learning.quest12.image0}"]
-			id: "06FF6D3CAD3DCD8D"
-			rewards: [{
-				id: "395434D455DB3965"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest12.subtitle}"
+			dependencies: ["26DFF62383774404"]
+			icon: "thermal:rubberwood_log"
+			id: "7FF0C3B318313C79"
+			size: 1.5d
+			subtitle: "应该不难找"
 			tasks: [{
-				id: "39DE61F52D5222EA"
-				item: "thermal:cured_rubber"
-				type: "item"
+				icon: "thermal:rubberwood_log"
+				id: "4D0575D145D1EAA3"
+				observe_type: 1
+				timer: 0L
+				title: "观察 橡胶原木"
+				to_observe: "thermal:rubberwood"
+				type: "observation"
 			}]
-			x: -2.5d
-			y: 0.0d
+			title: "橡胶树"
+			x: -21.0d
+			y: 19.5d
 		}
 		{
-			dependencies: ["730DAE94F8D751D7"]
 			hide_dependency_lines: true
-			id: "5E953238EC4CB053"
-			rewards: [{
-				id: "3AD855E453CDC4BF"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest13.subtitle}"
+			id: "0498E2991294B14D"
 			tasks: [{
-				id: "1818B1CF1114DD30"
+				id: "72A612B094AFC6D6"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:dusts/sulfur"
+						value: "cmi:sugar_raw_material"
 					}
 				}
-				title: "{ftbquests.chapter.machine_learning.quest13.task_+1736333159254252848.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.machine_learning.quest13.title}"
-			x: -5.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["20308A3CE26E5D67"]
-			id: "730DAE94F8D751D7"
-			rewards: [{
-				id: "359A6C2CE861CE13"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest14.subtitle}"
-			tasks: [{
-				id: "3E7AF487F0C90851"
-				item: "create:millstone"
+				title: "制糖原料"
 				type: "item"
 			}]
 			x: -10.0d
-			y: 4.0d
+			y: 10.5d
 		}
 		{
-			id: "44EA87F955CC8C23"
-			rewards: [{
-				id: "1943177E8F9A0441"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest15.subtitle}"
+			dependencies: ["46858C4B5052EC0C"]
+			id: "331EF47BF4AFEA01"
 			tasks: [{
-				id: "02CE9ECE51BA909B"
-				item: "cmi:copper_mechanism_basement"
+				id: "6040C604D9F8C6C4"
+				item: "cmi:andesite_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: -18.0d
+			y: 16.5d
 		}
 		{
-			id: "283906AAD8AA56E8"
-			rewards: [{
-				id: "222C1C62CDFC6AE6"
-				type: "xp"
-				xp: 10
-			}]
+			dependencies: ["0771A7C0D2B6D023"]
+			description: ["一种低熔点金属，我可以用它做出第一份&6安山合金"]
+			id: "3942E154F0734013"
 			tasks: [{
-				count: 16L
-				id: "7F418EDA2B7B144E"
-				item: "create:fluid_pipe"
+				id: "69F09FA657F1E187"
+				item: "create:raw_zinc"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: -17.0d
+			y: 15.0d
 		}
 		{
-			dependencies: [
-				"283906AAD8AA56E8"
-				"44EA87F955CC8C23"
-				"06FF6D3CAD3DCD8D"
-				"73210821C1E60467"
-			]
-			id: "42EB8C8A978CA905"
+			dependencies: ["26DFF62383774404"]
+			icon: "tconstruct:seared_melter"
+			id: "0771A7C0D2B6D023"
+			tasks: [{
+				id: "20D0AC74FEBE23A3"
+				title: "初级冶炼"
+				type: "checkmark"
+			}]
+			x: -19.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["65F2C054D52EB96B"]
+			id: "0D502CA40E47F832"
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [{
-				id: "3FD721764C64DDC3"
-				item: "cmi:copper_mechanism"
+				id: "7458BCB71C9C2186"
+				item: "cmi:andesite_mechanism"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -13.0d
+			y: 16.5d
 		}
 		{
-			dependencies: ["42EB8C8A978CA905"]
-			id: "621969A0F0B131A6"
-			rewards: [{
-				id: "6E3C6AA3E085606A"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "rsquare"
-			size: 1.5d
-			subtitle: "{ftbquests.chapter.machine_learning.quest18.subtitle}"
-			tasks: [{
-				id: "73AB9A0B1A4FD96D"
-				item: "thermal:device_tree_extractor"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 4.5d
-		}
-		{
-			id: "73210821C1E60467"
-			rewards: [{
-				id: "138E4385A9C5F459"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "567D1836BD987B12"
-				item: "minecraft:water_bucket"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["42EB8C8A978CA905"]
-			id: "2D81767BF32BE392"
-			rewards: [{
-				id: "7ABB9A593F9AC93B"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "2B39D793748E2BD8"
-				item: "create:spout"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["42EB8C8A978CA905"]
-			description: ["{ftbquests.chapter.machine_learning.quest21.description1}"]
-			id: "4DF9116B2357D62D"
-			rewards: [{
-				id: "69280515C60DBB70"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "rsquare"
-			size: 1.5d
-			subtitle: "{ftbquests.chapter.machine_learning.quest21.subtitle}"
-			tasks: [{
-				id: "33A573AB9F77F2F1"
-				item: "cmi:water_pump"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 3.75d
-		}
-		{
-			dependencies: ["42EB8C8A978CA905"]
-			id: "0E7927D00F19EA9A"
-			rewards: [{
-				id: "48F854FA54C05118"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "429706CBC29DA5EC"
-				item: "create:hose_pulley"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["42EB8C8A978CA905"]
-			id: "24A816718AA4F697"
-			rewards: [{
-				id: "3329B9CB500916E4"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "26A76781D66EFF1C"
-				item: "create:item_drain"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["6EBB0E1E97405AAB"]
-			id: "09892B803004AA1D"
-			rewards: [{
-				id: "32E202BFD9C26059"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "square"
-			size: 1.5d
-			subtitle: "{ftbquests.chapter.machine_learning.quest24.subtitle}"
-			tasks: [{
-				id: "15E6F3A1335DEB6B"
-				item: "cmi:iron_mechanism"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -2.25d
-		}
-		{
-			dependencies: ["7510D0C5F36D0F1E"]
-			description: ["{ftbquests.chapter.machine_learning.quest25.description1}"]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			icon: "cmi:iron_mechanism_basement"
-			id: "6EBB0E1E97405AAB"
-			optional: true
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.machine_learning.quest25.subtitle}"
-			tasks: [
+			dependencies: ["65F2C054D52EB96B"]
+			id: "04357F14C006EAAF"
+			rewards: [
 				{
-					id: "1FD2DF00B6E2E64B"
-					item: "cmi:iron_mechanism_basement"
+					count: 64
+					id: "7091F902F16472C4"
+					item: "create:shaft"
 					type: "item"
 				}
 				{
-					id: "6E74F5D3B0DAE3D8"
+					count: 32
+					id: "0650C9017D3B2F37"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4FEFC573D1958403"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "77ABC0A19F5A86C4"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "4EBB06392B0E15CB"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
 						tag: {
-							value: "tconstruct:casts/multi_use/mechanism"
+							value: "create:shaft"
 						}
 					}
-					title: "{ftbquests.chapter.machine_learning.quest25.task_+7959256731024548824.title}"
+					title: "任意传动杆"
 					type: "item"
 				}
-			]
-			x: -9.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["3DA43BDED8E5ECDC"]
-			id: "0D5B2BC965C555DF"
-			rewards: [{
-				id: "7801C6827ACBD091"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest26.subtitle}"
-			tasks: [{
-				id: "26261FC9137085A9"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:plates/rubber"
+				{
+					count: 32L
+					id: "33FD256DB62712C5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:cogwheel"
+						}
 					}
-				}
-				title: "{ftbquests.chapter.machine_learning.quest26.task_+2748919571031295401.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.machine_learning.quest26.title}"
-			x: -3.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"5E953238EC4CB053"
-				"0D5B2BC965C555DF"
-				"64E57AAB64922B1E"
-			]
-			icon: "cmi:cured_rubber_bucket"
-			id: "3A8E9AE06B88D05E"
-			rewards: [{
-				id: "29A27740FCA51286"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "14606E1AA45641CA"
-				item: "cmi:cured_rubber_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.machine_learning.quest27.title}"
-			x: -4.0d
-			y: -0.5d
-		}
-		{
-			description: ["{ftbquests.chapter.machine_learning.quest28.description1}"]
-			icon: "create:goggles"
-			id: "76463379A8192794"
-			rewards: [{
-				id: "7B218E8506EA4B10"
-				item: "cmi:initial_item_kit"
-				type: "item"
-			}]
-			size: 2.0d
-			subtitle: "{ftbquests.chapter.machine_learning.quest28.subtitle}"
-			tasks: [{
-				id: "6E602D46F137513C"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.machine_learning.quest28.title}"
-			x: -18.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["20308A3CE26E5D67"]
-			id: "60721FA3D428FDEF"
-			rewards: [{
-				id: "0BCE4D76BD1A3B12"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest29.subtitle}"
-			tasks: [{
-				id: "50AA3131CC5B74D3"
-				item: "vintageimprovements:belt_grinder"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["09892B803004AA1D"]
-			id: "71371D8C476BF1C4"
-			subtitle: "{ftbquests.chapter.machine_learning.quest30.subtitle}"
-			tasks: [{
-				id: "439B800146FFE81F"
-				item: "create:empty_blaze_burner"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["42EB8C8A978CA905"]
-			id: "511A9A1AAB98500B"
-			rewards: [{
-				id: "5179FC390CC1CC8A"
-				type: "xp"
-				xp: 10
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "0851AC598C9779C3"
-				item: "vintageimprovements:vacuum_chamber"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.75d
-		}
-		{
-			can_repeat: false
-			dependencies: ["1206A5483DCDF968"]
-			id: "61B7D0A6461EF192"
-			invisible: true
-			optional: true
-			rewards: [
-				{
-					id: "6C9B9F82643F02C3"
-					type: "xp"
-					xp: 1000
+					title: "任意齿轮"
+					type: "item"
 				}
 				{
-					count: 256
-					id: "56C9C84CCDCFF83E"
-					item: "create:andesite_alloy"
+					count: 16L
+					id: "39AD8A2D5E881652"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:large_cogwheel"
+						}
+					}
+					title: "Any #create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5ACD140809A480D3"
+					item: { Count: 16, id: "create:andesite_casing" }
 					type: "item"
 				}
 			]
-			shape: "circle"
-			size: 2.0d
-			subtitle: "{ftbquests.chapter.machine_learning.quest32.subtitle}"
-			tasks: [{
-				count: 512L
-				id: "78BDC9CD6B286BD0"
-				item: { Count: 512, id: "create:large_water_wheel" }
-				type: "item"
-			}]
-			x: -16.0d
-			y: 4.0d
+			title: "基础传动元件"
+			x: -15.0d
+			y: 18.0d
 		}
 		{
-			dependencies: ["20308A3CE26E5D67"]
-			icon: "create:deployer"
-			id: "4E081FA1580EAAF9"
-			rewards: [{
-				id: "1304B988649CA39E"
-				type: "xp"
-				xp: 10
-			}]
+			dependencies: ["0D502CA40E47F832"]
+			id: "6865ED5A1D93E5EA"
 			tasks: [
 				{
-					id: "573A03296F231E85"
-					item: "create:deployer"
+					id: "765A5560DEAE9343"
+					item: "create:mechanical_mixer"
 					type: "item"
 				}
 				{
-					id: "219D8608674B10B4"
-					item: "create:brass_hand"
-					type: "item"
-				}
-			]
-			x: -7.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["20308A3CE26E5D67"]
-			icon: "create:mechanical_press"
-			id: "680ED87569F99AF4"
-			rewards: [{
-				id: "7185039BF0D8AD94"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [
-				{
-					id: "081042A868062C01"
+					id: "644C01D85646AB2F"
 					item: "create:mechanical_press"
 					type: "item"
 				}
 				{
-					id: "7869EADB94A30BB5"
+					id: "439DFE9E003FDA31"
+					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+				{
+					id: "76612FF665094C25"
+					item: "vintageimprovements:curving_press"
+					type: "item"
+				}
+				{
+					id: "0D6AD8D6F01250C8"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6D3CB0B5A44C5B75"
 					item: "create:depot"
 					type: "item"
 				}
 			]
-			x: -8.0d
-			y: 3.0d
-		}
-		{
-			description: [
-				"{ftbquests.chapter.machine_learning.quest35.description1}"
-				""
-				"{ftbquests.chapter.machine_learning.quest35.description2}"
-			]
-			icon: "thermal:rubberwood_log"
-			id: "7FF0C3B318313C79"
-			rewards: [{
-				id: "003312AE2862308A"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest35.subtitle}"
-			tasks: [
-				{
-					icon: "thermal:rubberwood_log"
-					id: "4D0575D145D1EAA3"
-					observe_type: 0
-					timer: 0L
-					title: "{ftbquests.chapter.machine_learning.quest35.task_+5549971657484004003.title}"
-					to_observe: "thermal:rubberwood_log"
-					type: "observation"
-				}
-				{
-					id: "4D30507921F73CBB"
-					item: {
-						Count: 1
-						id: "naturescompass:naturescompass"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -4.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["65F2C054D52EB96B"]
-			id: "10C714793513B077"
-			rewards: [{
-				id: "273C33791CF28976"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest36.subtitle}"
-			tasks: [{
-				id: "745DFE839C30DDA1"
-				item: "minecraft:blast_furnace"
-				type: "item"
-			}]
-			x: -14.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["06012DC3A4BBF58B"]
-			icon: "tconstruct:molten_iron_bucket"
-			id: "7510D0C5F36D0F1E"
-			subtitle: "{ftbquests.chapter.machine_learning.quest37.subtitle}"
-			tasks: [{
-				id: "70FCC35ADBA19D21"
-				title: "{ftbquests.chapter.machine_learning.quest37.task_+8141597021378288929.title}"
-				type: "checkmark"
-			}]
+			title: "基础工作元件"
 			x: -11.5d
-			y: -2.5d
+			y: 18.0d
 		}
 		{
-			id: "64E57AAB64922B1E"
-			rewards: [{
-				id: "29AE447EB7362913"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest38.subtitle}"
+			dependencies: ["6865ED5A1D93E5EA"]
+			description: ["我可以在&6部件制造台&f上用沙子制作&6齿轮铸模&f，浇铸后就能得到铁齿轮"]
+			id: "580C6E604C71F620"
+			subtitle: "粉碎的上一步"
 			tasks: [{
-				id: "5CB1303DAAF51292"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:storage_blocks/coal"
-					}
-				}
+				count: 4L
+				id: "5A81F7F4B157839D"
+				item: { Count: 4, id: "thermal:iron_gear" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.machine_learning.quest38.title}"
-			x: -4.5d
-			y: 1.0d
+			x: -9.5d
+			y: 18.0d
 		}
 		{
-			icon: "thermal:rubberwood_sapling"
-			id: "4189951FCBDA6139"
-			optional: true
+			dependencies: ["580C6E604C71F620"]
+			id: "63BF49635AEF3AF8"
 			rewards: [{
-				icon: "thermal:rubberwood_sapling"
-				id: "44D95E7B9AB91A32"
-				item: "thermal:rubberwood_sapling"
+				id: "140CC56105388FA6"
+				item: "create:crushing_wheel"
 				type: "item"
 			}]
+			subtitle: "一对大家伙"
 			tasks: [{
-				count: 128L
-				id: "1A18EA52694332AA"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:saplings"
-					}
-				}
-				title: "{ftbquests.chapter.machine_learning.quest39.task_+1880510484101411498.title}"
+				id: "46B3E7BE00A4DF13"
+				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.machine_learning.quest39.title}"
-			x: -5.0d
-			y: -2.5d
+			x: -7.5d
+			y: 18.0d
 		}
 		{
 			dependencies: [
-				"1E6F44D3CC3837DB"
-				"0498E2991294B14D"
+				"295BF991FD7133DF"
+				"24FD90B8F1474193"
+				"0D502CA40E47F832"
 			]
-			description: ["{ftbquests.chapter.machine_learning.quest40.description1}"]
-			id: "4783E72B7485A77D"
-			optional: true
-			rewards: [{
-				id: "61E96305476AC4A4"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest40.subtitle}"
+			id: "23C01A41EBA593FC"
 			tasks: [{
-				id: "42E7485E7A37E748"
+				id: "4625DD354D47D123"
 				item: "createdieselgenerators:biodiesel_bucket"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -4.5d
+			x: -11.5d
+			y: 15.0d
 		}
 		{
-			dependencies: ["45A8A2A35008745C"]
-			id: "1E6F44D3CC3837DB"
+			dependencies: ["649CAA93BB644BF3"]
+			id: "295BF991FD7133DF"
 			tasks: [{
-				id: "72A8D8C4D0CE8AAE"
+				id: "39663A3842504DDB"
+				item: "minecraft:sugar"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0498E2991294B14D"]
+			id: "649CAA93BB644BF3"
+			tasks: [{
+				id: "64EBCF622DC2C48B"
+				item: "thermal:syrup_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 12.0d
+		}
+		{
+			description: ["想要杂酚油，我必须先做一台焦炉 "]
+			hide_dependency_lines: true
+			id: "2CCDB1390C34C80A"
+			tasks: [{
+				count: 27L
+				id: "02C27A7E7E4E2731"
+				item: { Count: 27, id: "tconstruct:seared_bricks" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2CCDB1390C34C80A"]
+			id: "12A2C0FB29927390"
+			tasks: [{
+				advancement: "immersiveengineering:main/mb_cokeoven"
+				criterion: ""
+				id: "5B1946CC3D1E7691"
+				type: "advancement"
+			}]
+			x: -13.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["12A2C0FB29927390"]
+			id: "24FD90B8F1474193"
+			tasks: [{
+				id: "27905A9F73DAFBBC"
 				item: "immersiveengineering:creosote_bucket"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -6.0d
+			x: -13.0d
+			y: 13.5d
 		}
 		{
-			description: ["{ftbquests.chapter.machine_learning.quest42.description1}"]
-			id: "45A8A2A35008745C"
-			rewards: [
-				{
-					id: "5070A226B0D2D0EE"
-					item: "immersiveengineering:creosote_bucket"
-					type: "item"
-				}
-				{
-					id: "77558A5E3731CFE9"
-					type: "xp"
-					xp: 10
-				}
-				{
-					id: "107BD9B953705437"
-					item: "immersiveengineering:manual"
-					type: "item"
-				}
-			]
-			subtitle: "{ftbquests.chapter.machine_learning.quest42.subtitle}"
-			tasks: [{
-				count: 27L
-				id: "32BFAC2333E06239"
-				item: { Count: 27, id: "immersiveengineering:cokebrick" }
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.machine_learning.quest42.title}"
-			x: -11.5d
-			y: -7.5d
-		}
-		{
-			id: "0498E2991294B14D"
-			rewards: [{
-				id: "587B8D3600EB5573"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "{ftbquests.chapter.machine_learning.quest43.subtitle}"
+			dependencies: ["0D502CA40E47F832"]
+			id: "6BD3573C9B4A0B46"
 			tasks: [
 				{
-					id: "72A612B094AFC6D6"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "cmi:sugar_raw_material"
-						}
-					}
-					title: "{ftbquests.chapter.machine_learning.quest43.task_+8261311116075845334.title}"
+					id: "7928F1125475D115"
+					item: "create:water_wheel"
 					type: "item"
 				}
 				{
-					id: "390B72655DAEF5BD"
-					item: "minecraft:sugar"
+					id: "7F1F384E38E80E11"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+				{
+					id: "33C0FBAC3E70E444"
+					item: "create:windmill_bearing"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.machine_learning.quest43.title}"
+			title: "早期应力源"
+			x: -14.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0D502CA40E47F832"]
+			hide_dependency_lines: true
+			id: "7A9561BE016F15B5"
+			tasks: [{
+				id: "4D2FC0401BDE6F5A"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["06012DC3A4BBF58B"]
+			id: "6FE26470A8A3B7B1"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4E97951D974529FB"
+				item: "cmi:iron_mechanism"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["6FE26470A8A3B7B1"]
+			id: "454BAAB3651E08AD"
+			tasks: [{
+				id: "3143E1390FF76BCC"
+				item: "createdieselgenerators:distillation_controller"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6FE26470A8A3B7B1"]
+			id: "6B1F2EFF4DAC1814"
+			tasks: [{
+				id: "05FC3E680C04077C"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["7FF0C3B318313C79"]
+			id: "00A42257F183E046"
+			tasks: [{
+				id: "1E67C231F9433E3D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rubberwood_logs"
+					}
+				}
+				title: "任意橡胶原木"
+				type: "item"
+			}]
+			title: "橡胶原木"
+			x: -18.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["00A42257F183E046"]
+			id: "71AB4DF031ED3CB4"
+			subtitle: "软木，可用作密封"
+			tasks: [{
+				id: "75CC40BC1D648EEC"
+				item: "thermal:rubberwood_planks"
+				type: "item"
+			}]
+			x: -16.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["71AB4DF031ED3CB4"]
+			id: "2DDCBAC1D7AF08AE"
+			tasks: [{
+				id: "73EDADC7F9FF375B"
+				item: "createdieselgenerators:basin_lid"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"2DDCBAC1D7AF08AE"
+				"7DD1547C967EDD20"
+			]
+			id: "664B44589F807708"
+			subtitle: "好酸！"
+			tasks: [{
+				id: "093C6622F63F1D1F"
+				item: "cmi:vinegar_bucket"
+				type: "item"
+			}]
+			title: "醋"
+			x: -12.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"664B44589F807708"
+				"14FCB2B036726682"
+				"50B5CFD57763580A"
+			]
+			id: "43FFB9DB898EA83A"
+			subtitle: "气密性绝佳且不易磨损的材料"
+			tasks: [{
+				id: "284D3297AFBA5295"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["2DDCBAC1D7AF08AE"]
+			hide_dependency_lines: true
+			id: "14FCB2B036726682"
+			tasks: [{
+				id: "1D3ABB165889ABB1"
+				item: "thermal:sulfur_dust"
+				type: "item"
+			}]
 			x: -11.0d
-			y: -4.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["2DDCBAC1D7AF08AE"]
+			description: ["我应该能在&6河边&f找到一些野生稻米，之后就可以自己种植了"]
+			hide_dependency_lines: true
+			id: "7DD1547C967EDD20"
+			subtitle: "要酿醋，就要先获得稻米"
+			tasks: [{
+				id: "01EE3E33CD71F8C7"
+				item: "kaleidoscope_cookery:rice"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["5D40D5E4A4DC395D"]
+			id: "50B5CFD57763580A"
+			tasks: [{
+				id: "260B84045CFBC4CC"
+				item: "cmi:rubber_plate"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["5E096A2AD55E8040"]
+			id: "5D40D5E4A4DC395D"
+			tasks: [{
+				id: "76F962DD1425FF35"
+				item: "thermal:rubber"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["2DDCBAC1D7AF08AE"]
+			hide_dependency_lines: true
+			id: "5E096A2AD55E8040"
+			tasks: [{
+				id: "2F3B8F408FDE770B"
+				item: "thermal:latex_bucket"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["43FFB9DB898EA83A"]
+			id: "24384207DB9668D9"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "030F5C6E150B9665"
+				item: "cmi:copper_mechanism"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["24384207DB9668D9"]
+			id: "590FBD1F501100AE"
+			tasks: [
+				{
+					id: "6460741E477AA44D"
+					item: "create:item_drain"
+					type: "item"
+				}
+				{
+					id: "450BF529D21F5BF2"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "136C8606D1197457"
+					item: "create:hose_pulley"
+					type: "item"
+				}
+			]
+			title: "流体元件"
+			x: -5.5d
+			y: 22.5d
 		}
 	]
-	title: "{ftbquests.chapter.machine_learning.title}"
+	title: "巧械奇工"
 }

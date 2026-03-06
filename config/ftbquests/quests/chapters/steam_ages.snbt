@@ -9,14 +9,14 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{ftbquests.chapter.steam_ages.quest1.description1}"]
+			description: ["蒸汽是一个支线"]
 			id: "50BE6EA508B2E833"
 			rewards: [{
 				id: "4148E7F8DB84EDA5"
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.steam_ages.quest1.subtitle}"
+			subtitle: "蒸汽可以处理矿石, 也可以给予引擎生产应力"
 			tasks: [{
 				id: "0663928BECC3E50F"
 				item: {
@@ -26,10 +26,10 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "{ftbquests.chapter.steam_ages.quest1.task_+460372716592293135.title}"
+				title: "青铜锭"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.steam_ages.quest1.title}"
+			title: "蒸汽时代的开始"
 			x: -4.5d
 			y: 0.5d
 		}
@@ -50,7 +50,7 @@
 					xp: 10
 				}
 			]
-			subtitle: "{ftbquests.chapter.steam_ages.quest2.subtitle}"
+			subtitle: "这是你第一台生产蒸汽的机器"
 			tasks: [
 				{
 					id: "4366353F4F781C16"
@@ -76,7 +76,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.steam_ages.quest3.subtitle}"
+			subtitle: "青铜构件用于后面的引擎和机器的制作"
 			tasks: [{
 				id: "43F802AD08EAE9DB"
 				item: "cmi:bronze_mechanism"
@@ -92,9 +92,9 @@
 				"69B6557CD9D8FE4C"
 			]
 			description: [
-				"{ftbquests.chapter.steam_ages.quest4.description1}"
+				"大型蒸汽锅炉只能使用焦炭或钻石作为燃料, 但是产出的蒸汽量非常多 10秒便可以消耗5000mB和1个燃料生产5000mB蒸汽"
 				""
-				"{ftbquests.chapter.steam_ages.quest4.description2}"
+				"不同于远在泛银河系格雷科技有限公司的锅炉, 我们的锅炉永远不会爆炸, 非常安全"
 			]
 			icon: "mm:large_steam_boiler"
 			id: "33794D36645F0E70"
@@ -113,7 +113,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.steam_ages.quest4.subtitle}"
+			subtitle: "产出更多的蒸汽"
 			tasks: [
 				{
 					id: "327B26F59C36B1C1"
@@ -159,14 +159,14 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.steam_ages.quest5.subtitle}"
+			subtitle: "青铜外壳一般用于搭建机器"
 			tasks: [{
 				count: 4L
 				id: "34ADE83961CD600F"
 				item: "cmi:bronze_casing"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.steam_ages.quest5.title}"
+			title: "青铜外壳"
 			x: -3.5d
 			y: -2.5d
 		}
@@ -180,10 +180,10 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.steam_ages.quest6.subtitle}"
+			subtitle: "怎么会有那么好用的东西"
 			tasks: [{
 				id: "258E7097CC150284"
-				title: "{ftbquests.chapter.steam_ages.quest6.task_+2706224223362548356.title}"
+				title: "获得蒸汽"
 				type: "checkmark"
 			}]
 			x: 2.5d
@@ -192,9 +192,9 @@
 		{
 			dependencies: ["2E433CDEC9C53072"]
 			description: [
-				"{ftbquests.chapter.steam_ages.quest7.description1}"
-				"{ftbquests.chapter.steam_ages.quest7.description2}"
-				"{ftbquests.chapter.steam_ages.quest7.description3}"
+				"蒸汽矿石处理机可以消耗2000mB蒸汽处理特殊的矿石, 例如黄铁, 辉铜和黄锡等"
+				"一个粗矿可以处理3个矿粉, 有25%的概率多给一个, 但是处理后会在顶部产生100mB水和200mB液态二氧化硫, 需要手动导出处理"
+				"而处理矿石方块产出会多一点, 水和二氧化硫的产出同理"
 			]
 			icon: "mm:steam_ore_processor"
 			id: "1C6A5D1DC3365BD0"
@@ -205,7 +205,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.steam_ages.quest7.subtitle}"
+			subtitle: "初步倍产"
 			tasks: [
 				{
 					id: "392C5E7C56A41A61"
@@ -248,14 +248,14 @@
 							value: "forge:glass"
 						}
 					}
-					title: "{ftbquests.chapter.steam_ages.quest7.task_+463368778551210938.title}"
+					title: "玻璃"
 					type: "item"
 				}
 				{
 					count: 9L
 					id: "4A9EA17F30D65AB4"
 					item: "immersiveengineering:treated_wood_horizontal"
-					title: "{ftbquests.chapter.steam_ages.quest7.task_+5376912572779223732.title}"
+					title: "防腐木板"
 					type: "item"
 				}
 			]
@@ -273,7 +273,7 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.steam_ages.quest8.subtitle}"
+			subtitle: "超大应力"
 			tasks: [
 				{
 					id: "72FF859776891997"
@@ -286,7 +286,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.steam_ages.quest8.title}"
+			title: "飞轮!"
 			x: 4.5d
 			y: 0.75d
 		}
@@ -361,7 +361,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.steam_ages.quest11.title}"
+			title: "铸铁飞轮"
 			x: 6.6d
 			y: 0.0d
 		}
@@ -388,10 +388,10 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.steam_ages.quest12.title}"
+			title: "钢飞轮"
 			x: 6.6d
 			y: 1.2d
 		}
 	]
-	title: "{ftbquests.chapter.steam_ages.title}"
+	title: "蒸汽时代"
 }

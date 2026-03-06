@@ -37,7 +37,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.chests_free.quest2.subtitle}"
+			subtitle: "通量水晶吗"
 			tasks: [{
 				id: "55BBB1ACE69ED49C"
 				item: {
@@ -47,7 +47,7 @@
 						value: "forge:gems/fluix"
 					}
 				}
-				title: "{ftbquests.chapter.chests_free.quest2.task_+6177726670030427292.title}"
+				title: "福鲁伊克斯水晶"
 				type: "item"
 			}]
 			x: -3.0d
@@ -160,7 +160,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.chests_free.quest8.subtitle}"
+			subtitle: "戴尔芒得(笑)"
 			tasks: [{
 				id: "717DEA57411C0C03"
 				item: {
@@ -170,10 +170,10 @@
 						value: "forge:gems/diamond"
 					}
 				}
-				title: "{ftbquests.chapter.chests_free.quest8.task_+8177950158850100227.title}"
+				title: "钻石"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.chests_free.quest8.title}"
+			title: "钻石"
 			x: -7.0d
 			y: -2.5d
 		}
@@ -209,10 +209,10 @@
 						value: "forge:ingots/gold"
 					}
 				}
-				title: "{ftbquests.chapter.chests_free.quest10.task_+8516420940230263941.title}"
+				title: "金锭"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.chests_free.quest10.title}"
+			title: "金锭"
 			x: -8.0d
 			y: -2.5d
 		}
@@ -234,10 +234,10 @@
 						value: "forge:silicon"
 					}
 				}
-				title: "{ftbquests.chapter.chests_free.quest11.task_+2725603813898472541.title}"
+				title: "硅"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.chests_free.quest11.title}"
+			title: "硅"
 			x: -11.5d
 			y: -1.5d
 		}
@@ -257,14 +257,14 @@
 				to_observe: "ae2:mysterious_cube"
 				type: "observation"
 			}]
-			title: "{ftbquests.chapter.chests_free.quest12.title}"
+			title: "找个陨石"
 			x: -9.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["51A6B0B7FBDAB5A0"]
 			id: "17790FC91B1E5D4A"
-			subtitle: "{ftbquests.chapter.chests_free.quest13.subtitle}"
+			subtitle: "非常适合搬运无暇的赛特斯石英母岩"
 			tasks: [{
 				id: "0048299A59FCF0AE"
 				item: "mekanism:cardboard_box"
@@ -316,7 +316,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.chests_free.quest16.subtitle}"
+			subtitle: "沙子走一遍分液池"
 			tasks: [{
 				id: "2DF32EFE8B634CFB"
 				item: "cmi:pure_sand_bucket"
@@ -341,7 +341,7 @@
 						value: "forge:sand"
 					}
 				}
-				title: "{ftbquests.chapter.chests_free.quest17.task_+901418182464472088.title}"
+				title: "沙子"
 				type: "item"
 			}]
 			x: -16.0d
@@ -364,10 +364,10 @@
 						value: "forge:coal_coke"
 					}
 				}
-				title: "{ftbquests.chapter.chests_free.quest18.task_+7268267050019842124.title}"
+				title: "焦炭"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.chests_free.quest18.title}"
+			title: "焦炭"
 			x: -13.5d
 			y: -0.5d
 		}
@@ -402,5 +402,5 @@
 			y: 3.0d
 		}
 	]
-	title: "{ftbquests.chapter.chests_free.title}"
+	title: "超大箱子"
 }

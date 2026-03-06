@@ -19,10 +19,10 @@
 						value: "forge:plates/osmium"
 					}
 				}
-				title: "{ftbquests.chapter.air_tight.quest1.task_+6055676847426554865.title}"
+				title: "Any #forge:plates/osmium"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.air_tight.quest1.title}"
+			title: "锇板"
 			x: 0.0d
 			y: 1.0d
 		}
@@ -38,10 +38,10 @@
 						value: "forge:plates/hdpe"
 					}
 				}
-				title: "{ftbquests.chapter.air_tight.quest2.task_+5237694204399786158.title}"
+				title: "Any #forge:plates/hdpe"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.air_tight.quest2.title}"
+			title: "高密度聚乙烯片"
 			x: 2.0d
 			y: 1.0d
 		}
@@ -61,7 +61,7 @@
 			id: "0B447590DDAD1A29"
 			tasks: [{
 				id: "2215E5BB2E688213"
-				title: "{ftbquests.chapter.air_tight.quest4.task_+2456121763900719635.title}"
+				title: "辊压"
 				type: "checkmark"
 			}]
 			x: 6.0d
@@ -79,5 +79,5 @@
 			y: 1.0d
 		}
 	]
-	title: "{ftbquests.chapter.air_tight.title}"
+	title: "气密"
 }

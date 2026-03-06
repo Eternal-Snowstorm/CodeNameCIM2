@@ -33,10 +33,10 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "{ftbquests.chapter.tier_1_aviation.quest1.task_+147489497407933148.title}"
+				title: "任意 #forge:ingots/钢"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest1.title}"
+			title: "钢锭"
 			x: -17.339183673469392d
 			y: 7.566326530612251d
 		}
@@ -46,7 +46,7 @@
 			id: "763CA072A2A18CCB"
 			tasks: [{
 				id: "4C8ED45E29675AE2"
-				title: "{ftbquests.chapter.tier_1_aviation.quest2.task_+5516580094462089954.title}"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -12.196326530612247d
@@ -58,7 +58,7 @@
 			id: "5CCB1415C01E7A71"
 			tasks: [{
 				id: "7AC59FC2F8C3D795"
-				title: "{ftbquests.chapter.tier_1_aviation.quest3.task_+8846652702785263509.title}"
+				title: "合成"
 				type: "checkmark"
 			}]
 			x: -9.910612244897962d
@@ -78,7 +78,7 @@
 				item: "cmi:computer_component"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest4.title}"
+			title: "计算机组件"
 			x: -6.5048979591836655d
 			y: 8.31061224489796d
 		}
@@ -99,10 +99,10 @@
 						value: "forge:ingots/silver"
 					}
 				}
-				title: "{ftbquests.chapter.tier_1_aviation.quest5.task_+537339104005605105.title}"
+				title: "任意 #forge:ingots/银"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest5.title}"
+			title: "银锭"
 			x: -15.027755102040814d
 			y: 3.7334693877551075d
 		}
@@ -124,10 +124,10 @@
 						value: "forge:rods/silver"
 					}
 				}
-				title: "{ftbquests.chapter.tier_1_aviation.quest6.task_+1396296122871117279.title}"
+				title: "任意 #forge:rods/银棒"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest6.title}"
+			title: "银棒"
 			x: -7.622040816326518d
 			y: -1.415102040816322d
 		}
@@ -148,7 +148,7 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest7.title}"
+			title: "硫化橡胶"
 			x: -5.430612244897937d
 			y: -0.28224489795915986d
 		}
@@ -160,7 +160,7 @@
 			id: "4FD621DD5AADFC77"
 			tasks: [{
 				id: "4B60C978260BBB42"
-				title: "{ftbquests.chapter.tier_1_aviation.quest8.task_+5431562668480379714.title}"
+				title: "混合与铸造"
 				type: "checkmark"
 			}]
 			x: -5.502040816326513d
@@ -178,7 +178,7 @@
 				item: "thermal:sulfur_dust"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest9.title}"
+			title: "硫磺粉"
 			x: -5.0734693877550825d
 			y: -5.890816326530604d
 		}
@@ -194,7 +194,7 @@
 				item: "cmi:rubber_plate"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest10.title}"
+			title: "橡胶板"
 			x: -4.144897959183652d
 			y: -5.890816326530604d
 		}
@@ -215,7 +215,7 @@
 				item: "ad_astra:steel_cable"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest11.title}"
+			title: "钢缆"
 			x: -0.7163265306122213d
 			y: 3.2820408163265427d
 		}
@@ -232,7 +232,7 @@
 				item: "minecraft:bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest12.title}"
+			title: "桶"
 			x: 1.855102040816348d
 			y: 0.9191836734693979d
 		}
@@ -254,10 +254,10 @@
 						value: "forge:rods/iron"
 					}
 				}
-				title: "{ftbquests.chapter.tier_1_aviation.quest13.task_+6103300140511216415.title}"
+				title: "任意 #forge:rods/iron"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest13.title}"
+			title: "铁杆"
 			x: 3.14081632653064d
 			y: 1.3363265306122614d
 		}
@@ -279,10 +279,10 @@
 						value: "forge:plates/steel"
 					}
 				}
-				title: "{ftbquests.chapter.tier_1_aviation.quest14.task_+2661448078945963035.title}"
+				title: "任意 #forge:plates/steel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest14.title}"
+			title: "钢板"
 			x: 4.140816326530626d
 			y: 1.622040816326546d
 		}
@@ -303,7 +303,7 @@
 				item: "ad_astra:steel_tank"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest15.title}"
+			title: "钢制储罐"
 			x: 5.426530612244903d
 			y: 5.622040816326553d
 		}
@@ -316,7 +316,7 @@
 				item: "cmi:space_mechanism_part"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest16.title}"
+			title: "机械部件"
 			x: 10.283673469387779d
 			y: 1.8306122448979778d
 		}
@@ -329,10 +329,10 @@
 				item: "cmi:tier_1_aviation_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_1_aviation.quest17.title}"
+			title: "一级航空机械"
 			x: 13.997959183673487d
 			y: 3.3963265306122707d
 		}
 	]
-	title: "{ftbquests.chapter.tier_1_aviation.title}"
+	title: "航天壹"
 }

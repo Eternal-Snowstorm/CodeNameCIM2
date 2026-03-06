@@ -34,10 +34,10 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "{ftbquests.chapter.heavy_engineering.quest1.task_+3677757245711799133.title}"
+				title: "任意 #forge:锭/钢"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest1.title}"
+			title: "钢锭"
 			x: -14.142857142857125d
 			y: 1.0300000000000011d
 		}
@@ -48,7 +48,7 @@
 			id: "12429DAA0F211857"
 			tasks: [{
 				id: "2150E1830E5E6360"
-				title: "{ftbquests.chapter.heavy_engineering.quest2.task_+2400666554386506592.title}"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -11.571428571428555d
@@ -73,10 +73,10 @@
 						value: "forge:plates/steel"
 					}
 				}
-				title: "{ftbquests.chapter.heavy_engineering.quest3.task_+8220536782468987995.title}"
+				title: "任意 #forge:板/钢"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest3.title}"
+			title: "钢板"
 			x: -8.428571428571416d
 			y: 3.661428571428573d
 		}
@@ -87,7 +87,7 @@
 			id: "756CC1515ADEA813"
 			tasks: [{
 				id: "7B6FCCFAB84211A5"
-				title: "{ftbquests.chapter.heavy_engineering.quest4.task_+8894553166285246885.title}"
+				title: "切割"
 				type: "checkmark"
 			}]
 			x: -5.428571428571416d
@@ -108,7 +108,7 @@
 				item: "immersiveengineering:sheetmetal_steel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest5.title}"
+			title: "钢金属板"
 			x: -1.9999999999999858d
 			y: 2.507142857142867d
 		}
@@ -126,7 +126,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest6.title}"
+			title: "铜锭"
 			x: -21.0d
 			y: 5.5d
 		}
@@ -137,7 +137,7 @@
 			id: "4DB703243615AD7D"
 			tasks: [{
 				id: "1C22F5AC3811C406"
-				title: "{ftbquests.chapter.heavy_engineering.quest7.task_+2027452902294012934.title}"
+				title: "杆压制模具"
 				type: "checkmark"
 			}]
 			x: -19.214285714285715d
@@ -161,7 +161,7 @@
 				item: "thermal_extra:copper_rod"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest8.title}"
+			title: "铜杆"
 			x: 5.928571428571431d
 			y: -7.797142857142852d
 		}
@@ -183,7 +183,7 @@
 				item: "immersiveengineering:component_steel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest9.title}"
+			title: "钢构件"
 			x: 10.357142857142861d
 			y: -1.3778571428571382d
 		}
@@ -205,10 +205,10 @@
 						value: "forge:ingots/electrum"
 					}
 				}
-				title: "{ftbquests.chapter.heavy_engineering.quest10.task_+3165099911825343298.title}"
+				title: "任意 #forge:ingots/electrum"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest10.title}"
+			title: "琥珀金锭"
 			x: -8.785714285714292d
 			y: -1.7764285714285677d
 		}
@@ -219,7 +219,7 @@
 			id: "3782AEE3395C52DD"
 			tasks: [{
 				id: "6BDD8BB5AB3595EC"
-				title: "{ftbquests.chapter.heavy_engineering.quest11.task_+7772522144289101292.title}"
+				title: "线压制模具"
 				type: "checkmark"
 			}]
 			x: -6.642857142857139d
@@ -247,10 +247,10 @@
 						value: "forge:wires/electrum"
 					}
 				}
-				title: "{ftbquests.chapter.heavy_engineering.quest12.task_+3061811283122911497.title}"
+				title: "任意 #forge:wires/electrum"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest12.title}"
+			title: "琥珀金线"
 			x: 14.642857142857139d
 			y: -4.787857142857128d
 		}
@@ -264,7 +264,7 @@
 				item: "cmi:engineering_mechanism_part"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest13.title}"
+			title: "机械部件"
 			x: 25.35714285714286d
 			y: -0.829285714285696d
 		}
@@ -283,10 +283,10 @@
 				item: "cmi:heavy_engineering_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.heavy_engineering.quest14.title}"
+			title: "重型工程师机械"
 			x: 28.5d
 			y: -2.0d
 		}
 	]
-	title: "{ftbquests.chapter.heavy_engineering.title}"
+	title: "重型"
 }

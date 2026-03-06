@@ -29,7 +29,7 @@
 				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_2_aviation.quest1.title}"
+			title: "戴斯锭"
 			x: -9.967142857142854d
 			y: -4.928571428571445d
 		}
@@ -39,7 +39,7 @@
 			id: "5C419CA9BEBE236C"
 			tasks: [{
 				id: "6E6E0F3B1F268D17"
-				title: "{ftbquests.chapter.tier_2_aviation.quest2.task_+7957314338210352407.title}"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -8.648571428571444d
@@ -54,7 +54,7 @@
 				item: "ad_astra:desh_plate"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_2_aviation.quest3.title}"
+			title: "戴斯板"
 			x: -6.1871428571428595d
 			y: -3.2142857142857366d
 		}
@@ -72,7 +72,7 @@
 				item: "cmi:computer_component"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_2_aviation.quest4.title}"
+			title: "计算机组件"
 			x: -2.5714285714285694d
 			y: -1.942857142857136d
 		}
@@ -85,7 +85,7 @@
 			id: "3B69482640462E26"
 			tasks: [{
 				id: "5FF4183E6B463D27"
-				title: "{ftbquests.chapter.tier_2_aviation.quest5.task_+6914177984287358247.title}"
+				title: "部署"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -108,10 +108,10 @@
 						value: "forge:rods/silver"
 					}
 				}
-				title: "{ftbquests.chapter.tier_2_aviation.quest6.task_+4090227733363211555.title}"
+				title: "任意 #forge:rods/silver"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_2_aviation.quest6.title}"
+			title: "银杆"
 			x: -1.142857142857146d
 			y: -11.52857142857141d
 		}
@@ -132,7 +132,7 @@
 				item: "ad_astra:desh_cable"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_2_aviation.quest7.title}"
+			title: "戴斯缆"
 			x: 3.357142857142847d
 			y: -7.042857142857116d
 		}
@@ -153,7 +153,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_2_aviation.quest8.title}"
+			title: "气体储罐"
 			x: 8.785714285714292d
 			y: -11.557142857142814d
 		}
@@ -166,7 +166,7 @@
 			id: "49EE4CE729CBEF14"
 			tasks: [{
 				id: "79BADF8F04489BAD"
-				title: "{ftbquests.chapter.tier_2_aviation.quest9.task_+8771569029602646957.title}"
+				title: "部署"
 				type: "checkmark"
 			}]
 			x: 7.5d
@@ -184,7 +184,7 @@
 				item: "ad_astra:desh_tank"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_2_aviation.quest10.title}"
+			title: "戴斯储罐"
 			x: 9.500000000000014d
 			y: -4.51428571428567d
 		}
@@ -197,7 +197,7 @@
 				item: "cmi:space_mechanism_part"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_2_aviation.quest11.title}"
+			title: "机械部件"
 			x: 13.785714285714292d
 			y: -7.957142857142813d
 		}
@@ -215,10 +215,10 @@
 				item: "cmi:tier_2_aviation_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.tier_2_aviation.quest12.title}"
+			title: "二级航空机械"
 			x: 18.64285714285714d
 			y: -5.828571428571365d
 		}
 	]
-	title: "{ftbquests.chapter.tier_2_aviation.title}"
+	title: "航天贰"
 }

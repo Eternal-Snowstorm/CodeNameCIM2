@@ -30,7 +30,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest1.title}"
+			title: "铁锭"
 			x: -23.0d
 			y: -3.0d
 		}
@@ -43,7 +43,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.thermal.quest2.subtitle}"
+			subtitle: "10"
 			tasks: [{
 				id: "7E75035DE77155A2"
 				item: {
@@ -53,10 +53,10 @@
 						value: "forge:ingots/nickel"
 					}
 				}
-				title: "{ftbquests.chapter.thermal.quest2.task_+9112193122903872930.title}"
+				title: "任意 #forge:ingots/镍"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest2.title}"
+			title: "镍锭"
 			x: -17.5d
 			y: -4.0d
 		}
@@ -70,7 +70,7 @@
 			id: "158872F89555C2CC"
 			tasks: [{
 				id: "704D979C24EAB67E"
-				title: "{ftbquests.chapter.thermal.quest3.task_+8092290802344703614.title}"
+				title: "混合"
 				type: "checkmark"
 			}]
 			x: -20.0d
@@ -83,7 +83,7 @@
 			id: "74E69B8EC920F145"
 			tasks: [{
 				id: "4D77CCCA9B7083CA"
-				title: "{ftbquests.chapter.thermal.quest4.task_+5582155433712321482.title}"
+				title: "铸造"
 				type: "checkmark"
 			}]
 			x: -18.5d
@@ -108,10 +108,10 @@
 						value: "forge:ingots/invar"
 					}
 				}
-				title: "{ftbquests.chapter.thermal.quest5.task_+240729630609832822.title}"
+				title: "任意 #forge:ingots/殷钢"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest5.title}"
+			title: "殷钢锭"
 			x: -14.5d
 			y: 1.5d
 		}
@@ -122,7 +122,7 @@
 			id: "371001287D4C8D23"
 			tasks: [{
 				id: "52FB216C01DB28FE"
-				title: "{ftbquests.chapter.thermal.quest6.task_+5979409678035790078.title}"
+				title: "压印"
 				type: "checkmark"
 			}]
 			x: -7.5d
@@ -147,10 +147,10 @@
 						value: "forge:plates/invar"
 					}
 				}
-				title: "{ftbquests.chapter.thermal.quest7.task_+6736739925702039192.title}"
+				title: "任意 #forge:plates/殷钢板"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest7.title}"
+			title: "殷钢板"
 			x: -5.0d
 			y: 2.0d
 		}
@@ -168,7 +168,7 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest8.title}"
+			title: "金锭"
 			x: -13.5d
 			y: -4.0d
 		}
@@ -179,7 +179,7 @@
 			id: "78855495E2626F93"
 			tasks: [{
 				id: "7A7B593A00B46F1F"
-				title: "{ftbquests.chapter.thermal.quest9.task_+8825746000417419039.title}"
+				title: "轧制"
 				type: "checkmark"
 			}]
 			x: -11.0d
@@ -200,7 +200,7 @@
 				item: "thermal_extra:gold_rod"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest10.title}"
+			title: "金棒"
 			x: -8.5d
 			y: -2.0d
 		}
@@ -219,7 +219,7 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest11.title}"
+			title: "红石粉"
 			x: -6.5d
 			y: -1.5d
 		}
@@ -230,7 +230,7 @@
 			id: "11848C62B13BEC44"
 			tasks: [{
 				id: "602F39F82716CEED"
-				title: "{ftbquests.chapter.thermal.quest12.task_+6930822089516961517.title}"
+				title: "激光"
 				type: "checkmark"
 			}]
 			x: -3.5d
@@ -254,7 +254,7 @@
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest13.title}"
+			title: "RF线圈"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -273,7 +273,7 @@
 				item: "thermal:constantan_gear"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest14.title}"
+			title: "康铜齿轮"
 			x: 9.5d
 			y: 1.5d
 		}
@@ -292,7 +292,7 @@
 				item: "cmi:flux_mechanism_part"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest15.title}"
+			title: "机械零件"
 			x: 12.5d
 			y: -0.5d
 		}
@@ -311,10 +311,10 @@
 				item: "cmi:thermal_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thermal.quest16.title}"
+			title: "热力机械"
 			x: 15.0d
 			y: -2.5d
 		}
 	]
-	title: "{ftbquests.chapter.thermal.title}"
+	title: "热力"
 }

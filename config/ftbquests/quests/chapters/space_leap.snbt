@@ -31,7 +31,7 @@
 						value: "forge:ingots/calorite"
 					}
 				}
-				title: "{ftbquests.chapter.space_leap.quest1.task_+934780460170617993.title}"
+				title: "耐热金属锭"
 				type: "item"
 			}]
 			x: 2.5d
@@ -57,7 +57,7 @@
 						value: "forge:ingots/desh"
 					}
 				}
-				title: "{ftbquests.chapter.space_leap.quest2.task_+4288942071941103971.title}"
+				title: "戴斯锭"
 				type: "item"
 			}]
 			x: -6.5d
@@ -82,7 +82,7 @@
 						value: "forge:ingots/ostrum"
 					}
 				}
-				title: "{ftbquests.chapter.space_leap.quest3.task_+2631089724407115967.title}"
+				title: "紫金锭"
 				type: "item"
 			}]
 			x: -2.5d
@@ -107,7 +107,7 @@
 						value: "forge:ingots/platinum"
 					}
 				}
-				title: "{ftbquests.chapter.space_leap.quest4.task_+7317981913671258247.title}"
+				title: "铂锭"
 				type: "item"
 			}]
 			x: -8.5d
@@ -141,7 +141,7 @@
 				xp: 10
 			}]
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.space_leap.quest6.subtitle}"
+			subtitle: "抬起我们~心爱的火箭~"
 			tasks: [{
 				dimension: "ad_astra:mars"
 				id: "7EF04641441715E3"
@@ -177,7 +177,7 @@
 				xp: 10
 			}]
 			shape: "square"
-			subtitle: "{ftbquests.chapter.space_leap.quest8.subtitle}"
+			subtitle: "那就更高~更高~和更高！"
 			tasks: [{
 				id: "551658D217591424"
 				item: {
@@ -199,7 +199,7 @@
 				xp: 10
 			}]
 			shape: "square"
-			subtitle: "{ftbquests.chapter.space_leap.quest9.subtitle}"
+			subtitle: "保卫你的~太空安宁！"
 			tasks: [{
 				id: "0100D0BFA32B11B3"
 				item: {
@@ -221,7 +221,7 @@
 				xp: 10
 			}]
 			shape: "square"
-			subtitle: "{ftbquests.chapter.space_leap.quest10.subtitle}"
+			subtitle: "我们的故事~由同类传颂~"
 			tasks: [{
 				id: "2713649F76AFEDAC"
 				item: "cmi:tier_1_aviation_mechanism"
@@ -239,7 +239,7 @@
 				xp: 10
 			}]
 			shape: "square"
-			subtitle: "{ftbquests.chapter.space_leap.quest11.subtitle}"
+			subtitle: "喷火马达~是我强劲心脏~"
 			tasks: [{
 				id: "31DB8EEB03DC1FB8"
 				item: "cmi:tier_2_aviation_mechanism"
@@ -257,7 +257,7 @@
 				xp: 10
 			}]
 			shape: "square"
-			subtitle: "{ftbquests.chapter.space_leap.quest12.subtitle}"
+			subtitle: "每一丝构件的呼吸~"
 			tasks: [{
 				id: "2C8C748FC50E9DC9"
 				item: "cmi:tier_3_aviation_mechanism"
@@ -292,7 +292,7 @@
 				xp: 10
 			}]
 			shape: "square"
-			subtitle: "{ftbquests.chapter.space_leap.quest14.subtitle}"
+			subtitle: "人类的智慧~赐予我铁的翅膀~"
 			tasks: [{
 				id: "460B72DA1AFD4CFC"
 				item: {
@@ -313,7 +313,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.space_leap.quest15.subtitle}"
+			subtitle: "我们生来~为飞得更高~"
 			tasks: [{
 				id: "6611BFEC5D51AFA4"
 				item: "cmi:space_mechanism_part"
@@ -378,7 +378,7 @@
 						value: "forge:circuits/ultimate"
 					}
 				}
-				title: "{ftbquests.chapter.space_leap.quest18.task_+9183821287779422435.title}"
+				title: "任意 #forge:circuits/终极电路"
 				type: "item"
 			}]
 			x: 2.0d
@@ -401,7 +401,7 @@
 						value: "forge:circuits/elite"
 					}
 				}
-				title: "{ftbquests.chapter.space_leap.quest19.task_+2351793923455895782.title}"
+				title: "精英控制电路"
 				type: "item"
 			}]
 			x: -3.0d
@@ -424,7 +424,7 @@
 						value: "forge:circuits/advanced"
 					}
 				}
-				title: "{ftbquests.chapter.space_leap.quest20.task_+1890083279048019985.title}"
+				title: "高级控制电路"
 				type: "item"
 			}]
 			x: -9.0d
@@ -524,10 +524,10 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.space_leap.quest24.title}"
+			title: "粒子对撞机"
 			x: -3.0d
 			y: 3.0d
 		}
 	]
-	title: "{ftbquests.chapter.space_leap.title}"
+	title: "太空之旅"
 }

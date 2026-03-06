@@ -29,7 +29,7 @@
 				item: "cmi:light_engineering_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest1.title}"
+			title: "轻型工程机械"
 			x: -30.92857142857143d
 			y: -3.5d
 		}
@@ -46,7 +46,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest2.title}"
+			title: "铜锭"
 			x: -27.400000000000006d
 			y: -4.642857142857146d
 		}
@@ -56,7 +56,7 @@
 			id: "484A8F54DDA53E14"
 			tasks: [{
 				id: "0CB8BC8F69AE5819"
-				title: "{ftbquests.chapter.coil.quest3.task_+916689848309274649.title}"
+				title: "金属丝冲压"
 				type: "checkmark"
 			}]
 			x: -19.300000000000026d
@@ -68,7 +68,7 @@
 			id: "014169D9093B9C20"
 			tasks: [{
 				id: "1E33C55B88A34597"
-				title: "{ftbquests.chapter.coil.quest4.task_+2176300041875178903.title}"
+				title: "金属丝冲压"
 				type: "checkmark"
 			}]
 			x: -17.985714285714323d
@@ -80,7 +80,7 @@
 			id: "31CE7127BE9E5AC7"
 			tasks: [{
 				id: "40FBAA2998FAEC02"
-				title: "{ftbquests.chapter.coil.quest5.task_+4682523333218724866.title}"
+				title: "金属丝冲压"
 				type: "checkmark"
 			}]
 			x: -16.81428571428576d
@@ -92,7 +92,7 @@
 			id: "314797FFBBF2D58D"
 			tasks: [{
 				id: "1B876A97B16B4C32"
-				title: "{ftbquests.chapter.coil.quest6.task_+1983671360629197874.title}"
+				title: "金属丝冲压"
 				type: "checkmark"
 			}]
 			x: -7.500000000000043d
@@ -115,10 +115,10 @@
 						value: "forge:ingots/electrum"
 					}
 				}
-				title: "{ftbquests.chapter.coil.quest7.task_+3243456180473977541.title}"
+				title: "任意 #forge:ingots/electrum"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest7.title}"
+			title: "琥珀金锭"
 			x: -26.071428571428605d
 			y: -9.802857142857142d
 		}
@@ -139,10 +139,10 @@
 						value: "forge:ingots/aluminum"
 					}
 				}
-				title: "{ftbquests.chapter.coil.quest8.task_+8864865530841852105.title}"
+				title: "任意 #forge:ingots/aluminum"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest8.title}"
+			title: "铝锭"
 			x: -23.78571428571432d
 			y: -13.462857142857139d
 		}
@@ -163,10 +163,10 @@
 						value: "forge:ingots/steel"
 					}
 				}
-				title: "{ftbquests.chapter.coil.quest9.task_+130677114315661651.title}"
+				title: "任意 #forge:ingots/steel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest9.title}"
+			title: "钢锭"
 			x: -8.928571428571459d
 			y: -8.479999999999997d
 		}
@@ -191,10 +191,10 @@
 						value: "forge:wires/copper"
 					}
 				}
-				title: "{ftbquests.chapter.coil.quest10.task_+7483512518100005748.title}"
+				title: "任意 #forge:线材/铜"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest10.title}"
+			title: "铜线"
 			x: -7.35714285714289d
 			y: 5.217142857142868d
 		}
@@ -219,10 +219,10 @@
 						value: "forge:wires/electrum"
 					}
 				}
-				title: "{ftbquests.chapter.coil.quest11.task_+6984854289382213666.title}"
+				title: "任意 #forge:线材/琥珀金"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest11.title}"
+			title: "琥珀金线"
 			x: 0.07142857142854098d
 			y: 0.20000000000000995d
 		}
@@ -242,10 +242,10 @@
 						value: "forge:wires/aluminum"
 					}
 				}
-				title: "{ftbquests.chapter.coil.quest12.task_+698613509517036987.title}"
+				title: "任意 #forge:线材/铝"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest12.title}"
+			title: "铝线"
 			x: 10.499999999999957d
 			y: 3.6114285714285828d
 		}
@@ -270,10 +270,10 @@
 						value: "forge:wires/steel"
 					}
 				}
-				title: "{ftbquests.chapter.coil.quest13.task_+5648713808568185737.title}"
+				title: "任意 #forge:线材/钢"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest13.title}"
+			title: "钢线"
 			x: 17.928571428571388d
 			y: -2.3342857142856914d
 		}
@@ -291,10 +291,10 @@
 				item: "cmi:coil_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.coil.quest14.title}"
+			title: "线圈机械"
 			x: 27.21428571428568d
 			y: 1.5771428571428743d
 		}
 	]
-	title: "{ftbquests.chapter.coil.title}"
+	title: "线圈"
 }

@@ -31,7 +31,7 @@
 				item: "tconstruct:raw_cobalt"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest1.title}"
+			title: "粗钴矿"
 			x: -20.285714285714292d
 			y: -0.2142857142857082d
 		}
@@ -51,7 +51,7 @@
 				item: "tconstruct:cobalt_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest2.title}"
+			title: "钴锭"
 			x: -11.428571428571445d
 			y: 3.5d
 		}
@@ -63,7 +63,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "37838203995484AD"
-				title: "{ftbquests.chapter.cobalt.quest3.task_+4000183846004098221.title}"
+				title: "熔炼"
 				type: "checkmark"
 			}]
 			x: -15.857142857142875d
@@ -77,7 +77,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "39B6DE9F84277DF5"
-				title: "{ftbquests.chapter.cobalt.quest4.task_+4158756082621578741.title}"
+				title: "轧制"
 				type: "checkmark"
 			}]
 			x: -1.142857142857153d
@@ -103,10 +103,10 @@
 						value: "forge:rods/cobalt"
 					}
 				}
-				title: "{ftbquests.chapter.cobalt.quest5.task_+6752951911191497908.title}"
+				title: "任意 #forge:rods/cobalt"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest5.title}"
+			title: "钴杆"
 			x: -1.4285714285714448d
 			y: -3.642857142857146d
 		}
@@ -118,7 +118,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "6E19F1EAB8448AE2"
-				title: "{ftbquests.chapter.cobalt.quest6.task_+7933638209005980386.title}"
+				title: "绕制"
 				type: "checkmark"
 			}]
 			x: -4.285714285714306d
@@ -147,10 +147,10 @@
 						value: "vintageimprovements:springs/cobalt"
 					}
 				}
-				title: "{ftbquests.chapter.cobalt.quest7.task_+7101220640309613534.title}"
+				title: "任意 #vintageimprovements:弹簧/钴"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest7.title}"
+			title: "钴弹簧"
 			x: 1.1428571428571246d
 			y: 4.357142857142854d
 		}
@@ -162,7 +162,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "4B4C5FA6DC61569C"
-				title: "{ftbquests.chapter.cobalt.quest8.task_+5425816821341181596.title}"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -7.428571428571445d
@@ -188,10 +188,10 @@
 						value: "forge:plates/cobalt"
 					}
 				}
-				title: "{ftbquests.chapter.cobalt.quest9.task_+5775242959566099048.title}"
+				title: "任意 #forge:plates/cobalt"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest9.title}"
+			title: "钴板"
 			x: -1.8571428571428754d
 			y: 7.5d
 		}
@@ -210,7 +210,7 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest10.title}"
+			title: "金锭"
 			x: 13.428571428571402d
 			y: -10.214285714285715d
 		}
@@ -222,7 +222,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "5D2F37EA2E42EC77"
-				title: "{ftbquests.chapter.cobalt.quest11.task_+6714647048370711671.title}"
+				title: "轧制"
 				type: "checkmark"
 			}]
 			x: 11.285714285714263d
@@ -248,10 +248,10 @@
 						value: "forge:rods/gold"
 					}
 				}
-				title: "{ftbquests.chapter.cobalt.quest12.task_+8673267545227876836.title}"
+				title: "任意 #forge:rods/gold"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest12.title}"
+			title: "金杆"
 			x: 9.428571428571402d
 			y: -7.357142857142854d
 		}
@@ -271,7 +271,7 @@
 				item: "minecraft:redstone"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest13.title}"
+			title: "红石粉"
 			x: 7.857142857142833d
 			y: -6.642857142857146d
 		}
@@ -283,7 +283,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "7024E00F9D391CEC"
-				title: "{ftbquests.chapter.cobalt.quest14.task_+8080829989076409580.title}"
+				title: "激光蚀刻"
 				type: "checkmark"
 			}]
 			x: 13.285714285714278d
@@ -308,7 +308,7 @@
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest15.title}"
+			title: "射频线圈"
 			x: 10.5d
 			y: 4.5d
 		}
@@ -323,7 +323,7 @@
 				item: "cmi:engineering_mechanism_part"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest16.title}"
+			title: "机械部件"
 			x: 22.857142857142847d
 			y: 0.6428571428571388d
 		}
@@ -338,10 +338,10 @@
 				item: "cmi:cobalt_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.cobalt.quest17.title}"
+			title: "钴机械"
 			x: 25.428571428571416d
 			y: -1.500000000000007d
 		}
 	]
-	title: "{ftbquests.chapter.cobalt.title}"
+	title: "钴质"
 }

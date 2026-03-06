@@ -22,7 +22,7 @@
 			id: "57D82B142C9BBD26"
 			tasks: [{
 				id: "1063CBACEED455D9"
-				title: "{ftbquests.chapter.pig_iron.quest1.task_+1181011470902908377.title}"
+				title: "熔融猪铁"
 				type: "checkmark"
 			}]
 			x: -10.249999999999993d
@@ -34,7 +34,7 @@
 			id: "13F8B02676CFF1A2"
 			tasks: [{
 				id: "07D776F6C6748C31"
-				title: "{ftbquests.chapter.pig_iron.quest2.task_+565051080521845809.title}"
+				title: "铸造"
 				type: "checkmark"
 			}]
 			x: -16.964285714285708d
@@ -54,7 +54,7 @@
 				item: "tconstruct:pig_iron_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.pig_iron.quest3.title}"
+			title: "猪铁锭"
 			x: -18.107142857142847d
 			y: 6.248571428571431d
 		}
@@ -64,7 +64,7 @@
 			id: "4ADC4E63F595019B"
 			tasks: [{
 				id: "794BDAB52307A8AE"
-				title: "{ftbquests.chapter.pig_iron.quest4.task_+8740319973354219694.title}"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -15.535714285714278d
@@ -84,7 +84,7 @@
 				item: "vintageimprovements:pig_iron_sheet"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.pig_iron.quest5.title}"
+			title: "猪铁板"
 			x: -13.571428571428577d
 			y: 7.857142857142854d
 		}
@@ -97,7 +97,7 @@
 			id: "73F6228F867C0A1D"
 			tasks: [{
 				id: "30BC4C8D34A95AD1"
-				title: "{ftbquests.chapter.pig_iron.quest6.task_+3511765978799758033.title}"
+				title: "填充"
 				type: "checkmark"
 			}]
 			x: -11.857142857142854d
@@ -109,7 +109,7 @@
 			id: "0DF4EF947C2CA60D"
 			tasks: [{
 				id: "2E42E7C37E3FC1A5"
-				title: "{ftbquests.chapter.pig_iron.quest7.task_+3333481501030334885.title}"
+				title: "压制"
 				type: "checkmark"
 			}]
 			x: -9.0d
@@ -129,7 +129,7 @@
 				item: "tconstruct:pig_iron_nugget"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.pig_iron.quest8.title}"
+			title: "猪铁粒"
 			x: -1.4285714285714306d
 			y: 2.9628571428571533d
 		}
@@ -147,7 +147,7 @@
 				item: "cmi:magical_mechanism_part"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.pig_iron.quest9.title}"
+			title: "机械部件"
 			x: 14.57142857142857d
 			y: 3.260000000000005d
 		}
@@ -165,10 +165,10 @@
 				item: "cmi:pig_iron_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.pig_iron.quest10.title}"
+			title: "猪铁机械装置"
 			x: 20.85714285714286d
 			y: 5.914285714285725d
 		}
 	]
-	title: "{ftbquests.chapter.pig_iron.title}"
+	title: "生铁"
 }

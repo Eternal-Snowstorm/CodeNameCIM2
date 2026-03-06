@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["18237D913486FE33"]
 			icon: "minecraft:coal"
 			id: "2D245A409C2C190B"
 			rewards: [{
@@ -17,10 +16,10 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.fuel.quest1.subtitle}"
+			subtitle: "来看看有什么好的燃料?"
 			tasks: [{
 				id: "5E01C3C84D5948D9"
-				title: "{ftbquests.chapter.fuel.quest1.task_+6773910579600509145.title}"
+				title: "燃料?"
 				type: "checkmark"
 			}]
 			x: -2.0d
@@ -43,7 +42,7 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "{ftbquests.chapter.fuel.quest2.task_+6539164573036977276.title}"
+				title: "原木"
 				type: "item"
 			}]
 			x: 0.0d
@@ -57,7 +56,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.fuel.quest3.subtitle}"
+			subtitle: "原木粉碎"
 			tasks: [{
 				id: "7BBC98D119AFC393"
 				item: "createdieselgenerators:wood_chip"
@@ -74,7 +73,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.fuel.quest4.subtitle}"
+			subtitle: "压缩一次"
 			tasks: [{
 				id: "7784C7233147A465"
 				item: "cmi:wood_chip_briquette"
@@ -91,7 +90,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.fuel.quest5.subtitle}"
+			subtitle: "再压缩一次"
 			tasks: [{
 				id: "71C11011531B08A3"
 				item: "cmi:densely_packed_wood_chip_briquette"
@@ -108,7 +107,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.fuel.quest6.subtitle}"
+			subtitle: "和杂酚油一起再压一次"
 			tasks: [{
 				id: "762658767AEED461"
 				item: "cmi:creosote_wood_chip_briquette"
@@ -125,7 +124,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.fuel.quest7.subtitle}"
+			subtitle: "还是最朴素的木炭(但是被削了)"
 			tasks: [{
 				id: "37DA293DB5FD4D7F"
 				item: {
@@ -135,7 +134,7 @@
 						value: "forge:charcoal"
 					}
 				}
-				title: "{ftbquests.chapter.fuel.quest7.task_+4024574562031979903.title}"
+				title: "木炭"
 				type: "item"
 			}]
 			x: 2.0d
@@ -149,7 +148,7 @@
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.fuel.quest8.subtitle}"
+			subtitle: "打成粉能烧更久"
 			tasks: [{
 				id: "267B425EF2E478A3"
 				item: {
@@ -159,16 +158,16 @@
 						value: "forge:dusts/charcoal"
 					}
 				}
-				title: "{ftbquests.chapter.fuel.quest8.task_+2772882971146090659.title}"
+				title: "木炭粉"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.fuel.quest8.title}"
+			title: "木炭粉"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2D245A409C2C190B"]
-			description: ["{ftbquests.chapter.fuel.quest9.description1}"]
+			description: ["泥炭块只会在红树林沼泽和沼泽群系生成，挖掘时掉落的泥炭数量受工具的时运效果影响"]
 			id: "7AC1116B656361E6"
 			rewards: [
 				{
@@ -191,7 +190,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.fuel.quest9.subtitle}"
+			subtitle: "一种产量极高的燃料"
 			tasks: [{
 				id: "09851817940F4AAE"
 				item: {
@@ -201,7 +200,7 @@
 						value: "cmi:peat_gen"
 					}
 				}
-				title: "{ftbquests.chapter.fuel.quest9.task_+685981007791213230.title}"
+				title: "泥炭"
 				type: "item"
 			}]
 			x: -1.5d
@@ -212,14 +211,14 @@
 				"0CE693D306C1B691"
 				"32D57938C24F3E48"
 			]
-			description: ["{ftbquests.chapter.fuel.quest10.description1}"]
+			description: ["煤炭也可以烧成焦炭"]
 			id: "12FAE452591719C6"
 			rewards: [{
 				id: "2E48459F498A2E75"
 				type: "xp"
 				xp: 10
 			}]
-			subtitle: "{ftbquests.chapter.fuel.quest10.subtitle}"
+			subtitle: "烧的更久"
 			tasks: [{
 				id: "2E41429B7D22CCDF"
 				item: {
@@ -229,7 +228,7 @@
 						value: "forge:coal_coke"
 					}
 				}
-				title: "{ftbquests.chapter.fuel.quest10.task_+3333018434817674463.title}"
+				title: "焦炭"
 				type: "item"
 			}]
 			x: 4.0d
@@ -237,16 +236,16 @@
 		}
 		{
 			id: "32D57938C24F3E48"
-			subtitle: "{ftbquests.chapter.fuel.quest11.subtitle}"
+			subtitle: "燃烧时间是木炭的二倍"
 			tasks: [{
 				id: "1DC3AD319AD97070"
 				item: "minecraft:coal"
-				title: "{ftbquests.chapter.fuel.quest11.task_+2144748276121432176.title}"
+				title: "煤炭"
 				type: "item"
 			}]
 			x: 4.5d
 			y: -0.5d
 		}
 	]
-	title: "{ftbquests.chapter.fuel.title}"
+	title: "燃料"
 }

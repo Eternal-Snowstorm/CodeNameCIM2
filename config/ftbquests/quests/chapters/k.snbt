@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4F1185F495038BB3"]
 			id: "136F20B0869B90F6"
 			rewards: [
 				{
@@ -622,5 +621,5 @@
 			y: -2.0d
 		}
 	]
-	title: "{ftbquests.chapter.k.title}"
+	title: "构件之旅"
 }
