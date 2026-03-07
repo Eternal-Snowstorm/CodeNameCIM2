@@ -54,15 +54,6 @@ StartupEvents.registry("item", (event) => {
 		return new $KnifeItem($Tiers.WOOD, 0.5, -2.0, new $Item$Properties())
 	}).tag("forge:tools/knives").tag("forge:tools")
 
-	// 地质锤
-	event.create(`${global.namespace}:geological_hammer`)
-		.rarity("epic")
-		.maxStackSize(1)
-		.tag("forge:tools")
-		.tag("forge:tools/wrench")
-		.tag("mekanism:configurators")
-		.tag("forge:wrenches")
-
 	// 木质龙头
 	event.create(`${global.namespace}:wooden_faucet`)
 		.texture(`${global.namespace}:item/tool/wooden_faucet`)
