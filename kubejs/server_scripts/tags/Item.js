@@ -87,14 +87,6 @@ ServerEvents.tags("item", (event) => {
 		.add("functionalstorage:fluid_2")
 		.add("functionalstorage:fluid_4")
 
-	// 机器核心
-	event.get("cmi:multiblock_machine_controller")
-		.add("mm:large_steam_boiler")
-		.add("mm:steam_ore_processor")
-		.add("mm:cracker")
-		.add("mm:particle_collision_machine")
-		.add("mm:improved_rubber_extractor")
-
 	// 奶酪
 	event.get("forge:cheese")
 		.add("ad_astra:cheese")

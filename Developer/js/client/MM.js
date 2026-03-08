@@ -39,15 +39,19 @@ Ponder.registry((event) => {
 	 */
 	function addMMPonder(controller, name, scmatics, layer, horizon) {
 		return event.create(`mm:${controller}`)
-			.scene(`${global.namespace}:${scmatics}`, `${name}`, `${global.namespace}:multiblock/${scmatics}`, (scene) => {
-				scene.scaleSceneView(horizon)
-				scene.showStructure(0)
-				scene.idle(20)
-				for (let displayLevel = 1; displayLevel < layer + 1; displayLevel++) {
-					scene.addKeyframe()
-					scene.world.showSection([0, displayLevel, 0, 20, displayLevel, 20], Direction.DOWN)
-					scene.idle(50)
-				}
-			})
+			.scene(
+				`${global.namespace}:${scmatics}`,
+				`${name}`,
+				`${global.namespace}:multiblock/${scmatics}`,
+				(scene) => {
+					scene.scaleSceneView(horizon)
+					scene.showStructure(0)
+					scene.idle(20)
+					for (let displayLevel = 1; displayLevel < layer + 1; displayLevel++) {
+						scene.addKeyframe()
+						scene.world.showSection([0, displayLevel, 0, 20, displayLevel, 20], Direction.DOWN)
+						scene.idle(50)
+					}
+				})
 	}
 })

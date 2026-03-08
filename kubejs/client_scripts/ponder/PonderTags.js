@@ -44,14 +44,7 @@ Ponder.tags((event) => {
 		"minecraft:water_bucket",
 		"cmi:bronze_casing",
 		"mekanism:steam_boiler",
-		"mm:large_steam_boiler",
-		"mm:large_steam_boiler_fluid_output",
-		"mm:large_steam_boiler_fluid_input",
-		"mm:large_steam_boiler_item_input",
 		"mekanism:steam_bucket",
-		"mm:steam_ore_processor",
-		"mm:cracker",
-		"mm:particle_collision_machine"
 	])
 
 	new PonderTag("other", "mekanism:cardboard_box", "Other", [
