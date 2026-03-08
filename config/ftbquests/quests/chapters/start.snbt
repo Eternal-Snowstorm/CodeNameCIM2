@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "start"
 	group: "050255AE19A93344"
-	icon: "tconstruct:smeltery_controller"
+	icon: "tconstruct:seared_melter"
 	id: "7CF1214F39DD4E53"
 	order_index: 1
 	quest_links: [ ]
@@ -142,7 +142,10 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["73153E1AFAD14636"]
+			dependencies: [
+				"73153E1AFAD14636"
+				"5E676A3C46C6141B"
+			]
 			description: ["它兼备&6镐&f、&6斧&f和&6锹&f的功能，几乎能满足所有的挖掘需求"]
 			icon: {
 				Count: 1
@@ -235,14 +238,17 @@
 						value: "forge:cobblestone"
 					}
 				}
-				title: "Any #forge:cobblestone"
+				title: "圆石"
 				type: "item"
 			}]
 			x: 2.5d
 			y: 14.5d
 		}
 		{
-			dependencies: ["5556629C2263CF73"]
+			dependencies: [
+				"5556629C2263CF73"
+				"562C10B7F3C07DCF"
+			]
 			id: "637C1318E278B73E"
 			tasks: [{
 				id: "44CCB17D995B1FD3"
@@ -418,6 +424,7 @@
 				"637C1318E278B73E"
 				"5E676A3C46C6141B"
 				"562C10B7F3C07DCF"
+				"29C10567663F027F"
 			]
 			description: [
 				"我应该可以在部件制造台直接用&6铜&f做出对应部件......其他材料就不一定行得通了"
@@ -551,6 +558,25 @@
 			title: "初级冶炼"
 			x: 8.0d
 			y: 14.5d
+		}
+		{
+			dependencies: ["562C10B7F3C07DCF"]
+			id: "29C10567663F027F"
+			tasks: [{
+				id: "3182E885E9C07E4D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
+				title: "Any #forge:ingots/copper"
+				type: "item"
+			}]
+			title: "铜锭"
+			x: 1.0d
+			y: 17.5d
 		}
 	]
 	title: "炽焰匠心"

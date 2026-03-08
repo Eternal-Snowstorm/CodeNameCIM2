@@ -82,7 +82,7 @@
 			]
 			icon: "minecraft:iron_ingot"
 			id: "06012DC3A4BBF58B"
-			subtitle: "终于！第一块铁！"
+			subtitle: "IRON!"
 			tasks: [
 				{
 					id: "0A4BA186729E732C"
@@ -126,7 +126,7 @@
 					type: "item"
 				}
 			]
-			title: "铁！"
+			title: "铁!"
 			x: -9.5d
 			y: 15.0d
 		}
