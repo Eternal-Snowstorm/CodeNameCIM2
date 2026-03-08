@@ -1,44 +1,41 @@
 ServerEvents.recipes((event) => {
-    let { create, tconstruct, thermal } = event.recipes
-    let Inc = {
-        OBSIDIAN_PLATE: "create:unprocessed_obsidian_sheet"
-    }
+	let { create, tconstruct, thermal } = event.recipes
+	let Inc = {
+		OBSIDIAN_PLATE: "create:unprocessed_obsidian_sheet"
+	}
 
-    // 坚固板
-    tconstruct.casting_table("create:sturdy_sheet")
-        .fluid(Fluid.of("tconstruct:molten_obsidian", 250))
-        .cast("#tconstruct:casts/multi_use/plate")
-        .cooling_time(100)
-        .cast_consumed(false)
-        .id("create:sequenced_assembly/sturdy_sheet")
+	// 坚固板
+	tconstruct.casting_table("create:sturdy_sheet")
+		.fluid(Fluid.of("tconstruct:molten_obsidian", 250))
+		.cast("#tconstruct:casts/multi_use/plate")
+		.cooling_time(100)
+		.cast_consumed(false)
+		.id("create:sequenced_assembly/sturdy_sheet")
 
-    tconstruct.casting_table("create:sturdy_sheet")
-        .fluid(Fluid.of("tconstruct:molten_obsidian", 250))
-        .cast("#tconstruct:casts/single_use/plate")
-        .cooling_time(100)
-        .cast_consumed(true)
+	tconstruct.casting_table("create:sturdy_sheet")
+		.fluid(Fluid.of("tconstruct:molten_obsidian", 250))
+		.cast("#tconstruct:casts/single_use/plate")
+		.cooling_time(100)
+		.cast_consumed(true)
 
-    thermal.chiller("create:sturdy_sheet", [
-        Fluid.of("tconstruct:molten_obsidian", 250),
-        "#tconstruct:casts/multi_use/plate"
-    ]).energy(4800)
+	thermal.chiller("create:sturdy_sheet", [
+		Fluid.of("tconstruct:molten_obsidian", 250),
+		"#tconstruct:casts/multi_use/plate"
+	]).energy(4800)
 
-    // 致密坚固板
-    create.sequenced_assembly("cmi:dense_sturdy_sheet",
-        "create:sturdy_sheet", [
-        create.filling(
-            Inc.OBSIDIAN_PLATE, [
-            Inc.OBSIDIAN_PLATE,
-            Fluid.of("tconstruct:molten_obsidian", 250)
-        ]),
-        create.deploying(
-            Inc.OBSIDIAN_PLATE, [
-            Inc.OBSIDIAN_PLATE,
-            "create:sturdy_sheet"
-        ]),
-        create.pressing(
-            Inc.OBSIDIAN_PLATE,
-            Inc.OBSIDIAN_PLATE
-        )
-    ]).transitionalItem(Inc.OBSIDIAN_PLATE).loops(1)
+	// 致密坚固板
+	create.sequenced_assembly("cmi:dense_sturdy_sheet",
+		"create:sturdy_sheet", [
+		create.filling(Inc.OBSIDIAN_PLATE, [
+			Inc.OBSIDIAN_PLATE,
+			Fluid.of("tconstruct:molten_obsidian", 250)
+		]),
+		create.deploying(Inc.OBSIDIAN_PLATE, [
+			Inc.OBSIDIAN_PLATE,
+			"create:sturdy_sheet"
+		]),
+		create.pressing(Inc.OBSIDIAN_PLATE, [
+			Inc.OBSIDIAN_PLATE
+		])
+	]).transitionalItem(Inc.OBSIDIAN_PLATE).loops(1)
 })

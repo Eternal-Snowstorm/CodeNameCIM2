@@ -184,30 +184,30 @@ ServerEvents.recipes((event) => {
 
 	// 脱水
 	thermal_extra.endothermic_dehydrator([
-		Fluid.of("cmi:turbid_waste_liquid",50),
+		Fluid.of("cmi:turbid_waste_liquid", 50),
 		"cmi:platinum_dust"
-	],[
-		Fluid.of("cmi:platinum_solution",100)
+	], [
+		Fluid.of("cmi:platinum_solution", 100)
 	])
 
 	// 废液回收
-    event.custom({
-        "type": "immersiveindustry:electrolyzer",
-        "fluid": {
-            "tag": "cmi:turbid_waste_liquid",
-            "amount": 200
-        },
-        "result": {
-            "item": "cmi:delta_blackstone_source",
-            "count": 1
-        },
-        "large_only": true,
-        "time": 200
-    })
+	event.custom({
+		"type": "immersiveindustry:electrolyzer",
+		"fluid": {
+			"tag": "cmi:turbid_waste_liquid",
+			"amount": 200
+		},
+		"result": {
+			"item": "cmi:delta_blackstone_source",
+			"count": 1
+		},
+		"large_only": true,
+		"time": 200
+	})
 
 	// 电镀液
-	create.mixing(Fluid.of("cmi:plating_solution",1000),[
+	create.mixing(Fluid.of("cmi:plating_solution", 1000), [
 		"#forge:dusts/chromium",
-		Fluid.of("mekanism:sulfuric_acid",500)
+		Fluid.of("mekanism:sulfuric_acid", 500)
 	])
 })
