@@ -95,7 +95,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("brominated_flame_retardants", "溴系阻燃剂")
 	addItemLang("rubber_hand", "橡胶手部零件")
 	addItemLang("flame_retardant_plastic", "阻燃塑料")
-	addItemLang("motor_rotor","电动机转子")
+	addItemLang("motor_rotor", "电动机转子")
 	addItemLang("grass_fiber", "草纤维")
 	addItemLang("grass_string", "草绳")
 	addItemLang("sugarcane_fiber", "甘蔗纤维")
@@ -193,6 +193,23 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("calcite_dust", "方解石粉")
 	addItemLang("refractory_brick_bloom", "耐火砖坯")
 	addItemLang("piggy_bank", "破旧的存钱罐")
+	addItemLang("plant_ash", "草木灰")
+
+	let moleList = [
+		["plate", "板状"],
+		["gear", "齿轮状"],
+		["rod", "棒状"],
+		["bullet", "子弹"],
+		["wire", "线"],
+		["2x2_packing", "2x2打包"],
+		["3x3_packing", "3x3打包"],
+		["unpack", "解包"],
+		["coin", "硬币"],
+		["mechanism", "构件"]
+	]
+	moleList.forEach(([name, value]) => {
+		addItemLang(`${name}_mold`, `${value}模具`)
+	})
 
 	addCastItemLang("mechanism", "构件")
 	addCastItemLang("nugget", "粒")

@@ -1,6 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
+	// 箱子
 	kubejs.shaped("4x minecraft:chest", [
 		"AAA",
 		"A A",

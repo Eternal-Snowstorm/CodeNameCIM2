@@ -68,12 +68,13 @@ ServerEvents.recipes((event) => {
 	]).blueprint("specialBullet")
 		.id("immersiveengineering:blueprint/bullet_potion")
 
-	Ingredient.of("#cmi:molds").getItemIds().forEach((mold) => {
-		immersiveengineering.blueprint(mold, [
-			"3x #forge:plates/industrial_iron",
-			"#immersiveengineering:tools/wirecutters"
-		]).blueprint("molds")
-			.id(`cmi:blueprint/${mold.replace("cmi:", "")}`)
-	})
-
+	Ingredient.of("#cmi:molds")
+		.getItemIds()
+		.forEach((mold) => {
+			immersiveengineering.blueprint(mold, [
+				"3x #forge:plates/industrial_iron",
+				"#forge:wrenches"
+			]).blueprint("molds")
+				.id(`cmi:blueprint/${mold.replace("cmi:", "")}`)
+		})
 })

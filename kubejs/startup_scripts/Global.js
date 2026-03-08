@@ -225,7 +225,8 @@ global.metalGroup = [
 	"azure_neodymium",
 	"shadow_steel",
 	"refined_radiance",
-	"quantum_alloy"
+	"quantum_alloy",
+	"titanium"
 ]
 /**
  * 各金属的熔点(单位C°)
@@ -301,7 +302,8 @@ global.meltingPoints = {
 	"azure_neodymium": 1024, // null
 	"scarlet_neodymium": 1024, // null
 	"shadow_steel": 2106, // null
-	"refined_radiance": 2106, // null
+	"refined_radiance": 2106, // null,
+	"titanium": 1668,
 }
 /**
  * 金属流体副产物
@@ -401,7 +403,8 @@ global.materialNamespace = {
 	"azure_neodymium": "c",
 	"scarlet_neodymium": "c",
 	"shadow_steel": "c",
-	"refined_radiance": "c"
+	"refined_radiance": "c",
+	"titanium": "c"
 }
 /**
  * 熔炉等级: 不同熔炼设备可处理的金属集合
@@ -454,6 +457,7 @@ global.meltingLevels = {
 		"scarlet_neodymium",
 	],
 	2000: [
+		"titanium",
 		"manyullyn",
 		"twinite",
 		"prismalium",

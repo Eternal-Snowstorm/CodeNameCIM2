@@ -1,6 +1,4 @@
 ServerEvents.recipes((event) => {
-    let { immersiveengineering } = event.recipes
-
     // 钢齿轮镀铬
     event.custom({
         "type": "immersiveindustry:electrolyzer",

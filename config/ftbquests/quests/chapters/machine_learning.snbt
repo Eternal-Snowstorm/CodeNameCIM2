@@ -43,7 +43,7 @@
 				}
 			]
 			title: "安山岩"
-			x: -21.0d
+			x: -20.25d
 			y: 16.5d
 		}
 		{
@@ -58,6 +58,7 @@
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "安第斯合金(点头)"
 			tasks: [{
 				id: "0D5FCD1741F23F5B"
 				item: {
@@ -71,7 +72,7 @@
 				type: "item"
 			}]
 			title: "安山合金"
-			x: -16.0d
+			x: -15.5d
 			y: 16.5d
 		}
 		{
@@ -181,7 +182,7 @@
 				title: "安山岩粉"
 				type: "item"
 			}]
-			x: -18.0d
+			x: -17.5d
 			y: 16.5d
 		}
 		{
@@ -193,7 +194,7 @@
 				item: "create:raw_zinc"
 				type: "item"
 			}]
-			x: -17.0d
+			x: -16.5d
 			y: 15.0d
 		}
 		{
@@ -205,7 +206,7 @@
 				title: "初级冶炼"
 				type: "checkmark"
 			}]
-			x: -19.0d
+			x: -18.5d
 			y: 15.0d
 		}
 		{
@@ -298,8 +299,8 @@
 				}
 			]
 			title: "基础传动元件"
-			x: -15.0d
-			y: 18.0d
+			x: -14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["0D502CA40E47F832"]
@@ -326,19 +327,23 @@
 					type: "item"
 				}
 				{
-					id: "0D6AD8D6F01250C8"
+					id: "7AC7BC68681004D2"
+					item: "vintageimprovements:spring_coiling_machine"
+					type: "item"
+				}
+				{
+					id: "21A1D9360C4BCEF8"
 					item: "create:basin"
 					type: "item"
 				}
 				{
-					count: 2L
-					id: "6D3CB0B5A44C5B75"
+					id: "7DD796E9E9EAAB72"
 					item: "create:depot"
 					type: "item"
 				}
 			]
 			title: "基础工作元件"
-			x: -11.5d
+			x: -11.0d
 			y: 18.0d
 		}
 		{
@@ -393,7 +398,7 @@
 				item: "createdieselgenerators:biodiesel_bucket"
 				type: "item"
 			}]
-			x: -11.5d
+			x: -11.0d
 			y: 15.0d
 		}
 		{
@@ -428,7 +433,7 @@
 				item: { Count: 27, id: "tconstruct:seared_bricks" }
 				type: "item"
 			}]
-			x: -13.0d
+			x: -12.0d
 			y: 10.5d
 		}
 		{
@@ -440,7 +445,7 @@
 				id: "5B1946CC3D1E7691"
 				type: "advancement"
 			}]
-			x: -13.0d
+			x: -12.0d
 			y: 12.0d
 		}
 		{
@@ -451,32 +456,8 @@
 				item: "immersiveengineering:creosote_bucket"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -12.0d
 			y: 13.5d
-		}
-		{
-			dependencies: ["0D502CA40E47F832"]
-			id: "6BD3573C9B4A0B46"
-			tasks: [
-				{
-					id: "7928F1125475D115"
-					item: "create:water_wheel"
-					type: "item"
-				}
-				{
-					id: "7F1F384E38E80E11"
-					item: "create:large_water_wheel"
-					type: "item"
-				}
-				{
-					id: "33C0FBAC3E70E444"
-					item: "create:windmill_bearing"
-					type: "item"
-				}
-			]
-			title: "早期应力源"
-			x: -14.5d
-			y: 15.0d
 		}
 		{
 			hide_dependency_lines: true
@@ -517,7 +498,7 @@
 				item: "createdieselgenerators:distillation_controller"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 14.0d
 		}
 		{
@@ -528,7 +509,7 @@
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 16.0d
 		}
 		{
@@ -776,6 +757,186 @@
 				type: "item"
 			}]
 			x: -6.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["24FD90B8F1474193"]
+			id: "45F48FA80A7D0340"
+			rewards: [{
+				count: 32
+				id: "5D2B9F22400AE8FA"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			subtitle: "虫子咬了嘎巴一声就亖了"
+			tasks: [{
+				id: "77F1C82DDF017F42"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:treated_wood"
+					}
+				}
+				title: "防腐木板"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"7A9561BE016F15B5"
+				"63BF49635AEF3AF8"
+			]
+			description: [
+				"开采得到的&a粗矿&r需要先经过粉碎工序，破碎后形成粒度更细的&b粉碎矿&r"
+				"随后对&b粉碎矿&r进行水洗处理，通过清洗与分离最终获得&c矿粉&r"
+			]
+			id: "0A7ACD83404B2AFA"
+			subtitle: "搭配磁铁非常好玩"
+			tasks: [{
+				count: 4L
+				id: "60A9ACA253B643E1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/iron"
+					}
+				}
+				title: "铁粉"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4B3C8BED0FFCD6AB"]
+			description: ["制作各种类型的冲压模具时，都需要使用到这种材料"]
+			id: "6FB78C12B3941053"
+			rewards: [{
+				count: 4
+				id: "1BB08903BD86DF88"
+				item: "createdeco:industrial_iron_ingot"
+				type: "item"
+			}]
+			subtitle: "IRON! P-L-U-S!!!"
+			tasks: [{
+				id: "4884F7EC42E593C4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/industrial_iron"
+					}
+				}
+				title: "工业铁锭"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["0A7ACD83404B2AFA"]
+			id: "4B3C8BED0FFCD6AB"
+			subtitle: "铁粉放入搅拌机内加热"
+			tasks: [{
+				id: "31DE1F24112BE25C"
+				item: "cmi:molten_industrial_iron_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["45F48FA80A7D0340"]
+			id: "24FBD0678ECC293A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1317194CAF1EB6DF"
+				table_id: 558561179958846036L
+				type: "choice"
+			}]
+			subtitle: "一个非常重要的东西"
+			tasks: [{
+				id: "223231B2C555F23C"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["24FBD0678ECC293A"]
+			id: "2CE848599231C333"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6041330B6680321C"
+				table_id: 558561179958846036L
+				type: "choice"
+			}]
+			subtitle: "嗯...看起来像面包..."
+			tasks: [{
+				id: "22E15904CC883229"
+				item: "cmi:mechanism_mold"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["65F2C054D52EB96B"]
+			icon: "create:large_water_wheel"
+			id: "010A13B6C2954C69"
+			subtitle: "下一代水车仙人"
+			tasks: [
+				{
+					id: "6142060D6BC72388"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+				{
+					id: "54B98A8B98F4256E"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "7EE273A6BE6129BF"
+					item: "immersiveengineering:waterwheel_segment"
+					type: "item"
+				}
+			]
+			x: -14.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["65F2C054D52EB96B"]
+			id: "179FB9DD8855E255"
+			rewards: [{
+				count: 8
+				id: "5E5A0301B4442E3B"
+				item: "create:white_sail"
+				type: "item"
+			}]
+			tasks: [{
+				id: "34DE6CCC182816DE"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["3B5ADA1051DE6F9A"]
+			id: "46163FE283604AC6"
+			subtitle: "是的还有个Pro Max"
+			tasks: [{
+				id: "76CF67FE710507C3"
+				item: "cmi:advanced_spout"
+				type: "item"
+			}]
+			x: -4.0d
 			y: 19.5d
 		}
 	]

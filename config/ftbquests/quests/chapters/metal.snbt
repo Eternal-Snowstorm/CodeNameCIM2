@@ -1080,7 +1080,7 @@
 				type: "checkmark"
 			}]
 			title: "铝 660°C"
-			x: -5.5d
+			x: -1.5d
 			y: 2.5d
 		}
 		{
@@ -1162,8 +1162,8 @@
 				title: "锡 232°C"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 2.5d
+			x: 0.5d
+			y: 1.5d
 		}
 		{
 			icon: "thermal:lead_ingot"
@@ -1178,7 +1178,7 @@
 				title: "铅 328°C"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: 0.5d
 			y: 2.5d
 		}
 		{
@@ -1194,7 +1194,7 @@
 				title: "锌 420°C"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -0.5d
 			y: 2.5d
 		}
 		{
@@ -1258,7 +1258,7 @@
 				title: "安山合金 760°C"
 				type: "checkmark"
 			}]
-			x: -6.5d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
@@ -1290,7 +1290,7 @@
 				title: "青铜 820°C"
 				type: "checkmark"
 			}]
-			x: -7.5d
+			x: -3.5d
 			y: 2.5d
 		}
 		{
@@ -1532,70 +1532,6 @@
 			}]
 			x: -0.5d
 			y: -8.5d
-		}
-		{
-			icon: "cmi:potassium_ingot"
-			id: "47E2A229710885D5"
-			rewards: [{
-				id: "048B00F85058E294"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "21D2ED2A2BF143E6"
-				title: "钾 64°C"
-				type: "checkmark"
-			}]
-			x: 0.5d
-			y: 2.5d
-		}
-		{
-			icon: "cmi:sodium_ingot"
-			id: "03AC4162234B22EB"
-			rewards: [{
-				id: "3C98D1B8936AD9FD"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2938060C35A994EE"
-				title: "钠 98°C"
-				type: "checkmark"
-			}]
-			x: -0.5d
-			y: 2.5d
-		}
-		{
-			icon: "cmi:calcium_ingot"
-			id: "72F5C0445DC32FAA"
-			rewards: [{
-				id: "2AA161310662C763"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "50115D1F8C265CF7"
-				title: "钙 842°C"
-				type: "checkmark"
-			}]
-			x: 0.5d
-			y: 1.5d
-		}
-		{
-			icon: "cmi:magnesium_ingot"
-			id: "1451B0E485EB917F"
-			rewards: [{
-				id: "321B71A83A30619F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "6D963898C65F68E0"
-				title: "镁 650°C"
-				type: "checkmark"
-			}]
-			x: -4.5d
-			y: 2.5d
 		}
 		{
 			icon: "mekanism:ingot_refined_glowstone"
@@ -2112,6 +2048,17 @@
 			}]
 			x: 12.0d
 			y: -1.5d
+		}
+		{
+			icon: "cmi:titanium_ingot"
+			id: "6BA7014682D46107"
+			tasks: [{
+				id: "3F299B6B310FEF67"
+				title: "钛"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -5.5d
 		}
 	]
 	title: "金属熔点与燃料纵览"

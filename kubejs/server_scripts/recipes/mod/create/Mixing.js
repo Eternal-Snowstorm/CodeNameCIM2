@@ -122,17 +122,6 @@ ServerEvents.recipes((event) => {
 		Fluid.of("minecraft:water", 500)
 	])
 
-	// 青铜(超前期配方)
-	create.mixing(Fluid.of("tconstruct:molten_bronze", 90), [
-		"2x #forge:ingots/copper",
-		"2x #forge:ingots/tin"
-	]).heatRequirement(global.HeatLevel["grilled"])
-
-	create.mixing(Fluid.of("tconstruct:molten_bronze", 90), [
-		"2x #forge:raw_materials/copper",
-		"2x #forge:raw_materials/tin"
-	]).heatRequirement(global.HeatLevel["grilled"])
-
 	// 墨囊
 	create.mixing("2x minecraft:ink_sac", [
 		Fluid.of("minecraft:water", 250),
