@@ -96,7 +96,7 @@ CMI Dev.json
 !/config/blockswap
 !/config/drippyloadingscreen/
 !/config/fancymenu/
-!/config/ftbquests/
+!/config/ftbquests/**
 !/config/jade/
 !/config/jei/
 !/config/immersiveengineering-client.toml
