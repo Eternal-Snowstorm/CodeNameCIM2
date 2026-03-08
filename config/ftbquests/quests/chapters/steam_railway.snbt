@@ -1,0 +1,651 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_railway"
+	group: "050255AE19A93344"
+	icon: "create:track_station"
+	id: "677DD93464AC2B4A"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["52AE29C9BB2B6F00"]
+			id: "2F00DD29F68238BA"
+			subtitle: "使用冶炼炉制作合金"
+			tasks: [
+				{
+					count: 8L
+					id: "0401B1B216CBE1B4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/bronze"
+						}
+					}
+					title: "青铜锭"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3DEAF74096E11288"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/brass"
+						}
+					}
+					title: "黄铜锭"
+					type: "item"
+				}
+			]
+			title: "非常重要的合金!"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2E72074B83610585"]
+			icon: "tconstruct:smeltery_controller"
+			id: "52AE29C9BB2B6F00"
+			rewards: [{
+				count: 32
+				id: "24C0DB749E0A69D4"
+				item: "tconstruct:seared_bricks"
+				type: "item"
+			}]
+			subtitle: "现在不要以后也得要"
+			tasks: [
+				{
+					id: "16D1FB7A773FC1D3"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "6E127B51EF4A27C2"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "15A01D75567DD5E3"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+			]
+			title: "冶炼炉"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2F00DD29F68238BA"
+				"25B06B6489D3FB78"
+				"2CE848599231C333"
+			]
+			id: "6BA8D6727D497F84"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1CDC107B76CE8F87"
+				item: "cmi:railway_mechanism"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2FE21275DACCE692"]
+			id: "25B06B6489D3FB78"
+			rewards: [{
+				count: 16
+				id: "0464910DBDAA4482"
+				item: "cmi:dense_sturdy_sheet"
+				type: "item"
+			}]
+			subtitle: "中间就像磁铁一样"
+			tasks: [{
+				id: "64F12B529477C62C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/dense_obsidian"
+					}
+				}
+				title: "致密坚固板"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E72074B83610585"]
+			id: "2FE21275DACCE692"
+			rewards: [{
+				count: 32
+				id: "507F84919276B4FE"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			subtitle: "本质上就是黑曜石板"
+			tasks: [{
+				id: "2F61B9E8D79DAE69"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/obsidian"
+					}
+				}
+				title: "坚固板"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6FE26470A8A3B7B1"]
+			icon: "create:track_station"
+			id: "2E72074B83610585"
+			tasks: [{
+				id: "4AD5422AE72805BE"
+				title: "汽鸣铁道"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6BA8D6727D497F84"]
+			icon: "create:controls"
+			id: "58F03784745D9151"
+			rewards: [{
+				count: 4
+				id: "711479A47664BDAF"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					id: "3537A7A71306AEB3"
+					item: "railways:track_coupler"
+					type: "item"
+				}
+				{
+					id: "03738EBAE6036F28"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "156174D14A490237"
+					item: "create:controls"
+					type: "item"
+				}
+				{
+					id: "6E111E41FCDEFEB3"
+					item: "create:track_observer"
+					type: "item"
+				}
+				{
+					id: "723C1D283B51E406"
+					item: "create:track_signal"
+					type: "item"
+				}
+			]
+			title: "列车套件"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2FE21275DACCE692"]
+			id: "7C2BCD18D1BCEEC9"
+			subtitle: "你需要一只生物, 烈焰人燃烧室也可以"
+			tasks: [{
+				id: "66467CCD076737AE"
+				item: "create:schedule"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"58F03784745D9151"
+				"7C2BCD18D1BCEEC9"
+			]
+			description: [
+				"&e镍矿&r、&b银矿&r与&c钒矿&r将&l不再自然生成&r。你需要在野外寻找它们对应的矿点来获取资源"
+				"其中，&e镍矿&r与&b银矿&r的矿点会在&a主世界&r随机生成，而&c钒矿&r的矿点则&e&l只会&r&r在&4下界&r随机生成"
+				""
+				"由于矿点与你的基地之间距离较远，你需要搭建&d列车网络&r来运输这些矿产资源"
+				"如果运气不错，你还能在&a主世界&r发现&6油页岩&r矿点；该矿点会产出&5沥青&r，而&5沥青&r可以作为列车的燃料使用"
+				""
+				"&l&b向后翻页可以查看这些矿点的图片&r&r"
+				""
+				"{@pagebreak}"
+				"&e镍矿&r"
+				"占位符(需要将这一行替换成图片)"
+				"{@pagebreak}"
+				"&b银矿&r"
+				"占位符(需要将这一行替换成图片)"
+				"{@pagebreak}"
+				"&c钒矿&r"
+				"占位符(需要将这一行替换成图片)"
+			]
+			id: "211642A0702308A1"
+			size: 1.5d
+			subtitle: "列车是不得不品的一环"
+			tasks: [
+				{
+					id: "74FBEEDABA81E015"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/nickel"
+						}
+					}
+					title: "粗镍"
+					type: "item"
+				}
+				{
+					id: "6E8EBF2A961EB705"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/silver"
+						}
+					}
+					title: "粗银"
+					type: "item"
+				}
+				{
+					id: "5115E1CC1FF5B62F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/vanadium"
+						}
+					}
+					title: "粗钒"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2F00DD29F68238BA"]
+			id: "5BB078BA5116FE68"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "有点烫手, 拿在手上有一点火热"
+			tasks: [{
+				id: "76B962C480950865"
+				item: "cmi:bronze_mechanism"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BB078BA5116FE68"]
+			description: [
+				"在&c燃烧室&r内放入燃料，并在上方的&b锅炉&r内注入水。等待片刻后&b锅炉&r便会开始产生&6蒸汽&r"
+				"你可以使用管道将&6蒸汽&r导出并输送到其他设备中使用"
+			]
+			id: "12CEF39F02D4EB3A"
+			subtitle: "&m只是方式越来越复杂&r"
+			tasks: [
+				{
+					id: "31DB2A85FFBF639B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:burner"
+						}
+					}
+					title: "锅炉燃烧室"
+					type: "item"
+				}
+				{
+					id: "53C7AE81FE17F612"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:boiler"
+						}
+					}
+					title: "蒸汽锅炉"
+					type: "item"
+				}
+			]
+			title: "人类的科技就是烧开水..."
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12CEF39F02D4EB3A"]
+			description: [
+				"向&6蒸汽引擎&r中泵入蒸汽，可以带动其前方两格内的&b蒸汽飞轮&r旋转并&d产生应力&r"
+				"这种方式能够提供&d非常可观&r的应力量，在解锁&e大型蒸汽锅炉&r和&c燃油引擎&r之前尤为实用"
+				"(你不选你就当水车仙人好了, 你不用有的是人用)"
+			]
+			id: "5227B74E4F8FF3F5"
+			subtitle: "&m不然这水不是白烧了&r"
+			tasks: [
+				{
+					id: "5E38B5BC109A214B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:steam_engine"
+						}
+					}
+					title: "飞轮引擎"
+					type: "item"
+				}
+				{
+					id: "3BAADF2990DEFD8F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steampowered:flywheel"
+						}
+					}
+					title: "蒸汽飞轮"
+					type: "item"
+				}
+			]
+			title: "...当然烧了开水也得用"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BB078BA5116FE68"]
+			description: [
+				"&l&4下界的环境与主世界截然不同&r&r。那里没有可供呼吸的氧气，炽热而稀薄的空气无法维持生命。如果贸然进入，很快就会因缺氧而窒息而亡"
+				""
+				"若想在下界自由活动，你需要装备&b&l潜水头盔&r与&c&l背罐&r"
+				"&e背罐顶部传入应力&r可以持续压缩并补充内部气体，从而为佩戴者提供可呼吸的空气"
+				"借助这套装置，你不仅可以在&4下界&r中安全呼吸，也能够在&b水中&r长时间活动"
+				""
+				"如果有条件还是&l非常建议&r携带两个&e背罐&r在身上用于紧急情况"
+			]
+			id: "08A35C2D450B20F3"
+			shape: "hexagon"
+			subtitle: "亿万人, 必须呼吸"
+			tasks: [
+				{
+					id: "07C1B9885D628609"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:diving_helmets"
+						}
+					}
+					title: "潜水头盔"
+					type: "item"
+				}
+				{
+					id: "53DC99CD242CB111"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:backtanks"
+						}
+					}
+					title: "背罐"
+					type: "item"
+				}
+			]
+			title: "潜水套装"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["08A35C2D450B20F3"]
+			id: "667B8EFCF3ACD51D"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "6421E2122AF59746"
+				title: "访问下界"
+				type: "dimension"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["667B8EFCF3ACD51D"]
+			id: "2802F9503EB14965"
+			tasks: [
+				{
+					id: "48CBA68351FB5DCC"
+					item: "minecraft:magma_block"
+					type: "item"
+				}
+				{
+					id: "5BBBEB9AF7A2FF30"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:soul_sand"
+								}
+								{
+									Count: 1b
+									id: "minecraft:soul_soil"
+								}
+							]
+						}
+					}
+					title: "灵魂沙土"
+					type: "item"
+				}
+				{
+					id: "1679D021A6195D70"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:netherrack"
+						}
+					}
+					title: "下界岩"
+					type: "item"
+				}
+			]
+			title: "下界的一些材料"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2802F9503EB14965"]
+			id: "470156018DA261F4"
+			subtitle: "&m更火热的水泥&r"
+			tasks: [
+				{
+					id: "48E5C9079BDE5D65"
+					item: { Count: 64, id: "tconstruct:nether_grout" }
+					type: "item"
+				}
+				{
+					id: "45779C24F77CF39B"
+					item: "tconstruct:scorched_brick"
+					type: "item"
+				}
+			]
+			title: "熔铸炉碎片"
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["470156018DA261F4"]
+			id: "52C9EDFCFAEADA82"
+			tasks: [{
+				id: "04A753C43FC7D413"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["470156018DA261F4"]
+			id: "4A19D6FEC975D2B9"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "或许可以当暖宝宝"
+			tasks: [{
+				id: "1860BC767D34F109"
+				item: "cmi:nether_mechanism"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4A19D6FEC975D2B9"
+				"470156018DA261F4"
+			]
+			id: "5095EB55709B5982"
+			rewards: [
+				{
+					id: "0ACE9A42022D1627"
+					item: "tconstruct:scorched_table"
+					type: "item"
+				}
+				{
+					id: "764E9AC4268F7A5F"
+					item: "tconstruct:scorched_basin"
+					type: "item"
+				}
+			]
+			subtitle: "大炉子分支"
+			tasks: [
+				{
+					id: "7FCFDEC97D4EA032"
+					item: "tconstruct:foundry_controller"
+					type: "item"
+				}
+				{
+					id: "0990F9AD4BA20AE7"
+					item: "tconstruct:scorched_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "1E7CFF434B0E7ED2"
+					item: "tconstruct:scorched_drain"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "292C1DEECD13C109"
+					item: "tconstruct:scorched_faucet"
+					type: "item"
+				}
+			]
+			title: "熔铸炉"
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4A19D6FEC975D2B9"]
+			id: "04004B46385E2AF2"
+			tasks: [{
+				id: "01452F41DB130491"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["12CEF39F02D4EB3A"]
+			id: "3D5497B8DC0ED5B6"
+			tasks: [{
+				id: "4DA038AAA531C439"
+				item: "mekanism:steam_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6FE26470A8A3B7B1"]
+			id: "354FD58AE7B802BC"
+			tasks: [{
+				id: "680C74AB729DB665"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/sulfur"
+					}
+				}
+				title: "硫粉"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"5BB078BA5116FE68"
+				"5E096A2AD55E8040"
+			]
+			id: "78250BAEED3506BA"
+			tasks: [{
+				id: "67F40EB3F00CDCA9"
+				item: "vintageimprovements:vacuum_chamber"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"354FD58AE7B802BC"
+				"3D5497B8DC0ED5B6"
+				"78250BAEED3506BA"
+			]
+			id: "4C2F1D5F0FAA50F3"
+			subtitle: "更高效的方式"
+			tasks: [{
+				id: "3B1D5348B5A8BD6B"
+				item: "cmi:cured_rubber_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4C2F1D5F0FAA50F3"]
+			id: "74A6E21C20513CEE"
+			tasks: [{
+				id: "00AC5371336EC8A7"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+	]
+	title: "汽鸣铁道"
+}

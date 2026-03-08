@@ -1,0 +1,42 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "precision_component"
+	group: "050255AE19A93344"
+	icon: "cmi:charged_amethyst"
+	id: "50ABC60C1E3D3498"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"06012DC3A4BBF58B"
+				"534E0D3A9FB9955E"
+			]
+			id: "662A1304331857B0"
+			size: 2.0d
+			tasks: [{
+				id: "6455719A1EA6187E"
+				item: "cmi:coil_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"29C10567663F027F"
+				"6865ED5A1D93E5EA"
+			]
+			id: "534E0D3A9FB9955E"
+			tasks: [{
+				id: "581887E44AC95FCF"
+				item: "immersiveengineering:coil_lv"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+	]
+	title: "精智元件"
+}
