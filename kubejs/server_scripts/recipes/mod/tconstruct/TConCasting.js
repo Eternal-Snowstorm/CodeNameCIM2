@@ -144,10 +144,18 @@ ServerEvents.recipes((event) => {
 			.cooling_time(35)
 	})
 
+	// 石板
 	tconstruct.casting_table("cmi:stone_plate")
 		.cast("#tconstruct:casts/single_use/plate")
 		.fluid(Fluid.of("minecraft:lava", 100))
 		.cooling_time(20 * 2)
 		.cast_consumed(true)
 
+	// 列车时刻表
+	tconstruct.casting_table("create:schedule")
+		.fluid(Fluid.of("tconstruct:molten_gold", 45))
+		.cast("#forge:plates/obsidian")
+		.cooling_time(20)
+		.cast_consumed(true)
+		.id("create:crafting/kinetics/schedule")
 })

@@ -252,13 +252,6 @@ ServerEvents.recipes((event) => {
 		"result": Fluid.of("cmi:light_aromatics", 100).toJson()
 	})
 
-	// 乙醇
-	immersiveengineering.fermenter(
-		"#forge:fermentable",
-		Fluid.of("immersiveengineering:ethanol", 100),
-		Item.of("createaddition:biomass").withChance(0.1)
-	).energy(2400)
-
 	// 苯 乙烯
 	thermal.refinery([
 		Fluid.of("cmi:benzene", 50),

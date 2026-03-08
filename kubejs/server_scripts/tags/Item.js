@@ -87,6 +87,16 @@ ServerEvents.tags("item", (event) => {
 		.add("functionalstorage:fluid_2")
 		.add("functionalstorage:fluid_4")
 
+	// 背罐
+	event.get("create:backtanks")
+		.add("create:copper_backtank")
+		.add("create:netherite_backtank")
+
+	// 潜水头盔
+	event.get("create:diving_helmets")
+		.add("create:copper_diving_helmet")
+		.add("create:netherite_diving_helmet")
+
 	// 奶酪
 	event.get("forge:cheese")
 		.add("ad_astra:cheese")

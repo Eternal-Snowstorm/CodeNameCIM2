@@ -27,22 +27,20 @@ ServerEvents.recipes((event) => {
 	})
 
 	global.dyeColorGroup.forEach((color) => {
-
-		event.forEachRecipe({ input: `minecraft:${color}_dye` }, (recipe) => {
+		event.forEachRecipe({
+			input: `minecraft:${color}_dye`
+		}, (recipe) => {
 			if (!recipe.hasOutput(`#forge:dyes`)) {
-				recipe.replaceInput(
-					`minecraft:${color}_dye`,
-					`#forge:dyes/${color}`
-				)
+				recipe.replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`)
 			}
 		})
-
-		event.replaceInput({
-			mod: "ad_astra"
-		}, "ad_astra:steel_rod", "#forge:rods/steel")
-
-		event.replaceInput({
-			mod: "ad_astra"
-		}, "ad_astra:iron_rod", "#forge:rods/iron")
 	})
+
+	event.replaceInput({
+		mod: "ad_astra"
+	}, "ad_astra:steel_rod", "#forge:rods/steel")
+
+	event.replaceInput({
+		mod: "ad_astra"
+	}, "ad_astra:iron_rod", "#forge:rods/iron")
 })

@@ -211,6 +211,7 @@
 				"07FD61829D499994"
 			]
 			id: "17AEC8F5B7867AFE"
+			subtitle: "&m原本叫水泥来着&r"
 			tasks: [{
 				count: 16L
 				id: "36A475E42CA7D3E6"
@@ -338,7 +339,7 @@
 						value: "forge:sand"
 					}
 				}
-				title: "Any #forge:sand"
+				title: "沙子"
 				type: "item"
 			}]
 			x: 1.0d
@@ -368,7 +369,7 @@
 						value: "forge:clay"
 					}
 				}
-				title: "Any #forge:clay"
+				title: "黏土球"
 				type: "item"
 			}]
 			x: 1.0d
@@ -469,7 +470,7 @@
 						value: "forge:prisms/polished_quartz"
 					}
 				}
-				title: "Any #forge:prisms/polished_quartz"
+				title: "磨制石英棱镜"
 				type: "item"
 			}]
 			x: 5.5d
@@ -487,7 +488,7 @@
 						value: "forge:gems/quartz"
 					}
 				}
-				title: "Any #forge:gems/quartz"
+				title: "石英"
 				type: "item"
 			}]
 			x: 4.0d

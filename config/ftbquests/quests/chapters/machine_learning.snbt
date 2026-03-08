@@ -146,7 +146,7 @@
 				type: "observation"
 			}]
 			title: "橡胶树"
-			x: -21.0d
+			x: -20.25d
 			y: 19.5d
 		}
 		{
@@ -191,7 +191,14 @@
 			id: "3942E154F0734013"
 			tasks: [{
 				id: "69F09FA657F1E187"
-				item: "create:raw_zinc"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/zinc"
+					}
+				}
+				title: "粗锌"
 				type: "item"
 			}]
 			x: -16.5d
@@ -383,7 +390,7 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: 18.0d
 		}
 		{
@@ -474,7 +481,7 @@
 				title: "粗铁"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -11.0d
 			y: 16.5d
 		}
 		{
@@ -528,7 +535,7 @@
 				type: "item"
 			}]
 			title: "橡胶原木"
-			x: -18.0d
+			x: -17.5d
 			y: 19.5d
 		}
 		{
@@ -540,7 +547,7 @@
 				item: "thermal:rubberwood_planks"
 				type: "item"
 			}]
-			x: -16.0d
+			x: -15.5d
 			y: 19.5d
 		}
 		{
@@ -607,7 +614,14 @@
 			subtitle: "要酿醋，就要先获得稻米"
 			tasks: [{
 				id: "01EE3E33CD71F8C7"
-				item: "kaleidoscope_cookery:rice"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:seeds/rice"
+					}
+				}
+				title: "稻米"
 				type: "item"
 			}]
 			x: -12.5d
@@ -669,25 +683,6 @@
 			}]
 			x: -6.0d
 			y: 22.5d
-		}
-		{
-			dependencies: ["26DFF62383774404"]
-			icon: "thermal:rubberwood_log"
-			id: "65F44F8EF0876EE1"
-			size: 1.5d
-			subtitle: "应该不难找"
-			tasks: [{
-				icon: "thermal:rubberwood_log"
-				id: "6A1AFA9CD5D9E5CD"
-				observe_type: 1
-				timer: 0L
-				title: "观察 橡胶原木"
-				to_observe: "thermal:rubberwood"
-				type: "observation"
-			}]
-			title: "橡胶树"
-			x: -21.0d
-			y: 19.5d
 		}
 		{
 			dependencies: ["26DFF62383774404"]
@@ -808,7 +803,7 @@
 				title: "铁粉"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.5d
 			y: 16.5d
 		}
 		{
@@ -834,7 +829,7 @@
 				title: "工业铁锭"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -6.5d
 			y: 18.0d
 		}
 		{
@@ -846,7 +841,7 @@
 				item: "cmi:molten_industrial_iron_bucket"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -8.0d
 			y: 16.5d
 		}
 		{
