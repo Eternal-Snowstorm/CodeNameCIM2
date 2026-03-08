@@ -36,8 +36,15 @@ let $ThermalCoreConfig =
 	Java.loadClass("cofh.thermal.core.common.config.ThermalCoreConfig")
 
 StartupEvents.postInit((event) => {
-
+	/**
+	 * @type {Internal.Supplier_<Boolean>}
+	 * @returns 
+	 */
 	const TRUE = () => true
+	/**
+	 * @type {Internal.Supplier_<Boolean>}
+	 * @returns 
+	 */
 	const FALSE = () => false
 
 	// 强化插件槽位数量(当前9)
