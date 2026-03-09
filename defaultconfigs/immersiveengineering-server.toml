@@ -229,7 +229,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every metal press recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.3
 
 	[machines.crusher]
 		#A modifier to apply to the energy costs of every crusher recipe
@@ -237,7 +237,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every crusher recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.3
 
 	[machines.squeezer]
 		#A modifier to apply to the energy costs of every squeezer recipe
@@ -245,7 +245,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every squeezer recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.3
 
 	[machines.fermenter]
 		#A modifier to apply to the energy costs of every fermenter recipe
@@ -253,7 +253,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every fermenter recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.3
 
 	[machines.refinery]
 		#A modifier to apply to the energy costs of every refinery recipe
@@ -266,7 +266,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every auto workbench recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.3
 
 	[machines.bottling_machine]
 		#A modifier to apply to the energy costs of every bottling machine recipe
@@ -274,7 +274,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every bottling machine recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.3
 
 	[machines.mixer]
 		#A modifier to apply to the energy costs of every mixer recipe
@@ -282,7 +282,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every mixer recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.3
 
 	[machines.sawmill]
 		#A modifier to apply to the energy costs of every sawmill recipe
@@ -290,7 +290,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every sawmill recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.3
 
 	[machines.arc_furnace]
 		#A modifier to apply to the energy costs of every arc furnace recipe
@@ -298,7 +298,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every arc furnace recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.3
 		#The maximum amount of damage Graphite Electrodes can take. While the furnace is working, electrodes sustain 1 damage per tick, so this is effectively the lifetime in ticks. The default value of 96000 makes them last for 8 consecutive ingame days
 		#Range: > 1
 		electrodeDamage = 96000
@@ -481,10 +481,10 @@
 [tools]
 	#The maximum durability of the Engineer's Hammer. Used up when hammering ingots into plates.
 	#Range: > 1
-	hammer_durability = 1024
+	hammer_durability = 100
 	#The maximum durability of the Wirecutter. Used up when cutting plates into wire.
 	#Range: > 1
-	cutter_durability = 1024
+	cutter_durability = 250
 
 	[tools.bullet_damage]
 		#The amount of base damage a Casull Cartridge inflicts

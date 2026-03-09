@@ -307,5 +307,5 @@ new OreBlock("etrium", "diamond", 5)
 
 // 钛
 new OreBlock("titanium", "diamond", 20)
-	.appearance(0x71EAFF, 1)
+	.appearance(0xE2B1E3, 1)
 	.galena()

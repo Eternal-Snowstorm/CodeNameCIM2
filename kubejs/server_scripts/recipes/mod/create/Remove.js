@@ -37,15 +37,17 @@ ServerEvents.recipes((event) => {
 		"create:splashing/sand",
 		"create:splashing/red_sand",
 		"ratatouille:freezing/chocolate_mold_filled",
-		"ratatouille:freezing"
+		"ratatouille:freezing",
+		"createdeco:compacting/industrial_iron_ingot",
+		"create:crafting/materials/rose_quartz"
 	]
-	global.dyeColorGroup.forEach((color) => {
-		removeRecipeIds.push(`createdeco:${color}_shipping_container`)
-	})
-
 	removeRecipeIds.forEach((id) => {
 		event.remove({
 			id: id
 		})
+	})
+
+	global.dyeColorGroup.forEach((color) => {
+		removeRecipeIds.push(`createdeco:${color}_shipping_container`)
 	})
 })

@@ -12,8 +12,9 @@
 			dependencies: [
 				"06012DC3A4BBF58B"
 				"534E0D3A9FB9955E"
-				"5F0BB5EE6AFEE840"
 				"6CDA351D1F52C170"
+				"27A9E301280210E8"
+				"14470BD1A85DE01D"
 			]
 			id: "662A1304331857B0"
 			shape: "gear"
@@ -43,8 +44,8 @@
 				item: "cmi:motor_rotor"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			description: [
@@ -52,7 +53,7 @@
 				"工业铁的可塑性和韧性极佳，是一种理想的&a冲压模具&r与&a设备外壳&r材料"
 			]
 			id: "17DC0AE5C56048CF"
-			subtitle: "获得工业铁"
+			subtitle: "世界其实是铁做的"
 			tasks: [{
 				count: 8L
 				id: "541933A6F631A4D1"
@@ -63,14 +64,19 @@
 						value: "forge:ingots/industrial_iron"
 					}
 				}
-				title: "Any #forge:ingots/industrial_iron"
+				title: "工业铁锭"
 				type: "item"
 			}]
 			title: "韧性强大的铁制品"
-			x: -5.5d
-			y: 0.0d
+			x: -4.5d
+			y: 1.0d
 		}
 		{
+			dependencies: [
+				"5BE72CC5C35C3BF0"
+				"0FD5009A9709ACE5"
+				"52AE29C9BB2B6F00"
+			]
 			description: [
 				"将&e金&r和&b银&r混合后，&e琥珀金&r就出现了"
 				"作为一种&6导电性能还不错&r的合金材料，琥珀金被大量用于&9电力传输&r与&9用电器制造&r"
@@ -88,14 +94,18 @@
 						value: "forge:ingots/electrum"
 					}
 				}
-				title: "Any #forge:ingots/electrum"
+				title: "琥珀金锭"
 				type: "item"
 			}]
 			title: "琥珀金"
-			x: -3.0d
-			y: -2.0d
+			x: -4.5d
+			y: -1.0d
 		}
 		{
+			dependencies: [
+				"1EF0004B28066AF0"
+				"7C2DCC26298ACC51"
+			]
 			id: "6CDA351D1F52C170"
 			subtitle: "铁傀儡也许会喜欢这种饮料"
 			tasks: [{
@@ -104,8 +114,517 @@
 				type: "item"
 			}]
 			title: "红石酸水冷剂"
-			x: -3.0d
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			id: "7C2DCC26298ACC51"
+			tasks: [{
+				id: "069C486393CA376A"
+				item: "tconstruct:molten_lead_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			id: "1EF0004B28066AF0"
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				id: "14D503AC6E5D88B8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/redstone"
+					}
+				}
+				title: "红石粉"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["68A82E2E7552EF90"]
+			description: [
+				"使用&6自动化工程师装配台&r可以自动化处理&6工程师装配台&r内的蓝图配方。只需要选择配方后通上电并且源源不断往里输入原料便可实现自动化"
+				""
+				"同时在本整合包中，&6沉浸工程&r的大部分机器的&b工作时间&r都被调整为原版的&c30%&r"
+				""
+				"这意味着这些设备的&d处理速度&r相比原版得到了&6显著提升&r，大多数配方都可以在更短的时间内完成"
+				""
+				"换句话说，你现在使用&6沉浸工程&r的机器时，将会获得大约&b3.3倍&r的处理效率，从而更快地推进你的&6自动化生产&r"
+				"{image:cmi:textures/images/ie/auto_workbench.png width:173 height:161 align:center}"
+			]
+			icon: "immersiveengineering:auto_workbench"
+			id: "6ED98C2148C69BD7"
+			rewards: [{
+				id: "5D42BD25D845A30B"
+				item: {
+					Count: 1
+					id: "mbtool:mbtool"
+					tag: {
+						energy: 10000000
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "?!强强!?"
+			tasks: [{
+				id: "159769BF64D334FE"
+				title: "自动化工程师装配台"
+				type: "checkmark"
+			}]
+			title: "真空管怎么自动化"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["66F1898DB743301D"]
+			id: "68A82E2E7552EF90"
+			subtitle: "不会爆炸"
+			tasks: [{
+				id: "52C352DB3560CDBE"
+				item: "immersiveengineering:electron_tube"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5F0BB5EE6AFEE840"]
+			id: "27A9E301280210E8"
+			tasks: [{
+				id: "01561824A41E7C8E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/electrum"
+					}
+				}
+				title: "琥珀金板"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["211642A0702308A1"]
+			id: "66F1898DB743301D"
+			tasks: [{
+				id: "49ABD38B1A997B63"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/nickel"
+					}
+				}
+				title: "镍锭"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"68A82E2E7552EF90"
+				"6CCEECDF932F5041"
+			]
+			id: "14470BD1A85DE01D"
+			tasks: [{
+				id: "58DFE49B997026E5"
+				item: "cmi:engineering_mechanism_part"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"66F1898DB743301D"
+				"52AE29C9BB2B6F00"
+			]
+			description: [
+				"将&6铜&r与&e镍&r按照&b1:1&r的比例放入&6冶炼炉&r中进行合金，即可得到新的合金材料"
+				"这种合金在工业生产中用途广泛，是许多&6机械部件&r与&d高级材料&r的重要原料"
+			]
+			id: "6CCEECDF932F5041"
+			subtitle: "又是一种合金"
+			tasks: [{
+				id: "3FD660B699767BA7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/constantan"
+					}
+				}
+				title: "康铜锭"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6ED98C2148C69BD7"
+				"7B311FB3BDA3F3DD"
+			]
+			id: "10FE6C8E2FB59714"
+			rewards: [{
+				id: "21C223335813DCD2"
+				item: "immersiveengineering:electric_lantern"
+				type: "item"
+			}]
+			subtitle: "战胜黑暗!"
+			tasks: [
+				{
+					id: "52FAD467EC2F5149"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "thermal:dynamos"
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:coal_generator"
+								}
+								{
+									Count: 1b
+									id: "createaddition:alternator"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:dynamo"
+								}
+							]
+						}
+					}
+					title: "初级发电机"
+					type: "item"
+				}
+				{
+					id: "1115BECA890D4862"
+					item: "immersiveindustry:electrolyzer"
+					type: "item"
+				}
+			]
+			title: "是时候发电了"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["541572E2CD225DD7"]
+			id: "7B311FB3BDA3F3DD"
+			rewards: [{
+				count: 9
+				id: "162D9B48E6956223"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			tasks: [{
+				count: 27L
+				id: "21BC356363B66D2A"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			title: "得把电存起来"
+			x: 2.5d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"211642A0702308A1"
+				"52C9EDFCFAEADA82"
+			]
+			id: "541572E2CD225DD7"
+			tasks: [{
+				id: "2D97AE6C82E2AAF2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/vanadium"
+					}
+				}
+				title: "钒锭"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1EF0004B28066AF0"
+				"20227AC2A1D37ED9"
+			]
+			id: "1B38A75357F7EF12"
+			rewards: [{
+				id: "396BE158FA663225"
+				item: {
+					Count: 1
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "吃起来像玫瑰饼"
+			tasks: [{
+				id: "08AD1080513ED997"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4D6A6FE3DAF7BBB8"
+				"12610CFD86470A7D"
+			]
+			id: "20227AC2A1D37ED9"
+			rewards: [{
+				count: 8
+				id: "3A6645D1B46CAB49"
+				item: "cmi:pure_quartz_prism"
+				type: "item"
+			}]
+			subtitle: "闪闪发光"
+			tasks: [{
+				id: "5FF7D62CA37AC933"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/pure_quartz"
+					}
+				}
+				title: "纯净石英粉"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["343FF83E544BCB9D"]
+			id: "4D6A6FE3DAF7BBB8"
+			subtitle: "其实就是很努力的沙子"
+			tasks: [{
+				id: "142A07EDE8031266"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/quartz"
+					}
+				}
+				title: "石英粉"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["597C6E45B2C2B855"]
+			id: "12610CFD86470A7D"
+			subtitle: "沙子在分液池上走一圈"
+			tasks: [{
+				id: "3FF4ADB3B848C7B8"
+				item: "cmi:pure_sand_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			id: "343FF83E544BCB9D"
+			tasks: [{
+				id: "076D552EC1F0CCAE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/quartz"
+					}
+				}
+				title: "石英"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.5d
+		}
+		{
+			id: "597C6E45B2C2B855"
+			subtitle: "海滩上一大堆"
+			tasks: [{
+				id: "206625DAF8971359"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:sand"
+					}
+				}
+				title: "沙子"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"20227AC2A1D37ED9"
+				"095B15FB9AA8B9AB"
+			]
+			id: "44F9F9937CF8A987"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "132695F3E0780C15"
+				item: "cmi:photosensitive_mechanism"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1B38A75357F7EF12"]
+			id: "3E77FFA67682D3E5"
+			subtitle: "这个吃起来像玫瑰糖"
+			tasks: [{
+				id: "1C59D2BD79C8851D"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E77FFA67682D3E5"]
+			id: "095B15FB9AA8B9AB"
+			tasks: [{
+				id: "7B8D2F201A92B13C"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"095B15FB9AA8B9AB"
+				"2E5B74230C1BCE67"
+				"73251C27B7403CF9"
+			]
+			id: "1570B04A1D692BCC"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4DA8AB747C928DE4"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 4.5d
+		}
+		{
+			id: "2E5B74230C1BCE67"
+			subtitle: "或许木头是最方便的"
+			tasks: [{
+				id: "01361B7E9E043C9C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:incomplete_large_cogwheels"
+					}
+				}
+				title: "大齿轮(半成品)"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			id: "5BE72CC5C35C3BF0"
+			tasks: [{
+				id: "191124021833D620"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/silver"
+					}
+				}
+				title: "银锭"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			id: "0FD5009A9709ACE5"
+			tasks: [{
+				id: "21E0C29ECEA2CB6E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/gold"
+					}
+				}
+				title: "金锭"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			id: "73251C27B7403CF9"
+			tasks: [
+				{
+					id: "52EEF1C31EEB0D66"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:nuggets/brass"
+						}
+					}
+					title: "黄铜粒"
+					type: "item"
+				}
+				{
+					id: "4152B6EE857D360F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/brass"
+						}
+					}
+					title: "黄铜板"
+					type: "item"
+				}
+			]
+			title: "黄铜"
+			x: -13.5d
+			y: 4.5d
 		}
 	]
 	title: "精智元件"
