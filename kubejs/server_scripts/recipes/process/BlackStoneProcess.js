@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, thermal, thermal_extra, vintageimprovements, tconstruct, immersiveengineering, cmi, kubejs } = event.recipes
+	let { create, thermal, thermal_extra, cmi, kubejs } = event.recipes
 
 	// 黑石源质
 	thermal_extra.nitratic_igniter([
@@ -17,9 +17,9 @@ ServerEvents.recipes((event) => {
 		"cmi:alpha_blackstone_source"
 	])
 	// 磨制
-	cmi.grinding("thermal:ruby",
+	cmi.grinding("thermal:ruby", [
 		"cmi:source_ruby"
-	)
+	])
 	// 磨粉
 	thermal.pulverizer("thermal:ruby_dust", [
 		"#forge:gems/ruby"
@@ -67,9 +67,9 @@ ServerEvents.recipes((event) => {
 		"cmi:beta_blackstone_source"
 	])
 	// 磨制
-	cmi.grinding("thermal:sapphire",
+	cmi.grinding("thermal:sapphire", [
 		"cmi:source_sapphire"
-	)
+	])
 	// 磨粉
 	thermal.pulverizer("thermal:sapphire_dust", [
 		"#forge:gems/sapphire"
@@ -117,9 +117,9 @@ ServerEvents.recipes((event) => {
 		"cmi:gamma_blackstone_source"
 	])
 	// 磨制
-	cmi.grinding("minecraft:emerald",
+	cmi.grinding("minecraft:emerald", [
 		"cmi:source_emeraid"
-	)
+	])
 	//溶解
 	create.mixing(Fluid.of("cmi:cobalt_solution", 200), [
 		Fluid.of("mekanism:sulfuric_acid", 200),
@@ -160,12 +160,8 @@ ServerEvents.recipes((event) => {
 			"tag": "forge:redstone_acid"
 		},
 		"inputs": [
-			{
-				"tag": "cmi:delta_blackstone_source"
-			},
-			{
-				"tag": "forge:dusts/end_stone"
-			}
+			Ingredient.of("#cmi:delta_blackstone_source").toJson(),
+			Ingredient.of("#forge:dusts/end_stone").toJson()
 		],
 		"result": {
 			"amount": 200,
