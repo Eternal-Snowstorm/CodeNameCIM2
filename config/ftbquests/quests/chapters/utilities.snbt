@@ -45,7 +45,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "79AE46FA1AD74FED"
-					table_id: 9045507092957783316L
 					type: "choice"
 				}
 			]
@@ -89,7 +88,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "4E89B3FCD80460D6"
-					table_id: 708571964512047621L
 					type: "choice"
 				}
 			]

@@ -850,7 +850,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1317194CAF1EB6DF"
-				table_id: 558561179958846036L
 				type: "choice"
 			}]
 			subtitle: "一个非常重要的东西"
@@ -868,7 +867,6 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6041330B6680321C"
-				table_id: 558561179958846036L
 				type: "choice"
 			}]
 			subtitle: "嗯...看起来像面包..."
