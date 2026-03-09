@@ -207,10 +207,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"0CE693D306C1B691"
-				"32D57938C24F3E48"
-			]
+			dependencies: ["2D245A409C2C190B"]
 			description: ["煤炭也可以烧成焦炭"]
 			id: "12FAE452591719C6"
 			rewards: [{
@@ -231,20 +228,8 @@
 				title: "焦炭"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -2.5d
-		}
-		{
-			id: "32D57938C24F3E48"
-			subtitle: "燃烧时间是木炭的二倍"
-			tasks: [{
-				id: "1DC3AD319AD97070"
-				item: "minecraft:coal"
-				title: "煤炭"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -0.5d
+			x: -2.5d
+			y: -3.0d
 		}
 	]
 	title: "燃料"

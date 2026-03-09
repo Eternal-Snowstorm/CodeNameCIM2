@@ -85,6 +85,7 @@
 			id: "6BA8D6727D497F84"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "逛，吃，逛，吃"
 			tasks: [{
 				id: "1CDC107B76CE8F87"
 				item: "cmi:railway_mechanism"
@@ -275,6 +276,7 @@
 					type: "item"
 				}
 			]
+			title: "来自远方的矿石"
 			x: -0.5d
 			y: 5.5d
 		}

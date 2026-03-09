@@ -152,7 +152,7 @@ ServerEvents.recipes((event) => {
     }).id("immersiveengineering:crafting/wirecoil_redstone")
 
     // 红石通量线圈
-    kubejs.shaped("4x thermal:rf_coil", [
+    kubejs.shaped("2x thermal:rf_coil", [
         "BAC",
         "A A",
         "CAB"

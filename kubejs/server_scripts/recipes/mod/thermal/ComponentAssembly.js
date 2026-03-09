@@ -41,4 +41,18 @@ ServerEvents.recipes((event) => {
         "cmi:osmium_tile",
         "#forge:gears/chromeplated_steel"
     ]).id("mekanism:steel_casing")
+
+    // 通量线圈
+    addComponRecipe("thermal:rf_coil", [
+        "#forge:plates/gold",
+        "#forge:dusts/redstone",
+        "#forge:dusts/redstone"
+    ])
+
+    // 振动元件
+    addComponRecipe("thermalendergy:vibrating_core", [
+        "#forge:plates/cobalt",
+        "#forge:dusts/amethyst",
+        "#forge:dusts/amethyst"
+    ])
 })

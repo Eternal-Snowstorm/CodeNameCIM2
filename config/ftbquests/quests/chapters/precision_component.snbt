@@ -12,8 +12,11 @@
 			dependencies: [
 				"06012DC3A4BBF58B"
 				"534E0D3A9FB9955E"
+				"5F0BB5EE6AFEE840"
+				"6CDA351D1F52C170"
 			]
 			id: "662A1304331857B0"
+			shape: "gear"
 			size: 2.0d
 			tasks: [{
 				id: "6455719A1EA6187E"
@@ -27,15 +30,82 @@
 			dependencies: [
 				"29C10567663F027F"
 				"6865ED5A1D93E5EA"
+				"17DC0AE5C56048CF"
+			]
+			description: [
+				"电动机，非常优秀的动力源．我们可以把它与&9磁铁&r一起放进设备里进行驱动，从而有效的将部分设备&6小型化&r"
+				"当然，将电动机与其他设备零件结合制作成&e构件&r可以适配更多的应用场景"
 			]
 			id: "534E0D3A9FB9955E"
+			subtitle: "电磁感应的实际应用"
 			tasks: [{
-				id: "581887E44AC95FCF"
-				item: "immersiveengineering:coil_lv"
+				id: "422114AE4890E584"
+				item: "cmi:motor_rotor"
 				type: "item"
 			}]
 			x: -3.0d
 			y: 0.0d
+		}
+		{
+			description: [
+				"将铁进行&6进一步熔锻&r，清除其中的杂质后，一种更加柔韧的材料就出现了"
+				"工业铁的可塑性和韧性极佳，是一种理想的&a冲压模具&r与&a设备外壳&r材料"
+			]
+			id: "17DC0AE5C56048CF"
+			subtitle: "获得工业铁"
+			tasks: [{
+				count: 8L
+				id: "541933A6F631A4D1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/industrial_iron"
+					}
+				}
+				title: "Any #forge:ingots/industrial_iron"
+				type: "item"
+			}]
+			title: "韧性强大的铁制品"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"将&e金&r和&b银&r混合后，&e琥珀金&r就出现了"
+				"作为一种&6导电性能还不错&r的合金材料，琥珀金被大量用于&9电力传输&r与&9用电器制造&r"
+				"&4多准备一点&r琥珀金，你很快就知道为什么了"
+			]
+			id: "5F0BB5EE6AFEE840"
+			subtitle: "低电阻合金"
+			tasks: [{
+				count: 8L
+				id: "6D13E1209F08F9B9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/electrum"
+					}
+				}
+				title: "Any #forge:ingots/electrum"
+				type: "item"
+			}]
+			title: "琥珀金"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			id: "6CDA351D1F52C170"
+			subtitle: "铁傀儡也许会喜欢这种饮料"
+			tasks: [{
+				id: "62A8B729BB5A7F8B"
+				item: "immersiveengineering:redstone_acid_bucket"
+				type: "item"
+			}]
+			title: "红石酸水冷剂"
+			x: -3.0d
+			y: 2.0d
 		}
 	]
 	title: "精智元件"
