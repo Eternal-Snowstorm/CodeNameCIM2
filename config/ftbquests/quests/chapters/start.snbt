@@ -6,7 +6,7 @@
 	group: "050255AE19A93344"
 	icon: "tconstruct:seared_melter"
 	id: "7CF1214F39DD4E53"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

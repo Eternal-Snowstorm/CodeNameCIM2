@@ -5,7 +5,7 @@
 	group: "050255AE19A93344"
 	icon: "cmi:charged_amethyst"
 	id: "50ABC60C1E3D3498"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -156,7 +156,7 @@
 				"这意味着这些设备的&d处理速度&r相比原版得到了&6显著提升&r，大多数配方都可以在更短的时间内完成"
 				""
 				"换句话说，你现在使用&6沉浸工程&r的机器时，将会获得大约&b3.3倍&r的处理效率，从而更快地推进你的&6自动化生产&r"
-				"{image:cmi:textures/images/ie/auto_workbench.png width:173 height:161 align:center}"
+				"{image:cmi:textures/images/ie/auto_workbench.png width:163 height:151 align:center}"
 			]
 			icon: "immersiveengineering:auto_workbench"
 			id: "6ED98C2148C69BD7"
@@ -517,7 +517,6 @@
 		{
 			dependencies: ["3E77FFA67682D3E5"]
 			id: "095B15FB9AA8B9AB"
-			subtitle: "这个...算了这个麻嘴"
 			tasks: [{
 				id: "7B8D2F201A92B13C"
 				item: "create:electron_tube"
@@ -626,24 +625,6 @@
 			title: "黄铜"
 			x: -13.5d
 			y: 4.5d
-		}
-		{
-			dependencies: [
-				"1570B04A1D692BCC"
-				"662A1304331857B0"
-			]
-			hide_dependency_lines: true
-			icon: "createdeco:decal_warning"
-			id: "2F780DCD3CF6E022"
-			ignore_reward_blocking: true
-			size: 5.0d
-			tasks: [{
-				id: "1C64D03065B14370"
-				title: "做好心理准备!"
-				type: "checkmark"
-			}]
-			x: -10.0d
-			y: -2.5d
 		}
 	]
 	title: "精智元件"

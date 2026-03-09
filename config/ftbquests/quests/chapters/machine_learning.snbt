@@ -6,7 +6,7 @@
 	group: "050255AE19A93344"
 	icon: "create:large_cogwheel"
 	id: "6321CD3C9CD74246"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -611,7 +611,7 @@
 			description: ["我应该能在&6河边&f找到一些野生稻米，之后就可以自己种植了"]
 			hide_dependency_lines: true
 			id: "7DD1547C967EDD20"
-			subtitle: "唔～米饭～醪糟～"
+			subtitle: "要酿醋，就要先获得稻米"
 			tasks: [{
 				id: "01EE3E33CD71F8C7"
 				item: {
@@ -882,7 +882,7 @@
 			dependencies: ["65F2C054D52EB96B"]
 			icon: "create:large_water_wheel"
 			id: "010A13B6C2954C69"
-			subtitle: "你真的想当水车仙人么"
+			subtitle: "下一代水车仙人"
 			tasks: [
 				{
 					id: "6142060D6BC72388"
@@ -912,7 +912,6 @@
 				item: "create:white_sail"
 				type: "item"
 			}]
-			subtitle: "看看我吧，我变便宜了呜"
 			tasks: [{
 				id: "34DE6CCC182816DE"
 				item: "create:windmill_bearing"
