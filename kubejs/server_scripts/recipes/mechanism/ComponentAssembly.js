@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
         "#forge:gears/constantan",
         "thermal:rf_coil",
         "thermal:redstone_servo",
-        "cmi:simple_battery"
+        "#forge:plates/vanadium"
     ])
 
     // 轻工构件
@@ -26,9 +26,9 @@ ServerEvents.recipes((event) => {
     // 强化构件
     thermal_extra.component_assembly(`4x ${Mechanism.REINFORCED.AUG.getId()}`, [
         "#forge:gears/signalum",
-        "thermal:rf_coil",
+        "thermalendergy:vibrating_core",
         "cmi:thermal_unit",
-        "thermalendergy:vibrating_core"
+        "#forge:plates/lumium"
     ])
 
     // 重工构件

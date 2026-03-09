@@ -55,4 +55,10 @@ ServerEvents.recipes((event) => {
         "#forge:dusts/amethyst",
         "#forge:dusts/amethyst"
     ])
+
+    // 红石伺服器
+    addComponRecipe("2x thermal:redstone_servo", [
+        Fluid.of("immersiveengineering:redstone_acid", 200),
+        "#forge:plates/iron"
+    ]).id("thermal_extra:machine/component_assembly/redstone_servo")
 })

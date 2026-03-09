@@ -233,7 +233,7 @@ ServerEvents.recipes((event) => {
 		]),
 		create.deploying(Inc.THERMAL_AUG, [
 			Inc.THERMAL_AUG,
-			"cmi:simple_battery"
+			"#forge:plates/vanadium"
 		]),
 		create.cutting(Inc.THERMAL_AUG,
 			Inc.THERMAL_AUG

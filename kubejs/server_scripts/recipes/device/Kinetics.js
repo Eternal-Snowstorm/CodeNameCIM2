@@ -2,6 +2,12 @@ ServerEvents.recipes((event) => {
 	let { kubejs, create } = event.recipes
 
 	// 处理设备
+	// 置物台
+	kubejs.shapeless("create:depot", [
+		Casing.ANDESITE,
+		"#forge:plates/andesite"
+	]).id("create:crafting/kinetics/depot")
+
 	// 动力辊压机
 	kubejs.shaped("create:mechanical_press", [
 		"M",
@@ -214,4 +220,46 @@ ServerEvents.recipes((event) => {
 		X: ["#forge:plates/iron", "#forge:plates/andesite_alloy"]
 	}).id("vintageimprovements:craft/curving_press")
 
+	// 机械手
+	kubejs.shaped("create:deployer", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE,
+		X: "create:brass_hand"
+	}).id("create:crafting/kinetics/deployer")
+
+	// 动力锯
+	kubejs.shaped("create:mechanical_saw", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE,
+		X: "thermal:saw_blade"
+	}).id("create:crafting/kinetics/mechanical_saw")
+
+	// 动力钻头
+	kubejs.shaped("create:mechanical_drill", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE,
+		X: "thermal:drill_head"
+	}).id("create:crafting/kinetics/mechanical_drill")
+
+	// 列车装配站
+	kubejs.shaped("create:cart_assembler", [
+		"ABA",
+		"C C"
+	], {
+		A: "thermal:redstone_servo",
+		B: Mechanism.ANDESITE.COM,
+		C: "#forge:plates/industrial_iron"
+	}).id("create:crafting/kinetics/cart_assembler")
 })

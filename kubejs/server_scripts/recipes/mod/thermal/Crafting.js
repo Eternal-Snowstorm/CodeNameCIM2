@@ -1,24 +1,15 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.recipes
 
-	// 锯片
-	kubejs.shaped("thermal:saw_blade", [
-		" A ",
-		"ABA",
-		" A "
-	], {
-		A: "#forge:plates/iron",
-		B: "#forge:ingots/copper"
-	}).id("thermal:saw_blade")
-
-	// 钻头
-	kubejs.shaped("thermal:drill_head", [
-		"AA ",
+	// 红石伺服器
+	kubejs.shaped("thermal:redstone_servo", [
 		"A A",
-		" AA"
+		" B ",
+		"A A"
 	], {
-		A: "#forge:plates/iron",
-	}).id("thermal:drill_head")
+		A: "#forge:wires/redstone",
+		B: "#forge:plates/iron"
+	}).id("thermal:redstone_servo")
 
 	// 炸弹系列
 	kubejs.shaped("4x thermal:explosive_grenade", [

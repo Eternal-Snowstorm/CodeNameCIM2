@@ -517,6 +517,7 @@
 		{
 			dependencies: ["3E77FFA67682D3E5"]
 			id: "095B15FB9AA8B9AB"
+			subtitle: "这个...算了这个麻嘴"
 			tasks: [{
 				id: "7B8D2F201A92B13C"
 				item: "create:electron_tube"

@@ -109,4 +109,23 @@ ServerEvents.recipes((event) => {
         )
     })
 
+    // 锯片
+    kubejs.shaped("thermal:saw_blade", [
+        " X ",
+        "XYX",
+        " X "
+    ], {
+        X: "#forge:plates/iron",
+        Y: "#forge:plates/andesite_alloy"
+    }).id("thermal:saw_blade")
+
+    // 钻头
+    kubejs.shaped("thermal:drill_head", [
+        "YY ",
+        "Y X",
+        " XX"
+    ], {
+        X: "#forge:plates/iron",
+        Y: "#forge:plates/andesite_alloy"
+    }).id("thermal:drill_head")
 })

@@ -68,12 +68,6 @@ ServerEvents.recipes((event) => {
 		"cmi:copper_casing_framework"
 	])
 
-	// 红石伺服器
-	create.deploying("thermal:redstone_servo", [
-		"#forge:plates/iron",
-		"#create:mechanisms/redstone"
-	])
-
 	// 鼓风机触媒
 	create.deploying("create_connected:empty_fan_catalyst", [
 		"minecraft:iron_bars",
