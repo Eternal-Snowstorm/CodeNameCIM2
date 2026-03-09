@@ -291,22 +291,6 @@
 		}
 		{
 			dependencies: ["6D6905E6A6E7A153"]
-			id: "71F81E8F67C3A8BE"
-			rewards: [{
-				id: "718ED0159B62CC4D"
-				item: "cmi:resonant_machine"
-				type: "item"
-			}]
-			tasks: [{
-				id: "19127FF6F2243BF5"
-				item: "cmi:resonant_mechanism"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["71F81E8F67C3A8BE"]
 			id: "315BE76178E4D7F7"
 			rewards: [{
 				id: "36C1295CD5A51379"
@@ -318,7 +302,7 @@
 				item: "cmi:basic_mekanism_mechanism"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.5d
 			y: -3.0d
 		}
 		{
@@ -510,7 +494,7 @@
 				item: "cmi:computing_mechanism"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.0d
 			y: -4.0d
 		}
 		{
