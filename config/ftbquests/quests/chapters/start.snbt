@@ -47,7 +47,7 @@
 			}]
 			title: "知识扩充"
 			x: -2.0d
-			y: 19.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["21ED583750523195"]
@@ -89,7 +89,7 @@
 			}]
 			title: "熔炉"
 			x: 1.0d
-			y: 16.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["4EAFBA3A19526127"]
@@ -104,7 +104,7 @@
 			}]
 			title: "模具"
 			x: -2.0d
-			y: 16.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["5DC78DC9A01883A1"]
@@ -204,8 +204,8 @@
 				type: "item"
 			}]
 			title: "镐尖斧"
-			x: -3.5d
-			y: 17.5d
+			x: -4.0d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -223,7 +223,7 @@
 			}]
 			title: "砖泥"
 			x: 2.5d
-			y: 13.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["5556629C2263CF73"]
@@ -264,7 +264,7 @@
 			}]
 			title: "粗铜"
 			x: -0.5d
-			y: 16.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -286,7 +286,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 13.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["1231A867DC253AAA"]
@@ -331,7 +331,7 @@
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: 13.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4840B337A93659FC"]
@@ -349,7 +349,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 13.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4840B337A93659FC"]
@@ -361,7 +361,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 14.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["4840B337A93659FC"]
@@ -379,7 +379,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["73153E1AFAD14636"]
@@ -391,8 +391,8 @@
 				item: "tconstruct:crafting_station"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 16.0d
+			x: -4.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["73153E1AFAD14636"]
@@ -417,7 +417,7 @@
 			]
 			title: "工匠的第一步"
 			x: -2.0d
-			y: 17.5d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -446,7 +446,7 @@
 			}]
 			title: "铜部件"
 			x: -0.5d
-			y: 17.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["1231A867DC253AAA"]
@@ -463,7 +463,7 @@
 			}]
 			title: "石英矿"
 			x: 2.5d
-			y: 16.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["13884F7A75B4D36D"]
@@ -481,7 +481,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 16.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["5DEF00C4138EE4FB"]
@@ -499,7 +499,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 16.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -576,7 +576,7 @@
 			}]
 			title: "铜锭"
 			x: 1.0d
-			y: 17.5d
+			y: 18.5d
 		}
 	]
 	title: "炽焰匠心"

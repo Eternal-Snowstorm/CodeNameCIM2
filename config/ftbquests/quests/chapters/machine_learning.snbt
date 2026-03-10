@@ -312,6 +312,12 @@
 		{
 			dependencies: ["0D502CA40E47F832"]
 			id: "6865ED5A1D93E5EA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "14BE717EF67E1E5D"
+				table_id: 2826709868639936990L
+				type: "all_table"
+			}]
 			tasks: [
 				{
 					id: "765A5560DEAE9343"
@@ -336,16 +342,6 @@
 				{
 					id: "7AC7BC68681004D2"
 					item: "vintageimprovements:spring_coiling_machine"
-					type: "item"
-				}
-				{
-					id: "21A1D9360C4BCEF8"
-					item: "create:basin"
-					type: "item"
-				}
-				{
-					id: "7DD796E9E9EAAB72"
-					item: "create:depot"
 					type: "item"
 				}
 			]
