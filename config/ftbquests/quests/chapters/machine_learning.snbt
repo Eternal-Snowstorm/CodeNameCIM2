@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "machine_learning"
 	group: "050255AE19A93344"
-	icon: "create:large_cogwheel"
+	icon: "create:cogwheel"
 	id: "6321CD3C9CD74246"
 	order_index: 1
 	quest_links: [ ]

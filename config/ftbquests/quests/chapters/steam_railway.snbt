@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "steam_railway"
 	group: "050255AE19A93344"
-	icon: "create:track_station"
+	icon: "create:track"
 	id: "677DD93464AC2B4A"
 	order_index: 2
 	quest_links: [ ]
