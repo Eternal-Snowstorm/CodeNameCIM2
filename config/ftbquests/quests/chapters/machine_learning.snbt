@@ -441,13 +441,16 @@
 		}
 		{
 			dependencies: ["2CCDB1390C34C80A"]
+			description: ["{image:cmi:textures/images/ie/coke_oven.png width:142 height:160 align:center}"]
+			icon: "immersiveengineering:coke_oven"
 			id: "12A2C0FB29927390"
 			tasks: [{
-				advancement: "immersiveengineering:main/mb_cokeoven"
-				criterion: ""
-				id: "5B1946CC3D1E7691"
-				type: "advancement"
+				count: 27L
+				id: "2F4BD553A5521213"
+				item: { Count: 27, id: "tconstruct:seared_bricks" }
+				type: "item"
 			}]
+			title: "焦炉"
 			x: -12.0d
 			y: 12.0d
 		}

@@ -8,6 +8,8 @@ ServerEvents.tags("item", (event) => {
 	add("forge:ingots/scarlet_neodymium", "alexscaves:scarlet_neodymium_ingot")
 	add("forge:ingots/azure_neodymium", "alexscaves:azure_neodymium_ingot")
 
+	add("forge:plates/silicon", "ae2:printed_silicon")
+
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
 		.add("vintageimprovements:redstone_module")
