@@ -74,16 +74,6 @@ global.ToolType = {
 }
 
 /**
- * 热量
- * 
- * @type {{ [key: any]: string }}
- */
-global.HeatLevel = {
-	super: "superheated",
-	grilled: "grilled",
-	heated: "heated",
-}
-/**
  * 所有染料颜色
  * 
  * @type {string[]}

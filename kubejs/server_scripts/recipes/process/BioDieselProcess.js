@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
 	// 糖
 	create.mixing("minecraft:sugar", [
 		Fluid.of("thermal:syrup", 10)
-	]).heatRequirement(global.HeatLevel["grilled"])
+	]).heatRequirement(CmiHeatLevel.GRILLED)
 
 	/**
 	 * 乙醇发酵配方

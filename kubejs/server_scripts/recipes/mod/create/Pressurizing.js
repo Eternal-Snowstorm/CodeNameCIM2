@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
     vintageimprovements.pressurizing(
         Fluid.of("thermal:redstone", 125), [
         "#forge:dusts/redstone"
-    ]).heatRequirement(global.HeatLevel["heated"])
+    ]).heatRequirement(CmiHeatLevel.HEATED)
 
     // 硫酸
     vintageimprovements.pressurizing(
