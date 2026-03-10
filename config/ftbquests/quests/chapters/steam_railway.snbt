@@ -588,6 +588,7 @@
 				item: "mekanism:steam_bucket"
 				type: "item"
 			}]
+			title: "蒸汽"
 			x: -2.5d
 			y: -3.5d
 		}
