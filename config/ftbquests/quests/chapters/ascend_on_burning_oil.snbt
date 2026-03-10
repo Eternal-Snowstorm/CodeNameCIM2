@@ -1268,7 +1268,7 @@
 			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "7CE3BF3F7F7FC1D9"
 			shape: "gear"
-			size: 1.0d
+			size: 2.0d
 			subtitle: "霉菌"
 			tasks: [
 				{
@@ -1397,7 +1397,7 @@
 			y: 27.5d
 		}
 		{
-			dependencies: ["00C55399CC674B4A"]
+			dependencies: ["11B2066810421699"]
 			id: "55A9C7A7B27A8822"
 			tasks: [{
 				id: "22F3ED8D9B1F7F29"
@@ -1415,7 +1415,7 @@
 			y: 30.0d
 		}
 		{
-			dependencies: ["00C55399CC674B4A"]
+			dependencies: ["11B2066810421699"]
 			id: "19F77A03547567E0"
 			tasks: [{
 				id: "76CBEA89E9780792"
