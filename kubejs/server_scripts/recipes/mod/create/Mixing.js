@@ -5,24 +5,24 @@ ServerEvents.recipes((event) => {
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 180), [
 		"#forge:dusts/andesite",
 		Fluid.of("tconstruct:molten_iron", 10)
-	]).heatRequirement("grilled")
+	]).heatRequirement(CmiHeatLevel.GRILLED)
 		.id("create:mixing/andesite_alloy")
 
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 180), [
 		"#forge:dusts/andesite",
 		Fluid.of("tconstruct:molten_zinc", 10)
-	]).heatRequirement("grilled")
+	]).heatRequirement(CmiHeatLevel.GRILLED)
 
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 120), [
 		"#forge:dusts/andesite",
 		"#forge:nuggets/iron"
-	]).heatRequirement("grilled")
+	]).heatRequirement(CmiHeatLevel.GRILLED)
 		.id("create:mixing/andesite_alloy_from_zinc")
 
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 120), [
 		"#forge:dusts/andesite",
 		"#forge:nuggets/zinc"
-	]).heatRequirement("grilled")
+	]).heatRequirement(CmiHeatLevel.GRILLED)
 
 	// // 玫瑰石英
 	// create.mixing("create:rose_quartz", [
@@ -72,24 +72,24 @@ ServerEvents.recipes((event) => {
 	// 砖块
 	create.mixing(Fluid.of("tconstruct:seared_stone", 250), [
 		"tconstruct:grout"
-	]).processingTime(150).heatRequirement("grilled")
+	]).processingTime(150).heatRequirement(CmiHeatLevel.GRILLED)
 
 	create.mixing(Fluid.of("tconstruct:scorched_stone", 250), [
 		"tconstruct:nether_grout"
-	]).processingTime(150).heatRequirement("grilled")
+	]).processingTime(150).heatRequirement(CmiHeatLevel.GRILLED)
 
 	// 液态灵魂
 	create.mixing(Fluid.of("tconstruct:liquid_soul", 1000), [
 		"#minecraft:soul_fire_base_blocks"
-	]).processingTime(150).heatRequirement("grilled")
+	]).processingTime(150).heatRequirement(CmiHeatLevel.GRILLED)
 
 	create.mixing(Fluid.of("tconstruct:liquid_soul", 1000), [
 		"tconstruct:soul_glass"
-	]).processingTime(150).heatRequirement("grilled")
+	]).processingTime(150).heatRequirement(CmiHeatLevel.GRILLED)
 
 	create.mixing(Fluid.of("tconstruct:liquid_soul", 250), [
 		"tconstruct:soul_glass_pane"
-	]).processingTime(150).heatRequirement("grilled")
+	]).processingTime(150).heatRequirement(CmiHeatLevel.GRILLED)
 
 	create.mixing(Fluid.of("tconstruct:liquid_soul", 1000), [
 		"4x minecraft:weeping_vines",
@@ -160,7 +160,7 @@ ServerEvents.recipes((event) => {
 	// 工业铁
 	create.mixing(Fluid.of("cmi:molten_industrial_iron", 90), [
 		"#forge:dusts/iron"
-	]).heatRequirement("grilled")
+	]).heatRequirement(CmiHeatLevel.GRILLED)
 
 	// 墨水
 	create.mixing(

@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:kerosene", 500),
 		Fluid.of("thermal_extra:naphtha", 500)
 	], Fluid.of("createdieselgenerators:crude_oil", 2000))
-		.heatRequirement(global.HeatLevel["heated"])
+		.heatRequirement(CmiHeatLevel.HEATED)
 		.id("createdieselgenerators:distillation/crude_oil")
 
 	// 油页岩粉
@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:light_olefin", 200),
 	], [
 		Fluid.of("cmi:cracked_gasoline", 500)
-	]).heatRequirement(global.HeatLevel["heated"])
+	]).heatRequirement(CmiHeatLevel.HEATED)
 
 	// 苯 乙烯
 	thermal.refinery([
@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:light_olefin", 50)
 	], [
 		Fluid.of("immersiveengineering:creosote", 100)
-	]).heatRequirement(global.HeatLevel["heated"])
+	]).heatRequirement(CmiHeatLevel.HEATED)
 
 	event.custom({
 		"type": "immersiveengineering:refinery",

@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("minecraft:water", 100),
 	], [
 		Fluid.of("cmi:vinegar", 200)
-	]).heatRequirement(global.HeatLevel["heated"])
+	]).heatRequirement(CmiHeatLevel.HEATED)
 
 	// 橡胶
 	create.compacting("thermal:rubber", [
@@ -32,12 +32,12 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/rubber",
 		"#forge:dusts/sulfur",
 		Fluid.of("cmi:vinegar", 200)
-	]).heatRequirement("grilled")
+	]).heatRequirement(CmiHeatLevel.GRILLED)
 	create.mixing(Fluid.of("cmi:cured_rubber", 200), [
 		"#forge:dusts/rubber",
 		"#forge:dusts/sulfur",
 		Fluid.of("cmi:vinegar", 200)
-	]).heatRequirement("grilled")
+	]).heatRequirement(CmiHeatLevel.GRILLED)
 
 	// 硫化橡胶
 	tconstruct.casting_table("thermal:cured_rubber")
@@ -50,5 +50,5 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/sulfur",
 		Fluid.of("mekanism:steam", 200),
 		Fluid.of("thermal:latex", 200)
-	]).heatRequirement("grilled")
+	]).heatRequirement(CmiHeatLevel.GRILLED)
 })
