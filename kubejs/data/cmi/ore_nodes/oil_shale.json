@@ -1,5 +1,5 @@
 {
-    "block": "cmi:stone_oil_shale_ore_node",
+    "block": "cmi:oil_shale_ore_node",
     "loot_tables": {
         "earth": "cmi:ore_nodes/oil_shale/earth",
         "common": "cmi:ore_nodes/oil_shale/common",
