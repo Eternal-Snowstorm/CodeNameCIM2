@@ -262,4 +262,40 @@ ServerEvents.recipes((event) => {
 		B: Mechanism.ANDESITE.COM,
 		C: "#forge:plates/industrial_iron"
 	}).id("create:crafting/kinetics/cart_assembler")
+
+	// 离心机
+	kubejs.shaped("vintageimprovements:centrifuge", [
+		"P P",
+		"LML",
+		"SCS"
+	], {
+		P: "#forge:plates/andesite_alloy",
+		L: "#minecraft:logs",
+		M: Mechanism.ANDESITE.COM,
+		S: "#vintageimprovements:springs/andesite",
+		C: Casing.ANDESITE
+	}).id("vintageimprovements:craft/centrifuge")
+
+	// 蒸汽锤
+	kubejs.shaped("cmi:steam_hammer", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.STEAM.COM,
+		C: Casing.BRONZE,
+		X: "#forge:storage_blocks/bronze"
+	})
+
+	// 压缩机
+	kubejs.shaped("vintageimprovements:vacuum_chamber", [
+		" M ",
+		"YCY",
+		" X "
+	], {
+		M: Mechanism.STEAM.COM,
+		C: Casing.BRONZE,
+		X: "create:mechanical_pump",
+		Y: "#vintageimprovements:springs/bronze"
+	}).id("vintageimprovements:craft/vacuum_chamber")
 })

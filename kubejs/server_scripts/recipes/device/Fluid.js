@@ -71,13 +71,6 @@ ServerEvents.recipes((event) => {
 		B: "#forge:glass"
 	})
 
-	// 移动式流体接口
-	kubejs.shapeless("create:portable_fluid_interface", [
-		Casing.COPPER,
-		Mechanism.COPPER.COM,
-		"#forge:plates/industrial_iron"
-	]).id("create:crafting/kinetics/portable_fluid_interface")
-
 	// 分液池
 	kubejs.shaped("create:item_drain", [
 		"X",

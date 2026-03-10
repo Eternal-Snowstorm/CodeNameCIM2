@@ -74,11 +74,32 @@ ServerEvents.recipes((event) => {
 	}).id("create:crafting/kinetics/chute")
 
 	// 移动式存储接口
-	kubejs.shapeless("create:portable_storage_interface", [
+	kubejs.shapeless("2x create:portable_storage_interface", [
 		Casing.ANDESITE,
 		Mechanism.WOODEN.COM,
 		"#forge:plates/industrial_iron"
 	]).id("create:crafting/kinetics/portable_storage_interface")
+
+	// 移动式流体接口
+	kubejs.shapeless("2x create:portable_fluid_interface", [
+		Casing.COPPER,
+		Mechanism.COPPER.COM,
+		"#forge:plates/industrial_iron"
+	]).id("create:crafting/kinetics/portable_fluid_interface")
+
+	// 移动式燃料接口
+	kubejs.shapeless("2x railways:portable_fuel_interface", [
+		Casing.RAILWAY,
+		Mechanism.RAILWAY.COM,
+		"#forge:plates/industrial_iron"
+	]).id("railways:crafting/portable_fuel_interface")
+
+	// 移动式能量接口
+	kubejs.shapeless("2x createaddition:portable_energy_interface", [
+		Casing.BRASS,
+		Mechanism.COIL.COM,
+		"#forge:plates/industrial_iron"
+	]).id("createaddition:crafting/portable_energy_interface")
 
 	// 安山漏斗
 	kubejs.shaped("4x create:andesite_funnel", [
