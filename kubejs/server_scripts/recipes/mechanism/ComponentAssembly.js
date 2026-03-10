@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
     thermal_extra.component_assembly(`4x ${Mechanism.LIGHT.AUG.getId()}`, [
         "#forge:gears/copper",
         "immersiveengineering:component_iron",
-        "cmi:diode"
+        "thermal:laser_diode"
     ])
 
     // 智能构件

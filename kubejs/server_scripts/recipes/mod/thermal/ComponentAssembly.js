@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
 
     // 电子元件
     addComponRecipe("2x immersiveengineering:component_electronic", [
-        "cmi:diode",
+        "thermal:laser_diode",
         "#forge:treated_wood_slab",
         "#forge:gems/quartz",
         "#forge:wires/electrum"

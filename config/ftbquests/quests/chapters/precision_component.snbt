@@ -147,7 +147,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["68A82E2E7552EF90"]
+			dependencies: [
+				"68A82E2E7552EF90"
+				"10FE6C8E2FB59714"
+			]
 			description: [
 				"使用&6自动化工程师装配台&r可以自动化处理&6工程师装配台&r内的蓝图配方。只需要选择配方后通上电并且源源不断往里输入原料便可实现自动化"
 				""
@@ -272,10 +275,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"6ED98C2148C69BD7"
-				"7B311FB3BDA3F3DD"
-			]
+			dependencies: ["7B311FB3BDA3F3DD"]
 			id: "10FE6C8E2FB59714"
 			rewards: [{
 				id: "21C223335813DCD2"

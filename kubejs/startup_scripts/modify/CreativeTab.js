@@ -1,18 +1,6 @@
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setDisplayName(Component.translatable(`itemGroup.${global.namespace}.all`))
 
-	// event.addBefore([
-	// 	"cmi:water_pump",
-	// 	"cmi:mars_geothermal_vent",
-	// 	"cmi:mercury_geothermal_vent",
-	// 	"cmi:hydraulic_press",
-	// 	"cmi:accelerator_motor"
-	// ])
-
-	event.remove([
-		"minecraft:milk_bucket"
-	])
-
 	let removeItemFromCreativeTab = [
 		`#${global.namespace}:io_debug_block`,
 		"#forge:chem_salts",
@@ -97,5 +85,10 @@ StartupEvents.modifyCreativeTab("minecraft:ingredients", (event) => {
 		"@thermal",
 		"@cmi",
 		"@immersiveengineering"
+	])
+})
+StartupEvents.modifyCreativeTab("thermal:thermal.items", (event) => {
+	event.addBefore("thermal:rf_coil", [
+		"thermal:laser_diode"
 	])
 })

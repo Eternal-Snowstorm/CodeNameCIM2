@@ -197,13 +197,8 @@ StartupEvents.registry("item", (event) => {
 	addItem("torn_parchment_b")
 		.texture(`${global.namespace}:item/material/parchment/torn_parchment_b`)
 
-	// 二极管
-	addItem("diode")
-		.texture(`${global.namespace}:item/material/diode`)
-
 	// 破旧的存钱罐
 	addItem("piggy_bank")
-		
 
 	let SomeModelsJson = {
 		cogwheel: function (material) {
