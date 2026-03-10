@@ -1386,17 +1386,6 @@
 			y: 27.5d
 		}
 		{
-			dependencies: ["2916D3E15559DF0C"]
-			id: "4842D515FF19D12B"
-			tasks: [{
-				id: "443A59FE34EA75CF"
-				item: "thermal_extra:naphtha_bucket"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 27.5d
-		}
-		{
 			dependencies: ["11B2066810421699"]
 			id: "55A9C7A7B27A8822"
 			tasks: [{
@@ -1424,6 +1413,267 @@
 			}]
 			x: 10.0d
 			y: 30.0d
+		}
+		{
+			dependencies: [
+				"19F77A03547567E0"
+				"2916D3E15559DF0C"
+			]
+			id: "0E3481D80180E00C"
+			tasks: [{
+				id: "6432C2A563904E0E"
+				item: "thermal_extra:naphtha_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["0E3481D80180E00C"]
+			id: "77C1F236B853FAAE"
+			tasks: [{
+				id: "5B9DB50FA362B833"
+				item: "cmi:light_olefin_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"77C1F236B853FAAE"
+				"5486A9D8E0073EAB"
+			]
+			id: "5E07A1EE010AE757"
+			tasks: [{
+				id: "7B1DE22539E997C1"
+				item: "cmi:light_silicone_ether_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 32.5d
+		}
+		{
+			description: ["{image:cmi:textures/images/ie/chemical_reactor.png width:103 height:147 align:center}"]
+			icon: "immersiveindustry:chemical_reactor"
+			id: "5486A9D8E0073EAB"
+			rewards: [
+				{
+					count: 8
+					id: "61B0E9A04285AD6C"
+					item: "immersiveengineering:slab_sheetmetal_aluminum"
+					type: "item"
+				}
+				{
+					id: "178CA1D1BC11EC9E"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "4B75EEC37B53E1AC"
+					item: "immersiveengineering:metal_barrel"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 13L
+					id: "74B7B585BA387719"
+					item: "immersiveengineering:sheetmetal_steel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "07BB7DFAE34EB308"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2F06E7FE3363B270"
+					item: { Count: 8, id: "immersiveengineering:treated_scaffold" }
+					type: "item"
+				}
+			]
+			title: "反应釜"
+			x: 7.5d
+			y: 32.5d
+		}
+		{
+			dependencies: ["5486A9D8E0073EAB"]
+			id: "693C6976F07FA0F5"
+			tasks: [{
+				id: "5003F6F0E1694F3B"
+				item: "cmi:polysilicone_ether_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 32.5d
+		}
+		{
+			dependencies: [
+				"693C6976F07FA0F5"
+				"2809F6E25BE835B0"
+				"05D42E0B78A3982E"
+			]
+			id: "5D4F15DF8FB903D5"
+			tasks: [
+				{
+					id: "2E90504FD93213E2"
+					item: "cmi:silicon_rubber"
+					type: "item"
+				}
+				{
+					id: "4711E5F4438D85B2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/silicon_rubber"
+						}
+					}
+					title: "硅橡胶"
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 32.5d
+		}
+		{
+			id: "2809F6E25BE835B0"
+			tasks: [{
+				id: "1B6D05A70ECD89B5"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 35.0d
+		}
+		{
+			dependencies: [
+				"762D51AFDCA86F29"
+				"5DE46B617DB0CEC6"
+			]
+			id: "05D42E0B78A3982E"
+			tasks: [{
+				id: "4613B0604744F0A8"
+				item: "cmi:vinegar_acid_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["664B44589F807708"]
+			id: "762D51AFDCA86F29"
+			tasks: [{
+				id: "58ECA747E29861CF"
+				item: "cmi:vinegar_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 35.0d
+		}
+		{
+			id: "5DE46B617DB0CEC6"
+			tasks: [{
+				id: "018FA16EF8C96B5B"
+				item: "createdieselgenerators:distillation_controller"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 37.5d
+		}
+		{
+			dependencies: ["2916D3E15559DF0C"]
+			id: "6F36365885BD89B1"
+			tasks: [{
+				id: "226649FEDCCAACF6"
+				item: "createdieselgenerators:gasoline_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["3D5497B8DC0ED5B6"]
+			id: "3B09C0DEB5D3ECB2"
+			tasks: [{
+				id: "32C9986340F70115"
+				item: "mekanism:steam_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"3B09C0DEB5D3ECB2"
+				"6F36365885BD89B1"
+			]
+			id: "654FBA59B16DF4C6"
+			tasks: [{
+				id: "36FDD379CBB1E1F7"
+				item: "cmi:cracked_gasoline_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["654FBA59B16DF4C6"]
+			id: "5B786D0B9FC5A444"
+			tasks: [{
+				id: "7A0344280C9F2302"
+				item: "cmi:light_olefin_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 27.5d
+		}
+		{
+			dependencies: [
+				"654FBA59B16DF4C6"
+				"660DD436C6CEFCBD"
+			]
+			id: "0FF8EDFBF1C6AF7A"
+			tasks: [{
+				id: "472003D510B6E410"
+				item: "cmi:benzene_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"654FBA59B16DF4C6"
+				"7CE3BF3F7F7FC1D9"
+			]
+			id: "660DD436C6CEFCBD"
+			tasks: [{
+				id: "4F144D9E1F5A7801"
+				item: "thermal_extra:naphtha_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 25.0d
+		}
+		{
+			dependencies: [
+				"7CE3BF3F7F7FC1D9"
+				"0FF8EDFBF1C6AF7A"
+			]
+			id: "27CAE5D991F9DC02"
+			tasks: [{
+				id: "5A8F40914C66D275"
+				item: "cmi:phenol_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 25.0d
 		}
 	]
 	title: "油燃而升"
