@@ -26,6 +26,14 @@ StartupEvents.registry("block", (event) => {
 		.hardness(5)
 		.resistance(5)
 
+	// 破旧的存钱罐
+	addBlock("piggy_bank", "cardinal")
+		.createProperties()
+		.noOcclusion()
+		.isRedstoneConductor((state, block, pos) => {
+			return false
+		})
+
 	// 背景
 	addBlock("green_screen")
 		.lightLevel(15)

@@ -1,10 +1,9 @@
 {
-	"format_version": "1.9.0",
-	"credit": "Made with Blockbench",
+	"render_type":"minecraft:solid",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "cmi:item/piggy_bank",
-		"particle": "cmi:item/piggy_bank"
+		"0": "cmi:block/piggy_bank",
+		"particle": "cmi:block/piggy_bank"
 	},
 	"elements": [
 		{

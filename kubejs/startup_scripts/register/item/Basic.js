@@ -197,9 +197,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("torn_parchment_b")
 		.texture(`${global.namespace}:item/material/parchment/torn_parchment_b`)
 
-	// 破旧的存钱罐
-	addItem("piggy_bank")
-
 	let SomeModelsJson = {
 		cogwheel: function (material) {
 			const PARENT = "cmi:item/cogwheels/cogwheel"
