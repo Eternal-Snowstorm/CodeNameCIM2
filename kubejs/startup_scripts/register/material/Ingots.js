@@ -74,4 +74,12 @@ StartupEvents.registry("item", (event) => {
     // 超载合金锭
     addAloneIngotItem("overcharged_alloy")
         .rarity("epic")
+
+    // 富集合金
+    addNonIngotItem("enriched_alloy")
+        .rarity("extra_green")
+        .tag("forge:alloys")
+        .tag("forge:alloys/enriched")
+        .tag("mekanism:alloys")
+        .tag("mekanism:alloys/enriched")
 })

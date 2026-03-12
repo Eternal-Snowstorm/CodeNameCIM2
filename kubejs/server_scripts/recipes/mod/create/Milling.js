@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
 	create.milling("thermal:sulfur_dust", [
 		"#forge:gems/sulfur"
 	])
-	
+
 	// 陨石粉
 	create.milling([
 		"ae2:sky_dust",
@@ -81,4 +81,13 @@ ServerEvents.recipes((event) => {
 		Item.of("ae2:sky_stone_block").withChance(0.5)
 	], "ae2:sky_stone_block")
 
+	// 朱砂
+	create.milling("thermal:cinnabar_dust", [
+		"#forge:gems/cinnabar"
+	])
+
+	// 磷灰石
+	create.milling("thermal:apatite_dust", [
+		"#forge:gems/apatite"
+	])
 })
