@@ -170,8 +170,11 @@ ServerEvents.tags("fluid", (event) => {
 	// 月球车燃油
 	event.get("ad_astra:tier_1_rover_fuel")
 		.removeAll()
-		.add("#forge:biodiesel")
-		.add("#forge:diesel")
-		.add("#forge:gasoline")
-		.add("#tconstruct:blazing_blood")
+		.add([
+			"ad_astra:fuel",
+			"#forge:biodiesel",
+			"#forge:diesel",
+			"#forge:gasoline",
+			"#tconstruct:blazing_blood"
+		])
 })
