@@ -28,11 +28,21 @@ StartupEvents.registry("block", (event) => {
 
 	// 破旧的存钱罐
 	addBlock("piggy_bank", "cardinal")
-		.createProperties()
-		.noOcclusion()
-		.isRedstoneConductor((state, block, pos) => {
-			return false
-		})
+		.soundType(SoundType.GLASS)
+		.waterlogged()
+		.notSolid()
+		.defaultCutout()
+		.box(9.75, 0, 12, 11.75, 2, 14)
+		.box(5.25, 0, 12, 7.25, 2, 14)
+		.box(9.75, 0, 5, 11.75, 2, 7)
+		.box(9, 5.5, 12.25, 10, 7.5, 14.25)
+		.box(8.13281, 8.00781, 7.75, 8.88281, 8.00781, 12.75)
+		.box(5.24219, 2.75, 8.5, 5.24219, 7.5, 11.5)
+		.box(11.75781, 2.75, 8.5, 11.75781, 7.5, 11.5)
+		.box(5.25, 2, 5, 11.75, 8, 14)
+		.box(5.25, 0, 5, 7.25, 2, 7)
+		.box(5, 3.75, 0.75, 12, 9.75, 6.75)
+		.box(7, 5.5, 0, 10, 7.5, 1)
 
 	// 背景
 	addBlock("green_screen")
