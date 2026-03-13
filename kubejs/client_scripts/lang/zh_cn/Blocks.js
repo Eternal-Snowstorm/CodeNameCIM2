@@ -77,7 +77,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("broken_transformer", "损坏的变压器")
 	addBlockLang("broken_tracking_array", "损坏的追踪阵列")
 	addBlockLang(`broken_modem`, "损坏的调制解调器")
-
+	addBlockLang("piggy_bank", "破旧的存钱罐")
 
 	addOreNodeLang("uranium", "铀")
 	addOreNodeLang("copper", "铜")
@@ -97,7 +97,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMachineLang("chemical_gas_extractor", "化学气体抽取器")
 	addMachineLang("steam_boiler", "青铜蒸汽锅炉")
 	addMachineLang("radar_terminal", "雷达终端")
-
 
 	// 制作组fumo
 	addBlockLang("re_construction", "Re_Construction")

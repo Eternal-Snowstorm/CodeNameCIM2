@@ -34,6 +34,7 @@ StartupEvents.registry("item", (event) => {
 	addAloneRawMaterial("chromium")
 	addAloneRawMaterial("tungsten")
 	addAloneRawMaterial("etrium")
+	addAloneRawMaterial("titanium")
 
 	addAloneCrushedRawMaterial("desh")
 	addAloneCrushedRawMaterial("ostrum")
