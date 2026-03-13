@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs } = event.getRecipes()
 
 	// 流体管道
 	kubejs.shaped("8x create:fluid_pipe", [

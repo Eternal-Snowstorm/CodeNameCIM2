@@ -42,7 +42,7 @@ let materials = [
 	"osmium"
 ]
 ServerEvents.recipes((event) => {
-	let { mekanism } = event.recipes
+	let { mekanism } = event.getRecipes()
 
 	mekanism.gas_conversion(
 		"cmi:trinitrotoluene",

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { immersiveengineering } = event.recipes
+    let { immersiveengineering } = event.getRecipes()
     const STEEL_INGOT = IngrUtils.getFirstItemId("#forge:ingots/steel")
 
     // 钢錠

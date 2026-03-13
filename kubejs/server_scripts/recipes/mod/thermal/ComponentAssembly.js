@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { thermal_extra } = event.recipes
+    let { thermal_extra } = event.getRecipes()
 
     /**
      * 

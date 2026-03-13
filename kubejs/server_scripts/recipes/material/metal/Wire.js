@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { createaddition, thermal, immersiveengineering } = event.recipes
+    let { createaddition, thermal, immersiveengineering } = event.getRecipes()
 
     global.metalGroup.forEach((metal) => {
         const INGOT = `#forge:ingots/${metal}`

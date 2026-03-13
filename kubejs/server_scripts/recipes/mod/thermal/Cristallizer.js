@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { thermal } = event.recipes
+    let { thermal } = event.getRecipes()
 
     // 纯净石英
     thermal.crystallizer("cmi:pure_quartz_prism", [

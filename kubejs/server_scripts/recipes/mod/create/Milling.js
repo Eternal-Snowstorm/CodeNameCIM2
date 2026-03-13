@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create } = event.getRecipes()
 
 	create.milling(Item.of("minecraft:sugar").withChance(0.5), [
 		"minecraft:beetroot"

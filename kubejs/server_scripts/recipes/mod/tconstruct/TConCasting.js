@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { tconstruct } = event.recipes
+	let { tconstruct } = event.getRecipes()
 
 	let castingMechanismMaterials = [
 		["tconstruct:molten_iron", "cmi:iron_mechanism_basement", 1535],

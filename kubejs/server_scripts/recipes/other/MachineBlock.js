@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { minecraft } = event.recipes
+	let { minecraft } = event.getRecipes()
 
 
 	global.mechanismGroup.forEach((type) => {

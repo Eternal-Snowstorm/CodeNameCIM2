@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { create, vintageimprovements, createaddition } = event.recipes
+    let { create, vintageimprovements, createaddition } = event.getRecipes()
 
     let Incomplete = {
         CONTROL: "create_connected:incomplete_control_chip",

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, thermal, thermal_extra, cmi, kubejs } = event.recipes
+	let { create, thermal, thermal_extra, cmi, kubejs } = event.getRecipes()
 
 	// 黑石源质
 	thermal_extra.nitratic_igniter([

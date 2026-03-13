@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create } = event.getRecipes()
 
 	// 防腐木板
 	create.filling("immersiveengineering:treated_wood_horizontal", [

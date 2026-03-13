@@ -3,7 +3,7 @@
 		"prefix": "#recipes",
 		"body": [
 			"ServerEvents.recipes((event) => {",
-			"    let {} = event.recipes",
+			"    let {} = event.getRecipes()",
 			"})"
 		],
 	},

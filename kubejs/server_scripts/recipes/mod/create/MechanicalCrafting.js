@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create } = event.getRecipes()
 
 	// 粉碎轮
 	create.mechanical_crafting("4x create:crushing_wheel", [

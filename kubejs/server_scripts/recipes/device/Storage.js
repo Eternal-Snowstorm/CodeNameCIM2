@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs } = event.getRecipes()
 
 	// 背包
 	kubejs.shaped("sophisticatedbackpacks:backpack", [

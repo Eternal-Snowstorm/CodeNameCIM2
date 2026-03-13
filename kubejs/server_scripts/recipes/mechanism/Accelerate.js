@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { cmi } = event.recipes
+	let { cmi } = event.getRecipes()
 
 	// 安山构件
 	addRecipe("cmi:andesite_mechanism", "minecraft:deepslate", [

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { mekanism } = event.recipes
+    let { mekanism } = event.getRecipes()
 
     mekanism.combining("advanced_ae:quantum_alloy",
         "cmi:superconducting_mercury_ingot",

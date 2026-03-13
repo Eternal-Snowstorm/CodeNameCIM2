@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, thermal, thermal_extra, mekanism } = event.recipes
+	let { create, thermal, thermal_extra, mekanism } = event.getRecipes()
 
 	// 浑浊废液
 	thermal.compression_fuel(Fluid.of("cmi:turbid_waste_liquid", 1000), 10000)

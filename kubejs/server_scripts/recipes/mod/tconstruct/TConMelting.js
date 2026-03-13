@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { tconstruct } = event.recipes
+	let { tconstruct } = event.getRecipes()
 
 	// 黑曜石
 	tconstruct.melting(Fluid.of("tconstruct:molten_obsidian", 1000))

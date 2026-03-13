@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { vintageimprovements, create } = event.recipes
+	let { vintageimprovements, create } = event.getRecipes()
 
 	vintageimprovements.vibrating([
 		Item.of("minecraft:flint"),

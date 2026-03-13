@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, thermal, thermal_extra, tconstruct, immersiveengineering } = event.recipes
+	let { create, createdieselgenerators, thermal, thermal_extra, tconstruct, immersiveengineering } = event.getRecipes()
 
 	// 蒸馏
 	createdieselgenerators.distillation([

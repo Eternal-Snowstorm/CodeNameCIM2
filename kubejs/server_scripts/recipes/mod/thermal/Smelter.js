@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { thermal } = event.recipes
+	let { thermal } = event.getRecipes()
 
 	thermal.smelter("thermal:enderium_ingot", [
 		"#forge:dusts/diamond",

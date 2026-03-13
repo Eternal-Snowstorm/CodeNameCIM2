@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { immersiveengineering } = event.recipes
+	let { immersiveengineering } = event.getRecipes()
 
 	// 乙醇
 	immersiveengineering.fermenter(

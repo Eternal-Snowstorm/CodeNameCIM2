@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { thermal, thermal_extra } = event.recipes
+	let { thermal, thermal_extra } = event.getRecipes()
 
 	thermal_extra.cold_fuel("ad_astra:ice_shard", 1250)
 	thermal.gourmand_fuel("#forge:cheese_block", 6400)

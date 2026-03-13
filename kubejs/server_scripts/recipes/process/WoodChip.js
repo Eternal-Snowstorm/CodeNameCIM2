@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create } = event.getRecipes()
 
 	// 压缩
 	let woodChipArray = [

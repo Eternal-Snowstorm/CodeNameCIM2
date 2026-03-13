@@ -176,7 +176,7 @@ let SmeltingRecipes = {
 	 * @returns
 	 */
 	all: function (event, output, input) {
-		let { minecraft } = event.recipes
+		let { minecraft } = event.getRecipes()
 
 		let smelting = minecraft
 			.smelting(output, input)
@@ -206,7 +206,7 @@ let SmeltingRecipes = {
 	 * @returns 
 	 */
 	blasting: function (event, output, input) {
-		let { minecraft } = event.recipes
+		let { minecraft } = event.getRecipes()
 
 		let blasting = minecraft
 			.blasting(output, input)
@@ -231,7 +231,7 @@ let SmeltingRecipes = {
 	 * @returns 
 	 */
 	smoking: function (event, output, input) {
-		let { minecraft } = event.recipes
+		let { minecraft } = event.getRecipes()
 
 		let smelting = minecraft
 			.smelting(output, input)

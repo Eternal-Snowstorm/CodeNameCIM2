@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, mekanism, thermal, immersiveengineering } = event.recipes
+	let { create, mekanism, thermal, immersiveengineering } = event.getRecipes()
 
 	create.crushing([
 		Item.of("4x cmi:end_stone_dust"),

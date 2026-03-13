@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { kubejs } = event.recipes
+    let { kubejs } = event.getRecipes()
 
     // 冰
     kubejs.shapeless("minecraft:ice", [

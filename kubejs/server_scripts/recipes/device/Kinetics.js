@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create } = event.recipes
+	let { kubejs, create } = event.getRecipes()
 
 	// 处理设备
 	// 置物台

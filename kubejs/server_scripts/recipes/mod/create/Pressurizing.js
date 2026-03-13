@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { create, vintageimprovements } = event.recipes
+    let { create, vintageimprovements } = event.getRecipes()
 
     // 不稳红石
     vintageimprovements.pressurizing(

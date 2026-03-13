@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { kubejs, create, tconstruct } = event.recipes
+    let { kubejs, create, tconstruct } = event.getRecipes()
     const TEMPLATE = "cmi:drawer_upgrade_template"
 
     // 升级模板

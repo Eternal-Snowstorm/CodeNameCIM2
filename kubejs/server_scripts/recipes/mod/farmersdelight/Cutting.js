@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { farmersdelight } = event.recipes
+    let { farmersdelight } = event.getRecipes()
 
     // 焦黑砖
     farmersdelight.cutting("4x tconstruct:seared_brick", [

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs } = event.getRecipes()
 
 	global.metalGroup.forEach((metal) => {
 		const INGOT = `#forge:ingots/${metal}`

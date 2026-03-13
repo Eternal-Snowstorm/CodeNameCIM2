@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs } = event.getRecipes()
 
 	// 绿色染料
 	kubejs.shapeless("2x minecraft:green_dye", [

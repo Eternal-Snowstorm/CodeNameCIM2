@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { farmersdelight, createdieselgenerators, create, minecraft, kubejs } = event.recipes
+	let { farmersdelight, createdieselgenerators, create, minecraft, kubejs } = event.getRecipes()
 
 	// 树皮切木屑
 	farmersdelight.cutting("createdieselgenerators:wood_chip", [

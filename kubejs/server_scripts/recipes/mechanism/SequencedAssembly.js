@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { cmi, create, vintageimprovements } = event.recipes
+	let { cmi, create, vintageimprovements } = event.getRecipes()
 
 	/**
 	 * 第一大章节的序列装配封装

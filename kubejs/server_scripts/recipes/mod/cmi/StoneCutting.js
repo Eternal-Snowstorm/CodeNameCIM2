@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { kubejs, minecraft } = event.recipes
+    let { kubejs, minecraft } = event.getRecipes()
 
     // 公仔
     Ingredient.of("#cmi:dev_doll")

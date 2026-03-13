@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-	let { kubejs } = event.recipes
+	let { kubejs } = event.getRecipes()
 
 	// 举例, name就是"mekanism:basic_smelting_factory"中的"smelting_factory"(工厂级起步)
 	// 而lowestid填最低级的机器id(如"mekanism:energized_smelter", /kjs hand之后直接原封不动扔里面就行)

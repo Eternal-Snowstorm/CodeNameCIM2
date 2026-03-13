@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create } = event.getRecipes()
 
 	// 熔融安山合金
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 180), [

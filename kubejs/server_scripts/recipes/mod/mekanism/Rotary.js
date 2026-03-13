@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { mekanism } = event.recipes
+	let { mekanism } = event.getRecipes()
 
 	mekanism.rotary()
 		.fluidInput(Fluid.of(IngrUtils.getFirstFluidId("forge:brine"), 200))

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { vintageimprovements } = event.recipes
+	let { vintageimprovements } = event.getRecipes()
 
 	// 橡胶粉
 	vintageimprovements.vibrating(Item.of("cmi:rubber_dust").withChance(0.15), [

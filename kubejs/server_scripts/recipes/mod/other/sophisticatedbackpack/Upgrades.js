@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { minecraft, tconstruct } = event.recipes
+	let { minecraft, tconstruct } = event.getRecipes()
 	const BASE = "sophisticatedbackpacks:upgrade_base"
 
 	// 堆叠青春版

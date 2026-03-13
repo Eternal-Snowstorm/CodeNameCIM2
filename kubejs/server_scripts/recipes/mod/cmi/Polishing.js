@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { create } = event.recipes
+    let { create } = event.getRecipes()
 
     create.sandpaper_polishing(
         "cmi:polished_quartz_prism",

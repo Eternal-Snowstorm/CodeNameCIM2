@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { immersiveengineering } = event.recipes
+    let { immersiveengineering } = event.getRecipes()
 
     // 钢锭
     immersiveengineering.arc_furnace("#forge:ingots/steel")

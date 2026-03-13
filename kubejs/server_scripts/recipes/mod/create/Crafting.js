@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { kubejs } = event.recipes
+    let { kubejs } = event.getRecipes()
 
     // 粉碎轮
     kubejs.shaped("create:crushing_wheel", [

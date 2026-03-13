@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs } = event.getRecipes()
 
 	// 冶炼炉控制器
 	kubejs.shaped("tconstruct:smeltery_controller", [

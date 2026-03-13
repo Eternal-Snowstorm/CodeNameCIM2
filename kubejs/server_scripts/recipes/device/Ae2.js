@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { kubejs } = event.recipes
+    let { kubejs } = event.getRecipes()
 
     // ME物品元件外壳
     kubejs.shaped("2x ae2:item_cell_housing", [

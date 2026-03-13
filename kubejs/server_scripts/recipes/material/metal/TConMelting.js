@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { tconstruct } = event.recipes
+    let { tconstruct } = event.getRecipes()
 
     global.metalGroup.forEach((metal) => {
         event.remove([

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { thermal } = event.recipes
+    let { thermal } = event.getRecipes()
 
     thermal.centrifuge([
         Item.of("minecraft:blaze_powder").withChance(0.5),

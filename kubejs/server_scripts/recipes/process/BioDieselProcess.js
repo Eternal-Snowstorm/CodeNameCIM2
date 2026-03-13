@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators } = event.recipes
+	let { create, createdieselgenerators } = event.getRecipes()
 
 	// 糖浆
 	create.compacting([

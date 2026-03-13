@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, tconstruct, thermal } = event.recipes
+	let { create, tconstruct, thermal } = event.getRecipes()
 	let Inc = {
 		OBSIDIAN_PLATE: "create:unprocessed_obsidian_sheet"
 	}

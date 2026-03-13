@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { immersiveengineering } = event.recipes
+    let { immersiveengineering } = event.getRecipes()
 
     immersiveengineering.metal_press("2x immersiveengineering:empty_casing")
         .input("#forge:ingots/brass")

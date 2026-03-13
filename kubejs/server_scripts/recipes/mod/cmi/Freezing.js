@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { cmi } = event.recipes
+	let { cmi } = event.getRecipes()
 
 	// 巧克力
 	cmi.freezing("ratatouille:chocolate_mold_solid", [

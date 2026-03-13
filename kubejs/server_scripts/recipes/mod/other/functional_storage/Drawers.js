@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { kubejs, create, tconstruct } = event.recipes
+    let { kubejs, create, tconstruct } = event.getRecipes()
 
     // 物品抽屉
     let drawerWoodTypes = [

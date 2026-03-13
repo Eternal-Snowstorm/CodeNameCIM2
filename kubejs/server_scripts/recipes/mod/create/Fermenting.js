@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { createdieselgenerators } = event.recipes
+	let { createdieselgenerators } = event.getRecipes()
 
 	let biodiesel = Fluid.of("createdieselgenerators:biodiesel")
 

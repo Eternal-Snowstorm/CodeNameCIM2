@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { thermal_extra } = event.recipes
+    let { thermal_extra } = event.getRecipes()
 
     // 热力组件
     thermal_extra.component_assembly(`4x ${Mechanism.THERMAL.AUG.getId()}`, [

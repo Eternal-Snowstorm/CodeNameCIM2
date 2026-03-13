@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { kubejs, create } = event.recipes
+    let { kubejs, create } = event.getRecipes()
     let Inc = {
         ENGINE: "cmi:incomplete_steam_engine"
     }

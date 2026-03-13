@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, thermal } = event.recipes
+	let { create, thermal } = event.getRecipes()
 
 	// 光合反应液
 	create.mixing(Fluid.of("cmi:photosyn_fluid", 125), [

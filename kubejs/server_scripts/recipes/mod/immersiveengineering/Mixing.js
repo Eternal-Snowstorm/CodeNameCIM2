@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { immersiveengineering } = event.recipes
+    let { immersiveengineering } = event.getRecipes()
 
     // 红石酸
     event.custom({

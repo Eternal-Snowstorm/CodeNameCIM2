@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { thermal } = event.recipes
+    let { thermal } = event.getRecipes()
 
     thermal.press("2x immersiveengineering:empty_casing", [
         "#forge:ingots/brass",

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { mekanism } = event.recipes
+	let { mekanism } = event.getRecipes()
 
 	// 终章构件零件
 	mekanism.nucleosynthesizing(

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs } = event.getRecipes()
 
 	// 红石伺服器
 	kubejs.shaped("thermal:redstone_servo", [

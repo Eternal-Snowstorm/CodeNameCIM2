@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { thermal } = event.recipes
+	let { thermal } = event.getRecipes()
 
 	// 聚烯烃板
 	thermal.chiller("thermal_extra:polyolefin_plate", [

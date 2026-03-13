@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { immersiveengineering } = event.recipes
+	let { immersiveengineering } = event.getRecipes()
 
 	immersiveengineering.coke_oven("#forge:coal_coke")
 		.time(500 * 0.75)

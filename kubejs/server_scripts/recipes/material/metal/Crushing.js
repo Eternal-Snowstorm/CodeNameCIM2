@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create } = event.getRecipes()
 
 	global.metalGroup.forEach((metal) => {
 		let RAW_ORE = `#forge:raw_materials/${metal}`

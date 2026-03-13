@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements } = event.recipes
+	let { create, vintageimprovements } = event.getRecipes()
 	const INCOMPLETE_AVIATION_CELL = Item.of("cmi:incomplete_aviation_cell")
 
 	// 空白硬盘

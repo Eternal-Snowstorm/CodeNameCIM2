@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create, farmersdelight } = event.recipes
+	let { kubejs, create, farmersdelight } = event.getRecipes()
 
 	// 木板批量处理
 	event.forEachRecipe({

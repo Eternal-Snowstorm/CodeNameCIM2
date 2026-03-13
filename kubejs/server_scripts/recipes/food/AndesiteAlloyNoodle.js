@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, farmersdelight } = event.recipes
+	let { create, farmersdelight } = event.getRecipes()
 
 	farmersdelight.cutting("cmi:andesite_alloy_noodle_stage0", [
 		"#forge:plates/andesite_alloy"

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements } = event.recipes
+	let { create, vintageimprovements } = event.getRecipes()
 	let Inc = {
 		SCANNER: "cmi:incomplete_scanner",
 		SCAMOD: "cmi:incomplete_scanning_module",

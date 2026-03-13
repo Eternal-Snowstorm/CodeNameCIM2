@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { minecraft, mekanism, immersiveengineering, thermal } = event.recipes
+	let { minecraft, mekanism, immersiveengineering, thermal } = event.getRecipes()
 	let types = ["forge:ores", "forge:raw_materials", "forge:dusts", "create:crushed_raw_materials"]
 	let furnaceMetals = global.meltingLevels[1000]
 	let blastFurnaceMetals = global.meltingLevels[1500]

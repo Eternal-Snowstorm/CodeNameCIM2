@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { immersiveengineering } = event.recipes
+	let { immersiveengineering } = event.getRecipes()
 
 	immersiveengineering.blueprint("4x immersiveengineering:casull", [
 		"2x cmi:nitrocellulose",

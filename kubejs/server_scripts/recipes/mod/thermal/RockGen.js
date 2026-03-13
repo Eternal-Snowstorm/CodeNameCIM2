@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { thermal } = event.recipes
+    let { thermal } = event.getRecipes()
 
     // 安山岩
     thermal.rock_gen("minecraft:andesite")

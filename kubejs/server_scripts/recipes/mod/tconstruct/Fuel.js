@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { tconstruct } = event.recipes
+	let { tconstruct } = event.getRecipes()
 
 	addFuel(Fluid.of("ad_astra:cryo_fuel"), 4225)
 	addFuel(Fluid.of("ad_astra:fuel"), 1417)

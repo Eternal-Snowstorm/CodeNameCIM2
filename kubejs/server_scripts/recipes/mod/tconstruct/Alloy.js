@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { tconstruct } = event.recipes
+	let { tconstruct } = event.getRecipes()
 
 	tconstruct.alloy(Fluid.of("tconstruct:molten_pig_iron", 90 * 2))
 		.temperature(811)

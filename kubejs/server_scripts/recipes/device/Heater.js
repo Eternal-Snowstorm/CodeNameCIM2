@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.recipes
+	let { kubejs } = event.getRecipes()
 	const BRICK = "tconstruct:seared_brick"
 	const PRISM = "#forge:glass/prism"
 	const GLASS = "#forge:glass"

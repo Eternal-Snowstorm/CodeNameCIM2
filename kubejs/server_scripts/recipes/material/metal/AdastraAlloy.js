@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { mekanism } = event.recipes
+	let { mekanism } = event.getRecipes()
 
 	// 戴斯
 	event.custom({

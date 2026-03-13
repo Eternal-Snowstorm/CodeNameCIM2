@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.recipes
+	let { create } = event.getRecipes()
 
 	addCrushedSplashing("iron", "minecraft:redstone")
 	addCrushedSplashing("gold", "thermal:cinnabar_dust")

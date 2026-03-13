@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { cmi } = event.recipes
+    let { cmi } = event.getRecipes()
 
     // 充能紫水晶
     cmi.grinding([

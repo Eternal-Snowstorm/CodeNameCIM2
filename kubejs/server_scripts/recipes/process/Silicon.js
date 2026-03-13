@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements, thermal } = event.recipes
+	let { create, vintageimprovements, thermal } = event.getRecipes()
 
 	// 石英粉
 	create.crushing("thermal:quartz_dust", [

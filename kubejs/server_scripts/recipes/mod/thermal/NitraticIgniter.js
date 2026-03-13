@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { thermal_extra } = event.recipes
+	let { thermal_extra } = event.getRecipes()
 	// region define Recipe
 	/**
 	 * 硝酸点火器配方构造器

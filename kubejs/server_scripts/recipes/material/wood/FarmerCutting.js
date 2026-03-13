@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { farmersdelight } = event.recipes
+    let { farmersdelight } = event.getRecipes()
     WoodMaterials.forEach((wood) => {
         let { SAPLING, LEAVE } = wood
 

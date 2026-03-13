@@ -35,7 +35,7 @@
 
 ```js
 ServerEvents.recipes((event) => {
-    let { create, kubejs, minecraft } = event.recipes
+    let { create, kubejs, minecraft } = event.getRecipes()
 })
 ```
 

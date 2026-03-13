@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create } = event.recipes
+	let { kubejs, create } = event.getRecipes()
 
 	// 传动
 	// 齿轮

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create, vintageimprovements } = event.recipes
+	let { kubejs, create, vintageimprovements } = event.getRecipes()
 	let Inc = {
 		MEKA: "cmi:incomplete_mekanism_mechanism_part",
 		ADA: "cmi:incomplete_space_mechanism_part",

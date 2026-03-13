@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, kubejs } = event.recipes
+	let { create, kubejs } = event.getRecipes()
 
 	create.deploying("minecraft:redstone_torch", [
 		"#forge:rods/wooden",

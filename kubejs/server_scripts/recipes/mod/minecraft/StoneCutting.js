@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { minecraft } = event.recipes
+	let { minecraft } = event.getRecipes()
 
 	minecraft.stonecutting("immersiveengineering:sheetmetal_iron", "#forge:plates/iron")
 	minecraft.stonecutting("#forge:plates/iron", "immersiveengineering:sheetmetal_iron")
