@@ -159,7 +159,7 @@ ServerEvents.highPriorityData((event) => {
 			// 利用输出的物品id完成匹配tag的物品统一
 			addJsonFile(`raw_${material}_block`, addUnification(
 				tag,
-				ids[0]
+				outputId
 			))
 
 			// 输出完成统一的信息

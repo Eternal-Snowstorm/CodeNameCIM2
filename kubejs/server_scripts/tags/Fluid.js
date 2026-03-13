@@ -166,4 +166,12 @@ ServerEvents.tags("fluid", (event) => {
 
 	event.get("forge:molten_pig_iron")
 		.add("#tconstruct:molten_pig_iron")
+
+	// 月球车燃油
+	event.get("ad_astra:tier_1_rover_fuel")
+		.removeAll()
+		.add("#forge:biodiesel")
+		.add("#forge:diesel")
+		.add("#forge:gasoline")
+		.add("#tconstruct:blazing_blood")
 })
