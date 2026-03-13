@@ -102,6 +102,18 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
+			// 雪原类生物群系
+			snowy: function () {
+				structure.biomes = [
+					"minecraft:frozen_peaks",
+					"minecraft:snowy_slopes",
+					"minecraft:snowy_taiga",
+					"minecraft:snowy_plains"
+				]
+				build()
+				return this
+			},
+
 			// 森林类生物群系
 			forest: function () {
 				structure.biomes = [
