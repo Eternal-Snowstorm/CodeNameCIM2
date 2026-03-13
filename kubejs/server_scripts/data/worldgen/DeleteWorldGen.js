@@ -48,4 +48,6 @@ ServerEvents.highPriorityData((event) => {
 	deleteFeatureGen("mekanism", "ore_uranium_small_retrogen")
 	deleteFeatureGen("mekanism", "ore_uranium_buried")
 	deleteFeatureGen("mekanism", "ore_uranium_buried_retrogen")
+	deleteFeatureGen("thermal", "silver_ore")
+	deleteFeatureGen("thermal", "nickel_ore")
 })

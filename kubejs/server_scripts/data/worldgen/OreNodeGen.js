@@ -194,14 +194,36 @@ ServerEvents.highPriorityData((event) => {
 
 			// 下界
 			nether: function () {
-				structure.biomes = [
-					"minecraft:nether_wastes",
-					"minecraft:soul_sand_valley",
-					"minecraft:crimson_forest",
-					"minecraft:warped_forest",
-					"minecraft:basalt_deltas"
-				]
-				build()
+				let netherStructure = {
+					type: "minecraft:jigsaw",
+					biomes: [
+						"minecraft:nether_wastes",
+						"minecraft:soul_sand_valley",
+						"minecraft:crimson_forest",
+						"minecraft:warped_forest",
+						"minecraft:basalt_deltas"
+					],
+					size: 1,
+					start_pool: `${global.namespace}:${type}/${name}`,
+					step: "underground_structures",
+					start_height: {
+						type: "uniform",
+						min_inclusive: {
+							absolute: -96
+						},
+						max_inclusive: {
+							absolute: -10
+						}
+					},
+					spawn_overrides: {},
+					max_distance_from_center: 64,
+					project_start_to_heightmap: "WORLD_SURFACE_WG",
+					terrain_adaptation: "beard_thin",
+					use_expansion_hack: false
+				}
+				event.addJson(`cmi:worldgen/structure/${type}/${name}`, netherStructure)
+				event.addJson(`cmi:worldgen/structure_set/${type}/${name}`, structureSet)
+				event.addJson(`cmi:worldgen/template_pool/${type}/${name}`, templatePool)
 				return this
 			},
 
@@ -318,4 +340,16 @@ ServerEvents.highPriorityData((event) => {
 	// 油页岩矿点
 	addStructureGen("ore_node", "oil_shale_node", 819248123, 70, 50)
 		.dryland()
+
+	// 银矿点
+	addStructureGen("ore_node", "silver_node", 238591935, 70, 50)
+		.snowy()
+
+	// 镍矿点
+	addStructureGen("ore_node", "nickel_node", 486941840, 70, 50)
+		.wetland()
+
+	// 钒矿点
+	addStructureGen("ore_node", "vanadium_node", 482109189, 70, 50)
+		.nether()
 })
