@@ -14,14 +14,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addOreNodeLang(key, value) {
-		event.add(`block.${global.namespace}.stone_${key}_ore_node`, `${value}矿物节点`)
-		event.add(`block.${global.namespace}.deepslate_${key}_ore_node`, `深层${value}矿物节点`)
-		event.add(`block.${global.namespace}.nether_${key}_ore_node`, `塔尔塔罗斯${value}矿物节点`)
-		event.add(`block.${global.namespace}.end_${key}_ore_node`, `倪克斯${value}矿物节点`)
-		event.add(`block.${global.namespace}.moon_${key}_ore_node`, `莫托斯${value}矿物节点`)
-		event.add(`block.${global.namespace}.mars_${key}_ore_node`, `阿瑞斯${value}矿物节点`)
-		event.add(`block.${global.namespace}.venus_${key}_ore_node`, `阿弗洛狄忒${value}矿物节点`)
-		event.add(`block.${global.namespace}.glacio_${key}_ore_node`, `哈迪斯${value}矿物节点`)
+		event.add(`block.${global.namespace}.${key}_ore_node`, `${value}矿物节点`)
 	}
 
 	/**
@@ -91,6 +84,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addOreNodeLang("zinc", "锌")
 	addOreNodeLang("iron", "铁")
 	addOreNodeLang("gold", "金")
+	addOreNodeLang("silver", "银")
+	addOreNodeLang("nickel", "镍")
+	addOreNodeLang("vanadium", "钒")
 	addOreNodeLang("platinum", "铂")
 	addOreNodeLang("cheese", "奶酪")
 	addOreNodeLang("coal", "煤炭")
