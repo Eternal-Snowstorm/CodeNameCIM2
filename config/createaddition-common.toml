@@ -33,10 +33,10 @@
 [general]
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
 	#Range: > 0
-	max_stress = 32768
+	max_stress = 8192
 	#Forge Energy conversion rate (in FE/t at 256 RPM, value is the FE/t generated and consumed is at 256rpm).
 	#Range: > 0
-	fe_at_max_rpm = 640
+	fe_at_max_rpm = 256
 	#If audio should be enabled or not.
 	audio_enabled = true
 

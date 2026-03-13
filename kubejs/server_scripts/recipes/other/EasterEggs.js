@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { immersiveengineering } = event.getRecipes()
+    let { create, immersiveengineering } = event.getRecipes()
     const STEEL_INGOT = IngrUtils.getFirstItemId("#forge:ingots/steel")
 
     // 钢錠
@@ -32,4 +32,18 @@ ServerEvents.recipes((event) => {
         .input("kaleidoscope_cookery:stockpot_lid")
         .time(20 * 10)
         .id("cmi:immersiveengineering/blast_furnace/steel_ingot/stockpot_lid")
+
+    create.mechanical_crafting(Item.of("minecraft:rotten_flesh", 81), [
+        "XXXXXXXXX",
+        "XXXXXXXXX",
+        "XXXXXXXXX",
+        "XXXXXXXXX",
+        "XXXXXXXXX",
+        "XXXXXXXXX",
+        "XXXXXXXXX",
+        "XXXXXXXXX",
+        "XXXXXXXXX"
+    ], {
+        X: "minecraft:rotten_flesh"
+    }).id("cmi:what_the_fvvk_is_that")
 })
