@@ -2,7 +2,6 @@ Ponder.tags((event) => {
 	/** 
 	 * @param {String} tag Tag的注册ID
 	 * @param {Internal.ItemStack_} icon 游戏内显示的图标
-	 * @param {String} name 游戏内显示的名称
 	 * @param {(
 	 * 		String |
 	 *  	Internal.ItemStack | 
@@ -15,9 +14,8 @@ Ponder.tags((event) => {
 	 * )} [item] PonderTag内包含的物品
 	 * @constructor
 	 */
-	function PonderTag(tag, icon, name, item) {
+	function PonderTag(tag, icon, item) {
 		this.tag = tag
-		this.name = name
 		this.icon = icon
 		this.items = ITEMS
 
@@ -32,13 +30,12 @@ Ponder.tags((event) => {
 			}
 		}
 
-		// let index = Component.translatable(`cmi.ponder.tag.${name}`).getString()
-		let index = `${name} Ponder Index`
+		let index = Component.translatable(`${id}.ponder.index`).getString()
 		let id = `${global.namespace}:${tag}`
 		event.createTag(id, icon, name, index, ITEMS)
 	}
 
-	new PonderTag("ponder", "cmi:creative_mechanism", "Modpack", [
+	new PonderTag("ponder", "cmi:creative_mechanism", [
 		"cmi:accelerator",
 		"cmi:water_pump",
 		"minecraft:water_bucket",
@@ -47,7 +44,7 @@ Ponder.tags((event) => {
 		"mekanism:steam_bucket",
 	])
 
-	new PonderTag("other", "mekanism:cardboard_box", "Other", [
+	new PonderTag("other", "mekanism:cardboard_box", [
 		"portality:controller",
 		"portality:frame",
 		"portality:module_items",
@@ -63,7 +60,7 @@ Ponder.tags((event) => {
 		"mekanism:cardboard_box"
 	])
 
-	new PonderTag("tconstruct", "tconstruct:smeltery_controller", "Tinkers' Construct", [
+	new PonderTag("tconstruct", "tconstruct:smeltery_controller", [
 		"tconstruct:seared_faucet",
 		"tconstruct:scorched_faucet",
 		"tconstruct:seared_melter",
@@ -81,7 +78,7 @@ Ponder.tags((event) => {
 		"tconstruct:seared_bricks"
 	])
 
-	new PonderTag("ae2", "ae2:controller", "Applied Energistics 2", [
+	new PonderTag("ae2", "ae2:controller", [
 		"ae2:fluix_glass_cable",
 		"ae2:condenser",
 		"ae2:controller",
