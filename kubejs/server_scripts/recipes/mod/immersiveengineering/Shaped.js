@@ -45,4 +45,24 @@ ServerEvents.recipes((event) => {
 		B: "#forge:dyes/blue",
 		C: "minecraft:paper"
 	})
+
+	// 铁机械零件
+	kubejs.shaped("2x immersiveengineering:component_iron", [
+		"P P",
+		" G ",
+		"P P"
+	], {
+		P: "#forge:plates/iron",
+		G: "#forge:gears/copper"
+	}).id("immersiveengineering:crafting/component_iron")
+
+	// 钢机械零件
+	kubejs.shaped("2x immersiveengineering:component_steel", [
+		"P P",
+		" G ",
+		"P P"
+	], {
+		P: "#forge:plates/steel",
+		G: "#forge:gears/electrum"
+	}).id("immersiveengineering:crafting/component_steel")
 })

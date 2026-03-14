@@ -51,6 +51,10 @@ StartupEvents.registry("item", (event) => {
 	addIncompleteItem("motor_rotor")
 	addIncompleteItem("thermal_mechanism_augment")
 
+	// 热力设备
+	addItem("thermal_devices")
+		.parentModel("thermal:block/machine_frame")
+
 	// 飞轮
 	addItem("flywheel")
 		.parentModel("create:block/flywheel/item")
