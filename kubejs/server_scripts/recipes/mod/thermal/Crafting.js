@@ -21,6 +21,18 @@ ServerEvents.recipes((event) => {
 		B: "#forge:nuggets/iron"
 	}).id("thermal:explosive_grenade_4")
 
+	// 机器框架
+	kubejs.shaped("2x thermal:machine_frame", [
+		"AAA",
+		"BGB",
+		"CCC"
+	], {
+		A: "#forge:plates/invar",
+		B: "#forge:glass",
+		C: "#forge:plates/industrial_iron",
+		G: "#forge:gears/tin"
+	}).id("thermal:machine_frame")
+
 	replaceBombRecipe("minecraft:ender_pearl", "ender")
 	replaceBombRecipe("minecraft:glowstone_dust", "glowstone")
 	replaceBombRecipe("minecraft:redstone", "redstone")

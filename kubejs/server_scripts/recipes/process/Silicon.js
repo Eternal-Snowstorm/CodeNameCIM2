@@ -18,9 +18,33 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 纯净石英粉
-	vintageimprovements.pressurizing("cmi:pure_quartz_dust", [
+	vintageimprovements.pressurizing([
+		"cmi:pure_quartz_dust",
+		"thermal:slag"
+	], [
 		"#forge:dusts/quartz",
-		Fluid.of("cmi:pure_sand", 100)
+		"cmi:furnaced_lime"
+	]).heated()
+
+	vintageimprovements.pressurizing([
+		"cmi:pure_quartz_dust",
+		"thermal:slag"
+	], [
+		Fluid.of("cmi:pure_sand", 100),
+		"cmi:furnaced_lime"
+	]).heated()
+
+	// 玻璃
+	vintageimprovements.pressurizing(
+		Fluid.of("tconstruct:molten_glass", 250), [
+		"2x cmi:pure_quartz_dust",
+		"#forge:dusts/lime"
+	]).superheated()
+
+	vintageimprovements.pressurizing(
+		Fluid.of("tconstruct:molten_glass", 250), [
+		"2x cmi:pure_quartz_dust",
+		"cmi:plant_ash"
 	]).superheated()
 
 	// 硅混合物

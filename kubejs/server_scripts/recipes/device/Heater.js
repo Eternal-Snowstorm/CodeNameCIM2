@@ -64,16 +64,6 @@ ServerEvents.recipes((event) => {
 		B: BRICK
 	}).id("tconstruct:smeltery/seared/ingot_gauge")
 
-	// 焦黑玻璃
-	kubejs.shaped("tconstruct:seared_glass", [
-		"PBP",
-		"BPB",
-		"PBP"
-	], {
-		P: PRISM,
-		B: BRICK
-	}).id("tconstruct:smeltery/seared/seared_glass")
-
 	// 铸模箱
 	kubejs.shaped("tconstruct:cast_chest", [
 		"BXB",

@@ -128,4 +128,17 @@ ServerEvents.recipes((event) => {
         X: "#forge:plates/iron",
         Y: "#forge:plates/andesite_alloy"
     }).id("thermal:drill_head")
+
+    // 背罐
+    kubejs.shaped("create:copper_backtank", [
+        "AMA",
+        "CBC",
+        "PPP"
+    ], {
+        A: "#forge:plates/andesite_alloy",
+        M: Mechanism.STEAM.COM,
+        B: Casing.BRONZE,
+        C: "thermal:cured_rubber",
+        P: "#forge:plates/bronze"
+    }).id("create:crafting/appliances/copper_backtank")
 })

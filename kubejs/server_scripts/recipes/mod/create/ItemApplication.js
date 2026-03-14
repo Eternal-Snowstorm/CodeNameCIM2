@@ -19,6 +19,12 @@ ServerEvents.recipes((event) => {
 		["#forge:ingots/brass", "#forge:plates/brass"]
 	]).id("create:item_application/brass_casing_from_log")
 
+	// 青铜机壳
+	create.item_application("cmi:bronze_casing", [
+		"#minecraft:logs",
+		["#forge:ingots/bronze", "#forge:plates/bronze"]
+	]).id("cmi:item_application/bronze_casing_from_log")
+
 	// 哭泣黑曜石
 	create.item_application("minecraft:crying_obsidian", [
 		"minecraft:obsidian",

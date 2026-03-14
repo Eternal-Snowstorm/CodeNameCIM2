@@ -124,27 +124,28 @@ ServerEvents.recipes((event) => {
 
         // 蒸汽引擎
         kubejs.shaped(`steampowered:${material.id}_steam_engine`, [
-            "ABC",
-            "EDF",
-            "ABC"
+            "ABE",
+            "MCF",
+            "ABE"
         ], {
             A: plate,
             B: ingot,
-            C: "create:andesite_alloy",
-            D: "cmi:bronze_mechanism",
-            E: "create:fluid_pipe",
+            C: Casing.BRONZE,
+            M: Mechanism.STEAM.COM,
+            E: "create:andesite_alloy",
             F: "create:shaft"
         })
 
         // 飞轮
         kubejs.shaped(`steampowered:${material.id}_flywheel`, [
             "AB ",
-            "BCB",
+            "CFB",
             "AB "
         ], {
             A: "createdieselgenerators:engine_piston",
             B: plate,
-            C: "create:flywheel"
+            C: Casing.BRONZE,
+            F: "create:flywheel"
         })
     })
 

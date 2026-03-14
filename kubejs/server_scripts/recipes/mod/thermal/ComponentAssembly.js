@@ -56,6 +56,15 @@ ServerEvents.recipes((event) => {
         "#forge:dusts/amethyst"
     ])
 
+    // 机器框架
+    addComponRecipe("thermal:machine_frame", [
+        "#forge:plates/invar",
+        "#forge:plates/invar",
+        "#forge:plates/industrial_iron",
+        "#forge:plates/industrial_iron",
+        "#forge:glass"
+    ])
+
     // 红石伺服器
     addComponRecipe("2x thermal:redstone_servo", [
         Fluid.of("immersiveengineering:redstone_acid", 200),

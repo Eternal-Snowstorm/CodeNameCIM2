@@ -21,7 +21,10 @@ ServerEvents.recipes((event) => {
         "thermal:press_packing_2x2_die",
         "thermal:press_packing_3x3_die",
         "thermal:press_unpacking_die",
-		"tconstruct:smeltery/seared/grout"
+        "tconstruct:smeltery/seared/grout",
+        "tconstruct:smeltery/seared/seared_glass",
+        "tconstruct:smeltery/melting/glass/sand",
+        "tconstruct:smeltery/melting/glass/sand_cast"
     ]
     removeRecipeIds.forEach((id) => {
         event.remove({
