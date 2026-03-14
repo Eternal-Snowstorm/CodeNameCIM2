@@ -28,7 +28,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 破旧的存钱罐
 	addBlock("piggy_bank", "cardinal")
-		.soundType(SoundType.GLASS)
+		.soundType(SoundType.DECORATED_POT)
 		.waterlogged()
 		.notSolid()
 		.defaultCutout()
