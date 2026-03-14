@@ -39,7 +39,9 @@ ServerEvents.recipes((event) => {
 		"ratatouille:freezing/chocolate_mold_filled",
 		"ratatouille:freezing",
 		"createdeco:compacting/industrial_iron_ingot",
-		"create:crafting/materials/rose_quartz"
+		"create:crafting/materials/rose_quartz",
+		"create:crafting/appliances/netherite_backtank_from_netherite",
+		"create_jetpack:netherite_jetpack_upgrade_from_netherite"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

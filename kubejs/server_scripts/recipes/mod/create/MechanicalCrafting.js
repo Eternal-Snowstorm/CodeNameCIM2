@@ -96,4 +96,82 @@ ServerEvents.recipes((event) => {
 		D: ["create:windmill_bearing", "create:mechanical_bearing", "create:clockwork_bearing"]
 	}).id("createdieselgenerators:crafting/pumpjack_bearing")
 
+	// 隔热背罐
+	event.custom({
+		"type": "create_jetpack:copy_nbt_mechanical_crafting",
+		"pattern": [
+			"PDMDP",
+			"PFBFP",
+			" SPS "
+		],
+		"key": {
+			"P": Ingredient.of("#forge:plates/steel").toJson(),
+			"D": Ingredient.of("#forge:plates/dense_obsidian").toJson(),
+			"M": Mechanism.NETHER.COM.toJson(),
+			"F": Ingredient.of("#forge:fabric_hemp").toJson(),
+			"B": Item.of("create:copper_backtank").toJson(),
+			"S": Ingredient.of("#forge:plates/obsidian").toJson()
+		},
+		"result": Item.of("create:netherite_backtank").toJson()
+	}).id("create:crafting/appliances/netherite_backtank")
+
+	// 喷气背包
+	event.custom({
+		"type": "create_jetpack:copy_nbt_mechanical_crafting",
+		"pattern": [
+			" PSP ",
+			"PMBMP",
+			"PFGFP",
+			" C C "
+		],
+		"key": {
+			"P": Ingredient.of("#forge:plates/brass").toJson(),
+			"S": Item.of("create:shaft").toJson(),
+			"M": Mechanism.PRECISION.COM.toJson(),
+			"B": Item.of("create:copper_backtank").toJson(),
+			"F": Item.of("create:propeller").toJson(),
+			"G": Item.of("immersiveengineering:glider").toJson(),
+			"C": Item.of("create:chute").toJson()
+		},
+		"result": Item.of("create_jetpack:jetpack").toJson()
+	}).id("create_jetpack:jetpack")
+
+	// 隔热喷气背包
+	event.custom({
+		"type": "create_jetpack:copy_nbt_mechanical_crafting",
+		"pattern": [
+			" PSP ",
+			"PMBMP",
+			"PFGFP",
+			" C C "
+		],
+		"key": {
+			"P": Ingredient.of("#forge:plates/brass").toJson(),
+			"S": Item.of("create:shaft").toJson(),
+			"M": Mechanism.PRECISION.COM.toJson(),
+			"B": Item.of("create:netherite_backtank").toJson(),
+			"F": Item.of("create:propeller").toJson(),
+			"G": Item.of("immersiveengineering:glider").toJson(),
+			"C": Item.of("create:chute").toJson()
+		},
+		"result": Item.of("create_jetpack:netherite_jetpack").toJson()
+	}).id("create_jetpack:netherite_jetpack")
+
+	event.custom({
+		"type": "create_jetpack:copy_nbt_mechanical_crafting",
+		"pattern": [
+			"PDMDP",
+			"PFBFP",
+			" SPS "
+		],
+		"key": {
+			"P": Ingredient.of("#forge:plates/steel").toJson(),
+			"D": Ingredient.of("#forge:plates/dense_obsidian").toJson(),
+			"M": Mechanism.NETHER.COM.toJson(),
+			"F": Ingredient.of("#forge:fabric_hemp").toJson(),
+			"B": Item.of("create_jetpack:jetpack").toJson(),
+			"S": Ingredient.of("#forge:plates/obsidian").toJson()
+		},
+		"result": Item.of("create_jetpack:netherite_jetpack").toJson()
+	}).id("create_jetpack:netherite_jetpack_upgrade")
 })
