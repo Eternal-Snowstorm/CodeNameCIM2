@@ -15,11 +15,11 @@ ServerEvents.recipes((event) => {
 		"minecraft:sugar"
 	])
 
-	create.compacting(Fluid.of("thermal:syrup", 125), [
+	create.compacting(Fluid.of("thermal:syrup", 50), [
 		"#forge:vegetables/beetroot"
 	])
 
-	create.compacting(Fluid.of("thermal:syrup", 125), [
+	create.compacting(Fluid.of("thermal:syrup", 100), [
 		"#forge:vegetables/beetroot",
 		"minecraft:sugar"
 	])
