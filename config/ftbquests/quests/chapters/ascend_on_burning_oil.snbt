@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "16B82E736AC7FDCE"
 			tasks: [{
 				id: "17C274929566069F"
@@ -22,8 +23,8 @@
 				title: "铝土"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -44,17 +45,18 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 0.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "2849DC36ACEA7681"
 			tasks: [{
 				id: "09D87AA6A3F7FF38"
 				item: "immersiveindustry:electrolyzer"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3709AF32680BD5CD"]
@@ -108,8 +110,8 @@
 				type: "item"
 			}]
 			title: "铝"
-			x: 2.5d
-			y: 2.5d
+			x: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -123,8 +125,8 @@
 				item: "thermal_extra:component_assembly"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 7.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -139,11 +141,12 @@
 				item: "cmi:thermal_mechanism"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.0d
+			x: 10.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["588CB73822918D10"]
+			hide_dependent_lines: true
 			id: "135EED5D795BB2D5"
 			subtitle: "因瓦合金(笑)"
 			tasks: [{
@@ -160,7 +163,7 @@
 			}]
 			title: "殷钢"
 			x: 5.0d
-			y: 7.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -176,7 +179,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6CCEECDF932F5041"]
@@ -194,9 +197,10 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 7.5d
+			y: 5.5d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "3CDC0B1303B8785C"
 			tasks: [{
 				id: "4F829018AC64858A"
@@ -204,9 +208,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 6.5d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "490BA0C159C3FF63"
 			tasks: [{
 				id: "5E0BDCFB5C3A7A7B"
@@ -214,7 +219,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["541572E2CD225DD7"]
@@ -231,8 +236,8 @@
 				title: "钒板"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 2.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["16854FB39C805578"]
@@ -242,8 +247,8 @@
 				item: "thermal:machine_crystallizer"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.0d
+			x: 12.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -264,18 +269,19 @@
 				title: "纯净石英"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 5.0d
+			x: 12.5d
+			y: 3.5d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "19422BB1CF729FC7"
 			tasks: [{
 				id: "26A41852C3A8A65A"
 				item: "cmi:crystal_catalyt_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.5d
+			x: 15.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["20227AC2A1D37ED9"]
@@ -292,8 +298,8 @@
 				title: "纯净石英粉"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.5d
+			x: 12.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6A57D13406E9D6AA"]
@@ -314,8 +320,8 @@
 				item: "immersiveengineering:component_electronic"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.5d
+			x: 10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["042CA25C2CE9F78C"]
@@ -328,10 +334,11 @@
 				item: "cmi:light_engineering_mechanism"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 7.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "6B467317FA711CD2"
 			tasks: [{
 				id: "6ED05BFDAA7DEB2C"
@@ -339,7 +346,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -355,7 +362,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -388,8 +395,8 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 0.0d
+			x: 10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6CCEECDF932F5041"]
@@ -399,8 +406,8 @@
 				item: "vintageimprovements:constantan_rod"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3B2F46F5F77D366F"]
@@ -421,7 +428,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -435,8 +442,8 @@
 				item: "tconstruct:molten_steel_bucket"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 5.0d
+			x: 15.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -451,8 +458,8 @@
 				item: "cmi:refined_iron_bloom"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 5.0d
+			x: 17.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0CCAD3D0E6741560"]
@@ -469,10 +476,11 @@
 				title: "石灰粉"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 5.0d
+			x: 20.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "0CCAD3D0E6741560"
 			tasks: [{
 				id: "204B1E7083C1DC84"
@@ -498,8 +506,8 @@
 				title: "石灰石"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 2.5d
+			x: 20.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["78250BAEED3506BA"]
@@ -514,8 +522,8 @@
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 7.5d
+			x: 15.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -555,10 +563,11 @@
 				title: "铸铁"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 7.5d
+			x: 17.5d
+			y: 5.5d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "0FA1A601134C5105"
 			tasks: [{
 				id: "1C5ADED58164F7A9"
@@ -572,10 +581,11 @@
 				title: "焦煤粉"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 10.0d
+			x: 20.0d
+			y: 6.5d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			description: [
 				"&l炼钢坩埚结构说明&r"
 				"你需要使用&7高炉砖&r、&c燃烧室&r以及&7坩埚底座&r来搭建完整的多方块结构，并在指定位置安装&6高炉预热器&r以提高温度"
@@ -628,10 +638,11 @@
 				}
 			]
 			title: "炼钢坩埚"
-			x: 15.0d
-			y: 2.5d
+			x: 17.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "588CB73822918D10"
 			tasks: [
 				{
@@ -661,7 +672,7 @@
 			]
 			title: "镍和银"
 			x: 5.0d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["588CB73822918D10"]
@@ -694,7 +705,7 @@
 			]
 			title: "银"
 			x: 5.0d
-			y: 12.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["407FD936195F18B0"]
@@ -712,7 +723,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 12.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["44580C9FC3A043D2"]
@@ -723,7 +734,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -739,7 +750,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 15.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["430B1B3285C99CD3"]
@@ -756,8 +767,8 @@
 				title: "高定向热解石墨锭"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 12.5d
+			x: 12.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6ED3E5867F2A90AB"]
@@ -774,8 +785,8 @@
 				title: "高定向热解石墨粉"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 12.5d
+			x: 15.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0FA1A601134C5105"]
@@ -829,11 +840,11 @@
 				}
 			]
 			title: "工业挤压机"
-			x: 12.5d
-			y: 10.0d
+			x: 17.5d
+			y: 7.5d
 		}
 		{
-			dependencies: ["6A3204F0275C1DEA"]
+			dependencies: ["6095C38E6A48D0AE"]
 			icon: "cmi:smart_mechanism"
 			id: "54B7DF3F4B9BD3A4"
 			shape: "gear"
@@ -1103,7 +1114,7 @@
 				}
 			]
 			x: 10.0d
-			y: 17.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["407FD936195F18B0"]
@@ -1120,8 +1131,8 @@
 				title: "银齿轮"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 15.0d
+			x: 7.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["59831FBE15050279"]
@@ -1138,8 +1149,8 @@
 				title: "硅板"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 17.5d
+			x: 15.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["050A77C0A80CFE30"]
@@ -1150,7 +1161,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 15.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["2902DA1D51BD15F5"]
@@ -1167,8 +1178,8 @@
 				title: "硅"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 15.0d
+			x: 17.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["050A77C0A80CFE30"]
@@ -1178,8 +1189,8 @@
 				item: "create_connected:control_chip"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 17.5d
+			x: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1193,8 +1204,8 @@
 				item: "cmi:smart_mechanism_augment"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 15.0d
+			x: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["0FA1A601134C5105"]
@@ -1229,8 +1240,8 @@
 				}
 			]
 			title: "硅的准备"
-			x: 15.0d
-			y: 12.5d
+			x: 20.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["721C20E88A98122E"]
@@ -1246,8 +1257,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 10.0d
+			x: 15.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["16854FB39C805578"]
@@ -1259,8 +1270,8 @@
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 27.5d
+			x: 20.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["3640CEE4D21C8BB5"]
@@ -1282,8 +1293,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 25.0d
+			x: 10.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["7CE3BF3F7F7FC1D9"]
@@ -1321,8 +1332,8 @@
 				}
 			]
 			title: "原油分馏初步产物"
-			x: 7.5d
-			y: 25.0d
+			x: 12.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["7FA0A97798CCF465"]
@@ -1332,8 +1343,8 @@
 				item: "thermal:heavy_oil_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 22.5d
+			x: 15.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -1346,8 +1357,8 @@
 				item: "thermal_extra:lubricant_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 25.0d
+			x: 17.5d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -1360,8 +1371,8 @@
 				item: "createdieselgenerators:gasoline_bucket"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 25.0d
+			x: 17.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7FA0A97798CCF465"]
@@ -1371,8 +1382,8 @@
 				item: "cmi:sulfric_diesel_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 27.5d
+			x: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["7FA0A97798CCF465"]
@@ -1382,8 +1393,8 @@
 				item: "cmi:kerosene_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 27.5d
+			x: 12.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["11B2066810421699"]
@@ -1400,8 +1411,8 @@
 				title: "硫粉"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 30.0d
+			x: 17.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["11B2066810421699"]
@@ -1411,8 +1422,8 @@
 				item: "createdieselgenerators:diesel_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 30.0d
+			x: 15.0d
+			y: 20.0d
 		}
 		{
 			dependencies: [
@@ -1425,8 +1436,8 @@
 				item: "thermal_extra:naphtha_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 30.0d
+			x: 12.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["0E3481D80180E00C"]
@@ -1436,8 +1447,8 @@
 				item: "cmi:light_olefin_bucket"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 30.0d
+			x: 15.0d
+			y: 22.0d
 		}
 		{
 			dependencies: [
@@ -1450,10 +1461,11 @@
 				item: "cmi:light_silicone_ether_bucket"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 32.5d
+			x: 17.5d
+			y: 23.0d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			description: ["{image:cmi:textures/images/ie/chemical_reactor.png width:103 height:147 align:center}"]
 			icon: "immersiveindustry:chemical_reactor"
 			id: "5486A9D8E0073EAB"
@@ -1498,8 +1510,8 @@
 				}
 			]
 			title: "反应釜"
-			x: 7.5d
-			y: 32.5d
+			x: 17.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["5486A9D8E0073EAB"]
@@ -1509,8 +1521,8 @@
 				item: "cmi:polysilicone_ether_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 32.5d
+			x: 20.0d
+			y: 22.0d
 		}
 		{
 			dependencies: [
@@ -1538,18 +1550,19 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 32.5d
+			x: 22.5d
+			y: 21.0d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "2809F6E25BE835B0"
 			tasks: [{
 				id: "1B6D05A70ECD89B5"
 				item: "thermal:machine_chiller"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 35.0d
+			x: 20.0d
+			y: 20.0d
 		}
 		{
 			dependencies: [
@@ -1562,8 +1575,8 @@
 				item: "cmi:vinegar_acid_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 35.0d
+			x: 22.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["664B44589F807708"]
@@ -1573,18 +1586,19 @@
 				item: "cmi:vinegar_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 35.0d
+			x: 22.5d
+			y: 17.0d
 		}
 		{
+			dependencies: ["1570B04A1D692BCC"]
 			id: "5DE46B617DB0CEC6"
 			tasks: [{
 				id: "018FA16EF8C96B5B"
 				item: "createdieselgenerators:distillation_controller"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 37.5d
+			x: 20.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["2916D3E15559DF0C"]
@@ -1594,8 +1608,8 @@
 				item: "createdieselgenerators:gasoline_bucket"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 27.5d
+			x: 10.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["3D5497B8DC0ED5B6"]
@@ -1606,7 +1620,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 30.0d
+			y: 19.0d
 		}
 		{
 			dependencies: [
@@ -1619,8 +1633,8 @@
 				item: "cmi:cracked_gasoline_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 27.5d
+			x: 5.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["654FBA59B16DF4C6"]
@@ -1630,8 +1644,8 @@
 				item: "cmi:light_olefin_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 27.5d
+			x: 7.5d
+			y: 20.0d
 		}
 		{
 			dependencies: [
@@ -1644,8 +1658,8 @@
 				item: "cmi:benzene_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 22.5d
+			x: 5.0d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -1658,8 +1672,8 @@
 				item: "thermal_extra:naphtha_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 25.0d
+			x: 7.5d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -1672,8 +1686,8 @@
 				item: "cmi:phenol_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 25.0d
+			x: 7.5d
+			y: 16.0d
 		}
 	]
 	title: "油燃而升"

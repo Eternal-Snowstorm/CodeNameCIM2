@@ -25,7 +25,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -44,10 +44,11 @@
 				item: "cmi:motor_rotor"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.0d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["04004B46385E2AF2"]
 			description: [
 				"将铁进行&6进一步熔锻&r，清除其中的杂质后，一种更加柔韧的材料就出现了"
 				"工业铁的可塑性和韧性极佳，是一种理想的&a冲压模具&r与&a设备外壳&r材料"
@@ -68,8 +69,8 @@
 				type: "item"
 			}]
 			title: "韧性强大的铁制品"
-			x: -4.5d
-			y: 1.0d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -98,8 +99,8 @@
 				type: "item"
 			}]
 			title: "琥珀金"
-			x: -4.5d
-			y: -1.0d
+			x: -4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -114,20 +115,22 @@
 				type: "item"
 			}]
 			title: "红石酸水冷剂"
-			x: -2.0d
-			y: 2.5d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["04004B46385E2AF2"]
 			id: "7C2DCC26298ACC51"
 			tasks: [{
 				id: "069C486393CA376A"
 				item: "tconstruct:molten_lead_bucket"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.5d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
+			dependencies: ["04004B46385E2AF2"]
 			id: "1EF0004B28066AF0"
 			shape: "pentagon"
 			size: 1.5d
@@ -143,13 +146,13 @@
 				title: "红石粉"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 2.5d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
 				"68A82E2E7552EF90"
-				"10FE6C8E2FB59714"
+				"7B311FB3BDA3F3DD"
 			]
 			description: [
 				"使用&6自动化工程师装配台&r可以自动化处理&6工程师装配台&r内的蓝图配方。只需要选择配方后通上电并且源源不断往里输入原料便可实现自动化"
@@ -183,8 +186,8 @@
 				type: "checkmark"
 			}]
 			title: "真空管怎么自动化"
-			x: 2.5d
-			y: -2.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["66F1898DB743301D"]
@@ -195,8 +198,8 @@
 				item: "immersiveengineering:electron_tube"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5F0BB5EE6AFEE840"]
@@ -213,8 +216,8 @@
 				title: "琥珀金板"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.0d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["211642A0702308A1"]
@@ -231,8 +234,8 @@
 				title: "镍锭"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -245,8 +248,8 @@
 				item: "cmi:engineering_mechanism_part"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -271,11 +274,11 @@
 				title: "康铜锭"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.5d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["7B311FB3BDA3F3DD"]
+			dependencies: ["541572E2CD225DD7"]
 			id: "10FE6C8E2FB59714"
 			rewards: [{
 				id: "21C223335813DCD2"
@@ -323,11 +326,11 @@
 				}
 			]
 			title: "是时候发电了"
-			x: 2.5d
-			y: 0.0d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["541572E2CD225DD7"]
+			dependencies: ["10FE6C8E2FB59714"]
 			id: "7B311FB3BDA3F3DD"
 			rewards: [{
 				count: 9
@@ -342,8 +345,8 @@
 				type: "item"
 			}]
 			title: "得把电存起来"
-			x: 2.5d
-			y: 2.0d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -363,8 +366,8 @@
 				title: "钒锭"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: 7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -389,8 +392,8 @@
 				item: "create:rose_quartz"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.5d
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -417,8 +420,8 @@
 				title: "纯净石英粉"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["343FF83E544BCB9D"]
@@ -436,8 +439,8 @@
 				title: "石英粉"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.5d
+			x: 2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["597C6E45B2C2B855"]
@@ -448,10 +451,11 @@
 				item: "cmi:pure_sand_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 4.5d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
+			dependencies: ["04004B46385E2AF2"]
 			id: "343FF83E544BCB9D"
 			tasks: [{
 				id: "076D552EC1F0CCAE"
@@ -465,10 +469,11 @@
 				title: "石英"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 8.5d
+			x: 4.0d
+			y: 7.0d
 		}
 		{
+			dependencies: ["04004B46385E2AF2"]
 			id: "597C6E45B2C2B855"
 			subtitle: "海滩上一大堆"
 			tasks: [{
@@ -483,8 +488,8 @@
 				title: "沙子"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 6.5d
+			x: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -499,8 +504,8 @@
 				item: "cmi:photosensitive_mechanism"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 6.5d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1B38A75357F7EF12"]
@@ -511,8 +516,8 @@
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 2.5d
+			x: -4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3E77FFA67682D3E5"]
@@ -523,8 +528,8 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 4.5d
+			x: -2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -540,10 +545,11 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 4.5d
+			x: -4.0d
+			y: 8.0d
 		}
 		{
+			dependencies: ["04004B46385E2AF2"]
 			id: "2E5B74230C1BCE67"
 			subtitle: "或许木头是最方便的"
 			tasks: [{
@@ -558,10 +564,11 @@
 				title: "大齿轮(半成品)"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 2.5d
+			x: -6.0d
+			y: 9.0d
 		}
 		{
+			dependencies: ["04004B46385E2AF2"]
 			id: "5BE72CC5C35C3BF0"
 			tasks: [{
 				id: "191124021833D620"
@@ -575,10 +582,11 @@
 				title: "银锭"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -1.0d
+			x: -6.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["04004B46385E2AF2"]
 			id: "0FD5009A9709ACE5"
 			tasks: [{
 				id: "21E0C29ECEA2CB6E"
@@ -592,10 +600,11 @@
 				title: "金锭"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.0d
+			x: -6.0d
+			y: -2.5d
 		}
 		{
+			dependencies: ["04004B46385E2AF2"]
 			id: "73251C27B7403CF9"
 			tasks: [
 				{
@@ -624,8 +633,8 @@
 				}
 			]
 			title: "黄铜"
-			x: -13.5d
-			y: 4.5d
+			x: -6.0d
+			y: 7.0d
 		}
 	]
 	title: "精智元件"

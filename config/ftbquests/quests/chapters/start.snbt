@@ -10,7 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["73153E1AFAD14636"]
+			dependencies: ["5E676A3C46C6141B"]
 			icon: "tconstruct:encyclopedia"
 			id: "5D0FEBD3FC3443C6"
 			rewards: [
@@ -88,7 +88,7 @@
 				type: "item"
 			}]
 			title: "熔炉"
-			x: 1.0d
+			x: 1.5d
 			y: 16.5d
 		}
 		{
@@ -201,6 +201,7 @@
 						tic_broken: 0b
 					}
 				}
+				title: "任意镐尖斧"
 				type: "item"
 			}]
 			title: "镐尖斧"
@@ -222,7 +223,7 @@
 				type: "item"
 			}]
 			title: "砖泥"
-			x: 2.5d
+			x: 3.0d
 			y: 12.5d
 		}
 		{
@@ -241,7 +242,7 @@
 				title: "圆石"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 14.5d
 		}
 		{
@@ -263,7 +264,7 @@
 				type: "item"
 			}]
 			title: "粗铜"
-			x: -0.5d
+			x: 0.0d
 			y: 16.5d
 		}
 		{
@@ -285,7 +286,7 @@
 				item: { Count: 64, id: "tconstruct:seared_brick" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: 12.5d
 		}
 		{
@@ -298,7 +299,7 @@
 				item: "cmi:stone_mechanism"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: 14.5d
 		}
 		{
@@ -311,7 +312,7 @@
 				type: "item"
 			}]
 			title: "更大的工作台"
-			x: -0.5d
+			x: 0.0d
 			y: 14.5d
 		}
 		{
@@ -330,7 +331,7 @@
 				title: "锹"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: 12.5d
 		}
 		{
@@ -348,7 +349,7 @@
 				title: "沙子"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 12.5d
 		}
 		{
@@ -360,7 +361,7 @@
 				item: { Count: 16, id: "minecraft:gravel" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 13.5d
 		}
 		{
@@ -378,7 +379,7 @@
 				title: "黏土球"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 11.5d
 		}
 		{
@@ -445,7 +446,7 @@
 				type: "item"
 			}]
 			title: "铜部件"
-			x: -0.5d
+			x: 0.0d
 			y: 18.5d
 		}
 		{
@@ -462,7 +463,7 @@
 				type: "observation"
 			}]
 			title: "石英矿"
-			x: 2.5d
+			x: 3.0d
 			y: 16.5d
 		}
 		{
@@ -480,7 +481,7 @@
 				title: "磨制石英棱镜"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: 16.5d
 		}
 		{
@@ -498,7 +499,7 @@
 				title: "石英"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 16.5d
 		}
 		{
@@ -556,7 +557,7 @@
 				}
 			]
 			title: "初级冶炼"
-			x: 8.0d
+			x: 8.5d
 			y: 14.5d
 		}
 		{
@@ -575,7 +576,7 @@
 				type: "item"
 			}]
 			title: "铜锭"
-			x: 1.0d
+			x: 1.5d
 			y: 18.5d
 		}
 	]
