@@ -301,4 +301,7 @@ StartupEvents.registry("item", (event) => {
 	// // Mg(OH)2
 	// addItem("magnesium_hydroxide")
 	// 	.texture(`${global.namespace}:item/material/sea/mgoh2`)
+
+	// 火箭发射遥控器
+	addItem("rocket_launcher")
 })
