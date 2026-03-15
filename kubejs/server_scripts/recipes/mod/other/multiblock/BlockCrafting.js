@@ -28,9 +28,9 @@ BlockEvents.rightClicked((event) => {
 		return
 	}
 
-	// if (!structure.validate(level, block.pos)) {
-	// 	return
-	// }
+	if (!structure.validate(level, block.pos)) {
+		return
+	}
 
 	let multiblock = MultiblockHandler
 		.builder(level, block.pos, () => structure)
