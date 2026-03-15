@@ -41,7 +41,8 @@ ServerEvents.recipes((event) => {
 		"createdeco:compacting/industrial_iron_ingot",
 		"create:crafting/materials/rose_quartz",
 		"create:crafting/appliances/netherite_backtank_from_netherite",
-		"create_jetpack:netherite_jetpack_upgrade_from_netherite"
+		"create_jetpack:netherite_jetpack_upgrade_from_netherite",
+		"createaddition:crafting/large_connector_gold"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

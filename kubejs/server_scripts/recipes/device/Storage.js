@@ -53,26 +53,6 @@ ServerEvents.recipes((event) => {
 		M: Mechanism.WOODEN.COM
 	}).id("create_connected:crafting/kinetics/item_silo")
 
-	// 漏斗
-	kubejs.shaped("3x minecraft:hopper", [
-		"X X",
-		"XMX",
-		" X "
-	], {
-		M: Mechanism.WOODEN.COM,
-		X: ["#forge:plates/tin", "#forge:plates/iron"],
-	}).id("minecraft:hopper")
-
-	// 溜槽
-	kubejs.shaped("4x create:chute", [
-		"X X",
-		" M ",
-		"X X"
-	], {
-		X: "#forge:plates/industrial_iron",
-		M: Mechanism.WOODEN.COM
-	}).id("create:crafting/kinetics/chute")
-
 	// 移动式存储接口
 	kubejs.shapeless("2x create:portable_storage_interface", [
 		Casing.ANDESITE,

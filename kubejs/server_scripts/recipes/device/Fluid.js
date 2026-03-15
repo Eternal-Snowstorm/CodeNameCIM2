@@ -1,41 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.getRecipes()
 
-	// 流体管道
-	kubejs.shaped("8x create:fluid_pipe", [
-		"AAA",
-		"   ",
-		"AAA"
-	], {
-		A: "#forge:plates/copper"
-	}).id("create:crafting/kinetics/fluid_pipe")
-
-	kubejs.shaped("8x copycats:copycat_fluid_pipe", [
-		"AAA",
-		"   ",
-		"AAA"
-	], {
-		A: "#forge:plates/zinc"
-	}).id("copycats:crafting/copycat_fluid_pipe")
-
-	// 黄铜管道
-	kubejs.shaped("8x ad_astra:desh_fluid_pipe", [
-		"AAA",
-		"   ",
-		"AAA"
-	], {
-		A: "#forge:plates/brass"
-	}).id("ad_astra:desh_fluid_pipe")
-
-	// 铸铁管道
-	kubejs.shaped("8x ad_astra:ostrum_fluid_pipe", [
-		"AAA",
-		"   ",
-		"AAA"
-	], {
-		A: "#forge:plates/cast_iron"
-	}).id("ad_astra:ostrum_fluid_pipe")
-
 	// 流体储罐
 	kubejs.shaped("create:fluid_tank", [
 		"A",

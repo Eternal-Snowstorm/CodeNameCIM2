@@ -82,6 +82,14 @@ ServerEvents.recipes((event) => {
 	]).blueprint("components")
 		.id("immersiveengineering:blueprint/component_steel")
 
+	// 真空管
+	immersiveengineering.blueprint("2x immersiveengineering:electron_tube", [
+		"#forge:plates/nickel",
+		"#forge:wires/copper",
+		"create:polished_rose_quartz"
+	]).blueprint("components")
+		.id("immersiveengineering:blueprint/electron_tube")
+
 	Ingredient.of("#cmi:molds")
 		.getItemIds()
 		.forEach((mold) => {

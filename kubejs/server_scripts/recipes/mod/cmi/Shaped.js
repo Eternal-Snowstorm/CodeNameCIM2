@@ -91,14 +91,6 @@ ServerEvents.recipes((event) => {
         B: "thermal:cured_rubber"
     }).id("create:crafting/kinetics/brass_hand")
 
-    // 传送带
-    kubejs.shaped("4x create:belt_connector", [
-        "AAA",
-        "AAA"
-    ], {
-        A: "thermal:cured_rubber"
-    }).id("create:crafting/kinetics/belt_connector")
-
     // 冲击桩
     kubejs.shaped("cmi:impact_pile", [
         "A",
