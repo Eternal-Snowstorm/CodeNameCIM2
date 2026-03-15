@@ -150,6 +150,7 @@
 			y: 19.5d
 		}
 		{
+			dependencies: ["0D502CA40E47F832"]
 			hide_dependency_lines: true
 			id: "0498E2991294B14D"
 			tasks: [{
@@ -427,6 +428,7 @@
 			y: 12.0d
 		}
 		{
+			dependencies: ["0D502CA40E47F832"]
 			description: ["想要杂酚油，我必须先做一台焦炉 "]
 			hide_dependency_lines: true
 			id: "2CCDB1390C34C80A"
@@ -466,6 +468,7 @@
 			y: 13.5d
 		}
 		{
+			dependencies: ["0D502CA40E47F832"]
 			hide_dependency_lines: true
 			id: "7A9561BE016F15B5"
 			tasks: [{
