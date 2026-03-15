@@ -8,7 +8,6 @@ JEIEvents.removeRecipes((event) => {
 		event.remove(type, id)
 	}
 
-	removeRecipeFromJEI("createaddition:charging", "cmi:createaddition/charging/overcharged_alloy_ingot")
 	removeRecipeFromJEI("minecraft:crafting", "cmi:minecraft/shaped/love_manual_only")
 	removeRecipeFromJEI("immersiveengineering:blast_furnace", [
 		"cmi:immersiveengineering/blast_furnace/steel_ingot/cooking_pot",

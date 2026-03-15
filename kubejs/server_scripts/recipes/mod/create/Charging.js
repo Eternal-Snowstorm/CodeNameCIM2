@@ -6,4 +6,7 @@ ServerEvents.recipes((event) => {
         "#forge:gems/amethyst"
     ]).energy(400)
 
+    createaddition.charging("cmi:overcharged_alloy_ingot", [
+        "create:chromatic_compound"
+    ]).energy(5000)
 })
