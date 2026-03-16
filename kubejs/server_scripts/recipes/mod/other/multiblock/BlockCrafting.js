@@ -1,4 +1,4 @@
-let stru1 = new StructureBuilder([
+let stru1 = StructureBuilder.create([
 	[
 		" 0 ",
 		"AAA",
@@ -35,6 +35,7 @@ BlockEvents.rightClicked((event) => {
 
 function spawnEntityByMultiblock(event, item, structure, entityId) {
 	let { player, block, level } = event
+	const IS_DEBUG = false
 
 	if (event.hand !== InteractionHand.MAIN_HAND) {
 		return
@@ -58,7 +59,9 @@ function spawnEntityByMultiblock(event, item, structure, entityId) {
 
 	player.swing()
 
-	multiblock.destroyAll(false)
+	if (!IS_DEBUG) {
+		multiblock.destroyAll(false)
+	}
 
 	let entity = level.createEntity(entityId)
 	entity.setPos(block.x + 0.5, block.y, block.z + 0.5)
