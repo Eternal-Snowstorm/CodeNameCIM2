@@ -1,8 +1,8 @@
 let structure = new MultiblockStructureBuilder([
 	[
 		"   ",
-		" 0 ",
-		"   "
+		"   ",
+		" 0 "
 	],
 	[
 		"AAA",

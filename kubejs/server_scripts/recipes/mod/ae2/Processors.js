@@ -209,7 +209,12 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         "type": "expatternprovider:circuit_cutter",
-        "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
+        "fluid_input": {
+            "amount": 100,
+            "ingredient": {
+                "fluid": "minecraft:water"
+            }
+        },
         "item_input": {
             "amount": 1,
             "ingredient": {
@@ -232,7 +237,12 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         "type": "expatternprovider:circuit_cutter",
-        "fluid_input": Fluid.of("minecraft:water", 100).toJson(),
+        "fluid_input": {
+            "amount": 100,
+            "ingredient": {
+                "fluid": "minecraft:water"
+            }
+        },
         "item_input": {
             "amount": 1,
             "ingredient": {
