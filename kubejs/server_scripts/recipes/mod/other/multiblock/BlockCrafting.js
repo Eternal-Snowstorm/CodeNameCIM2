@@ -1,4 +1,4 @@
-let stru1 = new MultiblockStructureBuilder([
+let stru1 = new StructureBuilder([
 	[
 		" 0 ",
 		"AAA",
