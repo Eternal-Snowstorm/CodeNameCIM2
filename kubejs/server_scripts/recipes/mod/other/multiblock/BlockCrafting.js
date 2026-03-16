@@ -1,8 +1,8 @@
 let structure = new MultiblockStructureBuilder([
 	[
 		"   ",
-		"   ",
-		" 0 "
+		" 0 ",
+		"   "
 	],
 	[
 		"AAA",
@@ -28,7 +28,7 @@ BlockEvents.rightClicked((event) => {
 		return
 	}
 
-	if (!structure.validate(level, block.pos)) {
+	if (structure.validate(level, block.pos) === null) {
 		return
 	}
 
@@ -37,6 +37,9 @@ BlockEvents.rightClicked((event) => {
 		.renderOffset(0, -1, 0)
 		.cacheTicks(20)
 		.build()
+
+	console.log(multiblock.getDirection())
+	player.swing()
 
 	if (!player.isCreative()) {
 		multiblock.destroyAll(false)
