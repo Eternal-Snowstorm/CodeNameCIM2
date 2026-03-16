@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
 	tconstruct.casting_table("tconstruct:silky_cloth")
 		.fluid(Fluid.of("tconstruct:molten_rose_gold", 90))
 		.cast("farmersdelight:canvas")
-		.cooling_time(40)
+		.cooling_time(20 * 2)
 		.cast_consumed(true)
 		.id("tconstruct:tools/modifiers/silky_cloth")
 
