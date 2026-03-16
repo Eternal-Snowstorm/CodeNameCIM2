@@ -23,7 +23,7 @@ ServerEvents.highPriorityData((event) => {
 				"type": "custommachinery:energy",
 				"id": "energy_input",
 				"mode": "input",
-				"capacity": 2147483647,
+				"capacity": 2000000,
 				"config": {
 					"default": "both"
 				}
