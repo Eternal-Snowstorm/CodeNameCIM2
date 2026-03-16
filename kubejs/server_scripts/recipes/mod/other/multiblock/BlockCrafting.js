@@ -1,8 +1,8 @@
 let stru1 = new MultiblockStructureBuilder([
 	[
-		"   ",
-		"   ",
-		" 0 "
+		" 0 ",
+		"AAA",
+		" A "
 	],
 	[
 		"AAA",
@@ -22,19 +22,25 @@ let stru1 = new MultiblockStructureBuilder([
 	.build()
 
 BlockEvents.rightClicked((event) => {
-	spawnEntityByMultiblock(event, stru1, "alexscaves:submarine")
+	spawnEntityByMultiblock(event, "minecraft:stick", stru1, "alexscaves:submarine")
 })
 
 /**
  * @param {Internal.BlockRightClickedEventJS} event 
+ * @param {Internal.ItemStack} item
  * @param {vazkii.patchouli.api.IMultiblock} structure 
  * @param {Internal.EntityType_<any>} entityId 
  * @returns 
  */
-function spawnEntityByMultiblock(event, structure, entityId) {
+
+function spawnEntityByMultiblock(event, item, structure, entityId) {
 	let { player, block, level } = event
 
 	if (event.hand !== InteractionHand.MAIN_HAND) {
+		return
+	}
+
+	if (event.getItem() !== item) {
 		return
 	}
 
@@ -52,9 +58,7 @@ function spawnEntityByMultiblock(event, structure, entityId) {
 
 	player.swing()
 
-	if (!player.isCreative()) {
-		multiblock.destroyAll(false)
-	}
+	multiblock.destroyAll(false)
 
 	let entity = level.createEntity(entityId)
 	entity.setPos(block.x + 0.5, block.y, block.z + 0.5)
@@ -76,10 +80,10 @@ function spawnEntityByMultiblock(event, structure, entityId) {
  */
 function directionToYRot(direction) {
 	switch (direction.name()) {
-		case "NORTH": return 180
-		case "SOUTH": return 0
-		case "WEST": return 90
-		case "EAST": return -90
+		case "NORTH": return 270
+		case "SOUTH": return 90
+		case "WEST": return 180
+		case "EAST": return 0
 		default: return 0
 	}
 }
