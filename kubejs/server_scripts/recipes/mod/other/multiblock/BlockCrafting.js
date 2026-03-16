@@ -31,7 +31,6 @@ BlockEvents.rightClicked((event) => {
  * @param {Internal.EntityType_<any>} entityId 
  * @returns 
  */
-
 function spawnEntityByMultiblock(event, structure, entityId) {
 	let { player, block, level } = event
 
@@ -58,9 +57,7 @@ function spawnEntityByMultiblock(event, structure, entityId) {
 	}
 
 	let entity = level.createEntity(entityId)
-
 	entity.setPos(block.x + 0.5, block.y, block.z + 0.5)
-
 	entity.spawn()
 
 	if (direction) {
