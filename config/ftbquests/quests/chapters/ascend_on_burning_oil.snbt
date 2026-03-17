@@ -596,6 +596,7 @@
 				"{image:cmi:textures/images/ie/crucible.png width:115 height:137 align:center}"
 			]
 			icon: "immersiveindustry:crucible"
+			icon_scale: 2.0d
 			id: "1CFE963288EAA71A"
 			rewards: [
 				{
@@ -792,6 +793,7 @@
 			dependencies: ["0FA1A601134C5105"]
 			description: ["{image:cmi:textures/images/ie/squeezer.png width:142 height:139 align:center}"]
 			icon: "immersiveengineering:squeezer"
+			icon_scale: 2.0d
 			id: "6ED3E5867F2A90AB"
 			rewards: [
 				{
@@ -1468,6 +1470,7 @@
 			dependencies: ["1570B04A1D692BCC"]
 			description: ["{image:cmi:textures/images/ie/chemical_reactor.png width:103 height:147 align:center}"]
 			icon: "immersiveindustry:chemical_reactor"
+			icon_scale: 2.0d
 			id: "5486A9D8E0073EAB"
 			rewards: [
 				{

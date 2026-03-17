@@ -93,7 +93,7 @@ ItemEvents.tooltip((event) => {
 	event.addAdvanced("cmi:simple_battery",
 		(item, advanced, tooltip) => {
 			let stored = item.nbt?.energy || 0
-			let max = 10000
+			let max = 150000
 			tooltip.add(Component.literal(`§e${stored} / ${max} FE`))
 		})
 
@@ -120,21 +120,6 @@ ItemEvents.tooltip((event) => {
 				}
 			}
 		})
-
-	// 工业平台
-	event.addAdvanced("cmi:industrial_platform",
-		(item, advanced, tooltip) => {
-			if (event.shift) {
-				let lines = Component.translatable("tooltip.cmi.industrial_platform")
-					.string.split("\n")
-				lines.forEach((line) => {
-					tooltip.add(line)
-				})
-			} else {
-				tooltip.add(Component.translatable("tooltip.cmi.industrial_platform.off"))
-			}
-		}
-	)
 
 	// 打桩机
 	event.addAdvanced("cmi:impact_pile", (item, advanced, tooltip) => {

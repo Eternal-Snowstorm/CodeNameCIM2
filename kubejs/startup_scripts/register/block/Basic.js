@@ -13,6 +13,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 虚空涌泉
 	addBlock("void_spring")
+		.soundType(SoundType.STONE)
 		.hardness(-1)
 		.resistance(114514)
 

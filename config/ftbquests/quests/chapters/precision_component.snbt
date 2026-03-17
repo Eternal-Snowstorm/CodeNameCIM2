@@ -165,6 +165,7 @@
 				"{image:cmi:textures/images/ie/auto_workbench.png width:163 height:151 align:center}"
 			]
 			icon: "immersiveengineering:auto_workbench"
+			icon_scale: 2.0d
 			id: "6ED98C2148C69BD7"
 			rewards: [{
 				id: "5D42BD25D845A30B"
