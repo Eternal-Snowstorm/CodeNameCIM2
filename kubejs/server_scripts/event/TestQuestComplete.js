@@ -1,8 +1,7 @@
-FTBQuestsEvents.customReward((event) => {
-	let { player, level, reward } = event
+FTBQuestsEvents.completed("09E1B57B8D35ED4E", (event) => {
+	let { player } = event
 
-	if (reward.hasTag("final_quest")) {
-		level.playSound(
+	player.getLevel().playSound(
 			null,
 			player.x,
 			player.y,
@@ -12,5 +11,4 @@ FTBQuestsEvents.customReward((event) => {
 			0.5,
 			1.0
 		)
-	}
 })

@@ -613,6 +613,26 @@
 			x: 4.5d
 			y: 0.0d
 		}
+		{
+			id: "09E1B57B8D35ED4E"
+			tasks: [{
+				id: "09039616DF8D6DEA"
+				title: "Test"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			id: "550330A6594D1E98"
+			tasks: [{
+				id: "1F61EBE034FBC283"
+				item: "minecraft:spruce_fence_gate"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.0d
+		}
 	]
 	title: "开始"
 }
