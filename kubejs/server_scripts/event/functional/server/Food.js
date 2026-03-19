@@ -27,6 +27,6 @@ addFoodEaten("create:blaze_cake", (event) => {
 	let hasEffect = player.hasEffect("minecraft:fire_resistance")
 
 	if (!hasEffect) {
-		player.attack(player.damageSources().lava(), 20)
+		player.attack(player.damageSources().lava(), player.getHealth())
 	}
 })
