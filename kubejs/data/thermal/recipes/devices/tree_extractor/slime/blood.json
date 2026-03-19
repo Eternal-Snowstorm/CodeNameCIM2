@@ -1,0 +1,20 @@
+{
+	"type": "thermal:tree_extractor",
+	"trunk": {
+		"Name": "tconstruct:bloodshroom_log",
+		"Properties": {
+			"axis": "y"
+		}
+	},
+	"leaves": {
+		"Name": "tconstruct:blood_slime_leaves",
+		"Properties": {
+			"persistent": "false"
+		}
+	},
+	"sapling": "tconstruct:blood_slime_sapling",
+	"result": {
+		"fluid": "tconstruct:magma",
+		"amount": 200
+	}
+}

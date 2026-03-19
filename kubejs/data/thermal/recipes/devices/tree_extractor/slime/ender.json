@@ -1,0 +1,20 @@
+{
+	"type": "thermal:tree_extractor",
+	"trunk": {
+		"Name": "tconstruct:enderbark_log",
+		"Properties": {
+			"axis": "y"
+		}
+	},
+	"leaves": {
+		"Name": "tconstruct:ender_slime_leaves",
+		"Properties": {
+			"persistent": "false"
+		}
+	},
+	"sapling": "tconstruct:ender_slime_sapling",
+	"result": {
+		"fluid": "tconstruct:ender_slime",
+		"amount": 200
+	}
+}

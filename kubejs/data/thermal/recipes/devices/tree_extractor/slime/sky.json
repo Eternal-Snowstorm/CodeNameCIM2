@@ -1,0 +1,20 @@
+{
+	"type": "thermal:tree_extractor",
+	"trunk": {
+		"Name": "tconstruct:skyroot_log",
+		"Properties": {
+			"axis": "y"
+		}
+	},
+	"leaves": {
+		"Name": "tconstruct:sky_slime_leaves",
+		"Properties": {
+			"persistent": "false"
+		}
+	},
+	"sapling": "tconstruct:sky_slime_sapling",
+	"result": {
+		"fluid": "tconstruct:sky_slime",
+		"amount": 200
+	}
+}
