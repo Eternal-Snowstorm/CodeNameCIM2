@@ -92,7 +92,7 @@ ItemEvents.tooltip((event) => {
 	// 电池
 	event.addAdvanced("cmi:simple_battery",
 		(item, advanced, tooltip) => {
-			let stored = item.nbt?.energy || 0
+			let stored = item.nbt?.Energy || 0
 			let max = 150000
 			tooltip.add(Component.literal(`§e${stored} / ${max} FE`))
 		})

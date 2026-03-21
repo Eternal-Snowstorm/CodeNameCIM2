@@ -147,42 +147,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("nuke_cooler")
 		.texture(`${global.namespace}:item/material/nuke_cooler`)
 
-	// 简易电池
-	addItem("simple_battery")
-		.maxStackSize(1)
-		.texture("createaddition:item/capacitor")
-		.attachCapability(CapabilityBuilder.ENERGY.customItemStack()
-			.canExtract(() => true)
-			.canReceive(() => true)
-			.getEnergyStored((stack) => {
-				return stack.nbt?.energy || 0
-			})
-			.getMaxEnergyStored((stack) => {
-				return 150000
-			})
-			.extractEnergy((stack, amount, simulate) => {
-				let stored = stack.nbt?.energy || 0
-				let extracted = Math.min(stored, amount)
-
-				if (!simulate) {
-					stack.nbt = stack.nbt || {}
-					stack.nbt.energy = stored - extracted
-				}
-				return extracted
-			})
-			.receiveEnergy((stack, amount, simulate) => {
-				let stored = stack.nbt?.energy || 0
-				let max = 150000
-				let received = Math.min(max - stored, amount)
-
-				if (!simulate) {
-					stack.nbt = stack.nbt || {}
-					stack.nbt.energy = stored + received
-				}
-				return received
-			})
-		)
-
 	// 红石线
 	addItem("redstone_wire")
 		.texture(`${global.namespace}:item/material/redstone_wire`)
