@@ -3,6 +3,7 @@ ServerEvents.recipes((event) => {
 
     // 钢锭
     immersiveengineering.arc_furnace("#forge:ingots/steel")
+		.additives([])
         .input("#forge:ingots/iron")
         .energy(10240)
         .slag("#forge:slag")
@@ -10,6 +11,7 @@ ServerEvents.recipes((event) => {
 
     // 钢块
     immersiveengineering.arc_furnace("#forge:storage_blocks/steel")
+		.additives([])
         .input("#forge:storage_blocks/iron")
         .energy(10240)
         .slag("#forge:slag")

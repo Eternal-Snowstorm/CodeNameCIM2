@@ -1,11 +1,11 @@
 ServerEvents.recipes((event) => {
-    let { kubejs, minecraft } = event.getRecipes()
+	let { minecraft } = event.getRecipes()
 
-    // 公仔
-    Ingredient.of("#cmi:dev_doll")
-        .getItemIds()
-        .forEach((id) => {
-            minecraft.stonecutting(id, "#minecraft:wool")
-            minecraft.stonecutting(id, "#cmi:dev_doll")
-        })
+	// 公仔
+	Ingredient.of("#cmi:dev_doll")
+		.getItemIds()
+		.forEach((id) => {
+			minecraft.stonecutting(id, "#minecraft:wool")
+			minecraft.stonecutting(id, "#cmi:dev_doll")
+		})
 })

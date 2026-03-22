@@ -119,17 +119,5 @@ ServerEvents.recipes((event) => {
 	], "#forge:raw_materials/osmium")
 		.energy(4000)
 
-
-
-	// new NitraticIgniterRecipeBuilder()
-	// 	.energy(4000)
-	// 	.ingredient("#forge:raw_materials/osmium")
-	// 	.results([
-	// 		setResult("mekanism:clump_osmium", 2, 1),
-	// 		setResult("mekanism:clump_osmium", 1, 0.5),
-	// 		setResult("mekanism:clump_osmium", 1, 0.25)
-	// 	])
-	// 	.build()
-
 	// endregion
 })

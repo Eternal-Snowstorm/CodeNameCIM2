@@ -68,7 +68,6 @@ ServerEvents.recipes((event) => {
 
 	// 强化高炉砖
 	event.replaceInput({
-		output: "immersiveengineering:blastbrick_reinforced",
-		input: "#forge:plates/steel"
+		output: "immersiveengineering:blastbrick_reinforced"
 	}, "#forge:plates/steel", "#forge:plates/invar")
 })

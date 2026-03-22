@@ -292,7 +292,7 @@ global.meltingPoints = {
 	"azure_neodymium": 1024, // null
 	"scarlet_neodymium": 1024, // null
 	"shadow_steel": 2106, // null
-	"refined_radiance": 2106, // null,
+	"refined_radiance": 2106, // null
 	"titanium": 1668,
 }
 /**

@@ -63,8 +63,7 @@ ServerEvents.recipes((event) => {
 		create.cutting([
 			LEAVE,
 			Item.of("minecraft:stick", 2)
-		], SAPLING
-		)
+		], SAPLING)
 	})
 
 	create.cutting([
@@ -79,5 +78,4 @@ ServerEvents.recipes((event) => {
 	], [
 		"thermal:rubberwood_log"
 	])
-
 })

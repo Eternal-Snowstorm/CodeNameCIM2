@@ -24,7 +24,12 @@ ServerEvents.recipes((event) => {
         "tconstruct:smeltery/seared/grout",
         "tconstruct:smeltery/seared/seared_glass",
         "tconstruct:smeltery/melting/glass/sand",
-        "tconstruct:smeltery/melting/glass/sand_cast"
+        "tconstruct:smeltery/melting/glass/sand_cast",
+		"thermal:compat/tconstruct/bottler_tconstruct_lavawood",
+		"thermal:compat/tconstruct/press_tconstruct_blood_slime_2x2_unpacking",
+		"thermal:compat/tconstruct/press_tconstruct_blood_slime_2x2_packing",
+		"thermal:compat/tconstruct/press_tconstruct_blood_slime_3x3_unpacking",
+		"thermal:compat/tconstruct/press_tconstruct_blood_slime_3x3_packing"
     ]
     removeRecipeIds.forEach((id) => {
         event.remove({

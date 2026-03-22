@@ -38,21 +38,21 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 量子
-	create.sequenced_assembly("cmi:quantum_mechanism_part", [
-		"#forge:nuggets/etrium"
-	], [
-		create.deploying(Inc.QUANTUM, [
-			Inc.QUANTUM,
-			"#forge:gems/fluix"
-		]),
-		create.deploying(Inc.QUANTUM, [
-			Inc.QUANTUM,
-			"alexscaves:notor_gizmo"
-		]),
-		vintageimprovements.laser_cutting(Inc.QUANTUM, [
-			Inc.QUANTUM
-		]).energy(4000).maxChargeRate(4000)
-	]).loops(1).transitionalItem(Inc.QUANTUM)
+	// create.sequenced_assembly("cmi:quantum_mechanism_part", [
+	// 	"#forge:nuggets/etrium"
+	// ], [
+	// 	create.deploying(Inc.QUANTUM, [
+	// 		Inc.QUANTUM,
+	// 		"#forge:gems/fluix"
+	// 	]),
+	// 	create.deploying(Inc.QUANTUM, [
+	// 		Inc.QUANTUM,
+	// 		"alexscaves:notor_gizmo"
+	// 	]),
+	// 	vintageimprovements.laser_cutting(Inc.QUANTUM, [
+	// 		Inc.QUANTUM
+	// 	]).energy(4000).maxChargeRate(4000)
+	// ]).loops(1).transitionalItem(Inc.QUANTUM)
 
 	// 通用
 	create.sequenced_assembly("8x cmi:mekanism_mechanism_part", [
@@ -72,15 +72,15 @@ ServerEvents.recipes((event) => {
 	]).loops(1).transitionalItem(Inc.MEKA)
 
 	// 太空
-	create.sequenced_assembly("4x cmi:space_mechanism_part", [
-		"#forge:nuggets/tungsten"
-	], [
-		create.deploying(Inc.ADA, [
-			Inc.ADA,
-			"ad_astra:etrionic_capacitor"
-		]),
-		vintageimprovements.laser_cutting(Inc.ADA, [
-			Inc.ADA
-		]).energy(4000).maxChargeRate(4000)
-	]).loops(1).transitionalItem(Inc.ADA)
+	// create.sequenced_assembly("4x cmi:space_mechanism_part", [
+	// 	"#forge:nuggets/tungsten"
+	// ], [
+	// 	create.deploying(Inc.ADA, [
+	// 		Inc.ADA,
+	// 		"ad_astra:etrionic_capacitor"
+	// 	]),
+	// 	vintageimprovements.laser_cutting(Inc.ADA, [
+	// 		Inc.ADA
+	// 	]).energy(4000).maxChargeRate(4000)
+	// ]).loops(1).transitionalItem(Inc.ADA)
 })

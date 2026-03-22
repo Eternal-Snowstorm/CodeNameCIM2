@@ -1,7 +1,7 @@
 ServerEvents.loaded((event) => {
 	let { server } = event
 
-	server.scheduleInTicks(20, () => {
+	server.scheduleInTicks(2, () => {
 		server.runCommandSilent("reload")
 	})
 })

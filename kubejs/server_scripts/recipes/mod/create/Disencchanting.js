@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	/**
 	 * 
-	 * @param {inputItem} ingredient 输入物品
+	 * @param {InputItem} ingredient 输入物品
 	 * @param {Number}  expAmount 产出经验量(mb)
 	 * @param {OutputItem} result 产出物品
 	 * @returns 
@@ -9,9 +9,10 @@ ServerEvents.recipes((event) => {
 	function addRecipe(ingredient, expAmount, result) {
 		let recipe = {
 			type: "create_enchantment_industry:disenchanting",
-			ingredients: [{
-				item: ingredient.toString()
-			}
+			ingredients: [
+				{
+					item: ingredient.toString()
+				}
 			],
 			results: []
 		}

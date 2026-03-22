@@ -1,7 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { minecraft } = event.getRecipes()
 
-
 	global.mechanismGroup.forEach((type) => {
 		minecraft.stonecutting(`cmi:${type}_machine`, `cmi:${type}_mechanism`)
 	})
