@@ -13,15 +13,15 @@ ServerEvents.recipes((event) => {
     })
 
     // 电容
-    kubejs.shaped("cmi:simple_battery", [
-        " A ",
-        "BBB",
-        " C "
-    ], {
-        A: "#forge:plates/copper",
-        B: "#forge:dusts/redstone",
-        C: "#forge:plates/zinc"
-    }).id("createaddition:crafting/capacitor_1")
+    // kubejs.shaped("cmi:simple_battery", [
+    //     " A ",
+    //     "BBB",
+    //     " C "
+    // ], {
+    //     A: "#forge:plates/copper",
+    //     B: "#forge:dusts/redstone",
+    //     C: "#forge:plates/zinc"
+    // }).id("createaddition:crafting/capacitor_1")
 
     // 扇叶
     kubejs.shaped("create:propeller", [

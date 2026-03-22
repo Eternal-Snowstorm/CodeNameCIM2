@@ -43,9 +43,9 @@ ServerEvents.recipes((event) => {
 		"create:crafting/appliances/netherite_backtank_from_netherite",
 		"create_jetpack:netherite_jetpack_upgrade_from_netherite",
 		"createaddition:crafting/large_connector_gold",
-		"create:compacting/andesite_from_flint",
-		"create:compacting/granite_from_flint",
-		"create:compacting/diorite_from_flint"
+		// "create:compacting/andesite_from_flint",
+		// "create:compacting/granite_from_flint",
+		// "create:compacting/diorite_from_flint"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

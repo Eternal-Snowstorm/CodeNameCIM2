@@ -1,7 +1,9 @@
 ServerEvents.loaded((event) => {
 	let { server } = event
 
-	server.runCommandSilent("reload")
+	server.scheduleInTicks(20, () => {
+		server.runCommandSilent("reload")
+	})
 })
 
 PlayerEvents.loggedIn((event) => {

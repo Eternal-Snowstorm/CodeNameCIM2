@@ -126,27 +126,27 @@ ServerEvents.recipes((event) => {
 	]).transitionalItem(Inc.ELETUBE).loops(1)
 		.id("create:crafting/materials/electron_tube")
 
-	// Ad电容器
-	create.sequenced_assembly("ad_astra:etrionic_capacitor", [
-		"#forge:plates/steel"
-	], [
-		create.deploying(Inc.CAPACITOR, [
-			Inc.CAPACITOR,
-			"#forge:plates/etrium"
-		]),
-		create.deploying(Inc.CAPACITOR, [
-			Inc.CAPACITOR,
-			"cmi:simple_battery"
-		]),
-		create.deploying(Inc.CAPACITOR, [
-			Inc.CAPACITOR,
-			"#forge:wires/copper"
-		]),
-		create.pressing(Inc.CAPACITOR, [
-			Inc.CAPACITOR
-		])
-	]).transitionalItem(Inc.CAPACITOR).loops(1)
-		.id("ad_astra:etrionic_capacitor")
+	// // Ad电容器
+	// create.sequenced_assembly("ad_astra:etrionic_capacitor", [
+	// 	"#forge:plates/steel"
+	// ], [
+	// 	create.deploying(Inc.CAPACITOR, [
+	// 		Inc.CAPACITOR,
+	// 		"#forge:plates/etrium"
+	// 	]),
+	// 	create.deploying(Inc.CAPACITOR, [
+	// 		Inc.CAPACITOR,
+	// 		"cmi:simple_battery"
+	// 	]),
+	// 	create.deploying(Inc.CAPACITOR, [
+	// 		Inc.CAPACITOR,
+	// 		"#forge:wires/copper"
+	// 	]),
+	// 	create.pressing(Inc.CAPACITOR, [
+	// 		Inc.CAPACITOR
+	// 	])
+	// ]).transitionalItem(Inc.CAPACITOR).loops(1)
+	// 	.id("ad_astra:etrionic_capacitor")
 
 	// 冷却设备
 	create.sequenced_assembly("cmi:nuke_cooler", [
