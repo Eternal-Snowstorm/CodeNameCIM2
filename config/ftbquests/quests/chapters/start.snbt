@@ -46,8 +46,8 @@
 				type: "item"
 			}]
 			title: "知识扩充"
-			x: -2.0d
-			y: 20.5d
+			x: 0.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["21ED583750523195"]
@@ -88,7 +88,7 @@
 				type: "item"
 			}]
 			title: "熔炉"
-			x: 1.5d
+			x: 6.0d
 			y: 16.5d
 		}
 		{
@@ -139,7 +139,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 12.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -205,15 +205,11 @@
 				type: "item"
 			}]
 			title: "镐尖斧"
-			x: -4.0d
+			x: -2.0d
 			y: 18.5d
 		}
 		{
-			dependencies: [
-				"154C4715E11930D1"
-				"4C55167AC0F5EF85"
-				"07FD61829D499994"
-			]
+			dependencies: ["07FD61829D499994"]
 			id: "17AEC8F5B7867AFE"
 			subtitle: "&m原本叫水泥来着&r"
 			tasks: [{
@@ -223,8 +219,8 @@
 				type: "item"
 			}]
 			title: "砖泥"
-			x: 3.0d
-			y: 12.5d
+			x: 8.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["5556629C2263CF73"]
@@ -242,14 +238,11 @@
 				title: "圆石"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: 14.5d
 		}
 		{
-			dependencies: [
-				"5556629C2263CF73"
-				"562C10B7F3C07DCF"
-			]
+			dependencies: ["5556629C2263CF73"]
 			id: "637C1318E278B73E"
 			tasks: [{
 				id: "44CCB17D995B1FD3"
@@ -264,7 +257,7 @@
 				type: "item"
 			}]
 			title: "粗铜"
-			x: 0.0d
+			x: 2.0d
 			y: 16.5d
 		}
 		{
@@ -286,7 +279,7 @@
 				item: { Count: 64, id: "tconstruct:seared_brick" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 10.0d
 			y: 12.5d
 		}
 		{
@@ -299,7 +292,7 @@
 				item: "cmi:stone_mechanism"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 10.0d
 			y: 14.5d
 		}
 		{
@@ -312,12 +305,12 @@
 				type: "item"
 			}]
 			title: "更大的工作台"
-			x: 0.0d
+			x: 2.0d
 			y: 14.5d
 		}
 		{
 			dependencies: ["5556629C2263CF73"]
-			description: ["做把锹能让我更快地收集材料......或者还有&6其他选择&f？"]
+			description: ["做把锹能让我更快地收集材料......或者还有&6更快的选择&f？"]
 			icon: {
 				Count: 1
 				id: "minecraft:stone_shovel"
@@ -331,55 +324,45 @@
 				title: "锹"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 2.0d
 			y: 12.5d
-		}
-		{
-			dependencies: ["4840B337A93659FC"]
-			id: "154C4715E11930D1"
-			tasks: [{
-				id: "0B7036B148045286"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:sand"
-					}
-				}
-				title: "沙子"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 12.5d
-		}
-		{
-			dependencies: ["4840B337A93659FC"]
-			id: "4C55167AC0F5EF85"
-			tasks: [{
-				count: 16L
-				id: "0A4F9B37E5883810"
-				item: { Count: 16, id: "minecraft:gravel" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 13.5d
 		}
 		{
 			dependencies: ["4840B337A93659FC"]
 			id: "07FD61829D499994"
-			tasks: [{
-				id: "49F5303C343FB372"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:clay"
+			tasks: [
+				{
+					id: "49F5303C343FB372"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:clay"
+						}
 					}
+					title: "黏土球"
+					type: "item"
 				}
-				title: "黏土球"
-				type: "item"
-			}]
-			x: 1.5d
+				{
+					id: "3281DC4814348F45"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:sand"
+						}
+					}
+					title: "Any #forge:sand"
+					type: "item"
+				}
+				{
+					id: "7E4D841806078036"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+			]
+			title: "砖泥原料采集"
+			x: 4.0d
 			y: 11.5d
 		}
 		{
@@ -392,8 +375,8 @@
 				item: "tconstruct:crafting_station"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 16.5d
+			x: 0.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["73153E1AFAD14636"]
@@ -417,12 +400,11 @@
 				}
 			]
 			title: "工匠的第一步"
-			x: -2.0d
-			y: 18.5d
+			x: 0.0d
+			y: 17.5d
 		}
 		{
 			dependencies: [
-				"637C1318E278B73E"
 				"5E676A3C46C6141B"
 				"562C10B7F3C07DCF"
 				"29C10567663F027F"
@@ -446,7 +428,7 @@
 				type: "item"
 			}]
 			title: "铜部件"
-			x: 0.0d
+			x: 2.0d
 			y: 18.5d
 		}
 		{
@@ -463,8 +445,8 @@
 				type: "observation"
 			}]
 			title: "石英矿"
-			x: 3.0d
-			y: 16.5d
+			x: 8.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["13884F7A75B4D36D"]
@@ -481,8 +463,8 @@
 				title: "磨制石英棱镜"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 16.5d
+			x: 12.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["5DEF00C4138EE4FB"]
@@ -499,7 +481,7 @@
 				title: "石英"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 10.0d
 			y: 16.5d
 		}
 		{
@@ -557,11 +539,15 @@
 				}
 			]
 			title: "初级冶炼"
-			x: 8.5d
+			x: 14.0d
 			y: 14.5d
 		}
 		{
-			dependencies: ["562C10B7F3C07DCF"]
+			dependencies: [
+				"562C10B7F3C07DCF"
+				"637C1318E278B73E"
+			]
+			hide_dependent_lines: true
 			id: "29C10567663F027F"
 			tasks: [{
 				id: "3182E885E9C07E4D"
@@ -576,8 +562,128 @@
 				type: "item"
 			}]
 			title: "铜锭"
-			x: 1.5d
-			y: 18.5d
+			x: 4.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["4840B337A93659FC"]
+			description: ["                  这是你应得的"]
+			hide_dependency_lines: true
+			id: "27027EE58989C749"
+			invisible: true
+			rewards: [{
+				count: 16
+				id: "543B1298BC2531BC"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "你很清楚什么工具适应什么需求"
+			tasks: [{
+				id: "53DB55F37FEC8275"
+				item: {
+					Count: 1
+					id: "tconstruct:excavator"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+					}
+				}
+				title: "任意 开掘铲"
+				type: "item"
+			}]
+			title: "任意 开掘铲"
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["4840B337A93659FC"]
+			description: ["                  这是你应得的"]
+			hide_dependency_lines: true
+			id: "7987BD41A7A33F99"
+			invisible: true
+			rewards: [{
+				count: 16
+				id: "2A30983D5CE84389"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "你很清楚什么工具适应什么需求"
+			tasks: [{
+				id: "2F6E4D7C0EE34401"
+				item: {
+					Count: 1
+					id: "tconstruct:broad_axe"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+					}
+				}
+				type: "item"
+			}]
+			title: "任意 板斧"
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4840B337A93659FC"]
+			description: ["                  这是你应得的"]
+			hide_dependency_lines: true
+			id: "13E71E8494A3B774"
+			invisible: true
+			subtitle: "你很清楚什么工具适应什么需求"
+			tasks: [
+				{
+					id: "62D37CCF4C0F737A"
+					item: {
+						Count: 1
+						id: "tconstruct:sledge_hammer"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					title: "任意 大锤"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3DF1CBE5B92EA172"
+					item: { Count: 16, id: "create:andesite_alloy" }
+					type: "item"
+				}
+			]
+			title: "任意 大锤"
+			x: 8.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["4840B337A93659FC"]
+			description: ["                  这是你应得的"]
+			hide_dependency_lines: true
+			id: "0C1214BEA3AA5904"
+			invisible: true
+			rewards: [{
+				count: 16
+				id: "641824364F9F50C8"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "你很清楚什么工具适应什么需求"
+			tasks: [{
+				id: "2880F63BAE54CB70"
+				item: {
+					Count: 1
+					id: "tconstruct:vein_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+					}
+				}
+				type: "item"
+			}]
+			title: "任意 矿脉锤"
+			x: 4.0d
+			y: 15.5d
 		}
 	]
 	title: "炽焰匠心"
