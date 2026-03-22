@@ -70,7 +70,7 @@
 			}]
 			title: "韧性强大的铁制品"
 			x: -4.0d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -100,7 +100,7 @@
 			}]
 			title: "琥珀金"
 			x: -4.0d
-			y: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -116,7 +116,7 @@
 			}]
 			title: "红石酸水冷剂"
 			x: 0.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["04004B46385E2AF2"]
@@ -127,7 +127,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["04004B46385E2AF2"]
@@ -147,7 +147,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -188,7 +188,7 @@
 			}]
 			title: "真空管怎么自动化"
 			x: 2.0d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["66F1898DB743301D"]
@@ -200,7 +200,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5F0BB5EE6AFEE840"]
@@ -236,7 +236,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -250,7 +250,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -276,7 +276,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["541572E2CD225DD7"]
@@ -327,8 +327,8 @@
 				}
 			]
 			title: "是时候发电了"
-			x: 5.5d
-			y: -1.0d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["10FE6C8E2FB59714"]
@@ -347,7 +347,7 @@
 			}]
 			title: "得把电存起来"
 			x: 4.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -367,8 +367,8 @@
 				title: "钒锭"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.0d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -394,7 +394,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -422,7 +422,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["343FF83E544BCB9D"]
@@ -441,7 +441,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["597C6E45B2C2B855"]
@@ -452,8 +452,8 @@
 				item: "cmi:pure_sand_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["04004B46385E2AF2"]
@@ -471,7 +471,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["04004B46385E2AF2"]
@@ -489,8 +489,8 @@
 				title: "沙子"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.0d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -506,7 +506,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1B38A75357F7EF12"]
@@ -517,8 +517,8 @@
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 6.0d
+			x: -2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["3E77FFA67682D3E5"]
@@ -530,7 +530,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 7.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -547,7 +547,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["04004B46385E2AF2"]
@@ -565,8 +565,8 @@
 				title: "大齿轮(半成品)"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 9.0d
+			x: -4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["04004B46385E2AF2"]
@@ -584,7 +584,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["04004B46385E2AF2"]
@@ -602,7 +602,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["04004B46385E2AF2"]
@@ -635,7 +635,7 @@
 			]
 			title: "黄铜"
 			x: -6.0d
-			y: 7.0d
+			y: 6.5d
 		}
 	]
 	title: "精智元件"

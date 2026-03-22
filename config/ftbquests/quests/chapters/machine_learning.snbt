@@ -110,21 +110,6 @@
 					title: "铁板"
 					type: "item"
 				}
-				{
-					id: "509AEFCFCA1D2938"
-					item: {
-						Count: 1
-						id: "itemfilters:weak_nbt"
-						tag: {
-							value: {
-								Material: "tconstruct:iron"
-							}
-						}
-					}
-					optional_task: true
-					title: "任意铁部件"
-					type: "item"
-				}
 			]
 			title: "铁!"
 			x: -9.5d
