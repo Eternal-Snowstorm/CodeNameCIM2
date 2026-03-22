@@ -3,7 +3,7 @@ ServerEvents.highPriorityData((event) => {
 		"name": "block.cmi.rocket_1",
 		"appearance": {
 			"idle": {
-				"block": "cmi:machine/simple_centrifuge/off"
+				"block": "cmi:machine/rocket/rocket_1"
 			},
 			"running": {
 				"block": "cmi:machine/simple_centrifuge/on"
@@ -24,11 +24,6 @@ ServerEvents.highPriorityData((event) => {
 				"id": "input0",
 				"mode": "input",
 				"capacity": 1000
-			},
-			{
-				"type": "custommachinery:item",
-				"id": "input1",
-				"mode": "input"
 			}
 		],
 		"gui": [
@@ -48,12 +43,6 @@ ServerEvents.highPriorityData((event) => {
 				"id": "input0",
 				"x": 65,
 				"y": 31
-			},
-			{
-				"type": "custommachinery:slot",
-				"id": "input1",
-				"x": 85,
-				"y": 54
 			}
 		]
 	})
