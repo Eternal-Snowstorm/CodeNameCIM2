@@ -11,59 +11,70 @@ StartupEvents.registry("block", (event) => {
         return event.create(`${global.namespace}:${name}`, type)
     }
 
-    let createColouredBlock = {
-        "gray": "andesite_cut_polished",
-        "white": "diorite_cut_polished"
+    function addConcreteBlock(name, color) {
+        addBlock(`${name}_reinforced_concrete`)
+            .soundType(SoundType.METAL)
+            .noDrops()
+            .requiresTool(true)
+            .textureAll(`cmi:block/custom/reinforced_concrete/reinforced_concrete`)
+            .color(0, color)
+            .tagBlock(global.ToolType["pickaxe"])
+            .tagBlock(global.MiningLevel["iron"])
+            .tagBlock("ae2:blacklisted/spatial")
+            .tagBlock("mekanism:cardboard_blacklist")
+            .hardness(50)
+            .item((item) => {
+                item.color(0, color)
+            })
+
+        addBlock(`${name}_reinforced_concrete_wall`, "wall")
+            .soundType(SoundType.METAL)
+            .noDrops()
+            .requiresTool(true)
+            .textureAll(`cmi:block/custom/reinforced_concrete/reinforced_concrete`)
+            .color(0, color)
+            .tagBlock(global.ToolType["pickaxe"])
+            .tagBlock(global.MiningLevel["iron"])
+            .tagBlock("ae2:blacklisted/spatial")
+            .tagBlock("mekanism:cardboard_blacklist")
+            .hardness(50)
+            .item((item) => {
+                item.color(0, color)
+            })
+
+        addBlock(`${name}_reinforced_concrete_stairs`, "stairs")
+            .soundType(SoundType.METAL)
+            .noDrops()
+            .requiresTool(true)
+            .textureAll(`cmi:block/custom/reinforced_concrete/reinforced_concrete`)
+            .color(0, color)
+            .tagBlock(global.ToolType["pickaxe"])
+            .tagBlock(global.MiningLevel["iron"])
+            .tagBlock("ae2:blacklisted/spatial")
+            .tagBlock("mekanism:cardboard_blacklist")
+            .hardness(50)
+            .item((item) => {
+                item.color(0, color)
+            })
+
+        addBlock(`${name}_reinforced_concrete_slab`, "slab")
+            .soundType(SoundType.METAL)
+            .noDrops()
+            .requiresTool(true)
+            .textureAll(`cmi:block/custom/reinforced_concrete/reinforced_concrete`)
+            .color(0, color)
+            .tagBlock(global.ToolType["pickaxe"])
+            .tagBlock(global.MiningLevel["iron"])
+            .tagBlock("ae2:blacklisted/spatial")
+            .tagBlock("mekanism:cardboard_blacklist")
+            .hardness(50)
+            .item((item) => {
+                item.color(0, color)
+            })
     }
 
-    function addConcreteBlock(colour) {
-        addBlock(`${colour}_reinforced_concrete`)
-            .soundType(SoundType.METAL)
-            .noDrops()
-            .requiresTool(true)
-            .textureAll(`create:block/palettes/stone_types/polished/${createColouredBlock[colour]}`)
-            .tagBlock(global.ToolType["pickaxe"])
-            .tagBlock(global.MiningLevel["iron"])
-            .tagBlock("ae2:blacklisted/spatial")
-            .tagBlock("mekanism:cardboard_blacklist")
-            .hardness(50)
-
-        addBlock(`${colour}_reinforced_concrete_wall`, "wall")
-            .soundType(SoundType.METAL)
-            .noDrops()
-            .requiresTool(true)
-            .textureAll(`create:block/palettes/stone_types/polished/${createColouredBlock[colour]}`)
-            .tagBlock(global.ToolType["pickaxe"])
-            .tagBlock(global.MiningLevel["iron"])
-            .tagBlock("ae2:blacklisted/spatial")
-            .tagBlock("mekanism:cardboard_blacklist")
-            .hardness(50)
-
-        addBlock(`${colour}_reinforced_concrete_stairs`, "stairs")
-            .soundType(SoundType.METAL)
-            .noDrops()
-            .requiresTool(true)
-            .textureAll(`create:block/palettes/stone_types/polished/${createColouredBlock[colour]}`)
-            .tagBlock(global.ToolType["pickaxe"])
-            .tagBlock(global.MiningLevel["iron"])
-            .tagBlock("ae2:blacklisted/spatial")
-            .tagBlock("mekanism:cardboard_blacklist")
-            .hardness(50)
-
-        addBlock(`${colour}_reinforced_concrete_slab`, "slab")
-            .soundType(SoundType.METAL)
-            .noDrops()
-            .requiresTool(true)
-            .textureAll(`create:block/palettes/stone_types/polished/${createColouredBlock[colour]}`)
-            .tagBlock(global.ToolType["pickaxe"])
-            .tagBlock(global.MiningLevel["iron"])
-            .tagBlock("ae2:blacklisted/spatial")
-            .tagBlock("mekanism:cardboard_blacklist")
-            .hardness(50)
-    }
-
-    addConcreteBlock("gray")
-    addConcreteBlock("white")
+    addConcreteBlock("gray", 0x565656)
+    addConcreteBlock("white", 0xFFFFFF)
 
     // 雷达
     addBlock(`radar`)
