@@ -106,7 +106,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:apple")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 白桦
@@ -119,7 +119,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:birch_sapling")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 云杉
@@ -132,7 +132,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:spruce_sapling")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 金合欢
@@ -145,7 +145,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:acacia_sapling")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 深色橡木
@@ -159,7 +159,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:apple")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 红树
@@ -173,7 +173,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:mangrove_propagule")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 樱花
@@ -186,7 +186,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:cherry_sapling")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 杜鹃
@@ -199,7 +199,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:azalea")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 开花杜鹃
@@ -212,7 +212,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:flowering_azalea")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 南洋
@@ -226,7 +226,7 @@ ServerEvents.recipes((event) => {
 			setResult("alexscaves:pewen_sap")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 远古
@@ -240,7 +240,7 @@ ServerEvents.recipes((event) => {
 			setResult("alexscaves:tree_star")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 荆棘
@@ -253,7 +253,7 @@ ServerEvents.recipes((event) => {
 			setResult("alexscaves:thornwood_branch")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 橡胶
@@ -267,7 +267,7 @@ ServerEvents.recipes((event) => {
 			setResult("thermal:rubber")
 		])
 		.soil("#minecraft:dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 大地粘液
@@ -281,7 +281,7 @@ ServerEvents.recipes((event) => {
 			setResult("minecraft:slime_ball")
 		])
 		.soil("tconstruct:earth_slime_dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 碧空粘液
@@ -295,7 +295,7 @@ ServerEvents.recipes((event) => {
 			setResult("tconstruct:sky_slime_ball")
 		])
 		.soil("tconstruct:sky_slime_dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 碧空粘液
@@ -309,7 +309,7 @@ ServerEvents.recipes((event) => {
 			setResult("tconstruct:ender_slime_ball")
 		])
 		.soil("tconstruct:ender_slime_dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 血菌
@@ -323,7 +323,7 @@ ServerEvents.recipes((event) => {
 			setResult("tconstruct:ichor_slime_ball")
 		])
 		.soil("tconstruct:ichor_slime_dirt")
-		.time(20 * 24)
+		.time(20 * 20)
 		.build()
 
 	// 稻米
