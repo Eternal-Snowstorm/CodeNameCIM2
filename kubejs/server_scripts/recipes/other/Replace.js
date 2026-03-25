@@ -43,4 +43,9 @@ ServerEvents.recipes((event) => {
 	event.replaceInput({
 		mod: "ad_astra"
 	}, "ad_astra:iron_rod", "#forge:rods/iron")
+
+	// 强化高炉砖
+	event.replaceInput({
+		output: "immersiveengineering:blastbrick_reinforced"
+	}, "#forge:plates/steel", "#forge:plates/invar")
 })

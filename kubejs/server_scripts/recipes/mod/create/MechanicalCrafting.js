@@ -174,4 +174,18 @@ ServerEvents.recipes((event) => {
 		},
 		"result": Item.of("create_jetpack:netherite_jetpack").toJson()
 	}).id("create_jetpack:netherite_jetpack_upgrade")
+
+	// 电磁炉
+	create.mechanical_crafting("2x moreburners:electric_burner", [
+		"ABA",
+		"CDC",
+		"EFE"
+	], {
+		A: "#forge:ingots/andesite_alloy",
+		B: "moreburners:copper_coil",
+		C: Casing.ANDESITE,
+		D: "create:empty_blaze_burner",
+		E: Mechanism.COIL.COM,
+		F: "#forge:plates/iron"
+	}).id("moreburners:electric_burner")
 })

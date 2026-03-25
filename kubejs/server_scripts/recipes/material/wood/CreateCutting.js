@@ -2,16 +2,16 @@ ServerEvents.recipes((event) => {
 	let { kubejs, create, farmersdelight } = event.getRecipes()
 
 	// 木板批量处理
-	event.forEachRecipe({
-		type: "minecraft:crafting_shapeless",
-		output: "#minecraft:planks",
-		input: "#minecraft:logs",
-	}, (recipes) => {
-		let outputItem = recipes.getOriginalRecipeResult().getId()
-		let inputItem = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+	// event.forEachRecipe({
+	// 	type: "minecraft:crafting_shapeless",
+	// 	output: "#minecraft:planks",
+	// 	input: "#minecraft:logs",
+	// }, (recipes) => {
+	// 	let outputItem = recipes.getOriginalRecipeResult().getId()
+	// 	let inputItem = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
 
-		kubejs.shapeless(Item.of(outputItem, 4), inputItem)
-	})
+	// 	kubejs.shapeless(Item.of(outputItem, 4), inputItem)
+	// })
 
 	// 木板切木台阶
 	let cutSlabWood = [

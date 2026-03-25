@@ -13,6 +13,15 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} key 
 	 * @param {String} value 
 	 */
+	function addCustomTooltipLang(key, value) {
+		event.add(key, value)
+	}
+
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
 	function addCommonJadeTipLang(key, value) {
 		event.add(`jade.info.cmi.${key}`.replace(":", "."), `${value}`)
 	}
@@ -88,6 +97,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("portality:controller", "制作模块时不会消耗自身")
 	addCommonTooltipLang("cmi:water_pump", "使用扳手右键可以显示预览")
 	addCommonTooltipLang("cmi:parchment", `有些能量不是由燃料产生的, 而是靠"遇见"`)
+	addCommonTooltipLang("moreburners:heat_upgrade", "使{moreburners:electric_burner, 1.0}电磁炉达到更高的加热等级")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",
@@ -121,6 +131,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLang("cmi:tier_2_aviation_mechanism", "§e可转化深板岩\n具体信息请查看JEI用途")
 	addAccelerateTooltipLang("cmi:tier_3_aviation_mechanism", "§e可转化深板岩\n具体信息请查看JEI用途")
 	addAccelerateTooltipLang("cmi:air_tight_mechanism", "§e可转化深板岩\n具体信息请查看JEI用途")
+
+	addCustomTooltipLang("tooltip.moreburners.electric_burner.1", "§b电力驱动的{create:blaze_burner, 1.0}烈焰人燃烧室")
+	addCustomTooltipLang("tooltip.moreburners.electric_burner.2", "§b通上{createaddition:electrum_spool, 1.0}电后会缓慢的升温, 需要保持供电")
 
 	addCommonTooltipLang("cmi:re_construction", "主创&策划&美工")
 	addCommonTooltipLang("cmi:dkrkoo_weihe", "吉祥物&社区管理")

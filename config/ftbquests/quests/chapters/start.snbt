@@ -146,7 +146,7 @@
 				"73153E1AFAD14636"
 				"5E676A3C46C6141B"
 			]
-			description: ["它兼备&6镐&f、&6斧&f和&6锹&f的功能，几乎能满足所有的挖掘需求"]
+			description: ["它兼备&6镐&f、&6斧&f和&6锹&f的功能，几乎能满足所有的挖掘需求。唯一的缺点就是没有攻击力"]
 			icon: {
 				Count: 1
 				id: "cmi:paxel"
@@ -274,9 +274,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 64L
+				count: 16L
 				id: "452BEE8C9E1091ED"
-				item: { Count: 64, id: "tconstruct:seared_brick" }
+				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
 			x: 10.0d
@@ -367,7 +367,10 @@
 		}
 		{
 			dependencies: ["73153E1AFAD14636"]
-			description: ["它可以读取&6相连的容器&f，也可以在UI内快捷切换到&6相连的其他匠魂工作方块&f（如&6部件制造台&f等）"]
+			description: [
+				"它可以读取&6相连的容器&f，也可以在UI内快捷切换到&6相连的其他匠魂工作方块&f（如&6部件制造台&f等）"
+				"&m但是为什么不用AE呢&r"
+			]
 			id: "2613E62AF5BCD9AC"
 			subtitle: "工作台plus"
 			tasks: [{
@@ -414,6 +417,7 @@
 				"{image:cmi:textures/images/copper_pickaxe.png width:647 height:296 align:center fit:true}"
 			]
 			id: "5FB6FC064E4EECAB"
+			subtitle: "依旧铁人"
 			tasks: [{
 				id: "7B4E9E4E487B6BC3"
 				item: {
@@ -588,7 +592,7 @@
 						tic_broken: 0b
 					}
 				}
-				title: "任意 开掘铲"
+				title: "开掘铲"
 				type: "item"
 			}]
 			title: "任意 开掘铲"
@@ -620,7 +624,7 @@
 				}
 				type: "item"
 			}]
-			title: "任意 板斧"
+			title: "板斧"
 			x: 6.0d
 			y: 12.5d
 		}
@@ -681,7 +685,7 @@
 				}
 				type: "item"
 			}]
-			title: "任意 矿脉锤"
+			title: "矿脉锤"
 			x: 4.0d
 			y: 15.5d
 		}

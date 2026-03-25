@@ -65,9 +65,4 @@ ServerEvents.recipes((event) => {
 		P: "#forge:plates/steel",
 		G: "#forge:gears/electrum"
 	}).id("immersiveengineering:crafting/component_steel")
-
-	// 强化高炉砖
-	event.replaceInput({
-		output: "immersiveengineering:blastbrick_reinforced"
-	}, "#forge:plates/steel", "#forge:plates/invar")
 })

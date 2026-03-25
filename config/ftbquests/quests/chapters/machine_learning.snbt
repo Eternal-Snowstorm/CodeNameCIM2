@@ -394,7 +394,7 @@
 			dependencies: ["649CAA93BB644BF3"]
 			id: "295BF991FD7133DF"
 			tasks: [{
-				id: "39663A3842504DDB"
+				id: "368D3DB8098C008D"
 				item: "minecraft:sugar"
 				type: "item"
 			}]
@@ -498,6 +498,7 @@
 		{
 			dependencies: ["6FE26470A8A3B7B1"]
 			id: "6B1F2EFF4DAC1814"
+			subtitle: "下界砖为烈焰人提供了熟悉的环境"
 			tasks: [{
 				id: "05FC3E680C04077C"
 				item: "create:empty_blaze_burner"
@@ -583,8 +584,10 @@
 		}
 		{
 			dependencies: ["2DDCBAC1D7AF08AE"]
+			description: ["可以通过挖掘硫矿打粉后获得，也可以通过磨煤炭获得"]
 			hide_dependency_lines: true
 			id: "14FCB2B036726682"
+			subtitle: "硫磺粉末"
 			tasks: [{
 				id: "1D3ABB165889ABB1"
 				item: "thermal:sulfur_dust"
@@ -854,6 +857,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6041330B6680321C"
+				table_id: 5759679434303888902L
 				type: "choice"
 			}]
 			subtitle: "嗯...看起来像面包..."

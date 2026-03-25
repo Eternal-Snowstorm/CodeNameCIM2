@@ -8,7 +8,8 @@ ServerEvents.recipes((event) => {
         "functionalstorage:oak_drawer_alternate_x2",
         "functionalstorage:oak_drawer_alternate_x4",
         "minecraft:glass",
-        "mynethersdelight:crafting/tnt_alt"
+        "mynethersdelight:crafting/tnt_alt",
+		"tconstruct:common/basalt_blast_furnace"
     ]
     removeRecipeIds.forEach((id) => {
         event.remove({
