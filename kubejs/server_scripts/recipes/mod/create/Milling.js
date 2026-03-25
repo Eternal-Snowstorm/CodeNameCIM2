@@ -41,10 +41,9 @@ ServerEvents.recipes((event) => {
 	], "#create:stone_types/andesite")
 
 	// 糖
-	create.milling(
-		"minecraft:sugar",
+	create.milling("minecraft:sugar", [
 		"minecraft:sugar_cane"
-	).id("create:milling/sugar_cane")
+	]).id("create:milling/sugar_cane")
 
 	// 青金石粉
 	create.milling([

@@ -1,166 +1,166 @@
 StartupEvents.registry("block", (event) => {
-    /**
-     * 
-     * @param {String} name 注册id
-     * @param {string} type 注册类型
-     */
-    function addBlock(name, type) {
-        if (type === undefined) {
-            return event.create(`${global.namespace}:${name}`)
-        }
-        return event.create(`${global.namespace}:${name}`, type)
-    }
+	/**
+	 * 
+	 * @param {String} name 注册id
+	 * @param {string} type 注册类型
+	 */
+	function addBlock(name, type) {
+		if (type === undefined) {
+			return event.create(`${global.namespace}:${name}`)
+		}
+		return event.create(`${global.namespace}:${name}`, type)
+	}
 
-    function addConcreteBlock(name, color) {
-        addBlock(`${name}_reinforced_concrete`)
-            .soundType(SoundType.METAL)
-            .noDrops()
-            .requiresTool(true)
-            .textureAll(`cmi:block/custom/reinforced_concrete/reinforced_concrete`)
-            .color(0, color)
-            .tagBlock(global.ToolType["pickaxe"])
-            .tagBlock(global.MiningLevel["iron"])
-            .tagBlock("ae2:blacklisted/spatial")
-            .tagBlock("mekanism:cardboard_blacklist")
-            .hardness(50)
-            .item((item) => {
-                item.color(0, color)
-            })
+	function addConcreteBlock(name, color) {
+		addBlock(`${name}_reinforced_concrete`)
+			.soundType(SoundType.METAL)
+			.noDrops()
+			.requiresTool(true)
+			.textureAll("cmi:block/custom/reinforced_concrete/reinforced_concrete")
+			.color(color)
+			.tagBlock(global.ToolType["pickaxe"])
+			.tagBlock(global.MiningLevel["iron"])
+			.tagBlock("ae2:blacklisted/spatial")
+			.tagBlock("mekanism:cardboard_blacklist")
+			.hardness(50)
+			.item((item) => {
+				item.color(color)
+			})
 
-        addBlock(`${name}_reinforced_concrete_wall`, "wall")
-            .soundType(SoundType.METAL)
-            .noDrops()
-            .requiresTool(true)
-            .textureAll(`cmi:block/custom/reinforced_concrete/reinforced_concrete`)
-            .color(0, color)
-            .tagBlock(global.ToolType["pickaxe"])
-            .tagBlock(global.MiningLevel["iron"])
-            .tagBlock("ae2:blacklisted/spatial")
-            .tagBlock("mekanism:cardboard_blacklist")
-            .hardness(50)
-            .item((item) => {
-                item.color(0, color)
-            })
+		addBlock(`${name}_reinforced_concrete_wall`, "wall")
+			.soundType(SoundType.METAL)
+			.noDrops()
+			.requiresTool(true)
+			.textureAll("cmi:block/custom/reinforced_concrete/reinforced_concrete")
+			.color(color)
+			.tagBlock(global.ToolType["pickaxe"])
+			.tagBlock(global.MiningLevel["iron"])
+			.tagBlock("ae2:blacklisted/spatial")
+			.tagBlock("mekanism:cardboard_blacklist")
+			.hardness(50)
+			.item((item) => {
+				item.color(color)
+			})
 
-        addBlock(`${name}_reinforced_concrete_stairs`, "stairs")
-            .soundType(SoundType.METAL)
-            .noDrops()
-            .requiresTool(true)
-            .textureAll(`cmi:block/custom/reinforced_concrete/reinforced_concrete`)
-            .color(0, color)
-            .tagBlock(global.ToolType["pickaxe"])
-            .tagBlock(global.MiningLevel["iron"])
-            .tagBlock("ae2:blacklisted/spatial")
-            .tagBlock("mekanism:cardboard_blacklist")
-            .hardness(50)
-            .item((item) => {
-                item.color(0, color)
-            })
+		addBlock(`${name}_reinforced_concrete_stairs`, "stairs")
+			.soundType(SoundType.METAL)
+			.noDrops()
+			.requiresTool(true)
+			.textureAll("cmi:block/custom/reinforced_concrete/reinforced_concrete")
+			.color(color)
+			.tagBlock(global.ToolType["pickaxe"])
+			.tagBlock(global.MiningLevel["iron"])
+			.tagBlock("ae2:blacklisted/spatial")
+			.tagBlock("mekanism:cardboard_blacklist")
+			.hardness(50)
+			.item((item) => {
+				item.color(color)
+			})
 
-        addBlock(`${name}_reinforced_concrete_slab`, "slab")
-            .soundType(SoundType.METAL)
-            .noDrops()
-            .requiresTool(true)
-            .textureAll(`cmi:block/custom/reinforced_concrete/reinforced_concrete`)
-            .color(0, color)
-            .tagBlock(global.ToolType["pickaxe"])
-            .tagBlock(global.MiningLevel["iron"])
-            .tagBlock("ae2:blacklisted/spatial")
-            .tagBlock("mekanism:cardboard_blacklist")
-            .hardness(50)
-            .item((item) => {
-                item.color(0, color)
-            })
-    }
+		addBlock(`${name}_reinforced_concrete_slab`, "slab")
+			.soundType(SoundType.METAL)
+			.noDrops()
+			.requiresTool(true)
+			.textureAll("cmi:block/custom/reinforced_concrete/reinforced_concrete")
+			.color(color)
+			.tagBlock(global.ToolType["pickaxe"])
+			.tagBlock(global.MiningLevel["iron"])
+			.tagBlock("ae2:blacklisted/spatial")
+			.tagBlock("mekanism:cardboard_blacklist")
+			.hardness(50)
+			.item((item) => {
+				item.color(color)
+			})
+	}
 
-    addConcreteBlock("gray", 0x565656)
-    addConcreteBlock("white", 0xFFFFFF)
+	addConcreteBlock("gray", 0x565656)
+	addConcreteBlock("white", 0xFFFFFF)
 
-    // 雷达
-    addBlock(`radar`)
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/radar`)
-        .box(6, 0, 6, 10, 16, 10, true)
+	// 雷达
+	addBlock(`radar`)
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/radar`)
+		.box(6, 0, 6, 10, 16, 10, true)
 
-    // 损坏雷达
-    addBlock(`broken_radar`)
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/broken_radar_part/radar`)
-        .box(6, 0, 6, 10, 16, 10, true)
-
-
-    // 变压器
-    addBlock("transformer")
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/transformer`)
-
-    // 损坏变压器
-    addBlock("broken_transformer")
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/broken_radar_part/transformer`)
-        .notSolid()
-
-    // 调制解调器
-    addBlock("modem")
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/modem`)
-        .notSolid()
+	// 损坏雷达
+	addBlock(`broken_radar`)
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/broken_radar_part/radar`)
+		.box(6, 0, 6, 10, 16, 10, true)
 
 
-    addBlock(`broken_modem`)
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/broken_radar_part/modem`)
-        .notSolid()
+	// 变压器
+	addBlock("transformer")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/transformer`)
 
-    // 追踪阵列
-    addBlock("tracking_array")
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/tracking_array`)
+	// 损坏变压器
+	addBlock("broken_transformer")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/broken_radar_part/transformer`)
+		.notSolid()
 
-    // 损坏的追踪阵列
-    addBlock("broken_tracking_array")
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/broken_radar_part/tracking_array`)
-        .notSolid()
+	// 调制解调器
+	addBlock("modem")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/modem`)
+		.notSolid()
 
-    // 电源
-    addBlock("power_supply")
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/power_supply`)
 
-    // 损坏的电源
-    addBlock("broken_power_supply")
-        .soundType(SoundType.NETHERITE_BLOCK)
-        .waterlogged()
-        .hardness(-1)
-        .resistance(-1)
-        .model(`${global.namespace}:block/broken_radar_part/power_supply`)
-        .notSolid()
+	addBlock(`broken_modem`)
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/broken_radar_part/modem`)
+		.notSolid()
+
+	// 追踪阵列
+	addBlock("tracking_array")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/tracking_array`)
+
+	// 损坏的追踪阵列
+	addBlock("broken_tracking_array")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/broken_radar_part/tracking_array`)
+		.notSolid()
+
+	// 电源
+	addBlock("power_supply")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/power_supply`)
+
+	// 损坏的电源
+	addBlock("broken_power_supply")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.waterlogged()
+		.hardness(-1)
+		.resistance(-1)
+		.model(`${global.namespace}:block/broken_radar_part/power_supply`)
+		.notSolid()
 })
