@@ -1,40 +1,46 @@
 let structure = new StructureBuilder([
-    [
+	[
 		"       ",
 		"       ",
 		" 5     ",
 		"       "
-	],[
+	],
+	[
 		"       ",
 		"       ",
 		" 4     ",
 		"       "
-	], [
+	],
+	[
 		"       ",
 		"       ",
 		" 3     ",
 		"       "
-	], [
+	],
+	[
 		"       ",
 		"       ",
 		" 2     ",
 		"       "
-	], [
+	],
+	[
 		"       ",
 		"       ",
 		" 1     ",
 		"       "
-	], [
+	],
+	[
 		"       ",
 		"GHG    ",
 		"HHH S  ",
 		"GHG    "
-	], [
+	],
+	[
 		"       ",
 		"ABA    ",
 		"B B R  ",
 		"ABA    "
-	], 
+	],
 	[
 		"  DD0 F",
 		"ABACCC ",
@@ -105,7 +111,7 @@ BlockEvents.rightClicked((event) => {
 		return
 	}
 	player.tell("ok")
-    
+
 	let multiblock = MultiblockHandler
 		.builder(level, block.pos, () => structure)
 		.renderOffset(0, -1, 0)
