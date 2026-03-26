@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements } = event.getRecipes()
+	let { create, vintageimprovements, cmi } = event.getRecipes()
 	let Inc = {
 		SCANNER: "cmi:incomplete_scanner",
 		SCAMOD: "cmi:incomplete_scanning_module",
@@ -13,15 +13,153 @@ ServerEvents.recipes((event) => {
 		THERMAL_AUG: "cmi:incomplete_thermal_mechanism_augment"
 	}
 
+	let Seq = {
+		FLYWHEEL: seqItems("create:flywheel", "#create:shaft", "cmi:incomplete_flywheel")
+	}
+
+	/**
+	 * 
+	 * @param {OutputItem_} result 
+	 * @param {InputItem_} ingredient 
+	 * @param {InputItem_} transitionalItem 
+	 * @returns 
+	 */
+	function seqItems(result, ingredient, transitionalItem) {
+		return {
+			RES: result,
+			ING: ingredient,
+			TRANS: transitionalItem
+		}
+	}
+
+	/**
+	 * 
+	 * @param {{
+	 *		RES: OutputItem_,
+	 *		ING: InputItem_,
+	 *  	TRANS: InputItem_
+	 *  	}} item
+	 * @returns 
+	 */
+	function SequencedAssemblyRecipe(item) {
+		let { RES, ING, TRANS } = item
+
+		this.result = RES
+		this.transit = TRANS
+		this.ingredient = ING
+		this.$sequences = []
+		this.loops = 1
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.cutting = function () {
+		let sequence = create.cutting(this.transit, this.transit)
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.pressing = function () {
+		let sequence = create.pressing(this.transit, this.transit)
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.grinding = function () {
+		let sequence = cmi.grinding(this.transit, this.transit)
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.vibrating = function () {
+		let sequence = vintageimprovements.vibrating(this.transit, this.transit)
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.pressurizing = function () {
+		let sequence = vintageimprovements.pressurizing(this.transit, this.transit)
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.vacuumizing = function () {
+		let sequence = vintageimprovements.vacuumizing(this.transit, this.transit)
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	/**
+	 * 
+	 * @param {Number} energy
+	 * @returns 
+	 */
+	SequencedAssemblyRecipe.prototype.laser_cutting = function (energy) {
+		let sequence = vintageimprovements.laser_cutting(this.transit, this.transit)
+			.energy(energy).maxChargeRate(1000)
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	/**
+	 * 
+	 * @param {InputItem_} input 
+	 * @returns 
+	 */
+	SequencedAssemblyRecipe.prototype.deploying = function (input) {
+		let sequence = create.deploying(this.transit, [this.transit, input])
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	/**
+	 * 
+	 * @param {InputItem_} itemAsHead
+	 * @returns 
+	 */
+	SequencedAssemblyRecipe.prototype.curving = function (itemAsHead) {
+		let sequence = vintageimprovements.curving(this.transit, this.transit)
+			.itemAsHead(itemAsHead)
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	/**
+	 * 
+	 * @param {Fluid_} fluid
+	 * @returns 
+	 */
+	SequencedAssemblyRecipe.prototype.filling = function (fluid) {
+		let sequence = create.filling(this.transit, [this.transit, fluid])
+
+		this.$sequences.push(sequence)
+		return this
+	}
+	/**
+	 * 
+	 * @param {Number} loops 
+	 */
+	SequencedAssemblyRecipe.prototype.loop = function (loops) {
+		this.loops = loops
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.build = function () {
+		let sequences = this.$sequences
+		let result = this.result
+		let input = this.ingredient
+		let loops = this.loops
+		let transit = this.transit
+
+		return create.sequenced_assembly(result,
+			input,
+			sequences
+		).loops(loops)
+			.transitionalItem(transit)
+	}
+
 	// 飞轮
-	create.sequenced_assembly("create:flywheel", [
-		"#create:shaft"
-	], [
-		create.deploying(Inc.FLYWHEEL, [
-			Inc.FLYWHEEL,
-			"#forge:plates/bronze"
-		]),
-	]).transitionalItem(Inc.FLYWHEEL).loops(4)
+	new SequencedAssemblyRecipe(Seq.FLYWHEEL)
+		.deploying("#forge:plates/bronze")
+		.loop(4)
+		.build()
 
 	// 扫描机兵零件
 	create.sequenced_assembly([
