@@ -1,7 +1,7 @@
 BlockEvents.rightClicked((event) => {
 	let { block, level, player, item } = event
 
-	const GRASS_TAG = block.hasTag("cmi:get_grass_fiber")
+	const GRASS_TAG = block.hasTag("cmi:grass_fiber")
 	const KNIVE_TAG = player.mainHandItem.hasTag("forge:tools/knives")
 
 	if (GRASS_TAG && KNIVE_TAG) {

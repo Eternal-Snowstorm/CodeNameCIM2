@@ -24,6 +24,17 @@ ServerEvents.tags("block", (event) => {
 		.add("forge:storage_blocks/charcoal")
 		.add("minecraft:nether_bricks")
 
+	event.get("cmi:grass_fiber")
+		.add([
+			"minecraft:grass",
+			"minecraft:tall_grass",
+			"minecraft:seagrass",
+			"tconstruct:earth_slime_tall_grass",
+			"tconstruct:sky_slime_tall_grass",
+			"tconstruct:ender_slime_tall_grass",
+			"tconstruct:blood_slime_tall_grass"
+		])
+
 	event.get("forge:ores")
 		.add("ad_astra:moon_cheese_ore")
 

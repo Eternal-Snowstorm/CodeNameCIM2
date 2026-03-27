@@ -55,7 +55,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`jei.info.${key}`.replace(":", "."), value)
 	}
 
-	addCommonTooltipLang("cmi:grass_fiber", "§c小刀右键草会掉落")
+	addCommonTooltipLang("cmi:grass_fiber", "§c使用{#forge:tools/knives, 1}小刀右键{#cmi:grass_fiber, 1}草会掉落")
 	addCommonTooltipLang("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
 	addCommonTooltipLang("#cmi:machine_block", "只有装饰作用(暂时)")
 	addCommonTooltipLang("cmi:pig_iron_mechanism", "可无限次食用")
@@ -97,13 +97,13 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("portality:controller", "制作模块时不会消耗自身")
 	addCommonTooltipLang("cmi:water_pump", "使用扳手右键可以显示预览")
 	addCommonTooltipLang("cmi:parchment", `有些能量不是由燃料产生的, 而是靠"遇见"`)
-	addCommonTooltipLang("moreburners:heat_upgrade", "使{moreburners:electric_burner, 1.0}电磁炉达到更高的加热等级")
+	addCommonTooltipLang("moreburners:heat_upgrade", "使{moreburners:electric_burner, 1}电磁炉达到更高的加热等级")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",
-		"使用{tconstruct:seared_fuel_tank, 1.0}焦黑燃料储罐加入燃料升温"
+		"使用{tconstruct:seared_fuel_tank, 1}焦黑燃料储罐加入燃料升温"
 	])
-	addCommonJadeTipLang("immersiveindustry:crucible", "自身最多提供 1000°C, 使用{immersiveengineering:blastfurnace_preheater, 1.0}预热器升温")
+	addCommonJadeTipLang("immersiveindustry:crucible", "自身最多提供 1000°C, 使用{immersiveengineering:blastfurnace_preheater, 1}预热器升温")
 
 	addJEIInfoLang("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量植物胶乳")
 	addJEIInfoLang("cmi:andesite_alloy_noodle", `"意大利面就应该拌42号混凝土. 因为这个螺丝钉的长度, 它很容易会直接影响到挖掘机的扭距, 你往里砸的时候, 一瞬间它就会产生大量的高能蛋白, 俗称UFO. 会严重影响经济的发展. 照你这么说, 炸鸡块要用92#汽油, 毕竟我们无法用光学透镜探测苏格拉底, 如果二氧化氢持续侵蚀这个机床组件, 那么我们早晚要在斐波那契曲线上安装一个胶原蛋白, 否则我们将无法改变蜜雪冰城与阿尔别克的叠加状态, 因为众所周知爱吃鸡摩人在捕鲲的时候往往需要用氢的同位素当做诱饵, 但是原子弹的新鲜程度又会直接影响到我国东南部的季风和洋流, 所以说在西伯利亚地区开设农学院显然是不合理的. \n我知道你一定会反驳我, 告诉我农业的底层思维是什么, 就是不用化肥农药和种子, 还包括生命之源氮气, 使甲烷分子直接转化成能够捕获放射性元素释放的β射线的单质, 并且使伽马射线在常温下就能用老虎钳折弯成78°, 否则在用望远镜观察细胞结构时, 根本发现不了时空重叠时到底要叠几层才能使潼关肉夹馍更酥脆的原因. "`)
@@ -132,8 +132,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAccelerateTooltipLang("cmi:tier_3_aviation_mechanism", "§e可转化深板岩\n具体信息请查看JEI用途")
 	addAccelerateTooltipLang("cmi:air_tight_mechanism", "§e可转化深板岩\n具体信息请查看JEI用途")
 
-	addCustomTooltipLang("tooltip.moreburners.electric_burner.1", "§b电力驱动的{create:blaze_burner, 1.0}烈焰人燃烧室")
-	addCustomTooltipLang("tooltip.moreburners.electric_burner.2", "§b通上{createaddition:electrum_spool, 1.0}电后会缓慢的升温, 需要保持供电")
+	addCustomTooltipLang("tooltip.moreburners.electric_burner.1", "§b电力驱动的{create:blaze_burner, 1}烈焰人燃烧室")
+	addCustomTooltipLang("tooltip.moreburners.electric_burner.2", "§b通上{createaddition:electrum_spool, 1}电后会缓慢的升温, 需要保持供电")
 
 	addCommonTooltipLang("cmi:re_construction", "主创&策划&美工")
 	addCommonTooltipLang("cmi:dkrkoo_weihe", "吉祥物&社区管理")

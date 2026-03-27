@@ -18,7 +18,7 @@
 	#The kernel radius for gaussian convolution blur effect, 0 = disable.
 	#samples per pixel = ((radius * 2) + 1) * 2, sigma = radius / 2.
 	#Range: 0 ~ 18
-	blurRadius = 5
+	blurRadius = 18
 	#A list of GUI screen superclasses that won't activate blur effect when opened.
 	blurBlacklist = ["net.minecraft.client.gui.screens.ChatScreen"]
 	#(Beta) Pause the game when inventory (also includes creative mode) opened.

@@ -34,6 +34,17 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	event.get("cmi:grass_fiber")
+		.add([
+			"minecraft:grass",
+			"minecraft:tall_grass",
+			"minecraft:seagrass",
+			"tconstruct:earth_slime_tall_grass",
+			"tconstruct:sky_slime_tall_grass",
+			"tconstruct:ender_slime_tall_grass",
+			"tconstruct:blood_slime_tall_grass"
+		])
+
 	// 主世界石英矿
 	event.get("cmi:overworld_quartz_ore")
 		.add("cmi:quartz_ore")
