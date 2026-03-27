@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 	 *  }} item
 	 * @returns 
 	 */
-	function sequencedAssemblyRecipe(item) {
+	function SequencedAssemblyRecipe(item) {
 		let { RES, ING, TRANS } = item
 
 		this.result = RES
@@ -35,37 +35,37 @@ ServerEvents.recipes((event) => {
 		this.loops = 1
 		return this
 	}
-	sequencedAssemblyRecipe.prototype.cutting = function () {
+	SequencedAssemblyRecipe.prototype.cutting = function () {
 		let sequence = create.cutting(this.transit, this.transit)
 
 		this.$sequences.push(sequence)
 		return this
 	}
-	sequencedAssemblyRecipe.prototype.pressing = function () {
+	SequencedAssemblyRecipe.prototype.pressing = function () {
 		let sequence = create.pressing(this.transit, this.transit)
 
 		this.$sequences.push(sequence)
 		return this
 	}
-	sequencedAssemblyRecipe.prototype.grinding = function () {
+	SequencedAssemblyRecipe.prototype.grinding = function () {
 		let sequence = cmi.grinding(this.transit, this.transit)
 
 		this.$sequences.push(sequence)
 		return this
 	}
-	sequencedAssemblyRecipe.prototype.vibrating = function () {
+	SequencedAssemblyRecipe.prototype.vibrating = function () {
 		let sequence = vintageimprovements.vibrating(this.transit, this.transit)
 
 		this.$sequences.push(sequence)
 		return this
 	}
-	sequencedAssemblyRecipe.prototype.pressurizing = function () {
+	SequencedAssemblyRecipe.prototype.pressurizing = function () {
 		let sequence = vintageimprovements.pressurizing(this.transit, this.transit)
 
 		this.$sequences.push(sequence)
 		return this
 	}
-	sequencedAssemblyRecipe.prototype.vacuumizing = function () {
+	SequencedAssemblyRecipe.prototype.vacuumizing = function () {
 		let sequence = vintageimprovements.vacuumizing(this.transit, this.transit)
 
 		this.$sequences.push(sequence)
@@ -76,7 +76,7 @@ ServerEvents.recipes((event) => {
 	 * @param {Number} energy
 	 * @returns 
 	 */
-	sequencedAssemblyRecipe.prototype.laser_cutting = function (energy) {
+	SequencedAssemblyRecipe.prototype.laserCutting = function (energy) {
 		let sequence = vintageimprovements.laser_cutting(this.transit, this.transit)
 			.energy(energy).maxChargeRate(1000)
 
@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
 	 * @param {InputItem_} input 
 	 * @returns 
 	 */
-	sequencedAssemblyRecipe.prototype.deploying = function (input) {
+	SequencedAssemblyRecipe.prototype.deploying = function (input) {
 		let sequence = create.deploying(this.transit, [this.transit, input])
 
 		this.$sequences.push(sequence)
@@ -99,7 +99,7 @@ ServerEvents.recipes((event) => {
 	 * @param {InputItem_} itemAsHead
 	 * @returns 
 	 */
-	sequencedAssemblyRecipe.prototype.curving = function (itemAsHead) {
+	SequencedAssemblyRecipe.prototype.curving = function (itemAsHead) {
 		let sequence = vintageimprovements.curving(this.transit, this.transit)
 			.itemAsHead(itemAsHead)
 
@@ -111,7 +111,7 @@ ServerEvents.recipes((event) => {
 	 * @param {Fluid_} fluid
 	 * @returns 
 	 */
-	sequencedAssemblyRecipe.prototype.filling = function (fluid) {
+	SequencedAssemblyRecipe.prototype.filling = function (fluid) {
 		let sequence = create.filling(this.transit, [this.transit, fluid])
 
 		this.$sequences.push(sequence)
@@ -121,11 +121,11 @@ ServerEvents.recipes((event) => {
 	 * 
 	 * @param {Number} loops 
 	 */
-	sequencedAssemblyRecipe.prototype.loop = function (loops) {
+	SequencedAssemblyRecipe.prototype.loop = function (loops) {
 		this.loops = loops
 		return this
 	}
-	sequencedAssemblyRecipe.prototype.build = function () {
+	SequencedAssemblyRecipe.prototype.build = function () {
 		let sequences = this.$sequences
 		let result = this.result
 		let input = this.ingredient
@@ -155,7 +155,7 @@ ServerEvents.recipes((event) => {
 
 
 	// 飞轮
-	new sequencedAssemblyRecipe(Seq.FLYWHEEL)
+	new SequencedAssemblyRecipe(Seq.FLYWHEEL)
 		.deploying("#forge:plates/bronze")
 		.loop(4)
 		.build()
@@ -163,7 +163,7 @@ ServerEvents.recipes((event) => {
 	// 扫描机兵零件
 
 	// 扫描器
-	new sequencedAssemblyRecipe(Seq.SCANNER)
+	new SequencedAssemblyRecipe(Seq.SCANNER)
 		.deploying("immersiveengineering:survey_tools")
 		.deploying("thermal:redstone_servo")
 		.deploying("#forge:plates/electrum")
@@ -172,23 +172,23 @@ ServerEvents.recipes((event) => {
 		.id("scannable:scanner")
 
 	// 空白扫描模块
-	new sequencedAssemblyRecipe(Seq.SCAN_MOD)
+	new SequencedAssemblyRecipe(Seq.SCAN_MOD)
 		.deploying("#forge:plates/electrum")
 		.deploying("ae2:printed_silicon")
 		.pressing()
-		.laser_cutting(1000)
+		.laserCutting(1000)
 		.build()
 		.id("scannable:blank_module")
 
 	// 电子管
-	new sequencedAssemblyRecipe(Seq.E_TUBE)
+	new SequencedAssemblyRecipe(Seq.E_TUBE)
 		.deploying("#forge:wires/copper")
 		.deploying("create:polished_rose_quartz")
 		.build()
 		.id("create:crafting/materials/electron_tube")
 
 	// Ad电容器
-	new sequencedAssemblyRecipe(Seq.CAPACITOR)
+	new SequencedAssemblyRecipe(Seq.CAPACITOR)
 		.deploying("#forge:plates/etrium")
 		.deploying("#forge:plates/vanadium")
 		.deploying("#forge:wires/copper")
@@ -197,35 +197,35 @@ ServerEvents.recipes((event) => {
 		.id("ad_astra:etrionic_capacitor")
 
 	// 冷却设备
-	new sequencedAssemblyRecipe(Seq.COOLER)
+	new SequencedAssemblyRecipe(Seq.COOLER)
 		.deploying("alexscaves:polymer_plate")
 		.deploying("#forge:plates/platinum")
 		.deploying("mekanism:structural_glass")
 		.build()
 
-	new sequencedAssemblyRecipe(Seq.NUKE)
+	new SequencedAssemblyRecipe(Seq.NUKE)
 		.deploying("alexscaves:polymer_plate")
 		.deploying("#forge:plates/platinum")
 		.build()
 
 	// 高压气体容器
-	new sequencedAssemblyRecipe(Seq.GAS)
+	new SequencedAssemblyRecipe(Seq.GAS)
 		.deploying("#forge:glass_panes")
-		.laser_cutting(1000)
+		.laserCutting(1000)
 		.deploying("thermal:cured_rubber")
 		.pressing()
 		.vacuumizing()
 		.build()
 
 	// 电动机转子
-	new sequencedAssemblyRecipe(Seq.ROTOR)
+	new SequencedAssemblyRecipe(Seq.ROTOR)
 		.cutting()
 		.deploying("#forge:plates/industrial_iron")
 		.deploying("#forge:wires/copper")
 		.build()
 
 	// 热力构件组件
-	new sequencedAssemblyRecipe(Seq.THERMAL_AUG)
+	new SequencedAssemblyRecipe(Seq.THERMAL_AUG)
 		.deploying("thermal:rf_coil")
 		.deploying("thermal:redstone_servo")
 		.deploying("#forge:plates/vanadium")
