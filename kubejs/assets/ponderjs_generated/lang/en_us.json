@@ -1,12 +1,4 @@
 {
-  "cmi.ponder.tag.tconstruct": "undefined.ponder.index",
-  "cmi.ponder.tag.tconstruct.description": "[1 seared_faucet, 1 scorched_faucet, 1 seared_melter, 1 seared_heater, 1 seared_fuel_tank, 1 seared_drain, 1 seared_bricks, 1 foundry_controller, 1 scorched_bricks, 1 scorched_drain, 1 scorched_fuel_tank, 1 smeltery_controller, 1 seared_fuel_tank, 1 seared_drain, 1 seared_bricks]",
-  "cmi.ponder.tag.ponder": "undefined.ponder.index",
-  "cmi.ponder.tag.ponder.description": "[1 accelerator, 1 water_pump, 1 water_bucket, 1 bronze_casing, 0 air, 1 steam_bucket]",
-  "cmi.ponder.tag.ae2": "undefined.ponder.index",
-  "cmi.ponder.tag.ae2.description": "[1 ColoredPartItem[fluix_glass_cable], 1 condenser, 1 controller, 1 pattern_provider, 1 crafting_unit, 1 drive, 1 PartItem[me_p2p_tunnel], 1 quantum_ring, 1 spatial_io_port, 1 spatial_pylon, 1 wireless_access_point]",
-  "cmi.ponder.tag.other": "undefined.ponder.index",
-  "cmi.ponder.tag.other.description": "[0 air, 0 air, 0 air, 0 air, 0 air, 0 air, 1 crucible, 1 burning_chamber, 1 blastfurnace_preheater, 1 blastbrick, 1 crucible_base, 1 crucible_tuyere, 1 cardboard_box]",
   "cmi.ponder.accelerator.header": "How to use the accelerator",
   "cmi.ponder.accelerator.text_1": "This is an accelerator",
   "cmi.ponder.accelerator.text_2": "R-Click it with an iron mechanism in hand...",
