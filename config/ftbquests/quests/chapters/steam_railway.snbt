@@ -293,7 +293,7 @@
 			id: "5BB078BA5116FE68"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "有点烫手, 拿在手上有一点火热"
+			subtitle: "有点烫手, 拿在手上有一点火热🥵"
 			tasks: [{
 				id: "76B962C480950865"
 				item: "cmi:bronze_mechanism"

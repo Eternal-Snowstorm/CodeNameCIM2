@@ -1,0 +1,263 @@
+
+[overlay]
+	#Whether to enable the overlay. If disabled, all other overlay options will be ignored.
+	enableOverlay = true
+	#The layout style of the overlay. 0: none, 1: above hot bar long, 2: above hot bar short, 3: top left, 4: top right, 5: bottom left, 6: bottom right
+	#Range: 0 ~ 8
+	overlayLayoutStyle = 1
+	#The text scale of the overlay
+	#Range: 0.1 ~ 10.0
+	overlayTextScale = 1.0
+	#The inner height of the overlay bar, the full height will be inner height + 2.
+	#Range: > 1
+	overlayBarInnerHeight = 3
+	#The vertical margin of the overlay bar
+	#Range: > 0
+	overlayBarVerticalMargin = 1
+	#The offset of the overlay bar text on the Y axis
+	#Range: > -2147483648
+	overlayBarTextOffsetY = -2
+	#Hide decimal when the value is equal to or more than this value. 0 to hide all decimals.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	hideDecimalWhenEqualOrMoreThan = 100.0
+	#Full food level value. If you are using a mod that changes the max food level, you may need to change this value.
+	#Range: > 1
+	fullFoodLevelValue = 20
+	#Full saturation value. If you are using a mod that changes the max saturation value, you may need to change this value.
+	#Range: 1.0 ~ 1.7976931348623157E308
+	fullSaturationValue = 20.0
+	#Full exhaustion value. If you are using a mod that changes the max exhaustion value, you may need to change this value.
+	#Range: 1.0 ~ 1.7976931348623157E308
+	fullExhaustionValue = 4.0
+	#Full armor value. If you are using a mod that changes the max armor value, you may need to change this value.
+	#Range: > 1
+	fullArmorValue = 20
+	#Full armor toughness value. If you are using a mod that changes the max armor toughness value, you may need to change this value.
+	#Range: > 1
+	fullArmorToughnessValue = 12
+	#Full health value. Determines the amount single health bar represents. No effect while stack health bar is disabled.
+	#Range: > 1
+	fullHealthValue = 20
+	#Whether to enable stack health bar. If enabled, the health bar will be displayed like multiple health bars with different colors stacked together. Note that once enabled, the health bar color in specific conditions will be rendered half transparently on the health bar, and if the absorption display mode is 0, it will be changed to 2  in game dynamically to avoid ambiguity.
+	enableStackHealthBar = true
+	#The color list of the stack health bar. Split by commas, each color must be in ARGB format, no space, no illegal characters, no tail comma. For example: '#FF00FF00,#FFFF0000,#FF0000FF', the health bars will pick colors from the list sequentially, and return to the first color when the list is exhausted.
+	stackHealthBarColors = "#ffff4545,#ffefa360,#ff966acc,#ffcc64a8,#ff1dc29b,#ff9acc64"
+	#The opacity of the health bar when the entity is regenerating health. 0 to 1.
+	#Range: 0.0 ~ 1.0
+	healthRegenerationOpacity = 1.0
+	#The opacity of the health bar when the entity is regenerating health and the health is full. 0 to 1.
+	#Range: 0.0 ~ 1.0
+	healthRegenerationOpacityOnFull = 0.33
+	#If a bar value is not changing in some seconds, then hide them. 0 to disable.
+	#Range: > 0
+	hideUnchangingBarAfterSeconds = 0
+	#The color of the health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthColorNormalARGB = "#ffff4545"
+	#The color of the poison health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthColorPoisonARGB = "#ff9c8022"
+	#The color of the wither health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthColorWitherARGB = "#ff4f2727"
+	#The color of the frozen health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthColorFrozenARGB = "#ff3798f4"
+	#The color of the health bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthBoundColorARGB = "#ff5d4848"
+	#The color of the health bar bound when blinking. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthBoundColorBlinkARGB = "#ffffffff"
+	#The color of the low health bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthBoundColorLowARGB = "#ffff0000"
+	#The color of the empty part of the health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthEmptyColorARGB = "#ff464646"
+	#The color of the absorption bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	absorptionColorARGB = "#ffe5d35c"
+	#The color of the absorption bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	absorptionBoundColorARGB = "#ffe5d35c"
+	#The color of the normal food level bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	foodColorNormalARGB = "#fff4f24c"
+	#The color of the hunger food level bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	foodColorHungerARGB = "#ffb0be54"
+	#The color of the food level bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	foodBoundColorARGB = "#ff6a6142"
+	#The color of the food level bar bound when blinking. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	foodBoundColorBlinkARGB = "#ff8e835d"
+	#The color of the empty part of the food level bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	foodEmptyColorARGB = "#ff464646"
+	#The color of the saturation bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	saturationColorARGB = "#fffffe91"
+	#The color of the experience bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	experienceColorARGB = "#ff86c457"
+	#The color of the experience bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	experienceBoundColorARGB = "#ff09100c"
+	#The color of the empty part of the experience bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	experienceEmptyColorARGB = "#ff29352f"
+	#The color of the air bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	airColorARGB = "#ffd1ebff"
+	#The color of the air bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	airBoundColorARGB = "#ff0094ff"
+	#The color of the mount health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	mountHealthColorARGB = "#ffda662c"
+	#The color of the second mount health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	mountHealthColor2ARGB = "#ffc1c1c1"
+	#The color of the mount health bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	mountHealthBoundColorARGB = "#ff7f3919"
+	#The color of the second mount health bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	mountHealthBoundColor2ARGB = "#ff797979"
+	#The color of the empty part of the mount health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	mountHealthEmptyColorARGB = "#ff464646"
+	#Whether to display the mount health bar on the left side. Or it will be displayed on the right side.
+	mountHealthOnLeftSide = false
+	#The color of the armor bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	armorColorARGB = "#ffe6e7f2"
+	#The color of the armor bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	armorBoundColorARGB = "#ff323232"
+	#The color of the empty part of the armor bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	armorEmptyColorARGB = "#ff464646"
+	#The color of the armor toughness bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	armorToughnessColorARGB = "#ff75cdff"
+	#Whether to enable health bar blink. This feature is designed to simulate the vanilla health icon blink.
+	enableHealthBlink = true
+	#The health bar will start to flash when health rate is lower than this value. From 0.0-1.0. 0.0 means never flash.
+	#Range: 0.0 ~ 1.0
+	lowHealthRate = 0.2
+	#Whether to shake health and food bar while low value.
+	shakeHealthAndFoodWhileLow = true
+	#Whether to overwrite vanilla armor bar. If you don't like the mod's armor bar, you can disable this option.
+	overwriteVanillaArmorBar = true
+	#Whether to overwrite vanilla experience bar. If you don't like the mod's experience bar, you can disable this option, progress label won't be affected.
+	overwriteVanillaExperienceBar = true
+	#Whether to display experience progress on the side of the experience bar.
+	displayExperienceProgress = true
+	#Whether to display experience level on the experience bar.
+	displayExperienceLevel = true
+	#Whether to display health text.
+	displayHealthText = true
+	#0: Absorption will be displayed together with health bar. 1: Absorption will be displayed half transparently on the health bar. 2: Absorption will be displayed as bounds. Note: Since the absorption value can be higher than the max health, an extra number will be displayed to indicate value of absorption/max health, you can turn it off by editing 'displayAbsorptionDivMaxHealth'.
+	#Range: 0 ~ 2
+	displayAbsorptionMethod = 2
+	#Whether to display the value of (absorption / max health). To avoid ambiguity, turn it to true if you hide the health text and don't display absorption bar together with health bar, or you may not be able to get correct absorption value.
+	displayAbsorptionDivMaxHealth = true
+	#0: Absorption text will be displayed together with health text. for example: 15(+10)/20. 1: Absorption text will be displayed separately. for example: 10 15/20. Note: if 'displayHealthText' is false, absorption text will be disabled.
+	#Range: 0 ~ 1
+	displayAbsorptionTextMethod = 1
+	#Whether to enable food level bar blink. This feature is designed to simulate the vanilla food icon shake.
+	enableFoodBlink = true
+	#Whether to display saturation bar.
+	displaySaturation = true
+	#Whether to display exhaustion bar.
+	displayExhaustion = true
+	#Whether to display food text.
+	displayFoodText = true
+	#Whether to display armor toughness bar.
+	displayArmorToughness = true
+	#The length of the bars if using corner layout. Affected bars: health, food, experience.
+	#Range: 40 ~ 182
+	cornerBarLength = 120
+	#The horizontal padding of the bars if using corner layout.
+	#Range: 0 ~ 100
+	cornerHorizontalPadding = 16
+	#The vertical padding of the bars if using corner layout.
+	#Range: 0 ~ 100
+	cornerVerticalPadding = 16
+	#Force every bar to be rendered at the corner. Only works in corner layout.
+	forceRenderAtCorner = true
+
+[entity]
+	#Whether to enable health bar for entity. If disabled, all other health bar options will be ignored.
+	enableHealthBar = false
+	#The maximum distance to display mob health bar.
+	#Range: 0.0 ~ 100.0
+	maxDistance = 32.0
+	#Whether to display health bar on self.
+	showOnSelf = false
+	#Whether to display health bar on players.
+	showOnPlayers = false
+	#Whether to display health bar on bosses.
+	showOnBosses = false
+	#Whether to display health bar on armor stands.
+	showOnArmorStands = false
+	#Whether to display health bar on mobs with full health if the mob's absorption value is 0.
+	showOnFullHealthWithoutAbsorption = true
+	#Whether to display health bar on mobs with full health if the mob's absorption value is not 0.
+	showOnFullHealthWithAbsorption = true
+	#The alpha of the health bar. 0 to 255. The alpha part of the color will be replaced by this value unless this value is 0.
+	#Range: 0 ~ 255
+	healthBarAlpha = 180
+	#The half width of the health bar.
+	#Range: 1 ~ 1000
+	healthBarHalfWidth = 50
+	#The half height of the health bar.
+	#Range: 1 ~ 200
+	healthBarHalfHeight = 3
+	#The offset of the health bar on the Y axis.
+	#Range: -10.0 ~ 10.0
+	healthBarOffsetY = 0.2
+	#The scale of the health bar.
+	#Range: 0.001 ~ 0.1
+	healthBarScale = 0.015
+	#The scale of the health bar text.
+	#Range: 0.1 ~ 1.0
+	healthBarTextScale = 0.8
+	#The offset of the health bar text on the Y axis.
+	#Range: -10.0 ~ 10.0
+	healthBarTextOffsetY = -2.75
+	#The width of the health bar bound. 0 to 10. Hint: This value is a little hard to adjust. If you want to make the bounds looks thinner, you can increase the health bar width&height and decrease the health bar scale. You may also need to change the text scale and offset. This can be complicated, I highly recommend you to use some in-game config mod like 'configured'.
+	#Range: 0 ~ 10
+	healthBarBoundWidth = 2
+	#Whether to render the vertex of the health bar bound.
+	healthBarBoundVertex = false
+	#The color of the health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthBarHealthColorARGB = "#AA008000"
+	#The color of the absorption bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthBarAbsorptionColorARGB = "#AAFFFF00"
+	#The color of the health bar bound. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthBarBoundColorARGB = "#55606060"
+	#The color of the empty part of the health bar. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthBarEmptyColorARGB = "#33404040"
+	#Whether to use dynamic color for health bar. The color will be picked between healthBarHealthColorFull and healthBarHealthColorEmpty based on the health rate. If disabled, the health bar will always be healthBarHealthColor
+	healthBarHealthColorDynamic = true
+	#The color of the health bar when the mob is full health. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthBarHealthColorFullARGB = "#AA008000"
+	#The color of the health bar when the mob is low health. 0x00000000 to 0xFFFFFFFF. ARGB format.
+	healthBarHealthColorEmptyARGB = "#AA800000"
+
+[hook]
+	#Whether to hook Tough As Nails. If enabled, the mod will display the thirst bar.
+	toughAsNails = true
+	#Whether to hook Thirst Was Taken. If enabled, the mod will display the thirst bar.
+	thirstWasTaken = true
+	#Whether to hook Mekanism. If enabled, the mod will display the energy bar.
+	mekanism = true
+	#Whether to hook Dehydration. If enabled, the mod will display the thirst bar.
+	dehydration = true
+	#Whether to hook Parcool. If enabled, the mod will display the energy bar.
+	parcool = true
+	#Whether to hook Iron's Spellbooks. If enabled, the mod will display the mana bar.
+	ironsSpellbooks = true
+	#Whether to hook Feathers. If enabled, the mod will display the energy bar.
+	feathers = true
+	#Whether to hook AppleSkin. If enabled, the mod will display health and food preview.
+	appleSkin = true
+	#Whether to hook Superior Shields. If enabled, the mod will display the shield bar.
+	superiorShields = true
+	#Whether to hook Light Shield. If enabled, the mod will display the shield bar.
+	lightShield = true
+	#Whether to hook Vampirism. If enabled, the mod will display the blood bar.
+	vampirism = true
+	#Whether to hook Homeostatic. If enabled, the mod will display the thirst bar.
+	homeostatic = true
+	#Whether to hook Botania. If enabled, the mod will display the mana bar.
+	botania = true
+	#Whether to hook Origins.
+	origins = true
+	#Whether to hook TFC.
+	tfc = true
+	#Whether to hook Ars Nouveau.
+	arsNouveau = true
+	#Whether to hook Apoli(Origins).
+	apoli = true
+	#Whether to hook Thermoo(Scorchful & Frostiful).
+	thermoo = true
+	#Whether to hook Meal API.
+	mealAPI = true
+	#Whether to hook Legendary Survival Overhaul.
+	legendarySurvivalOverhaul = true
+

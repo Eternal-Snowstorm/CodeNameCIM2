@@ -88,8 +88,9 @@ CMI Dev.json
 !.vscode/kubejs.code-snippets
 
 # Config
-/config/
-!/config/cmi*
+/config/*
+/config/jei/world/*
+config/nebula/value.txt
 !/config/nebula*
 !/config/alexscaves_biome_generation
 !/config/openloader
@@ -122,3 +123,5 @@ CMI Dev.json
 !config/railways-client.toml
 !config/tconstruct-common.toml
 !config/asteorbar-client.toml
+!config/ModernUI/
+!config/immediatelyfast.json

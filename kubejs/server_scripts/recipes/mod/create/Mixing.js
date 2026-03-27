@@ -80,15 +80,7 @@ ServerEvents.recipes((event) => {
 
 	// 液态灵魂
 	create.mixing(Fluid.of("tconstruct:liquid_soul", 1000), [
-		"#minecraft:soul_fire_base_blocks"
-	]).processingTime(150).heatRequirement(CmiHeatLevel.GRILLED)
-
-	create.mixing(Fluid.of("tconstruct:liquid_soul", 1000), [
-		"tconstruct:soul_glass"
-	]).processingTime(150).heatRequirement(CmiHeatLevel.GRILLED)
-
-	create.mixing(Fluid.of("tconstruct:liquid_soul", 250), [
-		"tconstruct:soul_glass_pane"
+		["minecraft:soul_soil", "minecraft:soul_sand"]
 	]).processingTime(150).heatRequirement(CmiHeatLevel.GRILLED)
 
 	create.mixing(Fluid.of("tconstruct:liquid_soul", 1000), [
@@ -189,5 +181,35 @@ ServerEvents.recipes((event) => {
 		"#forge:fuels/bio",
 		Fluid.of("createdieselgenerators:plant_oil", 100),
 		Fluid.of("minecraft:water", 100)
+	])
+
+	// 砖泥
+	create.mixing("2x tconstruct:grout", [
+		"#minecraft:sand",
+		"#forge:clay",
+		"minecraft:gravel",
+		Fluid.of("minecraft:water", 250)
+	])
+
+	create.mixing("8x tconstruct:grout", [
+		"#minecraft:sand",
+		"#forge:storage_blocks/clay",
+		"minecraft:gravel",
+		Fluid.of("minecraft:water", 500)
+	])
+
+	// 下界砖泥
+	create.mixing("2x tconstruct:nether_grout", [
+		["minecraft:soul_soil", "minecraft:soul_sand"],
+		"minecraft:magma_cream",
+		"minecraft:gravel",
+		Fluid.of("tconstruct:liquid_soul", 250)
+	])
+
+	create.mixing("8x tconstruct:nether_grout", [
+		["minecraft:soul_soil", "minecraft:soul_sand"],
+		"minecraft:magma_block",
+		"minecraft:gravel",
+		Fluid.of("tconstruct:liquid_soul", 500)
 	])
 })

@@ -21,7 +21,9 @@ ServerEvents.recipes((event) => {
 		"#forge:ingots/steel",
 		"forge:storage_blocks/steel",
 		"quark:grate",
-		"@torcherino"
+		"@torcherino",
+		"tconstruct:nether_grout",
+		"tconstruct:grout"
 	]
 	removeOutput.forEach((output) => {
 		event.remove({

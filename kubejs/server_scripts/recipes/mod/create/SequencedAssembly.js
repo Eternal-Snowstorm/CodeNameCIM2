@@ -19,16 +19,16 @@ ServerEvents.recipes((event) => {
 
 	/**
 	 * 
-	 * @param {OutputItem_} result 
-	 * @param {InputItem_} ingredient 
-	 * @param {InputItem_} transitionalItem 
+	 * @param {OutputItem_} output 
+	 * @param {InputItem_} input 
+	 * @param {InputItem_} tran 
 	 * @returns 
 	 */
-	function seqItems(result, ingredient, transitionalItem) {
+	function seqItems(output, input, tran) {
 		return {
-			RES: result,
-			ING: ingredient,
-			TRANS: transitionalItem
+			RES: output,
+			ING: input,
+			TRANS: tran
 		}
 	}
 
@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
 	 *		RES: OutputItem_,
 	 *		ING: InputItem_,
 	 *  	TRANS: InputItem_
-	 *  	}} item
+	 *  }} item
 	 * @returns 
 	 */
 	function SequencedAssemblyRecipe(item) {
