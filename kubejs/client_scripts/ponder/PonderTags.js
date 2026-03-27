@@ -32,7 +32,7 @@ Ponder.tags((event) => {
 
 		let index = Component.translatable(`${id}.ponder.index`).getString()
 		let id = `${global.namespace}:${tag}`
-		event.createTag(id, icon, index, ITEMS)
+		event.createTag(id, icon, name, index, ITEMS)
 	}
 
 	new PonderTag("ponder", "cmi:creative_mechanism", [
