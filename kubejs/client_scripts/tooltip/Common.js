@@ -90,6 +90,13 @@ ItemEvents.tooltip((event) => {
 		event.add(ingredient, Component.translatable(itemTooltipTranslateKey).aqua())
 	}
 
+	event.add(["create:encased_fan", "ratatouille:oven_fan"], [
+		Component.translatable("tooltip.cmi.fan")
+	])
+	event.add(["#tconstruct:casts", "tconstruct:seared_table", "tconstruct:scorched_table", "tconstruct:seared_basin", "tconstruct:scorched_basin"], [
+		Component.translatable("tooltip.cmi.cast")
+	])
+
 	// 愚人节
 	let month = LocalDateTime.now().getMonthValue()
 	let day = LocalDateTime.now().getDayOfMonth()
@@ -165,27 +172,3 @@ ItemEvents.tooltip((event) => {
 		}
 	})
 })
-// NebulaEvents.fluidTooltip((event) => {
-// 	chemSalts.forEach((salt) => {
-// 		event.add(`cmi:${salt}_solution`, (tooltip) => {
-// 			tooltip.add(Component.translatable(`tooltip.cmi.${salt}_solution_bucket`))
-// 		})
-// 	})
-
-// 	// 燃料温度
-// 	global.fuelList.forEach((fuel) => {
-// 		let tp = global.fuelTemperatures[fuel]
-
-// 		if (typeof tp === "number") {
-// 			let translatable = Component.translatable(
-// 				"tooltip.cmi.fuelTemperature",
-// 				tp,
-// 				NebulaLibs.toFahrenheit(tp)
-// 			).yellow()
-
-// 			event.add(fuel, (tooltip) => {
-// 				tooltip.add(translatable)
-// 			})
-// 		}
-// 	})
-// })

@@ -134,6 +134,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addCustomTooltipLang("tooltip.moreburners.electric_burner.1", "§b电力驱动的{create:blaze_burner, 1}烈焰人燃烧室")
 	addCustomTooltipLang("tooltip.moreburners.electric_burner.2", "§b通上{createaddition:electrum_spool, 1}电后会缓慢的升温, 需要保持供电")
+	addCustomTooltipLang("tooltip.cmi.fan", "§b可加快{[tconstruct:seared_table, tconstruct:scorched_table, tconstruct:seared_basin, tconstruct:scorched_basin], 1}{#tconstruct:casts, 1}铸造冷却速度")
+	addCustomTooltipLang("tooltip.cmi.cast", "§b冷却时可被{[create:encased_fan, ratatouille:oven_fan], 1}鼓风机加速")
 
 	addCommonTooltipLang("cmi:re_construction", "主创&策划&美工")
 	addCommonTooltipLang("cmi:dkrkoo_weihe", "吉祥物&社区管理")

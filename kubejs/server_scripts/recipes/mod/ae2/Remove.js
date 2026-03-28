@@ -9,7 +9,8 @@ ServerEvents.recipes((event) => {
 		"advanced_ae:engineering_processor_chamber",
 		"advanced_ae:quantum_processor_chamber",
 		"advanced_ae:quantum_alloy_plate",
-		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals"
+		"ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals",
+		"ae2:inscriber/sky_stone_dust"
     ]
     removeRecipeIds.forEach((id) => {
         event.remove({
