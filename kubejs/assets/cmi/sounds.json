@@ -54,5 +54,29 @@
 				"stream": true
 			}
 		]
+	},
+	"rocket.startup": {
+		"sounds": [
+			{
+				"name": "cmi:event/winxp_start",
+				"stream": true
+			}
+		]
+	},
+	"rocket.shutdown": {
+		"sounds": [
+			{
+				"name": "cmi:event/winxp_shutdown",
+				"stream": true
+			}
+		]
+	},
+	"rocket.error": {
+		"sounds": [
+			{
+				"name": "cmi:event/winxp_err",
+				"stream": true
+			}
+		]
 	}
 }

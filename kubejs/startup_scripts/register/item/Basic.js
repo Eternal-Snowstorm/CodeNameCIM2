@@ -268,4 +268,9 @@ StartupEvents.registry("item", (event) => {
 
 	// 火箭发射遥控器
 	addItem("rocket_launcher")
+	// 燃料箱
+	addItem("rocket_fuel_1")
+	addItem("rocket_fuel_2")
+	addItem("rocket_fuel_3")
+	addItem("rocket_fuel_4")
 })
