@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
 		let dust = Ingredient.of(`#forge:dusts/${material}`).getItemIds()
 
 		return create.splashing([
-			Item.of(dust[0], 2),
+			Item.of(dust[0], 1),
 			Item.of(product).withChance(0.25)
 		], crushed)
 	}
