@@ -47,6 +47,7 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("minecraft:water")
 		.removeAll()
 		.add("minecraft:water")
+		.add("minecraft:flowing_water")
 
 	event.get("cmi:delta_unstable_solution")
 		.add("cmi:delta_unstable_solution")
