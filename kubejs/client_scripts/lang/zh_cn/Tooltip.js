@@ -98,6 +98,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:water_pump", "使用扳手右键可以显示预览")
 	addCommonTooltipLang("cmi:parchment", `有些能量不是由燃料产生的, 而是靠"遇见"`)
 	addCommonTooltipLang("moreburners:heat_upgrade", "使{moreburners:electric_burner, 1}电磁炉达到更高的加热等级")
+	addCommonTooltipLang("create:basin", "使用{minecraft:sponge, 1}海绵可以清空内部所有流体")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",

@@ -161,4 +161,38 @@ ServerEvents.highPriorityData((event) => {
 		},
 		"sends_telemetry_event": true
 	})
+
+	event.addJson("cmi:advancements/academic_cost.json", {
+		parent: "cmi:start",
+		criteria: {
+			"no_blast_furnace_iron": {
+				trigger: "cmi:academic_cost",
+				conditions: {}
+			}
+		},
+		display: {
+			announce_to_chat: true,
+			description: {
+				"color": "#DBA213",
+				translate: "advancements.cmi.academic_cost.desc"
+			},
+			frame: "challenge",
+			hidden: true,
+			icon: {
+				item: "minecraft:iron_ingot"
+			},
+			show_toast: true,
+			title: {
+				translate: "advancements.cmi.academic_cost"
+			}
+		},
+		requirements: [
+			[
+				"no_blast_furnace_iron"
+			]
+		],
+		rewards: {
+			experience: 50
+		}
+	})
 })

@@ -75,6 +75,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("alexscaves:notor_gizmo")
 	addCommonTooltip("immersiveindustry:electrolyzer")
 	addCommonTooltip("moreburners:heat_upgrade")
+	addCommonTooltip("create:basin")
 
 	chemSalts.forEach((salt) => {
 		addCommonTooltip(`cmi:${salt}`)
