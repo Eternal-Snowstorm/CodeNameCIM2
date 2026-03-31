@@ -366,6 +366,7 @@
 				"7AADB534F537AA83"
 			]
 			icon: "createdieselgenerators:pumpjack_crank"
+			icon_scale: 2.0d
 			id: "3640CEE4D21C8BB5"
 			shape: "hexagon"
 			size: 1.5d
