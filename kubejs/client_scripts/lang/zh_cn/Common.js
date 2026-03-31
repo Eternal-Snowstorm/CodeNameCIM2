@@ -98,7 +98,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addAdvancementLang("meet", "轨道共鸣", "两颗游离的恒星在一次无意的轨道扰动中彼此靠近\n无人知晓它们为何产生引力, 只知从那一刻起, 星系的背景噪声变得温柔\n(隐藏挑战!)")
 	addAdvancementLang("north_star", "迷航", "轨迹从此断裂, 却像在等待另一侧的回声")
 	addAdvancementLang("south_cross", "星港", "即便断裂, 它依旧把角度留给那道未曾抵达的回声")
-	addAdvancementLang("academic_cost", "学术造假", "在未获得高炉的情况下获得铁锭\n§c逃的课迟早也得补回来")
+	addAdvancementLang("academic_fraud", "学术造假", "在未获得高炉的情况下获得铁锭\n§c逃的课迟早也得补回来")
 
 	addPaintingLang("bug_is_right", "有Bug是对的", "古镇天")
 	addPaintingLang("it_must_be_optifine", "一定是OptiFine干的", "XeKr")

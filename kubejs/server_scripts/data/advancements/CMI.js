@@ -162,11 +162,11 @@ ServerEvents.highPriorityData((event) => {
 		"sends_telemetry_event": true
 	})
 
-	event.addJson("cmi:advancements/academic_cost.json", {
+	event.addJson("cmi:advancements/academic_fraud.json", {
 		parent: "cmi:start",
 		criteria: {
 			"no_blast_furnace_iron": {
-				trigger: "cmi:academic_cost",
+				trigger: "cmi:academic_fraud",
 				conditions: {}
 			}
 		},
@@ -174,7 +174,7 @@ ServerEvents.highPriorityData((event) => {
 			announce_to_chat: true,
 			description: {
 				"color": "#DBA213",
-				translate: "advancements.cmi.academic_cost.desc"
+				translate: "advancements.cmi.academic_fraud.desc"
 			},
 			frame: "challenge",
 			hidden: true,
@@ -183,7 +183,7 @@ ServerEvents.highPriorityData((event) => {
 			},
 			show_toast: true,
 			title: {
-				translate: "advancements.cmi.academic_cost"
+				translate: "advancements.cmi.academic_fraud"
 			}
 		},
 		requirements: [
