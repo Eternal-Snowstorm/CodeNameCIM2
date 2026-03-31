@@ -63,14 +63,7 @@ ServerEvents.recipes((event) => {
 
 	// 安山合金
 	tconstruct.casting_table("create:andesite_alloy")
-		.fluid(Fluid.of("tconstruct:molten_iron", 10))
-		.cast("#forge:dusts/andesite")
-		.cooling_time(20)
-		.cast_consumed(true)
-
-	// 安山合金
-	tconstruct.casting_table("create:andesite_alloy")
-		.fluid(Fluid.of("tconstruct:molten_zinc", 10))
+		.fluid(Fluid.tag("tag", "cmi:andesite_alloy_material", 10))
 		.cast("#forge:dusts/andesite")
 		.cooling_time(20)
 		.cast_consumed(true)

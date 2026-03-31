@@ -22,7 +22,11 @@ ServerEvents.tags("fluid", (event) => {
 	// 机械动力无限流体
 	event.get("create:bottomless/allow")
 		.add("cmi:sea_water")
-		.add()
+
+	// 安山合金材料
+	event.get("cmi:andesite_alloy_material")
+		.add("tconstruct:molten_zinc")
+		.add("tconstruct:molten_iron")
 
 	// 一桶就能上天的燃料
 	// event.get("ad_astra:efficient_fuel")
