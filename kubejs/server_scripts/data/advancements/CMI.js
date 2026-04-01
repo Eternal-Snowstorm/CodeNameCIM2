@@ -1,40 +1,40 @@
 ServerEvents.highPriorityData((event) => {
 	event.addJson("cmi:advancements/start.json", {
-		"criteria": {
-			"0": {
-				"conditions": {},
-				"trigger": "minecraft:inventory_changed"
+		criteria: {
+			0: {
+				conditions: {},
+				trigger: "minecraft:inventory_changed"
 			}
 		},
-		"display": {
-			"announce_to_chat": false,
-			"background": "cmi:textures/gui/advancements/main.png",
-			"description": {
-				"color": "#DBA213",
-				"translate": "advancements.cmi.start.desc"
+		display: {
+			announce_to_chat: false,
+			background: "cmi:textures/gui/advancements/main.png",
+			description: {
+				color: "#DBA213",
+				translate: "advancements.cmi.start.desc"
 			},
-			"frame": "task",
-			"hidden": false,
-			"icon": {
-				"item": "create:wrench"
+			frame: "task",
+			hidden: false,
+			icon: {
+				item: "create:precision_mechanism"
 			},
-			"show_toast": true,
-			"title": {
-				"translate": "advancements.cmi.start"
+			show_toast: true,
+			title: {
+				translate: "advancements.cmi.start"
 			}
 		},
-		"requirements": [
+		requirements: [
 			[
 				"0"
 			]
 		],
-		"sends_telemetry_event": true
+		sends_telemetry_event: true
 	})
 
 	event.addJson("cmi:advancements/echoes_north_star.json", {
 		parent: "cmi:start",
 		criteria: {
-			"get_water_pump": {
+			get_water_pump: {
 				conditions: {
 					items: [
 						{
@@ -78,7 +78,7 @@ ServerEvents.highPriorityData((event) => {
 	event.addJson("cmi:advancements/echoes_south_cross.json", {
 		parent: "cmi:echoes_north_star",
 		criteria: {
-			"get_accelerator": {
+			get_accelerator: {
 				conditions: {
 					items: [
 						{
@@ -120,52 +120,52 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	event.addJson("cmi:advancements/meet.json", {
-		"parent": "cmi:echoes_south_cross",
-		"criteria": {
-			"0": {
-				"conditions": {
-					"items": [
+		parent: "cmi:echoes_south_cross",
+		criteria: {
+			0: {
+				conditions: {
+					items: [
 						{
-							"items": [
+							items: [
 								"cmi:parchment"
 							]
 						}
 					]
 				},
-				"trigger": "minecraft:inventory_changed"
+				trigger: "minecraft:inventory_changed"
 			}
 		},
-		"display": {
-			"announce_to_chat": false,
-			"description": {
-				"color": "#DBA213",
-				"translate": "advancements.cmi.meet.desc"
+		display: {
+			announce_to_chat: false,
+			description: {
+				color: "#DBA213",
+				translate: "advancements.cmi.meet.desc"
 			},
-			"frame": "challenge",
-			"hidden": true,
-			"icon": {
-				"item": "ae2:quantum_entangled_singularity"
+			frame: "challenge",
+			hidden: true,
+			icon: {
+				item: "ae2:quantum_entangled_singularity"
 			},
-			"show_toast": true,
-			"title": {
-				"translate": "advancements.cmi.meet"
+			show_toast: true,
+			title: {
+				translate: "advancements.cmi.meet"
 			}
 		},
-		"requirements": [
+		requirements: [
 			[
 				"0"
 			]
 		],
-		"rewards": {
-			"experience": 100
+		rewards: {
+			experience: 100
 		},
-		"sends_telemetry_event": true
+		sends_telemetry_event: true
 	})
 
 	event.addJson("cmi:advancements/academic_fraud.json", {
 		parent: "cmi:start",
 		criteria: {
-			"no_blast_furnace_iron": {
+			no_blast_furnace_iron: {
 				trigger: "cmi:academic_fraud",
 				conditions: {}
 			}
@@ -173,7 +173,7 @@ ServerEvents.highPriorityData((event) => {
 		display: {
 			announce_to_chat: true,
 			description: {
-				"color": "#DBA213",
+				color: "#DBA213",
 				translate: "advancements.cmi.academic_fraud.desc"
 			},
 			frame: "challenge",
@@ -192,6 +192,9 @@ ServerEvents.highPriorityData((event) => {
 			]
 		],
 		rewards: {
+			loot: [
+				"cmi:gameplay/academic_fraud"
+			],
 			experience: 50
 		}
 	})
