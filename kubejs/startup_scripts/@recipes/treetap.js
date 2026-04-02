@@ -1,0 +1,6 @@
+new Schema("treetap:tap_extract")
+	.simpleKey("result", "outputItem")
+	.simpleKey("log", "inputItem")
+	.simpleKey("display_fluid", "outputFluid")
+	.simpleKey("processing_time", "intNumber", 100)
+	.simpleKey("collect_bucket", "bool", true)
