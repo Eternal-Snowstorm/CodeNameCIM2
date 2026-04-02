@@ -3,10 +3,10 @@ ServerEvents.recipes((event) => {
 
 	// 橡胶树
 	treetap.tap_extract(
-		"4x thermal:rubber",
+		"3x thermal:rubber",
 		"#forge:rubberwood_logs",
 		"thermal:latex"
-	).processing_time(60 * 20 * 3)
+	).processing_time(4000)
 
 	// 龙头
 	kubejs.shaped("treetap:tap", [
