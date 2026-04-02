@@ -23,6 +23,10 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	})
 })
 
+StartupEvents.modifyCreativeTab("minecraft:op_blocks", (event) => {
+	event.add("nebula_libs:geological_hammer")
+})
+
 StartupEvents.modifyCreativeTab("create:base", (event) => {
 	event.add([
 		"create:chromatic_compound",
