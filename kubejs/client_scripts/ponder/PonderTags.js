@@ -2,6 +2,7 @@ Ponder.tags((event) => {
 	/** 
 	 * @param {String} tag Tag的注册ID
 	 * @param {Internal.ItemStack_} icon 游戏内显示的图标
+	 * @param {string} name
 	 * @param {(
 	 * 		String |
 	 *  	Internal.ItemStack | 
@@ -14,7 +15,7 @@ Ponder.tags((event) => {
 	 * )} [item] PonderTag内包含的物品
 	 * @constructor
 	 */
-	function PonderTag(tag, icon, item) {
+	function PonderTag(tag, icon, name, item) {
 		this.tag = tag
 		this.icon = icon
 		this.items = ITEMS
