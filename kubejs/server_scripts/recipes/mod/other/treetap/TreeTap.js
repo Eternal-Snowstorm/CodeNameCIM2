@@ -10,9 +10,10 @@ ServerEvents.recipes((event) => {
 
 	// 龙头
 	kubejs.shaped("treetap:tap", [
-		"AA ",
+		"ABA",
 		"AAA"
 	], {
-		A: "#minecraft:planks"
-	}).id("treetap:tap")
+		A: "#minecraft:planks",
+		B: "#forge:tools/knives"
+	}).id("treetap:tap").damageIngredient("#forge:tools/knives")
 })
