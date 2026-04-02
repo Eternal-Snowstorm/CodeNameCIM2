@@ -59,8 +59,8 @@ Ponder.registry((event) => {
 			scene.idle(2)
 		})
 		scene.idle(20)
-		// 4个朝内的楼梯
-		scene.text(40, "4 inward facing stairs")
+		// 4个上半砖
+		scene.text(40, "4 upward slabs")
 		let positions = [
 			[2, 4, 1],
 			[3, 4, 2],
