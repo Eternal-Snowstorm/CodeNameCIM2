@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 		"3x thermal:rubber",
 		"#forge:rubberwood_logs",
 		"thermal:latex"
-	).processing_time(4000)
+	).processing_time(20 * 200)
 
 	// 龙头
 	kubejs.shaped("treetap:tap", [
