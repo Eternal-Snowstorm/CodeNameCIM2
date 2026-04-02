@@ -1,4 +1,12 @@
 {
+  "cmi.ponder.tag.tconstruct": "[tconstruct:seared_faucet, tconstruct:scorched_faucet, tconstruct:seared_melter, tconstruct:seared_heater, tconstruct:seared_fuel_tank, tconstruct:seared_drain, tconstruct:seared_bricks, tconstruct:foundry_controller, tconstruct:scorched_bricks, tconstruct:scorched_drain, tconstruct:scorched_fuel_tank, tconstruct:smeltery_controller, tconstruct:seared_fuel_tank, tconstruct:seared_drain, tconstruct:seared_bricks]",
+  "cmi.ponder.tag.tconstruct.description": "undefined.ponder.index",
+  "cmi.ponder.tag.ponder": "[cmi:accelerator, cmi:water_pump, minecraft:water_bucket, cmi:bronze_casing, mekanism:steam_boiler, mekanism:steam_bucket]",
+  "cmi.ponder.tag.ponder.description": "undefined.ponder.index",
+  "cmi.ponder.tag.ae2": "[ae2:fluix_glass_cable, ae2:condenser, ae2:controller, ae2:pattern_provider, ae2:crafting_unit, ae2:drive, ae2:me_p2p_tunnel, ae2:quantum_ring, ae2:spatial_io_port, ae2:spatial_pylon, ae2:wireless_access_point]",
+  "cmi.ponder.tag.ae2.description": "undefined.ponder.index",
+  "cmi.ponder.tag.other": "[portality:controller, portality:frame, portality:module_items, portality:module_fluids, portality:module_energy, portality:module_interdimensional, immersiveindustry:crucible, immersiveindustry:burning_chamber, immersiveengineering:blastfurnace_preheater, immersiveengineering:blastbrick, cmi:crucible_base, cmi:crucible_tuyere, mekanism:cardboard_box]",
+  "cmi.ponder.tag.other.description": "undefined.ponder.index",
   "cmi.ponder.accelerator.header": "How to use the accelerator",
   "cmi.ponder.accelerator.text_1": "This is an accelerator",
   "cmi.ponder.accelerator.text_2": "R-Click it with an iron mechanism in hand...",
