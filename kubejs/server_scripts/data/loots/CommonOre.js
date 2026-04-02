@@ -1,5 +1,5 @@
 ServerEvents.blockLootTables((event) => {
-	let namespace = global.namespace
+	let namespace = CmiCore.MODID
 	let addOreLoots = {
 		common: function (ore) {
 			// 定义前缀列表

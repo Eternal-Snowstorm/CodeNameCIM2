@@ -133,5 +133,8 @@
   },
   "cmi": {
     "common": true
+  },
+  "treetap": {
+    "tap": true
   }
 }

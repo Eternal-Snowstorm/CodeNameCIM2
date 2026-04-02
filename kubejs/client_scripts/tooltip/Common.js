@@ -103,7 +103,7 @@ ItemEvents.tooltip((event) => {
 	let day = LocalDateTime.now().getDayOfMonth()
 
 	if (month === 4 && day === 1) {
-		event.add("minecraft:dirt", Component.translatable(`tooltip.${global.namespace}.41dirt`).aqua())
+		event.add("minecraft:dirt", Component.translatable(`tooltip.${CmiCore.MODID}.41dirt`).aqua())
 	}
 
 	let materialTypeList = [

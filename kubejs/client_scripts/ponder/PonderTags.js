@@ -31,7 +31,7 @@ Ponder.tags((event) => {
 		}
 
 		let index = Component.translatable(`${id}.ponder.index`).getString()
-		let id = `${global.namespace}:${tag}`
+		let id = `${CmiCore.MODID}:${tag}`
 		event.createTag(id, icon, name, index, ITEMS)
 	}
 

@@ -42,16 +42,16 @@ StartupEvents.registry("block", (event) => {
 		"pig_iron"
 	]
 	machineBlockRegister.forEach((type) => {
-		event.create(`${global.namespace}:${type}_machine`, "cardinal")
+		event.create(`${CmiCore.MODID}:${type}_machine`, "cardinal")
 			.soundType(SoundType.METAL)
 			.waterlogged()
-			.model(`${global.namespace}:block/machine_block/${type}`)
+			.model(`${CmiCore.MODID}:block/machine_block/${type}`)
 			.requiresTool(true)
 			.notSolid()
 			.defaultCutout()
 			.blockEntity((entity) => {
 				let mechanism = Ingredient.of(`#create:mechanisms/${type}`)
-				let flashDrive = Ingredient.of(`#${global.namespace}:mechanism_flash_drives/${type}`)
+				let flashDrive = Ingredient.of(`#${CmiCore.MODID}:mechanism_flash_drives/${type}`)
 
 				entity.enableSync()
 				entity.inventory(9, 3, [mechanism, flashDrive])

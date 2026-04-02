@@ -5,7 +5,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addBlockLang(key, value) {
-		event.add(`block.${global.namespace}.${key}`, value)
+		event.add(`block.${CmiCore.MODID}.${key}`, value)
 	}
 
 	/**
@@ -14,7 +14,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addOreNodeLang(key, value) {
-		event.add(`block.${global.namespace}.${key}_ore_node`, `${value}矿物节点`)
+		event.add(`block.${CmiCore.MODID}.${key}_ore_node`, `${value}矿物节点`)
 	}
 
 	/**
@@ -23,8 +23,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addMachineLang(key, value) {
-		event.add(`block.${global.namespace}.${key}`, value)
-		event.add(`machine.${global.namespace}.${key}`, value)
+		event.add(`block.${CmiCore.MODID}.${key}`, value)
+		event.add(`machine.${CmiCore.MODID}.${key}`, value)
 	}
 
 	addBlockLang("rocket_pattern", "火箭模版")

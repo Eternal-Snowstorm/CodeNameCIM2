@@ -1,6 +1,6 @@
 StartupEvents.registry("mekanism:infuse_type", (event) => {
 	function addMekanismInfuseType(name, color) {
-		return event.create(`${global.namespace}:${name}`)
+		return event.create(`${CmiCore.MODID}:${name}`)
 			.color(color)
 	}
 

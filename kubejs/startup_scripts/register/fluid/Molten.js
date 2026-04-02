@@ -1,9 +1,9 @@
 StartupEvents.registry("fluid", (event) => {
 	function addColorMaterialFluid(name, color) {
-		let builder = event.create(`${global.namespace}:molten_${name}`)
+		let builder = event.create(`${CmiCore.MODID}:molten_${name}`)
 
-		builder.flowingTexture(`${global.namespace}:fluid/metal/flow`)
-		builder.stillTexture(`${global.namespace}:fluid/metal/still`)
+		builder.flowingTexture(`${CmiCore.MODID}:fluid/metal/flow`)
+		builder.stillTexture(`${CmiCore.MODID}:fluid/metal/still`)
 		builder.thinTexture(color)
 		builder.bucketColor(color)
 		builder.tag("forge:molten_materials")

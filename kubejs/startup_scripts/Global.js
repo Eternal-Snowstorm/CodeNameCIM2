@@ -3,9 +3,6 @@
 let $TinkerTags$Items =
 	Java.loadClass("slimeknights.tconstruct.common.TinkerTags$Items")
 
-// 全局注册物品命名空间
-global.namespace = "cmi"
-
 // 整合包状态
 let modPackState = "Beta"
 

@@ -5,14 +5,14 @@ StartupEvents.registry("fluid", (event) => {
 	 * @returns 
 	 */
 	function addAloneFluid(name) {
-		let builder = event.create(`${global.namespace}:${name}`)
+		let builder = event.create(`${CmiCore.MODID}:${name}`)
 
-		builder.flowingTexture(`${global.namespace}:fluid/${name}/flow`)
-		builder.stillTexture(`${global.namespace}:fluid/${name}/still`)
+		builder.flowingTexture(`${CmiCore.MODID}:fluid/${name}/flow`)
+		builder.stillTexture(`${CmiCore.MODID}:fluid/${name}/still`)
 		builder.renderType("translucent")
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
-		console.log(`${global.namespace}:${name}已注册!`)
+		console.log(`${CmiCore.MODID}:${name}已注册!`)
 
 		return builder
 	}
@@ -24,12 +24,12 @@ StartupEvents.registry("fluid", (event) => {
 	 * @returns 
 	 */
 	function addThickColorFluid(name, color) {
-		let builder = event.create(`${global.namespace}:${name}`)
+		let builder = event.create(`${CmiCore.MODID}:${name}`)
 
 		builder.thinTexture(color)
 		builder.bucketColor(color)
-		builder.flowingTexture(`${global.namespace}:fluid/metal/flow`)
-		builder.stillTexture(`${global.namespace}:fluid/metal/still`)
+		builder.flowingTexture(`${CmiCore.MODID}:fluid/metal/flow`)
+		builder.stillTexture(`${CmiCore.MODID}:fluid/metal/still`)
 		builder.renderType("translucent")
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
@@ -43,12 +43,12 @@ StartupEvents.registry("fluid", (event) => {
 	 * @returns 
 	 */
 	function addColorFluid(name, color) {
-		let builder = event.create(`${global.namespace}:${name}`)
+		let builder = event.create(`${CmiCore.MODID}:${name}`)
 
 		builder.thinTexture(color)
 		builder.bucketColor(color)
-		builder.flowingTexture(`${global.namespace}:fluid/chemical/flow`)
-		builder.stillTexture(`${global.namespace}:fluid/chemical/still`)
+		builder.flowingTexture(`${CmiCore.MODID}:fluid/chemical/flow`)
+		builder.stillTexture(`${CmiCore.MODID}:fluid/chemical/still`)
 		builder.renderType("translucent")
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 

@@ -12,8 +12,8 @@ StartupEvents.registry("item", (event) => {
 		"space"
 	]
 	partsRegisters.forEach((name) => {
-		event.create(`${global.namespace}:${name}_mechanism_part`)
-			.texture(`${global.namespace}:item/mechanism/part/${name}`)
-			.tag(`${global.namespace}:mechanism_parts`)
+		event.create(`${CmiCore.MODID}:${name}_mechanism_part`)
+			.texture(`${CmiCore.MODID}:item/mechanism/part/${name}`)
+			.tag(`${CmiCore.MODID}:mechanism_parts`)
 	})
 })

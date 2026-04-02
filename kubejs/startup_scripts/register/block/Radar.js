@@ -6,9 +6,9 @@ StartupEvents.registry("block", (event) => {
 	 */
 	function addBlock(name, type) {
 		if (type === undefined) {
-			return event.create(`${global.namespace}:${name}`)
+			return event.create(`${CmiCore.MODID}:${name}`)
 		}
-		return event.create(`${global.namespace}:${name}`, type)
+		return event.create(`${CmiCore.MODID}:${name}`, type)
 	}
 
 	function addConcreteBlock(name, color) {
@@ -82,7 +82,7 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/radar`)
+		.model(`${CmiCore.MODID}:block/radar`)
 		.box(6, 0, 6, 10, 16, 10, true)
 
 	// 损坏雷达
@@ -91,7 +91,7 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/broken_radar_part/radar`)
+		.model(`${CmiCore.MODID}:block/broken_radar_part/radar`)
 		.box(6, 0, 6, 10, 16, 10, true)
 
 
@@ -101,7 +101,7 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/transformer`)
+		.model(`${CmiCore.MODID}:block/transformer`)
 
 	// 损坏变压器
 	addBlock("broken_transformer")
@@ -109,7 +109,7 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/broken_radar_part/transformer`)
+		.model(`${CmiCore.MODID}:block/broken_radar_part/transformer`)
 		.notSolid()
 
 	// 调制解调器
@@ -118,7 +118,7 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/modem`)
+		.model(`${CmiCore.MODID}:block/modem`)
 		.notSolid()
 
 
@@ -127,7 +127,7 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/broken_radar_part/modem`)
+		.model(`${CmiCore.MODID}:block/broken_radar_part/modem`)
 		.notSolid()
 
 	// 追踪阵列
@@ -136,7 +136,7 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/tracking_array`)
+		.model(`${CmiCore.MODID}:block/tracking_array`)
 
 	// 损坏的追踪阵列
 	addBlock("broken_tracking_array")
@@ -144,7 +144,7 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/broken_radar_part/tracking_array`)
+		.model(`${CmiCore.MODID}:block/broken_radar_part/tracking_array`)
 		.notSolid()
 
 	// 电源
@@ -153,7 +153,7 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/power_supply`)
+		.model(`${CmiCore.MODID}:block/power_supply`)
 
 	// 损坏的电源
 	addBlock("broken_power_supply")
@@ -161,6 +161,6 @@ StartupEvents.registry("block", (event) => {
 		.waterlogged()
 		.hardness(-1)
 		.resistance(-1)
-		.model(`${global.namespace}:block/broken_radar_part/power_supply`)
+		.model(`${CmiCore.MODID}:block/broken_radar_part/power_supply`)
 		.notSolid()
 })

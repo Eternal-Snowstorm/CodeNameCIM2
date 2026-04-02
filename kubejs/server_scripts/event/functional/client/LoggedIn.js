@@ -9,6 +9,6 @@ ServerEvents.loaded((event) => {
 PlayerEvents.loggedIn((event) => {
 	let { player } = event
 
-	let tranKey = `message.${global.namespace}.welcome`
+	let tranKey = `message.${CmiCore.MODID}.welcome`
 	player.tell(Component.translatable(tranKey, player.username))
 })

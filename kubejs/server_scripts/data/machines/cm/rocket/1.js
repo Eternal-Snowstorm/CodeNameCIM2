@@ -1,5 +1,5 @@
 ServerEvents.highPriorityData((event) => {
-	event.addJson(`${global.namespace}:machines/rocket_1`, {
+	event.addJson(`${CmiCore.MODID}:machines/rocket_1`, {
 		"name": "block.cmi.rocket_1",
 		"appearance": {
 			"idle": {

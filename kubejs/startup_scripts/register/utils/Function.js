@@ -9,7 +9,7 @@ function setFluidBucketModel(name) {
 	return {
 		"parent": "forge:item/bucket_drip",
 		"loader": "forge:fluid_container",
-		"fluid": `${global.namespace}:${name}`
+		"fluid": `${CmiCore.MODID}:${name}`
 	}
 }
 

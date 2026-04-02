@@ -1,6 +1,6 @@
 StartupEvents.registry("mekanism:gas", (event) => {
 	function addMekanismGas(name, color) {
-		return event.create(`${global.namespace}:${name}`)
+		return event.create(`${CmiCore.MODID}:${name}`)
 			.color(color)
 	}
 

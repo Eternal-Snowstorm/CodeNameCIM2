@@ -14,7 +14,7 @@ ServerEvents.highPriorityData((event) => {
 			type: "minecraft:jigsaw",
 			biomes: [],
 			size: 1,
-			start_pool: `${global.namespace}:${type}/${name}`,
+			start_pool: `${CmiCore.MODID}:${type}/${name}`,
 			step: "surface_structures",
 			start_height: {
 				absolute: 0
@@ -30,7 +30,7 @@ ServerEvents.highPriorityData((event) => {
 		let structureSet = {
 			structures: [
 				{
-					structure: `${global.namespace}:${type}/${name}`,
+					structure: `${CmiCore.MODID}:${type}/${name}`,
 					weight: 1
 				}
 			],
@@ -44,13 +44,13 @@ ServerEvents.highPriorityData((event) => {
 
 		// 结构池
 		let templatePool = {
-			name: `${global.namespace}:${name}`,
+			name: `${CmiCore.MODID}:${name}`,
 			fallback: "minecraft:empty",
 			elements: [
 				{
 					weight: 1,
 					element: {
-						location: `${global.namespace}:${type}/${name}`,
+						location: `${CmiCore.MODID}:${type}/${name}`,
 						element_type: "minecraft:single_pool_element",
 						processors: "minecraft:empty",
 						projection: "rigid"
@@ -204,7 +204,7 @@ ServerEvents.highPriorityData((event) => {
 						"minecraft:basalt_deltas"
 					],
 					size: 1,
-					start_pool: `${global.namespace}:${type}/${name}`,
+					start_pool: `${CmiCore.MODID}:${type}/${name}`,
 					step: "underground_structures",
 					start_height: {
 						type: "uniform",

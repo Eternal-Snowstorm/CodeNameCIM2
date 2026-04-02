@@ -10,7 +10,7 @@ ItemEvents.rightClicked((event) => {
 		"create:stressometer"
 	]
 	if (player.mainHandItem === KIT && player.offHandItem !== KIT && player.isCrouching()) {
-		let key = `message.${global.namespace}.initial_item_kit`
+		let key = `message.${CmiCore.MODID}.initial_item_kit`
 		player.tell(Component.translatable(key))
 
 		itemList.forEach((items) => {

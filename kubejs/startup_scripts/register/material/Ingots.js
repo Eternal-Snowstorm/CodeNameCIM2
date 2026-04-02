@@ -6,9 +6,9 @@ StartupEvents.registry("item", (event) => {
      * @returns 
      */
     function addColorIngotItem(name, color) {
-        let builder = event.create(`${global.namespace}:${name}_ingot`)
+        let builder = event.create(`${CmiCore.MODID}:${name}_ingot`)
 
-        builder.texture(`${global.namespace}:item/material/color/ingot/ingot`)
+        builder.texture(`${CmiCore.MODID}:item/material/color/ingot/ingot`)
         builder.color(0, color)
         builder.tag("forge:ingots")
         builder.tag(`forge:ingots/${name}`)
@@ -22,9 +22,9 @@ StartupEvents.registry("item", (event) => {
      * @returns 
      */
     function addNamedIngotItem(name, type) {
-        let builder = event.create(`${global.namespace}:${name}`)
+        let builder = event.create(`${CmiCore.MODID}:${name}`)
 
-        builder.texture(`${global.namespace}:item/material/material/ingot/${type}`)
+        builder.texture(`${CmiCore.MODID}:item/material/material/ingot/${type}`)
         builder.tag("forge:ingots")
         builder.tag(`forge:ingots/${type}`)
 
@@ -36,9 +36,9 @@ StartupEvents.registry("item", (event) => {
      * @returns 
      */
     function addAloneIngotItem(name) {
-        let builder = event.create(`${global.namespace}:${name}_ingot`)
+        let builder = event.create(`${CmiCore.MODID}:${name}_ingot`)
 
-        builder.texture(`${global.namespace}:item/material/material/ingot/${name}`)
+        builder.texture(`${CmiCore.MODID}:item/material/material/ingot/${name}`)
         builder.tag("forge:ingots")
         builder.tag(`forge:ingots/${name}`)
 
@@ -50,9 +50,9 @@ StartupEvents.registry("item", (event) => {
      * @returns 
      */
     function addNonIngotItem(name) {
-        let builder = event.create(`${global.namespace}:${name}`)
+        let builder = event.create(`${CmiCore.MODID}:${name}`)
 
-        builder.texture(`${global.namespace}:item/material/material/ingot/${name}`)
+        builder.texture(`${CmiCore.MODID}:item/material/material/ingot/${name}`)
 
         return builder
     }

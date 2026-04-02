@@ -5,7 +5,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addGasLang(key, value) {
-		event.add(`gas.${global.namespace}.${key}`, value)
+		event.add(`gas.${CmiCore.MODID}.${key}`, value)
 	}
 
 	/**
@@ -15,8 +15,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} author 
 	 */
 	function addPaintingLang(key, title, author) {
-		event.add(`painting.${global.namespace}.${key}.title`, title)
-		event.add(`painting.${global.namespace}.${key}.author`, author)
+		event.add(`painting.${CmiCore.MODID}.${key}.title`, title)
+		event.add(`painting.${CmiCore.MODID}.${key}.author`, author)
 	}
 
 	/**
@@ -26,8 +26,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} desc 
 	 */
 	function addAdvancementLang(key, title, desc) {
-		event.add(`advancements.${global.namespace}.${key}`, title)
-		event.add(`advancements.${global.namespace}.${key}.desc`, desc)
+		event.add(`advancements.${CmiCore.MODID}.${key}`, title)
+		event.add(`advancements.${CmiCore.MODID}.${key}.desc`, desc)
 	}
 
 	/**
@@ -37,8 +37,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {string} author
 	 */
 	function addMusicDiscLang(key, value, author) {
-		event.add(`item.${global.namespace}.${key}`, "音乐唱片")
-		event.add(`item.${global.namespace}.${key}.desc`, `${value} - ${author}`)
+		event.add(`item.${CmiCore.MODID}.${key}`, "音乐唱片")
+		event.add(`item.${CmiCore.MODID}.${key}.desc`, `${value} - ${author}`)
 	}
 
 	/**
@@ -47,8 +47,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addPlanetLang(key, value) {
-		event.add(`planet.${global.namespace}.${key}`, `${value}`)
-		event.add(`planet.${global.namespace}_orbit.${key}`, `${value}轨道`)
+		event.add(`planet.${CmiCore.MODID}.${key}`, `${value}`)
+		event.add(`planet.${CmiCore.MODID}_orbit.${key}`, `${value}轨道`)
 	}
 
 	/**
@@ -57,7 +57,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addStructureLang(key, value) {
-		event.add(`structure.${global.namespace}.${key}`, value)
+		event.add(`structure.${CmiCore.MODID}.${key}`, value)
 	}
 
 	/**
@@ -66,12 +66,12 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addSolutionLang(key, value, tooltip) {
-		event.add(`item.${global.namespace}.${key}`, value)
-		event.add(`item.${global.namespace}.${key}_solution_bucket`, `${value}溶液桶`)
-		event.add(`tooltip.${global.namespace}.${key}`, tooltip)
-		event.add(`tooltip.${global.namespace}.${key}_solution_bucket`, tooltip)
-		event.add(`block.${global.namespace}.${key}_solution`, `${value}溶液`)
-		event.add(`fluid.${global.namespace}.${key}_solution`, `${value}溶液`)
+		event.add(`item.${CmiCore.MODID}.${key}`, value)
+		event.add(`item.${CmiCore.MODID}.${key}_solution_bucket`, `${value}溶液桶`)
+		event.add(`tooltip.${CmiCore.MODID}.${key}`, tooltip)
+		event.add(`tooltip.${CmiCore.MODID}.${key}_solution_bucket`, tooltip)
+		event.add(`block.${CmiCore.MODID}.${key}_solution`, `${value}溶液`)
+		event.add(`fluid.${CmiCore.MODID}.${key}_solution`, `${value}溶液`)
 	}
 
 	/**

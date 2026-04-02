@@ -1,21 +1,21 @@
 StartupEvents.registry("item", (event) => {
 	// 已编程闪存盘
-	event.create(`${global.namespace}:programmed_flash_drive`)
-		.texture(`${global.namespace}:item/mechanism/flash_drive/programmed`)
-		.tag(`${global.namespace}:mechanism_flash_drives`)
-		.tag(`${global.namespace}:mechanism_flash_drives/blank`)
+	event.create(`${CmiCore.MODID}:programmed_flash_drive`)
+		.texture(`${CmiCore.MODID}:item/mechanism/flash_drive/programmed`)
+		.tag(`${CmiCore.MODID}:mechanism_flash_drives`)
+		.tag(`${CmiCore.MODID}:mechanism_flash_drives/blank`)
 
 	// 精密
-	event.create(`${global.namespace}:precision_mechanism_flash_drive`)
-		.texture(`${global.namespace}:item/mechanism/flash_drive/precision`)
-		.tag(`${global.namespace}:mechanism_flash_drives`)
-		.tag(`${global.namespace}:mechanism_flash_drives/precision`)
+	event.create(`${CmiCore.MODID}:precision_mechanism_flash_drive`)
+		.texture(`${CmiCore.MODID}:item/mechanism/flash_drive/precision`)
+		.tag(`${CmiCore.MODID}:mechanism_flash_drives`)
+		.tag(`${CmiCore.MODID}:mechanism_flash_drives/precision`)
 
 	// 红石
-	event.create(`${global.namespace}:redstone_mechanism_flash_drive`)
-		.texture(`${global.namespace}:item/mechanism/flash_drive/redstone`)
-		.tag(`${global.namespace}:mechanism_flash_drives`)
-		.tag(`${global.namespace}:mechanism_flash_drives/redstone`)
+	event.create(`${CmiCore.MODID}:redstone_mechanism_flash_drive`)
+		.texture(`${CmiCore.MODID}:item/mechanism/flash_drive/redstone`)
+		.tag(`${CmiCore.MODID}:mechanism_flash_drives`)
+		.tag(`${CmiCore.MODID}:mechanism_flash_drives/redstone`)
 
 	let mechanismRegister = [
 		"nature",
@@ -58,9 +58,9 @@ StartupEvents.registry("item", (event) => {
 		"potion",
 	]
 	mechanismRegister.forEach((material) => {
-		event.create(`${global.namespace}:${material}_mechanism_flash_drive`)
-			.texture(`${global.namespace}:item/mechanism/flash_drive/${material}`)
-			.tag(`${global.namespace}:mechanism_flash_drives`)
-			.tag(`${global.namespace}:mechanism_flash_drives/${material}`)
+		event.create(`${CmiCore.MODID}:${material}_mechanism_flash_drive`)
+			.texture(`${CmiCore.MODID}:item/mechanism/flash_drive/${material}`)
+			.tag(`${CmiCore.MODID}:mechanism_flash_drives`)
+			.tag(`${CmiCore.MODID}:mechanism_flash_drives/${material}`)
 	})
 })

@@ -1,5 +1,5 @@
 StartupEvents.registry("item", (event) => {
-	event.create(`${global.namespace}:bucket`, "helmet")
-		.texture(`${global.namespace}:item/armor/bucket`)
-		.tier(`${global.namespace}:iron`)
+	event.create(`${CmiCore.MODID}:bucket`, "helmet")
+		.texture(`${CmiCore.MODID}:item/armor/bucket`)
+		.tier(`${CmiCore.MODID}:iron`)
 })

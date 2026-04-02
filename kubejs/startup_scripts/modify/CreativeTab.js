@@ -1,22 +1,22 @@
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
-	event.setDisplayName(Component.translatable(`itemGroup.${global.namespace}.all`))
+	event.setDisplayName(Component.translatable(`itemGroup.${CmiCore.MODID}.all`))
 
 	let removeItemFromCreativeTab = [
-		`#${global.namespace}:io_debug_block`,
+		`#${CmiCore.MODID}:io_debug_block`,
 		"#forge:chem_salts",
 		"#create:mechanisms",
 		"#create:incomplete_mechanisms",
-		`#${global.namespace}:mechanism_parts`,
-		`#${global.namespace}:mechanism_flash_drives`,
+		`#${CmiCore.MODID}:mechanism_parts`,
+		`#${CmiCore.MODID}:mechanism_flash_drives`,
 		"#tconstruct:casts/multi_use/mechanism",
 		"#tconstruct:casts/single_use/mechanism",
 		"#tconstruct:casts/multi_use/nugget",
-		`#${global.namespace}:metals`,
-		`#${global.namespace}:ores`,
-		`#${global.namespace}:raw_metals`,
-		`#${global.namespace}:ore_nodes`,
-		`#${global.namespace}:dev_doll`,
-		`#${global.namespace}:machine_block`
+		`#${CmiCore.MODID}:metals`,
+		`#${CmiCore.MODID}:ores`,
+		`#${CmiCore.MODID}:raw_metals`,
+		`#${CmiCore.MODID}:ore_nodes`,
+		`#${CmiCore.MODID}:dev_doll`,
+		`#${CmiCore.MODID}:machine_block`
 	]
 	removeItemFromCreativeTab.forEach((item) => {
 		event.remove(item)

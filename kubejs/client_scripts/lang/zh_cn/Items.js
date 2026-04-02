@@ -5,7 +5,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addItemLang(key, value) {
-		event.add(`item.${global.namespace}.${key}`, value)
+		event.add(`item.${CmiCore.MODID}.${key}`, value)
 	}
 
 	/**
@@ -14,7 +14,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addCellItemLang(key, value) {
-		event.add(`item.${global.namespace}.${key}_cell`, `${value}硬盘`)
+		event.add(`item.${CmiCore.MODID}.${key}_cell`, `${value}硬盘`)
 	}
 
 	/**
@@ -24,8 +24,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} text_2 
 	 */
 	function addCellLang(key, text_1, text_2) {
-		event.add(`text.${global.namespace}.cell.${key}.page_1`, text_1)
-		event.add(`text.${global.namespace}.cell.${key}.page_2`, text_2)
+		event.add(`text.${CmiCore.MODID}.cell.${key}.page_1`, text_1)
+		event.add(`text.${CmiCore.MODID}.cell.${key}.page_2`, text_2)
 	}
 
 	/**
@@ -34,10 +34,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addCastItemLang(key, value) {
-		event.add(`item.${global.namespace}.${key}_cast`, `${value}金质铸模`)
-		event.add(`item.${global.namespace}.${key}_sand_cast`, `${value}沙子铸模`)
-		event.add(`item.${global.namespace}.${key}_red_sand_cast`, `${value}红沙铸模`)
-		event.add(`item.${global.namespace}.bronze_${key}_cast`, `${value}青铜质铸模`)
+		event.add(`item.${CmiCore.MODID}.${key}_cast`, `${value}金质铸模`)
+		event.add(`item.${CmiCore.MODID}.${key}_sand_cast`, `${value}沙子铸模`)
+		event.add(`item.${CmiCore.MODID}.${key}_red_sand_cast`, `${value}红沙铸模`)
+		event.add(`item.${CmiCore.MODID}.bronze_${key}_cast`, `${value}青铜质铸模`)
 	}
 
 	addItemLang("geological_hammer", "地质锤(调试工具)")

@@ -47,7 +47,7 @@ ItemEvents.tooltip((event) => {
 					tooltip.add(line)
 				})
 			} else {
-				tooltip.add(Component.translatable(`tooltip.${global.namespace}.acceleratable`))
+				tooltip.add(Component.translatable(`tooltip.${CmiCore.MODID}.acceleratable`))
 			}
 		})
 	}

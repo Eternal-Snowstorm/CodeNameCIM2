@@ -5,9 +5,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addFluidLang(key, value) {
-		event.add(`fluid.${global.namespace}.${key}`, value)
-		event.add(`block.${global.namespace}.${key}`, value)
-		event.add(`item.${global.namespace}.${key}_bucket`, `${value}桶`)
+		event.add(`fluid.${CmiCore.MODID}.${key}`, value)
+		event.add(`block.${CmiCore.MODID}.${key}`, value)
+		event.add(`item.${CmiCore.MODID}.${key}_bucket`, `${value}桶`)
 	}
 
 	addFluidLang("steam", "蒸汽")

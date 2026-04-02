@@ -7,7 +7,7 @@ let $Tiers =
 
 StartupEvents.registry("item", (event) => {
 	// 超级刀
-	event.createCustom(`${global.namespace}:super_knife`, () => {
+	event.createCustom(`${CmiCore.MODID}:super_knife`, () => {
 		return new JavaAdapter($KnifeItem, {
 			/**
 			 * 
@@ -50,60 +50,60 @@ StartupEvents.registry("item", (event) => {
 	}).tag("forge:tools/knives").tag("forge:tools")
 
 	// 木质小刀
-	event.createCustom(`${global.namespace}:wooden_knife`, () => {
+	event.createCustom(`${CmiCore.MODID}:wooden_knife`, () => {
 		return new $KnifeItem($Tiers.WOOD, 0.5, -2.0, new $Item$Properties())
 	}).tag("forge:tools/knives").tag("forge:tools")
 
 	// // 木质龙头
-	// event.create(`${global.namespace}:wooden_faucet`)
-	// 	.texture(`${global.namespace}:item/tool/wooden_faucet`)
+	// event.create(`${CmiCore.MODID}:wooden_faucet`)
+	// 	.texture(`${CmiCore.MODID}:item/tool/wooden_faucet`)
 	// 	.maxDamage(75)
 	// 	.unstackable()
 	// 	.tag("cmi:faucet")
 	// 	.tag("forge:tools")
 
 	// // 铸铁龙头
-	// event.create(`${global.namespace}:cast_iron_faucet`)
-	// 	.texture(`${global.namespace}:item/tool/cast_iron_faucet`)
+	// event.create(`${CmiCore.MODID}:cast_iron_faucet`)
+	// 	.texture(`${CmiCore.MODID}:item/tool/cast_iron_faucet`)
 	// 	.maxDamage(1024)
 	// 	.unstackable()
 	// 	.tag("cmi:faucet")
 	// 	.tag("forge:tools")
 
 	// // 钢龙头
-	// event.create(`${global.namespace}:steel_faucet`)
-	// 	.texture(`${global.namespace}:item/tool/steel_faucet`)
+	// event.create(`${CmiCore.MODID}:steel_faucet`)
+	// 	.texture(`${CmiCore.MODID}:item/tool/steel_faucet`)
 	// 	.maxDamage(4096)
 	// 	.unstackable()
 	// 	.tag("cmi:faucet")
 	// 	.tag("forge:tools")
 
 	// // 等离子龙头
-	// event.create(`${global.namespace}:overcharged_alloy_faucet`)
-	// 	.texture(`${global.namespace}:item/tool/overcharged_alloy_faucet`)
+	// event.create(`${CmiCore.MODID}:overcharged_alloy_faucet`)
+	// 	.texture(`${CmiCore.MODID}:item/tool/overcharged_alloy_faucet`)
 	// 	.maxDamage(114514)
 	// 	.unstackable()
 	// 	.tag("cmi:faucet")
 	// 	.tag("forge:tools")
 
 	// 燧石锤
-	event.create(`${global.namespace}:flint_hammer`, "pickaxe")
-		.tier(`${global.namespace}:flint`)
-		.texture(`${global.namespace}:item/tool/flint_hammer`)
+	event.create(`${CmiCore.MODID}:flint_hammer`, "pickaxe")
+		.tier(`${CmiCore.MODID}:flint`)
+		.texture(`${CmiCore.MODID}:item/tool/flint_hammer`)
 		.tag("forge:tools")
 		.tag("forge:hammers")
 
 	// 铁锤
-	event.create(`${global.namespace}:iron_hammer`, "pickaxe")
+	event.create(`${CmiCore.MODID}:iron_hammer`, "pickaxe")
 		.tier($Tiers.IRON)
-		.texture(`${global.namespace}:item/tool/iron_hammer`)
+		.texture(`${CmiCore.MODID}:item/tool/iron_hammer`)
 		.tag("forge:tools")
 		.tag("forge:hammers")
 
 	// 钻石锤
-	event.create(`${global.namespace}:diamond_hammer`, "pickaxe")
+	event.create(`${CmiCore.MODID}:diamond_hammer`, "pickaxe")
 		.tier($Tiers.DIAMOND)
-		.texture(`${global.namespace}:item/tool/diamond_hammer`)
+		.texture(`${CmiCore.MODID}:item/tool/diamond_hammer`)
 		.tag("forge:tools")
 		.tag("forge:hammers")
 })

@@ -6,9 +6,9 @@ StartupEvents.registry("block", (event) => {
 	 */
 	function addBlock(name, type) {
 		if (type === undefined) {
-			return event.create(`${global.namespace}:${name}`)
+			return event.create(`${CmiCore.MODID}:${name}`)
 		}
-		return event.create(`${global.namespace}:${name}`, type)
+		return event.create(`${CmiCore.MODID}:${name}`, type)
 	}
 
 	// 虚空涌泉
@@ -19,7 +19,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 冲击桩
 	addBlock("impact_pile")
-		.model(`${global.namespace}:block/custom/impact_pile`)
+		.model(`${CmiCore.MODID}:block/custom/impact_pile`)
 		.defaultCutout()
 		.soundType(SoundType.NETHERITE_BLOCK)
 		.box(7, 0, 7, 9, 14, 9, true)
@@ -88,7 +88,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 坩埚底座
 	addBlock("crucible_base")
-		.textureAll(`${global.namespace}:block/crucible/top`)
+		.textureAll(`${CmiCore.MODID}:block/crucible/top`)
 		.soundType(SoundType.METAL)
 		.hardness(6)
 		.resistance(6)
@@ -107,7 +107,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 青铜外壳
 	addBlock("bronze_casing")
-		.textureAll(`${global.namespace}:block/casing/bronze/casing`)
+		.textureAll(`${CmiCore.MODID}:block/casing/bronze/casing`)
 		.soundType(SoundType.WOOD)
 		.hardness(5)
 		.resistance(5)
@@ -116,7 +116,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 陨石外壳
 	addBlock("smart_casing")
-		.textureAll(`${global.namespace}:block/casing/ae2/smart`)
+		.textureAll(`${CmiCore.MODID}:block/casing/ae2/smart`)
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
@@ -125,7 +125,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 高级计算外壳
 	addBlock("computing_casing")
-		.model(`${global.namespace}:block/casing/ae2/computing`)
+		.model(`${CmiCore.MODID}:block/casing/ae2/computing`)
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
@@ -134,7 +134,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 辐射沙
 	addBlock("radsand", "falling")
-		.textureAll(`${global.namespace}:block/radsand`)
+		.textureAll(`${CmiCore.MODID}:block/radsand`)
 		.soundType(SoundType.SAND)
 		.hardness(0.5)
 		.resistance(0.5)
@@ -143,7 +143,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 破损钻头
 	addBlock("broken_andesite_drill_head")
-		.model(`${global.namespace}:block/drill/broken_andesite_drill_head`)
+		.model(`${CmiCore.MODID}:block/drill/broken_andesite_drill_head`)
 		.soundType(SoundType.STONE)
 		.hardness(3)
 		.resistance(3)
@@ -166,10 +166,10 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["wooden"])
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.WRENCH_PICKUP)
-		.tag(`${global.namespace}:broken_drill_heads`)
+		.tag(`${CmiCore.MODID}:broken_drill_heads`)
 
 	addBlock("broken_copper_drill_head")
-		.model(`${global.namespace}:block/drill/broken_copper_drill_head`)
+		.model(`${CmiCore.MODID}:block/drill/broken_copper_drill_head`)
 		.soundType(SoundType.METAL)
 		.hardness(3)
 		.resistance(3)
@@ -192,10 +192,10 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["stone"])
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.WRENCH_PICKUP)
-		.tag(`${global.namespace}:broken_drill_heads`)
+		.tag(`${CmiCore.MODID}:broken_drill_heads`)
 
 	addBlock("broken_brass_drill_head")
-		.model(`${global.namespace}:block/drill/broken_brass_drill_head`)
+		.model(`${CmiCore.MODID}:block/drill/broken_brass_drill_head`)
 		.soundType(SoundType.METAL)
 		.hardness(4)
 		.resistance(3)
@@ -218,11 +218,11 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["stone"])
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.WRENCH_PICKUP)
-		.tag(`${global.namespace}:broken_drill_heads`)
+		.tag(`${CmiCore.MODID}:broken_drill_heads`)
 
 	// // 耐压外壳
 	// addBlock("pressure_resistance_casing")
-	// 	.textureAll(`${global.namespace}:block/casing/pressure_resistance/casing`)
+	// 	.textureAll(`${CmiCore.MODID}:block/casing/pressure_resistance/casing`)
 	// 	.soundType(SoundType.NETHERITE_BLOCK)
 	// 	.hardness(5)
 	// 	.resistance(5)

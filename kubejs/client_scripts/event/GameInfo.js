@@ -11,7 +11,7 @@ ClientEvents.loggedIn((event) => {
 		}
 
 		if (player.username === debugUser) {
-			let devInfo = Component.translatable(`text.${global.namespace}.dev`).getString()
+			let devInfo = Component.translatable(`text.${CmiCore.MODID}.dev`).getString()
 			player.paint({
 				devTip: {
 					type: "text",
@@ -22,7 +22,7 @@ ClientEvents.loggedIn((event) => {
 					scale: 1.0,
 				}
 			})
-			let playerInfo = Component.translatable(`text.${global.namespace}.player`).getString()
+			let playerInfo = Component.translatable(`text.${CmiCore.MODID}.player`).getString()
 			player.paint({
 				playerTip: {
 					type: "text",

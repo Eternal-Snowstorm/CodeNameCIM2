@@ -86,7 +86,7 @@ StartupEvents.registry("block", (event) => {
 
 	// Common Item Tag(s) List
 	const COMMON_ITEM_TAGS = [
-		`${global.namespace}:ore_nodes`
+		`${CmiCore.MODID}:ore_nodes`
 	]
 
 	/**
@@ -110,7 +110,7 @@ StartupEvents.registry("block", (event) => {
 		return this
 	}
 	OreNodeBlock.prototype.build = function () {
-		let builder = event.create(`${global.namespace}:${this.name}_ore_node`)
+		let builder = event.create(`${CmiCore.MODID}:${this.name}_ore_node`)
 
 		// 设置基础信息
 		builder.hardness(-1)

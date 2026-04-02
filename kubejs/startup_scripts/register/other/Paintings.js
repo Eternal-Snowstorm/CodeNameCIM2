@@ -55,7 +55,7 @@ StartupEvents.registry("painting_variant", (event) => {
 
 	function addPainting(name, width, height) {
 		let paintingRegister =
-			event.create(`${global.namespace}:${name}`)
+			event.create(`${CmiCore.MODID}:${name}`)
 				.width(width)
 				.height(height)
 				.tag("minecraft:placeable")

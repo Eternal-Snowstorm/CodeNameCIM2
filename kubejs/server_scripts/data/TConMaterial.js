@@ -1,6 +1,6 @@
 ServerEvents.highPriorityData((event) => {
 	// 紫水晶
-	new TConMaterial(event, `${global.namespace}:amethyst`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:amethyst`, (builder) => {
 		builder.visibility(1, false)
 			.craftable(true)
 			.sortOrder(2)
@@ -28,7 +28,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 安山合金
-	new TConMaterial(event, `${global.namespace}:andesite_alloy`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:andesite_alloy`, (builder) => {
 		builder.visibility(2, false)
 			.craftable(true)
 			.sortOrder(2)
@@ -62,7 +62,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 黄铜
-	new TConMaterial(event, `${global.namespace}:brass`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:brass`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -88,7 +88,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 工业铁
-	new TConMaterial(event, `${global.namespace}:industrial_iron`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:industrial_iron`, (builder) => {
 		builder.visibility(2, false)
 			.craftable(false)
 			.sortOrder(2)
@@ -110,7 +110,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 铸铁
-	new TConMaterial(event, `${global.namespace}:cast_iron`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:cast_iron`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -132,7 +132,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 不锈钢
-	new TConMaterial(event, `${global.namespace}:stainless_steel`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:stainless_steel`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -156,7 +156,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 戴斯
-	new TConMaterial(event, `${global.namespace}:desh`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:desh`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -176,7 +176,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 紫金
-	new TConMaterial(event, `${global.namespace}:ostrum`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:ostrum`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -195,7 +195,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 耐热金属
-	new TConMaterial(event, `${global.namespace}:calorite`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:calorite`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
 			.sortOrder(7)
@@ -219,7 +219,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 暗影钢
-	new TConMaterial(event, `${global.namespace}:shadow_steel`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:shadow_steel`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(true)
 			.sortOrder(7)
@@ -240,7 +240,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 光辉石
-	new TConMaterial(event, `${global.namespace}:refined_radiance`, (builder) => {
+	new TConMaterial(event, `${CmiCore.MODID}:refined_radiance`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(true)
 			.sortOrder(7)
