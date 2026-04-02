@@ -124,7 +124,7 @@ ClientEvents.highPriorityAssets((event) => {
 			return color.startsWith("FF") ? color : `FF${color}`
 		})
 
-		event.add(`${CmiCore.MODID}:tinkering/materials/${name}.json`, {
+		event.add(CmiCore.loadResource(`tinkering/materials/${name}.json`), {
 			"color": colour.startsWith("FF") ? colour : `FF${colour}`,
 			"fallbacks": [
 				"metal"
