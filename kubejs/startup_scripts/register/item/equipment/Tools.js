@@ -54,37 +54,37 @@ StartupEvents.registry("item", (event) => {
 		return new $KnifeItem($Tiers.WOOD, 0.5, -2.0, new $Item$Properties())
 	}).tag("forge:tools/knives").tag("forge:tools")
 
-	// 木质龙头
-	event.create(`${global.namespace}:wooden_faucet`)
-		.texture(`${global.namespace}:item/tool/wooden_faucet`)
-		.maxDamage(75)
-		.unstackable()
-		.tag("cmi:faucet")
-		.tag("forge:tools")
+	// // 木质龙头
+	// event.create(`${global.namespace}:wooden_faucet`)
+	// 	.texture(`${global.namespace}:item/tool/wooden_faucet`)
+	// 	.maxDamage(75)
+	// 	.unstackable()
+	// 	.tag("cmi:faucet")
+	// 	.tag("forge:tools")
 
-	// 铸铁龙头
-	event.create(`${global.namespace}:cast_iron_faucet`)
-		.texture(`${global.namespace}:item/tool/cast_iron_faucet`)
-		.maxDamage(1024)
-		.unstackable()
-		.tag("cmi:faucet")
-		.tag("forge:tools")
+	// // 铸铁龙头
+	// event.create(`${global.namespace}:cast_iron_faucet`)
+	// 	.texture(`${global.namespace}:item/tool/cast_iron_faucet`)
+	// 	.maxDamage(1024)
+	// 	.unstackable()
+	// 	.tag("cmi:faucet")
+	// 	.tag("forge:tools")
 
-	// 钢龙头
-	event.create(`${global.namespace}:steel_faucet`)
-		.texture(`${global.namespace}:item/tool/steel_faucet`)
-		.maxDamage(4096)
-		.unstackable()
-		.tag("cmi:faucet")
-		.tag("forge:tools")
+	// // 钢龙头
+	// event.create(`${global.namespace}:steel_faucet`)
+	// 	.texture(`${global.namespace}:item/tool/steel_faucet`)
+	// 	.maxDamage(4096)
+	// 	.unstackable()
+	// 	.tag("cmi:faucet")
+	// 	.tag("forge:tools")
 
-	// 等离子龙头
-	event.create(`${global.namespace}:overcharged_alloy_faucet`)
-		.texture(`${global.namespace}:item/tool/overcharged_alloy_faucet`)
-		.maxDamage(114514)
-		.unstackable()
-		.tag("cmi:faucet")
-		.tag("forge:tools")
+	// // 等离子龙头
+	// event.create(`${global.namespace}:overcharged_alloy_faucet`)
+	// 	.texture(`${global.namespace}:item/tool/overcharged_alloy_faucet`)
+	// 	.maxDamage(114514)
+	// 	.unstackable()
+	// 	.tag("cmi:faucet")
+	// 	.tag("forge:tools")
 
 	// 燧石锤
 	event.create(`${global.namespace}:flint_hammer`, "pickaxe")
