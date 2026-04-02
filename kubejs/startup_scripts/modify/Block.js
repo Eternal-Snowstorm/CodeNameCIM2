@@ -15,6 +15,10 @@ BlockEvents.modification((event) => {
 		modify.soundType = SoundType.DEEPSLATE_BRICKS
 	})
 
+	event.modify("treetap:tap", (modify) => {
+		modify.soundType = SoundType.WOOD
+	})
+
 	let materialSoundType = [
 		"bronze",
 		"cast_iron",
