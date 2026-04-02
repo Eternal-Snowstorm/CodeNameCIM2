@@ -531,6 +531,9 @@ ServerEvents.tags("item", (event) => {
 		.add("minecraft:lantern")
 		.add("minecraft:soul_lantern")
 
+	event.get("treetap:wooden_buckets")
+		.add("minecraft:bowl")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
