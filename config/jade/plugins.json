@@ -70,6 +70,9 @@
     "entity_name": true,
     "object_name": true
   },
+  "lootr": {
+    "info": true
+  },
   "functionalstorage": {
     "armory": true
   },

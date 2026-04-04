@@ -2,85 +2,97 @@
 #All settings below will only take effect after restarting the server or client.
 [general]
 
-	#Steam Hammer settings
-	[general.steam_hammer]
-		#Steam consumption per run of steam hammer (mB)
-		#type: int
-		#default: 1000
-		#Range: 0 ~ 1000000
-		steam_consumption = 1000
-		#Steam capacity in steam hammer (mB)
-		#type: int
-		#default: 10000
-		#Range: 1000 ~ 1000000
-		steam_capacity = 10000
-		#Stress impact of steam hammer (su)
-		#type: double
-		#default: 16.0
-		#Range: 0.0 ~ 64.0
-		stress_impact = 16.0
+	#SneakyLink settings
+	[general.sneak_link]
+		#Horizontal radius within which the player picks up item entities
+		"Collection radius" = 3.0
+		#Amount of blocks below the player where sneaking picks up item entities
+		"Collection depth" = 2.0
+		#Amount of blocks above the player where sneaking picks up item entities
+		#Range: 0.0 ~ 8.0
+		"Collection height" = 0.0
+		#Pick up item entities regardless of their cooldown after being dropped from a player's inventory
+		"Ignore pickup delay" = false
 
-	#Accelerator Motor settings
-	[general.accelerator_motor]
-		#Default speed when placing the Accelerator Motor (RPM)
-		#type: int
-		#default: 16
-		#Range: 1 ~ 256
-		default_speed = 16
-		#Maximum RPM the accelerator motor
-		#type: int
-		#default: 128
-		#Range: 1 ~ 256
-		max_speed = 128
+		#Steam Hammer settings
+		[general.sneak_link.steam_hammer]
+			#Steam consumption per run of steam hammer (mB)
+			#type: int
+			#default: 1000
+			#Range: 0 ~ 1000000
+			steam_consumption = 1000
+			#Steam capacity in steam hammer (mB)
+			#type: int
+			#default: 10000
+			#Range: 1000 ~ 1000000
+			steam_capacity = 10000
+			#Stress impact of steam hammer (su)
+			#type: double
+			#default: 16.0
+			#Range: 0.0 ~ 64.0
+			stress_impact = 16.0
 
-	#Advanced Spout settings
-	[general.advanced_spout]
-		#Filling time in ticks
-		#20 ticks = 1 second
-		#Original spout uses 20 ticks
-		#type: int
-		#default: 5
-		#Range: 1 ~ 100
-		filling_time = 5
-		#Fluid capacity in mB (millibuckets)
-		#1000 mB = 1 bucket
-		#Original spout uses 1000 mB
-		#type: int
-		#default: 5000
-		#Range: 2000 ~ 64000
-		capacity = 5000
+		#Accelerator Motor settings
+		[general.sneak_link.accelerator_motor]
+			#Default speed when placing the Accelerator Motor (RPM)
+			#type: int
+			#default: 16
+			#Range: 1 ~ 256
+			default_speed = 16
+			#Maximum RPM the accelerator motor
+			#type: int
+			#default: 128
+			#Range: 1 ~ 256
+			max_speed = 128
 
-	#Void Dust Collector settings
-	[general.void_dust_collector]
-		#Work time
-		#20 ticks = 1 second
-		#type: int
-		#default: 20
-		#Range: 1 ~ 100000
-		work_time = 20
-		#Energy consumed per tick of void dust collector (FE)
-		#type: int
-		#default: 100
-		#Range: > 0
-		energy_consumption = 100
-		#Energy capacity of void dust collector (FE)
-		#type: int
-		#default: 50000
-		#Range: > 0
-		energy_capacity = 50000
-		#Max receive of void dust collector (FE)
-		#type: int
-		#default: 1000
-		#Range: > 0
-		max_receive = 1000
-		#Maximum work height of void dust collector
-		#type: int
-		#default: -60
-		#Range: -63 ~ 319
-		max_work_height = -60
-		#Minimum work height of void dust collector (Collector doesnt work if greater than max height)
-		#type: int
-		#default: -63
-		#Range: -63 ~ 319
-		min_work_height = -63
+		#Advanced Spout settings
+		[general.sneak_link.advanced_spout]
+			#Filling time in ticks
+			#20 ticks = 1 second
+			#Original spout uses 20 ticks
+			#type: int
+			#default: 5
+			#Range: 1 ~ 100
+			filling_time = 5
+			#Fluid capacity in mB (millibuckets)
+			#1000 mB = 1 bucket
+			#Original spout uses 1000 mB
+			#type: int
+			#default: 5000
+			#Range: 2000 ~ 64000
+			capacity = 5000
+
+		#Void Dust Collector settings
+		[general.sneak_link.void_dust_collector]
+			#Work time
+			#20 ticks = 1 second
+			#type: int
+			#default: 20
+			#Range: 1 ~ 100000
+			work_time = 20
+			#Energy consumed per tick of void dust collector (FE)
+			#type: int
+			#default: 100
+			#Range: > 0
+			energy_consumption = 100
+			#Energy capacity of void dust collector (FE)
+			#type: int
+			#default: 50000
+			#Range: > 0
+			energy_capacity = 50000
+			#Max receive of void dust collector (FE)
+			#type: int
+			#default: 1000
+			#Range: > 0
+			max_receive = 1000
+			#Maximum work height of void dust collector
+			#type: int
+			#default: -60
+			#Range: -63 ~ 319
+			max_work_height = -60
+			#Minimum work height of void dust collector (Collector doesnt work if greater than max height)
+			#type: int
+			#default: -63
+			#Range: -63 ~ 319
+			min_work_height = -63
 
