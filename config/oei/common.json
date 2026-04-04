@@ -1,8 +1,8 @@
 {
-	"common": {
-		"Deeper_Replace": false,
-		"Clear_Food_Properties": false,
-		"Enable_Lite": false,
-		"Default_Rules": {}
-	}
+  "Clear_Food_Properties": false,
+  "Default_Rules_data": {},
+  "Default_Rules_tag": {},
+  "Deeper_Replace": false,
+  "Enable_Lite": false,
+  "__cfg_version": 1
 }
