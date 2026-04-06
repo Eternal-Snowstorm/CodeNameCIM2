@@ -114,4 +114,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("flash_yi", "闪电羿")
 	addBlockLang("keyxeldesu", "一只键盘虾")
 	addBlockLang("sergei", "谢尔盖")
+	addBlockLang("lirx_ovo", "栗子")
+	addBlockLang("ein_nameuwu", "幽灵猫")
 })

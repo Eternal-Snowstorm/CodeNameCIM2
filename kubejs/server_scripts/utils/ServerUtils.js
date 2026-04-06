@@ -226,100 +226,100 @@ let Casing = Object.freeze({
 // 木材系列
 let Wood = Object.freeze({
     OAK: Object.freeze({
-        SAPLING: Item.of("minecraft:oak_sapling"),
-        LEAVE: Item.of("minecraft:oak_leaves"),
-        LOG: Item.of("minecraft:oak_log"),
-        STRIPPED_LOG: Item.of("minecraft:stripped_oak_log"),
-        WOOD: Item.of("minecraft:oak_wood"),
-        STRIPPED_WOOD: Item.of("minecraft:stripped_oak_wood")
+        SAPLING: "minecraft:oak_sapling",
+        LEAVE: "minecraft:oak_leaves",
+        LOG: "minecraft:oak_log",
+        STRIPPED_LOG: "minecraft:stripped_oak_log",
+        WOOD: "minecraft:oak_wood",
+        STRIPPED_WOOD: "minecraft:stripped_oak_wood"
     }),
     SPRUCE: Object.freeze({
-        SAPLING: Item.of("minecraft:spruce_sapling"),
-        LEAVE: Item.of("minecraft:spruce_leaves"),
-        LOG: Item.of("minecraft:spruce_log"),
-        STRIPPED_LOG: Item.of("minecraft:stripped_spruce_log"),
-        WOOD: Item.of("minecraft:spruce_wood"),
-        STRIPPED_WOOD: Item.of("minecraft:stripped_spruce_wood")
+        SAPLING: "minecraft:spruce_sapling",
+        LEAVE: "minecraft:spruce_leaves",
+        LOG: "minecraft:spruce_log",
+        STRIPPED_LOG: "minecraft:stripped_spruce_log",
+        WOOD: "minecraft:spruce_wood",
+        STRIPPED_WOOD: "minecraft:stripped_spruce_wood"
     }),
     BIRCH: Object.freeze({
-        SAPLING: Item.of("minecraft:birch_sapling"),
-        LEAVE: Item.of("minecraft:birch_leaves"),
-        LOG: Item.of("minecraft:birch_log"),
-        STRIPPED_LOG: Item.of("minecraft:stripped_birch_log"),
-        WOOD: Item.of("minecraft:birch_wood"),
-        STRIPPED_WOOD: Item.of("minecraft:stripped_birch_wood")
+        SAPLING: "minecraft:birch_sapling",
+        LEAVE: "minecraft:birch_leaves",
+        LOG: "minecraft:birch_log",
+        STRIPPED_LOG: "minecraft:stripped_birch_log",
+        WOOD: "minecraft:birch_wood",
+        STRIPPED_WOOD: "minecraft:stripped_birch_wood"
     }),
     JUNGLE: Object.freeze({
-        SAPLING: Item.of("minecraft:jungle_sapling"),
-        LEAVE: Item.of("minecraft:jungle_leaves"),
-        LOG: Item.of("minecraft:jungle_log"),
-        STRIPPED_LOG: Item.of("minecraft:stripped_jungle_log"),
-        WOOD: Item.of("minecraft:jungle_wood"),
-        STRIPPED_WOOD: Item.of("minecraft:stripped_jungle_wood")
+        SAPLING: "minecraft:jungle_sapling",
+        LEAVE: "minecraft:jungle_leaves",
+        LOG: "minecraft:jungle_log",
+        STRIPPED_LOG: "minecraft:stripped_jungle_log",
+        WOOD: "minecraft:jungle_wood",
+        STRIPPED_WOOD: "minecraft:stripped_jungle_wood"
     }),
     ACACIA: Object.freeze({
-        SAPLING: Item.of("minecraft:acacia_sapling"),
-        LEAVE: Item.of("minecraft:acacia_leaves"),
-        LOG: Item.of("minecraft:acacia_log"),
-        STRIPPED_LOG: Item.of("minecraft:stripped_acacia_log"),
-        WOOD: Item.of("minecraft:acacia_wood"),
-        STRIPPED_WOOD: Item.of("minecraft:stripped_acacia_wood")
+        SAPLING: "minecraft:acacia_sapling",
+        LEAVE: "minecraft:acacia_leaves",
+        LOG: "minecraft:acacia_log",
+        STRIPPED_LOG: "minecraft:stripped_acacia_log",
+        WOOD: "minecraft:acacia_wood",
+        STRIPPED_WOOD: "minecraft:stripped_acacia_wood"
     }),
     DARK_OAK: Object.freeze({
-        SAPLING: Item.of("minecraft:dark_oak_sapling"),
-        LEAVE: Item.of("minecraft:dark_oak_leaves"),
-        LOG: Item.of("minecraft:dark_oak_log"),
-        STRIPPED_LOG: Item.of("minecraft:stripped_dark_oak_log"),
-        WOOD: Item.of("minecraft:dark_oak_wood"),
-        STRIPPED_WOOD: Item.of("minecraft:stripped_dark_oak_wood")
+        SAPLING: "minecraft:dark_oak_sapling",
+        LEAVE: "minecraft:dark_oak_leaves",
+        LOG: "minecraft:dark_oak_log",
+        STRIPPED_LOG: "minecraft:stripped_dark_oak_log",
+        WOOD: "minecraft:dark_oak_wood",
+        STRIPPED_WOOD: "minecraft:stripped_dark_oak_wood"
     }),
     MANGROVE: Object.freeze({
-        SAPLING: Item.of("minecraft:mangrove_propagule"),
-        LEAVE: Item.of("minecraft:mangrove_leaves"),
-        LOG: Item.of("minecraft:mangrove_log"),
-        STRIPPED_LOG: Item.of("minecraft:stripped_mangrove_log"),
-        WOOD: Item.of("minecraft:mangrove_wood"),
-        STRIPPED_WOOD: Item.of("minecraft:stripped_mangrove_wood")
+        SAPLING: "minecraft:mangrove_propagule",
+        LEAVE: "minecraft:mangrove_leaves",
+        LOG: "minecraft:mangrove_log",
+        STRIPPED_LOG: "minecraft:stripped_mangrove_log",
+        WOOD: "minecraft:mangrove_wood",
+        STRIPPED_WOOD: "minecraft:stripped_mangrove_wood"
     }),
     CHERRY: Object.freeze({
-        SAPLING: Item.of("minecraft:cherry_sapling"),
-        LEAVE: Item.of("minecraft:cherry_leaves"),
-        LOG: Item.of("minecraft:cherry_log"),
-        STRIPPED_LOG: Item.of("minecraft:stripped_cherry_log"),
-        WOOD: Item.of("minecraft:cherry_wood"),
-        STRIPPED_WOOD: Item.of("minecraft:stripped_cherry_wood")
+        SAPLING: "minecraft:cherry_sapling",
+        LEAVE: "minecraft:cherry_leaves",
+        LOG: "minecraft:cherry_log",
+        STRIPPED_LOG: "minecraft:stripped_cherry_log",
+        WOOD: "minecraft:cherry_wood",
+        STRIPPED_WOOD: "minecraft:stripped_cherry_wood"
     }),
     RUBBERWOOD: Object.freeze({
-        SAPLING: Item.of("thermal:rubberwood_sapling"),
-        LEAVE: Item.of("thermal:rubberwood_leaves"),
-        LOG: Item.of("thermal:rubberwood_log"),
-        STRIPPED_LOG: Item.of("thermal:stripped_rubberwood_log"),
-        WOOD: Item.of("thermal:rubberwood_wood"),
-        STRIPPED_WOOD: Item.of("thermal:stripped_rubberwood_wood")
+        SAPLING: "thermal:rubberwood_sapling",
+        LEAVE: "thermal:rubberwood_leaves",
+        LOG: "thermal:rubberwood_log",
+        STRIPPED_LOG: "thermal:stripped_rubberwood_log",
+        WOOD: "thermal:rubberwood_wood",
+        STRIPPED_WOOD: "thermal:stripped_rubberwood_wood"
     }),
     GREENHEART: Object.freeze({
-        SAPLING: Item.of("tconstruct:earth_slime_sapling"),
-        LEAVE: Item.of("tconstruct:earth_slime_leaves"),
-        LOG: Item.of("tconstruct:greenheart_log"),
-        STRIPPED_LOG: Item.of("tconstruct:stripped_greenheart_log"),
-        WOOD: Item.of("tconstruct:greenheart_wood"),
-        STRIPPED_WOOD: Item.of("tconstruct:stripped_greenheart_wood")
+        SAPLING: "tconstruct:earth_slime_sapling",
+        LEAVE: "tconstruct:earth_slime_leaves",
+        LOG: "tconstruct:greenheart_log",
+        STRIPPED_LOG: "tconstruct:stripped_greenheart_log",
+        WOOD: "tconstruct:greenheart_wood",
+        STRIPPED_WOOD: "tconstruct:stripped_greenheart_wood"
     }),
     SKYROOT: Object.freeze({
-        SAPLING: Item.of("tconstruct:sky_slime_sapling"),
-        LEAVE: Item.of("tconstruct:sky_slime_leaves"),
-        LOG: Item.of("tconstruct:skyroot_log"),
-        STRIPPED_LOG: Item.of("tconstruct:stripped_skyroot_log"),
-        WOOD: Item.of("tconstruct:skyroot_wood"),
-        STRIPPED_WOOD: Item.of("tconstruct:stripped_skyroot_wood")
+        SAPLING: "tconstruct:sky_slime_sapling",
+        LEAVE: "tconstruct:sky_slime_leaves",
+        LOG: "tconstruct:skyroot_log",
+        STRIPPED_LOG: "tconstruct:stripped_skyroot_log",
+        WOOD: "tconstruct:skyroot_wood",
+        STRIPPED_WOOD: "tconstruct:stripped_skyroot_wood"
     }),
     ENDERBARK: Object.freeze({
-        SAPLING: Item.of("tconstruct:ender_slime_sapling"),
-        LEAVE: Item.of("tconstruct:ender_slime_leaves"),
-        LOG: Item.of("tconstruct:enderbark_log"),
-        STRIPPED_LOG: Item.of("tconstruct:stripped_enderbark_log"),
-        WOOD: Item.of("tconstruct:enderbark_wood"),
-        STRIPPED_WOOD: Item.of("tconstruct:stripped_enderbark_wood")
+        SAPLING: "tconstruct:ender_slime_sapling",
+        LEAVE: "tconstruct:ender_slime_leaves",
+        LOG: "tconstruct:enderbark_log",
+        STRIPPED_LOG: "tconstruct:stripped_enderbark_log",
+        WOOD: "tconstruct:enderbark_wood",
+        STRIPPED_WOOD: "tconstruct:stripped_enderbark_wood"
     })
 })
 
