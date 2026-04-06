@@ -579,10 +579,18 @@
 		}
 		{
 			id: "550330A6594D1E98"
+			rewards: [{
+				auto: "invisible"
+				id: "2664A3F815D51366"
+				ignore_reward_blocking: true
+				stage: "init"
+				type: "gamestage"
+			}]
+			subtitle: "完成任务领取阶段后才可以破坏方块"
 			tasks: [{
-				id: "1F61EBE034FBC283"
-				item: "minecraft:spruce_fence_gate"
-				type: "item"
+				id: "210219FB9E7115CA"
+				title: "测试中保留"
+				type: "checkmark"
 			}]
 			x: -1.5d
 			y: -7.0d
