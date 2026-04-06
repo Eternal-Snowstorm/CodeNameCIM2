@@ -260,4 +260,14 @@ ServerEvents.tags("block", (event) => {
 			"tconstruct:seared_glass",
 			"tconstruct:scorched_glass"
 		])
+
+	event.get("treetap:tappable")
+		.removeAll()
+
+	WoodMaterials.forEach((wood) => {
+		let { STRIPPED_LOG, STRIPPED_WOOD } = wood
+
+		event.get("treetap:tappable")
+			.add([STRIPPED_LOG, STRIPPED_WOOD])
+	})
 })

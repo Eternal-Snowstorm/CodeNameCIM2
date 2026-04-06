@@ -89,4 +89,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 栗子
 	addDeveloperDoll("lirx_owo", "slim")
+
+	// 幽灵猫
+	addDeveloperDoll("ein_nameuwu", "slim")
 })
