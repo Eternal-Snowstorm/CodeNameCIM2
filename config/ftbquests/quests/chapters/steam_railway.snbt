@@ -312,19 +312,44 @@
 			subtitle: "&m只是方式越来越复杂&r"
 			tasks: [
 				{
-					id: "31DB2A85FFBF639B"
+					id: "7036CEA74298B26E"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "itemfilters:or"
 						tag: {
-							value: "steampowered:burner"
+							items: [
+								{
+									Count: 1b
+									id: "steampowered:bronze_burner"
+								}
+								{
+									Count: 1b
+									id: "steampowered:cast_iron_burner"
+								}
+								{
+									Count: 1b
+									id: "steampowered:steel_burner"
+								}
+								{
+									Count: 1b
+									id: "cmi:bronze_fluid_burner"
+								}
+								{
+									Count: 1b
+									id: "cmi:cast_iron_fluid_burner"
+								}
+								{
+									Count: 1b
+									id: "cmi:steel_fluid_burner"
+								}
+							]
 						}
 					}
-					title: "锅炉燃烧室"
+					title: "燃烧室"
 					type: "item"
 				}
 				{
-					id: "53C7AE81FE17F612"
+					id: "0211B2D7CD6BDA13"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -332,7 +357,7 @@
 							value: "steampowered:boiler"
 						}
 					}
-					title: "蒸汽锅炉"
+					title: "锅炉"
 					type: "item"
 				}
 			]
