@@ -15,4 +15,13 @@ ServerEvents.recipes((event) => {
 	cmi.freezing("minecraft:blue_ice", [
 		"minecraft:packed_ice"
 	])
+
+	event.custom({
+		type: "cmi:fluid_burn",
+		fluid: {
+			fluid: "minecraft:lava",
+			amount: 10
+		},
+		hu: 200
+	})
 })
