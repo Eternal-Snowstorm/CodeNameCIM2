@@ -24,4 +24,13 @@ ServerEvents.recipes((event) => {
 		},
 		hu: 200
 	})
+
+	event.custom({
+		type: "cmi:fluid_burn",
+		fluid: {
+			fluid: "minecraft:water",
+			amount: 10
+		},
+		hu: 200
+	})
 })
