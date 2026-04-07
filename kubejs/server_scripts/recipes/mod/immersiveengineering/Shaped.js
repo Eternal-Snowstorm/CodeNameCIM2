@@ -65,4 +65,25 @@ ServerEvents.recipes((event) => {
 		P: "#forge:plates/steel",
 		G: "#forge:gears/electrum"
 	}).id("immersiveengineering:crafting/component_steel")
+
+	// 风帆
+	kubejs.shaped("immersive_aircraft:sail", [
+		"AA ",
+		" AA",
+		"AA "
+	], {
+		A: "#forge:fabric_hemp"
+	}).id("immersive_aircraft:sail")
+
+	// 滑翔翼
+	kubejs.shaped("immersiveengineering:glider", [
+		" A ",
+		"BCB",
+		"DAD"
+	], {
+		A: "#forge:rods/iron",
+		B: "immersive_aircraft:sail",
+		C: "#forge:leather",
+		D: "farmersdelight:rope"
+	}).id("immersiveengineering:crafting/glider")
 })

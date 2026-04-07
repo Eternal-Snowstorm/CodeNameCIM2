@@ -45,7 +45,9 @@ ServerEvents.recipes((event) => {
 		"createaddition:crafting/large_connector_gold",
 		"create:compacting/andesite_from_flint",
 		"create:compacting/granite_from_flint",
-		"create:compacting/diorite_from_flint"
+		"create:compacting/diorite_from_flint",
+		"createaddition:compat/immersiveengineering/fabric_sail",
+		"create:crafting/kinetics/white_sailfrom_conversion"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

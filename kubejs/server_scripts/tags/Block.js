@@ -270,4 +270,8 @@ ServerEvents.tags("block", (event) => {
 		event.get("treetap:tappable")
 			.add([STRIPPED_LOG, STRIPPED_WOOD])
 	})
+
+	// 风帆
+	event.get("create:windmill_sails")
+		.remove("create:sail_frame")
 })

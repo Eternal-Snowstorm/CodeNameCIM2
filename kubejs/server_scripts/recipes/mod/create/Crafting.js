@@ -43,25 +43,24 @@ ServerEvents.recipes((event) => {
 		B: "#forge:rods/wooden"
 	}).id("immersiveengineering:crafting/waterwheel_segment")
 
-	// 风车叶片
-	kubejs.shaped("2x create:white_sail", [
+	// 风帆框架
+	kubejs.shaped("2x create:sail_frame", [
 		"ABA",
-		"BCB",
+		"B B",
 		"ABA"
 	], {
 		A: "#forge:string",
-		B: "#forge:rods/wooden",
-		C: "#forge:fabric_hemp"
-	}).id("createaddition:compat/immersiveengineering/fabric_sail")
+		B: "#forge:rods/wooden"
+	}).id("create:crafting/kinetics/sail_framefrom_conversion")
 
-	kubejs.shaped("2x create:white_sail", [
+	// 风车叶片
+	kubejs.shaped("4x create:white_sail", [
+		" A ",
 		"ABA",
-		"BCB",
-		"ABA"
+		" A "
 	], {
-		A: "#forge:string",
-		B: "#forge:rods/wooden",
-		C: "#minecraft:wool"
+		A: "create:sail_frame",
+		B: "immersive_aircraft:sail"
 	}).id("create:crafting/kinetics/white_sail")
 
 	// 激光发射器
