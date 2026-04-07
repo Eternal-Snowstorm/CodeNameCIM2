@@ -1,5 +1,4 @@
 ServerEvents.recipes((event) => {
-
 	// 碳化硅板
 	event.custom({
 		"type": "ae2:inscriber",
