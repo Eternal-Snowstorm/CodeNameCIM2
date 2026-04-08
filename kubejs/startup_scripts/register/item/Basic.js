@@ -44,8 +44,8 @@ StartupEvents.registry("item", (event) => {
 		.burnTime(800)
 
 	// 初始套件
-	addItem("initial_item_kit")
-		.glow(true)
+	// addItem("initial_item_kit")
+	// 	.glow(true)
 
 	// 木屑加工系列
 	addItem("wood_chip_briquette")

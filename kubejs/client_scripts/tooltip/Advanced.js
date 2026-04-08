@@ -76,18 +76,18 @@ ItemEvents.tooltip((event) => {
 		})
 
 	// 初始套件的Tooltip
-	event.addAdvanced("cmi:initial_item_kit",
-		(item, advanced, tooltip) => {
-			if (event.shift) {
-				let lines = Component.translatable("tooltip.cmi.initial_item_kit.shift")
-					.string.split("\n")
-				lines.forEach((line) => {
-					tooltip.add(line)
-				})
-			} else {
-				tooltip.add(Component.translatable("tooltip.cmi.initial_item_kit.tip"))
-			}
-		})
+	// event.addAdvanced("cmi:initial_item_kit",
+	// 	(item, advanced, tooltip) => {
+	// 		if (event.shift) {
+	// 			let lines = Component.translatable("tooltip.cmi.initial_item_kit.shift")
+	// 				.string.split("\n")
+	// 			lines.forEach((line) => {
+	// 				tooltip.add(line)
+	// 			})
+	// 		} else {
+	// 			tooltip.add(Component.translatable("tooltip.cmi.initial_item_kit.tip"))
+	// 		}
+	// 	})
 
 	// 电池
 	event.addAdvanced("cmi:simple_battery",

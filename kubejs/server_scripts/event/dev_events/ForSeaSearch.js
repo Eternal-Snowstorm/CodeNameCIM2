@@ -22,7 +22,7 @@ ItemEvents.rightClicked((event) => {
 			"players",
 			1.0,
 			1.0
-		)
+		)	
 		player.cooldowns.addCooldown(canTriggerItem, 100)
 	}
 })
