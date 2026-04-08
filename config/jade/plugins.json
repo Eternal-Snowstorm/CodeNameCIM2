@@ -131,6 +131,9 @@
     "goggles.detailed": false,
     "placard": true
   },
+  "kaleidoscope_tavern": {
+    "barrel": true
+  },
   "industrial_platform": {
     "common": true
   },
