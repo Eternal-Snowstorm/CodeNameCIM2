@@ -1,8 +1,0 @@
-{
-	"block": "cmi:zinc_ore_node",
-	"loot_tables": {
-		"earth": "deepdrilling:ore_nodes/zinc/earth",
-		"common": "deepdrilling:ore_nodes/zinc/common",
-		"rare": "deepdrilling:ore_nodes/zinc/rare"
-	}
-}

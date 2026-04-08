@@ -51,6 +51,16 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
   },
@@ -69,9 +79,6 @@
   "uti": {
     "entity_name": true,
     "object_name": true
-  },
-  "lootr": {
-    "info": true
   },
   "functionalstorage": {
     "armory": true
@@ -100,6 +107,9 @@
   "yes_steve_model": {
     "model_info": true
   },
+  "jadeaddons.lootr": {
+    "info": true
+  },
   "mekanism": {
     "infuse_type": true,
     "gas": true,
@@ -120,22 +130,15 @@
   "pipez": {
     "pipe": true
   },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": true,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
-  },
   "kaleidoscope_tavern": {
     "barrel": true
   },
   "industrial_platform": {
     "common": true
+  },
+  "appliedcreate": {
+    "grid_node_state": true,
+    "power_storage": true
   },
   "cmi": {
     "common": true
