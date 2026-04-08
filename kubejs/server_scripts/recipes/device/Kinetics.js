@@ -202,13 +202,6 @@ ServerEvents.recipes((event) => {
 		X: "vintageimprovements:spring_coiling_machine_wheel",
 	}).id("vintageimprovements:craft/spring_coiling_machine")
 
-	// 空白模块
-	kubejs.shapeless("deepdrilling:blank_module", [
-		"create:andesite_casing",
-		Mechanism.ANDESITE.COM,
-		"#forge:plates/iron"
-	]).id("deepdrilling:blank_module")
-
 	// 冲压机
 	kubejs.shaped("vintageimprovements:curving_press", [
 		"M",

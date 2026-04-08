@@ -115,14 +115,4 @@ ServerEvents.recipes((event) => {
 		B: "minecraft:chain",
 		A: "create:fluid_pipe"
 	}).id("createdieselgenerators:crafting/pumpjack_hole")
-
-	// 淤泥泵
-	kubejs.shaped("deepdrilling:sludge_pump", [
-		" X ",
-		"YMY"
-	], {
-		M: Mechanism.COPPER.COM,
-		X: "deepdrilling:blank_module",
-		Y: "#forge:plates/copper"
-	}).id("deepdrilling:sludge_pump")
 })

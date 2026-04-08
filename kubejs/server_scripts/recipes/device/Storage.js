@@ -67,13 +67,6 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/industrial_iron"
 	]).id("create:crafting/kinetics/portable_fluid_interface")
 
-	// 移动式燃料接口
-	kubejs.shapeless("2x railways:portable_fuel_interface", [
-		Casing.RAILWAY,
-		Mechanism.RAILWAY.COM,
-		"#forge:plates/industrial_iron"
-	]).id("railways:crafting/portable_fuel_interface")
-
 	// 移动式能量接口
 	kubejs.shapeless("2x createaddition:portable_energy_interface", [
 		Casing.BRASS,

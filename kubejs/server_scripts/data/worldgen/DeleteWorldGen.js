@@ -30,14 +30,6 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	deleteStructureGen("ad_astra", "oil_well")
-	deleteStructureGen("deepdrilling", "copper_node")
-	deleteStructureGen("deepdrilling", "gold_node")
-	deleteStructureGen("deepdrilling", "iron_node")
-	deleteStructureGen("deepdrilling", "zinc_node")
-	deleteStructureGen("deepdrilling", "asurine_node")
-	deleteStructureGen("deepdrilling", "crimsite_node")
-	deleteStructureGen("deepdrilling", "ochrum_node")
-	deleteStructureGen("deepdrilling", "veridium_node")
 
 	deleteFeatureGen("immersiveengineering", "uranium")
 	deleteFeatureGen("immersiveengineering", "nickel")

@@ -62,6 +62,12 @@ ServerEvents.tags("block", (event) => {
 	event.get("thermal:dynamos")
 		.add("thermal_extra:dynamo_frost")
 
+	event.get("minecraft:mineable/pickaxe")
+		.remove("treetap:tap")
+
+	event.get("minecraft:mineable/axe")
+		.add("treetap:tap")
+
 	event.add("thermal:devices")
 		.add([
 			"thermal_extra:device_harvester",
