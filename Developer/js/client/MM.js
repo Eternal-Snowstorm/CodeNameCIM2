@@ -49,7 +49,7 @@ Ponder.registry((event) => {
 					scene.idle(20)
 					for (let displayLevel = 1; displayLevel < layer + 1; displayLevel++) {
 						scene.addKeyframe()
-						scene.world.showSection([0, displayLevel, 0, 20, displayLevel, 20], Direction.DOWN)
+						scene.world().showSection([0, displayLevel, 0, 20, displayLevel, 20], Direction.DOWN)
 						scene.idle(50)
 					}
 				})

@@ -159,6 +159,11 @@ ServerEvents.highPriorityData((event) => {
 		"createdieselgenerators:wood_chip"
 	))
 
+	addJsonFile("charged_amethyst", addUnification(
+		"#forge:gems/charged_amethyst",
+		"cmi:charged_amethyst"
+	))
+
 	/**
 	 * @example addJsonFile("coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
 	 * @param {Internal.Item | Internal.Ingredient} match 
@@ -172,6 +177,11 @@ ServerEvents.highPriorityData((event) => {
 		}
 	}
 
+	/**
+	 * 
+	 * @param {string} name 文件名称
+	 * @param {Internal.JsonElement_} unification json
+	 */
 	function addJsonFile(name, unification) {
 		event.addJson(`oei:replacements/${name}.json`, unification)
 	}

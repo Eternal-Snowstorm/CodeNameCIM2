@@ -5,9 +5,9 @@ Ponder.registry((event) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
-			scene.world.showSection([1, 1, 3, 7, 1, 3], Direction.DOWN)
-			scene.world.showSection([2, 1, 5, 7, 1, 5], Direction.DOWN)
-			scene.world.showSection([4, 1, 4], Direction.DOWN)
+			scene.world().showSection([1, 1, 3, 7, 1, 3], Direction.DOWN)
+			scene.world().showSection([2, 1, 5, 7, 1, 5], Direction.DOWN)
+			scene.world().showSection([4, 1, 4], Direction.DOWN)
 			scene.idle(20)
 
 			// 除了粗线缆和细线缆以外
@@ -22,7 +22,7 @@ Ponder.registry((event) => {
 			// 石英纤维可以在ME网络之间传输能量, 不会干扰网络频道
 			scene.showControls(80, [4.5, 2, 4.5], "down")
 				.withItem("ae2:quartz_fiber")
-			scene.overlay.showOutline("red", {}, [4, 1, 4], 60)
+			scene.overlay().showOutline("red", {}, [4, 1, 4], 60)
 			scene.text(80, "Quartz fiber can transmit energy between ME networks without impacting channels", [4.5, 1.5, 4.5])
 			scene.idle(100)
 			scene.addKeyframe()
@@ -30,10 +30,10 @@ Ponder.registry((event) => {
 			// 触发总线和反向触发总线可以调节设备在线状态
 			scene.showControls(80, [6.5, 2, 3.5], "down")
 				.withItem("ae2:toggle_bus")
-			scene.overlay.showOutline("red", {}, [6, 1, 3], 60)
+			scene.overlay().showOutline("red", {}, [6, 1, 3], 60)
 			scene.showControls(80, [6.5, 2, 5.5], "down")
 				.withItem("ae2:inverted_toggle_bus")
-			scene.overlay.showOutline("green", {}, [6, 1, 5], 60)
+			scene.overlay().showOutline("green", {}, [6, 1, 5], 60)
 			scene.text(80, "Toggle Bus and Inverted Toggle Bus can switch connection of devices to ME system", [4.5, 1.5, 4.5])
 			scene.idle(100)
 
@@ -48,8 +48,8 @@ Ponder.registry((event) => {
 			// 如果在这里放一个红石信号……
 			scene.text(40, "If a redstone signal comes here...", [6.5, 2, 4.5])
 			scene.idle(60)
-			scene.world.setBlocks([6, 1, 4], "minecraft:redstone_block")
-			scene.world.showSection([6, 1, 4], Direction.DOWN)
+			scene.world().setBlocks([6, 1, 4], "minecraft:redstone_block")
+			scene.world().showSection([6, 1, 4], Direction.DOWN)
 			scene.idle(40)
 
 			// 那么上面的设备就下线了, 而下面的设备就上线了
@@ -67,7 +67,7 @@ Ponder.registry((event) => {
 			scene.showBasePlate()
 			scene.idle(20)
 
-			scene.world.showSection([1, 1, 2, 7, 1, 5], Direction.DOWN)
+			scene.world().showSection([1, 1, 2, 7, 1, 5], Direction.DOWN)
 
 			// 频道对于ME网络非常重要
 			scene.text(40, "Channels are essential to ME Networks")
@@ -82,8 +82,8 @@ Ponder.registry((event) => {
 			scene.text(40, "While thin cables transmit only 8 channels", [3.5, 1.5, 3.5])
 			scene.idle(60)
 			scene.addKeyframe()
-			scene.world.setBlocks([7, 2, 3], "ae2:drive")
-			scene.world.showSection([7, 2, 3], Direction.DOWN)
+			scene.world().setBlocks([7, 2, 3], "ae2:drive")
+			scene.world().showSection([7, 2, 3], Direction.DOWN)
 
 			// 如果一段线缆频道数达到上限
 			scene.text(40, "If a cable is overloaded", [3.5, 1.5, 3.5])

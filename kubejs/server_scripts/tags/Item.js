@@ -10,6 +10,8 @@ ServerEvents.tags("item", (event) => {
 
 	add("forge:plates/silicon", "ae2:printed_silicon")
 
+	add("forge:gems/charged_amethyst", "create_rns:resonant_amethyst")
+
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
 		.add("vintageimprovements:redstone_module")
@@ -33,6 +35,23 @@ ServerEvents.tags("item", (event) => {
 		event.get(`forge:dyes/${color}`)
 			.add("cmi:colorful_mechanism")
 	})
+
+	event.get("cmi:ore_deposits")
+		.add([
+			"create_rns:iron_deposit_block",
+			"create_rns:copper_deposit_block",
+			"create_rns:zinc_deposit_block",
+			"create_rns:gold_deposit_block",
+			"create_rns:redstone_deposit_block",
+			"create_rns:tin_deposit_block",
+			"create_rns:lead_deposit_block",
+			"create_rns:silver_deposit_block",
+			"create_rns:nickel_deposit_block",
+			"create_rns:cobalt_deposit_block",
+			"create_rns:quartz_deposit_block",
+			"create_rns:uranium_deposit_block",
+			"create_rns:depleted_deposit_block"
+		])
 
 	event.get("cmi:grass_fiber")
 		.add([

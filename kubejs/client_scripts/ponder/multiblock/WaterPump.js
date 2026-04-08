@@ -9,17 +9,17 @@ Ponder.registry((event) => {
 
 		scene.addKeyframe()
 		let move0 =
-			scene.world.showIndependentSection([4, 1, 2], Direction.DOWN)
-		scene.world.moveSection(move0, [-2, 0, 0], 0)
+			scene.world().showIndependentSection([4, 1, 2], Direction.DOWN)
+		scene.world().moveSection(move0, [-2, 0, 0], 0)
 		scene.idle(20)
-		scene.overlay.showOutline("blue", {}, [2, 1, 2], 90)
+		scene.overlay().showOutline("blue", {}, [2, 1, 2], 90)
 		// 如果想要使用水井
 		scene.text(40, "If you want to use the water pump", [2, 1.5, 2])
 		scene.idle(45)
 		// 你需要先搭建一个完整的结构
 		scene.text(40, "You need to build a complete structure first", [2, 1.5, 2])
 		scene.idle(50)
-		scene.world.hideIndependentSection(move0, Direction.UP)
+		scene.world().hideIndependentSection(move0, Direction.UP)
 		scene.idle(20)
 
 		scene.addKeyframe()
@@ -29,7 +29,7 @@ Ponder.registry((event) => {
 			[3, 1, 1], [2, 1, 1], [1, 1, 1]
 		]
 		block1.forEach((pos) => {
-			scene.world.showSection(pos, Direction.DOWN)
+			scene.world().showSection(pos, Direction.DOWN)
 			scene.idle(2)
 		})
 		scene.idle(20)
@@ -43,7 +43,7 @@ Ponder.registry((event) => {
 			[3, 3, 1], [1, 3, 1]
 		]
 		block2.forEach((pos) => {
-			scene.world.showSection(pos, Direction.DOWN)
+			scene.world().showSection(pos, Direction.DOWN)
 			scene.idle(2)
 		})
 		scene.idle(20)
@@ -55,7 +55,7 @@ Ponder.registry((event) => {
 			[3, 4, 1], [2, 4, 1], [1, 4, 1]
 		]
 		block3.forEach((pos) => {
-			scene.world.showSection(pos, Direction.DOWN)
+			scene.world().showSection(pos, Direction.DOWN)
 			scene.idle(2)
 		})
 		scene.idle(20)
@@ -68,12 +68,12 @@ Ponder.registry((event) => {
 			[1, 4, 2]
 		]
 		positions.forEach((pos) => {
-			scene.overlay.showOutline("blue", {}, pos, 50)
+			scene.overlay().showOutline("blue", {}, pos, 50)
 		})
 		scene.idle(50)
 		// 最后放上机器本体
 		scene.text(40, "Finally, put on the machine body")
-		scene.world.showSection([2, 1, 2], Direction.DOWN)
+		scene.world().showSection([2, 1, 2], Direction.DOWN)
 		scene.idle(40)
 
 		scene.addKeyframe()
@@ -87,7 +87,7 @@ Ponder.registry((event) => {
 			[3, 4, 1], [2, 4, 1], [1, 4, 1]
 		]
 		move1.forEach((pos) => {
-			scene.world.hideSection(pos, Direction.UP)
+			scene.world().hideSection(pos, Direction.UP)
 		})
 		scene.idle(20)
 
@@ -100,10 +100,10 @@ Ponder.registry((event) => {
 			[3, 5, 1, 1, 8, 3]
 		]
 		block4.forEach((pos) => {
-			scene.world.showSection(pos, Direction.DOWN)
+			scene.world().showSection(pos, Direction.DOWN)
 			scene.idle(5)
 		})
-		scene.world.showSection([3, 4, 1, 1, 4, 3], Direction.UP)
+		scene.world().showSection([3, 4, 1, 1, 4, 3], Direction.UP)
 		scene.idle(20)
 	})
 
@@ -116,34 +116,34 @@ Ponder.registry((event) => {
 		scene.idle(20)
 
 		let inde1 =
-			scene.world.showIndependentSection([1, 3, 3, 3, 3, 1], Direction.DOWN)
+			scene.world().showIndependentSection([1, 3, 3, 3, 3, 1], Direction.DOWN)
 		let inde2 =
-			scene.world.showIndependentSection([1, 6, 3, 3, 6, 1], Direction.DOWN)
+			scene.world().showIndependentSection([1, 6, 3, 3, 6, 1], Direction.DOWN)
 		let inde3 =
-			scene.world.showIndependentSection([1, 3, 3, 1, 6, 1], Direction.DOWN)
+			scene.world().showIndependentSection([1, 3, 3, 1, 6, 1], Direction.DOWN)
 		let inde4 =
-			scene.world.showIndependentSection([1, 3, 1, 3, 6, 1], Direction.DOWN)
+			scene.world().showIndependentSection([1, 3, 1, 3, 6, 1], Direction.DOWN)
 
 		scene.idle(20)
 
 		scene.addKeyframe()
-		scene.overlay.showOutline("blue", {}, [1, 3, 3, 3, 6, 1], 40)
+		scene.overlay().showOutline("blue", {}, [1, 3, 3, 3, 6, 1], 40)
 		scene.text(40, "如你所见, 这是一台水井")
 		scene.idle(55)
-		scene.world.hideIndependentSection(inde1, Direction.UP)
-		scene.world.hideIndependentSection(inde2, Direction.UP)
-		scene.world.hideIndependentSection(inde3, Direction.UP)
-		scene.world.hideIndependentSection(inde4, Direction.UP)
+		scene.world().hideIndependentSection(inde1, Direction.UP)
+		scene.world().hideIndependentSection(inde2, Direction.UP)
+		scene.world().hideIndependentSection(inde3, Direction.UP)
+		scene.world().hideIndependentSection(inde4, Direction.UP)
 		scene.idle(20)
-		scene.world.showSection([0, 0, 0, 6, 6, 6], Direction.DOWN)
+		scene.world().showSection([0, 0, 0, 6, 6, 6], Direction.DOWN)
 		scene.idle(20)
 
 		scene.addKeyframe()
-		scene.overlay.showOutline("blue", {}, [1, 3, 3, 3, 6, 1], 50)
+		scene.overlay().showOutline("blue", {}, [1, 3, 3, 3, 6, 1], 50)
 		scene.text(50, "当其处在海洋群系的海平面上时...(Y=62)", [2, 4.5, 2])
 		scene.idle(65)
 		scene.addKeyframe()
-		scene.overlay.showOutline("blue", {}, [4, 4, 4, 6, 6, 6], 50)
+		scene.overlay().showOutline("blue", {}, [4, 4, 4, 6, 6, 6], 50)
 		scene.text(50, "抽出来的水就是海水了", [5, 5, 5])
 		scene.idle(65)
 	})
