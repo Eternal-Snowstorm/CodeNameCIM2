@@ -47,7 +47,8 @@ ServerEvents.recipes((event) => {
 		"create:compacting/granite_from_flint",
 		"create:compacting/diorite_from_flint",
 		"createaddition:compat/immersiveengineering/fabric_sail",
-		"create:crafting/kinetics/white_sailfrom_conversion"
+		"create:crafting/kinetics/white_sailfrom_conversion",
+		"create_factory_abstractions:empty"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
