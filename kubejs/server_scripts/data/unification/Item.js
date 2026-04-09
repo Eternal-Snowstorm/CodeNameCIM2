@@ -159,9 +159,21 @@ ServerEvents.highPriorityData((event) => {
 		"createdieselgenerators:wood_chip"
 	))
 
+	// 共振紫水晶
 	addJsonFile("charged_amethyst", addUnification(
 		"#forge:gems/charged_amethyst",
 		"cmi:charged_amethyst"
+	))
+
+	// 流体构件
+	addJsonFile("fluid_mechanism", addUnification(
+		"create_factory_logistics:fluid_mechanism",
+		Mechanism.COPPER.COM
+	))
+
+	addJsonFile("incomplete_fluid_mechanism", addUnification(
+		"create_factory_logistics:incomplete_fluid_mechanism",
+		Mechanism.COPPER.INC
 	))
 
 	/**
