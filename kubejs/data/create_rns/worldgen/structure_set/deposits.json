@@ -1,0 +1,46 @@
+{
+    "placement": {
+        "type": "minecraft:random_spread",
+        "separation": 4,
+        "spacing": 24,
+        "salt": 591646342
+    },
+    "structures": [
+        {
+            "structure": "create_rns:deposit_iron",
+            "weight": 100
+        },
+        {
+            "structure": "create_rns:deposit_copper",
+            "weight": 100
+        },
+        {
+            "structure": "create_rns:deposit_zinc",
+            "weight": 40
+        },
+        {
+            "structure": "create_rns:deposit_gold",
+            "weight": 40
+        },
+        {
+            "structure": "create_rns:deposit_redstone",
+            "weight": 40
+        },
+        {
+            "structure": "create_rns:deposit_tin",
+            "weight": 50
+        },
+        {
+            "structure": "create_rns:deposit_lead",
+            "weight": 35
+        },
+        {
+            "structure": "create_rns:deposit_nickel",
+            "weight": 35
+        },
+        {
+            "structure": "create_rns:deposit_silver",
+            "weight": 20
+        }
+    ]
+}
