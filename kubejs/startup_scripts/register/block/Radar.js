@@ -32,7 +32,7 @@ StartupEvents.registry("block", (event) => {
 	addConcreteBlock("gray", 0x565656)
 	addConcreteBlock("white", 0xFFFFFF)
 	addConcreteBlock("light_gray", 0xa0a3a5)
-	addConcreteBlock("black", 0x171717)
+	addConcreteBlock("black", 0x262626)
 
 	// 雷达
 	addBlock(`radar`)

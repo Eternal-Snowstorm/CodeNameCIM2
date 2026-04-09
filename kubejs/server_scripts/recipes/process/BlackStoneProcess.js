@@ -186,21 +186,6 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:platinum_solution", 100)
 	])
 
-	// 废液回收
-	event.custom({
-		"type": "immersiveindustry:electrolyzer",
-		"fluid": {
-			"tag": "cmi:turbid_waste_liquid",
-			"amount": 200
-		},
-		"result": {
-			"item": "cmi:delta_blackstone_source",
-			"count": 1
-		},
-		"large_only": true,
-		"time": 200
-	})
-
 	// 电镀液
 	create.mixing(Fluid.of("cmi:plating_solution", 1000), [
 		"#forge:dusts/chromium",
