@@ -8,6 +8,27 @@ let $Gas =
 let $Chemical =
 	Java.loadClass("mekanism.api.chemical.Chemical")
 
+/**
+	 * 设置命名空间优先级
+	 * 越往前的命名空间优先级越高
+	 */
+let namespacePriority = [
+	"cmi",
+	"vintageimprovements",
+	"thermal",
+	"thermalconstruct",
+	"thermalendergy",
+	"thermal_extra",
+	"create",
+	"createdeco",
+	"ae2",
+	"ad_astra",
+	"immersiveengineering",
+	"mekanism",
+	"alexscaves",
+	"tconstruct"
+]
+
 let IngrUtils = {
 	/**
 	 * 获取标签内第一个物品的ID, 若标签下没有物品则返回null
@@ -26,6 +47,36 @@ let IngrUtils = {
 			console.warn(`No corresponding item under ${tagOrItem}`)
 			return null
 		}
+	},
+
+	/**
+	 * 
+	 * @param {ItemTags_} tag
+	 */
+	getUnifieditemId: function (tag) {
+		let ids = Ingredient.of(tag).getItemIds()
+		let currentNamespace
+		let outputId
+		let priorityValue
+
+		if (ids.length > 0) {
+			// 遍历获取到的tag下每个物品的命名空间
+			ids.forEach((id) => {
+				currentNamespace = ResourceLocation.parse(id).getNamespace()
+
+				// 获取命名空间优先级
+				for (let i = 0; i < namespacePriority.length; i++) {
+					if (currentNamespace === namespacePriority[i]) {
+						// 判定命名空间优先级并选择性输出优先级值最小的
+						if (i <= priorityValue || priorityValue == null) {
+							outputId = id
+							priorityValue = i
+						}
+					}
+				}
+			})
+		}
+		return outputId
 	},
 
 	/**

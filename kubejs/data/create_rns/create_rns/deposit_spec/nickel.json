@@ -1,6 +1,6 @@
 {
     "scanner_icon_item": "thermal:raw_nickel",
     "dimension": "minecraft:overworld",
-    "map_icon_item": "create_rns:nickel_deposit_block",
+    "map_icon_item": "thermal:raw_nickel",
     "structure": "create_rns:deposit_nickel"
 }
