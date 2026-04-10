@@ -1,6 +1,6 @@
 {
-    "scanner_icon_item": "minecraft:raw_gold",
-    "dimension": "minecraft:overworld",
-    "map_icon_item": "minecraft:raw_gold",
-    "structure": "create_rns:deposit_gold"
+	"scanner_icon_item": "minecraft:raw_gold",
+	"dimension": "minecraft:overworld",
+	"map_icon_item": "minecraft:raw_gold",
+	"structure": "create_rns:deposit_gold"
 }

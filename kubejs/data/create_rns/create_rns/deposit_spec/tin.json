@@ -1,6 +1,6 @@
 {
-    "scanner_icon_item": "thermal:raw_tin",
-    "dimension": "minecraft:overworld",
-    "map_icon_item": "thermal:raw_tin",
-    "structure": "create_rns:deposit_tin"
+	"scanner_icon_item": "thermal:raw_tin",
+	"dimension": "minecraft:overworld",
+	"map_icon_item": "thermal:raw_tin",
+	"structure": "create_rns:deposit_tin"
 }
