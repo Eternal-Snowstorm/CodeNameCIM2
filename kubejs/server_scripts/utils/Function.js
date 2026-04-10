@@ -9,9 +9,9 @@ let $Chemical =
 	Java.loadClass("mekanism.api.chemical.Chemical")
 
 /**
-	 * 设置命名空间优先级
-	 * 越往前的命名空间优先级越高
-	 */
+ * 设置命名空间优先级
+ * 越往前的命名空间优先级越高
+ */
 let namespacePriority = [
 	"cmi",
 	"vintageimprovements",
