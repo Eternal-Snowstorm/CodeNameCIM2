@@ -2,5 +2,5 @@
 	"scanner_icon_item": "minecraft:raw_iron",
 	"dimension": "minecraft:overworld",
 	"map_icon_item": "minecraft:raw_iron",
-	"structure": "create_rns:deposit_iron"
+	"structure": "cmi:ore_node/iron_node"
 }

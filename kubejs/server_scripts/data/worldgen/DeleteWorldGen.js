@@ -30,6 +30,8 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	deleteStructureGen("ad_astra", "oil_well")
+	deleteStructureGen("create_rns", "deposits")
+	deleteStructureGen("create_rns", "nether_deposits")
 
 	deleteFeatureGen("immersiveengineering", "uranium")
 	deleteFeatureGen("immersiveengineering", "nickel")

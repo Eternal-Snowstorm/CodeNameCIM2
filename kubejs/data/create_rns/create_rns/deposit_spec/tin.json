@@ -2,5 +2,5 @@
 	"scanner_icon_item": "thermal:raw_tin",
 	"dimension": "minecraft:overworld",
 	"map_icon_item": "thermal:raw_tin",
-	"structure": "create_rns:deposit_tin"
+	"structure": "cmi:ore_node/tin_node"
 }

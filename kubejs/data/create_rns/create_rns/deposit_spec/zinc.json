@@ -2,5 +2,5 @@
 	"scanner_icon_item": "create:raw_zinc",
 	"dimension": "minecraft:overworld",
 	"map_icon_item": "create:raw_zinc",
-	"structure": "create_rns:deposit_zinc"
+	"structure": "cmi:ore_node/zinc_node"
 }

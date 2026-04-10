@@ -2,5 +2,5 @@
 	"scanner_icon_item": "thermal:raw_nickel",
 	"dimension": "minecraft:overworld",
 	"map_icon_item": "thermal:raw_nickel",
-	"structure": "create_rns:deposit_nickel"
+	"structure": "cmi:ore_node/nickel_node"
 }

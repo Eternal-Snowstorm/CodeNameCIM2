@@ -2,5 +2,5 @@
 	"scanner_icon_item": "thermal:raw_silver",
 	"dimension": "minecraft:overworld",
 	"map_icon_item": "thermal:raw_silver",
-	"structure": "create_rns:deposit_silver"
+	"structure": "cmi:ore_node/silver_node"
 }
