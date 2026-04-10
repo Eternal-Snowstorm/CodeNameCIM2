@@ -47,4 +47,9 @@ ServerEvents.recipes((event) => {
 		Item.of("minecraft:obsidian"),
 		Item.of("mekanism:dust_obsidian").withChance(0.5)
 	], "minecraft:obsidian")
+
+	// 钢粉
+	create.crushing(Item.of("cmi:steel_dust").withChance(0.05), [
+		"#minecraft:armors/chainmail"
+	])
 })

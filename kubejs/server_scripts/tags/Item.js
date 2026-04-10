@@ -36,6 +36,14 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	event.get("minecraft:armors/chainmail")
+		.add([
+			"minecraft:chainmail_helmet",
+			"minecraft:chainmail_chestplate",
+			"minecraft:chainmail_leggings",
+			"minecraft:chainmail_boots"
+		])
+
 	event.get("cmi:ore_deposits")
 		.add([
 			"create_rns:iron_deposit_block",
