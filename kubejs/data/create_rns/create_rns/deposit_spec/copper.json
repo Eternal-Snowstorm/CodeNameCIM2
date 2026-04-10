@@ -1,6 +1,6 @@
 {
-    "scanner_icon_item": "minecraft:raw_copper",
-    "dimension": "minecraft:overworld",
-    "map_icon_item": "minecraft:raw_copper",
-    "structure": "create_rns:deposit_copper"
+	"scanner_icon_item": "minecraft:raw_copper",
+	"dimension": "minecraft:overworld",
+	"map_icon_item": "minecraft:raw_copper",
+	"structure": "create_rns:deposit_copper"
 }

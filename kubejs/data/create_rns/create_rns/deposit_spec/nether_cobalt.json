@@ -1,6 +1,6 @@
 {
-    "scanner_icon_item": "tconstruct:raw_cobalt",
-    "map_icon_item": "tconstruct:raw_cobalt",
-    "structure": "create_rns:deposit_nether_cobalt",
-    "dimension": "minecraft:the_nether"
+	"scanner_icon_item": "tconstruct:raw_cobalt",
+	"map_icon_item": "tconstruct:raw_cobalt",
+	"structure": "create_rns:deposit_nether_cobalt",
+	"dimension": "minecraft:the_nether"
 }

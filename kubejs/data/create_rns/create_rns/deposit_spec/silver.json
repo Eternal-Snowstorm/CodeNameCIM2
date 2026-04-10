@@ -1,6 +1,6 @@
 {
-    "scanner_icon_item": "thermal:raw_silver",
-    "dimension": "minecraft:overworld",
-    "map_icon_item": "thermal:raw_silver",
-    "structure": "create_rns:deposit_silver"
+	"scanner_icon_item": "thermal:raw_silver",
+	"dimension": "minecraft:overworld",
+	"map_icon_item": "thermal:raw_silver",
+	"structure": "create_rns:deposit_silver"
 }
