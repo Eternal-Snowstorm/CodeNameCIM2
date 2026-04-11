@@ -1,0 +1,6 @@
+{
+	"scanner_icon_item": "createdieselgenerators:crude_oil_bucket",
+	"dimension": "minecraft:overworld",
+	"map_icon_item": "createdieselgenerators:crude_oil_bucket",
+	"structure": "cmi:ore_node/oil_shale_node"
+}

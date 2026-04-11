@@ -2,5 +2,5 @@
 	"scanner_icon_item": "minecraft:raw_gold",
 	"map_icon_item": "minecraft:raw_gold",
 	"structure": "create_rns:deposit_nether_gold",
-	"dimension": "minecraft:the_nether"
+	"dimension": "minecraft:null"
 }

@@ -1,0 +1,6 @@
+{
+	"scanner_icon_item": "cmi:raw_vanadium",
+	"map_icon_item": "cmi:raw_vanadium",
+	"structure": "cmi:ore_node/vanadium_node",
+	"dimension": "minecraft:the_nether"
+}

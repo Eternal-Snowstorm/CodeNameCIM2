@@ -2,5 +2,5 @@
 	"scanner_icon_item": "minecraft:quartz",
 	"map_icon_item": "minecraft:quartz",
 	"structure": "create_rns:deposit_nether_quartz",
-	"dimension": "minecraft:the_nether"
+	"dimension": "minecraft:null"
 }

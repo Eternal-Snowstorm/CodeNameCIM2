@@ -43,10 +43,6 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${CmiCore.MODID}:item/material/peat`)
 		.burnTime(800)
 
-	// 初始套件
-	// addItem("initial_item_kit")
-	// 	.glow(true)
-
 	// 木屑加工系列
 	addItem("wood_chip_briquette")
 		.texture(`${CmiCore.MODID}:item/material/wood_chip/stage_1`)
@@ -235,42 +231,4 @@ StartupEvents.registry("item", (event) => {
 			.tag(`cmi:casing_framework`)
 			.tag(`cmi:casing_framework/${frame}`)
 	})
-
-	// addItem("general_processor")
-	// 	.texture(`${CmiCore.MODID}:item/material/general_processor`)
-
-	// 通用电路板
-	// addItem("printed_general_processor")
-	// 	.texture(`${CmiCore.MODID}:item/material/printed_general_processor`)
-
-	// // 活泼元素
-	// addItem("reactive_element")
-	// 	.texture(`${CmiCore.MODID}:item/material/cc/1`)
-	// addItem("stable_element")
-	// 	.texture(`${CmiCore.MODID}:item/material/cc/2`)
-	// addItem("explosive_element")
-	// 	.texture(`${CmiCore.MODID}:item/material/cc/3`)
-
-	// addItem("reactive_element_basement")
-	// 	.texture(`${CmiCore.MODID}:item/material/cc/1_dust`)
-	// addItem("stable_element_basement")
-	// 	.texture(`${CmiCore.MODID}:item/material/cc/2_dust`)
-	// addItem("explosive_element_basement")
-	// 	.texture(`${CmiCore.MODID}:item/material/cc/3_dust`)
-
-	// // 精炼核废料
-	// addItem("refined_nuke_waste")
-	// 	.texture(`${CmiCore.MODID}:item/material/refined_nuke_waste`)
-
-	// // Mg(OH)2
-	// addItem("magnesium_hydroxide")
-	// 	.texture(`${CmiCore.MODID}:item/material/sea/mgoh2`)
-
-	// 火箭发射遥控器
-	addItem("rocket_launcher")
-	// 燃料箱
-	addItem("rocket_fuel_1")
-	addItem("rocket_fuel_2")
-	addItem("rocket_fuel_3")
-	addItem("rocket_fuel_4")
 })

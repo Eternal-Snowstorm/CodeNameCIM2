@@ -1,6 +1,6 @@
 {
 	"scanner_icon_item": "thermal:raw_lead",
-	"dimension": "minecraft:nether",
+	"dimension": "minecraft:overworld",
 	"map_icon_item": "thermal:raw_lead",
-	"structure": "create_rns:deposit_lead"
+	"structure": "cmi:ore_node/lead_node"
 }

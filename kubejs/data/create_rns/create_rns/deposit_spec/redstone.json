@@ -1,6 +1,6 @@
 {
 	"scanner_icon_item": "minecraft:redstone",
-	"dimension": "minecraft:nether",
+	"dimension": "minecraft:overworld",
 	"map_icon_item": "minecraft:redstone",
-	"structure": "create_rns:deposit_redstone"
+	"structure": "cmi:ore_node/redstone_node"
 }

@@ -1,4 +1,8 @@
 ServerEvents.highPriorityData((event) => {
+	let structures = []
+	let netherStructures = []
+	let moonStructures = []
+
 	/**
 	 * 
 	 * @param {String} type 结构类型
@@ -8,13 +12,13 @@ ServerEvents.highPriorityData((event) => {
 	 * @param {Number} separation 最小距离
 	 * @returns 
 	 */
-	function addStructureGen(type, name, salt, spacing, separation) {
+	function addNodeGen(name) {
 		// 结构
 		let structure = {
 			type: "minecraft:jigsaw",
 			biomes: [],
 			size: 1,
-			start_pool: `${CmiCore.MODID}:${type}/${name}`,
+			start_pool: `${CmiCore.MODID}:ore_node/${name}`,
 			step: "surface_structures",
 			start_height: {
 				absolute: 0
@@ -26,22 +30,6 @@ ServerEvents.highPriorityData((event) => {
 			use_expansion_hack: false
 		}
 
-		// 结构集
-		let structureSet = {
-			structures: [
-				{
-					structure: `${CmiCore.MODID}:${type}/${name}`,
-					weight: 1
-				}
-			],
-			placement: {
-				type: "minecraft:random_spread",
-				salt: salt,
-				spacing: spacing,
-				separation: separation
-			}
-		}
-
 		// 结构池
 		let templatePool = {
 			name: `${CmiCore.MODID}:${name}`,
@@ -50,7 +38,7 @@ ServerEvents.highPriorityData((event) => {
 				{
 					weight: 1,
 					element: {
-						location: `${CmiCore.MODID}:${type}/${name}`,
+						location: `${CmiCore.MODID}:ore_node/${name}`,
 						element_type: "minecraft:single_pool_element",
 						processors: "minecraft:empty",
 						projection: "rigid"
@@ -61,115 +49,45 @@ ServerEvents.highPriorityData((event) => {
 
 		// 生成数据包
 		function build() {
-			event.addJson(`cmi:worldgen/structure/${type}/${name}`, structure)
-			event.addJson(`cmi:worldgen/structure_set/${type}/${name}`, structureSet)
-			event.addJson(`cmi:worldgen/template_pool/${type}/${name}`, templatePool)
+			event.addJson(`cmi:worldgen/structure/ore_node/${name}`, structure)
+			event.addJson(`cmi:worldgen/template_pool/ore_node/${name}`, templatePool)
 			return this
 		}
 
 		// 配置群系类型
 		return {
-			// 水生类生物群系
-			water: function () {
-				structure.biomes = [
-					"minecraft:ocean",
-					"minecraft:lukewarm_ocean",
-					"minecraft:warm_ocean",
-					"minecraft:cold_ocean",
-					"minecraft:frozen_ocean",
-					"minecraft:river",
-					"minecraft:frozen_river"
-				]
+			/**
+			 * 结构在主世界生成
+			 * 
+			 * @param {Number} weight 比重
+			 * @returns 
+			 */
+			overworld: function (weight) {
+				structure.biomes = "#create_rns:has_deposit"
+				// 结构集
+				structures.push(
+					{
+						structure: `${CmiCore.MODID}:ore_node/${name}`,
+						weight: weight
+					}
+				)
 				build()
 				return this
 			},
 
-			// 山地类生物群系
-			mountain: function () {
-				structure.biomes = [
-					"#forge:is_mountain"
-				]
-				build()
-				return this
-			},
 
-			// 雪原类生物群系
-			snowy: function () {
-				structure.biomes = [
-					"#forge:is_snowy"
-				]
-				build()
-				return this
-			},
-
-			// 森林类生物群系
-			forest: function () {
-				structure.biomes = [
-					"minecraft:forest",
-					"minecraft:taiga",
-					"minecraft:snowy_taiga",
-					"minecraft:old_growth_pine_taiga",
-					"minecraft:old_growth_spruce_taiga",
-					"minecraft:flower_forest",
-					"minecraft:birch_forest",
-					"minecraft:old_growth_birch_forest",
-					"minecraft:dark_forest",
-					"minecraft:jungle",
-					"minecraft:sparse_jungle",
-					"minecraft:bamboo_jungle",
-					"minecraft:windswept_forest"
-
-				]
-				build()
-				return this
-			},
-
-			// 湿地类生物群系
-			wetland: function () {
-				structure.biomes = [
-					"forge:is_wet/overworld"
-				]
-				build()
-				return this
-			},
-
-			// 平原类生物群系
-			plain: function () {
-				structure.biomes = [
-					"#forge:is_plains"
-				]
-				build()
-				return this
-			},
-
-			// 干旱类生物群系
-			dryland: function () {
-				structure.biomes = [
-					"forge:is_dry/overworld"
-				]
-				build()
-				return this
-			},
-
-			// 深层群系
-			deep: function () {
-				structure.biomes = [
-					"#forge:is_cave",
-					"#minecraft:is_deep_ocean"
-				]
-				build()
-				return this
-			},
-
-			// 下界
-			nether: function () {
+			/**
+			 * 结构在下界生成
+			 * 
+			 * @param {Number} weight 比重
+			 * @returns 
+			 */
+			nether: function (weight) {
 				let netherStructure = {
 					type: "minecraft:jigsaw",
-					biomes: [
-						"#minecraft:is_nether"
-					],
+					biomes: "#create_rns:has_deposit_nether",
 					size: 1,
-					start_pool: `${CmiCore.MODID}:${type}/${name}`,
+					start_pool: `${CmiCore.MODID}:ore_node/${name}`,
 					step: "underground_structures",
 					start_height: {
 						type: "uniform",
@@ -186,32 +104,61 @@ ServerEvents.highPriorityData((event) => {
 					terrain_adaptation: "beard_thin",
 					use_expansion_hack: false
 				}
-				event.addJson(`cmi:worldgen/structure/${type}/${name}`, netherStructure)
-				event.addJson(`cmi:worldgen/structure_set/${type}/${name}`, structureSet)
-				event.addJson(`cmi:worldgen/template_pool/${type}/${name}`, templatePool)
+				// 结构集
+				netherStructures.push(
+					{
+						structure: `${CmiCore.MODID}:ore_node/${name}`,
+						weight: weight
+					}
+				)
+				event.addJson(`cmi:worldgen/structure/ore_node/${name}`, netherStructure)
+				event.addJson(`cmi:worldgen/template_pool/ore_node/${name}`, templatePool)
 				return this
 			},
 
-			// 末地
-			end: function () {
-				structure.biomes = [
-					"#minecraft:is_end"
-				]
+
+			/**
+			 * 结构在末地生成
+			 * 
+			 * @param {Number} weight 比重
+			 * @returns 
+			 */
+			end: function (weight) {
+				structure.biomes = "#minecraft:is_end"
 				build()
 				return this
 			},
 
-			// 月球
-			moon: function () {
+
+			/**
+			 * 结构在月球生成
+			 * 
+			 * @param {Number} weight 比重
+			 * @returns 
+			 */
+			moon: function (weight) {
 				structure.biomes = [
 					"ad_astra:lunar_wastelands"
 				]
+				// 结构集
+				moonStructures.push(
+					{
+						structure: `${CmiCore.MODID}:ore_node/${name}`,
+						weight: weight
+					}
+				)
 				build()
 				return this
 			},
 
-			// 核能星球
-			dionysus: function () {
+
+			/**
+			 * 结构在核能星球生成
+			 * 
+			 * @param {Number} weight 比重
+			 * @returns 
+			 */
+			dionysus: function (weight) {
 				structure.biomes = [
 					"alexscaves:toxic_caves"
 				]
@@ -219,8 +166,14 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
-			// 火星
-			mars: function () {
+
+			/**
+			 * 结构在火星生成
+			 * 
+			 * @param {Number} weight 比重
+			 * @returns 
+			 */
+			mars: function (weight) {
 				structure.biomes = [
 					"ad_astra:martian_wastelands",
 					"ad_astra:martian_polar_caps",
@@ -230,7 +183,13 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
-			// 电磁星球
+
+			/**
+			 * 结构在磁星生成
+			 * 
+			 * @param {Number} weight 比重
+			 * @returns 
+			 */
 			hephaestus: function () {
 				structure.biomes = [
 					"alexscaves:magnetic_caves"
@@ -270,49 +229,92 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	// 月球铂矿点
-	addStructureGen("ore_node", "platinum_node", 376345692, 70, 50)
-		.moon()
+	addNodeGen("platinum_node")
+		.moon(30)
 
 	// 月球起司矿点
-	addStructureGen("ore_node", "cheese_node", 114514191, 70, 50)
+	addNodeGen("cheese_node")
+		.moon(10)
 
 	// 金矿点
-	addStructureGen("ore_node", "gold_node", 763456928, 70, 50)
-		.dryland()
+	addNodeGen("gold_node")
+		.overworld(50)
 
 	// 铁矿点
-	addStructureGen("ore_node", "iron_node", 463456928, 70, 50)
-		.forest()
+	addNodeGen("iron_node")
+		.overworld(100)
 
 	// 铜矿点
-	addStructureGen("ore_node", "copper_node", 963456928, 70, 50)
-		.plain()
+	addNodeGen("copper_node")
+		.overworld(100)
 
 	// 锌矿点
-	addStructureGen("ore_node", "zinc_node", 187656928, 70, 50)
-		.mountain()
+	addNodeGen("zinc_node")
+		.overworld(70)
 
 	// 煤矿点
-	addStructureGen("ore_node", "coal_node", 391035412, 70, 50)
-		.plain()
+	addNodeGen("coal_node")
+		.overworld(100)
 
 	// 锡矿点
-	addStructureGen("ore_node", "tin_node", 172345891, 70, 50)
-		.wetland()
+	addNodeGen("tin_node")
+		.overworld(30)
 
 	// 油页岩矿点
-	addStructureGen("ore_node", "oil_shale_node", 819248123, 70, 50)
-		.dryland()
+	addNodeGen("oil_shale_node")
+		.overworld(40)
 
 	// 银矿点
-	addStructureGen("ore_node", "silver_node", 238591935, 70, 50)
-		.snowy()
+	addNodeGen("silver_node")
+		.overworld(30)
 
 	// 镍矿点
-	addStructureGen("ore_node", "nickel_node", 486941840, 70, 50)
-		.wetland()
+	addNodeGen("nickel_node")
+		.overworld(40)
+
+	// 红石矿点
+	addNodeGen("redstone_node")
+		.overworld(70)
+
+	// 铅矿点
+	addNodeGen("lead_node")
+		.overworld(80)
 
 	// 钒矿点
-	addStructureGen("ore_node", "vanadium_node", 482109189, 70, 50)
-		.nether()
+	addNodeGen("vanadium_node")
+		.nether(40)
+
+	let structureSet = {
+		structures: structures,
+		placement: {
+			type: "minecraft:random_spread",
+			salt: 376345692,
+			spacing: 20,
+			separation: 15
+		}
+	}
+
+	let netherStructureSet = {
+		structures: netherStructures,
+		placement: {
+			type: "minecraft:random_spread",
+			salt: 395602385,
+			spacing: 20,
+			separation: 15
+		}
+	}
+
+	let moonStructureSet = {
+		structures: moonStructures,
+		placement: {
+			type: "minecraft:random_spread",
+			salt: 698217869,
+			spacing: 20,
+			separation: 15
+		}
+	}
+
+	event.addJson("cmi:worldgen/structure_set/ore_nodes", structureSet)
+	event.addJson("cmi:worldgen/structure_set/nether_ore_nodes", netherStructureSet)
+	event.addJson("cmi:worldgen/structure_set/moon_ore_nodes", moonStructureSet)
 })

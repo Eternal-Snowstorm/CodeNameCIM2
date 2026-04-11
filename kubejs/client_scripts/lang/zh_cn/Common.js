@@ -65,22 +65,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} key 
 	 * @param {String} value 
 	 */
-	function addSolutionLang(key, value, tooltip) {
-		event.add(`item.${CmiCore.MODID}.${key}`, value)
-		event.add(`item.${CmiCore.MODID}.${key}_solution_bucket`, `${value}溶液桶`)
-		event.add(`tooltip.${CmiCore.MODID}.${key}`, tooltip)
-		event.add(`tooltip.${CmiCore.MODID}.${key}_solution_bucket`, tooltip)
-		event.add(`block.${CmiCore.MODID}.${key}_solution`, `${value}溶液`)
-		event.add(`fluid.${CmiCore.MODID}.${key}_solution`, `${value}溶液`)
-	}
-
-	/**
-	 * 
-	 * @param {String} key 
-	 * @param {String} value 
-	 */
-	function addHeatedLang(key, value) {
-		event.add(`create.recipe.heat_requirement.${key}`, value)
+	function addDepositLang(key, value) {
+		event.add(`cmi.structure.ore_node/${key}_node`, `${value}矿藏节点`)
 	}
 
 	addGasLang("sulfide_gas_mixture", "硫化物混合气")
@@ -118,58 +104,15 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addMusicDiscLang("mechanism", "Mechanism", "DontkillBelalus")
 
-	// function addMBDMachineLang(key, value) {
-	// 	event.add(`block.mBd2.${key}`, value)
-	// }
-	// function addMBDMachineRecipeLang(key, value) {
-	// 	event.add(`mBd2.${key}`, value)
-	// }
-	// addItemLang("general_processor", "通用处理器")
-	// addItemLang("printed_general_processor", "通用电路板")
-
-	// addSolutionLang("feso4", "硫酸亚铁", "FeSO₄")
-	// addSolutionLang("fecl2", "氯化亚铁", "FeCl₂")
-	// addSolutionLang("cuso4", "硫酸铜", "CuSO₄")
-	// addSolutionLang("cucl2", "氯化铜", "CuCl₂")
-	// addSolutionLang("al2so43", "硫酸铝", "Al₂(SO₄)₃")
-	// addSolutionLang("alcl3", "氯化铝", "AlCl₃")
-	// addSolutionLang("pbcl2", "氯化铅", "PbCl₂")
-	// addSolutionLang("pbso4", "硫酸铅", "PbSO₄")
-	// addSolutionLang("sncl2", "氯化亚锡", "SnCl₂")
-	// addSolutionLang("snso4", "硫酸亚锡", "SnSO₄")
-	// addSolutionLang("zncl2", "氯化锌", "ZnCl₂")
-	// addSolutionLang("znso4", "硫酸锌", "ZnSO₄")
-	// addSolutionLang("aucl3", "氯化金", "AuCl₃")
-	// addSolutionLang("au2so43", "硫酸金", "Au₂(SO₄)₃")
-	// addSolutionLang("agcl", "氯化银", "AgCl")
-	// addSolutionLang("ag2so4", "硫酸银", "Ag₂SO₄")
-	// addSolutionLang("crcl3", "氯化铬", "CrCl₃")
-	// addSolutionLang("cr2so43", "硫酸铬", "Cr₂(SO₄)₃")
-	// addSolutionLang("vocl2", "二氯氧钒", "VOCl₂")
-	// addSolutionLang("voso4", "硫酸氧钒", "VOSO₄")
-	// addSolutionLang("uo2cl2", "氯化铀酰", "UO₂Cl₂")
-	// addSolutionLang("uo2so4", "硫酸铀酰", "UO₂SO₄")
-	// addSolutionLang("nicl2", "氯化镍", "NiCl₂")
-	// addSolutionLang("niso4", "硫酸镍", "NiSO₄")
-	// addSolutionLang("cocl2", "氯化钴", "CoCl₂")
-	// addSolutionLang("coso4", "硫酸钴", "CoSO₄")
-	// addSolutionLang("oscl3", "氯化锇", "OsCl₃")
-	// addSolutionLang("os2so43", "硫酸锇", "Os₂(SO₄)₃")
-	// addSolutionLang("ptcl4", "氯化铂", "PtCl₄")
-	// addSolutionLang("ptso42", "硫酸铂", "Pt(SO₄)₂")
-	// addSolutionLang("mgcl2", "氯化镁", "MgCl₂")
-	// addSolutionLang("mgso4", "硫酸镁", "MgSO₄")
-	// addSolutionLang("kcl", "氯化钾", "KCl")
-	// addSolutionLang("k2so4", "硫酸钾", "K₂SO₄")
-	// addSolutionLang("cacl2", "氯化钙", "CaCl₂")
-	// addSolutionLang("caso4", "硫酸钙", "CaSO₄")
-	// addSolutionLang("nacl", "氯化钠", "NaCl")
-	// addSolutionLang("na2so4", "硫酸钠", "Na₂SO₄")
-
-	// addMBDMachineLang("proxy_part_block", "多方块机器部件方块")
-	// addMBDMachineLang("accelerator_energy_input", "大型构件催生器能量输入口")
-	// addMBDMachineLang("accelerator_item_input", "大型构件催生器物品输入口")
-	// addMBDMachineLang("accelerator_item_output", "大型构件催生器物品输出口")
-	// addMBDMachineLang("accelerator", "大型构件催生器控制器")
-	// addMBDMachineRecipeLang("accelerator", "大型构件催生器")
+	addDepositLang("coal", "煤炭")
+	addDepositLang("copper", "铜")
+	addDepositLang("gold", "金")
+	addDepositLang("iron", "铁")
+	addDepositLang("lead", "铅")
+	addDepositLang("nickel", "镍")
+	addDepositLang("oil_shale", "油页岩")
+	addDepositLang("redstone", "红石")
+	addDepositLang("silver", "银")
+	addDepositLang("tin", "锡")
+	addDepositLang("zinc", "锌")
 })
