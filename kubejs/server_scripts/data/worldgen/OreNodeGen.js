@@ -87,16 +87,7 @@ ServerEvents.highPriorityData((event) => {
 			// 山地类生物群系
 			mountain: function () {
 				structure.biomes = [
-					"minecraft:jagged_peaks",
-					"minecraft:frozen_peaks",
-					"minecraft:stony_peaks",
-					"minecraft:meadow",
-					"minecraft:cherry_grove",
-					"minecraft:grove",
-					"minecraft:snowy_slopes",
-					"minecraft:windswept_hills",
-					"minecraft:windswept_gravelly_hills",
-					"minecraft:windswept_forest"
+					"#forge:is_mountain"
 				]
 				build()
 				return this
@@ -105,10 +96,7 @@ ServerEvents.highPriorityData((event) => {
 			// 雪原类生物群系
 			snowy: function () {
 				structure.biomes = [
-					"minecraft:frozen_peaks",
-					"minecraft:snowy_slopes",
-					"minecraft:snowy_taiga",
-					"minecraft:snowy_plains"
+					"#forge:is_snowy"
 				]
 				build()
 				return this
@@ -139,12 +127,7 @@ ServerEvents.highPriorityData((event) => {
 			// 湿地类生物群系
 			wetland: function () {
 				structure.biomes = [
-					"minecraft:swamp",
-					"minecraft:mangrove_swamp",
-					"minecraft:beach",
-					"minecraft:snowy_beach",
-					"minecraft:stony_shore",
-					"minecraft:mushroom_fields"
+					"forge:is_wet/overworld"
 				]
 				build()
 				return this
@@ -153,10 +136,7 @@ ServerEvents.highPriorityData((event) => {
 			// 平原类生物群系
 			plain: function () {
 				structure.biomes = [
-					"minecraft:plains",
-					"sunflower_plains",
-					"minecraft:snowy_plains",
-					"minecraft:ice_spikes"
+					"#forge:is_plains"
 				]
 				build()
 				return this
@@ -165,12 +145,7 @@ ServerEvents.highPriorityData((event) => {
 			// 干旱类生物群系
 			dryland: function () {
 				structure.biomes = [
-					"minecraft:savanna",
-					"minecraft:windswept_savanna",
-					"minecraft:desert",
-					"minecraft:badlands",
-					"minecraft:eroded_badlands",
-					"minecraft:wooded_badlands"
+					"forge:is_dry/overworld"
 				]
 				build()
 				return this
@@ -179,14 +154,8 @@ ServerEvents.highPriorityData((event) => {
 			// 深层群系
 			deep: function () {
 				structure.biomes = [
-					"minecraft:deep_ocean",
-					"minecraft:deep_lukewarm_ocean",
-					"minecraft:deep_cold_ocean",
-					"minecraft:deep_frozen_ocean",
-					"minecraft:dripstone_caves",
-					"minecraft:lush_caves",
-					"minecraft:deep_dark",
-					"cmi:andesite_cave"
+					"#forge:is_cave",
+					"#minecraft:is_deep_ocean"
 				]
 				build()
 				return this
@@ -197,11 +166,7 @@ ServerEvents.highPriorityData((event) => {
 				let netherStructure = {
 					type: "minecraft:jigsaw",
 					biomes: [
-						"minecraft:nether_wastes",
-						"minecraft:soul_sand_valley",
-						"minecraft:crimson_forest",
-						"minecraft:warped_forest",
-						"minecraft:basalt_deltas"
+						"#minecraft:is_nether"
 					],
 					size: 1,
 					start_pool: `${CmiCore.MODID}:${type}/${name}`,
@@ -230,9 +195,7 @@ ServerEvents.highPriorityData((event) => {
 			// 末地
 			end: function () {
 				structure.biomes = [
-					"minecraft:small_end_islands",
-					"minecraft:end_midlands",
-					"minecraft:end_highlands"
+					"#minecraft:is_end"
 				]
 				build()
 				return this

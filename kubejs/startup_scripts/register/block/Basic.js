@@ -114,9 +114,9 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.WRENCH_PICKUP)
 
-	// 陨石外壳
+	// 智能外壳
 	addBlock("smart_casing")
-		.textureAll(`${CmiCore.MODID}:block/casing/ae2/smart`)
+		.model(`${CmiCore.MODID}:block/casing/ae2/smart`)
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
