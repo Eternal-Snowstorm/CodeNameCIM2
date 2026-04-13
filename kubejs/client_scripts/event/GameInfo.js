@@ -4,7 +4,7 @@ ClientEvents.loggedIn((event) => {
 	// 初始化isDeveloper的boolean
 	global.isDeveloper = false
 
-	global.debugUserName.forEach((debugUser) => {
+	DebugUserManager.getAllDebugUsers().forEach((debugUser) => {
 		// 设置isDeveloper的boolean
 		if (player.username === debugUser) {
 			global.isDeveloper = true
@@ -40,7 +40,7 @@ ClientEvents.loggedIn((event) => {
 					x: 10,
 					y: "$screenH - 20",
 					alignX: "left",
-					text: global.modPackMainVersion,
+					text: CmiGlobal.getModPackMainVersion(),
 					scale: 1.0
 				}
 			})
