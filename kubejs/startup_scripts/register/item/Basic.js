@@ -231,6 +231,4 @@ StartupEvents.registry("item", (event) => {
 			.tag(`cmi:casing_framework`)
 			.tag(`cmi:casing_framework/${frame}`)
 	})
-
-	event.create("", "")
 })
