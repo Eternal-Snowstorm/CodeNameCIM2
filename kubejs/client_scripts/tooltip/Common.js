@@ -75,21 +75,20 @@ ItemEvents.tooltip((event) => {
 		"dust",
 		"rod"
 	]
-	materialTypeList.forEach((type) => {
-		global.metalGroup.forEach((material) => {
-			/**
-			 * @type {number}
-			 */
-			let mp = global.meltingPoints[material]
 
-			if (typeof mp === "number") {
+	materialTypeList.forEach((type) => {
+		CmiMetalRegistry.getAll().forEach((metal) => {
+
+			let mp = metal.getMeltingPoint()
+
+			if (mp > 0) {
 				let translatable = Component.translatable(
 					"tooltip.cmi.meltingPoint",
 					mp,
 					NebulaLibs.toFahrenheit(mp)
 				).yellow()
 
-				event.add(`#forge:${type}s/${material}`, translatable)
+				event.add(`#forge:${type}s/${metal.getId()}`, translatable)
 			}
 		})
 	})
@@ -114,20 +113,18 @@ ItemEvents.tooltip((event) => {
 	})
 
 	// 碎矿单独循环一次
-	global.metalGroup.forEach((material) => {
-		/**
-		 * @type {number}
-		 */
-		let mp = global.meltingPoints[material]
+	CmiMetalRegistry.getAll().forEach((metal) => {
 
-		if (typeof mp === "number") {
+		let mp = metal.getMeltingPoint()
+
+		if (mp > 0) {
 			let translatable = Component.translatable(
 				"tooltip.cmi.meltingPoint",
 				mp,
 				NebulaLibs.toFahrenheit(mp)
 			).yellow()
 
-			event.add(`#create:crushed_raw_materials/${material}`, translatable)
+			event.add(`#create:crushed_raw_materials/${metal.getId()}`, translatable)
 		}
 	})
 })
