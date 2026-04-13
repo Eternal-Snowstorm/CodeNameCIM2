@@ -139,7 +139,7 @@ let metals = {
 		n: "t"
 	},
 	quantum_alloy: {
-
+		t: 1024
 	},
 	queens_slime: {
 		t: 1193,
