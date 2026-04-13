@@ -136,10 +136,6 @@ ServerEvents.tags("block", (event) => {
 			"@pipez",
 			"@rechiseledcreate",
 
-			"ad_astra:steel_cable",
-			"ad_astra:desh_cable",
-			"ad_astra:desh_fluid_pipe",
-			"ad_astra:ostrum_fluid_pipe",
 			"ad_astra:launch_pad",
 			"ad_astra:cable_duct",
 			"ad_astra:fluid_pipe_duct",
