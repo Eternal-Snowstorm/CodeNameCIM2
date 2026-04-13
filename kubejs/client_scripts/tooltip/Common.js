@@ -78,7 +78,6 @@ ItemEvents.tooltip((event) => {
 
 	materialTypeList.forEach((type) => {
 		CmiMetalRegistry.getAll().forEach((metal) => {
-
 			let mp = metal.getMeltingPoint()
 
 			if (mp > 0) {
@@ -114,7 +113,6 @@ ItemEvents.tooltip((event) => {
 
 	// 碎矿单独循环一次
 	CmiMetalRegistry.getAll().forEach((metal) => {
-
 		let mp = metal.getMeltingPoint()
 
 		if (mp > 0) {
