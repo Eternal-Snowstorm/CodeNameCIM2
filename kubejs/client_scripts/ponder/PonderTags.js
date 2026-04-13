@@ -61,24 +61,6 @@ Ponder.tags((event) => {
 		"mekanism:cardboard_box"
 	])
 
-	new PonderTag("tconstruct", "tconstruct:smeltery_controller", [
-		"tconstruct:seared_faucet",
-		"tconstruct:scorched_faucet",
-		"tconstruct:seared_melter",
-		"tconstruct:seared_heater",
-		"tconstruct:seared_fuel_tank",
-		"tconstruct:seared_drain",
-		"tconstruct:seared_bricks",
-		"tconstruct:foundry_controller",
-		"tconstruct:scorched_bricks",
-		"tconstruct:scorched_drain",
-		"tconstruct:scorched_fuel_tank",
-		"tconstruct:smeltery_controller",
-		"tconstruct:seared_fuel_tank",
-		"tconstruct:seared_drain",
-		"tconstruct:seared_bricks"
-	])
-
 	new PonderTag("ae2", "ae2:controller", [
 		"ae2:fluix_glass_cable",
 		"ae2:condenser",
