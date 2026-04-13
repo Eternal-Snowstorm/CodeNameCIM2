@@ -64,17 +64,6 @@ ItemEvents.tooltip((event) => {
 		})
 	}
 
-	// 地质锤的tooltip
-	event.addAdvanced("cmi:geological_hammer",
-		(item, advanced, tooltip) => {
-			if (global.isDeveloper) {
-				tooltip.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer1"))
-				tooltip.add(Component.translatable("tooltip.cmi.geographycal_hammer.developer2"))
-			} else {
-				tooltip.add(Component.translatable("tooltip.cmi.geographycal_hammer.not_developer"))
-			}
-		})
-
 	// 初始套件的Tooltip
 	// event.addAdvanced("cmi:initial_item_kit",
 	// 	(item, advanced, tooltip) => {
