@@ -75,7 +75,6 @@ ItemEvents.tooltip((event) => {
 		"dust",
 		"rod"
 	]
-
 	materialTypeList.forEach((type) => {
 		CmiMetalRegistry.getAll().forEach((metal) => {
 			let mp = metal.getMeltingPoint()
