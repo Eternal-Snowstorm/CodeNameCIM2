@@ -5,11 +5,7 @@ ServerEvents.highPriorityData((event) => {
 
 	/**
 	 * 
-	 * @param {String} type 结构类型
 	 * @param {String} name 结构名称
-	 * @param {Number} salt 密码盐
-	 * @param {Number} spacing 平均距离
-	 * @param {Number} separation 最小距离
 	 * @returns 
 	 */
 	function addNodeGen(name) {
@@ -17,8 +13,8 @@ ServerEvents.highPriorityData((event) => {
 		let structure = {
 			type: "minecraft:jigsaw",
 			biomes: [],
-			size: 1,
-			start_pool: `${CmiCore.MODID}:ore_node/${name}`,
+			size: 2,
+			start_pool: `${CmiCore.MODID}:ore_node/${name}_node`,
 			step: "surface_structures",
 			start_height: {
 				absolute: 0
@@ -31,6 +27,41 @@ ServerEvents.highPriorityData((event) => {
 		}
 
 		// 结构池
+		let depTemplatePool = {
+			name: `${CmiCore.MODID}:deposit_${name}`,
+			fallback: "minecraft:empty",
+			elements: [
+				{
+					element: {
+						location: `${CmiCore.MODID}:deposit/${name}/large`,
+						element_type: "minecraft:single_pool_element",
+						processors: "minecraft:empty",
+						projection: "rigid"
+					},
+					weight: 2
+				},
+				{
+					element: {
+						location: `${CmiCore.MODID}:deposit/${name}/medium`,
+						element_type: "minecraft:single_pool_element",
+						processors: "minecraft:empty",
+						projection: "rigid"
+					},
+					weight: 2
+				},
+				{
+					element: {
+						location: `${CmiCore.MODID}:deposit/${name}/small`,
+						element_type: "minecraft:single_pool_element",
+						processors: "minecraft:empty",
+						projection: "rigid"
+					},
+					weight: 3
+				}
+			]
+		}
+
+		// 结构池
 		let templatePool = {
 			name: `${CmiCore.MODID}:${name}`,
 			fallback: "minecraft:empty",
@@ -38,7 +69,7 @@ ServerEvents.highPriorityData((event) => {
 				{
 					weight: 1,
 					element: {
-						location: `${CmiCore.MODID}:ore_node/${name}`,
+						location: `${CmiCore.MODID}:ore_node/${name}_node`,
 						element_type: "minecraft:single_pool_element",
 						processors: "minecraft:empty",
 						projection: "rigid"
@@ -49,8 +80,9 @@ ServerEvents.highPriorityData((event) => {
 
 		// 生成数据包
 		function build() {
-			event.addJson(`cmi:worldgen/structure/ore_node/${name}`, structure)
-			event.addJson(`cmi:worldgen/template_pool/ore_node/${name}`, templatePool)
+			event.addJson(`cmi:worldgen/structure/ore_node/${name}_node`, structure)
+			event.addJson(`cmi:worldgen/template_pool/ore_node/${name}_node`, templatePool)
+			event.addJson(`cmi:worldgen/template_pool/deposit_${name}`, depTemplatePool)
 			return this
 		}
 
@@ -67,7 +99,7 @@ ServerEvents.highPriorityData((event) => {
 				// 结构集
 				structures.push(
 					{
-						structure: `${CmiCore.MODID}:ore_node/${name}`,
+						structure: `${CmiCore.MODID}:ore_node/${name}_node`,
 						weight: weight
 					}
 				)
@@ -86,8 +118,8 @@ ServerEvents.highPriorityData((event) => {
 				let netherStructure = {
 					type: "minecraft:jigsaw",
 					biomes: "#create_rns:has_deposit_nether",
-					size: 1,
-					start_pool: `${CmiCore.MODID}:ore_node/${name}`,
+					size: 2,
+					start_pool: `${CmiCore.MODID}:ore_node/${name}_node`,
 					step: "underground_structures",
 					start_height: {
 						type: "uniform",
@@ -107,12 +139,14 @@ ServerEvents.highPriorityData((event) => {
 				// 结构集
 				netherStructures.push(
 					{
-						structure: `${CmiCore.MODID}:ore_node/${name}`,
+						structure: `${CmiCore.MODID}:ore_node/${name}_node`,
 						weight: weight
 					}
 				)
-				event.addJson(`cmi:worldgen/structure/ore_node/${name}`, netherStructure)
-				event.addJson(`cmi:worldgen/template_pool/ore_node/${name}`, templatePool)
+
+				event.addJson(`cmi:worldgen/structure/ore_node/${name}_node`, netherStructure)
+				event.addJson(`cmi:worldgen/template_pool/ore_node/${name}_node`, templatePool)
+				event.addJson(`cmi:worldgen/template_pool/deposit_${name}`, depTemplatePool)
 				return this
 			},
 
@@ -143,7 +177,7 @@ ServerEvents.highPriorityData((event) => {
 				// 结构集
 				moonStructures.push(
 					{
-						structure: `${CmiCore.MODID}:ore_node/${name}`,
+						structure: `${CmiCore.MODID}:ore_node/${name}_node`,
 						weight: weight
 					}
 				)
@@ -229,59 +263,67 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	// 月球铂矿点
-	addNodeGen("platinum_node")
+	addNodeGen("platinum")
 		.moon(30)
 
 	// 月球起司矿点
-	addNodeGen("cheese_node")
+	addNodeGen("cheese")
 		.moon(10)
 
 	// 金矿点
-	addNodeGen("gold_node")
+	addNodeGen("gold")
 		.overworld(50)
 
 	// 铁矿点
-	addNodeGen("iron_node")
+	addNodeGen("iron")
 		.overworld(100)
 
 	// 铜矿点
-	addNodeGen("copper_node")
+	addNodeGen("copper")
 		.overworld(100)
 
 	// 锌矿点
-	addNodeGen("zinc_node")
+	addNodeGen("zinc")
 		.overworld(70)
 
 	// 煤矿点
-	addNodeGen("coal_node")
+	addNodeGen("coal")
 		.overworld(100)
 
 	// 锡矿点
-	addNodeGen("tin_node")
+	addNodeGen("tin")
 		.overworld(30)
 
 	// 油页岩矿点
-	addNodeGen("oil_shale_node")
+	addNodeGen("oil_shale")
 		.overworld(40)
 
 	// 银矿点
-	addNodeGen("silver_node")
+	addNodeGen("silver")
 		.overworld(30)
 
 	// 镍矿点
-	addNodeGen("nickel_node")
+	addNodeGen("nickel")
 		.overworld(40)
 
 	// 红石矿点
-	addNodeGen("redstone_node")
+	addNodeGen("redstone")
 		.overworld(70)
 
 	// 铅矿点
-	addNodeGen("lead_node")
+	addNodeGen("lead")
 		.overworld(80)
 
 	// 钒矿点
-	addNodeGen("vanadium_node")
+	addNodeGen("vanadium")
+		.nether(40)
+
+	// 石英
+	addNodeGen("quartz")
+		.nether(80)
+
+	// 钴矿点
+	addNodeGen("cobalt")
 		.nether(40)
 
 	let structureSet = {

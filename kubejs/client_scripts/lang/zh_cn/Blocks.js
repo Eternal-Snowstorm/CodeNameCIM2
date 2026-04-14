@@ -14,7 +14,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addOreNodeLang(key, value) {
-		event.add(`block.${CmiCore.MODID}.${key}_ore_node`, `${value}矿物节点`)
+		event.add(`block.${CmiCore.MODID}.${key}_deposit_block`, `${value}矿藏`)
 	}
 
 	/**
@@ -79,18 +79,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang(`broken_modem`, "损坏的调制解调器")
 	addBlockLang("piggy_bank", "破旧的存钱罐")
 
-	addOreNodeLang("uranium", "铀")
-	addOreNodeLang("copper", "铜")
-	addOreNodeLang("zinc", "锌")
-	addOreNodeLang("iron", "铁")
-	addOreNodeLang("gold", "金")
-	addOreNodeLang("silver", "银")
-	addOreNodeLang("nickel", "镍")
-	addOreNodeLang("vanadium", "钒")
-	addOreNodeLang("platinum", "铂")
+	addOreNodeLang("vanadium", "钒矿")
+	addOreNodeLang("platinum", "铂矿")
 	addOreNodeLang("cheese", "奶酪")
 	addOreNodeLang("coal", "煤炭")
-	addOreNodeLang("tin", "锡")
 	addOreNodeLang("oil_shale", "油页岩")
 
 	addMachineLang("flash_disk_writer", "闪存盘写入器")
