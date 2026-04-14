@@ -101,6 +101,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addStructureLang("ore_node.platinum_node", "铂矿物节点")
 	addStructureLang("ore_node.tin_node", "锡矿物节点")
 	addStructureLang("ore_node.zinc_node", "锌矿物节点")
+	addStructureLang("ore_node.quartz_node", "石英矿物节点")
+	addStructureLang("ore_node.cobalt_node", "钴矿物节点")
+	addStructureLang("ore_node.vanadium_node", "钒矿物节点")
 
 	addMusicDiscLang("mechanism", "Mechanism", "DontkillBelalus")
 
