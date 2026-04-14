@@ -19,6 +19,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeOutput = [
+		"pipez:filter_destination_tool",
 		"vintageimprovements:belt_grinder",
 		"create:track_signal",
 		"create:track_observer",
