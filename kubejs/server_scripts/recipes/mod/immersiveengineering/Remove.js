@@ -17,7 +17,9 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:blueprint/mold_plate",
 		"immersiveengineering:crafting/cokebrick",
 		"immersiveengineering:crafting/redstone_acid",
-		"immersiveindustry:chemical"
+		"immersiveengineering:crafting/sawdust",
+		"immersiveindustry:chemical",
+		"immersiveengineering:crafting/paper_from_sawdust"
 	]
 	removedRecipeIds.forEach((id) => {
 		event.remove({

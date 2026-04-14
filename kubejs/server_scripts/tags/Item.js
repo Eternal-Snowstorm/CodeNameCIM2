@@ -31,7 +31,7 @@ ServerEvents.tags("item", (event) => {
 	event.get("create:mechanisms/nuclear")
 		.add("cmi:nuclear_mechanism")
 
-	global.dyeColorGroup.forEach((color) => {
+	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		event.get(`forge:dyes/${color}`)
 			.add("cmi:colorful_mechanism")
 	})

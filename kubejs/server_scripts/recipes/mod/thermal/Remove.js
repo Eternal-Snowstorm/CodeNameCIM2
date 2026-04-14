@@ -16,7 +16,8 @@ ServerEvents.recipes((event) => {
         "thermal:compat/immersiveengineering/smelter_ie_aluminum_ore",
         "thermal:storage/sugar_cane_block",
         "thermal:compat/create/smelter_create_alloy_andesite_alloy",
-        "thermal:fuels/magmatic/magmatic_lava"
+        "thermal:fuels/magmatic/magmatic_lava",
+		"thermal:storage/sawdust_block"
     ]
     removeRecipeIds.forEach((id) => {
         event.remove({
