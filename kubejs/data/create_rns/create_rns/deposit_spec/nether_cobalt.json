@@ -1,6 +1,6 @@
 {
 	"scanner_icon_item": "tconstruct:raw_cobalt",
 	"map_icon_item": "tconstruct:raw_cobalt",
-	"structure": "create_rns:deposit_nether_cobalt",
-	"dimension": "minecraft:null"
+	"structure": "cmi:ore_node/cobalt_node",
+	"dimension": "minecraft:the_nether"
 }

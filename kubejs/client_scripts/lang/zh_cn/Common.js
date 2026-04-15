@@ -118,4 +118,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addDepositLang("silver", "银")
 	addDepositLang("tin", "锡")
 	addDepositLang("zinc", "锌")
+	addDepositLang("quartz", "石英")
+	addDepositLang("cobalt", "钴")
+	addDepositLang("vanadium", "钒")
 })

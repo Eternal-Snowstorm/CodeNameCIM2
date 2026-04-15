@@ -1,6 +1,6 @@
 {
 	"scanner_icon_item": "minecraft:quartz",
 	"map_icon_item": "minecraft:quartz",
-	"structure": "create_rns:deposit_nether_quartz",
-	"dimension": "minecraft:null"
+	"structure": "cmi:ore_node/quartz_node",
+	"dimension": "minecraft:the_nether"
 }
