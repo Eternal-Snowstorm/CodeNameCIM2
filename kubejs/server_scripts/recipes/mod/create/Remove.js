@@ -49,7 +49,8 @@ ServerEvents.recipes((event) => {
 		"createaddition:compat/immersiveengineering/fabric_sail",
 		"create:crafting/kinetics/white_sailfrom_conversion",
 		"create_factory_abstractions:empty",
-		"createaddition:compat/immersiveengineering/crushing/steel_ingot"
+		"createaddition:compat/immersiveengineering/crushing/steel_ingot",
+		"create_factory_logistics:sequenced_assembly/fluid_mechanism"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

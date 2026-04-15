@@ -36,6 +36,12 @@ ServerEvents.recipes((event) => {
 		B: Mechanism.WOODEN.COM
 	}).id("ratatouille:oven")
 
+	// 物品舱口
+	kubejs.shapeless("2x create:item_hatch", [
+		"2x #forge:plates/andesite_alloy",
+		"#forge:plates/industrial_iron"
+	]).id("create:crafting/logistics/item_hatch")
+
 	// 物品保险库
 	kubejs.shaped("create:item_vault", [
 		"A",
@@ -112,4 +118,72 @@ ServerEvents.recipes((event) => {
 		Mechanism.ANDESITE.COM,
 		"#forge:plates/brass"
 	]).id('create:crafting/kinetics/smart_chute')
+
+	// 打包机
+	kubejs.shaped("2x create:packager", [
+		"PMP",
+		"IBI",
+		"PCP"
+	], {
+		P: "#forge:plates/andesite_alloy",
+		M: Mechanism.ANDESITE.COM,
+		I: "#forge:plates/industrial_iron",
+		B: "create:cardboard_block",
+		C: Casing.ANDESITE
+	}).id("create:crafting/logistics/packager")
+
+	// 蛙港
+	kubejs.shaped("create:package_frogport", [
+		"PP ",
+		"BMS",
+		" C "
+	], {
+		P: "#forge:plates/industrial_iron",
+		B: "#forge:slimeballs",
+		M: Mechanism.ANDESITE.COM,
+		S: "#vintageimprovements:springs/andesite",
+		C: Casing.ANDESITE
+	}).id("create:crafting/logistics/package_frogport")
+
+	// 发信器
+	// 红石
+	kubejs.shaped("2x create:redstone_link", [
+		"T",
+		"M",
+		"C"
+	], {
+		T: "create:transmitter",
+		M: Mechanism.REDSTONE.COM,
+		C: Casing.ANDESITE
+	}).id("create:crafting/logistics/redstone_link")
+	// 仓储
+	kubejs.shaped("2x create:stock_link", [
+		"T",
+		"M",
+		"C"
+	], {
+		T: "create:transmitter",
+		M: Mechanism.WOODEN.COM,
+		C: Casing.ANDESITE
+	}).id("create:crafting/logistics/stock_link")
+	// 网络
+	kubejs.shaped("2x create_factory_logistics:network_link", [
+		"T",
+		"M",
+		"C"
+	], {
+		T: "create:transmitter",
+		M: Mechanism.PRECISION.COM,
+		C: Casing.BRASS
+	}).id("create_factory_logistics:network_link")
+	// 显示
+	kubejs.shaped("2x create:display_link", [
+		"T",
+		"M",
+		"C"
+	], {
+		T: "create:transmitter",
+		M: Mechanism.PHOTO.COM,
+		C: Casing.BRASS
+	}).id("create:crafting/logistics/display_link")
 })

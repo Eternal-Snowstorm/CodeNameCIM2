@@ -25,4 +25,18 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("4x cmi:peat", [
 		"cmi:peat_block"
 	])
+
+	// 合成蓝图
+	kubejs.shapeless("create:crafting_blueprint", [
+		"#forge:nuggets/iron",
+		"tconstruct:pattern",
+		"minecraft:paper",
+		"minecraft:paper"
+	]).id("create:crafting/appliances/crafting_blueprint")
+
+	// 蓝图
+	kubejs.shapeless("create:empty_schematic", [
+		"#forge:nuggets/iron",
+		"minecraft:paper"
+	]).id("create:crafting/schematics/empty_schematic")
 })

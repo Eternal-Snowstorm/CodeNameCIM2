@@ -27,7 +27,7 @@ StartupEvents.registry("item", (event) => {
 	// 黏血球
 	addItem("blood_slime_ball")
 		.texture(`${CmiCore.MODID}:item/material/blood_slime_ball`)
-		.tag("forge:slimeball")
+		.tag("forge:slimeballs")
 		.tag("forge:slimeball/blood")
 
 	// 淤泥提取物

@@ -269,6 +269,28 @@ ServerEvents.recipes((event) => {
 		C: Casing.ANDESITE
 	}).id("vintageimprovements:craft/centrifuge")
 
+	// 发条轴承
+	kubejs.shaped("create:clockwork_bearing", [
+		"P",
+		"C",
+		"M"
+	], {
+		P: "#forge:plates/andesite_alloy",
+		C: Casing.BRASS,
+		M: Mechanism.ANDESITE.COM
+	}).id("create:crafting/kinetics/clockwork_bearing")
+
+	// 升降机滑轮
+	kubejs.shaped("create:elevator_pulley", [
+		"C",
+		"B",
+		"M"
+	], {
+		C: Casing.BRASS,
+		B: "thermal:cured_rubber_block",
+		M: Mechanism.ANDESITE.COM
+	}).id("create:crafting/kinetics/elevator_pulley")
+
 	// 蒸汽锤
 	kubejs.shaped("cmi:steam_hammer", [
 		"M",
@@ -291,4 +313,73 @@ ServerEvents.recipes((event) => {
 		X: "create:mechanical_pump",
 		Y: "#vintageimprovements:springs/bronze"
 	}).id("vintageimprovements:craft/vacuum_chamber")
+
+	// 动力臂
+	kubejs.shaped("create:mechanical_arm", [
+		"APK",
+		"PS ",
+		"MC "
+	], {
+		A: "#forge:ingots/andesite_alloy",
+		P: "#forge:plates/brass",
+		S: "#vintageimprovements:small_springs/bronze",
+		K: Mechanism.ANDESITE.COM,
+		M: Mechanism.PRECISION.COM,
+		C: Casing.BRASS
+	}).id("create:crafting/kinetics/mechanical_arm")
+
+	// 动力合成器
+	kubejs.shaped("3x create:mechanical_crafter", [
+		"M",
+		"C",
+		"B"
+	], {
+		M: Mechanism.PRECISION.COM,
+		C: Casing.BRASS,
+		B: "create:crafting_blueprint"
+	}).id("create:crafting/kinetics/mechanical_crafter")
+
+	// 可控燃烧室
+	kubejs.shaped("createdieselgenerators:burner", [
+		" B ",
+		"AMA",
+		" C "
+	], {
+		A: "#forge:plates/andesite_alloy",
+		B: "#forge:plates/brass",
+		M: Mechanism.NETHER.COM,
+		C: "create:empty_blaze_burner"
+	}).id("createdieselgenerators:crafting/burner")
+
+	// 特斯拉线圈
+	create.mechanical_crafting("createaddition:tesla_coil", [
+		"PAP",
+		" I ",
+		"BMB",
+		"VCV"
+	], {
+		P: "#forge:plates/copper",
+		A: "immersiveengineering:coil_lv",
+		I: "#forge:ingots/andesite_alloy",
+		B: "#forge:plates/brass",
+		M: Mechanism.COIL.COM,
+		V: "#forge:plates/vanadium",
+		C: Casing.BRASS
+	}).id("createaddition:mechanical_crafting/tesla_coil")
+
+	// 激光雕刻机
+	create.mechanical_crafting("vintageimprovements:laser", [
+		"VCV",
+		"RMR",
+		" G ",
+		"PLP"
+	], {
+		V: "#forge:plates/vanadium",
+		C: Casing.BRASS,
+		R: "thermal:rf_coil",
+		M: Mechanism.PRECISION.COM,
+		G: "#forge:gears/iron",
+		P: "#forge:plates/industrial_iron",
+		L: "vintageimprovements:laser_item"
+	}).id("vintageimprovements:craft/laser")
 })

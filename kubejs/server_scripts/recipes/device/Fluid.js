@@ -71,6 +71,28 @@ ServerEvents.recipes((event) => {
 		E: "thermal:cured_rubber"
 	})
 
+	// 智能管道
+	kubejs.shaped("2x create:smart_fluid_pipe", [
+		"B",
+		"P",
+		"M"
+	], {
+		B: "#forge:plates/brass",
+		P: "create:fluid_pipe",
+		M: Mechanism.COPPER.COM
+	}).id("create:crafting/kinetics/smart_fluid_pipe")
+
+	// 阀门
+	kubejs.shaped("2x create:fluid_valve", [
+		"I",
+		"P",
+		"M"
+	], {
+		I: "#forge:plates/iron",
+		P: "create:fluid_pipe",
+		M: Mechanism.COPPER.COM
+	}).id("create:crafting/kinetics/fluid_valve")
+
 	// 软管滑轮
 	kubejs.shaped("create:hose_pulley", [
 		"C",
