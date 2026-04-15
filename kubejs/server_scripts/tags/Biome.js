@@ -3,5 +3,11 @@ ServerEvents.tags("worldgen/biome", (event) => {
 		.add("cmi:andesite_cave")
 
 	event.get("create_rns:has_deposit_nether")
-		.remove("minecraft:basalt_deltas")
+		.removeAll()
+		.add([
+			"minecraft:crimson_forest",
+			"minecraft:nether_wastes",
+			"minecraft:soul_sand_valley",
+			"minecraft:warped_forest"
+		])
 })
