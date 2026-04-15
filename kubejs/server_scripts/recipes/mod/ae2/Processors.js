@@ -48,6 +48,18 @@ ServerEvents.recipes((event) => {
 		.loops(1)
 		.id("create_connected:sequenced_assembly/control_chip")
 
+
+	event.custom({
+		"type": "ae2:inscriber",
+		"ingredients": {
+			"bottom": Ingredient.of("create:polished_rose_quartz").toJson(),
+			"middle": Ingredient.of("#forge:plates/copper").toJson(),
+			"top": Ingredient.of("cmi:inscribed_silicon").toJson()
+		},
+		"mode": "press",
+		"result": Item.of(Processor.CONTROL).toJson()
+	})
+
 	// 逻辑处理器
 	create.sequenced_assembly(Processor.LOGIC, [
 		"#forge:ingots/electrum"

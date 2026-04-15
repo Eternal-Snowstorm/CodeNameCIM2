@@ -21,6 +21,17 @@ ServerEvents.recipes((event) => {
 		B: "moreburners:copper_coil"
 	}).id("moreburners:resistance_coil")
 
+	// 红石发信器
+	kubejs.shaped("4x create:transmitter", [
+		" M ",
+		"RRR",
+		"WWW"
+	], {
+		M: Mechanism.REDSTONE.COM,
+		R: "#forge:rods/copper",
+		W: "#forge:wires/copper"
+	}).id('create:crafting/materials/transmitter')
+
 	// 吸管
 	kubejs.shaped("3x createaddition:straw", [
 		"A A",
