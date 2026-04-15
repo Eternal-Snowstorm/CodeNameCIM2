@@ -154,5 +154,5 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:flash_yi", "策划&任务撰写")
 	addCommonTooltipLang("cmi:keyxeldesu", "美工")
 	addCommonTooltipLang("cmi:sergei", "整合包建筑设计")
-	addCommonTooltipLang("cmi:ein_nameuwu", "整合包建筑设计")
+	addCommonTooltipLang("cmi:ein_nameuwu", "策划")
 })
