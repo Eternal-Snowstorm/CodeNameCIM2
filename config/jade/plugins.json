@@ -68,7 +68,7 @@
     "coordinates.rel": false,
     "distance": false,
     "block_face": false,
-    "coordinates": false,
+    "coordinates": true,
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
@@ -135,10 +135,6 @@
   },
   "industrial_platform": {
     "common": true
-  },
-  "appliedcreate": {
-    "grid_node_state": true,
-    "power_storage": true
   },
   "cmi": {
     "common": true

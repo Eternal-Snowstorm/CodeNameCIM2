@@ -840,6 +840,7 @@
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1317194CAF1EB6DF"
+				table_id: 5759679434303888902L
 				type: "choice"
 			}]
 			subtitle: "一个非常重要的东西"

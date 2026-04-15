@@ -32,7 +32,6 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:grass_fiber")
 	addCommonTooltip("#cmi:broken_drill_heads")
 	addCommonTooltip("portality:controller")
-	addCommonTooltip("cmi:water_pump")
 	addCommonTooltip("cmi:parchment")
 	addCommonTooltip("alexscaves:notor_gizmo")
 	addCommonTooltip("immersiveindustry:electrolyzer")

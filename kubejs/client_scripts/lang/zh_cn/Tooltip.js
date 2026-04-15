@@ -95,7 +95,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("#cmi:broken_drill_heads", "破损的钻头, 修复后可以正常使用")
 	addCommonTooltipLang("immersiveindustry:electrolyzer", "需要通电使用")
 	addCommonTooltipLang("portality:controller", "制作模块时不会消耗自身")
-	addCommonTooltipLang("cmi:water_pump", "使用扳手右键可以显示预览")
 	addCommonTooltipLang("cmi:parchment", `有些能量不是由燃料产生的, 而是靠"遇见"`)
 	addCommonTooltipLang("moreburners:heat_upgrade", "使{moreburners:electric_burner, 1}电磁炉达到更高的加热等级")
 	addCommonTooltipLang("create:basin", "使用{minecraft:sponge, 1}海绵可以清空内部所有流体")
