@@ -116,6 +116,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("torn_parchment_a", "撕开的羊皮纸(甲)")
 	addItemLang("torn_parchment_b", "撕开的羊皮纸(乙)")
 	addItemLang("enriched_alloy", "富集合金")
+	addItemLang("resonant_tube", "共振管")
 
 	addItemLang("flint_hammer", "燧石锤")
 	addItemLang("iron_hammer", "铁锤")
@@ -151,6 +152,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("incomplete_elite_control_circuit", "精英控制电路(半成品)")
 	addItemLang("incomplete_ultimate_control_circuit", "终极控制电路(半成品)")
 	addItemLang("incomplete_electron_tube", "电子管(半成品)")
+	addItemLang("incomplete_resonant_tube", "共振管(半成品)")
 	addItemLang("incomplete_upgrade_augment_1", "硬化整合组件(半成品)")
 	addItemLang("incomplete_upgrade_augment_2", "强化整合组件(半成品)")
 	addItemLang("incomplete_upgrade_augment_3", "谐振整合组件(半成品)")

@@ -145,6 +145,7 @@ ServerEvents.recipes((event) => {
 		SCANNER: seqItems("scannable:scanner", "#forge:plates/iron", "cmi:incomplete_scanner"),
 		SCAN_MOD: seqItems("scannable:blank_module", "#forge:plates/plastic", "cmi:incomplete_scanning_module"),
 		E_TUBE: seqItems("create:electron_tube", "#forge:plates/iron", "cmi:incomplete_electron_tube"),
+		R_TUBE: seqItems("cmi:resonant_tube", "#forge:plates/brass", "cmi:incomplete_resonant_tube"),
 		CAPACITOR: seqItems("ad_astra:etrionic_capacitor", "#forge:plates/steel", "ad_astra:etrionic_core"),
 		COOLER: seqItems("cmi:nuke_cooler", "#forge:plates/stainless_steel", "cmi:incomplete_nuke_cooler"),
 		NUKE: seqItems("cmi:nuke_cooler", "alexscaves:charred_remnant", "cmi:incomplete_nuke_cooler"),
@@ -182,10 +183,16 @@ ServerEvents.recipes((event) => {
 
 	// 电子管
 	new SequencedAssemblyRecipe(Seq.E_TUBE)
-		.deploying("#forge:wires/copper")
+		.deploying("#forge:wires/redstone")
 		.deploying("create:polished_rose_quartz")
 		.build()
 		.id("create:crafting/materials/electron_tube")
+
+	// 共振管
+	new SequencedAssemblyRecipe(Seq.R_TUBE)
+		.deploying("#forge:wires/amethyst_bronze")
+		.deploying("create_rns:polished_resonant_amethyst")
+		.build()
 
 	// Ad电容器
 	new SequencedAssemblyRecipe(Seq.CAPACITOR)

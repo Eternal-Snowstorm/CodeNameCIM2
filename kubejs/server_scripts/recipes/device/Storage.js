@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
 			"#forge:ingots/industrial_iron",
 			"#forge:plates/industrial_iron"
 		],
-		B: Mechanism.WOODEN.COM
+		B: Mechanism.STONE.COM
 	}).id("ratatouille:oven")
 
 	// 物品舱口

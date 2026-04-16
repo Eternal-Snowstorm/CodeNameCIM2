@@ -36,6 +36,7 @@ StartupEvents.registry("item", (event) => {
 	addIncompleteItem("elite_control_circuit")
 	addIncompleteItem("ultimate_control_circuit")
 	addIncompleteItem("electron_tube")
+	addIncompleteItem("resonant_tube")
 	addIncompleteItem("upgrade_augment_1")
 	addIncompleteItem("upgrade_augment_2")
 	addIncompleteItem("upgrade_augment_3")

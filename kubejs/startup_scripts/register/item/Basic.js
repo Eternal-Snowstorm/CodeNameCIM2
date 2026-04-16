@@ -78,8 +78,10 @@ StartupEvents.registry("item", (event) => {
 		.tag("create:blaze_burner_fuel/special")
 
 	// 电动机转子
-	addItem("motor_rotor")
-		.texture(`${CmiCore.MODID}:item/material/motor_rotor`)
+	addMaterial("motor_rotor")
+
+	// 共振管
+	addMaterial("resonant_tube")
 
 	// 热力单元
 	addItem("thermal_unit")
@@ -102,12 +104,10 @@ StartupEvents.registry("item", (event) => {
 		.texture(`${CmiCore.MODID}:item/material/unit/blizz`)
 
 	// 硅混合物
-	addItem("silicon_mixure")
-		.texture(`${CmiCore.MODID}:item/material/silicon_mixure`)
+	addMaterial("silicon_mixure")
 
 	// 硅橡胶
-	addItem("silicon_rubber")
-		.texture(`${CmiCore.MODID}:item/material/silicon_rubber`)
+	addMaterial("silicon_rubber")
 
 	// 小块焦炭
 	addItem("small_coal_coke")

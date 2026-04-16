@@ -421,10 +421,10 @@ ServerEvents.recipes((event) => {
 
 	// 感光
 	new BasicMechRecipe(Mechanism.PHOTO)
-		.input("#forge:gems/quartz")
+		.input("#forge:prisms/polished_quartz")
 		.part(Mechanism.PART.ENGIN)
-		.deploying2("cmi:charged_amethyst")
-		.deploying3("create:electron_tube")
+		.deploying2("cmi:resonant_tube")
+		.deploying3("#forge:dusts/amethyst")
 		.build()
 
 	// 幽匿
