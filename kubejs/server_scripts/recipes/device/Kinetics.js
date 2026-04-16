@@ -293,12 +293,14 @@ ServerEvents.recipes((event) => {
 
 	// 蒸汽锤
 	kubejs.shaped("cmi:steam_hammer", [
-		"M",
-		"C",
-		"X"
+		"PCP",
+		"MGM",
+		" X "
 	], {
+		P: "#forge:plates/bronze",
 		M: Mechanism.STEAM.COM,
 		C: Casing.BRONZE,
+		G: "create:mechanical_press",
 		X: "#forge:storage_blocks/bronze"
 	})
 
@@ -382,4 +384,26 @@ ServerEvents.recipes((event) => {
 		P: "#forge:plates/industrial_iron",
 		L: "vintageimprovements:laser_item"
 	}).id("vintageimprovements:craft/laser")
+
+	// 磨砂机
+	kubejs.shaped("cmi:mechanical_belt_grinder", [
+		"B",
+		"C",
+		"M"
+	], {
+		B: "vintageimprovements:grinder_belt",
+		C: Casing.BRASS,
+		M: Mechanism.PRECISION.COM
+	})
+
+	// 马达
+	kubejs.shaped("cmi:accelerator_motor", [
+		"S",
+		"C",
+		"M"
+	], {
+		S: "#create:shaft",
+		C: Casing.ANDESITE,
+		M: Mechanism.ANDESITE.COM
+	})
 })

@@ -211,4 +211,25 @@ ServerEvents.recipes((event) => {
 		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE
 	}).id("create:crafting/logistics/redstone_requester")
+
+	// 工厂仪表
+	kubejs.shaped("create:factory_gauge", [
+		"T",
+		"B",
+		"P"
+	], {
+		T: "create:transmitter",
+		P: "#forge:plates/industrial_iron",
+		B: "#forge:plates/brass"
+	}).id("create:crafting/logistics/factory_gauge")
+
+	kubejs.shaped("create_factory_logistics:factory_fluid_gauge", [
+		"T",
+		"C",
+		"P"
+	], {
+		T: "create:transmitter",
+		P: "#forge:plates/industrial_iron",
+		C: "#forge:plates/copper"
+	}).id("create_factory_logistics:factory_fluid_gauge")
 })
