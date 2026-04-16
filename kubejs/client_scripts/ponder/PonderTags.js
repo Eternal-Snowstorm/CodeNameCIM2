@@ -36,42 +36,42 @@ Ponder.tags((event) => {
 		event.createTag(id, icon, name, index, ITEMS)
 	}
 
-	new PonderTag("ponder", "cmi:creative_mechanism", [
-		"cmi:accelerator",
-		"cmi:water_pump",
-		"minecraft:water_bucket",
-		"cmi:bronze_casing",
-		"mekanism:steam_boiler",
-		"mekanism:steam_bucket",
-	])
+	// new PonderTag("ponder", "cmi:creative_mechanism", [
+	// 	"cmi:accelerator",
+	// 	"cmi:water_pump",
+	// 	"minecraft:water_bucket",
+	// 	"cmi:bronze_casing",
+	// 	"mekanism:steam_boiler",
+	// 	"mekanism:steam_bucket",
+	// ])
 
-	new PonderTag("other", "mekanism:cardboard_box", [
-		"portality:controller",
-		"portality:frame",
-		"portality:module_items",
-		"portality:module_fluids",
-		"portality:module_energy",
-		"portality:module_interdimensional",
-		"immersiveindustry:crucible",
-		"immersiveindustry:burning_chamber",
-		"immersiveengineering:blastfurnace_preheater",
-		"immersiveengineering:blastbrick",
-		"cmi:crucible_base",
-		"cmi:crucible_tuyere",
-		"mekanism:cardboard_box"
-	])
+	// new PonderTag("other", "mekanism:cardboard_box", [
+	// 	"portality:controller",
+	// 	"portality:frame",
+	// 	"portality:module_items",
+	// 	"portality:module_fluids",
+	// 	"portality:module_energy",
+	// 	"portality:module_interdimensional",
+	// 	"immersiveindustry:crucible",
+	// 	"immersiveindustry:burning_chamber",
+	// 	"immersiveengineering:blastfurnace_preheater",
+	// 	"immersiveengineering:blastbrick",
+	// 	"cmi:crucible_base",
+	// 	"cmi:crucible_tuyere",
+	// 	"mekanism:cardboard_box"
+	// ])
 
-	new PonderTag("ae2", "ae2:controller", [
-		"ae2:fluix_glass_cable",
-		"ae2:condenser",
-		"ae2:controller",
-		"ae2:pattern_provider",
-		"ae2:crafting_unit",
-		"ae2:drive",
-		"ae2:me_p2p_tunnel",
-		"ae2:quantum_ring",
-		"ae2:spatial_io_port",
-		"ae2:spatial_pylon",
-		"ae2:wireless_access_point"
-	])
+	// new PonderTag("ae2", "ae2:controller", [
+	// 	"ae2:fluix_glass_cable",
+	// 	"ae2:condenser",
+	// 	"ae2:controller",
+	// 	"ae2:pattern_provider",
+	// 	"ae2:crafting_unit",
+	// 	"ae2:drive",
+	// 	"ae2:me_p2p_tunnel",
+	// 	"ae2:quantum_ring",
+	// 	"ae2:spatial_io_port",
+	// 	"ae2:spatial_pylon",
+	// 	"ae2:wireless_access_point"
+	// ])
 })
