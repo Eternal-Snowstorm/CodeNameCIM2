@@ -1,11 +1,13 @@
 ServerEvents.recipes((event) => {
 	let { create } = event.getRecipes()
 
+	// 余烬面粉
 	create.crushing([
 		"minecraft:netherrack",
 		Item.of("create:cinder_flour").withChance(0.2)
 	], "#forge:netherrack")
 
+	// 赛特斯石英矿
 	create.crushing([
 		"2x ae2:certus_quartz_crystal",
 		Item.of("ae2:certus_quartz_crystal").withChance(0.25),
@@ -33,6 +35,7 @@ ServerEvents.recipes((event) => {
 		"#create:stone_types/andesite"
 	])
 
+	// 木炭粉
 	create.crushing("mekanism:dust_charcoal", [
 		"minecraft:charcoal"
 	]).id("create:crushing/charcoal")
@@ -52,4 +55,10 @@ ServerEvents.recipes((event) => {
 	create.crushing(Item.of("cmi:steel_dust").withChance(0.05), [
 		"#minecraft:armors/chainmail"
 	])
+
+	// 锌粒
+	create.crushing([
+		Item.of("create:zinc_nugget"),
+		Item.of("create:zinc_nugget").withChance(0.5),
+	], "#create:copycats")
 })

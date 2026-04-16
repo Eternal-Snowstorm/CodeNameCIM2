@@ -89,4 +89,9 @@ ServerEvents.recipes((event) => {
 	create.milling("thermal:apatite_dust", [
 		"#forge:gems/apatite"
 	])
+
+	// 锌粒
+	create.milling("create:zinc_nugget", [
+		"#create:copycats"
+	])
 })
