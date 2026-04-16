@@ -51,9 +51,13 @@ ItemEvents.tooltip((event) => {
 	event.add(["create:encased_fan", "ratatouille:oven_fan"], [
 		Component.translatable("tooltip.cmi.fan")
 	])
-	event.add(["#tconstruct:casts", "tconstruct:seared_table", "tconstruct:scorched_table", "tconstruct:seared_basin", "tconstruct:scorched_basin"], [
-		Component.translatable("tooltip.cmi.cast")
-	])
+	event.add([
+		"#tconstruct:casts",
+		"tconstruct:seared_table",
+		"tconstruct:scorched_table",
+		"tconstruct:seared_basin",
+		"tconstruct:scorched_basin"
+	], Component.translatable("tooltip.cmi.cast"))
 
 	// 愚人节
 	let month = LocalDateTime.now().getMonthValue()
