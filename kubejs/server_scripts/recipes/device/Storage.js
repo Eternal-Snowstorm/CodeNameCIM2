@@ -186,4 +186,29 @@ ServerEvents.recipes((event) => {
 		M: Mechanism.PHOTO.COM,
 		C: Casing.BRASS
 	}).id("create:crafting/logistics/display_link")
+
+	// 发报机
+	kubejs.shaped("create:stock_ticker", [
+		" G ",
+		"PMT",
+		" C "
+	], {
+		G: "#forge:glass",
+		P: "#forge:plates/gold",
+		M: Mechanism.ANDESITE.COM,
+		T: "create:transmitter",
+		C: Casing.ANDESITE
+	}).id("create:crafting/logistics/stock_ticker")
+
+	// 请求器
+	kubejs.shaped("create:redstone_requester", [
+		" T ",
+		"PMP",
+		" C "
+	], {
+		T: "create:transmitter",
+		P: "#forge:plates/industrial_iron",
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE
+	}).id("create:crafting/logistics/redstone_requester")
 })

@@ -151,14 +151,7 @@ ServerEvents.recipes((event) => {
 		GAS: seqItems("steampowered:pressurized_gas_container", "#forge:plates/aluminum", "cmi:incomplete_gas_container"),
 		ROTOR: seqItems("cmi:motor_rotor", "#forge:rods/iron", "cmi:incomplete_motor_rotor"),
 		THERMAL_AUG: seqItems(Mechanism.THERMAL.AUG, "#forge:gears/constantan", "cmi:incomplete_thermal_mechanism_augment"),
-		DIAMOND_FROM_COAL: seqItems("minecraft:diamond", "#forge:storage_blocks/coal", "minecraft:coal"),
-		CRAFTER: seqItems([
-			"3x create:mechanical_crafter",
-			Item.of("create:mechanical_crafter", 4).withChance(0.5),
-			Item.of("create:mechanical_crafter", 5).withChance(0.5)
-		], "create:brass_casing",
-			"cmi:incomplete_mechanical_crafter"
-		)
+		DIAMOND_FROM_COAL: seqItems("minecraft:diamond", "#forge:storage_blocks/coal", "minecraft:coal")
 	}
 
 	// 飞轮
@@ -237,12 +230,6 @@ ServerEvents.recipes((event) => {
 		.deploying("thermal:redstone_servo")
 		.deploying("#forge:plates/vanadium")
 		.cutting()
-		.build()
-
-	// 动力合成器
-	new SequencedAssemblyRecipe(Seq.CRAFTER)
-		.deploying(Mechanism.PRECISION.COM)
-		.deploying("create:crafting_blueprint")
 		.build()
 
 	// 神秘戴尔芒德
