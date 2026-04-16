@@ -35,15 +35,15 @@ ServerEvents.recipes((event) => {
 	]).heated()
 
 	// 玻璃
-	vintageimprovements.pressurizing(
+	create.mixing(
 		Fluid.of("tconstruct:molten_glass", 250), [
-		"2x cmi:pure_quartz_dust",
+		Fluid.of("cmi:pure_sand", 200),
 		"#forge:dusts/lime"
 	]).superheated()
 
-	vintageimprovements.pressurizing(
+	create.mixing(
 		Fluid.of("tconstruct:molten_glass", 250), [
-		"2x cmi:pure_quartz_dust",
+		Fluid.of("cmi:pure_sand", 200),
 		"cmi:plant_ash"
 	]).superheated()
 

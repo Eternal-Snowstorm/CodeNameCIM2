@@ -92,10 +92,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("scanning_module")
 		.texture("scannable:item/blank_module")
 
-	// 动力合成器
-	addItem("mechanical_crafter")
-		.parentModel("create:block/mechanical_crafter/block")
-
 	// 火箭框架(半成品)
 	for (let i = 1; i <= 4; i++) {
 		addItem(`tier_${i.toString()}_rocket_frame`)
