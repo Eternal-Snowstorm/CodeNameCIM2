@@ -23,19 +23,6 @@ ServerEvents.recipes((event) => {
 		Y: ["#forge:leather", "tconstruct:silky_cloth"]
 	}).id("sophisticatedbackpacks:upgrade_base")
 
-	// 烤箱
-	kubejs.shaped("2x ratatouille:oven", [
-		"A",
-		"B",
-		"A"
-	], {
-		A: [
-			"#forge:ingots/industrial_iron",
-			"#forge:plates/industrial_iron"
-		],
-		B: Mechanism.STONE.COM
-	}).id("ratatouille:oven")
-
 	// 物品舱口
 	kubejs.shapeless("2x create:item_hatch", [
 		"2x #forge:plates/andesite_alloy",

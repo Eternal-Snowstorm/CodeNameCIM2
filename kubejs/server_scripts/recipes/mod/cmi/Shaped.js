@@ -51,36 +51,6 @@ ServerEvents.recipes((event) => {
 		A: "cmi:trinitrotoluene"
 	}).id("minecraft:tnt")
 
-	// // 木龙头
-	// kubejs.shaped("cmi:wooden_faucet", [
-	// 	" A ",
-	// 	"BBB",
-	// 	"  B"
-	// ], {
-	// 	A: "#forge:rods/wooden",
-	// 	B: "#minecraft:planks"
-	// })
-
-	// // 铸铁龙头
-	// kubejs.shaped("cmi:cast_iron_faucet", [
-	// 	" A ",
-	// 	"BBB",
-	// 	"  B"
-	// ], {
-	// 	A: "#minecraft:planks",
-	// 	B: "#forge:plates/cast_iron"
-	// })
-
-	// // 钢龙头
-	// kubejs.shaped("cmi:steel_faucet", [
-	// 	" A ",
-	// 	"BBB",
-	// 	"  B"
-	// ], {
-	// 	A: "#minecraft:planks",
-	// 	B: "#forge:plates/steel"
-	// })
-
 	// 橡胶手
 	kubejs.shaped("create:brass_hand", [
 		" A ",
@@ -164,4 +134,17 @@ ServerEvents.recipes((event) => {
 		B: "#forge:rods/cobalt",
 		C: "#forge:plates/cobalt"
 	}).id("thermalendergy:vibrating_core")
+
+	// 旗帜
+	global.dyeColorGroup.forEach((color) => {
+		kubejs.shaped(`ad_astra:${color}_flag`, [
+			"RFF",
+			"RFF",
+			"RD "
+		], {
+			R: "#forge:rods/iron",
+			F: "#forge:fabric_hemp",
+			D: `#forge:dyes/${color}`
+		}).id(`ad_astra:${color}_flag`)
+	})
 })

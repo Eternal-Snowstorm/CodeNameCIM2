@@ -104,28 +104,6 @@ ServerEvents.recipes((event) => {
 		C: Casing.COPPER
 	}).id("create:crafting/kinetics/hose_pulley")
 
-	// 灌溉塔
-	kubejs.shaped("ratatouille:irrigation_tower", [
-		"AMA",
-		"BCB"
-	], {
-		M: Mechanism.COPPER.COM,
-		A: "#forge:plates/copper",
-		B: "#forge:rods/copper",
-		C: "create:fluid_pipe"
-	}).id("ratatouille:irrigation_tower")
-
-	// 挤压盆
-	kubejs.shaped("ratatouille:squeeze_basin", [
-		" X ",
-		"YMY",
-		"YYY"
-	], {
-		M: Mechanism.COPPER.COM,
-		X: "#forge:plates/copper",
-		Y: "#forge:ingots/copper",
-	}).id("ratatouille:squeeze_basin")
-
 	// 抽油机油泵
 	kubejs.shaped("createdieselgenerators:pumpjack_hole", [
 		" M ",

@@ -36,8 +36,6 @@ ServerEvents.recipes((event) => {
 		"create:splashing/gravel",
 		"create:splashing/sand",
 		"create:splashing/red_sand",
-		"ratatouille:freezing/chocolate_mold_filled",
-		"ratatouille:freezing",
 		"createdeco:compacting/industrial_iron_ingot",
 		"create:crafting/materials/rose_quartz",
 		"create:crafting/appliances/netherite_backtank_from_netherite",
@@ -50,7 +48,9 @@ ServerEvents.recipes((event) => {
 		"create:crafting/kinetics/white_sailfrom_conversion",
 		"create_factory_abstractions:empty",
 		"createaddition:compat/immersiveengineering/crushing/steel_ingot",
-		"create_factory_logistics:sequenced_assembly/fluid_mechanism"
+		"create_factory_logistics:sequenced_assembly/fluid_mechanism",
+		"create:crafting/kinetics/track_observer_from_other_plates",
+		"railways:crafting/track_switch_brass"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({

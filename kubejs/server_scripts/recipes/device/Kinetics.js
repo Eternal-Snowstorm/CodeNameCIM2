@@ -41,16 +41,6 @@ ServerEvents.recipes((event) => {
 		X: "create:propeller",
 	}).id("create:crafting/kinetics/encased_fan")
 
-	// 烤箱用鼓风机
-	kubejs.shapeless("ratatouille:oven_fan", [
-		"create:encased_fan"
-	]).id("ratatouille:oven_fan")
-
-	// 鼓风机 ←- 烤箱用鼓风机
-	kubejs.shapeless("create:encased_fan", [
-		"ratatouille:oven_fan"
-	])
-
 	// 工作盆盖板
 	kubejs.shaped("createdieselgenerators:basin_lid", [
 		"ABA",
@@ -133,18 +123,6 @@ ServerEvents.recipes((event) => {
 		X: "#forge:plates/andesite_alloy",
 	}).id("create:crafting/kinetics/mechanical_plough")
 
-	// 脱粒机
-	kubejs.shaped("ratatouille:thresher", [
-		" Y ",
-		"XMX",
-		" C "
-	], {
-		M: Mechanism.ANDESITE.COM,
-		C: Casing.ANDESITE,
-		X: "#forge:plates/andesite_alloy",
-		Y: "#forge:plates/andesite_alloy",
-	}).id("ratatouille:thresher")
-
 	// 动力压路机
 	kubejs.shaped("2x create:mechanical_roller", [
 		"CX ",
@@ -155,17 +133,6 @@ ServerEvents.recipes((event) => {
 		C: Casing.ANDESITE,
 		X: "#forge:plates/andesite_alloy",
 	}).id("create:crafting/kinetics/mechanical_roller")
-
-	// 动力脱模机
-	kubejs.shaped("ratatouille:mechanical_demolder", [
-		"M",
-		"C",
-		"X"
-	], {
-		M: Mechanism.ANDESITE.COM,
-		C: Casing.ANDESITE,
-		X: "#forge:slimeballs",
-	}).id("ratatouille:mechanical_demolder")
 
 	// 振动台
 	kubejs.shaped("vintageimprovements:vibrating_table", [
@@ -290,6 +257,17 @@ ServerEvents.recipes((event) => {
 		B: "thermal:cured_rubber_block",
 		M: Mechanism.ANDESITE.COM
 	}).id("create:crafting/kinetics/elevator_pulley")
+
+	// 控制器
+	kubejs.shaped("create:contraption_controls", [
+		"A",
+		"C",
+		"M"
+	], {
+		A: "create_connected:control_chip",
+		C: Casing.ANDESITE,
+		M: Mechanism.ANDESITE.COM
+	}).id("create:crafting/kinetics/contraption_controls")
 
 	// 蒸汽锤
 	kubejs.shaped("cmi:steam_hammer", [
