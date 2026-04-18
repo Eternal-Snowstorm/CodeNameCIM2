@@ -50,7 +50,8 @@ ServerEvents.recipes((event) => {
 		"createaddition:compat/immersiveengineering/crushing/steel_ingot",
 		"create_factory_logistics:sequenced_assembly/fluid_mechanism",
 		"create:crafting/kinetics/track_observer_from_other_plates",
-		"railways:crafting/track_switch_brass"
+		"railways:crafting/track_switch_brass",
+		"createdieselgenerators:distillation/superheated_crude_oil"
 	]
 	removeRecipeIds.forEach((id) => {
 		event.remove({
