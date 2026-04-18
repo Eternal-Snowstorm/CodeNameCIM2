@@ -362,7 +362,7 @@ ServerEvents.tags("item", (event) => {
 		.add("ad_astra:etrionic_blast_furnace")
 		.add("ad_astra:cryo_freezer")
 		.add("ad_astra:oxygen_sensor")
-		.add("ad_astra:water_pump")
+		.add("ad_astra:water_well")
 
 	event.get("functionalstorage:upgrades")
 		.add("functionalstorage:copper_upgrade")

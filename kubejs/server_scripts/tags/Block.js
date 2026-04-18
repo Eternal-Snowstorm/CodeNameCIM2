@@ -146,7 +146,7 @@ ServerEvents.tags("block", (event) => {
 			"ad_astra:fuel_refinery",
 			"ad_astra:oxygen_loader",
 			"ad_astra:solar_panel",
-			"ad_astra:water_pump",
+			"ad_astra:water_well",
 			"ad_astra:oxygen_distributor",
 			"ad_astra:gravity_normalizer",
 			"ad_astra:energizer",

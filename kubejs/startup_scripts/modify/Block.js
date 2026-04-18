@@ -3,7 +3,7 @@ BlockEvents.modification((event) => {
 		modify.soundType = SoundType.NETHERITE_BLOCK
 	})
 
-	event.modify("cmi:water_pump", (modify) => {
+	event.modify("cmi:water_well", (modify) => {
 		modify.soundType = SoundType.WOOD
 	})
 

@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
 		return builder
 	}
 
-	// addCustomMachine("water_pump")
+	// addCustomMachine("water_well")
 	addCustomMachine("flash_disk_writer")
 	addCustomMachine("chemical_gas_extractor")
 	addCustomMachine("radar_terminal")

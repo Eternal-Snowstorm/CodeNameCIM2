@@ -1,9 +1,9 @@
 {
     "parent": "minecraft:block/cube_all",
     "textures": {
-        "1": "cmi:block/machine/water_pump/other",
-        "particle": "cmi:block/machine/water_pump/other",
-        "all": "cmi:block/machine/water_pump/off"
+        "1": "cmi:block/machine/water_well/other",
+        "particle": "cmi:block/machine/water_well/other",
+        "all": "cmi:block/machine/water_well/off"
     },
     "elements": [
         {

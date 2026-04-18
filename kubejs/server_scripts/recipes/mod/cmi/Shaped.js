@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
 	}).id("cmi:accelerator")
 
 	// 水泵
-	kubejs.shaped("cmi:water_pump", [
+	kubejs.shaped("cmi:water_well", [
 		"ACA",
 		"ABA",
 		"AAA"
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:treated_wood",
 		B: "cmi:copper_mechanism",
 		C: "#forge:plates/iron"
-	}).id("cmi:water_pump")
+	}).id("cmi:water_well")
 
 	// TNT
 	kubejs.shaped("minecraft:tnt", [

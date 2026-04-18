@@ -34,12 +34,12 @@ ServerEvents.highPriorityData((event) => {
 	event.addJson("cmi:advancements/echoes_north_star.json", {
 		parent: "cmi:start",
 		criteria: {
-			get_water_pump: {
+			get_water_well: {
 				conditions: {
 					items: [
 						{
 							items: [
-								"cmi:water_pump"
+								"cmi:water_well"
 							]
 						}
 					]
@@ -69,7 +69,7 @@ ServerEvents.highPriorityData((event) => {
 			},
 			requirements: [
 				[
-					"get_water_pump"
+					"get_water_well"
 				]
 			]
 		}
