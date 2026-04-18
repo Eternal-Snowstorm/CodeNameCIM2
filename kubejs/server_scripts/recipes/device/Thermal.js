@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { thermal_extra, create } = event.recipes
+    let { thermal_extra, create, thermal} = event.recipes
     let Inc = "cmi:incomplete_thermal_devices"
 
     /**
@@ -28,5 +28,27 @@ ServerEvents.recipes((event) => {
         Mechanism.THERMAL.COM,
         "#forge:gears/iron",
         "create:brass_hand"
+    ])
+
+    thermal_extra.component_assembly("cmi:thermal_unit",[
+        Fluid.of("thermal:resin",50),
+        "cmi:redstone_wire",
+        "#forge:plates/invar"
+    ])
+    thermal.smelter("cmi:blaze_unit",[
+        "cmi:thermal_unit",
+        "minecraft:blaze_powder"
+    ])
+    thermal.smelter("cmi:basalz_unit",[
+        "cmi:thermal_unit",
+        "thermal:basalz_powder"
+    ])
+    thermal.smelter("cmi:blitz_unit",[
+        "cmi:thermal_unit",
+        "thermal:blitz_powder"
+    ])
+    thermal.smelter("cmi:blizz_unit",[
+        "cmi:thermal_unit",
+        "thermal:blizz_powder"
     ])
 })

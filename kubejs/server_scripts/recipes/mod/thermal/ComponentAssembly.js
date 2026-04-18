@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
     }
 
     // 二极管
-    addComponRecipe("4x cmi:diode", [
+    addComponRecipe("4x thermal:laser_diode", [
         "#forge:wires/electrum",
         "#forge:plates/invar",
         "#forge:prisms/pure_quartz"
