@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { thermal_extra, create, thermal } = event.recipes
-	let Inc = "cmi:incomplete_thermal_devices"
+	let inc = "cmi:incomplete_thermal_devices"
 
 	/**
 	 * 
@@ -14,10 +14,10 @@ ServerEvents.recipes((event) => {
 	}
 
 	create.sequenced_assembly("thermal_extra:component_assembly", Casing.THERMAL, [
-		create.deploying(Inc, [Inc, Mechanism.THERMAL.COM]),
-		create.deploying(Inc, [Inc, "#forge:gears/iron"]),
-		create.deploying(Inc, [Inc, "create:brass_hand"])
-	]).transitionalItem(Inc)
+		create.deploying(inc, [inc, Mechanism.THERMAL.COM]),
+		create.deploying(inc, [inc, "#forge:gears/iron"]),
+		create.deploying(inc, [inc, "create:brass_hand"])
+	]).transitionalItem(inc)
 		.loops(1)
 		.id("thermal_extra:crafting/component_assembly")
 
