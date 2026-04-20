@@ -8,6 +8,12 @@ ServerEvents.recipes((event) => {
 		.temperature(800)
 		.id("tconstruct:smeltery/melting/obsidian/block")
 
+	// 烈焰棒
+	tconstruct.melting(Fluid.of("tconstruct:blazing_blood", 100))
+		.ingredient("#forge:rods/blaze")
+		.time(158 * 4)
+		.temperature(900)
+
 	// 充能萤石
 	tconstruct.melting(Fluid.of("thermal:glowstone", 250))
 		.ingredient("#forge:dusts/glowstone")

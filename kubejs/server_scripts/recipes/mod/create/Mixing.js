@@ -127,7 +127,7 @@ ServerEvents.recipes((event) => {
 		"minecraft:blaze_powder"
 	]).heated()
 
-	create.mixing(Fluid.of("tconstruct:blazing_blood", 2000), [
+	create.mixing(Fluid.of("tconstruct:blazing_blood", 1000), [
 		Fluid.of("cmi:blood", 1000),
 		"#forge:rods/blaze"
 	]).superheated()
