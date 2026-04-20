@@ -125,3 +125,4 @@ config/nebula/value.txt
 !config/asteorbar-client.toml
 !config/ModernUI/
 !config/immediatelyfast.json
+!config/mantle-client.toml
