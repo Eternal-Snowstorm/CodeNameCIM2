@@ -1,9 +1,9 @@
 ItemEvents.armorTierRegistry((event) => {
 	addArmorTier("iron", (tier) => {
-		tier.durabilityMultiplier = 9999
-		tier.slotProtections = [99, 99, 99, 99]
-		tier.repairIngredient = "#forge:ingots/iron"
-		tier.equipSound = "minecraft:item.armor.equip_iron"
+		tier.setDurabilityMultiplier(9999)
+		tier.setSlotProtections([99, 99, 99, 99])
+		tier.setRepairIngredient("#forge:ingots/iron")
+		tier.setEquipSound("minecraft:item.armor.equip_iron")
 	})
 
 	/**
