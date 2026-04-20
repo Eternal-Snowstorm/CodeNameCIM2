@@ -85,21 +85,21 @@ StartupEvents.registry("item", (event) => {
 	// 	.tag("forge:tools")
 
 	// 燧石锤
-	event.create(`${CmiCore.MODID}:flint_hammer`, "pickaxe")
+	event.create(`${CmiCore.MODID}:flint_hammer`, "createdieselgenerators:hammer")
 		.tier(`${CmiCore.MODID}:flint`)
 		.texture(`${CmiCore.MODID}:item/tool/flint_hammer`)
 		.tag("forge:tools")
 		.tag("forge:hammers")
 
 	// 铁锤
-	event.create(`${CmiCore.MODID}:iron_hammer`, "pickaxe")
+	event.create(`${CmiCore.MODID}:iron_hammer`, "createdieselgenerators:hammer")
 		.tier($Tiers.IRON)
 		.texture(`${CmiCore.MODID}:item/tool/iron_hammer`)
 		.tag("forge:tools")
 		.tag("forge:hammers")
 
 	// 钻石锤
-	event.create(`${CmiCore.MODID}:diamond_hammer`, "pickaxe")
+	event.create(`${CmiCore.MODID}:diamond_hammer`, "createdieselgenerators:hammer")
 		.tier($Tiers.DIAMOND)
 		.texture(`${CmiCore.MODID}:item/tool/diamond_hammer`)
 		.tag("forge:tools")
