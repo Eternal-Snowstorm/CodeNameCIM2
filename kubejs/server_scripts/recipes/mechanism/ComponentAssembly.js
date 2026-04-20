@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
     thermal_extra.component_assembly(`4x ${Mechanism.REINFORCED.AUG.getId()}`, [
         "#forge:gears/signalum",
         "thermalendergy:vibrating_core",
-        "thermal:laser_diode",
+        "cmi:inscribed_silicon",
         "#forge:plates/lumium"
     ])
 
