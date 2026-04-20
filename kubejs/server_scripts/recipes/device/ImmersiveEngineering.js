@@ -1,7 +1,76 @@
 ServerEvents.recipes((event) => {
-	let { thermal, kubejs, minecraft } = event.getRecipes()
+	let { immersiveengineering, kubejs, minecraft } = event.getRecipes()
 
-	minecraft.stonecutting("cmi:industrial_frame",
+	minecraft.stonecutting(Casing.INDUSTRY,
 		"#forge:plates/industrial_iron"
 	)
+
+	kubejs.shaped("4x immersiveengineering:radiator", [
+		"ABA",
+		"C C",
+		"ABA"
+	], {
+		A: Casing.INDUSTRY,
+		B: "#forge:plates/constantan",
+		C: "#forge:rods/invar"
+	}).id("immersiveengineering:crafting/radiator")
+
+	kubejs.shaped("4x immersiveengineering:heavy_engineering", [
+		"ABA",
+		"B B",
+		"ABA"
+	], {
+		A: Casing.INDUSTRY,
+		B: Mechanism.HEAVY.COM
+	}).id("immersiveengineering:crafting/heavy_engineering")
+
+	kubejs.shaped("4x immersiveengineering:light_engineering", [
+		"ABA",
+		"B B",
+		"ABA"
+	], {
+		A: Casing.INDUSTRY,
+		B: Mechanism.LIGHT.COM
+	}).id("immersiveengineering:crafting/light_engineering")
+
+	kubejs.shaped("4x immersiveengineering:rs_engineering", [
+		"ABA",
+		"B B",
+		"ABA"
+	], {
+		A: Casing.INDUSTRY,
+		B: Mechanism.REDSTONE.COM
+	}).id("immersiveengineering:crafting/rs_engineering")
+
+	kubejs.shaped("4x immersiveengineering:generator", [
+		"ABA",
+		"B B",
+		"ABA"
+	], {
+		A: Casing.INDUSTRY,
+		B: Mechanism.COIL.COM
+	}).id("immersiveengineering:crafting/generator")
+
+	kubejs.shaped("4x cmi:crucible_base", [
+		"ABA",
+		"B B",
+		"ABA"
+	], {
+		A: Casing.INDUSTRY,
+		B: "#forge:plates/cast_iron"
+	})
+
+	kubejs.shapeless("cmi:crucible_tuyere", [
+		"cmi:crucible_base",
+		"immersiveengineering:component_iron"
+	])
+
+	kubejs.shaped("4x immersiveindustry:burning_chamber", [
+		"ABA",
+		"B B",
+		"ABA"
+	], {
+		A: "cmi:crucible_base",
+		B: "#forge:plates/invar"
+	}).id("immersiveindustry:crafting/burning_chamber")
 })

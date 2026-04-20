@@ -44,7 +44,8 @@ ServerEvents.recipes((event) => {
 		"ad_astra:nasa_workbench",
 		"immersiveengineering:fermenter",
 		"immersiveengineering:alloy",
-		"thermal_extra:nitratic_igniter_catalyst"
+		"thermal_extra:nitratic_igniter_catalyst",
+		"createdieselgenerators:hammering"
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({

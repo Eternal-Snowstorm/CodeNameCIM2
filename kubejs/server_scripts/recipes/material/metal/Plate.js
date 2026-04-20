@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, thermal, immersiveengineering } = event.getRecipes()
+	let { createdieselgenerators, create, thermal, immersiveengineering } = event.getRecipes()
 
 	global.metalGroup.forEach((metal) => {
 		const INGOT = `#forge:ingots/${metal}`
@@ -7,6 +7,9 @@ ServerEvents.recipes((event) => {
 
 		if (IngrUtils.isNotNull(PLATE)) {
 			create.pressing(PLATE, [
+				INGOT
+			])
+			createdieselgenerators.hammering(PLATE, [
 				INGOT
 			])
 			thermal.press(PLATE, [
