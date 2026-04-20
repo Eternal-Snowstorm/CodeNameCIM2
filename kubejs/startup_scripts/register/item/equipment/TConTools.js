@@ -17,8 +17,8 @@ StartupEvents.registry("item", (event) => {
 	}
 
 	/**
-	 * 返回CustomBuilderObject可以
-	 * 直接调用createCustom()下的方法
+	 * 返回`CustomBuilderObject`可以
+	 * 直接调用`createCustom()`下的方法
 	 * @param {String} name 注册名称
 	 * @returns 注册匠魂工具物品
 	 */

@@ -15,7 +15,8 @@ function setFluidBucketModel(name) {
 
 /**
  * 
- * @param {Internal.TagKey_<?>} tag 
+ * @template T
+ * @param {Internal.TagKey_<T>} tag 
  * @returns 
  */
 function useJavaTag(tag) {
