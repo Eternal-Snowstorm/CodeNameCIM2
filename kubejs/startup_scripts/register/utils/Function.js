@@ -13,6 +13,16 @@ function setFluidBucketModel(name) {
 	}
 }
 
+/**
+ * 
+ * @template T
+ * @param {Internal.TagKey_<T>} tag 
+ * @returns 
+ */
+function useJavaTag(tag) {
+	return tag.location()
+}
+
 function attachItemHandlerCapability() {
 	return CapabilityBuilder.ITEM.blockEntity()
 		// 允许漏斗或管道提取物品
