@@ -2,8 +2,8 @@ let $ToolDefinition =
 	Java.loadClass("slimeknights.tconstruct.library.tools.definition.ToolDefinition")
 let $ModifiableItem =
 	Java.loadClass("slimeknights.tconstruct.library.tools.item.ModifiableItem")
-let $Item$Properties =
-	Java.loadClass("net.minecraft.world.item.Item$Properties")
+let $TinkerTags$Items =
+	Java.loadClass("slimeknights.tconstruct.common.TinkerTags$Items")
 
 StartupEvents.registry("item", (event) => {
 	/**
@@ -25,7 +25,7 @@ StartupEvents.registry("item", (event) => {
 	function addTConTool(name) {
 		let toolItemBuilder =
 			event.createCustom(`${CmiCore.MODID}:${name}`, () => {
-				return new $ModifiableItem(new $Item$Properties(), addTConToolType(name))
+				return new $ModifiableItem(new Item$Properties(), addTConToolType(name))
 			})
 
 		toolItemBuilder.tag("forge:tools")
@@ -38,19 +38,19 @@ StartupEvents.registry("item", (event) => {
 		.tag("minecraft:pickaxes")
 		.tag("minecraft:axes")
 		.tag("minecraft:shovels")
-		.tag(global.TinkerItemTags.MODIFIABLE)
-		.tag(global.TinkerItemTags.MULTIPART_TOOL)
-		.tag(global.TinkerItemTags.DURABILITY)
-		.tag(global.TinkerItemTags.SMALL_TOOLS)
-		.tag(global.TinkerItemTags.MELEE)
-		.tag(global.TinkerItemTags.HELD)
-		.tag(global.TinkerItemTags.HARVEST)
-		.tag(global.TinkerItemTags.HARVEST_PRIMARY)
-		.tag(global.TinkerItemTags.STONE_HARVEST)
-		.tag(global.TinkerItemTags.INTERACTABLE)
-		.tag(global.TinkerItemTags.INTERACTABLE_RIGHT)
-		.tag(global.TinkerItemTags.NUGGETS_NETHERITE)
-		.tag(global.TinkerItemTags.NUGGETS_NETHERITE_SCRAP)
-		.tag(global.TinkerItemTags.INGOTS_NETHERITE_SCRAP)
-		.tag(global.TinkerItemTags.BONUS_SLOTS)
+		.tag(useJavaTag($TinkerTags$Items.MODIFIABLE))
+		.tag(useJavaTag($TinkerTags$Items.MULTIPART_TOOL))
+		.tag(useJavaTag($TinkerTags$Items.DURABILITY))
+		.tag(useJavaTag($TinkerTags$Items.SMALL_TOOLS))
+		.tag(useJavaTag($TinkerTags$Items.MELEE))
+		.tag(useJavaTag($TinkerTags$Items.HELD))
+		.tag(useJavaTag($TinkerTags$Items.HARVEST))
+		.tag(useJavaTag($TinkerTags$Items.HARVEST_PRIMARY))
+		.tag(useJavaTag($TinkerTags$Items.STONE_HARVEST))
+		.tag(useJavaTag($TinkerTags$Items.INTERACTABLE))
+		.tag(useJavaTag($TinkerTags$Items.INTERACTABLE_RIGHT))
+		.tag(useJavaTag($TinkerTags$Items.NUGGETS_NETHERITE))
+		.tag(useJavaTag($TinkerTags$Items.NUGGETS_NETHERITE_SCRAP))
+		.tag(useJavaTag($TinkerTags$Items.INGOTS_NETHERITE_SCRAP))
+		.tag(useJavaTag($TinkerTags$Items.BONUS_SLOTS))
 })
