@@ -41,6 +41,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("pressure_resistance_casing", "耐压外壳")
 	addBlockLang("smart_casing", "智能机壳")
 	addBlockLang("computing_casing", "计算机壳")
+	addBlockLang("industrial_frame", "工程块框架")
 	addBlockLang("peat_block", "泥炭块")
 	addBlockLang("oil_shale", "油页岩")
 	addBlockLang("combustion_medium_block", "燃烧介质块")
