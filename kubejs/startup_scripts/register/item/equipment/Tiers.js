@@ -27,7 +27,7 @@ ItemEvents.toolTierRegistry((event) => {
 	}
 
 	addToolTier("flint", (tier) => {
-		tier.setUses(150)
+		tier.setUses(72)
 		tier.setEnchantmentValue(5)
 		tier.setRepairIngredient("minecraft:flint")
 	})

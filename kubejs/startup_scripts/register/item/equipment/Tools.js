@@ -52,49 +52,10 @@ StartupEvents.registry("item", (event) => {
 		return new $KnifeItem($Tiers.WOOD, 0.5, -2.0, new Item$Properties())
 	}).tag("forge:tools/knives").tag("forge:tools")
 
-	// // 木质龙头
-	// event.create(`${CmiCore.MODID}:wooden_faucet`)
-	// 	.texture(`${CmiCore.MODID}:item/tool/wooden_faucet`)
-	// 	.maxDamage(75)
-	// 	.unstackable()
-	// 	.tag("cmi:faucet")
-	// 	.tag("forge:tools")
-
-	// // 铸铁龙头
-	// event.create(`${CmiCore.MODID}:cast_iron_faucet`)
-	// 	.texture(`${CmiCore.MODID}:item/tool/cast_iron_faucet`)
-	// 	.maxDamage(1024)
-	// 	.unstackable()
-	// 	.tag("cmi:faucet")
-	// 	.tag("forge:tools")
-
-	// // 钢龙头
-	// event.create(`${CmiCore.MODID}:steel_faucet`)
-	// 	.texture(`${CmiCore.MODID}:item/tool/steel_faucet`)
-	// 	.maxDamage(4096)
-	// 	.unstackable()
-	// 	.tag("cmi:faucet")
-	// 	.tag("forge:tools")
-
-	// // 等离子龙头
-	// event.create(`${CmiCore.MODID}:overcharged_alloy_faucet`)
-	// 	.texture(`${CmiCore.MODID}:item/tool/overcharged_alloy_faucet`)
-	// 	.maxDamage(114514)
-	// 	.unstackable()
-	// 	.tag("cmi:faucet")
-	// 	.tag("forge:tools")
-
 	// 燧石锤
 	event.create(`${CmiCore.MODID}:flint_hammer`, "createdieselgenerators:hammer")
 		.tier(`${CmiCore.MODID}:flint`)
 		.texture(`${CmiCore.MODID}:item/tool/flint_hammer`)
-		.tag("forge:tools")
-		.tag("forge:hammers")
-
-	// 铁锤
-	event.create(`${CmiCore.MODID}:iron_hammer`, "createdieselgenerators:hammer")
-		.tier($Tiers.IRON)
-		.texture(`${CmiCore.MODID}:item/tool/iron_hammer`)
 		.tag("forge:tools")
 		.tag("forge:hammers")
 

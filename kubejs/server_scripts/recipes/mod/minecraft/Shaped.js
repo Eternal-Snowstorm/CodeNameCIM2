@@ -90,14 +90,14 @@ ServerEvents.recipes((event) => {
 		B: "#forge:rods/wooden"
 	})
 
-	kubejs.shaped("cmi:iron_hammer", [
+	kubejs.shaped("createdieselgenerators:hammer", [
 		"AAA",
 		"ABA",
 		" B "
 	], {
 		A: "#forge:ingots/iron",
 		B: "#forge:rods/wooden"
-	})
+	}).id("createdieselgenerators:crafting/hammer")
 
 	kubejs.shaped("cmi:diamond_hammer", [
 		"AAA",
