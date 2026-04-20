@@ -1,5 +1,3 @@
-let $Item$Properties =
-	Java.loadClass("net.minecraft.world.item.Item$Properties")
 let $KnifeItem =
 	Java.loadClass("vectorwing.farmersdelight.common.item.KnifeItem")
 let $Tiers =
@@ -46,12 +44,12 @@ StartupEvents.registry("item", (event) => {
 			isDamageable() {
 				return true
 			}
-		}, $Tiers.NETHERITE, 0.5, -2.0, new $Item$Properties().rarity("epic"))
+		}, $Tiers.NETHERITE, 0.5, -2.0, new Item$Properties().rarity("epic"))
 	}).tag("forge:tools/knives").tag("forge:tools")
 
 	// 木质小刀
 	event.createCustom(`${CmiCore.MODID}:wooden_knife`, () => {
-		return new $KnifeItem($Tiers.WOOD, 0.5, -2.0, new $Item$Properties())
+		return new $KnifeItem($Tiers.WOOD, 0.5, -2.0, new Item$Properties())
 	}).tag("forge:tools/knives").tag("forge:tools")
 
 	// // 木质龙头
