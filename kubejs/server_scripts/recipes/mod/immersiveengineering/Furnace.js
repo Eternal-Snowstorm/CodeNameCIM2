@@ -21,4 +21,10 @@ ServerEvents.recipes((event) => {
 	immersiveengineering.blast_furnace("4x cmi:furnaced_lime")
 		.input("create:limestone")
 		.time(30)
+
+	// 耐火砖
+	immersiveengineering.coke_oven("immersiveindustry:refractory_kiln_brick")
+		.input("cmi:refractory_brick_bloom")
+		.creosote(0)
+		.time(100)
 })
