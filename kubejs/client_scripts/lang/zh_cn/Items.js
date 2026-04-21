@@ -195,6 +195,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("blizz_unit", "暴雪冷凝单元")
 	addItemLang("calcite_dust", "方解石粉")
 	addItemLang("refractory_brick_bloom", "耐火砖坯")
+	addItemLang("andesite_aggregate", "安山混合物")
 	addItemLang("plant_ash", "草木灰")
 
 	let moleList = [
