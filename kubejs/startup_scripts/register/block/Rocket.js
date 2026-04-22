@@ -15,10 +15,10 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock(global.ToolType["axe"])
-		.tagBlock(global.MiningLevel["wooden"])
-		.tagBlock("create:wrench_pickup")
+		.tagBlock(CmiToolType.PICKAXE)
+		.tagBlock(CmiToolType.AXE)
+		.tagBlock(CmiMiningLevel.WOODEN)
+		.tagBlock(CmiGlobal.WRENCH_PICKUP)
 
 	// 火箭框架1
 	addBlock("tier_1_rocket_frame")
