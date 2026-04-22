@@ -171,6 +171,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addItemLang("music_disc_mechanism", "DontkillBelalus - Mechanism")
 	addItemLang("togni_leets", "钢錠")
+	addItemLang("hammer_head", "冲压头")
+	addItemLang("ferrit_core", "铁氧体磁芯")
 
 	addItemLang("reactive_element", "活泼元素")
 	addItemLang("stable_element", "稳定元素")

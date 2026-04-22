@@ -1,37 +1,200 @@
 ServerEvents.recipes((event) => {
-    let { kubejs } = event.getRecipes()
+	let { kubejs, thermal_extra } = event.getRecipes()
 
-    // ME物品元件外壳
-    kubejs.shaped("2x ae2:item_cell_housing", [
-        "XYX",
-        "YMY",
-        "XYX"
-    ], {
-        M: Mechanism.WOODEN.COM,
-        X: "#forge:plates/iron",
-        Y: "ae2:quartz_glass",
-    }).id("ae2:network/cells/item_cell_housing")
+	// ME物品元件外壳
+	kubejs.shaped("2x ae2:item_cell_housing", [
+		"XYX",
+		"YMY",
+		"XYX"
+	], {
+		M: Mechanism.WOODEN.COM,
+		X: "#forge:plates/iron",
+		Y: "ae2:quartz_glass",
+	}).id("ae2:network/cells/item_cell_housing")
 
-    // ME流体元件外壳
-    kubejs.shaped("ae2:fluid_cell_housing", [
-        "XYX",
-        "YMY",
-        "XYX"
-    ], {
-        M: Mechanism.COPPER.COM,
-        X: "#forge:plates/copper",
-        Y: "ae2:quartz_glass"
-    }).id("ae2:network/cells/fluid_cell_housing")
+	// ME流体元件外壳
+	kubejs.shaped("2x ae2:fluid_cell_housing", [
+		"XYX",
+		"YMY",
+		"XYX"
+	], {
+		M: Mechanism.COPPER.COM,
+		X: "#forge:plates/copper",
+		Y: "ae2:quartz_glass"
+	}).id("ae2:network/cells/fluid_cell_housing")
 
-    // ME化学元件外壳
-    kubejs.shaped("appmek:chemical_cell_housing", [
-        "PAP",
-        "AMA",
-        "PAP"
-    ], {
-        P: "#forge:plates/osmium",
-        A: "ae2:quartz_glass",
-        M: Mechanism.AIR.COM
-    }).id("appmek:chemical_cell_housing")
+	// ME化学元件外壳
+	kubejs.shaped("2x appmek:chemical_cell_housing", [
+		"PAP",
+		"AMA",
+		"PAP"
+	], {
+		P: "#forge:plates/osmium",
+		A: "ae2:quartz_glass",
+		M: Mechanism.AIR.COM
+	}).id("appmek:chemical_cell_housing")
 
+	// 网络工具
+	kubejs.shapeless("ae2:network_tool", [
+		"#ae2:quartz_wrench",
+		Mechanism.SMART.COM
+	]).id("ae2:tools/network_tool")
+
+	// 机壳
+	thermal_extra.component_assembly("2x cmi:smart_casing", [
+		"#forge:plates/iron",
+		"#forge:plates/iron",
+		"#forge:plates/silver",
+		"#forge:dusts/certus_quartz",
+		Fluid.of("thermal:resin", 100)
+	])
+
+	// 压印机
+	thermal_extra.component_assembly("ae2:inscriber", [
+		Casing.SMART,
+		Mechanism.SMART.COM,
+		"ae2:fluix_crystal",
+		"cmi:hammer_head"
+	]).id("ae2:network/blocks/inscribers")
+
+	// 存储单元
+	thermal_extra.component_assembly("ae2:cell_component_1k", [
+		"create_connected:control_chip",
+		"#forge:plates/silver",
+		"#forge:dusts/certus_quartz",
+		"cmi:ferrit_core"
+	]).id("ae2:network/cells/item_storage_components_cell_1k_part")
+
+	thermal_extra.component_assembly("ae2:cell_component_4k", [
+		"ae2:logic_processor",
+		"#forge:plates/silver",
+		"ae2:cell_component_1k",
+		"ae2:cell_component_1k",
+		"ae2:cell_component_1k",
+		"ae2:cell_component_1k"
+	]).id("ae2:network/cells/item_storage_components_cell_4k_part")
+
+	thermal_extra.component_assembly("ae2:cell_component_16k", [
+		"ae2:calculation_processor",
+		"#forge:plates/silver",
+		"ae2:cell_component_4k",
+		"ae2:cell_component_4k",
+		"ae2:cell_component_4k",
+		"ae2:cell_component_4k"
+	]).id("ae2:network/cells/item_storage_components_cell_16k_part")
+
+	thermal_extra.component_assembly("ae2:cell_component_64k", [
+		"ae2:engineering_processor",
+		"#forge:plates/silver",
+		"ae2:cell_component_16k",
+		"ae2:cell_component_16k",
+		"ae2:cell_component_16k",
+		"ae2:cell_component_16k"
+	]).id("ae2:network/cells/item_storage_components_cell_64k_part")
+
+	thermal_extra.component_assembly("ae2:cell_component_256k", [
+		"advanced_ae:quantum_processor",
+		"#forge:plates/silver",
+		"ae2:cell_component_64k",
+		"ae2:cell_component_64k",
+		"ae2:cell_component_64k",
+		"ae2:cell_component_64k"
+	]).id("ae2:network/cells/item_storage_components_cell_256k_part")
+
+	// 样板
+	kubejs.shaped("2x ae2:blank_pattern", [
+		"PGP",
+		"GMG",
+		"PGP"
+	], {
+		P: "#forge:plates/iron",
+		G: "ae2:quartz_glass",
+		M: Mechanism.SMART.COM
+	}).id("ae2:network/crafting/patterns_blank")
+
+	// 内存卡
+	kubejs.shaped("ae2:memory_card", [
+		"PMP",
+		"WEW"
+	], {
+		P: "#forge:plates/iron",
+		M: Mechanism.SMART.COM,
+		W: "#forge:wires/redstone",
+		E: "#forge:plates/electrum"
+	}).id("ae2:tools/network_memory_card")
+
+	// 充能器
+	kubejs.shaped("ae2:charger", [
+		"P P",
+		" M ",
+		"P P"
+	], {
+		P: "#forge:plates/iron",
+		M: Mechanism.COIL.COM
+	}).id("ae2:network/blocks/crystal_processing_charger")
+
+	// 高级充能器
+	kubejs.shaped("expatternprovider:ex_charger", [
+		"PCP",
+		"CMC",
+		"PCP"
+	], {
+		P: "#forge:plates/iron",
+		C: Mechanism.COIL.COM,
+		M: Mechanism.SMART.COM
+	}).id("expatternprovider:ex_charger")
+
+	// 无线发信
+	thermal_extra.component_assembly("ae2:wireless_receiver", [
+		"ae2:fluix_pearl",
+		"create:transmitter",
+		"#forge:plates/iron"
+	]).id("ae2:network/wireless_part")
+
+	thermal_extra.component_assembly("ae2:wireless_access_point", [
+		Casing.SMART,
+		Mechanism.SMART.COM,
+		"ae2:wireless_receiver"
+	]).id("ae2:network/wireless_access_point")
+
+	// 控制器
+	kubejs.shaped("ae2:controller", [
+		"MSM",
+		"SCS",
+		"MSM"
+	], {
+		M: Mechanism.SMART.COM,
+		S: "ae2:sky_dust",
+		C: Casing.SMART
+	}).id("ae2:network/blocks/controller")
+
+	// 驱动器
+	thermal_extra.component_assembly("ae2:drive", [
+		Casing.SMART,
+		Mechanism.SMART.COM,
+		"cmi:ferrit_core",
+		"#forge:gems/fluix"
+	]).id("ae2:network/blocks/storage_drive")
+
+	// 照明面板
+	thermal_extra.component_assembly("ae2:semi_dark_monitor", [
+		"ae2:quartz_glass",
+		Mechanism.PHOTO.COM,
+		"#forge:plates/silver",
+		"#forge:wires/redstone"
+	]).id("ae2:network/parts/panels_semi_dark_monitor")
+
+	// 破坏核心
+	thermal_extra.component_assembly("2x ae2:annihilation_core", [
+		Mechanism.SMART.COM,
+		"#forge:dusts/fluix",
+		"#forge:ingots/refined_radiance"
+	]).id("ae2:materials/annihilationcore")
+
+	// 成型核心
+	thermal_extra.component_assembly("2x ae2:formation_core", [
+		Mechanism.SMART.COM,
+		"#forge:dusts/fluix",
+		"#forge:ingots/shadow_steel"
+	]).id("ae2:materials/formationcore")
 })

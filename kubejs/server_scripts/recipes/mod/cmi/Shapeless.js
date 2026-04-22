@@ -26,6 +26,12 @@ ServerEvents.recipes((event) => {
 		"cmi:peat_block"
 	])
 
+	// 暗影钢
+	kubejs.shapeless("create:shadow_steel", [
+		"create:chromatic_compound",
+		"#forge:dusts/void"
+	])
+
 	// 合成蓝图
 	kubejs.shapeless("create:crafting_blueprint", [
 		"#forge:nuggets/iron",

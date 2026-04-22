@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
 	], {
 		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
-		X: ["#forge:storage_blocks/iron", "#forge:storage_blocks/zinc"]
+		X: "cmi:hammer_head"
 	}).id("create:crafting/kinetics/mechanical_press")
 
 	// 动力搅拌器

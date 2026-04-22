@@ -80,6 +80,12 @@ ServerEvents.recipes((event) => {
 		["#forge:dusts/iron", "#forge:ingots/iron"],
 	])
 
+	thermal.smelter("ae2:fluix_pearl", [
+		"minecraft:ender_pearl",
+		"#forge:dusts/fluix",
+		"#forge:gems/fluix"
+	]).id("ae2:misc/fluixpearl")
+
 	// 太空三金属
 	// thermal.smelter([
 	// 	"2x ad_astra:desh_ingot",

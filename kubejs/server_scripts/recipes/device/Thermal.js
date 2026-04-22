@@ -162,7 +162,7 @@ ServerEvents.recipes((event) => {
 		Casing.THERMAL,
 		Mechanism.REINFORCED.COM,
 		"cmi:basalz_unit",
-		"#forge:storage_blocks/iron"
+		"cmi:hammer_head"
 	]).id("thermal:machine_press")
 
 	// 狂风单元

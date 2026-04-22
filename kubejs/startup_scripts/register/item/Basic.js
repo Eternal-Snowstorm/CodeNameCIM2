@@ -77,12 +77,6 @@ StartupEvents.registry("item", (event) => {
 		})
 		.tag("create:blaze_burner_fuel/special")
 
-	// 电动机转子
-	addMaterial("motor_rotor")
-
-	// 共振管
-	addMaterial("resonant_tube")
-
 	// 热力单元
 	addItem("thermal_unit")
 		.texture(`${CmiCore.MODID}:item/material/unit/thermal`)
@@ -103,51 +97,55 @@ StartupEvents.registry("item", (event) => {
 	addItem("blizz_unit")
 		.texture(`${CmiCore.MODID}:item/material/unit/blizz`)
 
+	// 小块焦炭
+	addItem("small_coal_coke")
+		.burnTime(400)
+		.texture(`${CmiCore.MODID}:item/material/small_coal_coke`)
+
+	// 电动机转子
+	addMaterial("motor_rotor")
+
+	// 共振管
+	addMaterial("resonant_tube")
+
 	// 硅混合物
 	addMaterial("silicon_mixure")
 
 	// 硅橡胶
 	addMaterial("silicon_rubber")
 
-	// 小块焦炭
-	addItem("small_coal_coke")
-		.burnTime(400)
-		.texture(`${CmiCore.MODID}:item/material/small_coal_coke`)
-
 	// 升级模板
-	addItem("drawer_upgrade_template")
-		.texture(`${CmiCore.MODID}:item/material/drawer_upgrade_template`)
+	addMaterial("drawer_upgrade_template")
 
 	// 橡胶树皮
-	addItem("rubber_tree_bark")
-		.texture(`${CmiCore.MODID}:item/material/rubber_tree_bark`)
+	addMaterial("rubber_tree_bark")
 
 	// 草纤维
-	addItem("grass_fiber")
-		.texture(`${CmiCore.MODID}:item/material/grass_fiber`)
+	addMaterial("grass_fiber")
 
 	// 草绳
-	addItem("grass_string")
-		.texture(`${CmiCore.MODID}:item/material/grass_string`)
+	addMaterial("grass_string")
 		.tag("forge:string")
 
 	// 溴化阻燃剂
-	addItem("brominated_flame_retardants")
-		.texture(`${CmiCore.MODID}:item/material/brominated_flame_retardants`)
+	addMaterial("brominated_flame_retardants")
 
 	// 阻燃塑料
-	addItem("flame_retardant_plastic")
-		.texture(`${CmiCore.MODID}:item/material/flame_retardant_plastic`)
+	addMaterial("flame_retardant_plastic")
 
 	// 冷却设备
-	addItem("nuke_cooler")
-		.texture(`${CmiCore.MODID}:item/material/nuke_cooler`)
+	addMaterial("nuke_cooler")
+
+	// 冲压头
+	addMaterial("hammer_head")
 
 	// 红石线
-	addItem("redstone_wire")
-		.texture(`${CmiCore.MODID}:item/material/redstone_wire`)
+	addMaterial("redstone_wire")
 		.tag("forge:wires/redstone")
 		.tag("forge:wires")
+
+	// 铁氧体磁芯	
+	addMaterial("ferrit_core")
 
 	// 羊皮纸
 	addItem("parchment")

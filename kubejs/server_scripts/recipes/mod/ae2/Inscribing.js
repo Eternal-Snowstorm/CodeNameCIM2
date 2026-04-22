@@ -20,4 +20,16 @@ ServerEvents.recipes((event) => {
 		"mode": "press",
 		"result": Item.of("cmi:inscribed_silicon").toJson()
 	})
+
+	// 铁氧体磁芯
+	event.custom({
+		"type": "ae2:inscriber",
+		"ingredients": {
+			"bottom": Ingredient.of("#forge:plates/nickel").toJson(),
+			"middle": Ingredient.of("#forge:plates/iron").toJson(),
+			"top": Ingredient.of("#forge:plates/zinc").toJson()
+		},
+		"mode": "press",
+		"result": Item.of("cmi:ferrit_core").toJson()
+	})
 })

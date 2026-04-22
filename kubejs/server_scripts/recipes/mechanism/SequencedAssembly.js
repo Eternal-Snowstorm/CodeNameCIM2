@@ -465,7 +465,7 @@ ServerEvents.recipes((event) => {
 		.input("#forge:plates/silver")
 		.part(Mechanism.PART.ENGIN)
 		.filling2("immersiveengineering:redstone_acid", 100)
-		.deploying3("ae2:sky_dust")
+		.deploying3("ae2:printed_silicon")
 		.build()
 
 	// 金质

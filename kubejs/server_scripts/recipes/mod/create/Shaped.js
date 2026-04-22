@@ -32,6 +32,22 @@ ServerEvents.recipes((event) => {
 		W: "#forge:wires/copper"
 	}).id('create:crafting/materials/transmitter')
 
+	// 冲压头
+	kubejs.shaped("cmi:hammer_head", [
+		"PPP",
+		"III",
+		"PPP"
+	], {
+		P: [
+			"#forge:plates/iron",
+			"#forge:plates/andesite_alloy"
+		],
+		I: [
+			"#forge:ingots/iron",
+			"#forge:ingots/andesite_alloy"
+		]
+	})
+
 	// 吸管
 	kubejs.shaped("3x createaddition:straw", [
 		"A A",
