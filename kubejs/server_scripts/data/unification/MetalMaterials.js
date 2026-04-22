@@ -33,7 +33,7 @@ ServerEvents.highPriorityData((event) => {
 	// 遍历金属材料类型
 	materialType.forEach((type) => {
 		// 遍历金属类型
-		global.metalGroup.forEach((material) => {
+		CmiMetalRegistry.getAll().forEach((material) => {
 			/**
 			 * 声明所需变量
 			 * 
@@ -79,7 +79,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 粗矿
-	global.metalGroup.forEach((material) => {
+	CmiMetalRegistry.getAll().forEach((material) => {
 		/**
 		 * 声明所需变量
 		 * @param {String} tag 当前正在遍历的物品tag
@@ -124,7 +124,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 粗矿块
-	global.metalGroup.forEach((material) => {
+	CmiMetalRegistry.getAll().forEach((material) => {
 		/**
 		 * 声明所需变量
 		 * @param {String} tag 当前正在遍历的物品tag

@@ -1,47 +1,5 @@
 StartupEvents.registry("block", (event) => {
-	let machineBlockRegister = [
-		"nature",
-		"wooden",
-		"stone",
-		"iron",
-		"copper",
-		"andesite",
-		"photosensitive",
-		"gold",
-		"cobalt",
-		"nether",
-		"thermal",
-		"reinforced",
-		"resonant",
-		"railway",
-		"ender",
-		"light_engineering",
-		"heavy_engineering",
-		"enchanted",
-		"smart",
-		"computing",
-		"tier_1_aviation",
-		"tier_2_aviation",
-		"tier_3_aviation",
-		"tier_4_aviation",
-		"basic_mekanism",
-		"advanced_mekanism",
-		"elite_mekanism",
-		"ultimate_mekanism",
-		"air_tight",
-		"nuclear",
-		"antimatter",
-		"coil",
-		"sculk",
-		"colorful",
-		"creative",
-		"potion",
-		"precision",
-		"redstone",
-		"bronze",
-		"pig_iron"
-	]
-	machineBlockRegister.forEach((type) => {
+	CmiGlobal.mechanismGroup.forEach((type) => {
 		event.create(`${CmiCore.MODID}:${type}_machine`, "cardinal")
 			.soundType(SoundType.METAL)
 			.waterlogged()
@@ -58,9 +16,9 @@ StartupEvents.registry("block", (event) => {
 				entity.rightClickOpensInventory()
 				entity.attachCapability(attachItemHandlerCapability())
 			})
-			.tagBlock(global.ToolType["pickaxe"])
-			.tagBlock(global.MiningLevel["wooden"])
-			.tagBlock(global.WRENCH_PICKUP)
+			.tagBlock(CmiToolType.PICKAXE)
+			.tagBlock(CmiMiningLevel.WOODEN)
+			.tagBlock(CmiGlobal.WRENCH_PICKUP)
 			.tag("cmi:machine_block")
 			.tag(`cmi:machine_block/${type}`)
 	})

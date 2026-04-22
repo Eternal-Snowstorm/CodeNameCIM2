@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	global.mechanismGroup.forEach((material) => {
+	CmiGlobal.mechanismGroup.forEach((material) => {
 		event.custom({
 			"type": "custommachinery:custom_machine",
 			"machine": `${CmiCore.MODID}:flash_disk_writer`,

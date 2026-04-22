@@ -18,8 +18,8 @@ StartupEvents.registry("block", (event) => {
 			.requiresTool(true)
 			.textureAll("cmi:block/custom/reinforced_concrete/reinforced_concrete")
 			.color(color)
-			.tagBlock(global.ToolType["pickaxe"])
-			.tagBlock(global.MiningLevel["iron"])
+			.tagBlock(CmiToolType.PICKAXE)
+			.tagBlock(CmiMiningLevel.IRON)
 			.tagBlock("ae2:blacklisted/spatial")
 			.tagBlock("mekanism:cardboard_blacklist")
 			.hardness(50)
@@ -78,7 +78,6 @@ StartupEvents.registry("block", (event) => {
 		.resistance(-1)
 		.model(`${CmiCore.MODID}:block/modem`)
 		.notSolid()
-
 
 	addBlock(`broken_modem`)
 		.soundType(SoundType.NETHERITE_BLOCK)
