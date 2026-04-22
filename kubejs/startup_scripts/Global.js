@@ -72,7 +72,7 @@ global.ToolType = {
  * 
  * @type {string[]}
  */
-global.dyeColorGroup = [
+global.CmiGlobal.DYE_COLOR_GROUP = [
 	"black",
 	"blue",
 	"brown",

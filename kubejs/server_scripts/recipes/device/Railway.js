@@ -81,7 +81,7 @@ ServerEvents.recipes((event) => {
 	]).id("railways:crafting/remote_lens")
 
 	// 邮箱
-	global.dyeColorGroup.forEach((color) => {
+	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		kubejs.shaped(`2x create:${color}_postbox`, [
 			"D",
 			"B",

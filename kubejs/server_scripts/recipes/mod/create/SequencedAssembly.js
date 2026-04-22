@@ -247,7 +247,7 @@ ServerEvents.recipes((event) => {
 
 
 	// 列车帽
-	global.dyeColorGroup.forEach((color) => {
+	global.CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		let hat = seqItems(`railways:${color}_conductor_cap`, `minecraft:${color}_wool`, `railways:${color}_incomplete_conductor_cap`)
 		new SequencedAssemblyRecipe(hat)
 			.deploying(Mechanism.RAILWAY.COM)

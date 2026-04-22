@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 
-	// global.dyeColorGroup.forEach((dye) => {
+	// global.CmiGlobal.DYE_COLOR_GROUP.forEach((dye) => {
 	// 	event.replaceInput({}, `minecraft:${dye}_dye`, `#forge:dyes/${dye}`)
 	// })
 
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
 		})
 	})
 
-	global.dyeColorGroup.forEach((color) => {
+	global.CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		event.forEachRecipe({
 			input: `minecraft:${color}_dye`
 		}, (recipe) => {

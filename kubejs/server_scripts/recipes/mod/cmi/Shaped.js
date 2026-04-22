@@ -136,7 +136,7 @@ ServerEvents.recipes((event) => {
 	}).id("thermalendergy:vibrating_core")
 
 	// 旗帜
-	global.dyeColorGroup.forEach((color) => {
+	global.CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		kubejs.shaped(`ad_astra:${color}_flag`, [
 			"RFF",
 			"RFF",
