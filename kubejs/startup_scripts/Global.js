@@ -66,38 +66,6 @@ global.ToolType = {
 	shovel: "minecraft:mineable/shovel",
 	hoe: "minecraft:mineable/hoe"
 }
-
-/**
- * 所有染料颜色
- * 
- * @type {string[]}
- */
-global.dyeColorGroup = [
-	"black",
-	"blue",
-	"brown",
-	"cyan",
-	"gray",
-	"green",
-	"light_blue",
-	"light_gray",
-	"lime",
-	"magenta",
-	"orange",
-	"pink",
-	"purple",
-	"red",
-	"white",
-	"yellow"
-]
-// /**
-//  * 所有废弃流体
-//  * 
-//  * @type {string[]}
-//  */
-// global.wasteFluid = [
-// 	"thermal_extra:gasoline"
-// ]
 /**
  * 所有构件
  * 

@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 		})
 	})
 
-	global.dyeColorGroup.forEach((color) => {
+	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		removeRecipeIds.push(`createdeco:${color}_shipping_container`)
 	})
 })
