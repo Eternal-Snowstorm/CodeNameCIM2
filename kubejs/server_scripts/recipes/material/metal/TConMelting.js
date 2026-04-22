@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { tconstruct } = event.getRecipes()
 
-	global.metalGroup.forEach((metal) => {
+	CmiMetalRegistry.getAll().forEach((metal) => {
 		event.remove([
 			{
 				id: new RegExp(`^tconstruct:smeltery/melting/metal/${metal}/.+`)

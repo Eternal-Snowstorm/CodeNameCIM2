@@ -1,7 +1,8 @@
 ServerEvents.recipes((event) => {
 	let { thermal, immersiveengineering } = event.getRecipes()
 
-	global.metalGroup.forEach((metal) => {
+	CmiMetalRegistry.getAll()
+	CmiMetalRegistry.getAll().forEach((metal) => {
 		const INGOT = `#forge:ingots/${metal}`
 		const NUGGET = `#forge:nuggets/${metal}`
 		const COIN = `#forge:coins/${metal}`

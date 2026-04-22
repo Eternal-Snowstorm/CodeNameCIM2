@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { thermal, tconstruct } = event.getRecipes()
 
-	global.metalGroup.forEach((metal) => {
+	CmiMetalRegistry.getAll().forEach((metal) => {
 		let fluid = IngrUtils.getFirstFluidId(`tconstruct:molten_${metal}`)
 
 		if (fluid === null) {

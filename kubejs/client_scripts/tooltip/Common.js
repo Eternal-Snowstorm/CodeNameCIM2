@@ -95,12 +95,12 @@ ItemEvents.tooltip((event) => {
 	})
 
 	// 燃料温度
-	global.fuelList.forEach((fuel) => {
+	CmiGlobal.FUEL_TEMPERATURES.forEach((fuel, temperatures) => {
 		let bucket = `${fuel}_bucket`
 		/**
 		 * @type {number}
 		 */
-		let tp = global.fuelTemperatures[fuel]
+		let tp = temperatures
 
 		if (typeof tp === "number") {
 			let translatable = Component.translatable(

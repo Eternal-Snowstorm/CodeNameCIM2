@@ -101,7 +101,7 @@ ServerEvents.recipes((event) => {
 			type: "minecraft:smelting"
 		}
 	])
-	global.metalGroup.forEach((metal) => {
+	CmiMetalRegistry.getAll().forEach((metal) => {
 		event.remove([
 			{
 				type: "minecraft:crafting_shaped",
