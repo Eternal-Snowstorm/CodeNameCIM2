@@ -33,9 +33,9 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock(global.MiningLevel["stone"])
-		.tagBlock("create:wrench_pickup")
+		.tagBlock(CmiToolType.PICKAXE)
+		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiGlobal.WRENCH_PICKUP)
 
 	// 火箭框架2
 	addBlock("tier_2_rocket_frame")
@@ -50,9 +50,9 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock(global.MiningLevel["iron"])
-		.tagBlock("create:wrench_pickup")
+		.tagBlock(CmiToolType.PICKAXE)
+		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiGlobal.WRENCH_PICKUP)
 
 	// 火箭框架3
 	addBlock("tier_3_rocket_frame")
@@ -67,9 +67,9 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock(global.MiningLevel["iron"])
-		.tagBlock("create:wrench_pickup")
+		.tagBlock(CmiToolType.PICKAXE)
+		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiGlobal.WRENCH_PICKUP)
 
 	// 火箭框架4
 	addBlock("tier_4_rocket_frame")
@@ -84,9 +84,9 @@ StartupEvents.registry("block", (event) => {
 		.defaultTranslucent()
 		.requiresTool(false)
 		.box(0, 0, 0, 16, 45, 16, true)
-		.tagBlock(global.ToolType["pickaxe"])
-		.tagBlock(global.MiningLevel["iron"])
-		.tagBlock("create:wrench_pickup")
+		.tagBlock(CmiToolType.PICKAXE)
+		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiGlobal.WRENCH_PICKUP)
 
 	// // 火箭设备
 	// // 控制器
