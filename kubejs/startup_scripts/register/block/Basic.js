@@ -149,5 +149,5 @@ StartupEvents.registry("block", (event) => {
 		.hardness(0.5)
 		.resistance(0.5)
 		.tagBlock("minecraft:sand")
-		.tagBlock(global.ToolType["shovel"])
+		.tagBlock(CmiToolType.SHOVEL)
 })
