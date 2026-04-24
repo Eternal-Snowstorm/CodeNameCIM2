@@ -94,7 +94,7 @@ CMI Dev.json
 config/nebula/value.txt
 !/config/nebula*
 !/config/alexscaves_biome_generation
-!/config/openloader
+!/config/paxi
 !/config/blockswap
 !/config/drippyloadingscreen/
 !/config/fancymenu/
