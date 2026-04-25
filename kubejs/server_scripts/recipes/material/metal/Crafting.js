@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { kubejs } = event.getRecipes()
 
 	CmiMetalRegistry.getAll().forEach((material) => {
-		let metal = material.getId().toString()
+		let metal = material.getId()
 		const INGOT = `#forge:ingots/${metal}`
 		const NUGGET = `#forge:nuggets/${metal}`
 		const BLOCK = `#forge:storage_blocks/${metal}`

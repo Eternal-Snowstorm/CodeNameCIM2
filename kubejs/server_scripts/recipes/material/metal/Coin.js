@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 
 	CmiMetalRegistry.getAll()
 	CmiMetalRegistry.getAll().forEach((material) => {
-		let metal = material.getId().toString()
+		let metal = material.getId()
 		const INGOT = `#forge:ingots/${metal}`
 		const NUGGET = `#forge:nuggets/${metal}`
 		const COIN = `#forge:coins/${metal}`

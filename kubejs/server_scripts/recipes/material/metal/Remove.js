@@ -102,7 +102,7 @@ ServerEvents.recipes((event) => {
 		}
 	])
 	CmiMetalRegistry.getAll().forEach((material) => {
-		let metal = material.getId().toString()
+		let metal = material.getId()
 		event.remove([
 			{
 				type: "minecraft:crafting_shaped",

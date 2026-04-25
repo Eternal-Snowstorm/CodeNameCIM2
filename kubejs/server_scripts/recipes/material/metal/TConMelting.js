@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { tconstruct } = event.getRecipes()
 
 	CmiMetalRegistry.getAll().forEach((material) => {
-		let metal = material.getId().toString()
+		let metal = material.getId()
 
 		event.remove([
 			{
@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
 			}
 		])
 
-		let meltingPoint = global.meltingPoints[metal]
+		let meltingPoint = CmiMetalRegistry.getMetal(metal).getMeltingPoint()
 		let fluidId = IngrUtils.getFirstFluidId(`tconstruct:molten_${metal}`)
 		let namespace = global.materialNamespace[metal]
 		let ingot = `#forge:ingots/${metal}`
