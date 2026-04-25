@@ -1,39 +1,40 @@
 ServerEvents.recipes((event) => {
-    let { createaddition, thermal, immersiveengineering } = event.getRecipes()
+	let { createaddition, thermal, immersiveengineering } = event.getRecipes()
 
-    CmiMetalRegistry.getAll().forEach((metal) => {
-        const INGOT = `#forge:ingots/${metal}`
-        const WIRE = `#forge:wires/${metal}`
-        const PLATE = `#forge:plates/${metal}`
+	CmiMetalRegistry.getAll().forEach((material) => {
+		let metal = material.getId().toString()
+		const INGOT = `#forge:ingots/${metal}`
+		const WIRE = `#forge:wires/${metal}`
+		const PLATE = `#forge:plates/${metal}`
 
-        if (IngrUtils.isNotNull(WIRE)) {
-            createaddition.rolling(`2x ${WIRE}`, [
-                PLATE
-            ])
+		if (IngrUtils.isNotNull(WIRE)) {
+			createaddition.rolling(`2x ${WIRE}`, [
+				PLATE
+			])
 
-            thermal.press(`2x ${WIRE}`, [
-                INGOT,
-                "cmi:wire_mold"
-            ])
+			thermal.press(`2x ${WIRE}`, [
+				INGOT,
+				"cmi:wire_mold"
+			])
 
-            immersiveengineering.metal_press(`2x ${WIRE}`)
-                .input(INGOT)
-                .mold("cmi:wire_mold")
-        } else {
-            console.warn(`No wire found for ${metal}!`)
-        }
+			immersiveengineering.metal_press(`2x ${WIRE}`)
+				.input(INGOT)
+				.mold("cmi:wire_mold")
+		} else {
+			console.warn(`No wire found for ${metal}!`)
+		}
 
-        event.remove([
-            {
-                type: "createaddition:rolling",
-                output: WIRE
-            }, {
-                type: "immersiveengineering:metal_press",
-                output: WIRE
-            }, {
-                type: "thermal:press",
-                output: WIRE
-            }
-        ])
-    })
+		event.remove([
+			{
+				type: "createaddition:rolling",
+				output: WIRE
+			}, {
+				type: "immersiveengineering:metal_press",
+				output: WIRE
+			}, {
+				type: "thermal:press",
+				output: WIRE
+			}
+		])
+	})
 })
