@@ -29,7 +29,6 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("createaddition:seed_oil")
 	addCommonTooltip("#cmi:machine_block")
 	addCommonTooltip("ad_astra:ice_shard")
-	addCommonTooltip("cmi:grass_fiber")
 	addCommonTooltip("#cmi:broken_drill_heads")
 	addCommonTooltip("portality:controller")
 	addCommonTooltip("cmi:parchment")

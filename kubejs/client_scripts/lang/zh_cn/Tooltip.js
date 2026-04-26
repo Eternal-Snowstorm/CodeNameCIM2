@@ -55,7 +55,6 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`jei.info.${key}`.replace(":", "."), value)
 	}
 
-	addCommonTooltipLang("cmi:grass_fiber", "§c使用{#forge:tools/knives, 1}小刀右键{#cmi:grass_fiber, 1}草会掉落")
 	addCommonTooltipLang("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
 	addCommonTooltipLang("#cmi:machine_block", "只有装饰作用(暂时)")
 	addCommonTooltipLang("cmi:pig_iron_mechanism", "可无限次食用")
@@ -85,9 +84,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("#cmi:special_ores", "该矿石只能在蒸汽矿石处理机内处理")
 	addCommonTooltipLang("#cmi:multiblock_machine_controller", "制作多方块接口时不消耗")
 	addCommonTooltipLang("cmi:stone_plate", "把字刻在石头上")
-	addCommonTooltipLang("createaddition:bioethanol", "§c此液体废弃, 无法合成! ")
-	addCommonTooltipLang("thermal_extra:diesel", "§c此液体废弃, 无法合成! ")
-	addCommonTooltipLang("createaddition:seed_oil", "§c此液体废弃, 无法合成! ")
 	addCommonTooltipLang("cmi:creosote_wood_chip_briquette", "能吃哦")
 	addCommonTooltipLang("#forge:ingots/siltsteel", "自浑浊淤泥中升华, 历经繁复萃取与催化精炼, 终获此一泓清冽碧波")
 	addCommonTooltipLang("cmi:overcharged_alloy_faucet", "§c所以你的意思是...你就拿超载合金锭做了这个?")

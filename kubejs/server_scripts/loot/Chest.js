@@ -6,9 +6,9 @@ LootJS.modifiers((event) => {
 		// 石板
 		.removeLoot("alexscaves:cave_tablet")
 		.addAlternativesLoot(
-			setChanceLoot("minecraft:raw_gold", 0.15),
-			setChanceLoot("minecraft:gold_ingot", 0.3),
-			setChanceLoot("minecraft:diamond", 0.05)
+			LootUtils.setChanceLoot("minecraft:raw_gold", 0.15),
+			LootUtils.setChanceLoot("minecraft:gold_ingot", 0.3),
+			LootUtils.setChanceLoot("minecraft:diamond", 0.05)
 		)
 
 	/**
