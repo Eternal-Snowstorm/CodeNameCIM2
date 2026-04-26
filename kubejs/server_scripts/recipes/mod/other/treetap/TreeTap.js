@@ -3,8 +3,8 @@ ServerEvents.recipes((event) => {
 
 	// 橡胶树
 	treetap.tap_extract(
-		"3x thermal:rubber",
-		"#forge:rubberwood_logs",
+		"thermal:latex_bucket",
+		"#forge:stripped_logs/rubberwood",
 		"thermal:latex"
 	).processing_time(20 * 200)
 
@@ -15,5 +15,5 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#minecraft:planks",
 		B: "#forge:tools/knives"
-	}).id("treetap:tap").damageIngredient("#forge:tools/knives")
+	}).id("treetap:tap").damageIngredient("#forge:tools/knives", 50)
 })

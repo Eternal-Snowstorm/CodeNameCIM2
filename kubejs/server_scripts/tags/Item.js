@@ -36,6 +36,12 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	event.get("forge:stripped_logs/rubberwood")
+		.add([
+			"thermal:stripped_rubberwood_wood",
+			"thermal:stripped_rubberwood_log"
+		])
+
 	event.get("create:copycats")
 		.add([
 			"create:copycat_panel",
