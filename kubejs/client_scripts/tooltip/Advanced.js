@@ -1,20 +1,4 @@
 ItemEvents.tooltip((event) => {
-	addAccelerateTooltip("cmi:stone_mechanism")
-	addAccelerateTooltip("cmi:andesite_mechanism")
-	addAccelerateTooltip("cmi:copper_mechanism")
-	addAccelerateTooltip("cmi:iron_mechanism")
-	addAccelerateTooltip("cmi:gold_mechanism")
-	addAccelerateTooltip("cmi:ender_mechanism")
-	addAccelerateTooltip("vintageimprovements:redstone_module")
-	addAccelerateTooltip("cmi:enchanted_mechanism")
-	addAccelerateTooltip("cmi:nether_mechanism")
-	addAccelerateTooltip("cmi:cobalt_mechanism")
-	addAccelerateTooltip("cmi:wooden_mechanism")
-	addAccelerateTooltip("cmi:smart_mechanism")
-	addAccelerateTooltip("cmi:tier_2_aviation_mechanism")
-	addAccelerateTooltip("cmi:tier_3_aviation_mechanism")
-	addAccelerateTooltip("cmi:air_tight_mechanism")
-	addAccelerateTooltip("create:precision_mechanism")
 
 	// 制作组fumo
 	addAdvancedTooltip("cmi:re_construction")
@@ -32,25 +16,6 @@ ItemEvents.tooltip((event) => {
 	addAdvancedTooltip("cmi:flash_yi")
 	addAdvancedTooltip("cmi:keyxeldesu")
 	addAdvancedTooltip("cmi:sergei")
-	/**
-	 * 
-	 * @param {Internal.Ingredient_} ingredient 
-	 */
-	function addAccelerateTooltip(ingredient) {
-		event.addAdvanced(ingredient, (item, advanced, tooltip) => {
-			if (event.shift) {
-				let lines = Component.translatable(`tooltip.${item.getId()}.accelerate`
-					.replace(":", "."))
-					.string
-					.split("\n")
-				lines.forEach((line) => {
-					tooltip.add(line)
-				})
-			} else {
-				tooltip.add(Component.translatable(`tooltip.${CmiCore.MODID}.acceleratable`))
-			}
-		})
-	}
 
 	/**
 	 * 
