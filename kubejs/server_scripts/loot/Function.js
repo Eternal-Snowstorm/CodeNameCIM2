@@ -9,8 +9,8 @@ let LootUtils = {
 	 */
 	setChanceLoot: function (lootItem, chance) {
 		return LootEntry.of(lootItem)
-			.when((loot) => {
-				loot.randomChance(chance)
+			.when((container) => {
+				container.randomChance(chance)
 			})
 	}
 }
