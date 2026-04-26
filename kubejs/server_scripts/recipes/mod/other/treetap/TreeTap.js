@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
 	// 橡胶树
 	treetap.tap_extract(
 		"thermal:latex_bucket",
-		"#forge:stripped_logs/rubberwood",
+		"#forge:rubberwood_logs",
 		"thermal:latex"
 	).processing_time(20 * 200)
 
