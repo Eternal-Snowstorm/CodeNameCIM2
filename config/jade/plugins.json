@@ -133,6 +133,9 @@
   "kaleidoscope_tavern": {
     "barrel": true
   },
+  "edenring": {
+    "gravity_compressor": true
+  },
   "industrial_platform": {
     "common": true
   },

@@ -8,3 +8,4 @@ function modifyDisplayName(modid, name) {
 }
 
 modifyDisplayName("moreburners", "Create: More Burners")
+modifyDisplayName("edenring", "Ring of Eden")
