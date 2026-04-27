@@ -133,4 +133,5 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:keyxeldesu", "美工")
 	addCommonTooltipLang("cmi:sergei", "整合包建筑设计")
 	addCommonTooltipLang("cmi:ein_nameuwu", "策划")
+	addCommonTooltipLang("cmi:astral_core", "用于激活{cmi:eden_crystal, 1}星环传送门的核心\n§c请小心落雷")
 })

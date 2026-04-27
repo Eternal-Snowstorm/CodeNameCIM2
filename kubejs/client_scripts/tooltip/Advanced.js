@@ -17,6 +17,9 @@ ItemEvents.tooltip((event) => {
 	addAdvancedTooltip("cmi:keyxeldesu")
 	addAdvancedTooltip("cmi:sergei")
 
+	// 繁星核心
+	addAdvancedTooltip("cmi:astral_core")
+
 	/**
 	 * 
 	 * @param {Internal.Ingredient_} ingredient 

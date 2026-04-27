@@ -174,13 +174,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("hammer_head", "冲压头")
 	addItemLang("ferrit_core", "铁氧体磁芯")
 
-	addItemLang("reactive_element", "活泼元素")
-	addItemLang("stable_element", "稳定元素")
-	addItemLang("explosive_element", "爆鸣元素")
-
-	addItemLang("reactive_element_basement", "活泼元素混合物")
-	addItemLang("stable_element_basement", "稳定元素混合物")
-	addItemLang("explosive_element_basement", "爆鸣元素混合物")
+	addItemLang("astral_core", "繁星核心")
 
 	addItemLang("trinitrotoluene", "三硝基甲苯")
 	addItemLang("nitrocellulose", "硝化纤维")
