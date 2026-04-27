@@ -142,6 +142,23 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(CmiMiningLevel.IRON)
 		.defaultCutout()
 
+	// 伊甸水晶
+	addBlock("eden_crystal")
+		.soundType(SoundType.AMETHYST)
+		.hardness(5)
+		.resistance(5)
+		.tagBlock(CmiToolType.PICKAXE)
+		.tagBlock(CmiMiningLevel.IRON)
+
+	// 黄铜楼梯
+	addBlock("brass_stair", "stairs")
+		.textureAll("create:block/brass_block")
+		.soundType(SoundType.METAL)
+		.hardness(5)
+		.resistance(5)
+		.tagBlock(CmiToolType.PICKAXE)
+		.tagBlock(CmiMiningLevel.IRON)
+
 	// 辐射沙
 	addBlock("radsand", "falling")
 		.textureAll(Cmi.loadResource(`block/radsand`))
