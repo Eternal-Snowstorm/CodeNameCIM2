@@ -8,7 +8,7 @@ StartupEvents.registry("item", (event) => {
     function addColorIngotItem(name, color) {
         let builder = event.create(`${CmiCore.MODID}:${name}_ingot`)
 
-        builder.texture(`${CmiCore.MODID}:item/material/color/ingot/ingot`)
+        builder.texture(CmiCore.loadResource(`item/material/color/ingot/ingot`))
         builder.color(0, color)
         builder.tag("forge:ingots")
         builder.tag(`forge:ingots/${name}`)
@@ -24,7 +24,7 @@ StartupEvents.registry("item", (event) => {
     function addNamedIngotItem(name, type) {
         let builder = event.create(`${CmiCore.MODID}:${name}`)
 
-        builder.texture(`${CmiCore.MODID}:item/material/material/ingot/${type}`)
+        builder.texture(CmiCore.loadResource(`item/material/material/ingot/${type}`))
         builder.tag("forge:ingots")
         builder.tag(`forge:ingots/${type}`)
 
@@ -38,7 +38,7 @@ StartupEvents.registry("item", (event) => {
     function addAloneIngotItem(name) {
         let builder = event.create(`${CmiCore.MODID}:${name}_ingot`)
 
-        builder.texture(`${CmiCore.MODID}:item/material/material/ingot/${name}`)
+        builder.texture(CmiCore.loadResource(`item/material/material/ingot/${name}`))
         builder.tag("forge:ingots")
         builder.tag(`forge:ingots/${name}`)
 
@@ -52,7 +52,7 @@ StartupEvents.registry("item", (event) => {
     function addNonIngotItem(name) {
         let builder = event.create(`${CmiCore.MODID}:${name}`)
 
-        builder.texture(`${CmiCore.MODID}:item/material/material/ingot/${name}`)
+        builder.texture(CmiCore.loadResource(`item/material/material/ingot/${name}`))
 
         return builder
     }

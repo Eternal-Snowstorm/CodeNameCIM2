@@ -7,8 +7,8 @@ StartupEvents.registry("fluid", (event) => {
     function addAloneFluid(name) {
         let builder = event.create(`${CmiCore.MODID}:${name}`)
 
-        builder.flowingTexture(`${CmiCore.MODID}:fluid/${name}/flow`)
-        builder.stillTexture(`${CmiCore.MODID}:fluid/${name}/still`)
+        builder.flowingTexture(CmiCore.loadResource(`fluid/${name}/flow`))
+        builder.stillTexture(CmiCore.loadResource(`fluid/${name}/still`))
         builder.renderType("translucent")
         builder.bucketItem.modelJson(setFluidBucketModel(name))
 
@@ -26,8 +26,8 @@ StartupEvents.registry("fluid", (event) => {
 
         builder.color(color)
         builder.bucketColor(color)
-        builder.flowingTexture(`${CmiCore.MODID}:fluid/chemical/flow`)
-        builder.stillTexture(`${CmiCore.MODID}:fluid/chemical/still`)
+        builder.flowingTexture(CmiCore.loadResource("fluid/chemical/flow"))
+        builder.stillTexture(CmiCore.loadResource("fluid/chemical/still"))
         builder.renderType("translucent")
         builder.translucent()
         builder.bucketItem.modelJson(setFluidBucketModel(name))

@@ -19,7 +19,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 冲击桩
 	addBlock("impact_pile")
-		.model(`${CmiCore.MODID}:block/custom/impact_pile`)
+		.model(CmiCore.loadResource(`block/custom/impact_pile`))
 		.defaultCutout()
 		.soundType(SoundType.NETHERITE_BLOCK)
 		.box(7, 0, 7, 9, 14, 9, true)
@@ -116,7 +116,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 智能外壳
 	addBlock("smart_casing")
-		.model(`${CmiCore.MODID}:block/casing/ae2/smart`)
+		.model(CmiCore.loadResource(`block/casing/ae2/smart`))
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
@@ -125,7 +125,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 高级计算外壳
 	addBlock("computing_casing")
-		.model(`${CmiCore.MODID}:block/casing/ae2/computing`)
+		.model(CmiCore.loadResource(`block/casing/ae2/computing`))
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
@@ -144,7 +144,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 辐射沙
 	addBlock("radsand", "falling")
-		.textureAll(`${CmiCore.MODID}:block/radsand`)
+		.textureAll(CmiCore.loadResource(`block/radsand`))
 		.soundType(SoundType.SAND)
 		.hardness(0.5)
 		.resistance(0.5)

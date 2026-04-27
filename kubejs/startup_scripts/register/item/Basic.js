@@ -18,46 +18,46 @@ StartupEvents.registry("item", (event) => {
 	function addMaterial(name, type) {
 		if (type === undefined) {
 			return event.create(`${CmiCore.MODID}:${name}`)
-				.texture(`${CmiCore.MODID}:item/material/${name}`)
+				.texture(CmiCore.loadResource(`item/material/${name}`))
 		}
 		return event.create(`${CmiCore.MODID}:${name}`, type)
-			.texture(`${CmiCore.MODID}:item/material/${name}`)
+			.texture(CmiCore.loadResource(`item/material/${name}`))
 	}
 
 	// 黏血球
 	addItem("blood_slime_ball")
-		.texture(`${CmiCore.MODID}:item/material/blood_slime_ball`)
+		.texture(CmiCore.loadResource("item/material/blood_slime_ball"))
 		.tag("forge:slimeballs")
 		.tag("forge:slimeball/blood")
 
 	// 淤泥提取物
 	addItem("sludge_extract")
-		.texture(`${CmiCore.MODID}:item/material/sludge_extract`)
+		.texture(CmiCore.loadResource("item/material/sludge_extract"))
 
 	// 甘蔗纤维
 	addItem("sugarcane_fiber")
-		.texture(`${CmiCore.MODID}:item/material/sugarcane_fiber`)
+		.texture(CmiCore.loadResource("item/material/sugarcane_fiber"))
 
 	// 泥炭
 	addItem("peat")
-		.texture(`${CmiCore.MODID}:item/material/peat`)
+		.texture(CmiCore.loadResource("item/material/peat"))
 		.burnTime(800)
 
 	// 木屑加工系列
 	addItem("wood_chip_briquette")
-		.texture(`${CmiCore.MODID}:item/material/wood_chip/stage_1`)
+		.texture(CmiCore.loadResource("item/material/wood_chip/stage_1"))
 		.burnTime(200 * 20)
 
 	addItem("compressed_wood_chip_briquette")
-		.texture(`${CmiCore.MODID}:item/material/wood_chip/stage_2`)
+		.texture(CmiCore.loadResource("item/material/wood_chip/stage_2"))
 		.burnTime(200 * 70)
 
 	addItem("densely_packed_wood_chip_briquette")
-		.texture(`${CmiCore.MODID}:item/material/wood_chip/stage_3`)
+		.texture(CmiCore.loadResource("item/material/wood_chip/stage_3"))
 		.burnTime(200 * 120)
 
 	addItem("creosote_wood_chip_briquette")
-		.texture(`${CmiCore.MODID}:item/material/wood_chip/done`)
+		.texture(CmiCore.loadResource("item/material/wood_chip/done"))
 		.burnTime(200 * 180)
 		.food((food) => {
 			food.hunger(20)
@@ -79,28 +79,28 @@ StartupEvents.registry("item", (event) => {
 
 	// 热力单元
 	addItem("thermal_unit")
-		.texture(`${CmiCore.MODID}:item/material/unit/thermal`)
+		.texture(CmiCore.loadResource("item/material/unit/thermal"))
 
 	// 烈焰燃烧单元
 	addItem("blaze_unit")
-		.texture(`${CmiCore.MODID}:item/material/unit/blaze`)
+		.texture(CmiCore.loadResource("item/material/unit/blaze"))
 
 	// 大地碎裂单元
 	addItem("basalz_unit")
-		.texture(`${CmiCore.MODID}:item/material/unit/basalz`)
+		.texture(CmiCore.loadResource("item/material/unit/basalz"))
 
 	// 狂风催化单元
 	addItem("blitz_unit")
-		.texture(`${CmiCore.MODID}:item/material/unit/blitz`)
+		.texture(CmiCore.loadResource("item/material/unit/blitz"))
 
 	// 暴雪冷凝单元
 	addItem("blizz_unit")
-		.texture(`${CmiCore.MODID}:item/material/unit/blizz`)
+		.texture(CmiCore.loadResource("item/material/unit/blizz"))
 
 	// 小块焦炭
 	addItem("small_coal_coke")
 		.burnTime(400)
-		.texture(`${CmiCore.MODID}:item/material/small_coal_coke`)
+		.texture(CmiCore.loadResource("item/material/small_coal_coke"))
 
 	// 电动机转子
 	addMaterial("motor_rotor")
@@ -149,11 +149,11 @@ StartupEvents.registry("item", (event) => {
 
 	// 羊皮纸
 	addItem("parchment")
-		.texture(`${CmiCore.MODID}:item/material/parchment/parchment`)
+		.texture(CmiCore.loadResource("item/material/parchment/parchment"))
 	addItem("torn_parchment_a")
-		.texture(`${CmiCore.MODID}:item/material/parchment/torn_parchment_a`)
+		.texture(CmiCore.loadResource("item/material/parchment/torn_parchment_a"))
 	addItem("torn_parchment_b")
-		.texture(`${CmiCore.MODID}:item/material/parchment/torn_parchment_b`)
+		.texture(CmiCore.loadResource("item/material/parchment/torn_parchment_b"))
 
 	let SomeModelsJson = {
 		cogwheel: function (material) {

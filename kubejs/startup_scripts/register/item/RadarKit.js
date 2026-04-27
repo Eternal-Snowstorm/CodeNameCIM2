@@ -14,33 +14,33 @@ StartupEvents.registry("item", (event) => {
     // 火箭零件
     for (let i = 1; i <= 4; i++) {
         addItem(`tier_${i}_rocket_nose_cone`)
-            .texture(`${CmiCore.MODID}:item/material/rocket_nose_cone/${i}`)
+            .texture(CmiCore.loadResource(`item/material/rocket_nose_cone/${i}`))
             .tag(`${CmiCore.MODID}:rocket_nose_cones/tier_${i}`)
             .tag(`${CmiCore.MODID}:rocket_nose_cones`)
 
         addItem(`tier_${i}_rocket_fin`)
-            .texture(`${CmiCore.MODID}:item/material/rocket_fin/${i}`)
+            .texture(CmiCore.loadResource(`item/material/rocket_fin/${i}`))
             .tag(`${CmiCore.MODID}:rocket_fins/tier_${i}`)
             .tag(`${CmiCore.MODID}:rocket_fins`)
     }
 
     //电源
     addItem("power_supply_repair_kit")
-        .texture(`${CmiCore.MODID}:item/space/power`)
+        .texture(CmiCore.loadResource("item/space/power"))
 
     //变压
     addItem("transformer_repair_kit")
-        .texture(`${CmiCore.MODID}:item/space/trans`)
+        .texture(CmiCore.loadResource("item/space/trans"))
 
     //追踪
     addItem("tracker_repair_kit")
-        .texture(`${CmiCore.MODID}:item/space/track`)
+        .texture(CmiCore.loadResource("item/space/track"))
 
     // 调制解调器
     addItem(`modem_repair_kit`)
-        .texture(`${CmiCore.MODID}:item/space/modem`)
+        .texture(CmiCore.loadResource("item/space/modem"))
 
     // 雷达
     addItem("radar_repair_kit")
-        .texture(`${CmiCore.MODID}:item/space/radar`)
+        .texture(CmiCore.loadResource("item/space/radar"))
 })

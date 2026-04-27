@@ -54,11 +54,10 @@ StartupEvents.registry("painting_variant", (event) => {
 	addPainting("driver_wooden", 16, 16)
 
 	function addPainting(name, width, height) {
-		let paintingRegister =
-			event.create(`${CmiCore.MODID}:${name}`)
-				.width(width)
-				.height(height)
-				.tag("minecraft:placeable")
+		let paintingRegister = event.create(`${CmiCore.MODID}:${name}`)
+			.width(width)
+			.height(height)
+			.tag("minecraft:placeable")
 
 		return paintingRegister
 	}

@@ -58,7 +58,7 @@ StartupEvents.registry("block", (event) => {
 		ore.types.forEach((type) => {
 			if (type !== "stone" && type !== "deepslate" && type !== "nether") {
 				event.create(`${CmiCore.MODID}:${type}_${ore.name}_ore`)
-					.textureAll(`${CmiCore.MODID}:block/ore/${ore.name}/${type}`)
+					.textureAll(CmiCore.loadResource(`block/ore/${ore.name}/${type}`))
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
@@ -70,7 +70,7 @@ StartupEvents.registry("block", (event) => {
 					.tag(`forge:ores/${ore.name}`)
 			} else if (type === "deepslate") {
 				event.create(`${CmiCore.MODID}:${type}_${ore.name}_ore`)
-					.textureAll(`${CmiCore.MODID}:block/ore/${ore.name}/${type}`)
+					.textureAll(CmiCore.loadResource(`block/ore/${ore.name}/${type}`))
 					.soundType(SoundType.DEEPSLATE)
 					.hardness(ore.hardness + 1.5)
 					.resistance(ore.hardness + 1.5)
@@ -82,7 +82,7 @@ StartupEvents.registry("block", (event) => {
 					.tag(`forge:ores/${ore.name}`)
 			} else if (type === "nether") {
 				event.create(`${CmiCore.MODID}:${type}_${ore.name}_ore`)
-					.textureAll(`${CmiCore.MODID}:block/ore/${ore.name}/${type}`)
+					.textureAll(CmiCore.loadResource(`block/ore/${ore.name}/${type}`))
 					.soundType(SoundType.NETHER_ORE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)
@@ -94,7 +94,7 @@ StartupEvents.registry("block", (event) => {
 					.tag(`forge:ores/${ore.name}`)
 			} else {
 				event.create(`${CmiCore.MODID}:${ore.name}_ore`)
-					.textureAll(`${CmiCore.MODID}:block/ore/${ore.name}/${type}`)
+					.textureAll(CmiCore.loadResource(`block/ore/${ore.name}/${type}`))
 					.soundType(SoundType.STONE)
 					.hardness(ore.hardness)
 					.resistance(ore.hardness)

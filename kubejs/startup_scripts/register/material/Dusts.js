@@ -8,7 +8,7 @@ StartupEvents.registry("item", (event) => {
 	function addColorDustItem(name, color) {
 		let builder = event.create(`${CmiCore.MODID}:${name}_dust`)
 
-		builder.texture(`${CmiCore.MODID}:item/material/color/dust/dust`)
+		builder.texture(CmiCore.loadResource(`item/material/color/dust/dust`))
 		builder.color(0, color)
 		builder.tag("forge:dusts")
 		builder.tag(`forge:dusts/${name}`)
@@ -23,7 +23,7 @@ StartupEvents.registry("item", (event) => {
 	function addAloneDustItem(name) {
 		let builder = event.create(`${CmiCore.MODID}:${name}_dust`)
 
-		builder.texture(`${CmiCore.MODID}:item/material/material/dust/${name}`)
+		builder.texture(CmiCore.loadResource(`item/material/material/dust/${name}`))
 		builder.tag("forge:dusts")
 		builder.tag(`forge:dusts/${name}`)
 
@@ -37,7 +37,7 @@ StartupEvents.registry("item", (event) => {
 	function addNonDustItem(name) {
 		let builder = event.create(`${CmiCore.MODID}:${name}`)
 
-		builder.texture(`${CmiCore.MODID}:item/material/material/dust/${name}`)
+		builder.texture(CmiCore.loadResource(`item/material/material/dust/${name}`))
 
 		return builder
 	}

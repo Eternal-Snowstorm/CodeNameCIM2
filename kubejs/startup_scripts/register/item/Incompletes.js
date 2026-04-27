@@ -22,13 +22,13 @@ StartupEvents.registry("item", (event) => {
 	function addIncompleteItem(name, isSequencedAssembly) {
 		if (isSequencedAssembly === undefined) {
 			return event.create(`${CmiCore.MODID}:incomplete_${name}`, "create:sequenced_assembly")
-				.texture(`${CmiCore.MODID}:item/material/incomplete/${name}`)
+				.texture(CmiCore.loadResource(`item/material/incomplete/${name}`))
 		} else if (isSequencedAssembly) {
 			return event.create(`${CmiCore.MODID}:incomplete_${name}`, "create:sequenced_assembly")
-				.texture(`${CmiCore.MODID}:item/material/incomplete/${name}`)
+				.texture(CmiCore.loadResource(`item/material/incomplete/${name}`))
 		} else {
 			return event.create(`${CmiCore.MODID}:incomplete_${name}`)
-				.texture(`${CmiCore.MODID}:item/material/incomplete/${name}`)
+				.texture(CmiCore.loadResource(`item/material/incomplete/${name}`))
 		}
 	}
 
@@ -66,11 +66,11 @@ StartupEvents.registry("item", (event) => {
 
 	// 未完成构件零件
 	addItem("mekanism_mechanism_part")
-		.texture(`${CmiCore.MODID}:item/mechanism/part/mekanism`)
+		.texture(CmiCore.loadResource("item/mechanism/part/mekanism"))
 	addItem("quantum_mechanism_part")
-		.texture(`${CmiCore.MODID}:item/mechanism/part/quantum`)
+		.texture(CmiCore.loadResource("item/mechanism/part/quantum"))
 	addItem("space_mechanism_part")
-		.texture(`${CmiCore.MODID}:item/mechanism/part/space`)
+		.texture(CmiCore.loadResource("item/mechanism/part/space"))
 
 	// ae未完成处理器
 	addItem("logic_processor")

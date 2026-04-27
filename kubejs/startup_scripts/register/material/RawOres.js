@@ -7,7 +7,7 @@ StartupEvents.registry("item", (event) => {
 	function addAloneRawMaterial(name) {
 		let builder = event.create(`${CmiCore.MODID}:raw_${name}`)
 
-		builder.texture(`${CmiCore.MODID}:item/material/raw/${name}`)
+		builder.texture(CmiCore.loadResource(`item/material/raw/${name}`))
 		builder.tag(`${CmiCore.MODID}:raw_metals`)
 		builder.tag("forge:raw_materials")
 		builder.tag(`forge:raw_materials/${name}`)
@@ -21,7 +21,7 @@ StartupEvents.registry("item", (event) => {
 	 */
 	function addAloneCrushedRawMaterial(name) {
 		let builder = event.create(`${CmiCore.MODID}:crushed_raw_${name}`)
-		builder.texture(`${CmiCore.MODID}:item/material/crushed/${name}`)
+		builder.texture(CmiCore.loadResource(`item/material/crushed/${name}`))
 		builder.tag(`${CmiCore.MODID}:raw_metals`)
 		builder.tag("create:crushed_raw_materials")
 		builder.tag(`create:crushed_raw_materials/${name}`)

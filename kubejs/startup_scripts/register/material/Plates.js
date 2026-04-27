@@ -38,7 +38,7 @@ StartupEvents.registry("item", (event) => {
     function addAlonePlateItem(name) {
         let builder = event.create(`${CmiCore.MODID}:${name}_plate`)
 
-        builder.texture(`${CmiCore.MODID}:item/material/material/plate/${name}`)
+        builder.texture(CmiCore.loadResource(`item/material/material/plate/${name}`))
         builder.tag("forge:plates")
         builder.tag(`forge:plates/${name}`)
 
@@ -52,7 +52,7 @@ StartupEvents.registry("item", (event) => {
     function addNonPlateItem(name) {
         let builder = event.create(`${CmiCore.MODID}:${name}`)
 
-        builder.texture(`${CmiCore.MODID}:item/material/material/plate/${name}`)
+        builder.texture(CmiCore.loadResource(`item/material/material/plate/${name}`))
 
         return builder
     }

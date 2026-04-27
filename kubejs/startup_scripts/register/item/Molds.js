@@ -2,7 +2,7 @@ StartupEvents.registry("item", (event) => {
     function addMold(name) {
         let builder = event.create(`${CmiCore.MODID}:${name}_mold`)
 
-        builder.texture(`${CmiCore.MODID}:item/material/mold/${name}`)
+        builder.texture(CmiCore.loadResource(`item/material/mold/${name}`))
         builder.tag("vintageimprovements:curving_heads")
         builder.tag("cmi:molds")
 

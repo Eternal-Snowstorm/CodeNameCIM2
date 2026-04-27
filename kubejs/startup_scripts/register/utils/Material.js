@@ -176,7 +176,7 @@ StartupEvents.registry("item", (event) => {
 					.tag(`mekanism:dirty_dusts/${material.name}`)
 			} else if (type === "clump" || type === "shard" || type === "crystal") {
 				item = event.create(`${CmiCore.MODID}:${material.name}_${type}`)
-					.texture(`${CmiCore.MODID}:item/material/color/${type}`)
+					.texture(CmiCore.loadResource(`item/material/color/${type}`))
 					.color(0, material.color1)
 					.tag(`mekanism:${type}s`)
 					.tag(`mekanism:${type}s/${material.name}`)
@@ -209,7 +209,7 @@ StartupEvents.registry("block", (event) => {
 
 			let block = event.create(`${CmiCore.MODID}:${material.name}_block`)
 
-			block.textureAll(`${CmiCore.MODID}:block/material/color/storage_blocks`)
+			block.textureAll(CmiCore.loadResource(`block/material/color/storage_blocks`))
 			block.soundType(material.blockSound || SoundType.METAL)
 			block.color(0, material.color1)
 			block.hardness(5)
@@ -242,8 +242,8 @@ StartupEvents.registry("fluid", (event) => {
 
 			molten.thinTexture(material.color1)
 			molten.bucketColor(material.color1)
-			molten.flowingTexture(`${CmiCore.MODID}:fluid/metal/flow`)
-			molten.stillTexture(`${CmiCore.MODID}:fluid/metal/still`)
+			molten.flowingTexture(CmiCore.loadResource(`fluid/metal/flow`))
+			molten.stillTexture(CmiCore.loadResource(`fluid/metal/still`))
 			molten.renderType("translucent")
 			molten.tag("forge:molten_materials")
 			molten.tag(`tconstruct:molten_${material.name}`)

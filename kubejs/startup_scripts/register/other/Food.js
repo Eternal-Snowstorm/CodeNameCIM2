@@ -5,16 +5,16 @@ StartupEvents.registry("item", (event) => {
 
 	// stage0
 	addItem("andesite_alloy_noodle_stage0")
-		.texture(`${CmiCore.MODID}:item/food/andesite_alloy_noodle/stage0`)
+		.texture(CmiCore.loadResource(`item/food/andesite_alloy_noodle/stage0`))
 	// stage1
 	addItem("andesite_alloy_noodle_stage1")
-		.texture(`${CmiCore.MODID}:item/food/andesite_alloy_noodle/stage1`)
+		.texture(CmiCore.loadResource(`item/food/andesite_alloy_noodle/stage1`))
 	// stage2
 	addItem("andesite_alloy_noodle_stage2")
-		.texture(`${CmiCore.MODID}:item/food/andesite_alloy_noodle/stage2`)
+		.texture(CmiCore.loadResource(`item/food/andesite_alloy_noodle/stage2`))
 	// Done
 	addItem("andesite_alloy_noodle")
-		.texture(`${CmiCore.MODID}:item/food/andesite_alloy_noodle/stage3`)
+		.texture(CmiCore.loadResource(`item/food/andesite_alloy_noodle/stage3`))
 		.food((food) => {
 			food.hunger(20)
 				.saturation(1)
