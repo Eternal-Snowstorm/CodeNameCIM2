@@ -1,5 +1,5 @@
 ServerEvents.highPriorityData((event) => {
-	event.addJson(`${CmiCore.MODID}:machines/flash_disk_writer.json`, {
+	event.addJson(`${Cmi.MODID}:machines/flash_disk_writer.json`, {
 		"name": "block.cmi.flash_disk_writer",
 		"appearance": {
 			"idle": {

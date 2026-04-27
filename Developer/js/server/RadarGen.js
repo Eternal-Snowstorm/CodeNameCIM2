@@ -10,7 +10,7 @@ ServerEvents.highPriorityData((event) => {
 		return {
 			weight: 1,
 			element: {
-				location: `${CmiCore.MODID}:${path}`,
+				location: `${Cmi.MODID}:${path}`,
 				element_type: "minecraft:single_pool_element",
 				processors: "minecraft:empty",
 				projection: "rigid"
@@ -31,7 +31,7 @@ ServerEvents.highPriorityData((event) => {
 			"minecraft:badlands"
 		],
 		size: 2,
-		start_pool: `${CmiCore.MODID}:radar/overworld`,
+		start_pool: `${Cmi.MODID}:radar/overworld`,
 		step: "surface_structures",
 		start_height: {
 			absolute: 1
@@ -49,7 +49,7 @@ ServerEvents.highPriorityData((event) => {
 			"ad_astra:lunar_wastelands"
 		],
 		size: 2,
-		start_pool: `${CmiCore.MODID}:radar/moon`,
+		start_pool: `${Cmi.MODID}:radar/moon`,
 		step: "surface_structures",
 		start_height: {
 			absolute: 1
@@ -67,7 +67,7 @@ ServerEvents.highPriorityData((event) => {
 			"ad_astra:martian_wastelands"
 		],
 		size: 2,
-		start_pool: `${CmiCore.MODID}:radar/mars`,
+		start_pool: `${Cmi.MODID}:radar/mars`,
 		step: "surface_structures",
 		start_height: {
 			absolute: 1
@@ -85,7 +85,7 @@ ServerEvents.highPriorityData((event) => {
 			"ad_astra:mercury_deltas"
 		],
 		size: 2,
-		start_pool: `${CmiCore.MODID}:radar/mercury`,
+		start_pool: `${Cmi.MODID}:radar/mercury`,
 		step: "surface_structures",
 		start_height: {
 			absolute: 1
@@ -107,7 +107,7 @@ ServerEvents.highPriorityData((event) => {
 	dimensions.forEach((dim) => {
 
 		let templatePool = {
-			name: `${CmiCore.MODID}:radar/${dim}`,
+			name: `${Cmi.MODID}:radar/${dim}`,
 			fallback: "minecraft:empty",
 			elements: [
 				radarTemplatePool(`radar/${dim}/base_a`),
@@ -118,7 +118,7 @@ ServerEvents.highPriorityData((event) => {
 		let structureSet = {
 			structures: [
 				{
-					structure: `${CmiCore.MODID}:radar/${dim}`,
+					structure: `${Cmi.MODID}:radar/${dim}`,
 					weight: 1
 				}
 			],
@@ -136,7 +136,7 @@ ServerEvents.highPriorityData((event) => {
 
 	// 第二层结构池
 	let layerTemplatePool = {
-		name: `${CmiCore.MODID}:radar/layer`,
+		name: `${Cmi.MODID}:radar/layer`,
 		fallback: "minecraft:empty",
 		elements: [
 			radarTemplatePool("radar/layer/air"),
@@ -149,7 +149,7 @@ ServerEvents.highPriorityData((event) => {
 
 	// 第三层结构池
 	let topTemplatePool = {
-		name: `${CmiCore.MODID}:radar/top`,
+		name: `${Cmi.MODID}:radar/top`,
 		fallback: "minecraft:empty",
 		elements: [
 			radarTemplatePool("radar/top/broken_a"),

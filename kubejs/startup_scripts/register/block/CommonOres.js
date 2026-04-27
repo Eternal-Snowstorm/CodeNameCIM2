@@ -240,9 +240,9 @@ StartupEvents.registry("block", (event) => {
 
 			let blockId
 			if (type === "stone") {
-				blockId = `${CmiCore.MODID}:${ore.name}_ore`
+				blockId = `${Cmi.MODID}:${ore.name}_ore`
 			} else {
-				blockId = `${CmiCore.MODID}:${type}_${ore.name}_ore`
+				blockId = `${Cmi.MODID}:${type}_${ore.name}_ore`
 			}
 
 			let blockBuilder = event.create(blockId)
@@ -255,7 +255,7 @@ StartupEvents.registry("block", (event) => {
 			blockBuilder.resistance(cfg.resistance(ore.hardness))
 
 			// 标签
-			blockBuilder.tag(`${CmiCore.MODID}:ores`)
+			blockBuilder.tag(`${Cmi.MODID}:ores`)
 			blockBuilder.tag("forge:ores")
 			blockBuilder.tag(`forge:ores/${ore.name}`)
 			blockBuilder.tagBlock(CmiToolType.PICKAXE)

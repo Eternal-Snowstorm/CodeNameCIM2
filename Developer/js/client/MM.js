@@ -40,9 +40,9 @@ Ponder.registry((event) => {
 	function addMMPonder(controller, name, scmatics, layer, horizon) {
 		return event.create(`mm:${controller}`)
 			.scene(
-				`${CmiCore.MODID}:${scmatics}`,
+				`${Cmi.MODID}:${scmatics}`,
 				`${name}`,
-				`${CmiCore.MODID}:multiblock/${scmatics}`,
+				`${Cmi.MODID}:multiblock/${scmatics}`,
 				(scene) => {
 					scene.scaleSceneView(horizon)
 					scene.showStructure(0)

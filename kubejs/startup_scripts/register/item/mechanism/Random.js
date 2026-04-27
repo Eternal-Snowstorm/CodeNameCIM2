@@ -12,8 +12,8 @@ StartupEvents.registry("item", (event) => {
 		"random"
 	]
 	randomMechanismRegister.forEach((material) => {
-		event.create(`${CmiCore.MODID}:${material}_random_mechanism`)
-			.texture(`${CmiCore.MODID}:item/mechanism/random/${material}`)
+		event.create(`${Cmi.MODID}:${material}_random_mechanism`)
+			.texture(`${Cmi.MODID}:item/mechanism/random/${material}`)
 			.tag("cmi:random_mechanisms")
 	})
 })

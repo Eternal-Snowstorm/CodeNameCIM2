@@ -5,7 +5,7 @@ let $Tiers =
 
 StartupEvents.registry("item", (event) => {
 	// 超级刀
-	event.createCustom(`${CmiCore.MODID}:super_knife`, () => {
+	event.createCustom(`${Cmi.MODID}:super_knife`, () => {
 		return new JavaAdapter($KnifeItem, {
 			/**
 			 * 
@@ -48,21 +48,21 @@ StartupEvents.registry("item", (event) => {
 	}).tag("forge:tools/knives").tag("forge:tools")
 
 	// 木质小刀
-	event.createCustom(`${CmiCore.MODID}:wooden_knife`, () => {
+	event.createCustom(`${Cmi.MODID}:wooden_knife`, () => {
 		return new $KnifeItem($Tiers.WOOD, 0.5, -2.0, new Item$Properties())
 	}).tag("forge:tools/knives").tag("forge:tools")
 
 	// 燧石锤
-	event.create(`${CmiCore.MODID}:flint_hammer`, "createdieselgenerators:hammer")
-		.tier(`${CmiCore.MODID}:flint`)
-		.texture(CmiCore.loadResource("item/tool/flint_hammer"))
+	event.create(`${Cmi.MODID}:flint_hammer`, "createdieselgenerators:hammer")
+		.tier(`${Cmi.MODID}:flint`)
+		.texture(Cmi.loadResource("item/tool/flint_hammer"))
 		.tag("forge:tools")
 		.tag("forge:hammers")
 
 	// 钻石锤
-	event.create(`${CmiCore.MODID}:diamond_hammer`, "createdieselgenerators:hammer")
+	event.create(`${Cmi.MODID}:diamond_hammer`, "createdieselgenerators:hammer")
 		.tier($Tiers.DIAMOND)
-		.texture(CmiCore.loadResource("item/tool/diamond_hammer"))
+		.texture(Cmi.loadResource("item/tool/diamond_hammer"))
 		.tag("forge:tools")
 		.tag("forge:hammers")
 })

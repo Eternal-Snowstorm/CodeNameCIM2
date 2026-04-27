@@ -13,7 +13,7 @@ StartupEvents.registry("item", (event) => {
 	 * @returns 注册匠魂工具类型
 	*/
 	function addTConToolType(name) {
-		return $ToolDefinition.create(`${CmiCore.MODID}:${name}`)
+		return $ToolDefinition.create(Cmi.loadResource(name))
 	}
 
 	/**
@@ -24,7 +24,7 @@ StartupEvents.registry("item", (event) => {
 	 */
 	function addTConTool(name) {
 		let toolItemBuilder =
-			event.createCustom(`${CmiCore.MODID}:${name}`, () => {
+			event.createCustom(`${Cmi.MODID}:${name}`, () => {
 				return new $ModifiableItem(new Item$Properties(), addTConToolType(name))
 			})
 

@@ -5,7 +5,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	  * @param {String} value 
 	  */
 	function addMechanismMachineLang(material, value) {
-		event.add(`block.${CmiCore.MODID}.${material}_machine`, `${value}机器`)
+		event.add(`block.${Cmi.MODID}.${material}_machine`, `${value}机器`)
 	}
 
 	/**
@@ -14,8 +14,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	  * @param {String} value 
 	  */
 	function addMechanismLang(material, value) {
-		event.add(`item.${CmiCore.MODID}.${material}_mechanism`, `${value}构件`)
-		event.add(`item.${CmiCore.MODID}.incomplete_${material}_mechanism`, `${value}构件(半成品)`)
+		event.add(`item.${Cmi.MODID}.${material}_mechanism`, `${value}构件`)
+		event.add(`item.${Cmi.MODID}.incomplete_${material}_mechanism`, `${value}构件(半成品)`)
 	}
 
 	/**
@@ -24,8 +24,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	  * @param {String} value 
 	  */
 	function addCraftingIncompleteLang(material, value) {
-		event.add(`item.${CmiCore.MODID}.${material}_mechanism_basement`, `${value}构件底座`)
-		event.add(`item.${CmiCore.MODID}.${material}_mechanism_augment`, `${value}构件组件`)
+		event.add(`item.${Cmi.MODID}.${material}_mechanism_basement`, `${value}构件底座`)
+		event.add(`item.${Cmi.MODID}.${material}_mechanism_augment`, `${value}构件组件`)
 	}
 
 	/**
@@ -34,7 +34,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	  * @param {String} value 
 	  */
 	function addRandomMechanismLang(material, value) {
-		event.add(`item.${CmiCore.MODID}.${material}_random_mechanism`, `${value}随机构件`)
+		event.add(`item.${Cmi.MODID}.${material}_random_mechanism`, `${value}随机构件`)
 	}
 
 	/**
@@ -43,7 +43,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	  * @param {String} value 
 	  */
 	function addMechanismPartLang(material, value) {
-		event.add(`item.${CmiCore.MODID}.${material}_mechanism_part`, `${value}构件零件`)
+		event.add(`item.${Cmi.MODID}.${material}_mechanism_part`, `${value}构件零件`)
 	}
 
 	/**
@@ -52,7 +52,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	  * @param {String} value 
 	  */
 	function addFlashDriveLang(key, value) {
-		event.add(`item.${CmiCore.MODID}.${key}_mechanism_flash_drive`, `${value}构件闪存盘`)
+		event.add(`item.${Cmi.MODID}.${key}_mechanism_flash_drive`, `${value}构件闪存盘`)
 	}
 
 	addMechanismPartLang("basic", "基础")

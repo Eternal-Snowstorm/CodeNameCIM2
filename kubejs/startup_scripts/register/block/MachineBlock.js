@@ -1,15 +1,15 @@
 StartupEvents.registry("block", (event) => {
 	CmiGlobal.mechanismGroup.forEach((type) => {
-		event.create(`${CmiCore.MODID}:${type}_machine`, "cardinal")
+		event.create(`${Cmi.MODID}:${type}_machine`, "cardinal")
 			.soundType(SoundType.METAL)
 			.waterlogged()
-			.model(`${CmiCore.MODID}:block/machine_block/${type}`)
+			.model(`${Cmi.MODID}:block/machine_block/${type}`)
 			.requiresTool(true)
 			.notSolid()
 			.defaultCutout()
 			.blockEntity((entity) => {
 				let mechanism = Ingredient.of(`#create:mechanisms/${type}`)
-				let flashDrive = Ingredient.of(`#${CmiCore.MODID}:mechanism_flash_drives/${type}`)
+				let flashDrive = Ingredient.of(`#${Cmi.MODID}:mechanism_flash_drives/${type}`)
 
 				entity.enableSync()
 				entity.inventory(9, 3, [mechanism, flashDrive])

@@ -11,7 +11,7 @@ let $Mirror =
 
 ServerEvents.loaded((event) => {
 	let { server } = event
-	let structureNamespace = CmiCore.MODID
+	let structureNamespace = Cmi.MODID
 
 	/**
 	 * 

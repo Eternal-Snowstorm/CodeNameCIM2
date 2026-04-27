@@ -54,7 +54,7 @@ StartupEvents.registry("painting_variant", (event) => {
 	addPainting("driver_wooden", 16, 16)
 
 	function addPainting(name, width, height) {
-		let paintingRegister = event.create(`${CmiCore.MODID}:${name}`)
+		let paintingRegister = event.create(`${Cmi.MODID}:${name}`)
 			.width(width)
 			.height(height)
 			.tag("minecraft:placeable")

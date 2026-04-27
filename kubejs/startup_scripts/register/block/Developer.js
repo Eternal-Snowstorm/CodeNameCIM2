@@ -25,7 +25,7 @@ StartupEvents.registry("block", (event) => {
 	 */
 	function addDeveloperDoll(name, type) {
 		let builder =
-			event.create(`${CmiCore.MODID}:${name}`, "cardinal")
+			event.create(`${Cmi.MODID}:${name}`, "cardinal")
 
 		builder.soundType(SoundType.WOOL)
 		builder.hardness(0)
@@ -35,8 +35,8 @@ StartupEvents.registry("block", (event) => {
 		builder.defaultCutout()
 		builder.notSolid()
 		builder.noCollision()
-		builder.translationKey(Component.translatable(`${CmiCore.MODID}:${name}`))
-		builder.tag(`${CmiCore.MODID}:dev_doll`)
+		builder.translationKey(Component.translatable(`${Cmi.MODID}:${name}`))
+		builder.tag(`${Cmi.MODID}:dev_doll`)
 		builder.modelJson = developerDollmodel(name, type)
 
 		return builder

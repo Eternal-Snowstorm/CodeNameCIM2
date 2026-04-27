@@ -80,9 +80,9 @@ StartupEvents.registry("block", (event) => {
 		"sheet"
 	]
 	blockIO.forEach((IOBlock) => {
-		event.create(`${CmiCore.MODID}:${IOBlock}`)
-			.textureAll(CmiCore.loadResource(`block/io_debug/${IOBlock}`))
+		event.create(`${Cmi.MODID}:${IOBlock}`)
+			.textureAll(Cmi.loadResource(`block/io_debug/${IOBlock}`))
 			.soundType(SoundType.METAL)
-			.tag(`${CmiCore.MODID}:io_debug_block`)
+			.tag(`${Cmi.MODID}:io_debug_block`)
 	})
 })

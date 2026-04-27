@@ -5,9 +5,9 @@ StartupEvents.registry("item", (event) => {
 	 * @returns 
 	 */
 	function addAloneGemItem(name) {
-		let builder = event.create(`${CmiCore.MODID}:${name}`)
+		let builder = event.create(`${Cmi.MODID}:${name}`)
 
-		builder.texture(CmiCore.loadResource(`item/material/material/gem/${name}`))
+		builder.texture(Cmi.loadResource(`item/material/material/gem/${name}`))
 		builder.tag("forge:gems")
 		builder.tag(`forge:gems/${name}`)
 
@@ -20,9 +20,9 @@ StartupEvents.registry("item", (event) => {
 	 * @returns 
 	 */
 	function addNonGemItem(name) {
-		let builder = event.create(`${CmiCore.MODID}:${name}`)
+		let builder = event.create(`${Cmi.MODID}:${name}`)
 
-		builder.texture(CmiCore.loadResource(`item/material/material/gem/${name}`))
+		builder.texture(Cmi.loadResource(`item/material/material/gem/${name}`))
 
 		return builder
 	}

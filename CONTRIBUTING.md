@@ -273,8 +273,8 @@ name(
 **严格禁止**使用`.displayName()`方法对其进行命名, 请前往[**lang**](kubejs/client_scripts/lang)文件夹下的语言文件内进行命名与修改
 
 ```js
-event.create(`${CmiCore.MODID}:smart_gear`)
-    .texture(`${CmiCore.MODID}:item/smart_gear`)
+event.create(`${Cmi.MODID}:smart_gear`)
+    .texture(`${Cmi.MODID}:item/smart_gear`)
     .burnTime(400)
 ```
 

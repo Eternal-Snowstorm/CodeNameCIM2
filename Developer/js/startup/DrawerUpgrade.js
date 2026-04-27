@@ -20,7 +20,7 @@ StartupEvents.registry("item", (event) => {
 		const FLUID_MULTIPLIER = ITEM_MULTIPLIER * 0.5
 		const CONTROLLER_MULTIPLIER = FLUID_MULTIPLIER * 0.5
 
-		const REGISTER_ID = `${CmiCore.MODID}:${name}_upgrade`
+		const REGISTER_ID = `${Cmi.MODID}:${name}_upgrade`
 
 		let drawerUpgradeBuilder =
 			event.createCustom(REGISTER_ID, () => {
@@ -41,7 +41,7 @@ StartupEvents.registry("item", (event) => {
 					m_7626_(stack) {
 						if (Client.level) {
 							let modifyItemName =
-								Component.translatable(`item.${CmiCore.MODID}.${name}_upgrade`)
+								Component.translatable(`item.${Cmi.MODID}.${name}_upgrade`)
 									.setStyle($Style.EMPTY.applyTo(modifyItemName.getStyle()))
 
 							return modifyItemName
@@ -59,17 +59,17 @@ StartupEvents.registry("item", (event) => {
 					addTooltipDetails(key, stack, tooltip, advanced) {
 						let itemTranslateKey =
 							Component.translatable(
-								`tooltip.${CmiCore.MODID}.storage_upgrade.itemMultiplier`,
+								`tooltip.${Cmi.MODID}.storage_upgrade.itemMultiplier`,
 								ITEM_MULTIPLIER
 							).gray()
 						let fluidTranslateKey =
 							Component.translatable(
-								`tooltip.${CmiCore.MODID}.storage_upgrade.fluidMultiplier`,
+								`tooltip.${Cmi.MODID}.storage_upgrade.fluidMultiplier`,
 								FLUID_MULTIPLIER
 							).gray()
 						let ctrlTranslateKey =
 							Component.translatable(
-								`tooltip.${CmiCore.MODID}.storage_upgrade.controllerMultiplier`,
+								`tooltip.${Cmi.MODID}.storage_upgrade.controllerMultiplier`,
 								CONTROLLER_MULTIPLIER
 							).gray()
 
@@ -83,10 +83,10 @@ StartupEvents.registry("item", (event) => {
 		drawerUpgradeBuilder.tag("functionalstorage:upgrades")
 
 		if (Platform.isClientEnvironment()) {
-			JsonIO.write(`kubejs/assets/${CmiCore.MODID}/models/item/${name}_upgrade.json`, {
+			JsonIO.write(`kubejs/assets/${Cmi.MODID}/models/item/${name}_upgrade.json`, {
 				"parent": "minecraft:item/generated",
 				"textures": {
-					"layer0": `${CmiCore.MODID}:item/upgrade/${name}`
+					"layer0": `${Cmi.MODID}:item/upgrade/${name}`
 				}
 			})
 		}

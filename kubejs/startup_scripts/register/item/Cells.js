@@ -10,11 +10,11 @@ StartupEvents.registry("item", (event) => {
 	}
 
 	function addCellItem(name, color) {
-		let builder = event.create(`${CmiCore.MODID}:${name}_cell`)
+		let builder = event.create(`${Cmi.MODID}:${name}_cell`)
 
 		builder.color(0, color)
 		builder.modelJson(cellModel())
-		builder.tag(`${CmiCore.MODID}:cells`)
+		builder.tag(`${Cmi.MODID}:cells`)
 
 		return builder
 	}

@@ -25,7 +25,7 @@ MMEvents.createStructures((event) => {
 	 * @returns 
 	 */
 	function addMMStructure(id, names, layout) {
-		return event.create(`${CmiCore.MODID}:${id}_structure`)
+		return event.create(`${Cmi.MODID}:${id}_structure`)
 			.controllerId(`mm:${id}`)
 			.name(getLangText(names))
 			.layout(layout)

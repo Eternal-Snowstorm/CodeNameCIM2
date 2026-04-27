@@ -6,9 +6,9 @@ StartupEvents.registry("block", (event) => {
 	 */
 	function addBlock(name, type) {
 		if (type === undefined) {
-			return event.create(`${CmiCore.MODID}:${name}`)
+			return event.create(`${Cmi.MODID}:${name}`)
 		}
-		return event.create(`${CmiCore.MODID}:${name}`, type)
+		return event.create(`${Cmi.MODID}:${name}`, type)
 	}
 
 	// 虚空涌泉
@@ -19,7 +19,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 冲击桩
 	addBlock("impact_pile")
-		.model(CmiCore.loadResource(`block/custom/impact_pile`))
+		.model(Cmi.loadResource(`block/custom/impact_pile`))
 		.defaultCutout()
 		.soundType(SoundType.NETHERITE_BLOCK)
 		.box(7, 0, 7, 9, 14, 9, true)
@@ -88,7 +88,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 坩埚底座
 	addBlock("crucible_base")
-		.textureAll(`${CmiCore.MODID}:block/crucible/top`)
+		.textureAll(`${Cmi.MODID}:block/crucible/top`)
 		.soundType(SoundType.METAL)
 		.hardness(6)
 		.resistance(6)
@@ -107,7 +107,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 青铜外壳
 	addBlock("bronze_casing")
-		.textureAll(`${CmiCore.MODID}:block/casing/bronze/casing`)
+		.textureAll(`${Cmi.MODID}:block/casing/bronze/casing`)
 		.soundType(SoundType.WOOD)
 		.hardness(5)
 		.resistance(5)
@@ -116,7 +116,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 智能外壳
 	addBlock("smart_casing")
-		.model(CmiCore.loadResource(`block/casing/ae2/smart`))
+		.model(Cmi.loadResource(`block/casing/ae2/smart`))
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
@@ -125,7 +125,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 高级计算外壳
 	addBlock("computing_casing")
-		.model(CmiCore.loadResource(`block/casing/ae2/computing`))
+		.model(Cmi.loadResource(`block/casing/ae2/computing`))
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
@@ -144,7 +144,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 辐射沙
 	addBlock("radsand", "falling")
-		.textureAll(CmiCore.loadResource(`block/radsand`))
+		.textureAll(Cmi.loadResource(`block/radsand`))
 		.soundType(SoundType.SAND)
 		.hardness(0.5)
 		.resistance(0.5)

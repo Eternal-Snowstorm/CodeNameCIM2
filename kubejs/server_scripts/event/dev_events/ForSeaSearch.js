@@ -3,7 +3,7 @@ ItemEvents.rightClicked((event) => {
 	let canTriggerItem = "minecraft:stick"
 
 	if (player.mainHandItem === canTriggerItem && player.isInWater()) {
-		player.tell(Component.translatable(`sea.${CmiCore.MODID}.search`))
+		player.tell(Component.translatable(`sea.${Cmi.MODID}.search`))
 		player.swing()
 		player.potionEffects.add(
 			"minecraft:glowing",

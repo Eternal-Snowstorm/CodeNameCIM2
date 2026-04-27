@@ -12,7 +12,7 @@ ItemEvents.armorTierRegistry((event) => {
 	 * @param {Internal.Consumer_<Internal.MutableArmorTier>} tier 
 	 */
 	function addArmorTier(name, tier) {
-		event.add(`${CmiCore.MODID}:${name}`, tier)
+		event.add(`${Cmi.MODID}:${name}`, tier)
 	}
 })
 
@@ -23,7 +23,7 @@ ItemEvents.toolTierRegistry((event) => {
 	 * @param {Internal.Consumer_<Internal.MutableToolTier>} tier 
 	 */
 	function addToolTier(name, tier) {
-		event.add(`${CmiCore.MODID}:${name}`, tier)
+		event.add(`${Cmi.MODID}:${name}`, tier)
 	}
 
 	addToolTier("flint", (tier) => {

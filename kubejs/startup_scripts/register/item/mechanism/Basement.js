@@ -5,11 +5,11 @@ StartupEvents.registry("item", (event) => {
 	 * @returns 
 	 */
 	function addMechanismBasement(name) {
-		let registerID = `${CmiCore.MODID}:${name}_mechanism_basement`
+		let registerID = `${Cmi.MODID}:${name}_mechanism_basement`
 		let builder = event.create(registerID)
 
-		builder.texture(`${CmiCore.MODID}:item/mechanism/basement/${name}`)
-		builder.tag(`${CmiCore.MODID}:mechanism_basement`)
+		builder.texture(`${Cmi.MODID}:item/mechanism/basement/${name}`)
+		builder.tag(`${Cmi.MODID}:mechanism_basement`)
 
 		return builder
 	}

@@ -11,7 +11,7 @@ ServerEvents.highPriorityData((event) => {
             type: "minecraft:jigsaw",
             biomes: bio,
             size: 1,
-            start_pool: `${CmiCore.MODID}:geo_vent/${name}_geo_vent`,
+            start_pool: `${Cmi.MODID}:geo_vent/${name}_geo_vent`,
             step: "underground_structures",
             start_height: {
                 absolute: 0
@@ -26,7 +26,7 @@ ServerEvents.highPriorityData((event) => {
         let structureSet = {
             structures: [
                 {
-                    structure: `${CmiCore.MODID}:geo_vent/${name}_geo_vent`,
+                    structure: `${Cmi.MODID}:geo_vent/${name}_geo_vent`,
                     weight: 1
                 }
             ],
@@ -39,13 +39,13 @@ ServerEvents.highPriorityData((event) => {
         }
 
         let templatePool = {
-            name: `${CmiCore.MODID}:${name}_geo_vent`,
+            name: `${Cmi.MODID}:${name}_geo_vent`,
             fallback: "minecraft:empty",
             elements: [
                 {
                     weight: 1,
                     element: {
-                        location: `${CmiCore.MODID}:geo_vent/${name}_geo_vent_0`,
+                        location: `${Cmi.MODID}:geo_vent/${name}_geo_vent_0`,
                         element_type: "minecraft:single_pool_element",
                         processors: "minecraft:empty",
                         projection: "terrain_matching"
@@ -53,7 +53,7 @@ ServerEvents.highPriorityData((event) => {
                 }, {
                     weight: 1,
                     element: {
-                        location: `${CmiCore.MODID}:geo_vent/${name}_geo_vent_1`,
+                        location: `${Cmi.MODID}:geo_vent/${name}_geo_vent_1`,
                         element_type: "minecraft:single_pool_element",
                         processors: "minecraft:empty",
                         projection: "terrain_matching"
@@ -61,7 +61,7 @@ ServerEvents.highPriorityData((event) => {
                 }, {
                     weight: 1,
                     element: {
-                        location: `${CmiCore.MODID}:geo_vent/${name}_geo_vent_2`,
+                        location: `${Cmi.MODID}:geo_vent/${name}_geo_vent_2`,
                         element_type: "minecraft:single_pool_element",
                         processors: "minecraft:empty",
                         projection: "terrain_matching"
@@ -69,7 +69,7 @@ ServerEvents.highPriorityData((event) => {
                 }, {
                     weight: 1,
                     element: {
-                        location: `${CmiCore.MODID}:geo_vent/${name}_geo_vent_3`,
+                        location: `${Cmi.MODID}:geo_vent/${name}_geo_vent_3`,
                         element_type: "minecraft:single_pool_element",
                         processors: "minecraft:empty",
                         projection: "terrain_matching"

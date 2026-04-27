@@ -5,7 +5,7 @@ StartupEvents.registry("sound_event", (event) => {
 	 * @returns 
 	 */
 	function addSoundEvent(name) {
-		return event.create(`${CmiCore.MODID}:${name}`)
+		return event.create(`${Cmi.MODID}:${name}`)
 	}
 
 	addSoundEvent("for_sea")

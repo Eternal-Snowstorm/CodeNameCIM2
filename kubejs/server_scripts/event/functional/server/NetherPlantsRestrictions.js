@@ -5,12 +5,12 @@ BlockEvents.rightClicked((event) => {
 		return
 	}
 
-	if (!item.hasTag(`${CmiCore.MODID}:nether_crops`)) {
+	if (!item.hasTag(`${Cmi.MODID}:nether_crops`)) {
 		return
 	}
 
 	let getDimension = block.level.getDimension().toString()
-	let isNetherFarmlandBlockTag = block.hasTag(`${CmiCore.MODID}:nether_farmland`)
+	let isNetherFarmlandBlockTag = block.hasTag(`${Cmi.MODID}:nether_farmland`)
 
 	if (getDimension === "minecraft:the_nether") {
 		if (item.id === "minecraft:twisting_vines" || item.id === "minecraft:weeping_vines") {
@@ -19,7 +19,7 @@ BlockEvents.rightClicked((event) => {
 	}
 
 	if (getDimension !== "minecraft:the_nether" || !isNetherFarmlandBlockTag) {
-		let tranKey = `display.${CmiCore.MODID}.nether_crops`
+		let tranKey = `display.${Cmi.MODID}.nether_crops`
 		player.displayClientMessage(Component.translatable(tranKey), true)
 		event.cancel()
 		return

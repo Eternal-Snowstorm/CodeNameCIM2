@@ -93,7 +93,7 @@ ServerEvents.highPriorityData((event) => {
     let LavaLakeBiome = {
         type: "forge:add_features",
         biomes: "ad_astra:martian_wastelands",
-        features: `${CmiCore.MODID}:martian_lava_lake`,
+        features: `${Cmi.MODID}:martian_lava_lake`,
         step: "underground_ores"
     }
 

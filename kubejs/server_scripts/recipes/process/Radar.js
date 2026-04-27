@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
 
 	event.custom({
 		"type": "custommachinery:custom_machine",
-		"machine": `${CmiCore.MODID}:radar_terminal`,
+		"machine": `${Cmi.MODID}:radar_terminal`,
 		"time": 1000,
 		"hidden": false,
 		"requirements": [

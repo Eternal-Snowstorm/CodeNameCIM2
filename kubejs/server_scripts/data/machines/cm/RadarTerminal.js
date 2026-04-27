@@ -1,5 +1,5 @@
 ServerEvents.highPriorityData((event) => {
-	event.addJson(`${CmiCore.MODID}:machines/radar_terminal.json`, {
+	event.addJson(`${Cmi.MODID}:machines/radar_terminal.json`, {
 		"name": {
 			"text": "block.cmi.radar_terminal"
 		},

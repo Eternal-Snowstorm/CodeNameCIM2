@@ -1,5 +1,5 @@
 StartupEvents.registry("item", (event) => {
-	event.create(`${CmiCore.MODID}:bucket`, "helmet")
-		.texture(CmiCore.loadResource("item/armor/bucket"))
-		.tier(`${CmiCore.MODID}:iron`)
+	event.create(`${Cmi.MODID}:bucket`, "helmet")
+		.texture(Cmi.loadResource("item/armor/bucket"))
+		.tier(`${Cmi.MODID}:iron`)
 })

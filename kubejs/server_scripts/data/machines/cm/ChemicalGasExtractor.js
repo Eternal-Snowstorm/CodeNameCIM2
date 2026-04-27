@@ -1,5 +1,5 @@
 ServerEvents.highPriorityData((event) => {
-	event.addJson(`${CmiCore.MODID}:machines/chemical_gas_extractor.json`, {
+	event.addJson(`${Cmi.MODID}:machines/chemical_gas_extractor.json`, {
 		"name": "block.cmi.chemical_gas_extractor",
 		"appearance": {
 			"idle": {

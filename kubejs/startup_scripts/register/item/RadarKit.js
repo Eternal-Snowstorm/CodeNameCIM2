@@ -6,41 +6,41 @@ StartupEvents.registry("item", (event) => {
      */
     function addItem(name, type) {
         if (type === undefined) {
-            return event.create(`${CmiCore.MODID}:${name}`)
+            return event.create(`${Cmi.MODID}:${name}`)
         }
-        return event.create(`${CmiCore.MODID}:${name}`, type)
+        return event.create(`${Cmi.MODID}:${name}`, type)
     }
 
     // 火箭零件
     for (let i = 1; i <= 4; i++) {
         addItem(`tier_${i}_rocket_nose_cone`)
-            .texture(CmiCore.loadResource(`item/material/rocket_nose_cone/${i}`))
-            .tag(`${CmiCore.MODID}:rocket_nose_cones/tier_${i}`)
-            .tag(`${CmiCore.MODID}:rocket_nose_cones`)
+            .texture(Cmi.loadResource(`item/material/rocket_nose_cone/${i}`))
+            .tag(`${Cmi.MODID}:rocket_nose_cones/tier_${i}`)
+            .tag(`${Cmi.MODID}:rocket_nose_cones`)
 
         addItem(`tier_${i}_rocket_fin`)
-            .texture(CmiCore.loadResource(`item/material/rocket_fin/${i}`))
-            .tag(`${CmiCore.MODID}:rocket_fins/tier_${i}`)
-            .tag(`${CmiCore.MODID}:rocket_fins`)
+            .texture(Cmi.loadResource(`item/material/rocket_fin/${i}`))
+            .tag(`${Cmi.MODID}:rocket_fins/tier_${i}`)
+            .tag(`${Cmi.MODID}:rocket_fins`)
     }
 
     //电源
     addItem("power_supply_repair_kit")
-        .texture(CmiCore.loadResource("item/space/power"))
+        .texture(Cmi.loadResource("item/space/power"))
 
     //变压
     addItem("transformer_repair_kit")
-        .texture(CmiCore.loadResource("item/space/trans"))
+        .texture(Cmi.loadResource("item/space/trans"))
 
     //追踪
     addItem("tracker_repair_kit")
-        .texture(CmiCore.loadResource("item/space/track"))
+        .texture(Cmi.loadResource("item/space/track"))
 
     // 调制解调器
     addItem(`modem_repair_kit`)
-        .texture(CmiCore.loadResource("item/space/modem"))
+        .texture(Cmi.loadResource("item/space/modem"))
 
     // 雷达
     addItem("radar_repair_kit")
-        .texture(CmiCore.loadResource("item/space/radar"))
+        .texture(Cmi.loadResource("item/space/radar"))
 })

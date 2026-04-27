@@ -5,7 +5,7 @@ StartupEvents.registry("sound_event", (event) => {
 	 * @returns 
 	 */
 	function addRecordSoundEvent(name) {
-		return event.create(`${CmiCore.MODID}:record.${name}`)
+		return event.create(`${Cmi.MODID}:record.${name}`)
 	}
 
 	addRecordSoundEvent("mechanism")
@@ -21,10 +21,10 @@ StartupEvents.registry("item", (event) => {
 	 */
 	function addMusicDiscItem(name, time) {
 		let builder =
-			event.create(`${CmiCore.MODID}:${name}`, "music_disc")
+			event.create(`${Cmi.MODID}:${name}`, "music_disc")
 
-		builder.song(`${CmiCore.MODID}:record.${name}`, time)
-		builder.texture(`${CmiCore.MODID}:item/discs/${name}`)
+		builder.song(`${Cmi.MODID}:record.${name}`, time)
+		builder.texture(`${Cmi.MODID}:item/discs/${name}`)
 		builder.tag("minecraft:music_discs")
 
 		return builder

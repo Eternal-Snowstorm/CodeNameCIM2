@@ -61,7 +61,7 @@ ServerEvents.highPriorityData((event) => {
 
 		// 已放置的地物
 		let placedFeature = {
-			feature: `${CmiCore.MODID}:${oreType[type]}${name}_ore`,
+			feature: `${Cmi.MODID}:${oreType[type]}${name}_ore`,
 			placement: {}
 		}
 
@@ -69,7 +69,7 @@ ServerEvents.highPriorityData((event) => {
 		let biomeModifier = {
 			type: "forge:add_features",
 			biomes: {},
-			features: `${CmiCore.MODID}:${oreType[type]}${name}_ore`,
+			features: `${Cmi.MODID}:${oreType[type]}${name}_ore`,
 			step: "underground_ores"
 		}
 
@@ -89,7 +89,7 @@ ServerEvents.highPriorityData((event) => {
 				configuredFeature.config.targets = [
 					{
 						state: {
-							Name: `${CmiCore.MODID}:${name}_ore`
+							Name: `${Cmi.MODID}:${name}_ore`
 						},
 						target: {
 							predicate_type: "minecraft:tag_match",
@@ -98,7 +98,7 @@ ServerEvents.highPriorityData((event) => {
 					},
 					{
 						state: {
-							Name: `${CmiCore.MODID}:deepslate_${name}_ore`
+							Name: `${Cmi.MODID}:deepslate_${name}_ore`
 						},
 						target: {
 							predicate_type: "minecraft:tag_match",
@@ -140,7 +140,7 @@ ServerEvents.highPriorityData((event) => {
 				configuredFeature.config.targets = [
 					{
 						state: {
-							Name: `${CmiCore.MODID}:nether_${name}_ore`
+							Name: `${Cmi.MODID}:nether_${name}_ore`
 						},
 						target: {
 							block: "minecraft:netherrack",
@@ -182,7 +182,7 @@ ServerEvents.highPriorityData((event) => {
 				configuredFeature.config.targets = [
 					{
 						state: {
-							"Name": `${CmiCore.MODID}:end_${name}_ore`
+							"Name": `${Cmi.MODID}:end_${name}_ore`
 						},
 						target: {
 							block: "minecraft:end_stone",
@@ -224,7 +224,7 @@ ServerEvents.highPriorityData((event) => {
 				configuredFeature.config.targets = [
 					{
 						"state": {
-							"Name": `${CmiCore.MODID}:moon_${name}_ore`
+							"Name": `${Cmi.MODID}:moon_${name}_ore`
 						},
 						"target": {
 							"block": "ad_astra:moon_stone",
@@ -266,7 +266,7 @@ ServerEvents.highPriorityData((event) => {
 				configuredFeature.config.targets = [
 					{
 						state: {
-							"Name": `${CmiCore.MODID}:mars_${name}_ore`
+							"Name": `${Cmi.MODID}:mars_${name}_ore`
 						},
 						target: {
 							predicate_type: "minecraft:tag_match",

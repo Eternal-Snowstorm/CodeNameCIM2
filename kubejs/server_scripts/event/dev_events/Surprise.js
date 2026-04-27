@@ -6,14 +6,14 @@ PlayerEvents.loggedIn((event) => {
 
 	if (month === 4 && day === 1) {
 		server.scheduleInTicks(5, () => {
-			player.tell(Component.translatable(`message.${CmiCore.MODID}.41msg`)
+			player.tell(Component.translatable(`message.${Cmi.MODID}.41msg`)
 				.clickOpenUrl("https://www.bilibili.com/video/BV1UT42167xb"))
 		})
 	}
 
 	if (month === 10 && day === 1) {
 		server.scheduleInTicks(5, () => {
-			player.tell(Component.translatable(`message.${CmiCore.MODID}.chinese_national_day`)
+			player.tell(Component.translatable(`message.${Cmi.MODID}.chinese_national_day`)
 				.red())
 		})
 	}

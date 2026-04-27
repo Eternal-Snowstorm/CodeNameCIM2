@@ -1,9 +1,9 @@
 StartupEvents.registry("block", (event) => {
 	function addCustomMachine(name) {
 		let builder =
-			event.create(`${CmiCore.MODID}:${name}`, "custommachinery")
+			event.create(`${Cmi.MODID}:${name}`, "custommachinery")
 
-		builder.machine(`${CmiCore.MODID}:${name}`)
+		builder.machine(`${Cmi.MODID}:${name}`)
 		builder.renderType("translucent")
 		builder.tag("create:wrench_pickup")
 

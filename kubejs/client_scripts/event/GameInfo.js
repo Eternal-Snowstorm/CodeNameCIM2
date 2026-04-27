@@ -5,8 +5,8 @@ ClientEvents.loggedIn((event) => {
 	let paintData = {}
 
 	if (isDev) {
-		let devInfo = Component.translatable(`text.${CmiCore.MODID}.dev`).getString()
-		let playerInfo = Component.translatable(`text.${CmiCore.MODID}.player`).getString()
+		let devInfo = Component.translatable(`text.${Cmi.MODID}.dev`).getString()
+		let playerInfo = Component.translatable(`text.${Cmi.MODID}.player`).getString()
 
 		paintData.devTip = {
 			type: "text",

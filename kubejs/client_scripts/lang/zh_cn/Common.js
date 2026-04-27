@@ -5,7 +5,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addGasLang(key, value) {
-		event.add(`gas.${CmiCore.MODID}.${key}`, value)
+		event.add(`gas.${Cmi.MODID}.${key}`, value)
 	}
 
 	/**
@@ -15,8 +15,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} author 
 	 */
 	function addPaintingLang(key, title, author) {
-		event.add(`painting.${CmiCore.MODID}.${key}.title`, title)
-		event.add(`painting.${CmiCore.MODID}.${key}.author`, author)
+		event.add(`painting.${Cmi.MODID}.${key}.title`, title)
+		event.add(`painting.${Cmi.MODID}.${key}.author`, author)
 	}
 
 	/**
@@ -26,8 +26,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} desc 
 	 */
 	function addAdvancementLang(key, title, desc) {
-		event.add(`advancements.${CmiCore.MODID}.${key}`, title)
-		event.add(`advancements.${CmiCore.MODID}.${key}.desc`, desc)
+		event.add(`advancements.${Cmi.MODID}.${key}`, title)
+		event.add(`advancements.${Cmi.MODID}.${key}.desc`, desc)
 	}
 
 	/**
@@ -37,8 +37,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {string} author
 	 */
 	function addMusicDiscLang(key, value, author) {
-		event.add(`item.${CmiCore.MODID}.${key}`, "音乐唱片")
-		event.add(`item.${CmiCore.MODID}.${key}.desc`, `${value} - ${author}`)
+		event.add(`item.${Cmi.MODID}.${key}`, "音乐唱片")
+		event.add(`item.${Cmi.MODID}.${key}.desc`, `${value} - ${author}`)
 	}
 
 	/**
@@ -47,8 +47,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addPlanetLang(key, value) {
-		event.add(`planet.${CmiCore.MODID}.${key}`, `${value}`)
-		event.add(`planet.${CmiCore.MODID}_orbit.${key}`, `${value}轨道`)
+		event.add(`planet.${Cmi.MODID}.${key}`, `${value}`)
+		event.add(`planet.${Cmi.MODID}_orbit.${key}`, `${value}轨道`)
 	}
 
 	/**
@@ -57,7 +57,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} value 
 	 */
 	function addStructureLang(key, value) {
-		event.add(`structure.${CmiCore.MODID}.${key}`, value)
+		event.add(`structure.${Cmi.MODID}.${key}`, value)
 	}
 
 	/**

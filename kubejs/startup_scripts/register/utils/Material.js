@@ -163,7 +163,7 @@ StartupEvents.registry("item", (event) => {
 			let item = null
 
 			if (type === "dirty") {
-				item = event.create(`${CmiCore.MODID}:dirty_${material.name}_dust`)
+				item = event.create(`${Cmi.MODID}:dirty_${material.name}_dust`)
 					.modelJson({
 						parent: "minecraft:item/generated",
 						textures: {
@@ -175,15 +175,15 @@ StartupEvents.registry("item", (event) => {
 					.tag("mekanism:dirty_dusts")
 					.tag(`mekanism:dirty_dusts/${material.name}`)
 			} else if (type === "clump" || type === "shard" || type === "crystal") {
-				item = event.create(`${CmiCore.MODID}:${material.name}_${type}`)
-					.texture(CmiCore.loadResource(`item/material/color/${type}`))
+				item = event.create(`${Cmi.MODID}:${material.name}_${type}`)
+					.texture(Cmi.loadResource(`item/material/color/${type}`))
 					.color(0, material.color1)
 					.tag(`mekanism:${type}s`)
 					.tag(`mekanism:${type}s/${material.name}`)
-					.tag(`${CmiCore.MODID}:metals`)
+					.tag(`${Cmi.MODID}:metals`)
 				return
 			} else {
-				item = event.create(`${CmiCore.MODID}:${material.name}_${type}`)
+				item = event.create(`${Cmi.MODID}:${material.name}_${type}`)
 					.modelJson(defineModels(type, overlay))
 					.color(0, material.color1)
 					.color(1, material.color2)
@@ -192,7 +192,7 @@ StartupEvents.registry("item", (event) => {
 			}
 
 			if (material.metal) {
-				item.tag(`${CmiCore.MODID}:metals`)
+				item.tag(`${Cmi.MODID}:metals`)
 			}
 		})
 	})
@@ -207,9 +207,9 @@ StartupEvents.registry("block", (event) => {
 				return
 			}
 
-			let block = event.create(`${CmiCore.MODID}:${material.name}_block`)
+			let block = event.create(`${Cmi.MODID}:${material.name}_block`)
 
-			block.textureAll(CmiCore.loadResource(`block/material/color/storage_blocks`))
+			block.textureAll(Cmi.loadResource(`block/material/color/storage_blocks`))
 			block.soundType(material.blockSound || SoundType.METAL)
 			block.color(0, material.color1)
 			block.hardness(5)
@@ -223,7 +223,7 @@ StartupEvents.registry("block", (event) => {
 			block.tag(`forge:storage_blocks/${material.name}`)
 
 			if (material.metal) {
-				block.tag(`${CmiCore.MODID}:metals`)
+				block.tag(`${Cmi.MODID}:metals`)
 			}
 		})
 	})
@@ -238,12 +238,12 @@ StartupEvents.registry("fluid", (event) => {
 				return
 			}
 
-			let molten = event.create(`${CmiCore.MODID}:molten_${material.name}`)
+			let molten = event.create(`${Cmi.MODID}:molten_${material.name}`)
 
 			molten.thinTexture(material.color1)
 			molten.bucketColor(material.color1)
-			molten.flowingTexture(CmiCore.loadResource(`fluid/metal/flow`))
-			molten.stillTexture(CmiCore.loadResource(`fluid/metal/still`))
+			molten.flowingTexture(Cmi.loadResource(`fluid/metal/flow`))
+			molten.stillTexture(Cmi.loadResource(`fluid/metal/still`))
 			molten.renderType("translucent")
 			molten.tag("forge:molten_materials")
 			molten.tag(`tconstruct:molten_${material.name}`)
@@ -251,15 +251,15 @@ StartupEvents.registry("fluid", (event) => {
 			molten.bucketItem.modelJson({
 				"parent": "forge:item/bucket_drip",
 				"loader": "forge:fluid_container",
-				"fluid": `${CmiCore.MODID}:molten_${material.name}`
+				"fluid": `${Cmi.MODID}:molten_${material.name}`
 			})
 
 			// if (Platform.isClientEnvironment()) {
-			// 	let file = `kubejs/assets/${CmiCore.MODID}/models/item/molten_${material.name}_bucket.json`
+			// 	let file = `kubejs/assets/${Cmi.MODID}/models/item/molten_${material.name}_bucket.json`
 			// 	JsonIO.write(file, {
 			// 		parent: "forge:item/bucket_drip",
 			// 		loader: "forge:fluid_container",
-			// 		fluid: `${CmiCore.MODID}:molten_${material.name}`
+			// 		fluid: `${Cmi.MODID}:molten_${material.name}`
 			// 	})
 			// }
 		})
@@ -272,13 +272,13 @@ StartupEvents.registry("mekanism:slurry", (event) => {
 	materials.forEach((material) => {
 		material.types.forEach((entry) => {
 			if (entry.type === "dirty_slurry") {
-				event.create(`${CmiCore.MODID}:dirty_${material.name}_slurry`)
+				event.create(`${Cmi.MODID}:dirty_${material.name}_slurry`)
 					.texture("mekanism:slurry/dirty")
 					.color(material.color1)
 					.tag("mekanism:dirty")
 					.tag(`mekanism:dirty/${material.name}`)
 			} else if (entry.type === "slurry") {
-				event.create(`${CmiCore.MODID}:${material.name}_slurry`)
+				event.create(`${Cmi.MODID}:${material.name}_slurry`)
 					.texture("mekanism:slurry/clean")
 					.color(material.color1)
 					.tag("mekanism:clean")

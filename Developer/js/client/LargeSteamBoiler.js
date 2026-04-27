@@ -7,7 +7,7 @@ Ponder.registry((event) => {
 		"mm:large_steam_boiler_fluid_input",
 		"mm:large_steam_boiler_item_input",
 		"mekanism:steam_bucket"
-	]).scene(`${CmiCore.MODID}:large_steam_boiler`, "Large Steam Boiler", (scene) => {
+	]).scene(`${Cmi.MODID}:large_steam_boiler`, "Large Steam Boiler", (scene) => {
 		const BRONZE_CASING = "cmi:bronze_casing"
 
 		scene.showBasePlate()

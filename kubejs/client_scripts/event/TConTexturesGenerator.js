@@ -123,7 +123,7 @@ function addTConTexture(name, colour, first, second, third, forth, fifth, sixth,
 		return color.startsWith("FF") ? color : `FF${color}`
 	})
 
-	JsonIO.writeAndCreateDirectories(`kubejs/assets/${CmiCore.MODID}/tinkering/materials/${name}.json`, {
+	JsonIO.writeAndCreateDirectories(`kubejs/assets/${Cmi.MODID}/tinkering/materials/${name}.json`, {
 		"color": colour.startsWith("FF") ? colour : `FF${colour}`,
 		"fallbacks": [
 			"metal"

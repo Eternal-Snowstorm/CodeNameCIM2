@@ -14,7 +14,7 @@ ServerEvents.highPriorityData((event) => {
 			type: "minecraft:jigsaw",
 			biomes: [],
 			size: 2,
-			start_pool: `${CmiCore.MODID}:ore_node/${name}_node`,
+			start_pool: `${Cmi.MODID}:ore_node/${name}_node`,
 			step: "surface_structures",
 			start_height: {
 				absolute: 0
@@ -28,12 +28,12 @@ ServerEvents.highPriorityData((event) => {
 
 		// 结构池
 		let depTemplatePool = {
-			name: `${CmiCore.MODID}:deposit_${name}`,
+			name: `${Cmi.MODID}:deposit_${name}`,
 			fallback: "minecraft:empty",
 			elements: [
 				{
 					element: {
-						location: `${CmiCore.MODID}:deposit/${name}/large`,
+						location: `${Cmi.MODID}:deposit/${name}/large`,
 						element_type: "minecraft:single_pool_element",
 						processors: "minecraft:empty",
 						projection: "rigid"
@@ -42,7 +42,7 @@ ServerEvents.highPriorityData((event) => {
 				},
 				{
 					element: {
-						location: `${CmiCore.MODID}:deposit/${name}/medium`,
+						location: `${Cmi.MODID}:deposit/${name}/medium`,
 						element_type: "minecraft:single_pool_element",
 						processors: "minecraft:empty",
 						projection: "rigid"
@@ -51,7 +51,7 @@ ServerEvents.highPriorityData((event) => {
 				},
 				{
 					element: {
-						location: `${CmiCore.MODID}:deposit/${name}/small`,
+						location: `${Cmi.MODID}:deposit/${name}/small`,
 						element_type: "minecraft:single_pool_element",
 						processors: "minecraft:empty",
 						projection: "rigid"
@@ -63,13 +63,13 @@ ServerEvents.highPriorityData((event) => {
 
 		// 结构池
 		let templatePool = {
-			name: `${CmiCore.MODID}:${name}`,
+			name: `${Cmi.MODID}:${name}`,
 			fallback: "minecraft:empty",
 			elements: [
 				{
 					weight: 1,
 					element: {
-						location: `${CmiCore.MODID}:ore_node/${name}_node`,
+						location: `${Cmi.MODID}:ore_node/${name}_node`,
 						element_type: "minecraft:single_pool_element",
 						processors: "minecraft:empty",
 						projection: "rigid"
@@ -99,7 +99,7 @@ ServerEvents.highPriorityData((event) => {
 				// 结构集
 				structures.push(
 					{
-						structure: `${CmiCore.MODID}:ore_node/${name}_node`,
+						structure: `${Cmi.MODID}:ore_node/${name}_node`,
 						weight: weight
 					}
 				)
@@ -119,7 +119,7 @@ ServerEvents.highPriorityData((event) => {
 					type: "minecraft:jigsaw",
 					biomes: "#create_rns:has_deposit_nether",
 					size: 2,
-					start_pool: `${CmiCore.MODID}:ore_node/${name}_node`,
+					start_pool: `${Cmi.MODID}:ore_node/${name}_node`,
 					step: "underground_structures",
 					start_height: {
 						type: "uniform",
@@ -139,7 +139,7 @@ ServerEvents.highPriorityData((event) => {
 				// 结构集
 				netherStructures.push(
 					{
-						structure: `${CmiCore.MODID}:ore_node/${name}_node`,
+						structure: `${Cmi.MODID}:ore_node/${name}_node`,
 						weight: weight
 					}
 				)
@@ -177,7 +177,7 @@ ServerEvents.highPriorityData((event) => {
 				// 结构集
 				moonStructures.push(
 					{
-						structure: `${CmiCore.MODID}:ore_node/${name}_node`,
+						structure: `${Cmi.MODID}:ore_node/${name}_node`,
 						weight: weight
 					}
 				)

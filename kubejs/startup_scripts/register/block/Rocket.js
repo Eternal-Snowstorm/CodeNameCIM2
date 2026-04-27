@@ -1,11 +1,11 @@
 StartupEvents.registry("block", (event) => {
 	function addBlock(name) {
-		return event.create(`${CmiCore.MODID}:${name}`)
+		return event.create(`${Cmi.MODID}:${name}`)
 	}
 	// 火箭框架
 	addBlock("rocket_pattern")
 		.soundType(SoundType.WOOD)
-		.model(CmiCore.loadResource("block/rocket/pattern/rocket_pattern"))
+		.model(Cmi.loadResource("block/rocket/pattern/rocket_pattern"))
 		.hardness(5)
 		.resistance(5)
 		.item((item) => {
@@ -23,7 +23,7 @@ StartupEvents.registry("block", (event) => {
 	// 火箭框架1
 	addBlock("tier_1_rocket_frame")
 		.soundType(SoundType.NETHERITE_BLOCK)
-		.model(CmiCore.loadResource("block/rocket/tier1/tier1"))
+		.model(Cmi.loadResource("block/rocket/tier1/tier1"))
 		.hardness(5)
 		.resistance(5)
 		.item((item) => {
@@ -40,7 +40,7 @@ StartupEvents.registry("block", (event) => {
 	// 火箭框架2
 	addBlock("tier_2_rocket_frame")
 		.soundType(SoundType.NETHERITE_BLOCK)
-		.model(CmiCore.loadResource("block/rocket/tier2/tier2"))
+		.model(Cmi.loadResource("block/rocket/tier2/tier2"))
 		.hardness(5)
 		.resistance(5)
 		.item((item) => {
@@ -57,7 +57,7 @@ StartupEvents.registry("block", (event) => {
 	// 火箭框架3
 	addBlock("tier_3_rocket_frame")
 		.soundType(SoundType.NETHERITE_BLOCK)
-		.model(CmiCore.loadResource("block/rocket/tier3/tier3"))
+		.model(Cmi.loadResource("block/rocket/tier3/tier3"))
 		.hardness(5)
 		.resistance(5)
 		.item((item) => {
@@ -74,7 +74,7 @@ StartupEvents.registry("block", (event) => {
 	// 火箭框架4
 	addBlock("tier_4_rocket_frame")
 		.soundType(SoundType.NETHERITE_BLOCK)
-		.model(CmiCore.loadResource("block/rocket/tier4/tier4"))
+		.model(Cmi.loadResource("block/rocket/tier4/tier4"))
 		.hardness(5)
 		.resistance(5)
 		.item((item) => {
@@ -91,7 +91,7 @@ StartupEvents.registry("block", (event) => {
 	// // 火箭设备
 	// // 控制器
 	// addBlock("rocket_controller")
-	// 	.model(CmiCore.loadResource("block/rocket/loader/controller"))
+	// 	.model(Cmi.loadResource("block/rocket/loader/controller"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(5)
 	// 	.resistance(5)
@@ -99,25 +99,25 @@ StartupEvents.registry("block", (event) => {
 	// 	.tagBlock(global.WRENCH_PICKUP)
 	// // 控制器 运行
 	// addBlock("rocket_controller_running")
-	// 	.model(CmiCore.loadResource("block/rocket/loader/controller_running"))
+	// 	.model(Cmi.loadResource("block/rocket/loader/controller_running"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 控制器 成功
 	// addBlock("rocket_controller_successful")
-	// 	.model(CmiCore.loadResource("block/rocket/loader/controller_successful"))
+	// 	.model(Cmi.loadResource("block/rocket/loader/controller_successful"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 控制器 失败
 	// addBlock("rocket_controller_faild")
-	// 	.model(CmiCore.loadResource("block/rocket/loader/controller_faild"))
+	// 	.model(Cmi.loadResource("block/rocket/loader/controller_faild"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器
 	// addBlock("rocket_display")
-	// 	.model(CmiCore.loadResource("block/space/devices/off"))
+	// 	.model(Cmi.loadResource("block/space/devices/off"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(5)
 	// 	.resistance(5)
@@ -125,115 +125,115 @@ StartupEvents.registry("block", (event) => {
 	// 	.tagBlock(global.WRENCH_PICKUP)
 	// // 显示器 开机
 	// addBlock("rocket_display_startup")
-	// 	.model(CmiCore.loadResource("block/space/devices/startup"))
+	// 	.model(Cmi.loadResource("block/space/devices/startup"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 加载
 	// addBlock("rocket_display_loading")
-	// 	.model(CmiCore.loadResource("block/space/devices/loading"))
+	// 	.model(Cmi.loadResource("block/space/devices/loading"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 错误
 	// addBlock("rocket_display_error")
-	// 	.model(CmiCore.loadResource("block/space/devices/error"))
+	// 	.model(Cmi.loadResource("block/space/devices/error"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 蓝屏
 	// addBlock("rocket_display_bsod")
-	// 	.model(CmiCore.loadResource("block/space/devices/bsod"))
+	// 	.model(Cmi.loadResource("block/space/devices/bsod"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 关机
 	// addBlock("rocket_display_shutdown")
-	// 	.model(CmiCore.loadResource("block/space/devices/shutdown"))
+	// 	.model(Cmi.loadResource("block/space/devices/shutdown"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 等级 1
 	// addBlock("rocket_display_tier_1")
-	// 	.model(CmiCore.loadResource("block/space/devices/t1"))
+	// 	.model(Cmi.loadResource("block/space/devices/t1"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 等级 2
 	// addBlock("rocket_display_tier_2")
-	// 	.model(CmiCore.loadResource("block/space/devices/t2"))
+	// 	.model(Cmi.loadResource("block/space/devices/t2"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 等级 3
 	// addBlock("rocket_display_tier_3")
-	// 	.model(CmiCore.loadResource("block/space/devices/t3"))
+	// 	.model(Cmi.loadResource("block/space/devices/t3"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 等级 4
 	// addBlock("rocket_display_tier_4")
-	// 	.model(CmiCore.loadResource("block/space/devices/t4"))
+	// 	.model(Cmi.loadResource("block/space/devices/t4"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 类型 1
 	// addBlock("rocket_display_type_1")
-	// 	.model(CmiCore.loadResource("block/space/devices/y1"))
+	// 	.model(Cmi.loadResource("block/space/devices/y1"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 类型 2
 	// addBlock("rocket_display_type_2")
-	// 	.model(CmiCore.loadResource("block/space/devices/y2"))
+	// 	.model(Cmi.loadResource("block/space/devices/y2"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 类型 3
 	// addBlock("rocket_display_type_3")
-	// 	.model(CmiCore.loadResource("block/space/devices/y3"))
+	// 	.model(Cmi.loadResource("block/space/devices/y3"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 类型 4
 	// addBlock("rocket_display_type_4")
-	// 	.model(CmiCore.loadResource("block/space/devices/y4"))
+	// 	.model(Cmi.loadResource("block/space/devices/y4"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 发射 1
 	// addBlock("rocket_display_launch_1")
-	// 	.model(CmiCore.loadResource("block/space/devices/l1"))
+	// 	.model(Cmi.loadResource("block/space/devices/l1"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 发射 2
 	// addBlock("rocket_display_launch_2")
-	// 	.model(CmiCore.loadResource("block/space/devices/l2"))
+	// 	.model(Cmi.loadResource("block/space/devices/l2"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 发射 3
 	// addBlock("rocket_display_launch_3")
-	// 	.model(CmiCore.loadResource("block/space/devices/l3"))
+	// 	.model(Cmi.loadResource("block/space/devices/l3"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 数字 1
 	// addBlock("rocket_display_number_1")
-	// 	.model(CmiCore.loadResource("block/space/devices/n1"))
+	// 	.model(Cmi.loadResource("block/space/devices/n1"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 数字 2
 	// addBlock("rocket_display_number_2")
-	// 	.model(CmiCore.loadResource("block/space/devices/n2"))
+	// 	.model(Cmi.loadResource("block/space/devices/n2"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
 	// // 显示器 数字 3
 	// addBlock("rocket_display_number_3")
-	// 	.model(CmiCore.loadResource("block/space/devices/n3"))
+	// 	.model(Cmi.loadResource("block/space/devices/n3"))
 	// 	.soundType(SoundType.METAL)
 	// 	.hardness(-1)
 	// 	.resistance(-1)
@@ -268,7 +268,7 @@ StartupEvents.registry("block", (event) => {
 	// // 运载火箭 1
 	// addBlock("loader_rocket_1")
 	// 	.soundType(SoundType.METAL)
-	// 	.model(CmiCore.loadResource("block/space/devices/rocket_1"))
+	// 	.model(Cmi.loadResource("block/space/devices/rocket_1"))
 	// 	.hardness(5)
 	// 	.resistance(5)
 	// 	.tagBlock(global.ToolType["pickaxe"])
@@ -276,7 +276,7 @@ StartupEvents.registry("block", (event) => {
 	// // 运载火箭 2
 	// addBlock("loader_rocket_2")
 	// 	.soundType(SoundType.METAL)
-	// 	.model(CmiCore.loadResource("block/space/devices/rocket_2"))
+	// 	.model(Cmi.loadResource("block/space/devices/rocket_2"))
 	// 	.hardness(5)
 	// 	.resistance(5)
 	// 	.tagBlock(global.ToolType["pickaxe"])
@@ -284,7 +284,7 @@ StartupEvents.registry("block", (event) => {
 	// // 运载火箭 3
 	// addBlock("loader_rocket_3")
 	// 	.soundType(SoundType.METAL)
-	// 	.model(CmiCore.loadResource("block/space/devices/rocket_3"))
+	// 	.model(Cmi.loadResource("block/space/devices/rocket_3"))
 	// 	.hardness(5)
 	// 	.resistance(5)
 	// 	.tagBlock(global.ToolType["pickaxe"])
@@ -292,7 +292,7 @@ StartupEvents.registry("block", (event) => {
 	// // 运载火箭 4
 	// addBlock("loader_rocket_4")
 	// 	.soundType(SoundType.METAL)
-	// 	.model(CmiCore.loadResource("block/space/devices/rocket_4"))
+	// 	.model(Cmi.loadResource("block/space/devices/rocket_4"))
 	// 	.hardness(5)
 	// 	.resistance(5)
 	// 	.tagBlock(global.ToolType["pickaxe"])

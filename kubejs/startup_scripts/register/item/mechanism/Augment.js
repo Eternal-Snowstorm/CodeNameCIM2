@@ -5,11 +5,11 @@ StartupEvents.registry("item", (event) => {
      * @returns 
      */
     function addMechanismAugment(name) {
-        let registerID = `${CmiCore.MODID}:${name}_mechanism_augment`
+        let registerID = `${Cmi.MODID}:${name}_mechanism_augment`
         let builder = event.create(registerID)
 
-        builder.texture(`${CmiCore.MODID}:item/mechanism/augment/${name}`)
-        builder.tag(`${CmiCore.MODID}:mechanism_augment`)
+        builder.texture(`${Cmi.MODID}:item/mechanism/augment/${name}`)
+        builder.tag(`${Cmi.MODID}:mechanism_augment`)
 
         return builder
     }

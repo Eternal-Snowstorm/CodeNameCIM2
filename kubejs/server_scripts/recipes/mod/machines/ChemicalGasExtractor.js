@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	// 氡气
 	event.custom({
 		"type": "custommachinery:custom_machine",
-		"machine": `${CmiCore.MODID}:chemical_gas_extractor`,
+		"machine": `${Cmi.MODID}:chemical_gas_extractor`,
 		"time": 1,
 		"hidden": false,
 		"requirements": [
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 	// 间歇
 	event.custom({
 		"type": "custommachinery:custom_machine",
-		"machine": `${CmiCore.MODID}:chemical_gas_extractor`,
+		"machine": `${Cmi.MODID}:chemical_gas_extractor`,
 		"time": 1,
 		"hidden": false,
 		"requirements": [
@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
 	// 汞
 	event.custom({
 		"type": "custommachinery:custom_machine",
-		"machine": `${CmiCore.MODID}:chemical_gas_extractor`,
+		"machine": `${Cmi.MODID}:chemical_gas_extractor`,
 		"time": 1,
 		"hidden": false,
 		"requirements": [

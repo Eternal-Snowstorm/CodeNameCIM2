@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	CmiGlobal.mechanismGroup.forEach((material) => {
 		event.custom({
 			"type": "custommachinery:custom_machine",
-			"machine": `${CmiCore.MODID}:flash_disk_writer`,
+			"machine": `${Cmi.MODID}:flash_disk_writer`,
 			"time": 400,
 			"hidden": false,
 			"requirements": [
@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
 	// 精密和红石
 	event.custom({
 		"type": "custommachinery:custom_machine",
-		"machine": `${CmiCore.MODID}:flash_disk_writer`,
+		"machine": `${Cmi.MODID}:flash_disk_writer`,
 		"time": 400,
 		"hidden": false,
 		"requirements": [
@@ -104,7 +104,7 @@ ServerEvents.recipes((event) => {
 
 	event.custom({
 		"type": "custommachinery:custom_machine",
-		"machine": `${CmiCore.MODID}:flash_disk_writer`,
+		"machine": `${Cmi.MODID}:flash_disk_writer`,
 		"time": 400,
 		"hidden": false,
 		"requirements": [
@@ -161,7 +161,7 @@ ServerEvents.recipes((event) => {
 	for (let tier = 1; tier <= 4; tier++) {
 		event.custom({
 			type: "custommachinery:custom_machine",
-			machine: `${CmiCore.MODID}:flash_disk_writer`,
+			machine: `${Cmi.MODID}:flash_disk_writer`,
 			time: 400,
 			hidden: false,
 			requirements: [
