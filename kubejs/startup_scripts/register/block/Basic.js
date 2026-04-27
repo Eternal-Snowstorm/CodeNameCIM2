@@ -151,7 +151,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(CmiMiningLevel.IRON)
 
 	// 黄铜楼梯
-	addBlock("brass_stair", "stairs")
+	addBlock("brass_stairs", "stairs")
 		.textureAll("create:block/brass_block")
 		.soundType(SoundType.METAL)
 		.hardness(5)

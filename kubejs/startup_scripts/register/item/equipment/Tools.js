@@ -65,4 +65,7 @@ StartupEvents.registry("item", (event) => {
 		.texture(Cmi.loadResource("item/tool/diamond_hammer"))
 		.tag("forge:tools")
 		.tag("forge:hammers")
-})
+
+	// 伊甸
+	event.create(`${Cmi.MODID}:astral_core`)
+})	
