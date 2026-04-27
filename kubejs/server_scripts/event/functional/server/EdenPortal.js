@@ -21,7 +21,7 @@ BlockEvents.rightClicked((event) => {
 				level.addFreshEntity(lightning)
 			}
 
-			let ay = center.y 
+			let ay = center.y
 			let offsets = [
 				[2, 2],
 				[2, -2],
