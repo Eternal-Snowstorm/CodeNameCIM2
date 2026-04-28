@@ -7,7 +7,7 @@ ServerEvents.highPriorityData((event) => {
 	 */
 	function Catalyst(name) {
 		this.name = name
-		this.path = IngrUtils.getPath(name)
+		this.path = Ingredient.getPath(name)
 
 		this.data = {
 			name: name,
