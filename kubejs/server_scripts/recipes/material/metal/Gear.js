@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 		const INGOT = `#forge:ingots/${metal}`
 		const GEAR = `#forge:gears/${metal}`
 
-		if (IngrUtils.isNotNull(GEAR)) {
+		if (Ingredient.isNotNull(GEAR)) {
 			thermal.press(GEAR, [
 				`4x ${INGOT}`,
 				"cmi:gear_mold"

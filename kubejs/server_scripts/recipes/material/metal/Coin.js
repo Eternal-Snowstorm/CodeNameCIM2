@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 		const NUGGET = `#forge:nuggets/${metal}`
 		const COIN = `#forge:coins/${metal}`
 
-		if (IngrUtils.isNotNull(COIN)) {
+		if (Ingredient.isNotNull(COIN)) {
 			thermal.press(`3x ${COIN}`, [
 				INGOT,
 				"cmi:coin_mold"
@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 				.input(`${INGOT}`)
 				.mold("cmi:coin_mold")
 
-			if (IngrUtils.isNotNull(NUGGET)) {
+			if (Ingredient.isNotNull(NUGGET)) {
 				thermal.press(COIN, [
 					`3x ${NUGGET}`,
 					"cmi:coin_mold"

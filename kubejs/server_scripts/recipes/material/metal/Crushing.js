@@ -11,14 +11,14 @@ ServerEvents.recipes((event) => {
 		let INGOT = `#forge:ingots/${metal}`
 		let DUST = `#forge:dusts/${metal}`
 
-		if (IngrUtils.isNotNull(DUST)) {
+		if (Ingredient.isNotNull(DUST)) {
 			create.crushing([
 				DUST
 			], INGOT)
 		}
 
-		if (IngrUtils.isNotNull(CRUSHED)) {
-			if (IngrUtils.isNotNull(RAW_BLOCK)) {
+		if (Ingredient.isNotNull(CRUSHED)) {
+			if (Ingredient.isNotNull(RAW_BLOCK)) {
 				create.crushing([
 					`9x ${CRUSHED}`,
 					Item.of(`9x ${EXP_NUGGET}`).withChance(0.75)
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
 			} else {
 				console.warn(`No storage block found for raw ${metal}!`)
 			}
-			if (IngrUtils.isNotNull(RAW_ORE)) {
+			if (Ingredient.isNotNull(RAW_ORE)) {
 				create.crushing([
 					CRUSHED,
 					Item.of(EXP_NUGGET).withChance(0.75)
@@ -34,10 +34,10 @@ ServerEvents.recipes((event) => {
 			} else {
 				console.warn(`No raw material found for ${metal}!`)
 			}
-			if (IngrUtils.isNotNull(ORE)) {
+			if (Ingredient.isNotNull(ORE)) {
 				create.crushing([
 					CRUSHED,
-					Item.of(IngrUtils.getFirstItemId(CRUSHED)).withChance(0.75),
+					Item.of(Ingredient.getFirstItemId(CRUSHED)).withChance(0.75),
 					Item.of(EXP_NUGGET).withChance(0.75),
 					Item.of("minecraft:cobblestone").withChance(0.125)
 				], ORE)

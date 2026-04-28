@@ -128,7 +128,7 @@ ServerEvents.recipes((event) => {
 		if (type === "item") {
 			return {
 				"#c": "ae2:i",
-				"id": IngrUtils.getFirstItemId(id),
+				"id": Ingredient.getFirstItemId(id),
 				"#": count
 			}
 		} else if (type === "fluid") {

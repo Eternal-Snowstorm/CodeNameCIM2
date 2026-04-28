@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
 	]).heated()
 
 	// 少量氧气
-	let getOxygenFluid = IngrUtils.getFirstFluidId("forge:oxygen")
+	let getOxygenFluid = Ingredient.getFirstFluidId("forge:oxygen")
 	thermal.refinery(Fluid.of(getOxygenFluid, 25), [
 		Fluid.of("cmi:photosyn_fluid", 500)
 	]).energy(2000)

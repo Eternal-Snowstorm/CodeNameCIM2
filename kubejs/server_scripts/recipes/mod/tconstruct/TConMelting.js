@@ -116,7 +116,7 @@ ServerEvents.recipes((event) => {
 		"zinc"
 	]
 	barTypes.forEach((type) => {
-		tconstruct.melting(Fluid.of(IngrUtils.getFirstFluidId(`tconstruct:molten_${type}`), 30))
+		tconstruct.melting(Fluid.of(Ingredient.getFirstFluidId(`tconstruct:molten_${type}`), 30))
 			.ingredient(`createdeco:${type}_bars`)
 			.time(40)
 			.temperature(global.meltingPoints[type])

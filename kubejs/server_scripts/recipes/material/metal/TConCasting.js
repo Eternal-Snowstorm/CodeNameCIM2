@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 
 	CmiMetalRegistry.getAll().forEach((material) => {
 		let metal = material.getId()
-		let fluid = IngrUtils.getFirstFluidId(`tconstruct:molten_${metal}`)
+		let fluid = Ingredient.getFirstFluidId(`tconstruct:molten_${metal}`)
 
 		if (fluid === null) {
 			console.warn(`No molten metal found for ${metal}!`)
@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
 			`${MULTI_USE_CAST}/ingot`
 		]).energy(4800)
 
-		if (IngrUtils.isNotNull(NUGGET)) {
+		if (Ingredient.isNotNull(NUGGET)) {
 			tconstruct.casting_table(NUGGET)
 				.cast(`${MULTI_USE_CAST}/nugget`)
 				.fluid(Fluid.of(fluid, 10))
@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No nugget found for ${metal}!`)
 		}
 
-		if (IngrUtils.isNotNull(BLOCK)) {
+		if (Ingredient.isNotNull(BLOCK)) {
 			tconstruct.casting_basin(BLOCK)
 				.fluid(Fluid.of(fluid, 810))
 				.cooling_time(20 * 9)
@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No storage block found for ${metal}!`)
 		}
 
-		if (IngrUtils.isNotNull(PLATE)) {
+		if (Ingredient.isNotNull(PLATE)) {
 			tconstruct.casting_table(PLATE)
 				.cast(`${MULTI_USE_CAST}/plate`)
 				.fluid(Fluid.of(fluid, 90))
@@ -85,7 +85,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No plate found for ${metal}!`)
 		}
 
-		if (IngrUtils.isNotNull(ROD)) {
+		if (Ingredient.isNotNull(ROD)) {
 			tconstruct.casting_table(ROD)
 				.cast(`${MULTI_USE_CAST}/rod`)
 				.fluid(Fluid.of(fluid, 45))
@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No rod found for ${metal}!`)
 		}
 
-		if (IngrUtils.isNotNull(GEAR)) {
+		if (Ingredient.isNotNull(GEAR)) {
 			tconstruct.casting_table(GEAR)
 				.cast(`${MULTI_USE_CAST}/gear`)
 				.fluid(Fluid.of(fluid, 360))
@@ -125,7 +125,7 @@ ServerEvents.recipes((event) => {
 			console.warn(`No gear found for ${metal}!`)
 		}
 
-		if (IngrUtils.isNotNull(COIN)) {
+		if (Ingredient.isNotNull(COIN)) {
 			tconstruct.casting_table(COIN)
 				.cast(`${MULTI_USE_CAST}/coin`)
 				.fluid(Fluid.of(fluid, 30))

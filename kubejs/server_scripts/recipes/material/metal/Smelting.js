@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
 				input: `#${type}/${metal}`
 			})
 
-			if (metal.toString() !== "aluminum" && IngrUtils.isNotNull(`#${type}/${metal}`)) {
+			if (metal.toString() !== "aluminum" && Ingredient.isNotNull(`#${type}/${metal}`)) {
 
 				minecraft.smelting(ingotId[0], `#${type}/${metal}`)
 				minecraft.blasting(ingotId[0], `#${type}/${metal}`)
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 				input: `#${type}/${metal}`
 			})
 
-			if (IngrUtils.isNotNull(`#${type}/${metal}`)) {
+			if (Ingredient.isNotNull(`#${type}/${metal}`)) {
 
 				minecraft.blasting(ingotId[0], `#${type}/${metal}`)
 				event.custom({
@@ -90,7 +90,7 @@ ServerEvents.recipes((event) => {
 				input: `#${type}/${metal}`
 			})
 
-			if (IngrUtils.isNotNull(`#${type}/${metal}`)) {
+			if (Ingredient.isNotNull(`#${type}/${metal}`)) {
 
 				event.remove({
 					type: "minecraft:blasting",
@@ -119,7 +119,7 @@ ServerEvents.recipes((event) => {
 		energizedSmelterMetals.forEach((metal) => {
 			let ingotId = Ingredient.of(`#forge:ingots/${metal}`).getItemIds()
 
-			if (IngrUtils.isNotNull(`#${type}/${metal}`)) {
+			if (Ingredient.isNotNull(`#${type}/${metal}`)) {
 
 				event.remove({
 					type: "minecraft:smelting",

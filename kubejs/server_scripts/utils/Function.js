@@ -29,98 +29,6 @@ let namespacePriority = [
 	"tconstruct"
 ]
 
-let IngrUtils = {
-	/**
-	 * 获取标签内第一个物品的ID, 若标签下没有物品则返回null
-	 * @param {Internal.Ingredient_} tagOrItem 物品标签ID
-	 * @param {number | undefined} count 物品数量
-	 * @returns {String | null}
-	 */
-	getFirstItemId: function (tagOrItem, count) {
-		let ids = count !== undefined
-			? Ingredient.of(tagOrItem, count).getItemIds()
-			: Ingredient.of(tagOrItem).getItemIds()
-
-		if (ids.length > 0) {
-			return ids[0]
-		} else {
-			console.warn(`No corresponding item under ${tagOrItem}`)
-			return null
-		}
-	},
-
-	/**
-	 * 
-	 * @param {ItemTags_} tag
-	 */
-	getUnifieditemId: function (tag) {
-		let ids = Ingredient.of(tag).getItemIds()
-		let currentNamespace
-		let outputId
-		let priorityValue
-
-		if (ids.length > 0) {
-			// 遍历获取到的tag下每个物品的命名空间
-			ids.forEach((id) => {
-				currentNamespace = ResourceLocation.parse(id).getNamespace()
-
-				// 获取命名空间优先级
-				for (let i = 0; i < namespacePriority.length; i++) {
-					if (currentNamespace === namespacePriority[i]) {
-						// 判定命名空间优先级并选择性输出优先级值最小的
-						if (i <= priorityValue || priorityValue == null) {
-							outputId = id
-							priorityValue = i
-						}
-					}
-				}
-			})
-		}
-		return outputId
-	},
-
-	/**
-	 * 获取标签内第一个流体的ID, 若标签下没有流体则返回null
-	 * @param {ResourceLocation} fluidTag 流体标签ID
-	 * @returns {String | null}
-	 */
-	getFirstFluidId: function (fluidTag) {
-		let tag = FluidTags.create(ResourceLocation.parse(fluidTag))
-		let optional = BuiltInRegistries.FLUID.getTag(tag)
-
-		if (optional.isPresent()) {
-			let fluidHolder = optional.get()
-				.stream()
-				.findFirst()
-				.orElse(null)
-
-			if (fluidHolder !== null) {
-				let getFluidKey = ForgeRegistries.FLUIDS.getKey(fluidHolder.value()).toString()
-				// console.log(`The first fluid is: ${getFluidKey}`)
-				return getFluidKey
-			}
-		}
-		console.warn(`No corresponding fluid under ${fluidTag}`)
-		return null
-	},
-
-	/**
-	 * 判断物品标签是否为空
-	 * @param {Internal.Ingredient_} tag 物品标签ID
-	 */
-	isNotNull: function (tag) {
-		return Ingredient.of(tag).getItemIds().length > 0
-	},
-	/**
-	 * 
-	 * @param {String} name 标签或id
-	 * @returns 
-	 */
-	getPath: function (name) {
-		return name.indexOf(":") !== -1 ? name.split(":")[1] : name
-	}
-}
-
 let MekanismType = {
 	Slurry: {
 		/**
@@ -179,7 +87,7 @@ function aeCharger(output, input) {
 	return {
 		type: "ae2:charger",
 		ingredient: Ingredient.of(input).toJson(),
-		result: Item.of(IngrUtils.getFirstItemId(output)).toJson()
+		result: Item.of(Ingredient.getFirstItemId(output)).toJson()
 	}
 }
 
@@ -305,6 +213,6 @@ BlockEvents.rightClicked((event) => {
 	const DEBUG_BLOCK = "cmi:green_screen"
 
 	if (block.id === DEBUG_BLOCK) {
-		player.tell(IngrUtils.getFirstFluidId("forge:solutions/iron/chloride"))
+		player.tell(Ingredient.getFirstFluidId("forge:solutions/iron/chloride"))
 	}
 })

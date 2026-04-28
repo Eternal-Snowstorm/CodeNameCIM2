@@ -8,7 +8,7 @@ ServerEvents.highPriorityData((event) => {
 	function FuelType(name, speed) {
 		this.name = name
 		this.speed = speed
-		this.getFluidName = IngrUtils.getPath(name)
+		this.getFluidName = Ingredient.getPath(name)
 
 		this.engineFuelData = {
 			fluid: name,

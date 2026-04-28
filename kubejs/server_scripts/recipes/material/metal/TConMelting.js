@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
 		])
 
 		let meltingPoint = CmiMetalRegistry.getMetal(metal).getMeltingPoint()
-		let fluidId = IngrUtils.getFirstFluidId(`tconstruct:molten_${metal}`)
+		let fluidId = Ingredient.getFirstFluidId(`tconstruct:molten_${metal}`)
 		let namespace = global.materialNamespace[metal]
 		let ingot = `#forge:ingots/${metal}`
 		let plate = `#forge:plates/${metal}`
@@ -29,49 +29,49 @@ ServerEvents.recipes((event) => {
 		let rawBlock = `#forge:storage_blocks/raw_${metal}`
 
 		if (fluidId !== null) {
-			if (IngrUtils.isNotNull(ingot)) {
+			if (Ingredient.isNotNull(ingot)) {
 				tconstruct.melting(Fluid.of(fluidId, 90))
 					.ingredient(ingot)
 					.time(100)
 					.temperature(meltingPoint)
 			}
 
-			if (IngrUtils.isNotNull(plate)) {
+			if (Ingredient.isNotNull(plate)) {
 				tconstruct.melting(Fluid.of(fluidId, 90))
 					.ingredient(plate)
 					.time(100)
 					.temperature(meltingPoint)
 			}
 
-			if (IngrUtils.isNotNull(nugget)) {
+			if (Ingredient.isNotNull(nugget)) {
 				tconstruct.melting(Fluid.of(fluidId, 10))
 					.ingredient(nugget)
 					.time(60)
 					.temperature(meltingPoint)
 			}
 
-			if (IngrUtils.isNotNull(gear)) {
+			if (Ingredient.isNotNull(gear)) {
 				tconstruct.melting(Fluid.of(fluidId, 360))
 					.ingredient(gear)
 					.time(120)
 					.temperature(meltingPoint)
 			}
 
-			if (IngrUtils.isNotNull(dust)) {
+			if (Ingredient.isNotNull(dust)) {
 				tconstruct.melting(Fluid.of(fluidId, 90))
 					.ingredient(dust)
 					.time(80)
 					.temperature(meltingPoint)
 			}
 
-			if (metal.toString() !== "aluminum" && IngrUtils.isNotNull(rawMaterial)) {
+			if (metal.toString() !== "aluminum" && Ingredient.isNotNull(rawMaterial)) {
 				tconstruct.melting(Fluid.of(fluidId, 120))
 					.ingredient(rawMaterial)
 					.time(100)
 					.temperature(meltingPoint)
 			}
 
-			if (IngrUtils.isNotNull(rawBlock)) {
+			if (Ingredient.isNotNull(rawBlock)) {
 				if (metal.toString() !== "aluminum" &&
 					metal.toString() !== "desh" &&
 					metal.toString() !== "ostrum" &&
@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
 				}
 			}
 
-			if (IngrUtils.isNotNull(block)) {
+			if (Ingredient.isNotNull(block)) {
 				if (metal.toString() !== "aluminum" &&
 					metal.toString() !== "desh" &&
 					metal.toString() !== "ostrum" &&

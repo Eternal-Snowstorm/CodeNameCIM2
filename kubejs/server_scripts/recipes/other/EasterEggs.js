@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
     let { create, immersiveengineering } = event.getRecipes()
-    const STEEL_INGOT = IngrUtils.getFirstItemId("#forge:ingots/steel")
+    const STEEL_INGOT = Ingredient.getFirstItemId("#forge:ingots/steel")
 
     // 钢錠
     immersiveengineering.blast_furnace("cmi:togni_leets")

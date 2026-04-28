@@ -182,7 +182,7 @@ ServerEvents.highPriorityData((event) => {
 	function addUnification(match, item) {
 		return {
 			matchItems: [match],
-			resultItems: IngrUtils.getFirstItemId(item)
+			resultItems: Ingredient.getFirstItemId(item)
 		}
 	}
 

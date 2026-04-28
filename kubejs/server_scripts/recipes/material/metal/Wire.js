@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 		const WIRE = `#forge:wires/${metal}`
 		const PLATE = `#forge:plates/${metal}`
 
-		if (IngrUtils.isNotNull(WIRE)) {
+		if (Ingredient.isNotNull(WIRE)) {
 			createaddition.rolling(`2x ${WIRE}`, [
 				PLATE
 			])
