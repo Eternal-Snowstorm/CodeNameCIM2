@@ -84,11 +84,8 @@ ServerEvents.highPriorityData((event) => {
 		return this
 	}
 
-	/**
-	 * 构建
-	 */
 	Catalyst.prototype.build = function () {
-		event.addJson(Cmi.loadResource(`create_rns:catalyst/${this.path}.json`), this.data)
+		event.addJson(Cmi.loadResource(`create_rns/catalyst/${this.path}.json`), this.data)
 		return this
 	}
 
