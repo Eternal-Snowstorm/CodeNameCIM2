@@ -135,6 +135,15 @@ ServerEvents.recipes((event) => {
 		C: "#forge:plates/cobalt"
 	}).id("thermalendergy:vibrating_core")
 
+	// 黄铜楼梯
+	kubejs.shaped("4x cmi:brass_stairs", [
+		"A  ",
+		"AA ",
+		"AAA"
+	], {
+		A: "#forge:storage_blocks/brass"
+	})
+
 	// 旗帜
 	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		kubejs.shaped(`ad_astra:${color}_flag`, [
