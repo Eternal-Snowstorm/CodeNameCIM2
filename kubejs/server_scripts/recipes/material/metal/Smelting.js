@@ -162,6 +162,7 @@ ServerEvents.recipes((event) => {
 	thermal.smelter("immersiveengineering:ingot_aluminum", "#forge:dusts/aluminum")
 
 	// 锇的额外配方
+	// 车窑配方虽然比较久, 但是自带并行, 需要在任务内提及
 	event.custom({
 		"type": "immersiveindustry:car_kiln",
 		"input_fluid": {
