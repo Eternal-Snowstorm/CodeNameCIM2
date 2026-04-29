@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.getRecipes()
+	let { kubejs, minecraft } = event.getRecipes()
 
 	// 粉碎轮
 	kubejs.shaped("create:crushing_wheel", [
@@ -102,10 +102,7 @@ ServerEvents.recipes((event) => {
 		"copper"
 	]
 	casingFrame.forEach((frame) => {
-		event.stonecutting(
-			`4x cmi:${frame}_casing_framework`,
-			`#forge:plates/${frame}`
-		)
+		minecraft.stonecutting(`4x cmi:${frame}_casing_framework`, `#forge:plates/${frame}`)
 	})
 
 	// 锯片
