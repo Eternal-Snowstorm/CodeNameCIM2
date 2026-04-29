@@ -10,6 +10,6 @@ item_ids:
 
 <Row>
 <GameScene zoom="4" interactive={true}>
-<ImportStructure src="../assets/structures/cmi_water_well.nbt"/>
+<ImportStructure src="../assets/structures/use_id_fluid_pipe.nbt"/>
 </GameScene>
 </Row>
