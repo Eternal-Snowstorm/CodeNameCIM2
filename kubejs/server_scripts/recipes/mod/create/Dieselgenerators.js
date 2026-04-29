@@ -12,22 +12,19 @@ ServerEvents.recipes((event) => {
 		"thermal:blitz_powder",
 		"thermal:blitz_powder",
 		"thermal:blitz_powder"
-	], "createdieselgenerators:lines"
-	).heated()
+	], "createdieselgenerators:lines").heated()
 
 	createdieselgenerators.compression_molding("thermal:blizz_rod", [
 		"thermal:blizz_powder",
 		"thermal:blizz_powder",
 		"thermal:blizz_powder",
 		"thermal:blizz_powder"
-	], "createdieselgenerators:lines"
-	).heated()
+	], "createdieselgenerators:lines").heated()
 
 	createdieselgenerators.compression_molding("thermal:basalz_rod", [
 		"thermal:basalz_powder",
 		"thermal:basalz_powder",
 		"thermal:basalz_powder",
 		"thermal:basalz_powder"
-	], "createdieselgenerators:lines"
-	).heated()
+	], "createdieselgenerators:lines").heated()
 })
