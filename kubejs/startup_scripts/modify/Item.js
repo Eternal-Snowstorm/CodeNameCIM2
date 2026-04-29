@@ -8,7 +8,7 @@ ItemEvents.modification((event) => {
 	function modifyItemBurnTime(item, time) {
 		return event.modify(item, (modify) => {
 			const BURN_TIME = 200
-			modify.burnTime = BURN_TIME * time
+			modify.setBurnTime(BURN_TIME * time)
 		})
 	}
 
@@ -29,11 +29,6 @@ ItemEvents.modification((event) => {
 	modifyItemBurnTime("mekanism:dust_charcoal", 4 * 1.5)
 	modifyItemBurnTime("mekanism:block_charcoal", 4 * 9)
 	modifyItemBurnTime("thermal:charcoal_block", 4 * 9)
-
-	// 设定多彩构件无法被合成配方消耗
-	event.modify("cmi:colorful_mechanism", (modify) => {
-		modify.craftingRemainder = "cmi:colorful_mechanism"
-	})
 
 	// 奶酪统一处理
 	event.modify("ad_astra:cheese_block", (modify) => {
