@@ -179,6 +179,12 @@ function OreBlock(name, level, hardness) {
 	commonOres.push(this)
 }
 
+/**
+ * 
+ * @param {number} color 
+ * @param {string} id 
+ * @returns 
+ */
 OreBlock.prototype.appearance = function (color, id) {
 	this.color = color
 	this.texture = `ore_${id}`
@@ -309,3 +315,8 @@ new OreBlock("etrium", "diamond", 5)
 new OreBlock("titanium", "diamond", 20)
 	.appearance(0xE2B1E3, 1)
 	.galena()
+
+// 阿迪特
+new OreBlock("ardite", "iron", 10)
+	.appearance(0xECB200, 7)
+	.nether()

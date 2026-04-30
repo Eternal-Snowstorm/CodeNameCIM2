@@ -273,3 +273,13 @@ new Material("pure_quartz", "wooden")
 	.color(0xa5f1ff, 0xFFFFFF)
 	.dust()
 	.prism()
+
+// 阿迪特
+new Material("ardite", "iron")
+	.color(0xECB200, 0xB27B00)
+	.isMetal()
+	.ingot()
+	.dust()
+	.nugget()
+	.block()
+	.molten()

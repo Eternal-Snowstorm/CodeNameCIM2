@@ -1,5 +1,11 @@
 // priority: 100
 
+/*
+ * v代表该材料是由TCon本体添加的
+ * t代表该材料是由热力工匠添加的
+ * c代表该材料是由制作组自定义的
+ * n代表无此材料
+ */
 let metals = {
 	abyssal: {
 		t: 1953,
@@ -15,6 +21,10 @@ let metals = {
 	},
 	andesite_alloy: {
 		t: 760,
+		n: "c"
+	},
+	ardite: {
+		t: 1868,
 		n: "c"
 	},
 	azure_neodymium: {
@@ -162,7 +172,8 @@ let metals = {
 		n: "c"
 	},
 	sodium: {
-		t: 98
+		t: 98,
+		n: "c"
 	},
 	scarlet_neodymium: {
 		t: 1024,
@@ -212,7 +223,8 @@ let metals = {
 		n: "v"
 	},
 	titanium: {
-		t: 1668
+		t: 1668,
+		n: "c"
 	},
 	tungsten: {
 		t: 3410,
@@ -230,7 +242,8 @@ let metals = {
 		n: "v"
 	},
 	vanadium: {
-		t: 1910
+		t: 1910,
+		n: "c"
 	},
 	zinc: {
 		t: 419,

@@ -1,49 +1,4 @@
 ClientEvents.lang("zh_cn", (event) => {
-	/**
-	 * 
-	 * @param {String} key 
-	 * @param {String} value 
-	 */
-	function addMaterialLang(key, value) {
-		event.add(`item.${Cmi.MODID}.${key}_ingot`, `${value}锭`)
-		event.add(`item.${Cmi.MODID}.${key}_nugget`, `${value}粒`)
-		event.add(`item.${Cmi.MODID}.${key}_plate`, `${value}板`)
-		event.add(`item.${Cmi.MODID}.${key}_dust`, `${value}粉`)
-		event.add(`item.${Cmi.MODID}.${key}_gear`, `${value}齿轮`)
-		event.add(`item.${Cmi.MODID}.${key}_rod`, `${value}杆`)
-
-		event.add(`item.${Cmi.MODID}.dirty_${key}_dust`, `污浊${value}粉`)
-		event.add(`item.${Cmi.MODID}.${key}_clump`, `${value}碎块`)
-		event.add(`item.${Cmi.MODID}.${key}_shard`, `${value}碎片`)
-		event.add(`item.${Cmi.MODID}.${key}_crystal`, `${value}晶体`)
-		event.add(`item.${Cmi.MODID}.${key}_prism`, `${value}棱镜`)
-
-		event.add(`slurry.${Cmi.MODID}.dirty_${key}_slurry`, `污浊${value}浆液`)
-		event.add(`slurry.${Cmi.MODID}.${key}_slurry`, `纯净${value}浆液`)
-
-		event.add(`block.${Cmi.MODID}.${key}_block`, `${value}块`)
-
-		event.add(`block.${Cmi.MODID}.molten_${key}`, `熔融${value}`)
-		event.add(`fluid.${Cmi.MODID}.molten_${key}`, `熔融${value}`)
-		event.add(`item.${Cmi.MODID}.molten_${key}_bucket`, `熔融${value}桶`)
-
-		event.add(`item.${Cmi.MODID}.raw_${key}`, `粗${value}`)
-		event.add(`block.${Cmi.MODID}.raw_${key}_block`, `粗${value}块`)
-		event.add(`item.${Cmi.MODID}.crushed_raw_${key}`, `粉碎${value}矿石`)
-
-		event.add(`block.${Cmi.MODID}.${key}_ore`, `${value}矿石`)
-		event.add(`block.${Cmi.MODID}.deepslate_${key}_ore`, `深层${value}矿石`)
-		event.add(`block.${Cmi.MODID}.nether_${key}_ore`, `塔尔塔罗斯${value}矿石`)
-		event.add(`block.${Cmi.MODID}.end_${key}_ore`, `倪克斯${value}矿石`)
-		event.add(`block.${Cmi.MODID}.moon_${key}_ore`, `莫托斯${value}矿石`)
-		event.add(`block.${Cmi.MODID}.mars_${key}_ore`, `阿瑞斯${value}矿石`)
-		event.add(`block.${Cmi.MODID}.mercury_${key}_ore`, `赫尔墨斯${value}矿石`)
-		event.add(`block.${Cmi.MODID}.venus_${key}_ore`, `阿弗洛狄忒${value}矿石`)
-		event.add(`block.${Cmi.MODID}.glacio_${key}_ore`, `哈迪斯${value}矿石`)
-		event.add(`block.${Cmi.MODID}.galena_${key}_ore`, `赫菲斯托斯${value}矿石`)
-		event.add(`block.${Cmi.MODID}.radrock_${key}_ore`, `迪奥尼索斯${value}矿石`)
-	}
-
 	addMaterialLang("andesite_alloy", "安山合金")
 	addMaterialLang("cinderslime", "余烬史莱姆")
 	addMaterialLang("stainless_steel", "不锈耐酸钢")
@@ -88,4 +43,50 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("wooden", "木质")
 	addMaterialLang("polished_quartz", "磨制石英")
 	addMaterialLang("pure_quartz", "纯净石英")
+	addMaterialLang("ardite", "阿迪特")
+
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
+	function addMaterialLang(key, value) {
+		event.add(`item.${Cmi.MODID}.${key}_ingot`, `${value}锭`)
+		event.add(`item.${Cmi.MODID}.${key}_nugget`, `${value}粒`)
+		event.add(`item.${Cmi.MODID}.${key}_plate`, `${value}板`)
+		event.add(`item.${Cmi.MODID}.${key}_dust`, `${value}粉`)
+		event.add(`item.${Cmi.MODID}.${key}_gear`, `${value}齿轮`)
+		event.add(`item.${Cmi.MODID}.${key}_rod`, `${value}杆`)
+
+		event.add(`item.${Cmi.MODID}.dirty_${key}_dust`, `污浊${value}粉`)
+		event.add(`item.${Cmi.MODID}.${key}_clump`, `${value}碎块`)
+		event.add(`item.${Cmi.MODID}.${key}_shard`, `${value}碎片`)
+		event.add(`item.${Cmi.MODID}.${key}_crystal`, `${value}晶体`)
+		event.add(`item.${Cmi.MODID}.${key}_prism`, `${value}棱镜`)
+
+		event.add(`slurry.${Cmi.MODID}.dirty_${key}_slurry`, `污浊${value}浆液`)
+		event.add(`slurry.${Cmi.MODID}.${key}_slurry`, `纯净${value}浆液`)
+
+		event.add(`block.${Cmi.MODID}.${key}_block`, `${value}块`)
+
+		event.add(`block.${Cmi.MODID}.molten_${key}`, `熔融${value}`)
+		event.add(`fluid.${Cmi.MODID}.molten_${key}`, `熔融${value}`)
+		event.add(`item.${Cmi.MODID}.molten_${key}_bucket`, `熔融${value}桶`)
+
+		event.add(`item.${Cmi.MODID}.raw_${key}`, `粗${value}`)
+		event.add(`block.${Cmi.MODID}.raw_${key}_block`, `粗${value}块`)
+		event.add(`item.${Cmi.MODID}.crushed_raw_${key}`, `粉碎${value}矿石`)
+
+		event.add(`block.${Cmi.MODID}.${key}_ore`, `${value}矿石`)
+		event.add(`block.${Cmi.MODID}.deepslate_${key}_ore`, `深层${value}矿石`)
+		event.add(`block.${Cmi.MODID}.nether_${key}_ore`, `塔尔塔罗斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.end_${key}_ore`, `倪克斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.moon_${key}_ore`, `莫托斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.mars_${key}_ore`, `阿瑞斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.mercury_${key}_ore`, `赫尔墨斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.venus_${key}_ore`, `阿弗洛狄忒${value}矿石`)
+		event.add(`block.${Cmi.MODID}.glacio_${key}_ore`, `哈迪斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.galena_${key}_ore`, `赫菲斯托斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.radrock_${key}_ore`, `迪奥尼索斯${value}矿石`)
+	}
 })
