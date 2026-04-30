@@ -1,3 +1,12 @@
+let $TinkerModifiers =
+	Java.loadClass("slimeknights.tconstruct.tools.TinkerModifiers")
+let $ModifierIds =
+	Java.loadClass("slimeknights.tconstruct.tools.data.ModifierIds")
+let $NTModifier =
+	Java.loadClass("dev.celestiacraft.tinker.common.register.NTModifier")
+let $ThermalConstructModifierIds =
+	Java.loadClass("mrthomas20121.thermalconstruct.ThermalConstructModifierIds")
+
 ServerEvents.highPriorityData((event) => {
 	// 紫水晶
 	new TConMaterial(event, `${Cmi.MODID}:amethyst`, (builder) => {
@@ -9,8 +18,8 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.1, -0.12, 230, -0.02)
 			.grip(0.2, -0.1, 3.2)
 			.setTraits((builder) => {
-				builder.addTrait("tconstruct:melee_harvest", "tconstruct:luck", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:crystalshot", 1)
+				builder.addTrait("tconstruct:melee_harvest", use($ModifierIds.luck), 1)
+					.addTrait("tconstruct:ranged", use($ModifierIds.crystalshot), 1)
 			})
 			.addMaterialRecipes("minecraft:amethyst_block", (builder) => {
 				builder.needed(1)
@@ -41,10 +50,10 @@ ServerEvents.highPriorityData((event) => {
 			.arrowShaft()
 			.platingShield(226, 1.0, 1.0, 1.0)
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:stonebound", 1)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:reach", 1)
-					.addTrait("tconstruct:armor", "tconstruct:melee_protection", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:insatiable", 1)
+				builder.addTrait("default", use($TinkerModifiers.stonebound), 1)
+					.addTrait("tconstruct:melee_harvest", use($ModifierIds.reach), 1)
+					.addTrait("tconstruct:armor", use($ModifierIds.meleeProtection), 1)
+					.addTrait("tconstruct:ammo", use($TinkerModifiers.insatiable), 1)
 			})
 			.addMaterialRecipes("create:andesite_alloy_block", (builder) => {
 				builder.needed(1)
@@ -77,9 +86,9 @@ ServerEvents.highPriorityData((event) => {
 			.platingLeggings(0.2, 231, 0, 1.5)
 			.platingShield(238, 1.3, 1.5)
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:harmonious", 1)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:reach", 2)
-					.addTrait("tconstruct:ranged", "tconstruct:multishot", 1)
+				builder.addTrait("default", use($ModifierIds.harmonious), 1)
+					.addTrait("tconstruct:melee_harvest", use($ModifierIds.reach), 2)
+					.addTrait("tconstruct:ranged", use($TinkerModifiers.multishot), 1)
 			})
 			.addMaterialFluidRecipes("tconstruct:molten_brass", (builder) => {
 				builder.amount(90)
@@ -104,8 +113,8 @@ ServerEvents.highPriorityData((event) => {
 			.platingBoots(2, 195, 0, 1)
 			.platingShield(270, 0, 2)
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:magnetic", 1)
-					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
+				builder.addTrait("default", use($TinkerModifiers.magnetic), 1)
+					.addTrait("tconstruct:armor", use($ModifierIds.projectileProtection), 1)
 			})
 	})
 
@@ -125,9 +134,9 @@ ServerEvents.highPriorityData((event) => {
 			.platingBoots(3, 225, 1, 0)
 			.platingShield(300, 2, 0)
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:magnetic", 1)
-					.addTrait("tconstruct:armor", "tconstruct:projectile_protection", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:maintained", 1)
+				builder.addTrait("default", use($TinkerModifiers.magnetic), 1)
+					.addTrait("tconstruct:armor", use($ModifierIds.projectileProtection), 1)
+					.addTrait("tconstruct:ranged", use($ModifierIds.maintained), 1)
 			})
 	})
 
@@ -148,10 +157,10 @@ ServerEvents.highPriorityData((event) => {
 			.platingBoots(2, 400, 0, 2)
 			.platingShield(550, 0, 2)
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:ductile", 2)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:ductile", 2)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:blockade", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:ductile", 2)
+				builder.addTrait("default", use($ModifierIds.ductile), 2)
+					.addTrait("tconstruct:melee_harvest", use($ModifierIds.ductile), 2)
+					.addTrait("tconstruct:melee_harvest", use($ModifierIds.blockade), 1)
+					.addTrait("tconstruct:ranged", use($ModifierIds.ductile), 2)
 			})
 	})
 
@@ -167,11 +176,11 @@ ServerEvents.highPriorityData((event) => {
 			.maille()
 			.platingShield(820, 0, 2)
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:reinforced", 1)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:haste", 1)
-					.addTrait("tconstruct:armor", "tconstruct:speedy", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:featherweight", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:lightweight", 2)
+				builder.addTrait("default", use($ModifierIds.reinforced), 1)
+					.addTrait("tconstruct:melee_harvest", use($ModifierIds.haste), 1)
+					.addTrait("tconstruct:armor", use($ModifierIds.speedy), 1)
+					.addTrait("tconstruct:ranged", use($ModifierIds.featherweight), 1)
+					.addTrait("tconstruct:ranged", use($ModifierIds.lightweight), 2)
 			})
 	})
 
@@ -187,10 +196,10 @@ ServerEvents.highPriorityData((event) => {
 			.maille()
 			.platingShield(1420, 0, 4)
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:heavy", 1)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:flamestance", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:multishot", 2)
-					.addTrait("tconstruct:ranged", "tconstruct:maintained", 1)
+				builder.addTrait("default", use($ModifierIds.heavy), 1)
+					.addTrait("tconstruct:melee_harvest", use($ModifierIds.flamestance), 1)
+					.addTrait("tconstruct:ranged", use($TinkerModifiers.multishot), 2)
+					.addTrait("tconstruct:ranged", use($ModifierIds.maintained), 1)
 			})
 	})
 
@@ -210,11 +219,11 @@ ServerEvents.highPriorityData((event) => {
 			.platingBoots(2, 1200, 0.2, 3)
 			.platingShield(1420, 0.5, 4)
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:enhanced", 1)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:conducting", 1)
-					.addTrait("tconstruct:melee_harvest", "thermal_construct:solid", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:ballista", 1)
-					.addTrait("tconstruct:armor", "tconstruct:fire_protection", 2)
+				builder.addTrait("default", use($ModifierIds.enhanced), 1)
+					.addTrait("tconstruct:melee_harvest", use($TinkerModifiers.conducting), 1)
+					.addTrait("tconstruct:melee_harvest", use($ModifierIds.solid), 1)
+					.addTrait("tconstruct:ranged", use($ModifierIds.ballista), 1)
+					.addTrait("tconstruct:armor", use($ModifierIds.fireProtection), 2)
 			})
 	})
 
@@ -231,11 +240,11 @@ ServerEvents.highPriorityData((event) => {
 			.arrowHead()
 			.maille()
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:raging", 1)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:searing", 1)
-					.addTrait("tconstruct:ranged", "tconstruct:power", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:impaling", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:pierce", 1)
+				builder.addTrait("default", use($ModifierIds.raging), 1)
+					.addTrait("tconstruct:melee_harvest", use($ModifierIds.searing), 1)
+					.addTrait("tconstruct:ranged", use($ModifierIds.power), 1)
+					.addTrait("tconstruct:ammo", use($TinkerModifiers.impaling), 1)
+					.addTrait("tconstruct:ammo", use($ModifierIds.pierce), 1)
 			})
 	})
 
@@ -252,10 +261,27 @@ ServerEvents.highPriorityData((event) => {
 			.arrowHead()
 			.maille()
 			.setTraits((builder) => {
-				builder.addTrait("default", "tconstruct:crystalstrike", 1)
-					.addTrait("tconstruct:melee_harvest", "tconstruct:lightspeed", 1)
-					.addTrait("tconstruct:armor", "tconstruct:lightspeed", 1)
-					.addTrait("tconstruct:ammo", "tconstruct:keen", 2)
+				builder.addTrait("default", use($ModifierIds.crystalstrike), 1)
+					.addTrait("tconstruct:melee_harvest", use($ModifierIds.lightspeed), 1)
+					.addTrait("tconstruct:armor", use($ModifierIds.lightspeed), 1)
+					.addTrait("tconstruct:ammo", use($ModifierIds.keen), 2)
 			})
 	})
+
+	// 阿迪特
+	// new TConMaterial(event, `${Cmi.MODID}:ardite`, (builder) => {
+	// 	builder.visibility(3, false)
+	// 		.craftable(false)
+	// 		.sortOrder(7)
+	// })
 })
+
+/**
+ * 使用 Java Modifier
+ * 
+ * @template {Internal.Modifier_} T
+ * @param {Internal.DynamicModifier_ | Internal.StaticModifier_<T> | Internal.ModifierId_} modifier
+ */
+function use(modifier) {
+	return modifier.toString()
+}

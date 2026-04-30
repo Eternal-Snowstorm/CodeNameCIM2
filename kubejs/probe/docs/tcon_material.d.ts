@@ -19,8 +19,8 @@ type TraitStat =
 type FluidIngredient = Special.Fluid | `#${Special.FluidTag}`
 
 interface TraitsBuilder {
-	addDefault(name: string, level: number): this
-	addTrait(stat: TraitStat, name: string, level: number): this
+	addDefault(name: ResourceLocation_, level: number): this
+	addTrait(stat: TraitStat, name: ResourceLocation_, level: number): this
 }
 
 interface MaterialRecipeBuilder {

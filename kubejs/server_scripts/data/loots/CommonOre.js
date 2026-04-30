@@ -15,7 +15,7 @@ ServerEvents.blockLootTables((event) => {
 				"mercury_"
 			]
 			prefixes.forEach((prefix) => {
-				let blockId = `${namespace}:${prefix}${ore}_ore`
+				let blockId = `${namespace}:${prefix + ore}_ore`
 
 				event.addBlock(blockId, (loot) => {
 					loot.addPool((pool) => {
@@ -149,4 +149,6 @@ ServerEvents.blockLootTables((event) => {
 	addOreLoots.common("veridium")
 	// 埃忒恩
 	addOreLoots.common("etrium")
+	// 阿迪特
+	addOreLoots.common("ardite")
 })

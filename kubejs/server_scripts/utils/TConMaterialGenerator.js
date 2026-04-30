@@ -1,7 +1,7 @@
 /**
  * @param {Internal.DataPackEventJS_} event 传入数据包事件
  * @param {string} name 注册id
- * @param {(builder: TConMaterialBuilder) => void} handler 构造器
+ * @param {Internal.Consumer_<TConMaterialBuilder>} handler 构造器
  * @constructor
  * @returns
  */
