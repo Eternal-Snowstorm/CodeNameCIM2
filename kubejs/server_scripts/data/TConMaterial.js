@@ -18,8 +18,8 @@ ServerEvents.highPriorityData((event) => {
 			.limb(0.1, -0.12, 230, -0.02)
 			.grip(0.2, -0.1, 3.2)
 			.setTraits((builder) => {
-				builder.addTrait("tconstruct:melee_harvest", use($ModifierIds.luck), 1)
-					.addTrait("tconstruct:ranged", use($ModifierIds.crystalshot), 1)
+				builder.addTrait("tconstruct:melee_harvest", id($ModifierIds.luck), 1)
+					.addTrait("tconstruct:ranged", id($ModifierIds.crystalshot), 1)
 			})
 			.addMaterialRecipes("minecraft:amethyst_block", (builder) => {
 				builder.needed(1)
@@ -50,10 +50,10 @@ ServerEvents.highPriorityData((event) => {
 			.arrowShaft()
 			.platingShield(226, 1.0, 1.0, 1.0)
 			.setTraits((builder) => {
-				builder.addTrait("default", use($TinkerModifiers.stonebound), 1)
-					.addTrait("tconstruct:melee_harvest", use($ModifierIds.reach), 1)
-					.addTrait("tconstruct:armor", use($ModifierIds.meleeProtection), 1)
-					.addTrait("tconstruct:ammo", use($TinkerModifiers.insatiable), 1)
+				builder.addTrait("default", modifier($TinkerModifiers.stonebound), 1)
+					.addTrait("tconstruct:melee_harvest", id($ModifierIds.reach), 1)
+					.addTrait("tconstruct:armor", id($ModifierIds.meleeProtection), 1)
+					.addTrait("tconstruct:ammo", modifier($TinkerModifiers.insatiable), 1)
 			})
 			.addMaterialRecipes("create:andesite_alloy_block", (builder) => {
 				builder.needed(1)
@@ -86,9 +86,9 @@ ServerEvents.highPriorityData((event) => {
 			.platingLeggings(0.2, 231, 0, 1.5)
 			.platingShield(238, 1.3, 1.5)
 			.setTraits((builder) => {
-				builder.addTrait("default", use($ModifierIds.harmonious), 1)
-					.addTrait("tconstruct:melee_harvest", use($ModifierIds.reach), 2)
-					.addTrait("tconstruct:ranged", use($TinkerModifiers.multishot), 1)
+				builder.addTrait("default", id($ModifierIds.harmonious), 1)
+					.addTrait("tconstruct:melee_harvest", id($ModifierIds.reach), 2)
+					.addTrait("tconstruct:ranged", modifier($TinkerModifiers.multishot), 1)
 			})
 			.addMaterialFluidRecipes("tconstruct:molten_brass", (builder) => {
 				builder.amount(90)
@@ -113,8 +113,8 @@ ServerEvents.highPriorityData((event) => {
 			.platingBoots(2, 195, 0, 1)
 			.platingShield(270, 0, 2)
 			.setTraits((builder) => {
-				builder.addTrait("default", use($TinkerModifiers.magnetic), 1)
-					.addTrait("tconstruct:armor", use($ModifierIds.projectileProtection), 1)
+				builder.addTrait("default", modifier($TinkerModifiers.magnetic), 1)
+					.addTrait("tconstruct:armor", id($ModifierIds.projectileProtection), 1)
 			})
 	})
 
@@ -134,9 +134,24 @@ ServerEvents.highPriorityData((event) => {
 			.platingBoots(3, 225, 1, 0)
 			.platingShield(300, 2, 0)
 			.setTraits((builder) => {
-				builder.addTrait("default", use($TinkerModifiers.magnetic), 1)
-					.addTrait("tconstruct:armor", use($ModifierIds.projectileProtection), 1)
-					.addTrait("tconstruct:ranged", use($ModifierIds.maintained), 1)
+				builder.addTrait("default", modifier($TinkerModifiers.magnetic), 1)
+					.addTrait("tconstruct:armor", id($ModifierIds.projectileProtection), 1)
+					.addTrait("tconstruct:ranged", id($ModifierIds.maintained), 1)
+			})
+	})
+
+	// 阿迪特
+	new TConMaterial(event, `${Cmi.MODID}:ardite`, (builder) => {
+		builder.visibility(3, false)
+			.craftable(false)
+			.sortOrder(11)
+			.head(650, 2.75, 2.0, "minecraft:diamond")
+			.binding()
+			.handle(0.2, 0.3, 0.2, 0.1)
+			.setTraits((builder) => {
+				builder.addTrait("default", modifier($NTModifier.PETRAMOR), 1)
+					.addTrait("tconstruct:handle", modifier($NTModifier.PETRAMOR), 1)
+					.addTrait("tconstruct:head", modifier($NTModifier.PETRAMOR), 1)
 			})
 	})
 
@@ -157,10 +172,10 @@ ServerEvents.highPriorityData((event) => {
 			.platingBoots(2, 400, 0, 2)
 			.platingShield(550, 0, 2)
 			.setTraits((builder) => {
-				builder.addTrait("default", use($ModifierIds.ductile), 2)
-					.addTrait("tconstruct:melee_harvest", use($ModifierIds.ductile), 2)
-					.addTrait("tconstruct:melee_harvest", use($ModifierIds.blockade), 1)
-					.addTrait("tconstruct:ranged", use($ModifierIds.ductile), 2)
+				builder.addTrait("default", id($ModifierIds.ductile), 2)
+					.addTrait("tconstruct:melee_harvest", id($ModifierIds.ductile), 2)
+					.addTrait("tconstruct:melee_harvest", id($ModifierIds.blockade), 1)
+					.addTrait("tconstruct:ranged", id($ModifierIds.ductile), 2)
 			})
 	})
 
@@ -168,7 +183,7 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:desh`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
-			.sortOrder(7)
+			.sortOrder(8)
 			.head(900, 2.75, 7, "minecraft:diamond")
 			.binding()
 			.handle(0.05, 0, 0.1, 0)
@@ -176,11 +191,11 @@ ServerEvents.highPriorityData((event) => {
 			.maille()
 			.platingShield(820, 0, 2)
 			.setTraits((builder) => {
-				builder.addTrait("default", use($ModifierIds.reinforced), 1)
-					.addTrait("tconstruct:melee_harvest", use($ModifierIds.haste), 1)
-					.addTrait("tconstruct:armor", use($ModifierIds.speedy), 1)
-					.addTrait("tconstruct:ranged", use($ModifierIds.featherweight), 1)
-					.addTrait("tconstruct:ranged", use($ModifierIds.lightweight), 2)
+				builder.addTrait("default", id($ModifierIds.reinforced), 1)
+					.addTrait("tconstruct:melee_harvest", id($ModifierIds.haste), 1)
+					.addTrait("tconstruct:armor", id($ModifierIds.speedy), 1)
+					.addTrait("tconstruct:ranged", id($ModifierIds.featherweight), 1)
+					.addTrait("tconstruct:ranged", id($ModifierIds.lightweight), 2)
 			})
 	})
 
@@ -188,7 +203,7 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:ostrum`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
-			.sortOrder(7)
+			.sortOrder(9)
 			.head(1380, 3.25, 7, "minecraft:netherite")
 			.binding()
 			.handle(0.1, 0.1, 0, 0.05)
@@ -196,10 +211,10 @@ ServerEvents.highPriorityData((event) => {
 			.maille()
 			.platingShield(1420, 0, 4)
 			.setTraits((builder) => {
-				builder.addTrait("default", use($ModifierIds.heavy), 1)
-					.addTrait("tconstruct:melee_harvest", use($ModifierIds.flamestance), 1)
-					.addTrait("tconstruct:ranged", use($TinkerModifiers.multishot), 2)
-					.addTrait("tconstruct:ranged", use($ModifierIds.maintained), 1)
+				builder.addTrait("default", id($ModifierIds.heavy), 1)
+					.addTrait("tconstruct:melee_harvest", id($ModifierIds.flamestance), 1)
+					.addTrait("tconstruct:ranged", modifier($TinkerModifiers.multishot), 2)
+					.addTrait("tconstruct:ranged", id($ModifierIds.maintained), 1)
 			})
 	})
 
@@ -207,7 +222,7 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:calorite`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
-			.sortOrder(7)
+			.sortOrder(10)
 			.head(1500, 6.5, 7.5, "minecraft:netherite")
 			.binding()
 			.handle(0.15, 0.25, 0.05, 0.15)
@@ -219,11 +234,11 @@ ServerEvents.highPriorityData((event) => {
 			.platingBoots(2, 1200, 0.2, 3)
 			.platingShield(1420, 0.5, 4)
 			.setTraits((builder) => {
-				builder.addTrait("default", use($ModifierIds.enhanced), 1)
-					.addTrait("tconstruct:melee_harvest", use($TinkerModifiers.conducting), 1)
-					.addTrait("tconstruct:melee_harvest", use($ModifierIds.solid), 1)
-					.addTrait("tconstruct:ranged", use($ModifierIds.ballista), 1)
-					.addTrait("tconstruct:armor", use($ModifierIds.fireProtection), 2)
+				builder.addTrait("default", id($ModifierIds.enhanced), 1)
+					.addTrait("tconstruct:melee_harvest", modifier($TinkerModifiers.conducting), 1)
+					.addTrait("tconstruct:melee_harvest", id($ModifierIds.solid), 1)
+					.addTrait("tconstruct:ranged", id($ModifierIds.ballista), 1)
+					.addTrait("tconstruct:armor", id($ModifierIds.fireProtection), 2)
 			})
 	})
 
@@ -231,7 +246,7 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:shadow_steel`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(true)
-			.sortOrder(7)
+			.sortOrder(11)
 			.head(620, 4, 3, "minecraft:netherite")
 			.binding()
 			.handle(0.1, -0.1, 0.2, -0.2)
@@ -240,11 +255,11 @@ ServerEvents.highPriorityData((event) => {
 			.arrowHead()
 			.maille()
 			.setTraits((builder) => {
-				builder.addTrait("default", use($ModifierIds.raging), 1)
-					.addTrait("tconstruct:melee_harvest", use($ModifierIds.searing), 1)
-					.addTrait("tconstruct:ranged", use($ModifierIds.power), 1)
-					.addTrait("tconstruct:ammo", use($TinkerModifiers.impaling), 1)
-					.addTrait("tconstruct:ammo", use($ModifierIds.pierce), 1)
+				builder.addTrait("default", id($ModifierIds.raging), 1)
+					.addTrait("tconstruct:melee_harvest", id($ModifierIds.searing), 1)
+					.addTrait("tconstruct:ranged", id($ModifierIds.power), 1)
+					.addTrait("tconstruct:ammo", modifier($TinkerModifiers.impaling), 1)
+					.addTrait("tconstruct:ammo", id($ModifierIds.pierce), 1)
 			})
 	})
 
@@ -252,7 +267,7 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:refined_radiance`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(true)
-			.sortOrder(7)
+			.sortOrder(12)
 			.head(720, 2.5, 2.0, "minecraft:netherite")
 			.binding()
 			.handle(-0.3, 0.3, 0.25, 0.35)
@@ -261,27 +276,10 @@ ServerEvents.highPriorityData((event) => {
 			.arrowHead()
 			.maille()
 			.setTraits((builder) => {
-				builder.addTrait("default", use($ModifierIds.crystalstrike), 1)
-					.addTrait("tconstruct:melee_harvest", use($ModifierIds.lightspeed), 1)
-					.addTrait("tconstruct:armor", use($ModifierIds.lightspeed), 1)
-					.addTrait("tconstruct:ammo", use($ModifierIds.keen), 2)
+				builder.addTrait("default", id($ModifierIds.crystalstrike), 1)
+					.addTrait("tconstruct:melee_harvest", id($ModifierIds.lightspeed), 1)
+					.addTrait("tconstruct:armor", id($ModifierIds.lightspeed), 1)
+					.addTrait("tconstruct:ammo", id($ModifierIds.keen), 2)
 			})
 	})
-
-	// 阿迪特
-	// new TConMaterial(event, `${Cmi.MODID}:ardite`, (builder) => {
-	// 	builder.visibility(3, false)
-	// 		.craftable(false)
-	// 		.sortOrder(7)
-	// })
 })
-
-/**
- * 使用 Java Modifier
- * 
- * @template {Internal.Modifier_} T
- * @param {Internal.DynamicModifier_ | Internal.StaticModifier_<T> | Internal.ModifierId_} modifier
- */
-function use(modifier) {
-	return modifier.toString()
-}

@@ -1,3 +1,5 @@
+// priority: 15
+
 /**
  * @param {Internal.DataPackEventJS_} event 传入数据包事件
  * @param {string} name 注册id
@@ -170,8 +172,9 @@ function TConMaterial(event, name, handler) {
 					return this
 				},
 				addTrait(stat, name, level) {
-					if (!this.traits.perStat[stat])
+					if (!this.traits.perStat[stat]) {
 						this.traits.perStat[stat] = []
+					}
 					this.traits.perStat[stat].push({
 						name: name,
 						level: level
@@ -301,4 +304,21 @@ function TConMaterial(event, name, handler) {
 			`${builder.namespace}:recipes/materials/material_melting/${builder.id}/${i}.json`
 		event.addJson(materialMeltingRecipesFile, builder.addMaterialMeltingRecipes[i])
 	}
+}
+
+/**
+ * @template {Internal.Modifier} T
+ * @param {Internal.StaticModifier<T> | Internal.DynamicModifier} modifier
+ * @returns
+ */
+function modifier(modifier) {
+	return modifier.getId() + ""
+}
+
+/**
+ * @param {Internal.ModifierId | string} id
+ * @returns
+ */
+function id(id) {
+	return id.toString() + ""
 }

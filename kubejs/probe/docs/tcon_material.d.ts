@@ -6,6 +6,7 @@ type MiningTier =
 	| "minecraft:netherite"
 
 type TraitStat =
+	| "default"
 	| "tconstruct:armor"
 	| "tconstruct:head"
 	| "tconstruct:handle"
@@ -19,8 +20,8 @@ type TraitStat =
 type FluidIngredient = Special.Fluid | `#${Special.FluidTag}`
 
 interface TraitsBuilder {
-	addDefault(name: ResourceLocation_, level: number): this
-	addTrait(stat: TraitStat, name: ResourceLocation_, level: number): this
+	addDefault(name: string, level: number): this
+	addTrait(stat: TraitStat, name: string, level: number): this
 }
 
 interface MaterialRecipeBuilder {
@@ -62,7 +63,7 @@ interface TConMaterialBuilder {
 	platingShield(durability: number, knockbackResistance: number, toughness: number): this
 	maille(): this
 	shieldCore(): this
-	setTraits(handler: (builder: TraitsBuilder) => void): this
+	setTraits(handler: Internal.Consumer_<TraitsBuilder>): this
 	addMaterialRecipes(ingredient: Ingredient_, handler: (builder: MaterialRecipeBuilder) => void): this
 	addMaterialFluidRecipes(fluid: FluidIngredient, handler: (builder: MaterialFluidRecipeBuilder) => void): this
 	addMaterialMeltingRecipes(fluid: Special.Fluid, handler: (builder: MaterialMeltingRecipeBuilder) => void): this
