@@ -258,8 +258,8 @@ StartupEvents.registry("block", (event) => {
 			blockBuilder.tag(`${Cmi.MODID}:ores`)
 			blockBuilder.tag("forge:ores")
 			blockBuilder.tag(`forge:ores/${ore.name}`)
-			blockBuilder.tagBlock(CmiToolType.PICKAXE)
-			blockBuilder.tagBlock(CmiMiningLevel.from(ore.level))
+			blockBuilder.tagBlock(CmiToolType.PICKAXE.tag())
+			blockBuilder.tagBlock(CmiMiningLevel.from(ore.level).tag())
 
 			// 工具需求
 			blockBuilder.requiresTool(true)

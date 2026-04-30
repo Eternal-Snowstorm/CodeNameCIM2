@@ -54,8 +54,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 		.hardness(6)
 		.resistance(6)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.IRON.tag())
 		.requiresTool(true)
 
 	// 泥炭
@@ -63,8 +63,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.MUD)
 		.hardness(1)
 		.resistance(1)
-		.tagBlock(CmiToolType.SHOVEL)
-		.tagBlock(CmiMiningLevel.WOODEN)
+		.tagBlock(CmiToolType.SHOVEL.tag())
+		.tagBlock(CmiMiningLevel.WOODEN.tag())
 		.tagBlock("minecraft:dirt")
 		.tag("minecraft:stone")
 
@@ -73,8 +73,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.DEEPSLATE)
 		.hardness(15)
 		.resistance(15)
-		.tagBlock(CmiMiningLevel.NETHER)
-		.tagBlock(CmiToolType.PICKAXE)
+		.tagBlock(CmiMiningLevel.NETHER.tag())
+		.tagBlock(CmiToolType.PICKAXE.tag())
 		.requiresTool(true)
 
 	// 压缩末地粉块
@@ -82,8 +82,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.SAND)
 		.hardness(6)
 		.resistance(6)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.WOODEN)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.WOODEN.tag())
 		.requiresTool(true)
 
 	// 坩埚底座
@@ -92,8 +92,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 		.hardness(6)
 		.resistance(6)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.IRON.tag())
 		.requiresTool(true)
 
 	// 坩埚风口
@@ -101,8 +101,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 		.hardness(6)
 		.resistance(6)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.IRON.tag())
 		.requiresTool(true)
 
 	// 青铜外壳
@@ -111,8 +111,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.WOOD)
 		.hardness(5)
 		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.IRON.tag())
 
 	// 智能外壳
 	addBlock("smart_casing")
@@ -120,8 +120,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.IRON.tag())
 
 	// 高级计算外壳
 	addBlock("computing_casing")
@@ -129,8 +129,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.IRON.tag())
 
 	// 工程块框架
 	addBlock("industrial_frame")
@@ -138,8 +138,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.IRON.tag())
 		.defaultCutout()
 
 	// 伊甸水晶
@@ -147,8 +147,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.AMETHYST)
 		.hardness(5)
 		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.IRON.tag())
 
 	// 黄铜楼梯
 	addBlock("brass_stairs", "stairs")
@@ -156,8 +156,8 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE)
-		.tagBlock(CmiMiningLevel.IRON)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.IRON.tag())
 
 	// 辐射沙
 	addBlock("radsand", "falling")
@@ -166,5 +166,5 @@ StartupEvents.registry("block", (event) => {
 		.hardness(0.5)
 		.resistance(0.5)
 		.tagBlock("minecraft:sand")
-		.tagBlock(CmiToolType.SHOVEL)
+		.tagBlock(CmiToolType.SHOVEL.tag())
 })

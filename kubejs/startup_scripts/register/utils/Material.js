@@ -217,8 +217,8 @@ StartupEvents.registry("block", (event) => {
 			block.item((builder) => {
 				builder.color(0, material.color1)
 			})
-			block.tagBlock(CmiToolType.PICKAXE)
-			block.tagBlock(CmiMiningLevel.from(material.level))
+			block.tagBlock(CmiToolType.PICKAXE.tag())
+			block.tagBlock(CmiMiningLevel.from(material.level).tag())
 			block.tag("forge:storage_blocks")
 			block.tag(`forge:storage_blocks/${material.name}`)
 
