@@ -4,7 +4,7 @@
 	enableOverlay = true
 	#The layout style of the overlay. 0: none, 1: above hot bar long, 2: above hot bar short, 3: top left, 4: top right, 5: bottom left, 6: bottom right
 	#Range: 0 ~ 8
-	overlayLayoutStyle = 1
+	overlayLayoutStyle = 2
 	#The text scale of the overlay
 	#Range: 0.1 ~ 10.0
 	overlayTextScale = 1.0
@@ -39,7 +39,7 @@
 	#Range: > 1
 	fullHealthValue = 20
 	#Whether to enable stack health bar. If enabled, the health bar will be displayed like multiple health bars with different colors stacked together. Note that once enabled, the health bar color in specific conditions will be rendered half transparently on the health bar, and if the absorption display mode is 0, it will be changed to 2  in game dynamically to avoid ambiguity.
-	enableStackHealthBar = true
+	enableStackHealthBar = false
 	#The color list of the stack health bar. Split by commas, each color must be in ARGB format, no space, no illegal characters, no tail comma. For example: '#FF00FF00,#FFFF0000,#FF0000FF', the health bars will pick colors from the list sequentially, and return to the first color when the list is exhausted.
 	stackHealthBarColors = "#ffff4545,#ffefa360,#ff966acc,#ffcc64a8,#ff1dc29b,#ff9acc64"
 	#The opacity of the health bar when the entity is regenerating health. 0 to 1.
@@ -134,7 +134,7 @@
 	#Range: 0 ~ 2
 	displayAbsorptionMethod = 2
 	#Whether to display the value of (absorption / max health). To avoid ambiguity, turn it to true if you hide the health text and don't display absorption bar together with health bar, or you may not be able to get correct absorption value.
-	displayAbsorptionDivMaxHealth = true
+	displayAbsorptionDivMaxHealth = false
 	#0: Absorption text will be displayed together with health text. for example: 15(+10)/20. 1: Absorption text will be displayed separately. for example: 10 15/20. Note: if 'displayHealthText' is false, absorption text will be disabled.
 	#Range: 0 ~ 1
 	displayAbsorptionTextMethod = 1
@@ -145,7 +145,7 @@
 	#Whether to display exhaustion bar.
 	displayExhaustion = true
 	#Whether to display food text.
-	displayFoodText = true
+	displayFoodText = false
 	#Whether to display armor toughness bar.
 	displayArmorToughness = true
 	#The length of the bars if using corner layout. Affected bars: health, food, experience.
@@ -158,7 +158,7 @@
 	#Range: 0 ~ 100
 	cornerVerticalPadding = 16
 	#Force every bar to be rendered at the corner. Only works in corner layout.
-	forceRenderAtCorner = true
+	forceRenderAtCorner = false
 
 [entity]
 	#Whether to enable health bar for entity. If disabled, all other health bar options will be ignored.
@@ -167,11 +167,11 @@
 	#Range: 0.0 ~ 100.0
 	maxDistance = 32.0
 	#Whether to display health bar on self.
-	showOnSelf = false
+	showOnSelf = true
 	#Whether to display health bar on players.
-	showOnPlayers = false
+	showOnPlayers = true
 	#Whether to display health bar on bosses.
-	showOnBosses = false
+	showOnBosses = true
 	#Whether to display health bar on armor stands.
 	showOnArmorStands = false
 	#Whether to display health bar on mobs with full health if the mob's absorption value is 0.
