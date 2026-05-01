@@ -1,24 +1,4 @@
 ServerEvents.highPriorityData((event) => {
-	/**
-	 * 设置命名空间优先级
-	 * 越往前的命名空间优先级越高
-	 */
-	let namespacePriority = [
-		"cmi",
-		"vintageimprovements",
-		"thermal",
-		"thermalconstruct",
-		"thermalendergy",
-		"thermal_extra",
-		"create",
-		"createdeco",
-		"ae2",
-		"ad_astra",
-		"immersiveengineering",
-		"mekanism",
-		"alexscaves",
-		"tconstruct"
-	]
 	// 录入所有金属材料类型
 	let materialType = [
 		"ingot",
@@ -47,31 +27,13 @@ ServerEvents.highPriorityData((event) => {
 			let material = metal.getId().toString()
 			let tag = `#forge:${type}s/${material}`
 			let ids = Ingredient.of(tag).getItemIds()
-			let currentNamespace
-			let outputId
-			let priorityValue
 
 			if (ids.length > 0) {
-				// 遍历获取到的tag下每个物品的命名空间
-				ids.forEach((id) => {
-					currentNamespace = ResourceLocation.parse(id).getNamespace()
-
-					// 获取命名空间优先级
-					for (let i = 0; i < namespacePriority.length; i++) {
-						if (currentNamespace === namespacePriority[i]) {
-							// 判定命名空间优先级并选择性输出优先级值最小的
-							if (i <= priorityValue || priorityValue == null) {
-								outputId = id
-								priorityValue = i
-							}
-						}
-					}
-				})
 
 				// 利用输出的物品id完成匹配tag的物品统一
 				addJsonFile(`${material}_${type}`, addUnification(
 					tag,
-					outputId
+					getHighPriorityItem(ids)
 				))
 
 				// 输出完成统一的信息
@@ -91,35 +53,16 @@ ServerEvents.highPriorityData((event) => {
 		 * @param {String} outputId 所输出的物品id
 		 * @param {Number} priorityValue 当前命名空间的优先级
 		 */
-		let material = metal.getId().toString()
+		let material = metal.getId()
 		let tag = `#forge:raw_materials/${material}`
 		let ids = Ingredient.of(tag).getItemIds()
-		let currentNamespace
-		let outputId
-		let priorityValue
 
 		if (ids.length > 0) {
-			// 遍历获取到的tag下每个物品的命名空间
-			ids.forEach((id) => {
-				currentNamespace = ResourceLocation.parse(id).getNamespace()
-
-				// 获取命名空间优先级
-				for (let i = 0; i < namespacePriority.length; i++) {
-					if (currentNamespace === namespacePriority[i]) {
-
-						// 判定命名空间优先级并选择性输出优先级值最小的
-						if (i <= priorityValue || priorityValue == null) {
-							outputId = id
-							priorityValue = i
-						}
-					}
-				}
-			})
 
 			// 利用输出的物品id完成匹配tag的物品统一
 			addJsonFile(`raw_${material}`, addUnification(
 				tag,
-				outputId
+				getHighPriorityItem(ids)
 			))
 
 			// 输出完成统一的信息
@@ -138,34 +81,16 @@ ServerEvents.highPriorityData((event) => {
 		 * @param {String} outputId 所输出的物品id
 		 * @param {Number} priorityValue 当前命名空间的优先级
 		 */
-		let material = metal.getId().toString()
+		let material = metal.getId()
 		let tag = `#forge:storage_blocks/raw_${material}`
 		let ids = Ingredient.of(tag).getItemIds()
-		let currentNamespace
-		let outputId
-		let priorityValue
 
 		if (ids.length > 0) {
-			// 遍历获取到的tag下每个物品的命名空间
-			ids.forEach((id) => {
-				currentNamespace = ResourceLocation.parse(id).getNamespace()
-
-				// 获取命名空间优先级
-				for (let i = 0; i < namespacePriority.length; i++) {
-					if (currentNamespace === namespacePriority[i]) {
-						// 判定命名空间优先级并选择性输出优先级值最小的
-						if (i <= priorityValue || priorityValue == null) {
-							outputId = id
-							priorityValue = i
-						}
-					}
-				}
-			})
 
 			// 利用输出的物品id完成匹配tag的物品统一
 			addJsonFile(`raw_${material}_block`, addUnification(
 				tag,
-				outputId
+				getHighPriorityItem(ids)
 			))
 
 			// 输出完成统一的信息
@@ -182,11 +107,60 @@ ServerEvents.highPriorityData((event) => {
 	function addUnification(match, item) {
 		return {
 			matchItems: [match],
-			resultItems: Ingredient.getFirstItemId(item)
+			resultItems: item
 		}
 	}
 
 	function addJsonFile(name, unification) {
 		return event.addJson(`oei:replacements/${name}.json`, unification)
+	}
+
+	/**
+	 * 
+	 * @param {Set<string>} name 
+	 * @returns 
+	 */
+	function getHighPriorityItem(name) {
+		/**
+		 * 设置命名空间优先级
+		 * 越往前的命名空间优先级越高
+		 */
+		let namespacePriority = [
+			"cmi",
+			"vintageimprovements",
+			"thermal",
+			"thermalconstruct",
+			"thermalendergy",
+			"thermal_extra",
+			"create",
+			"createdeco",
+			"ae2",
+			"ad_astra",
+			"immersiveengineering",
+			"mekanism",
+			"alexscaves",
+			"tconstruct"
+		]
+		// 引入参数
+		let currentNamespace
+		let outputId
+		let priorityValue
+		// 遍历获取到的tag下每个物品的命名空间
+		name.forEach((id) => {
+			currentNamespace = ResourceLocation.parse(id).getNamespace()
+
+			// 获取命名空间优先级
+			for (let i = 0; i < namespacePriority.length; i++) {
+				if (currentNamespace === namespacePriority[i]) {
+					// 判定命名空间优先级并选择性输出优先级值最小的
+					if (i <= priorityValue || priorityValue == null) {
+						outputId = id
+						priorityValue = i
+					}
+				}
+			}
+		})
+
+		return outputId
 	}
 })

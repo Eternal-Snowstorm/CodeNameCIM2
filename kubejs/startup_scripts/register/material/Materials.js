@@ -68,7 +68,7 @@ new Material("steel", "iron")
 	.nugget()
 	.dust()
 	.gear()
-	.block()
+	.block("immersiveengineering:block/storage_steel")
 	.isMetal()
 
 // 铸铁
