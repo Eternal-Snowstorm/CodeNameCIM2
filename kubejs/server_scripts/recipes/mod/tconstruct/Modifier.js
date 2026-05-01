@@ -117,7 +117,7 @@ ServerEvents.recipes((event) => {
 			"#forge:gems/charged_amethyst",
 			"#forge:gems/charged_amethyst"
 		])
-		.build("nebula_tinker:tconstruct/modifier/ability/acupoint")
+		.build(NebulaTinker.loadResource("tinker/modifier/ability/acupoint"))
 
 	// 狂乱
 	new ModifierRecipeBuilder("nebula_tinker:frenzy", 1)
@@ -132,7 +132,7 @@ ServerEvents.recipes((event) => {
 			"#forge:gems/charged_amethyst",
 			"#forge:gems/charged_amethyst"
 		])
-		.build("nebula_tinker:tconstruct/modifier/ability/frenzy")
+		.build(NebulaTinker.loadResource("tinker/modifier/ability/frenzy"))
 
 	// 因果截断
 	new ModifierRecipeBuilder("nebula_tinker:causal_truncation", 1)
@@ -147,7 +147,7 @@ ServerEvents.recipes((event) => {
 			"#forge:slimeball/blood",
 			"#forge:slimeball/blood"
 		])
-		.build("nebula_tinker:tconstruct/modifier/ability/causal_truncation")
+		.build(NebulaTinker.loadResource("tinker/modifier/ability/causal_truncation"))
 
 	// 发条
 	new ModifierRecipeBuilder("nebula_tinker:clockwork", 1)
@@ -158,6 +158,6 @@ ServerEvents.recipes((event) => {
 		.inputs([
 			"cmi:andesite_mechanism"
 		])
-		.build("nebula_tinker:tconstruct/modifier/ability/clockwork")
+		.build(NebulaTinker.loadResource("tinker/modifier/ability/clockwork"))
 	// endregion
 })
