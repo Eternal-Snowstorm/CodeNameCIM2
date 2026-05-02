@@ -181,7 +181,7 @@ ServerEvents.recipes((event) => {
 		"ae2:quartz_glass",
 		Mechanism.PHOTO.COM,
 		"#forge:plates/silver",
-		"#forge:wires/redstone"
+		"#forge:plates/redstone"
 	]).id("ae2:network/parts/panels_semi_dark_monitor")
 
 	// 破坏核心
@@ -197,4 +197,46 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/fluix",
 		"#forge:ingots/shadow_steel"
 	]).id("ae2:materials/formationcore")
+
+	// ME终端
+	thermal_extra.component_assembly("ae2:terminal", [
+		"#ae2:illuminated_panel",
+		"ae2:annihilation_core",
+		"ae2:formation_core",
+		Mechanism.SMART.COM
+	]).id("ae2:network/parts/terminals")
+
+	// 合成终端
+	kubejs.shapeless("ae2:crafting_terminal", [
+		"ae2:terminal",
+		"create:crafting_blueprint"
+	]).id("ae2:network/parts/terminals_crafting")
+
+	// 样板编码
+	thermal_extra.component_assembly("ae2:pattern_encoding_terminal", [
+		"#ae2:illuminated_panel",
+		Mechanism.SMART.COM,
+		"#forge:ingots/overcharged_alloy"
+	]).id("ae2:network/parts/terminals_pattern_encoding")
+
+	// 样板管理
+	thermal_extra.component_assembly("ae2:pattern_access_terminal", [
+		"#ae2:illuminated_panel",
+		Mechanism.SMART.COM,
+		"create:transmitter"
+	]).id("ae2:network/parts/terminals_pattern_access")
+
+	// 监控器
+	thermal_extra.component_assembly("ae2:storage_monitor", [
+		"#ae2:illuminated_panel",
+		Mechanism.SMART.COM
+	]).id("ae2:network/parts/monitors_storage")
+
+	// 交换监控器
+	thermal_extra.component_assembly("ae2:conversion_monitor", [
+		"ae2:storage_monitor",
+		"ae2:annihilation_core",
+		"ae2:formation_core"
+	]).id("ae2:network/parts/monitors_conversion")
+
 })

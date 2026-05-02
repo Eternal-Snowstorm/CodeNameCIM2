@@ -170,11 +170,12 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("incomplete_scanning_module", "扫描模块(半成品)")
 	addItemLang("incomplete_scanner", "扫描器(半成品)")
 
-	addItemLang("music_disc_mechanism", "DontkillBelalus - Mechanism")
+	addItemLang("music_disc_mechanism", "Mechanism - Belalus")
 	addItemLang("togni_leets", "钢錠")
 	addItemLang("hammer_head", "冲压头")
 	addItemLang("ferrit_core", "铁氧体磁芯")
 	addItemLang("kaolinite_ball", "高岭土球")
+	addItemLang("cmi_icon", "CMI图标")
 
 	addItemLang("astral_core", "繁星核心")
 

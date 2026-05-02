@@ -63,8 +63,8 @@ StartupEvents.registry("block", (event) => {
 	// 柒月
 	addDeveloperDoll("qi_month", "slim")
 
-	// DontKillBelalus
-	addDeveloperDoll("dont_kill_belalus", "wide")
+	// Belalus
+	addDeveloperDoll("belalus", "wide")
 
 	// FiberOptics
 	addDeveloperDoll("fiber_optics", "slim")
