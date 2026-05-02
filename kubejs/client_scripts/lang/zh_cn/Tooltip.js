@@ -62,7 +62,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:random_mechanism", "KubeJS程序")
 	addCommonTooltipLang("cmi:eternalsnowstorm", "主策划&KubeJS程序&Mod程序")
 	addCommonTooltipLang("cmi:qi_month", "KubeJS程序&Mod程序")
-	addCommonTooltipLang("cmi:dont_kill_belalus", "音乐创作者")
+	addCommonTooltipLang("cmi:belalus", "音乐创作者")
 	addCommonTooltipLang("cmi:fiber_optics", "KubeJS程序&Mod程序")
 	addCommonTooltipLang("cmi:ye_anqing", "KubeJS程序")
 	addCommonTooltipLang("cmi:sakura_star_cn", "Github仓库管理&社区管理")
