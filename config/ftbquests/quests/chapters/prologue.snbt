@@ -320,6 +320,10 @@
 						}
 						{
 							level: 1
+							name: "tconstruct:solid"
+						}
+						{
+							level: 1
 							name: "tconstruct:conducting"
 						}
 						{
@@ -348,7 +352,7 @@
 						upgrades: -78
 					}
 					tic_stats: {
-						"tconstruct:attack_damage": 14.512502f
+						"tconstruct:attack_damage": 16.689377f
 						"tconstruct:attack_speed": 2.25f
 						"tconstruct:block_amount": 10.0f
 						"tconstruct:durability": 2717.5503f
