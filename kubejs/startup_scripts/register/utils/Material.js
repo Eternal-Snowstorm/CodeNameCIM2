@@ -127,10 +127,23 @@ Material.prototype.slurry = function () {
 	})
 	return this
 }
-Material.prototype.block = function () {
-	this.types.push({
-		type: "block"
-	})
+/**
+ * 
+ * @param {String} model 
+ * @returns 
+ */
+Material.prototype.block = function (model) {
+	if (model == null) {
+		this.types.push({
+			type: "block",
+			model: "false"
+		})
+	} else {
+		this.types.push({
+			type: "block",
+			model: model
+		})
+	}
 	return this
 }
 Material.prototype.molten = function () {
@@ -209,18 +222,23 @@ StartupEvents.registry("block", (event) => {
 
 			let block = event.create(`${Cmi.MODID}:${material.name}_block`)
 
-			block.textureAll(Cmi.loadResource(`block/material/color/storage_blocks`))
 			block.soundType(material.blockSound || SoundType.METAL)
-			block.color(0, material.color1)
 			block.hardness(5)
 			block.resistance(5)
-			block.item((builder) => {
-				builder.color(0, material.color1)
-			})
 			block.tagBlock(CmiToolType.PICKAXE.tag())
 			block.tagBlock(CmiMiningLevel.from(material.level).tag())
 			block.tag("forge:storage_blocks")
 			block.tag(`forge:storage_blocks/${material.name}`)
+
+			if (entry.model == "false") {
+				block.textureAll(Cmi.loadResource(`block/material/color/storage_blocks`))
+				block.color(0, material.color1)
+				block.item((builder) => {
+					builder.color(0, material.color1)
+				})
+			} else {
+				block.model(entry.model)
+			}
 
 			if (material.metal) {
 				block.tag(`${Cmi.MODID}:metals`)
