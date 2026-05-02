@@ -16,9 +16,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:potion_mechanism")
 	addCommonTooltip("cmi:smart_mechanism")
 	addCommonTooltip("#minecraft:pickaxes")
-	addCommonTooltip("#minecraft:infiniburn_all")
 	addCommonTooltip("cmi:super_knife")
-	addCommonTooltip("#cmi:special_ores")
 	addCommonTooltip("cmi:stone_plate")
 	addCommonTooltip("cmi:creosote_wood_chip_briquette")
 	addCommonTooltip("#forge:ingots/siltsteel")
@@ -29,7 +27,6 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("createaddition:seed_oil")
 	addCommonTooltip("#cmi:machine_block")
 	addCommonTooltip("ad_astra:ice_shard")
-	addCommonTooltip("#cmi:broken_drill_heads")
 	addCommonTooltip("portality:controller")
 	addCommonTooltip("cmi:parchment")
 	addCommonTooltip("alexscaves:notor_gizmo")
@@ -88,7 +85,15 @@ ItemEvents.tooltip((event) => {
 					NebulaLibs.toFahrenheit(mp)
 				).yellow()
 
-				event.add(`#forge:${type}s/${metal.getId()}`, translatable)
+				let tagItem = Ingredient.of(`#forge:${type}s/${metal.getId()}`).getItemIds()
+
+				if (tagItem.length > 0) {
+					tagItem.forEach((item) => {
+						if (item !== "minecraft:barrier") {
+							event.add(item, translatable)
+						}
+					})
+				}
 			}
 		})
 	})
@@ -123,7 +128,15 @@ ItemEvents.tooltip((event) => {
 				NebulaLibs.toFahrenheit(mp)
 			).yellow()
 
-			event.add(`#create:crushed_raw_materials/${metal.getId()}`, translatable)
+			let tagItem = Ingredient.of(`#create:crushed_raw_materials/${metal.getId()}`).getItemIds()
+
+			if (tagItem.length > 0) {
+				tagItem.forEach((item) => {
+					if (item !== "minecraft:barrier") {
+						event.add(item, translatable)
+					}
+				})
+			}
 		}
 	})
 })
