@@ -94,17 +94,11 @@ ServerEvents.recipes((event) => {
 		.fluid(Fluid.of("minecraft:lava", 100))
 		.cooling_time(20 * 2)
 
-	// 红石线
-	tconstruct.casting_table("cmi:redstone_wire")
-		.cast("#forge:wires/lead")
-		.fluid(Fluid.of("thermal:redstone", 50))
-		.cooling_time(20 * 3)
-		.cast_consumed(true)
-
 	// 沥青
 	tconstruct.casting_table("thermal:bitumen")
 		.fluid(Fluid.of("cmi:bitumen", 200))
 		.cooling_time(20)
+
 	tconstruct.casting_basin("thermal:bitumen_block")
 		.fluid(Fluid.of("cmi:bitumen", 1800))
 		.cooling_time(180)
@@ -113,6 +107,13 @@ ServerEvents.recipes((event) => {
 	tconstruct.casting_table("cmi:blood_slime_ball")
 		.fluid(Fluid.of("cmi:blood", 250))
 		.cooling_time(20)
+
+	// 红石线
+	tconstruct.casting_table("cmi:redstone_wire")
+		.cast("#forge:wires/lead")
+		.fluid(Fluid.of("thermal:redstone", 50))
+		.cooling_time(20 * 3)
+		.cast_consumed(true)
 
 	tconstruct.casting_table("cmi:redstone_wire")
 		.cast("#tconstruct:casts/multi_use/wire")
@@ -123,6 +124,24 @@ ServerEvents.recipes((event) => {
 		.cast("#tconstruct:casts/single_use/wire")
 		.fluid(Fluid.of("immersiveengineering:redstone_acid", 50))
 		.cooling_time(20 * 3)
+		.cast_consumed(true)
+
+	// 红石板
+	tconstruct.casting_table("cmi:redstone_plate")
+		.cast("#forge:plates/lead")
+		.fluid(Fluid.of("thermal:redstone", 100))
+		.cooling_time(20 * 8)
+		.cast_consumed(true)
+
+	tconstruct.casting_table("cmi:redstone_plate")
+		.cast("#tconstruct:casts/multi_use/plate")
+		.fluid(Fluid.of("immersiveengineering:redstone_acid", 100))
+		.cooling_time(20 * 8)
+
+	tconstruct.casting_table("cmi:redstone_plate")
+		.cast("#tconstruct:casts/single_use/plate")
+		.fluid(Fluid.of("immersiveengineering:redstone_acid", 100))
+		.cooling_time(20 * 8)
 		.cast_consumed(true)
 
 	let barTypes = [

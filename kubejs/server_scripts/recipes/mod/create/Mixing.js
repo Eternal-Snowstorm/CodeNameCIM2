@@ -184,32 +184,23 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 砖泥
-	create.mixing("2x tconstruct:grout", [
-		"#minecraft:sand",
-		"#forge:clay",
-		"minecraft:gravel",
-		Fluid.of("minecraft:water", 250)
-	])
-
 	create.mixing("8x tconstruct:grout", [
-		"#minecraft:sand",
-		"#forge:storage_blocks/clay",
-		"minecraft:gravel",
-		Fluid.of("minecraft:water", 500)
-	])
+		"4x #minecraft:sand",
+		"4x minecraft:gravel",
+		Fluid.of("tconstruct:molten_clay", 1000)
+	]).id("cmi:ae2/transform/tconstruct/grout2")
 
 	// 下界砖泥
-	create.mixing("2x tconstruct:nether_grout", [
-		["minecraft:soul_soil", "minecraft:soul_sand"],
-		"minecraft:magma_cream",
-		"minecraft:gravel",
-		Fluid.of("tconstruct:liquid_soul", 250)
-	])
-
 	create.mixing("8x tconstruct:nether_grout", [
-		["minecraft:soul_soil", "minecraft:soul_sand"],
-		"minecraft:magma_block",
-		"minecraft:gravel",
-		Fluid.of("tconstruct:liquid_soul", 500)
-	])
+		"4x minecraft:soul_sand",
+		"4x minecraft:gravel",
+		Fluid.of("tconstruct:magma", 1000)
+	]).id("cmi:ae2/transform/tconstruct/nether_grout2")
+
+	// 耐热砖泥
+	create.mixing("8x cmi:refractory_grout", [
+		"4x immersiveengineering:dust_hop_graphite",
+		"4x minecraft:gravel",
+		"cmi:kaolinite"
+	]).superheated()
 })

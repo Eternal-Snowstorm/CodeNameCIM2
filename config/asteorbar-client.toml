@@ -1,10 +1,10 @@
 
 [overlay]
 	#Whether to enable the overlay. If disabled, all other overlay options will be ignored.
-	enableOverlay = false
+	enableOverlay = true
 	#The layout style of the overlay. 0: none, 1: above hot bar long, 2: above hot bar short, 3: top left, 4: top right, 5: bottom left, 6: bottom right
 	#Range: 0 ~ 8
-	overlayLayoutStyle = 2
+	overlayLayoutStyle = 5
 	#The text scale of the overlay
 	#Range: 0.1 ~ 10.0
 	overlayTextScale = 1.0

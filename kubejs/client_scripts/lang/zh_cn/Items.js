@@ -68,6 +68,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("densely_packed_wood_chip_briquette", "致密压缩木屑块")
 	addItemLang("creosote_wood_chip_briquette", "浸油致密压缩木屑块")
 	addItemLang("redstone_wire", "红石线")
+	addItemLang("redstone_plate", "红石板")
 	addItemLang("inscribed_silicon", "线刻硅板")
 	addItemLang("andesite_dust", "安山岩粉")
 	addItemLang("rubber_dust", "橡胶粉")
@@ -173,6 +174,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("togni_leets", "钢錠")
 	addItemLang("hammer_head", "冲压头")
 	addItemLang("ferrit_core", "铁氧体磁芯")
+	addItemLang("kaolinite_ball", "高岭土球")
 
 	addItemLang("astral_core", "繁星核心")
 

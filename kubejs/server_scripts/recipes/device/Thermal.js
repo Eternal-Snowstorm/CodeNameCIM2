@@ -28,13 +28,10 @@ ServerEvents.recipes((event) => {
 		"create:brass_hand"
 	])
 
-	// 移除冶炼炉合金配方
-	// event.remove()
-
 	// 热力单元
 	addComponRecipe("cmi:thermal_unit", [
 		Fluid.of("thermal:resin", 50),
-		"#forge:wires/redstone",
+		"#forge:plates/redstone",
 		"#forge:plates/invar"
 	])
 	thermal.bottler("cmi:blaze_unit", [

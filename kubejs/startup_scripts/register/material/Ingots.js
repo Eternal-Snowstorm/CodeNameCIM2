@@ -57,14 +57,6 @@ StartupEvents.registry("item", (event) => {
         return builder
     }
 
-
-    // 安山混合物
-    addNonIngotItem("andesite_aggregate")
-        .tag("forge:bricks")
-
-    // 耐火砖柸
-    addNonIngotItem("refractory_brick_bloom")
-
     // 精炼铁方坯
     addNonIngotItem("refined_iron_bloom")
 

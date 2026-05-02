@@ -102,6 +102,9 @@ StartupEvents.registry("item", (event) => {
 		.burnTime(400)
 		.texture(Cmi.loadResource("item/material/small_coal_coke"))
 
+	// 高岭土
+	addMaterial("kaolinite_ball")
+
 	// 电动机转子
 	addMaterial("motor_rotor")
 

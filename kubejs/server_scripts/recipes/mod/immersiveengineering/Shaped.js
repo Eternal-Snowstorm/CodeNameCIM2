@@ -86,12 +86,4 @@ ServerEvents.recipes((event) => {
 		C: "#forge:leather",
 		D: "farmersdelight:rope"
 	}).id("immersiveengineering:crafting/glider")
-
-	kubejs.shapeless("2x cmi:refractory_brick_bloom", [
-		"#forge:clay",
-		"#forge:clay",
-		"#forge:dusts/aluminum",
-		"#forge:dusts/hop_graphite",
-		"create:cinder_flour"
-	]).id("immersiveindustry:crafting/refractory_kiln_brick")
 })

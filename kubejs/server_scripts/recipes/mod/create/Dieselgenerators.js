@@ -27,4 +27,16 @@ ServerEvents.recipes((event) => {
 		"thermal:basalz_powder",
 		"thermal:basalz_powder"
 	], "createdieselgenerators:lines").heated()
+
+	createdieselgenerators.bulk_fermenting(
+		Fluid.of("immersiveengineering:redstone_acid", 200), [
+		Fluid.of("tconstruct:molten_lead", 90),
+		"minecraft:redstone"
+	]).id("createdieselgenerators:compat/immersiveengineering/redstone_acid")
+
+	createdieselgenerators.bulk_fermenting(
+		Fluid.of("immersiveengineering:redstone_acid", 200), [
+		Fluid.of("thermal:redstone", 100),
+		"#forge:dusts/lead"
+	])
 })

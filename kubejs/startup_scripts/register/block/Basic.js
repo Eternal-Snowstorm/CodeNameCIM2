@@ -167,4 +167,20 @@ StartupEvents.registry("block", (event) => {
 		.resistance(0.5)
 		.tagBlock("minecraft:sand")
 		.tagBlock(CmiToolType.SHOVEL.tag())
+
+	// 高岭土块
+	addBlock("kaolinite")
+		.textureAll(Cmi.loadResource("block/kaolinite_block"))
+		.soundType(SoundType.GRAVEL)
+		.hardness(0.5)
+		.resistance(0.5)
+		.tagBlock(CmiToolType.SHOVEL.tag())
+
+	// 耐火砖泥
+	addBlock("refractory_grout")
+		.textureAll(Cmi.loadResource("block/refractory_grout"))
+		.soundType(SoundType.GRAVEL)
+		.hardness(0.5)
+		.resistance(0.5)
+		.tagBlock(CmiToolType.SHOVEL.tag())
 })
