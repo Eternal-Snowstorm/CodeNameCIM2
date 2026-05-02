@@ -77,6 +77,10 @@ StartupEvents.registry("item", (event) => {
 		})
 		.tag("create:blaze_burner_fuel/special")
 
+	// 图标
+	addItem("cmi_icon")
+		.texture(Cmi.loadResource("item/packicon"))
+
 	// 热力单元
 	addItem("thermal_unit")
 		.texture(Cmi.loadResource("item/material/unit/thermal"))

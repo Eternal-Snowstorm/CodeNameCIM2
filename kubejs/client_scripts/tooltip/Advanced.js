@@ -8,7 +8,7 @@ ItemEvents.tooltip((event) => {
 	addAdvancedTooltip("cmi:random_mechanism")
 	addAdvancedTooltip("cmi:eternalsnowstorm")
 	addAdvancedTooltip("cmi:qi_month")
-	addAdvancedTooltip("cmi:dont_kill_belalus")
+	addAdvancedTooltip("cmi:belalus")
 	addAdvancedTooltip("cmi:fiber_optics")
 	addAdvancedTooltip("cmi:ye_anqing")
 	addAdvancedTooltip("cmi:sakura_star_cn")

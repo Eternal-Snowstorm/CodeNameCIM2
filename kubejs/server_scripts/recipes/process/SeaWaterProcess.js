@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 			"amount": 100
 		},
 		"result": {
-			"item": "ratatouille:salt",
+			"item": "mekanism:salt",
 			"count": 1
 		},
 		"large_only": true,
@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
 			"amount": 100
 		},
 		"result": {
-			"item": "ratatouille:salt",
+			"item": "mekanism:salt",
 			"count": 1
 		},
 		"large_only": true,
