@@ -33,8 +33,8 @@ ItemEvents.tooltip((event) => {
 	}
 
 	// 初始套件的Tooltip
-	// event.addAdvanced("cmi:initial_item_kit",
-	// 	(item, advanced, tooltip) => {
+	// event.addAdvanced("cmi:initial_item_kit", 
+	// 	(item,  advanced,  tooltip) => {
 	// 		if (event.shift) {
 	// 			let lines = Component.translatable("tooltip.cmi.initial_item_kit.shift")
 	// 				.string.split("\n")
