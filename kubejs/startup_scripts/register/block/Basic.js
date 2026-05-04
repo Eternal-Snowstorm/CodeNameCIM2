@@ -88,7 +88,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 坩埚底座
 	addBlock("crucible_base")
-		.textureAll(`${Cmi.MODID}:block/crucible/top`)
+		.textureAll(Cmi.loadResource("block/crucible/top"))
 		.soundType(SoundType.METAL)
 		.hardness(6)
 		.resistance(6)
@@ -107,7 +107,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 青铜外壳
 	addBlock("bronze_casing")
-		.textureAll(`${Cmi.MODID}:block/casing/bronze/casing`)
+		.textureAll(Cmi.loadResource("block/casing/bronze/casing"))
 		.soundType(SoundType.WOOD)
 		.hardness(5)
 		.resistance(5)
@@ -116,7 +116,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 智能外壳
 	addBlock("smart_casing")
-		.model(Cmi.loadResource(`block/casing/ae2/smart`))
+		.model(Cmi.loadResource("block/casing/ae2/smart"))
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
@@ -125,7 +125,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 高级计算外壳
 	addBlock("computing_casing")
-		.model(Cmi.loadResource(`block/casing/ae2/computing`))
+		.model(Cmi.loadResource("block/casing/ae2/computing"))
 		.soundType(SoundType.METAL)
 		.hardness(5)
 		.resistance(5)
