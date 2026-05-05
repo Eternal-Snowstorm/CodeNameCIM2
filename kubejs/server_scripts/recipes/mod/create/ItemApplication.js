@@ -21,9 +21,9 @@ ServerEvents.recipes((event) => {
 
 	// 青铜机壳
 	create.item_application("cmi:bronze_casing", [
-		"#minecraft:logs",
+		"createdeco:industrial_iron_sheet_metal",
 		["#forge:ingots/bronze", "#forge:plates/bronze"]
-	]).id("cmi:item_application/bronze_casing_from_log")
+	]).id("cmi:item_application/bronze_casing")
 
 	// 哭泣黑曜石
 	create.item_application("minecraft:crying_obsidian", [
