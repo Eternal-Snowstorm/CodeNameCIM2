@@ -112,6 +112,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("moreburners:heat_upgrade", "使{moreburners:electric_burner, 1}电磁炉达到更高的加热等级")
 	addCommonTooltipLang("create:basin", "使用{minecraft:sponge, 1}海绵可以清空内部所有流体")
 	addCommonTooltipLang("create:sail_frame", `不再支持作为风帆为{create:windmill_bearing, 1}风车轴承产生应力`)
+	addCommonTooltipLang("cmi:astral_core", "用于激活{cmi:eden_crystal, 1}星环传送门的核心§c 小心落雷")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",
@@ -133,5 +134,4 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCustomTooltipLang("tooltip.moreburners.electric_burner.2", "§b通上{createaddition:electrum_spool, 1}电后会缓慢的升温, 需要保持供电")
 	addCustomTooltipLang("tooltip.cmi.fan", "§b可加快{[tconstruct:seared_table, tconstruct:scorched_table, tconstruct:seared_basin, tconstruct:scorched_basin], 1}{#tconstruct:casts, 1}铸造冷却速度")
 	addCustomTooltipLang("tooltip.cmi.cast", "§b冷却时可被{[create:encased_fan, ratatouille:oven_fan], 1}鼓风机加速")
-	addCommonTooltipLang("cmi:astral_core", "用于激活{cmi:eden_crystal, 1}星环传送门的核心§c 小心落雷")
 })
