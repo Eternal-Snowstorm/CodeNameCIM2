@@ -33,12 +33,13 @@ StartupEvents.registry("block", (event) => {
 	const COMMON_BLOCK_TAGS = [
 		"mekanism:cardboard_blacklist",
 		"ae2:blacklisted/spatial",
-		"deepdrilling:ore_nodes"
+		"deepdrilling:ore_nodes",
+		"create_rns:deposit_blocks"
 	]
 
 	// Common Item Tag(s) List
 	const COMMON_ITEM_TAGS = [
-		`${Cmi.MODID}:ore_nodes`
+		`${Cmi.MODID}:deposit_blocks`
 	]
 
 	/**

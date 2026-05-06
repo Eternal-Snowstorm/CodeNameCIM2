@@ -44,4 +44,32 @@ BlockEvents.modification((event) => {
 			modify.setSoundType(SoundType.LANTERN)
 		})
 	})
+
+	// 矿藏
+	let depositBlocks = [
+		"create_rns:gold_deposit_block",
+		"create_rns:zinc_deposit_block",
+		"create_rns:copper_deposit_block",
+		"create_rns:iron_deposit_block",
+		"cmi:oil_shale_deposit_block",
+		"cmi:coal_deposit_block",
+		"cmi:cheese_deposit_block",
+		"cmi:platinum_deposit_block",
+		"cmi:vanadium_deposit_block",
+		"create_rns:depleted_deposit_block",
+		"create_rns:cobalt_deposit_block",
+		"create_rns:quartz_deposit_block",
+		"create_rns:uranium_deposit_block",
+		"create_rns:silver_deposit_block",
+		"create_rns:nickel_deposit_block",
+		"create_rns:lead_deposit_block",
+		"create_rns:tin_deposit_block",
+		"create_rns:redstone_deposit_block"
+	]
+	depositBlocks.forEach((block) => {
+		event.modify(block, (modify) => {
+			modify.setDestroySpeed(-1)
+			modify.setExplosionResistance(3600000)
+		})
+	})
 })
