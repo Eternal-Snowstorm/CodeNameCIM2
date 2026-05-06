@@ -48,6 +48,7 @@ XaeroWaypoints*
 /oef
 replay*
 /servers*
+/tconplanner
 /mods*.zip
 /mods.zip
 /patchouli_books
@@ -101,7 +102,7 @@ config/nebula/value.txt
 !/config/fancymenu/
 !/config/ftbquests/**
 !/config/jade/
-!/config/jei/
+!/config/jei/*
 !/config/immersiveengineering-client.toml
 !/config/ad_astra.jsonc
 !/config/fml.toml
