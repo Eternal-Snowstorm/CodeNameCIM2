@@ -152,7 +152,7 @@ ServerEvents.highPriorityData((event) => {
 			.arrowHead()
 			.setTraits((builder) => {
 				builder.addTrait("tconstruct:melee_harvest", modifier($NTModifier.SHADOW), 1)
-				builder.addTrait("tconstruct:ranged", modifier($NTModifier.SHADOW), 1)
+				builder.addTrait("tconstruct:ranged", modifier($NTModifier.SHADOW), 2)
 					.addTrait("tconstruct:ranged", modifier($TinkerModifiers.multishot), 2)
 					.addTrait("tconstruct:ammo", modifier($TinkerModifiers.impaling), 1)
 			})
@@ -247,9 +247,8 @@ ServerEvents.highPriorityData((event) => {
 			.maille()
 			.platingShield(1420, 0, 4)
 			.setTraits((builder) => {
-				builder.addTrait("default", id($ModifierIds.lightweight), 1)
-					.addTrait("tconstruct:melee_harvest", id($ModifierIds.flamestance), 1)
-					.addTrait("tconstruct:ranged", id($ModifierIds.maintained), 1)
+				builder.addTrait("tconstruct:melee_harvest", id($TinkerModifiers.insatiable), 1)
+					.addTrait("tconstruct:ranged", id($ModifierIds.lightweight), 1)
 			})
 	})
 
