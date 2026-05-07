@@ -13,7 +13,6 @@ ServerEvents.recipes((event) => {
 		if (typeof level === "undefined") {
 			this.recipe = {
 				type: "tconstruct:modifier",
-				level: 1,
 				result: modifier
 			}
 			return this
@@ -159,5 +158,34 @@ ServerEvents.recipes((event) => {
 			"cmi:andesite_mechanism"
 		])
 		.build(NebulaTinker.loadResource("tinker/modifier/ability/clockwork"))
+
+	// 增强
+	new ModifierRecipeBuilder("tconstruct:draconic")
+		.allowCrystal(true)
+		.checkTraitLevel(false)
+		.tools("#tconstruct:modifiable/held")
+		.inputs([
+			"tconstruct:dragon_scale",
+			"#forge:gears/titanium",
+			"tconstruct:dragon_scale",
+			"#forge:plates/titanium",
+			"#forge:plates/titanium"
+		])
+		.build(NebulaTinker.loadResource("tinker/modifier/slotless/draconic"))
+
+	// 铭刻
+	new ModifierRecipeBuilder("tconstruct:writable")
+		.allowCrystal(true)
+		.checkTraitLevel(false)
+		.tools("#tconstruct:modifiable/held")
+		.inputs([
+			"#forge:plates/silver",
+			"minecraft:writable_book",
+			"#forge:plates/silver",
+			"ae2:sky_dust",
+			"ae2:sky_dust"
+		])
+		.build(NebulaTinker.loadResource("tinker/modifier/slotless/writable"))
+
 	// endregion
 })

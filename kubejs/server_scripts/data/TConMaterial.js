@@ -12,7 +12,7 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:amethyst`, (builder) => {
 		builder.visibility(1, false)
 			.craftable(true)
-			.sortOrder(2)
+			.sortOrder(12)
 			.head(100, 1.6, 6.2, "minecraft:stone")
 			.handle(-0.10, 0.05, 0, 0)
 			.limb(0.1, -0.12, 230, -0.02)
@@ -36,11 +36,33 @@ ServerEvents.highPriorityData((event) => {
 			})
 	})
 
+	// 工业铁
+	new TConMaterial(event, `${Cmi.MODID}:industrial_iron`, (builder) => {
+		builder.visibility(2, false)
+			.craftable(false)
+			.sortOrder(12)
+			.head(320, 2, 4, "minecraft:iron")
+			.binding()
+			.handle(0.1, -0.1, 0.05, 0)
+			.limb(0, 0.1, 250, 0.2)
+			.grip(0.1, 0.1, 0)
+			.maille()
+			.platingHelmet(2, 165, 0, 1)
+			.platingChestplate(4, 240, 0, 2)
+			.platingLeggings(3, 225, 0, 2)
+			.platingBoots(2, 195, 0, 1)
+			.platingShield(270, 0, 2)
+			.setTraits((builder) => {
+				builder.addTrait("default", modifier($TinkerModifiers.magnetic), 1)
+					.addTrait("tconstruct:armor", id($ModifierIds.projectileProtection), 1)
+			})
+	})
+
 	// 安山合金
 	new TConMaterial(event, `${Cmi.MODID}:andesite_alloy`, (builder) => {
 		builder.visibility(2, false)
 			.craftable(true)
-			.sortOrder(2)
+			.sortOrder(12)
 			.head(250, 2, 6, "minecraft:iron")
 			.handle(0.1, 0, 0, 0)
 			.binding()
@@ -74,10 +96,10 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:brass`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
-			.sortOrder(7)
-			.head(780, 2.6, 2.5, "minecraft:diamond")
+			.sortOrder(12)
+			.head(680, 1.75, 8.5, "minecraft:diamond")
 			.binding()
-			.handle(0.2, 0.0, 0.2, 0.1)
+			.handle(0.0, 0.0, 0.05, 0.1)
 			.grip(0.2, 0.2, 1.4)
 			.maille()
 			.platingBoots(1.2, 138, 0, 1.5)
@@ -87,7 +109,7 @@ ServerEvents.highPriorityData((event) => {
 			.platingShield(238, 1.3, 1.5)
 			.setTraits((builder) => {
 				builder.addTrait("default", id($ModifierIds.harmonious), 1)
-					.addTrait("tconstruct:melee_harvest", id($ModifierIds.reach), 2)
+					.addTrait("tconstruct:melee_harvest", modifier($NTModifier.CLOCKWORK), 2)
 					.addTrait("tconstruct:ranged", modifier($TinkerModifiers.multishot), 1)
 			})
 			.addMaterialFluidRecipes("tconstruct:molten_brass", (builder) => {
@@ -96,36 +118,14 @@ ServerEvents.highPriorityData((event) => {
 			})
 	})
 
-	// 工业铁
-	new TConMaterial(event, `${Cmi.MODID}:industrial_iron`, (builder) => {
-		builder.visibility(2, false)
-			.craftable(false)
-			.sortOrder(2)
-			.head(250, 2, 4, "minecraft:iron")
-			.binding()
-			.handle(0.1, -0.1, 0.05, 0)
-			.limb(0, 0.1, 250, 0.2)
-			.grip(0.1, 0.1, 0)
-			.maille()
-			.platingHelmet(2, 165, 0, 1)
-			.platingChestplate(4, 240, 0, 2)
-			.platingLeggings(3, 225, 0, 2)
-			.platingBoots(2, 195, 0, 1)
-			.platingShield(270, 0, 2)
-			.setTraits((builder) => {
-				builder.addTrait("default", modifier($TinkerModifiers.magnetic), 1)
-					.addTrait("tconstruct:armor", id($ModifierIds.projectileProtection), 1)
-			})
-	})
-
 	// 铸铁
 	new TConMaterial(event, `${Cmi.MODID}:cast_iron`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
-			.sortOrder(7)
-			.head(265, 2.8, 8, "minecraft:iron")
+			.sortOrder(12)
+			.head(528, 2.75, 7.5, "minecraft:diamond")
 			.binding()
-			.handle(0.1, 0.1, 0, 0.05)
+			.handle(0.15, 0.05, 0, -0.05)
 			.grip(-0.05, 0.05, 0)
 			.maille()
 			.platingHelmet(3, 180, 1, 0)
@@ -140,14 +140,49 @@ ServerEvents.highPriorityData((event) => {
 			})
 	})
 
+	// 暗影钢
+	new TConMaterial(event, `${Cmi.MODID}:shadow_steel`, (builder) => {
+		builder.visibility(3, false)
+			.craftable(true)
+			.sortOrder(12)
+			.head(620, 4.3, 7.2, "minecraft:diamond")
+			.binding()
+			.handle(0.1, -0.1, 0.2, -0.2)
+			.grip(0.3, 0.1, 2.5)
+			.arrowHead()
+			.setTraits((builder) => {
+				builder.addTrait("tconstruct:melee_harvest", modifier($NTModifier.SHADOW), 1)
+				builder.addTrait("tconstruct:ranged", modifier($NTModifier.SHADOW), 1)
+					.addTrait("tconstruct:ranged", modifier($TinkerModifiers.multishot), 2)
+					.addTrait("tconstruct:ammo", modifier($TinkerModifiers.impaling), 1)
+			})
+	})
+
+	// 光辉石
+	new TConMaterial(event, `${Cmi.MODID}:refined_radiance`, (builder) => {
+		builder.visibility(3, false)
+			.craftable(true)
+			.sortOrder(12)
+			.head(320, 2.5, 2.0, "minecraft:diamond")
+			.binding()
+			.handle(-0.3, 0.3, 0.25, 0.35)
+			.grip(-0.2, -0.3, 1.5)
+			.arrowHead()
+			.setTraits((builder) => {
+				builder.addTrait("tconstruct:melee_harvest", id($ModifierIds.lightspeed), 1)
+				builder.addTrait("tconstruct:ranged", id($ModifierIds.lightspeed), 1)
+					.addTrait("tconstruct:ammo", id($ModifierIds.keen), 2)
+			})
+	})
+
 	// 阿迪特
 	new TConMaterial(event, `${Cmi.MODID}:ardite`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
-			.sortOrder(11)
-			.head(650, 2.75, 2.0, "minecraft:diamond")
+			.sortOrder(12)
+			.head(650, 2.75, 8.3, "minecraft:diamond")
 			.binding()
-			.handle(0.2, 0.3, 0.2, 0.1)
+			.handle(0.2, -0.05, -0.2, 0.25)
 			.setTraits((builder) => {
 				builder.addTrait("default", modifier($NTModifier.PETRAMOR), 1)
 					.addTrait("tconstruct:handle", modifier($NTModifier.PETRAMOR), 1)
@@ -159,11 +194,11 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:stainless_steel`, (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
-			.sortOrder(7)
+			.sortOrder(12)
 			.head(800, 3.76, 6, "minecraft:diamond")
 			.binding()
 			.handle(0.05, 0, 0.05, 0.05)
-			.limb(0.1, 0, 800, +0.25)
+			.limb(0.1, 0, 800, 0.25)
 			.grip(0.05, -0.05, 2.75)
 			.maille()
 			.platingHelmet(2, 380, 0, 2)
@@ -181,12 +216,13 @@ ServerEvents.highPriorityData((event) => {
 
 	// 戴斯
 	new TConMaterial(event, `${Cmi.MODID}:desh`, (builder) => {
-		builder.visibility(3, false)
+		builder.visibility(4, false)
 			.craftable(false)
-			.sortOrder(8)
-			.head(900, 2.75, 7, "minecraft:diamond")
+			.sortOrder(12)
+			.head(1210, 3.25, 7.5, "minecraft:diamond")
 			.binding()
-			.handle(0.05, 0, 0.1, 0)
+			.handle(0.05, 0.1, 0.15, 0.15)
+			.limb(0.15, 0.15, 1280, 0.2)
 			.grip(-0.1, 0.25, 2.5)
 			.maille()
 			.platingShield(820, 0, 2)
@@ -203,17 +239,17 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:ostrum`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
-			.sortOrder(9)
-			.head(1380, 3.25, 7, "minecraft:netherite")
+			.sortOrder(12)
+			.head(1380, 4.5, 8.0, "minecraft:netherite")
 			.binding()
-			.handle(0.1, 0.1, 0, 0.05)
+			.handle(0.1, 0.15, 0.3, 0.15)
+			.limb(0.35, 0.25, 1420, 0.5)
 			.grip(0.2, 0, 2.5)
 			.maille()
 			.platingShield(1420, 0, 4)
 			.setTraits((builder) => {
 				builder.addTrait("default", id($ModifierIds.heavy), 1)
 					.addTrait("tconstruct:melee_harvest", id($ModifierIds.flamestance), 1)
-					.addTrait("tconstruct:ranged", modifier($TinkerModifiers.multishot), 2)
 					.addTrait("tconstruct:ranged", id($ModifierIds.maintained), 1)
 			})
 	})
@@ -222,10 +258,10 @@ ServerEvents.highPriorityData((event) => {
 	new TConMaterial(event, `${Cmi.MODID}:calorite`, (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
-			.sortOrder(10)
-			.head(1500, 6.5, 7.5, "minecraft:netherite")
+			.sortOrder(12)
+			.head(1500, 6.5, 8.5, "minecraft:netherite")
 			.binding()
-			.handle(0.15, 0.25, 0.05, 0.15)
+			.handle(0.35, 0.3, -0.15, 0.25)
 			.grip(0, 0.4, 2.5)
 			.maille()
 			.platingHelmet(2, 1200, 0.2, 3)
@@ -239,47 +275,6 @@ ServerEvents.highPriorityData((event) => {
 					.addTrait("tconstruct:melee_harvest", id($ModifierIds.solid), 1)
 					.addTrait("tconstruct:ranged", id($ModifierIds.ballista), 1)
 					.addTrait("tconstruct:armor", id($ModifierIds.fireProtection), 2)
-			})
-	})
-
-	// 暗影钢
-	new TConMaterial(event, `${Cmi.MODID}:shadow_steel`, (builder) => {
-		builder.visibility(4, false)
-			.craftable(true)
-			.sortOrder(11)
-			.head(620, 4, 3, "minecraft:netherite")
-			.binding()
-			.handle(0.1, -0.1, 0.2, -0.2)
-			.limb(0.35, 0.25, 1420, 0.4)
-			.grip(0.3, 0.1, 2.5)
-			.arrowHead()
-			.maille()
-			.setTraits((builder) => {
-				builder.addTrait("default", id($ModifierIds.raging), 1)
-					.addTrait("tconstruct:melee_harvest", id($ModifierIds.searing), 1)
-					.addTrait("tconstruct:ranged", id($ModifierIds.power), 1)
-					.addTrait("tconstruct:ammo", modifier($TinkerModifiers.impaling), 1)
-					.addTrait("tconstruct:ammo", id($ModifierIds.pierce), 1)
-			})
-	})
-
-	// 光辉石
-	new TConMaterial(event, `${Cmi.MODID}:refined_radiance`, (builder) => {
-		builder.visibility(4, false)
-			.craftable(true)
-			.sortOrder(12)
-			.head(720, 2.5, 2.0, "minecraft:netherite")
-			.binding()
-			.handle(-0.3, 0.3, 0.25, 0.35)
-			.limb(-0.2, -0.3, 720, -0.1)
-			.grip(-0.2, -0.3, 1.5)
-			.arrowHead()
-			.maille()
-			.setTraits((builder) => {
-				builder.addTrait("default", id($ModifierIds.crystalstrike), 1)
-					.addTrait("tconstruct:melee_harvest", id($ModifierIds.lightspeed), 1)
-					.addTrait("tconstruct:armor", id($ModifierIds.lightspeed), 1)
-					.addTrait("tconstruct:ammo", id($ModifierIds.keen), 2)
 			})
 	})
 })
