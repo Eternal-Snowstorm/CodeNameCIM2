@@ -20,7 +20,7 @@ StartupEvents.registry("fluid", (event) => {
 	/**
 	 * 
 	 * @param {string} name 注册id
-	 * @param {Color_} color 着色色号
+	 * @param {MaterialColor} color 着色色号
 	 * @returns 
 	 */
 	function addThickColorFluid(name, color) {

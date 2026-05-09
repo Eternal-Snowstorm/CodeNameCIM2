@@ -181,7 +181,7 @@ function OreBlock(name, level, hardness) {
 
 /**
  * 
- * @param {number} color 
+ * @param {MaterialColor} color 
  * @param {string} id 
  * @returns 
  */
