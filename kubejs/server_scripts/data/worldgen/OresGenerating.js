@@ -1,39 +1,39 @@
 ServerEvents.highPriorityData((event) => {
 	// 赛特斯石英
-	addOreGeneratingType("certus_quartz", "overworld", 5)
+	addOreGeneratingType("certus_quartz_ore", "overworld", 5)
 		.overworld(2)
 
 	// 银
-	addOreGeneratingType("silver", "moon", 8)
+	addOreGeneratingType("silver_ore", "moon", 8)
 		.moon(7)
 
 	// 埃忒恩
-	addOreGeneratingType("etrium", "overworld", 4)
+	addOreGeneratingType("etrium_ore", "overworld", 4)
 		.overworld(4)
 
 	// 石英
-	addOreGeneratingType("quartz", "overworld", 9)
+	addOreGeneratingType("quartz_ore", "overworld", 9)
 		.overworld(3)
 
 	// 钴
-	addOreGeneratingType("cobalt", "moon", 6)
+	addOreGeneratingType("cobalt_ore", "moon", 6)
 		.moon(5)
 
 	// 阿迪特
-	addOreGeneratingType("ardite", "nether", 8)
+	addOreGeneratingType("ardite_ore", "nether", 8)
 		.nether(6)
 
-	// 铱锇
-	addOreGeneratingType("osmiridium", "moon", 4)
-		.moon(4)
-
 	// 铂
-	addOreGeneratingType("platinum", "moon", 4)
+	addOreGeneratingType("platinum_ore", "moon", 4)
 		.moon(4)
 
 	// 钨
-	addOreGeneratingType("tungsten", "nether", 4)
+	addOreGeneratingType("tungsten_ore", "nether", 4)
 		.nether(4)
+
+	// 高岭土
+	addOreGeneratingType("kaolinite", "overworld", 32)
+		.eden(2)
 
 	/**
 	 * 
@@ -65,7 +65,7 @@ ServerEvents.highPriorityData((event) => {
 
 		// 已放置的地物
 		let placedFeature = {
-			feature: `${Cmi.MODID}:${oreType[type]}${name}_ore`,
+			feature: `${Cmi.MODID}:${oreType[type]}${name}`,
 			placement: {}
 		}
 
@@ -73,15 +73,15 @@ ServerEvents.highPriorityData((event) => {
 		let biomeModifier = {
 			type: "forge:add_features",
 			biomes: {},
-			features: `${Cmi.MODID}:${oreType[type]}${name}_ore`,
+			features: `${Cmi.MODID}:${oreType[type]}${name}`,
 			step: "underground_ores"
 		}
 
 		// 生成数据包
 		function build() {
-			event.addJson(`cmi:worldgen/configured_feature/${oreType[type]}${name}_ore`, configuredFeature)
-			event.addJson(`cmi:worldgen/placed_feature/${oreType[type]}${name}_ore`, placedFeature)
-			event.addJson(`cmi:forge/biome_modifier/${oreType[type]}${name}_ore`, biomeModifier)
+			event.addJson(`cmi:worldgen/configured_feature/${oreType[type]}${name}`, configuredFeature)
+			event.addJson(`cmi:worldgen/placed_feature/${oreType[type]}${name}`, placedFeature)
+			event.addJson(`cmi:forge/biome_modifier/${oreType[type]}${name}`, biomeModifier)
 			return this
 		}
 
@@ -93,7 +93,7 @@ ServerEvents.highPriorityData((event) => {
 				configuredFeature.config.targets = [
 					{
 						state: {
-							Name: `${Cmi.MODID}:${name}_ore`
+							Name: `${Cmi.MODID}:${name}`
 						},
 						target: {
 							predicate_type: "minecraft:tag_match",
@@ -102,7 +102,7 @@ ServerEvents.highPriorityData((event) => {
 					},
 					{
 						state: {
-							Name: `${Cmi.MODID}:deepslate_${name}_ore`
+							Name: `${Cmi.MODID}:deepslate_${name}`
 						},
 						target: {
 							predicate_type: "minecraft:tag_match",
@@ -139,12 +139,64 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
+			// 伊甸 
+			eden: function (count) {
+				configuredFeature.config.targets = [
+					{
+						state: {
+							Name: `${Cmi.MODID}:${name}`
+						},
+						target: {
+							predicate_type: "minecraft:tag_match",
+							tag: "minecraft:stone_ore_replaceables"
+						}
+					}
+				]
+				placedFeature.placement = [
+					{
+						type: "minecraft:count",
+						count: count
+					},
+					{
+						type: "minecraft:in_square"
+					},
+					{
+						type: "minecraft:height_range",
+						height: {
+							type: "minecraft:trapezoid",
+							max_inclusive: {
+								absolute: 200
+							},
+							min_inclusive: {
+								absolute: 50
+							}
+						}
+					},
+					{
+						type: "minecraft:biome"
+					}
+				]
+				biomeModifier.biomes = [
+					"edenring:brainstorm",
+					"edenring:golden_forest",
+					"edenring:gravilite_debris_field",
+					"edenring:lakeside_desert",
+					"edenring:mycotic_forest",
+					"edenring:old_mycotic_forest",
+					"edenring:pulse_forest",
+					"edenring:stone_garden",
+					"edenring:wind_valley"
+				]
+				build()
+				return this
+			},
+
 			// 下界
 			nether: function (count) {
 				configuredFeature.config.targets = [
 					{
 						state: {
-							Name: `${Cmi.MODID}:nether_${name}_ore`
+							Name: `${Cmi.MODID}:nether_${name}`
 						},
 						target: {
 							block: "minecraft:netherrack",
@@ -186,7 +238,7 @@ ServerEvents.highPriorityData((event) => {
 				configuredFeature.config.targets = [
 					{
 						state: {
-							"Name": `${Cmi.MODID}:end_${name}_ore`
+							"Name": `${Cmi.MODID}:end_${name}`
 						},
 						target: {
 							block: "minecraft:end_stone",
@@ -228,7 +280,7 @@ ServerEvents.highPriorityData((event) => {
 				configuredFeature.config.targets = [
 					{
 						"state": {
-							"Name": `${Cmi.MODID}:moon_${name}_ore`
+							"Name": `${Cmi.MODID}:moon_${name}`
 						},
 						"target": {
 							"block": "ad_astra:moon_stone",
@@ -270,7 +322,7 @@ ServerEvents.highPriorityData((event) => {
 				configuredFeature.config.targets = [
 					{
 						state: {
-							"Name": `${Cmi.MODID}:mars_${name}_ore`
+							"Name": `${Cmi.MODID}:mars_${name}`
 						},
 						target: {
 							predicate_type: "minecraft:tag_match",
