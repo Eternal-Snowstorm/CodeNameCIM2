@@ -19,6 +19,10 @@ ServerEvents.highPriorityData((event) => {
 	addOreGeneratingType("cobalt", "moon", 6)
 		.moon(5)
 
+	// 阿迪特
+	addOreGeneratingType("ardite", "nether", 8)
+		.nether(6)
+
 	// 铱锇
 	addOreGeneratingType("osmiridium", "moon", 4)
 		.moon(4)
