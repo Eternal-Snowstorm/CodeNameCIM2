@@ -14,5 +14,4 @@ StartupEvents.registry("fluid", (event) => {
 		console.debug(`molten_${name}已注册!`)
 		return builder
 	}
-
 })
