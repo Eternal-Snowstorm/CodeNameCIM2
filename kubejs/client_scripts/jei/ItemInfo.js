@@ -13,7 +13,7 @@ JEIEvents.information((event) => {
 	addJEIInfo("cmi:bucket")
 	addJEIInfo("#ad_astra:power_consumption_machines")
 	addJEIInfo("cmi:andesite_alloy_noodle")
-	addJEIInfo("#cmi:faucet")
+	// addJEIInfo("#cmi:faucet")
 	// addJEIInfo("#cmi:liquid_output")
 	addJEIInfo("#cmi:peat_gen")
 	addJEIInfo("thermal:rubber")
