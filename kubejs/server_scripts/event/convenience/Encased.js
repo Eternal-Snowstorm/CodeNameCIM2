@@ -1,183 +1,305 @@
-let $BeltBlock =
-	Java.loadClass("com.simibubi.create.content.kinetics.belt.BeltBlock")
-let $Boolean =
-	Java.loadClass("java.lang.Boolean")
-let $ShaftBlock =
-	Java.loadClass("com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock")
+let $Boolean = Java.loadClass("java.lang.Boolean")
+const beltCasing = ["create:brass_casing", "create:andesite_casing", "create:wrench"]
 
-let BeltCasing = [
-	"create:brass_casing",
-	"create:andesite_casing"
-]
+const shaftCasingType = { "create:brass_casing": "create:brass_encased_shaft", "create:andesite_casing": "create:andesite_encased_shaft" }
+const beltCasingType = { "create:brass_casing": 'BRASS', "create:andesite_casing": "ANDESITE", "create:wrench": 'NONE' }
+const inversedBeltCasingType = { "BRASS": "create:brass_casing", "ANDESITE": "create:andesite_casing" }
 
-let ShaftCasingType = {
-	"create:brass_casing": "create:brass_encased_shaft",
-	"create:andesite_casing": "create:andesite_encased_shaft"
-}
 
-let BeltCasingType = {
-	"create:brass_casing": "BRASS",
-	"create:andesite_casing": "ANDESITE"
-}
+NetworkEvents.dataReceived("isPlayerAltDown", event => {
+	event.player.persistentData.Alt = event.data.Alt
+})
+let $KineticBlockEntity = Java.loadClass("com.simibubi.create.content.kinetics.base.KineticBlockEntity")
+let $BeltBlock = Java.loadClass("com.simibubi.create.content.kinetics.belt.BeltBlock")
+let $BeltBlockEntity = Java.loadClass("com.simibubi.create.content.kinetics.belt.BeltBlockEntity")
+//传送带连锁套拆壳
+BlockEvents.rightClicked("create:belt", event => {
+	if (event.player == null) { return }
+	if (event.player.isShiftKeyDown()) { return }
+	if (event.player.getOffHandItem() !== Item.of("cmi:andesite_mechanism")) { return }
+	if (beltCasing.some(i => i == event.item.id)) {
+		event.player.swing()
+		let limit = 32
 
-let InversedBeltCasingType = {
-	BRASS: "create:brass_casing",
-	ANDESITE: "create:andesite_casing"
-}
+		let block = event.block
+		let BlockStates = block.blockState
+		let part = BlockStates.getValue($BeltBlock.PART).toString()
 
-NetworkEvents.dataReceived("isPlayerAltDown", (event) => {
-	let { player, data } = event
+		let HorizontalFacing = BlockStates.getValue($BeltBlock.HORIZONTAL_FACING).toString()
+		let Slope = BlockStates.getValue($BeltBlock.SLOPE).toString()
+		let YAxis = false//水平传送带还是斜传送带
+		let YBelt = false//是否是垂直传送带
+		let toEndblock = block
+		let toEndBlockStates = toEndblock.blockState
+		let toEndPos = [0, 0, 0]
+		let toEndVec = [0, 0, 0]
+		let toStartblock = block
+		let toStartBlockStates = toStartblock.blockState
+		let toStartPos = [0, 0, 0]
+		let toStartVec = [0, 0, 0]
+		//event.player.tell(encaseOrNot)
+		if (Slope == 'VERTICAL') { YBelt = true }
+		if (YBelt) {
+			toEndVec[1] = 1
+			toStartVec[1] = -1
+		}
+		else {
+			switch (HorizontalFacing) {
+				case 'east':
+					toEndVec[0] = 1
+					toStartVec[0] = -1
+					break
+				case 'west':
+					toEndVec[0] = -1
+					toStartVec[0] = 1
+					break
+				case 'south':
+					toEndVec[2] = 1
+					toStartVec[2] = -1
+					break
+				case 'north':
+					toEndVec[2] = -1
+					toStartVec[2] = 1
+					break
+			}
+			if (Slope != 'HORIZONTAL') { YAxis = true }
+			if (YAxis) {
+				switch (Slope) {
+					case 'UPWARD':
+						toEndVec[1] = 1
+						toStartVec[1] = -1
+						break
+					case 'DOWNWARD':
+						toEndVec[1] = -1
+						toStartVec[1] = 1
+						break
+				}
+			}
+		}
+		//遍历至末端
+		if (part != 'END') {
+			for (let i = 0; i < limit; i++) {
+				toEndPos[0] += toEndVec[0]
+				toEndPos[1] += toEndVec[1]
+				toEndPos[2] += toEndVec[2]
+				toEndblock = block.offset(toEndPos[0], toEndPos[1], toEndPos[2])
+				if (toEndblock.id != 'create:belt') { break }
+				if (toEndblock.entity instanceof $BeltBlockEntity) {
+					toEndblock.entity.setCasingType(beltCasingType[event.item.id])
+				}
 
-	player.persistentData.Alt = data.Alt
 
-	let chainedcasing = Component
-		.translatable("message.cmi.chainedcasing")
-		.green()
-		.bold()
-
-	let chaineduncasing = Component
-		.translatable("message.cmi.chaineduncasing")
-		.red()
-		.bold()
-
-	// !这里只能用弱等于
-	if (data.Alt != true) {
-		return
-	}
-
-	if (BeltCasing.some((i) => i == player.mainHandItem.id)) {
-		player.displayClientMessage(chainedcasing, true)
-	}
-
-	if (player.mainHandItem.id == "create:wrench") {
-		player.displayClientMessage(chaineduncasing, true)
+				//是否继续
+				if (toEndBlockStates.getValue($BeltBlock.PART).toString() == 'END') {
+					break
+				}
+			}
+		}
+		//遍历至起始端
+		if (part != 'START') {
+			for (let i = 0; i < limit; i++) {
+				toStartPos[0] += toStartVec[0]
+				toStartPos[1] += toStartVec[1]
+				toStartPos[2] += toStartVec[2]
+				toStartblock = block.offset(toStartPos[0], toStartPos[1], toStartPos[2])
+				if (toStartblock.id != 'create:belt') { break }
+				if (toStartblock.entity instanceof $BeltBlockEntity) {
+					toStartblock.entity.setCasingType(beltCasingType[event.item.id])
+				}
+				//是否继续
+				if (toStartBlockStates.getValue($BeltBlock.PART).toString() == 'START') {
+					break
+				}
+			}
+		}
 	}
 })
+let $ShaftBlock = Java.loadClass("com.simibubi.create.content.kinetics.simpleRelays.ShaftBlock")
+//传动杆连锁套壳
+BlockEvents.rightClicked("create:shaft", event => {
+	if (event.player == null) { return }
+	if (event.player.isShiftKeyDown()) { return }
+	if (event.player.getOffHandItem() !== Item.of("cmi:andesite_mechanism")) { return }
+	if (beltCasing.some(i => i == event.item.id)) {
+		event.player.swing()
+		let limit = 64
 
+		let block = event.block
+		let BlockStates = block.blockState
+		let Axis = BlockStates.getValue($ShaftBlock.AXIS).toString()
 
-// —— 传送带连锁套壳 ——
-BlockEvents.rightClicked("create:belt", (event) => {
-	let { player, item, block, level } = event
-
-	if (player === null || player.isShiftKeyDown() || (player.persistentData.Alt !== "true" && player.persistentData.Alt !== 1)) {
-		return
-	}
-
-	if (!BeltCasing.some((i) => i === item.id)) {
-		return
-	}
-
-	player.swing()
-
-	let limit = 32
-	let blockStates = block.blockState
-	let part = blockStates.getValue($BeltBlock.PART).toString()
-	let horizontalFacing = blockStates.getValue($BeltBlock.HORIZONTAL_FACING).toString()
-	let slope = blockStates.getValue($BeltBlock.SLOPE).toString()
-
-	let axisY = slope !== "HORIZONTAL"
-
-	let toEndblock = block								
-	let toEndPos = [0, 0, 0]
-	let toEndVec = [0, 0, 0]	
-
-	let toStartblock = block
-	let toStartPos = [0, 0, 0]
-	let toStartVec = [0, 0, 0]
-
-	let encaseOrNot = true
-
-	switch (horizontalFacing) {
-		case "east": {
-			toEndVec[0] = 1
-			toStartVec[0] = -1
-			break
-		}
-		case "west": {
-			toEndVec[0] = -1
-			toStartVec[0] = 1
-			break
-		}
-		case "south": {
-			toEndVec[2] = 1
-			toStartVec[2] = -1
-			break
-		}
-		case "north": {
-			toEndVec[2] = -1
-			toStartVec[2] = 1
-			break
-		}
-	}
-
-	if (axisY) {
-		switch (slope) {
-			case "UPWARD": {
+		let toEndblock = block
+		let toEndBlockStates = 0
+		let toEndPos = [0, 0, 0]
+		let toEndVec = [0, 0, 0]
+		let toStartblock = block
+		let toStartBlockStates = 0
+		let toStartPos = [0, 0, 0]
+		let toStartVec = [0, 0, 0]
+		switch (Axis) {
+			case 'x':
+				toEndVec[0] = 1
+				toStartVec[0] = -1
+				break
+			case 'y':
 				toEndVec[1] = 1
 				toStartVec[1] = -1
 				break
-			}
-			case "DOWNWARD": {
-				toEndVec[1] = -1
-				toStartVec[1] = 1
+			case 'z':
+				toEndVec[2] = 1
+				toStartVec[2] = -1
 				break
-			}
 		}
-	}
-
-	if (part !== "END") {
+		//遍历至末端
 		for (let i = 0; i < limit; i++) {
 			toEndPos[0] += toEndVec[0]
 			toEndPos[1] += toEndVec[1]
 			toEndPos[2] += toEndVec[2]
-
 			toEndblock = block.offset(toEndPos[0], toEndPos[1], toEndPos[2])
-
-			if (toEndblock.id !== "create:belt") {
+			if (toEndblock.id != 'create:shaft' && toEndblock.id != shaftCasingType[event.item.id]) {
 				break
 			}
-
-			let states = toEndblock.blockState
-
-			level.setBlockAndUpdate(
-				toEndblock.pos,
-				states.setValue($BeltBlock.CASING, encaseOrNot ? $Boolean.TRUE : $Boolean.FALSE)
-			)
-
-			level.server.runCommandSilent(`data modify block ${toEndblock.pos.x} ${toEndblock.pos.y} ${toEndblock.pos.z} Casing set value "${encaseOrNot ? BeltCasingType[item.id] : "NONE"}"`)
-
-			if (states.getValue($BeltBlock.PART).toString() === "END") {
+			toEndBlockStates = toEndblock.blockState
+			if (toEndBlockStates.getValue($ShaftBlock.AXIS).toString() != Axis) {
 				break
 			}
+			event.level.runCommandSilent(`/setblock ${toEndblock.pos.x} ${toEndblock.pos.y} ${toEndblock.pos.z} ${shaftCasingType[event.item.id]}[axis=${Axis.toLowerCase()}]`)
 		}
-	}
 
-	if (part !== "START") {
+		//遍历至起始端
 		for (let i = 0; i < limit; i++) {
 			toStartPos[0] += toStartVec[0]
 			toStartPos[1] += toStartVec[1]
 			toStartPos[2] += toStartVec[2]
-
 			toStartblock = block.offset(toStartPos[0], toStartPos[1], toStartPos[2])
-
-			if (toStartblock.id !== "create:belt") {
-				break
-			}
-
-			let states = toStartblock.blockState
-
-			level.setBlockAndUpdate(
-				toStartblock.pos,
-				states.setValue($BeltBlock.CASING, encaseOrNot ? $Boolean.TRUE : $Boolean.FALSE)
-			)
-
-			level.server.runCommandSilent(`data modify block ${toStartblock.pos.x} ${toStartblock.pos.y} ${toStartblock.pos.z} Casing set value "${encaseOrNot ? BeltCasingType[item.id] : "NONE"}"`)
-
-			if (states.getValue($BeltBlock.PART).toString() === "START") {
-				break
-			}
+			if (toStartblock.id != 'create:shaft' && toStartblock.id != shaftCasingType[event.item.id]) { break }
+			toStartBlockStates = toStartblock.blockState
+			if (toStartBlockStates.getValue($ShaftBlock.AXIS).toString() != Axis) { break }
+			event.level.runCommandSilent(`/setblock ${toStartblock.pos.x} ${toStartblock.pos.y} ${toStartblock.pos.z} ${shaftCasingType[event.item.id]}[axis=${Axis.toLowerCase()}]`)
 		}
+
 	}
 })
+//传动杆连锁拆壳
+BlockEvents.rightClicked("create:brass_encased_shaft", event => {
+	if (event.player == null) { return }
+	if (!event.player.isShiftKeyDown()) { return }
+	if (event.item.id != "create:wrench") { return }
+	if (event.player.getOffHandItem() !== Item.of("cmi:andesite_mechanism")) { return }
+	event.player.swing()
+	let limit = 64
 
-// By 史莱姆li
+	let block = event.block
+	let BlockStates = block.blockState
+	let Axis = BlockStates.getValue($ShaftBlock.AXIS).toString()
+
+	let toEndblock = block
+	let toEndBlockStates = 0
+	let toEndPos = [0, 0, 0]
+	let toEndVec = [0, 0, 0]
+	let toStartblock = block
+	let toStartBlockStates = 0
+	let toStartPos = [0, 0, 0]
+	let toStartVec = [0, 0, 0]
+	switch (Axis.toString()) {
+		case 'x':
+			toEndVec[0] = 1
+			toStartVec[0] = -1
+			break
+		case 'y':
+			toEndVec[1] = 1
+			toStartVec[1] = -1
+			break
+		case 'z':
+			toEndVec[2] = 1
+			toStartVec[2] = -1
+			break
+	}
+	//遍历至末端
+	for (let i = 0; i < limit; i++) {
+		toEndPos[0] += toEndVec[0]
+		toEndPos[1] += toEndVec[1]
+		toEndPos[2] += toEndVec[2]
+		toEndblock = block.offset(toEndPos[0], toEndPos[1], toEndPos[2])
+		if (toEndblock.id != "create:brass_encased_shaft") {
+			break
+		}
+		toEndBlockStates = toEndblock.blockState
+		if (toEndBlockStates.getValue($ShaftBlock.AXIS).toString() != Axis) {
+			break
+		}
+		event.level.runCommandSilent(`/setblock ${toEndblock.pos.x} ${toEndblock.pos.y} ${toEndblock.pos.z} create:shaft[axis=${Axis.toLowerCase()}]`)
+	}
+	//遍历至起始端
+	for (let i = 0; i < limit; i++) {
+		toStartPos[0] += toStartVec[0]
+		toStartPos[1] += toStartVec[1]
+		toStartPos[2] += toStartVec[2]
+		toStartblock = block.offset(toStartPos[0], toStartPos[1], toStartPos[2])
+		if (toStartblock.id != "create:brass_encased_shaft") { break }
+		toStartBlockStates = toStartblock.blockState
+		if (toStartBlockStates.getValue($ShaftBlock.AXIS).toString() != Axis) { break }
+		event.level.runCommandSilent(`/setblock ${toStartblock.pos.x} ${toStartblock.pos.y} ${toStartblock.pos.z} create:shaft[axis=${Axis.toLowerCase()}]`)
+	}
+})
+BlockEvents.rightClicked("create:andesite_encased_shaft", event => {
+	if (event.player == null) { return }
+	if (!event.player.isShiftKeyDown()) { return }
+	if (event.item.id != "create:wrench") { return }
+	if (event.player.getOffHandItem() !== Item.of("cmi:andesite_mechanism")) { return }
+	event.player.swing()
+	let limit = 64
+
+	let block = event.block
+	let BlockStates = block.blockState
+	let Axis = BlockStates.getValue($ShaftBlock.AXIS).toString()
+
+	let toEndblock = block
+	let toEndBlockStates = 0
+	let toEndPos = [0, 0, 0]
+	let toEndVec = [0, 0, 0]
+	let toStartblock = block
+	let toStartBlockStates = 0
+	let toStartPos = [0, 0, 0]
+	let toStartVec = [0, 0, 0]
+	switch (Axis.toString()) {
+		case 'x':
+			toEndVec[0] = 1
+			toStartVec[0] = -1
+			break
+		case 'y':
+			toEndVec[1] = 1
+			toStartVec[1] = -1
+			break
+		case 'z':
+			toEndVec[2] = 1
+			toStartVec[2] = -1
+			break
+	}
+	//遍历至末端
+	for (let i = 0; i < limit; i++) {
+		toEndPos[0] += toEndVec[0]
+		toEndPos[1] += toEndVec[1]
+		toEndPos[2] += toEndVec[2]
+		toEndblock = block.offset(toEndPos[0], toEndPos[1], toEndPos[2])
+		if (toEndblock.id != "create:andesite_encased_shaft") {
+			break
+		}
+		toEndBlockStates = toEndblock.blockState
+		if (toEndBlockStates.getValue($ShaftBlock.AXIS).toString() != Axis) {
+			break
+		}
+		event.level.runCommandSilent(`/setblock ${toEndblock.pos.x} ${toEndblock.pos.y} ${toEndblock.pos.z} create:shaft[axis=${Axis.toLowerCase()}]`)
+	}
+	//遍历至起始端
+	for (let i = 0; i < limit; i++) {
+		toStartPos[0] += toStartVec[0]
+		toStartPos[1] += toStartVec[1]
+		toStartPos[2] += toStartVec[2]
+		toStartblock = block.offset(toStartPos[0], toStartPos[1], toStartPos[2])
+		if (toStartblock.id != "create:andesite_encased_shaft") { break }
+		toStartBlockStates = toStartblock.blockState
+		if (toStartBlockStates.getValue($ShaftBlock.AXIS).toString() != Axis) { break }
+		event.level.runCommandSilent(`/setblock ${toStartblock.pos.x} ${toStartblock.pos.y} ${toStartblock.pos.z} create:shaft[axis=${Axis.toLowerCase()}]`)
+	}
+})
