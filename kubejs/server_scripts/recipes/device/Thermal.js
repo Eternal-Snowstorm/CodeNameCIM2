@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { thermal_extra, create, thermal } = event.recipes
+	let { thermal_extra, create, thermal, kubejs } = event.recipes
 	let Inc = "cmi:incomplete_thermal_devices"
 
 	/**
@@ -182,7 +182,7 @@ ServerEvents.recipes((event) => {
 		Casing.THERMAL,
 		Mechanism.REINFORCED.COM,
 		"cmi:blitz_unit",
-		"create:whisk"
+		Mechanism.POTION.COM
 	]).id("thermal:machine_brewer")
 
 	// 暴雪单元
@@ -200,4 +200,162 @@ ServerEvents.recipes((event) => {
 		"cmi:blizz_unit",
 		"create:whisk"
 	]).id("thermal_extra:crafting/fluid_mixer")
+
+	// 能源炉
+	// 烧煤的
+	addComponRecipe("thermal:dynamo_stirling", [
+		Mechanism.COIL.COM,
+		Mechanism.STONE.COM,
+		"cmi:thermal_unit",
+		"#forge:plates/invar",
+		"#forge:plates/stone"
+	]).id("thermal:dynamo_stirling")
+	// 烧岩浆的
+	addComponRecipe("thermal:dynamo_magmatic", [
+		Mechanism.COIL.COM,
+		Mechanism.NETHER.COM,
+		"cmi:blaze_unit",
+		"#forge:plates/invar",
+		"minecraft:nether_bricks"
+	]).id("thermal:dynamo_magmatic")
+	// 烧油的
+	addComponRecipe("thermal:dynamo_compression", [
+		Mechanism.COIL.COM,
+		Mechanism.THERMAL.COM,
+		"cmi:basalz_unit",
+		"#forge:plates/invar",
+		"#forge:plates/steel"
+	]).id("thermal:dynamo_compression")
+	// 燃烧我的卡路里
+	addComponRecipe("thermal:dynamo_gourmand", [
+		Mechanism.COIL.COM,
+		Mechanism.PIG_IRON.COM,
+		"cmi:basalz_unit",
+		"#forge:plates/invar",
+		"#forge:plates/bronze"
+	]).id("thermal:dynamo_gourmand")
+	// 烧冰的
+	addComponRecipe("thermal_extra:dynamo_frost", [
+		Mechanism.COIL.COM,
+		Mechanism.COBALT.COM,
+		"cmi:blizz_unit",
+		"#forge:plates/invar",
+		"#forge:plates/silver"
+	]).id("thermal_extra:crafting/dynamo_frost")
+	// 烧宝石的
+	addComponRecipe("thermal:dynamo_lapidary", [
+		Mechanism.COIL.COM,
+		Mechanism.PHOTO.COM,
+		"cmi:blizz_unit",
+		"#forge:plates/invar",
+		"#forge:gems/diamond"
+	]).id("thermal:dynamo_lapidary")
+	// 烧钱的
+	addComponRecipe("thermal:dynamo_numismatic", [
+		Mechanism.COIL.COM,
+		Mechanism.GOLD.COM,
+		"cmi:blitz_unit",
+		"#forge:plates/invar",
+		"#forge:plates/electrum"
+	]).id("thermal:dynamo_numismatic")
+	// 烧附魔书的
+	addComponRecipe("thermal:dynamo_disenchantment", [
+		Mechanism.COIL.COM,
+		Mechanism.ENCHANTED.COM,
+		"cmi:blitz_unit",
+		"#forge:plates/invar",
+		"#forge:storage_blocks/lapis"
+	]).id("thermal:dynamo_disenchantment")
+
+	// 设备
+	// 树脂提取
+	kubejs.shaped("thermal:device_tree_extractor", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE,
+		X: "treetap:tap"
+	}).id("thermal:device_tree_extractor")
+	// 水产捕捞
+	kubejs.shaped("thermal:device_fisher", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE,
+		X: "minecraft:fishing_rod"
+	}).id("thermal:device_fisher")
+	// 蓄水器
+	kubejs.shaped("thermal:device_water_gen", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.COPPER.COM,
+		C: Casing.COPPER,
+		X: "minecraft:bucket"
+	}).id("thermal:device_water_gen")
+	// 堆肥桶
+	kubejs.shaped("thermal:device_composter", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE,
+		X: "minecraft:composter"
+	}).id("thermal:device_composter")
+	// 造石机
+	kubejs.shaped("thermal:device_rock_gen", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE,
+		X: "minecraft:piston"
+	}).id("thermal:device_rock_gen")
+	// 真空漏斗
+	kubejs.shaped("thermal:device_collector", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ENDER.COM,
+		C: Casing.THERMAL,
+		X: "minecraft:hopper"
+	}).id("thermal:device_collector")
+	// 经验聚集
+	kubejs.shaped("thermal:device_xp_condenser", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ENCHANTED.COM,
+		C: Casing.THERMAL,
+		X: "thermal:xp_crystal"
+	}).id("thermal:device_xp_condenser")
+	// 销毁器
+	kubejs.shaped("thermal:device_nullifier", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE,
+		X: "minecraft:lava_bucket"
+	}).id("thermal:device_nullifier")
+	// 药水雾化
+	kubejs.shaped("thermal:device_potion_diffuser", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ENCHANTED.COM,
+		C: Casing.THERMAL,
+		X: Mechanism.POTION.COM
+	}).id("thermal:device_potion_diffuser")
 })
