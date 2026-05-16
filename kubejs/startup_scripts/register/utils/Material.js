@@ -129,7 +129,7 @@ Material.prototype.slurry = function () {
 }
 /**
  * 
- * @param {String} model 
+ * @param {ResourceLocation_} model 
  * @returns 
  */
 Material.prototype.block = function (model) {
