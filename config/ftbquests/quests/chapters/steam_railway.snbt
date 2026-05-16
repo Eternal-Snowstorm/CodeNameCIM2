@@ -622,8 +622,8 @@
 				type: "item"
 			}]
 			title: "蒸汽"
-			x: -2.5d
-			y: -3.5d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6FE26470A8A3B7B1"]
@@ -640,8 +640,8 @@
 				title: "硫粉"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.5d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -654,8 +654,8 @@
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.5d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -670,8 +670,8 @@
 				item: "cmi:cured_rubber_bucket"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.5d
+			x: -0.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4C2F1D5F0FAA50F3"]
@@ -681,8 +681,8 @@
 				item: "thermal:cured_rubber"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.5d
+			x: 2.0d
+			y: -6.5d
 		}
 	]
 	title: "汽鸣铁道"

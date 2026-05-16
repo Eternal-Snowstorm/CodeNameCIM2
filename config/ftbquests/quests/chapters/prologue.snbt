@@ -316,7 +316,7 @@
 						}
 						{
 							level: 1
-							name: "tconstruct:searing"
+							name: "nebula_tinker:shadow"
 						}
 						{
 							level: 1
@@ -352,12 +352,12 @@
 						upgrades: -78
 					}
 					tic_stats: {
-						"tconstruct:attack_damage": 16.689377f
-						"tconstruct:attack_speed": 2.25f
+						"tconstruct:attack_damage": 17.0775f
+						"tconstruct:attack_speed": 2.05f
 						"tconstruct:block_amount": 10.0f
-						"tconstruct:durability": 2717.5503f
+						"tconstruct:durability": 1988.9102f
 						"tconstruct:harvest_tier": "minecraft:netherite"
-						"tconstruct:mining_speed": 14.625001f
+						"tconstruct:mining_speed": 15.374999f
 						"tconstruct:overslime": 412.5f
 					}
 					tic_upgrades: [

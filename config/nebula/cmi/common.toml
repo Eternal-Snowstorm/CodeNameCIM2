@@ -101,9 +101,9 @@
 	[general.solar_boilder]
 		#Water consumption and steam production per tick
 		#type: int
-		#default: 4
+		#default: 2
 		#Range: 1 ~ 1024
-		bronze_pre_tick_consum_and_production = 4
+		bronze_pre_tick_consum_and_production = 2
 		#Boiler's Fluid Capacity
 		#type: int
 		#default: 4000
@@ -111,9 +111,9 @@
 		bronze_boiler_capacity = 4000
 		#Water consumption and steam production per tick
 		#type: int
-		#default: 8
+		#default: 4
 		#Range: 1 ~ 1024
-		cast_iron_pre_tick_consum_and_production = 8
+		cast_iron_pre_tick_consum_and_production = 4
 		#Boiler's Fluid Capacity
 		#type: int
 		#default: 8000
@@ -121,9 +121,9 @@
 		cast_iron_boiler_capacity = 8000
 		#Water consumption and steam production per tick
 		#type: int
-		#default: 12
+		#default: 8
 		#Range: 1 ~ 1024
-		steel_pre_tick_consum_and_production = 12
+		steel_pre_tick_consum_and_production = 8
 		#Boiler's Fluid Capacity
 		#type: int
 		#default: 12000
