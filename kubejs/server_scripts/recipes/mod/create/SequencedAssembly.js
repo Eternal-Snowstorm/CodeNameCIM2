@@ -242,7 +242,7 @@ ServerEvents.recipes((event) => {
 	// 神秘戴尔芒德
 	new SequencedAssemblyRecipe(Seq.DIAMOND_FROM_COAL)
 		.pressing()
-		.loop(1145145)
+		.loop(114514)
 		.build()
 
 
