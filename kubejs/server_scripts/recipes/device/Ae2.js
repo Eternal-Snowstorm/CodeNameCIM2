@@ -1,5 +1,12 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, thermal_extra } = event.getRecipes()
+	const DRIVE = /^ae2:(?!.*portable)(?!.*spatial).*cell(?!.*workbench$).+$/;
+	event.remove([
+		{
+			type: "minecraft:crafting_shaped",
+			output: DRIVE
+		}
+	])
 
 	// ME物品元件外壳
 	kubejs.shaped("2x ae2:item_cell_housing", [
@@ -41,7 +48,7 @@ ServerEvents.recipes((event) => {
 	]).id("ae2:tools/network_tool")
 
 	// 机壳
-	thermal_extra.component_assembly("2x cmi:smart_casing", [
+	thermal_extra.component_assembly("4x cmi:smart_casing", [
 		"#forge:plates/iron",
 		"#forge:plates/iron",
 		"#forge:plates/silver",
@@ -102,7 +109,7 @@ ServerEvents.recipes((event) => {
 	]).id("ae2:network/cells/item_storage_components_cell_256k_part")
 
 	// 样板
-	kubejs.shaped("2x ae2:blank_pattern", [
+	kubejs.shaped("4x ae2:blank_pattern", [
 		"PGP",
 		"GMG",
 		"PGP"
@@ -125,12 +132,13 @@ ServerEvents.recipes((event) => {
 
 	// 充能器
 	kubejs.shaped("ae2:charger", [
-		"P P",
+		"PAP",
 		" M ",
-		"P P"
+		"PAP"
 	], {
 		P: "#forge:plates/iron",
-		M: Mechanism.COIL.COM
+		M: Mechanism.COIL.COM,
+		A: "#forge:gems/amethyst"
 	}).id("ae2:network/blocks/crystal_processing_charger")
 
 	// 高级充能器
@@ -139,16 +147,17 @@ ServerEvents.recipes((event) => {
 		"CMC",
 		"PCP"
 	], {
-		P: "#forge:plates/iron",
-		C: Mechanism.COIL.COM,
-		M: Mechanism.SMART.COM
+		P: "#forge:dusts/emerald",
+		C: Mechanism.SMART.COM,
+		M: "ae2:charger"
 	}).id("expatternprovider:ex_charger")
 
 	// 无线发信
 	thermal_extra.component_assembly("ae2:wireless_receiver", [
 		"ae2:fluix_pearl",
 		"create:transmitter",
-		"#forge:plates/iron"
+		"#forge:plates/iron",
+		Mechanism.ENDER.COM
 	]).id("ae2:network/wireless_part")
 
 	thermal_extra.component_assembly("ae2:wireless_access_point", [
@@ -238,5 +247,111 @@ ServerEvents.recipes((event) => {
 		"ae2:annihilation_core",
 		"ae2:formation_core"
 	]).id("ae2:network/parts/monitors_conversion")
+
+	// 电池
+	thermal_extra.component_assembly("ae2:energy_cell", [
+		Casing.SMART,
+		"#forge:dusts/fluix",
+		"#ae2:all_certus_quartz"
+	]).id("ae2:network/blocks/energy_energy_cell")
+
+	// 物质聚合器
+	thermal_extra.component_assembly("ae2:condenser", [
+		Casing.SMART,
+		"#forge:dusts/fluix",
+	]).id("ae2:network/blocks/io_condenser")
+
+	// 能源接收器
+	kubejs.shaped("ae2:energy_acceptor", [
+		" AA",
+		"AC ",
+		" AA"
+	], {
+		A: "#forge:wires/copper",
+		C: Casing.SMART
+	}).id("ae2:network/blocks/energy_energy_acceptor")
+
+	// ME接口
+	thermal_extra.component_assembly("ae2:interface", [
+		Casing.SMART,
+		"ae2:annihilation_core",
+		"ae2:formation_core"
+	]).id("ae2:network/blocks/interfaces_interface")
+
+	// 样板供应器
+	kubejs.shapeless("ae2:pattern_provider", [
+		"#ae2:interface",
+		"minecraft:crafting_table"
+	]).id("ae2:network/blocks/pattern_providers_interface")
+
+	// ME箱子
+	thermal_extra.component_assembly("ae2:chest", [
+		Casing.SMART,
+		"ae2:terminal",
+		"#ae2:glass_cable"
+	]).id("ae2:network/blocks/storage_chest")
+
+	// 卡
+	thermal_extra.component_assembly("4x ae2:basic_card", [
+		"#forge:plates/iron",
+		Mechanism.SMART.COM,
+		"#forge:ingots/gold"
+	]).id("ae2:materials/basiccard")
+
+	thermal_extra.component_assembly("4x ae2:advanced_card", [
+		"#forge:plates/silver",
+		Mechanism.SMART.COM,
+		"#forge:gems/diamond"
+	]).id("ae2:materials/advancedcard")
+
+	thermal_extra.component_assembly("ae2:wireless_booster", [
+		"#forge:plates/silver",
+		Mechanism.ENDER.COM,
+		"#forge:dusts/fluix"
+	]).id("ae2:network/wireless_booster")
+
+	// ME IO端口
+	thermal_extra.component_assembly("ae2:io_port", [
+		"ae2:drive",
+		Mechanism.SMART.COM,
+		"#ae2:glass_cable"
+	]).id("ae2:network/blocks/io_port")
+
+	// 催生器
+	thermal_extra.component_assembly("ae2:growth_accelerator", [
+		Casing.SMART,
+		"ae2:fluix_block",
+		"#ae2:glass_cable"
+	]).id("ae2:network/blocks/crystal_processing_growth_accelerator")
+
+	// 合成单元
+	thermal_extra.component_assembly("ae2:crafting_unit", [
+		Casing.SMART,
+		Mechanism.SMART.COM
+	]).id("ae2:network/crafting/cpu_crafting_unit")
+
+	// 并行处理单元
+	kubejs.shapeless("ae2:crafting_accelerator", [
+		"ae2:crafting_unit",
+		Mechanism.SMART.COM
+	]).id("ae2:network/crafting/cpu_crafting_accelerator")
+
+	// 分子装配室
+	thermal_extra.component_assembly("ae2:molecular_assembler", [
+		Casing.SMART,
+		"ae2:annihilation_core",
+		"ae2:formation_core",
+		"minecraft:crafting_table",
+		"ae2:quartz_glass"
+	]).id("ae2:network/crafting/molecular_assembler")
+
+	// P2P
+	thermal_extra.component_assembly("2x ae2:me_p2p_tunnel", [
+		Mechanism.SMART.COM,
+		"#ae2:glass_cable",
+		"#forge:plates/silver",
+		"#forge:gems/fluix"
+	]).id("ae2:network/parts/tunnels_me")
+
 
 })
