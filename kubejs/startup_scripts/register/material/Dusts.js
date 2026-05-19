@@ -54,6 +54,7 @@ StartupEvents.registry("item", (event) => {
 	addAloneDustItem("lime")
 	addAloneDustItem("oil_shale")
 	addAloneDustItem("void")
+	addAloneDustItem("deposit")
 
 	// 三硝基甲苯
 	addNonDustItem("trinitrotoluene")
