@@ -154,6 +154,10 @@ StartupEvents.registry("item", (event) => {
 	// 铁氧体磁芯	
 	addMaterial("ferrit_core")
 
+	// 矿藏粉末	
+	addMaterial("deposit_dust")
+		.tag("forge:dusts/deposit")
+
 	// 羊皮纸
 	addItem("parchment")
 		.texture(Cmi.loadResource("item/material/parchment/parchment"))
