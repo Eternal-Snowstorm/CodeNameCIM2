@@ -169,7 +169,7 @@
 	#Whether to display health bar on self.
 	showOnSelf = true
 	#Whether to display health bar on players.
-	showOnPlayers = true
+	showOnPlayers = false
 	#Whether to display health bar on bosses.
 	showOnBosses = true
 	#Whether to display health bar on armor stands.

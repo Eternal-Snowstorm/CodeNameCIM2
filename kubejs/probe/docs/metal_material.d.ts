@@ -71,7 +71,6 @@ interface Material {
 	molten(): this
 }
 
-
 declare class Material implements Material {
 	constructor(name: string, level: MiningLevel)
 }

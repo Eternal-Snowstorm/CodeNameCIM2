@@ -25,7 +25,7 @@ StartupEvents.recipeSchemaRegistry((event) => {
 	 * 创建一个单字段的Schema组件(如input, output, heat_requirement等)
 	 *
 	 * @template {keyof Special.RecipeComponents} T
-	 * @param {T} type 组件类型(由KubeJS自身提供，如 "ItemInput")
+	 * @param {T} type 组件类型(由KubeJS自身提供,如 "ItemInput")
 	 * @param {string} key 字段名(如"input"和"output"等)
 	 * @param {boolean|string|number} [optionalOrDefault]
 	 * 如果为 true => 字段可选
