@@ -1,6 +1,13 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:cmi:handheld_crafting_table",
+    "#item:forge:workbenches",
+    "item:minecraft:birch_fence",
+    "item:tconstruct:crafting_station",
+    "item:minecraft:crafting_table",
+    "item:cmi:water_well",
+    "item:ad_astra:wrench",
     "item:cmi:space_elevator_base_console",
     "item:cmi:test_coke_oven",
     "item:cmi:steam_hammer",
@@ -11,16 +18,15 @@
       "uid": "nebula_tinker:abuser"
     },
     "item:create:brass_casing",
-    "item:cmi:water_well",
     {
       "type": "list",
       "amount": 50,
       "ingredients": [
-        "fluid:ad_astra:cryo_fuel",
+        "fluid:thermal:refined_fuel",
+        "fluid:tconstruct:blazing_blood",
         "fluid:createdieselgenerators:gasoline",
         "fluid:minecraft:lava",
-        "fluid:tconstruct:blazing_blood",
-        "fluid:thermal:refined_fuel",
+        "fluid:ad_astra:cryo_fuel",
         "#fluid:forge:fuel"
       ]
     },
@@ -65,10 +71,10 @@
     "tags": {},
     "resolutions": {},
     "disabled": [
-      "jei:/railways/mixing/palettes/dyeing/pink_iron_wrapped_locometal_boiler",
-      "jei:/railways/mixing/palettes/dyeing/brown_slashed_locometal",
+      "jei:/railways/mixing/palettes/dyeing/lime_iron_wrapped_locometal_boiler",
       "jei:/railways/mixing/palettes/dyeing/pine_green_iron_wrapped_locometal_boiler",
-      "jei:/railways/mixing/palettes/dyeing/lime_iron_wrapped_locometal_boiler"
+      "jei:/railways/mixing/palettes/dyeing/pink_iron_wrapped_locometal_boiler",
+      "jei:/railways/mixing/palettes/dyeing/brown_slashed_locometal"
     ]
   },
   "hidden_stacks": [

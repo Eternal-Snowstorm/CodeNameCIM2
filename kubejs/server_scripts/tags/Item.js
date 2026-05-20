@@ -36,6 +36,13 @@ ServerEvents.tags("item", (event) => {
 			.add("cmi:colorful_mechanism")
 	})
 
+	event.get("forge:workbenches")
+		.add("immersiveengineering:craftingtable")
+		.add("edenring:auritis_crafting_table")
+		.add("edenring:balloon_mushroom_crafting_table")
+		.add("edenring:pulse_tree_crafting_table")
+		.add("edenring:brain_tree_crafting_table")
+
 	event.get("forge:stripped_logs/rubberwood")
 		.add([
 			"thermal:stripped_rubberwood_wood",
