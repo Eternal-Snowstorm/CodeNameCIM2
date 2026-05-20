@@ -1,7 +1,45 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:cmi:space_elevator_base_console",
+    "item:cmi:test_coke_oven",
+    "item:cmi:steam_hammer",
+    "item:custommachinery:custom_machine_item",
+    "item:minecraft:bamboo_slab",
+    {
+      "type": "jemi",
+      "uid": "nebula_tinker:abuser"
+    },
+    "item:create:brass_casing",
     "item:cmi:water_well",
+    {
+      "type": "list",
+      "amount": 50,
+      "ingredients": [
+        "fluid:ad_astra:cryo_fuel",
+        "fluid:createdieselgenerators:gasoline",
+        "fluid:minecraft:lava",
+        "fluid:tconstruct:blazing_blood",
+        "fluid:thermal:refined_fuel",
+        "#fluid:forge:fuel"
+      ]
+    },
+    {
+      "type": "fluid",
+      "id": "minecraft:lava",
+      "amount": 100
+    },
+    "item:cmi:stone_plate",
+    "item:cmi:flint_hammer{Damage:0}",
+    "item:mbtool:mbtool",
+    "item:immersiveindustry:crucible",
+    {
+      "type": "jemi",
+      "uid": "tconstruct:smite"
+    },
+    "item:cmi:steel_ingot",
+    "item:minecraft:obsidian",
+    "item:minecraft:torch",
     "item:minecraft:water_bucket",
     "item:minecraft:oak_stairs",
     "item:cmi:blood_slime_ball",
@@ -9,7 +47,6 @@
     "item:minecraft:crying_obsidian",
     "item:cmi:tier_1_rocket_nose_cone",
     "item:cmi:tier_1_rocket_fin",
-    "item:cmi:steel_ingot",
     [
       {
         "type": "fluid",
@@ -27,7 +64,14 @@
     "added": [],
     "tags": {},
     "resolutions": {},
-    "disabled": []
+    "disabled": [
+      "jei:/railways/mixing/palettes/dyeing/pink_iron_wrapped_locometal_boiler",
+      "jei:/railways/mixing/palettes/dyeing/brown_slashed_locometal",
+      "jei:/railways/mixing/palettes/dyeing/pine_green_iron_wrapped_locometal_boiler",
+      "jei:/railways/mixing/palettes/dyeing/lime_iron_wrapped_locometal_boiler"
+    ]
   },
-  "hidden_stacks": []
+  "hidden_stacks": [
+    "item:cmi:diamond_hammer{Damage:0}"
+  ]
 }

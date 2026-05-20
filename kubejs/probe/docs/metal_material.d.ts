@@ -67,7 +67,7 @@ interface Material {
 	dirtySlurry(): this
 	slurry(): this
 	prism(): this
-	block(model?: ResourceLocation_): this
+	block(model?: string): this
 	molten(): this
 }
 
