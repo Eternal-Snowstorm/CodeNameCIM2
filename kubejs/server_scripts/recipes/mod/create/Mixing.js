@@ -91,13 +91,13 @@ ServerEvents.recipes((event) => {
 
 	// 晶体催生剂
 	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
-		Fluid.of("sliceanddice:fertilizer", 500),
+		Fluid.of("minecraft:water", 500),
 		"#cmi:crystals",
 		"16x #forge:crops"
 	]).heated()
 
 	create.mixing(Fluid.of("cmi:crystal_catalyt", 1000), [
-		Fluid.of("sliceanddice:fertilizer", 500),
+		Fluid.of("minecraft:water", 500),
 		"#cmi:crystals",
 		"32x #forge:seeds"
 	]).heated()

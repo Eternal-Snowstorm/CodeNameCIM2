@@ -1,29 +1,24 @@
 ServerEvents.recipes((event) => {
-	let removedRecipeIds = [
-		"immersiveengineering:metalpress/bullet_casing",
-		"immersiveengineering:crafting/empty_casing",
-		"immersiveengineering:bottling/empty_shell",
-		"immersiveengineering:crafting/empty_shell",
-		"immersiveengineering:metalpress/melon",
-		"farmersdelight:integration/immersiveengineering/metalpress/pumpkin",
-		"farmersdelight:integration/immersiveengineering/cloche/rice",
-		"immersiveengineering:blueprint/mold_packing_4",
-		"immersiveengineering:blueprint/mold_packing_9",
-		"immersiveengineering:blueprint/mold_unpacking",
-		"immersiveengineering:blueprint/mold_bullet_casing",
-		"immersiveengineering:blueprint/mold_wire",
-		"immersiveengineering:blueprint/mold_rod",
-		"immersiveengineering:blueprint/mold_gear",
-		"immersiveengineering:blueprint/mold_plate",
-		"immersiveengineering:crafting/cokebrick",
-		"immersiveengineering:crafting/redstone_acid",
-		"immersiveengineering:crafting/sawdust",
-		"immersiveindustry:chemical",
-		"immersiveengineering:crafting/paper_from_sawdust"
-	]
-	removedRecipeIds.forEach((id) => {
-		event.remove({
-			id: id
-		})
-	})
+	removeRecipe(event, [
+		"jei:/immersiveengineering/metalpress/bullet_casing",
+		"jei:/immersiveengineering/crafting/empty_casing",
+		"jei:/immersiveengineering/bottling/empty_shell",
+		"jei:/immersiveengineering/crafting/empty_shell",
+		"jei:/immersiveengineering/metalpress/melon",
+		"jei:/farmersdelight/integration/immersiveengineering/metalpress/pumpkin",
+		"jei:/farmersdelight/integration/immersiveengineering/cloche/rice",
+		"jei:/immersiveengineering/blueprint/mold_packing_4",
+		"jei:/immersiveengineering/blueprint/mold_packing_9",
+		"jei:/immersiveengineering/blueprint/mold_unpacking",
+		"jei:/immersiveengineering/blueprint/mold_bullet_casing",
+		"jei:/immersiveengineering/blueprint/mold_wire",
+		"jei:/immersiveengineering/blueprint/mold_rod",
+		"jei:/immersiveengineering/blueprint/mold_gear",
+		"jei:/immersiveengineering/blueprint/mold_plate",
+		"jei:/immersiveengineering/crafting/cokebrick",
+		"jei:/immersiveengineering/crafting/redstone_acid",
+		"jei:/immersiveengineering/crafting/sawdust",
+		"jei:/immersiveindustry/chemical",
+		"jei:/immersiveengineering/crafting/paper_from_sawdust"
+	])
 })

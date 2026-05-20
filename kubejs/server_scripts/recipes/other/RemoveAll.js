@@ -1,12 +1,7 @@
 ServerEvents.recipes((event) => {
-	let removeRecipeIds = [
-		"treetap:water_from_crying_obsidian"
-	]
-	removeRecipeIds.forEach((id) => {
-		event.remove({
-			id: id
-		})
-	})
+	removeRecipe(event, [
+		"jei:/treetap/water_from_crying_obsidian"
+	])
 
 	let removedMods = [
 		"steampowered"

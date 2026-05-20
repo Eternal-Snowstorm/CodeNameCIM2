@@ -42,6 +42,15 @@ ServerEvents.tags("item", (event) => {
 			"thermal:stripped_rubberwood_log"
 		])
 
+	event.get("forge:fermentable")
+		.add("minecraft:melon_slice")
+		.add("minecraft:glow_berries")
+		.add("minecraft:apple")
+		.add("#forge:crops/tomato")
+		.add("minecraft:beetroot")
+		.add("minecraft:sweet_berry")
+		.add("#forge:crops/potato")
+
 	event.get("create:copycats")
 		.add([
 			"create:copycat_panel",

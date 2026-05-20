@@ -1,0 +1,33 @@
+{
+  "favorites": [],
+  "lookup_history": [
+    "item:cmi:water_well",
+    "item:minecraft:water_bucket",
+    "item:minecraft:oak_stairs",
+    "item:cmi:blood_slime_ball",
+    "item:cmi:grass_fiber",
+    "item:minecraft:crying_obsidian",
+    "item:cmi:tier_1_rocket_nose_cone",
+    "item:cmi:tier_1_rocket_fin",
+    "item:cmi:steel_ingot",
+    [
+      {
+        "type": "fluid",
+        "id": "cmi:sea_water",
+        "amount": 2147483647
+      },
+      "item:cmi:sea_water_bucket"
+    ],
+    "item:minecraft:spruce_wood",
+    "item:cmi:togni_leets",
+    "item:vintageimprovements:small_zinc_spring"
+  ],
+  "craft_history": [],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}
