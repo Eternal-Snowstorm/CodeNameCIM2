@@ -46,7 +46,7 @@ ServerEvents.highPriorityData((event) => {
 	CmiMetalRegistry.getAll().forEach((metal) => {
 		/**
 		 * 声明所需变量
-			 * @type {String} material 材料ID
+		 * @type {String} material 材料ID
 		 * @param {String} tag 当前正在遍历的物品tag
 		 * @param {Set} ids tag下所有物品id
 		 * @param {String} currentNamespace 当前物品的命名空间
@@ -74,7 +74,7 @@ ServerEvents.highPriorityData((event) => {
 	CmiMetalRegistry.getAll().forEach((metal) => {
 		/**
 		 * 声明所需变量
-			 * @type {String} material 材料ID
+		 * @type {String} material 材料ID
 		 * @param {String} tag 当前正在遍历的物品tag
 		 * @param {Set} ids tag下所有物品id
 		 * @param {String} currentNamespace 当前物品的命名空间
