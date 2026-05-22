@@ -130,3 +130,14 @@
 		#Range: 1 ~ 100000000
 		steel_boiler_capacity = 12000
 
+	#Stack Storage settings
+	[general.stack_storage]
+		#Whether the cmi:no_stack_upgrade tag should disable storage stack scaling for matching items
+		#type: boolean
+		#default: true
+		no_stack_upgrade_enabled = true
+		#Whether the cmi:no_storage_stack tag should force the in-storage stack limit of matching items to 1
+		#type: boolean
+		#default: true
+		no_storage_stack_enabled = true
+

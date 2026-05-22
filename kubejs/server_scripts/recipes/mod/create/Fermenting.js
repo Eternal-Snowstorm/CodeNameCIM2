@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 	createdieselgenerators.basin_fermenting(biodiesel.withAmount(100), [
 		"8x minecraft:sugar",
 		Fluid.of("immersiveengineering:creosote", 100)
-	]).processingTime(20 * 10).heatRequirement("grilled")
+	]).processingTime(20 * 10).heatRequirement(CmiHeatLevel.GRILLED)
 
 	// 血液
 	createdieselgenerators.basin_fermenting(Fluid.of("cmi:blood", 250), [

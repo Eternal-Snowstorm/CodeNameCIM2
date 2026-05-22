@@ -1,6 +1,12 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:thermal:nickel_gear",
+    "item:farmersdelight:cooking_pot",
+    "item:vintageimprovements:small_constantan_spring",
+    "item:thermal:raw_nickel",
+    "item:thermal:nickel_ingot",
+    "item:thermal:nickel_coin",
     "item:cmi:handheld_crafting_table",
     "#item:forge:workbenches",
     "item:minecraft:birch_fence",
@@ -22,9 +28,9 @@
       "type": "list",
       "amount": 50,
       "ingredients": [
+        "fluid:createdieselgenerators:gasoline",
         "fluid:thermal:refined_fuel",
         "fluid:tconstruct:blazing_blood",
-        "fluid:createdieselgenerators:gasoline",
         "fluid:minecraft:lava",
         "fluid:ad_astra:cryo_fuel",
         "#fluid:forge:fuel"
@@ -71,10 +77,10 @@
     "tags": {},
     "resolutions": {},
     "disabled": [
+      "jei:/railways/mixing/palettes/dyeing/brown_slashed_locometal",
       "jei:/railways/mixing/palettes/dyeing/lime_iron_wrapped_locometal_boiler",
       "jei:/railways/mixing/palettes/dyeing/pine_green_iron_wrapped_locometal_boiler",
-      "jei:/railways/mixing/palettes/dyeing/pink_iron_wrapped_locometal_boiler",
-      "jei:/railways/mixing/palettes/dyeing/brown_slashed_locometal"
+      "jei:/railways/mixing/palettes/dyeing/pink_iron_wrapped_locometal_boiler"
     ]
   },
   "hidden_stacks": [
