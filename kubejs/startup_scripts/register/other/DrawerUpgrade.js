@@ -19,7 +19,7 @@ StartupEvents.registry("item", (event) => {
 		const FLUID_MULTIPLIER = ITEM_MULTIPLIER * 0.5
 		const CONTROLLER_MULTIPLIER = FLUID_MULTIPLIER * 0.5
 
-		const REGISTER_ID = `${Cmi.MODID}:${name}_upgrade`
+		const REGISTER_ID = Cmi.loadResource(`${name}_upgrade`)
 
 		let drawerUpgradeBuilder =
 			event.createCustom(REGISTER_ID, () => {
