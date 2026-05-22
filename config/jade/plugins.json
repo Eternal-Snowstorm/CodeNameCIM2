@@ -150,7 +150,8 @@
     "common": true
   },
   "cmi": {
-    "common": true
+    "common": true,
+    "space_elevator_cargo_fluid": true
   },
   "treetap": {
     "tap": true
