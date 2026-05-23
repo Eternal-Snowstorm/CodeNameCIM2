@@ -33,6 +33,10 @@ ItemEvents.modification((event) => {
 	modifyItemBurnTime("mekanism:block_charcoal", 4 * 9)
 	modifyItemBurnTime("thermal:charcoal_block", 4 * 9)
 
+	event.modify("minecraft:ender_pearl", (modify) => {
+		modify.setMaxStackSize(64)
+	})
+
 	// 奶酪统一处理
 	event.modify("ad_astra:cheese_block", (modify) => {
 		modify.setFoodProperties((builder) => {
