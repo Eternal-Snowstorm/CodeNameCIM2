@@ -83,6 +83,7 @@ ItemEvents.modification((event) => {
 
 	if (FestivalUtils.isAprilFoolsDay()) {
 		event.modify("mekanism:alloy_infused", (modify) => {
+			modify.setNameKey("item.cmi.sweet_berry_hard_candy")
 			modify.setFoodProperties((builder) => {
 				builder.hunger(2)
 					.saturation(0.25)
@@ -92,6 +93,7 @@ ItemEvents.modification((event) => {
 		})
 
 		event.modify("mekanism:alloy_reinforced", (modify) => {
+			modify.setNameKey("item.cmi.mint_hard_candy")
 			modify.setFoodProperties((builder) => {
 				builder.hunger(2)
 					.saturation(0.25)
@@ -101,6 +103,7 @@ ItemEvents.modification((event) => {
 		})
 
 		event.modify("mekanism:alloy_atomic", (modify) => {
+			modify.setNameKey("item.cmi.grape_hard_candy")
 			modify.setFoodProperties((builder) => {
 				builder.hunger(2)
 					.saturation(0.25)
@@ -110,6 +113,7 @@ ItemEvents.modification((event) => {
 		})
 
 		event.modify("cmi:enriched_alloy", (modify) => {
+			modify.setNameKey("item.cmi.apple_hard_candy")
 			modify.setFoodProperties((builder) => {
 				builder.hunger(2)
 					.saturation(0.25)
