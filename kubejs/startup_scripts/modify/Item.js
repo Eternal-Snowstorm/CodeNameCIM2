@@ -1,4 +1,7 @@
 ItemEvents.modification((event) => {
+	let month = LocalDateTime.now().getMonthValue()
+	let day = LocalDateTime.now().getDayOfMonth()
+
 	/**
 	 *
 	 * @param {Internal.Item} item 修改的物品
@@ -32,30 +35,30 @@ ItemEvents.modification((event) => {
 
 	// 奶酪统一处理
 	event.modify("ad_astra:cheese_block", (modify) => {
-		modify.setFoodProperties((food) => {
-			food.hunger(4)
+		modify.setFoodProperties((builder) => {
+			builder.hunger(4)
 				.saturation(1)
 		})
 	})
 
 	event.modify("tconstruct:cheese_ingot", (modify) => {
-		modify.setFoodProperties((food) => {
-			food.hunger(4)
+		modify.setFoodProperties((builder) => {
+			builder.hunger(4)
 				.saturation(1)
 		})
 	})
 
 	event.modify("tconstruct:cheese_block", (modify) => {
-		modify.setFoodProperties((food) => {
-			food.hunger(4)
+		modify.setFoodProperties((builder) => {
+			builder.hunger(4)
 				.saturation(1)
 		})
 	})
 
 	// 烈焰蛋糕
 	event.modify("create:blaze_cake", (modify) => {
-		modify.setFoodProperties((food) => {
-			food.hunger(10)
+		modify.setFoodProperties((builder) => {
+			builder.hunger(10)
 				.saturation(1.2)
 				.eaten((event) => {
 					let { player } = event
@@ -70,11 +73,49 @@ ItemEvents.modification((event) => {
 
 	// 甘蔗
 	event.modify("minecraft:sugar_cane", (modify) => {
-		modify.setFoodProperties((food) => {
-			food.hunger(2)
+		modify.setFoodProperties((builder) => {
+			builder.hunger(2)
 				.saturation(2)
 				.alwaysEdible()
 				.fastToEat()
 		})
 	})
+
+	if (FestivalUtils.isAprilFoolsDay()) {
+		event.modify("mekanism:alloy_infused", (modify) => {
+			modify.setFoodProperties((builder) => {
+				builder.hunger(2)
+					.saturation(0.25)
+					.alwaysEdible()
+					.fastToEat()
+			})
+		})
+
+		event.modify("mekanism:alloy_reinforced", (modify) => {
+			modify.setFoodProperties((builder) => {
+				builder.hunger(2)
+					.saturation(0.25)
+					.alwaysEdible()
+					.fastToEat()
+			})
+		})
+
+		event.modify("mekanism:alloy_atomic", (modify) => {
+			modify.setFoodProperties((builder) => {
+				builder.hunger(2)
+					.saturation(0.25)
+					.alwaysEdible()
+					.fastToEat()
+			})
+		})
+
+		event.modify("cmi:enriched_alloy", (modify) => {
+			modify.setFoodProperties((builder) => {
+				builder.hunger(2)
+					.saturation(0.25)
+					.alwaysEdible()
+					.fastToEat()
+			})
+		})
+	}
 })

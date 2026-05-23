@@ -97,7 +97,7 @@
 		#Range: -63 ~ 319
 		min_work_height = -63
 
-	#Solar Boiler setting
+	#Solar Boiler settings
 	[general.solar_boilder]
 		#Water consumption and steam production per tick
 		#type: int
