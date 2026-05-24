@@ -42,6 +42,7 @@ hs_err*
 /fabric*
 /icon-exports-*
 ESM
+emi.json
 XaeroWaypoints*
 /oei
 /oeb
