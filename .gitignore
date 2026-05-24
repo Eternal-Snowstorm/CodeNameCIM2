@@ -130,3 +130,4 @@ config/nebula/value.txt
 !config/ModernUI/
 !config/immediatelyfast.json
 !config/mantle-client.toml
+!config/emi.css
