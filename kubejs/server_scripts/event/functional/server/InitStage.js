@@ -2,7 +2,8 @@ BlockEvents.broken((event) => {
 	let { player } = event
 
 	if (!player.getStages().has("init") && !DebugUserManager.isDebugger(player)) {
-		player.tell(Component.literal("NOT!"))
+		let tranKey = Component.translatable("message.cmi.stage.init").red()
+		player.displayClientMessage(tranKey, true)
 		event.cancel()
 	}
 })
