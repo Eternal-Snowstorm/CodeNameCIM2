@@ -1,3 +1,6 @@
+let $BasicBlock = 
+Java.loadClass("dev.celestiacraft.libs.api.register.block.BasicBlock")
+
 let stru1 = StructureBuilder.create([
 	[
 		" 0 ",
@@ -68,25 +71,10 @@ function spawnEntityByMultiblock(event, item, structure, entityId) {
 	entity.spawn()
 
 	if (direction) {
-		let rot = directionToYRot(direction)
+		let rot = $BasicBlock.getYRotFromFacing(direction)
 
 		entity.setYRot(rot)
 		entity.setYHeadRot(rot)
 		entity.setYBodyRot(rot)
-	}
-}
-
-/**
- * 
- * @param {Internal.Direction} direction 
- * @returns 
- */
-function directionToYRot(direction) {
-	switch (direction.name()) {
-		case "NORTH": return 270
-		case "SOUTH": return 90
-		case "WEST": return 180
-		case "EAST": return 0
-		default: return 0
 	}
 }
