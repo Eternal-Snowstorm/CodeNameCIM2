@@ -94,10 +94,14 @@ StartupEvents.modifyCreativeTab("thermal:thermal.items", (event) => {
 })
 
 StartupEvents.modifyCreativeTab("cmi:mechanisms", (event) => {
-	Ingredient.of("#cmi:mechanism_flash_drives").getItemIds().forEach((flashDrive) => {
-		event.add(flashDrive)
-	})
-	Ingredient.of("#cmi:machine_block").getItemIds().forEach((machineBlock) => {
-		event.add(machineBlock)
-	})
+	Ingredient.of("#cmi:mechanism_flash_drives")
+		.getItemIds()
+		.forEach((flashDrive) => {
+			event.add(flashDrive)
+		})
+	Ingredient.of("#cmi:machine_block")
+		.getItemIds()
+		.forEach((machineBlock) => {
+			event.add(machineBlock)
+		})
 })
