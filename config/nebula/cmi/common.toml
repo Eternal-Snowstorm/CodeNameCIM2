@@ -2,7 +2,7 @@
 #All settings below will only take effect after restarting the server or client.
 [general]
 
-	#SneakyLink settings
+	#SneakyLink Settings
 	[general.sneak_link]
 		#Horizontal radius within which the player picks up item entities
 		"Collection radius" = 3.0
@@ -14,7 +14,7 @@
 		#Pick up item entities regardless of their cooldown after being dropped from a player's inventory
 		"Ignore pickup delay" = false
 
-	#Steam Hammer settings
+	#Steam Hammer Settings
 	[general.steam_hammer]
 		#Steam consumption per run of steam hammer (mB)
 		#type: int
@@ -32,7 +32,7 @@
 		#Range: 0.0 ~ 64.0
 		stress_impact = 16.0
 
-	#Accelerator Motor settings
+	#Accelerator Motor Settings
 	[general.accelerator_motor]
 		#Default speed when placing the Accelerator Motor (RPM)
 		#type: int
@@ -45,7 +45,7 @@
 		#Range: 1 ~ 256
 		max_speed = 128
 
-	#Advanced Spout settings
+	#Advanced Spout Settings
 	[general.advanced_spout]
 		#Filling time in ticks
 		#20 ticks = 1 second
@@ -62,7 +62,7 @@
 		#Range: 2000 ~ 64000
 		capacity = 5000
 
-	#Void Dust Collector settings
+	#Void Dust Collector Settings
 	[general.void_dust_collector]
 		#Work time
 		#20 ticks = 1 second
@@ -97,7 +97,7 @@
 		#Range: -63 ~ 319
 		min_work_height = -63
 
-	#Solar Boiler settings
+	#Solar Boiler Settings
 	[general.solar_boilder]
 		#Water consumption and steam production per tick
 		#type: int
@@ -130,7 +130,7 @@
 		#Range: 1 ~ 100000000
 		steel_boiler_capacity = 12000
 
-	#Stack Storage settings
+	#Stack Storage Settings
 	[general.stack_storage]
 		#Whether the cmi:no_stack_upgrade tag should disable storage stack scaling for matching items
 		#type: boolean
@@ -140,4 +140,15 @@
 		#type: boolean
 		#default: true
 		no_storage_stack_enabled = true
+
+	#Functional Storage Drawer Upgrade Settings
+	[general.drawer_upgrade]
+		#Whether a drawer can only accept upgrades of the same item type at once
+		#type: boolean
+		#default: true
+		same_upgrade_only_enabled = true
+		#Whether drawer storage upgrades should stack additively instead of multiplicatively
+		#type: boolean
+		#default: true
+		additive_upgrade_enabled = true
 
