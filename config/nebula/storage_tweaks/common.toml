@@ -1,0 +1,26 @@
+
+#All settings below will only take effect after restarting the server or client.
+[general]
+
+	#Stack Storage settings
+	[general.stack_storage]
+		#Whether the storage_tweaks:no_stack_upgrade tag should disable storage stack scaling for matching items
+		#type: boolean
+		#default: true
+		no_stack_upgrade_enabled = true
+		#Whether the storage_tweaks:no_storage_stack tag should force the in-storage stack limit of matching items to 1
+		#type: boolean
+		#default: true
+		no_storage_stack_enabled = true
+
+	#Functional Storage Drawer Upgrade settings
+	[general.drawer_upgrade]
+		#Whether a drawer can only accept upgrades of the same item type at once
+		#type: boolean
+		#default: true
+		same_upgrade_only_enabled = true
+		#Whether drawer storage upgrades should stack additively instead of multiplicatively
+		#type: boolean
+		#default: true
+		additive_upgrade_enabled = true
+
