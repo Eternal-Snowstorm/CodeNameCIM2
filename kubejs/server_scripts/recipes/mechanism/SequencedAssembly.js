@@ -1,502 +1,397 @@
 ServerEvents.recipes((event) => {
-	let { cmi, create, vintageimprovements } = event.getRecipes()
+	let { create, vintageimprovements, cmi } = event.getRecipes()
 
 	/**
-	 * 第一大章节的序列装配封装
-	 *
-	 * @constructor
-	 * @param {{
-	 *  COM: Internal.ItemStack,
-	 *  INC: Internal.ItemStack
-	 * }} mechanism
+	 * 
+	 * @param {OutputItem_} output 
+	 * @param {InputItem_} input 
+	 * @param {InputItem_} tran 
+	 * @returns 
 	 */
-	function BasicMechRecipe(mechanism) {
+	function seqItems(output, input, tran) {
+		return {
+			RES: output,
+			ING: input,
+			TRANS: tran
+		}
+	}
+
+	/**
+	 * 
+	 * @param {{
+	 *		RES: OutputItem_,
+	 *		ING: InputItem_,
+	 *  	TRANS: InputItem_
+	 *  }} item
+	 * @returns 
+	 */
+	function SequencedAssemblyRecipe(mechanism) {
 		let { COM, INC } = mechanism
 
-		this.$result = COM
-		this.$transit = INC
+		this.result = COM
+		this.transit = INC
+		this.ingredient = "#forge:plates/iron"
+		this.$sequences = []
+		this.loops = 1
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.input = function (ingredient) {
+		this.ingredient = ingredient
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.cutting = function () {
+		let sequence = create.cutting(this.transit, this.transit)
 
-		this.$input = null
-		this.$part = null
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.pressing = function () {
+		let sequence = create.pressing(this.transit, this.transit)
 
-		// 用数组存步骤函数
-		this.$steps = []
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.grinding = function () {
+		let sequence = cmi.grinding(this.transit, this.transit)
 
-		// 默认四步
-		this.$steps[0] = () => {
-			return vintageimprovements.curving(this.$transit, this.$transit)
-				.itemAsHead("cmi:mechanism_mold")
-		}
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.vibrating = function () {
+		let sequence = vintageimprovements.vibrating(this.transit, this.transit)
 
-		this.$steps[1] = () => {
-			return create.cutting(this.$transit, this.$transit)
-		}
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.pressurizing = function () {
+		let sequence = vintageimprovements.pressurizing(this.transit, this.transit)
 
-		this.$steps[2] = null
+		this.$sequences.push(sequence)
+		return this
+	}
+	SequencedAssemblyRecipe.prototype.vacuumizing = function () {
+		let sequence = vintageimprovements.vacuumizing(this.transit, this.transit)
 
-		this.$steps[3] = () => {
-			return cmi.grinding(this.$transit, this.$transit)
-		}
+		this.$sequences.push(sequence)
+		return this
+	}
+	/**
+	 * 
+	 * @param {Number} energy
+	 * @returns 
+	 */
+	SequencedAssemblyRecipe.prototype.laserCutting = function (energy) {
+		let sequence = vintageimprovements.laser_cutting(this.transit, this.transit)
+			.energy(energy).maxChargeRate(100)
 
-		this.$steps[4] = () => {
-			return create.deploying(this.$transit, [this.$transit, this.$part])
-		}
+		this.$sequences.push(sequence)
+		return this
 	}
 	/**
 	 * 
 	 * @param {InputItem_} input 
 	 * @returns 
 	 */
-	BasicMechRecipe.prototype.input = function (input) {
-		this.$input = input
+	SequencedAssemblyRecipe.prototype.deploying = function (input) {
+		let sequence = create.deploying(this.transit, [this.transit, input])
+
+		this.$sequences.push(sequence)
 		return this
 	}
 	/**
 	 * 
-	 * @param {InputItem_} part
+	 * @param {InputItem_} itemAsHead
 	 * @returns 
 	 */
-	BasicMechRecipe.prototype.part = function (part) {
-		this.$part = part
+	SequencedAssemblyRecipe.prototype.curving = function (itemAsHead) {
+		let sequence = vintageimprovements.curving(this.transit, this.transit)
+			.itemAsHead(itemAsHead)
+
+		this.$sequences.push(sequence)
 		return this
 	}
 	/**
 	 * 
-	 * @param {Number} index 
-	 * @param {*} fn 
+	 * @param {Fluid_} fluid
 	 * @returns 
 	 */
-	BasicMechRecipe.prototype._setStep = function (index, fn) {
-		this.$steps[index] = fn
+	SequencedAssemblyRecipe.prototype.filling = function (fluid) {
+		let sequence = create.filling(this.transit, [this.transit, fluid])
+
+		this.$sequences.push(sequence)
 		return this
 	}
 	/**
 	 * 
-	 * @param {InputItem_} ingredient 
-	 * @returns 
+	 * @param {Number} loops 
 	 */
-	BasicMechRecipe.prototype.deploying1 = function (ingredient) {
-		return this._setStep(0, () => {
-			return create.deploying(this.$transit, [this.$transit, ingredient])
-		})
-	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 * @returns 
-	 */
-	BasicMechRecipe.prototype.deploying2 = function (ingredient) {
-		return this._setStep(1, () => {
-			return create.deploying(this.$transit, [this.$transit, ingredient])
-		})
-	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 * @returns 
-	 */
-	BasicMechRecipe.prototype.deploying3 = function (ingredient) {
-		return this._setStep(2, () => {
-			return create.deploying(this.$transit, [this.$transit, ingredient])
-		})
-	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 * @returns 
-	 */
-	BasicMechRecipe.prototype.deploying4 = function (ingredient) {
-		return this._setStep(3, () => {
-			return create.deploying(this.$transit, [this.$transit, ingredient])
-		})
-	}
-
-	BasicMechRecipe.prototype.filling3 = function (fluid, amount) {
-		return this._setStep(2, () => {
-			return create.filling(this.$transit, [
-				this.$transit,
-				Fluid.of(fluid, amount)
-			])
-		})
-	}
-
-	BasicMechRecipe.prototype.vibrating4 = function () {
-		return this._setStep(3, () => {
-			return vintageimprovements.vibrating(this.$transit, this.$transit)
-		})
-	}
-
-	BasicMechRecipe.prototype.build = function () {
-		if (!this.$input) {
-			console.error("BasicMechRecipe: input 未设置")
-		}
-
-		if (!this.$part) {
-			console.error("BasicMechRecipe: part 未设置")
-		}
-
-		let sequence = []
-
-		this.$steps.forEach((step) => {
-			if (step) {
-				sequence.push(step())
-			}
-		})
-
-		return create.sequenced_assembly(this.$result, this.$input, sequence)
-			.transitionalItem(this.$transit)
-			.loops(1)
-	}
-	/**
-	 * 第二大章节的序列装配封装
-	 *
-	 * @constructor
-	 * @param {{
-	 *  COM: Internal.ItemStack,
-	 *  INC: Internal.ItemStack,
-	 *  AUG: Internal.ItemStack
-	 * }} mechanism
-	 */
-	function AugmentMechRecipes(mechanism) {
-		let { COM, INC, AUG } = mechanism
-
-		this.$result = COM
-		this.$transit = INC
-		this.$augment = AUG
-
-		this.$input = null
-		this.$part = null
-
-		// 用数组存步骤函数
-		this.$steps = []
-
-		this.$steps[0] = () => {
-			return create.deploying(this.$transit, [this.$transit, this.$augment])
-		}
-
-		this.$steps[1] = null
-
-		this.$steps[2] = () => {
-			return vintageimprovements.vacuumizing(this.$transit, this.$transit)
-		}
-
-		this.$steps[3] = () => {
-			return vintageimprovements.laser_cutting(this.$transit, this.$transit)
-				.energy(1000).maxChargeRate(100)
-		}
-
-		this.$steps[4] = () => {
-			return create.deploying(this.$transit, [this.$transit, this.$part])
-		}
-	}
-	/**
-	 * 
-	 * @param {InputItem_} input 
-	 * @returns 
-	 */
-	AugmentMechRecipes.prototype.input = function (input) {
-		this.$input = input
+	SequencedAssemblyRecipe.prototype.loop = function (loops) {
+		this.loops = loops
 		return this
 	}
-	/**
-	 * 
-	 * @param {InputItem_} part 
-	 * @returns 
-	 */
-	AugmentMechRecipes.prototype.part = function (part) {
-		this.$part = part
-		return this
-	}
-	/**
-	 * 
-	 * @param {Number} index 
-	 * @param {*} fn 
-	 * @returns 
-	 */
-	AugmentMechRecipes.prototype._setStep = function (index, fn) {
-		this.$steps[index] = fn
-		return this
-	}
-	/**
-	 * 
-	 * @param {String} fluid 
-	 * @param {Number} amount 
-	 * @returns 
-	 */
-	AugmentMechRecipes.prototype.filling2 = function (fluid, amount) {
-		return this._setStep(1, () => {
-			return create.filling(this.$transit, [
-				this.$transit,
-				Fluid.of(fluid, amount)
-			])
-		})
-	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 * @returns 
-	 */
-	AugmentMechRecipes.prototype.deploying2 = function (ingredient) {
-		return this._setStep(1, () => {
-			return create.deploying(this.$transit, [this.$transit, ingredient])
-		})
-	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 * @returns 
-	 */
-	AugmentMechRecipes.prototype.deploying3 = function (ingredient) {
-		return this._setStep(2, () => {
-			return create.deploying(this.$transit, [this.$transit, ingredient])
-		})
-	}
-	/**
-	 * 
-	 * @param {InputItem_} ingredient 
-	 * @returns 
-	 */
-	AugmentMechRecipes.prototype.deploying4 = function (ingredient) {
-		return this._setStep(3, () => {
-			return create.deploying(this.$transit, [this.$transit, ingredient])
-		})
-	}
-	AugmentMechRecipes.prototype.build = function () {
-		if (!this.$input) {
-			console.error("AugmentMechRecipes: input 未设置")
-		}
+	SequencedAssemblyRecipe.prototype.build = function () {
+		let sequences = this.$sequences
+		let result = this.result
+		let input = this.ingredient
+		let loops = this.loops
+		let transit = this.transit
 
-		if (!this.$part) {
-			console.error("AugmentMechRecipes: part 未设置")
-		}
-
-		let sequence = []
-
-		this.$steps.forEach((step) => {
-			if (step) {
-				sequence.push(step())
-			}
-		})
-
-		return create.sequenced_assembly(this.$result, this.$input, sequence)
-			.transitionalItem(this.$transit)
-			.loops(1)
+		return create.sequenced_assembly(result,
+			input,
+			sequences
+		).loops(loops)
+			.transitionalItem(transit)
 	}
 
 	// 木质
-	new BasicMechRecipe(Mechanism.WOODEN)
+	new SequencedAssemblyRecipe(Mechanism.WOODEN)
 		.input("#minecraft:planks")
-		.part(Mechanism.PART.BASIC)
-		.deploying1("#forge:rods/wooden")
-		.deploying3("farmersdelight:tree_bark")
-		.deploying4("#minecraft:logs")
+		.deploying("#forge:rods/wooden")
+		.cutting()
+		.deploying("farmersdelight:tree_bark")
+		.deploying("#minecraft:logs")
+		.deploying(Mechanism.PART.BASIC)
 		.build()
 
 	// 石质
-	new BasicMechRecipe(Mechanism.STONE)
+	new SequencedAssemblyRecipe(Mechanism.STONE)
 		.input("#forge:plates/stone")
-		.part(Mechanism.PART.BASIC)
-		.deploying1("tconstruct:seared_brick")
-		.deploying3("#forge:clay")
-		.deploying4("#forge:stone")
+		.deploying("tconstruct:seared_brick")
+		.cutting()
+		.deploying("#forge:clay")
+		.deploying("#forge:stone")
+		.deploying(Mechanism.PART.BASIC)
 		.build()
 
 	// 红石
-	new BasicMechRecipe(Mechanism.REDSTONE)
+	new SequencedAssemblyRecipe(Mechanism.REDSTONE)
 		.input("#forge:plates/lead")
-		.part(Mechanism.PART.BASIC)
-		.deploying1("minecraft:redstone")
-		.filling3("thermal:redstone", 100)
-		.deploying4("minecraft:redstone_torch")
+		.deploying("minecraft:redstone")
+		.cutting()
+		.filling(Fluid.of("thermal:redstone", 100))
+		.deploying("minecraft:redstone_torch")
+		.deploying(Mechanism.PART.BASIC)
 		.build()
 		.id("vintageimprovements:sequenced_assembly/redstone_module")
 
 	// 自然
-	new BasicMechRecipe(Mechanism.NATURE)
+	new SequencedAssemblyRecipe(Mechanism.NATURE)
 		.input("minecraft:grass_block")
-		.part(Mechanism.PART.MAGIC)
-		.deploying1("#minecraft:small_flowers")
-		.filling3("minecraft:water", 1000)
-		.deploying4("#forge:seeds")
+		.deploying("#minecraft:small_flowers")
+		.cutting()
+		.filling("minecraft:water", 1000)
+		.deploying("#forge:seeds")
+		.deploying(Mechanism.PART.MAGIC)
 		.build()
 
 	// 安山
-	new BasicMechRecipe(Mechanism.ANDESITE)
+	new SequencedAssemblyRecipe(Mechanism.ANDESITE)
 		.input("#forge:plates/andesite")
-		.part(Mechanism.PART.MECHA)
-		.deploying1("create:shaft")
-		.deploying3("#create:incomplete_cogwheels")
-		.deploying4("#create:incomplete_large_cogwheels")
+		.deploying("create:shaft")
+		.cutting()
+		.deploying("#create:incomplete_cogwheels")
+		.deploying("#create:incomplete_large_cogwheels")
+		.deploying(Mechanism.PART.MECHA)
 		.build()
 
 	// 铜质
-	new BasicMechRecipe(Mechanism.COPPER)
+	new SequencedAssemblyRecipe(Mechanism.COPPER)
 		.input("#forge:plates/copper")
-		.part(Mechanism.PART.MECHA)
-		.deploying1("#forge:nuggets/copper")
-		.deploying2("#forge:glass")
-		.filling3("minecraft:water", 1000)
-		.deploying4("thermal:cured_rubber")
+		.deploying("#forge:nuggets/copper")
+		.deploying("#forge:glass")
+		.filling("minecraft:water", 1000)
+		.deploying("thermal:cured_rubber")
+		.deploying(Mechanism.PART.MECHA)
 		.build()
 
 	// 铁质
-	new BasicMechRecipe(Mechanism.IRON)
+	new SequencedAssemblyRecipe(Mechanism.IRON)
 		.input("#forge:plates/iron")
-		.part(Mechanism.PART.BASIC)
-		.deploying1("#forge:nuggets/iron")
-		.deploying3("#vintageimprovements:springs/iron")
-		.deploying4("#forge:wires/iron")
+		.deploying("#forge:nuggets/iron")
+		.cutting()
+		.deploying("#vintageimprovements:springs/iron")
+		.deploying("#forge:wires/iron")
+		.deploying(Mechanism.PART.BASIC)
 		.build()
 
 	// 生铁
-	new BasicMechRecipe(Mechanism.PIG_IRON)
+	new SequencedAssemblyRecipe(Mechanism.PIG_IRON)
 		.input("#forge:plates/pig_iron")
-		.part(Mechanism.PART.MAGIC)
-		.filling3("tconstruct:molten_pig_iron", 45)
-		.deploying4("#forge:rods/pig_iron")
+		.curving("cmi:mechanism_mold")
+		.cutting()
+		.filling("tconstruct:molten_pig_iron", 45)
+		.deploying("#forge:rods/pig_iron")
+		.deploying(Mechanism.PART.MAGIC)
 		.build()
 
 	// 秘药
-	new BasicMechRecipe(Mechanism.POTION)
+	new SequencedAssemblyRecipe(Mechanism.POTION)
 		.input("#forge:glass")
-		.part(Mechanism.PART.MAGIC)
-		.deploying2("minecraft:golden_apple")
-		.deploying3("minecraft:golden_carrot")
-		.deploying4("minecraft:glistering_melon_slice")
+		.curving("cmi:mechanism_mold")
+		.deploying("minecraft:golden_apple")
+		.deploying("minecraft:golden_carrot")
+		.deploying("minecraft:glistering_melon_slice")
+		.deploying(Mechanism.PART.MAGIC)
 		.build()
 
 	// 青铜
-	new BasicMechRecipe(Mechanism.STEAM)
+	new SequencedAssemblyRecipe(Mechanism.STEAM)
 		.input("#forge:plates/bronze")
-		.part(Mechanism.PART.MECHA)
-		.deploying1("cmi:incomplete_bronze_cogwheel")
-		.deploying2("#vintageimprovements:small_springs/bronze")
-		.deploying3("#forge:nuggets/andesite_alloy")
-		.vibrating4()
+		.deploying("cmi:incomplete_bronze_cogwheel")
+		.deploying("#vintageimprovements:small_springs/bronze")
+		.deploying("#forge:nuggets/andesite_alloy")
+		.vibrating()
+		.deploying(Mechanism.PART.MECHA)
 		.build()
 
 	// 铁路
-	new BasicMechRecipe(Mechanism.RAILWAY)
+	new SequencedAssemblyRecipe(Mechanism.RAILWAY)
 		.input("#forge:plates/dense_obsidian")
-		.part(Mechanism.PART.MECHA)
-		.deploying3("#vintageimprovements:small_springs/brass")
-		.deploying4("#forge:plates/brass")
+		.curving("cmi:mechanism_mold")
+		.cutting()
+		.deploying("#vintageimprovements:small_springs/brass")
+		.deploying("#forge:plates/brass")
+		.deploying(Mechanism.PART.MECHA)
 		.build()
 
 	// 下界
-	new BasicMechRecipe(Mechanism.NETHER)
+	new SequencedAssemblyRecipe(Mechanism.NETHER)
 		.input("create:cinder_flour")
-		.part(Mechanism.PART.MAGIC)
-		.deploying2("minecraft:magma_cream")
-		.filling3("tconstruct:liquid_soul", 250)
-		.deploying4("#forge:nuggets/gold")
+		.curving("cmi:mechanism_mold")
+		.deploying("minecraft:magma_cream")
+		.filling("tconstruct:liquid_soul", 250)
+		.deploying("#forge:nuggets/gold")
+		.deploying(Mechanism.PART.MAGIC)
 		.build()
 
 	// 附魔
-	new BasicMechRecipe(Mechanism.ENCHANTED)
+	new SequencedAssemblyRecipe(Mechanism.ENCHANTED)
 		.input("#forge:gems/lapis")
-		.part(Mechanism.PART.MAGIC)
-		.deploying2("create:experience_nugget")
-		.filling3("create_enchantment_industry:experience", 50)
+		.curving("cmi:mechanism_mold")
+		.deploying("create:experience_nugget")
+		.filling("create_enchantment_industry:experience", 50)
+		.grinding()
+		.deploying(Mechanism.PART.MAGIC)
 		.build()
 
 	// 线圈
-	new BasicMechRecipe(Mechanism.COIL)
+	new SequencedAssemblyRecipe(Mechanism.COIL)
 		.input("#forge:plates/iron")
-		.part(Mechanism.PART.ENGIN)
-		.deploying2("cmi:motor_rotor")
-		.filling3("immersiveengineering:redstone_acid", 200)
-		.deploying4("#forge:plates/electrum")
+		.curving("cmi:mechanism_mold")
+		.deploying("cmi:motor_rotor")
+		.filling("immersiveengineering:redstone_acid", 200)
+		.deploying("#forge:plates/electrum")
+		.deploying(Mechanism.PART.ENGIN)
 		.build()
 
 	// 精密
-	new BasicMechRecipe(Mechanism.PRECISION)
+	new SequencedAssemblyRecipe(Mechanism.PRECISION)
 		.input("#forge:plates/brass")
-		.part(Mechanism.PART.MECHA)
-		.deploying2("create:electron_tube")
-		.deploying3("#create:incomplete_large_cogwheels")
-		.deploying4("#forge:nuggets/brass")
+		.curving("cmi:mechanism_mold")
+		.deploying("create:electron_tube")
+		.deploying("#create:incomplete_large_cogwheels")
+		.deploying("#forge:nuggets/brass")
+		.deploying(Mechanism.PART.MECHA)
 		.build()
 		.id("create:sequenced_assembly/precision_mechanism")
 
 	// 感光
-	new BasicMechRecipe(Mechanism.PHOTO)
+	new SequencedAssemblyRecipe(Mechanism.PHOTO)
 		.input("#forge:prisms/polished_quartz")
-		.part(Mechanism.PART.ENGIN)
-		.deploying2("cmi:resonant_tube")
-		.deploying3("#forge:dusts/amethyst")
+		.curving("cmi:mechanism_mold")
+		.deploying("cmi:resonant_tube")
+		.deploying("#forge:dusts/amethyst")
+		.grinding()
+		.deploying(Mechanism.PART.ENGIN)
 		.build()
 
 	// 幽匿
-	new BasicMechRecipe(Mechanism.SCULK)
+	new SequencedAssemblyRecipe(Mechanism.SCULK)
 		.input("minecraft:sculk_catalyst")
-		.part(Mechanism.PART.MAGIC)
-		.deploying2("minecraft:echo_shard")
-		.deploying3("cmi:charged_amethyst")
+		.curving("cmi:mechanism_mold")
+		.deploying("minecraft:echo_shard")
+		.deploying("cmi:charged_amethyst")
+		.grinding()
+		.deploying(Mechanism.PART.MAGIC)
 		.build()
 
 	// 多彩
-	new BasicMechRecipe(Mechanism.COLOR)
+	new SequencedAssemblyRecipe(Mechanism.COLOR)
 		.input("#minecraft:planks")
-		.part(Mechanism.PART.MAGIC)
-		.deploying2("#forge:dyes/red")
-		.deploying3("#forge:dyes/green")
-		.deploying4("#forge:dyes/blue")
+		.curving("cmi:mechanism_mold")
+		.deploying("#forge:dyes/red")
+		.deploying("#forge:dyes/green")
+		.deploying("#forge:dyes/blue")
+		.deploying(Mechanism.PART.MAGIC)
 		.build()
 
 	// 热力
-	new AugmentMechRecipes(Mechanism.THERMAL)
+	new SequencedAssemblyRecipe(Mechanism.THERMAL)
 		.input("#forge:plates/invar")
-		.part(Mechanism.PART.FLUX)
-		.deploying2("#forge:rods/nickel")
-		.deploying3("#forge:wires/copper")
+		.deploying(Mechanism.THERMAL.AUG)
+		.deploying("#forge:rods/nickel")
+		.deploying("#forge:wires/copper")
+		.laserCutting(1000)
+		.deploying(Mechanism.PART.FLUX)
 		.build()
 
 	// 轻工
-	new AugmentMechRecipes(Mechanism.LIGHT)
+	new SequencedAssemblyRecipe(Mechanism.LIGHT)
 		.input("#forge:plates/iron")
-		.part(Mechanism.PART.ENGIN)
-		.filling2("immersiveengineering:creosote", 100)
-		.deploying4("#forge:rods/constantan")
+		.deploying(Mechanism.LIGHT.AUG)
+		.filling("immersiveengineering:creosote", 100)
+		.vacuumizing()
+		.deploying("#forge:rods/constantan")
+		.deploying(Mechanism.PART.ENGIN)
 		.build()
 
 	// 智能
-	new AugmentMechRecipes(Mechanism.SMART)
+	new SequencedAssemblyRecipe(Mechanism.SMART)
 		.input("#forge:plates/silver")
-		.part(Mechanism.PART.ENGIN)
-		.filling2("immersiveengineering:redstone_acid", 100)
-		.deploying3("ae2:printed_silicon")
+		.deploying(Mechanism.SMART.AUG)
+		.filling("immersiveengineering:redstone_acid", 100)
+		.deploying("ae2:printed_silicon")
+		.laserCutting(1000)
+		.deploying(Mechanism.PART.ENGIN)
 		.build()
 
 	// 金质
-	new AugmentMechRecipes(Mechanism.GOLD)
+	new SequencedAssemblyRecipe(Mechanism.GOLD)
 		.input("#forge:plates/gold")
-		.part(Mechanism.PART.FLUX)
-		.deploying2("#forge:nuggets/gold")
-		.deploying3("#forge:dusts/cinnabar")
+		.deploying(Mechanism.GOLD.AUG)
+		.deploying("#forge:nuggets/gold")
+		.deploying("#forge:dusts/cinnabar")
+		.laserCutting(1000)
+		.deploying(Mechanism.PART.FLUX)
 		.build()
 
 	// 强化
-	new AugmentMechRecipes(Mechanism.REINFORCED)
+	new SequencedAssemblyRecipe(Mechanism.REINFORCED)
 		.input("#forge:plates/electrum")
-		.part(Mechanism.PART.FLUX)
-		.deploying2("#forge:rods/nickel")
-		.deploying3("#forge:wires/signalum")
+		.deploying(Mechanism.REINFORCED.AUG)
+		.deploying("#forge:rods/nickel")
+		.deploying("#forge:wires/signalum")
+		.laserCutting(1000)
+		.deploying(Mechanism.PART.FLUX)
 		.build()
 
 	// 重工
-	new AugmentMechRecipes(Mechanism.HEAVY)
+	new SequencedAssemblyRecipe(Mechanism.HEAVY)
 		.input("#forge:plates/steel")
-		.part(Mechanism.PART.ENGIN)
-		.filling2("thermal_extra:lubricant", 100)
-		.deploying4("#forge:rods/invar")
+		.deploying(Mechanism.HEAVY.AUG)
+		.filling("thermal_extra:lubricant", 100)
+		.vacuumizing()
+		.deploying("#forge:rods/invar")
+		.deploying(Mechanism.PART.ENGIN)
 		.build()
 
 	// 钴质
-	new AugmentMechRecipes(Mechanism.COBALT)
+	new SequencedAssemblyRecipe(Mechanism.COBALT)
 		.input("#forge:plates/cobalt")
-		.part(Mechanism.PART.ENGIN)
-		.deploying2("#forge:nuggets/cobalt")
-		.deploying3("#forge:dusts/apatite")
+		.deploying(Mechanism.COBALT.AUG)
+		.deploying("#forge:nuggets/cobalt")
+		.deploying("#forge:dusts/apatite")
+		.laserCutting(1000)
+		.deploying(Mechanism.PART.ENGIN)
 		.build()
 })
