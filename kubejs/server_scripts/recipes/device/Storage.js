@@ -153,16 +153,6 @@ ServerEvents.recipes((event) => {
 		M: Mechanism.WOODEN.COM,
 		C: Casing.ANDESITE
 	}).id("create:crafting/logistics/stock_link")
-	// 网络
-	kubejs.shaped("2x create_factory_logistics:network_link", [
-		"T",
-		"M",
-		"C"
-	], {
-		T: "create:transmitter",
-		M: Mechanism.PRECISION.COM,
-		C: Casing.BRASS
-	}).id("create_factory_logistics:network_link")
 	// 显示
 	kubejs.shaped("2x create:display_link", [
 		"T",
@@ -209,14 +199,4 @@ ServerEvents.recipes((event) => {
 		P: "#forge:plates/industrial_iron",
 		B: "#forge:plates/brass"
 	}).id("create:crafting/logistics/factory_gauge")
-
-	kubejs.shaped("create_factory_logistics:factory_fluid_gauge", [
-		"T",
-		"C",
-		"P"
-	], {
-		T: "create:transmitter",
-		P: "#forge:plates/industrial_iron",
-		C: "#forge:plates/copper"
-	}).id("create_factory_logistics:factory_fluid_gauge")
 })

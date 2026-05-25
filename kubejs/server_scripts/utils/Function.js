@@ -28,6 +28,55 @@ let namespacePriority = [
 	"alexscaves",
 	"tconstruct"
 ]
+/**
+	 * 
+	 * @param {Set<string>} name 
+	 * @returns 
+	 */
+function getHighPriorityItem(name) {
+	/**
+	 * 设置命名空间优先级
+	 * 越往前的命名空间优先级越高
+	 */
+	let namespacePriority = [
+		"cmi",
+		"vintageimprovements",
+		"thermal",
+		"thermalconstruct",
+		"thermalendergy",
+		"thermal_extra",
+		"create",
+		"createdeco",
+		"ae2",
+		"ad_astra",
+		"immersiveengineering",
+		"mekanism",
+		"alexscaves",
+		"tconstruct"
+	]
+	// 引入参数
+	let currentNamespace
+	let outputId
+	let priorityValue
+
+	// 遍历获取到的tag下每个物品的命名空间
+	name.forEach((id) => {
+		currentNamespace = ResourceLocation.parse(id).getNamespace()
+
+		// 获取命名空间优先级
+		for (let i = 0; i < namespacePriority.length; i++) {
+			if (currentNamespace === namespacePriority[i]) {
+				// 判定命名空间优先级并选择性输出优先级值最小的
+				if (i <= priorityValue || priorityValue == null) {
+					outputId = id
+					priorityValue = i
+				}
+			}
+		}
+	})
+
+	return outputId
+}
 
 let MekanismType = {
 	Slurry: {

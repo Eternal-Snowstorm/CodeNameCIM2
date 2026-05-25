@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 
 		let meltingPoint = CmiMetalRegistry.getMetal(metal).getMeltingPoint()
 		let fluidId = Ingredient.getFirstFluidId(`tconstruct:molten_${metal}`)
-		let namespace = global.materialNamespace[metal]
+		let namespace = CmiMetalRegistry.getMetal(metal).getNamespace()
 		let ingot = `#forge:ingots/${metal}`
 		let plate = `#forge:plates/${metal}`
 		let nugget = `#forge:nuggets/${metal}`

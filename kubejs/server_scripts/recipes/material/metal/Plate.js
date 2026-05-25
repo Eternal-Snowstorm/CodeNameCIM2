@@ -7,34 +7,37 @@ ServerEvents.recipes((event) => {
 		const PLATE = `#forge:plates/${metal}`
 
 		if (Ingredient.isNotNull(PLATE)) {
-			create.pressing(PLATE, [
-				INGOT
+			event.remove([
+				{
+					type: "create:pressing",
+					output: PLATE
+				}, {
+					type: "thermal:press",
+					output: PLATE
+				}, {
+					type: "immersiveengineering:metal_press",
+					output: PLATE
+				}
 			])
-			createdieselgenerators.hammering(PLATE, [
-				INGOT
-			])
-			thermal.press(PLATE, [
-				INGOT,
-				"cmi:plate_mold"
-			])
-			immersiveengineering.metal_press(PLATE)
-				.input(INGOT)
-				.mold("cmi:plate_mold")
-		} else {
-			console.warn(`No plate found for ${metal}!`)
-		}
+			const OUTPUT = getHighPriorityItem(Ingredient.of(PLATE).getItemIds())
 
-		event.remove([
-			{
-				type: "create:pressing",
-				output: PLATE
-			}, {
-				type: "thermal:press",
-				output: PLATE
-			}, {
-				type: "immersiveengineering:metal_press",
-				output: PLATE
+			if (OUTPUT != null) {
+				create.pressing(OUTPUT, [
+					INGOT
+				])
+				createdieselgenerators.hammering(OUTPUT, [
+					INGOT
+				])
+				thermal.press(OUTPUT, [
+					INGOT,
+					"cmi:plate_mold"
+				])
+				immersiveengineering.metal_press(PLATE)
+					.input(INGOT)
+					.mold("cmi:plate_mold")
+			} else {
+				console.warn(`No plate found for ${metal}!`)
 			}
-		])
+		}
 	})
 })

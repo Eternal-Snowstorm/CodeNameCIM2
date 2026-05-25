@@ -115,17 +115,4 @@ ServerEvents.recipes((event) => {
 		B: "minecraft:chain",
 		A: "create:fluid_pipe"
 	}).id("createdieselgenerators:crafting/pumpjack_hole")
-
-	// 装罐机
-	kubejs.shaped("2x create_factory_logistics:jar_packager", [
-		"PMP",
-		"IAI",
-		"PCP"
-	], {
-		P: "#forge:plates/copper",
-		M: Mechanism.COPPER.COM,
-		I: "#forge:plates/industrial_iron",
-		A: Mechanism.ANDESITE.COM,
-		C: Casing.COPPER
-	}).id("create_factory_logistics:jar_packager")
 })

@@ -48,7 +48,8 @@ let metals = {
 		n: "c"
 	},
 	chromium: {
-		t: 1907
+		t: 1907,
+		n: "c"
 	},
 	cinderslime: {
 		t: 1288,
@@ -83,7 +84,8 @@ let metals = {
 		n: "t"
 	},
 	etrium: {
-		t: 1486
+		t: 1486,
+		n: "c"
 	},
 	gold: {
 		t: 1064,
@@ -142,14 +144,16 @@ let metals = {
 		n: "v"
 	},
 	platinum: {
-		t: 1768
+		t: 1768,
+		n: "c"
 	},
 	prismalium: {
 		t: 1741,
 		n: "t"
 	},
 	quantum_alloy: {
-		t: 1024
+		t: 1024,
+		n: "c"
 	},
 	queens_slime: {
 		t: 1193,
@@ -192,7 +196,8 @@ let metals = {
 		n: "t"
 	},
 	siltsteel: {
-		t: 1386
+		t: 1386,
+		n: "c"
 	},
 	silver: {
 		t: 962,
@@ -231,7 +236,8 @@ let metals = {
 		n: "v"
 	},
 	tungsten_steel: {
-		t: 2524
+		t: 2524,
+		n: "c"
 	},
 	twinite: {
 		t: 1671,

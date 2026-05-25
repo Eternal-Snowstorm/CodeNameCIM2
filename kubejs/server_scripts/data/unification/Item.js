@@ -165,17 +165,6 @@ ServerEvents.highPriorityData((event) => {
 		"cmi:charged_amethyst"
 	))
 
-	// 流体构件
-	addJsonFile("fluid_mechanism", addUnification(
-		"create_factory_logistics:fluid_mechanism",
-		Mechanism.COPPER.COM
-	))
-
-	addJsonFile("incomplete_fluid_mechanism", addUnification(
-		"create_factory_logistics:incomplete_fluid_mechanism",
-		Mechanism.COPPER.INC
-	))
-
 	/**
 	 * @example addJsonFile("coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
 	 * @param {Internal.Item | Internal.Ingredient} match 
