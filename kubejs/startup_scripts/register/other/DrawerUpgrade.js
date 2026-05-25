@@ -37,17 +37,17 @@ StartupEvents.registry("item", (event) => {
 					 * @param {Internal.ItemStack_} stack 
 					 * @returns 
 					 */
-					m_7626_(stack) {
-						if (Client.level) {
-							let modifyItemName =
-								Component.translatable(`item.${Cmi.MODID}.${name}_upgrade`)
-									.setStyle($Style.EMPTY.applyTo(modifyItemName.getStyle()))
+					// m_7626_(stack) {
+					// 	if (Client.level) {
+					// 		let modifyItemName =
+					// 			Component.translatable(`item.${Cmi.MODID}.${name}_upgrade`)
+					// 				.setStyle($Style.EMPTY.applyTo(modifyItemName.getStyle()))
 
-							return modifyItemName
-						} else {
-							return Component.empty()
-						}
-					},
+					// 		return modifyItemName
+					// 	} else {
+					// 		return Component.empty()
+					// 	}
+					// },
 					/**
 					 * 
 					 * @param {Internal.BasicItem$Key_} key 
@@ -92,4 +92,6 @@ StartupEvents.registry("item", (event) => {
 
 		return drawerUpgradeBuilder
 	}
+
+	addDrawerUpgrade("test", 2)
 })
