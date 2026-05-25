@@ -67,6 +67,7 @@ CMI Dev.json
 !/mods/Nebula Tinker-*.jar
 !/mods/Industrial Platform-*.jar
 !/mods/MasterfulMachinery*.jar
+!/mods/Storage Tweaks*.jar
 
 # ResourcePacks
 /resourcepacks/*
