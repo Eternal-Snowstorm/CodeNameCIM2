@@ -165,6 +165,27 @@ ServerEvents.highPriorityData((event) => {
 		"cmi:charged_amethyst"
 	))
 
+	// 抽屉升级
+	addJsonFile("drawer_upgrade_t1", addUnification(
+		"functionalstorage:copper_upgrade",
+		"cmi:amethyst_bronze_upgrade"
+	))
+
+	addJsonFile("drawer_upgrade_t2", addUnification(
+		"functionalstorage:gold_upgrade",
+		"cmi:rose_gold_upgrade"
+	))
+
+	addJsonFile("drawer_upgrade_t3", addUnification(
+		"functionalstorage:diamond_upgrade",
+		"cmi:steel_upgrade"
+	))
+
+	addJsonFile("drawer_upgrade_t4", addUnification(
+		"functionalstorage:netherite_upgrade",
+		"cmi:hepatizon_upgrade"
+	))
+
 	/**
 	 * @example addJsonFile("coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
 	 * @param {Internal.Item | Internal.Ingredient} match 
