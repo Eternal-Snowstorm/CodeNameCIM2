@@ -7,22 +7,6 @@ ClientEvents.highPriorityAssets((event) => {
 		]
 	})
 
-	addEmiAddingRecipe("test", {
-		"type": "emi:info",
-		"stacks": [
-			"item:minecraft:obsidian",
-			"item:minecraft:flint_and_steel"
-		],
-		"text": "emi.info.the_nether"
-	})
-
-	addEmiAddingRecipe("test2", {
-		"type": "emi:world_interaction",
-		"left": "item:minecraft:torch",
-		"right": "item:minecraft:redstone_block",
-		"output": "item:minecraft:redstone_torch"
-	})
-
 	/**
 	 * @param {string} path
 	 * @param {Internal.JsonElement_} json
