@@ -1,1 +1,3 @@
-declare function JavaAdapter<T>(JavaClass: JavaClass<T> | T, overrides: Partial<T>, ...args: any[]): T
+declare class JavaAdapter {
+	constructor(javaClass: JavaClass<T> | T, overrides: Partial<T>, ...constructor: any[]): T
+}

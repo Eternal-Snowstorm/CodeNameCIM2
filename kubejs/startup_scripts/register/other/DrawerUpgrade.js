@@ -44,25 +44,22 @@ StartupEvents.registry("item", (event) => {
 					 * 
 					 * @param {Internal.BasicItem$Key_} key 
 					 * @param {Internal.ItemStack_} stack 
-					 * @param {Internal.List_<Component_>} tooltip 
+					 * @param {Internal.List_<Internal.Component_>} tooltip 
 					 * @param {Boolean} advanced 
 					 */
 					addTooltipDetails(key, stack, tooltip, advanced) {
-						let itemTranslateKey =
-							Component.translatable(
-								"storage_tweaks.tooltip.storageupgrade.desc.item.additive",
-								ITEM_MULTIPLIER
-							).gray()
-						let fluidTranslateKey =
-							Component.translatable(
-								"storage_tweaks.tooltip.storageupgrade.desc.fluid.additive",
-								FLUID_MULTIPLIER
-							).gray()
-						let ctrlTranslateKey =
-							Component.translatable(
-								"storage_tweaks.tooltip.storageupgrade.desc.range.additive",
-								CONTROLLER_MULTIPLIER
-							).gray()
+						let itemTranslateKey = Component.translatable(
+							"storage_tweaks.tooltip.storageupgrade.desc.item.additive",
+							ITEM_MULTIPLIER
+						).gray()
+						let fluidTranslateKey = Component.translatable(
+							"storage_tweaks.tooltip.storageupgrade.desc.fluid.additive",
+							FLUID_MULTIPLIER
+						).gray()
+						let ctrlTranslateKey = Component.translatable(
+							"storage_tweaks.tooltip.storageupgrade.desc.range.additive",
+							CONTROLLER_MULTIPLIER
+						).gray()
 
 						tooltip.add(itemTranslateKey)
 						tooltip.add(fluidTranslateKey)
@@ -75,9 +72,9 @@ StartupEvents.registry("item", (event) => {
 
 		if (Platform.isClientEnvironment()) {
 			JsonIO.write(`kubejs/assets/${Cmi.MODID}/models/item/${name}_upgrade.json`, {
-				"parent": "minecraft:item/generated",
-				"textures": {
-					"layer0": `${Cmi.MODID}:item/upgrade/${name}`
+				parent: "minecraft:item/generated",
+				textures: {
+					layer0: `${Cmi.MODID}:item/upgrade/${name}`
 				}
 			})
 		}
