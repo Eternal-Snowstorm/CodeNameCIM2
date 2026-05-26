@@ -144,6 +144,22 @@ ServerEvents.recipes((event) => {
 		.cooling_time(20 * 8)
 		.cast_consumed(true)
 
+	// 人造皮革
+	tconstruct.casting_table("immersiveengineering:ersatz_leather")
+		.cast("immersiveengineering:hemp_fabric")
+		.fluid(Fluid.of("thermal:resin", 125))
+		.cooling_time(20 * 6)
+		.cast_consumed(true)
+		.id("immersiveengineering:crafting/ersatz_leather")
+
+	// 防水纸板块
+	tconstruct.casting_basin("fluidlogistics:waterproof_cardboard_block")
+		.cast("create:cardboard_block")
+		.fluid(Fluid.of("thermal:resin", 500))
+		.cooling_time(20 * 8)
+		.cast_consumed(true)
+		.id("fluidlogistics:waterproof_cardboard_block")
+
 	let barTypes = [
 		"brass",
 		"copper",

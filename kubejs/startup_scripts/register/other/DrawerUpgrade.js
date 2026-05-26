@@ -82,5 +82,8 @@ StartupEvents.registry("item", (event) => {
 		return drawerUpgradeBuilder
 	}
 
-	addDrawerUpgrade("test", 2)
+	addDrawerUpgrade("amethyst_bronze", 2)
+	addDrawerUpgrade("rose_gold", 4)
+	addDrawerUpgrade("steel", 8)
+	addDrawerUpgrade("hepatizon", 16)
 })

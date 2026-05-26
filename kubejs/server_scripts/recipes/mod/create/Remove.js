@@ -51,7 +51,8 @@ ServerEvents.recipes((event) => {
 		"jei:/create_factory_logistics/sequenced_assembly/fluid_mechanism",
 		"jei:/create/crafting/kinetics/track_observer_from_other_plates",
 		"jei:/railways/crafting/track_switch_brass",
-		"jei:/createdieselgenerators/distillation/superheated_crude_oil"
+		"jei:/createdieselgenerators/distillation/superheated_crude_oil",
+		"jei:/fluidlogistics/waterproof_cardboard_block_from_honeycomb"
 	])
 
 	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
