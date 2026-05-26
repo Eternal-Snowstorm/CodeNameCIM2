@@ -20,6 +20,25 @@ ServerEvents.recipes((event) => {
 		B: "#forge:glass"
 	}).id("create:crafting/kinetics/fluid_tank2")
 
+	// 多流体储罐
+	kubejs.shaped("fluidlogistics:multi_fluid_tank", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "#forge:plates/brass",
+		B: "#forge:glass"
+	}).id("fluidlogistics:multi_fluid_tank")
+
+	kubejs.shaped("fluidlogistics:horizontal_multi_fluid_tank", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "#forge:plates/brass",
+		B: "#forge:glass"
+	}).id("fluidlogistics:horizontal_multi_fluid_tank")
+
 	kubejs.shaped("create_connected:fluid_vessel", [
 		"ABA"
 	], {
@@ -115,4 +134,53 @@ ServerEvents.recipes((event) => {
 		B: "minecraft:chain",
 		A: "create:fluid_pipe"
 	}).id("createdieselgenerators:crafting/pumpjack_hole")
+
+	// 智能龙头
+	kubejs.shaped("fluidlogistics:smart_faucet", [
+		"A",
+		"B",
+		"C"
+	], {
+		A: "#forge:plates/brass",
+		B: Mechanism.COPPER.COM,
+		C: "#forge:plates/copper"
+	}).id("fluidlogistics:smart_faucet")
+
+	// 流体泵
+	kubejs.shapeless("fluidlogistics:fluid_pump", [
+		"create:mechanical_pump",
+		"#create:shaft"
+	]).id("fluidlogistics:fluid_pump")
+
+	// 流体漏斗
+	kubejs.shaped("fluidlogistics:smart_hopper", [
+		"A A",
+		"BMB",
+		" A "
+	], {
+		A: "#forge:plates/copper",
+		B: "#forge:plates/brass",
+		M: Mechanism.COPPER.COM
+	}).id("fluidlogistics:smart_hopper")
+
+	// 流体溜槽
+	kubejs.shaped("fluidlogistics:fluid_transporter", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "#forge:plates/copper",
+		B: Mechanism.COPPER.COM
+	}).id("fluidlogistics:fluid_transporter")
+
+	// 流体接口
+	kubejs.shaped("fluidlogistics:multi_fluid_access_port", [
+		" A ",
+		"AMI",
+		" A "
+	], {
+		A: "#forge:plates/brass",
+		I: "#forge:plates/industrial_iron",
+		M: Mechanism.COPPER.COM
+	}).id("fluidlogistics:multi_fluid_access_port")
 })

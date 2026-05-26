@@ -53,7 +53,8 @@ ServerEvents.recipes((event) => {
 		"jei:/railways/crafting/track_switch_brass",
 		"jei:/createdieselgenerators/distillation/superheated_crude_oil",
 		"jei:/fluidlogistics/waterproof_cardboard_block_from_honeycomb",
-		"fluidlogistics:water_containing_copper_casing"
+		"fluidlogistics:water_containing_copper_casing",
+		"fluidlogistics:multi_fluid_access_port_h"
 	])
 
 	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {

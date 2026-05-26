@@ -212,4 +212,15 @@ ServerEvents.recipes((event) => {
 		P: "#forge:plates/industrial_iron",
 		B: "#forge:plates/brass"
 	}).id("create:crafting/logistics/factory_gauge")
+
+	// 物流接口
+	kubejs.shaped("create_connected:inventory_access_port", [
+		" A ",
+		"AMI",
+		" A "
+	], {
+		A: "#forge:plates/brass",
+		I: "#forge:plates/industrial_iron",
+		M: Mechanism.WOODEN.COM
+	}).id("create_connected:crafting/kinetics/inventory_access_port")
 })
