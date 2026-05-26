@@ -14,4 +14,5 @@ StartupEvents.registry("sound_event", (event) => {
 	addSoundEvent("rocket.shutdown")
 	addSoundEvent("rocket.startup")
 	addSoundEvent("rocket.error")
+	addSoundEvent("meme.welcome")
 })

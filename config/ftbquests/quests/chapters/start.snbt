@@ -192,6 +192,48 @@
 			id: "3A4EA6A20A0727AA"
 			subtitle: "万用挖掘工具"
 			tasks: [{
+				icon: {
+					Count: 1
+					id: "cmi:paxel"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:rock"
+							"tconstruct:wood"
+							"tconstruct:rock"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 1
+								name: "tconstruct:stripping"
+							}
+							{
+								level: 2
+								name: "tconstruct:stonebound"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:durability": 1.25f
+						}
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 5.5f
+							"tconstruct:attack_speed": 1.1f
+							"tconstruct:durability": 162.5f
+							"tconstruct:harvest_tier": "minecraft:stone"
+							"tconstruct:mining_speed": 4.0f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
 				id: "2B75BCE90D8DD22C"
 				item: {
 					Count: 1
@@ -205,8 +247,8 @@
 				type: "item"
 			}]
 			title: "镐尖斧"
-			x: -2.0d
-			y: 18.5d
+			x: 0.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["07FD61829D499994"]
@@ -223,7 +265,7 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["5556629C2263CF73"]
+			dependencies: ["2613E62AF5BCD9AC"]
 			id: "1231A867DC253AAA"
 			subtitle: "石器时代"
 			tasks: [{
@@ -242,7 +284,7 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["5556629C2263CF73"]
+			dependencies: ["3A4EA6A20A0727AA"]
 			id: "637C1318E278B73E"
 			tasks: [{
 				id: "44CCB17D995B1FD3"
@@ -296,20 +338,7 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["4EAFBA3A19526127"]
-			description: ["飞船上的&6合成面板&f还能用，它能代替&6工作台&f进行合成，同时读取网络内存储的物品"]
-			id: "5556629C2263CF73"
-			tasks: [{
-				id: "0F901FDAAE198F28"
-				item: "ae2:crafting_terminal"
-				type: "item"
-			}]
-			title: "更大的工作台"
-			x: 2.0d
-			y: 14.5d
-		}
-		{
-			dependencies: ["5556629C2263CF73"]
+			dependencies: ["2613E62AF5BCD9AC"]
 			description: ["做把锹能让我更快地收集材料......或者还有&6更快的选择&f？"]
 			icon: {
 				Count: 1
@@ -320,9 +349,16 @@
 			}
 			id: "4840B337A93659FC"
 			tasks: [{
-				id: "74B7DA9189FFCF6C"
+				id: "2C62C80B3C7EF0EB"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/shovels"
+					}
+				}
 				title: "锹"
-				type: "checkmark"
+				type: "item"
 			}]
 			x: 2.0d
 			y: 12.5d
@@ -366,11 +402,11 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["73153E1AFAD14636"]
-			description: [
-				"它可以读取&6相连的容器&f，也可以在UI内快捷切换到&6相连的其他匠魂工作方块&f（如&6部件制造台&f等）"
-				"&m但是为什么不用AE呢&r"
+			dependencies: [
+				"73153E1AFAD14636"
+				"4EAFBA3A19526127"
 			]
+			description: ["它可以读取&6相连的容器&f，也可以在UI内快捷切换到&6相连的其他匠魂工作方块&f（如&6部件制造台&f等）"]
 			id: "2613E62AF5BCD9AC"
 			subtitle: "工作台plus"
 			tasks: [{
@@ -378,8 +414,8 @@
 				item: "tconstruct:crafting_station"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 15.5d
+			x: 2.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["73153E1AFAD14636"]
@@ -403,8 +439,8 @@
 				}
 			]
 			title: "工匠的第一步"
-			x: 0.0d
-			y: 17.5d
+			x: -2.0d
+			y: 18.5d
 		}
 		{
 			dependencies: [

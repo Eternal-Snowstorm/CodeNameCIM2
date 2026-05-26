@@ -23,6 +23,14 @@
 			}
 		]
 	},
+	"meme.welcome": {
+		"sounds": [
+			{
+				"name": "cmi:meme/welcome",
+				"stream": true
+			}
+		]
+	},
 	"main_menu": {
 		"sounds": [
 			{
