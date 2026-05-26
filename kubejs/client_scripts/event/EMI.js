@@ -17,6 +17,14 @@ ClientEvents.highPriorityAssets((event) => {
 		"output": "item:cmi:polished_quartz_prism"
 	})
 
+	addEmiRecipeFilter("grinding", {
+		"filters": [
+			{
+				"category": "vintageimprovements:grinder_sandpaper_polishing"
+			}
+		]
+	})
+
 	/**
 	 * @param {string} path
 	 * @param {Internal.JsonElement_} json
