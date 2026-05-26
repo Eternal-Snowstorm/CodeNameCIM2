@@ -1,6 +1,10 @@
 ServerEvents.recipes((event) => {
 	removeRecipe(event, [
-		"jei:/treetap/water_from_crying_obsidian"
+		"jei:/treetap/water_from_crying_obsidian",
+		"minecraft:paper",
+		"mekanism:paper",
+		"edenring:limphium_paper",
+		"farmersdelight:paper_from_tree_bark"
 	])
 
 	let removedMods = [

@@ -465,9 +465,9 @@
 						}
 					}
 				}
+				title: "铜部件"
 				type: "item"
 			}]
-			title: "铜部件"
 			x: 2.0d
 			y: 18.5d
 		}
@@ -491,6 +491,7 @@
 		{
 			dependencies: ["13884F7A75B4D36D"]
 			id: "3D854C186FF6E897"
+			subtitle: "打制石器吗"
 			tasks: [{
 				id: "2FC531D747BB6BDA"
 				item: {
