@@ -1,3 +1,6 @@
+let $EmiIngredient =
+	Java.loadClass("dev.emi.emi.api.stack.EmiIngredient")
+
 ClientEvents.highPriorityAssets((event) => {
 	addEmiRecipeFilter("remove_steel", {
 		filters: [
@@ -5,6 +8,13 @@ ClientEvents.highPriorityAssets((event) => {
 				id: "/jei:/cmi/immersiveengineering/blast_furnace/steel_ingot/"
 			}
 		]
+	})
+
+	addEmiAddingRecipe("polished_quartz_prism_from_world", {
+		"type": "emi:world_interaction",
+		"left": "item:minecraft:quartz",
+		"right": "#forge:ingots/iron",
+		"output": "item:cmi:polished_quartz_prism"
 	})
 
 	/**
