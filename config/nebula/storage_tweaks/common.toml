@@ -12,6 +12,10 @@
 		#type: boolean
 		#default: true
 		no_storage_stack_enabled = true
+		#Whether Sophisticated stack upgrades should stack additively instead of multiplicatively (e.g. 4x 8-tier upgrades give 64 * (8+8+8+8) instead of 64 * 8^4)
+		#type: boolean
+		#default: true
+		additive_stack_upgrade_enabled = true
 
 	#Functional Storage Drawer Upgrade settings
 	[general.drawer_upgrade]

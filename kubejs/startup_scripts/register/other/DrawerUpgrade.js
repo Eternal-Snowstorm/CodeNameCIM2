@@ -37,17 +37,9 @@ StartupEvents.registry("item", (event) => {
 					 * @param {Internal.ItemStack_} stack 
 					 * @returns 
 					 */
-					// m_7626_(stack) {
-					// 	if (Client.level) {
-					// 		let modifyItemName =
-					// 			Component.translatable(`item.${Cmi.MODID}.${name}_upgrade`)
-					// 				.setStyle($Style.EMPTY.applyTo(modifyItemName.getStyle()))
-
-					// 		return modifyItemName
-					// 	} else {
-					// 		return Component.empty()
-					// 	}
-					// },
+					m_7626_(stack) {
+						return Component.translatable(`item.${Cmi.MODID}.${name}_upgrade`)
+					},
 					/**
 					 * 
 					 * @param {Internal.BasicItem$Key_} key 
@@ -58,17 +50,17 @@ StartupEvents.registry("item", (event) => {
 					addTooltipDetails(key, stack, tooltip, advanced) {
 						let itemTranslateKey =
 							Component.translatable(
-								`tooltip.${Cmi.MODID}.storage_upgrade.itemMultiplier`,
+								"storage_tweaks.tooltip.storageupgrade.desc.item.additive",
 								ITEM_MULTIPLIER
 							).gray()
 						let fluidTranslateKey =
 							Component.translatable(
-								`tooltip.${Cmi.MODID}.storage_upgrade.fluidMultiplier`,
+								"storage_tweaks.tooltip.storageupgrade.desc.fluid.additive",
 								FLUID_MULTIPLIER
 							).gray()
 						let ctrlTranslateKey =
 							Component.translatable(
-								`tooltip.${Cmi.MODID}.storage_upgrade.controllerMultiplier`,
+								"storage_tweaks.tooltip.storageupgrade.desc.range.additive",
 								CONTROLLER_MULTIPLIER
 							).gray()
 
