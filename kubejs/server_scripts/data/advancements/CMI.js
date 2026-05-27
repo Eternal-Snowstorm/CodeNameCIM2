@@ -198,4 +198,43 @@ ServerEvents.highPriorityData((event) => {
 			experience: 50
 		}
 	})
+
+	event.addJson("cmi:advancements/fraud.json", {
+		parent: "cmi:start",
+		criteria: {
+			get_water_well: {
+				conditions: {
+					items: [
+						{
+							items: [
+								"cmi:togni_leets"
+							]
+						}
+					]
+				},
+				trigger: "minecraft:inventory_changed"
+			}
+		},
+		display: {
+			announce_to_chat: false,
+			description: {
+				color: "#00b7ffff",
+				translate: "advancements.cmi.fraud.desc"
+			},
+			frame: "goal",
+			hidden: true,
+			icon: {
+				item: "cmi:togni_leets"
+			},
+			show_toast: true,
+			title: {
+				translate: "advancements.cmi.fraud"
+			},
+			requirements: [
+				[
+					"get_togni_leets"
+				]
+			]
+		}
+	})
 })

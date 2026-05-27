@@ -130,25 +130,10 @@
 		#Range: 1 ~ 100000000
 		steel_boiler_capacity = 12000
 
-	#Stack Storage Settings
-	[general.stack_storage]
-		#Whether the cmi:no_stack_upgrade tag should disable storage stack scaling for matching items
+	#Space Elevator Settings
+	[general.space_elevator]
+		#Enable the multi-slot cargo grid in the space elevator storage UI
 		#type: boolean
-		#default: true
-		no_stack_upgrade_enabled = true
-		#Whether the cmi:no_storage_stack tag should force the in-storage stack limit of matching items to 1
-		#type: boolean
-		#default: true
-		no_storage_stack_enabled = true
-
-	#Functional Storage Drawer Upgrade Settings
-	[general.drawer_upgrade]
-		#Whether a drawer can only accept upgrades of the same item type at once
-		#type: boolean
-		#default: true
-		same_upgrade_only_enabled = true
-		#Whether drawer storage upgrades should stack additively instead of multiplicatively
-		#type: boolean
-		#default: true
-		additive_upgrade_enabled = true
+		#default: false
+		"Enable cargo grid" = false
 

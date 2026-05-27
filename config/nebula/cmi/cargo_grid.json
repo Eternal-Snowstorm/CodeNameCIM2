@@ -1,0 +1,27 @@
+{
+  "default": {
+    "width": 1,
+    "height": 1
+  },
+  "rules": [
+    {
+      "match": "item",
+      "value": "minecraft:diamond_sword",
+      "width": 1,
+      "height": 3
+    },
+    {
+      "match": "tag",
+      "value": "minecraft:swords",
+      "width": 1,
+      "height": 2
+    },
+    {
+      "match": "regex",
+      "value": "^minecraft:.*_pickaxe$",
+      "width": 1,
+      "height": 2,
+      "color": "#FFAA22"
+    }
+  ]
+}

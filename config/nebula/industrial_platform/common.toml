@@ -19,9 +19,4 @@
 	#default: 5
 	#Range: 0 ~ 64
 	bottom_filling_distance = 5
-	#Blocks that should be destroyed without drops during platform deployment.
-	#Use "#namespace:path" for block tags, "namespace:path" for block IDs.
-	#Defaults are driven by the industrial_platform:no_drop_blocks block tag.
-	#Examples: "#industrial_platform:no_drop_blocks", "#forge:stone", "minecraft:dirt"
-	no_drop_blocks = ["#industrial_platform:no_drop_blocks"]
 
