@@ -19,6 +19,7 @@ ServerEvents.recipes((event) => {
 		"jei:/immersiveengineering/crafting/redstone_acid",
 		"jei:/immersiveengineering/crafting/sawdust",
 		"jei:/immersiveindustry/chemical",
-		"jei:/immersiveengineering/crafting/paper_from_sawdust"
+		"jei:/immersiveengineering/crafting/paper_from_sawdust",
+		"jei:/immersiveengineering/blastfurnace/steel_block"
 	])
 })

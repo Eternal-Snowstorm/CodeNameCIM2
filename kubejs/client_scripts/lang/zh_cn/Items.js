@@ -197,6 +197,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("andesite_aggregate", "安山混合物")
 	addItemLang("plant_ash", "草木灰")
 	addItemLang("deposit_dust", "矿藏粉末")
+	addItemLang("amethyst_bronze_upgrade", "紫水晶青铜升级")
+	addItemLang("rose_gold_upgrade", "玫瑰金升级")
+	addItemLang("steel_upgrade", "钢升级")
+	addItemLang("hepatizon_upgrade", "黑色柯林斯青铜升级")
 
 	let moleList = [
 		["plate", "板状"],

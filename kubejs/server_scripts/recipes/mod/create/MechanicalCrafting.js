@@ -188,4 +188,34 @@ ServerEvents.recipes((event) => {
 		E: Mechanism.COIL.COM,
 		F: "#forge:plates/iron"
 	}).id("moreburners:electric_burner")
+
+	// 对称之杖
+	create.mechanical_crafting("create:wand_of_symmetry", [
+		" A ",
+		"ARA",
+		" M ",
+		" B ",
+		" H "
+	], {
+		A: "#forge:plates/andesite_alloy",
+		R: "#forge:ingots/refined_radiance",
+		M: Mechanism.PRECISION.COM,
+		B: "#forge:ingots/brass",
+		H: "#forge:ingots/hepatizon"
+	}).id("create:mechanical_crafting/wand_of_symmetry")
+
+	// 指挥棒
+	create.mechanical_crafting("fluidlogistics:hand_pointer", [
+		" A ",
+		"ARA",
+		" M ",
+		" B ",
+		" H "
+	], {
+		A: "#forge:plates/andesite_alloy",
+		R: "create:brass_hand",
+		M: Mechanism.PRECISION.COM,
+		B: "#forge:ingots/brass",
+		H: "#forge:ingots/hepatizon"
+	})
 })
