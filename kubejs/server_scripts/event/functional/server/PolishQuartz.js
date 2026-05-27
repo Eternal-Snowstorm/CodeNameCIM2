@@ -3,7 +3,9 @@ BlockEvents.rightClicked((event) => {
 
 	if (isTargetBlock() && item.getId() === "minecraft:quartz") {
 		player.swing()
-		item.shrink(1)
+		if (!player.isCreative()) {
+			item.shrink(1)
+		}
 		let rand = Math.random()
 		if (rand <= 0.1) {
 			player.give("cmi:polished_quartz_prism")
@@ -33,7 +35,6 @@ BlockEvents.rightClicked((event) => {
 	}
 
 	function isTargetBlock() {
-		return block.getId() === "minecraft:cobbled_deepslate"
-			|| block.getId() === "minecraft:deepslate"
+		return block.hasTag("forge:deepslate")
 	}
 })

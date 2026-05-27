@@ -13,11 +13,11 @@ ClientEvents.highPriorityAssets((event) => {
 	addEmiAddingRecipe("polished_quartz_prism_from_world", {
 		"type": "emi:world_interaction",
 		"left": "#item:forge:gems/quartz",
-		"right": [
-			"item:minecraft:cobbled_deepslate",
-			"item:minecraft:deepslate"
-		],
-		"output": "item:cmi:polished_quartz_prism"
+		"right": "#item:forge:deepslate",
+		"output": [
+			"item:cmi:polished_quartz_prism",
+			"item:thermal:quartz_dust"
+		]
 	})
 
 	addEmiRecipeFilter("grinding", {
