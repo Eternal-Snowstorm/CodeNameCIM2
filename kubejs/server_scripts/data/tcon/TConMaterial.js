@@ -8,8 +8,18 @@ let $ThermalConstructModifierIds =
 	Java.loadClass("mrthomas20121.thermalconstruct.ThermalConstructModifierIds")
 
 ServerEvents.highPriorityData((event) => {
+	/**
+	 * 
+	 * @param {string} name 
+	 * @param {Internal.Consumer_<TConMaterialBuilder>} handler 
+	 * @returns 
+	 */
+	function addMaterial(name, handler) {
+		return new TConMaterial(event, `${Cmi.MODID}:${name}`, handler)
+	}
+
 	// 紫水晶
-	new TConMaterial(event, `${Cmi.MODID}:amethyst`, (builder) => {
+	addMaterial("amethyst", (builder) => {
 		builder.visibility(1, false)
 			.craftable(true)
 			.sortOrder(12)
@@ -37,7 +47,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 工业铁
-	new TConMaterial(event, `${Cmi.MODID}:industrial_iron`, (builder) => {
+	addMaterial("industrial_iron", (builder) => {
 		builder.visibility(2, false)
 			.craftable(false)
 			.sortOrder(12)
@@ -59,7 +69,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 安山合金
-	new TConMaterial(event, `${Cmi.MODID}:andesite_alloy`, (builder) => {
+	addMaterial("andesite_alloy", (builder) => {
 		builder.visibility(2, false)
 			.craftable(true)
 			.sortOrder(12)
@@ -93,7 +103,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 黄铜
-	new TConMaterial(event, `${Cmi.MODID}:brass`, (builder) => {
+	addMaterial("brass", (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(12)
@@ -119,7 +129,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 铸铁
-	new TConMaterial(event, `${Cmi.MODID}:cast_iron`, (builder) => {
+	addMaterial("cast_iron", (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(12)
@@ -141,7 +151,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 暗影钢
-	new TConMaterial(event, `${Cmi.MODID}:shadow_steel`, (builder) => {
+	addMaterial("shadow_steel", (builder) => {
 		builder.visibility(3, false)
 			.craftable(true)
 			.sortOrder(12)
@@ -159,7 +169,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 光辉石
-	new TConMaterial(event, `${Cmi.MODID}:refined_radiance`, (builder) => {
+	addMaterial("refined_radiance", (builder) => {
 		builder.visibility(3, false)
 			.craftable(true)
 			.sortOrder(12)
@@ -176,7 +186,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 阿迪特
-	new TConMaterial(event, `${Cmi.MODID}:ardite`, (builder) => {
+	addMaterial("ardite", (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(12)
@@ -191,7 +201,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 不锈钢
-	new TConMaterial(event, `${Cmi.MODID}:stainless_steel`, (builder) => {
+	addMaterial("stainless_steel", (builder) => {
 		builder.visibility(3, false)
 			.craftable(false)
 			.sortOrder(12)
@@ -215,7 +225,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 戴斯
-	new TConMaterial(event, `${Cmi.MODID}:desh`, (builder) => {
+	addMaterial("desh", (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
 			.sortOrder(12)
@@ -235,7 +245,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 紫金
-	new TConMaterial(event, `${Cmi.MODID}:ostrum`, (builder) => {
+	addMaterial("ostrum", (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
 			.sortOrder(12)
@@ -253,7 +263,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	// 耐热金属
-	new TConMaterial(event, `${Cmi.MODID}:calorite`, (builder) => {
+	addMaterial("calorite", (builder) => {
 		builder.visibility(4, false)
 			.craftable(false)
 			.sortOrder(12)
