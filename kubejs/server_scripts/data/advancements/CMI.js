@@ -1,5 +1,5 @@
 ServerEvents.highPriorityData((event) => {
-	event.addJson("cmi:advancements/start.json", {
+	addAdvancement("start", {
 		criteria: {
 			0: {
 				conditions: {},
@@ -31,7 +31,7 @@ ServerEvents.highPriorityData((event) => {
 		sends_telemetry_event: true
 	})
 
-	event.addJson("cmi:advancements/echoes_north_star.json", {
+	addAdvancement("echoes_north_star", {
 		parent: "cmi:start",
 		criteria: {
 			get_water_well: {
@@ -75,7 +75,7 @@ ServerEvents.highPriorityData((event) => {
 		}
 	})
 
-	event.addJson("cmi:advancements/echoes_south_cross.json", {
+	addAdvancement("echoes_south_cross", {
 		parent: "cmi:echoes_north_star",
 		criteria: {
 			get_accelerator: {
@@ -119,7 +119,7 @@ ServerEvents.highPriorityData((event) => {
 		}
 	})
 
-	event.addJson("cmi:advancements/meet.json", {
+	addAdvancement("meet", {
 		parent: "cmi:echoes_south_cross",
 		criteria: {
 			0: {
@@ -162,7 +162,7 @@ ServerEvents.highPriorityData((event) => {
 		sends_telemetry_event: true
 	})
 
-	event.addJson("cmi:advancements/academic_fraud.json", {
+	addAdvancement("academic_fraud", {
 		parent: "cmi:start",
 		criteria: {
 			no_blast_furnace_iron: {
@@ -199,7 +199,7 @@ ServerEvents.highPriorityData((event) => {
 		}
 	})
 
-	event.addJson("cmi:advancements/fraud.json", {
+	addAdvancement("fraud", {
 		parent: "cmi:start",
 		criteria: {
 			get_water_well: {
@@ -237,4 +237,13 @@ ServerEvents.highPriorityData((event) => {
 			]
 		}
 	})
+
+	/**
+	 * 
+	 * @param {string} name 
+	 * @param {Internal.JsonElement_} json 
+	 */
+	function addAdvancement(name, json) {
+		event.addJson(Cmi.loadResource(`advancements/${name}.json`), json)
+	}
 })
