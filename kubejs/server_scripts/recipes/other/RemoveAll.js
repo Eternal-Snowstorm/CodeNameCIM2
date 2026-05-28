@@ -4,7 +4,8 @@ ServerEvents.recipes((event) => {
 		"minecraft:paper",
 		"mekanism:paper",
 		"edenring:limphium_paper",
-		"farmersdelight:paper_from_tree_bark"
+		"farmersdelight:paper_from_tree_bark",
+		"tconstruct:common/materials/cobalt_nugget_blasting"
 	])
 
 	let removedMods = [

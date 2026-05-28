@@ -115,9 +115,6 @@ ServerEvents.tags("block", (event) => {
 	event.get("create:fan_transparent")
 		.add("tconstruct:seared_basin")
 
-	event.get("industrial_platform:no_drop_blocks")
-		.remove("#forge:ores")
-
 	event.get("create:wrench_pickup")
 		.add([
 			"#thermal:machines",
