@@ -17,7 +17,9 @@ ServerEvents.recipes((event) => {
 		"jei:/thermal/storage/sugar_cane_block",
 		"jei:/thermal/compat/create/smelter_create_alloy_andesite_alloy",
 		"jei:/thermal/fuels/magmatic/magmatic_lava",
-		"jei:/thermal/storage/sawdust_block"
+		"jei:/thermal/storage/sawdust_block",
+		"jei:/thermal_extra/crafting/device_lava_gen",
+		"jei:/thermal_extra/crafting/device_harvester"
 	]
 	removeRecipe(event, removeRecipeIds)
 })

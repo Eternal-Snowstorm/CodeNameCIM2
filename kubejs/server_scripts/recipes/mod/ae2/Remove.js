@@ -10,6 +10,8 @@ ServerEvents.recipes((event) => {
 		"jei:/advanced_ae/quantum_processor_chamber",
 		"jei:/advanced_ae/quantum_alloy_plate",
 		"jei:/ad_astra/alloying/steel_ingot_from_alloying_iron_ingot_and_coals",
-		"jei:/ae2/inscriber/sky_stone_dust"
+		"jei:/ae2/inscriber/sky_stone_dust",
+		"jei:/ae2/network/parts/formation_plane_alt",
+		"jei:/ae2/network/parts/annihilation_plane_alt2",
 	])
 })
