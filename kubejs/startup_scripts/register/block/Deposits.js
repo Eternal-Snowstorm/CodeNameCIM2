@@ -88,8 +88,6 @@ StartupEvents.registry("block", (event) => {
 		.build()
 	new OreNodeBlock("oil_shale")
 		.build()
-
-	// Array Example
-	// addOreNode("diamond", ["deepslate", "nether"])
-	// addOreNode("emerald", ["stone", "deepslate"])
+	new OreNodeBlock("aluminum")
+		.build()
 })

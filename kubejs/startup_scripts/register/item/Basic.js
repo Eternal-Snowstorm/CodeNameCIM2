@@ -130,6 +130,15 @@ StartupEvents.registry("item", (event) => {
 	// 草纤维
 	addMaterial("grass_fiber")
 
+	// 矿物碎块
+	addMaterial("vanadium_ore_chunk")
+		.tag("forge:raw_nuggets")
+		.tag("forge:raw_nuggets/vanadium")
+
+	addMaterial("platinum_ore_chunk")
+		.tag("forge:raw_nuggets")
+		.tag("forge:raw_nuggets/platinum")
+
 	// 草绳
 	addMaterial("grass_string")
 		.tag("forge:string")

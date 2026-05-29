@@ -195,6 +195,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("calcite_dust", "方解石粉")
 	addItemLang("refractory_brick_bloom", "耐火砖坯")
 	addItemLang("andesite_aggregate", "安山混合物")
+	addItemLang("vanadium_ore_chunk", "钒矿物碎块")
+	addItemLang("platinum_ore_chunk", "铂矿物碎块")
 	addItemLang("plant_ash", "草木灰")
 	addItemLang("deposit_dust", "矿藏粉末")
 	addItemLang("amethyst_bronze_upgrade", "紫水晶青铜升级")

@@ -99,6 +99,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addOreNodeLang("cheese", "奶酪")
 	addOreNodeLang("coal", "煤炭")
 	addOreNodeLang("oil_shale", "油页岩")
+	addOreNodeLang("aluminum", "铝")
 
 	addMachineLang("flash_disk_writer", "闪存盘写入器")
 	addMachineLang("chemical_gas_extractor", "化学气体抽取器")
