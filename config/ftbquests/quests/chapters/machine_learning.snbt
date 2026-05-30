@@ -820,7 +820,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 18.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["0A7ACD83404B2AFA"]
@@ -923,6 +923,45 @@
 			}]
 			x: -4.0d
 			y: 19.5d
+		}
+		{
+			dependencies: [
+				"3B5ADA1051DE6F9A"
+				"28DFB902C00FCB4D"
+			]
+			id: "60111BA1F94FFBB5"
+			tasks: [{
+				id: "670E934236784AC6"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:mold"
+					tag: {
+						Mold: "cmi:plate"
+					}
+				}
+				type: "item"
+			}]
+			title: "更高效的石板获取!"
+			x: -4.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6FB78C12B3941053"]
+			id: "28DFB902C00FCB4D"
+			tasks: [{
+				id: "5212896F0A6C5E29"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/industrial_iron"
+					}
+				}
+				title: "工业铁板"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 18.0d
 		}
 	]
 	title: "巧械奇工"

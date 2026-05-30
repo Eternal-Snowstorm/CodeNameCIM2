@@ -1,3 +1,5 @@
+// priority: 18
+
 // 构件相关物品统一调用
 let Mechanism = Object.freeze({
 	// C0
@@ -322,6 +324,18 @@ let Wood = Object.freeze({
 		WOOD: "tconstruct:enderbark_wood",
 		STRIPPED_WOOD: "tconstruct:stripped_enderbark_wood"
 	})
+})
+
+let CDGMolds = Object.freeze({
+	CDG: {
+		BOWL: "createdieselgenerators:bowl",
+		LINES: "createdieselgenerators:lines",
+		CHAIN: "createdieselgenerators:chain",
+		BAR: "createdieselgenerators:bar",
+	},
+	CMI: {
+		PLATE: "cmi:plate",
+	}
 })
 
 let WoodMaterials = [

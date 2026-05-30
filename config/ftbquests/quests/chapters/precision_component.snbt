@@ -121,6 +121,7 @@
 		{
 			dependencies: ["04004B46385E2AF2"]
 			id: "7C2DCC26298ACC51"
+			subtitle: "老罗马风味"
 			tasks: [{
 				id: "069C486393CA376A"
 				item: "tconstruct:molten_lead_bucket"
@@ -332,6 +333,10 @@
 		}
 		{
 			dependencies: ["10FE6C8E2FB59714"]
+			description: [
+				"整合包修改了蓄电池的容量，单个蓄电池的存储量可达到4194303 FE"
+				"而多方块蓄电池组最大为8*8*8，因此512的蓄电池可存储2147483136 FE"
+			]
 			id: "7B311FB3BDA3F3DD"
 			rewards: [{
 				count: 9
@@ -350,10 +355,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"211642A0702308A1"
-				"52C9EDFCFAEADA82"
-			]
+			dependencies: ["211642A0702308A1"]
 			id: "541572E2CD225DD7"
 			tasks: [{
 				id: "2D97AE6C82E2AAF2"

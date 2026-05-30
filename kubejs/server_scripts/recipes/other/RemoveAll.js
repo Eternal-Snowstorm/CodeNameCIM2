@@ -5,7 +5,8 @@ ServerEvents.recipes((event) => {
 		"mekanism:paper",
 		"edenring:limphium_paper",
 		"farmersdelight:paper_from_tree_bark",
-		"tconstruct:common/materials/cobalt_nugget_blasting"
+		"tconstruct:common/materials/cobalt_nugget_blasting",
+		"createdieselgenerators:crafting/basin_lid"
 	])
 
 	let removedMods = [
@@ -30,7 +31,8 @@ ServerEvents.recipes((event) => {
 		"quark:grate",
 		"@torcherino",
 		"tconstruct:nether_grout",
-		"tconstruct:grout"
+		"tconstruct:grout",
+		"createdieselgenerators:mold"
 	]
 	removeOutput.forEach((output) => {
 		event.remove({

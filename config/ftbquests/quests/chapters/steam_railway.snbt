@@ -531,19 +531,6 @@
 		}
 		{
 			dependencies: ["470156018DA261F4"]
-			id: "52C9EDFCFAEADA82"
-			tasks: [{
-				count: 27L
-				id: "04A753C43FC7D413"
-				item: "immersiveengineering:blastbrick"
-				type: "item"
-			}]
-			title: "搭建高炉"
-			x: 4.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["470156018DA261F4"]
 			id: "4A19D6FEC975D2B9"
 			shape: "gear"
 			size: 2.0d
@@ -599,8 +586,8 @@
 				}
 			]
 			title: "熔铸炉"
-			x: 7.0d
-			y: 0.5d
+			x: 4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4A19D6FEC975D2B9"]
