@@ -6,7 +6,8 @@ ServerEvents.recipes((event) => {
 		"edenring:limphium_paper",
 		"farmersdelight:paper_from_tree_bark",
 		"tconstruct:common/materials/cobalt_nugget_blasting",
-		"createdieselgenerators:crafting/basin_lid"
+		"createdieselgenerators:crafting/basin_lid",
+		"craftingstationjei:crafting_station"
 	])
 
 	let removedMods = [
