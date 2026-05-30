@@ -52,9 +52,7 @@ BlockEvents.rightClicked((event) => {
 	 * 
 	 * @param {Internal.BlockRightClickedEventJS_} event 
 	 */
-	function isTrigger(event) {
-		let { item, block } = event
-
+	function isTrigger() {
 		return item.getId() === "cmi:astral_core"
 			&& block.getId() === "cmi:eden_crystal"
 	}
