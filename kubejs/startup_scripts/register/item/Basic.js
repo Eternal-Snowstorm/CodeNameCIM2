@@ -59,18 +59,18 @@ StartupEvents.registry("item", (event) => {
 	addItem("creosote_wood_chip_briquette")
 		.texture(Cmi.loadResource("item/material/wood_chip/done"))
 		.burnTime(200 * 180)
-		.food((food) => {
-			food.hunger(20)
+		.food((builder) => {
+			builder.hunger(20)
 				.saturation(1)
 				.effect("immersiveengineering:flammable", 20 * 60, 5, 1)
 				.effect("minecraft:blindness", 20 * 60, 5, 1)
 				.effect("minecraft:nausea", 20 * 60, 5, 1)
 				.effect("minecraft:instant_damage", 1, 1, 1)
 				.eaten((event) => {
-					let { player, level } = event
+					let { player, level, hand } = event
 					let key = `message.${Cmi.MODID}.food.creosote_wood_chip_briquette`
 
-					if (event.hand !== InteractionHand.MAIN_HAND && !level.isClientSide()) {
+					if (hand !== InteractionHand.MAIN_HAND && !level.isClientSide()) {
 						player.displayClientMessage(Component.translatable(key).blue(), true)
 					}
 				})
@@ -103,7 +103,7 @@ StartupEvents.registry("item", (event) => {
 
 	// 小块焦炭
 	addItem("small_coal_coke")
-		.burnTime(400)
+		.burnTime(200 * 2)
 		.texture(Cmi.loadResource("item/material/small_coal_coke"))
 
 	// 高岭土

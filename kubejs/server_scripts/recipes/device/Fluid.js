@@ -148,7 +148,7 @@ ServerEvents.recipes((event) => {
 
 	// 流体泵
 	kubejs.shapeless("fluidlogistics:fluid_pump", [
-		"create:mechanical_pump",
+		"create:fluid_pipe",
 		"#create:shaft"
 	]).id("fluidlogistics:fluid_pump")
 

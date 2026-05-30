@@ -6,10 +6,10 @@ let $Level =
 	Java.loadClass("net.minecraft.world.level.Level")
 
 BlockEvents.rightClicked((event) => {
-	let { hand, block, level, player } = event
+	let { hand, block, level, player, item } = event
 	let pos = block.getPos()
 
-	if (correctDimension(level.getDimensionKey()) && isTrigger(event) && hand === InteractionHand.MAIN_HAND) {
+	if (correctDimension(level.getDimensionKey()) && isTrigger() && hand === InteractionHand.MAIN_HAND) {
 		player.swing()
 		if ($EdenPortal.checkNewPortal(level, pos.above())) {
 			let center = pos.above()

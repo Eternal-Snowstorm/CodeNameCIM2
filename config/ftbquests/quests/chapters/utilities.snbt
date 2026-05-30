@@ -149,7 +149,7 @@
 				}
 				{
 					id: "1C0A3CAB47B3DFB6"
-					item: "functionalstorage:copper_upgrade"
+					item: "cmi:amethyst_bronze_upgrade"
 					type: "item"
 				}
 			]
@@ -189,7 +189,7 @@
 				}
 				{
 					id: "7707E934906B6AEC"
-					item: "functionalstorage:copper_upgrade"
+					item: "cmi:amethyst_bronze_upgrade"
 					type: "item"
 				}
 			]
@@ -223,7 +223,7 @@
 				}
 				{
 					id: "740D6D6B75B3A98A"
-					item: "functionalstorage:copper_upgrade"
+					item: "cmi:amethyst_bronze_upgrade"
 					type: "item"
 				}
 			]
@@ -605,6 +605,7 @@
 			hide_dependency_lines: true
 			id: "10776E907DD88693"
 			size: 1.0d
+			subtitle: "更快速的注液器"
 			tasks: [{
 				id: "5FD58640C3AD7E1F"
 				item: "cmi:advanced_spout"

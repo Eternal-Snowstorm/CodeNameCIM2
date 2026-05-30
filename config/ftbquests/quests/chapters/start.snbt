@@ -53,6 +53,11 @@
 			dependencies: ["21ED583750523195"]
 			description: ["这是我为数不多能徒手挖掘的材料"]
 			id: "5DC78DC9A01883A1"
+			rewards: [{
+				id: "54681A0AC1BE477B"
+				item: "cmi:initial_item_kit"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				count: 16L
@@ -76,7 +81,7 @@
 			description: ["我可以用它来熔炼一些&6熔点较低&f的金属"]
 			id: "562C10B7F3C07DCF"
 			rewards: [{
-				count: 8
+				count: 16
 				id: "38FDE22246C66CC9"
 				item: "minecraft:coal"
 				type: "item"
@@ -267,17 +272,17 @@
 		{
 			dependencies: ["2613E62AF5BCD9AC"]
 			id: "1231A867DC253AAA"
-			subtitle: "石器时代"
+			subtitle: "原神, 启动!"
 			tasks: [{
-				id: "40BE6170D6E59FB1"
+				id: "02D9C6FC1909A08D"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:cobblestone"
+						value: "forge:stone"
 					}
 				}
-				title: "圆石"
+				title: "石头"
 				type: "item"
 			}]
 			x: 6.0d
@@ -303,10 +308,7 @@
 			y: 16.5d
 		}
 		{
-			dependencies: [
-				"73D78755B4430729"
-				"17AEC8F5B7867AFE"
-			]
+			dependencies: ["17AEC8F5B7867AFE"]
 			description: ["有了焦黑砖，我就能制作熔炼更高熔点金属的设备"]
 			id: "21B1DA369A461281"
 			rewards: [{
@@ -325,7 +327,10 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["1231A867DC253AAA"]
+			dependencies: [
+				"1231A867DC253AAA"
+				"21B1DA369A461281"
+			]
 			id: "73D78755B4430729"
 			shape: "gear"
 			size: 2.0d
@@ -349,16 +354,9 @@
 			}
 			id: "4840B337A93659FC"
 			tasks: [{
-				id: "2C62C80B3C7EF0EB"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/shovels"
-					}
-				}
+				id: "39B8ED66C34F6F63"
 				title: "锹"
-				type: "item"
+				type: "checkmark"
 			}]
 			x: 2.0d
 			y: 12.5d
@@ -404,7 +402,7 @@
 		{
 			dependencies: [
 				"73153E1AFAD14636"
-				"4EAFBA3A19526127"
+				"76DD35F7BAB2AF34"
 			]
 			description: ["它可以读取&6相连的容器&f，也可以在UI内快捷切换到&6相连的其他匠魂工作方块&f（如&6部件制造台&f等）"]
 			id: "2613E62AF5BCD9AC"
@@ -475,6 +473,7 @@
 			dependencies: ["1231A867DC253AAA"]
 			dependency_requirement: "one_completed"
 			id: "5DEF00C4138EE4FB"
+			subtitle: "主世界也有啦"
 			tasks: [{
 				icon: "cmi:quartz_ore"
 				id: "0BD42EA1C12522C2"
@@ -490,6 +489,10 @@
 		}
 		{
 			dependencies: ["13884F7A75B4D36D"]
+			description: [
+				"手持石英右键{minecraft:deepslate, 1}深板岩或{minecraft:cobbled_deepslate, 1}深板岩圆石会有10%的"
+				"概率获取"
+			]
 			id: "3D854C186FF6E897"
 			subtitle: "打制石器吗"
 			tasks: [{
@@ -551,6 +554,8 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
+			size: 2.0d
 			tasks: [
 				{
 					id: "5E298608B9B56D28"
@@ -725,6 +730,29 @@
 			title: "矿脉锤"
 			x: 4.0d
 			y: 15.5d
+		}
+		{
+			dependencies: ["4EAFBA3A19526127"]
+			id: "76DD35F7BAB2AF34"
+			tasks: [{
+				id: "74F9735622F1DEC4"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["76DD35F7BAB2AF34"]
+			id: "256C6C201607525D"
+			subtitle: "更方便的东西"
+			tasks: [{
+				id: "07E1028A8A66D5A9"
+				item: "cmi:handheld_crafting_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
 		}
 	]
 	title: "炽焰匠心"

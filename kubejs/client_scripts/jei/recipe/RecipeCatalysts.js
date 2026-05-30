@@ -2,25 +2,53 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 	let { data } = event
 
 	/**
-	 * 
-	 * @param {string} id JEI页面注册id
-	 * @param {Internal.ItemStack_} item 索引物品
+	 *
+	 * @param {string|string[]} ids JEI页面注册id
+	 * @param {string|Internal.ItemStack_|Array<string|Internal.ItemStack_>} items 索引物品
 	 * @param {string} displayName 显示名称
-	 * @returns 
 	 */
-	function addJeiRecipeIndex(id, item, displayName) {
-		let type = data.jeiHelpers.getRecipeType(ResourceLocation.parse(id)).get()
-		let key = Component.translatable(`recipe.jei.recipe.cmi.${displayName}`)
+	function addJeiRecipeIndex(ids, items, displayName) {
+		ids = Array.isArray(ids) ? ids : [ids]
+		items = Array.isArray(items) ? items : [items]
 
-		if (displayName === undefined) {
-			return data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"]
-				(Item.of(item), type)
+		let recipeTypes = ids
+			.map((id) => {
+				return data.jeiHelpers.getRecipeType(ResourceLocation.parse(id))
+					.orElse(null)
+			})
+			.filter((type) => {
+				return type != null
+			})
+
+		let stack = Item.of(items[0])
+
+		if (displayName !== undefined) {
+			let key = Component.translatable(`recipe.jei.recipe.cmi.${displayName}`)
+			stack = stack.setHoverName(key)
 		}
-		return data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"]
-			(Item.of(item).setHoverName(key), type)
+
+		for (let item of items) {
+			let catalyst = Item.of(item)
+
+			if (displayName !== undefined) {
+				let key = Component.translatable(`recipe.jei.recipe.cmi.${displayName}`)
+				catalyst = catalyst.setHoverName(key)
+			}
+
+			data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
+				catalyst,
+				recipeTypes
+			)
+		}
 	}
 
 	addJeiRecipeIndex("immersiveindustry:crucible", "immersiveindustry:crucible")
-	addJeiRecipeIndex("createdieselgenerators:hammering", "cmi:flint_hammer")
-	addJeiRecipeIndex("createdieselgenerators:hammering", "cmi:diamond_hammer")
+	addJeiRecipeIndex("createdieselgenerators:hammering", [
+		"cmi:flint_hammer",
+		"cmi:diamond_hammer"
+	])
+	addJeiRecipeIndex([
+		"create:spout_filling",
+		"createdieselgenerators:casting"
+	], "cmi:advanced_spout")
 })
