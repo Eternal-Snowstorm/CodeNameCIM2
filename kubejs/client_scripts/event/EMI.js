@@ -34,7 +34,7 @@ ClientEvents.highPriorityAssets((event) => {
 	 * 具体请看 {@link https://github.com/emilyploszaj/emi/wiki/Recipe-Filters EMI Recipe Filters Wiki}
 	 */
 	function addEmiRecipeFilter(path, json) {
-		event.add(addEmi(`recipe/filters/${path}`), json)
+		event.add(laodEmi(`recipe/filters/${path}`), json)
 	}
 
 	/**
@@ -44,7 +44,7 @@ ClientEvents.highPriorityAssets((event) => {
 	 * 具体请看 {@link https://github.com/emilyploszaj/emi/wiki/Adding-Recipes EMI Adding Recipes Wiki}
 	 */
 	function addEmiAddingRecipe(path, json) {
-		event.add(addEmi(`recipe/additions/${path}`), json)
+		event.add(laodEmi(`recipe/additions/${path}`), json)
 	}
 
 	/**
@@ -52,7 +52,7 @@ ClientEvents.highPriorityAssets((event) => {
 	 * @param {string} path 
 	 * @returns 
 	 */
-	function addEmi(path) {
+	function laodEmi(path) {
 		return ResourceLocation.fromNamespaceAndPath("emi", path)
 	}
 })
