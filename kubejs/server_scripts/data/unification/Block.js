@@ -65,6 +65,10 @@ ServerEvents.highPriorityData((event) => {
 		"#forge:storage_blocks/rice_panicle"
 	], "kaleidoscope_cookery:straw_block")
 
+	addUnification("crafting_station", [
+		"tconstruct:crafting_station"
+	], "craftingstationjei:crafting_station")
+
 	function addUnification(name, match, block) {
 		let itemUnification = {
 			matchItems: match,
