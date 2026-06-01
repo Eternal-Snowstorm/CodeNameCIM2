@@ -1,12 +1,10 @@
-type MiningTier =
-	| "minecraft:wood"
+type MiningTier = "minecraft:wood"
 	| "minecraft:stone"
 	| "minecraft:iron"
 	| "minecraft:diamond"
 	| "minecraft:netherite"
 
-type TraitStat =
-	| "default"
+type TraitStat = "default"
 	| "tconstruct:armor"
 	| "tconstruct:head"
 	| "tconstruct:handle"
@@ -64,9 +62,9 @@ interface TConMaterialBuilder {
 	maille(): this
 	shieldCore(): this
 	setTraits(handler: Internal.Consumer_<TraitsBuilder>): this
-	addMaterialRecipes(ingredient: Ingredient_, handler: (builder: MaterialRecipeBuilder) => void): this
-	addMaterialFluidRecipes(fluid: FluidIngredient, handler: (builder: MaterialFluidRecipeBuilder) => void): this
-	addMaterialMeltingRecipes(fluid: Special.Fluid, handler: (builder: MaterialMeltingRecipeBuilder) => void): this
+	addMaterialRecipes(ingredient: Ingredient_, handler: Internal.Consumer_<MaterialRecipeBuilder>): this
+	addMaterialFluidRecipes(fluid: FluidIngredient, handler: Internal.Consumer_<MaterialFluidRecipeBuilder>): this
+	addMaterialMeltingRecipes(fluid: Special.Fluid, handler: Internal.Consumer_<MaterialMeltingRecipeBuilder>): this
 }
 
-declare function TConMaterial(event: Internal.DataPackEventJS_, name: string, handler: (builder: TConMaterialBuilder) => void): void
+declare function TConMaterial(event: Internal.DataPackEventJS_, name: string, handler: Internal.Consumer_<TConMaterialBuilder>): void
