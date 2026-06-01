@@ -46,13 +46,34 @@ ClientEvents.highPriorityAssets((event) => {
 	function addEmiAddingRecipe(path, json) {
 		event.add(laodEmi(`recipe/additions/${path}`), json)
 	}
+})
+
+EmiPlusPlusEvents.registerGroups((event) => {
+	addGroup("forge:storage_blocks", "#forge:storage_blocks")
+	addGroup("forge:ingots", "#forge:ingots")
+	addGroup("forge:raw_materials", "#forge:raw_materials")
+	addGroup("forge:gems", "#forge:gems")
+
+	addGroup("create:mechanisms", "#create:mechanisms")
+	addGroup("create:incomplete_mechanisms", "#create:incomplete_mechanisms")
+	addGroup("cmi:mechanism_flash_drives", "#cmi:mechanism_flash_drives")
+	addGroup("cmi:machine_block", "#cmi:machine_block")
 
 	/**
 	 * 
-	 * @param {string} path 
-	 * @returns 
+	 * @param {string} id 
+	 * @param {Internal.Ingredient_} ingredient 
 	 */
-	function laodEmi(path) {
-		return ResourceLocation.fromNamespaceAndPath("emi", path)
+	function addGroup(id, ingredient) {
+		return event.register(id, ingredient)
 	}
 })
+
+/**
+ * 
+ * @param {string} path 
+ * @returns 
+ */
+function laodEmi(path) {
+	return ResourceLocation.fromNamespaceAndPath("emi", path)
+}

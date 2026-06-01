@@ -51,4 +51,10 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 		"create:spout_filling",
 		"createdieselgenerators:casting"
 	], "cmi:advanced_spout")
+	addJeiRecipeIndex([
+		"create:automatic_packing",
+		"create:packing",
+		"create:pressing",
+		"createdieselgenerators:compression_molding"
+	], "cmi:steam_hammer")
 })
