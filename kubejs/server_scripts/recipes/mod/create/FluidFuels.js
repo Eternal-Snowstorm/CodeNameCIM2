@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 
 	/**
 	 * 
-	 * @param {Internal.InputFluid_} fluid 流体
+	 * @param {Internal.FluidStackJS} fluid 流体
 	 * @param {Number} time 燃烧时间(单位秒)
 	 * @param {Boolean} blue 是否蓝火
 	 * @returns 
