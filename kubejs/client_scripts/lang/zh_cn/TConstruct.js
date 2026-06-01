@@ -2,7 +2,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
 	 * @param {String} key 
-	 * @param {String*} name 
+	 * @param {String} name 
 	 * @param {String} flavour 
 	 * @param {String} encyclopedia 
 	 */
