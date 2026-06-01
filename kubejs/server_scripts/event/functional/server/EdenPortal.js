@@ -8,8 +8,9 @@ let $Level =
 BlockEvents.rightClicked((event) => {
 	let { hand, block, level, player, item } = event
 	let pos = block.getPos()
+	let dimension = level.getDimensionKey()
 
-	if (correctDimension(level.getDimensionKey()) && isTrigger() && hand === InteractionHand.MAIN_HAND) {
+	if (correctDimension() && isTrigger() && hand === InteractionHand.MAIN_HAND) {
 		player.swing()
 		if ($EdenPortal.checkNewPortal(level, pos.above())) {
 			let center = pos.above()
@@ -38,11 +39,7 @@ BlockEvents.rightClicked((event) => {
 		}
 	}
 
-	/**
-	 * 
-	 * @param {Internal.ResourceKey<Internal.Level_>} dimension 
-	 */
-	function correctDimension(dimension) {
+	function correctDimension() {
 		return dimension.equals($Level.OVERWORLD)
 			|| dimension.equals($EdenRing.EDEN_RING_KEY)
 			|| dimension.equals($Level.NETHER)
