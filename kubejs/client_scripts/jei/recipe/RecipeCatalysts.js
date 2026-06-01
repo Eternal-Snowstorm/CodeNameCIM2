@@ -2,12 +2,12 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 	let { data } = event
 
 	/**
-	 *
+	 * 
 	 * @param {string|string[]} ids JEI页面注册id
 	 * @param {string|Internal.ItemStack_|Array<string|Internal.ItemStack_>} items 索引物品
 	 * @param {string} displayName 显示名称
 	 */
-	function addJeiRecipeIndex(ids, items, displayName) {
+	function addJeiRecipeCatalysts(ids, items, displayName) {
 		ids = Array.isArray(ids) ? ids : [ids]
 		items = Array.isArray(items) ? items : [items]
 
@@ -42,16 +42,16 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 		}
 	}
 
-	addJeiRecipeIndex("immersiveindustry:crucible", "immersiveindustry:crucible")
-	addJeiRecipeIndex("createdieselgenerators:hammering", [
+	addJeiRecipeCatalysts("immersiveindustry:crucible", "immersiveindustry:crucible")
+	addJeiRecipeCatalysts("createdieselgenerators:hammering", [
 		"cmi:flint_hammer",
 		"cmi:diamond_hammer"
 	])
-	addJeiRecipeIndex([
+	addJeiRecipeCatalysts([
 		"create:spout_filling",
 		"createdieselgenerators:casting"
 	], "cmi:advanced_spout")
-	addJeiRecipeIndex([
+	addJeiRecipeCatalysts([
 		"create:automatic_packing",
 		"create:packing",
 		"create:pressing",
