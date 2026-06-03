@@ -1,14 +1,16 @@
 BlockEvents.rightClicked((event) => {
 	let { block, item, player, level } = event
 	let pos = block.getPos()
+	const CHANCE = 0.1
 
 	if (isTargetBlock() && isTriggerItem()) {
 		player.swing()
+
 		if (!player.isCreative()) {
 			item.shrink(1)
 		}
-		let rand = Math.random()
-		if (rand <= 0.1) {
+
+		if (Math.random() <= CHANCE) {
 			player.give("cmi:polished_quartz_prism")
 			level.playSound(
 				null,
