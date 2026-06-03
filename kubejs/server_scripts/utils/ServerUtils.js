@@ -327,15 +327,15 @@ let Wood = Object.freeze({
 })
 
 let CDGMolds = Object.freeze({
-	CDG: {
+	CDG: Object.freeze({
 		BOWL: "createdieselgenerators:bowl",
 		LINES: "createdieselgenerators:lines",
 		CHAIN: "createdieselgenerators:chain",
 		BAR: "createdieselgenerators:bar",
-	},
-	CMI: {
+	}),
+	CMI: Object.freeze({
 		PLATE: "cmi:plate",
-	}
+	})
 })
 
 let WoodMaterials = [
