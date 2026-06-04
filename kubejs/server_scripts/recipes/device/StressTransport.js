@@ -36,9 +36,13 @@ ServerEvents.recipes((event) => {
 			"#forge:hammers"
 		])
 
-		create.cutting(`cmi:incomplete_${material}_large_cogwheel`, `#forge:gears/${material}`)
+		create.cutting(`cmi:incomplete_${material}_large_cogwheel`, [
+			`#forge:gears/${material}`
+		])
 
-		create.cutting(`2x cmi:incomplete_${material}_cogwheel`, `cmi:incomplete_${material}_large_cogwheel`)
+		create.cutting(`2x cmi:incomplete_${material}_cogwheel`, [
+			`cmi:incomplete_${material}_large_cogwheel`
+		])
 
 		create.deploying(`4x steampowered:${material}_large_cogwheel`, [
 			`cmi:incomplete_${material}_large_cogwheel`,
@@ -182,5 +186,4 @@ ServerEvents.recipes((event) => {
 		"create:shaft",
 		"#forge:plates/iron"
 	])
-
 })

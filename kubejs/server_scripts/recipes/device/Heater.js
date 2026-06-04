@@ -2,7 +2,6 @@ ServerEvents.recipes((event) => {
 	let { kubejs } = event.getRecipes()
 	const BRICK = "tconstruct:seared_brick"
 	const PRISM = "#forge:glass/prism"
-	const GLASS = "#forge:glass"
 
 	// 焦黑融化器
 	kubejs.shaped("tconstruct:seared_melter", [
@@ -98,5 +97,4 @@ ServerEvents.recipes((event) => {
 		C: "minecraft:nether_bricks",
 		D: Mechanism.NETHER.COM
 	}).id("create:crafting/kinetics/blaze_burner")
-
 })
