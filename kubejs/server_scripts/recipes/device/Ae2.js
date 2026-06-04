@@ -69,44 +69,71 @@ ServerEvents.recipes((event) => {
 		"create_connected:control_chip",
 		"#forge:plates/silver",
 		"#forge:dusts/certus_quartz",
-		"cmi:ferrit_core"
+		"cmi:ferrit_core",
+		Fluid.of("immersiveengineering:redstone_acid", 100)
 	]).id("ae2:network/cells/item_storage_components_cell_1k_part")
 
 	thermal_extra.component_assembly("ae2:cell_component_4k", [
 		"ae2:logic_processor",
-		"#forge:plates/silver",
-		"ae2:cell_component_1k",
-		"ae2:cell_component_1k",
-		"ae2:cell_component_1k",
-		"ae2:cell_component_1k"
+		"#forge:gems/certus_quartz",
+		"cmi:combined_component_4k",
+		Fluid.of("immersiveengineering:redstone_acid", 100)
 	]).id("ae2:network/cells/item_storage_components_cell_4k_part")
 
 	thermal_extra.component_assembly("ae2:cell_component_16k", [
 		"ae2:calculation_processor",
-		"#forge:plates/silver",
-		"ae2:cell_component_4k",
-		"ae2:cell_component_4k",
-		"ae2:cell_component_4k",
-		"ae2:cell_component_4k"
+		"#forge:gems/certus_quartz",
+		"cmi:combined_component_16k",
+		Fluid.of("immersiveengineering:redstone_acid", 100)
 	]).id("ae2:network/cells/item_storage_components_cell_16k_part")
 
 	thermal_extra.component_assembly("ae2:cell_component_64k", [
 		"ae2:engineering_processor",
-		"#forge:plates/silver",
-		"ae2:cell_component_16k",
-		"ae2:cell_component_16k",
-		"ae2:cell_component_16k",
-		"ae2:cell_component_16k"
+		"#forge:gems/certus_quartz",
+		"cmi:combined_component_64k",
+		Fluid.of("immersiveengineering:redstone_acid", 100)
 	]).id("ae2:network/cells/item_storage_components_cell_64k_part")
 
 	thermal_extra.component_assembly("ae2:cell_component_256k", [
 		"advanced_ae:quantum_processor",
-		"#forge:plates/silver",
-		"ae2:cell_component_64k",
-		"ae2:cell_component_64k",
-		"ae2:cell_component_64k",
-		"ae2:cell_component_64k"
+		"#forge:gems/certus_quartz",
+		"cmi:combined_component_256k",
+		Fluid.of("immersiveengineering:redstone_acid", 100)
 	]).id("ae2:network/cells/item_storage_components_cell_256k_part")
+
+	// 整合组件
+	kubejs.shaped("cmi:combined_component_4k", [
+		" C ",
+		"CPC",
+		" C "
+	], {
+		C: "ae2:cell_component_1k",
+		P: "#forge:plates/silver"
+	})
+	kubejs.shaped("cmi:combined_component_16k", [
+		" C ",
+		"CPC",
+		" C "
+	], {
+		C: "ae2:cell_component_4k",
+		P: "#forge:plates/silver"
+	})
+	kubejs.shaped("cmi:combined_component_64k", [
+		" C ",
+		"CPC",
+		" C "
+	], {
+		C: "ae2:cell_component_16k",
+		P: "#forge:plates/silver"
+	})
+	kubejs.shaped("cmi:combined_component_256k", [
+		" C ",
+		"CPC",
+		" C "
+	], {
+		C: "ae2:cell_component_64k",
+		P: "#forge:plates/silver"
+	})
 
 	// 样板
 	kubejs.shaped("4x ae2:blank_pattern", [

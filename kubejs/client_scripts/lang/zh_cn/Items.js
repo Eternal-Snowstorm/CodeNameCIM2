@@ -169,6 +169,10 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addItemLang("incomplete_scanning_module", "扫描模块(半成品)")
 	addItemLang("incomplete_scanner", "扫描器(半成品)")
+	addItemLang("combined_component_4k", "4K ME整合组件")
+	addItemLang("combined_component_16k", "16K ME整合组件")
+	addItemLang("combined_component_64k", "64K ME整合组件")
+	addItemLang("combined_component_256k", "256K ME整合组件")
 
 	addItemLang("music_disc_mechanism", "Mechanism - Belalus")
 	addItemLang("togni_leets", "钢錠")

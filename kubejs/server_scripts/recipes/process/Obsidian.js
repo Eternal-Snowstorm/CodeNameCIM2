@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
 	]).energy(4800)
 
 	// 致密坚固板
-	create.sequenced_assembly("cmi:dense_sturdy_sheet", "forge:plates/obsidian", [
+	create.sequenced_assembly("cmi:dense_sturdy_sheet", "#forge:plates/obsidian", [
 		create.filling(Inc.OBSIDIAN_PLATE, [
 			Inc.OBSIDIAN_PLATE,
 			Fluid.of("tconstruct:molten_obsidian", 250)

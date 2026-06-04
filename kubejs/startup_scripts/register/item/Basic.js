@@ -163,6 +163,15 @@ StartupEvents.registry("item", (event) => {
 	// 铁氧体磁芯	
 	addMaterial("ferrit_core")
 
+	// ME整合组件
+	addMaterial("combined_component_4k")
+
+	addMaterial("combined_component_16k")
+
+	addMaterial("combined_component_64k")
+
+	addMaterial("combined_component_256k")
+
 	// 羊皮纸
 	addItem("parchment")
 		.texture(Cmi.loadResource("item/material/parchment/parchment"))

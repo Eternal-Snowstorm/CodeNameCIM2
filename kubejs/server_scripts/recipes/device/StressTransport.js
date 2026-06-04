@@ -15,12 +15,12 @@ ServerEvents.recipes((event) => {
 			"#forge:hammers"
 		])
 
-		create.deploying(`4x steampowered:${material}_cogwheel`, [
+		create.deploying(`steampowered:${material}_cogwheel`, [
 			`cmi:incomplete_${material}_cogwheel`,
 			"#create:shaft"
 		])
 
-		create.deploying(`4x steampowered:${material}_cogwheel`, [
+		create.deploying(`steampowered:${material}_cogwheel`, [
 			"create:shaft",
 			`cmi:incomplete_${material}_cogwheel`
 		])
@@ -44,12 +44,12 @@ ServerEvents.recipes((event) => {
 			`cmi:incomplete_${material}_large_cogwheel`
 		])
 
-		create.deploying(`4x steampowered:${material}_large_cogwheel`, [
+		create.deploying(`steampowered:${material}_large_cogwheel`, [
 			`cmi:incomplete_${material}_large_cogwheel`,
 			"#create:shaft"
 		])
 
-		create.deploying(`4x steampowered:${material}_large_cogwheel`, [
+		create.deploying(`steampowered:${material}_large_cogwheel`, [
 			"create:shaft",
 			`cmi:incomplete_${material}_large_cogwheel`
 		])
@@ -75,12 +75,12 @@ ServerEvents.recipes((event) => {
 		"cmi:incomplete_large_cogwheel"
 	])
 
-	create.deploying("4x create:cogwheel", [
+	create.deploying("create:cogwheel", [
 		"cmi:incomplete_cogwheel",
 		"#create:shaft"
 	]).id("create:deploying/cogwheel")
 
-	create.deploying("4x create:cogwheel", [
+	create.deploying("create:cogwheel", [
 		"create:shaft",
 		"cmi:incomplete_cogwheel"
 	])
@@ -100,12 +100,12 @@ ServerEvents.recipes((event) => {
 		"#forge:gears/wooden"
 	])
 
-	create.deploying("4x create:large_cogwheel", [
+	create.deploying("create:large_cogwheel", [
 		"cmi:incomplete_large_cogwheel",
 		"#create:shaft"
 	]).id("create:deploying/large_cogwheel")
 
-	create.deploying("4x create:large_cogwheel", [
+	create.deploying("create:large_cogwheel", [
 		"create:shaft",
 		"cmi:incomplete_large_cogwheel"
 	])
