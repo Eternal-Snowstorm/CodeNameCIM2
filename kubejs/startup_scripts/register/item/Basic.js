@@ -163,6 +163,9 @@ StartupEvents.registry("item", (event) => {
 	// 铁氧体磁芯	
 	addMaterial("ferrit_core")
 
+	// 黑曜石元件
+	addMaterial("obsidian_cell")
+
 	// ME整合组件
 	addMaterial("combined_component_4k")
 

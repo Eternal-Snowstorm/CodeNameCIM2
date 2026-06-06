@@ -34,6 +34,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("moreburners:heat_upgrade")
 	addCommonTooltip("create:basin")
 	addCommonTooltip("create:sail_frame")
+	addCommonTooltip("cmi:obsidian_cell")
 
 	/**
 	 * 
