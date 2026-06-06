@@ -437,6 +437,9 @@ ServerEvents.tags("item", (event) => {
 		.add("tconstruct:seared_fuel_gauge")
 		.add("tconstruct:seared_ingot_gauge")
 
+	event.get("cmi:aluminum_oxide")
+		.add("cmi:aluminum_oxide")
+
 	event.get("forge:stone")
 		.add("#forge:cobblestone")
 
