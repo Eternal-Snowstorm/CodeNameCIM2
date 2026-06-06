@@ -358,4 +358,14 @@ ServerEvents.recipes((event) => {
 		C: Casing.THERMAL,
 		X: Mechanism.POTION.COM
 	}).id("thermal:device_potion_diffuser")
+	//蜂箱漏斗
+	kubejs.shaped("thermal:device_hive_extractor", [
+		"M",
+		"C",
+		"X"
+	], {
+		M: Mechanism.ANDESITE.COM,
+		C: Casing.ANDESITE,
+		X: "minecraft:shears",
+	}).id("thermal:device_hive_extractor")
 })

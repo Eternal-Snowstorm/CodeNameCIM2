@@ -133,3 +133,4 @@ config/nebula/value.txt
 !config/immediatelyfast.json
 !config/mantle-client.toml
 !config/emi.css
+!config/treechop-common.toml

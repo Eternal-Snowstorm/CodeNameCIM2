@@ -27,3 +27,8 @@ StartupEvents.registry("item", (event) => {
 	addCellItem("tier_3_aviation", 0xFCD720)
 	addCellItem("tier_4_aviation", 0xFFC4F2)
 })
+
+StartupEvents.registry("item", (event) => {
+	event.create(`${Cmi.MODID}:obsidian_cell`)
+	.tooltip('你搞砸了。右键拆开')
+})
