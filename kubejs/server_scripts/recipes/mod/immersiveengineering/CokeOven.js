@@ -26,13 +26,4 @@ ServerEvents.recipes((event) => {
 		"time": 900,
 		"tickEnergy": 56
 	})
-
-	// event.custom({
-	// 	"type": "immersiveindustry:rotary_kiln",
-	// 	"input": Item.of("minecraft:dirt").toJson(),
-	// 	"result": Item.of("thermal:coal_coke").toJson(),
-	// 	"result_fluid": Fluid.of("immersiveengineering:creosote").toJson(),
-	// 	"time": 900,
-	// 	"tickEnergy": 56
-	// }).id("ie:test")
 })

@@ -72,5 +72,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("titanium_solution", "钛溶液")
 	addFluidLang("silicon_rubber", "液态硅橡胶")
 	addFluidLang("cracked_gasoline", "裂化汽油")
+	addFluidLang("caustic_soda_solution", "烧碱溶液")
+	addFluidLang("sodium_aluminate_solution", "铝酸钠溶液")
 
 })

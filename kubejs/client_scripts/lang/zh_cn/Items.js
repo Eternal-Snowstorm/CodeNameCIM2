@@ -207,6 +207,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("rose_gold_upgrade", "玫瑰金升级")
 	addItemLang("steel_upgrade", "钢升级")
 	addItemLang("hepatizon_upgrade", "黑色柯林斯青铜升级")
+	addItemLang("red_mud", "赤泥")
+	addItemLang("aluminum_oxide", "氧化铝")
 
 	let moleList = [
 		["plate", "板状"],

@@ -172,6 +172,12 @@ StartupEvents.registry("item", (event) => {
 
 	addMaterial("combined_component_256k")
 
+	// 赤泥
+	addMaterial("red_mud")
+
+	// 氧化铝
+	addMaterial("aluminum_oxide")
+
 	// 羊皮纸
 	addItem("parchment")
 		.texture(Cmi.loadResource("item/material/parchment/parchment"))

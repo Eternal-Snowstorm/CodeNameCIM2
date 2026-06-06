@@ -140,6 +140,15 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("cmi:delta_unstable_solution")
 		.add("cmi:delta_unstable_solution")
 
+	event.get("cmi:sea_water")
+		.add("cmi:sea_water")
+		
+	event.get("cmi:caustic_soda_solution")
+		.add("cmi:caustic_soda_solution")
+
+	event.get("cmi:sodium_aluminate_solution")
+		.add("cmi:sodium_aluminate_solution")
+
 	event.get("tconstruct:fuels")
 		.add("ad_astra:cryo_fuel")
 		.add("cmi:delta_unstable_solution")

@@ -21,21 +21,5 @@ ServerEvents.recipes((event) => {
 		"time": 100
 	})
 
-	// 粉碎铝增产
-	event.custom({
-		"type": "immersiveindustry:electrolyzer",
-		"input": {
-			"tag": "create:crushed_raw_materials/aluminum"
-		},
-		"fluid": {
-			"tag": "minecraft:water",
-			"amount": 1000
-		},
-		"result": {
-			"item": "immersiveengineering:dust_aluminum",
-			"count": 5
-		},
-		"large_only": true,
-		"time": 200
-	})
+
 })
