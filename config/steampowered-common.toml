@@ -72,6 +72,12 @@
 		#Range: 0.0 ~ 1.0
 		steelFlywheelSuckEfficiency = 0.7
 
+	[flywheel.brass_flywheel]
+		#Range: 0 ~ 8192
+		brassFlywheelCapacity = 1024
+		#Range: 0 ~ 8192
+		brassFlywheelSpeed = 16
+
 [dynamo]
 	#If dynamo is disabled in the server config, the following will be ignored!
 	#Range: 0 ~ 8192

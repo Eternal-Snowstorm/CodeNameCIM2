@@ -43,11 +43,9 @@ ServerEvents.recipes((event) => {
 		vintageimprovements.laser_cutting(Incomplete.CONTROL, [
 			Incomplete.CONTROL
 		]).energy(4000).maxChargeRate(1000)
-	])
-		.transitionalItem(Incomplete.CONTROL)
+	]).transitionalItem(Incomplete.CONTROL)
 		.loops(1)
 		.id("create_connected:sequenced_assembly/control_chip")
-
 
 	event.custom({
 		"type": "ae2:inscriber",
@@ -82,8 +80,7 @@ ServerEvents.recipes((event) => {
 		vintageimprovements.laser_cutting(Incomplete.LOGIC, [
 			Incomplete.LOGIC
 		]).energy(4000).maxChargeRate(1000)
-	])
-		.transitionalItem(Incomplete.LOGIC)
+	]).transitionalItem(Incomplete.LOGIC)
 		.loops(1)
 
 	event.custom({
@@ -119,8 +116,7 @@ ServerEvents.recipes((event) => {
 		vintageimprovements.laser_cutting(Incomplete.CALCULATION, [
 			Incomplete.CALCULATION
 		]).energy(4000).maxChargeRate(1000)
-	])
-		.transitionalItem(Incomplete.CALCULATION)
+	]).transitionalItem(Incomplete.CALCULATION)
 		.loops(1)
 
 	event.custom({
@@ -153,11 +149,10 @@ ServerEvents.recipes((event) => {
 			Incomplete.ENGINEERING,
 			"cmi:redstone_wire"
 		]),
-		vintageimprovements.laser_cutting(Incomplete.ENGINEERING,
+		vintageimprovements.laser_cutting(Incomplete.ENGINEERING, [
 			Incomplete.ENGINEERING
-		).energy(4000).maxChargeRate(1000)
-	])
-		.transitionalItem(Incomplete.ENGINEERING)
+		]).energy(4000).maxChargeRate(1000)
+	]).transitionalItem(Incomplete.ENGINEERING)
 		.loops(1)
 
 	event.custom({
@@ -193,8 +188,7 @@ ServerEvents.recipes((event) => {
 		vintageimprovements.laser_cutting(Print.QUANTUM,
 			Incomplete.QUANTUM
 		).energy(4000).maxChargeRate(1000)
-	])
-		.transitionalItem(Print.QUANTUM)
+	]).transitionalItem(Print.QUANTUM)
 		.loops(1)
 
 	event.custom({
