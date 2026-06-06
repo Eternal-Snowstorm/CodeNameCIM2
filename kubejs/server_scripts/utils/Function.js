@@ -128,20 +128,6 @@ function makeOf(type) {
 
 /**
  * 
- * @param {Internal.Ingredient_} output 
- * @param {Internal.Ingredient_} input 
- * @returns 
- */
-function aeCharger(output, input) {
-	return {
-		type: "ae2:charger",
-		ingredient: Ingredient.of(input).toJson(),
-		result: Item.of(Ingredient.getFirstItemId(output)).toJson()
-	}
-}
-
-/**
- * 
  * @param {Internal.ItemStack_} input 
  * @returns 
  */
