@@ -181,6 +181,24 @@ StartupEvents.registry("item", (event) => {
 	// 氧化铝
 	addMaterial("aluminum_oxide")
 
+	// 幽匿碎块
+	addMaterial("sculk_chunk")
+
+	// 失活幽匿
+	addMaterial("dead_sculk")
+
+	// 活化幽匿
+	addMaterial("active_sculk")
+
+	// 幽匿骨粉
+	addMaterial("sculk_bonemeal")
+
+	// 幽匿之骨
+	addMaterial("sculk_bone")
+
+	// 幽匿电路板
+	addMaterial("sculk_circuit")
+
 	// 羊皮纸
 	addItem("parchment")
 		.texture(Cmi.loadResource("item/material/parchment/parchment"))

@@ -17,4 +17,5 @@ JEIEvents.information((event) => {
 	// addJEIInfo("#cmi:liquid_output")
 	addJEIInfo("#cmi:peat_gen")
 	addJEIInfo("thermal:rubber")
+	addJEIInfo("cmi:sludge_extract")
 })
