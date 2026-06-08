@@ -47,6 +47,8 @@
   "extendedae_plus:wt_network_usable": null,
   "extendedae_plus:wt_owner": null,
   "fluidlogistics:contraption_multi_fluid_tank": null,
+  "fluidlogistics:mechanical_fluid_gun_fluids": null,
+  "fluidlogistics:multi_fluid_access_port_fluids": null,
   "fluidlogistics:multi_fluid_tank": null,
   "fluidlogistics:package_fluid_storage": null,
   "fluidlogistics:package_item_storage": null,
