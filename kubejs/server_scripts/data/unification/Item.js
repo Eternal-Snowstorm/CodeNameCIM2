@@ -35,6 +35,24 @@ ServerEvents.highPriorityData((event) => {
 		"thermal:quartz_dust"
 	))
 
+	// 青金石粉
+	addJsonFile("lapis_dust", addUnification(
+		"#forge:dusts/lapis",
+		"thermal:lapis_dust"
+	))
+
+	// 绿宝石粉
+	addJsonFile("emerald_dust", addUnification(
+		"#forge:dusts/emerald",
+		"thermal:emerald_dust"
+	))
+
+	// 钻石粉
+	addJsonFile("diamond_dust", addUnification(
+		"#forge:dusts/diamond",
+		"thermal:diamond_dust"
+	))
+
 	// 硫粉
 	addJsonFile("sulfur_dust", addUnification(
 		"#forge:dusts/sulfur",
