@@ -48,6 +48,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("radsand", "辐射沙")
 	addBlockLang("kaolinite", "高岭土")
 	addBlockLang("refractory_grout", "耐火砖泥")
+	addBlockLang("entro_block", "恩特罗块")
 
 	addBlockLang("brass_stairs", "黄铜楼梯")
 	addBlockLang("eden_crystal", "伊甸水晶")

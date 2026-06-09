@@ -66,7 +66,7 @@ ServerEvents.recipes((event) => {
 
 	// 存储单元
 	thermal_extra.component_assembly("ae2:cell_component_1k", [
-		"create_connected:control_chip",
+		"ae2:logic_processor",
 		"#forge:plates/silver",
 		"#forge:dusts/certus_quartz",
 		"cmi:ferrit_core",
@@ -74,21 +74,21 @@ ServerEvents.recipes((event) => {
 	]).id("ae2:network/cells/item_storage_components_cell_1k_part")
 
 	thermal_extra.component_assembly("ae2:cell_component_4k", [
-		"ae2:logic_processor",
+		"ae2:calculation_processor",
 		"#forge:gems/certus_quartz",
 		"cmi:combined_component_4k",
 		Fluid.of("immersiveengineering:redstone_acid", 100)
 	]).id("ae2:network/cells/item_storage_components_cell_4k_part")
 
 	thermal_extra.component_assembly("ae2:cell_component_16k", [
-		"ae2:calculation_processor",
+		"ae2:engineering_processor",
 		"#forge:gems/certus_quartz",
 		"cmi:combined_component_16k",
 		Fluid.of("immersiveengineering:redstone_acid", 100)
 	]).id("ae2:network/cells/item_storage_components_cell_16k_part")
 
 	thermal_extra.component_assembly("ae2:cell_component_64k", [
-		"ae2:engineering_processor",
+		"cmi:concurrent_processor",
 		"#forge:gems/certus_quartz",
 		"cmi:combined_component_64k",
 		Fluid.of("immersiveengineering:redstone_acid", 100)
@@ -311,13 +311,15 @@ ServerEvents.recipes((event) => {
 	thermal_extra.component_assembly("4x ae2:basic_card", [
 		"#forge:plates/iron",
 		Mechanism.SMART.COM,
-		"#forge:ingots/gold"
+		"#forge:plates/silicon_rubber",
+		"#forge:ingots/electrum"
 	]).id("ae2:materials/basiccard")
 
 	thermal_extra.component_assembly("4x ae2:advanced_card", [
 		"#forge:plates/silver",
 		Mechanism.SMART.COM,
-		"#forge:gems/diamond"
+		"#forge:plates/silicon_rubber",
+		"#forge:ingots/etrium"
 	]).id("ae2:materials/advancedcard")
 
 	thermal_extra.component_assembly("ae2:wireless_booster", [
@@ -486,7 +488,7 @@ ServerEvents.recipes((event) => {
 		"ae2:formation_core",
 		"create:brass_hand"
 	]).id("ae2:network/parts/formation_plane")
-	
+
 	// 破坏面板
 	thermal_extra.component_assembly("ae2:annihilation_plane", [
 		"ae2:annihilation_core",
@@ -752,7 +754,7 @@ ServerEvents.recipes((event) => {
 	]).id("advanced_ae:smallappupgrade")
 
 	// 2^3空间组件
-	thermal_extra.component_assembly('ae2:spatial_cell_component_2' , [
+	thermal_extra.component_assembly('ae2:spatial_cell_component_2', [
 		'ae2:engineering_processor',
 		'#forge:plates/silver',
 		'ae2:fluix_dust',
@@ -760,7 +762,7 @@ ServerEvents.recipes((event) => {
 	]).id("ae2:network/cells/spatial_components")
 
 	// 16^3空间组件
-	thermal_extra.component_assembly('ae2:spatial_cell_component_16' , [
+	thermal_extra.component_assembly('ae2:spatial_cell_component_16', [
 		'ae2:engineering_processor',
 		'#forge:plates/silver',
 		'ae2:spatial_cell_component_2',
@@ -770,7 +772,7 @@ ServerEvents.recipes((event) => {
 	]).id("ae2:network/cells/spatial_components_0")
 
 	// 128^3空间组件
-	thermal_extra.component_assembly('ae2:spatial_cell_component_128' , [
+	thermal_extra.component_assembly('ae2:spatial_cell_component_128', [
 		'advanced_ae:quantum_processor',
 		'#forge:plates/silver',
 		'ae2:spatial_cell_component_16',

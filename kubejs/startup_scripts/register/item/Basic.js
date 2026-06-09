@@ -199,6 +199,21 @@ StartupEvents.registry("item", (event) => {
 	// 幽匿电路板
 	addMaterial("sculk_circuit")
 
+	// 恩特罗系列
+	addItem("entro_crystal")
+		.texture("expatternprovider:item/entro_crystal")
+		.tag("forge:gems/entro")
+		.tag("forge:gems")
+
+	addItem("concurrent_processor")
+		.texture("expatternprovider:item/concurrent_processor")
+
+	addItem("printed_concurrent_processor")
+		.texture("expatternprovider:item/concurrent_processor_print")
+
+	addItem("concurrent_processor_press")
+		.texture("expatternprovider:item/concurrent_processor_press")
+
 	// 羊皮纸
 	addItem("parchment")
 		.texture(Cmi.loadResource("item/material/parchment/parchment"))

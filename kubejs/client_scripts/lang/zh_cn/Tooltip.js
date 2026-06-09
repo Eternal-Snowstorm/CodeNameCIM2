@@ -113,7 +113,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("create:basin", "使用{minecraft:sponge, 1}海绵可以清空内部所有流体")
 	addCommonTooltipLang("create:sail_frame", `不再支持作为风帆为{create:windmill_bearing, 1}风车轴承产生应力`)
 	addCommonTooltipLang("cmi:astral_core", "用于激活{cmi:eden_crystal, 1}星环传送门的核心§c 小心落雷")
-	addCommonJadeTipLang("cmi:obsidian_cell", "你搞砸了, 右键拆开")
+	addCommonTooltipLang("cmi:obsidian_cell", "你搞砸了, 右键拆开")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",

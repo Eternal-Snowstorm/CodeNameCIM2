@@ -6,6 +6,7 @@ ServerEvents.recipes((event) => {
 		LOGIC: "cmi:incomplete_logic_processor",
 		CALCULATION: "cmi:incomplete_calculation_processor",
 		ENGINEERING: "cmi:incomplete_engineering_processor",
+		CONCURRENT: "cmi:incomplete_concurrent_processor",
 		QUANTUM: "cmi:incomplete_quantum_processor"
 	}
 
@@ -13,6 +14,7 @@ ServerEvents.recipes((event) => {
 		LOGIC: "ae2:printed_logic_processor",
 		CALCULATION: "ae2:printed_calculation_processor",
 		ENGINEERING: "ae2:printed_engineering_processor",
+		CONCURRENT: "cmi:printed_concurrent_processor",
 		QUANTUM: "advanced_ae:printed_quantum_processor"
 	}
 
@@ -21,6 +23,7 @@ ServerEvents.recipes((event) => {
 		LOGIC: "ae2:logic_processor",
 		CALCULATION: "ae2:calculation_processor",
 		ENGINEERING: "ae2:engineering_processor",
+		CONCURRENT: "cmi:concurrent_processor",
 		QUANTUM: "advanced_ae:quantum_processor"
 	}
 
@@ -30,7 +33,7 @@ ServerEvents.recipes((event) => {
 	], [
 		create.deploying(Incomplete.CONTROL, [
 			Incomplete.CONTROL,
-			"create:polished_rose_quartz"
+			"#forge:plates/redstone"
 		]),
 		create.deploying(Incomplete.CONTROL, [
 			Incomplete.CONTROL,
@@ -50,7 +53,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "ae2:inscriber",
 		"ingredients": {
-			"bottom": Ingredient.of("create:polished_rose_quartz").toJson(),
+			"bottom": Ingredient.of("#forge:plates/redstone").toJson(),
 			"middle": Ingredient.of("#forge:plates/copper").toJson(),
 			"top": Ingredient.of("cmi:inscribed_silicon").toJson()
 		},
@@ -67,7 +70,7 @@ ServerEvents.recipes((event) => {
 		]).itemAsHead("ae2:logic_processor_press"),
 		create.deploying(Incomplete.LOGIC, [
 			Incomplete.LOGIC,
-			"#forge:ingots/hop_graphite"
+			"create:polished_rose_quartz"
 		]),
 		create.deploying(Incomplete.LOGIC, [
 			Incomplete.LOGIC,
@@ -86,7 +89,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "ae2:inscriber",
 		"ingredients": {
-			"bottom": Ingredient.of("#forge:ingots/hop_graphite").toJson(),
+			"bottom": Ingredient.of("create:polished_rose_quartz").toJson(),
 			"middle": Ingredient.of(Print.LOGIC).toJson(),
 			"top": Ingredient.of("cmi:inscribed_silicon").toJson()
 		},
@@ -103,7 +106,7 @@ ServerEvents.recipes((event) => {
 		]).itemAsHead("ae2:calculation_processor_press"),
 		create.deploying(Incomplete.CALCULATION, [
 			Incomplete.CALCULATION,
-			"#forge:silicon"
+			"#forge:ingots/hop_graphite"
 		]),
 		create.deploying(Incomplete.CALCULATION, [
 			Incomplete.CALCULATION,
@@ -122,7 +125,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "ae2:inscriber",
 		"ingredients": {
-			"bottom": Ingredient.of("ae2:silicon").toJson(),
+			"bottom": Ingredient.of("#forge:ingots/hop_graphite").toJson(),
 			"middle": Ingredient.of(Print.CALCULATION).toJson(),
 			"top": Ingredient.of("cmi:inscribed_silicon").toJson()
 		},
@@ -139,7 +142,7 @@ ServerEvents.recipes((event) => {
 		]).itemAsHead("ae2:engineering_processor_press"),
 		create.deploying(Incomplete.ENGINEERING, [
 			Incomplete.ENGINEERING,
-			"cmi:silicon_carbide"
+			"#forge:silicon"
 		]),
 		create.deploying(Incomplete.ENGINEERING, [
 			Incomplete.ENGINEERING,
@@ -158,13 +161,50 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "ae2:inscriber",
 		"ingredients": {
-			"bottom": Ingredient.of("cmi:silicon_carbide").toJson(),
+			"bottom": Ingredient.of("#forge:silicon").toJson(),
 			"middle": Ingredient.of(Print.ENGINEERING).toJson(),
 			"top": Ingredient.of("cmi:inscribed_silicon").toJson()
 		},
 		"mode": "press",
 		"result": Item.of(Processor.ENGINEERING).toJson()
 	}).id("ae2:inscriber/engineering_processor")
+
+	// 并发处理器
+	create.sequenced_assembly(Processor.CONCURRENT, [
+		"#forge:gems/entro"
+	], [
+		vintageimprovements.curving(Incomplete.CONCURRENT, [
+			Incomplete.CONCURRENT
+		]).itemAsHead("cmi:concurrent_processor_press"),
+		create.deploying(Print.CONCURRENT, [
+			Incomplete.CONCURRENT,
+			"cmi:silicon_carbide"
+		]),
+		create.deploying(Print.CONCURRENT, [
+			Incomplete.CONCURRENT,
+			"ae2:printed_silicon"
+		]),
+		create.deploying(Print.CONCURRENT, [
+			Incomplete.CONCURRENT,
+			"cmi:redstone_wire"
+		]),
+		vintageimprovements.laser_cutting(Print.CONCURRENT,
+			Incomplete.CONCURRENT
+		).energy(4000).maxChargeRate(1000)
+	]).transitionalItem(Print.CONCURRENT)
+		.loops(1)
+
+	event.custom({
+		"type": "ae2:inscriber",
+		"ingredients": {
+			"bottom": Ingredient.of("cmi:silicon_carbide").toJson(),
+			"middle": Ingredient.of(Print.CONCURRENT).toJson(),
+			"top": Ingredient.of("cmi:inscribed_silicon").toJson()
+		},
+		"mode": "press",
+		"result": Item.of(Processor.CONCURRENT).toJson()
+	})
+
 
 	// 量子处理器
 	create.sequenced_assembly(Processor.QUANTUM, [
@@ -258,5 +298,31 @@ ServerEvents.recipes((event) => {
 		"output": Item.of(Print.ENGINEERING, 9).toJson()
 	}).id("expatternprovider:cutter/engineering")
 
-	
+	// 并发电路板
+	event.custom({
+		"type": "ae2:inscriber",
+		"ingredients": {
+			"middle": Ingredient.of("#forge:gems/entro").toJson(),
+			"top": Ingredient.of("cmi:concurrent_processor_press").toJson()
+		},
+		"mode": "inscribe",
+		"result": Item.of(Print.CONCURRENT).toJson()
+	})
+
+	event.custom({
+		"type": "expatternprovider:circuit_cutter",
+		"fluid_input": {
+			"amount": 100,
+			"ingredient": {
+				"fluid": "minecraft:water"
+			}
+		},
+		"item_input": {
+			"amount": 1,
+			"ingredient": {
+				"tag": "forge:storage_blocks/entro"
+			}
+		},
+		"output": Item.of(Print.CONCURRENT, 9).toJson()
+	})
 })

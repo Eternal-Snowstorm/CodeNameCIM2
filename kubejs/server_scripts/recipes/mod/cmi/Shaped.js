@@ -144,6 +144,15 @@ ServerEvents.recipes((event) => {
 		A: "#forge:storage_blocks/brass"
 	})
 
+	// 恩特罗锭
+	kubejs.shaped("cmi:entro_block", [
+		"AAA",
+		"AAA",
+		"AAA"
+	], {
+		A: "#forge:gems/entro"
+	})
+
 	// 旗帜
 	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		kubejs.shaped(`ad_astra:${color}_flag`, [

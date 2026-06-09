@@ -184,6 +184,19 @@ StartupEvents.registry("block", (event) => {
 		.resistance(0.5)
 		.tagBlock(CmiToolType.SHOVEL.tag())
 
+	// 恩特罗块
+	addBlock("entro_block")
+		.textureAll("expatternprovider:block/entro_block")
+		.soundType(SoundType.STONE)
+		.hardness(5)
+		.resistance(5)
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.STONE.tag())
+		.item((item) => {
+			item.tag("forge:storage_blocks/entro")
+				.tag("forge:storage_blocks")
+		})
+
 	// 雕纹铜块
 	addBlock("chiseled_copper")
 		.textureAll(Cmi.loadResource("block/chiseled_copper/0"))

@@ -82,6 +82,9 @@ StartupEvents.registry("item", (event) => {
 	addItem("engineering_processor")
 		.texture("ae2:item/printed_engineering_processor")
 
+	addItem("concurrent_processor")
+		.texture("expatternprovider:item/concurrent_processor_print")
+
 	addItem("quantum_processor")
 		.texture("advanced_ae:item/printed_quantum_processor")
 

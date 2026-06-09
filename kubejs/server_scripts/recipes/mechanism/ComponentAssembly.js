@@ -19,9 +19,9 @@ ServerEvents.recipes((event) => {
 	// 智能构件
 	thermal_extra.component_assembly(`4x ${Mechanism.SMART.AUG.getId()}`, [
 		"#forge:wires/redstone",
-		"create_connected:control_chip",
 		"ae2:logic_processor",
-		"ae2:calculation_processor"
+		"ae2:calculation_processor",
+		"ae2:engineering_processor"
 	])
 
 	// 强化构件

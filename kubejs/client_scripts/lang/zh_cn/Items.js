@@ -174,6 +174,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("combined_component_64k", "64K ME整合组件")
 	addItemLang("combined_component_256k", "256K ME整合组件")
 
+	addItemLang("entro_crystal", "恩特罗水晶")
+	addItemLang("concurrent_processor", "并发处理器")
+	addItemLang("printed_concurrent_processor", "并发电路板")
+	addItemLang("concurrent_processor_press", "并发压印模板")
+
 	addItemLang("music_disc_mechanism", "Mechanism - Belalus")
 	addItemLang("togni_leets", "钢錠")
 	addItemLang("hammer_head", "冲压头")
@@ -210,12 +215,12 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("obsidian_cell", "黑曜石元件")
 	addItemLang("red_mud", "赤泥")
 	addItemLang("aluminum_oxide", "氧化铝")
-	addItemLang("sculk_chunk","幽匿碎块")
-	addItemLang("dead_sculk","失活幽匿")
-	addItemLang("active_sculk","活化幽匿")
-	addItemLang("sculk_bonemeal","幽匿骨粉")
-	addItemLang("sculk_bone","幽匿之骨")
-	addItemLang("sculk_circuit","幽匿电路板")
+	addItemLang("sculk_chunk", "幽匿碎块")
+	addItemLang("dead_sculk", "失活幽匿")
+	addItemLang("active_sculk", "活化幽匿")
+	addItemLang("sculk_bonemeal", "幽匿骨粉")
+	addItemLang("sculk_bone", "幽匿之骨")
+	addItemLang("sculk_circuit", "幽匿电路板")
 
 	let moleList = [
 		["plate", "板状"],

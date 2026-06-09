@@ -32,6 +32,10 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/void"
 	])
 
+	kubejs.shapeless("9x cmi:entro_crystal", [
+		"cmi:entro_block"
+	])
+
 	// 合成蓝图
 	kubejs.shapeless("create:crafting_blueprint", [
 		"#forge:nuggets/iron",
