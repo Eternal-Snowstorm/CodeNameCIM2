@@ -108,11 +108,11 @@ ServerEvents.recipes((event) => {
 		Fluid.of("tconstruct:molten_copper", 90)
 	]).heated().id("create:mixing/brass_ingot")
 
-	// 淤泥悬浊液
-	create.mixing(Fluid.of("cmi:sludge_suspension", 1000), [
-		{ fluidTag: "deepdrilling:sludge", amount: 500 },
-		Fluid.of("minecraft:water", 500)
-	])
+	// // 淤泥悬浊液
+	// create.mixing(Fluid.of("cmi:sludge_suspension", 1000), [
+	// 	{ fluidTag: "deepdrilling:sludge", amount: 500 },
+	// 	Fluid.of("minecraft:water", 500)
+	// ])
 
 	// 墨囊
 	create.mixing("2x minecraft:ink_sac", [

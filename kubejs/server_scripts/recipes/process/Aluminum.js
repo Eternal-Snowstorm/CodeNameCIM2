@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { vintageimprovements, create } = event.getRecipes()
+    let { vintageimprovements, create, thermal } = event.getRecipes()
 
     event.remove({
         type: "immersiveindustry:electrolyzer",
@@ -47,4 +47,14 @@ ServerEvents.recipes((event) => {
         "large_only": true,
         "time": 200
     })
+
+    thermal.pyrolyzer([
+        Item.of("minecraft:iron_nugget").withChance(0.75),
+        Item.of("cmi:aluminum_oxide").withChance(0.75),
+        Item.of("cmi:lime_dust").withChance(0.75),
+        Item.of("thermal:sapphire_dust").withChance(0.25),
+        Fluid.of("cmi:sludge_suspension",10)
+    ],[
+        "cmi:red_mud"
+    ])
 })

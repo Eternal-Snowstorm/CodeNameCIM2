@@ -60,6 +60,7 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("xenon", 0x1E90FF)
 	addColorFluid("radon", 0x00FF00)
 	addColorFluid("mercury", 0xA9C0FF)
+	addColorFluid("sculk_culture_medium", 0x062E37)
 
 	addThickColorFluid("silicon_rubber", 0xBBBBBB)
 
