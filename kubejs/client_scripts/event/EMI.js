@@ -36,16 +36,6 @@ ClientEvents.highPriorityAssets((event) => {
 	function addEmiRecipeFilter(path, json) {
 		event.add(laodEmi(`recipe/filters/${path}`), json)
 	}
-
-	/**
-	 * 
-	 * @param {string} path 
-	 * @param {Internal.JsonElement_} json
-	 * 具体请看 {@link https://github.com/emilyploszaj/emi/wiki/Adding-Recipes EMI Adding Recipes Wiki}
-	 */
-	function addEmiAddingRecipe(path, json) {
-		event.add(laodEmi(`recipe/additions/${path}`), json)
-	}
 })
 
 EmiPlusPlusEvents.registerGroups((event) => {

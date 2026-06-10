@@ -93,7 +93,7 @@
 	"enableChromaBlockOutlines": false,
 	// Enable Chroma on tooltip outlines.
 	// DEFAULT: `false`
-	"enableChromaToolTips": true,
+	"enableChromaToolTips": false,
 	// Enable Chroma on HUD text.
 	// DEFAULT: `false`
 	"enableChromaHUD": true,
