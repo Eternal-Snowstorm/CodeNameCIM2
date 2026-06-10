@@ -134,3 +134,4 @@ config/nebula/value.txt
 !config/mantle-client.toml
 !config/emi.css
 !config/treechop-common.toml
+!config/legendarytooltips-common.toml
