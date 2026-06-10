@@ -1,11 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { create, minecraft, kubejs } = event.getRecipes()
 
-	event.remove({
-		id: "create/haunting/lapis_recycling",
-		id: "create/crushing/prismarine_crystals"
-	})
-
 	// 粉碎
 	create.crushing([
 		Item.of("cmi:sculk_chunk"),
@@ -45,11 +40,9 @@ ServerEvents.recipes((event) => {
 		"XXX",
 		"XXX",
 		"XXX",
-	],
-		{
-			X: "cmi:small_coal_coke"
-		}
-	)
+	], {
+		X: "cmi:small_coal_coke"
+	})
 
 	// 末影珍珠粉
 	create.haunting("thermal:ender_pearl_dust", [

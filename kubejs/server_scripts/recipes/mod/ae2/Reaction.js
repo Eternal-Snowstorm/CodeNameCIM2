@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 			 * @param {Array[object]} inputs - 数组, 包含物品和流体输入
 			 */
 			setInputs: function (inputs) {
-				inputs.forEach(input => {
+				inputs.forEach((input) => {
 					if (input.fluidStack) {
 						json.fluid = input
 					} else {
