@@ -5,4 +5,5 @@ StartupEvents.registry("mekanism:infuse_type", (event) => {
 	}
 
 	addMekanismInfuseType("chaotic_void", 0x790082)
+	addMekanismInfuseType("etrium", 0x32FFD4)
 })

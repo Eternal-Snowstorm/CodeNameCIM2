@@ -56,8 +56,6 @@ StartupEvents.registry("fluid", (event) => {
 	}
 
 	addColorFluid("trinitrotoluene_solution", 0xFFEFA8)
-	addColorFluid("geyser_jet", 0x3D57FF)
-	addColorFluid("xenon", 0x1E90FF)
 	addColorFluid("radon", 0x00FF00)
 	addColorFluid("mercury", 0xA9C0FF)
 	addColorFluid("sculk_culture_medium", 0x062E37)

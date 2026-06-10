@@ -4,9 +4,7 @@ StartupEvents.registry("mekanism:gas", (event) => {
 			.color(color)
 	}
 
-	// addMekanismGas("sulfide_gas_mixture", 0xB22222)
 	addMekanismGas("nitroglycerine", 0xFFFBD3)
-	addMekanismGas("xenon", 0x1E90FF)
 	addMekanismGas("radon", 0x00FF00)
 	addMekanismGas("refined_nuke_waste", 0x7CFC00)
 	addMekanismGas("mercury", 0xA9C0FF)

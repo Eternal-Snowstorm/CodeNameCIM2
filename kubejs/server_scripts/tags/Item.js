@@ -500,10 +500,15 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:plates/hdpe")
 		.add("mekanism:hdpe_sheet")
 
+	event.get("ae2:inscriber_presses")
+		.add("cmi:concurrent_processor_press")
+		.add("advanced_ae:quantum_processor_press")
+
 	event.get("vintageimprovements:curving_heads")
 		.add("ae2:calculation_processor_press")
 		.add("ae2:engineering_processor_press")
 		.add("ae2:logic_processor_press")
+		.add("cmi:concurrent_processor_press")
 		.add("advanced_ae:quantum_processor_press")
 
 	event.get("thermal:crafting/casts")
