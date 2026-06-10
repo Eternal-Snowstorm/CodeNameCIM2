@@ -61,5 +61,6 @@
 	"display.cmi.disabled_multiblock": " (已禁用)",
 	"cmi.tooltip.storageupgrade.desc.item.additive": "使该容器的物品存储量增加 %s 倍",
 	"cmi.tooltip.storageupgrade.desc.fluid.additive": "使该容器的流体存储量增加 %s 倍",
-	"cmi.tooltip.storageupgrade.desc.range.additive": "将控制器的作用半径延长 %s 格"
+	"cmi.tooltip.storageupgrade.desc.range.additive": "将控制器的作用半径延长 %s 格",
+	"block.cmi.ae2.sky_stone_chest.mysterious_cube": "压印模板存储箱"
 }

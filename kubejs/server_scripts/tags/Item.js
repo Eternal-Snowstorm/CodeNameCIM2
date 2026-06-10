@@ -31,9 +31,14 @@ ServerEvents.tags("item", (event) => {
 	event.get("create:mechanisms/nuclear")
 		.add("cmi:nuclear_mechanism")
 
-	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
-		event.get(`forge:dyes/${color}`)
+	CmiGlobal.DYE_COLOR_GROUP.forEach((colors) => {
+		event.get(`forge:dyes/${colors}`)
 			.add("cmi:colorful_mechanism")
+
+		// 潜影盒
+		event.get("minecraft:shulker_boxes")
+			.add("minecraft:shulker_box")
+			.add(`minecraft:${colors}_shulker_box`)
 	})
 
 	event.get("forge:workbenches")

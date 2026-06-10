@@ -22,7 +22,7 @@
 		showModifiers = true
 		#If non-empty, only this material will be shown on tools in JEI (or the first valid material if this is invalid for the tool).
 		#If empty, all materials will show
-		showOnlyToolMaterial = "tconstruct:iron"
+		showOnlyToolMaterial = ""
 		#If non-empty, only material will be shown on parts in JEI (or the first valid material if this is invalid for the part).
 		#If empty, all materials will show
 		showOnlyPartMaterial = ""
