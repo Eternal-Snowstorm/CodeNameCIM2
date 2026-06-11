@@ -20,7 +20,7 @@ ClientEvents.highPriorityAssets((event) => {
 	addEmiRecipeFilter("grinding", {
 		"filters": [
 			{
-				"category": "vintageimprovements:grinder_sandpaper_polishing"
+				category: "vintageimprovements:grinder_sandpaper_polishing"
 			}
 		]
 	})
