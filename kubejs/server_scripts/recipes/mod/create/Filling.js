@@ -53,8 +53,8 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:crystal_catalyt", 50)
 	])
 	// 高压蒸汽容器
-	create.filling('steampowered:pressurized_steam_container', [
-		'steampowered:pressurized_gas_container',
+	create.filling("steampowered:pressurized_steam_container", [
+		"steampowered:pressurized_gas_container",
 		Fluid.of("mekanism:steam", 1000)
 	])
 })

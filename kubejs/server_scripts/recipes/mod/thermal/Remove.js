@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let removeRecipeIds = [
+	removeRecipe(event, [
 		"jei:/thermal/gunpowder_4",
 		"jei:/thermal/machines/press/unpacking/press_packed_ice_unpacking",
 		"jei:/thermal/machines/press/unpacking/press_blue_ice_unpacking",
@@ -20,6 +20,5 @@ ServerEvents.recipes((event) => {
 		"jei:/thermal/storage/sawdust_block",
 		"jei:/thermal_extra/crafting/device_lava_gen",
 		"jei:/thermal_extra/crafting/device_harvester"
-	]
-	removeRecipe(event, removeRecipeIds)
+	])
 })

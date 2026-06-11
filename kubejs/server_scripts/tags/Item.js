@@ -41,6 +41,11 @@ ServerEvents.tags("item", (event) => {
 			.add(`minecraft:${colors}_shulker_box`)
 	})
 
+	event.get("cmi:quartz_glass_material")
+		.add("#forge:dusts/quartz")
+		.add("#forge:dusts/pure_quartz")
+		.add("#forge:dusts/certus_quartz")
+
 	event.get("forge:workbenches")
 		.add("immersiveengineering:craftingtable")
 		.add("edenring:auritis_crafting_table")
