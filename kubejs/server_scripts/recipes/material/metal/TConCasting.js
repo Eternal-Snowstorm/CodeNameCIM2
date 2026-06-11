@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 		let fluid = Ingredient.getFirstFluidId(`tconstruct:molten_${metal}`)
 
 		if (fluid === null) {
-			console.warn(`No molten metal found for ${metal}!`)
+			// console.warn(`No molten metal found for ${metal}!`)
 			return
 		}
 
@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
 				`${MULTI_USE_CAST}/nugget`
 			]).energy(600)
 		} else {
-			console.warn(`No nugget found for ${metal}!`)
+			// console.warn(`No nugget found for ${metal}!`)
 		}
 
 		if (Ingredient.isNotNull(BLOCK)) {
@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
 				.fluid(Fluid.of(fluid, 810))
 				.cooling_time(20 * 9)
 		} else {
-			console.warn(`No storage block found for ${metal}!`)
+			// console.warn(`No storage block found for ${metal}!`)
 		}
 
 		if (Ingredient.isNotNull(PLATE)) {
@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
 				`${MULTI_USE_CAST}/plate`
 			]).energy(4800)
 		} else {
-			console.warn(`No plate found for ${metal}!`)
+			// console.warn(`No plate found for ${metal}!`)
 		}
 
 		if (Ingredient.isNotNull(ROD)) {
@@ -102,7 +102,7 @@ ServerEvents.recipes((event) => {
 				`${SINGLE_USE_CAST}/rod`
 			]).energy(2400)
 		} else {
-			console.warn(`No rod found for ${metal}!`)
+			// console.warn(`No rod found for ${metal}!`)
 		}
 
 		if (Ingredient.isNotNull(GEAR)) {
@@ -122,7 +122,7 @@ ServerEvents.recipes((event) => {
 				`${MULTI_USE_CAST}/gear`
 			]).energy(9600)
 		} else {
-			console.warn(`No gear found for ${metal}!`)
+			// console.warn(`No gear found for ${metal}!`)
 		}
 
 		if (Ingredient.isNotNull(COIN)) {
@@ -142,7 +142,7 @@ ServerEvents.recipes((event) => {
 				`${MULTI_USE_CAST}/coin`
 			]).energy(1600)
 		} else {
-			console.warn(`No coins found for ${metal}!`)
+			// console.warn(`No coins found for ${metal}!`)
 		}
 
 		event.remove([

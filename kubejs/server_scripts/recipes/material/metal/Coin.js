@@ -25,10 +25,10 @@ ServerEvents.recipes((event) => {
 				]).energy(800)
 
 			} else {
-				console.warn(`No nuggets found for ${metal}!`)
+				// console.warn(`No nuggets found for ${metal}!`)
 			}
 		} else {
-			console.warn(`No coin found for ${metal}!`)
+			// console.warn(`No coin found for ${metal}!`)
 		}
 
 		event.remove([

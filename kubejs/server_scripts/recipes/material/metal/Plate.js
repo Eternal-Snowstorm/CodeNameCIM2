@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 					.input(INGOT)
 					.mold("cmi:plate_mold")
 			} else {
-				console.warn(`No plate found for ${metal}!`)
+				// console.warn(`No plate found for ${metal}!`)
 			}
 		}
 	})

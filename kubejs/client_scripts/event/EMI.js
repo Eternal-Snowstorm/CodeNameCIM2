@@ -1,10 +1,10 @@
 ClientEvents.highPriorityAssets((event) => {
 	addEmiRecipeFilter("remove_steel", {
-		filters: [
-			{
-				id: "/jei:/cmi/immersiveengineering/blast_furnace/steel_ingot/"
-			}
-		]
+		id: "/jei:/cmi/immersiveengineering/blast_furnace/steel_ingot/"
+	})
+
+	addEmiRecipeFilter("grinding", {
+		category: "vintageimprovements:grinder_sandpaper_polishing"
 	})
 
 	addEmiAddingRecipe("polished_quartz_prism_from_world", {
@@ -17,21 +17,15 @@ ClientEvents.highPriorityAssets((event) => {
 		]
 	})
 
-	addEmiRecipeFilter("grinding", {
-		"filters": [
-			{
-				category: "vintageimprovements:grinder_sandpaper_polishing"
-			}
-		]
-	})
-
 	/**
 	 * @param {string} path
-	 * @param {Internal.JsonElement_} json
+	 * @param {Internal.JsonElement_} filter
 	 * 具体请看 {@link https://github.com/emilyploszaj/emi/wiki/Recipe-Filters EMI Recipe Filters Wiki}
 	 */
-	function addEmiRecipeFilter(path, json) {
-		event.add(loadEmi(`recipe/filters/${path}`), json)
+	function addEmiRecipeFilter(path, filter) {
+		event.add(loadEmi(`recipe/filters/${path}`), {
+			filters: [filter]
+		})
 	}
 
 	/**

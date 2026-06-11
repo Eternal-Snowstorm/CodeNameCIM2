@@ -29,6 +29,6 @@ function removeRecipe(event, ids) {
 				id: realId
 			})
 
-			console.log(realId)
+			// console.log(realId)
 		})
 }

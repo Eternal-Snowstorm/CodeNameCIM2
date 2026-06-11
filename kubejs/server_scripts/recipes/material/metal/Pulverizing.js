@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
 
 				// mekanism.enriching(`4x ${DUST}`, `3x ${RAW_ORE}`)
 			} else {
-				console.warn(`No raw material found for ${metal}!`)
+				// console.warn(`No raw material found for ${metal}!`)
 			}
 			if (Ingredient.isNotNull(ORE)) {
 				thermal.pulverizer(`2x ${DUST}`, [
@@ -43,7 +43,7 @@ ServerEvents.recipes((event) => {
 				// mekanism.enriching(`2x ${DUST}`, ORE)
 
 			} else {
-				console.warn(`No ore found for ${metal}!`)
+				// console.warn(`No ore found for ${metal}!`)
 			}
 			if (Ingredient.isNotNull(RAW_BLOCK)) {
 				immersiveengineering.crusher(`12x ${DUST}`)
@@ -52,11 +52,11 @@ ServerEvents.recipes((event) => {
 
 				// mekanism.enriching(`12x ${DUST}`, RAW_BLOCK)
 			} else {
-				console.warn(`No storage block found for raw ${metal}!`)
+				// console.warn(`No storage block found for raw ${metal}!`)
 			}
 
 		} else {
-			console.warn(`No dust found for ${metal}!`)
+			// console.warn(`No dust found for ${metal}!`)
 
 		}
 

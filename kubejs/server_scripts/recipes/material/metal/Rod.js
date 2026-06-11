@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
 				.input(INGOT)
 				.mold("cmi:rod_mold")
 		} else {
-			console.warn(`No rod found for ${metal}!`)
+			// console.warn(`No rod found for ${metal}!`)
 		}
 
 		event.remove([

@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
 				.input(INGOT)
 				.mold("cmi:wire_mold")
 		} else {
-			console.warn(`No wire found for ${metal}!`)
+			// console.warn(`No wire found for ${metal}!`)
 		}
 
 		event.remove([

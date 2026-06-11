@@ -128,7 +128,7 @@ ServerEvents.recipes((event) => {
 					"temperature": meltingPoint
 				})
 			}
-			console.log(`created recipes for material ${metal}`)
+			// console.log(`created recipes for material ${metal}`)
 		}
 	})
 })

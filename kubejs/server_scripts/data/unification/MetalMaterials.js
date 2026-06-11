@@ -37,7 +37,7 @@ ServerEvents.highPriorityData((event) => {
 				))
 
 				// 输出完成统一的信息
-				console.debug(`oei:replacements/${material}_${type}.json is generated!`)
+				// console.debug(`oei:replacements/${material}_${type}.json is generated!`)
 			}
 		})
 	})
@@ -66,7 +66,7 @@ ServerEvents.highPriorityData((event) => {
 			))
 
 			// 输出完成统一的信息
-			console.debug(`oei:replacements/raw_${material}.json is generated!`)
+			// console.debug(`oei:replacements/raw_${material}.json is generated!`)
 		}
 	})
 
@@ -94,7 +94,7 @@ ServerEvents.highPriorityData((event) => {
 			))
 
 			// 输出完成统一的信息
-			console.debug(`oei:replacements/raw_${material}_block.json is generated!`)
+			// console.debug(`oei:replacements/raw_${material}_block.json is generated!`)
 		}
 	})
 

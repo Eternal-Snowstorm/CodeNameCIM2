@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
 					Item.of(`9x ${EXP_NUGGET}`).withChance(0.75)
 				], RAW_BLOCK)
 			} else {
-				console.warn(`No storage block found for raw ${metal}!`)
+				// console.warn(`No storage block found for raw ${metal}!`)
 			}
 			if (Ingredient.isNotNull(RAW_ORE)) {
 				create.crushing([
@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
 					Item.of(EXP_NUGGET).withChance(0.75)
 				], RAW_ORE)
 			} else {
-				console.warn(`No raw material found for ${metal}!`)
+				// console.warn(`No raw material found for ${metal}!`)
 			}
 			if (Ingredient.isNotNull(ORE)) {
 				create.crushing([
@@ -42,10 +42,10 @@ ServerEvents.recipes((event) => {
 					Item.of("minecraft:cobblestone").withChance(0.125)
 				], ORE)
 			} else {
-				console.warn(`No ore found for ${metal}!`)
+				// console.warn(`No ore found for ${metal}!`)
 			}
 		} else {
-			console.warn(`No crushed raw material found for ${metal}!`)
+			// console.warn(`No crushed raw material found for ${metal}!`)
 		}
 
 		event.remove([

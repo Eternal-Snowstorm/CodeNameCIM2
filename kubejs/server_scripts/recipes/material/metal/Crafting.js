@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
 				A: INGOT
 			})
 		} else {
-			console.warn(`No storage block found for ${metal}!`)
+			// console.warn(`No storage block found for ${metal}!`)
 		}
 		if (Ingredient.isNotNull(NUGGET)) {
 			kubejs.shapeless(`9x ${NUGGET}`, [
@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
 				A: NUGGET
 			})
 		} else {
-			console.warn(`No nugget found for ${metal}!`)
+			// console.warn(`No nugget found for ${metal}!`)
 		}
 		if (Ingredient.isNotNull(RAW_ORE)) {
 			if (Ingredient.isNotNull(RAW_BLOCK)) {
@@ -53,10 +53,10 @@ ServerEvents.recipes((event) => {
 					A: RAW_ORE
 				})
 			} else {
-				console.warn(`No storage block found for raw ${metal}!`)
+				// console.warn(`No storage block found for raw ${metal}!`)
 			}
 		} else {
-			console.warn(`No raw material found for ${metal}!`)
+			// console.warn(`No raw material found for ${metal}!`)
 		}
 
 		if (Ingredient.isNotNull(CRUSHED)) {
@@ -71,10 +71,10 @@ ServerEvents.recipes((event) => {
 					A: RAW_NUGGET
 				})
 			} else {
-				console.warn(`No nugget found for raw ${metal}!`)
+				// console.warn(`No nugget found for raw ${metal}!`)
 			}
 		} else {
-			console.warn(`No crushed vers found for raw ${metal}!`)
+			// console.warn(`No crushed vers found for raw ${metal}!`)
 		}
 
 		event.remove([

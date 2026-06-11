@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
 				.input(`4x ${INGOT}`)
 				.mold("cmi:gear_mold")
 		} else {
-			console.warn(`No gear found for ${metal}!`)
+			// console.warn(`No gear found for ${metal}!`)
 		}
 
 		event.remove([

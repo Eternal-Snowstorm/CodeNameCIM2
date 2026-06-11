@@ -59,7 +59,7 @@ ServerEvents.loaded((event) => {
 		let level = server.getLevel(dimId)
 
 		if (!(level instanceof $ServerLevel)) {
-			console.warn(`Failed to find dimension: ${structureNamespace}:${dimId}`)
+			// console.warn(`Failed to find dimension: ${structureNamespace}:${dimId}`)
 			return false
 		}
 
@@ -67,7 +67,7 @@ ServerEvents.loaded((event) => {
 		let template = manager.get(getStructureName(structurePath))
 
 		if (!template.isPresent()) {
-			console.warn(`Structure not found: ${structureNamespace}:${structurePath}`)
+			// console.warn(`Structure not found: ${structureNamespace}:${structurePath}`)
 			return false
 		}
 
@@ -98,7 +98,7 @@ ServerEvents.loaded((event) => {
 			)
 		})
 
-		console.info(`Placed structure ${structureNamespace}:${structurePath} at (${x}, ${y}, ${z})`)
+		// console.info(`Placed structure ${structureNamespace}:${structurePath} at (${x}, ${y}, ${z})`)
 		return true
 	}
 
@@ -110,20 +110,20 @@ ServerEvents.loaded((event) => {
 			let key = `structure_${id}_placed`
 
 			if (data.getBoolean(key)) {
-				console.info(`Structure "${id}" already placed, skipping.`)
+				// console.info(`Structure "${id}" already placed, skipping.`)
 				return
 			}
 
 			let level = server.getLevel(dimId)
 			if (!(level instanceof $ServerLevel)) {
-				console.warn(`Failed to find dimension: ${dimId}`)
+				// console.warn(`Failed to find dimension: ${dimId}`)
 				return
 			}
 
 			let success = placeStructure(dimId, path, pos)
 			if (success) {
 				data.putBoolean(key, true)
-				console.info(`Marked structure "${id}" as placed.`)
+				// console.info(`Marked structure "${id}" as placed.`)
 			}
 		})
 	}

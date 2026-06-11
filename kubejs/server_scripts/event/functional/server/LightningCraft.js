@@ -53,7 +53,7 @@ EntityEvents.spawned("minecraft:lightning_bolt", (event) => {
 		let lightningPos = lightning.blockPosition()
 		let inputBlock = Block.getBlock(input).getId()
 		let outputBlock = Block.getBlock(output).defaultBlockState()
-		console.log(outputBlock)
+		// console.log(outputBlock)
 
 		for (let i = -1; i <= 1; i++) {
 			for (let j = -1; j <= 1; j++) {
