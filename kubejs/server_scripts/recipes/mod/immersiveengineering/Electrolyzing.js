@@ -21,5 +21,17 @@ ServerEvents.recipes((event) => {
 		"time": 100
 	})
 
-
+	event.custom({
+		"type": "immersiveindustry:electrolyzer",
+		"fluid": {
+			"tag": "forge:redstone_acid",
+			"amount": 1000
+		},
+		"result": {
+			"item": "cmi:electrolized_redstone",
+			"count": 1
+		},
+		"large_only": true,
+		"time": 100
+	})
 })
