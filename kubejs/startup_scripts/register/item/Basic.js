@@ -106,6 +106,9 @@ StartupEvents.registry("item", (event) => {
 		.burnTime(200 * 2)
 		.texture(Cmi.loadResource("item/material/small_coal_coke"))
 
+	// 电离中和红石
+	addMaterial("electrolized_redstone")
+
 	// 高岭土
 	addMaterial("kaolinite_ball")
 
@@ -174,6 +177,10 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("combined_component_64k")
 
 	addMaterial("combined_component_256k")
+
+	addMaterial("combined_spatial_component_16")
+
+	addMaterial("combined_spatial_component_128")
 
 	// 赤泥
 	addMaterial("red_mud")

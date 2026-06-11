@@ -173,6 +173,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("combined_component_16k", "16K ME整合组件")
 	addItemLang("combined_component_64k", "64K ME整合组件")
 	addItemLang("combined_component_256k", "256K ME整合组件")
+	addItemLang("combined_spatial_component_16", "16^3 空间整合组件")
+	addItemLang("combined_spatial_component_128", "128^3 空间整合组件")
 
 	addItemLang("entro_crystal", "恩特罗水晶")
 	addItemLang("concurrent_processor", "并发处理器")
@@ -185,6 +187,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("ferrit_core", "铁氧体磁芯")
 	addItemLang("kaolinite_ball", "高岭土球")
 	addItemLang("cmi_icon", "CMI图标")
+	addItemLang("electrolized_redstone", "电离中和红石")
 
 	addItemLang("astral_core", "繁星核心")
 

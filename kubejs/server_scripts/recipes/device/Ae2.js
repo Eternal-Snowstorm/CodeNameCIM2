@@ -110,6 +110,7 @@ ServerEvents.recipes((event) => {
 		C: "ae2:cell_component_1k",
 		P: "#forge:plates/silver"
 	})
+
 	kubejs.shaped("cmi:combined_component_16k", [
 		" C ",
 		"CPC",
@@ -118,6 +119,7 @@ ServerEvents.recipes((event) => {
 		C: "ae2:cell_component_4k",
 		P: "#forge:plates/silver"
 	})
+
 	kubejs.shaped("cmi:combined_component_64k", [
 		" C ",
 		"CPC",
@@ -126,6 +128,7 @@ ServerEvents.recipes((event) => {
 		C: "ae2:cell_component_16k",
 		P: "#forge:plates/silver"
 	})
+
 	kubejs.shaped("cmi:combined_component_256k", [
 		" C ",
 		"CPC",
@@ -135,16 +138,31 @@ ServerEvents.recipes((event) => {
 		P: "#forge:plates/silver"
 	})
 
-	// 样板
-	kubejs.shaped("4x ae2:blank_pattern", [
-		"PGP",
-		"GMG",
-		"PGP"
+	kubejs.shaped("cmi:combined_spatial_component_16", [
+		" C ",
+		"CPC",
+		" C "
 	], {
-		P: "#forge:plates/iron",
-		G: "ae2:quartz_glass",
-		M: Mechanism.SMART.COM
-	}).id("ae2:network/crafting/patterns_blank")
+		C: "ae2:spatial_cell_component_2",
+		P: "#forge:plates/silver"
+	})
+
+	kubejs.shaped("cmi:combined_spatial_component_128", [
+		" C ",
+		"CPC",
+		" C "
+	], {
+		C: "ae2:spatial_cell_component_16",
+		P: "#forge:plates/silver"
+	})
+
+	// 样板
+	thermal_extra.component_assembly("4x ae2:blank_pattern", [
+		"#forge:plates/silver",
+		"#forge:gems/certus_quartz",
+		"ae2:logic_processor",
+		Fluid.of("immersiveengineering:redstone_acid", 100)
+	]).id("ae2:network/crafting/patterns_blank")
 
 	// 内存卡
 	kubejs.shaped("ae2:memory_card", [
@@ -432,8 +450,8 @@ ServerEvents.recipes((event) => {
 	thermal_extra.component_assembly("ae2:quantum_ring", [
 		"#forge:plates/silver",
 		"ae2:energy_cell",
-		Mechanism.SMART.COM,
-		"#ae2:smart_dense_cable"
+		Mechanism.COMPUTE.COM,
+		"ae2:sky_dust"
 	]).id("ae2:network/blocks/quantum_ring")
 
 	// 量子链接仓
@@ -757,6 +775,7 @@ ServerEvents.recipes((event) => {
 	thermal_extra.component_assembly("ae2:spatial_cell_component_2", [
 		"ae2:engineering_processor",
 		"#forge:plates/silver",
+		"#forge:gems/fluix",
 		"ae2:fluix_dust",
 		"cmi:ferrit_core"
 	]).id("ae2:network/cells/spatial_components")
@@ -768,7 +787,10 @@ ServerEvents.recipes((event) => {
 		"ae2:spatial_cell_component_2",
 		"ae2:spatial_cell_component_2",
 		"ae2:spatial_cell_component_2",
-		"ae2:spatial_cell_component_2"
+		"ae2:spatial_cell_component_2",
+		"cmi:concurrent_processor",
+		"#forge:gems/fluix",
+		"cmi:combined_spatial_component_16"
 	]).id("ae2:network/cells/spatial_components_0")
 
 	// 128^3空间组件
@@ -778,6 +800,8 @@ ServerEvents.recipes((event) => {
 		"ae2:spatial_cell_component_16",
 		"ae2:spatial_cell_component_16",
 		"ae2:spatial_cell_component_16",
-		"ae2:spatial_cell_component_16"
+		"ae2:spatial_cell_component_16",
+		"#forge:gems/fluix",
+		"cmi:combined_spatial_component_128"
 	]).id("ae2:network/cells/spatial_components_1")
 })
