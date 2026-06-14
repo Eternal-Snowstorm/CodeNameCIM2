@@ -70,7 +70,7 @@ EmiPlusPlusEvents.registerGroups((event) => {
 	addGroup("create:mechanisms", "#create:mechanisms")
 	addGroup("create:incomplete_mechanisms", "#create:incomplete_mechanisms")
 	addGroup("cmi:mechanism_flash_drives", "#cmi:mechanism_flash_drives")
-	addGroup("cmi:machine_block", "#cmi:machine_block")
+	addGroup("cmi:block/machine_block", "#cmi:block/machine_block")
 
 	addGroup("forge:glass", "#forge:glass")
 	addGroup("forge:glass_panes", "#forge:glass_panes")

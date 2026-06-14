@@ -99,7 +99,7 @@ StartupEvents.modifyCreativeTab("cmi:mechanisms", (event) => {
 		.forEach((flashDrive) => {
 			event.add(flashDrive)
 		})
-	Ingredient.of("#cmi:machine_block")
+	Ingredient.of("#cmi:block/machine_block")
 		.getItemIds()
 		.forEach((machineBlock) => {
 			event.add(machineBlock)

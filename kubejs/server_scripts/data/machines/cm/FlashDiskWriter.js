@@ -3,16 +3,16 @@ ServerEvents.highPriorityData((event) => {
 		"name": "block.cmi.flash_disk_writer",
 		"appearance": {
 			"idle": {
-				"block": "cmi:machine/flash_disk_writer/off"
+				"block": "cmi:block/machine/flash_disk_writer/off"
 			},
 			"running": {
-				"block": "cmi:machine/flash_disk_writer/on"
+				"block": "cmi:block/machine/flash_disk_writer/on"
 			},
 			"errored": {
-				"block": "cmi:machine/flash_disk_writer/off"
+				"block": "cmi:block/machine/flash_disk_writer/off"
 			},
 			"paused": {
-				"block": "cmi:machine/flash_disk_writer/off"
+				"block": "cmi:block/machine/flash_disk_writer/off"
 			},
 			"interaction_sound": "minecraft:iron_block",
 			"mining_level": "minecraft:needs_iron_tool",

@@ -25,7 +25,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("createaddition:bioethanol")
 	addCommonTooltip("thermal_extra:diesel")
 	addCommonTooltip("createaddition:seed_oil")
-	addCommonTooltip("#cmi:machine_block")
+	addCommonTooltip("#cmi:block/machine_block")
 	addCommonTooltip("ad_astra:ice_shard")
 	addCommonTooltip("portality:controller")
 	addCommonTooltip("cmi:parchment")

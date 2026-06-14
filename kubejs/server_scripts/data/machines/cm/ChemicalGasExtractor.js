@@ -3,16 +3,16 @@ ServerEvents.highPriorityData((event) => {
 		"name": "block.cmi.chemical_gas_extractor",
 		"appearance": {
 			"idle": {
-				"block": "cmi:machine/chemical_gas_extractor/off"
+				"block": "cmi:block/machine/chemical_gas_extractor/off"
 			},
 			"running": {
-				"block": "cmi:machine/chemical_gas_extractor/on"
+				"block": "cmi:block/machine/chemical_gas_extractor/on"
 			},
 			"errored": {
-				"block": "cmi:machine/chemical_gas_extractor/off"
+				"block": "cmi:block/machine/chemical_gas_extractor/off"
 			},
 			"paused": {
-				"block": "cmi:machine/chemical_gas_extractor/off"
+				"block": "cmi:block/machine/chemical_gas_extractor/off"
 			},
 			"interaction_sound": "minecraft:netherite_block",
 			"requires_tool": true,

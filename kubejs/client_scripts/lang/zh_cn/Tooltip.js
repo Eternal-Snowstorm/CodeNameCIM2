@@ -73,7 +73,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:ein_nameuwu", "策划")
 
 	addCommonTooltipLang("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
-	addCommonTooltipLang("#cmi:machine_block", "只有装饰作用(暂时)")
+	addCommonTooltipLang("#cmi:block/machine_block", "只有装饰作用(暂时)")
 	addCommonTooltipLang("cmi:pig_iron_mechanism", "可无限次食用")
 	addCommonTooltipLang("cmi:acceleratable", "§v按住Shift查看构件之力催生器用途")
 	addCommonTooltipLang("cmi:stone_mechanism", "§c手持右键圆石可将其转换为石头")

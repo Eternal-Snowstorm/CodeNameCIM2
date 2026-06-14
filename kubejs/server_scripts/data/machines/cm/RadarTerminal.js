@@ -5,13 +5,13 @@ ServerEvents.highPriorityData((event) => {
 		},
 		"appearance": {
 			"running": {
-				"block": "cmi:machine/radar_terminal/on"
+				"block": "cmi:block/machine/radar_terminal/on"
 			},
 			"errored": {
-				"block": "cmi:machine/radar_terminal/off"
+				"block": "cmi:block/machine/radar_terminal/off"
 			},
 			"paused": {
-				"block": "cmi:machine/radar_terminal/off"
+				"block": "cmi:block/machine/radar_terminal/off"
 			},
 			"hardness": -1.0,
 			"interaction_sound": {},
@@ -21,7 +21,7 @@ ServerEvents.highPriorityData((event) => {
 				"minecraft:mineable/pickaxe"
 			],
 			"idle": {
-				"block": "cmi:machine/radar_terminal/off"
+				"block": "cmi:block/machine/radar_terminal/off"
 			}
 		},
 		"components": [
