@@ -40,12 +40,16 @@ StartupEvents.postInit((event) => {
 	 * @type {Internal.Supplier_<Boolean>}
 	 * @returns 
 	 */
-	const TRUE = () => true
+	const TRUE = () => {
+		return true
+	}
 	/**
 	 * @type {Internal.Supplier_<Boolean>}
 	 * @returns 
 	 */
-	const FALSE = () => false
+	const FALSE = () => {
+		return false
+	}
 
 	// 强化插件槽位数量(当前9)
 	let augmentKeys = [
