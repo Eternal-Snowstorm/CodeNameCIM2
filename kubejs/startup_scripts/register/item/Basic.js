@@ -50,15 +50,15 @@ StartupEvents.registry("item", (event) => {
 
 	addItem("compressed_wood_chip_briquette")
 		.texture(Cmi.loadResource("item/material/wood_chip/stage_2"))
-		.burnTime(200 * 70)
+		.burnTime(200 * 20 * 4)
 
 	addItem("densely_packed_wood_chip_briquette")
 		.texture(Cmi.loadResource("item/material/wood_chip/stage_3"))
-		.burnTime(200 * 120)
+		.burnTime(200 * (20 * 4) * 4)
 
 	addItem("creosote_wood_chip_briquette")
 		.texture(Cmi.loadResource("item/material/wood_chip/done"))
-		.burnTime(200 * 180)
+		.burnTime(200 * ((20 * 4) * 4) * 4)
 		.food((builder) => {
 			builder.hunger(20)
 				.saturation(1)
