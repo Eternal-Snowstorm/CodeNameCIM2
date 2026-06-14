@@ -15,8 +15,8 @@ StartupEvents.registry("item", (event) => {
 	// Done
 	addItem("andesite_alloy_noodle")
 		.texture(Cmi.loadResource(`item/food/andesite_alloy_noodle/stage3`))
-		.food((food) => {
-			food.hunger(20)
+		.food((builder) => {
+			builder.hunger(20)
 				.saturation(1)
 				.eaten((event) => {
 					let { player, level } = event
