@@ -93,6 +93,8 @@
   "kaleidoscope_tavern:barrel": null,
   "lootr:info": null,
   "lootr:inventory": null,
+  "mbd2:long_fe_energy_hud": null,
+  "mbd2:long_fluid_storage": null,
   "mbd2:multiblock_provider": null,
   "mbd2:recipe_logic_provider": null,
   "mekanism:data_provider": null,

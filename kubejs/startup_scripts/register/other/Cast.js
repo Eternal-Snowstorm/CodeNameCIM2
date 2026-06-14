@@ -29,21 +29,21 @@ StartupEvents.registry("item", (event) => {
 	casts.forEach((cast) => {
 		cast.types.forEach((type) => {
 			if (type === "bronze") {
-				event.create(`${Cmi.MODID}:bronze_${cast.name}_cast`)
+				event.create(Cmi.loadResource(`bronze_${cast.name}_cast`))
 					.texture(Cmi.loadResource(`item/cast/${cast.name}/bronze`))
 					.tag("tconstruct:casts")
 					.tag("tconstruct:casts/multi_use")
 					.tag(`tconstruct:casts/multi_use/${cast.name}`)
 					.tag(`thermal:crafting/casts`)
 			} else if (type === "gold") {
-				event.create(`${Cmi.MODID}:${cast.name}_cast`)
+				event.create(Cmi.loadResource(`${cast.name}_cast`))
 					.texture(Cmi.loadResource(`item/cast/${cast.name}/golden`))
 					.tag("tconstruct:casts")
 					.tag("tconstruct:casts/gold")
 					.tag("tconstruct:casts/multi_use")
 					.tag(`tconstruct:casts/multi_use/${cast.name}`)
 			} else if (type === "sand" || type === "red_sand") {
-				event.create(`${Cmi.MODID}:${cast.name}_${type}_cast`)
+				event.create(Cmi.loadResource(`${cast.name}_${type}_cast`))
 					.texture(Cmi.loadResource(`item/cast/${cast.name}/${type}`))
 					.tag("tconstruct:casts")
 					.tag(`tconstruct:casts/${type}`)

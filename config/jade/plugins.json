@@ -1,7 +1,4 @@
 {
-  "nebula_libs": {
-    "common": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -80,20 +77,6 @@
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
-  "expatternprovider": {
-    "jade_chamber": true,
-    "jade_wireless": true
-  },
-  "uti": {
-    "entity_name": true,
-    "object_name": true
-  },
-  "functionalstorage": {
-    "armory": true
-  },
-  "balm": {
-    "jade": true
-  },
   "custommachinery": {
     "machine_component_provider": true
   },
@@ -109,6 +92,11 @@
     "crafting_monitor": true,
     "part_name": true
   },
+  "mbd2": {
+    "recipe_logic_provider": true,
+    "multiblock_provider": true,
+    "long_fe_energy_hud": true
+  },
   "extendedae_plus": {
     "labeled_wireless_component": true,
     "wt_locked": true,
@@ -119,14 +107,8 @@
     "wt_master_location": true,
     "wt_owner": true
   },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
   "yes_steve_model": {
     "model_info": true
-  },
-  "jadeaddons.lootr": {
-    "info": true
   },
   "mekanism": {
     "infuse_type": true,
@@ -137,13 +119,6 @@
     "slurry": true,
     "energy": true,
     "tooltip_renderer": true
-  },
-  "kaleidoscope_cookery": {
-    "chopping_board": true,
-    "shawarma_spit": true,
-    "recipe_block": true,
-    "millstone": true,
-    "enamel_basin": true
   },
   "pipez": {
     "pipe": true
@@ -157,11 +132,41 @@
   "industrial_platform": {
     "common": true
   },
+  "treetap": {
+    "tap": true
+  },
+  "nebula_libs": {
+    "common": true
+  },
+  "expatternprovider": {
+    "jade_chamber": true,
+    "jade_wireless": true
+  },
+  "uti": {
+    "entity_name": true,
+    "object_name": true
+  },
+  "functionalstorage": {
+    "armory": true
+  },
+  "balm": {
+    "jade": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
+  },
+  "kaleidoscope_cookery": {
+    "chopping_board": true,
+    "shawarma_spit": true,
+    "recipe_block": true,
+    "millstone": true,
+    "enamel_basin": true
+  },
   "cmi": {
     "common": true,
     "space_elevator_cargo_fluid": true
-  },
-  "treetap": {
-    "tap": true
   }
 }
