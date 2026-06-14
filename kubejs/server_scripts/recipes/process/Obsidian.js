@@ -1,8 +1,8 @@
 ServerEvents.recipes((event) => {
 	let { create, tconstruct, thermal } = event.getRecipes()
-	let Inc = {
+	let Inc = Object.freeze({
 		OBSIDIAN_PLATE: "create:unprocessed_obsidian_sheet"
-	}
+	})
 
 	// 坚固板
 	tconstruct.casting_table("create:sturdy_sheet")
