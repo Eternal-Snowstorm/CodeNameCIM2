@@ -88,6 +88,13 @@ ServerEvents.recipes((event) => {
 		"result": Fluid.of("cmi:cracked_gasoline", 200).toJson()
 	})
 
+	// 裂化柴油分馏
+	createdieselgenerators.distillation([
+		Fluid.of("cmi:light_aldehyde", 750),
+		Fluid.of("cmi:acetylene", 250)
+	], Fluid.of("cmi:cracked_diesel", 1000))
+		.heatRequirement(CmiHeatLevel.HEATED)
+
 	// 石脑油 苯 轻烯烃
 	createdieselgenerators.distillation([
 		Fluid.of("thermal_extra:naphtha", 100),
