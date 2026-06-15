@@ -1,60 +1,63 @@
 ServerEvents.recipes((event) => {
-    let { vintageimprovements, create, thermal } = event.getRecipes()
+	let { vintageimprovements, create, thermal } = event.getRecipes()
 
-    event.remove({
-        type: "immersiveindustry:electrolyzer",
-        output: "immersiveengineering:dust_aluminum"
-    })
+	event.remove({
+		type: "immersiveindustry:electrolyzer",
+		output: "immersiveengineering:dust_aluminum"
+	})
 
-    event.custom({
-        "type": "immersiveindustry:electrolyzer",
-        "fluid": {
-            "tag": "cmi:sea_water",
-            "amount": 1000
-        },
-        "result_fluid": {
-            "fluid": "cmi:caustic_soda_solution",
-            "amount": 200
-        },
-        "result": {
-            "item": "mekanism:salt",
-            "count": 1
-        },
-        "large_only": true,
-        "time": 200
-    })
+	event.custom({
+		"type": "immersiveindustry:electrolyzer",
+		"fluid": {
+			"tag": "cmi:sea_water",
+			"amount": 1000
+		},
+		"result_fluid": {
+			"fluid": "cmi:caustic_soda_solution",
+			"amount": 200
+		},
+		"result": {
+			"item": "mekanism:salt",
+			"count": 1
+		},
+		"large_only": true,
+		"time": 200
+	})
 
-    create.mixing([Fluid.of("cmi:sodium_aluminate_solution", 200),"cmi:red_mud"], [
-        "#create:crushed_raw_materials/aluminum", Fluid.of("cmi:caustic_soda_solution", 1000)
-    ])
+	create.mixing([
+		Fluid.of("cmi:sodium_aluminate_solution", 200),
+		"cmi:red_mud"
+	], [
+		"#create:crushed_raw_materials/aluminum",
+		Fluid.of("cmi:caustic_soda_solution", 1000)
+	])
 
+	vintageimprovements.pressurizing([
+		"cmi:aluminum_oxide", Fluid.of("cmi:turbid_waste_liquid", 100)
+	], [
+		Fluid.of("cmi:sodium_aluminate_solution", 100)
+	]).heated()
 
-    vintageimprovements.pressurizing([
-        "cmi:aluminum_oxide", Fluid.of("cmi:turbid_waste_liquid", 100)
-    ], [
-        Fluid.of("cmi:sodium_aluminate_solution", 100)
-    ]).heated()
+	event.custom({
+		"type": "immersiveindustry:electrolyzer",
+		"input": {
+			"tag": "cmi:aluminum_oxide"
+		},
+		"result": {
+			"item": "immersiveengineering:dust_aluminum",
+			"count": 1
+		},
+		"large_only": true,
+		"time": 200
+	})
 
-    event.custom({
-        "type": "immersiveindustry:electrolyzer",
-        "input": {
-            "tag": "cmi:aluminum_oxide"
-        },
-        "result": {
-            "item": "immersiveengineering:dust_aluminum",
-            "count": 1
-        },
-        "large_only": true,
-        "time": 200
-    })
-
-    thermal.pyrolyzer([
-        Item.of("minecraft:iron_nugget").withChance(0.75),
-        Item.of("cmi:aluminum_oxide").withChance(0.75),
-        Item.of("cmi:lime_dust").withChance(0.75),
-        Item.of("thermal:sapphire_dust").withChance(0.25),
-        Fluid.of("cmi:sludge_suspension",10)
-    ],[
-        "cmi:red_mud"
-    ])
+	thermal.pyrolyzer([
+		Item.of("minecraft:iron_nugget").withChance(0.75),
+		Item.of("cmi:aluminum_oxide").withChance(0.75),
+		Item.of("cmi:lime_dust").withChance(0.75),
+		Item.of("thermal:sapphire_dust").withChance(0.25),
+		Fluid.of("cmi:sludge_suspension", 10)
+	], [
+		"cmi:red_mud"
+	])
 })
