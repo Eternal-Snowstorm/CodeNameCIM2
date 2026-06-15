@@ -368,6 +368,11 @@
 			icon: "createdieselgenerators:pumpjack_crank"
 			icon_scale: 2.0d
 			id: "3640CEE4D21C8BB5"
+			rewards: [{
+				id: "19DE357F198F5D18"
+				item: "createdieselgenerators:oil_scanner"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [
@@ -1271,6 +1276,7 @@
 		}
 		{
 			dependencies: ["3640CEE4D21C8BB5"]
+			description: ["本整合包修改了原油生成机制。现在每个区块都会生成无限量的原油，因此无需再四处勘探或寻找特定油田"]
 			hide_dependency_lines: true
 			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "7CE3BF3F7F7FC1D9"

@@ -409,7 +409,7 @@
 			subtitle: "工作台plus"
 			tasks: [{
 				id: "638DC71493B9BC58"
-				item: "tconstruct:crafting_station"
+				item: "craftingstationjei:crafting_station"
 				type: "item"
 			}]
 			x: 2.0d
