@@ -162,6 +162,7 @@
     "chopping_board": true,
     "shawarma_spit": true,
     "recipe_block": true,
+    "food_bite_block": true,
     "millstone": true,
     "enamel_basin": true
   },
