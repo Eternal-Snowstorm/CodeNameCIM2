@@ -1,3 +1,3 @@
 CDGEvents.oilAmount((event) => {
-	event.success(10000)
+	event.success(2147483647)
 })
