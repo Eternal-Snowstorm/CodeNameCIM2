@@ -486,17 +486,6 @@
 		}
 		{
 			dependencies: ["6FE26470A8A3B7B1"]
-			id: "454BAAB3651E08AD"
-			tasks: [{
-				id: "3143E1390FF76BCC"
-				item: "createdieselgenerators:distillation_controller"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 14.0d
-		}
-		{
-			dependencies: ["6FE26470A8A3B7B1"]
 			id: "6B1F2EFF4DAC1814"
 			subtitle: "下界砖为烈焰人提供了熟悉的环境"
 			tasks: [{
@@ -504,8 +493,8 @@
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 16.0d
+			x: -6.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["7FF0C3B318313C79"]
@@ -930,17 +919,31 @@
 				"28DFB902C00FCB4D"
 			]
 			id: "60111BA1F94FFBB5"
-			tasks: [{
-				id: "670E934236784AC6"
-				item: {
-					Count: 1
-					id: "createdieselgenerators:mold"
-					tag: {
-						Mold: "cmi:plate"
+			tasks: [
+				{
+					id: "670E934236784AC6"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:mold"
+						tag: {
+							Mold: "cmi:plate"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "09066BEC5008AF6A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/stone"
+						}
+					}
+					title: "石板"
+					type: "item"
+				}
+			]
 			title: "更高效的石板获取!"
 			x: -4.5d
 			y: 18.0d
@@ -962,6 +965,46 @@
 			}]
 			x: -6.5d
 			y: 18.0d
+		}
+		{
+			dependencies: ["28DFB902C00FCB4D"]
+			description: [
+				"动态储罐是一种多方块流体储存结构，其容量会根据结构规模自动变化。"
+				""
+				"动态储罐的容量非常恐怖, 哪怕是最小的结构都可以存储 432,000,000 mB 流体"
+				""
+				"搭建要求"
+				""
+				" - 结构最小尺寸为 3×3×3"
+				" - 储罐内部必须保持 中空"
+				" - 至少在任意一个外侧面安装1个{mekanism:dynamic_valve, 1}动态储罐阀门"
+				" - 储罐的框架需使用有效的动态储罐方块构成。"
+				""
+				""
+				"一个完整的动态储罐"
+				"{image:cmi:textures/images/mek/tank_complete.png width:101 height:114 align:center}"
+				""
+				"一个内部展示内部的动态储罐"
+				"{image:cmi:textures/images/mek/tank_internal.png width:101 height:114 align:center}"
+			]
+			id: "71449F7653BC203B"
+			subtitle: "大胃袋😋"
+			tasks: [
+				{
+					count: 25L
+					id: "676F7D66B000649E"
+					item: "mekanism:dynamic_tank"
+					type: "item"
+				}
+				{
+					id: "482282F4BF409F92"
+					item: "mekanism:dynamic_valve"
+					type: "item"
+				}
+			]
+			title: "超级大的容量!"
+			x: -4.5d
+			y: 16.5d
 		}
 	]
 	title: "巧械奇工"
