@@ -206,6 +206,69 @@ StartupEvents.registry("item", (event) => {
 	// 幽匿电路板
 	addMaterial("sculk_circuit")
 
+	// 半熔融锇
+	addMaterial("pure_semi_molten_osmium")
+
+	// 富集锇结晶
+	addMaterial("enriched_osmium_crystal")
+
+	// 锇晶圆
+	addMaterial("osmium_wafer")
+
+	// 铬钒混合物
+	addMaterial("chromium_vanadium_mixture")
+
+	// 铬钒催化剂
+	addMaterial("chromium_vanadium_catalyst")
+
+	// 碳纳米管
+	addMaterial("carbon_nanotube")
+
+	// 钛合金网
+	addMaterial("titanium_alloy_mesh")
+
+	// 强化碳纳米管
+	addMaterial("reinforced_carbon_nanotube")
+
+	// 强化碳纳米管II型
+	addMaterial("reinforced_carbon_nanotube_2")
+
+	// 活化石磨锭
+	addMaterial("activated_graphite_ingot")
+
+	// 活化石磨碎块
+	addMaterial("activated_graphite_chunk")
+
+	// 复合钨钢板
+	addMaterial("composite_tungsten_steel_plate")
+
+	// 强化复合板
+	addMaterial("reinforced_composite_plate")
+
+	// 未成形的碳纳米管
+	addMaterial("incomplete_carbon_nanotube")
+
+	// 纯净蓝宝石化合物
+	addMaterial("pure_sapphire_compound")
+
+	// 粗钛粉
+	addMaterial("raw_titanium_dust")
+
+	// 粗钛混合物
+	addMaterial("raw_titanium_mixture")
+
+	// 钛晶体
+	addMaterial("titanium_crystal")
+
+	// 强化碳纳米管III型
+	addMaterial("reinforced_carbon_nanotube_3")
+
+	// 强化复合齿轮
+	addMaterial("reinforced_composite_gear")
+
+	// 钛合金线圈
+	addMaterial("titanium_alloy_coil")
+
 	// 恩特罗系列
 	addItem("entro_crystal")
 		.texture("expatternprovider:item/entro_crystal")
