@@ -41,6 +41,12 @@ ServerEvents.tags("item", (event) => {
 			.add(`minecraft:${colors}_shulker_box`)
 	})
 
+	event.get("create:fluid_tanks")
+		.add("fluidlogistics:multi_fluid_tank")
+		.add("fluidlogistics:horizontal_multi_fluid_tank")
+		.add("create:fluid_tank")
+		.add("create_connected:fluid_vessel")
+
 	event.get("cmi:quartz_glass_material")
 		.add("#forge:dusts/quartz")
 		.add("#forge:dusts/pure_quartz")
