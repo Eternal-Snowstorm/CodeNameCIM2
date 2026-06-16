@@ -13,6 +13,7 @@ ServerEvents.recipes((event) => {
 		"jei:/ae2/inscriber/sky_stone_dust",
 		"jei:/ae2/network/parts/formation_plane_alt",
 		"jei:/ae2/network/parts/annihilation_plane_alt2",
-		"advanced_ae:quantum_processor_press"
+		"advanced_ae:quantum_processor_press",
+		"me_beam_former:omni_beam_former_block"
 	])
 })

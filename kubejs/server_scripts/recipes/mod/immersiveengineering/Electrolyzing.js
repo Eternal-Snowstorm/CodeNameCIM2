@@ -33,5 +33,5 @@ ServerEvents.recipes((event) => {
 		},
 		"large_only": true,
 		"time": 100
-	})
+	}).id("immersiveindustry:electrolyzer/redstone_acid")
 })
