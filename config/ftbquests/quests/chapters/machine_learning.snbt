@@ -80,38 +80,15 @@
 				"23C01A41EBA593FC"
 				"7A9561BE016F15B5"
 			]
-			icon: "minecraft:iron_ingot"
+			description: ["在拥有了生物柴油后你就可以在匠魂炉中融化铁了"]
+			icon: "tconstruct:molten_iron_bucket"
 			id: "06012DC3A4BBF58B"
 			subtitle: "IRON!"
-			tasks: [
-				{
-					id: "0A4BA186729E732C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/iron"
-						}
-					}
-					optional_task: true
-					title: "铁锭"
-					type: "item"
-				}
-				{
-					id: "545E0B7C36E41469"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:plates/iron"
-						}
-					}
-					optional_task: true
-					title: "铁板"
-					type: "item"
-				}
-			]
-			title: "铁!"
+			tasks: [{
+				id: "554019B4BCD71763"
+				item: "tconstruct:molten_iron_bucket"
+				type: "item"
+			}]
 			x: -9.5d
 			y: 15.0d
 		}
@@ -394,7 +371,7 @@
 			dependencies: ["649CAA93BB644BF3"]
 			id: "295BF991FD7133DF"
 			tasks: [{
-				id: "368D3DB8098C008D"
+				id: "5292BFEE1C4E58E8"
 				item: "minecraft:sugar"
 				type: "item"
 			}]
@@ -987,7 +964,10 @@
 				"一个内部展示内部的动态储罐"
 				"{image:cmi:textures/images/mek/tank_internal.png width:101 height:114 align:center}"
 			]
+			icon: "mekanism:dynamic_valve"
 			id: "71449F7653BC203B"
+			shape: "pentagon"
+			size: 1.5d
 			subtitle: "大胃袋😋"
 			tasks: [
 				{

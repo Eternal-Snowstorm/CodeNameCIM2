@@ -260,7 +260,7 @@
 			id: "17AEC8F5B7867AFE"
 			subtitle: "&m原本叫水泥来着&r"
 			tasks: [{
-				count: 16L
+				count: 25L
 				id: "36A475E42CA7D3E6"
 				item: "tconstruct:grout"
 				type: "item"
@@ -317,8 +317,9 @@
 				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
+			subtitle: "至少需要25个"
 			tasks: [{
-				count: 16L
+				count: 25L
 				id: "452BEE8C9E1091ED"
 				item: "tconstruct:seared_brick"
 				type: "item"
@@ -386,7 +387,7 @@
 							value: "forge:sand"
 						}
 					}
-					title: "Any #forge:sand"
+					title: "沙子"
 					type: "item"
 				}
 				{
