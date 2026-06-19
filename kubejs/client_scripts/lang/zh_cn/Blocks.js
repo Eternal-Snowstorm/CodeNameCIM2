@@ -125,4 +125,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("sergei", "谢尔盖")
 	addBlockLang("lirx_ovo", "栗子")
 	addBlockLang("ein_nameuwu", "幽灵猫")
+
+	event.renameBlock("craftingstationjei:crafting_station", "工作站")
 })
