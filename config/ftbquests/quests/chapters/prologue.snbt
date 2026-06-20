@@ -578,6 +578,7 @@
 				title: "Test"
 				type: "checkmark"
 			}]
+			title: "测试任务完成音频"
 			x: -4.0d
 			y: -5.5d
 		}
