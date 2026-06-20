@@ -9,7 +9,7 @@ ClientEvents.highPriorityAssets((event) => {
 				"bgColor": "#222233",
 				"bgStartColor": "#222233",
 				"bgEndColor": "#222233",
-				"priority": 0,
+				// "priority": 0,
 				"selectors": [
 					"stick",
 					"oak_planks"
