@@ -137,3 +137,11 @@
 		#default: false
 		"Enable cargo grid" = false
 
+	#Geothermal Generator Settings
+	[general.geothermal_generator]
+		#Per tick production FE
+		#20 ticks = 1 second
+		#type: int
+		#Range: 1 ~ 409600
+		production_efficiency = 4096
+
