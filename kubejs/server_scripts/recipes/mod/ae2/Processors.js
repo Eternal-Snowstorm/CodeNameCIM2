@@ -215,7 +215,7 @@ ServerEvents.recipes((event) => {
 		]).itemAsHead("advanced_ae:quantum_processor_press"),
 		create.deploying(Print.QUANTUM, [
 			Incomplete.QUANTUM,
-			"cmi:single_crystal_silicon"
+			"cmi:enriched_silicon"
 		]),
 		create.deploying(Print.QUANTUM, [
 			Incomplete.QUANTUM,
@@ -234,7 +234,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "ae2:inscriber",
 		"ingredients": {
-			"bottom": Ingredient.of("cmi:single_crystal_silicon").toJson(),
+			"bottom": Ingredient.of("cmi:enriched_silicon").toJson(),
 			"middle": Ingredient.of(Print.QUANTUM).toJson(),
 			"top": Ingredient.of("cmi:inscribed_silicon").toJson()
 		},
