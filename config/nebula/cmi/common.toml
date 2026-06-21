@@ -142,6 +142,6 @@
 		#Per tick production FE
 		#20 ticks = 1 second
 		#type: int
-		#Range: 1 ~ 409600
-		production_efficiency = 4096
+		#Range: 1 ~ 500000
+		production_efficiency = 5000
 
