@@ -64,6 +64,8 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("sapphire_solution", 0x004BFF)
 	addColorFluid("raw_titanium_solution", 0x813DFA)
 	addColorFluid("reinforced_titanium_solution", 0x6D26A5)
+	addColorFluid("pure_crystal_source", 0xA40058)
+	addColorFluid("Helium", 0xFFB0BA)
 
 	addThickColorFluid("silicon_rubber", 0xBBBBBB)
 	addThickColorFluid("semi_molten_osmium", 0xA6CCF2)
