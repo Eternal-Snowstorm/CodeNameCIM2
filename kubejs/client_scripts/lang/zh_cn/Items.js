@@ -43,6 +43,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("geological_hammer", "地质锤(调试工具)")
 	addItemLang("empty_exe", "空程序.exe")
 	addItemLang("single_crystal_silicon", "单晶硅")
+	addItemLang("enriched_silicon", "富集硅")
 	addItemLang("bucket", "桶(?)")
 	addItemLang("blood_slime_ball", "黏血球")
 	addItemLang("empty_flash_drive", "空白闪存盘")

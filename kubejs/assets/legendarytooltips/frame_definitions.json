@@ -1,0 +1,16 @@
+{
+		"definitions": [
+			{
+				"image": "cmi:textures/gui/tooltip/tooltip_borders.png",
+				"index": 0,
+				"startColor": "#FFFFFF",
+				"endColor": "#FFFFFF",
+				"bgColor": "#5cabff+v5",
+				"bgStartColor": "#222233",
+				"bgEndColor": "#222233",
+				"selectors": [
+					"stick"
+				]
+			}
+		]
+	}
