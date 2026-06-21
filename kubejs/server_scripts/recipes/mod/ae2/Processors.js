@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements, createaddition } = event.getRecipes()
+	let { create, vintageimprovements, nebula_libs } = event.getRecipes()
 
 	let Incomplete = {
 		CONTROL: "create_connected:incomplete_control_chip",
@@ -325,4 +325,44 @@ ServerEvents.recipes((event) => {
 		},
 		"output": Item.of(Print.CONCURRENT, 9).toJson()
 	})
+
+	event.custom({
+		type: "nebula_libs:anvil_craft",
+		left: {
+			tag: "forge:ingots/gold"
+		},
+		right: {
+			tag: "forge:ingots/iron"
+		},
+		result: {
+			item: "minecraft:diamond"
+		}
+	})
+
+	nebula_libs.anvil_craft(
+		"minecraft:diamond",
+		"#forge:ingots/gold",
+		"#forge:ingots/iron"
+	)
+
+	event.custom({
+		type: "nebula_libs:anvil_craft",
+		left: {
+			tag: "forge:ingots/bronze"
+		},
+		right: {
+			tag: "forge:ingots/steel"
+		},
+		result: {
+			item: "minecraft:clay_ball"
+		},
+		cost: 10,
+		material_cost: 1
+	})
+
+	nebula_libs.anvil_craft(
+		"minecraft:clay_ball",
+		"#forge:ingots/bronze",
+		"#forge:ingots/steel"
+	).cost(10).material_cost(1)
 })
