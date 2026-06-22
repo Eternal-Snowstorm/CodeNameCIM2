@@ -10,11 +10,10 @@ StartupEvents.init((event) => {
 			feet: entity.getFeetArmorItem()
 		}
 
-		let getMekasuitArmor =
-			armorItem.head === "mekanism:mekasuit_helmet" &&
-			armorItem.chest === "mekanism:mekasuit_bodyarmor" &&
-			armorItem.legs === "mekanism:mekasuit_pants" &&
-			armorItem.feet === "mekanism:mekasuit_boots"
+		let getMekasuitArmor = armorItem.head === "mekanism:mekasuit_helmet"
+			&& armorItem.chest === "mekanism:mekasuit_bodyarmor"
+			&& armorItem.legs === "mekanism:mekasuit_pants"
+			&& armorItem.feet === "mekanism:mekasuit_boots"
 
 		if (!hasOxygen) {
 			return getMekasuitArmor
