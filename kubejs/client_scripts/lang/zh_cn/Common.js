@@ -11,6 +11,15 @@ ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
 	 * @param {String} key 
+	 * @param {String} value 
+	 */
+	function addInfuseTypeLang(key, value) {
+		event.add(`infuse_type.${Cmi.MODID}.${key}`, value)
+	}
+
+	/**
+	 * 
+	 * @param {String} key 
 	 * @param {String} title 
 	 * @param {String} author 
 	 */
@@ -76,6 +85,16 @@ ClientEvents.lang("zh_cn", (event) => {
 	addGasLang("refined_nuke_waste", "精炼核废料")
 	addGasLang("mercury", "汞")
 	addGasLang("geyser_jet", "间歇泉喷射气")
+	addGasLang("radon_mixture", "氡混合气体")
+	addGasLang("helium_3", "氦-3")
+	addGasLang("co", "二氧化碳")
+	addGasLang("ch4", "甲烷")
+	addGasLang("silicon_gas_modulator", "硅基气相调节剂")
+
+	addInfuseTypeLang("chaotic_void", "混沌虚空")
+	addInfuseTypeLang("etrium", "埃忒恩")
+	addInfuseTypeLang("helium", "氦")
+	addInfuseTypeLang("dense_oxide", "致密氧化物")
 
 	addPlanetLang("dionysus", "迪奥尼索斯")
 	addPlanetLang("hephaestus", "赫菲斯托斯")
