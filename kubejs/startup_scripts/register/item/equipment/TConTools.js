@@ -23,15 +23,14 @@ StartupEvents.registry("item", (event) => {
 	 * @returns 注册匠魂工具物品
 	 */
 	function addTConTool(name) {
-		let toolItemBuilder =
-			event.createCustom(`${Cmi.MODID}:${name}`, () => {
-				return new $ModifiableItem(new Item$Properties(), addTConToolType(name))
-			})
+		let builer = event.createCustom(`${Cmi.MODID}:${name}`, () => {
+			return new $ModifiableItem(new Item$Properties(), addTConToolType(name))
+		})
 
-		toolItemBuilder.tag("forge:tools")
-		toolItemBuilder.tag("minecraft:tools")
+		builer.tag("forge:tools")
+		builer.tag("minecraft:tools")
 
-		return toolItemBuilder
+		return builer
 	}
 
 	addTConTool("paxel")
