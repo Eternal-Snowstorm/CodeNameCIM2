@@ -44,6 +44,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("polished_quartz", "磨制石英")
 	addMaterialLang("pure_quartz", "纯净石英")
 	addMaterialLang("ardite", "阿迪特")
+	addMaterialLang("neodymium", "钕")
 
 	/**
 	 * 
