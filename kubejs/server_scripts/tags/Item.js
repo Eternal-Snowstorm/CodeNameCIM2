@@ -41,6 +41,9 @@ ServerEvents.tags("item", (event) => {
 			.add(`minecraft:${colors}_shulker_box`)
 	})
 
+	event.get("create:blaze_burner_fuel/special")
+		.add("cmi:creosote_wood_chip_briquette")
+
 	event.get("create:fluid_tanks")
 		.add("fluidlogistics:multi_fluid_tank")
 		.add("fluidlogistics:horizontal_multi_fluid_tank")
