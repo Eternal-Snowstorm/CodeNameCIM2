@@ -87,7 +87,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addGasLang("geyser_jet", "间歇泉喷射气")
 	addGasLang("radon_mixture", "氡混合气体")
 	addGasLang("helium_3", "氦-3")
-	addGasLang("co", "二氧化碳")
+	addGasLang("co", "一氧化碳")
 	addGasLang("ch4", "甲烷")
 	addGasLang("silicon_gas_modulator", "硅基气相调节剂")
 
