@@ -1,5 +1,5 @@
 StartupEvents.postInit((event) => {
-	let $Category =
+	let $MysteriousItemConversionCategory =
 		Java.loadClass("com.simibubi.create.compat.jei.category.MysteriousItemConversionCategory")
 	let $ConversionRecipe =
 		Java.loadClass("com.simibubi.create.compat.jei.ConversionRecipe")
@@ -11,7 +11,7 @@ StartupEvents.postInit((event) => {
 	 * @returns 
 	 */
 	function addConversionRecipe(output, input) {
-		return $Category.RECIPES.add($ConversionRecipe.create(input, output))
+		return $MysteriousItemConversionCategory.RECIPES.add($ConversionRecipe.create(input, output))
 	}
 
 	// 光辉石
