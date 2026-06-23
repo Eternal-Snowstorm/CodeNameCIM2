@@ -1,62 +1,97 @@
 ServerEvents.recipes((event) => {
+	/**
+	 * 
+	 * @param {Internal.ItemStack_} output 
+	 * @param {number} count 
+	 */
+	function TransformRecipe(output, count) {
+		this.recipe = {
+			type: "ae2:transform",
+			ingredients: [],
+			result: Item.of(output, count || 1).toJson()
+		}
+	}
+
+	TransformRecipe.prototype.explosion = function () {
+		this.recipe.circumstance = {
+			type: "explosion"
+		}
+		return this
+	}
+
+	/**
+	 * 
+	 * @param {Special.FluidTag} tag 
+	 * @returns 
+	 */
+	TransformRecipe.prototype.fluidTag = function (tag) {
+		this.recipe.circumstance = {
+			type: "fluid",
+			tag: tag
+		}
+		return this
+	}
+
+	/**
+	 * 
+	 * @param {Internal.Ingredient_} input 
+	 * @returns 
+	 */
+	TransformRecipe.prototype.input = function (input) {
+		if (input instanceof Array) {
+			this.recipe.ingredients.push(input.map((i) => {
+				return Item.of(i).toJson()
+			}))
+		} else {
+			this.recipe.ingredients.push(Ingredient.of(input).toJson())
+		}
+
+		return this
+	}
+
+	/**
+	 * 
+	 * @param {ResourceLocation} [id] 
+	 * @returns 
+	 */
+	TransformRecipe.prototype.build = function (id) {
+		let recipe = event.custom(this.recipe)
+
+		if (id) {
+			recipe.id(id)
+		}
+
+		return recipe
+	}
+
 	// 量子缠绕态奇点
-	event.custom({
-		"type": "ae2:transform",
-		"circumstance": {
-			"type": "explosion"
-		},
-		"ingredients": [
-			Item.of("ae2:singularity").toJson(),
-			Item.of("cmi:ender_mechanism").toJson()
-		],
-		"result": Item.of("ae2:quantum_entangled_singularity", 4).toJson()
-	}).id("ae2:transform/entangled_singularity")
+	new TransformRecipe("ae2:quantum_entangled_singularity", 4)
+		.input("ae2:singularity")
+		.input("cmi:ender_mechanism")
+		.explosion()
+		.build("ae2:transform/entangled_singularity")
 
 	// 砖泥
-	event.custom({
-		"type": "ae2:transform",
-		"circumstance": {
-			"type": "fluid",
-			"tag": "minecraft:water"
-		},
-		"ingredients": [
-			Ingredient.of("#minecraft:sand").toJson(),
-			Ingredient.of("#forge:clay").toJson(),
-			Item.of("minecraft:gravel").toJson()
-		],
-		"result": Item.of("tconstruct:grout", 2).toJson()
-	}).id("cmi:ae2/transform/tconstruct/grout")
+	new TransformRecipe("tconstruct:grout", 2)
+		.fluidTag("minecraft:water")
+		.input("#minecraft:sand")
+		.input("#forge:clay")
+		.input("minecraft:gravel")
+		.build("cmi:ae2/transform/tconstruct/grout")
 
 	// 下界砖泥
-	event.custom({
-		"type": "ae2:transform",
-		"circumstance": {
-			"type": "fluid",
-			"tag": "tconstruct:liquid_soul"
-		},
-		"ingredients": [
-			[
-				Item.of("minecraft:soul_sand").toJson(),
-				Item.of("minecraft:soul_soil").toJson()
-			],
-			Item.of("minecraft:magma_cream").toJson(),
-			Item.of("minecraft:gravel").toJson()
-		],
-		"result": Item.of("tconstruct:nether_grout", 2).toJson()
-	}).id("cmi:ae2/transform/tconstruct/nether_grout")
+	new TransformRecipe("tconstruct:nether_grout", 2)
+		.fluidTag("tconstruct:liquid_soul")
+		.input(["minecraft:soul_sand", "minecraft:soul_soil"])
+		.input("minecraft:magma_cream")
+		.input("minecraft:gravel")
+		.build("cmi:ae2/transform/tconstruct/nether_grout")
 
 	// 耐热砖泥
-	event.custom({
-		"type": "ae2:transform",
-		"circumstance": {
-			"type": "fluid",
-			"tag": "forge:creosote"
-		},
-		"ingredients": [
-			Item.of("immersiveengineering:dust_hop_graphite").toJson(),
-			Item.of("cmi:kaolinite_ball").toJson(),
-			Item.of("minecraft:gravel").toJson()
-		],
-		"result": Item.of("cmi:refractory_grout", 2).toJson()
-	}).id("immersiveindustry:crafting/refractory_kiln_brick")
+	new TransformRecipe("cmi:refractory_grout", 2)
+		.fluidTag("forge:creosote")
+		.input("immersiveengineering:dust_hop_graphite")
+		.input("cmi:kaolinite_ball")
+		.input("minecraft:gravel")
+		.build("immersiveindustry:crafting/refractory_kiln_brick")
 })
