@@ -88,7 +88,7 @@
 	#When enabled, text layout uses fractional metrics with no font hinting.
 	#When disabled, text layout uses integer metrics with full font hinting.
 	#Disable if on low-res monitor; enable for linear text.
-	linearMetrics = true
+	linearMetrics = false
 	#Control the minimum pixel density for SDF text and text in 3D world rendering.
 	#This value will be no less than current GUI scale.
 	#Recommend setting a higher value on high-res monitor and powerful PC hardware.
