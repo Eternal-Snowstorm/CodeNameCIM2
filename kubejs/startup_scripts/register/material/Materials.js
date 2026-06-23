@@ -283,3 +283,12 @@ new Material("ardite", "iron")
 	.nugget()
 	.block()
 	.molten()
+
+// 钕
+new Material("neodymium", "stone")
+	.color(0xEEEEEE, 0xFFFFFF)
+	.isMetal()
+	.ingot()
+	.dust()
+	.nugget()
+	.molten()
