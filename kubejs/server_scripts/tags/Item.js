@@ -773,4 +773,12 @@ ServerEvents.tags("item", (event) => {
 		event.get(`forge:raw_nuggets`)
 			.add(`thermal_extra:${metal}_ore_chunk`)
 	})
+
+	event.get("edenring:lightning_protection")
+		.add([
+			"minecraft:iron_helemt",
+			"minecraft:iron_chestplate",
+			"minecraft:iron_leggings",
+			"minecraft:iron_boots"
+		])
 })

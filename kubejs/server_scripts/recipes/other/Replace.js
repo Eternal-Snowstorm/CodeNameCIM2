@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 		event.forEachRecipe({
 			input: `minecraft:${color}_dye`
 		}, (recipe) => {
-			if (!recipe.hasOutput(`#forge:dyes`)) {
+			if (!recipe.hasOutput("#forge:dyes")) {
 				recipe.replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`)
 			}
 		})
