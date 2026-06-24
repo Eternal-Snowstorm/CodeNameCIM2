@@ -205,7 +205,6 @@ StartupEvents.registry("item", (event) => {
 	// 幽匿电路板
 	addMaterial("sculk_circuit")
 
-	// C8_幽灵猫
 	// 半熔融锇
 	addMaterial("pure_semi_molten_osmium")
 
@@ -227,16 +226,10 @@ StartupEvents.registry("item", (event) => {
 	// 钛合金网
 	addMaterial("titanium_alloy_mesh")
 
-	// 强化碳纳米管
-	addMaterial("reinforced_carbon_nanotube")
-
-	// 强化碳纳米管II型
-	addMaterial("reinforced_carbon_nanotube_2")
-
-	// 活化石磨锭
+	// 活化石墨锭
 	addMaterial("activated_graphite_ingot")
 
-	// 活化石磨碎块
+	// 活化石墨碎块
 	addMaterial("activated_graphite_chunk")
 
 	// 复合钨钢板
@@ -244,6 +237,9 @@ StartupEvents.registry("item", (event) => {
 
 	// 强化复合板
 	addMaterial("reinforced_composite_plate")
+
+	// 压电陶瓷
+	addMaterial("piezoelectric_ceramic")
 
 	// 未成形的碳纳米管
 	addMaterial("incomplete_carbon_nanotube")
@@ -260,36 +256,20 @@ StartupEvents.registry("item", (event) => {
 	// 钛晶体
 	addMaterial("titanium_crystal")
 
-	// 强化碳纳米管III型
-	addMaterial("reinforced_carbon_nanotube_3")
-
 	// 强化复合齿轮
 	addMaterial("reinforced_composite_gear")
 
 	// 钛合金线圈
 	addMaterial("titanium_alloy_coil")
 
-	// C8_RC
-	// 月岩粉
-	addMaterial("moon_dust")
-
 	// 热解月岩残渣
 	addMaterial("pyrolyzed_moon_rock_residue")
-
-	// 晶源结晶
-	addMaterial("moon_crystal_source")
-
-	// 焙烧结晶
-	addMaterial("roasted_moon_crystal_source")
-
-	// 富集晶簇
-	addMaterial("enriched_crystal_cluster")
 
 	// 纯化硅晶
 	addMaterial("purified_silicon_crystal")
 
-	// 单晶硅
-	addMaterial("single_crystal_silicon")
+	// 富集硅
+	addMaterial("enriched_silicon")
 
 	// 硅晶圆
 	addMaterial("silicon_wafer")
@@ -297,17 +277,8 @@ StartupEvents.registry("item", (event) => {
 	// 高级电子元件
 	addMaterial("advanced_electronic_components")
 
-	// 粗结晶氦
-	addMaterial("raw_helium_crystal")
-
-	// 富集结晶氦
-	addMaterial("enriched_helium_crystal")
-
-	// 单层石墨烯
-	addMaterial("single_layer_graphene")
-
-	// 石墨烯板
-	addMaterial("graphene_plate")
+	// 石墨烯
+	addMaterial("graphene")
 
 	// 纳米复合板
 	addMaterial("nano_composite_plate")
@@ -326,142 +297,6 @@ StartupEvents.registry("item", (event) => {
 
 	// 致密氧化物薄膜
 	addMaterial("dense_oxide_film")
-
-	// 强化纳米复合板
-	addMaterial("reinforced_nano_composite_plate")
-
-	// 含硫混合物
-	addMaterial("sulfur_containing_mixture")
-
-	// 火星岩
-	addMaterial("mars_dust")
-
-	// 热解火星岩
-	addMaterial("pyrolyzed_mars_rock_residue")
-
-	// 粗锗
-	addMaterial("raw_gemanium")
-
-	// 精锗
-	addMaterial("refined_gemanium")
-
-	// 高纯锗粉
-	addMaterial("pure_gemanium_dust")
-
-	// 焙烧锗晶
-	addMaterial("roasted_gemanium_crystal")
-
-	// 掺杂锗晶
-	addMaterial("doped_gemanium_crystal")
-
-	// 碳化还原锗铁混合物
-	addMaterial("carbide_reduced_germanium_iron_mixture")
-
-	// 碳强化陶瓷胚体
-	addMaterial("carbon_reinforced_ceramic_body")
-
-	// 还原性陶瓷胚体
-	addMaterial("restorative_ceramic_body")
-
-	// 富集陶瓷胚体
-	addMaterial("enriched_ceramic_body")
-
-	// 高温光导陶瓷
-	addMaterial("high_temperature_optical_ceramic")
-
-	// 强化结构陶瓷
-	addMaterial("reinforced_structure_ceramic")
-
-	// 方铅岩粉
-	addMaterial("galena_dust")
-
-	// 磁性源质
-	addMaterial("magnetic_source")
-
-	// 含铁矿渣
-	addMaterial("iron_containing_slag")
-
-	// 青磁性源质
-	addMaterial("azure_magnetic_source")
-
-	// 赤磁性源质
-	addMaterial("scarlet_magnetic_source")
-
-	// 磁性混合物
-	addMaterial("magnetic_mixure")
-
-	// 偏青钕混合物
-	addMaterial("rich_azure_magnetic_mixure")
-
-	// 偏赤钕混合物
-	addMaterial("rich_scarlet_magnetic_mixure")
-
-	// 青钕磁性陶瓷
-	addMaterial("azure_magnetic_ceramic")
-
-	// 赤钕磁性陶瓷
-	addMaterial("scarlet_magnetic_ceramic")
-
-	// 磁性陶瓷
-	addMaterial("magnetic_ceramic")
-
-	// 压电陶瓷
-	addMaterial("piezoelectric_ceramic")
-
-	// Delta added
-	// 赤钕粉
-	addMaterial("scarlet_magnetic_dust")
-
-	// 青钕粉
-	addMaterial("azure_magnetic_dust")
-
-	// 富集辐射岩
-	addMaterial("enriched_radiation_rock")
-
-	// 晶矿粉
-	addMaterial("moon_crystal_dust")
-
-	// 晶板
-	addMaterial("crystal_plate")
-
-	// 富集锗铁混合物
-	addMaterial("enriched_germanium_iron_mixture")
-
-	// 还原性含铁矿渣
-	addMaterial("reduced_iron_containing_slag")
-
-	// 强还原性含铁矿渣
-	addMaterial("strong_reduced_iron_containing_slag")
-
-	// 去铁矿渣
-	addMaterial("reduced_iron_slag")
-
-	// 铅矿渣
-	addMaterial("lead_slag")
-
-	// 镀层方铅陶瓷
-	addMaterial("plating_galena_ceramic")
-
-	// 方铅晶圆
-	addMaterial("galena_wafer")
-
-	// 方铅釉料
-	addMaterial("galena_enamel")
-
-	// 方铅石英
-	addMaterial("galena_quartz")
-
-	// 去铁方铅石英
-	addMaterial("reduced_iron_galena_quartz")
-
-	// 富集方铅石英
-	addMaterial("enriched_galena_quartz")
-
-	// 复合陶瓷基板
-	addMaterial("composite_ceramic_substrates")
-
-	// 磁触点
-	addMaterial("magnetic_contact")
 
 	// 精英电子元件
 	addMaterial("elite_electronic_components")
@@ -600,4 +435,162 @@ StartupEvents.registry("item", (event) => {
 			.tag(`cmi:casing_framework`)
 			.tag(`cmi:casing_framework/${frame}`)
 	})
+
+	// 强化碳纳米管III型
+	// addMaterial("reinforced_carbon_nanotube_3")
+
+	// 粗结晶氦
+	// addMaterial("raw_helium_crystal")
+
+	// 富集结晶氦
+	// addMaterial("enriched_helium_crystal")
+
+	// 石墨烯板
+	// addMaterial("graphene_plate")
+
+	// C8_RC
+	// 月岩粉
+	// addMaterial("moon_dust")
+
+	// 晶源结晶
+	// addMaterial("moon_crystal_source")
+
+	// 焙烧结晶
+	// addMaterial("roasted_moon_crystal_source")
+
+	// 富集晶簇
+	// addMaterial("enriched_crystal_cluster")
+
+	// 强化纳米复合板
+	// addMaterial("reinforced_nano_composite_plate")
+
+	// 含硫混合物
+	// addMaterial("sulfur_containing_mixture")
+
+	// 火星岩
+	// addMaterial("mars_dust")
+
+	// 热解火星岩
+	// addMaterial("pyrolyzed_mars_rock_residue")
+
+	// 粗锗
+	// addMaterial("raw_gemanium")
+
+	// 精锗
+	// addMaterial("refined_gemanium")
+
+	// 高纯锗粉
+	// addMaterial("pure_gemanium_dust")
+
+	// 焙烧锗晶
+	// addMaterial("roasted_gemanium_crystal")
+
+	// 掺杂锗晶
+	// addMaterial("doped_gemanium_crystal")
+
+	// 碳化还原锗铁混合物
+	// addMaterial("carbide_reduced_germanium_iron_mixture")
+
+	// 碳强化陶瓷胚体
+	// addMaterial("carbon_reinforced_ceramic_body")
+
+	// 还原性陶瓷胚体
+	// addMaterial("restorative_ceramic_body")
+
+	// 富集陶瓷胚体
+	// addMaterial("enriched_ceramic_body")
+
+	// 高温光导陶瓷
+	// addMaterial("high_temperature_optical_ceramic")
+
+	// 强化结构陶瓷
+	// addMaterial("reinforced_structure_ceramic")
+
+	// 方铅岩粉
+	// addMaterial("galena_dust")
+
+	// 磁性源质
+	// addMaterial("magnetic_source")
+
+	// 含铁矿渣
+	// addMaterial("iron_containing_slag")
+
+	// 青磁性源质
+	// addMaterial("azure_magnetic_source")
+
+	// 赤磁性源质
+	// addMaterial("scarlet_magnetic_source")
+
+	// 磁性混合物
+	// addMaterial("magnetic_mixure")
+
+	// 偏青钕混合物
+	// addMaterial("rich_azure_magnetic_mixure")
+
+	// 偏赤钕混合物
+	// addMaterial("rich_scarlet_magnetic_mixure")
+
+	// 青钕磁性陶瓷
+	// addMaterial("azure_magnetic_ceramic")
+
+	// 赤钕磁性陶瓷
+	// addMaterial("scarlet_magnetic_ceramic")
+
+	// 磁性陶瓷
+	// addMaterial("magnetic_ceramic")
+
+	// Delta added
+	// 赤钕粉
+	// addMaterial("scarlet_magnetic_dust")
+
+	// 青钕粉
+	// addMaterial("azure_magnetic_dust")
+
+	// 富集辐射岩
+	// addMaterial("enriched_radiation_rock")
+
+	// 晶矿粉
+	// addMaterial("moon_crystal_dust")
+
+	// 晶板
+	// addMaterial("crystal_plate")
+
+	// 富集锗铁混合物
+	// addMaterial("enriched_germanium_iron_mixture")
+
+	// 还原性含铁矿渣
+	// addMaterial("reduced_iron_containing_slag")
+
+	// 强还原性含铁矿渣
+	// addMaterial("strong_reduced_iron_containing_slag")
+
+	// 去铁矿渣
+	// addMaterial("reduced_iron_slag")
+
+	// 铅矿渣
+	// addMaterial("lead_slag")
+
+	// 镀层方铅陶瓷
+	// addMaterial("plating_galena_ceramic")
+
+	// 方铅晶圆
+	// addMaterial("galena_wafer")
+
+	// 方铅釉料
+	// addMaterial("galena_enamel")
+
+	// 方铅石英
+	// addMaterial("galena_quartz")
+
+	// 去铁方铅石英
+	// addMaterial("reduced_iron_galena_quartz")
+
+	// 富集方铅石英
+	// addMaterial("enriched_galena_quartz")
+
+	// 复合陶瓷基板
+	// addMaterial("composite_ceramic_substrates")
+
+	// 磁触点
+	// addMaterial("magnetic_contact")
 })

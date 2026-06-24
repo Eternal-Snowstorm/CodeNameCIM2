@@ -28,7 +28,7 @@ StartupEvents.registry("item", (event) => {
 	}
 
 	addAloneGemItem("charged_amethyst")
-	addAloneGemItem("enriched_silicon")
+	addAloneGemItem("single_crystal_silicon")
 
 	addNonGemItem("alpha_blackstone_source")
 	addNonGemItem("beta_blackstone_source")
