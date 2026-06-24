@@ -265,9 +265,6 @@ StartupEvents.registry("item", (event) => {
 	// 热解月岩残渣
 	addMaterial("pyrolyzed_moon_rock_residue")
 
-	// 纯化硅晶
-	addMaterial("purified_silicon_crystal")
-
 	// 富集硅
 	addMaterial("enriched_silicon")
 
@@ -282,9 +279,6 @@ StartupEvents.registry("item", (event) => {
 
 	// 纳米复合板
 	addMaterial("nano_composite_plate")
-
-	// 含氟废渣
-	addMaterial("fluoride_containing_waste")
 
 	// 精炼核废料
 	addMaterial("refined_nuke_waste")
@@ -435,6 +429,12 @@ StartupEvents.registry("item", (event) => {
 			.tag(`cmi:casing_framework`)
 			.tag(`cmi:casing_framework/${frame}`)
 	})
+
+	// 纯化硅晶
+	// addMaterial("purified_silicon_crystal")
+
+	// 含氟废渣
+	// addMaterial("fluoride_containing_waste")
 
 	// 强化碳纳米管III型
 	// addMaterial("reinforced_carbon_nanotube_3")
