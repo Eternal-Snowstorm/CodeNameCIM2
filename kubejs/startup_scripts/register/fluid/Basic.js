@@ -60,7 +60,6 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("mercury", 0xA9C0FF)
 	addColorFluid("sculk_culture_medium", 0x062E37)
 	addColorFluid("hdpe", 0x564A6A)
-	addColorFluid("crystal_etching_solution", 0x364700)
 	addColorFluid("sapphire_solution", 0x004BFF)
 	addColorFluid("raw_titanium_solution", 0x813DFA)
 	addColorFluid("reinforced_titanium_solution", 0x6D26A5)
