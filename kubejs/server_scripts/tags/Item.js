@@ -68,6 +68,9 @@ ServerEvents.tags("item", (event) => {
 			"thermal:stripped_rubberwood_log"
 		])
 
+	event.get("c:iron_ingots")
+		.add("#forge:ingots/iron")
+
 	event.get("forge:fermentable")
 		.add("minecraft:melon_slice")
 		.add("minecraft:glow_berries")
