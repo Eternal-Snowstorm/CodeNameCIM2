@@ -292,7 +292,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("single_crystal_silicon")
 
 	// 硅晶圆
-	addMaterial("silicon_crystal_wafer")
+	addMaterial("silicon_wafer")
 
 	// 高级电子元件
 	addMaterial("advanced_electronic_components")
@@ -424,9 +424,6 @@ StartupEvents.registry("item", (event) => {
 	// 晶板
 	addMaterial("crystal_plate")
 
-	// 石英砂
-	addMaterial("quartz_sand")
-
 	// 富集锗铁混合物
 	addMaterial("enriched_germanium_iron_mixture")
 
@@ -468,6 +465,43 @@ StartupEvents.registry("item", (event) => {
 
 	// 精英电子元件
 	addMaterial("elite_electronic_components")
+
+	// 钴电解质
+	addMaterial("cobalt_electrolyte")
+
+	// 聚合催化合金
+	addMaterial("polymerization_catalytic_alloy")
+
+	// 乙烯聚合催化片
+	addMaterial("ethylene_polymerization_catalytic_plate")
+
+	// 沉积催化合金
+	addMaterial("deposition_catalytic_alloy")
+
+	// 碳沉积催化片
+	addMaterial("carbon_deposition_catalytic_plate")
+
+	// 碳聚合催化片
+	addMaterial("carbon_polymerization_catalytic_plate")
+
+	// 钨混合物
+	addMaterial("tungsten_mixture")
+
+	// 待组装钨钢板
+	addMaterial("incomplete_tungsten_steel_plate")
+
+	// 粗钨粉
+	addMaterial("raw_tungsten_dust")
+
+	// 燕雀石
+	addMaterial("machalite")
+
+	// 燕雀石粉
+	addMaterial("machalite_dust")
+
+	// 燃料棒
+	addMaterial("filled_fuel_rod")
+	addMaterial("empty_fuel_rod")
 
 	// 恩特罗系列
 	addItem("entro_crystal")
