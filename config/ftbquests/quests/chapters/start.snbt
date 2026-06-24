@@ -331,6 +331,7 @@
 			dependencies: [
 				"1231A867DC253AAA"
 				"21B1DA369A461281"
+				"799329AFB898606F"
 			]
 			id: "73D78755B4430729"
 			shape: "gear"
@@ -475,7 +476,6 @@
 			y: 18.5d
 		}
 		{
-			dependencies: ["1231A867DC253AAA"]
 			dependency_requirement: "one_completed"
 			id: "5DEF00C4138EE4FB"
 			subtitle: "主世界也有啦"
@@ -489,8 +489,8 @@
 				type: "observation"
 			}]
 			title: "石英矿"
-			x: 8.0d
-			y: 15.5d
+			x: 10.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["13884F7A75B4D36D"]
@@ -758,6 +758,44 @@
 			}]
 			x: 0.0d
 			y: 12.5d
+		}
+		{
+			id: "07C4444CF1D9BB41"
+			tasks: [{
+				id: "52B09CC2CB748C97"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["07C4444CF1D9BB41"]
+			id: "23E3A74C5D9EEEBF"
+			tasks: [{
+				id: "1C0FFA509B2733DC"
+				item: {
+					Count: 1
+					id: "cmi:flint_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["23E3A74C5D9EEEBF"]
+			id: "799329AFB898606F"
+			tasks: [{
+				id: "0F67DC1976A07223"
+				item: "cmi:stone_plate"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 15.5d
 		}
 	]
 	title: "炽焰匠心"

@@ -233,7 +233,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("enriched_crystal_cluster", "富集晶簇")
 	addItemLang("purified_silicon_crystal", "纯化硅晶")
 	addItemLang("single_crystal_silicon", "单晶硅")
-	addItemLang("silicon_crystal_wafer", "硅晶圆")
+	addItemLang("silicon_wafer", "硅晶圆")
 	addItemLang("advanced_electronic_components", "高级电子元件")
 	addItemLang("raw_helium_crystal", "粗结晶氦")
 	addItemLang("enriched_helium_crystal", "富集结晶氦")

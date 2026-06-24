@@ -76,7 +76,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("sodium_aluminate_solution", "铝酸钠溶液")
 	addFluidLang("sculk_culture_medium", "幽匿培养液")
 	addFluidLang("semi_molten_osmium", "半熔融态锇")
-	addFluidLang("hde", "HDE")
+	addFluidLang("hdpe", "HDPE")
 	addFluidLang("crystal_etching_solution","水晶蚀刻溶液")
 	addFluidLang("sapphire_solution", "蓝宝石溶液")
 	addFluidLang("raw_titanium_solution", "粗钛溶液")

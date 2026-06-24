@@ -3,6 +3,18 @@ ServerEvents.recipes((event) => {
 
 	let biodiesel = Fluid.of("createdieselgenerators:biodiesel")
 
+	event.remove({
+		id: "immersiveengineering:refinery/biodiesel"
+	})
+	event.remove({
+		id: "thermal:compat/immersiveengineering/press_ie_hemp_to_plantoil"
+	})
+	event.remove([{
+		type: "immersiveengineering:squeezer"
+	},{
+		output: "#immersiveengineering:plantoil"
+	}])
+
 	// 生物柴油
 	createdieselgenerators.basin_fermenting(biodiesel.withAmount(100), [
 		"8x minecraft:sugar",
