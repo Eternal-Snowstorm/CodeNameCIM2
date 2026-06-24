@@ -14,7 +14,7 @@ ServerEvents.highPriorityData((event) => {
 	/**
 	 * @example addJsonFile("oil", addUnification("#forge:oil", "createdieselgenerators:crude_oil"))
 	 * @param {Internal.Fluid | Internal.FluidTags} match 
-	 * @param {Internal.Fluid} tag 
+	 * @param {Internal.Fluid} fluid 
 	 * @returns 
 	 */
 	function addUnification(match, fluid) {

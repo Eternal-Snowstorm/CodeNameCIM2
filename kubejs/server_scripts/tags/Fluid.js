@@ -72,6 +72,7 @@ ServerEvents.tags("fluid", (event) => {
 		.add("cmi:nacl_solution")
 
 	event.get("forge:steam")
+		.add("steampowered:steam")
 		.add("mekanism:steam")
 
 	event.get("cmi:benzene")
@@ -142,7 +143,7 @@ ServerEvents.tags("fluid", (event) => {
 
 	event.get("cmi:sea_water")
 		.add("cmi:sea_water")
-		
+
 	event.get("cmi:caustic_soda_solution")
 		.add("cmi:caustic_soda_solution")
 
