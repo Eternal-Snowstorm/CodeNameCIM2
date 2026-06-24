@@ -108,7 +108,7 @@ StartupEvents.registry("block", (event) => {
 	// 青铜外壳
 	addBlock("bronze_casing")
 		.textureAll(Cmi.loadResource("block/casing/bronze/casing"))
-		.soundType(SoundType.WOOD)
+		.soundType(SoundType.COPPER)
 		.hardness(5)
 		.resistance(5)
 		.tagBlock(CmiToolType.PICKAXE.tag())
