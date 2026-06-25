@@ -12,6 +12,6 @@ BlockEvents.rightClicked((event) => {
 			item.setDamageValue(item.damageValue + 1)
 		}
 
-		level.destroyBlock(block.pos, false, player, 3)
+		level.destroyBlock(block.pos, false)
 	}
 })
