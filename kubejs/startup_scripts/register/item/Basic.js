@@ -332,6 +332,12 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("filled_fuel_rod")
 	addMaterial("empty_fuel_rod")
 
+	// 灌注锇
+	addMaterial("infuse_osmium")
+
+	// 待组装复合板
+	addMaterial("incomplete_reinforced_composite_plate")
+
 	// 恩特罗系列
 	addItem("entro_crystal")
 		.texture("expatternprovider:item/entro_crystal")

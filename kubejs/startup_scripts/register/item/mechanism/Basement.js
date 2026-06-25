@@ -33,4 +33,7 @@ StartupEvents.registry("item", (event) => {
 
 	addMechanismBasement("nuclear")
 	addMechanismBasement("antimatter")
+
+	addMechanismBasement("aeronautic")
+	addMechanismBasement("astronautic")
 })

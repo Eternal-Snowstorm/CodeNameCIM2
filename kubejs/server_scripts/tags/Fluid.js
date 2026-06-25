@@ -167,6 +167,12 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("forge:sauce/tomato")
 		.add("create_central_kitchen:tomato_sauce")
 
+	event.get("cmi:hydrochloric_acid")
+		.add("cmi:hydrochloric_acid")
+
+	event.get("cmi:tungsten_solution")
+		.add("cmi:tungsten_solution")
+
 	let thermalMaterials = [
 		"soul_infused",
 		"shellite",

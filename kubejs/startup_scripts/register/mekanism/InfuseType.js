@@ -8,4 +8,6 @@ StartupEvents.registry("mekanism:infuse_type", (event) => {
 	addMekanismInfuseType("etrium", 0x32FFD4)
 	addMekanismInfuseType("helium", 0xFF80D3)
 	addMekanismInfuseType("dense_oxide", 0x2E0A0A)
+	addMekanismInfuseType("cobalt_electrolyte", 0x00FF80)
+	addMekanismInfuseType("infuse_osmium", 0x72A9FF)
 })

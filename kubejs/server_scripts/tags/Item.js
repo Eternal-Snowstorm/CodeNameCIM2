@@ -681,6 +681,26 @@ ServerEvents.tags("item", (event) => {
 	event.get("treetap:wooden_buckets")
 		.add("minecraft:bowl")
 
+	event.get("forge:dusts/raw_tungsten")
+		.add("cmi:raw_tungsten_dust")
+
+	event.get("forge:dusts/tungsten_mixture")
+		.add("cmi:tungsten_mixture")
+
+	event.get("forge:plates/ethylene_polymerization_catalytic")
+		.add("cmi:ethylene_polymerization_catalytic_plate")
+
+	event.get("forge:plates/carbon_polymerization_catalytic")
+		.add("cmi:carbon_polymerization_catalytic_plate")
+
+	event.get("thermal:crafting/dies")
+		.add("cmi:coin_mold")
+		.add("cmi:gear_mold")
+		.add("cmi:2x2_packing_mold")
+		.add("cmi:3x3_packing_mold")
+		.add("cmi:unpack_mold")
+		.add("cmi:plate_mold")
+
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
