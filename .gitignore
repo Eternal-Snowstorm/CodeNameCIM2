@@ -111,7 +111,6 @@ config/nebula/value.txt
 !/config/ad_astra.jsonc
 !/config/fml.toml
 !/config/portality
-!/config/scannable*
 !/config/carryon-common.toml
 !/config/cookingforblockheads-common.toml
 !/config/nolijium.json5

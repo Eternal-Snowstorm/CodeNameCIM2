@@ -142,8 +142,6 @@ ServerEvents.recipes((event) => {
 	let Seq = {
 		FLYWHEEL: seqItems("create:flywheel", "#create:shaft", "cmi:incomplete_flywheel"),
 		GIZMO: seqItems("alexscaves:notor_gizmo", "#forge:plates/aluminum", "cmi:incomplete_notor_gizmo"),
-		SCANNER: seqItems("scannable:scanner", "#forge:plates/iron", "cmi:incomplete_scanner"),
-		SCAN_MOD: seqItems("scannable:blank_module", "#forge:plates/plastic", "cmi:incomplete_scanning_module"),
 		E_TUBE: seqItems("create:electron_tube", "#forge:plates/iron", "cmi:incomplete_electron_tube"),
 		R_TUBE: seqItems("cmi:resonant_tube", "#forge:plates/brass", "cmi:incomplete_resonant_tube"),
 		CAPACITOR: seqItems("ad_astra:etrionic_capacitor", "#forge:plates/steel", "ad_astra:etrionic_core"),
@@ -160,26 +158,6 @@ ServerEvents.recipes((event) => {
 		.deploying("#forge:plates/bronze")
 		.loop(4)
 		.build()
-
-	// 扫描机兵零件
-
-	// 扫描器
-	new SequencedAssemblyRecipe(Seq.SCANNER)
-		.deploying("immersiveengineering:survey_tools")
-		.deploying("thermal:redstone_servo")
-		.deploying("#forge:plates/electrum")
-		.deploying("cmi:smart_mechanism")
-		.build()
-		.id("scannable:scanner")
-
-	// 空白扫描模块
-	new SequencedAssemblyRecipe(Seq.SCAN_MOD)
-		.deploying("#forge:plates/electrum")
-		.deploying("ae2:printed_silicon")
-		.pressing()
-		.laserCutting(1000)
-		.build()
-		.id("scannable:blank_module")
 
 	// 电子管
 	new SequencedAssemblyRecipe(Seq.E_TUBE)

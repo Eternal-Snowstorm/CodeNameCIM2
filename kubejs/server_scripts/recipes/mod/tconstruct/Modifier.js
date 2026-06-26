@@ -63,6 +63,26 @@ ServerEvents.recipes((event) => {
 	}
 
 	/**
+	 * 设置 Modifier 等级
+	 *
+	 * @param {number} min
+	 * @param {number} [max]
+	 * @returns {ModifierRecipeBuilder}
+	 */
+	ModifierRecipeBuilder.prototype.level = function (min, max) {
+		if (typeof max === "undefined") {
+			this.recipe.level = min
+			return this
+		}
+
+		this.recipe.level = {
+			min: min,
+			max: max
+		}
+		return this
+	}
+
+	/**
 	 * 设置槽位
 	 *
 	 * @param {"abilities"|"ability"|"defense"|"upgrades"|"slotless"|"salvage"} type 
@@ -77,6 +97,7 @@ ServerEvents.recipes((event) => {
 
 	/**
 	 * 设置输入材料
+	 * 最高5种
 	 *
 	 * @param {Internal.Ingredient_[]} inputs
 	 * @returns {ModifierRecipeBuilder}
@@ -186,6 +207,19 @@ ServerEvents.recipes((event) => {
 			"ae2:sky_dust"
 		])
 		.build(NebulaTinker.loadResource("tinker/modifier/slotless/writable"))
+
+	// 自动修复
+	new ModifierRecipeBuilder("tinkersmossymodifier:auto_repair")
+		.allowCrystal(true)
+		.tools("#tconstruct:modifiable/durability")
+		.level(1, 3)
+		.slots("upgrades", 1)
+		.inputs([
+			"tinkersmossymodifier:ball_of_moss",
+			Mechanism.NATURE.COM,
+			"tinkersmossymodifier:ball_of_moss"
+		])
+		.build(useEmiId("jei:/tinkersmossymodifier/tools/modifiers/upgrade/auto_repair"))
 
 	// endregion
 })
