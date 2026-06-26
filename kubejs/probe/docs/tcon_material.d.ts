@@ -15,6 +15,13 @@ type TraitStat = "default"
 	| "tconstruct:melee_harvest"
 	| "tconstruct:ranged"
 
+type ModifierSlotType = "abilities"
+	| "ability"
+	| "defense"
+	| "upgrades"
+	| "slotless"
+	| "salvage"
+
 type FluidIngredient = Special.Fluid | `#${Special.FluidTag}`
 
 interface TraitsBuilder {

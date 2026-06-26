@@ -3,6 +3,7 @@ ServerEvents.recipes((event) => {
 
 	/**
 	 * TConstruct Modifier 配方构造器
+	 * 
 	 *
 	 * @constructor
 	 * @param {string} modifier Modifier ID
@@ -83,7 +84,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 设置槽位
 	 *
-	 * @param {"abilities"|"ability"|"defense"|"upgrades"|"slotless"|"salvage"} type 
+	 * @param {ModifierSlotType} type 
 	 * @param {number} count
 	 * @returns {ModifierRecipeBuilder}
 	 */
