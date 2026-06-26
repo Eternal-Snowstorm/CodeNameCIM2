@@ -67,4 +67,11 @@ ServerEvents.recipes((event) => {
 		.middle("#forge:plates/iron")
 		.top("#forge:plates/zinc")
 		.press()
+
+	// 基础控制电路
+	new InscriberRecipe("mekanism:basic_control_circuit")
+		.bottom("cmi:enriched_alloy")
+		.middle("cmi:osmium_wafer")
+		.top("cmi:inscribed_silicon")
+		.press()
 })
