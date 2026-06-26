@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-    let { kubejs, create, thermal_extra, thermal, mekanism } = event.getRecipes()
+    let { kubejs, create, thermal_extra, thermal, mekanism, ad_astra } = event.getRecipes()
 
     // 钴电解质
     thermal.crystallizer("cmi:cobalt_electrolyte", [
@@ -249,7 +249,7 @@ ServerEvents.recipes((event) => {
         "cmi:infuse_osmium"
     )
     // 破碎奇点粉
-    mekanism.combining("2x advanced_ae:quantum_infused_dust", 
+    mekanism.combining("2x advanced_ae:quantum_infused_dust",
         "#forge:dusts/void", "ae2:singularity"
     )
     // 航空构件基座
@@ -298,39 +298,39 @@ ServerEvents.recipes((event) => {
         Fluid.of("cmi:activated_graphite", 100),
         "cmi:raw_tungsten_dust"
     ])
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [
+    event.custom({
+        "type": "immersiveindustry:chemical",
+        "inputs": [
             {
-                "tag":"forge:dusts/tungsten_mixture"
+                "tag": "forge:dusts/tungsten_mixture"
             }
         ],
-		"input_fluids": [
-			Fluid.tag("tag", "cmi:hydrochloric_acid", 100).toJson()
-		],
-		"result_fluids": [
-			Fluid.of("cmi:tungsten_solution", 200).toJson()
-		],
-		"outputs": [],
-		"time": 200
-	})
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [
+        "input_fluids": [
+            Fluid.tag("tag", "cmi:hydrochloric_acid", 100).toJson()
+        ],
+        "result_fluids": [
+            Fluid.of("cmi:tungsten_solution", 200).toJson()
+        ],
+        "outputs": [],
+        "time": 200
+    })
+    event.custom({
+        "type": "immersiveindustry:chemical",
+        "inputs": [
             {
-                "tag":"forge:dusts/aluminum"
+                "tag": "forge:dusts/aluminum"
             }
         ],
-		"input_fluids": [
-			Fluid.tag("tag", "cmi:tungsten_solution", 100).toJson()
-		],
-		"result_fluids": [],
-		"outputs": [
+        "input_fluids": [
+            Fluid.tag("tag", "cmi:tungsten_solution", 100).toJson()
+        ],
+        "result_fluids": [],
+        "outputs": [
             {
-                "item":"cmi:tungsten_dust"
+                "item": "cmi:tungsten_dust"
             }],
-		"time": 200
-	})
+        "time": 200
+    })
     // 钨钢板
     event.custom({
         "type": "advanced_ae:reaction",
@@ -367,7 +367,7 @@ ServerEvents.recipes((event) => {
             "id": "cmi:incomplete_tungsten_steel_plate"
         }
     })
-    create.deploying("cmi:composite_tungsten_steel_plate",[
+    create.deploying("cmi:composite_tungsten_steel_plate", [
         "cmi:incomplete_tungsten_steel_plate",
         "#forge:plates/tungsten_steel"
     ])
@@ -405,5 +405,234 @@ ServerEvents.recipes((event) => {
         "cmi:incomplete_reinforced_composite_plate",
         "2x mekanism:osmium"
     )
+    // 钛
+    event.custom({
+        "type": "immersiveindustry:chemical",
+        "inputs": [
+            {
+                "tag": "forge:gems/fluorite"
+            }
+        ],
+        "input_fluids": [
+            Fluid.tag("tag", "forge:sulfuric_acid", 100).toJson(),
+            Fluid.tag("tag", "cmi:hydrochloric_acid", 100).toJson()
+        ],
+        "result_fluids": [
+            Fluid.of("cmi:crystal_etching_solution", 300).toJson()
+        ],
+        "outputs": [],
+        "time": 200
+    })
+    create.mixing(Fluid.of("cmi:sapphire_solution", 200), [
+        "#forge:dusts/sapphire",
+        Fluid.of("cmi:crystal_etching_solution", 100)
+    ])
+    event.custom({
+        "type": "immersiveindustry:chemical",
+        "inputs": [
+            {
+                "tag": "forge:dusts/coal_coke"
+            }
+        ],
+        "input_fluids": [
+            Fluid.tag("tag", "cmi:crystal_catalyt", 100).toJson(),
+            Fluid.tag("tag", "cmi:sapphire_solution", 100).toJson()
+        ],
+        "result_fluids": [],
+        "outputs": [
+            {
+                "item": "cmi:raw_titanium_dust"
+            }
+        ],
+        "time": 200
+    })
+    thermal.smelter("cmi:raw_titanium_mixture",
+        ["cmi:raw_titanium_dust",
+            "#forge:dusts/aluminum"]
+    )
+    thermal.smelter(["cmi:titanium_dust", "create:crushed_raw_aluminum"], [
+        "cmi:raw_titanium_mixture"
+    ])
+    thermal.smelter("cmi:titanium_alloy_ingot", [
+        ["#forge:dusts/titanium", "#forge:ingots/titanium"],
+        ["#forge:dusts/chromium", "#forge:ingots/chromium"]
+    ])
+    // 核电，轻而易举啊
+    event.remove({
+        "id": ""
+    })
 
+    mekanism.oxidizing("#forge:dusts/uranium",
+        "mekanism:uranium_oxide"
+    ).id("mekanism:processing/uranium/uranium_oxide")
+
+    event.custom({
+        "type": "advanced_ae:reaction",
+        "energy": 200,
+        "fluid": {
+            "fluidStack": {
+                "Amount": 720,
+                "FluidName": "tconstruct:molten_lead"
+            }
+        },
+        "input_items": [
+            {
+                "amount": 32,
+                "ingredient": {
+                    "tag": "forge:ingots/hop_graphite"
+                }
+            },
+            {
+                "amount": 4,
+                "ingredient": {
+                    "item": "alexscaves:polymer_plate"
+                }
+            },
+            {
+                "amount": 16,
+                "ingredient": {
+                    "item": "mekanism:reprocessed_fissile_fragment"
+                }
+            }
+        ],
+        "output": {
+            "#": 1,
+            "#c": "ae2:i",
+            "id": "cmi:empty_fuel_rod"
+        }
+    })
+    thermal.bottler("cmi:filled_fuel_rod", [
+        "cmi:empty_fuel_rod",
+        Fluid.of("mekanism:uranium_hexafluoride", 100)
+    ])
+    mekanism.centrifuging(
+        "mekanism:uranium_hexafluoride", "cmi:fissile_uranium_compound"
+    ).id("mekanism:processing/uranium/fissile_fuel")
+    event.custom({
+        "type": "mekanism:reaction",
+        "duration": 60,
+        "energyRequired": 1000,
+        "fluidInput": {
+            "amount": 1000,
+            "fluid": "minecraft:water"
+        },
+        "gasInput": {
+            "amount": 100,
+            "gas": "cmi:fissile_uranium_compound"
+        },
+        "itemInput": {
+            "ingredient": {
+                "tag": "forge:ingots/uranium"
+            }
+        },
+        "itemOutput": {
+            "item": "mekanism:yellow_cake_uranium"
+        }
+    })
+    mekanism.oxidizing("mekanism:yellow_cake_uranium",
+        "200x mekanism:fissile_fuel"
+    )
+    event.custom({
+        "type": "advanced_ae:reaction",
+        "energy": 200,
+        "fluid": {
+            "fluidStack": {
+                "Amount": 4000,
+                "FluidName": "cmi:structural_plastic"
+            }
+        },
+        "input_items": [
+            {
+                "amount": 64,
+                "ingredient": {
+                    "item": "mekanismgenerators:fission_reactor_casing"
+                }
+            },
+            {
+                "amount": 32,
+                "ingredient": {
+                    "item": "mekanismgenerators:reactor_glass"
+                }
+            },
+            {
+                "amount": 16,
+                "ingredient": {
+                    "item": "mekanismgenerators:fission_fuel_assembly"
+                }
+            },
+            {
+                "amount": 8,
+                "ingredient": {
+                    "item": "mekanismgenerators:control_rod_assembly"
+                }
+            },
+            {
+                "amount": 4,
+                "ingredient": {
+                    "item": "mekanismgenerators:fission_reactor_port"
+                }
+            },
+            {
+                "amount": 2,
+                "ingredient": {
+                    "item": "mekanism:steel_casing"
+                }
+            },
+            {
+                "amount": 1,
+                "ingredient": {
+                    "item": "mekanismgenerators:fission_reactor_logic_adapter"
+                }
+            }
+        ],
+        "output": {
+            "#": 1,
+            "#c": "ae2:i",
+            "id": "cmi:simulated_fission_reactor"
+        }
+    })
+    // 核污水
+    thermal_extra.advanced_refinery([
+        "alexscaves:toxic_paste",
+        Fluid.of("mekanism:sulfuric_acid", 200),
+        Fluid.of("cmi:sludge_suspension", 100)],
+        Fluid.of("alexscaves:acid", 500))
+    // 聚合物板
+    event.custom({
+        "type": "mekanism:reaction",
+        "duration": 60,
+        "energyRequired": 1000,
+        "fluidInput": {
+            "amount": 1000,
+            "fluid": "minecraft:water"
+        },
+        "gasInput": {
+            "amount": 100,
+            "gas": "cmi:radon"
+        },
+        "itemInput": {
+            "ingredient": {
+                "tag": "forge:plates/hdpe"
+            }
+        },
+        "itemOutput": {
+            "item": "alexscaves:polymer_plate"
+        }
+    })
+    thermal_extra.endothermic_dehydrator("mekanism:hdpe_pellet",Fluid.of("cmi:hdpe",1000))
+
+    mekanism.oxidizing("alexscaves:toxic_paste",
+        "200x cmi:refined_nuke_waste"
+    )
+    mekanism.centrifuging(
+        "cmi:refined_nuke_waste", "mekanism:tritium"
+    )
+    mekanism.activating("cmi:helium_3","mekanism:tritium")
+
+    // 月壤
+    mekanism.metallurgic_infusing(
+        "mekanism:infused_alloy",
+        "#forge:ingots/chromium",
+        "mekanism:redstone"
+    )
 })
