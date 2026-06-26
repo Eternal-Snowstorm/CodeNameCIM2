@@ -6,10 +6,9 @@ ServerEvents.recipes((event) => {
 	 *
 	 * @constructor
 	 * @param {string} modifier Modifier ID
-	 * @param {number} [level] Modifier 等级
 	 * @returns {Internal.JsonElement_}
 	 */
-	function ModifierRecipeBuilder(modifier, level) {
+	function ModifierRecipeBuilder(modifier) {
 		if (typeof level === "undefined") {
 			this.recipe = {
 				type: "tconstruct:modifier",
@@ -19,7 +18,6 @@ ServerEvents.recipes((event) => {
 		}
 		this.recipe = {
 			type: "tconstruct:modifier",
-			level: level,
 			result: modifier
 		}
 		return this
@@ -96,8 +94,7 @@ ServerEvents.recipes((event) => {
 	}
 
 	/**
-	 * 设置输入材料
-	 * 最高5种
+	 * 设置输入材料 最高5种
 	 *
 	 * @param {Internal.Ingredient_[]} inputs
 	 * @returns {ModifierRecipeBuilder}
@@ -125,11 +122,12 @@ ServerEvents.recipes((event) => {
 
 	// region add Recipes
 	// 死穴
-	new ModifierRecipeBuilder("nebula_tinker:acupoint", 1)
+	new ModifierRecipeBuilder("nebula_tinker:acupoint")
 		.allowCrystal(true)
 		.checkTraitLevel(true)
 		.tools("#tconstruct:modifiable/held")
 		.slots("abilities", 1)
+		.level(1)
 		.inputs([
 			"cmi:blackstone_source_alpha",
 			"cmi:blackstone_source_beta",
@@ -140,9 +138,10 @@ ServerEvents.recipes((event) => {
 		.build(NebulaTinker.loadResource("tinker/modifier/ability/acupoint"))
 
 	// 狂乱
-	new ModifierRecipeBuilder("nebula_tinker:frenzy", 1)
+	new ModifierRecipeBuilder("nebula_tinker:frenzy")
 		.allowCrystal(true)
 		.checkTraitLevel(true)
+		.level(1)
 		.tools("#tconstruct:modifiable/held")
 		.slots("abilities", 1)
 		.inputs([
@@ -155,9 +154,10 @@ ServerEvents.recipes((event) => {
 		.build(NebulaTinker.loadResource("tinker/modifier/ability/frenzy"))
 
 	// 因果截断
-	new ModifierRecipeBuilder("nebula_tinker:causal_truncation", 1)
+	new ModifierRecipeBuilder("nebula_tinker:causal_truncation")
 		.allowCrystal(true)
 		.checkTraitLevel(true)
+		.level(1)
 		.tools("#tconstruct:modifiable/melee/primary")
 		.slots("abilities", 1)
 		.inputs([
@@ -170,9 +170,10 @@ ServerEvents.recipes((event) => {
 		.build(NebulaTinker.loadResource("tinker/modifier/ability/causal_truncation"))
 
 	// 发条
-	new ModifierRecipeBuilder("nebula_tinker:clockwork", 1)
+	new ModifierRecipeBuilder("nebula_tinker:clockwork")
 		.allowCrystal(true)
 		.checkTraitLevel(true)
+		.level(1)
 		.tools("#tconstruct:modifiable/melee")
 		.slots("abilities", 1)
 		.inputs([
