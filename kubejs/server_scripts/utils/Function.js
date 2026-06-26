@@ -278,11 +278,11 @@ function removeRecipe(event, ids) {
 /**
  * 用于修正 EMI 返回的配方 ID.
  *
- * 主要用于调用 `RecipeJS#id()` 直接替换配方时
+ * 主要用于调用 `RecipeJS#id(ResourceLocation_)` 直接替换配方时
  * 
  * EMI 所复制的的 ID 可能为 `jei:/namespace/path`
  * 
- * 无法直接作为 `RecipeJS.id()` 的参数使用, 因此需要先进行转换.
+ * 无法直接作为 `RecipeJS#id(ResourceLocation_)` 的参数使用, 因此需要先进行转换.
  *
  * @example
  * ServerEvents.recipes((event) => {
@@ -295,7 +295,7 @@ function removeRecipe(event, ids) {
  * })
  *
  * @param {ResourceLocation_} id 配方 ID.
- * @returns {string} 转换后的配方 ID.
+ * @returns {ResourceLocation_} 转换后的配方 ID.
  */
 function useEmiId(id) {
 	id = String(id)
@@ -305,5 +305,5 @@ function useEmiId(id) {
 		id = id.replace("/", ":")
 	}
 
-	return id
+	return ResourceLocation.tryParse(id)
 }
