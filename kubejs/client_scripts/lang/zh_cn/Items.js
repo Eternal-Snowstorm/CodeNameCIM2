@@ -141,6 +141,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("tier_3_rocket_fin", "三阶火箭尾翼")
 	addItemLang("tier_4_rocket_fin", "四阶火箭尾翼")
 
+	addItemLang("aluminum_upgrade_augment", "铝整合组件")
+	addItemLang("stainless_steel_upgrade_augment", "不锈钢整合组件")
+	addItemLang("titanium_alloy_upgrade_augment", "钛合金整合组件")
+	addItemLang("tungsten_steel_upgrade_augment", "钨钢整合组件")
+
 	addItemLang("incomplete_cogwheel", "齿轮(半成品)")
 	addItemLang("incomplete_bronze_cogwheel", "青铜齿轮(半成品)")
 	addItemLang("incomplete_cast_iron_cogwheel", "铸铁齿轮(半成品)")
@@ -158,6 +163,12 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("incomplete_upgrade_augment_1", "硬化整合组件(半成品)")
 	addItemLang("incomplete_upgrade_augment_2", "强化整合组件(半成品)")
 	addItemLang("incomplete_upgrade_augment_3", "谐振整合组件(半成品)")
+	addItemLang("incomplete_upgrade_augment_4", "龙钢整合组件(半成品)")
+	addItemLang("incomplete_upgrade_augment_5", "深渊整合组件(半成品)")
+	addItemLang("incomplete_upgrade_augment_6", "铝整合组件(半成品)")
+	addItemLang("incomplete_upgrade_augment_7", "不锈钢整合组件(半成品)")
+	addItemLang("incomplete_upgrade_augment_8", "钛合金整合组件(半成品)")
+	addItemLang("incomplete_upgrade_augment_9", "钨钢整合组件(半成品)")
 
 	addItemLang("incomplete_tier_1_rocket_frame", "一阶火箭框架(半成品)")
 	addItemLang("incomplete_tier_2_rocket_frame", "二阶火箭框架(半成品)")

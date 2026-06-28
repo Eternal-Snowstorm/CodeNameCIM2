@@ -20,10 +20,6 @@ StartupEvents.registry("item", (event) => {
 
 	addMechanismBasement("ender")
 
-	for (let i = 1; i <= 4; i++) {
-		addMechanismBasement(`tier_${i}_aviation`)
-	}
-
 	addMechanismBasement("air_tight")
 	addMechanismBasement("computing")
 	addMechanismBasement("basic_mekanism")
