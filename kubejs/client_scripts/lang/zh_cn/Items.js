@@ -87,7 +87,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("andesite_alloy_noodle_stage1", "安山合金刀削面(阶段1)")
 	addItemLang("andesite_alloy_noodle_stage2", "安山合金刀削面(阶段2)")
 	addItemLang("andesite_alloy_noodle", "安山合金刀削面")
-	addItemLang("simple_battery", "简易电池")
 	addItemLang("peat", "泥炭")
 	addItemLang("paxel", "镐尖斧")
 	addItemLang("rubber_tree_bark", "橡胶树皮")

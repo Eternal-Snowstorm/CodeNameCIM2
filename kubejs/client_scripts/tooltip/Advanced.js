@@ -26,33 +26,10 @@ ItemEvents.tooltip((event) => {
 	 */
 	function addAdvancedTooltip(ingredient) {
 		event.addAdvanced(ingredient, (item, advanced, tooltip) => {
-			let itemTooltipTranslateKey = Component.translatable(`tooltip.${ingredient}`
-				.replace(":", "."))
-			tooltip.add(itemTooltipTranslateKey)
+			let itemTooltipTranslateKey = `tooltip.${ingredient}`.replace(":", ".")
+			tooltip.add(Component.translatable(itemTooltipTranslateKey))
 		})
 	}
-
-	// 初始套件的Tooltip
-	// event.addAdvanced("cmi:initial_item_kit", 
-	// 	(item,  advanced,  tooltip) => {
-	// 		if (event.shift) {
-	// 			let lines = Component.translatable("tooltip.cmi.initial_item_kit.shift")
-	// 				.string.split("\n")
-	// 			lines.forEach((line) => {
-	// 				tooltip.add(line)
-	// 			})
-	// 		} else {
-	// 			tooltip.add(Component.translatable("tooltip.cmi.initial_item_kit.tip"))
-	// 		}
-	// 	})
-
-	// 电池
-	event.addAdvanced("cmi:simple_battery",
-		(item, advanced, tooltip) => {
-			let stored = item.nbt?.Energy || 0
-			let max = 150000
-			tooltip.add(Component.literal(`§e${stored} / ${max} FE`))
-		})
 
 	// 末影构件
 	event.addAdvanced("cmi:ender_mechanism",
