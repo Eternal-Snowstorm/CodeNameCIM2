@@ -71,11 +71,9 @@ CMI Dev.json
 !/mods/Storage Tweaks*.jar
 
 # ResourcePacks
-/resourcepacks/*
-!/resourcepacks/彩色边框.zip
-!/resourcepacks/超好看天空.zip
-!/resourcepacks/CMI Squarefully.zip
-!/resourcepacks/Qi_Month Addons.zip
+/resourcepacks/tconjeidark.zip
+/resourcepacks/彩色边框.zip
+/resourcepacks/CMI Squarefully.zip
 
 # ShaderPacks
 /shaderpacks/*
