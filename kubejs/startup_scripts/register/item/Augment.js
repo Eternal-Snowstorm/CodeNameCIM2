@@ -1,30 +1,27 @@
 StartupEvents.registry("item", (event) => {
 	/**
 	 * @param {string} name 注册ID
-	 * @param {Number} tier 等级
-	 * @param {Number} value 倍率
-	 * @returns 
+	 * @param {number} tier 等级
+	 * @param {number} multipliers 倍率
+	 * @returns
 	 */
-	function addUpgrade(name, tier, value) {
+	function addUpgrade(name, tier, multipliers) {
 		let model = {
 			parent: "item/generated",
 			textures: {
 				layer0: `cmi:item/augment/${name}`,
-				layer1: "thermal:item/augments/upgrade_augment_3_lights",
-				layer2: "thermal:item/augments/upgrade_augment_anim"
+				layer1: tier === 1
+					? "thermal:item/augments/upgrade_augment_3_lights"
+					: `cmi:item/augment/tier_${tier}/upgrade_augment_lights`,
+				layer2: tier === 1
+					? "thermal:item/augments/upgrade_augment_anim"
+					: `cmi:item/augment/tier_${tier}/upgrade_augment_anim`
 			}
 		}
-		if (tier == 2) {
-			model.textures.layer1 = "cmi:item/augment/tier_2/upgrade_augment_lights"
-			model.textures.layer2 = "cmi:item/augment/tier_2/upgrade_augment_anim"
-		}
-		if (tier == 3) {
-			model.textures.layer1 = "cmi:item/augment/tier_3/upgrade_augment_lights"
-			model.textures.layer2 = "cmi:item/augment/tier_3/upgrade_augment_anim"
-		}
+
 		return event.create(`${Cmi.MODID}:${name}_upgrade_augment`, "thermal:upgrade_augment")
+			.setValue(multipliers)
 			.modelJson(model)
-			.setValue(value)
 	}
 
 	addUpgrade("aluminum", 2, 7)
