@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
 	// 强化构件
 	thermal_extra.component_assembly(`4x ${Mechanism.REINFORCED.AUG.getId()}`, [
 		"#forge:gears/signalum",
-		"thermalendergy:vibrating_core",
+		"cmi:glowstone_lumen_tube",
 		"cmi:inscribed_silicon",
 		"#forge:plates/lumium"
 	])

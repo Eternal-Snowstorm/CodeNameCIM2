@@ -49,11 +49,11 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/redstone"
 	])
 
-	// 振动元件
-	addComponRecipe("thermalendergy:vibrating_core", [
+	// 萤石流明管道
+	addComponRecipe("cmi:glowstone_lumen_tube", [
 		"#forge:plates/cobalt",
-		"#forge:dusts/amethyst",
-		"#forge:dusts/amethyst"
+		"#forge:dusts/glowstone",
+		"#forge:dusts/glowstone"
 	])
 
 	// 机器框架

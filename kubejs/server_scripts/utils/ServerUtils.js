@@ -123,7 +123,7 @@ let Mechanism = Object.freeze({
 	COBALT: Object.freeze({
 		COM: Item.of("cmi:cobalt_mechanism"),
 		INC: Item.of("cmi:incomplete_cobalt_mechanism"),
-		AUG: Item.of("thermalendergy:vibrating_core")
+		AUG: Item.of("cmi:glowstone_lumen_tube")
 	}),
 	// C6
 	BASIC: Object.freeze({
