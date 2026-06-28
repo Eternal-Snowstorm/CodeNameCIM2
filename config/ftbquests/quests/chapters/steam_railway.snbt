@@ -46,6 +46,10 @@
 		}
 		{
 			dependencies: ["2E72074B83610585"]
+			description: [
+				"一个完整的单层冶炼炉结构:"
+				"{image:cmi:textures/images/tconstruct/smeltery.png width:143 height:125 align:center}"
+			]
 			icon: "tconstruct:smeltery_controller"
 			id: "52AE29C9BB2B6F00"
 			rewards: [{
@@ -54,6 +58,8 @@
 				item: "tconstruct:seared_bricks"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.5d
 			subtitle: "现在不要以后也得要"
 			tasks: [
 				{
@@ -370,7 +376,7 @@
 			description: [
 				"向&6蒸汽引擎&r中泵入蒸汽，可以带动其前方两格内的&b蒸汽飞轮&r旋转并&d产生应力&r"
 				"这种方式能够提供&d非常可观&r的应力量，在解锁&e大型蒸汽锅炉&r和&c燃油引擎&r之前尤为实用"
-				"(你不选你就当水车仙人好了, 你不用有的是人用)"
+				"{image:cmi:textures/images/create/burner_and_flywheel.png width:175 height:114 align:center}"
 			]
 			id: "5227B74E4F8FF3F5"
 			subtitle: "&m不然这水不是白烧&r"
@@ -413,9 +419,20 @@
 				"&e背罐顶部传入应力&r可以持续压缩并补充内部气体，从而为佩戴者提供可呼吸的空气"
 				"借助这套装置，你不仅可以在&4下界&r中安全呼吸，也能够在&b水中&r长时间活动"
 				""
-				"由于一个背罐只能够支撑&c&l20分钟&r&r，因此如果有条件还是&l&b非常建议&r&r携带两个&e背罐&r在身上用于&c处理紧急情况&r"
+				"由于一个背罐只能够支撑&c&l20分钟&r&r，因此如果有条件还是&l&b非常建议&r&r携带两个&e背罐&r在身上用于处理&c紧急情况&r"
 			]
 			id: "08A35C2D450B20F3"
+			rewards: [{
+				id: "185850C08239F46F"
+				item: {
+					Count: 1
+					id: "create:copper_diving_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "亿万人, 必须呼吸"
 			tasks: [
@@ -451,12 +468,24 @@
 		{
 			dependencies: ["08A35C2D450B20F3"]
 			id: "667B8EFCF3ACD51D"
+			rewards: [{
+				id: "07D706292973EFF7"
+				type: "xp"
+				xp: 500
+			}]
 			shape: "square"
 			size: 2.0d
 			tasks: [{
 				dimension: "minecraft:the_nether"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "cmi:textures/images/cmi/nether.png"
+					}
+				}
 				id: "6421E2122AF59746"
-				title: "访问下界"
+				title: "前往下界维度"
 				type: "dimension"
 			}]
 			x: 4.5d
@@ -512,7 +541,7 @@
 		{
 			dependencies: ["2802F9503EB14965"]
 			id: "470156018DA261F4"
-			subtitle: "&m更火热的水泥&r"
+			subtitle: "收集114514个碎片即可解锁"
 			tasks: [
 				{
 					id: "48E5C9079BDE5D65"
@@ -548,6 +577,11 @@
 				"4A19D6FEC975D2B9"
 				"470156018DA261F4"
 			]
+			description: [
+				"一个完整的熔铸炉结构:"
+				"{image:cmi:textures/images/tconstruct/foundry.png width:147 height:120 align:center}"
+			]
+			icon: "tconstruct:foundry_controller"
 			id: "5095EB55709B5982"
 			rewards: [
 				{
@@ -561,6 +595,8 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
+			size: 1.5d
 			subtitle: "大炉子分支"
 			tasks: [
 				{
@@ -670,6 +706,39 @@
 			}]
 			x: 2.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["12CEF39F02D4EB3A"]
+			id: "3426EEB10B251CA4"
+			subtitle: "♻️&m环保吗♻️"
+			tasks: [{
+				id: "3642624664D89610"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "cmi:bronze_solar_boiler"
+							}
+							{
+								Count: 1b
+								id: "cmi:cast_iron_solar_boiler"
+							}
+							{
+								Count: 1b
+								id: "cmi:steel_solar_boiler"
+							}
+						]
+					}
+				}
+				title: "太阳能锅炉"
+				type: "item"
+			}]
+			title: "整点太阳能的"
+			x: -4.5d
+			y: -4.0d
 		}
 	]
 	title: "汽鸣铁道"

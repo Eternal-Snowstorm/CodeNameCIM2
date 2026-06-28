@@ -4,23 +4,17 @@ let $ParticleTypes =
 CreateEvents.spoutHandler((event) => {
 	const FLUID = "cmi:crystal_catalyt"
 
-	// CMICore.loadResource()
-
 	/**
 	 * 注册晶簇成长逻辑
-	 * @param {string} id 注册ID
-	 * @param {string} blockId 当前方块
+	 * @param {string} path 注册ID
+	 * @param {string} block 当前方块
 	 * @param {string} nextId 下个阶段方块
 	 * @param {boolean} [checkAir=false] 是否需要检查空气生成(仅 budding 用)
 	 */
-	function addBudGrowth(id, blockId, nextId, checkAir) {
+	function addBudGrowth(path, block, nextId, checkAir) {
 		checkAir = checkAir === true
 
-		event.add(id, blockId, (
-			block,
-			fluid,
-			simulate
-		) => {
+		event.add(path, block, (block, fluid, simulate) => {
 			if (fluid.id !== FLUID || fluid.amount < 250) {
 				return 0
 			}

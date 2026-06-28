@@ -1,3 +1,4 @@
+/*
 let $BlockStateProperties =
 	Java.loadClass("net.minecraft.world.level.block.state.properties.BlockStateProperties")
 
@@ -11,3 +12,4 @@ CreateEvents.boilerHeatHandler((event) => {
 		return 1
 	})
 })
+*/
