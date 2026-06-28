@@ -119,10 +119,6 @@ let metals = {
 		t: 1617,
 		n: "v"
 	},
-	melodium: {
-		t: 1755,
-		n: "t"
-	},
 	netherite: {
 		t: 2042,
 		n: "v"
@@ -146,10 +142,6 @@ let metals = {
 	platinum: {
 		t: 1768,
 		n: "c"
-	},
-	prismalium: {
-		t: 1741,
-		n: "t"
 	},
 	quantum_alloy: {
 		t: 1024,
@@ -214,10 +206,6 @@ let metals = {
 	steel: {
 		t: 1370,
 		n: "v"
-	},
-	stellarium: {
-		t: 1873,
-		n: "t"
 	},
 	soul_infused: {
 		t: 1901,

@@ -182,6 +182,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("printed_concurrent_processor", "并发电路板")
 	addItemLang("concurrent_processor_press", "并发压印模板")
 
+	addItemLang("glowstone_lumen_tube", "萤石流明管道")
 	addItemLang("music_disc_mechanism", "Mechanism - Belalus")
 	addItemLang("togni_leets", "钢錠")
 	addItemLang("hammer_head", "冲压头")

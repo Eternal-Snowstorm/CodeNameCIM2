@@ -108,6 +108,9 @@ StartupEvents.registry("item", (event) => {
 	// 电离中和红石
 	addMaterial("electrolized_redstone")
 
+	// 萤石流明管道
+	addMaterial("glowstone_lumen_tube")
+
 	// 高岭土
 	addMaterial("kaolinite_ball")
 
