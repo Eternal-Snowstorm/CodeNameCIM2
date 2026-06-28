@@ -41,6 +41,11 @@ ServerEvents.tags("item", (event) => {
 			.add(`minecraft:${colors}_shulker_box`)
 	})
 
+	event.get("easyrepair:repair_item_pouchs")
+		.add("easyrepair:repair_item_pouch_i")
+		.add("easyrepair:repair_item_pouch_ii")
+		.add("easyrepair:repair_item_pouch_iii")
+
 	event.get("create:blaze_burner_fuel/special")
 		.add("cmi:creosote_wood_chip_briquette")
 
