@@ -65,11 +65,11 @@ BlockEvents.modification((event) => {
 	 * @returns
 	 */
 	function modifySoundType(block, sound) {
-		(block instanceof Array ? block : [block])
-			.forEach((predicate) => {
-				event.modify(predicate, (modify) => {
-					modify.setSoundType(sound)
-				})
+		let ofArray = (block instanceof Array ? block : [block])
+		ofArray.forEach((predicate) => {
+			event.modify(predicate, (modify) => {
+				modify.setSoundType(sound)
 			})
+		})
 	}
 })
