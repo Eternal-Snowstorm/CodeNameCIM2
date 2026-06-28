@@ -24,6 +24,10 @@ StartupEvents.registry("item", (event) => {
 			.texture(Cmi.loadResource(`item/material/${name}`))
 	}
 
+	// 图标
+	addItem("cmi_icon")
+		.texture(Cmi.loadResource("item/packicon"))
+
 	// 黏血球
 	addItem("blood_slime_ball")
 		.texture(Cmi.loadResource("item/material/blood_slime_ball"))
@@ -75,10 +79,6 @@ StartupEvents.registry("item", (event) => {
 					}
 				})
 		})
-
-	// 图标
-	addItem("cmi_icon")
-		.texture(Cmi.loadResource("item/packicon"))
 
 	// 热力单元
 	addItem("thermal_unit")

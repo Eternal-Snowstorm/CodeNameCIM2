@@ -15,6 +15,10 @@ let metals = {
 		t: 660,
 		n: "v"
 	},
+	aluminum_alloy: {
+		t: 592,
+		n: "c"
+	},
 	amethyst_bronze: {
 		t: 1043,
 		n: "v"
@@ -217,6 +221,10 @@ let metals = {
 	},
 	titanium: {
 		t: 1668,
+		n: "c"
+	},
+	titanium_alloy: {
+		t: 1634,
 		n: "c"
 	},
 	tungsten: {

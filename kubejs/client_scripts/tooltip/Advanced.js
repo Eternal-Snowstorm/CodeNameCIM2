@@ -16,6 +16,8 @@ ItemEvents.tooltip((event) => {
 	addAdvancedTooltip("cmi:flash_yi")
 	addAdvancedTooltip("cmi:keyxeldesu")
 	addAdvancedTooltip("cmi:sergei")
+	addAdvancedTooltip("cmi:lirx_owo")
+	addAdvancedTooltip("cmi:ein_nameuwu")
 
 	// 繁星核心
 	addAdvancedTooltip("cmi:astral_core")

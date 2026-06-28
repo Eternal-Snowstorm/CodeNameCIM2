@@ -45,6 +45,7 @@ StartupEvents.registry("item", (event) => {
 	addIncompleteItem("upgrade_augment_6")
 	addIncompleteItem("upgrade_augment_7")
 	addIncompleteItem("upgrade_augment_8")
+	addIncompleteItem("upgrade_augment_9")
 	addIncompleteItem("aviation_cell")
 	addIncompleteItem("gas_container")
 	addIncompleteItem("nuke_cooler")
