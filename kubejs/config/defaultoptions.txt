@@ -1,2 +1,1 @@
-resourcePacks:["vanilla","mod_resources","file/彩色边框.zip","Pretty X Smart Pipez.zip","BetterIE.zip","Updated_Engineering_v1.7.zip","New AE2.zip","CreateSophisticatedBackpacks.zip","中微子的多用途汉化材质包.zip","Cu Again.zip","OreUI For Everyone.zip","PackResource.zip"]
-incompatibleResourcePacks:["Pretty X Smart Pipez.zip","CreateSophisticatedBackpacks.zip"]
+resourcePacks:["vanilla","mod_resources","Cu Again.zip","file/cu_again_for_fluidlogistics","OreUI For Everyone","Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip","PackResource.zip"]

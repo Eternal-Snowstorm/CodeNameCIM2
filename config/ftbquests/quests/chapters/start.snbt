@@ -454,7 +454,7 @@
 			]
 			description: [
 				"我应该可以在部件制造台直接用&6铜&f做出对应部件......其他材料就不一定行得通了"
-				"{image:cmi:textures/images/copper_pickaxe.png width:647 height:296 align:center fit:true}"
+				"{image:cmi:textures/images/tconstruct/copper_pickaxe.png width:647 height:296 align:center fit:true}"
 			]
 			id: "5FB6FC064E4EECAB"
 			subtitle: "依旧铁人"
@@ -539,7 +539,11 @@
 				"73D78755B4430729"
 				"3D854C186FF6E897"
 			]
-			description: ["有了这些，我就能搭出一套简易的熔炼设备，&6思索&f应该能提供帮助......"]
+			description: [
+				"有了这些，我就能搭出一套简易的熔炼设备，&6思索&f应该能提供帮助......"
+				"一个完整的固体燃料熔化炉结构:"
+				"{image:cmi:textures/images/tconstruct/seared_melter_1.png width:133 height:115 align:center}"
+			]
 			icon: "tconstruct:seared_melter"
 			id: "26DFF62383774404"
 			rewards: [
@@ -763,7 +767,14 @@
 			id: "07C4444CF1D9BB41"
 			tasks: [{
 				id: "52B09CC2CB748C97"
-				item: "minecraft:flint"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:flints"
+					}
+				}
+				title: "燧石"
 				type: "item"
 			}]
 			x: 6.0d
@@ -773,14 +784,22 @@
 			dependencies: ["07C4444CF1D9BB41"]
 			id: "23E3A74C5D9EEEBF"
 			tasks: [{
-				id: "1C0FFA509B2733DC"
-				item: {
+				icon: {
 					Count: 1
 					id: "cmi:flint_hammer"
 					tag: {
 						Damage: 0
 					}
 				}
+				id: "1C0FFA509B2733DC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:hammers"
+					}
+				}
+				title: "锤子"
 				type: "item"
 			}]
 			x: 8.0d
@@ -791,11 +810,36 @@
 			id: "799329AFB898606F"
 			tasks: [{
 				id: "0F67DC1976A07223"
-				item: "cmi:stone_plate"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:plates/stone"
+					}
+				}
+				title: "石板"
 				type: "item"
 			}]
 			x: 8.0d
 			y: 15.5d
+		}
+		{
+			dependencies: ["26DFF62383774404"]
+			description: [
+				"一个完整的流体燃料熔化炉结构:"
+				"{image:cmi:textures/images/tconstruct/seared_melter_2.png width:133 height:115 align:center}"
+			]
+			id: "7C35ECF218BDC872"
+			optional: true
+			subtitle: "此外你还可以选择温度更高的流体燃料"
+			tasks: [{
+				id: "1F58387AF83C7CD3"
+				item: "tconstruct:seared_fuel_tank"
+				type: "item"
+			}]
+			title: "流体燃料选择"
+			x: 16.5d
+			y: 14.5d
 		}
 	]
 	title: "炽焰匠心"

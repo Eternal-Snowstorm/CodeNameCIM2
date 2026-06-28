@@ -88,7 +88,7 @@ ItemEvents.tooltip((event) => {
 				.style(ChatFormatting.DARK_GRAY)
 				.addTo(tooltip)
 
-			if (event.shift) {
+			if (event.isShift()) {
 				tooltip.addAll(TooltipHelper.cutStringTextComponent(
 					CmiLang.translateDirect("tooltip.impact_pile.behaviour1").getString(),
 					TooltipHelper.Palette.STANDARD_CREATE.primary(),
