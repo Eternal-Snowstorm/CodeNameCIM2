@@ -71,9 +71,13 @@ CMI Dev.json
 !/mods/Storage Tweaks*.jar
 
 # ResourcePacks
-/resourcepacks/tconjeidark.zip
-/resourcepacks/彩色边框.zip
-/resourcepacks/CMI Squarefully.zip
+/resourcepacks/*
+!/resourcepacks/彩色边框.zip
+!/resourcepacks/CMI Squarefully.zip
+!/resourcepacks/Pretty_Pipez_1_21.zip
+!/resourcepacks/CreateSophisticatedBackpacks.zip
+!/resourcepacks/Updated_Engineering_v1.7.zip
+!/resourcepacks/Cu Again.zip
 
 # ShaderPacks
 /shaderpacks/*
