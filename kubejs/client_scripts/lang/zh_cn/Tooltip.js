@@ -42,15 +42,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} key 
 	 * @param {String} value 
 	 */
-	function addAccelerateTooltipLang(key, value) {
-		event.add(`tooltip.${key}.accelerate`.replace(":", "."), `§b${value}`)
-	}
-
-	/**
-	 * 
-	 * @param {String} key 
-	 * @param {String} value 
-	 */
 	function addJEIInfoLang(key, value) {
 		event.add(`jei.info.${key}`.replace(":", "."), value)
 	}
