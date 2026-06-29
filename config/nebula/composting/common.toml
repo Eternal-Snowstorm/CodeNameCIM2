@@ -1,0 +1,14 @@
+
+#All settings below will only take effect after restarting the server or client.
+[general]
+	#Time required for fermentation
+	#Range: > 1
+	progressTime = 200
+	#Fermentation result item
+	resultItem = "minecraft:bone_meal"
+	#Fermentation result count
+	#Range: 1 ~ 64
+	resultCount = 1
+	#SNBT of the result item
+	resultNbt = "{}"
+

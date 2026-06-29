@@ -6,6 +6,10 @@ ServerEvents.recipes((event) => {
 		"minecraft:flint"
 	])
 
+	createdieselgenerators.hammering("cmi:dreamcore_crystal", [
+		"cmi:dreamcore_ore"
+	])
+
 	// 热力三粉末
 	createdieselgenerators.compression_molding("thermal:blitz_rod", [
 		"thermal:blitz_powder",

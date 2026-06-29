@@ -109,6 +109,10 @@ StartupEvents.registry("block", (event) => {
 	})
 })
 
+// 幻水晶簇
+new AloneOreBlock("dreamcore_crystal", "wooden", 3)
+	.stone()
+
 // 石英
 new AloneOreBlock("quartz", "iron", 3)
 	.stone()

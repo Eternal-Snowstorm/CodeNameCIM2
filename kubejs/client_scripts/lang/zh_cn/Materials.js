@@ -21,6 +21,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("calorite", "耐热金属")
 	addMaterialLang("oil_shale", "油页岩")
 	addMaterialLang("certus_quartz", "赛特斯石英")
+	addMaterialLang("dreamcore_crystal", "幻晶")
 	addMaterialLang("magnesium", "镁")
 	addMaterialLang("sodium", "钠")
 	addMaterialLang("potassium", "钾")

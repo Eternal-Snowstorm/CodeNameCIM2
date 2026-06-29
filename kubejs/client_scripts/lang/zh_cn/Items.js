@@ -119,6 +119,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("enriched_alloy", "富集合金")
 	addItemLang("resonant_tube", "共振管")
 
+	addItemLang("dreamcore_crystal", "幻晶晶簇")
+	addItemLang("dreamcore_ore", "幻晶原石")
+	addItemLang("dreamcore_seed", "幻晶晶种")
+
 	addItemLang("flint_hammer", "燧石锤")
 	addItemLang("iron_hammer", "铁锤")
 	addItemLang("diamond_hammer", "钻石锤")

@@ -1,1 +1,1 @@
-resourcePacks:["vanilla","mod_resources","Cu Again.zip","file/cu_again_for_fluidlogistics","OreUI For Everyone","Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip","PackResource.zip"]
+resourcePacks:["vanilla","mod_resources","Pretty X Smart Pipez.zip","Cu Again.zip","file/cu_again_for_fluidlogistics","OreUI For Everyone","Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip","PackResource.zip"]

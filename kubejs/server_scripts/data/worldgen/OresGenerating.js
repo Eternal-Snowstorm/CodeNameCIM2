@@ -3,6 +3,10 @@ ServerEvents.highPriorityData((event) => {
 	addOreGeneratingType("certus_quartz_ore", "overworld", 5)
 		.overworld(2)
 
+	// 幻水晶
+	addOreGeneratingType("dreamcore_crystal_ore", "overworld", 16)
+		.overworldStoneOnly(8)
+
 	// 银
 	addOreGeneratingType("silver_ore", "moon", 8)
 		.moon(7)
@@ -127,6 +131,48 @@ ServerEvents.highPriorityData((event) => {
 							},
 							min_inclusive: {
 								absolute: -54
+							}
+						}
+					},
+					{
+						type: "minecraft:biome"
+					}
+				]
+				biomeModifier.biomes = "#minecraft:is_overworld"
+				build()
+				return this
+			},
+
+			// 主世界特殊
+			overworldStoneOnly: function (count) {
+				configuredFeature.config.targets = [
+					{
+						state: {
+							Name: `${Cmi.MODID}:${name}`
+						},
+						target: {
+							predicate_type: "minecraft:tag_match",
+							tag: "minecraft:stone_ore_replaceables"
+						}
+					}
+				]
+				placedFeature.placement = [
+					{
+						type: "minecraft:count",
+						count: count
+					},
+					{
+						type: "minecraft:in_square"
+					},
+					{
+						type: "minecraft:height_range",
+						height: {
+							type: "minecraft:uniform",
+							max_inclusive: {
+								absolute: 52
+							},
+							min_inclusive: {
+								absolute: 0
 							}
 						}
 					},

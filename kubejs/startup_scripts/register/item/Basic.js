@@ -28,6 +28,19 @@ StartupEvents.registry("item", (event) => {
 	addItem("cmi_icon")
 		.texture(Cmi.loadResource("item/packicon"))
 
+	// 幻晶晶体
+	addMaterial("dreamcore_crystal")
+		.tag("forge:gems")
+		.tag("forge:gems/dreamcore")
+
+	// 幻晶原石
+	addMaterial("dreamcore_ore")
+		.tag("forge:raw_materials")
+		.tag("forge:raw_materials/dreamcore")
+
+	// 幻晶晶种
+	addMaterial("dreamcore_seed")
+
 	// 黏血球
 	addItem("blood_slime_ball")
 		.texture(Cmi.loadResource("item/material/blood_slime_ball"))
