@@ -69,6 +69,7 @@ CMI Dev.json
 !/mods/Industrial Platform-*.jar
 !/mods/MasterfulMachinery*.jar
 !/mods/Storage Tweaks*.jar
+!/mods/Composting*.jar
 
 # ResourcePacks
 /resourcepacks/*
