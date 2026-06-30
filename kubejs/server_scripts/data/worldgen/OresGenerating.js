@@ -5,7 +5,15 @@ ServerEvents.highPriorityData((event) => {
 
 	// 幻水晶
 	addOreGeneratingType("dreamcore_crystal_ore", "overworld", 16)
-		.overworldStoneOnly(8)
+		.overworldWithStoneOnly(8)
+
+	// 锇
+	addOreGeneratingType("osmium_ore", "nether", 7)
+		.nether(10)
+
+	// 氟石
+	addOreGeneratingType("fluorite_ore", "nether",6)
+		.nether(7)
 
 	// 银
 	addOreGeneratingType("silver_ore", "moon", 8)
@@ -91,8 +99,12 @@ ServerEvents.highPriorityData((event) => {
 
 		// 配置维度类型
 		return {
-
-			// 主世界
+			/**
+			 * 主世界
+			 * 
+			 * @param {number} count 数量
+			 * @returns 
+			 */
 			overworld: function (count) {
 				configuredFeature.config.targets = [
 					{
@@ -143,8 +155,13 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
-			// 主世界特殊
-			overworldStoneOnly: function (count) {
+			/**
+			 * 主世界特殊
+			 * 
+			 * @param {number} count 数量
+			 * @returns 
+			 */
+			overworldWithStoneOnly: function (count) {
 				configuredFeature.config.targets = [
 					{
 						state: {
@@ -185,7 +202,12 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
-			// 伊甸 
+			/**
+			 * 伊甸
+			 * 
+			 * @param {number} count 数量
+			 * @returns 
+			 */
 			eden: function (count) {
 				configuredFeature.config.targets = [
 					{
@@ -237,7 +259,12 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
-			// 下界
+			/**
+			 * 下界
+			 * 
+			 * @param {number} count 数量
+			 * @returns 
+			 */
 			nether: function (count) {
 				configuredFeature.config.targets = [
 					{
@@ -279,7 +306,12 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
-			// 末地
+			/**
+			 * 末地
+			 * 
+			 * @param {number} count 数量
+			 * @returns 
+			 */
 			end: function (count) {
 				configuredFeature.config.targets = [
 					{
@@ -321,7 +353,12 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
-			// 月球
+			/**
+			 * 月球
+			 * 
+			 * @param {number} count 数量
+			 * @returns 
+			 */
 			moon: function (count) {
 				configuredFeature.config.targets = [
 					{
@@ -363,7 +400,12 @@ ServerEvents.highPriorityData((event) => {
 				return this
 			},
 
-			// 火星
+			/**
+			 * 火星
+			 * 
+			 * @param {number} count 数量
+			 * @returns 
+			 */
 			mars: function (count) {
 				configuredFeature.config.targets = [
 					{

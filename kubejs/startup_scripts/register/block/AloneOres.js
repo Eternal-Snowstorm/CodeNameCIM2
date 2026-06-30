@@ -130,3 +130,11 @@ new AloneOreBlock("certus_quartz", "iron", 3)
 // 银
 new AloneOreBlock("silver", "iron", 3)
 	.moon()
+
+// 锇
+new AloneOreBlock("osmium", "stone", 3)
+	.nether()
+
+// 氟石
+new AloneOreBlock("fluorite", "stone", 2)
+	.nether()

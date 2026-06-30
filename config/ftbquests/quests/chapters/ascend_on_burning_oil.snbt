@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["1570B04A1D692BCC"]
+			description: ["整合包大幅度提升了铝土刷新率，至少从代码上看刷新率和锌差不多"]
 			id: "16B82E736AC7FDCE"
 			tasks: [{
 				id: "17C274929566069F"
