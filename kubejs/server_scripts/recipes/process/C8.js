@@ -1,17 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { create, thermal_extra, thermal, mekanism } = event.getRecipes()
 
-	// 钴电解质
-	thermal.crystallizer("cmi:cobalt_electrolyte", [
-		"#forge:dusts/cobalt",
-		Fluid.of("immersiveengineering:redstone_acid", 100)
-	])
-	// 富集合金
-	mekanism.metallurgic_infusing(
-		"cmi:enriched_alloy",
-		"#forge:ingots/aluminum",
-		"cmi:cobalt_electrolyte"
-	)
 	// 半熔融锇
 	event.custom({
 		"type": "immersiveindustry:car_kiln",
@@ -242,12 +231,12 @@ ServerEvents.recipes((event) => {
 		],
 		"time": 200
 	})
-	
+
 	create.deploying("cmi:composite_tungsten_steel_plate", [
 		"cmi:incomplete_tungsten_steel_plate",
 		"#forge:plates/tungsten_steel"
 	])
-	
+
 	mekanism.compressing("cmi:reinforced_composite_plate",
 		"cmi:incomplete_reinforced_composite_plate",
 		"2x mekanism:osmium"
@@ -313,7 +302,7 @@ ServerEvents.recipes((event) => {
 		"mekanism:uranium_oxide"
 	).id("mekanism:processing/uranium/uranium_oxide")
 
-	
+
 	thermal.bottler("cmi:filled_fuel_rod", [
 		"cmi:empty_fuel_rod",
 		Fluid.of("mekanism:uranium_hexafluoride", 100)
