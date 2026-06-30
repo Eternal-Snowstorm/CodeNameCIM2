@@ -395,19 +395,4 @@ ServerEvents.recipes((event) => {
 		.deploying(Mechanism.PART.ENGIN)
 		.build()
 
-	// 基础通用
-	new SequencedAssemblyRecipe(Mechanism.BASIC)
-		.input("cmi:basic_mekanism_mechanism_basement")
-		.deploying("cmi:silicon_rubber")
-		.deploying("cmi:graphene")
-		.deploying("cmi:mekanism_mechanism_part")
-		.build()
-
-	// 航空
-	new SequencedAssemblyRecipe("cmi:aeronautic_mechanism")
-		.input("cmi:incomplete_aeronautic_mechanism")
-		.deploying("mekanism:basic_control_circuit")
-		.deploying("cmi:composite_tungsten_steel_plate")
-		.deploying("cmi:space_mechanism_part")
-		.build()
 })
