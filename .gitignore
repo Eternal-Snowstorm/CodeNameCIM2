@@ -60,6 +60,7 @@ config/ftbquests/qusets/chapters/control*
 CMI Dev.jar
 CMI Dev.json
 /CMI Dev-natives
+/authlib-injector.log
 
 # Mods
 /mods/*
