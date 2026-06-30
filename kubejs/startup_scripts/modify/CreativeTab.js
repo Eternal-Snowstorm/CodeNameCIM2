@@ -104,4 +104,9 @@ StartupEvents.modifyCreativeTab("cmi:mechanisms", (event) => {
 		.forEach((machineBlock) => {
 			event.add(machineBlock)
 		})
+	Ingredient.of("#cmi:mechanism_parts")
+		.getItemIds()
+		.forEach((mechanismParts) => {
+			event.add(mechanismParts)
+		})
 })
