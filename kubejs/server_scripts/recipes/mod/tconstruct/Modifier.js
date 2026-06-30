@@ -218,7 +218,7 @@ ServerEvents.recipes((event) => {
 		.slots("upgrades", 1)
 		.inputs([
 			"tinkersmossymodifier:ball_of_moss",
-			Mechanism.NATURE.COM,
+			Mechanisms.NATURE.COM,
 			"tinkersmossymodifier:ball_of_moss"
 		])
 		.build(useEmiId("jei:/tinkersmossymodifier/tools/modifiers/upgrade/auto_repair"))

@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
             "AAA"
         ], {
             A: `minecraft:${type}_planks`,
-            B: Mechanism.WOODEN.COM
+            B: Mechanisms.WOODEN.COM
         }).id(`functionalstorage:${type}_1`)
 
         // 物品抽屉2
@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
             "ABA"
         ], {
             A: `minecraft:${type}_planks`,
-            B: Mechanism.WOODEN.COM
+            B: Mechanisms.WOODEN.COM
         }).id(`functionalstorage:${type}_2`)
 
         // 物品抽屉4
@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
             "ABA"
         ], {
             A: `minecraft:${type}_planks`,
-            B: Mechanism.WOODEN.COM
+            B: Mechanisms.WOODEN.COM
         }).id(`functionalstorage:${type}_4`)
     })
 
@@ -53,7 +53,7 @@ ServerEvents.recipes((event) => {
         "AAA"
     ], {
         A: "#forge:plates/iron",
-        B: Mechanism.COPPER.COM
+        B: Mechanisms.COPPER.COM
     }).id("functionalstorage:fluid_1")
 
     // 流体抽屉2
@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
         "ABA"
     ], {
         A: "#forge:plates/iron",
-        B: Mechanism.COPPER.COM
+        B: Mechanisms.COPPER.COM
     }).id("functionalstorage:fluid_2")
 
     // 流体抽屉4
@@ -73,6 +73,6 @@ ServerEvents.recipes((event) => {
         "ABA"
     ], {
         A: "#forge:plates/iron",
-        B: Mechanism.COPPER.COM
+        B: Mechanisms.COPPER.COM
     }).id("functionalstorage:fluid_4")
 })

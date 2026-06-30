@@ -149,7 +149,7 @@ ServerEvents.recipes((event) => {
 		NUKE: seqItems("cmi:nuke_cooler", "alexscaves:charred_remnant", "cmi:incomplete_nuke_cooler"),
 		GAS: seqItems("steampowered:pressurized_gas_container", "#forge:plates/aluminum", "cmi:incomplete_gas_container"),
 		ROTOR: seqItems("cmi:motor_rotor", "#forge:rods/iron", "cmi:incomplete_motor_rotor"),
-		THERMAL_AUG: seqItems(Mechanism.THERMAL.AUG, "#forge:gears/constantan", "cmi:incomplete_thermal_mechanism_augment"),
+		THERMAL_AUG: seqItems(Mechanisms.THERMAL.AUG, "#forge:gears/constantan", "cmi:incomplete_thermal_mechanism_augment"),
 		DIAMOND_FROM_COAL: seqItems("minecraft:diamond", "#forge:storage_blocks/coal", "minecraft:coal")
 	}
 
@@ -228,7 +228,7 @@ ServerEvents.recipes((event) => {
 	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		let hat = seqItems(`railways:${color}_conductor_cap`, `minecraft:${color}_wool`, `railways:${color}_incomplete_conductor_cap`)
 		new SequencedAssemblyRecipe(hat)
-			.deploying(Mechanism.RAILWAY.COM)
+			.deploying(Mechanisms.RAILWAY.COM)
 			.deploying("#forge:string")
 			.build()
 			.id(`railways:sequenced_assembly/${color}_conductor_cap`)

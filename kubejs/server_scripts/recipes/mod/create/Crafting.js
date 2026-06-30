@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:dusts/redstone",
 		B: "#forge:plates/copper",
 		D: "createaddition:capacitor",
-		E: Mechanism.PHOTO.COM
+		E: Mechanisms.PHOTO.COM
 	}).id("vintageimprovements:mechanical_crafting/laser")
 
 	// 卷簧轮
@@ -132,7 +132,7 @@ ServerEvents.recipes((event) => {
 		"PPP"
 	], {
 		A: "#forge:plates/andesite_alloy",
-		M: Mechanism.STEAM.COM,
+		M: Mechanisms.STEAM.COM,
 		B: Casing.BRONZE,
 		C: "thermal:cured_rubber",
 		P: "#forge:plates/bronze"
