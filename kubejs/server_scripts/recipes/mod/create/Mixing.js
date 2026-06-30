@@ -155,16 +155,14 @@ ServerEvents.recipes((event) => {
 	]).heatRequirement(CmiHeatLevel.GRILLED)
 
 	// 墨水
-	create.mixing(
-		Fluid.of("create_enchantment_industry:ink", 250), [
+	create.mixing(Fluid.of("create_enchantment_industry:ink", 250), [
 		Fluid.of("minecraft:water", 250), [
 			"#forge:dusts/charcoal",
 			"#forge:dusts/coal"
 		]]).id("create_enchantment_industry:mixing/ink")
 
 	// 超态经验
-	create.mixing(
-		Fluid.of("create_enchantment_industry:hyper_experience", 10), [
+	create.mixing(Fluid.of("create_enchantment_industry:hyper_experience", 10), [
 		"#forge:dusts/lapis",
 		Fluid.of("create_enchantment_industry:ink", 25),
 		Fluid.of("create_enchantment_industry:experience", 100)
@@ -196,11 +194,4 @@ ServerEvents.recipes((event) => {
 		"4x minecraft:gravel",
 		Fluid.of("tconstruct:magma", 1000)
 	]).id("cmi:ae2/transform/tconstruct/nether_grout2")
-
-	// 耐热砖泥
-	create.mixing("8x cmi:refractory_grout", [
-		"4x immersiveengineering:dust_hop_graphite",
-		"4x minecraft:gravel",
-		"cmi:kaolinite"
-	]).superheated()
 })

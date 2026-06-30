@@ -603,8 +603,8 @@
 				title: "金锭"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 0.5d
+			x: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["04004B46385E2AF2"]
@@ -638,6 +638,53 @@
 			title: "黄铜"
 			x: -6.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["5F0BB5EE6AFEE840"]
+			description: ["{image:cmi:textures/images/eden/portal.png width:138 height:114 align:center}"]
+			icon: "cmi:eden_crystal"
+			id: "30665E701364CEE8"
+			rewards: [{
+				id: "741A0EE2BA8330F4"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Keep me from the cages under the contro"
+			tasks: [
+				{
+					dimension: "edenring:edenring"
+					icon: "cmi:eden_crystal"
+					id: "086437C32E8AC1F3"
+					title: "伊甸星环"
+					type: "dimension"
+				}
+				{
+					count: 12L
+					id: "682B20FB7EB98377"
+					item: { Count: 12, id: "create:brass_block" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "02E78C4D599922E6"
+					item: { Count: 12, id: "cmi:brass_stairs" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "265C5E18F5A85D6A"
+					item: { Count: 4, id: "minecraft:amethyst_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "26EC5635E250B87E"
+					item: { Count: 4, id: "minecraft:amethyst_cluster" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.5d
 		}
 	]
 	title: "精智元件"

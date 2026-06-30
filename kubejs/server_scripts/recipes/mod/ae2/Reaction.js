@@ -1,20 +1,10 @@
 ServerEvents.recipes((event) => {
-	/*
-	addRecipe(setOutput("minecraft:diamond", 3, "item"))
-		.energy(114514)
-		.setInputs([
-			addItemInput("#forge:coal", 3),
-			addFluidInput("minecraft:water", 500)
-		])
-		.build()
-	*/
-
 	/**
-	 * @param {object} output
-	 * @returns 
+	 * 
+	 * @param {Internal.JsonElement_} output 
 	 */
-	function addRecipe(output) {
-		let json = {
+	function ReactionRecipe(output) {
+		this.recipe = {
 			type: "advanced_ae:reaction",
 			output: output,
 			fluid: {
@@ -22,121 +12,140 @@ ServerEvents.recipes((event) => {
 			},
 			input_items: []
 		}
-
-		return {
-			/**
-			 * 定义配方的输入物品和流体
-			 * 
-			 * @param {Array[object]} inputs - 数组, 包含物品和流体输入
-			 */
-			setInputs: function (inputs) {
-				inputs.forEach((input) => {
-					if (input.fluidStack) {
-						json.fluid = input
-					} else {
-						json.input_items.push(input)
-					}
-				})
-				return this
-			},
-			/**
-			 * 定义所需的电量
-			 * 
-			 * @param {number} energy
-			 */
-			energy: function (energy) {
-				json.energy = energy
-				return this
-			},
-			/**
-			 * 构造配方
-			 * 
-			 * @returns 
-			 */
-			build: function () {
-				return event.custom(json)
-			}
-		}
 	}
 
 	/**
-	 * 定义配方的流体输入
+	 * 至少为1000
 	 * 
-	 * 在`.setInputs()`内只能拥有一个`addFluidInput()`
-	 * 
-	 * @param {Internal.FluidStackJS_} fluid 流体id
-	 * @param {number} amount 流体量(单位mB)
-	 * 
-	 * @example
-	 * // 输入1500mB水
-	 * addFluidInput("minecraft:water", 1500)
-	 * 
+	 * @param {number} energy 
 	 * @returns 
 	 */
-	function addFluidInput(fluid, amount) {
-		return {
+	ReactionRecipe.prototype.energy = function (energy) {
+		this.recipe.energy = energy
+		return this
+	}
+
+	/**
+	 * 
+	 * @param {Internal.FluidStackJS_} fluid 
+	 * @param {number} amount 
+	 * @returns 
+	 */
+	ReactionRecipe.prototype.fluid = function (fluid, amount) {
+		this.recipe.fluid = {
 			fluidStack: {
-				FluidName: Fluid.of(fluid).toJson(),
+				FluidName: fluid,
 				Amount: amount
 			}
 		}
+		return this
 	}
 
 	/**
-	 * 定义配方的原料输入
 	 * 
-	 * @param {Internal.Ingredient_} ingredient 输入原料(兼容Tag)
-	 * @param {number} count 原料数量
-	 * 
-	 * @example
-	 * // 输入64个粗铁
-	 * addItemInput("minecraft:raw_iron", 64)
-	 * 
+	 * @param {Internal.ItemStack_} input 
+	 * @param {number} [count] 
 	 * @returns 
 	 */
-	function addItemInput(ingredient, count) {
+	ReactionRecipe.prototype.input = function (input, count) {
+		this.recipe.input_items.push({
+			amount: count || 1,
+			ingredient: Ingredient.of(input).toJson()
+		})
+		return this
+	}
+
+	/**
+	 * 
+	 * @param {ResourceLocation_} [id] 
+	 * @returns 
+	 */
+	ReactionRecipe.prototype.build = function (id) {
+		let recipe = event.custom(this.recipe)
+
+		if (id) {
+			recipe.id(id)
+		}
+
+		return recipe
+	}
+
+	/**
+	 * 
+	 * @param {Internal.ItemStack_} item 
+	 * @param {number} [count] 
+	 * @returns 
+	 */
+	function item(item, count) {
 		return {
-			amount: count,
-			ingredient: Ingredient.of(ingredient).toJson()
+			"#c": "ae2:i",
+			id: item,
+			"#": count || 1
 		}
 	}
 
 	/**
-	 * 定义配方的输出项, 在第3个定义输出类型
 	 * 
-	 * 如果为`"item"`, 那么输出的`count`按照物品数量作为单位
-	 * 
-	 * 同时支持`ItemTag`作为输出, 如果使用`ItemTag`那么则取Tag内的第一个物品
-	 * 
-	 * 如果为`"fluid"`, 那么输出的`amount`按照`millioBucket(mB)`作为单位
-	 * 
-	 * @example 
-	 * // 输出64个钻石
-	 * setOutput("minecraft:diamond", 64, "item")
-	 * // 输出1500mB熔岩
-	 * setOutput("minecraft:lava", 1500, "fluid")
-	 * 
-	 * @param {Internal.Ingredient_ | Internal.FluidStackJS_} id 输出id(兼容ItemTag)
-	 * @param {number} count 物品数量 || 流体量
-	 * @param {"item" | "fluid"} type 输出类型
-	 * 
+	 * @param {Internal.FluidStackJS_} fluid 
+	 * @param {number} [amount] 
 	 * @returns 
 	 */
-	function setOutput(id, count, type) {
-		let amount = count
-		let fluid = id
-		if (type === "item") {
-			return {
-				"#c": "ae2:i",
-				"id": Ingredient.getFirstItemId(id),
-				"#": count
-			}
-		} else if (type === "fluid") {
-			return {
-				"#c": "ae2:f",
-				"id": Fluid.of(fluid).toJson(),
-				"#": amount
-			}
+	function fluid(fluid, amount) {
+		return {
+			"#c": "ae2:f",
+			id: fluid,
+			"#": amount || 1000
 		}
 	}
+
+	// 基础通用构件基座
+	new ReactionRecipe(item("cmi:basic_mekanism_mechanism_basement"))
+		.energy(2000)
+		.fluid("immersiveengineering:redstone_acid", 100)
+		.input("ae2:logic_processor")
+		.input("cmi:enriched_alloy")
+		.input("mekanism:basic_control_circuit")
+		.build()
+
+	// 碳聚合催化片
+	new ReactionRecipe(item("cmi:carbon_polymerization_catalytic_plate"))
+		.energy(2000)
+		.fluid("tconstruct:molten_chromium", 45)
+		.input("cmi:titanium_alloy_mesh")
+		.input("#forge:wires/aluminum")
+		.build()
+
+	// 航空构件基座
+	new ReactionRecipe(item("cmi:aeronautic_mechanism_basement"))
+		.fluid("immersiveengineering:redstone_acid", 100)
+		.energy(2000)
+		.input("cmi:smart_mechanism_augment")
+		.input("cmi:graphene")
+		.build()
+
+	// 钨钢板
+	new ReactionRecipe(item("cmi:incomplete_tungsten_steel_plate"))
+		.energy(2000)
+		.fluid("immersiveengineering:redstone_acid", 100)
+		.input("#forge:plates/tungsten")
+		.input("cmi:titanium_alloy_mesh")
+		.input("#forge:plates/alumium_alloy")
+		.build()
+
+	// 复合板
+	new ReactionRecipe(item("cmi:incomplete_reinforced_composite_plate"))
+		.energy(2000)
+		.fluid("cmi:structural_plastic", 50)
+		.input("cmi:composite_tungsten_steel_plate")
+		.input("cmi:carbon_nanotube")
+		.build()
+
+	// 空燃料棒
+	new ReactionRecipe(item("cmi:empty_fuel_rod"))
+		.energy(2000)
+		.fluid("tconstruct:molten_lead", 90 * 8)
+		.input("#forge:ingots/hop_graphite")
+		.input("alexscaves:polymer_plate")
+		.input("mekanism:reprocessed_fissile_fragment")
+		.build()
 })

@@ -57,42 +57,7 @@ ServerEvents.recipes((event) => {
 			"item": "cmi:osmium_wafer"
 		}
 	})
-	// 基础通用构件基座
-	event.custom({
-		"type": "advanced_ae:reaction",
-		"energy": 200,
-		"fluid": {
-			"fluidStack": {
-				"Amount": 100,
-				"FluidName": "immersiveengineering:redstone_acid"
-			}
-		},
-		"input_items": [
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "ae2:logic_processor"
-				}
-			},
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "cmi:enriched_alloy"
-				}
-			},
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "mekanism:basic_control_circuit"
-				}
-			}
-		],
-		"output": {
-			"#": 1,
-			"#c": "ae2:i",
-			"id": "cmi:basic_mekanism_mechanism_basement"
-		}
-	})
+
 	// 催化
 	thermal.smelter("2x cmi:polymerization_catalytic_alloy", [
 		["#forge:ingots/chromium", "#forge:dusts/chromium"],
@@ -161,35 +126,7 @@ ServerEvents.recipes((event) => {
 		"cmi:unpack_mold"
 	])
 
-	event.custom({
-		"type": "advanced_ae:reaction",
-		"energy": 200,
-		"fluid": {
-			"fluidStack": {
-				"Amount": 45,
-				"FluidName": "tconstruct:molten_chromium"
-			}
-		},
-		"input_items": [
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "cmi:titanium_alloy_mesh"
-				}
-			},
-			{
-				"amount": 1,
-				"ingredient": {
-					"tag": "forge:wires/aluminum"
-				}
-			}
-		],
-		"output": {
-			"#": 1,
-			"#c": "ae2:i",
-			"id": "cmi:carbon_polymerization_catalytic_plate"
-		}
-	})
+
 	// 聚合碳溶液
 	event.custom({
 		"type": "immersiveengineering:refinery",
@@ -254,36 +191,7 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/void",
 		"ae2:singularity"
 	)
-	// 航空构件基座
-	event.custom({
-		"type": "advanced_ae:reaction",
-		"energy": 200,
-		"fluid": {
-			"fluidStack": {
-				"Amount": 100,
-				"FluidName": "immersiveengineering:redstone_acid"
-			}
-		},
-		"input_items": [
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "cmi:smart_mechanism_augment"
-				}
-			},
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "cmi:graphene"
-				}
-			}
-		],
-		"output": {
-			"#": 1,
-			"#c": "ae2:i",
-			"id": "cmi:aeronautic_mechanism_basement"
-		}
-	})
+
 	// 活化石磨
 	thermal.bottler("cmi:activated_graphite_chunk", [
 		"immersiveengineering:ingot_hop_graphite",
@@ -334,76 +242,12 @@ ServerEvents.recipes((event) => {
 		],
 		"time": 200
 	})
-	// 钨钢板
-	event.custom({
-		"type": "advanced_ae:reaction",
-		"energy": 200,
-		"fluid": {
-			"fluidStack": {
-				"Amount": 100,
-				"FluidName": "immersiveengineering:redstone_acid"
-			}
-		},
-		"input_items": [
-			{
-				"amount": 1,
-				"ingredient": {
-					"tag": "forge:plates/tungsten"
-				}
-			},
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "cmi:titanium_alloy_mesh"
-				}
-			},
-			{
-				"amount": 1,
-				"ingredient": {
-					"tag": "forge:plates/alumium_alloy"
-				}
-			}
-		],
-		"output": {
-			"#": 1,
-			"#c": "ae2:i",
-			"id": "cmi:incomplete_tungsten_steel_plate"
-		}
-	})
+	
 	create.deploying("cmi:composite_tungsten_steel_plate", [
 		"cmi:incomplete_tungsten_steel_plate",
 		"#forge:plates/tungsten_steel"
 	])
-	// 复合板
-	event.custom({
-		"type": "advanced_ae:reaction",
-		"energy": 200,
-		"fluid": {
-			"fluidStack": {
-				"Amount": 50,
-				"FluidName": "cmi:structural_plastic"
-			}
-		},
-		"input_items": [
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "cmi:composite_tungsten_steel_plate"
-				}
-			},
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "cmi:carbon_nanotube"
-				}
-			}
-		],
-		"output": {
-			"#": 1,
-			"#c": "ae2:i",
-			"id": "cmi:incomplete_reinforced_composite_plate"
-		}
-	})
+	
 	mekanism.compressing("cmi:reinforced_composite_plate",
 		"cmi:incomplete_reinforced_composite_plate",
 		"2x mekanism:osmium"
@@ -469,41 +313,7 @@ ServerEvents.recipes((event) => {
 		"mekanism:uranium_oxide"
 	).id("mekanism:processing/uranium/uranium_oxide")
 
-	event.custom({
-		"type": "advanced_ae:reaction",
-		"energy": 200,
-		"fluid": {
-			"fluidStack": {
-				"Amount": 720,
-				"FluidName": "tconstruct:molten_lead"
-			}
-		},
-		"input_items": [
-			{
-				"amount": 32,
-				"ingredient": {
-					"tag": "forge:ingots/hop_graphite"
-				}
-			},
-			{
-				"amount": 4,
-				"ingredient": {
-					"item": "alexscaves:polymer_plate"
-				}
-			},
-			{
-				"amount": 16,
-				"ingredient": {
-					"item": "mekanism:reprocessed_fissile_fragment"
-				}
-			}
-		],
-		"output": {
-			"#": 1,
-			"#c": "ae2:i",
-			"id": "cmi:empty_fuel_rod"
-		}
-	})
+	
 	thermal.bottler("cmi:filled_fuel_rod", [
 		"cmi:empty_fuel_rod",
 		Fluid.of("mekanism:uranium_hexafluoride", 100)
@@ -538,65 +348,7 @@ ServerEvents.recipes((event) => {
 		"mekanism:yellow_cake_uranium",
 		"200x mekanism:fissile_fuel"
 	)
-	event.custom({
-		"type": "advanced_ae:reaction",
-		"energy": 200,
-		"fluid": {
-			"fluidStack": {
-				"Amount": 4000,
-				"FluidName": "cmi:structural_plastic"
-			}
-		},
-		"input_items": [
-			{
-				"amount": 64,
-				"ingredient": {
-					"item": "mekanismgenerators:fission_reactor_casing"
-				}
-			},
-			{
-				"amount": 32,
-				"ingredient": {
-					"item": "mekanismgenerators:reactor_glass"
-				}
-			},
-			{
-				"amount": 16,
-				"ingredient": {
-					"item": "mekanismgenerators:fission_fuel_assembly"
-				}
-			},
-			{
-				"amount": 8,
-				"ingredient": {
-					"item": "mekanismgenerators:control_rod_assembly"
-				}
-			},
-			{
-				"amount": 4,
-				"ingredient": {
-					"item": "mekanismgenerators:fission_reactor_port"
-				}
-			},
-			{
-				"amount": 2,
-				"ingredient": {
-					"item": "mekanism:steel_casing"
-				}
-			},
-			{
-				"amount": 1,
-				"ingredient": {
-					"item": "mekanismgenerators:fission_reactor_logic_adapter"
-				}
-			}
-		],
-		"output": {
-			"#": 1,
-			"#c": "ae2:i",
-			"id": "cmi:simulated_fission_reactor"
-		}
-	})
+
 	// 核污水
 	thermal_extra.advanced_refinery([
 		"alexscaves:toxic_paste",

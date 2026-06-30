@@ -86,12 +86,4 @@ ServerEvents.recipes((event) => {
 		.input("minecraft:magma_cream")
 		.input("minecraft:gravel")
 		.build("cmi:ae2/transform/tconstruct/nether_grout")
-
-	// 耐热砖泥
-	new TransformRecipe("cmi:refractory_grout", 2)
-		.fluidTag("forge:creosote")
-		.input("immersiveengineering:dust_hop_graphite")
-		.input("cmi:kaolinite_ball")
-		.input("minecraft:gravel")
-		.build("immersiveindustry:crafting/refractory_kiln_brick")
 })
