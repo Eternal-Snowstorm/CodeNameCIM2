@@ -641,7 +641,11 @@
 		}
 		{
 			dependencies: ["5F0BB5EE6AFEE840"]
-			description: ["{image:cmi:textures/images/eden/portal.png width:138 height:114 align:center}"]
+			description: [
+				"结构搭建好后使用右键中心的伊甸水晶就可以开启传送门，传送门开启时会有5道落雷，还请小心！"
+				""
+				"{image:cmi:textures/images/eden/portal.png width:138 height:114 align:center}"
+			]
 			icon: "cmi:eden_crystal"
 			id: "30665E701364CEE8"
 			rewards: [{
@@ -649,15 +653,10 @@
 				type: "xp"
 				xp: 100
 			}]
+			shape: "hexagon"
+			size: 2.0d
 			subtitle: "Keep me from the cages under the contro"
 			tasks: [
-				{
-					dimension: "edenring:edenring"
-					icon: "cmi:eden_crystal"
-					id: "086437C32E8AC1F3"
-					title: "伊甸星环"
-					type: "dimension"
-				}
 				{
 					count: 12L
 					id: "682B20FB7EB98377"
@@ -682,7 +681,18 @@
 					item: { Count: 4, id: "minecraft:amethyst_cluster" }
 					type: "item"
 				}
+				{
+					id: "6D927822B3B061F8"
+					item: "cmi:astral_core"
+					type: "item"
+				}
+				{
+					id: "62970D4C5F334E84"
+					item: "cmi:eden_crystal"
+					type: "item"
+				}
 			]
+			title: "前往伊甸星环"
 			x: -6.0d
 			y: 0.5d
 		}

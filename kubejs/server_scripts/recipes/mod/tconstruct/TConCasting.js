@@ -30,6 +30,21 @@ ServerEvents.recipes((event) => {
 		.cast_consumed(true)
 		.id("tconstruct:tools/modifiers/silky_cloth")
 
+	// 铜工作台
+	tconstruct.casting_basin("fluidlogistics:copper_basin")
+		.fluid(Fluid.of("tconstruct:molten_copper", 90 * 8))
+		.cast("create:basin")
+		.cast_consumed(true)
+		.cooling_time(20 * 4)
+		.id("fluidlogistics:copper_basin")
+
+	// 伊甸水晶
+	tconstruct.casting_basin("cmi:eden_crystal")
+		.fluid(Fluid.of("tconstruct:molten_electrum", 90 * 8))
+		.cast("minecraft:amethyst_block")
+		.cast_consumed(true)
+		.cooling_time(20 * 4)
+
 	// 冰!
 	tconstruct.casting_basin("minecraft:ice")
 		.fluid(Fluid.of("minecraft:water", 1000))
