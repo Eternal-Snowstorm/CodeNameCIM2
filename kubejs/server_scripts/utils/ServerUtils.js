@@ -212,6 +212,24 @@ let Material = Object.freeze({
 	})
 })
 
+// 处理器
+let Print = Object.freeze({
+	LOGIC: "ae2:printed_logic_processor",
+	CALCULATION: "ae2:printed_calculation_processor",
+	ENGINEERING: "ae2:printed_engineering_processor",
+	CONCURRENT: "cmi:printed_concurrent_processor",
+	QUANTUM: "advanced_ae:printed_quantum_processor"
+})
+
+let Processor = Object.freeze({
+	CONTROL: "create_connected:control_chip",
+	LOGIC: "ae2:logic_processor",
+	CALCULATION: "ae2:calculation_processor",
+	ENGINEERING: "ae2:engineering_processor",
+	CONCURRENT: "cmi:concurrent_processor",
+	QUANTUM: "advanced_ae:quantum_processor"
+})
+
 // 机壳系列
 let Casing = Object.freeze({
 	ANDESITE: "create:andesite_casing",
