@@ -263,14 +263,8 @@ StartupEvents.registry("item", (event) => {
 	// 纯净蓝宝石化合物
 	addMaterial("pure_sapphire_compound")
 
-	// 粗钛粉
-	addMaterial("raw_titanium_dust")
-
 	// 粗钛混合物
 	addMaterial("raw_titanium_mixture")
-
-	// 钛晶体
-	addMaterial("titanium_crystal")
 
 	// 强化复合齿轮
 	addMaterial("reinforced_composite_gear")
@@ -334,9 +328,6 @@ StartupEvents.registry("item", (event) => {
 
 	// 待组装钨钢板
 	addMaterial("incomplete_tungsten_steel_plate")
-
-	// 粗钨粉
-	addMaterial("raw_tungsten_dust")
 
 	// 燕雀石
 	addMaterial("machalite")
