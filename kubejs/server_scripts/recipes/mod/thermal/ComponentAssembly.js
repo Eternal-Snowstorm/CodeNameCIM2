@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
 	 */
 	function addComponRecipe(output, inputs) {
 		return thermal_extra.component_assembly(output, inputs)
-			.energy(4000)
+			.energy(16000)
 	}
 
 	// 二极管
@@ -70,4 +70,22 @@ ServerEvents.recipes((event) => {
 		Fluid.of("immersiveengineering:redstone_acid", 200),
 		"#forge:plates/iron"
 	]).id("thermal_extra:machine/component_assembly/redstone_servo")
+
+	// 并行升级 +4
+	addComponRecipe("thermal_parallel:argument_parallel_2", [
+		"thermal_parallel:argument_parallel",
+		["#forge:ingots/cobalt", "#forge:plates/cobalt"],
+		"immersiveengineering:component_electronic",
+		"#forge:gears/rose_gold",
+		"#forge:gears/rose_gold"
+	])
+
+	// 并行升级 +4 流体配方虽然麻烦, 但是相对应的造价更便宜
+	addComponRecipe("thermal_parallel:argument_parallel_2", [
+		"thermal_parallel:argument_parallel",
+		"immersiveengineering:component_electronic",
+		["#forge:ingots/cobalt", "#forge:plates/cobalt"],
+		"#forge:dusts/redstone",
+		Fluid.of("tconstruct:molten_rose_gold", 90)
+	])
 })

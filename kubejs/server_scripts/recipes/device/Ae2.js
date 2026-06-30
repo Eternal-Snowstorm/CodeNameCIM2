@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 		"YMY",
 		"XYX"
 	], {
-		M: Mechanism.WOODEN.COM,
+		M: Mechanisms.WOODEN.COM,
 		X: "#forge:plates/iron",
 		Y: "ae2:quartz_glass",
 	}).id("ae2:network/cells/item_cell_housing")
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 		"YMY",
 		"XYX"
 	], {
-		M: Mechanism.COPPER.COM,
+		M: Mechanisms.COPPER.COM,
 		X: "#forge:plates/copper",
 		Y: "ae2:quartz_glass"
 	}).id("ae2:network/cells/fluid_cell_housing")
@@ -38,13 +38,13 @@ ServerEvents.recipes((event) => {
 	], {
 		P: "#forge:plates/osmium",
 		A: "ae2:quartz_glass",
-		M: Mechanism.AIR.COM
+		M: Mechanisms.AIR.COM
 	}).id("appmek:chemical_cell_housing")
 
 	// 网络工具
 	kubejs.shapeless("ae2:network_tool", [
 		"#ae2:quartz_wrench",
-		Mechanism.SMART.COM
+		Mechanisms.SMART.COM
 	]).id("ae2:tools/network_tool")
 
 	// 机壳
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 	// 压印机
 	thermal_extra.component_assembly("ae2:inscriber", [
 		Casing.SMART,
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"ae2:fluix_crystal",
 		"cmi:hammer_head"
 	]).id("ae2:network/blocks/inscribers")
@@ -170,7 +170,7 @@ ServerEvents.recipes((event) => {
 		"WEW"
 	], {
 		P: "#forge:plates/iron",
-		M: Mechanism.SMART.COM,
+		M: Mechanisms.SMART.COM,
 		W: "#forge:wires/redstone",
 		E: "#forge:plates/electrum"
 	}).id("ae2:tools/network_memory_card")
@@ -182,7 +182,7 @@ ServerEvents.recipes((event) => {
 		"PAP"
 	], {
 		P: "#forge:plates/iron",
-		M: Mechanism.COIL.COM,
+		M: Mechanisms.COIL.COM,
 		A: "#forge:gems/amethyst"
 	}).id("ae2:network/blocks/crystal_processing_charger")
 
@@ -191,12 +191,12 @@ ServerEvents.recipes((event) => {
 		"ae2:fluix_pearl",
 		"create:transmitter",
 		"#forge:plates/iron",
-		Mechanism.ENDER.COM
+		Mechanisms.ENDER.COM
 	]).id("ae2:network/wireless_part")
 
 	thermal_extra.component_assembly("ae2:wireless_access_point", [
 		Casing.SMART,
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"ae2:wireless_receiver"
 	]).id("ae2:network/wireless_access_point")
 
@@ -206,7 +206,7 @@ ServerEvents.recipes((event) => {
 		"SCS",
 		"MSM"
 	], {
-		M: Mechanism.SMART.COM,
+		M: Mechanisms.SMART.COM,
 		S: "ae2:sky_dust",
 		C: Casing.SMART
 	}).id("ae2:network/blocks/controller")
@@ -214,7 +214,7 @@ ServerEvents.recipes((event) => {
 	// 驱动器
 	thermal_extra.component_assembly("ae2:drive", [
 		Casing.SMART,
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"cmi:ferrit_core",
 		"#forge:gems/fluix"
 	]).id("ae2:network/blocks/storage_drive")
@@ -222,21 +222,21 @@ ServerEvents.recipes((event) => {
 	// 照明面板
 	thermal_extra.component_assembly("ae2:semi_dark_monitor", [
 		"ae2:quartz_glass",
-		Mechanism.PHOTO.COM,
+		Mechanisms.PHOTO.COM,
 		"#forge:plates/silver",
 		"#forge:plates/redstone"
 	]).id("ae2:network/parts/panels_semi_dark_monitor")
 
 	// 破坏核心
 	thermal_extra.component_assembly("2x ae2:annihilation_core", [
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"#forge:dusts/fluix",
 		"#forge:ingots/refined_radiance"
 	]).id("ae2:materials/annihilationcore")
 
 	// 成型核心
 	thermal_extra.component_assembly("2x ae2:formation_core", [
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"#forge:dusts/fluix",
 		"#forge:ingots/shadow_steel"
 	]).id("ae2:materials/formationcore")
@@ -246,7 +246,7 @@ ServerEvents.recipes((event) => {
 		"#ae2:illuminated_panel",
 		"ae2:annihilation_core",
 		"ae2:formation_core",
-		Mechanism.SMART.COM
+		Mechanisms.SMART.COM
 	]).id("ae2:network/parts/terminals")
 
 	// 合成终端
@@ -258,21 +258,21 @@ ServerEvents.recipes((event) => {
 	// 样板编码
 	thermal_extra.component_assembly("ae2:pattern_encoding_terminal", [
 		"#ae2:illuminated_panel",
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"#forge:ingots/overcharged_alloy"
 	]).id("ae2:network/parts/terminals_pattern_encoding")
 
 	// 样板管理
 	thermal_extra.component_assembly("ae2:pattern_access_terminal", [
 		"#ae2:illuminated_panel",
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"create:transmitter"
 	]).id("ae2:network/parts/terminals_pattern_access")
 
 	// 监控器
 	thermal_extra.component_assembly("ae2:storage_monitor", [
 		"#ae2:illuminated_panel",
-		Mechanism.SMART.COM
+		Mechanisms.SMART.COM
 	]).id("ae2:network/parts/monitors_storage")
 
 	// 交换监控器
@@ -328,28 +328,28 @@ ServerEvents.recipes((event) => {
 	// 卡
 	thermal_extra.component_assembly("4x ae2:basic_card", [
 		"#forge:plates/iron",
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"#forge:plates/silicon_rubber",
 		"#forge:ingots/electrum"
 	]).id("ae2:materials/basiccard")
 
 	thermal_extra.component_assembly("4x ae2:advanced_card", [
 		"#forge:plates/silver",
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"#forge:plates/silicon_rubber",
 		"#forge:ingots/etrium"
 	]).id("ae2:materials/advancedcard")
 
 	thermal_extra.component_assembly("ae2:wireless_booster", [
 		"#forge:plates/silver",
-		Mechanism.ENDER.COM,
+		Mechanisms.ENDER.COM,
 		"#forge:dusts/fluix"
 	]).id("ae2:network/wireless_booster")
 
 	// ME IO端口
 	thermal_extra.component_assembly("ae2:io_port", [
 		"ae2:drive",
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"#ae2:glass_cable"
 	]).id("ae2:network/blocks/io_port")
 
@@ -363,13 +363,13 @@ ServerEvents.recipes((event) => {
 	// 合成单元
 	thermal_extra.component_assembly("ae2:crafting_unit", [
 		Casing.SMART,
-		Mechanism.SMART.COM
+		Mechanisms.SMART.COM
 	]).id("ae2:network/crafting/cpu_crafting_unit")
 
 	// 并行处理单元
 	kubejs.shapeless("ae2:crafting_accelerator", [
 		"ae2:crafting_unit",
-		Mechanism.SMART.COM
+		Mechanisms.SMART.COM
 	]).id("ae2:network/crafting/cpu_crafting_accelerator")
 
 	// 分子装配室
@@ -383,7 +383,7 @@ ServerEvents.recipes((event) => {
 
 	// P2P
 	thermal_extra.component_assembly("2x ae2:me_p2p_tunnel", [
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"#ae2:glass_cable",
 		"#forge:plates/silver",
 		"#forge:gems/fluix"
@@ -391,8 +391,8 @@ ServerEvents.recipes((event) => {
 
 	// 熵变机械臂
 	thermal_extra.component_assembly("ae2:entropy_manipulator", [
-		Mechanism.SMART.COM,
-		Mechanism.NATURE.COM,
+		Mechanisms.SMART.COM,
+		Mechanisms.NATURE.COM,
 		"ae2:fluix_crystal",
 		"ae2:energy_cell",
 		"#forge:rods/silver"
@@ -400,15 +400,15 @@ ServerEvents.recipes((event) => {
 
 	// 充能手杖
 	thermal_extra.component_assembly("ae2:charged_staff", [
-		Mechanism.COIL.COM,
+		Mechanisms.COIL.COM,
 		"ae2:charged_certus_quartz_crystal",
 		"#forge:rods/silver"
 	]).id("ae2:tools/misctools_charged_staff")
 
 	// 染色器
 	thermal_extra.component_assembly("ae2:color_applicator", [
-		Mechanism.SMART.COM,
-		Mechanism.COLOR.COM,
+		Mechanisms.SMART.COM,
+		Mechanisms.COLOR.COM,
 		"#forge:plates/silver",
 		"ae2:energy_cell",
 		"#forge:rods/silver"
@@ -416,8 +416,8 @@ ServerEvents.recipes((event) => {
 
 	// 物质炮
 	thermal_extra.component_assembly("ae2:matter_cannon", [
-		Mechanism.SMART.COM,
-		Mechanism.ANDESITE.COM,
+		Mechanisms.SMART.COM,
+		Mechanisms.ANDESITE.COM,
 		"#forge:ingots/silver",
 		"ae2:energy_cell",
 		"#forge:rods/silver"
@@ -432,7 +432,7 @@ ServerEvents.recipes((event) => {
 	// 水晶共振器
 	thermal_extra.component_assembly("ae2:crystal_resonance_generator", [
 		Casing.SMART,
-		Mechanism.COIL.COM,
+		Mechanisms.COIL.COM,
 		"ae2:fluix_block",
 		"ae2:charged_certus_quartz_crystal"
 	]).id("ae2:network/crystal_resonance_generator")
@@ -440,8 +440,8 @@ ServerEvents.recipes((event) => {
 	// 谐振仓
 	thermal_extra.component_assembly("ae2:vibration_chamber", [
 		Casing.SMART,
-		Mechanism.COIL.COM,
-		Mechanism.STONE.COM,
+		Mechanisms.COIL.COM,
+		Mechanisms.STONE.COM,
 		"#forge:plates/copper",
 		"#forge:plates/copper"
 	]).id("ae2:network/blocks/energy_vibration_chamber")
@@ -450,14 +450,14 @@ ServerEvents.recipes((event) => {
 	thermal_extra.component_assembly("ae2:quantum_ring", [
 		"#forge:plates/silver",
 		"ae2:energy_cell",
-		Mechanism.COMPUTE.COM,
+		Mechanisms.COMPUTE.COM,
 		"ae2:sky_dust"
 	]).id("ae2:network/blocks/quantum_ring")
 
 	// 量子链接仓
 	thermal_extra.component_assembly("ae2:quantum_link", [
 		"ae2:quartz_glass",
-		Mechanism.ENDER.COM,
+		Mechanisms.ENDER.COM,
 		"ae2:fluix_pearl"
 	]).id("ae2:network/blocks/quantum_link")
 
@@ -466,14 +466,14 @@ ServerEvents.recipes((event) => {
 		Casing.SMART,
 		"ae2:fluix_crystal",
 		"ae2:fluix_glass_cable",
-		Mechanism.ENDER.COM
+		Mechanisms.ENDER.COM
 	]).id("ae2:network/blocks/spatial_io_pylon")
 
 	// 空间io端口
 	thermal_extra.component_assembly("ae2:spatial_io_port", [
 		"ae2:io_port",
 		"#ae2:glass_cable",
-		Mechanism.ENDER.COM
+		Mechanisms.ENDER.COM
 	]).id("ae2:network/blocks/spatial_io_port")
 
 	// 存储总线
@@ -531,14 +531,14 @@ ServerEvents.recipes((event) => {
 	thermal_extra.component_assembly("meplacementtool:me_cable_placement_tool", [
 		"#forge:rods/silver",
 		"ae2:wireless_terminal",
-		Mechanism.COLOR.COM,
+		Mechanisms.COLOR.COM,
 		"ae2:smart_dense_cable"
 	]).id("meplacementtool:me_cable_placement_tool")
 
 	// 装配矩阵框架
 	thermal_extra.component_assembly("4x expatternprovider:assembler_matrix_frame", [
 		Casing.SMART,
-		Mechanism.IRON.COM,
+		Mechanisms.IRON.COM,
 		"minecraft:lapis",
 		"cmi:pure_quartz_prism"
 	]).id("expatternprovider:assembler_matrix_frame")
@@ -566,7 +566,7 @@ ServerEvents.recipes((event) => {
 	// 装配矩阵速度核心
 	thermal_extra.component_assembly("expatternprovider:assembler_matrix_speed", [
 		"cmi:pure_quartz_prism",
-		Mechanism.COBALT.COM
+		Mechanisms.COBALT.COM
 	]).id("expatternprovider:assembler_matrix_speed")
 
 	// 装配矩阵合成核心
@@ -580,14 +580,14 @@ ServerEvents.recipes((event) => {
 		"#ae2:pattern_provider",
 		"ae2:capacity_card",
 		"create_connected:control_chip",
-		Mechanism.GOLD.COM
+		Mechanisms.GOLD.COM
 	]).id("expatternprovider:epp")
 
 	//样板供应器升级
 	thermal_extra.component_assembly("expatternprovider:pattern_provider_upgrade", [
 		"ae2:capacity_card",
 		"create_connected:control_chip",
-		Mechanism.GOLD.COM
+		Mechanisms.GOLD.COM
 	]).id("expatternprovider:epp_upgrade")
 
 	// 扩展Me接口
@@ -595,46 +595,46 @@ ServerEvents.recipes((event) => {
 		"#ae2:interface",
 		"ae2:capacity_card",
 		"ae2:logic_processor",
-		Mechanism.GOLD.COM
+		Mechanisms.GOLD.COM
 	]).id("expatternprovider:ei")
 
 	//Me接口升级
 	thermal_extra.component_assembly("expatternprovider:interface_upgrade", [
 		"ae2:capacity_card",
 		"ae2:logic_processor",
-		Mechanism.GOLD.COM
+		Mechanisms.GOLD.COM
 	]).id("expatternprovider:ei_upgrade")
 
 	// 扩展输入总线
 	thermal_extra.component_assembly("expatternprovider:ex_import_bus_part", [
 		"ae2:import_bus",
 		"ae2:calculation_processor",
-		Mechanism.COBALT.COM
+		Mechanisms.COBALT.COM
 	]).id("expatternprovider:ebus_in")
 
 	// 扩展输出总线
 	thermal_extra.component_assembly("expatternprovider:ex_export_bus_part", [
 		"ae2:export_bus",
 		"ae2:calculation_processor",
-		Mechanism.COBALT.COM
+		Mechanisms.COBALT.COM
 	]).id("expatternprovider:ebus_out")
 
 	// 输入输出总线升级
 	thermal_extra.component_assembly("expatternprovider:io_bus_upgrade", [
 		"ae2:calculation_processor",
-		Mechanism.COBALT.COM
+		Mechanisms.COBALT.COM
 	]).id("expatternprovider:ebus_upgrade")
 
 	// 扩展样板管理终端
 	thermal_extra.component_assembly("expatternprovider:ex_pattern_access_part", [
 		"ae2:pattern_access_terminal",
-		Mechanism.GOLD.COM,
+		Mechanisms.GOLD.COM,
 		"ae2:logic_processor"
 	]).id("expatternprovider:epa")
 
 	// 样板管理终端升级
 	thermal_extra.component_assembly("expatternprovider:pattern_terminal_upgrade", [
-		Mechanism.GOLD.COM,
+		Mechanisms.GOLD.COM,
 		"ae2:logic_processor"
 	]).id("expatternprovider:epa_upgrade")
 
@@ -649,14 +649,14 @@ ServerEvents.recipes((event) => {
 	// 扩展驱动器
 	thermal_extra.component_assembly("expatternprovider:ex_drive", [
 		"ae2:drive",
-		Mechanism.GOLD.COM,
+		Mechanisms.GOLD.COM,
 		"ae2:fluix_dust",
 		"#forge:dusts/emerald"
 	]).id("expatternprovider:ex_drive")
 
 	// 驱动器升级
 	thermal_extra.component_assembly("expatternprovider:drive_upgrade", [
-		Mechanism.GOLD.COM,
+		Mechanisms.GOLD.COM,
 		"ae2:fluix_dust",
 		"#forge:dusts/emerald"
 	]).id("expatternprovider:ex_drive_upgrade")
@@ -666,14 +666,14 @@ ServerEvents.recipes((event) => {
 		"ae2:fluix_crystal",
 		"ae2:molecular_assembler",
 		"ae2:engineering_processor",
-		Mechanism.GOLD.COM
+		Mechanisms.GOLD.COM
 	]).id("expatternprovider:ex_molecular_assembler")
 
 	// 电路切片器
 	thermal_extra.component_assembly("expatternprovider:circuit_cutter", [
 		"thermal:saw_blade",
 		Casing.SMART,
-		Mechanism.SMART.COM,
+		Mechanisms.SMART.COM,
 		"ae2:sky_stone_tank",
 		"ae2:not_so_mysterious_block",
 		"#forge:dusts/emerald"
@@ -682,7 +682,7 @@ ServerEvents.recipes((event) => {
 	//扩展io端口
 	thermal_extra.component_assembly("expatternprovider:ex_io_port", [
 		"ae2:io_port",
-		Mechanism.COBALT.COM,
+		Mechanisms.COBALT.COM,
 		"ae2:engineering_processor",
 		"#forge:dusts/emerald"
 	]).id("expatternprovider:ex_io_port")
@@ -706,19 +706,19 @@ ServerEvents.recipes((event) => {
 	//扩展压印器
 	thermal_extra.component_assembly("expatternprovider:ex_inscriber", [
 		"ae2:inscriber",
-		Mechanism.GOLD.COM,
+		Mechanisms.GOLD.COM,
 		"#forge:dusts/emerald",
 		"#ae2:interface",
-		Mechanism.SMART.COM
+		Mechanisms.SMART.COM
 	]).id("expatternprovider:ex_inscriber")
 
 	//扩展充能器
 	thermal_extra.component_assembly("expatternprovider:ex_charger", [
 		"ae2:charger",
-		Mechanism.GOLD.COM,
+		Mechanisms.GOLD.COM,
 		"#forge:dusts/emerald",
 		"#ae2:interface",
-		Mechanism.SMART.COM
+		Mechanisms.SMART.COM
 	]).id("expatternprovider:ex_charger")
 
 	//水晶修复器
@@ -726,7 +726,7 @@ ServerEvents.recipes((event) => {
 		"ae2:crystal_resonance_generator",
 		"#forge:dusts/emerald",
 		Casing.SMART,
-		Mechanism.SMART.COM
+		Mechanisms.SMART.COM
 	]).id("expatternprovider:crystal_fixer")
 
 	// 装罐机

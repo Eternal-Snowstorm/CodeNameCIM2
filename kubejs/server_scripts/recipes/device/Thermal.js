@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 	}
 
 	create.sequenced_assembly("thermal_extra:component_assembly", Casing.THERMAL, [
-		create.deploying(Inc, [Inc, Mechanism.THERMAL.COM]),
+		create.deploying(Inc, [Inc, Mechanisms.THERMAL.COM]),
 		create.deploying(Inc, [Inc, "#forge:gears/iron"]),
 		create.deploying(Inc, [Inc, "create:brass_hand"])
 	]).transitionalItem(Inc)
@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
 
 	addComponRecipe("thermal_extra:component_assembly", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"thermal:rf_coil",
 		"create:brass_hand"
 	])
@@ -55,42 +55,42 @@ ServerEvents.recipes((event) => {
 	// 磨粉机
 	addComponRecipe("thermal:machine_pulverizer", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:thermal_unit",
 		"#forge:gears/iron"
 	]).id("thermal:machine_pulverizer")
 	// 灌装机
 	addComponRecipe("thermal:machine_bottler", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:thermal_unit",
-		Mechanism.COPPER.COM
+		Mechanisms.COPPER.COM
 	]).id("thermal:machine_bottler")
 	// 合成器
 	addComponRecipe("thermal:machine_crafter", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:thermal_unit",
 		"create:crafting_blueprint"
 	]).id("thermal:machine_crafter")
 	// 锯木机
 	addComponRecipe("thermal:machine_sawmill", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:thermal_unit",
 		"thermal:saw_blade"
 	]).id("thermal:machine_sawmill")
 	// 粉末
 	addComponRecipe("cmi:void_dust_collector", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:thermal_unit",
 		"thermal:drill_head"
 	])
 	// 离心机
 	addComponRecipe("thermal:machine_centrifuge", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:thermal_unit",
 		"#vintageimprovements:springs"
 	]).id("thermal:machine_centrifuge")
@@ -99,65 +99,65 @@ ServerEvents.recipes((event) => {
 	// 电炉
 	addComponRecipe("thermal:machine_furnace", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:blaze_unit",
 		"create:blaze_burner"
 	]).id("thermal:machine_furnace")
 	// 感应炉
 	addComponRecipe("thermal:machine_smelter", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:blaze_unit",
 		"create:whisk"
 	]).id("thermal:machine_smelter")
 	// 精炼机
 	addComponRecipe("thermal:machine_refinery", [
 		Casing.THERMAL,
-		Mechanism.THERMAL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:blaze_unit",
-		Mechanism.IRON.COM
+		Mechanisms.IRON.COM
 	]).id("thermal:machine_refinery")
 	// 脱水机
 	addComponRecipe("thermal_extra:endothermic_dehydrator", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:blaze_unit",
-		Mechanism.NETHER.COM
+		Mechanisms.NETHER.COM
 	]).id("thermal_extra:crafting/endothermic_dehydrator")
 	// 熔岩炉
 	addComponRecipe("thermal:machine_crucible", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:blaze_unit",
-		Mechanism.STONE.COM
+		Mechanisms.STONE.COM
 	]).id("thermal:machine_crucible")
 	// 高级精炼机
 	addComponRecipe("thermal_extra:advanced_refinery", [
 		"thermal:machine_refinery",
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:blaze_unit",
-		Mechanism.IRON.COM
+		Mechanisms.IRON.COM
 	]).id("thermal_extra:crafting/advanced_refinery")
 
 	// 大地单元
 	// TNT
 	addComponRecipe("thermal_extra:nitratic_igniter", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:basalz_unit",
 		"#forge:gears/tungsten_steel"
 	]).id("thermal_extra:crafting/nitratic_igniter")
 	// 热解炉
 	addComponRecipe("thermal:machine_pyrolyzer", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:basalz_unit",
 		"create:blaze_burner"
 	]).id("thermal:machine_pyrolyzer")
 	// 冲压机
 	addComponRecipe("thermal:machine_press", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:basalz_unit",
 		"cmi:hammer_head"
 	]).id("thermal:machine_press")
@@ -166,37 +166,37 @@ ServerEvents.recipes((event) => {
 	// 结晶器
 	addComponRecipe("thermal:machine_crystallizer", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:blitz_unit",
 		"create:propeller"
 	]).id("thermal:machine_crystallizer")
 	// 有机灌注
 	addComponRecipe("thermal:machine_insolator", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:blitz_unit",
-		Mechanism.NATURE.COM
+		Mechanisms.NATURE.COM
 	]).id("thermal:machine_insolator")
 	// 酿造
 	addComponRecipe("thermal:machine_brewer", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:blitz_unit",
-		Mechanism.POTION.COM
+		Mechanisms.POTION.COM
 	]).id("thermal:machine_brewer")
 
 	// 暴雪单元
 	// 冷冻机
 	addComponRecipe("thermal:machine_chiller", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:blizz_unit",
 		"create:propeller"
 	]).id("thermal:machine_chiller")
 	// 混合机
 	addComponRecipe("thermal_extra:fluid_mixer", [
 		Casing.THERMAL,
-		Mechanism.REINFORCED.COM,
+		Mechanisms.REINFORCED.COM,
 		"cmi:blizz_unit",
 		"create:whisk"
 	]).id("thermal_extra:crafting/fluid_mixer")
@@ -204,64 +204,64 @@ ServerEvents.recipes((event) => {
 	// 能源炉
 	// 烧煤的
 	addComponRecipe("thermal:dynamo_stirling", [
-		Mechanism.COIL.COM,
-		Mechanism.STONE.COM,
+		Mechanisms.COIL.COM,
+		Mechanisms.STONE.COM,
 		"cmi:thermal_unit",
 		"#forge:plates/invar",
 		"#forge:plates/stone"
 	]).id("thermal:dynamo_stirling")
 	// 烧岩浆的
 	addComponRecipe("thermal:dynamo_magmatic", [
-		Mechanism.COIL.COM,
-		Mechanism.NETHER.COM,
+		Mechanisms.COIL.COM,
+		Mechanisms.NETHER.COM,
 		"cmi:blaze_unit",
 		"#forge:plates/invar",
 		"minecraft:nether_bricks"
 	]).id("thermal:dynamo_magmatic")
 	// 烧油的
 	addComponRecipe("thermal:dynamo_compression", [
-		Mechanism.COIL.COM,
-		Mechanism.THERMAL.COM,
+		Mechanisms.COIL.COM,
+		Mechanisms.THERMAL.COM,
 		"cmi:basalz_unit",
 		"#forge:plates/invar",
 		"#forge:plates/steel"
 	]).id("thermal:dynamo_compression")
 	// 燃烧我的卡路里
 	addComponRecipe("thermal:dynamo_gourmand", [
-		Mechanism.COIL.COM,
-		Mechanism.PIG_IRON.COM,
+		Mechanisms.COIL.COM,
+		Mechanisms.PIG_IRON.COM,
 		"cmi:basalz_unit",
 		"#forge:plates/invar",
 		"#forge:plates/bronze"
 	]).id("thermal:dynamo_gourmand")
 	// 烧冰的
 	addComponRecipe("thermal_extra:dynamo_frost", [
-		Mechanism.COIL.COM,
-		Mechanism.COBALT.COM,
+		Mechanisms.COIL.COM,
+		Mechanisms.COBALT.COM,
 		"cmi:blizz_unit",
 		"#forge:plates/invar",
 		"#forge:plates/silver"
 	]).id("thermal_extra:crafting/dynamo_frost")
 	// 烧宝石的
 	addComponRecipe("thermal:dynamo_lapidary", [
-		Mechanism.COIL.COM,
-		Mechanism.PHOTO.COM,
+		Mechanisms.COIL.COM,
+		Mechanisms.PHOTO.COM,
 		"cmi:blizz_unit",
 		"#forge:plates/invar",
 		"#forge:gems/diamond"
 	]).id("thermal:dynamo_lapidary")
 	// 烧钱的
 	addComponRecipe("thermal:dynamo_numismatic", [
-		Mechanism.COIL.COM,
-		Mechanism.GOLD.COM,
+		Mechanisms.COIL.COM,
+		Mechanisms.GOLD.COM,
 		"cmi:blitz_unit",
 		"#forge:plates/invar",
 		"#forge:plates/electrum"
 	]).id("thermal:dynamo_numismatic")
 	// 烧附魔书的
 	addComponRecipe("thermal:dynamo_disenchantment", [
-		Mechanism.COIL.COM,
-		Mechanism.ENCHANTED.COM,
+		Mechanisms.COIL.COM,
+		Mechanisms.ENCHANTED.COM,
 		"cmi:blitz_unit",
 		"#forge:plates/invar",
 		"#forge:storage_blocks/lapis"
@@ -274,7 +274,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.ANDESITE.COM,
+		M: Mechanisms.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "treetap:tap"
 	}).id("thermal:device_tree_extractor")
@@ -284,7 +284,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.ANDESITE.COM,
+		M: Mechanisms.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "minecraft:fishing_rod"
 	}).id("thermal:device_fisher")
@@ -294,7 +294,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.COPPER.COM,
+		M: Mechanisms.COPPER.COM,
 		C: Casing.COPPER,
 		X: "minecraft:bucket"
 	}).id("thermal:device_water_gen")
@@ -304,7 +304,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.ANDESITE.COM,
+		M: Mechanisms.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "minecraft:composter"
 	}).id("thermal:device_composter")
@@ -314,7 +314,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.ANDESITE.COM,
+		M: Mechanisms.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "minecraft:piston"
 	}).id("thermal:device_rock_gen")
@@ -324,7 +324,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.ENDER.COM,
+		M: Mechanisms.ENDER.COM,
 		C: Casing.THERMAL,
 		X: "minecraft:hopper"
 	}).id("thermal:device_collector")
@@ -334,7 +334,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.ENCHANTED.COM,
+		M: Mechanisms.ENCHANTED.COM,
 		C: Casing.THERMAL,
 		X: "thermal:xp_crystal"
 	}).id("thermal:device_xp_condenser")
@@ -344,7 +344,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.ANDESITE.COM,
+		M: Mechanisms.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "minecraft:lava_bucket"
 	}).id("thermal:device_nullifier")
@@ -354,9 +354,9 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.ENCHANTED.COM,
+		M: Mechanisms.ENCHANTED.COM,
 		C: Casing.THERMAL,
-		X: Mechanism.POTION.COM
+		X: Mechanisms.POTION.COM
 	}).id("thermal:device_potion_diffuser")
 	//蜂箱漏斗
 	kubejs.shaped("thermal:device_hive_extractor", [
@@ -364,7 +364,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanism.ANDESITE.COM,
+		M: Mechanisms.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "minecraft:shears",
 	}).id("thermal:device_hive_extractor")

@@ -9,9 +9,9 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "tconstruct:seared_bricks",
 		B: "tconstruct:seared_brick",
-		C: Mechanism.COPPER.COM,
+		C: Mechanisms.COPPER.COM,
 		D: "thermal:cured_rubber",
-		E: Mechanism.IRON.COM
+		E: Mechanisms.IRON.COM
 	}).id("tconstruct:smeltery/casting/seared/smeltery_controller")
 
 	// 材料修复包I
