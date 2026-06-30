@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 		"XMX",
 		"YYY"
 	], {
-		M: Mechanisms.WOODEN.COM,
+		M: Mechanism.WOODEN.COM,
 		X: "#forge:string",
 		Y: ["#forge:leather", "tconstruct:silky_cloth"]
 	}).id("sophisticatedbackpacks:backpack")
@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 		"YMY",
 		"XYX"
 	], {
-		M: Mechanisms.WOODEN.COM,
+		M: Mechanism.WOODEN.COM,
 		X: "#forge:rods/andesite",
 		Y: ["#forge:leather", "tconstruct:silky_cloth"]
 	}).id("sophisticatedbackpacks:upgrade_base")
@@ -36,34 +36,34 @@ ServerEvents.recipes((event) => {
 		"A"
 	], {
 		A: "#forge:plates/industrial_iron",
-		M: Mechanisms.WOODEN.COM
+		M: Mechanism.WOODEN.COM
 	}).id('create:crafting/kinetics/item_vault')
 
 	kubejs.shaped("create_connected:item_silo", [
 		"AMA"
 	], {
 		A: "#forge:plates/industrial_iron",
-		M: Mechanisms.WOODEN.COM
+		M: Mechanism.WOODEN.COM
 	}).id("create_connected:crafting/kinetics/item_silo")
 
 	// 移动式存储接口
 	kubejs.shapeless("2x create:portable_storage_interface", [
 		Casing.ANDESITE,
-		Mechanisms.WOODEN.COM,
+		Mechanism.WOODEN.COM,
 		"#forge:plates/industrial_iron"
 	]).id("create:crafting/kinetics/portable_storage_interface")
 
 	// 移动式流体接口
 	kubejs.shapeless("2x create:portable_fluid_interface", [
 		Casing.COPPER,
-		Mechanisms.COPPER.COM,
+		Mechanism.COPPER.COM,
 		"#forge:plates/industrial_iron"
 	]).id("create:crafting/kinetics/portable_fluid_interface")
 
 	// 移动式能量接口
 	kubejs.shapeless("2x createaddition:portable_energy_interface", [
 		Casing.BRASS,
-		Mechanisms.COIL.COM,
+		Mechanism.COIL.COM,
 		"#forge:plates/industrial_iron"
 	]).id("createaddition:crafting/portable_energy_interface")
 
@@ -88,21 +88,21 @@ ServerEvents.recipes((event) => {
 	// 黄铜漏斗
 	kubejs.shapeless("create:brass_funnel", [
 		"create:andesite_funnel",
-		Mechanisms.ANDESITE.COM,
+		Mechanism.ANDESITE.COM,
 		"#forge:plates/brass"
 	]).id("create:crafting/logistics/brass_funnel")
 
 	// 黄铜隧道
 	kubejs.shapeless("create:brass_tunnel", [
 		"create:andesite_tunnel",
-		Mechanisms.ANDESITE.COM,
+		Mechanism.ANDESITE.COM,
 		"#forge:plates/brass"
 	]).id("create:crafting/logistics/brass_tunnel")
 
 	// 智能溜槽
 	kubejs.shapeless("create:smart_chute", [
 		"create:chute",
-		Mechanisms.ANDESITE.COM,
+		Mechanism.ANDESITE.COM,
 		"#forge:plates/brass"
 	]).id('create:crafting/kinetics/smart_chute')
 
@@ -113,7 +113,7 @@ ServerEvents.recipes((event) => {
 		"PCP"
 	], {
 		P: "#forge:plates/andesite_alloy",
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		I: "#forge:plates/industrial_iron",
 		B: "create:cardboard_block",
 		C: Casing.ANDESITE
@@ -126,7 +126,7 @@ ServerEvents.recipes((event) => {
 		"PCP"
 	], {
 		P: "#forge:plates/copper",
-		M: Mechanisms.COPPER.COM,
+		M: Mechanism.COPPER.COM,
 		I: "#forge:plates/industrial_iron",
 		B: "fluidlogistics:waterproof_cardboard_block",
 		C: Casing.COPPER
@@ -140,7 +140,7 @@ ServerEvents.recipes((event) => {
 	], {
 		P: "#forge:plates/industrial_iron",
 		B: "#forge:slimeballs",
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		S: "#vintageimprovements:springs/andesite",
 		C: Casing.ANDESITE
 	}).id("create:crafting/logistics/package_frogport")
@@ -153,7 +153,7 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		T: "create:transmitter",
-		M: Mechanisms.REDSTONE.COM,
+		M: Mechanism.REDSTONE.COM,
 		C: Casing.ANDESITE
 	}).id("create:crafting/logistics/redstone_link")
 	// 仓储
@@ -163,7 +163,7 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		T: "create:transmitter",
-		M: Mechanisms.WOODEN.COM,
+		M: Mechanism.WOODEN.COM,
 		C: Casing.ANDESITE
 	}).id("create:crafting/logistics/stock_link")
 	// 显示
@@ -173,7 +173,7 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		T: "create:transmitter",
-		M: Mechanisms.PHOTO.COM,
+		M: Mechanism.PHOTO.COM,
 		C: Casing.BRASS
 	}).id("create:crafting/logistics/display_link")
 
@@ -185,7 +185,7 @@ ServerEvents.recipes((event) => {
 	], {
 		G: "#forge:glass",
 		P: "#forge:plates/gold",
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		T: "create:transmitter",
 		C: Casing.ANDESITE
 	}).id("create:crafting/logistics/stock_ticker")
@@ -198,7 +198,7 @@ ServerEvents.recipes((event) => {
 	], {
 		T: "create:transmitter",
 		P: "#forge:plates/industrial_iron",
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE
 	}).id("create:crafting/logistics/redstone_requester")
 
@@ -221,6 +221,6 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/brass",
 		I: "#forge:plates/industrial_iron",
-		M: Mechanisms.WOODEN.COM
+		M: Mechanism.WOODEN.COM
 	}).id("create_connected:crafting/kinetics/inventory_access_port")
 })

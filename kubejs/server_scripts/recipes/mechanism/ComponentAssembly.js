@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { thermal_extra } = event.getRecipes()
 
 	// 热力组件
-	thermal_extra.component_assembly(`4x ${Mechanisms.THERMAL.AUG.getId()}`, [
+	thermal_extra.component_assembly(`4x ${Mechanism.THERMAL.AUG.getId()}`, [
 		"#forge:gears/constantan",
 		"thermal:rf_coil",
 		"thermal:redstone_servo",
@@ -10,14 +10,14 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 轻工构件
-	thermal_extra.component_assembly(`4x ${Mechanisms.LIGHT.AUG.getId()}`, [
+	thermal_extra.component_assembly(`4x ${Mechanism.LIGHT.AUG.getId()}`, [
 		"#forge:gears/copper",
 		"immersiveengineering:component_iron",
 		"thermal:laser_diode"
 	])
 
 	// 智能构件
-	thermal_extra.component_assembly(`4x ${Mechanisms.SMART.AUG.getId()}`, [
+	thermal_extra.component_assembly(`4x ${Mechanism.SMART.AUG.getId()}`, [
 		"#forge:wires/redstone",
 		"ae2:logic_processor",
 		"ae2:calculation_processor",
@@ -25,15 +25,15 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 强化构件
-	thermal_extra.component_assembly(`4x ${Mechanisms.REINFORCED.AUG.getId()}`, [
+	thermal_extra.component_assembly(`4x ${Mechanism.REINFORCED.AUG.getId()}`, [
 		"#forge:gears/signalum",
-		"cmi:glowstone_lumen_tube",
+		"thermalendergy:vibrating_core",
 		"cmi:inscribed_silicon",
 		"#forge:plates/lumium"
 	])
 
 	// 重工构件
-	thermal_extra.component_assembly(`4x ${Mechanisms.HEAVY.AUG.getId()}`, [
+	thermal_extra.component_assembly(`4x ${Mechanism.HEAVY.AUG.getId()}`, [
 		"#forge:gears/electrum",
 		"immersiveengineering:component_steel",
 		"immersiveengineering:electron_tube"

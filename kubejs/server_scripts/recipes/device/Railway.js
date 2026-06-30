@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#ad_astra:flags",
 		C: Casing.RAILWAY,
-		M: Mechanisms.RAILWAY.COM
+		M: Mechanism.RAILWAY.COM
 	}).id("create:crafting/kinetics/track_station")
 
 	// 燃料储罐
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 	// 燃料接口
 	kubejs.shapeless("2x railways:portable_fuel_interface", [
 		Casing.RAILWAY,
-		Mechanisms.RAILWAY.COM,
+		Mechanism.RAILWAY.COM,
 		"#forge:plates/industrial_iron"
 	]).id("railways:crafting/portable_fuel_interface")
 
@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "minecraft:comparator",
 		C: Casing.RAILWAY,
-		M: Mechanisms.RAILWAY.COM
+		M: Mechanism.RAILWAY.COM
 	}).id("create:crafting/kinetics/track_observer")
 
 	// 信号机
@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "create:transmitter",
 		C: Casing.RAILWAY,
-		M: Mechanisms.RAILWAY.COM
+		M: Mechanism.RAILWAY.COM
 	}).id("create:crafting/kinetics/track_signal")
 
 	// 连挂器
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "create:minecart_coupling",
 		C: Casing.RAILWAY,
-		M: Mechanisms.RAILWAY.COM
+		M: Mechanism.RAILWAY.COM
 	}).id("railways:crafting/track_coupler")
 
 	// 控制器
@@ -70,14 +70,14 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "create_connected:control_chip",
 		C: Casing.RAILWAY,
-		M: Mechanisms.RAILWAY.COM
+		M: Mechanism.RAILWAY.COM
 	}).id("create:crafting/kinetics/controls")
 
 	// 机械眼
 	kubejs.shapeless("railways:remote_lens", [
 		"create_rns:polished_resonant_amethyst",
 		"create:transmitter",
-		Mechanisms.RAILWAY.COM
+		Mechanism.RAILWAY.COM
 	]).id("railways:crafting/remote_lens")
 
 	// 邮箱
@@ -89,7 +89,7 @@ ServerEvents.recipes((event) => {
 		], {
 			D: `#forge:dyes/${color}`,
 			B: "minecraft:barrel",
-			M: Mechanisms.RAILWAY.COM
+			M: Mechanism.RAILWAY.COM
 		}).id(`create:crafting/logistics/${color}_postbox`)
 	})
 })

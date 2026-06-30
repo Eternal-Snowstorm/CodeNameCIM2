@@ -19,7 +19,6 @@ ServerEvents.recipes((event) => {
 		"jei:/thermal/fuels/magmatic/magmatic_lava",
 		"jei:/thermal/storage/sawdust_block",
 		"jei:/thermal_extra/crafting/device_lava_gen",
-		"jei:/thermal_extra/crafting/device_harvester",
-		"thermal_parallel:argument_parallel"
+		"jei:/thermal_extra/crafting/device_harvester"
 	])
 })

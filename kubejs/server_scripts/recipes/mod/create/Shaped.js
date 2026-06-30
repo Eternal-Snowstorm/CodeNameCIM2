@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
 		"RRR",
 		"WWW"
 	], {
-		M: Mechanisms.REDSTONE.COM,
+		M: Mechanism.REDSTONE.COM,
 		R: "#forge:rods/copper",
 		W: "#forge:wires/copper"
 	}).id('create:crafting/materials/transmitter')

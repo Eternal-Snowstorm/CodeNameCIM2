@@ -124,16 +124,16 @@ ServerEvents.recipes((event) => {
 		C: "#forge:plates/gold"
 	}).id("thermal:rf_coil")
 
-	// 萤石流明管道
-	kubejs.shaped("2x cmi:glowstone_lumen_tube", [
+	// 振动核心
+	kubejs.shaped("2x thermalendergy:vibrating_core", [
 		"CAB",
 		"A A",
 		"BAC"
 	], {
-		A: "#forge:dusts/glowstone",
+		A: "#forge:dusts/amethyst",
 		B: "#forge:rods/cobalt",
 		C: "#forge:plates/cobalt"
-	})
+	}).id("thermalendergy:vibrating_core")
 
 	// 黄铜楼梯
 	kubejs.shaped("4x cmi:brass_stairs", [

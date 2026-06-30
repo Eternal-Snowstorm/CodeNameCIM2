@@ -41,14 +41,6 @@ ServerEvents.tags("item", (event) => {
 			.add(`minecraft:${colors}_shulker_box`)
 	})
 
-	event.get("easyrepair:repair_item_pouchs")
-		.add("easyrepair:repair_item_pouch_i")
-		.add("easyrepair:repair_item_pouch_ii")
-		.add("easyrepair:repair_item_pouch_iii")
-
-	event.get("create:blaze_burner_fuel/special")
-		.add("cmi:creosote_wood_chip_briquette")
-
 	event.get("create:fluid_tanks")
 		.add("fluidlogistics:multi_fluid_tank")
 		.add("fluidlogistics:horizontal_multi_fluid_tank")
@@ -72,9 +64,6 @@ ServerEvents.tags("item", (event) => {
 			"thermal:stripped_rubberwood_wood",
 			"thermal:stripped_rubberwood_log"
 		])
-
-	event.get("c:iron_ingots")
-		.add("#forge:ingots/iron")
 
 	event.get("forge:fermentable")
 		.add("minecraft:melon_slice")
@@ -686,26 +675,6 @@ ServerEvents.tags("item", (event) => {
 	event.get("treetap:wooden_buckets")
 		.add("minecraft:bowl")
 
-	event.get("forge:dusts/raw_tungsten")
-		.add("cmi:raw_tungsten_dust")
-
-	event.get("forge:dusts/tungsten_mixture")
-		.add("cmi:tungsten_mixture")
-
-	event.get("forge:plates/ethylene_polymerization_catalytic")
-		.add("cmi:ethylene_polymerization_catalytic_plate")
-
-	event.get("forge:plates/carbon_polymerization_catalytic")
-		.add("cmi:carbon_polymerization_catalytic_plate")
-
-	event.get("thermal:crafting/dies")
-		.add("cmi:coin_mold")
-		.add("cmi:gear_mold")
-		.add("cmi:2x2_packing_mold")
-		.add("cmi:3x3_packing_mold")
-		.add("cmi:unpack_mold")
-		.add("cmi:plate_mold")
-
 	let crushedMaterialGroup = [
 		"iron",
 		"gold",
@@ -798,12 +767,4 @@ ServerEvents.tags("item", (event) => {
 		event.get(`forge:raw_nuggets`)
 			.add(`thermal_extra:${metal}_ore_chunk`)
 	})
-
-	event.get("edenring:lightning_protection")
-		.add([
-			"minecraft:iron_helemt",
-			"minecraft:iron_chestplate",
-			"minecraft:iron_leggings",
-			"minecraft:iron_boots"
-		])
 })

@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "cmi:hammer_head"
 	}).id("create:crafting/kinetics/mechanical_press")
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "create:whisk",
 	}).id("create:crafting/kinetics/mechanical_mixer")
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "create:propeller",
 	}).id("create:crafting/kinetics/encased_fan")
@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"M"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "#minecraft:planks",
 	}).id("create:crafting/kinetics/mechanical_bearing")
@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "create:piston_extension_pole",
 	}).id("create:crafting/kinetics/mechanical_piston")
@@ -79,7 +79,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "#create:cogwheel",
 	}).id("create:crafting/kinetics/gantry_carriage")
@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
 	// 弹射置物台
 	kubejs.shapeless("create:weighted_ejector",
 		["create:depot",
-			Mechanisms.ANDESITE.COM
+			Mechanism.ANDESITE.COM
 		]).id("create:crafting/kinetics/weighted_ejector")
 
 	// 石磨
@@ -96,7 +96,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "#forge:stone",
 	}).id("create:crafting/kinetics/millstone")
@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
 		" C ",
 		" M "
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "#forge:rods/andesite",
 	}).id("create:crafting/kinetics/mechanical_harvester")
@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
 		" C ",
 		" M "
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "#forge:plates/andesite_alloy",
 	}).id("create:crafting/kinetics/mechanical_plough")
@@ -129,7 +129,7 @@ ServerEvents.recipes((event) => {
 		"XMX",
 		" X "
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "#forge:plates/andesite_alloy",
 	}).id("create:crafting/kinetics/mechanical_roller")
@@ -140,7 +140,7 @@ ServerEvents.recipes((event) => {
 		"XMX",
 		" C "
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "#vintageimprovements:springs/andesite",
 		Y: "#minecraft:planks",
@@ -152,7 +152,7 @@ ServerEvents.recipes((event) => {
 		"XYX",
 		" C "
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "#forge:plates/andesite_alloy",
 		Y: "#create:shaft",
@@ -164,7 +164,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"M"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "vintageimprovements:spring_coiling_machine_wheel",
 	}).id("vintageimprovements:craft/spring_coiling_machine")
@@ -175,7 +175,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: ["#forge:plates/iron", "#forge:plates/andesite_alloy"]
 	}).id("vintageimprovements:craft/curving_press")
@@ -186,7 +186,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "create:brass_hand"
 	}).id("create:crafting/kinetics/deployer")
@@ -197,7 +197,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "thermal:saw_blade"
 	}).id("create:crafting/kinetics/mechanical_saw")
@@ -208,7 +208,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "thermal:drill_head"
 	}).id("create:crafting/kinetics/mechanical_drill")
@@ -219,7 +219,7 @@ ServerEvents.recipes((event) => {
 		"C C"
 	], {
 		A: "thermal:redstone_servo",
-		B: Mechanisms.ANDESITE.COM,
+		B: Mechanism.ANDESITE.COM,
 		C: "#forge:plates/industrial_iron"
 	}).id("create:crafting/kinetics/cart_assembler")
 
@@ -231,7 +231,7 @@ ServerEvents.recipes((event) => {
 	], {
 		P: "#forge:plates/andesite_alloy",
 		L: "#minecraft:logs",
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		S: "#vintageimprovements:springs/andesite",
 		C: Casing.ANDESITE
 	}).id("vintageimprovements:craft/centrifuge")
@@ -244,7 +244,7 @@ ServerEvents.recipes((event) => {
 	], {
 		P: "#forge:plates/andesite_alloy",
 		C: Casing.BRASS,
-		M: Mechanisms.ANDESITE.COM
+		M: Mechanism.ANDESITE.COM
 	}).id("create:crafting/kinetics/clockwork_bearing")
 
 	// 升降机滑轮
@@ -255,7 +255,7 @@ ServerEvents.recipes((event) => {
 	], {
 		C: Casing.BRASS,
 		B: "thermal:cured_rubber_block",
-		M: Mechanisms.ANDESITE.COM
+		M: Mechanism.ANDESITE.COM
 	}).id("create:crafting/kinetics/elevator_pulley")
 
 	// 控制器
@@ -266,7 +266,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "create_connected:control_chip",
 		C: Casing.ANDESITE,
-		M: Mechanisms.ANDESITE.COM
+		M: Mechanism.ANDESITE.COM
 	}).id("create:crafting/kinetics/contraption_controls")
 
 	// 蒸汽锤
@@ -276,7 +276,7 @@ ServerEvents.recipes((event) => {
 		" X "
 	], {
 		P: "#forge:plates/bronze",
-		M: Mechanisms.STEAM.COM,
+		M: Mechanism.STEAM.COM,
 		C: Casing.BRONZE,
 		G: "create:mechanical_press",
 		X: "#forge:storage_blocks/bronze"
@@ -288,7 +288,7 @@ ServerEvents.recipes((event) => {
 		"YCY",
 		" X "
 	], {
-		M: Mechanisms.STEAM.COM,
+		M: Mechanism.STEAM.COM,
 		C: Casing.BRONZE,
 		X: "create:mechanical_pump",
 		Y: "#vintageimprovements:springs/bronze"
@@ -303,8 +303,8 @@ ServerEvents.recipes((event) => {
 		A: "#forge:ingots/andesite_alloy",
 		P: "#forge:plates/brass",
 		S: "#vintageimprovements:small_springs/bronze",
-		K: Mechanisms.ANDESITE.COM,
-		M: Mechanisms.PRECISION.COM,
+		K: Mechanism.ANDESITE.COM,
+		M: Mechanism.PRECISION.COM,
 		C: Casing.BRASS
 	}).id("create:crafting/kinetics/mechanical_arm")
 
@@ -314,7 +314,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"B"
 	], {
-		M: Mechanisms.PRECISION.COM,
+		M: Mechanism.PRECISION.COM,
 		C: Casing.BRASS,
 		B: "create:crafting_blueprint"
 	}).id("create:crafting/kinetics/mechanical_crafter")
@@ -327,7 +327,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/andesite_alloy",
 		B: "#forge:plates/brass",
-		M: Mechanisms.NETHER.COM,
+		M: Mechanism.NETHER.COM,
 		C: "create:empty_blaze_burner"
 	}).id("createdieselgenerators:crafting/burner")
 
@@ -342,7 +342,7 @@ ServerEvents.recipes((event) => {
 		A: "immersiveengineering:coil_lv",
 		I: "#forge:ingots/andesite_alloy",
 		B: "#forge:plates/brass",
-		M: Mechanisms.COIL.COM,
+		M: Mechanism.COIL.COM,
 		V: "#forge:plates/vanadium",
 		C: Casing.BRASS
 	}).id("createaddition:mechanical_crafting/tesla_coil")
@@ -357,7 +357,7 @@ ServerEvents.recipes((event) => {
 		V: "#forge:plates/vanadium",
 		C: Casing.BRASS,
 		R: "thermal:rf_coil",
-		M: Mechanisms.PRECISION.COM,
+		M: Mechanism.PRECISION.COM,
 		G: "#forge:gears/iron",
 		P: "#forge:plates/industrial_iron",
 		L: "vintageimprovements:laser_item"
@@ -371,7 +371,7 @@ ServerEvents.recipes((event) => {
 	], {
 		B: "vintageimprovements:grinder_belt",
 		C: Casing.BRASS,
-		M: Mechanisms.PRECISION.COM
+		M: Mechanism.PRECISION.COM
 	})
 
 	// 马达
@@ -382,7 +382,7 @@ ServerEvents.recipes((event) => {
 	], {
 		S: "#create:shaft",
 		C: Casing.ANDESITE,
-		M: Mechanisms.ANDESITE.COM
+		M: Mechanism.ANDESITE.COM
 	})
 
 	// 钻头
@@ -405,7 +405,7 @@ ServerEvents.recipes((event) => {
 		P: "#forge:plates/stone",
 		A: "create_rns:polished_resonant_amethyst",
 		C: Casing.ANDESITE,
-		M: Mechanisms.ANDESITE.COM
+		M: Mechanism.ANDESITE.COM
 	}).id("create_rns:miner_bearing")
 
 	// 共振器

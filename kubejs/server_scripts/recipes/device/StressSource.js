@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"M"
 	], {
-		M: Mechanisms.ANDESITE.COM,
+		M: Mechanism.ANDESITE.COM,
 		C: Casing.ANDESITE,
 		X: "#forge:plates/stone",
 	}).id("create:crafting/kinetics/windmill_bearing")
@@ -132,7 +132,7 @@ ServerEvents.recipes((event) => {
 			"CCC"
 		], {
 			A: [plate, ingot],
-			B: Mechanisms.STONE.COM,
+			B: Mechanism.STONE.COM,
 			C: material.block
 		})
 
@@ -143,7 +143,7 @@ ServerEvents.recipes((event) => {
 			"CCC"
 		], {
 			A: [plate, ingot],
-			B: Mechanisms.COPPER.COM,
+			B: Mechanism.COPPER.COM,
 			C: material.block
 		})
 
@@ -156,7 +156,7 @@ ServerEvents.recipes((event) => {
 			A: plate,
 			B: ingot,
 			C: Casing.BRONZE,
-			M: Mechanisms.STEAM.COM,
+			M: Mechanism.STEAM.COM,
 			E: "create:andesite_alloy",
 			F: "create:shaft"
 		})

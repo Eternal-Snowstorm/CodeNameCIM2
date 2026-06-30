@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
 		A: ["#forge:ingots/industrial_iron", "#forge:plates/industrial_iron"],
 		B: "#forge:plates/invar",
 		C: "#create:shaft",
-		D: Mechanisms.LIGHT.COM,
+		D: Mechanism.LIGHT.COM,
 		E: "#forge:storage_blocks/industrial_iron",
 		F: ["#forge:ingots/steel", "#forge:plates/steel"]
 	}).id("createdieselgenerators:mechanical_crafting/pumpjack_crank")
@@ -92,7 +92,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: ["#forge:ingots/industrial_iron", "#forge:plates/industrial_iron"],
 		B: ["#forge:ingots/steel", "#forge:plates/steel"],
-		C: Mechanisms.LIGHT.COM,
+		C: Mechanism.LIGHT.COM,
 		D: ["create:windmill_bearing", "create:mechanical_bearing", "create:clockwork_bearing"]
 	}).id("createdieselgenerators:crafting/pumpjack_bearing")
 
@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
 		"key": {
 			"P": Ingredient.of("#forge:plates/steel").toJson(),
 			"D": Ingredient.of("#forge:plates/dense_obsidian").toJson(),
-			"M": Mechanisms.NETHER.COM.toJson(),
+			"M": Mechanism.NETHER.COM.toJson(),
 			"F": Ingredient.of("#forge:fabric_hemp").toJson(),
 			"B": Item.of("create:copper_backtank").toJson(),
 			"S": Ingredient.of("#forge:plates/obsidian").toJson()
@@ -127,7 +127,7 @@ ServerEvents.recipes((event) => {
 		"key": {
 			"P": Ingredient.of("#forge:plates/brass").toJson(),
 			"S": Item.of("create:shaft").toJson(),
-			"M": Mechanisms.PRECISION.COM.toJson(),
+			"M": Mechanism.PRECISION.COM.toJson(),
 			"B": Item.of("create:copper_backtank").toJson(),
 			"F": Item.of("create:propeller").toJson(),
 			"G": Item.of("immersiveengineering:glider").toJson(),
@@ -148,7 +148,7 @@ ServerEvents.recipes((event) => {
 		"key": {
 			"P": Ingredient.of("#forge:plates/brass").toJson(),
 			"S": Item.of("create:shaft").toJson(),
-			"M": Mechanisms.PRECISION.COM.toJson(),
+			"M": Mechanism.PRECISION.COM.toJson(),
 			"B": Item.of("create:netherite_backtank").toJson(),
 			"F": Item.of("create:propeller").toJson(),
 			"G": Item.of("immersiveengineering:glider").toJson(),
@@ -167,7 +167,7 @@ ServerEvents.recipes((event) => {
 		"key": {
 			"P": Ingredient.of("#forge:plates/steel").toJson(),
 			"D": Ingredient.of("#forge:plates/dense_obsidian").toJson(),
-			"M": Mechanisms.NETHER.COM.toJson(),
+			"M": Mechanism.NETHER.COM.toJson(),
 			"F": Ingredient.of("#forge:fabric_hemp").toJson(),
 			"B": Item.of("create_jetpack:jetpack").toJson(),
 			"S": Ingredient.of("#forge:plates/obsidian").toJson()
@@ -185,7 +185,7 @@ ServerEvents.recipes((event) => {
 		B: "moreburners:copper_coil",
 		C: Casing.ANDESITE,
 		D: "create:empty_blaze_burner",
-		E: Mechanisms.COIL.COM,
+		E: Mechanism.COIL.COM,
 		F: "#forge:plates/iron"
 	}).id("moreburners:electric_burner")
 
@@ -199,7 +199,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/andesite_alloy",
 		R: "#forge:ingots/refined_radiance",
-		M: Mechanisms.PRECISION.COM,
+		M: Mechanism.PRECISION.COM,
 		B: "#forge:ingots/brass",
 		H: "#forge:ingots/hepatizon"
 	}).id("create:mechanical_crafting/wand_of_symmetry")
@@ -214,7 +214,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/andesite_alloy",
 		R: "create:brass_hand",
-		M: Mechanisms.PRECISION.COM,
+		M: Mechanism.PRECISION.COM,
 		B: "#forge:ingots/brass",
 		H: "#forge:ingots/hepatizon"
 	})

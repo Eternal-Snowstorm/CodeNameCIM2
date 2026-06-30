@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
 		"M",
 		"C"
 	], {
-		M: Mechanisms.COPPER.COM,
+		M: Mechanism.COPPER.COM,
 		X: "minecraft:iron_bars",
 		C: Casing.COPPER
 	}).id("create:crafting/kinetics/item_drain")
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
 		"C",
 		"X"
 	], {
-		M: Mechanisms.COPPER.COM,
+		M: Mechanism.COPPER.COM,
 		X: "thermal:cured_rubber",
 		C: Casing.COPPER
 	}).id("create:crafting/kinetics/spout")
@@ -85,7 +85,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: ["#forge:ingots/cast_iron", "#forge:plates/cast_iron"],
 		B: "vintageimprovements:redstone_module",
-		C: Mechanisms.COPPER.COM,
+		C: Mechanism.COPPER.COM,
 		D: "create:spout",
 		E: "thermal:cured_rubber"
 	})
@@ -98,7 +98,7 @@ ServerEvents.recipes((event) => {
 	], {
 		B: "#forge:plates/brass",
 		P: "create:fluid_pipe",
-		M: Mechanisms.COPPER.COM
+		M: Mechanism.COPPER.COM
 	}).id("create:crafting/kinetics/smart_fluid_pipe")
 
 	// 阀门
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
 	], {
 		I: "#forge:plates/iron",
 		P: "create:fluid_pipe",
-		M: Mechanisms.COPPER.COM
+		M: Mechanism.COPPER.COM
 	}).id("create:crafting/kinetics/fluid_valve")
 
 	// 软管滑轮
@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
 		"X",
 		"M"
 	], {
-		M: Mechanisms.COPPER.COM,
+		M: Mechanism.COPPER.COM,
 		X: "thermal:cured_rubber_block",
 		C: Casing.COPPER
 	}).id("create:crafting/kinetics/hose_pulley")
@@ -129,7 +129,7 @@ ServerEvents.recipes((event) => {
 		"BCB",
 		" A "
 	], {
-		M: Mechanisms.COPPER.COM,
+		M: Mechanism.COPPER.COM,
 		C: Casing.COPPER,
 		B: "minecraft:chain",
 		A: "create:fluid_pipe"
@@ -142,7 +142,7 @@ ServerEvents.recipes((event) => {
 		"C"
 	], {
 		A: "#forge:plates/brass",
-		B: Mechanisms.COPPER.COM,
+		B: Mechanism.COPPER.COM,
 		C: "#forge:plates/copper"
 	}).id("fluidlogistics:smart_faucet")
 
@@ -160,7 +160,7 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/copper",
 		B: "#forge:plates/brass",
-		M: Mechanisms.COPPER.COM
+		M: Mechanism.COPPER.COM
 	}).id("fluidlogistics:smart_hopper")
 
 	// 流体溜槽
@@ -170,7 +170,7 @@ ServerEvents.recipes((event) => {
 		"A A"
 	], {
 		A: "#forge:plates/copper",
-		B: Mechanisms.COPPER.COM
+		B: Mechanism.COPPER.COM
 	}).id("fluidlogistics:fluid_transporter")
 
 	// 流体接口
@@ -181,6 +181,6 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:plates/brass",
 		I: "#forge:plates/industrial_iron",
-		M: Mechanisms.COPPER.COM
+		M: Mechanism.COPPER.COM
 	}).id("fluidlogistics:multi_fluid_access_port")
 })

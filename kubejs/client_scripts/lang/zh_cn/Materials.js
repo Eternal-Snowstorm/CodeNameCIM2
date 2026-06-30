@@ -21,7 +21,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("calorite", "耐热金属")
 	addMaterialLang("oil_shale", "油页岩")
 	addMaterialLang("certus_quartz", "赛特斯石英")
-	addMaterialLang("dreamcore_crystal", "幻晶")
 	addMaterialLang("magnesium", "镁")
 	addMaterialLang("sodium", "钠")
 	addMaterialLang("potassium", "钾")
@@ -46,10 +45,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("pure_quartz", "纯净石英")
 	addMaterialLang("ardite", "阿迪特")
 	addMaterialLang("neodymium", "钕")
-	addMaterialLang("alumium_alloy", "铝合金")
-	addMaterialLang("titanium_alloy", "钛合金")
-	addMaterialLang("osmium", "锇")
-	addMaterialLang("fluorite", "氟石")
 
 	/**
 	 * 
@@ -85,14 +80,14 @@ ClientEvents.lang("zh_cn", (event) => {
 
 		event.add(`block.${Cmi.MODID}.${key}_ore`, `${value}矿石`)
 		event.add(`block.${Cmi.MODID}.deepslate_${key}_ore`, `深层${value}矿石`)
-		event.add(`block.${Cmi.MODID}.nether_${key}_ore`, `下界${value}矿石`)
-		event.add(`block.${Cmi.MODID}.end_${key}_ore`, `末地${value}矿石`)
-		event.add(`block.${Cmi.MODID}.moon_${key}_ore`, `月球${value}矿石`)
-		event.add(`block.${Cmi.MODID}.mars_${key}_ore`, `火星${value}矿石`)
-		event.add(`block.${Cmi.MODID}.mercury_${key}_ore`, `水星${value}矿石`)
-		event.add(`block.${Cmi.MODID}.venus_${key}_ore`, `金星${value}矿石`)
-		event.add(`block.${Cmi.MODID}.glacio_${key}_ore`, `霜原星${value}矿石`)
-		event.add(`block.${Cmi.MODID}.galena_${key}_ore`, `方铅${value}矿石`)
-		event.add(`block.${Cmi.MODID}.radrock_${key}_ore`, `辐射${value}矿石`)
+		event.add(`block.${Cmi.MODID}.nether_${key}_ore`, `塔尔塔罗斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.end_${key}_ore`, `倪克斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.moon_${key}_ore`, `莫托斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.mars_${key}_ore`, `阿瑞斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.mercury_${key}_ore`, `赫尔墨斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.venus_${key}_ore`, `阿弗洛狄忒${value}矿石`)
+		event.add(`block.${Cmi.MODID}.glacio_${key}_ore`, `哈迪斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.galena_${key}_ore`, `赫菲斯托斯${value}矿石`)
+		event.add(`block.${Cmi.MODID}.radrock_${key}_ore`, `迪奥尼索斯${value}矿石`)
 	}
 })

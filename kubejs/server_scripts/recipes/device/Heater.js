@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
 		"BXB",
 		"BMB"
 	], {
-		M: Mechanisms.STONE.COM,
+		M: Mechanism.STONE.COM,
 		B: BRICK,
 		X: "#tconstruct:gauge"
 	}).id("tconstruct:smeltery/seared/melter")
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 		"BMB",
 		"BBB"
 	], {
-		M: Mechanisms.STONE.COM,
+		M: Mechanism.STONE.COM,
 		B: BRICK
 	}).id("tconstruct:smeltery/seared/heater")
 
@@ -69,7 +69,7 @@ ServerEvents.recipes((event) => {
 		"BYB",
 		"BMB"
 	], {
-		M: Mechanisms.STONE.COM,
+		M: Mechanism.STONE.COM,
 		B: BRICK,
 		X: "#tconstruct:patterns/reusable",
 		Y: "#forge:chests"
@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
 		"CCC"
 	], {
 		A: "#forge:plates/iron",
-		B: Mechanisms.IRON.COM,
+		B: Mechanism.IRON.COM,
 		C: "minecraft:nether_bricks"
 	}).id("create:crafting/kinetics/empty_blaze_burner")
 
@@ -93,8 +93,8 @@ ServerEvents.recipes((event) => {
 		"CCC"
 	], {
 		A: "#forge:plates/iron",
-		B: Mechanisms.IRON.COM,
+		B: Mechanism.IRON.COM,
 		C: "minecraft:nether_bricks",
-		D: Mechanisms.NETHER.COM
+		D: Mechanism.NETHER.COM
 	}).id("create:crafting/kinetics/blaze_burner")
 })

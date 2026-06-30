@@ -45,7 +45,6 @@ StartupEvents.registry("item", (event) => {
 	addIncompleteItem("upgrade_augment_6")
 	addIncompleteItem("upgrade_augment_7")
 	addIncompleteItem("upgrade_augment_8")
-	addIncompleteItem("upgrade_augment_9")
 	addIncompleteItem("aviation_cell")
 	addIncompleteItem("gas_container")
 	addIncompleteItem("nuke_cooler")
@@ -88,6 +87,14 @@ StartupEvents.registry("item", (event) => {
 
 	addItem("quantum_processor")
 		.texture("advanced_ae:item/printed_quantum_processor")
+
+	// 扫描器(半成品)
+	addItem("scanner")
+		.texture("scannable:item/scanner")
+
+	// 扫描模块(半成品)
+	addItem("scanning_module")
+		.texture("scannable:item/blank_module")
 
 	// 火箭框架(半成品)
 	for (let i = 1; i <= 4; i++) {

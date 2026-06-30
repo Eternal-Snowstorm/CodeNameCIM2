@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: Casing.INDUSTRY,
-		B: Mechanisms.HEAVY.COM
+		B: Mechanism.HEAVY.COM
 	}).id("immersiveengineering:crafting/heavy_engineering")
 
 	kubejs.shaped("4x immersiveengineering:light_engineering", [
@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: Casing.INDUSTRY,
-		B: Mechanisms.LIGHT.COM
+		B: Mechanism.LIGHT.COM
 	}).id("immersiveengineering:crafting/light_engineering")
 
 	kubejs.shaped("4x immersiveengineering:rs_engineering", [
@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: Casing.INDUSTRY,
-		B: Mechanisms.REDSTONE.COM
+		B: Mechanism.REDSTONE.COM
 	}).id("immersiveengineering:crafting/rs_engineering")
 
 	kubejs.shaped("4x immersiveengineering:generator", [
@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: Casing.INDUSTRY,
-		B: Mechanisms.COIL.COM
+		B: Mechanism.COIL.COM
 	}).id("immersiveengineering:crafting/generator")
 
 	kubejs.shaped("4x cmi:crucible_base", [

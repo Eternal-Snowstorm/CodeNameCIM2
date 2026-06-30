@@ -142,6 +142,8 @@ ServerEvents.recipes((event) => {
 	let Seq = {
 		FLYWHEEL: seqItems("create:flywheel", "#create:shaft", "cmi:incomplete_flywheel"),
 		GIZMO: seqItems("alexscaves:notor_gizmo", "#forge:plates/aluminum", "cmi:incomplete_notor_gizmo"),
+		SCANNER: seqItems("scannable:scanner", "#forge:plates/iron", "cmi:incomplete_scanner"),
+		SCAN_MOD: seqItems("scannable:blank_module", "#forge:plates/plastic", "cmi:incomplete_scanning_module"),
 		E_TUBE: seqItems("create:electron_tube", "#forge:plates/iron", "cmi:incomplete_electron_tube"),
 		R_TUBE: seqItems("cmi:resonant_tube", "#forge:plates/brass", "cmi:incomplete_resonant_tube"),
 		CAPACITOR: seqItems("ad_astra:etrionic_capacitor", "#forge:plates/steel", "ad_astra:etrionic_core"),
@@ -149,14 +151,8 @@ ServerEvents.recipes((event) => {
 		NUKE: seqItems("cmi:nuke_cooler", "alexscaves:charred_remnant", "cmi:incomplete_nuke_cooler"),
 		GAS: seqItems("steampowered:pressurized_gas_container", "#forge:plates/aluminum", "cmi:incomplete_gas_container"),
 		ROTOR: seqItems("cmi:motor_rotor", "#forge:rods/iron", "cmi:incomplete_motor_rotor"),
-		THERMAL_AUG: seqItems(Mechanisms.THERMAL.AUG, "#forge:gears/constantan", "cmi:incomplete_thermal_mechanism_augment"),
-		DIAMOND_FROM_COAL: seqItems("minecraft:diamond", "#forge:storage_blocks/coal", "minecraft:coal"),
-		CONTROL: seqItems("create_connected:control_chip", "#forge:plates/copper", "create_connected:incomplete_control_chip"),
-		LOGIC: seqItems("ae2:logic_processor", "#forge:ingots/electrum", "cmi:incomplete_logic_processor"),
-		CALCULATION: seqItems("ae2:calculation_processor", "#forge:gems/certus_quartz", "cmi:incomplete_calculation_processor"),
-		ENGINEERING: seqItems("ae2:engineering_processor", "#forge:ingots/etrium", "cmi:incomplete_engineering_processor"),
-		CONCURRENT: seqItems("cmi:concurrent_processor", "#forge:gems/entro", "cmi:incomplete_concurrent_processor"),
-		QUANTUM: seqItems("advanced_ae:quantum_processor", "advanced_ae:quantum_alloy", "cmi:incomplete_quantum_processor")
+		THERMAL_AUG: seqItems(Mechanism.THERMAL.AUG, "#forge:gears/constantan", "cmi:incomplete_thermal_mechanism_augment"),
+		DIAMOND_FROM_COAL: seqItems("minecraft:diamond", "#forge:storage_blocks/coal", "minecraft:coal")
 	}
 
 	// 飞轮
@@ -164,6 +160,26 @@ ServerEvents.recipes((event) => {
 		.deploying("#forge:plates/bronze")
 		.loop(4)
 		.build()
+
+	// 扫描机兵零件
+
+	// 扫描器
+	new SequencedAssemblyRecipe(Seq.SCANNER)
+		.deploying("immersiveengineering:survey_tools")
+		.deploying("thermal:redstone_servo")
+		.deploying("#forge:plates/electrum")
+		.deploying("cmi:smart_mechanism")
+		.build()
+		.id("scannable:scanner")
+
+	// 空白扫描模块
+	new SequencedAssemblyRecipe(Seq.SCAN_MOD)
+		.deploying("#forge:plates/electrum")
+		.deploying("ae2:printed_silicon")
+		.pressing()
+		.laserCutting(1000)
+		.build()
+		.id("scannable:blank_module")
 
 	// 电子管
 	new SequencedAssemblyRecipe(Seq.E_TUBE)
@@ -229,65 +245,12 @@ ServerEvents.recipes((event) => {
 		.loop(114514)
 		.build()
 
-	// 控制芯片
-	new SequencedAssemblyRecipe(Seq.CONTROL)
-		.deploying("#forge:plates/redstone")
-		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
-		.laserCutting(4000)
-		.build()
-		.id("create_connected:sequenced_assembly/control_chip")
-
-	// 逻辑处理器
-	new SequencedAssemblyRecipe(Seq.LOGIC)
-		.curving("ae2:logic_processor_press")
-		.deploying("create:polished_rose_quartz")
-		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
-		.laserCutting(4000)
-		.build()
-
-	// 计算处理器
-	new SequencedAssemblyRecipe(Seq.CALCULATION)
-		.curving("ae2:calculation_processor_press")
-		.deploying("#forge:ingots/hop_graphite")
-		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
-		.laserCutting(4000)
-		.build()
-
-	// 工程处理器
-	new SequencedAssemblyRecipe(Seq.ENGINEERING)
-		.curving("ae2:engineering_processor_press")
-		.deploying("#forge:silicon")
-		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
-		.laserCutting(4000)
-		.build()
-
-	// 并发处理器
-	new SequencedAssemblyRecipe(Seq.CONCURRENT)
-		.curving("cmi:concurrent_processor_press")
-		.deploying("cmi:silicon_carbide")
-		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
-		.laserCutting(4000)
-		.build()
-
-	// 量子处理器
-	new SequencedAssemblyRecipe(Seq.QUANTUM)
-		.curving("advanced_ae:quantum_processor_press")
-		.deploying("cmi:enriched_silicon")
-		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
-		.laserCutting(4000)
-		.build()
 
 	// 列车帽
 	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
 		let hat = seqItems(`railways:${color}_conductor_cap`, `minecraft:${color}_wool`, `railways:${color}_incomplete_conductor_cap`)
 		new SequencedAssemblyRecipe(hat)
-			.deploying(Mechanisms.RAILWAY.COM)
+			.deploying(Mechanism.RAILWAY.COM)
 			.deploying("#forge:string")
 			.build()
 			.id(`railways:sequenced_assembly/${color}_conductor_cap`)

@@ -14,6 +14,4 @@ StartupEvents.registry("mekanism:gas", (event) => {
 	addMekanismGas("co", 0x353637)
 	addMekanismGas("ch4", 0x142948)
 	addMekanismGas("silicon_gas_modulator", 0x002C55)
-	addMekanismGas("fissile_uranium_compound", 0x008000)
-	addMekanismGas("high_energy_fission_fuel", 0x00294E)
 })

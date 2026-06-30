@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:string"
 	})
 
-	// 燧石锤子
+	// 锤子
 	kubejs.shaped("cmi:flint_hammer", [
 		"AAA",
 		"ABA",
@@ -90,7 +90,6 @@ ServerEvents.recipes((event) => {
 		B: "#forge:rods/wooden"
 	})
 
-	// 铁锤子
 	kubejs.shaped("createdieselgenerators:hammer", [
 		"AAA",
 		"ABA",
@@ -100,7 +99,6 @@ ServerEvents.recipes((event) => {
 		B: "#forge:rods/wooden"
 	}).id("createdieselgenerators:crafting/hammer")
 
-	// 钻石锤子
 	kubejs.shaped("cmi:diamond_hammer", [
 		"AAA",
 		"ABA",
@@ -110,7 +108,6 @@ ServerEvents.recipes((event) => {
 		B: "#forge:rods/wooden"
 	})
 
-	// 时间之瓶
 	kubejs.shaped("tiab:time_in_a_bottle", [
 		"DCE",
 		"ABA",
@@ -121,14 +118,5 @@ ServerEvents.recipes((event) => {
 		C: "minecraft:clock",
 		D: "cmi:cobalt_mechanism",
 		E: "cmi:ender_mechanism"
-	})
-
-	// 紫水晶簇
-	kubejs.shaped("minecraft:amethyst_cluster", [
-		"AAA",
-		"AAA",
-		"AAA"
-	], {
-		A: "#forge:gems/amethyst"
 	})
 })

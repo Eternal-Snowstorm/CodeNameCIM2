@@ -15,10 +15,6 @@ let metals = {
 		t: 660,
 		n: "v"
 	},
-	aluminum_alloy: {
-		t: 592,
-		n: "c"
-	},
 	amethyst_bronze: {
 		t: 1043,
 		n: "v"
@@ -123,6 +119,10 @@ let metals = {
 		t: 1617,
 		n: "v"
 	},
+	melodium: {
+		t: 1755,
+		n: "t"
+	},
 	netherite: {
 		t: 2042,
 		n: "v"
@@ -146,6 +146,10 @@ let metals = {
 	platinum: {
 		t: 1768,
 		n: "c"
+	},
+	prismalium: {
+		t: 1741,
+		n: "t"
 	},
 	quantum_alloy: {
 		t: 1024,
@@ -211,6 +215,10 @@ let metals = {
 		t: 1370,
 		n: "v"
 	},
+	stellarium: {
+		t: 1873,
+		n: "t"
+	},
 	soul_infused: {
 		t: 1901,
 		n: "t"
@@ -221,10 +229,6 @@ let metals = {
 	},
 	titanium: {
 		t: 1668,
-		n: "c"
-	},
-	titanium_alloy: {
-		t: 1634,
 		n: "c"
 	},
 	tungsten: {

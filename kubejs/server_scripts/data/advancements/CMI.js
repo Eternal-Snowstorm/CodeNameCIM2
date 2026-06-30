@@ -238,45 +238,6 @@ ServerEvents.highPriorityData((event) => {
 		}
 	})
 
-	addAdvancement("fked_up", {
-		parent: "ae2:main/storage_cell",
-		criteria: {
-			get_obsidian_cell: {
-				conditions: {
-					items: [
-						{
-							items: [
-								"cmi:obsidian_cell"
-							]
-						}
-					]
-				},
-				trigger: "minecraft:inventory_changed"
-			}
-		},
-		display: {
-			announce_to_chat: true,
-			description: {
-				color: "#00b7ffff",
-				text: "he f**ked up"
-			},
-			frame: "challenge",
-			hidden: true,
-			icon: {
-				item: "cmi:obsidian_cell"
-			},
-			show_toast: false,
-			title: {
-				text: "it was at this moment that he knew"
-			},
-			requirements: [
-				[
-					"get_obsidian_cell"
-				]
-			]
-		}
-	})
-
 	/**
 	 * 
 	 * @param {string} name 

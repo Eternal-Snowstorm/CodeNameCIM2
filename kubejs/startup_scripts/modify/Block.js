@@ -1,19 +1,23 @@
 BlockEvents.modification((event) => {
-	modifySoundType("mekanism:cardboard_box", SoundType.NETHERITE_BLOCK)
+	event.modify("mekanism:cardboard_box", (modify) => {
+		modify.setSoundType(SoundType.NETHERITE_BLOCK)
+	})
 
-	modifySoundType([
-		"immersiveengineering:coke_oven",
-		"immersiveengineering:coke_oven"
-	], SoundType.DEEPSLATE_BRICKS)
+	event.modify("cmi:water_well", (modify) => {
+		modify.setSoundType(SoundType.WOOD)
+	})
 
-	modifySoundType([
-		"immersiveengineering:coke_oven",
-		"immersiveengineering:blast_furnace"
-	], SoundType.DEEPSLATE_BRICKS)
+	event.modify("immersiveengineering:coke_oven", (modify) => {
+		modify.setSoundType(SoundType.DEEPSLATE_BRICKS)
+	})
 
-	modifySoundType("treetap:tap", SoundType.WOOD)
+	event.modify("immersiveengineering:blast_furnace", (modify) => {
+		modify.setSoundType(SoundType.DEEPSLATE_BRICKS)
+	})
 
-	modifySoundType("vintageimprovements:vacuum_chamber", SoundType.COPPER)
+	event.modify("treetap:tap", (modify) => {
+		modify.setSoundType(SoundType.WOOD)
+	})
 
 	let materialSoundType = [
 		"bronze",
@@ -21,14 +25,24 @@ BlockEvents.modification((event) => {
 		"steel"
 	]
 	materialSoundType.forEach((materials) => {
-		modifySoundType([
-			`steampowered:${materials}_cogwheel`,
-			`steampowered:${materials}_large_cogwheel`,
-			`steampowered:${materials}_burner`,
-			`steampowered:${materials}_boiler`,
-			`steampowered:${materials}_steam_engine`,
-			`steampowered:${materials}_flywheel`
-		], SoundType.LANTERN)
+		event.modify(`steampowered:${materials}_cogwheel`, (modify) => {
+			modify.setSoundType(SoundType.LANTERN)
+		})
+		event.modify(`steampowered:${materials}_large_cogwheel`, (modify) => {
+			modify.setSoundType(SoundType.LANTERN)
+		})
+		event.modify(`steampowered:${materials}_burner`, (modify) => {
+			modify.setSoundType(SoundType.LANTERN)
+		})
+		event.modify(`steampowered:${materials}_boiler`, (modify) => {
+			modify.setSoundType(SoundType.LANTERN)
+		})
+		event.modify(`steampowered:${materials}_steam_engine`, (modify) => {
+			modify.setSoundType(SoundType.LANTERN)
+		})
+		event.modify(`steampowered:${materials}_flywheel`, (modify) => {
+			modify.setSoundType(SoundType.LANTERN)
+		})
 	})
 
 	// 矿藏
@@ -58,18 +72,4 @@ BlockEvents.modification((event) => {
 			modify.setExplosionResistance(3600000)
 		})
 	})
-
-	/**
-	 * @param {BlockStatePredicate_|BlockStatePredicate_[]} block
-	 * @param {Internal.SoundType_} sound
-	 * @returns
-	 */
-	function modifySoundType(block, sound) {
-		let ofArray = (block instanceof Array ? block : [block])
-		ofArray.forEach((predicate) => {
-			event.modify(predicate, (modify) => {
-				modify.setSoundType(sound)
-			})
-		})
-	}
 })

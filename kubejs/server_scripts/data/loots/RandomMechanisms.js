@@ -1,6 +1,6 @@
 ServerEvents.genericLootTables((event) => {
-	event.addGeneric("cmi:gameplay/random_mechanisms/basic", (builder) => {
-		builder.addPool((pool) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/basic", (loot) => {
+		loot.addPool((pool) => {
 			pool.addItem("cmi:wooden_faucet")
 				.randomChance(0.125)
 			pool.addItem("minecraft:flint_and_steel")
@@ -68,8 +68,8 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(2, 8)
 		})
 	})
-	event.addGeneric("cmi:gameplay/random_mechanisms/mechanical", (builder) => {
-		builder.addPool((pool) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/mechanical", (loot) => {
+		loot.addPool((pool) => {
 			pool.addItem("4x minecraft:raw_copper")
 				.randomChance(0.25)
 			pool.addItem("4x create:raw_zinc")
@@ -139,8 +139,8 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(2, 8)
 		})
 	})
-	event.addGeneric("cmi:gameplay/random_mechanisms/engineering", (builder) => {
-		builder.addPool((pool) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/engineering", (loot) => {
+		loot.addPool((pool) => {
 			pool.addItem("4x immersiveengineering:coal_coke")
 				.randomChance(0.25)
 			pool.addItem("8x immersiveengineering:treated_wood_horizontal")
@@ -190,8 +190,8 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(2, 8)
 		})
 	})
-	event.addGeneric("cmi:gameplay/random_mechanisms/flux", (builder) => {
-		builder.addPool((pool) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/flux", (loot) => {
+		loot.addPool((pool) => {
 			pool.addItem("4x thermal:tin_ingot")
 				.randomChance(0.25)
 			pool.addItem("4x thermal:lead_ingot")
@@ -266,8 +266,8 @@ ServerEvents.genericLootTables((event) => {
 	// 	 'minecraft:raw_copper', 
 	// 	'minecraft:raw_iron']
 
-	event.addGeneric("cmi:gameplay/random_mechanisms/magical", (builder) => {
-		builder.addPool((pool) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/magical", (loot) => {
+		loot.addPool((pool) => {
 			pool.addItem("4x minecraft:lapis_lazuli")
 				.randomChance(0.25)
 			pool.addItem("4x create:experience_nugget")
@@ -313,8 +313,8 @@ ServerEvents.genericLootTables((event) => {
 	// ['minecraft:pitcher_plant', 
 	// 	'minecraft:sniffer_egg', 
 	// 	'tconstruct:pig_iron_ingot']
-	event.addGeneric("cmi:gameplay/random_mechanisms/quantum", (builder) => {
-		builder.addPool((pool) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/quantum", (loot) => {
+		loot.addPool((pool) => {
 			pool.addItem("4x ae2:singularity")
 				.randomChance(0.125)
 			pool.addItem("4x ae2:quantum_entangled_singularity")
@@ -347,8 +347,8 @@ ServerEvents.genericLootTables((event) => {
 	// 	 'mekanism:sps_casing',
 	// 	  'mekanism:qio_exporter',
 	// 	 'mekanism:qio_importer']
-	event.addGeneric("cmi:gameplay/random_mechanisms/mekanism", (builder) => {
-		builder.addPool((pool) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/mekanism", (loot) => {
+		loot.addPool((pool) => {
 			pool.addItem("4x mekanism:alloy_infused")
 				.randomChance(0.25)
 			pool.addItem("4x mekanism:alloy_reinforced")
@@ -414,8 +414,8 @@ ServerEvents.genericLootTables((event) => {
 	// 						 'mekanism:basic_mechanical_pipe',
 	// 						  'mekanism:basic_fluid_tank', 
 	// 'mekanismadditions:blue_glow_panel']
-	event.addGeneric("cmi:gameplay/random_mechanisms/space", (builder) => {
-		builder.addPool((pool) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/space", (loot) => {
+		loot.addPool((pool) => {
 			pool.addItem("4x ad_astra:steel_cable")
 				.randomChance(0.25)
 			pool.addItem("4x ad_astra:desh_fluid_pipe")
@@ -458,8 +458,8 @@ ServerEvents.genericLootTables((event) => {
 			// 	 'ad_astra:steel_cable']
 		})
 	})
-	event.addGeneric("cmi:gameplay/random_mechanisms/random", (builder) => {
-		builder.addPool((pool) => {
+	event.addGeneric("cmi:gameplay/random_mechanisms/random", (loot) => {
+		loot.addPool((pool) => {
 			pool.addItem("cmi:basic_random_mechanism")
 				.count([4, 8])
 				.randomChance(0.125)

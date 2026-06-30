@@ -42,26 +42,34 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} key 
 	 * @param {String} value 
 	 */
+	function addAccelerateTooltipLang(key, value) {
+		event.add(`tooltip.${key}.accelerate`.replace(":", "."), `§b${value}`)
+	}
+
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
 	function addJEIInfoLang(key, value) {
 		event.add(`jei.info.${key}`.replace(":", "."), value)
 	}
 
-	addCommonTooltipLang("cmi:re_construction", "整合包主创")
-	addCommonTooltipLang("cmi:dkrkoo_weihe", "吉祥物")
+	addCommonTooltipLang("cmi:re_construction", "主创&策划&美工")
+	addCommonTooltipLang("cmi:dkrkoo_weihe", "吉祥物&社区管理")
 	addCommonTooltipLang("cmi:dropper_qwq", "美工")
-	addCommonTooltipLang("cmi:117458866249", "程序")
-	addCommonTooltipLang("cmi:random_mechanism", "程序")
-	addCommonTooltipLang("cmi:eternalsnowstorm", "程序")
-	addCommonTooltipLang("cmi:qi_month", "程序")
-	addCommonTooltipLang("cmi:belalus", "音乐")
-	addCommonTooltipLang("cmi:fiber_optics", "程序")
-	addCommonTooltipLang("cmi:ye_anqing", "程序")
-	addCommonTooltipLang("cmi:sakura_star_cn", "社区管理")
-	addCommonTooltipLang("cmi:qicaijie", "程序")
-	addCommonTooltipLang("cmi:flash_yi", "任务")
+	addCommonTooltipLang("cmi:117458866249", "KubeJS程序")
+	addCommonTooltipLang("cmi:random_mechanism", "KubeJS程序")
+	addCommonTooltipLang("cmi:eternalsnowstorm", "主策划&KubeJS程序&Mod程序")
+	addCommonTooltipLang("cmi:qi_month", "KubeJS程序&Mod程序")
+	addCommonTooltipLang("cmi:belalus", "音乐创作者")
+	addCommonTooltipLang("cmi:fiber_optics", "KubeJS程序&Mod程序")
+	addCommonTooltipLang("cmi:ye_anqing", "KubeJS程序")
+	addCommonTooltipLang("cmi:sakura_star_cn", "Github仓库管理&社区管理")
+	addCommonTooltipLang("cmi:qicaijie", "Mod程序")
+	addCommonTooltipLang("cmi:flash_yi", "策划&任务撰写")
 	addCommonTooltipLang("cmi:keyxeldesu", "美工")
-	addCommonTooltipLang("cmi:sergei", "建筑")
-	addCommonTooltipLang("cmi:lirx_owo", "程序")
+	addCommonTooltipLang("cmi:sergei", "整合包建筑设计")
 	addCommonTooltipLang("cmi:ein_nameuwu", "策划")
 
 	addCommonTooltipLang("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
@@ -105,7 +113,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("create:basin", "使用{minecraft:sponge, 1}海绵可以清空内部所有流体")
 	addCommonTooltipLang("create:sail_frame", `不再支持作为风帆为{create:windmill_bearing, 1}风车轴承产生应力`)
 	addCommonTooltipLang("cmi:astral_core", "用于激活{cmi:eden_crystal, 1}星环传送门的核心§c 小心落雷")
-	addCommonTooltipLang("cmi:obsidian_cell", "你似乎搞砸了💀")
+	addCommonTooltipLang("cmi:obsidian_cell", "你搞砸了, 右键拆开")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",
@@ -123,7 +131,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLang("#cmi:liquid_output", "淤泥泵在每次工作时, 会产出100mB ~ 200mB的淤泥\n初始概率为1.3%, 有概率产出10000mB淤泥, 如果抽中了那么概率重置为1.3%\n若未抽中, 那么每次运作时概率提升为当前的1.02倍, 最多提升至100%\n第499次未抽中时, 那么在第500次有50%概率产出10000mB, 否则产出5000mB, 随后概率重置为1.3%\n第999次未抽中时, 那么在第1000次必定产出10000mB, 随后概率重置为1.3%\n若单个淤泥泵连续5次产出10000mB, 将向所有玩家发送提示信息")
 	addJEIInfoLang("#cmi:peat_gen", `泥炭是一种上好的燃料, 单个泥炭可以烧炼4个物品\n只会在"红树林沼泽"和"沼泽"群系的地表生成\n并且挖掘泥炭块时将会受到"时运"和"精准采集"的附魔效果影响`)
 	addJEIInfoLang("cmi:sludge_extract", "制作此物品需向机器中安装 整合组件 或 扩容储罐构造")
-	addJEIInfoLang("#easyrepair:repair_item_pouchs", "向其中装入修补件或修复材料并装备后, 手中的工具损坏时会自动修复")
 
 	addCustomTooltipLang("tooltip.moreburners.electric_burner.1", "§b电力驱动的{create:blaze_burner, 1}烈焰人燃烧室")
 	addCustomTooltipLang("tooltip.moreburners.electric_burner.2", "§b通上{createaddition:electrum_spool, 1}电后会缓慢的升温, 需要保持供电")
