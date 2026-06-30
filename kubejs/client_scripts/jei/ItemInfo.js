@@ -18,4 +18,5 @@ JEIEvents.information((event) => {
 	addJEIInfo("#cmi:peat_gen")
 	addJEIInfo("thermal:rubber")
 	addJEIInfo("cmi:sludge_extract")
+	addJEIInfo("#easyrepair:repair_item_pouchs")
 })

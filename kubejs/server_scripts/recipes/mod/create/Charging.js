@@ -9,4 +9,9 @@ ServerEvents.recipes((event) => {
 	createaddition.charging("cmi:overcharged_alloy_ingot", [
 		"create:chromatic_compound"
 	]).energy(5000)
+
+	// 幻晶晶种
+	createaddition.charging("2x cmi:dreamcore_seed", [
+		"cmi:dreamcore_crystal"
+	]).energy(400)
 })

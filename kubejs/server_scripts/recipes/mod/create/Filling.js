@@ -57,4 +57,10 @@ ServerEvents.recipes((event) => {
 		"steampowered:pressurized_gas_container",
 		Fluid.of("mekanism:steam", 1000)
 	])
+
+	// 幻晶原石
+	create.filling("cmi:dreamcore_ore", [
+		"cmi:dreamcore_seed",
+		Fluid.of("cmi:crystal_catalyt", 200)
+	])
 })

@@ -1,7 +1,7 @@
 // priority: 18
 
 // 构件相关物品统一调用
-let Mechanism = Object.freeze({
+let Mechanisms = Object.freeze({
 	// C0
 	WOODEN: Object.freeze({
 		COM: Item.of("cmi:wooden_mechanism"),
@@ -123,7 +123,7 @@ let Mechanism = Object.freeze({
 	COBALT: Object.freeze({
 		COM: Item.of("cmi:cobalt_mechanism"),
 		INC: Item.of("cmi:incomplete_cobalt_mechanism"),
-		AUG: Item.of("thermalendergy:vibrating_core")
+		AUG: Item.of("cmi:glowstone_lumen_tube")
 	}),
 	// C6
 	BASIC: Object.freeze({
@@ -210,6 +210,24 @@ let Material = Object.freeze({
 			QUANTUM: Item.of("cmi:incomplete_quantum_processor")
 		})
 	})
+})
+
+// 处理器
+let Print = Object.freeze({
+	LOGIC: "ae2:printed_logic_processor",
+	CALCULATION: "ae2:printed_calculation_processor",
+	ENGINEERING: "ae2:printed_engineering_processor",
+	CONCURRENT: "cmi:printed_concurrent_processor",
+	QUANTUM: "advanced_ae:printed_quantum_processor"
+})
+
+let Processor = Object.freeze({
+	CONTROL: "create_connected:control_chip",
+	LOGIC: "ae2:logic_processor",
+	CALCULATION: "ae2:calculation_processor",
+	ENGINEERING: "ae2:engineering_processor",
+	CONCURRENT: "cmi:concurrent_processor",
+	QUANTUM: "advanced_ae:quantum_processor"
 })
 
 // 机壳系列

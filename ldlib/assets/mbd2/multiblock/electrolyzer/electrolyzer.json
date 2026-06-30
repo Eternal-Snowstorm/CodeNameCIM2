@@ -1,0 +1,322 @@
+{
+  "placeholders": {
+    "x": 5,
+    "pattern": [
+      [
+        0,
+        [
+          1,
+          2,
+          3,
+          4,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          5,
+          5,
+          5,
+          0
+        ],
+        [
+          6,
+          7,
+          7,
+          7,
+          1
+        ],
+        [
+          6,
+          5,
+          5,
+          5,
+          1
+        ],
+        [
+          6,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          8,
+          5,
+          5,
+          5,
+          9
+        ],
+        [
+          10,
+          7,
+          7,
+          7,
+          1
+        ],
+        [
+          10,
+          5,
+          5,
+          5,
+          1
+        ],
+        [
+          10,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          5,
+          5,
+          5,
+          0
+        ],
+        [
+          11,
+          7,
+          7,
+          7,
+          1
+        ],
+        [
+          11,
+          5,
+          5,
+          5,
+          1
+        ],
+        [
+          11,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        0,
+        [
+          1,
+          12,
+          13,
+          14,
+          1
+        ],
+        [
+          1,
+          12,
+          13,
+          14,
+          1
+        ],
+        [
+          1,
+          12,
+          13,
+          14,
+          1
+        ]
+      ]
+    ],
+    "y": 4,
+    "predicates": [
+      {
+        "type": "builtin",
+        "key": "immersiveengineering:sheetmetal_steel"
+      },
+      {
+        "type": "builtin",
+        "key": "mekanism:dynamic_tank"
+      },
+      {
+        "type": "builtin",
+        "key": "state:cmi:electrolyzer_item_output[facing\u003dwest]"
+      },
+      {
+        "type": "builtin",
+        "key": "state:cmi:electrolyzer_fluid_output[facing\u003dwest]"
+      },
+      {
+        "type": "builtin",
+        "key": "state:cmi:electrolyzer_gas_output[facing\u003dwest]"
+      },
+      {
+        "type": "builtin",
+        "key": "immersiveengineering:light_engineering"
+      },
+      {
+        "type": "builtin",
+        "key": "cmi:electrolyzer_gas_input"
+      },
+      {
+        "type": "builtin",
+        "key": "immersiveengineering:heavy_engineering"
+      },
+      {
+        "type": "builtin",
+        "key": "state:cmi:electrolyzer_energy_input[facing\u003dsouth]"
+      },
+      {
+        "type": "builtin",
+        "key": "cmi:electrolyzer_fluid_input"
+      },
+      {
+        "type": "builtin",
+        "key": "cmi:electrolyzer_item_input"
+      },
+      {
+        "type": "builtin",
+        "key": "state:cmi:electrolyzer_item_output[facing\u003deast]"
+      },
+      {
+        "type": "builtin",
+        "key": "state:cmi:electrolyzer_fluid_output[facing\u003deast]"
+      },
+      {
+        "type": "builtin",
+        "key": "state:cmi:electrolyzer_gas_output[facing\u003deast]"
+      }
+    ],
+    "z": 5,
+    "holders": [
+      {
+        "facing": 2,
+        "predicates": [
+          0
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          1
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          2
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          3
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          4
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          5
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          6
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          7
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [],
+        "isController": 1
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          8
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          9
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          10
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          11
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          12
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          13
+        ],
+        "isController": 0
+      }
+    ]
+  },
+  "layer_axis": "Y",
+  "aisle_repetitions": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "shape_infos": []
+}

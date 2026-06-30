@@ -151,4 +151,6 @@ ServerEvents.blockLootTables((event) => {
 	addOreLoots.common("etrium")
 	// 阿迪特
 	addOreLoots.common("ardite")
+	// 锇
+	addOreLoots.alone("cmi:nether_osmium_ore", "mekanism:raw_osmium")
 })

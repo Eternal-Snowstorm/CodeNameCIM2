@@ -24,7 +24,7 @@ ServerEvents.highPriorityData((event) => {
 			 * @type {String} outputId 所输出的物品id
 			 * @type {Number} priorityValue 当前命名空间的优先级
 			 */
-			let material = metal.getId().toString()
+			let material = metal.getId()
 			let tag = `#forge:${type}s/${material}`
 			let ids = Ingredient.of(tag).getItemIds()
 

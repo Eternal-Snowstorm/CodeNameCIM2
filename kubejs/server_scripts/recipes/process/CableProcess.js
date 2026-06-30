@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
         "XMX",
         " X "
     ], {
-        M: Mechanism.WOODEN.COM,
+        M: Mechanisms.WOODEN.COM,
         X: ["#forge:plates/tin", "#forge:plates/iron"],
     }).id("minecraft:hopper")
 
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
         "X X"
     ], {
         X: "#forge:plates/industrial_iron",
-        M: Mechanism.WOODEN.COM
+        M: Mechanisms.WOODEN.COM
     }).id("create:crafting/kinetics/chute")
 
     // 流体管道

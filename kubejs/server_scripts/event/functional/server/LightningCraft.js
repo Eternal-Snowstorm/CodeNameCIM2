@@ -1,5 +1,6 @@
 EntityEvents.spawned("minecraft:lightning_bolt", (event) => {
 	let lightning = event.entity
+	let player = event.getPlayer()
 	let level = event.level
 	/**
 	 * 函数封装
@@ -53,7 +54,11 @@ EntityEvents.spawned("minecraft:lightning_bolt", (event) => {
 		let lightningPos = lightning.blockPosition()
 		let inputBlock = Block.getBlock(input).getId()
 		let outputBlock = Block.getBlock(output).defaultBlockState()
-		// console.log(outputBlock)
+
+		if (DebugUserManager.isDebugger(player)) {
+			console.log(ClientSeedHandler.getValue(arg1))
+			console.log(ClientSeedHandler.getValue(arg2))
+		}
 
 		for (let i = -1; i <= 1; i++) {
 			for (let j = -1; j <= 1; j++) {

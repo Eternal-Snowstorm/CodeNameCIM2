@@ -15,4 +15,9 @@ ServerEvents.recipes((event) => {
 	cmi.grinding("create:polished_rose_quartz", [
 		"create:rose_quartz"
 	])
+
+	// 幻晶原石
+	cmi.grinding("cmi:dreamcore_crystal", [
+		"cmi:dreamcore_ore"
+	])
 })

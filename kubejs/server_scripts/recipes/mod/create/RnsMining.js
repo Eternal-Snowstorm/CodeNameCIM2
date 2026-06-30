@@ -217,7 +217,7 @@ ServerEvents.recipes((event) => {
 
 	new MiningRecipe("cmi:vanadium_deposit_block")
 		.dimension("minecraft:the_nether")
-		.defaultItem(["minecraft:cobblestone"])
+		.defaultItem(["cmi:deposit_dust"])
 		.overclockItem(5.0E-4, ["create_rns:resonant_amethyst"])
 		.overclockItem(0.5, ["vintageimprovements:vanadium_nugget"])
 		.faintResonanceItem(0.05, ["cmi:raw_vanadium"])

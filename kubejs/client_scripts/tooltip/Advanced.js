@@ -16,6 +16,8 @@ ItemEvents.tooltip((event) => {
 	addAdvancedTooltip("cmi:flash_yi")
 	addAdvancedTooltip("cmi:keyxeldesu")
 	addAdvancedTooltip("cmi:sergei")
+	addAdvancedTooltip("cmi:lirx_owo")
+	addAdvancedTooltip("cmi:ein_nameuwu")
 
 	// 繁星核心
 	addAdvancedTooltip("cmi:astral_core")
@@ -26,33 +28,10 @@ ItemEvents.tooltip((event) => {
 	 */
 	function addAdvancedTooltip(ingredient) {
 		event.addAdvanced(ingredient, (item, advanced, tooltip) => {
-			let itemTooltipTranslateKey = Component.translatable(`tooltip.${ingredient}`
-				.replace(":", "."))
-			tooltip.add(itemTooltipTranslateKey)
+			let itemTooltipTranslateKey = `tooltip.${ingredient}`.replace(":", ".")
+			tooltip.add(Component.translatable(itemTooltipTranslateKey))
 		})
 	}
-
-	// 初始套件的Tooltip
-	// event.addAdvanced("cmi:initial_item_kit", 
-	// 	(item,  advanced,  tooltip) => {
-	// 		if (event.shift) {
-	// 			let lines = Component.translatable("tooltip.cmi.initial_item_kit.shift")
-	// 				.string.split("\n")
-	// 			lines.forEach((line) => {
-	// 				tooltip.add(line)
-	// 			})
-	// 		} else {
-	// 			tooltip.add(Component.translatable("tooltip.cmi.initial_item_kit.tip"))
-	// 		}
-	// 	})
-
-	// 电池
-	event.addAdvanced("cmi:simple_battery",
-		(item, advanced, tooltip) => {
-			let stored = item.nbt?.Energy || 0
-			let max = 150000
-			tooltip.add(Component.literal(`§e${stored} / ${max} FE`))
-		})
 
 	// 末影构件
 	event.addAdvanced("cmi:ender_mechanism",
@@ -86,7 +65,7 @@ ItemEvents.tooltip((event) => {
 				.style(ChatFormatting.DARK_GRAY)
 				.addTo(tooltip)
 
-			if (event.shift) {
+			if (event.isShift()) {
 				tooltip.addAll(TooltipHelper.cutStringTextComponent(
 					CmiLang.translateDirect("tooltip.impact_pile.behaviour1").getString(),
 					TooltipHelper.Palette.STANDARD_CREATE.primary(),
