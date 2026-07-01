@@ -36,37 +36,55 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 	SequencedAssemblyRecipe.prototype.cutting = function () {
-		let sequence = create.cutting(this.transit, this.transit)
+		let sequence = create.cutting(
+			this.transit,
+			this.transit
+		)
 
 		this.$sequences.push(sequence)
 		return this
 	}
 	SequencedAssemblyRecipe.prototype.pressing = function () {
-		let sequence = create.pressing(this.transit, this.transit)
+		let sequence = create.pressing(
+			this.transit,
+			this.transit
+		)
 
 		this.$sequences.push(sequence)
 		return this
 	}
 	SequencedAssemblyRecipe.prototype.grinding = function () {
-		let sequence = cmi.grinding(this.transit, this.transit)
+		let sequence = cmi.grinding(
+			this.transit,
+			this.transit
+		)
 
 		this.$sequences.push(sequence)
 		return this
 	}
 	SequencedAssemblyRecipe.prototype.vibrating = function () {
-		let sequence = vintageimprovements.vibrating(this.transit, this.transit)
+		let sequence = vintageimprovements.vibrating(
+			this.transit,
+			this.transit
+		)
 
 		this.$sequences.push(sequence)
 		return this
 	}
 	SequencedAssemblyRecipe.prototype.pressurizing = function () {
-		let sequence = vintageimprovements.pressurizing(this.transit, this.transit)
+		let sequence = vintageimprovements.pressurizing(
+			this.transit,
+			this.transit
+		)
 
 		this.$sequences.push(sequence)
 		return this
 	}
 	SequencedAssemblyRecipe.prototype.vacuumizing = function () {
-		let sequence = vintageimprovements.vacuumizing(this.transit, this.transit)
+		let sequence = vintageimprovements.vacuumizing(
+			this.transit,
+			this.transit
+		)
 
 		this.$sequences.push(sequence)
 		return this
@@ -77,8 +95,10 @@ ServerEvents.recipes((event) => {
 	 * @returns 
 	 */
 	SequencedAssemblyRecipe.prototype.laserCutting = function (energy) {
-		let sequence = vintageimprovements.laser_cutting(this.transit, this.transit)
-			.energy(energy).maxChargeRate(1000)
+		let sequence = vintageimprovements.laser_cutting(
+			this.transit,
+			this.transit
+		).energy(energy).maxChargeRate(1000)
 
 		this.$sequences.push(sequence)
 		return this
@@ -89,7 +109,10 @@ ServerEvents.recipes((event) => {
 	 * @returns 
 	 */
 	SequencedAssemblyRecipe.prototype.deploying = function (input) {
-		let sequence = create.deploying(this.transit, [this.transit, input])
+		let sequence = create.deploying(
+			this.transit,
+			[this.transit, input]
+		)
 
 		this.$sequences.push(sequence)
 		return this
@@ -100,8 +123,10 @@ ServerEvents.recipes((event) => {
 	 * @returns 
 	 */
 	SequencedAssemblyRecipe.prototype.curving = function (itemAsHead) {
-		let sequence = vintageimprovements.curving(this.transit, this.transit)
-			.itemAsHead(itemAsHead)
+		let sequence = vintageimprovements.curving(
+			this.transit,
+			this.transit
+		).itemAsHead(itemAsHead)
 
 		this.$sequences.push(sequence)
 		return this
@@ -112,7 +137,10 @@ ServerEvents.recipes((event) => {
 	 * @returns 
 	 */
 	SequencedAssemblyRecipe.prototype.filling = function (fluid) {
-		let sequence = create.filling(this.transit, [this.transit, fluid])
+		let sequence = create.filling(
+			this.transit,
+			[this.transit, fluid]
+		)
 
 		this.$sequences.push(sequence)
 		return this
@@ -132,11 +160,11 @@ ServerEvents.recipes((event) => {
 		let loops = this.loops
 		let transit = this.transit
 
-		return create.sequenced_assembly(result,
+		return create.sequenced_assembly(
+			result,
 			input,
 			sequences
-		).loops(loops)
-			.transitionalItem(transit)
+		).loops(loops).transitionalItem(transit)
 	}
 
 	let Seq = {
