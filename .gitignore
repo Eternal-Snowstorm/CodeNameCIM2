@@ -61,6 +61,9 @@ CMI Dev.jar
 CMI Dev.json
 /CMI Dev-natives
 /authlib-injector.log
+/log4j2.xml
+/natives-windows-x86_64
+/CMI-beta-dev-vers-natives
 
 # Mods
 /mods/*
