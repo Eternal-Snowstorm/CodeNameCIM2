@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
 	}
 	/**
 	 * 
-	 * @param {Array<InputItem_>} item 
+	 * @param {InputItem_[]} item 
 	 * @returns 
 	 */
 	MiningRecipe.prototype.defaultItem = function (item) {
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Number} chance
-	 * @param {Array<InputItem_>} item 
+	 * @param {InputItem_[]} item 
 	 * @returns 
 	 */
 	MiningRecipe.prototype.overclockItem = function (chance, item) {
@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Number} chance
-	 * @param {Array<InputItem_>} item 
+	 * @param {InputItem_[]} item 
 	 * @returns 
 	 */
 	MiningRecipe.prototype.faintResonanceItem = function (chance, item) {
@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Number} chance
-	 * @param {Array<InputItem_>} item 
+	 * @param {InputItem_[]} item 
 	 * @returns 
 	 */
 	MiningRecipe.prototype.resonanceItem = function (chance, item) {
@@ -111,7 +111,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Number} chance
-	 * @param {Array<InputItem_>} item 
+	 * @param {InputItem_[]} item 
 	 * @returns 
 	 */
 	MiningRecipe.prototype.faintShatterItem = function (chance, item) {
@@ -134,7 +134,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Number} chance
-	 * @param {Array<InputItem_>} item 
+	 * @param {InputItem_[]} item 
 	 * @returns 
 	 */
 	MiningRecipe.prototype.shatterItem = function (chance, item) {
@@ -159,7 +159,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Number} chance
-	 * @param {Array<InputItem_>} item 
+	 * @param {InputItem_[]} item 
 	 * @returns 
 	 */
 	MiningRecipe.prototype.faintStabilizeItem = function (chance, item) {
@@ -183,7 +183,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Number} chance
-	 * @param {Array<InputItem_>} item 
+	 * @param {InputItem_[]} item 
 	 * @returns 
 	 */
 	MiningRecipe.prototype.stabilizeItem = function (chance, item) {

@@ -48,7 +48,7 @@ StartupEvents.recipeSchemaRegistry((event) => {
 	/**
 	 * 从字段数组构建一个完整的 RecipeSchema
 	 *
-	 * @param {Array<Internal.RecipeComponentBuilder>} fields 字段列表
+	 * @param {Internal.RecipeComponentBuilder[]} fields 字段列表
 	 * @returns {$RecipeSchema} 构建完成的配方 Schema
 	 *
 	 * @example

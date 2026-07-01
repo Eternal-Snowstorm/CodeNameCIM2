@@ -4,7 +4,7 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 	/**
 	 * 
 	 * @param {string|string[]} ids JEI页面注册id
-	 * @param {string|Internal.ItemStack_|Array<string|Internal.ItemStack_>} items 索引物品
+	 * @param {string|Internal.ItemStack_|string[]|Internal.ItemStack_[]} items 索引物品
 	 * @param {string} displayName 显示名称
 	 */
 	function addJeiRecipeCatalysts(ids, items, displayName) {

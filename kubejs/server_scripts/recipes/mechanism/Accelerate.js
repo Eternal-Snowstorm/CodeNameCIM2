@@ -235,10 +235,10 @@ ServerEvents.recipes((event) => {
 	 * 
 	 * @param {Internal.Ingredient_} input 
 	 * @param {Internal.Block_} target 
-	 * @param {Array<{
+	 * @param {{
 	 * 		id: Internal.Block_,
 	 * 		chance: number
-	 * }>} output
+	 * }[]} output
 	 * @returns 
 	 */
 	function addRecipe(input, target, output) {

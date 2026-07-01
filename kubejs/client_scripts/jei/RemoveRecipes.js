@@ -2,7 +2,7 @@ JEIEvents.removeRecipes((event) => {
 	/**
 	 * 
 	 * @param {Special.RecipeType} type 要删除的配方类型
-	 * @param {Special.RecipeId | Array<Special.RecipeId>} id 要删除的配方id
+	 * @param {Special.RecipeId | Special.RecipeId[]} id 要删除的配方id
 	 */
 	function removeRecipeFromJEI(type, id) {
 		event.remove(type, id)
