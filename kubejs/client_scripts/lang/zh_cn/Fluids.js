@@ -83,4 +83,5 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("reinforced_titanium_solution", "固化钛溶液")
 	addFluidLang("pure_crystal_source", "纯净晶源")
 	addFluidLang("helium", "氦")
+	addFluidLang("tungsten_solution", "钨溶液")
 })
