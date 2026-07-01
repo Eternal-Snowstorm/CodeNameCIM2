@@ -104,13 +104,13 @@ ServerEvents.recipes((event) => {
 		"input_fluids": [
 			{
 				"tag": "cmi:light_silicone_ether",
-				"amount": 200
+				"amount": 2000
 			}
 		],
 		"result_fluids": [
 			{
 				"fluid": "cmi:polysilicone_ether",
-				"amount": 200
+				"amount": 2000
 			}
 		],
 		"outputs": [
@@ -125,7 +125,7 @@ ServerEvents.recipes((event) => {
 		"input_fluids": [
 			{
 				"tag": "cmi:polysilicone_ether",
-				"amount": 200
+				"amount": 2000
 			},
 			{
 				"tag": "cmi:vinegar_acid",
@@ -135,7 +135,7 @@ ServerEvents.recipes((event) => {
 		"result_fluids": [
 			{
 				"fluid": "cmi:silicon_rubber",
-				"amount": 400
+				"amount": 4000
 			}
 		],
 		"outputs": [

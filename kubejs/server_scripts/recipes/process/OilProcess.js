@@ -224,10 +224,10 @@ ServerEvents.recipes((event) => {
 		"type": "immersiveindustry:chemical",
 		"inputs": [],
 		"input_fluids": [
-			Fluid.tag("tag", "cmi:vinyl_alcohol", 200).toJson()
+			Fluid.tag("tag", "cmi:vinyl_alcohol", 2000).toJson()
 		],
 		"result_fluids": [
-			Fluid.of("cmi:polyvinyl_alcohol", 200).toJson()
+			Fluid.of("cmi:polyvinyl_alcohol", 2000).toJson()
 		],
 		"outputs": [],
 		"time": 200
@@ -279,12 +279,12 @@ ServerEvents.recipes((event) => {
 		"type": "immersiveindustry:chemical",
 		"inputs": [],
 		"input_fluids": [
-			Fluid.tag("tag", "cmi:nitric_acid", 200).toJson(),
-			Fluid.tag("tag", "cmi:benzene", 200).toJson(),
-			Fluid.tag("tag", "forge:ethene", 200).toJson()
+			Fluid.tag("tag", "cmi:nitric_acid", 2000).toJson(),
+			Fluid.tag("tag", "cmi:benzene", 2000).toJson(),
+			Fluid.tag("tag", "forge:ethene", 2000).toJson()
 		],
 		"result_fluids": [
-			Fluid.of("cmi:trinitrotoluene_solution", 600).toJson()
+			Fluid.of("cmi:trinitrotoluene_solution", 6000).toJson()
 		],
 		"outputs": [],
 		"time": 200
