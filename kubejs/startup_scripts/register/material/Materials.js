@@ -94,6 +94,12 @@ new Material("etrium", "diamond")
 	.isMetal()
 	.molten()
 	.dust()
+	.dirty()
+	.clump()
+	.shard()
+	.crystal()
+	.slurry()
+	.dirtySlurry()
 
 // 钒
 new Material("vanadium", "stone")
