@@ -4,7 +4,7 @@
   * 
   * @template T
   * @param {T} event 
-  * @param {(event: InstanceType<T>) => void} handler 
+  * @param {Internal.Consumer_<InstanceType<T>>} handler 
   * @returns
   */
 function nativeEvent(event, handler) {
