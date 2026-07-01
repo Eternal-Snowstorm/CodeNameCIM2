@@ -286,3 +286,45 @@ ServerEvents.highPriorityData((event) => {
 			})
 	})
 })
+
+// ServerEvents.recipes((event) => {
+// 	MaterialSmeltingRecipe.builder()
+// 		.fluid("cmi:molten_industrial_iron")
+// 		.amount(90)
+// 		.temperature(800)
+// 		.material("cmi:test")
+// 		.addSmeltingRecipe(event)
+// })
+
+TConJSEvents.materialDefinition((event) => {
+	event.addMaterialData(
+		"cmi",
+		"test",
+		(builder) => {
+			builder.craftable(true)
+				.tier(1)
+				.sortOrder(110)
+				.setCraftOrRepairRecipe((builder) => {
+					builder["input(net.minecraft.world.item.crafting.Ingredient)"]("minecraft:iron_ingot")
+				})
+				.hidden(false)
+		},
+		(builder) => {
+			builder.grip(0.2, -0.1, 3.2)
+				.limb(0.1, -0.12, 230, -0.02)
+				.handle(-0.10, 0.05, 0, 0)
+				.head(100, 1.6, 6.2, "minecraft:stone")
+				.binding()
+		},
+		(builder) => {
+			builder.perStat("tconstruct:melee_harvest", $ModifierIds.luck, 1)
+				.perStat("tconstruct:ranged", $ModifierIds.crystalshot, 1)
+		},
+		(builder) => {
+			builder.fluid("cmi:molten_industrial_iron")
+				.amount(90)
+				.temperature(800)
+				.material("cmi:test")
+		}
+	)
+})
