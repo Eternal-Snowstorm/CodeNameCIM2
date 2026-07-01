@@ -77,9 +77,10 @@ TConJSEvents.materialDefinition((event) => {
 				.perStat("tconstruct:ranged", $ModifierIds.crystalshot, 1)
 		},
 		(builder) => {
-			builder.fluid("tconstruct:molten_amethyst")
+			builder.fluid("cmi:molten_industrial_iron")
 				.amount(90)
 				.temperature(800)
+				.material("cmi:industrial_iron")
 		}
 	)
 })
