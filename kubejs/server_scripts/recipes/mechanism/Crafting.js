@@ -20,8 +20,7 @@ ServerEvents.recipes((event) => {
 		Mechanisms.PART.BASIC,
 		"#forge:tools/axes",
 		"#forge:tools/wrench"
-	])
-		.damageIngredient("#forge:tools/axes")
+	]).damageIngredient("#forge:tools/axes")
 		.keepIngredient("#forge:tools/wrench")
 
 	// 红石
@@ -33,8 +32,7 @@ ServerEvents.recipes((event) => {
 		Mechanisms.PART.BASIC,
 		"#forge:tools/axes",
 		"#forge:tools/wrench"
-	])
-		.damageIngredient("#forge:tools/axes")
+	]).damageIngredient("#forge:tools/axes")
 		.keepIngredient("#forge:tools/wrench")
 
 	// 自然
@@ -46,8 +44,7 @@ ServerEvents.recipes((event) => {
 		Mechanisms.PART.MAGIC,
 		"#forge:tools/axes",
 		"#forge:tools/wrench"
-	])
-		.replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
+	]).replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
 		.damageIngredient("#forge:tools/axes")
 		.keepIngredient("#forge:tools/wrench")
 
@@ -60,8 +57,7 @@ ServerEvents.recipes((event) => {
 		"minecraft:water_bucket",
 		Mechanisms.PART.MECHA,
 		"#forge:tools/wrench"
-	])
-		.replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
+	]).replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
 		.keepIngredient("#forge:tools/wrench")
 
 	// 动能
@@ -73,8 +69,7 @@ ServerEvents.recipes((event) => {
 		Mechanisms.PART.MECHA,
 		"#forge:tools/axes",
 		"#forge:tools/wrench"
-	])
-		.damageIngredient("#forge:tools/axes")
+	]).damageIngredient("#forge:tools/axes")
 		.keepIngredient("#forge:tools/wrench")
 
 	// 磁力
@@ -86,7 +81,6 @@ ServerEvents.recipes((event) => {
 		Mechanisms.PART.BASIC,
 		"#forge:tools/axes",
 		"#forge:tools/wrench"
-	])
-		.damageIngredient("#forge:tools/axes")
+	]).damageIngredient("#forge:tools/axes")
 		.keepIngredient("#forge:tools/wrench")
 })
