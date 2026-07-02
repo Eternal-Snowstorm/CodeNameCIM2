@@ -93,9 +93,11 @@ ServerEvents.recipes((event) => {
 	Ingredient.of("#cmi:molds")
 		.getItemIds()
 		.forEach((mold) => {
+			let replace = mold.replace("cmi:", "")
+
 			immersiveengineering.blueprint(mold, [
 				"4x #forge:plates/industrial_iron"
 			]).blueprint("molds")
-				.id(`cmi:blueprint/${mold.replace("cmi:", "")}`)
+				.id(`cmi:blueprint/${replace}`)
 		})
 })
