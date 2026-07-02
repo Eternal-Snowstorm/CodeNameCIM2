@@ -1,81 +1,5 @@
 {
   "placeholders": {
-    "predicates": [
-      {
-        "type": "builtin",
-        "key": "tconstruct:scorched_bricks"
-      },
-      {
-        "type": "builtin",
-        "key": "any"
-      },
-      {
-        "type": "builtin",
-        "key": "tconstruct:seared_bricks"
-      },
-      {
-        "type": "builtin",
-        "key": "mekanism:dynamic_valve"
-      },
-      {
-        "type": "builtin",
-        "key": "tconstruct:scorched_bricks_slab"
-      },
-      {
-        "type": "builtin",
-        "key": "ad_astra:vent"
-      }
-    ],
-    "holders": [
-      {
-        "facing": 2,
-        "predicates": [
-          0
-        ],
-        "isController": 0
-      },
-      {
-        "facing": 2,
-        "predicates": [
-          1
-        ],
-        "isController": 0
-      },
-      {
-        "facing": 2,
-        "predicates": [
-          2,
-          3
-        ],
-        "isController": 0
-      },
-      {
-        "facing": 2,
-        "predicates": [
-          2
-        ],
-        "isController": 0
-      },
-      {
-        "facing": 2,
-        "predicates": [
-          4
-        ],
-        "isController": 0
-      },
-      {
-        "facing": 2,
-        "predicates": [
-          5
-        ],
-        "isController": 0
-      },
-      {
-        "facing": 2,
-        "predicates": [],
-        "isController": 1
-      }
-    ],
     "x": 5,
     "pattern": [
       [
@@ -217,7 +141,83 @@
       ]
     ],
     "y": 5,
-    "z": 5
+    "predicates": [
+      {
+        "type": "builtin",
+        "key": "tconstruct:scorched_bricks"
+      },
+      {
+        "type": "builtin",
+        "key": "any"
+      },
+      {
+        "type": "builtin",
+        "key": "tconstruct:seared_bricks"
+      },
+      {
+        "type": "builtin",
+        "key": "mekanism:dynamic_valve"
+      },
+      {
+        "type": "builtin",
+        "key": "tconstruct:scorched_bricks_slab"
+      },
+      {
+        "type": "builtin",
+        "key": "ad_astra:vent"
+      }
+    ],
+    "z": 5,
+    "holders": [
+      {
+        "facing": 2,
+        "predicates": [
+          0
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          1
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          2,
+          3
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          2
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          4
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [
+          5
+        ],
+        "isController": 0
+      },
+      {
+        "facing": 2,
+        "predicates": [],
+        "isController": 1
+      }
+    ]
   },
   "layer_axis": "Y",
   "aisle_repetitions": [
