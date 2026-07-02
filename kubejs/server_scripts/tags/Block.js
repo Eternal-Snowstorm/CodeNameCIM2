@@ -10,6 +10,9 @@ ServerEvents.tags("block", (event) => {
 			.removeAll()
 	}
 
+	event.get("cmi:smoke_source")
+		.add("#forge:storage_blocks/coal_coke")
+
 	event.get("cmi:ore_deposits")
 		.add([
 			"create_rns:iron_deposit_block",

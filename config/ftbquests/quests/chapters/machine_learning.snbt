@@ -408,6 +408,7 @@
 			description: ["{image:cmi:textures/images/ie/coke_oven.png width:142 height:160 align:center}"]
 			icon: "immersiveengineering:coke_oven"
 			id: "12A2C0FB29927390"
+			subtitle: "杂酚油的来源"
 			tasks: [{
 				count: 27L
 				id: "2F4BD553A5521213"
