@@ -158,6 +158,7 @@ StartupEvents.registry("block", (event) => {
 		.resistance(5)
 		.tagBlock(CmiToolType.PICKAXE.tag())
 		.tagBlock(CmiMiningLevel.IRON.tag())
+		.requiresTool()
 
 	// 辐射沙
 	addBlock("radsand", "falling")
