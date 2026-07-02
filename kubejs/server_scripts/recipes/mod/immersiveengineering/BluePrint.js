@@ -90,16 +90,11 @@ ServerEvents.recipes((event) => {
 	]).blueprint("components")
 		.id("immersiveengineering:blueprint/electron_tube")
 
-	immersiveengineering.blueprint("minecraft:stone", [
-		"minecraft:apple"
-	]).blueprint("mechanism")
-
 	Ingredient.of("#cmi:molds")
 		.getItemIds()
 		.forEach((mold) => {
 			immersiveengineering.blueprint(mold, [
-				"3x #forge:plates/industrial_iron",
-				"#forge:wrenches"
+				"4x #forge:plates/industrial_iron"
 			]).blueprint("molds")
 				.id(`cmi:blueprint/${mold.replace("cmi:", "")}`)
 		})

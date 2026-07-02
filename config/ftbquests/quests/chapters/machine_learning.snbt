@@ -405,9 +405,24 @@
 		}
 		{
 			dependencies: ["2CCDB1390C34C80A"]
-			description: ["{image:cmi:textures/images/ie/coke_oven.png width:142 height:160 align:center}"]
+			description: [
+				"结构是一个3*3*3的冶炼炉砖块立方体, 在结构搭建好后使用工程师锤对着任意4个面的中心右键即可完成构造"
+				""
+				"{image:cmi:textures/images/ie/coke_oven.png width:142 height:160 align:center}"
+			]
 			icon: "immersiveengineering:coke_oven"
 			id: "12A2C0FB29927390"
+			rewards: [{
+				id: "67860FEDC372EC4A"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "杂酚油的来源"
 			tasks: [{
 				count: 27L
@@ -422,6 +437,7 @@
 		{
 			dependencies: ["12A2C0FB29927390"]
 			id: "24FD90B8F1474193"
+			subtitle: "喝!"
 			tasks: [{
 				id: "27905A9F73DAFBBC"
 				item: "immersiveengineering:creosote_bucket"
@@ -713,6 +729,15 @@
 		}
 		{
 			dependencies: ["24FD90B8F1474193"]
+			description: [
+				"在制作防腐木板时可以使用下图的方式:"
+				" - 在焦炉上放置一个{[tconstruct:seared_faucet, tconstruct:scorched_faucet], 1}浇筑口"
+				" - 浇筑口下放置一个{[tconstruct:seared_basin, tconstruct:scorched_basin], 1}铸造盆"
+				""
+				"在制作时将{#minecraft:planks, 1}放入{[tconstruct:seared_basin, tconstruct:scorched_basin], 1}铸造盆内浇筑即可"
+				""
+				"{image:cmi:textures/images/ie/coke_oven_use.png width:104 height:122 align:center}"
+			]
 			id: "45F48FA80A7D0340"
 			rewards: [{
 				count: 32
@@ -811,11 +836,26 @@
 				type: "choice"
 			}]
 			subtitle: "一个非常重要的东西"
-			tasks: [{
-				id: "223231B2C555F23C"
-				item: "immersiveengineering:workbench"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "223231B2C555F23C"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+				{
+					id: "6332D7ECBBACB862"
+					item: {
+						Count: 1
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "molds"
+						}
+					}
+					match_nbt: true
+					title: "工程师蓝图(模具)"
+					type: "item"
+				}
+			]
 			x: -15.0d
 			y: 13.5d
 		}
@@ -986,6 +1026,28 @@
 			title: "超级大的容量!"
 			x: -4.5d
 			y: 16.5d
+		}
+		{
+			dependencies: ["45F48FA80A7D0340"]
+			description: [
+				"防腐木部件大部分都可以将防腐木放入切石机内切割制成"
+				"{image:cmi:textures/images/ie/treated_wood_components.png width:185 height:72 align:center}"
+			]
+			icon: "immersiveengineering:treated_fence"
+			id: "47356A22BB2F191E"
+			rewards: [{
+				id: "6B971E57C8509699"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "切石机大人😭✍️✍️✍️✍️"
+			tasks: [{
+				id: "7E811F8A1D4E3551"
+				title: "防腐木部件"
+				type: "checkmark"
+			}]
+			x: -13.5d
+			y: 12.0d
 		}
 	]
 	title: "巧械奇工"
