@@ -162,7 +162,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 辐射沙
 	addBlock("radsand", "falling")
-		.textureAll(Cmi.loadResource(`block/radsand`))
+		.textureAll(Cmi.loadResource("block/radsand"))
 		.soundType(SoundType.SAND)
 		.hardness(0.5)
 		.resistance(0.5)
@@ -193,10 +193,8 @@ StartupEvents.registry("block", (event) => {
 		.resistance(5)
 		.tagBlock(CmiToolType.PICKAXE.tag())
 		.tagBlock(CmiMiningLevel.STONE.tag())
-		.item((item) => {
-			item.tag("forge:storage_blocks/entro")
-				.tag("forge:storage_blocks")
-		})
+		.tag("forge:storage_blocks/entro")
+		.tag("forge:storage_blocks")
 
 	// 雕纹铜块
 	addBlock("chiseled_copper")
