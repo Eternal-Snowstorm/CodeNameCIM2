@@ -105,33 +105,6 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(CmiMiningLevel.IRON.tag())
 		.requiresTool(true)
 
-	// 青铜外壳
-	addBlock("bronze_casing")
-		.textureAll(Cmi.loadResource("block/casing/bronze/casing"))
-		.soundType(SoundType.COPPER)
-		.hardness(5)
-		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE.tag())
-		.tagBlock(CmiMiningLevel.IRON.tag())
-
-	// 智能外壳
-	addBlock("smart_casing")
-		.model(Cmi.loadResource("block/casing/ae2/smart"))
-		.soundType(SoundType.METAL)
-		.hardness(5)
-		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE.tag())
-		.tagBlock(CmiMiningLevel.IRON.tag())
-
-	// 高级计算外壳
-	addBlock("computing_casing")
-		.model(Cmi.loadResource("block/casing/ae2/computing"))
-		.soundType(SoundType.METAL)
-		.hardness(5)
-		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE.tag())
-		.tagBlock(CmiMiningLevel.IRON.tag())
-
 	// 工程块框架
 	addBlock("industrial_frame")
 		.textureAll("immersiveengineering:block/metal_decoration/steel_casing")

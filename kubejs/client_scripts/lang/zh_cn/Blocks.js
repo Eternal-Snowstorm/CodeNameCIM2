@@ -27,6 +27,21 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`machine.${Cmi.MODID}.${key}`, value)
 	}
 
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
+	function addCasingLang(key, value) {
+		event.add(`block.${Cmi.MODID}.${key}_casing`, `${value}机壳`)
+	}
+
+	addCasingLang("iron", "铁")
+	addCasingLang("bronze", "青铜")
+	addCasingLang("steel", "钢")
+	addCasingLang("smart", "智能")
+	addCasingLang("computing", "高级计算")
+
 	addBlockLang("rocket_pattern", "火箭模版")
 	addBlockLang("tier_1_rocket_frame", "一阶火箭框架")
 	addBlockLang("tier_2_rocket_frame", "二阶火箭框架")
@@ -37,10 +52,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("compression_end_stone_dust_block", "压缩末地石粉块")
 	addBlockLang("crucible_base", "底座")
 	addBlockLang("crucible_tuyere", "风口")
-	addBlockLang("bronze_casing", "青铜机壳")
-	addBlockLang("pressure_resistance_casing", "耐压外壳")
-	addBlockLang("smart_casing", "智能机壳")
-	addBlockLang("computing_casing", "计算机壳")
 	addBlockLang("industrial_frame", "工程块框架")
 	addBlockLang("peat_block", "泥炭块")
 	addBlockLang("oil_shale", "油页岩")
