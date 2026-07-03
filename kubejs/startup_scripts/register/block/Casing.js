@@ -5,7 +5,11 @@ StartupEvents.registry("block", (event) => {
 	 * @returns 
 	 */
 	function addBlock(name) {
-		return event.create(`${Cmi.MODID}:${name}_casing`)
+		let builder = event.create(`${Cmi.MODID}:${name}_casing`)
+
+		builder.tag("create:casing")
+
+		return builder
 	}
 
 	// 铁
