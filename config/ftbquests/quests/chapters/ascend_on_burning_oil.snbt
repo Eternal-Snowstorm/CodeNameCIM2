@@ -10,7 +10,7 @@
 	quests: [
 		{
 			dependencies: ["1570B04A1D692BCC"]
-			description: ["整合包大幅度提升了铝土刷新率，至少从代码上看刷新率和锌差不多"]
+			description: ["整合包大幅度提升了铝土刷新率, 至少从代码上看刷新率和锌差不多"]
 			id: "16B82E736AC7FDCE"
 			tasks: [{
 				id: "17C274929566069F"
@@ -542,8 +542,8 @@
 				"0FA1A601134C5105"
 			]
 			description: [
-				"将&4熔融铁&r与&8焦煤粉&r一同放入&6压缩机&r中，在&c加热&r与&b高压&r的作用下进行处理，即可得到&7熔融铸铁&r"
-				"随后将&7熔融铸铁&r进行&b冷却&r处理，便可以得到可用于加工的&7铸铁&r材料"
+				"将&4熔融铁&r与&8焦煤粉&r一同放入&6压缩机&r中, 在&c加热&r与&b高压&r的作用下进行处理, 即可得到&7熔融铸铁&r"
+				"随后将&7熔融铸铁&r进行&b冷却&r处理, 便可以得到可用于加工的&7铸铁&r材料"
 			]
 			id: "037CEC7A15BC0B2F"
 			subtitle: "铁Plus"
@@ -599,11 +599,11 @@
 			dependencies: ["1570B04A1D692BCC"]
 			description: [
 				"&l炼钢坩埚结构说明&r"
-				"你需要使用&7高炉砖&r、&c燃烧室&r以及&7坩埚底座&r来搭建完整的多方块结构，并在指定位置安装&6高炉预热器&r以提高温度"
+				"你需要使用&7高炉砖&r、&c燃烧室&r以及&7坩埚底座&r来搭建完整的多方块结构, 并在指定位置安装&6高炉预热器&r以提高温度"
 				""
 				"&l预热器安装&r"
-				"在坩埚侧面安装&6高炉预热器&r，并为其提供&d能量&r"
-				"预热器能够显著提升坩埚的&c工作温度&r，从而使炼钢过程顺利进行"
+				"在坩埚侧面安装&6高炉预热器&r, 并为其提供&d能量&r"
+				"预热器能够显著提升坩埚的&c工作温度&r, 从而使炼钢过程顺利进行"
 				"{image:cmi:textures/images/ie/crucible.png width:115 height:137 align:center}"
 			]
 			icon: "immersiveindustry:crucible"
@@ -1277,7 +1277,7 @@
 		}
 		{
 			dependencies: ["3640CEE4D21C8BB5"]
-			description: ["本整合包修改了原油生成机制。现在每个区块都会生成无限量的原油，因此无需再四处勘探或寻找特定油田"]
+			description: ["本整合包修改了原油生成机制。现在每个区块都会生成无限量的原油, 因此无需再四处勘探或寻找特定油田"]
 			hide_dependency_lines: true
 			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "7CE3BF3F7F7FC1D9"

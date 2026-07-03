@@ -9,7 +9,7 @@
 	#This can also be a mod sound if the mod is installed.
 	#EG: modname:modsound.boing
 	#
-	#If you want to use external sounds, consider looking into the mods that add resources
+	#If you want to use external sounds,consider looking into the mods that add resources
 	name = "minecraft:entity.experience_orb.pickup"
 	#Volume of the volume (when Minecraft loads)
 	#Range: 0.0 ~ 10.0

@@ -20,19 +20,19 @@
 		[additions.spawning.baby-creeper]
 			#Enable the spawning of baby creeper. Think baby zombies.
 			shouldSpawn = false
-			#The multiplier for weight of baby creeper spawns, compared to the adult mob.
+			#The multiplier for weight of baby creeper spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5
-			#The multiplier for minimum group size of baby creeper spawns, compared to the adult mob.
+			#The multiplier for minimum group size of baby creeper spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			minSizePercentage = 0.5
-			#The multiplier for maximum group size of baby creeper spawns, compared to the adult mob.
+			#The multiplier for maximum group size of baby creeper spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSizePercentage = 0.5
-			#The multiplier for spawn cost per entity of baby creeper spawns, compared to the adult mob.
+			#The multiplier for spawn cost per entity of baby creeper spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			spawnCostPerEntityPercentage = 1.0
-			#The multiplier for max spawn cost of baby creeper spawns, compared to the adult mob.
+			#The multiplier for max spawn cost of baby creeper spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSpawnCostPercentage = 1.0
 			#The list of biome ids that baby creeper will not spawn in even if the normal mob variant can spawn.
@@ -44,19 +44,19 @@
 		[additions.spawning.baby-enderman]
 			#Enable the spawning of baby enderman. Think baby zombies.
 			shouldSpawn = false
-			#The multiplier for weight of baby enderman spawns, compared to the adult mob.
+			#The multiplier for weight of baby enderman spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5
-			#The multiplier for minimum group size of baby enderman spawns, compared to the adult mob.
+			#The multiplier for minimum group size of baby enderman spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			minSizePercentage = 0.5
-			#The multiplier for maximum group size of baby enderman spawns, compared to the adult mob.
+			#The multiplier for maximum group size of baby enderman spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSizePercentage = 0.5
-			#The multiplier for spawn cost per entity of baby enderman spawns, compared to the adult mob.
+			#The multiplier for spawn cost per entity of baby enderman spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			spawnCostPerEntityPercentage = 1.0
-			#The multiplier for max spawn cost of baby enderman spawns, compared to the adult mob.
+			#The multiplier for max spawn cost of baby enderman spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSpawnCostPercentage = 1.0
 			#The list of biome ids that baby enderman will not spawn in even if the normal mob variant can spawn.
@@ -68,19 +68,19 @@
 		[additions.spawning.baby-skeleton]
 			#Enable the spawning of baby skeleton. Think baby zombies.
 			shouldSpawn = false
-			#The multiplier for weight of baby skeleton spawns, compared to the adult mob.
+			#The multiplier for weight of baby skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5
-			#The multiplier for minimum group size of baby skeleton spawns, compared to the adult mob.
+			#The multiplier for minimum group size of baby skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			minSizePercentage = 0.5
-			#The multiplier for maximum group size of baby skeleton spawns, compared to the adult mob.
+			#The multiplier for maximum group size of baby skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSizePercentage = 0.5
-			#The multiplier for spawn cost per entity of baby skeleton spawns, compared to the adult mob.
+			#The multiplier for spawn cost per entity of baby skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			spawnCostPerEntityPercentage = 1.0
-			#The multiplier for max spawn cost of baby skeleton spawns, compared to the adult mob.
+			#The multiplier for max spawn cost of baby skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSpawnCostPercentage = 1.0
 			#The list of biome ids that baby skeleton will not spawn in even if the normal mob variant can spawn.
@@ -92,19 +92,19 @@
 		[additions.spawning.baby-stray]
 			#Enable the spawning of baby stray. Think baby zombies.
 			shouldSpawn = false
-			#The multiplier for weight of baby stray spawns, compared to the adult mob.
+			#The multiplier for weight of baby stray spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5
-			#The multiplier for minimum group size of baby stray spawns, compared to the adult mob.
+			#The multiplier for minimum group size of baby stray spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			minSizePercentage = 0.5
-			#The multiplier for maximum group size of baby stray spawns, compared to the adult mob.
+			#The multiplier for maximum group size of baby stray spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSizePercentage = 0.5
-			#The multiplier for spawn cost per entity of baby stray spawns, compared to the adult mob.
+			#The multiplier for spawn cost per entity of baby stray spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			spawnCostPerEntityPercentage = 1.0
-			#The multiplier for max spawn cost of baby stray spawns, compared to the adult mob.
+			#The multiplier for max spawn cost of baby stray spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSpawnCostPercentage = 1.0
 			#The list of biome ids that baby stray will not spawn in even if the normal mob variant can spawn.
@@ -116,19 +116,19 @@
 		[additions.spawning.baby-wither-skeleton]
 			#Enable the spawning of baby wither skeleton. Think baby zombies.
 			shouldSpawn = false
-			#The multiplier for weight of baby wither skeleton spawns, compared to the adult mob.
+			#The multiplier for weight of baby wither skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5
-			#The multiplier for minimum group size of baby wither skeleton spawns, compared to the adult mob.
+			#The multiplier for minimum group size of baby wither skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			minSizePercentage = 0.5
-			#The multiplier for maximum group size of baby wither skeleton spawns, compared to the adult mob.
+			#The multiplier for maximum group size of baby wither skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSizePercentage = 0.5
-			#The multiplier for spawn cost per entity of baby wither skeleton spawns, compared to the adult mob.
+			#The multiplier for spawn cost per entity of baby wither skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			spawnCostPerEntityPercentage = 1.0
-			#The multiplier for max spawn cost of baby wither skeleton spawns, compared to the adult mob.
+			#The multiplier for max spawn cost of baby wither skeleton spawns,compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			maxSpawnCostPercentage = 1.0
 			#The list of biome ids that baby wither skeleton will not spawn in even if the normal mob variant can spawn.
