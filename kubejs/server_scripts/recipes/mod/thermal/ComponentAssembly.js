@@ -59,10 +59,19 @@ ServerEvents.recipes((event) => {
 	// 机器框架
 	addComponRecipe("thermal:machine_frame", [
 		"#forge:plates/invar",
-		"#forge:plates/invar",
-		"#forge:plates/industrial_iron",
-		"#forge:plates/industrial_iron",
-		"#forge:glass"
+		"cmi:industrial_frame"
+	])
+
+	// 铁机壳
+	addComponRecipe("cmi:iron_casing", [
+		"#forge:plates/iron",
+		"cmi:industrial_frame"
+	])
+
+	// 钢机壳
+	addComponRecipe("cmi:steel_casing", [
+		"#forge:plates/steel",
+		"cmi:industrial_frame"
 	])
 
 	// 红石伺服器

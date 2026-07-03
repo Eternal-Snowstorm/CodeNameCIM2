@@ -86,4 +86,26 @@ ServerEvents.recipes((event) => {
 		C: "#forge:leather",
 		D: "farmersdelight:rope"
 	}).id("immersiveengineering:crafting/glider")
+
+	// 铁机壳
+	kubejs.shaped("4x cmi:iron_casing", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: "#forge:plates/iron",
+		B: "cmi:industrial_frame",
+		C: "#forge:gears/copper"
+	})
+
+	// 铁机壳
+	kubejs.shaped("4x cmi:steel_casing", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: "#forge:plates/steel",
+		B: "cmi:industrial_frame",
+		C: "#forge:gears/electrum"
+	})
 })

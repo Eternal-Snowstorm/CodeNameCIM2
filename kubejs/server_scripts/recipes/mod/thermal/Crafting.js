@@ -22,15 +22,14 @@ ServerEvents.recipes((event) => {
 	}).id("thermal:explosive_grenade_4")
 
 	// 机器框架
-	kubejs.shaped("2x thermal:machine_frame", [
-		"AAA",
-		"BGB",
-		"CCC"
+	kubejs.shaped("4x thermal:machine_frame", [
+		"ABA",
+		"BCB",
+		"ABA"
 	], {
 		A: "#forge:plates/invar",
-		B: "#forge:glass",
-		C: "#forge:plates/industrial_iron",
-		G: "#forge:gears/tin"
+		B: "cmi:industrial_frame",
+		C: "#forge:gears/tin"
 	}).id("thermal:machine_frame")
 
 	replaceBombRecipe("minecraft:ender_pearl", "ender")
