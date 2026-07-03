@@ -1,0 +1,47 @@
+filename = 'Pretty X Smart Pipez.zip'
+name = 'Pretty X Smart Pipez'
+side = ''
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [
+    '1.16.5',
+    '1.17.1',
+    '1.18',
+    '1.18.1',
+    '1.18.2',
+    '1.19',
+    '1.19.1',
+    '1.19.2',
+    '1.19.3',
+    '1.19.4',
+    '1.20',
+    '1.20.1',
+    '1.20.2',
+    '1.20.3',
+    '1.20.4',
+    '1.20.5',
+    '1.20.6',
+    '1.21',
+    '1.21.1',
+    '1.21.2',
+    '1.21.3',
+    '1.21.4',
+    '26.1',
+    '26.1.1',
+    '26.1.2'
+]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0'
+
+[download]
+hash = '73e1a40d46b547b18b08cccc3347e021302b3bb5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6024643
+project-id = 1166026
+
+[[x-prismlauncher-dependencies]]
+addonId = '443900'
+type = 'REQUIRED'
