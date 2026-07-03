@@ -42,6 +42,11 @@ ServerEvents.recipes((event) => {
 	replaceBombRecipe("thermal:blitz_powder", "lightning")
 	replaceBombRecipe("thermal:basalz_powder", "earth")
 
+	/**
+	 * 
+	 * @param {Internal.Ingredient_} input 
+	 * @param {string} bombname 
+	 */
 	function replaceBombRecipe(input, bombname) {
 		kubejs.shaped(`thermal:${bombname}_tnt`, [
 			" A ",
