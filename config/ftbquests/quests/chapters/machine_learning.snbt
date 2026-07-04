@@ -111,8 +111,8 @@
 				type: "observation"
 			}]
 			title: "橡胶树"
-			x: -20.25d
-			y: 19.5d
+			x: -20.02551020408167d
+			y: 21.520408163265294d
 		}
 		{
 			dependencies: ["0D502CA40E47F832"]
@@ -568,7 +568,6 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["2DDCBAC1D7AF08AE"]
 			description: ["可以通过挖掘硫矿打粉后获得, 也可以通过磨煤炭获得"]
 			id: "14FCB2B036726682"
 			subtitle: "硫磺粉末"
@@ -581,7 +580,6 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["2DDCBAC1D7AF08AE"]
 			description: ["我应该能在&6河边&f找到一些野生稻米, 之后就可以自己种植了"]
 			hide_dependency_lines: true
 			id: "7DD1547C967EDD20"
@@ -598,7 +596,7 @@
 				title: "稻米"
 				type: "item"
 			}]
-			x: -12.5d
+			x: -9.5d
 			y: 19.5d
 		}
 		{
@@ -624,15 +622,18 @@
 			y: 22.5d
 		}
 		{
-			dependencies: ["2DDCBAC1D7AF08AE"]
+			dependencies: [
+				"67EB0F72854186C9"
+				"48EA4E81B83DD506"
+			]
 			id: "5E096A2AD55E8040"
 			tasks: [{
 				id: "2F3B8F408FDE770B"
 				item: "thermal:latex_bucket"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 21.0d
+			x: -15.5d
+			y: 22.5d
 		}
 		{
 			dependencies: ["43FFB9DB898EA83A"]
@@ -685,7 +686,7 @@
 				title: "橡胶树边角料"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -11.0d
 			y: 22.5d
 		}
 		{
@@ -703,7 +704,7 @@
 				title: "橡胶粉"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -9.5d
 			y: 22.5d
 		}
 		{
@@ -1077,6 +1078,28 @@
 			title: "大型发酵储罐"
 			x: -4.5d
 			y: 18.0d
+		}
+		{
+			dependencies: ["7FF0C3B318313C79"]
+			id: "67EB0F72854186C9"
+			tasks: [{
+				id: "5E0697B63A420CBA"
+				item: "treetap:tap"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["7FF0C3B318313C79"]
+			id: "48EA4E81B83DD506"
+			tasks: [{
+				id: "5FDD722FBCA36AAC"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 23.5d
 		}
 	]
 	title: "巧械奇工"
