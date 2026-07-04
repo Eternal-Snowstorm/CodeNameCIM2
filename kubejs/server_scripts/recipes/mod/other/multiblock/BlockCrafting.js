@@ -1,5 +1,3 @@
-let $QuadConsumer =
-	Java.loadClass("dev.celestiacraft.libs.api.interaction.fi.QuadConsumer")
 let $BasicBlock =
 	Java.loadClass("dev.celestiacraft.libs.api.register.block.BasicBlock")
 
