@@ -1,14 +1,14 @@
 {
     // Allow players to set custom flag images for their rockets.
     "allowFlagImages": true,
-    // Allow rockets to be launched from any dimension,even if it's not considered a planet.
+    // Allow rockets to be launched from any dimension, even if it's not considered a planet.
     "launchAnywhere": false,
     /*
-     * The random tick speed for breaking plants,torches,freezing water,etc. on planets.
+     * The random tick speed for breaking plants, torches, freezing water, etc. on planets.
      * Type: Integer
      */
     "planetRandomTickSpeed": 20,
-    // Always tick every planet chunk for things like freezing water,breaking plants,etc.,regardless of whether the chunk can tick randomly or not. This has a small performance impact.
+    // Always tick every planet chunk for things like freezing water, breaking plants, etc., regardless of whether the chunk can tick randomly or not. This has a small performance impact.
     "forcePlanetTick": false,
     /*
      * The y level where rockets should leave the dimension and enter space.
@@ -23,7 +23,7 @@
     "disableTemperature": false,
     // Uses normal gravity for all planets.
     "disableGravity": false,
-    // An Air Vortex is created when an oxygenated structure breaks its seal,causing every entity inside to rapidly get sucked out. This setting disables that.
+    // An Air Vortex is created when an oxygenated structure breaks its seal, causing every entity inside to rapidly get sucked out. This setting disables that.
     "disableAirVortexes": false,
     "cryoFreezer": {
         // Type: Long

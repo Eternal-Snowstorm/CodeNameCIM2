@@ -3,26 +3,26 @@
 [gameplay]
 	#Set this to false to disable new players spawning with the Tinkers' Book.
 	shouldSpawnWithTinkersBook = true
-	#If true,extends the applicable slots for the fire protection enchantment to work better with shields. Will not impact gameplay with the vanilla enchantment.
-	#If false,fire protection on a shield will not reduce fire tick time.
+	#If true, extends the applicable slots for the fire protection enchantment to work better with shields. Will not impact gameplay with the vanilla enchantment.
+	#If false, fire protection on a shield will not reduce fire tick time.
 	extendFireProtectionSlots = true
-	#If true,extends the applicable slots for the blast protection enchantment to work better with shields. Will not impact gameplay with the vanilla enchantment.
-	#If false,blast protection on a shield will not reduce explosion knockback.
+	#If true, extends the applicable slots for the blast protection enchantment to work better with shields. Will not impact gameplay with the vanilla enchantment.
+	#If false, blast protection on a shield will not reduce explosion knockback.
 	extendBlastProtectionSlots = true
-	#Amount of durability restored by a repair kit in terms of ingots. Does not affect the cost to create the kit,that is controlled by JSON.
+	#Amount of durability restored by a repair kit in terms of ingots. Does not affect the cost to create the kit, that is controlled by JSON.
 	#Range: 0.0 ~ 32767.0
 	repairKitAmount = 2.0
-	#If true,makes the knockback resistance attribute sync its value to client side. This allows modifiers such as springing and flinging to work properly.
-	#If false,knockback resistance will not sync so will hopefully be 0 client side. Can be disabled in case another mod relied on it not syncing.
+	#If true, makes the knockback resistance attribute sync its value to client side. This allows modifiers such as springing and flinging to work properly.
+	#If false, knockback resistance will not sync so will hopefully be 0 client side. Can be disabled in case another mod relied on it not syncing.
 	syncKnockbackResistance = true
 	#Method of syncing on opening a tool inventory. Options:
-	#FULL_STACK: syncs the entire tool item stack to client. May cause issues with packet size if too many tools are inside the tool,but best for laggy servers.
+	#FULL_STACK: syncs the entire tool item stack to client. May cause issues with packet size if too many tools are inside the tool, but best for laggy servers.
 	#MINIMAL (default): syncs the minimal info to prevent an inventory desync if the client lost the stack.
 	#DISABLED: syncs nothing. May cause inventory desync issues if the client lost the tool.
-	#Allowed Values: FULL_STACK,MINIMAL,DISABLED
+	#Allowed Values: FULL_STACK, MINIMAL, DISABLED
 	toolInventorySync = "MINIMAL"
 
-#Options related to recipes,limited options as a datapack allows most recipes to be modified
+#Options related to recipes, limited options as a datapack allows most recipes to be modified
 [recipes]
 	#Add a recipe that allows you to craft a piece of flint using 3 gravel
 	addGravelToFlintRecipe = true
@@ -85,44 +85,44 @@
 		piglin_brute = true
 		zombified_piglin = true
 
-#Options related to loot table injections. Note some of the changes are done via global loot managers,these only control injecting loot into loot pools
-#If your modpack makes extensive loot table changes,many of these may be automatically disabled. You can also manually set up tables for more control.
+#Options related to loot table injections. Note some of the changes are done via global loot managers, these only control injecting loot into loot pools
+#If your modpack makes extensive loot table changes, many of these may be automatically disabled. You can also manually set up tables for more control.
 [loot]
 	#Adds slimy saplings and seeds into various loot chests. Helps for worlds without slime islands
 	slimy_loot = true
-	#If true,ender dragons will drop scales when damaged by explosions
+	#If true, ender dragons will drop scales when damaged by explosions
 	drop_dragon_Scales = true
-	#Weight of the ancient tool trade for the wandering trader. All traders randomly choose 1 rare trade,so this is roughly the chance the trade occurs compared to the vanilla options (of which there are 6).
+	#Weight of the ancient tool trade for the wandering trader. All traders randomly choose 1 rare trade, so this is roughly the chance the trade occurs compared to the vanilla options (of which there are 6).
 	#Range: 0 ~ 100
 	wanderer_ancient_tool_weight = 6
 
 #Configuration related to integration with other mods
 [compatability]
 	#Amount of fluid each chemthrower shot projectile from Immersive Engineering is worth towards our fluid effect registry.
-	#IE launches 8 projectiles per tick while consuming the value in their config,so dividing it by 8 makes them comparable to our projectiles.
-	#However,keeping it as a separate config option gives pack makers more control over how strong TiC ends up in the chemthrower.
+	#IE launches 8 projectiles per tick while consuming the value in their config, so dividing it by 8 makes them comparable to our projectiles.
+	#However, keeping it as a separate config option gives pack makers more control over how strong TiC ends up in the chemthrower.
 	#Range: 0.0 ~ 2.147483647E9
 	immersive_engineering_chemthrower_shot_value = 1.25
-	#If true,integration alloy materials will be enabled if any of their components is present,allowing creating them from their molten liquid forms.
-	#If false,they will only be only be present if another mod adds an ingot.
-	#This config option is provided as while most players prefer the additional materials,some dislike having no proper ingot. Note we do have NBT ingots for these materials.
+	#If true, integration alloy materials will be enabled if any of their components is present, allowing creating them from their molten liquid forms.
+	#If false, they will only be only be present if another mod adds an ingot.
+	#This config option is provided as while most players prefer the additional materials, some dislike having no proper ingot. Note we do have NBT ingots for these materials.
 	allowIngotlessAlloys = true
-	#If true,monsters will run melee modifiers when attacking with a modifiable weapon. Provided to work around potential issues with addons allowing more monsters to use tools.
-	#Note that if its just a specific mob or damage source that has an issue,there are tag blacklists.
+	#If true, monsters will run melee modifiers when attacking with a modifiable weapon. Provided to work around potential issues with addons allowing more monsters to use tools.
+	#Note that if its just a specific mob or damage source that has an issue, there are tag blacklists.
 	allowMonsterMeleeModifiers = true
 
-#Features to use in debugging gameplay and mechanics,generally should not be enabled in packs
+#Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
 [debug]
-	#If true,forces integration materials to be enabled,even if the relevant metal is missing. Useful for testing material balance.
-	#Does not provide recipes for any of them,they will only be available to cheat in creative.
+	#If true, forces integration materials to be enabled, even if the relevant metal is missing. Useful for testing material balance.
+	#Does not provide recipes for any of them, they will only be available to cheat in creative.
 	forceIntegrationMaterials = false
 	#Set to true if you wish to test whether a side inventory works without constantly reloading datapacks.
-	#Once you find an inventory works,add it to the block entity tag `tconstruct:side_inventories` and disable this option; leaving it enabled will lead to crashes and dupe bugs.
+	#Once you find an inventory works, add it to the block entity tag `tconstruct:side_inventories` and disable this option; leaving it enabled will lead to crashes and dupe bugs.
 	disableSideInventoryWhitelist = false
-	#If true,modifier crystals and creative slots can be applied to tools in the inventory on right click for operators in survival. If false,this only works for players in creative mode.
-	#This option makes testing of tools and modifiers easier,but may cause misleading assumptions about how these items will function for non-operators.
+	#If true, modifier crystals and creative slots can be applied to tools in the inventory on right click for operators in survival. If false, this only works for players in creative mode.
+	#This option makes testing of tools and modifiers easier, but may cause misleading assumptions about how these items will function for non-operators.
 	quickApplyToolModifiersSurvival = true
-	#If STACKTRACE,logs the stacktrace whenever a tool stack is created from a non-modifiable item. If WARNING (default),logs a shorter but more efficient error. If IGNORE,disables logging (useful for modpacks/players *after* they reported the issue). The stacktrace helps debug which mod is causing it,but is rather expensive on the chance they are doing it a lot.
-	#Allowed Values: STACKTRACE,WARNING,IGNORED
+	#If STACKTRACE, logs the stacktrace whenever a tool stack is created from a non-modifiable item. If WARNING (default), logs a shorter but more efficient error. If IGNORE, disables logging (useful for modpacks/players *after* they reported the issue). The stacktrace helps debug which mod is causing it, but is rather expensive on the chance they are doing it a lot.
+	#Allowed Values: STACKTRACE, WARNING, IGNORED
 	logInvalidToolStack = "IGNORED"
 

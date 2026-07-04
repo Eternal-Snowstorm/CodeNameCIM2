@@ -1,7 +1,7 @@
 
 #Tooltip Settings
 # Tooltip Options
-# Configure the options below to one of the following: disabled,enabled,onShift,onDebug or onShiftAndDebug
+# Configure the options below to one of the following: disabled, enabled, onShift, onDebug or onShiftAndDebug
 [tooltip_options]
 	# Configure tooltip for burn time.
 	burnTimeTooltipMode = "enabled"
@@ -17,7 +17,7 @@
 	nbtTooltipMode = "onShiftAndDebug"
 	# Configure tooltip for registry name. E.g. minecraft:stone
 	registryNameTooltipMode = "onShiftAndDebug"
-	# Configure tooltip for tags. E.g. forge:ingot,minecraft:planks
+	# Configure tooltip for tags. E.g. forge:ingot, minecraft:planks
 	tagsTooltipMode = "onShiftAndDebug"
 	# Configure tooltip for translation key. E.g. block.minecraft.stone
 	translationKeyTooltipMode = "onShiftAndDebug"

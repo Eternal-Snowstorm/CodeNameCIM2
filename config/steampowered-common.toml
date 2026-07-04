@@ -79,7 +79,7 @@
 		brassFlywheelSpeed = 16
 
 [dynamo]
-	#If dynamo is disabled in the server config,the following will be ignored!
+	#If dynamo is disabled in the server config, the following will be ignored!
 	#Range: 0 ~ 8192
 	dynamoFeMaxOut = 256
 	#Range: 0 ~ 8192
@@ -90,7 +90,7 @@
 	dynamoEfficiency = 0.75
 
 [cogwheel]
-	#For those who want to make the game more challenging,you can add stress impact to cogwheels!
+	#For those who want to make the game more challenging, you can add stress impact to cogwheels!
 	#Range: 0.0 ~ 1.0
 	bronzeCogwheelImpact = 0.0
 	#Range: 0.0 ~ 1.0

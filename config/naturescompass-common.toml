@@ -1,8 +1,8 @@
 
 [General]
-	#Allows a player to teleport to a located biome when in creative mode,opped,or in cheat mode.
+	#Allows a player to teleport to a located biome when in creative mode, opped, or in cheat mode.
 	allowTeleport = true
-	#Allows players to view the precise coordinates and distance of a located structure on the HUD,rather than relying on the direction the compass is pointing.
+	#Allows players to view the precise coordinates and distance of a located structure on the HUD, rather than relying on the direction the compass is pointing.
 	displayCoordinates = true
 	#biomeSize * radiusModifier = maxSearchRadius. Raising this value will increase search accuracy but will potentially make the process more resource .
 	#Range: 0 ~ 1000000
@@ -10,8 +10,8 @@
 	#biomeSize * sampleSpaceModifier = sampleSpace. Lowering this value will increase search accuracy but will make the process more resource intensive.
 	#Range: 0 ~ 1000000
 	sampleSpaceModifier = 16
-	#A list of biomes that the compass will not be able to search for,specified by resource location. The wildcard character * can be used to match any number of characters,and ? can be used to match one character. Ex: ["minecraft:savanna","minecraft:desert","minecraft:*ocean*"]
-	biomeBlacklist = ["terrablender:*","alexscaves:*"]
+	#A list of biomes that the compass will not be able to search for, specified by resource location. The wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex: ["minecraft:savanna", "minecraft:desert", "minecraft:*ocean*"]
+	biomeBlacklist = ["terrablender:*", "alexscaves:*"]
 	#The maximum number of samples to be taken when searching for a biome.
 	#Range: 0 ~ 1000000
 	maxSamples = 50000
@@ -21,7 +21,7 @@
 	#The default number of XP levels consumed when searching for a biome. Individual biomes can be configured via perBiomeXpLevels.
 	#Range: 0 ~ 3
 	defaultXpLevels = 0
-	#A list of per-biome XP level costs that override defaultXpLevels,specified as comma-separated "biome_id,num_levels" pairs. Biomes not listed here use defaultXpLevels. Max of 3 levels. The wildcard character * can be used to match any number of characters,and ? can be used to match one character. Ex: ["minecraft:deep_dark,3","minecraft:end*,2","minecraft:*caves,3"]
+	#A list of per-biome XP level costs that override defaultXpLevels, specified as comma-separated "biome_id,num_levels" pairs. Biomes not listed here use defaultXpLevels. Max of 3 levels. The wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex: ["minecraft:deep_dark,3", "minecraft:end*,2", "minecraft:*caves,3"]
 	perBiomeXpLevels = []
 	#The number of successful biome searches before the compass breaks and must be repaired. Set to 0 to disable durability.
 	#Range: 0 ~ 10000

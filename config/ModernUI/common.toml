@@ -11,5 +11,5 @@
 	#Enable auto-shutdown for server.
 	enable = false
 	#The time points of when server will auto-shutdown. Format: HH:mm.
-	times = ["04:00","16:00"]
+	times = ["04:00", "16:00"]
 
