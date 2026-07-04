@@ -570,7 +570,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -628,13 +628,14 @@
 		{
 			dependencies: ["4A19D6FEC975D2B9"]
 			id: "04004B46385E2AF2"
+			size: 1.0d
 			tasks: [{
 				id: "01452F41DB130491"
 				item: "create:blaze_burner"
 				type: "item"
 			}]
 			x: 7.0d
-			y: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["12CEF39F02D4EB3A"]
@@ -739,6 +740,59 @@
 			title: "整点太阳能的"
 			x: -4.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["470156018DA261F4"]
+			description: [
+				"高级焦炉的工作时间比普通焦炉快一倍, 并且自带4并行, 在相同的工作时间下, 一个高级焦炉可以顶8台普通焦炉"
+				""
+				"因此无需堆叠大量普通焦炉, 即可获得相当于8台普通焦炉的持续产能, 使工业产线更加紧凑与高效"
+				"{image:cmi:textures/images/cmi/reinforced_coke_oven.png width:113 height:117 align:center}"
+			]
+			icon: "cmi:reinforced_coke_oven"
+			id: "7FDB7DDAD23BB4C1"
+			rewards: [{
+				count: 2
+				id: "523C9079FF18C47B"
+				item: "cmi:reinforced_coke_oven_hatch"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "高级的炉子"
+			tasks: [
+				{
+					id: "7A5EDFB0C09B56D0"
+					item: "cmi:reinforced_coke_oven"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "61965F521A26CFDB"
+					item: { Count: 21, id: "tconstruct:scorched_bricks_slab" }
+					type: "item"
+				}
+				{
+					count: 37L
+					id: "32B585DBF2A2E6CF"
+					item: { Count: 37, id: "tconstruct:scorched_bricks" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "29AE0BA3AF66FA68"
+					item: { Count: 22, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "2E51BA5C723A8179"
+					item: { Count: 9, id: "ad_astra:vent" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 0.5d
 		}
 	]
 	title: "汽鸣铁道"
