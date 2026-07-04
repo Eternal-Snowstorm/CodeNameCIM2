@@ -1,0 +1,36 @@
+filename = 'CreateSophisticatedBackpacks.zip'
+name = 'Create Style Sophisticated Backpacks'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = []
+x-prismlauncher-mc-versions = [
+    '1.16.3',
+    '1.16.4',
+    '1.16.5',
+    '1.17.1',
+    '1.18',
+    '1.18.1',
+    '1.18.2',
+    '1.19',
+    '1.19.1',
+    '1.19.2',
+    '1.20.1',
+    '1.20.4',
+    '1.21',
+    '1.21.1',
+    '1.21.2',
+    '1.21.3',
+    '1.21.4'
+]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'CreateSophisticatedBackpacks'
+
+[download]
+hash = '0a119ab68a6b2cb824d545c0dc2dc44b1339cc94'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6157360
+project-id = 899330
