@@ -1,12 +1,12 @@
 
 #MekaWeapons Settings. Joules to FE conversion: 2.5J = 1FE
 [weapons]
-	#Transfer energy rate of the Wireless Charger (Magnetizer), in Joules per tick.
+	#Transfer energy rate of the Wireless Charger (Magnetizer),in Joules per tick.
 	wirelessChargerEnergyRate = "1250000"
 
 	#Meka-tana Settings
 	[weapons.mekatana]
-		#Base damage of the Meka-Tana, multiply it with Attack Amplification Units.
+		#Base damage of the Meka-Tana,multiply it with Attack Amplification Units.
 		baseDamage = 50
 		#Attack speed of the Meka-Tana.
 		#Range: -4.0 ~ 100.0
@@ -31,7 +31,7 @@
 
 	#Meka-Bow Settings
 	[weapons.mekabow]
-		#Attention: The final damage of Meka-Bow is based on how fast the arrow is going when hits, multiply it with Attack Amplification Units.
+		#Attention: The final damage of Meka-Bow is based on how fast the arrow is going when hits,multiply it with Attack Amplification Units.
 		baseDamage = 50
 		#Cost in Joules of using the Meka-Bow.
 		energyUsage = "625000"

@@ -27,8 +27,8 @@ BlockEvents.rightClicked((event) => {
 		"minecraft:stick",
 		stru1,
 		"alexscaves:submarine",
-		(context) => {
-			let { player, block, level } = context.event
+		(build) => {
+			let { player, block, level } = build
 			const CHANCE = 0.01
 
 			if (Math.random() < CHANCE) {
@@ -73,25 +73,14 @@ BlockEvents.rightClicked((event) => {
  * @param {Internal.ItemStack} item
  * @param {vazkii.patchouli.api.IMultiblock} structure 
  * @param {Internal.EntityType_<any>} entityId 
- * @param {(context: {
- *   event: Internal.BlockRightClickedEventJS,
- *   entity: Internal.ItemStack,
- *   multiblock: vazkii.patchouli.api.IMultiblock,
- *   direction: Internal.Direction_
- * }) => void} onBuild
+ * @param {Internal.Consumer_<BlockCraftingOnBuild_>} onBuild
  * @returns 
  */
-function spawnEntityByMultiblock(
-	event,
-	item,
-	structure,
-	entityId,
-	onBuild
-) {
+function spawnEntityByMultiblock(event, item, structure, entityId, onBuild) {
 	let { player, block, level } = event
 	const IS_DEBUG = false
 
-	if (event.hand !== InteractionHand.MAIN_HAND) {
+	if (event.getHand() !== InteractionHand.MAIN_HAND) {
 		return
 	}
 

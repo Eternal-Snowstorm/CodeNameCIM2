@@ -253,13 +253,13 @@ let metals = {
 	}
 }
 
-Object.entries(metals).forEach(([id, m]) => {
+Object.entries(metals).forEach(([id, metal]) => {
 	let entry = CmiMetalRegistry.getMetal(id)
 
-	if (m.t) {
-		entry.meltingPoint(m.t)
+	if (metal.t) {
+		entry.setMeltingPoint(metal.t)
 	}
-	if (m.n) {
-		entry.namespace(m.n)
+	if (metal.n) {
+		entry.setNamespace(metal.n)
 	}
 })
