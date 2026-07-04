@@ -19,11 +19,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * 
 	 * @param {String} key 
 	 * @param {String} type 
-	 * @param {String} typeKey 
 	 * @param {String} value 
 	 * @param {String} typeValue 
 	 */
-	function addIOerLang(key, typeKey, value, typeValue) {
+	function addIOerLang(key, type, value, typeValue) {
 		event.add(`block.${Cmi.MODID}.${key}_${type}_input`, `${value + typeValue}输入仓`)
 		event.add(`block.${Cmi.MODID}.${key}_${type}_output`, `${value + typeValue}输出仓`)
 	}
