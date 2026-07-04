@@ -201,4 +201,9 @@ ServerEvents.recipes((event) => {
 		.cooling_time(20)
 		.cast_consumed(true)
 		.id("create:crafting/kinetics/schedule")
+
+	// 铸模
+	tconstruct.casting_table("createdieselgenerators:mold")
+		.fluid(Fluid.of("cmi:molten_industrial_iron", 90 * 2))
+		.cooling_time(20 * 3)
 })

@@ -72,7 +72,7 @@
 				title: "原木"
 				type: "item"
 			}]
-			title: "从木头开始......"
+			title: "从木头开始..."
 			x: -5.0d
 			y: 14.5d
 		}
@@ -100,7 +100,7 @@
 			dependencies: ["4EAFBA3A19526127"]
 			icon: "tconstruct:pattern"
 			id: "73153E1AFAD14636"
-			subtitle: "从基础做起......"
+			subtitle: "从基础做起..."
 			tasks: [{
 				count: 8L
 				id: "2F6472FA8B494441"
@@ -151,7 +151,7 @@
 				"73153E1AFAD14636"
 				"5E676A3C46C6141B"
 			]
-			description: ["它兼备&6镐&f、&6斧&f和&6锹&f的功能，几乎能满足所有的挖掘需求。唯一的缺点就是没有攻击力"]
+			description: ["它兼备&6镐&f、&6斧&f和&6锹&f的功能, 几乎能满足所有的挖掘需求。唯一的缺点就是没有攻击力"]
 			icon: {
 				Count: 1
 				id: "cmi:paxel"
@@ -309,7 +309,7 @@
 		}
 		{
 			dependencies: ["17AEC8F5B7867AFE"]
-			description: ["有了焦黑砖，我就能制作熔炼更高熔点金属的设备"]
+			description: ["有了焦黑砖, 我就能制作熔炼更高熔点金属的设备"]
 			id: "21B1DA369A461281"
 			rewards: [{
 				count: 16
@@ -346,7 +346,7 @@
 		}
 		{
 			dependencies: ["2613E62AF5BCD9AC"]
-			description: ["做把锹能让我更快地收集材料......或者还有&6更快的选择&f？"]
+			description: ["做把锹能让我更快地收集材料...或者还有&6更快的选择&f？"]
 			icon: {
 				Count: 1
 				id: "minecraft:stone_shovel"
@@ -407,9 +407,9 @@
 				"76DD35F7BAB2AF34"
 			]
 			description: [
-				"它可以读取&6相连的容器&f，也可以在UI内快捷切换到&6相连的其他匠魂工作方块&f（如&6部件制造台&f等）"
+				"它可以读取&6相连的容器&f, 也可以在UI内快捷切换到&6相连的其他匠魂工作方块&f(如&6部件制造台&f等)"
 				""
-				"并且它十分重要，它是你目前阶段&c唯一&r可以从保险库中取出东西的方式"
+				"并且它十分重要, 它是你目前阶段&c唯一&r可以从保险库中取出东西的方式"
 			]
 			id: "2613E62AF5BCD9AC"
 			subtitle: "工作台plus"
@@ -423,7 +423,7 @@
 		}
 		{
 			dependencies: ["73153E1AFAD14636"]
-			description: ["有了它们，我就能制作一些&6基础的工具"]
+			description: ["有了它们, 我就能制作一些&6基础的工具"]
 			id: "5E676A3C46C6141B"
 			rewards: [{
 				id: "362EBF140EB74670"
@@ -453,7 +453,7 @@
 				"29C10567663F027F"
 			]
 			description: [
-				"我应该可以在部件制造台直接用&6铜&f做出对应部件......其他材料就不一定行得通了"
+				"我应该可以在部件制造台直接用&6铜&f做出对应部件...其他材料就不一定行得通了"
 				"{image:cmi:textures/images/tconstruct/copper_pickaxe.png width:647 height:296 align:center fit:true}"
 			]
 			id: "5FB6FC064E4EECAB"
@@ -540,7 +540,7 @@
 				"3D854C186FF6E897"
 			]
 			description: [
-				"有了这些，我就能搭出一套简易的熔炼设备，&6思索&f应该能提供帮助......"
+				"有了这些, 我就能搭出一套简易的熔炼设备, &6思索&f应该能提供帮助..."
 				"一个完整的固体燃料熔化炉结构:"
 				"{image:cmi:textures/images/tconstruct/seared_melter_1.png width:133 height:115 align:center}"
 			]

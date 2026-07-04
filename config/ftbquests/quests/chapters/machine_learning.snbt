@@ -11,11 +11,11 @@
 	quests: [
 		{
 			dependencies: ["26DFF62383774404"]
-			description: ["随处可见的岩石......它能开启&6工业时代"]
+			description: ["随处可见的岩石...它能开启&6工业时代"]
 			icon: "minecraft:andesite"
 			id: "46858C4B5052EC0C"
 			size: 1.5d
-			subtitle: "锤子可以用铁或燧石制作"
+			subtitle: "锤子可以用铁, 燧石乃至钻石制作"
 			tasks: [
 				{
 					id: "45FADEFE78FB64F7"
@@ -51,7 +51,10 @@
 				"3942E154F0734013"
 				"331EF47BF4AFEA01"
 			]
-			description: ["工业的起点，有了它，我就可以制作各种&6动力设备"]
+			description: [
+				"工业的起点, 有了它, 我就可以制作各种&6动力设备"
+				"将熔融锌浇筑在安山岩粉上就可以制作出第一份安山合金"
+			]
 			id: "65F2C054D52EB96B"
 			rewards: [{
 				id: "47882DC9659E05FD"
@@ -150,7 +153,7 @@
 		}
 		{
 			dependencies: ["0771A7C0D2B6D023"]
-			description: ["一种低熔点金属，我可以用它做出第一份&6安山合金"]
+			description: ["一种低熔点金属, 我可以用它做出第一份&6安山合金"]
 			id: "3942E154F0734013"
 			tasks: [{
 				id: "69F09FA657F1E187"
@@ -315,7 +318,7 @@
 		{
 			dependencies: ["6865ED5A1D93E5EA"]
 			description: [
-				"我可以在&6部件制造台&f上用沙子制作&6齿轮铸模&f，浇铸后就能得到铁齿轮"
+				"我可以在&6部件制造台&f上用沙子制作&6齿轮铸模&f, 浇铸后就能得到铁齿轮"
 				"或者也可以制作一个&b木质齿轮&r来作为制造铸模的材料"
 			]
 			id: "580C6E604C71F620"
@@ -391,7 +394,7 @@
 		}
 		{
 			dependencies: ["0D502CA40E47F832"]
-			description: ["想要杂酚油，我必须先做一台焦炉 "]
+			description: ["想要杂酚油, 我必须先做一台焦炉 "]
 			hide_dependency_lines: true
 			id: "2CCDB1390C34C80A"
 			tasks: [{
@@ -448,7 +451,6 @@
 		}
 		{
 			dependencies: ["0D502CA40E47F832"]
-			hide_dependency_lines: true
 			id: "7A9561BE016F15B5"
 			tasks: [{
 				id: "4D2FC0401BDE6F5A"
@@ -512,7 +514,7 @@
 		{
 			dependencies: ["00A42257F183E046"]
 			id: "71AB4DF031ED3CB4"
-			subtitle: "软木，可用作密封"
+			subtitle: "软木, 可用作密封"
 			tasks: [{
 				id: "75CC40BC1D648EEC"
 				item: "thermal:rubberwood_planks"
@@ -538,7 +540,7 @@
 				"7DD1547C967EDD20"
 			]
 			id: "664B44589F807708"
-			subtitle: "好酸！"
+			subtitle: "好酸!"
 			tasks: [{
 				id: "093C6622F63F1D1F"
 				item: "cmi:vinegar_bucket"
@@ -567,8 +569,7 @@
 		}
 		{
 			dependencies: ["2DDCBAC1D7AF08AE"]
-			description: ["可以通过挖掘硫矿打粉后获得，也可以通过磨煤炭获得"]
-			hide_dependency_lines: true
+			description: ["可以通过挖掘硫矿打粉后获得, 也可以通过磨煤炭获得"]
 			id: "14FCB2B036726682"
 			subtitle: "硫磺粉末"
 			tasks: [{
@@ -581,10 +582,10 @@
 		}
 		{
 			dependencies: ["2DDCBAC1D7AF08AE"]
-			description: ["我应该能在&6河边&f找到一些野生稻米，之后就可以自己种植了"]
+			description: ["我应该能在&6河边&f找到一些野生稻米, 之后就可以自己种植了"]
 			hide_dependency_lines: true
 			id: "7DD1547C967EDD20"
-			subtitle: "要酿醋，就要先获得稻米"
+			subtitle: "要酿醋, 就要先获得稻米"
 			tasks: [{
 				id: "01EE3E33CD71F8C7"
 				item: {
@@ -654,8 +655,8 @@
 				item: "create:hose_pulley"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 22.5d
+			x: -8.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["26DFF62383774404"]
@@ -713,8 +714,8 @@
 				item: "create:item_drain"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 21.0d
+			x: -6.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["24384207DB9668D9"]
@@ -724,8 +725,8 @@
 				item: "create:spout"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 19.5d
+			x: -4.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["24FD90B8F1474193"]
@@ -734,7 +735,7 @@
 				" - 在焦炉上放置一个{[tconstruct:seared_faucet, tconstruct:scorched_faucet], 1}浇筑口"
 				" - 浇筑口下放置一个{[tconstruct:seared_basin, tconstruct:scorched_basin], 1}铸造盆"
 				""
-				"在制作时将{#minecraft:planks, 1}放入{[tconstruct:seared_basin, tconstruct:scorched_basin], 1}铸造盆内浇筑即可"
+				"在制作时将{#minecraft:planks, 1}木板放入{[tconstruct:seared_basin, tconstruct:scorched_basin], 1}铸造盆内浇筑即可"
 				""
 				"{image:cmi:textures/images/ie/coke_oven_use.png width:104 height:122 align:center}"
 			]
@@ -767,8 +768,8 @@
 				"63BF49635AEF3AF8"
 			]
 			description: [
-				"开采得到的&a粗矿&r需要先经过粉碎工序，破碎后形成粒度更细的&b粉碎矿&r"
-				"随后对&b粉碎矿&r进行水洗处理，通过清洗与分离最终获得&c矿粉&r"
+				"开采得到的&a粗矿&r需要先经过粉碎轮处理, 破碎后形成粒度更细的&b粉碎矿&r"
+				"随后对&b粉碎矿&r进行水洗处理, 通过清洗与分离最终获得&c矿粉&r"
 			]
 			id: "0A7ACD83404B2AFA"
 			subtitle: "搭配磁铁非常好玩"
@@ -790,7 +791,7 @@
 		}
 		{
 			dependencies: ["4B3C8BED0FFCD6AB"]
-			description: ["制作各种类型的冲压模具时，都需要使用到这种材料"]
+			description: ["制作各种类型的冲压模具时, 都需要使用到这种材料"]
 			id: "6FB78C12B3941053"
 			rewards: [{
 				count: 4
@@ -928,18 +929,28 @@
 				item: "cmi:advanced_spout"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 19.5d
+			x: -2.5d
+			y: 21.0d
 		}
 		{
 			dependencies: [
 				"3B5ADA1051DE6F9A"
 				"28DFB902C00FCB4D"
 			]
+			description: [
+				"空白铸模可以使用4个工业铁板在工作台上合成, 也可以浇筑180mB熔融工业铁制作"
+				"这里比较推荐使用后者配方, 虽然麻烦点, 但是便宜"
+			]
 			id: "60111BA1F94FFBB5"
+			subtitle: "铸模浇筑"
 			tasks: [
 				{
 					id: "670E934236784AC6"
+					item: "createdieselgenerators:mold"
+					type: "item"
+				}
+				{
+					id: "09066BEC5008AF6A"
 					item: {
 						Count: 1
 						id: "createdieselgenerators:mold"
@@ -947,10 +958,11 @@
 							Mold: "cmi:plate"
 						}
 					}
+					title: "石板"
 					type: "item"
 				}
 				{
-					id: "09066BEC5008AF6A"
+					id: "0B4FFD27DF691180"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -964,7 +976,7 @@
 			]
 			title: "更高效的石板获取!"
 			x: -4.5d
-			y: 18.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6FB78C12B3941053"]
@@ -987,18 +999,18 @@
 		{
 			dependencies: ["28DFB902C00FCB4D"]
 			description: [
-				"动态储罐是一种多方块流体储存结构，其容量会根据结构规模自动变化。"
+				"动态储罐是一种多方块流体储存结构, 其容量会根据结构规模自动变化."
 				""
 				"动态储罐的容量非常恐怖, 哪怕是最小的结构都可以存储 432,000,000 mB 流体"
 				""
-				"搭建要求"
-				""
+				"搭建要求:"
 				" - 结构最小尺寸为 3×3×3"
 				" - 储罐内部必须保持 中空"
 				" - 至少在任意一个外侧面安装1个{mekanism:dynamic_valve, 1}动态储罐阀门"
 				" - 储罐的框架需使用有效的动态储罐方块构成。"
 				""
 				""
+				"{@pagebreak}"
 				"一个完整的动态储罐"
 				"{image:cmi:textures/images/mek/tank_complete.png width:101 height:114 align:center}"
 				""
@@ -1048,6 +1060,22 @@
 			}]
 			x: -13.5d
 			y: 12.0d
+		}
+		{
+			dependencies: ["28DFB902C00FCB4D"]
+			description: ["{image:cmi:textures/images/create/bulk_fermenter.png width:113 height:128 align:center}"]
+			icon: "createdieselgenerators:bulk_fermenter"
+			id: "7E097A0AFDB21208"
+			subtitle: "看起来更大?"
+			tasks: [{
+				count: 27L
+				id: "615CC8DF0212A40F"
+				item: "createdieselgenerators:bulk_fermenter"
+				type: "item"
+			}]
+			title: "大型发酵储罐"
+			x: -4.5d
+			y: 18.0d
 		}
 	]
 	title: "巧械奇工"

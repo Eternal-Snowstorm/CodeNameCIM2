@@ -82,12 +82,14 @@ CMI Dev.json
 
 # ResourcePacks
 /resourcepacks/*
+!/resourcepacks/.index
 !/resourcepacks/彩色边框.zip
 !/resourcepacks/CMI Squarefully.zip
 !/resourcepacks/Pretty X Smart Pipez.zip
 !/resourcepacks/CreateSophisticatedBackpacks.zip
 !/resourcepacks/Updated_Engineering_v1.7.zip
 !/resourcepacks/Cu Again.zip
+!/resourcepacks/OreUI For Everyone 1.0.zip
 
 # ShaderPacks
 /shaderpacks/*

@@ -54,7 +54,8 @@ ServerEvents.recipes((event) => {
 		"jei:/createdieselgenerators/distillation/superheated_crude_oil",
 		"jei:/fluidlogistics/waterproof_cardboard_block_from_honeycomb",
 		"fluidlogistics:water_containing_copper_casing",
-		"fluidlogistics:multi_fluid_access_port_h"
+		"fluidlogistics:multi_fluid_access_port_h",
+		"createdieselgenerators:crafting/bulk_fermenter"
 	])
 
 	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {

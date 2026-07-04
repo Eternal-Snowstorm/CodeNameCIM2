@@ -33,6 +33,15 @@ ServerEvents.recipes((event) => {
 		B: "#forge:ingots/andesite_alloy"
 	}).id("create:crafting/kinetics/propeller")
 
+	kubejs.shaped("3x create:propeller", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "#forge:plates/industrial_iron",
+		B: "#forge:ingots/andesite_alloy"
+	})
+
 	// 水车部件
 	kubejs.shaped("immersiveengineering:waterwheel_segment", [
 		" AA",
@@ -220,6 +229,7 @@ ServerEvents.recipes((event) => {
 		]
 	})
 
+	// 吸管
 	kubejs.shaped("3x createaddition:straw", [
 		"ABA",
 		"   ",
@@ -252,5 +262,32 @@ ServerEvents.recipes((event) => {
 			"minecraft:bamboo",
 			"#forge:bones"
 		]
+	})
+
+	// 大型发酵储罐
+	kubejs.shaped("2x createdieselgenerators:bulk_fermenter", [
+		"AAA",
+		"A A",
+		"AAA"
+	], {
+		A: "#forge:plates/industrial_iron"
+	})
+
+	// 大型发酵储罐
+	kubejs.shaped("createdieselgenerators:bulk_fermenter", [
+		" A ",
+		"A A",
+		" A "
+	], {
+		A: "#forge:plates/industrial_iron"
+	})
+
+	// 大型发酵储罐
+	kubejs.shaped("createdieselgenerators:bulk_fermenter", [
+		"A A",
+		"   ",
+		"A A"
+	], {
+		A: "#forge:plates/industrial_iron"
 	})
 })

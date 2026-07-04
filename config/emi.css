@@ -64,7 +64,7 @@
 	append-mod-id: true;
 
 	/**
-	 * Whether to add mod name to item tooltips, in case another mod provides behavior
+	 * Whether to add mod name to item tooltips,in case another mod provides behavior
 	 */
 	append-item-mod-id: true;
 
@@ -79,13 +79,13 @@
 	fluid-unit: millibuckets;
 
 	/**
-	 * Whether to use the batched render system. Batching is faster, but may have
+	 * Whether to use the batched render system. Batching is faster,but may have
 	 * incompatibilities with shaders or other mods.
 	 */
 	use-batched-renderer: true;
 
 	/**
-	 * Whether to have the search bar in the center of the screen, instead of to the
+	 * Whether to have the search bar in the center of the screen,instead of to the
 	 * side.
 	 */
 	center-search-bar: true;
@@ -118,7 +118,7 @@
 
 	/**
 	 * The minimum width of the recipe screen in pixels. Controls how many tabs there
-	 * can be, and where the page switching buttons go. The default is 176, the width
+	 * can be,and where the page switching buttons go. The default is 176,the width
 	 * of most screens.
 	 */
 	minimum-recipe-screen-width: 176;
@@ -177,17 +177,17 @@
 	/**
 	 * How many columns and rows of ingredients to limit the left sidebar to
 	 */
-	left-sidebar-size: 12, 100;
+	left-sidebar-size: 12,100;
 
 	/**
-	 * How much space to maintain between the left sidebar and obstructions, in pixels
+	 * How much space to maintain between the left sidebar and obstructions,in pixels
 	 */
-	left-sidebar-margins: 2, 2, 2, 2;
+	left-sidebar-margins: 2,2,2,2;
 
 	/**
 	 * Where to position the left sidebar
 	 */
-	left-sidebar-align: left, top;
+	left-sidebar-align: left,top;
 
 	/**
 	 * Whether to render the header buttons and page count for the left sidebar
@@ -202,7 +202,7 @@
 	/**
 	 * The pages in the right sidebar
 	 */
-	right-sidebar-pages: index, craftables;
+	right-sidebar-pages: index,craftables;
 
 	/**
 	 * The subpanels in the right sidebar
@@ -212,17 +212,17 @@
 	/**
 	 * How many columns and rows of ingredients to limit the right sidebar to
 	 */
-	right-sidebar-size: 12, 100;
+	right-sidebar-size: 12,100;
 
 	/**
-	 * How much space to maintain between the right sidebar and obstructions, in pixels
+	 * How much space to maintain between the right sidebar and obstructions,in pixels
 	 */
-	right-sidebar-margins: 2, 2, 2, 2;
+	right-sidebar-margins: 2,2,2,2;
 
 	/**
 	 * Where to position the right sidebar
 	 */
-	right-sidebar-align: right, top;
+	right-sidebar-align: right,top;
 
 	/**
 	 * Whether to render the header buttons and page count for the right sidebar
@@ -247,17 +247,17 @@
 	/**
 	 * How many columns and rows of ingredients to limit the top sidebar to
 	 */
-	top-sidebar-size: 10, 10;
+	top-sidebar-size: 10,10;
 
 	/**
-	 * How much space to maintain between the top sidebar and obstructions, in pixels
+	 * How much space to maintain between the top sidebar and obstructions,in pixels
 	 */
-	top-sidebar-margins: 2, 2, 2, 2;
+	top-sidebar-margins: 2,2,2,2;
 
 	/**
 	 * Where to position the top sidebar
 	 */
-	top-sidebar-align: center, center;
+	top-sidebar-align: center,center;
 
 	/**
 	 * Whether to render the header buttons and page count for the top sidebar
@@ -282,18 +282,18 @@
 	/**
 	 * How many columns and rows of ingredients to limit the bottom sidebar to
 	 */
-	bottom-sidebar-size: 10, 10;
+	bottom-sidebar-size: 10,10;
 
 	/**
-	 * How much space to maintain between the bottom sidebar and obstructions, in
+	 * How much space to maintain between the bottom sidebar and obstructions,in
 	 * pixels
 	 */
-	bottom-sidebar-margins: 2, 2, 2, 2;
+	bottom-sidebar-margins: 2,2,2,2;
 
 	/**
 	 * Where to position the bottom sidebar
 	 */
-	bottom-sidebar-align: center, center;
+	bottom-sidebar-align: center,center;
 
 	/**
 	 * Whether to render the header buttons and page count for the bottom sidebar
@@ -433,12 +433,12 @@
 	copy-recipe-id: "key.keyboard.p";
 
 	/**
-	 * In edit mode, hide the hovered stack
+	 * In edit mode,hide the hovered stack
 	 */
 	hide-stack: "ctrl key.mouse.left";
 
 	/**
-	 * In edit mode, hide stacks with the hovered stack's id
+	 * In edit mode,hide stacks with the hovered stack's id
 	 */
 	hide-stack-by-id: "ctrl shift key.mouse.left";
 }
@@ -472,7 +472,7 @@
 
 	/**
 	 * Whether to display additional widgets added to recipes from other mods.
-	 * These are typically developer facing and compatibility related, and not useful
+	 * These are typically developer facing and compatibility related,and not useful
 	 * for players.
 	 */
 	show-recipe-decorators: false;
