@@ -1008,18 +1008,11 @@
 				" - 储罐内部必须保持 中空"
 				" - 至少在任意一个外侧面安装1个{mekanism:dynamic_valve, 1}动态储罐阀门"
 				" - 储罐的框架需使用有效的动态储罐方块构成。"
-				""
-				""
 				"{@pagebreak}"
-				"一个完整的动态储罐"
-				"{image:cmi:textures/images/mek/tank_complete.png width:101 height:114 align:center}"
-				""
-				"一个内部展示内部的动态储罐"
-				"{image:cmi:textures/images/mek/tank_internal.png width:101 height:114 align:center}"
 			]
 			icon: "mekanism:dynamic_valve"
 			id: "71449F7653BC203B"
-			shape: "pentagon"
+			shape: "hexagon"
 			size: 1.5d
 			subtitle: "大胃袋😋"
 			tasks: [
@@ -1066,6 +1059,14 @@
 			description: ["{image:cmi:textures/images/create/bulk_fermenter.png width:113 height:128 align:center}"]
 			icon: "createdieselgenerators:bulk_fermenter"
 			id: "7E097A0AFDB21208"
+			rewards: [{
+				count: 9
+				id: "576328DC09DECD40"
+				item: "createdieselgenerators:bulk_fermenter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "看起来更大?"
 			tasks: [{
 				count: 27L

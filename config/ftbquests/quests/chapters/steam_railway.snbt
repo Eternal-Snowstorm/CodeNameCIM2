@@ -578,7 +578,7 @@
 				"470156018DA261F4"
 			]
 			description: [
-				"一个完整的熔铸炉结构:"
+				"一个完整的单层熔铸炉结构:"
 				"{image:cmi:textures/images/tconstruct/foundry.png width:147 height:120 align:center}"
 			]
 			icon: "tconstruct:foundry_controller"
