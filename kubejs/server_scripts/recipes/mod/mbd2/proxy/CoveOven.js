@@ -34,6 +34,4 @@ MBDRecipeTypeEvents.onTransferProxyRecipe("cmi:reinforced_coke_oven", (event) =>
 		.id(proxyRecipeId + "_mbd2un")
 
 	recipeEvent.mbdRecipe = mbdRecipe.buildMBDRecipe()
-
-	recipeEvent.mbdRecipe = mbdRecipe.buildMBDRecipe()
 })
