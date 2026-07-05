@@ -21,17 +21,17 @@ MBDRecipeTypeEvents.onTransferProxyRecipe("cmi:reinforced_coke_oven", (event) =>
 	/**
 	 * @type {Internal.MBDRecipeSchema$MBDRecipeJS}
 	 */
-	let mbdRecipe = recipeType.recipeBuilder()
+	let builder = recipeType.recipeBuilder()
 
 	let creosote = "immersiveengineering:creosote"
 	let input = recipe.input.getBaseIngredient()
 	let output = recipe.output.get()
 
-	mbdRecipe.inputItems(input)
+	builder.inputItems(input)
 		.outputItems(output)
 		.outputFluids(Fluid.of(creosote, recipe.creosoteOutput))
 		.duration(recipe.time)
 		.id(proxyRecipeId + "_mbd2un")
 
-	recipeEvent.mbdRecipe = mbdRecipe.buildMBDRecipe()
+	recipeEvent.mbdRecipe = builder.buildMBDRecipe()
 })
