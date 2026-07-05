@@ -3,12 +3,8 @@ let $ServerLevel =
 
 MBDMachineEvents.onRecipeWorking("cmi:reinforced_coke_oven", (event) => {
 	let machine = event.getEvent().getMachine()
-	let recipe = event.getEvent().getRecipe()
 	let level = machine.getLevel()
 
-	if (recipe.getId() !== "cmi:reinforced_coke_oven") {
-		return
-	}
 	if (!(level instanceof $ServerLevel)) {
 		return
 	}
