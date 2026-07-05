@@ -2,18 +2,6 @@
 #All settings below will only take effect after restarting the server or client.
 [general]
 
-	#SneakyLink Settings
-	[general.sneak_link]
-		#Horizontal radius within which the player picks up item entities
-		"Collection radius" = 3.0
-		#Amount of blocks below the player where sneaking picks up item entities
-		"Collection depth" = 2.0
-		#Amount of blocks above the player where sneaking picks up item entities
-		#Range: 0.0 ~ 8.0
-		"Collection height" = 0.0
-		#Pick up item entities regardless of their cooldown after being dropped from a player's inventory
-		"Ignore pickup delay" = false
-
 	#Steam Hammer Settings
 	[general.steam_hammer]
 		#Steam consumption per run of steam hammer (mB)
