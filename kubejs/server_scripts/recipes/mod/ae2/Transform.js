@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Internal.ItemStack_} output 
-	 * @param {number} count 
+	 * @param {number} [count] 
 	 */
 	function TransformRecipe(output, count) {
 		this.recipe = {
