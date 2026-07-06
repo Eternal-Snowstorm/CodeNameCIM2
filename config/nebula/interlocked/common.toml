@@ -1,0 +1,9 @@
+
+#All settings below will only take effect after restarting the server or client.
+[general]
+	#The limit of interlock distance
+	#type: int
+	#default: 32
+	#Range: 0 ~ 128
+	interlock_distance_limit = 32
+

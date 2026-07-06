@@ -81,6 +81,7 @@ CMI Dev.json
 !/mods/MasterfulMachinery*.jar
 !/mods/Storage Tweaks*.jar
 !/mods/Composting*.jar
+!/mods/interlocked*.jar
 
 # ResourcePacks
 /resourcepacks/*
