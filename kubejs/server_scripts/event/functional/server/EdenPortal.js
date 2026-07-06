@@ -46,10 +46,6 @@ BlockEvents.rightClicked((event) => {
 			|| dimension.equals($Level.NETHER)
 	}
 
-	/**
-	 * 
-	 * @param {Internal.BlockRightClickedEventJS_} event 
-	 */
 	function isTrigger() {
 		return item.getId() === "cmi:astral_core"
 			&& block.getId() === "cmi:eden_crystal"
