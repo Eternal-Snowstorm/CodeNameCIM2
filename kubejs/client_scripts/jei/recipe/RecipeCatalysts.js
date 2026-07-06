@@ -44,7 +44,7 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 
 	addJeiRecipeCatalysts("immersiveindustry:crucible", "immersiveindustry:crucible")
 
-	addJeiRecipeCatalysts("immersiveengineering:coke_oven", "cmi:reinforced_coke_oven")
+	// addJeiRecipeCatalysts("immersiveengineering:coke_oven", "cmi:reinforced_coke_oven")
 
 	addJeiRecipeCatalysts("createdieselgenerators:hammering", [
 		"cmi:flint_hammer",
