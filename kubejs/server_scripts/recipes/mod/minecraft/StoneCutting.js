@@ -35,4 +35,40 @@ ServerEvents.recipes((event) => {
 	minecraft.stonecutting("#forge:plates/gold", "immersiveengineering:sheetmetal_gold")
 
 	minecraft.stonecutting("4x minecraft:pointed_dripstone", "minecraft:dripstone_block")
+
+	let treatedWood = [
+		"immersiveengineering:treated_scaffold",
+		"immersiveengineering:treated_wood_vertical",
+		"immersiveengineering:treated_wood_packaged",
+		"immersiveengineering:stairs_treated_wood_vertical",
+		"immersiveengineering:stairs_treated_wood_horizontal",
+		"immersiveengineering:stairs_treated_wood_packaged",
+		"2x immersiveengineering:slab_treated_wood_horizontal",
+		"2x immersiveengineering:slab_treated_wood_packaged",
+		"2x immersiveengineering:slab_treated_wood_vertical",
+		"6x immersiveengineering:treated_fence"
+	]
+	treatedWood.forEach((wood) => {
+		minecraft.stonecutting(wood, "#forge:treated_wood")
+	})
+
+	let blazeWood = [
+		"cmi:blazewood_scaffold",
+		"2x tconstruct:blazewood_slab",
+		"tconstruct:blazewood_stairs",
+		"6x tconstruct:blazewood_fence"
+	]
+	blazeWood.forEach((wood) => {
+		minecraft.stonecutting(wood, "tconstruct:blazewood")
+	})
+
+	let nahuatlWood = [
+		"cmi:nahuatl_scaffold",
+		"2x tconstruct:nahuatl_slab",
+		"tconstruct:nahuatl_stairs",
+		"6x tconstruct:nahuatl_fence"
+	]
+	nahuatlWood.forEach((wood) => {
+		minecraft.stonecutting(wood, "tconstruct:nahuatl")
+	})
 })
