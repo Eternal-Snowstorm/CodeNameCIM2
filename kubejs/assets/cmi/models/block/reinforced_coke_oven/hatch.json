@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "cmi:block/reinforced_coke_oven/hatch"
-  }
-}
