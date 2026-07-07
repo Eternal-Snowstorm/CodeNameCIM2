@@ -4,9 +4,9 @@ ServerEvents.recipes((event) => {
 	addCrushedSplashing("iron", "minecraft:redstone")
 	addCrushedSplashing("gold", "thermal:cinnabar_dust")
 	addCrushedSplashing("copper", "minecraft:clay_ball")
-	addCrushedSplashing("zinc", "minecraft:gunpowder")
+	addCrushedSplashing("zinc", "thermal:niter_dust")
 	addCrushedSplashing("osmium", "mekanism:dust_fluorite")
-	addCrushedSplashing("platinum", "minecraft:glowstone_dust")
+	addCrushedSplashing("platinum", "cmi:end_stone_dust")
 	addCrushedSplashing("silver", "cmi:sludge_extract")
 	addCrushedSplashing("tin", "thermal:apatite_dust")
 	addCrushedSplashing("lead", "minecraft:sugar")
@@ -14,16 +14,15 @@ ServerEvents.recipes((event) => {
 	addCrushedSplashing("nickel", "cmi:oil_shale_dust")
 	addCrushedSplashing("cobalt", "thermal_extra:soul_sand_dust")
 	addCrushedSplashing("vanadium", "thermal_extra:amethyst_dust")
-	addCrushedSplashing("chromium", "mekanism:dust_obsidian")
-	addCrushedSplashing("desh", "immersiveengineering:slag")
-	addCrushedSplashing("ostrum", "mekanism:salt")
-	addCrushedSplashing("calorite", "mekanism:dust_coal")
+	addCrushedSplashing("chromium", "thermal:ruby_dust")
 	addCrushedSplashing("etrium", "ae2:certus_quartz_dust")
 	addCrushedSplashing("tungsten", "cmi:lime_dust")
+	addCrushedSplashing("ardite", "minecraft:glowstone_dust")
+	addCrushedSplashing("aluminum", "cmi:deposit_dust")
 
 	function addCrushedSplashing(material, product) {
 		let crushed = `#create:crushed_raw_materials/${material}`
-		let dust = Ingredient.of(`#forge:dusts/${material}`).getItemIds()
+		let dust = Ingredient.of(`#mekanism:dirty_dusts/${material}`).getItemIds()
 
 		return create.splashing([
 			Item.of(dust[0], 1),
