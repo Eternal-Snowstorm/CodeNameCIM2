@@ -23,8 +23,8 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 		let stack = Item.of(items[0])
 
 		if (displayName !== undefined) {
-			let key = Component.translatable(`recipe.jei.recipe.cmi.${displayName}`)
-			stack = stack.setHoverName(key)
+			let key = `recipe.jei.recipe.cmi.${displayName}`
+			stack = stack.setHoverName(Component.translatable(key))
 		}
 
 		for (let item of items) {
