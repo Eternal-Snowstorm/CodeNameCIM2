@@ -4,6 +4,6 @@
 	#The limit of interlock distance
 	#type: int
 	#default: 32
-	#Range: 0 ~ 128
+	#Range: 2 ~ 128
 	interlock_distance_limit = 32
 

@@ -11,7 +11,8 @@ ServerEvents.recipes((event) => {
 		"create/haunting/lapis_recycling",
 		"create/crushing/prismarine_crystals",
 		"createaddition:compat/immersiveengineering/item_application/reinforced_blast_brick",
-		"immersiveengineering:crafting/blastbrick_reinforced"
+		"immersiveengineering:crafting/blastbrick_reinforced",
+		"immersiveengineering:crafting/treated_scaffold"
 	])
 
 	let removedMods = [
