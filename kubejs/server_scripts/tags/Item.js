@@ -41,6 +41,12 @@ ServerEvents.tags("item", (event) => {
 			.add(`minecraft:${colors}_shulker_box`)
 	})
 
+	event.get("forge:hammers")
+		.add("#createdieselgenerators:hammers")
+
+	event.get("createdieselgenerators:hammers")
+		.add("createdieselgenerators:hammer")
+
 	event.get("easyrepair:repair_item_pouchs")
 		.add("easyrepair:repair_item_pouch_i")
 		.add("easyrepair:repair_item_pouch_ii")

@@ -206,4 +206,11 @@ ServerEvents.recipes((event) => {
 	tconstruct.casting_table("createdieselgenerators:mold")
 		.fluid(Fluid.of("cmi:molten_industrial_iron", 90 * 2))
 		.cooling_time(20 * 3)
+
+	// 强化高炉砖
+	tconstruct.casting_basin("immersiveengineering:blastbrick_reinforced")
+		.fluid(Fluid.of("tconstruct:molten_invar", 90 * 2))
+		.cast("immersiveengineering:blastbrick")
+		.cast_consumed(true)
+		.cooling_time(20 * 2)
 })

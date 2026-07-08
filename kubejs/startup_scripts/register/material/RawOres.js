@@ -37,9 +37,7 @@ StartupEvents.registry("item", (event) => {
 	addAloneRawMaterial("titanium")
 	addAloneRawMaterial("ardite")
 
-	addAloneCrushedRawMaterial("desh")
-	addAloneCrushedRawMaterial("ostrum")
-	addAloneCrushedRawMaterial("calorite")
+	addAloneCrushedRawMaterial("ardite")
 	addAloneCrushedRawMaterial("cobalt")
 	addAloneCrushedRawMaterial("vanadium")
 	addAloneCrushedRawMaterial("chromium")

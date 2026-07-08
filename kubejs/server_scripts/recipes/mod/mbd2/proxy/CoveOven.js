@@ -21,15 +21,12 @@
 // 	/**
 // 	 * @type {Internal.MBDRecipeSchema$MBDRecipeJS}
 // 	 */
-// 	let builder = recipeType.recipeBuilder()
-
+// 	let mbdRecipe = recipeType.recipeBuilder()
 // 	let creosote = "immersiveengineering:creosote"
-// 	let input = recipe.input.getBaseIngredient()
-// 	let output = recipe.output.get()
 
-// 	builder.inputItems(input)
-// 		.outputItems(output)
-// 		.outputFluids(Fluid.of(creosote, recipe.creosoteOutput))
+// 	mbdRecipe.inputItems(recipe.input.getBaseIngredient())
+// 		.outputItems(recipe.output.get())
+// 		.outputFluids(creosote, recipe.creosoteOutput)
 // 		.duration(recipe.time)
 // 		.id(proxyRecipeId + "_mbd2un")
 

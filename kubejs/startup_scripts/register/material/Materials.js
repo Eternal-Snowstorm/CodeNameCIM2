@@ -331,7 +331,7 @@ new Material("titanium_alloy", "diamond")
 	.molten()
 
 // 铝合金
-new Material("alumium_alloy", "iron")
+new Material("aluminum_alloy", "iron")
 	.color(0x7998B7, 0x2F4051)
 	.isMetal()
 	.ingot()

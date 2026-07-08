@@ -118,6 +118,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("torn_parchment_b", "撕开的羊皮纸(乙)")
 	addItemLang("enriched_alloy", "富集合金")
 	addItemLang("resonant_tube", "共振管")
+	addItemLang("magnetic_contact", "磁触点")
 
 	addItemLang("dreamcore_crystal", "幻晶晶簇")
 	addItemLang("dreamcore_ore", "幻晶原石")
