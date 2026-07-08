@@ -133,14 +133,15 @@
 		#Range: 1 ~ 500000
 		production_efficiency = 5000
 
-	#Reinforced Coke Oven Settings
-	[general.reinforced_coke_oven]
-		#Reinforced coke oven will smoke at work
-		#If you think Caton can choose to close
-		#type: boolean
-		smoking_at_working = true
-		#Reinforced coke oven frequency of smoke at work (Tick)
-		#type: int
-		#Range: 1 ~ 20
-		smoking_frequency = 5
+	#SneakyLink Settings
+	[general.sneak_link]
+		#Horizontal radius within which the player picks up item entities
+		"Collection radius" = 3.0
+		#Amount of blocks below the player where sneaking picks up item entities
+		"Collection depth" = 2.0
+		#Amount of blocks above the player where sneaking picks up item entities
+		#Range: 0.0 ~ 8.0
+		"Collection height" = 0.0
+		#Pick up item entities regardless of their cooldown after being dropped from a player's inventory
+		"Ignore pickup delay" = false
 
