@@ -751,12 +751,18 @@
 			]
 			icon: "cmi:reinforced_coke_oven"
 			id: "7FDB7DDAD23BB4C1"
-			rewards: [{
-				count: 2
-				id: "523C9079FF18C47B"
-				item: "cmi:reinforced_coke_oven_hatch"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0D2CBA6D8F8BB95B"
+					item: "cmi:reinforced_coke_oven_input_bus"
+					type: "item"
+				}
+				{
+					id: "5A05FC7B552863B0"
+					item: "cmi:reinforced_coke_oven_output_bus"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "高级的炉子"

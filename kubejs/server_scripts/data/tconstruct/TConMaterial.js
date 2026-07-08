@@ -18,34 +18,6 @@ ServerEvents.highPriorityData((event) => {
 		return new TConMaterial(event, `${Cmi.MODID}:${name}`, handler)
 	}
 
-	// 紫水晶
-	addMaterial("amethyst", (builder) => {
-		builder.visibility(1, false)
-			.craftable(true)
-			.sortOrder(12)
-			.head(100, 1.6, 6.2, "minecraft:stone")
-			.handle(-0.10, 0.05, 0, 0)
-			.limb(0.1, -0.12, 230, -0.02)
-			.grip(0.2, -0.1, 3.2)
-			.setTraits((builder) => {
-				builder.addTrait("tconstruct:melee_harvest", id($ModifierIds.luck), 1)
-					.addTrait("tconstruct:ranged", id($ModifierIds.crystalshot), 1)
-			})
-			.addMaterialRecipes("minecraft:amethyst_block", (builder) => {
-				builder.needed(1)
-					.value(4)
-					.leftover(Item.of("minecraft:amethyst_shard", 1))
-			})
-			.addMaterialRecipes("minecraft:amethyst_shard", (builder) => {
-				builder.needed(1)
-					.value(1)
-			})
-			.addMaterialFluidRecipes("tconstruct:molten_amethyst", (builder) => {
-				builder.amount(90)
-					.temperature(800)
-			})
-	})
-
 	// 工业铁
 	addMaterial("industrial_iron", (builder) => {
 		builder.visibility(2, false)
@@ -297,34 +269,86 @@ ServerEvents.highPriorityData((event) => {
 // })
 
 TConJSEvents.materialDefinition((event) => {
-	event.addMaterialData(
-		"cmi",
-		"test",
-		(builder) => {
+	/**
+	 * 
+	 * @param {string} material 
+	 */
+	function TConMaterial(material) {
+		let materialData = {
+			definition: undefined,
+			stats: undefined,
+			traits: undefined,
+			melting: undefined
+		}
+
+		return {
+			/**
+			 * @param {Internal.Consumer_<Internal.MaterialDefinitionBuilder>} definition 
+			 */
+			definition(definition) {
+				materialData.definition = definition
+				return this
+			},
+
+			/**
+			 * @param {Internal.Consumer_<Internal.MaterialStatsBuilder>} stats 
+			 */
+			stats(stats) {
+				materialData.stats = stats
+				return this
+			},
+
+			/**
+			 * @param {Internal.Consumer_<Internal.MaterialTraitsBuilder>} traits 
+			 */
+			traits(traits) {
+				materialData.traits = traits
+				return this
+			},
+
+			/**
+			 * @param {Internal.Consumer_<MaterialSmeltingRecipeBuilder>} melting 
+			 */
+			melting(melting) {
+				materialData.melting = melting
+				event.addMaterialData(
+					"cmi",
+					material,
+					materialData.definition,
+					materialData.stats,
+					materialData.traits,
+					materialData.melting
+				)
+				return this
+			}
+		}
+	}
+
+	// 紫水晶
+	TConMaterial("amethyst")
+		.definition((builder) => {
 			builder.craftable(true)
-				.tier(1)
 				.sortOrder(110)
-				.setCraftOrRepairRecipe((builder) => {
-					builder["input(net.minecraft.world.item.crafting.Ingredient)"]("minecraft:iron_ingot")
-				})
+				.tier(1)
 				.hidden(false)
-		},
-		(builder) => {
-			builder.grip(0.2, -0.1, 3.2)
+				.setCraftOrRepairRecipe((builder) => {
+					builder.input("#forge:gems/amethyst")
+				})
+		})
+		.stats((builder) => {
+			builder.head(100, 1.6, 6.2, "minecraft:stone")
+				.handle(-0.1, 0.05, 0, 0)
 				.limb(0.1, -0.12, 230, -0.02)
-				.handle(-0.10, 0.05, 0, 0)
-				.head(100, 1.6, 6.2, "minecraft:stone")
-				.binding()
-		},
-		(builder) => {
+				.grip(0.2, -1.0, 3.2)
+		})
+		.traits((builder) => {
 			builder.perStat("tconstruct:melee_harvest", $ModifierIds.luck, 1)
-				.perStat("tconstruct:ranged", $ModifierIds.crystalshot, 1)
-		},
-		(builder) => {
-			builder.fluid("cmi:molten_industrial_iron")
+			builder.perStat("tconstruct:ranged", $ModifierIds.crystalshot, 1)
+		})
+		.melting((builder) => {
+			builder.fluid("tconstruct:molten_amethyst")
 				.amount(90)
 				.temperature(800)
-				.material("cmi:test")
-		}
-	)
+				.material("cmi:amethyst")
+		})
 })
