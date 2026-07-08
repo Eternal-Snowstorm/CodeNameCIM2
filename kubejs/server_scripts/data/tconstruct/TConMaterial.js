@@ -8,16 +8,6 @@ let $ThermalConstructModifierIds =
 	Java.loadClass("mrthomas20121.thermalconstruct.ThermalConstructModifierIds")
 
 ServerEvents.highPriorityData((event) => {
-	/**
-	 * 
-	 * @param {string} name 
-	 * @param {Internal.Consumer_<TConMaterialBuilder>} handler 
-	 * @returns 
-	 */
-	function addMaterial(name, handler) {
-		return new TConMaterial(event, `${Cmi.MODID}:${name}`, handler)
-	}
-
 	// 工业铁
 	addMaterial("industrial_iron", (builder) => {
 		builder.visibility(2, false)
@@ -259,73 +249,66 @@ ServerEvents.highPriorityData((event) => {
 	})
 })
 
-// ServerEvents.recipes((event) => {
-// 	MaterialSmeltingRecipe.builder()
-// 		.fluid("cmi:molten_industrial_iron")
-// 		.amount(90)
-// 		.temperature(800)
-// 		.material("cmi:test")
-// 		.addSmeltingRecipe(event)
-// })
-
 TConJSEvents.materialDefinition((event) => {
 	/**
-	 * 
-	 * @param {string} material 
+	 * @constructor
+	 * @param {string} material
 	 */
 	function TConMaterial(material) {
-		let materialData = {
+		this.material = material
+
+		this.materialData = {
 			definition: undefined,
 			stats: undefined,
 			traits: undefined,
 			melting: undefined
 		}
+	}
 
-		return {
-			/**
-			 * @param {Internal.Consumer_<Internal.MaterialDefinitionBuilder>} definition 
-			 */
-			definition(definition) {
-				materialData.definition = definition
-				return this
-			},
+	/**
+	 * @param {Internal.Consumer_<Internal.MaterialDefinitionBuilder>} definition
+	 */
+	TConMaterial.prototype.definition = function (definition) {
+		this.materialData.definition = definition
+		return this
+	}
 
-			/**
-			 * @param {Internal.Consumer_<Internal.MaterialStatsBuilder>} stats 
-			 */
-			stats(stats) {
-				materialData.stats = stats
-				return this
-			},
+	/**
+	 * @param {Internal.Consumer_<Internal.MaterialStatsBuilder>} stats
+	 */
+	TConMaterial.prototype.stats = function (stats) {
+		this.materialData.stats = stats
+		return this
+	}
 
-			/**
-			 * @param {Internal.Consumer_<Internal.MaterialTraitsBuilder>} traits 
-			 */
-			traits(traits) {
-				materialData.traits = traits
-				return this
-			},
+	/**
+	 * @param {Internal.Consumer_<Internal.MaterialTraitsBuilder>} traits
+	 */
+	TConMaterial.prototype.traits = function (traits) {
+		this.materialData.traits = traits
+		return this
+	}
 
-			/**
-			 * @param {Internal.Consumer_<MaterialSmeltingRecipeBuilder>} melting 
-			 */
-			melting(melting) {
-				materialData.melting = melting
-				event.addMaterialData(
-					"cmi",
-					material,
-					materialData.definition,
-					materialData.stats,
-					materialData.traits,
-					materialData.melting
-				)
-				return this
-			}
-		}
+	/**
+	 * @param {Internal.Consumer_<MaterialSmeltingRecipeBuilder>} melting
+	 */
+	TConMaterial.prototype.melting = function (melting) {
+		this.materialData.melting = melting
+
+		event.addMaterialData(
+			"cmi",
+			this.material,
+			this.materialData.definition,
+			this.materialData.stats,
+			this.materialData.traits,
+			this.materialData.melting
+		)
+
+		return this
 	}
 
 	// 紫水晶
-	TConMaterial("amethyst")
+	new TConMaterial("amethyst")
 		.definition((builder) => {
 			builder.craftable(true)
 				.sortOrder(110)
