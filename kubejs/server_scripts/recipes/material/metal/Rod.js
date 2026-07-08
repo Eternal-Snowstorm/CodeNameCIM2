@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { createaddition, thermal, immersiveengineering } = event.getRecipes()
+	let { createaddition, thermal, immersiveengineering, createdieselgenerators } = event.getRecipes()
 
 	CmiMetalRegistry.getAll().forEach((material) => {
 		let metal = material.getId()
@@ -8,6 +8,10 @@ ServerEvents.recipes((event) => {
 
 		if (Ingredient.isNotNull(ROD)) {
 			createaddition.rolling(`2x ${ROD}`, [
+				INGOT
+			])
+
+			createdieselgenerators.wire_cutting(ROD, [
 				INGOT
 			])
 
@@ -26,6 +30,9 @@ ServerEvents.recipes((event) => {
 		event.remove([
 			{
 				type: "createaddition:rolling",
+				output: ROD
+			}, {
+				type: "createdieselgenerators:wire_cutting",
 				output: ROD
 			}, {
 				type: "immersiveengineering:metal_press",

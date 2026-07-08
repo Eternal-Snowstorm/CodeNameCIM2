@@ -73,7 +73,7 @@
     "coordinates.rel": false,
     "distance": false,
     "block_face": false,
-    "coordinates": true,
+    "coordinates": false,
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
@@ -94,8 +94,7 @@
   },
   "mbd2": {
     "recipe_logic_provider": true,
-    "multiblock_provider": true,
-    "long_fe_energy_hud": true
+    "multiblock_provider": true
   },
   "extendedae_plus": {
     "labeled_wireless_component": true,

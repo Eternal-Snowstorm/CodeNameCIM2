@@ -129,7 +129,7 @@ ServerEvents.recipes((event) => {
 		.fluid("immersiveengineering:redstone_acid", 100)
 		.input("#forge:plates/tungsten")
 		.input("cmi:titanium_alloy_mesh")
-		.input("#forge:plates/alumium_alloy")
+		.input("#forge:plates/aluminum_alloy")
 		.build()
 
 	// 复合板

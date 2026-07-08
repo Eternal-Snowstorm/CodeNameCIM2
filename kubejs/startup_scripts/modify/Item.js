@@ -64,14 +64,6 @@ ItemEvents.modification((event) => {
 		modify.setFoodProperties((builder) => {
 			builder.hunger(10)
 				.saturation(1.2)
-				.eaten((event) => {
-					let { player } = event
-					let haveEffect = player.hasEffect("minecraft:fire_resistance")
-
-					if (!haveEffect) {
-						player.runCommandSilent(`damage ${player.name.toString()} 20 minecraft:lava`)
-					}
-				})
 		})
 	})
 
@@ -82,6 +74,14 @@ ItemEvents.modification((event) => {
 				.saturation(2)
 				.alwaysEdible()
 				.fastToEat()
+		})
+	})
+
+	// 糖
+	event.modify("minecraft:sugar", (modify) => {
+		modify.setFoodProperties((builder) => {
+			builder.hunger(1)
+				.saturation(2)
 		})
 	})
 

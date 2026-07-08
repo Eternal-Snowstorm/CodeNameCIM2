@@ -8,7 +8,7 @@ EntityEvents.spawned((event) => {
 	 * @param {number} value
 	 */
 	function setCustomHealth(id, value) {
-		healthMap[id] = value
+		return healthMap[id] = value
 	}
 
 	// 注册

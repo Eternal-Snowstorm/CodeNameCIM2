@@ -133,6 +133,11 @@
 		#Range: 1 ~ 500000
 		production_efficiency = 5000
 
+	#Metal Detector Settings
+	[general.metal_detector]
+		#Play sound with Metal Detector when turned on
+		play_sound = true
+
 	#Reinforced Coke Oven Settings
 	[general.reinforced_coke_oven]
 		#Reinforced coke oven will smoke at work

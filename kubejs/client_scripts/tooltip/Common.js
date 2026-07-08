@@ -35,6 +35,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("create:basin")
 	addCommonTooltip("create:sail_frame")
 	addCommonTooltip("cmi:obsidian_cell")
+	addCommonTooltip("minecraft:sugar_cane")
 
 	/**
 	 * 
