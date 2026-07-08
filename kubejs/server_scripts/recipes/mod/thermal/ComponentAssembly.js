@@ -74,6 +74,42 @@ ServerEvents.recipes((event) => {
 		"cmi:industrial_frame"
 	])
 
+	// PZ管道
+	addComponRecipe("16x pipez:item_pipe", [
+		"#forge:gears/invar",
+		Mechanisms.THERMAL.COM,
+		"#forge:plates/industrial_iron",
+		Mechanisms.WOODEN.COM
+	]).id("pipez:item_pipe")
+
+	addComponRecipe("16x pipez:fluid_pipe", [
+		"#forge:gears/invar",
+		Mechanisms.THERMAL.COM,
+		"#forge:plates/industrial_iron",
+		Mechanisms.COPPER.COM
+	]).id("pipez:fluid_pipe")
+
+	addComponRecipe("16x pipez:energy_pipe", [
+		"#forge:gears/invar",
+		Mechanisms.THERMAL.COM,
+		"#forge:plates/industrial_iron",
+		Mechanisms.REDSTONE.COM
+	]).id("pipez:energy_pipe")
+
+	addComponRecipe("16x pipez:gas_pipe", [
+		"#forge:gears/invar",
+		Mechanisms.THERMAL.COM,
+		"#forge:plates/industrial_iron",
+		Mechanisms.AIR.COM
+	]).id("pipez:gas_pipe")
+
+	addComponRecipe("16x pipez:universal_pipe", [
+		"pipez:item_pipe",
+		"pipez:fluid_pipe",
+		"pipez:energy_pipe",
+		"pipez:gas_pipe"
+	]).id("pipez:universal_pipe")
+
 	// 红石伺服器
 	addComponRecipe("2x thermal:redstone_servo", [
 		Fluid.of("immersiveengineering:redstone_acid", 200),
