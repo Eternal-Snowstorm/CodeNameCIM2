@@ -1,19 +1,6 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.getRecipes()
 
-	// 冶炼炉控制器
-	kubejs.shaped("tconstruct:smeltery_controller", [
-		"AAA",
-		"BCB",
-		"DED"
-	], {
-		A: "tconstruct:seared_bricks",
-		B: "tconstruct:seared_brick",
-		C: Mechanisms.COPPER.COM,
-		D: "thermal:cured_rubber",
-		E: Mechanisms.IRON.COM
-	}).id("tconstruct:smeltery/casting/seared/smeltery_controller")
-
 	// 材料修复包I
 	kubejs.shaped("easyrepair:repair_item_pouch_i", [
 		"ABA",
