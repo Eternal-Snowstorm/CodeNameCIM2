@@ -41,6 +41,9 @@ ServerEvents.tags("item", (event) => {
 			.add(`minecraft:${colors}_shulker_box`)
 	})
 
+	event.get("forge:hammers")
+		.add("#createdieselgenerators:hammers")
+
 	event.get("createdieselgenerators:hammers")
 		.add("createdieselgenerators:hammer")
 
