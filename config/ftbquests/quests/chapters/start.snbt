@@ -77,7 +77,10 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["1231A867DC253AAA"]
+			dependencies: [
+				"1231A867DC253AAA"
+				"07C4444CF1D9BB41"
+			]
 			description: ["我可以用它来熔炼一些&6熔点较低&f的金属"]
 			id: "562C10B7F3C07DCF"
 			rewards: [{
