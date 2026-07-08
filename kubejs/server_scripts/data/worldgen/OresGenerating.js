@@ -25,7 +25,7 @@ ServerEvents.highPriorityData((event) => {
 
 	// 石英
 	addOreGeneratingType("quartz_ore", "overworld", 9)
-		.overworld(8)
+		.overworld(10)
 
 	// 钴
 	addOreGeneratingType("cobalt_ore", "moon", 6)
