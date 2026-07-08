@@ -350,7 +350,7 @@ ServerEvents.recipes((event) => {
 		.input("#forge:plates/silver")
 		.deploying(Mechanisms.SMART.AUG)
 		.filling(Fluid.of("immersiveengineering:redstone_acid", 100))
-		.deploying("ae2:printed_silicon")
+		.deploying("ae2:fluix_crystal")
 		.laserCutting(1000)
 		.deploying(Mechanisms.PART.ENGIN)
 		.build()

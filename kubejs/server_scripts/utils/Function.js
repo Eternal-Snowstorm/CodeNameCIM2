@@ -23,6 +23,7 @@ let namespacePriority = [
 	"createdeco",
 	"ae2",
 	"ad_astra",
+	"createaddition",
 	"immersiveengineering",
 	"mekanism",
 	"alexscaves",
@@ -34,26 +35,6 @@ let namespacePriority = [
 	 * @returns 
 	 */
 function getHighPriorityItem(name) {
-	/**
-	 * 设置命名空间优先级
-	 * 越往前的命名空间优先级越高
-	 */
-	let namespacePriority = [
-		"cmi",
-		"vintageimprovements",
-		"thermal",
-		"thermalconstruct",
-		"thermalendergy",
-		"thermal_extra",
-		"create",
-		"createdeco",
-		"ae2",
-		"ad_astra",
-		"immersiveengineering",
-		"mekanism",
-		"alexscaves",
-		"tconstruct"
-	]
 	// 引入参数
 	let currentNamespace
 	let outputId

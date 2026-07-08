@@ -497,7 +497,7 @@
 		{
 			dependencies: ["13884F7A75B4D36D"]
 			description: [
-				"手持石英右键{minecraft:deepslate, 1}深板岩或{minecraft:cobbled_deepslate, 1}深板岩圆石会有10%的"
+				"手持石英右键{minecraft:deepslate, 1}深板岩或{minecraft:cobbled_deepslate, 1}深板岩圆石会有30%的"
 				"概率获取"
 			]
 			id: "3D854C186FF6E897"

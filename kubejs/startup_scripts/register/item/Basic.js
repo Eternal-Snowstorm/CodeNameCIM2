@@ -345,6 +345,9 @@ StartupEvents.registry("item", (event) => {
 	// 待组装复合板
 	addMaterial("incomplete_reinforced_composite_plate")
 
+	// 磁触点
+	addMaterial("magnetic_contact")
+
 	// 恩特罗系列
 	addItem("entro_crystal")
 		.texture("expatternprovider:item/entro_crystal")
@@ -603,7 +606,4 @@ StartupEvents.registry("item", (event) => {
 
 	// 复合陶瓷基板
 	// addMaterial("composite_ceramic_substrates")
-
-	// 磁触点
-	// addMaterial("magnetic_contact")
 })

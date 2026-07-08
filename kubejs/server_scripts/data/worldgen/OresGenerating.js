@@ -12,7 +12,7 @@ ServerEvents.highPriorityData((event) => {
 		.nether(10)
 
 	// 氟石
-	addOreGeneratingType("fluorite_ore", "nether",6)
+	addOreGeneratingType("fluorite_ore", "nether", 6)
 		.nether(7)
 
 	// 银
@@ -25,7 +25,7 @@ ServerEvents.highPriorityData((event) => {
 
 	// 石英
 	addOreGeneratingType("quartz_ore", "overworld", 9)
-		.overworld(3)
+		.overworld(8)
 
 	// 钴
 	addOreGeneratingType("cobalt_ore", "moon", 6)

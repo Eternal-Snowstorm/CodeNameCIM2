@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
 		" C "
 	], {
 		C: "ae2:spatial_cell_component_2",
-		P: "#forge:plates/silver"
+		P: "#forge:plates/platinum"
 	})
 
 	kubejs.shaped("cmi:combined_spatial_component_128", [
@@ -153,7 +153,7 @@ ServerEvents.recipes((event) => {
 		" C "
 	], {
 		C: "ae2:spatial_cell_component_16",
-		P: "#forge:plates/silver"
+		P: "#forge:plates/platinum"
 	})
 
 	// 样板
@@ -535,246 +535,35 @@ ServerEvents.recipes((event) => {
 		"ae2:smart_dense_cable"
 	]).id("meplacementtool:me_cable_placement_tool")
 
-	// 装配矩阵框架
-	thermal_extra.component_assembly("4x expatternprovider:assembler_matrix_frame", [
-		Casing.SMART,
-		Mechanisms.IRON.COM,
-		"minecraft:lapis",
-		"cmi:pure_quartz_prism"
-	]).id("expatternprovider:assembler_matrix_frame")
+	// ME光束成型器
+	thermal_extra.component_assembly("me_beam_former:beam_former_part", [
+		"#forge:plates/aluminum",
+		"#forge:plates/silver",
+		Mechanisms.PHOTO.COM,
+		"ae2:fluix_pearl",
+		"#ae2:glass_cable"
+	]).id("me_beam_former:beam_former_part")
 
-	// 装配矩阵墙壁
-	thermal_extra.component_assembly("4x expatternprovider:assembler_matrix_wall", [
-		"cmi:pure_quartz_prism",
-		"#ae2:smart_cable",
-		Casing.SMART
-	]).id("expatternprovider:assembler_matrix_wall")
-
-	// 装配矩阵玻璃
-	thermal_extra.component_assembly("4x expatternprovider:assembler_matrix_glass", [
-		"ae2:quartz_glass",
-		"#ae2:smart_cable",
-		"cmi:pure_quartz_prism"
-	]).id("expatternprovider:assembler_matrix_glass")
-
-	// 装配矩阵样板核心
-	thermal_extra.component_assembly("expatternprovider:assembler_matrix_pattern", [
-		"cmi:pure_quartz_prism",
-		"#expatternprovider:extended_pattern_provider"
-	]).id("expatternprovider:assembler_matrix_pattern")
-
-	// 装配矩阵速度核心
-	thermal_extra.component_assembly("expatternprovider:assembler_matrix_speed", [
-		"cmi:pure_quartz_prism",
-		Mechanisms.COBALT.COM
-	]).id("expatternprovider:assembler_matrix_speed")
-
-	// 装配矩阵合成核心
-	thermal_extra.component_assembly("expatternprovider:assembler_matrix_crafter", [
-		"cmi:pure_quartz_prism",
-		"expatternprovider:ex_molecular_assembler"
-	]).id("expatternprovider:assembler_matrix_crafter")
-
-	// 扩展样板供应器
-	thermal_extra.component_assembly("expatternprovider:ex_pattern_provider", [
-		"#ae2:pattern_provider",
-		"ae2:capacity_card",
-		"create_connected:control_chip",
-		Mechanisms.GOLD.COM
-	]).id("expatternprovider:epp")
-
-	//样板供应器升级
-	thermal_extra.component_assembly("expatternprovider:pattern_provider_upgrade", [
-		"ae2:capacity_card",
-		"create_connected:control_chip",
-		Mechanisms.GOLD.COM
-	]).id("expatternprovider:epp_upgrade")
-
-	// 扩展Me接口
-	thermal_extra.component_assembly("expatternprovider:ex_interface", [
-		"#ae2:interface",
-		"ae2:capacity_card",
-		"ae2:logic_processor",
-		Mechanisms.GOLD.COM
-	]).id("expatternprovider:ei")
-
-	//Me接口升级
-	thermal_extra.component_assembly("expatternprovider:interface_upgrade", [
-		"ae2:capacity_card",
-		"ae2:logic_processor",
-		Mechanisms.GOLD.COM
-	]).id("expatternprovider:ei_upgrade")
-
-	// 扩展输入总线
-	thermal_extra.component_assembly("expatternprovider:ex_import_bus_part", [
-		"ae2:import_bus",
-		"ae2:calculation_processor",
-		Mechanisms.COBALT.COM
-	]).id("expatternprovider:ebus_in")
-
-	// 扩展输出总线
-	thermal_extra.component_assembly("expatternprovider:ex_export_bus_part", [
-		"ae2:export_bus",
-		"ae2:calculation_processor",
-		Mechanisms.COBALT.COM
-	]).id("expatternprovider:ebus_out")
-
-	// 输入输出总线升级
-	thermal_extra.component_assembly("expatternprovider:io_bus_upgrade", [
-		"ae2:calculation_processor",
-		Mechanisms.COBALT.COM
-	]).id("expatternprovider:ebus_upgrade")
-
-	// 扩展样板管理终端
-	thermal_extra.component_assembly("expatternprovider:ex_pattern_access_part", [
-		"ae2:pattern_access_terminal",
-		Mechanisms.GOLD.COM,
-		"ae2:logic_processor"
-	]).id("expatternprovider:epa")
-
-	// 样板管理终端升级
-	thermal_extra.component_assembly("expatternprovider:pattern_terminal_upgrade", [
-		Mechanisms.GOLD.COM,
-		"ae2:logic_processor"
-	]).id("expatternprovider:epa_upgrade")
-
-	// Me封装胶带	
-	thermal_extra.component_assembly("expatternprovider:me_packing_tape", [
-		"#forge:ingots/silver",
-		"minecraft:slime_ball",
-		"ae2:fluix_dust",
-		"create:cardboard_block"
-	]).id("expatternprovider:tape")
-
-	// 扩展驱动器
-	thermal_extra.component_assembly("expatternprovider:ex_drive", [
-		"ae2:drive",
-		Mechanisms.GOLD.COM,
-		"ae2:fluix_dust",
-		"#forge:dusts/emerald"
-	]).id("expatternprovider:ex_drive")
-
-	// 驱动器升级
-	thermal_extra.component_assembly("expatternprovider:drive_upgrade", [
-		Mechanisms.GOLD.COM,
-		"ae2:fluix_dust",
-		"#forge:dusts/emerald"
-	]).id("expatternprovider:ex_drive_upgrade")
-
-	// 扩展分子装配室
-	thermal_extra.component_assembly("expatternprovider:ex_molecular_assembler", [
-		"ae2:fluix_crystal",
-		"ae2:molecular_assembler",
-		"ae2:engineering_processor",
-		Mechanisms.GOLD.COM
-	]).id("expatternprovider:ex_molecular_assembler")
-
-	// 电路切片器
-	thermal_extra.component_assembly("expatternprovider:circuit_cutter", [
-		"thermal:saw_blade",
-		Casing.SMART,
+	// 大型光束成型器
+	thermal_extra.component_assembly("me_beam_former:beam_former_block", [
+		"me_beam_former:beam_former_part",
+		"#forge:plates/platinum",
 		Mechanisms.SMART.COM,
-		"ae2:sky_stone_tank",
-		"ae2:not_so_mysterious_block",
-		"#forge:dusts/emerald"
-	]).id("expatternprovider:circuit_cutter")
+		"ae2:fluix_pearl"
+	]).id("me_beam_former:beam_former_block")
 
-	//扩展io端口
-	thermal_extra.component_assembly("expatternprovider:ex_io_port", [
-		"ae2:io_port",
-		Mechanisms.COBALT.COM,
-		"ae2:engineering_processor",
-		"#forge:dusts/emerald"
-	]).id("expatternprovider:ex_io_port")
-
-	// Me超大接口
-	thermal_extra.component_assembly("expatternprovider:oversize_interface", [
-		"expatternprovider:ingredient_buffer",
-		"#expatternprovider:extended_interface",
-		"cmi:smart_mechanism_augment",
-		"cmi:smart_mechanism_augment",
-		"cmi:smart_mechanism_augment",
-		"cmi:smart_mechanism_augment"
-	]).id("expatternprovider:oversize_interface")
-
-	//原料缓存器
-	thermal_extra.component_assembly("expatternprovider:ingredient_buffer", [
-		"ae2:quartz_glass",
-		"ae2:cell_component_1k",
-	]).id("expatternprovider:ingredient_buffer")
-
-	//扩展压印器
-	thermal_extra.component_assembly("expatternprovider:ex_inscriber", [
-		"ae2:inscriber",
-		Mechanisms.GOLD.COM,
-		"#forge:dusts/emerald",
-		"#ae2:interface",
-		Mechanisms.SMART.COM
-	]).id("expatternprovider:ex_inscriber")
-
-	//扩展充能器
-	thermal_extra.component_assembly("expatternprovider:ex_charger", [
-		"ae2:charger",
-		Mechanisms.GOLD.COM,
-		"#forge:dusts/emerald",
-		"#ae2:interface",
-		Mechanisms.SMART.COM
-	]).id("expatternprovider:ex_charger")
-
-	//水晶修复器
-	thermal_extra.component_assembly("expatternprovider:crystal_fixer", [
-		"ae2:crystal_resonance_generator",
-		"#forge:dusts/emerald",
-		Casing.SMART,
-		Mechanisms.SMART.COM
-	]).id("expatternprovider:crystal_fixer")
-
-	// 装罐机
-	thermal_extra.component_assembly("expatternprovider:caner", [
-		"expatternprovider:ingredient_buffer",
-		"create:spout",
-		"#forge:dusts/emerald"
-	]).id("expatternprovider:caner")
-
-	//无线连接器
-	thermal_extra.component_assembly("expatternprovider:wireless_connect", [
-		"ae2:wireless_access_point",
-		"ae2:sky_dust",
-		Casing.SMART,
-		"#ae2:smart_cable"
-	]).id("expatternprovider:wireless_connect")
-
-	//无线集线器
-	thermal_extra.component_assembly("expatternprovider:wireless_hub", [
-		"expatternprovider:wireless_connect",
-		"ae2:quantum_link",
-		"ae2:engineering_processor"
-	]).id("expatternprovider:wireless_hub")
-
-	// 高级样板供应器
-	thermal_extra.component_assembly("advanced_ae:small_adv_pattern_provider", [
-		"ae2:pattern_provider",
-		"ae2:fluix_pearl",
-		"ae2:logic_processor"
-	]).id("advanced_ae:smalladvpatpro")
-
-	// 高级扩展样板供应器
-	thermal_extra.component_assembly("advanced_ae:adv_pattern_provider", [
-		"expatternprovider:ex_pattern_provider",
-		"ae2:logic_processor",
-		"#forge:dusts/emerald"
-	]).id("advanced_ae:eaeadvpatpro")
-
-	// 高级样板供应器升级
-	thermal_extra.component_assembly("advanced_ae:adv_pattern_provider_upgrade", [
-		"ae2:fluix_pearl",
-		"ae2:logic_processor"
-	]).id("advanced_ae:smallappupgrade")
+	// 全向光束成型器
+	thermal_extra.component_assembly("me_beam_former:omni_beam_former_block", [
+		"me_beam_former:beam_former_block",
+		"cmi:piezoelectric_ceramic",
+		"cmi:magnetic_contact",
+		Mechanisms.COMPUTE.COM
+	]).id("me_beam_former:omni_beam_former_block")
 
 	// 2^3空间组件
 	thermal_extra.component_assembly("ae2:spatial_cell_component_2", [
 		"ae2:engineering_processor",
-		"#forge:plates/silver",
+		"#forge:plates/platinum",
 		"#forge:gems/fluix",
 		"ae2:fluix_dust",
 		"cmi:ferrit_core"
@@ -782,26 +571,17 @@ ServerEvents.recipes((event) => {
 
 	// 16^3空间组件
 	thermal_extra.component_assembly("ae2:spatial_cell_component_16", [
-		"ae2:engineering_processor",
-		"#forge:plates/silver",
-		"ae2:spatial_cell_component_2",
-		"ae2:spatial_cell_component_2",
-		"ae2:spatial_cell_component_2",
-		"ae2:spatial_cell_component_2",
 		"cmi:concurrent_processor",
-		"#forge:gems/fluix",
-		"cmi:combined_spatial_component_16"
+		"#forge:plates/platinum",
+		"cmi:combined_spatial_component_16",
+		"#forge:gems/fluix"
 	]).id("ae2:network/cells/spatial_components_0")
 
 	// 128^3空间组件
 	thermal_extra.component_assembly("ae2:spatial_cell_component_128", [
 		"advanced_ae:quantum_processor",
-		"#forge:plates/silver",
-		"ae2:spatial_cell_component_16",
-		"ae2:spatial_cell_component_16",
-		"ae2:spatial_cell_component_16",
-		"ae2:spatial_cell_component_16",
-		"#forge:gems/fluix",
-		"cmi:combined_spatial_component_128"
+		"#forge:plates/platinum",
+		"cmi:combined_spatial_component_128",
+		"#forge:gems/fluix"
 	]).id("ae2:network/cells/spatial_components_1")
 })
