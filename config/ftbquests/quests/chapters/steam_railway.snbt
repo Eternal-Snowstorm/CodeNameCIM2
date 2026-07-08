@@ -711,7 +711,7 @@
 		{
 			dependencies: ["12CEF39F02D4EB3A"]
 			id: "3426EEB10B251CA4"
-			subtitle: "♻️&m环保吗♻️"
+			subtitle: "♻️&m环保吗&r♻️"
 			tasks: [{
 				id: "3642624664D89610"
 				item: {
@@ -747,6 +747,8 @@
 				"高级焦炉的工作时间比普通焦炉快一倍, 并且自带4并行, 在相同的工作时间下, 一个高级焦炉可以顶8台普通焦炉"
 				""
 				"因此无需堆叠大量普通焦炉, 即可获得相当于8台普通焦炉的持续产能, 使工业产线更加紧凑与高效"
+				""
+				"一台高级焦炉至少需要一个输入总线和输出总线, 具体可以在JEI内查看结构规则"
 				"{image:cmi:textures/images/cmi/reinforced_coke_oven.png width:113 height:117 align:center}"
 			]
 			icon: "cmi:reinforced_coke_oven"
