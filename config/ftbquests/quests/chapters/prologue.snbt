@@ -10,6 +10,39 @@
 	quests: [
 		{
 			description: [
+				"妈的, 烧的真他妈充分."
+				"要不是紧急逃生仓, 我怕是也和这船体一样支离破碎了. "
+				"空气含氧量34%, 地表重力加速度10.28m*s^-2, 有地球生物存活...啊, 这就是伊甸了. "
+				"重力, 我操的只是略不正常, 比上次那个巴...巴兰尼科夫先生发现的星球好太多了."
+				"既然这样, 得赶紧想办法活下去, 才能争取与地球的通讯..."
+			]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_4_rocket"
+				tag: { }
+			}
+			id: "21ED583750523195"
+			rewards: [{
+				count: 64
+				id: "7921A777ABA1D383"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.8d
+			subtitle: "紧急求助!紧急求助!"
+			tasks: [{
+				id: "22D0220F20C29089"
+				title: "从航天事故生还"
+				type: "checkmark"
+			}]
+			title: "劫后余生"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
 				"思索(Ponder)是伟大的工程师&bSimibubi&r发明出来用于传递知识的仪式——直观的演示胜于千言万语"
 				"我把我所知道的经验都编织为了思索, 当你&e对着某些物品按住[W]&r时, 你就能和仪式建立连接"
 				""
@@ -491,13 +524,61 @@
 			y: -7.0d
 		}
 		{
+			description: ["&8Tips:按住[Alt]可以从附近的工具箱里快捷调用物品"]
+			icon: "ae2:nether_quartz_wrench"
+			id: "6FC6A8840156255C"
+			subtitle: "这些还能派上用场..."
+			tasks: [
+				{
+					count: 2L
+					id: "4C32610999389A1B"
+					item: { Count: 2, id: "ae2:storage_bus" }
+					type: "item"
+				}
+				{
+					id: "6B1F5AB1468C5122"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "24D0F5DFA34E1245"
+					item: "create:brown_toolbox"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "1337E828A7D442BC"
+					item: { Count: 9, id: "minecraft:magma_block" }
+					type: "item"
+				}
+			]
+			title: "清点物资"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"利用飞船上的物资, "
+				"我应该可以搭建一套简单的存储系统？"
+			]
+			icon: "ae2:crafting_terminal"
+			id: "527B287F33D8FDAE"
+			tasks: [{
+				id: "109221B85E0631FC"
+				title: "存储控制"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
 			id: "09E1B57B8D35ED4E"
 			tasks: [{
 				id: "09039616DF8D6DEA"
 				title: "Test"
 				type: "checkmark"
 			}]
-			title: "测试任务完成播放音频"
+			title: "测试任务完成音频"
 			x: -4.0d
 			y: -5.5d
 		}
@@ -516,20 +597,8 @@
 				title: "测试中保留"
 				type: "checkmark"
 			}]
-			title: "测试锁阶段"
 			x: -1.5d
-			y: -5.5d
-		}
-		{
-			id: "6731DD7CBE630246"
-			tasks: [{
-				id: "6555E432E76E7DAA"
-				title: "可以不点"
-				type: "checkmark"
-			}]
-			title: "测试用的"
-			x: -1.5d
-			y: -7.5d
+			y: -7.0d
 		}
 	]
 	title: "开始"
