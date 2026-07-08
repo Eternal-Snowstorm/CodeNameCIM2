@@ -23,6 +23,31 @@ ServerEvents.recipes((event) => {
 		B: BRICK
 	}).id("tconstruct:smeltery/seared/heater")
 
+	// 冶炼炉控制器
+	kubejs.shaped("tconstruct:smeltery_controller", [
+		"AAA",
+		"BCB",
+		"DED"
+	], {
+		A: "tconstruct:seared_bricks",
+		B: "tconstruct:seared_brick",
+		C: Mechanisms.COPPER.COM,
+		D: "thermal:cured_rubber",
+		E: Mechanisms.IRON.COM
+	}).id("tconstruct:smeltery/casting/seared/smeltery_controller")
+
+	// 高级焦炉
+	kubejs.shaped("cmi:reinforced_coke_oven", [
+		"AAA",
+		"BMB",
+		"CCC"
+	], {
+		A: "tconstruct:seared_bricks",
+		B: "tconstruct:scorched_brick",
+		C: "tconstruct:scorched_bricks",
+		M: Mechanisms.NETHER.COM
+	})
+
 	// 焦黑燃料储罐
 	kubejs.shaped("tconstruct:seared_fuel_tank", [
 		" B ",
