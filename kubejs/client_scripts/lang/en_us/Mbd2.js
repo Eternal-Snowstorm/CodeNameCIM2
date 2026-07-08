@@ -12,6 +12,8 @@ ClientEvents.lang("en_us", (event) => {
 		event.add(`block.${Cmi.MODID}.${key}_input_bus`, `${value} Input Bus`)
 		event.add(`block.${Cmi.MODID}.${key}_output_bus`, `${value} Output Bus`)
 
+		event.add(`${Cmi.MODID}.${key}`, value)
+
 		addIOerLang(key, "item", value, "Item")
 		addIOerLang(key, "fluid", value, "Fluid")
 		addIOerLang(key, "energy", value, "Energy")

@@ -12,6 +12,8 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${Cmi.MODID}.${key}_input_bus`, `${value}输入总线`)
 		event.add(`block.${Cmi.MODID}.${key}_output_bus`, `${value}输出总线`)
 
+		event.add(`${Cmi.MODID}.${key}`, value)
+
 		addIOerLang(key, "item", value, "物品")
 		addIOerLang(key, "fluid", value, "流体")
 		addIOerLang(key, "energy", value, "能量")
