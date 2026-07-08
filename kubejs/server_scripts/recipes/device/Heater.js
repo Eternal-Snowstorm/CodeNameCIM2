@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.getRecipes()
+	let { kubejs, minecraft } = event.getRecipes()
 	const BRICK = "tconstruct:seared_brick"
 	const PRISM = "#forge:glass/prism"
 
@@ -25,9 +25,9 @@ ServerEvents.recipes((event) => {
 
 	// 焦黑燃料储罐
 	kubejs.shaped("tconstruct:seared_fuel_tank", [
-		"BBB",
+		" B ",
 		"BPB",
-		"BBB"
+		" B "
 	], {
 		P: PRISM,
 		B: BRICK
@@ -35,33 +35,65 @@ ServerEvents.recipes((event) => {
 
 	// 焦黑材料储罐
 	kubejs.shaped("tconstruct:seared_ingot_tank", [
-		"BPB",
-		"BPB",
-		"BPB"
+		"B B",
+		" P ",
+		"B B"
 	], {
 		P: PRISM,
 		B: BRICK
 	}).id("tconstruct:smeltery/seared/ingot_tank")
 
 	// 焦黑燃料量器
-	kubejs.shaped("tconstruct:seared_fuel_gauge", [
-		"BPB",
-		"PPP",
-		"BPB"
-	], {
-		P: PRISM,
-		B: BRICK
-	}).id("tconstruct:smeltery/seared/fuel_gauge")
+	minecraft.stonecutting("tconstruct:seared_fuel_gauge", [
+		"tconstruct:seared_fuel_tank"
+	]).id("tconstruct:smeltery/seared/fuel_gauge")
+	minecraft.stonecutting("tconstruct:seared_fuel_tank", [
+		"tconstruct:seared_fuel_gauge"
+	])
 
 	// 焦黑材料量器
-	kubejs.shaped("tconstruct:seared_ingot_gauge", [
-		"PBP",
+	minecraft.stonecutting("tconstruct:seared_ingot_gauge", [
+		"tconstruct:seared_ingot_tank"
+	]).id("tconstruct:smeltery/seared/ingot_gauge")
+	minecraft.stonecutting("tconstruct:seared_ingot_tank", [
+		"tconstruct:seared_ingot_gauge"
+	])
+
+	// 焦褐燃料储罐
+	kubejs.shaped("tconstruct:scorched_fuel_tank", [
+		" B ",
 		"BPB",
-		"PBP"
+		" B "
 	], {
-		P: PRISM,
-		B: BRICK
-	}).id("tconstruct:smeltery/seared/ingot_gauge")
+		P: "#forge:glass",
+		B: "tconstruct:scorched_brick"
+	}).id("tconstruct:smeltery/scorched/fuel_tank")
+
+	// 焦褐材料储罐
+	kubejs.shaped("tconstruct:scorched_ingot_tank", [
+		"B B",
+		" P ",
+		"B B"
+	], {
+		P: "#forge:glass",
+		B: "tconstruct:scorched_brick"
+	}).id("tconstruct:smeltery/scorched/ingot_tank")
+
+	// 焦褐燃料量器
+	minecraft.stonecutting("tconstruct:scorched_fuel_gauge", [
+		"tconstruct:scorched_fuel_tank"
+	]).id("tconstruct:smeltery/scorched/fuel_gauge")
+	minecraft.stonecutting("tconstruct:scorched_fuel_tank", [
+		"tconstruct:scorched_fuel_gauge"
+	])
+
+	// 焦褐材料量器
+	minecraft.stonecutting("tconstruct:scorched_ingot_gauge", [
+		"tconstruct:scorched_ingot_tank"
+	]).id("tconstruct:smeltery/scorched/ingot_gauge")
+	minecraft.stonecutting("tconstruct:scorched_ingot_tank", [
+		"tconstruct:scorched_ingot_gauge"
+	])
 
 	// 铸模箱
 	kubejs.shaped("tconstruct:cast_chest", [
