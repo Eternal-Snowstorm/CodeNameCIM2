@@ -366,6 +366,7 @@
 				"79461202D5061059"
 				"7AADB534F537AA83"
 			]
+			description: ["以&6抽油机驴头&f所在端为前臂，&6抽油机曲柄&f所在端为后臂，前后臂长度分别为&620/4&r时，抽油机效率最高（1000mb/次）"]
 			icon: "createdieselgenerators:pumpjack_crank"
 			icon_scale: 2.0d
 			id: "3640CEE4D21C8BB5"
@@ -376,6 +377,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "磕头机（笑）"
 			tasks: [
 				{
 					id: "63611EF2A8ACC14D"
@@ -383,6 +385,7 @@
 					type: "item"
 				}
 				{
+					count: 2L
 					id: "68134852F0396DE8"
 					item: "createdieselgenerators:pumpjack_bearing"
 					type: "item"
@@ -398,6 +401,7 @@
 					type: "item"
 				}
 			]
+			title: "抽油机"
 			x: 10.0d
 			y: -1.5d
 		}
@@ -1277,7 +1281,7 @@
 		}
 		{
 			dependencies: ["3640CEE4D21C8BB5"]
-			description: ["本整合包修改了原油生成机制。现在每个区块都会生成无限量的原油, 因此无需再四处勘探或寻找特定油田"]
+			description: ["本整合包修改了原油生成机制，现在每个区块都会生成无限量的原油, 因此无需再四处勘探或寻找特定油田"]
 			hide_dependency_lines: true
 			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "7CE3BF3F7F7FC1D9"
@@ -1703,6 +1707,30 @@
 			}]
 			x: 8.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["3640CEE4D21C8BB5"]
+			description: ["本整合包修改了原油生成机制，现在每个区块都会生成无限量的原油, 因此无需再四处勘探或寻找特定油田"]
+			hide_dependency_lines: true
+			icon: "createdieselgenerators:crude_oil_bucket"
+			id: "3385196C9E4B2773"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "霉菌"
+			tasks: [
+				{
+					id: "5447DEFF8CD6B310"
+					item: "createdieselgenerators:crude_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "68C183634E50EF3A"
+					item: "createdieselgenerators:distillation_controller"
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 17.0d
 		}
 	]
 	title: "油燃而升"
