@@ -804,12 +804,12 @@
 						Damage: 0
 					}
 				}
-				id: "1C0FFA509B2733DC"
+				id: "10543888A2395206"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:hammers"
+						value: "createdieselgenerators:hammers"
 					}
 				}
 				title: "锤子"
