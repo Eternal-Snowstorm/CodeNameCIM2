@@ -316,18 +316,6 @@
 						}
 						{
 							level: 1
-							name: "nebula_tinker:shadow"
-						}
-						{
-							level: 1
-							name: "tconstruct:solid"
-						}
-						{
-							level: 1
-							name: "tconstruct:conducting"
-						}
-						{
-							level: 1
 							name: "tconstruct:silky_shears"
 						}
 					]
@@ -352,7 +340,7 @@
 						upgrades: -78
 					}
 					tic_stats: {
-						"tconstruct:attack_damage": 17.0775f
+						"tconstruct:attack_damage": 14.85f
 						"tconstruct:attack_speed": 2.05f
 						"tconstruct:block_amount": 10.0f
 						"tconstruct:durability": 1988.9102f

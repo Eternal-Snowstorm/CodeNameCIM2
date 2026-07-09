@@ -223,30 +223,29 @@
 				"7C2BCD18D1BCEEC9"
 			]
 			description: [
-				"&e镍矿&r、&b银矿&r与&c钒矿&r将&l&6不再自然生成&r&r。你需要在野外寻找它们对应的矿点来获取资源"
+				"&e镍矿&r, &b银矿&r与&c钒矿&r将&l&6不再自然生成&r&r. 你需要在野外寻找它们对应的矿点来获取资源"
+				""
+				"而可用于开采的矿藏则位于矿点下方, 将顶层挖开就可以看到矿点"
 				""
 				"由于矿点与你的基地之间距离较远, 你需要搭建&d列车网络&r来运输这些矿产资源"
 				""
-				"如果运气不错, 你还能在&a主世界&r的&e沙漠、森林和沼泽群系&r中发现&6油页岩&r矿点；该矿点会产出&5沥青&r, 而&5沥青&r可以作为列车的燃料使用"
+				"如果运气不错, 你还能在&a主世界&r发现&6油页岩&r矿点; 该矿点会产出&5沥青&r, 而&5沥青&r可以作为列车的燃料使用"
 				""
-				"&e镍&r会在&a&l主世界&r&r的&6&l沙滩群系&r&r生成"
-				"&b银&r会在&a&l主世界&r&r的&b&l雪地群系&r&r生成"
-				"&6油页岩&r会在&a&l主世界&r&r的&e&l沙漠、森林和沼泽群系&r&r生成"
-				"&c钒&r会在&c&l下界&r&r内随机生成"
+				"&b矿藏扫描仪&r用于寻找矿藏"
 				""
 				"&l&b向后翻页可以查看这些矿点的图片&r&r"
 				""
 				"{@pagebreak}"
-				"在&6沙滩&r上的&e镍矿矿点&r"
+				"在&6森林&r中的&e镍矿矿点&r"
 				"{image:cmi:textures/images/ore_node/nickel.png width:200 height:200 align:center}"
 				"{@pagebreak}"
-				"在&b寒冷针叶林&r中&b银矿矿点&r"
+				"在&b丛林边上&r的&b银矿矿点&r"
 				"{image:cmi:textures/images/ore_node/silver.png width:200 height:200 align:center}"
 				"{@pagebreak}"
 				"在&c下界&r随机生成的&c钒矿矿点&r"
 				"{image:cmi:textures/images/ore_node/vanadium.png width:200 height:200 align:center}"
 				"{@pagebreak}"
-				"分布在&e沙漠&r中的&6油页岩矿点&r"
+				"分布在&e主世界&r中的&6油页岩矿点&r"
 				"{image:cmi:textures/images/ore_node/oil_shale.png width:200 height:200 align:center}"
 			]
 			id: "211642A0702308A1"
@@ -287,6 +286,11 @@
 						}
 					}
 					title: "粗钒"
+					type: "item"
+				}
+				{
+					id: "13BBFA00ADB7401E"
+					item: "create_rns:deposit_scanner"
 					type: "item"
 				}
 			]
@@ -744,11 +748,11 @@
 		{
 			dependencies: ["470156018DA261F4"]
 			description: [
-				"高级焦炉的工作时间比普通焦炉快一倍, 并且自带4并行, 在相同的工作时间下, 一个高级焦炉可以顶8台普通焦炉"
+				"高级焦炉的工作时间比普通焦炉快一倍, 并且自带4个并行. 因此在相同的工作时间下, 一个高级焦炉可以顶8台普通焦炉"
 				""
 				"因此无需堆叠大量普通焦炉, 即可获得相当于8台普通焦炉的持续产能, 使工业产线更加紧凑与高效"
 				""
-				"一台高级焦炉至少需要一个输入总线和输出总线, 具体可以在JEI内查看结构规则"
+				"一台高级焦炉至少需要一个输入总线和输出总线, 并且IO只能在接口的正面进行, 具体可以在JEI内查看结构规则"
 				"{image:cmi:textures/images/cmi/reinforced_coke_oven.png width:113 height:117 align:center}"
 			]
 			icon: "cmi:reinforced_coke_oven"

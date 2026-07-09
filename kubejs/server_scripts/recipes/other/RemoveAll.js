@@ -12,6 +12,7 @@ ServerEvents.recipes((event) => {
 		"create/crushing/prismarine_crystals",
 		"createaddition:compat/immersiveengineering/item_application/reinforced_blast_brick",
 		"immersiveengineering:crafting/blastbrick_reinforced",
+		"createdieselgenerators:bulk_fermenting/lava",
 		"immersiveengineering:crafting/treated_scaffold"
 	])
 
