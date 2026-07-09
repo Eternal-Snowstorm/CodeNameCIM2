@@ -25,11 +25,14 @@ MBDRecipeTypeEvents.onTransferProxyRecipe(($) => {
 	 * @type {Internal.MBDRecipeSchema$MBDRecipeJS}
 	 */
 	let builder = recipeType.recipeBuilder()
+	/**
+	 * @type {Internal.FluidStackJS_}
+	 */
 	let creosote = "immersiveengineering:creosote"
 
 	builder.inputItems(recipe.input.getBaseIngredient())
 		.outputItems(recipe.output.get())
-		.outputFluids(creosote, recipe.creosoteOutput)
+		.outputFluids(Fluid.of(creosote, recipe.creosoteOutput))
 		.duration(recipe.time * 0.5)
 		.id(proxyRecipeId + "_mbd2un")
 

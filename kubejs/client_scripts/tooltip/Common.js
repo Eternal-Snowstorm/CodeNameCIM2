@@ -36,6 +36,8 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("create:sail_frame")
 	addCommonTooltip("cmi:obsidian_cell")
 	addCommonTooltip("minecraft:sugar_cane")
+	addCommonTooltip("#cmi:machine_port")
+	addCommonTooltip("#cmi:machine_core")
 
 	/**
 	 * 
