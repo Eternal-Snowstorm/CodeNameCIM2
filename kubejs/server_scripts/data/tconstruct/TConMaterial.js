@@ -57,10 +57,10 @@ TConJSEvents.materialDefinition((event) => {
 	 * @param {Internal.Consumer_<MaterialSmeltingRecipeBuilder>} melting 
 	 */
 	TConMaterial.prototype.melting = function (melting) {
-		if (melting) {
-			this.meltingData = melting
-		}
-
+		this.meltingData = melting
+		return this
+	}
+	TConMaterial.prototype.build = function () {
 		event.addMaterialData(
 			"cmi",
 			this.material,
@@ -69,8 +69,49 @@ TConJSEvents.materialDefinition((event) => {
 			this.traitsData,
 			this.meltingData
 		)
-		return this
 	}
+
+	// 麻绳
+	new TConMaterial("rope")
+		.definition((builder) => {
+			builder.craftable(true)
+				.sortOrder(7)
+				.tier(1)
+				.hidden(false)
+				.setCraftOrRepairRecipe((builder) => {
+					builder.input("farmersdelight:rope")
+				})
+		})
+		.stats((builder) => {
+			builder.binding()
+			["part(java.lang.String,java.util.Map)"]("tconstruct:bowstring", {})
+		})
+		.traits((builder) => {
+			builder.perStat("default", $ModifierIds.stringy, 1)
+		})
+		.build()
+
+
+	// 橡胶木
+	new TConMaterial("rubberwood")
+		.definition((builder) => {
+			builder.craftable(true)
+				.sortOrder(7)
+				.tier(1)
+				.hidden(false)
+				.setCraftOrRepairRecipe((builder) => {
+					builder.input("thermal:rubberwood_planks")
+				})
+		})
+		.stats((builder) => {
+			builder.head(72, 0, 2, "minecraft:wood")
+				.handle(0.1, 0, 0, 0)
+				.limb(-0.05, 0.25, 70, -0.1)
+		})
+		.traits((builder) => {
+			builder.perStat("default", $ModifierIds.cultivated, 1)
+		})
+		.build()
 
 	// 工业铁
 	new TConMaterial("industrial_iron")
@@ -103,6 +144,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("industrial_iron"))
 				.material("cmi:industrial_iron")
 		})
+		.build()
 
 	// 安山合金
 	new TConMaterial("andesite_alloy")
@@ -136,6 +178,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("andesite_alloy"))
 				.material("cmi:andesite_alloy")
 		})
+		.build()
 
 	// 黄铜
 	new TConMaterial("brass")
@@ -168,6 +211,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("brass"))
 				.material("cmi:brass")
 		})
+		.build()
 
 	// 铸铁
 	new TConMaterial("cast_iron")
@@ -200,6 +244,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("cast_iron"))
 				.material("cmi:cast_iron")
 		})
+		.build()
 
 	// 暗影钢
 	new TConMaterial("shadow_steel")
@@ -228,6 +273,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("shadow_steel"))
 				.material("cmi:shadow_steel")
 		})
+		.build()
 
 	// 光辉石
 	new TConMaterial("refined_radiance")
@@ -255,6 +301,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("refined_radiance"))
 				.material("cmi:refined_radiance")
 		})
+		.build()
 
 	// 阿迪特
 	new TConMaterial("ardite")
@@ -280,6 +327,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("ardite"))
 				.material("cmi:ardite")
 		})
+		.build()
 
 	// 不锈钢
 	new TConMaterial("stainless_steel")
@@ -314,6 +362,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("stainless_steel"))
 				.material("cmi:stainless_steel")
 		})
+		.build()
 
 	// 戴斯
 	new TConMaterial("desh")
@@ -344,6 +393,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("desh"))
 				.material("cmi:desh")
 		})
+		.build()
 
 	// 紫金
 	new TConMaterial("ostrum")
@@ -372,6 +422,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("ostrum"))
 				.material("cmi:ostrum")
 		})
+		.build()
 
 	// 耐热金属
 	new TConMaterial("calorite")
@@ -406,6 +457,7 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(getMeltingPoint("calorite"))
 				.material("cmi:calorite")
 		})
+		.build()
 
 	// 紫水晶
 	new TConMaterial("amethyst")
@@ -422,7 +474,7 @@ TConJSEvents.materialDefinition((event) => {
 			builder.head(100, 1.6, 6.2, "minecraft:stone")
 				.handle(-0.1, 0.05, 0, 0)
 				.limb(0.1, -0.12, 230, -0.02)
-				.grip(0.2, -1.0, 3.2)
+				.grip(0.2, -0.1, 3.2)
 		})
 		.traits((builder) => {
 			builder.perStat("tconstruct:melee_harvest", $ModifierIds.luck, 1)
@@ -434,4 +486,5 @@ TConJSEvents.materialDefinition((event) => {
 				.temperature(800)
 				.material("cmi:amethyst")
 		})
+		.build()
 })

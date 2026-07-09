@@ -96,25 +96,6 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["26DFF62383774404"]
-			icon: "thermal:rubberwood_log"
-			id: "7FF0C3B318313C79"
-			size: 1.5d
-			subtitle: "应该不难找"
-			tasks: [{
-				icon: "thermal:rubberwood_log"
-				id: "4D0575D145D1EAA3"
-				observe_type: 1
-				timer: 0L
-				title: "观察 橡胶原木"
-				to_observe: "thermal:rubberwood"
-				type: "observation"
-			}]
-			title: "橡胶树"
-			x: -20.25d
-			y: 19.5d
-		}
-		{
 			dependencies: ["0D502CA40E47F832"]
 			hide_dependency_lines: true
 			id: "0498E2991294B14D"
@@ -493,7 +474,7 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7FF0C3B318313C79"]
+			dependencies: ["26DFF62383774404"]
 			id: "00A42257F183E046"
 			tasks: [{
 				id: "1E67C231F9433E3D"

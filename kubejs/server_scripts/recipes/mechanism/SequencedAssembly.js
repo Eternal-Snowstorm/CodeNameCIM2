@@ -279,7 +279,7 @@ ServerEvents.recipes((event) => {
 		.input("#forge:plates/iron")
 		.curving("cmi:mechanism_mold")
 		.deploying("cmi:motor_rotor")
-		.filling("immersiveengineering:redstone_acid", 200)
+		.filling(Fluid.of("immersiveengineering:redstone_acid", 200))
 		.deploying("#forge:plates/electrum")
 		.deploying(Mechanisms.PART.ENGIN)
 		.build()

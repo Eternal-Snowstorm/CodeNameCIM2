@@ -12,6 +12,9 @@ ServerEvents.tags("item", (event) => {
 
 	add("forge:gems/charged_amethyst", "create_rns:resonant_amethyst")
 
+	event.get("tconstruct:wood_variants/planks")
+		.add("thermal:rubberwood_planks")
+
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
 		.add("vintageimprovements:redstone_module")
