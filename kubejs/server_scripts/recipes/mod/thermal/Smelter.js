@@ -81,9 +81,9 @@ ServerEvents.recipes((event) => {
 	]).energy(5000).id("ae2:decorative/quartz_glass")
 
 	// 耐火砖泥
-	thermal.smelter("2x cmi:refractory_grout",[
-		"immersiveengineering:dust_hop_graphite",
-		"cmi:kaolinite_ball",
-		"minecraft:gravel"
+	thermal.smelter("8x cmi:refractory_grout", [
+		"4x immersiveengineering:dust_hop_graphite",
+		"4x minecraft:gravel",
+		"cmi:kaolinite"
 	]).energy(50000).id("immersiveindustry:crafting/refractory_kiln_brick")
 })
