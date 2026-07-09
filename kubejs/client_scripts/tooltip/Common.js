@@ -132,7 +132,8 @@ ItemEvents.tooltip((event) => {
 				NebulaLibs.toFahrenheit(mp)
 			).yellow()
 
-			let tagItem = Ingredient.of(`#create:crushed_raw_materials/${metal.getId()}`).getItemIds()
+			let tagItem = Ingredient.of(`#create:crushed_raw_materials/${metal.getId()}`)
+				.getItemIds()
 
 			if (tagItem.length > 0) {
 				tagItem.forEach((item) => {
