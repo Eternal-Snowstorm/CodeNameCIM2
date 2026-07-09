@@ -17,7 +17,8 @@ CDGEvents.molds((event) => {
 		JsonIO.writeAndCreateDirectories(modelPath, {
 			parent: "minecraft:item/generated",
 			textures: {
-				layer0: `${Cmi.MODID}:item/material/mold/${id}`
+				layer0: "createdieselgenerators:item/mold/blank",
+				layer1: `${Cmi.MODID}:item/material/mold/cdg/${id}`
 			}
 		})
 

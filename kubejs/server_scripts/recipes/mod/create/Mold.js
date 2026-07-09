@@ -20,13 +20,13 @@ function castingRecipes(event) {
  * @param {Internal.RecipesEventJS} event
  */
 function moldRecipes(event) {
-	let { vintageimprovements, kubejs } = event.getRecipes()
+	let { create, kubejs } = event.getRecipes()
 
-	addMoldRecipe(CDGMolds.CMI.PLATE, "tconstruct:plate_cast")
-	addMoldRecipe(CDGMolds.CDG.BAR, "tconstruct:rod_cast")
-	addMoldRecipe(CDGMolds.CDG.BOWL, "minecraft:bowl")
-	addMoldRecipe(CDGMolds.CDG.CHAIN, "minecraft:chain")
-	addMoldRecipe(CDGMolds.CDG.LINES, "minecraft:iron_ingot")
+	addMoldRecipe(CDGMolds.CMI.PLATE)
+	addMoldRecipe(CDGMolds.CDG.BAR)
+	addMoldRecipe(CDGMolds.CDG.BOWL)
+	addMoldRecipe(CDGMolds.CDG.CHAIN)
+	addMoldRecipe(CDGMolds.CDG.LINES)
 
 	kubejs.shaped("createdieselgenerators:mold", [
 		"AA",
@@ -50,12 +50,11 @@ function moldRecipes(event) {
 	/**
 	 * 
 	 * @param {CDGMolds} moldId 
-	 * @param {Internal.ItemStack_} input 
 	 * @returns 
 	 */
-	function addMoldRecipe(moldId, input) {
-		return vintageimprovements.curving(mold(moldId), [
+	function addMoldRecipe(moldId) {
+		return create.cutting(mold(moldId), [
 			"createdieselgenerators:mold"
-		]).itemAsHead(input)
+		])
 	}
 }
