@@ -1,6 +1,7 @@
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-		"layer0": "cmi:item/material/mold/plate"
+		"layer0": "createdieselgenerators:item/mold/blank",
+		"layer1": "cmi:item/material/mold/cdg/plate"
 	}
 }
