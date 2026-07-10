@@ -47,10 +47,10 @@ ServerEvents.recipes((event) => {
 		 * @param {boolean} output 是否添加输出接口
 		 */
 		function addBus(suffix, ingredient, input, output) {
-			const resultPrefix = suffix ? `${CONTROLLER}_${suffix}` : CONTROLLER
+			const RESULT_PREFIX = suffix ? `${CONTROLLER}_${suffix}` : CONTROLLER
 
 			if (input) {
-				kubejs.shaped(`${resultPrefix}_input_bus`, [
+				kubejs.shaped(`${RESULT_PREFIX}_input_bus`, [
 					"A",
 					"B"
 				], {
@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
 			}
 
 			if (output) {
-				kubejs.shaped(`${resultPrefix}_output_bus`, [
+				kubejs.shaped(`${RESULT_PREFIX}_output_bus`, [
 					"A",
 					"B"
 				], {
