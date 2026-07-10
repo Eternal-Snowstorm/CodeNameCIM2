@@ -90,11 +90,16 @@ ServerEvents.tags("block", (event) => {
 	new MBDBlockTag("reinforced_coke_oven")
 		.pickaxe()
 		.iron()
+
+	new MBDBlockTag("improved_rubber_extractor")
+		.pickaxe()
+		.stone()
 })
 
 ServerEvents.tags("item", (event) => {
 	let machines = [
-		"reinforced_coke_oven"
+		"reinforced_coke_oven",
+		"improved_rubber_extractor"
 	]
 	machines.forEach((machine) => {
 		event.get("cmi:machine_port")
