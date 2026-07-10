@@ -4,20 +4,18 @@ ClientEvents.lang("en_us", (event) => {
 	 * @param {String} key 
 	 * @param {String} value 
 	 */
-	function addMbdLang(key, value) {
+	function addMBDLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}`, value)
-
-		event.add(`block.${Cmi.MODID}.${key}_hatch`, `${value} Hatch`)
 
 		event.add(`block.${Cmi.MODID}.${key}_input_bus`, `${value} Input Bus`)
 		event.add(`block.${Cmi.MODID}.${key}_output_bus`, `${value} Output Bus`)
 
 		event.add(`${Cmi.MODID}.${key}`, value)
 
-		addIOerLang(key, "item", value, "Item")
-		addIOerLang(key, "fluid", value, "Fluid")
-		addIOerLang(key, "energy", value, "Energy")
-		addIOerLang(key, "gas", value, "Gas")
+		addIOerLang(key, "item", value, " Iten")
+		addIOerLang(key, "fluid", value, " Fluid")
+		addIOerLang(key, "energy", value, " Energy")
+		addIOerLang(key, "gas", value, " Gas")
 	}
 
 	/**
@@ -32,5 +30,6 @@ ClientEvents.lang("en_us", (event) => {
 		event.add(`block.${Cmi.MODID}.${key}_${type}_output_bus`, `${value + typeValue} Output Bus`)
 	}
 
-	addMbdLang("reinforced_coke_oven", "Reinforced Coke Odven")
+	addMBDLang("reinforced_coke_oven", "Reinforced Coke Oven")
+	addMBDLang("improved_rubber_extractor", "QM-0726 Improved Rubber Extractor")
 })

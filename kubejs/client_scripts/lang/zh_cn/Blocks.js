@@ -36,6 +36,16 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${Cmi.MODID}.${key}_casing`, `${value}机壳`)
 	}
 
+	/**
+	 * 
+	 * @param {String} key 
+	 * @param {String} value 
+	 */
+	function addBuildLang(key, value) {
+		event.add(`block.${Cmi.MODID}.${key}_slab`, `${value}台阶`)
+		event.add(`block.${Cmi.MODID}.${key}_stairs`, `${value}楼梯`)
+	}
+
 	addCasingLang("iron", "铁")
 	addCasingLang("bronze", "青铜")
 	addCasingLang("steel", "钢")
@@ -61,7 +71,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("refractory_grout", "耐火砖泥")
 	addBlockLang("entro_block", "恩特罗块")
 
-	addBlockLang("brass_stairs", "黄铜楼梯")
 	addBlockLang("eden_crystal", "伊甸水晶")
 
 	addBlockLang("impact_pile", "冲击桩")
@@ -136,4 +145,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("sergei", "谢尔盖")
 	addBlockLang("lirx_ovo", "栗子")
 	addBlockLang("ein_nameuwu", "幽灵猫")
+
+	// build
+	addBuildLang("brass", "黄铜")
+	addBuildLang("industrial_iron", "工业铁")
 })
