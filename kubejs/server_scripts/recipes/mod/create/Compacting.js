@@ -18,4 +18,11 @@ ServerEvents.recipes((event) => {
 		"create:cinder_flour",
 		"minecraft:sugar"
 	]).id("create:compacting/blaze_cake")
+
+	// 高定向热解石墨
+	create.compacting("immersiveengineering:dust_hop_graphite", [
+		"8x #forge:dusts/coal_coke"
+	])
+		.superheated()
+		.id("immersiveengineering:squeezer/graphite_dust")
 })

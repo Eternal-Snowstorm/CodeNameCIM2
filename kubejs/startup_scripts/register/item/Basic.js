@@ -30,16 +30,19 @@ StartupEvents.registry("item", (event) => {
 
 	// 幻晶晶体
 	addMaterial("dreamcore_crystal")
+		.glow(true)
 		.tag("forge:gems")
 		.tag("forge:gems/dreamcore")
 
 	// 幻晶原石
 	addMaterial("dreamcore_ore")
+		.glow(true)
 		.tag("forge:raw_materials")
 		.tag("forge:raw_materials/dreamcore")
 
 	// 幻晶晶种
 	addMaterial("dreamcore_seed")
+		.glow(true)
 
 	// 黏血球
 	addItem("blood_slime_ball")

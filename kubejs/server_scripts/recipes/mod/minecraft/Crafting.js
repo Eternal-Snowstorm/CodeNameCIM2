@@ -11,6 +11,15 @@ ServerEvents.recipes((event) => {
 		B: "#forge:flints"
 	}).id("minecraft:furnace")
 
+	// 切石机
+	kubejs.shaped("minecraft:stonecutter", [
+		" A ",
+		"BBB"
+	], {
+		A: ["#forge:plates/andesite", "#forge:plates/iron"],
+		B: "#forge:stone"
+	}).id("minecraft:stonecutter")
+
 	// 箱子
 	kubejs.shaped("4x minecraft:chest", [
 		"AAA",

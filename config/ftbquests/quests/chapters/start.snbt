@@ -135,7 +135,10 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["4EAFBA3A19526127"]
+			dependencies: [
+				"4EAFBA3A19526127"
+				"79EF51A3C7D8075C"
+			]
 			description: ["能让树苗立刻生长且不消耗"]
 			id: "0849A3B5EAAE4E14"
 			shape: "gear"
@@ -856,6 +859,36 @@
 			title: "流体燃料选择"
 			x: 16.5d
 			y: 14.5d
+		}
+		{
+			dependencies: ["21ED583750523195"]
+			description: [
+				"在星球地层里发现了一种特殊的晶体矿物"
+				"它的表面上一直浮动着奇怪的光辉, 似乎蕴含着能量"
+				"手上暂时没有什么鉴定材料, 但是我有一种直觉, 我可以用特殊的结构把它的能量激发出来"
+				"我需要给这种用于激发晶体能量的结构起一个名字"
+				"就叫...构件吧"
+			]
+			id: "79EF51A3C7D8075C"
+			rewards: [{
+				count: 16
+				id: "26485367B073FBC9"
+				item: "cmi:dreamcore_ore"
+				type: "item"
+			}]
+			subtitle: "当一种矿物发光时, 你最好祈祷它也在发热"
+			tasks: [{
+				icon: "cmi:dreamcore_crystal"
+				id: "50BECA7C49CFC149"
+				observe_type: 0
+				timer: 1L
+				title: "观察幻晶矿石"
+				to_observe: "cmi:dreamcore_crystal_ore"
+				type: "observation"
+			}]
+			title: "梦幻般的晶体"
+			x: -5.0d
+			y: 12.0d
 		}
 	]
 	title: "炽焰匠心"
