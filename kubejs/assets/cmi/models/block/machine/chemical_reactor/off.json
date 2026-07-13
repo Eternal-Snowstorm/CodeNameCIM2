@@ -2,7 +2,7 @@
   "parent": "minecraft:block/orientable",
   "textures": {
     "front": "cmi:block/machine/reinforced_coke_oven/off",
-    "side": "cmi:block/machine/reinforced_coke_oven/side",
-    "top": "cmi:block/machine/reinforced_coke_oven/side"
+	"side": "cmi:block/casing/steel/casing",
+	"top": "cmi:block/casing/steel/casing"
   }
 }

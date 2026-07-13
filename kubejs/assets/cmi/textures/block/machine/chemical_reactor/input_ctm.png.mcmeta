@@ -1,7 +1,4 @@
 {
-	"ldlib": {
-    "connection":"cmi:block/casing/steel/ctm"
-	},
 	"animation": {
 		"frametime": 2
 	}
