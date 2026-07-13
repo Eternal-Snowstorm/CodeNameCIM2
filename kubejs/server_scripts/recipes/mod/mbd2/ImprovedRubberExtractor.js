@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	let { cmi } = event.getRecipes()
 
 	cmi.improved_rubber_extractor()
-		.inputFE(500)
-		.outputFluids(Fluid.of("thermal:latex", 3000))
-		.duration(20 * 10)
+		.inputFE(250)
+		.outputFluids(Fluid.of("thermal:latex", 125))
+		.duration(1)
 })
