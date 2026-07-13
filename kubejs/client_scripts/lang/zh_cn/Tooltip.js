@@ -109,6 +109,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("minecraft:sugar_cane", "食用会返还一个甘蔗纤维")
 	addCommonTooltipLang("#cmi:machine_port", "制作时不消耗机器核心")
 	addCommonTooltipLang("#cmi:machine_core", "制作接口时不消耗")
+	addCommonTooltipLang("#forge:tools/wrench", "工作台制作构件时不消耗")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",

@@ -139,7 +139,11 @@
 				"4EAFBA3A19526127"
 				"79EF51A3C7D8075C"
 			]
-			description: ["能让树苗立刻生长且不消耗"]
+			description: [
+				"能让树苗立刻生长且不消耗"
+				""
+				"扳手在前面的初始套件中有赠送, 不需要担心制作时会消耗"
+			]
 			id: "0849A3B5EAAE4E14"
 			shape: "gear"
 			size: 2.0d
@@ -634,6 +638,54 @@
 			dependencies: ["4840B337A93659FC"]
 			description: ["                  这是你应得的"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tconstruct:excavator"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 1
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 2
+							name: "tconstruct:knockback"
+						}
+						{
+							level: 1
+							name: "tconstruct:pathing"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.2f
+						"tconstruct:durability": 3.75f
+						"tconstruct:mining_speed": 0.3f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 4.2000003f
+						"tconstruct:durability": 984.375f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 1.8000001f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
 			id: "27027EE58989C749"
 			invisible: true
 			rewards: [{
@@ -664,6 +716,51 @@
 			dependencies: ["4840B337A93659FC"]
 			description: ["                  这是你应得的"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tconstruct:broad_axe"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 1
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 1
+							name: "tconstruct:stripping"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.65f
+						"tconstruct:durability": 4.25f
+						"tconstruct:mining_speed": 0.3f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 11.55f
+						"tconstruct:attack_speed": 0.6f
+						"tconstruct:durability": 1062.5f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 1.8000001f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
 			id: "7987BD41A7A33F99"
 			invisible: true
 			rewards: [{
@@ -699,6 +796,43 @@
 				tag: {
 					Damage: 0
 					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 1
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 2
+							name: "tconstruct:smite"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.35f
+						"tconstruct:durability": 4.0f
+						"tconstruct:mining_speed": 0.4f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 6.75f
+						"tconstruct:attack_speed": 0.75f
+						"tconstruct:durability": 1000.0f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 2.4f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
 				}
 			}
 			id: "13E71E8494A3B774"
@@ -733,6 +867,51 @@
 			dependencies: ["4840B337A93659FC"]
 			description: ["                  这是你应得的"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tconstruct:vein_hammer"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 2
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 2
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 2
+							name: "tconstruct:pierce"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.25f
+						"tconstruct:durability": 5.0f
+						"tconstruct:mining_speed": 0.3f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 7.5f
+						"tconstruct:attack_speed": 0.85f
+						"tconstruct:durability": 1250.0f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 1.8000001f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
 			id: "0C1214BEA3AA5904"
 			invisible: true
 			rewards: [{
@@ -743,7 +922,7 @@
 			}]
 			subtitle: "你很清楚什么工具适应什么需求"
 			tasks: [{
-				id: "2880F63BAE54CB70"
+				id: "61E4A85D1C24141D"
 				item: {
 					Count: 1
 					id: "tconstruct:vein_hammer"

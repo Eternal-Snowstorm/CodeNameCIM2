@@ -38,6 +38,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("minecraft:sugar_cane")
 	addCommonTooltip("#cmi:machine_port")
 	addCommonTooltip("#cmi:machine_core")
+	addCommonTooltip("#forge:tools/wrench")
 
 	/**
 	 * 
