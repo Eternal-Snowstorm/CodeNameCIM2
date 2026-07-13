@@ -1,7 +1,4 @@
 {
-	"animation": {
-		"frametime": 2
-	},
 	"ctm": {
 		"ctm_version": 1,
 		"type": "CTM",
@@ -25,5 +22,8 @@
 				}
 			]
 		}
+	},
+	"animation": {
+		"frametime": 2
 	}
 }
