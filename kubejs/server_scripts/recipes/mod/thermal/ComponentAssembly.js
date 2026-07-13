@@ -79,28 +79,32 @@ ServerEvents.recipes((event) => {
 		"#forge:gears/invar",
 		Mechanisms.THERMAL.COM,
 		"#forge:plates/industrial_iron",
-		Mechanisms.WOODEN.COM
+		Mechanisms.WOODEN.COM,
+		"thermal:cured_rubber"
 	]).id("pipez:item_pipe")
 
 	addComponRecipe("16x pipez:fluid_pipe", [
 		"#forge:gears/invar",
 		Mechanisms.THERMAL.COM,
 		"#forge:plates/industrial_iron",
-		Mechanisms.COPPER.COM
+		Mechanisms.COPPER.COM,
+		"thermal:cured_rubber"
 	]).id("pipez:fluid_pipe")
 
 	addComponRecipe("16x pipez:energy_pipe", [
 		"#forge:gears/invar",
 		Mechanisms.THERMAL.COM,
 		"#forge:plates/industrial_iron",
-		Mechanisms.REDSTONE.COM
+		Mechanisms.REDSTONE.COM,
+		"thermal:cured_rubber"
 	]).id("pipez:energy_pipe")
 
 	addComponRecipe("16x pipez:gas_pipe", [
 		"#forge:gears/invar",
 		Mechanisms.THERMAL.COM,
 		"#forge:plates/industrial_iron",
-		Mechanisms.AIR.COM
+		Mechanisms.AIR.COM,
+		"thermal:cured_rubber"
 	]).id("pipez:gas_pipe")
 
 	addComponRecipe("16x pipez:universal_pipe", [

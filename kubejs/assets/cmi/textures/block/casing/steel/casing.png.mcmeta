@@ -1,7 +1,7 @@
 {
 	"ctm": {
 		"ctm_version": 1,
-		"type": "CTM",
+		"type": "ctm",
 		"layer": "SOLID",
 		"textures": [
 			"cmi:block/casing/steel/ctm"

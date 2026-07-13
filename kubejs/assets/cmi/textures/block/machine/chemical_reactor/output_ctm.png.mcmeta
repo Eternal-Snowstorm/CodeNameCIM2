@@ -1,23 +1,5 @@
 {
 	"animation": {
 		"frametime": 2
-	},
-	"ctm": {
-		"ctm_version": 1,
-		"type": "CTM",
-		"layer": "SOLID",
-		"textures": [
-			"cmi:block/machine/chemical_reactor/output_ctm"
-		],
-		"extra": {
-			"connect_to": [
-				{
-					"block": "cmi:block/casing/steel"
-				},
-				{
-					"block": "cmi:block/machine/chemical_reactor/output"
-				}
-			]
-		}
 	}
 }

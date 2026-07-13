@@ -1,8 +1,7 @@
 {
-	"parent": "minecraft:block/orientable",
+	"parent": "mekanism:block/machine",
 	"textures": {
-		"front": "cmi:block/machine/chemical_reactor/output",
-		"side": "cmi:block/casing/steel/casing",
-		"top": "cmi:block/casing/steel/casing"
+		"sides": "cmi:block/casing/steel/casing",
+		"front": "cmi:block/machine/chemical_reactor/output"
 	}
 }
