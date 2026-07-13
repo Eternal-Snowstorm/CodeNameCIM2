@@ -2,7 +2,7 @@
 	"parent": "minecraft:block/orientable",
 	"textures": {
 		"front": "cmi:block/machine/chemical_reactor/input",
-		"side": "cmi:block/casing/steel",
-		"top": "cmi:block/casing/steel"
+		"side": "cmi:block/casing/steel/casing",
+		"top": "cmi:block/casing/steel/casing"
 	}
 }

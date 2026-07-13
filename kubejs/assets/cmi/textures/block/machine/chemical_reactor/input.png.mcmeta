@@ -12,10 +12,16 @@
 		"extra": {
 			"connect_to": [
 				{
-					"block": "cmi:block/casing/steel"
+					"block": "cmi:steel_casing"
 				},
 				{
-					"block": "cmi:block/machine/chemical_reactor/input"
+					"block": "cmi:chemical_reactor_output_bus"
+				},
+				{
+					"block": "cmi:chemical_reactor_input_bus"
+				},
+				{
+					"block": "cmi:chemical_reactor"
 				}
 			]
 		}

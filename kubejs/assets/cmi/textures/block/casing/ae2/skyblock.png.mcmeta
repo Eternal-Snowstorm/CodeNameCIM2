@@ -1,5 +1,13 @@
 {
-	"ldlib": {
-    "connection":"cmi:block/casing/ae2/skyblock_ctm"
+	"animation": {
+		"frametime": 2
+	},
+	"ctm": {
+		"ctm_version": 1,
+		"type": "CTM",
+		"layer": "SOLID",
+		"textures": [
+			"cmi:block/casing/ae2/skyblock_ctm"
+		]
 	}
 }

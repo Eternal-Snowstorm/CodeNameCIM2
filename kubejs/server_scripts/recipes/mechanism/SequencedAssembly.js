@@ -35,6 +35,11 @@ ServerEvents.recipes((event) => {
 		this.loops = 1
 		return this
 	}
+	/**
+	 * 
+	 * @param {Internal.Ingredient_} ingredient 
+	 * @returns 
+	 */
 	SequencedAssemblyRecipe.prototype.input = function (ingredient) {
 		this.ingredient = ingredient
 		return this
@@ -394,5 +399,4 @@ ServerEvents.recipes((event) => {
 		.laserCutting(1000)
 		.deploying(Mechanisms.PART.ENGIN)
 		.build()
-
 })

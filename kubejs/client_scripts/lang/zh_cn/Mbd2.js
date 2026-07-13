@@ -34,4 +34,5 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addMBDLang("reinforced_coke_oven", "高级焦炉")
 	addMBDLang("improved_rubber_extractor", "QM-0726型橡胶提取器")
+	addMBDLang("chemical_reactor", "化学反应釜")
 })

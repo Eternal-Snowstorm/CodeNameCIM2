@@ -1,5 +1,26 @@
 {
-	"ldlib": {
-    "connection":"cmi:block/casing/steel/ctm"
+	"ctm": {
+		"ctm_version": 1,
+		"type": "CTM",
+		"layer": "SOLID",
+		"textures": [
+			"cmi:block/casing/steel/ctm"
+		],
+		"extra": {
+			"connect_to": [
+				{
+					"block": "cmi:steel_casing"
+				},
+				{
+					"block": "cmi:chemical_reactor_output_bus"
+				},
+				{
+					"block": "cmi:chemical_reactor_input_bus"
+				},
+				{
+					"block": "cmi:chemical_reactor"
+				}
+			]
+		}
 	}
 }
