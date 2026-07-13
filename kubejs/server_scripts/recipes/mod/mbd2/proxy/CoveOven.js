@@ -34,7 +34,7 @@ MBDRecipeTypeEvents.onTransferProxyRecipe(($) => {
 		.outputItems(recipe.output.get())
 		.outputFluids(Fluid.of(creosote, recipe.creosoteOutput))
 		.duration(recipe.time * 0.5)
-		.id(proxyRecipeId + "_mbd2un")
+		.id(proxyRecipeId + "_mbd2_proxy")
 
 	event.mbdRecipe = builder.buildMBDRecipe()
 })
