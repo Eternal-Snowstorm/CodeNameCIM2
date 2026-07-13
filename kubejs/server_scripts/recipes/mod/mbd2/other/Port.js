@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
 		}
 
 		let item = "i"
-		let fluid = "fluid"
+		let fluid = "f"
 		let energy = "e"
 		let common = "c"
 
