@@ -7,8 +7,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	function addMBDLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}`, value)
 
-		event.add(`block.${Cmi.MODID}.${key}_hatch`, `${value}仓`)
-
 		event.add(`block.${Cmi.MODID}.${key}_input_bus`, `${value}输入总线`)
 		event.add(`block.${Cmi.MODID}.${key}_output_bus`, `${value}输出总线`)
 
