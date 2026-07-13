@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
 		" A ",
 		"BBB"
 	], {
-		A: ["#forge:plates/andesite", "#forge:plates/iron"],
+		A: "#forge:plates/iron",
 		B: "#forge:stone"
 	}).id("minecraft:stonecutter")
 

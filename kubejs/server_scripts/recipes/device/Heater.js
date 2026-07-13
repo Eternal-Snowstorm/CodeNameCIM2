@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 	], {
 		M: Mechanisms.STONE.COM,
 		B: BRICK,
-		X: "#tconstruct:gauge"
+		X: "#tconstruct:seared_tanks"
 	}).id("tconstruct:smeltery/seared/melter")
 
 	// 焦黑加热器
@@ -83,6 +83,16 @@ ServerEvents.recipes((event) => {
 	minecraft.stonecutting("tconstruct:seared_ingot_tank", [
 		"tconstruct:seared_ingot_gauge"
 	])
+
+	// 焦褐合金炉
+	kubejs.shaped("tconstruct:scorched_alloyer", [
+		"ABA",
+		"AMA"
+	], {
+		A: "tconstruct:scorched_brick",
+		B: "#tconstruct:scorched_tanks",
+		M: Mechanisms.NETHER.COM
+	}).id("tconstruct:smeltery/scorched/alloyer")
 
 	// 焦褐燃料储罐
 	kubejs.shaped("tconstruct:scorched_fuel_tank", [

@@ -338,6 +338,7 @@
 				"1231A867DC253AAA"
 				"21B1DA369A461281"
 				"799329AFB898606F"
+				"79EF51A3C7D8075C"
 			]
 			id: "73D78755B4430729"
 			shape: "gear"
@@ -869,6 +870,7 @@
 				"我需要给这种用于激发晶体能量的结构起一个名字"
 				"就叫...构件吧"
 			]
+			hide_dependent_lines: true
 			id: "79EF51A3C7D8075C"
 			rewards: [{
 				count: 16
@@ -887,8 +889,8 @@
 				type: "observation"
 			}]
 			title: "梦幻般的晶体"
-			x: -5.0d
-			y: 12.0d
+			x: 2.0d
+			y: 10.0d
 		}
 	]
 	title: "炽焰匠心"
