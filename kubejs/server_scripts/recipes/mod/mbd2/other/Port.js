@@ -81,10 +81,10 @@ ServerEvents.recipes((event) => {
 			}
 		}
 
-		const ITEM = getPortIO("item")
-		const FLUID = getPortIO("fluid")
-		const ENERGY = getPortIO("energy")
-		const COMMON = getPortIO("common")
+		const ITEM = getPortIO("i")
+		const FLUID = getPortIO("f")
+		const ENERGY = getPortIO("e")
+		const COMMON = getPortIO("c")
 
 		addBus("item", ITEM_CONTAINER, ITEM.input, ITEM.output)
 		addBus("fluid", FLUID_TANKS, FLUID.input, FLUID.output)
