@@ -36,6 +36,34 @@ ServerEvents.recipes((event) => {
 
 	minecraft.stonecutting("4x minecraft:pointed_dripstone", "minecraft:dripstone_block")
 
+	minecraft.stonecutting("2x immersiveengineering:alu_scaffolding_standard", "#forge:plates/aluminum")
+		.id("immersiveengineering:crafting/alu_scaffolding_standard")
+	minecraft.stonecutting("immersiveengineering:alu_scaffolding_standard", "immersiveengineering:alu_scaffolding_wooden_top")
+		.id("immersiveengineering:crafting/alu_scaffolding_standard_from_wooden_top")
+	minecraft.stonecutting("immersiveengineering:alu_scaffolding_standard", "immersiveengineering:alu_scaffolding_grate_top")
+
+	minecraft.stonecutting("immersiveengineering:alu_scaffolding_grate_top", "immersiveengineering:alu_scaffolding_standard")
+		.id("immersiveengineering:crafting/alu_scaffolding_grate_top_from_standard")
+	minecraft.stonecutting("immersiveengineering:alu_scaffolding_grate_top", "immersiveengineering:alu_scaffolding_wooden_top")
+
+	minecraft.stonecutting("immersiveengineering:alu_scaffolding_wooden_top", "immersiveengineering:alu_scaffolding_grate_top")
+		.id("immersiveengineering:crafting/alu_scaffolding_wooden_top_from_grate_top")
+	minecraft.stonecutting("immersiveengineering:alu_scaffolding_wooden_top", "immersiveengineering:alu_scaffolding_standard")
+
+	minecraft.stonecutting("2x immersiveengineering:steel_scaffolding_standard", "#forge:plates/steel")
+		.id("immersiveengineering:crafting/steel_scaffolding_standard")
+	minecraft.stonecutting("immersiveengineering:steel_scaffolding_standard", "immersiveengineering:steel_scaffolding_wooden_top")
+		.id("immersiveengineering:crafting/steel_scaffolding_standard_from_wooden_top")
+	minecraft.stonecutting("immersiveengineering:steel_scaffolding_standard", "immersiveengineering:steel_scaffolding_grate_top")
+
+	minecraft.stonecutting("immersiveengineering:steel_scaffolding_grate_top", "immersiveengineering:steel_scaffolding_standard")
+		.id("immersiveengineering:crafting/steel_scaffolding_grate_top_from_standard")
+	minecraft.stonecutting("immersiveengineering:steel_scaffolding_grate_top", "immersiveengineering:steel_scaffolding_wooden_top")
+
+	minecraft.stonecutting("immersiveengineering:steel_scaffolding_wooden_top", "immersiveengineering:steel_scaffolding_grate_top")
+		.id("immersiveengineering:crafting/steel_scaffolding_wooden_top_from_grate_top")
+	minecraft.stonecutting("immersiveengineering:steel_scaffolding_wooden_top", "immersiveengineering:steel_scaffolding_standard")
+
 	let treatedWood = [
 		"immersiveengineering:treated_scaffold",
 		"immersiveengineering:treated_wood_vertical",
