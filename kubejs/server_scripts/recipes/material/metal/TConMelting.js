@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
 		])
 
 		let meltingPoint = CmiMetalRegistry.getMetal(metal).getMeltingPoint()
-		let fluidId = Ingredient.getFirstFluidId(`tconstruct:molten_${metal}`)
+		let fluidId = `tconstruct:molten_${metal}`
 		let namespace = CmiMetalRegistry.getMetal(metal).getNamespace()
 		let ingot = `#forge:ingots/${metal}`
 		let plate = `#forge:plates/${metal}`
@@ -30,53 +30,55 @@ ServerEvents.recipes((event) => {
 
 		if (fluidId !== null) {
 			if (Ingredient.isNotNull(ingot)) {
-				tconstruct.melting(Fluid.of(fluidId, 90))
+				tconstruct.melting(Fluid.tag("tag", fluidId, 90))
 					.ingredient(ingot)
 					.time(100)
 					.temperature(meltingPoint)
 			}
 
 			if (Ingredient.isNotNull(plate)) {
-				tconstruct.melting(Fluid.of(fluidId, 90))
+				tconstruct.melting(Fluid.tag("tag", fluidId, 90))
 					.ingredient(plate)
 					.time(100)
 					.temperature(meltingPoint)
 			}
 
 			if (Ingredient.isNotNull(nugget)) {
-				tconstruct.melting(Fluid.of(fluidId, 10))
+				tconstruct.melting(Fluid.tag("tag", fluidId, 10))
 					.ingredient(nugget)
 					.time(60)
 					.temperature(meltingPoint)
 			}
 
 			if (Ingredient.isNotNull(gear)) {
-				tconstruct.melting(Fluid.of(fluidId, 360))
+				tconstruct.melting(Fluid.tag("tag", fluidId, 90 * 4))
 					.ingredient(gear)
 					.time(120)
 					.temperature(meltingPoint)
 			}
 
 			if (Ingredient.isNotNull(dust)) {
-				tconstruct.melting(Fluid.of(fluidId, 90))
+				tconstruct.melting(Fluid.tag("tag", fluidId, 90))
 					.ingredient(dust)
 					.time(80)
 					.temperature(meltingPoint)
 			}
 
 			if (metal.toString() !== "aluminum" && Ingredient.isNotNull(rawMaterial)) {
-				tconstruct.melting(Fluid.of(fluidId, 120))
+				tconstruct.melting(Fluid.tag("tag", fluidId, 90))
 					.ingredient(rawMaterial)
 					.time(100)
 					.temperature(meltingPoint)
 			}
 
 			if (Ingredient.isNotNull(rawBlock)) {
-				if (metal.toString() !== "aluminum" &&
-					metal.toString() !== "desh" &&
-					metal.toString() !== "ostrum" &&
-					metal.toString() !== "calorite") {
-					tconstruct.melting(Fluid.of(fluidId, 1080))
+				if (
+					metal.toString() !== "aluminum"
+					&& metal.toString() !== "desh"
+					&& metal.toString() !== "ostrum"
+					&& metal.toString() !== "calorite"
+				) {
+					tconstruct.melting(Fluid.tag("tag", fluidId, 1080))
 						.ingredient(rawBlock)
 						.time(200)
 						.temperature(meltingPoint)
@@ -84,11 +86,13 @@ ServerEvents.recipes((event) => {
 			}
 
 			if (Ingredient.isNotNull(block)) {
-				if (metal.toString() !== "aluminum" &&
-					metal.toString() !== "desh" &&
-					metal.toString() !== "ostrum" &&
-					metal.toString() !== "calorite") {
-					tconstruct.melting(Fluid.of(fluidId, 810))
+				if (
+					metal.toString() !== "aluminum"
+					&& metal.toString() !== "desh"
+					&& metal.toString() !== "ostrum"
+					&& metal.toString() !== "calorite"
+				) {
+					tconstruct.melting(Fluid.tag("tag", fluidId, 90 * 9))
 						.ingredient(block)
 						.time(200)
 						.temperature(meltingPoint)

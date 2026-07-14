@@ -183,7 +183,7 @@ ServerEvents.recipes((event) => {
 	]
 	barTypes.forEach((type) => {
 		tconstruct.casting_table(`createdeco:${type}_bars`)
-			.fluid(Fluid.of(Ingredient.getFirstFluidId(`tconstruct:molten_${type}`), 30))
+			.fluid(Fluid.tag("tag", `tconstruct:molten_${type}`, 30))
 			.cooling_time(35)
 	})
 
