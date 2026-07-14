@@ -37,7 +37,7 @@ let namespacePriority = [
 function getHighPriorityItem(name) {
 	// 引入参数
 	let currentNamespace
-	let outputId
+	let outputId = ""
 	let priorityValue
 
 	// 遍历获取到的tag下每个物品的命名空间
@@ -221,6 +221,15 @@ let SmeltingRecipes = {
 			smoking: smoking
 		}
 	}
+}
+
+/**
+ * 
+ * @param {InputItem_} tag 
+ * @returns 
+ */
+function getItemsUnderTag(tag) {
+	return Ingredient.of(tag).getItemIds()
 }
 
 /**
