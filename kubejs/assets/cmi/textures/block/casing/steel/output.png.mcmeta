@@ -1,10 +1,10 @@
 {
 	"ctm": {
 		"ctm_version": 1,
-		"type": "ctm",
+		"type": "CTM",
 		"layer": "SOLID",
 		"textures": [
-			"cmi:block/casing/steel/ctm"
+			"cmi:block/casing/steel/output_ctm"
 		],
 		"extra": {
 			"connect_to": [
@@ -17,5 +17,8 @@
 				}
 			]
 		}
+	},
+	"animation": {
+		"frametime": 2
 	}
 }

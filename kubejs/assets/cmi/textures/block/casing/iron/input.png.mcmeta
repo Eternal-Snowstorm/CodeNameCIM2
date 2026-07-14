@@ -4,9 +4,8 @@
 		"type": "CTM",
 		"layer": "SOLID",
 		"textures": [
-			"cmi:block/casing/iron/ctm"
+			"cmi:block/casing/iron/input_ctm"
 		],
-		
 		"extra": {
 			"connect_to": [
 				{
@@ -14,5 +13,8 @@
 				}
 			]
 		}
+	},
+	"animation": {
+		"frametime": 2
 	}
 }
