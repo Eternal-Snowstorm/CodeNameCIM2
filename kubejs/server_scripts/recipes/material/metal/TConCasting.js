@@ -10,32 +10,34 @@ ServerEvents.recipes((event) => {
 			return
 		}
 
-		const INGOT = `#forge:ingots/${metal}`
-		const NUGGET = `#forge:nuggets/${metal}`
-		const BLOCK = `#forge:storage_blocks/${metal}`
-		const PLATE = `#forge:plates/${metal}`
-		const ROD = `#forge:rods/${metal}`
-		const GEAR = `#forge:gears/${metal}`
-		const COIN = `#forge:coins/${metal}`
+		const INGOT = getHighPriorityItem(getItemsUnderTag(`#forge:ingots/${metal}`))
+		const NUGGET = getHighPriorityItem(getItemsUnderTag(`#forge:nuggets/${metal}`))
+		const BLOCK = getHighPriorityItem(getItemsUnderTag(`#forge:storage_blocks/${metal}`))
+		const PLATE = getHighPriorityItem(getItemsUnderTag(`#forge:plates/${metal}`))
+		const ROD = getHighPriorityItem(getItemsUnderTag(`#forge:rods/${metal}`))
+		const GEAR = getHighPriorityItem(getItemsUnderTag(`#forge:gears/${metal}`))
+		const COIN = getHighPriorityItem(getItemsUnderTag(`#forge:coins/${metal}`))
 
 		const MULTI_USE_CAST = "#tconstruct:casts/multi_use"
 		const SINGLE_USE_CAST = "#tconstruct:casts/single_use"
 
-		tconstruct.casting_table(INGOT)
-			.cast(`${MULTI_USE_CAST}/ingot`)
-			.fluid(Fluid.tag("tag", fluid, 90))
-			.cooling_time(20 * 3)
+		if (Ingredient.isNotNull(INGOT)) {
+			tconstruct.casting_table(INGOT)
+				.cast(`${MULTI_USE_CAST}/ingot`)
+				.fluid(Fluid.tag("tag", fluid, 90))
+				.cooling_time(20 * 3)
 
-		tconstruct.casting_table(INGOT)
-			.cast(`${SINGLE_USE_CAST}/ingot`)
-			.fluid(Fluid.tag("tag", fluid, 90))
-			.cooling_time(20 * 3)
-			.cast_consumed(true)
+			tconstruct.casting_table(INGOT)
+				.cast(`${SINGLE_USE_CAST}/ingot`)
+				.fluid(Fluid.tag("tag", fluid, 90))
+				.cooling_time(20 * 3)
+				.cast_consumed(true)
 
-		thermal.chiller(INGOT, [
-			Fluid.tag("fluidTag", fluid, 90),
-			`${MULTI_USE_CAST}/ingot`
-		]).energy(4800)
+			thermal.chiller(INGOT, [
+				Fluid.tag("fluidTag", fluid, 90),
+				`${MULTI_USE_CAST}/ingot`
+			]).energy(4800)
+		}
 
 		if (Ingredient.isNotNull(NUGGET)) {
 			tconstruct.casting_table(NUGGET)
