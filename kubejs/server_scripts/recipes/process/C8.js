@@ -241,13 +241,15 @@ ServerEvents.recipes((event) => {
 			Fluid.of("cmi:crystal_catalyt", 1000),
 			Fluid.of("cmi:sapphire_solution", 1000)
 		])
-		.outputItems("10x cmi:raw_titanium_dust")
+		.outputItems("10x cmi:dirty_titanium_dust")
 		.inputFE(32 * (20 * 10))
 		.duration(20 * 10)
+
 	thermal.smelter("cmi:raw_titanium_mixture", [
 		"cmi:raw_titanium_dust",
 		"#forge:dusts/aluminum"
 	])
+	
 	thermal.smelter([
 		"cmi:titanium_dust",
 		"create:crushed_raw_aluminum"

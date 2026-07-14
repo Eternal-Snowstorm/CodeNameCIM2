@@ -267,6 +267,16 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:light_aromatics", 100)
 	])
 
+	// 三硝基甲苯溶液
+	cmi.chemical_reactor()
+		.inputFluids([
+			Fluid.of("cmi:nitric_acid", 2000),
+			Fluid.of("cmi:light_aromatics", 1000)
+		])
+		.outputFluids(Fluid.of("cmi:trinitrotoluene_solution", 1000))
+		.inputFE(32 * (20 * 10))
+		.duration(20 * 10)
+
 	// 三硝基甲苯
 	thermal.refinery([
 		"cmi:trinitrotoluene"
