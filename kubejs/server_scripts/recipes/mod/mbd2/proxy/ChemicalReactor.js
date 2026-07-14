@@ -212,6 +212,6 @@ ServerEvents.recipes((event) => {
 			builder.duration(json.get("processingTime").getAsInt())
 		}
 
-		builder.id(recipe.getId().toString() + "_mbd2_proxy")
+		builder.id(recipe.getId() + "_mbd2_proxy")
 	})
 })
