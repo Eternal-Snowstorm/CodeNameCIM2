@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, createdieselgenerators, thermal, thermal_extra, tconstruct, immersiveengineering } = event.getRecipes()
+	let { create, createdieselgenerators, thermal, thermal_extra, tconstruct, cmi } = event.getRecipes()
 
 	// 蒸馏
 	createdieselgenerators.distillation([
@@ -220,18 +220,11 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 聚乙烯醇
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [],
-		"input_fluids": [
-			Fluid.tag("tag", "cmi:vinyl_alcohol", 2000).toJson()
-		],
-		"result_fluids": [
-			Fluid.of("cmi:polyvinyl_alcohol", 2000).toJson()
-		],
-		"outputs": [],
-		"time": 200
-	})
+	cmi.chemical_reactor()
+		.inputFluids(Fluid.of("cmi:vinyl_alcohol", 2000))
+		.outputFluids(Fluid.of("cmi:polyvinyl_alcohol", 2000))
+		.inputFE(32 * (20 * 10))
+		.duration(20 * 10)
 
 	// 结构塑胶
 	event.custom({
@@ -274,22 +267,6 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:light_aromatics", 100)
 	])
 
-	// 三硝基甲苯溶液
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [],
-		"input_fluids": [
-			Fluid.tag("tag", "cmi:nitric_acid", 2000).toJson(),
-			Fluid.tag("tag", "cmi:benzene", 2000).toJson(),
-			Fluid.tag("tag", "forge:ethene", 2000).toJson()
-		],
-		"result_fluids": [
-			Fluid.of("cmi:trinitrotoluene_solution", 6000).toJson()
-		],
-		"outputs": [],
-		"time": 200
-	})
-
 	// 三硝基甲苯
 	thermal.refinery([
 		"cmi:trinitrotoluene"
@@ -302,5 +279,4 @@ ServerEvents.recipes((event) => {
 	], [
 		Fluid.of("cmi:trinitrotoluene_solution", 100)
 	])
-
 })

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, thermal_extra, thermal, mekanism } = event.getRecipes()
+	let { create, thermal_extra, thermal, mekanism, cmi } = event.getRecipes()
 
 	// 钴电解质
 	thermal.crystallizer("cmi:cobalt_electrolyte", [
@@ -208,49 +208,18 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:activated_graphite", 100),
 		"cmi:raw_tungsten_dust"
 	])
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [
-			{
-				"base_ingredient": {
-					"tag": "forge:dusts/tungsten_mixture"
-				},
-				"count": 10
-			}
-		],
-		"input_fluids": [
-			Fluid.tag("tag", "cmi:hydrochloric_acid", 1000).toJson()
-		],
-		"result_fluids": [
-			Fluid.of("cmi:tungsten_solution", 2000).toJson()
-		],
-		"outputs": [],
-		"time": 200
-	})
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [
-			{
-				"base_ingredient": {
-					"tag": "forge:dusts/aluminum"
-				},
-				"count": 10
-			}
-		],
-		"input_fluids": [
-			Fluid.tag("tag", "cmi:tungsten_solution", 1000).toJson()
-		],
-		"result_fluids": [],
-		"outputs": [
-			{
-				"base_ingredient": {
-					"item": "cmi:tungsten_dust"
-				},
-				"count": 10
-			}
-		],
-		"time": 200
-	})
+	cmi.chemical_reactor()
+		.inputItems("10x #forge:dusts/tungsten_mixture")
+		.inputFluids(Fluid.of("cmi:hydrochloric_acid", 1000))
+		.outputFluids(Fluid.of("cmi:tungsten_solution", 2000))
+		.inputFE(32 * (20 * 10))
+		.duration(20 * 10)
+	cmi.chemical_reactor()
+		.inputItems("10x #forge:dusts/aluminum")
+		.inputFluids(Fluid.of("cmi:tungsten_solution", 1000))
+		.outputItems("10x cmi:tungsten_dust")
+		.inputFE(32 * (20 * 10))
+		.duration(20 * 10)
 
 	create.deploying("cmi:composite_tungsten_steel_plate", [
 		"cmi:incomplete_tungsten_steel_plate",
@@ -262,60 +231,23 @@ ServerEvents.recipes((event) => {
 		"2x mekanism:osmium"
 	)
 	// 钛
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [
-			{
-				"base_ingredient": {
-					"tag": "forge:gems/fluorite"
-				},
-				"count": 10
-			}
-		],
-		"input_fluids": [
-			Fluid.tag("tag", "forge:sulfuric_acid", 1000).toJson(),
-			Fluid.tag("tag", "cmi:hydrochloric_acid", 1000).toJson()
-		],
-		"result_fluids": [
-			Fluid.of("cmi:crystal_etching_solution", 3000).toJson()
-		],
-		"outputs": [],
-		"time": 200
-	})
 	create.mixing(Fluid.of("cmi:sapphire_solution", 200), [
 		"#forge:dusts/sapphire",
 		Fluid.of("cmi:crystal_etching_solution", 100)
 	])
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [
-			{
-				"base_ingredient": {
-					"tag": "forge:dusts/coal_coke"
-				},
-				"count": 10
-			}
-		],
-		"input_fluids": [
-			Fluid.tag("tag", "cmi:crystal_catalyt", 1000).toJson(),
-			Fluid.tag("tag", "cmi:sapphire_solution", 1000).toJson()
-		],
-		"result_fluids": [],
-		"outputs": [
-			{
-				"base_ingredient": {
-					"item": "cmi:raw_titanium_dust"
-				},
-				"count": 10
-			}
-		],
-		"time": 200
-	})
+	cmi.chemical_reactor()
+		.inputItems("10x #forge:dusts/coal_coke")
+		.inputFluids([
+			Fluid.of("cmi:crystal_catalyt", 1000),
+			Fluid.of("cmi:sapphire_solution", 1000)
+		])
+		.outputItems("10x cmi:raw_titanium_dust")
+		.inputFE(32 * (20 * 10))
+		.duration(20 * 10)
 	thermal.smelter("cmi:raw_titanium_mixture", [
 		"cmi:raw_titanium_dust",
 		"#forge:dusts/aluminum"
-	]
-	)
+	])
 	thermal.smelter([
 		"cmi:titanium_dust",
 		"create:crushed_raw_aluminum"
@@ -330,7 +262,6 @@ ServerEvents.recipes((event) => {
 	mekanism.oxidizing("#forge:dusts/uranium",
 		"mekanism:uranium_oxide"
 	).id("mekanism:processing/uranium/uranium_oxide")
-
 
 	thermal.bottler("cmi:filled_fuel_rod", [
 		"cmi:empty_fuel_rod",
