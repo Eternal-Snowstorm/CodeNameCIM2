@@ -206,24 +206,6 @@ StartupEvents.registry("item", (event) => {
 	// 氧化铝
 	addMaterial("aluminum_oxide")
 
-	// 幽匿碎块
-	addMaterial("sculk_chunk")
-
-	// 失活幽匿
-	addMaterial("dead_sculk")
-
-	// 活化幽匿
-	addMaterial("active_sculk")
-
-	// 幽匿骨粉
-	addMaterial("sculk_bonemeal")
-
-	// 幽匿之骨
-	addMaterial("sculk_bone")
-
-	// 幽匿电路板
-	addMaterial("sculk_circuit")
-
 	// 半熔融锇
 	addMaterial("pure_semi_molten_osmium")
 
@@ -232,12 +214,6 @@ StartupEvents.registry("item", (event) => {
 
 	// 锇晶圆
 	addMaterial("osmium_wafer")
-
-	// 铬钒混合物
-	addMaterial("chromium_vanadium_mixture")
-
-	// 铬钒催化剂
-	addMaterial("chromium_vanadium_catalyst")
 
 	// 碳纳米管
 	addMaterial("carbon_nanotube")
@@ -256,9 +232,6 @@ StartupEvents.registry("item", (event) => {
 
 	// 强化复合板
 	addMaterial("reinforced_composite_plate")
-
-	// 压电陶瓷
-	addMaterial("piezoelectric_ceramic")
 
 	// 未成形的碳纳米管
 	addMaterial("incomplete_carbon_nanotube")
@@ -284,9 +257,6 @@ StartupEvents.registry("item", (event) => {
 	// 硅晶圆
 	addMaterial("silicon_wafer")
 
-	// 高级电子元件
-	addMaterial("advanced_electronic_components")
-
 	// 石墨烯
 	addMaterial("graphene")
 
@@ -304,6 +274,9 @@ StartupEvents.registry("item", (event) => {
 
 	// 致密氧化物薄膜
 	addMaterial("dense_oxide_film")
+
+	// 高级电子元件
+	addMaterial("advanced_electronic_components")
 
 	// 精英电子元件
 	addMaterial("elite_electronic_components")
@@ -350,6 +323,9 @@ StartupEvents.registry("item", (event) => {
 
 	// 磁触点
 	addMaterial("magnetic_contact")
+
+	// 压电陶瓷
+	addMaterial("piezoelectric_ceramic")
 
 	// 恩特罗系列
 	addItem("entro_crystal")
@@ -609,4 +585,28 @@ StartupEvents.registry("item", (event) => {
 
 	// 复合陶瓷基板
 	// addMaterial("composite_ceramic_substrates")
+
+	// 幽匿碎块
+	// addMaterial("sculk_chunk")
+
+	// 失活幽匿
+	// addMaterial("dead_sculk")
+
+	// 活化幽匿
+	// addMaterial("active_sculk")
+
+	// 幽匿骨粉
+	// addMaterial("sculk_bonemeal")
+
+	// 幽匿之骨
+	// addMaterial("sculk_bone")
+
+	// 幽匿电路板
+	// addMaterial("sculk_circuit")
+
+	// 铬钒混合物
+	// addMaterial("chromium_vanadium_mixture")
+
+	// 铬钒催化剂
+	// addMaterial("chromium_vanadium_catalyst")
 })
