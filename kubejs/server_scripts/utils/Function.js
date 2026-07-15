@@ -16,6 +16,7 @@ let $FluidIngredient =
  */
 let namespacePriority = [
 	"cmi",
+	"minecraft",
 	"vintageimprovements",
 	"thermal",
 	"thermalconstruct",
@@ -39,7 +40,7 @@ let namespacePriority = [
 function getHighPriorityItem(name) {
 	// 引入参数
 	let currentNamespace
-	let outputId = ""
+	let outputId = name[0]
 	let priorityValue
 
 	// 遍历获取到的tag下每个物品的命名空间
