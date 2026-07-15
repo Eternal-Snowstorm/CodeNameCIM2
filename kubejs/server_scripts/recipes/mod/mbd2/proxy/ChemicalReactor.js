@@ -1,5 +1,5 @@
 let $FluidIngredient =
-	Java.loadClass("com.simibubi.create.foundation.fluid.FluidIngredient")
+	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
 
 /**
  * 
@@ -66,14 +66,17 @@ function itemIngredientOf(entry) {
 	if (json.has("tag")) {
 		return stackString(`#${json.get("tag").getAsString()}`, count)
 	}
-
-	return null
 }
 
 /**
  * 
  * @param {Internal.JsonElement_} entry 
  * @returns 
+ */
+/**
+ *
+ * @param {Internal.JsonElement_} entry
+ * @returns
  */
 function inputFluidOf(entry) {
 	if (!entry.isJsonObject()) {
@@ -86,12 +89,16 @@ function inputFluidOf(entry) {
 	if (json.has("fluid")) {
 		return Fluid.of(json.get("fluid").getAsString(), amount)
 	}
+
 	if (json.has("fluidTag")) {
 		let fluidTag = json.get("fluidTag").getAsString()
 		let location = ResourceLocation.tryParse(fluidTag)
 		let tag = FluidTags.create(location)
 
-		return $FluidIngredient.fromTag(tag, amount)
+		return $FluidIngredient["of(net.minecraft.tags.TagKey,long)"](
+			tag,
+			amount
+		)
 	}
 
 	return null
@@ -205,4 +212,9 @@ ServerEvents.recipes((event) => {
 
 		builder.id(`${id}_mbd2_proxy`)
 	})
+
+	// let testTag = TagsBuidlder.fluid("steam").namespace("forge")
+	// cmi.chemical_reactor()
+	// 	.inputFluids($MBDFluidIngredient["of(net.minecraft.tags.TagKey,long)"](testTag, 100))
+	// 	.outputFluids(Fluid.of("minecraft:water", 500))
 })
