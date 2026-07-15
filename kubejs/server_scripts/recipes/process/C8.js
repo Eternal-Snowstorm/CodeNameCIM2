@@ -245,11 +245,21 @@ ServerEvents.recipes((event) => {
 		.inputFE(32 * (20 * 10))
 		.duration(20 * 10)
 
+	// 水晶蚀刻溶液
+	cmi.chemical_reactor()
+		.inputFluids([
+			MBDUtils.withFluidTag("forge:sulfuric_acid", 1000),
+			Fluid.of("cmi:hydrochloric_acid", 1000)
+		])
+		.outputFluids(Fluid.of("cmi:crystal_etching_solution", 3000))
+		.inputFE(32 * (20 * 10))
+		.duration(20 * 10)
+
 	thermal.smelter("cmi:raw_titanium_mixture", [
 		"cmi:raw_titanium_dust",
 		"#forge:dusts/aluminum"
 	])
-	
+
 	thermal.smelter([
 		"cmi:titanium_dust",
 		"create:crushed_raw_aluminum"

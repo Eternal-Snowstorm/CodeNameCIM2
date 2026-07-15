@@ -191,7 +191,15 @@ ServerEvents.recipes((event) => {
 		let json = recipe.json
 		let id = recipe.getId()
 
-		if (id.includes("palettes") || id.includes("dye")) {
+		if (removedRecipes.has(id)) {
+			return
+		}
+
+		if (
+			id.includes("palettes")
+			|| id.includes("dye")
+			|| id.includes("concrete")
+		) {
 			return
 		}
 
@@ -212,9 +220,13 @@ ServerEvents.recipes((event) => {
 
 		builder.id(`${id}_mbd2_proxy`)
 	})
+})
 
-	// let testTag = TagsBuidlder.fluid("steam").namespace("forge")
-	// cmi.chemical_reactor()
-	// 	.inputFluids($MBDFluidIngredient["of(net.minecraft.tags.TagKey,long)"](testTag, 100))
-	// 	.outputFluids(Fluid.of("minecraft:water", 500))
+ServerEvents.recipes((event) => {
+	let { cmi } = event.getRecipes()
+
+	cmi.chemical_reactor()
+		.inputFluids(Fluid.of("minecraft:water", 1000))
+		.outputFluids(Fluid.of("minecraft:lava", 500))
+		.inputFE(5000)
 })

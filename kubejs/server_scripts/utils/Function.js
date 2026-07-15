@@ -7,6 +7,8 @@ let $Gas =
 	Java.loadClass("mekanism.api.chemical.gas.Gas")
 let $Chemical =
 	Java.loadClass("mekanism.api.chemical.Chemical")
+let $FluidIngredient =
+	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
 
 /**
  * 设置命名空间优先级
@@ -232,6 +234,8 @@ function getItemsUnderTag(tag) {
 	return Ingredient.of(tag).getItemIds()
 }
 
+let removedRecipes = new Set()
+
 /**
  * 
  *  同时兼容正常配方ID和 EMI Copy 出来的假ID
@@ -260,6 +264,8 @@ function removeRecipe(event, ids) {
 			event.remove({
 				id: realId
 			})
+
+			removedRecipes.add(id)
 
 			// console.log(realId)
 		})
@@ -296,4 +302,29 @@ function useEmiId(id) {
 	}
 
 	return ResourceLocation.tryParse(id)
+}
+
+let MBDUtils = {
+	/**
+	 * 创建流体标签配料
+	 *
+	 * @param {string} tag 
+	 * @param {number} amount
+	 * @param {Internal.CompoundTag_} [nbt]
+	 * @returns 
+	 */
+	withFluidTag(tag, amount, nbt) {
+		let tagKey = FluidTags.create(ResourceLocation.parse(tag))
+
+		return nbt == null
+			? $FluidIngredient["of(net.minecraft.tags.TagKey,long)"](
+				tagKey,
+				amount
+			)
+			: $FluidIngredient["of(net.minecraft.tags.TagKey,long,net.minecraft.nbt.CompoundTag)"](
+				tagKey,
+				amount,
+				nbt
+			)
+	}
 }
