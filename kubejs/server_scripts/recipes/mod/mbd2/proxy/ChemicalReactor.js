@@ -175,29 +175,20 @@ function addResults(builder, results) {
 	}
 }
 
-function clearChemicalReactorProxy() {
-	let chemicalReactor = Cmi.loadResource("chemical_reactor")
-	let recipeType = MBDRegistries.RECIPE_TYPES.get(chemicalReactor)
-	if (recipeType === null) {
-		return
-	}
-
-	let field = recipeType.getClass().getDeclaredField("proxyRecipeTypes")
-	field.setAccessible(true)
-	field.get(recipeType).clear()
-}
-
 ServerEvents.recipes((event) => {
 	let { cmi } = event.getRecipes()
-
-	clearChemicalReactorProxy()
 
 	event.forEachRecipe({
 		type: "create:mixing"
 	}, (recipe) => {
 		let json = recipe.json
-		let builder = cmi.chemical_reactor()
+		let id = recipe.getId()
 
+		if (id.includes("palettes") || id.includes("dye")) {
+			return
+		}
+
+		let builder = cmi.chemical_reactor()
 		if (json.has("ingredients")) {
 			addIngredients(builder, json.get("ingredients").getAsJsonArray())
 		}
@@ -212,6 +203,6 @@ ServerEvents.recipes((event) => {
 			builder.duration(json.get("processingTime").getAsInt())
 		}
 
-		builder.id(recipe.getId() + "_mbd2_proxy")
+		builder.id(`${id}_mbd2_proxy`)
 	})
 })
