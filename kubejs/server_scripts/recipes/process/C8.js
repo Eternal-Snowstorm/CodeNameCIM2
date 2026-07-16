@@ -357,6 +357,6 @@ ServerEvents.recipes((event) => {
 	mekanism.metallurgic_infusing(
 		"mekanism:alloy_infused",
 		"#forge:ingots/chromium",
-		{ infuse_type: "mekanism:redstone", amount: 20 }
+		MekanismType.InfuseType.of("mekanism:redstone", 20)
 	)
 })

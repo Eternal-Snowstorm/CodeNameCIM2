@@ -5,9 +5,13 @@ let $Slurry =
 	Java.loadClass("mekanism.api.chemical.slurry.Slurry")
 let $Gas =
 	Java.loadClass("mekanism.api.chemical.gas.Gas")
+let $InfuseType =
+	Java.loadClass("mekanism.api.chemical.infuse.InfuseType")
 let $Chemical =
 	Java.loadClass("mekanism.api.chemical.Chemical")
-let $FluidIngredient =
+let $Pigment =
+	Java.loadClass("mekanism.api.chemical.pigment.Pigment")
+let $MBDFluidIngredient =
 	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
 
 /**
@@ -62,52 +66,73 @@ function getHighPriorityItem(name) {
 	return outputId
 }
 
-let MekanismType = {
-	Slurry: {
+/**
+ * @param {"slurry" | "gas" | "infuse_type" | "pigment"} type
+ * @param {Internal.ResourceKey<Internal.Registry>} registryName
+ * @param {*} clazz
+ */
+function makeType(type, registryName, clazz) {
+	let of = makeOf(type)
+
+	return {
 		/**
-		 * 
-		 * @param {ResourceLocation_} id 
-		 * @returns 
+		 * @param {ResourceLocation_} id
+		 * @returns {boolean}
 		 */
-		exists: function (id) {
-			return RegistryInfo.of($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry)
-				.hasValue(id)
+		exists(id) {
+			return RegistryInfo.of(registryName, clazz).hasValue(id)
 		},
-		of: makeOf("slurry")
-	},
-	Gas: {
+
 		/**
-		 * 
-		 * @param {ResourceLocation_} id 
-		 * @returns 
+		 * @param {string} id
+		 * @param {number} [amount=1000]
+		 * @returns {Object}
 		 */
-		exists: function (id) {
-			return RegistryInfo.of($MekanismAPI.GAS_REGISTRY_NAME, $Gas)
-				.hasValue(id)
-		},
-		of: makeOf("gas")
+		of(id, amount) {
+			return of(id, amount)
+		}
 	}
 }
 
+let MekanismType = {
+	Slurry: makeType(
+		"slurry",
+		$MekanismAPI.SLURRY_REGISTRY_NAME,
+		$Slurry
+	),
+	Gas: makeType(
+		"gas",
+		$MekanismAPI.GAS_REGISTRY_NAME,
+		$Gas
+	),
+	InfuseType: makeType(
+		"infuse_type",
+		$MekanismAPI.INFUSE_TYPE_REGISTRY_NAME,
+		$InfuseType
+	),
+	Pigment: makeType(
+		"pigment",
+		$MekanismAPI.PIGMENT_REGISTRY_NAME,
+		$Pigment
+	)
+}
+
 /**
- * 
- * @param {string} type 
- * @returns 
+ * @param {string} type
+ * @returns {(id: string, amount?: number) => Object}
  */
 function makeOf(type) {
 	/**
-	 * 
-	 * @param {string} id 
-	 * @param {number} amount 
-	 * @returns 
+	 * @param {string} id
+	 * @param {number} [amount=1000]
+	 * @returns {Object}
 	 */
-	let func = function (id, amount) {
-		let obj = {}
-		obj[type] = id
-		obj.amount = amount === null ? 1000 : amount
-		return obj
+	return function (id, amount) {
+		return {
+			[type]: id,
+			amount: amount ?? 1000
+		}
 	}
-	return func
 }
 
 /**
