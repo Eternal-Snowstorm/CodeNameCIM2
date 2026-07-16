@@ -90,7 +90,7 @@ ServerEvents.recipes((event) => {
 		.id("ae2:inscriber/engineering_processor_print")
 
 	// 并发电路板
-	new InscriberRecipe(Print.LOGIC)
+	new InscriberRecipe(Print.CONCURRENT)
 		.top("cmi:concurrent_processor_press")
 		.middle("#forge:gems/entro")
 		.inscribe()

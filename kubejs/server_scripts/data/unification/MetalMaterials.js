@@ -15,7 +15,9 @@ ServerEvents.highPriorityData((event) => {
 			let material = metal.getId()
 			let tag = `#forge:${type}s/${material}`
 
-			addMetalUnification(`${material}_${type}`, tag)
+			if (Ingredient.isNotNull(tag)) {
+				addMetalUnification(`${material}_${type}`, tag)
+			}
 		})
 	})
 
@@ -34,7 +36,7 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	function addMetalUnification(name, tag) {
-		let ids = getValidItemIds(tag)
+		let ids = Ingredient.of(tag).getItemIds()
 
 		if (ids.size <= 0) {
 			return
@@ -58,23 +60,5 @@ ServerEvents.highPriorityData((event) => {
 
 	function addJsonFile(name, unification) {
 		return event.addJson(`oei:replacements/${name}.json`, unification)
-	}
-
-	function getValidItemIds(tag) {
-		let validIds = new Set()
-
-		if (!Ingredient.isNotNull(tag)) {
-			return validIds
-		}
-
-		Ingredient.of(tag).getItemIds().forEach((id) => {
-			let itemId = id.toString()
-
-			if (itemId !== "minecraft:barrier") {
-				validIds.add(itemId)
-			}
-		})
-
-		return validIds
 	}
 })
