@@ -309,7 +309,7 @@ let MBDUtils = {
 	/**
 	 * 创建流体标签配料
 	 *
-	 * @param {string} tag 
+	 * @param {Special.FluidTag} tag 
 	 * @param {number} amount
 	 * @param {Internal.CompoundTag_} [nbt]
 	 * @returns 

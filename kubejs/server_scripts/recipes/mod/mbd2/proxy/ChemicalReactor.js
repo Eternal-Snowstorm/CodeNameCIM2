@@ -217,18 +217,8 @@ ServerEvents.recipes((event) => {
 		if (json.has("processingTime")) {
 			let processingTime = json.get("processingTime").getAsInt()
 			builder.duration(processingTime)
-				.inputFE(processingTime * 50)
 		}
 
 		builder.id(`${id}_mbd2_proxy`)
 	})
-})
-
-ServerEvents.recipes((event) => {
-	let { cmi } = event.getRecipes()
-
-	cmi.chemical_reactor()
-		.inputFluids(Fluid.of("minecraft:water", 1000))
-		.outputFluids(Fluid.of("minecraft:lava", 500))
-		.inputFE(5000)
-})
+})	
