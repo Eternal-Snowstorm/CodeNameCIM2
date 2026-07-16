@@ -37,4 +37,14 @@ ServerEvents.recipes((event) => {
 		.outputFluids(Fluid.of("cmi:crystal_etching_solution", 3000))
 		.inputFE(32 * (20 * 10))
 		.duration(20 * 10)
+
+	// 蓝宝石溶液
+	cmi.chemical_reactor()
+		.inputFluids(Fluid.of("cmi:crystal_etching_solution", 100))
+		.inputItems("#forge:dusts/sapphire")
+		.outputFluids(Fluid.of("cmi:sapphire_solution", 200))
+		.duration(20 * 5)
+		.perTick((recipe) => {
+			recipe.inputFE(25000 / 20)
+		})
 })
