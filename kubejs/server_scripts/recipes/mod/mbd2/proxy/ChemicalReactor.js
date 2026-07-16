@@ -215,10 +215,11 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (json.has("processingTime")) {
-			let processingTime = json.get("processingTime").getAsInt()
-			builder.duration(processingTime)
+			let time = json.get("processingTime").getAsInt()
+			builder.duration(time)
+				.inputFE(time * 50)
 		}
 
 		builder.id(`${id}_mbd2_proxy`)
 	})
-})	
+})

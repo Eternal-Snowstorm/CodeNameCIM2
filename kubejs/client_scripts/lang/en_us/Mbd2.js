@@ -33,4 +33,5 @@ ClientEvents.lang("en_us", (event) => {
 	addMBDLang("reinforced_coke_oven", "Reinforced Coke Oven")
 	addMBDLang("improved_rubber_extractor", "QM-0726 Improved Rubber Extractor")
 	addMBDLang("chemical_reactor", "Chemical Reactor")
+	addMBDLang("reinforced_chemical_reactor", "Reinforced Chemical Reactor")
 })
