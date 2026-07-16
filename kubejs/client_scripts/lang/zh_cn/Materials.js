@@ -1,7 +1,7 @@
 ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("andesite_alloy", "安山合金")
 	addMaterialLang("cinderslime", "余烬史莱姆")
-	addMaterialLang("stainless_steel", "不锈耐酸钢")
+	addMaterialLang("stainless_steel", "不锈钢")
 	addMaterialLang("quartz", "石英")
 	addMaterialLang("cobalt", "钴")
 	addMaterialLang("vanadium", "钒")
