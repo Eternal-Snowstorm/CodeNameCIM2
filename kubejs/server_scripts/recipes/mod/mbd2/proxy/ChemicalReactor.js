@@ -214,12 +214,10 @@ ServerEvents.recipes((event) => {
 			addResults(builder, [json.get("result")])
 		}
 
-		if (json.has("processingTime")) {
-			let time = json.get("processingTime").getAsInt()
-			builder.duration(time)
-				.inputFE(time * 50)
-		}
-
-		builder.id(`${id}_mbd2_proxy`)
+		builder.duration(20 * 5)
+			.perTick((recipe) => {
+				recipe.inputFE(50)
+			})
+			.id(`${id}_mbd2_proxy`)
 	})
 })

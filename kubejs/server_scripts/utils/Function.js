@@ -5,9 +5,13 @@ let $Slurry =
 	Java.loadClass("mekanism.api.chemical.slurry.Slurry")
 let $Gas =
 	Java.loadClass("mekanism.api.chemical.gas.Gas")
+let $InfuseType =
+	Java.loadClass("mekanism.api.chemical.infuse.InfuseType")
 let $Chemical =
 	Java.loadClass("mekanism.api.chemical.Chemical")
-let $FluidIngredient =
+let $Pigment =
+	Java.loadClass("mekanism.api.chemical.pigment.Pigment")
+let $MBDFluidIngredient =
 	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
 
 /**
@@ -62,85 +66,103 @@ function getHighPriorityItem(name) {
 	return outputId
 }
 
-let MekanismType = {
-	Slurry: {
-		/**
-		 * 
-		 * @param {ResourceLocation_} id 
-		 * @returns 
-		 */
-		exists: function (id) {
-			return RegistryInfo.of($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry)
-				.hasValue(id)
-		},
-		of: makeOf("slurry")
-	},
-	Gas: {
-		/**
-		 * 
-		 * @param {ResourceLocation_} id 
-		 * @returns 
-		 */
-		exists: function (id) {
-			return RegistryInfo.of($MekanismAPI.GAS_REGISTRY_NAME, $Gas)
-				.hasValue(id)
-		},
-		of: makeOf("gas")
-	}
-}
-
 /**
- * 
- * @param {string} type 
- * @returns 
+ * @param {"slurry" | "gas" | "infuse_type" | "pigment"} type
+ * @param {Internal.ResourceKey<Internal.Registry>} registryName
+ * @param {*} clazz
  */
-function makeOf(type) {
-	/**
-	 * 
-	 * @param {string} id 
-	 * @param {number} amount 
-	 * @returns 
-	 */
-	let func = function (id, amount) {
-		let obj = {}
-		obj[type] = id
-		obj.amount = amount === null ? 1000 : amount
-		return obj
-	}
-	return func
-}
-
-/**
- * 
- * @param {Internal.ItemStack_} input 
- * @returns 
- */
-function IEIngredient(input) {
-	if (Array.isArray(input)) {
-		let count = 0
-		let inps = []
-
-		for (let i of input) {
-			let item = Item.of(i, 1).toJson()
-
-			if (count === 0) {
-				count = Item.of(i)
-					.getCount()
-			}
-			inps.push(item)
-		}
-		return {
-			base_ingredient: inps,
-			count: count
-		}
-	}
+function makeType(type, registryName, clazz) {
+	let of = makeOf(type)
 
 	return {
-		base_ingredient: Item.of(input)
-			.withCount(1)
-			.toJson(),
-		count: Item.of(input)
-			.getCount()
+		/**
+		 * @param {ResourceLocation_} id
+		 * @returns {boolean}
+		 */
+		exists(id) {
+			return RegistryInfo.of(registryName, clazz).hasValue(id)
+		},
+
+		/**
+		 * @param {string} id
+		 * @param {number} [amount=1000]
+		 * @returns {Object}
+		 */
+		of(id, amount) {
+			return of(id, amount)
+		}
+	}
+}
+
+let MekType = {
+	Slurry: makeType(
+		"slurry",
+		$MekanismAPI.SLURRY_REGISTRY_NAME,
+		$Slurry
+	),
+	Gas: makeType(
+		"gas",
+		$MekanismAPI.GAS_REGISTRY_NAME,
+		$Gas
+	),
+	InfuseType: makeType(
+		"infuse_type",
+		$MekanismAPI.INFUSE_TYPE_REGISTRY_NAME,
+		$InfuseType
+	),
+	Pigment: makeType(
+		"pigment",
+		$MekanismAPI.PIGMENT_REGISTRY_NAME,
+		$Pigment
+	)
+}
+
+/**
+ * @param {string} type
+ * @returns {(id: string, amount?: number) => Object}
+ */
+function makeOf(type) {
+	return function (id, amount) {
+		let obj = {}
+		obj[type] = id
+		obj.amount = amount == null ? 1000 : amount
+		return obj
+	}
+}
+
+let IEIngredient = {
+	/**
+	 * 
+	 * @param {Internal.ItemStack_} input 
+	 * @returns 
+	 */
+	of(input) {
+		if (Array.isArray(input)) {
+			let count = 0
+			let inps = []
+
+			for (let i of input) {
+				let item = Item.of(i, 1).toJson()
+
+				if (count === 0) {
+					count = Item.of(i)
+						.getCount()
+				}
+				inps.push(item)
+			}
+			return {
+				base_ingredient: inps,
+				count: count
+			}
+		}
+
+		return {
+			base_ingredient: Item.of(input)
+				.withCount(1)
+				.toJson(),
+			count: Item.of(input)
+				.getCount()
+		}
 	}
 }
 
