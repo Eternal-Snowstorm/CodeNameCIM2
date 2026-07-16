@@ -16,7 +16,7 @@ ServerEvents.genericLootTables((event) => {
 	event.addGeneric("cmi:gameplay/academic_fraud", (builder) => {
 		builder.addPool((pool) => {
 			let count = 64 * 36
-			pool.addItem("minecraft:iron_ingot", count, count)
+			pool.addItem("minecraft:iron_ingot", 100, count)
 		})
 	})
 })
