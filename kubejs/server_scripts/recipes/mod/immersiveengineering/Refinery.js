@@ -43,4 +43,22 @@ ServerEvents.recipes((event) => {
 			"fluid": "mekanism:sulfur_trioxide"
 		}
 	}).id("vintageimprovements:pressurizing/sulfur_trioxide")
+
+	// HDPE
+	event.custom({
+		"type": "immersiveengineering:refinery",
+		"catalyst": Ingredient.of("#forge:plates/ethylene_polymerization_catalytic").toJson(),
+		"energy": 120,
+		"input0": Fluid.tag("tag", "forge:ethene", 10).toJson(),
+		"result": Fluid.of("cmi:hdpe", 1).toJson()
+	})
+
+	// 聚合碳溶液
+	event.custom({
+		"type": "immersiveengineering:refinery",
+		"catalyst": Ingredient.of("#forge:plates/carbon_polymerization_catalytic").toJson(),
+		"energy": 120,
+		"input0": Fluid.tag("tag", "cmi:light_olefin", 10).toJson(),
+		"result": Fluid.of("cmi:polymeric_carbon_solution", 1).toJson()
+	})
 })

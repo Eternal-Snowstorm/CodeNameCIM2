@@ -94,7 +94,7 @@ function makeType(type, registryName, clazz) {
 	}
 }
 
-let MekanismType = {
+let MekType = {
 	Slurry: makeType(
 		"slurry",
 		$MekanismAPI.SLURRY_REGISTRY_NAME,
@@ -122,50 +122,47 @@ let MekanismType = {
  * @returns {(id: string, amount?: number) => Object}
  */
 function makeOf(type) {
-	/**
-	 * @param {string} id
-	 * @param {number} [amount=1000]
-	 * @returns {Object}
-	 */
 	return function (id, amount) {
-		return {
-			[type]: id,
-			amount: amount ?? 1000
-		}
+		let obj = {}
+		obj[type] = id
+		obj.amount = amount == null ? 1000 : amount
+		return obj
 	}
 }
 
-/**
- * 
- * @param {Internal.ItemStack_} input 
- * @returns 
- */
-function IEIngredient(input) {
-	if (Array.isArray(input)) {
-		let count = 0
-		let inps = []
+let IEIngredient = {
+	/**
+	 * 
+	 * @param {Internal.ItemStack_} input 
+	 * @returns 
+	 */
+	of(input) {
+		if (Array.isArray(input)) {
+			let count = 0
+			let inps = []
 
-		for (let i of input) {
-			let item = Item.of(i, 1).toJson()
+			for (let i of input) {
+				let item = Item.of(i, 1).toJson()
 
-			if (count === 0) {
-				count = Item.of(i)
-					.getCount()
+				if (count === 0) {
+					count = Item.of(i)
+						.getCount()
+				}
+				inps.push(item)
 			}
-			inps.push(item)
+			return {
+				base_ingredient: inps,
+				count: count
+			}
 		}
-		return {
-			base_ingredient: inps,
-			count: count
-		}
-	}
 
-	return {
-		base_ingredient: Item.of(input)
-			.withCount(1)
-			.toJson(),
-		count: Item.of(input)
-			.getCount()
+		return {
+			base_ingredient: Item.of(input)
+				.withCount(1)
+				.toJson(),
+			count: Item.of(input)
+				.getCount()
+		}
 	}
 }
 

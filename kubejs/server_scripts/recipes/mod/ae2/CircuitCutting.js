@@ -1,57 +1,89 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements } = event.getRecipes()
+	/**
+	 * @constructor
+	 * @param {Internal.ItemStack_} output
+	 */
+	function CircuitCutterRecipe(output) {
+		this.recipe = {
+			type: "expatternprovider:circuit_cutter",
+			output: Item.of(output).toJson()
+		}
+	}
+
+	/**
+	 * @param {Internal.Ingredient_} ingredient
+	 * @param {number} [amount]
+	 * @returns {CircuitCutterRecipe}
+	 */
+	CircuitCutterRecipe.prototype.item = function (ingredient, amount) {
+		this.recipe.item_input = {
+			amount: amount || 1,
+			ingredient: Ingredient.of(ingredient).toJson()
+		}
+		return this
+	}
+
+	/**
+	 * @param {Internal.FluidStackJS_} fluid
+	 * @param {number} amount
+	 * @returns {CircuitCutterRecipe}
+	 */
+	CircuitCutterRecipe.prototype.fluid = function (fluid, amount) {
+		this.recipe.fluid_input = {
+			amount: amount,
+			ingredient: {
+				fluid: Fluid.of(fluid).id
+			}
+		}
+		return this
+	}
+
+	/**
+	 * @param {ResourceLocation_} [id]
+	 * @returns
+	 */
+	CircuitCutterRecipe.prototype.build = function (id) {
+		let recipe = event.custom(this.recipe)
+
+		if (id) {
+			recipe.id(id)
+		}
+
+		return recipe
+	}
+
+	// 锇晶圆
+	new CircuitCutterRecipe("cmi:osmium_wafer")
+		.item("cmi:enriched_osmium_crystal")
+		.fluid("minecraft:water", 100)
+		.build()
 
 	// 逻辑电路板
-	event.custom({
-		"type": "expatternprovider:circuit_cutter",
-		"fluid_input": {
-			"amount": 100,
-			"ingredient": {
-				"fluid": "minecraft:water"
-			}
-		},
-		"item_input": {
-			"amount": 1,
-			"ingredient": {
-				"tag": "forge:storage_blocks/electrum"
-			}
-		},
-		"output": Item.of(Print.LOGIC, 9).toJson()
-	}).id("expatternprovider:cutter/logic")
+	new CircuitCutterRecipe(Item.of(Print.LOGIC, 9))
+		.item("#forge:storage_blocks/electrum")
+		.fluid("minecraft:water", 100)
+		.build("expatternprovider:cutter/logic")
 
 	// 工程电路板
-	event.custom({
-		"type": "expatternprovider:circuit_cutter",
-		"fluid_input": {
-			"amount": 100,
-			"ingredient": {
-				"fluid": "minecraft:water"
-			}
-		},
-		"item_input": {
-			"amount": 1,
-			"ingredient": {
-				"tag": "forge:storage_blocks/etrium"
-			}
-		},
-		"output": Item.of(Print.ENGINEERING, 9).toJson()
-	}).id("expatternprovider:cutter/engineering")
+	new CircuitCutterRecipe(Item.of(Print.ENGINEERING, 9))
+		.item("#forge:storage_blocks/etrium")
+		.fluid("minecraft:water", 100)
+		.build("expatternprovider:cutter/engineering")
 
 	// 并发电路板
-	event.custom({
-		"type": "expatternprovider:circuit_cutter",
-		"fluid_input": {
-			"amount": 100,
-			"ingredient": {
-				"fluid": "minecraft:water"
-			}
-		},
-		"item_input": {
-			"amount": 1,
-			"ingredient": {
-				"tag": "forge:storage_blocks/entro"
-			}
-		},
-		"output": Item.of(Print.CONCURRENT, 9).toJson()
-	})
+	new CircuitCutterRecipe(Item.of(Print.CONCURRENT, 9))
+		.item("#forge:storage_blocks/entro")
+		.fluid("minecraft:water", 100)
+		.build()
+
+	// 乙烯聚合催化片
+	new CircuitCutterRecipe("2x cmi:ethylene_polymerization_catalytic_plate")
+		.item("cmi:polymerization_catalytic_alloy")
+		.fluid("minecraft:water", 100)
+		.build()
+
+	// 碳沉积催化片
+	new CircuitCutterRecipe("64x cmi:carbon_deposition_catalytic_plate")
+		.item("cmi:deposition_catalytic_alloy")
+		.fluid("minecraft:water", 100)
 })
