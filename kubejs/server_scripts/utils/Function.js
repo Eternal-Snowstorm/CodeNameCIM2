@@ -5,8 +5,14 @@ let $Slurry =
 	Java.loadClass("mekanism.api.chemical.slurry.Slurry")
 let $Gas =
 	Java.loadClass("mekanism.api.chemical.gas.Gas")
+let $InfuseType =
+	Java.loadClass("mekanism.api.chemical.infuse.InfuseType")
 let $Chemical =
 	Java.loadClass("mekanism.api.chemical.Chemical")
+let $Pigment =
+	Java.loadClass("mekanism.api.chemical.pigment.Pigment")
+let $MBDFluidIngredient =
+	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
 
 /**
  * 设置命名空间优先级
@@ -14,6 +20,7 @@ let $Chemical =
  */
 let namespacePriority = [
 	"cmi",
+	"minecraft",
 	"vintageimprovements",
 	"thermal",
 	"thermalconstruct",
@@ -23,6 +30,7 @@ let namespacePriority = [
 	"createdeco",
 	"ae2",
 	"ad_astra",
+	"createaddition",
 	"immersiveengineering",
 	"mekanism",
 	"alexscaves",
@@ -34,29 +42,9 @@ let namespacePriority = [
 	 * @returns 
 	 */
 function getHighPriorityItem(name) {
-	/**
-	 * 设置命名空间优先级
-	 * 越往前的命名空间优先级越高
-	 */
-	let namespacePriority = [
-		"cmi",
-		"vintageimprovements",
-		"thermal",
-		"thermalconstruct",
-		"thermalendergy",
-		"thermal_extra",
-		"create",
-		"createdeco",
-		"ae2",
-		"ad_astra",
-		"immersiveengineering",
-		"mekanism",
-		"alexscaves",
-		"tconstruct"
-	]
 	// 引入参数
 	let currentNamespace
-	let outputId
+	let outputId = name[0]
 	let priorityValue
 
 	// 遍历获取到的tag下每个物品的命名空间
@@ -78,85 +66,103 @@ function getHighPriorityItem(name) {
 	return outputId
 }
 
-let MekanismType = {
-	Slurry: {
-		/**
-		 * 
-		 * @param {ResourceLocation_} id 
-		 * @returns 
-		 */
-		exists: function (id) {
-			return RegistryInfo.of($MekanismAPI.SLURRY_REGISTRY_NAME, $Slurry)
-				.hasValue(id)
-		},
-		of: makeOf("slurry")
-	},
-	Gas: {
-		/**
-		 * 
-		 * @param {ResourceLocation_} id 
-		 * @returns 
-		 */
-		exists: function (id) {
-			return RegistryInfo.of($MekanismAPI.GAS_REGISTRY_NAME, $Gas)
-				.hasValue(id)
-		},
-		of: makeOf("gas")
-	}
-}
-
 /**
- * 
- * @param {string} type 
- * @returns 
+ * @param {"slurry" | "gas" | "infuse_type" | "pigment"} type
+ * @param {Internal.ResourceKey<Internal.Registry>} registryName
+ * @param {*} clazz
  */
-function makeOf(type) {
-	/**
-	 * 
-	 * @param {string} id 
-	 * @param {number} amount 
-	 * @returns 
-	 */
-	let func = function (id, amount) {
-		let obj = {}
-		obj[type] = id
-		obj.amount = amount === null ? 1000 : amount
-		return obj
-	}
-	return func
-}
-
-/**
- * 
- * @param {Internal.ItemStack_} input 
- * @returns 
- */
-function IEIngredient(input) {
-	if (Array.isArray(input)) {
-		let count = 0
-		let inps = []
-
-		for (let i of input) {
-			let item = Item.of(i, 1).toJson()
-
-			if (count === 0) {
-				count = Item.of(i)
-					.getCount()
-			}
-			inps.push(item)
-		}
-		return {
-			base_ingredient: inps,
-			count: count
-		}
-	}
+function makeType(type, registryName, clazz) {
+	let of = makeOf(type)
 
 	return {
-		base_ingredient: Item.of(input)
-			.withCount(1)
-			.toJson(),
-		count: Item.of(input)
-			.getCount()
+		/**
+		 * @param {ResourceLocation_} id
+		 * @returns {boolean}
+		 */
+		exists(id) {
+			return RegistryInfo.of(registryName, clazz).hasValue(id)
+		},
+
+		/**
+		 * @param {string} id
+		 * @param {number} [amount=1000]
+		 * @returns {Object}
+		 */
+		of(id, amount) {
+			return of(id, amount)
+		}
+	}
+}
+
+let MekType = {
+	Slurry: makeType(
+		"slurry",
+		$MekanismAPI.SLURRY_REGISTRY_NAME,
+		$Slurry
+	),
+	Gas: makeType(
+		"gas",
+		$MekanismAPI.GAS_REGISTRY_NAME,
+		$Gas
+	),
+	InfuseType: makeType(
+		"infuse_type",
+		$MekanismAPI.INFUSE_TYPE_REGISTRY_NAME,
+		$InfuseType
+	),
+	Pigment: makeType(
+		"pigment",
+		$MekanismAPI.PIGMENT_REGISTRY_NAME,
+		$Pigment
+	)
+}
+
+/**
+ * @param {string} type
+ * @returns {(id: string, amount?: number) => Object}
+ */
+function makeOf(type) {
+	return function (id, amount) {
+		let obj = {}
+		obj[type] = id
+		obj.amount = amount == null ? 1000 : amount
+		return obj
+	}
+}
+
+let IEIngredient = {
+	/**
+	 * 
+	 * @param {Internal.ItemStack_} input 
+	 * @returns 
+	 */
+	of(input) {
+		if (Array.isArray(input)) {
+			let count = 0
+			let inps = []
+
+			for (let i of input) {
+				let item = Item.of(i, 1).toJson()
+
+				if (count === 0) {
+					count = Item.of(i)
+						.getCount()
+				}
+				inps.push(item)
+			}
+			return {
+				base_ingredient: inps,
+				count: count
+			}
+		}
+
+		return {
+			base_ingredient: Item.of(input)
+				.withCount(1)
+				.toJson(),
+			count: Item.of(input)
+				.getCount()
+		}
 	}
 }
 
@@ -244,6 +250,17 @@ let SmeltingRecipes = {
 
 /**
  * 
+ * @param {InputItem_} tag 
+ * @returns 
+ */
+function getItemsUnderTag(tag) {
+	return Ingredient.of(tag).getItemIds()
+}
+
+let removedRecipes = new Set()
+
+/**
+ * 
  *  同时兼容正常配方ID和 EMI Copy 出来的假ID
  *
  *  @example
@@ -270,6 +287,8 @@ function removeRecipe(event, ids) {
 			event.remove({
 				id: realId
 			})
+
+			removedRecipes.add(id)
 
 			// console.log(realId)
 		})
@@ -306,4 +325,29 @@ function useEmiId(id) {
 	}
 
 	return ResourceLocation.tryParse(id)
+}
+
+let MBDUtils = {
+	/**
+	 * 创建流体标签配料
+	 *
+	 * @param {Special.FluidTag} tag 
+	 * @param {number} amount
+	 * @param {Internal.CompoundTag_} [nbt]
+	 * @returns 
+	 */
+	withFluidTag(tag, amount, nbt) {
+		let tagKey = FluidTags.create(ResourceLocation.parse(tag))
+
+		return nbt == null
+			? $FluidIngredient["of(net.minecraft.tags.TagKey,long)"](
+				tagKey,
+				amount
+			)
+			: $FluidIngredient["of(net.minecraft.tags.TagKey,long,net.minecraft.nbt.CompoundTag)"](
+				tagKey,
+				amount,
+				nbt
+			)
+	}
 }

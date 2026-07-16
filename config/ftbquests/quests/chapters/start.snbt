@@ -46,8 +46,8 @@
 				type: "item"
 			}]
 			title: "知识扩充"
-			x: 0.0d
-			y: 19.5d
+			x: -2.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["21ED583750523195"]
@@ -77,7 +77,10 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["1231A867DC253AAA"]
+			dependencies: [
+				"1231A867DC253AAA"
+				"07C4444CF1D9BB41"
+			]
 			description: ["我可以用它来熔炼一些&6熔点较低&f的金属"]
 			id: "562C10B7F3C07DCF"
 			rewards: [{
@@ -108,8 +111,8 @@
 				type: "item"
 			}]
 			title: "模具"
-			x: -2.0d
-			y: 16.5d
+			x: 0.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["5DC78DC9A01883A1"]
@@ -132,8 +135,15 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["4EAFBA3A19526127"]
-			description: ["能让树苗立刻生长且不消耗"]
+			dependencies: [
+				"4EAFBA3A19526127"
+				"79EF51A3C7D8075C"
+			]
+			description: [
+				"能让树苗立刻生长且不消耗"
+				""
+				"扳手在前面的初始套件中有赠送, 不需要担心制作时会消耗"
+			]
 			id: "0849A3B5EAAE4E14"
 			shape: "gear"
 			size: 2.0d
@@ -332,6 +342,7 @@
 				"1231A867DC253AAA"
 				"21B1DA369A461281"
 				"799329AFB898606F"
+				"79EF51A3C7D8075C"
 			]
 			id: "73D78755B4430729"
 			shape: "gear"
@@ -360,6 +371,7 @@
 				title: "锹"
 				type: "checkmark"
 			}]
+			title: "更便捷的工具"
 			x: 2.0d
 			y: 12.5d
 		}
@@ -444,7 +456,7 @@
 			]
 			title: "工匠的第一步"
 			x: -2.0d
-			y: 18.5d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -476,7 +488,9 @@
 			y: 18.5d
 		}
 		{
+			dependencies: ["5DC78DC9A01883A1"]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "5DEF00C4138EE4FB"
 			subtitle: "主世界也有啦"
 			tasks: [{
@@ -495,7 +509,7 @@
 		{
 			dependencies: ["13884F7A75B4D36D"]
 			description: [
-				"手持石英右键{minecraft:deepslate, 1}深板岩或{minecraft:cobbled_deepslate, 1}深板岩圆石会有10%的"
+				"手持石英右键{minecraft:deepslate, 1}深板岩或{minecraft:cobbled_deepslate, 1}深板岩圆石会有30%的"
 				"概率获取"
 			]
 			id: "3D854C186FF6E897"
@@ -624,6 +638,54 @@
 			dependencies: ["4840B337A93659FC"]
 			description: ["                  这是你应得的"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tconstruct:excavator"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 1
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 2
+							name: "tconstruct:knockback"
+						}
+						{
+							level: 1
+							name: "tconstruct:pathing"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.2f
+						"tconstruct:durability": 3.75f
+						"tconstruct:mining_speed": 0.3f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 4.2000003f
+						"tconstruct:durability": 984.375f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 1.8000001f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
 			id: "27027EE58989C749"
 			invisible: true
 			rewards: [{
@@ -654,6 +716,51 @@
 			dependencies: ["4840B337A93659FC"]
 			description: ["                  这是你应得的"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tconstruct:broad_axe"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 1
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 1
+							name: "tconstruct:stripping"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.65f
+						"tconstruct:durability": 4.25f
+						"tconstruct:mining_speed": 0.3f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 11.55f
+						"tconstruct:attack_speed": 0.6f
+						"tconstruct:durability": 1062.5f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 1.8000001f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
 			id: "7987BD41A7A33F99"
 			invisible: true
 			rewards: [{
@@ -683,6 +790,51 @@
 			dependencies: ["4840B337A93659FC"]
 			description: ["                  这是你应得的"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tconstruct:sledge_hammer"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 1
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 2
+							name: "tconstruct:smite"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.35f
+						"tconstruct:durability": 4.0f
+						"tconstruct:mining_speed": 0.4f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 6.75f
+						"tconstruct:attack_speed": 0.75f
+						"tconstruct:durability": 1000.0f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 2.4f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
 			id: "13E71E8494A3B774"
 			invisible: true
 			subtitle: "你很清楚什么工具适应什么需求"
@@ -715,6 +867,51 @@
 			dependencies: ["4840B337A93659FC"]
 			description: ["                  这是你应得的"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tconstruct:vein_hammer"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 2
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 2
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 2
+							name: "tconstruct:pierce"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.25f
+						"tconstruct:durability": 5.0f
+						"tconstruct:mining_speed": 0.3f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 7.5f
+						"tconstruct:attack_speed": 0.85f
+						"tconstruct:durability": 1250.0f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 1.8000001f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
 			id: "0C1214BEA3AA5904"
 			invisible: true
 			rewards: [{
@@ -725,7 +922,7 @@
 			}]
 			subtitle: "你很清楚什么工具适应什么需求"
 			tasks: [{
-				id: "2880F63BAE54CB70"
+				id: "61E4A85D1C24141D"
 				item: {
 					Count: 1
 					id: "tconstruct:vein_hammer"
@@ -749,7 +946,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 14.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["76DD35F7BAB2AF34"]
@@ -761,9 +958,11 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.5d
+			y: 11.5d
 		}
 		{
+			dependencies: ["5DC78DC9A01883A1"]
+			hide_dependency_lines: true
 			id: "07C4444CF1D9BB41"
 			tasks: [{
 				id: "52B09CC2CB748C97"
@@ -791,12 +990,12 @@
 						Damage: 0
 					}
 				}
-				id: "1C0FFA509B2733DC"
+				id: "10543888A2395206"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:hammers"
+						value: "createdieselgenerators:hammers"
 					}
 				}
 				title: "锤子"
@@ -840,6 +1039,37 @@
 			title: "流体燃料选择"
 			x: 16.5d
 			y: 14.5d
+		}
+		{
+			dependencies: ["21ED583750523195"]
+			description: [
+				"在星球地层里发现了一种特殊的晶体矿物"
+				"它的表面上一直浮动着奇怪的光辉, 似乎蕴含着能量"
+				"手上暂时没有什么鉴定材料, 但是我有一种直觉, 我可以用特殊的结构把它的能量激发出来"
+				"我需要给这种用于激发晶体能量的结构起一个名字"
+				"就叫...构件吧"
+			]
+			hide_dependent_lines: true
+			id: "79EF51A3C7D8075C"
+			rewards: [{
+				count: 16
+				id: "26485367B073FBC9"
+				item: "cmi:dreamcore_ore"
+				type: "item"
+			}]
+			subtitle: "当一种矿物发光时, 你最好祈祷它也在发热"
+			tasks: [{
+				icon: "cmi:dreamcore_crystal"
+				id: "50BECA7C49CFC149"
+				observe_type: 0
+				timer: 1L
+				title: "观察幻晶矿石"
+				to_observe: "cmi:dreamcore_crystal_ore"
+				type: "observation"
+			}]
+			title: "梦幻般的晶体"
+			x: 2.0d
+			y: 10.0d
 		}
 	]
 	title: "炽焰匠心"

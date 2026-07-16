@@ -12,12 +12,12 @@ JEIEvents.removeRecipes((event) => {
 		"cmi:minecraft/shaped/love_manual_only",
 		"create_factory_abstractions:empty"
 	])
-	removeRecipeFromJEI("immersiveengineering:blast_furnace", [
-		"cmi:immersiveengineering/blast_furnace/steel_ingot/cooking_pot",
-		"cmi:immersiveengineering/blast_furnace/steel_ingot/skillet",
-		"cmi:immersiveengineering/blast_furnace/steel_ingot/pot",
-		"cmi:immersiveengineering/blast_furnace/steel_ingot/stockpot",
-		"cmi:immersiveengineering/blast_furnace/steel_ingot/stockpot_lid",
+	removeRecipeFromJEI("minecraft:blasting", [
+		"cmi:blasting/steel_ingot/cooking_pot",
+		"cmi:blasting/steel_ingot/skillet",
+		"cmi:blasting/steel_ingot/pot",
+		"cmi:blasting/steel_ingot/stockpot",
+		"cmi:blasting/steel_ingot/stockpot_lid",
 	])
 	removeRecipeFromJEI("custommachinery:custom_machine", [
 		"torcherino:torcherino",

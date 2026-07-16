@@ -166,7 +166,7 @@ ServerEvents.recipes((event) => {
 		}).id(`ad_astra:${color}_flag`)
 	})
 
-		// 冰
+	// 冰
 	kubejs.shapeless("minecraft:ice", [
 		"4x ad_astra:ice_shard"
 	])
@@ -200,6 +200,17 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("9x cmi:entro_crystal", [
 		"cmi:entro_block"
 	])
+
+	// 繁星核心
+	kubejs.shaped("cmi:astral_core", [
+		"ABA",
+		"BCB",
+		"ABA"
+	], {
+		A: "#forge:ingots/brass",
+		B: "#forge:plates/electrum",
+		C: "#forge:gems/charged_amethyst"
+	})
 
 	// 合成蓝图
 	kubejs.shapeless("create:crafting_blueprint", [

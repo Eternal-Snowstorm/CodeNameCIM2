@@ -19,7 +19,7 @@ StartupEvents.registry("block", (event) => {
 
 	// 冲击桩
 	addBlock("impact_pile")
-		.model(Cmi.loadResource(`block/custom/impact_pile`))
+		.model(Cmi.loadResource("block/custom/impact_pile"))
 		.defaultCutout()
 		.soundType(SoundType.NETHERITE_BLOCK)
 		.box(7, 0, 7, 9, 14, 9, true)
@@ -122,16 +122,6 @@ StartupEvents.registry("block", (event) => {
 		.resistance(5)
 		.tagBlock(CmiToolType.PICKAXE.tag())
 		.tagBlock(CmiMiningLevel.IRON.tag())
-
-	// 黄铜楼梯
-	addBlock("brass_stairs", "stairs")
-		.textureAll("create:block/brass_block")
-		.soundType(SoundType.METAL)
-		.hardness(5)
-		.resistance(5)
-		.tagBlock(CmiToolType.PICKAXE.tag())
-		.tagBlock(CmiMiningLevel.IRON.tag())
-		.requiresTool()
 
 	// 辐射沙
 	addBlock("radsand", "falling")

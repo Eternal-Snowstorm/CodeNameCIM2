@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs } = event.getRecipes()
+	let { kubejs, minecraft } = event.getRecipes()
 	const BRICK = "tconstruct:seared_brick"
 	const PRISM = "#forge:glass/prism"
 
@@ -10,7 +10,7 @@ ServerEvents.recipes((event) => {
 	], {
 		M: Mechanisms.STONE.COM,
 		B: BRICK,
-		X: "#tconstruct:gauge"
+		X: "#tconstruct:seared_tanks"
 	}).id("tconstruct:smeltery/seared/melter")
 
 	// 焦黑加热器
@@ -23,11 +23,36 @@ ServerEvents.recipes((event) => {
 		B: BRICK
 	}).id("tconstruct:smeltery/seared/heater")
 
+	// 冶炼炉控制器
+	kubejs.shaped("tconstruct:smeltery_controller", [
+		"AAA",
+		"BCB",
+		"DED"
+	], {
+		A: "tconstruct:seared_bricks",
+		B: "tconstruct:seared_brick",
+		C: Mechanisms.COPPER.COM,
+		D: "thermal:cured_rubber",
+		E: Mechanisms.IRON.COM
+	}).id("tconstruct:smeltery/casting/seared/smeltery_controller")
+
+	// 高级焦炉
+	kubejs.shaped("cmi:reinforced_coke_oven", [
+		"AAA",
+		"BMB",
+		"CCC"
+	], {
+		A: "tconstruct:seared_bricks",
+		B: "tconstruct:scorched_brick",
+		C: "tconstruct:scorched_bricks",
+		M: Mechanisms.NETHER.COM
+	})
+
 	// 焦黑燃料储罐
 	kubejs.shaped("tconstruct:seared_fuel_tank", [
-		"BBB",
+		" B ",
 		"BPB",
-		"BBB"
+		" B "
 	], {
 		P: PRISM,
 		B: BRICK
@@ -35,33 +60,75 @@ ServerEvents.recipes((event) => {
 
 	// 焦黑材料储罐
 	kubejs.shaped("tconstruct:seared_ingot_tank", [
-		"BPB",
-		"BPB",
-		"BPB"
+		"B B",
+		" P ",
+		"B B"
 	], {
 		P: PRISM,
 		B: BRICK
 	}).id("tconstruct:smeltery/seared/ingot_tank")
 
 	// 焦黑燃料量器
-	kubejs.shaped("tconstruct:seared_fuel_gauge", [
-		"BPB",
-		"PPP",
-		"BPB"
-	], {
-		P: PRISM,
-		B: BRICK
-	}).id("tconstruct:smeltery/seared/fuel_gauge")
+	minecraft.stonecutting("tconstruct:seared_fuel_gauge", [
+		"tconstruct:seared_fuel_tank"
+	]).id("tconstruct:smeltery/seared/fuel_gauge")
+	minecraft.stonecutting("tconstruct:seared_fuel_tank", [
+		"tconstruct:seared_fuel_gauge"
+	])
 
 	// 焦黑材料量器
-	kubejs.shaped("tconstruct:seared_ingot_gauge", [
-		"PBP",
-		"BPB",
-		"PBP"
+	minecraft.stonecutting("tconstruct:seared_ingot_gauge", [
+		"tconstruct:seared_ingot_tank"
+	]).id("tconstruct:smeltery/seared/ingot_gauge")
+	minecraft.stonecutting("tconstruct:seared_ingot_tank", [
+		"tconstruct:seared_ingot_gauge"
+	])
+
+	// 焦褐合金炉
+	kubejs.shaped("tconstruct:scorched_alloyer", [
+		"ABA",
+		"AMA"
 	], {
-		P: PRISM,
-		B: BRICK
-	}).id("tconstruct:smeltery/seared/ingot_gauge")
+		A: "tconstruct:scorched_brick",
+		B: "#tconstruct:scorched_tanks",
+		M: Mechanisms.NETHER.COM
+	}).id("tconstruct:smeltery/scorched/alloyer")
+
+	// 焦褐燃料储罐
+	kubejs.shaped("tconstruct:scorched_fuel_tank", [
+		" B ",
+		"BPB",
+		" B "
+	], {
+		P: "#forge:glass",
+		B: "tconstruct:scorched_brick"
+	}).id("tconstruct:smeltery/scorched/fuel_tank")
+
+	// 焦褐材料储罐
+	kubejs.shaped("tconstruct:scorched_ingot_tank", [
+		"B B",
+		" P ",
+		"B B"
+	], {
+		P: "#forge:glass",
+		B: "tconstruct:scorched_brick"
+	}).id("tconstruct:smeltery/scorched/ingot_tank")
+
+	// 焦褐燃料量器
+	minecraft.stonecutting("tconstruct:scorched_fuel_gauge", [
+		"tconstruct:scorched_fuel_tank"
+	]).id("tconstruct:smeltery/scorched/fuel_gauge")
+	minecraft.stonecutting("tconstruct:scorched_fuel_tank", [
+		"tconstruct:scorched_fuel_gauge"
+	])
+
+	// 焦褐材料量器
+	minecraft.stonecutting("tconstruct:scorched_ingot_gauge", [
+		"tconstruct:scorched_ingot_tank"
+	]).id("tconstruct:smeltery/scorched/ingot_gauge")
+	minecraft.stonecutting("tconstruct:scorched_ingot_tank", [
+		"tconstruct:scorched_ingot_gauge"
+	])
 
 	// 铸模箱
 	kubejs.shaped("tconstruct:cast_chest", [

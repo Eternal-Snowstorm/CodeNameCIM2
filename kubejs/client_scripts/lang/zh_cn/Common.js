@@ -4,17 +4,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} key 
 	 * @param {String} value 
 	 */
-	function addGasLang(key, value) {
+	function addMekanismLang(key, value) {
 		event.add(`gas.${Cmi.MODID}.${key}`, value)
-	}
-
-	/**
-	 * 
-	 * @param {String} key 
-	 * @param {String} value 
-	 */
-	function addInfuseTypeLang(key, value) {
 		event.add(`infuse_type.${Cmi.MODID}.${key}`, value)
+		event.add(`chemical.${Cmi.MODID}.${key}`, value)
 	}
 
 	/**
@@ -78,23 +71,23 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`cmi.structure.ore_node/${key}_node`, `${value}矿藏节点`)
 	}
 
-	addGasLang("sulfide_gas_mixture", "硫化物混合气")
-	addGasLang("nitroglycerine", "硝化甘油")
-	addGasLang("xenon", "氙气")
-	addGasLang("radon", "氡气")
-	addGasLang("refined_nuke_waste", "精炼核废料")
-	addGasLang("mercury", "汞")
-	addGasLang("geyser_jet", "间歇泉喷射气")
-	addGasLang("radon_mixture", "氡混合气体")
-	addGasLang("helium_3", "氦-3")
-	addGasLang("co", "一氧化碳")
-	addGasLang("ch4", "甲烷")
-	addGasLang("silicon_gas_modulator", "硅基气相调节剂")
-
-	addInfuseTypeLang("chaotic_void", "混沌虚空")
-	addInfuseTypeLang("etrium", "埃忒恩")
-	addInfuseTypeLang("helium", "氦")
-	addInfuseTypeLang("dense_oxide", "致密氧化物")
+	addMekanismLang("sulfide_gas_mixture", "硫化物混合气")
+	addMekanismLang("nitroglycerine", "硝化甘油")
+	addMekanismLang("xenon", "氙气")
+	addMekanismLang("radon", "氡气")
+	addMekanismLang("refined_nuke_waste", "精炼核废料")
+	addMekanismLang("mercury", "汞")
+	addMekanismLang("geyser_jet", "间歇泉喷射气")
+	addMekanismLang("radon_mixture", "氡混合气体")
+	addMekanismLang("helium_3", "氦-3")
+	addMekanismLang("co", "一氧化碳")
+	addMekanismLang("ch4", "甲烷")
+	addMekanismLang("silicon_gas_modulator", "硅基气相调节剂")
+	addMekanismLang("fissile_uranium_compound", "裂变铀化合物")
+	addMekanismLang("chaotic_void", "混沌虚空")
+	addMekanismLang("etrium", "埃忒恩")
+	addMekanismLang("helium", "氦")
+	addMekanismLang("dense_oxide", "致密氧化物")
 
 	addPlanetLang("dionysus", "迪奥尼索斯")
 	addPlanetLang("hephaestus", "赫菲斯托斯")

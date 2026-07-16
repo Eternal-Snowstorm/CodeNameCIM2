@@ -3,8 +3,8 @@ ServerEvents.recipes((event) => {
 
 	/**
 	 * 
-	 * @param {(Internal.OutputFluid_|OutputItem_)[]} output 
-	 * @param {(Internal.InputFluid_|InputItem_)[]} inputs 
+	 * @param {Internal.OutputFluid_[] | OutputItem_[]} output 
+	 * @param {Internal.InputFluid_[] | InputItem_[]} inputs 
 	 * @returns 
 	 */
 	function addComponRecipe(output, inputs) {
@@ -74,11 +74,57 @@ ServerEvents.recipes((event) => {
 		"cmi:industrial_frame"
 	])
 
+	// PZ管道
+	addComponRecipe("16x pipez:item_pipe", [
+		"#forge:gears/invar",
+		Mechanisms.THERMAL.COM,
+		"#forge:plates/industrial_iron",
+		Mechanisms.WOODEN.COM,
+		"thermal:cured_rubber"
+	]).id("pipez:item_pipe")
+
+	addComponRecipe("16x pipez:fluid_pipe", [
+		"#forge:gears/invar",
+		Mechanisms.THERMAL.COM,
+		"#forge:plates/industrial_iron",
+		Mechanisms.COPPER.COM,
+		"thermal:cured_rubber"
+	]).id("pipez:fluid_pipe")
+
+	addComponRecipe("16x pipez:energy_pipe", [
+		"#forge:gears/invar",
+		Mechanisms.THERMAL.COM,
+		"#forge:plates/industrial_iron",
+		Mechanisms.REDSTONE.COM,
+		"thermal:cured_rubber"
+	]).id("pipez:energy_pipe")
+
+	addComponRecipe("16x pipez:gas_pipe", [
+		"#forge:gears/invar",
+		Mechanisms.THERMAL.COM,
+		"#forge:plates/industrial_iron",
+		Mechanisms.AIR.COM,
+		"thermal:cured_rubber"
+	]).id("pipez:gas_pipe")
+
+	addComponRecipe("16x pipez:universal_pipe", [
+		"pipez:item_pipe",
+		"pipez:fluid_pipe",
+		"pipez:energy_pipe",
+		"pipez:gas_pipe"
+	]).id("pipez:universal_pipe")
+
 	// 红石伺服器
 	addComponRecipe("2x thermal:redstone_servo", [
 		Fluid.of("immersiveengineering:redstone_acid", 200),
 		"#forge:plates/iron"
 	]).id("thermal_extra:machine/component_assembly/redstone_servo")
+
+	// 复合钨钢板
+	addComponRecipe("cmi:composite_tungsten_steel_plate", [
+		"cmi:incomplete_tungsten_steel_plate",
+		"#forge:plates/tungsten_steel"
+	])
 
 	// 并行升级 +4
 	addComponRecipe("thermal_parallel:argument_parallel_2", [

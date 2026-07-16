@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:sodium_aluminate_solution", 200),
 		"cmi:red_mud"
 	], [
-		"#create:crushed_raw_materials/aluminum",
+		"#mekanism:dirty_dusts/aluminum",
 		Fluid.of("cmi:caustic_soda_solution", 1000)
 	])
 

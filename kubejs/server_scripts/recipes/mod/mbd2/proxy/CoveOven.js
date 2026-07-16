@@ -1,10 +1,13 @@
 let $CokeOvenRecipe =
 	Java.loadClass("blusunrize.immersiveengineering.api.crafting.CokeOvenRecipe")
 
-MBDRecipeTypeEvents.onTransferProxyRecipe("cmi:reinforced_coke_oven", (event) => {
-	let recipeEvent = event.getEvent()
-	let { proxyRecipe, proxyRecipeId, proxyTypeId, recipeType } = recipeEvent
+MBDRecipeTypeEvents.onTransferProxyRecipe(($) => {
+	let event = $.getEvent()
+	let { proxyRecipe, proxyRecipeId, proxyTypeId, recipeType } = event
 
+	if (recipeType !== "cmi:reinforced_coke_oven") {
+		return
+	}
 	if (proxyTypeId !== "immersiveengineering:coke_oven") {
 		return
 	}
@@ -21,14 +24,19 @@ MBDRecipeTypeEvents.onTransferProxyRecipe("cmi:reinforced_coke_oven", (event) =>
 	/**
 	 * @type {Internal.MBDRecipeSchema$MBDRecipeJS}
 	 */
-	let mbdRecipe = recipeType.recipeBuilder()
+	let builder = recipeType.recipeBuilder()
+	/**
+	 * @type {Internal.FluidStackJS_}
+	 */
 	let creosote = "immersiveengineering:creosote"
+	let input = recipe.input
+	let output = recipe.output
 
-	mbdRecipe.inputItems(recipe.input.getBaseIngredient())
-		.outputItems(recipe.output.get())
-		.outputFluids(creosote, recipe.creosoteOutput)
-		.duration(recipe.time)
-		.id(proxyRecipeId + "_mbd2un")
+	builder.inputItems(input.getBaseIngredient())
+		.outputItems(output.get())
+		.outputFluids(Fluid.of(creosote, recipe.creosoteOutput))
+		.duration(recipe.time * 0.5)
+		.id(proxyRecipeId + "_mbd2_proxy")
 
-	recipeEvent.mbdRecipe = mbdRecipe.buildMBDRecipe()
+	event.mbdRecipe = builder.buildMBDRecipe()
 })

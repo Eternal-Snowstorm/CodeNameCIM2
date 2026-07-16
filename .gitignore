@@ -69,6 +69,8 @@ CMI Dev.json
 /CMI-Dev.json
 /1.20.1-Forge-.json
 /log4j2.xml
+/.codex
+/.agents
 
 # Mods
 /mods/*
@@ -79,6 +81,7 @@ CMI Dev.json
 !/mods/MasterfulMachinery*.jar
 !/mods/Storage Tweaks*.jar
 !/mods/Composting*.jar
+!/mods/interlocked*.jar
 
 # ResourcePacks
 /resourcepacks/*
@@ -87,7 +90,7 @@ CMI Dev.json
 !/resourcepacks/CMI Squarefully.zip
 !/resourcepacks/Pretty X Smart Pipez.zip
 !/resourcepacks/CreateSophisticatedBackpacks.zip
-!/resourcepacks/Updated_Engineering_v1.7.zip
+!/resourcepacks/Updated_Engineering*.zip
 !/resourcepacks/Cu Again.zip
 !/resourcepacks/OreUI For Everyone 1.0.zip
 

@@ -1,7 +1,7 @@
 BlockEvents.rightClicked((event) => {
 	let { block, item, player, level } = event
 	let pos = block.getPos()
-	const CHANCE = 0.1
+	const CHANCE = 0.3
 
 	if (isTargetBlock() && isTriggerItem()) {
 		player.swing()

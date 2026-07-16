@@ -1,5 +1,18 @@
 {
-	"ldlib": {
-    "connection":"cmi:block/casing/iron/ctm"
+	"ctm": {
+		"ctm_version": 1,
+		"type": "CTM",
+		"layer": "SOLID",
+		"textures": [
+			"cmi:block/casing/iron/ctm"
+		],
+		
+		"extra": {
+			"connect_to": [
+				{
+					"block": "cmi:iron_casing"
+				}
+			]
+		}
 	}
 }

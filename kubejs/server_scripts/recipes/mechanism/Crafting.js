@@ -18,9 +18,9 @@ ServerEvents.recipes((event) => {
 		"#forge:stone",
 		"tconstruct:seared_brick",
 		Mechanisms.PART.BASIC,
-		"#forge:tools/axes",
+		"#minecraft:axes",
 		"#forge:tools/wrench"
-	]).damageIngredient("#forge:tools/axes")
+	]).damageIngredient("#minecraft:axes")
 		.keepIngredient("#forge:tools/wrench")
 
 	// 红石
@@ -30,9 +30,9 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/redstone",
 		"minecraft:repeater",
 		Mechanisms.PART.BASIC,
-		"#forge:tools/axes",
+		"#minecraft:axes",
 		"#forge:tools/wrench"
-	]).damageIngredient("#forge:tools/axes")
+	]).damageIngredient("#minecraft:axes")
 		.keepIngredient("#forge:tools/wrench")
 
 	// 自然
@@ -42,10 +42,10 @@ ServerEvents.recipes((event) => {
 		"minecraft:water_bucket",
 		"#forge:seeds",
 		Mechanisms.PART.MAGIC,
-		"#forge:tools/axes",
+		"#minecraft:axes",
 		"#forge:tools/wrench"
 	]).replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
-		.damageIngredient("#forge:tools/axes")
+		.damageIngredient("#minecraft:axes")
 		.keepIngredient("#forge:tools/wrench")
 
 	// 流体
@@ -67,9 +67,9 @@ ServerEvents.recipes((event) => {
 		"#create:cogwheel",
 		"#create:large_cogwheel",
 		Mechanisms.PART.MECHA,
-		"#forge:tools/axes",
+		"#minecraft:axes",
 		"#forge:tools/wrench"
-	]).damageIngredient("#forge:tools/axes")
+	]).damageIngredient("#minecraft:axes")
 		.keepIngredient("#forge:tools/wrench")
 
 	// 磁力
@@ -79,8 +79,8 @@ ServerEvents.recipes((event) => {
 		"#vintageimprovements:springs/iron",
 		"#forge:wires/iron",
 		Mechanisms.PART.BASIC,
-		"#forge:tools/axes",
+		"#minecraft:axes",
 		"#forge:tools/wrench"
-	]).damageIngredient("#forge:tools/axes")
+	]).damageIngredient("#minecraft:axes")
 		.keepIngredient("#forge:tools/wrench")
 })

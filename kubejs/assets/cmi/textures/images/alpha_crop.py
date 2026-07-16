@@ -17,7 +17,7 @@ def crop_transparent(image_path: str | Path, output_path: str | Path) -> None:
 
 current_dir = Path(__file__).parent
 
-input_file = current_dir / "in.png"
+input_file = current_dir / "in.png" or "input.png"
 output_file = current_dir / "out.png"
 
 if not input_file.exists():

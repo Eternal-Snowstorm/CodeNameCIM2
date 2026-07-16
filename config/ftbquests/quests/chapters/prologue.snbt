@@ -316,18 +316,6 @@
 						}
 						{
 							level: 1
-							name: "nebula_tinker:shadow"
-						}
-						{
-							level: 1
-							name: "tconstruct:solid"
-						}
-						{
-							level: 1
-							name: "tconstruct:conducting"
-						}
-						{
-							level: 1
 							name: "tconstruct:silky_shears"
 						}
 					]
@@ -352,7 +340,7 @@
 						upgrades: -78
 					}
 					tic_stats: {
-						"tconstruct:attack_damage": 17.0775f
+						"tconstruct:attack_damage": 14.85f
 						"tconstruct:attack_speed": 2.05f
 						"tconstruct:block_amount": 10.0f
 						"tconstruct:durability": 1988.9102f
@@ -524,54 +512,6 @@
 			y: -7.0d
 		}
 		{
-			description: ["&8Tips:按住[Alt]可以从附近的工具箱里快捷调用物品"]
-			icon: "ae2:nether_quartz_wrench"
-			id: "6FC6A8840156255C"
-			subtitle: "这些还能派上用场..."
-			tasks: [
-				{
-					count: 2L
-					id: "4C32610999389A1B"
-					item: { Count: 2, id: "ae2:storage_bus" }
-					type: "item"
-				}
-				{
-					id: "6B1F5AB1468C5122"
-					item: "ae2:crafting_terminal"
-					type: "item"
-				}
-				{
-					id: "24D0F5DFA34E1245"
-					item: "create:brown_toolbox"
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "1337E828A7D442BC"
-					item: { Count: 9, id: "minecraft:magma_block" }
-					type: "item"
-				}
-			]
-			title: "清点物资"
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			description: [
-				"利用飞船上的物资, "
-				"我应该可以搭建一套简单的存储系统？"
-			]
-			icon: "ae2:crafting_terminal"
-			id: "527B287F33D8FDAE"
-			tasks: [{
-				id: "109221B85E0631FC"
-				title: "存储控制"
-				type: "checkmark"
-			}]
-			x: 4.5d
-			y: 0.0d
-		}
-		{
 			id: "09E1B57B8D35ED4E"
 			tasks: [{
 				id: "09039616DF8D6DEA"
@@ -599,6 +539,81 @@
 			}]
 			x: -1.5d
 			y: -7.0d
+		}
+		{
+			description: [
+				"这是一把很普通的弓, 它的韧性和柔度较好, 可以快速拉满射出紫水晶晶簇, 为您提供基础的防身. "
+				"如果您碰到由热力系列添加的拥有远程攻击能力的怪物, 就用它进行反击吧. "
+				"橡胶木板可以用于修复这把弓, 请一定要活下去. "
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "41A9A5F81771CD4F"
+			rewards: [
+				{
+					id: "1AED3A4B90A6614F"
+					item: {
+						Count: 1
+						id: "tconstruct:longbow"
+						tag: {
+							Damage: 0
+							owner: [I;
+								290990735
+								69617159
+								-1729868015
+								-1156403660
+							]
+							tic_broken: 0b
+							tic_materials: [
+								"cmi:rubberwood"
+								"cmi:rubberwood"
+								"cmi:amethyst"
+								"cmi:rope"
+							]
+							tic_modifiers: [{
+								level: 1
+								name: "tconstruct:crystalshot"
+							}]
+							tic_multipliers: {
+								"tconstruct:durability": 1.5f
+							}
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:accuracy": 0.85f
+								"tconstruct:attack_damage": 3.2f
+								"tconstruct:draw_speed": 1.5f
+								"tconstruct:durability": 351.0f
+								"tconstruct:velocity": 0.8f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3D333E50E3192974"
+					item: "thermal:rubberwood_planks"
+					title: "修补材料"
+					type: "item"
+				}
+			]
+			subtitle: "就请拿着它走下去吧"
+			tasks: [{
+				id: "4CAC16543EDBED94"
+				title: "如果您处于困境"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -0.5d
 		}
 	]
 	title: "开始"

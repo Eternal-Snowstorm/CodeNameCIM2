@@ -106,6 +106,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("create:sail_frame", `不再支持作为风帆为{create:windmill_bearing, 1}风车轴承产生应力`)
 	addCommonTooltipLang("cmi:astral_core", "用于激活{cmi:eden_crystal, 1}星环传送门的核心§c 小心落雷")
 	addCommonTooltipLang("cmi:obsidian_cell", "你似乎搞砸了💀")
+	addCommonTooltipLang("minecraft:sugar_cane", "食用会返还一个甘蔗纤维")
+	addCommonTooltipLang("#cmi:machine_port", "制作时不消耗机器核心")
+	addCommonTooltipLang("#cmi:machine_core", "制作接口时不消耗")
+	addCommonTooltipLang("#forge:tools/wrench", "工作台制作构件时不消耗")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",

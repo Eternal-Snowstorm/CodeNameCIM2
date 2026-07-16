@@ -13,6 +13,20 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`material.${Cmi.MODID}.${key}.ranged`, encyclopedia)
 		event.add(`material.${Cmi.MODID}.${key}.armor`, encyclopedia)
 	}
+	
+	addTConMaterialLang(
+		"rope",
+		"麻绳",
+		"非常便利的线材",
+		"一种韧性较强的常规草绳, 是相对便宜的绑定材料"
+	)
+
+	addTConMaterialLang(
+		"rubberwood",
+		"橡胶木",
+		"极其柔韧, 但还是木头",
+		"一种韧性较强但是硬度较低的木头, 但是似乎耐用度相当不错"
+	)
 
 	addTConMaterialLang(
 		"amethyst",

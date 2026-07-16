@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements, thermal } = event.getRecipes()
+	let { create, vintageimprovements, thermal, cmi } = event.getRecipes()
 
 	// 石英粉
 	create.crushing("thermal:quartz_dust", [
@@ -97,51 +97,21 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 聚硅醚
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [
-		],
-		"input_fluids": [
-			{
-				"tag": "cmi:light_silicone_ether",
-				"amount": 2000
-			}
-		],
-		"result_fluids": [
-			{
-				"fluid": "cmi:polysilicone_ether",
-				"amount": 2000
-			}
-		],
-		"outputs": [
-		],
-		"time": 200
-	})
+	cmi.chemical_reactor()
+		.inputFluids(Fluid.of("cmi:light_silicone_ether", 2000))
+		.outputFluids(Fluid.of("cmi:polysilicone_ether", 2000))
+		.inputFE(32 * (20 * 10))
+		.duration(20 * 10)
+
 	// 液态硅橡胶
-	event.custom({
-		"type": "immersiveindustry:chemical",
-		"inputs": [
-		],
-		"input_fluids": [
-			{
-				"tag": "cmi:polysilicone_ether",
-				"amount": 2000
-			},
-			{
-				"tag": "cmi:vinegar_acid",
-				"amount": 100
-			}
-		],
-		"result_fluids": [
-			{
-				"fluid": "cmi:silicon_rubber",
-				"amount": 4000
-			}
-		],
-		"outputs": [
-		],
-		"time": 200
-	})
+	cmi.chemical_reactor()
+		.inputFluids([
+			Fluid.of("cmi:polysilicone_ether", 2000),
+			Fluid.of("cmi:vinegar_acid", 100)
+		])
+		.outputFluids(Fluid.of("cmi:silicon_rubber", 4000))
+		.inputFE(32 * (20 * 10))
+		.duration(20 * 10)
 
 	// 硅橡胶
 	thermal.chiller("cmi:silicon_rubber", [
@@ -151,5 +121,4 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:silicon_rubber", 200),
 		"#tconstruct:casts/multi_use/plate"
 	])
-
 })

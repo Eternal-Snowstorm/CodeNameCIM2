@@ -4,6 +4,8 @@ let $Tiers =
 	Java.loadClass("net.minecraft.world.item.Tiers")
 
 StartupEvents.registry("item", (event) => {
+	let properties = new Item$Properties()
+
 	// 超级刀
 	event.createCustom(`${Cmi.MODID}:super_knife`, () => {
 		return new JavaAdapter($KnifeItem, {
@@ -44,12 +46,12 @@ StartupEvents.registry("item", (event) => {
 			isDamageable() {
 				return true
 			}
-		}, $Tiers.NETHERITE, 0.5, -2.0, new Item$Properties().rarity("epic"))
+		}, $Tiers.NETHERITE, 0.5, -2.0, properties.rarity("epic"))
 	}).tag("forge:tools/knives").tag("forge:tools")
 
 	// 木质小刀
 	event.createCustom(`${Cmi.MODID}:wooden_knife`, () => {
-		return new $KnifeItem($Tiers.WOOD, 0.5, -2.0, new Item$Properties())
+		return new $KnifeItem($Tiers.WOOD, 0.5, -2.0, properties)
 	}).tag("forge:tools/knives").tag("forge:tools")
 
 	// 燧石锤
@@ -68,4 +70,4 @@ StartupEvents.registry("item", (event) => {
 
 	// 伊甸
 	event.create(`${Cmi.MODID}:astral_core`)
-})	
+})

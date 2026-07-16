@@ -3,10 +3,10 @@ ServerEvents.recipes((event) => {
 
 	CmiMetalRegistry.getAll().forEach((material) => {
 		let metal = material.getId()
-		let fluid = Ingredient.getFirstFluidId(`tconstruct:molten_${metal}`)
+		let fluid = `tconstruct:molten_${metal}`
 
 		if (fluid === null) {
-			// console.warn(`No molten metal found for ${metal}!`)
+			console.warn(`No molten metal found for ${metal}!`)
 			return
 		}
 
@@ -18,67 +18,79 @@ ServerEvents.recipes((event) => {
 		const GEAR = `#forge:gears/${metal}`
 		const COIN = `#forge:coins/${metal}`
 
+		let ingot = getHighPriorityItem(Ingredient.of(INGOT).getItemIds())
+		let nugget = getHighPriorityItem(Ingredient.of(NUGGET).getItemIds())
+		let block = getHighPriorityItem(Ingredient.of(BLOCK).getItemIds())
+		let plate = getHighPriorityItem(Ingredient.of(PLATE).getItemIds())
+		let rod = getHighPriorityItem(Ingredient.of(ROD).getItemIds())
+		let gear = getHighPriorityItem(Ingredient.of(GEAR).getItemIds())
+		let coin = getHighPriorityItem(Ingredient.of(COIN).getItemIds())
+
 		const MULTI_USE_CAST = "#tconstruct:casts/multi_use"
 		const SINGLE_USE_CAST = "#tconstruct:casts/single_use"
 
-		tconstruct.casting_table(INGOT)
-			.cast(`${MULTI_USE_CAST}/ingot`)
-			.fluid(Fluid.of(fluid, 90))
-			.cooling_time(20 * 3)
+		if (Ingredient.isNotNull(INGOT)) {
+			tconstruct.casting_table(ingot)
+				.cast(`${MULTI_USE_CAST}/ingot`)
+				.fluid(Fluid.tag("tag", fluid, 90))
+				.cooling_time(20 * 3)
 
-		tconstruct.casting_table(INGOT)
-			.cast(`${SINGLE_USE_CAST}/ingot`)
-			.fluid(Fluid.of(fluid, 90))
-			.cooling_time(20 * 3)
-			.cast_consumed(true)
+			tconstruct.casting_table(ingot)
+				.cast(`${SINGLE_USE_CAST}/ingot`)
+				.fluid(Fluid.tag("tag", fluid, 90))
+				.cooling_time(20 * 3)
+				.cast_consumed(true)
 
-		thermal.chiller(INGOT, [
-			Fluid.of(fluid, 90),
-			`${MULTI_USE_CAST}/ingot`
-		]).energy(4800)
+			thermal.chiller(ingot, [
+				Fluid.tag("fluidTag", fluid, 90),
+				`${MULTI_USE_CAST}/ingot`
+			]).energy(4800)
+		} else {
+			console.warn(`No ingot found for ${metal}!`)
+		}
 
 		if (Ingredient.isNotNull(NUGGET)) {
-			tconstruct.casting_table(NUGGET)
+			tconstruct.casting_table(nugget)
 				.cast(`${MULTI_USE_CAST}/nugget`)
-				.fluid(Fluid.of(fluid, 10))
+				.fluid(Fluid.tag("tag", fluid, 10))
 				.cooling_time(20 * 1)
 
-			tconstruct.casting_table(NUGGET)
+			tconstruct.casting_table(nugget)
 				.cast(`${SINGLE_USE_CAST}/nugget`)
-				.fluid(Fluid.of(fluid, 10))
+				.fluid(Fluid.tag("tag", fluid, 10))
 				.cooling_time(20 * 1)
 				.cast_consumed(true)
 
-			thermal.chiller(NUGGET, [
-				Fluid.of(fluid, 10),
+			thermal.chiller(nugget, [
+				Fluid.tag("fluidTag", fluid, 10),
 				`${MULTI_USE_CAST}/nugget`
 			]).energy(600)
 		} else {
-			// console.warn(`No nugget found for ${metal}!`)
+			console.warn(`No nugget found for ${metal}!`)
 		}
 
 		if (Ingredient.isNotNull(BLOCK)) {
-			tconstruct.casting_basin(BLOCK)
-				.fluid(Fluid.of(fluid, 810))
+			tconstruct.casting_basin(block)
+				.fluid(Fluid.tag("tag", fluid, 90 * 9))
 				.cooling_time(20 * 9)
 		} else {
 			// console.warn(`No storage block found for ${metal}!`)
 		}
 
 		if (Ingredient.isNotNull(PLATE)) {
-			tconstruct.casting_table(PLATE)
+			tconstruct.casting_table(plate)
 				.cast(`${MULTI_USE_CAST}/plate`)
-				.fluid(Fluid.of(fluid, 90))
+				.fluid(Fluid.tag("tag", fluid, 90))
 				.cooling_time(20 * 3)
 
-			tconstruct.casting_table(PLATE)
+			tconstruct.casting_table(plate)
 				.cast(`${SINGLE_USE_CAST}/plate`)
-				.fluid(Fluid.of(fluid, 90))
+				.fluid(Fluid.tag("tag", fluid, 90))
 				.cooling_time(20 * 3)
 				.cast_consumed(true)
 
-			thermal.chiller(PLATE, [
-				Fluid.of(fluid, 90),
+			thermal.chiller(plate, [
+				Fluid.tag("fluidTag", fluid, 90),
 				`${MULTI_USE_CAST}/plate`
 			]).energy(4800)
 		} else {
@@ -86,19 +98,19 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (Ingredient.isNotNull(ROD)) {
-			tconstruct.casting_table(ROD)
+			tconstruct.casting_table(rod)
 				.cast(`${MULTI_USE_CAST}/rod`)
-				.fluid(Fluid.of(fluid, 45))
+				.fluid(Fluid.tag("tag", fluid, 45))
 				.cooling_time(20 * 1.5)
 
-			tconstruct.casting_table(ROD)
+			tconstruct.casting_table(rod)
 				.cast(`${SINGLE_USE_CAST}/rod`)
-				.fluid(Fluid.of(fluid, 45))
+				.fluid(Fluid.tag("tag", fluid, 45))
 				.cooling_time(20 * 1.5)
 				.cast_consumed(true)
 
-			thermal.chiller(ROD, [
-				Fluid.of(fluid, 45),
+			thermal.chiller(rod, [
+				Fluid.tag("fluidTag", fluid, 45),
 				`${SINGLE_USE_CAST}/rod`
 			]).energy(2400)
 		} else {
@@ -106,19 +118,19 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (Ingredient.isNotNull(GEAR)) {
-			tconstruct.casting_table(GEAR)
+			tconstruct.casting_table(gear)
 				.cast(`${MULTI_USE_CAST}/gear`)
-				.fluid(Fluid.of(fluid, 360))
+				.fluid(Fluid.tag("tag", fluid, 90 * 4))
 				.cooling_time(20 * 7.5)
 
-			tconstruct.casting_table(GEAR)
+			tconstruct.casting_table(gear)
 				.cast(`${SINGLE_USE_CAST}/gear`)
-				.fluid(Fluid.of(fluid, 360))
+				.fluid(Fluid.tag("tag", fluid, 90 * 4))
 				.cooling_time(20 * 7.5)
 				.cast_consumed(true)
 
-			thermal.chiller(GEAR, [
-				Fluid.of(fluid, 360),
+			thermal.chiller(gear, [
+				Fluid.tag("fluidTag", fluid, 90 * 4),
 				`${MULTI_USE_CAST}/gear`
 			]).energy(9600)
 		} else {
@@ -126,19 +138,19 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (Ingredient.isNotNull(COIN)) {
-			tconstruct.casting_table(COIN)
+			tconstruct.casting_table(coin)
 				.cast(`${MULTI_USE_CAST}/coin`)
-				.fluid(Fluid.of(fluid, 30))
+				.fluid(Fluid.tag("tag", fluid, 30))
 				.cooling_time(20 * 1.5)
 
-			tconstruct.casting_table(COIN)
+			tconstruct.casting_table(coin)
 				.cast(`${SINGLE_USE_CAST}/coin`)
-				.fluid(Fluid.of(fluid, 30))
+				.fluid(Fluid.tag("tag", fluid, 30))
 				.cooling_time(20 * 1.5)
 				.cast_consumed(true)
 
-			thermal.chiller(COIN, [
-				Fluid.of(fluid, 30),
+			thermal.chiller(coin, [
+				Fluid.tag("fluidTag", fluid, 30),
 				`${MULTI_USE_CAST}/coin`
 			]).energy(1600)
 		} else {

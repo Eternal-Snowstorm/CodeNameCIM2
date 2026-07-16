@@ -1,6 +1,25 @@
 ServerEvents.recipes((event) => {
 	let { kubejs } = event.getRecipes()
 
+	// 熔炉
+	kubejs.shaped("minecraft:furnace", [
+		"AAA",
+		"A A",
+		"BBB"
+	], {
+		A: "#forge:stone",
+		B: "#forge:flints"
+	}).id("minecraft:furnace")
+
+	// 切石机
+	kubejs.shaped("minecraft:stonecutter", [
+		" A ",
+		"BBB"
+	], {
+		A: "#forge:plates/iron",
+		B: "#forge:stone"
+	}).id("minecraft:stonecutter")
+
 	// 箱子
 	kubejs.shaped("4x minecraft:chest", [
 		"AAA",
@@ -144,4 +163,9 @@ ServerEvents.recipes((event) => {
 		"2x #forge:dusts/niter",
 		"3x #forge:dusts/charcoal"
 	]).id("immersiveengineering:crafting/gunpowder_from_dusts")
+
+	// 燧石
+	kubejs.shapeless("2x minecraft:flint", [
+		"3x minecraft:gravel"
+	]).id("tconstruct:common/flint")
 })

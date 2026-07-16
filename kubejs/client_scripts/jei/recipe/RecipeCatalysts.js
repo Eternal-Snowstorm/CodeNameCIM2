@@ -23,8 +23,8 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 		let stack = Item.of(items[0])
 
 		if (displayName !== undefined) {
-			let key = Component.translatable(`recipe.jei.recipe.cmi.${displayName}`)
-			stack = stack.setHoverName(key)
+			let key = `recipe.jei.recipe.cmi.${displayName}`
+			stack = stack.setHoverName(Component.translatable(key))
 		}
 
 		for (let item of items) {
@@ -44,7 +44,7 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
 
 	addJeiRecipeCatalysts("immersiveindustry:crucible", "immersiveindustry:crucible")
 
-	addJeiRecipeCatalysts("immersiveengineering:coke_oven", "cmi:reinforced_coke_oven")
+	// addJeiRecipeCatalysts("immersiveengineering:coke_oven", "cmi:reinforced_coke_oven")
 
 	addJeiRecipeCatalysts("createdieselgenerators:hammering", [
 		"cmi:flint_hammer",

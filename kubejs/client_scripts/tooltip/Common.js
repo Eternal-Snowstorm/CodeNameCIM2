@@ -35,6 +35,10 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("create:basin")
 	addCommonTooltip("create:sail_frame")
 	addCommonTooltip("cmi:obsidian_cell")
+	addCommonTooltip("minecraft:sugar_cane")
+	addCommonTooltip("#cmi:machine_port")
+	addCommonTooltip("#cmi:machine_core")
+	addCommonTooltip("#forge:tools/wrench")
 
 	/**
 	 * 
@@ -129,7 +133,8 @@ ItemEvents.tooltip((event) => {
 				NebulaLibs.toFahrenheit(mp)
 			).yellow()
 
-			let tagItem = Ingredient.of(`#create:crushed_raw_materials/${metal.getId()}`).getItemIds()
+			let tagItem = Ingredient.of(`#create:crushed_raw_materials/${metal.getId()}`)
+				.getItemIds()
 
 			if (tagItem.length > 0) {
 				tagItem.forEach((item) => {

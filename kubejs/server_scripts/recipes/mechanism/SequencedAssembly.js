@@ -35,6 +35,11 @@ ServerEvents.recipes((event) => {
 		this.loops = 1
 		return this
 	}
+	/**
+	 * 
+	 * @param {Internal.Ingredient_} ingredient 
+	 * @returns 
+	 */
 	SequencedAssemblyRecipe.prototype.input = function (ingredient) {
 		this.ingredient = ingredient
 		return this
@@ -279,7 +284,7 @@ ServerEvents.recipes((event) => {
 		.input("#forge:plates/iron")
 		.curving("cmi:mechanism_mold")
 		.deploying("cmi:motor_rotor")
-		.filling("immersiveengineering:redstone_acid", 200)
+		.filling(Fluid.of("immersiveengineering:redstone_acid", 200))
 		.deploying("#forge:plates/electrum")
 		.deploying(Mechanisms.PART.ENGIN)
 		.build()
@@ -339,7 +344,7 @@ ServerEvents.recipes((event) => {
 	new SequencedAssemblyRecipe(Mechanisms.LIGHT)
 		.input("#forge:plates/iron")
 		.deploying(Mechanisms.LIGHT.AUG)
-		.filling("immersiveengineering:creosote", 100)
+		.filling(Fluid.of("immersiveengineering:creosote", 100))
 		.vacuumizing()
 		.deploying("#forge:rods/constantan")
 		.deploying(Mechanisms.PART.ENGIN)
@@ -349,8 +354,8 @@ ServerEvents.recipes((event) => {
 	new SequencedAssemblyRecipe(Mechanisms.SMART)
 		.input("#forge:plates/silver")
 		.deploying(Mechanisms.SMART.AUG)
-		.filling("immersiveengineering:redstone_acid", 100)
-		.deploying("ae2:printed_silicon")
+		.filling(Fluid.of("immersiveengineering:redstone_acid", 100))
+		.deploying("ae2:fluix_crystal")
 		.laserCutting(1000)
 		.deploying(Mechanisms.PART.ENGIN)
 		.build()
@@ -379,7 +384,7 @@ ServerEvents.recipes((event) => {
 	new SequencedAssemblyRecipe(Mechanisms.HEAVY)
 		.input("#forge:plates/steel")
 		.deploying(Mechanisms.HEAVY.AUG)
-		.filling("thermal_extra:lubricant", 100)
+		.filling(Fluid.of("thermal_extra:lubricant", 100))
 		.vacuumizing()
 		.deploying("#forge:rods/invar")
 		.deploying(Mechanisms.PART.ENGIN)
@@ -394,5 +399,4 @@ ServerEvents.recipes((event) => {
 		.laserCutting(1000)
 		.deploying(Mechanisms.PART.ENGIN)
 		.build()
-
 })

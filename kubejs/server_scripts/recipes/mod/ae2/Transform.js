@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Internal.ItemStack_} output 
-	 * @param {number} count 
+	 * @param {number} [count] 
 	 */
 	function TransformRecipe(output, count) {
 		this.recipe = {
@@ -86,4 +86,12 @@ ServerEvents.recipes((event) => {
 		.input("minecraft:magma_cream")
 		.input("minecraft:gravel")
 		.build("cmi:ae2/transform/tconstruct/nether_grout")
+
+	// 耐火砖泥
+	new TransformRecipe("cmi:refractory_grout", 2)
+		.fluidTag("forge:creosote")
+		.input("cmi:kaolinite_ball")
+		.input("#forge:dusts/hop_graphite")
+		.input("minecraft:gravel")
+		.build("cmi:ae2/transform/cmi/refractory_grout")
 })

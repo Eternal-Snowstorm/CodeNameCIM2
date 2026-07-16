@@ -12,6 +12,9 @@ ServerEvents.tags("item", (event) => {
 
 	add("forge:gems/charged_amethyst", "create_rns:resonant_amethyst")
 
+	event.get("tconstruct:wood_variants/planks")
+		.add("thermal:rubberwood_planks")
+
 	event.get("create:mechanisms")
 		.add("create:precision_mechanism")
 		.add("vintageimprovements:redstone_module")
@@ -40,6 +43,12 @@ ServerEvents.tags("item", (event) => {
 			.add("minecraft:shulker_box")
 			.add(`minecraft:${colors}_shulker_box`)
 	})
+
+	event.get("forge:hammers")
+		.add("#createdieselgenerators:hammers")
+
+	event.get("createdieselgenerators:hammers")
+		.add("createdieselgenerators:hammer")
 
 	event.get("easyrepair:repair_item_pouchs")
 		.add("easyrepair:repair_item_pouch_i")

@@ -3,9 +3,9 @@ function getSlurry(material) {
 
 	if (material === "gold") {
 		return null
-	} else if (MekanismType.Slurry.exists(`mekanism:clean_${material}`)) {
+	} else if (MekType.Slurry.exists(`mekanism:clean_${material}`)) {
 		slurry = `mekanism:clean_${material}`
-	} else if (MekanismType.Slurry.exists(`cmi:${material}_slurry`)) {
+	} else if (MekType.Slurry.exists(`cmi:${material}_slurry`)) {
 		slurry = `cmi:${material}_slurry`
 	}
 	return slurry
@@ -16,9 +16,9 @@ function getDirtySlurry(material) {
 
 	if (material === "gold") {
 		return null
-	} else if (MekanismType.Slurry.exists(`mekanism:dirty_${material}`)) {
+	} else if (MekType.Slurry.exists(`mekanism:dirty_${material}`)) {
 		dirtySlurry = `mekanism:dirty_${material}`
-	} else if (MekanismType.Slurry.exists(`cmi:dirty_${material}_slurry`)) {
+	} else if (MekType.Slurry.exists(`cmi:dirty_${material}_slurry`)) {
 		dirtySlurry = `cmi:dirty_${material}_slurry`
 	}
 	return dirtySlurry
@@ -61,30 +61,30 @@ ServerEvents.recipes((event) => {
 		if (DIRTY_SLURRY !== null) {
 			if (Ingredient.isNotNull(`#forge:raw_materials/${material}`)) {
 				mekanism.dissolution(
-					MekanismType.Slurry.of(DIRTY_SLURRY, 2000),
-					MekanismType.Gas.of("mekanism:sulfuric_acid", 1),
+					MekType.Slurry.of(DIRTY_SLURRY, 2000),
+					MekType.Gas.of("mekanism:sulfuric_acid", 1),
 					`3x #forge:raw_materials/${material}`
 				).id(`mekanism:processing/${material}/slurry/dirty/from_raw_ore`)
 			}
 			if (Ingredient.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
 				mekanism.dissolution(
-					MekanismType.Slurry.of(DIRTY_SLURRY, 6000),
-					MekanismType.Gas.of("mekanism:sulfuric_acid", 2),
+					MekType.Slurry.of(DIRTY_SLURRY, 6000),
+					MekType.Gas.of("mekanism:sulfuric_acid", 2),
 					`#forge:storage_blocks/raw_${material}`
 				).id(`mekanism:processing/${material}/slurry/dirty/from_raw_block`)
 			}
 			if (Ingredient.isNotNull(`#forge:ores/${material}`)) {
 				mekanism.dissolution(
-					MekanismType.Slurry.of(DIRTY_SLURRY, 1000),
-					MekanismType.Gas.of("mekanism:sulfuric_acid", 1),
+					MekType.Slurry.of(DIRTY_SLURRY, 1000),
+					MekType.Gas.of("mekanism:sulfuric_acid", 1),
 					`#forge:ores/${material}`
 				).id(`mekanism:processing/${material}/slurry/dirty/from_ore`)
 			}
 			if (SLURRY !== null) {
 				mekanism.washing(
 					Fluid.of("minecraft:water", 5),
-					MekanismType.Slurry.of(DIRTY_SLURRY, 1),
-					MekanismType.Slurry.of(SLURRY, 1)
+					MekType.Slurry.of(DIRTY_SLURRY, 1),
+					MekType.Slurry.of(SLURRY, 1)
 				).id(`mekanism:processing/${material}/slurry/clean`)
 			}
 		}
@@ -94,7 +94,7 @@ ServerEvents.recipes((event) => {
 				mekanism.crystallizing(
 					"slurry",
 					CRYSTAL,
-					MekanismType.Slurry.of(SLURRY, 200)
+					MekType.Slurry.of(SLURRY, 200)
 				).id(`mekanism:processing/${material}/crystal/from_slurry`)
 			}
 		}

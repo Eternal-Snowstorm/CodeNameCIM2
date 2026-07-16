@@ -4,10 +4,13 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} key 
 	 * @param {String} value 
 	 */
-	function addMbdLang(key, value) {
+	function addMBDLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}`, value)
 
-		event.add(`block.${Cmi.MODID}.${key}_hatch`, `${value}仓`)
+		event.add(`block.${Cmi.MODID}.${key}_input_bus`, `${value}输入总线`)
+		event.add(`block.${Cmi.MODID}.${key}_output_bus`, `${value}输出总线`)
+
+		event.add(`${Cmi.MODID}.${key}`, value)
 
 		addIOerLang(key, "item", value, "物品")
 		addIOerLang(key, "fluid", value, "流体")
@@ -23,9 +26,12 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {String} typeValue 
 	 */
 	function addIOerLang(key, type, value, typeValue) {
-		event.add(`block.${Cmi.MODID}.${key}_${type}_input`, `${value + typeValue}输入仓`)
-		event.add(`block.${Cmi.MODID}.${key}_${type}_output`, `${value + typeValue}输出仓`)
+		event.add(`block.${Cmi.MODID}.${key}_${type}_input_bus`, `${value + typeValue}输入总线`)
+		event.add(`block.${Cmi.MODID}.${key}_${type}_output_bus`, `${value + typeValue}输出总线`)
 	}
 
-	addMbdLang("reinforced_coke_oven", "高级焦炉")
+	addMBDLang("reinforced_coke_oven", "高级焦炉")
+	addMBDLang("improved_rubber_extractor", "QM-0726型橡胶提取器")
+	addMBDLang("chemical_reactor", "化学反应釜")
+	addMBDLang("reinforced_chemical_reactor", "大型化学反应釜")
 })

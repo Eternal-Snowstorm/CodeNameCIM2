@@ -1,13 +1,21 @@
 ServerEvents.recipes((event) => {
-    let { thermal } = event.getRecipes()
+	let { thermal } = event.getRecipes()
 
-    thermal.press("2x immersiveengineering:empty_casing", [
-        "#forge:ingots/brass",
-        "cmi:bullet_mold"
-    ])
+	// 小型空弹壳
+	thermal.press("2x immersiveengineering:empty_casing", [
+		"#forge:ingots/brass",
+		"cmi:bullet_mold"
+	])
 
-    thermal.press("cmi:wooden_gear", [
-        "4x #minecraft:planks",
-        "cmi:gear_mold"
-    ])
+	// 木齿轮
+	thermal.press("cmi:wooden_gear", [
+		"4x #minecraft:planks",
+		"cmi:gear_mold"
+	])
+
+	// 钛合金网
+	thermal.press("2x cmi:titanium_alloy_mesh", [
+		"cmi:titanium_alloy_plate",
+		"cmi:unpack_mold"
+	])
 })

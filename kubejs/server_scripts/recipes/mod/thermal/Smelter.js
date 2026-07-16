@@ -81,9 +81,42 @@ ServerEvents.recipes((event) => {
 	]).energy(5000).id("ae2:decorative/quartz_glass")
 
 	// 耐火砖泥
-	thermal.smelter("2x cmi:refractory_grout",[
-		"immersiveengineering:dust_hop_graphite",
-		"cmi:kaolinite_ball",
-		"minecraft:gravel"
+	thermal.smelter("8x cmi:refractory_grout", [
+		"4x immersiveengineering:dust_hop_graphite",
+		"4x minecraft:gravel",
+		"cmi:kaolinite"
 	]).energy(50000).id("immersiveindustry:crafting/refractory_kiln_brick")
+
+	// 沉积催化合金
+	thermal.smelter("2x cmi:polymerization_catalytic_alloy", [
+		["#forge:ingots/chromium", "#forge:dusts/chromium"],
+		["#forge:ingots/vanadium", "#forge:dusts/vanadium"]
+	])
+
+	// 沉积催化合金
+	thermal.smelter("64x cmi:deposition_catalytic_alloy", [
+		["#forge:ingots/iron", "#forge:dusts/iron"],
+		["#forge:ingots/nickel", "#forge:dusts/nickel"],
+		["#forge:ingots/cobalt", "#forge:dusts/cobalt"]
+	])
+
+	// 粗钛混合物
+	thermal.smelter("cmi:raw_titanium_mixture", [
+		"cmi:raw_titanium_dust",
+		"#forge:dusts/aluminum"
+	])
+
+	// 钛粉 & 粉碎铝
+	thermal.smelter([
+		"cmi:titanium_dust",
+		"create:crushed_raw_aluminum"
+	], [
+		"cmi:raw_titanium_mixture"
+	])
+
+	// 钛合金
+	thermal.smelter("cmi:titanium_alloy_ingot", [
+		["#forge:dusts/titanium", "#forge:ingots/titanium"],
+		["#forge:dusts/chromium", "#forge:ingots/chromium"]
+	])
 })

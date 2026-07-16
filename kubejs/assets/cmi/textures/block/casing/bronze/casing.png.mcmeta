@@ -1,5 +1,10 @@
 {
-	"ldlib": {
-    "connection":"cmi:block/casing/bronze/ctm"
+	"ctm": {
+		"ctm_version": 1,
+		"type": "CTM",
+		"layer": "SOLID",
+		"textures": [
+			"cmi:block/casing/bronze/ctm"
+		]
 	}
 }

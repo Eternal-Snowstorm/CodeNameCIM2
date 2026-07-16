@@ -210,6 +210,97 @@ ServerEvents.recipes((event) => {
 		])
 		.build(NebulaTinker.loadResource("tinker/modifier/slotless/writable"))
 
+	// 擒王
+	new ModifierRecipeBuilder("nebula_tinker:capture_king")
+		.allowCrystal(true)
+		.tools("#tconstruct:modifiable/held")
+		.level(1, 3)
+		.slots("abilities", 1)
+		.inputs([
+			Mechanisms.SCULK.COM
+		])
+		.build(NebulaTinker.loadResource("tinker/modifier/abilities/capture_king"))
+
+	// 收束
+	new ModifierRecipeBuilder("nebula_tinker:converge")
+		.allowCrystal(true)
+		.tools("#tconstruct:modifiable/ranged")
+		.level(1, 3)
+		.slots("upgrades", 1)
+		.inputs([
+			"thermal:rf_coil",
+			"cmi:electrolized_redstone",
+			"thermal:rf_coil"
+		])
+		.build(NebulaTinker.loadResource("tinker/modifier/upgrades/converge"))
+
+	// 生命回响
+	new ModifierRecipeBuilder("nebula_tinker:death_echo")
+		.allowCrystal(true)
+		.tools("#tconstruct:modifiable/held")
+		.level(1, 3)
+		.slots("abilities", 1)
+		.inputs([
+			"#vintageimprovements:springs/blaze",
+			"kaleidoscope_nether:blaze_heart",
+			"#vintageimprovements:springs/blaze",
+			"tconstruct:blazing_bone",
+			"tconstruct:blazing_bone"
+		])
+		.build(NebulaTinker.loadResource("tinker/modifier/abilities/death_echo"))
+
+	// 魔化
+	new ModifierRecipeBuilder("nebula_tinker:demonization")
+		.allowCrystal(true)
+		.tools("#tconstruct:modifiable/held")
+		.level(1, 3)
+		.slots("upgrades", 1)
+		.inputs([
+			"nebula_tinker:demonization_stone",
+			"#create:shadow_steel"
+		])
+		.build(NebulaTinker.loadResource("tinker/modifier/upgrades/demonization"))
+
+	// 神化
+	new ModifierRecipeBuilder("nebula_tinker:divinization")
+		.allowCrystal(true)
+		.tools("#tconstruct:modifiable/held")
+		.level(1, 3)
+		.slots("upgrades", 1)
+		.inputs([
+			"nebula_tinker:divinization_stone",
+			"create:refined_radiance"
+		])
+		.build(NebulaTinker.loadResource("tinker/modifier/upgrades/divinization"))
+
+	// 杀戮节奏
+	new ModifierRecipeBuilder("nebula_tinker:killing_rhythm")
+		.allowCrystal(true)
+		.tools("#tconstruct:modifiable/held")
+		.level(1, 3)
+		.slots("abilities", 1)
+		.inputs([
+			"thermal_extra:soul_sand_dust",
+			"cmi:resonant_tube",
+			"thermal_extra:soul_sand_dust",
+			"cmi:charged_amethyst",
+			"cmi:charged_amethyst"
+		])
+		.build(NebulaTinker.loadResource("tinker/modifier/abilities/killing_rhythm"))
+
+	// 喜水
+	new ModifierRecipeBuilder("nebula_tinker:aquadynamic")
+		.allowCrystal(true)
+		.tools("#tconstruct:modifiable/held")
+		.level(1, 3)
+		.slots("abilities", 1)
+		.inputs([
+			"minecraft:prismarine_shard",
+			"minecraft:heart_of_the_sea",
+			"minecraft:prismarine_shard"
+		])
+		.build(NebulaTinker.loadResource("tinker/modifier/abilities/aquadynamic"))
+
 	// 自动修复
 	new ModifierRecipeBuilder("tinkersmossymodifier:auto_repair")
 		.allowCrystal(true)

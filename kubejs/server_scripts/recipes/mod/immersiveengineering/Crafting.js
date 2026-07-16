@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 		ELECTRODE: "electrode",
 		BANNERPATTERN: "bannerpatterns",
 		COMPONENTS: "components",
-		SPECIAL_BULLET: "specialbullet",
+		SPECIAL_BULLET: "specialBullet",
 		BULLET: "bullet",
 		MECHANISM: "mechanism"
 	})
@@ -35,15 +35,66 @@ ServerEvents.recipes((event) => {
 		return recipe
 	}
 
-	// 金属模具蓝图
+	// 蓝图
 	addBlueprintRecipe(BlueprintMolds.MOLD, [
-		" A ",
-		"BBB",
-		"CCC"
+		" C ",
+		" B ",
+		" A "
 	], {
 		A: ["#forge:ingots/industrial_iron", "#forge:plates/industrial_iron"],
-		B: "#forge:dyes/blue",
+		B: "#forge:nuggets/iron",
 		C: "minecraft:paper"
+	})
+
+	// 蓝图
+	addBlueprintRecipe(BlueprintMolds.ELECTRODE, [
+		" C ",
+		" B ",
+		" A "
+	], {
+		A: "#forge:ingots/hop_graphite",
+		B: "minecraft:paper",
+		C: "#forge:nuggets/iron"
+	})
+
+	addBlueprintRecipe(BlueprintMolds.BANNERPATTERN, [
+		" C ",
+		" B ",
+		" A "
+	], {
+		A: "#minecraft:wool",
+		B: "minecraft:paper",
+		C: "#forge:nuggets/iron"
+	})
+
+	addBlueprintRecipe(BlueprintMolds.COMPONENTS, [
+		" C ",
+		" B ",
+		" A "
+	], {
+		A: "#forge:gears",
+		B: "minecraft:paper",
+		C: "#forge:nuggets/iron"
+	})
+
+	addBlueprintRecipe(BlueprintMolds.SPECIAL_BULLET, [
+		" C ",
+		" B ",
+		" A "
+	], {
+		A: "cmi:nitrocellulose",
+		B: "minecraft:paper",
+		C: "#forge:nuggets/iron"
+	})
+
+	addBlueprintRecipe(BlueprintMolds.BULLET, [
+		" C ",
+		" B ",
+		" A "
+	], {
+		A: "minecraft:gunpowder",
+		B: "minecraft:paper",
+		C: "#forge:nuggets/iron"
 	})
 
 	// 铁机械零件
