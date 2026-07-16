@@ -358,5 +358,5 @@ ServerEvents.recipes((event) => {
 		"mekanism:alloy_infused",
 		"#forge:ingots/chromium",
 		MekanismType.InfuseType.of("mekanism:redstone", 20)
-	)
+	).id("mekanism:metallurgic_infusing/alloy/infused")
 })
