@@ -84,11 +84,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMekanismLang("ch4", "甲烷")
 	addMekanismLang("silicon_gas_modulator", "硅基气相调节剂")
 	addMekanismLang("fissile_uranium_compound", "裂变铀化合物")
-
-	addInfuseTypeLang("chaotic_void", "混沌虚空")
-	addInfuseTypeLang("etrium", "埃忒恩")
-	addInfuseTypeLang("helium", "氦")
-	addInfuseTypeLang("dense_oxide", "致密氧化物")
+	addMekanismLang("chaotic_void", "混沌虚空")
+	addMekanismLang("etrium", "埃忒恩")
+	addMekanismLang("helium", "氦")
+	addMekanismLang("dense_oxide", "致密氧化物")
 
 	addPlanetLang("dionysus", "迪奥尼索斯")
 	addPlanetLang("hephaestus", "赫菲斯托斯")
