@@ -150,7 +150,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	// 铁机壳
-	kubejs.shaped("4x cmi:steel_casing", [
+	kubejs.shaped("8x cmi:steel_casing", [
 		"ABA",
 		"BCB",
 		"ABA"

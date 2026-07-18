@@ -1,4 +1,4 @@
-let $FluidIngredient =
+let $MBDFluidIngredient =
 	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
 
 ServerEvents.recipes((event) => {
@@ -135,7 +135,7 @@ function inputFluidOf(entry) {
 		let location = ResourceLocation.tryParse(fluidTag)
 		let tag = FluidTags.create(location)
 
-		return $FluidIngredient["of(net.minecraft.tags.TagKey,long)"](
+		return $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long)"](
 			tag,
 			amount
 		)
