@@ -36,15 +36,10 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	function addMetalUnification(name, tag) {
-		let ids = Ingredient.of(tag).getItemIds()
-
-		if (ids.size <= 0) {
-			return
-		}
+		let ids = getItemsUnderTag(tag)
 
 		let result = getHighPriorityItem(ids)
-
-		if (result == null || result === "minecraft:barrier") {
+		if (result == null) {
 			return
 		}
 
