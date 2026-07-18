@@ -28,7 +28,7 @@ ServerEvents.tags("block", (event) => {
 	}
 
 	/**
-	 * @param {CmiToolType} tool
+	 * @param {CmiToolType_} tool
 	 * @returns {MBDBlockTag}
 	 */
 	MBDBlockTag.prototype.tool = function (tool) {
@@ -36,7 +36,7 @@ ServerEvents.tags("block", (event) => {
 	}
 
 	/**
-	 * @param {CmiMiningLevel} level
+	 * @param {CmiMiningLevel_} level
 	 * @returns {MBDBlockTag}
 	 */
 	MBDBlockTag.prototype.mining = function (level) {
@@ -94,12 +94,26 @@ ServerEvents.tags("block", (event) => {
 	new MBDBlockTag("improved_rubber_extractor")
 		.pickaxe()
 		.stone()
+
+	new MBDBlockTag("chemical_reactor")
+		.pickaxe()
+		.diamond()
+
+	new MBDBlockTag("reinforced_chemical_reactor")
+		.pickaxe()
+		.diamond()
+
+	new MBDBlockTag("electrolyzer")
+		.pickaxe()
+		.diamond()
 })
 
 ServerEvents.tags("item", (event) => {
 	let machines = [
 		"reinforced_coke_oven",
-		"improved_rubber_extractor"
+		"improved_rubber_extractor",
+		"chemical_reactor",
+		"reinforced_chemical_reactor"
 	]
 	machines.forEach((machine) => {
 		event.get("cmi:machine_port")

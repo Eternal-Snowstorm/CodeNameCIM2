@@ -4,6 +4,7 @@ ServerEvents.recipes((event) => {
 	const ITEM_CONTAINER = Ingredient.of("#cmi:item_container")
 	const FLUID_TANKS = Ingredient.of("#cmi:fluid_tanks")
 	const BATTERIES = Ingredient.of("#cmi:batteries")
+	const CHEMICAL_TANK = Ingredient.of("#mekanism:chemical_tanks")
 	const CONTROLLER_NAMESPACE = Cmi.MODID
 
 	// 高级焦炉
@@ -15,6 +16,19 @@ ServerEvents.recipes((event) => {
 	addMachinePart("improved_rubber_extractor", {
 		fO: true,
 		eI: true
+	})
+
+	// 反应釜
+	addMachinePart("chemical_reactor", {
+		cIO: true
+	})
+
+	// 三相电解机
+	addMachinePart("electrolyzer", {
+		iIO: true,
+		fIO: true,
+		gIO: true,
+		eI: true,
 	})
 
 	/**
@@ -31,6 +45,9 @@ ServerEvents.recipes((event) => {
 	 * @param {boolean} [options.eI] 是否添加能量输入接口
 	 * @param {boolean} [options.eO] 是否添加能量输出接口
 	 * @param {boolean} [options.eIO] 是否添加能量I/O接口
+	 * @param {boolean} [options.gIO] 是否添加气体I/O接口
+	 * @param {boolean} [options.gI] 是否添加气体输入接口
+	 * @param {boolean} [options.gO] 是否添加气体输出接口
 	 * @param {boolean} [options.cI] 是否添加通用输入接口
 	 * @param {boolean} [options.cO] 是否添加通用输出接口
 	 * @param {boolean} [options.cIO] 是否添加通用I/O接口
@@ -81,19 +98,16 @@ ServerEvents.recipes((event) => {
 			}
 		}
 
-		let item = "i"
-		let fluid = "f"
-		let energy = "e"
-		let common = "c"
-
-		const ITEM = getPortIO(item)
-		const FLUID = getPortIO(fluid)
-		const ENERGY = getPortIO(energy)
-		const COMMON = getPortIO(common)
+		const ITEM = getPortIO("i")
+		const FLUID = getPortIO("f")
+		const ENERGY = getPortIO("e")
+		const GAS = getPortIO("g")
+		const COMMON = getPortIO("c")
 
 		addBus("item", ITEM_CONTAINER, ITEM.input, ITEM.output)
 		addBus("fluid", FLUID_TANKS, FLUID.input, FLUID.output)
 		addBus("energy", BATTERIES, ENERGY.input, ENERGY.output)
+		addBus("gas", CHEMICAL_TANK, GAS.input, GAS.output)
 		addBus("", [ITEM_CONTAINER, FLUID_TANKS, BATTERIES], COMMON.input, COMMON.output)
 	}
 })
