@@ -102,6 +102,10 @@ ServerEvents.tags("block", (event) => {
 	new MBDBlockTag("reinforced_chemical_reactor")
 		.pickaxe()
 		.diamond()
+
+	new MBDBlockTag("electrolyzer")
+		.pickaxe()
+		.diamond()
 })
 
 ServerEvents.tags("item", (event) => {

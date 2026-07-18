@@ -44,6 +44,13 @@ ServerEvents.tags("item", (event) => {
 			.add(`minecraft:${colors}_shulker_box`)
 	})
 
+	event.get("mekanism:chemical_tanks")
+		.add("mekanism:basic_chemical_tank")
+		.add("mekanism:basic_chemical_tank")
+		.add("mekanism:elite_chemical_tank")
+		.add("mekanism:ultimate_chemical_tank")
+		.add("mekanism:creative_chemical_tank")
+
 	event.get("forge:hammers")
 		.add("#createdieselgenerators:hammers")
 
