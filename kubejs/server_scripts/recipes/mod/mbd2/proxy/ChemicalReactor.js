@@ -1,6 +1,46 @@
 let $FluidIngredient =
 	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
 
+ServerEvents.recipes((event) => {
+	let { cmi } = event.getRecipes()
+
+	event.forEachRecipe({
+		type: "create:mixing"
+	}, (recipe) => {
+		let json = recipe.json
+		let id = recipe.getId()
+
+		if (removedRecipes.has(id)) {
+			return
+		}
+
+		if (
+			id.includes("palettes")
+			|| id.includes("dye")
+			|| id.includes("concrete")
+		) {
+			return
+		}
+
+		let builder = cmi.chemical_reactor()
+		if (json.has("ingredients")) {
+			addIngredients(builder, json.get("ingredients").getAsJsonArray())
+		}
+
+		if (json.has("results")) {
+			addResults(builder, json.get("results").getAsJsonArray())
+		} else if (json.has("result")) {
+			addResults(builder, [json.get("result")])
+		}
+
+		builder.duration(20 * 5)
+			.perTick((recipe) => {
+				recipe.inputFE(50)
+			})
+			.id(`${id}_mbd2_proxy`)
+	})
+})
+
 /**
  * 
  * @param {GsonObject_} json 
@@ -181,43 +221,3 @@ function addResults(builder, results) {
 		}
 	}
 }
-
-ServerEvents.recipes((event) => {
-	let { cmi } = event.getRecipes()
-
-	event.forEachRecipe({
-		type: "create:mixing"
-	}, (recipe) => {
-		let json = recipe.json
-		let id = recipe.getId()
-
-		if (removedRecipes.has(id)) {
-			return
-		}
-
-		if (
-			id.includes("palettes")
-			|| id.includes("dye")
-			|| id.includes("concrete")
-		) {
-			return
-		}
-
-		let builder = cmi.chemical_reactor()
-		if (json.has("ingredients")) {
-			addIngredients(builder, json.get("ingredients").getAsJsonArray())
-		}
-
-		if (json.has("results")) {
-			addResults(builder, json.get("results").getAsJsonArray())
-		} else if (json.has("result")) {
-			addResults(builder, [json.get("result")])
-		}
-
-		builder.duration(20 * 5)
-			.perTick((recipe) => {
-				recipe.inputFE(50)
-			})
-			.id(`${id}_mbd2_proxy`)
-	})
-})
