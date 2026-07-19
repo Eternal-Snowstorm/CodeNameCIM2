@@ -350,15 +350,23 @@ let MBDUtils = {
 	withFluidTag(tag, amount, nbt) {
 		let tagKey = FluidTags.create(ResourceLocation.parse(tag))
 
-		return nbt == null
-			? $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long)"](
+		if (amount === null) {
+			return $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long)"](
 				tagKey,
-				amount
+				1000
 			)
-			: $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long,net.minecraft.nbt.CompoundTag)"](
+		}
+		if (nbt === null) {
+			return $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long)"](
+				tagKey,
+				1000
+			)
+		} else {
+			return $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long,net.minecraft.nbt.CompoundTag)"](
 				tagKey,
 				amount,
 				nbt
 			)
+		}
 	}
 }
