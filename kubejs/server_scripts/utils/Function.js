@@ -38,30 +38,41 @@ let namespacePriority = [
 ]
 /**
 	 * 
-	 * @param {Set<string>} name 
+	 * @param {Set<String>} name 
 	 * @returns 
 	 */
 function getHighPriorityItem(name) {
-	// 引入参数
+	/**
+	 *  引入参数
+	 * 
+	 * @param {String} currentNamespace
+	 * @param {String} outputId 
+	 * @param {String} priorityValue
+	 * @returns 
+	 */
 	let currentNamespace
 	let outputId = name[0]
 	let priorityValue
 
 	// 遍历获取到的tag下每个物品的命名空间
-	name.forEach((id) => {
-		currentNamespace = ResourceLocation.parse(id).getNamespace()
+	if (name.size > 1) {
+		name.forEach((id) => {
+			if (id !== "minecraft:barrier") {
+				currentNamespace = ResourceLocation.parse(id).getNamespace()
 
-		// 获取命名空间优先级
-		for (let i = 0; i < namespacePriority.length; i++) {
-			if (currentNamespace === namespacePriority[i]) {
-				// 判定命名空间优先级并选择性输出优先级值最小的
-				if (i <= priorityValue || priorityValue == null) {
-					outputId = id
-					priorityValue = i
+				// 获取命名空间优先级
+				for (let i = 0; i < namespacePriority.length; i++) {
+					if (currentNamespace === namespacePriority[i]) {
+						// 判定命名空间优先级并选择性输出优先级值最小的
+						if (i <= priorityValue || priorityValue == null) {
+							outputId = id
+							priorityValue = i
+						}
+					}
 				}
 			}
-		}
-	})
+		})
+	}
 
 	return outputId
 }

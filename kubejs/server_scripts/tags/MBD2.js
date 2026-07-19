@@ -106,6 +106,10 @@ ServerEvents.tags("block", (event) => {
 	new MBDBlockTag("electrolyzer")
 		.pickaxe()
 		.diamond()
+
+	new MBDBlockTag("electronic_blast_furnace")
+		.pickaxe()
+		.iron()
 })
 
 ServerEvents.tags("item", (event) => {
@@ -113,7 +117,9 @@ ServerEvents.tags("item", (event) => {
 		"reinforced_coke_oven",
 		"improved_rubber_extractor",
 		"chemical_reactor",
-		"reinforced_chemical_reactor"
+		"reinforced_chemical_reactor",
+		"electrolyzer",
+		"electronic_blast_furnace"
 	]
 	machines.forEach((machine) => {
 		event.get("cmi:machine_port")

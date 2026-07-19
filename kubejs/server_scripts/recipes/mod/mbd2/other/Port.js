@@ -28,7 +28,12 @@ ServerEvents.recipes((event) => {
 		iIO: true,
 		fIO: true,
 		gIO: true,
-		eI: true,
+		eI: true
+	})
+
+	// 炖屎炉
+	addMachinePart("electronic_blast_furnace", {
+		cIO: true
 	})
 
 	/**
@@ -66,8 +71,11 @@ ServerEvents.recipes((event) => {
 		function addBus(suffix, ingredient, input, output) {
 			const RESULT_PREFIX = suffix ? `${CONTROLLER}_${suffix}` : CONTROLLER
 
+			const INPUT_BUS = `${RESULT_PREFIX}_input_bus`
+			const OUTPUT_BUS = `${RESULT_PREFIX}_output_bus`
+
 			if (input) {
-				kubejs.shaped(`${RESULT_PREFIX}_input_bus`, [
+				kubejs.shaped(INPUT_BUS, [
 					"A",
 					"B"
 				], {
@@ -77,13 +85,24 @@ ServerEvents.recipes((event) => {
 			}
 
 			if (output) {
-				kubejs.shaped(`${RESULT_PREFIX}_output_bus`, [
+				kubejs.shaped(OUTPUT_BUS, [
 					"A",
 					"B"
 				], {
 					A: CONTROLLER,
 					B: ingredient
 				}).keepIngredient(CONTROLLER)
+			}
+
+			// I/O 相互转换
+			if (input && output) {
+				kubejs.shapeless(INPUT_BUS, [
+					OUTPUT_BUS
+				])
+
+				kubejs.shapeless(OUTPUT_BUS, [
+					INPUT_BUS
+				])
 			}
 		}
 
