@@ -1,0 +1,7 @@
+{
+	"create:splashing": 1.0,
+	"create:haunting": 0.5,
+	"create:smoking": -0.3,
+	"create:blasting": -0.5,
+	"cmi:freezing": 2.0
+}
