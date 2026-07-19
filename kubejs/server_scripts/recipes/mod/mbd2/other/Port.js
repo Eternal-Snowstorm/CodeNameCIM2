@@ -28,7 +28,12 @@ ServerEvents.recipes((event) => {
 		iIO: true,
 		fIO: true,
 		gIO: true,
-		eI: true,
+		eI: true
+	})
+
+	// 炖屎炉
+	addMachinePart("electronic_blast_furnace", {
+		cIO: true
 	})
 
 	/**
