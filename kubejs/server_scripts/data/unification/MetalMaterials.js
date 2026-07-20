@@ -67,13 +67,20 @@ ServerEvents.highPriorityData((event) => {
 		return itemsByNamespace
 	}
 
+	/**
+	 * 
+	 * @param {Set<String>} itemsByNamespace 
+	 * @param {String} type 
+	 * @param {String} material 
+	 * @returns 
+	 */
 	function findHighPriorityItem(itemsByNamespace, type, material) {
 		let candidatePaths = getCandidatePaths(type, material)
 
 		for (let namespace of namespacePriority) {
 			let registeredPaths = itemsByNamespace[namespace]
 
-			if (registeredPaths == null) {
+			if (registeredPaths === null) {
 				continue
 			}
 
@@ -87,6 +94,12 @@ ServerEvents.highPriorityData((event) => {
 		return null
 	}
 
+	/**
+	 * 
+	 * @param {String} type 
+	 * @param {String} material 
+	 * @returns {Array<String>}
+	 */
 	function getCandidatePaths(type, material) {
 		switch (type) {
 			case "ingot":
@@ -130,8 +143,15 @@ ServerEvents.highPriorityData((event) => {
 		}
 	}
 
+	/**
+	 * 
+	 * @param {String} name 
+	 * @param {InputItem_} tag 
+	 * @param {inputItem_} result 
+	 * @returns 
+	 */
 	function addMetalUnification(name, tag, result) {
-		if (result == null) {
+		if (result === null) {
 			return
 		}
 
