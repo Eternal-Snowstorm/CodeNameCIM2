@@ -1,6 +1,4 @@
 // priority: 9
-let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries")
-
 ServerEvents.highPriorityData((event) => {
 	let materialTypes = [
 		"ingot",
@@ -13,7 +11,9 @@ ServerEvents.highPriorityData((event) => {
 		"wire"
 	]
 	let metals = []
-	CmiMetalRegistry.getAll().forEach((metal) => metals.push(metal))
+	CmiMetalRegistry.getAll().forEach((metal) => {
+		metals.push(metal)
+	})
 	let registeredItems = collectRegisteredMetalItems()
 
 	materialTypes.forEach((type) => {
@@ -43,8 +43,8 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	/**
-	 * Forge 的物品注册表在首次服务器资源重载前已经可用。
-	 * 这里只收集参与金属优先级选择的命名空间，避免扫描后续逻辑无关的物品。
+	 * Forge 的物品注册表在首次服务器资源重载前已经可用
+	 * 这里只收集参与金属优先级选择的命名空间, 避免扫描后续逻辑无关的物品
 	 */
 	function collectRegisteredMetalItems() {
 		let allowedNamespaces = new Set(namespacePriority)
@@ -54,13 +54,15 @@ ServerEvents.highPriorityData((event) => {
 			itemsByNamespace[namespace] = new Set()
 		})
 
-		$ForgeRegistries.ITEMS.getKeys().toArray().forEach((key) => {
-			let namespace = String(key.getNamespace())
+		ForgeRegistries.ITEMS.getKeys()
+			.toArray()
+			.forEach((key) => {
+				let namespace = String(key.getNamespace())
 
-			if (allowedNamespaces.has(namespace)) {
-				itemsByNamespace[namespace].add(String(key.getPath()))
-			}
-		})
+				if (allowedNamespaces.has(namespace)) {
+					itemsByNamespace[namespace].add(String(key.getPath()))
+				}
+			})
 
 		return itemsByNamespace
 	}
@@ -149,7 +151,6 @@ ServerEvents.highPriorityData((event) => {
 	 * @returns 
 	 */
 	function addMetalUnification(name, tag, result) {
-
 		if (result === null) {
 			return
 		}
