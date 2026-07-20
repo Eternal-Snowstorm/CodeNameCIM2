@@ -69,9 +69,9 @@ ServerEvents.highPriorityData((event) => {
 
 	/**
 	 * 
-	 * @param {Set<String>} itemsByNamespace 
-	 * @param {String} type 
-	 * @param {String} material 
+	 * @param {Set<string>} itemsByNamespace 
+	 * @param {string} type 
+	 * @param {string} material 
 	 * @returns 
 	 */
 	function findHighPriorityItem(itemsByNamespace, type, material) {
