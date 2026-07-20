@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 					output: PLATE
 				}
 			])
-			const OUTPUT = getHighPriorityItem(Ingredient.of(PLATE).getItemIds())
+			const OUTPUT = getHighPriorityItem(PLATE)
 
 			if (OUTPUT != null) {
 				create.pressing(OUTPUT, [

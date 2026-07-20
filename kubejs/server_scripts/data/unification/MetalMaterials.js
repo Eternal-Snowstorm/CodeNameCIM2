@@ -37,7 +37,9 @@ ServerEvents.highPriorityData((event) => {
 
 	function addMetalUnification(name, tag) {
 		let result = getHighPriorityItem(tag)
-		
+
+		console.info(`${global.DEBUG_MESSAGE} got ${result} for ${tag}`)
+
 		if (result == null) {
 			return
 		}

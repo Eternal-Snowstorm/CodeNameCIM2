@@ -20,7 +20,6 @@ let $MBDFluidIngredient =
  */
 let namespacePriority = [
 	"cmi",
-	"minecraft",
 	"vintageimprovements",
 	"thermal",
 	"thermalconstruct",
@@ -34,7 +33,8 @@ let namespacePriority = [
 	"immersiveengineering",
 	"mekanism",
 	"alexscaves",
-	"tconstruct"
+	"tconstruct",
+	"minecraft"
 ]
 
 function getHighPriorityItem(tag) {
@@ -54,20 +54,23 @@ function getHighPriorityItem(tag) {
 		return "cmi:cmi_icon"
 	}
 
-	let ids = Ingredient.of(tag).getItemIds()
+	let ids = Ingredient.of(tag).getItemIds().toArray()
 
 	// 遍历获取到的tag下每个物品的命名空间
 	if (ids.length > 0) {
 		ids.forEach((id) => {
-			currentNamespace = ResourceLocation.parse(id).getNamespace()
+			const itemId = String(id)
 
-			// 获取命名空间优先级
-			for (let i = 0; i < namespacePriority.length; i++) {
-				if (currentNamespace === namespacePriority[i]) {
-					// 判定命名空间优先级并选择性输出优先级值最小的
-					if (i <= priorityValue || priorityValue == null) {
-						outputId = id
-						priorityValue = i
+			if (itemId !== "minecraft:barrier") {
+				currentNamespace = String(ResourceLocation.parse(itemId).getNamespace())
+
+				for (let i = 0; i < namespacePriority.length; i++) {
+					if (currentNamespace === namespacePriority[i]) {
+						if (priorityValue == null || i < priorityValue) {
+							outputId = itemId
+							priorityValue = i
+						}
+						break
 					}
 				}
 			}
