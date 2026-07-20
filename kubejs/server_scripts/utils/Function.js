@@ -269,12 +269,12 @@ let SmeltingRecipes = {
  */
 function getItemsUnderTag(tag) {
 	if (!Ingredient.isNotNull(tag)) {
-		console.error(`${global.debugMessage} Tag item search error`)
+		console.error(`${CmiGlobal.DEBUG_MESSAGE} Tag item search error`)
 		return null
 	}
 	let ids = Ingredient.of(tag).getItemIds()
 	if (ids.length < 1) {
-		console.error(`${global.debugMessage} Tag item search error`)
+		console.error(`${CmiGlobal.DEBUG_MESSAGE} Tag item search error`)
 		return null
 	}
 	return ids
