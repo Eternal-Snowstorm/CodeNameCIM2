@@ -189,7 +189,7 @@ let SmeltingRecipes = {
 	 * @param {InputItem_} input 输入成分
 	 * @returns
 	 */
-	all: function (event, output, input) {
+	all(event, output, input) {
 		let { minecraft } = event.getRecipes()
 
 		let smelting = minecraft
@@ -219,7 +219,7 @@ let SmeltingRecipes = {
 	 * @param {InputItem_} input 输入成分
 	 * @returns 
 	 */
-	blasting: function (event, output, input) {
+	blasting(event, output, input) {
 		let { minecraft } = event.getRecipes()
 
 		let blasting = minecraft
@@ -244,7 +244,7 @@ let SmeltingRecipes = {
 	 * @param {InputItem_} input 输入成分
 	 * @returns 
 	 */
-	smoking: function (event, output, input) {
+	smoking(event, output, input) {
 		let { minecraft } = event.getRecipes()
 
 		let smelting = minecraft
