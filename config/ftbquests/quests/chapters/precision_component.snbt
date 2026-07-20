@@ -696,6 +696,72 @@
 			x: -6.0d
 			y: 0.5d
 		}
+		{
+			dependencies: ["10FE6C8E2FB59714"]
+			description: ["{image:cmi:textures/images/cmi/improved_rubber_extractor.png width:140 height:202 align:center}"]
+			icon: "cmi:improved_rubber_extractor"
+			id: "3AF743212C028BEE"
+			rewards: [
+				{
+					id: "26B70670A150B2C1"
+					item: "cmi:improved_rubber_extractor_energy_input_bus"
+					type: "item"
+				}
+				{
+					id: "37FB38F546803123"
+					item: "cmi:improved_rubber_extractor_fluid_output_bus"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1AE0A4A43E387FF4"
+					item: "thermal:rubberwood_leaves"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "44B0CBBA97A415E6"
+					item: "thermal:rubberwood_log"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "请不要在意0726的意思"
+			tasks: [
+				{
+					id: "2A6F2C8B8F07F554"
+					item: "cmi:improved_rubber_extractor"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "0C2154218B50ABA6"
+					item: { Count: 3, id: "cmi:industrial_iron_slab" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "20351D1728E461AE"
+					item: { Count: 6, id: "cmi:industrial_iron_stairs" }
+					type: "item"
+				}
+				{
+					count: 11L
+					id: "03A2201DB1679FA2"
+					item: { Count: 11, id: "create:industrial_iron_block" }
+					type: "item"
+				}
+				{
+					id: "4AEEDD5562EDC751"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+			]
+			title: "橡胶提取器Plus"
+			x: 6.0d
+			y: 1.5d
+		}
 	]
 	title: "精智元件"
 }
