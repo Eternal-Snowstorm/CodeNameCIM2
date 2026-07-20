@@ -22,6 +22,8 @@ if (isHotfix) {
 // 输出查看
 console.log(global.modPackMainVersion)
 
+// debug追踪信息
+global.DEBUG_MESSAGE = "[CMIDebugMessage]"
 // 桶容量
 global.BUCKET_CAPACITY = 1000
 // 扳手Tag

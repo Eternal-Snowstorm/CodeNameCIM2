@@ -36,12 +36,8 @@ let namespacePriority = [
 	"alexscaves",
 	"tconstruct"
 ]
-/**
-	 * 
-	 * @param {Set<String>} name 
-	 * @returns 
-	 */
-function getHighPriorityItem(name) {
+
+function getHighPriorityItem(tag) {
 	/**
 	 *  引入参数
 	 * 
@@ -50,31 +46,35 @@ function getHighPriorityItem(name) {
 	 * @param {String} priorityValue
 	 * @returns 
 	 */
-	let currentNamespace
-	let outputId = name[0]
-	let priorityValue
+	let currentNamespace = null
+	let outputId = null
+	let priorityValue = null
+
+	if (!Ingredient.isNotNull(tag)) {
+		return "cmi:cmi_icon"
+	}
+
+	let ids = Ingredient.of(tag).getItemIds()
 
 	// 遍历获取到的tag下每个物品的命名空间
-	if (name.size > 1) {
-		name.forEach((id) => {
-			if (id !== "minecraft:barrier") {
-				currentNamespace = ResourceLocation.parse(id).getNamespace()
+	if (ids.length > 0) {
+		ids.forEach((id) => {
+			currentNamespace = ResourceLocation.parse(id).getNamespace()
 
-				// 获取命名空间优先级
-				for (let i = 0; i < namespacePriority.length; i++) {
-					if (currentNamespace === namespacePriority[i]) {
-						// 判定命名空间优先级并选择性输出优先级值最小的
-						if (i <= priorityValue || priorityValue == null) {
-							outputId = id
-							priorityValue = i
-						}
+			// 获取命名空间优先级
+			for (let i = 0; i < namespacePriority.length; i++) {
+				if (currentNamespace === namespacePriority[i]) {
+					// 判定命名空间优先级并选择性输出优先级值最小的
+					if (i <= priorityValue || priorityValue == null) {
+						outputId = id
+						priorityValue = i
 					}
 				}
 			}
 		})
+		return outputId
 	}
-
-	return outputId
+	return "cmi:cmi_icon"
 }
 
 /**
@@ -265,7 +265,16 @@ let SmeltingRecipes = {
  * @returns 
  */
 function getItemsUnderTag(tag) {
-	return Ingredient.of(tag).getItemIds()
+	if (!Ingredient.isNotNull(tag)) {
+		console.error(`${global.debugMessage} Tag item search error`)
+		return null
+	}
+	let ids = Ingredient.of(tag).getItemIds()
+	if (ids.length < 1) {
+		console.error(`${global.debugMessage} Tag item search error`)
+		return null
+	}
+	return ids
 }
 
 let removedRecipes = new Set()
