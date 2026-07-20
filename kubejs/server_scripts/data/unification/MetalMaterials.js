@@ -36,14 +36,13 @@ ServerEvents.highPriorityData((event) => {
 	})
 
 	function addMetalUnification(name, tag) {
-		let ids = getItemsUnderTag(tag)
-
-		let result = getHighPriorityItem(ids)
+		let result = getHighPriorityItem(tag)
+		
 		if (result == null) {
 			return
 		}
 
-		addJsonFile(name, addUnification(tag, result))
+		return addJsonFile(name, addUnification(tag, result))
 	}
 
 	function addUnification(match, item) {
