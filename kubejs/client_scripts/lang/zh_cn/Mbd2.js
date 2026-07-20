@@ -35,4 +35,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMBDLang("chemical_reactor", "化学反应釜")
 	addMBDLang("reinforced_chemical_reactor", "大型化学反应釜")
 	addMBDLang("electrolyzer", "三相电解机")
+	if (FestivalUtils.isAprilFoolsDay()) {
+		addMBDLang("electronic_blast_furnace", "炖屎炉")
+	}
+	addMBDLang("electronic_blast_furnace", "电力高炉")
 })
