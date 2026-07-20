@@ -1,3 +1,6 @@
+// priority: 9
+let $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries")
+
 ServerEvents.highPriorityData((event) => {
 	let materialTypes = [
 		"ingot",
@@ -9,52 +12,131 @@ ServerEvents.highPriorityData((event) => {
 		"rod",
 		"wire"
 	]
+	let metals = []
+	CmiMetalRegistry.getAll().forEach((metal) => metals.push(metal))
+	let registeredItems = collectRegisteredMetalItems()
 
 	materialTypes.forEach((type) => {
-		CmiMetalRegistry.getAll().forEach((metal) => {
-			let material = metal.getId()
+		metals.forEach((metal) => {
+			let material = String(metal.getId())
 			let tag = `#forge:${type}s/${material}`
+			let result = findHighPriorityItem(registeredItems, type, material)
 
-			if (Ingredient.isNotNull(tag)) {
-				addMetalUnification(`${material}_${type}`, tag)
-			}
+			addMetalUnification(`${material}_${type}`, tag, result)
 		})
 	})
 
-	CmiMetalRegistry.getAll().forEach((metal) => {
-		let material = metal.getId()
+	metals.forEach((metal) => {
+		let material = String(metal.getId())
 		let tag = `#forge:raw_materials/${material}`
+		let result = findHighPriorityItem(registeredItems, "raw_material", material)
 
-		addMetalUnification(`raw_${material}`, tag)
+		addMetalUnification(`raw_${material}`, tag, result)
 	})
 
-	CmiMetalRegistry.getAll().forEach((metal) => {
-		let material = metal.getId()
+	metals.forEach((metal) => {
+		let material = String(metal.getId())
 		let tag = `#forge:storage_blocks/raw_${material}`
+		let result = findHighPriorityItem(registeredItems, "raw_storage_block", material)
 
-		addMetalUnification(`raw_${material}_block`, tag)
+		addMetalUnification(`raw_${material}_block`, tag, result)
 	})
 
-	function addMetalUnification(name, tag) {
-		let result = getHighPriorityItem(tag)
+	/**
+	 * Forge 的物品注册表在首次服务器资源重载前已经可用。
+	 * 这里只收集参与金属优先级选择的命名空间，避免扫描后续逻辑无关的物品。
+	 */
+	function collectRegisteredMetalItems() {
+		let allowedNamespaces = new Set(namespacePriority)
+		let itemsByNamespace = {}
 
-		console.info(`${global.DEBUG_MESSAGE} got ${result} for ${tag}`)
+		namespacePriority.forEach((namespace) => {
+			itemsByNamespace[namespace] = new Set()
+		})
+
+		$ForgeRegistries.ITEMS.getKeys().toArray().forEach((key) => {
+			let namespace = String(key.getNamespace())
+
+			if (allowedNamespaces.has(namespace)) {
+				itemsByNamespace[namespace].add(String(key.getPath()))
+			}
+		})
+
+		return itemsByNamespace
+	}
+
+	function findHighPriorityItem(itemsByNamespace, type, material) {
+		let candidatePaths = getCandidatePaths(type, material)
+
+		for (let namespace of namespacePriority) {
+			let registeredPaths = itemsByNamespace[namespace]
+
+			if (registeredPaths == null) {
+				continue
+			}
+
+			for (let path of candidatePaths) {
+				if (registeredPaths.has(path)) {
+					return `${namespace}:${path}`
+				}
+			}
+		}
+
+		return null
+	}
+
+	function getCandidatePaths(type, material) {
+		switch (type) {
+			case "ingot":
+				return [
+					`${material}_ingot`,
+					`ingot_${material}`,
+					material
+				]
+			case "plate":
+				return [
+					`${material}_plate`,
+					`plate_${material}`,
+					`${material}_sheet`,
+					`sheet_${material}`
+				]
+			case "storage_block":
+				return [
+					`${material}_block`,
+					`block_${material}`,
+					`block_of_${material}`,
+					`storage_${material}`
+				]
+			case "raw_material":
+				return [
+					`raw_${material}`,
+					`${material}_raw`
+				]
+			case "raw_storage_block":
+				return [
+					`raw_${material}_block`,
+					`${material}_raw_block`,
+					`raw_block_${material}`,
+					`block_raw_${material}`,
+					`block_of_raw_${material}`
+				]
+			default:
+				return [
+					`${material}_${type}`,
+					`${type}_${material}`
+				]
+		}
+	}
+
+	function addMetalUnification(name, tag, result) {
 
 		if (result == null) {
 			return
 		}
 
-		return addJsonFile(name, addUnification(tag, result))
-	}
-
-	function addUnification(match, item) {
-		return {
-			matchItems: [match],
-			resultItems: item
-		}
-	}
-
-	function addJsonFile(name, unification) {
-		return event.addJson(`oei:replacements/${name}.json`, unification)
+		event.addJson(`oei:replacements/${name}.json`, {
+			matchItems: [tag],
+			resultItems: result
+		})
 	}
 })
