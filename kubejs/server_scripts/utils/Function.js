@@ -12,7 +12,7 @@ let $Chemical =
 let $Pigment =
 	Java.loadClass("mekanism.api.chemical.pigment.Pigment")
 let $MBDFluidIngredient =
-	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
+	Java.loadClass("dev.celestiacraft.cmi.compat.mbd2.MBDFluidIngredient")
 
 /**
  * 设置命名空间优先级
@@ -360,20 +360,12 @@ let MBDUtils = {
 	 * @returns 
 	 */
 	withFluidTag(tag, amount, nbt) {
-		let tagKey = FluidTags.create(ResourceLocation.parse(tag))
 		amount = amount == null ? 1000 : amount
 
 		if (nbt == null) {
-			return $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long)"](
-				tagKey,
-				amount
-			)
+			return $MBDFluidIngredient.ofTagId(tag, amount)
 		}
 
-		return $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long,net.minecraft.nbt.CompoundTag)"](
-			tagKey,
-			amount,
-			nbt
-		)
+		return $MBDFluidIngredient.ofTagId(tag, amount, nbt)
 	}
 }
