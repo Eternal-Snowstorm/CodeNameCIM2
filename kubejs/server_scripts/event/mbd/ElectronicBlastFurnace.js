@@ -1,6 +1,14 @@
 let $ProxyPartBlockEntity =
 	Java.loadClass("com.lowdragmc.mbd2.api.blockentity.ProxyPartBlockEntity")
 
+const NEED_COIL_COUNT = 24
+
+const COILS = {
+	LV: Block.getBlock("immersiveengineering:coil_lv"),
+	MV: Block.getBlock("immersiveengineering:coil_mv"),
+	HV: Block.getBlock("immersiveengineering:coil_hv")
+}
+
 MBDMachineEvents.onStructureFormed(($) => {
 	let event = $.getEvent()
 
@@ -8,66 +16,61 @@ MBDMachineEvents.onStructureFormed(($) => {
 	 * @type {Internal.MBDMultiblockMachine_}
 	 */
 	let machine = event.getMachine()
-	let level = machine.getLevel()
-	let id = machine.getDefinition().id()
 
-	const NEED_COIL_COUNT = 24
-
-	if (id.toString() !== "cmi:electronic_blast_furnace") {
+	if (machine.getDefinition().id().toString() !== "cmi:electronic_blast_furnace") {
 		return
 	}
 
-	let count = getCoilCount(level, machine)
+	let coilLevel = getCoilLevel(machine)
 
-	if (count.lv === NEED_COIL_COUNT) {
-		machine.setMachineLevel(0)
-	} else if (count.mv === NEED_COIL_COUNT) {
-		machine.setMachineLevel(1)
-	} else if (count.hv === NEED_COIL_COUNT) {
-		machine.setMachineLevel(2)
-	} else {
+	if (coilLevel === -1) {
+		// 线圈数量不足，阻止结构成型
 		event.setCanceled(true)
+		return
 	}
 
-	getCoilLevel(machine, level)
-	levelEfficiencyImprovement(machine, level)
+	machine.setMachineLevel(coilLevel)
+
+	levelEfficiencyImprovement(machine)
 })
 
-let Coils = {
-	LV: Block.getBlock("immersiveengineering:coil_lv"),
-	MV: Block.getBlock("immersiveengineering:coil_mv"),
-	HV: Block.getBlock("immersiveengineering:coil_hv")
-}
-
 /**
- * 
- * @param {Internal.MBDMachine_} machine 
- * @param {Internal.Level_} level 
- * @returns 
+ * 获取线圈等级
+ *
+ * 0 = LV
+ * 1 = MV
+ * 2 = HV
+ * -1 = 不满足要求
+ *
+ * @param {Internal.MBDMultiblockMachine_} machine
+ * @returns {number}
  */
-function getCoilLevel(machine, level) {
-	let count = getCoilCount(machine, level)
+function getCoilLevel(machine) {
+	let count = getCoilCount(machine)
 
 	if (count.lv === NEED_COIL_COUNT) {
 		return 0
 	}
-	if (count.hv === NEED_COIL_COUNT) {
-		return 2
-	}
+
 	if (count.mv === NEED_COIL_COUNT) {
 		return 1
+	}
+
+	if (count.hv === NEED_COIL_COUNT) {
+		return 2
 	}
 
 	return -1
 }
 
 /**
- * 
- * @param {Internal.Level_} level 
- * @param {Internal.MBDMultiblockMachine_} machine 
- * @returns 
+ *
+ * @param {Internal.MBDMultiblockMachine_} machine
+ * @returns {{lv:number,mv:number,hv:number}}
  */
-function getCoilCount(level, machine) {
+function getCoilCount(machine) {
+	let level = machine.getLevel()
+
 	let result = {
 		lv: 0,
 		mv: 0,
@@ -80,11 +83,11 @@ function getCoilCount(level, machine) {
 			let state = getRealState(level, pos)
 			let block = state.getBlock()
 
-			if (block.equals(Coils.LV)) {
+			if (block.equals(COILS.LV)) {
 				result.lv++
-			} else if (block.equals(Coils.MV)) {
+			} else if (block.equals(COILS.MV)) {
 				result.mv++
-			} else if (block.equals(Coils.HV)) {
+			} else if (block.equals(COILS.HV)) {
 				result.hv++
 			}
 		})
@@ -94,27 +97,34 @@ function getCoilCount(level, machine) {
 
 /**
  * 
- * @param {Internal.MBDMultiblockMachine_} machine 
- * @param {Internal.Level_} level
+ * @param {Internal.MBDMultiblockMachine_} machine
  */
-function levelEfficiencyImprovement(machine, level) {
-	let coilLevel = getCoilLevel(machine, level)
+function levelEfficiencyImprovement(machine) {
+	let coilLevel = getCoilLevel(machine)
+
 	let recipe = machine.getRecipeLogic()
 	let duration = recipe.getDuration()
 
-	if (coilLevel === 0) {
-		recipe.setDuration(duration * 2)
-	} else if (coilLevel === 1) {
-		recipe.setDuration(duration * 1)
-	} else if (coilLevel === 1) {
-		recipe.setDuration(duration * 0.5)
+	switch (coilLevel) {
+		case 0:
+			recipe.setDuration(duration * 2)
+			break
+
+		case 1:
+			// MV 不变
+			break
+
+		case 2:
+			recipe.setDuration(duration * 0.5)
+			break
 	}
 }
 
 /**
+ * 
  * @param {Internal.Level_} level
  * @param {BlockPos_} pos
- * @returns 
+ * @returns {Internal.BlockState_}
  */
 function getRealState(level, pos) {
 	let state = level.getBlockState(pos)
