@@ -3,7 +3,7 @@ ClientEvents.highPriorityAssets((event) => {
 	const MACHINE_TEXTURE_PATH = "cmi:block/machine"
 	const IO_TEXTURE_PATH = `${MACHINE_TEXTURE_PATH}/io`
 
-	const IS_DEBUG_MODE = true
+	const IS_DEBUG_MODE = false
 
 	/**
 	 * 生成一个 Orientable Block Model
