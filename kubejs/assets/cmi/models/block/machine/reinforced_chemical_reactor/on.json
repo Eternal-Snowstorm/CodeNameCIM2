@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/orientable",
-	"textures": {
-		"front": "cmi:block/machine/reinforced_chemical_reactor/on",
-		"side": "cmi:block/casing/steel/casing",
-		"top": "cmi:block/casing/steel/casing"
-	}
-}
