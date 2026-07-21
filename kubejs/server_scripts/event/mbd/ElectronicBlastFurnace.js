@@ -17,38 +17,7 @@ MBDMachineEvents.onStructureFormed(($) => {
 		return
 	}
 
-	let Coils = {
-		LV: Block.getBlock("immersiveengineering:coil_lv"),
-		MV: Block.getBlock("immersiveengineering:coil_mv"),
-		HV: Block.getBlock("immersiveengineering:coil_hv")
-	}
-
-	function getCoilCount() {
-		let result = {
-			lv: 0,
-			mv: 0,
-			hv: 0
-		}
-
-		machine.getMultiblockState()
-			.getCache()
-			.forEach((pos) => {
-				let state = getRealState(level, pos)
-				let block = state.getBlock()
-
-				if (block.equals(Coils.LV)) {
-					result.lv++
-				} else if (block.equals(Coils.MV)) {
-					result.mv++
-				} else if (block.equals(Coils.HV)) {
-					result.hv++
-				}
-			})
-
-		return result
-	}
-
-	let count = getCoilCount()
+	let count = getCoilCount(level, machine)
 
 	if (count.lv === NEED_COIL_COUNT) {
 		machine.setMachineLevel(0)
@@ -59,7 +28,87 @@ MBDMachineEvents.onStructureFormed(($) => {
 	} else {
 		event.setCanceled(true)
 	}
+
+	getCoilLevel(machine, level)
+	levelEfficiencyImprovement(machine, level)
 })
+
+let Coils = {
+	LV: Block.getBlock("immersiveengineering:coil_lv"),
+	MV: Block.getBlock("immersiveengineering:coil_mv"),
+	HV: Block.getBlock("immersiveengineering:coil_hv")
+}
+
+/**
+ * 
+ * @param {Internal.MBDMachine_} machine 
+ * @param {Internal.Level_} level 
+ * @returns 
+ */
+function getCoilLevel(machine, level) {
+	let count = getCoilCount(machine, level)
+
+	if (count.lv === NEED_COIL_COUNT) {
+		return 0
+	}
+	if (count.hv === NEED_COIL_COUNT) {
+		return 2
+	}
+	if (count.mv === NEED_COIL_COUNT) {
+		return 1
+	}
+
+	return -1
+}
+
+/**
+ * 
+ * @param {Internal.Level_} level 
+ * @param {Internal.MBDMultiblockMachine_} machine 
+ * @returns 
+ */
+function getCoilCount(level, machine) {
+	let result = {
+		lv: 0,
+		mv: 0,
+		hv: 0
+	}
+
+	machine.getMultiblockState()
+		.getCache()
+		.forEach((pos) => {
+			let state = getRealState(level, pos)
+			let block = state.getBlock()
+
+			if (block.equals(Coils.LV)) {
+				result.lv++
+			} else if (block.equals(Coils.MV)) {
+				result.mv++
+			} else if (block.equals(Coils.HV)) {
+				result.hv++
+			}
+		})
+
+	return result
+}
+
+/**
+ * 
+ * @param {Internal.MBDMultiblockMachine_} machine 
+ * @param {Internal.Level_} level
+ */
+function levelEfficiencyImprovement(machine, level) {
+	let coilLevel = getCoilLevel(machine, level)
+	let recipe = machine.getRecipeLogic()
+
+	if (coilLevel === 0) {
+		recipe.setDuration(recipe.getDuration() * 2)
+	} else if (coilLevel === 1) {
+		recipe.setDuration(recipe.getDuration() * 1)
+	} else if (coilLevel === 1) {
+		recipe.setDuration(recipe.getDuration() * 0.5)
+	}
+}
 
 /**
  * @param {Internal.Level_} level
