@@ -100,13 +100,14 @@ function getCoilCount(level, machine) {
 function levelEfficiencyImprovement(machine, level) {
 	let coilLevel = getCoilLevel(machine, level)
 	let recipe = machine.getRecipeLogic()
+	let duration = recipe.getDuration()
 
 	if (coilLevel === 0) {
-		recipe.setDuration(recipe.getDuration() * 2)
+		recipe.setDuration(duration * 2)
 	} else if (coilLevel === 1) {
-		recipe.setDuration(recipe.getDuration() * 1)
+		recipe.setDuration(duration * 1)
 	} else if (coilLevel === 1) {
-		recipe.setDuration(recipe.getDuration() * 0.5)
+		recipe.setDuration(duration * 0.5)
 	}
 }
 
