@@ -17,9 +17,11 @@ MBDMachineEvents.onStructureFormed(($) => {
 		return
 	}
 
-	const LV = Block.getBlock("immersiveengineering:coil_lv")
-	const MV = Block.getBlock("immersiveengineering:coil_mv")
-	const HV = Block.getBlock("immersiveengineering:coil_hv")
+	let Coils = {
+		LV: Block.getBlock("immersiveengineering:coil_lv"),
+		MV: Block.getBlock("immersiveengineering:coil_mv"),
+		HV: Block.getBlock("immersiveengineering:coil_hv")
+	}
 
 	function getCoilCount() {
 		let result = {
@@ -34,11 +36,11 @@ MBDMachineEvents.onStructureFormed(($) => {
 				let state = getRealState(level, pos)
 				let block = state.getBlock()
 
-				if (block.equals(LV)) {
+				if (block.equals(Coils.LV)) {
 					result.lv++
-				} else if (block.equals(MV)) {
+				} else if (block.equals(Coils.MV)) {
 					result.mv++
-				} else if (block.equals(HV)) {
+				} else if (block.equals(Coils.HV)) {
 					result.hv++
 				}
 			})
