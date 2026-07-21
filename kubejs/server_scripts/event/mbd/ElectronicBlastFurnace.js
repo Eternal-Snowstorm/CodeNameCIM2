@@ -146,7 +146,17 @@ ServerEvents.recipes((event) => {
 	let { cmi } = event.getRecipes()
 
 	cmi.electronic_blast_furnace()
+		.machineLevel(2)
+		.inputItems("#forge:raw_materials/tungsten")
+		.outputItems("cmi:tungsten_ingot")
+
+	cmi.electronic_blast_furnace()
 		.machineLevel(1)
-		.inputItems("#minecraft:planks")
-		.outputItems("minecraft:apple")
+		.inputItems("#forge:raw_materials/nickel")
+		.outputItems("thermal:nickel_ingot")
+
+	cmi.electronic_blast_furnace()
+		.machineLevel(0)
+		.inputItems("#forge:raw_materials/iron")
+		.outputItems("minecraft:iron_ingot")
 })
