@@ -16,8 +16,10 @@ MBDMachineEvents.onStructureFormed(($) => {
 	 * @type {Internal.MBDMultiblockMachine_}
 	 */
 	let machine = event.getMachine()
+	let id = machine.getDefinition().id()
+	let name = id.toString()
 
-	if (machine.getDefinition().id().toString() !== "cmi:electronic_blast_furnace") {
+	if (name !== "cmi:electronic_blast_furnace") {
 		return
 	}
 
