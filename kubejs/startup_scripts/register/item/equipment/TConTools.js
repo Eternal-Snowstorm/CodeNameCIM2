@@ -9,7 +9,7 @@ StartupEvents.registry("item", (event) => {
 	/**
 	 * 按理说这里其实不需要返回也可以
 	 * 但是我习惯了(😋)
-	 * @param {String} name 注册名称
+	 * @param {string} name 注册名称
 	 * @returns 注册匠魂工具类型
 	*/
 	function addTConToolType(name) {
@@ -19,7 +19,7 @@ StartupEvents.registry("item", (event) => {
 	/**
 	 * 返回`CustomBuilderObject`可以
 	 * 直接调用`createCustom()`下的方法
-	 * @param {String} name 注册名称
+	 * @param {string} name 注册名称
 	 * @returns 注册匠魂工具物品
 	 */
 	function addTConTool(name) {

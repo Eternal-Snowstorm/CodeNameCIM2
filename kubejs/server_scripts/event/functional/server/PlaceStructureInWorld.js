@@ -51,8 +51,8 @@ ServerEvents.loaded((event) => {
 
 	/**
 	 * 在指定维度的特定坐标生成结构
-	 * @param {String} dimId - 维度 ID (例如 "minecraft:the_nether")
-	 * @param {String} structurePath - 结构路径和文件名 
+	 * @param {string} dimId - 维度 ID (例如 "minecraft:the_nether")
+	 * @param {string} structurePath - 结构路径和文件名 
 	 * @param {[number, number, number]} pos - 坐标 [x, y, z]
 	 */
 	function placeStructure(dimId, structurePath, pos) {

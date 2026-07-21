@@ -5,7 +5,7 @@ ServerEvents.highPriorityData((event) => {
 
 	/**
 	 * 
-	 * @param {String} name 结构名称
+	 * @param {string} name 结构名称
 	 * @returns 
 	 */
 	function addNodeGen(name) {

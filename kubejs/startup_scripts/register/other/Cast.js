@@ -2,7 +2,7 @@ let casts = []
 
 /**
  * 
- * @param {String} name 铸模类型
+ * @param {string} name 铸模类型
  */
 function CastItem(name) {
 	this.name = name

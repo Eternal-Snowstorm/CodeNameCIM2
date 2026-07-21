@@ -1,10 +1,10 @@
 ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} name 
-	 * @param {String} flavour 
-	 * @param {String} encyclopedia 
+	 * @param {string} key 
+	 * @param {string} name 
+	 * @param {string} flavour 
+	 * @param {string} encyclopedia 
 	 */
 	function addTConMaterialLang(key, name, flavour, encyclopedia) {
 		event.add(`material.${Cmi.MODID}.${key}`, name)

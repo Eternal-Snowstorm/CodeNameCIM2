@@ -1,7 +1,7 @@
 StartupEvents.registry("item", (event) => {
 	/**
 	 * 
-	 * @param {String} name 注册ID
+	 * @param {string} name 注册ID
 	 * @returns 
 	 */
 	function addMechanismBasement(name) {
