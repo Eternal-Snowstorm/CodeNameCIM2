@@ -26,7 +26,7 @@ MBDMachineEvents.onStructureFormed(($) => {
 	let coilLevel = getCoilLevel(machine)
 
 	if (coilLevel === -1) {
-		// 线圈数量不足，阻止结构成型
+		// 如果线圈数量不足, 阻止结构成型
 		event.setCanceled(true)
 		return
 	}
@@ -66,6 +66,7 @@ function getCoilLevel(machine) {
 }
 
 /**
+ * 统计线圈数量
  *
  * @param {Internal.MBDMultiblockMachine_} machine
  * @returns {{lv:number,mv:number,hv:number}}
@@ -98,7 +99,8 @@ function getCoilCount(machine) {
 }
 
 /**
- * 
+ * 根据线圈等级调整效率
+ *
  * @param {Internal.MBDMultiblockMachine_} machine
  */
 function levelEfficiencyImprovement(machine) {
@@ -123,10 +125,11 @@ function levelEfficiencyImprovement(machine) {
 }
 
 /**
- * 
+ * 获取代理方块对应的真实 BlockState
+ *
  * @param {Internal.Level_} level
  * @param {BlockPos_} pos
- * @returns {Internal.BlockState_}
+ * @returns
  */
 function getRealState(level, pos) {
 	let state = level.getBlockState(pos)
