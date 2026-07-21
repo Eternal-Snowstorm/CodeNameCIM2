@@ -1,8 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addItemLang(key, value) {
 		event.add(`item.${Cmi.MODID}.${key}`, value)
@@ -10,8 +10,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addCellItemLang(key, value) {
 		event.add(`item.${Cmi.MODID}.${key}_cell`, `${value}硬盘`)
@@ -19,9 +19,9 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} text_1 
-	 * @param {String} text_2 
+	 * @param {string} key 
+	 * @param {string} text_1 
+	 * @param {string} text_2 
 	 */
 	function addCellLang(key, text_1, text_2) {
 		event.add(`text.${Cmi.MODID}.cell.${key}.page_1`, text_1)
@@ -30,8 +30,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addCastItemLang(key, value) {
 		event.add(`item.${Cmi.MODID}.${key}_cast`, `${value}金质铸模`)

@@ -1,7 +1,7 @@
 StartupEvents.registry("item", (event) => {
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @returns 
 	 */
 	function addAloneRawMaterial(name) {
@@ -16,7 +16,7 @@ StartupEvents.registry("item", (event) => {
 	}
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @returns 
 	 */
 	function addAloneCrushedRawMaterial(name) {

@@ -1,8 +1,8 @@
 ServerEvents.highPriorityData((event) => {
 	/** 
 	 * 
-	 * @param {String} name 
-	 * @param {String} bio 
+	 * @param {string} name 
+	 * @param {string} bio 
 	 * @returns
 	*/
 

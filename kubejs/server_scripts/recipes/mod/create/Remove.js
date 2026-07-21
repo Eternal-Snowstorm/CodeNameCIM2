@@ -19,6 +19,7 @@ ServerEvents.recipes((event) => {
 		"jei:/createaddition/compacting/seed_oil",
 		"jei:/create/crafting/materials/andesite_alloy",
 		"jei:/createaddition/mixing/bioethanol",
+		"create:crafting/kinetics/sail_frame_from_conversion",
 		"jei:/create/milling/andesite",
 		"jei:/create/industrial_iron_block_from_ingots_iron_stonecutting",
 		"jei:/create/industrial_iron_block_from_iron_ingots_stonecutting",

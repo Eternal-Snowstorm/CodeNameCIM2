@@ -47,8 +47,8 @@ IEEvents.multiblockForm((event) => {
 
 	/**
 	 * 
-	 * @param {String} namespace 命名空间
-	 * @param {String} id 多方块id
+	 * @param {string} namespace 命名空间
+	 * @param {string} id 多方块id
 	 * @returns 
 	 */
 	function disableMultiblock(namespace, id) {

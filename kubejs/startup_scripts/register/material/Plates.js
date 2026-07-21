@@ -1,7 +1,7 @@
 StartupEvents.registry("item", (event) => {
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @param {Color} color 
 	 * @returns 
 	 */
@@ -17,8 +17,8 @@ StartupEvents.registry("item", (event) => {
 	}
 	/**
 	 * 
-	 * @param {String} name 
-	 * @param {String} type 
+	 * @param {string} name 
+	 * @param {string} type 
 	 * @returns 
 	 */
 	function addNamedPlateItem(name, type) {
@@ -32,7 +32,7 @@ StartupEvents.registry("item", (event) => {
 	}
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @returns 
 	 */
 	function addAlonePlateItem(name) {
@@ -46,7 +46,7 @@ StartupEvents.registry("item", (event) => {
 	}
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @returns 
 	 */
 	function addNonPlateItem(name) {

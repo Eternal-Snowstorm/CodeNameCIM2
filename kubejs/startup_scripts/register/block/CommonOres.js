@@ -7,7 +7,7 @@ let SetPath = {
 	 * @param {string} type 类型
 	 * @returns 
 	 */
-	vanilla: function (type) {
+	withVanilla(type) {
 		return `minecraft:block/${type}`
 	},
 	/**
@@ -15,7 +15,7 @@ let SetPath = {
 	 * @param {string} type 类型
 	 * @returns 
 	 */
-	adAstra: function (type) {
+	withAdAstra(type) {
 		return `ad_astra:block/${type}_stone`
 	},
 	/**
@@ -23,26 +23,26 @@ let SetPath = {
 	 * @param {string} type 类型
 	 * @returns 
 	 */
-	alexsCaves: function (type) {
+	withAlexsCaves(type) {
 		return `alexscaves:block/${type}`
 	}
 }
 
 // 定义纹理路径, 方便资源包适配
 let BackgroundTextures = {
-	stone: SetPath.vanilla("stone"),
-	deepslate: SetPath.vanilla("deepslate"),
-	nether: SetPath.vanilla("netherrack"),
-	end: SetPath.vanilla("end_stone"),
+	stone: SetPath.withVanilla("stone"),
+	deepslate: SetPath.withVanilla("deepslate"),
+	nether: SetPath.withVanilla("netherrack"),
+	end: SetPath.withVanilla("end_stone"),
 
-	moon: SetPath.adAstra("moon"),
-	mars: SetPath.adAstra("mars"),
-	venus: SetPath.adAstra("venus"),
-	mercury: SetPath.adAstra("mercury"),
-	glacio: SetPath.adAstra("glacio"),
+	moon: SetPath.withAdAstra("moon"),
+	mars: SetPath.withAdAstra("mars"),
+	venus: SetPath.withAdAstra("venus"),
+	mercury: SetPath.withAdAstra("mercury"),
+	glacio: SetPath.withAdAstra("glacio"),
 
-	radrock: SetPath.alexsCaves("radrock"),
-	galena: SetPath.alexsCaves("galena")
+	radrock: SetPath.withAlexsCaves("radrock"),
+	galena: SetPath.withAlexsCaves("galena")
 }
 
 // 继承父模型
@@ -50,7 +50,7 @@ function simpleOreModel(background, ore) {
 	const BACKGROUND = BackgroundTextures[background]
 	const ORE = `cmi:block/ore/assets/${ore}`
 	return {
-		parent: "cmi:block/ore/simple",
+		parent: "nebula_libs:block/ore/simple_double_layered",
 		textures: {
 			background: BACKGROUND,
 			ore: ORE,

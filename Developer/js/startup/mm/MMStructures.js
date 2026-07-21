@@ -2,7 +2,7 @@ MMEvents.createStructures((event) => {
 	/**
 	 *
 	 * @param {{ [lang: string]: string }} map 
-	 * @returns {String} 
+	 * @returns {string} 
 	 */
 	function getLangText(map) {
 		const DEFAULT_LANGUAGE = "en_us"
@@ -19,7 +19,7 @@ MMEvents.createStructures((event) => {
 
 	/**
 	 * 
-	 * @param {String} id 
+	 * @param {string} id 
 	 * @param {{ [lang: String]: String }} names 
 	 * @param {Internal.Consumer_<Internal.StructureLayoutBuilderJS>} layout 
 	 * @returns 

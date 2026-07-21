@@ -1,7 +1,7 @@
 StartupEvents.registry("item", (event) => {
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @returns 
 	 */
 	function addAloneGemItem(name) {
@@ -16,7 +16,7 @@ StartupEvents.registry("item", (event) => {
 
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @returns 
 	 */
 	function addNonGemItem(name) {

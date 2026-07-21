@@ -2,7 +2,7 @@ ServerEvents.highPriorityData((event) => {
 
 	/**
 	 * 
-	 * @param {String} name Catalyst 名称
+	 * @param {string} name Catalyst 名称
 	 * @returns 
 	 */
 	function Catalyst(name) {

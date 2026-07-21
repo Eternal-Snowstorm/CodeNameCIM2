@@ -12,7 +12,7 @@ StartupEvents.registry("item", (event) => {
 	/**
 	 * 添加新的功能性存储的抽屉容量升级
 	 * 
-	 * @param {String} name 名称
+	 * @param {string} name 名称
 	 * @param {Number} multiplier 倍率
 	 */
 	function addDrawerUpgrade(name, multiplier) {

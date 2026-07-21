@@ -1,8 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addFluidLang(key, value) {
 		event.add(`fluid.${Cmi.MODID}.${key}`, value)

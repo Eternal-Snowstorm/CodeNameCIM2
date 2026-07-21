@@ -1,8 +1,7 @@
-
 ServerEvents.highPriorityData((event) => {
 	/**
 	 * 
-	 * @param {String} path 结构id
+	 * @param {string} path 结构id
 	 * @returns 
 	 */
 
@@ -165,5 +164,4 @@ ServerEvents.highPriorityData((event) => {
 	event.addJson(`cmi:worldgen/structure/radar/mercury`, mercuryStructure)
 	event.addJson(`cmi:worldgen/template_pool/radar/layer`, layerTemplatePool)
 	event.addJson(`cmi:worldgen/template_pool/radar/top`, topTemplatePool)
-
 })

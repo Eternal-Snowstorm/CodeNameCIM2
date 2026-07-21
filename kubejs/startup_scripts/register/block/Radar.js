@@ -1,7 +1,7 @@
 StartupEvents.registry("block", (event) => {
 	/**
 	 * 
-	 * @param {String} name 注册id
+	 * @param {string} name 注册id
 	 * @param {string} type 注册类型
 	 */
 	function addBlock(name, type) {

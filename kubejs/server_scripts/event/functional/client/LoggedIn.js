@@ -7,8 +7,8 @@
 // })
 
 PlayerEvents.loggedIn((event) => {
-	let { player } = event
+	let { player, level } = event
 
 	let tranKey = `message.${Cmi.MODID}.welcome`
-	player.tell(Component.translatable(tranKey, player.getUsername()))
+	level.tell(Component.translatable(tranKey, player.getUsername()))
 })

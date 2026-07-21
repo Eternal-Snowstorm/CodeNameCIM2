@@ -1,8 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addMBDLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}`, value)
@@ -20,10 +20,10 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} type 
-	 * @param {String} value 
-	 * @param {String} typeValue 
+	 * @param {string} key 
+	 * @param {string} type 
+	 * @param {string} value 
+	 * @param {string} typeValue 
 	 */
 	function addIOerLang(key, type, value, typeValue) {
 		event.add(`block.${Cmi.MODID}.${key}_${type}_input_bus`, `${value + typeValue}输入总线`)
@@ -35,4 +35,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMBDLang("chemical_reactor", "化学反应釜")
 	addMBDLang("reinforced_chemical_reactor", "大型化学反应釜")
 	addMBDLang("electrolyzer", "三相电解机")
+	if (FestivalUtils.isAprilFoolsDay()) {
+		addMBDLang("electronic_blast_furnace", "炖屎炉")
+	}
+	addMBDLang("electronic_blast_furnace", "电力高炉")
 })
