@@ -17,9 +17,8 @@ MBDMachineEvents.onBeforeRecipeWorking(($) => {
 
 	if (!isGraphiteElectrode(stack)) {
 		return
-	} {
-		event.setCanceled(true)
 	}
+	event.setCanceled(true)
 })
 
 MBDMachineEvents.onRecipeWorking(($) => {
