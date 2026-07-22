@@ -127,7 +127,7 @@ function levelEfficiencyImprovement(machine) {
 	 * 不然会出现每Tick都做一次修改的现象
 	 * 甚至能看到配方时间越来越多甚至突破 int 上限
 	 */
-	if (recipe.getProgress() !== 0) {
+	if (recipe.getProgress() > 0) {
 		return
 	}
 
