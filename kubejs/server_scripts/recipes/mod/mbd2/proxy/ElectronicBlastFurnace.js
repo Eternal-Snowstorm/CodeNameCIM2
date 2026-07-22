@@ -7,11 +7,6 @@ ServerEvents.recipes((event) => {
 	proxyAlloy(event)
 	proxyCarKiln(event)
 	proxyRotaryKiln(event)
-
-	event.getRecipes().cmi.electronic_blast_furnace()
-		.inputItems([
-			["#minecraft:anvil", "#minecraft:arrows"]
-		])
 })
 
 /**
@@ -54,9 +49,7 @@ function proxyArcFurnace(event) {
 function proxyMelting(event) {
 	let { cmi } = event.getRecipes()
 
-	event.forEachRecipe({
-		type: "tconstruct:melting"
-	}, (recipe) => {
+	forEachOriginalRecipe(event, "tconstruct:melting", (recipe) => {
 		let json = recipe.json
 		let id = recipe.getId()
 
@@ -91,9 +84,6 @@ function proxyAlloy(event) {
 		let builder = cmi.electronic_blast_furnace()
 
 		let inputs = json.get("inputs")
-
-		console.info(inputs)
-		console.info(inputs.getClass())
 
 		addFluidIngredients(builder, inputs.getAsJsonArray())
 
@@ -182,20 +172,40 @@ function getFloat(json, key, fallback) {
 	return json.has(key) ? json.get(key).getAsFloat() : fallback
 }
 
-function stackString(id, count) {
-	return count > 1 ? `${count}x ${id}` : id
+function forEachOriginalRecipe(event, type, consumer) {
+	for (let recipe of event.originalRecipes.values()) {
+		if (String(recipe.getType()) === type) {
+			consumer(recipe)
+		}
+	}
 }
 
-function itemIngredientOf(entry) {
+function stackString(id, count) {
+	return `${count}x ${id}`
+}
+
+function stackIdOf(stack) {
+	return String(stack).replace(/^\d+x /, "")
+}
+
+function stackCountOf(stack) {
+	let match = String(stack).match(/^(\d+)x /)
+
+	return match == null ? 1 : Number(match[1])
+}
+
+function itemIngredientOf(entry, countMultiplier) {
 	if (entry == null) {
 		return null
 	}
+
+	countMultiplier = countMultiplier == null ? 1 : countMultiplier
 
 	if (entry.isJsonArray()) {
 		let list = []
 
 		for (let e of entry.getAsJsonArray()) {
-			let ingredient = itemIngredientOf(e)
+			let ingredient = itemIngredientOf(e, countMultiplier)
 
 			if (ingredient != null) {
 				list.push(ingredient)
@@ -210,34 +220,30 @@ function itemIngredientOf(entry) {
 	}
 
 	let json = entry.getAsJsonObject()
+	let count = getInt(json, "count", 1) * countMultiplier
 
 	if (json.has("base_ingredient")) {
-		return itemIngredientOf(json.get("base_ingredient"))
+		return itemIngredientOf(json.get("base_ingredient"), count)
 	}
 
 	if (json.has("match")) {
-		return itemIngredientOf(json.get("match"))
+		return itemIngredientOf(json.get("match"), count)
 	}
 
 	if (json.has("children")) {
-		return itemIngredientOf(json.get("children"))
+		return itemIngredientOf(json.get("children"), count)
 	}
 
 	if (json.has("ingredients")) {
-		return itemIngredientOf(json.get("ingredients"))
+		return itemIngredientOf(json.get("ingredients"), count)
 	}
 
-	let count = getInt(json, "count", 1)
-
 	if (json.has("item")) {
-		return Item.of(
-			json.get("item").getAsString(),
-			count
-		)
+		return stackString(json.get("item").getAsString(), count)
 	}
 
 	if (json.has("tag")) {
-		return `#${json.get("tag").getAsString()}`
+		return stackString(`#${json.get("tag").getAsString()}`, count)
 	}
 
 	return null
@@ -306,11 +312,7 @@ function addIngredient(builder, entry) {
 		return
 	}
 
-	console.info("ENTRY = " + entry)
-
 	let ingredient = itemIngredientOf(entry)
-
-	console.info("PARSED = " + ingredient)
 
 	if (ingredient == null) {
 		return
@@ -318,7 +320,10 @@ function addIngredient(builder, entry) {
 
 	// 一个槽，可选多个
 	if (Array.isArray(ingredient)) {
-		builder.inputItems([ingredient])
+		builder.inputItems(
+			InputItem.of(Ingredient.of(ingredient.map(stackIdOf)))
+				.withCount(stackCountOf(ingredient[0]))
+		)
 		return
 	}
 
@@ -342,8 +347,6 @@ function addFluidIngredient(builder, entry) {
 
 function addFluidIngredients(builder, ingredients) {
 	for (let entry of ingredients) {
-		console.info(entry)
-
 		addFluidIngredient(builder, entry)
 	}
 }
@@ -397,6 +400,3 @@ function addFluidResults(builder, results) {
 	}
 }
 
-function isArray(value) {
-	return Array.isArray(value)
-}
