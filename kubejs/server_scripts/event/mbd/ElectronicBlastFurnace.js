@@ -32,6 +32,21 @@ MBDMachineEvents.onStructureFormed(($) => {
 	}
 
 	machine.setMachineLevel(coilLevel)
+})
+
+MBDMachineEvents.onRecipeWorking(($) => {
+	let event = $.getEvent()
+
+	/**
+	 * @type {Internal.MBDMultiblockMachine_}
+	 */
+	let machine = event.getMachine()
+	let id = machine.getDefinition().id()
+	let name = id.toString()
+
+	if (name !== "cmi:electronic_blast_furnace") {
+		return
+	}
 
 	levelEfficiencyImprovement(machine)
 })
@@ -45,7 +60,7 @@ MBDMachineEvents.onStructureFormed(($) => {
  * -1 = 不满足要求
  *
  * @param {Internal.MBDMultiblockMachine_} machine
- * @returns {number}
+ * @returns 
  */
 function getCoilLevel(machine) {
 	let count = getCoilCount(machine)
@@ -104,22 +119,29 @@ function getCoilCount(machine) {
  * @param {Internal.MBDMultiblockMachine_} machine
  */
 function levelEfficiencyImprovement(machine) {
-	let coilLevel = getCoilLevel(machine)
-
 	let recipe = machine.getRecipeLogic()
 	let duration = recipe.getDuration()
 
-	switch (coilLevel) {
+	/*
+	 * 若已经开始运行则不再修改
+	 * 不然会出现每Tick都做一次修改的现象
+	 * 甚至能看到配方时间越来越多甚至突破 int 上限
+	 */
+	if (recipe.getProgress() !== 0) {
+		return
+	}
+
+	switch (getCoilLevel(machine)) {
 		case 0:
-			recipe.setDuration(duration * 2)
+			recipe.setDuration(duration * 4)
 			break
 
 		case 1:
-			// MV 不变
+			recipe.setDuration(duration * 1.5)
 			break
 
 		case 2:
-			recipe.setDuration(duration * 0.5)
+			recipe.setDuration(duration / 4)
 			break
 	}
 }
@@ -162,4 +184,9 @@ ServerEvents.recipes((event) => {
 		.machineLevel(0)
 		.inputItems("#forge:raw_materials/iron")
 		.outputItems("minecraft:iron_ingot")
+
+	cmi.electronic_blast_furnace()
+		.machineLevel(0)
+		.inputItems("#forge:raw_materials/copper")
+		.outputItems("minecraft:copper_ingot")
 })
