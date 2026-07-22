@@ -53,8 +53,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addMaterialLang(key, value) {
 		event.add(`item.${Cmi.MODID}.${key}_ingot`, `${value}锭`)

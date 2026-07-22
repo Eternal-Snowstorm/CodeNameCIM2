@@ -206,7 +206,7 @@ ServerEvents.recipes((event) => {
 	}
 	/**
 	 * 
-	 * @param {String} id 
+	 * @param {string} id 
 	 */
 	MiningRecipe.prototype.build = function (id) {
 		let builder = event.custom(this.recipe)

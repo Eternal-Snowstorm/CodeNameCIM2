@@ -1,8 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addCommonTooltipLang(key, value) {
 		event.add(`tooltip.${key}`.replace(":", "."), `§b${value}`)
@@ -10,8 +10,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addCustomTooltipLang(key, value) {
 		event.add(key, value)
@@ -19,8 +19,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addCommonJadeTipLang(key, value) {
 		event.add(`jade.info.cmi.${key}`.replace(":", "."), `${value}`)
@@ -28,7 +28,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
+	 * @param {string} key 
 	 * @param {String[]} values 
 	 */
 	function addCommonJadeTipLangs(key, values) {
@@ -39,8 +39,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addJEIInfoLang(key, value) {
 		event.add(`jei.info.${key}`.replace(":", "."), value)

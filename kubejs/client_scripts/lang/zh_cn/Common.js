@@ -1,8 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addMekanismLang(key, value) {
 		event.add(`gas.${Cmi.MODID}.${key}`, value)
@@ -12,9 +12,9 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} title 
-	 * @param {String} author 
+	 * @param {string} key 
+	 * @param {string} title 
+	 * @param {string} author 
 	 */
 	function addPaintingLang(key, title, author) {
 		event.add(`painting.${Cmi.MODID}.${key}.title`, title)
@@ -23,9 +23,9 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} title 
-	 * @param {String} desc 
+	 * @param {string} key 
+	 * @param {string} title 
+	 * @param {string} desc 
 	 */
 	function addAdvancementLang(key, title, desc) {
 		event.add(`advancements.${Cmi.MODID}.${key}`, title)
@@ -34,8 +34,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 * @param {string} author
 	 */
 	function addMusicDiscLang(key, value, author) {
@@ -45,8 +45,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addPlanetLang(key, value) {
 		event.add(`planet.${Cmi.MODID}.${key}`, `${value}`)
@@ -55,8 +55,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addStructureLang(key, value) {
 		event.add(`structure.${Cmi.MODID}.${key}`, value)
@@ -64,8 +64,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addDepositLang(key, value) {
 		event.add(`cmi.structure.ore_node/${key}_node`, `${value}矿藏节点`)

@@ -1,7 +1,7 @@
 ServerEvents.highPriorityData((event) => {
 	/**
 	 * 
-	 * @param {String} name 流体ID(Tag)
+	 * @param {string} name 流体ID(Tag)
 	 * @param {Number} speed 每秒消耗的流体量(mB)
 	 * @returns 
 	 */

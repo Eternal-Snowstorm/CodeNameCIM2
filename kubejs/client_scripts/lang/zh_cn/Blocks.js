@@ -1,8 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addBlockLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}`, value)
@@ -10,8 +10,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addOreNodeLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}_deposit_block`, `${value}矿藏`)
@@ -19,8 +19,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addMachineLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}`, value)
@@ -29,8 +29,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addCasingLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}_casing`, `${value}机壳`)
@@ -38,8 +38,8 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addBuildLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}_slab`, `${value}台阶`)

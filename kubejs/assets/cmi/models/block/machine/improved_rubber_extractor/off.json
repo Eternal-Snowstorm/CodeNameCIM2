@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/orientable",
-	"textures": {
-		"front": "cmi:block/machine/improved_rubber_extractor/off",
-		"side": "cmi:block/machine/improved_rubber_extractor/side",
-		"top": "cmi:block/machine/improved_rubber_extractor/side"
-	}
-}

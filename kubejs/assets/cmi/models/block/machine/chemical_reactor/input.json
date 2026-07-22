@@ -1,8 +1,0 @@
-{
-		"parent": "minecraft:block/orientable",
-		"textures": {
-			"front": "cmi:block/casing/steel/input",
-			"side": "cmi:block/casing/steel/casing",
-			"top": "cmi:block/casing/steel/casing"
-		}
-	}

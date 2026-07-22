@@ -1,8 +1,8 @@
 ClientEvents.lang("en_us", (event) => {
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} value 
+	 * @param {string} key 
+	 * @param {string} value 
 	 */
 	function addMBDLang(key, value) {
 		event.add(`block.${Cmi.MODID}.${key}`, value)
@@ -20,10 +20,10 @@ ClientEvents.lang("en_us", (event) => {
 
 	/**
 	 * 
-	 * @param {String} key 
-	 * @param {String} type 
-	 * @param {String} value 
-	 * @param {String} typeValue 
+	 * @param {string} key 
+	 * @param {string} type 
+	 * @param {string} value 
+	 * @param {string} typeValue 
 	 */
 	function addIOerLang(key, type, value, typeValue) {
 		event.add(`block.${Cmi.MODID}.${key}_${type}_input_bus`, `${value + typeValue} Input Bus`)
@@ -35,4 +35,5 @@ ClientEvents.lang("en_us", (event) => {
 	addMBDLang("chemical_reactor", "Chemical Reactor")
 	addMBDLang("reinforced_chemical_reactor", "Reinforced Chemical Reactor")
 	addMBDLang("electrolyzer", "Three-Phase Electrolyzer Machine")
+	addMBDLang("electronic_blast_furnace", "Electronic Blast Furnace")
 })

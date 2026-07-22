@@ -41,9 +41,9 @@ function getHighPriorityItem(tag) {
 	/**
 	 *  引入参数
 	 * 
-	 * @param {String} currentNamespace
-	 * @param {String} outputId 
-	 * @param {String} priorityValue
+	 * @param {string} currentNamespace
+	 * @param {string} outputId 
+	 * @param {string} priorityValue
 	 * @returns 
 	 */
 	let currentNamespace = null

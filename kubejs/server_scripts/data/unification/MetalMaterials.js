@@ -37,7 +37,11 @@ ServerEvents.highPriorityData((event) => {
 	metals.forEach((metal) => {
 		let material = String(metal.getId())
 		let tag = `#forge:storage_blocks/raw_${material}`
-		let result = findHighPriorityItem(registeredItems, "raw_storage_block", material)
+		let result = findHighPriorityItem(
+			registeredItems,
+			"raw_storage_block",
+			material
+		)
 
 		addMetalUnification(`raw_${material}_block`, tag, result)
 	})
@@ -96,9 +100,9 @@ ServerEvents.highPriorityData((event) => {
 
 	/**
 	 * 
-	 * @param {String} type 
-	 * @param {String} material 
-	 * @returns {Array<String>}
+	 * @param {string} type 
+	 * @param {string} material 
+	 * @returns 
 	 */
 	function getCandidatePaths(type, material) {
 		switch (type) {
@@ -145,7 +149,7 @@ ServerEvents.highPriorityData((event) => {
 
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @param {InputItem_} tag 
 	 * @param {inputItem_} result 
 	 * @returns 

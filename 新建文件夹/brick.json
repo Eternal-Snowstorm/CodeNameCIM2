@@ -1,0 +1,13 @@
+{
+	"type": "immersiveindustry:car_kiln",
+	"input": {
+		"item": "minecraft:clay_ball"
+	},
+	"results": [
+		{
+			"item": "minecraft:brick"
+		}
+	],
+	"time": 200,
+	"tickEnergy": 32
+}

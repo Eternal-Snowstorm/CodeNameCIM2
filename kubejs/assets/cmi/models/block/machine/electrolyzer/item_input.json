@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/orientable",
-	"textures": {
-		"front": "cmi:block/machine/electrolyzer/item_input",
-		"side": "cmi:block/machine/electrolyzer/side",
-		"top": "cmi:block/machine/electrolyzer/side"
-	}
-}

@@ -8,7 +8,7 @@ ServerEvents.highPriorityData((event) => {
 	}
 	/**
 	 * 
-	 * @param {String} structure 
+	 * @param {string} structure 
 	 * @returns 
 	 */
 	SpecData.prototype.structure = function (structure) {
@@ -17,7 +17,7 @@ ServerEvents.highPriorityData((event) => {
 	}
 	/**
 	 * 
-	 * @param {String} dim 
+	 * @param {string} dim 
 	 */
 	SpecData.prototype.dimension = function (dim) {
 		this.dimensionName = dim

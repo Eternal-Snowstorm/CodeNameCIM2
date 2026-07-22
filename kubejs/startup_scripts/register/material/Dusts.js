@@ -1,7 +1,7 @@
 StartupEvents.registry("item", (event) => {
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @param {Color} color 
 	 * @returns 
 	 */
@@ -17,7 +17,7 @@ StartupEvents.registry("item", (event) => {
 	}
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @returns 
 	 */
 	function addAloneDustItem(name) {
@@ -31,7 +31,7 @@ StartupEvents.registry("item", (event) => {
 	}
 	/**
 	 * 
-	 * @param {String} name 
+	 * @param {string} name 
 	 * @returns 
 	 */
 	function addNonDustItem(name) {
