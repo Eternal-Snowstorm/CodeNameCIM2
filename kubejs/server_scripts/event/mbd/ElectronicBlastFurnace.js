@@ -133,14 +133,17 @@ function levelEfficiencyImprovement(machine) {
 
 	switch (getCoilLevel(machine)) {
 		case 0:
+			// 铜线圈处理时间 * 4
 			recipe.setDuration(duration * 4)
 			break
 
 		case 1:
+			// 琥珀金线圈配方处理时间 * 1.5
 			recipe.setDuration(duration * 1.5)
 			break
 
 		case 2:
+			// 钢线圈处理时间 / 4
 			recipe.setDuration(duration / 4)
 			break
 	}
