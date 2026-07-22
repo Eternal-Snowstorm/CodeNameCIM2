@@ -75,9 +75,9 @@ StartupEvents.registry("block", (event) => {
 		"raw",
 		"cooked",
 		"cooked2",
-		"coal",
-		"iron",
-		"sheet"
+		"coal_slot",
+		"iron_slot",
+		"sheet_slot"
 	]
 	blockIO.forEach((IOBlock) => {
 		event.create(`${Cmi.MODID}:${IOBlock}`)

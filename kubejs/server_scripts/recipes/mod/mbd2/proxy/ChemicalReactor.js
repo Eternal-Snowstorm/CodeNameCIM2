@@ -1,5 +1,5 @@
 let $MBDFluidIngredient =
-	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
+	Java.loadClass("dev.celestiacraft.cmi.compat.mbd2.MBDFluidIngredient")
 
 ServerEvents.recipes((event) => {
 	let { cmi } = event.getRecipes()
@@ -131,14 +131,9 @@ function inputFluidOf(entry) {
 	}
 
 	if (json.has("fluidTag")) {
-		let fluidTag = json.get("fluidTag").getAsString()
-		let location = ResourceLocation.tryParse(fluidTag)
-		let tag = FluidTags.create(location)
+		let tag = json.get("fluidTag").getAsString()
 
-		return $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long)"](
-			tag,
-			amount
-		)
+		return $MBDFluidIngredient.ofTagId(tag, amount)
 	}
 
 	return null

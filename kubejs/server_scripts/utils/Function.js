@@ -12,7 +12,7 @@ let $Chemical =
 let $Pigment =
 	Java.loadClass("mekanism.api.chemical.pigment.Pigment")
 let $MBDFluidIngredient =
-	Java.loadClass("com.lowdragmc.mbd2.api.recipe.ingredient.FluidIngredient")
+	Java.loadClass("dev.celestiacraft.cmi.compat.mbd2.MBDFluidIngredient")
 
 /**
  * 设置命名空间优先级
@@ -20,7 +20,6 @@ let $MBDFluidIngredient =
  */
 let namespacePriority = [
 	"cmi",
-	"minecraft",
 	"vintageimprovements",
 	"thermal",
 	"thermalconstruct",
@@ -34,14 +33,11 @@ let namespacePriority = [
 	"immersiveengineering",
 	"mekanism",
 	"alexscaves",
-	"tconstruct"
+	"tconstruct",
+	"minecraft"
 ]
-/**
-	 * 
-	 * @param {Set<String>} name 
-	 * @returns 
-	 */
-function getHighPriorityItem(name) {
+
+function getHighPriorityItem(tag) {
 	/**
 	 *  引入参数
 	 * 
@@ -50,31 +46,38 @@ function getHighPriorityItem(name) {
 	 * @param {String} priorityValue
 	 * @returns 
 	 */
-	let currentNamespace
-	let outputId = name[0]
-	let priorityValue
+	let currentNamespace = null
+	let outputId = null
+	let priorityValue = null
+
+	if (!Ingredient.isNotNull(tag)) {
+		return "cmi:cmi_icon"
+	}
+
+	let ids = Ingredient.of(tag).getItemIds().toArray()
 
 	// 遍历获取到的tag下每个物品的命名空间
-	if (name.size > 1) {
-		name.forEach((id) => {
-			if (id !== "minecraft:barrier") {
-				currentNamespace = ResourceLocation.parse(id).getNamespace()
+	if (ids.length > 0) {
+		ids.forEach((id) => {
+			const itemId = String(id)
 
-				// 获取命名空间优先级
+			if (itemId !== "minecraft:barrier") {
+				currentNamespace = String(ResourceLocation.parse(itemId).getNamespace())
+
 				for (let i = 0; i < namespacePriority.length; i++) {
 					if (currentNamespace === namespacePriority[i]) {
-						// 判定命名空间优先级并选择性输出优先级值最小的
-						if (i <= priorityValue || priorityValue == null) {
-							outputId = id
+						if (priorityValue == null || i < priorityValue) {
+							outputId = itemId
 							priorityValue = i
 						}
+						break
 					}
 				}
 			}
 		})
+		return outputId
 	}
-
-	return outputId
+	return "cmi:cmi_icon"
 }
 
 /**
@@ -186,7 +189,7 @@ let SmeltingRecipes = {
 	 * @param {InputItem_} input 输入成分
 	 * @returns
 	 */
-	all: function (event, output, input) {
+	all(event, output, input) {
 		let { minecraft } = event.getRecipes()
 
 		let smelting = minecraft
@@ -216,7 +219,7 @@ let SmeltingRecipes = {
 	 * @param {InputItem_} input 输入成分
 	 * @returns 
 	 */
-	blasting: function (event, output, input) {
+	blasting(event, output, input) {
 		let { minecraft } = event.getRecipes()
 
 		let blasting = minecraft
@@ -241,7 +244,7 @@ let SmeltingRecipes = {
 	 * @param {InputItem_} input 输入成分
 	 * @returns 
 	 */
-	smoking: function (event, output, input) {
+	smoking(event, output, input) {
 		let { minecraft } = event.getRecipes()
 
 		let smelting = minecraft
@@ -265,7 +268,16 @@ let SmeltingRecipes = {
  * @returns 
  */
 function getItemsUnderTag(tag) {
-	return Ingredient.of(tag).getItemIds()
+	if (!Ingredient.isNotNull(tag)) {
+		console.error(`${CmiGlobal.DEBUG_MESSAGE} Tag item search error`)
+		return null
+	}
+	let ids = Ingredient.of(tag).getItemIds()
+	if (ids.length < 1) {
+		console.error(`${CmiGlobal.DEBUG_MESSAGE} Tag item search error`)
+		return null
+	}
+	return ids
 }
 
 let removedRecipes = new Set()
@@ -348,20 +360,12 @@ let MBDUtils = {
 	 * @returns 
 	 */
 	withFluidTag(tag, amount, nbt) {
-		let tagKey = FluidTags.create(ResourceLocation.parse(tag))
 		amount = amount == null ? 1000 : amount
 
 		if (nbt == null) {
-			return $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long)"](
-				tagKey,
-				amount
-			)
+			return $MBDFluidIngredient.ofTagId(tag, amount)
 		}
 
-		return $MBDFluidIngredient["of(net.minecraft.tags.TagKey,long,net.minecraft.nbt.CompoundTag)"](
-			tagKey,
-			amount,
-			nbt
-		)
+		return $MBDFluidIngredient.ofTagId(tag, amount, nbt)
 	}
 }

@@ -8,7 +8,7 @@ ItemEvents.rightClicked((event) => {
 		"ae2:cell_component_16k"
 	]
 	if (player.mainHandItem === CELL && player.offHandItem !== CELL) {
-		let key = `message.${global.namespace}.initial_item_kit`
+		let key = `message.${Cmi.MODID}.initial_item_kit`
 
 		itemList.forEach((items) => {
 			player.give(Item.of(items))
