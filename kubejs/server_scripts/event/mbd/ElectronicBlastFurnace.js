@@ -84,7 +84,7 @@ function getCoilLevel(machine) {
  * 统计线圈数量
  *
  * @param {Internal.MBDMultiblockMachine_} machine
- * @returns {{lv:number,mv:number,hv:number}}
+ * @returns 
  */
 function getCoilCount(machine) {
 	let level = machine.getLevel()
