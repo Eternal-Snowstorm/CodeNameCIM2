@@ -17,7 +17,6 @@ MBDMachineEvents.onStructureFormed(($) => {
 	 */
 	let machine = event.getMachine()
 	let id = machine.getDefinition().id()
-	let name = id.toString()
 
 	if (!MBDUtils.isMachine(machine, "cmi:electronic_blast_furnace")) {
 		return
@@ -42,7 +41,6 @@ MBDMachineEvents.onRecipeWorking(($) => {
 	 */
 	let machine = event.getMachine()
 	let id = machine.getDefinition().id()
-	let name = id.toString()
 
 	if (!MBDUtils.isMachine(machine, "cmi:electronic_blast_furnace")) {
 		return
