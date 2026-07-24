@@ -371,12 +371,12 @@ let MBDUtils = {
 	/**
 	 * 
 	 * @param {Internal.MBDMachine_} machine 
-	 * @param {string} name 
+	 * @param {ResourceLocation_} name 
 	 */
 	isMachine(machine, name) {
 		let definition = machine.getDefinition()
 		let id = definition.id()
 
-		return id.toString() === name
+		return id.equals(name)
 	}
 }
