@@ -399,4 +399,3 @@ function addFluidResults(builder, results) {
 		addFluidResult(builder, entry)
 	}
 }
-

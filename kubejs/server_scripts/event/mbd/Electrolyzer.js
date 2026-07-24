@@ -33,7 +33,7 @@ MBDMachineEvents.onRecipeWorking(($) => {
 
 	const DAMAGE_NBT_NAME = "graphDmg"
 
-	if (name !== "cmi:electrolyzer") {
+	if (!MBDUtils.isMachine(machine, "cmi:electrolyzer")) {
 		return
 	}
 

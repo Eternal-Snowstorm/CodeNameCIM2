@@ -367,5 +367,16 @@ let MBDUtils = {
 		}
 
 		return $MBDFluidIngredient.ofTagId(tag, amount, nbt)
+	},
+	/**
+	 * 
+	 * @param {Internal.MBDMachine_} machine 
+	 * @param {string} name 
+	 */
+	isMachine(machine, name) {
+		let definition = machine.getDefinition()
+		let id = definition.id()
+
+		return id.toString() === name
 	}
 }
