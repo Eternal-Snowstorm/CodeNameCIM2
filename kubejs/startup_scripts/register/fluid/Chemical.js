@@ -83,4 +83,58 @@ StartupEvents.registry("fluid", (event) => {
 	// 烧碱溶液
 	addColorFluid("caustic_soda_solution", 0xFFFFFF)
 
+	// 锗溶液
+	addColorFluid("germanium_solution", 0xCEB58B)
+
+	// 钕溶液
+	addColorFluid("neodymium_solution", 0xC900FF)
+
+	// 酸性溶液
+	addColorFluid("neodymium_solution", 0xFF00EE)
+
+	// 熔融钕混合物
+	addColorFluid("molten_neodymium_mixture", 0xC800FF)
+
+	// 熔融含硅化合物
+	addColorFluid("molten_silicon_containing_compound", 0x4D4D4D)
+
+	// 熔融电离恩特罗
+	addColorFluid("molten_ionized_entro", 0x009556)
+
+	// 富铁粘液
+	addColorFluid("rich_iron_slime", 0x4B9492)
+
+	// 富铁粘液
+	addColorFluid("composite_magnetic_fluid", 0x6549B0)
+
+	// 液晶态恩特罗
+	addColorFluid("liquid_crystal_entro", 0x9CFF00)
+
+	// 晶态恩特罗溶液
+	addColorFluid("crystal_entro_solution", 0x9CFF00)
+
+	// 过氧化恩特罗溶液
+	addColorFluid("entro_peroxide_solution", 0x62E3D1)
+
+	// 含钋电解液
+	addColorFluid("polonium_containing_electrolyte", 0x399E7D)
+
+	// 含钚电解液
+	addColorFluid("plutonium_containing_electrolyte", 0x3C8A97)
+
+	// 钋溶液
+	addColorFluid("polonium_solution", 0xAEECC5)
+
+	// 含钋溶液
+	addColorFluid("polonium_containing_solution", 0x9BE9B8)
+
+	// 含钚溶液
+	addColorFluid("plutonium_containing_solution", 0x86E2FD)
+
+	// 钚萃取液
+	addColorFluid("plutonium_extract_solution", 0x9DEFF1)
+
+	// 放射性酸溶液
+	addColorFluid("radioactive_acid_solution", 0x052A0B)
+
 })
