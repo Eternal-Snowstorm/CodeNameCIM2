@@ -9,6 +9,10 @@ MBDMachineEvents.onBeforeRecipeWorking(($) => {
 	let event = $.getEvent()
 	let machine = event.getMachine()
 
+	if (name !== "cmi:electrolyzer") {
+		return
+	}
+
 	/** 
 	 * @type {ItemStackTransfer_}
 	 */
@@ -17,9 +21,8 @@ MBDMachineEvents.onBeforeRecipeWorking(($) => {
 
 	if (!isGraphiteElectrode(stack)) {
 		return
-	} {
-		event.setCanceled(true)
 	}
+	event.setCanceled(true)
 })
 
 MBDMachineEvents.onRecipeWorking(($) => {
@@ -27,6 +30,10 @@ MBDMachineEvents.onRecipeWorking(($) => {
 	let machine = event.getMachine()
 
 	const DAMAGE_NBT_NAME = "graphDmg"
+
+	if (!MBDUtils.isMachine(machine, "cmi:electrolyzer")) {
+		return
+	}
 
 	/** 
 	 * @type {ItemStackTransfer_}
@@ -57,5 +64,5 @@ MBDMachineEvents.onRecipeWorking(($) => {
  * @returns 
  */
 function isGraphiteElectrode(stack) {
-	return stack.isEmpty() || stack.getId() !== "immersiveengineering:graphite_electrode"
+	return !stack.isEmpty() && stack.getId() === "immersiveengineering:graphite_electrode"
 }

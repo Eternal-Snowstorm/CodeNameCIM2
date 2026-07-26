@@ -149,3 +149,16 @@
 		#Range: 1 ~ 20
 		smoking_frequency = 5
 
+	#Backtank Settings
+	[general.backtank]
+		#Copper backtank usable time in seconds (1 air unit is consumed every 20 ticks, so 1 second)
+		#type: int
+		#default: 2000
+		#Range: 1 ~ 1000000
+		copper_seconds = 2000
+		#Netherite backtank usable time in seconds (1 air unit is consumed every 20 ticks, so 1 second)
+		#type: int
+		#default: 4000
+		#Range: 1 ~ 1000000
+		netherite_seconds = 4000
+
