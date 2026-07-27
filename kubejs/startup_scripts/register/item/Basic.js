@@ -327,108 +327,102 @@ StartupEvents.registry("item", (event) => {
 	// 压电陶瓷
 	addMaterial("piezoelectric_ceramic")
 
-
-
-
 	// 电离红色沙尘
 	addMaterial("ionized_red_dust")
 
 	// 方铅岩粉
 	addMaterial("galena_dust")
-	
+
 	// 磁性源质
 	addMaterial("magnetic_source")
-	
+
 	// 磁性沉淀
 	addMaterial("magnetic_sediment")
-	
+
 	// 耐火材料粉
 	addMaterial("refractory_material_powder")
-	
+
 	// 锗混合物
 	addMaterial("germanium_mixture")
-	
+
 	// 富集锗铁混合物
 	addMaterial("enriched_germanium_iron_mixture")
-	
+
 	// 辉龙石粉
 	addMaterial("dragonite_dust")
-	
+
 	// 锗晶体
 	addMaterial("gemanium_crystal")
-	
+
 	// 锗晶圆
 	addMaterial("gemanium_wafer")
-	
+
 	// 碱性钕沉淀
 	addMaterial("alkaline_neodymium_sediment")
-	
+
 	// 钕混合物
 	addMaterial("neodymium_mixture")
-	
+
 	// 复合磁导板
 	addMaterial("composite_magnetic_conduction_plate")
-	
+
 	// 混沌虚空粉
 	addMaterial("chaos_void_dust")
-	
+
 	// 酸洗水星岩
 	addMaterial("acid_washed_mercury_rock")
-	
+
 	// 精晶原石
 	addMaterial("crystal_primordial_stone")
-	
+
 	// 电离恩特罗水晶
 	addMaterial("ionized_entro_crystal")
-	
+
 	// 晶态熔融恩特罗水晶
 	addMaterial("crystal_molten_entro")
-	
-	// 晶态熔融恩特罗水晶
-	addMaterial("crystal_molten_entro")
-	
+
 	// 埃特恩混合物
 	addMaterial("etrium_mixture")
-	
+
 	// 纯净晶源
 	addMaterial("pure_source")
-	
+
 	// 恩特罗化合物
 	addMaterial("entro_compound")
-	
+
 	// 恩特罗氧化剂
 	addMaterial("entro_oxidizer")
-	
+
 	// 还原恩特罗水晶
 	addMaterial("reduced_entro_crystal")
-	
+
 	// 过氧化恩特罗水晶
 	addMaterial("entro_preoxide_crystal")
-	
+
 	// 过氧化恩特罗粉
 	addMaterial("entro_peroxide_dust")
-	
+
 	// 还原恩特罗粉
 	addMaterial("reduced_entro_dust")
-	
+
 	// 钠还原剂
 	addMaterial("sodium_reducing_agent")
-	
+
 	// 恩特罗合金
 	addMaterial("entro_alloy")
-	
+
 	// 恩特罗合金晶圆
 	addMaterial("entro_alloy_wafer")
-	
+
 	// 钚电离结晶
 	addMaterial("plutonium_ionized_crystal")
-	
+
 	// 放射性沉淀
 	addMaterial("radioactive_sediment")
-	
+
 	// 粗钋粉
 	addMaterial("raw_polonium_dust")
-	
+
 	// 还原钋
 	addMaterial("reduced_polonium")
 

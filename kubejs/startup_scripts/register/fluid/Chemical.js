@@ -28,7 +28,6 @@ StartupEvents.registry("fluid", (event) => {
 		builder.bucketColor(color)
 		builder.flowingTexture(Cmi.loadResource("fluid/chemical/flow"))
 		builder.stillTexture(Cmi.loadResource("fluid/chemical/still"))
-		builder.renderType("translucent")
 		builder.translucent()
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
@@ -90,7 +89,7 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("neodymium_solution", 0xC900FF)
 
 	// 酸性溶液
-	addColorFluid("neodymium_solution", 0xFF00EE)
+	addColorFluid("acidity_solution", 0xFF00EE)
 
 	// 熔融钕混合物
 	addColorFluid("molten_neodymium_mixture", 0xC800FF)
