@@ -318,17 +318,15 @@ function inputFluidOf(entry) {
 	}
 
 	if (json.has("tag") && json.has("amount")) {
-		return $MBDFluidIngredient.ofTagId(
-			json.get("tag").getAsString(),
-			amount
-		)
+		let tag = json.get("tag").getAsString()
+
+		return $MBDFluidIngredient.ofTagId(tag, amount)
 	}
 
 	if (json.has("fluidTag")) {
-		return $MBDFluidIngredient.ofTagId(
-			json.get("fluidTag").getAsString(),
-			amount
-		)
+		let fluidTag = json.get("fluidTag").getAsString()
+
+		return $MBDFluidIngredient.ofTagId(fluidTag, amount)
 	}
 
 	return null
