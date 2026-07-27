@@ -9,6 +9,12 @@ const COILS = {
 	HV: Block.getBlock("immersiveengineering:coil_hv")
 }
 
+const COIL_RATIO = Object.freeze({
+	LV: 4,
+	MV: 1.5,
+	HV: 0.25
+})
+
 MBDMachineEvents.onStructureFormed(($) => {
 	let event = $.getEvent()
 
@@ -132,17 +138,17 @@ function levelEfficiencyImprovement(machine) {
 	switch (getCoilLevel(machine)) {
 		case 0:
 			// 铜线圈处理时间 * 4
-			recipe.setDuration(duration * 4)
+			recipe.setDuration(duration * COIL_RATIO.LV)
 			break
 
 		case 1:
 			// 琥珀金线圈配方处理时间 * 1.5
-			recipe.setDuration(duration * 1.5)
+			recipe.setDuration(duration * COIL_RATIO.MV)
 			break
 
 		case 2:
 			// 钢线圈处理时间 / 4
-			recipe.setDuration(duration / 4)
+			recipe.setDuration(duration / COIL_RATIO.HV)
 			break
 	}
 }
