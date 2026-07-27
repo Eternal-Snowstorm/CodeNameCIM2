@@ -1,6 +1,12 @@
 let $MBDFluidIngredient =
 	Java.loadClass("dev.celestiacraft.cmi.compat.mbd2.MBDFluidIngredient")
 
+const EBF_PROXY_DEBUG = false
+const EBF_PROXY_DEBUG_IDS = [
+	"tconstruct:smeltery/melting/emerald/",
+	"tconstruct:smeltery/melting/metal/emerald/reinforcement"
+]
+
 ServerEvents.recipes((event) => {
 	proxyArcFurnace(event)
 	proxyMelting(event)
@@ -19,7 +25,7 @@ function proxyArcFurnace(event) {
 	event.forEachRecipe({
 		type: "immersiveengineering:arc_furnace"
 	}, (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
 
 		let builder = cmi.electronic_blast_furnace()
@@ -50,12 +56,20 @@ function proxyMelting(event) {
 	let { cmi } = event.getRecipes()
 
 	forEachOriginalRecipe(event, "tconstruct:melting", (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
+		let ingredientJson = json.get("ingredient")
 
 		let builder = cmi.electronic_blast_furnace()
 
-		addIngredient(builder, json.get("ingredient"))
+		debugProxy(id, `recipe.removed=${recipe.removed}`)
+		debugProxy(id, `jsonSource=${recipe.originalJson == null ? "json" : "originalJson"}`)
+		debugProxy(id, `sourceJson=${debugJson(json)}`)
+		debugProxy(id, `ingredientJson=${debugJson(ingredientJson)}`)
+		debugProxy(id, `parsedIngredient=${debugValue(itemIngredientOf(ingredientJson))}`)
+		debugProxy(id, `resultJson=${debugJson(json.get("result"))}`)
+
+		addIngredient(builder, ingredientJson, id)
 
 		addFluidResult(builder, json.get("result"))
 
@@ -78,7 +92,7 @@ function proxyAlloy(event) {
 	event.forEachRecipe({
 		type: "tconstruct:alloy"
 	}, (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
 
 		let builder = cmi.electronic_blast_furnace()
@@ -103,7 +117,7 @@ function proxyCarKiln(event) {
 	event.forEachRecipe({
 		type: "immersiveindustry:car_kiln"
 	}, (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
 
 		let builder = cmi.electronic_blast_furnace()
@@ -143,7 +157,7 @@ function proxyRotaryKiln(event) {
 	event.forEachRecipe({
 		type: "immersiveindustry:rotary_kiln"
 	}, (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
 
 		let builder = cmi.electronic_blast_furnace()
@@ -172,6 +186,49 @@ function getFloat(json, key, fallback) {
 	return json.has(key) ? json.get(key).getAsFloat() : fallback
 }
 
+function debugProxyEnabled(id) {
+	if (!EBF_PROXY_DEBUG || id == null) {
+		return false
+	}
+
+	let recipeId = String(id)
+
+	for (let target of EBF_PROXY_DEBUG_IDS) {
+		if (recipeId.includes(target)) {
+			return true
+		}
+	}
+
+	return false
+}
+
+function debugProxy(id, message) {
+	if (debugProxyEnabled(id)) {
+		console.info(`[EBF_PROXY_DEBUG] ${id} | ${message}`)
+	}
+}
+
+function debugJson(entry) {
+	return entry == null ? "<null>" : String(entry)
+}
+
+function debugValue(value) {
+	if (Array.isArray(value)) {
+		return `[${value.map(debugValue).join(", ")}]`
+	}
+
+	return value == null ? "<null>" : String(value)
+}
+
+/**
+ * 
+ * @param {Internal.RecipeJS_} recipe 
+ * @returns 
+ */
+function sourceJsonOf(recipe) {
+	return recipe.originalJson == null ? recipe.json : recipe.originalJson
+}
+
 function forEachOriginalRecipe(event, type, consumer) {
 	for (let recipe of event.originalRecipes.values()) {
 		if (String(recipe.getType()) === type) {
@@ -181,17 +238,7 @@ function forEachOriginalRecipe(event, type, consumer) {
 }
 
 function stackString(id, count) {
-	return `${count}x ${id}`
-}
-
-function stackIdOf(stack) {
-	return String(stack).replace(/^\d+x /, "")
-}
-
-function stackCountOf(stack) {
-	let match = String(stack).match(/^(\d+)x /)
-
-	return match == null ? 1 : Number(match[1])
+	return count > 1 ? `${count}x ${id}` : id
 }
 
 function itemIngredientOf(entry, countMultiplier) {
@@ -226,6 +273,10 @@ function itemIngredientOf(entry, countMultiplier) {
 		return itemIngredientOf(json.get("base_ingredient"), count)
 	}
 
+	if (json.has("ingredient")) {
+		return itemIngredientOf(json.get("ingredient"), count)
+	}
+
 	if (json.has("match")) {
 		return itemIngredientOf(json.get("match"), count)
 	}
@@ -238,12 +289,26 @@ function itemIngredientOf(entry, countMultiplier) {
 		return itemIngredientOf(json.get("ingredients"), count)
 	}
 
+	if (json.has("input")) {
+		return itemIngredientOf(json.get("input"), count)
+	}
+
+	if (json.has("output")) {
+		return itemIngredientOf(json.get("output"), count)
+	}
+
+	if (json.has("value")) {
+		return itemIngredientOf(json.get("value"), count)
+	}
+
 	if (json.has("item")) {
 		return stackString(json.get("item").getAsString(), count)
 	}
 
 	if (json.has("tag")) {
-		return stackString(`#${json.get("tag").getAsString()}`, count)
+		let tag = json.get("tag").getAsString()
+
+		return stackString(`#${tag}`, count)
 	}
 
 	return null
@@ -261,7 +326,7 @@ function inputFluidOf(entry) {
 		return Fluid.of(json.get("fluid").getAsString(), amount)
 	}
 
-	if (json.has("tag")) {
+	if (json.has("tag") && json.has("amount")) {
 		return $MBDFluidIngredient.ofTagId(
 			json.get("tag").getAsString(),
 			amount
@@ -290,7 +355,7 @@ function outputFluidOf(entry) {
 		return Fluid.of(json.get("fluid").getAsString(), amount)
 	}
 
-	if (json.has("tag")) {
+	if (json.has("tag") && json.has("amount")) {
 		return $MBDFluidIngredient.ofTagId(
 			json.get("tag").getAsString(),
 			amount
@@ -300,14 +365,16 @@ function outputFluidOf(entry) {
 	return null
 }
 
-function addIngredient(builder, entry) {
+function addIngredient(builder, entry, debugId) {
 	if (entry == null) {
+		debugProxy(debugId, "addIngredient: entry=<null>, skipped")
 		return
 	}
 
 	let fluid = inputFluidOf(entry)
 
 	if (fluid != null) {
+		debugProxy(debugId, `addIngredient: classified=inputFluid value=${fluid}`)
 		builder.inputFluids(fluid)
 		return
 	}
@@ -315,20 +382,20 @@ function addIngredient(builder, entry) {
 	let ingredient = itemIngredientOf(entry)
 
 	if (ingredient == null) {
+		debugProxy(debugId, `addIngredient: parsed item is null, entry=${debugJson(entry)}`)
 		return
 	}
 
-	// 一个槽，可选多个
+	debugProxy(debugId, `addIngredient: classified=inputItem value=${debugValue(ingredient)}`)
+
 	if (Array.isArray(ingredient)) {
-		builder.inputItems(
-			InputItem.of(Ingredient.of(ingredient.map(stackIdOf)))
-				.withCount(stackCountOf(ingredient[0]))
-		)
+		builder.inputItems([ingredient])
+		debugProxy(debugId, `addIngredient: builder.inputItems([${debugValue(ingredient)}]) called`)
 		return
 	}
 
-	// 普通单输入
 	builder.inputItems(ingredient)
+	debugProxy(debugId, `addIngredient: builder.inputItems(${debugValue(ingredient)}) called`)
 }
 
 function addIngredients(builder, ingredients) {

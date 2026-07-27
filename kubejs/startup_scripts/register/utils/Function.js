@@ -6,17 +6,19 @@
  * @returns 
  */
 function setFluidBucketModel(name) {
-	return {
-		"parent": "forge:item/bucket_drip",
-		"loader": "forge:fluid_container",
-		"fluid": `${Cmi.MODID}:${name}`
-	}
+	let json = new JsonWapper()
+
+	json.addStringProperty("parent", "forge:item/bucket_drip")
+	json.addStringProperty("loader", "forge:fluid_container")
+	json.addStringProperty("fluid", `${Cmi.MODID}:${name}`)
+
+	return json
 }
 
 /**
  * 
- * @template T
- * @param {Internal.TagKey_<T>} tag 
+ * @typedef {Internal.Item | Internal.Block | Internal.Fluid} TagKeyType
+ * @param {Internal.TagKey_<TagKeyType>} tag 
  * @returns 
  */
 function useJavaTag(tag) {
