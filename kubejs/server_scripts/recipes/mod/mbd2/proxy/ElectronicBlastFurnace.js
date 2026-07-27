@@ -201,6 +201,12 @@ function sourceJsonOf(recipe) {
 	return recipe.originalJson == null ? recipe.json : recipe.originalJson
 }
 
+/**
+ * 
+ * @param {Internal.RecipesEventJS_} event
+ * @param {string} type
+ * @param {Internal.Consumer_<Internal.RecipeJS_} consumer
+ */
 function forEachOriginalRecipe(event, type, consumer) {
 	for (let recipe of event.originalRecipes.values()) {
 		if (String(recipe.getType()) === type) {
@@ -286,6 +292,11 @@ function itemIngredientOf(entry, countMultiplier) {
 	return null
 }
 
+/**
+ * 
+ * @param {Internal.JsonElement_} entry 
+ * @returns 
+ */
 function inputFluidOf(entry) {
 	if (entry == null || !entry.isJsonObject()) {
 		return null
@@ -315,6 +326,11 @@ function inputFluidOf(entry) {
 	return null
 }
 
+/**
+ * 
+ * @param {Internal.JsonElement_} entry 
+ * @returns 
+ */
 function outputFluidOf(entry) {
 	if (entry == null || !entry.isJsonObject()) {
 		return null
@@ -337,16 +353,20 @@ function outputFluidOf(entry) {
 	return null
 }
 
-function addIngredient(builder, entry, debugId) {
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder 
+ * @param {Internal.JsonElement_} entry 
+ * @returns 
+ */
+function addIngredient(builder, entry) {
 	if (entry == null) {
-		debugProxy(debugId, "addIngredient: entry=<null>, skipped")
 		return
 	}
 
 	let fluid = inputFluidOf(entry)
 
 	if (fluid != null) {
-		debugProxy(debugId, `addIngredient: classified=inputFluid value=${fluid}`)
 		builder.inputFluids(fluid)
 		return
 	}
@@ -354,28 +374,33 @@ function addIngredient(builder, entry, debugId) {
 	let ingredient = itemIngredientOf(entry)
 
 	if (ingredient == null) {
-		debugProxy(debugId, `addIngredient: parsed item is null, entry=${debugJson(entry)}`)
 		return
 	}
 
-	debugProxy(debugId, `addIngredient: classified=inputItem value=${debugValue(ingredient)}`)
-
 	if (Array.isArray(ingredient)) {
 		builder.inputItems([ingredient])
-		debugProxy(debugId, `addIngredient: builder.inputItems([${debugValue(ingredient)}]) called`)
 		return
 	}
 
 	builder.inputItems(ingredient)
-	debugProxy(debugId, `addIngredient: builder.inputItems(${debugValue(ingredient)}) called`)
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonElement_} entry
+ */
 function addIngredients(builder, ingredients) {
 	for (let ingredient of ingredients) {
 		addIngredient(builder, ingredient)
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder 
+ * @param {Internal.JsonElement_} entry 
+ */
 function addFluidIngredient(builder, entry) {
 	let fluid = inputFluidOf(entry)
 
@@ -384,12 +409,23 @@ function addFluidIngredient(builder, entry) {
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonArray_} ingredients
+ */
 function addFluidIngredients(builder, ingredients) {
 	for (let entry of ingredients) {
 		addFluidIngredient(builder, entry)
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonElement_} entry
+ * @returns 
+ */
 function addResult(builder, entry) {
 	let fluid = outputFluidOf(entry)
 
@@ -419,12 +455,22 @@ function addResult(builder, entry) {
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonArray_} results
+ */
 function addResults(builder, results) {
 	for (let entry of results) {
 		addResult(builder, entry)
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonElement_} entry
+ */
 function addFluidResult(builder, entry) {
 	let fluid = outputFluidOf(entry)
 
@@ -433,6 +479,11 @@ function addFluidResult(builder, entry) {
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonArray_} results
+ */
 function addFluidResults(builder, results) {
 	for (let entry of results) {
 		addFluidResult(builder, entry)
