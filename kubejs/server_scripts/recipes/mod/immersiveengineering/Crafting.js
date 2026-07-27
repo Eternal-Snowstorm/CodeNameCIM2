@@ -159,4 +159,34 @@ ServerEvents.recipes((event) => {
 		B: "cmi:industrial_frame",
 		C: "#forge:gears/electrum"
 	})
+
+	// 铜线圈
+	kubejs.shaped("4x immersiveengineering:wirecoil_copper", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "#forge:wires/copper",
+		B: "createaddition:spool"
+	}).id("immersiveengineering:crafting/wirecoil_copper")
+
+	// 琥珀金线圈
+	kubejs.shaped("4x immersiveengineering:wirecoil_electrum", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "#forge:wires/electrum",
+		B: "createaddition:spool"
+	}).id("immersiveengineering:crafting/wirecoil_electrum")
+
+	// 钢线圈
+	kubejs.shaped("4x immersiveengineering:wirecoil_steel", [
+		"A A",
+		" B ",
+		"A A"
+	], {
+		A: "#forge:wires/steel",
+		B: "createaddition:spool"
+	}).id("immersiveengineering:crafting/wirecoil_steel")
 })

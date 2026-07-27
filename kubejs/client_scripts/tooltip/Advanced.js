@@ -36,13 +36,15 @@ ItemEvents.tooltip((event) => {
 	}
 
 	// 末影构件
-	event.addAdvancedToAll("cmi:ender_mechanism", (item, advanced, tooltip) => {
+	event.addAdvanced("cmi:ender_mechanism", (item, advanced, tooltip) => {
 		if (item.hasNBT()) {
-			let x = item.getNbt().x
-			let y = item.getNbt().y
-			let z = item.getNbt().z
+			let nbt = item.getNbt()
 
-			let dimId = item.getNbt().dim
+			let x = nbt.x
+			let y = nbt.y
+			let z = nbt.z
+
+			let dimId = nbt.dim
 
 			if (dimId) {
 				// 转成翻译键
@@ -50,7 +52,10 @@ ItemEvents.tooltip((event) => {
 				let dim = Component.translatable(dimKey)
 				let tranKey = Component.translatable(
 					"tooltip.cmi.stored_location",
-					dim, x, y, z
+					dim,
+					x,
+					y,
+					z
 				).red()
 
 				tooltip.add(tranKey)
@@ -87,6 +92,7 @@ ItemEvents.tooltip((event) => {
 		tooltip.add(Component.translatable("tooltip.moreburners.electric_burner.2"))
 	})
 
+	/*
 	event.addAdvanced("cmi:electronic_blast_furnace", (item, advanced, tooltip) => {
 		CmiLang.isShiftDown(tooltip)
 
@@ -94,7 +100,7 @@ ItemEvents.tooltip((event) => {
 			tooltip.add(Component.empty())
 
 			tooltip.addAll(TooltipHelper.cutStringTextComponent(
-				Component.literal("一个集大成的机器").getString(),
+				Component.translatable("一个集大成的机器").getString(),
 				$FontHelper$Palette.STANDARD_CREATE
 			))
 
@@ -119,4 +125,5 @@ ItemEvents.tooltip((event) => {
 			))
 		}
 	})
+	*/
 })
