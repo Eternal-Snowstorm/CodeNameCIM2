@@ -148,7 +148,7 @@ function levelEfficiencyImprovement(machine) {
 
 		case 2:
 			// 钢线圈处理时间 / 4
-			recipe.setDuration(duration / COIL_RATIO.HV)
+			recipe.setDuration(duration * COIL_RATIO.HV)
 			break
 	}
 }
