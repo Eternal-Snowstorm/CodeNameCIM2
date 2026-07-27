@@ -34,9 +34,10 @@ function proxyArcFurnace(event) {
 
 		builder.duration(getInt(json, "time", 200))
 			.perTick((recipe) => {
-				recipe.inputFE(
-					Math.ceil(getInt(json, "energy", 0) / getInt(json, "time", 1))
-				)
+				let energy = getInt(json, "energy", 0)
+				let time = getInt(json, "time", 1)
+
+				recipe.inputFE(Math.ceil(energy / time))
 			})
 			.id(`${id}_mbd2_proxy`)
 	})
@@ -55,13 +56,6 @@ function proxyMelting(event) {
 		let ingredientJson = json.get("ingredient")
 
 		let builder = cmi.electronic_blast_furnace()
-
-		debugProxy(id, `recipe.removed=${recipe.removed}`)
-		debugProxy(id, `jsonSource=${recipe.originalJson == null ? "json" : "originalJson"}`)
-		debugProxy(id, `sourceJson=${debugJson(json)}`)
-		debugProxy(id, `ingredientJson=${debugJson(ingredientJson)}`)
-		debugProxy(id, `parsedIngredient=${debugValue(itemIngredientOf(ingredientJson))}`)
-		debugProxy(id, `resultJson=${debugJson(json.get("result"))}`)
 
 		addIngredient(builder, ingredientJson, id)
 
