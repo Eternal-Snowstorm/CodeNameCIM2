@@ -62,100 +62,210 @@ function simpleOreModel(background, ore) {
 const ORE_TYPE_CONFIG = {
 	stone: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	deepslate: {
 		sound: SoundType.DEEPSLATE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base + 1.5
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base + 1.5
 		}
 	},
 	nether: {
 		sound: SoundType.NETHER_ORE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	end: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	moon: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	mars: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	venus: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	mercury: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	glacio: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	galena: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	radrock: {
 		sound: SoundType.DEEPSLATE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	}
