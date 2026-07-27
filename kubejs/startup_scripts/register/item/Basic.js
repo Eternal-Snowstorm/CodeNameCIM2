@@ -348,14 +348,17 @@ StartupEvents.registry("item", (event) => {
 	// 富集锗铁混合物
 	addMaterial("enriched_germanium_iron_mixture")
 
+	// 辉龙石
+	addMaterial("dragonite")
+
 	// 辉龙石粉
 	addMaterial("dragonite_dust")
 
 	// 锗晶体
-	addMaterial("gemanium_crystal")
+	addMaterial("germanium_crystal")
 
 	// 锗晶圆
-	addMaterial("gemanium_wafer")
+	addMaterial("germanium_wafer")
 
 	// 碱性钕沉淀
 	addMaterial("alkaline_neodymium_sediment")
@@ -367,13 +370,13 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("composite_magnetic_conduction_plate")
 
 	// 混沌虚空粉
-	addMaterial("chaos_void_dust")
+	addMaterial("chaotic_void_dust")
 
 	// 酸洗水星岩
 	addMaterial("acid_washed_mercury_rock")
 
 	// 精晶原石
-	addMaterial("crystal_primordial_stone")
+	addMaterial("spiritcore_ore")
 
 	// 电离恩特罗水晶
 	addMaterial("ionized_entro_crystal")
