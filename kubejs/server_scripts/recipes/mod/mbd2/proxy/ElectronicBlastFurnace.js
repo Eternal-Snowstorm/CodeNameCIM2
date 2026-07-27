@@ -174,18 +174,6 @@ function getFloat(json, key, fallback) {
 	return json.has(key) ? json.get(key).getAsFloat() : fallback
 }
 
-function debugJson(entry) {
-	return entry == null ? "<null>" : String(entry)
-}
-
-function debugValue(value) {
-	if (Array.isArray(value)) {
-		return `[${value.map(debugValue).join(", ")}]`
-	}
-
-	return value == null ? "<null>" : String(value)
-}
-
 /**
  * 
  * @param {Internal.RecipeJS_} recipe 
