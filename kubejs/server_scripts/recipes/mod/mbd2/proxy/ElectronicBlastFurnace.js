@@ -159,31 +159,33 @@ function proxyRotaryKiln(event) {
 		}
 
 		builder.duration(getInt(json, "time", 200))
-			.perTick(recipe => {
+			.perTick((recipe) => {
 				recipe.inputFE(getInt(json, "tickEnergy", 0))
 			})
 			.id(`${id}_mbd2_proxy`)
 	})
 }
 
+/**
+ * 
+ * @param {Internal.JsonObject_} json
+ * @param {string} key
+ * @param {number} fallback
+ * @returns 
+ */
 function getInt(json, key, fallback) {
 	return json.has(key) ? json.get(key).getAsInt() : fallback
 }
 
+/**
+ * 
+ * @param {Internal.JsonObject_} json
+ * @param {string} key
+ * @param {number} fallback
+ * @returns 
+ */
 function getFloat(json, key, fallback) {
 	return json.has(key) ? json.get(key).getAsFloat() : fallback
-}
-
-function debugJson(entry) {
-	return entry == null ? "<null>" : String(entry)
-}
-
-function debugValue(value) {
-	if (Array.isArray(value)) {
-		return `[${value.map(debugValue).join(", ")}]`
-	}
-
-	return value == null ? "<null>" : String(value)
 }
 
 /**
@@ -209,10 +211,22 @@ function forEachOriginalRecipe(event, type, consumer) {
 	}
 }
 
+/**
+ * 
+ * @param {string} id
+ * @param {number} count
+ * @returns 
+ */
 function stackString(id, count) {
 	return count > 1 ? `${count}x ${id}` : id
 }
 
+/**
+ * 
+ * @param {Internal.JsonElement_} entry
+ * @param {number} countMultiplier
+ * @returns 
+ */
 function itemIngredientOf(entry, countMultiplier) {
 	if (entry == null) {
 		return null
@@ -304,17 +318,15 @@ function inputFluidOf(entry) {
 	}
 
 	if (json.has("tag") && json.has("amount")) {
-		return $MBDFluidIngredient.ofTagId(
-			json.get("tag").getAsString(),
-			amount
-		)
+		let tag = json.get("tag").getAsString()
+
+		return $MBDFluidIngredient.ofTagId(tag, amount)
 	}
 
 	if (json.has("fluidTag")) {
-		return $MBDFluidIngredient.ofTagId(
-			json.get("fluidTag").getAsString(),
-			amount
-		)
+		let fluidTag = json.get("fluidTag").getAsString()
+
+		return $MBDFluidIngredient.ofTagId(fluidTag, amount)
 	}
 
 	return null
@@ -338,10 +350,9 @@ function outputFluidOf(entry) {
 	}
 
 	if (json.has("tag") && json.has("amount")) {
-		return $MBDFluidIngredient.ofTagId(
-			json.get("tag").getAsString(),
-			amount
-		)
+		let tag = json.get("tag").getAsString()
+
+		return $MBDFluidIngredient.ofTagId(tag, amount)
 	}
 
 	return null
