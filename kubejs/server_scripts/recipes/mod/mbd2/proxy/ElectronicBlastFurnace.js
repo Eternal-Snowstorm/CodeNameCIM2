@@ -1,12 +1,6 @@
 let $MBDFluidIngredient =
 	Java.loadClass("dev.celestiacraft.cmi.compat.mbd2.MBDFluidIngredient")
 
-const EBF_PROXY_DEBUG = false
-const EBF_PROXY_DEBUG_IDS = [
-	"tconstruct:smeltery/melting/emerald/",
-	"tconstruct:smeltery/melting/metal/emerald/reinforcement"
-]
-
 ServerEvents.recipes((event) => {
 	proxyArcFurnace(event)
 	proxyMelting(event)
@@ -184,28 +178,6 @@ function getInt(json, key, fallback) {
 
 function getFloat(json, key, fallback) {
 	return json.has(key) ? json.get(key).getAsFloat() : fallback
-}
-
-function debugProxyEnabled(id) {
-	if (!EBF_PROXY_DEBUG || id == null) {
-		return false
-	}
-
-	let recipeId = String(id)
-
-	for (let target of EBF_PROXY_DEBUG_IDS) {
-		if (recipeId.includes(target)) {
-			return true
-		}
-	}
-
-	return false
-}
-
-function debugProxy(id, message) {
-	if (debugProxyEnabled(id)) {
-		console.info(`[EBF_PROXY_DEBUG] ${id} | ${message}`)
-	}
 }
 
 function debugJson(entry) {
