@@ -159,7 +159,7 @@ function proxyRotaryKiln(event) {
 		}
 
 		builder.duration(getInt(json, "time", 200))
-			.perTick(recipe => {
+			.perTick((recipe) => {
 				recipe.inputFE(getInt(json, "tickEnergy", 0))
 			})
 			.id(`${id}_mbd2_proxy`)
