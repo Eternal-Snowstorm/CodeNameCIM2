@@ -275,11 +275,17 @@ StartupEvents.registry("item", (event) => {
 	// 致密氧化物薄膜
 	addMaterial("dense_oxide_film")
 
+	// 基础电子元件
+	addMaterial("basic_electronic_components")
+
 	// 高级电子元件
 	addMaterial("advanced_electronic_components")
 
 	// 精英电子元件
 	addMaterial("elite_electronic_components")
+
+	// 终极电子元件
+	addMaterial("ultimate_electronic_components")
 
 	// 钴电解质
 	addMaterial("cobalt_electrolyte")
