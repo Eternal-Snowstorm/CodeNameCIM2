@@ -1,4 +1,10 @@
 StartupEvents.registry("mekanism:gas", (event) => {
+	/**
+	 * 
+	 * @param {string} name 
+	 * @param {MaterialColor} color 
+	 * @returns 
+	 */
 	function addMekanismGas(name, color) {
 		return event.create(`${Cmi.MODID}:${name}`)
 			.color(color)
