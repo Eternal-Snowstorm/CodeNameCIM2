@@ -292,7 +292,7 @@ function OreBlock(name, level, hardness) {
 /**
  * 
  * @param {MaterialColor} color 
- * @param {string} id 
+ * @param {number} id 
  * @returns 
  */
 OreBlock.prototype.appearance = function (color, id) {
