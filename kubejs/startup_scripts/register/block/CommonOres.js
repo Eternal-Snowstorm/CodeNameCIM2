@@ -402,28 +402,28 @@ new OreBlock("platinum", "iron", 8)
 
 // 钒
 new OreBlock("vanadium", "iron", 5)
-	.appearance(0xFFFFFF, 1)
+	.appearance(0xFFFFFF, 3)
 	.nether()
 
 // 铬
 new OreBlock("chromium", "stone", 5)
-	.appearance(0xFFFFFF, 5)
+	.appearance(0xFFFFFF, 9)
 	.moon()
 
 // 钨
 new OreBlock("tungsten", "nether", 10)
-	.appearance(0x596C7E, 5)
+	.appearance(0x596C7E, 12)
 	.nether()
 
 // 埃忒恩
 new OreBlock("etrium", "diamond", 5)
-	.appearance(0x32FFD4, 1)
+	.appearance(0x32FFD4, 11)
 	.stone()
 	.deepslate()
 
 // 钛
 new OreBlock("titanium", "diamond", 20)
-	.appearance(0xE2B1E3, 1)
+	.appearance(0xE2B1E3, 8)
 	.galena()
 
 // 阿迪特

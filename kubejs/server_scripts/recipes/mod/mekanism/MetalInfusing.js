@@ -6,4 +6,10 @@ ServerEvents.recipes((event) => {
 		"ae2:charged_certus_quartz_crystal",
 		"cmi:etrium"
 	)
+
+	mekanism.metallurgic_infusing(
+		"cmi:silicon_carbide",
+		"ae2:silicon",
+		"mekanism:carbon"
+	)
 })
