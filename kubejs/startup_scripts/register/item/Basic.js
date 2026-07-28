@@ -418,7 +418,8 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("sodium_reducing_agent")
 
 	// 恩特罗合金
-	addMaterial("entro_alloy")
+	addItem("entro_alloy")
+		.texture("expatternprovider:item/entro_ingot")
 
 	// 恩特罗合金晶圆
 	addMaterial("entro_alloy_wafer")

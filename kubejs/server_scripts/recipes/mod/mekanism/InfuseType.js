@@ -13,4 +13,9 @@ ServerEvents.recipes((event) => {
 		"cmi:infuse_osmium",
 		"cmi:infuse_osmium"
 	)
+
+	mekanism.infusion_conversion(
+		"advanced_ae:quantum_infused_dust",
+		"cmi:infuse_quantum"
+	)
 })
