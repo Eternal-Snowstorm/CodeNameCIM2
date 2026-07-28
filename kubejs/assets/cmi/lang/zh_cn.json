@@ -63,5 +63,17 @@
 	"cmi.tooltip.storageupgrade.desc.fluid.additive": "使该容器的流体存储量增加 %s 倍",
 	"cmi.tooltip.storageupgrade.desc.range.additive": "将控制器的作用半径延长 %s 格",
 	"block.cmi.ae2.sky_stone_chest.mysterious_cube": "压印模板存储箱",
-	"gui.cmi.electrolyzer.need_graphite_electrode": "需要石墨电极!"
+	"gui.cmi.electrolyzer.need_graphite_electrode": "需要石墨电极!",
+	"tooltip.electronic_blast_furnace.-1": "一个集大成的多方块机器",
+	"tooltip.electronic_blast_furnace.0": "同时_代理_着以下的_配方类型_:",
+	"tooltip.electronic_blast_furnace.1": "拥有_16_个并行, 可以同时处理_16_个配方",
+	"tooltip.electronic_blast_furnace.2": "允许使用_铜_, _琥珀金_, _高压线_三级线圈",
+	"tooltip.electronic_blast_furnace.3": "- 使用_铜线圈_的配方处理速度为原速的_0.25_倍",
+	"tooltip.electronic_blast_furnace.4": "- 使用_琥珀金线圈_的配方处理速度为原速的_1.5_倍",
+	"tooltip.electronic_blast_furnace.5": "- 使用_高压电线圈_的配方处理速度为原速的_4_倍",
+	"tooltip.electronic_blast_furnace.type.0": "- _电弧炉_",
+	"tooltip.electronic_blast_furnace.type.1": "- _熔炼_",
+	"tooltip.electronic_blast_furnace.type.2": "- _合金_",
+	"tooltip.electronic_blast_furnace.type.3": "- _车窑_",
+	"tooltip.electronic_blast_furnace.type.4": "- _旋转窑_"
 }
