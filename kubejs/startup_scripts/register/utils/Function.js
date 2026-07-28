@@ -6,13 +6,13 @@
  * @returns 
  */
 function setFluidBucketModel(name) {
-	let json = new JsonWapper()
+	let json = new JsonWrapper()
 
 	json.addStringProperty("parent", "forge:item/bucket_drip")
 	json.addStringProperty("loader", "forge:fluid_container")
 	json.addStringProperty("fluid", `${Cmi.MODID}:${name}`)
 
-	return json
+	return json.toJson()
 }
 
 /**

@@ -9,7 +9,7 @@ StartupEvents.registry("fluid", (event) => {
 
 		builder.flowingTexture(Cmi.loadResource(`fluid/${name}/flow`))
 		builder.stillTexture(Cmi.loadResource(`fluid/${name}/still`))
-		builder.renderType("translucent")
+		builder.translucent()
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
 		return builder
@@ -28,7 +28,6 @@ StartupEvents.registry("fluid", (event) => {
 		builder.bucketColor(color)
 		builder.flowingTexture(Cmi.loadResource("fluid/organic/flow"))
 		builder.stillTexture(Cmi.loadResource("fluid/organic/still"))
-		builder.renderType("translucent")
 		builder.translucent()
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
