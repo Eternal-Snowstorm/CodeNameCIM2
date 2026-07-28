@@ -17,10 +17,10 @@ ServerEvents.highPriorityData((event) => {
 	}
 	/**
 	 * 
-	 * @param {string} dim 
+	 * @param {string} dimension 
 	 */
-	SpecData.prototype.dimension = function (dim) {
-		this.dimensionName = dim
+	SpecData.prototype.dimension = function (dimension) {
+		this.dimensionName = dimension
 		return this
 	}
 	/**
