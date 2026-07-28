@@ -9,7 +9,7 @@ MBDMachineEvents.onBeforeRecipeWorking(($) => {
 	let event = $.getEvent()
 	let machine = event.getMachine()
 
-	if (name !== "cmi:electrolyzer") {
+	if (!MBDUtils.isMachine(machine, "cmi:electrolyzer")) {
 		return
 	}
 
