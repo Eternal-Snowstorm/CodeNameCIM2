@@ -43,4 +43,17 @@ LootJS.modifiers((event) => {
 				}
 			})
 		)
+
+	event.addBlockLootModifier("cmi:galena_compressed_iron_ore")
+		.removeLoot(Ingredient.all)
+		.addWeightedLoot([
+			LootEntry.of("cmi:refined_iron_bloom")
+				.withWeight(25)
+				.applyOreBonus("minecraft:fortune")
+				.simulateExplosionDecay(),
+			LootEntry.of("tconstruct:steel_shard")
+				.withWeight(75)
+				.applyOreBonus("minecraft:fortune")
+				.simulateExplosionDecay()
+		])
 })

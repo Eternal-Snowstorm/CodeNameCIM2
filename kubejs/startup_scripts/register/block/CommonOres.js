@@ -292,7 +292,7 @@ function OreBlock(name, level, hardness) {
 /**
  * 
  * @param {MaterialColor} color 
- * @param {number} id 
+ * @param {number} id Min: 1, Max: 12
  * @returns 
  */
 OreBlock.prototype.appearance = function (color, id) {
@@ -430,3 +430,8 @@ new OreBlock("titanium", "diamond", 20)
 new OreBlock("ardite", "iron", 10)
 	.appearance(0xECB200, 7)
 	.nether()
+
+// 加压铁矿石(钢)
+new OreBlock("compressed_iron", "diamond", 15)
+	.appearance(0x5C616F, 8)
+	.galena()
