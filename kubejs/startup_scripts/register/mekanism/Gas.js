@@ -19,7 +19,7 @@ StartupEvents.registry("mekanism:gas", (event) => {
 	addMekanismGas("overhot_mercury_mixture", 0xD2A9FF)
 	addMekanismGas("helium_3", 0xFFB0BA)
 	addMekanismGas("silicon_gas_modulator", 0x002C55)
-	addMekanismGas("fissile_uranium_compound", 0x008000)
+	addMekanismGas("fissile_uranium_compound", 0x008000) 
 	addMekanismGas("high_energy_fission_fuel", 0x00294E)
 	addMekanismGas("neutralized_neodymium_slurry", 0x6549B0)
 	addMekanismGas("titanium_oxide", 0x60459E)
