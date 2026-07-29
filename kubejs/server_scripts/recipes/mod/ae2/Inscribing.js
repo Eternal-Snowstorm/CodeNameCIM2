@@ -49,6 +49,52 @@ ServerEvents.recipes((event) => {
 		return event.custom(this.recipe)
 	}
 
+	// 名称压印模板
+	new InscriberRecipe("ae2:name_press")
+		.top("minecraft:name_tag")
+		.middle("#forge:plates/iron")
+		.press()
+
+	new InscriberRecipe("ae2:name_press")
+		.top("ae2:name_press")
+		.middle("#forge:plates/iron")
+		.inscribe()
+
+	// 其他压印模板	
+	new InscriberRecipe("ae2:silicon_press")
+		.top("ae2:silicon_press")
+		.middle("#forge:plates/iron")
+		.inscribe()
+
+	new InscriberRecipe("ae2:logic_processor_press")
+		.top("ae2:logic_processor_press")
+		.middle("#forge:plates/iron")
+		.inscribe()
+		.id("ae2:inscriber/logic_processor_press")
+
+	new InscriberRecipe("ae2:calculation_processor_press")
+		.top("ae2:calculation_processor_press")
+		.middle("#forge:plates/iron")
+		.inscribe()
+		.id("ae2:inscriber/calculation_processor_press")
+
+	new InscriberRecipe("ae2:engineering_processor_press")
+		.top("ae2:engineering_processor_press")
+		.middle("#forge:plates/iron")
+		.inscribe()
+		.id("ae2:inscriber/engineering_processor_press")
+
+	new InscriberRecipe("cmi:concurrent_processor_press")
+		.top("cmi:concurrent_processor_press")
+		.middle("#forge:plates/iron")
+		.inscribe()
+
+	new InscriberRecipe("advanced_ae:quantum_processor_press")
+		.top("advanced_ae:quantum_processor_press")
+		.middle("#forge:plates/iron")
+		.inscribe()
+		.id("advanced_ae:quantum_processor_press_from_iron")
+
 	// 碳化硅板
 	new InscriberRecipe("cmi:silicon_carbide_plate")
 		.middle("cmi:silicon_carbide")
@@ -67,6 +113,14 @@ ServerEvents.recipes((event) => {
 		.middle("#forge:plates/iron")
 		.top("#forge:plates/zinc")
 		.press()
+
+	// 磁触点
+	new InscriberRecipe("cmi:magnetic_contact")
+		.bottom("cmi:piezoelectric_ceramic")
+		.middle("cmi:ferrit_core")
+		.top("cmi:composite_magnetic_conduction_plate")
+		.press()
+
 
 	// 控制芯片
 	new InscriberRecipe(Processor.CONTROL)

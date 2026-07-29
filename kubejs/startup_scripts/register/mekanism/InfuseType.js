@@ -7,6 +7,7 @@ StartupEvents.registry("mekanism:infuse_type", (event) => {
 	addMekanismInfuseType("chaotic_void", 0x790082)
 	addMekanismInfuseType("etrium", 0x32FFD4)
 	addMekanismInfuseType("cobalt_electrolyte", 0x00FF80)
+	addMekanismInfuseType("titanium_oxide", 0xE2B1E3)
 	addMekanismInfuseType("infuse_osmium", 0x72A9FF)
 	addMekanismInfuseType("infuse_quantum", 0x4A339F)
 })

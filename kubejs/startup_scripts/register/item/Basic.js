@@ -167,9 +167,6 @@ StartupEvents.registry("item", (event) => {
 	// 溴化阻燃剂
 	addMaterial("brominated_flame_retardants")
 
-	// 阻燃塑料
-	addMaterial("flame_retardant_plastic")
-
 	// 冷却设备
 	addMaterial("nuke_cooler")
 
@@ -183,6 +180,9 @@ StartupEvents.registry("item", (event) => {
 
 	// 铁氧体磁芯	
 	addMaterial("ferrit_core")
+
+	// 磁触点
+	addMaterial("magnetic_contact")
 
 	// 黑曜石元件
 	addMaterial("obsidian_cell")
@@ -200,68 +200,23 @@ StartupEvents.registry("item", (event) => {
 
 	addMaterial("combined_spatial_component_128")
 
-	// 赤泥
-	addMaterial("red_mud")
-
-	// 氧化铝
-	addMaterial("aluminum_oxide")
-
-	// 半熔融锇
-	addMaterial("pure_semi_molten_osmium")
-
-	// 富集锇结晶
-	addMaterial("enriched_osmium_crystal")
-
-	// 锇晶圆
-	addMaterial("osmium_wafer")
-
 	// 碳纳米管
 	addMaterial("carbon_nanotube")
 
 	// 钛合金网
 	addMaterial("titanium_alloy_mesh")
 
-	// 活化石墨锭
-	addMaterial("activated_graphite_ingot")
-
 	// 活化石墨碎块
 	addMaterial("activated_graphite_chunk")
 
-	// 复合钨钢板
-	addMaterial("composite_tungsten_steel_plate")
-
-	// 强化复合板
-	addMaterial("reinforced_composite_plate")
-
 	// 未成形的碳纳米管
 	addMaterial("incomplete_carbon_nanotube")
-
-	// 纯净蓝宝石化合物
-	addMaterial("pure_sapphire_compound")
-
-	// 粗钛混合物
-	addMaterial("raw_titanium_mixture")
 
 	// 强化复合齿轮
 	addMaterial("reinforced_composite_gear")
 
 	// 钛合金线圈
 	addMaterial("titanium_alloy_coil")
-
-	// 热解月岩残渣
-	addMaterial("pyrolyzed_moon_rock_residue")
-
-	// 富集硅
-	addMaterial("enriched_silicon")
-
-	// 硅晶圆
-	addMaterial("silicon_wafer")
-
-	// 石墨烯
-	addMaterial("graphene")
-
-	// 纳米复合板
-	addMaterial("nano_composite_plate")
 
 	// 精炼核废料
 	addMaterial("refined_nuke_waste")
@@ -272,8 +227,17 @@ StartupEvents.registry("item", (event) => {
 	// 酸洗辐射岩
 	addMaterial("acid_washed_radiation_rock")
 
-	// 致密氧化物薄膜
-	addMaterial("dense_oxide_film")
+	// 锇晶圆
+	addMaterial("osmium_wafer")
+
+	// 硅晶圆
+	addMaterial("silicon_wafer")
+
+	// 锗晶圆
+	addMaterial("germanium_wafer")
+
+	// 恩特罗合金晶圆
+	addMaterial("entro_alloy_wafer")
 
 	// 基础电子元件
 	addMaterial("basic_electronic_components")
@@ -287,102 +251,15 @@ StartupEvents.registry("item", (event) => {
 	// 终极电子元件
 	addMaterial("ultimate_electronic_components")
 
-	// 钴电解质
-	addMaterial("cobalt_electrolyte")
-
-	// 聚合催化合金
-	addMaterial("polymerization_catalytic_alloy")
-
-	// 乙烯聚合催化片
-	addMaterial("ethylene_polymerization_catalytic_plate")
-
-	// 沉积催化合金
-	addMaterial("deposition_catalytic_alloy")
-
-	// 碳沉积催化片
-	addMaterial("carbon_deposition_catalytic_plate")
-
-	// 碳聚合催化片
-	addMaterial("carbon_polymerization_catalytic_plate")
-
-	// 钨混合物
-	addMaterial("tungsten_mixture")
-
 	// 待组装钨钢板
 	addMaterial("incomplete_tungsten_steel_plate")
-
-	// 燕雀石
-	addMaterial("machalite")
-
-	// 燕雀石粉
-	addMaterial("machalite_dust")
 
 	// 燃料棒
 	addMaterial("filled_fuel_rod")
 	addMaterial("empty_fuel_rod")
 
-	// 灌注锇
-	addMaterial("infuse_osmium")
-
 	// 待组装复合板
 	addMaterial("incomplete_reinforced_composite_plate")
-
-	// 磁触点
-	addMaterial("magnetic_contact")
-
-	// 压电陶瓷
-	addMaterial("piezoelectric_ceramic")
-
-	// 电离红色沙尘
-	addMaterial("ionized_red_dust")
-
-	// 方铅岩粉
-	addMaterial("galena_dust")
-
-	// 磁性源质
-	addMaterial("magnetic_source")
-
-	// 磁性沉淀
-	addMaterial("magnetic_sediment")
-
-	// 耐火材料粉
-	addMaterial("refractory_material_powder")
-
-	// 锗混合物
-	addMaterial("germanium_mixture")
-
-	// 富集锗铁混合物
-	addMaterial("enriched_germanium_iron_mixture")
-
-	// 辉龙石
-	addMaterial("dragonite")
-
-	// 辉龙石粉
-	addMaterial("dragonite_dust")
-
-	// 锗晶体
-	addMaterial("germanium_crystal")
-
-	// 锗晶圆
-	addMaterial("germanium_wafer")
-
-	// 碱性钕沉淀
-	addMaterial("alkaline_neodymium_sediment")
-
-	// 钕混合物
-	addMaterial("neodymium_mixture")
-
-	// 复合磁导板
-	addMaterial("composite_magnetic_conduction_plate")
-
-	// 混沌虚空粉
-	addMaterial("chaotic_void_dust")
-
-	// 酸洗水星岩
-	addMaterial("acid_washed_mercury_rock")
-
-	// 精晶原石
-	addMaterial("spiritcore_ore")
 
 	// 电离恩特罗水晶
 	addMaterial("ionized_entro_crystal")
@@ -390,39 +267,9 @@ StartupEvents.registry("item", (event) => {
 	// 晶态熔融恩特罗水晶
 	addMaterial("crystal_molten_entro")
 
-	// 埃特恩混合物
-	addMaterial("etrium_mixture")
-
-	// 纯净晶源
-	addMaterial("pure_source")
-
-	// 恩特罗化合物
-	addMaterial("entro_compound")
-
-	// 恩特罗氧化剂
-	addMaterial("entro_oxidizer")
-
-	// 还原恩特罗水晶
-	addMaterial("reduced_entro_crystal")
-
-	// 过氧化恩特罗水晶
-	addMaterial("entro_preoxide_crystal")
-
-	// 过氧化恩特罗粉
-	addMaterial("entro_peroxide_dust")
-
-	// 还原恩特罗粉
-	addMaterial("reduced_entro_dust")
-
-	// 钠还原剂
-	addMaterial("sodium_reducing_agent")
-
 	// 恩特罗合金
 	addItem("entro_alloy")
 		.texture("expatternprovider:item/entro_ingot")
-
-	// 恩特罗合金晶圆
-	addMaterial("entro_alloy_wafer")
 
 	// 钚电离结晶
 	addMaterial("plutonium_ionized_crystal")
