@@ -10,6 +10,5 @@ StartupEvents.registry("mekanism:infuse_type", (event) => {
 	addMekanismInfuseType("dense_oxide", 0x2E0A0A)
 	addMekanismInfuseType("cobalt_electrolyte", 0x00FF80)
 	addMekanismInfuseType("infuse_osmium", 0x72A9FF)
-	addMekanismInfuseType("chaos_void", 0x0E0043)
 	addMekanismInfuseType("infuse_quantum", 0x4A339F)
 })

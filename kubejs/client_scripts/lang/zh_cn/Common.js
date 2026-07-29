@@ -85,6 +85,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMekanismLang("silicon_gas_modulator", "硅基气相调节剂")
 	addMekanismLang("fissile_uranium_compound", "裂变铀化合物")
 	addMekanismLang("chaotic_void", "混沌虚空")
+	addMekanismLang("infuse_osmium", "灌注锇")
+	addMekanismLang("infuse_quantum", "灌注量子")
 	addMekanismLang("etrium", "埃忒恩")
 	addMekanismLang("helium", "氦")
 	addMekanismLang("dense_oxide", "致密氧化物")

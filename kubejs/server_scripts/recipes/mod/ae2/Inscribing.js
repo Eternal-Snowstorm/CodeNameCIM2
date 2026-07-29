@@ -138,6 +138,27 @@ ServerEvents.recipes((event) => {
 	new InscriberRecipe("cmi:basic_electronic_components")
 		.top("cmi:enriched_alloy")
 		.middle("cmi:osmium_wafer")
-		.bottom("cmi:ferrit_core")
+		.bottom("#forge:plates/copper")
+		.press()
+
+	// 高级电子元件
+	new InscriberRecipe("cmi:advanced_electronic_components")
+		.top("mekanism:alloy_infused")
+		.middle("cmi:silicon_wafer")
+		.bottom("#forge:plates/copper")
+		.press()
+
+	// 精英电子元件
+	new InscriberRecipe("cmi:elite_electronic_components")
+		.top("mekanism:alloy_reinforced")
+		.middle("cmi:germanium_wafer")
+		.bottom("#forge:plates/copper")
+		.press()
+
+	// 终极电子元件
+	new InscriberRecipe("cmi:ultimate_electronic_components")
+		.top("mekanism:alloy_atomic")
+		.middle("cmi:entro_alloy_wafer")
+		.bottom("#forge:plates/copper")
 		.press()
 })
