@@ -17,4 +17,9 @@ ServerEvents.recipes((event) => {
 		"alexscaves:toxic_paste",
 		MekType.Gas.of("cmi:refined_nuke_waste", 200)
 	)
+
+	mekanism.oxidizing(
+		"cmi:filled_fuel_rod",
+		MekType.Gas.of("mekanism:fissile_fuel", 2000)
+	).id("mekanism:processing/uranium/reprocessing/to_fuel")
 })

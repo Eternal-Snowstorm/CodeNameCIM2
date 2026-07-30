@@ -91,6 +91,9 @@ StartupEvents.registry("fluid", (event) => {
 	// 三硝基甲苯溶液
 	addColorFluid("fluid_nitroglycerine", 0xFFFBD3)
 
+	// 富铁粘液
+	addColorFluid("ferrouslime", 0x5b6463)
+
 	// 光合反应液
 	addColorFluid("photosyn_fluid", 0x00FA9A)
 

@@ -91,6 +91,9 @@ StartupEvents.registry("fluid", (event) => {
 	// 酸性溶液
 	addColorFluid("acidity_solution", 0xFF00EE)
 
+	// 抗辐射精炼液
+	addColorFluid("radiation_resistant_creosote", 0x8b2929)
+
 	// 熔融钕混合物
 	addColorFluid("molten_neodymium_mixture", 0xC800FF)
 
@@ -100,10 +103,7 @@ StartupEvents.registry("fluid", (event) => {
 	// 熔融电离恩特罗
 	addColorFluid("molten_ionized_entro", 0x009556)
 
-	// 富铁粘液
-	addColorFluid("rich_iron_slime", 0x4B9492)
-
-	// 富铁粘液
+	// 复合磁流体
 	addColorFluid("composite_magnetic_fluid", 0x6549B0)
 
 	// 液晶态恩特罗

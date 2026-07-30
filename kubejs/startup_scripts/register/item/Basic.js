@@ -218,15 +218,6 @@ StartupEvents.registry("item", (event) => {
 	// 钛合金线圈
 	addMaterial("titanium_alloy_coil")
 
-	// 精炼核废料
-	addMaterial("refined_nuke_waste")
-
-	// 精炼辐射岩
-	addMaterial("refined_radiation_rock")
-
-	// 酸洗辐射岩
-	addMaterial("acid_washed_radiation_rock")
-
 	// 锇晶圆
 	addMaterial("osmium_wafer")
 
@@ -254,9 +245,30 @@ StartupEvents.registry("item", (event) => {
 	// 待组装钨钢板
 	addMaterial("incomplete_tungsten_steel_plate")
 
+	// 精炼核废料
+	addMaterial("refined_nuke_waste")
+
+	// 精炼辐射岩
+	addMaterial("refined_radiation_rock")
+
+	// 酸洗辐射岩
+	addMaterial("acid_washed_radiation_rock")
+
 	// 燃料棒
 	addMaterial("filled_fuel_rod")
 	addMaterial("empty_fuel_rod")
+
+	// 钚电离结晶
+	addMaterial("plutonium_ionized_crystal")
+
+	// 放射性沉淀
+	addMaterial("radioactive_sediment")
+
+	// 粗钋粉
+	addMaterial("raw_polonium_dust")
+
+	// 还原钋
+	addMaterial("reduced_polonium")
 
 	// 待组装复合板
 	addMaterial("incomplete_reinforced_composite_plate")
@@ -270,18 +282,6 @@ StartupEvents.registry("item", (event) => {
 	// 恩特罗合金
 	addItem("entro_alloy")
 		.texture("expatternprovider:item/entro_ingot")
-
-	// 钚电离结晶
-	addMaterial("plutonium_ionized_crystal")
-
-	// 放射性沉淀
-	addMaterial("radioactive_sediment")
-
-	// 粗钋粉
-	addMaterial("raw_polonium_dust")
-
-	// 还原钋
-	addMaterial("reduced_polonium")
 
 	// 恩特罗系列
 	addItem("entro_crystal")

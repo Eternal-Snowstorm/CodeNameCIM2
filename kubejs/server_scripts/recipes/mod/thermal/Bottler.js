@@ -12,4 +12,10 @@ ServerEvents.recipes((event) => {
 		"cmi:empty_fuel_rod",
 		Fluid.of("mekanism:uranium_hexafluoride", 100)
 	])
+
+	// 酸洗辐射岩
+	thermal.bottler("cmi:acid_washed_radiation_rock", [
+		"cmi:refined_radiation_rock",
+		Fluid.of("mekanism:sulfuric_acid", 100)
+	])
 })
