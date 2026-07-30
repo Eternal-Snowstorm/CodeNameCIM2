@@ -1,1 +1,1 @@
-resourcePacks:["vanilla","mod_resources","Pretty X Smart Pipez.zip","Cu Again.zip","file/cu_again_for_fluidlogistics","OreUI For Everyone","Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip","PackResource.zip"]
+resourcePacks:["vanilla","serilum_mod_translations","mod_resources","Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip","file/Cu Again.zip","file/CreateSophisticatedBackpacks.zip","file/Pretty X Smart Pipez.zip","file/Updated_Engineering_1.20.1_v1.8.zip","fluidlogistics:cu_again_for_fluidlogistics","BetterIE.zip","New AE2.zip","OreUI For Everyone.zip","PackResource.zip"]

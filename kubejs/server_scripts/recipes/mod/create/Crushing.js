@@ -61,4 +61,11 @@ ServerEvents.recipes((event) => {
 		Item.of("create:zinc_nugget"),
 		Item.of("create:zinc_nugget").withChance(0.5),
 	], "#create:copycats")
+
+	// 黑曜石元件
+	create.crushing([
+		"ae2:item_cell_housing",
+		"ae2:cell_component_16k",
+		"minecraft:obsidian"
+	], "cmi:obsidian_cell")
 })

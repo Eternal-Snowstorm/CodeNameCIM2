@@ -9,6 +9,12 @@ const COILS = {
 	HV: Block.getBlock("immersiveengineering:coil_hv")
 }
 
+const COIL_RATIO = Object.freeze({
+	LV: 4,
+	MV: 1.5,
+	HV: 0.25
+})
+
 MBDMachineEvents.onStructureFormed(($) => {
 	let event = $.getEvent()
 
@@ -17,9 +23,8 @@ MBDMachineEvents.onStructureFormed(($) => {
 	 */
 	let machine = event.getMachine()
 	let id = machine.getDefinition().id()
-	let name = id.toString()
 
-	if (name !== "cmi:electronic_blast_furnace") {
+	if (!MBDUtils.isMachine(machine, "cmi:electronic_blast_furnace")) {
 		return
 	}
 
@@ -42,9 +47,8 @@ MBDMachineEvents.onRecipeWorking(($) => {
 	 */
 	let machine = event.getMachine()
 	let id = machine.getDefinition().id()
-	let name = id.toString()
 
-	if (name !== "cmi:electronic_blast_furnace") {
+	if (!MBDUtils.isMachine(machine, "cmi:electronic_blast_furnace")) {
 		return
 	}
 
@@ -133,18 +137,15 @@ function levelEfficiencyImprovement(machine) {
 
 	switch (getCoilLevel(machine)) {
 		case 0:
-			// 铜线圈处理时间 * 4
-			recipe.setDuration(duration * 4)
+			recipe.setDuration(duration * COIL_RATIO.LV)
 			break
 
 		case 1:
-			// 琥珀金线圈配方处理时间 * 1.5
-			recipe.setDuration(duration * 1.5)
+			recipe.setDuration(duration * COIL_RATIO.MV)
 			break
 
 		case 2:
-			// 钢线圈处理时间 / 4
-			recipe.setDuration(duration / 4)
+			recipe.setDuration(duration * COIL_RATIO.HV)
 			break
 	}
 }
@@ -169,27 +170,3 @@ function getRealState(level, pos) {
 
 	return state
 }
-
-ServerEvents.recipes((event) => {
-	let { cmi } = event.getRecipes()
-
-	cmi.electronic_blast_furnace()
-		.machineLevel(2)
-		.inputItems("#forge:raw_materials/tungsten")
-		.outputItems("cmi:tungsten_ingot")
-
-	cmi.electronic_blast_furnace()
-		.machineLevel(1)
-		.inputItems("#forge:raw_materials/nickel")
-		.outputItems("thermal:nickel_ingot")
-
-	cmi.electronic_blast_furnace()
-		.machineLevel(0)
-		.inputItems("#forge:raw_materials/iron")
-		.outputItems("minecraft:iron_ingot")
-
-	cmi.electronic_blast_furnace()
-		.machineLevel(0)
-		.inputItems("#forge:raw_materials/copper")
-		.outputItems("minecraft:copper_ingot")
-})

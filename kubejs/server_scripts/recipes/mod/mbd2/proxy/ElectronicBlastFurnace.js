@@ -19,7 +19,7 @@ function proxyArcFurnace(event) {
 	event.forEachRecipe({
 		type: "immersiveengineering:arc_furnace"
 	}, (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
 
 		let builder = cmi.electronic_blast_furnace()
@@ -34,9 +34,10 @@ function proxyArcFurnace(event) {
 
 		builder.duration(getInt(json, "time", 200))
 			.perTick((recipe) => {
-				recipe.inputFE(
-					Math.ceil(getInt(json, "energy", 0) / getInt(json, "time", 1))
-				)
+				let energy = getInt(json, "energy", 0)
+				let time = getInt(json, "time", 1)
+
+				recipe.inputFE(Math.ceil(energy / time))
 			})
 			.id(`${id}_mbd2_proxy`)
 	})
@@ -50,12 +51,13 @@ function proxyMelting(event) {
 	let { cmi } = event.getRecipes()
 
 	forEachOriginalRecipe(event, "tconstruct:melting", (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
+		let ingredientJson = json.get("ingredient")
 
 		let builder = cmi.electronic_blast_furnace()
 
-		addIngredient(builder, json.get("ingredient"))
+		addIngredient(builder, ingredientJson, id)
 
 		addFluidResult(builder, json.get("result"))
 
@@ -78,7 +80,7 @@ function proxyAlloy(event) {
 	event.forEachRecipe({
 		type: "tconstruct:alloy"
 	}, (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
 
 		let builder = cmi.electronic_blast_furnace()
@@ -103,7 +105,7 @@ function proxyCarKiln(event) {
 	event.forEachRecipe({
 		type: "immersiveindustry:car_kiln"
 	}, (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
 
 		let builder = cmi.electronic_blast_furnace()
@@ -143,7 +145,7 @@ function proxyRotaryKiln(event) {
 	event.forEachRecipe({
 		type: "immersiveindustry:rotary_kiln"
 	}, (recipe) => {
-		let json = recipe.json
+		let json = sourceJsonOf(recipe)
 		let id = recipe.getId()
 
 		let builder = cmi.electronic_blast_furnace()
@@ -157,21 +159,50 @@ function proxyRotaryKiln(event) {
 		}
 
 		builder.duration(getInt(json, "time", 200))
-			.perTick(recipe => {
+			.perTick((recipe) => {
 				recipe.inputFE(getInt(json, "tickEnergy", 0))
 			})
 			.id(`${id}_mbd2_proxy`)
 	})
 }
 
+/**
+ * 
+ * @param {Internal.JsonObject_} json
+ * @param {string} key
+ * @param {number} fallback
+ * @returns 
+ */
 function getInt(json, key, fallback) {
 	return json.has(key) ? json.get(key).getAsInt() : fallback
 }
 
+/**
+ * 
+ * @param {Internal.JsonObject_} json
+ * @param {string} key
+ * @param {number} fallback
+ * @returns 
+ */
 function getFloat(json, key, fallback) {
 	return json.has(key) ? json.get(key).getAsFloat() : fallback
 }
 
+/**
+ * 
+ * @param {Internal.RecipeJS_} recipe 
+ * @returns 
+ */
+function sourceJsonOf(recipe) {
+	return recipe.originalJson == null ? recipe.json : recipe.originalJson
+}
+
+/**
+ * 
+ * @param {Internal.RecipesEventJS_} event
+ * @param {string} type
+ * @param {Internal.Consumer_<Internal.RecipeJS_} consumer
+ */
 function forEachOriginalRecipe(event, type, consumer) {
 	for (let recipe of event.originalRecipes.values()) {
 		if (String(recipe.getType()) === type) {
@@ -180,20 +211,22 @@ function forEachOriginalRecipe(event, type, consumer) {
 	}
 }
 
+/**
+ * 
+ * @param {string} id
+ * @param {number} count
+ * @returns 
+ */
 function stackString(id, count) {
-	return `${count}x ${id}`
+	return count > 1 ? `${count}x ${id}` : id
 }
 
-function stackIdOf(stack) {
-	return String(stack).replace(/^\d+x /, "")
-}
-
-function stackCountOf(stack) {
-	let match = String(stack).match(/^(\d+)x /)
-
-	return match == null ? 1 : Number(match[1])
-}
-
+/**
+ * 
+ * @param {Internal.JsonElement_} entry
+ * @param {number} countMultiplier
+ * @returns 
+ */
 function itemIngredientOf(entry, countMultiplier) {
 	if (entry == null) {
 		return null
@@ -226,6 +259,10 @@ function itemIngredientOf(entry, countMultiplier) {
 		return itemIngredientOf(json.get("base_ingredient"), count)
 	}
 
+	if (json.has("ingredient")) {
+		return itemIngredientOf(json.get("ingredient"), count)
+	}
+
 	if (json.has("match")) {
 		return itemIngredientOf(json.get("match"), count)
 	}
@@ -238,17 +275,36 @@ function itemIngredientOf(entry, countMultiplier) {
 		return itemIngredientOf(json.get("ingredients"), count)
 	}
 
+	if (json.has("input")) {
+		return itemIngredientOf(json.get("input"), count)
+	}
+
+	if (json.has("output")) {
+		return itemIngredientOf(json.get("output"), count)
+	}
+
+	if (json.has("value")) {
+		return itemIngredientOf(json.get("value"), count)
+	}
+
 	if (json.has("item")) {
 		return stackString(json.get("item").getAsString(), count)
 	}
 
 	if (json.has("tag")) {
-		return stackString(`#${json.get("tag").getAsString()}`, count)
+		let tag = json.get("tag").getAsString()
+
+		return stackString(`#${tag}`, count)
 	}
 
 	return null
 }
 
+/**
+ * 
+ * @param {Internal.JsonElement_} entry 
+ * @returns 
+ */
 function inputFluidOf(entry) {
 	if (entry == null || !entry.isJsonObject()) {
 		return null
@@ -261,23 +317,26 @@ function inputFluidOf(entry) {
 		return Fluid.of(json.get("fluid").getAsString(), amount)
 	}
 
-	if (json.has("tag")) {
-		return $MBDFluidIngredient.ofTagId(
-			json.get("tag").getAsString(),
-			amount
-		)
+	if (json.has("tag") && json.has("amount")) {
+		let tag = json.get("tag").getAsString()
+
+		return $MBDFluidIngredient.ofTagId(tag, amount)
 	}
 
 	if (json.has("fluidTag")) {
-		return $MBDFluidIngredient.ofTagId(
-			json.get("fluidTag").getAsString(),
-			amount
-		)
+		let fluidTag = json.get("fluidTag").getAsString()
+
+		return $MBDFluidIngredient.ofTagId(fluidTag, amount)
 	}
 
 	return null
 }
 
+/**
+ * 
+ * @param {Internal.JsonElement_} entry 
+ * @returns 
+ */
 function outputFluidOf(entry) {
 	if (entry == null || !entry.isJsonObject()) {
 		return null
@@ -290,16 +349,21 @@ function outputFluidOf(entry) {
 		return Fluid.of(json.get("fluid").getAsString(), amount)
 	}
 
-	if (json.has("tag")) {
-		return $MBDFluidIngredient.ofTagId(
-			json.get("tag").getAsString(),
-			amount
-		)
+	if (json.has("tag") && json.has("amount")) {
+		let tag = json.get("tag").getAsString()
+
+		return $MBDFluidIngredient.ofTagId(tag, amount)
 	}
 
 	return null
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder 
+ * @param {Internal.JsonElement_} entry 
+ * @returns 
+ */
 function addIngredient(builder, entry) {
 	if (entry == null) {
 		return
@@ -318,25 +382,30 @@ function addIngredient(builder, entry) {
 		return
 	}
 
-	// 一个槽，可选多个
 	if (Array.isArray(ingredient)) {
-		builder.inputItems(
-			InputItem.of(Ingredient.of(ingredient.map(stackIdOf)))
-				.withCount(stackCountOf(ingredient[0]))
-		)
+		builder.inputItems([ingredient])
 		return
 	}
 
-	// 普通单输入
 	builder.inputItems(ingredient)
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonElement_} entry
+ */
 function addIngredients(builder, ingredients) {
 	for (let ingredient of ingredients) {
 		addIngredient(builder, ingredient)
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder 
+ * @param {Internal.JsonElement_} entry 
+ */
 function addFluidIngredient(builder, entry) {
 	let fluid = inputFluidOf(entry)
 
@@ -345,12 +414,23 @@ function addFluidIngredient(builder, entry) {
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonArray_} ingredients
+ */
 function addFluidIngredients(builder, ingredients) {
 	for (let entry of ingredients) {
 		addFluidIngredient(builder, entry)
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonElement_} entry
+ * @returns 
+ */
 function addResult(builder, entry) {
 	let fluid = outputFluidOf(entry)
 
@@ -380,12 +460,22 @@ function addResult(builder, entry) {
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonArray_} results
+ */
 function addResults(builder, results) {
 	for (let entry of results) {
 		addResult(builder, entry)
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonElement_} entry
+ */
 function addFluidResult(builder, entry) {
 	let fluid = outputFluidOf(entry)
 
@@ -394,9 +484,13 @@ function addFluidResult(builder, entry) {
 	}
 }
 
+/**
+ * 
+ * @param {Internal.MBDRecipeSchema$MBDRecipeJS_} builder
+ * @param {Internal.JsonArray_} results
+ */
 function addFluidResults(builder, results) {
 	for (let entry of results) {
 		addFluidResult(builder, entry)
 	}
 }
-

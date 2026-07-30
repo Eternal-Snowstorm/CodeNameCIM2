@@ -309,15 +309,6 @@ new Material("ardite", "iron")
 	.slurry()
 	.dirtySlurry()
 
-// 钕
-new Material("neodymium", "stone")
-	.color(0xEEEEEE, 0xFFFFFF)
-	.isMetal()
-	.ingot()
-	.dust()
-	.nugget()
-	.molten()
-
 // 钛合金
 new Material("titanium_alloy", "diamond")
 	.color(0x00FFFF, 0x008080)

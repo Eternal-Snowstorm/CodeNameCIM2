@@ -62,100 +62,210 @@ function simpleOreModel(background, ore) {
 const ORE_TYPE_CONFIG = {
 	stone: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	deepslate: {
 		sound: SoundType.DEEPSLATE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base + 1.5
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base + 1.5
 		}
 	},
 	nether: {
 		sound: SoundType.NETHER_ORE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	end: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	moon: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	mars: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	venus: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	mercury: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	glacio: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	galena: {
 		sound: SoundType.STONE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	},
 	radrock: {
 		sound: SoundType.DEEPSLATE,
-		hardness: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		hardness(base) {
 			return base
 		},
-		resistance: function (base) {
+		/**
+		 * 
+		 * @param {number} base 
+		 * @returns 
+		 */
+		resistance(base) {
 			return base
 		}
 	}
@@ -182,7 +292,7 @@ function OreBlock(name, level, hardness) {
 /**
  * 
  * @param {MaterialColor} color 
- * @param {string} id 
+ * @param {number} id Min: 1, Max: 12
  * @returns 
  */
 OreBlock.prototype.appearance = function (color, id) {
@@ -292,31 +402,36 @@ new OreBlock("platinum", "iron", 8)
 
 // 钒
 new OreBlock("vanadium", "iron", 5)
-	.appearance(0xFFFFFF, 1)
+	.appearance(0xFFFFFF, 3)
 	.nether()
 
 // 铬
 new OreBlock("chromium", "stone", 5)
-	.appearance(0xFFFFFF, 5)
+	.appearance(0xFFFFFF, 9)
 	.moon()
 
 // 钨
 new OreBlock("tungsten", "nether", 10)
-	.appearance(0x596C7E, 5)
+	.appearance(0x596C7E, 12)
 	.nether()
 
 // 埃忒恩
 new OreBlock("etrium", "diamond", 5)
-	.appearance(0x32FFD4, 1)
+	.appearance(0x32FFD4, 11)
 	.stone()
 	.deepslate()
 
 // 钛
 new OreBlock("titanium", "diamond", 20)
-	.appearance(0xE2B1E3, 1)
+	.appearance(0xE2B1E3, 8)
 	.galena()
 
 // 阿迪特
 new OreBlock("ardite", "iron", 10)
 	.appearance(0xECB200, 7)
 	.nether()
+
+// 加压铁矿石(钢)
+new OreBlock("compressed_iron", "diamond", 15)
+	.appearance(0x5C616F, 8)
+	.galena()

@@ -102,7 +102,7 @@ ServerEvents.recipes((event) => {
 
 	// 粗钛混合物
 	thermal.smelter("cmi:raw_titanium_mixture", [
-		"cmi:raw_titanium_dust",
+		"#mekanism:dirty_dusts/titanium",
 		"#forge:dusts/aluminum"
 	])
 

@@ -50,6 +50,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("titanium_alloy", "钛合金")
 	addMaterialLang("osmium", "锇")
 	addMaterialLang("fluorite", "氟石")
+	addMaterialLang("compressed_iron", "加压铁")
 
 	/**
 	 * 

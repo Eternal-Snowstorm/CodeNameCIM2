@@ -8,6 +8,27 @@ ServerEvents.recipes((event) => {
 		"cmi:cobalt_electrolyte"
 	)
 
+	// 灌注合金
+	mekanism.metallurgic_infusing(
+		"mekanism:alloy_infused",
+		"#forge:ingots/chromium",
+		MekType.InfuseType.of("mekanism:redstone", 20)
+	).id("mekanism:metallurgic_infusing/alloy/infused")
+
+	// 强化合金
+	mekanism.metallurgic_infusing(
+		"mekanism:alloy_reinforced",
+		"#forge:ingots/titanium",
+		MekType.InfuseType.of("cmi:etrium", 20)
+	).id("mekanism:metallurgic_infusing/alloy/reinforced")
+
+	// 原子合金
+	mekanism.metallurgic_infusing(
+		"mekanism:alloy_atomic",
+		"#forge:ingots/superconducting_mercury",
+		MekType.InfuseType.of("cmi:infuse_quantum", 20)
+	).id("mekanism:metallurgic_infusing/alloy/atomic")
+
 	// 碳纳米管
 	mekanism.metallurgic_infusing(
 		"cmi:carbon_nanotube",
@@ -15,10 +36,31 @@ ServerEvents.recipes((event) => {
 		"cmi:infuse_osmium"
 	)
 
-	// 月壤
+	// 恩特罗水晶
 	mekanism.metallurgic_infusing(
-		"mekanism:alloy_infused",
-		"#forge:ingots/chromium",
-		MekType.InfuseType.of("mekanism:redstone", 20)
-	).id("mekanism:metallurgic_infusing/alloy/infused")
+		"cmi:entro_crystal",
+		"ae2:charged_certus_quartz_crystal",
+		"cmi:etrium"
+	)
+
+	// 碳化硅
+	mekanism.metallurgic_infusing(
+		"cmi:silicon_carbide",
+		"ae2:silicon",
+		"mekanism:carbon"
+	)
+
+	// 破碎奇点
+	mekanism.metallurgic_infusing(
+		"advanced_ae:shattered_singularity",
+		"ae2:singularity",
+		"cmi:chaotic_void"
+	).id("advanced_ae:shatteredsingularity")
+
+	// 压电陶瓷
+	mekanism.metallurgic_infusing(
+		"cmi:piezoelectric_ceramic",
+		"cmi:magnetic_alloy",
+		"cmi:titanium_oxide"
+	)
 })

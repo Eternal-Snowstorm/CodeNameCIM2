@@ -11,7 +11,7 @@ function castingRecipes(event) {
 	let { createdieselgenerators } = event.getRecipes()
 
 	// 石板
-	createdieselgenerators.casting("cmi:stone_plate", [
+	return createdieselgenerators.casting("cmi:stone_plate", [
 		Fluid.of("minecraft:lava", 100)
 	]).mold(CDGMolds.CMI.PLATE)
 }
@@ -28,7 +28,7 @@ function moldRecipes(event) {
 	addMoldRecipe(CDGMolds.CDG.CHAIN)
 	addMoldRecipe(CDGMolds.CDG.LINES)
 
-	kubejs.shaped("createdieselgenerators:mold", [
+	return kubejs.shaped("createdieselgenerators:mold", [
 		"AA",
 		"AA"
 	], {

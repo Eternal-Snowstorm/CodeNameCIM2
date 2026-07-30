@@ -9,7 +9,7 @@ StartupEvents.registry("fluid", (event) => {
 
 		builder.flowingTexture(Cmi.loadResource(`fluid/${name}/flow`))
 		builder.stillTexture(Cmi.loadResource(`fluid/${name}/still`))
-		builder.renderType("translucent")
+		builder.translucent()
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
 		return builder
@@ -28,7 +28,6 @@ StartupEvents.registry("fluid", (event) => {
 		builder.bucketColor(color)
 		builder.flowingTexture(Cmi.loadResource("fluid/organic/flow"))
 		builder.stillTexture(Cmi.loadResource("fluid/organic/still"))
-		builder.renderType("translucent")
 		builder.translucent()
 		builder.bucketItem.modelJson(setFluidBucketModel(name))
 
@@ -91,6 +90,9 @@ StartupEvents.registry("fluid", (event) => {
 
 	// 三硝基甲苯溶液
 	addColorFluid("fluid_nitroglycerine", 0xFFFBD3)
+
+	// 富铁粘液
+	addColorFluid("ferrouslime", 0x5b6463)
 
 	// 光合反应液
 	addColorFluid("photosyn_fluid", 0x00FA9A)

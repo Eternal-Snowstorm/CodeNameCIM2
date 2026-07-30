@@ -1,7 +1,12 @@
 ServerEvents.blockLootTables((event) => {
 	let namespace = Cmi.MODID
-	let addOreLoots = {
-		common: function (ore) {
+
+	let AddOreLoots = {
+		/**
+		 * 
+		 * @param {string} ore 
+		 */
+		common(ore) {
 			// 定义前缀列表
 			let prefixes = [
 				"",
@@ -12,7 +17,9 @@ ServerEvents.blockLootTables((event) => {
 				"mars_",
 				"venus_",
 				"glacio_",
-				"mercury_"
+				"mercury_",
+				"galena_",
+				"radrock_"
 			]
 			prefixes.forEach((prefix) => {
 				let blockId = `${namespace}:${prefix + ore}_ore`
@@ -62,7 +69,12 @@ ServerEvents.blockLootTables((event) => {
 			})
 		},
 
-		alone: function (oreBlock, lootItem) {
+		/**
+		 * 
+		 * @param {Special.Block} oreBlock 
+		 * @param {Special.Item} lootItem 
+		 */
+		alone(oreBlock, lootItem) {
 			event.addBlock(oreBlock, (loot) => {
 				loot.addPool((pool) => {
 					pool.addEntry({
@@ -108,49 +120,30 @@ ServerEvents.blockLootTables((event) => {
 		}
 	}
 
-	// 辉银
-	addOreLoots.common("argentite")
 	// 银
-	addOreLoots.common("silver")
+	AddOreLoots.alone("cmi:moon_silver_ore", "thermal:raw_silver")
 	// 赛特斯石英
-	addOreLoots.alone("cmi:certus_quartz_ore", "ae2:certus_quartz_crystal")
-	// 赛特斯(深层)
-	addOreLoots.alone("cmi:deepslate_certus_quartz_ore", "ae2:certus_quartz_crystal")
+	AddOreLoots.alone("cmi:certus_quartz_ore", "ae2:certus_quartz_crystal")
+	AddOreLoots.alone("cmi:deepslate_certus_quartz_ore", "ae2:certus_quartz_crystal")
 	// 铬
-	addOreLoots.alone("cmi:moon_chromium_ore", "cmi:raw_chromium")
+	AddOreLoots.alone("cmi:moon_chromium_ore", "cmi:raw_chromium")
 	// 钴
-	addOreLoots.alone("cmi:moon_cobalt_ore", "tconstruct:raw_cobalt")
-	// 方铅
-	addOreLoots.common("galena")
-	// 红镍
-	addOreLoots.common("lateritic_nickel")
-	// 铱锇
-	addOreLoots.common("osmiridium")
+	AddOreLoots.alone("cmi:moon_cobalt_ore", "tconstruct:raw_cobalt")
 	// 铂
-	addOreLoots.alone("cmi:moon_platinum_ore", "cmi:raw_platinum")
-	// 黄铁
-	addOreLoots.common("pyrite")
+	AddOreLoots.alone("cmi:moon_platinum_ore", "cmi:raw_platinum")
 	// 石英
-	addOreLoots.alone("cmi:quartz_ore", "minecraft:quartz")
-	addOreLoots.alone("cmi:deepslate_quartz_ore", "minecraft:quartz")
-	// 闪锌
-	addOreLoots.common("sphalerite")
-	// 黄锡
-	addOreLoots.common("stannine")
+	AddOreLoots.alone("cmi:quartz_ore", "minecraft:quartz")
+	AddOreLoots.alone("cmi:deepslate_quartz_ore", "minecraft:quartz")
 	// 钨
-	addOreLoots.common("tungsten")
-	// 方铀
-	addOreLoots.common("uraninite")
+	AddOreLoots.common("tungsten")
 	// 钒
-	addOreLoots.alone("cmi:nether_vanadium_ore", "cmi:raw_vanadium")
-	// 磷酸铝
-	addOreLoots.common("variscite")
-	// 辉铜
-	addOreLoots.common("veridium")
+	AddOreLoots.alone("cmi:nether_vanadium_ore", "cmi:raw_vanadium")
 	// 埃忒恩
-	addOreLoots.common("etrium")
+	AddOreLoots.common("etrium")
 	// 阿迪特
-	addOreLoots.common("ardite")
+	AddOreLoots.common("ardite")
 	// 锇
-	addOreLoots.alone("cmi:nether_osmium_ore", "mekanism:raw_osmium")
+	AddOreLoots.alone("cmi:nether_osmium_ore", "mekanism:raw_osmium")
+	// 钛
+	AddOreLoots.common("titanium")
 })

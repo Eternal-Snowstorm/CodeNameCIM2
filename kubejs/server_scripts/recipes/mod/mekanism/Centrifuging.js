@@ -1,15 +1,21 @@
 ServerEvents.recipes((event) => {
 	let { mekanism } = event.getRecipes()
 
-	//
+	// 裂变铀化合物
 	mekanism.centrifuging(
-		"mekanism:uranium_hexafluoride",
-		"cmi:fissile_uranium_compound"
+		MekType.Gas.of("mekanism:uranium_hexafluoride", 1),
+		MekType.Gas.of("cmi:fissile_uranium_compound", 1)
 	).id("mekanism:processing/uranium/fissile_fuel")
 
 	// 氚
 	mekanism.centrifuging(
-		"cmi:refined_nuke_waste",
-		"mekanism:tritium"
+		MekType.Gas.of("cmi:refined_nuke_waste", 1),
+		MekType.Gas.of("mekanismgenerators:tritium", 1)
 	)
+
+	// 钚
+	mekanism.centrifuging(
+		MekType.Gas.of("cmi:plutonium__mixture", 1),
+		MekType.Gas.of("mekanism:plutonium", 1)
+	).id("mekanism:processing/lategame/plutonium")
 })

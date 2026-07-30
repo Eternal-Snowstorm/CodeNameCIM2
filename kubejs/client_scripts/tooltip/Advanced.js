@@ -1,5 +1,7 @@
-ItemEvents.tooltip((event) => {
+let $FontHelper$Palette =
+	Java.loadClass("net.createmod.catnip.lang.FontHelper$Palette")
 
+ItemEvents.tooltip((event) => {
 	// 制作组fumo
 	addAdvancedTooltip("cmi:re_construction")
 	addAdvancedTooltip("cmi:dkrkoo_weihe")
@@ -34,56 +36,129 @@ ItemEvents.tooltip((event) => {
 	}
 
 	// 末影构件
-	event.addAdvanced("cmi:ender_mechanism",
-		(item, advanced, tooltip) => {
-			if (item.hasNBT()) {
-				let x = item.getNbt().x
-				let y = item.getNbt().y
-				let z = item.getNbt().z
+	event.addAdvanced("cmi:ender_mechanism", (item, advanced, tooltip) => {
+		if (item.hasNBT()) {
+			let nbt = item.getNbt()
 
-				let dimId = item.getNbt().dim
+			let x = nbt.x
+			let y = nbt.y
+			let z = nbt.z
 
-				if (dimId) {
-					// 转成翻译键
-					let dimKey = "dimension." + dimId.replace(":", ".")
-					let dim = Component.translatable(dimKey)
-					let tranKey = Component.translatable(
-						"tooltip.cmi.stored_location",
-						dim, x, y, z
-					).red()
+			let dimId = nbt.dim
 
-					tooltip.add(tranKey)
-				}
+			if (dimId) {
+				// 转成翻译键
+				let dimKey = "dimension." + dimId.replace(":", ".")
+				let dim = Component.translatable(dimKey)
+				let tranKey = Component.translatable(
+					"tooltip.cmi.stored_location",
+					dim,
+					x,
+					y,
+					z
+				).red()
+
+				tooltip.add(tranKey)
 			}
-		})
-
-	// 打桩机
-	event.addAdvanced("cmi:impact_pile", (item, advanced, tooltip) => {
-		CreateLang.translate("tooltip.holdForDescription", Component.literal("Shift")
-			.withStyle(event.shift ? ChatFormatting.WHITE : ChatFormatting.GRAY))
-			.style(ChatFormatting.DARK_GRAY)
-			.addTo(tooltip)
-
-		if (event.isShift()) {
-			tooltip.addAll(TooltipHelper.cutStringTextComponent(
-				CmiLang.translateDirect("tooltip.impact_pile.behaviour1").getString(),
-				TooltipHelper.Palette.STANDARD_CREATE.primary(),
-				TooltipHelper.Palette.STANDARD_CREATE.highlight(),
-				0
-			))
-
-			tooltip.addAll(TooltipHelper.cutStringTextComponent(
-				CmiLang.translateDirect("tooltip.impact_pile.behaviour2").getString(),
-				TooltipHelper.Palette.STANDARD_CREATE.primary(),
-				TooltipHelper.Palette.STANDARD_CREATE.highlight(),
-				0
-			))
 		}
 	})
 
-	event.addAdvanced("moreburners:electric_burner",
-		(item, advanced, tooltip) => {
-			tooltip.add(Component.translatable("tooltip.moreburners.electric_burner.1"))
-			tooltip.add(Component.translatable("tooltip.moreburners.electric_burner.2"))
-		})
+	event.addAdvanced("moreburners:electric_burner", (item, advanced, tooltip) => {
+		tooltip.add(Component.translatable("tooltip.moreburners.electric_burner.1"))
+		tooltip.add(Component.translatable("tooltip.moreburners.electric_burner.2"))
+	})
+
+	event.addAdvanced("cmi:electronic_blast_furnace", (item, advanced, tooltip) => {
+		CmiLang.isShiftDown(tooltip)
+
+		if (event.isShift()) {
+			tooltip.add(Component.empty())
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.-1").getString(),
+				$FontHelper$Palette.STANDARD_CREATE
+			))
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.0").getString(),
+				$FontHelper$Palette.STANDARD_CREATE
+			))
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.type.0").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				1
+			))
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.type.1").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				1
+			))
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.type.2").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				1
+			))
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.type.3").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				1
+			))
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.type.4").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				1
+			))
+
+			tooltip.add(Component.empty())
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.1").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				0
+			))
+
+			tooltip.add(Component.empty())
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.2").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				0
+			))
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.3").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				1
+			))
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.4").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				1
+			))
+
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.5").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				1
+			))
+
+			tooltip.add(Component.empty())
+		}
+	})
 })

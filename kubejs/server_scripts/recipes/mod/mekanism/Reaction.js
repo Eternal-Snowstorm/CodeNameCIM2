@@ -32,4 +32,13 @@ ServerEvents.recipes((event) => {
 		Fluid.of("minecraft:water", 1000),
 		"alexscaves:polymer_plate",
 	).energyRequired(1000).duration(60)
+
+	// 再处理裂变碎片
+	mekanism.reaction(
+		"ae2:matter_ball",
+		MekType.Gas.of("mekanism:spent_nuclear_waste", 200),
+		Fluid.tag("tag", "forge:molten_lead", 90),
+		"4x mekanism:reprocessed_fissile_fragment"
+	).energyRequired(1000).duration(60)
+		.id("mekanism:processing/uranium/reprocessing/from_plutonium")
 })

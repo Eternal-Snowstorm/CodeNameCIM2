@@ -7,7 +7,7 @@ let LootUtils = {
 	 * @param {number} chance 
 	 * @returns 
 	 */
-	setChanceLoot: function (lootItem, chance) {
+	setChanceLoot(lootItem, chance) {
 		return LootEntry.of(lootItem)
 			.when((container) => {
 				container.randomChance(chance)
