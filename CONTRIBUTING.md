@@ -12,7 +12,7 @@
 
  - `CMI`大、中版本号码由主创`Re_Construction`进行规定
 
- - 版本号须在[**Global.js**](kubejs/startup_scripts/Global.js)的`global.modPackVersion`显示声明
+ - 版本号须在[**CmiGlobal**](https://github.com/Eternal-Snowstorm/CMICoreMod/blob/main/src/main/java/dev/celestiacraft/cmi/utils/CmiGlobal.java)的`modPackMainVersion`显示声明
 
 ## **第三条** GitHub仓库修改注释协议
 
@@ -242,7 +242,7 @@ let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties"
 
 16. 方法或构造函数参数列表
 
-当长度过长的时候想要使用换行那就必须每个参数都换行, 要么就是一路到低
+当长度过长的时候想要使用换行那就必须每个参数都换行, 要么就是一路到底
 包括调用方法或构造函数时也一样
 ```js
 function name(a, b, c, d, e, f) {}
