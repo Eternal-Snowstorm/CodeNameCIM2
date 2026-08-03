@@ -98,55 +98,5 @@ ServerEvents.recipes((event) => {
 		}
 	}
 
-	// 基础通用构件基座
-	new ReactionRecipe(item("cmi:basic_mekanism_mechanism_basement"))
-		.energy(2000)
-		.fluid("immersiveengineering:redstone_acid", 100)
-		.input("ae2:logic_processor")
-		.input("cmi:enriched_alloy")
-		.input("mekanism:basic_control_circuit")
-		.build()
-
-	// 碳聚合催化片
-	new ReactionRecipe(item("cmi:carbon_polymerization_catalytic_plate"))
-		.energy(2000)
-		.fluid("tconstruct:molten_chromium", 45)
-		.input("cmi:titanium_alloy_mesh")
-		.input("#forge:wires/aluminum")
-		.build()
-
-	// 航空构件基座
-	new ReactionRecipe(item("cmi:aeronautic_mechanism_basement"))
-		.fluid("immersiveengineering:redstone_acid", 100)
-		.energy(2000)
-		.input("cmi:smart_mechanism_augment")
-		.input("cmi:graphene")
-		.build()
-
-	// 钨钢板
-	new ReactionRecipe(item("cmi:incomplete_tungsten_steel_plate"))
-		.energy(2000)
-		.fluid("immersiveengineering:redstone_acid", 100)
-		.input("#forge:plates/tungsten")
-		.input("cmi:titanium_alloy_mesh")
-		.input("#forge:plates/aluminum_alloy")
-		.build()
-
-	// 复合板
-	new ReactionRecipe(item("cmi:incomplete_composite_carbon_fiber_plate"))
-		.energy(2000)
-		.fluid("cmi:structural_plastic", 50)
-		.input("cmi:composite_tungsten_steel_plate")
-		.input("cmi:carbon_nanotube")
-		.build()
-
-	// 空燃料棒
-	new ReactionRecipe(item("cmi:empty_fuel_rod"))
-		.energy(2000)
-		.fluid("tconstruct:molten_lead", 90 * 8)
-		.input("#forge:ingots/hop_graphite", 16)
-		.input("alexscaves:polymer_plate", 16)
-		.input("mekanism:reprocessed_fissile_fragment", 8)
-		.build()
 
 })

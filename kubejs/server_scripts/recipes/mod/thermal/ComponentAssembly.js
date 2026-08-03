@@ -122,6 +122,7 @@ ServerEvents.recipes((event) => {
 
 	// 复合钨钢板
 	addComponRecipe("cmi:composite_tungsten_steel_plate", [
+		Fluid.of("tconstruct:molten_tungsten", 90),
 		"cmi:incomplete_tungsten_steel_plate",
 		"#forge:plates/tungsten_steel"
 	])

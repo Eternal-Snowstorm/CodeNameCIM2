@@ -70,7 +70,7 @@ StartupEvents.registry("item", (event) => {
 	// 复合钨钢板
 	addAlonePlateItem("composite_tungsten_steel")
 	// 强化复合板
-	addAlonePlateItem("reinforced_composite")
+	addAlonePlateItem("composite_carbon_fiber")
 	// 复合磁导板
 	addAlonePlateItem("composite_magnetic_conduction")
 	// 纳米复合板

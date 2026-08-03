@@ -213,7 +213,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("incomplete_carbon_nanotube")
 
 	// 强化复合齿轮
-	addMaterial("reinforced_composite_gear")
+	addMaterial("composite_carbon_fiber_gear")
 
 	// 钛合金线圈
 	addMaterial("titanium_alloy_coil")
@@ -271,7 +271,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("reduced_polonium")
 
 	// 待组装复合板
-	addMaterial("incomplete_reinforced_composite_plate")
+	addMaterial("incomplete_composite_carbon_fiber_plate")
 
 	// 电离恩特罗水晶
 	addMaterial("ionized_entro_crystal")
