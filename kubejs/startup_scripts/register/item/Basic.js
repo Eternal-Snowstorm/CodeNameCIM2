@@ -137,7 +137,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("resonant_tube")
 
 	// 硅混合物
-	addMaterial("silicon_mixure")
+	addMaterial("silicon_mixture")
 
 	// 硅橡胶
 	addMaterial("silicon_rubber")
@@ -467,13 +467,13 @@ StartupEvents.registry("item", (event) => {
 	// addMaterial("scarlet_magnetic_source")
 
 	// 磁性混合物
-	// addMaterial("magnetic_mixure")
+	// addMaterial("magnetic_mixture")
 
 	// 偏青钕混合物
-	// addMaterial("rich_azure_magnetic_mixure")
+	// addMaterial("rich_azure_magnetic_mixture")
 
 	// 偏赤钕混合物
-	// addMaterial("rich_scarlet_magnetic_mixure")
+	// addMaterial("rich_scarlet_magnetic_mixture")
 
 	// 青钕磁性陶瓷
 	// addMaterial("azure_magnetic_ceramic")
