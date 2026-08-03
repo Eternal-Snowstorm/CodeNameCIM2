@@ -22,7 +22,6 @@ MBDMachineEvents.onStructureFormed(($) => {
 	 * @type {Internal.MBDMultiblockMachine_}
 	 */
 	let machine = event.getMachine()
-	let id = machine.getDefinition().id()
 
 	if (!MBDUtils.isMachine(machine, "cmi:electronic_blast_furnace")) {
 		return
@@ -46,7 +45,6 @@ MBDMachineEvents.onRecipeWorking(($) => {
 	 * @type {Internal.MBDMultiblockMachine_}
 	 */
 	let machine = event.getMachine()
-	let id = machine.getDefinition().id()
 
 	if (!MBDUtils.isMachine(machine, "cmi:electronic_blast_furnace")) {
 		return
