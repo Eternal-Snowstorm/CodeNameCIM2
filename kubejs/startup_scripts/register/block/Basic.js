@@ -156,8 +156,24 @@ StartupEvents.registry("block", (event) => {
 		.resistance(5)
 		.tagBlock(CmiToolType.PICKAXE.tag())
 		.tagBlock(CmiMiningLevel.STONE.tag())
-		.tag("forge:storage_blocks/entro")
-		.tag("forge:storage_blocks")
+		.item((item) => {
+			item.tag("forge:storage_blocks/entro")
+				.tag("forge:storage_blocks")
+		})
+
+	// 铀块
+	addBlock("uranium_block")
+		.model("cmi:block/uranium_block")
+		.soundType(SoundType.NETHERITE_BLOCK)
+		.hardness(5)
+		.resistance(5)
+		.defaultTranslucent()
+		.tagBlock(CmiToolType.PICKAXE.tag())
+		.tagBlock(CmiMiningLevel.STONE.tag())
+		.item((item) => {
+			item.tag("forge:storage_blocks/uranium")
+				.tag("forge:storage_blocks")
+		})
 
 	// 雕纹铜块
 	addBlock("chiseled_copper")
