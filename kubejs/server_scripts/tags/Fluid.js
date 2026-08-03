@@ -179,14 +179,14 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("cmi:crystal_catalyt")
 		.add("cmi:crystal_catalyt")
 
-	let thermalMaterials = [
+	let thermalExtraMaterials = [
 		"soul_infused",
 		"shellite",
 		"dragonsteel",
 		"twinite",
 		"abyssal"
 	]
-	thermalMaterials.forEach(material => {
+	thermalExtraMaterials.forEach((material) => {
 		event.get(`tconstruct:molten_${material}`)
 			.add(`thermalconstruct:molten_${material}`)
 	})

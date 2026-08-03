@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
 
 	// 钚
 	mekanism.centrifuging(
-		MekType.Gas.of("cmi:plutonium__mixture", 1),
+		MekType.Gas.of("cmi:plutonium_mixture", 1),
 		MekType.Gas.of("mekanism:plutonium", 1)
 	).id("mekanism:processing/lategame/plutonium")
 })
