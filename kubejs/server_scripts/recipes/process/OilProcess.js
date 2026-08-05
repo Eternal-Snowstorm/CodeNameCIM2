@@ -41,12 +41,16 @@ ServerEvents.recipes((event) => {
 
 	// 沥青冷却
 	thermal.chiller("thermal:bitumen", [
-		Fluid.of("cmi:molten_bitumen", 250)
+		Fluid.of("cmi:bitumen", 200)
 	]).energy(2000)
 
 	tconstruct.casting_table("thermal:bitumen")
-		.fluid(Fluid.of("cmi:molten_bitumen", 250))
+		.fluid(Fluid.of("cmi:bitumen", 200))
 		.cooling_time(20)
+	
+	tconstruct.casting_basin("thermal:bitumen_block")
+		.fluid(Fluid.of("cmi:bitumen", 1800))
+		.cooling_time(180)
 
 	// 重油
 	thermal.refinery([
