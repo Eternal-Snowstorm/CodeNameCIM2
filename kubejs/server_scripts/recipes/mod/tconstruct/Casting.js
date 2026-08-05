@@ -109,15 +109,6 @@ ServerEvents.recipes((event) => {
 		.fluid(Fluid.of("minecraft:lava", 100))
 		.cooling_time(20 * 2)
 
-	// 沥青
-	tconstruct.casting_table("thermal:bitumen")
-		.fluid(Fluid.of("cmi:bitumen", 200))
-		.cooling_time(20)
-
-	tconstruct.casting_basin("thermal:bitumen_block")
-		.fluid(Fluid.of("cmi:bitumen", 1800))
-		.cooling_time(180)
-
 	// 黏血球
 	tconstruct.casting_table("cmi:blood_slime_ball")
 		.fluid(Fluid.of("cmi:blood", 250))
