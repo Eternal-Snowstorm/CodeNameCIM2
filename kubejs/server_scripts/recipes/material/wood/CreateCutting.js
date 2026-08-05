@@ -25,19 +25,25 @@ ServerEvents.recipes((event) => {
 		"minecraft:cherry",
 		"ad_astra:glacian",
 		"thermal:rubberwood",
-		"tconstruct:greenheart",
-		"tconstruct:skyroot",
-		"tconstruct:enderbark",
 		"minecraft:crimson",
 		"minecraft:warped",
 		"ad_astra:aeronos",
 		"ad_astra:strophar",
 		"minecraft:bamboo",
-		"mynethersdelight:powdery",
-		"tconstruct:bloodshroom",
+		"mynethersdelight:powdery"
 	]
 	cutSlabWood.forEach((id) => {
 		create.cutting(`2x ${id}_slab`, `${id}_planks`)
+	})
+
+	let cutSlabWoodTcon = [
+		"tconstruct:greenheart",
+		"tconstruct:skyroot",
+		"tconstruct:enderbark",
+		"tconstruct:bloodshroom",
+	]
+	cutSlabWoodTcon.forEach((id) => {
+		create.cutting(`2x ${id}_planks_slab`, `${id}_planks`)
 	})
 
 	event.forEachRecipe({

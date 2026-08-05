@@ -86,4 +86,5 @@ ServerEvents.recipes((event) => {
 	new CircuitCutterRecipe("64x cmi:carbon_deposition_catalytic_plate")
 		.item("cmi:deposition_catalytic_alloy")
 		.fluid("minecraft:water", 100)
+		.build()
 })
