@@ -69,6 +69,8 @@ StartupEvents.registry("item", (event) => {
 	addColorDustItem("ochrum", 0x9b8005)
 	// 辉绿岩粉
 	addColorDustItem("veridium", 0x049146)
+	// 粗钨粉
+	addColorDustItem("raw_tungsten", 0x2B353F)
 
 	// 安山岩粉
 	addAloneDustItem("andesite")
@@ -115,6 +117,8 @@ StartupEvents.registry("item", (event) => {
 	addNonDustItem("raw_titanium_mixture")
 	// 钨混合物
 	addNonDustItem("tungsten_mixture")
+	// 钨反应物
+	addNonDustItem("tungsten_reactant")
 	// 锗混合物
 	addNonDustItem("germanium_mixture")
 	// 钕混合物
