@@ -399,4 +399,15 @@ ServerEvents.recipes((event) => {
 		.laserCutting(1000)
 		.deploying(Mechanisms.PART.ENGIN)
 		.build()
+	
+	// 基础通用
+	new SequencedAssemblyRecipe(Mechanisms.BASIC)
+		.input(Mechanisms.BASIC.BAS)
+		.deploying("cmi:silicon_rubber")
+		.deploying("cmi:graphene")
+		.deploying("cmi:basic_electronic_components")
+		.laserCutting(1000)
+		.deploying("cmi:mekanism_mechanism_part")
+		.build()
+		
 })
