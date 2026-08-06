@@ -88,7 +88,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("rubber_dust", "橡胶粉")
 	addItemLang("furnaced_lime", "生石灰")
 	addItemLang("sludge_extract", "淤泥提取物")
-	addItemLang("silicon_mixure", "硅混合物")
+	addItemLang("silicon_mixture", "硅混合物")
 	addItemLang("magnesium_hydroxide", "氢氧化镁")
 	addItemLang("brominated_flame_retardants", "溴系阻燃剂")
 	addItemLang("plant_ash", "草木灰")
