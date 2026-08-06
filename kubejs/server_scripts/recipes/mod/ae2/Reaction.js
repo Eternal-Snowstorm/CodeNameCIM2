@@ -134,7 +134,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 复合板
-	new ReactionRecipe(item("cmi:incomplete_reinforced_composite_plate"))
+	new ReactionRecipe(item("cmi:incomplete_composite_carbon_fiber_plate"))
 		.energy(2000)
 		.fluid("cmi:structural_plastic", 50)
 		.input("cmi:composite_tungsten_steel_plate")
