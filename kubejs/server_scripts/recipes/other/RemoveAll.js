@@ -38,7 +38,9 @@ ServerEvents.recipes((event) => {
 		"@torcherino",
 		"tconstruct:nether_grout",
 		"tconstruct:grout",
-		"createdieselgenerators:mold"
+		"createdieselgenerators:mold",
+		"mekanism:basic_control_circuit",
+		"mekanism:advanced_control_circuit"
 	]
 	removeOutput.forEach((output) => {
 		event.remove({
