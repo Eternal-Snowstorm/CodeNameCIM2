@@ -79,9 +79,9 @@ StartupEvents.registry("block", (event) => {
 		"iron_slot",
 		"sheet_slot"
 	]
-	blockIO.forEach((IOBlock) => {
-		event.create(`${Cmi.MODID}:${IOBlock}`)
-			.textureAll(Cmi.loadResource(`block/io_debug/${IOBlock}`))
+	blockIO.forEach((ioBlock) => {
+		event.create(`${Cmi.MODID}:${ioBlock}`)
+			.textureAll(Cmi.loadResource(`block/io_debug/${ioBlock}`))
 			.soundType(SoundType.METAL)
 			.tag(`${Cmi.MODID}:io_debug_block`)
 	})
