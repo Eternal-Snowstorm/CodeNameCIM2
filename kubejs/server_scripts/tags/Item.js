@@ -721,6 +721,11 @@ ServerEvents.tags("item", (event) => {
 		.add("cmi:3x3_packing_mold")
 		.add("cmi:unpack_mold")
 		.add("cmi:plate_mold")
+	
+	event.get("ad_astra:moon_stones")
+		.add("ad_astra:moon_cobblestone")
+		.add("ad_astra:moon_deepslate")
+		.add("ad_astra:moon_stone")
 
 	let crushedMaterialGroup = [
 		"iron",

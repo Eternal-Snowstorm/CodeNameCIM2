@@ -206,15 +206,16 @@ ServerEvents.recipes((event) => {
 
 	// 基础控制电路
 	new InscriberRecipe("mekanism:basic_control_circuit")
-		.top("cmi:inscribed_silicon")
+		.bottom("cmi:inscribed_silicon")
 		.middle("cmi:osmium_wafer")
-		.bottom("#forge:alloys/enriched")
+		.top("#forge:alloys/enriched")
 		.press()
 	
 	// 高级控制电路
 	new InscriberRecipe("mekanism:advanced_control_circuit")
-		.top("mekanism:alloy_infused")
+		.bottom("mekanism:alloy_infused")
 		.middle("cmi:silicon_wafer")
-		.bottom("cmi:inscribed_silicon")
+		.top("cmi:inscribed_silicon")
 		.press()
+	
 })

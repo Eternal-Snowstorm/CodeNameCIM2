@@ -57,6 +57,12 @@ ServerEvents.recipes((event) => {
 		.item("cmi:enriched_osmium_crystal")
 		.fluid("minecraft:water", 100)
 		.build()
+	
+	// 硅晶圆
+	new CircuitCutterRecipe("cmi:silicon_wafer")
+		.item("cmi:single_crystal_silicon")
+		.fluid("minecraft:water", 100)
+		.build()
 
 	// 逻辑电路板
 	new CircuitCutterRecipe(Item.of(Print.LOGIC, 9))

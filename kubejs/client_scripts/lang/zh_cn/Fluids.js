@@ -103,5 +103,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("radioactive_acid_solution", "放射性酸溶液")
 	addFluidLang("ferrouslime", "富铁粘液")
 	addFluidLang("polymeric_carbon_solution", "聚合碳溶液")
+	addFluidLang("molten_pure_silicon", "熔融高纯硅")
 
 })

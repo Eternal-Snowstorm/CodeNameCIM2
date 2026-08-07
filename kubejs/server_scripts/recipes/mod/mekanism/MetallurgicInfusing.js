@@ -63,4 +63,5 @@ ServerEvents.recipes((event) => {
 		"cmi:magnetic_alloy",
 		"cmi:titanium_oxide"
 	)
+
 })

@@ -30,4 +30,14 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:mercury", 90),
 		"#forge:plates/silver"
 	]).energy(4000)
+
+	// 单晶硅
+	thermal.chiller("cmi:single_crystal_silicon", [
+		Fluid.of("cmi:molten_pure_silicon", 250),
+		"#tconstruct:casts/multi_use/gem"
+	]).energy(8000).keepIngredient([
+		"thermalconstruct:bronze_cast_gem",
+		"tconstruct:gem_cast"
+	])
+
 })
