@@ -123,6 +123,15 @@ ServerEvents.recipes((event) => {
 		.input("cmi:graphene")
 		.input("#forge:plates/aluminum_alloy")
 		.build()
+	
+	// 宇航构件基座
+	new ReactionRecipe(item("cmi:astronautic_mechanism_basement"))
+		.fluid("advanced_ae:quantum_infusion_source", 100)
+		.input("cmi:advanced_electronic_components")
+		.input("cmi:carbon_nanotube")
+		.input("#forge:plates/titanium_alloy")
+		.energy(4000)
+		.build()
 
 	// 钨钢板
 	new ReactionRecipe(item("cmi:incomplete_tungsten_steel_plate"))
@@ -148,6 +157,14 @@ ServerEvents.recipes((event) => {
 		.input("#forge:ingots/hop_graphite", 16)
 		.input("alexscaves:polymer_plate", 16)
 		.input("mekanism:reprocessed_fissile_fragment", 8)
+		.build()
+	
+	// 复合钨钢板
+	new ReactionRecipe(item("cmi:composite_tungsten_steel_plate"))
+		.energy(16000)
+		.fluid("tconstruct:molten_tungsten", 90)
+		.input("cmi:incomplete_tungsten_steel_plate")
+		.input("#forge:plates/tungsten_steel")
 		.build()
 
 	// 模拟反应堆

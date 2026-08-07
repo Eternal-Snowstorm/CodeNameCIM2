@@ -217,4 +217,5 @@ ServerEvents.recipes((event) => {
 		.middle("cmi:silicon_wafer")
 		.bottom("cmi:inscribed_silicon")
 		.press()
+	
 })
