@@ -33,14 +33,15 @@ ServerEvents.recipes((event) => {
 		"steampowered:pressurized_gas_container",
 		"steampowered:pressurized_steam_container",
 		"#forge:ingots/steel",
-		"forge:storage_blocks/steel",
+		"#forge:storage_blocks/steel",
 		"quark:grate",
 		"@torcherino",
 		"tconstruct:nether_grout",
 		"tconstruct:grout",
 		"createdieselgenerators:mold",
 		"mekanism:basic_control_circuit",
-		"mekanism:advanced_control_circuit"
+		"mekanism:advanced_control_circuit",
+		"alexscaves:polymer_plate"
 	]
 	removeOutput.forEach((output) => {
 		event.remove({
