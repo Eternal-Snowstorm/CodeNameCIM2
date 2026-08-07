@@ -17,22 +17,6 @@ ServerEvents.recipes((event) => {
 		"cmi:infuse_osmium"
 	).duration(60).energyRequired(1000)
 
-	// 铀黄饼
-	mekanism.reaction(
-		"#forge:ingots/uranium",
-		MekType.Gas.of("cmi:fissile_uranium_compound", 100),
-		Fluid.of("minecraft:water", 1000),
-		"mekanism:yellow_cake_uranium"
-	).energyRequired(1000).duration(60)
-
-	// 聚合物板
-	mekanism.reaction(
-		"#forge:plates/hdpe",
-		MekType.Gas.of("cmi:radon", 100),
-		Fluid.of("minecraft:water", 1000),
-		"alexscaves:polymer_plate",
-	).energyRequired(1000).duration(60)
-
 	// 再处理裂变碎片
 	mekanism.reaction(
 		"ae2:matter_ball",
@@ -41,4 +25,5 @@ ServerEvents.recipes((event) => {
 		"4x mekanism:reprocessed_fissile_fragment"
 	).energyRequired(1000).duration(60)
 		.id("mekanism:processing/uranium/reprocessing/from_plutonium")
+
 })
