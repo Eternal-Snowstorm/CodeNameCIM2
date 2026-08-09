@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeOutput = [
-		"pipez:filter_destination_tool",
+		"@pipez_optimizer",
 		"vintageimprovements:belt_grinder",
 		"createdieselgenerators:chip_wood_block",
 		"steampowered:alternator",

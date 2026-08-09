@@ -15,6 +15,12 @@ const COIL_RATIO = Object.freeze({
 	HV: 0.25
 })
 
+const COIL_PARALLEL = Object.freeze({
+	LV: 16,
+	MV: 32,
+	HV: 64
+})
+
 MBDMachineEvents.onStructureFormed(($) => {
 	let event = $.getEvent()
 
@@ -50,7 +56,23 @@ MBDMachineEvents.onRecipeWorking(($) => {
 		return
 	}
 
-	levelEfficiencyImprovement(machine)
+	levelMultiplierModify(machine)
+})
+
+MBDMachineEvents.onBeforeRecipeModify(($) => {
+	let event = $.getEvent()
+
+	/**
+	 * @type {Internal.MBDMultiblockMachine_}
+	 */
+	let machine = event.getMachine()
+
+	if (!MBDUtils.isMachine(machine, "cmi:electronic_blast_furnace")) {
+		return
+	}
+
+	let copy = levelParallelModify(machine, event.getRecipe())
+	event.setRecipe(copy)
 })
 
 /**
@@ -116,11 +138,30 @@ function getCoilCount(machine) {
 }
 
 /**
+ * 根据线圈等级调整并行数量
+ *
+ * @param {Internal.MBDMultiblockMachine_} machine 
+ * @param {Internal.MBDRecipe_} recipe 
+ */
+function levelParallelModify(machine, recipe) {
+	switch (getCoilLevel(machine)) {
+		case 0:
+			return machine.applyParallel(recipe, COIL_PARALLEL.LV)
+		case 1:
+			return machine.applyParallel(recipe, COIL_PARALLEL.MV)
+		case 2:
+			return machine.applyParallel(recipe, COIL_PARALLEL.HV)
+		default:
+			return recipe
+	}
+}
+
+/**
  * 根据线圈等级调整效率
  *
  * @param {Internal.MBDMultiblockMachine_} machine
  */
-function levelEfficiencyImprovement(machine) {
+function levelMultiplierModify(machine) {
 	let recipe = machine.getRecipeLogic()
 	let duration = recipe.getDuration()
 

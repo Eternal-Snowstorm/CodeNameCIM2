@@ -6,6 +6,8 @@
 	icon: "minecraft:oak_sapling"
 	id: "29A4A4AB5A6C2147"
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -543,7 +545,7 @@
 		{
 			description: [
 				"这是一把很普通的弓, 它的韧性和柔度较好, 可以快速拉满射出紫水晶晶簇, 为您提供基础的防身. "
-				"如果您碰到由热力系列添加的拥有远程攻击能力的怪物, 就用它进行反击吧. "
+				"如果您碰到由热力系列(指名道心&c狂风人&r和&c岩石人&r)添加的拥有远程攻击能力的怪物, 就用它进行反击吧. "
 				"橡胶木板可以用于修复这把弓, 请一定要活下去. "
 			]
 			icon: {

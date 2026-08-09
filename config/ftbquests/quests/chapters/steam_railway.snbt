@@ -6,6 +6,8 @@
 	icon: "create:track"
 	id: "677DD93464AC2B4A"
 	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

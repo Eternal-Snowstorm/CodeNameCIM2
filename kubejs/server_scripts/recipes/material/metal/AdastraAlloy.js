@@ -57,5 +57,4 @@ ServerEvents.recipes((event) => {
 		"cmi:tungsten_steel_plate",
 		"#forge:plates/tungsten"
 	).chemicalInput({ amount: 20, tag: "mekanism:carbon" })
-
 })

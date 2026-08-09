@@ -105,7 +105,7 @@ ServerEvents.highPriorityData((event) => {
 			 * @param {number} count 数量
 			 * @returns 
 			 */
-			overworld: function (count) {
+			overworld(count) {
 				configuredFeature.config.targets = [
 					{
 						state: {
@@ -161,7 +161,7 @@ ServerEvents.highPriorityData((event) => {
 			 * @param {number} count 数量
 			 * @returns 
 			 */
-			overworldWithStoneOnly: function (count) {
+			overworldWithStoneOnly(count) {
 				configuredFeature.config.targets = [
 					{
 						state: {
@@ -208,7 +208,7 @@ ServerEvents.highPriorityData((event) => {
 			 * @param {number} count 数量
 			 * @returns 
 			 */
-			eden: function (count) {
+			eden(count) {
 				configuredFeature.config.targets = [
 					{
 						state: {
@@ -265,7 +265,7 @@ ServerEvents.highPriorityData((event) => {
 			 * @param {number} count 数量
 			 * @returns 
 			 */
-			nether: function (count) {
+			nether(count) {
 				configuredFeature.config.targets = [
 					{
 						state: {
@@ -312,7 +312,7 @@ ServerEvents.highPriorityData((event) => {
 			 * @param {number} count 数量
 			 * @returns 
 			 */
-			end: function (count) {
+			end(count) {
 				configuredFeature.config.targets = [
 					{
 						state: {
@@ -359,7 +359,7 @@ ServerEvents.highPriorityData((event) => {
 			 * @param {number} count 数量
 			 * @returns 
 			 */
-			moon: function (count) {
+			moon(count) {
 				configuredFeature.config.targets = [
 					{
 						"state": {
@@ -406,7 +406,7 @@ ServerEvents.highPriorityData((event) => {
 			 * @param {number} count 数量
 			 * @returns 
 			 */
-			mars: function (count) {
+			mars(count) {
 				configuredFeature.config.targets = [
 					{
 						state: {

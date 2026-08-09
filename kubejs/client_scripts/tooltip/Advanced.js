@@ -119,6 +119,13 @@ ItemEvents.tooltip((event) => {
 				1
 			))
 
+			tooltip.addAll(TooltipHelper.cutStringTextComponent(
+				Component.translatable("tooltip.electronic_blast_furnace.type.5").getString(),
+				$FontHelper$Palette.STANDARD_CREATE.primary(),
+				$FontHelper$Palette.STANDARD_CREATE.highlight(),
+				1
+			))
+
 			tooltip.add(Component.empty())
 
 			tooltip.addAll(TooltipHelper.cutStringTextComponent(

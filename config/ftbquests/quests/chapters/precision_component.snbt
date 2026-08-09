@@ -6,6 +6,8 @@
 	icon: "create:electron_tube"
 	id: "50ABC60C1E3D3498"
 	order_index: 3
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
