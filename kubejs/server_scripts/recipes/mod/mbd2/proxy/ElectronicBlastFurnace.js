@@ -5,6 +5,7 @@ ServerEvents.recipes((event) => {
 	proxyArcFurnace(event)
 	proxyMelting(event)
 	proxyAlloy(event)
+	proxyAlloying(event)
 	proxyCarKiln(event)
 	proxyRotaryKiln(event)
 })
@@ -92,6 +93,33 @@ function proxyAlloy(event) {
 		addFluidResult(builder, json.get("result"))
 
 		builder.id(`${id}_mbd2_proxy`)
+	})
+}
+
+/**
+ *
+ * @param {Internal.RecipesEventJS_} event
+ */
+function proxyAlloying(event) {
+	let { cmi } = event.getRecipes()
+
+	event.forEachRecipe({
+		type: "ad_astra:alloying"
+	}, (recipe) => {
+		let json = sourceJsonOf(recipe)
+		let id = recipe.getId()
+
+		let builder = cmi.electronic_blast_furnace()
+
+		addIngredients(builder, json.get("ingredients").getAsJsonArray())
+
+		addResult(builder, json.get("result"))
+
+		builder.duration(getInt(json, "cookingtime", 100))
+			.perTick((recipe) => {
+				recipe.inputFE(getInt(json, "energy", 0))
+			})
+			.id(`${id}_mbd2_proxy`)
 	})
 }
 
@@ -295,6 +323,10 @@ function itemIngredientOf(entry, countMultiplier) {
 		let tag = json.get("tag").getAsString()
 
 		return stackString(`#${tag}`, count)
+	}
+
+	if (json.has("id")) {
+		return stackString(json.get("id").getAsString(), count)
 	}
 
 	return null
