@@ -137,7 +137,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("resonant_tube")
 
 	// 硅混合物
-	addMaterial("silicon_mixure")
+	addMaterial("silicon_mixture")
 
 	// 硅橡胶
 	addMaterial("silicon_rubber")
@@ -213,7 +213,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("incomplete_carbon_nanotube")
 
 	// 强化复合齿轮
-	addMaterial("reinforced_composite_gear")
+	addMaterial("composite_carbon_fiber_gear")
 
 	// 钛合金线圈
 	addMaterial("titanium_alloy_coil")
@@ -271,7 +271,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("reduced_polonium")
 
 	// 待组装复合板
-	addMaterial("incomplete_reinforced_composite_plate")
+	addMaterial("incomplete_composite_carbon_fiber_plate")
 
 	// 电离恩特罗水晶
 	addMaterial("ionized_entro_crystal")
@@ -467,13 +467,13 @@ StartupEvents.registry("item", (event) => {
 	// addMaterial("scarlet_magnetic_source")
 
 	// 磁性混合物
-	// addMaterial("magnetic_mixure")
+	// addMaterial("magnetic_mixture")
 
 	// 偏青钕混合物
-	// addMaterial("rich_azure_magnetic_mixure")
+	// addMaterial("rich_azure_magnetic_mixture")
 
 	// 偏赤钕混合物
-	// addMaterial("rich_scarlet_magnetic_mixure")
+	// addMaterial("rich_scarlet_magnetic_mixture")
 
 	// 青钕磁性陶瓷
 	// addMaterial("azure_magnetic_ceramic")

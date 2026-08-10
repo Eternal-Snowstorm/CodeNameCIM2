@@ -1,10 +1,16 @@
-// ServerEvents.loaded((event) => {
-// 	let { server } = event
+let $GameRules =
+    Java.loadClass("net.minecraft.world.level.GameRules")
 
-// 	server.scheduleInTicks(2, () => {
-// 		server.runCommandSilent("reload")
-// 	})
-// })
+ServerEvents.loaded((event) => {
+    let { server } = event
+
+    let rule = server.getGameRules()
+    let lavaRule = rule.getRule($GameRules.RULE_LAVA_SOURCE_CONVERSION)
+
+    if (!lavaRule.get()) {
+        lavaRule.set(true, server)
+    }
+})
 
 PlayerEvents.loggedIn((event) => {
 	let { player, level } = event

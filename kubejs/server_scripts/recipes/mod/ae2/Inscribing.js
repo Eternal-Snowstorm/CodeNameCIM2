@@ -49,18 +49,7 @@ ServerEvents.recipes((event) => {
 		return event.custom(this.recipe)
 	}
 
-	// 名称压印模板
-	new InscriberRecipe("ae2:name_press")
-		.top("minecraft:name_tag")
-		.middle("#forge:plates/iron")
-		.press()
-
-	new InscriberRecipe("ae2:name_press")
-		.top("ae2:name_press")
-		.middle("#forge:plates/iron")
-		.inscribe()
-
-	// 其他压印模板	
+	// 压印模板	
 	new InscriberRecipe("ae2:silicon_press")
 		.top("ae2:silicon_press")
 		.middle("#forge:plates/iron")
@@ -120,7 +109,6 @@ ServerEvents.recipes((event) => {
 		.middle("cmi:ferrit_core")
 		.top("cmi:composite_magnetic_conduction_plate")
 		.press()
-
 
 	// 控制芯片
 	new InscriberRecipe(Processor.CONTROL)
@@ -215,4 +203,19 @@ ServerEvents.recipes((event) => {
 		.middle("cmi:entro_alloy_wafer")
 		.bottom("#forge:plates/copper")
 		.press()
+
+	// 基础控制电路
+	new InscriberRecipe("mekanism:basic_control_circuit")
+		.bottom("cmi:inscribed_silicon")
+		.middle("cmi:osmium_wafer")
+		.top("#forge:alloys/enriched")
+		.press()
+	
+	// 高级控制电路
+	new InscriberRecipe("mekanism:advanced_control_circuit")
+		.bottom("mekanism:alloy_infused")
+		.middle("cmi:silicon_wafer")
+		.top("cmi:inscribed_silicon")
+		.press()
+	
 })

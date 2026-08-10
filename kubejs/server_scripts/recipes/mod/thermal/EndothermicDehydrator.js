@@ -1,8 +1,8 @@
 ServerEvents.recipes((event) => {
 	let { thermal_extra } = event.getRecipes()
 
-	// 钨混合物
-	thermal_extra.endothermic_dehydrator("cmi:tungsten_mixture", [
+	// 钨反应物
+	thermal_extra.endothermic_dehydrator("cmi:tungsten_reactant", [
 		Fluid.of("cmi:activated_graphite", 100),
 		"cmi:raw_tungsten_dust"
 	])

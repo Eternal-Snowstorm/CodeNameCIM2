@@ -121,6 +121,16 @@ ServerEvents.recipes((event) => {
 		.energy(2000)
 		.input("cmi:smart_mechanism_augment")
 		.input("cmi:graphene")
+		.input("#forge:plates/aluminum_alloy")
+		.build()
+	
+	// 宇航构件基座
+	new ReactionRecipe(item("cmi:astronautic_mechanism_basement"))
+		.fluid("advanced_ae:quantum_infusion_source", 100)
+		.input("cmi:advanced_electronic_components")
+		.input("cmi:carbon_nanotube")
+		.input("#forge:plates/titanium_alloy")
+		.energy(4000)
 		.build()
 
 	// 钨钢板
@@ -133,7 +143,7 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 复合板
-	new ReactionRecipe(item("cmi:incomplete_reinforced_composite_plate"))
+	new ReactionRecipe(item("cmi:incomplete_composite_carbon_fiber_plate"))
 		.energy(2000)
 		.fluid("cmi:structural_plastic", 50)
 		.input("cmi:composite_tungsten_steel_plate")
@@ -148,17 +158,25 @@ ServerEvents.recipes((event) => {
 		.input("alexscaves:polymer_plate", 16)
 		.input("mekanism:reprocessed_fissile_fragment", 8)
 		.build()
+	
+	// 复合钨钢板
+	new ReactionRecipe(item("cmi:composite_tungsten_steel_plate"))
+		.energy(16000)
+		.fluid("tconstruct:molten_tungsten", 90)
+		.input("cmi:incomplete_tungsten_steel_plate")
+		.input("#forge:plates/tungsten_steel")
+		.build()
 
 	// 模拟反应堆
-	new ReactionRecipe(item("cmi:simulated_fission_reactor"))
-		.energy(2000)
-		.fluid("cmi:structural_plastic", 4000)
-		.input("mekanismgenerators:fission_reactor_casing", 64)
-		.input("mekanismgenerators:reactor_glass", 32)
-		.input("mekanismgenerators:fission_fuel_assembly", 16)
-		.input("mekanismgenerators:control_rod_assembly", 8)
-		.input("mekanismgenerators:fission_reactor_port", 4)
-		.input("mekanism:steel_casing", 2)
-		.input("mekanismgenerators:fission_reactor_logic_adapter", 1)
-		.build()
+	// new ReactionRecipe(item("cmi:simulated_fission_reactor"))
+	// 	.energy(2000)
+	// 	.fluid("cmi:structural_plastic", 4000)
+	// 	.input("mekanismgenerators:fission_reactor_casing", 64)
+	// 	.input("mekanismgenerators:reactor_glass", 32)
+	// 	.input("mekanismgenerators:fission_fuel_assembly", 16)
+	// 	.input("mekanismgenerators:control_rod_assembly", 8)
+	// 	.input("mekanismgenerators:fission_reactor_port", 4)
+	// 	.input("mekanism:steel_casing", 2)
+	// 	.input("mekanismgenerators:fission_reactor_logic_adapter", 1)
+	// 	.build()
 })

@@ -22,4 +22,7 @@ JEIEvents.hideItems((event) => {
 	hideItemFromJEI("torcherino:double_compressed_torcherino")
 	hideItemFromJEI("torcherino:double_compressed_lanterino")
 	hideItemFromJEI("torcherino:double_compressed_lantern")
+	hideItemFromJEI("@pipez_optimizer")
+	hideItemFromJEI("steampowered:brass_flywheel")
+	hideItemFromJEI("steampowered:furnace_engine")
 })

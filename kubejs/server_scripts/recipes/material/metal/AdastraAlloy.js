@@ -52,9 +52,9 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/tungsten",
 	).chemicalInput({ amount: 20, tag: "mekanism:carbon" })
 
-	// 钨钢 from 锭
+	// 钨钢 from 板
 	mekanism.metallurgic_infusing(
-		"cmi:tungsten_steel_dust",
-		"#forge:ingots/tungsten"
+		"cmi:tungsten_steel_plate",
+		"#forge:plates/tungsten"
 	).chemicalInput({ amount: 20, tag: "mekanism:carbon" })
 })

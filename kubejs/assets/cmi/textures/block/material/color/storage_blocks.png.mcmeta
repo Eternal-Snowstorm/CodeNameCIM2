@@ -1,0 +1,9 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "ctm",
+        "textures": [
+            "cmi:block/material/color/storage_blocks_ctm"
+        ]
+    }
+}

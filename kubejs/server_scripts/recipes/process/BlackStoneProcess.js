@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("9x thermal:ruby", [
 		"#forge:storage_blocks/ruby"
 	])
-	//溶解
+	// 溶解
 	create.mixing(Fluid.of("cmi:chromium_solution", 200), [
 		Fluid.of("mekanism:sulfuric_acid", 200),
 		"#forge:dusts/ruby"

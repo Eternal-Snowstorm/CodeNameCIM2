@@ -3,17 +3,17 @@ ServerEvents.recipes((event) => {
 
 	// 钨溶液
 	cmi.chemical_reactor()
-		.inputItems("10x #forge:dusts/tungsten_mixture")
+		.inputItems("10x cmi:tungsten_reactant")
 		.inputFluids(Fluid.of("cmi:hydrochloric_acid", 1000))
 		.outputFluids(Fluid.of("cmi:tungsten_solution", 2000))
 		.inputFE(32 * (20 * 10))
 		.duration(20 * 10)
 
-	// 钨粉
+	// 钨混合物
 	cmi.chemical_reactor()
 		.inputItems("10x #forge:dusts/aluminum")
 		.inputFluids(Fluid.of("cmi:tungsten_solution", 1000))
-		.outputItems("10x cmi:tungsten_dust")
+		.outputItems("10x cmi:tungsten_mixture")
 		.inputFE(32 * (20 * 10))
 		.duration(20 * 10)
 
@@ -34,6 +34,7 @@ ServerEvents.recipes((event) => {
 			MBDUtils.withFluidTag("forge:sulfuric_acid", 1000),
 			Fluid.of("cmi:hydrochloric_acid", 1000)
 		])
+		.inputItems("4x #forge:gems/fluorite")
 		.outputFluids(Fluid.of("cmi:crystal_etching_solution", 3000))
 		.inputFE(32 * (20 * 10))
 		.duration(20 * 10)
@@ -47,4 +48,5 @@ ServerEvents.recipes((event) => {
 		.perTick((recipe) => {
 			recipe.inputFE(25000 / 20)
 		})
+	
 })

@@ -152,3 +152,4 @@ config/nebula/value.txt
 !config/emi.css
 !config/treechop-common.toml
 !config/createcoolingfan-factors.json
+!config/fluidlogistics-common.toml

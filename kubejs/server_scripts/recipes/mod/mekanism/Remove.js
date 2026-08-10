@@ -8,6 +8,7 @@ ServerEvents.recipes((event) => {
 		"jei:/mekanism/infusion_conversion/carbon/from_coal_block",
 		"jei:/mekanism/infusion_conversion/carbon/from_charcoal_block",
 		"jei:/mekanism/infusion_conversion/carbon/from_coal",
-		"jei:/mekanism/infusion_conversion/carbon/from_charcoal"
+		"jei:/mekanism/infusion_conversion/carbon/from_charcoal",
+		"jei:/mekanism/processing/uranium/yellow_cake_uranium"
 	])
 })

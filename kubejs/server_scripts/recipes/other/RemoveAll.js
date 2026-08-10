@@ -26,19 +26,22 @@ ServerEvents.recipes((event) => {
 	})
 
 	let removeOutput = [
-		"pipez:filter_destination_tool",
+		"@pipez_optimizer",
 		"vintageimprovements:belt_grinder",
 		"createdieselgenerators:chip_wood_block",
 		"steampowered:alternator",
 		"steampowered:pressurized_gas_container",
 		"steampowered:pressurized_steam_container",
 		"#forge:ingots/steel",
-		"forge:storage_blocks/steel",
+		"#forge:storage_blocks/steel",
 		"quark:grate",
 		"@torcherino",
 		"tconstruct:nether_grout",
 		"tconstruct:grout",
-		"createdieselgenerators:mold"
+		"createdieselgenerators:mold",
+		"mekanism:basic_control_circuit",
+		"mekanism:advanced_control_circuit",
+		"alexscaves:polymer_plate"
 	]
 	removeOutput.forEach((output) => {
 		event.remove({

@@ -264,7 +264,7 @@ let SmeltingRecipes = {
 
 /**
  * 
- * @param {InputItem_} tag 
+ * @param {Internal.Ingredient_} tag 
  * @returns 
  */
 function getItemsUnderTag(tag) {

@@ -6,6 +6,8 @@
 	icon: "create:track"
 	id: "677DD93464AC2B4A"
 	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -383,7 +385,7 @@
 				"{image:cmi:textures/images/create/burner_and_flywheel.png width:175 height:114 align:center}"
 			]
 			id: "5227B74E4F8FF3F5"
-			subtitle: "&m不然这水不是白烧&r"
+			subtitle: "&m不然这水不是白烧了&r"
 			tasks: [
 				{
 					id: "5E38B5BC109A214B"
@@ -420,6 +422,7 @@
 				"&l&4下界的环境与主世界截然不同&r&r。那里没有可供呼吸的氧气, 炽热而稀薄的空气无法维持生命。如果贸然进入, 很快就会因缺氧而窒息而亡"
 				""
 				"若想在下界自由活动, 你需要装备&b&l潜水头盔&r与&c&l背罐&r"
+				""
 				"&e背罐顶部传入应力&r可以持续压缩并补充内部气体, 从而为佩戴者提供可呼吸的空气"
 				"借助这套装置, 你不仅可以在&4下界&r中安全呼吸, 也能够在&b水中&r长时间活动"
 				""
@@ -715,7 +718,7 @@
 		{
 			dependencies: ["12CEF39F02D4EB3A"]
 			id: "3426EEB10B251CA4"
-			subtitle: "♻️&m环保吗&r♻️"
+			subtitle: "♻️环保模式♻️"
 			tasks: [{
 				id: "3642624664D89610"
 				item: {

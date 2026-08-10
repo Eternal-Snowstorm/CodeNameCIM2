@@ -6,6 +6,8 @@
 	icon: "createdieselgenerators:oil_scanner"
 	id: "1D9532E61D127AFA"
 	order_index: 4
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

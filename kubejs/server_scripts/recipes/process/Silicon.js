@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
 	]).superheated()
 
 	// 硅混合物
-	create.mixing("cmi:silicon_mixure", [
+	create.mixing("cmi:silicon_mixture", [
 		"#forge:dusts/coal_coke",
 		"#forge:dusts/pure_quartz"
 	]).superheated()
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 		Item.of("ae2:silicon", 2).withChance(0.1),
 		Item.of("create:scorchia").withChance(0.5)
 	], [
-		"cmi:silicon_mixure",
+		"cmi:silicon_mixture",
 		Fluid.of("tconstruct:seared_stone", 250)
 	]).superheated()
 
@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
 		Item.of("ae2:silicon", 2).withChance(0.1),
 		Item.of("create:scoria").withChance(0.5)
 	], [
-		"cmi:silicon_mixure",
+		"cmi:silicon_mixture",
 		Fluid.of("tconstruct:scorched_stone", 250)
 	]).superheated()
 

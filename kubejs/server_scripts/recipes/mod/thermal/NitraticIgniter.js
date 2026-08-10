@@ -22,14 +22,6 @@ ServerEvents.recipes((event) => {
 		"secondary_mod": 1.0
 	})
 
-	// 爆裂
-	thermal_extra.nitratic_igniter([
-		"cmi:blackstone_sourse_alpha",
-		"cmi:blackstone_sourse_beta",
-		"cmi:blackstone_sourse_gamma"
-	], "#forge:blackstone")
-		.energy(2000)
-
 	// 锇
 	thermal_extra.nitratic_igniter([
 		"2x mekanism:shard_osmium",

@@ -5,6 +5,7 @@ ServerEvents.recipes((event) => {
 	proxyArcFurnace(event)
 	proxyMelting(event)
 	proxyAlloy(event)
+	proxyAlloying(event)
 	proxyCarKiln(event)
 	proxyRotaryKiln(event)
 })
@@ -93,6 +94,56 @@ function proxyAlloy(event) {
 
 		builder.id(`${id}_mbd2_proxy`)
 	})
+}
+
+/**
+ *
+ * @param {Internal.RecipesEventJS_} event
+ */
+function proxyAlloying(event) {
+	// 数据包/原有的 ad_astra:alloying 配方
+	forEachOriginalRecipe(event, "ad_astra:alloying", (recipe) => {
+		proxyAlloyingRecipe(event, recipe)
+	})
+
+	// 手写的 event.custom ad_astra:alloying 配方在 addedRecipes 里
+	for (let recipe of event.addedRecipes) {
+		if (String(recipe.getType()) === "ad_astra:alloying") {
+			proxyAlloyingRecipe(event, recipe)
+		}
+	}
+}
+
+ServerEvents.recipes((event) => {
+	let { cmi } = event.getRecipes()
+})
+
+/**
+ * @param {Internal.RecipesEventJS_} event
+ * @param {Internal.RecipeJS_} recipe
+ */
+function proxyAlloyingRecipe(event, recipe) {
+	let { cmi } = event.getRecipes()
+	let json = sourceJsonOf(recipe)
+
+	// Ad Astra 的 result 是 {count, id} 而不是 {item, count}, 单独按 id 匹配
+	let result = json.get("result").getAsJsonObject()
+	let outputId = result.get("id").getAsString()
+	let count = getInt(result, "count", 1)
+
+	let builder = cmi.electronic_blast_furnace()
+
+	builder.outputItems(stackString(outputId, count))
+
+	addIngredients(builder, json.get("ingredients").getAsJsonArray())
+
+	builder.duration(getInt(json, "cookingtime", 100))
+		.perTick((recipe) => {
+			recipe.inputFE(getInt(json, "energy", 0))
+		})
+		.id(`ad_astra:${outputId.split(":").pop()}_mbd2_proxy`)
+
+	console.log(`[EBF] proxied ad_astra:alloying -> ad_astra:${outputId.split(":").pop()}_mbd2_proxy | ${count}x ${outputId}`)
 }
 
 /**
@@ -295,6 +346,10 @@ function itemIngredientOf(entry, countMultiplier) {
 		let tag = json.get("tag").getAsString()
 
 		return stackString(`#${tag}`, count)
+	}
+
+	if (json.has("id")) {
+		return stackString(json.get("id").getAsString(), count)
 	}
 
 	return null

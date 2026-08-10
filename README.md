@@ -16,7 +16,7 @@
 ### 服务端
  - 在打包时请保留根目录下的`hotai`文件夹以及内部的**所有**文件, 确保多方块机器运行正常
  - 删除影响服务端的客户端Mod确保服务端运行正常
- - 出现BUG**一定**要反馈(能够使用[**`issues`**](https://github.com/VechniMetel/CodeNameCIM2/issues)最好!)
+ - 出现BUG**一定**要反馈(能够使用[**`issues`**](https://github.com/Eternal-Snowstorm/CodeNameCIM2/issues)最好!)
  - 在修改JEI的时候需要先运行`kjs reload client_scripts`后再运行`reload`
 
 ---
@@ -35,6 +35,9 @@
  - **mods**
  - **resourcepacks**
  - **icon.png**
+ - **ldlib**
+    - **assets**
+       - **mbd2**
  - **LICENSE.md**
  - **README.md**
  - **UpdateLogs.md**
@@ -42,15 +45,13 @@
 ---
 
 ### 本整合包提供了非常多的轮子, 我们非常欢迎社区去使用我们的轮子, 包括但不限于:
- - [**金属材料注册**](kubejs/startup_scripts/register/Metal.js)
- - [**矿石方块注册**](kubejs/startup_scripts/register/block/ore/Common.js)
- - [**可配置矿石生成**](kubejs/server_scripts/data/OresGenerating.js)
- - [**匠魂材料构建器**](kubejs/server_scripts/utils/TConMaterialGenerator.js)
- - [**匠魂材料纹理生成器**](kubejs/server_scripts/utils/TConTexturesGenerator.js)
- - [**功能性存储抽屉升级注册**](kubejs/startup_scripts/register/item/DrawerUpgrade.js)
- - [**柴油动力燃料添加**](kubejs/server_scripts/data/DieselEngineFuelTypes.js)
- - [**金属材料配方集成处理**](kubejs/server_scripts/recipes/alone/metal)
- - [**KubeJS流体标签声明**](hotai/dev/latvian/mods/kubejs/fluid)
+ - [**金属材料注册**](kubejs/startup_scripts/register/utils/Material.js)
+ - [**矿石方块注册**](kubejs/startup_scripts/register/block/CommonOres.js)
+ - [**可配置矿石生成**](kubejs/server_scripts/data/worldgen/OresGenerating.js)
+ - [**匠魂材料构建器**](kubejs/server_scripts/data/tconstruct/TConMaterial.js)
+ - [**功能性存储抽屉升级注册**](kubejs/startup_scripts/register/other/DrawerUpgrade.js)
+ - [**柴油动力燃料添加**](kubejs/server_scripts/data/FuelTypes.js)
+ - [**金属材料配方集成处理**](kubejs/server_scripts/recipes/material/metal)
 
 <!--markdownlint-disable MD001 MD033 MD041 MD051-->
 
@@ -73,7 +74,7 @@ Currently in Beta stage.
 ### Server Pack
 - Please keep the `hotai` folders under the root directory and **all** files inside during packaging to ensure the normal operation of multi-block machines.
 - Delete the client mod that affects the server to ensure the normal operation of the server.
-- BUG **must** feedback (it is best to use [**`issues`**](https://github.com/VechniMetel/CodeNameCIM2/issues)!)
+- BUG **must** feedback (it is best to use [**`issues`**](https://github.com/Eternal-Snowstorm/CodeNameCIM2/issues)!)
 
 
 ### Files required for modpack packaging
@@ -90,6 +91,9 @@ Currently in Beta stage.
  - **mods**
  - **resourcepacks**
  - **icon.png**
+ - **ldlib**
+    - **assets**
+       - **mbd2**
  - **LICENSE.md**
  - **README.md**
  - **UpdateLogs.md**
@@ -97,12 +101,10 @@ Currently in Beta stage.
 ---
 
 ### This modpack provides a wide variety of utilities, and we highly encourage the community to make use of them, including but not limited to:
- - [**Metal Material Registration**](kubejs/startup_scripts/register/Metal.js)
- - [**Ore Block Registration**](kubejs/startup_scripts/register/block/ore/Common.js)
- - [**Configurable Ore Generation**](kubejs/server_scripts/data/OresGenerating.js)
- - [**Tinkers’ Construct Material Generator**](kubejs/server_scripts/utils/TConMaterialGenerator.js)
- - [**Tinkers’ Construct Texture Generator**](kubejs/server_scripts/utils/TConTexturesGenerator.js)
- - [**Functional Storage Drawer Upgrade Registration**](kubejs/startup_scripts/register/item/DrawerUpgrade.js)
- - [**Diesel Engine Fuel Addition**](kubejs/server_scripts/data/DieselEngineFuelTypes.js)
- - [**Metal Material Recipe Integration Handling**](kubejs/server_scripts/recipes/alone/metal)
- - [**KubeJS Fluid Tag Declaration**](hotai/dev/latvian/mods/kubejs/fluid)
+ - [**Metal Material Registration**](kubejs/startup_scripts/register/utils/Material.js)
+ - [**Ore Block Registration**](kubejs/startup_scripts/register/block/CommonOres.js)
+ - [**Configurable Ore Generation**](kubejs/server_scripts/data/worldgen/OresGenerating.js)
+ - [**Tinkers’ Construct Material Generator**](kubejs/server_scripts/data/tconstruct/TConMaterial.js)
+ - [**Functional Storage Drawer Upgrade Registration**](kubejs/startup_scripts/register/other/DrawerUpgrade.js)
+ - [**Diesel Engine Fuel Addition**](kubejs/server_scripts/data/FuelTypes.js)
+ - [**Metal Material Recipe Integration Handling**](kubejs/server_scripts/recipes/material/metal)

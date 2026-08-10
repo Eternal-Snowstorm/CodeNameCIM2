@@ -120,12 +120,6 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/iron"
 	]).id("thermal_extra:machine/component_assembly/redstone_servo")
 
-	// 复合钨钢板
-	addComponRecipe("cmi:composite_tungsten_steel_plate", [
-		"cmi:incomplete_tungsten_steel_plate",
-		"#forge:plates/tungsten_steel"
-	])
-
 	// 并行升级 +4
 	addComponRecipe("thermal_parallel:argument_parallel_2", [
 		"thermal_parallel:argument_parallel",

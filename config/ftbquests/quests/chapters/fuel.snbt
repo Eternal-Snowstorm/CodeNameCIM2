@@ -6,6 +6,8 @@
 	icon: "cmi:creosote_wood_chip_briquette"
 	id: "345DC897468FE6CE"
 	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

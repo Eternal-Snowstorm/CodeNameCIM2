@@ -7,6 +7,11 @@ ServerEvents.recipes((event) => {
 		Fluid.of("immersiveengineering:redstone_acid", 100)
 	])
 
+	thermal.bottler("cmi:activated_graphite_chunk", [
+		"immersiveengineering:dust_hop_graphite",
+		Fluid.of("immersiveengineering:redstone_acid", 100)
+	])
+
 	// 填充燃料棒
 	thermal.bottler("cmi:filled_fuel_rod", [
 		"cmi:empty_fuel_rod",
