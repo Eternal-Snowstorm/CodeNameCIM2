@@ -1,4 +1,26 @@
 JEIEvents.hideItems((event) => {
+	/**
+	 * 设置命名空间优先级
+	 * 越往前的命名空间优先级越高
+	 */
+	let namespacePriority = [
+		"cmi",
+		"vintageimprovements",
+		"thermal",
+		"thermalconstruct",
+		"thermalendergy",
+		"thermal_extra",
+		"create",
+		"createdeco",
+		"ae2",
+		"ad_astra",
+		"createaddition",
+		"immersiveengineering",
+		"mekanism",
+		"alexscaves",
+		"tconstruct",
+		"minecraft"
+	]
 
 	let materialTypes = [
 		"ingot",
@@ -21,8 +43,12 @@ JEIEvents.hideItems((event) => {
 		metals.forEach((metal) => {
 			let material = String(metal.getId())
 			let tag = `#forge:${type}s/${material}`
-			let result = findLowPriorityItem(registeredItems, type, material)
-
+			let result = findLowPriorityItems(registeredItems, type, material)
+			if (result == null) {
+				console.warn(`JEI hiding failed for #forge:${type}s/${material}`)
+			} else {
+				console.debug(`JEI hidden for #forge:${type}s/${material}`)
+			}
 			event.hide(result)
 		})
 	})
@@ -30,7 +56,7 @@ JEIEvents.hideItems((event) => {
 	metals.forEach((metal) => {
 		let material = String(metal.getId())
 		let tag = `#forge:raw_materials/${material}`
-		let result = findLowPriorityItem(registeredItems, "raw_material", material)
+		let result = findLowPriorityItems(registeredItems, "raw_material", material)
 
 		event.hide(result)
 	})
@@ -38,7 +64,7 @@ JEIEvents.hideItems((event) => {
 	metals.forEach((metal) => {
 		let material = String(metal.getId())
 		let tag = `#forge:storage_blocks/raw_${material}`
-		let result = findLowPriorityItem(
+		let result = findLowPriorityItems(
 			registeredItems,
 			"raw_storage_block",
 			material
@@ -46,6 +72,32 @@ JEIEvents.hideItems((event) => {
 
 		event.hide(result)
 	})
+
+	/**
+		 * Forge 的物品注册表在首次服务器资源重载前已经可用
+		 * 这里只收集参与金属优先级选择的命名空间, 避免扫描后续逻辑无关的物品
+		 */
+	function collectRegisteredMetalItems() {
+		let allowedNamespaces = new Set(namespacePriority)
+		let itemsByNamespace = {}
+
+		namespacePriority.forEach((namespace) => {
+			itemsByNamespace[namespace] = new Set()
+		})
+
+		ForgeRegistries.ITEMS.getKeys()
+			.toArray()
+			.forEach((key) => {
+				let namespace = String(key.getNamespace())
+
+				if (allowedNamespaces.has(namespace)) {
+					itemsByNamespace[namespace].add(String(key.getPath()))
+				}
+			})
+
+		return itemsByNamespace
+	}
+
 	/**
 	 * 
 	 * @param {Set<string>} itemsByNamespace 
@@ -53,8 +105,9 @@ JEIEvents.hideItems((event) => {
 	 * @param {string} material 
 	 * @returns 
 	 */
-	function findLowPriorityItem(itemsByNamespace, type, material) {
+	function findLowPriorityItems(itemsByNamespace, type, material) {
 		let candidatePaths = getCandidatePaths(type, material)
+		let lowPriorityItems = []
 
 		for (let namespace of namespacePriority) {
 			let registeredPaths = itemsByNamespace[namespace]
@@ -64,16 +117,13 @@ JEIEvents.hideItems((event) => {
 			}
 
 			for (let path of candidatePaths) {
-				if (registeredPaths.has(path)) {
-					let canDelete = itemsByNamespace.delete(`${namespace}:${path}`)
-					if (canDelete) {
-						return itemsByNamespace
-					}
+				if (!registeredPaths.has(path)) {
+					lowPriorityItems.push(`${namespace}:${path}`)
 				}
 			}
 		}
 
-		return null
+		return lowPriorityItems
 	}
 
 	/**
