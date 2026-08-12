@@ -721,11 +721,23 @@ ServerEvents.tags("item", (event) => {
 		.add("cmi:3x3_packing_mold")
 		.add("cmi:unpack_mold")
 		.add("cmi:plate_mold")
-	
+
+	// 月岩
 	event.get("ad_astra:moon_stones")
 		.add("ad_astra:moon_cobblestone")
 		.add("ad_astra:moon_deepslate")
 		.add("ad_astra:moon_stone")
+
+	// 水星岩
+	event.get("ad_astra:mercury_stones")
+		.add("ad_astra:mercury_stone")
+		.add("ad_astra:mercury_cobblestone")
+
+	event.get("forge:slimeballs")
+		.add("alexscaves:ferrouslime_ball")
+
+	event.get("forge:slimeball/ferrous")
+		.add("alexscaves:ferrouslime_ball")
 
 	let crushedMaterialGroup = [
 		"iron",
