@@ -143,4 +143,6 @@ StartupEvents.registry("item", (event) => {
 	addNonDustItem("furnaced_lime")
 	// 草木灰
 	addNonDustItem("plant_ash")
+	// 金星岩粉
+	addNonDustItem("mars_stone")
 })
