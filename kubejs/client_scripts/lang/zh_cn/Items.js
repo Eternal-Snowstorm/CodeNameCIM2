@@ -120,6 +120,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("entro_compound", "恩特罗化合物")
 	addItemLang("entro_oxidizer", "恩特罗氧化剂")
 	addItemLang("sodium_reducing_agent", "钠还原剂")
+	addItemLang("mars_stone_dust", "金星岩粉")
 
 	// 晶体
 	addItemLang("charged_amethyst", "充能紫水晶")
@@ -340,7 +341,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("radioactive_sediment", "放射性沉淀")
 	addItemLang("raw_polonium_dust", "粗钋粉")
 	addItemLang("reduced_polonium", "还原钋")
-
+	addItemLang("raw_polonium", "粗钋")
 
 
 	let moleList = [
