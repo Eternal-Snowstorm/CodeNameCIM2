@@ -264,6 +264,9 @@ StartupEvents.registry("item", (event) => {
 	// 放射性沉淀
 	addMaterial("radioactive_sediment")
 
+	// 粗钋
+	addMaterial("raw_polonium")
+
 	// 粗钋粉
 	addMaterial("raw_polonium_dust")
 
