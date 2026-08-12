@@ -141,7 +141,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("machalite", "燕雀石")
 	addItemLang("dragonite", "辉龙石")
 	addItemLang("magnetic_source", "磁性源质")
-	addItemLang("entro_preoxide_crystal", "过氧化恩特罗水晶")
+	addItemLang("entro_peroxide_crystal", "过氧化恩特罗水晶")
 	addItemLang("reduced_entro_crystal", "还原恩特罗水晶")
 	addItemLang("ionized_entro_crystal", "电离恩特罗水晶")
 	addItemLang("crystal_molten_entro", "晶态熔融恩特罗水晶")
