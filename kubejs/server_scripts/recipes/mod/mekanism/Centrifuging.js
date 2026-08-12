@@ -13,9 +13,4 @@ ServerEvents.recipes((event) => {
 		MekType.Gas.of("mekanismgenerators:tritium", 1)
 	)
 
-	// 钚
-	mekanism.centrifuging(
-		MekType.Gas.of("cmi:plutonium_mixture", 1),
-		MekType.Gas.of("mekanism:plutonium", 1)
-	).id("mekanism:processing/lategame/plutonium")
 })

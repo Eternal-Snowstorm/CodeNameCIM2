@@ -119,4 +119,17 @@ ServerEvents.recipes((event) => {
 		.gasInput(MekType.Gas.of("mekanism:water_vapor", 200))
 		.gasOutput(MekType.Gas.of("mekanism:water_vapor", 200))
 		.id("mekanism:rotary/water")
+
+	mekanism.rotary()
+		.fluidInput(Fluid.of("cmi:radon", 200))
+		.fluidOutput(Fluid.of("cmi:radon", 200))
+		.gasInput(MekType.Gas.of("cmi:radon", 200))
+		.gasOutput(MekType.Gas.of("cmi:radon", 200))
+
+	mekanism.rotary()
+		.fluidInput(Fluid.of("cmi:mercury", 200))
+		.fluidOutput(Fluid.of("cmi:mercury", 200))
+		.gasInput(MekType.Gas.of("cmi:mercury", 200))
+		.gasOutput(MekType.Gas.of("cmi:mercury", 200))
+
 })

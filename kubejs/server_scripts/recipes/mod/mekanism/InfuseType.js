@@ -19,12 +19,6 @@ ServerEvents.recipes((event) => {
 		"cmi:infuse_osmium"
 	)
 
-	// 钛氧化物
-	mekanism.infusion_conversion(
-		"cmi:magnetic_source",
-		"cmi:titanium_oxide"
-	)
-
 	// 灌注量子
 	mekanism.infusion_conversion(
 		"advanced_ae:quantum_infused_dust",
@@ -36,4 +30,11 @@ ServerEvents.recipes((event) => {
 		"cmi:chaotic_void_dust",
 		"cmi:chaotic_void"
 	)
+
+	// 钛氧化物
+	mekanism.infusion_conversion(
+		"cmi:raw_titanium_mixture",
+		"cmi:titanium_oxide"
+	)
+
 })
