@@ -41,7 +41,8 @@ ServerEvents.recipes((event) => {
 		"createdieselgenerators:mold",
 		"mekanism:basic_control_circuit",
 		"mekanism:advanced_control_circuit",
-		"alexscaves:polymer_plate"
+		"alexscaves:polymer_plate",
+		"mekanism:teleportation_core"
 	]
 	removeOutput.forEach((output) => {
 		event.remove({
