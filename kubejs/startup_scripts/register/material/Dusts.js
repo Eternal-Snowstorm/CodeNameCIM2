@@ -97,7 +97,7 @@ StartupEvents.registry("item", (event) => {
 	// 还原恩特罗粉
 	addAloneDustItem("reduced_entro")
 	// 金星岩粉
-	addAloneDustItem("mars_stone")
+	addAloneDustItem("venus_stone")
 
 	// 纯净蓝宝石化合物
 	addNonDustItem("pure_sapphire_compound")
