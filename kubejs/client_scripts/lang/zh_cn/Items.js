@@ -120,7 +120,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("entro_compound", "恩特罗化合物")
 	addItemLang("entro_oxidizer", "恩特罗氧化剂")
 	addItemLang("sodium_reducing_agent", "钠还原剂")
-	addItemLang("mars_stone_dust", "金星岩粉")
+	addItemLang("venus_stone_dust", "金星岩粉")
 
 	// 晶体
 	addItemLang("charged_amethyst", "充能紫水晶")
@@ -143,6 +143,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("dragonite", "辉龙石")
 	addItemLang("magnetic_source", "磁性源质")
 	addItemLang("entro_peroxide_crystal", "过氧化恩特罗水晶")
+	addItemLang("etrium_peroxide_crystal", "过氧化埃忒恩水晶")
 	addItemLang("reduced_entro_crystal", "还原恩特罗水晶")
 	addItemLang("ionized_entro_crystal", "电离恩特罗水晶")
 	addItemLang("crystal_molten_entro", "晶态熔融恩特罗水晶")
