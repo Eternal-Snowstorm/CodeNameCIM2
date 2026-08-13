@@ -116,7 +116,7 @@ StartupEvents.registry("fluid", (event) => {
 	addColorFluid("liquid_crystal_etrium", 0x58ECCD)
 
 	// 晶态恩特罗溶液
-	addColorFluid("crystal_entro_solution", 0x9CFF00)
+	addColorFluid("crystal_entro_solution", 0x81B34A)
 
 	// 过氧化恩特罗溶液
 	addColorFluid("entro_peroxide_solution", 0x62E3D1)
