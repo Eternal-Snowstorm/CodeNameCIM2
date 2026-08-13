@@ -5,46 +5,57 @@ ServerEvents.recipes((event) => {
 	cmi.electrolyzer()
 		.inputItems("alexscaves:unrefined_waste")
 		.outputItems("5x alexscaves:toxic_paste")
-		.outputGases(MekType.Gas.of("cmi:nuke_waste", 100))
+		.outputGases("100x cmi:nuke_waste") // MekType.Gas.of("cmi:nuke_waste", 100)
 		.duration(20 * 5)
 	
 	// 核废料转化
 	mekanism.reaction(
 		"alexscaves:toxic_paste",
-		MekType.Gas.of("mekanism:nuclear_waste", 10),
+		"10x mekanism:nuclear_waste", // MekType.Gas.of("mekanism:nuclear_waste", 10)
 		Fluid.tag("tag", "forge:acid", 10),
-		"air",
-		MekType.Gas.of("cmi:nuke_waste", 10)
-	)
+		"cmi:refined_nuke_waste",
+		"10x cmi:nuke_waste" // MekType.Gas.of("cmi:nuke_waste", 10)
+	).duration(60).energyRequired(12000)
 
 	mekanism.reaction(
-		"air",
-		MekType.Gas.of("cmi:nuke_waste", 10),
+		"cmi:refined_nuke_waste",
+		"10x cmi:nuke_waste", // MekType.Gas.of("cmi:nuke_waste", 10)
 		Fluid.tag("tag", "forge:acid", 10),
 		"alexscaves:toxic_paste",
-		MekType.Gas.of("mekanism:nuclear_waste", 10)
+		"10x mekanism:nuclear_waste" // MekType.Gas.of("mekanism:nuclear_waste", 10)
+	).duration(60).energyRequired(12000)
+
+	mekanism.oxidizing(
+		"cmi:refined_nuke_waste",
+		MekType.Gas.of("cmi:refined_nuke_waste", 200)
+	)
+
+	mekanism.crystallizing(
+		"gas",
+		"alexscaves:toxic_paste",
+		MekType.Gas.of("cmi:refined_nuke_waste", 200)
 	)
 
 	// 含钋/钚电解液
 	cmi.electrolyzer()
-		.inputGases(MekType.Gas.of("cmi:nuke_waste", 100))
+		.inputGases("100x cmi:nuke_waste") // MekType.Gas.of("cmi:nuke_waste", 100)
 		.outputFluids([
 			Fluid.of("cmi:polonium_containing_electrolyte", 100),
 			Fluid.of("cmi:plutonium_containing_electrolyte", 100)
 		])
-		.outputGases(MekType.Gas.of("mekanism:spent_nuclear_waste", 100))
+		.outputGases("100x mekanism:spent_nuclear_waste") // MekType.Gas.of("mekanism:spent_nuclear_waste", 100)
 		.duration(20 * 5)
 
 	// 放射性酸溶液
 	cmi.electrolyzer()
 		.inputFluids([
 			Fluid.of("cmi:plutonium_extract_solution", 100),
-			Fluid.of("tag", "cmi:hydrochloric_acid", 100)
+			Fluid.of("cmi:hydrochloric_acid", 100)
 		])
 		.outputFluids([
 			Fluid.of("cmi:radioactive_acid_solution", 100)
 		])
-		.outputGases(MekType.Gas.of("cmi:radioactive_mixture", 100))
+		.outputGases("100x cmi:radioactive_mixture") // MekType.Gas.of("cmi:radioactive_mixture", 100)
 		.duration(20 * 5)
 
 	// 钚线
@@ -61,7 +72,7 @@ ServerEvents.recipes((event) => {
 			"cmi:plutonium_ionized_crystal"
 		])
 		.inputFluids([
-			Fluid.tag("tag", "cmi:nitric_acid", 100)
+			MBDUtils.withFluidTag("cmi:nitric_acid", 100)
 		])
 		.outputFluids([
 			Fluid.of("cmi:plutonium_containing_solution", 100)
@@ -72,7 +83,7 @@ ServerEvents.recipes((event) => {
 	cmi.chemical_reactor()
 		.inputFluids([
 			Fluid.of("cmi:plutonium_containing_solution", 100),
-			Fluid.tag("tag", "forge:molten_uranium", 180)
+			MBDUtils.withFluidTag("forge:molten_uranium", 180)
 		])
 		.outputItems("immersiveengineering:raw_uranium")
 		.outputFluids([
@@ -97,7 +108,7 @@ ServerEvents.recipes((event) => {
 	cmi.chemical_reactor()
 		.inputItems("2x #forge:dusts/fluorite")
 		.inputFluids([
-			Fluid.of("cmi:polonium_containing_electrolyt", 100)
+			Fluid.of("cmi:polonium_containing_electrolyte", 100)
 		])
 		.outputItems("cmi:radioactive_sediment")
 		.outputFluids([
@@ -107,7 +118,8 @@ ServerEvents.recipes((event) => {
 
 	// 粗钋
 	thermal.crystallizer("cmi:raw_polonium", [
-		Fluid.of("cmi:polonium_containing_solution")
+		"#forge:dusts/fluorite",
+		Fluid.of("cmi:polonium_containing_solution", 100)
 	])
 
 	// 粗钋粉
@@ -143,7 +155,7 @@ ServerEvents.recipes((event) => {
 	// 钋
 	mekanism.oxidizing(
 		"cmi:reduced_polonium",
-		Mek.Gas.of("mekanism:polonium", 100)
+		MekType.Gas.of("mekanism:polonium", 100)
 	)
 
 

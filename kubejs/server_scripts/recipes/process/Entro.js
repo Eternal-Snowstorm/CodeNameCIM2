@@ -37,20 +37,20 @@ ServerEvents.recipes((event) => {
 	// 精炼
 	thermal.refinery([
 		"cmi:crystal_molten_entro",
-		Fluid.of("cmi:molten_ionized_entro", 100)
+		Fluid.of("cmi:ionized_entro_solution", 100)
 	], Fluid.of("cmi:molten_ionized_entro", 200))
 
 	thermal_extra.advanced_refinery([
 		"cmi:crystal_molten_entro",
-		Fluid.of("cmi:molten_ionized_entro", 50)
+		Fluid.of("cmi:ionized_entro_solution", 50)
 	], Fluid.of("cmi:molten_ionized_entro", 100))
 
 	// 钠还原剂
 	cmi.chemical_reactor()
 		.inputItems("2x cmi:electrolized_redstone")
 		.inputFluids([
-			Fluid.of("cmi:molten_ionized_entro", 100),
-			Fluid.tag("tag", "forge:sodium", 100)
+			Fluid.of("cmi:ionized_entro_solution", 100),
+			MBDUtils.withFluidTag("forge:sodium", 100)
 		])
 		.outputItems("4x cmi:sodium_reducing_agent")
 		.duration(20 * 2)
@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
 
 	// 晶态恩特罗溶液
 	cmi.electronic_blast_furnace()
-		.inputItems("cmi:reduced_entro_crystal")
+		.inputItems("cmi:reduced_entro_dust")
 		.inputFluids([
 			Fluid.of("cmi:liquid_crystal_etrium", 50)
 		])
@@ -111,7 +111,7 @@ ServerEvents.recipes((event) => {
 	cmi.chemical_reactor()
 		.inputFluids([
 			Fluid.of("cmi:molten_silicon_containing_compound", 50),
-			Fluid.tag("tag", "cmi:delta_unstable_solution", 50),
+			MBDUtils.withFluidTag("cmi:delta_unstable_solution", 50),
 			Fluid.of("cmi:pure_crystal_source", 50)
 		])
 		.outputItems("4x cmi:entro_compound")
