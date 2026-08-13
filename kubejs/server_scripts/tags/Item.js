@@ -733,6 +733,13 @@ ServerEvents.tags("item", (event) => {
 		.add("ad_astra:mercury_stone")
 		.add("ad_astra:mercury_cobblestone")
 
+	// 火星岩
+	event.get("ad_astra:venus_stones")
+		.add("ad_astra:venus_sandstone")
+		.add("ad_astra:venus_stone")
+		.add("ad_astra:venus_cobblestone")
+
+	// 史莱姆球
 	event.get("forge:slimeballs")
 		.add("alexscaves:ferrouslime_ball")
 
