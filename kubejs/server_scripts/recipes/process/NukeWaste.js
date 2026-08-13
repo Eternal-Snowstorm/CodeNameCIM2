@@ -7,6 +7,23 @@ ServerEvents.recipes((event) => {
 		.outputItems("5x alexscaves:toxic_paste")
 		.outputGases(MekType.Gas.of("cmi:nuke_waste", 100))
 		.duration(20 * 5)
+	
+	// 核废料转化
+	mekanism.reaction(
+		"alexscaves:toxic_paste",
+		MekType.Gas.of("mekanism:nuclear_waste", 10),
+		Fluid.tag("tag", "forge:acid", 10),
+		"air",
+		MekType.Gas.of("cmi:nuke_waste", 10)
+	)
+
+	mekanism.reaction(
+		"air",
+		MekType.Gas.of("cmi:nuke_waste", 10),
+		Fluid.tag("tag", "forge:acid", 10),
+		"alexscaves:toxic_paste",
+		MekType.Gas.of("mekanism:nuclear_waste", 10)
+	)
 
 	// 含钋/钚电解液
 	cmi.electrolyzer()
@@ -15,7 +32,7 @@ ServerEvents.recipes((event) => {
 			Fluid.of("cmi:polonium_containing_electrolyte", 100),
 			Fluid.of("cmi:plutonium_containing_electrolyte", 100)
 		])
-		.outputGases(MekType.Gas.of("cmi:spent_nuke_waste", 100))
+		.outputGases(MekType.Gas.of("mekanism:spent_nuclear_waste", 100))
 		.duration(20 * 5)
 
 	// 放射性酸溶液

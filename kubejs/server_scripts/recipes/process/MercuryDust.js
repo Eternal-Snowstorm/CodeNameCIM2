@@ -20,11 +20,11 @@ ServerEvents.recipes((event) => {
 	// 超导汞锭
 	mekanism.reaction(
 		"#forge:ingots/silver",
-		MekType.Gas.of("mekanism:steam", 100), // overheated_mercury_mixture
+		MekType.Gas.of("cmi:overheated_mercury_mixture", 100),
 		Fluid.of("cmi:molten_etrium", 90),
 		"cmi:superconducting_mercury_ingot",
 		MekType.Gas.of("mekanism:sulfur_trioxide", 100)
-	)
+	).duration(60).energyRequired(12000)
 
 	// 电解
 	cmi.electrolyzer()
@@ -41,6 +41,6 @@ ServerEvents.recipes((event) => {
 		MekType.Gas.of("cmi:mercury", 1000),
 		Fluid.tag("tag", "forge:ender", 1000),
 		"mekanism:teleportation_core"
-	)
+	).duration(60).energyRequired(12000)
 
 })
