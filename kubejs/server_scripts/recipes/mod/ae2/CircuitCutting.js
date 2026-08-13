@@ -69,6 +69,12 @@ ServerEvents.recipes((event) => {
 		.item("cmi:germanium_crystal")
 		.fluid("minecraft:water", 100)
 		.build()
+	
+	// 恩特罗合金晶圆
+	new CircuitCutterRecipe("cmi:entro_alloy_wafer")
+		.item("cmi:entro_alloy")
+		.fluid("minecraft:water", 100)
+		.build()
 
 	// 逻辑电路板
 	new CircuitCutterRecipe(Item.of(Print.LOGIC, 9))
