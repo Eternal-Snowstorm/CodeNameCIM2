@@ -69,7 +69,7 @@ ServerEvents.recipes((event) => {
 		.item("cmi:germanium_crystal")
 		.fluid("minecraft:water", 100)
 		.build()
-	
+
 	// 恩特罗合金晶圆
 	new CircuitCutterRecipe("cmi:entro_alloy_wafer")
 		.item("cmi:entro_alloy")
@@ -111,4 +111,11 @@ ServerEvents.recipes((event) => {
 		.item("#forge:gems/entro", 2)
 		.fluid("cmi:crystal_etching_solution", 100)
 		.build()
+
+	// 超导汞板
+	new CircuitCutterRecipe("cmi:superconducting_mercury_plate")
+		.item("cmi:superconducting_mercury_ingot")
+		.fluid("minecraft:water", 100)
+		.build()
+
 })
