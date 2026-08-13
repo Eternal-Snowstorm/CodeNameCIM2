@@ -105,7 +105,9 @@ ClientEvents.lang("zh_cn", (event) => {
 		["redstone", "红石"],
 		["potion", "秘药"],
 		["bronze", "青铜"],
-		["air_tight", "气密"]
+		["air_tight", "气密"],
+		["aeronautic", "航空"],
+		["astronautic", "宇航"]
 	]
 	mechanismGroup.forEach(([material, name]) => {
 		addFlashDriveLang(material, name)

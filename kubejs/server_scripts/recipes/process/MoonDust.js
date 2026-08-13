@@ -6,7 +6,13 @@ ServerEvents.recipes((event) => {
 		.inputItems("#ad_astra:moon_stones")
 		.outputItems("cmi:pyrolyzed_moon_rock_residue")
 		.outputGases("10x cmi:helium_3")
-		.duration(20 * 5)
+		.duration(20)
+
+	// 活化
+	mekanism.activating(
+		MekType.Gas.of("cmi:helium_3", 1),
+		MekType.Gas.of("mekanismgenerators:tritium", 1)
+	).id("mekanismgenerators:activating/tritium")
 
 	// 洗涤
 	create.splashing([

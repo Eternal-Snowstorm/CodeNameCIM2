@@ -39,9 +39,9 @@ ServerEvents.recipes((event) => {
 		"tconstruct:nether_grout",
 		"tconstruct:grout",
 		"createdieselgenerators:mold",
-		"mekanism:basic_control_circuit",
-		"mekanism:advanced_control_circuit",
-		"alexscaves:polymer_plate"
+		"#forge:circuits",
+		"alexscaves:polymer_plate",
+		"mekanism:teleportation_core"
 	]
 	removeOutput.forEach((output) => {
 		event.remove({

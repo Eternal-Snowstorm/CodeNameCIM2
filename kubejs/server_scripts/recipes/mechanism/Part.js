@@ -41,5 +41,12 @@ ServerEvents.recipes((event) => {
 		"#forge:gems/dreamcore"
 	])
 
+	// 通用
+	kubejs.shapeless("4x cmi:mekanism_mechanism_part", [
+		"#forge:plates/osmium",
+		"2x #forge:dusts/cobalt",
+		"#forge:gears/chromeplated_steel",
+		"#forge:gems/dreamcore"
+	])
 
 })

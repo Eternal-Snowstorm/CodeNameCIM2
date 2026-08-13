@@ -206,16 +206,30 @@ ServerEvents.recipes((event) => {
 
 	// 基础控制电路
 	new InscriberRecipe("mekanism:basic_control_circuit")
-		.bottom("cmi:inscribed_silicon")
+		.top("cmi:inscribed_silicon")
 		.middle("cmi:osmium_wafer")
-		.top("#forge:alloys/enriched")
+		.bottom("#forge:alloys/enriched")
 		.press()
 	
 	// 高级控制电路
 	new InscriberRecipe("mekanism:advanced_control_circuit")
-		.bottom("mekanism:alloy_infused")
-		.middle("cmi:silicon_wafer")
 		.top("cmi:inscribed_silicon")
+		.middle("cmi:silicon_wafer")
+		.bottom("mekanism:alloy_infused")
+		.press()
+
+	// 精英控制电路
+	new InscriberRecipe("mekanism:elite_control_circuit")
+		.top("cmi:inscribed_silicon")
+		.middle("cmi:germanium_wafer")
+		.bottom("mekanism:alloy_reinforced")
+		.press()
+	
+	// 终极控制电路
+	new InscriberRecipe("mekanism:ultimate_control_circuit")
+		.top("advanced_ae:quantum_processor")
+		.middle("cmi:entro_alloy_wafer")
+		.bottom("mekanism:alloy_atomic")
 		.press()
 	
 })

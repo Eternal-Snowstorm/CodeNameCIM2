@@ -107,6 +107,33 @@ ServerEvents.recipes((event) => {
 		.input("mekanism:basic_control_circuit")
 		.build()
 
+	// 高级通用构件基座
+	new ReactionRecipe(item("cmi:advanced_mekanism_mechanism_basement"))
+		.energy(2000)
+		.fluid("advanced_ae:quantum_infusion_source", 100)
+		.input("ae2:engineering_processor")
+		.input("mekanism:alloy_infused")
+		.input("mekanism:advanced_control_circuit")
+		.build()
+
+	// 精英通用构件基座
+	new ReactionRecipe(item("cmi:elite_mekanism_mechanism_basement"))
+		.energy(2000)
+		.fluid("cmi:ferrouslime", 100)
+		.input("cmi:concurrent_processor")
+		.input("mekanism:alloy_reinforced")
+		.input("cmi:elite_electronic_components")
+		.build()
+
+	// 终级通用构件基座
+	new ReactionRecipe(item("cmi:ultimate_mekanism_mechanism_basement"))
+		.energy(2000)
+		.fluid("cmi:composite_magnetic_fluid", 100)
+		.input("advanced_ae:quantum_processor")
+		.input("mekanism:alloy_atomic")
+		.input("mekanism:ultimate_control_circuit")
+		.build()
+
 	// 碳聚合催化片
 	new ReactionRecipe(item("cmi:carbon_polymerization_catalytic_plate"))
 		.energy(2000)
@@ -123,7 +150,7 @@ ServerEvents.recipes((event) => {
 		.input("cmi:graphene")
 		.input("#forge:plates/aluminum_alloy")
 		.build()
-	
+
 	// 宇航构件基座
 	new ReactionRecipe(item("cmi:astronautic_mechanism_basement"))
 		.fluid("advanced_ae:quantum_infusion_source", 100)
@@ -158,7 +185,7 @@ ServerEvents.recipes((event) => {
 		.input("alexscaves:polymer_plate", 16)
 		.input("mekanism:reprocessed_fissile_fragment", 8)
 		.build()
-	
+
 	// 复合钨钢板
 	new ReactionRecipe(item("cmi:composite_tungsten_steel_plate"))
 		.energy(16000)
