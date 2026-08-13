@@ -5,17 +5,17 @@ ServerEvents.recipes((event) => {
 	cmi.electrolyzer()
 		.inputItems("alexscaves:unrefined_waste")
 		.outputItems("5x alexscaves:toxic_paste")
-		.outputGases(MekType.Gas.of("mekanism:antimatter", 100)) // nuclear_waste
+		.outputGases(MekType.Gas.of("cmi:nuke_waste", 100))
 		.duration(20 * 5)
 
 	// 含钋/钚电解液
 	cmi.electrolyzer()
-		.inputGases(MekType.Gas.of("mekanism:antimatter", 100)) // nuclear_waste
+		.inputGases(MekType.Gas.of("cmi:nuke_waste", 100))
 		.outputFluids([
 			Fluid.of("cmi:polonium_containing_electrolyte", 100),
 			Fluid.of("cmi:plutonium_containing_electrolyte", 100)
 		])
-		.outputGases(MekType.Gas.of("mekanism:antimatter", 100)) // spent_nuclear_waste
+		.outputGases(MekType.Gas.of("cmi:spent_nuke_waste", 100))
 		.duration(20 * 5)
 
 	// 放射性酸溶液
@@ -89,17 +89,15 @@ ServerEvents.recipes((event) => {
 		.duration(20 * 5)
 
 	// 粗钋
-	thermal.crystallizer("cmi:raw_polonium_dust", [ // cmi:raw_polonium
+	thermal.crystallizer("cmi:raw_polonium", [
 		Fluid.of("cmi:polonium_containing_solution")
 	])
 
 	// 粗钋粉
-	/*
 	mekanism.crushing(
 		"cmi:raw_polonium_dust",
 		"cmi:raw_polonium"
 	)
-	 */
 
 	// 钋溶液
 	cmi.chemical_reactor()
