@@ -96,6 +96,8 @@ StartupEvents.registry("item", (event) => {
 	addAloneDustItem("entro_peroxide")
 	// 还原恩特罗粉
 	addAloneDustItem("reduced_entro")
+	// 金星岩粉
+	addAloneDustItem("mars_stone")
 
 	// 纯净蓝宝石化合物
 	addNonDustItem("pure_sapphire_compound")
@@ -143,6 +145,5 @@ StartupEvents.registry("item", (event) => {
 	addNonDustItem("furnaced_lime")
 	// 草木灰
 	addNonDustItem("plant_ash")
-	// 金星岩粉
-	addNonDustItem("mars_stone")
+	
 })
