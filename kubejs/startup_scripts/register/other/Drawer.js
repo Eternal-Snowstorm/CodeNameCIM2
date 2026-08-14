@@ -12,6 +12,8 @@ FunctionalStorageJSEvents.register((event) => {
 	function addDrawerUpgrade(name, multiplier) {
 		event.addUpgrade(`cmi:${name}_upgrade`, (builder) => {
 			builder.multiplier(multiplier)
+				.fluidMultiplier(multiplier)
+				.rangeMultiplier(multiplier)
 		})
 	}
 
