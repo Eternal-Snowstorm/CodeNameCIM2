@@ -48,11 +48,11 @@
 	#Range: 1 ~ 64
 	handPointerMaxMailboxes = 5
 	#Allow the fluid transporter to extract infinite water from waterlogged leaves
-	fluidTransporterInfiniteWaterEnabled = false
+	fluidTransporterInfiniteWaterEnabled = true
 	#Allow the faucet and smart faucet to extract infinite water from waterlogged leaves
-	faucetInfiniteWaterEnabled = false
+	faucetInfiniteWaterEnabled = true
 	#Allow the smart hopper to extract infinite water from waterlogged leaves
-	smartHopperInfiniteWaterEnabled = false
+	smartHopperInfiniteWaterEnabled = true
 	#Infinite tank capacity (in B/buckets). -1 = follow Create's infinite fluid capacity config option
 	#Range: -1 ~ 2147483
 	infiniteFluidTankCapacity = -1
