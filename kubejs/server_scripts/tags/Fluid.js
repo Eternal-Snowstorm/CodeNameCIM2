@@ -5,6 +5,9 @@ ServerEvents.tags("fluid", (event) => {
 			.removeAll()
 	}
 
+	event.get("forge:high_temperature_steam")
+		.add("minecraft:lava")
+
 	// 柴油
 	event.get("forge:diesel")
 		.add("thermal_extra:diesel")

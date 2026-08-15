@@ -67,9 +67,12 @@ StartupEvents.registry("item", (event) => {
 	// 还原恩特罗水晶
 	addNonGemItem("reduced_entro_crystal")
 	// 过氧化恩特罗水晶
-	addNonGemItem("entro_preoxide_crystal")
+	addNonGemItem("entro_peroxide_crystal")
+	// 过氧化埃忒恩
+	addNonGemItem("etrium_peroxide_crystal")
 	// 燕雀石
 	addNonGemItem("machalite")
 	// 辉龙石
 	addNonGemItem("dragonite")
+
 })

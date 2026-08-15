@@ -37,7 +37,7 @@ StartupEvents.registry("fluid", (event) => {
 	// 晶体催生剂
 	addColorFluid("crystal_catalyt", 0x90EE90)
 
-	//盐酸
+	// 盐酸
 	addAloneFluid("hydrochloric_acid")
 
 	// 海水
@@ -103,14 +103,20 @@ StartupEvents.registry("fluid", (event) => {
 	// 熔融电离恩特罗
 	addColorFluid("molten_ionized_entro", 0x009556)
 
+	// 恩特罗电离液
+	addColorFluid("ionized_entro_solution", 0x00C874)
+
 	// 复合磁流体
 	addColorFluid("composite_magnetic_fluid", 0x6549B0)
 
 	// 液晶态恩特罗
 	addColorFluid("liquid_crystal_entro", 0x9CFF00)
 
+	// 液晶态埃忒恩
+	addColorFluid("liquid_crystal_etrium", 0x58ECCD)
+
 	// 晶态恩特罗溶液
-	addColorFluid("crystal_entro_solution", 0x9CFF00)
+	addColorFluid("crystal_entro_solution", 0x81B34A)
 
 	// 过氧化恩特罗溶液
 	addColorFluid("entro_peroxide_solution", 0x62E3D1)

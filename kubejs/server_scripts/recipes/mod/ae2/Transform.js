@@ -69,6 +69,12 @@ ServerEvents.recipes((event) => {
 		.input("ae2:singularity")
 		.input("cmi:ender_mechanism")
 		.explosion()
+		.build("ae2:transform/entangled_singularity_from_mechanism")
+
+	new TransformRecipe("ae2:quantum_entangled_singularity", 8)
+		.input("ae2:singularity")
+		.input("mekanism:teleportation_core")
+		.explosion()
 		.build("ae2:transform/entangled_singularity")
 
 	// 砖泥

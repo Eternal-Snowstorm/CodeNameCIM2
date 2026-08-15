@@ -19,18 +19,6 @@ ServerEvents.recipes((event) => {
 		"tconstruct:nugget_cast"
 	])
 
-	// 超导汞锭
-	thermal.chiller("cmi:superconducting_mercury_ingot", [
-		Fluid.of("cmi:mercury", 90),
-		"#forge:ingots/silver"
-	]).energy(4000)
-
-	// 超导汞板
-	thermal.chiller("cmi:superconducting_mercury_plate", [
-		Fluid.of("cmi:mercury", 90),
-		"#forge:plates/silver"
-	]).energy(4000)
-
 	// 单晶硅
 	thermal.chiller("cmi:single_crystal_silicon", [
 		Fluid.of("cmi:molten_pure_silicon", 250),

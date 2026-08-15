@@ -18,4 +18,17 @@ ServerEvents.recipes((event) => {
 		"cmi:carbon_deposition_catalytic_plate",
 		Fluid.of("cmi:hdpe", 100)
 	])
+
+	// 纯净石英
+	thermal.crystallizer("cmi:pure_quartz_prism", [
+		"#forge:dusts/pure_quartz",
+		Fluid.of("cmi:crystal_catalyt", 200)
+	]).energy(4000)
+
+	// 幻晶原石
+	thermal.crystallizer("2x cmi:dreamcore_ore", [
+		"cmi:dreamcore_seed",
+		Fluid.of("cmi:crystal_catalyt", 200)
+	]).energy(4000)
+
 })
