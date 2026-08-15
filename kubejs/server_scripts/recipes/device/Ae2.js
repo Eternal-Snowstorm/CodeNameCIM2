@@ -8,6 +8,17 @@ ServerEvents.recipes((event) => {
 		}
 	])
 
+	// 福鲁伊克斯色ME玻璃线缆
+	//哇还有BA
+	kubejs.shaped("8x ae2:fluix_glass_cable", [
+		"AAA",
+		"ABA",
+		"AAA"
+	], {
+		B: "ae2:fluix_crystal",
+		A: "cmi:optical_fiber"
+	}).id("ae2:network/cables/glass_fluix")
+
 	// ME物品元件外壳
 	kubejs.shaped("2x ae2:item_cell_housing", [
 		"XYX",
