@@ -604,7 +604,7 @@
 			]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "大炉子分支"
+			subtitle: "冶炼炉分支"
 			tasks: [
 				{
 					id: "7FCFDEC97D4EA032"

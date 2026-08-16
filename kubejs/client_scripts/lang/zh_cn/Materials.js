@@ -51,6 +51,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addMaterialLang("osmium", "锇")
 	addMaterialLang("fluorite", "氟石")
 	addMaterialLang("compressed_iron", "加压铁")
+	addMaterialLang("glass", "玻璃")
 
 	/**
 	 * 
@@ -64,6 +65,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`item.${Cmi.MODID}.${key}_dust`, `${value}粉`)
 		event.add(`item.${Cmi.MODID}.${key}_gear`, `${value}齿轮`)
 		event.add(`item.${Cmi.MODID}.${key}_rod`, `${value}杆`)
+		event.add(`item.${Cmi.MODID}.${key}_wire`, `${value}线`)
 
 		event.add(`item.${Cmi.MODID}.dirty_${key}_dust`, `污浊${value}粉`)
 		event.add(`item.${Cmi.MODID}.${key}_clump`, `${value}碎块`)

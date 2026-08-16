@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, create } = event.getRecipes()
+	let {  create } = event.getRecipes()
 
 	// 机壳增产
 	create.deploying(`create:andesite_casing`, [

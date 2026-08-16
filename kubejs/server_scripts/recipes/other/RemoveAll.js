@@ -13,11 +13,12 @@ ServerEvents.recipes((event) => {
 		"createaddition:compat/immersiveengineering/item_application/reinforced_blast_brick",
 		"immersiveengineering:crafting/blastbrick_reinforced",
 		"createdieselgenerators:bulk_fermenting/lava",
-		"immersiveengineering:crafting/treated_scaffold"
+		"immersiveengineering:crafting/treated_scaffold",
 	])
 
 	let removedMods = [
-		"steampowered"
+		"steampowered",
+		"create_steam_ages"
 	]
 	removedMods.forEach((mod) => {
 		event.remove({
