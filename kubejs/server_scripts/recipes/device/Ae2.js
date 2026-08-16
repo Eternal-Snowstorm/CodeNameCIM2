@@ -19,6 +19,14 @@ ServerEvents.recipes((event) => {
 		A: "cmi:optical_fiber"
 	}).id("ae2:network/cables/glass_fluix")
 
+	// 石英纤维
+	kubejs.shaped("ae2:quartz_fiber", [
+		"AA",
+		"AA"
+	], {
+		A: "cmi:optical_fiber"
+	}).id("ae2:network/parts/quartz_fiber_part")
+
 	// ME物品元件外壳
 	kubejs.shaped("2x ae2:item_cell_housing", [
 		"XYX",
