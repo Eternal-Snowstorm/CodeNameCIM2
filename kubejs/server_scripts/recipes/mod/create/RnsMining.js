@@ -1,13 +1,12 @@
 ServerEvents.recipes((event) => {
-
 	/**
 	 * 
-	 * @param {InputItem_} deposit_block 
+	 * @param {InputItem_} depositBlock 
 	 */
-	function MiningRecipe(deposit_block) {
+	function MiningRecipe(depositBlock) {
 		this.recipe = {
 			"type": "create_rns:mining",
-			"deposit_block": deposit_block.toString(),
+			"deposit_block": depositBlock.toString(),
 			"replace_when_depleted": "create_rns:depleted_deposit_block",
 			"durability": {
 				"core": 200000,
@@ -18,6 +17,11 @@ ServerEvents.recipes((event) => {
 		}
 		return this
 	}
+	/**
+	 * 
+	 * @param {ResourceLocation_} dim 
+	 * @returns 
+	 */
 	MiningRecipe.prototype.dimension = function (dim) {
 		this.recipe.dimension = dim
 		return this
