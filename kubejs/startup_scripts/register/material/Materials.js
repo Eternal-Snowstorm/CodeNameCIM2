@@ -334,3 +334,8 @@ new Material("aluminum_alloy", "iron")
 	.gear()
 	.block()
 	.molten()
+
+// flyks
+new Material("fluix", "wooden")
+	.color(0x915DCD, 0x373B72)
+	.molten()

@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
 		.cast_consumed(true)
 		.cooling_time(20 * 4)
 
-	// 冰!
+	// wc冰!
 	tconstruct.casting_basin("minecraft:ice")
 		.fluid(Fluid.of("minecraft:water", 1000))
 		.cast("#forge:ice")
@@ -197,6 +197,13 @@ ServerEvents.recipes((event) => {
 	tconstruct.casting_table("createdieselgenerators:mold")
 		.fluid(Fluid.of("cmi:molten_industrial_iron", 90 * 2))
 		.cooling_time(20 * 3)
+	
+	// 玻璃杆
+	tconstruct.casting_table("cmi:glass_rod")
+		.fluid(Fluid.of("tconstruct:molten_glass", 100))
+		.cast("#tconstruct:casts/multi_use/rod")
+		.cooling_time(20 * 2)
+		.cast_consumed(true)
 
 	// 强化高炉砖
 	tconstruct.casting_basin("immersiveengineering:blastbrick_reinforced")

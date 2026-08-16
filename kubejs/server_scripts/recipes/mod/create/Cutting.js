@@ -11,4 +11,10 @@ ServerEvents.recipes((event) => {
 	], [
 		"ae2:mysterious_cube"
 	])
+
+	create.cutting([
+		"4x cmi:optical_fiber",
+	], [
+		"ae2:quartz_fiber"
+	])
 })
