@@ -181,14 +181,6 @@ StartupEvents.registry("item", (event) => {
 	// 铁氧体磁芯	
 	addMaterial("ferrit_core")
 
-	// 玻璃棒
-	addMaterial("glass_rod")
-
-	// 玻璃纤维
-	addMaterial("glass_fiber")
-		.tag("forge:wires/glass")
-		.tag("forge:wires")
-
 	// 光纤
 	addMaterial("optical_fiber")
 		.tag("forge:wires")
