@@ -3,7 +3,6 @@ ClientEvents.highPriorityAssets((event) => {
 	const MACHINE_TEXTURE_PATH = "cmi:block/machine"
 	const IO_TEXTURE_PATH = `${MACHINE_TEXTURE_PATH}/io`
 
-	const IS_DEBUG_MODE = false
 
 	/**
 	 * 生成一个 Orientable Block Model
@@ -19,7 +18,7 @@ ClientEvents.highPriorityAssets((event) => {
 			generator.texture("layered", front)
 		})
 
-		if (IS_DEBUG_MODE) {
+		if (CmiGlobal.isDebug) {
 			console.info(`[GenMBDModel] Generated: assets/cmi/models/block/${model}.json`)
 		}
 	}

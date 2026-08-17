@@ -1,5 +1,7 @@
 // priority: 100
 
+CmiGlobal.isDebug = true
+
 /*
  * v代表该材料是由TCon本体添加的
  * t代表该材料是由热力工匠添加的

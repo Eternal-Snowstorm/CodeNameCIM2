@@ -89,7 +89,6 @@ function spawnEntityByMultiblock(
 	onBuild
 ) {
 	let { player, block, level } = event
-	const IS_DEBUG = false
 
 	if (event.hand !== InteractionHand.MAIN_HAND) {
 		return
@@ -113,7 +112,7 @@ function spawnEntityByMultiblock(
 
 	player.swing()
 
-	if (!IS_DEBUG) {
+	if (!CmiGlobal.isDebug) {
 		multiblock.destroyAll(false)
 	}
 

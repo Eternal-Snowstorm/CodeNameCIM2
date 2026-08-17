@@ -1,8 +1,7 @@
 MbtoolKJSEvents.InitMbtoolStructures((event) => {
 	let { structures } = event
-	const IS_DEBUG_MODE = true
 
-	if (IS_DEBUG_MODE) {
+	if (CmiGlobal.isDebug) {
 		for (let i = 0; i < structures.length; i++) {
 			console.log(structures[i].getId().toString())
 		}

@@ -1,7 +1,11 @@
 BlockEvents.rightClicked((event) => {
 	let { item, block, player } = event
 
-	if (event.hand !== "MAIN_HAND") {
+	if (!CmiGlobal.isDebug) {
+		return
+	}
+
+	if (event.getHand() !== InteractionHand.MAIN_HAND) {
 		return
 	}
 
