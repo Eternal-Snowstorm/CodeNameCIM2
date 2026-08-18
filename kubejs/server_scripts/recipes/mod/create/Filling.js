@@ -63,4 +63,10 @@ ServerEvents.recipes((event) => {
 		"cmi:dreamcore_seed",
 		Fluid.of("cmi:crystal_catalyt", 200)
 	])
+
+	// 福鲁伊克斯线
+	create.filling("cmi:fluix_wire", [
+		"cmi:optical_fiber",
+		Fluid.of("cmi:molten_fluix", 25)
+	])
 })

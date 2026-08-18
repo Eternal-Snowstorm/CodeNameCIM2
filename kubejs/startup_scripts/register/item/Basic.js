@@ -189,7 +189,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("fluix_wire")
 		.tag("forge:wires/fluix")
 		.tag("forge:wires")
-
+	
 	// 磁触点
 	addMaterial("magnetic_contact")
 
