@@ -114,7 +114,7 @@ CMI Dev.json
 # Config
 /config/*
 /config/jei/world/*
-config/nebula/value.txt
+/config/nebula/value.txt
 !/config/nebula*
 !/config/alexscaves_biome_generation
 !/config/paxi
