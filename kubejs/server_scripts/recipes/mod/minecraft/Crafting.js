@@ -171,7 +171,7 @@ ServerEvents.recipes((event) => {
 
 	// 光纤
 	kubejs.shapeless("cmi:optical_fiber", [
-		"4x cmi:glass_fiber",
+		"4x cmi:glass_wire",
 		"4x ae2:certus_quartz_dust",
 		"thermal:cured_rubber"
 	]).id("cmi:crafting/optical_fiber")
