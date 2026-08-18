@@ -153,6 +153,7 @@
   "supplementaries:safe": null,
   "treechop:plugin": null,
   "treetap:tap": null,
+  "uti:block_name": null,
   "uti:entity_name": null,
   "uti:object_name": null,
   "yes_steve_model:model_info": null
