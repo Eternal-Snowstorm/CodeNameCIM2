@@ -1,7 +1,8 @@
 ServerEvents.recipes((event) => {
 	/**
+	 * 构造函数的builder
 	 * 
-	 * @param {InputItem_} depositBlock 
+	 * @param {InputItem_} depositBlock 被矿机开采的方块ID
 	 */
 	function MiningRecipe(depositBlock) {
 		this.recipe = {
@@ -18,8 +19,9 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 	/**
+	 * 设置配方运行的维度, 若为空则默认为主世界
 	 * 
-	 * @param {ResourceLocation_} dim 
+	 * @param {ResourceLocation_} dim 配方运行的维度
 	 * @returns 
 	 */
 	MiningRecipe.prototype.dimension = function (dim) {
@@ -28,7 +30,7 @@ ServerEvents.recipes((event) => {
 	}
 	/**
 	 * 
-	 * @param {InputItem_[]} item 
+	 * @param {InputItem_[]} item 默认输出的产物
 	 * @returns 
 	 */
 	MiningRecipe.prototype.defaultItem = function (item) {
@@ -43,9 +45,10 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 	/**
+	 * 设置"超频"催化下的开采产物
 	 * 
-	 * @param {Number} chance
-	 * @param {InputItem_[]} item 
+	 * @param {Number} chance 产物输出的概率
+	 * @param {InputItem_[]} item 该催化效果下输出的产物
 	 * @returns 
 	 */
 	MiningRecipe.prototype.overclockItem = function (chance, item) {
@@ -65,9 +68,10 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 	/**
+	 * 设置"微弱共振"催化下的开采产物
 	 * 
-	 * @param {Number} chance
-	 * @param {InputItem_[]} item 
+	 * @param {Number} chance 产物输出的概率
+	 * @param {InputItem_[]} item 该催化效果下输出的产物
 	 * @returns 
 	 */
 	MiningRecipe.prototype.faintResonanceItem = function (chance, item) {
@@ -89,9 +93,10 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 	/**
+	 * 设置"共振"催化下的开采产物
 	 * 
-	 * @param {Number} chance
-	 * @param {InputItem_[]} item 
+	 * @param {Number} chance 产物输出的概率
+	 * @param {InputItem_[]} item 该催化效果下输出的产物
 	 * @returns 
 	 */
 	MiningRecipe.prototype.resonanceItem = function (chance, item) {
@@ -113,9 +118,10 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 	/**
+	 * 设置"微弱破碎共振"催化下的开采产物
 	 * 
-	 * @param {Number} chance
-	 * @param {InputItem_[]} item 
+	 * @param {Number} chance 产物输出的概率
+	 * @param {InputItem_[]} item 该催化效果下输出的产物
 	 * @returns 
 	 */
 	MiningRecipe.prototype.faintShatterItem = function (chance, item) {
@@ -136,9 +142,10 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 	/**
+	 * 设置"破碎共振"催化下的开采产物
 	 * 
-	 * @param {Number} chance
-	 * @param {InputItem_[]} item 
+	 * @param {Number} chance 产物输出的概率
+	 * @param {InputItem_[]} item 该催化效果下输出的产物
 	 * @returns 
 	 */
 	MiningRecipe.prototype.shatterItem = function (chance, item) {
@@ -161,9 +168,10 @@ ServerEvents.recipes((event) => {
 	}
 
 	/**
+	 * 设置"微弱稳定共振"催化下的开采产物
 	 * 
-	 * @param {Number} chance
-	 * @param {InputItem_[]} item 
+	 * @param {Number} chance 产物输出的概率
+	 * @param {InputItem_[]} item 该催化效果下输出的产物
 	 * @returns 
 	 */
 	MiningRecipe.prototype.faintStabilizeItem = function (chance, item) {
@@ -185,9 +193,10 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 	/**
+	 * 设置"稳定共振"催化下的开采产物
 	 * 
-	 * @param {Number} chance
-	 * @param {InputItem_[]} item 
+	 * @param {Number} chance 产物输出的概率
+	 * @param {InputItem_[]} item 该催化效果下输出的产物
 	 * @returns 
 	 */
 	MiningRecipe.prototype.stabilizeItem = function (chance, item) {
@@ -209,8 +218,10 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 	/**
+	 * 最终执行配方的构建, 是实际输出配方的链式方法
+	 * 该链式方法需要置于最后
 	 * 
-	 * @param {string} id 
+	 * @param {string} id 配方ID, 为空则自动生成kjs id
 	 */
 	MiningRecipe.prototype.build = function (id) {
 		let builder = event.custom(this.recipe)
