@@ -46,6 +46,12 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.${Cmi.MODID}.${key}_stairs`, `${value}楼梯`)
 	}
 
+	function addDrawerLang(key, value) {
+		event.add(`block.${Cmi.MODID}.${key}_1`, `${value}抽屉(1x1)`)
+		event.add(`block.${Cmi.MODID}.${key}_2`, `${value}抽屉(1x2)`)
+		event.add(`block.${Cmi.MODID}.${key}_4`, `${value}抽屉(2x2)`)
+	}
+
 	addCasingLang("iron", "铁")
 	addCasingLang("bronze", "青铜")
 	addCasingLang("steel", "钢")
@@ -149,4 +155,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	// build
 	addBuildLang("brass", "黄铜")
 	addBuildLang("industrial_iron", "工业铁")
+
+	addDrawerLang("rubberwood", "橡胶木")
 })
