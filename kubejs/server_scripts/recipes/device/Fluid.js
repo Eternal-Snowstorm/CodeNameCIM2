@@ -55,6 +55,12 @@ ServerEvents.recipes((event) => {
 		B: "#forge:glass"
 	})
 
+	// 流体储罐阀门
+	kubejs.shapeless("2x fluidlogistics:fluid_hatch", [
+		"2x #forge:plates/copper",
+		"#forge:plates/industrial_iron"
+	]).id("create_dragons_plus:crafting/fluid_hatch")
+
 	// 分液池
 	kubejs.shaped("create:item_drain", [
 		"X",

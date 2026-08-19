@@ -69,6 +69,10 @@ ServerEvents.highPriorityData((event) => {
 		"tconstruct:crafting_station"
 	], "craftingstationjei:crafting_station")
 
+	addUnification("fluid_hatch",[
+		"create_dragons_plus:fluid_hatch"
+	],"fluidlogistics:fluid_hatch")
+
 	function addUnification(name, match, block) {
 		let itemUnification = {
 			matchItems: match,

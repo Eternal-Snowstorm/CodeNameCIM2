@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+	let {create_rns} = event.getRecipes()
 	/**
 	 * 构造函数的builder
 	 * 
@@ -238,7 +239,7 @@ ServerEvents.recipes((event) => {
 		.resonanceItem(5.0E-4, ["mekanism:dust_coal", "minecraft:coal"])
 		.faintShatterItem(1, ["minecraft:cobblestone", "minecraft:tuff", "minecraft:calcite", "create:limestone", "cmi:deposit_dust"])
 		.shatterItem(0.3, ["minecraft:coal", "minecraft:coal_ore", "minecraft:deepslate_coal_ore"])
-		.faintStabilizeItem(0.15, ["mekanism:dust_coal", "minecraft:amethyst_shard", "tconstruct:ground_slime_crystal"])
+		.faintStabilizeItem(0.15, ["mekanism:dust_coal", "minecraft:amethyst_shard", "tconstruct:earth_slime_crystal"])
 		.stabilizeItem(0.06, ["immersiveengineering:dust_coke"])
 		.build()
 
@@ -250,7 +251,7 @@ ServerEvents.recipes((event) => {
 		.resonanceItem(5.0E-4, ["create_rns:redstone_small_dust", "minecraft:redstone"])
 		.faintShatterItem(1, ["minecraft:cobblestone", "minecraft:tuff", "minecraft:calcite", "create:limestone", "cmi:deposit_dust"])
 		.shatterItem(0.3, ["minecraft:redstone_ore", "minecraft:deepslate_redstone_ore"])
-		.faintStabilizeItem(0.15, ["ae2:certus_quartz_dust", "minecraft:amethyst_shard", "tconstruct:ground_slime_crystal"])
+		.faintStabilizeItem(0.15, ["ae2:certus_quartz_dust", "minecraft:amethyst_shard", "tconstruct:earth_slime_crystal"])
 		.stabilizeItem(0.06, ["create:rose_quartz"])
 		.build("create_rns:redstone_deposit_block")
 
@@ -380,7 +381,7 @@ ServerEvents.recipes((event) => {
 
 	new MiningRecipe("create_rns:nickel_deposit_block")
 		.defaultItem(["cmi:deposit_dust"])
-		.overclockItem(0.3, ["cmi:deposit_dust", "mekanism:dirty_dust_nickel"])
+		.overclockItem(0.3, ["cmi:deposit_dust", "cmi:dirty_nickel_dust"])
 		.overclockItem(0.5, ["thermal_extra:nickel_ore_chunk"])
 		.faintResonanceItem(0.05, ["thermal_extra:nickel_ore_chunk", "cmi:oil_shale_dust"])
 		.resonanceItem(0.2, ["thermal:raw_nickel", "create:crushed_raw_nickel"])
@@ -392,7 +393,7 @@ ServerEvents.recipes((event) => {
 
 	new MiningRecipe("create_rns:silver_deposit_block")
 		.defaultItem(["cmi:deposit_dust"])
-		.overclockItem(0.3, ["cmi:deposit_dust", "mekanism:dirty_dust_silver"])
+		.overclockItem(0.3, ["cmi:deposit_dust", "cmi:dirty_silver_dust"])
 		.overclockItem(0.5, ["thermal_extra:silver_ore_chunk"])
 		.faintResonanceItem(0.05, ["thermal_extra:silver_ore_chunk", "cmi:sludge_extract"])
 		.resonanceItem(0.2, ["thermal:raw_silver", "create:crushed_raw_silver"])
@@ -446,7 +447,7 @@ ServerEvents.recipes((event) => {
 		.resonanceItem(5.0E-4, ["cmi:oil_shale_dust", "cmi:oil_shale"])
 		.faintShatterItem(1, ["minecraft:cobblestone", "minecraft:tuff", "minecraft:calcite", "create:limestone", "cmi:deposit_dust"])
 		.shatterItem(0.3, ["cmi:oil_shale"])
-		.faintStabilizeItem(0.15, ["cmi:oil_shale_dust", "minecraft:amethyst_shard", "tconstruct:ground_slime_crystal"])
+		.faintStabilizeItem(0.15, ["cmi:oil_shale_dust", "minecraft:amethyst_shard", "tconstruct:earth_slime_crystal"])
 		.stabilizeItem(0.06, ["thermal:bitumen"])
 		.build()
 
@@ -458,7 +459,7 @@ ServerEvents.recipes((event) => {
 		.resonanceItem(5.0E-4, ["tconstruct:cheese_ingot", "ad_astra:cheese"])
 		.faintShatterItem(1, ["minecraft:cobblestone", "minecraft:tuff", "minecraft:calcite", "create:limestone", "cmi:deposit_dust"])
 		.shatterItem(0.3, ["ad_astra:cheese_block", "tconstruct:cheese_block", "ad_astra:moon_cheese_ore"])
-		.faintStabilizeItem(0.15, ["tconstruct:cheese_ingot", "minecraft:amethyst_shard", "tconstruct:ground_slime_crystal"])
+		.faintStabilizeItem(0.15, ["tconstruct:cheese_ingot", "minecraft:amethyst_shard", "tconstruct:earth_slime_crystal"])
 		.stabilizeItem(0.06, ["ad_astra:cheese_block"])
 		.build()
 })
