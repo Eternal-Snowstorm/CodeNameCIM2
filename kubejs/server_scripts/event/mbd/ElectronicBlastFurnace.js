@@ -153,13 +153,21 @@ function getCoilCount(machine) {
  * @param {Internal.MBDRecipe_} recipe 
  */
 function levelParallelModify(machine, recipe) {
+	/**
+	 * 
+	 * @param {number} parallelNumber 
+	 */
+	function parallel(parallelNumber) {
+		return machine.applyParallel(recipe, parallelNumber)
+	}
+
 	switch (getCoilLevel(machine)) {
 		case 0:
-			return machine.applyParallel(recipe, COIL_PARALLEL.LV)
+			return parallel(COIL_PARALLEL.LV)
 		case 1:
-			return machine.applyParallel(recipe, COIL_PARALLEL.MV)
+			return parallel(COIL_PARALLEL.MV)
 		case 2:
-			return machine.applyParallel(recipe, COIL_PARALLEL.HV)
+			return parallel(COIL_PARALLEL.HV)
 		default:
 			return recipe
 	}
