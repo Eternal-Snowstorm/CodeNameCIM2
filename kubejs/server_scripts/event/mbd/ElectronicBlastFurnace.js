@@ -1,3 +1,11 @@
+/*
+ * 原本计划实现线圈等级越高, 配方并行数越高的机制,
+ * 但由于目前还有一些问题没搞明白,
+ * 相关代码似乎并没有正常生效
+ *
+ * 如果有玩家知道该如何解决, 欢迎帮忙指点一下
+ */
+
 let $ProxyPartBlockEntity =
 	Java.loadClass("com.lowdragmc.mbd2.api.blockentity.ProxyPartBlockEntity")
 
