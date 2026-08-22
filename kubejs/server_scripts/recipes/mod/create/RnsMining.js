@@ -39,7 +39,9 @@ ServerEvents.recipes((event) => {
 	 * @returns 
 	 */
 	MiningRecipe.prototype.defaultItem = function (item) {
-		this.builder.yield(y => y.item(item))
+		this.builder.yield((builder) => {
+			builder.item(item)
+		})
 		return this
 	}
 	/**

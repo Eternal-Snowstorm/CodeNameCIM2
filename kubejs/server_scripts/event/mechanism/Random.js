@@ -1,5 +1,12 @@
+let $LootParams$Builder =
+	Java.loadClass("net.minecraft.world.level.storage.loot.LootParams$Builder")
+let $LootContextParams =
+	Java.loadClass("net.minecraft.world.level.storage.loot.parameters.LootContextParam")
+let $LootContextParamSets =
+	Java.loadClass("net.minecraft.world.level.storage.loot.parameters.LootContextParamSets")
+
 ItemEvents.rightClicked((event) => {
-	let { player, server, item } = event
+	let { player, server, item, level } = event
 	let { x, y, z } = player
 
 	let randomMechanisms = [
@@ -14,28 +21,47 @@ ItemEvents.rightClicked((event) => {
 		"random"
 	]
 	randomMechanisms.forEach((material) => {
-		let lootTable = `cmi:gameplay/random_mechanisms/${material}`
+		let lootTable = Cmi.loadResource(`gameplay/random_mechanisms/${material}`)
 
-		if (player.mainHandItem === `cmi:${material}_random_mechanism`) {
-			if (player === null) {
-				return
-			}
+		if (player.mainHandItem.id !== `cmi:${material}_random_mechanism`) {
+			return
+		}
 
-			server.runCommandSilent(`loot spawn ${x} ${y} ${z} loot ${lootTable}`)
-			player.swing()
+		let table = server.getLootData().getLootTable(lootTable)
 
-			player.playNotifySound("create:crafter_craft", "voice", 2, 1)
+		// 这里生成 LootParams
+		let params = new $LootParams$Builder(server)
+			.withParameter($LootContextParams.ORIGIN, player.position())
+			.withParameter($LootContextParams.THIS_ENTITY, player)
+			.create($LootContextParamSets.CHEST)
 
-			let r = Math.random()
-			let g = Math.random()
-			let b = Math.random()
+		let drops = table.getRandomItems(params)
 
-			let command = `particle minecraft:dust ${r} ${g} ${b} 1 ${x} ${y + 1.5} ${z} 0.5 0.5 0.5 0.1 30`
-			server.runCommandSilent(command)
+		drops.forEach((stack) => {
+			let entity = level.createEntity("minecraft:item")
+			entity.item = stack
+			entity.setPos(x, y, z)
+			entity.spawn()
+		})
 
-			if (!player.isCreative()) {
-				item.shrink(1)
-			}
+		player.swing()
+		player.playNotifySound("create:crafter_craft", "voice", 2, 1)
+
+		let r = Math.random()
+		let g = Math.random()
+		let b = Math.random()
+
+		server.runCommandSilent(
+			`particle minecraft:dust ${r} ${g} ${b} 1 ${x} ${y + 1.5} ${z} 0.5 0.5 0.5 0.1 30`
+		)
+
+		// server.getLevel().sendParticles(
+		// 	ParticleTypes.DUST,
+
+		// )
+
+		if (!player.isCreative()) {
+			item.shrink(1)
 		}
 	})
 })
