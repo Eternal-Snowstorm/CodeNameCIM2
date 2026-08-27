@@ -1,0 +1,26 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/scarlet_neodymium"
+		],
+		"resultItems": "alexscaves:scarlet_neodymium_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/scarlet_neodymium"
+		],
+		"resultItems": "cmi:scarlet_neodymium_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/scarlet_neodymium"
+		],
+		"resultItems": "cmi:scarlet_neodymium_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:raw_materials/scarlet_neodymium"
+		],
+		"resultItems": "alexscaves:raw_scarlet_neodymium"
+	}
+]

@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/lumium"
+		],
+		"resultItems": "thermal:lumium_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/lumium"
+		],
+		"resultItems": "vintageimprovements:lumium_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/lumium"
+		],
+		"resultItems": "thermal:lumium_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/lumium"
+		],
+		"resultItems": "thermal:lumium_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/lumium"
+		],
+		"resultItems": "thermal:lumium_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/lumium"
+		],
+		"resultItems": "thermal:lumium_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/lumium"
+		],
+		"resultItems": "vintageimprovements:lumium_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/lumium"
+		],
+		"resultItems": "vintageimprovements:lumium_wire"
+	}
+]

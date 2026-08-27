@@ -1,0 +1,56 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/calorite"
+		],
+		"resultItems": "ad_astra:calorite_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/calorite"
+		],
+		"resultItems": "ad_astra:calorite_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/calorite"
+		],
+		"resultItems": "ad_astra:calorite_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/calorite"
+		],
+		"resultItems": "ad_astra:calorite_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/calorite"
+		],
+		"resultItems": "cmi:calorite_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/calorite"
+		],
+		"resultItems": "cmi:calorite_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/calorite"
+		],
+		"resultItems": "vintageimprovements:calorite_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/calorite"
+		],
+		"resultItems": "vintageimprovements:calorite_wire"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/raw_calorite"
+		],
+		"resultItems": "ad_astra:raw_calorite_block"
+	}
+]

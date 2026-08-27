@@ -1,0 +1,62 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/cobalt"
+		],
+		"resultItems": "tconstruct:cobalt_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/cobalt"
+		],
+		"resultItems": "vintageimprovements:cobalt_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/cobalt"
+		],
+		"resultItems": "tconstruct:cobalt_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/cobalt"
+		],
+		"resultItems": "tconstruct:cobalt_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/cobalt"
+		],
+		"resultItems": "thermalconstruct:cobalt_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/cobalt"
+		],
+		"resultItems": "thermalconstruct:cobalt_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/cobalt"
+		],
+		"resultItems": "vintageimprovements:cobalt_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/cobalt"
+		],
+		"resultItems": "vintageimprovements:cobalt_wire"
+	},
+	{
+		"matchItems": [
+			"#forge:raw_materials/cobalt"
+		],
+		"resultItems": "tconstruct:raw_cobalt"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/raw_cobalt"
+		],
+		"resultItems": "tconstruct:raw_cobalt_block"
+	}
+]

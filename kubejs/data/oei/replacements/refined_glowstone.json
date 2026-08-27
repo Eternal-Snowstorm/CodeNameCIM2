@@ -1,0 +1,38 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/refined_glowstone"
+		],
+		"resultItems": "mekanism:ingot_refined_glowstone"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/refined_glowstone"
+		],
+		"resultItems": "vintageimprovements:refined_glowstone_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/refined_glowstone"
+		],
+		"resultItems": "mekanism:nugget_refined_glowstone"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/refined_glowstone"
+		],
+		"resultItems": "mekanism:block_refined_glowstone"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/refined_glowstone"
+		],
+		"resultItems": "vintageimprovements:refined_glowstone_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/refined_glowstone"
+		],
+		"resultItems": "vintageimprovements:refined_glowstone_wire"
+	}
+]

@@ -1,0 +1,44 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/abyssal"
+		],
+		"resultItems": "thermal_extra:abyssal_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/abyssal"
+		],
+		"resultItems": "thermal_extra:abyssal_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/abyssal"
+		],
+		"resultItems": "thermal_extra:abyssal_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/abyssal"
+		],
+		"resultItems": "thermal_extra:abyssal_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/abyssal"
+		],
+		"resultItems": "thermal_extra:abyssal_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/abyssal"
+		],
+		"resultItems": "thermal_extra:abyssal_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/abyssal"
+		],
+		"resultItems": "thermal_extra:abyssal_rod"
+	}
+]

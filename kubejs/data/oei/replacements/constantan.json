@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/constantan"
+		],
+		"resultItems": "thermal:constantan_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/constantan"
+		],
+		"resultItems": "vintageimprovements:constantan_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/constantan"
+		],
+		"resultItems": "thermal:constantan_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/constantan"
+		],
+		"resultItems": "thermal:constantan_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/constantan"
+		],
+		"resultItems": "thermal:constantan_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/constantan"
+		],
+		"resultItems": "thermal:constantan_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/constantan"
+		],
+		"resultItems": "vintageimprovements:constantan_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/constantan"
+		],
+		"resultItems": "vintageimprovements:constantan_wire"
+	}
+]

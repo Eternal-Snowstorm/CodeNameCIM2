@@ -1,0 +1,38 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/cinderslime"
+		],
+		"resultItems": "tconstruct:cinderslime_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/cinderslime"
+		],
+		"resultItems": "thermalconstruct:cinderslime_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/cinderslime"
+		],
+		"resultItems": "tconstruct:cinderslime_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/cinderslime"
+		],
+		"resultItems": "tconstruct:cinderslime_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/cinderslime"
+		],
+		"resultItems": "thermalconstruct:cinderslime_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/cinderslime"
+		],
+		"resultItems": "thermalconstruct:cinderslime_dust"
+	}
+]

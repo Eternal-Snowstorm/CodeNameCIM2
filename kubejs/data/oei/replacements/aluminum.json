@@ -1,0 +1,56 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/aluminum"
+		],
+		"resultItems": "immersiveengineering:ingot_aluminum"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/aluminum"
+		],
+		"resultItems": "vintageimprovements:aluminum_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/aluminum"
+		],
+		"resultItems": "immersiveengineering:nugget_aluminum"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/aluminum"
+		],
+		"resultItems": "immersiveengineering:storage_aluminum"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/aluminum"
+		],
+		"resultItems": "immersiveengineering:dust_aluminum"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/aluminum"
+		],
+		"resultItems": "vintageimprovements:aluminum_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/aluminum"
+		],
+		"resultItems": "vintageimprovements:aluminum_wire"
+	},
+	{
+		"matchItems": [
+			"#forge:raw_materials/aluminum"
+		],
+		"resultItems": "immersiveengineering:raw_aluminum"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/raw_aluminum"
+		],
+		"resultItems": "immersiveengineering:raw_block_aluminum"
+	}
+]

@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/rose_gold"
+		],
+		"resultItems": "thermal:rose_gold_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/rose_gold"
+		],
+		"resultItems": "vintageimprovements:rose_gold_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/rose_gold"
+		],
+		"resultItems": "thermal:rose_gold_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/rose_gold"
+		],
+		"resultItems": "thermal:rose_gold_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/rose_gold"
+		],
+		"resultItems": "thermal:rose_gold_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/rose_gold"
+		],
+		"resultItems": "thermal:rose_gold_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/rose_gold"
+		],
+		"resultItems": "vintageimprovements:rose_gold_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/rose_gold"
+		],
+		"resultItems": "vintageimprovements:rose_gold_wire"
+	}
+]

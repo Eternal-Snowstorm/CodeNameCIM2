@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/queens_slime"
+		],
+		"resultItems": "tconstruct:queens_slime_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/queens_slime"
+		],
+		"resultItems": "vintageimprovements:queens_slime_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/queens_slime"
+		],
+		"resultItems": "tconstruct:queens_slime_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/queens_slime"
+		],
+		"resultItems": "tconstruct:queens_slime_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/queens_slime"
+		],
+		"resultItems": "thermalconstruct:queens_slime_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/queens_slime"
+		],
+		"resultItems": "thermalconstruct:queens_slime_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/queens_slime"
+		],
+		"resultItems": "vintageimprovements:queens_slime_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/queens_slime"
+		],
+		"resultItems": "vintageimprovements:queens_slime_wire"
+	}
+]

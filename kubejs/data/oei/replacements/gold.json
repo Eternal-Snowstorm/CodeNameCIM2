@@ -1,0 +1,62 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/gold"
+		],
+		"resultItems": "minecraft:gold_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/gold"
+		],
+		"resultItems": "thermal:gold_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/gold"
+		],
+		"resultItems": "minecraft:gold_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/gold"
+		],
+		"resultItems": "minecraft:gold_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/gold"
+		],
+		"resultItems": "thermal:gold_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/gold"
+		],
+		"resultItems": "thermal:gold_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/gold"
+		],
+		"resultItems": "thermal_extra:gold_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/gold"
+		],
+		"resultItems": "createaddition:gold_wire"
+	},
+	{
+		"matchItems": [
+			"#forge:raw_materials/gold"
+		],
+		"resultItems": "minecraft:raw_gold"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/raw_gold"
+		],
+		"resultItems": "minecraft:raw_gold_block"
+	}
+]
