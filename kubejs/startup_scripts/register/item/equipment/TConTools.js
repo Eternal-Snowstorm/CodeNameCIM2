@@ -1,14 +1,20 @@
-let $ToolDefinition =
-	Java.loadClass("slimeknights.tconstruct.library.tools.definition.ToolDefinition")
-let $ModifiableItem =
-	Java.loadClass("slimeknights.tconstruct.library.tools.item.ModifiableItem")
-let $TinkerTags$Items =
-	Java.loadClass("slimeknights.tconstruct.common.TinkerTags$Items")
-
 StartupEvents.registry("item", (event) => {
+	/*
+	 * 这些 Java.loadClass() 不要放在脚本顶层, 放到事件回调里
+	 * 顶层执行时部分 Mod 还在加载, 直接加载 TConstruct 的类可能会和其他 Mod 的并行初始化互相卡住
+	 * 等事件触发时 Mod 已经初始化完成了, 再加载这些类就不会有这个问题
+	 */
+	let $ToolDefinition =
+		Java.loadClass("slimeknights.tconstruct.library.tools.definition.ToolDefinition")
+	let $ModifiableItem =
+		Java.loadClass("slimeknights.tconstruct.library.tools.item.ModifiableItem")
+	let $TinkerTags$Items =
+		Java.loadClass("slimeknights.tconstruct.common.TinkerTags$Items")
+
 	/**
 	 * 按理说这里其实不需要返回也可以
 	 * 但是我习惯了(😋)
+	 * 
 	 * @param {string} name 注册名称
 	 * @returns 注册匠魂工具类型
 	*/
@@ -19,6 +25,7 @@ StartupEvents.registry("item", (event) => {
 	/**
 	 * 返回`CustomBuilderObject`可以
 	 * 直接调用`createCustom()`下的方法
+	 * 
 	 * @param {string} name 注册名称
 	 * @returns 注册匠魂工具物品
 	 */
