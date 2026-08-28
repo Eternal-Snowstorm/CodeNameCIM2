@@ -3,10 +3,17 @@ ServerEvents.recipes((event) => {
 
 	CmiMetalRegistry.getAll().forEach((material) => {
 		let metal = material.getId()
-		let fluid = `tconstruct:molten_${metal}`
 
-		if (fluid === null) {
-			console.warn(`No molten metal found for ${metal}!`)
+		/*
+		 * 把熔融流体 tag 解析成具体流体 id(多 namespace: tconstruct / thermalconstruct / forge / cmi)
+		 * Fluid.tag() 生成的 tag 流体栈在 kubejs-thermal 的配方 schema 里会被当作空流体丢弃,
+		 * 生成 ingredients 为空的冷却机配方, JEI 每次重载都报 IndexOutOfBoundsException(292 个/次)
+		 * 没有对应熔融流体的金属直接跳过, 不再生成配方
+		 */
+		let moltenFluid = resolveMoltenFluid(metal)
+
+		if (moltenFluid === null) {
+			console.warn(`No molten metal fluid found for ${metal}, skipping TCon casting recipes!`)
 			return
 		}
 
@@ -22,19 +29,19 @@ ServerEvents.recipes((event) => {
 		const SINGLE_USE_CAST = "#tconstruct:casts/single_use"
 
 		if (Ingredient.isNotNull(INGOT)) {
-			tconstruct.casting_table(INGOT)
+			tconstruct.casting_table(highPriorityItem(INGOT))
 				.cast(`${MULTI_USE_CAST}/ingot`)
-				.fluid(Fluid.tag("tag", fluid, 90))
+				.fluid(Fluid.of(moltenFluid, 90))
 				.cooling_time(20 * 3)
 
-			tconstruct.casting_table(INGOT)
+			tconstruct.casting_table(highPriorityItem(INGOT))
 				.cast(`${SINGLE_USE_CAST}/ingot`)
-				.fluid(Fluid.tag("tag", fluid, 90))
+				.fluid(Fluid.of(moltenFluid, 90))
 				.cooling_time(20 * 3)
 				.cast_consumed(true)
 
-			thermal.chiller(INGOT, [
-				Fluid.tag("fluidTag", fluid, 90),
+			thermal.chiller(highPriorityItem(INGOT), [
+				Fluid.of(moltenFluid, 90),
 				`${MULTI_USE_CAST}/ingot`
 			]).energy(4800)
 		} else {
@@ -42,19 +49,19 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (Ingredient.isNotNull(NUGGET)) {
-			tconstruct.casting_table(NUGGET)
+			tconstruct.casting_table(highPriorityItem(NUGGET))
 				.cast(`${MULTI_USE_CAST}/nugget`)
-				.fluid(Fluid.tag("tag", fluid, 10))
+				.fluid(Fluid.of(moltenFluid, 10))
 				.cooling_time(20 * 1)
 
-			tconstruct.casting_table(NUGGET)
+			tconstruct.casting_table(highPriorityItem(NUGGET))
 				.cast(`${SINGLE_USE_CAST}/nugget`)
-				.fluid(Fluid.tag("tag", fluid, 10))
+				.fluid(Fluid.of(moltenFluid, 10))
 				.cooling_time(20 * 1)
 				.cast_consumed(true)
 
-			thermal.chiller(NUGGET, [
-				Fluid.tag("fluidTag", fluid, 10),
+			thermal.chiller(highPriorityItem(NUGGET), [
+				Fluid.of(moltenFluid, 10),
 				`${MULTI_USE_CAST}/nugget`
 			]).energy(600)
 		} else {
@@ -62,27 +69,27 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (Ingredient.isNotNull(BLOCK)) {
-			tconstruct.casting_basin(BLOCK)
-				.fluid(Fluid.tag("tag", fluid, 90 * 9))
+			tconstruct.casting_basin(highPriorityItem(BLOCK))
+				.fluid(Fluid.of(moltenFluid, 90 * 9))
 				.cooling_time(20 * 9)
 		} else {
 			// console.warn(`No storage block found for ${metal}!`)
 		}
 
 		if (Ingredient.isNotNull(PLATE)) {
-			tconstruct.casting_table(PLATE)
+			tconstruct.casting_table(highPriorityItem(PLATE))
 				.cast(`${MULTI_USE_CAST}/plate`)
-				.fluid(Fluid.tag("tag", fluid, 90))
+				.fluid(Fluid.of(moltenFluid, 90))
 				.cooling_time(20 * 3)
 
-			tconstruct.casting_table(PLATE)
+			tconstruct.casting_table(highPriorityItem(PLATE))
 				.cast(`${SINGLE_USE_CAST}/plate`)
-				.fluid(Fluid.tag("tag", fluid, 90))
+				.fluid(Fluid.of(moltenFluid, 90))
 				.cooling_time(20 * 3)
 				.cast_consumed(true)
 
-			thermal.chiller(PLATE, [
-				Fluid.tag("fluidTag", fluid, 90),
+			thermal.chiller(highPriorityItem(PLATE), [
+				Fluid.of(moltenFluid, 90),
 				`${MULTI_USE_CAST}/plate`
 			]).energy(4800)
 		} else {
@@ -90,19 +97,19 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (Ingredient.isNotNull(ROD)) {
-			tconstruct.casting_table(ROD)
+			tconstruct.casting_table(highPriorityItem(ROD))
 				.cast(`${MULTI_USE_CAST}/rod`)
-				.fluid(Fluid.tag("tag", fluid, 45))
+				.fluid(Fluid.of(moltenFluid, 45))
 				.cooling_time(20 * 1.5)
 
-			tconstruct.casting_table(ROD)
+			tconstruct.casting_table(highPriorityItem(ROD))
 				.cast(`${SINGLE_USE_CAST}/rod`)
-				.fluid(Fluid.tag("tag", fluid, 45))
+				.fluid(Fluid.of(moltenFluid, 45))
 				.cooling_time(20 * 1.5)
 				.cast_consumed(true)
 
-			thermal.chiller(ROD, [
-				Fluid.tag("fluidTag", fluid, 45),
+			thermal.chiller(highPriorityItem(ROD), [
+				Fluid.of(moltenFluid, 45),
 				`${SINGLE_USE_CAST}/rod`
 			]).energy(2400)
 		} else {
@@ -110,19 +117,19 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (Ingredient.isNotNull(GEAR)) {
-			tconstruct.casting_table(GEAR)
+			tconstruct.casting_table(highPriorityItem(GEAR))
 				.cast(`${MULTI_USE_CAST}/gear`)
-				.fluid(Fluid.tag("tag", fluid, 90 * 4))
+				.fluid(Fluid.of(moltenFluid, 90 * 4))
 				.cooling_time(20 * 7.5)
 
-			tconstruct.casting_table(GEAR)
+			tconstruct.casting_table(highPriorityItem(GEAR))
 				.cast(`${SINGLE_USE_CAST}/gear`)
-				.fluid(Fluid.tag("tag", fluid, 90 * 4))
+				.fluid(Fluid.of(moltenFluid, 90 * 4))
 				.cooling_time(20 * 7.5)
 				.cast_consumed(true)
 
-			thermal.chiller(GEAR, [
-				Fluid.tag("fluidTag", fluid, 90 * 4),
+			thermal.chiller(highPriorityItem(GEAR), [
+				Fluid.of(moltenFluid, 90 * 4),
 				`${MULTI_USE_CAST}/gear`
 			]).energy(9600)
 		} else {
@@ -130,19 +137,19 @@ ServerEvents.recipes((event) => {
 		}
 
 		if (Ingredient.isNotNull(COIN)) {
-			tconstruct.casting_table(COIN)
+			tconstruct.casting_table(highPriorityItem(COIN))
 				.cast(`${MULTI_USE_CAST}/coin`)
-				.fluid(Fluid.tag("tag", fluid, 30))
+				.fluid(Fluid.of(moltenFluid, 30))
 				.cooling_time(20 * 1.5)
 
-			tconstruct.casting_table(COIN)
+			tconstruct.casting_table(highPriorityItem(COIN))
 				.cast(`${SINGLE_USE_CAST}/coin`)
-				.fluid(Fluid.tag("tag", fluid, 30))
+				.fluid(Fluid.of(moltenFluid, 30))
 				.cooling_time(20 * 1.5)
 				.cast_consumed(true)
 
-			thermal.chiller(COIN, [
-				Fluid.tag("fluidTag", fluid, 30),
+			thermal.chiller(highPriorityItem(COIN), [
+				Fluid.of(moltenFluid, 30),
 				`${MULTI_USE_CAST}/coin`
 			]).energy(1600)
 		} else {

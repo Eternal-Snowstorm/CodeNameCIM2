@@ -1,0 +1,35 @@
+{
+	"parent": "kaleidoscope_nether:star_dust",
+	"criteria": {
+		"star_blessing_buff": {
+			"conditions": {
+				"effects": {
+					"kaleidoscope_nether:star_blessing": {}
+				}
+			},
+			"trigger": "minecraft:effects_changed"
+		}
+	},
+	"display": {
+		"announce_to_chat": true,
+		"background": "kaleidoscope_nether:textures/advancement/background.png",
+		"description": {
+			"translate": "advancements.kaleidoscope_nether.star_blessing_buff.description"
+		},
+		"frame": "goal",
+		"hidden": false,
+		"icon": {
+			"item": "kaleidoscope_nether:star_stew"
+		},
+		"show_toast": true,
+		"title": {
+			"translate": "advancements.kaleidoscope_nether.star_blessing_buff.title"
+		}
+	},
+	"requirements": [
+		[
+			"star_blessing_buff"
+		]
+	],
+	"sends_telemetry_event": true
+}

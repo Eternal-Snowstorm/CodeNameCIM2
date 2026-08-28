@@ -9,17 +9,17 @@ ServerEvents.recipes((event) => {
 		const COIN = `#forge:coins/${metal}`
 
 		if (Ingredient.isNotNull(COIN)) {
-			thermal.press(`3x ${COIN}`, [
+			thermal.press(highPriorityItem(COIN, 3), [
 				INGOT,
 				"cmi:coin_mold"
 			])
 
-			immersiveengineering.metal_press(`3x ${COIN}`)
-				.input(`${INGOT}`)
+			immersiveengineering.metal_press(highPriorityItem(COIN, 3))
+				.input(INGOT)
 				.mold("cmi:coin_mold")
 
 			if (Ingredient.isNotNull(NUGGET)) {
-				thermal.press(COIN, [
+				thermal.press(highPriorityItem(COIN), [
 					`3x ${NUGGET}`,
 					"cmi:coin_mold"
 				]).energy(800)

@@ -657,7 +657,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Keep me from the cages under the contro"
+			subtitle: "Keep me from the cages under the control"
 			tasks: [
 				{
 					count: 12L

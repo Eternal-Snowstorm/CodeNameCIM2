@@ -38,24 +38,37 @@ let namespacePriority = [
 	"minecraft"
 ]
 
+/**
+ * 
+ * @param {Internal.Ingredient_} tag 
+ * 
+ * @returns 
+ */
 function getHighPriorityItem(tag) {
 	/**
-	 *  引入参数
-	 * 
-	 * @param {string} currentNamespace
-	 * @param {string} outputId 
-	 * @param {string} priorityValue
-	 * @returns 
+	 * @type {string}
 	 */
 	let currentNamespace = null
+	/**
+	 * @type {string}
+	 */
 	let outputId = null
+	/**
+	 * @type {string}
+	 */
 	let priorityValue = null
 
 	if (!Ingredient.isNotNull(tag)) {
 		return "cmi:cmi_icon"
 	}
 
-	let ids = Ingredient.of(tag).getItemIds().toArray()
+	let ids = null
+
+	// count 对本函数无用（返回的是物品 id 字符串），且 withCount 返回的
+	// IngredientWithCount 没有 getItemIds 方法；统一走 getItemIds()。
+	ids = Ingredient.of(tag)
+		.getItemIds()
+		.toArray()
 
 	// 遍历获取到的tag下每个物品的命名空间
 	if (ids.length > 0) {
@@ -63,7 +76,7 @@ function getHighPriorityItem(tag) {
 			const itemId = String(id)
 
 			if (itemId !== "minecraft:barrier") {
-				currentNamespace = String(ResourceLocation.parse(itemId).getNamespace())
+				currentNamespace = ResourceLocation.parse(itemId).getNamespace()
 
 				for (let i = 0; i < namespacePriority.length; i++) {
 					if (currentNamespace === namespacePriority[i]) {
@@ -79,6 +92,51 @@ function getHighPriorityItem(tag) {
 		return outputId
 	}
 	return "cmi:cmi_icon"
+}
+
+/**
+ * 
+ * @param {Internal.Ingredient_} ingredient 
+ * @param {number} [count] 
+ * @returns 
+ */
+function highPriorityItem(ingredient, count) {
+	if (count == null) {
+		return Item.of(getHighPriorityItem(ingredient))
+	}
+	return Item.of(getHighPriorityItem(ingredient), count)
+}
+/**
+ * 解析金属对应的熔融流体。
+ * 按优先级查找不同命名空间的流体，返回第一个匹配的流体 id。
+ *
+ * @param {string} metal 金属 id
+ * @returns 
+ */
+function resolveMoltenFluid(metal) {
+	let candidates = [
+		`tconstruct:molten_${metal}`,
+		`thermalconstruct:molten_${metal}`,
+		`forge:molten_${metal}`
+	]
+
+	for (let i = 0; i < candidates.length; i++) {
+		let fluid = Ingredient.getFluidString(candidates[i])
+
+		if (fluid !== null) {
+			return fluid
+		}
+	}
+
+	/*
+	 * 直接查找 CMI 流体，Material.js 会将 .molten() 流体注册为 cmi:molten_X
+	 * 同时添加 tconstruct/forge 流体标签
+	 */
+	if (Fluid.exists(`cmi:molten_${metal}`)) {
+		return `cmi:molten_${metal}`
+	}
+
+	return null
 }
 
 /**

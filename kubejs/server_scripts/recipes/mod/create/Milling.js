@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
 	// 安山岩粉
 	create.milling([
 		"2x cmi:andesite_dust",
-		Item.of("cmi:andesite_dust", 2).withChance(0.5)
+		Item.of("cmi:andesite_dust").withChance(0.25)
 	], "#create:stone_types/andesite")
 
 	// 糖
