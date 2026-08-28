@@ -96,6 +96,16 @@
     "recipe_logic_provider": true,
     "multiblock_provider": true
   },
+  "extendedae_plus": {
+    "labeled_wireless_component": true,
+    "wt_locked": true,
+    "wt_frequency": true,
+    "wt_network_usable": true,
+    "wt_master_mode": true,
+    "wt_channels": true,
+    "wt_master_location": true,
+    "wt_owner": true
+  },
   "yes_steve_model": {
     "model_info": true
   },

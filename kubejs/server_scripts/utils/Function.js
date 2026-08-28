@@ -28,6 +28,7 @@ let namespacePriority = [
 	"create",
 	"createdeco",
 	"ae2",
+	"neoecoae",
 	"ad_astra",
 	"createaddition",
 	"immersiveengineering",

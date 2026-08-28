@@ -151,7 +151,7 @@
 				"processors": "minecraft:street_plains",
 				"projection": "terrain_matching"
 			},
-			"weight": 3
+			"weight": 10
 		}
 	],
 	"fallback": "minecraft:village/plains/terminators"
