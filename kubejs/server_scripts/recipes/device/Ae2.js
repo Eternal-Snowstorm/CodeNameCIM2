@@ -1,6 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { kubejs, thermal_extra } = event.getRecipes()
 	const DRIVE = /^ae2:(?!.*portable)(?!.*spatial).*cell(?!.*workbench$).+$/;
+
 	event.remove([
 		{
 			type: "minecraft:crafting_shaped",
@@ -9,7 +10,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 福鲁伊克斯色ME玻璃线缆
-	//哇还有BA
+	// 哇还有BA
 	kubejs.shaped("8x ae2:fluix_glass_cable", [
 		"AAA",
 		"ABA",
