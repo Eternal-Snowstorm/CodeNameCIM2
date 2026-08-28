@@ -1,0 +1,26 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/azure_neodymium"
+		],
+		"resultItems": "alexscaves:azure_neodymium_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/azure_neodymium"
+		],
+		"resultItems": "cmi:azure_neodymium_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/azure_neodymium"
+		],
+		"resultItems": "cmi:azure_neodymium_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:raw_materials/azure_neodymium"
+		],
+		"resultItems": "alexscaves:raw_azure_neodymium"
+	}
+]

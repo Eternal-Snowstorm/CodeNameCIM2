@@ -1,0 +1,44 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/tungsten_steel"
+		],
+		"resultItems": "cmi:tungsten_steel_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/tungsten_steel"
+		],
+		"resultItems": "cmi:tungsten_steel_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/tungsten_steel"
+		],
+		"resultItems": "cmi:tungsten_steel_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/tungsten_steel"
+		],
+		"resultItems": "cmi:tungsten_steel_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/tungsten_steel"
+		],
+		"resultItems": "cmi:tungsten_steel_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/tungsten_steel"
+		],
+		"resultItems": "cmi:tungsten_steel_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/tungsten_steel"
+		],
+		"resultItems": "cmi:tungsten_steel_rod"
+	}
+]

@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/manyullyn"
+		],
+		"resultItems": "tconstruct:manyullyn_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/manyullyn"
+		],
+		"resultItems": "vintageimprovements:manyullyn_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/manyullyn"
+		],
+		"resultItems": "tconstruct:manyullyn_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/manyullyn"
+		],
+		"resultItems": "tconstruct:manyullyn_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/manyullyn"
+		],
+		"resultItems": "thermalconstruct:manyullyn_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/manyullyn"
+		],
+		"resultItems": "thermalconstruct:manyullyn_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/manyullyn"
+		],
+		"resultItems": "vintageimprovements:manyullyn_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/manyullyn"
+		],
+		"resultItems": "vintageimprovements:manyullyn_wire"
+	}
+]

@@ -1,0 +1,62 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/iron"
+		],
+		"resultItems": "minecraft:iron_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/iron"
+		],
+		"resultItems": "thermal:iron_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/iron"
+		],
+		"resultItems": "minecraft:iron_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/iron"
+		],
+		"resultItems": "minecraft:iron_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/iron"
+		],
+		"resultItems": "thermal:iron_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/iron"
+		],
+		"resultItems": "thermal:iron_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/iron"
+		],
+		"resultItems": "thermal_extra:iron_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/iron"
+		],
+		"resultItems": "createaddition:iron_wire"
+	},
+	{
+		"matchItems": [
+			"#forge:raw_materials/iron"
+		],
+		"resultItems": "minecraft:raw_iron"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/raw_iron"
+		],
+		"resultItems": "minecraft:raw_iron_block"
+	}
+]

@@ -1,0 +1,32 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/shadow_steel"
+		],
+		"resultItems": "create:shadow_steel"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/shadow_steel"
+		],
+		"resultItems": "vintageimprovements:shadow_steel_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/shadow_steel"
+		],
+		"resultItems": "cmi:shadow_steel_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/shadow_steel"
+		],
+		"resultItems": "vintageimprovements:shadow_steel_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/shadow_steel"
+		],
+		"resultItems": "vintageimprovements:shadow_steel_wire"
+	}
+]

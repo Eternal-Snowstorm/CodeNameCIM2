@@ -1,0 +1,26 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/industrial_iron"
+		],
+		"resultItems": "createdeco:industrial_iron_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/industrial_iron"
+		],
+		"resultItems": "createdeco:industrial_iron_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/industrial_iron"
+		],
+		"resultItems": "createdeco:industrial_iron_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/industrial_iron"
+		],
+		"resultItems": "create:industrial_iron_block"
+	}
+]

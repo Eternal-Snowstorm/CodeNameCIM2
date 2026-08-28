@@ -1,0 +1,38 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/chromium"
+		],
+		"resultItems": "cmi:chromium_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/chromium"
+		],
+		"resultItems": "cmi:chromium_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/chromium"
+		],
+		"resultItems": "cmi:chromium_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/chromium"
+		],
+		"resultItems": "cmi:chromium_block"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/chromium"
+		],
+		"resultItems": "cmi:chromium_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:raw_materials/chromium"
+		],
+		"resultItems": "cmi:raw_chromium"
+	}
+]

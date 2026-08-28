@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/netherite"
+		],
+		"resultItems": "minecraft:netherite_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/netherite"
+		],
+		"resultItems": "vintageimprovements:netherite_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/netherite"
+		],
+		"resultItems": "createdeco:netherite_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/netherite"
+		],
+		"resultItems": "minecraft:netherite_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/netherite"
+		],
+		"resultItems": "thermal:netherite_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/netherite"
+		],
+		"resultItems": "thermal:netherite_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/netherite"
+		],
+		"resultItems": "vintageimprovements:netherite_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/netherite"
+		],
+		"resultItems": "vintageimprovements:netherite_wire"
+	}
+]

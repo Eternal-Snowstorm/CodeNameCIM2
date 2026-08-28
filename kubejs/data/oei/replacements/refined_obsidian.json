@@ -1,0 +1,44 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/refined_obsidian"
+		],
+		"resultItems": "mekanism:ingot_refined_obsidian"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/refined_obsidian"
+		],
+		"resultItems": "vintageimprovements:refined_obsidian_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/refined_obsidian"
+		],
+		"resultItems": "mekanism:nugget_refined_obsidian"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/refined_obsidian"
+		],
+		"resultItems": "mekanism:block_refined_obsidian"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/refined_obsidian"
+		],
+		"resultItems": "mekanism:dust_refined_obsidian"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/refined_obsidian"
+		],
+		"resultItems": "vintageimprovements:refined_obsidian_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/refined_obsidian"
+		],
+		"resultItems": "vintageimprovements:refined_obsidian_wire"
+	}
+]

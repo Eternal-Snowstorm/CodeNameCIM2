@@ -1,0 +1,44 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/titanium_alloy"
+		],
+		"resultItems": "cmi:titanium_alloy_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/titanium_alloy"
+		],
+		"resultItems": "cmi:titanium_alloy_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/titanium_alloy"
+		],
+		"resultItems": "cmi:titanium_alloy_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/titanium_alloy"
+		],
+		"resultItems": "cmi:titanium_alloy_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/titanium_alloy"
+		],
+		"resultItems": "cmi:titanium_alloy_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/titanium_alloy"
+		],
+		"resultItems": "cmi:titanium_alloy_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/titanium_alloy"
+		],
+		"resultItems": "cmi:titanium_alloy_rod"
+	}
+]

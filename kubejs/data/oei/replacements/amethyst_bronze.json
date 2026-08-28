@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/amethyst_bronze"
+		],
+		"resultItems": "tconstruct:amethyst_bronze_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/amethyst_bronze"
+		],
+		"resultItems": "vintageimprovements:amethyst_bronze_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/amethyst_bronze"
+		],
+		"resultItems": "tconstruct:amethyst_bronze_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/amethyst_bronze"
+		],
+		"resultItems": "tconstruct:amethyst_bronze_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/amethyst_bronze"
+		],
+		"resultItems": "thermalconstruct:amethyst_bronze_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/amethyst_bronze"
+		],
+		"resultItems": "thermalconstruct:amethyst_bronze_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/amethyst_bronze"
+		],
+		"resultItems": "vintageimprovements:amethyst_bronze_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/amethyst_bronze"
+		],
+		"resultItems": "vintageimprovements:amethyst_bronze_wire"
+	}
+]

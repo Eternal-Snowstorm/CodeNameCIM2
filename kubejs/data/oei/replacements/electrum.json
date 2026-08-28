@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/electrum"
+		],
+		"resultItems": "thermal:electrum_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/electrum"
+		],
+		"resultItems": "thermal:electrum_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/electrum"
+		],
+		"resultItems": "thermal:electrum_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/electrum"
+		],
+		"resultItems": "thermal:electrum_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/electrum"
+		],
+		"resultItems": "thermal:electrum_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/electrum"
+		],
+		"resultItems": "thermal:electrum_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/electrum"
+		],
+		"resultItems": "thermal_extra:electrum_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/electrum"
+		],
+		"resultItems": "createaddition:electrum_wire"
+	}
+]

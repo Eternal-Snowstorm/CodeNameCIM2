@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/invar"
+		],
+		"resultItems": "thermal:invar_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/invar"
+		],
+		"resultItems": "vintageimprovements:invar_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/invar"
+		],
+		"resultItems": "thermal:invar_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/invar"
+		],
+		"resultItems": "thermal:invar_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/invar"
+		],
+		"resultItems": "thermal:invar_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/invar"
+		],
+		"resultItems": "thermal:invar_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/invar"
+		],
+		"resultItems": "vintageimprovements:invar_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/invar"
+		],
+		"resultItems": "vintageimprovements:invar_wire"
+	}
+]

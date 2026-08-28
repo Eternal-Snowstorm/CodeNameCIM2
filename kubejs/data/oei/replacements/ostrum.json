@@ -1,0 +1,56 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/ostrum"
+		],
+		"resultItems": "ad_astra:ostrum_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/ostrum"
+		],
+		"resultItems": "ad_astra:ostrum_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/ostrum"
+		],
+		"resultItems": "ad_astra:ostrum_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/ostrum"
+		],
+		"resultItems": "ad_astra:ostrum_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/ostrum"
+		],
+		"resultItems": "cmi:ostrum_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/ostrum"
+		],
+		"resultItems": "cmi:ostrum_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/ostrum"
+		],
+		"resultItems": "vintageimprovements:ostrum_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/ostrum"
+		],
+		"resultItems": "vintageimprovements:ostrum_wire"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/raw_ostrum"
+		],
+		"resultItems": "ad_astra:raw_ostrum_block"
+	}
+]

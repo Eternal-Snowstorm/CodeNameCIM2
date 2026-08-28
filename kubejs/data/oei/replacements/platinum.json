@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/platinum"
+		],
+		"resultItems": "cmi:platinum_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/platinum"
+		],
+		"resultItems": "vintageimprovements:platinum_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/platinum"
+		],
+		"resultItems": "cmi:platinum_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/platinum"
+		],
+		"resultItems": "cmi:platinum_block"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/platinum"
+		],
+		"resultItems": "cmi:platinum_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/platinum"
+		],
+		"resultItems": "vintageimprovements:platinum_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/platinum"
+		],
+		"resultItems": "vintageimprovements:platinum_wire"
+	},
+	{
+		"matchItems": [
+			"#forge:raw_materials/platinum"
+		],
+		"resultItems": "cmi:raw_platinum"
+	}
+]

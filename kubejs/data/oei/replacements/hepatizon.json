@@ -1,0 +1,50 @@
+[
+	{
+		"matchItems": [
+			"#forge:ingots/hepatizon"
+		],
+		"resultItems": "tconstruct:hepatizon_ingot"
+	},
+	{
+		"matchItems": [
+			"#forge:plates/hepatizon"
+		],
+		"resultItems": "vintageimprovements:hepatizon_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/hepatizon"
+		],
+		"resultItems": "tconstruct:hepatizon_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:storage_blocks/hepatizon"
+		],
+		"resultItems": "tconstruct:hepatizon_block"
+	},
+	{
+		"matchItems": [
+			"#forge:gears/hepatizon"
+		],
+		"resultItems": "thermalconstruct:hepatizon_gear"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/hepatizon"
+		],
+		"resultItems": "thermalconstruct:hepatizon_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/hepatizon"
+		],
+		"resultItems": "vintageimprovements:hepatizon_rod"
+	},
+	{
+		"matchItems": [
+			"#forge:wires/hepatizon"
+		],
+		"resultItems": "vintageimprovements:hepatizon_wire"
+	}
+]
