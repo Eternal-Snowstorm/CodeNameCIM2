@@ -35,17 +35,15 @@ ServerEvents.recipes((event) => {
 	]).heated()
 
 	// 玻璃
-	create.mixing(
-		Fluid.of("tconstruct:molten_glass", 250), [
+	create.mixing(Fluid.of("tconstruct:molten_glass", 250), [
 		Fluid.of("cmi:pure_sand", 200),
 		"#forge:dusts/lime"
-	]).superheated()
+	]).heated()
 
-	create.mixing(
-		Fluid.of("tconstruct:molten_glass", 250), [
+	create.mixing(Fluid.of("tconstruct:molten_glass", 250), [
 		Fluid.of("cmi:pure_sand", 200),
 		"cmi:plant_ash"
-	]).superheated()
+	]).heated()
 
 	// 硅混合物
 	create.mixing("cmi:silicon_mixture", [

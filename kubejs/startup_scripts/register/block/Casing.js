@@ -8,6 +8,7 @@ StartupEvents.registry("block", (event) => {
 		let builder = event.create(`${Cmi.MODID}:${name}_casing`)
 
 		builder.tag("create:casing")
+		builder.tagBlock("create:wrench_pickup")
 
 		return builder
 	}
