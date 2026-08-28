@@ -3,7 +3,8 @@ ServerEvents.recipes((event) => {
 
 	// 醋
 	createdieselgenerators.basin_fermenting(Fluid.of("cmi:vinegar", 200), [
-		"#forge:seeds/rice"
+		"#forge:seeds/rice",
+		Fluid.of("minecraft:water", 200)
 	])
 
 	// 醋酸

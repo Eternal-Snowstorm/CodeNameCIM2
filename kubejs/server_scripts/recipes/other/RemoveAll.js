@@ -187,7 +187,16 @@ ServerEvents.recipes((event) => {
 		"jei:/ad_astra/blasting/ostrum_ingot_from_blasting_raw_ostrum",
 		"jei:/ad_astra/smelting/ostrum_ingot_from_smelting_raw_ostrum",
 		"jei:/ad_astra/blasting/calorite_ingot_from_blasting_raw_calorite",
-		"jei:/ad_astra/smelting/calorite_ingot_from_smelting_raw_calorite"
+		"jei:/ad_astra/smelting/calorite_ingot_from_smelting_raw_calorite",
+		"immersiveengineering:refinery/biodiesel",
+		"thermal:compat/immersiveengineering/press_ie_hemp_to_plantoil",
+		"immersiveengineering:squeezer/beetroot_seeds",
+		"immersiveengineering:squeezer/melon_seeds",
+		"immersiveengineering:squeezer/pumpkin_seeds",
+		"farmersdelight:integration/immersiveengineering/squeezer/cabbage_seeds",
+		"farmersdelight:integration/immersiveengineering/squeezer/tomato_seeds",
+		"immersiveengineering:squeezer/hemp_seeds",
+		"immersiveengineering:squeezer/wheat_seeds"
 	])
 
 	let removedMods = [

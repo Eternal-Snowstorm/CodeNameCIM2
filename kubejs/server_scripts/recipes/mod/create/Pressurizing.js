@@ -13,9 +13,6 @@ ServerEvents.recipes((event) => {
 	]).processingTime(500).id("vintageimprovements:pressurizing/sulfuric_acid")
 
 	vintageimprovements.pressurizing(Fluid.of("tconstruct:molten_iron", 90), [
-		[
-			"#forge:dusts/iron",
-			"#create:crushed_raw_materials/iron"
-		]
+		["#forge:dusts/iron", "#create:crushed_raw_materials/iron"]
 	]).heated().processingTime(80)
 })

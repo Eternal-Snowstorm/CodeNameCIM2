@@ -22,7 +22,6 @@ ServerEvents.recipes((event) => {
 	// 高定向热解石墨
 	create.compacting("immersiveengineering:dust_hop_graphite", [
 		"8x #forge:dusts/coal_coke"
-	])
-		.superheated()
+	]).superheated()
 		.id("immersiveengineering:squeezer/graphite_dust")
 })
