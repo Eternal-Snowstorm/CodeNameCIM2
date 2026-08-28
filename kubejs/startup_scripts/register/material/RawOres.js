@@ -21,6 +21,7 @@ StartupEvents.registry("item", (event) => {
 	 */
 	function addAloneCrushedRawMaterial(name) {
 		let builder = event.create(`${Cmi.MODID}:crushed_raw_${name}`)
+
 		builder.texture(Cmi.loadResource(`item/material/crushed/${name}`))
 		builder.tag(`${Cmi.MODID}:raw_metals`)
 		builder.tag("create:crushed_raw_materials")

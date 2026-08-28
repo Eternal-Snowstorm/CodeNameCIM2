@@ -1,4 +1,9 @@
 StartupEvents.registry("creative_mode_tab", (event) => {
+	/**
+	 * 
+	 * @param {string} name 
+	 * @returns 
+	 */
 	function addCreativeTab(name) {
 		return event.create(`${Cmi.MODID}:${name}`)
 	}
@@ -13,10 +18,9 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 	addCreativeTab("materials")
 		.icon(() => Item.of("cmi:cast_iron_ingot"))
 		.content(() => {
-			let set = Ingredient.of("#cmi:metals").getItemIds()
-			set.push(Ingredient.of("#cmi:ores").getItemIds())
-			set.push(Ingredient.of("#cmi:raw_metals").getItemIds())
-			return set
+			return Ingredient.of("#cmi:metals").getItemIds()
+				.concat(Ingredient.of("#cmi:ores").getItemIds())
+				.concat(Ingredient.of("#cmi:raw_metals").getItemIds())
 		})
 		.displayName(Component.translatable(`itemGroup.${Cmi.MODID}.materials`))
 

@@ -8,20 +8,20 @@ ServerEvents.recipes((event) => {
 		const PLATE = `#forge:plates/${metal}`
 
 		if (Ingredient.isNotNull(WIRE)) {
-			createaddition.rolling(`2x ${WIRE}`, [
+			createaddition.rolling(highPriorityItem(WIRE, 2), [
 				PLATE
 			])
 
-			createdieselgenerators.wire_cutting(WIRE, [
+			createdieselgenerators.wire_cutting(highPriorityItem(WIRE), [
 				PLATE
 			])
 
-			thermal.press(`2x ${WIRE}`, [
+			thermal.press(highPriorityItem(WIRE), [
 				INGOT,
 				"cmi:wire_mold"
 			])
 
-			immersiveengineering.metal_press(`2x ${WIRE}`)
+			immersiveengineering.metal_press(highPriorityItem(WIRE))
 				.input(INGOT)
 				.mold("cmi:wire_mold")
 		} else {

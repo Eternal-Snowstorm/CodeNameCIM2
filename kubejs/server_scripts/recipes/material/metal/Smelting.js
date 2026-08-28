@@ -1,6 +1,12 @@
 ServerEvents.recipes((event) => {
 	let { minecraft, mekanism, immersiveengineering, thermal } = event.getRecipes()
-	let types = ["forge:ores", "forge:raw_materials", "forge:dusts", "create:crushed_raw_materials", "mekanism:dirty_dusts"]
+	let types = [
+		"forge:ores",
+		"forge:raw_materials",
+		"forge:dusts",
+		"create:crushed_raw_materials",
+		"mekanism:dirty_dusts"
+	]
 	let meltingLevels = {
 		furnace: 1092,
 		blastFurnace: 1542,
@@ -10,18 +16,21 @@ ServerEvents.recipes((event) => {
 		blazingBloodCarKiln: 3094
 	}
 	let directSmeltingDisabledMetals = ["aluminum", "uranium"]
-	let directSmeltingDisabledTypes = ["forge:raw_materials", "forge:ores", "create:crushed_raw_materials", "mekanism:dirty_dusts"]
-
+	let directSmeltingDisabledTypes = [
+		"forge:raw_materials",
+		"forge:ores",
+		"create:crushed_raw_materials",
+		"mekanism:dirty_dusts"
+	]
 
 	types.forEach((type) => {
-
 		CmiMetalRegistry.getAll().forEach((material) => {
 			let metal = material.getId()
 			let metalId = metal.toString()
 			let ingotId = Ingredient.of(`#forge:ingots/${metal}`).getItemIds()
 			let meltingPoint = CmiMetalRegistry.getMetal(metal).getMeltingPoint()
-			let directSmeltingDisabled = directSmeltingDisabledMetals.includes(metalId) &&
-				directSmeltingDisabledTypes.includes(type)
+			let directSmeltingDisabled = directSmeltingDisabledMetals.includes(metalId)
+				&& directSmeltingDisabledTypes.includes(type)
 
 			event.remove([{
 				type: "minecraft:smelting",
@@ -43,7 +52,6 @@ ServerEvents.recipes((event) => {
 			}])
 
 			if (Ingredient.isNotNull(`#${type}/${metal}`) && !directSmeltingDisabled) {
-
 				if (meltingPoint <= meltingLevels.furnace) {
 					minecraft.smelting(ingotId[0], `#${type}/${metal}`)
 				}

@@ -102,7 +102,7 @@ ServerEvents.recipes((event) => {
 		if (Ingredient.isNotNull(SHARD)) {
 			if (Ingredient.isNotNull(`#forge:raw_materials/${material}`)) {
 				mekanism.injecting(
-					`8x ${SHARD}`,
+					highPriorityItem(SHARD, 8),
 					`3x #forge:raw_materials/${material}`,
 					"1x mekanism:hydrogen_chloride"
 				).id(`mekanism:processing/${material}/shard/from_raw_ore`)
@@ -110,7 +110,7 @@ ServerEvents.recipes((event) => {
 
 			if (Ingredient.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
 				mekanism.injecting(
-					`24x ${SHARD}`,
+					highPriorityItem(SHARD, 24),
 					`#forge:storage_blocks/raw_${material}`,
 					"2x mekanism:hydrogen_chloride"
 				).id(`mekanism:processing/${material}/shard/from_raw_block`)
@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
 
 			if (Ingredient.isNotNull(`#forge:ores/${material}`)) {
 				mekanism.injecting(
-					`4x ${SHARD}`,
+					highPriorityItem(SHARD, 4),
 					`#forge:ores/${material}`,
 					"1x mekanism:hydrogen_chloride"
 				).id(`mekanism:processing/${material}/shard/from_ore`)
@@ -126,7 +126,7 @@ ServerEvents.recipes((event) => {
 
 			if (Ingredient.isNotNull(CRYSTAL)) {
 				mekanism.injecting(
-					SHARD,
+					highPriorityItem(SHARD),
 					CRYSTAL,
 					"1x mekanism:hydrogen_chloride"
 				).id(`mekanism:processing/${material}/shard/from_crystal`)
@@ -136,7 +136,7 @@ ServerEvents.recipes((event) => {
 		if (Ingredient.isNotNull(CLUMP)) {
 			if (Ingredient.isNotNull(`#forge:raw_materials/${material}`)) {
 				mekanism.purifying(
-					`2x ${CLUMP}`,
+					highPriorityItem(CLUMP, 2),
 					`#forge:raw_materials/${material}`,
 					"1x cmi:nitroglycerine"
 				).id(`mekanism:processing/${material}/clump/from_raw_ore`)
@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
 
 			if (Ingredient.isNotNull(`#forge:storage_blocks/raw_${material}`)) {
 				mekanism.purifying(
-					`18x ${CLUMP}`,
+					highPriorityItem(CLUMP, 18),
 					`#forge:storage_blocks/raw_${material}`,
 					"2x cmi:nitroglycerine"
 				).id(`mekanism:processing/${material}/clump/from_raw_block`)
@@ -152,7 +152,7 @@ ServerEvents.recipes((event) => {
 
 			if (Ingredient.isNotNull(`#forge:ores/${material}`)) {
 				mekanism.purifying(
-					`3x ${CLUMP}`,
+					highPriorityItem(CLUMP, 3),
 					`#forge:ores/${material}`,
 					"1x cmi:nitroglycerine"
 				).id(`mekanism:processing/${material}/clump/from_ore`)

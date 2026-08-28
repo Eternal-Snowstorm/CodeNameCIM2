@@ -14,17 +14,17 @@ ServerEvents.recipes((event) => {
 				INGOT
 			]).energy(2000)
 
-			immersiveengineering.crusher(DUST)
+			immersiveengineering.crusher(highPriorityItem(DUST))
 				.secondaries([])
 				.input(INGOT)
 
 			mekanism.crushing(DUST, INGOT)
-			if (Ingredient.isNotNull(RAW_ORE)) {
+			if (Ingredient.isNotNull(highPriorityItem(RAW_ORE))) {
 				thermal.pulverizer(Item.of(Ingredient.getFirstItemId(DUST)).withChance(1.25), [
 					RAW_ORE
 				])
 
-				immersiveengineering.crusher(DUST, RAW_ORE)
+				immersiveengineering.crusher(highPriorityItem(DUST), RAW_ORE)
 					.secondaries(Item.of(Ingredient.getFirstItemId(DUST)).withChance(1 / 3))
 
 				// mekanism.enriching(`4x ${DUST}`, `3x ${RAW_ORE}`)
@@ -32,11 +32,11 @@ ServerEvents.recipes((event) => {
 				// console.warn(`No raw material found for ${metal}!`)
 			}
 			if (Ingredient.isNotNull(ORE)) {
-				thermal.pulverizer(`2x ${DUST}`, [
+				thermal.pulverizer(highPriorityItem(DUST, 2), [
 					ORE
 				])
 
-				immersiveengineering.crusher(`2x ${DUST}`)
+				immersiveengineering.crusher(highPriorityItem(DUST, 2))
 					.secondaries([])
 					.input(ORE)
 
@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
 				// console.warn(`No ore found for ${metal}!`)
 			}
 			if (Ingredient.isNotNull(RAW_BLOCK)) {
-				immersiveengineering.crusher(`12x ${DUST}`)
+				immersiveengineering.crusher(highPriorityItem(DUST, 12))
 					.secondaries([])
 					.input(RAW_BLOCK)
 

@@ -1,9 +1,7 @@
 ServerEvents.recipes((event) => {
-	let { immersiveengineering, kubejs, minecraft } = event.getRecipes()
+	let { kubejs, minecraft } = event.getRecipes()
 
-	minecraft.stonecutting(Casing.INDUSTRY, [
-		"#forge:plates/industrial_iron"
-	])
+	minecraft.stonecutting(Casing.INDUSTRY, "#forge:plates/industrial_iron")
 
 	kubejs.shaped("4x immersiveengineering:radiator", [
 		"ABA",

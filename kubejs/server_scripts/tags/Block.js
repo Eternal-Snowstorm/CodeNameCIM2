@@ -280,7 +280,11 @@ ServerEvents.tags("block", (event) => {
 			"tconstruct:seared_bricks",
 			"tconstruct:scorched_bricks",
 			"tconstruct:seared_glass",
-			"tconstruct:scorched_glass"
+			"tconstruct:scorched_glass",
+			"tconstruct:seared_faucet",
+			"tconstruct:scorched_faucet",
+			"tconstruct:seared_channel",
+			"tconstruct:scorched_channel"
 		])
 
 	event.get("treetap:tappable")

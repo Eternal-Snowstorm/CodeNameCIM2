@@ -1,4 +1,6 @@
 JEIEvents.removeRecipes((event) => {
+	let ids = event.getCategoryIds()
+
 	/**
 	 * 
 	 * @param {Special.RecipeType} type 要删除的配方类型
@@ -12,6 +14,7 @@ JEIEvents.removeRecipes((event) => {
 		"cmi:minecraft/shaped/love_manual_only",
 		"create_factory_abstractions:empty"
 	])
+
 	removeRecipeFromJEI("minecraft:blasting", [
 		"cmi:blasting/steel_ingot/cooking_pot",
 		"cmi:blasting/steel_ingot/skillet",
@@ -19,15 +22,18 @@ JEIEvents.removeRecipes((event) => {
 		"cmi:blasting/steel_ingot/stockpot",
 		"cmi:blasting/steel_ingot/stockpot_lid",
 	])
-	removeRecipeFromJEI("custommachinery:custom_machine", [
-		"torcherino:torcherino",
-		"torcherino:lanterino",
-		"torcherino:lantern",
-		"torcherino:compressed_torcherino",
-		"torcherino:compressed_lanterino",
-		"torcherino:compressed_lantern",
-		"torcherino:double_compressed_torcherino",
-		"torcherino:double_compressed_lanterino",
-		"torcherino:double_compressed_lantern"
-	])
+
+	if (ids.contains("custommachinery:custom_machine")) {
+		removeRecipeFromJEI("custommachinery:custom_machine", [
+			"torcherino:torcherino",
+			"torcherino:lanterino",
+			"torcherino:lantern",
+			"torcherino:compressed_torcherino",
+			"torcherino:compressed_lanterino",
+			"torcherino:compressed_lantern",
+			"torcherino:double_compressed_torcherino",
+			"torcherino:double_compressed_lanterino",
+			"torcherino:double_compressed_lantern"
+		])
+	}
 })

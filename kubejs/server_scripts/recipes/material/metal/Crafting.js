@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
 		const CRUSHED = `#create:crushed_raw_materials/${metal}`
 
 		if (Ingredient.isNotNull(BLOCK)) {
-			kubejs.shapeless(`9x ${INGOT}`, [
+			kubejs.shapeless(highPriorityItem(INGOT, 9), [
 				BLOCK
 			])
 			kubejs.shaped(BLOCK, [
@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
 			// console.warn(`No storage block found for ${metal}!`)
 		}
 		if (Ingredient.isNotNull(NUGGET)) {
-			kubejs.shapeless(`9x ${NUGGET}`, [
+			kubejs.shapeless(highPriorityItem(NUGGET, 9), [
 				INGOT
 			])
 			kubejs.shaped(INGOT, [
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
 		}
 		if (Ingredient.isNotNull(RAW_ORE)) {
 			if (Ingredient.isNotNull(RAW_BLOCK)) {
-				kubejs.shapeless(`9x ${RAW_ORE}`, [
+				kubejs.shapeless(highPriorityItem(RAW_ORE, 9), [
 					RAW_BLOCK
 				])
 
@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
 
 		if (Ingredient.isNotNull(CRUSHED)) {
 			if (Ingredient.isNotNull(RAW_NUGGET)) {
-				kubejs.shapeless(`4x ${RAW_NUGGET}`, [
+				kubejs.shapeless(highPriorityItem(RAW_NUGGET, 4), [
 					CRUSHED
 				])
 				kubejs.shaped(CRUSHED, [
