@@ -117,6 +117,12 @@
 		#default: 12000
 		#Range: 1 ~ 100000000
 		steel_boiler_capacity = 12000
+		#Efficiency multiplier when the boiler runs on artificial light (block light)
+		#1.0 = same as natural light, 0.5 = half efficiency. Set to 0.0 to disable artificial light mode.
+		#type: double
+		#default: 0.5
+		#Range: 0.0 ~ 1.0
+		artificial_light_efficiency_multiplier = 0.5
 
 	#Space Elevator Settings
 	[general.space_elevator]

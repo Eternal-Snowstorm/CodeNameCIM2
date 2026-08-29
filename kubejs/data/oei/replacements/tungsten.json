@@ -40,11 +40,5 @@
 			"#forge:raw_materials/tungsten"
 		],
 		"resultItems": "cmi:raw_tungsten"
-	},
-	{
-		"matchItems": [
-			"#forge:storage_blocks/raw_tungsten"
-		],
-		"resultItems": "neoecoae:raw_tungsten_block"
 	}
 ]

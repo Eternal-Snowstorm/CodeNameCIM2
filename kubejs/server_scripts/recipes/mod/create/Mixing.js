@@ -24,17 +24,6 @@ ServerEvents.recipes((event) => {
 		"#forge:nuggets/zinc"
 	]).heatRequirement(CmiHeatLevel.GRILLED)
 
-	// // 玫瑰石英
-	// create.mixing("create:rose_quartz", [
-	// 	"ae2:charged_certus_quartz_crystal",
-	// 	Fluid.of("thermal:redstone", 200)
-	// ])
-
-	// create.mixing("create:rose_quartz", [
-	// 	"minecraft:quartz",
-	// 	Fluid.of("thermal:redstone", 400)
-	// ])
-
 	// 殷钢
 	create.mixing(Fluid.of("tconstruct:molten_invar", 270), [
 		"2x #forge:ingots/iron",

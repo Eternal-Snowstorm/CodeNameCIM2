@@ -23,10 +23,30 @@ TConJSEvents.materialDefinition((event) => {
 	 */
 	function TConMaterial(material) {
 		this.material = material
-		this.definitionData = (builder) => { }
-		this.statsData = (builder) => { }
-		this.traitsData = (builder) => { }
-		this.meltingData = (builder) => { }
+		/**
+		 * 
+		 * @param {Internal.Consumer_<Internal.MaterialDefinitionBuilder>} builder 
+		 */
+		this.definitionData = (builder) => {
+		}
+		/**
+		 * 
+		 * @param {Internal.Consumer_<Internal.MaterialStatsBuilder>} builder 
+		 */
+		this.statsData = (builder) => {
+		}
+		/**
+		 * 
+		 * @param {Internal.Consumer_<Internal.MaterialTraitsBuilder>} builder 
+		 */
+		this.traitsData = (builder) => {
+		}
+		/**
+		 * 
+		 * @param {Internal.Consumer_<MaterialSmeltingRecipeBuilder>} builder 
+		 */
+		this.meltingData = (builder) => {
+		}
 	}
 
 	/**
@@ -90,7 +110,6 @@ TConJSEvents.materialDefinition((event) => {
 			builder.perStat("default", $ModifierIds.stringy, 1)
 		})
 		.build()
-
 
 	// 橡胶木
 	new TConMaterial("rubberwood")

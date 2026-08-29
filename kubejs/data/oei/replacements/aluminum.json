@@ -3,7 +3,7 @@
 		"matchItems": [
 			"#forge:ingots/aluminum"
 		],
-		"resultItems": "neoecoae:aluminum_ingot"
+		"resultItems": "immersiveengineering:ingot_aluminum"
 	},
 	{
 		"matchItems": [
@@ -21,13 +21,13 @@
 		"matchItems": [
 			"#forge:storage_blocks/aluminum"
 		],
-		"resultItems": "neoecoae:aluminum_block"
+		"resultItems": "immersiveengineering:storage_aluminum"
 	},
 	{
 		"matchItems": [
 			"#forge:dusts/aluminum"
 		],
-		"resultItems": "neoecoae:aluminum_dust"
+		"resultItems": "immersiveengineering:dust_aluminum"
 	},
 	{
 		"matchItems": [
@@ -45,12 +45,12 @@
 		"matchItems": [
 			"#forge:raw_materials/aluminum"
 		],
-		"resultItems": "neoecoae:raw_aluminum_ore"
+		"resultItems": "immersiveengineering:raw_aluminum"
 	},
 	{
 		"matchItems": [
 			"#forge:storage_blocks/raw_aluminum"
 		],
-		"resultItems": "neoecoae:raw_aluminum_block"
+		"resultItems": "immersiveengineering:raw_block_aluminum"
 	}
 ]
