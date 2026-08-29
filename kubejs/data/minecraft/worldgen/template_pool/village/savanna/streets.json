@@ -174,8 +174,8 @@
 		{
 			"element": {
 				"element_type": "minecraft:legacy_single_pool_element",
-				"location": "cmi:village/streets/savanna",
-				"processors": "minecraft:street_savanna",
+				"location": "cmi:village/savanna/streets/straight_1",
+				"processors": "cmi:road",
 				"projection": "terrain_matching"
 			},
 			"weight": 10
