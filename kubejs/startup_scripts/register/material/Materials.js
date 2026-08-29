@@ -1,6 +1,6 @@
 // 木头
 new Material("wooden", "wooden")
-	.color(0xab7500, 0xac8430)
+	.color(0xE3E3D8, 0xA7AD9F)
 	.gear(false)
 
 // 安山合金
