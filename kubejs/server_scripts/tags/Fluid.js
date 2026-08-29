@@ -25,7 +25,7 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("ad_astra:fuel")
 		.removeAll()
 		.add("ad_astra:fuel")
-		.add("ad_astra:cryo_fuel")
+		.add("neoecoae:cryotheum_solution")
 
 	// 机械动力无限流体
 	event.get("create:bottomless/allow")
@@ -37,16 +37,8 @@ ServerEvents.tags("fluid", (event) => {
 		.add("tconstruct:molten_iron")
 
 	// 一桶就能上天的燃料
-	// event.get("ad_astra:efficient_fuel")
-	// 	.add("minecraft:lava")
-
-	// ad原油
-	// event.get("ad_astra:oil")
-	// 	.add("minecraft:lava")
-
-	// ad氧气
-	// event.get("ad_astra:oxygen")
-	// 	.add("minecraft:lava")
+	event.get("ad_astra:efficient_fuel")
+		.add("neoecoae:cryotheum_solution")
 
 	event.get("deepdrilling:sludge")
 		.add("deepdrilling:flowing_sludge")
@@ -159,7 +151,7 @@ ServerEvents.tags("fluid", (event) => {
 		.add("cmi:sodium_aluminate_solution")
 
 	event.get("tconstruct:fuels")
-		.add("ad_astra:cryo_fuel")
+		.add("neoecoae:cryotheum_solution")
 		.add("cmi:delta_unstable_solution")
 		.add("ad_astra:fuel")
 		.add("#forge:oil")
