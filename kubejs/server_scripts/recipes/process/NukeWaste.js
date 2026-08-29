@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 		.outputItems("5x alexscaves:toxic_paste")
 		.outputGases("100x cmi:nuke_waste") // MekType.Gas.of("cmi:nuke_waste", 100)
 		.duration(20 * 5)
-	
+
 	// 核废料转化
 	mekanism.reaction(
 		"alexscaves:toxic_paste",
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
 			"cmi:plutonium_ionized_crystal"
 		])
 		.inputFluids([
-			MBDUtils.withFluidTag("cmi:nitric_acid", 100)
+			Fluid.of("cmi:nitric_acid", 100)
 		])
 		.outputFluids([
 			Fluid.of("cmi:plutonium_containing_solution", 100)

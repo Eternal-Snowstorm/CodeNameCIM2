@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "immersiveindustry:electrolyzer",
 		"fluid": {
-			"tag": "cmi:brine",
+			"tag": "forge:brine",
 			"amount": 500
 		},
 		"result_fluid": {
