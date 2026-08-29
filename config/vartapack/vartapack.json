@@ -1,0 +1,18 @@
+{
+	"schema": 1,
+	"enabled": true,
+	"showToastOnStartup": true,
+	"showScreenOnCriticalIssues": true,
+	"allowContinueAnyway": true,
+	"includeInstalledModsInReport": true,
+	"includeExtraModsInReport": true,
+	"redactUserHomePath": false,
+	"redactUsername": false,
+	"strictMode": true,
+	"extraModsSeverity": "WARNING",
+	"requiredModsSeverity": "CRITICAL",
+	"blockedModsSeverity": "CRITICAL",
+	"recommendedModsSeverity": "INFO",
+	"fixedGuiScale": true,
+	"targetGuiScale": 2
+}

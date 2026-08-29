@@ -1,0 +1,31 @@
+{
+	"schema": 1,
+	"packId": "cmi",
+	"packName": "Create Mechanism and Innovation",
+	"profileVersion": "2.5.0",
+	"supportUrl": "https://github.com/Eternal-Snowstorm/CodeNameCIM2/issues",
+	"homepageUrl": "https://github.com/Eternal-Snowstorm/CodeNameCIM2",
+	"expectedMinecraftVersions": [
+		"1.20.1"
+	],
+	"expectedLoaders": [
+		"forge"
+	],
+	"minimumJavaMajor": 17,
+	"minimumRamMb": 1,
+	"requiredMods": [
+		{
+			"id": "cmi",
+			"name": "CMI Core",
+			"requiredVersion": "",
+			"reason": "CMI Core is the core mod of CMI."
+		}
+	],
+	"allowedExtraMods": [
+		"rhino",
+		"create",
+		"cmi",
+		"kubejs",
+		"ldlib"
+	]
+}

@@ -1,0 +1,4855 @@
+{
+	"schema": 1,
+	"files": [
+		{
+			"path": "CONTRIBUTING.md",
+			"sha256": "9a99ef2a35a4bff153e9e341742b52d48543fad8dff4645698a77fef93736256",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: CONTRIBUTING.md",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "icon.png",
+			"sha256": "61dc869cef1f95abb3d0be1fb37c62e6a7078c51ff838de2b6a0d9d469925a74",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: icon.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "LICENSE",
+			"sha256": "2b4c42737f1ccc403f97328c597e0abd272aad5e413a22539b3ba5c31ea943c2",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: LICENSE",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "License.md",
+			"sha256": "f650102b710133c70adac5d92b564d920da88ea49b97929efd65c1588d180a29",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: License.md",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "README.md",
+			"sha256": "d27e168825d8ffd79e854eacdbc838a3f0269cbb318a005599fb6810e1c09043",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: README.md",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/advanced_ae-client.toml",
+			"sha256": "c272dc30942cbf7367668db820d2dc63370cdcfc07ad413334d295222db10e87",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: advanced_ae-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/advanced_ae-common.toml",
+			"sha256": "61e6db66f8919d7b988d9ada0247b6f55875ababa6e43773b1ffcd31c5a06c46",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: advanced_ae-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ad_astra-client.jsonc",
+			"sha256": "eff1be886673bc30e4dde7030f6970915c5c1c648d671f81bae5c941025705b3",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ad_astra-client.jsonc",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ad_astra.jsonc",
+			"sha256": "1318ff0852c54db9fcb7fb11c2855f680bb167b25bbe0be404e4505cc3e46062",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ad_astra.jsonc",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ae2ct-client.toml",
+			"sha256": "e625c910239f91e0717acad7b1c36aa7ace2450503c94c9608a725a86efa4887",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ae2ct-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/alexscaves-client.toml",
+			"sha256": "db5c9fddb7816fae75ecdb86e604c97408eca8626d785b9380a0b39d68b8bd58",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: alexscaves-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/alexscaves-general.toml",
+			"sha256": "232e6e03c16b2d664ffbca9014dc72da2ff952b514d514087288fda1237dbaed",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: alexscaves-general.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/alltheleaks.json",
+			"sha256": "ed68f0c0b35f9ebbb3d3f93a4913e314b04bfdeab480fc7683bd6ae392cd2e0e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: alltheleaks.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/appleskin-client.toml",
+			"sha256": "e6609ffbea927ee6390b1317bb6f3abb3f31ee591ca5c1d5e748f5e625fefea1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: appleskin-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/asteorbar-client.toml",
+			"sha256": "f68e949389a629f664b292c51f201c7b6a611a7d058acb8b71be3c69b9e739f4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: asteorbar-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/attributefix.json",
+			"sha256": "8a874f30eec8001de0d953c72ff949ef2b26a29d8b974ec610991d24e8162ec0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: attributefix.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/betterfpsdist.json",
+			"sha256": "9a60e8278389e5230e4f8b45cba6f42d8d52e63469b98fff29f2e1cb9921b9f3",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: betterfpsdist.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/carryon-common.toml",
+			"sha256": "ba4cf34265517f769e679f24711178d9e03e4fc7d6495e832eec27f3f09a0fe9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: carryon-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/citadel-common.toml",
+			"sha256": "3fcd8013137a86c00953d4be1e56945b84b87594be722bbf3b3be8d752e2577f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: citadel-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/cofh_core-client.toml",
+			"sha256": "c683eaf3dcb24312ce939ad6580490cde2dc5477349cd87e9b3ae45575f21a6b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cofh_core-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/cofh_core-common.toml",
+			"sha256": "e254fd10199336dd0e0c1c3f20a8daa1fdf9ca026b02dd9c0064ae1f058b9393",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cofh_core-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/collective.json5",
+			"sha256": "1bd89e753b05ca51f7260596b5e8e8d53b6510eb39eb05c315a2e4f0d789461b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: collective.json5",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/colorwheel-client.toml",
+			"sha256": "4694fdaf4e4a00928441ab2b9bf5e28a4aa9d3312a9fa30749d14c877e08eee6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: colorwheel-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/compressedengineering-common.toml",
+			"sha256": "4b28ebe8fb21c3b87088cd6c49e73ac306e64e29f4db4ca48dfd876b543840aa",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: compressedengineering-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/configured-client.toml",
+			"sha256": "a823c528792d2fda677b9a05956a8c609b6279386b6b4b840d992fa43b931698",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: configured-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/constructionwand-client.toml",
+			"sha256": "49dab16d69ef53b3846431d403918762dc0b22a4efba307c80894eeec64a1118",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: constructionwand-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/copycats-client.toml",
+			"sha256": "9c4e1c84d2cd936b850b7d69ab97e4b617e464551cc3ce44aeb0aaed4eb6c6c5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: copycats-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/copycats-common.toml",
+			"sha256": "6eae5e6f03453087e9493c578bce1f1a8d33d13191a8827651e52d37797555af",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: copycats-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create-client.toml",
+			"sha256": "7c40bc004ba478b13d0c99c2b644e50cf3a1d2d60d9b40df15822da8d8ad710c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create-common.toml",
+			"sha256": "36a4d9f5da68f6801b83ce0c4a1a8805fbeffb0dd997f2d405465d7774522296",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/createaddition-common.toml",
+			"sha256": "956297cb0db60e7307e15c71ff737da34d0811c349ff91bbc4a948ac3a577a38",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: createaddition-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/createcoolingfan-factors.json",
+			"sha256": "11415120b9e22c4a0ee22f56ef2c245fcc3aa211bebd2504d146537b5856a74e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: createcoolingfan-factors.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/createdieselgenerators-client.toml",
+			"sha256": "517f456eab2ca28cfcd471b2fefb23641301a3bbf49fc5c4a9111914166aea93",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: createdieselgenerators-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/createdieselgenerators-common.toml",
+			"sha256": "3c9ccf9ddb67bbb16a6e59ee8bee9531dca9c07dd58bf12f5dde6d482a577dc6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: createdieselgenerators-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create_central_kitchen-common.toml",
+			"sha256": "d769909a3c4ab55be032c8a07904bd870477dc443cdadb3464c8e30aedf3441c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create_central_kitchen-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create_connected-common.toml",
+			"sha256": "f8bb94ecb4d077deacb251268d31389b8206a4188c9c3483e6da215b3afc3efc",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create_connected-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create_dragons_plus-client.toml",
+			"sha256": "a53e8aacb7a4d59f94067a09fe11f7bdc514509122436516b59a2ef981e11b84",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create_dragons_plus-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create_dragons_plus-common.toml",
+			"sha256": "770016ee660cbdeda60299d5fb93f35c73cc425d811584fc3bd5ac799a0d1661",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create_dragons_plus-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create_enchantment_industry-client.toml",
+			"sha256": "d1b30dfb713d118f30fcb9a07657c2c02014c7c1a7ebc29694627ad02b60e94a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create_enchantment_industry-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create_enchantment_industry-common.toml",
+			"sha256": "17d3e1783dd72a92b6d9f970ac2b1237766634233201f66eedc379f8eaaa0263",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create_enchantment_industry-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create_jetpack-client.toml",
+			"sha256": "3ef10cf780e735b417be86d1ef29bb72fc9257250a4d5224bf9168d4978e93c9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create_jetpack-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/create_jetpack-common.toml",
+			"sha256": "7137572d1cd7562933ae555cfe3c973eb30f4e6600171e996b202d56df0076b8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create_jetpack-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ctm.toml",
+			"sha256": "d3068021f3b4be652dc046f688aab061a6acaa0ba437fb0efcf5d577389eba8d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ctm.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/cupboard.json",
+			"sha256": "937698438af081495eebab187013f66570218e1443f35db8a2ca0b4cb6d9638b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cupboard.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/curios-client.toml",
+			"sha256": "ebc96c813d601e9c61b6929a8490e71fa990dc64918c19e1f9937bb275510abc",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: curios-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/curios-common.toml",
+			"sha256": "5fe808869d46a4b80e1191fbe40f40a4d63987beda0eaeb2d89b909a990ea2ea",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: curios-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/custommachinery.toml",
+			"sha256": "93c0ec54b951f002b9817659f7747f7eb67b6378fdc30dee49331ca997c715f3",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: custommachinery.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/customwindowtitle-client.toml",
+			"sha256": "769cdb10cdf039f8d788a5cb70d1c6ad1f73946b54cb5d5305d315153a3918f1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: customwindowtitle-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/defaultsettings.json",
+			"sha256": "7345801c7fb4c7e3d66ce35c37e0232d3090793fe044a376b7b668835581e961",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: defaultsettings.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ding.toml",
+			"sha256": "0602c11e65bc3268b77ff308e3c3b033553fb9feef43521865e9624e882ec42e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ding.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/embeddium-fingerprint.json",
+			"sha256": "f63e64521dfaf420fe382823f59e3055833a2b5b8d9739371c5096f9ac3ea1cc",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: embeddium-fingerprint.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/embeddium-mixins.properties",
+			"sha256": "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: embeddium-mixins.properties",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/embeddium-options.json",
+			"sha256": "99808879dc2f4e20c5476940b4f47e9986e97972cdfe7493351e12c1f5ae0203",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: embeddium-options.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/entityculling.json",
+			"sha256": "48527836eabbda32f541d1e44b718a3a384e7aaa4a377b70666bc4f1dabfadde",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: entityculling.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/expatternprovider-common.toml",
+			"sha256": "04555ae40db6358bc2a2353e137f87a60718ab5243892ca925871c41e5958710",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: expatternprovider-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/explorerscompass-client.toml",
+			"sha256": "eaaa7a0af68a2b00a557d5df97191c80c996042cc33cc53eccd14e78431bff28",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: explorerscompass-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/explorerscompass-common.toml",
+			"sha256": "7d7a8f25b99b935b55a605943dd2c52d7bc58bff7baceaf445d6d895d69eba0d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: explorerscompass-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/extendedae_plus.yaml",
+			"sha256": "8ddb2ffae942d1d33f8ab9ef1ccbdf5b5413848cbd29af8f3191479e4c347f6c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: extendedae_plus.yaml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/extremesoundmuffler-client.toml",
+			"sha256": "ee756799945279dccc8b2a346630a5c74c9eed54e37f4569d11aff549b814931",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: extremesoundmuffler-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/farmersdelight-client.toml",
+			"sha256": "940f68676859e852c600974c4776e986453ce7d3b2cf27ac156535e26c160e11",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: farmersdelight-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/farmersdelight-common.toml",
+			"sha256": "025092b2d2580893fb4ce9054a90f96e00e8636a47a734a7ece340a2a94f5734",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: farmersdelight-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fastsuite.cfg",
+			"sha256": "44198ad591572d87a9f71b0b636229d91508a8c971f9dca907bed3c6d6754193",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: fastsuite.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ferritecore-mixin.toml",
+			"sha256": "c164439c632aa7c95c07edec5cfef74b8e2d5671a8445a781deeb4de7ad0c8b6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ferritecore-mixin.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/flerovium.json",
+			"sha256": "5ff7773ef2512720f2ab358487c56c3ae87dbb92c3f492196d05df35d787e217",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: flerovium.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fluidlogistics-common.toml",
+			"sha256": "f6137169869cd8929cf37497e6804ca233065929d43b1f5bb3c2df1935b8b567",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: fluidlogistics-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/flywheel-client.toml",
+			"sha256": "36b3a7ad8ef4ead190818349eeeebf6e59ca869da958cb716f13f2152d7d9cbc",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: flywheel-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fml.toml",
+			"sha256": "bfece66cda80d007ca0c4fa03149fc01934d9859dfb8e3abbb11f837cbf491c8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: fml.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/forge-client.toml",
+			"sha256": "0b1b3c45343435184c9dde3149b38afcdb97953e287686ecda54385f53ebcddc",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: forge-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbxmodcompat.snbt",
+			"sha256": "9abe2c7f784810cac3ca71c74d02aacd5fe6861d744cb143d077a525a2b42e76",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ftbxmodcompat.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/gbf.json",
+			"sha256": "eb62d32b6fd3950ce9a85e41af93f1496c150f8b74ecc2ffaa354912409f5b90",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: gbf.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/guideme.toml",
+			"sha256": "89a3f43b3cb90476c75121fecdd5f77375e6a95bfbd7f8bb057574e70cec660c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: guideme.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/immediatelyfast.json",
+			"sha256": "4ea89cbcab7bf1689b926569c79f1613d578cfdb7e2f0dbc4cc7b7519f23229d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: immediatelyfast.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/immersiveengineering-client.toml",
+			"sha256": "1ec352438ec8b9539047de1080c584941346b06a471a4325f5b2e4989ee97a11",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: immersiveengineering-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/immersiveengineering-common.toml",
+			"sha256": "728dcca3a45c8350e379078da02812cca77acb7e7a2d36011ddf5fe861b29bdb",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: immersiveengineering-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/immersive_aircraft.json",
+			"sha256": "898347b99b3326ae0ce719a06351eb930b1a3567e4f3c22ba94f014f1e115a46",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: immersive_aircraft.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jecharacters.toml",
+			"sha256": "14f14763f026ece314bd3caa1302f0910d34d68370b0ea6de27ca59960f2c817",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: jecharacters.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jeiintegration-client.toml",
+			"sha256": "5936d40b2426916756ee8b2c99d038988f0b7dd56d6a4a943c2139f828ce47e4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: jeiintegration-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei_plus_plus-client.toml",
+			"sha256": "19cb21d7c8a8066359fdc4f1d381892f1de981faa4d2eae56ac65d10f5360183",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: jei_plus_plus-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jupiter.json",
+			"sha256": "ac6415cb504a1cd8d129435e67e718b0f139613f378127f0f8f21ee61ca4ffe7",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: jupiter.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/kaleidoscope_compat-common.toml",
+			"sha256": "78986f6c27e369a613e8ad17436def018ea8b09f80365040054e00434880d7af",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: kaleidoscope_compat-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/kaleidoscope_cookery-client.toml",
+			"sha256": "d565940c49ea80f51d041e8abf15afa383e395a9ec42ad19082cb70c6a92ec0f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: kaleidoscope_cookery-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/kaleidoscope_cookery-common.toml",
+			"sha256": "40f6578c986223692cb45c05b905c889bd3bbf237c0c5d1171a6422bf81734c4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: kaleidoscope_cookery-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/kaleidoscope_end-common.toml",
+			"sha256": "4c66f986367477341eb99af099175f6bfacfe7825a37dc99c07a89c140998587",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: kaleidoscope_end-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/kaleidoscope_nether-common.toml",
+			"sha256": "d4f943f270d8405e18e6c273b0c5b5c4e33c813dbc43e404e7e565cb6b3938ab",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: kaleidoscope_nether-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/kaleidoscope_tavern-common.toml",
+			"sha256": "48a9c6fd9824d773893809fd21557b9c738e15b3fdeb305ec309d60a1be4d565",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: kaleidoscope_tavern-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/leawind_third_person.json",
+			"sha256": "1d223025a06ae47fa07b1f92e11f8bd0a50d3069daf558ff6c291c6097830336",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: leawind_third_person.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/lmft.json",
+			"sha256": "b5d3dd773706109951ffe2b6bdb1dba333ad01b6ddc85e073d5ee44be783552a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: lmft.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/lootr-client.toml",
+			"sha256": "4e37c085446f2a5be3a3cc4765ffc9657e71473245574c3e398c64fef07615a0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: lootr-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/lootr-common.toml",
+			"sha256": "c056a537b6cbc9cf4c49f29ec98480537a68932e412f7c5dbd7f0a70bee69ce4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: lootr-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/mantle-client.toml",
+			"sha256": "c390daa14dea3ec18a1b2a0c15de43d4a3c249f8359aaa32bd6d482bc4aaafea",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: mantle-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/mbd2-common.toml",
+			"sha256": "e7faca740e446892c2b651633d7b949042f409a536a6fedfa612ee2d03d3c9f9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: mbd2-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/mbtool-common.toml",
+			"sha256": "3401e6d77d348bc4c0bea9b3a1a4ae423d7c48ba9b63a7ac5418ab090518a27b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: mbtool-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/meplacementtool-client.toml",
+			"sha256": "691c734de5d59acbf5d67e7ea0077e6996a652421361354f852c72e0bc605552",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: meplacementtool-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/meplacementtool-common.toml",
+			"sha256": "9f7dfaf90fab5e200ecc85117743a78579fcf5dd0e02bcec061ed6d0e81f32b7",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: meplacementtool-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/me_beam_former-common.toml",
+			"sha256": "b05a9c9c913d23d0dfc2f634b04b4b1d8b447fa0c7dbbc8a6fb6f025d58d70ec",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: me_beam_former-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/modelfix-client.toml",
+			"sha256": "fa745470318f2031347f2b34c369ca01b81eece56b4a9eb58e2edf47a8cea230",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: modelfix-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/modernfix-common.toml",
+			"sha256": "fad9aea710ec3508eab562cd8f2b5f8e2dda6ee1c5fb1fe818f90ce253017f66",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: modernfix-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/modernfix-mixins.properties",
+			"sha256": "6f8d338984405034948c9345bd040d11e37a0d5c3621d90f17d8044d81707bda",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: modernfix-mixins.properties",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/moreburners-client.toml",
+			"sha256": "6d0ac725a50b600191a2b90769503ed3b53335648029cbe60e46e45c973889ad",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: moreburners-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/moreburners-common.toml",
+			"sha256": "9e4b06b0b7093d5c777ae95eaf03c39b5f4da267c005e71622df49ba974a92f9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: moreburners-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/MouseTweaks.cfg",
+			"sha256": "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: MouseTweaks.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/moveslikemafuyu-common.toml",
+			"sha256": "072feef47acd9190c87ea2d63ae44ab57029167371afb12d1fa6fa5895439040",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: moveslikemafuyu-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/mynethersdelight-common.toml",
+			"sha256": "21045dce812e9b00cd0c50cbba9fb23d07671c20505f8376e8777edee24d95a5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: mynethersdelight-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/naturescompass-client.toml",
+			"sha256": "4215398614d28a24d2fe39593bf25981dd67ae46f85bc710ee07ba2d37c74c0b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: naturescompass-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/naturescompass-common.toml",
+			"sha256": "fcd8139ebadce484751005dfc23cd288c108eb0640220ad6e26b7609bb68cedb",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: naturescompass-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nerb.yaml",
+			"sha256": "dceda831a1a2585df3fb5f3baae348eb43a7179ced0609a8a47869dfb0243d71",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: nerb.yaml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nolijium.json5",
+			"sha256": "4a124dc5ca602e36307959d5ce679ae9bcb4e7c98e46213f2a98a48cb9c03d54",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: nolijium.json5",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/notenoughcrashes.json",
+			"sha256": "e604a3705ca2adf9499a412afefc61fb589448de43e4652db6232f94699e3950",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: notenoughcrashes.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/observable.json",
+			"sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: observable.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/oculus.properties",
+			"sha256": "7abb35a230e4202c8c5d653f29e24122938f73fa4fd48da946aa8169b6a72cf9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: oculus.properties",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/packetfixer.properties",
+			"sha256": "76a6477717c80ea314c46302657dab10a156ddfd3bfa98426c28c00427a957c1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: packetfixer.properties",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/paintings-client.toml",
+			"sha256": "3a061cf93df17f94c375bef31cf2f5f4821457d7061fdeb3d581de8a03e04d6f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: paintings-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/patchouli-client.toml",
+			"sha256": "d289f4c7540e3e24bcf6bbf3f5a2aaaf87ccf58027d2213e40497fc627422068",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: patchouli-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/pipezlagfix-common.toml",
+			"sha256": "e261e6f1703a25307f251cbc3c0b7661a931ce4e00e9256713752919d85a9867",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pipezlagfix-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/polymorph-integrations.toml",
+			"sha256": "43a7425a314be7d78c2e31d44ab8f46c5ee824ab10906ab8909923d23646b6ad",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: polymorph-integrations.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ponder-client.toml",
+			"sha256": "56291af4bc3506692c79f5c0155c47cce8577d0aae6ed5930c9074d5cb9bc5c8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ponder-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/powerful_dummy-common.toml",
+			"sha256": "90202d5faa27c942ea4e2b6c8225b3c40e9836bb5f4155220e2b7d5afe11e4e2",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: powerful_dummy-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/quest_enhance-client.toml",
+			"sha256": "f9d24bba77075a06cb9f415eb588ea792a100698504f1cecba6dd3fcbaf820da",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: quest_enhance-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/railways-client.toml",
+			"sha256": "f3e6295841dd104d85bbc1bd529c09c4a3bd4a6d0a7cc859f1aa7f866481a10c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: railways-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/railways-common.toml",
+			"sha256": "1f660c8bd0c374799862392ef7a56253544f5adaf653e59386cd1eb34f94fa2f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: railways-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/resourceful-config-web.json",
+			"sha256": "d4820cc5c94a0c4f5e8a51ff2836496eb9054291674654fa1474ac52dab96dd1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: resourceful-config-web.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/RuOK.toml",
+			"sha256": "acd47faaee3b85c37ca86691d824d20a8d99ed95c610c073243ab4fa1c175654",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: RuOK.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/sidebar_buttons.json",
+			"sha256": "33c7071e289295153b0457303c2d903f24d538ab9d10fdcf959e2a1cccd819ed",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sidebar_buttons.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Smarter_Contraption_Storage.toml",
+			"sha256": "45e43ca8f18b40edc1a8b62453a183cc1f4f4f35e9cd854f04eede02e5c883c5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: Smarter_Contraption_Storage.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/smoothboot.json",
+			"sha256": "a48fba949e4e24fbe05a16e171c63a53bf8bfe389777460961933278bdf98206",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: smoothboot.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/sodium-extra-options.json",
+			"sha256": "f6e8dcf4ee79c91fc4438c1c1ae89c131448460cfe314655afcedf17715542a6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sodium-extra-options.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/sodium-extra.properties",
+			"sha256": "a2f1b47c1eaa119ab34727f1d43c2506cb3d7f17ba8fb4efb49e20c8e0b58e70",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sodium-extra.properties",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/solcarrot-client.toml",
+			"sha256": "6906f6e7b3e2764c6f157baa09bf47a4e261880cd3f1990ac12d64b280ce1fc1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: solcarrot-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/sophisticatedbackpacks-common.toml",
+			"sha256": "6674ec92f625296aa8accc93d71fdf1eecfc8050111c5ae7b6d9a94b4fe14506",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sophisticatedbackpacks-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/sophisticatedcore-client.toml",
+			"sha256": "3175ac14ac1da55ba706d1f0321c0b5620cd968a381e60323b283778e7b6d9e6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sophisticatedcore-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/sophisticatedcore-common.toml",
+			"sha256": "4a897f3f78adf131bcb7ae82925dbe8893516f19bb957fc9c6b740aa3c8fe187",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sophisticatedcore-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/sophisticatedsorter-client.toml",
+			"sha256": "7737a82d0042853e70027be541b12deab533aa61074ec6530c2056d4fd367e63",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sophisticatedsorter-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/sophisticated_jei_index-common.toml",
+			"sha256": "e8bc044459814a34dcca776702440c684fc635c4c06383246c5b0c628b90f6a7",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sophisticated_jei_index-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/steampowered-common.toml",
+			"sha256": "28d1418cdc7a15a230fe8da5858de28eb9be7d8ccf33ef53f5ff451d5132a421",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: steampowered-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/tconjei-client.toml",
+			"sha256": "eabd46602a92d93ccb170f7a4f9ed4c6dc0a1629d49bb034471be43aad569c34",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tconjei-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/tconplanner-client.toml",
+			"sha256": "eece55860bca1fcdcde2e9852935e23774013dc4f913f05bc71d15f14dbd8838",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tconplanner-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/tconstruct-client.toml",
+			"sha256": "cd2d093435469ff4afbe67655426f12b5b0bb4001acafd6f80996cd807e24af6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tconstruct-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/tconstruct-common.toml",
+			"sha256": "ee4086bdd284d599a70361522063d11fe38e9b06d7ca531ad0c2e916b68a0728",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tconstruct-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/terrablender.toml",
+			"sha256": "11ef4c2666fa094b456310710c2b5cb8babbd71982d4d187c9a80ad4011d8014",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: terrablender.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/thermal-client.toml",
+			"sha256": "36436c2d8e9cc35f54f353529d30f300e54818368f32227e2246d22744152ba2",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: thermal-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/thermal-common.toml",
+			"sha256": "04cad12aeec270f08e1bba6751a8e466f12b0ab6102814c80eb910f0cb26a353",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: thermal-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/thermal_integration-common.toml",
+			"sha256": "6963fe1d4043ce1abb692542b170ddb066184ba2c87a05f12cd8e5813c727484",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: thermal_integration-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/thermal_parallel-common.toml",
+			"sha256": "a58f605b7c05885414f82cb9c3784674219b50935484c955b4431742f5b0aad8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: thermal_parallel-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/tinkersmossymodifier-common.toml",
+			"sha256": "8a44e7d7f6b50dc0b74f1207382e41d49169612333f5803972bc5ef4f1a0045a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tinkersmossymodifier-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/transition.json",
+			"sha256": "6c0060c7301372bbc414f86a139b383e34fb620f0621badd71bb19efc3f26767",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: transition.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/treechop-client.toml",
+			"sha256": "ae1995c3bac2a03f767a2c8da6af75364f8a0fc8de6bd82334d05191d97bdc79",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: treechop-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/treechop-common.toml",
+			"sha256": "9524555d5e7e6fe3645a4694a43f463c0a1d376a14a670a2bc4379c3aa93e7c4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: treechop-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/trender.json",
+			"sha256": "fe0bed19bd0927b3d519816c73378730689080a8f07e66a6167c266ffde29dd2",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: trender.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/tslatentitystatus-common.toml",
+			"sha256": "747bf40826a3602833a38006390c94674b04e22534cc4d31b5c19181aa1947e4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tslatentitystatus-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/untranslateditems-client.toml",
+			"sha256": "8903e585051eec7ddd2a9b426a04abb66e831efaa469d84edae4b6fb49d6e083",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: untranslateditems-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/vintageimprovements-client.toml",
+			"sha256": "6f0f295e9b8c103103cc2af8cbc52437ed4a00d3ab48ebabbc068f54d175b3e8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: vintageimprovements-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/vintageimprovements-common.toml",
+			"sha256": "253bb32936399eb33862c9fba4de0c0d9ceae12fdf033ffb7423cc2a4cfbf7aa",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: vintageimprovements-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaerohud.txt",
+			"sha256": "ed93321447654f0d0dcaa788dfab7fdcadab7b76371e7443834da468a9627f16",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: xaerohud.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaeropatreon.txt",
+			"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: xaeropatreon.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xbob.json",
+			"sha256": "00c3f4910789ab299c9e091e5ce88fe8e96c83f78c602ea91337b7ae40854b75",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: xbob.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/yes_steve_model-client.toml",
+			"sha256": "853ae2255d52e70fa7a09b2f607431f5b013fd916c07fd581d0a20654091f53f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: yes_steve_model-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/create-server.toml",
+			"sha256": "095e809951f006d07f98db0d8b92b974209bd7ee7b81459174ad0648332eceb4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create-server.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/createdieselgenerators-server.toml",
+			"sha256": "a0375e13ae1c31b33714f8258ff9c2e58cf5ee4287eab0543a080afea3f976b0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: createdieselgenerators-server.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/ftbessentials-server.snbt",
+			"sha256": "4444fa163e029565eb76f6aa55940e99cfcf21727778dd6fcca4f22e1b62e5f6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ftbessentials-server.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/immersiveengineering-server.toml",
+			"sha256": "b878a9d55bf97e7ae78472ca8e6a8de799d66b2cee57ab606d4841df23d69485",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: immersiveengineering-server.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/sophisticatedbackpacks-server.toml",
+			"sha256": "7ec8ffe4a64bc403bdc5fe2a216540a424bda52d537554bea40cc76487fe5314",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sophisticatedbackpacks-server.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/thermal-server.toml",
+			"sha256": "822dbebc7af1a8bc73ada2459f1ab9a1b81b8f83e421a04b0d9cccf3496f197b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: thermal-server.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/thermal_extra-server.toml",
+			"sha256": "ed7ff40fdbbd4254151075b8f2ad0e05bb4eec6ec7e477ff9a0d4541dfc6f018",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: thermal_extra-server.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/multiblock/chemical_reactor.mb",
+			"sha256": "e3cde205f0ada05536e5bd0af6fcd73d9ea2bc3b55908caa210dc3707c94c73f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: chemical_reactor.mb",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/multiblock/electrolyzer.mb",
+			"sha256": "81ac36da78aae7ba2195deeed2c92fe2eb2ec21fd4182a2bd973e461c5024e33",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: electrolyzer.mb",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/multiblock/electronic_blast_furnace.mb",
+			"sha256": "bcfd79be318946915a2257503c9e004630471c537f170671630d13f1bec00865",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: electronic_blast_furnace.mb",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/multiblock/improved_rubber_extractor.mb",
+			"sha256": "b0046e208e78d1dfb06438c4abab64f7ba79e0d0e6b8c6645bacba0438d62521",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: improved_rubber_extractor.mb",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/multiblock/reinforced_chemical_reactor.mb",
+			"sha256": "a3acc7bb1f9e36ad8cae492b0f19c3f0df37557fe27c28a2f80282a43dc6fea3",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: reinforced_chemical_reactor.mb",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/multiblock/reinforced_coke_oven.mb",
+			"sha256": "0bc068209f847811dc954ddc8d0f5098cdfbe847b9c3b98dfb12378ec6e772ee",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: reinforced_coke_oven.mb",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/recipe_type/chenmical_reactor.rt",
+			"sha256": "2b43027aaef1eacf57fa5eeca42d48969e6d913593c8b659c0ad9d8139a83683",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: chenmical_reactor.rt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/recipe_type/cmi",
+			"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cmi",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/recipe_type/electrolyzer.rt",
+			"sha256": "b1869a316e2b00a220556794ddfe054fd8661b53dc628e9923e01c0678c976a7",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: electrolyzer.rt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/recipe_type/electronic_blast_furnace.rt",
+			"sha256": "edd426d0212326a94691d69bca6ac014f41945e961dc5376b1f8e73c5ffd6e4b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: electronic_blast_furnace.rt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/recipe_type/improved_rubber_extractor.rt",
+			"sha256": "67af930906eba7fcabbb0815f9ac104e6d2f07c1800b5f1fcf3dd81106a4f58e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: improved_rubber_extractor.rt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/recipe_type/reinforced_coke_oven.rt",
+			"sha256": "266b6eb5f9ec9184eea0dd6bac910b6fdd0d1b3492f7900d07c67c2e4d9f6b50",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: reinforced_coke_oven.rt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/chemical_reactor/input.sm",
+			"sha256": "c0caae0caccecddcc3c669efda04b3dcc23e3edacf68218b60dd318bab2a2d04",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: input.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/chemical_reactor/output.sm",
+			"sha256": "1ba0f5f28d6bbf3966b906abe98f4b590bd259d032be89243b4377cbe9a7d5a6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: output.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/electrolyzer/energy_input.sm",
+			"sha256": "d146685b14690d26adef7deb9d25de328ce485bb5e249d4597487c4130e2f535",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: energy_input.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/electrolyzer/fluid_input.sm",
+			"sha256": "8af9d74b15237fb69169b3334c6c27eac633bc2774c0cfde641d6fdc88eed8ce",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: fluid_input.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/electrolyzer/fluid_output.sm",
+			"sha256": "9d8c3b5da4bcda0e91bab95f8f25551a300dd47c6542c9c57a0719440498b0d0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: fluid_output.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/electrolyzer/gas_input.sm",
+			"sha256": "f5e2ef15367f5ebece486056d262514f938898ee88c8411bae4bad80a8879e00",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: gas_input.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/electrolyzer/gas_output.sm",
+			"sha256": "4a62180538eac5caeb537a78a0f6641b9d2e626cf7000147bed64bc7f9dbfd54",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: gas_output.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/electrolyzer/item_input.sm",
+			"sha256": "12b90b451eb9e931d20fc7076ba76604d1cb80ec058a22e3534ba363b17cc786",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: item_input.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/electrolyzer/item_output.sm",
+			"sha256": "e94d3dd3d5ed7d8c0f1e8abe2da8fc34bfe788d5f71f7ba53e49c78c80865f8a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: item_output.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/electronic_blast_furnace/input.sm",
+			"sha256": "4cae9919846adae779f3443ce4c4edfd15e18f3b3f29353c42e04b3aef36839a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: input.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/electronic_blast_furnace/output.sm",
+			"sha256": "b9e8879e6a23e5fdee55941e66620cb7736939b8b3aa825b7d38b9e6cbc62793",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: output.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/improved_rubber_extractor/energy_input.sm",
+			"sha256": "694464ce45c0b6a3b815602d9243e3ada94a74a3b8a873a42397acf1dcfb0b8d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: energy_input.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/improved_rubber_extractor/fluid_output.sm",
+			"sha256": "f6e4dd66383c3e648c0ef23a6f359125ca9d6346e5095b90ec1ef700d968764d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: fluid_output.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/reinforced_coke_oven/input.sm",
+			"sha256": "1a97f10eb1e1b0c65579128af0555dc6c12c8fb7ba92e3569f25e760a962f83e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: input.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "ldlib/assets/mbd2/machine/reinforced_coke_oven/output.sm",
+			"sha256": "fc1819219437b9e795eb9cfa94a924ec5e221df460de6d6c7cc115006b52656a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: output.sm",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/raijin/edenring/blocks/BrainTreeBlock.badiff",
+			"sha256": "3105e229ad6c78495fc6a2006678b5b8a3bda20e0f56f1ca176451e71687c43f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: BrainTreeBlock.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/raijin/edenring/world/EdenPortal.badiff",
+			"sha256": "af279957c993626731c197a04a5bc2b3b87c20719f6ee06429b61510f73c9004",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: EdenPortal.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/cy/jdkdigital/treetap/compat/jei/TapExtractRecipeCategory.badiff",
+			"sha256": "c412e9b71df1a53903ab0feb529da57dfed7b3dc26a34393a4da7c5dadd992dd",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: TapExtractRecipeCategory.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/cy/jdkdigital/treetap/common/block/SapCollectorBlock.badiff",
+			"sha256": "d101da341d4d483c4e43ac04435c6c21e003991143a03884e9f3fcbaa6ac618b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: SapCollectorBlock.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/com/teammoeg/steampowered/content/boiler/BoilerTileEntity.badiff",
+			"sha256": "70ca098e298db4062ca4b0222f67fdca1da07265c191b45d835492fd288d2fcd",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: BoilerTileEntity.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/com/teammoeg/steampowered/content/engine/SteamEngineBlock.badiff",
+			"sha256": "7f6cdfe6ef6d71cbaf5c921f89fa04845c4d2a13247b176055c8850e7c959feb",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: SteamEngineBlock.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/com/teammoeg/steampowered/content/engine/SteamEngineTileEntity.badiff",
+			"sha256": "60d5f3f51191a14ae52aedb0d0c9b6088231ba81cc08bd97902b893a813c7b91",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: SteamEngineTileEntity.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/com/buuz135/functionalstorage/compat/jei/CompactingRecipeCategory.badiff",
+			"sha256": "d27fbeba69e57b813925e57344c6e963328602455271670894c2028e93ae45cf",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: CompactingRecipeCategory.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/alpvax/mc/goprone/forge/ClientProxy$1.badiff",
+			"sha256": "fb7980b34b956505fc019a516e03e3a2b7b1aab9b763422dcdcbbb683b536edc",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ClientProxy$1.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/alpvax/mc/goprone/forge/ClientProxy$AlwaysToggleMapping.badiff",
+			"sha256": "c500048edc8aa7f19bb52f99f39610a3c89d4ffb40db89fde5d3f74ba2520fbe",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ClientProxy$AlwaysToggleMapping.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "hotai/alpvax/mc/goprone/forge/ClientProxy.badiff",
+			"sha256": "dc2a832790ed4288db2e42dd91010851b3f122bc8bfe87530b4555ada0aa7f92",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ClientProxy.badiff",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/certain_questing_additions/client-config.snbt",
+			"sha256": "bf179c73f8a353cce83f54a59696643e4d678b0ccb07d84dfd457e6e8b9190b8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client-config.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/ftbchunks/client-config.snbt",
+			"sha256": "6c518b5d64de0b31e8890ff3840f6a4cdcb97fc3cd0e03709baa9e4aa275ae6e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client-config.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/ftbchunks/ftbchunks-world.snbt",
+			"sha256": "ff0adadd593ec5b626a4105078d0d9e1d3501704177438298eefea6486add641",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ftbchunks-world.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/ftblibrary/ftblibrary-client.snbt",
+			"sha256": "ab6bcad040f138406197f70cfe9a041832feaddf7e87954d9a5f4b13b6a962f9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ftblibrary-client.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/ftbquests/client-config.snbt",
+			"sha256": "4ce84f0da35036f810959086ea1043062993bf34ae704fc9cd4f1a67810090a6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client-config.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/ftbultimine/ftbultimine-client.snbt",
+			"sha256": "0af4a5c9c743c56273b8594f9bf1f57a4adab850c4ac1356b615750b8bb649c6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ftbultimine-client.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/ftbultimine/ftbultimine-server.snbt",
+			"sha256": "c5485b449f787bd3d6b293ca3739c9ab7a747eca9b1773c02f86630337be3fbd",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ftbultimine-server.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "defaultconfigs/ftbxmodcompat/ftbxmodcompat.snbt",
+			"sha256": "9e5046ac0b9f6d27945b689657835bff24310aec7b11f7461c972b514d0e0658",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ftbxmodcompat.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ae2/client.json",
+			"sha256": "0ae6215f279cca53a75c453106aac7a69059c64c2950342254a1713a98e8cb8d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ae2/common.json",
+			"sha256": "f390a5328244fa4f300041b581369bd17fbb6194824574a7cae47523ed01b046",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/alexscaves_biome_generation/abyssal_chasm.json",
+			"sha256": "1107452cbd57e534bc47ad6f5c9b94ff9e53e5191280762378e41cebb721b906",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: abyssal_chasm.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/alexscaves_biome_generation/candy_cavity.json",
+			"sha256": "6deb5b3a8e1fa83e5e6e92f76774d0406dc2cdb00522746868969696cf66bd55",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: candy_cavity.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/alexscaves_biome_generation/forlorn_hollows.json",
+			"sha256": "3bbfe721338acc9b3292891692e4884bccbaa9495de51e4a92376f1071785135",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: forlorn_hollows.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/alexscaves_biome_generation/magnetic_caves.json",
+			"sha256": "625177a104eac8fd39ded5151422c905195b87f64dbf14c2a1b56cafcce424c0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: magnetic_caves.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/alexscaves_biome_generation/primordial_caves.json",
+			"sha256": "37ff2b022e0997de3e7a918269548b6860a68d293892a73be5635818e865e56f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: primordial_caves.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/alexscaves_biome_generation/toxic_caves.json",
+			"sha256": "553967f10392e6504351e4c05af3cde4bc92dd0694b8e03fb9e82766b928de47",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: toxic_caves.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/bclib/biomes.json",
+			"sha256": "e31ef59faee81b0cff9506c0b4137f6473f68ca469d2319203bc3ca50eed6d13",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: biomes.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/bclib/client.json",
+			"sha256": "c342e62f25d34bc9fafa67d181a37d2c9f12735703f1c2fb20329f83c82df26e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/bclib/generator.json",
+			"sha256": "218542dbc05094a216da6161849a631c4fd770cf5364395d521e15e00240e0bf",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: generator.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/bclib/main.json",
+			"sha256": "6c374c2361f59dbbace6322200613773ec01d5fb6e8fb70ac5d89463e3631f05",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: main.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/bclib/server.json",
+			"sha256": "a747a0bb0548ef3b677671e5e60ac931bb2a45c212bfdb9a8b180cddb068ee87",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: server.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/drippyloadingscreen/options.txt",
+			"sha256": "8d0edcad69219e217683bde3437b11318db348c7cce676c7c67de99b58f0ccd5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: options.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/edenring/client.json",
+			"sha256": "fd231601846b730daad74135c9a6d609c04046bcc1ae86ebc5da241e27d903af",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/edenring/generator.json",
+			"sha256": "92223340e0a613acd42950e7761d74fcf964fb097e7b1287dc518631bb579c30",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: generator.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/edenring/items.json",
+			"sha256": "d429c266c19a66a26fbeb187b96b011717d9205ae0b61a1f1d4628e95f7f95cf",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: items.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/audio_element_controller_metas.json",
+			"sha256": "b8c2f30d9e8ded5864adde4ae4eb60d4aa4c3235db9efd2cf050b4782275ea7a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: audio_element_controller_metas.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customizablemenus.txt",
+			"sha256": "cf43d669f75ec4ff39fb17876af9519c949b450a83f1126a29443d8f4a2a849c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: customizablemenus.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/custom_gui_screens.txt",
+			"sha256": "7d4410bcfc1dcf3265c53842a57f0f9d95a07131d4de67116a9f65def0bcf54a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: custom_gui_screens.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/dragger_metas.json",
+			"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: dragger_metas.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/legacy_checklist.txt",
+			"sha256": "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: legacy_checklist.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/options.txt",
+			"sha256": "695847ccb3579195eee4d38fe9fa69ab7d574d899ca9b81e01281e8197a9ada1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: options.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/user_variables.db",
+			"sha256": "3d7d4cda73d6bde134a568ccbe4e8d2e7fbe701570012b71fa45acdb2258c823",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: user_variables.db",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancytoasts/general.json",
+			"sha256": "267cd5153fecd073d0777ed2a8aae3e8703a084262d3a09781f026d15b3c0d02",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: general.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancytoasts/toast.json",
+			"sha256": "009e2ca1dc81151a0f6749b8c169e9ab49f59e5cb61fadd24bc7147ad3eb786b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: toast.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancytoasts/toast_filtering.json",
+			"sha256": "1a88586b9259f0aa429848c03b10ebabdd9b6261ca5ff322cb7bb68b9d442116",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: toast_filtering.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/functionalstorage/functionalstorage-client.toml",
+			"sha256": "20f9321530b75eed76c38989ddade8260a3c481f82fe612c5e064b82a1691683",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: functionalstorage-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/functionalstorage/functionalstorage-common.toml",
+			"sha256": "e646ca8ec332583e1de2c8d18d4c66a4e2f8aa55c2919d5a65063e3ec88aeb0c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: functionalstorage-common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fzzy_config/keybinds.toml",
+			"sha256": "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: keybinds.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jade/hide-blocks.json",
+			"sha256": "42466315033f5d49e8bab6c23c84914e44559d8141b2d43b628cd9482051fb3b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: hide-blocks.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jade/hide-entities.json",
+			"sha256": "4f11993be4c863e9e7162e2a8bcb301a2bed28b32b47bd39c595b73ad0bc90e7",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: hide-entities.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jade/jade.json",
+			"sha256": "5ac5d92f458066a9c6cb0b8a7350d9137fff80ee8ae602605f2cf5dfb6c97e21",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: jade.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jade/plugins.json",
+			"sha256": "7116b7dade19292fa656aedbba15165a9e094b70763b4eee3c36a80ec47ec176",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: plugins.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jade/sort-order.json",
+			"sha256": "8bae78a05bfb76c05ad1e312879c393743bc240ccaa6c4c563db14cc59667215",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sort-order.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jecalculation/config.toml",
+			"sha256": "e26125514cb0d408b8c70eef89f373eef615605a9c656b7aee564c2d9b6437bd",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: config.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jecalculation/record.json",
+			"sha256": "6074ab4ccac3086ed2bbf2542cd1be9b0eeb32901c88c46b9585ef4fb2a4dce7",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: record.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/blacklist.json",
+			"sha256": "3ca754fefc49ea02e5203353bc3390e520e6717dd8b148aa07042f0b48a78621",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: blacklist.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/ingredient-list-mod-sort-order.ini",
+			"sha256": "bf6fa1bb5f5c971bd44fb1e91d24b91cd4b16b8344e8fb5d88ffc494f1c98ceb",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ingredient-list-mod-sort-order.ini",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/ingredient-list-type-sort-order.ini",
+			"sha256": "cba4bab70fc5b163f2974423586d285feeb42c5bf561ea489f4e6052b03ff906",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ingredient-list-type-sort-order.ini",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/jei-client.ini",
+			"sha256": "c605389f677baaff48025213b886a96c7231fa221ff91b0983a240f2c44b1f7a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: jei-client.ini",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/jei-colors.ini",
+			"sha256": "37ac7d250a69357afb14cbb7c7d3c67310c208bc9315a2f7f348f51853fe5e83",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: jei-colors.ini",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/jei-debug.ini",
+			"sha256": "c2791c9f6f1426b60e2ba0a9d57d1b70e092fa49f29f5a09350a9421d614baf1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: jei-debug.ini",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/jei-mod-id-format.ini",
+			"sha256": "6af091efbd8c5000e45a48db5957c566dbda6d4323c2ca1f3ca95c29c2bf4b0a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: jei-mod-id-format.ini",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/recipe-category-sort-order.ini",
+			"sha256": "99a6eda3749dd535a5b52b23086b94269a6d563e69dd3e068a7a20c0f1d13e4c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: recipe-category-sort-order.ini",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei_plus_plus/recipe_defaults.json",
+			"sha256": "0cc8674576abaf69f24c7fa3e981879d569840195242665d00f31b78ef34d89e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: recipe_defaults.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/additions-client.toml",
+			"sha256": "b66a3851c80625f260881b9a5b72eb644084935b9c45a7d041aeae89d8162a9f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: additions-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/additions.toml",
+			"sha256": "a89ae27f997da5df21aee97f0f2e0f789577e43029071a5cc940dbe42a2be026",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: additions.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/client.toml",
+			"sha256": "9dc94fb9aa1a16d368f5bfa302265bd551131b494de27a83460b8c5aa8b3a930",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/common.toml",
+			"sha256": "32dd9b2e18b67a1e94026124000d720b36ddb24be092303141a4901f33d7b7c0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/gear.toml",
+			"sha256": "04a7c6e344d9f60ee95a5ddc4dfeccf7aab98df7120eb7a29d7f7dbb69ca4d08",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: gear.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/general.toml",
+			"sha256": "ed3012efc424ba4ea7555eb9c65eee84cbb7d07d0a74f2f7fef5b3cc2c51f694",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: general.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/generator-storage.toml",
+			"sha256": "db6aa0b38e4dadfe9fae3970599c415d96058e1a47363180d63c647ccd20d084",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: generator-storage.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/generators-gear.toml",
+			"sha256": "b3c50755f421aff5ba6b23a9b1aa8dddf9be0d200b363635134db3ee68e11338",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: generators-gear.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/generators.toml",
+			"sha256": "c861d7b1b9438b6950d503a80e9e16cf64b010bf2688d2c3e003410590682560",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: generators.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/machine-storage.toml",
+			"sha256": "ade378e93c7dd046ee9317c424a3675784034ef23602b9d25a57c8a048face5f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: machine-storage.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/machine-usage.toml",
+			"sha256": "9b8b7a7532f4f5bfaa17613677a904a48b1503db660e22084949192b1945eb86",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: machine-usage.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/mekaweapons.toml",
+			"sha256": "e1521803c2e539ed570b2dd61cc9545b4d32d977ea557731e4f8311bb1a049a8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: mekaweapons.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/tiers.toml",
+			"sha256": "c9bac7a9ff512efaf495ce5d89299a5c6533cecae11d3c87c9bc2a28595db77e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tiers.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/tools-client.toml",
+			"sha256": "adf9f43d65b332f8212d72dd847cdd19ff3f92bd80dd072011adcc53758db747",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tools-client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/tools.toml",
+			"sha256": "e6a62063bd01b536a4b486911c9eb4ff60de55b35f170d2106559902370246e5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tools.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/Mekanism/world.toml",
+			"sha256": "544ac46d6c31a23a028f6b871ff187fdf13aae57050c5d8b7dac3be5e10353b3",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: world.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ModernUI/bootstrap.properties",
+			"sha256": "a474b7dc2daec3bf176f7492adabae614ea2f0a7dd27aa6b2a9e6e6ca8f1dbb2",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: bootstrap.properties",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ModernUI/client.toml",
+			"sha256": "357eaa2d2c8135da8d0bd6956ec72d4070875f0ab87a03c49b93fde38698d33d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ModernUI/common.toml",
+			"sha256": "f945d275a66ddec08c1cc3aa5d800675bea43ec270416a70a03fe32e9db7c7b5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ModernUI/text.toml",
+			"sha256": "8b1b0b9916b7aaf3eba542020cfdd6b65fadc42656d2bedcebf79af0303447f1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: text.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/value.txt",
+			"sha256": "c80616e4dd6c1e9bef5267da4f68985acfe708577bce9699de567d5608d9df6e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: value.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/oeb/common.json",
+			"sha256": "d37a76aa3522bfda66fd7726601fb034468cfb28393ef207924f47567c920325",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/oei/common.json",
+			"sha256": "ebf5f6faaef7c45fdb39227459657d93e0818be24f92eb052d5dad3108582267",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/oelib/dev_features.toml",
+			"sha256": "83dda8cabb428d687b6c451662ab5ffc7f3fb618072570ed0b45878bdb67bdff",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: dev_features.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/oelib/oelib_festivals.toml",
+			"sha256": "d151b8cde97b89a17560070c07ffbec25ba408f943c2d9e118c306ca768e088e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: oelib_festivals.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/paxi/datapack_load_order.json",
+			"sha256": "d0aaf3172f34275479f0669aa5b0a94b85788ae638f3062b948ec49d31c38293",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: datapack_load_order.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/paxi/resourcepack_load_order.json",
+			"sha256": "71d93286be9c2740ca0ce3e9a97aefbebda5e9ce0cdceac56bea7fb283f410ba",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: resourcepack_load_order.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/quest_enhance/pack.mcmeta",
+			"sha256": "7ae106147c1a91288116b8439099ca3ea564416266d59547c13049728b039b25",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pack.mcmeta",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/sci4me/Torcherino.cfg",
+			"sha256": "762a7ab25c69efe2194875530805cd5976409048a029ee365bc40edf8881ab74",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: Torcherino.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/servercore/config.yml",
+			"sha256": "503dff9a5ee16c6203c0cff2123d3d5ef6eeb95ca097b64644a7a4677be4240b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: config.yml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/servercore/optimizations.yml",
+			"sha256": "299965ce464b4c0bb4a79dfd2dba2cdfd63f3360628b0d5b0d3b3988003f4f0d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: optimizations.yml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/thirst/item_settings.toml",
+			"sha256": "244b76173b7f82df5485e620e5e06c28530f2e002d5a642ec753e5564b4de389",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: item_settings.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ticktweaks/ticktweaks-coreTickSettings.json5",
+			"sha256": "df32171987b14e28d36af736be6c0c54019668a54af23fa8053712b9a39c76b8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ticktweaks-coreTickSettings.json5",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ticktweaks/ticktweaks-emergencySettings.json5",
+			"sha256": "9b1797f35cbcb1ed7731d6fa20fa092298433cbb6cf7bb471cec78a7dd299c04",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ticktweaks-emergencySettings.json5",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ticktweaks/ticktweaks-entityTickSettings.json5",
+			"sha256": "28449b6e4c46eba31748f011b983ed87b1dbb0a8522770c8db45389cf4e94f7c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ticktweaks-entityTickSettings.json5",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ticktweaks/ticktweaks-performanceSettings.json5",
+			"sha256": "6d895cf57d9a9d8621953ac980dde2db59fc60fef69cab6ff984b8ed111fa8e1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ticktweaks-performanceSettings.json5",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/titanium/titanium-tags.toml",
+			"sha256": "bed71e2722d04afd15e03330d1a157a51077e8fdcd064c80ab4a49bed6a49e59",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: titanium-tags.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/titanium/titanium.toml",
+			"sha256": "565e7782790d656fd31350ef9d90cb8ff8b4f38d1fb2418072829fb404195e58",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: titanium.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/lib/client.cfg",
+			"sha256": "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/lib/common.cfg",
+			"sha256": "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/minimap/client.cfg",
+			"sha256": "80c77d2c2882d29b5ae19be7588b19fd6e9ef6ef1a9b66feda121bde76943263",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/minimap/common.cfg",
+			"sha256": "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/minimap/default_radar_categories_client.json",
+			"sha256": "3c888b22cba252e8f0a974f8c1604bc05109affbf4354ad3b16e71778c4b9774",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default_radar_categories_client.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/minimap/default_radar_categories_server.json",
+			"sha256": "a4c652cafa7dea324e5f5cf3b1df46a84e54b6d4f877195857bce55a559c1cfd",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default_radar_categories_server.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/world-map/client.cfg",
+			"sha256": "4c9555c686e20d4d68d09910a347740d37d4bf41f65e2b09fc95711a2dbeef1d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: client.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/world-map/common.cfg",
+			"sha256": "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/world-map/profiles/default.cfg",
+			"sha256": "5422abf9c83fedef6509144293fad20f588d4bb6ce0cf1af78cbcd2bcd0d2ccf",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/world-map/profiles/default.cfg.temp.backup0",
+			"sha256": "77c0a0dd09be58d96509f533ab66e4e866519bd451fc1a3ca43e9f296bbdc46b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default.cfg.temp.backup0",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/world-map/server_profiles/default.cfg",
+			"sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/minimap/profiles/default.cfg",
+			"sha256": "296aceebe8da499ae1dc56b1c70a1f1b2be93dba806cedc2e8ecbce7263d6be6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/minimap/server_profiles/default.cfg",
+			"sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json",
+			"sha256": "3c888b22cba252e8f0a974f8c1604bc05109affbf4354ad3b16e71778c4b9774",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default.cfg.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
+			"sha256": "407cc9b9b53cd2de472dba0b20c3491bf6193908efded7c54350bfdc285e1c31",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default.cfg.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/lib/profiles/default.cfg",
+			"sha256": "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/xaero/lib/server_profiles/default.cfg",
+			"sha256": "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: default.cfg",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/quest_enhance/assets/quest_enhance/textures/ftb/clipboard_1786292508045.png",
+			"sha256": "4d856b3bf5b994b998d551d3dfd431898090ed6c2a313948a2f0a638911334b6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: clipboard_1786292508045.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/paxi/resourcepacks/BetterIE.zip",
+			"sha256": "279638425e195cf043f1a97af42c51091bdb4508706748e2dec51127e1a59b9b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: BetterIE.zip",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/paxi/resourcepacks/Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip",
+			"sha256": "e66e3837b263a90bc886fc872210a204a23246531b05a94651bfcdacbc8e9710",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/paxi/resourcepacks/New AE2.zip",
+			"sha256": "406919d9494d7d4350edb8d9776cb287d45b27db33bb226209ef9238866ef731",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: New AE2.zip",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/paxi/resourcepacks/OreUI Addons For CMI.zip",
+			"sha256": "6e9d3537dc69032b8fcb59ebd6b900186d88aadd0c34d06badf0f677176c8b21",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: OreUI Addons For CMI.zip",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/paxi/resourcepacks/OreUI For Everyone.zip",
+			"sha256": "59f7ec4113e28617f24e0ba8d906afabe077064a586c783c42625d8122f82556",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: OreUI For Everyone.zip",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/paxi/resourcepacks/PackResource.zip",
+			"sha256": "8b89944a05fc9419fe908a551c82b47ed8cb66a778d7e635166d73019fdbe778",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: PackResource.zip",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/cmi/cargo_grid.json",
+			"sha256": "1c53e2e47b2d197f86d999e6ffdeb9d6b94ff1807c2f05232b2100d0a621d067",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cargo_grid.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/cmi/common.toml",
+			"sha256": "6cd27d1a28c75f33bdec8f79d9c9e74b5744c3034cd5384fd5e32e64ef0fe6d7",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/industrial_platform/common.toml",
+			"sha256": "69357036a07dab6e09ea0763ed63cbc30b34ec971315bc733751204628a12058",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/interlocked/common.toml",
+			"sha256": "8595ba8d812889c063eb488012506c5f42c2fc8b8a6adfda678f30b41dcab402",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/libs/common.toml",
+			"sha256": "384f132ef97ac73f51cd781241347a2c18fe301dd7d52f994fc7a7904a16c522",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/libs/debug_users.json",
+			"sha256": "e1e00feca3c382ff66dc5b4a9e3d97fb07b52d6330e79a528e175a28755222c1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: debug_users.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/libs/export_preset.json",
+			"sha256": "5430566dcbb01b0b0ebdcc6df209e706ec5cd714a1b13c70330827a3d50bc382",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: export_preset.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/storage_tweaks/common.toml",
+			"sha256": "9d0d3c0285c1e0a5d7dfe5fa49639802c6391cc6545d695cdbaefccde8bd4ece",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/nebula/tinker/common.toml",
+			"sha256": "4069dd9b5fcfc88b8b53c6cb71855852c06cd69e13ccf1bd48dcc0e18e8e2f14",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: common.toml",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/konkrete/locals/de_de.local",
+			"sha256": "79a34cfd15c2d9c06498dc221be79279507d9b57666cd44f8d2c2cf95d3582ef",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: de_de.local",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/konkrete/locals/en_us.local",
+			"sha256": "fdf1864fd049b3f1b9af1f8db6c5125a627be7d06a451c778da3329843d3c39a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: en_us.local",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/konkrete/locals/pl_pl.local",
+			"sha256": "d38a7776e362e4de6082078d803c1c9358d9d40526edfe4bdfd29c552aef76d8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pl_pl.local",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/konkrete/locals/pt_br.local",
+			"sha256": "dca55a2792451b31424cd5c24037141ec57cdca51955d062dd908fa9ca6a3e9c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pt_br.local",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/world/local/Debug/bookmarks.json",
+			"sha256": "3ca754fefc49ea02e5203353bc3390e520e6717dd8b148aa07042f0b48a78621",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: bookmarks.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/jei/world/local/Debug/lookupHistory.ini",
+			"sha256": "a5dcc73954a00697c2600393f50060fda3abf97e8ab384ceff8c0310b099597d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: lookupHistory.ini",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/chapter_groups.snbt",
+			"sha256": "89f992280b67e30e3187d160404412ed2ae304d929613774562b540acd63bedb",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: chapter_groups.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/data.snbt",
+			"sha256": "63215943385a520ef331c31c9d2cfc444fad72481df39e14b996dd2a8290a34e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: data.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+			"sha256": "4531f72b758b7f8ab8a27e1ea3bf2a3dcb5eee99406ee001d52d6765a007ea77",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ascend_on_burning_oil.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/chapters/fuel.snbt",
+			"sha256": "15c95ba161fac73be3fc701cd1c1968ad4a1a1eebd826690c2b6bc4e0424eaef",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: fuel.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/chapters/machine_learning.snbt",
+			"sha256": "cf85b484dd1fa232798662d6c24338cfe5235c085f2507bff67e4daaf956ba77",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: machine_learning.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/chapters/precision_component.snbt",
+			"sha256": "7f4e8c100fa8826bcb4c6ce5d94f1ae508baf7cb5f449fe1e9bccf296d6a0ede",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: precision_component.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/chapters/prologue.snbt",
+			"sha256": "7f22b0586c4c2e3279bc7b68f15ca2c263deb5e0fa32401cd49a6c078c2260ba",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: prologue.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/chapters/start.snbt",
+			"sha256": "000bc239ad9531854c5c9615a4790675a4c064ffbe1755e479f67c9d704c5227",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: start.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/chapters/steam_railway.snbt",
+			"sha256": "f767d8765008f9ab4193f0df0c7b1bb75df08933ec385bfca84762d2cf13732d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: steam_railway.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/chapters/utilities.snbt",
+			"sha256": "4c7d791a02fc8d42d603208ef18d47929490a3ed658e4972339689c63a7022b9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: utilities.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/reward_tables/constructionwand_core.snbt",
+			"sha256": "654965655fba999a3c81412e753744980bbfc62404763606f24f501ef63f2591",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: constructionwand_core.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/reward_tables/functionalstorage_io.snbt",
+			"sha256": "402eb780a4eda0f610b338acf286ab1464276daeddc04a500a051b546454d4dc",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: functionalstorage_io.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/reward_tables/mode.snbt",
+			"sha256": "14f80086334e85efa15183febe2bbad968ad0fa2e201a1790ab5f078b4752d5f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: mode.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/ftbquests/quests/reward_tables/storage.snbt",
+			"sha256": "1c0bd93b941c8bd33921293c0c3dcd414ea9e6a80b7a1fa91e9d08a740b744a2",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: storage.snbt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/arrow.png",
+			"sha256": "ad52a6a93d77d1d9fd5040a0d76e4431fe21ea423ee2049d8e4371be148cb8e5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: arrow.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/back1.png",
+			"sha256": "b525b49707e5200168cb083a2059f5a062ca1f93e5847990d417c7899ef909d8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: back1.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/back2.png",
+			"sha256": "cfda5ceffed80ff6086bb0ef00c9fe1688536c1462df60b9e96b052f9c649228",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: back2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/bar.png",
+			"sha256": "7fd73f57d00bda0bde7605cc09fc4056a5d83f100bcece757dd659a2e184ee1a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: bar.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/bar2.png",
+			"sha256": "fb98f0668060d0889966d5184779c124a1bf3c91ec63fcdee088dbeb96fe1b83",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: bar2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/bg1.png",
+			"sha256": "361694fa5afbabca40f6f042e27f58171b491fbb26e87b57b197e325e4ab832e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: bg1.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/black.png",
+			"sha256": "e4c27284dd194310934b770bc5ed5d0d5957fa3d4b12e7c4ebb39ea7d19aac07",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: black.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/cim2.png",
+			"sha256": "c6ab5d58e00377cdda80643fb36fdf03a87c35f56c0a5628ec44416d3184e519",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cim2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/cim21.png",
+			"sha256": "df3dde6ce6b9f06cc648616501870a61bce72fcdacc523669d0c6c6cb3f04034",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cim21.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/circle.png",
+			"sha256": "c9d6365d591daacea0f32425aca2566d93be42e2020f6d82c1c75307d8eb5ea9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: circle.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/cmi.png",
+			"sha256": "e332ad7a12646a9d44253c5c2da47c7fcf4f85f1eb3f16935b71b33a207c684e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cmi.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/cmi32.png",
+			"sha256": "d543a1fe145354bc8fc6139984218ad4da9c680be8f33b3dffbc822314436245",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cmi32.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/cmi_flat.png",
+			"sha256": "47925d4b2b75deeda00c7f97e878ecc026307fea4882689f111450068c774afa",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cmi_flat.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/cmi_states.png",
+			"sha256": "e78fb1ac4edef794a6355ae66624a0e03c6c62a0a46d7a67e1f4024a3d2f758e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cmi_states.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/craft.png",
+			"sha256": "49fbbfdabc65f9891634f3648b1830a8388c94d9d2423678d0c0b942e32a6e7c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: craft.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/cross.png",
+			"sha256": "9664666687b4ff710de6e53b15ccd2358a00b1e20070a1593ad7fde466287be3",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cross.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/cube.png",
+			"sha256": "971d8806ba2584e41b568098081c84947e3f1e274c9275faf9a00d8cb6b174c0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cube.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/cube2.png",
+			"sha256": "5254e12399e2e93328fdfa60fab00f89f5f438ba3f64ccc97494843460bb4ed3",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cube2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/flie.png",
+			"sha256": "dc23d6505202f78b460b0c89ea9b1013a4b8d84507892b73b1339e69ea683f56",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: flie.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/good-news.png",
+			"sha256": "5e709d08f333949c2898405ff2409e2cc627614749fb867fcb4baf8f473bf1d9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: good-news.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/info.png",
+			"sha256": "675638f04b011b125561d998bbe3361ca12c8299a46a08eec53272ec64b7a137",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: info.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/light.png",
+			"sha256": "fb21e145c5c12ad35d705285696e02dfc994ca9c11501a8bb7e7f588ca28202d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: light.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism.png",
+			"sha256": "211f80d984cbc590f935cbcf84bad6749b472b168c6871f052a1d1fbc9b0127f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: mechanism.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/minecraft_title.png",
+			"sha256": "3a889536db9f1a27e93669a6de09e49772b1d1d1f7fe6d5bb71361cb4c88062d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: minecraft_title.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/minecraft_title_2.png",
+			"sha256": "1830111ca32b6135320c9224007672a08d255019707dee41d7e25ebf015a856b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: minecraft_title_2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/misc.png",
+			"sha256": "bb3ef8b08a3f51accede48775c7973907863519f43c068b44ad89fedf9a27fcd",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: misc.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/pb1.png",
+			"sha256": "d341d781d40b394b6ba63fb526886e7f96d2760aa7094069079959b78504dd9d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pb1.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/pb2.png",
+			"sha256": "6dc17768c3a93b72722c3ee7bd0e15f11c7f46d1a7908dffcc32cf044c6d09f2",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pb2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/pb3.png",
+			"sha256": "c5451f36d734c0cd1cc18d21d8f99f09d522dd41daba0aed41baf8290530498a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pb3.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/quest.png",
+			"sha256": "f919fa8aa23ffe603c39bbcff52b0e1081aec6442ffc28b5d36e7eec3a723587",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: quest.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/right.png",
+			"sha256": "b31a483f0f8bb5e649fe0d52050b801994e82454d1e77fd530259663073135fa",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: right.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/something.png",
+			"sha256": "0443b15116dc70cb1db7e95ce34b08764bf7041f7500a7e1f5a31c04b0721fc8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: something.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/texture.png",
+			"sha256": "b8c9ecf6f61798f23f0ceeac83abf842b618f9808c75a900a9a2ec0ff63ab9aa",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: texture.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/create_world_screen_layout.txt",
+			"sha256": "ea1f8057b7700e187d0bbfc9980f219a4ab2472da77bab8efb60cc35eeaac230",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: create_world_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/creative_mode_inventory_screen_layout.txt",
+			"sha256": "854cde25c7f4fda793c0c6155c463174c7c77d4909c4262727ed1b1a2f7da192",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: creative_mode_inventory_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/death_screen_layout.txt",
+			"sha256": "3130a3dbc8088ff5efd46c20308f141eeecb9c9c22a073291338ede18f002d65",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: death_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/drippy_loading_overlay_layout.txt",
+			"sha256": "e9dd0b6ce9c6d959074d3fc3a34605bc4f77376789f56fb550129c935d579f1e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: drippy_loading_overlay_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/language_select_screen_layout.txt",
+			"sha256": "cd128c61fae1379e30f77a984f9dc49b9ea88e490fd2d94b40b7be48a1df67fb",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: language_select_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/options_screen_layout.txt",
+			"sha256": "535c8ab55f37ac2a3623b63ad8e863e8e23837974b1a26996cc35ef5927b7b07",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: options_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/org.embeddedt.embeddium.gui.embeddiumvideooptionsscreen_layout.txt",
+			"sha256": "c463ef58912556009096b4cdc0f8bc5ecb8a547e80b514695998fe3764205322",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: org.embeddedt.embeddium.gui.embeddiumvideooptionsscreen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/pause_screen_layout.txt",
+			"sha256": "320c6ee5df1d71ef783644888b0ad31666664ce9ea6ab629bfee137eb38411d9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pause_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/select_world_screen_layout.txt",
+			"sha256": "2946089f966464770441685e82e301c52d19a8a39660bc63adb6bf4c97c4d589",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: select_world_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/sound_options_screen_layout.txt",
+			"sha256": "3a5dd6fa54bc30c3238429d6bbfb824aac2bb21e94820c3086eb91c83c017620",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sound_options_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/title_confirm_screen_layout.txt",
+			"sha256": "63c9bbbc59e93da3aa46727a44b805a1578caad5e3f1e18e38321cddca1c083b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: title_confirm_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/title_screen_layout.txt",
+			"sha256": "f1f8f0166f90e81d6c1dd78a543b6026a7f21ba808f3578636fa787eea6d6ba5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: title_screen_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/customization/universal_layout.txt",
+			"sha256": "677cd6fa0bc65add43a128855d5df0b43905e5638bb688afb9935cd0c36aac41",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: universal_layout.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/ui_themes/cherry_blossom.json",
+			"sha256": "993c16664fe2d1b9e8ad107bf1c19c1dbb244729c403ed058ca2e54616dc5452",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cherry_blossom.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/ui_themes/cozy_campfire.json",
+			"sha256": "1e7505231b9d99e6315845043ce810dfc7004ce1d8f5a4ceddb4ecb96c03ac50",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cozy_campfire.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/ui_themes/dark.json",
+			"sha256": "01e2a3b5d250c0259a7f97f0d353785bfeab6d7ee2e147c16bb910f1d23e9498",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: dark.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/ui_themes/dark_high_contrast.json",
+			"sha256": "54316a2b309ddb472b9133f8ccb8694dce9b57be6ebcfb3c2e9d1bbfdade3f26",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: dark_high_contrast.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/ui_themes/light.json",
+			"sha256": "a05e95f7b62f338049fe0045d9a6a50060d3aba52d5ab83ac1ed6ff55cac1153",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: light.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/ui_themes/light_high_contrast.json",
+			"sha256": "7c96ba2f2cb4d59d20eaf88960de7a9308ce8a3460c4e1757e07c42e174ea65a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: light_high_contrast.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/ui_themes/pumpkin_soup.json",
+			"sha256": "7c6a5d5b19e53ca2f88371c2e867f51339b045697aab29864df5877a6bba9311",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pumpkin_soup.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/ui_themes/purple_void.json",
+			"sha256": "fa63577441fd576ebac90ecf06b7ded376cbf80ca5103d398bc9a73a25c6c2c0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: purple_void.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/ui_themes/spooky_season.json",
+			"sha256": "cfa46554bbb027efe3c2184a073ee652000acac2500cd5136764f901355ec0cd",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: spooky_season.json",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/slideshows/background/properties.txt",
+			"sha256": "e68c27cc8616701fd8b27721ba48c439662864dac315b1f67279f0c51c209778",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: properties.txt",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/slideshows/background/images/image_1.png",
+			"sha256": "cf56c464f3a388cac9c6d795e22b8ecc014121774fc48cda46a75b44dcf14c76",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: image_1.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/slideshows/background/images/image_2.png",
+			"sha256": "415a1df68835157da20026033c67ccf55b430eb1589eb48b3ac33de40276de2b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: image_2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/slideshows/background/images/image_3.png",
+			"sha256": "b5b371af093c3fc0b64eac7c198c906a453d5c3baabea8b51edafb5761dcadca",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: image_3.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget",
+			"sha256": "d4e8620c57048f01d3d60122936e8cd8db6c776cfe56018f2e17fd3f54d58079",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: element_layer_control.lewidget",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/accessibility.png",
+			"sha256": "f1815eedc3117bf1c6a69063db4591e9173058c230a571eec9677be0e09cdc33",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: accessibility.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/config.gif",
+			"sha256": "98c9002abccc2149cd87f960a0348fdd3cccca0ba5359b9f31959951fa154a97",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: config.gif",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/inventory_h.png",
+			"sha256": "3a49dc441bb65b18b533d2349222d1ee661e7cfbfc910a4b09a524aa93a312c9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: inventory_h.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/inventory_nh.png",
+			"sha256": "db2aa8d1e431e6909d0d5801dad89a718016ccdcf850f93e69b315e00ac9d8e8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: inventory_nh.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/lang.png",
+			"sha256": "218e671037436e96cd1d5d135fa297545e2c5054e9ac35b048ef72237bea2dbe",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: lang.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/muti.gif",
+			"sha256": "90faa876845b34ccb8e8f241f770d83583bd6bd5d39880015d4dc4fa0977b215",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: muti.gif",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/quit.gif",
+			"sha256": "5fec4d8e2153abe1c6c9acc4662b16f58ca57496bb2c44d7923e2125d162758a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: quit.gif",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/single.gif",
+			"sha256": "6801a9296e1e6c3acdf34e3a890e80d6bb6ea8a0886aa7aa8344d93d5b9459df",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: single.gif",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/small.png",
+			"sha256": "6aaeb90625a608421c47d93faec7b1d4f79dd0c600bb5571ee270e48eff4178a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: small.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/advanced_mekanism.png",
+			"sha256": "1a453653b331a936425d15f492a9fc9dc341b52a89f3928d050a71c9bfc7f789",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: advanced_mekanism.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/andesite.png",
+			"sha256": "40ff377466d3cee9448b9b0ac3dcfb9aacb44e47c309e9b933c0e96e416a6be5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: andesite.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/antimatter.png",
+			"sha256": "49c040bb2f1c5058a16549790255b505000c189efba1306b9bb34861b0d3c69b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: antimatter.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/basic_mekanism.png",
+			"sha256": "ffb5da272c9146ae844aa3d59c276781240c7f6a13886803056523697e63c45c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: basic_mekanism.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/cobalt.png",
+			"sha256": "3edebb21ae9212c075c6bd1b9d7adb0931a91079bddc6b5a5ac5172274b3460f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: cobalt.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/coil.png",
+			"sha256": "c560705dd4ac1e780b875e64087963f4724c1582d6e53099da714c9f0a46581d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: coil.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/colorful.png",
+			"sha256": "60bd28a7aa23a8fe6ba3abb15a4b61bac79512093da4c33758a3ed6d69152dfa",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: colorful.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/computing.png",
+			"sha256": "01895d2dcc89268802129ea9ff32c1bfcf73aabf00d89e57bb3e459c58b0a924",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: computing.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/copper.png",
+			"sha256": "8ed6f3bb6f8b997bbdda7f5f6aa73c6daf719b424a431e16207f80229dc312c6",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: copper.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/creative.png",
+			"sha256": "31689794ab9d73a05506dd46806fb995a0d6dd765247ebbaff802414ecfb237d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: creative.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/elite_mekanism.png",
+			"sha256": "a060e3a75f8f70c75864af8135bdb89c9fad3398384bcd26bc927deb3207a383",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: elite_mekanism.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/enchanted.png",
+			"sha256": "a9d88f6f7b4e55501937dd617304ef07a3bb34996af4b20f36316df272663570",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: enchanted.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/ender.png",
+			"sha256": "7dbda37431ccc729aa9c537843a78be7f7e4ddbd43337c284615a364c20b86c7",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ender.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/feinforced.png",
+			"sha256": "9344a74594cf151f78e286e092e1e8865dffa1b69da3d621054400bd960b0ca0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: feinforced.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/gold.png",
+			"sha256": "1667e8b3366968ba0e70d7f896387622526045226a66b071e1db8cc85c7fdf5e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: gold.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/heavy_engineering.png",
+			"sha256": "ab2c98166f4ac09a2bc988f4ae48520e2f4f1818ec7288631f91977cd888c0d9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: heavy_engineering.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/iron.png",
+			"sha256": "95d727c4051c941ae9ea6a6c9bc3a059fa5c51fac268d66bc90fcd2ea93a37fc",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: iron.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/light_engineering.png",
+			"sha256": "8d2e0ab2e0dd1133ec5fec09535fd3e1656d06aac57b616adec4b16492753858",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: light_engineering.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/nature.png",
+			"sha256": "4179da1ac1cfdf766242a0d545677dd966dd8205ba17158f0baa628b6a0d8d42",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: nature.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/nether.png",
+			"sha256": "9e96f9aac70dad57dd644a49a3d46057215051fcc82a727d5eb4f8d64a450c83",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: nether.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/nuclear.png",
+			"sha256": "a7b7082b7fe667252f10590d2cfe0f7c4db33fdf47439dfc044a8c6d906036a0",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: nuclear.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/photosensitive.png",
+			"sha256": "acc22cd7651e70e927dbfed44cddf90c696958967315dbca049f37a5f0427c79",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: photosensitive.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/pigiron.png",
+			"sha256": "d7926035dfb36c2e1bfc4c8e8cbb014a13cd7577cf4b2086d621e20b29d0714a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: pigiron.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/potion.png",
+			"sha256": "c28692ccc81ce17897392040b3406825c597512b6783fe348b2c6927fde281b8",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: potion.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/railway.png",
+			"sha256": "96204e2666ce53dd43b00317a7843f37abee2e370568da71ad9d3306cb5322e7",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: railway.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/resonant.png",
+			"sha256": "8915dd98e9685b81fc18d79fe05d2b4be3425dc29f8ae9f56cadbc6f05e54912",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: resonant.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/sculk.png",
+			"sha256": "ad5c37e4a9354eb08bcb370ae4ae06187a828d6a3ae4c5fd275ce2394883e740",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: sculk.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/smart.png",
+			"sha256": "1e06c3d0f509effb10f125c047853f1bc207c85c26ebbc49b43f74061afb5239",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: smart.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/stone.png",
+			"sha256": "4c4e8a48359b3b3b746c24f61044d4dae9224cbf25db1389395b268d3fca4cca",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: stone.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/structure.png",
+			"sha256": "739f478043b43359f34fc0be2999e62540f76f973260748af14fd3d8fb95de5f",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: structure.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/thermal.png",
+			"sha256": "3beff6a396e5eca09abbdb97dd246052ac94a68b48603bc38df725d5364fb365",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: thermal.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/tier_1_aviation.png",
+			"sha256": "752b8d45e7d4fa212f20b8675f6d5b5fca44fd7c7db2f26d15bbbbed36637578",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tier_1_aviation.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/tier_2_aviation.png",
+			"sha256": "91f634169849b1246e95781a996a460529251c97a3d754c11534a202f251dcb4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tier_2_aviation.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/tier_3_aviation.png",
+			"sha256": "77690679ddd3f660313fd661d55cf723653779b147842ac3cf4681a81f8d365b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tier_3_aviation.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/tier_4_aviation.png",
+			"sha256": "a3939c34e35aaafa9a9ee788c499f56b376a1351600a777341647e78d33353d5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: tier_4_aviation.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/ultimate_mekanism.png",
+			"sha256": "18b32c902c0c43e5cf3fd9f0b64c72efed84833957c3e6d1cf95b65e8a4f8f1b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ultimate_mekanism.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/mechanism/wooden.png",
+			"sha256": "58d6b5e2147ed53a01a4c2b9296a147c4cdb1daeff09703c78e5aeaeac2a4ead",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: wooden.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/config.png",
+			"sha256": "b82116e7309d0b831c9ce3880d36b14ee36fd115231c629a9bdd413b0ac236ac",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: config.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/config1.png",
+			"sha256": "623b9ef02bc26c64f066d76a5d2f626e9fea4fb93d74e457efccde1d30b2e850",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: config1.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/config2.png",
+			"sha256": "69baa541d00f60781216fd8b44dd202ca4f33db6235f424f019a7aa48f565a40",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: config2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/config3.png",
+			"sha256": "aa0e0fa32abc02ca2ca8a265472a928f64f01f4cb91342ffb0152fcfbb94c5c3",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: config3.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/muti.png",
+			"sha256": "886eb529d90949f7b15d749b884b521e36eeef0da295bc0898181458969419a9",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: muti.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/muti1.png",
+			"sha256": "927d6e7dc71a3959692ef8a4575566de7386afe66299b98110e645af1d88358e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: muti1.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/muti2.png",
+			"sha256": "f3a2d2770c78e6f760063bb7c88f557f78db1a449edff8b44c6384a4eaed9035",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: muti2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/muti3.png",
+			"sha256": "f87660b82612937ce4c6e8a102498841e472f32da063c1b0ef7852209169834a",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: muti3.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/quit.png",
+			"sha256": "c12864d45ee6e94280cda13f0095faef06259b2c91a9a53074d6d19d69f7e24e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: quit.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/quit1.png",
+			"sha256": "f6c351836ecbb281a8330032150a4781161acb863d82ee69776b35fde9876b52",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: quit1.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/quit2.png",
+			"sha256": "373d270a8db7e6d8c3213e698d18ee252cd4ac18b09603fad8190085521e472b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: quit2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/single.png",
+			"sha256": "a375b9ae8b2940c01c0b8e7174906f36cb996751d8d254fc9634769f433aeaa3",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: single.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/single1.png",
+			"sha256": "658013f9a7074f8aa4e8e98fe988646ca27e0fbf7184cf77f87c6ad83fec4db1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: single1.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/animation/single2.png",
+			"sha256": "a3ae5fe803c81245deabc804a9c765777e6ef348493547b5318b3ca178ed8ca1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: single2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/dark/accessibility.png",
+			"sha256": "a5f81374a535d1e5886a7828de11bfaf2c83ea24eb5267d629641f27f53b9c93",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: accessibility.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/dark/config.png",
+			"sha256": "a71a3eed67f5c5b3afbdc608b38240ad4ce4032fdb45c36652b59aacebab062e",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: config.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/dark/lang.png",
+			"sha256": "56cfe694a7fd17a46614480be3ef06059c06b509be19552a827a51251506b784",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: lang.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/dark/muti.png",
+			"sha256": "9f4d37640a0729be113d4d1c4e8efff55d0ec94b0dc40ab8efd98328d8ff39c1",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: muti.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/dark/quit.png",
+			"sha256": "de6656ad42a8390f2a083c97769c2d94634898edef5e39790f522ad43d8797d5",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: quit.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/dark/single.png",
+			"sha256": "8480a80e423ad482351f0940de49662f23916810745f7158858c68405f012050",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: single.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/dark/small.png",
+			"sha256": "d114a84169de8e6558d99ba38d671b5a87f874becea2abccca13657165bb23b4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: small.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/blank.png",
+			"sha256": "069949d1aa5d9088592d525b13d81902d24869b1ac6d56a812b246db5c1a30da",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: blank.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/blank2.png",
+			"sha256": "22819971c89c9ee1b3fd37c134035b239caeb07f52e9aaa17f8fe05a91b7ecdb",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: blank2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/config.png",
+			"sha256": "5db363a94fcf6cdbf37414866f7c638218e8216d17a1e57f83836f8ec31ecb4d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: config.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/icon3.png",
+			"sha256": "91bc579eec1d018cb2a3864a645dd77401eebf7a0eb72ac8617ee4966db96c1d",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: icon3.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/icon4.png",
+			"sha256": "21d897d22f7f8358c468f02c02ed49f57ae0bfb51cc4f26fb9e223c0d6959c88",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: icon4.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/muti.png",
+			"sha256": "65bc4a59b531cc4aefc14428919c22039d6ef16e4aee25f0c30a0a1966caeb29",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: muti.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/quit.png",
+			"sha256": "cc8a96fe897b3a8d230915f97873f6ed046dbb6f78ca9eccb9a0a72789bdc520",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: quit.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/quit2.png",
+			"sha256": "b418184ec5d7be602cd3ad6d07a2208e12f7030be86f9c17e32f1c1c00dfec17",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: quit2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/single.png",
+			"sha256": "597e648dc6de9227026186ae3c87a9d67293ba1171ba1bc8d960645dba2f6ab4",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: single.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/small.png",
+			"sha256": "4543a63997a969812e58db52cbfd5bc20f41e6ed9fedc269b08ad0bafa2afa7b",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: small.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/fancymenu/assets/button/unused/small2.png",
+			"sha256": "78bef10ecb95c40dcc395e0d0e83727eb4f3ea9053abeb85cb8b2ad4e4f9e62c",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: small2.png",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		},
+		{
+			"path": "config/de/mari_023/ae2wtlib.json5",
+			"sha256": "e9838cc6c67a746008e2c8bc88577be4c350d4f990ee5ca4861f07bce76e36ea",
+			"required": true,
+			"severityIfMissing": "ERROR",
+			"severityIfChanged": "ERROR",
+			"displayName": "File: ae2wtlib.json5",
+			"reason": "File integrity check",
+			"fix": "Restore from backup or reinstall"
+		}
+	]
+}
