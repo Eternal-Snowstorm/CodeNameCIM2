@@ -441,21 +441,6 @@ ServerEvents.genericLootTables((event) => {
 			pool.addItem("2x ad_astra:rocket_fin")
 				.randomChance(0.25)
 			pool.setUniformRolls(3, 6)
-			// ['ad_astra:fuel_bucket', 
-			// 	'ad_astra:cryo_fuel_bucket',
-			// 	 'ad_astra:raw_desh', 
-			// 	 'ad_astra:raw_ostrum',
-			// 	  'ad_astra:raw_calorite',
-			// 	   'cmi:raw_tungsten',
-			// 	    'ad_astra:photovoltaic_vesnium_cell',
-			// 		 'ad_astra:photovoltaic_etrium_cell', 
-			// 		 'ad_astra:large_gas_tank',
-			// 		  'ad_astra:gas_tank',
-			// 		   'ad_astra:etrionic_capacitor',
-			// 		    'ad_astra:ostrum_fluid_pipe', 
-			// 			'ad_astra:desh_fluid_pipe',
-			// 			 'ad_astra:desh_cable',
-			// 	 'ad_astra:steel_cable']
 		})
 	})
 	event.addGeneric("cmi:gameplay/random_mechanisms/random", (builder) => {

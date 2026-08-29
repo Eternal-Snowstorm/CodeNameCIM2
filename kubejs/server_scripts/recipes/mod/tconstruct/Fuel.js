@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { tconstruct } = event.getRecipes()
 
-	addFuel(Fluid.of("ad_astra:cryo_fuel"), 4225)
+	addFuel(Fluid.of("neoecoae:cryotheum_solution"), 4225)
 	addFuel(Fluid.of("ad_astra:fuel"), 1417)
 	addFuel(Fluid.of("cmi:delta_unstable_solution"), 1206)
 	addFuel(Fluid.tag("tag", "forge:creosote"), 1300)

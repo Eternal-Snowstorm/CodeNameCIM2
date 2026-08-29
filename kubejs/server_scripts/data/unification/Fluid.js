@@ -11,6 +11,12 @@ ServerEvents.highPriorityData((event) => {
 		"mekanism:steam"
 	))
 
+	// 凛冰
+	addJsonFile("cryo", addUnification(
+		"ad_astra:cryo_fuel",
+		"neoecoae:cryotheum_solution"
+	))
+
 	/**
 	 * @example addJsonFile("oil", addUnification("#forge:oil", "createdieselgenerators:crude_oil"))
 	 * @param {Internal.Fluid | Internal.FluidTags} match 
