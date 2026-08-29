@@ -196,7 +196,8 @@ ServerEvents.recipes((event) => {
 		"farmersdelight:integration/immersiveengineering/squeezer/cabbage_seeds",
 		"farmersdelight:integration/immersiveengineering/squeezer/tomato_seeds",
 		"immersiveengineering:squeezer/hemp_seeds",
-		"immersiveengineering:squeezer/wheat_seeds"
+		"immersiveengineering:squeezer/wheat_seeds",
+		"createdieselgenerators:crafting/engine_piston"
 	])
 
 	let removedMods = [

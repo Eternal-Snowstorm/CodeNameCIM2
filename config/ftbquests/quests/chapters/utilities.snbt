@@ -326,7 +326,7 @@
 				}
 			]
 			title: "蒸汽飞轮"
-			x: 2.0d
+			x: 4.0d
 			y: 5.0d
 		}
 		{
@@ -420,8 +420,8 @@
 				item: "thermal:device_nullifier"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.0d
+			x: 10.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["714D1AC6D07BEEC0"]
@@ -640,6 +640,31 @@
 				type: "item"
 			}]
 			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["714D1AC6D07BEEC0"]
+			hide_dependency_lines: true
+			id: "0E0683A73BB85ABC"
+			rewards: [{
+				id: "0E6E025375B3189B"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "♻️环保♻️"
+			tasks: [{
+				id: "46B8E557794AB6F7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cmi:solar_boilers"
+					}
+				}
+				title: "太阳能锅炉"
+				type: "item"
+			}]
+			x: 2.0d
 			y: 5.0d
 		}
 	]

@@ -846,4 +846,9 @@ ServerEvents.tags("item", (event) => {
 			"minecraft:iron_leggings",
 			"minecraft:iron_boots"
 		])
+
+	event.get("cmi:solar_boilers")
+		.add("cmi:bronze_solar_boiler")
+		.add("cmi:cast_iron_solar_boiler")
+		.add("cmi:steel_solar_boiler")
 })

@@ -64,8 +64,10 @@ function getHighPriorityItem(tag) {
 
 	let ids = null
 
-	// count 对本函数无用（返回的是物品 id 字符串），且 withCount 返回的
-	// IngredientWithCount 没有 getItemIds 方法；统一走 getItemIds()。
+	/*
+	 * count 对本函数无用(返回的是物品 id 字符串), 且 withCount 返回的
+	 * IngredientWithCount 没有 getItemIds 方法, 统一走 getItemIds()
+	 */
 	ids = Ingredient.of(tag)
 		.getItemIds()
 		.toArray()
@@ -106,34 +108,39 @@ function highPriorityItem(ingredient, count) {
 	}
 	return Item.of(getHighPriorityItem(ingredient), count)
 }
+
 /**
- * 解析金属对应的熔融流体。
- * 按优先级查找不同命名空间的流体，返回第一个匹配的流体 id。
+ * 解析金属对应的熔融流体 id
+ * 
+ * 按命名空间直接推导流体 id, 用Fluid.exists(流体注册表, 模组加载时即就绪)校验
+ *  
+ * ServerEvents.recipes 触发时机早于流体 tag 加载, tag 表为空导致全部返回 null
  *
  * @param {string} metal 金属 id
- * @returns 
+ * @returns
  */
 function resolveMoltenFluid(metal) {
-	let candidates = [
-		`tconstruct:molten_${metal}`,
-		`thermalconstruct:molten_${metal}`,
-		`forge:molten_${metal}`
-	]
+	let namespace = CmiMetalRegistry.getMetal(metal).getNamespace()
+
+	// 按命名空间标记优先, 其余作为兜底
+	let candidates = []
+	if (namespace === "t") {
+		candidates.push(`thermalconstruct:molten_${metal}`)
+	} else if (namespace === "c") {
+		candidates.push(`cmi:molten_${metal}`)
+	} else {
+		candidates.push(`tconstruct:molten_${metal}`)
+	}
+	candidates.push(`tconstruct:molten_${metal}`)
+	candidates.push(`cmi:molten_${metal}`)
+	candidates.push(`thermalconstruct:molten_${metal}`)
 
 	for (let i = 0; i < candidates.length; i++) {
-		let fluid = Ingredient.getFluidString(candidates[i])
+		let id = candidates[i]
 
-		if (fluid !== null) {
-			return fluid
+		if (Fluid.exists(id)) {
+			return id
 		}
-	}
-
-	/*
-	 * 直接查找 CMI 流体，Material.js 会将 .molten() 流体注册为 cmi:molten_X
-	 * 同时添加 tconstruct/forge 流体标签
-	 */
-	if (Fluid.exists(`cmi:molten_${metal}`)) {
-		return `cmi:molten_${metal}`
 	}
 
 	return null

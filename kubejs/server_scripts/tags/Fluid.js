@@ -1,5 +1,10 @@
 // priority: 11
 ServerEvents.tags("fluid", (event) => {
+	/**
+	 * 
+	 * @param {Special.FluidTag} tag 
+	 * @returns 
+	 */
 	function removeTagAllId(tag) {
 		return event.get(tag)
 			.removeAll()
@@ -207,4 +212,7 @@ ServerEvents.tags("fluid", (event) => {
 			"#forge:gasoline",
 			"#tconstruct:blazing_blood"
 		])
+
+	event.get("forge:high_temperature_steam")
+		.remove("minecraft:lava")
 })

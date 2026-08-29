@@ -7,11 +7,14 @@ ServerEvents.recipes((event) => {
 		event.remove([
 			{
 				id: new RegExp(`^tconstruct:smeltery/melting/metal/${metal}/.+`)
-			}, {
+			},
+			{
 				id: new RegExp(`^thermalconstruct:smeltery/melting/metal/${metal}/.+`)
-			}, {
+			},
+			{
 				id: new RegExp(`^tconstruct:tools/materials/melting/${metal}`)
-			}, {
+			},
+			{
 				id: new RegExp(`^thermalconstruct:smeltery/melting/${metal}`)
 			}
 		])
