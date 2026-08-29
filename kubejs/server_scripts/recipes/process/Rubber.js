@@ -54,5 +54,5 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/sulfur",
 		Fluid.of("mekanism:steam", 200),
 		Fluid.of("thermal:latex", 500)
-	]).secondaryFluidInput(0)
+	]).secondaryFluidInput(0).heatRequirement(CmiHeatLevel.GRILLED)
 })

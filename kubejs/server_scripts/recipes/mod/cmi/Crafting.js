@@ -32,16 +32,38 @@ ServerEvents.recipes((event) => {
 		E: "#create:mechanisms/iron"
 	}).id("cmi:accelerator")
 
-	// 水泵
+	// 水井
 	kubejs.shaped("cmi:water_well", [
 		"ACA",
 		"ABA",
 		"AAA"
 	], {
 		A: "#forge:treated_wood",
-		B: "cmi:copper_mechanism",
+		B: Mechanisms.COPPER.COM,
 		C: "#forge:plates/iron"
-	}).id("cmi:water_well")
+	})
+
+	// 熔岩井
+	kubejs.shaped("cmi:lava_well", [
+		"ACA",
+		"ABA",
+		"AAA"
+	], {
+		A: "tconstruct:nahuatl",
+		B: Mechanisms.NETHER.COM,
+		C: "#forge:plates/iron"
+	})
+
+	// 烈焰血井
+	kubejs.shaped("cmi:blazing_blood_well", [
+		"ACA",
+		"ABA",
+		"AAA"
+	], {
+		A: "tconstruct:blazewood",
+		B: Mechanisms.NETHER.COM,
+		C: "#forge:plates/iron"
+	})
 
 	// TNT
 	kubejs.shaped("minecraft:tnt", [
