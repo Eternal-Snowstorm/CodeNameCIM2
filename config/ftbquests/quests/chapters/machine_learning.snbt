@@ -1063,6 +1063,18 @@
 			x: -4.5d
 			y: 18.0d
 		}
+		{
+			dependencies: ["6865ED5A1D93E5EA"]
+			id: "7B308F2171EB91AD"
+			subtitle: "容量更大"
+			tasks: [{
+				id: "3C9BEBD5F153DB58"
+				item: "fluidlogistics:copper_basin"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 19.5d
+		}
 	]
 	title: "巧械奇工"
 }

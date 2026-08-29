@@ -100,7 +100,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2FE21275DACCE692"]
@@ -807,6 +807,24 @@
 				}
 			]
 			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2F00DD29F68238BA"]
+			id: "6859E72B22446793"
+			rewards: [{
+				count: 16
+				id: "44A5B6E611CDC265"
+				item: "ad_astra:desh_fluid_pipe"
+				type: "item"
+			}]
+			subtitle: "这个阶段比较方便的东西"
+			tasks: [{
+				id: "46F43A21A7B02A32"
+				item: "ad_astra:desh_fluid_pipe"
+				type: "item"
+			}]
+			x: 1.5d
 			y: 0.5d
 		}
 	]
