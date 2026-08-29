@@ -28,6 +28,9 @@
 	#.
 	#Allow all wrenches to auto-fill `/snr shadow_realm banish` when sneak-used, without requiring the tag ShadowHammer.
 	universalShadowWrench = false
+	#.
+	#Use the modern format for Conductor Whistle tooltips
+	modernWhistleTooltip = true
 
 	#.
 	#Smoke Settings
