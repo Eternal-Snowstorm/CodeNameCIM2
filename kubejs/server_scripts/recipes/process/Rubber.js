@@ -34,6 +34,7 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/sulfur",
 		Fluid.of("cmi:vinegar", 200)
 	]).heatRequirement(CmiHeatLevel.GRILLED)
+
 	create.mixing(Fluid.of("cmi:cured_rubber", 200), [
 		"#forge:dusts/rubber",
 		"#forge:dusts/sulfur",
@@ -44,12 +45,14 @@ ServerEvents.recipes((event) => {
 	tconstruct.casting_table("thermal:cured_rubber")
 		.fluid(Fluid.of("cmi:cured_rubber", 200))
 		.cooling_time(20)
+
 	tconstruct.casting_basin("thermal:cured_rubber_block")
 		.fluid(Fluid.of("cmi:cured_rubber", 800))
 		.cooling_time(80)
-	vintageimprovements.pressurizing(Fluid.of("cmi:cured_rubber", 200), [
+
+	vintageimprovements.pressurizing(Fluid.of("cmi:cured_rubber", 1000), [
 		"#forge:dusts/sulfur",
 		Fluid.of("mekanism:steam", 200),
-		Fluid.of("thermal:latex", 200)
-	]).heatRequirement(CmiHeatLevel.GRILLED)
+		Fluid.of("thermal:latex", 500)
+	]).secondaryFluidInput(0)
 })

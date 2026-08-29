@@ -90,9 +90,9 @@
 			id: "06012DC3A4BBF58B"
 			subtitle: "IRON!"
 			tasks: [{
-				id: "554019B4BCD71763"
-				item: "tconstruct:molten_iron_bucket"
-				type: "item"
+				id: "7D2AA0D21C95E91B"
+				title: "熔融铁"
+				type: "checkmark"
 			}]
 			x: -9.5d
 			y: 15.0d
@@ -344,11 +344,12 @@
 				"24FD90B8F1474193"
 				"0D502CA40E47F832"
 			]
+			icon: "createdieselgenerators:biodiesel_bucket"
 			id: "23C01A41EBA593FC"
 			tasks: [{
-				id: "4625DD354D47D123"
-				item: "createdieselgenerators:biodiesel_bucket"
-				type: "item"
+				id: "47B6061246D334C4"
+				title: "生物柴油"
+				type: "checkmark"
 			}]
 			x: -11.0d
 			y: 15.0d
@@ -800,12 +801,13 @@
 		}
 		{
 			dependencies: ["0A7ACD83404B2AFA"]
+			icon: "cmi:molten_industrial_iron_bucket"
 			id: "4B3C8BED0FFCD6AB"
 			subtitle: "铁粉放入搅拌机内加热"
 			tasks: [{
-				id: "31DE1F24112BE25C"
-				item: "cmi:molten_industrial_iron_bucket"
-				type: "item"
+				id: "3A6E3A0F98DD4389"
+				title: "熔融工业铁"
+				type: "checkmark"
 			}]
 			x: -8.0d
 			y: 16.5d
