@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
 
 	// 氯
 	cmi.electrolyzer()
-		.inputFluids(MBDUtils.withFluidTag("cmi:brine", 500))
+		.inputFluids(MBDUtils.withFluidTag("forge:brine", 500))
 		.outputFluids(Fluid.of("mekanism:chlorine", 100))
 		.outputItems("mekanism:salt")
 		.duration(20 * 5)
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
 		.outputFluids(Fluid.of("cmi:lithium_containing_electrolyte", 100))
 		.outputItems("mekanism:salt")
 		.duration(20 * 5)
-	
+
 	// 硫酸
 	cmi.electrolyzer()
 		.inputItems("alexscaves:toxic_paste")

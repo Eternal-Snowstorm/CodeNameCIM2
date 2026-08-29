@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
 	rotaryWithTag("forge:superheated_sodium", "mekanism:superheated_sodium", "mekanism:rotary/superheated_sodium")
 	rotaryWithTag("forge:uranium_hexafluoride", "mekanism:uranium_hexafluoride", "mekanism:rotary/uranium_hexafluoride")
 	rotaryWithTag("forge:uranium_oxide", "mekanism:uranium_oxide", "mekanism:rotary/uranium_oxide")
-	rotaryWithTag("forge:water", "mekanism:water_vapor", "mekanism:rotary/water")
+	rotaryWithTag("minecraft:water", "mekanism:water_vapor", "mekanism:rotary/water")
 
 	mekanism.rotary()
 		.fluidInput(Fluid.of("cmi:radon", 200))
