@@ -147,6 +147,20 @@ ServerEvents.tags("fluid", (event) => {
 	event.get("forge:molten_pig_iron")
 		.add("#tconstruct:molten_pig_iron")
 
+	// 颜料
+	event.get("forge:dyes")
+		.add("railways:paint")
+
+	CmiGlobal.DYE_COLOR_GROUP.forEach((color) => {
+		event.get(`forge:cements/${color}`)
+			.add(`createdieselgenerators:${color}_cement`)
+			.add(`createdieselgenerators:flowing_${color}_cement`)
+			
+		event.get("forge:cements")
+			.add(`createdieselgenerators:${color}_cement`)
+			.add(`createdieselgenerators:flowing_${color}_cement`)
+	})
+
 	// 水
 	removeTagAllId("minecraft:water")
 		.add("minecraft:water")
