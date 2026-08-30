@@ -8,7 +8,7 @@
 	"includeExtraModsInReport": true,
 	"redactUserHomePath": false,
 	"redactUsername": false,
-	"strictMode": true,
+	"strictMode": false,
 	"extraModsSeverity": "WARNING",
 	"requiredModsSeverity": "CRITICAL",
 	"blockedModsSeverity": "CRITICAL",

@@ -1,0 +1,20 @@
+
+["Energy Settings"]
+	#Maximum energy capacity of the Multibuilder Tool (in FE)
+	#Range: 100000 ~ 100000000
+	maxEnergy = 10008000
+	#Energy transfer rate for charging/discharging (in FE/tick)
+	#Range: 10000 ~ 1000000
+	energyTransferRate = 10000
+	#Energy cost per block placed (in FE)
+	#Range: 1 ~ 10000
+	energyPerBlock = 1
+
+["Block Replacement Settings"]
+	#Define sets of equivalent blocks that can be used as replacements.
+	#Each line represents a set of equivalent blocks separated by commas.
+	#Example: 'mekanism:basic_mechanical_pipe,mekanism:advanced_mechanical_pipe,mekanism:elite_mechanical_pipe'
+	#If a structure requires 'elite_mechanical_pipe' but you only have 'basic_mechanical_pipe',
+	#the builder will use the basic pipe as a replacement.
+	blockEquivalencySets = ["mekanism:basic_mechanical_pipe,mekanism:advanced_mechanical_pipe,mekanism:elite_mechanical_pipe,mekanism:ultimate_mechanical_pipe"]
+
