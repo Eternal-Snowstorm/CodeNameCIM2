@@ -326,6 +326,26 @@ let Wood = Object.freeze({
 		STRIPPED_WOOD: "minecraft:stripped_cherry_wood",
 		PLANKS: "minecraft:cherry_planks"
 	}),
+	CRIMSON: Object.freeze({
+		NAME: "crimson",
+		SAPLING: "minecraft:crimson_fungus",
+		LEAVE: "minecraft:nether_wart_block",
+		LOG: "minecraft:crimson_stem",
+		STRIPPED_LOG: "minecraft:stripped_crimson_stem",
+		WOOD: "minecraft:crimson_hyphae",
+		STRIPPED_WOOD: "minecraft:stripped_crimson_hyphae",
+		PLANKS: "minecraft:crimson_planks"
+	}),
+	WARPED: Object.freeze({
+		NAME: "warped",
+		SAPLING: "minecraft:warped_fungus",
+		LEAVE: "minecraft:warped_wart_block",
+		LOG: "minecraft:warped_stem",
+		STRIPPED_LOG: "minecraft:stripped_warped_stem",
+		WOOD: "minecraft:warped_hyphae",
+		STRIPPED_WOOD: "minecraft:stripped_warped_hyphae",
+		PLANKS: "minecraft:warped_planks"
+	}),
 	RUBBERWOOD: Object.freeze({
 		NAME: "rubberwood",
 		SAPLING: "thermal:rubberwood_sapling",
