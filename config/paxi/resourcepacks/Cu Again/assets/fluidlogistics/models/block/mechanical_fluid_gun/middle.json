@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "fluidlogistics:block/mechanical_fluid_gun/gun"
+	},
+	"elements": [
+		{
+			"name": "middle",
+			"from": [5, 19, -4],
+			"to": [11, 25, -2],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 22, -3]},
+			"faces": {
+				"north": {"uv": [7, 10.5, 10, 13.5], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [7, 15, 10, 16], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [7, 15, 10, 16], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [7, 15, 10, 16], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [7, 15, 10, 16], "texture": "#0"}
+			}
+		}
+	]
+}
