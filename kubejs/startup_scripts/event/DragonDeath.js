@@ -1,5 +1,9 @@
 let $EntityLeaveLevelEvent =
 	Java.loadClass("net.minecraftforge.event.entity.EntityLeaveLevelEvent")
+let $CmiTips =
+	Java.loadClass("dev.celestiacraft.cmi.client.tip.CmiTips")
+let $ServerPlayer =
+	Java.loadClass("net.minecraft.server.level.ServerPlayer")
 
 nativeEvent($EntityLeaveLevelEvent, (event) => {
 	let entity = event.getEntity()
@@ -31,18 +35,23 @@ nativeEvent($EntityLeaveLevelEvent, (event) => {
 		}
 
 		if (!stage.has(STAGE_NAME)) {
-			stage.add(STAGE_NAME)
+			// stage.add(STAGE_NAME)
 
 			level.playSound(
 				null,
 				player.x,
 				player.y,
 				player.z,
-				"cmi:final_quest_complete",
+				"cmi:dragon_death",
 				"players",
-				0.5,
+				0.25,
 				1
 			)
+
+			if (player instanceof $ServerPlayer) {
+				$CmiTips.triggerLoginTip(player)
+				player.tell("TIP")
+			}
 		}
 	})
 })
