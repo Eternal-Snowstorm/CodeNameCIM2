@@ -1,18 +1,22 @@
 // priority: 11
 ServerEvents.tags("block", (event) => {
-	/**
-	 * 
-	 * @param {Special.BlockTag} tag 
-	 * @returns 
-	 */
-	function removeTagAllId(tag) {
-		return event.get(tag)
-			.removeAll()
-	}
 
+	// 烟熏源
 	event.get("cmi:smoke_source")
 		.add("#forge:storage_blocks/coal_coke")
 
+	// 热源
+	event.get("cmi:heat_sources")
+		.add("minecraft:lava")
+		.add("#farmersdelight:heat_sources")
+		.remove("mynethersdelight:magma_cake")
+
+	// 冰冻催化剂
+	event.get("cmi:freezing_catalyst")
+		.add("minecraft:powder_snow")
+		.add("create_connected:fan_freezing_catalyst")
+
+	// 矿藏
 	event.get("cmi:ore_deposits")
 		.add([
 			"create_rns:iron_deposit_block",
@@ -30,20 +34,18 @@ ServerEvents.tags("block", (event) => {
 			"create_rns:depleted_deposit_block"
 		])
 
+	// 主世界石英矿
 	event.get("cmi:overworld_quartz_ore")
 		.add("cmi:quartz_ore")
 		.add("cmi:deepslate_quartz_ore")
 
-	event.get("cmi:heat_sources")
-		.add("minecraft:lava")
-		.add("#farmersdelight:heat_sources")
-		.remove("mynethersdelight:magma_cake")
-
+	// 无限燃烧
 	event.get("minecraft:infiniburn_all")
 		.add("forge:storage_blocks/coal")
 		.add("forge:storage_blocks/charcoal")
 		.add("minecraft:nether_bricks")
 
+	// 可以割出植物纤维的草
 	event.get("cmi:grass_fiber")
 		.add([
 			"minecraft:grass",
@@ -55,16 +57,7 @@ ServerEvents.tags("block", (event) => {
 			"tconstruct:blood_slime_tall_grass"
 		])
 
-	event.get("forge:ores")
-		.add("ad_astra:moon_cheese_ore")
-
-	event.get("cmi:freezing_catalyst")
-		.add("minecraft:powder_snow")
-		.add("create_connected:fan_freezing_catalyst")
-
-	event.get("forge:ores/cheese")
-		.add("ad_astra:moon_cheese_ore")
-
+	// 下界农田
 	event.get("cmi:nether_farmland")
 		.add("minecraft:netherrack")
 		.add("minecraft:soul_sand")
@@ -72,6 +65,7 @@ ServerEvents.tags("block", (event) => {
 		.add("mynethersdelight:resurgent_soil")
 		.add("mynethersdelight:resurgent_soil_farmland")
 
+	// 热力机器
 	event.get("thermal:machines")
 		.add("thermal_extra:endothermic_dehydrator")
 		.add("thermal_extra:nitratic_igniter")
@@ -79,15 +73,19 @@ ServerEvents.tags("block", (event) => {
 		.add("thermal_extra:component_assembly")
 		.add("thermal_extra:advanced_refinery")
 
+	// 热力发电机
 	event.get("thermal:dynamos")
 		.add("thermal_extra:dynamo_frost")
 
+	// 镐挖掘
 	event.get("minecraft:mineable/pickaxe")
 		.remove("treetap:tap")
 
+	// 斧挖掘
 	event.get("minecraft:mineable/axe")
 		.add("treetap:tap")
 
+	// 热力设备
 	event.add("thermal:devices")
 		.add([
 			"thermal_extra:device_harvester",
@@ -115,18 +113,22 @@ ServerEvents.tags("block", (event) => {
 			"thermal:fluid_cell_frame"
 		])
 
+	// 风扇吹风可通过
 	event.get("create:fan_transparent")
 		.add("tconstruct:seared_basin")
 
+	// 扳手可拆除
 	event.get("create:wrench_pickup")
 		.add([
 			"#thermal:machines",
 			"#thermal:dynamos",
-			"#forge:storage_blocks",
 			"#thermal:devices",
 
+			"#forge:storage_blocks",
+			"#forge:sheetmetals",
+
 			"@mm",
-			"steampowered",
+			"@steampowered",
 			"@createdeco",
 			"@kaleidoscope_cookery",
 			"@farmersdelight",
@@ -208,7 +210,6 @@ ServerEvents.tags("block", (event) => {
 			"immersiveengineering:transformer_hv",
 			"immersiveengineering:breaker_switch",
 			"immersiveengineering:redstone_breaker",
-			"#forge:treated_wood",
 			"immersiveengineering:current_transformer",
 			"immersiveengineering:connector_redstone",
 			"immersiveengineering:connector_probe",
@@ -218,8 +219,7 @@ ServerEvents.tags("block", (event) => {
 			"immersiveengineering:stairs_treated_wood_horizontal",
 			"immersiveengineering:stairs_treated_wood_vertical",
 			"immersiveengineering:stairs_treated_wood_packaged",
-			"#immersiveengineering:mineable/hammer",
-			"#forge:sheetmetals",
+			"#forge:treated_wood",
 			"immersiveengineering:lightning_rod",
 			"immersiveengineering:coke_oven",
 			"immersiveengineering:blast_furnace",
@@ -241,6 +241,7 @@ ServerEvents.tags("block", (event) => {
 			"immersiveengineering:excavator",
 			"immersiveengineering:sawmill",
 			"immersiveengineering:arc_furnace",
+			"#immersiveengineering:mineable/hammer",
 
 			"#cmi:tables",
 			"#tconstruct:tables",
@@ -287,9 +288,14 @@ ServerEvents.tags("block", (event) => {
 			"tconstruct:scorched_channel"
 		])
 
-	event.get("treetap:tappable")
-		.removeAll()
+	// 矿物
+	event.get("forge:ores")
+		.add("ad_astra:moon_cheese_ore")
 
+	event.get("forge:ores/cheese")
+		.add("ad_astra:moon_cheese_ore")
+
+	// 遍历木头列表
 	WoodMaterials.forEach((wood) => {
 		let { STRIPPED_LOG, STRIPPED_WOOD } = wood
 
@@ -297,7 +303,21 @@ ServerEvents.tags("block", (event) => {
 			.add([STRIPPED_LOG, STRIPPED_WOOD])
 	})
 
+	// 移除
+	removeTagAllId("treetap:tappable")
+
 	// 风帆
 	event.get("create:windmill_sails")
 		.remove("create:sail_frame")
+
+	/**
+	 * 
+	 * @param {Special.BlockTag} tag 
+	 * @returns 
+	 */
+	function removeTagAllId(tag) {
+		return event.get(tag)
+			.removeAll()
+	}
+
 })

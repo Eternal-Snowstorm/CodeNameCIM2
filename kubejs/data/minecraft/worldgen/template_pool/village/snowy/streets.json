@@ -147,8 +147,8 @@
 		{
 			"element": {
 				"element_type": "minecraft:legacy_single_pool_element",
-				"location": "cmi:village/streets/snowy",
-				"processors": "minecraft:street_snowy_or_taiga",
+				"location": "cmi:village/snowy/streets/straight_1",
+				"processors": "cmi:road",
 				"projection": "terrain_matching"
 			},
 			"weight": 10

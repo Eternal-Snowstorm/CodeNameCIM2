@@ -5,7 +5,7 @@ ServerEvents.highPriorityData((event) => {
 
 	// 幻水晶
 	addOreGeneratingType("dreamcore_crystal_ore", "overworld", 16)
-		.overworldWithStoneOnly(8)
+		.overworldWithStoneOnly(4)
 
 	// 锇
 	addOreGeneratingType("osmium_ore", "nether", 7)
