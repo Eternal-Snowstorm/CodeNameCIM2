@@ -50,7 +50,6 @@ nativeEvent($EntityLeaveLevelEvent, (event) => {
 
 			if (player instanceof $ServerPlayer) {
 				$CmiTips.triggerLoginTip(player)
-				player.tell("TIP")
 			}
 		}
 	})

@@ -1,3 +1,6 @@
+let $MapColor =
+	Java.loadClass("net.minecraft.world.level.material.MapColor")
+
 StartupEvents.registry("block", (event) => {
 	/**
 	 * 
@@ -61,6 +64,7 @@ StartupEvents.registry("block", (event) => {
 	// 泥炭
 	addBlock("peat_block")
 		.soundType(SoundType.MUD)
+		.mapColor($MapColor.TERRACOTTA_CYAN)
 		.hardness(1)
 		.resistance(1)
 		.tagBlock(CmiToolType.SHOVEL.tag())
