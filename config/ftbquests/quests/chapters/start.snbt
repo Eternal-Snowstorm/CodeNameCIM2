@@ -569,13 +569,13 @@
 					type: "item"
 				}
 				{
-					id: "3F617FA88A7091DC"
-					item: "thermal:chiller_ingot_cast"
+					id: "2398ED4BFDC4CC38"
+					item: "tconstruct:ingot_cast"
 					type: "item"
 				}
 				{
-					id: "7BFD46E0F3922511"
-					item: "thermal_extra:chiller_plate_cast"
+					id: "5E1195FF048E697A"
+					item: "tconstruct:plate_cast"
 					type: "item"
 				}
 			]
