@@ -344,6 +344,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("reduced_polonium", "还原钋")
 	addItemLang("raw_polonium", "粗钋")
 
+	addItemLang("optical_fiber", "光纤")
+	addItemLang("fluix_wire", "福鲁伊克斯线")
 
 	let moleList = [
 		["plate", "板状"],
