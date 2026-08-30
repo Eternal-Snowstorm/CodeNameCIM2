@@ -62,11 +62,16 @@ StartupEvents.modifyCreativeTab("minecraft:tools_and_utilities", (event) => {
 	event.remove([
 		"@mekanism"
 	])
+
+	event.add([
+		"mbd2:mbd_gadgets"
+	])
 })
 StartupEvents.modifyCreativeTab("minecraft:redstone_blocks", (event) => {
 	event.remove([
 		"@mekanism",
-		"@mekanismgenerators"
+		"@mekanismgenerators",
+		"mbd2:mbd_gadgets"
 	])
 })
 StartupEvents.modifyCreativeTab("minecraft:functional_blocks", (event) => {
@@ -83,9 +88,16 @@ StartupEvents.modifyCreativeTab("minecraft:ingredients", (event) => {
 		"@immersiveengineering"
 	])
 })
+
 StartupEvents.modifyCreativeTab("thermal:thermal.items", (event) => {
 	event.addBefore("thermal:rf_coil", [
 		"thermal:laser_diode"
+	])
+})
+
+StartupEvents.modifyCreativeTab("thermal:thermal.devices", (event) => {
+	event.addBefore("thermal:device_tree_extractor", [
+		"thermal:device_hive_extractor"
 	])
 })
 

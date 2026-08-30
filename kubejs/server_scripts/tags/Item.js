@@ -235,6 +235,7 @@ ServerEvents.tags("item", (event) => {
 		"acacia",
 		"dark_oak",
 		"cherry",
+		"mangrove",
 		"crimson",
 		"warped",
 		"cmi:rubberwood"
@@ -916,7 +917,7 @@ ServerEvents.tags("item", (event) => {
 			.add(`minecraft:iron_${armor}`)
 
 		// astrallium 装备
-		let astralliumArmor = `enenring:astrallium_${armor}`
+		let astralliumArmor = `edenring:astrallium_${armor}`
 		event.get("forge:armor/astrallium")
 			.add(astralliumArmor)
 

@@ -6,4 +6,11 @@ ServerEvents.recipes((event) => {
 		"minecraft:obsidian",
 		"#forge:vegetables/onion"
 	])
+
+	// 可疑的龙蛋
+	create.item_application("kaleidoscope_end:suspicious_dragon_egg", [
+		"minecraft:dragon_egg",
+		"#forge:dusts/chaotic_void"
+	])
+
 })
