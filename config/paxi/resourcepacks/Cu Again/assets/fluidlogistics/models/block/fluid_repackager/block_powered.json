@@ -1,0 +1,6 @@
+{
+  "parent": "fluidlogistics:block/fluid_repackager/block",
+  "textures": {
+    "2": "fluidlogistics:block/fluid_packager/packager_horizontal_powered"
+  }
+}

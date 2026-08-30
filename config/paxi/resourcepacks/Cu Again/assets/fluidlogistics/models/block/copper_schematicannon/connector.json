@@ -1,0 +1,54 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"10": "fluidlogistics:block/copper_schematicannon/fluid_cannon_connector",
+		"particle": "block/spruce_log"
+	},
+	"elements": [
+		{
+			"name": "Cube",
+			"from": [3, 11, 0],
+			"to": [13, 20, 3],
+			"faces": {
+				"north": {"uv": [7, 0, 12, 4.5], "texture": "#10"},
+				"east": {"uv": [5, 8, 6.5, 12.5], "texture": "#10"},
+				"south": {"uv": [12, 0, 7, 4.5], "texture": "#10"},
+				"west": {"uv": [5, 8, 6.5, 12.5], "texture": "#10"},
+				"up": {"uv": [5, 9.5, 0, 8], "texture": "#10"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [3, 11, 13],
+			"to": [13, 20, 16],
+			"faces": {
+				"north": {"uv": [12, 0, 7, 4.5], "texture": "#10"},
+				"east": {"uv": [6.5, 8, 5, 12.5], "texture": "#10"},
+				"south": {"uv": [12, 0, 7, 4.5], "texture": "#10"},
+				"west": {"uv": [6.5, 8, 5, 12.5], "texture": "#10"},
+				"up": {"uv": [0, 9.5, 5, 8], "texture": "#10"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [1, 7, 0],
+			"to": [15, 11, 16],
+			"faces": {
+				"north": {"uv": [7, 6.5, 14, 8.5], "texture": "#10"},
+				"east": {"uv": [7, 4.5, 15, 6.5], "texture": "#10"},
+				"south": {"uv": [7, 6.5, 14, 8.5], "texture": "#10"},
+				"west": {"uv": [7, 4.5, 15, 6.5], "texture": "#10"},
+				"up": {"uv": [7, 8, 0, 0], "texture": "#10"},
+				"down": {"uv": [0, 0, 7, 8], "texture": "#10"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Connector",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2]
+		}
+	]
+}

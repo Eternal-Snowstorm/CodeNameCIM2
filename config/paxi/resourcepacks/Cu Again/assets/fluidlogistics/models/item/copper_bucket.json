@@ -1,0 +1,10 @@
+{
+  "parent": "forge:item/bucket",
+  "loader": "forge:fluid_container",
+  "fluid": "minecraft:empty",
+  "flip_gas": true,
+  "apply_fluid_luminosity": true,
+  "textures": {
+    "base": "fluidlogistics:item/copper_bucket"
+  }
+}
