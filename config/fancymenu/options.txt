@@ -8,7 +8,7 @@ B:play_vanilla_menu_music = 'true';
 ##[customization]
 
 B:modpack_mode = 'false';
-B:show_customization_overlay = 'false';
+B:show_customization_overlay = 'true';
 B:advanced_customization_mode = 'false';
 
 
@@ -65,7 +65,7 @@ B:enable_element_tilting_controls = 'true';
 ##[ui]
 
 B:enable_ui_animations = 'true';
-S:ui_scale_v2 = 'auto';
+S:ui_scale_v2 = 'medium_large';
 I:context_menu_hover_open_speed = '1';
 S:ui_theme = 'dark';
 B:pip_window_docking = 'true';
