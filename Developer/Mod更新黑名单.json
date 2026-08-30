@@ -1,0 +1,19 @@
+{
+	"description": [
+		"部分Mod更新后会导致各种大大小小的问题",
+		"因此这个json用于记录不能更新的Mods",
+		"请各位更新Mods前对照着该json内的内容"
+	],
+	"mods": {
+		"Nolijium": {
+			"modid": "nolijium",
+			"reserved_version": "0.1.3",
+			"curseforge": "https://www.curseforge.com/minecraft/mc-mods/nolijium"
+		},
+		"Leawind's Third Person": {
+			"modid": "leawind_third_person",
+			"reserved_version": "2.2.0",
+			"curseforge": "https://www.curseforge.com/minecraft/mc-mods/leawind-third-person"
+		}
+	}
+}
