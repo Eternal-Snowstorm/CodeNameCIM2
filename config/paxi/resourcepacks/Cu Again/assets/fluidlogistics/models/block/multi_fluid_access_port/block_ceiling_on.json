@@ -1,0 +1,7 @@
+{
+  "parent": "fluidlogistics:block/multi_fluid_access_port/block_ceiling",
+  "textures": {
+    "down": "fluidlogistics:block/multi_fluid_access_port/multi-fluid_access_port_down_on",
+    "top": "fluidlogistics:block/multi_fluid_access_port/multi-fluid_access_port_top_on"
+  }
+}

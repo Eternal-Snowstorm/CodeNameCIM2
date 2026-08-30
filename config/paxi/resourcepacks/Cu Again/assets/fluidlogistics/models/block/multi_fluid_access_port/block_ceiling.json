@@ -1,0 +1,43 @@
+{
+  "credit": "Adapted from user-provided Blockbench model",
+  "parent": "block/block",
+  "textures": {
+    "front": "fluidlogistics:block/multi_fluid_access_port/multi-fluid_access_port_front",
+    "behind": "fluidlogistics:block/multi_fluid_access_port/multi-fluid_access_port_behind",
+    "down": "fluidlogistics:block/multi_fluid_access_port/multi-fluid_access_port_down",
+    "side": "fluidlogistics:block/multi_fluid_access_port/multi-fluid_access_port_side",
+    "top": "fluidlogistics:block/multi_fluid_access_port/multi-fluid_access_port_top",
+    "particle": "fluidlogistics:block/multi_fluid_access_port/multi-fluid_access_port_front"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": { "uv": [0, 0, 16, 16], "rotation": 180, "texture": "#top" },
+        "east": { "uv": [0, 0, 16, 16], "rotation": 180, "texture": "#side" },
+        "south": { "uv": [0, 0, 16, 16], "rotation": 180, "texture": "#down" },
+        "west": { "uv": [0, 0, 16, 16], "rotation": 180, "texture": "#side" },
+        "up": { "uv": [0, 0, 16, 16], "rotation": 180, "texture": "#front" },
+        "down": { "uv": [0, 0, 16, 16], "texture": "#behind" }
+      }
+    },
+    {
+      "from": [2.95, 15.9, 2.95],
+      "to": [13.05, 17.95, 13.05],
+      "faces": {
+        "north": { "uv": [13, 11, 3, 13], "rotation": 180, "texture": "#front" },
+        "east": { "uv": [5, 3, 3, 13], "rotation": 270, "texture": "#front" },
+        "south": { "uv": [13, 3, 3, 5], "texture": "#front" },
+        "west": { "uv": [13, 3, 11, 13], "rotation": 90, "texture": "#front" },
+        "up": { "uv": [3, 3, 13, 13], "rotation": 180, "texture": "#front" }
+      }
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [30, -135, 0],
+      "scale": [0.625, 0.625, 0.625]
+    }
+  }
+}

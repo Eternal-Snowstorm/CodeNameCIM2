@@ -1,0 +1,8 @@
+{
+  "parent": "fluidlogistics:item/fluid_package",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "0": "fluidlogistics:item/fluid_package_oxidized",
+    "particle": "fluidlogistics:item/fluid_package_oxidized"
+  }
+}

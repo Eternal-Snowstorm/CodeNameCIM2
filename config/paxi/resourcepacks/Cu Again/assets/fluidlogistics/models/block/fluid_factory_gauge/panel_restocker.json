@@ -1,0 +1,8 @@
+{
+  "parent": "create:block/factory_gauge/panel_restocker",
+  "textures": {
+    "0": "fluidlogistics:block/factory_panel",
+    "particle": "fluidlogistics:block/factory_panel"
+  }
+}
+

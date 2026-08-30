@@ -1,0 +1,7 @@
+{
+	"parent": "fluidlogistics:block/smart_hopper/fluid_hopper",
+	"textures": {
+		"1": "fluidlogistics:block/smart_hopper/lock",
+		"2": "fluidlogistics:block/smart_hopper/fluid_hopper_middle_power"
+	}
+}

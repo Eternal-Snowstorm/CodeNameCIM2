@@ -1,0 +1,7 @@
+{
+	"parent": "fluidlogistics:block/fluid_hatch/block_closed",
+	"textures": {
+		"1": "fluidlogistics:block/fluid_hatch/hatch_open",
+		"particle": "fluidlogistics:block/fluid_hatch/industrial_iron_block"
+	}
+}
