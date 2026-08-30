@@ -47,6 +47,14 @@
 			}
 		]
 	},
+	"dragon_death": {
+		"sounds": [
+			{
+				"name": "cmi:music/dragon_death",
+				"stream": true
+			}
+		]
+	},
 	"record.mechanism": {
 		"sounds": [
 			{

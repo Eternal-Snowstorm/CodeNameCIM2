@@ -113,6 +113,10 @@ ServerEvents.tags("block", (event) => {
 			"thermal:fluid_cell_frame"
 		])
 
+	// 可生长金葡萄
+	event.get("kaleidoscope_tavern:can_grow_gold_grape")
+		.add("alexscaves:coprolith")
+
 	// 风扇吹风可通过
 	event.get("create:fan_transparent")
 		.add("tconstruct:seared_basin")
