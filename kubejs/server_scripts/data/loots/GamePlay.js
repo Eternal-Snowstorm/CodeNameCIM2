@@ -13,9 +13,4 @@ ServerEvents.genericLootTables((event) => {
 			pool.setUniformRolls(1, 1)
 		})
 	})
-	event.addGeneric("cmi:gameplay/academic_fraud", (builder) => {
-		builder.addPool((pool) => {
-			pool.addItem("minecraft:iron_ingot", 100, 64 * 36)
-		})
-	})
 })

@@ -190,13 +190,7 @@ ServerEvents.highPriorityData((event) => {
 			[
 				"no_blast_furnace_iron"
 			]
-		],
-		rewards: {
-			loot: [
-				"cmi:gameplay/academic_fraud"
-			],
-			experience: 50
-		}
+		]
 	})
 
 	addAdvancement("fraud", {
