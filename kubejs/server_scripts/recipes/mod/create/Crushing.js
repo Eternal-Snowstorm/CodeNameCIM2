@@ -68,4 +68,11 @@ ServerEvents.recipes((event) => {
 		"ae2:cell_component_16k",
 		"minecraft:obsidian"
 	], "cmi:obsidian_cell")
+
+	// 鞍
+	create.crushing([
+		Item.of("minecraft:leather", 3),
+		Item.of("minecraft:leather", 2).withChance(0.5)
+	], "minecraft:saddle")
+
 })

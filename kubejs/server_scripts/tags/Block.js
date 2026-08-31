@@ -113,10 +113,6 @@ ServerEvents.tags("block", (event) => {
 			"thermal:fluid_cell_frame"
 		])
 
-	// 可生长金葡萄
-	event.get("kaleidoscope_tavern:can_grow_gold_grape")
-		.add("alexscaves:coprolith")
-
 	// 风扇吹风可通过
 	event.get("create:fan_transparent")
 		.add("tconstruct:seared_basin")
@@ -134,7 +130,6 @@ ServerEvents.tags("block", (event) => {
 			"@mm",
 			"@steampowered",
 			"@createdeco",
-			"@kaleidoscope_cookery",
 			"@farmersdelight",
 			"@ftbquests",
 			"@immersiveindustry",
@@ -144,6 +139,23 @@ ServerEvents.tags("block", (event) => {
 			"@sophisticatedbackpacks",
 			"@pipez",
 			"@rechiseledcreate",
+
+			"#kaleidoscope_cookery:sittable",
+			"#kaleidoscope_cookery:table",
+			"kaleidoscope_cookery:stove",
+			"kaleidoscope_cookery:pot",
+			"kaleidoscope_cookery:shawarma_spit",
+			"kaleidoscope_cookery:straw_block",
+			"kaleidoscope_cookery:pot",
+			"kaleidoscope_cookery:stockpot",
+			"kaleidoscope_cookery:chopping_board",
+			"kaleidoscope_cookery:steamer",
+			"kaleidoscope_cookery:teapot",
+			"kaleidoscope_cookery:kitchenware_racks",
+			"kaleidoscope_cookery:fruit_basket",
+			"kaleidoscope_cookery:enamel_basin",
+			"kaleidoscope_cookery:recipe_item",
+			"kaleidoscope_cookery:oil_pot",
 
 			"ad_astra:launch_pad",
 			"ad_astra:cable_duct",

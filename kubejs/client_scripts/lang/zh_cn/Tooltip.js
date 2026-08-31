@@ -110,6 +110,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("#cmi:machine_port", "制作时不消耗机器核心")
 	addCommonTooltipLang("#cmi:machine_core", "制作接口时不消耗")
 	addCommonTooltipLang("#forge:tools/wrench", "工作台制作构件时不消耗")
+	addCommonTooltipLang("#forge:buckets/dye", "此模组的{create:mechanical_mixer, 1}混合搅拌染色配方已被隐藏，你可以用{create_dragons_plus:white_dye_bucket, 1}白色染色配方类推其他被隐藏的染色配方")
+	addCommonTooltipLang("#railways:filled_paint_pitchers", "此模组的{create:mechanical_mixer, 1}混合搅拌染色配方已被隐藏，你可以用{railways:white_paint_pitcher, 1}白色染色配方类推其他被隐藏的染色配方")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",
@@ -120,7 +122,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLang("thermal:rubber", "橡胶是一种由植物胶乳加工而来的产物\n而植物胶乳一般只存在内橡胶树的树皮内, 当然部分橡胶树原木内也存在少量植物胶乳")
 	addJEIInfoLang("cmi:andesite_alloy_noodle", `"意大利面就应该拌42号混凝土. 因为这个螺丝钉的长度, 它很容易会直接影响到挖掘机的扭距, 你往里砸的时候, 一瞬间它就会产生大量的高能蛋白, 俗称UFO. 会严重影响经济的发展. 照你这么说, 炸鸡块要用92#汽油, 毕竟我们无法用光学透镜探测苏格拉底, 如果二氧化氢持续侵蚀这个机床组件, 那么我们早晚要在斐波那契曲线上安装一个胶原蛋白, 否则我们将无法改变蜜雪冰城与阿尔别克的叠加状态, 因为众所周知爱吃鸡摩人在捕鲲的时候往往需要用氢的同位素当做诱饵, 但是原子弹的新鲜程度又会直接影响到我国东南部的季风和洋流, 所以说在西伯利亚地区开设农学院显然是不合理的. \n我知道你一定会反驳我, 告诉我农业的底层思维是什么, 就是不用化肥农药和种子, 还包括生命之源氮气, 使甲烷分子直接转化成能够捕获放射性元素释放的β射线的单质, 并且使伽马射线在常温下就能用老虎钳折弯成78°, 否则在用望远镜观察细胞结构时, 根本发现不了时空重叠时到底要叠几层才能使潼关肉夹馍更酥脆的原因. "`)
 	addJEIInfoLang("minecraft:andesite", `在本包, 安山岩生产主要方式有5种\n一种是通过热力膨胀的造石机\n一种是通过安山岩磨成粉后加工的增值线\n一种是熔岩和水触碰的刷石机, 和造石机一样, 在下方放置安山合金块可以刷出安山岩(动力泵一样生效)\n一种是前往"安山岩洞窟"群系, 这是一个全是安山岩的洞窟\n最后一种则是通过构件催生器来生产`)
-	addJEIInfoLang("neoecoae:cryotheum_solution_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产才能确保需求量自由")
+	addJEIInfoLang("ad_astra:cryo_fuel_bucket", "水和冰在经过外星科技处理后竟然可以用作火箭燃料, 那我是不是同样可以作用于其他地方呢..?\n但是这种流体产率非常低, 我需要想办法进行大批量的生产才能确保需求量自由")
 	addJEIInfoLang("cmi:bucket", "似是一种巨大的力量塑造的诡异造物\n它有着令人倍感亲切的形状, 却处于一种令人不寒而栗的陌生角度\n这巨大的力量, 炽热, 强大又致命\n善良者受其腐化\n卑鄙者因其强大\n收容之器受其影响, 转为包覆之具, 幸于并无灵魂, 于我没有危害")
 	addJEIInfoLang("#ad_astra:power_consumption_machines", "该Mod的机器每个面都有能量输入的上限\n如果想要不会断电确保产量你可能需要给每个面都连接一根电线")
 	addJEIInfoLang("#cmi:faucet", "右键橡胶原木有25%概率获得1个橡胶\n有10%概率会将其变为去皮橡胶原木\n每次右键都会消耗1点耐久, 耐久归零后工具损坏")
@@ -128,6 +130,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addJEIInfoLang("#cmi:peat_gen", `泥炭是一种上好的燃料, 单个泥炭可以烧炼4个物品\n只会在"红树林沼泽"和"沼泽"群系的地表生成\n并且挖掘泥炭块时将会受到"时运"和"精准采集"的附魔效果影响`)
 	addJEIInfoLang("cmi:sludge_extract", "制作此物品需向机器中安装 整合组件 或 扩容储罐构造")
 	addJEIInfoLang("#easyrepair:repair_item_pouchs", "向其中装入修补件或修复材料并装备后, 手中的工具损坏时会自动修复")
+	addJEIInfoLang("#forge:buckets/dye", "此模组的混合搅拌染色配方已被隐藏，仅保留白色染色配方\n你可以用白色染色配方类推其他被隐藏的染色配方")
+	addJEIInfoLang("#railways:filled_paint_pitchers", "此模组的混合搅拌染色配方已被隐藏，仅保留白色染色配方\n你可以用白色染色配方类推其他被隐藏的染色配方")
 
 	addCustomTooltipLang("tooltip.moreburners.electric_burner.1", "§b电力驱动的{create:blaze_burner, 1}烈焰人燃烧室")
 	addCustomTooltipLang("tooltip.moreburners.electric_burner.2", "§b通上{createaddition:electrum_spool, 1}电后会缓慢的升温, 需要保持供电")

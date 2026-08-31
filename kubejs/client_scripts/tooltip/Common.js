@@ -39,6 +39,8 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("#cmi:machine_port")
 	addCommonTooltip("#cmi:machine_core")
 	addCommonTooltip("#forge:tools/wrench")
+	addCommonTooltip("#forge:buckets/dye")
+	addCommonTooltip("#railways:filled_paint_pitchers")
 
 	/**
 	 * 
