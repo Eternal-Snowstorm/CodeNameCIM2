@@ -1,7 +1,7 @@
 let $AnvilUpdateEvent =
 	Java.loadClass("net.minecraftforge.event.AnvilUpdateEvent")
 
-nativeEvent($AnvilUpdateEvent, (event) => {
+NativeEvent.of($AnvilUpdateEvent, (event) => {
 	let left = event.getLeft()
 	let right = event.getRight()
 

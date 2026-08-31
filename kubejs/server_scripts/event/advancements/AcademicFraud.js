@@ -1,7 +1,7 @@
 let $AdvancementEvent$AdvancementEarnEvent =
 	Java.loadClass("net.minecraftforge.event.entity.player.AdvancementEvent$AdvancementEarnEvent")
 
-nativeEvent($AdvancementEvent$AdvancementEarnEvent, (event) => {
+NativeEvent.of($AdvancementEvent$AdvancementEarnEvent, (event) => {
 	let player = event.getEntity()
 	let advancement = event.getAdvancement()
 

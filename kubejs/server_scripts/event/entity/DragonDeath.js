@@ -5,7 +5,7 @@ let $CmiTips =
 let $ServerPlayer =
 	Java.loadClass("net.minecraft.server.level.ServerPlayer")
 
-nativeEvent($EntityLeaveLevelEvent, (event) => {
+NativeEvent.of($EntityLeaveLevelEvent, (event) => {
 	let entity = event.getEntity()
 	let level = event.getLevel()
 	let players = level.getPlayers()
