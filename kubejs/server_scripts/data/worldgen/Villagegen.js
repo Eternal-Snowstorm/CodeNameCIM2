@@ -10,7 +10,11 @@ ServerEvents.highPriorityData((event) => {
 	let buildingTypes = [
 		"tinker",
 		"farm_1",
-		"farm_3"
+		"farm_2",
+		"farm_3",
+		"clinic",
+		"tower",
+		"mill"
 	]
 
 	let streetTypes = [
@@ -22,13 +26,13 @@ ServerEvents.highPriorityData((event) => {
 	villageBiomes.forEach((biome) => {
 		let templatePool = {
 			elements: [],
-			fallback: `minecraft:village/${biome}/terminators`
+			fallback: `cmi:village/${biome}/terminators`
 		}
 		buildingTypes.forEach((type) => {
 			templatePool.elements.push({
 				element: {
 					element_type: "minecraft:legacy_single_pool_element",
-					location: `cmi:village/${biome}/${type}`,
+					location: `cmi:village/${biome}/houses/${type}`,
 					processors: "minecraft:mossify_10_percent",
 					projection: "rigid"
 				},
@@ -46,7 +50,7 @@ ServerEvents.highPriorityData((event) => {
 
 		let streetPool = {
 			elements: [],
-			fallback: "minecraft:village/taiga/terminators"
+			fallback: `cmi:village/${biome}/terminators`
 		}
 		streetTypes.forEach((type) => {
 			for (let i = 1; i <= 3; i++) {
@@ -71,5 +75,43 @@ ServerEvents.highPriorityData((event) => {
 		})
 
 		event.addJson(`minecraft:worldgen/template_pool/village/${biome}/streets.json`, streetPool)
+
+		let terminatorPool = {
+			elements: [],
+			fallback: "minecraft:empty"
+		}
+
+		for (let i = 1; i <= 3; i++) {
+			terminatorPool.elements.push({
+				element: {
+					element_type: "minecraft:legacy_single_pool_element",
+					location: `cmi:village/${biome}/terminators/terminator_${i}`,
+					processors: "cmi:road",
+					projection: "terrain_matching"
+				},
+				weight: 1
+			})
+		}
+
+		event.addJson(`cmi:worldgen/template_pool/village/${biome}/terminators`, terminatorPool)
+
+		let towerPools = {
+			elements: [
+				{
+					element: {
+						element_type: "minecraft:single_pool_element",
+						location: `cmi:village/${biome}/houses/tower_top`,
+						processors: {
+							processors: []
+						},
+						projection: "rigid"
+					},
+					weight: 1
+				}
+			],
+			fallback: "minecraft:empty"
+		}
+
+		event.addJson(`cmi:worldgen/template_pool/village/${biome}/tower_top`, towerPools)
 	})
 })
