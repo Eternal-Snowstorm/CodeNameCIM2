@@ -9,7 +9,7 @@ JEIEvents.information((event) => {
 	}
 
 	addJEIInfo("minecraft:andesite")
-	addJEIInfo("neoecoae:cryotheum_solution_bucket")
+	addJEIInfo("ad_astra:cryo_fuel_bucket")
 	addJEIInfo("cmi:bucket")
 	addJEIInfo("#ad_astra:power_consumption_machines")
 	addJEIInfo("cmi:andesite_alloy_noodle")
@@ -19,4 +19,7 @@ JEIEvents.information((event) => {
 	addJEIInfo("thermal:rubber")
 	addJEIInfo("cmi:sludge_extract")
 	addJEIInfo("#easyrepair:repair_item_pouchs")
+	addJEIInfo("#forge:buckets/dye")
+	addJEIInfo("#railways:filled_paint_pitchers")
+
 })
