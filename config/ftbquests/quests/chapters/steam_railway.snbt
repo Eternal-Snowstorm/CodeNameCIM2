@@ -247,10 +247,15 @@
 				"在&c下界&r随机生成的&c钒矿矿点&r"
 				"{image:cmi:textures/images/ore_node/vanadium.png width:200 height:200 align:center}"
 				"{@pagebreak}"
-				"分布在&e主世界&r中的&6油页岩矿点&r"
+				"&e白桦树林&r中的&6油页岩矿点&r"
 				"{image:cmi:textures/images/ore_node/oil_shale.png width:200 height:200 align:center}"
 			]
 			id: "211642A0702308A1"
+			rewards: [{
+				id: "723FC72D7D13485C"
+				type: "xp"
+				xp: 1000
+			}]
 			size: 1.5d
 			subtitle: "列车是不得不品的一环"
 			tasks: [
@@ -755,7 +760,7 @@
 				""
 				"因此无需堆叠大量普通焦炉, 即可获得相当于8台普通焦炉的持续产能, 使工业产线更加紧凑与高效"
 				""
-				"一台高级焦炉至少需要一个输入总线和输出总线, 并且IO只能在接口的正面进行, 具体可以在JEI内查看结构规则"
+				"一台高级焦炉至少需要一个输入总线和输出总线, 并且IO只能在接口的正面进行, 具体可以在JEI内查看结构"
 				"{image:cmi:textures/images/cmi/reinforced_coke_oven.png width:113 height:117 align:center}"
 			]
 			icon: "cmi:reinforced_coke_oven"

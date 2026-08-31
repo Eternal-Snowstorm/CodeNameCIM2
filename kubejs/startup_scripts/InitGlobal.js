@@ -149,10 +149,6 @@ let metals = {
 		t: 1768,
 		n: "c"
 	},
-	quantum_alloy: {
-		t: 1024,
-		n: "c"
-	},
 	queens_slime: {
 		t: 1193,
 		n: "v"
@@ -171,10 +167,6 @@ let metals = {
 	},
 	refined_radiance: {
 		t: 2106,
-		n: "c"
-	},
-	sodium: {
-		t: 98,
 		n: "c"
 	},
 	scarlet_neodymium: {

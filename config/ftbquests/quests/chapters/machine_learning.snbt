@@ -18,34 +18,20 @@
 			id: "46858C4B5052EC0C"
 			size: 1.5d
 			subtitle: "锤子可以用铁, 燧石乃至钻石制作"
-			tasks: [
-				{
-					id: "45FADEFE78FB64F7"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:andesite"
-						}
+			tasks: [{
+				id: "45FADEFE78FB64F7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:andesite"
 					}
-					title: "安山岩"
-					type: "item"
 				}
-				{
-					id: "20636D3E179F766C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:hammers"
-						}
-					}
-					title: "锤子"
-					type: "item"
-				}
-			]
+				title: "安山岩"
+				type: "item"
+			}]
 			title: "安山岩"
-			x: -20.25d
+			x: -20.0d
 			y: 16.5d
 		}
 		{
@@ -541,6 +527,8 @@
 				"50B5CFD57763580A"
 				"2EE13016985061C5"
 			]
+			dependency_requirement: "one_completed"
+			description: ["制作熔融硫化橡胶浇筑到铸件台上"]
 			id: "43FFB9DB898EA83A"
 			subtitle: "气密性绝佳且不易磨损的材料"
 			tasks: [{
@@ -646,6 +634,7 @@
 			dependencies: ["26DFF62383774404"]
 			icon: "cmi:rubber_tree_bark"
 			id: "795C395B35395809"
+			optional: true
 			size: 1.0d
 			subtitle: "橡胶树上获取的边角料"
 			tasks: [{
@@ -675,6 +664,7 @@
 		{
 			dependencies: ["795C395B35395809"]
 			id: "2EE13016985061C5"
+			optional: true
 			tasks: [{
 				id: "4824EB82274F2DA8"
 				item: {
@@ -1074,6 +1064,61 @@
 			}]
 			x: -9.5d
 			y: 19.5d
+		}
+		{
+			dependencies: ["3CB9E200952C9D9F"]
+			id: "7B40AD53E7A35CC9"
+			rewards: [{
+				id: "58A26F99815597EE"
+				item: "create_enchantment_industry:mechanical_grindstone"
+				type: "item"
+			}]
+			subtitle: "小型粉碎轮说是"
+			tasks: [{
+				id: "7E896675208DA6E9"
+				item: "create_enchantment_industry:mechanical_grindstone"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 24.5d
+		}
+		{
+			dependencies: ["46858C4B5052EC0C"]
+			description: [
+				"安山岩洞窟是一种由大量安山岩构成的洞穴, 在那里可以大量获取安山岩, 获取的量足够支撑很久"
+				""
+				"你可以使用生物群系指南针辅助寻找, 这是一种专门用于定位生物群系的指南针"
+			]
+			icon: "minecraft:andesite"
+			id: "0427BA147EFE77D7"
+			rewards: [{
+				id: "02309DAFE27D30D0"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "pentagon"
+			subtitle: "那不妨试试这个"
+			tasks: [
+				{
+					biome: "cmi:andesite_cave"
+					icon: "minecraft:andesite"
+					id: "290D91E4A1407A21"
+					title: "&b访问生物群系: 安山岩洞窟"
+					type: "biome"
+				}
+				{
+					id: "7FC6F764905ACDA1"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "缺少安山岩?"
+			x: -20.0d
+			y: 18.5d
 		}
 	]
 	title: "巧械奇工"

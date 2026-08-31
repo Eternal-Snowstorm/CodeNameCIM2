@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
 		B: "#create:mechanisms/gold",
 		C: "#create:mechanisms/stone",
 		D: "#forge:gems/charged_amethyst",
-		E: "#create:mechanisms/iron"
+		E: Mechanisms.IRON.COM
 	}).id("cmi:accelerator")
 
 	// 水井
@@ -102,7 +102,7 @@ ServerEvents.recipes((event) => {
 		A: "#minecraft:leaves",
 		B: "minecraft:compass",
 		C: "#minecraft:saplings",
-		D: "cmi:nature_mechanism"
+		D: Mechanisms.WOODEN.COM
 	}).id("naturescompass:natures_compass")
 
 	// 结构指南针
@@ -114,7 +114,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:stone",
 		B: "minecraft:compass",
 		C: "minecraft:flint",
-		D: "cmi:stone_mechanism"
+		D: Mechanisms.STONE.COM
 	}).id("explorerscompass:explorers_compass")
 
 	// 泥炭块
