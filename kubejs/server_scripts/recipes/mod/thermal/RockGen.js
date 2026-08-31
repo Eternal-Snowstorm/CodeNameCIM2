@@ -12,6 +12,6 @@ ServerEvents.recipes((event) => {
 
     // 石灰岩
     thermal.rock_gen("create:limestone")
-        .adjacent("create:honey")
-
+        .adjacent("minecraft:water")
+		.below("minecraft:dripstone_block")
 })

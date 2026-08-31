@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 		"#forge:plates/lead",
 		"#forge:dusts/redstone",
 		"#forge:dusts/redstone",
-		"minecraft:repeater",
+		"minecraft:redstone_torch",
 		Mechanisms.PART.BASIC,
 		"#minecraft:axes",
 		"#forge:tools/wrench"

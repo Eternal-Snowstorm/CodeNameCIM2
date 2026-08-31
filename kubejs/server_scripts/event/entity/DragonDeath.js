@@ -35,7 +35,7 @@ nativeEvent($EntityLeaveLevelEvent, (event) => {
 		}
 
 		if (!stage.has(STAGE_NAME)) {
-			// stage.add(STAGE_NAME)
+			stage.add(STAGE_NAME)
 
 			level.playSound(
 				null,
