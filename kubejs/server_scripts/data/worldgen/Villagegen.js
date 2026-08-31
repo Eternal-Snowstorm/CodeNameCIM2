@@ -8,7 +8,15 @@ ServerEvents.highPriorityData((event) => {
 	]
 
 	let buildingTypes = [
-		"tinker"
+		"tinker",
+		"farm_1",
+		"farm_3"
+	]
+
+	let streetTypes = [
+		"straight",
+		"corner",
+		"crossroad"
 	]
 
 	villageBiomes.forEach((biome) => {
@@ -35,114 +43,33 @@ ServerEvents.highPriorityData((event) => {
 		})
 
 		event.addJson(`cmi:worldgen/template_pool/village/${biome}/houses.json`, templatePool)
-	})
 
-	let processorList = {
-		"processors": [
-			{
-				"processor_type": "minecraft:rule",
-				"rules": [
-					{
-						"input_predicate": {
-							"block": "minecraft:stone_bricks",
-							"predicate_type": "minecraft:block_match"
-						},
-						"location_predicate": {
-							"block": "minecraft:water",
-							"predicate_type": "minecraft:block_match"
-						},
-						"output_state": {
-							"Name": "minecraft:oak_planks"
-						}
+		let streetPool = {
+			elements: [],
+			fallback: "minecraft:village/taiga/terminators"
+		}
+		streetTypes.forEach((type) => {
+			for (let i = 1; i <= 3; i++) {
+				let weight = 6
+
+				if (type == "crossroad") {
+					weight = 2
+				}
+				if (type == "corner") {
+					weight = 3
+				}
+				streetPool.elements.push({
+					element: {
+						element_type: "minecraft:legacy_single_pool_element",
+						location: `cmi:village/${biome}/streets/${type}_${i}`,
+						processors: "cmi:road",
+						projection: "terrain_matching"
 					},
-					{
-						"input_predicate": {
-							"block": "minecraft:stone_bricks",
-							"predicate_type": "minecraft:random_block_match",
-							"probability": 0.2
-						},
-						"location_predicate": {
-							"predicate_type": "minecraft:always_true"
-						},
-						"output_state": {
-							"Name": "minecraft:cracked_stone_bricks"
-						}
-					},
-					{
-						"input_predicate": {
-							"block": "minecraft:stone_bricks",
-							"predicate_type": "minecraft:random_block_match",
-							"probability": 0.2
-						},
-						"location_predicate": {
-							"predicate_type": "minecraft:always_true"
-						},
-						"output_state": {
-							"Name": "minecraft:cobblestone"
-						}
-					},
-					{
-						"input_predicate": {
-							"block": "minecraft:stone_bricks",
-							"predicate_type": "minecraft:random_block_match",
-							"probability": 0.2
-						},
-						"location_predicate": {
-							"predicate_type": "minecraft:always_true"
-						},
-						"output_state": {
-							"Name": "minecraft:mossy_stone_bricks"
-						}
-					},
-					{
-						"input_predicate": {
-							"block": "minecraft:stone_bricks",
-							"predicate_type": "minecraft:random_block_match",
-							"probability": 0.2
-						},
-						"location_predicate": {
-							"predicate_type": "minecraft:always_true"
-						},
-						"output_state": {
-							"Name": "minecraft:gravel"
-						}
-					},
-					{
-						"input_predicate": {
-							"block": "minecraft:grass_block",
-							"predicate_type": "minecraft:block_match"
-						},
-						"location_predicate": {
-							"block": "minecraft:water",
-							"predicate_type": "minecraft:block_match"
-						},
-						"output_state": {
-							"Name": "minecraft:water",
-							"Properties": {
-								"level": "0"
-							}
-						}
-					},
-					{
-						"input_predicate": {
-							"block": "minecraft:dirt",
-							"predicate_type": "minecraft:block_match"
-						},
-						"location_predicate": {
-							"block": "minecraft:water",
-							"predicate_type": "minecraft:block_match"
-						},
-						"output_state": {
-							"Name": "minecraft:water",
-							"Properties": {
-								"level": "0"
-							}
-						}
-					}
-				]
+					"weight": weight
+				})
 			}
-		]
-	}
+		})
 
-	event.addJson("cmi:worldgen/processor_list/road.json", processorList)
+		event.addJson(`minecraft:worldgen/template_pool/village/${biome}/streets.json`, streetPool)
+	})
 })
