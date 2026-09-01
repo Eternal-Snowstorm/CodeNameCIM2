@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
 	]).id("ae2:network/cells/item_storage_components_cell_64k_part")
 
 	thermal_extra.component_assembly("ae2:cell_component_256k", [
-		"advanced_ae:quantum_processor",
+		"neoecoae:superconducting_processor",
 		"#forge:gems/certus_quartz",
 		"cmi:combined_component_256k",
 		Fluid.of("immersiveengineering:redstone_acid", 100)
@@ -599,7 +599,7 @@ ServerEvents.recipes((event) => {
 
 	// 128^3空间组件
 	thermal_extra.component_assembly("ae2:spatial_cell_component_128", [
-		"advanced_ae:quantum_processor",
+		"neoecoae:superconducting_processor",
 		"#forge:plates/platinum",
 		"cmi:combined_spatial_component_128",
 		"#forge:gems/fluix"

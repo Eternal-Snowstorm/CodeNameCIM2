@@ -1,0 +1,10 @@
+{
+	"type": "tconstruct:material_fluid",
+	"fluid": {
+		"amount": 90,
+		"tag": "tconstruct:molten_amethyst"
+	},
+	"input": "tconstruct:wool",
+	"output": "tconstruct:amethyst",
+	"temperature": 605
+}

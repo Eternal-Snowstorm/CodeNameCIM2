@@ -53,13 +53,14 @@ ServerEvents.recipes((event) => {
 	}, (recipes) => {
 		let outputItem = recipes.getOriginalRecipeResult().getId()
 		let inputItem = recipes.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		let id = recipes.getId()
 
 		create.cutting([
 			Item.of(outputItem, 1),
 			"farmersdelight:tree_bark"
 		], [
 			inputItem
-		])
+		]).id(id)
 	})
 
 	// 树苗

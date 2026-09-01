@@ -207,7 +207,7 @@ let Material = Object.freeze({
 			LOGIC: Item.of("cmi:incomplete_logic_processor"),
 			CALCULATION: Item.of("cmi:incomplete_calculation_processor"),
 			ENGINEERING: Item.of("cmi:incomplete_engineering_processor"),
-			QUANTUM: Item.of("cmi:incomplete_quantum_processor")
+			SUPERCONDUCTING: Item.of("cmi:incomplete_quantum_processor")
 		})
 	})
 })
@@ -218,7 +218,7 @@ let Print = Object.freeze({
 	CALCULATION: "ae2:printed_calculation_processor",
 	ENGINEERING: "ae2:printed_engineering_processor",
 	CONCURRENT: "cmi:printed_concurrent_processor",
-	QUANTUM: "advanced_ae:printed_quantum_processor"
+	SUPERCONDUCTING: "neoecoae:superconducting_processor_print"
 })
 
 let Processor = Object.freeze({
@@ -227,7 +227,7 @@ let Processor = Object.freeze({
 	CALCULATION: "ae2:calculation_processor",
 	ENGINEERING: "ae2:engineering_processor",
 	CONCURRENT: "cmi:concurrent_processor",
-	QUANTUM: "advanced_ae:quantum_processor"
+	SUPERCONDUCTING: "neoecoae:superconducting_processor"
 })
 
 // 机壳系列

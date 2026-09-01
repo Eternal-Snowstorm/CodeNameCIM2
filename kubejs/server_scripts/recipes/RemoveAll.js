@@ -199,7 +199,8 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:squeezer/wheat_seeds",
 		"createdieselgenerators:crafting/engine_piston",
 		"naturescompass:repair_natures_compass",
-		"create:milling/saddle"
+		"create:milling/saddle",
+		"neoecoae:superconducting_processor_press"
 	])
 
 	let removedMods = [

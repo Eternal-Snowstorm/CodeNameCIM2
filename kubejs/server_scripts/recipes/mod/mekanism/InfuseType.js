@@ -19,12 +19,6 @@ ServerEvents.recipes((event) => {
 		"cmi:infuse_osmium"
 	)
 
-	// 灌注量子
-	mekanism.infusion_conversion(
-		"advanced_ae:quantum_infused_dust",
-		"cmi:infuse_quantum"
-	)
-
 	// 混沌虚空
 	mekanism.infusion_conversion(
 		"cmi:chaotic_void_dust",

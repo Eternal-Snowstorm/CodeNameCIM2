@@ -50,13 +50,6 @@ ServerEvents.recipes((event) => {
 		"mekanism:carbon"
 	)
 
-	// 破碎奇点
-	mekanism.metallurgic_infusing(
-		"advanced_ae:shattered_singularity",
-		"ae2:singularity",
-		"cmi:chaotic_void"
-	).id("advanced_ae:shatteredsingularity")
-
 	// 压电陶瓷
 	mekanism.metallurgic_infusing(
 		"cmi:piezoelectric_ceramic",

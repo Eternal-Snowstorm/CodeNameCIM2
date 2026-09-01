@@ -80,6 +80,16 @@ ServerEvents.tags("item", (event) => {
 	event.get("c:iron_ingots")
 		.add("#forge:ingots/iron")
 
+	// 抽屉
+	event.get("functionalstorage:drawers/rubberwood_1")
+		.add("functional_storage_js:rubberwood_1")
+
+	event.get("functionalstorage:drawers/rubberwood_2")
+		.add("functional_storage_js:rubberwood_2")
+
+	event.get("functionalstorage:drawers/rubberwood_4")
+		.add("functional_storage_js:rubberwood_4")
+
 	// 伪装方块
 	event.get("create:copycats")
 		.add([
@@ -241,12 +251,12 @@ ServerEvents.tags("item", (event) => {
 		"cmi:rubberwood"
 	]
 	drawerMaterialWoods.forEach((woodName) => {
-		let woodId = 
+		let woodId =
 			woodName.includes(":") ? woodName : `functionalstorage:${woodName}`
 
 		let woodType = woodName.split(":").pop()
 
-		let drawerType = [ 1, 2, 4 ]
+		let drawerType = [1, 2, 4]
 
 		drawerType.forEach((type) => {
 			let drawerId = `${woodId}_${type}`
@@ -453,7 +463,6 @@ ServerEvents.tags("item", (event) => {
 	// 压印模板
 	event.get("ae2:inscriber_presses")
 		.add("cmi:concurrent_processor_press")
-		.add("advanced_ae:quantum_processor_press")
 		.add("ae2:name_press")
 
 	// 冲压头
@@ -462,7 +471,7 @@ ServerEvents.tags("item", (event) => {
 		.add("ae2:engineering_processor_press")
 		.add("ae2:logic_processor_press")
 		.add("cmi:concurrent_processor_press")
-		.add("advanced_ae:quantum_processor_press")
+		.add("neoecoae:superconducting_processor_press")
 
 	// 铸模
 	event.get("thermal:crafting/casts")
@@ -730,9 +739,6 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:ingots/andesite")
 		.add("create:andesite_alloy")
 
-	event.get("forge:ingots/quantum_alloy")
-		.add("advanced_ae:quantum_alloy")
-
 	event.get("forge:ingots/astrallium")
 		.add("edenring:astrallium")
 
@@ -777,9 +783,6 @@ ServerEvents.tags("item", (event) => {
 		.add("createdeco:andesite_sheet")
 		.add("createdeco:industrial_iron_sheet")
 		.add("mekanism:hdpe_sheet")
-
-	event.get("forge:plates/quantum_alloy")
-		.add("advanced_ae:quantum_alloy_plate")
 
 	event.get("forge:plates/andesite_alloy")
 		.add("vintageimprovements:andesite_sheet")

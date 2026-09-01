@@ -414,12 +414,12 @@ ServerEvents.recipes((event) => {
 	new SequencedAssemblyRecipe(Mechanisms.ADVANCED)
 		.input(Mechanisms.ADVANCED.BAS)
 		.deploying("cmi:composite_tungsten_steel_plate")
-		.filling(Fluid.of("advanced_ae:quantum_infusion_source", 100))
+		.filling(Fluid.of("tconstruct:molten_refined_glowstone", 100))
 		.deploying("cmi:advanced_electronic_components")
 		.laserCutting(1000)
 		.deploying("cmi:mekanism_mechanism_part")
 		.build()
-	
+
 	// 精英通用
 	new SequencedAssemblyRecipe(Mechanisms.ELITE)
 		.input(Mechanisms.ELITE.BAS)
@@ -429,7 +429,7 @@ ServerEvents.recipes((event) => {
 		.laserCutting(1000)
 		.deploying("cmi:mekanism_mechanism_part")
 		.build()
-	
+
 	// 终极通用
 	new SequencedAssemblyRecipe(Mechanisms.ULTIMATE)
 		.input(Mechanisms.ULTIMATE.BAS)
@@ -439,5 +439,5 @@ ServerEvents.recipes((event) => {
 		.laserCutting(1000)
 		.deploying("cmi:mekanism_mechanism_part")
 		.build()
-		
+
 })
