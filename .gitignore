@@ -83,6 +83,7 @@ CMI Dev.json
 !/mods/Storage Tweaks*.jar
 !/mods/Composting*.jar
 !/mods/interlocked*.jar
+!/mods/FunctionalStorageJS*.jar
 
 # ResourcePacks
 /resourcepacks/*
