@@ -326,6 +326,12 @@ ServerEvents.tags("block", (event) => {
 	// 移除
 	removeTagAllId("treetap:tappable")
 
+	event.get("treetap:tappable")
+		.add([
+			"thermal:stripped_rubberwood_log",
+			"thermal:stripped_rubberwood_wood"
+		])
+
 	// 风帆
 	event.get("create:windmill_sails")
 		.remove("create:sail_frame")
