@@ -1,6 +1,4 @@
 ServerEvents.recipes((event) => {
-	// region define ModifierRecipe
-
 	/**
 	 * TConstruct Modifier 配方构造器
 	 * 
@@ -53,11 +51,11 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 设置工具标签
 	 *
-	 * @param {Internal.Ingredient_} tag
+	 * @param {Internal.Ingredient_} ingredient
 	 * @returns {ModifierRecipeBuilder}
 	 */
-	ModifierRecipeBuilder.prototype.tools = function (tag) {
-		this.recipe.tools = Ingredient.of(tag).toJson()
+	ModifierRecipeBuilder.prototype.tools = function (ingredient) {
+		this.recipe.tools = Ingredient.of(ingredient).toJson()
 		return this
 	}
 
@@ -119,9 +117,7 @@ ServerEvents.recipes((event) => {
 		return event.custom(this.recipe)
 			.id(id)
 	}
-	// endregion
 
-	// region add Recipes
 	// 死穴
 	new ModifierRecipeBuilder("nebula_tinker:acupoint")
 		.allowCrystal(true)
@@ -314,5 +310,15 @@ ServerEvents.recipes((event) => {
 		])
 		.build(useEmiId("jei:/tinkersmossymodifier/tools/modifiers/upgrade/auto_repair"))
 
-	// endregion
+	// 长臂猿
+	new ModifierRecipeBuilder("cmi:extendo")
+		.allowCrystal(true)
+		.tools("tconstruct:plate_chestplate")
+		.slots("upgrades", 2)
+		.level(1)
+		.inputs([
+			"create:deployer",
+			"create:deployer"
+		])
+		.build()
 })

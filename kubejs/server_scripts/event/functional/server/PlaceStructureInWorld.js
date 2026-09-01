@@ -24,7 +24,7 @@ ServerEvents.loaded((event) => {
 
 	/**
 	 * 获取结构的底部 Y 坐标
-	 * @param {$StructureTemplate} template 
+	 * @param {Internal.StructureTemplate_} template 
 	 */
 	function getStructureBaseY(template) {
 		let box = template.getBoundingBox()
