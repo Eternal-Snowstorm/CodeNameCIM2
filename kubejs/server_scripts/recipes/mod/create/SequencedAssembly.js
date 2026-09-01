@@ -184,7 +184,7 @@ ServerEvents.recipes((event) => {
 		CALCULATION: seqItems("ae2:calculation_processor", "#forge:gems/certus_quartz", "cmi:incomplete_calculation_processor"),
 		ENGINEERING: seqItems("ae2:engineering_processor", "#forge:ingots/etrium", "cmi:incomplete_engineering_processor"),
 		CONCURRENT: seqItems("cmi:concurrent_processor", "#forge:gems/entro", "cmi:incomplete_concurrent_processor"),
-		QUANTUM: seqItems("advanced_ae:quantum_processor", "advanced_ae:quantum_alloy", "cmi:incomplete_quantum_processor")
+		SUPERCONDUCTING: seqItems("neoecoae:superconducting_processor", "neoecoae:energized_superconductive_ingot", "cmi:incomplete_superconducting_processor")
 	}
 
 	// 飞轮
@@ -303,8 +303,8 @@ ServerEvents.recipes((event) => {
 		.build()
 
 	// 量子处理器
-	new SequencedAssemblyRecipe(Seq.QUANTUM)
-		.curving("advanced_ae:quantum_processor_press")
+	new SequencedAssemblyRecipe(Seq.SUPERCONDUCTING)
+		.curving("neoecoae:superconducting_processor_press")
 		.deploying("cmi:enriched_silicon")
 		.deploying("ae2:printed_silicon")
 		.deploying("cmi:redstone_wire")

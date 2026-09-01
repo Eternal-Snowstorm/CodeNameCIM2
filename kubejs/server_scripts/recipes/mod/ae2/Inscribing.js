@@ -78,11 +78,11 @@ ServerEvents.recipes((event) => {
 		.middle("#forge:plates/iron")
 		.inscribe()
 
-	new InscriberRecipe("advanced_ae:quantum_processor_press")
-		.top("advanced_ae:quantum_processor_press")
+	new InscriberRecipe("neoecoae:superconducting_processor_press")
+		.top("neoecoae:superconducting_processor_press")
 		.middle("#forge:plates/iron")
 		.inscribe()
-		.id("advanced_ae:quantum_processor_press_from_iron")
+		.id("neoecoae:inscriber/superconducting_processor_press")
 
 	// 碳化硅板
 	new InscriberRecipe("cmi:silicon_carbide_plate")
@@ -169,12 +169,12 @@ ServerEvents.recipes((event) => {
 		.press()
 
 	// 量子处理器
-	new InscriberRecipe(Processor.QUANTUM)
+	new InscriberRecipe(Processor.SUPERCONDUCTING)
 		.bottom("cmi:enriched_silicon")
-		.middle(Print.QUANTUM)
+		.middle(Print.SUPERCONDUCTING)
 		.top("cmi:inscribed_silicon")
 		.press()
-		.id("advanced_ae:quantum_processor")
+		.id("neoecoae:inscriber/superconducting_processor")
 
 	// 基础电子元件
 	new InscriberRecipe("cmi:basic_electronic_components")
@@ -210,7 +210,7 @@ ServerEvents.recipes((event) => {
 		.middle("cmi:osmium_wafer")
 		.bottom("#forge:alloys/enriched")
 		.press()
-	
+
 	// 高级控制电路
 	new InscriberRecipe("mekanism:advanced_control_circuit")
 		.top("cmi:inscribed_silicon")
@@ -224,12 +224,12 @@ ServerEvents.recipes((event) => {
 		.middle("cmi:germanium_wafer")
 		.bottom("mekanism:alloy_reinforced")
 		.press()
-	
+
 	// 终极控制电路
 	new InscriberRecipe("mekanism:ultimate_control_circuit")
-		.top("advanced_ae:quantum_processor")
+		.top("neoecoae:superconducting_processor")
 		.middle("cmi:entro_alloy_wafer")
 		.bottom("mekanism:alloy_atomic")
 		.press()
-	
+
 })

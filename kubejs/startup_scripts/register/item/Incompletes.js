@@ -86,8 +86,8 @@ StartupEvents.registry("item", (event) => {
 	addItem("concurrent_processor")
 		.texture("expatternprovider:item/concurrent_processor_print")
 
-	addItem("quantum_processor")
-		.texture("advanced_ae:item/printed_quantum_processor")
+	addItem("superconducting_processor")
+		.texture("neoecoae:item/superconducting_processor_print")
 
 	// 火箭框架(半成品)
 	for (let i = 1; i <= 4; i++) {

@@ -315,4 +315,45 @@ ServerEvents.recipes((event) => {
 		.build(useEmiId("jei:/tinkersmossymodifier/tools/modifiers/upgrade/auto_repair"))
 
 	// endregion
+
+	event.custom({
+		"type": "tconstruct:incremental_modifier",
+		"allow_crystal": false,
+		"amount_per_item": 1,
+		"input": {
+			"item": "create:experience_nugget"
+		},
+		"level": {
+			"max": 5
+		},
+		"needed_per_level": 72,
+		"result": "tconstruct:swiftstrike",
+		"slots": {
+			"upgrades": 1
+		},
+		"tools": {
+			"tag": "tconstruct:modifiable/melee/weapon"
+		}
+	}).id("tconstruct:tools/modifiers/upgrade/swiftstrike_from_shard")
+
+	event.custom({
+		"type": "tconstruct:incremental_modifier",
+		"allow_crystal": false,
+		"amount_per_item": 9,
+		"input": {
+			"item": "create:experience_block"
+		},
+		"leftover": "create:experience_nugget",
+		"level": {
+			"max": 5
+		},
+		"needed_per_level": 72,
+		"result": "tconstruct:swiftstrike",
+		"slots": {
+			"upgrades": 1
+		},
+		"tools": {
+			"tag": "tconstruct:modifiable/melee/weapon"
+		}
+	}).id("tconstruct:tools/modifiers/upgrade/swiftstrike_from_block")
 })

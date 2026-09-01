@@ -10,9 +10,4 @@ ServerEvents.recipes((event) => {
 	thermal.pyrolyzer(Fluid.of("cmi:radiation_resistant_creosote", 250), [
 		"cmi:dense_oxide_film"
 	])
-
-	// 量子灌注液
-	thermal.pyrolyzer(Fluid.of("advanced_ae:quantum_infusion_source", 1000), [
-		"advanced_ae:quantum_infused_dust"
-	])
 })

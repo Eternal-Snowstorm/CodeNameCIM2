@@ -15,7 +15,6 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:charged_amethyst")
 	addCommonTooltip("cmi:potion_mechanism")
 	addCommonTooltip("cmi:smart_mechanism")
-	addCommonTooltip("#minecraft:pickaxes")
 	addCommonTooltip("cmi:super_knife")
 	addCommonTooltip("cmi:stone_plate")
 	addCommonTooltip("cmi:creosote_wood_chip_briquette")
