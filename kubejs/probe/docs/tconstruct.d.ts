@@ -1,0 +1,1 @@
+type ModifierSlotType = "upgrades" | "defense" | "abilities" | "souls"
