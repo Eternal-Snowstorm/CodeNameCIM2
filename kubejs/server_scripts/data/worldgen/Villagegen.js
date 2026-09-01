@@ -9,18 +9,24 @@ ServerEvents.highPriorityData((event) => {
 
 	let buildingTypes = [
 		"tinker",
+		"clinic",
+		"mill",
 		"farm_1",
 		"farm_2",
 		"farm_3",
-		"clinic",
-		"tower",
-		"mill"
+		"farm_4",
+		"farm_5",
+		"farm_6"
 	]
 
 	let streetTypes = [
 		"straight",
 		"corner",
 		"crossroad"
+	]
+
+	let centerTypes = [
+		"tower"
 	]
 
 	villageBiomes.forEach((biome) => {
@@ -36,9 +42,20 @@ ServerEvents.highPriorityData((event) => {
 					processors: "minecraft:mossify_10_percent",
 					projection: "rigid"
 				},
-				weight: 2
+				weight: 4
 			})
 		})
+		for (let i = 1; i <= 6; i++) {
+			templatePool.elements.push({
+				"element": {
+					element_type: "minecraft:legacy_single_pool_element",
+					location: `cmi:village/${biome}/farms/${i}`,
+					processors: "minecraft:farm_plains",
+					projection: "rigid"
+				},
+				"weight": 4
+			})
+		}
 		templatePool.elements.push({
 			"element": {
 				"element_type": "minecraft:empty_pool_element"
@@ -94,24 +111,5 @@ ServerEvents.highPriorityData((event) => {
 		}
 
 		event.addJson(`cmi:worldgen/template_pool/village/${biome}/terminators`, terminatorPool)
-
-		let towerPools = {
-			elements: [
-				{
-					element: {
-						element_type: "minecraft:single_pool_element",
-						location: `cmi:village/${biome}/houses/tower_top`,
-						processors: {
-							processors: []
-						},
-						projection: "rigid"
-					},
-					weight: 1
-				}
-			],
-			fallback: "minecraft:empty"
-		}
-
-		event.addJson(`cmi:worldgen/template_pool/village/${biome}/tower_top`, towerPools)
 	})
 })
