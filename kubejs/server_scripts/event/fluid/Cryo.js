@@ -11,7 +11,7 @@ let $Vec3 =
 let $Mth =
 	Java.loadClass("net.minecraft.util.Mth")
 
-nativeEvent($LivingEvent$LivingTickEvent, (event) => {
+NativeEvent.of($LivingEvent$LivingTickEvent, (event) => {
 	let entity = event.getEntity()
 	if (entity == null || !entity.isAlive()) {
 		return
@@ -63,7 +63,7 @@ nativeEvent($LivingEvent$LivingTickEvent, (event) => {
 	}
 })
 
-nativeEvent($BlockEvent$NeighborNotifyEvent, (event) => {
+NativeEvent.of($BlockEvent$NeighborNotifyEvent, (event) => {
 	let level = event.getLevel()
 	if (level == null || level.isClientSide()) {
 		return

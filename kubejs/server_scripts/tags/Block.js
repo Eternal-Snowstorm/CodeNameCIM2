@@ -292,6 +292,8 @@ ServerEvents.tags("block", (event) => {
 			"tconstruct:scorched_fuel_tank",
 			"tconstruct:scorched_fuel_gauge",
 			"tconstruct:scorched_ingot_tank",
+			"tconstruct:seared_table",
+			"tconstruct:scorched_table",
 			"tconstruct:seared_basin",
 			"tconstruct:scorched_basin",
 			"tconstruct:seared_casting_tank",
