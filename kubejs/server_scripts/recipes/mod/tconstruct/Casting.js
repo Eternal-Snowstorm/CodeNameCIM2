@@ -22,6 +22,20 @@ ServerEvents.recipes((event) => {
 			.time(100)
 	})
 
+	// 坚固板
+	tconstruct.casting_table("create:sturdy_sheet")
+		.fluid(Fluid.of("tconstruct:molten_obsidian", 90))
+		.cast("#tconstruct:casts/multi_use/plate")
+		.cooling_time(20 * 3)
+		.cast_consumed(false)
+
+	// 坚固板
+	tconstruct.casting_table("create:sturdy_sheet")
+		.fluid(Fluid.of("tconstruct:molten_obsidian", 90))
+		.cast("#tconstruct:casts/single_use/plate")
+		.cooling_time(20 * 3)
+		.cast_consumed(true)
+
 	// 丝绢
 	tconstruct.casting_table("tconstruct:silky_cloth")
 		.fluid(Fluid.of("tconstruct:molten_rose_gold", 90))
@@ -197,7 +211,7 @@ ServerEvents.recipes((event) => {
 	tconstruct.casting_table("createdieselgenerators:mold")
 		.fluid(Fluid.of("cmi:molten_industrial_iron", 90 * 2))
 		.cooling_time(20 * 3)
-	
+
 	// 玻璃杆
 	tconstruct.casting_table("cmi:glass_rod")
 		.fluid(Fluid.of("tconstruct:molten_glass", 100))
