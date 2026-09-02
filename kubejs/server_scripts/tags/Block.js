@@ -65,6 +65,10 @@ ServerEvents.tags("block", (event) => {
 		.add("mynethersdelight:resurgent_soil")
 		.add("mynethersdelight:resurgent_soil_farmland")
 
+	// 泥土
+	event.get("minecraft:dirt")
+		.remove("mynethersdelight:resurgent_soil_farmland")
+
 	// 热力机器
 	event.get("thermal:machines")
 		.add("thermal_extra:endothermic_dehydrator")
