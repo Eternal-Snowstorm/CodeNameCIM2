@@ -24,11 +24,11 @@ ServerEvents.recipes((event) => {
 	]
 
 	types.forEach((type) => {
-		CmiMetalRegistry.getAll().forEach((material) => {
+		CmiMetal.getAll().forEach((material) => {
 			let metal = material.getId()
 			let metalId = metal.toString()
 			let ingotId = Ingredient.of(`#forge:ingots/${metal}`).getItemIds()
-			let meltingPoint = CmiMetalRegistry.getMetal(metal).getMeltingPoint()
+			let meltingPoint = CmiMetal.getMetal(metal).getMeltingPoint()
 			let directSmeltingDisabled = directSmeltingDisabledMetals.includes(metalId)
 				&& directSmeltingDisabledTypes.includes(type)
 

@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { thermal, tconstruct } = event.getRecipes()
 
-	CmiMetalRegistry.getAll().forEach((material) => {
+	CmiMetal.getAll().forEach((material) => {
 		let metal = material.getId()
 
 		/*

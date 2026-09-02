@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
 	tconstruct.melting(Fluid.of("cmi:molten_andesite_alloy", 30))
 		.ingredient("createdeco:andesite_bars")
 		.time(2 * 20)
-		.temperature(CmiMetalRegistry.get("andesite_alloy").getMeltingPoint())
+		.temperature(CmiMetal.get("andesite_alloy").getMeltingPoint())
 
 	let barTypes = [
 		"brass",
@@ -119,6 +119,6 @@ ServerEvents.recipes((event) => {
 		tconstruct.melting(Fluid.tag("tag", `tconstruct:molten_${type}`, 30))
 			.ingredient(`createdeco:${type}_bars`)
 			.time(40)
-			.temperature(CmiMetalRegistry.get(type).getMeltingPoint())
+			.temperature(CmiMetal.get(type).getMeltingPoint())
 	})
 })

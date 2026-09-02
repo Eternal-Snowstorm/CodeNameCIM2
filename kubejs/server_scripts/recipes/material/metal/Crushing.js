@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { create } = event.getRecipes()
 
-	CmiMetalRegistry.getAll().forEach((material) => {
+	CmiMetal.getAll().forEach((material) => {
 		let metal = material.getId()
 		const RAW_ORE = `#forge:raw_materials/${metal}`
 		const RAW_BLOCK = `#forge:storage_blocks/raw_${metal}`

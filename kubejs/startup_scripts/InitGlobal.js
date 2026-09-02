@@ -248,7 +248,7 @@ let metals = {
 }
 
 Object.entries(metals).forEach(([id, metal]) => {
-	let entry = CmiMetalRegistry.getMetal(id)
+	let entry = CmiMetal.getMetal(id)
 
 	if (metal.t) {
 		entry.setMeltingPoint(metal.t)

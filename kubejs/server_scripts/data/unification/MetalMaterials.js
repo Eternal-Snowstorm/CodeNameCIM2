@@ -9,7 +9,7 @@ ServerEvents.afterRecipes((event) => {
 		"rod",
 		"wire"
 	]
-	CmiMetalRegistry.getAll().forEach((metal) => {
+	CmiMetal.getAll().forEach((metal) => {
 		let material = String(metal.getId())
 		let ingotTag = `#forge:ingots/${material}`
 		let ingotResult = getHighPriorityItem(ingotTag)

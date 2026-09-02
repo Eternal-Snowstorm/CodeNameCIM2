@@ -120,7 +120,7 @@ function highPriorityItem(ingredient, count) {
  * @returns
  */
 function resolveMoltenFluid(metal) {
-	let namespace = CmiMetalRegistry.getMetal(metal).getNamespace()
+	let namespace = CmiMetal.getMetal(metal).getNamespace()
 
 	// 按命名空间标记优先, 其余作为兜底
 	let candidates = []

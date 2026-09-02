@@ -34,7 +34,7 @@ JEIEvents.hideItems((event) => {
 	]
 	let metals = []
 
-	CmiMetalRegistry.getAll().forEach((metal) => {
+	CmiMetal.getAll().forEach((metal) => {
 		metals.push(metal)
 	})
 	let registeredItems = collectRegisteredMetalItems()

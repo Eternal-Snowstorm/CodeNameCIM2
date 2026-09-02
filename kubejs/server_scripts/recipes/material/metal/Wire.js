@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { createaddition, thermal, immersiveengineering, createdieselgenerators } = event.getRecipes()
 
-	CmiMetalRegistry.getAll().forEach((material) => {
+	CmiMetal.getAll().forEach((material) => {
 		let metal = material.getId()
 		const INGOT = `#forge:ingots/${metal}`
 		const WIRE = `#forge:wires/${metal}`

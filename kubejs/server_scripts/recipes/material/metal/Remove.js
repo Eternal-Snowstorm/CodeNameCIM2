@@ -101,7 +101,7 @@ ServerEvents.recipes((event) => {
 			type: "minecraft:smelting"
 		}
 	])
-	CmiMetalRegistry.getAll().forEach((material) => {
+	CmiMetal.getAll().forEach((material) => {
 		let metal = material.getId()
 		event.remove([
 			{

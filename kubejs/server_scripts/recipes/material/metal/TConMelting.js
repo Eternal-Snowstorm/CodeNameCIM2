@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { tconstruct } = event.getRecipes()
 
-	CmiMetalRegistry.getAll().forEach((material) => {
+	CmiMetal.getAll().forEach((material) => {
 		let metal = material.getId()
 
 		event.remove([
@@ -19,8 +19,8 @@ ServerEvents.recipes((event) => {
 			}
 		])
 
-		let meltingPoint = CmiMetalRegistry.getMetal(metal).getMeltingPoint()
-		let namespace = CmiMetalRegistry.getMetal(metal).getNamespace()
+		let meltingPoint = CmiMetal.getMetal(metal).getMeltingPoint()
+		let namespace = CmiMetal.getMetal(metal).getNamespace()
 
 		/*
 		 * 把熔融流体 tag 解析成具体流体 id(多 namespace: tconstruct / thermalconstruct / forge / cmi,

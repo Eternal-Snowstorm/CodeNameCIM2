@@ -14,7 +14,7 @@ TConJSEvents.materialDefinition((event) => {
 	 * @returns 
 	 */
 	function getMeltingPoint(name) {
-		return CmiMetalRegistry.get(name).getMeltingPoint()
+		return CmiMetal.getMetal(name).getMeltingPoint()
 	}
 
 	/**
