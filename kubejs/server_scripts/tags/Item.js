@@ -975,5 +975,4 @@ ServerEvents.tags("item", (event) => {
 		return event.get(tag)
 			.removeAll()
 	}
-
 })

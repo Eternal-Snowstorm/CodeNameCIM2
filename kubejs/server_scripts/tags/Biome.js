@@ -12,9 +12,13 @@ ServerEvents.tags("worldgen/biome", (event) => {
 			"minecraft:warped_forest"
 		])
 
+	/**
+	 * 
+	 * @param {Special.BiomeTag} tag 
+	 * @returns 
+	 */
 	function removeTagAllId(tag) {
 		return event.get(tag)
 			.removeAll()
 	}
-
 })

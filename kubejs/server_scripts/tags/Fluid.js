@@ -155,7 +155,7 @@ ServerEvents.tags("fluid", (event) => {
 		event.get(`forge:cements/${color}`)
 			.add(`createdieselgenerators:${color}_cement`)
 			.add(`createdieselgenerators:flowing_${color}_cement`)
-			
+
 		event.get("forge:cements")
 			.add(`createdieselgenerators:${color}_cement`)
 			.add(`createdieselgenerators:flowing_${color}_cement`)
@@ -166,9 +166,13 @@ ServerEvents.tags("fluid", (event) => {
 		.add("minecraft:water")
 		.add("minecraft:flowing_water")
 
+	/**
+	 * 
+	 * @param {Special.FluidTag} tag 
+	 * @returns 
+	 */
 	function removeTagAllId(tag) {
 		return event.get(tag)
 			.removeAll()
 	}
-
 })

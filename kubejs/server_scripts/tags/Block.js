@@ -1,6 +1,5 @@
 // priority: 11
 ServerEvents.tags("block", (event) => {
-
 	// 烟熏源
 	event.get("cmi:smoke_source")
 		.add("#forge:storage_blocks/coal_coke")
@@ -351,5 +350,4 @@ ServerEvents.tags("block", (event) => {
 		return event.get(tag)
 			.removeAll()
 	}
-
 })
