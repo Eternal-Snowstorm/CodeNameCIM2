@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
 		"thermal:slag"
 	], [
 		"#forge:dusts/quartz",
-		"cmi:furnaced_lime"
+		"cmi:lime_dust"
 	]).heated()
 
 	vintageimprovements.pressurizing([
@@ -31,7 +31,7 @@ ServerEvents.recipes((event) => {
 		"thermal:slag"
 	], [
 		Fluid.of("cmi:pure_sand", 100),
-		"cmi:furnaced_lime"
+		"cmi:lime_dust"
 	]).heated()
 
 	// 玻璃

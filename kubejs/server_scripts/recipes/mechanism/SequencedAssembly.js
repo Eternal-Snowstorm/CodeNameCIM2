@@ -350,6 +350,16 @@ ServerEvents.recipes((event) => {
 		.deploying(Mechanisms.PART.ENGIN)
 		.build()
 
+	// 末影
+	new SequencedAssemblyRecipe(Mechanisms.ENDER)
+		.input("cmi:ender_mechanism_basement")
+		.deploying("minecraft:ender_pearl")
+		.filling(Fluid.of("thermal:ender", 250))
+		.deploying("#forge:gears/sapphire")
+		.laserCutting(1000)
+		.deploying(Mechanisms.PART.MAGIC)
+		.build()
+
 	// 智能
 	new SequencedAssemblyRecipe(Mechanisms.SMART)
 		.input("#forge:plates/silver")

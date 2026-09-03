@@ -39,6 +39,13 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:electron_tube"
 	])
 
+	// 末影构件
+	thermal_extra.component_assembly(`4x ${Mechanisms.ENDER.BAS.getId()}`, [
+		"#forge:plates/enderium",
+		"#forge:dusts/ender_pearl",
+		"#forge:slimeball/ender"
+	])
+
 	// 航天构件
 	thermal_extra.component_assembly("cmi:aeronautic_mechanism", [
 		"cmi:aeronautic_mechanism_basement",
