@@ -1,3 +1,10 @@
+/**
+ * 金属统一被修改为手动生成静态缓存
+ * 更新方式: 
+ * 删除kubejs/data/oei/replacements下面的所有json文件
+ * 然后进入游戏输入-unify
+ * 再次进入世界就已经完成统一了
+ */
 function generateOEIReplacements() {
 	let materialTypes = [
 		"plate",
