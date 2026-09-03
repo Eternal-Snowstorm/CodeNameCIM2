@@ -1,209 +1,131 @@
 ServerEvents.recipes((event) => {
-	/**
-	 * 
-	 * @param {Internal.JsonElement_} output 
-	 */
-	function ReactionRecipe(output) {
-		this.recipe = {
-			type: "advanced_ae:reaction",
-			output: output,
-			fluid: {
-				fluidStack: {}
-			},
-			input_items: []
-		}
-	}
-
-	/**
-	 * 至少为1000
-	 * 
-	 * @param {number} energy 
-	 * @returns 
-	 */
-	ReactionRecipe.prototype.energy = function (energy) {
-		this.recipe.energy = energy
-		return this
-	}
-
-	/**
-	 * 
-	 * @param {Internal.FluidStackJS_} fluid 
-	 * @param {number} amount 
-	 * @returns 
-	 */
-	ReactionRecipe.prototype.fluid = function (fluid, amount) {
-		this.recipe.fluid = {
-			fluidStack: {
-				FluidName: fluid,
-				Amount: amount
-			}
-		}
-		return this
-	}
-
-	/**
-	 * 
-	 * @param {Internal.ItemStack_} input 
-	 * @param {number} [count] 
-	 * @returns 
-	 */
-	ReactionRecipe.prototype.input = function (input, count) {
-		this.recipe.input_items.push({
-			amount: count || 1,
-			ingredient: Ingredient.of(input).toJson()
-		})
-		return this
-	}
-
-	/**
-	 * 
-	 * @param {ResourceLocation_} [id] 
-	 * @returns 
-	 */
-	ReactionRecipe.prototype.build = function (id) {
-		let recipe = event.custom(this.recipe)
-
-		if (id) {
-			recipe.id(id)
-		}
-
-		return recipe
-	}
-
-	/**
-	 * 
-	 * @param {Internal.ItemStack_} item 
-	 * @param {number} [count] 
-	 * @returns 
-	 */
-	function item(item, count) {
-		return {
-			"#c": "ae2:i",
-			id: item,
-			"#": count || 1
-		}
-	}
-
-	/**
-	 * 
-	 * @param {Internal.FluidStackJS_} fluid 
-	 * @param {number} [amount] 
-	 * @returns 
-	 */
-	function fluid(fluid, amount) {
-		return {
-			"#c": "ae2:f",
-			id: fluid,
-			"#": amount || 1000
-		}
-	}
+	let { neoecoae } = event.getRecipes()
 
 	// 基础通用构件基座
-	new ReactionRecipe(item("cmi:basic_mekanism_mechanism_basement"))
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:basic_mekanism_mechanism_basement")
+		.inputItems([
+			"ae2:logic_processor",
+			"cmi:enriched_alloy",
+			"mekanism:basic_control_circuit"
+		])
+		.inputFluid(Fluid.of("immersiveengineering:redstone_acid", 100))
 		.energy(2000)
-		.fluid("immersiveengineering:redstone_acid", 100)
-		.input("ae2:logic_processor")
-		.input("cmi:enriched_alloy")
-		.input("mekanism:basic_control_circuit")
-		.build()
 
 	// 高级通用构件基座
-	new ReactionRecipe(item("cmi:advanced_mekanism_mechanism_basement"))
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:advanced_mekanism_mechanism_basement")
 		.energy(2000)
-		.fluid("advanced_ae:quantum_infusion_source", 100)
-		.input("ae2:engineering_processor")
-		.input("mekanism:alloy_infused")
-		.input("mekanism:advanced_control_circuit")
-		.build()
+		.inputFluid(Fluid.of("cmi:molten_etrium", 90))
+		.inputItems([
+			"ae2:engineering_processor",
+			"mekanism:alloy_infused",
+			"mekanism:advanced_control_circuit"
+		])
+
 
 	// 精英通用构件基座
-	new ReactionRecipe(item("cmi:elite_mekanism_mechanism_basement"))
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:elite_mekanism_mechanism_basement")
 		.energy(2000)
-		.fluid("cmi:ferrouslime", 100)
-		.input("cmi:concurrent_processor")
-		.input("mekanism:alloy_reinforced")
-		.input("cmi:elite_electronic_components")
-		.build()
+		.inputFluid(Fluid.of("cmi:ferrouslime", 100))
+		.inputItems([
+			"cmi:concurrent_processor",
+			"mekanism:alloy_reinforced",
+			"cmi:elite_electronic_components"
+		])
+
 
 	// 终级通用构件基座
-	new ReactionRecipe(item("cmi:ultimate_mekanism_mechanism_basement"))
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:ultimate_mekanism_mechanism_basement")
 		.energy(2000)
-		.fluid("cmi:composite_magnetic_fluid", 100)
-		.input("advanced_ae:quantum_processor")
-		.input("mekanism:alloy_atomic")
-		.input("mekanism:ultimate_control_circuit")
-		.build()
+		.inputFluid(Fluid.of("cmi:composite_magnetic_fluid", 100))
+		.inputItems([
+			"neoecoae:superconducting_processor",
+			"mekanism:alloy_atomic",
+			"mekanism:ultimate_control_circuit"
+		])
+
 
 	// 碳聚合催化片
-	new ReactionRecipe(item("cmi:carbon_polymerization_catalytic_plate"))
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:carbon_polymerization_catalytic_plate")
 		.energy(2000)
-		.fluid("tconstruct:molten_chromium", 45)
-		.input("cmi:titanium_alloy_mesh")
-		.input("#forge:wires/aluminum")
-		.build()
+		.inputFluid(Fluid.of("tconstruct:molten_chromium", 45))
+		.inputItems([
+			"cmi:titanium_alloy_mesh",
+			"#forge:wires/aluminum"
+		])
+
 
 	// 航空构件基座
-	new ReactionRecipe(item("cmi:aeronautic_mechanism_basement"))
-		.fluid("immersiveengineering:redstone_acid", 100)
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:aeronautic_mechanism_basement")
+		.inputFluid(Fluid.of("immersiveengineering:redstone_acid", 100))
 		.energy(2000)
-		.input("cmi:smart_mechanism_augment")
-		.input("cmi:graphene")
-		.input("#forge:plates/aluminum_alloy")
-		.build()
+		.inputItems([
+			"cmi:smart_mechanism_augment",
+			"cmi:graphene",
+			"#forge:plates/aluminum_alloy"
+		])
+
 
 	// 宇航构件基座
-	new ReactionRecipe(item("cmi:astronautic_mechanism_basement"))
-		.fluid("advanced_ae:quantum_infusion_source", 100)
-		.input("cmi:advanced_electronic_components")
-		.input("cmi:carbon_nanotube")
-		.input("#forge:plates/titanium_alloy")
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:astronautic_mechanism_basement")
+		.inputFluid(Fluid.of("cmi:molten_etrium", 90))
+		.inputItems([
+			"cmi:advanced_electronic_components",
+			"cmi:carbon_nanotube",
+			"#forge:plates/titanium_alloy"
+		])
 		.energy(4000)
-		.build()
+
 
 	// 钨钢板
-	new ReactionRecipe(item("cmi:incomplete_tungsten_steel_plate"))
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:incomplete_tungsten_steel_plate")
 		.energy(2000)
-		.fluid("immersiveengineering:redstone_acid", 100)
-		.input("#forge:plates/tungsten")
-		.input("cmi:titanium_alloy_mesh")
-		.input("#forge:plates/aluminum_alloy")
-		.build()
+		.inputFluid(Fluid.of("immersiveengineering:redstone_acid", 100))
+		.inputItems([
+			"#forge:plates/tungsten",
+			"cmi:titanium_alloy_mesh",
+			"#forge:plates/aluminum_alloy"
+		])
+
 
 	// 复合板
-	new ReactionRecipe(item("cmi:incomplete_composite_carbon_fiber_plate"))
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:incomplete_composite_carbon_fiber_plate")
 		.energy(2000)
-		.fluid("cmi:structural_plastic", 50)
-		.input("cmi:composite_tungsten_steel_plate")
-		.input("cmi:carbon_nanotube")
-		.build()
+		.inputFluid(Fluid.of("cmi:structural_plastic", 50))
+		.inputItems([
+			"cmi:composite_tungsten_steel_plate",
+			"cmi:carbon_nanotube"
+		])
+
 
 	// 空燃料棒
-	new ReactionRecipe(item("cmi:empty_fuel_rod"))
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:empty_fuel_rod")
 		.energy(2000)
-		.fluid("tconstruct:molten_lead", 90 * 8)
-		.input("#forge:ingots/hop_graphite", 16)
-		.input("alexscaves:polymer_plate", 16)
-		.input("mekanism:reprocessed_fissile_fragment", 8)
-		.build()
+		.inputFluid(Fluid.of("tconstruct:molten_lead", 90 * 8))
+		.inputItems([
+			"16x #forge:ingots/hop_graphite",
+			"16x alexscaves:polymer_plate",
+			"8x mekanism:reprocessed_fissile_fragment",
+		])
+
 
 	// 复合钨钢板
-	new ReactionRecipe(item("cmi:composite_tungsten_steel_plate"))
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:composite_tungsten_steel_plate")
 		.energy(16000)
-		.fluid("tconstruct:molten_tungsten", 90)
-		.input("cmi:incomplete_tungsten_steel_plate")
-		.input("#forge:plates/tungsten_steel")
-		.build()
+		.inputFluid(Fluid.of("tconstruct:molten_tungsten", 90))
+		.inputItems([
+			"cmi:incomplete_tungsten_steel_plate",
+			"#forge:plates/tungsten_steel"
+		])
 
-	// 模拟反应堆
-	// new ReactionRecipe(item("cmi:simulated_fission_reactor"))
-	// 	.energy(2000)
-	// 	.fluid("cmi:structural_plastic", 4000)
-	// 	.input("mekanismgenerators:fission_reactor_casing", 64)
-	// 	.input("mekanismgenerators:reactor_glass", 32)
-	// 	.input("mekanismgenerators:fission_fuel_assembly", 16)
-	// 	.input("mekanismgenerators:control_rod_assembly", 8)
-	// 	.input("mekanismgenerators:fission_reactor_port", 4)
-	// 	.input("mekanism:steel_casing", 2)
-	// 	.input("mekanismgenerators:fission_reactor_logic_adapter", 1)
-	// 	.build()
 })
