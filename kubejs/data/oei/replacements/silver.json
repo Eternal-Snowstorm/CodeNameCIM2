@@ -25,12 +25,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:gears/silver"
-		],
-		"resultItems": "thermal:silver_gear"
-	},
-	{
-		"matchItems": [
 			"#forge:dusts/silver"
 		],
 		"resultItems": "thermal:silver_dust"
@@ -40,12 +34,6 @@
 			"#forge:rods/silver"
 		],
 		"resultItems": "vintageimprovements:silver_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/silver"
-		],
-		"resultItems": "vintageimprovements:silver_wire"
 	},
 	{
 		"matchItems": [

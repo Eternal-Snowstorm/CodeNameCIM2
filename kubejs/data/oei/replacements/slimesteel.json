@@ -1,50 +1,8 @@
 [
 	{
 		"matchItems": [
-			"#forge:ingots/slimesteel"
-		],
-		"resultItems": "tconstruct:slimesteel_ingot"
-	},
-	{
-		"matchItems": [
 			"#forge:plates/slimesteel"
 		],
 		"resultItems": "vintageimprovements:slimesteel_sheet"
-	},
-	{
-		"matchItems": [
-			"#forge:nuggets/slimesteel"
-		],
-		"resultItems": "tconstruct:slimesteel_nugget"
-	},
-	{
-		"matchItems": [
-			"#forge:storage_blocks/slimesteel"
-		],
-		"resultItems": "tconstruct:slimesteel_block"
-	},
-	{
-		"matchItems": [
-			"#forge:gears/slimesteel"
-		],
-		"resultItems": "thermalconstruct:slimesteel_gear"
-	},
-	{
-		"matchItems": [
-			"#forge:dusts/slimesteel"
-		],
-		"resultItems": "thermalconstruct:slimesteel_dust"
-	},
-	{
-		"matchItems": [
-			"#forge:rods/slimesteel"
-		],
-		"resultItems": "vintageimprovements:slimesteel_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/slimesteel"
-		],
-		"resultItems": "vintageimprovements:slimesteel_wire"
 	}
 ]

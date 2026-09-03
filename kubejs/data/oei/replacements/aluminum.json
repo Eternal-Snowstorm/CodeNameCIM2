@@ -13,12 +13,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:nuggets/aluminum"
-		],
-		"resultItems": "immersiveengineering:nugget_aluminum"
-	},
-	{
-		"matchItems": [
 			"#forge:storage_blocks/aluminum"
 		],
 		"resultItems": "neoecoae:aluminum_block"

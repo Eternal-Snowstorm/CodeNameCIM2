@@ -1,5 +1,4 @@
-// priority: 9
-ServerEvents.afterRecipes((event) => {
+function generateOEIReplacements() {
 	let materialTypes = [
 		"plate",
 		"nugget",
@@ -9,57 +8,94 @@ ServerEvents.afterRecipes((event) => {
 		"rod",
 		"wire"
 	]
+
+	let $Files = Java.loadClass("java.nio.file.Files")
+	let $Paths = Java.loadClass("java.nio.file.Paths")
+
+	let written = 0
+	let cleaned = 0
+	let errors = []
+
 	CmiMetal.getAll().forEach((metal) => {
-		let material = String(metal.getId())
-		let ingotTag = `#forge:ingots/${material}`
-		let ingotResult = getHighPriorityItem(ingotTag)
+		try {
+			let material = String(metal.getId())
+			let ingotTag = `#forge:ingots/${material}`
+			let ingotResult = getHighPriorityItem(ingotTag)
+			let unification = []
 
-		let unification = [
-			{
-				matchItems: [ingotTag],
-				resultItems: ingotResult
+			if (Ingredient.of(ingotTag).getItemIds().length > 1) {
+				unification.push({
+					matchItems: [ingotTag],
+					resultItems: ingotResult
+				})
 			}
-		]
 
-		materialTypes.forEach((type) => {
-			let tag = `#forge:${type}s/${material}`
-			let result = getHighPriorityItem(tag)
+			materialTypes.forEach((type) => {
+				let tag = `#forge:${type}s/${material}`
+				let result = getHighPriorityItem(tag)
 
-			unification.push({
-				matchItems: [tag],
-				resultItems: result
+				if (Ingredient.of(tag).getItemIds().length > 1) {
+					unification.push({
+						matchItems: [tag],
+						resultItems: result
+					})
+				}
 			})
-		})
 
-		let rawTag = `#forge:raw_materials/${material}`
-		let rawResult = getHighPriorityItem(rawTag)
+			let rawTag = `#forge:raw_materials/${material}`
+			let rawResult = getHighPriorityItem(rawTag)
+			if (Ingredient.of(rawTag).getItemIds().length > 1) {
+				unification.push({
+					matchItems: [rawTag],
+					resultItems: rawResult
+				})
+			}
 
-		unification.push({
-			matchItems: [rawTag],
-			resultItems: rawResult
-		})
+			let blockTag = `#forge:storage_blocks/raw_${material}`
+			let blockResult = getHighPriorityItem(blockTag)
 
-		let blockTag = `#forge:storage_blocks/raw_${material}`
-		let blockResult = getHighPriorityItem(blockTag)
+			if (Ingredient.of(blockTag).getItemIds().length > 1) {
+				unification.push({
+					matchItems: [blockTag],
+					resultItems: blockResult
+				})
+			}
 
-		unification.push({
-			matchItems: [blockTag],
-			resultItems: blockResult
-		})
+			let validUnification = unification.filter((entry) => {
+				return entry.resultItems != null && entry.resultItems !== "cmi:cmi_icon"
+			})
 
-		let validUnification = unification.filter((entry) => {
-			return entry.resultItems != null && entry.resultItems !== "cmi:cmi_icon"
-		})
+			let filePath = $Paths.get(`kubejs/data/oei/replacements/${material}.json`)
 
-		let $Files = Java.loadClass("java.nio.file.Files")
-		let $Paths = Java.loadClass("java.nio.file.Paths")
-		let filePath = $Paths.get(`kubejs/data/oei/replacements/${material}.json`)
-
-		$Files.createDirectories(filePath.getParent())
-		$Files.writeString(filePath, JsonIO.toPrettyString(JsonIO.of(validUnification)))
-
-		console.log(`[OEI] Wrote ${filePath} with ${validUnification.length} replacement(s)`)
+			if (validUnification.length > 0) {
+				$Files.createDirectories(filePath.getParent())
+				$Files.writeString(filePath, JsonIO.toPrettyString(JsonIO.of(validUnification)))
+				console.log(`[OEI] Wrote ${filePath} with ${validUnification.length} replacement(s)`)
+				written++
+			} else if ($Files.exists(filePath)) {
+				$Files.deleteIfExists(filePath)
+				console.log(`[OEI] Removed stale ${filePath} (no valid replacement)`)
+				cleaned++
+			}
+		} catch (err) {
+			errors.push(`${metal.getId()}: ${err}`)
+		}
 	})
+
+}
+
+PlayerEvents.chat((event) => {
+	let raw = event.message
+	if (raw == null) {
+		return
+	}
+
+	let msg = raw.trim()
+	if (msg !== "-unify") {
+		return
+	}
+
+	event.cancel()
 })
 
 /**

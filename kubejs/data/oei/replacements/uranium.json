@@ -31,18 +31,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:rods/uranium"
-		],
-		"resultItems": "vintageimprovements:uranium_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/uranium"
-		],
-		"resultItems": "vintageimprovements:uranium_wire"
-	},
-	{
-		"matchItems": [
 			"#forge:raw_materials/uranium"
 		],
 		"resultItems": "immersiveengineering:raw_uranium"

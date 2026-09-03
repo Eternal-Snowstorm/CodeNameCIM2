@@ -25,12 +25,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:gears/nickel"
-		],
-		"resultItems": "thermal:nickel_gear"
-	},
-	{
-		"matchItems": [
 			"#forge:dusts/nickel"
 		],
 		"resultItems": "thermal:nickel_dust"
@@ -40,12 +34,6 @@
 			"#forge:rods/nickel"
 		],
 		"resultItems": "vintageimprovements:nickel_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/nickel"
-		],
-		"resultItems": "vintageimprovements:nickel_wire"
 	},
 	{
 		"matchItems": [

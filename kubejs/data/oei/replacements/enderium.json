@@ -1,50 +1,14 @@
 [
 	{
 		"matchItems": [
-			"#forge:ingots/enderium"
-		],
-		"resultItems": "thermal:enderium_ingot"
-	},
-	{
-		"matchItems": [
 			"#forge:plates/enderium"
 		],
 		"resultItems": "vintageimprovements:enderium_sheet"
 	},
 	{
 		"matchItems": [
-			"#forge:nuggets/enderium"
-		],
-		"resultItems": "thermal:enderium_nugget"
-	},
-	{
-		"matchItems": [
-			"#forge:storage_blocks/enderium"
-		],
-		"resultItems": "thermal:enderium_block"
-	},
-	{
-		"matchItems": [
-			"#forge:gears/enderium"
-		],
-		"resultItems": "thermal:enderium_gear"
-	},
-	{
-		"matchItems": [
-			"#forge:dusts/enderium"
-		],
-		"resultItems": "thermal:enderium_dust"
-	},
-	{
-		"matchItems": [
 			"#forge:rods/enderium"
 		],
 		"resultItems": "vintageimprovements:enderium_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/enderium"
-		],
-		"resultItems": "vintageimprovements:enderium_wire"
 	}
 ]

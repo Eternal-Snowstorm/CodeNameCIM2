@@ -1,50 +1,14 @@
 [
 	{
 		"matchItems": [
-			"#forge:ingots/signalum"
-		],
-		"resultItems": "thermal:signalum_ingot"
-	},
-	{
-		"matchItems": [
 			"#forge:plates/signalum"
 		],
 		"resultItems": "vintageimprovements:signalum_sheet"
 	},
 	{
 		"matchItems": [
-			"#forge:nuggets/signalum"
-		],
-		"resultItems": "thermal:signalum_nugget"
-	},
-	{
-		"matchItems": [
-			"#forge:storage_blocks/signalum"
-		],
-		"resultItems": "thermal:signalum_block"
-	},
-	{
-		"matchItems": [
-			"#forge:gears/signalum"
-		],
-		"resultItems": "thermal:signalum_gear"
-	},
-	{
-		"matchItems": [
-			"#forge:dusts/signalum"
-		],
-		"resultItems": "thermal:signalum_dust"
-	},
-	{
-		"matchItems": [
 			"#forge:rods/signalum"
 		],
 		"resultItems": "vintageimprovements:signalum_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/signalum"
-		],
-		"resultItems": "vintageimprovements:signalum_wire"
 	}
 ]

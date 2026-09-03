@@ -1,26 +1,8 @@
 [
 	{
 		"matchItems": [
-			"#forge:ingots/andesite_alloy"
-		],
-		"resultItems": "create:andesite_alloy"
-	},
-	{
-		"matchItems": [
 			"#forge:plates/andesite_alloy"
 		],
 		"resultItems": "vintageimprovements:andesite_sheet"
-	},
-	{
-		"matchItems": [
-			"#forge:nuggets/andesite_alloy"
-		],
-		"resultItems": "cmi:andesite_alloy_nugget"
-	},
-	{
-		"matchItems": [
-			"#forge:storage_blocks/andesite_alloy"
-		],
-		"resultItems": "create:andesite_alloy_block"
 	}
 ]

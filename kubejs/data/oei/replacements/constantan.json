@@ -25,12 +25,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:gears/constantan"
-		],
-		"resultItems": "thermal:constantan_gear"
-	},
-	{
-		"matchItems": [
 			"#forge:dusts/constantan"
 		],
 		"resultItems": "thermal:constantan_dust"
@@ -40,11 +34,5 @@
 			"#forge:rods/constantan"
 		],
 		"resultItems": "vintageimprovements:constantan_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/constantan"
-		],
-		"resultItems": "vintageimprovements:constantan_wire"
 	}
 ]

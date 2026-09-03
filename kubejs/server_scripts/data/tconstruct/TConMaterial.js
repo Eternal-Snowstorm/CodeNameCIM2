@@ -1,12 +1,3 @@
-let $TinkerModifiers =
-	Java.loadClass("slimeknights.tconstruct.tools.TinkerModifiers")
-let $ModifierIds =
-	Java.loadClass("slimeknights.tconstruct.tools.data.ModifierIds")
-let $NTModifier =
-	Java.loadClass("dev.celestiacraft.tinker.common.register.NTModifier")
-let $ThermalConstructModifierIds =
-	Java.loadClass("mrthomas20121.thermalconstruct.ThermalConstructModifierIds")
-
 TConJSEvents.materialDefinition((event) => {
 	/**
 	 * 
@@ -107,7 +98,7 @@ TConJSEvents.materialDefinition((event) => {
 			["part(java.lang.String,java.util.Map)"]("tconstruct:bowstring", {})
 		})
 		.traits((builder) => {
-			builder.perStat("default", $ModifierIds.stringy, 1)
+			builder.perStat("default", "tconstruct:stringy", 1)
 		})
 		.build()
 
@@ -128,7 +119,7 @@ TConJSEvents.materialDefinition((event) => {
 				.limb(-0.05, 0.25, 70, -0.1)
 		})
 		.traits((builder) => {
-			builder.perStat("default", $ModifierIds.cultivated, 1)
+			builder.perStat("default", "tconstruct:cultivated", 1)
 		})
 		.build()
 
@@ -154,8 +145,7 @@ TConJSEvents.materialDefinition((event) => {
 				.platingShield(270, 0)
 		})
 		.traits((builder) => {
-			builder.perStat("default", $TinkerModifiers.magnetic, 1)
-				.perStat("tconstruct:armor", $ModifierIds.projectileProtection, 1)
+			builder.perStat("tconstruct:armor", "tconstruct:projectile_protection", 1)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_industrial_iron")
@@ -186,10 +176,8 @@ TConJSEvents.materialDefinition((event) => {
 				.platingShield(226, 1.0)
 		})
 		.traits((builder) => {
-			builder.perStat("default", $TinkerModifiers.stonebound, 1)
-				.perStat("tconstruct:melee_harvest", $ModifierIds.reach, 1)
-				.perStat("tconstruct:armor", $ModifierIds.meleeProtection, 1)
-				.perStat("tconstruct:ammo", $TinkerModifiers.insatiable, 1)
+			builder.perStat("tconstruct:melee_harvest", "tconstruct:reach", 1)
+				.perStat("tconstruct:armor", "tconstruct:melee_protection", 1)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_andesite_alloy")
@@ -220,9 +208,9 @@ TConJSEvents.materialDefinition((event) => {
 				.platingShield(238, 1.3)
 		})
 		.traits((builder) => {
-			builder.perStat("default", $ModifierIds.harmonious, 1)
-				.perStat("tconstruct:melee_harvest", $NTModifier.CLOCKWORK, 2)
-				.perStat("tconstruct:ranged", $TinkerModifiers.multishot, 1)
+			builder.perStat("default", "tconstruct:harmonious", 1)
+				.perStat("tconstruct:melee_harvest", "nebula_tinker:clockwork", 2)
+				.perStat("tconstruct:ranged", "tconstruct:multishot", 1)
 		})
 		.melting((builder) => {
 			builder.fluid("tconstruct:molten_brass")
@@ -253,9 +241,8 @@ TConJSEvents.materialDefinition((event) => {
 				.platingShield(300, 2)
 		})
 		.traits((builder) => {
-			builder.perStat("default", $TinkerModifiers.magnetic, 1)
-				.perStat("tconstruct:armor", $ModifierIds.projectileProtection, 1)
-				.perStat("tconstruct:ranged", $ModifierIds.maintained, 1)
+			builder.perStat("tconstruct:armor", "tconstruct:projectile_protection", 1)
+				.perStat("tconstruct:ranged", "tconstruct:maintained", 1)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_cast_iron")
@@ -281,10 +268,9 @@ TConJSEvents.materialDefinition((event) => {
 			// .arrowHead()
 		})
 		.traits((builder) => {
-			builder.perStat("tconstruct:melee_harvest", $NTModifier.SHADOW, 1)
-				.perStat("tconstruct:ranged", $NTModifier.SHADOW, 2)
-				.perStat("tconstruct:ranged", $TinkerModifiers.multishot, 2)
-				.perStat("tconstruct:ammo", $TinkerModifiers.impaling, 1)
+			builder.perStat("tconstruct:melee_harvest", "nebula_tinker:shadow", 1)
+				.perStat("tconstruct:ranged", "nebula_tinker:shadow", 2)
+				.perStat("tconstruct:ranged", "tconstruct:multishot", 2)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_shadow_steel")
@@ -310,9 +296,9 @@ TConJSEvents.materialDefinition((event) => {
 			// .arrowHead()
 		})
 		.traits((builder) => {
-			builder.perStat("tconstruct:melee_harvest", $ModifierIds.lightspeed, 1)
-				.perStat("tconstruct:ranged", $ModifierIds.lightspeed, 1)
-				.perStat("tconstruct:ammo", $ModifierIds.keen, 2)
+			builder.perStat("tconstruct:melee_harvest", "tconstruct:lightspeed", 1)
+				.perStat("tconstruct:ranged", "tconstruct:lightspeed", 1)
+				.perStat("tconstruct:ammo", "tconstruct:keen", 2)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_refined_radiance")
@@ -336,9 +322,9 @@ TConJSEvents.materialDefinition((event) => {
 				.handle(0.2, -0.05, -0.2, 0.25)
 		})
 		.traits((builder) => {
-			builder.perStat("default", $NTModifier.PETRAMOR, 1)
-				.perStat("tconstruct:handle", $NTModifier.PETRAMOR, 1)
-				.perStat("tconstruct:head", $NTModifier.PETRAMOR, 1)
+			builder.perStat("default", "nebula_tinker:petramor", 1)
+				.perStat("tconstruct:handle", "nebula_tinker:petramor", 1)
+				.perStat("tconstruct:head", "nebula_tinker:petramor", 1)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_ardite")
@@ -370,10 +356,10 @@ TConJSEvents.materialDefinition((event) => {
 				.platingShield(550, 0)
 		})
 		.traits((builder) => {
-			builder.perStat("default", $ModifierIds.ductile, 2)
-				.perStat("tconstruct:melee_harvest", $ModifierIds.ductile, 2)
-				.perStat("tconstruct:melee_harvest", $ModifierIds.blockade, 1)
-				.perStat("tconstruct:ranged", $ModifierIds.ductile, 2)
+			builder.perStat("default", "tconstruct:ductile", 2)
+				.perStat("tconstruct:melee_harvest", "tconstruct:ductile", 2)
+				.perStat("tconstruct:melee_harvest", "tconstruct:blockade", 1)
+				.perStat("tconstruct:ranged", "tconstruct:ductile", 2)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_stainless_steel")
@@ -401,10 +387,10 @@ TConJSEvents.materialDefinition((event) => {
 				.platingShield(820, 0)
 		})
 		.traits((builder) => {
-			builder.perStat("default", $ModifierIds.reinforced, 1)
-				.perStat("tconstruct:melee_harvest", $ModifierIds.haste, 1)
-				.perStat("tconstruct:armor", $ModifierIds.speedy, 1)
-				.perStat("tconstruct:ranged", $ModifierIds.featherweight, 1)
+			builder.perStat("default", "tconstruct:reinforced", 1)
+				.perStat("tconstruct:melee_harvest", "tconstruct:haste", 1)
+				.perStat("tconstruct:armor", "tconstruct:speedy", 1)
+				.perStat("tconstruct:ranged", "tconstruct:featherweight", 1)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_desh")
@@ -432,8 +418,8 @@ TConJSEvents.materialDefinition((event) => {
 				.platingShield(1420, 0)
 		})
 		.traits((builder) => {
-			builder.perStat("tconstruct:melee_harvest", $TinkerModifiers.insatiable, 1)
-				.perStat("tconstruct:ranged", $ModifierIds.lightweight, 1)
+			builder.perStat("tconstruct:melee_harvest", "tconstruct:insatiable", 1)
+				.perStat("tconstruct:ranged", "tconstruct:lightweight", 1)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_ostrum")
@@ -464,11 +450,9 @@ TConJSEvents.materialDefinition((event) => {
 				.platingShield(1420, 0.5)
 		})
 		.traits((builder) => {
-			builder.perStat("default", $ModifierIds.enhanced, 1)
-				.perStat("tconstruct:melee_harvest", $TinkerModifiers.conducting, 1)
-				.perStat("tconstruct:melee_harvest", $ModifierIds.solid, 1)
-				.perStat("tconstruct:ranged", $ModifierIds.ballista, 1)
-				.perStat("tconstruct:armor", $ModifierIds.fireProtection, 2)
+			builder.perStat("default", "tconstruct:enhanced", 1)
+				.perStat("tconstruct:ranged", "tconstruct:ballista", 1)
+				.perStat("tconstruct:armor", "tconstruct:fireProtection", 2)
 		})
 		.melting((builder) => {
 			builder.fluid("cmi:molten_calorite")
@@ -496,8 +480,8 @@ TConJSEvents.materialDefinition((event) => {
 				.grip(0.2, -0.1, 3.2)
 		})
 		.traits((builder) => {
-			builder.perStat("tconstruct:melee_harvest", $ModifierIds.luck, 1)
-				.perStat("tconstruct:ranged", $ModifierIds.crystalshot, 1)
+			builder.perStat("tconstruct:melee_harvest", "tconstruct:luck", 1)
+				.perStat("tconstruct:ranged", "tconstruct:crystalshot", 1)
 		})
 		.melting((builder) => {
 			builder.fluid("tconstruct:molten_amethyst")

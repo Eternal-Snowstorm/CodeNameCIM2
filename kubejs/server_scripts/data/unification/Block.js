@@ -1,5 +1,5 @@
 ServerEvents.highPriorityData((event) => {
-	addUnification("uranium", [
+	addUnification("uranium_ore", [
 		"#forge:ores/uranium"
 	], "alexscaves:radrock_uranium_ore")
 

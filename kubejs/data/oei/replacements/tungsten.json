@@ -7,18 +7,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:plates/tungsten"
-		],
-		"resultItems": "cmi:tungsten_plate"
-	},
-	{
-		"matchItems": [
-			"#forge:nuggets/tungsten"
-		],
-		"resultItems": "cmi:tungsten_nugget"
-	},
-	{
-		"matchItems": [
 			"#forge:storage_blocks/tungsten"
 		],
 		"resultItems": "cmi:tungsten_block"
@@ -31,20 +19,8 @@
 	},
 	{
 		"matchItems": [
-			"#forge:rods/tungsten"
-		],
-		"resultItems": "cmi:tungsten_rod"
-	},
-	{
-		"matchItems": [
 			"#forge:raw_materials/tungsten"
 		],
 		"resultItems": "cmi:raw_tungsten"
-	},
-	{
-		"matchItems": [
-			"#forge:storage_blocks/raw_tungsten"
-		],
-		"resultItems": "neoecoae:raw_tungsten_block"
 	}
 ]

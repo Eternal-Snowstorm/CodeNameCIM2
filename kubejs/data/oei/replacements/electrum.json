@@ -25,12 +25,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:gears/electrum"
-		],
-		"resultItems": "thermal:electrum_gear"
-	},
-	{
-		"matchItems": [
 			"#forge:dusts/electrum"
 		],
 		"resultItems": "thermal:electrum_dust"

@@ -25,12 +25,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:gears/bronze"
-		],
-		"resultItems": "thermal:bronze_gear"
-	},
-	{
-		"matchItems": [
 			"#forge:dusts/bronze"
 		],
 		"resultItems": "thermal:bronze_dust"
@@ -40,11 +34,5 @@
 			"#forge:rods/bronze"
 		],
 		"resultItems": "vintageimprovements:bronze_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/bronze"
-		],
-		"resultItems": "vintageimprovements:bronze_wire"
 	}
 ]

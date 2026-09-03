@@ -25,12 +25,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:gears/tin"
-		],
-		"resultItems": "thermal:tin_gear"
-	},
-	{
-		"matchItems": [
 			"#forge:dusts/tin"
 		],
 		"resultItems": "thermal:tin_dust"
@@ -40,12 +34,6 @@
 			"#forge:rods/tin"
 		],
 		"resultItems": "vintageimprovements:tin_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/tin"
-		],
-		"resultItems": "vintageimprovements:tin_wire"
 	},
 	{
 		"matchItems": [

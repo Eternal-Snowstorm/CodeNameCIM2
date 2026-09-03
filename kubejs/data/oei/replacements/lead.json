@@ -25,12 +25,6 @@
 	},
 	{
 		"matchItems": [
-			"#forge:gears/lead"
-		],
-		"resultItems": "thermal:lead_gear"
-	},
-	{
-		"matchItems": [
 			"#forge:dusts/lead"
 		],
 		"resultItems": "thermal:lead_dust"

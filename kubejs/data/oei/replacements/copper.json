@@ -1,12 +1,6 @@
 [
 	{
 		"matchItems": [
-			"#forge:ingots/copper"
-		],
-		"resultItems": "minecraft:copper_ingot"
-	},
-	{
-		"matchItems": [
 			"#forge:plates/copper"
 		],
 		"resultItems": "thermal:copper_plate"
@@ -16,18 +10,6 @@
 			"#forge:nuggets/copper"
 		],
 		"resultItems": "thermal:copper_nugget"
-	},
-	{
-		"matchItems": [
-			"#forge:storage_blocks/copper"
-		],
-		"resultItems": "minecraft:copper_block"
-	},
-	{
-		"matchItems": [
-			"#forge:gears/copper"
-		],
-		"resultItems": "thermal:copper_gear"
 	},
 	{
 		"matchItems": [
@@ -46,17 +28,5 @@
 			"#forge:wires/copper"
 		],
 		"resultItems": "createaddition:copper_wire"
-	},
-	{
-		"matchItems": [
-			"#forge:raw_materials/copper"
-		],
-		"resultItems": "minecraft:raw_copper"
-	},
-	{
-		"matchItems": [
-			"#forge:storage_blocks/raw_copper"
-		],
-		"resultItems": "minecraft:raw_copper_block"
 	}
 ]

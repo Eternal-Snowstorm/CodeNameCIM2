@@ -22,29 +22,5 @@
 			"#forge:storage_blocks/rose_gold"
 		],
 		"resultItems": "thermal:rose_gold_block"
-	},
-	{
-		"matchItems": [
-			"#forge:gears/rose_gold"
-		],
-		"resultItems": "thermal:rose_gold_gear"
-	},
-	{
-		"matchItems": [
-			"#forge:dusts/rose_gold"
-		],
-		"resultItems": "thermal:rose_gold_dust"
-	},
-	{
-		"matchItems": [
-			"#forge:rods/rose_gold"
-		],
-		"resultItems": "vintageimprovements:rose_gold_rod"
-	},
-	{
-		"matchItems": [
-			"#forge:wires/rose_gold"
-		],
-		"resultItems": "vintageimprovements:rose_gold_wire"
 	}
 ]

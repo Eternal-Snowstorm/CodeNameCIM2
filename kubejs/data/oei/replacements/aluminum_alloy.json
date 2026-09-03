@@ -7,38 +7,14 @@
 	},
 	{
 		"matchItems": [
-			"#forge:plates/aluminum_alloy"
-		],
-		"resultItems": "cmi:aluminum_alloy_plate"
-	},
-	{
-		"matchItems": [
-			"#forge:nuggets/aluminum_alloy"
-		],
-		"resultItems": "cmi:aluminum_alloy_nugget"
-	},
-	{
-		"matchItems": [
 			"#forge:storage_blocks/aluminum_alloy"
 		],
 		"resultItems": "cmi:aluminum_alloy_block"
 	},
 	{
 		"matchItems": [
-			"#forge:gears/aluminum_alloy"
-		],
-		"resultItems": "cmi:aluminum_alloy_gear"
-	},
-	{
-		"matchItems": [
 			"#forge:dusts/aluminum_alloy"
 		],
 		"resultItems": "cmi:aluminum_alloy_dust"
-	},
-	{
-		"matchItems": [
-			"#forge:rods/aluminum_alloy"
-		],
-		"resultItems": "cmi:aluminum_alloy_rod"
 	}
 ]
