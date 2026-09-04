@@ -286,7 +286,7 @@ ServerEvents.recipes((event) => {
 	new ModifierRecipeBuilder("nebula_tinker:capture_king")
 		.allowCrystal(true)
 		.tools("#tconstruct:modifiable/held")
-		.level(1, 3)
+		.level(1, 5)
 		.slots("abilities", 1)
 		.inputs([
 			Mechanisms.SCULK.COM
