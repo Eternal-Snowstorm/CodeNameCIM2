@@ -193,7 +193,11 @@ ServerEvents.recipes((event) => {
 		"createdieselgenerators:crafting/engine_piston",
 		"naturescompass:repair_natures_compass",
 		"create:milling/saddle",
-		"neoecoae:superconducting_processor_press"
+		"neoecoae:superconducting_processor_press",
+		"tconstruct:tools/modifiers/ability/luck_pants",
+		"tconstruct:tools/modifiers/ability/luck_level_1",
+		"tconstruct:tools/modifiers/ability/luck_level_2",
+		"tconstruct:tools/modifiers/ability/luck_level_3"
 	])
 
 	let removedMods = [

@@ -14,7 +14,7 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmi:sculk_mechanism")
 	addCommonTooltip("cmi:charged_amethyst")
 	addCommonTooltip("cmi:potion_mechanism")
-	addCommonTooltip("cmi:smart_mechanism")
+	addCommonTooltip("cmi:golden_mechanism")
 	addCommonTooltip("cmi:super_knife")
 	addCommonTooltip("cmi:stone_plate")
 	addCommonTooltip("cmi:creosote_wood_chip_briquette")

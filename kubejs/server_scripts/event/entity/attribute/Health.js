@@ -12,7 +12,7 @@ EntityEvents.spawned((event) => {
 	}
 
 	// 注册
-	setCustomHealth("minecraft:ender_dragon", 200)
+	setCustomHealth("minecraft:ender_dragon", 2000)
 
 	if (!entity.isLiving()) {
 		return

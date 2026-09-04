@@ -1,20 +1,79 @@
+let $JsonObject =
+	Java.loadClass("com.google.gson.JsonObject")
+let $JsonArray =
+	Java.loadClass("com.google.gson.JsonArray")
+
 ServerEvents.recipes((event) => {
 	/**
+	 * 创建 TCon 输入材料 JSON
+	 *
+	 * 无 count：输出普通材料 {"tag": ...} / {"item": ...}
+	 * 有 count：包装成 TCon SizedIngredient 格式
+	 * {"ingredient": <材料>, "amount_needed": <数量>}
+	 *
+	 * @param {Internal.Ingredient_} ingredient
+	 * @param {number} [count]
+	 * @returns {Internal.JsonElement_ | {ingredient: Internal.JsonElement_, amount_needed: number}}
+	 */
+	function ingredientJson(ingredient, count) {
+		let json = Ingredient.of(ingredient).toJson()
+
+		if (typeof count !== "undefined") {
+			return {
+				ingredient: json,
+				amount_needed: count
+			}
+		}
+
+		return json
+	}
+
+	/**
+	 * 创建 Modifier 输入材料 JSON
+	 *
+	 * 每个槽位只写一种材料, 支持:
+	 * - `"minecraft:iron_ingot"`：单材料, 消耗 1 个
+	 * - `["minecraft:iron_ingot", 3]`：单材料, 消耗 3 个
+	 * - `["minecraft:iron_ingot", "#forge:ingots/gold"]`：同数量多选一
+	 *
+	 * 注意：匠魂不支持同一槽位不同备选带不同数量；
+	 * 需要不同消耗时请拆成多条配方, 每槽写一个 [材料, 数量]
+	 *
+	 * @param {Internal.Ingredient_ | [Internal.Ingredient_, number] | Internal.Ingredient_[]} input
+	 * @returns {Internal.JsonElement_}
+	 */
+	function inputJson(input) {
+		// 单个 Ingredient
+		if (!Array.isArray(input)) {
+			return ingredientJson(input)
+		}
+
+		// [ingredient, count]
+		if (input.length === 2 && typeof input[1] === "number") {
+			return ingredientJson(input[0], input[1])
+		}
+
+		// [ingredient, ingredient, ...]：多选一（数量同为 1）
+		let json = new $JsonObject()
+		let array = new $JsonArray()
+
+		input.forEach((ingredient) => {
+			array["add(com.google.gson.JsonElement)"](Ingredient.of(ingredient).toJson())
+		})
+
+		json.add("ingredient", array)
+
+		return json
+	}
+
+	/**
 	 * TConstruct Modifier 配方构造器
-	 * 
 	 *
 	 * @constructor
 	 * @param {string} modifier Modifier ID
 	 * @returns {Internal.JsonElement_}
 	 */
 	function ModifierRecipeBuilder(modifier) {
-		if (typeof level === "undefined") {
-			this.recipe = {
-				type: "tconstruct:modifier",
-				result: modifier
-			}
-			return this
-		}
 		this.recipe = {
 			type: "tconstruct:modifier",
 			result: modifier
@@ -49,13 +108,24 @@ ServerEvents.recipes((event) => {
 	}
 
 	/**
-	 * 设置工具标签
+	 * 设置工具
 	 *
-	 * @param {Internal.Ingredient_} ingredient
+	 * @param {Internal.Ingredient_ | Internal.Ingredient_[]} ingredients
 	 * @returns {ModifierRecipeBuilder}
 	 */
-	ModifierRecipeBuilder.prototype.tools = function (ingredient) {
-		this.recipe.tools = Ingredient.of(ingredient).toJson()
+	ModifierRecipeBuilder.prototype.tools = function (ingredients) {
+		if (Array.isArray(ingredients)) {
+			let array = new $JsonArray()
+
+			ingredients.forEach((ingredient) => {
+				array["add(com.google.gson.JsonElement)"](Ingredient.of(ingredient).toJson())
+			})
+
+			this.recipe.tools = array
+		} else {
+			this.recipe.tools = Ingredient.of(ingredients).toJson()
+		}
+
 		return this
 	}
 
@@ -93,15 +163,21 @@ ServerEvents.recipes((event) => {
 	}
 
 	/**
-	 * 设置输入材料 最高5种
+	 * 设置输入材料
 	 *
-	 * @param {Internal.Ingredient_[]} inputs
+	 * 每个元素对应一个输入槽位, 支持:
+	 * - `"minecraft:iron_ingot"`：单材料, 消耗 1 个
+	 * - `["minecraft:iron_ingot", 3]`：单材料, 消耗 3 个
+	 * - `["minecraft:iron_ingot", "#forge:ingots/gold"]`：同数量多选一
+	 *
+	 * @param {(Internal.Ingredient_ | [Internal.Ingredient_, number] | Internal.Ingredient_[])[]} inputs
 	 * @returns {ModifierRecipeBuilder}
 	 */
 	ModifierRecipeBuilder.prototype.inputs = function (inputs) {
-		this.recipe.inputs = inputs.map((ingredient) => {
-			return Ingredient.of(ingredient).toJson()
+		this.recipe.inputs = inputs.map((input) => {
+			return inputJson(input)
 		})
+
 		return this
 	}
 
@@ -225,7 +301,7 @@ ServerEvents.recipes((event) => {
 		.slots("upgrades", 1)
 		.inputs([
 			"thermal:rf_coil",
-			"cmi:electrolized_redstone",
+			"functionalstorage:redstone_upgrade",
 			"thermal:rf_coil"
 		])
 		.build(NebulaTinker.loadResource("tinker/modifier/upgrades/converge"))
@@ -321,7 +397,6 @@ ServerEvents.recipes((event) => {
 			"create:deployer"
 		])
 		.build()
-	// endregion
 
 	event.custom({
 		"type": "tconstruct:incremental_modifier",
@@ -363,4 +438,43 @@ ServerEvents.recipes((event) => {
 			"tag": "tconstruct:modifiable/melee/weapon"
 		}
 	}).id("tconstruct:tools/modifiers/upgrade/swiftstrike_from_block")
+
+	let luckRecipes = [
+		[1, "#forge:dyes/blue", true],
+		[2, "#forge:gems/diamond", false],
+		[3, "#forge:storage_blocks/diamond", false]
+	]
+
+	let lapisInputs = [
+		["#forge:gems/lapis", 63],
+		["#forge:storage_blocks/lapis", 7]
+	]
+
+	let luckTools = [
+		"#tconstruct:modifiable/melee/weapon",
+		"#tconstruct:modifiable/harvest",
+		"#tconstruct:modifiable/ranged/launcher"
+	]
+
+	for (let [level, core, hasSlots] of luckRecipes) {
+		for (let [lapisTag, count] of lapisInputs) {
+			let builder = new ModifierRecipeBuilder("tconstruct:luck")
+				.allowCrystal(true)
+				.level(level)
+				.tools(luckTools)
+				.inputs([
+					core,
+					[lapisTag, count],
+					[lapisTag, count],
+					[lapisTag, count],
+					[lapisTag, count]
+				])
+
+			if (hasSlots) {
+				builder.slots("abilities", 1)
+			}
+
+			builder.build()
+		}
+	}
 })
