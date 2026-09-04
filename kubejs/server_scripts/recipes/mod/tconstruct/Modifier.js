@@ -456,8 +456,8 @@ ServerEvents.recipes((event) => {
 		"#tconstruct:modifiable/ranged/launcher"
 	]
 
-	for (let [level, core, hasSlots] of luckRecipes) {
-		for (let [lapisTag, count] of lapisInputs) {
+	luckRecipes.forEach(([level, core, hasSlots]) => {
+		lapisInputs.forEach(([lapisTag, count]) => {
 			let builder = new ModifierRecipeBuilder("tconstruct:luck")
 				.allowCrystal(true)
 				.level(level)
@@ -475,6 +475,6 @@ ServerEvents.recipes((event) => {
 			}
 
 			builder.build()
-		}
-	}
+		})
+	})
 })
