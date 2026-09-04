@@ -2,10 +2,12 @@
  * 金属统一被修改为手动生成静态缓存
  * 更新方式: 
  * 删除kubejs/data/oei/replacements下面的所有json文件
- * 然后进入游戏输入-unify
+ * 然后进入游戏输入`-unify`
  * 再次进入世界就已经完成统一了
+ * 
+ * @param {Player_} player 
  */
-function generateOEIReplacements() {
+function generateOEIReplacements(player) {
 	let materialTypes = [
 		"plate",
 		"nugget",
@@ -25,7 +27,7 @@ function generateOEIReplacements() {
 
 	CmiMetal.getAll().forEach((metal) => {
 		try {
-			let material = String(metal.getId())
+			let material = metal.getId()
 			let ingotTag = `#forge:ingots/${material}`
 			let ingotResult = getHighPriorityItem(ingotTag)
 			let unification = []
@@ -77,30 +79,32 @@ function generateOEIReplacements() {
 			if (validUnification.length > 0) {
 				$Files.createDirectories(filePath.getParent())
 				$Files.writeString(filePath, JsonIO.toPrettyString(JsonIO.of(validUnification)))
-				console.log(`[OEI] Wrote ${filePath} with ${validUnification.length} replacement(s)`)
+				player.tell(`[OEI] Wrote ${filePath} with ${validUnification.length} replacement(s)`)
 				written++
 			} else if ($Files.exists(filePath)) {
 				$Files.deleteIfExists(filePath)
-				console.log(`[OEI] Removed stale ${filePath} (no valid replacement)`)
+				player.tell(`[OEI] Removed stale ${filePath} (no valid replacement)`)
 				cleaned++
 			}
-		} catch (err) {
-			errors.push(`${metal.getId()}: ${err}`)
+		} catch (error) {
+			errors.push(`${metal.getId()}: ${error}`)
 		}
 	})
 
 }
 
 PlayerEvents.chat((event) => {
-	let raw = event.message
-	if (raw == null) {
+	let { message, player } = event
+
+	if (message == null) {
 		return
 	}
 
-	let msg = raw.trim()
-	if (msg !== "-unify") {
+	if (message.trim() !== "-unify") {
 		return
 	}
+
+	generateOEIReplacements(player)
 
 	event.cancel()
 })
