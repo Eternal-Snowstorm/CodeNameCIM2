@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 		kubejs.shapeless(`cmi:incomplete_${material}_cogwheel`, [
 			`#forge:plates/${material}`,
 			"#forge:hammers"
-		])
+		]).damageIngredient("#forge:hammers")
 
 		create.deploying(`steampowered:${material}_cogwheel`, [
 			`cmi:incomplete_${material}_cogwheel`,
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
 		kubejs.shapeless(`cmi:incomplete_${material}_large_cogwheel`, [
 			`2x #forge:plates/${material}`,
 			"#forge:hammers"
-		])
+		]).damageIngredient("#forge:hammers")
 
 		create.cutting(`cmi:incomplete_${material}_large_cogwheel`, [
 			`#forge:gears/${material}`

@@ -112,9 +112,9 @@ ServerEvents.recipes((event) => {
 
 	// 控制芯片
 	new InscriberRecipe(Processor.CONTROL)
-		.bottom("#forge:plates/redstone")
+		.top("#forge:plates/redstone")
 		.middle("#forge:plates/copper")
-		.top("cmi:inscribed_silicon")
+		.bottom("#forge:plates/brass")
 		.press()
 
 	// 逻辑电路板
@@ -168,7 +168,7 @@ ServerEvents.recipes((event) => {
 		.top("cmi:inscribed_silicon")
 		.press()
 
-	// 量子处理器
+	// 超导处理器
 	new InscriberRecipe(Processor.SUPERCONDUCTING)
 		.bottom("cmi:enriched_silicon")
 		.middle(Print.SUPERCONDUCTING)

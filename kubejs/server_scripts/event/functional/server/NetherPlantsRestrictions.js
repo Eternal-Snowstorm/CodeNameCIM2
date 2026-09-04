@@ -17,11 +17,7 @@ BlockEvents.rightClicked((event) => {
 		return
 	}
 
-	if (block.hasTag(`${Cmi.MODID}:nether_farmland`)) {
-		return
-	}
-
-	if (block.getId() === "create:item_hatch") {
+	if (!block.hasTag(`${Cmi.MODID}:nether_farmland`)) {
 		return
 	}
 

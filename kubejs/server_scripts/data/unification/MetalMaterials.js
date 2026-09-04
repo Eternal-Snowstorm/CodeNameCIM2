@@ -21,8 +21,6 @@ function generateOEIReplacements(player) {
 	let $Files = Java.loadClass("java.nio.file.Files")
 	let $Paths = Java.loadClass("java.nio.file.Paths")
 
-	let written = 0
-	let cleaned = 0
 	let errors = []
 
 	CmiMetal.getAll().forEach((metal) => {
@@ -80,17 +78,15 @@ function generateOEIReplacements(player) {
 				$Files.createDirectories(filePath.getParent())
 				$Files.writeString(filePath, JsonIO.toPrettyString(JsonIO.of(validUnification)))
 				player.tell(`[OEI] Wrote ${filePath} with ${validUnification.length} replacement(s)`)
-				written++
 			} else if ($Files.exists(filePath)) {
 				$Files.deleteIfExists(filePath)
 				player.tell(`[OEI] Removed stale ${filePath} (no valid replacement)`)
-				cleaned++
 			}
 		} catch (error) {
 			errors.push(`${metal.getId()}: ${error}`)
 		}
 	})
-
+	return errors
 }
 
 PlayerEvents.chat((event) => {

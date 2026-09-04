@@ -59,6 +59,8 @@ ServerEvents.tags("block", (event) => {
 	// 下界农田
 	event.get("cmi:nether_farmland")
 		.add("minecraft:netherrack")
+		.add("minecraft:crimson_nylium")
+		.add("minecraft:warped_nylium")
 		.add("minecraft:soul_sand")
 		.add("minecraft:soul_soil")
 		.add("mynethersdelight:resurgent_soil")

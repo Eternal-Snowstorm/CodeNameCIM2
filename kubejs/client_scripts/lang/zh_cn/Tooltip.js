@@ -113,6 +113,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("#forge:buckets/dye", "此模组的{create:mechanical_mixer, 1}混合搅拌染色配方已被隐藏，你可以用{create_dragons_plus:white_dye_bucket, 1}白色染色配方类推其他被隐藏的染色配方")
 	addCommonTooltipLang("#railways:filled_paint_pitchers", "此模组的{create:mechanical_mixer, 1}混合搅拌染色配方已被隐藏，你可以用{railways:white_paint_pitcher, 1}白色染色配方类推其他被隐藏的染色配方")
 
+	addCommonJadeTipLang("cmi:oei_generated", "[OEI] 已生成%s个金属材料统一逻辑")
+	addCommonJadeTipLang("cmi:oei_cleared", "[OEI] 已清除%s个无效金属材料统一逻辑")
+	addCommonJadeTipLang("cmi:oei_errors", "[OEI] 在以下位置出现统一逻辑漏洞: %s")
+
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",
 		"使用{tconstruct:seared_fuel_tank, 1}焦黑燃料储罐加入燃料升温"

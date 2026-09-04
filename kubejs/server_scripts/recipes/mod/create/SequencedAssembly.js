@@ -259,10 +259,9 @@ ServerEvents.recipes((event) => {
 
 	// 控制芯片
 	new SequencedAssemblyRecipe(Seq.CONTROL)
+		.deploying("#forge:plates/brass")
+		.cutting()
 		.deploying("#forge:plates/redstone")
-		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
-		.laserCutting(4000)
 		.build()
 		.id("create_connected:sequenced_assembly/control_chip")
 

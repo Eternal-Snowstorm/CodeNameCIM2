@@ -58,6 +58,7 @@ ServerEvents.recipes((event) => {
 		.inputFluids(MBDUtils.withFluidTag("forge:redstone_acid", 1000))
 		.outputItems("cmi:electrolized_redstone")
 		.duration(20 * 5)
+		.id("immersiveindustry:electrolyzer/redstone_acid")
 
 	// 氯
 	cmi.electrolyzer()

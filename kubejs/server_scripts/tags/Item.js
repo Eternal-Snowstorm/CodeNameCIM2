@@ -332,11 +332,10 @@ ServerEvents.tags("item", (event) => {
 	event.get("cmi:nether_crops")
 		.add("minecraft:nether_sprouts")
 		.add("minecraft:nether_wart")
-		.add("minecraft:weeping_vines")
-		.add("minecraft:twisting_vines")
 		.add("mynethersdelight:crimson_fungus_colony")
 		.add("mynethersdelight:warped_fungus_colony")
 		.add("mynethersdelight:powder_cannon")
+		.add("kaleidoscope_cookery:chili_seed")
 
 	// 物品容器
 	event.get("cmi:item_container")

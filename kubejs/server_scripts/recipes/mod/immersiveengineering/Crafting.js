@@ -189,4 +189,18 @@ ServerEvents.recipes((event) => {
 		A: "#forge:wires/steel",
 		B: "createaddition:spool"
 	}).id("immersiveengineering:crafting/wirecoil_steel")
+
+	// 电解机
+	kubejs.shaped("immersiveindustry:electrolyzer", [
+		"NPN",
+		"CMD",
+		"PEP"
+	], {
+		N: "#forge:rods/cast_iron",
+		C: "#forge:rods/tin",
+		D: "#forge:rods/electrum",
+		M: Mechanisms.COIL.COM,
+		P: "#forge:plates/cast_iron",
+		E: "create:wooden_bracket"
+	}).id("immersiveindustry:crafting/electrolyzer")
 })
