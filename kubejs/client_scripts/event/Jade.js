@@ -112,7 +112,7 @@ JadeEvents.onClientRegistration((event) => {
 		 * })
 		 *
 		 * @param {Internal.Block_} block 方块注册id
-		 * @param {Internal.BiConsumer_<Internal.BlockAccessor, Internal.ITooltip>} handler
+		 * @param {Internal.BiConsumer_<Internal.BlockAccessor_, Internal.ITooltip_>} handler
 		 * @returns {boolean}
 		 */
 		function addAdvancedTooltip(block, handler) {
