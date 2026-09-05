@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { minecraft, create, immersiveengineering } = event.getRecipes()
+	let { minecraft, create, kubejs } = event.getRecipes()
 	const STEEL_INGOT = Ingredient.getFirstItemId("#forge:ingots/steel")
 
 	// 钢錠
@@ -20,6 +20,14 @@ ServerEvents.recipes((event) => {
 
 	minecraft.blasting(Item.of(STEEL_INGOT, 4), "kaleidoscope_cookery:stockpot_lid")
 		.id("cmi:blasting/steel_ingot/stockpot_lid")
+
+	// 羊皮纸
+	kubejs.shaped("cmi:parchment", [
+		"AB"
+	], {
+		A: "cmi:torn_parchment_a",
+		B: "cmi:torn_parchment_b"
+	}).noMirror()
 
 	create.mechanical_crafting(Item.of("minecraft:rotten_flesh", 81), [
 		"XXXXXXXXX",
