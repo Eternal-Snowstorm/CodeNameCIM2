@@ -11,6 +11,14 @@ ServerEvents.recipes((event) => {
 		B: "#forge:rods/wooden"
 	})
 
+	// 玻璃瓶
+	kubejs.shaped("3x minecraft:glass_bottle", [
+		"A A",
+		" A "
+	], {
+		A: ["#forge:glass", "#forge:prisms/polished_quartz"]
+	}).id("minecraft:glass_bottle")
+
 	// 桶
 	kubejs.shaped("minecraft:bucket", [
 		"A A",
@@ -247,4 +255,28 @@ ServerEvents.recipes((event) => {
 		"#forge:nuggets/iron",
 		"minecraft:paper"
 	]).id("create:crafting/schematics/empty_schematic")
+
+	// 地图定位器
+	kubejs.shaped("railway_automation:map_locator", [
+		" A ",
+		" B ",
+		" C "
+	], {
+		A: "#forge:ingots/andesite_alloy",
+		B: "minecraft:map",
+		C: "#minecraft:planks"
+	}).id("railway_automation:map_locator")
+
+	// 铁路放置器
+	kubejs.shaped("railway_automation:track_placer", [
+		" M ",
+		"ECE",
+		"PRP"
+	], {
+		M: Mechanisms.RAILWAY.COM,
+		E: "create:transmitter",
+		C: Casing.RAILWAY,
+		P: "#forge:plates/iron",
+		R: "#create:tracks"
+	}).id("railway_automation:track_placer")
 })

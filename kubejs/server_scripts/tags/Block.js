@@ -184,6 +184,8 @@ ServerEvents.tags("block", (event) => {
 			"ad_astra:oxygen_sensor",
 			"#ad_astra:globes",
 
+			"create_rns:mine_head",
+
 			"immersiveengineering:craftingtable",
 			"immersiveengineering:workbench",
 			"immersiveengineering:circuit_table",
