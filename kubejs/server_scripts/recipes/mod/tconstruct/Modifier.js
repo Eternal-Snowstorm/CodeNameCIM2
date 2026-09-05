@@ -4,6 +4,47 @@ let $JsonArray =
 	Java.loadClass("com.google.gson.JsonArray")
 
 ServerEvents.recipes((event) => {
+	event.custom({
+		"type": "tconstruct:incremental_modifier",
+		"allow_crystal": false,
+		"amount_per_item": 1,
+		"input": {
+			"item": "create:experience_nugget"
+		},
+		"level": {
+			"max": 5
+		},
+		"needed_per_level": 72,
+		"result": "tconstruct:swiftstrike",
+		"slots": {
+			"upgrades": 1
+		},
+		"tools": {
+			"tag": "tconstruct:modifiable/melee/weapon"
+		}
+	}).id("tconstruct:tools/modifiers/upgrade/swiftstrike_from_shard")
+
+	event.custom({
+		"type": "tconstruct:incremental_modifier",
+		"allow_crystal": false,
+		"amount_per_item": 9,
+		"input": {
+			"item": "create:experience_block"
+		},
+		"leftover": "create:experience_nugget",
+		"level": {
+			"max": 5
+		},
+		"needed_per_level": 72,
+		"result": "tconstruct:swiftstrike",
+		"slots": {
+			"upgrades": 1
+		},
+		"tools": {
+			"tag": "tconstruct:modifiable/melee/weapon"
+		}
+	}).id("tconstruct:tools/modifiers/upgrade/swiftstrike_from_block")
+
 	/**
 	 * 创建 TCon 输入材料 JSON
 	 *
@@ -398,46 +439,21 @@ ServerEvents.recipes((event) => {
 		])
 		.build()
 
-	event.custom({
-		"type": "tconstruct:incremental_modifier",
-		"allow_crystal": false,
-		"amount_per_item": 1,
-		"input": {
-			"item": "create:experience_nugget"
-		},
-		"level": {
-			"max": 5
-		},
-		"needed_per_level": 72,
-		"result": "tconstruct:swiftstrike",
-		"slots": {
-			"upgrades": 1
-		},
-		"tools": {
-			"tag": "tconstruct:modifiable/melee/weapon"
-		}
-	}).id("tconstruct:tools/modifiers/upgrade/swiftstrike_from_shard")
-
-	event.custom({
-		"type": "tconstruct:incremental_modifier",
-		"allow_crystal": false,
-		"amount_per_item": 9,
-		"input": {
-			"item": "create:experience_block"
-		},
-		"leftover": "create:experience_nugget",
-		"level": {
-			"max": 5
-		},
-		"needed_per_level": 72,
-		"result": "tconstruct:swiftstrike",
-		"slots": {
-			"upgrades": 1
-		},
-		"tools": {
-			"tag": "tconstruct:modifiable/melee/weapon"
-		}
-	}).id("tconstruct:tools/modifiers/upgrade/swiftstrike_from_block")
+	// 不毁
+	new ModifierRecipeBuilder("tconstruct:unbreakable")
+		.allowCrystal(true)
+		.checkTraitLevel(true)
+		.slots("abilities", 1)
+		.level(1)
+		.tools("#tconstruct:modifiable/durability")
+		.inputs([
+			"#forge:plates/dense_obsidian",
+			Mechanisms.RAILWAY.COM,
+			"#forge:plates/dense_obsidian",
+			"#forge:ingots/netherite",
+			"#forge:ingots/netherite"
+		])
+		.build("tconstruct:tools/modifiers/ability/unbreakable")
 
 	let luckRecipes = [
 		[1, "#forge:dyes/blue", true],
