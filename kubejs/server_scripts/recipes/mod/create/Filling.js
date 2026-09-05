@@ -52,6 +52,13 @@ ServerEvents.recipes((event) => {
 		"minecraft:large_amethyst_bud",
 		Fluid.of("cmi:crystal_catalyt", 50)
 	])
+
+	// 回响碎片
+	create.filling("minecraft:echo_shard", [
+		"cmi:charged_amethyst",
+		Fluid.of("create_enchantment_industry:experience", 180)
+	])
+
 	// 高压蒸汽容器
 	create.filling("steampowered:pressurized_steam_container", [
 		"steampowered:pressurized_gas_container",
