@@ -16,11 +16,11 @@ JEIEvents.removeRecipes((event) => {
 	])
 
 	removeRecipeFromJEI("minecraft:blasting", [
-		"cmi:blasting/steel_ingot/cooking_pot",
-		"cmi:blasting/steel_ingot/skillet",
-		"cmi:blasting/steel_ingot/pot",
-		"cmi:blasting/steel_ingot/stockpot",
-		"cmi:blasting/steel_ingot/stockpot_lid",
+		"cmi:blasting/steel_ingot/cooking_pot__manual_only",
+		"cmi:blasting/steel_ingot/skillet__manual_only",
+		"cmi:blasting/steel_ingot/pot__manual_only",
+		"cmi:blasting/steel_ingot/stockpot__manual_only",
+		"cmi:blasting/steel_ingot/stockpot_lid__manual_only",
 	])
 
 	if (ids.contains("custommachinery:custom_machine")) {
