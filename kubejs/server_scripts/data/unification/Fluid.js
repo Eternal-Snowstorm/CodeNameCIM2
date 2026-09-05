@@ -1,6 +1,6 @@
 ServerEvents.highPriorityData((event) => {
 	// 石油
-	addJsonFile("oil", addUnification(
+	addJsonFile("crude_oil", addUnification(
 		"#forge:oil",
 		"createdieselgenerators:crude_oil"
 	))
