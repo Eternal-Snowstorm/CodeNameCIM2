@@ -85,6 +85,11 @@ ItemEvents.modification((event) => {
 		})
 	})
 
+	// 桶
+	event.modify("minecraft:bucket", (modify) => {
+		modify.setMaxStackSize(64)
+	})
+
 	if (FestivalUtils.isAprilFoolsDay()) {
 		event.modify("mekanism:alloy_infused", (modify) => {
 			modify.setNameKey("item.cmi.sweet_berry_hard_candy")
