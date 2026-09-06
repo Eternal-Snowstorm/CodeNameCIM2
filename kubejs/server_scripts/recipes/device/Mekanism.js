@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
 		"mekanism:metallurgic_infuser",
 		[
 			Mechanisms.IRON.COM,
-			Casing.STEEL,
+			Casing.STAINLESS_STEEL,
 			"#forge:gears/chromeplated_steel",
 			"cmi:blitz_unit"
 		]
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
 	neoecoae.integrated_working_station()
 		.itemOutput("cmi:electronic_blast_furnace")
 		.inputItems([
-			"mekanism:steel_casing",
+			Casing.STAINLESS_STEEL,
 			"ae2:semi_dark_monitor",
 			"ad_astra:etrionic_capacitor",
 			Mechanisms.NETHER.COM,
@@ -89,7 +89,7 @@ ServerEvents.recipes((event) => {
 	neoecoae.integrated_working_station()
 		.itemOutput("mekanism:induction_casing")
 		.inputItems([
-			"mekanism:steel_casing",
+			Casing.STAINLESS_STEEL,
 			"2x #forge:plates/aluminum",
 			"2x #forge:plates/vanadium"
 		])
@@ -108,7 +108,7 @@ ServerEvents.recipes((event) => {
 	neoecoae.integrated_working_station()
 		.itemOutput("mekanism:boiler_casing")
 		.inputItems([
-			Casing.STEEL,
+			Casing.STAINLESS_STEEL,
 			"2x #forge:plates/bronze",
 			"2x #forge:plates/tungsten_steel"
 		])
@@ -135,7 +135,7 @@ ServerEvents.recipes((event) => {
 	neoecoae.integrated_working_station()
 		.itemOutput("2x mekanism:superheating_element")
 		.inputItems([
-			Casing.STEEL,
+			Casing.STAINLESS_STEEL,
 			"2x #forge:plates/bronze",
 			"2x moreburners:nickel_coil",
 			Mechanisms.COIL.COM
