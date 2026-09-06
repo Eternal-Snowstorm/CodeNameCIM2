@@ -84,4 +84,62 @@ ServerEvents.recipes((event) => {
 			Mechanisms.NETHER.COM,
 			Mechanisms.BASIC.COM
 		])
+
+	// 感应矩阵
+	neoecoae.integrated_working_station()
+		.itemOutput("mekanism:induction_casing")
+		.inputItems([
+			"mekanism:steel_casing",
+			"2x #forge:plates/aluminum",
+			"2x #forge:plates/vanadium"
+		])
+		.inputFluid(Fluid.of("cmi:structural_plastic", 100))
+		.id("mekanism:induction/casing")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("mekanism:induction_port")
+		.inputItems([
+			"mekanism:induction_casing",
+			Mechanisms.BASIC.COM,
+			"#forge:plates/industrial_iron"
+		]).id("mekanism:induction/port")
+
+	// 锅炉
+	neoecoae.integrated_working_station()
+		.itemOutput("mekanism:boiler_casing")
+		.inputItems([
+			Casing.STEEL,
+			"2x #forge:plates/bronze",
+			"2x #forge:plates/tungsten_steel"
+		])
+		.inputFluid(Fluid.of("cmi:structural_plastic", 100))
+		.id("mekanism:boiler_casing")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("mekanism:boiler_valve")
+		.inputItems([
+			"mekanism:boiler_casing",
+			Mechanisms.BASIC.COM,
+			"#forge:plates/industrial_iron"
+		]).id("mekanism:boiler_valve")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("mekanism:pressure_disperser")
+		.inputItems([
+			"ad_astra:vent",
+			"2x #forge:plates/steel",
+			"2x #forge:plates/stainless_steel"
+		])
+		.id("mekanism:pressure_disperser")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("2x mekanism:superheating_element")
+		.inputItems([
+			Casing.STEEL,
+			"2x #forge:plates/bronze",
+			"2x moreburners:nickel_coil",
+			Mechanisms.COIL.COM
+		]).id("mekanism:superheating_element")
+
+	// 涡轮
 })
