@@ -175,4 +175,20 @@ ServerEvents.recipes((event) => {
 		"4x ae2:certus_quartz_dust",
 		"thermal:cured_rubber"
 	]).id("cmi:crafting/optical_fiber")
+
+	// 工业铁方块
+	kubejs.shaped("6x cmi:industrial_iron_slab", [
+		"XXX"
+	], {
+		X: "create:industrial_iron_block"
+	})
+
+	kubejs.shaped("4x cmi:industrial_iron_stairs", [
+		"X  ",
+		"XX ",
+		"XXX"
+	], {
+		X: "create:industrial_iron_block"
+	})
+
 })
