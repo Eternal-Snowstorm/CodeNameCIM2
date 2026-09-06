@@ -170,17 +170,6 @@
 			icon: "immersiveengineering:auto_workbench"
 			icon_scale: 2.0d
 			id: "6ED98C2148C69BD7"
-			rewards: [{
-				id: "5D42BD25D845A30B"
-				item: {
-					Count: 1
-					id: "mbtool:mbtool"
-					tag: {
-						energy: 10000000
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "?!强强!?"

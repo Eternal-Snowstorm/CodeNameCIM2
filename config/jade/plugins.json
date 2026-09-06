@@ -143,6 +143,9 @@
     "eco_crafting_worker": true,
     "eco_crafting_system": true
   },
+  "fluidlogistics": {
+    "blaze_cooler_icon": true
+  },
   "expatternprovider": {
     "jade_chamber": true,
     "jade_wireless": true

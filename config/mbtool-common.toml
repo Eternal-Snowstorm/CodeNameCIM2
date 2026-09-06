@@ -2,10 +2,10 @@
 ["Energy Settings"]
 	#Maximum energy capacity of the Multibuilder Tool (in FE)
 	#Range: 100000 ~ 100000000
-	maxEnergy = 10008000
+	maxEnergy = 10000000
 	#Energy transfer rate for charging/discharging (in FE/tick)
 	#Range: 10000 ~ 1000000
-	energyTransferRate = 10000
+	energyTransferRate = 1000000
 	#Energy cost per block placed (in FE)
 	#Range: 1 ~ 10000
 	energyPerBlock = 1

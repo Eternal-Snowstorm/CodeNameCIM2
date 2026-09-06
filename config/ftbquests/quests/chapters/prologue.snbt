@@ -318,6 +318,10 @@
 						}
 						{
 							level: 1
+							name: "nebula_tinker:shadow"
+						}
+						{
+							level: 1
 							name: "tconstruct:silky_shears"
 						}
 					]
@@ -450,9 +454,12 @@
 					]
 					tic_volatile_data: {
 						abilities: 2
+						"tconstruct:experience": 2.5f
 						"tconstruct:indestructible": 1b
+						"tconstruct:netherite": 1b
 						"tconstruct:rarity": 2
 						"tconstruct:soulbound": 1b
+						"tconstruct:sweep_percent": 0.75f
 						upgrades: 132
 					}
 				}

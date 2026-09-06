@@ -172,14 +172,6 @@ ServerEvents.recipes((event) => {
 		.cast_consumed(true)
 		.id("immersiveengineering:crafting/ersatz_leather")
 
-	// 防水纸板块
-	tconstruct.casting_basin("fluidlogistics:waterproof_cardboard_block")
-		.cast("create:cardboard_block")
-		.fluid(Fluid.of("thermal:resin", 500))
-		.cooling_time(20 * 8)
-		.cast_consumed(true)
-		.id("fluidlogistics:waterproof_cardboard_block")
-
 	let barTypes = [
 		"brass",
 		"copper",

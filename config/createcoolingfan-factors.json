@@ -22,5 +22,7 @@
   "create_dragons_plus:coloring_purple": 0.5,
   "create_dragons_plus:coloring_magenta": 0.5,
   "create_dragons_plus:coloring_pink": 0.5,
-  "create_dragons_plus:ending": 0.5
+  "create_dragons_plus:ending": 0.5,
+  "fluidlogistics:bulk_cooling": 0.5,
+  "fluidlogistics:inactive_bulk_cooling": 0.5
 }

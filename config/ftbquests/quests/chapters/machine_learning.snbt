@@ -987,6 +987,17 @@
 			]
 			icon: "mekanism:dynamic_valve"
 			id: "71449F7653BC203B"
+			rewards: [{
+				id: "3C141FAD05179E6E"
+				item: {
+					Count: 1
+					id: "mbtool:mbtool"
+					tag: {
+						energy: 10008000
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "大胃袋😋"
@@ -1119,6 +1130,29 @@
 			title: "缺少安山岩?"
 			x: -20.0d
 			y: 18.5d
+		}
+		{
+			dependencies: ["28DFB902C00FCB4D"]
+			description: [
+				"这是一台早期的发电机, 虽然发电效率低下, 输出只有 &b100FE/Tick&r, 却能够为设备提供基础的充电服务"
+				""
+				"在发电机内部放入燃料即可发电. 将工匠工作台紧贴发电机放置, 即可为工匠工作台充电"
+				"将需要充电的物品放入工匠工作台电力条下方的物品槽中, 即可为物品充电"
+			]
+			id: "0F6D17B7AF1897C4"
+			rewards: [{
+				id: "028DCD676EF77D32"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			subtitle: "非常原始的发电机"
+			tasks: [{
+				id: "30F91BE08F14CA3B"
+				item: "ad_astra:coal_generator"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 19.5d
 		}
 	]
 	title: "巧械奇工"
