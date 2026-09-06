@@ -1,0 +1,3 @@
+NebulaEvents.registerJeiAliases((event) => {
+	
+})
