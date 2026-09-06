@@ -14,13 +14,17 @@ ServerEvents.recipes((event) => {
 			return
 		}
 
-		if (
-			id.includes("palettes")
-			|| id.includes("dye")
-			|| id.includes("concrete")
-		) {
-			return
-		}
+		let idBlockList = [
+			"palettes",
+			"dye",
+			"concrete",
+			"compat/tconstruct"
+		]
+		idBlockList.forEach((ids) => {
+			if (id.includes(ids)) {
+				return
+			}
+		})
 
 		let builder = cmi.chemical_reactor()
 		if (json.has("ingredients")) {
