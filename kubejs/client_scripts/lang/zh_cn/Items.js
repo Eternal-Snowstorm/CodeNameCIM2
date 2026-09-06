@@ -313,6 +313,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("steel_upgrade", "钢升级")
 	addItemLang("hepatizon_upgrade", "黑色柯林斯青铜升级")
 
+	addItemLang("steam_cast_iron_upgrade", "铸铁蒸汽升级组件")
+	addItemLang("steam_steel_upgrade", "钢制蒸汽升级组件")
+
 	addItemLang("music_disc_mechanism", "Mechanism - Belalus")
 
 	addItemLang("hammer_head", "冲压头")

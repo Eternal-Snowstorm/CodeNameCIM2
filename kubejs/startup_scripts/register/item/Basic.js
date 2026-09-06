@@ -189,7 +189,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("fluix_wire")
 		.tag("forge:wires/fluix")
 		.tag("forge:wires")
-	
+
 	// 磁触点
 	addMaterial("magnetic_contact")
 
@@ -318,6 +318,15 @@ StartupEvents.registry("item", (event) => {
 	addItem("torn_parchment_b")
 		.texture(Cmi.loadResource("item/material/parchment/torn_parchment_b"))
 
+	// 蒸汽升级
+	addItem("steam_cast_iron_upgrade")
+		.texture(Cmi.loadResource("item/upgrade/steam/cast_iron"))
+		.tag(Cmi.loadResource("steam_upgrades"))
+
+	addItem("steam_steel_upgrade")
+		.texture(Cmi.loadResource("item/upgrade/steam/steel"))
+		.tag(Cmi.loadResource("steam_upgrades"))
+
 	let SomeModelsJson = {
 		cogwheel: function (material) {
 			const PARENT = "cmi:item/cogwheels/cogwheel"
@@ -392,183 +401,4 @@ StartupEvents.registry("item", (event) => {
 			.tag(`cmi:casing_framework`)
 			.tag(`cmi:casing_framework/${frame}`)
 	})
-
-	// 纯化硅晶
-	// addMaterial("purified_silicon_crystal")
-
-	// 含氟废渣
-	// addMaterial("fluoride_containing_waste")
-
-	// 强化碳纳米管III型
-	// addMaterial("reinforced_carbon_nanotube_3")
-
-	// 粗结晶氦
-	// addMaterial("raw_helium_crystal")
-
-	// 富集结晶氦
-	// addMaterial("enriched_helium_crystal")
-
-	// 石墨烯板
-	// addMaterial("graphene_plate")
-
-	// C8_RC
-	// 月岩粉
-	// addMaterial("moon_dust")
-
-	// 晶源结晶
-	// addMaterial("moon_crystal_source")
-
-	// 焙烧结晶
-	// addMaterial("roasted_moon_crystal_source")
-
-	// 富集晶簇
-	// addMaterial("enriched_crystal_cluster")
-
-	// 强化纳米复合板
-	// addMaterial("reinforced_nano_composite_plate")
-
-	// 含硫混合物
-	// addMaterial("sulfur_containing_mixture")
-
-	// 火星岩
-	// addMaterial("mars_dust")
-
-	// 热解火星岩
-	// addMaterial("pyrolyzed_mars_rock_residue")
-
-	// 粗锗
-	// addMaterial("raw_gemanium")
-
-	// 精锗
-	// addMaterial("refined_gemanium")
-
-	// 高纯锗粉
-	// addMaterial("pure_gemanium_dust")
-
-	// 焙烧锗晶
-	// addMaterial("roasted_gemanium_crystal")
-
-	// 掺杂锗晶
-	// addMaterial("doped_gemanium_crystal")
-
-	// 碳化还原锗铁混合物
-	// addMaterial("carbide_reduced_germanium_iron_mixture")
-
-	// 碳强化陶瓷胚体
-	// addMaterial("carbon_reinforced_ceramic_body")
-
-	// 还原性陶瓷胚体
-	// addMaterial("restorative_ceramic_body")
-
-	// 富集陶瓷胚体
-	// addMaterial("enriched_ceramic_body")
-
-	// 高温光导陶瓷
-	// addMaterial("high_temperature_optical_ceramic")
-
-	// 强化结构陶瓷
-	// addMaterial("reinforced_structure_ceramic")
-
-	// 含铁矿渣
-	// addMaterial("iron_containing_slag")
-
-	// 青磁性源质
-	// addMaterial("azure_magnetic_source")
-
-	// 赤磁性源质
-	// addMaterial("scarlet_magnetic_source")
-
-	// 磁性混合物
-	// addMaterial("magnetic_mixture")
-
-	// 偏青钕混合物
-	// addMaterial("rich_azure_magnetic_mixture")
-
-	// 偏赤钕混合物
-	// addMaterial("rich_scarlet_magnetic_mixture")
-
-	// 青钕磁性陶瓷
-	// addMaterial("azure_magnetic_ceramic")
-
-	// 赤钕磁性陶瓷
-	// addMaterial("scarlet_magnetic_ceramic")
-
-	// 磁性陶瓷
-	// addMaterial("magnetic_ceramic")
-
-	// Delta added
-	// 赤钕粉
-	// addMaterial("scarlet_magnetic_dust")
-
-	// 青钕粉
-	// addMaterial("azure_magnetic_dust")
-
-	// 富集辐射岩
-	// addMaterial("enriched_radiation_rock")
-
-	// 晶矿粉
-	// addMaterial("moon_crystal_dust")
-
-	// 晶板
-	// addMaterial("crystal_plate")
-
-	// 富集锗铁混合物
-	// addMaterial("enriched_germanium_iron_mixture")
-
-	// 还原性含铁矿渣
-	// addMaterial("reduced_iron_containing_slag")
-
-	// 强还原性含铁矿渣
-	// addMaterial("strong_reduced_iron_containing_slag")
-
-	// 去铁矿渣
-	// addMaterial("reduced_iron_slag")
-
-	// 铅矿渣
-	// addMaterial("lead_slag")
-
-	// 镀层方铅陶瓷
-	// addMaterial("plating_galena_ceramic")
-
-	// 方铅晶圆
-	// addMaterial("galena_wafer")
-
-	// 方铅釉料
-	// addMaterial("galena_enamel")
-
-	// 方铅石英
-	// addMaterial("galena_quartz")
-
-	// 去铁方铅石英
-	// addMaterial("reduced_iron_galena_quartz")
-
-	// 富集方铅石英
-	// addMaterial("enriched_galena_quartz")
-
-	// 复合陶瓷基板
-	// addMaterial("composite_ceramic_substrates")
-
-	// 幽匿碎块
-	// addMaterial("sculk_chunk")
-
-	// 失活幽匿
-	// addMaterial("dead_sculk")
-
-	// 活化幽匿
-	// addMaterial("active_sculk")
-
-	// 幽匿骨粉
-	// addMaterial("sculk_bonemeal")
-
-	// 幽匿之骨
-	// addMaterial("sculk_bone")
-
-	// 幽匿电路板
-	// addMaterial("sculk_circuit")
-
-	// 铬钒混合物
-	// addMaterial("chromium_vanadium_mixture")
-
-	// 铬钒催化剂
-	// addMaterial("chromium_vanadium_catalyst")
 })
