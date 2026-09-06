@@ -684,6 +684,7 @@
 					}
 					tic_volatile_data: {
 						abilities: 1
+						"tconstruct:magnet": 3
 						upgrades: 2
 					}
 				}
@@ -759,6 +760,7 @@
 					}
 					tic_volatile_data: {
 						abilities: 1
+						"tconstruct:magnet": 3
 						upgrades: 2
 					}
 				}
@@ -833,6 +835,7 @@
 					}
 					tic_volatile_data: {
 						abilities: 1
+						"tconstruct:magnet": 3
 						upgrades: 2
 					}
 				}
@@ -910,6 +913,7 @@
 					}
 					tic_volatile_data: {
 						abilities: 1
+						"tconstruct:magnet": 2
 						upgrades: 2
 					}
 				}

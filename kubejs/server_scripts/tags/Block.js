@@ -56,6 +56,10 @@ ServerEvents.tags("block", (event) => {
 			"tconstruct:blood_slime_tall_grass"
 		])
 
+	// 集装箱
+	event.get("mekanism:cardboard_blacklist")
+		.add("#minecraft:leaves")
+
 	// 下界农田
 	event.get("cmi:nether_farmland")
 		.add("minecraft:netherrack")

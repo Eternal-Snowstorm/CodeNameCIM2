@@ -26,11 +26,11 @@
 		#If non-empty, only material will be shown on parts in JEI (or the first valid material if this is invalid for the part).
 		#If empty, all materials will show
 		showOnlyPartMaterial = ""
-		#If true, tables such as the part builder and tinker station will show all variants in JEI. If false the variants only show in the tables tab
+		#If true, tables such as the part builder and tinker station will show all variants in JEI. If false the variants only show in the table variants tab
 		showAllTableVariants = false
-		#If true, anvils will show all metal variants in JEI. If false, the variants only show in the tables tab
+		#If true, anvils will show all metal variants in JEI. If false, the variants only show in the table variants tab
 		showAllAnvilVariants = false
-		#If true, smeltery and foundry controllers, drains, ducts, and chutes will show all variants in JEI. If false, the variants only shows in the smeltery tab
+		#If true, smeltery and foundry controllers, drains, ducts, and chutes will show all variants in JEI. If false, the variants only shows in the table variants tab
 		showAllSmelteryVariants = false
 		#If true, filled copper cans and fluid gauges will show in JEI. If false only empty ones will show
 		showFilledFluidTanks = false

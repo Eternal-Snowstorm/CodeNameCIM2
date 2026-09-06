@@ -4,8 +4,12 @@
 #Mod authors: this config is not meant for compatibility with your heart renderer, cancel the RenderGameOverlayEvent.Pre event and our logic won't run
 #Allowed Values: DISABLE, NO_MAX, WITH_MAX
 heartRenderer = "WITH_MAX"
-#If true, fluids properly have their lighting adjusted under vanilla fog effects such as blindness. If false, they render as nearly fullbright ignoring fog.
+#If true, fluids properly have their lighting adjusted under vanilla fog effects such as blindness. If false, they render as nearly fullbright ignoring fog and have limited light level support.
 #This config option is provided as the fix breaks shaders, and slightly broken is better than fully broken.
 #Best fix is to fix your shaders though, so you can have no broken visuals.
 enableFluidFogFix = false
+#If true, the fallback shader for fluid uses a text shader, which provides better compatability. If false, uses the generic position color tex lightmap shader.
+#The text shader provides a fallback with more functionality than the generic one, but may be unexpected by other custom rendering.
+#Does nothing if enableFluidFogFix is true.
+fluidFallbackUseTextShader = true
 

@@ -1,0 +1,25 @@
+filename = 'FunctionalStorageJS-1.3.jar'
+name = 'Functional-Storage-JS'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'FunctionalStorageJS-1.3.jar'
+
+[download]
+hash = 'b332ab56810a70d95a8b1ef196c0b1ae87933247'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8807502
+project-id = 1649716
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '556861'
+type = 'REQUIRED'
