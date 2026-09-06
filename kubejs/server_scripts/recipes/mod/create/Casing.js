@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let {  create } = event.getRecipes()
+	let { create } = event.getRecipes()
 
 	// 机壳增产
 	create.deploying(`create:andesite_casing`, [
@@ -15,6 +15,11 @@ ServerEvents.recipes((event) => {
 	create.deploying(`create:copper_casing`, [
 		"#forge:treated_wood",
 		"cmi:copper_casing_framework"
+	])
+
+	create.deploying("cmi:bronze_casing", [
+		"cmi:industrial_frame",
+		"cmi:bronze_casing_framework"
 	])
 
 	// 安山机壳
@@ -37,7 +42,7 @@ ServerEvents.recipes((event) => {
 
 	// 青铜机壳
 	create.item_application("cmi:bronze_casing", [
-		"createdeco:industrial_iron_sheet_metal",
+		"cmi:industrial_frame",
 		["#forge:ingots/bronze", "#forge:plates/bronze"]
 	]).id("cmi:item_application/bronze_casing")
 })

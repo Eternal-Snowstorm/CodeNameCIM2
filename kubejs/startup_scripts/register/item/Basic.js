@@ -393,6 +393,7 @@ StartupEvents.registry("item", (event) => {
 	let casingFrame = [
 		"andesite",
 		"brass",
+		"bronze",
 		"copper"
 	]
 	casingFrame.forEach((frame) => {

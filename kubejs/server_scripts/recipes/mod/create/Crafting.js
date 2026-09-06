@@ -108,6 +108,7 @@ ServerEvents.recipes((event) => {
 	let casingFrame = [
 		"andesite",
 		"brass",
+		"bronze",
 		"copper"
 	]
 	casingFrame.forEach((frame) => {
@@ -300,4 +301,24 @@ ServerEvents.recipes((event) => {
 		A: "#forge:plates/iron",
 		B: "#forge:rods/iron"
 	}).id("createaddition:crafting/spool")
+
+	// 升级
+	kubejs.shaped("cmi:steam_cast_iron_upgrade", [
+		" P ",
+		"PGP",
+		" P "
+	], {
+
+		P: "#forge:plates/cast_iron",
+		G: "#forge:gears/bronze"
+	})
+
+	kubejs.shaped("cmi:steam_steel_upgrade", [
+		" P ",
+		"PGP",
+		" P "
+	], {
+		P: "#forge:plates/steel",
+		G: "#forge:gears/cast_iron"
+	})
 })

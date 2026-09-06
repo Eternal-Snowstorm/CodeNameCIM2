@@ -158,6 +158,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("composite_carbon_fiber_gear", "复合碳纤齿轮")
 	addItemLang("andesite_casing_framework", "安山机壳框架")
 	addItemLang("brass_casing_framework", "黄铜机壳框架")
+	addItemLang("bronze_casing_framework", "青铜机壳框架")
 	addItemLang("copper_casing_framework", "铜机壳框架")
 
 	// 电子元件
