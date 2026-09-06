@@ -241,7 +241,7 @@ let Casing = Object.freeze({
 	SMART: "cmi:smart_casing",
 	THERMAL: "thermal:machine_frame",
 	COMPUTE: "cmi:computing_casing",
-	STEEL: "mekanism:steel_casing"
+	STAINLESS_STEEL: "mekanism:steel_casing"
 })
 
 // 木材系列
