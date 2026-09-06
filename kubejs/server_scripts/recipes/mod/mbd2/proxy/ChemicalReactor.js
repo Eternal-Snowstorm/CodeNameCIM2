@@ -14,13 +14,13 @@ ServerEvents.recipes((event) => {
 			return
 		}
 
-		let idBlockList = [
+		let idBlackList = [
 			"palettes",
 			"dye",
 			"concrete",
 			"compat/tconstruct"
 		]
-		idBlockList.forEach((ids) => {
+		idBlackList.forEach((ids) => {
 			if (id.includes(ids)) {
 				return
 			}
