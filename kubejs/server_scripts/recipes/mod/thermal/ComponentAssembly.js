@@ -137,4 +137,20 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/redstone",
 		Fluid.of("tconstruct:molten_rose_gold", 90)
 	])
+
+	// 升级
+	addComponRecipe("cmi:steam_cast_iron_upgrade", [
+		"#forge:gears/cast_iron",
+		"#forge:plates/cast_iron",
+		"#forge:gears/bronze",
+		Mechanisms.STEAM.COM
+	])
+
+	addComponRecipe("cmi:steam_steel_upgrade", [
+		"#forge:gears/steel",
+		"#forge:plates/steel",
+		"#forge:gears/cast_iron",
+		Mechanisms.STEAM.COM
+	])
+
 })
