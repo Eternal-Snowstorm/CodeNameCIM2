@@ -19,7 +19,6 @@ JEIEvents.information((event) => {
 	addJEIInfo("thermal:rubber")
 	addJEIInfo("cmi:sludge_extract")
 	addJEIInfo("#easyrepair:repair_item_pouchs")
-	addJEIInfo("#forge:buckets/dye")
 	addJEIInfo("#railways:filled_paint_pitchers")
 
 })
