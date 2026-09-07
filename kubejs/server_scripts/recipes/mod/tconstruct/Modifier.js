@@ -466,6 +466,21 @@ ServerEvents.recipes((event) => {
 		])
 		.build()
 
+	// 延展
+	new ModifierRecipeBuilder("tconstruct:expanded")
+		.allowCrystal(true)
+		.checkTraitLevel(true)
+		.tools("#tconstruct:modifiable/held")
+		.inputs([
+			"#forge:plates/amethyst_bronze",
+			"cmi:gold_mechanism",
+			"#forge:plates/amethyst_bronze",
+			"#vintageimprovements:springs/amethyst_bronze",
+			"#vintageimprovements:springs/amethyst_bronze"
+		])
+		.build()
+		.id("tconstruct:tools/modifiers/ability/expanded")
+
 	let luckRecipes = [
 		[1, "#forge:dyes/blue", true],
 		[2, "#forge:gems/diamond", false],
