@@ -35,8 +35,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 钢制机壳
-	addComponRecipe("2x mekanism:steel_casing", [
-		"#forge:plates/stainless_steel",
+	addComponRecipe("mekanism:steel_casing", [
 		"#forge:plates/stainless_steel",
 		"cmi:osmium_tile",
 		"#forge:gears/chromeplated_steel"
@@ -59,19 +58,22 @@ ServerEvents.recipes((event) => {
 	// 机器框架
 	addComponRecipe("thermal:machine_frame", [
 		"#forge:plates/invar",
-		"cmi:industrial_frame"
+		"cmi:industrial_frame",
+		"#forge:rods/tin"
 	])
 
 	// 铁机壳
 	addComponRecipe("cmi:iron_casing", [
 		"#forge:plates/iron",
-		"cmi:industrial_frame"
+		"cmi:industrial_frame",
+		"#forge:rods/copper"
 	])
 
 	// 钢机壳
 	addComponRecipe("cmi:steel_casing", [
 		"#forge:plates/steel",
-		"cmi:industrial_frame"
+		"cmi:industrial_frame",
+		"#forge:rods/electrum"
 	])
 
 	// PZ管道
@@ -137,20 +139,4 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/redstone",
 		Fluid.of("tconstruct:molten_rose_gold", 90)
 	])
-
-	// 升级
-	addComponRecipe("cmi:steam_cast_iron_upgrade", [
-		"#forge:gears/cast_iron",
-		"#forge:plates/cast_iron",
-		"#forge:gears/bronze",
-		Mechanisms.STEAM.COM
-	])
-
-	addComponRecipe("cmi:steam_steel_upgrade", [
-		"#forge:gears/steel",
-		"#forge:plates/steel",
-		"#forge:gears/cast_iron",
-		Mechanisms.STEAM.COM
-	])
-
 })
