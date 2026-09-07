@@ -94,11 +94,11 @@ function upgradeBlock(item, block, player, level, targetId) {
 	player.swing()
 	level.playSound(
 		null,
-		player.x,
-		player.y,
-		player.z,
+		block.x,
+		block.y,
+		block.z,
 		"create:mechanical_press_activation",
-		"players",
+		"blocks",
 		1.0,
 		1.0
 	)

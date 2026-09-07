@@ -76,4 +76,19 @@ ServerEvents.recipes((event) => {
 		"cmi:optical_fiber",
 		Fluid.of("cmi:molten_fluix", 25)
 	])
+
+	// 扩容
+	for (let level = 1; level <= 3; level++) {
+		let input = level === 1
+			? "minecraft:book"
+			: Item.of("minecraft:enchanted_book").enchant("create:capacity", level - 1)
+
+		let output = Item.of("minecraft:enchanted_book")
+			.enchant("create:capacity", level)
+
+		create.filling(output, [
+			input,
+			Fluid.of("tconstruct:molten_glass", 1000)
+		])
+	}
 })
