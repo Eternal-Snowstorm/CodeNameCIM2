@@ -76,12 +76,6 @@ StartupEvents.registry("fluid", (event) => {
 	// 电镀液
 	addColorFluid("plating_solution", 0x55AAAA)
 
-	// 铝酸钠溶液
-	addColorFluid("sodium_aluminate_solution", 0xAEAEAE)
-
-	// 烧碱溶液
-	addColorFluid("caustic_soda_solution", 0xFFFFFF)
-
 	// 锗溶液
 	addColorFluid("germanium_solution", 0xCEB58B)
 

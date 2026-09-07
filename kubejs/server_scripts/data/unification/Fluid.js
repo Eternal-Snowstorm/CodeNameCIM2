@@ -1,19 +1,31 @@
 ServerEvents.highPriorityData((event) => {
 	// 石油
-	addJsonFile("crude_oil", addUnification(
-		"#forge:oil",
+	addJsonFile("crude_oil", addUnification([
+		"ad_astra:oil",
+		"thermal:crude_oil"
+	],
 		"createdieselgenerators:crude_oil"
 	))
 
 	// 蒸汽
-	addJsonFile("steam", addUnification(
-		"#forge:steam",
+	addJsonFile("steam", addUnification([
+		"steampowered:steam",
+		"create_steam_ages:steam"
+	],
 		"mekanism:steam"
 	))
 
+	// 杂酚油
+	addJsonFile("creosote", addUnification([
+		"thermal:creosote"
+	],
+		"immersiveengineering:creosote"
+	))
+
 	// 凛冰
-	addJsonFile("cryo", addUnification(
-		"ad_astra:cryo_fuel",
+	addJsonFile("cryo", addUnification([
+		"ad_astra:cryo_fuel"
+	],
 		"neoecoae:cryotheum_solution"
 	))
 
@@ -25,7 +37,7 @@ ServerEvents.highPriorityData((event) => {
 	 */
 	function addUnification(match, fluid) {
 		return [{
-			matchFluid: [match],
+			matchFluid: match,
 			resultFluid: fluid
 		}]
 	}

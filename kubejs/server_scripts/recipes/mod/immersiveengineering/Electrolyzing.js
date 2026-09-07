@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 	event.custom({
 		"type": "immersiveindustry:electrolyzer",
 		"input": {
-			"tag": "cmi:aluminum_oxide"
+			"item": "cmi:red_mud"
 		},
 		"fluid": {
 			"tag": "forge:redstone_acid",
@@ -15,5 +15,5 @@ ServerEvents.recipes((event) => {
 		},
 		"large_only": false,
 		"time": 1000
-	})
+	}).id("immersiveindustry:electrolyzer/aluminum")
 })
