@@ -10,14 +10,14 @@
 
 ## 1. 从 NBT 还原的关键参数 (核对用)
 
-| 项 | 值 |
-|---|---|
-| id | `cmi:reinforced_coke_oven` |
-| 结构 | 5x5x5, 字符 0-6: 0=scorched_bricks / 1=any / 2=总线|seared / 3=seared 内衬 / 4=slab 顶板 / 5=vent 烟囱 / 6=控制器 |
-| 状态树 | base(off) → formed → working(on,15,blastfurnace音效) → waiting(off); formed → suspend |
-| 配方类型 | 代理 `immersiveengineering:coke_oven` |
-| 配方修饰 | 时长 x0.5, 最大并行 x4 (maxParallel 无 JS/Java setter, 见第 5 节) |
-| 特性 | item 输入 x1 / item 输出 x1 / 流体输出 32000mB |
+| 项       | 值                                                                                    |
+| -------- | ------------------------------------------------------------------------------------- |
+| id       | `cmi:reinforced_coke_oven`                                                            |
+| 结构     | 5x5x5, 字符 0-6: 0=scorched_bricks / 1=any / 2=总线                                   | seared / 3=seared 内衬 / 4=slab 顶板 / 5=vent 烟囱 / 6=控制器 |
+| 状态树   | base(off) → formed → working(on,15,blastfurnace音效) → waiting(off); formed → suspend |
+| 配方类型 | 代理 `immersiveengineering:coke_oven`                                                 |
+| 配方修饰 | 时长 x0.5, 最大并行 x4 (maxParallel 无 JS/Java setter, 见第 5 节)                     |
+| 特性     | item 输入 x1 / item 输出 x1 / 流体输出 32000mB                                        |
 
 ---
 
@@ -27,27 +27,26 @@
 // startup_scripts/reinforced_coke_oven.js
 
 // ---- 类引用 ----
-const RL            = Java.loadClass('net.minecraft.resources.ResourceLocation')
-const MachineStateC = Java.loadClass('com.lowdragmc.mbd2.common.machine.definition.config.MachineState')
-const BlockPropsC   = Java.loadClass('com.lowdragmc.mbd2.common.machine.definition.config.ConfigBlockProperties')
-const ItemPropsC    = Java.loadClass('com.lowdragmc.mbd2.common.machine.definition.config.ConfigItemProperties')
-const MachineSetC   = Java.loadClass('com.lowdragmc.mbd2.common.machine.definition.config.ConfigMachineSettings')
-const LogicC        = Java.loadClass('com.lowdragmc.mbd2.common.machine.definition.config.ConfigRecipeLogicSettings')
-const MBSettingsC   = Java.loadClass('com.lowdragmc.mbd2.common.machine.definition.config.ConfigMultiblockSettings')
-const MBC           = Java.loadClass('com.lowdragmc.mbd2.common.machine.definition.MultiblockMachineDefinition')
-const RotationC     = Java.loadClass('com.lowdragmc.mbd2.api.block.RotationState')
-const IOC           = Java.loadClass('com.lowdragmc.mbd2.api.capability.recipe.IO')
-const SlotTraitC    = Java.loadClass('com.lowdragmc.mbd2.common.trait.item.ItemSlotCapabilityTraitDefinition')
-const FluidTraitC   = Java.loadClass('com.lowdragmc.mbd2.common.trait.fluid.FluidTankCapabilityTraitDefinition')
-const FactoryP      = Java.loadClass('com.lowdragmc.mbd2.api.pattern.FactoryBlockPattern')
-const Predicates    = Java.loadClass('com.lowdragmc.mbd2.api.pattern.Predicates')
-const ShapesC       = Java.loadClass('net.minecraft.world.phys.shapes.Shapes')
-const MBDRegistries = Java.loadClass('com.lowdragmc.mbd2.api.registry.MBDRegistries')
-const MachineDefs   = MBDRegistries.getField('MACHINE_DEFINITIONS').get(null)   // MBDRegistry$RL
+let $MachineState = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.MachineState")
+let $ConfigBlockProperties = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigBlockProperties")
+let $ConfigItemProperties = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigItemProperties")
+let $ConfigMachineSettings = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigMachineSettings")
+let $ConfigRecipeLogicSettings = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigRecipeLogicSettings")
+let $ConfigMultiblockSettings = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigMultiblockSettings")
+let $MultiblockMachineDefinition = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.MultiblockMachineDefinition")
+let $RotationState = Java.loadClass("com.lowdragmc.mbd2.api.block.RotationState")
+let $IO = Java.loadClass("com.lowdragmc.mbd2.api.capability.recipe.IO")
+let $ItemSlotCapabilityTraitDefinition = Java.loadClass("com.lowdragmc.mbd2.common.trait.item.ItemSlotCapabilityTraitDefinition")
+let $FluidTankCapabilityTraitDefinition = Java.loadClass("com.lowdragmc.mbd2.common.trait.fluid.FluidTankCapabilityTraitDefinition")
+let $FactoryBlockPattern = Java.loadClass("com.lowdragmc.mbd2.api.pattern.FactoryBlockPattern")
+let $Predicates = Java.loadClass("com.lowdragmc.mbd2.api.pattern.$Predicates")
+let $Shapes = Java.loadClass("net.minecraft.woResourceLocationd.phys.shapes.Shapes")
+let $MBDRegistries = Java.loadClass("com.lowdragmc.mbd2.api.registry.$MBDRegistries")
+let mbdRegistries = $MBDRegistries.getField("MACHINE_DEFINITIONS").get(null)
 
 // ---- trait 工厂 ----
 function itemSlot(name, io) {
-    const t = new SlotTraitC()
+    const t = new $ItemSlotCapabilityTraitDefinition()
     t.setName(name); t.setPriority(0)
     t.setRecipeHandlerIO(io); t.setGuiIO(io)
     t.setSlotSize(1); t.setSlotLimit(64)
@@ -59,71 +58,71 @@ function itemSlot(name, io) {
     return t
 }
 function fluidTankOut() {
-    const t = new FluidTraitC()
-    t.setName('reinforced_coke_oven_output_fluid_tank'); t.setPriority(0)
-    t.setRecipeHandlerIO(IOC.OUT); t.setGuiIO(IOC.OUT)
+    const t = new $FluidTankCapabilityTraitDefinition()
+    t.setName("reinforced_coke_oven_output_fluid_tank"); t.setPriority(0)
+    t.setRecipeHandlerIO($IO.OUT); t.setGuiIO($IO.OUT)
     t.setTankSize(1); t.setCapacity(32000); t.setAllowSameFluids(true)
-    t.getCapabilityIO().setInternal(IOC.OUT)
-    t.getCapabilityIO().setFrontIO(IOC.OUT); t.getCapabilityIO().setBackIO(IOC.OUT)
-    t.getCapabilityIO().setLeftIO(IOC.OUT);  t.getCapabilityIO().setRightIO(IOC.OUT)
-    t.getCapabilityIO().setTopIO(IOC.OUT);   t.getCapabilityIO().setBottomIO(IOC.OUT)
+    t.getCapabilityIO().setInternal($IO.OUT)
+    t.getCapabilityIO().setFrontIO($IO.OUT); t.getCapabilityIO().setBackIO($IO.OUT)
+    t.getCapabilityIO().setLeftIO($IO.OUT);  t.getCapabilityIO().setRightIO($IO.OUT)
+    t.getCapabilityIO().setTopIO($IO.OUT);   t.getCapabilityIO().setBottomIO($IO.OUT)
     t.getAutoInput().setEnable(false);  t.getAutoOutput().setEnable(false)
     return t
 }
 
 // ---- 机器注册 ----
 MBDRegistryEvents.machine(event => {
-    const id = new RL('cmi', 'reinforced_coke_oven')
+    const id = new ResourceLocation("cmi", "reinforced_coke_oven")
 
     // ---------- 状态机 (与 NBT 状态树一致) ----------
-    const waiting = MachineStateC.builder().name('waiting')
-        .modelRenderer('cmi:block/machine/reinforced_coke_oven/off')
-        .shape(ShapesC.block()).lightLevel(0).build()
-    const suspend = MachineStateC.builder().name('suspend')
-        .shape(ShapesC.block()).build()                    // 无渲染器 -> 继承父状态
-    const working = MachineStateC.builder().name('working')
-        .modelRenderer('cmi:block/machine/reinforced_coke_oven/on')
-        .shape(ShapesC.block()).lightLevel(15)
-        .children(Java.loadClass('java.util.Arrays').asList(waiting)).build()
+    const waiting = $MachineState.builder().name("waiting")
+        .modelRenderer("cmi:block/machine/reinforced_coke_oven/off")
+        .shape($Shapes.block()).lightLevel(0).build()
+    const suspend = $MachineState.builder().name("suspend")
+        .shape($Shapes.block()).build()                    // 无渲染器 -> 继承父状态
+    const working = $MachineState.builder().name("working")
+        .modelRenderer("cmi:block/machine/reinforced_coke_oven/on")
+        .shape($Shapes.block()).lightLevel(15)
+        .children(Java.loadClass("java.util.Arrays").asList(waiting)).build()
     working.machineSound().setEnable(true)
-    working.machineSound().setSound(new RL('minecraft', 'block.blastfurnace.fire_crackle'))
+    working.machineSound().setSound(new ResourceLocation("minecraft", "block.blastfurnace.fire_crackle"))
     working.machineSound().setLoop(true)
     working.machineSound().setDelay(0)
     working.machineSound().setVolume(1)
-    const formed = MachineStateC.builder().name('formed')
-        .shape(ShapesC.block())
-        .children(Java.loadClass('java.util.Arrays').asList(working, suspend)).build()
-    const base = MachineStateC.builder().name('base')
-        .modelRenderer('cmi:block/machine/reinforced_coke_oven/off')
-        .shape(ShapesC.block()).lightLevel(0)
-        .children(Java.loadClass('java.util.Arrays').asList(formed)).build()
+    const formed = $MachineState.builder().name("formed")
+        .shape($Shapes.block())
+        .children(Java.loadClass("java.util.Arrays").asList(working, suspend)).build()
+    const base = $MachineState.builder().name("base")
+        .modelRenderer("cmi:block/machine/reinforced_coke_oven/off")
+        .shape($Shapes.block()).lightLevel(0)
+        .children(Java.loadClass("java.util.Arrays").asList(formed)).build()
 
     // ---------- 方块/物品属性 ----------
-    const blockProps = BlockPropsC.builder()
+    const blockProps = $ConfigBlockProperties.builder()
         .destroyTime(3).explosionResistance(6)
-        .rotationState(RotationC.NON_Y_AXIS)
+        .rotationState($RotationState.NON_Y_AXIS)
         .hasCollision(true).useAO(true).build()
-    const itemProps = ItemPropsC.builder()
+    const itemProps = $ConfigItemProperties.builder()
         .maxStackSize(64).isGui3d(true).useBlockLight(true).build()
 
     // ---------- 机器设置 (无参工厂, 必须 return!) ----------
-    const settings = MachineSetC.builder()
+    const settings = $ConfigMachineSettings.builder()
     settings.hasUI(true); settings.dropMachineItem(true)
-    settings.traitDefinitions(Java.loadClass('java.util.Arrays').asList(
-        itemSlot('reinforced_coke_oven_input_item_slot',  IOC.IN),
-        itemSlot('reinforced_coke_oven_output_item_slot', IOC.OUT),
+    settings.traitDefinitions(Java.loadClass("java.util.Arrays").asList(
+        itemSlot("reinforced_coke_oven_input_item_slot",  $IO.IN),
+        itemSlot("reinforced_coke_oven_output_item_slot", $IO.OUT),
         fluidTankOut()
     ))
     const settingsObj = settings.build()
 
     // ---------- 配方逻辑 (0.5x 时长; maxParallel 缺口见第 5 节) ----------
-    const mods = new (Java.loadClass('com.lowdragmc.mbd2.common.machine.definition.config.RecipeModifier$RecipeModifiers'))()
-    const mod = new (Java.loadClass('com.lowdragmc.mbd2.common.machine.definition.config.RecipeModifier'))()
+    const mods = new (Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.RecipeModifier$RecipeModifiers"))()
+    const mod = new (Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.RecipeModifier"))()
     mod.durationModifier.setMultiplier(0.5)
     mods.recipeModifiers.add(mod)
-    const logic = LogicC.builder()
+    const logic = $ConfigRecipeLogicSettings.builder()
         .enable(true)
-        .recipeType(new RL('cmi', 'reinforced_coke_oven'))
+        .recipeType(new ResourceLocation("cmi", "reinforced_coke_oven"))
         .recipeDampingValue(2)
         .consumeInputsAfterWorking(true)
         .alwaysSearchRecipe(false)
@@ -131,11 +130,11 @@ MBDRegistryEvents.machine(event => {
         .build()
 
     // ---------- 多方块设置 ----------
-    const mbSettings = MBSettingsC.builder()
+    const mbSettings = $ConfigMultiblockSettings.builder()
         .showUIOnlyFormed(true).showUIWhenClickStructure(true).build()
 
     // ---------- build 定义 ----------
-    const def = MBC.builder()
+    const def = $MultiblockMachineDefinition.builder()
         .id(id)
         .rootState(base)
         .blockProperties(blockProps)
@@ -147,48 +146,48 @@ MBDRegistryEvents.machine(event => {
 
     // ---------- 5x5x5 结构 (字符与 NBT pattern 一致, 每层一个 aisle) ----------
     const B = (s) => Block.getBlock(s)   // KubeJS 全局 Block 绑定 -> Java Block
-    const pattern = FactoryP.start()
-        .aisle('00000', '12221', '10001', '13331', '14441')   // y=0
-        .aisle('00000', '31112', '05550', '31113', '44444')   // y=1
-        .aisle('00000', '61112', '05550', '31113', '44444')   // y=2 控制器
-        .aisle('00000', '31112', '05550', '31113', '44444')   // y=3
-        .aisle('00000', '12221', '10001', '13331', '14441')   // y=4
-        .where('0', Predicates.blocks(B('tconstruct:scorched_bricks')))
-        .where('1', Predicates.any())
-        .where('2', Predicates.blocks(B('cmi:reinforced_coke_oven_input_bus'))
-                .or(Predicates.blocks(B('cmi:reinforced_coke_oven_output_bus')))
-                .or(Predicates.blocks(B('tconstruct:seared_bricks'))))
-        .where('3', Predicates.blocks(B('tconstruct:seared_bricks')))
-        .where('4', Predicates.blocks(B('tconstruct:scorched_bricks_slab')))
-        .where('5', Predicates.blocks(B('ad_astra:vent')))
-        .where('6', Predicates.controller(Predicates.any()))
+    const pattern = $FactoryBlockPattern.start()
+        .aisle("00000", "12221", "10001", "13331", "14441")   // y=0
+        .aisle("00000", "31112", "05550", "31113", "44444")   // y=1
+        .aisle("00000", "61112", "05550", "31113", "44444")   // y=2 控制器
+        .aisle("00000", "31112", "05550", "31113", "44444")   // y=3
+        .aisle("00000", "12221", "10001", "13331", "14441")   // y=4
+        .where("0", $Predicates.blocks(B("tconstruct:scorched_bricks")))
+        .where("1", $Predicates.any())
+        .where("2", $Predicates.blocks(B("cmi:reinforced_coke_oven_input_bus"))
+                .or($Predicates.blocks(B("cmi:reinforced_coke_oven_output_bus")))
+                .or($Predicates.blocks(B("tconstruct:seared_bricks"))))
+        .where("3", $Predicates.blocks(B("tconstruct:seared_bricks")))
+        .where("4", $Predicates.blocks(B("tconstruct:scorched_bricks_slab")))
+        .where("5", $Predicates.blocks(B("ad_astra:vent")))
+        .where("6", $Predicates.controller($Predicates.any()))
         .build()
     def.blockPatternFactory((machine) => pattern)   // Function 适配
 
     // ---------- 手动注册 (不用 event.create, 无 afterPosted 覆盖) ----------
-    MachineDefs.register(id, def)
+    mbdRegistries.register(id, def)
 })
 
 // ---- 配方类型: 代理 IE 焦炉 ----
 MBDRegistryEvents.recipeType(event => {
-    const MRT = Java.loadClass('com.lowdragmc.mbd2.api.recipe.MBDRecipeType')
-    const rl = new RL('cmi', 'reinforced_coke_oven')
-    const forgeRegs = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
-    const ieType = forgeRegs.getField('RECIPE_TYPES').get(null)
-        .getValue(new RL('immersiveengineering', 'coke_oven'))
+    const MRT = Java.loadClass("com.lowdragmc.mbd2.api.recipe.MBDRecipeType")
+    const ResourceLocation = new ResourceLocation("cmi", "reinforced_coke_oven")
+    const forgeRegs = Java.loadClass("net.minecraftforge.registries.ForgeRegistries")
+    const ieType = forgeRegs.getField("RECIPE_TYPES").get(null)
+        .getValue(new ResourceLocation("immersiveengineering", "coke_oven"))
 
-    const type = new MRT(rl, ieType)             // 构造器 (ResourceLocation, RecipeType...)
+    const type = new MRT(ResourceLocation, ieType)             // 构造器 (ResourceLocation, RecipeType...)
     type.setXEIVisible(true)
     type.setProxyRecipeXEIVisible(true)
     type.setRequireFuelForWorking(false)
 
-    MBDRegistries.getField('RECIPE_TYPES').get(null).register(rl, type)
+    $MBDRegistries.getField("RECIPE_TYPES").get(null).register(ResourceLocation, type)
 })
 
 // ---- 机器事件 (与 CMI Core 的 CokeOvenWorking 同一事件) ----
 MBDMachineEvents.onRecipeWorking(event => {
     // event.getEvent().getMachine() (或 event.event.machine) -> MBDMachine
-    console.log(event.getEvent().getMachine().getPos() + ' is working')
+    console.log(event.getEvent().getMachine().getPos() + " is working")
 })
 ```
 
@@ -218,11 +217,11 @@ MBDMachineEvents.onRecipeWorking(event => {
 
 ## 5. 缺口与兜底 (1.0.39)
 
-| 缺口 | 说明 |
-|---|---|
+| 缺口                                   | 说明                                                                             |
+| -------------------------------------- | -------------------------------------------------------------------------------- |
 | `RecipeModifier.maxParallel` (4x 并行) | private 无 setter, 本脚本只能还原 0.5x 时长; 需要 4x 并行时整机走 NBT (.mb) 注册 |
-| 总线 `traitNameFilter` | 无 setter, 总线保留 .sm NBT (见第 3 节) |
-| 编辑器 UI/燃料 UI 布局 | 只在 .rt NBT 中, 纯代码/JS 只有基础 UI |
+| 总线 `traitNameFilter`                 | 无 setter, 总线保留 .sm NBT (见第 3 节)                                          |
+| 编辑器 UI/燃料 UI 布局                 | 只在 .rt NBT 中, 纯代码/JS 只有基础 UI                                           |
 
 **100% 还原兜底**: 保持 `ldlib/assets/mbd2` 下的 .mb/.sm/.rt 不动 (MB2 自动加载), 本脚本只做增量
 (事件、配方、或同 id 覆盖实验)。
