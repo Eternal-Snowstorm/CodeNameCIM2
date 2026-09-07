@@ -17,10 +17,10 @@ const STEEL_UPGRADES = {
 }
 
 BlockEvents.rightClicked((event) => {
-	let { item, block, hand, player } = event
+	let { item, block, hand, player, level } = event
 
-	upgradeCastIron(item, block, hand, player)
-	upgradeSteel(item, block, hand, player)
+	upgradeCastIron(item, block, hand, player, level)
+	upgradeSteel(item, block, hand, player, level)
 })
 
 /**
@@ -29,9 +29,10 @@ BlockEvents.rightClicked((event) => {
  * @param {Internal.BlockContainerJS_} block 
  * @param {InteractionHand} hand 
  * @param {Player} player 
+ * @param {Internal.Level_} level
  * @returns 
  */
-function upgradeCastIron(item, block, hand, player) {
+function upgradeCastIron(item, block, hand, player, level) {
 	if (item.getId() !== "cmi:steam_cast_iron_upgrade") {
 		return
 	}
@@ -46,7 +47,7 @@ function upgradeCastIron(item, block, hand, player) {
 	let targetId = CAST_IRON_UPGRADES[block.getId()]
 
 	if (targetId) {
-		upgradeBlock(item, block, player, targetId)
+		upgradeBlock(item, block, player, level, targetId)
 	}
 }
 
@@ -56,9 +57,10 @@ function upgradeCastIron(item, block, hand, player) {
  * @param {Internal.BlockContainerJS_} block 
  * @param {InteractionHand} hand 
  * @param {Player} player 
+ * @param {Internal.Level_} level
  * @returns 
  */
-function upgradeSteel(item, block, hand, player) {
+function upgradeSteel(item, block, hand, player, level) {
 	if (item.getId() !== "cmi:steam_steel_upgrade") {
 		return
 	}
@@ -73,7 +75,7 @@ function upgradeSteel(item, block, hand, player) {
 	let targetId = STEEL_UPGRADES[block.getId()]
 
 	if (targetId) {
-		upgradeBlock(item, block, player, targetId)
+		upgradeBlock(item, block, player, level, targetId)
 	}
 }
 
@@ -82,13 +84,24 @@ function upgradeSteel(item, block, hand, player) {
  * @param {Internal.ItemStack} item 
  * @param {Internal.BlockContainerJS_} block 
  * @param {Player} player 
+ * @param {Internal.Level_} level 
  * @param {Special.Block} targetId 
  */
-function upgradeBlock(item, block, player, targetId) {
+function upgradeBlock(item, block, player, level, targetId) {
 	let properties = block.getProperties()
 	let nbt = block.getEntityData()
 
 	player.swing()
+	level.playSound(
+		null,
+		player.x,
+		player.y,
+		player.z,
+		"create:mechanical_press_activation",
+		"players",
+		1.0,
+		1.0
+	)
 	block.set(targetId, properties)
 
 	if (nbt) {
