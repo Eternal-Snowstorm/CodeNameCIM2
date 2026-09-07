@@ -20,5 +20,5 @@ ServerEvents.recipes((event) => {
 	vintageimprovements.pressurizing(Fluid.of("create_steam_ages:high_temperature_steam", 1000), [
 		{ fluidTag: "forge:steam", amount: 1000 },
 		{ fluidTag: "forge:steam", amount: 1000 }
-	]).secondaryFluidInput(1)
+	]).secondaryFluidInput(1).heatRequirement(CmiHeatLevel.GRILLED)
 })

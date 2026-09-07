@@ -112,7 +112,7 @@ ServerEvents.tags("fluid", (event) => {
 
 	// 高温蒸汽
 	event.get("forge:high_temperature_steam")
-		.add("minecraft:lava")
+		.remove("minecraft:lava")
 
 	// 柴油
 	event.get("forge:diesel")

@@ -10,7 +10,8 @@ ServerEvents.recipes((event) => {
 		let json = recipe.json
 		let id = recipe.getId()
 
-		if (removedRecipes.has(id)) {
+		if (removedRecipes().has(String(id))) {
+			console.log(`[MBD2 Proxy] Skipping removed recipe: ${id}`)
 			return
 		}
 
@@ -20,11 +21,11 @@ ServerEvents.recipes((event) => {
 			"concrete",
 			"compat/tconstruct"
 		]
-		idBlackList.forEach((ids) => {
-			if (id.includes(ids)) {
-				return
-			}
-		})
+		if (idBlackList.some((keyword) => {
+			return id.includes(keyword)
+		})) {
+			return
+		}
 
 		let builder = cmi.chemical_reactor()
 		if (json.has("ingredients")) {
