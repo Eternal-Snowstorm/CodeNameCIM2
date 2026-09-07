@@ -50,6 +50,11 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/lime"
 	]).heatRequirement(CmiHeatLevel.GRILLED)
 
+	create.mixing(Fluid.of("tconstruct:molten_glass", 250), [
+		Fluid.of("tconstruct:molten_quartz", 200),
+		"cmi:plant_ash"
+	]).heatRequirement(CmiHeatLevel.GRILLED)
+
 	// 硅混合物
 	create.mixing("cmi:silicon_mixture", [
 		"#forge:dusts/coal_coke",
