@@ -58,4 +58,5 @@ StartupEvents.registry("item", (event) => {
 	}
 
 	addAloneWireItem("glass")
+	addAloneWireItem("fluix")
 })
