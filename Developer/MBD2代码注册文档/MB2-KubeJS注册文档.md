@@ -1,457 +1,295 @@
-# MB2 KubeJS 注册完整文档
+# MB2 KubeJS 注册指南
 > 适用: Minecraft 1.20.1 / Forge / Multiblocked2 1.20.1-1.0.39 / KubeJS 6
-> 本文所有事件名与方法名均经 jar 字节码与 kubejs/probe 生成的 .d.ts 验证。
-> MB2 的 KubeJS 集成是"裸反射"暴露 Java 类 (MBDKubeJSPlugin 只对配方 Ingredient 做了包装),
-> 所以 JS 侧 API = Java API 的同名方法; 本文给出 JS 语法的完整对照。
+> 本文是教程式指南: 先跑通最小示例, 再逐步加功能。所有 API 均经字节码验证。
 
 ---
 
-## 1. 事件总览与注册时序
+## 快速开始: 第一台机器
 
-| 事件 (startup) | 用途 |
-|---|---|
-| `MBDRegistryEvents.machine(handler)` | 注册/删除机器定义 (单方块与多方块) |
-| `MBDRegistryEvents.recipeType(handler)` | 注册/删除配方类型 |
-
-| 事件 (server) | 用途 |
-|---|---|
-| `MBDMachineEvents.*` | 机器运行时事件 (tick/工作/成型/右键等, 见第 5 节) |
-
-| 事件 (client) | 用途 |
-|---|---|
-| `MBDMachineEvents.onClientTick / onCustomDataUpdate / onCustomKeyframe` | 客户端机器事件 |
-| `MBDMachineEvents.onRecipeUI / onFuelRecipeUI` | 客户端配方 UI 绘制事件 |
-
-时序 (注册谁先谁后, 直接影响同名冲突):
-
-```
-FMLCommonSetup
- ├─ ① Java mod 订阅的 MBDRegistryEvent.Machine / MBDRecipeType
- ├─ ② 扫描 ldlib/assets/mbd2/{machine,multiblock,recipe_type} 磁盘 NBT
- ├─ ③ MBDRegistryEvents.machine / .recipeType   ← KubeJS (本文)
- └─ 注册表冻结
-```
-
-KubeJS 是**最后**注册的, 同 id 会覆盖前两者 (详见第 8 节)。
-
----
-
-## 2. 注册机器
-
-### 2.1 入口
+在 `kubejs/startup_scripts/` 新建 `mbd2.js`:
 
 ```js
 MBDRegistryEvents.machine(event => {
-    const builder = event.create(类型, "命名空间:机器id")
-    // ... 配置 builder ...
-    // 无需手动 build: 事件结束后 MB2 自动 build 并注册
+    const builder = event.create("single", "cmi:my_first_machine")
+
+    // 每个字段都有默认值 —— 什么都不配也能注册。这里只设一个模型:
+    builder.rootState(
+        Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.MachineState")
+            .builder().name("base")
+            .modelRenderer("cmi:block/machine/example/off")
+            .build()
+    )
 })
-
-// 其他事件方法:
-event.getMachine("命名空间:id")     // 获取已注册定义 (前两阶段注册的也能拿到)
-event.removeMachine("命名空间:id")  // 删除定义
 ```
 
-**类型参数可用值** (KubeJS 专用命名, 与 Java 侧的 `single_machine`/`multiblock` 不同!):
+进游戏拿 `/give @s cmi:my_first_machine`, 放下来 —— 这就是你的第一台 MB2 机器。
+事件结束后 MB2 会自动构建并注册, 不需要任何 build/register 调用。
 
-| KubeJS 类型 | 含义 | 对应 Java 定义类 |
-|---|---|---|
-| `single` | 单方块机器/部件 | `MBDMachineDefinition` |
-| `multiblock` | 多方块机器 | `MultiblockMachineDefinition` |
-| `kinetic` | 动力机器 (仅 Create 加载时) | `CreateKineticMachineDefinition` |
+**先记住三件事** (后文会反复用到):
 
-类型不存在时 `create` 直接抛 `IllegalArgumentException`。
-
-### 2.2 Builder 方法清单 (与 Java Builder 同名)
-
-| 方法 | 参数 | 说明 |
-|---|---|---|
-| `.id(rl)` | 字符串 | create 时已自动设置 |
-| `.rootState(state)` | MachineState 对象 | 根状态 (见 2.4) |
-| `.blockProperties(props)` | ConfigBlockProperties 对象 | 方块属性 |
-| `.itemProperties(props)` | ConfigItemProperties 对象 | 物品属性 |
-| `.machineSettings(factory)` | **无参工厂函数** | 机器设置+特性 (见 2.5, 这是最大的坑) |
-| `.recipeLogicSettings(logic)` | ConfigRecipeLogicSettings 对象 | 配方逻辑 |
-| `.partSettings(factory)` | 无参工厂函数 | 部件设置 (同上) |
-| `.multiblockSettings(factory)` | 无参工厂函数 | 仅多方块 builder 有 |
-| `.build()` | - | 构建定义 (事件自动调用) |
-
-### 2.3 ⚠️ 签名陷阱: Builder 参数分两类, 都不是带参回调 (为什么你的参数是 any)
-
-MB2 没有为机器 Builder 做 KubeJS 包装, JS 拿到的是原生 Java Builder。它的参数分两类,
-**两类都不接受带参回调**, 所以任何 `(xxx) => {...}` 的写法里 `xxx` 都会显示 any:
-
-**第一类: 直接传对象** (rootState / blockProperties / itemProperties / recipeLogicSettings)
-
-probejs 实际声明:
-
-```ts
-rootState(arg0: MachineState_): Builder
-blockProperties(arg0: ConfigBlockProperties_): Builder
-itemProperties(arg0: ConfigItemProperties_): Builder
-recipeLogicSettings(arg0: ConfigRecipeLogicSettings_): Builder
-```
-
-- 期望类型是**对象**, 不是函数。你写 `.rootState((state) => {...})` 时,
-  `state` 没有类型来源 → **any**; 运行时函数不是 MachineState, 直接类型错误。
-- 正确写法: 先构造对象再传入 ——
-  `.rootState($MachineState.builder().name("base").modelRenderer(...).build())` (见 2.4/2.5)。
-
-**第二类: 无参工厂函数** (machineSettings / partSettings / multiblockSettings)
-
-```ts
-machineSettings(arg0: ConfigMachineSettingsFactory | (() => ConfigMachineSettings)): Builder
-```
-
-- 期望类型是 **无参** 函数 (Java `Supplier<ConfigMachineSettings>`),
-  不是 `Consumer<ConfigMachineSettingsBuilder>`。
-- 你写 `.machineSettings((setting) => {...})` 时, `setting` 在期望签名中不存在 →
-  TS 无法推断 → **any**; 运行时 KubeJS 以 0 个参数调用你的函数 →
-  `setting === undefined`, 函数体里任何 `setting.xxx()` 都会抛 TypeError。
-- 函数**必须 return** 一个 `ConfigMachineSettings` 实例 (否则该工厂返回 null,
-  机器退回默认设置, 你的配置全部丢失)。
-- 想要 `settings => settings.hasUI(true)` 的糖不存在 (那需要模组做 Consumer 包装, MB2 没做)。
-
-一句话: **除了 machineSettings/partSettings/multiblockSettings 是"无参函数+必须 return 对象",
-其余全部是"先 new 好对象再传进去"**。
-
-### 2.4 构造配置对象 (Java.loadClass 反射)
-
-JS 侧没有工厂糖, 全部用 `Java.loadClass` 调 Java builder:
+1. 机器类型名: `"single"` 单方块 / `"multiblock"` 多方块 (有 Create 时还有 `"kinetic"`)。
+2. 类引用太长, 统一用变量 (本文约定 `$类名`, 嵌套类 `$父类$子类`):
 
 ```js
-// 便捷: 缓存类引用
 let $MachineState = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.MachineState")
-let $ConfigBlockProperties = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigBlockProperties")
-let $ConfigItemProperties = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigItemProperties")
 let $ConfigMachineSettings = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigMachineSettings")
 let $ConfigRecipeLogicSettings = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigRecipeLogicSettings")
-let $ConfigPartSettings = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigPartSettings")
-let $RotationState = Java.loadClass("com.lowdragmc.mbd2.api.block.RotationState")
+// 每节用到新类时再补充
 ```
 
-`Java.loadClass(X).builder()` 调用静态方法返回 builder, 链式调用同名方法 (方法名与
-Java 文档的配置类速查表完全一致), 最后 `.build()` 得对象。
+3. Builder 的参数分两类, **都不是带参回调**:
+   - `rootState` / `blockProperties` / `itemProperties` / `recipeLogicSettings` → **先 new 好对象再传进去**
+   - `machineSettings` / `partSettings` / `multiblockSettings` → **无参箭头函数, 末尾必须 return 配置对象**
+   - 写 `(setting) => {...}` 时 `setting` 显示 any 就是这个原因 (期望签名里没有参数)。
 
-### 2.5 完整示例: JS 注册一台带特性的单方块机器
+---
+
+## 第一步: 一台会干活的机器 (特性 + 配方逻辑)
 
 ```js
+let $IO = Java.loadClass("com.lowdragmc.mbd2.api.capability.recipe.IO")
+let $ItemSlotCapabilityTraitDefinition = Java.loadClass("com.lowdragmc.mbd2.common.trait.item.ItemSlotCapabilityTraitDefinition")
+let $FluidTankCapabilityTraitDefinition = Java.loadClass("com.lowdragmc.mbd2.common.trait.fluid.FluidTankCapabilityTraitDefinition")
+
 MBDRegistryEvents.machine(event => {
-    event.create("single", "cmi:kjs_test_machine")
+    const builder = event.create("single", "cmi:electrolyzer")
 
-        // 根状态: 模型 + 碰撞箱
-        .rootState(
-            $MachineState.builder()
-                .name("base")
-                .modelRenderer("cmi:block/machine/kjs_test/off")
-                .shape(Shapes.block())
-                .build()
-        )
+    builder.rootState(
+        $MachineState.builder().name("base")
+            .modelRenderer("cmi:block/machine/electrolyzer/off")
+            .build()
+    )
 
-        .blockProperties(
-            $ConfigBlockProperties.builder()
-                .destroyTime(3)
-                .explosionResistance(6)
-                .rotationState($RotationState.NON_Y_AXIS)
-                .build()
-        )
+    builder.machineSettings(() => {
+        const settings = $ConfigMachineSettings.builder()
+        settings.hasUI(true)
 
-        .itemProperties(
-            $ConfigItemProperties.builder()
-                .maxStackSize(64)
-                .build()
-        )
+        // ---- 特性: 一个物品输入槽 ----
+        const slot = new $ItemSlotCapabilityTraitDefinition()
+        slot.setName("input")                  // 槽名, 配方与总线靠它匹配
+        slot.setRecipeHandlerIO($IO.IN)        // 配方视角: 这是输入槽
+        slot.setGuiIO($IO.IN)
+        slot.setSlotSize(1)
+        slot.setSlotLimit(64)
+        slot.getCapabilityIO().setFrontIO($IO.IN)   // 正面可以往里面塞东西
+        settings.traitDefinition(slot)
 
-        // 机器设置 + 特性: 无参工厂, 必须 return!
-        .machineSettings(() => {
-            const b = $ConfigMachineSettings.builder()
-            b.hasUI(true)
-            b.machineLevel(1)
+        // ---- 特性: 一个流体输出槽 ----
+        const tank = new $FluidTankCapabilityTraitDefinition()
+        tank.setName("fluid_out")
+        tank.setRecipeHandlerIO($IO.OUT)
+        tank.setGuiIO($IO.OUT)
+        tank.setCapacity(16000)
+        tank.getCapabilityIO().setFrontIO($IO.OUT)
+        settings.traitDefinition(tank)
 
-            // 特性: new Java 类 + setter (与 Java 文档第 4 节同 API)
-            const slotC = Java.loadClass("com.lowdragmc.mbd2.common.trait.item.ItemSlotCapabilityTraitDefinition")
-            const slot = new slotC()
-            slot.setName("input")
-            slot.setRecipeHandlerIO(Java.loadClass("com.lowdragmc.mbd2.api.capability.recipe.IO").IN)
-            slot.setGuiIO(Java.loadClass("com.lowdragmc.mbd2.api.capability.recipe.IO").IN)
-            slot.setSlotSize(1)
-            slot.setSlotLimit(64)
-            b.traitDefinition(slot)
+        return settings.build()                // ← 工厂必须 return
+    })
 
-            return b.build()   // ← 必须 return
-        })
-
-        .recipeLogicSettings(
-            $ConfigRecipeLogicSettings.builder()
-                .enable(true)
-                .recipeType("cmi:kjs_test_recipe_type")
-                .build()
-        )
-
-        .partSettings(() => $ConfigPartSettings.builder().enable(false).build())
+    builder.recipeLogicSettings(
+        $ConfigRecipeLogicSettings.builder()
+            .enable(true)
+            .recipeType("cmi:electrolyzer")    // 下一步注册的配方类型
+            .build()
+    )
 })
 ```
 
-### 2.6 多方块
-
-```js
-event.create("multiblock", "cmi:kjs_multiblock")
-    .rootState(...)
-    .multiblockSettings(() => MultiSetC.builder().showUIOnlyFormed(true).build())
-    // 注意: 结构 pattern (FactoryBlockPattern) 在 JS 侧无法像 Java 那样便捷构建 ——
-    // Builder 没有 pattern 方法, 结构只能通过 NBT (.mb) 携带。
-    // 多方块结构强烈建议用编辑器做好 .mb 后由 Java/磁盘注册 (见第 8 节)。
-```
+常用特性类名:
+`$ItemSlotCapabilityTraitDefinition` (物品槽) / `$FluidTankCapabilityTraitDefinition` (流体槽) /
+`$ForgeEnergyCapabilityTraitDefinition` (FE 能量) —— 都是 `new` + setter, 然后 `settings.traitDefinition(...)`。
 
 ---
 
-## 3. 注册配方类型
+## 第二步: 配方类型 + 配方
 
 ```js
 MBDRegistryEvents.recipeType(event => {
-    const type = event.createRecipeType("cmi:kjs_test_recipe_type")
+    const type = event.createRecipeType("cmi:electrolyzer")
     type.setXEIVisible(true)
-    type.setRequireFuelForWorking(false)
-    // type.setIcon(...) / setFuelIcon(...)  (IGuiTexture, 可用 Java.loadClass 构造)
 
-    // 事件方法: event.getRecipeType(rl) / event.removeRecipeType(rl)
+    // 内置配方: 直接写进类型, 不用 json 文件
+    const recipe = type.recipeBuilder("cmi:water_electrolysis")
+    recipe.duration(200)                       // tick
+    recipe.inputItems("minecraft:water_bucket")
+    recipe.outputItems("minecraft:bucket")
+    recipe.saveAsBuiltinRecipe()
 })
 ```
+
+配方 builder 常用方法: `duration(tick)` `inputItems("物品id")` `outputItems("2x 物品id")`
+`inputFluids(...)` `outputFluids(...)` `inputFE(数量)` `addData(键, 值)` `isFuel(true)`。
 
 ---
 
-## 4. 配方
-
-### 4.1 方式 A: 启动事件里挂内置配方 (Java builder 反射)
+## 第三步: 多方块机器 (含结构)
 
 ```js
-MBDRegistryEvents.recipeType(event => {
-    const type = event.createRecipeType("cmi:kjs_test_recipe_type")
+let $ConfigMultiblockSettings = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigMultiblockSettings")
+let $FactoryBlockPattern = Java.loadClass("com.lowdragmc.mbd2.api.pattern.FactoryBlockPattern")
+let $Predicates = Java.loadClass("com.lowdragmc.mbd2.api.pattern.Predicates")
+let $MBDRegistries = Java.loadClass("com.lowdragmc.mbd2.api.registry.MBDRegistries")
 
-    // MBDRecipeType.recipeBuilder(id) -> MBDRecipeBuilder, 链式同名方法
-    const builder = type.recipeBuilder("cmi:kjs_smelt")
-    builder.duration(100)
-    builder.inputItems("minecraft:iron_ingot")
-    builder.outputItems("2x minecraft:gold_ingot")   // KubeJS 物品字符串语法
-    builder.saveAsBuiltinRecipe()                     // 直接进内置配方表
+MBDRegistryEvents.machine(event => {
+    const id = "cmi:small_machine"
+    // create() 的 Java 签名返回父类 Builder, TS 类型上才没有 multiblockSettings;
+    // 用 JSDoc 把类型声明成实际的多方块 Builder (运行时本来就是它, 不影响行为)
+    /** @type {Internal.MultiblockMachineDefinition$Builder_} */
+    const builder = event.create("multiblock", id)
+
+    builder.rootState(
+        $MachineState.builder().name("base")
+            .modelRenderer("cmi:block/machine/small_machine/off")
+            .build()
+    )
+    builder.machineSettings(() => {
+        const settings = $ConfigMachineSettings.builder()
+        settings.hasUI(true)
+        return settings.build()
+    })
+    builder.recipeLogicSettings(
+        $ConfigRecipeLogicSettings.builder()
+            .enable(true).recipeType("cmi:electrolyzer").build()
+    )
+    builder.multiblockSettings(() =>
+        $ConfigMultiblockSettings.builder().showUIOnlyFormed(true).build()
+    )
+
+    // 结构不能通过 builder 设置, 需要四步手动流程:
+    event.removeMachine(id)                  // ① 摘出自动注册队列 (防止无结构版本覆盖, 见下)
+    /** @type {Internal.MultiblockMachineDefinition_} */
+    const def = builder.build()              // ② build 出定义 (build 也返回父类类型, 同样补 @type)
+    const pattern = $FactoryBlockPattern.start()
+        .aisle("III", "III", "III")          // 每层一个 aisle, y=0 底 → 顶; 行=z, 字符=x
+        .aisle("IAI", "IAI", "IAI")
+        .aisle("III", "III", "III")
+        .where("I", $Predicates.blocks(Block.getBlock("minecraft:iron_block")))
+        .where("A", $Predicates.air())
+        .build()
+    def.blockPatternFactory((machine) => pattern)   // ③ 挂结构 (这是 definition 的方法, 不是 builder 的)
+    $MBDRegistries.getField("MACHINE_DEFINITIONS").get(null).register(id, def)  // ④ 手动注册
 })
 ```
 
-`MBDRecipeBuilder` 在 JS 里可用方法 (与 Java 文档第 5 节同):
-`duration(i)` `perTick(b)` `isFuel(b)` `isXEIHidden(b)` `priority(i)` `chance(f)`
-`tierChanceBoost(f)` `slotName(s)` `uiName(s)` `addData(k,v)`
-`inputItems/outputItems/notConsumable(...)` `inputFluids/outputFluids(FluidIngredientJS...)`
-`inputFE(i)/outputFE(i)` `inputMana/outputMana` `inputAura/outputAura` `inputEmber/outputEmber(double)`
-`inputPNCPressure/outputPNCPressure(float)` `inputPNCAir/outputPNCAir(int)` `inputPNCHeat/outputPNCHeat(double)`
-`inputHeat/outputHeat(double)` `inputEntities/outputEntities(EntityIngredientJS...)`
-条件: `biomeCondition(rl)` `dimensionCondition(rl)` `posYCondition(min,max)` `rainCondition(min,max)`
-`thunderCondition(min,max)` `mekHeatCondition(...)` `pncPressureCondition(...)` `pncTemperatureCondition(...)` 等
+**为什么这四步**: 事件结束后 MB2 会对每个 `event.create` 的 builder 自动
+`register(id, builder.build())` —— 一个没有结构的版本, 会覆盖你的。
+`event.removeMachine(id)` 把 builder 摘出自动队列 (注意顺序: 先 remove 再手动 register,
+反了注册表条目会被 removeMachine 删掉)。
 
-### 4.2 方式 B: ServerEvents.recipes + JSON
+结构写法要点:
+- 控制器位置: `$Predicates.controller($Predicates.any())` 标记。
+- 方块谓词: `$Predicates.blocks(Block.getBlock("modid:block"))`, 空气 `$Predicates.air()`,
+  任意 `$Predicates.any()`, 多选一 `.or(...)`。
+- 结构想改 NBT 也行: 把编辑器导出的 `.mb` 放进 `ldlib/assets/mbd2/multiblock/` 自动加载,
+  那样纯 `event.create` + 配置就够, 不需要上面四步。
 
-MB2 为每个已注册配方类型注册了 RecipeSchema, 可用 `event.custom(...)`。
-JSON key (经 MBDRecipeSerializer 字节码验证):
+---
+
+## 第四步: 机器事件
 
 ```js
-ServerEvents.recipes(event => {
-    event.custom({
-        type: "cmi:kjs_test_recipe_type",   // ← 配方类型 id 就是 type
-        duration: 200,
-        inputs: {
-            item: [ { ingredient: { item: "minecraft:iron_ingot" }, count: 1 } ],
-            // 其他能力名: fluid / forge_energy / gas / mana / aura / ember / heat ...
-        },
-        outputs: {
-            item: [ { item: "minecraft:gold_ingot", count: 2 } ]
-        },
-        data: {},                            // 自定义 NBT 数据
-        recipeConditions: [],                // 配方条件
-        isFuel: false,
-        isXEIHidden: false,
-        priority: 0
+MBDMachineEvents.onRecipeWorking(event => {
+    const machine = event.getEvent().getMachine()   // MBDMachine
+    console.log(machine.getPos() + " is working")
+})
+```
+
+常用事件: `onTick` `onRecipeWorking` `onRecipeFinish` `onStructureFormed` `onStructureInvalid`
+`onRightClick` `onStateChanged` (完整清单见文末附录)。
+
+---
+
+## 进阶 (需要时再看)
+
+### 部件 (输入/输出总线)
+
+部件 = 单方块 + `partSettings` 开 enable + 代理控制器 trait。代理过滤器 `traitNameFilter` 是
+private 字段没有 setter, 用反射设 (MB2 jar 未混淆, 字段名稳定):
+
+```js
+let $ConfigPartSettings = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigPartSettings")
+let $ConfigPartSettings$ProxyCapability = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigPartSettings$ProxyCapability")
+
+/**
+ * 设置 Java 对象的 private 字段。
+ * @param {any} obj - Java 对象实例
+ * @param {string} fieldName - 字段名 (javap -p 查证)
+ * @param {any} value - 新值 (String→字符串; 数字→number; 枚举/对象→Java 对象)
+ * @returns {void}
+ */
+function setPrivateField(obj, fieldName, value) {
+    const field = obj.getClass().getDeclaredField(fieldName)
+    field.setAccessible(true)
+    field.set(obj, value)
+}
+
+MBDRegistryEvents.machine(event => {
+    const builder = event.create("single", "cmi:input_bus")
+    builder.rootState($MachineState.builder().name("base")
+        .modelRenderer("cmi:block/machine/io/common_input").build())
+    builder.machineSettings(() => $ConfigMachineSettings.builder().hasUI(false).build())
+    builder.recipeLogicSettings($ConfigRecipeLogicSettings.builder()
+        .enable(false).recipeType("mbd2:dummy").build())
+    builder.partSettings(() => {
+        const proxy = new $ConfigPartSettings$ProxyCapability()
+        setPrivateField(proxy, "traitNameFilter", "input")   // 前缀匹配控制器 trait 名
+        proxy.capabilityIO().setFrontIO($IO.IN)
+        const part = $ConfigPartSettings.builder()
+        part.enable(true)                                    // ← 部件开关
+        part.proxyControllerCapabilities(Java.loadClass("java.util.Arrays").asList(proxy))
+        return part.build()
     })
 })
 ```
-(content 的精确序列化格式以 `MBDRecipeSerializer` 为准, 字段名已列全; 复杂内容建议用 4.1 的面向对象写法)
+
+### 配方修饰器里的隐藏字段 (如 4x 并行)
+
+`maxParallel` 同样 private 无 setter, 两条路:
+- 反射: `setPrivateField(mod, "maxParallel", $ContentModifier.of(4, 0))`
+- 或 NBT 往返: `const tag = mod.serializeNBT(); tag.getCompound("maxParallel").putDouble("multiplier", 4); const fixed = new $RecipeModifier(); fixed.deserializeNBT(tag)` (键名 = 字段名)
+
+### 与 Java / 磁盘 NBT 共存
+
+三条来源写同一个注册表, 顺序: Java → `ldlib/assets/mbd2` 磁盘 NBT → KubeJS。
+**同名后来者覆盖**。机器事件对任何来源的机器都生效。
 
 ---
 
-## 5. 机器事件 (MBDMachineEvents)
+## 附录: 常用类引用全表
 
 ```js
-MBDMachineEvents.onTick(event => {
-    const machine = event.getEvent().getMachine()   // MBDMachine (Java 对象, 反射调用)
-    machine.getPos()  // 等
-})
+let $MachineState                         = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.MachineState")
+let $ConfigBlockProperties                = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigBlockProperties")
+let $ConfigItemProperties                 = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigItemProperties")
+let $ConfigMachineSettings                = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigMachineSettings")
+let $ConfigRecipeLogicSettings            = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigRecipeLogicSettings")
+let $ConfigPartSettings                   = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigPartSettings")
+let $ConfigMultiblockSettings             = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigMultiblockSettings")
+let $ToggleCreativeTab                    = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.toggle.ToggleCreativeTab")
+let $RotationState                        = Java.loadClass("com.lowdragmc.mbd2.api.block.RotationState")
+let $IO                                   = Java.loadClass("com.lowdragmc.mbd2.api.capability.recipe.IO")
+let $ItemSlotCapabilityTraitDefinition    = Java.loadClass("com.lowdragmc.mbd2.common.trait.item.ItemSlotCapabilityTraitDefinition")
+let $FluidTankCapabilityTraitDefinition   = Java.loadClass("com.lowdragmc.mbd2.common.trait.fluid.FluidTankCapabilityTraitDefinition")
+let $ForgeEnergyCapabilityTraitDefinition = Java.loadClass("com.lowdragmc.mbd2.common.trait.forgeenergy.ForgeEnergyCapabilityTraitDefinition")
+let $MBDMachineDefinition                 = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.MBDMachineDefinition")
+let $MultiblockMachineDefinition          = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.MultiblockMachineDefinition")
+let $FactoryBlockPattern                  = Java.loadClass("com.lowdragmc.mbd2.api.pattern.FactoryBlockPattern")
+let $Predicates                           = Java.loadClass("com.lowdragmc.mbd2.api.pattern.Predicates")
+let $MBDRegistries                        = Java.loadClass("com.lowdragmc.mbd2.api.registry.MBDRegistries")
+let $MBDRecipeType                        = Java.loadClass("com.lowdragmc.mbd2.api.recipe.MBDRecipeType")
+let $RecipeModifier                       = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.RecipeModifier")
+let $RecipeModifier$RecipeModifiers       = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.RecipeModifier$RecipeModifiers")
+let $ContentModifier                      = Java.loadClass("com.lowdragmc.mbd2.api.recipe.content.ContentModifier")
+let $ConfigPartSettings$ProxyCapability   = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigPartSettings$ProxyCapability")
+let $ForgeRegistries                      = Java.loadClass("net.minecraftforge.registries.ForgeRegistries")
+let $Shapes                               = Java.loadClass("net.minecraft.world.phys.shapes.Shapes")
 ```
 
-全部事件名 (server):
+## 附录: 机器事件全表
 
-| 事件 | 触发时机 | 事件对象 |
-|---|---|---|
-| `onTick` | 机器每 tick | `MachineTickEvent` |
-| `onRecipeWorking` | 配方工作阶段每 tick | `MachineOnRecipeWorkingEvent` |
-| `onRecipeWaiting` | 等待输入阶段 | `MachineOnRecipeWaitingEvent` |
-| `onRecipeStatusChanged` | 配方状态切换 | `MachineRecipeStatusChangedEvent` |
-| `onBeforeRecipeWorking` / `onAfterRecipeWorking` | 配方开始前/结束后 | 对应事件 |
-| `onRecipeFinish` | 配方完成 (输出前) | `MachineOnRecipeFinishEvent` |
-| `onConsumeInputsAfterWorking` | 工作后消耗输入时 | 对应事件 |
-| `onFuelRecipeModify` / `onFuelBurningFinish` | 燃料配方修改/燃料耗尽 | 对应事件 |
-| `onBeforeRecipeModify` / `onAfterRecipeModify` | 配方修饰器前后 | `MachineRecipeModifyEvent.Before/After` |
-| `onStructureFormed` / `onStructureInvalid` | 多方块成型/失效 | 对应事件 |
-| `onRightClick` | 玩家右键 | `MachineRightClickEvent` (player/hand 可取消) |
-| `onOpenUI` | 打开 UI | `MachineOpenUIEvent` |
-| `onPlaced` / `onRemoved` | 放置/移除 | 对应事件 |
-| `onDrops` | 掉落物计算 | `MachineDropsEvent` |
-| `onNeighborChanged` | 邻居更新 | `MachineNeighborChangedEvent` |
-| `onStateChanged` | 机器状态切换 | `$MachineStatehangedEvent` (新/旧状态) |
-| `onUseCatalyst` | 使用多方块催化剂 | `MachineUseCatalystEvent` |
-| `onLoad` | 加载 | `MachineOnLoadEvent` |
-
-客户端: `onClientTick` `onCustomDataUpdate` `onCustomKeyframe` `onRecipeUI` `onFuelRecipeUI`
-
-事件对象入口: `event.getEvent().getMachine()` 或 `event.event.machine` 拿到 `MBDMachine`
-(MachineEventJS 只有 getEvent()/event 字段, 原始事件上才有 getMachine()/machine 字段)。
-取消: 支持取消的事件对象上调 `.cancel()` (等价 Java setCanceled)。
-
----
-
-## 6. 类型提示 (probejs)
-
-- 类型来自 `kubejs/probe/generated/*.d.ts` (重新生成: 游戏内 /probejs dump 或 probejs 命令)。
-- `MBDRegistryEvents` 已收录: `machine(handler: (event: MBDMachineRegistryEventJS) => void)` 等。
-- Builder 方法全部有声明, 但工厂参数显示为
-  `ConfigMachineSettingsFactory | (() => ConfigMachineSettings)` —— **无参**。
-  回调里想拿 builder 参数必然 any (见 2.3)。
-- 事件 handler 参数有完整声明: `(event: Internal.MachineTickEventJS) => void`,
-  机器本体经 `event.getEvent().getMachine()` / `event.event.machine` 取得。
-
----
-
-## 7. 常见错误
-
-1. `event.create("machine", id)` → 抛异常: KubeJS 类型名是 `single`/`multiblock`/`kinetic`。
-2. `.machineSettings(settings => {...})` 里用 settings → TypeError: 回调无参, 且必须 return 配置对象。
-3. `.machineSettings(...)` 忘 return → 配置静默丢失, 机器用默认设置。
-4. 多方块想在 JS 里写结构 → 无 API, 走 .mb NBT。
-5. 注册的机器在游戏里找不到 → 检查 id 是否被第 8 节的规则覆盖。
-
----
-
-## 8. 与 Java / 磁盘 NBT 共存 (混合注册)
-
-- 三条来源写**同一个**注册表 `MBDRegistries.MACHINE_DEFINITIONS` / `RECIPE_TYPES`,
-  顺序固定: Java → `ldlib/assets/mbd2` 磁盘 NBT → KubeJS。
-- **KubeJS 最后注册, 同 id 覆盖一切** (`MBDRegistry.register` 直接覆盖)。
-  想用 KubeJS 热改一台 Java 注册的机器, 用相同 id 重新 `event.create` 即可 (临时覆盖, 不推荐生产用);
-  反之 Java/磁盘 NBT 的同名定义会盖不掉 KubeJS 的 (除非删 JS 脚本)。
-- 机器事件与注册来源无关: 任何来源的机器运行时都进同一事件管线 (机器事件图 → MBDMachineEvents),
-  JS 的 `MBDMachineEvents.onTick` 对 Java 注册的机器同样生效。
-- 配方类型跨来源可互相引用: KubeJS 注册的机器 `recipeLogicSettings().recipeType("cmi:xxx")`
-  指向 Java/磁盘 NBT 注册的配方类型, 反之亦然。
-- 分工建议: 结构/UI 复杂的机器用编辑器 NBT (ldlib/assets/mbd2 或 Java registerFromResource),
-  需要快速迭代的配方与事件逻辑用 KubeJS, 纯代码强类型机器用 Java (见《MB2-Java注册文档.md》)。
-
----
-
-## 附录 B: 完整 JS 示例 (startup_scripts 可直接使用)
-
-```js
-// startup_scripts/mbd2_machine.js
-// 注意: 类型名是 "single"/"multiblock"/"kinetic" (不是 "single_machine")
-// 参数分两类: 对象类直接 new 好传入; 工厂类 (machineSettings/partSettings/multiblockSettings)
-// 用无参箭头函数且必须 return 配置对象。
-
-// ---- 类引用缓存 ----
-const $MachineState = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.MachineState")
-const $ConfigBlockProperties  = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigBlockProperties")
-const $ConfigItemProperties   = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigItemProperties")
-const $ConfigMachineSettings  = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigMachineSettings")
-const $ConfigRecipeLogicSettings       = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigRecipeLogicSettings")
-const $ConfigPartSettings     = Java.loadClass("com.lowdragmc.mbd2.common.machine.definition.config.ConfigPartSettings")
-const $RotationState    = Java.loadClass("com.lowdragmc.mbd2.api.block.RotationState")
-const IOC          = Java.loadClass("com.lowdragmc.mbd2.api.capability.recipe.IO")
-const SlotTraitC   = Java.loadClass("com.lowdragmc.mbd2.common.trait.item.ItemSlotCapabilityTraitDefinition")
-const FluidTraitC  = Java.loadClass("com.lowdragmc.mbd2.common.trait.fluid.FluidTankCapabilityTraitDefinition")
-
-// ---- 机器注册 ----
-MBDRegistryEvents.machine(event => {
-    event.create("single", "cmi:kjs_test_machine")
-
-        // rootState 是对象参数: 先 build 再传 (不要写 lambda!)
-        .rootState(
-            $MachineState.builder()
-                .name("base")
-                .modelRenderer("cmi:block/machine/kjs_test/off")
-                .shape(Shapes.block())
-                .build()
-        )
-
-        .blockProperties(
-            $ConfigBlockProperties.builder()
-                .destroyTime(3)
-                .explosionResistance(6)
-                .rotationState($RotationState.NON_Y_AXIS)
-                .build()
-        )
-
-        .itemProperties(
-            $ConfigItemProperties.builder().maxStackSize(64).build()
-        )
-
-        // machineSettings 是无参工厂: 箭头函数不带参数, 末尾必须 return
-        .machineSettings(() => {
-            const b = $ConfigMachineSettings.builder()
-            b.hasUI(true)
-            b.machineLevel(1)
-
-            const slot = new SlotTraitC()
-            slot.setName("input")
-            slot.setPriority(0)
-            slot.setRecipeHandlerIO(IOC.IN)
-            slot.setGuiIO(IOC.IN)
-            slot.setSlotSize(1)
-            slot.setSlotLimit(64)
-            slot.getCapabilityIO().setInternal(IOC.BOTH)
-            b.traitDefinition(slot)
-
-            const tank = new FluidTraitC()
-            tank.setName("fluid_in")
-            tank.setPriority(1)
-            tank.setRecipeHandlerIO(IOC.IN)
-            tank.setGuiIO(IOC.IN)
-            tank.setTankSize(1)
-            tank.setCapacity(16000)
-            b.traitDefinition(tank)
-
-            return b.build()   // <- 必须 return, 否则配置全部丢失
-        })
-
-        .recipeLogicSettings(
-            $ConfigRecipeLogicSettings.builder()
-                .enable(true)
-                .recipeType("cmi:kjs_test_recipe_type")
-                .build()
-        )
-
-        .partSettings(() => $ConfigPartSettings.builder().enable(false).build())
-})
-
-// ---- 配方类型 + 内置配方 ----
-MBDRegistryEvents.recipeType(event => {
-    const type = event.createRecipeType("cmi:kjs_test_recipe_type")
-    type.setXEIVisible(true)
-
-    const builder = type.recipeBuilder("cmi:kjs_smelt")
-    builder.duration(100)
-    builder.inputItems("minecraft:iron_ingot")
-    builder.outputItems("2x minecraft:gold_ingot")
-    builder.saveAsBuiltinRecipe()
-})
-
-// ---- 机器事件 ----
-MBDMachineEvents.onRecipeWorking(event => {
-    // event.getEvent().getMachine() 是 MBDMachine
-    Utils.server.tell(event.getEvent().getMachine().getPos() + " is working")
-})
-```
+server: `onTick / onRecipeWorking / onRecipeWaiting / onRecipeStatusChanged / onBeforeRecipeWorking /
+onAfterRecipeWorking / onRecipeFinish / onConsumeInputsAfterWorking / onFuelRecipeModify /
+onFuelBurningFinish / onBeforeRecipeModify / onAfterRecipeModify / onStructureFormed /
+onStructureInvalid / onRightClick / onOpenUI / onPlaced / onRemoved / onDrops /
+onNeighborChanged / onStateChanged / onUseCatalyst / onLoad`
+client: `onClientTick / onCustomDataUpdate / onCustomKeyframe / onRecipeUI / onFuelRecipeUI`
