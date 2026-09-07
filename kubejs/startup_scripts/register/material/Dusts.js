@@ -103,8 +103,6 @@ StartupEvents.registry("item", (event) => {
 	addNonDustItem("pure_sapphire_compound")
 	// 赤泥
 	addNonDustItem("red_mud")
-	// 氧化铝
-	addNonDustItem("aluminum_oxide")
 	// 热解月岩残渣
 	addNonDustItem("pyrolyzed_moon_rock_residue")
 	// 致密氧化物薄膜
@@ -145,5 +143,5 @@ StartupEvents.registry("item", (event) => {
 	addNonDustItem("furnaced_lime")
 	// 草木灰
 	addNonDustItem("plant_ash")
-	
+
 })

@@ -1217,7 +1217,7 @@
 		}
 		{
 			dependencies: ["0FA1A601134C5105"]
-			icon: "cmi:silicon_mixure"
+			icon: "cmi:silicon_mixture"
 			id: "2902DA1D51BD15F5"
 			tasks: [
 				{
@@ -1242,8 +1242,8 @@
 					type: "item"
 				}
 				{
-					id: "077F924867B5E98E"
-					item: "cmi:silicon_mixure"
+					id: "2676DC87D68587E7"
+					item: "cmi:silicon_mixture"
 					type: "item"
 				}
 			]
