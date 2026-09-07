@@ -1,8 +1,0 @@
-{
-  "parent": "create:block/factory_gauge/item",
-  "textures": {
-    "0": "fluidlogistics:block/factory_panel",
-    "particle": "fluidlogistics:block/factory_panel"
-  }
-}
-

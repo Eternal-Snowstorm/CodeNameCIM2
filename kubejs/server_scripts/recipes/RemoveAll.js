@@ -243,7 +243,9 @@ ServerEvents.recipes((event) => {
 		"immersiveengineering:alloy",
 		"thermal_extra:nitratic_igniter_catalyst",
 		"createdieselgenerators:hammering",
-		"create_dragons_plus:freezing"
+		"create_dragons_plus:freezing",
+		"fluidlogistics:bulk_cooling",
+		"fluidlogistics:inactive_bulk_cooling"
 	]
 	removeRecipeType.forEach((type) => {
 		event.remove({

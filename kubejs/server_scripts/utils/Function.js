@@ -346,7 +346,11 @@ function getItemsUnderTag(tag) {
 	return ids
 }
 
-let removedRecipes = new Set()
+let removedRecipesSet = new Set()
+
+function removedRecipes() {
+	return removedRecipesSet
+}
 
 /**
  * 
@@ -373,13 +377,10 @@ function removeRecipe(event, ids) {
 					.replace("/", ":")
 			}
 
+			removedRecipes().add(realId)
 			event.remove({
 				id: realId
 			})
-
-			removedRecipes.add(id)
-
-			// console.log(realId)
 		})
 }
 

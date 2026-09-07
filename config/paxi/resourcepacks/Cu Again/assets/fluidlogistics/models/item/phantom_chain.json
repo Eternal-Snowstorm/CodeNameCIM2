@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "fluidlogistics:item/phantom_chain"
-  }
-}
