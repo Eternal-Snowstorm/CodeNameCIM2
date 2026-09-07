@@ -64,6 +64,14 @@ ServerEvents.recipes((event) => {
 	)
 
 	neoecoae.integrated_working_station()
+		.itemOutput("2x mekanism:steel_casing")
+		.inputItems([
+			"2x #forge:plates/stainless_steel",
+			"cmi:osmium_tile",
+			"#forge:gears/chromeplated_steel"
+		])
+
+	neoecoae.integrated_working_station()
 		.itemOutput("neoecoae:integrated_working_station")
 		.inputItems([
 			"thermal_extra:component_assembly",

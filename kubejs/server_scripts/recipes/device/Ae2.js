@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { kubejs, thermal_extra } = event.getRecipes()
+	let { kubejs, thermal_extra, neoecoae } = event.getRecipes()
 	const DRIVE = /^ae2:(?!.*portable)(?!.*spatial).*cell(?!.*workbench$).+$/;
 
 	event.remove([
@@ -10,7 +10,6 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 福鲁伊克斯色ME玻璃线缆
-	// 哇还有BA
 	kubejs.shaped("8x ae2:fluix_glass_cable", [
 		"AAA",
 		"ABA",
@@ -68,11 +67,11 @@ ServerEvents.recipes((event) => {
 	]).id("ae2:tools/network_tool")
 
 	// 机壳
-	thermal_extra.component_assembly("4x cmi:smart_casing", [
-		"#forge:plates/iron",
+	thermal_extra.component_assembly("2x cmi:smart_casing", [
 		"#forge:plates/iron",
 		"#forge:plates/silver",
-		"#forge:dusts/certus_quartz",
+		"ae2:charged_certus_quartz_crystal",
+		"thermal:cured_rubber",
 		Fluid.of("thermal:resin", 100)
 	])
 
@@ -604,4 +603,14 @@ ServerEvents.recipes((event) => {
 		"cmi:combined_spatial_component_128",
 		"#forge:gems/fluix"
 	]).id("ae2:network/cells/spatial_components_1")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("cmi:computing_casing")
+		.inputItems([
+			"#forge:plates/stainless_steel",
+			"#forge:plates/platinum",
+			"cmi:entro_crystal",
+			"cmi:silicon_rubber"
+		])
+		.inputFluid(Fluid.of("thermal:resin", 100))
 })
