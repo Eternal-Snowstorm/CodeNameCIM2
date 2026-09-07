@@ -455,6 +455,17 @@ ServerEvents.recipes((event) => {
 		])
 		.build("tconstruct:tools/modifiers/ability/unbreakable")
 
+	// 潜水
+	new ModifierRecipeBuilder("cmi:diving")
+		.allowCrystal(true)
+		.checkTraitLevel(true)
+		.level(1)
+		.tools("tconstruct:plate_helmet")
+		.inputs([
+			"#create:diving_helmets"
+		])
+		.build()
+
 	let luckRecipes = [
 		[1, "#forge:dyes/blue", true],
 		[2, "#forge:gems/diamond", false],
