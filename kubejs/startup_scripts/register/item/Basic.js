@@ -185,11 +185,6 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("optical_fiber")
 		.tag("forge:wires")
 
-	// 福鲁伊克斯线
-	addMaterial("fluix_wire")
-		.tag("forge:wires/fluix")
-		.tag("forge:wires")
-
 	// 磁触点
 	addMaterial("magnetic_contact")
 
