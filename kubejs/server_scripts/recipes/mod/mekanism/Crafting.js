@@ -25,4 +25,24 @@ ServerEvents.recipes((event) => {
 		"mekanism:dynamic_tank",
 		"fluidlogistics:fluid_hatch"
 	]).id("mekanism:dynamic_valve")
+
+	// 涡轮叶片
+	kubejs.shaped("mekanismgenerators:turbine_blade", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "#forge:plates/aluminum_alloy",
+		B: "#forge:ingots/stainless_steel"
+	}).id("mekanismgenerators:turbine/blade")
+
+	// 涡轮转子
+	kubejs.shaped("mekanismgenerators:turbine_rotor", [
+		"BAB",
+		"A A",
+		"BAB"
+	], {
+		A: "#create:shaft",
+		B: "#forge:ingots/black_tungsten_alloy"
+	}).id("mekanismgenerators:turbine/rotor")
 })

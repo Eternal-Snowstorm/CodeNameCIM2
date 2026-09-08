@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
 
 	// 感应矩阵
 	neoecoae.integrated_working_station()
-		.itemOutput("mekanism:induction_casing")
+		.itemOutput("2x mekanism:induction_casing")
 		.inputItems([
 			Casing.STAINLESS_STEEL,
 			"2x #forge:plates/aluminum",
@@ -114,7 +114,7 @@ ServerEvents.recipes((event) => {
 
 	// 锅炉
 	neoecoae.integrated_working_station()
-		.itemOutput("mekanism:boiler_casing")
+		.itemOutput("2x mekanism:boiler_casing")
 		.inputItems([
 			Casing.STAINLESS_STEEL,
 			"2x #forge:plates/bronze",
@@ -150,4 +150,55 @@ ServerEvents.recipes((event) => {
 		]).id("mekanism:superheating_element")
 
 	// 涡轮
+	neoecoae.integrated_working_station()
+		.itemOutput("mekanismgenerators:rotational_complex")
+		.inputItems([
+			"2x #forge:plates/stainless_steel",
+			Mechanisms.STEAM.COM,
+			"#forge:gears/chromeplated_steel",
+			"mekanism:basic_control_circuit"
+		]).id("mekanismgenerators:rotational_complex")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("2x mekanismgenerators:electromagnetic_coil")
+		.inputItems([
+			"2x #forge:ingots/black_tungsten_alloy",
+			"2x #forge:plates/vanadium",
+			"immersiveengineering:coil_mv",
+			Mechanisms.COIL.COM
+		])
+		.inputFluid(Fluid.of("cmi:molten_etrium", 90))
+		.id("mekanismgenerators:electromagnetic_coil")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("2x mekanismgenerators:turbine_casing")
+		.inputItems([
+			Casing.STAINLESS_STEEL,
+			"2x #forge:plates/stainless_steel",
+			"2x #forge:plates/osmium"
+		]).id("mekanismgenerators:turbine/casing")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("mekanismgenerators:turbine_valve")
+		.inputItems([
+			"mekanismgenerators:turbine_casing",
+			Mechanisms.BASIC.COM,
+			"#forge:plates/industrial_iron"
+		]).id("mekanismgenerators:turbine/valve")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("2x mekanismgenerators:turbine_vent")
+		.inputItems([
+			"ad_astra:vent",
+			"2x #forge:plates/stainless_steel",
+			"2x #forge:plates/osmium"
+		]).id("mekanismgenerators:turbine/vent")
+
+	neoecoae.integrated_working_station()
+		.itemOutput("2x mekanismgenerators:saturating_condenser")
+		.inputItems([
+			"mekanismgenerators:turbine_casing",
+			"cmi:nuke_cooler",
+			"#forge:plates/invar"
+		]).id("mekanismgenerators:saturating_condenser")
 })
