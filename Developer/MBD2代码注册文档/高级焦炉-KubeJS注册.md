@@ -129,7 +129,7 @@ function machineState(name, model, light) {
 // 机器设置: 三个特性 + 配方修饰 (0.5x 时长, 4x 并行)
 function ovenSettings() {
     const settings = $ConfigMachineSettings.builder()
-    settings.hasUI(true)
+    settings.hasUI(false)   // 纯代码注册无 GUI 数据 (uiCreator=null), hasUI(true) 开 UI 会 NPE; 需要 GUI 走 NBT 或 GUI 指南
     settings.traitDefinition(itemSlot("reinforced_coke_oven_input_item_slot", $IO.IN))
     settings.traitDefinition(itemSlot("reinforced_coke_oven_output_item_slot", $IO.OUT))
 

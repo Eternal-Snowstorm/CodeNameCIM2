@@ -83,7 +83,7 @@ public final class ReinforcedCokeOven {
                 .children(List.of(formed)).build();
 
         // 特性: 物品输入 / 物品输出 / 流体输出
-        ConfigMachineSettings settings = ConfigMachineSettings.builder().hasUI(true).build();
+        ConfigMachineSettings settings = ConfigMachineSettings.builder().hasUI(false)   // 纯代码注册无 GUI 数据 (uiCreator=null), hasUI(true) 开 UI 会 NPE; 需要 GUI 走 NBT 或 GUI 指南.build();
         settings.addTraitDefinition(itemSlot("reinforced_coke_oven_input_item_slot", IO.IN));
         settings.addTraitDefinition(itemSlot("reinforced_coke_oven_output_item_slot", IO.OUT));
         settings.addTraitDefinition(fluidOut());

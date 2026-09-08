@@ -73,7 +73,7 @@ private static MBDMachineDefinition createElectrolyzer() {
 
     // 机器设置 + 特性
     ConfigMachineSettings settings = ConfigMachineSettings.builder()
-            .hasUI(true)
+            .hasUI(false)   // 纯代码注册无 GUI 数据 (uiCreator=null), hasUI(true) 开 UI 会 NPE; 需要 GUI 走 NBT 或 GUI 指南
             .build();
 
     ItemSlotCapabilityTraitDefinition slot = new ItemSlotCapabilityTraitDefinition();
@@ -156,7 +156,7 @@ private static MultiblockMachineDefinition createSmallMachine() {
             .modelRenderer(new ResourceLocation("cmi", "block/machine/small_machine/off"))
             .shape(Shapes.block())
             .build());
-    builder.machineSettings(() -> ConfigMachineSettings.builder().hasUI(true).build());
+    builder.machineSettings(() -> ConfigMachineSettings.builder().hasUI(false)   // 纯代码注册无 GUI 数据 (uiCreator=null), hasUI(true) 开 UI 会 NPE; 需要 GUI 走 NBT 或 GUI 指南.build());
     builder.recipeLogicSettings(ConfigRecipeLogicSettings.builder()
             .enable(true)
             .recipeType(new ResourceLocation("cmi", "electrolyzer"))
@@ -211,6 +211,116 @@ private static void onRecipeWorking(MachineOnRecipeWorkingEvent e) {
 
 事件常量全在 `MBDServerEvents` 上: `TICK / ON_RECIPE_WORKING / ON_RECIPE_FINISH /
 STRUCTURE_FORMED / STRUCTURE_INVALID / RIGHT_CLICK / STATE_CHANGED ...` (与 KubeJS 事件同名)。
+
+---
+
+## 第五步: 定义 GUI
+
+### GUI 的组成与约定 id
+
+机器 GUI = `uiCreator` (`Function<MBDMachine, WidgetGroup>`) 返回的 widget 树 (LDLib GUI 框架)。
+`bindMachineUI` 打开界面时按 widget 的 id 正则自动接功能:
+
+| widget id (正则) | 自动挂载 |
+|---|---|
+| `^ui:machine_name$` | 机器名文本 (TextTextureWidget) |
+| `^ui:progress_bar$` | 配方进度 (ProgressWidget, 进度= getProgressPercent) |
+| `^ui:fuel_bar$` | 燃料进度 (getFuelProgressPercent) |
+| `^ui:xei_lookup$` | XEI 配方查看按钮 (ButtonWidget) |
+| `ui:<trait名>_<序号>` | trait 槽位 (initTraitUI 自动绑) |
+
+widget 设 id: `widget.setId("ui:machine_name")`。
+
+### 关键结论: GUI 数据只来自 NBT, 纯代码注册的坑
+
+- `uiCreator` 字段只在 `loadProductiveTag` (NBT 反序列化) 里被赋值; **纯代码 Builder 注册的机器
+  `uiCreator == null`, 而 `hasUI` 默认 true, `createUI` 无 null 检查 → 开 GUI 直接 NPE**。
+- 所以纯代码机器要么 `hasUI(false)` (前四步的示例), 要么按下面路径注入 uiCreator。
+
+### 路径 A: 反射注入 uiCreator (纯代码写 GUI)
+
+```java
+import com.lowdragmc.lowdraglib.gui.texture.ResourceTexture;
+import com.lowdragmc.lowdraglib.gui.widget.*;
+import com.lowdragmc.mbd2.common.trait.fluid.FluidTankCapabilityTrait;
+import com.lowdragmc.mbd2.common.trait.item.ItemSlotCapabilityTrait;
+import java.util.function.Function;
+
+// 注册时 (builder.build() 之后):
+setPrivateField(def, "uiCreator",
+        (Function<MBDMachine, WidgetGroup>) MyMachines::createMachineUI);
+
+private static WidgetGroup createMachineUI(MBDMachine machine) {
+    WidgetGroup group = new WidgetGroup(0, 0, 176, 166);           // x, y, w, h
+    group.setBackground(new ResourceTexture("ldlib:textures/gui/background.png"));
+
+    // 标题: id 挂载
+    group.addWidget(new TextTextureWidget(70, 5, 37, 20, "机器名").setId("ui:machine_name"));
+
+    // 进度条: 自己接 supplier (bindMachineUI 不会自动跑, 见下)
+    group.addWidget(new ProgressWidget(
+            () -> machine.getRecipeLogic().getProgressPercent(),  // DoubleSupplier
+            79, 42, 18, 18));
+
+    // 物品槽: 按名拿 trait, storage 直接喂给 SlotWidget
+    ItemSlotCapabilityTrait input = machine.getTraitByName(ItemSlotCapabilityTrait.class, "input");
+    group.addWidget(new SlotWidget(input.storage, 0, 40, 42));     // (存储, 槽序号, x, y)
+
+    ItemSlotCapabilityTrait output = machine.getTraitByName(ItemSlotCapabilityTrait.class, "output");
+    group.addWidget(new SlotWidget(output.storage, 0, 114, 42));
+
+    // 流体槽: storages[0] 是第一个槽
+    FluidTankCapabilityTrait tank = machine.getTraitByName(FluidTankCapabilityTrait.class, "fluid_out");
+    group.addWidget(new TankWidget(tank.storages[0], 141, 22, 18, 58, true, true));
+
+    // 按钮
+    group.addWidget(new ButtonWidget(78, 42, 18, 18, click -> System.out.println("clicked")));
+    return group;
+}
+```
+
+注意: 路径 A 注入后 `bindMachineUI` **不会**自动执行 (它只由 NBT 加载路径调用), 所以功能要自己接
+(进度条 supplier / 槽位 handler 如上); 想用约定 id 自动挂载, 反射调一次
+`bindMachineUI` (protected) 或干脆用 NBT 注册。
+
+### Widget 构造器速查 (LDLib 1.0.52)
+
+| 类 | 构造器 |
+|---|---|
+| `WidgetGroup` | `(x, y, w, h)`; `addWidget(Widget)` |
+| `SlotWidget` | `(IItemTransfer 存储, 槽序号, x, y)`; `setBackgroundTexture(IGuiTexture)` |
+| `TankWidget` | `(IFluidStorage 存储, x, y, w, h, 可注入, 可抽取)` |
+| `ProgressWidget` | `(DoubleSupplier, x, y, w, h)`; `setProgressTexture(空, 满)` |
+| `ButtonWidget` | `(x, y, w, h, Consumer<ClickData>)`; `setButtonTexture(IGuiTexture...)` |
+| `ImageWidget` | `(x, y, w, h, IGuiTexture)` |
+| `TextTextureWidget` | `(x, y, w, h, String)`; `setText(...)` |
+| `ResourceTexture` | `(String 贴图路径)` 或 `(ResourceLocation)` |
+| `ProgressTexture` | `(IGuiTexture 空, IGuiTexture 满)`; `setFillDirection(...)` |
+
+通用 (Widget 基类): `setId(String)` `setSelfPosition(x,y)` `setSize(w,h)` `setBackground(IGuiTexture...)`
+`setHoverTooltips(String...)`。
+
+### 路径 B: 运行时改 GUI (MachineUIEvent)
+
+**MachineUIEvent post 在 FORGE 总线** (与其他机器事件不同, 标准 @SubscribeEvent 即可), 有
+`root` (WidgetGroup) 与 `setRoot(...)`:
+
+```java
+import com.lowdragmc.mbd2.common.machine.definition.config.event.MachineUIEvent;
+
+@SubscribeEvent
+public static void onMachineUI(MachineUIEvent event) {
+    event.getRoot().addWidget(new ImageWidget(80, 5, 16, 16,
+            new ResourceTexture("cmi:textures/gui/my_icon.png")));   // 往现有 UI 加图标
+    // 或整体替换: event.setRoot(myGroup);
+}
+```
+
+### 配方类型 GUI
+
+.rt 的 `ui`/`fuelUI` 同样只来自 NBT; 代码侧可读: `MBDRecipeType.createRecipeUI(MBDRecipe)`
+(public) 拿构建好的 WidgetGroup; 运行时改: `RecipeUIEvent` (public `root` + `getRoot/setRoot`),
+同样 post 在 FORGE 总线。
 
 ---
 

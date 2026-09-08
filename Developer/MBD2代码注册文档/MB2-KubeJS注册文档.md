@@ -62,7 +62,7 @@ MBDRegistryEvents.machine(event => {
 
     builder.machineSettings(() => {
         const settings = $ConfigMachineSettings.builder()
-        settings.hasUI(true)
+        settings.hasUI(false)   // 纯代码注册无 GUI 数据 (uiCreator=null), hasUI(true) 开 UI 会 NPE; 需要 GUI 走 NBT 或 GUI 指南
 
         // ---- 特性: 一个物品输入槽 ----
         const slot = new $ItemSlotCapabilityTraitDefinition()
@@ -144,7 +144,7 @@ MBDRegistryEvents.machine(event => {
     )
     builder.machineSettings(() => {
         const settings = $ConfigMachineSettings.builder()
-        settings.hasUI(true)
+        settings.hasUI(false)   // 纯代码注册无 GUI 数据 (uiCreator=null), hasUI(true) 开 UI 会 NPE; 需要 GUI 走 NBT 或 GUI 指南
         return settings.build()
     })
     builder.recipeLogicSettings(
@@ -196,6 +196,102 @@ MBDMachineEvents.onRecipeWorking(event => {
 
 常用事件: `onTick` `onRecipeWorking` `onRecipeFinish` `onStructureFormed` `onStructureInvalid`
 `onRightClick` `onStateChanged` (完整清单见文末附录)。
+
+---
+
+## 第五步: 定义 GUI
+
+### GUI 的组成与约定 id
+
+机器 GUI = `uiCreator` (`Function<MBDMachine, WidgetGroup>`) 返回的 widget 树 (LDLib 框架)。
+`bindMachineUI` 打开界面时按 widget 的 id 正则自动接功能:
+
+| widget id (正则) | 自动挂载 |
+|---|---|
+| `^ui:machine_name$` | 机器名文本 |
+| `^ui:progress_bar$` | 配方进度 (getProgressPercent) |
+| `^ui:fuel_bar$` | 燃料进度 (getFuelProgressPercent) |
+| `^ui:xei_lookup$` | XEI 配方查看按钮 |
+| `ui:<trait名>_<序号>` | trait 槽位 (自动绑定) |
+
+widget 设 id: `widget.setId("ui:machine_name")`。
+
+### 关键结论: GUI 数据只来自 NBT, 纯代码注册的坑
+
+- `uiCreator` 只在 NBT 反序列化 (`loadProductiveTag`) 里被赋值; **纯代码 Builder 注册的机器
+  `uiCreator == null`, 而 `hasUI` 默认 true, `createUI` 无 null 检查 → 开 GUI 直接 NPE**。
+- 所以纯代码机器要么 `hasUI(false)` (前四步示例已统一这样), 要么注入 uiCreator, 要么靠 NBT。
+
+### 路径 A: JS 构建 GUI 并注入 uiCreator
+
+```js
+// 类引用 ($类名 约定)
+let $WidgetGroup        = Java.loadClass("com.lowdragmc.lowdraglib.gui.widget.WidgetGroup")
+let $SlotWidget         = Java.loadClass("com.lowdragmc.lowdraglib.gui.widget.SlotWidget")
+let $ProgressWidget     = Java.loadClass("com.lowdragmc.lowdraglib.gui.widget.ProgressWidget")
+let $ButtonWidget       = Java.loadClass("com.lowdragmc.lowdraglib.gui.widget.ButtonWidget")
+let $TextTextureWidget  = Java.loadClass("com.lowdragmc.lowdraglib.gui.widget.TextTextureWidget")
+let $TankWidget         = Java.loadClass("com.lowdragmc.lowdraglib.gui.widget.TankWidget")
+let $ResourceTexture    = Java.loadClass("com.lowdragmc.lowdraglib.gui.texture.ResourceTexture")
+let $ItemSlotCapabilityTrait = Java.loadClass("com.lowdragmc.mbd2.common.trait.item.ItemSlotCapabilityTrait")
+let $FluidTankCapabilityTrait = Java.loadClass("com.lowdragmc.mbd2.common.trait.fluid.FluidTankCapabilityTrait")
+
+// 构建 GUI (与 Java 同款构造器, JS 函数自动适配 Supplier/Consumer)
+function createMachineUI(machine) {
+    const group = new $WidgetGroup(0, 0, 176, 166)          // x, y, w, h
+    group.setBackground(new $ResourceTexture("ldlib:textures/gui/background.png"))
+
+    group.addWidget(new $TextTextureWidget(70, 5, 37, 20, "机器名").setId("ui:machine_name"))
+    group.addWidget(new $ProgressWidget(
+        () => machine.getRecipeLogic().getProgressPercent(), // DoubleSupplier
+        79, 42, 18, 18))
+
+    // 物品槽: 按名拿 trait, storage 喂给 SlotWidget
+    const input = machine.getTraitByName($ItemSlotCapabilityTrait, "input")
+    group.addWidget(new $SlotWidget(input.storage, 0, 40, 42))   // (存储, 槽序号, x, y)
+
+    const output = machine.getTraitByName($ItemSlotCapabilityTrait, "output")
+    group.addWidget(new $SlotWidget(output.storage, 0, 114, 42))
+
+    // 流体槽: storages[0] 是第一个槽
+    const tank = machine.getTraitByName($FluidTankCapabilityTrait, "fluid_out")
+    group.addWidget(new $TankWidget(tank.storages[0], 141, 22, 18, 58, true, true))
+
+    // 按钮: click 是 ClickData
+    group.addWidget(new $ButtonWidget(78, 42, 18, 18, (click) => console.log("clicked")))
+    return group
+}
+
+// 注册时注入 (def = builder.build() 之后; setPrivateField 见进阶章节):
+setPrivateField(def, "uiCreator", createMachineUI)   // JS 函数自动适配 Function<MBDMachine, WidgetGroup>
+```
+
+注意: 注入后 `bindMachineUI` 不会自动执行 (它只由 NBT 路径调用), 槽位/进度条要自己接 (如上)。
+
+### 路径 B: 运行时改 GUI (MBDMachineEvents.onUI, server 事件)
+
+```js
+MBDMachineEvents.onUI(event => {
+    const uiEvent = event.getEvent()        // MachineUIEvent
+    const root = uiEvent.getRoot()          // WidgetGroup
+    const $ImageWidget = Java.loadClass("com.lowdragmc.lowdraglib.gui.widget.ImageWidget")
+    // 往现有 UI 加一个图标:
+    root.addWidget(new $ImageWidget(80, 5, 16, 16, new $ResourceTexture("cmi:textures/gui/my_icon.png")))
+    // 或整体替换: uiEvent.setRoot(自定义 WidgetGroup)
+})
+```
+
+### 配方类型 GUI
+
+.rt 的 `ui`/`fuelUI` 同样只来自 NBT; 运行时改用 `MBDMachineEvents.onRecipeUI` / `onFuelRecipeUI`
+(client 事件, 事件对象 `RecipeUIEvent` 同样有 `getRoot()/setRoot()`):
+
+```js
+MBDMachineEvents.onRecipeUI(event => {
+    const root = event.getEvent().getRoot()   // WidgetGroup
+    // 加贴图/文字等, 同路径 B
+})
+```
 
 ---
 
