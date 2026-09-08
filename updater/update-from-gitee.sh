@@ -25,5 +25,11 @@ git fetch gitee
 echo "正在应用更新到本客户端..."
 git reset --hard "gitee/$BRANCH"
 
+echo "正在从 CurseForge 同步 mods..."
+if ! bash "$(dirname "$0")/mods-sync.sh"; then
+  echo "[错误] mods 同步失败, 可重新运行本脚本重试。"
+  exit 1
+fi
+
 echo
 echo "完成! 本客户端内容已更新到 Gitee 镜像最新版。"

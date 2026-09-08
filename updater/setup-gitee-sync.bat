@@ -37,6 +37,14 @@ if errorlevel 1 (
   exit /b 1
 )
 
+echo Syncing mods from CurseForge...
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0mods-sync.ps1"
+if errorlevel 1 (
+  echo [ERROR] Mod sync failed. Re-run this script to retry downloading.
+  pause
+  exit /b 1
+)
+
 echo.
 echo Done! This client is now synced with the Gitee mirror.
 echo Run update-from-gitee.bat in the future to pull updates.
