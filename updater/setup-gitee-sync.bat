@@ -1,7 +1,7 @@
 @echo off
 setlocal
 chcp 65001 >nul
-cd /d "%~dp0"
+cd /d "%~dp0.."
 
 set "REMOTE_URL=https://gitee.com/eternalsnowstorm/mechanism-and-innovation"
 set "BRANCH=master"

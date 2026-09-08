@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 
 REMOTE_URL="https://gitee.com/eternalsnowstorm/mechanism-and-innovation"
 BRANCH="master"
