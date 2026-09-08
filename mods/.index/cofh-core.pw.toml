@@ -1,0 +1,21 @@
+filename = 'cofh_core-1.20.1-11.0.2.56.jar'
+name = 'CoFH Core'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'cofh_core-1.20.1-11.0.2.56.jar'
+
+[download]
+hash = '6f7c0056fece31bf393df450d79482810ed444af'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5374122
+project-id = 69162
+
+[[x-prismlauncher-dependencies]]
+addonId = '220333'
+type = 'EMBEDDED'

@@ -1,0 +1,21 @@
+filename = 'player-animation-lib-forge-1.0.2-rc1+1.20.jar'
+name = 'playerAnimator'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'player-animation-lib-forge-1.0.2-rc1+1.20.jar'
+
+[download]
+hash = '16808f94a41d45d8e986b4e4ea6b02ba57fa058a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4587214
+project-id = 658587
+
+[[x-prismlauncher-dependencies]]
+addonId = '623373'
+type = 'OPTIONAL'

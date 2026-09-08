@@ -1,0 +1,25 @@
+filename = 'nolijium-0.1.3.jar'
+name = 'Nolijium'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '0.1.3'
+
+[download]
+hash = '7fd5a8ef4845937d1af0d014e88241539093c2d9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5592871
+project-id = 969602
+
+[[x-prismlauncher-dependencies]]
+addonId = '908741'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '927564'
+type = 'OPTIONAL'

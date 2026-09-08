@@ -1,0 +1,18 @@
+filename = 'SophisticatedSorter-forge-1.20.1-1.1.0-hotfix.jar'
+name = 'SophisticatedSorter'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'SophisticatedSorter-forge-1.20.1 1.1.0-hotfix'
+
+[download]
+hash = '76ddd1881eae5cbaf58ecf844bd94f8b6a327fe3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8807326
+project-id = 1375092

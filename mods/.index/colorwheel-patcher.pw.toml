@@ -1,0 +1,18 @@
+filename = 'colorwheel_patcher-forge-1.0.5+mc1.20.1.jar'
+name = 'Colorwheel Patcher'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.5+mc1.20.1-forge'
+
+[download]
+hash = '386458190144b431ac0a7151785bb639cdff2a62'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7924940
+project-id = 1285475

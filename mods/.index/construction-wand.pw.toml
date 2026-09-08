@@ -1,0 +1,18 @@
+filename = 'constructionwand-1.20.1-2.11.jar'
+name = 'Construction Wand'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'constructionwand-1.20.1-2.11.jar'
+
+[download]
+hash = '80bd5223cd8984dc1038cb9f2d1cb6b97f31998a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4684054
+project-id = 399558

@@ -1,0 +1,18 @@
+filename = 'athena-forge-1.20.1-3.1.2.jar'
+name = 'Athena'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[Forge] Athena 3.1.2'
+
+[download]
+hash = '2acee24454af859988a691f0506271a465f68f7b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5176879
+project-id = 841890

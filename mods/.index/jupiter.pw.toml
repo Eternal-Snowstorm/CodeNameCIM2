@@ -1,0 +1,21 @@
+filename = 'jupiter-2.3.7-1.20.1-forge.jar'
+name = 'Jupiter'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Jupiter 2.3.7 for 1.20.1 Forge'
+
+[download]
+hash = 'a2d05f0e70ac59ea44f44642f94c0f99f4e80417'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7738299
+project-id = 1072905
+
+[[x-prismlauncher-dependencies]]
+addonId = '348521'
+type = 'OPTIONAL'

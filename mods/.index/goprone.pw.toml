@@ -1,0 +1,18 @@
+filename = 'GoProne-forge-1.20.1-3.1.1.jar'
+name = 'GoProne'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'GoProne-forge-1.20.1-3.1.1.jar'
+
+[download]
+hash = 'a50de2b05daa2481ca7886e4425b2c66c3946b8c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4656519
+project-id = 327968

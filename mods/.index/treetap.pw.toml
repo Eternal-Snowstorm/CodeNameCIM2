@@ -1,0 +1,18 @@
+filename = 'treetap-1.20.1-0.5.0.jar'
+name = 'Tree Tap'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'treetap-1.20.1-0.5.0.jar'
+
+[download]
+hash = '397dc912e94bb651bc8dcc193c0f77ed38bead17'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5922848
+project-id = 927874

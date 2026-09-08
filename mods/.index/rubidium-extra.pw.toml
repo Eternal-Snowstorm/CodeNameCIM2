@@ -1,0 +1,25 @@
+filename = 'rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar'
+name = 'Embeddium (Rubidium) Extra'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[(Neo)Forge 1.20.1] v0.5.4.4'
+
+[download]
+hash = 'bb422d5626bf69841e444a3e545c8e71b6928cf8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6101745
+project-id = 654373
+
+[[x-prismlauncher-dependencies]]
+addonId = '908741'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '581495'
+type = 'OPTIONAL'

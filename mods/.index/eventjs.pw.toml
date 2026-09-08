@@ -1,0 +1,21 @@
+filename = 'EventJS-1.20.1-1.4.3.jar'
+name = 'EventJS'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'EventJS-1.20.1-1.4.3.jar'
+
+[download]
+hash = '2a667cf12d598060271afeb3a83b5fec7594297c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7143082
+project-id = 1132802
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'REQUIRED'

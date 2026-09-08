@@ -1,0 +1,18 @@
+filename = 'ExplorersCompass-1.20.1-1.4.0-forge.jar'
+name = "Explorer's Compass"
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ExplorersCompass-1.20.1-1.4.0-forge.jar'
+
+[download]
+hash = '23b7544ab3ebd1ab9c88255434ff9dc7f217766b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7892927
+project-id = 491794

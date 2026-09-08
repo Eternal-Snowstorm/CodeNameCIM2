@@ -1,0 +1,18 @@
+filename = 'Torcherino-forge-1.20.1-20.0.0.jar'
+name = 'Torcherino'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[Forge 1.20.1] 20.0.0'
+
+[download]
+hash = '013680b29aac6438a970fe713342f2f61658c4e8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4722725
+project-id = 236794

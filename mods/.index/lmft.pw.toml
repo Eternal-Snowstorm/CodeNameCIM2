@@ -1,0 +1,18 @@
+filename = 'lmft-1.0.4+1.20.1-forge.jar'
+name = 'Load My F***ing Tags'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1', '1.20.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'LMFT Forge 1.0.4 for Minecraft 1.20+'
+
+[download]
+hash = 'e44a12eb51813b16faaab89b8073ec63c746c1b0'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4892299
+project-id = 656346

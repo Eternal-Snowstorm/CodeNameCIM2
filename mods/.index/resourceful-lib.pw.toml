@@ -1,0 +1,18 @@
+filename = 'resourcefullib-forge-1.20.1-2.1.29.jar'
+name = 'Resourceful Lib'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[Forge] Resourceful Lib 2.1.29'
+
+[download]
+hash = '6fc590a7c56a720fec57e290cbb0a106efbb3ffa'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5659871
+project-id = 570073

@@ -1,0 +1,21 @@
+filename = 'alexscaves-2.0.2.jar'
+name = "Alex's Caves"
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'alexscaves-2.0.2'
+
+[download]
+hash = 'a1e5c7b7c7eadda4c8e954acbcbaf75a7b500d53'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5848216
+project-id = 924854
+
+[[x-prismlauncher-dependencies]]
+addonId = '331936'
+type = 'REQUIRED'

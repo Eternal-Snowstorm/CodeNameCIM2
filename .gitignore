@@ -106,9 +106,6 @@ CMI Dev.json
 
 # Saves
 /saves/*
-!/saves/Debug/
-/saves/debug/*
-!/saves/Debug/generated
 
 #.vscode
 /.vscode/*

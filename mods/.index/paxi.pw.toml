@@ -1,0 +1,21 @@
+filename = 'Paxi-1.20-Forge-4.0.jar'
+name = 'Paxi (Forge)'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[1.20] Paxi v4.0 (Forge)'
+
+[download]
+hash = 'a3a7008e07a27b3c831af7e4c82fbbc10a4da328'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4749994
+project-id = 515708
+
+[[x-prismlauncher-dependencies]]
+addonId = '421850'
+type = 'REQUIRED'

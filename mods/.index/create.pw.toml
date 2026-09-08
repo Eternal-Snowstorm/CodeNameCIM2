@@ -1,0 +1,18 @@
+filename = 'create-1.20.1-6.0.8.jar'
+name = 'Create'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Create 6.0.8 for mc1.20.1'
+
+[download]
+hash = 'b13d912b9247a38d66d11598c121442585a1c1e9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7178761
+project-id = 328085

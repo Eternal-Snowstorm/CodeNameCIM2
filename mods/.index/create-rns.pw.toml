@@ -1,0 +1,21 @@
+filename = 'create_rns-1.3.1-1.20.1-6.jar'
+name = 'Create: Rock & Stone'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'create_rns-1.3.1-1.20.1-6.jar'
+
+[download]
+hash = 'dedd2d929a80daab3deb6ddbda466bfd0954e590'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8729953
+project-id = 1370563
+
+[[x-prismlauncher-dependencies]]
+addonId = '328085'
+type = 'REQUIRED'

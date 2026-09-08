@@ -1,0 +1,18 @@
+filename = 'asteorbar-forge-1.20.1-1.5.3.jar'
+name = 'AsteorBar'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'AsteorBar 1.5.3 Forge'
+
+[download]
+hash = '11f55febbe256063b043e95a084fe1f3dae3d286'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7121000
+project-id = 959237

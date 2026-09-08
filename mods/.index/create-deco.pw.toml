@@ -1,0 +1,18 @@
+filename = 'createdeco-2.0.3-1.20.1-forge.jar'
+name = 'Create Deco'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'createdeco-2.0.3-1.20.1-forge.jar'
+
+[download]
+hash = '54c8ad5686b846310bca9e69982a455e668dede3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6373226
+project-id = 509285

@@ -1,0 +1,25 @@
+filename = 'ThermalExtra-3.3.1-1.20.1.jar'
+name = 'Thermal Extra'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ThermalExtra-3.3.1-1.20.1'
+
+[download]
+hash = '53a6271a645882009d2e52ef2803cdf3296b19dc'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7926122
+project-id = 573674
+
+[[x-prismlauncher-dependencies]]
+addonId = '291737'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '69163'
+type = 'REQUIRED'

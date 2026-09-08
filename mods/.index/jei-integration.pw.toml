@@ -1,0 +1,21 @@
+filename = 'jeiintegration_1.20.1-10.0.0.jar'
+name = 'JEI Integration'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'jeiintegration_1.20.1-10.0.0.jar'
+
+[download]
+hash = '0aa9c598105938ee0be35f1c1b31ab5d936b0ef6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4999754
+project-id = 265917
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'REQUIRED'

@@ -1,0 +1,18 @@
+filename = 'rhino-forge-2001.2.3-build.10.jar'
+name = 'Rhino'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Rhino Forge 2001.2.3-build.10'
+
+[download]
+hash = 'c83c9b719a6bab33fbd2b3f2f680eb3adbfc1aa1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6186971
+project-id = 416294

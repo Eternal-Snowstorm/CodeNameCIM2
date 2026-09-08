@@ -1,0 +1,21 @@
+filename = 'thermal_expansion-1.20.1-11.0.1.29.jar'
+name = 'Thermal Expansion'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'thermal_expansion-1.20.1-11.0.1.29.jar'
+
+[download]
+hash = 'c79fe5b922653d109cdcee45f4bca24c86daf6c0'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5372749
+project-id = 69163
+
+[[x-prismlauncher-dependencies]]
+addonId = '222880'
+type = 'REQUIRED'

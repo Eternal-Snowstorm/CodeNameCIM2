@@ -1,0 +1,18 @@
+filename = 'TES-forge-1.20.1-1.6.1.jar'
+name = 'TslatEntityStatus (TES)'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'TslatEntityStatus Forge 1.20.1 1.6.1'
+
+[download]
+hash = 'd24732304e2ce77399ee301daa3edbc5a09ed872'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7126708
+project-id = 830420

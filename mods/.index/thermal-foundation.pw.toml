@@ -1,0 +1,21 @@
+filename = 'thermal_foundation-1.20.1-11.0.6.70.jar'
+name = 'Thermal Foundation'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'thermal_foundation-1.20.1-11.0.6.70.jar'
+
+[download]
+hash = '7c1fbd79c9bda7478560faa886eaadf0dd8d181f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5443583
+project-id = 222880
+
+[[x-prismlauncher-dependencies]]
+addonId = '69162'
+type = 'REQUIRED'

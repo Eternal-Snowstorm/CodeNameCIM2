@@ -1,0 +1,21 @@
+filename = 'functionalstorage-1.20.1-1.2.14.jar'
+name = 'Functional Storage'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'functionalstorage-1.20.1-1.2.14.jar'
+
+[download]
+hash = 'e651d29acc8f7d56c124a75afa6ff0d0ecea4854'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8412552
+project-id = 556861
+
+[[x-prismlauncher-dependencies]]
+addonId = '287342'
+type = 'REQUIRED'

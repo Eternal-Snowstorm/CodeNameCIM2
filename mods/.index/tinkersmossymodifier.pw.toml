@@ -1,0 +1,21 @@
+filename = 'tinkersmossymodifier-forge-1.20-1.20.1-1.0.0.jar'
+name = 'Tinkers Mossy Modifier'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'tinkersmossymodifier-forge-1.20-1.20.1-1.0.0.jar'
+
+[download]
+hash = '22a329b9a1779fe345a36293f64d2aca906b4cd1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7886434
+project-id = 1495188
+
+[[x-prismlauncher-dependencies]]
+addonId = '74072'
+type = 'REQUIRED'

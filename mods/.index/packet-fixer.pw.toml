@@ -1,0 +1,32 @@
+filename = 'packetfixer-3.3.2-1.18-1.20.4-merged.jar'
+name = 'Packet Fixer'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [
+    '1.18',
+    '1.18.1',
+    '1.18.2',
+    '1.19',
+    '1.19.1',
+    '1.19.2',
+    '1.19.3',
+    '1.19.4',
+    '1.20',
+    '1.20.1',
+    '1.20.2',
+    '1.20.3',
+    '1.20.4'
+]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Packet Fixer 3.3.2'
+
+[download]
+hash = '79ebc5e66a5ee3ce92afb340e693d506e97361a0'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7872374
+project-id = 689467

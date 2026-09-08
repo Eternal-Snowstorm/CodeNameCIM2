@@ -1,0 +1,21 @@
+filename = 'catalogue-forge-1.20.1-1.8.0.jar'
+name = 'Catalogue'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Catalogue 1.8.0'
+
+[download]
+hash = 'b8cc73db430fa6015671492d4332a65a8c2f5cae'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4766090
+project-id = 459701
+
+[[x-prismlauncher-dependencies]]
+addonId = '457570'
+type = 'OPTIONAL'

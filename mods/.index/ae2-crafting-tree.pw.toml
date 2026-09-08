@@ -1,0 +1,18 @@
+filename = 'ae2ct-1.20.1-1.1.1.jar'
+name = 'AE2: Crafting Tree'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ae2ct-1.20.1-1.1.1.jar'
+
+[download]
+hash = 'e6c9d9c2cd9c52aec6364d87e78924f6165b7998'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7182165
+project-id = 1086241

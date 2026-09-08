@@ -1,0 +1,33 @@
+filename = 'vintage_kubejs-1.20.1-1.0.0rc-2.jar'
+name = 'Vintage KubeJS'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'vintage_kubejs-1.20.1-1.0.0rc-2.jar'
+
+[download]
+hash = 'ca49a4163794cc0f94a31a17f6956be11979db53'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5607145
+project-id = 1077532
+
+[[x-prismlauncher-dependencies]]
+addonId = '946579'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '429371'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '328085'
+type = 'REQUIRED'

@@ -1,0 +1,25 @@
+filename = 'Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar'
+name = 'Not Enough Recipe Book [NERB]'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar'
+
+[download]
+hash = 'c0806369f4257149664904db44efc60bd1785c17'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5760231
+project-id = 738663
+
+[[x-prismlauncher-dependencies]]
+addonId = '916747'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419699'
+type = 'REQUIRED'

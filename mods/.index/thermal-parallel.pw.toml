@@ -1,0 +1,18 @@
+filename = 'thermal_parallel-1.0.1-beta.2.jar'
+name = 'Thermal Parallel'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'thermal_parallel-1.0.1-beta.2.jar'
+
+[download]
+hash = 'a194d3b30854a22cea4373472b3b3c45241be4c9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8048253
+project-id = 1350169

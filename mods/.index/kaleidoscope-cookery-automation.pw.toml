@@ -1,0 +1,21 @@
+filename = 'kaleidoscopecookery_automation-1.0.1.jar'
+name = 'Kaleidoscope Cookery Automation'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'kaleidoscopecookery_automation-1.0.1-1.20.1.jar'
+
+[download]
+hash = 'eb5feb59870574c6f65a3f5a29c8c7a3b187b63e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7685895
+project-id = 1467064
+
+[[x-prismlauncher-dependencies]]
+addonId = '1309203'
+type = 'REQUIRED'

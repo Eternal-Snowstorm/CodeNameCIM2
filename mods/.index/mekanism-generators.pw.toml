@@ -1,0 +1,21 @@
+filename = 'MekanismGenerators-1.20.1-10.4.16.80.jar'
+name = 'Mekanism Generators'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'MekanismGenerators-1.20.1-10.4.16.80.jar'
+
+[download]
+hash = '53fa707fd204ca1dd099a08995c2197145ff9a36'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6552914
+project-id = 268566
+
+[[x-prismlauncher-dependencies]]
+addonId = '268560'
+type = 'REQUIRED'

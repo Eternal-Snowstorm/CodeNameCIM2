@@ -1,0 +1,18 @@
+filename = 'UntranslatedItems-forge-1.20.1-1.21.jar'
+name = 'Untranslated Items'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'UntranslatedItems-forge-1.20.1-1.21.jar'
+
+[download]
+hash = 'cc24a258a264969d617bea604386dd39011d3daa'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8678002
+project-id = 401770

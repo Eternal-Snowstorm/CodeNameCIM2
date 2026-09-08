@@ -1,0 +1,18 @@
+filename = 'botarium-forge-1.20.1-2.3.4.jar'
+name = 'Botarium'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[Forge/NeoForge] Botarium 2.3.4'
+
+[download]
+hash = 'a6928cb03b7c5f81900d3d3c8e8c8f6a89a51a5b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5486070
+project-id = 704113

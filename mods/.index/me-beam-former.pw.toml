@@ -1,0 +1,18 @@
+filename = 'me_beam_former-1.3.0.jar'
+name = 'Me-Beam-Former'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'me_beam_former-1.3.0.jar'
+
+[download]
+hash = '0da297fdd6317b4c3a79375687be4497de3173d1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7765493
+project-id = 1351545

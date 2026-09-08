@@ -1,0 +1,53 @@
+filename = 'ftb-xmod-compat-forge-2.1.3.jar'
+name = 'FTB XMod Compat'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ftb-xmod-compat-forge-2.1.3.jar'
+
+[download]
+hash = '0584f628d2bc6a612d79dee368324357ebae1423'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6402486
+project-id = 889915
+
+[[x-prismlauncher-dependencies]]
+addonId = '310111'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '289412'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419699'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '314905'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '268655'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '404465'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238222'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '245755'
+type = 'OPTIONAL'

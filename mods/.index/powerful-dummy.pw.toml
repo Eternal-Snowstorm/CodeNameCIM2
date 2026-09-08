@@ -1,0 +1,18 @@
+filename = 'powerful_dummy-20-0.0.9.jar'
+name = 'Powerful Dummy'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'powerful_dummy-20-0.0.9.jar'
+
+[download]
+hash = 'cc92fde0f6b4d6678092f674c45d4259cdd82718'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7638171
+project-id = 1276893

@@ -1,0 +1,18 @@
+filename = 'Railway-Automation-1.20.1-1.0.jar'
+name = 'Create: Railway Automation'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Railway-Automation-1.20.1-1.0.jar'
+
+[download]
+hash = '25a3142fff25f8760ee2f243c3b97bb236d51c99'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8676039
+project-id = 1657925

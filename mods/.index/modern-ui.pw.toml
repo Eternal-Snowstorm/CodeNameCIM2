@@ -1,0 +1,18 @@
+filename = 'ModernUI-Forge-1.20.1-3.12.0.1-universal.jar'
+name = 'Modern UI'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ModernUI-Forge-1.20.1-3.12.0.1'
+
+[download]
+hash = 'fcebe51e3c2ca34793f9b132fa05b5494ffc76a4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6956345
+project-id = 352491

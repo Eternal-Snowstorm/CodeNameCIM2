@@ -1,0 +1,21 @@
+filename = 'JadeAddons-1.20.1-Forge-5.5.1.jar'
+name = 'Jade Addons'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[Forge 1.20.1] 5.5.1'
+
+[download]
+hash = 'c4339eb3ef0c4728cb511efe60726653a35c7a0d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8203724
+project-id = 583345
+
+[[x-prismlauncher-dependencies]]
+addonId = '324717'
+type = 'REQUIRED'

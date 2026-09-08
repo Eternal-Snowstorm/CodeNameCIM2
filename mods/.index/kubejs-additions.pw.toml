@@ -1,0 +1,25 @@
+filename = 'kubejsadditions-forge-4.3.4.jar'
+name = 'KubeJS Additions'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'KubeJS Addditions Forge 4.3.4'
+
+[download]
+hash = 'c2720e589a292d5d168ef71a57f5dc3436db96b1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6302185
+project-id = 594387
+
+[[x-prismlauncher-dependencies]]
+addonId = '419699'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'REQUIRED'

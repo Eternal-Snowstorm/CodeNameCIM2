@@ -1,0 +1,25 @@
+filename = 'kubejs-thermal-2001.1.10-build.5.jar'
+name = 'KubeJS Thermal'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'kubejs-thermal Forge 2001.1.10-build.5'
+
+[download]
+hash = 'b18e0b08daf4f2d83af0439448b61d2a036e604a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8043140
+project-id = 421694
+
+[[x-prismlauncher-dependencies]]
+addonId = '69163'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'REQUIRED'

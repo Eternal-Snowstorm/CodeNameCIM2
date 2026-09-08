@@ -1,0 +1,18 @@
+filename = 'resourcefulconfig-forge-1.20.1-2.1.3.jar'
+name = 'Resourceful Config'
+side = 'server'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[Forge] Resourceful Config 2.1.3'
+
+[download]
+hash = '597d40920dcc935f963842c817dcc4901862ab14'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6231176
+project-id = 714059

@@ -1,0 +1,18 @@
+filename = 'hotai-1.0.jar'
+name = 'Hotai'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.18.2', '1.19', '1.19.1', '1.19.2', '1.19.3', '1.19.4', '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'hotai-1.0.jar'
+
+[download]
+hash = '9526c49043b9f72997759869f2ad146d83b619fb'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5071575
+project-id = 969060

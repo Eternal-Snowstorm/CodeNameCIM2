@@ -1,0 +1,21 @@
+filename = 'thermal_integration-1.20.1-11.0.1.27.jar'
+name = 'Thermal Integration'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'thermal_integration-1.20.1-11.0.1.27.jar'
+
+[download]
+hash = '8d6ecb5e6c8b7dc0a95eeaba012c6bcd1b75e77d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5374210
+project-id = 626708
+
+[[x-prismlauncher-dependencies]]
+addonId = '222880'
+type = 'REQUIRED'

@@ -1,0 +1,33 @@
+filename = 'ftb-quests-forge-2001.4.22.jar'
+name = 'FTB Quests'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ftb-quests-forge-2001.4.22.jar'
+
+[download]
+hash = '70f3bd771ab3b5921ce1ff5f14166fab694ca1aa'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8078538
+project-id = 289412
+
+[[x-prismlauncher-dependencies]]
+addonId = '404468'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419699'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '404465'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '889915'
+type = 'OPTIONAL'
