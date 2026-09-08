@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 
 	// 智能构件
 	thermal_extra.component_assembly(`4x ${Mechanisms.SMART.AUG.getId()}`, [
-		"#forge:wires/redstone",
+		"#forge:wires/signalum",
 		"ae2:logic_processor",
 		"ae2:calculation_processor",
 		"ae2:engineering_processor"

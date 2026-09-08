@@ -9,4 +9,22 @@ ServerEvents.recipes((event) => {
 			Fluid.tag("tag", "forge:honey", 250)
 		])
 		.id("tconstruct:smeltery/alloys/molten_pig_iron")
+
+	tconstruct.alloy(Fluid.of("tconstruct:molten_signalum", 360))
+		.temperature(1231)
+		.inputs([
+			Fluid.tag("tag", "tconstruct:molten_lead", 90),
+			Fluid.tag("tag", "tconstruct:molten_copper", 270),
+			Fluid.tag("tag", "forge:redstone", 400)
+		])
+		.id("tconstruct:smeltery/alloys/molten_signalum")
+
+	tconstruct.alloy(Fluid.of("tconstruct:molten_lumium", 360))
+		.temperature(993)
+		.inputs([
+			Fluid.tag("tag", "tconstruct:molten_gold", 90),
+			Fluid.tag("tag", "tconstruct:molten_tin", 270),
+			Fluid.tag("tag", "forge:glowstone", 500)
+		])
+		.id("tconstruct:smeltery/alloys/molten_lumium")
 })

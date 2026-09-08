@@ -173,11 +173,6 @@ StartupEvents.registry("item", (event) => {
 	// 冲压头
 	addMaterial("hammer_head")
 
-	// 红石线
-	addMaterial("redstone_wire")
-		.tag("forge:wires/redstone")
-		.tag("forge:wires")
-
 	// 铁氧体磁芯	
 	addMaterial("ferrit_core")
 

@@ -44,15 +44,13 @@ ServerEvents.recipes((event) => {
 	// 通量线圈
 	addComponRecipe("thermal:rf_coil", [
 		"#forge:plates/gold",
-		"#forge:dusts/redstone",
-		"#forge:dusts/redstone"
+		"#forge:plates/signalum"
 	])
 
 	// 萤石流明管道
 	addComponRecipe("cmi:glowstone_lumen_tube", [
 		"#forge:plates/cobalt",
-		"#forge:dusts/glowstone",
-		"#forge:dusts/glowstone"
+		"#forge:plates/lumium"
 	])
 
 	// 机器框架

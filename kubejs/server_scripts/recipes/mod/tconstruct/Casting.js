@@ -128,42 +128,6 @@ ServerEvents.recipes((event) => {
 		.fluid(Fluid.of("cmi:blood", 250))
 		.cooling_time(20)
 
-	// 红石线
-	tconstruct.casting_table("cmi:redstone_wire")
-		.cast("#forge:wires/lead")
-		.fluid(Fluid.of("thermal:redstone", 50))
-		.cooling_time(20 * 3)
-		.cast_consumed(true)
-
-	tconstruct.casting_table("cmi:redstone_wire")
-		.cast("#tconstruct:casts/multi_use/wire")
-		.fluid(Fluid.of("immersiveengineering:redstone_acid", 50))
-		.cooling_time(20 * 3)
-
-	tconstruct.casting_table("cmi:redstone_wire")
-		.cast("#tconstruct:casts/single_use/wire")
-		.fluid(Fluid.of("immersiveengineering:redstone_acid", 50))
-		.cooling_time(20 * 3)
-		.cast_consumed(true)
-
-	// 红石板
-	tconstruct.casting_table("cmi:redstone_plate")
-		.cast("#forge:plates/lead")
-		.fluid(Fluid.of("thermal:redstone", 100))
-		.cooling_time(20 * 8)
-		.cast_consumed(true)
-
-	tconstruct.casting_table("cmi:redstone_plate")
-		.cast("#tconstruct:casts/multi_use/plate")
-		.fluid(Fluid.of("immersiveengineering:redstone_acid", 100))
-		.cooling_time(20 * 8)
-
-	tconstruct.casting_table("cmi:redstone_plate")
-		.cast("#tconstruct:casts/single_use/plate")
-		.fluid(Fluid.of("immersiveengineering:redstone_acid", 100))
-		.cooling_time(20 * 8)
-		.cast_consumed(true)
-
 	// 人造皮革
 	tconstruct.casting_table("immersiveengineering:ersatz_leather")
 		.cast("immersiveengineering:hemp_fabric")
@@ -209,7 +173,7 @@ ServerEvents.recipes((event) => {
 		.fluid(Fluid.of("tconstruct:molten_glass", 100))
 		.cast("#tconstruct:casts/multi_use/rod")
 		.cooling_time(20 * 2)
-		.cast_consumed(true)
+		.cast_consumed(false)
 
 	// 强化高炉砖
 	tconstruct.casting_basin("immersiveengineering:blastbrick_reinforced")

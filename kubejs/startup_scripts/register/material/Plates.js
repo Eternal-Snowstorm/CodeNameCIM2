@@ -59,8 +59,6 @@ StartupEvents.registry("item", (event) => {
 
 	// 石板
 	addAlonePlateItem("stone")
-	// 红石板
-	addAlonePlateItem("redstone")
 	// 橡胶板
 	addAlonePlateItem("rubber")
 	// 碳化硅板

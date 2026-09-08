@@ -139,7 +139,7 @@ ServerEvents.recipes((event) => {
 		"ABA",
 		" A "
 	], {
-		A: "cmi:redstone_wire",
+		A: "#forge:wires/signalum",
 		B: "#forge:rods/wooden"
 	}).id("immersiveengineering:crafting/wirecoil_redstone")
 
@@ -149,7 +149,7 @@ ServerEvents.recipes((event) => {
 		"A A",
 		"CAB"
 	], {
-		A: "#forge:dusts/redstone",
+		A: "#forge:wires/signalum",
 		B: "#forge:rods/gold",
 		C: "#forge:plates/gold"
 	}).id("thermal:rf_coil")
@@ -160,7 +160,7 @@ ServerEvents.recipes((event) => {
 		"A A",
 		"BAC"
 	], {
-		A: "#forge:dusts/glowstone",
+		A: "#forge:wires/lumium",
 		B: "#forge:rods/cobalt",
 		C: "#forge:plates/cobalt"
 	})
