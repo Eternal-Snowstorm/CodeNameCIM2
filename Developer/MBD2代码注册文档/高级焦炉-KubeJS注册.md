@@ -51,12 +51,11 @@ function setPrivateField(obj, fieldName, value) {
 // ---- 配方类型: 代理 IE 焦炉 ----
 MBDRegistryEvents.recipeType(event => {
     const rl = "cmi:reinforced_coke_oven"
-    const ieType = $ForgeRegistries.getField("RECIPE_TYPES").get(null)
-        .getValue("immersiveengineering:coke_oven")
+    const ieType = $ForgeRegistries.RECIPE_TYPES.getValue("immersiveengineering:coke_oven")   // 静态字段直接访问
     const type = new $MBDRecipeType(rl, ieType)
     type.setXEIVisible(true)
     type.setProxyRecipeXEIVisible(true)
-    $MBDRegistries.getField("RECIPE_TYPES").get(null).register(rl, type)
+    $MBDRegistries.RECIPE_TYPES.register(rl, type)
 })
 
 // ---- 多方块 ----
@@ -82,7 +81,7 @@ MBDRegistryEvents.machine(event => {
     /** @type {Internal.MultiblockMachineDefinition_} */
     const def = builder.build()
     def.blockPatternFactory((machine) => ovenPattern())
-    $MBDRegistries.getField("MACHINE_DEFINITIONS").get(null).register(id, def)
+    $MBDRegistries.MACHINE_DEFINITIONS.register(id, def)
 })
 
 // ---- 总线 x2 (单方块部件, 交给事件自动注册) ----

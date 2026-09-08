@@ -39,4 +39,5 @@ ClientEvents.lang("zh_cn", (event) => {
 		addMBDLang("electronic_blast_furnace", "炖屎炉")
 	}
 	addMBDLang("electronic_blast_furnace", "电力高炉")
+	addMBDLang("dimensionally_transcendent_mechanism_accelerator", "超维度等离子构件催生器(WIP)")
 })

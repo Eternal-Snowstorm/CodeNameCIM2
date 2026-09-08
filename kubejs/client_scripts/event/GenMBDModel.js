@@ -3,7 +3,6 @@ ClientEvents.highPriorityAssets((event) => {
 	const MACHINE_TEXTURE_PATH = "cmi:block/machine"
 	const IO_TEXTURE_PATH = `${MACHINE_TEXTURE_PATH}/io`
 
-
 	/**
 	 * 生成一个 Orientable Block Model
 	 *
@@ -131,4 +130,5 @@ ClientEvents.highPriorityAssets((event) => {
 	addMainModel("improved_rubber_extractor")
 	addMainModel("reinforced_chemical_reactor")
 	addMainModel("reinforced_coke_oven")
+	addMainModel("dimensionally_transcendent_mechanism_accelerator")
 })

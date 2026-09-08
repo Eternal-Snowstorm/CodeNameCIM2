@@ -167,7 +167,7 @@ MBDRegistryEvents.machine(event => {
         .where("A", $Predicates.air())
         .build()
     def.blockPatternFactory((machine) => pattern)   // ③ 挂结构 (这是 definition 的方法, 不是 builder 的)
-    $MBDRegistries.getField("MACHINE_DEFINITIONS").get(null).register(id, def)  // ④ 手动注册
+    $MBDRegistries.MACHINE_DEFINITIONS.register(id, def)  // ④ 手动注册 (静态字段直接访问)
 })
 ```
 
