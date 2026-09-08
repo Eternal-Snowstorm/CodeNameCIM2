@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 钢制机壳
-	addComponRecipe("mekanism:steel_casing", [
+	addComponRecipe(Casing.STAINLESS_STEEL, [
 		"#forge:plates/stainless_steel",
 		"cmi:osmium_tile",
 		"#forge:gears/chromeplated_steel"
@@ -56,21 +56,21 @@ ServerEvents.recipes((event) => {
 	// 机器框架
 	addComponRecipe("thermal:machine_frame", [
 		"#forge:plates/invar",
-		"cmi:industrial_frame",
+		Casing.INDUSTRY,
 		"#forge:rods/tin"
 	])
 
 	// 铁机壳
 	addComponRecipe("cmi:iron_casing", [
 		"#forge:plates/iron",
-		"cmi:industrial_frame",
+		Casing.INDUSTRY,
 		"#forge:rods/copper"
 	])
 
 	// 钢机壳
-	addComponRecipe("cmi:steel_casing", [
+	addComponRecipe(Casing.STEEL, [
 		"#forge:plates/steel",
-		"cmi:industrial_frame",
+		Casing.INDUSTRY,
 		"#forge:rods/electrum"
 	])
 

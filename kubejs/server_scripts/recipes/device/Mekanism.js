@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
 		"cmi:electrolyzer",
 		[
 			Mechanisms.HEAVY.COM,
-			"cmi:steel_casing",
+			Casing.STEEL,
 			"#forge:plates/aluminum",
 			"immersiveengineering:component_electronic_adv"
 		]
@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
 		[
 			"thermal_extra:component_assembly",
 			"ae2:molecular_assembler",
-			"neoecoae:aluminum_alloy_casing",
+			Casing.STAINLESS_STEEL,
 			"mekanism:basic_control_circuit",
 			Fluid.of("cmi:molten_etrium", 90)
 		]
@@ -76,7 +76,7 @@ ServerEvents.recipes((event) => {
 		.inputItems([
 			"thermal_extra:component_assembly",
 			"ae2:molecular_assembler",
-			"neoecoae:aluminum_alloy_casing",
+			Casing.STAINLESS_STEEL,
 			"mekanism:basic_control_circuit"
 		])
 		.inputFluid(Fluid.of("cmi:molten_etrium", 90))

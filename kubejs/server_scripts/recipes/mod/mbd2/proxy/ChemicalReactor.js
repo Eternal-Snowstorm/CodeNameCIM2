@@ -10,11 +10,6 @@ ServerEvents.recipes((event) => {
 		let json = recipe.json
 		let id = recipe.getId()
 
-		if (removedRecipes().has(String(id))) {
-			console.log(`[MBD2 Proxy] Skipping removed recipe: ${id}`)
-			return
-		}
-
 		let idBlackList = [
 			"palettes",
 			"dye",

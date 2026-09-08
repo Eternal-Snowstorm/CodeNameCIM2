@@ -238,10 +238,14 @@ let Casing = Object.freeze({
 	BRASS: "create:brass_casing",
 	RAILWAY: "create:railway_casing",
 	INDUSTRY: "cmi:industrial_frame",
+	IRON: "cmi:iron_casing",
+	STEEL: "cmi:steel_casing",
 	SMART: "cmi:smart_casing",
 	THERMAL: "thermal:machine_frame",
 	COMPUTE: "cmi:computing_casing",
-	STAINLESS_STEEL: "mekanism:steel_casing"
+	STAINLESS_STEEL: "mekanism:steel_casing",
+	ALUMINUM_ALLOY: "neoecoae:aluminum_alloy_casing",
+	BLACK_TUNGSTEN: "neoecoae:black_tungsten_alloy_casing"
 })
 
 // 木材系列

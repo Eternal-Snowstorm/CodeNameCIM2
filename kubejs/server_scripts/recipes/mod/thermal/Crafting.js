@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: "#forge:plates/invar",
-		B: "cmi:industrial_frame",
+		B: Casing.INDUSTRY,
 		C: "#forge:gears/tin"
 	}).id("thermal:machine_frame")
 
