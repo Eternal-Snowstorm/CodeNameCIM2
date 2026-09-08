@@ -201,4 +201,7 @@ ServerEvents.recipes((event) => {
 			"cmi:nuke_cooler",
 			"#forge:plates/invar"
 		]).id("mekanismgenerators:saturating_condenser")
+
+	// 富集仓
+	
 })
