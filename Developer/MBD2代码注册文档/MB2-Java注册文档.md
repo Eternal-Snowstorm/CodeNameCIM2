@@ -156,7 +156,7 @@ private static MultiblockMachineDefinition createSmallMachine() {
             .modelRenderer(new ResourceLocation("cmi", "block/machine/small_machine/off"))
             .shape(Shapes.block())
             .build());
-    builder.machineSettings(() -> ConfigMachineSettings.builder().hasUI(false)   // 纯代码注册无 GUI 数据 (uiCreator=null), hasUI(true) 开 UI 会 NPE; 需要 GUI 走 NBT 或 GUI 指南.build());
+    builder.machineSettings(() -> ConfigMachineSettings.builder().hasUI(false));   // 纯代码注册无 GUI 数据 (uiCreator=null), hasUI(true) 开 UI 会 NPE; 需要 GUI 走 NBT 或 GUI 指南.build());
     builder.recipeLogicSettings(ConfigRecipeLogicSettings.builder()
             .enable(true)
             .recipeType(new ResourceLocation("cmi", "electrolyzer"))
