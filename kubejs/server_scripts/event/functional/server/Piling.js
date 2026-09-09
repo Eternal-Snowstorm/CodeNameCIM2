@@ -6,9 +6,9 @@ BlockEvents.rightClicked((event) => {
 	let hasHammer = player.getMainHandItem().hasTag("forge:hammers")
 	let bedrock = Block.getBlock("minecraft:bedrock").defaultBlockState()
 
-	if (block.id === "cmi:impact_pile" && hasHammer) {
+	if (block.getId() === "cmi:impact_pile" && hasHammer) {
 		let below = level.getBlock(pos.below())
-		if (below.id !== "minecraft:bedrock") {
+		if (below.getId() !== "minecraft:bedrock") {
 			return
 		}
 		player.swing()
@@ -46,9 +46,9 @@ BlockEvents.rightClicked((event) => {
 		}
 	}
 
-	if (block.id === "cmi:impact_pile" && hasWrench) {
+	if (block.getId() === "cmi:impact_pile" && hasWrench) {
 		let below = level.getBlock(pos.below())
-		if (below.id !== "create:mechanical_drill" || below.properties.facing !== "down") {
+		if (below.getId() !== "create:mechanical_drill" || below.properties.facing !== "down") {
 			return
 		}
 
@@ -78,6 +78,7 @@ BlockEvents.rightClicked((event) => {
 				let bedrockPos1 = new BlockPos(centerX, -62, centerZ)
 				let bedrockPos2 = new BlockPos(centerX, -63, centerZ)
 				let voidSpring = Block.getBlock("cmi:void_spring").defaultBlockState()
+
 				level.setBlock(voidSpringPos, voidSpring, 3)
 				level.setBlock(bedrockPos1, bedrock, 3)
 				level.setBlock(bedrockPos2, bedrock, 3)
