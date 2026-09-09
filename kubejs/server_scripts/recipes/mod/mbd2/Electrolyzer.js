@@ -80,4 +80,11 @@ ServerEvents.recipes((event) => {
 		.outputFluids(Fluid.of("mekanism:sulfuric_acid", 100))
 		.duration(20)
 
+	cmi.test()
+		.outputItems("minecraft:diamond")
+		.inputItems("#forge:ingots/iron")
+		.duration(20 * 10)
+		.perTick((recipe) => {
+			recipe.inputFE(1000)
+		})
 })

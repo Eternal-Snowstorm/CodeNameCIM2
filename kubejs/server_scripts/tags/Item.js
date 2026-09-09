@@ -448,7 +448,8 @@ ServerEvents.tags("item", (event) => {
 		.add("cmi:photosensitive_mechanism")
 		.add("cmi:nether_mechanism")
 		.add("cmi:thermal_mechanism")
-		.add("cmi:smart_mechanism")
+		.add("cmi:gold_mechanism")
+		.add("cmi:nuclear_mechanism")
 
 	// 量器
 	event.get("tconstruct:gauge")
