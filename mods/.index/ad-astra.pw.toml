@@ -1,19 +1,19 @@
-filename = 'ad_astra-forge-1.20.1-1.15.20.jar'
+filename = 'ad_astra-forge-1.20.1-1.15.21.jar'
 name = 'Ad Astra'
-side = ''
+side = 'server'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '[Forge] Ad Astra 1.15.20'
+x-prismlauncher-version-number = 'ad_astra-forge-1.20.1-1.15.21.jar'
 
 [download]
-hash = '537ac3e358a97efd7b03648a9bfd7b11f1ae7ff7'
+hash = '562b28ad84cde481f857562c7991a8750b814e24'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6262032
+file-id = 8833730
 project-id = 635042
 
 [[x-prismlauncher-dependencies]]
@@ -21,11 +21,7 @@ addonId = '714059'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
-addonId = '704113'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '627824'
+addonId = '845833'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -33,13 +29,13 @@ addonId = '845832'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '570073'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
 addonId = '841890'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '845833'
-type = 'OPTIONAL'
+addonId = '570073'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '704113'
+type = 'REQUIRED'

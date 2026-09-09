@@ -1,6 +1,3 @@
-let $Array =
-	Java.loadClass("java.lang.reflect.Array")
-
 MBDRegistryEvents.machine((event) => {
 	let dtma = Cmi.loadResource("dimensionally_transcendent_mechanism_accelerator")
 	/**
@@ -12,6 +9,24 @@ MBDRegistryEvents.machine((event) => {
 		.name("base")
 		.shape(Shapes.block())
 		.modelRenderer("cmi:block/machine/dimensionally_transcendent_mechanism_accelerator/off")
+		.child(MachineState.builder()
+			.name("working")
+			.shape(Shapes.block())
+			.modelRenderer("cmi:block/machine/dimensionally_transcendent_mechanism_accelerator/on")
+			.build())
+		.build())
+
+	builder.itemProperties(ConfigItemProperties.builder()
+		.maxStackSize(64)
+		.creativeTab(new ToggleCreativeTab("cmi:machines"))
+		.rarity(Rarity.EPIC)
+		.renderer(new ToggleRenderer(
+			new IModelRenderer("cmi:block/machine/dimensionally_transcendent_mechanism_accelerator/off")
+		))
+		.build())
+
+	builder.blockProperties(ConfigBlockProperties.builder()
+		.destroyTime(6)
 		.build())
 
 	builder.machineSettings(() => {
@@ -49,8 +64,8 @@ MBDRegistryEvents.machine((event) => {
 			.toArray()
 
 		let info = new MultiblockShapeInfo(pattern.getPreview(reps))
-		let infoInstance = $Array.newInstance(MultiblockShapeInfo, 1)
-		$Array.set(infoInstance, 0, info)
+		let infoInstance = JavaArray.newInstance(MultiblockShapeInfo, 1)
+		JavaArray.set(infoInstance, 0, info)
 
 		return infoInstance
 	})
