@@ -134,6 +134,12 @@ function registryDtmaBus(event) {
 			.build()
 	})
 
+	input.itemProperties(ConfigItemProperties.builder()
+		.maxStackSize(64)
+		.creativeTab(new ToggleCreativeTab("cmi:machines"))
+		.rarity(Rarity.EPIC)
+		.build())
+
 	input.blockProperties(ConfigBlockProperties.builder()
 		.rotationState(RotationState.ALL)
 		.build())
@@ -165,6 +171,12 @@ function registryDtmaBus(event) {
 
 	output.blockProperties(ConfigBlockProperties.builder()
 		.rotationState(RotationState.ALL)
+		.build())
+
+	output.itemProperties(ConfigItemProperties.builder()
+		.maxStackSize(64)
+		.creativeTab(new ToggleCreativeTab("cmi:machines"))
+		.rarity(Rarity.EPIC)
 		.build())
 
 	output.machineSettings(() => {
