@@ -1,6 +1,6 @@
 # 客户端使用说明(链接远程仓库与同步版本)
 
-玩家在整合包客户端使用本目录脚本,把 **Gitee 镜像仓库**(GitHub 完整历史的镜像)的内容同步到本地 `.minecraft`,并校验 / 下载 mods。
+玩家在整合包客户端使用本目录脚本,把 **Gitee 镜像仓库**(GitHub 完整历史的镜像)的内容同步到本地整合包根目录(习惯上叫 `.minecraft`,**名字不限**),并校验 / 下载 mods。
 
 ## 一、客户端有哪些可执行文件
 
@@ -10,7 +10,7 @@
 | `updater/update-from-gitee.bat` / `.sh` | **日常**:同步最新版本 |
 | `updater/mods-sync.ps1` / `.sh` | 由上面两个脚本自动调用,校验 / 下载 mods |
 
-> 客户端目录 = 整合包实例的 `.minecraft`(脚本会自动定位到 `updater` 的上一级)。
+> 客户端目录 = 装着 `updater/` 文件夹的那一层(习惯上叫 `.minecraft`,叫什么名字都行——脚本统一按"`updater` 的上一级"自动定位,与目录名无关)。
 
 ## 二、前置条件
 
@@ -27,21 +27,23 @@
 双击 `updater\setup-gitee-sync.bat`;或在 CMD / PowerShell 中运行:
 
 ```bat
-cd /d "<整合包>\.minecraft"
+cd /d "<整合包根目录>"
 updater\setup-gitee-sync.bat
 ```
+
+> `<整合包根目录>` = 装着 `updater/` 与 `.git` 的那一层;习惯上叫 `.minecraft`,实际名字不限。
 
 ### Linux
 
 ```bash
-cd "<整合包>/.minecraft"
+cd "<整合包根目录>"
 bash updater/setup-gitee-sync.sh
 ```
 
 ### macOS
 
 ```bash
-cd "<整合包>/.minecraft"
+cd "<整合包根目录>"
 bash updater/setup-gitee-sync.sh
 ```
 
@@ -54,14 +56,14 @@ bash updater/setup-gitee-sync.sh
 双击 `updater\update-from-gitee.bat`;或命令行:
 
 ```bat
-cd /d "<整合包>\.minecraft"
+cd /d "<整合包根目录>"
 updater\update-from-gitee.bat
 ```
 
 ### Linux / macOS
 
 ```bash
-cd "<整合包>/.minecraft"
+cd "<整合包根目录>"
 bash updater/update-from-gitee.sh
 ```
 

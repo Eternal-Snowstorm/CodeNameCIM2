@@ -4,7 +4,7 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 
-# Client root = parent of updater (.minecraft)
+# Client root = parent of updater (folder name does not have to be .minecraft)
 if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 $Root = (Resolve-Path $Root).Path
 $manifest = Join-Path $Root 'updater\update.tsv'
