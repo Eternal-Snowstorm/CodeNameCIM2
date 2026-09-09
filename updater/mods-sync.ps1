@@ -8,7 +8,7 @@ $ErrorActionPreference = 'Stop'
 if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 $Root = (Resolve-Path $Root).Path
 $manifest = Join-Path $Root 'updater\update.tsv'
-$deleteList = Join-Path $Root 'delete.tsv'
+$deleteList = Join-Path $Root 'updater\delete.tsv'
 
 # Safety: only touch these dirs; never saves/options.txt/server data
 $safePrefixes = @('mods/', 'config/', 'kubejs/', 'defaultconfigs/', 'resourcepacks/')
