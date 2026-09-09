@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -uo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-MANIFEST="$ROOT/update.tsv"
+MANIFEST="$ROOT/updater/update.tsv"
 DELETE_LIST="$ROOT/delete.tsv"
 DRY_RUN=0
 [ "${1:-}" = "--dry-run" ] && DRY_RUN=1

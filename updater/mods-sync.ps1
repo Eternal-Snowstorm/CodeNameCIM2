@@ -7,7 +7,7 @@ $ErrorActionPreference = 'Stop'
 # Client root = parent of updater (.minecraft)
 if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 $Root = (Resolve-Path $Root).Path
-$manifest = Join-Path $Root 'update.tsv'
+$manifest = Join-Path $Root 'updater\update.tsv'
 $deleteList = Join-Path $Root 'delete.tsv'
 
 # Safety: only touch these dirs; never saves/options.txt/server data
