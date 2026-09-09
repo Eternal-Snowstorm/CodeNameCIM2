@@ -1,17 +1,35 @@
 @echo off
 setlocal
 chcp 65001 >nul
-cd /d "%~dp0..\.."
+cd /d "%~dp0.."
 
-where bash >nul 2>nul
+set "REMOTE_URL=https://gitee.com/eternalsnowstorm/mechanism-and-innovation"
+
+where git >nul 2>nul
 if errorlevel 1 (
-  echo [ERROR] bash not found in PATH. Please install Git for Windows first.
+  echo [ERROR] Git is not installed or not in PATH.
+  echo Please install Git for Windows and run this script again.
   pause
   exit /b 1
 )
 
-echo === Pushing local main content to Gitee mirror ===
-bash "sync-gitee.sh"
+if not exist ".git" (
+  echo [ERROR] This folder is not a git repository.
+  pause
+  exit /b 1
+)
+
+git remote get-url gitee >nul 2>nul
+if errorlevel 1 git remote add gitee "%REMOTE_URL%"
+
+echo === Pushing main to Gitee mirror ===
+git push gitee main:master
+if errorlevel 1 (
+  echo [ERROR] Push to Gitee failed.
+  pause
+  exit /b 1
+)
+
 echo.
-echo Script finished with exit code %ERRORLEVEL%.
+echo Done! Gitee mirror has been updated.
 pause
