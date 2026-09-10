@@ -99,7 +99,7 @@ function upgradeBlock(item, block, player, level, targetId) {
 		block.z,
 		"minecraft:block.smithing_table.use",
 		"blocks",
-		1.0,
+		0.5,
 		1.0
 	)
 	block.set(targetId, properties)
