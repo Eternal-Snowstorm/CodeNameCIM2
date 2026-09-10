@@ -21,10 +21,21 @@ function Test-SafePath([string]$p) {
 }
 
 # --- 删除清单 ---
+# delete.tsv 为累积列表(保留历史下架项); 跳过仍在当前清单中的路径,
+# 因为该文件可能是下架后又被重新加入, 应交给下面的更新清单去校验/下载。
+$manifestPaths = @()
+if (Test-Path -LiteralPath $manifest) {
+  foreach ($ml in Get-Content -LiteralPath $manifest) {
+    $mp = $ml -split "`t"
+    if ($mp.Count -ge 2) { $manifestPaths += $mp[1].Trim() }
+  }
+}
+
 if (Test-Path -LiteralPath $deleteList) {
   foreach ($line in Get-Content -LiteralPath $deleteList) {
     $p = $line.Trim()
     if (-not (Test-SafePath $p)) { continue }
+    if ($manifestPaths -contains $p) { continue }
     $fp = Join-Path $Root $p
     if (Test-Path -LiteralPath $fp) {
       if ($DryRun) { Write-Host "[mods][dry-run] would delete: $p"; continue }

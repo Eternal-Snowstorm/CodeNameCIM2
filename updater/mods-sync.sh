@@ -36,10 +36,15 @@ safe_path() {
 }
 
 # --- 删除清单 ---
+# delete.tsv 为累积列表(保留历史下架项); 这里跳过"仍在当前清单中"的路径,
+# 因为该文件可能是下架后又被重新加入, 应交给下面的更新清单去校验/下载。
 if [ -f "$DELETE_LIST" ]; then
   while IFS= read -r p || [ -n "$p" ]; do
     p="$(printf '%s' "$p" | tr -d '\r' | xargs 2>/dev/null || true)"
     safe_path "$p" || continue
+    if [ -f "$MANIFEST" ] && grep -qF -- "$(printf '\t%s\t' "$p")" "$MANIFEST"; then
+      continue
+    fi
     fp="$ROOT/$p"
     if [ -e "$fp" ]; then
       if [ "$DRY_RUN" = "1" ]; then

@@ -69,6 +69,8 @@ bash updater/update-from-gitee.sh
 
 作用:`git fetch` + 对齐 Gitee `master`,再按 `update.tsv` 校验并下载变化的 mod(`delete.tsv` 中的文件会被删除)。
 
+> 说明:`delete.tsv` 是**累积列表**(记录历来下架的文件),因此列表可能较长,属正常现象;脚本会自动跳过"仍在 `update.tsv` 清单中"的条目,不会误删当前版本需要的 mod。每个 mod 的下载地址指向它实际所在的 Release,跨多个版本一次性更新也能正确补齐。
+
 ## 五、安全说明
 
 脚本只操作以下目录,**绝不碰** `saves`、`options.txt`、服务器数据等个人文件:
