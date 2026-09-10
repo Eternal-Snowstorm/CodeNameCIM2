@@ -100,13 +100,13 @@ StartupEvents.registry("item", (event) => {
 	addItem("thermal_unit")
 		.texture(Cmi.loadResource("item/material/unit/thermal"))
 
+	// 大地震撼单元
+	addItem("basalz_unit")
+		.texture(Cmi.loadResource("item/material/unit/basalz"))
+
 	// 烈焰燃烧单元
 	addItem("blaze_unit")
 		.texture(Cmi.loadResource("item/material/unit/blaze"))
-
-	// 大地碎裂单元
-	addItem("basalz_unit")
-		.texture(Cmi.loadResource("item/material/unit/basalz"))
 
 	// 狂风催化单元
 	addItem("blitz_unit")
@@ -115,6 +115,26 @@ StartupEvents.registry("item", (event) => {
 	// 暴雪冷凝单元
 	addItem("blizz_unit")
 		.texture(Cmi.loadResource("item/material/unit/blizz"))
+
+	// 大地碎裂组件
+	addItem("basalt_general_component")
+		.modelJson(componentModel("basalt"))
+		.tag("cmi:general_components")
+
+	// 烈焰焚烬组件
+	addItem("blaze_general_component")
+		.modelJson(componentModel("blaze"))
+		.tag("cmi:general_components")
+
+	// 狂风卷袭组件
+	addItem("blitz_general_component")
+		.modelJson(componentModel("blitz"))
+		.tag("cmi:general_components")
+
+	// 暴雪冻结组件
+	addItem("blizz_general_component")
+		.modelJson(componentModel("blizz"))
+		.tag("cmi:general_components")
 
 	// 小块焦炭
 	addItem("small_coal_coke")
@@ -316,22 +336,6 @@ StartupEvents.registry("item", (event) => {
 	addItem("steam_steel_upgrade")
 		.texture(Cmi.loadResource("item/upgrade/steam/steel"))
 		.tag(Cmi.loadResource("steam_upgrades"))
-
-	addItem("basalt_general_component")
-		.modelJson(componentModel("basalt"))
-		.tag("cmi:general_components")
-
-	addItem("blaze_general_component")
-		.modelJson(componentModel("blaze"))
-		.tag("cmi:general_components")
-
-	addItem("blitz_general_component")
-		.modelJson(componentModel("blitz"))
-		.tag("cmi:general_components")
-
-	addItem("blizz_general_component")
-		.modelJson(componentModel("blizz"))
-		.tag("cmi:general_components")
 
 	function componentModel(type) {
 		return {
