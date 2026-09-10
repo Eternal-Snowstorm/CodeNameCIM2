@@ -1,5 +1,5 @@
 filename = 'curios-forge-5.14.1+1.20.1.jar'
-name = 'Curios API (Forge/NeoForge)'
+name = 'Curios API'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]

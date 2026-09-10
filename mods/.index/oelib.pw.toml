@@ -1,5 +1,5 @@
 filename = 'OELib-forge-1.20.1-0.2.4.1.jar'
-name = 'OELib'
+name = 'One Enough Lib'
 side = 'server'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]

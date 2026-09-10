@@ -1,5 +1,5 @@
 filename = 'betterfpsdist-1.20.1-6.0.jar'
-name = 'Better Fps - Render Distance[Forge]'
+name = 'Better Fps - Render Distance'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]

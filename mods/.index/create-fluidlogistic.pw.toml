@@ -1,5 +1,5 @@
 filename = 'fluidlogistics-1.2.9.jar'
-name = 'Create FluidLogistics '
+name = 'Create: FluidLogistics'
 side = 'server'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]
