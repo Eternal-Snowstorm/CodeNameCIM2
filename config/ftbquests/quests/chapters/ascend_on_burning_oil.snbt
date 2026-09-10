@@ -1707,8 +1707,8 @@
 				item: "vintageimprovements:invar_sheet"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 7.5d
+			x: 6.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["3640CEE4D21C8BB5"]
@@ -1733,6 +1733,29 @@
 			]
 			x: 20.0d
 			y: 17.0d
+		}
+		{
+			dependencies: ["16854FB39C805578"]
+			description: [
+				"热力添加的整合组件可以以一定的倍率提高设备运行速率"
+				"除了热力及其附属注册的2x-6x速率整合组件以外, 我们还注册了7x-10x速率的整合组件"
+				"所有整合组件都以非常便宜的序列组装配方制作, 而且结构完全相同, 可以使用同一条生产线制作"
+			]
+			icon: "thermal:upgrade_augment_1"
+			id: "49A04F3F89F58A31"
+			rewards: [{
+				id: "74AFF2AD17485C9B"
+				item: "thermal:upgrade_augment_1"
+				type: "item"
+			}]
+			subtitle: "这个组件会帮到你的"
+			tasks: [{
+				id: "53F738D2BFB1CEA6"
+				title: "如果你觉得设备运行太慢..."
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 7.5d
 		}
 	]
 	title: "油燃而升"

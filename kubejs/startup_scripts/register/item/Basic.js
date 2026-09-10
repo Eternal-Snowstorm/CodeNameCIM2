@@ -317,6 +317,31 @@ StartupEvents.registry("item", (event) => {
 		.texture(Cmi.loadResource("item/upgrade/steam/steel"))
 		.tag(Cmi.loadResource("steam_upgrades"))
 
+	addItem("basalt_general_component")
+		.modelJson(componentModel("basalt"))
+		.tag("cmi:general_components")
+
+	addItem("blaze_general_component")
+		.modelJson(componentModel("blaze"))
+		.tag("cmi:general_components")
+
+	addItem("blitz_general_component")
+		.modelJson(componentModel("blitz"))
+		.tag("cmi:general_components")
+
+	addItem("blizz_general_component")
+		.modelJson(componentModel("blizz"))
+		.tag("cmi:general_components")
+
+	function componentModel(type) {
+		return {
+			"parent": "cmi:item/genetal_component",
+			"textures": {
+				"texture": `cmi:item/component/${type}_cell`
+			}
+		}
+	}
+
 	let SomeModelsJson = {
 		cogwheel: function (material) {
 			const PARENT = "cmi:item/cogwheels/cogwheel"
