@@ -181,7 +181,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("blizz_unit", "暴雪冷凝单元")
 	addItemLang("basalt_general_component", "大地碎裂组件")
 	addItemLang("blaze_general_component", "烈焰焚烬组件")
-	addItemLang("blitz_general_component", "狂风卷席组件")
+	addItemLang("blitz_general_component", "狂风卷袭组件")
 	addItemLang("blizz_general_component", "暴雪冻结组件")
 	addItemLang("nuke_cooler", "冷却设备")
 	addItemLang("ferrit_core", "铁氧体磁芯")
