@@ -1744,8 +1744,8 @@
 			icon: "thermal:upgrade_augment_1"
 			id: "49A04F3F89F58A31"
 			rewards: [{
-				id: "74AFF2AD17485C9B"
-				item: "thermal:upgrade_augment_1"
+				id: "4F0E5B2C319DFE0A"
+				item: "thermal:upgrade_augment_3"
 				type: "item"
 			}]
 			subtitle: "这个组件会帮到你的"

@@ -90,6 +90,11 @@ ItemEvents.modification((event) => {
 		modify.setMaxStackSize(64)
 	})
 
+	// 书与笔
+	event.modify("minecraft:writable_book", (modify) => {
+		modify.setMaxStackSize(64)
+	})
+
 	if (FestivalUtils.isAprilFoolsDay()) {
 		event.modify("mekanism:alloy_infused", (modify) => {
 			modify.setNameKey("item.cmi.sweet_berry_hard_candy")

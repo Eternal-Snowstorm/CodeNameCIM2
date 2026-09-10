@@ -11,9 +11,6 @@ ServerEvents.recipes((event) => {
 		"input": {
 			"item": "create:experience_nugget"
 		},
-		"level": {
-			"max": 5
-		},
 		"needed_per_level": 72,
 		"result": "tconstruct:swiftstrike",
 		"slots": {
@@ -32,9 +29,6 @@ ServerEvents.recipes((event) => {
 			"item": "create:experience_block"
 		},
 		"leftover": "create:experience_nugget",
-		"level": {
-			"max": 5
-		},
 		"needed_per_level": 72,
 		"result": "tconstruct:swiftstrike",
 		"slots": {
