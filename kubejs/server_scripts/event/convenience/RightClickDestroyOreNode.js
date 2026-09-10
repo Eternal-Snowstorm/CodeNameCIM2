@@ -6,12 +6,12 @@ BlockEvents.rightClicked((event) => {
 	const ORE_NODE = block.hasTag("cmi:ore_deposits")
 
 	if (PICKAXE && SNEAK && ORE_NODE) {
-		player.swing()
+		// player.swing()
 
 		if (!player.isCreative()) {
-			item.setDamageValue(item.damageValue + 1)
+			// item.setDamageValue(item.damageValue + 1)
 		}
 
-		level.destroyBlock(block.pos, false)
+		// level.destroyBlock(block.pos, false)
 	}
 })
