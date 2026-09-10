@@ -852,6 +852,31 @@
 			x: 1.5d
 			y: 0.5d
 		}
+		{
+			dependencies: ["5227B74E4F8FF3F5"]
+			description: [
+				"锅炉升级组件是一种用于对锅炉材质进行升级的工具"
+				"手持锅炉升级组件右键锅炉部件即可消耗一个组件将其升级"
+				"对锅炉进行升级会保留当前锅炉的状态, 从而最大程度避免影响生产"
+			]
+			id: "23EED5BF56818EA1"
+			subtitle: "一键安装, 直接升级"
+			tasks: [{
+				id: "3658B798B9DFED5C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "cmi:steam_upgrades"
+					}
+				}
+				title: "Any #cmi:steam_upgrades"
+				type: "item"
+			}]
+			title: "升级太麻烦?"
+			x: -6.5d
+			y: -1.5d
+		}
 	]
 	title: "汽鸣铁道"
 }
