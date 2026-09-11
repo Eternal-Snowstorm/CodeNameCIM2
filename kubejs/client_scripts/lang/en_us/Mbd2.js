@@ -36,4 +36,5 @@ ClientEvents.lang("en_us", (event) => {
 	addMBDLang("reinforced_chemical_reactor", "Reinforced Chemical Reactor")
 	addMBDLang("electrolyzer", "Three-Phase Electrolyzer Machine")
 	addMBDLang("electronic_blast_furnace", "Electronic Blast Furnace")
+	addMBDLang("dimensionally_transcendent_mechanism_accelerator", "Dimensionally Transcendent Mechanism Accelerator(WIP)")
 })

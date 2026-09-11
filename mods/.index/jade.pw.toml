@@ -1,5 +1,5 @@
 filename = 'Jade-1.20.1-Forge-11.13.3.jar'
-name = 'Jade'
+name = 'Jade 🔍'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]

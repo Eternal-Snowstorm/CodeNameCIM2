@@ -2,47 +2,47 @@ ServerEvents.recipes((event) => {
 	let { create } = event.getRecipes()
 
 	// 机壳增产
-	create.deploying(`create:andesite_casing`, [
+	create.deploying(Casing.ANDESITE, [
 		"#minecraft:planks",
 		"cmi:andesite_casing_framework"
 	])
 
-	create.deploying(`create:brass_casing`, [
+	create.deploying(Casing.BRASS, [
 		"#minecraft:planks",
 		"cmi:brass_casing_framework"
 	])
 
-	create.deploying(`create:copper_casing`, [
+	create.deploying(Casing.COPPER, [
 		"#forge:treated_wood",
 		"cmi:copper_casing_framework"
 	])
 
-	create.deploying("cmi:bronze_casing", [
-		"cmi:industrial_frame",
+	create.deploying(Casing.BRONZE, [
+		Casing.INDUSTRY,
 		"cmi:bronze_casing_framework"
 	])
 
 	// 安山机壳
-	create.item_application("create:andesite_casing", [
+	create.item_application(Casing.ANDESITE, [
 		"#minecraft:logs",
 		["#forge:ingots/andesite_alloy", "#forge:plates/andesite_alloy"]
 	]).id("create:item_application/andesite_casing_from_log")
 
 	// 铜机壳
-	create.item_application("create:copper_casing", [
+	create.item_application(Casing.COPPER, [
 		"#forge:treated_wood",
 		["#forge:ingots/copper", "#forge:plates/copper"]
 	]).id("create:item_application/copper_casing_from_log")
 
 	// 黄铜机壳
-	create.item_application("create:brass_casing", [
+	create.item_application(Casing.BRASS, [
 		"#minecraft:logs",
 		["#forge:ingots/brass", "#forge:plates/brass"]
 	]).id("create:item_application/brass_casing_from_log")
 
 	// 青铜机壳
-	create.item_application("cmi:bronze_casing", [
-		"cmi:industrial_frame",
+	create.item_application(Casing.BRONZE, [
+		Casing.INDUSTRY,
 		["#forge:ingots/bronze", "#forge:plates/bronze"]
 	]).id("cmi:item_application/bronze_casing")
 })

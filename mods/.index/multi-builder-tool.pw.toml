@@ -1,5 +1,5 @@
 filename = 'MultiBuilderTool-1.20.1-1.0.27.jar'
-name = 'Multibuilder Tool'
+name = 'Multi Builder Tool'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]

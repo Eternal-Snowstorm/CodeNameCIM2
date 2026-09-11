@@ -1,5 +1,5 @@
 filename = 'ftb-quests-forge-2001.4.22.jar'
-name = 'FTB Quests'
+name = 'FTB Quests (NeoForge)'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]

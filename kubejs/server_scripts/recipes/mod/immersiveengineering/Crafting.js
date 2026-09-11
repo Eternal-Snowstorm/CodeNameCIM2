@@ -145,7 +145,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: "#forge:plates/iron",
-		B: "cmi:industrial_frame",
+		B: Casing.INDUSTRY,
 		C: "#forge:gears/copper"
 	})
 
@@ -156,7 +156,7 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: "#forge:plates/steel",
-		B: "cmi:industrial_frame",
+		B: Casing.INDUSTRY,
 		C: "#forge:gears/electrum"
 	})
 

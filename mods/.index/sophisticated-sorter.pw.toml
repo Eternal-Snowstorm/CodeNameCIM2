@@ -1,5 +1,5 @@
 filename = 'SophisticatedSorter-forge-1.20.1-1.1.0-hotfix.jar'
-name = 'SophisticatedSorter'
+name = 'Sophisticated Sorter'
 side = 'server'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]

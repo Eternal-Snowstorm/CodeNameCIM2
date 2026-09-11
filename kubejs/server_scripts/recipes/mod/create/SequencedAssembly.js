@@ -187,6 +187,18 @@ ServerEvents.recipes((event) => {
 		SUPERCONDUCTING: seqItems("neoecoae:superconducting_processor", "neoecoae:energized_superconductive_ingot", "cmi:incomplete_superconducting_processor")
 	}
 
+	let Upgrades = [
+		seqItems("thermal:upgrade_augment_1", "#forge:plates/invar", "cmi:incomplete_upgrade_augment_1"),
+		seqItems("thermal:upgrade_augment_2", "#forge:plates/electrum", "cmi:incomplete_upgrade_augment_2"),
+		seqItems("thermal:upgrade_augment_3", "#forge:plates/enderium", "cmi:incomplete_upgrade_augment_3"),
+		seqItems("thermal_extra:upgrade_augment", "#forge:plates/dragonsteel", "cmi:incomplete_upgrade_augment_4"),
+		seqItems("thermal_extra:abyssal_upgrade_augment", "#forge:plates/abyssal", "cmi:incomplete_upgrade_augment_5"),
+		seqItems("cmi:aluminum_upgrade_augment", "#forge:plates/aluminum", "cmi:incomplete_upgrade_augment_6"),
+		seqItems("cmi:stainless_steel_upgrade_augment", "#forge:plates/stainless_steel", "cmi:incomplete_upgrade_augment_7"),
+		seqItems("cmi:titanium_alloy_upgrade_augment", "#forge:plates/titanium_alloy", "cmi:incomplete_upgrade_augment_8"),
+		seqItems("cmi:tungsten_steel_upgrade_augment", "#forge:plates/tungsten_steel", "cmi:incomplete_upgrade_augment_9")
+	]
+
 	// 飞轮
 	new SequencedAssemblyRecipe(Seq.FLYWHEEL)
 		.deploying("#forge:plates/bronze")
@@ -195,7 +207,7 @@ ServerEvents.recipes((event) => {
 
 	// 电子管
 	new SequencedAssemblyRecipe(Seq.E_TUBE)
-		.deploying("#forge:wires/redstone")
+		.deploying("#forge:wires/signalum")
 		.deploying("create:polished_rose_quartz")
 		.build()
 		.id("create:crafting/materials/electron_tube")
@@ -261,7 +273,7 @@ ServerEvents.recipes((event) => {
 	new SequencedAssemblyRecipe(Seq.CONTROL)
 		.deploying("#forge:plates/brass")
 		.cutting()
-		.deploying("#forge:plates/redstone")
+		.deploying("#forge:plates/signalum")
 		.build()
 		.id("create_connected:sequenced_assembly/control_chip")
 
@@ -270,7 +282,7 @@ ServerEvents.recipes((event) => {
 		.curving("ae2:logic_processor_press")
 		.deploying("create:polished_rose_quartz")
 		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
+		.deploying("#forge:wires/signalum")
 		.laserCutting(4000)
 		.build()
 
@@ -279,7 +291,7 @@ ServerEvents.recipes((event) => {
 		.curving("ae2:calculation_processor_press")
 		.deploying("#forge:ingots/hop_graphite")
 		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
+		.deploying("#forge:wires/signalum")
 		.laserCutting(4000)
 		.build()
 
@@ -288,7 +300,7 @@ ServerEvents.recipes((event) => {
 		.curving("ae2:engineering_processor_press")
 		.deploying("#forge:silicon")
 		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
+		.deploying("#forge:wires/signalum")
 		.laserCutting(4000)
 		.build()
 
@@ -297,7 +309,7 @@ ServerEvents.recipes((event) => {
 		.curving("cmi:concurrent_processor_press")
 		.deploying("cmi:silicon_carbide")
 		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
+		.deploying("#forge:wires/signalum")
 		.laserCutting(4000)
 		.build()
 
@@ -306,7 +318,7 @@ ServerEvents.recipes((event) => {
 		.curving("neoecoae:superconducting_processor_press")
 		.deploying("cmi:enriched_silicon")
 		.deploying("ae2:printed_silicon")
-		.deploying("cmi:redstone_wire")
+		.deploying("#forge:wires/signalum")
 		.laserCutting(4000)
 		.build()
 
@@ -318,5 +330,13 @@ ServerEvents.recipes((event) => {
 			.deploying("#forge:string")
 			.build()
 			.id(`railways:sequenced_assembly/${color}_conductor_cap`)
+	})
+
+	Upgrades.forEach((upgrade) => {
+		new SequencedAssemblyRecipe(upgrade)
+			.deploying(Mechanisms.COBALT.COM)
+			.filling(Fluid.of("immersiveengineering:redstone_acid", 100))
+			.deploying("thermal:rf_coil")
+			.build()
 	})
 })

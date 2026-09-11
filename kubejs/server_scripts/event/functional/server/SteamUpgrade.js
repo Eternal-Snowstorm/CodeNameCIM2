@@ -97,9 +97,9 @@ function upgradeBlock(item, block, player, level, targetId) {
 		block.x,
 		block.y,
 		block.z,
-		"create:mechanical_press_activation",
+		"minecraft:block.smithing_table.use",
 		"blocks",
-		1.0,
+		0.5,
 		1.0
 	)
 	block.set(targetId, properties)

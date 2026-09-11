@@ -6,10 +6,10 @@
 
 | 文件 | 内容 |
 |---|---|
-| [MB2-Java注册文档.md](./MB2-Java注册文档.md) | Java 侧完整注册: 注册管线、NBT 资源注册、纯代码 Builder (单方块/部件/多方块)、全部配置类速查、Trait 详解、配方类型与配方、机器事件 Java 订阅、自定义扩展点。附录 A 含可整体复制的完整 Java 注册类 |
-| [MB2-KubeJS注册文档.md](./MB2-KubeJS注册文档.md) | KubeJS 侧完整注册: 事件总览、机器/多方块/配方类型/配方、机器事件全表、类型提示、签名陷阱 (对象参数 vs 无参工厂) 与正确写法。附录 B 含可整体复制的完整 JS 示例 |
-| [高级焦炉-Java注册.md](./高级焦炉-Java注册.md) | 实例: 高级焦炉 (reinforced_coke_oven) 纯 Java 注册 —— 5x5x5 结构/状态机/三特性/IE 配方代理逐字段还原自 ldlib NBT, 含 API 缺口说明与 NBT 兜底 |
-| [高级焦炉-KubeJS注册.md](./高级焦炉-KubeJS注册.md) | 实例: 高级焦炉 KubeJS 注册 —— Java.loadClass 直连 API 绕过 event.create 的结构限制, 完整可跑脚本 |
+| [MB2-Java注册文档.md](./MB2-Java注册文档.md) | **入门教程** (推荐先读): 快速开始 → 单方块+特性 → 配方类型+配方 → 多方块结构 → 机器事件; 进阶 (NBT 注册/反射/共存) 与配置速查在文末 |
+| [MB2-KubeJS注册文档.md](./MB2-KubeJS注册文档.md) | **入门教程** (推荐先读): 同样的五步结构; 统一 $类名 引用约定、Builder 参数两类规则、多方块 removeMachine 四步流程 |
+| [高级焦炉-Java注册.md](./高级焦炉-Java注册.md) | 完整实例: 高级焦炉逐字段还原自 ldlib NBT (5x5x5 结构/状态机/三特性/IE 配方代理/4x 并行) |
+| [高级焦炉-KubeJS注册.md](./高级焦炉-KubeJS注册.md) | 完整实例: 同一台高级焦炉的 KubeJS 版 (含总线反射注册) |
 
 ## 三句话结论
 

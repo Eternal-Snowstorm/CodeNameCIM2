@@ -190,7 +190,7 @@ ServerEvents.recipes((event) => {
 	], {
 		P: "#forge:plates/iron",
 		M: Mechanisms.SMART.COM,
-		W: "#forge:wires/redstone",
+		W: "#forge:wires/signalum",
 		E: "#forge:plates/electrum"
 	}).id("ae2:tools/network_memory_card")
 
@@ -243,7 +243,7 @@ ServerEvents.recipes((event) => {
 		"ae2:quartz_glass",
 		Mechanisms.PHOTO.COM,
 		"#forge:plates/silver",
-		"#forge:plates/redstone"
+		"#forge:plates/signalum"
 	]).id("ae2:network/parts/panels_semi_dark_monitor")
 
 	// 破坏核心

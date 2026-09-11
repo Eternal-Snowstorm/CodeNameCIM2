@@ -93,7 +93,7 @@ ServerEvents.recipes((event) => {
 	// 线刻硅板
 	new InscriberRecipe("cmi:inscribed_silicon")
 		.middle("ae2:printed_silicon")
-		.top("cmi:redstone_wire")
+		.top("#forge:wires/signalum")
 		.press()
 
 	// 铁氧体磁芯
@@ -112,7 +112,7 @@ ServerEvents.recipes((event) => {
 
 	// 控制芯片
 	new InscriberRecipe(Processor.CONTROL)
-		.top("#forge:plates/redstone")
+		.top("#forge:plates/signalum")
 		.middle("#forge:plates/copper")
 		.bottom("#forge:plates/brass")
 		.press()

@@ -106,9 +106,6 @@ CMI Dev.json
 
 # Saves
 /saves/*
-!/saves/Debug/
-/saves/debug/*
-!/saves/Debug/generated
 
 #.vscode
 /.vscode/*
@@ -157,3 +154,6 @@ CMI Dev.json
 !config/createcoolingfan-factors.json
 !config/fluidlogistics-common.toml
 !config/mbtool-common.toml
+
+# Developer tools (private, not shipped with pack)
+updater/dev/

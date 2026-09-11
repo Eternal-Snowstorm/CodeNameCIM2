@@ -1,5 +1,5 @@
 filename = 'BCLib-20.0.13.jar'
-name = 'BCLib'
+name = 'BCLib Forge'
 side = 'server'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]

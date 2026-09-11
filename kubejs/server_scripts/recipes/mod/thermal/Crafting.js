@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 		" B ",
 		"A A"
 	], {
-		A: "#forge:wires/redstone",
+		A: "#forge:wires/signalum",
 		B: "#forge:plates/iron"
 	}).id("thermal:redstone_servo")
 
@@ -28,9 +28,23 @@ ServerEvents.recipes((event) => {
 		"ABA"
 	], {
 		A: "#forge:plates/invar",
-		B: "cmi:industrial_frame",
+		B: Casing.INDUSTRY,
 		C: "#forge:gears/tin"
 	}).id("thermal:machine_frame")
+
+	// 信素
+	kubejs.shapeless("4x thermal:signalum_dust", [
+		"#forge:dusts/lead",
+		"3x #forge:dusts/copper",
+		"4x #forge:dusts/redstone"
+	]).id("thermal:signalum_dust_4")
+
+	// 流明
+	kubejs.shapeless("4x thermal:lumium_dust", [
+		"#forge:dusts/gold",
+		"3x #forge:dusts/tin",
+		"4x #forge:dusts/glowstone"
+	]).id("thermal:lumium_dust_4")
 
 	replaceBombRecipe("minecraft:ender_pearl", "ender")
 	replaceBombRecipe("minecraft:glowstone_dust", "glowstone")

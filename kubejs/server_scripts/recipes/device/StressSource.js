@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
 		" A "
 	], {
 		A: "immersiveengineering:waterwheel_segment",
-		B: "create:andesite_casing"
+		B: Casing.ANDESITE
 	}).id("create:crafting/kinetics/water_wheel")
 
 	// 大水车
@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
 		"AAA"
 	], {
 		A: "immersiveengineering:waterwheel_segment",
-		B: "create:andesite_casing"
+		B: Casing.ANDESITE
 	})
 
 	// 小引擎
@@ -176,7 +176,7 @@ ServerEvents.recipes((event) => {
 
 	// 蒸汽引擎
 	create.sequenced_assembly("create:steam_engine", [
-		"create:copper_casing"
+		Casing.COPPER
 	], [
 		create.deploying(Inc.ENGINE, [
 			Inc.ENGINE,

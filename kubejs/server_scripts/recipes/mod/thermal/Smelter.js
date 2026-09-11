@@ -49,14 +49,14 @@ ServerEvents.recipes((event) => {
 	// 信素
 	thermal.smelter("4x thermal:signalum_ingot", [
 		"3x #forge:ingots/copper",
-		"#forge:ingots/silver",
+		"#forge:ingots/lead",
 		"4x minecraft:redstone",
 	])
 
 	// 流明
 	thermal.smelter("4x thermal:lumium_ingot", [
 		"3x #forge:ingots/tin",
-		"#forge:ingots/silver",
+		"#forge:ingots/gold",
 		"2x minecraft:glowstone_dust",
 	])
 

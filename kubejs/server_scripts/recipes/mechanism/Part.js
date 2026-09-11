@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 	// 工程
 	kubejs.shapeless("4x cmi:engineering_mechanism_part", [
 		"#forge:plates/constantan",
-		"2x #forge:wires/redstone",
+		"2x #forge:wires/signalum",
 		"#immersiveengineering:circuits/logic",
 		"#forge:gems/dreamcore"
 	])

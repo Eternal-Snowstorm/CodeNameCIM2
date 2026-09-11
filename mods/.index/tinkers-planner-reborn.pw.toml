@@ -1,5 +1,5 @@
 filename = 'TconPlanner-1.20.1-forge-1.8.0.jar'
-name = "Tinker's Planner"
+name = "Tinker's Planner  Reborn"
 side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]
