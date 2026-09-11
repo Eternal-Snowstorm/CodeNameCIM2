@@ -108,6 +108,10 @@ StartupEvents.registry("item", (event) => {
 	addItem("blaze_unit")
 		.texture(Cmi.loadResource("item/material/unit/blaze"))
 
+	// 大地碎裂单元
+	addItem("basalz_unit")
+		.texture(Cmi.loadResource("item/material/unit/basalz"))
+
 	// 狂风催化单元
 	addItem("blitz_unit")
 		.texture(Cmi.loadResource("item/material/unit/blitz"))
@@ -192,6 +196,11 @@ StartupEvents.registry("item", (event) => {
 
 	// 冲压头
 	addMaterial("hammer_head")
+
+	// 红石线
+	addMaterial("redstone_wire")
+		.tag("forge:wires/redstone")
+		.tag("forge:wires")
 
 	// 铁氧体磁芯	
 	addMaterial("ferrit_core")
@@ -339,7 +348,7 @@ StartupEvents.registry("item", (event) => {
 
 	function componentModel(type) {
 		return {
-			"parent": "cmi:item/genetal_component",
+			"parent": "cmi:item/computing_cell",
 			"textures": {
 				"texture": `cmi:item/component/${type}_cell`
 			}
