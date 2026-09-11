@@ -10,6 +10,7 @@ ServerEvents.recipes((event) => {
 		"craftingstationjei:crafting_station",
 		"create/haunting/lapis_recycling",
 		"create/crushing/prismarine_crystals",
+		"create:crafting/kinetics/white_sail_from_conversion",
 		"createaddition:compat/immersiveengineering/item_application/reinforced_blast_brick",
 		"immersiveengineering:crafting/blastbrick_reinforced",
 		"createdieselgenerators:bulk_fermenting/lava",
