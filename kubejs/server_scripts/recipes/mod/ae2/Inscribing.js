@@ -139,39 +139,39 @@ ServerEvents.recipes((event) => {
 
 	// 逻辑处理器
 	new InscriberRecipe(Processor.LOGIC)
-		.bottom("create:polished_rose_quartz")
-		.middle(Print.LOGIC)
+		.bottom(Print.LOGIC)
+		.middle("create:polished_rose_quartz")
 		.top("cmi:inscribed_silicon")
 		.press()
 		.id("ae2:inscriber/logic_processor")
 
 	// 计算处理器
 	new InscriberRecipe(Processor.CALCULATION)
-		.bottom("#forge:ingots/hop_graphite")
-		.middle(Print.CALCULATION)
+		.bottom(Print.CALCULATION)
+		.middle("#forge:silicon")
 		.top("cmi:inscribed_silicon")
 		.press()
 		.id("ae2:inscriber/calculation_processor")
 
 	// 工程处理器
 	new InscriberRecipe(Processor.ENGINEERING)
-		.bottom("#forge:silicon")
-		.middle(Print.ENGINEERING)
+		.bottom(Print.ENGINEERING)
+		.middle("#forge:gems/sapphire")
 		.top("cmi:inscribed_silicon")
 		.press()
 		.id("ae2:inscriber/engineering_processor")
 
 	// 并发处理器
 	new InscriberRecipe(Processor.CONCURRENT)
-		.bottom("cmi:silicon_carbide")
-		.middle(Print.CONCURRENT)
+		.bottom(Print.CONCURRENT)
+		.middle("cmi:silicon_carbide")
 		.top("cmi:inscribed_silicon")
 		.press()
 
 	// 超导处理器
 	new InscriberRecipe(Processor.SUPERCONDUCTING)
-		.bottom("cmi:enriched_silicon")
-		.middle(Print.SUPERCONDUCTING)
+		.bottom(Print.SUPERCONDUCTING)
+		.middle("neoecoae:crystal_matrix")
 		.top("cmi:inscribed_silicon")
 		.press()
 		.id("neoecoae:inscriber/superconducting_processor")
