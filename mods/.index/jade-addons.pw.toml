@@ -1,5 +1,5 @@
 filename = 'JadeAddons-1.20.1-Forge-5.5.1.jar'
-name = 'Jade Addons'
+name = 'Jade Addons (Neo/Forge)'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]

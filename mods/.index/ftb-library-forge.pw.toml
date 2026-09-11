@@ -1,5 +1,5 @@
 filename = 'ftb-library-forge-2001.2.13.jar'
-name = 'FTB Library'
+name = 'FTB Library (NeoForge)'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]

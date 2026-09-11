@@ -1,5 +1,5 @@
 filename = 'quest_enhance-1.20.1-forge-3.8.jar'
-name = 'Quest Enhance'
+name = 'FTB Quest Enhance'
 side = 'server'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]

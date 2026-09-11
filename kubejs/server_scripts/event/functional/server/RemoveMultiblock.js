@@ -67,6 +67,8 @@ MbtoolKJSEvents.InitMbtoolStructures((event) => {
 			}
 		}
 
-		console.info(`remove structure: ${structure}`)
+		if (CmiGlobal.isDebug) {
+			console.info(`remove structure: ${structure}`)
+		}
 	}
 })

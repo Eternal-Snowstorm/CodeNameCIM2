@@ -1,5 +1,5 @@
 filename = 'ftb-chunks-forge-2001.3.8.jar'
-name = 'FTB Chunks'
+name = 'FTB Chunks (NeoForge)'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]

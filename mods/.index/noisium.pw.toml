@@ -1,18 +1,18 @@
 filename = 'noisium-forge-2.3.0+mc1.20-1.20.1.jar'
-name = 'Noisium (archived)'
-side = ''
+name = 'Noisium'
+side = 'server'
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '2.3.0 (1.20-1.20.1)'
+x-prismlauncher-version-number = '2.3.0+mc1.20-1.20.1'
 
 [download]
-hash = '7da1cdf00c0ae5cad31e17f765f6ea021c8ac808'
-hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = ''
+hash = '5bc43bc1b748edcd63d074a8bb14d393d986c51e1933e1f38cd7a2dd2fd70dba5a46a6415f46d4a52c68e7e1e9ce101e54376ad04273df958608e2fdb43db502'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/KuNKN7d2/versions/gbYUKrDP/noisium-forge-2.3.0%2Bmc1.20-1.20.1.jar'
 
-[update.curseforge]
-file-id = 5650506
-project-id = 930207
+[update.modrinth]
+mod-id = 'KuNKN7d2'
+version = 'gbYUKrDP'

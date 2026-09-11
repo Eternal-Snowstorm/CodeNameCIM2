@@ -1,5 +1,5 @@
 filename = 'Paxi-1.20-Forge-4.0.jar'
-name = 'Paxi (Forge)'
+name = 'Paxi (Forge/NeoForge)'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]

@@ -1,5 +1,5 @@
 filename = 'fancytoasts-1.5.1-forge-1.20.1.jar'
-name = 'FancyToasts'
+name = 'Fancy Toasts | Better Advancements'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]

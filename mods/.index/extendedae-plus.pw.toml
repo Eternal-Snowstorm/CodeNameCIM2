@@ -1,5 +1,5 @@
 filename = 'extendedae_plus-1.6.2.jar'
-name = 'ExtendedAE Plus'
+name = 'ExtendedAE-Plus'
 side = 'server'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]
@@ -17,5 +17,5 @@ file-id = 8755058
 project-id = 1337639
 
 [[x-prismlauncher-dependencies]]
-addonId = '238222'
-type = 'OPTIONAL'
+addonId = '892005'
+type = 'REQUIRED'
