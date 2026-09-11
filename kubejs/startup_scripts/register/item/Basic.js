@@ -339,7 +339,7 @@ StartupEvents.registry("item", (event) => {
 
 	function componentModel(type) {
 		return {
-			"parent": "cmi:item/genetal_component",
+			"parent": "cmi:item/computing_cell",
 			"textures": {
 				"texture": `cmi:item/component/${type}_cell`
 			}
