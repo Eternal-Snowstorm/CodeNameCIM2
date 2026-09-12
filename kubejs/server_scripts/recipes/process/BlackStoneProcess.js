@@ -24,11 +24,6 @@ ServerEvents.recipes((event) => {
 	thermal.pulverizer("thermal:ruby_dust", [
 		"#forge:gems/ruby"
 	])
-	// 结晶
-	thermal.crystallizer("thermal:ruby", [
-		Fluid.of("minecraft:water", 2000),
-		"#forge:dusts/ruby"
-	])
 	// 搓块
 	kubejs.shaped("thermal:ruby_block", [
 		"AAA",
@@ -73,11 +68,6 @@ ServerEvents.recipes((event) => {
 	// 磨粉
 	thermal.pulverizer("thermal:sapphire_dust", [
 		"#forge:gems/sapphire"
-	])
-	// 结晶
-	thermal.crystallizer("thermal:sapphire", [
-		Fluid.of("minecraft:water", 2000),
-		"#forge:dusts/sapphire"
 	])
 	// 搓块
 	kubejs.shaped("thermal:sapphire_block", [
