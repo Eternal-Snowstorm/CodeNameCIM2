@@ -28,7 +28,7 @@ BlockEvents.modification((event) => {
 			`steampowered:${materials}_boiler`,
 			`steampowered:${materials}_steam_engine`,
 			`steampowered:${materials}_flywheel`
-		], SoundType.LANTERN)
+		] as Internal.Block_[], SoundType.LANTERN)
 	})
 
 	// 矿藏
@@ -53,18 +53,13 @@ BlockEvents.modification((event) => {
 		"create_rns:redstone_deposit_block"
 	]
 	depositBlocks.forEach((block) => {
-		event.modify(block, (modify) => {
+		event.modify(block as Internal.Block_, (modify) => {
 			modify.setDestroySpeed(-1)
 			modify.setExplosionResistance(3600000)
 		})
 	})
 
-	/**
-	 * @param {BlockStatePredicate_|BlockStatePredicate_[]} block
-	 * @param {Internal.SoundType_} sound
-	 * @returns
-	 */
-	function modifySoundType(block, sound) {
+	function modifySoundType(block: BlockStatePredicate_ | BlockStatePredicate_[], sound: SoundType_) {
 		let ofArray = (block instanceof Array ? block : [block])
 		ofArray.forEach((predicate) => {
 			event.modify(predicate, (modify) => {

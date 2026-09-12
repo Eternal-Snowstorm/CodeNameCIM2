@@ -1,9 +1,9 @@
 /**
  * 
- * @param {string} modid 
- * @param {string} name 
+ * @param modid 
+ * @param name 
  */
-function modifyDisplayName(modid, name) {
+function modifyDisplayName(modid: Special.Mod, name: string) {
 	Platform.getInfo(modid).setName(name)
 }
 

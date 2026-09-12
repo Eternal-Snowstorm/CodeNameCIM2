@@ -4,11 +4,11 @@ ItemEvents.modification((event) => {
 
 	/**
 	 *
-	 * @param {Internal.ItemStack_} item 修改的物品
-	 * @param {Number} time 修改的时间(单位: 1个物品[即200tick])
+	 * @param item 修改的物品
+	 * @param time 修改的时间(单位: 1个物品[即200tick])
 	 * @returns 
 	 */
-	function modifyItemBurnTime(item, time) {
+	function modifyItemBurnTime(item: Internal.ItemStack_, time: number) {
 		return event.modify(item, (modify) => {
 			const BURN_TIME = 200
 			modify.setBurnTime(BURN_TIME * time)
@@ -32,10 +32,6 @@ ItemEvents.modification((event) => {
 	modifyItemBurnTime("mekanism:dust_charcoal", 4 * 1.5)
 	modifyItemBurnTime("mekanism:block_charcoal", 4 * 9)
 	modifyItemBurnTime("thermal:charcoal_block", 4 * 9)
-
-	event.modify("minecraft:ender_pearl", (modify) => {
-		modify.setMaxStackSize(64)
-	})
 
 	// 奶酪统一处理
 	event.modify("ad_astra:cheese_block", (modify) => {
@@ -136,4 +132,14 @@ ItemEvents.modification((event) => {
 			})
 		})
 	}
+
+	ForgeRegistries.ITEMS.getEntries().forEach((entry) => {
+		let item: Internal.Item_ = entry.getValue()
+
+		event.modify(item, (modify) => {
+			if (item.getMaxStackSize() <= 16 && item.getMaxStackSize() !== 1) {
+				modify.setMaxStackSize(64)
+			}
+		})
+	})
 })
