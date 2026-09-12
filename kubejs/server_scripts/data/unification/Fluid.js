@@ -7,6 +7,14 @@ ServerEvents.highPriorityData((event) => {
 		"createdieselgenerators:crude_oil"
 	))
 
+	// 植物油
+	addJsonFile("plant_oil", addUnification([
+		"immersiveengineering:plantoil",
+		"createaddition:seed_oil"
+	],
+		"createdieselgenerators:plant_oil"
+	))
+
 	// 蒸汽
 	addJsonFile("steam", addUnification([
 		"steampowered:steam",

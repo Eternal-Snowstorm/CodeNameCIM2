@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
 	addCrushedSplashing("etrium", "ae2:certus_quartz_dust")
 	addCrushedSplashing("tungsten", "cmi:lime_dust")
 	addCrushedSplashing("ardite", "minecraft:glowstone_dust")
-	addCrushedSplashing("aluminum", "cmi:deposit_dust")
+	addCrushedSplashing("aluminum", "thermal:sapphire_dust")
 
 	function addCrushedSplashing(material, product) {
 		let crushed = `#create:crushed_raw_materials/${material}`

@@ -31,4 +31,19 @@ ServerEvents.recipes((event) => {
 		Fluid.of("cmi:crystal_catalyt", 200)
 	]).energy(4000)
 
+	// RGB宝石
+	thermal.crystallizer("thermal:sapphire", [
+		"#forge:dusts/sapphire",
+		Fluid.of("cmi:crystal_catalyt", 200)
+	])
+
+	thermal.crystallizer("thermal:ruby", [
+		"#forge:dusts/ruby",
+		Fluid.of("cmi:crystal_catalyt", 200)
+	])
+
+	thermal.crystallizer("minecraft:emerald", [
+		"#forge:dusts/emerald",
+		Fluid.of("cmi:crystal_catalyt", 200)
+	]).id("thermal:machines/crystallizer/crystallizer_emerald")
 })
