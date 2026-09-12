@@ -36,6 +36,24 @@ ServerEvents.recipes((event) => {
 		"#forge:dusts/salt"
 	])
 
+	// 油脂
+	event.custom({
+		"type": "fluidlogistics:cooling_mixing",
+		"ingredients": [
+			{
+				"amount": 100,
+				"fluid": "createdieselgenerators:plant_oil",
+				"nbt": {}
+			}
+		],
+		"results": [
+			{
+				"item": "kaleidoscope_cookery:oil"
+			}
+		],
+		"supercooled": false
+	})
+
 	// 红石酸
 	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 200), [
 		"#forge:dusts/redstone",
