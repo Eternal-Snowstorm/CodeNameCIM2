@@ -1,16 +1,19 @@
-param(
+﻿param(
   [string]$Root = '',
   [switch]$DryRun
 )
 $ErrorActionPreference = 'Stop'
 
-# Client root = parent of updater (folder name does not have to be .minecraft)
+# 注意: 不要强制 [Console]::OutputEncoding, 否则会与本脚本调用方(.bat 的 chcp 936)
+# 的控制台代码页冲突, 导致中文乱码。PowerShell 默认跟随控制台代码页, 这正是所需行为。
+
+# 客户端根目录 = updater 的上一级(文件夹名不必是 .minecraft)
 if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 $Root = (Resolve-Path $Root).Path
 $manifest = Join-Path $Root 'updater\update.tsv'
 $deleteList = Join-Path $Root 'updater\delete.tsv'
 
-# Safety: only touch these dirs; never saves/options.txt/server data
+# 安全限制: 只操作以下目录; 绝不触碰 saves/options.txt/服务器数据
 $safePrefixes = @('mods/', 'config/', 'kubejs/', 'defaultconfigs/', 'resourcepacks/')
 
 function Test-SafePath([string]$p) {
@@ -38,16 +41,16 @@ if (Test-Path -LiteralPath $deleteList) {
     if ($manifestPaths -contains $p) { continue }
     $fp = Join-Path $Root $p
     if (Test-Path -LiteralPath $fp) {
-      if ($DryRun) { Write-Host "[mods][dry-run] would delete: $p"; continue }
+      if ($DryRun) { Write-Host "[mods][dry-run] 将删除: $p"; continue }
       Remove-Item -Force -LiteralPath $fp
-      Write-Host "[mods] deleted: $p"
+      Write-Host "[mods] 已删除: $p"
     }
   }
 }
 
 # --- 更新清单 ---
 if (-not (Test-Path -LiteralPath $manifest)) {
-  Write-Host '[mods] no update.tsv manifest, skip mod sync'
+  Write-Host '[mods] 未找到 update.tsv, 跳过 mods 同步'
   exit 0
 }
 
@@ -72,17 +75,17 @@ foreach ($line in Get-Content -LiteralPath $manifest) {
 
   if (-not $url) {
     $nosource++
-    if ($DryRun) { Write-Host "[mods][dry-run] missing + no source: $path"; continue }
-    Write-Host "[mods] no source for: $path" 
+    if ($DryRun) { Write-Host "[mods][dry-run] 缺失且无源: $path"; continue }
+    Write-Host "[mods] 无源: $path"
     continue
   }
 
-  if ($DryRun) { Write-Host "[mods][dry-run] would download: $path"; continue }
+  if ($DryRun) { Write-Host "[mods][dry-run] 将下载: $path"; continue }
 
   $destDir = Split-Path -Parent $dest
   if (-not (Test-Path $destDir)) { New-Item -ItemType Directory -Force -Path $destDir | Out-Null }
   $tmp = "$dest.download"
-  Write-Host "[mods] downloading: $path"
+  Write-Host "[mods] 正在下载: $path"
   try {
     if (Test-Path -LiteralPath $tmp) { Remove-Item -Force -LiteralPath $tmp }
     & curl.exe -L --fail --retry 3 --retry-delay 2 -o $tmp $url
@@ -92,13 +95,13 @@ foreach ($line in Get-Content -LiteralPath $manifest) {
     Move-Item -Force -LiteralPath $tmp -Destination $dest
     $downloaded++
   } catch {
-    Write-Host "[mods] FAILED: $path : $_"
+    Write-Host "[mods] 失败: $path : $_"
     Remove-Item -Force -LiteralPath $tmp -ErrorAction SilentlyContinue
     $failed++
   }
 }
 
-Write-Host "[mods] summary: total=$total skipped=$skipped downloaded=$downloaded failed=$failed no-source=$nosource"
+Write-Host "[mods] 完成: 总数 $total, 已最新 $skipped, 已下载 $downloaded, 失败 $failed, 无源 $nosource"
 if ($DryRun) { exit 0 }
 if ($failed -gt 0) { exit 1 }
 exit 0
