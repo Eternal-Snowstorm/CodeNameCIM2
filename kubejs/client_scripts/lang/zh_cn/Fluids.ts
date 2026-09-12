@@ -1,13 +1,8 @@
 ClientEvents.lang("zh_cn", (event) => {
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addFluidLang(key, value) {
-		event.add(`fluid.${Cmi.MODID}.${key}`, value)
-		event.add(`block.${Cmi.MODID}.${key}`, value)
-		event.add(`item.${Cmi.MODID}.${key}_bucket`, `${value}桶`)
+	function addFluidLang(key: string, name: string) {
+		event.add(`fluid.${Cmi.MODID}.${key}`, name)
+		event.add(`block.${Cmi.MODID}.${key}`, name)
+		event.add(`item.${Cmi.MODID}.${key}_bucket`, `${name}桶`)
 	}
 
 	addFluidLang("steam", "蒸汽")
@@ -106,5 +101,4 @@ ClientEvents.lang("zh_cn", (event) => {
 	addFluidLang("molten_pure_silicon", "熔融高纯硅")
 	addFluidLang("ionized_entro_solution", "恩特罗电离液")
 	addFluidLang("liquid_crystal_etrium", "液晶态埃忒恩")
-
 })

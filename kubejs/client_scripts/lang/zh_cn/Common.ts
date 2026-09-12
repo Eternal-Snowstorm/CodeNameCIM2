@@ -1,74 +1,36 @@
 ClientEvents.lang("zh_cn", (event) => {
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addMekanismLang(key, value) {
-		event.add(`gas.${Cmi.MODID}.${key}`, value)
-		event.add(`infuse_type.${Cmi.MODID}.${key}`, value)
-		event.add(`chemical.${Cmi.MODID}.${key}`, value)
+	function addMekanismLang(key: string, name: string) {
+		event.add(`gas.${Cmi.MODID}.${key}`, name)
+		event.add(`infuse_type.${Cmi.MODID}.${key}`, name)
+		event.add(`chemical.${Cmi.MODID}.${key}`, name)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} title 
-	 * @param {string} author 
-	 */
-	function addPaintingLang(key, title, author) {
+	function addPaintingLang(key: string, title: string, author: string) {
 		event.add(`painting.${Cmi.MODID}.${key}.title`, title)
 		event.add(`painting.${Cmi.MODID}.${key}.author`, author)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} title 
-	 * @param {string} desc 
-	 */
-	function addAdvancementLang(key, title, desc) {
+	function addAdvancementLang(key: string, title: string, desc: string) {
 		event.add(`advancements.${Cmi.MODID}.${key}`, title)
 		event.add(`advancements.${Cmi.MODID}.${key}.desc`, desc)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 * @param {string} author
-	 */
-	function addMusicDiscLang(key, value, author) {
+	function addMusicDiscLang(key: string, name: string, author: string) {
 		event.add(`item.${Cmi.MODID}.${key}`, "音乐唱片")
-		event.add(`item.${Cmi.MODID}.${key}.desc`, `${value} - ${author}`)
+		event.add(`item.${Cmi.MODID}.${key}.desc`, `${name} - ${author}`)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addPlanetLang(key, value) {
-		event.add(`planet.${Cmi.MODID}.${key}`, `${value}`)
-		event.add(`planet.${Cmi.MODID}_orbit.${key}`, `${value}轨道`)
+	function addPlanetLang(key: string, name: string) {
+		event.add(`planet.${Cmi.MODID}.${key}`, `${name}`)
+		event.add(`planet.${Cmi.MODID}_orbit.${key}`, `${name}轨道`)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addStructureLang(key, value) {
-		event.add(`structure.${Cmi.MODID}.${key}`, value)
+	function addStructureLang(key: string, name: string) {
+		event.add(`structure.${Cmi.MODID}.${key}`, name)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addDepositLang(key, value) {
-		event.add(`cmi.structure.ore_node/${key}_node`, `${value}矿藏节点`)
+	function addDepositLang(key: string, name: string) {
+		event.add(`cmi.structure.ore_node/${key}_node`, `${name}矿藏节点`)
 	}
 
 	addMekanismLang("sulfide_gas_mixture", "硫化物混合气")

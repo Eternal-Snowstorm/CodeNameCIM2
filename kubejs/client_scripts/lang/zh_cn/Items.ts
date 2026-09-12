@@ -1,43 +1,22 @@
 ClientEvents.lang("zh_cn", (event) => {
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addItemLang(key, value) {
-		event.add(`item.${Cmi.MODID}.${key}`, value)
+	function addItemLang(key: string, name: string) {
+		event.add(`item.${Cmi.MODID}.${key}`, name)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addCellItemLang(key, value) {
-		event.add(`item.${Cmi.MODID}.${key}_cell`, `${value}硬盘`)
+	function addCellItemLang(key: string, name: string) {
+		event.add(`item.${Cmi.MODID}.${key}_cell`, `${name}硬盘`)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} text_1 
-	 * @param {string} text_2 
-	 */
-	function addCellLang(key, text_1, text_2) {
-		event.add(`text.${Cmi.MODID}.cell.${key}.page_1`, text_1)
-		event.add(`text.${Cmi.MODID}.cell.${key}.page_2`, text_2)
+	function addCellLang(key: string, text1: string, text2: string) {
+		event.add(`text.${Cmi.MODID}.cell.${key}.page_1`, text1)
+		event.add(`text.${Cmi.MODID}.cell.${key}.page_2`, text2)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addCastItemLang(key, value) {
-		event.add(`item.${Cmi.MODID}.${key}_cast`, `${value}金质铸模`)
-		event.add(`item.${Cmi.MODID}.${key}_sand_cast`, `${value}沙子铸模`)
-		event.add(`item.${Cmi.MODID}.${key}_red_sand_cast`, `${value}红沙铸模`)
-		event.add(`item.${Cmi.MODID}.bronze_${key}_cast`, `${value}青铜质铸模`)
+	function addCastItemLang(key: string, name: string) {
+		event.add(`item.${Cmi.MODID}.${key}_cast`, `${name}金质铸模`)
+		event.add(`item.${Cmi.MODID}.${key}_sand_cast`, `${name}沙子铸模`)
+		event.add(`item.${Cmi.MODID}.${key}_red_sand_cast`, `${name}红沙铸模`)
+		event.add(`item.${Cmi.MODID}.bronze_${key}_cast`, `${name}青铜质铸模`)
 	}
 
 	// 锭

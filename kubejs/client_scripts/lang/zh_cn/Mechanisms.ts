@@ -1,57 +1,27 @@
 ClientEvents.lang("zh_cn", (event) => {
-	/**
-	  * 
-	  * @param {string} material 
-	  * @param {string} value 
-	  */
-	function addMechanismMachineLang(material, value) {
+	function addMechanismMachineLang(material: string, value: string) {
 		event.add(`block.${Cmi.MODID}.${material}_machine`, `${value}机器`)
 	}
 
-	/**
-	  * 
-	  * @param {string} material 
-	  * @param {string} value 
-	  */
-	function addMechanismLang(material, value) {
+	function addMechanismLang(material: string, value: string) {
 		event.add(`item.${Cmi.MODID}.${material}_mechanism`, `${value}构件`)
 		event.add(`item.${Cmi.MODID}.incomplete_${material}_mechanism`, `${value}构件(半成品)`)
 	}
 
-	/**
-	  * 
-	  * @param {string} material 
-	  * @param {string} value 
-	  */
-	function addCraftingIncompleteLang(material, value) {
+	function addCraftingIncompleteLang(material: string, value: string) {
 		event.add(`item.${Cmi.MODID}.${material}_mechanism_basement`, `${value}构件底座`)
 		event.add(`item.${Cmi.MODID}.${material}_mechanism_augment`, `${value}构件组件`)
 	}
 
-	/**
-	  * 
-	  * @param {string} material 
-	  * @param {string} value 
-	  */
-	function addRandomMechanismLang(material, value) {
+	function addRandomMechanismLang(material: string, value: string) {
 		event.add(`item.${Cmi.MODID}.${material}_random_mechanism`, `${value}随机构件`)
 	}
 
-	/**
-	  * 
-	  * @param {string} material 
-	  * @param {string} value 
-	  */
-	function addMechanismPartLang(material, value) {
+	function addMechanismPartLang(material: string, value: string) {
 		event.add(`item.${Cmi.MODID}.${material}_mechanism_part`, `${value}构件零件`)
 	}
 
-	/**
-	  * 
-	  * @param {string} material 
-	  * @param {string} value 
-	  */
-	function addFlashDriveLang(key, value) {
+	function addFlashDriveLang(key: string, value: string) {
 		event.add(`item.${Cmi.MODID}.${key}_mechanism_flash_drive`, `${value}构件闪存盘`)
 	}
 

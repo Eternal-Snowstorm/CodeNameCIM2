@@ -1,49 +1,24 @@
 ClientEvents.lang("zh_cn", (event) => {
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addCommonTooltipLang(key, value) {
-		event.add(`tooltip.${key}`.replace(":", "."), `§b${value}`)
+	function addCommonTooltipLang(key: string, name: string) {
+		event.add(`tooltip.${key}`.replace(":", "."), `§b${name}`)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addCustomTooltipLang(key, value) {
-		event.add(key, value)
+	function addCustomTooltipLang(key: string, name: string) {
+		event.add(key, name)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addCommonJadeTipLang(key, value) {
-		event.add(`jade.info.cmi.${key}`.replace(":", "."), `${value}`)
+	function addCommonJadeTipLang(key: string, name: string) {
+		event.add(`jade.info.cmi.${key}`.replace(":", "."), `${name}`)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {String[]} values 
-	 */
-	function addCommonJadeTipLangs(key, values) {
-		values.forEach((value, index) => {
-			event.add(`jade.info.cmi.${key}.${index + 1}`.replace(":", "."), `${value}`)
+	function addCommonJadeTipLangs(key: string, names: string[]) {
+		names.forEach((name: string, index: number) => {
+			event.add(`jade.info.cmi.${key}.${index + 1}`.replace(":", "."), `${name}`)
 		})
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addJEIInfoLang(key, value) {
-		event.add(`jei.info.${key}`.replace(":", "."), value)
+	function addJEIInfoLang(key: string, name: string) {
+		event.add(`jei.info.${key}`.replace(":", "."), name)
 	}
 
 	addCommonTooltipLang("cmi:re_construction", "整合包主创")
@@ -112,8 +87,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("#forge:tools/wrench", "工作台制作构件时不消耗")
 	addCommonTooltipLang("#railways:filled_paint_pitchers", "此模组的{create:mechanical_mixer, 1}混合搅拌染色配方已被隐藏，你可以用{railways:white_paint_pitcher, 1}白色染色配方类推其他被隐藏的染色配方")
 
-	addCommonTooltipLang("cmi:steam_cast_iron_upgrade","可用于将青铜蒸汽锅炉部件升级为铸铁材质")
-	addCommonTooltipLang("cmi:steam_steel_upgrade","可用于将铸铁蒸汽锅炉部件升级为钢材质")
+	addCommonTooltipLang("cmi:steam_cast_iron_upgrade", "可用于将青铜蒸汽锅炉部件升级为铸铁材质")
+	addCommonTooltipLang("cmi:steam_steel_upgrade", "可用于将铸铁蒸汽锅炉部件升级为钢材质")
 
 	addCommonJadeTipLangs("tconstruct:seared_heater", [
 		"自身最多提供 937°C / 1718.6°F",

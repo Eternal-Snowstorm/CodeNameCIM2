@@ -1,55 +1,30 @@
 ClientEvents.lang("zh_cn", (event) => {
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addBlockLang(key, value) {
-		event.add(`block.${Cmi.MODID}.${key}`, value)
+	function addBlockLang(key: string, name: string) {
+		event.add(`block.${Cmi.MODID}.${key}`, name)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addOreNodeLang(key, value) {
-		event.add(`block.${Cmi.MODID}.${key}_deposit_block`, `${value}矿藏`)
+	function addOreNodeLang(key: string, name: string) {
+		event.add(`block.${Cmi.MODID}.${key}_deposit_block`, `${name}矿藏`)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addMachineLang(key, value) {
-		event.add(`block.${Cmi.MODID}.${key}`, value)
-		event.add(`machine.${Cmi.MODID}.${key}`, value)
+	function addMachineLang(key: string, name: string) {
+		event.add(`block.${Cmi.MODID}.${key}`, name)
+		event.add(`machine.${Cmi.MODID}.${key}`, name)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addCasingLang(key, value) {
-		event.add(`block.${Cmi.MODID}.${key}_casing`, `${value}机壳`)
+	function addCasingLang(key: string, name: string) {
+		event.add(`block.${Cmi.MODID}.${key}_casing`, `${name}机壳`)
 	}
 
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} value 
-	 */
-	function addBuildLang(key, value) {
-		event.add(`block.${Cmi.MODID}.${key}_slab`, `${value}台阶`)
-		event.add(`block.${Cmi.MODID}.${key}_stairs`, `${value}楼梯`)
+	function addBuildLang(key: string, name: string) {
+		event.add(`block.${Cmi.MODID}.${key}_slab`, `${name}台阶`)
+		event.add(`block.${Cmi.MODID}.${key}_stairs`, `${name}楼梯`)
 	}
 
-	function addDrawerLang(key, value) {
-		event.add(`block.${Cmi.MODID}.${key}_1`, `${value}抽屉(1x1)`)
-		event.add(`block.${Cmi.MODID}.${key}_2`, `${value}抽屉(1x2)`)
-		event.add(`block.${Cmi.MODID}.${key}_4`, `${value}抽屉(2x2)`)
+	function addDrawerLang(key: string, name: string) {
+		event.add(`block.${Cmi.MODID}.${key}_1`, `${name}抽屉(1x1)`)
+		event.add(`block.${Cmi.MODID}.${key}_2`, `${name}抽屉(1x2)`)
+		event.add(`block.${Cmi.MODID}.${key}_4`, `${name}抽屉(2x2)`)
 	}
 
 	addCasingLang("iron", "铁")

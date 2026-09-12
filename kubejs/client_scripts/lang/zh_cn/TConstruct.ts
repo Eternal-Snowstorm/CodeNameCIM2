@@ -1,12 +1,5 @@
 ClientEvents.lang("zh_cn", (event) => {
-	/**
-	 * 
-	 * @param {string} key 
-	 * @param {string} name 
-	 * @param {string} flavour 
-	 * @param {string} encyclopedia 
-	 */
-	function addTConMaterialLang(key, name, flavour, encyclopedia) {
+	function addTConMaterialLang(key: string, name: string, flavour: string, encyclopedia: string) {
 		event.add(`material.${Cmi.MODID}.${key}`, name)
 		event.add(`material.${Cmi.MODID}.${key}.flavor`, flavour)
 		event.add(`material.${Cmi.MODID}.${key}.encyclopedia`, encyclopedia)
