@@ -63,6 +63,12 @@ StartupEvents.registry("block", (event) => {
 	// 柒月
 	addDeveloperDoll("qi_month", "slim")
 
+	// 幽灵猫
+	addDeveloperDoll("ein_nameuwu", "slim")
+
+	// 幻想星辰
+	addDeveloperDoll("huanchenxiaohuli", "slim")
+
 	// Belalus
 	addDeveloperDoll("belalus", "wide")
 
@@ -90,6 +96,6 @@ StartupEvents.registry("block", (event) => {
 	// 栗子
 	addDeveloperDoll("lirx_owo", "slim")
 
-	// 幽灵猫
-	addDeveloperDoll("ein_nameuwu", "slim")
+	// 德尔塔
+	addDeveloperDoll("delta", "wide")
 })

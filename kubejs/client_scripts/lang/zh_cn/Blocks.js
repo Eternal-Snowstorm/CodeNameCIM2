@@ -141,6 +141,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("random_mechanism", "随机构件")
 	addBlockLang("eternalsnowstorm", "逐日炎雪_中微子")
 	addBlockLang("qi_month", "柒月")
+	addBlockLang("ein_nameuwu", "幽灵猫")
+	addBlockLang("huanchenxiaohuli", "幻想星辰")
 	addBlockLang("belalus", "Belalus")
 	addBlockLang("fiber_optics", "FiberOptics")
 	addBlockLang("ye_anqing", "燕栖")
@@ -150,7 +152,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("keyxeldesu", "一只键盘虾")
 	addBlockLang("sergei", "谢尔盖")
 	addBlockLang("lirx_ovo", "栗子")
-	addBlockLang("ein_nameuwu", "幽灵猫")
 
 	// build
 	addBuildLang("brass", "黄铜")

@@ -10,6 +10,8 @@ ItemEvents.tooltip((event) => {
 	addAdvancedTooltip("cmi:random_mechanism")
 	addAdvancedTooltip("cmi:eternalsnowstorm")
 	addAdvancedTooltip("cmi:qi_month")
+	addAdvancedTooltip("cmi:ein_nameuwu")
+	addAdvancedTooltip("cmi:huanchenxiaohuli")
 	addAdvancedTooltip("cmi:belalus")
 	addAdvancedTooltip("cmi:fiber_optics")
 	addAdvancedTooltip("cmi:ye_anqing")
@@ -19,7 +21,6 @@ ItemEvents.tooltip((event) => {
 	addAdvancedTooltip("cmi:keyxeldesu")
 	addAdvancedTooltip("cmi:sergei")
 	addAdvancedTooltip("cmi:lirx_owo")
-	addAdvancedTooltip("cmi:ein_nameuwu")
 
 	// 繁星核心
 	addAdvancedTooltip("cmi:astral_core")

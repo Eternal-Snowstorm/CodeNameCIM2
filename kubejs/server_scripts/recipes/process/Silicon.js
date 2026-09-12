@@ -87,23 +87,14 @@ ServerEvents.recipes((event) => {
 	]).itemAsHead("cmi:plate_mold")
 
 	// 轻硅醚
-	event.custom({
-		"type": "immersiveengineering:mixer",
-		"energy": 1600,
-		"fluid": {
-			"amount": 50,
-			"tag": "cmi:light_olefin"
-		},
-		"inputs": [
-			{
-				"tag": "forge:silicon"
-			}
-		],
-		"result": {
-			"amount": 200,
-			"fluid": "cmi:light_silicone_ether"
-		}
-	})
+	cmi.chemical_reactor()
+		.inputItems([
+			"#forge:silicon"
+		])
+		.inputFluids(Fluid.of("cmi:light_olefin", 100))
+		.outputFluids(Fluid.of("cmi:light_silicone_ether", 200))
+		.inputFE(1600)
+		.duration(10)
 
 	// 聚硅醚
 	cmi.chemical_reactor()
