@@ -289,7 +289,7 @@ ServerEvents.recipes((event) => {
 	// 计算处理器
 	new SequencedAssemblyRecipe(Seq.CALCULATION)
 		.curving("ae2:calculation_processor_press")
-		.deploying("#forge:ingots/hop_graphite")
+		.deploying("#forge:silicon")
 		.deploying("ae2:printed_silicon")
 		.deploying("#forge:wires/signalum")
 		.laserCutting(4000)
@@ -298,7 +298,7 @@ ServerEvents.recipes((event) => {
 	// 工程处理器
 	new SequencedAssemblyRecipe(Seq.ENGINEERING)
 		.curving("ae2:engineering_processor_press")
-		.deploying("#forge:silicon")
+		.deploying("#forge:gems/sapphire")
 		.deploying("ae2:printed_silicon")
 		.deploying("#forge:wires/signalum")
 		.laserCutting(4000)
@@ -316,7 +316,7 @@ ServerEvents.recipes((event) => {
 	// 量子处理器
 	new SequencedAssemblyRecipe(Seq.SUPERCONDUCTING)
 		.curving("neoecoae:superconducting_processor_press")
-		.deploying("cmi:enriched_silicon")
+		.deploying("neoecoae:crystal_matrix")
 		.deploying("ae2:printed_silicon")
 		.deploying("#forge:wires/signalum")
 		.laserCutting(4000)

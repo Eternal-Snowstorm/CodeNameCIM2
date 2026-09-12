@@ -284,6 +284,20 @@ ServerEvents.recipes((event) => {
 		"#forge:storage_blocks/lapis"
 	]).id("thermal:dynamo_disenchantment")
 
+	// 反应釜
+	addComponRecipe("cmi:chemical_reactor", [
+		Casing.STEEL,
+		Mechanisms.LIGHT.COM,
+		"#forge:gears/invar",
+		"create:whisk"
+	])
+
+	addComponRecipe("cmi:reinforced_chemical_reactor", [
+		"cmi:chemical_reactor",
+		Mechanisms.HEAVY.COM,
+		"create:blaze_burner"
+	])
+
 	// 树脂提取
 	kubejs.shaped("thermal:device_tree_extractor", [
 		"M",

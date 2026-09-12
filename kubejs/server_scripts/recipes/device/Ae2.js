@@ -348,14 +348,14 @@ ServerEvents.recipes((event) => {
 	thermal_extra.component_assembly("4x ae2:basic_card", [
 		"#forge:plates/iron",
 		Mechanisms.SMART.COM,
-		"#forge:plates/silicon_rubber",
+		"thermal:cured_rubber",
 		"#forge:ingots/electrum"
 	]).id("ae2:materials/basiccard")
 
 	thermal_extra.component_assembly("4x ae2:advanced_card", [
 		"#forge:plates/silver",
 		Mechanisms.SMART.COM,
-		"#forge:plates/silicon_rubber",
+		"thermal:cured_rubber",
 		"#forge:ingots/etrium"
 	]).id("ae2:materials/advancedcard")
 

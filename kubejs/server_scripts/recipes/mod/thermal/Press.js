@@ -18,4 +18,14 @@ ServerEvents.recipes((event) => {
 		"cmi:titanium_alloy_plate",
 		"cmi:unpack_mold"
 	])
+
+	// 红蓝宝石齿轮
+	thermal.press("thermal:ruby_gear", [
+		"4x #forge:gems/ruby",
+		"cmi:gear_mold"
+	])
+	thermal.press("thermal:sapphire_gear", [
+		"4x #forge:gems/sapphire",
+		"cmi:gear_mold"
+	])
 })

@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create, vintageimprovements, thermal, cmi } = event.getRecipes()
+	let { create, vintageimprovements, thermal, cmi, immersiveengineering } = event.getRecipes()
 
 	// 石英粉
 	create.crushing("thermal:quartz_dust", [
@@ -56,29 +56,30 @@ ServerEvents.recipes((event) => {
 	]).heatRequirement(CmiHeatLevel.GRILLED)
 
 	// 硅混合物
-	create.mixing("cmi:silicon_mixture", [
-		"#forge:dusts/coal_coke",
-		"#forge:dusts/pure_quartz"
-	]).superheated()
-
-	// 硅
 	create.mixing([
-		"ae2:silicon",
-		Item.of("ae2:silicon", 2).withChance(0.1),
+		"cmi:silicon_mixture",
+		Item.of("cmi:silicon_mixture", 2).withChance(0.1),
 		Item.of("create:scorchia").withChance(0.5)
 	], [
-		"cmi:silicon_mixture",
+		"#forge:dusts/coal_coke",
+		"#forge:dusts/pure_quartz",
 		Fluid.of("tconstruct:seared_stone", 250)
 	]).superheated()
 
 	create.mixing([
-		"ae2:silicon",
-		Item.of("ae2:silicon", 2).withChance(0.1),
+		"cmi:silicon_mixture",
+		Item.of("cmi:silicon_mixture", 2).withChance(0.1),
 		Item.of("create:scoria").withChance(0.5)
 	], [
-		"cmi:silicon_mixture",
+		"#forge:dusts/coal_coke",
+		"#forge:dusts/pure_quartz",
 		Fluid.of("tconstruct:scorched_stone", 250)
 	]).superheated()
+
+	// 硅
+	immersiveengineering.blast_furnace("ae2:silicon")
+		.input("cmi:silicon_mixture")
+		.slag("thermal:slag")
 
 	// 硅板
 	vintageimprovements.curving("ae2:printed_silicon", [
