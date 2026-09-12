@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.getRecipes()
+	let { create, fluidlogistics } = event.getRecipes()
 
 	// 泥土
 	create.compacting([
@@ -22,6 +22,12 @@ ServerEvents.recipes((event) => {
 	// 高定向热解石墨
 	create.compacting("immersiveengineering:dust_hop_graphite", [
 		"8x #forge:dusts/coal_coke"
-	]).superheated()
-		.id("immersiveengineering:squeezer/graphite_dust")
+	]).superheated().id("immersiveengineering:squeezer/graphite_dust")
+
+	// 寒霜蛋糕胚
+	fluidlogistics.cooling_compacting("cmi:frost_cake_base", [
+		Fluid.of("minecraft:milk", 250),
+		Fluid.of("tconstruct:powdered_snow", 250),
+		"minecraft:sugar",
+	])
 })

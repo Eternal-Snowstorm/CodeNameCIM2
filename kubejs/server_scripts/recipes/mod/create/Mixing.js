@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	let { create } = event.getRecipes()
+	let { create, fluidlogistics } = event.getRecipes()
 
 	// 熔融安山合金
 	create.mixing(Fluid.of("cmi:molten_andesite_alloy", 180), [
@@ -37,22 +37,9 @@ ServerEvents.recipes((event) => {
 	])
 
 	// 油脂
-	event.custom({
-		"type": "fluidlogistics:cooling_mixing",
-		"ingredients": [
-			{
-				"amount": 100,
-				"fluid": "createdieselgenerators:plant_oil",
-				"nbt": {}
-			}
-		],
-		"results": [
-			{
-				"item": "kaleidoscope_cookery:oil"
-			}
-		],
-		"supercooled": false
-	})
+	fluidlogistics.cooling_mixing("kaleidoscope_cookery:oil", [
+		Fluid.of("createdieselgenerators:plant_oil", 100)
+	])
 
 	// 红石酸
 	create.mixing(Fluid.of("immersiveengineering:redstone_acid", 200), [
