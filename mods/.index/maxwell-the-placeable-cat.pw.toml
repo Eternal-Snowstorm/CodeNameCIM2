@@ -1,0 +1,18 @@
+filename = 'placeablemaxwell-2.1.2+1.20.1-forge.jar'
+name = 'Maxwell the placeable cat'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.1.2 for Forge 1.20.1'
+
+[download]
+hash = '5b401aae107ae084443fd8b634e283c841aeccd1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7422406
+project-id = 759402
