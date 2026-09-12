@@ -2,7 +2,7 @@ ClientEvents.loggedIn((event) => {
 	let { player } = event
 
 	let isDev = DebugUserManager.isDebugger(player)
-	let paintData = {}
+	let paintData: Record<string, any> = {}
 
 	if (isDev) {
 		let devInfo = Component.translatable(`text.${Cmi.MODID}.dev`).getString()

@@ -1,8 +1,4 @@
 JEIEvents.information((event) => {
-	/**
-	 * 
-	 * @param {Internal.Ingredient_} name 
-	 */
 	function addJEIInfo(name) {
 		let itemInfoTranKey = `jei.info.${name}`.replace(":", ".")
 		event.addItem(name, Component.translatable(itemInfoTranKey))
@@ -20,5 +16,4 @@ JEIEvents.information((event) => {
 	addJEIInfo("cmi:sludge_extract")
 	addJEIInfo("#easyrepair:repair_item_pouchs")
 	addJEIInfo("#railways:filled_paint_pitchers")
-
 })

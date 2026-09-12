@@ -13,8 +13,8 @@ let hideFluidList = [
 	"thermal_extra:raw_arcane_gold"
 ]
 JEIEvents.hideFluids((event) => {
-	function hideFluidFromJEI(fluid) {
-		event.hide(fluid)
+	function hideFluidFromJEI(fluid: string) {
+		event.hide(fluid as Internal.Fluid_)
 	}
 
 	hideFluidList.forEach((fluid) => {

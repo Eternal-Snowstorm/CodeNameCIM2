@@ -1,5 +1,5 @@
 JEIEvents.addItems((event) => {
-	function addItemToJEI(item) {
+	function addItemToJEI(item: Internal.Ingredient_) {
 		event.add(item)
 	}
 

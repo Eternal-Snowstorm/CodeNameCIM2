@@ -1,3 +1,14 @@
+type Port = "item_input"
+	| "item_output"
+	| "fluid_input"
+	| "fluid_output"
+	| "energy_input"
+	| "energy_output"
+	| "gas_input"
+	| "gas_output"
+	| "common_input"
+	| "common_output"
+
 ClientEvents.highPriorityAssets((event) => {
 	const MACHINE_MODEL_PATH = "machine"
 	const MACHINE_TEXTURE_PATH = "cmi:block/machine"
@@ -5,12 +16,12 @@ ClientEvents.highPriorityAssets((event) => {
 
 	/**
 	 * 生成一个 Orientable Block Model
-	 *
-	 * @param {string} model 模型路径
-	 * @param {string} front 正面贴图
-	 * @param {string} side 侧面/顶部贴图
+	 * 
+	 * @param model 
+	 * @param front 
+	 * @param side 
 	 */
-	function addOrientableModel(model, front, side) {
+	function addOrientableModel(model: ResourceLocation_, front: string, side: string) {
 		event.addModel("block", model, (generator) => {
 			generator.parent("nebula_libs:block/double_layered_orientable")
 			generator.texture("background", side)
@@ -22,20 +33,17 @@ ClientEvents.highPriorityAssets((event) => {
 		}
 	}
 
-	/**
-	 * @param {string} name
-	 */
-	function addMainModel(name) {
+	function addMainModel(name: string) {
 		addMachineModel(name)
 		addSingleFacePortModel(name)
 	}
 
 	/**
 	 * 添加普通机器模型
-	 *
-	 * @param {string} name
+	 * 
+	 * @param name 
 	 */
-	function addMachineModel(name) {
+	function addMachineModel(name: string) {
 		const SIDE = machineTexture(name, "side")
 
 		for (const STATE of ["on", "off"]) {
@@ -53,7 +61,7 @@ ClientEvents.highPriorityAssets((event) => {
 	 * key 为生成的模型名
 	 * value 为 block/machine/io 下的覆盖贴图
 	 */
-	const PORT_TEXTURES = {
+	const PORT_TEXTURES: Record<Port, string> = {
 		item_input: "item_input",
 		item_output: "item_output",
 
@@ -70,31 +78,16 @@ ClientEvents.highPriorityAssets((event) => {
 		common_output: "common_output"
 	}
 
-	/**
-	 * @param {string} name
-	 * @param {string} path
-	 */
-	function machineModel(name, path) {
+	function machineModel(name: string, path: string) {
 		return Cmi.loadResource(`${MACHINE_MODEL_PATH}/${name}/${path}`)
 	}
 
-	/**
-	 * @param {string} name
-	 * @param {string} texture
-	 */
-	function machineTexture(name, texture) {
+	function machineTexture(name: string, texture: string) {
 		return `${MACHINE_TEXTURE_PATH}/${name}/${texture}`
 	}
 
-	/**
-	 * @param {string} port
-	 */
-	function portTexture(port) {
+	function portTexture(port: Port) {
 		const TEXTURE = PORT_TEXTURES[port]
-
-		if (!TEXTURE) {
-			console.error(`[GenMBDModel] Unsupported port texture: ${port}`)
-		}
 
 		return `${IO_TEXTURE_PATH}/${TEXTURE}`
 	}
@@ -102,10 +95,10 @@ ClientEvents.highPriorityAssets((event) => {
 	/**
 	 * 添加一个单面接口模型
 	 *
-	 * @param {string} name
-	 * @param {string} port
+	 * @param name
+	 * @param port
 	 */
-	function addPortModel(name, port) {
+	function addPortModel(name: string, port: Port) {
 		addOrientableModel(
 			machineModel(name, port),
 			portTexture(port),
@@ -116,10 +109,10 @@ ClientEvents.highPriorityAssets((event) => {
 	/**
 	 * 添加所有单面接口模型
 	 *
-	 * @param {string} name
+	 * @param name
 	 */
-	function addSingleFacePortModel(name) {
-		for (const PORT of Object.keys(PORT_TEXTURES)) {
+	function addSingleFacePortModel(name: string) {
+		for (const PORT of Object.keys(PORT_TEXTURES) as Port[]) {
 			addPortModel(name, PORT)
 		}
 	}

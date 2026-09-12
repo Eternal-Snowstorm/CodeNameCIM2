@@ -1,9 +1,5 @@
 JEIEvents.hideItems((event) => {
-	/**
-	 * 
-	 * @param {Internal.Ingredient_} item 
-	 */
-	function hideItemFromJEI(item) {
+	function hideItemFromJEI(item: Internal.Ingredient_) {
 		event.hide(item)
 	}
 

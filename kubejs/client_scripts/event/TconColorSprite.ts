@@ -121,8 +121,8 @@ TConJSEvents.materialColorSprite((event) => {
 		"2B1E00"
 	)
 
-	function addTConTexture(name, colour, first, second, third, forth, fifth, sixth, seventh) {
-		let paletteColors = [
+	function addTConTexture(name: string, colour: string, first: string, second: string, third: string, forth: string, fifth: string, sixth: string, seventh: string) {
+		let paletteColors: string[] = [
 			first,
 			second,
 			third,
@@ -138,7 +138,7 @@ TConJSEvents.materialColorSprite((event) => {
 		event.addMaterialSprite(`${Cmi.MODID}`, `${name}`, (builder) => {
 			builder.color(colour.startsWith("FF") ? colour : `FF${colour}`)
 				.fallback("metal")
-				.supportedStats([
+				.supportedStats(
 					"tconstruct:head",
 					"tconstruct:handle",
 					"tconstruct:binding",
@@ -153,7 +153,7 @@ TConJSEvents.materialColorSprite((event) => {
 					"tconstruct:armor_maille",
 					"tconstruct:limb",
 					"tconstruct:grip"
-				])
+				)
 				.addPalette(0, paletteColors[6])
 				.addPalette(63, paletteColors[5])
 				.addPalette(102, paletteColors[4])
