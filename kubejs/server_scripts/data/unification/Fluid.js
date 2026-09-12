@@ -1,72 +1,65 @@
 ServerEvents.highPriorityData((event) => {
 	// 石油
-	addJsonFile("crude_oil", addUnification([
+	addUnification("crude_oil", [
 		"ad_astra:oil",
 		"thermal:crude_oil"
-	],
-		"createdieselgenerators:crude_oil"
-	))
+	], "createdieselgenerators:crude_oil")
 
 	// 植物油
-	addJsonFile("plant_oil", addUnification([
+	addUnification("plant_oil", [
 		"immersiveengineering:plantoil",
 		"createaddition:seed_oil"
-	],
-		"createdieselgenerators:plant_oil"
-	))
+	], "createdieselgenerators:plant_oil")
 
 	// 蒸汽
-	addJsonFile("steam", addUnification([
+	addUnification("steam", [
 		"steampowered:steam",
 		"create_steam_ages:steam"
-	],
-		"mekanism:steam"
-	))
+	], "mekanism:steam")
 
 	// 杂酚油
-	addJsonFile("creosote", addUnification([
+	addUnification("creosote", [
 		"thermal:creosote"
-	],
-		"immersiveengineering:creosote"
-	))
+	], "immersiveengineering:creosote")
 
 	// 汽油
-	addJsonFile("gasoline", addUnification([
+	addUnification("gasoline", [
 		"thermal_extra:gasoline"
-	],
-		"createdieselgenerators:gasoline"
-	))
+	], "createdieselgenerators:gasoline")
 
 	// 生物柴油
-	addJsonFile("biodiesel", addUnification([
+	addUnification("biodiesel", [
 		"createaddition:bioethanol",
 		"immersiveengineering:biodiesel",
 		"mekanismgenerators:bioethanol"
-	],
-		"createdieselgenerators:biodiesel"
-	))
+	], "createdieselgenerators:biodiesel")
 
 	// 凛冰
-	addJsonFile("cryo", addUnification([
+	addUnification("cryo", [
 		"ad_astra:cryo_fuel"
-	],
-		"neoecoae:cryotheum_solution"
-	))
+	], "neoecoae:cryotheum_solution")
+
+	// 细雪
+	addUnification("power_snow", [
+		"fluidlogistics:powder_snow",
+		"tconstruct:powdered_snow"
+	], "tconstruct:powdered_snow")
 
 	/**
-	 * @example addJsonFile("oil", addUnification("#forge:oil", "createdieselgenerators:crude_oil"))
-	 * @param {Internal.Fluid | Internal.FluidTags} match 
-	 * @param {Internal.Fluid} fluid 
-	 * @returns 
+	 * @example addUnification("oil", "#forge:oil", "createdieselgenerators:crude_oil")
+	 * @example addUnification("oil", ["ad_astra:oil", "thermal:crude_oil"], "createdieselgenerators:crude_oil")
+	 * @param {string} name
+	 * @param {Internal.Fluid | Internal.FluidTags | (Internal.Fluid | Internal.FluidTags)[]} match
+	 * @param {Internal.Fluid} result
 	 */
-	function addUnification(match, fluid) {
-		return [{
-			matchFluid: match,
-			resultFluid: fluid
-		}]
-	}
+	function addUnification(name, match, result) {
+		if (!Array.isArray(match)) {
+			match = [match]
+		}
 
-	function addJsonFile(name, unification) {
-		return event.addJson(`oef:replacements/${name}.json`, unification)
+		event.addJson(`oef:replacements/${name}.json`, match.map((fluid) => ({
+			matchFluid: fluid,
+			resultFluid: result
+		})))
 	}
 })

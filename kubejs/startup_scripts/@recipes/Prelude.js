@@ -42,11 +42,17 @@ ComplexKey.prototype = {
 	 */
 	build(map) {
 		let builder = new probejs$$RecipeComponentBuilder(this.keys.length)
+
 		for (let key of this.keys) {
 			let component = map.get(key[1])().key(key[0])
+
 			if (key[2] !== undefined) {
-				if (key[2] !== null) component = component.optional(key[2])
-				else component = component.defaultOptional()
+				if (key[2] !== null) {
+					component = component.optional(key[2])
+				} else {
+					component = component.defaultOptional()
+				}
+
 				if (key[3]) component = component.alwaysWrite()
 			}
 			builder = builder.add(component)
@@ -109,18 +115,29 @@ Schema.prototype = {
 	register(event) {
 		// In case if the recipe serializer is not loaded, skip the registration
 		let serializers = probejs$$RegistryInfo.RECIPE_SERIALIZER.vanillaRegistry.keySet()
-			.map((v) => v.toString())
-		if (serializers.indexOf(this.recipeId) === -1) return
+			.map((location) => {
+				return location.toString()
+			})
+		if (serializers.indexOf(this.recipeId) === -1) {
+			return
+		}
+
 		let keys = []
-		let components = event.components
-		let component = null;
+		let components = event.getComponents()
+		let component = null
+
 		for (let key of this.keys) {
 			if (key.length === 4) {
 				component = components.get(key[1])().key(key[0])
 				if (key[2] !== undefined) {
-					if (key[2] !== null) component = component.optional(key[2])
-					else component = component.defaultOptional()
-					if (key[3]) component = component.alwaysWrite()
+					if (key[2] !== null) {
+						component = component.optional(key[2])
+					} else {
+						component = component.defaultOptional()
+					}
+					if (key[3]) {
+						component = component.alwaysWrite()
+					}
 				}
 			} else if (key.length === 3) {
 				let complex = new ComplexKey()

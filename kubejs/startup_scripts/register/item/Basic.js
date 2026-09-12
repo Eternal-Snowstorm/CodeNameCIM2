@@ -320,6 +320,10 @@ StartupEvents.registry("item", (event) => {
 	addItem("concurrent_processor_press")
 		.texture("expatternprovider:item/concurrent_processor_press")
 
+	// 寒霜蛋糕胚
+	addItem("frost_cake_base")
+		.texture(Cmi.loadResource("item/material/frost_cake_base"))
+
 	// 羊皮纸
 	addItem("parchment")
 		.texture(Cmi.loadResource("item/material/parchment/parchment"))
