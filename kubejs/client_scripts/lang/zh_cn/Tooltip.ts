@@ -28,6 +28,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:random_mechanism", "程序")
 	addCommonTooltipLang("cmi:eternalsnowstorm", "程序")
 	addCommonTooltipLang("cmi:qi_month", "程序")
+	addCommonTooltipLang("cmi:ein_nameuwu", "策划")
+	addCommonTooltipLang("cmi:huanchenxiaohuli", "吉祥物")
 	addCommonTooltipLang("cmi:belalus", "音乐")
 	addCommonTooltipLang("cmi:fiber_optics", "程序")
 	addCommonTooltipLang("cmi:ye_anqing", "程序")
@@ -37,7 +39,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmi:keyxeldesu", "美工")
 	addCommonTooltipLang("cmi:sergei", "建筑")
 	addCommonTooltipLang("cmi:lirx_owo", "程序")
-	addCommonTooltipLang("cmi:ein_nameuwu", "策划")
 
 	addCommonTooltipLang("tconstruct:seared_heater", "焦黑加热器最多提供937°C / 1718.6°F")
 	addCommonTooltipLang("#cmi:block/machine_block", "只有装饰作用(暂时)")
