@@ -22,6 +22,22 @@ ServerEvents.highPriorityData((event) => {
 		"immersiveengineering:creosote"
 	))
 
+	// 汽油
+	addJsonFile("gasoline", addUnification([
+		"thermal_extra:gasoline"
+	],
+		"createdieselgenerators:gasoline"
+	))
+
+	// 生物柴油
+	addJsonFile("biodiesel", addUnification([
+		"createaddition:bioethanol",
+		"immersiveengineering:biodiesel",
+		"mekanismgenerators:bioethanol"
+	],
+		"createdieselgenerators:biodiesel"
+	))
+
 	// 凛冰
 	addJsonFile("cryo", addUnification([
 		"ad_astra:cryo_fuel"
